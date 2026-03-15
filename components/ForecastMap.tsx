@@ -85,6 +85,24 @@ export default function ForecastMap() {
   const geoUrl = isHouse ? DISTRICTS_URL : STATES_URL;
   const data = raceType === "house" ? houseData : raceType === "senate" ? senateData : governorData;
 
+  // Seats not up for election in 2026 (holdovers with known party)
+  // Senate: 65 holdovers (100 total - 35 Class 2 races); current split 34D/31R
+  // Governor: 14 states not voting in 2026; current split 6D/8R
+  // House: all 435 seats up every cycle, no holdovers
+  const HOLDOVERS = {
+    senate:   { dem: 34, rep: 31 },
+    governor: { dem: 6,  rep: 8  },
+    house:    { dem: 0,  rep: 0  },
+  };
+  const TOTAL_SEATS = { senate: 100, governor: 50, house: 435 };
+
+  const ratedDem = data.filter((d) => d.margin >= 0).length;
+  const ratedRep = data.filter((d) => d.margin < 0).length;
+  const demSeats = HOLDOVERS[raceType].dem + ratedDem;
+  const repSeats = HOLDOVERS[raceType].rep + ratedRep;
+  const totalSeats = TOTAL_SEATS[raceType];
+  const demPct = (demSeats / totalSeats) * 100;
+
   function findMatch(geo: any): RaceForecast | undefined {
     if (isHouse) {
       const geoId = geo.properties?.GEOID as string | undefined;
@@ -103,32 +121,14 @@ export default function ForecastMap() {
       >
         <div className="flex items-center gap-4">
           <span className="font-bold text-lg tracking-tight" style={{ color: t.textPrimary }}>
-            2026 Election Forecast
+            CT Strategies
           </span>
           <span className="hidden sm:block text-xs" style={{ color: t.textMuted }}>
-            Updated Mar 14, 2026
+            Updated Mar 15, 2026
           </span>
         </div>
 
         <div className="flex items-center gap-3">
-          {/* Race-type tabs */}
-          <nav className="flex rounded-lg p-1 gap-0.5" style={{ background: t.tabBg }}>
-            {(["house", "senate", "governor"] as RaceType[]).map((type) => (
-              <button
-                key={type}
-                onClick={() => { setRaceType(type); setSelected(null); }}
-                className="px-5 py-1.5 rounded-md text-sm font-medium transition-all capitalize"
-                style={
-                  raceType === type
-                    ? { background: "#388bfd", color: "#ffffff" }
-                    : { color: t.textMuted }
-                }
-              >
-                {type.charAt(0).toUpperCase() + type.slice(1)}
-              </button>
-            ))}
-          </nav>
-
           {/* Dark / Light mode toggle */}
           <button
             onClick={toggleDarkMode}
@@ -282,14 +282,79 @@ export default function ForecastMap() {
             </Geographies>
           </ComposableMap>
 
+          {/* ── Race-type toggle ── */}
+          <div
+            className="absolute rounded-xl p-2 backdrop-blur-sm"
+            style={{
+              bottom: "calc(73px + 144px + 8px)",
+              left: "1rem",
+              background: t.legendBg,
+              border: `1px solid ${t.border}`,
+              boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
+            }}
+          >
+            <nav className="flex rounded-lg p-1 gap-0.5" style={{ background: t.tabBg }}>
+              {([["house", "H"], ["senate", "S"], ["governor", "G"]] as [RaceType, string][]).map(([type, label]) => (
+                <button
+                  key={type}
+                  onClick={() => { setRaceType(type); setSelected(null); }}
+                  className="w-8 py-1.5 rounded-md text-sm font-medium transition-all text-center"
+                  style={
+                    raceType === type
+                      ? { background: "#388bfd", color: "#ffffff" }
+                      : { color: t.textMuted }
+                  }
+                >
+                  {label}
+                </button>
+              ))}
+            </nav>
+          </div>
+
+          {/* ── Seat Scorecard ── */}
+          <div
+            className="absolute bottom-[73px] left-4 rounded-xl p-3 backdrop-blur-sm"
+            style={{
+              background: t.legendBg,
+              border: `1px solid ${t.border}`,
+              width: 180,
+              boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
+            }}
+          >
+            <div className="text-[9px] font-semibold uppercase tracking-wider mb-2 text-center" style={{ color: t.textMuted }}>
+              {raceType === "house" ? "House" : raceType === "senate" ? "Senate" : "Governors"} Seats
+            </div>
+
+            {/* Dem | Rep side by side */}
+            <div className="flex gap-2 mb-2">
+              {/* Dem */}
+              <div className="flex-1 flex flex-col items-center rounded-lg py-2" style={{ background: "rgba(26,68,128,0.18)" }}>
+                <span className="text-2xl font-bold leading-none" style={{ color: "#1a4480" }}>{demSeats}</span>
+                <span className="text-[10px] font-semibold mt-1" style={{ color: "#1a4480" }}>Dem</span>
+              </div>
+              {/* Rep */}
+              <div className="flex-1 flex flex-col items-center rounded-lg py-2" style={{ background: "rgba(139,26,26,0.18)" }}>
+                <span className="text-2xl font-bold leading-none" style={{ color: "#8b1a1a" }}>{repSeats}</span>
+                <span className="text-[10px] font-semibold mt-1" style={{ color: "#8b1a1a" }}>Rep</span>
+              </div>
+            </div>
+
+            {/* Split bar */}
+            <div className="flex h-2 rounded-full overflow-hidden">
+              <div style={{ width: `${demPct}%`, background: "#1a4480" }} />
+              <div style={{ width: `${100 - demPct}%`, background: "#8b1a1a" }} />
+            </div>
+
+            <div className="mt-2 text-center text-[9px]" style={{ color: t.textVeryMuted }}>
+              of {totalSeats} total seats
+            </div>
+          </div>
+
           {/* ── Legend ── */}
           <div
             className="absolute bottom-3 left-5 rounded-lg p-2 backdrop-blur-sm"
             style={{ background: t.legendBg, border: `1px solid ${t.border}` }}
           >
-            <div className="text-[9px] mb-1.5 font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>
-              Rating
-            </div>
             <div className="flex items-center gap-1">
               {LEGEND.map(({ color, label }) => (
                 <div key={label} className="flex flex-col items-center gap-0.5">
