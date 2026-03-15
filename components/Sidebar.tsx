@@ -71,9 +71,9 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
           >
             {selected.rating}
           </span>
-          {raceType === "senate" && (
+          {(raceType === "senate" || raceType === "governor" || raceType === "house") && (
             <Link
-              href={`/senate/${selected.id.toLowerCase()}`}
+              href={`/${raceType}/${selected.id.toLowerCase()}`}
               className="text-xs flex items-center gap-1 transition-colors"
               style={{ color: t.textMuted }}
             >

@@ -5,6 +5,7 @@ import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import { senateData, governorData, houseData, RaceForecast, RaceType } from "@/data/forecastData";
 import Sidebar from "./Sidebar";
+import Link from "next/link";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 const DISTRICTS_URL = "/congressional-districts.json";
@@ -59,7 +60,13 @@ export const LIGHT_THEME = {
 export type Theme = typeof DARK_THEME;
 
 export default function ForecastMap() {
-  const [raceType, setRaceType] = useState<RaceType>("senate");
+  const [raceType, setRaceType] = useState<RaceType>(() => {
+    if (typeof window !== "undefined") {
+      const stored = localStorage.getItem("raceType") as RaceType | null;
+      if (stored === "house" || stored === "senate" || stored === "governor") return stored;
+    }
+    return "senate";
+  });
   const [selected, setSelected] = useState<RaceForecast | null>(null);
   const [hovered, setHovered] = useState<RaceForecast | null>(null);
   const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
@@ -123,6 +130,24 @@ export default function ForecastMap() {
           <span className="font-bold text-lg tracking-tight" style={{ color: t.textPrimary }}>
             CT Strategies
           </span>
+          <div className="h-4 w-px" style={{ background: t.border }} />
+          <nav className="flex items-center gap-1">
+            {([
+              { label: "House", href: "/house" },
+              { label: "Senate", href: "/senate" },
+              { label: "Governor", href: "/governor" },
+              { label: "States", href: "/states" },
+            ] as { label: string; href: string }[]).map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
+                style={{ color: t.textMuted }}
+              >
+                {label}
+              </Link>
+            ))}
+          </nav>
           <span className="hidden sm:block text-xs" style={{ color: t.textMuted }}>
             Updated Mar 15, 2026
           </span>
@@ -158,8 +183,8 @@ export default function ForecastMap() {
 
         {/* ── Map ── */}
         <div
-          className="relative shrink-0 overflow-hidden pb-16"
-          style={{ height: "calc(100vh - 56px - 200px)" }}
+          className="relative flex-1 overflow-hidden md:pb-16"
+          style={{}}
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
             setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
@@ -284,7 +309,7 @@ export default function ForecastMap() {
 
           {/* ── Race-type toggle ── */}
           <div
-            className="absolute rounded-xl p-2 backdrop-blur-sm"
+            className="hidden md:block absolute rounded-xl p-2 backdrop-blur-sm"
             style={{
               bottom: "calc(73px + 144px + 8px)",
               left: "1rem",
@@ -297,7 +322,7 @@ export default function ForecastMap() {
               {([["house", "H"], ["senate", "S"], ["governor", "G"]] as [RaceType, string][]).map(([type, label]) => (
                 <button
                   key={type}
-                  onClick={() => { setRaceType(type); setSelected(null); }}
+                  onClick={() => { setRaceType(type); setSelected(null); localStorage.setItem("raceType", type); }}
                   className="w-8 py-1.5 rounded-md text-sm font-medium transition-all text-center"
                   style={
                     raceType === type
@@ -313,7 +338,7 @@ export default function ForecastMap() {
 
           {/* ── Seat Scorecard ── */}
           <div
-            className="absolute bottom-[73px] left-4 rounded-xl p-3 backdrop-blur-sm"
+            className="hidden md:block absolute bottom-[73px] left-4 rounded-xl p-3 backdrop-blur-sm"
             style={{
               background: t.legendBg,
               border: `1px solid ${t.border}`,
@@ -352,7 +377,7 @@ export default function ForecastMap() {
 
           {/* ── Legend ── */}
           <div
-            className="absolute bottom-3 left-5 rounded-lg p-2 backdrop-blur-sm"
+            className="hidden md:block absolute bottom-3 left-5 rounded-lg p-2 backdrop-blur-sm"
             style={{ background: t.legendBg, border: `1px solid ${t.border}` }}
           >
             <div className="flex items-center gap-1">
@@ -363,6 +388,43 @@ export default function ForecastMap() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* ── Mobile Controls Bar ── */}
+        <div
+          className="md:hidden shrink-0 flex items-center justify-between gap-3 px-4 py-2"
+          style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
+        >
+          {/* Race-type toggle */}
+          <nav className="flex rounded-lg p-1 gap-0.5" style={{ background: t.tabBg }}>
+            {([["house", "H"], ["senate", "S"], ["governor", "G"]] as [RaceType, string][]).map(([type, label]) => (
+              <button
+                key={type}
+                onClick={() => { setRaceType(type); setSelected(null); localStorage.setItem("raceType", type); }}
+                className="w-8 py-1.5 rounded-md text-sm font-medium transition-all text-center"
+                style={raceType === type ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }}
+              >
+                {label}
+              </button>
+            ))}
+          </nav>
+
+          {/* Seat split */}
+          <div className="flex items-center gap-2 flex-1">
+            <span className="text-sm font-bold tabular-nums" style={{ color: "#1a4480" }}>{demSeats}D</span>
+            <div className="flex h-2 rounded-full overflow-hidden flex-1">
+              <div style={{ width: `${demPct}%`, background: "#1a4480" }} />
+              <div style={{ width: `${100 - demPct}%`, background: "#8b1a1a" }} />
+            </div>
+            <span className="text-sm font-bold tabular-nums" style={{ color: "#8b1a1a" }}>{repSeats}R</span>
+          </div>
+
+          {/* Compact legend */}
+          <div className="flex items-center gap-0.5">
+            {LEGEND.map(({ color }) => (
+              <div key={color} style={{ background: color }} className="w-3 h-3 rounded-sm" />
+            ))}
           </div>
         </div>
 
