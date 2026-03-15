@@ -19,8 +19,8 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
   if (!selected) {
     return (
       <aside
-        className="shrink-0 flex items-center justify-center gap-3 px-8 h-20"
-        style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
+        className="shrink-0 flex items-center justify-center gap-3 px-8"
+        style={{ background: t.panel, borderTop: `1px solid ${t.border}`, height: "200px" }}
       >
         <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: t.tabBg }}>
           <svg className="w-5 h-5" style={{ color: t.textVeryMuted }} fill="none" viewBox="0 0 24 24" stroke="currentColor">

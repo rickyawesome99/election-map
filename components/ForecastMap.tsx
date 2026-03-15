@@ -63,10 +63,12 @@ export default function ForecastMap() {
   const [selected, setSelected] = useState<RaceForecast | null>(null);
   const [hovered, setHovered] = useState<RaceForecast | null>(null);
   const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
-  const [darkMode, setDarkMode] = useState<boolean>(() => {
-    if (typeof window === "undefined") return false;
-    return localStorage.getItem("darkMode") === "true";
-  });
+  const [darkMode, setDarkMode] = useState<boolean>(false);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("darkMode") === "true";
+    setDarkMode(stored);
+  }, []);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode);
@@ -156,7 +158,8 @@ export default function ForecastMap() {
 
         {/* ── Map ── */}
         <div
-          className="relative flex-1 overflow-hidden pb-16"
+          className="relative shrink-0 overflow-hidden pb-16"
+          style={{ height: "calc(100vh - 56px - 200px)" }}
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
             setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
