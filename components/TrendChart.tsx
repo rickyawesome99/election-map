@@ -9,7 +9,7 @@ type TrendPoint = {
 
 export default function TrendChart({ data }: { data: TrendPoint[] }) {
   return (
-    <div className="h-48 w-full">
+    <div className="h-full w-full">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data}>
           <XAxis dataKey="date" />

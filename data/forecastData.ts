@@ -10,6 +10,8 @@ export type PastResult = {
   year: number;
   demPct: number;
   repPct: number;
+  demCandidate?: string;
+  repCandidate?: string;
 };
 
 export type RaceForecast = {
@@ -40,13 +42,14 @@ function h(p: number): { date: string; value: number }[] {
   ];
 }
 
-function r(p: number): string {
-  if (p >= 0.85) return "Safe D";
-  if (p >= 0.70) return "Likely D";
-  if (p >= 0.55) return "Lean D";
-  if (p >= 0.45) return "Toss-up";
-  if (p >= 0.30) return "Lean R";
-  if (p >= 0.15) return "Likely R";
+function r(margin: number): string {
+  if (margin >= 15)  return "Safe D";
+  if (margin >= 5)   return "Likely D";
+  if (margin >= 1)   return "Lean D";
+  if (margin >= 0)   return "Tilt D";
+  if (margin > -1)   return "Tilt R";
+  if (margin >= -5)  return "Lean R";
+  if (margin >= -15) return "Likely R";
   return "Safe R";
 }
 
@@ -54,7 +57,7 @@ function mk(
   id: string, name: string, state: string,
   type: RaceType, prob: number, margin: number
 ): RaceForecast {
-  return { id, name, state, raceType: type, probability: prob, margin, rating: r(prob), history: h(prob) };
+  return { id, name, state, raceType: type, probability: prob, margin, rating: r(margin), history: h(prob) };
 }
 
 function senate(

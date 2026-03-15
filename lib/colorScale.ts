@@ -1,24 +1,31 @@
-export function getRaceColor(prob: number): string {
-  if (prob >= 0.85) return "#1a4480"; // Safe D
-  if (prob >= 0.70) return "#4275b5"; // Likely D
-  if (prob >= 0.55) return "#82b4f0"; // Lean D
-  if (prob >= 0.45) return "#c8a800"; // Toss-up
-  if (prob >= 0.30) return "#f08282"; // Lean R
-  if (prob >= 0.15) return "#c04040"; // Likely R
-  return "#8b1a1a";                   // Safe R
+// margin: positive = D advantage, negative = R advantage (e.g. +5 = D+5, -5 = R+5)
+export function getRaceColor(margin: number): string {
+  if (margin >= 15)  return "#1b408c"; // Safe D   (D+15+)
+  if (margin >= 5)   return "#587ccc"; // Likely D (D+5–D+15)
+  if (margin >= 1)   return "#8bafff"; // Lean D   (D+1–D+5)
+  if (margin >= 0)   return "#959bb3"; // Tilt D   (D+0–D+1)
+  if (margin > -1)   return "#cf8980"; // Tilt R   (R+0–R+1)
+  if (margin >= -5)  return "#ff8b98"; // Lean R   (R+1–R+5)
+  if (margin >= -15) return "#ff5864"; // Likely R (R+5–R+15)
+  return "#be1c29";                    // Safe R   (R+15+)
 }
 
+const RATING_COLORS: Record<string, { bg: string; text: string }> = {
+  "Safe D":   { bg: "#1b408c", text: "#ffffff" },
+  "Likely D": { bg: "#587ccc", text: "#ffffff" },
+  "Lean D":   { bg: "#8bafff", text: "#0a1a3a" },
+  "Tilt D":   { bg: "#959bb3", text: "#0a1a3a" },
+  "Tilt R":   { bg: "#cf8980", text: "#2a0a0a" },
+  "Lean R":   { bg: "#ff8b98", text: "#2a0a0a" },
+  "Likely R": { bg: "#ff5864", text: "#ffffff" },
+  "Safe R":   { bg: "#be1c29", text: "#ffffff" },
+};
+
 export function getRatingColors(rating: string): { bg: string; text: string } {
-  if (rating.includes("Safe D") || rating.includes("Likely D") || rating.includes("Lean D")) {
-    return { bg: "#1e3a5f", text: "#93c5fd" };
-  }
-  if (rating === "Toss-up") {
-    return { bg: "#3d3200", text: "#fbbf24" };
-  }
-  return { bg: "#4a1515", text: "#fca5a5" };
+  return RATING_COLORS[rating] ?? { bg: "#555", text: "#fff" };
 }
 
 // Keep old export for any remaining references
-export function getStateColor(probability: number): string {
-  return getRaceColor(probability);
+export function getStateColor(margin: number): string {
+  return getRaceColor(margin);
 }
