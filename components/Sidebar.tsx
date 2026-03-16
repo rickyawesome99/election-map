@@ -19,7 +19,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
   if (!selected) {
     return (
       <aside
-        className="hidden md:flex shrink-0 items-center justify-center gap-3 px-8 md:h-[200px]"
+        className="hidden md:flex shrink-0 items-center justify-center gap-3 px-8 md:h-[140px]"
         style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
       >
         <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: t.tabBg }}>
@@ -44,13 +44,13 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
 
   return (
     <aside
-      className="fixed bottom-0 left-0 right-0 z-30 flex flex-col overflow-y-auto max-h-[50vh] md:relative md:z-auto md:shrink-0 md:flex-row md:max-h-none md:h-[200px] md:overflow-x-auto md:overflow-y-hidden"
+      className="fixed bottom-0 left-0 right-0 z-30 flex flex-col overflow-y-auto max-h-[50vh] md:relative md:z-auto md:shrink-0 md:flex-row md:max-h-none md:h-[140px] md:overflow-x-auto md:overflow-y-hidden"
       style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
     >
 
       {/* ── Header ── */}
       <div
-        className="shrink-0 w-full md:w-[200px] p-4 flex flex-col justify-between"
+        className="shrink-0 w-full md:w-[200px] p-3 flex flex-col justify-between"
         style={{ borderBottom: `1px solid ${t.border}` }}
       >
         <div>
@@ -91,13 +91,13 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
       {/* ── Candidates ── */}
       {selected.candidates && (
         <div
-          className="shrink-0 w-full md:w-[220px] p-4 flex flex-col"
+          className="shrink-0 w-full md:w-[220px] p-3 flex flex-col"
           style={{ borderBottom: `1px solid ${t.border}` }}
         >
-          <div className="text-[10px] uppercase tracking-wider font-semibold mb-2.5" style={{ color: t.textMuted }}>
+          <div className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: t.textMuted }}>
             Candidates
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-1.5">
             <CandidateCard candidate={selected.candidates.dem} pct={demVoteShare} theme={t} />
             <CandidateCard candidate={selected.candidates.rep} pct={repVoteShare} theme={t} />
           </div>
@@ -106,7 +106,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
 
       {/* ── Win Probability + Projected Margin ── */}
       <div
-        className="shrink-0 w-full md:w-[190px] p-4 flex flex-col gap-4"
+        className="shrink-0 w-full md:w-[190px] p-3 flex flex-col gap-2.5"
         style={{ borderBottom: `1px solid ${t.border}` }}
       >
         <div>
@@ -126,7 +126,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
           <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: t.textMuted }}>
             Projected Margin
           </div>
-          <div className="text-2xl font-bold" style={{ color: marginIsD ? "#1b408c" : "#be1c29" }}>
+          <div className="text-xl font-bold" style={{ color: marginIsD ? "#1b408c" : "#be1c29" }}>
             {marginIsD ? "+" : ""}{selected.margin.toFixed(1)}
           </div>
           <div className="text-xs mt-0.5" style={{ color: t.textMuted }}>
@@ -138,7 +138,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
       {/* ── Past Results ── */}
       {selected.pastResults && selected.pastResults.length > 0 && (
         <div
-          className="shrink-0 w-full md:w-[210px] p-4"
+          className="shrink-0 w-full md:w-[210px] p-3"
           style={{ borderBottom: `1px solid ${t.border}` }}
         >
           <div className="text-[10px] uppercase tracking-wider font-semibold mb-2.5" style={{ color: t.textMuted }}>
@@ -153,7 +153,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
       )}
 
       {/* ── Probability Trend ── */}
-      <div className="w-full md:flex-1 md:min-w-[200px] p-4">
+      <div className="w-full md:flex-1 md:min-w-[200px] p-3">
         <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: t.textMuted }}>
           Probability Trend
         </div>
@@ -174,7 +174,7 @@ function CandidateCard({ candidate, pct, theme: t }: { candidate: Candidate; pct
 
   return (
     <div
-      className="flex items-center justify-between rounded-lg px-3 py-2"
+      className="flex items-center justify-between rounded-lg px-3 py-1.5"
       style={{ background: bgColor, borderLeft: `3px solid ${borderColor}` }}
     >
       <div>

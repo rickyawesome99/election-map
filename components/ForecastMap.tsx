@@ -130,8 +130,8 @@ export default function ForecastMap() {
           <span className="font-bold text-lg tracking-tight" style={{ color: t.textPrimary }}>
             CT Strategies
           </span>
-          <div className="h-4 w-px" style={{ background: t.border }} />
-          <nav className="flex items-center gap-1">
+          <div className="hidden md:block h-4 w-px" style={{ background: t.border }} />
+          <nav className="hidden md:flex items-center gap-1">
             {([
               { label: "House", href: "/house" },
               { label: "Senate", href: "/senate" },
@@ -183,7 +183,7 @@ export default function ForecastMap() {
 
         {/* ── Map ── */}
         <div
-          className="relative flex-1 overflow-hidden pb-14 md:pb-16"
+          className="relative h-[75vw] md:flex-1 overflow-hidden pb-14 md:pb-16"
           style={{}}
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
@@ -311,7 +311,7 @@ export default function ForecastMap() {
           <div
             className="hidden md:block absolute rounded-xl p-2 backdrop-blur-sm"
             style={{
-              bottom: "calc(73px + 144px + 8px)",
+              bottom: "calc(73px + 120px + 12px)",
               left: "1rem",
               background: t.legendBg,
               border: `1px solid ${t.border}`,
@@ -338,39 +338,39 @@ export default function ForecastMap() {
 
           {/* ── Seat Scorecard ── */}
           <div
-            className="hidden md:block absolute bottom-[73px] left-4 rounded-xl p-3 backdrop-blur-sm"
+            className="hidden md:block absolute bottom-[73px] left-4 rounded-xl p-2.5 backdrop-blur-sm"
             style={{
               background: t.legendBg,
               border: `1px solid ${t.border}`,
-              width: 180,
+              width: 155,
               boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
             }}
           >
-            <div className="text-[9px] font-semibold uppercase tracking-wider mb-2 text-center" style={{ color: t.textMuted }}>
+            <div className="text-[9px] font-semibold uppercase tracking-wider mb-1.5 text-center" style={{ color: t.textMuted }}>
               {raceType === "house" ? "House" : raceType === "senate" ? "Senate" : "Governors"} Seats
             </div>
 
             {/* Dem | Rep side by side */}
-            <div className="flex gap-2 mb-2">
+            <div className="flex gap-1.5 mb-1.5">
               {/* Dem */}
-              <div className="flex-1 flex flex-col items-center rounded-lg py-2" style={{ background: "rgba(26,68,128,0.18)" }}>
-                <span className="text-2xl font-bold leading-none" style={{ color: "#1a4480" }}>{demSeats}</span>
-                <span className="text-[10px] font-semibold mt-1" style={{ color: "#1a4480" }}>Dem</span>
+              <div className="flex-1 flex flex-col items-center rounded-lg py-1.5" style={{ background: "rgba(26,68,128,0.18)" }}>
+                <span className="text-xl font-bold leading-none" style={{ color: "#1a4480" }}>{demSeats}</span>
+                <span className="text-[9px] font-semibold mt-0.5" style={{ color: "#1a4480" }}>Dem</span>
               </div>
               {/* Rep */}
-              <div className="flex-1 flex flex-col items-center rounded-lg py-2" style={{ background: "rgba(139,26,26,0.18)" }}>
-                <span className="text-2xl font-bold leading-none" style={{ color: "#8b1a1a" }}>{repSeats}</span>
-                <span className="text-[10px] font-semibold mt-1" style={{ color: "#8b1a1a" }}>Rep</span>
+              <div className="flex-1 flex flex-col items-center rounded-lg py-1.5" style={{ background: "rgba(139,26,26,0.18)" }}>
+                <span className="text-xl font-bold leading-none" style={{ color: "#8b1a1a" }}>{repSeats}</span>
+                <span className="text-[9px] font-semibold mt-0.5" style={{ color: "#8b1a1a" }}>Rep</span>
               </div>
             </div>
 
             {/* Split bar */}
-            <div className="flex h-2 rounded-full overflow-hidden">
+            <div className="flex h-1.5 rounded-full overflow-hidden">
               <div style={{ width: `${demPct}%`, background: "#1a4480" }} />
               <div style={{ width: `${100 - demPct}%`, background: "#8b1a1a" }} />
             </div>
 
-            <div className="mt-2 text-center text-[9px]" style={{ color: t.textVeryMuted }}>
+            <div className="mt-1.5 text-center text-[9px]" style={{ color: t.textVeryMuted }}>
               of {totalSeats} total seats
             </div>
           </div>
