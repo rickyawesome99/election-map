@@ -3,7 +3,6 @@ import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
-import HouseDetailClient from "./HouseDetailClient";
 
 export async function generateStaticParams() {
   return houseData.map((race) => ({ id: race.id.toLowerCase() }));
@@ -34,6 +33,9 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const districtLabel = districtNum === "AL"
     ? `${race.state} At-Large`
     : `${race.state}'s ${districtNum}${getOrdinalSuffix(parseInt(districtNum))} Congressional District`;
+  const incumbent = race.candidates
+    ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
+    : null;
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -75,6 +77,36 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
           </div>
           <p style={{ color: "var(--app-text-muted)" }}>2026 U.S. House Race · {districtLabel}</p>
         </div>
+
+        {/* Bio section */}
+        <section
+          className="rounded-xl p-6 mb-6"
+          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+        >
+          <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-4" style={{ color: "var(--app-text-muted)" }}>
+            About this District
+          </h2>
+          <p className="text-sm leading-relaxed mb-5" style={{ color: "var(--app-text-primary)" }}>
+            [Placeholder — overview of {districtLabel}, including its geography, key communities, and political history to be filled in.]
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {[
+              { label: "State", value: race.state },
+              { label: "District", value: districtNum === "AL" ? "At-Large" : `${stateAbbr}-${districtNum}` },
+              { label: "Current Rep.", value: incumbent?.name ?? "TBD" },
+              { label: "Party", value: incumbent ? (incumbent.party === "D" ? "Democrat" : incumbent.party === "R" ? "Republican" : "Independent") : "TBD" },
+            ].map(({ label, value }) => (
+              <div key={label} className="rounded-lg p-3" style={{ background: "var(--app-bg)" }}>
+                <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
+                  {label}
+                </div>
+                <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                  {value}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* Candidate profiles */}
         {race.candidates ? (
@@ -233,26 +265,32 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
           </section>
 
           {/* Past results */}
-          {race.pastResults && race.pastResults.length > 0 ? (
-            <section
-              className="rounded-xl p-6 md:col-span-2"
-              style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-            >
-              <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-5" style={{ color: "var(--app-text-muted)" }}>
-                Past Election Results
-              </h2>
-              <div className="flex flex-col gap-6">
-                {race.pastResults.map((res) => {
-                  const winner = res.demPct > res.repPct ? "D" : "R";
-                  const margin = Math.abs(res.demPct - res.repPct).toFixed(1);
-                  const total = res.demPct + res.repPct;
-                  const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
-                  const demName = res.demCandidate ?? "Democratic Candidate";
-                  const repName = res.repCandidate ?? "Republican Candidate";
-                  return (
-                    <div key={res.year}>
-                      <div className="flex items-center gap-3 mb-3">
-                        <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+          <section
+            className="rounded-xl p-6 md:col-span-2"
+            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+          >
+            <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-5" style={{ color: "var(--app-text-muted)" }}>
+              Past Election Results
+            </h2>
+            <div className="flex flex-col gap-6">
+              {(race.pastResults && race.pastResults.length > 0
+                ? race.pastResults
+                : [2024, 2022, 2020].map((year) => ({ year, demPct: 0, repPct: 0, placeholder: true }))
+              ).map((res) => {
+                const isPlaceholder = !("demPct" in res) || (res as { placeholder?: boolean }).placeholder;
+                const winner = res.demPct > res.repPct ? "D" : "R";
+                const margin = Math.abs(res.demPct - res.repPct).toFixed(1);
+                const total = res.demPct + res.repPct;
+                const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
+                const demName = (res as { demCandidate?: string }).demCandidate ?? "Democratic Candidate";
+                const repName = (res as { repCandidate?: string }).repCandidate ?? "Republican Candidate";
+                return (
+                  <div key={res.year} style={{ opacity: isPlaceholder ? 0.45 : 1 }}>
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+                      {isPlaceholder ? (
+                        <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
+                      ) : (
                         <span
                           className="text-xs font-bold px-2 py-0.5 rounded-full"
                           style={winner === "D"
@@ -261,55 +299,43 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                         >
                           {winner === "D" ? "D" : "R"}+{margin}
                         </span>
+                      )}
+                    </div>
+                    <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
+                      <div className="flex flex-col">
+                        <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
+                        <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
+                          {isPlaceholder ? "TBD" : demName}
+                        </span>
                       </div>
-                      <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
-                        <div className="flex flex-col">
-                          <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                          <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{demName}</span>
-                        </div>
-                        <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                        <div className="flex flex-col items-end">
-                          <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                          <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{repName}</span>
-                        </div>
+                      <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
+                      <div className="flex flex-col items-end">
+                        <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Republican</span>
+                        <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
+                          {isPlaceholder ? "TBD" : repName}
+                        </span>
                       </div>
-                      <div className="flex h-4 rounded-full overflow-hidden mb-1.5">
-                        <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
-                        <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
-                      </div>
+                    </div>
+                    <div className="flex h-4 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>
+                      {!isPlaceholder && (
+                        <>
+                          <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
+                          <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
+                        </>
+                      )}
+                    </div>
+                    {!isPlaceholder && (
                       <div className="flex justify-between">
                         <span className="text-xs font-semibold" style={{ color: "#1b408c" }}>{res.demPct}%</span>
                         <span className="text-xs font-semibold" style={{ color: "#be1c29" }}>{res.repPct}%</span>
                       </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
-          ) : (
-            <section
-              className="rounded-xl p-6 md:col-span-2"
-              style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-            >
-              <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-3" style={{ color: "var(--app-text-muted)" }}>
-                Past Election Results
-              </h2>
-              <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Past results data coming soon.</p>
-            </section>
-          )}
-
-          {/* Probability Trend */}
-          <section
-            className="rounded-xl p-6 md:col-span-2"
-            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-          >
-            <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-4" style={{ color: "var(--app-text-muted)" }}>
-              Probability Trend
-            </h2>
-            <div style={{ height: "200px" }}>
-              <HouseDetailClient history={race.history} />
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </section>
+
         </div>
       </main>
     </div>

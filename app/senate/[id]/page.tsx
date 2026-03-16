@@ -32,6 +32,12 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
 
   const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
   const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
+  const incumbent = race.candidates
+    ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
+    : null;
+  const lastContested = race.pastResults && race.pastResults.length > 0
+    ? Math.max(...race.pastResults.map((r) => r.year))
+    : null;
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -73,6 +79,36 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           </div>
           <p style={{ color: "var(--app-text-muted)" }}>2026 U.S. Senate Race · Class 2</p>
         </div>
+
+        {/* Bio section */}
+        <section
+          className="rounded-xl p-6 mb-6"
+          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+        >
+          <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-4" style={{ color: "var(--app-text-muted)" }}>
+            About this Seat
+          </h2>
+          <p className="text-sm leading-relaxed mb-5" style={{ color: "var(--app-text-primary)" }}>
+            [Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {[
+              { label: "State", value: race.state },
+              { label: "Seat Class", value: "Class 2" },
+              { label: "Current Senator", value: incumbent?.name ?? "TBD" },
+              { label: "Last Contested", value: lastContested ? String(lastContested) : "TBD" },
+            ].map(({ label, value }) => (
+              <div key={label} className="rounded-lg p-3" style={{ background: "var(--app-bg)" }}>
+                <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
+                  {label}
+                </div>
+                <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                  {value}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
         {/* Candidate profiles */}
         {race.candidates && (
