@@ -411,6 +411,9 @@ export default function ForecastMap() {
               ))}
             </div>
           </div>
+
+          {/* ── Sidebar (floating panel) ── */}
+          <Sidebar selected={selected} raceType={raceType} onClose={() => setSelected(null)} theme={t} />
         </div>
 
         {/* ── Mobile Controls Bar ── */}
@@ -450,8 +453,6 @@ export default function ForecastMap() {
           </div>
         </div>
 
-        {/* ── Sidebar ── */}
-        <Sidebar selected={selected} raceType={raceType} onClose={() => setSelected(null)} theme={t} />
       </div>
     </div>
   );

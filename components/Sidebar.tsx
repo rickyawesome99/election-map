@@ -1,8 +1,7 @@
 "use client";
 
-import { Candidate, PastResult, RaceForecast, RaceType } from "@/data/forecastData";
+import { Candidate, RaceForecast, RaceType } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
-import TrendChart from "./TrendChart";
 import Link from "next/link";
 import { Theme } from "./ForecastMap";
 
@@ -14,210 +13,295 @@ type Props = {
 };
 
 export default function Sidebar({ selected, raceType, onClose, theme: t }: Props) {
-  const unit = raceType === "house" ? "district" : "state";
+  if (!selected) return null;
 
-  if (!selected) {
-    return (
-      <aside
-        className="hidden md:flex shrink-0 items-center justify-center gap-3 px-8 md:h-[140px]"
-        style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
-      >
-        <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: t.tabBg }}>
-          <svg className="w-5 h-5" style={{ color: t.textVeryMuted }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5}
-              d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-          </svg>
-        </div>
-        <p className="text-sm" style={{ color: t.textMuted }}>
-          Click a {unit} to view race details
-        </p>
-      </aside>
-    );
-  }
-
-  const demPct = Math.round(selected.probability * 100);
-  const repPct = 100 - demPct;
+  const demWinPct = Math.round(selected.probability * 100);
+  const repWinPct = 100 - demWinPct;
   const demVoteShare = (100 + selected.margin) / 2;
   const repVoteShare = (100 - selected.margin) / 2;
   const { bg, text } = getRatingColors(selected.rating);
   const marginIsD = selected.margin >= 0;
 
   return (
-    <aside
-      className="fixed bottom-0 left-0 right-0 z-30 flex flex-col overflow-y-auto max-h-[50vh] md:relative md:z-auto md:shrink-0 md:flex-row md:max-h-none md:h-[140px] md:overflow-x-auto md:overflow-y-hidden"
-      style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
-    >
-
-      {/* ── Header ── */}
+    <>
+      {/* ── Desktop: compact floating panel near Florida ── */}
       <div
-        className="shrink-0 w-full md:w-[200px] p-3 flex flex-col justify-between"
-        style={{ borderBottom: `1px solid ${t.border}` }}
+        className="hidden md:flex flex-col absolute z-30 rounded-xl backdrop-blur-sm overflow-y-auto"
+        style={{
+          right: "1.25rem",
+          bottom: "73px",
+          width: 172,
+          maxHeight: 260,
+          background: t.legendBg,
+          border: `1px solid ${t.border}`,
+          boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
+          color: t.textPrimary,
+          scrollbarWidth: "none",
+        }}
       >
-        <div>
-          <div className="flex items-start justify-between mb-1">
-            <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: t.textMuted }}>
-              {raceType}
-            </div>
-            <button onClick={onClose} className="transition-colors" style={{ color: t.textVeryMuted }}>
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        {/* Header */}
+        <div className="p-2 pb-1.5 shrink-0" style={{ borderBottom: `1px solid ${t.border}` }}>
+          <div className="flex items-start justify-between gap-1 mb-1">
+            <h2 className="text-[11px] font-bold leading-tight flex-1 min-w-0" style={{ color: t.textPrimary }}>
+              {selected.name}
+            </h2>
+            <button onClick={onClose} className="shrink-0 mt-0.5" style={{ color: t.textVeryMuted }}>
+              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
-          <h2 className="text-lg font-bold leading-tight" style={{ color: t.textPrimary }}>{selected.name}</h2>
-        </div>
-        <div className="flex items-center gap-2 flex-wrap">
-          <span
-            className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
-            style={{ background: bg, color: text }}
-          >
-            {selected.rating}
-          </span>
-          {(raceType === "senate" || raceType === "governor" || raceType === "house") && (
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <span
+              className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full"
+              style={{ background: bg, color: text }}
+            >
+              {selected.rating}
+            </span>
             <Link
               href={`/${raceType}/${selected.id.toLowerCase()}`}
-              className="text-xs flex items-center gap-1 transition-colors"
+              className="text-[9px] flex items-center gap-0.5 transition-colors"
               style={{ color: t.textMuted }}
             >
               View details
-              <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg className="w-2 h-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
             </Link>
-          )}
-        </div>
-      </div>
-
-      {/* ── Candidates ── */}
-      {selected.candidates && (
-        <div
-          className="shrink-0 w-full md:w-[220px] p-3 flex flex-col"
-          style={{ borderBottom: `1px solid ${t.border}` }}
-        >
-          <div className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: t.textMuted }}>
-            Candidates
-          </div>
-          <div className="flex flex-col gap-1.5">
-            <CandidateCard candidate={selected.candidates.dem} pct={demVoteShare} theme={t} />
-            <CandidateCard candidate={selected.candidates.rep} pct={repVoteShare} theme={t} />
           </div>
         </div>
-      )}
 
-      {/* ── Win Probability + Projected Margin ── */}
-      <div
-        className="shrink-0 w-full md:w-[190px] p-3 flex flex-col gap-2.5"
-        style={{ borderBottom: `1px solid ${t.border}` }}
-      >
-        <div>
-          <div className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: t.textMuted }}>
+        {/* Candidates */}
+        {selected.candidates && (
+          <div className="px-2 pt-1.5 pb-1 flex flex-col gap-1 shrink-0" style={{ borderBottom: `1px solid ${t.border}` }}>
+            {(
+              [
+                { c: selected.candidates.dem, pct: demVoteShare, isD: true },
+                { c: selected.candidates.rep, pct: repVoteShare, isD: false },
+              ] as { c: Candidate; pct: number; isD: boolean }[]
+            ).map(({ c, pct, isD }) => {
+              const color = isD ? "#1b408c" : "#be1c29";
+              const bgC = isD ? t.candidateDemBg : t.candidateRepBg;
+              return (
+                <div
+                  key={c.name}
+                  className="flex items-center justify-between rounded px-2 py-1"
+                  style={{ background: bgC, borderLeft: `2px solid ${color}` }}
+                >
+                  <div className="min-w-0 flex-1">
+                    <div
+                      className="text-[10px] font-semibold leading-tight"
+                      style={{ color: t.textPrimary, wordBreak: "break-word" }}
+                    >
+                      {c.name}
+                    </div>
+                    <div className="text-[8px]" style={{ color }}>
+                      {isD ? "Democrat" : "Republican"}
+                      {c.incumbent ? " · Inc." : ""}
+                    </div>
+                  </div>
+                  <div className="text-[10px] font-bold tabular-nums ml-1 shrink-0" style={{ color }}>
+                    {pct.toFixed(1)}%
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Win Probability + Margin */}
+        <div className="px-2 pt-1.5 pb-2 shrink-0" style={{ borderBottom: `1px solid ${t.border}` }}>
+          <div
+            className="text-[8px] font-semibold uppercase tracking-wider mb-1"
+            style={{ color: t.textMuted }}
+          >
             Win Probability
           </div>
-          <div className="flex justify-between text-xs font-semibold mb-1.5">
-            <span style={{ color: "#1b408c" }}>D {demPct}%</span>
-            <span style={{ color: "#be1c29" }}>R {repPct}%</span>
+          <div className="flex justify-between text-[9px] font-semibold mb-1">
+            <span style={{ color: "#1b408c" }}>D {demWinPct}%</span>
+            <span style={{ color: "#be1c29" }}>R {repWinPct}%</span>
           </div>
-          <div className="h-2.5 rounded-full overflow-hidden flex">
-            <div style={{ width: `${demPct}%`, background: "#1b408c" }} className="transition-all duration-300" />
-            <div style={{ width: `${repPct}%`, background: "#be1c29" }} className="transition-all duration-300" />
+          <div className="h-2 rounded-full overflow-hidden flex mb-2">
+            <div style={{ width: `${demWinPct}%`, background: "#1b408c" }} />
+            <div style={{ width: `${repWinPct}%`, background: "#be1c29" }} />
           </div>
-        </div>
-        <div>
-          <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: t.textMuted }}>
-            Projected Margin
-          </div>
-          <div className="text-xl font-bold" style={{ color: marginIsD ? "#1b408c" : "#be1c29" }}>
-            {marginIsD ? "+" : ""}{selected.margin.toFixed(1)}
-          </div>
-          <div className="text-xs mt-0.5" style={{ color: t.textMuted }}>
-            {marginIsD ? "Dem" : "Rep"} advantage
-          </div>
-        </div>
-      </div>
-
-      {/* ── Past Results ── */}
-      {selected.pastResults && selected.pastResults.length > 0 && (
-        <div
-          className="shrink-0 w-full md:w-[210px] p-3"
-          style={{ borderBottom: `1px solid ${t.border}` }}
-        >
-          <div className="text-[10px] uppercase tracking-wider font-semibold mb-2.5" style={{ color: t.textMuted }}>
-            Past Results
-          </div>
-          <div className="flex flex-col gap-2">
-            {selected.pastResults.map((res) => (
-              <PastResultRow key={res.year} result={res} theme={t} />
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* ── Probability Trend ── */}
-      <div className="w-full md:flex-1 md:min-w-[200px] p-3">
-        <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: t.textMuted }}>
-          Probability Trend
-        </div>
-        <div style={{ height: "calc(100% - 20px)" }}>
-          <TrendChart data={selected.history} />
-        </div>
-      </div>
-    </aside>
-  );
-}
-
-function CandidateCard({ candidate, pct, theme: t }: { candidate: Candidate; pct: number; theme: Theme; }) {
-  const isD = candidate.party === "D" || candidate.party === "I";
-  const partyLabel = candidate.party === "I" ? "Independent" : candidate.party === "D" ? "Democrat" : "Republican";
-  const borderColor = isD ? "#1b408c" : "#be1c29";
-  const bgColor = isD ? t.candidateDemBg : t.candidateRepBg;
-  const textColor = isD ? "#1b408c" : "#be1c29";
-
-  return (
-    <div
-      className="flex items-center justify-between rounded-lg px-3 py-1.5"
-      style={{ background: bgColor, borderLeft: `3px solid ${borderColor}` }}
-    >
-      <div>
-        <div className="text-sm font-semibold leading-tight" style={{ color: t.textPrimary }}>{candidate.name}</div>
-        <div className="flex items-center gap-1.5 mt-0.5">
-          <span style={{ color: textColor }} className="text-[10px] font-medium">{partyLabel}</span>
-          {candidate.incumbent && (
-            <span className="text-[9px] px-1.5 py-0.5 rounded-full font-medium" style={{ background: `${borderColor}20`, color: textColor }}>
-              Incumbent
+          <div className="flex items-baseline gap-1.5">
+            <span
+              className="text-[8px] font-semibold uppercase tracking-wider"
+              style={{ color: t.textMuted }}
+            >
+              Projected Margin
             </span>
-          )}
+          </div>
+          <div className="flex items-baseline gap-1 mt-0.5">
+            <span
+              className="text-base font-bold leading-none"
+              style={{ color: marginIsD ? "#1b408c" : "#be1c29" }}
+            >
+              {marginIsD ? "D+" : "R+"}
+              {Math.abs(selected.margin).toFixed(1)}
+            </span>
+            <span className="text-[9px]" style={{ color: t.textMuted }}>
+              {marginIsD ? "Dem" : "Rep"} adv.
+            </span>
+          </div>
         </div>
-      </div>
-      <div style={{ color: textColor }} className="text-lg font-bold tabular-nums">
-        {pct.toFixed(1)}%
-      </div>
-    </div>
-  );
-}
 
-function PastResultRow({ result, theme: t }: { result: PastResult; theme: Theme }) {
-  const { year, demPct, repPct } = result;
-  const winner = demPct > repPct ? "D" : "R";
-  const margin = Math.abs(demPct - repPct).toFixed(1);
-  const total = demPct + repPct;
-  const dWidth = total > 0 ? (demPct / total) * 100 : 50;
+        {/* Past Results */}
+        {selected.pastResults && selected.pastResults.length > 0 && (
+          <div className="px-2 pt-1.5 pb-2">
+            <div
+              className="text-[8px] font-semibold uppercase tracking-wider mb-1.5"
+              style={{ color: t.textMuted }}
+            >
+              Past Results
+            </div>
+            <div className="flex flex-col gap-1.5">
+              {selected.pastResults.map((res) => {
+                const winner = res.demPct > res.repPct ? "D" : "R";
+                const margin = Math.abs(res.demPct - res.repPct).toFixed(1);
+                const total = res.demPct + res.repPct;
+                const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
+                return (
+                  <div key={res.year}>
+                    <div className="flex justify-between items-center mb-0.5">
+                      <span className="text-[9px] font-semibold" style={{ color: t.textMuted }}>
+                        {res.year}
+                      </span>
+                      <span
+                        className="text-[9px] font-bold"
+                        style={{ color: winner === "D" ? "#1b408c" : "#be1c29" }}
+                      >
+                        {winner}+{margin}
+                      </span>
+                    </div>
+                    <div className="flex h-1.5 rounded-full overflow-hidden">
+                      <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
+                      <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
+                    </div>
+                    <div className="flex justify-between mt-0.5">
+                      <span className="text-[8px]" style={{ color: "#1b408c99" }}>
+                        {res.demPct}%
+                      </span>
+                      <span className="text-[8px]" style={{ color: "#be1c2999" }}>
+                        {res.repPct}%
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </div>
 
-  return (
-    <div>
-      <div className="flex justify-between items-center mb-1">
-        <span className="text-xs font-semibold" style={{ color: t.textMuted }}>{year}</span>
-        <span className="text-[10px] font-bold" style={{ color: winner === "D" ? "#1b408c" : "#be1c29" }}>
-          {winner}+{margin}
-        </span>
+      {/* ── Mobile: single-row strip, h-14, above controls bar ── */}
+      <div
+        className="md:hidden fixed bottom-14 left-0 right-0 z-30 flex items-center h-14 px-3 gap-0"
+        style={{ background: t.panel, borderTop: `1px solid ${t.border}`, borderBottom: `1px solid ${t.border}` }}
+      >
+        {/* Name + rating stacked */}
+        <div className="flex flex-col justify-center min-w-0 flex-1 pr-2">
+          <span className="text-xs font-bold leading-tight truncate" style={{ color: t.textPrimary }}>
+            {selected.name}
+          </span>
+          <div className="flex items-center gap-1.5 mt-0.5">
+            <span
+              className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full shrink-0"
+              style={{ background: bg, color: text }}
+            >
+              {selected.rating}
+            </span>
+            <Link
+              href={`/${raceType}/${selected.id.toLowerCase()}`}
+              className="text-[9px] shrink-0"
+              style={{ color: t.textMuted }}
+            >
+              Details ↗
+            </Link>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="w-px self-stretch shrink-0 mx-2" style={{ background: t.border }} />
+
+        {/* Candidates OR past results */}
+        <div className="flex flex-col justify-center gap-0.5 shrink-0 pr-2" style={{ width: 130 }}>
+          {selected.candidates ? (
+            (
+              [
+                { c: selected.candidates.dem, pct: demVoteShare, isD: true },
+                { c: selected.candidates.rep, pct: repVoteShare, isD: false },
+              ] as { c: Candidate; pct: number; isD: boolean }[]
+            ).map(({ c, pct, isD }) => {
+              const color = isD ? "#1b408c" : "#be1c29";
+              return (
+                <div key={c.name} className="flex items-center justify-between gap-1">
+                  <span className="text-[10px] font-medium truncate" style={{ color: t.textPrimary }}>{c.name}</span>
+                  <span className="text-[10px] font-bold tabular-nums shrink-0" style={{ color }}>{pct.toFixed(1)}%</span>
+                </div>
+              );
+            })
+          ) : selected.pastResults && selected.pastResults.length > 0 ? (
+            selected.pastResults.slice(0, 2).map((res) => {
+              const winner = res.demPct > res.repPct ? "D" : "R";
+              const m = Math.abs(res.demPct - res.repPct).toFixed(1);
+              const total = res.demPct + res.repPct;
+              const dW = total > 0 ? (res.demPct / total) * 100 : 50;
+              return (
+                <div key={res.year} className="flex items-center gap-1">
+                  <span className="text-[9px] font-semibold shrink-0" style={{ color: t.textMuted }}>{res.year}</span>
+                  <div className="flex h-1.5 rounded-full overflow-hidden flex-1">
+                    <div style={{ width: `${dW}%`, background: "#1b408c" }} />
+                    <div style={{ width: `${100 - dW}%`, background: "#be1c29" }} />
+                  </div>
+                  <span className="text-[9px] font-bold shrink-0" style={{ color: winner === "D" ? "#1b408c" : "#be1c29" }}>{winner}+{m}</span>
+                </div>
+              );
+            })
+          ) : null}
+        </div>
+
+        {/* Divider */}
+        <div className="w-px self-stretch shrink-0 mx-2" style={{ background: t.border }} />
+
+        {/* Win prob */}
+        <div className="flex flex-col justify-center shrink-0 pr-2" style={{ width: 64 }}>
+          <div className="flex justify-between text-[9px] font-bold mb-1">
+            <span style={{ color: "#1b408c" }}>D {demWinPct}%</span>
+            <span style={{ color: "#be1c29" }}>R {repWinPct}%</span>
+          </div>
+          <div className="h-1.5 rounded-full overflow-hidden flex">
+            <div style={{ width: `${demWinPct}%`, background: "#1b408c" }} />
+            <div style={{ width: `${repWinPct}%`, background: "#be1c29" }} />
+          </div>
+          <div className="text-[8px] mt-0.5 text-center" style={{ color: t.textMuted }}>win prob</div>
+        </div>
+
+        {/* Divider */}
+        <div className="w-px self-stretch shrink-0 mx-2" style={{ background: t.border }} />
+
+        {/* Margin */}
+        <div className="shrink-0 flex flex-col justify-center text-center">
+          <div className="text-[8px] font-semibold uppercase tracking-wider mb-0.5" style={{ color: t.textMuted }}>
+            Margin
+          </div>
+          <div
+            className="text-base font-bold leading-none tabular-nums"
+            style={{ color: marginIsD ? "#1b408c" : "#be1c29" }}
+          >
+            {marginIsD ? "D+" : "R+"}
+            {Math.abs(selected.margin).toFixed(1)}
+          </div>
+        </div>
+
+        {/* Close button */}
+        <button onClick={onClose} className="shrink-0 ml-2" style={{ color: t.textVeryMuted }}>
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
       </div>
-      <div className="flex h-2 rounded-full overflow-hidden">
-        <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
-        <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
-      </div>
-      <div className="flex justify-between mt-0.5">
-        <span className="text-[9px]" style={{ color: "#1b408c99" }}>{demPct}%</span>
-        <span className="text-[9px]" style={{ color: "#be1c2999" }}>{repPct}%</span>
-      </div>
-    </div>
+    </>
   );
 }
