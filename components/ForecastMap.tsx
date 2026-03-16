@@ -192,10 +192,10 @@ export default function ForecastMap() {
         style={{ background: t.panel, borderColor: t.border }}
       >
         {([
+          { label: "States", href: "/states" },
           { label: "House", href: "/house" },
           { label: "Senate", href: "/senate" },
           { label: "Governor", href: "/governor" },
-          { label: "States", href: "/states" },
         ] as { label: string; href: string }[]).map(({ label, href }) => (
           <Link
             key={href}
