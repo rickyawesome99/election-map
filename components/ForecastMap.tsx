@@ -183,7 +183,7 @@ export default function ForecastMap() {
 
         {/* ── Map ── */}
         <div
-          className="relative flex-1 overflow-hidden md:pb-16"
+          className="relative flex-1 overflow-hidden pb-14 md:pb-16"
           style={{}}
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
@@ -393,7 +393,7 @@ export default function ForecastMap() {
 
         {/* ── Mobile Controls Bar ── */}
         <div
-          className="md:hidden shrink-0 flex items-center justify-between gap-3 px-4 py-2"
+          className="md:hidden fixed bottom-0 left-0 right-0 z-20 flex items-center justify-between gap-3 px-4 py-2"
           style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
         >
           {/* Race-type toggle */}

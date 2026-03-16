@@ -19,8 +19,8 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
   if (!selected) {
     return (
       <aside
-        className="shrink-0 flex items-center justify-center gap-3 px-8"
-        style={{ background: t.panel, borderTop: `1px solid ${t.border}`, height: "200px" }}
+        className="hidden md:flex shrink-0 items-center justify-center gap-3 px-8 md:h-[200px]"
+        style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
       >
         <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: t.tabBg }}>
           <svg className="w-5 h-5" style={{ color: t.textVeryMuted }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -37,19 +37,21 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
 
   const demPct = Math.round(selected.probability * 100);
   const repPct = 100 - demPct;
+  const demVoteShare = (100 + selected.margin) / 2;
+  const repVoteShare = (100 - selected.margin) / 2;
   const { bg, text } = getRatingColors(selected.rating);
   const marginIsD = selected.margin >= 0;
 
   return (
     <aside
-      className="shrink-0 flex flex-row overflow-x-auto overflow-y-hidden"
-      style={{ background: t.panel, borderTop: `1px solid ${t.border}`, height: "200px" }}
+      className="fixed bottom-0 left-0 right-0 z-30 flex flex-col overflow-y-auto max-h-[50vh] md:relative md:z-auto md:shrink-0 md:flex-row md:max-h-none md:h-[200px] md:overflow-x-auto md:overflow-y-hidden"
+      style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
     >
 
       {/* ── Header ── */}
       <div
-        className="shrink-0 p-4 flex flex-col justify-between"
-        style={{ width: "200px", borderRight: `1px solid ${t.border}` }}
+        className="shrink-0 w-full md:w-[200px] p-4 flex flex-col justify-between"
+        style={{ borderBottom: `1px solid ${t.border}` }}
       >
         <div>
           <div className="flex items-start justify-between mb-1">
@@ -89,23 +91,23 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
       {/* ── Candidates ── */}
       {selected.candidates && (
         <div
-          className="shrink-0 p-4 flex flex-col"
-          style={{ width: "220px", borderRight: `1px solid ${t.border}` }}
+          className="shrink-0 w-full md:w-[220px] p-4 flex flex-col"
+          style={{ borderBottom: `1px solid ${t.border}` }}
         >
           <div className="text-[10px] uppercase tracking-wider font-semibold mb-2.5" style={{ color: t.textMuted }}>
             Candidates
           </div>
           <div className="flex flex-col gap-2">
-            <CandidateCard candidate={selected.candidates.dem} pct={demPct} theme={t} />
-            <CandidateCard candidate={selected.candidates.rep} pct={repPct} theme={t} />
+            <CandidateCard candidate={selected.candidates.dem} pct={demVoteShare} theme={t} />
+            <CandidateCard candidate={selected.candidates.rep} pct={repVoteShare} theme={t} />
           </div>
         </div>
       )}
 
       {/* ── Win Probability + Projected Margin ── */}
       <div
-        className="shrink-0 p-4 flex flex-col gap-4"
-        style={{ width: "190px", borderRight: `1px solid ${t.border}` }}
+        className="shrink-0 w-full md:w-[190px] p-4 flex flex-col gap-4"
+        style={{ borderBottom: `1px solid ${t.border}` }}
       >
         <div>
           <div className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: t.textMuted }}>
@@ -136,8 +138,8 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
       {/* ── Past Results ── */}
       {selected.pastResults && selected.pastResults.length > 0 && (
         <div
-          className="shrink-0 p-4 overflow-y-auto"
-          style={{ width: "210px", borderRight: `1px solid ${t.border}` }}
+          className="shrink-0 w-full md:w-[210px] p-4"
+          style={{ borderBottom: `1px solid ${t.border}` }}
         >
           <div className="text-[10px] uppercase tracking-wider font-semibold mb-2.5" style={{ color: t.textMuted }}>
             Past Results
@@ -151,7 +153,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
       )}
 
       {/* ── Probability Trend ── */}
-      <div className="flex-1 min-w-[200px] p-4">
+      <div className="w-full md:flex-1 md:min-w-[200px] p-4">
         <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: t.textMuted }}>
           Probability Trend
         </div>
@@ -163,7 +165,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
   );
 }
 
-function CandidateCard({ candidate, pct, theme: t }: { candidate: Candidate; pct: number; theme: Theme }) {
+function CandidateCard({ candidate, pct, theme: t }: { candidate: Candidate; pct: number; theme: Theme; }) {
   const isD = candidate.party === "D" || candidate.party === "I";
   const partyLabel = candidate.party === "I" ? "Independent" : candidate.party === "D" ? "Democrat" : "Republican";
   const borderColor = isD ? "#1b408c" : "#be1c29";
@@ -187,7 +189,7 @@ function CandidateCard({ candidate, pct, theme: t }: { candidate: Candidate; pct
         </div>
       </div>
       <div style={{ color: textColor }} className="text-lg font-bold tabular-nums">
-        {pct}%
+        {pct.toFixed(1)}%
       </div>
     </div>
   );
