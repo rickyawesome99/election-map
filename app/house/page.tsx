@@ -1,5 +1,5 @@
 import { houseData } from "@/data/forecastData";
-import { getRatingColors } from "@/lib/colorScale";
+import RaceTable from "@/components/RaceTable";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -8,15 +8,7 @@ export const metadata = {
   description: "2026 U.S. House race forecasts for all 435 congressional districts",
 };
 
-const RATING_ORDER = ["Safe D", "Likely D", "Lean D", "Tilt D", "Tilt R", "Lean R", "Likely R", "Safe R"];
-
 export default function HouseListPage() {
-  const sorted = [...houseData].sort((a, b) => {
-    const ri = RATING_ORDER.indexOf(a.rating) - RATING_ORDER.indexOf(b.rating);
-    if (ri !== 0) return ri;
-    return a.name.localeCompare(b.name);
-  });
-
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <header
@@ -67,101 +59,7 @@ export default function HouseListPage() {
           </p>
         </div>
 
-        <div
-          className="rounded-xl overflow-hidden"
-          style={{ border: "1px solid var(--app-border)" }}
-        >
-          <table className="w-full text-sm">
-            <thead>
-              <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
-                <th className="text-left px-4 py-3 text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-                  District
-                </th>
-                <th className="text-left px-4 py-3 text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-                  Rating
-                </th>
-                <th className="text-left px-4 py-3 text-[10px] uppercase tracking-wider font-semibold hidden md:table-cell" style={{ color: "var(--app-text-muted)" }}>
-                  Democrat
-                </th>
-                <th className="text-left px-4 py-3 text-[10px] uppercase tracking-wider font-semibold hidden md:table-cell" style={{ color: "var(--app-text-muted)" }}>
-                  Republican
-                </th>
-                <th className="text-right px-4 py-3 text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-                  Margin
-                </th>
-                <th className="text-right px-4 py-3 text-[10px] uppercase tracking-wider font-semibold hidden sm:table-cell" style={{ color: "var(--app-text-muted)" }}>
-                  D Win %
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {sorted.map((race, i) => {
-                const { bg, text } = getRatingColors(race.rating);
-                const marginIsD = race.margin >= 0;
-                const demPct = Math.round(race.probability * 100);
-                const repPct = 100 - demPct;
-                return (
-                  <tr
-                    key={race.id}
-                    style={{
-                      background: i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
-                      borderBottom: "1px solid var(--app-border)",
-                    }}
-                    className="transition-colors hover:opacity-80"
-                  >
-                    <td className="px-4 py-3">
-                      <Link
-                        href={`/house/${race.id.toLowerCase()}`}
-                        className="font-semibold hover:underline"
-                        style={{ color: "var(--app-text-primary)" }}
-                      >
-                        {race.name}
-                      </Link>
-                    </td>
-                    <td className="px-4 py-3">
-                      <span
-                        className="text-xs font-semibold px-2 py-0.5 rounded-full whitespace-nowrap"
-                        style={{ background: bg, color: text }}
-                      >
-                        {race.rating}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 hidden md:table-cell" style={{ color: "#1b408c" }}>
-                      {race.candidates?.dem.name ?? <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>}
-                      {race.candidates?.dem.incumbent && (
-                        <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded-full font-medium" style={{ background: "#1b408c20", color: "#1b408c" }}>
-                          Inc.
-                        </span>
-                      )}
-                    </td>
-                    <td className="px-4 py-3 hidden md:table-cell" style={{ color: "#be1c29" }}>
-                      {race.candidates?.rep.name ?? <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>}
-                      {race.candidates?.rep.incumbent && (
-                        <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded-full font-medium" style={{ background: "#be1c2920", color: "#be1c29" }}>
-                          Inc.
-                        </span>
-                      )}
-                    </td>
-                    <td className="px-4 py-3 text-right font-bold tabular-nums" style={{ color: marginIsD ? "#1b408c" : "#be1c29" }}>
-                      {marginIsD ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
-                    </td>
-                    <td className="px-4 py-3 hidden sm:table-cell">
-                      <div className="flex items-center justify-end gap-2">
-                        <div className="w-20 h-2 rounded-full overflow-hidden flex">
-                          <div style={{ width: `${demPct}%`, background: "#1b408c" }} />
-                          <div style={{ width: `${repPct}%`, background: "#be1c29" }} />
-                        </div>
-                        <span className="text-xs tabular-nums w-8 text-right" style={{ color: "var(--app-text-muted)" }}>
-                          {demPct}%
-                        </span>
-                      </div>
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+        <RaceTable races={houseData} basePath="/house" nameLabel="District" />
       </main>
     </div>
   );
