@@ -1,4 +1,4 @@
-import { governorData } from "@/data/forecastData";
+import { governorData, governorNoElection, NoElectionEntry } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -7,21 +7,153 @@ import { candidatePhotos } from "@/lib/candidatePhotos";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export async function generateStaticParams() {
-  return governorData.map((race) => ({ id: race.id.toLowerCase() }));
+  return [
+    ...governorData.map((race) => ({ id: race.id.toLowerCase() })),
+    ...governorNoElection.map((e) => ({ id: e.abbr.toLowerCase() })),
+  ];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const race = governorData.find((r) => r.id.toLowerCase() === id.toLowerCase());
-  if (!race) return { title: "Race Not Found" };
-  return {
+  if (race) return {
     title: `${race.name} Governor Race — 2026 Forecast`,
     description: `2026 Governor forecast for ${race.name}: ${race.rating}, ${Math.round(race.probability * 100)}% Democratic win probability`,
   };
+  const noEl = governorNoElection.find((e) => e.abbr.toLowerCase() === id.toLowerCase());
+  if (noEl) return { title: `${noEl.state} Governor — No Election in 2026` };
+  return { title: "Race Not Found" };
+}
+
+function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
+  const partyColor = entry.party === "D" ? "#1b408c" : entry.party === "R" ? "#be1c29" : "var(--app-text-primary)";
+  const partyLabel = entry.party === "D" ? "Democrat" : entry.party === "R" ? "Republican" : "Independent";
+  return (
+    <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
+      <header
+        className="px-6 py-4 flex items-center gap-4"
+        style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+      >
+        <Link href="/" className="flex items-center gap-2 text-sm transition-colors" style={{ color: "var(--app-text-muted)" }}>
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+          Back to Map
+        </Link>
+        <div className="h-4 w-px" style={{ background: "var(--app-border)" }} />
+        <span className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Governor</span>
+        <span style={{ color: "var(--app-text-very-muted)" }}>/</span>
+        <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{entry.state}</span>
+        <div className="ml-auto"><ThemeToggle /></div>
+      </header>
+
+      <main className="max-w-4xl mx-auto px-6 py-10">
+        <div className="mb-8">
+          <div className="flex items-center gap-3 mb-2 flex-wrap">
+            <h1 className="text-3xl font-bold" style={{ color: "var(--app-text-primary)" }}>{entry.state}</h1>
+            <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+              No Election in 2026
+            </span>
+          </div>
+          <p style={{ color: "var(--app-text-muted)" }}>Gubernatorial Office · No Election This Cycle</p>
+        </div>
+
+        {/* Incumbent info */}
+        <section className="rounded-xl p-6 mb-6" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
+          <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-5" style={{ color: "var(--app-text-muted)" }}>
+            Current Incumbent
+          </h2>
+          <div className="flex items-start gap-6">
+            <div className="w-24 h-32 rounded-lg overflow-hidden shrink-0 flex items-center justify-center"
+              style={{ border: `2px solid ${partyColor}`, background: "var(--app-tab-bg)" }}>
+              <svg viewBox="0 0 96 128" className="w-full h-full" fill="none">
+                <rect width="96" height="128" fill="var(--app-tab-bg)" />
+                <circle cx="48" cy="44" r="22" fill="var(--app-border)" />
+                <ellipse cx="48" cy="118" rx="38" ry="28" fill="var(--app-border)" />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <div className="text-xl font-bold mb-1" style={{ color: "var(--app-text-primary)" }}>{entry.incumbent}</div>
+              <div className="text-sm font-medium mb-3" style={{ color: partyColor }}>{partyLabel} · Incumbent</div>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-4">
+                {[
+                  { label: "State", value: entry.state },
+                  { label: "Party", value: partyLabel },
+                  { label: "Next Election", value: String(entry.nextElection) },
+                  { label: "Term Started", value: "TBD" },
+                  { label: "Term Ends", value: String(entry.nextElection) },
+                ].map(({ label, value }) => (
+                  <div key={label} className="rounded-lg p-3" style={{ background: "var(--app-bg)" }}>
+                    <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>{label}</div>
+                    <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>{value}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* No election notice */}
+        <section className="rounded-xl p-6 mb-6" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
+          <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-4" style={{ color: "var(--app-text-muted)" }}>Election Status</h2>
+          <div className="rounded-lg p-4 flex items-start gap-3" style={{ background: "var(--app-tab-bg)", border: "1px solid var(--app-border)" }}>
+            <svg className="w-5 h-5 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-muted)" }}>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div>
+              <div className="text-sm font-semibold mb-1" style={{ color: "var(--app-text-primary)" }}>No Election This Cycle</div>
+              <div className="text-sm" style={{ color: "var(--app-text-muted)" }}>
+                This governorship is not on the ballot in 2026. The next election is scheduled for{" "}
+                <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{entry.nextElection}</span>.
+                Incumbent and biographical information to be filled in.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="rounded-xl p-6 mb-6" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
+          <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-4" style={{ color: "var(--app-text-muted)" }}>About this Office</h2>
+          <p className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
+            [Placeholder — overview of the {entry.state} governorship, its powers, the incumbent&apos;s background, key issues, and political context to be filled in.]
+          </p>
+        </section>
+
+        <section className="rounded-xl p-6" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
+          <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-5" style={{ color: "var(--app-text-muted)" }}>Past Election Results</h2>
+          <div className="flex flex-col gap-4">
+            {[entry.nextElection - 4, entry.nextElection - 8].map((year) => (
+              <div key={year} style={{ opacity: 0.45 }}>
+                <div className="flex items-center gap-3 mb-2">
+                  <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{year}</span>
+                  <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
+                </div>
+                <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
+                  <div>
+                    <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
+                    <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>TBD</div>
+                  </div>
+                  <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
+                  <div className="text-right">
+                    <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
+                    <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>TBD</div>
+                  </div>
+                </div>
+                <div className="flex h-4 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }} />
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
+    </div>
+  );
 }
 
 export default async function GovernorPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
+
+  const noEl = governorNoElection.find((e) => e.abbr.toLowerCase() === id.toLowerCase());
+  if (noEl) return <NoElectionPage entry={noEl} />;
+
   const race = governorData.find((r) => r.id.toLowerCase() === id.toLowerCase());
   if (!race) notFound();
 
@@ -29,6 +161,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const repPct = 100 - demPct;
   const { bg, text } = getRatingColors(race.rating);
   const marginIsD = race.margin >= 0;
+  const demVoteShare = parseFloat(((100 + race.margin) / 2).toFixed(1));
+  const repVoteShare = parseFloat(((100 - race.margin) / 2).toFixed(1));
 
   const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
   const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
@@ -117,8 +251,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             </h2>
             <div className="flex items-start justify-center gap-8 md:gap-16">
               {[
-                { candidate: race.candidates.dem, photo: demPhoto, pct: demPct },
-                { candidate: race.candidates.rep, photo: repPhoto, pct: repPct },
+                { candidate: race.candidates.dem, photo: demPhoto, pct: demVoteShare },
+                { candidate: race.candidates.rep, photo: repPhoto, pct: repVoteShare },
               ].map(({ candidate, photo, pct }) => {
                 const isD = candidate.party === "D" || candidate.party === "I";
                 const partyLabel = candidate.party === "I" ? "Independent" : candidate.party === "D" ? "Democrat" : "Republican";
@@ -159,7 +293,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                     <div className="text-lg font-bold tabular-nums mt-1" style={{ color: textColor }}>
                       {pct}%
                     </div>
-                    <div className="text-[10px]" style={{ color: "var(--app-text-muted)" }}>win probability</div>
+                    <div className="text-[10px]" style={{ color: "var(--app-text-muted)" }}>projected vote share</div>
                   </div>
                 );
               })}
@@ -181,8 +315,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             </h2>
             <div className="flex items-start justify-center gap-8 md:gap-16">
               {[
-                { label: "Democrat", color: "#1b408c", pct: demPct },
-                { label: "Republican", color: "#be1c29", pct: repPct },
+                { label: "Democrat", color: "#1b408c", pct: demVoteShare },
+                { label: "Republican", color: "#be1c29", pct: repVoteShare },
               ].map(({ label, color, pct }) => (
                 <div key={label} className="flex flex-col items-center text-center w-40">
                   <div
@@ -258,16 +392,19 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             </h2>
             <div className="flex flex-col gap-4">
               {[
-                { label: "RCP Average", dem: 0, rep: 0 },
-                { label: "Kalshi Odds", dem: 0, rep: 0 },
-                { label: "Polymarket Odds", dem: 0, rep: 0 },
-              ].map(({ label }) => (
+                { label: "RCP Average", type: "voteshare" },
+                { label: "Kalshi Odds", type: "winprob" },
+                { label: "Polymarket Odds", type: "winprob" },
+              ].map(({ label, type }) => (
                 <div key={label}>
                   <div className="flex justify-between items-center mb-1.5">
                     <span className="text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{label}</span>
                     <span className="text-xs font-medium italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
                   </div>
                   <div className="flex h-3 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }} />
+                  <div className="text-[10px] mt-0.5 text-center" style={{ color: "var(--app-text-very-muted)" }}>
+                    {type === "voteshare" ? "vote share" : "win probability"}
+                  </div>
                 </div>
               ))}
             </div>
@@ -334,10 +471,16 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                       )}
                     </div>
                     {!isPlaceholder && (
-                      <div className="flex justify-between">
-                        <span className="text-xs font-semibold" style={{ color: "#1b408c" }}>{res.demPct}%</span>
-                        <span className="text-xs font-semibold" style={{ color: "#be1c29" }}>{res.repPct}%</span>
-                      </div>
+                      <>
+                        <div className="flex justify-between">
+                          <span className="text-xs font-semibold" style={{ color: "#1b408c" }}>{res.demPct}%</span>
+                          <span className="text-xs font-semibold" style={{ color: "#be1c29" }}>{res.repPct}%</span>
+                        </div>
+                        <div className="flex justify-between mt-1">
+                          <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>
+                          <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>
+                        </div>
+                      </>
                     )}
                   </div>
                 );

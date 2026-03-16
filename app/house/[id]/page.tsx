@@ -27,6 +27,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const repPct = 100 - demPct;
   const { bg, text } = getRatingColors(race.rating);
   const marginIsD = race.margin >= 0;
+  const demVoteShare = parseFloat(((100 + race.margin) / 2).toFixed(1));
+  const repVoteShare = parseFloat(((100 - race.margin) / 2).toFixed(1));
 
   // Parse district label for display (e.g. "CA-12" → state + district number)
   const [stateAbbr, districtNum] = race.name.split("-");
@@ -119,8 +121,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             </h2>
             <div className="flex items-start justify-center gap-8 md:gap-16">
               {[
-                { candidate: race.candidates.dem, pct: demPct },
-                { candidate: race.candidates.rep, pct: repPct },
+                { candidate: race.candidates.dem, pct: demVoteShare },
+                { candidate: race.candidates.rep, pct: repVoteShare },
               ].map(({ candidate, pct }) => {
                 const isD = candidate.party === "D" || candidate.party === "I";
                 const partyLabel = candidate.party === "I" ? "Independent" : candidate.party === "D" ? "Democrat" : "Republican";
@@ -150,7 +152,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                     <div className="text-lg font-bold tabular-nums mt-1" style={{ color: textColor }}>
                       {pct}%
                     </div>
-                    <div className="text-[10px]" style={{ color: "var(--app-text-muted)" }}>win probability</div>
+                    <div className="text-[10px]" style={{ color: "var(--app-text-muted)" }}>projected vote share</div>
                   </div>
                 );
               })}
@@ -172,8 +174,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             </h2>
             <div className="flex items-start justify-center gap-8 md:gap-16">
               {[
-                { label: "Democrat", color: "#1b408c", pct: demPct },
-                { label: "Republican", color: "#be1c29", pct: repPct },
+                { label: "Democrat", color: "#1b408c", pct: demVoteShare },
+                { label: "Republican", color: "#be1c29", pct: repVoteShare },
               ].map(({ label, color, pct }) => (
                 <div key={label} className="flex flex-col items-center text-center w-40">
                   <div
@@ -249,16 +251,19 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             </h2>
             <div className="flex flex-col gap-4">
               {[
-                { label: "RCP Average" },
-                { label: "Kalshi Odds" },
-                { label: "Polymarket Odds" },
-              ].map(({ label }) => (
+                { label: "RCP Average", type: "voteshare" },
+                { label: "Kalshi Odds", type: "winprob" },
+                { label: "Polymarket Odds", type: "winprob" },
+              ].map(({ label, type }) => (
                 <div key={label}>
                   <div className="flex justify-between items-center mb-1.5">
                     <span className="text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{label}</span>
                     <span className="text-xs font-medium italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
                   </div>
                   <div className="flex h-3 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }} />
+                  <div className="text-[10px] mt-0.5 text-center" style={{ color: "var(--app-text-very-muted)" }}>
+                    {type === "voteshare" ? "vote share" : "win probability"}
+                  </div>
                 </div>
               ))}
             </div>
@@ -325,14 +330,58 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                       )}
                     </div>
                     {!isPlaceholder && (
-                      <div className="flex justify-between">
-                        <span className="text-xs font-semibold" style={{ color: "#1b408c" }}>{res.demPct}%</span>
-                        <span className="text-xs font-semibold" style={{ color: "#be1c29" }}>{res.repPct}%</span>
-                      </div>
+                      <>
+                        <div className="flex justify-between">
+                          <span className="text-xs font-semibold" style={{ color: "#1b408c" }}>{res.demPct}%</span>
+                          <span className="text-xs font-semibold" style={{ color: "#be1c29" }}>{res.repPct}%</span>
+                        </div>
+                        <div className="flex justify-between mt-1">
+                          <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>
+                          <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>
+                        </div>
+                      </>
                     )}
                   </div>
                 );
               })}
+            </div>
+          </section>
+
+          {/* District Boundaries */}
+          <section
+            className="rounded-xl p-6 md:col-span-2"
+            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+          >
+            <div className="flex items-baseline gap-3 mb-5">
+              <h2 className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
+                District Boundaries
+              </h2>
+              <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+                Map released: <span className="font-semibold">TBD</span>
+              </span>
+            </div>
+            <div className="mb-4">
+              <div className="text-[10px] uppercase tracking-wider font-semibold mb-3" style={{ color: "var(--app-text-muted)" }}>
+                Change History
+              </div>
+              <div className="flex flex-col gap-3">
+                {[
+                  { date: "TBD", description: "Placeholder: Description of most recent redistricting change for this district." },
+                  { date: "TBD", description: "Placeholder: Description of prior redistricting change for this district." },
+                ].map((entry, i) => (
+                  <div key={i} className="flex gap-4 items-start">
+                    <div
+                      className="shrink-0 text-xs font-semibold tabular-nums rounded px-2 py-1 mt-0.5"
+                      style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", minWidth: 56, textAlign: "center" }}
+                    >
+                      {entry.date}
+                    </div>
+                    <div className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
+                      {entry.description}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </section>
 

@@ -25,10 +25,10 @@ export default function GovernorListPage() {
         <div className="h-4 w-px" style={{ background: "var(--app-border)" }} />
         <nav className="flex items-center gap-1">
           {([
+            { label: "States", href: "/states" },
             { label: "House", href: "/house" },
             { label: "Senate", href: "/senate" },
             { label: "Governor", href: "/governor" },
-            { label: "States", href: "/states" },
           ]).map(({ label, href }) => (
             <Link
               key={href}

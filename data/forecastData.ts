@@ -347,3 +347,105 @@ function generateHouseData(): RaceForecast[] {
 }
 
 export const houseData: RaceForecast[] = generateHouseData();
+
+// ── No-Election Incumbents ────────────────────────────────────────────────────
+
+export type NoElectionEntry = {
+  state: string; // matches geo.properties.name
+  abbr: string;
+  incumbent: string;
+  party: "D" | "R" | "I";
+  nextElection: number;
+};
+
+// States with no Senate race in 2026 (Class 2 seat is a holdover — no 2026 election)
+export const senateNoElection: NoElectionEntry[] = [
+  { state: "Arizona",      abbr: "AZ", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "California",   abbr: "CA", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Connecticut",  abbr: "CT", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Hawaii",       abbr: "HI", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Indiana",      abbr: "IN", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Maryland",     abbr: "MD", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Missouri",     abbr: "MO", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Nevada",       abbr: "NV", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "New York",     abbr: "NY", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "North Dakota", abbr: "ND", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Pennsylvania", abbr: "PA", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Utah",         abbr: "UT", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Vermont",      abbr: "VT", incumbent: "Incumbent TBD", party: "I", nextElection: 2028 },
+  { state: "Washington",   abbr: "WA", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Wisconsin",    abbr: "WI", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+];
+
+// The second (non-Class-2) senator for every state — always a holdover, never up in 2026
+// URL: /senate/[abbr.toLowerCase()]-2
+export const senateHoldovers: NoElectionEntry[] = [
+  { state: "Alabama",        abbr: "AL", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Alaska",         abbr: "AK", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Arizona",        abbr: "AZ", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Arkansas",       abbr: "AR", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "California",     abbr: "CA", incumbent: "Incumbent TBD", party: "D", nextElection: 2030 },
+  { state: "Colorado",       abbr: "CO", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Connecticut",    abbr: "CT", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Delaware",       abbr: "DE", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Florida",        abbr: "FL", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Georgia",        abbr: "GA", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Hawaii",         abbr: "HI", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Idaho",          abbr: "ID", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Illinois",       abbr: "IL", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Indiana",        abbr: "IN", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Iowa",           abbr: "IA", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Kansas",         abbr: "KS", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Kentucky",       abbr: "KY", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Louisiana",      abbr: "LA", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Maine",          abbr: "ME", incumbent: "Incumbent TBD", party: "I", nextElection: 2030 },
+  { state: "Maryland",       abbr: "MD", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Massachusetts",  abbr: "MA", incumbent: "Incumbent TBD", party: "D", nextElection: 2030 },
+  { state: "Michigan",       abbr: "MI", incumbent: "Incumbent TBD", party: "D", nextElection: 2030 },
+  { state: "Minnesota",      abbr: "MN", incumbent: "Incumbent TBD", party: "D", nextElection: 2030 },
+  { state: "Mississippi",    abbr: "MS", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Missouri",       abbr: "MO", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Montana",        abbr: "MT", incumbent: "Incumbent TBD", party: "R", nextElection: 2030 },
+  { state: "Nebraska",       abbr: "NE", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Nevada",         abbr: "NV", incumbent: "Incumbent TBD", party: "D", nextElection: 2030 },
+  { state: "New Hampshire",  abbr: "NH", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "New Jersey",     abbr: "NJ", incumbent: "Incumbent TBD", party: "D", nextElection: 2030 },
+  { state: "New Mexico",     abbr: "NM", incumbent: "Incumbent TBD", party: "D", nextElection: 2030 },
+  { state: "New York",       abbr: "NY", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "North Carolina", abbr: "NC", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "North Dakota",   abbr: "ND", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Ohio",           abbr: "OH", incumbent: "Incumbent TBD", party: "R", nextElection: 2030 },
+  { state: "Oklahoma",       abbr: "OK", incumbent: "Incumbent TBD", party: "R", nextElection: 2030 },
+  { state: "Oregon",         abbr: "OR", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Pennsylvania",   abbr: "PA", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Rhode Island",   abbr: "RI", incumbent: "Incumbent TBD", party: "D", nextElection: 2030 },
+  { state: "South Carolina", abbr: "SC", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "South Dakota",   abbr: "SD", incumbent: "Incumbent TBD", party: "R", nextElection: 2030 },
+  { state: "Tennessee",      abbr: "TN", incumbent: "Incumbent TBD", party: "R", nextElection: 2030 },
+  { state: "Texas",          abbr: "TX", incumbent: "Incumbent TBD", party: "R", nextElection: 2030 },
+  { state: "Utah",           abbr: "UT", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Vermont",        abbr: "VT", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Virginia",       abbr: "VA", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Washington",     abbr: "WA", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "West Virginia",  abbr: "WV", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Wisconsin",      abbr: "WI", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Wyoming",        abbr: "WY", incumbent: "Incumbent TBD", party: "R", nextElection: 2030 },
+];
+
+// States with no Governor race in 2026
+export const governorNoElection: NoElectionEntry[] = [
+  { state: "Delaware",      abbr: "DE", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "Indiana",       abbr: "IN", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Kentucky",      abbr: "KY", incumbent: "Incumbent TBD", party: "R", nextElection: 2027 },
+  { state: "Louisiana",     abbr: "LA", incumbent: "Incumbent TBD", party: "R", nextElection: 2027 },
+  { state: "Maine",         abbr: "ME", incumbent: "Incumbent TBD", party: "D", nextElection: 2030 },
+  { state: "Maryland",      abbr: "MD", incumbent: "Incumbent TBD", party: "D", nextElection: 2030 },
+  { state: "Mississippi",   abbr: "MS", incumbent: "Incumbent TBD", party: "R", nextElection: 2027 },
+  { state: "Missouri",      abbr: "MO", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Montana",       abbr: "MT", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "New Jersey",    abbr: "NJ", incumbent: "Incumbent TBD", party: "D", nextElection: 2029 },
+  { state: "North Dakota",  abbr: "ND", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+  { state: "Virginia",      abbr: "VA", incumbent: "Incumbent TBD", party: "D", nextElection: 2025 },
+  { state: "Washington",    abbr: "WA", incumbent: "Incumbent TBD", party: "D", nextElection: 2028 },
+  { state: "West Virginia", abbr: "WV", incumbent: "Incumbent TBD", party: "R", nextElection: 2028 },
+];

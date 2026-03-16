@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
-import { senateData, governorData, houseData, RaceForecast, RaceType } from "@/data/forecastData";
+import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry } from "@/data/forecastData";
 import Sidebar from "./Sidebar";
 import Link from "next/link";
 
@@ -68,7 +68,9 @@ export default function ForecastMap() {
     return "senate";
   });
   const [selected, setSelected] = useState<RaceForecast | null>(null);
+  const [selectedNoElection, setSelectedNoElection] = useState<NoElectionEntry | null>(null);
   const [hovered, setHovered] = useState<RaceForecast | null>(null);
+  const [hoveredNoElection, setHoveredNoElection] = useState<NoElectionEntry | null>(null);
   const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
@@ -118,6 +120,12 @@ export default function ForecastMap() {
     return data.find((d) => d.state === geo.properties?.name);
   }
 
+  function findNoElection(geo: any): NoElectionEntry | undefined {
+    if (isHouse) return undefined;
+    const noElData = raceType === "senate" ? senateNoElection : governorNoElection;
+    return noElData.find((d) => d.state === geo.properties?.name);
+  }
+
   return (
     <div className="flex flex-col h-screen" style={{ background: t.bg }}>
 
@@ -133,10 +141,10 @@ export default function ForecastMap() {
           <div className="hidden md:block h-4 w-px" style={{ background: t.border }} />
           <nav className="hidden md:flex items-center gap-1">
             {([
+              { label: "States", href: "/states" },
               { label: "House", href: "/house" },
               { label: "Senate", href: "/senate" },
               { label: "Governor", href: "/governor" },
-              { label: "States", href: "/states" },
             ] as { label: string; href: string }[]).map(({ label, href }) => (
               <Link
                 key={href}
@@ -279,6 +287,42 @@ export default function ForecastMap() {
             );
           })()}
 
+          {/* No-election hover tooltip */}
+          {hoveredNoElection && (() => {
+            const tipW = 185;
+            const tipH = 70;
+            const offset = 16;
+            let left = mousePos.x + offset;
+            let top = mousePos.y + offset;
+            if (left + tipW > (typeof window !== "undefined" ? window.innerWidth * 0.75 : 800)) {
+              left = mousePos.x - tipW - offset;
+            }
+            if (top + tipH > (typeof window !== "undefined" ? window.innerHeight - 80 : 600)) {
+              top = mousePos.y - tipH - offset;
+            }
+            return (
+              <div
+                className="absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
+                style={{
+                  left, top, width: tipW,
+                  padding: "8px 10px",
+                  background: t.panel,
+                  border: `1px solid ${t.border}`,
+                  color: t.textPrimary,
+                  boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+                }}
+              >
+                <div className="font-bold text-sm mb-1">{hoveredNoElection.state}</div>
+                <div className="text-xs font-semibold" style={{ color: t.textMuted }}>
+                  No Election in 2026
+                </div>
+                <div className="text-xs mt-0.5" style={{ color: t.textVeryMuted }}>
+                  Click for incumbent info
+                </div>
+              </div>
+            );
+          })()}
+
           <ComposableMap
             projection="geoAlbersUsa"
             style={{ width: "100%", height: "100%" }}
@@ -287,25 +331,30 @@ export default function ForecastMap() {
               {({ geographies }: any) =>
                 geographies.map((geo: any) => {
                   const match = findMatch(geo);
+                  const noElMatch = !match ? findNoElection(geo) : undefined;
                   const fill = match ? getRaceColor(match.margin) : t.mapUnfilled;
                   const isSelected = selected && match && selected.id === match.id;
+                  const isSelectedNoEl = selectedNoElection && noElMatch && selectedNoElection.abbr === noElMatch.abbr;
+                  const isInteractive = !!(match || noElMatch);
 
                   return (
                     <Geography
                       key={geo.rsmKey}
                       geography={geo}
                       onMouseEnter={() => {
-                        if (match) setHovered(match);
+                        if (match) { setHovered(match); setHoveredNoElection(null); }
+                        else if (noElMatch) { setHoveredNoElection(noElMatch); setHovered(null); }
                       }}
-                      onMouseLeave={() => setHovered(null)}
+                      onMouseLeave={() => { setHovered(null); setHoveredNoElection(null); }}
                       onClick={() => {
-                        if (match) setSelected(match);
+                        if (match) { setSelected(match); setSelectedNoElection(null); }
+                        else if (noElMatch) { setSelectedNoElection(noElMatch); setSelected(null); }
                       }}
                       style={{
                         default: {
                           fill,
-                          stroke: isSelected ? t.hoverStroke : t.mapStroke,
-                          strokeWidth: isSelected ? 1.5 : (isHouse ? 0.25 : 0.6),
+                          stroke: (isSelected || isSelectedNoEl) ? t.hoverStroke : t.mapStroke,
+                          strokeWidth: (isSelected || isSelectedNoEl) ? 1.5 : (isHouse ? 0.25 : 0.6),
                           outline: "none",
                         },
                         hover: {
@@ -313,7 +362,7 @@ export default function ForecastMap() {
                           stroke: t.hoverStroke,
                           strokeWidth: isHouse ? 0.6 : 1.2,
                           outline: "none",
-                          cursor: match ? "pointer" : "default",
+                          cursor: isInteractive ? "pointer" : "default",
                         },
                         pressed: {
                           fill,
@@ -344,7 +393,7 @@ export default function ForecastMap() {
               {([["house", "H"], ["senate", "S"], ["governor", "G"]] as [RaceType, string][]).map(([type, label]) => (
                 <button
                   key={type}
-                  onClick={() => { setRaceType(type); setSelected(null); localStorage.setItem("raceType", type); }}
+                  onClick={() => { setRaceType(type); setSelected(null); setSelectedNoElection(null); localStorage.setItem("raceType", type); }}
                   className="w-8 py-1.5 rounded-md text-sm font-medium transition-all text-center"
                   style={
                     raceType === type
@@ -414,6 +463,136 @@ export default function ForecastMap() {
 
           {/* ── Sidebar (floating panel) ── */}
           <Sidebar selected={selected} raceType={raceType} onClose={() => setSelected(null)} theme={t} />
+
+          {/* ── No-Election Panel (desktop floating) ── */}
+          {selectedNoElection && (
+            <div
+              className="hidden md:flex flex-col absolute z-30 rounded-xl backdrop-blur-sm"
+              style={{
+                right: "1.25rem",
+                bottom: "73px",
+                width: 172,
+                background: t.legendBg,
+                border: `1px solid ${t.border}`,
+                boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
+                color: t.textPrimary,
+              }}
+            >
+              {/* Header */}
+              <div className="p-2 pb-1.5" style={{ borderBottom: `1px solid ${t.border}` }}>
+                <div className="flex items-start justify-between gap-1">
+                  <h2 className="text-[11px] font-bold leading-tight flex-1 min-w-0" style={{ color: t.textPrimary }}>
+                    {selectedNoElection.state}
+                  </h2>
+                  <button onClick={() => setSelectedNoElection(null)} className="shrink-0 mt-0.5" style={{ color: t.textVeryMuted }}>
+                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div className="flex items-center gap-2 mt-1 flex-wrap">
+                  <div
+                    className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full inline-block"
+                    style={{ background: t.tabBg, color: t.textMuted }}
+                  >
+                    No Election in 2026
+                  </div>
+                  <Link
+                    href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}
+                    className="text-[9px] flex items-center gap-0.5 transition-colors"
+                    style={{ color: t.textMuted }}
+                  >
+                    View details
+                    <svg className="w-2 h-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+              {/* Incumbent info */}
+              <div className="p-2 flex flex-col gap-1.5">
+                <div>
+                  <div className="text-[8px] font-semibold uppercase tracking-wider mb-0.5" style={{ color: t.textMuted }}>
+                    Incumbent
+                  </div>
+                  <div className="flex items-center gap-1.5">
+                    <div
+                      className="text-[10px] font-bold leading-none"
+                      style={{ color: selectedNoElection.party === "D" ? "#1b408c" : selectedNoElection.party === "R" ? "#be1c29" : t.textPrimary }}
+                    >
+                      {selectedNoElection.incumbent}
+                    </div>
+                    <span
+                      className="text-[9px] font-semibold px-1 py-0.5 rounded"
+                      style={{
+                        background: selectedNoElection.party === "D" ? t.candidateDemBg : selectedNoElection.party === "R" ? t.candidateRepBg : t.tabBg,
+                        color: selectedNoElection.party === "D" ? "#1b408c" : selectedNoElection.party === "R" ? "#be1c29" : t.textPrimary,
+                      }}
+                    >
+                      ({selectedNoElection.party})
+                    </span>
+                  </div>
+                </div>
+                <div>
+                  <div className="text-[8px] font-semibold uppercase tracking-wider mb-0.5" style={{ color: t.textMuted }}>
+                    Next Election
+                  </div>
+                  <div className="text-[13px] font-bold" style={{ color: t.textPrimary }}>
+                    {selectedNoElection.nextElection}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* ── No-Election Panel (mobile strip) ── */}
+          {selectedNoElection && (
+            <div
+              className="md:hidden fixed bottom-14 left-0 right-0 z-30 flex items-center h-14 px-3 gap-3"
+              style={{ background: t.panel, borderTop: `1px solid ${t.border}`, borderBottom: `1px solid ${t.border}` }}
+            >
+              <div className="flex flex-col justify-center min-w-0 flex-1">
+                <span className="text-xs font-bold leading-tight truncate" style={{ color: t.textPrimary }}>
+                  {selectedNoElection.state}
+                </span>
+                <div className="flex items-center gap-1.5 mt-0.5">
+                  <span
+                    className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full inline-block"
+                    style={{ background: t.tabBg, color: t.textMuted }}
+                  >
+                    No Election in 2026
+                  </span>
+                  <Link
+                    href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}
+                    className="text-[9px] shrink-0"
+                    style={{ color: t.textMuted }}
+                  >
+                    Details ↗
+                  </Link>
+                </div>
+              </div>
+              <div className="w-px self-stretch shrink-0" style={{ background: t.border }} />
+              <div className="flex flex-col justify-center gap-0.5 shrink-0">
+                <div className="text-[8px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>Incumbent</div>
+                <div
+                  className="text-[10px] font-bold"
+                  style={{ color: selectedNoElection.party === "D" ? "#1b408c" : selectedNoElection.party === "R" ? "#be1c29" : t.textPrimary }}
+                >
+                  {selectedNoElection.incumbent} ({selectedNoElection.party})
+                </div>
+              </div>
+              <div className="w-px self-stretch shrink-0" style={{ background: t.border }} />
+              <div className="flex flex-col justify-center shrink-0">
+                <div className="text-[8px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>Next Election</div>
+                <div className="text-sm font-bold" style={{ color: t.textPrimary }}>{selectedNoElection.nextElection}</div>
+              </div>
+              <button onClick={() => setSelectedNoElection(null)} className="shrink-0 ml-auto" style={{ color: t.textVeryMuted }}>
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          )}
         </div>
 
         {/* ── Mobile Controls Bar ── */}
@@ -426,7 +605,7 @@ export default function ForecastMap() {
             {([["house", "H"], ["senate", "S"], ["governor", "G"]] as [RaceType, string][]).map(([type, label]) => (
               <button
                 key={type}
-                onClick={() => { setRaceType(type); setSelected(null); localStorage.setItem("raceType", type); }}
+                onClick={() => { setRaceType(type); setSelected(null); setSelectedNoElection(null); localStorage.setItem("raceType", type); }}
                 className="w-8 py-1.5 rounded-md text-sm font-medium transition-all text-center"
                 style={raceType === type ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }}
               >

@@ -8,10 +8,10 @@ export const metadata = {
 };
 
 const NAV = [
+  { label: "States",    href: "/states" },
   { label: "House",     href: "/house" },
   { label: "Senate",    href: "/senate" },
   { label: "Governor",  href: "/governor" },
-  { label: "States",    href: "/states" },
 ];
 
 export default function StatesListPage() {

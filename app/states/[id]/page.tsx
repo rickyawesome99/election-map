@@ -1,5 +1,5 @@
 import { statesData } from "@/data/statesData";
-import { senateData, governorData, houseData, RaceForecast } from "@/data/forecastData";
+import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, RaceForecast, NoElectionEntry } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -7,10 +7,10 @@ import ThemeToggle from "@/components/ThemeToggle";
 import StateMapToggle from "@/components/StateMapToggle";
 
 const NAV = [
+  { label: "States",   href: "/states" },
   { label: "House",    href: "/house" },
   { label: "Senate",   href: "/senate" },
   { label: "Governor", href: "/governor" },
-  { label: "States",   href: "/states" },
 ];
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -43,6 +43,50 @@ function ProbBar({ probability }: { probability: number }) {
         {repPct}%
       </span>
     </div>
+  );
+}
+
+// Card for a seat that has no 2026 election — shows incumbent info + link
+function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: string; label: string }) {
+  const partyColor = entry.party === "D" ? "#1b408c" : entry.party === "R" ? "#be1c29" : "var(--app-text-primary)";
+  const partyLabel = entry.party === "D" ? "Dem" : entry.party === "R" ? "Rep" : "Ind";
+  return (
+    <Link
+      href={href}
+      className="flex items-center gap-4 rounded-lg px-4 py-3 transition-colors"
+      style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
+    >
+      <div className="w-24 shrink-0">
+        <div className="text-[10px] uppercase tracking-wider font-semibold mb-0.5" style={{ color: "var(--app-text-muted)" }}>
+          {label}
+        </div>
+        <span
+          className="text-xs font-semibold px-2 py-0.5 rounded-full"
+          style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
+        >
+          No 2026 Election
+        </span>
+      </div>
+      <div className="flex-1 min-w-0">
+        <div className="flex items-center gap-2 text-sm">
+          <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{entry.incumbent}</span>
+          <span
+            className="text-xs font-bold px-1.5 py-0.5 rounded shrink-0"
+            style={{ color: partyColor, background: entry.party === "D" ? "#1b408c1a" : entry.party === "R" ? "#be1c291a" : "var(--app-tab-bg)" }}
+          >
+            {partyLabel}
+          </span>
+        </div>
+        <div className="text-xs mt-0.5" style={{ color: "var(--app-text-muted)" }}>
+          Incumbent · Next election: {entry.nextElection}
+        </div>
+      </div>
+      <div className="shrink-0 flex items-center">
+        <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </Link>
   );
 }
 
@@ -182,12 +226,27 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
   const state = statesData.find((s) => s.id === id);
   if (!state) notFound();
 
+  // Senate seat 1: 2026 race or no-election holdover
   const senateRace = senateData.find((r) => r.id === state.abbr);
+  const senateNoEl = !senateRace ? senateNoElection.find((e) => e.abbr === state.abbr) : null;
+  // Senate seat 2: always a holdover (the other senator)
+  const senateHoldover = senateHoldovers.find((e) => e.abbr === state.abbr);
+  // Governor: 2026 race or no-election holdover
   const governorRace = governorData.find((r) => r.id === state.abbr);
-  const houseRaces = houseData.filter((r) => r.state === state.name);
+  const governorNoEl = !governorRace ? governorNoElection.find((e) => e.abbr === state.abbr) : null;
 
+  const houseRaces = houseData.filter((r) => r.state === state.name);
   const senatePastResults = senateRace?.pastResults?.filter((r) => r.year >= 2016) ?? [];
   const totalRaces2026 = houseRaces.length + (senateRace ? 1 : 0) + (governorRace ? 1 : 0);
+
+  const houseDemProj = houseRaces.filter((r) => r.margin >= 0).length;
+  const houseRepProj = houseRaces.filter((r) => r.margin < 0).length;
+  const houseLeader = houseDemProj > houseRepProj ? "D" : houseDemProj < houseRepProj ? "R" : null;
+  const houseLabel = houseLeader === "D"
+    ? `${houseDemProj}-${houseRepProj} D`
+    : houseLeader === "R"
+    ? `${houseRepProj}-${houseDemProj} R`
+    : `${houseDemProj}-${houseRepProj}`;
 
   // Placeholder presidential years shown since 2016
   const presidentialYears = [2024, 2020, 2016];
@@ -263,51 +322,39 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                 <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
                   House
                 </div>
-                <div className="text-lg font-bold" style={{ color: "var(--app-text-primary)" }}>
-                  {houseRaces.length}
+                <div
+                  className="text-lg font-bold"
+                  style={{ color: houseLeader === "D" ? "#1b408c" : houseLeader === "R" ? "#be1c29" : "var(--app-text-primary)" }}
+                >
+                  {houseLabel}
                 </div>
               </div>
-              <div className="rounded-lg p-3 text-center" style={{ background: "var(--app-bg)" }}>
-                <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
+              <div className="rounded-lg p-3 text-center flex flex-col items-center gap-1.5" style={{ background: "var(--app-bg)" }}>
+                <div className="text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
                   Senate
                 </div>
-                <div className="text-lg font-bold" style={{ color: senateRace ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
-                  {senateRace ? "Yes" : "—"}
-                </div>
+                {senateRace
+                  ? <RatingBadge rating={senateRace.rating} />
+                  : <span className="text-lg font-bold" style={{ color: "var(--app-text-very-muted)" }}>{senateNoEl?.nextElection ?? "—"}</span>
+                }
               </div>
-              <div className="rounded-lg p-3 text-center" style={{ background: "var(--app-bg)" }}>
-                <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
+              <div className="rounded-lg p-3 text-center flex flex-col items-center gap-1.5" style={{ background: "var(--app-bg)" }}>
+                <div className="text-[10px] uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
                   Governor
                 </div>
-                <div className="text-lg font-bold" style={{ color: governorRace ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
-                  {governorRace ? "Yes" : "—"}
-                </div>
+                {governorRace
+                  ? <RatingBadge rating={governorRace.rating} />
+                  : <span className="text-lg font-bold" style={{ color: "var(--app-text-very-muted)" }}>{governorNoEl?.nextElection ?? "—"}</span>
+                }
               </div>
             </div>
-
-            {(senateRace || governorRace) && (
-              <div className="mt-3 flex flex-wrap gap-2">
-                {senateRace && (
-                  <div className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: "var(--app-bg)" }}>
-                    <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Senate</span>
-                    <RatingBadge rating={senateRace.rating} />
-                  </div>
-                )}
-                {governorRace && (
-                  <div className="flex items-center gap-2 rounded-lg px-3 py-2" style={{ background: "var(--app-bg)" }}>
-                    <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Governor</span>
-                    <RatingBadge rating={governorRace.rating} />
-                  </div>
-                )}
-              </div>
-            )}
           </section>
 
           {/* Map toggle (client component) */}
           <StateMapToggle abbr={state.abbr} stateName={state.name} />
         </div>
 
-        {/* Upcoming Elections */}
+        {/* Federal Offices */}
         <section
           className="rounded-xl p-6"
           style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
@@ -317,31 +364,52 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
               className="text-[10px] uppercase tracking-wider font-semibold"
               style={{ color: "var(--app-text-muted)" }}
             >
-              Upcoming Elections
+              Federal Offices
             </h2>
             <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-              {totalRaces2026} race{totalRaces2026 !== 1 ? "s" : ""} · General: {GENERAL_ELECTION}
+              {totalRaces2026} race{totalRaces2026 !== 1 ? "s" : ""} on ballot in 2026 · General: {GENERAL_ELECTION}
             </span>
           </div>
 
           <div className="flex flex-col gap-3">
-            {/* Senate */}
-            {senateRace && (
+            {/* Senate seat 1 */}
+            {senateRace ? (
               <ElectionCard
                 race={senateRace}
                 href={`/senate/${senateRace.id.toLowerCase()}`}
-                label="U.S. Senate"
+                label="U.S. Senate (Seat 1)"
+              />
+            ) : senateNoEl ? (
+              <IncumbentCard
+                entry={senateNoEl}
+                href={`/senate/${senateNoEl.abbr.toLowerCase()}`}
+                label="U.S. Senate (Seat 1)"
+              />
+            ) : null}
+
+            {/* Senate seat 2 — always a holdover */}
+            {senateHoldover && (
+              <IncumbentCard
+                entry={senateHoldover}
+                href={`/senate/${senateHoldover.abbr.toLowerCase()}-2`}
+                label="U.S. Senate (Seat 2)"
               />
             )}
 
             {/* Governor */}
-            {governorRace && (
+            {governorRace ? (
               <ElectionCard
                 race={governorRace}
                 href={`/governor/${governorRace.id.toLowerCase()}`}
                 label="Governor"
               />
-            )}
+            ) : governorNoEl ? (
+              <IncumbentCard
+                entry={governorNoEl}
+                href={`/governor/${governorNoEl.abbr.toLowerCase()}`}
+                label="Governor"
+              />
+            ) : null}
 
             {/* House subsection */}
             {houseRaces.length > 0 && (

@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:api.github.com)"
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:tigerweb.geo.census.gov)",
+      "Bash(node -e \":*)"
     ]
   }
 }
