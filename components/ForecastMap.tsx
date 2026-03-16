@@ -178,6 +178,28 @@ export default function ForecastMap() {
         </div>
       </header>
 
+      {/* ── Mobile nav bar ── */}
+      <nav
+        className="md:hidden shrink-0 flex border-b"
+        style={{ background: t.panel, borderColor: t.border }}
+      >
+        {([
+          { label: "House", href: "/house" },
+          { label: "Senate", href: "/senate" },
+          { label: "Governor", href: "/governor" },
+          { label: "States", href: "/states" },
+        ] as { label: string; href: string }[]).map(({ label, href }) => (
+          <Link
+            key={href}
+            href={href}
+            className="flex-1 py-2 text-center text-sm font-medium transition-colors"
+            style={{ color: t.textMuted }}
+          >
+            {label}
+          </Link>
+        ))}
+      </nav>
+
       {/* ── Body ── */}
       <div className="flex flex-col flex-1 overflow-hidden">
 
