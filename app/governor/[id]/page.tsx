@@ -31,7 +31,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <header
-        className="px-6 py-4 flex items-center gap-4"
+        className="sticky top-0 z-10 px-6 py-4 flex items-center gap-4"
         style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
       >
         <Link href="/" className="flex items-center gap-2 text-sm transition-colors shrink-0" style={{ color: "var(--app-text-muted)" }}>
@@ -176,7 +176,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       {/* Nav bar */}
       <header
-        className="px-6 py-4 flex items-center gap-4"
+        className="sticky top-0 z-10 px-6 py-4 flex items-center gap-4"
         style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
       >
         <Link

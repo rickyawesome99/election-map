@@ -127,7 +127,7 @@ export default function ForecastMap() {
   }
 
   return (
-    <div className="flex flex-col h-screen" style={{ background: t.bg }}>
+    <div className="flex flex-col h-screen overflow-hidden" style={{ background: t.bg }}>
 
       {/* ── Top bar ── */}
       <header
