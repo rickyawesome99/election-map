@@ -213,7 +213,7 @@ export default function ForecastMap() {
 
         {/* ── Map ── */}
         <div
-          className="relative h-[75vw] md:flex-1 overflow-hidden pb-14 md:pb-16 mt-[8vw] md:mt-0"
+          className="relative flex-1 overflow-hidden pb-14 md:pb-16"
           style={{}}
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
@@ -244,7 +244,7 @@ export default function ForecastMap() {
 
             return (
               <div
-                className="absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
+                className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
                 style={{
                   left,
                   top,
@@ -302,7 +302,7 @@ export default function ForecastMap() {
             }
             return (
               <div
-                className="absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
+                className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
                 style={{
                   left, top, width: tipW,
                   padding: "8px 10px",
