@@ -48,7 +48,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
       >
         <Link
           href="/"
-          className="flex items-center gap-2 text-sm transition-colors"
+          className="flex items-center gap-2 text-sm transition-colors shrink-0"
           style={{ color: "var(--app-text-muted)" }}
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -56,11 +56,13 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
           </svg>
           Back to Map
         </Link>
-        <div className="h-4 w-px" style={{ background: "var(--app-border)" }} />
-        <span className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>House</span>
-        <span style={{ color: "var(--app-text-very-muted)" }}>/</span>
-        <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{race.name}</span>
-        <div className="ml-auto">
+        <div className="h-4 w-px shrink-0" style={{ background: "var(--app-border)" }} />
+        <div className="flex items-center gap-1 min-w-0 flex-1 overflow-hidden">
+          <span className="text-[10px] uppercase tracking-wider font-semibold shrink-0" style={{ color: "var(--app-text-muted)" }}>House</span>
+          <span className="shrink-0" style={{ color: "var(--app-text-very-muted)" }}>/</span>
+          <span className="font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{race.name}</span>
+        </div>
+        <div className="ml-auto shrink-0">
           <ThemeToggle />
         </div>
       </header>

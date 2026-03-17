@@ -213,7 +213,7 @@ export default function ForecastMap() {
 
         {/* ── Map ── */}
         <div
-          className="relative h-[75vw] md:flex-1 overflow-hidden pb-14 md:pb-16"
+          className="relative h-[75vw] md:flex-1 overflow-hidden pb-14 md:pb-16 mt-[8vw] md:mt-0"
           style={{}}
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();

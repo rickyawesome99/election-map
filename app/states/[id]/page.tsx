@@ -261,8 +261,8 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
         <Link href="/" className="font-bold text-lg tracking-tight" style={{ color: "var(--app-text-primary)" }}>
           CT Strategies
         </Link>
-        <div className="h-4 w-px" style={{ background: "var(--app-border)" }} />
-        <nav className="flex items-center gap-1">
+        <div className="hidden md:block h-4 w-px" style={{ background: "var(--app-border)" }} />
+        <nav className="hidden md:flex items-center gap-1">
           {NAV.map(({ label, href }) => (
             <Link
               key={href}
@@ -274,13 +274,26 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
             </Link>
           ))}
         </nav>
-        <div className="ml-auto flex items-center gap-3">
+        <div className="ml-auto flex items-center gap-3 shrink-0">
           <Link href="/states" className="text-sm transition-colors" style={{ color: "var(--app-text-muted)" }}>
             ← All States
           </Link>
           <ThemeToggle />
         </div>
       </header>
+
+      <nav className="md:hidden flex border-b" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
+        {NAV.map(({ label, href }) => (
+          <Link
+            key={href}
+            href={href}
+            className="flex-1 py-2 text-center text-sm font-medium"
+            style={{ color: "var(--app-text-muted)" }}
+          >
+            {label}
+          </Link>
+        ))}
+      </nav>
 
       <main className="max-w-5xl mx-auto px-6 py-10 space-y-8">
         {/* Title */}

@@ -205,7 +205,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
           <span className="text-xs font-bold leading-tight truncate" style={{ color: t.textPrimary }}>
             {selected.name}
           </span>
-          <div className="flex items-center gap-1.5 mt-0.5">
+          <div className="flex items-center gap-1.5 mt-0.5 overflow-hidden">
             <span
               className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full shrink-0"
               style={{ background: bg, color: text }}
@@ -226,7 +226,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
         <div className="w-px self-stretch shrink-0 mx-2" style={{ background: t.border }} />
 
         {/* Candidates OR past results */}
-        <div className="flex flex-col justify-center gap-0.5 shrink-0 pr-2" style={{ width: 130 }}>
+        <div className="flex flex-col justify-center gap-0.5 shrink-0" style={{ width: 110 }}>
           {selected.candidates ? (
             (
               [
