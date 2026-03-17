@@ -340,6 +340,83 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
             </div>
           </section>
 
+          {/* Recent Statewide Results */}
+          <section
+            className="rounded-xl p-6 md:col-span-2"
+            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+          >
+            <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-5" style={{ color: "var(--app-text-muted)" }}>
+              Recent Statewide Results
+            </h2>
+            <div className="flex flex-col gap-6">
+              {[
+                { year: 2024, race: "Presidential", demPct: 0, repPct: 0, demCandidate: "TBD", repCandidate: "TBD", placeholder: true },
+                { year: 2024, race: "Senate", demPct: 0, repPct: 0, demCandidate: "TBD", repCandidate: "TBD", placeholder: true },
+                { year: 2022, race: "Governor", demPct: 0, repPct: 0, demCandidate: "TBD", repCandidate: "TBD", placeholder: true },
+              ].map((res) => {
+                const isPlaceholder = res.placeholder;
+                const winner = res.demPct > res.repPct ? "D" : "R";
+                const margin = Math.abs(res.demPct - res.repPct).toFixed(1);
+                const total = res.demPct + res.repPct;
+                const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
+                return (
+                  <div key={`${res.year}-${res.race}`} style={{ opacity: isPlaceholder ? 0.45 : 1 }}>
+                    <div className="flex items-center gap-3 mb-3">
+                      <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{res.year} {res.race}</span>
+                      {isPlaceholder ? (
+                        <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
+                      ) : (
+                        <span
+                          className="text-xs font-bold px-2 py-0.5 rounded-full"
+                          style={winner === "D"
+                            ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                            : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                        >
+                          {winner === "D" ? "D" : "R"}+{margin}
+                        </span>
+                      )}
+                    </div>
+                    <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
+                      <div className="flex flex-col">
+                        <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
+                        <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
+                          {isPlaceholder ? "TBD" : res.demCandidate}
+                        </span>
+                      </div>
+                      <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
+                      <div className="flex flex-col items-end">
+                        <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Republican</span>
+                        <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
+                          {isPlaceholder ? "TBD" : res.repCandidate}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="flex h-4 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>
+                      {!isPlaceholder && (
+                        <>
+                          <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
+                          <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
+                        </>
+                      )}
+                    </div>
+                    {!isPlaceholder && (
+                      <>
+                        <div className="flex justify-between">
+                          <span className="text-xs font-semibold" style={{ color: "var(--party-dem)" }}>{res.demPct}%</span>
+                          <span className="text-xs font-semibold" style={{ color: "var(--party-rep)" }}>{res.repPct}%</span>
+                        </div>
+                        <div className="flex justify-between mt-1">
+                          <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>
+                          <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+
           {/* District Boundaries */}
           <section
             className="rounded-xl p-6 md:col-span-2"
