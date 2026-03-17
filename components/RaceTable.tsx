@@ -140,7 +140,7 @@ export default function RaceTable({ races, basePath, nameLabel }: RaceTableProps
               >
                 <td className="px-4 py-3">
                   <Link
-                    href={`${basePath}/${race.id.toLowerCase()}`}
+                    href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(basePath)}`}
                     className="font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
@@ -155,27 +155,27 @@ export default function RaceTable({ races, basePath, nameLabel }: RaceTableProps
                     {race.rating}
                   </span>
                 </td>
-                <td className="px-4 py-3 hidden md:table-cell" style={{ color: "#1b408c" }}>
+                <td className="px-4 py-3 hidden md:table-cell" style={{ color: "var(--party-dem)" }}>
                   {race.candidates?.dem.name ?? (
                     <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>
                   )}
                   {race.candidates?.dem.incumbent && (
-                    <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded-full font-medium" style={{ background: "#1b408c20", color: "#1b408c" }}>
+                    <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded-full font-medium" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>
                       Inc.
                     </span>
                   )}
                 </td>
-                <td className="px-4 py-3 hidden md:table-cell" style={{ color: "#be1c29" }}>
+                <td className="px-4 py-3 hidden md:table-cell" style={{ color: "var(--party-rep)" }}>
                   {race.candidates?.rep.name ?? (
                     <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>
                   )}
                   {race.candidates?.rep.incumbent && (
-                    <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded-full font-medium" style={{ background: "#be1c2920", color: "#be1c29" }}>
+                    <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded-full font-medium" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>
                       Inc.
                     </span>
                   )}
                 </td>
-                <td className="px-4 py-3 text-right font-bold tabular-nums" style={{ color: marginIsD ? "#1b408c" : "#be1c29" }}>
+                <td className="px-4 py-3 text-right font-bold tabular-nums" style={{ color: marginIsD ? "var(--party-dem)" : "var(--party-rep)" }}>
                   {marginIsD ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
                 </td>
                 <td className="px-4 py-3 hidden sm:table-cell">

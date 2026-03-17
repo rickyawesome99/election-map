@@ -1,10 +1,10 @@
 import { governorData, governorNoElection, NoElectionEntry } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import Image from "next/image";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import ThemeToggle from "@/components/ThemeToggle";
+import BackButton from "@/components/BackButton";
 
 export async function generateStaticParams() {
   return [
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 }
 
 function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
-  const partyColor = entry.party === "D" ? "#1b408c" : entry.party === "R" ? "#be1c29" : "var(--app-text-primary)";
+  const partyColor = entry.party === "D" ? "var(--party-dem)" : entry.party === "R" ? "var(--party-rep)" : "var(--app-text-primary)";
   const partyLabel = entry.party === "D" ? "Democrat" : entry.party === "R" ? "Republican" : "Independent";
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -34,12 +34,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
         className="sticky top-0 z-10 px-6 py-4 flex items-center gap-4"
         style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
       >
-        <Link href="/" className="flex items-center gap-2 text-sm transition-colors shrink-0" style={{ color: "var(--app-text-muted)" }}>
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          Back to Map
-        </Link>
+        <BackButton />
         <div className="h-4 w-px shrink-0" style={{ background: "var(--app-border)" }} />
         <div className="flex items-center gap-1 min-w-0 flex-1 overflow-hidden">
           <span className="text-[10px] uppercase tracking-wider font-semibold shrink-0" style={{ color: "var(--app-text-muted)" }}>Governor</span>
@@ -179,16 +174,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
         className="sticky top-0 z-10 px-6 py-4 flex items-center gap-4"
         style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
       >
-        <Link
-          href="/"
-          className="flex items-center gap-2 text-sm transition-colors shrink-0"
-          style={{ color: "var(--app-text-muted)" }}
-        >
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          Back to Map
-        </Link>
+        <BackButton />
         <div className="h-4 w-px shrink-0" style={{ background: "var(--app-border)" }} />
         <div className="flex items-center gap-1 min-w-0 flex-1 overflow-hidden">
           <span className="text-[10px] uppercase tracking-wider font-semibold shrink-0" style={{ color: "var(--app-text-muted)" }}>Governor</span>
@@ -260,8 +246,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               ].map(({ candidate, photo, pct }) => {
                 const isD = candidate.party === "D" || candidate.party === "I";
                 const partyLabel = candidate.party === "I" ? "Independent" : candidate.party === "D" ? "Democrat" : "Republican";
-                const accentColor = isD ? "#1b408c" : "#be1c29";
-                const textColor = isD ? "#1b408c" : "#be1c29";
+                const accentColor = isD ? "var(--party-dem)" : "var(--party-rep)";
+                const textColor = isD ? "var(--party-dem)" : "var(--party-rep)";
                 return (
                   <div key={candidate.name} className="flex flex-col items-center text-center w-40">
                     {/* Photo */}
@@ -319,8 +305,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             </h2>
             <div className="flex items-start justify-center gap-8 md:gap-16">
               {[
-                { label: "Democrat", color: "#1b408c", pct: demVoteShare },
-                { label: "Republican", color: "#be1c29", pct: repVoteShare },
+                { label: "Democrat", color: "var(--party-dem)", pct: demVoteShare },
+                { label: "Republican", color: "var(--party-rep)", pct: repVoteShare },
               ].map(({ label, color, pct }) => (
                 <div key={label} className="flex flex-col items-center text-center w-40">
                   <div
@@ -365,8 +351,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               Win Probability
             </h2>
             <div className="flex justify-between text-sm font-semibold mb-3">
-              <span style={{ color: "#1b408c" }}>Dem {demPct}%</span>
-              <span style={{ color: "#be1c29" }}>Rep {repPct}%</span>
+              <span style={{ color: "var(--party-dem)" }}>Dem {demPct}%</span>
+              <span style={{ color: "var(--party-rep)" }}>Rep {repPct}%</span>
             </div>
             <div className="h-4 rounded-full overflow-hidden flex">
               <div style={{ width: `${demPct}%`, background: "#1b408c" }} className="transition-all duration-300" />
@@ -377,7 +363,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
                 Projected Margin
               </h2>
-              <div className="text-4xl font-bold" style={{ color: marginIsD ? "#1b408c" : "#be1c29" }}>
+              <div className="text-4xl font-bold" style={{ color: marginIsD ? "var(--party-dem)" : "var(--party-rep)" }}>
                 {marginIsD ? "+" : ""}{race.margin.toFixed(1)}
               </div>
               <div className="text-sm mt-1" style={{ color: "var(--app-text-muted)" }}>
@@ -444,8 +430,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                         <span
                           className="text-xs font-bold px-2 py-0.5 rounded-full"
                           style={winner === "D"
-                            ? { background: "#1b408c33", color: "#1b408c" }
-                            : { background: "#be1c2933", color: "#be1c29" }}
+                            ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                            : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
                         >
                           {winner === "D" ? "D" : "R"}+{margin}
                         </span>
@@ -477,8 +463,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                     {!isPlaceholder && (
                       <>
                         <div className="flex justify-between">
-                          <span className="text-xs font-semibold" style={{ color: "#1b408c" }}>{res.demPct}%</span>
-                          <span className="text-xs font-semibold" style={{ color: "#be1c29" }}>{res.repPct}%</span>
+                          <span className="text-xs font-semibold" style={{ color: "var(--party-dem)" }}>{res.demPct}%</span>
+                          <span className="text-xs font-semibold" style={{ color: "var(--party-rep)" }}>{res.repPct}%</span>
                         </div>
                         <div className="flex justify-between mt-1">
                           <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>

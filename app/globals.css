@@ -12,6 +12,14 @@
   --app-text-primary: #1f2328;
   --app-text-muted: #656d76;
   --app-text-very-muted: #949ea6;
+
+  /* Party colors — text (change in dark mode) */
+  --party-dem: #1b408c;
+  --party-rep: #be1c29;
+  --party-dem-muted: #1b408c99;
+  --party-rep-muted: #be1c2999;
+  --party-dem-subtle: #1b408c33;
+  --party-rep-subtle: #be1c2933;
 }
 
 html.dark {
@@ -23,6 +31,14 @@ html.dark {
   --app-text-primary: #ffffff;
   --app-text-muted: #8b949e;
   --app-text-very-muted: #484f58;
+
+  /* Party colors — lighter for dark mode readability */
+  --party-dem: #8bafff;
+  --party-rep: #ff8b98;
+  --party-dem-muted: #8bafff99;
+  --party-rep-muted: #ff8b9899;
+  --party-dem-subtle: #8bafff33;
+  --party-rep-subtle: #ff8b9833;
 }
 
 @theme inline {

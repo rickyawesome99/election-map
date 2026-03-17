@@ -80,7 +80,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
                 { c: selected.candidates.rep, pct: repVoteShare, isD: false },
               ] as { c: Candidate; pct: number; isD: boolean }[]
             ).map(({ c, pct, isD }) => {
-              const color = isD ? "#1b408c" : "#be1c29";
+              const color = isD ? t.demText : t.repText;
               const bgC = isD ? t.candidateDemBg : t.candidateRepBg;
               return (
                 <div
@@ -118,8 +118,8 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
             Win Probability
           </div>
           <div className="flex justify-between text-[9px] font-semibold mb-1">
-            <span style={{ color: "#1b408c" }}>D {demWinPct}%</span>
-            <span style={{ color: "#be1c29" }}>R {repWinPct}%</span>
+            <span style={{ color: t.demText }}>D {demWinPct}%</span>
+            <span style={{ color: t.repText }}>R {repWinPct}%</span>
           </div>
           <div className="h-2 rounded-full overflow-hidden flex mb-2">
             <div style={{ width: `${demWinPct}%`, background: "#1b408c" }} />
@@ -136,7 +136,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
           <div className="flex items-baseline gap-1 mt-0.5">
             <span
               className="text-base font-bold leading-none"
-              style={{ color: marginIsD ? "#1b408c" : "#be1c29" }}
+              style={{ color: marginIsD ? t.demText : t.repText }}
             >
               {marginIsD ? "D+" : "R+"}
               {Math.abs(selected.margin).toFixed(1)}
@@ -170,7 +170,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
                       </span>
                       <span
                         className="text-[9px] font-bold"
-                        style={{ color: winner === "D" ? "#1b408c" : "#be1c29" }}
+                        style={{ color: winner === "D" ? t.demText : t.repText }}
                       >
                         {winner}+{margin}
                       </span>
@@ -180,10 +180,10 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
                       <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
                     </div>
                     <div className="flex justify-between mt-0.5">
-                      <span className="text-[8px]" style={{ color: "#1b408c99" }}>
+                      <span className="text-[8px]" style={{ color: t.demMuted }}>
                         {res.demPct}%
                       </span>
-                      <span className="text-[8px]" style={{ color: "#be1c2999" }}>
+                      <span className="text-[8px]" style={{ color: t.repMuted }}>
                         {res.repPct}%
                       </span>
                     </div>
@@ -234,7 +234,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
                 { c: selected.candidates.rep, pct: repVoteShare, isD: false },
               ] as { c: Candidate; pct: number; isD: boolean }[]
             ).map(({ c, pct, isD }) => {
-              const color = isD ? "#1b408c" : "#be1c29";
+              const color = isD ? t.demText : t.repText;
               return (
                 <div key={c.name} className="flex items-center justify-between gap-1">
                   <span className="text-[10px] font-medium truncate" style={{ color: t.textPrimary }}>{c.name}</span>
@@ -255,7 +255,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
                     <div style={{ width: `${dW}%`, background: "#1b408c" }} />
                     <div style={{ width: `${100 - dW}%`, background: "#be1c29" }} />
                   </div>
-                  <span className="text-[9px] font-bold shrink-0" style={{ color: winner === "D" ? "#1b408c" : "#be1c29" }}>{winner}+{m}</span>
+                  <span className="text-[9px] font-bold shrink-0" style={{ color: winner === "D" ? t.demText : t.repText }}>{winner}+{m}</span>
                 </div>
               );
             })
@@ -268,8 +268,8 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
         {/* Win prob */}
         <div className="flex flex-col justify-center shrink-0 pr-2" style={{ width: 64 }}>
           <div className="flex justify-between text-[9px] font-bold mb-1">
-            <span style={{ color: "#1b408c" }}>D {demWinPct}%</span>
-            <span style={{ color: "#be1c29" }}>R {repWinPct}%</span>
+            <span style={{ color: t.demText }}>D {demWinPct}%</span>
+            <span style={{ color: t.repText }}>R {repWinPct}%</span>
           </div>
           <div className="h-1.5 rounded-full overflow-hidden flex">
             <div style={{ width: `${demWinPct}%`, background: "#1b408c" }} />
@@ -288,7 +288,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
           </div>
           <div
             className="text-base font-bold leading-none tabular-nums"
-            style={{ color: marginIsD ? "#1b408c" : "#be1c29" }}
+            style={{ color: marginIsD ? t.demText : t.repText }}
           >
             {marginIsD ? "D+" : "R+"}
             {Math.abs(selected.margin).toFixed(1)}

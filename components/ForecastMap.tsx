@@ -37,6 +37,10 @@ export const DARK_THEME = {
   badgeBg: "rgba(22,27,34,0.90)",
   candidateDemBg: "#1b3a5c",
   candidateRepBg: "#5c1b1b",
+  demText: "#8bafff",
+  repText: "#ff8b98",
+  demMuted: "#8bafff99",
+  repMuted: "#ff8b9899",
 };
 
 export const LIGHT_THEME = {
@@ -55,6 +59,10 @@ export const LIGHT_THEME = {
   badgeBg: "rgba(255,255,255,0.92)",
   candidateDemBg: "#dbeafe",
   candidateRepBg: "#fee2e2",
+  demText: "#1b408c",
+  repText: "#be1c29",
+  demMuted: "#1b408c99",
+  repMuted: "#be1c2999",
 };
 
 export type Theme = typeof DARK_THEME;
@@ -127,7 +135,7 @@ export default function ForecastMap() {
   }
 
   return (
-    <div className="flex flex-col h-screen overflow-hidden" style={{ background: t.bg }}>
+    <div className="flex flex-col fixed inset-0 overflow-hidden" style={{ background: t.bg }}>
 
       {/* ── Top bar ── */}
       <header
@@ -267,18 +275,18 @@ export default function ForecastMap() {
                 </div>
                 {hovered.candidates && (
                   <div className="mb-1.5">
-                    <div className="text-xs font-medium leading-tight" style={{ color: "#5b9bd5" }}>
+                    <div className="text-xs font-medium leading-tight" style={{ color: t.demText }}>
                       {hovered.candidates.dem.name}
                     </div>
-                    <div className="text-xs font-medium leading-tight" style={{ color: "#d9534f" }}>
+                    <div className="text-xs font-medium leading-tight" style={{ color: t.repText }}>
                       {hovered.candidates.rep.name}
                     </div>
                   </div>
                 )}
                 <div className="text-xs leading-tight mb-0.5">
-                  <span style={{ color: "#5b9bd5" }}>D {demPct.toFixed(1)}%</span>
+                  <span style={{ color: t.demText }}>D {demPct.toFixed(1)}%</span>
                   <span style={{ color: t.textMuted }}> · </span>
-                  <span style={{ color: "#d9534f" }}>R {repPct.toFixed(1)}%</span>
+                  <span style={{ color: t.repText }}>R {repPct.toFixed(1)}%</span>
                 </div>
                 <div className="text-xs leading-tight" style={{ color: t.textMuted }}>
                   Margin: {marginLabel}
@@ -426,13 +434,13 @@ export default function ForecastMap() {
             <div className="flex gap-1.5 mb-1.5">
               {/* Dem */}
               <div className="flex-1 flex flex-col items-center rounded-lg py-1.5" style={{ background: "rgba(26,68,128,0.18)" }}>
-                <span className="text-xl font-bold leading-none" style={{ color: "#1a4480" }}>{demSeats}</span>
-                <span className="text-[9px] font-semibold mt-0.5" style={{ color: "#1a4480" }}>Dem</span>
+                <span className="text-xl font-bold leading-none" style={{ color: t.demText }}>{demSeats}</span>
+                <span className="text-[9px] font-semibold mt-0.5" style={{ color: t.demText }}>Dem</span>
               </div>
               {/* Rep */}
               <div className="flex-1 flex flex-col items-center rounded-lg py-1.5" style={{ background: "rgba(139,26,26,0.18)" }}>
-                <span className="text-xl font-bold leading-none" style={{ color: "#8b1a1a" }}>{repSeats}</span>
-                <span className="text-[9px] font-semibold mt-0.5" style={{ color: "#8b1a1a" }}>Rep</span>
+                <span className="text-xl font-bold leading-none" style={{ color: t.repText }}>{repSeats}</span>
+                <span className="text-[9px] font-semibold mt-0.5" style={{ color: t.repText }}>Rep</span>
               </div>
             </div>
 
@@ -519,7 +527,7 @@ export default function ForecastMap() {
                   <div className="flex items-center gap-1.5">
                     <div
                       className="text-[10px] font-bold leading-none"
-                      style={{ color: selectedNoElection.party === "D" ? "#1b408c" : selectedNoElection.party === "R" ? "#be1c29" : t.textPrimary }}
+                      style={{ color: selectedNoElection.party === "D" ? t.demText : selectedNoElection.party === "R" ? t.repText : t.textPrimary }}
                     >
                       {selectedNoElection.incumbent}
                     </div>
@@ -527,7 +535,7 @@ export default function ForecastMap() {
                       className="text-[9px] font-semibold px-1 py-0.5 rounded"
                       style={{
                         background: selectedNoElection.party === "D" ? t.candidateDemBg : selectedNoElection.party === "R" ? t.candidateRepBg : t.tabBg,
-                        color: selectedNoElection.party === "D" ? "#1b408c" : selectedNoElection.party === "R" ? "#be1c29" : t.textPrimary,
+                        color: selectedNoElection.party === "D" ? t.demText : selectedNoElection.party === "R" ? t.repText : t.textPrimary,
                       }}
                     >
                       ({selectedNoElection.party})
@@ -577,7 +585,7 @@ export default function ForecastMap() {
                 <div className="text-[8px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>Incumbent</div>
                 <div
                   className="text-[10px] font-bold"
-                  style={{ color: selectedNoElection.party === "D" ? "#1b408c" : selectedNoElection.party === "R" ? "#be1c29" : t.textPrimary }}
+                  style={{ color: selectedNoElection.party === "D" ? t.demText : selectedNoElection.party === "R" ? t.repText : t.textPrimary }}
                 >
                   {selectedNoElection.incumbent} ({selectedNoElection.party})
                 </div>
@@ -617,12 +625,12 @@ export default function ForecastMap() {
 
           {/* Seat split */}
           <div className="flex items-center gap-2 flex-1">
-            <span className="text-sm font-bold tabular-nums" style={{ color: "#1a4480" }}>{demSeats}D</span>
+            <span className="text-sm font-bold tabular-nums" style={{ color: t.demText }}>{demSeats}D</span>
             <div className="flex h-2 rounded-full overflow-hidden flex-1">
               <div style={{ width: `${demPct}%`, background: "#1a4480" }} />
               <div style={{ width: `${100 - demPct}%`, background: "#8b1a1a" }} />
             </div>
-            <span className="text-sm font-bold tabular-nums" style={{ color: "#8b1a1a" }}>{repSeats}R</span>
+            <span className="text-sm font-bold tabular-nums" style={{ color: t.repText }}>{repSeats}R</span>
           </div>
 
           {/* Compact legend */}

@@ -32,14 +32,14 @@ function ProbBar({ probability }: { probability: number }) {
   const repPct = 100 - demPct;
   return (
     <div className="flex items-center gap-2 min-w-[120px]">
-      <span className="text-xs tabular-nums w-8 text-right font-semibold" style={{ color: "#1b408c" }}>
+      <span className="text-xs tabular-nums w-8 text-right font-semibold" style={{ color: "var(--party-dem)" }}>
         {demPct}%
       </span>
       <div className="flex-1 h-2 rounded-full overflow-hidden flex">
         <div style={{ width: `${demPct}%`, background: "#1b408c" }} />
         <div style={{ width: `${repPct}%`, background: "#be1c29" }} />
       </div>
-      <span className="text-xs tabular-nums w-8 font-semibold" style={{ color: "#be1c29" }}>
+      <span className="text-xs tabular-nums w-8 font-semibold" style={{ color: "var(--party-rep)" }}>
         {repPct}%
       </span>
     </div>
@@ -48,7 +48,7 @@ function ProbBar({ probability }: { probability: number }) {
 
 // Card for a seat that has no 2026 election — shows incumbent info + link
 function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: string; label: string }) {
-  const partyColor = entry.party === "D" ? "#1b408c" : entry.party === "R" ? "#be1c29" : "var(--app-text-primary)";
+  const partyColor = entry.party === "D" ? "var(--party-dem)" : entry.party === "R" ? "var(--party-rep)" : "var(--app-text-primary)";
   const partyLabel = entry.party === "D" ? "Dem" : entry.party === "R" ? "Rep" : "Ind";
   return (
     <Link
@@ -72,7 +72,7 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
           <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{entry.incumbent}</span>
           <span
             className="text-xs font-bold px-1.5 py-0.5 rounded shrink-0"
-            style={{ color: partyColor, background: entry.party === "D" ? "#1b408c1a" : entry.party === "R" ? "#be1c291a" : "var(--app-tab-bg)" }}
+            style={{ color: partyColor, background: entry.party === "D" ? "var(--party-dem-subtle)" : entry.party === "R" ? "var(--party-rep-subtle)" : "var(--app-tab-bg)" }}
           >
             {partyLabel}
           </span>
@@ -110,9 +110,9 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
       <div className="flex-1 min-w-0">
         {dem && rep ? (
           <div className="flex items-center gap-2 text-sm">
-            <span className="font-semibold truncate" style={{ color: "#1b408c" }}>{dem.name}</span>
+            <span className="font-semibold truncate" style={{ color: "var(--party-dem)" }}>{dem.name}</span>
             <span className="text-xs shrink-0" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-            <span className="font-semibold truncate" style={{ color: "#be1c29" }}>{rep.name}</span>
+            <span className="font-semibold truncate" style={{ color: "var(--party-rep)" }}>{rep.name}</span>
           </div>
         ) : (
           <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
@@ -129,7 +129,7 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
   );
 }
 
-function HouseDistrictRow({ race }: { race: RaceForecast }) {
+function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) {
   const parts = race.name.split("-");
   const distNum = parts[1];
   const isAL = distNum === "AL";
@@ -138,11 +138,11 @@ function HouseDistrictRow({ race }: { race: RaceForecast }) {
   const { bg, text } = getRatingColors(race.rating);
   return (
     <Link
-      href={`/house/${race.id}`}
+      href={`/house/${race.id}?from=${encodeURIComponent(from)}`}
       className="grid grid-cols-[auto_1fr_auto_auto] items-center gap-4 px-4 py-2.5 rounded-lg transition-colors"
       style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
     >
-      <span className="text-sm font-bold tabular-nums w-16" style={{ color: "var(--app-text-primary)" }}>
+      <span className="text-sm font-bold tabular-nums w-24 shrink-0 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
         {isAL ? "At-Large" : `District ${distNum}`}
       </span>
       <div className="flex h-2 rounded-full overflow-hidden">
@@ -189,15 +189,15 @@ function HistoryResultBar({
           className="text-xs font-bold px-2 py-0.5 rounded-full"
           style={
             winner === "D"
-              ? { background: "#1b408c33", color: "#1b408c" }
-              : { background: "#be1c2933", color: "#be1c29" }
+              ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+              : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }
           }
         >
           {winner}+{margin}
         </span>
-        <span className="text-xs" style={{ color: "#1b408c99" }}>{demPct.toFixed(1)}%</span>
+        <span className="text-xs" style={{ color: "var(--party-dem)" }}>{demPct.toFixed(1)}%</span>
         <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>·</span>
-        <span className="text-xs" style={{ color: "#be1c2999" }}>{repPct.toFixed(1)}%</span>
+        <span className="text-xs" style={{ color: "var(--party-rep)" }}>{repPct.toFixed(1)}%</span>
       </div>
       <div className="flex h-3 rounded-full overflow-hidden">
         <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
@@ -339,7 +339,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                 </div>
                 <div
                   className="text-lg font-bold"
-                  style={{ color: houseLeader === "D" ? "#1b408c" : houseLeader === "R" ? "#be1c29" : "var(--app-text-primary)" }}
+                  style={{ color: houseLeader === "D" ? "var(--party-dem)" : houseLeader === "R" ? "var(--party-rep)" : "var(--app-text-primary)" }}
                 >
                   {houseLabel}
                 </div>
@@ -391,13 +391,13 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
             {senateRace ? (
               <ElectionCard
                 race={senateRace}
-                href={`/senate/${senateRace.id.toLowerCase()}`}
+                href={`/senate/${senateRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
                 label="U.S. Senate (Seat 1)"
               />
             ) : senateNoEl ? (
               <IncumbentCard
                 entry={senateNoEl}
-                href={`/senate/${senateNoEl.abbr.toLowerCase()}`}
+                href={`/senate/${senateNoEl.abbr.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
                 label="U.S. Senate (Seat 1)"
               />
             ) : null}
@@ -406,7 +406,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
             {senateHoldover && (
               <IncumbentCard
                 entry={senateHoldover}
-                href={`/senate/${senateHoldover.abbr.toLowerCase()}-2`}
+                href={`/senate/${senateHoldover.abbr.toLowerCase()}-2?from=${encodeURIComponent(`/states/${id}`)}`}
                 label="U.S. Senate (Seat 2)"
               />
             )}
@@ -415,13 +415,13 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
             {governorRace ? (
               <ElectionCard
                 race={governorRace}
-                href={`/governor/${governorRace.id.toLowerCase()}`}
+                href={`/governor/${governorRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
                 label="Governor"
               />
             ) : governorNoEl ? (
               <IncumbentCard
                 entry={governorNoEl}
-                href={`/governor/${governorNoEl.abbr.toLowerCase()}`}
+                href={`/governor/${governorNoEl.abbr.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
                 label="Governor"
               />
             ) : null}
@@ -445,7 +445,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                 </div>
                 <div className="flex flex-col gap-1.5">
                   {houseRaces.map((race) => (
-                    <HouseDistrictRow key={race.id} race={race} />
+                    <HouseDistrictRow key={race.id} race={race} from={`/states/${id}`} />
                   ))}
                 </div>
               </div>
@@ -512,16 +512,16 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                   {res.year}
                 </span>
                 <Link
-                  href={senateRace ? `/senate/${senateRace.id.toLowerCase()}` : "#"}
+                  href={senateRace ? `/senate/${senateRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}` : "#"}
                   className="text-xs w-24 font-medium transition-colors hover:underline"
                   style={{ color: "var(--app-text-muted)" }}
                 >
                   U.S. Senate
                 </Link>
-                <span className="text-sm font-semibold truncate" style={{ color: "#1b408c" }}>
+                <span className="text-sm font-semibold truncate" style={{ color: "var(--party-dem)" }}>
                   {res.demCandidate ?? "Democratic Candidate"}
                 </span>
-                <span className="text-sm font-semibold truncate" style={{ color: "#be1c29" }}>
+                <span className="text-sm font-semibold truncate" style={{ color: "var(--party-rep)" }}>
                   {res.repCandidate ?? "Republican Candidate"}
                 </span>
                 <HistoryResultBar demPct={res.demPct} repPct={res.repPct} />
@@ -541,7 +541,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                       {year}
                     </span>
                     <Link
-                      href={`/governor/${governorRace.id.toLowerCase()}`}
+                      href={`/governor/${governorRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
                       className="text-xs w-24 font-medium transition-colors hover:underline"
                       style={{ color: "var(--app-text-muted)" }}
                     >
