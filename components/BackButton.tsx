@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import { Suspense } from "react";
 
 function getBackInfo(from: string | null): { href: string; label: string } {
   if (!from) return { href: "/", label: "Back to Map" };
@@ -15,7 +16,7 @@ function getBackInfo(from: string | null): { href: string; label: string } {
   return { href: "/", label: "Back to Map" };
 }
 
-export default function BackButton() {
+function BackButtonInner() {
   const searchParams = useSearchParams();
   const from = searchParams.get("from");
   const { href, label } = getBackInfo(from);
@@ -31,5 +32,20 @@ export default function BackButton() {
       </svg>
       {label}
     </Link>
+  );
+}
+
+export default function BackButton() {
+  return (
+    <Suspense fallback={
+      <span className="flex items-center gap-2 text-sm shrink-0" style={{ color: "var(--app-text-muted)" }}>
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+        </svg>
+        Back
+      </span>
+    }>
+      <BackButtonInner />
+    </Suspense>
   );
 }
