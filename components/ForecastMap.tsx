@@ -326,6 +326,7 @@ export default function ForecastMap() {
           <ComposableMap
             projection="geoAlbersUsa"
             style={{ width: "100%", height: "100%" }}
+            className="-translate-y-[12%] md:translate-y-0"
           >
             <Geographies geography={geoUrl}>
               {({ geographies }: any) =>
