@@ -100,8 +100,8 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
           <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
         )}
       </div>
-      <div className="shrink-0 flex items-center gap-3">
-        <div className="flex items-center gap-1.5 shrink-0">
+      <div className="shrink-0 flex items-center gap-2 sm:gap-3">
+        <div className="hidden sm:flex items-center gap-1.5 shrink-0">
           <span className="text-xs font-semibold tabular-nums" style={{ color: "var(--party-dem)" }}>
             D {((100 + race.margin) / 2).toFixed(1)}%
           </span>
@@ -215,7 +215,7 @@ function HistoryResultBar({
         <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>·</span>
         <span className="text-xs" style={{ color: "var(--party-rep)" }}>{repPct.toFixed(1)}%</span>
       </div>
-      <div className="flex h-3 rounded-full overflow-hidden">
+      <div className="hidden sm:flex h-3 rounded-full overflow-hidden">
         <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
         <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
       </div>
