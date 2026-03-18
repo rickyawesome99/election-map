@@ -134,30 +134,43 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
   return (
     <Link
       href={`/house/${race.id}?from=${encodeURIComponent(from)}`}
-      className="grid grid-cols-[auto_1fr_auto_auto_auto_auto] items-center gap-4 px-4 py-2.5 rounded-lg transition-colors"
+      className="flex items-center gap-3 px-4 py-2.5 rounded-lg transition-colors"
       style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
     >
+      {/* District name */}
       <span className="text-sm font-bold tabular-nums w-24 shrink-0 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
         {isAL ? "At-Large" : `District ${distNum}`}
       </span>
-      <div className="flex h-2 rounded-full overflow-hidden">
-        <div style={{ width: `${demPct}%`, background: "#1b408c" }} />
-        <div style={{ width: `${repPct}%`, background: "#be1c29" }} />
+
+      {/* Bar + vote shares — hidden on mobile */}
+      <div className="hidden sm:flex flex-1 items-center gap-3 min-w-0">
+        <div className="flex h-2 rounded-full overflow-hidden flex-1">
+          <div style={{ width: `${demPct}%`, background: "#1b408c" }} />
+          <div style={{ width: `${repPct}%`, background: "#be1c29" }} />
+        </div>
+        <div className="flex items-center gap-1.5 shrink-0">
+          <span className="text-xs font-semibold tabular-nums" style={{ color: "var(--party-dem)" }}>D {demVS}%</span>
+          <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>·</span>
+          <span className="text-xs font-semibold tabular-nums" style={{ color: "var(--party-rep)" }}>R {repVS}%</span>
+        </div>
       </div>
-      <div className="flex items-center gap-1.5 shrink-0">
-        <span className="text-xs font-semibold tabular-nums" style={{ color: "var(--party-dem)" }}>D {demVS}%</span>
-        <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>·</span>
-        <span className="text-xs font-semibold tabular-nums" style={{ color: "var(--party-rep)" }}>R {repVS}%</span>
-      </div>
+
+      {/* Spacer on mobile */}
+      <div className="flex-1 sm:hidden" />
+
+      {/* Margin */}
       <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: race.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
         {race.margin >= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
       </span>
+
+      {/* Rating badge */}
       <span
-        className="text-xs font-semibold px-2 py-0.5 rounded-full text-center w-20"
-        style={{ background: bg, color: text }}
+        className="text-xs font-semibold px-2 py-0.5 rounded-full text-center shrink-0"
+        style={{ background: bg, color: text, minWidth: "4.5rem" }}
       >
         {race.rating}
       </span>
+
       <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
       </svg>
