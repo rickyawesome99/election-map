@@ -552,13 +552,13 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
 
           {/* Table header */}
           <div
-            className="grid grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 pb-2 mb-3 text-[10px] uppercase tracking-wider font-semibold"
+            className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 pb-2 mb-3 text-[10px] uppercase tracking-wider font-semibold"
             style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-very-muted)" }}
           >
             <span className="w-12">Year</span>
             <span className="w-24">Race</span>
-            <span>Democrat</span>
-            <span>Republican</span>
+            <span className="hidden sm:block">Democrat</span>
+            <span className="hidden sm:block">Republican</span>
             <span>Result</span>
           </div>
 
@@ -567,7 +567,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
             {presidentialYears.map((year) => (
               <div
                 key={`pres-${year}`}
-                className="grid grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
+                className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
               >
                 <span className="text-sm font-bold w-12 tabular-nums" style={{ color: "var(--app-text-primary)" }}>
                   {year}
@@ -575,8 +575,8 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                 <span className="text-xs w-24 font-medium" style={{ color: "var(--app-text-muted)" }}>
                   Presidential
                 </span>
-                <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
-                <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                <span className="hidden sm:block text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                <span className="hidden sm:block text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
                 <HistoryResultBar demPct={null} repPct={null} placeholder />
               </div>
             ))}
@@ -591,7 +591,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
             {senatePastResults.map((res) => (
               <div
                 key={`senate-${res.year}`}
-                className="grid grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
+                className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
               >
                 <span className="text-sm font-bold w-12 tabular-nums" style={{ color: "var(--app-text-primary)" }}>
                   {res.year}
@@ -603,10 +603,10 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                 >
                   U.S. Senate
                 </Link>
-                <span className="text-sm font-semibold truncate" style={{ color: "var(--party-dem)" }}>
+                <span className="hidden sm:block text-sm font-semibold truncate" style={{ color: "var(--party-dem)" }}>
                   {res.demCandidate ?? "Democratic Candidate"}
                 </span>
-                <span className="text-sm font-semibold truncate" style={{ color: "var(--party-rep)" }}>
+                <span className="hidden sm:block text-sm font-semibold truncate" style={{ color: "var(--party-rep)" }}>
                   {res.repCandidate ?? "Republican Candidate"}
                 </span>
                 <HistoryResultBar demPct={res.demPct} repPct={res.repPct} />
@@ -620,7 +620,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                 {[2022, 2018].map((year) => (
                   <div
                     key={`gov-${year}`}
-                    className="grid grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
+                    className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
                   >
                     <span className="text-sm font-bold w-12 tabular-nums" style={{ color: "var(--app-text-primary)" }}>
                       {year}
@@ -632,8 +632,8 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                     >
                       Governor
                     </Link>
-                    <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
-                    <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                    <span className="hidden sm:block text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                    <span className="hidden sm:block text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
                     <HistoryResultBar demPct={null} repPct={null} placeholder />
                   </div>
                 ))}
