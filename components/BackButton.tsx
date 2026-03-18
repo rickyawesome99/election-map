@@ -1,29 +1,32 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
-import Link from "next/link";
 import { Suspense } from "react";
 
-function getBackInfo(from: string | null): { href: string; label: string } {
-  if (!from) return { href: "/", label: "Back to Map" };
-  if (from === "/senate") return { href: "/senate", label: "Back to Senate" };
-  if (from === "/house") return { href: "/house", label: "Back to House" };
-  if (from === "/governor") return { href: "/governor", label: "Back to Governor" };
+function getLabel(from: string | null): string {
+  if (!from) return "Back";
+  if (from === "/senate") return "Back to Senate";
+  if (from === "/house") return "Back to House";
+  if (from === "/governor") return "Back to Governor";
   if (from.startsWith("/states/")) {
-    const abbr = from.split("/")[2]?.toUpperCase() ?? "";
-    return { href: from, label: `Back to ${abbr}` };
+    const slug = from.split("/")[2] ?? "";
+    const abbr = slug.charAt(0).toUpperCase() + slug.slice(1);
+    return `Back to ${abbr}`;
   }
-  return { href: "/", label: "Back to Map" };
+  if (from === "/") return "Back to Map";
+  return "Back";
 }
 
 function BackButtonInner() {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const from = searchParams.get("from");
-  const { href, label } = getBackInfo(from);
+  const label = getLabel(from);
 
   return (
-    <Link
-      href={href}
+    <button
+      onClick={() => router.back()}
       className="flex items-center gap-2 text-sm transition-colors shrink-0"
       style={{ color: "var(--app-text-muted)" }}
     >
@@ -31,7 +34,7 @@ function BackButtonInner() {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
       </svg>
       {label}
-    </Link>
+    </button>
   );
 }
 

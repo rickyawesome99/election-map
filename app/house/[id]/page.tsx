@@ -3,6 +3,7 @@ import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import ThemeToggle from "@/components/ThemeToggle";
 import BackButton from "@/components/BackButton";
+import DistrictMiniMap from "@/components/DistrictMiniMap";
 
 export async function generateStaticParams() {
   return houseData.map((race) => ({ id: race.id.toLowerCase() }));
@@ -72,6 +73,14 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
           </div>
           <p style={{ color: "var(--app-text-muted)" }}>2026 U.S. House Race · {districtLabel}</p>
         </div>
+
+        {/* District map */}
+        <section
+          className="rounded-xl overflow-hidden mb-6"
+          style={{ border: "1px solid var(--app-border)" }}
+        >
+          <DistrictMiniMap raceId={race.id} stateAbbr={stateAbbr} margin={race.margin} />
+        </section>
 
         {/* Bio section */}
         <section

@@ -2,9 +2,12 @@ import { senateData, senateNoElection, senateHoldovers } from "@/data/forecastDa
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import ThemeToggle from "@/components/ThemeToggle";
 import BackButton from "@/components/BackButton";
+
+function stateSlug(name: string) { return name.toLowerCase().replace(/\s+/g, "-"); }
 
 export async function generateStaticParams() {
   return [
@@ -74,7 +77,7 @@ function NoElectionPage({
         {/* Title + banner */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2 flex-wrap">
-            <h1 className="text-3xl font-bold" style={{ color: "var(--app-text-primary)" }}>{state}</h1>
+            <Link href={`/states/${stateSlug(state)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{state}</Link>
             <span
               className="text-xs font-semibold px-3 py-1 rounded-full"
               style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
@@ -292,7 +295,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
         {/* Title block */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <h1 className="text-3xl font-bold" style={{ color: "var(--app-text-primary)" }}>{race.name}</h1>
+            <Link href={`/states/${stateSlug(race.name)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
             <span
               className="text-xs font-semibold px-2.5 py-1 rounded-full"
               style={{ background: bg, color: text }}
