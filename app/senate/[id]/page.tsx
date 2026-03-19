@@ -4,8 +4,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import ThemeToggle from "@/components/ThemeToggle";
 import BackButton from "@/components/BackButton";
+import AppHeader from "@/components/AppHeader";
 
 function stateSlug(name: string) { return name.toLowerCase().replace(/\s+/g, "-"); }
 
@@ -40,44 +40,26 @@ function NoElectionPage({
   party,
   nextElection,
   seatLabel,
-  raceType,
+  from,
 }: {
   state: string;
   incumbent: string;
   party: "D" | "R" | "I";
   nextElection: number;
   seatLabel: string;
-  raceType: "senate" | "governor";
+  from: string;
 }) {
   const partyColor = party === "D" ? "var(--party-dem)" : party === "R" ? "var(--party-rep)" : "var(--app-text-primary)";
   const partyLabel = party === "D" ? "Democrat" : party === "R" ? "Republican" : "Independent";
-  const backLabel = raceType === "senate" ? "Senate" : "Governor";
-
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <header
-        className="sticky top-0 z-10 px-6 py-4 flex items-center gap-4"
-        style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-      >
-        <BackButton />
-        <div className="h-4 w-px shrink-0" style={{ background: "var(--app-border)" }} />
-        <div className="flex items-center gap-1 min-w-0 flex-1 overflow-hidden">
-          <span className="text-[10px] uppercase tracking-wider font-semibold shrink-0" style={{ color: "var(--app-text-muted)" }}>
-            {backLabel}
-          </span>
-          <span className="shrink-0" style={{ color: "var(--app-text-very-muted)" }}>/</span>
-          <span className="font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{state}</span>
-        </div>
-        <div className="ml-auto shrink-0">
-          <ThemeToggle />
-        </div>
-      </header>
+      <AppHeader back={<BackButton />} />
 
       <main className="max-w-4xl mx-auto px-6 py-10">
         {/* Title + banner */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2 flex-wrap">
-            <Link href={`/states/${stateSlug(state)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{state}</Link>
+            <Link href={`/states/${stateSlug(state)}?from=${encodeURIComponent(from)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{state}</Link>
             <span
               className="text-xs font-semibold px-3 py-1 rounded-full"
               style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
@@ -231,7 +213,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
         party={noEl.party}
         nextElection={noEl.nextElection}
         seatLabel="U.S. Senate · No Election in 2026"
-        raceType="senate"
+        from={`/senate/${id}`}
       />
     );
   }
@@ -247,7 +229,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
         party={holdover.party}
         nextElection={holdover.nextElection}
         seatLabel="U.S. Senate · Seat 2 · Not up in 2026"
-        raceType="senate"
+        from={`/senate/${id}`}
       />
     );
   }
@@ -274,28 +256,13 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      {/* Nav bar */}
-      <header
-        className="sticky top-0 z-10 px-6 py-4 flex items-center gap-4"
-        style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-      >
-        <BackButton />
-        <div className="h-4 w-px shrink-0" style={{ background: "var(--app-border)" }} />
-        <div className="flex items-center gap-1 min-w-0 flex-1 overflow-hidden">
-          <span className="text-[10px] uppercase tracking-wider font-semibold shrink-0" style={{ color: "var(--app-text-muted)" }}>Senate</span>
-          <span className="shrink-0" style={{ color: "var(--app-text-very-muted)" }}>/</span>
-          <span className="font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{race.name}</span>
-        </div>
-        <div className="ml-auto shrink-0">
-          <ThemeToggle />
-        </div>
-      </header>
+      <AppHeader back={<BackButton />} />
 
       <main className="max-w-4xl mx-auto px-6 py-10">
         {/* Title block */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <Link href={`/states/${stateSlug(race.name)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
+            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/senate/${id}`)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
             <span
               className="text-xs font-semibold px-2.5 py-1 rounded-full"
               style={{ background: bg, color: text }}

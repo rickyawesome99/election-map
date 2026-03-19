@@ -4,8 +4,8 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import ThemeToggle from "@/components/ThemeToggle";
 import BackButton from "@/components/BackButton";
+import AppHeader from "@/components/AppHeader";
 
 function stateSlug(name: string) { return name.toLowerCase().replace(/\s+/g, "-"); }
 
@@ -28,29 +28,17 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return { title: "Race Not Found" };
 }
 
-function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
+function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string }) {
   const partyColor = entry.party === "D" ? "var(--party-dem)" : entry.party === "R" ? "var(--party-rep)" : "var(--app-text-primary)";
   const partyLabel = entry.party === "D" ? "Democrat" : entry.party === "R" ? "Republican" : "Independent";
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <header
-        className="sticky top-0 z-10 px-6 py-4 flex items-center gap-4"
-        style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-      >
-        <BackButton />
-        <div className="h-4 w-px shrink-0" style={{ background: "var(--app-border)" }} />
-        <div className="flex items-center gap-1 min-w-0 flex-1 overflow-hidden">
-          <span className="text-[10px] uppercase tracking-wider font-semibold shrink-0" style={{ color: "var(--app-text-muted)" }}>Governor</span>
-          <span className="shrink-0" style={{ color: "var(--app-text-very-muted)" }}>/</span>
-          <span className="font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{entry.state}</span>
-        </div>
-        <div className="ml-auto shrink-0"><ThemeToggle /></div>
-      </header>
+      <AppHeader back={<BackButton />} />
 
       <main className="max-w-4xl mx-auto px-6 py-10">
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2 flex-wrap">
-            <Link href={`/states/${stateSlug(entry.state)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</Link>
+            <Link href={`/states/${stateSlug(entry.state)}?from=${encodeURIComponent(from)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</Link>
             <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
               No Election in 2026
             </span>
@@ -152,7 +140,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const { id } = await params;
 
   const noEl = governorNoElection.find((e) => e.abbr.toLowerCase() === id.toLowerCase());
-  if (noEl) return <NoElectionPage entry={noEl} />;
+  if (noEl) return <NoElectionPage entry={noEl} from={`/governor/${id}`} />;
 
   const race = governorData.find((r) => r.id.toLowerCase() === id.toLowerCase());
   if (!race) notFound();
@@ -172,28 +160,13 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      {/* Nav bar */}
-      <header
-        className="sticky top-0 z-10 px-6 py-4 flex items-center gap-4"
-        style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-      >
-        <BackButton />
-        <div className="h-4 w-px shrink-0" style={{ background: "var(--app-border)" }} />
-        <div className="flex items-center gap-1 min-w-0 flex-1 overflow-hidden">
-          <span className="text-[10px] uppercase tracking-wider font-semibold shrink-0" style={{ color: "var(--app-text-muted)" }}>Governor</span>
-          <span className="shrink-0" style={{ color: "var(--app-text-very-muted)" }}>/</span>
-          <span className="font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{race.name}</span>
-        </div>
-        <div className="ml-auto shrink-0">
-          <ThemeToggle />
-        </div>
-      </header>
+      <AppHeader back={<BackButton />} />
 
       <main className="max-w-4xl mx-auto px-6 py-10">
         {/* Title block */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <Link href={`/states/${stateSlug(race.name)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
+            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/governor/${id}`)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
             <span
               className="text-xs font-semibold px-2.5 py-1 rounded-full"
               style={{ background: bg, color: text }}

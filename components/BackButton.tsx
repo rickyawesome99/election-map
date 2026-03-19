@@ -26,7 +26,7 @@ function BackButtonInner() {
 
   return (
     <button
-      onClick={() => router.back()}
+      onClick={() => from ? router.push(from) : router.back()}
       className="flex items-center gap-2 text-sm transition-colors shrink-0"
       style={{ color: "var(--app-text-muted)" }}
     >

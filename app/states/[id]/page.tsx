@@ -3,15 +3,9 @@ import { senateData, senateNoElection, senateHoldovers, governorData, governorNo
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import ThemeToggle from "@/components/ThemeToggle";
+import AppHeader from "@/components/AppHeader";
 import StateMapSection from "@/components/StateMapSection";
 
-const NAV = [
-  { label: "States",   href: "/states" },
-  { label: "House",    href: "/house" },
-  { label: "Senate",   href: "/senate" },
-  { label: "Governor", href: "/governor" },
-];
 
 const GENERAL_ELECTION = "November 3, 2026";
 
@@ -42,12 +36,7 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
         <div className="text-[10px] uppercase tracking-wider font-semibold mb-0.5" style={{ color: "var(--app-text-muted)" }}>
           {label}
         </div>
-        <span
-          className="text-xs font-semibold px-2 py-0.5 rounded-full"
-          style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
-        >
-          No 2026 Election
-        </span>
+        <div className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>No Election</div>
       </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 text-sm">
@@ -237,8 +226,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-export default async function StateDetailPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function StateDetailPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ from?: string }> }) {
   const { id } = await params;
+  const { from } = await searchParams;
   const state = statesData.find((s) => s.id === id);
   if (!state) notFound();
 
@@ -284,49 +274,11 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      {/* Header */}
-      <div className="sticky top-0 z-10">
-      <header
-        className="px-6 py-4 flex items-center gap-4"
-        style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-      >
-        <Link href="/" className="font-bold text-lg tracking-tight" style={{ color: "var(--app-text-primary)" }}>
-          CT Strategies
+      <AppHeader back={
+        <Link href={from ?? "/states"} className="text-sm transition-colors" style={{ color: "var(--app-text-muted)" }}>
+          ← {from?.startsWith("/senate") ? "Back to Senate" : from?.startsWith("/governor") ? "Back to Governor" : from?.startsWith("/house") ? "Back to District" : "All States"}
         </Link>
-        <div className="hidden md:block h-4 w-px" style={{ background: "var(--app-border)" }} />
-        <nav className="hidden md:flex items-center gap-1">
-          {NAV.map(({ label, href }) => (
-            <Link
-              key={href}
-              href={href}
-              className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-              style={{ color: "var(--app-text-muted)" }}
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
-        <div className="ml-auto flex items-center gap-3 shrink-0">
-          <Link href="/states" className="text-sm transition-colors" style={{ color: "var(--app-text-muted)" }}>
-            ← All States
-          </Link>
-          <ThemeToggle />
-        </div>
-      </header>
-
-      <nav className="md:hidden flex border-b" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
-        {NAV.map(({ label, href }) => (
-          <Link
-            key={href}
-            href={href}
-            className="flex-1 py-2 text-center text-sm font-medium"
-            style={{ color: "var(--app-text-muted)" }}
-          >
-            {label}
-          </Link>
-        ))}
-      </nav>
-      </div>
+      } />
 
       <main className="max-w-5xl mx-auto px-6 py-10 space-y-8">
         {/* Title */}

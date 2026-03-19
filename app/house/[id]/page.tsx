@@ -1,8 +1,9 @@
 import { houseData } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
-import ThemeToggle from "@/components/ThemeToggle";
+import Link from "next/link";
 import BackButton from "@/components/BackButton";
+import AppHeader from "@/components/AppHeader";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
 
 export async function generateStaticParams() {
@@ -19,8 +20,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-export default async function HousePage({ params }: { params: Promise<{ id: string }> }) {
+export default async function HousePage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ from?: string }> }) {
   const { id } = await params;
+  const { from: fromParam } = await searchParams;
   const race = houseData.find((r) => r.id.toLowerCase() === id.toLowerCase());
   if (!race) notFound();
 
@@ -42,28 +44,13 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      {/* Nav bar */}
-      <header
-        className="sticky top-0 z-10 px-6 py-4 flex items-center gap-4"
-        style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-      >
-        <BackButton />
-        <div className="h-4 w-px shrink-0" style={{ background: "var(--app-border)" }} />
-        <div className="flex items-center gap-1 min-w-0 flex-1 overflow-hidden">
-          <span className="text-[10px] uppercase tracking-wider font-semibold shrink-0" style={{ color: "var(--app-text-muted)" }}>House</span>
-          <span className="shrink-0" style={{ color: "var(--app-text-very-muted)" }}>/</span>
-          <span className="font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{race.name}</span>
-        </div>
-        <div className="ml-auto shrink-0">
-          <ThemeToggle />
-        </div>
-      </header>
+      <AppHeader back={<BackButton />} />
 
       <main className="max-w-4xl mx-auto px-6 py-10">
         {/* Title block */}
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
-            <h1 className="text-3xl font-bold" style={{ color: "var(--app-text-primary)" }}>{race.name}</h1>
+            <Link href={`/states/${race.state.toLowerCase().replace(/\s+/g, "-")}?from=${encodeURIComponent(`/house/${race.id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
             <span
               className="text-xs font-semibold px-2.5 py-1 rounded-full"
               style={{ background: bg, color: text }}

@@ -38,7 +38,7 @@ export default function StateMapSection({
           const distLabel = distNum === "AL" ? "At-Large District" : `District ${distNum}`;
           return (
             <section
-              className="hidden md:flex flex-col flex-1 min-h-0 rounded-xl p-3 gap-2 overflow-hidden"
+              className="hidden md:flex flex-col flex-1 min-h-0 rounded-xl p-3 gap-2"
               style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
             >
               {/* Header */}
@@ -106,8 +106,8 @@ export default function StateMapSection({
               {/* Link */}
               <Link
                 href={`/house/${selected.id}`}
-                className="flex items-center justify-center gap-1 py-1.5 rounded-lg text-xs font-semibold transition-colors shrink-0"
-                style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
+                className="flex items-center justify-center gap-1 py-1 mx-3 mb-2 rounded-md text-xs font-semibold transition-colors shrink-0"
+                style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}
               >
                 View Full Race Details
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
