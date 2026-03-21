@@ -102,7 +102,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
         <section className="rounded-xl p-6 mb-6" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
           <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-4" style={{ color: "var(--app-text-muted)" }}>About this Office</h2>
           <p className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
-            [Placeholder — overview of the {entry.state} governorship, its powers, the incumbent&apos;s background, key issues, and political context to be filled in.]
+            {entry.raceDesc ?? `[Placeholder — overview of the ${entry.state} governorship, its powers, the incumbent's background, key issues, and political context to be filled in.]`}
           </p>
         </section>
 
@@ -186,7 +186,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             About this Race
           </h2>
           <p className="text-sm leading-relaxed mb-5" style={{ color: "var(--app-text-primary)" }}>
-            [Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]
+            {race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {[
@@ -357,22 +357,51 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               Poll Aggregate
             </h2>
             <div className="flex flex-col gap-4">
-              {[
-                { label: "RCP Average", type: "voteshare" },
-                { label: "Kalshi Odds", type: "winprob" },
-                { label: "Polymarket Odds", type: "winprob" },
-              ].map(({ label, type }) => (
-                <div key={label}>
-                  <div className="flex justify-between items-center mb-1.5">
-                    <span className="text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{label}</span>
-                    <span className="text-xs font-medium italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+              {([
+                { label: "RCP Average",     dem: race.rcpDem,    rep: race.rcpRep,    type: "voteshare" },
+                { label: "Kalshi Odds",     dem: race.kalshiDem, rep: race.kalshiRep, type: "winprob"   },
+                { label: "Polymarket Odds", dem: race.polyDem,   rep: race.polyRep,   type: "winprob"   },
+              ] as { label: string; dem?: number; rep?: number; type: string }[]).map(({ label, dem, rep, type }) => {
+                const hasData = dem != null && rep != null;
+                if (!hasData) return (
+                  <div key={label}>
+                    <div className="flex justify-between items-center mb-1.5">
+                      <span className="text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{label}</span>
+                      <span className="text-xs font-medium italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                    </div>
+                    <div className="flex h-3 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }} />
+                    <div className="text-[10px] mt-0.5 text-center" style={{ color: "var(--app-text-very-muted)" }}>
+                      {type === "voteshare" ? "vote share" : "win probability"}
+                    </div>
                   </div>
-                  <div className="flex h-3 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }} />
-                  <div className="text-[10px] mt-0.5 text-center" style={{ color: "var(--app-text-very-muted)" }}>
-                    {type === "voteshare" ? "vote share" : "win probability"}
+                );
+                const demPct = Math.round(dem! * 100);
+                const repPct = Math.round(rep! * 100);
+                const total = demPct + repPct;
+                const dWidth = total > 0 ? (demPct / total) * 100 : 50;
+                const winner = demPct >= repPct ? "D" : "R";
+                return (
+                  <div key={label}>
+                    <div className="flex justify-between items-center mb-1.5">
+                      <span className="text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{label}</span>
+                      <span className="text-xs font-bold" style={{ color: winner === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>
+                        {winner === "D" ? `Dem +${demPct - repPct}` : `Rep +${repPct - demPct}`}
+                      </span>
+                    </div>
+                    <div className="flex h-3 rounded-full overflow-hidden">
+                      <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
+                      <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
+                    </div>
+                    <div className="flex justify-between mt-1">
+                      <span className="text-xs" style={{ color: "var(--party-dem-muted)" }}>{demPct}%</span>
+                      <span className="text-xs" style={{ color: "var(--party-rep-muted)" }}>{repPct}%</span>
+                    </div>
+                    <div className="text-[10px] mt-0.5 text-center" style={{ color: "var(--app-text-very-muted)" }}>
+                      {type === "voteshare" ? "vote share" : "win probability"}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </section>
 
@@ -403,26 +432,43 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                       {isPlaceholder ? (
                         <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
                       ) : (
-                        <span
-                          className="text-xs font-bold px-2 py-0.5 rounded-full"
-                          style={winner === "D"
-                            ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
-                            : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
-                        >
-                          {winner === "D" ? "D" : "R"}+{margin}
-                        </span>
+                        <>
+                          {(res as { electionType?: string }).electionType && (
+                            <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+                              {(res as { electionType?: string }).electionType}
+                            </span>
+                          )}
+                          <span
+                            className="text-xs font-bold px-2 py-0.5 rounded-full"
+                            style={winner === "D"
+                              ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                              : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                          >
+                            {winner === "D" ? "D" : "R"}+{margin}
+                          </span>
+                        </>
                       )}
                     </div>
                     <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
                       <div className="flex flex-col">
-                        <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
+                        <div className="flex items-center gap-1.5 mb-0.5">
+                          <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
+                          {!isPlaceholder && (res as { demIncumbent?: boolean }).demIncumbent && (
+                            <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>
+                          )}
+                        </div>
                         <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
                           {isPlaceholder ? "TBD" : demName}
                         </span>
                       </div>
                       <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
                       <div className="flex flex-col items-end">
-                        <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Republican</span>
+                        <div className="flex items-center gap-1.5 mb-0.5">
+                          {!isPlaceholder && (res as { repIncumbent?: boolean }).repIncumbent && (
+                            <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
+                          )}
+                          <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
+                        </div>
                         <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
                           {isPlaceholder ? "TBD" : repName}
                         </span>
@@ -443,8 +489,14 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                           <span className="text-xs font-semibold" style={{ color: "var(--party-rep)" }}>{res.repPct}%</span>
                         </div>
                         <div className="flex justify-between mt-1">
-                          <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>
-                          <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>
+                          {(res as { demVotes?: number }).demVotes != null
+                            ? <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{((res as { demVotes?: number }).demVotes!).toLocaleString()} votes</span>
+                            : <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>— votes</span>
+                          }
+                          {(res as { repVotes?: number }).repVotes != null
+                            ? <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{((res as { repVotes?: number }).repVotes!).toLocaleString()} votes</span>
+                            : <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>— votes</span>
+                          }
                         </div>
                       </>
                     )}

@@ -243,6 +243,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
   const houseRaces = houseData.filter((r) => r.state === state.name);
   const senatePastResults = senateRace?.pastResults?.filter((r) => r.year >= 2016) ?? [];
+  const govPastResults = governorRace?.pastResults?.filter((r) => r.year >= 2016) ?? [];
   const totalRaces2026 = houseRaces.length + (senateRace ? 1 : 0) + (governorRace ? 1 : 0);
 
   // Helper: current party from a race — explicit incumbent flag first, then margin sign as fallback
@@ -565,17 +566,17 @@ export default async function StateDetailPage({ params, searchParams }: { params
               </div>
             ))}
 
-            {/* Governor placeholder rows */}
-            {governorRace && (
+            {/* Governor past results */}
+            {governorRace && govPastResults.length > 0 && (
               <>
                 <div className="h-px my-1" style={{ background: "var(--app-border)" }} />
-                {[2022, 2018].map((year) => (
+                {govPastResults.map((res) => (
                   <div
-                    key={`gov-${year}`}
+                    key={`gov-${res.year}`}
                     className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
                   >
                     <span className="text-sm font-bold w-12 tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                      {year}
+                      {res.year}
                     </span>
                     <Link
                       href={`/governor/${governorRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
@@ -584,9 +585,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
                     >
                       Governor
                     </Link>
-                    <span className="hidden sm:block text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
-                    <span className="hidden sm:block text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
-                    <HistoryResultBar demPct={null} repPct={null} placeholder />
+                    <span className="hidden sm:block text-sm font-semibold truncate" style={{ color: "var(--party-dem)" }}>
+                      {res.demCandidate ?? "Democratic Candidate"}
+                    </span>
+                    <span className="hidden sm:block text-sm font-semibold truncate" style={{ color: "var(--party-rep)" }}>
+                      {res.repCandidate ?? "Republican Candidate"}
+                    </span>
+                    <HistoryResultBar demPct={res.demPct} repPct={res.repPct} />
                   </div>
                 ))}
               </>
