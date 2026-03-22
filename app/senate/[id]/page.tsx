@@ -110,11 +110,11 @@ function NoElectionPage({
                   { label: "Next Election", value: String(nextElection) },
                   { label: "Term Started", value: "TBD" },
                 ].map(({ label, value }) => (
-                  <div key={label} className="rounded-lg p-3" style={{ background: "var(--app-bg)" }}>
+                  <div key={label} className="rounded-lg p-3 flex flex-col" style={{ background: "var(--app-bg)" }}>
                     <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
                       {label}
                     </div>
-                    <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                    <div className="text-sm font-semibold mt-auto" style={{ color: "var(--app-text-primary)" }}>
                       {value}
                     </div>
                   </div>
@@ -329,17 +329,17 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           <p className="text-sm leading-relaxed mb-5" style={{ color: "var(--app-text-primary)" }}>
             {race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             {[
               { label: "State", value: race.state },
               { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
               { label: "Current Senator", value: incumbent?.name ?? "TBD" },
             ].map(({ label, value }) => (
-              <div key={label} className="rounded-lg p-3" style={{ background: "var(--app-bg)" }}>
+              <div key={label} className="rounded-lg p-3 flex flex-col" style={{ background: "var(--app-bg)" }}>
                 <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
                   {label}
                 </div>
-                <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                <div className="text-sm font-semibold mt-auto" style={{ color: "var(--app-text-primary)" }}>
                   {value}
                 </div>
               </div>

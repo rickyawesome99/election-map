@@ -70,9 +70,9 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
                   { label: "Next Election", value: String(entry.nextElection) },
                   { label: "Term Started", value: "TBD" },
                 ].map(({ label, value }) => (
-                  <div key={label} className="rounded-lg p-3" style={{ background: "var(--app-bg)" }}>
+                  <div key={label} className="rounded-lg p-3 flex flex-col" style={{ background: "var(--app-bg)" }}>
                     <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>{label}</div>
-                    <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>{value}</div>
+                    <div className="text-sm font-semibold mt-auto" style={{ color: "var(--app-text-primary)" }}>{value}</div>
                   </div>
                 ))}
               </div>
@@ -256,7 +256,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
           <p className="text-sm leading-relaxed mb-5" style={{ color: "var(--app-text-primary)" }}>
             {race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
           </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-3 gap-3">
             {[
               { label: "State", value: race.state },
               { label: "Term Length", value: "4 Years" },
