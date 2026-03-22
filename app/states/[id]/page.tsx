@@ -245,7 +245,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
   const governorNoEl = !governorRace ? governorNoElection.find((e) => e.abbr === state.abbr) : null;
 
   const houseRaces = houseData.filter((r) => r.state === state.name);
-  const senatePastResults = anySenateRace?.pastResults?.filter((r) => r.year >= 2016) ?? [];
+  const senatePastResults = [
+    ...(senateSeat1Race?.pastResults ?? senateSeat1NoEl?.pastResults ?? []),
+    ...(senateSeat2Race?.pastResults ?? senateSeat2Holdover?.pastResults ?? []),
+  ].filter((r) => r.year >= 2016).sort((a, b) => b.year - a.year);
   const govPastResults = (governorRace?.pastResults ?? governorNoEl?.pastResults ?? []).filter((r) => r.year >= 2016);
   const govPageId = governorRace ? governorRace.id.toLowerCase() : governorNoEl?.abbr.toLowerCase();
   const totalRaces2026 = houseRaces.length + (anySenateRace ? 1 : 0) + (governorRace ? 1 : 0);
