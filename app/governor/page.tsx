@@ -1,11 +1,11 @@
-import { governorData } from "@/data/forecastData";
+import { governorData, electionYear } from "@/data/forecastData";
 import RaceTable from "@/components/RaceTable";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata = {
-  title: "Governor Races — 2026 Forecast",
-  description: "2026 U.S. Governor race forecasts",
+  title: `Governor Races — ${electionYear} Forecast`,
+  description: `${electionYear} U.S. Governor race forecasts`,
 };
 
 export default function GovernorListPage() {
@@ -75,7 +75,7 @@ export default function GovernorListPage() {
             Governor Races
           </h1>
           <p style={{ color: "var(--app-text-muted)" }}>
-            2026 U.S. Governor forecast · {governorData.length} races
+            {electionYear} U.S. Governor forecast · {governorData.length} races
           </p>
         </div>
 

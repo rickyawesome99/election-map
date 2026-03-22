@@ -1,11 +1,11 @@
-import { houseData } from "@/data/forecastData";
+import { houseData, electionYear } from "@/data/forecastData";
 import RaceTable from "@/components/RaceTable";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata = {
-  title: "House Races — 2026 Forecast",
-  description: "2026 U.S. House race forecasts for all 435 congressional districts",
+  title: `House Races — ${electionYear} Forecast`,
+  description: `${electionYear} U.S. House race forecasts for all 435 congressional districts`,
 };
 
 export default function HouseListPage() {
@@ -75,7 +75,7 @@ export default function HouseListPage() {
             House Races
           </h1>
           <p style={{ color: "var(--app-text-muted)" }}>
-            2026 U.S. House forecast · {houseData.length} districts
+            {electionYear} U.S. House forecast · {houseData.length} districts
           </p>
         </div>
 

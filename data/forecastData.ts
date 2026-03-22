@@ -18,6 +18,10 @@ export type PastResult = {
   repCandidate?: string;
   demVotes?: number;
   repVotes?: number;
+  totalVotes?: number;
+  margin?: number;
+  seat?: number;
+  seatClass?: number;
   electionType?: string;
   demIncumbent?: boolean;
   repIncumbent?: boolean;
@@ -33,6 +37,9 @@ export type RaceForecast = {
   rating: string;
   history: { date: string; value: number }[];
   termLength?: number;
+  seat?: number;
+  seatClass?: number;
+  electionType?: string;
   raceDesc?: string;
   kalshiDem?: number;
   kalshiRep?: number;
@@ -52,84 +59,181 @@ export type NoElectionEntry = {
   nextElection: number;
   termLength?: number;
   raceDesc?: string;
+  pastResults?: PastResult[];
 };
 
 export const senateData: RaceForecast[] = [
-  {
-    "id": "AK",
-    "name": "Alaska",
-    "state": "Alaska",
-    "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 45
-      },
-      {
-        "date": "Oct",
-        "value": 47
-      },
-      {
-        "date": "Nov",
-        "value": 49
-      },
-      {
-        "date": "Dec",
-        "value": 50
-      },
-      {
-        "date": "Jan",
-        "value": 50
-      },
-      {
-        "date": "Feb",
-        "value": 50
-      },
-      {
-        "date": "Mar",
-        "value": 50
-      }
-    ]
-  },
   {
     "id": "AL",
     "name": "Alabama",
     "state": "Alabama",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.05,
+    "margin": -17.5,
+    "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 2
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 4
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 5
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 5
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 5
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 5
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.97,
+    "candidates": {
+      "dem": {
+        "name": "Democratic Candidate",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Barry Moore",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 39.74,
+        "repPct": 60.1,
+        "demCandidate": "Gordon Douglas Jones",
+        "repCandidate": "Tommy Tuberville",
+        "demVotes": 920478,
+        "repVotes": 1392076,
+        "totalVotes": 2316445,
+        "margin": 20.36,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 0,
+        "repPct": 97.25,
+        "repCandidate": "Jeff Sessions",
+        "repVotes": 795606,
+        "totalVotes": 818090,
+        "margin": 97.25,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "AK",
+    "name": "Alaska",
+    "state": "Alaska",
+    "raceType": "senate",
+    "probability": 0.49,
+    "margin": -2,
+    "rating": "Lean R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 44
+      },
+      {
+        "date": "Oct",
+        "value": 46
+      },
+      {
+        "date": "Nov",
+        "value": 48
+      },
+      {
+        "date": "Dec",
+        "value": 49
+      },
+      {
+        "date": "Jan",
+        "value": 49
+      },
+      {
+        "date": "Feb",
+        "value": 49
+      },
+      {
+        "date": "Mar",
+        "value": 49
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.53,
+    "kalshiRep": 0.47,
+    "candidates": {
+      "dem": {
+        "name": "Mary Peltola",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Dan Sullivan",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 41.19,
+        "repPct": 53.9,
+        "demCandidate": "Al Gross",
+        "repCandidate": "Dan Sullivan",
+        "demVotes": 146068,
+        "repVotes": 191112,
+        "totalVotes": 354587,
+        "margin": 12.7,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 45.83,
+        "repPct": 47.96,
+        "demCandidate": "Mark Begich",
+        "repCandidate": "Dan Sullivan",
+        "demVotes": 129431,
+        "repVotes": 135445,
+        "totalVotes": 282400,
+        "margin": 2.13,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
@@ -138,37 +242,84 @@ export const senateData: RaceForecast[] = [
     "name": "Arkansas",
     "state": "Arkansas",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.04,
+    "margin": -21,
+    "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 4
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.04,
+    "kalshiRep": 0.96,
+    "candidates": {
+      "dem": {
+        "name": "Hallie Shoffner",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Tom Cotton",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 0,
+        "repPct": 66.53,
+        "repCandidate": "Tom Cotton",
+        "repVotes": 793871,
+        "totalVotes": 1193261,
+        "margin": 66.53,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 39.43,
+        "repPct": 56.5,
+        "demCandidate": "Mark L. Pryor",
+        "repCandidate": "Tom Cotton",
+        "demVotes": 334174,
+        "repVotes": 478819,
+        "totalVotes": 847505,
+        "margin": 17.07,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
@@ -177,115 +328,262 @@ export const senateData: RaceForecast[] = [
     "name": "Colorado",
     "state": "Colorado",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.97,
+    "margin": 14,
+    "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 92
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 94
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 96
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 97
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 97
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 97
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 97
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.97,
+    "kalshiRep": 0.03,
+    "candidates": {
+      "dem": {
+        "name": "John Hickenlooper",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "Mark Baisley",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 53.5,
+        "repPct": 44.18,
+        "demCandidate": "John Wright Hickenlooper",
+        "repCandidate": "Cory Gardner",
+        "demVotes": 1731114,
+        "repVotes": 1429492,
+        "totalVotes": 3235790,
+        "margin": -9.32,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 46.26,
+        "repPct": 48.2,
+        "demCandidate": "Mark Udall",
+        "repCandidate": "Cory Gardner",
+        "demVotes": 944203,
+        "repVotes": 983891,
+        "totalVotes": 2041058,
+        "margin": 1.94,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "DE",
+    "id": "DE-2",
     "name": "Delaware",
     "state": "Delaware",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.94,
+    "margin": 20.5,
+    "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 89
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 91
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 93
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 94
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 94
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 94
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 94
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.94,
+    "kalshiRep": 0.06,
+    "candidates": {
+      "dem": {
+        "name": "Chris Coons",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "Republican Candidate",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 59.44,
+        "repPct": 37.9,
+        "demCandidate": "Christopher A. Coons",
+        "repCandidate": "Lauren E. Witzke",
+        "demVotes": 291804,
+        "repVotes": 186054,
+        "totalVotes": 490935,
+        "margin": -21.54,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 55.83,
+        "repPct": 42.23,
+        "demCandidate": "Christopher A. Coons",
+        "repCandidate": "Kevin Wade",
+        "demVotes": 130655,
+        "repVotes": 98823,
+        "totalVotes": 234038,
+        "margin": -13.6,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "FL",
+    "id": "FL-2",
     "name": "Florida",
     "state": "Florida",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.18,
+    "margin": -11.5,
+    "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 13
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 15
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 17
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 18
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 18
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 18
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 18
+      }
+    ],
+    "seat": 2,
+    "seatClass": 3,
+    "electionType": "Special",
+    "kalshiDem": 0.14,
+    "kalshiRep": 0.86,
+    "candidates": {
+      "dem": {
+        "name": "Alexander Vindman",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Ashley Moody",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 41.27,
+        "repPct": 57.68,
+        "demCandidate": "Val Demings",
+        "repCandidate": "Marco Rubio",
+        "demVotes": 3201522,
+        "repVotes": 4474847,
+        "totalVotes": 7758014,
+        "margin": 16.41,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 44.31,
+        "repPct": 51.98,
+        "demCandidate": "Patrick Murphy",
+        "repCandidate": "Marco Rubio",
+        "demVotes": 4122088,
+        "repVotes": 4835191,
+        "totalVotes": 9301820,
+        "margin": 7.67,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
@@ -294,76 +592,86 @@ export const senateData: RaceForecast[] = [
     "name": "Georgia",
     "state": "Georgia",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.65,
+    "margin": 3.5,
+    "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 60
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 62
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 64
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 65
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 65
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 65
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 65
       }
-    ]
-  },
-  {
-    "id": "IA",
-    "name": "Iowa",
-    "state": "Iowa",
-    "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
-    "history": [
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.8,
+    "kalshiRep": 0.2,
+    "candidates": {
+      "dem": {
+        "name": "Jon Ossoff",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "Mike Collins",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
       {
-        "date": "Sep",
-        "value": 45
+        "year": 2020,
+        "demPct": 50.61,
+        "repPct": 49.39,
+        "demCandidate": "Jon Ossoff",
+        "repCandidate": "David A. Perdue",
+        "demVotes": 2269923,
+        "repVotes": 2214979,
+        "totalVotes": 4484902,
+        "margin": -1.23,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       },
       {
-        "date": "Oct",
-        "value": 47
-      },
-      {
-        "date": "Nov",
-        "value": 49
-      },
-      {
-        "date": "Dec",
-        "value": 50
-      },
-      {
-        "date": "Jan",
-        "value": 50
-      },
-      {
-        "date": "Feb",
-        "value": 50
-      },
-      {
-        "date": "Mar",
-        "value": 50
+        "year": 2014,
+        "demPct": 45.21,
+        "repPct": 52.89,
+        "demCandidate": "Mary Michelle Nunn",
+        "repCandidate": "David A. Perdue",
+        "demVotes": 1160811,
+        "repVotes": 1358088,
+        "totalVotes": 2567805,
+        "margin": 7.68,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
       }
     ]
   },
@@ -372,37 +680,86 @@ export const senateData: RaceForecast[] = [
     "name": "Idaho",
     "state": "Idaho",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.07,
+    "margin": -24,
+    "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 7
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.07,
+    "kalshiRep": 0.93,
+    "candidates": {
+      "dem": {
+        "name": "Democratic Candidate",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Jim Risch",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 33.25,
+        "repPct": 62.62,
+        "demCandidate": "Paulette E. Jordan",
+        "repCandidate": "James E. Risch",
+        "demVotes": 285864,
+        "repVotes": 538446,
+        "totalVotes": 859827,
+        "margin": 29.38,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 34.67,
+        "repPct": 65.33,
+        "demCandidate": "Nels Mitchell",
+        "repCandidate": "James E. Risch",
+        "demVotes": 151574,
+        "repVotes": 285596,
+        "totalVotes": 437170,
+        "margin": 30.66,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
@@ -411,37 +768,174 @@ export const senateData: RaceForecast[] = [
     "name": "Illinois",
     "state": "Illinois",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.93,
+    "margin": 15,
+    "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 88
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 90
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 92
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 93
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 93
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 93
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 93
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.93,
+    "kalshiRep": 0.07,
+    "candidates": {
+      "dem": {
+        "name": "Juliana Stratton",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Don Tracy",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 54.93,
+        "repPct": 38.87,
+        "demCandidate": "Richard J. Durbin",
+        "repCandidate": "Mark C. Curran",
+        "demVotes": 3278930,
+        "repVotes": 2319870,
+        "totalVotes": 5968901,
+        "margin": -16.07,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 53.55,
+        "repPct": 42.69,
+        "demCandidate": "Richard J. Durbin",
+        "repCandidate": "James D. Oberweis",
+        "demVotes": 1929637,
+        "repVotes": 1538522,
+        "totalVotes": 3603519,
+        "margin": -10.85,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "id": "IA",
+    "name": "Iowa",
+    "state": "Iowa",
+    "raceType": "senate",
+    "probability": 0.3,
+    "margin": -2.5,
+    "rating": "Lean R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 25
+      },
+      {
+        "date": "Oct",
+        "value": 27
+      },
+      {
+        "date": "Nov",
+        "value": 29
+      },
+      {
+        "date": "Dec",
+        "value": 30
+      },
+      {
+        "date": "Jan",
+        "value": 30
+      },
+      {
+        "date": "Feb",
+        "value": 30
+      },
+      {
+        "date": "Mar",
+        "value": 30
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.41,
+    "kalshiRep": 0.59,
+    "candidates": {
+      "dem": {
+        "name": "Zach Wahls",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Ashley Hinson",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 45.15,
+        "repPct": 51.74,
+        "demCandidate": "Theresa Greenfield",
+        "repCandidate": "Joni K. Ernst",
+        "demVotes": 754859,
+        "repVotes": 864997,
+        "totalVotes": 1700130,
+        "margin": 6.59,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 43.76,
+        "repPct": 52.1,
+        "demCandidate": "Bruce L. Braley",
+        "repCandidate": "Joni K. Ernst",
+        "demVotes": 494370,
+        "repVotes": 588575,
+        "totalVotes": 1129700,
+        "margin": 8.34,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
       }
     ]
   },
@@ -450,37 +944,84 @@ export const senateData: RaceForecast[] = [
     "name": "Kansas",
     "state": "Kansas",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.15,
+    "margin": -10.5,
+    "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 10
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 12
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 14
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 15
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 15
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 15
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 15
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.23,
+    "kalshiRep": 0.77,
+    "candidates": {
+      "dem": {
+        "name": "Sharice Davids",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Roger Marshall",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 41.79,
+        "repPct": 53.22,
+        "demCandidate": "Barbara Goolsbee Bollier",
+        "repCandidate": "Roger Marshall",
+        "demVotes": 571530,
+        "repVotes": 727962,
+        "totalVotes": 1367755,
+        "margin": 11.44,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 0,
+        "repPct": 53.15,
+        "repCandidate": "Pat Roberts",
+        "repVotes": 460350,
+        "totalVotes": 866191,
+        "margin": 53.15,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
@@ -489,37 +1030,86 @@ export const senateData: RaceForecast[] = [
     "name": "Kentucky",
     "state": "Kentucky",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.07,
+    "margin": -13.5,
+    "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 7
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.07,
+    "kalshiRep": 0.93,
+    "candidates": {
+      "dem": {
+        "name": "Charles Booker",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Andy Barr",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 38.23,
+        "repPct": 57.76,
+        "demCandidate": "Amy McGrath",
+        "repCandidate": "Mitch McConnell",
+        "demVotes": 816257,
+        "repVotes": 1233315,
+        "totalVotes": 2135057,
+        "margin": 19.53,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 40.72,
+        "repPct": 56.19,
+        "demCandidate": "Alison Lundergan Grimes",
+        "repCandidate": "Mitch McConnell",
+        "demVotes": 584698,
+        "repVotes": 806787,
+        "totalVotes": 1435868,
+        "margin": 15.47,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
@@ -528,349 +1118,750 @@ export const senateData: RaceForecast[] = [
     "name": "Louisiana",
     "state": "Louisiana",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.09,
+    "margin": -20,
+    "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 4
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 6
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 8
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 9
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 9
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 9
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 9
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.09,
+    "kalshiRep": 0.91,
+    "candidates": {
+      "dem": {
+        "name": "Jamie Davis",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Bill Cassidy",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 19.02,
+        "repPct": 59.32,
+        "demCandidate": "Adrian Perkins",
+        "repCandidate": "Bill Cassidy",
+        "demVotes": 394049,
+        "repVotes": 1228908,
+        "totalVotes": 2071543,
+        "margin": 40.3,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 44.07,
+        "repPct": 55.93,
+        "demCandidate": "Mary L. Landrieu",
+        "repCandidate": "Bill Cassidy",
+        "demVotes": 561210,
+        "repVotes": 712379,
+        "totalVotes": 1273589,
+        "margin": 11.87,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "MA",
-    "name": "Massachusetts",
-    "state": "Massachusetts",
-    "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 45
-      },
-      {
-        "date": "Oct",
-        "value": 47
-      },
-      {
-        "date": "Nov",
-        "value": 49
-      },
-      {
-        "date": "Dec",
-        "value": 50
-      },
-      {
-        "date": "Jan",
-        "value": 50
-      },
-      {
-        "date": "Feb",
-        "value": 50
-      },
-      {
-        "date": "Mar",
-        "value": 50
-      }
-    ]
-  },
-  {
-    "id": "ME",
+    "id": "ME-2",
     "name": "Maine",
     "state": "Maine",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.6,
+    "margin": 3.5,
+    "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 55
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 57
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 59
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 60
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 60
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 60
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 60
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.3,
+    "candidates": {
+      "dem": {
+        "name": "Grahama Platner",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Susan Collins",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 42.39,
+        "repPct": 50.98,
+        "demCandidate": "Sara I. Gideon",
+        "repCandidate": "Susan M. Collins",
+        "demVotes": 347223,
+        "repVotes": 417645,
+        "totalVotes": 828305,
+        "margin": 8.6,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 31.5,
+        "repPct": 68.46,
+        "demCandidate": "Shenna Bellows",
+        "repCandidate": "Susan M. Collins",
+        "demVotes": 190254,
+        "repVotes": 413505,
+        "totalVotes": 616996,
+        "margin": 36.96,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
   {
-    "id": "MI",
+    "id": "MA-2",
+    "name": "Massachusetts",
+    "state": "Massachusetts",
+    "raceType": "senate",
+    "probability": 0.95,
+    "margin": 28,
+    "rating": "Safe D",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 90
+      },
+      {
+        "date": "Oct",
+        "value": 92
+      },
+      {
+        "date": "Nov",
+        "value": 94
+      },
+      {
+        "date": "Dec",
+        "value": 95
+      },
+      {
+        "date": "Jan",
+        "value": 95
+      },
+      {
+        "date": "Feb",
+        "value": 95
+      },
+      {
+        "date": "Mar",
+        "value": 95
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.95,
+    "kalshiRep": 0.05,
+    "candidates": {
+      "dem": {
+        "name": "Ed Markey",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "John Deaton",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 66.15,
+        "repPct": 33.04,
+        "demCandidate": "Edward J. Markey",
+        "repCandidate": "Kevin J. O'Connor",
+        "demVotes": 2357809,
+        "repVotes": 1177765,
+        "totalVotes": 3658005,
+        "margin": -33.11,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 61.87,
+        "repPct": 37.98,
+        "demCandidate": "Edward J. Markey",
+        "repCandidate": "Brian J. Herr",
+        "demVotes": 1289944,
+        "repVotes": 791950,
+        "totalVotes": 2186789,
+        "margin": -23.88,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "id": "MI-2",
     "name": "Michigan",
     "state": "Michigan",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.79,
+    "margin": 1.2,
+    "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 74
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 76
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 78
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 79
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 79
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 79
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 79
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.79,
+    "kalshiRep": 0.21,
+    "candidates": {
+      "dem": {
+        "name": "Mallory McMorrow",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Mike Rogers",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 49.9,
+        "repPct": 48.22,
+        "demCandidate": "Gary C. Peters",
+        "repCandidate": "John James",
+        "demVotes": 2734568,
+        "repVotes": 2642233,
+        "totalVotes": 5479720,
+        "margin": -1.69,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 54.61,
+        "repPct": 41.33,
+        "demCandidate": "Gary C. Peters",
+        "repCandidate": "Terri Lynn Land",
+        "demVotes": 1704936,
+        "repVotes": 1290199,
+        "totalVotes": 3121771,
+        "margin": -13.29,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "MN",
+    "id": "MN-2",
     "name": "Minnesota",
     "state": "Minnesota",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.9,
+    "margin": 9.5,
+    "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 85
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 87
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 89
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 90
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 90
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 90
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 90
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.9,
+    "kalshiRep": 0.1,
+    "candidates": {
+      "dem": {
+        "name": "Peggy Flanagan",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Michele Tafoya",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 48.74,
+        "repPct": 43.5,
+        "demCandidate": "Tina Smith",
+        "repCandidate": "Jason Lewis",
+        "demVotes": 1566522,
+        "repVotes": 1398145,
+        "totalVotes": 3214256,
+        "margin": -5.24,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 52.97,
+        "repPct": 42.35,
+        "demCandidate": "Tina Smith",
+        "repCandidate": "Karin Housley",
+        "demVotes": 1370540,
+        "repVotes": 1095777,
+        "totalVotes": 2587356,
+        "margin": -10.62,
+        "seat": 2,
+        "seatClass": 2,
+        "electionType": "Special",
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 53.15,
+        "repPct": 42.91,
+        "demCandidate": "Al Franken",
+        "repCandidate": "Mike McFadden",
+        "demVotes": 1053205,
+        "repVotes": 850227,
+        "totalVotes": 1981528,
+        "margin": -10.24,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "MS",
+    "id": "MS-2",
     "name": "Mississippi",
     "state": "Mississippi",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.06,
+    "margin": -13,
+    "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 6
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.06,
+    "kalshiRep": 0.94,
+    "candidates": {
+      "dem": {
+        "name": "Scott Colom",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Cindy Hyde-Smith",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 44.13,
+        "repPct": 54.11,
+        "demCandidate": "Mike Espy",
+        "repCandidate": "Cindy Hyde-Smith",
+        "demVotes": 578691,
+        "repVotes": 709511,
+        "totalVotes": 1311354,
+        "margin": 9.98,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 46.37,
+        "repPct": 53.63,
+        "demCandidate": "Mike Espy",
+        "repCandidate": "Cindy Hyde-Smith",
+        "demVotes": 420819,
+        "repVotes": 486769,
+        "totalVotes": 907588,
+        "margin": 7.27,
+        "seat": 2,
+        "seatClass": 2,
+        "electionType": "Special",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 37.89,
+        "repPct": 59.9,
+        "demCandidate": "Travis W. Childers",
+        "repCandidate": "Thad Cochran",
+        "demVotes": 239439,
+        "repVotes": 378481,
+        "totalVotes": 631858,
+        "margin": 22.01,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
   {
-    "id": "MT",
+    "id": "MT-2",
     "name": "Montana",
     "state": "Montana",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.21,
+    "margin": -12,
+    "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 16
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 18
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 20
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 21
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 21
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 21
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 21
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.21,
+    "kalshiRep": 0.79,
+    "candidates": {
+      "dem": {
+        "name": "Reilly Neill",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Kurt Alme",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 44.99,
+        "repPct": 55.01,
+        "demCandidate": "Steve Bullock",
+        "repCandidate": "Steve Daines",
+        "demVotes": 272463,
+        "repVotes": 333174,
+        "totalVotes": 605637,
+        "margin": 10.02,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 40.07,
+        "repPct": 57.79,
+        "demCandidate": "Amanda G. Curtis",
+        "repCandidate": "Steve Daines",
+        "demVotes": 148184,
+        "repVotes": 213709,
+        "totalVotes": 369826,
+        "margin": 17.72,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "NC",
-    "name": "North Carolina",
-    "state": "North Carolina",
-    "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 45
-      },
-      {
-        "date": "Oct",
-        "value": 47
-      },
-      {
-        "date": "Nov",
-        "value": 49
-      },
-      {
-        "date": "Dec",
-        "value": 50
-      },
-      {
-        "date": "Jan",
-        "value": 50
-      },
-      {
-        "date": "Feb",
-        "value": 50
-      },
-      {
-        "date": "Mar",
-        "value": 50
-      }
-    ]
-  },
-  {
-    "id": "NE",
+    "id": "NE-2",
     "name": "Nebraska",
     "state": "Nebraska",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.27,
+    "margin": -7,
+    "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 22
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 24
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 26
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 27
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 27
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 27
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 27
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.27,
+    "kalshiRep": 0.73,
+    "candidates": {
+      "dem": {
+        "name": "Dan Osborne (I)",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Pete Ricketts",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 37.42,
+        "repPct": 62.58,
+        "demCandidate": "Preston Love Jr.",
+        "repCandidate": "Pete Ricketts",
+        "demVotes": 349902,
+        "repVotes": 585103,
+        "totalVotes": 935005,
+        "margin": 25.16,
+        "seat": 2,
+        "seatClass": 2,
+        "electionType": "Special",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2020,
+        "demPct": 24.43,
+        "repPct": 62.74,
+        "demCandidate": "Chris E. Janicek",
+        "repCandidate": "Ben Sasse",
+        "demVotes": 227191,
+        "repVotes": 583507,
+        "totalVotes": 930012,
+        "margin": 38.31,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 31.49,
+        "repPct": 64.34,
+        "demCandidate": "Dave Domina",
+        "repCandidate": "Ben Sasse",
+        "demVotes": 170127,
+        "repVotes": 347636,
+        "totalVotes": 540337,
+        "margin": 32.85,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
       }
     ]
   },
@@ -879,154 +1870,438 @@ export const senateData: RaceForecast[] = [
     "name": "New Hampshire",
     "state": "New Hampshire",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.85,
+    "margin": 4.5,
+    "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 80
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 82
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 84
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 85
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 85
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 85
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 85
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.85,
+    "kalshiRep": 0.15,
+    "candidates": {
+      "dem": {
+        "name": "Chris Pappas",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "John Sununu",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 56.64,
+        "repPct": 40.99,
+        "demCandidate": "Jeanne Shaheen",
+        "repCandidate": "Bryant Messner",
+        "demVotes": 450778,
+        "repVotes": 326229,
+        "totalVotes": 795914,
+        "margin": -15.65,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 51.46,
+        "repPct": 48.21,
+        "demCandidate": "Jeanne Shaheen",
+        "repCandidate": "Scott Brown",
+        "demVotes": 251184,
+        "repVotes": 235347,
+        "totalVotes": 488159,
+        "margin": -3.24,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "NJ",
+    "id": "NJ-2",
     "name": "New Jersey",
     "state": "New Jersey",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.96,
+    "margin": 14,
+    "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 96
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.96,
+    "kalshiRep": 0.04,
+    "candidates": {
+      "dem": {
+        "name": "Cory Booker",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "Republican Candidate",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 57.23,
+        "repPct": 40.92,
+        "demCandidate": "Cory A. Booker",
+        "repCandidate": "Rikin Mehta",
+        "demVotes": 2541178,
+        "repVotes": 1817052,
+        "totalVotes": 4440440,
+        "margin": -16.31,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 55.84,
+        "repPct": 42.33,
+        "demCandidate": "Cory A. Booker",
+        "repCandidate": "Jeff Bell",
+        "demVotes": 1043866,
+        "repVotes": 791297,
+        "totalVotes": 1869535,
+        "margin": -13.51,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "NM",
+    "id": "NM-2",
     "name": "New Mexico",
     "state": "New Mexico",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.97,
+    "margin": 48,
+    "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 92
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 94
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 96
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 97
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 97
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 97
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 97
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.97,
+    "kalshiRep": 0.03,
+    "candidates": {
+      "dem": {
+        "name": "Ben Ray Lujan",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "Republican Candidate",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 51.73,
+        "repPct": 45.62,
+        "demCandidate": "Ben Ray Luján",
+        "repCandidate": "Mark V. Ronchetti",
+        "demVotes": 474483,
+        "repVotes": 418483,
+        "totalVotes": 917237,
+        "margin": -6.11,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 55.56,
+        "repPct": 44.44,
+        "demCandidate": "Tom Udall",
+        "repCandidate": "Allen E. Weh",
+        "demVotes": 286409,
+        "repVotes": 229097,
+        "totalVotes": 515506,
+        "margin": -11.12,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "OH",
-    "name": "Ohio",
-    "state": "Ohio",
+    "id": "NC",
+    "name": "North Carolina",
+    "state": "North Carolina",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.52,
+    "margin": 5.5,
+    "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
-      },
-      {
-        "date": "Oct",
         "value": 47
       },
       {
-        "date": "Nov",
+        "date": "Oct",
         "value": 49
       },
       {
+        "date": "Nov",
+        "value": 51
+      },
+      {
         "date": "Dec",
-        "value": 50
+        "value": 52
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 52
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 52
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 52
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.52,
+    "kalshiRep": 0.48,
+    "candidates": {
+      "dem": {
+        "name": "Roy Cooper",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Michael Whatley",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 46.94,
+        "repPct": 48.69,
+        "demCandidate": "Cal Cunningham",
+        "repCandidate": "Thomas Roland Tillis",
+        "demVotes": 2569965,
+        "repVotes": 2665598,
+        "totalVotes": 5474952,
+        "margin": 1.75,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 47.26,
+        "repPct": 48.82,
+        "demCandidate": "Kay R. Hagan",
+        "repCandidate": "Thomas Roland Tillis",
+        "demVotes": 1377651,
+        "repVotes": 1423259,
+        "totalVotes": 2915281,
+        "margin": 1.56,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "id": "OH-2",
+    "name": "Ohio",
+    "state": "Ohio",
+    "raceType": "senate",
+    "probability": 0.48,
+    "margin": -1.5,
+    "rating": "Lean R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 43
+      },
+      {
+        "date": "Oct",
+        "value": 45
+      },
+      {
+        "date": "Nov",
+        "value": 47
+      },
+      {
+        "date": "Dec",
+        "value": 48
+      },
+      {
+        "date": "Jan",
+        "value": 48
+      },
+      {
+        "date": "Feb",
+        "value": 48
+      },
+      {
+        "date": "Mar",
+        "value": 48
+      }
+    ],
+    "seat": 2,
+    "seatClass": 3,
+    "electionType": "Special",
+    "kalshiDem": 0.52,
+    "kalshiRep": 0.48,
+    "candidates": {
+      "dem": {
+        "name": "Sherrod Brown",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Jon Husted",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 46.92,
+        "repPct": 53.03,
+        "demCandidate": "Tim Ryan",
+        "repCandidate": "JD Vance",
+        "demVotes": 1939489,
+        "repVotes": 2192114,
+        "totalVotes": 4133342,
+        "margin": 6.11,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 37.16,
+        "repPct": 58.03,
+        "demCandidate": "Ted Strickland",
+        "repCandidate": "Rob Portman",
+        "demVotes": 1996913,
+        "repVotes": 3118568,
+        "totalVotes": 5374170,
+        "margin": 20.87,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
@@ -1035,37 +2310,86 @@ export const senateData: RaceForecast[] = [
     "name": "Oklahoma",
     "state": "Oklahoma",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.04,
+    "margin": -25,
+    "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 4
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.04,
+    "kalshiRep": 0.96,
+    "candidates": {
+      "dem": {
+        "name": "Democratic Candidate",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Kevin Hern",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 32.75,
+        "repPct": 62.91,
+        "demCandidate": "Abby Broyles",
+        "repCandidate": "James M. Inhofe",
+        "demVotes": 509763,
+        "repVotes": 979140,
+        "totalVotes": 1556361,
+        "margin": 30.16,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 28.55,
+        "repPct": 68.01,
+        "demCandidate": "Matt Silverstein",
+        "repCandidate": "James M. Inhofe",
+        "demVotes": 234307,
+        "repVotes": 558166,
+        "totalVotes": 820733,
+        "margin": 39.46,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
@@ -1074,76 +2398,174 @@ export const senateData: RaceForecast[] = [
     "name": "Oregon",
     "state": "Oregon",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.95,
+    "margin": 17,
+    "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 90
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 92
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 94
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 95
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 95
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 95
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 95
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.95,
+    "kalshiRep": 0.05,
+    "candidates": {
+      "dem": {
+        "name": "Jeff Merkley",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "Republican Candidate",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 56.91,
+        "repPct": 39.32,
+        "demCandidate": "Jeff Merkley",
+        "repCandidate": "Jo Rae Perkins",
+        "demVotes": 1321047,
+        "repVotes": 912814,
+        "totalVotes": 2321249,
+        "margin": -17.59,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 55.73,
+        "repPct": 36.87,
+        "demCandidate": "Jeff Merkley",
+        "repCandidate": "Monica Wehby",
+        "demVotes": 814537,
+        "repVotes": 538847,
+        "totalVotes": 1461618,
+        "margin": -18.86,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "RI",
+    "id": "RI-2",
     "name": "Rhode Island",
     "state": "Rhode Island",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.96,
+    "margin": 38,
+    "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 96
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.96,
+    "kalshiRep": 0.04,
+    "candidates": {
+      "dem": {
+        "name": "Jack Reed",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "Raymond McKay",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 66.48,
+        "repPct": 33.35,
+        "demCandidate": "Jack Reed",
+        "repCandidate": "Allen R. Waters",
+        "demVotes": 328574,
+        "repVotes": 164855,
+        "totalVotes": 494262,
+        "margin": -33.12,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 70.58,
+        "repPct": 29.25,
+        "demCandidate": "Jack Reed",
+        "repCandidate": "Mark S. Zaccaria",
+        "demVotes": 223675,
+        "repVotes": 92684,
+        "totalVotes": 316898,
+        "margin": -41.34,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
@@ -1152,37 +2574,86 @@ export const senateData: RaceForecast[] = [
     "name": "South Carolina",
     "state": "South Carolina",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.14,
+    "margin": -8.5,
+    "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 9
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 11
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 13
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 14
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 14
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 14
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 14
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.14,
+    "kalshiRep": 0.86,
+    "candidates": {
+      "dem": {
+        "name": "Annie Andrews",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Lindsey Graham",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 44.17,
+        "repPct": 54.44,
+        "demCandidate": "Jaime Harrison",
+        "repCandidate": "Lindsey Graham",
+        "demVotes": 1110828,
+        "repVotes": 1369137,
+        "totalVotes": 2515104,
+        "margin": 10.27,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 38.78,
+        "repPct": 54.27,
+        "demCandidate": "Charles Bradley Hutto",
+        "repCandidate": "Lindsey Graham",
+        "demVotes": 480933,
+        "repVotes": 672941,
+        "totalVotes": 1240075,
+        "margin": 15.48,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
@@ -1191,232 +2662,526 @@ export const senateData: RaceForecast[] = [
     "name": "South Dakota",
     "state": "South Dakota",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.06,
+    "margin": -27.5,
+    "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 6
+      }
+    ],
+    "seat": 1,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.06,
+    "kalshiRep": 0.94,
+    "candidates": {
+      "dem": {
+        "name": "Julian Beaudion",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Mike Rounds",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 34.26,
+        "repPct": 65.74,
+        "demCandidate": "Daniel P. Ahlers",
+        "repCandidate": "M. Michael Rounds",
+        "demVotes": 143987,
+        "repVotes": 276232,
+        "totalVotes": 420219,
+        "margin": 31.47,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 29.51,
+        "repPct": 50.37,
+        "demCandidate": "Richard P. Weiland",
+        "repCandidate": "M. Michael Rounds",
+        "demVotes": 82456,
+        "repVotes": 140741,
+        "totalVotes": 279412,
+        "margin": 20.86,
+        "seat": 1,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "TN",
+    "id": "TN-2",
     "name": "Tennessee",
     "state": "Tennessee",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.07,
+    "margin": -26.5,
+    "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 7
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.07,
+    "kalshiRep": 0.93,
+    "candidates": {
+      "dem": {
+        "name": "Democratic Candidate",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Bill Hagerty",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 35.16,
+        "repPct": 62.2,
+        "demCandidate": "Marquita Bradshaw",
+        "repCandidate": "Bill Hagerty",
+        "demVotes": 1040691,
+        "repVotes": 1840926,
+        "totalVotes": 2959761,
+        "margin": 27.04,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 31.87,
+        "repPct": 61.87,
+        "demCandidate": "William Gordon Ball",
+        "repCandidate": "Lamar Alexander",
+        "demVotes": 437848,
+        "repVotes": 850087,
+        "totalVotes": 1374065,
+        "margin": 30,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
   {
-    "id": "TX",
+    "id": "TX-2",
     "name": "Texas",
     "state": "Texas",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.43,
+    "margin": -4.5,
+    "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 38
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 40
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 42
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 43
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 43
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 43
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 43
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.43,
+    "kalshiRep": 0.57,
+    "candidates": {
+      "dem": {
+        "name": "Democratic Candidate",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "James Talarico",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 43.87,
+        "repPct": 53.51,
+        "demCandidate": "Mary Jennings Hegar",
+        "repCandidate": "John Cornyn",
+        "demVotes": 4888764,
+        "repVotes": 5962983,
+        "totalVotes": 11144040,
+        "margin": 9.64,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 34.36,
+        "repPct": 61.56,
+        "demCandidate": "David M. Alameel",
+        "repCandidate": "John Cornyn",
+        "demVotes": 1597387,
+        "repVotes": 2861531,
+        "totalVotes": 4648358,
+        "margin": 27.2,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   },
   {
-    "id": "VA",
+    "id": "VA-2",
     "name": "Virginia",
     "state": "Virginia",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.96,
+    "margin": 14,
+    "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 96
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.96,
+    "kalshiRep": 0.04,
+    "candidates": {
+      "dem": {
+        "name": "Mark Warner",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "Republican Candidate",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 55.99,
+        "repPct": 43.91,
+        "demCandidate": "Mark R. Warner",
+        "repCandidate": "Daniel M. Gade",
+        "demVotes": 2466500,
+        "repVotes": 1934199,
+        "totalVotes": 4405087,
+        "margin": -12.08,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 49.15,
+        "repPct": 48.34,
+        "demCandidate": "Mark R. Warner",
+        "repCandidate": "Ed W. Gillespie",
+        "demVotes": 1073667,
+        "repVotes": 1055940,
+        "totalVotes": 2184473,
+        "margin": -0.81,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": true,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "WV",
+    "id": "WV-2",
     "name": "West Virginia",
     "state": "West Virginia",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.93,
+    "margin": -36.5,
+    "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 88
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 90
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 92
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 93
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 93
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 93
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 93
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.93,
+    "kalshiRep": 0.07,
+    "candidates": {
+      "dem": {
+        "name": "Jeff Kessler",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Shelley Moore Capito",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 27,
+        "repPct": 70.28,
+        "demCandidate": "Paula Jean Swearengin",
+        "repCandidate": "Shelley Moore Capito",
+        "demVotes": 210309,
+        "repVotes": 547454,
+        "totalVotes": 778918,
+        "margin": 43.28,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 34.46,
+        "repPct": 62.12,
+        "demCandidate": "Natalie E. Tennant",
+        "repCandidate": "Shelley Moore Capito",
+        "demVotes": 156360,
+        "repVotes": 281820,
+        "totalVotes": 453689,
+        "margin": 27.65,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
       }
     ]
   },
   {
-    "id": "WY",
+    "id": "WY-2",
     "name": "Wyoming",
     "state": "Wyoming",
     "raceType": "senate",
-    "probability": 0.5,
-    "margin": 0,
-    "rating": "Tilt D",
+    "probability": 0.03,
+    "margin": -45.5,
+    "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 45
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 47
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 49
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 50
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 50
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 50
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 50
+        "value": 3
+      }
+    ],
+    "seat": 2,
+    "seatClass": 2,
+    "electionType": "Regular",
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.97,
+    "candidates": {
+      "dem": {
+        "name": "James Byrd",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Harriet Hageman",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "pastResults": [
+      {
+        "year": 2020,
+        "demPct": 26.76,
+        "repPct": 72.85,
+        "demCandidate": "Merav Ben-David",
+        "repCandidate": "Cynthia M. Lummis",
+        "demVotes": 72766,
+        "repVotes": 198100,
+        "totalVotes": 278503,
+        "margin": 46.09,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 17.45,
+        "repPct": 72.19,
+        "demCandidate": "Charlie Hardy",
+        "repCandidate": "Michael B. Enzi",
+        "demVotes": 29377,
+        "repVotes": 121554,
+        "totalVotes": 171153,
+        "margin": 54.74,
+        "seat": 2,
+        "seatClass": 2,
+        "demIncumbent": false,
+        "repIncumbent": true
       }
     ]
   }
@@ -1426,521 +3191,3182 @@ export const senateNoElection: NoElectionEntry[] = [
   {
     "state": "Arizona",
     "abbr": "AZ",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Ruben Gallego",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 50.06,
+        "repPct": 47.65,
+        "demCandidate": "Ruben Gallego",
+        "repCandidate": "Kari Lake",
+        "demVotes": 1676335,
+        "repVotes": 1595761,
+        "totalVotes": 3348814,
+        "margin": -2.41,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 49.96,
+        "repPct": 47.61,
+        "demCandidate": "Kyrsten Sinema",
+        "repCandidate": "Martha McSally",
+        "demVotes": 1191100,
+        "repVotes": 1135200,
+        "totalVotes": 2384308,
+        "margin": -2.34,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 46.2,
+        "repPct": 49.23,
+        "demCandidate": "Richard Carmona",
+        "repCandidate": "Jeff Flake",
+        "demVotes": 1036542,
+        "repVotes": 1104457,
+        "totalVotes": 2243422,
+        "margin": 3.03,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "California",
     "abbr": "CA",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Adam Schiff",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 58.87,
+        "repPct": 41.13,
+        "demCandidate": "Adam B. Schiff",
+        "repCandidate": "Steve Garvey",
+        "demVotes": 9036252,
+        "repVotes": 6312594,
+        "totalVotes": 15348846,
+        "margin": -17.75,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 54.16,
+        "repPct": 0,
+        "demCandidate": "Dianne Feinstein",
+        "demVotes": 6019422,
+        "totalVotes": 11113364,
+        "margin": -54.16,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 62.52,
+        "repPct": 37.48,
+        "demCandidate": "Dianne Feinstein",
+        "repCandidate": "Elizabeth Emken",
+        "demVotes": 7864624,
+        "repVotes": 4713887,
+        "totalVotes": 12578511,
+        "margin": -25.05,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Connecticut",
     "abbr": "CT",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Chris Murphy",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 58.58,
+        "repPct": 39.7,
+        "demCandidate": "Christopher S. Murphy",
+        "repCandidate": "Matthew M. Corey",
+        "demVotes": 1000695,
+        "repVotes": 678256,
+        "totalVotes": 1708259,
+        "margin": -18.88,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 59.53,
+        "repPct": 39.35,
+        "demCandidate": "Christopher S. Murphy",
+        "repCandidate": "Matthew M. Corey",
+        "demVotes": 825579,
+        "repVotes": 545717,
+        "totalVotes": 1386840,
+        "margin": -20.18,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 54.82,
+        "repPct": 43.07,
+        "demCandidate": "Christopher S. Murphy",
+        "repCandidate": "Linda McMahon",
+        "demVotes": 828761,
+        "repVotes": 651089,
+        "totalVotes": 1511764,
+        "margin": -11.75,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Delaware",
+    "abbr": "DE",
+    "incumbent": "Lisa Blunt Rochester",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 56.59,
+        "repPct": 39.5,
+        "demCandidate": "Lisa Blunt Rochester",
+        "repCandidate": "Eric Hansen",
+        "demVotes": 283298,
+        "repVotes": 197753,
+        "totalVotes": 500606,
+        "margin": -17.09,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 59.95,
+        "repPct": 37.82,
+        "demCandidate": "Thomas R. Carper",
+        "repCandidate": "Rob Arlett",
+        "demVotes": 217385,
+        "repVotes": 137127,
+        "totalVotes": 362606,
+        "margin": -22.13,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 66.42,
+        "repPct": 28.95,
+        "demCandidate": "Thomas R. Carper",
+        "repCandidate": "Kevin Wade",
+        "demVotes": 265415,
+        "repVotes": 115700,
+        "totalVotes": 399606,
+        "margin": -37.47,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Florida",
+    "abbr": "FL",
+    "incumbent": "Rick Scott",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 42.79,
+        "repPct": 55.57,
+        "demCandidate": "Debbie Mucarsel-Powell",
+        "repCandidate": "Rick Scott",
+        "demVotes": 4603077,
+        "repVotes": 5977706,
+        "totalVotes": 10757428,
+        "margin": 12.78,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 49.93,
+        "repPct": 50.05,
+        "demCandidate": "Bill Nelson",
+        "repCandidate": "Rick Scott",
+        "demVotes": 4089472,
+        "repVotes": 4099505,
+        "totalVotes": 8190005,
+        "margin": 0.12,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 55.23,
+        "repPct": 42.23,
+        "demCandidate": "Bill Nelson",
+        "repCandidate": "Connie Mack",
+        "demVotes": 4523451,
+        "repVotes": 3458267,
+        "totalVotes": 8189946,
+        "margin": -13.01,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Hawaii",
     "abbr": "HI",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Mazie Hirono",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 64.61,
+        "repPct": 31.9,
+        "demCandidate": "Mazie K. Hirono",
+        "repCandidate": "Bob McDermott",
+        "demVotes": 324194,
+        "repVotes": 160075,
+        "totalVotes": 522236,
+        "margin": -32.71,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 71.15,
+        "repPct": 28.85,
+        "demCandidate": "Mazie K. Hirono",
+        "repCandidate": "Ronald C. Curtis",
+        "demVotes": 276316,
+        "repVotes": 112035,
+        "totalVotes": 398657,
+        "margin": -42.3,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 62.6,
+        "repPct": 37.4,
+        "demCandidate": "Mazie K. Hirono",
+        "repCandidate": "Linda Lingle",
+        "demVotes": 269489,
+        "repVotes": 160994,
+        "totalVotes": 437159,
+        "margin": -25.2,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Indiana",
     "abbr": "IN",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Jim Banks",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 38.77,
+        "repPct": 58.64,
+        "demCandidate": "Valerie McCray",
+        "repCandidate": "Jim Banks",
+        "demVotes": 1097061,
+        "repVotes": 1659416,
+        "totalVotes": 2829897,
+        "margin": 19.87,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 44.84,
+        "repPct": 50.73,
+        "demCandidate": "Joe Donnelly",
+        "repCandidate": "Mike Braun",
+        "demVotes": 1023553,
+        "repVotes": 1158000,
+        "totalVotes": 2282565,
+        "margin": 5.89,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 50.04,
+        "repPct": 44.28,
+        "demCandidate": "Joe Donnelly",
+        "repCandidate": "Richard Mourdock",
+        "demVotes": 1281181,
+        "repVotes": 1133621,
+        "totalVotes": 2560102,
+        "margin": -5.76,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Maine",
+    "abbr": "ME",
+    "incumbent": "Angus King",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 52.06,
+        "repPct": 34.64,
+        "demCandidate": "Angus King (I)",
+        "repCandidate": "Demi Kouzounas",
+        "demVotes": 427331,
+        "repVotes": 284338,
+        "totalVotes": 842447,
+        "margin": -17.42,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 53.41,
+        "repPct": 35.23,
+        "demCandidate": "Angus King (I)",
+        "repCandidate": "Eric L. Brakey",
+        "demVotes": 344575,
+        "repVotes": 223502,
+        "totalVotes": 646064,
+        "margin": -18.18,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 13.26,
+        "repPct": 30.74,
+        "demCandidate": "Cynthia Dill",
+        "repCandidate": "Charlie Summers",
+        "demVotes": 92900,
+        "repVotes": 215399,
+        "totalVotes": 724720,
+        "margin": 17.48,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Maryland",
     "abbr": "MD",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Angela Alsobrooks",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 54.64,
+        "repPct": 42.84,
+        "demCandidate": "Angela Alsobrooks",
+        "repCandidate": "Larry Hogan",
+        "demVotes": 1650912,
+        "repVotes": 1294344,
+        "totalVotes": 3021378,
+        "margin": -11.8,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 64.86,
+        "repPct": 30.31,
+        "demCandidate": "Benjamin L. Cardin",
+        "repCandidate": "Tony Campbell",
+        "demVotes": 1491614,
+        "repVotes": 697017,
+        "totalVotes": 2299889,
+        "margin": -34.55,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 55.98,
+        "repPct": 26.33,
+        "demCandidate": "Benjamin L. Cardin",
+        "repCandidate": "Daniel J. Bongino",
+        "demVotes": 1474028,
+        "repVotes": 693291,
+        "totalVotes": 2633234,
+        "margin": -29.65,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Massachusetts",
+    "abbr": "MA",
+    "incumbent": "Elizabeth Warren",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 59.81,
+        "repPct": 40,
+        "demCandidate": "Elizabeth Ann Warren",
+        "repCandidate": "John Deaton",
+        "demVotes": 2041693,
+        "repVotes": 1365445,
+        "totalVotes": 3512866,
+        "margin": -19.81,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 60.34,
+        "repPct": 36.17,
+        "demCandidate": "Elizabeth Ann Warren",
+        "repCandidate": "Geoff Diehl",
+        "demVotes": 1633371,
+        "repVotes": 979210,
+        "totalVotes": 2752665,
+        "margin": -24.16,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 53.27,
+        "repPct": 45.79,
+        "demCandidate": "Elizabeth Ann Warren",
+        "repCandidate": "Scott Brown",
+        "demVotes": 1696346,
+        "repVotes": 1458048,
+        "totalVotes": 3184196,
+        "margin": -7.48,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "state": "Michigan",
+    "abbr": "MI",
+    "incumbent": "Elissa Slotkin",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 48.64,
+        "repPct": 48.3,
+        "demCandidate": "Elissa Slotkin",
+        "repCandidate": "Mike Rogers",
+        "demVotes": 2712686,
+        "repVotes": 2693680,
+        "totalVotes": 5577187,
+        "margin": -0.34,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 52.26,
+        "repPct": 45.76,
+        "demCandidate": "Debbie Stabenow",
+        "repCandidate": "John James",
+        "demVotes": 2214478,
+        "repVotes": 1938818,
+        "totalVotes": 4237271,
+        "margin": -6.51,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 58.8,
+        "repPct": 37.98,
+        "demCandidate": "Debbie Stabenow",
+        "repCandidate": "Pete Hoekstra",
+        "demVotes": 2735826,
+        "repVotes": 1767386,
+        "totalVotes": 4652918,
+        "margin": -20.81,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Minnesota",
+    "abbr": "MN",
+    "incumbent": "Amy Klobuchar",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 56.2,
+        "repPct": 40.5,
+        "demCandidate": "Amy Klobuchar",
+        "repCandidate": "Royce White",
+        "demVotes": 1792441,
+        "repVotes": 1291712,
+        "totalVotes": 3189323,
+        "margin": -15.7,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 60.31,
+        "repPct": 36.21,
+        "demCandidate": "Amy Klobuchar",
+        "repCandidate": "Jim Newberger",
+        "demVotes": 1566174,
+        "repVotes": 940437,
+        "totalVotes": 2596879,
+        "margin": -24.1,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 65.23,
+        "repPct": 30.53,
+        "demCandidate": "Amy Klobuchar",
+        "repCandidate": "Kurt Patrick Bills",
+        "demVotes": 1854595,
+        "repVotes": 867974,
+        "totalVotes": 2843207,
+        "margin": -34.7,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Mississippi",
+    "abbr": "MS",
+    "incumbent": "Roger Wicker",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 37.19,
+        "repPct": 62.81,
+        "demCandidate": "Ty Pinkins",
+        "repCandidate": "Roger F. Wicker",
+        "demVotes": 451981,
+        "repVotes": 763420,
+        "totalVotes": 1215401,
+        "margin": 25.62,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 39.47,
+        "repPct": 58.49,
+        "demCandidate": "David Baria",
+        "repCandidate": "Roger F. Wicker",
+        "demVotes": 369567,
+        "repVotes": 547619,
+        "totalVotes": 936215,
+        "margin": 19.02,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2012,
+        "demPct": 40.55,
+        "repPct": 57.16,
+        "demCandidate": "Albert N. Gore",
+        "repCandidate": "Roger F. Wicker",
+        "demVotes": 503467,
+        "repVotes": 709626,
+        "totalVotes": 1241568,
+        "margin": 16.6,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Missouri",
     "abbr": "MO",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Josh Hawley",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 41.84,
+        "repPct": 55.57,
+        "demCandidate": "Lucas Kunce",
+        "repCandidate": "Josh Hawley",
+        "demVotes": 1243728,
+        "repVotes": 1651907,
+        "totalVotes": 2972559,
+        "margin": 13.73,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 45.57,
+        "repPct": 51.38,
+        "demCandidate": "Claire McCaskill",
+        "repCandidate": "Josh Hawley",
+        "demVotes": 1112935,
+        "repVotes": 1254927,
+        "totalVotes": 2442289,
+        "margin": 5.81,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 54.81,
+        "repPct": 39.11,
+        "demCandidate": "Claire McCaskill",
+        "repCandidate": "Todd Akin",
+        "demVotes": 1494125,
+        "repVotes": 1066159,
+        "totalVotes": 2725793,
+        "margin": -15.7,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
-    "state": "North Dakota",
-    "abbr": "ND",
-    "incumbent": "Incumbent TBD",
+    "state": "Montana",
+    "abbr": "MT",
+    "incumbent": "Tim Sheehy",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 45.5,
+        "repPct": 52.64,
+        "demCandidate": "Jon Tester",
+        "repCandidate": "Tim Sheehy",
+        "demVotes": 276305,
+        "repVotes": 319682,
+        "totalVotes": 607262,
+        "margin": 7.14,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 50.33,
+        "repPct": 46.78,
+        "demCandidate": "Jon Tester",
+        "repCandidate": "Matt Rosendale",
+        "demVotes": 253876,
+        "repVotes": 235963,
+        "totalVotes": 504384,
+        "margin": -3.55,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 48.58,
+        "repPct": 44.86,
+        "demCandidate": "Jon Tester",
+        "repCandidate": "Denny Rehberg",
+        "demVotes": 236123,
+        "repVotes": 218051,
+        "totalVotes": 486066,
+        "margin": -3.72,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Nebraska",
+    "abbr": "NE",
+    "incumbent": "Deb Fischer",
+    "party": "R",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 46.52,
+        "repPct": 53.19,
+        "demCandidate": "Dan Osborn (I)",
+        "repCandidate": "Deb Fischer",
+        "demVotes": 436493,
+        "repVotes": 499124,
+        "totalVotes": 938336,
+        "margin": 6.67,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 38.62,
+        "repPct": 57.69,
+        "demCandidate": "Jane Raybould",
+        "repCandidate": "Deb Fischer",
+        "demVotes": 269917,
+        "repVotes": 403151,
+        "totalVotes": 698883,
+        "margin": 19.06,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2012,
+        "demPct": 42.23,
+        "repPct": 57.77,
+        "demCandidate": "Bob Kerrey",
+        "repCandidate": "Deb Fischer",
+        "demVotes": 332979,
+        "repVotes": 455593,
+        "totalVotes": 788572,
+        "margin": 15.55,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Nevada",
     "abbr": "NV",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Jacky Rosen",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 47.87,
+        "repPct": 46.22,
+        "demCandidate": "Jacky S. Rosen",
+        "repCandidate": "Sam Brown",
+        "demVotes": 701105,
+        "repVotes": 677046,
+        "totalVotes": 1464728,
+        "margin": -1.64,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 50.41,
+        "repPct": 45.38,
+        "demCandidate": "Jacky S. Rosen",
+        "repCandidate": "Dean Heller",
+        "demVotes": 490071,
+        "repVotes": 441202,
+        "totalVotes": 972132,
+        "margin": -5.03,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2012,
+        "demPct": 44.71,
+        "repPct": 45.87,
+        "demCandidate": "Shelley Berkley",
+        "repCandidate": "Dean Heller",
+        "demVotes": 446080,
+        "repVotes": 457656,
+        "totalVotes": 997805,
+        "margin": 1.16,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "state": "New Jersey",
+    "abbr": "NJ",
+    "incumbent": "Andy Kim",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 53.61,
+        "repPct": 43.99,
+        "demCandidate": "Andy Kim",
+        "repCandidate": "Curtis Bashaw",
+        "demVotes": 2161491,
+        "repVotes": 1773589,
+        "totalVotes": 4031795,
+        "margin": -9.62,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 54.01,
+        "repPct": 42.83,
+        "demCandidate": "Bob Menendez",
+        "repCandidate": "Bob Hugin",
+        "demVotes": 1711654,
+        "repVotes": 1357355,
+        "totalVotes": 3169310,
+        "margin": -11.18,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 58.87,
+        "repPct": 39.37,
+        "demCandidate": "Bob Menendez",
+        "repCandidate": "Joe Kyrillos",
+        "demVotes": 1987680,
+        "repVotes": 1329534,
+        "totalVotes": 3376649,
+        "margin": -19.49,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "New Mexico",
+    "abbr": "NM",
+    "incumbent": "Martin Heinrich",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 55.06,
+        "repPct": 44.94,
+        "demCandidate": "Martin Heinrich",
+        "repCandidate": "Nella Louise Domenici",
+        "demVotes": 497333,
+        "repVotes": 405978,
+        "totalVotes": 903311,
+        "margin": -10.11,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 54.09,
+        "repPct": 30.53,
+        "demCandidate": "Martin Heinrich",
+        "repCandidate": "Mick Rich",
+        "demVotes": 376998,
+        "repVotes": 212813,
+        "totalVotes": 697012,
+        "margin": -23.56,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 51.01,
+        "repPct": 45.28,
+        "demCandidate": "Martin Heinrich",
+        "repCandidate": "Heather A. Wilson",
+        "demVotes": 395717,
+        "repVotes": 351260,
+        "totalVotes": 775793,
+        "margin": -5.73,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "New York",
     "abbr": "NY",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Kirsten Gillibrand",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 58.82,
+        "repPct": 40.52,
+        "demCandidate": "Kirsten E. Gillibrand",
+        "repCandidate": "Michael D. Sapraicone",
+        "demVotes": 4711298,
+        "repVotes": 3246114,
+        "totalVotes": 8380426,
+        "margin": -18.29,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 66.96,
+        "repPct": 32.98,
+        "demCandidate": "Kirsten E. Gillibrand",
+        "repCandidate": "Chele Farley",
+        "demVotes": 4056931,
+        "repVotes": 1998220,
+        "totalVotes": 6250886,
+        "margin": -33.98,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 72.21,
+        "repPct": 26.34,
+        "demCandidate": "Kirsten E. Gillibrand",
+        "repCandidate": "Wendy E. Long",
+        "demVotes": 4822330,
+        "repVotes": 1758702,
+        "totalVotes": 7116628,
+        "margin": -45.87,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "North Dakota",
+    "abbr": "ND",
+    "incumbent": "Kevin Cramer",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 33.38,
+        "repPct": 66.31,
+        "demCandidate": "Katrina Christiansen",
+        "repCandidate": "Kevin Cramer",
+        "demVotes": 121602,
+        "repVotes": 241569,
+        "totalVotes": 364327,
+        "margin": 32.93,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 44.27,
+        "repPct": 55.11,
+        "demCandidate": "Heidi Heitkamp",
+        "repCandidate": "Kevin Cramer",
+        "demVotes": 144376,
+        "repVotes": 179720,
+        "totalVotes": 326138,
+        "margin": 10.84,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 50.24,
+        "repPct": 49.32,
+        "demCandidate": "Heidi Heitkamp",
+        "repCandidate": "Rick Berg",
+        "demVotes": 161337,
+        "repVotes": 158401,
+        "totalVotes": 321144,
+        "margin": -0.91,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Ohio",
+    "abbr": "OH",
+    "incumbent": "Bernie Moreno",
+    "party": "R",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 46.47,
+        "repPct": 50.09,
+        "demCandidate": "Sherrod Brown",
+        "repCandidate": "Bernie Moreno",
+        "demVotes": 2650949,
+        "repVotes": 2857383,
+        "totalVotes": 5704620,
+        "margin": 3.62,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 53.41,
+        "repPct": 46.57,
+        "demCandidate": "Sherrod Brown",
+        "repCandidate": "Jim Renacci",
+        "demVotes": 2355923,
+        "repVotes": 2053963,
+        "totalVotes": 4410898,
+        "margin": -6.85,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 50.7,
+        "repPct": 44.7,
+        "demCandidate": "Sherrod Brown",
+        "repCandidate": "Josh Mandel",
+        "demVotes": 2762690,
+        "repVotes": 2435712,
+        "totalVotes": 5449018,
+        "margin": -6,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Pennsylvania",
     "abbr": "PA",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "David McCormick",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 48.6,
+        "repPct": 48.82,
+        "demCandidate": "Robert P. Casey Jr.",
+        "repCandidate": "Dave McCormick",
+        "demVotes": 3384180,
+        "repVotes": 3399295,
+        "totalVotes": 6963137,
+        "margin": 0.22,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 55.74,
+        "repPct": 42.62,
+        "demCandidate": "Robert P. Casey Jr.",
+        "repCandidate": "Lou Barletta",
+        "demVotes": 2792437,
+        "repVotes": 2134848,
+        "totalVotes": 5009400,
+        "margin": -13.13,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 53.69,
+        "repPct": 44.59,
+        "demCandidate": "Robert P. Casey Jr.",
+        "repCandidate": "Tom Smith",
+        "demVotes": 3021364,
+        "repVotes": 2509132,
+        "totalVotes": 5627422,
+        "margin": -9.1,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Rhode Island",
+    "abbr": "RI",
+    "incumbent": "Sheldon Whitehouse",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 59.9,
+        "repPct": 39.85,
+        "demCandidate": "Sheldon Whitehouse",
+        "repCandidate": "Patricia Morgan",
+        "demVotes": 294665,
+        "repVotes": 196039,
+        "totalVotes": 491948,
+        "margin": -20.05,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 61.44,
+        "repPct": 38.33,
+        "demCandidate": "Sheldon Whitehouse",
+        "repCandidate": "Bob Flanders",
+        "demVotes": 231477,
+        "repVotes": 144421,
+        "totalVotes": 376738,
+        "margin": -23.11,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 64.81,
+        "repPct": 34.97,
+        "demCandidate": "Sheldon Whitehouse",
+        "repCandidate": "Barry Hinckley",
+        "demVotes": 271034,
+        "repVotes": 146222,
+        "totalVotes": 418189,
+        "margin": -29.85,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Tennessee",
+    "abbr": "TN",
+    "incumbent": "Marsha Blackburn",
+    "party": "R",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 34.16,
+        "repPct": 63.8,
+        "demCandidate": "Gloria Johnson",
+        "repCandidate": "Marsha Blackburn",
+        "demVotes": 1027461,
+        "repVotes": 1918743,
+        "totalVotes": 3007608,
+        "margin": 29.63,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 43.92,
+        "repPct": 54.71,
+        "demCandidate": "Phil Bredesen",
+        "repCandidate": "Marsha Blackburn",
+        "demVotes": 985450,
+        "repVotes": 1227483,
+        "totalVotes": 2243740,
+        "margin": 10.79,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 30.41,
+        "repPct": 64.89,
+        "demCandidate": "Mark E. Clayton",
+        "repCandidate": "Bob Corker",
+        "demVotes": 705882,
+        "repVotes": 1506443,
+        "totalVotes": 2321477,
+        "margin": 34.48,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "state": "Texas",
+    "abbr": "TX",
+    "incumbent": "Ted Cruz",
+    "party": "R",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 44.56,
+        "repPct": 53.05,
+        "demCandidate": "Colin Allred",
+        "repCandidate": "Ted Cruz",
+        "demVotes": 5031249,
+        "repVotes": 5990741,
+        "totalVotes": 11291854,
+        "margin": 8.5,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 48.33,
+        "repPct": 50.89,
+        "demCandidate": "Beto O'Rourke",
+        "repCandidate": "Ted Cruz",
+        "demVotes": 4045632,
+        "repVotes": 4260553,
+        "totalVotes": 8371655,
+        "margin": 2.57,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2012,
+        "demPct": 40.62,
+        "repPct": 56.46,
+        "demCandidate": "Paul Sadler",
+        "repCandidate": "Ted Cruz",
+        "demVotes": 3194927,
+        "repVotes": 4440137,
+        "totalVotes": 7864822,
+        "margin": 15.83,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Utah",
     "abbr": "UT",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "John Curtiz",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 31.74,
+        "repPct": 62.5,
+        "demCandidate": "Caroline Gleich",
+        "repCandidate": "John Curtis",
+        "demVotes": 464515,
+        "repVotes": 914700,
+        "totalVotes": 1472387,
+        "margin": 30.76,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 30.91,
+        "repPct": 62.59,
+        "demCandidate": "Jenny Wilson",
+        "repCandidate": "Mitt Romney",
+        "demVotes": 328541,
+        "repVotes": 665215,
+        "totalVotes": 1062897,
+        "margin": 31.68,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 29.98,
+        "repPct": 65.31,
+        "demCandidate": "Scott N. Howell",
+        "repCandidate": "Orrin G. Hatch",
+        "demVotes": 301873,
+        "repVotes": 657608,
+        "totalVotes": 1006901,
+        "margin": 35.33,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Vermont",
     "abbr": "VT",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Bernie Sanders",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 63.16,
+        "repPct": 32.07,
+        "demCandidate": "Bernie Sanders (I)",
+        "repCandidate": "Gerald Malloy",
+        "demVotes": 229429,
+        "repVotes": 116512,
+        "totalVotes": 372885,
+        "margin": -31.09,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 0,
+        "repPct": 27.44,
+        "repCandidate": "Lawrence Zupan",
+        "repVotes": 74815,
+        "totalVotes": 278013,
+        "margin": 27.44,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 0,
+        "repPct": 24.9,
+        "repCandidate": "John MacGovern",
+        "repVotes": 72898,
+        "totalVotes": 292762,
+        "margin": 24.9,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Virginia",
+    "abbr": "VA",
+    "incumbent": "Tim Kaine",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 54.37,
+        "repPct": 45.44,
+        "demCandidate": "Timothy Michael Kaine",
+        "repCandidate": "Hung Cao",
+        "demVotes": 2415429,
+        "repVotes": 2018992,
+        "totalVotes": 4442926,
+        "margin": -8.92,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 57,
+        "repPct": 41.01,
+        "demCandidate": "Timothy Michael Kaine",
+        "repCandidate": "Corey Stewart",
+        "demVotes": 1910370,
+        "repVotes": 1374313,
+        "totalVotes": 3351373,
+        "margin": -16,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 52.87,
+        "repPct": 46.96,
+        "demCandidate": "Timothy Michael Kaine",
+        "repCandidate": "George F. Allen",
+        "demVotes": 2010067,
+        "repVotes": 1785542,
+        "totalVotes": 3802196,
+        "margin": -5.91,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Washington",
     "abbr": "WA",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Maria Cantwell",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 59.09,
+        "repPct": 40.64,
+        "demCandidate": "Maria Cantwell",
+        "repCandidate": "Raul Garcia",
+        "demVotes": 2252577,
+        "repVotes": 1549187,
+        "totalVotes": 3812391,
+        "margin": -18.45,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 58.43,
+        "repPct": 41.57,
+        "demCandidate": "Maria Cantwell",
+        "repCandidate": "Susan Hutchison",
+        "demVotes": 1803364,
+        "repVotes": 1282804,
+        "totalVotes": 3086168,
+        "margin": -16.87,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 60.45,
+        "repPct": 39.55,
+        "demCandidate": "Maria Cantwell",
+        "repCandidate": "Michael Baumgartner",
+        "demVotes": 1855493,
+        "repVotes": 1213924,
+        "totalVotes": 3069417,
+        "margin": -20.9,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "West Virginia",
+    "abbr": "WV",
+    "incumbent": "Jim Justice",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 27.76,
+        "repPct": 68.75,
+        "demCandidate": "Glenn Elliott",
+        "repCandidate": "Jim Justice",
+        "demVotes": 207548,
+        "repVotes": 514079,
+        "totalVotes": 747717,
+        "margin": 41,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 49.57,
+        "repPct": 46.26,
+        "demCandidate": "Joe Manchin, III",
+        "repCandidate": "Patrick Morrisey",
+        "demVotes": 290510,
+        "repVotes": 271113,
+        "totalVotes": 586034,
+        "margin": -3.31,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 60.57,
+        "repPct": 36.47,
+        "demCandidate": "Joe Manchin, III",
+        "repCandidate": "John Raese",
+        "demVotes": 399898,
+        "repVotes": 240787,
+        "totalVotes": 660202,
+        "margin": -24.1,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Wisconsin",
     "abbr": "WI",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Tammy Baldwin",
+    "party": "D",
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 49.33,
+        "repPct": 48.48,
+        "demCandidate": "Tammy Baldwin",
+        "repCandidate": "Eric D. Hovde",
+        "demVotes": 1672777,
+        "repVotes": 1643996,
+        "totalVotes": 3390787,
+        "margin": -0.85,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2018,
+        "demPct": 55.36,
+        "repPct": 44.53,
+        "demCandidate": "Tammy Baldwin",
+        "repCandidate": "Leah Vukmir",
+        "demVotes": 1472914,
+        "repVotes": 1184885,
+        "totalVotes": 2660763,
+        "margin": -10.83,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2012,
+        "demPct": 51.41,
+        "repPct": 45.86,
+        "demCandidate": "Tammy Baldwin",
+        "repCandidate": "Tommy Thompson",
+        "demVotes": 1547104,
+        "repVotes": 1380126,
+        "totalVotes": 3009411,
+        "margin": -5.55,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Wyoming",
+    "abbr": "WY",
+    "incumbent": "John Barrasso",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2030,
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 24.12,
+        "repPct": 75.11,
+        "demCandidate": "Scott D. Morrow",
+        "repCandidate": "John Barrasso",
+        "demVotes": 63727,
+        "repVotes": 198418,
+        "totalVotes": 271123,
+        "margin": 50.99,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 30.1,
+        "repPct": 66.96,
+        "demCandidate": "Gary Trauner",
+        "repCandidate": "John Barrasso",
+        "demVotes": 61227,
+        "repVotes": 136210,
+        "totalVotes": 205275,
+        "margin": 36.86,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2012,
+        "demPct": 21.65,
+        "repPct": 75.65,
+        "demCandidate": "Tim Chesnut",
+        "repCandidate": "John Barrasso",
+        "demVotes": 53019,
+        "repVotes": 185250,
+        "totalVotes": 250700,
+        "margin": 54,
+        "seat": 1,
+        "seatClass": 1,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   }
 ];
 
 export const senateHoldovers: NoElectionEntry[] = [
   {
-    "state": "Alaska",
-    "abbr": "AK",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
     "state": "Alabama",
     "abbr": "AL",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Katie Britt",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 30.88,
+        "repPct": 66.62,
+        "demCandidate": "Will Boyd",
+        "repCandidate": "Katie Britt",
+        "demVotes": 436746,
+        "repVotes": 942154,
+        "totalVotes": 1414238,
+        "margin": 35.74,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 35.87,
+        "repPct": 63.96,
+        "demCandidate": "Ronald Steven Crumpton",
+        "repCandidate": "Richard C. Shelby",
+        "demVotes": 748709,
+        "repVotes": 1335104,
+        "totalVotes": 2087444,
+        "margin": 28.09,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
-    "state": "Arkansas",
-    "abbr": "AR",
-    "incumbent": "Incumbent TBD",
+    "state": "Alaska",
+    "abbr": "AK",
+    "incumbent": "Lisa Murkowski",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 11.2,
+        "repPct": 44.49,
+        "demCandidate": "Patricia R. Chesbro",
+        "repCandidate": "Lisa Murkowski",
+        "demVotes": 29134,
+        "repVotes": 115759,
+        "totalVotes": 260203,
+        "margin": 33.29,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 11.62,
+        "repPct": 44.36,
+        "demCandidate": "Ray Metcalfe",
+        "repCandidate": "Lisa Murkowski",
+        "demVotes": 36200,
+        "repVotes": 138149,
+        "totalVotes": 311441,
+        "margin": 32.73,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Arizona",
     "abbr": "AZ",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Mark Kelly",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 51.39,
+        "repPct": 46.51,
+        "demCandidate": "Mark Kelly",
+        "repCandidate": "Blake Masters",
+        "demVotes": 1322027,
+        "repVotes": 1196308,
+        "totalVotes": 2572294,
+        "margin": -4.89,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2020,
+        "demPct": 51.16,
+        "repPct": 48.81,
+        "demCandidate": "Mark Kelly",
+        "repCandidate": "Martha McSally",
+        "demVotes": 1716467,
+        "repVotes": 1637661,
+        "totalVotes": 3355317,
+        "margin": -2.35,
+        "seat": 2,
+        "seatClass": 3,
+        "electionType": "Special",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 40.75,
+        "repPct": 53.71,
+        "demCandidate": "Ann Kirkpatrick",
+        "repCandidate": "John McCain",
+        "demVotes": 1031245,
+        "repVotes": 1359267,
+        "totalVotes": 2530730,
+        "margin": 12.96,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "state": "Arkansas",
+    "abbr": "AR",
+    "incumbent": "John Boozman",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 31.09,
+        "repPct": 65.73,
+        "demCandidate": "Natalie James",
+        "repCandidate": "John Boozman",
+        "demVotes": 280187,
+        "repVotes": 592437,
+        "totalVotes": 901306,
+        "margin": 34.64,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 36.17,
+        "repPct": 59.77,
+        "demCandidate": "Conner W. Eldridge",
+        "repCandidate": "John Boozman",
+        "demVotes": 400602,
+        "repVotes": 661984,
+        "totalVotes": 1107522,
+        "margin": 23.6,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "California",
     "abbr": "CA",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
+    "incumbent": "Alex Padilla",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 61.06,
+        "repPct": 38.94,
+        "demCandidate": "Alex Padilla",
+        "repCandidate": "Mark P. Meuser",
+        "demVotes": 6621616,
+        "repVotes": 4222025,
+        "totalVotes": 10843641,
+        "margin": -22.13,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 61.6,
+        "repPct": 0,
+        "demCandidate": "Kamala Harris",
+        "demVotes": 7542759,
+        "totalVotes": 12244176,
+        "margin": -61.6,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Colorado",
     "abbr": "CO",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Michael Bennet",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 55.88,
+        "repPct": 41.27,
+        "demCandidate": "Michael Bennet",
+        "repCandidate": "Joe O'Dea",
+        "demVotes": 1397170,
+        "repVotes": 1031693,
+        "totalVotes": 2500130,
+        "margin": -14.62,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 49.97,
+        "repPct": 44.31,
+        "demCandidate": "Michael Bennet",
+        "repCandidate": "Darryl Glenn",
+        "demVotes": 1370710,
+        "repVotes": 1215318,
+        "totalVotes": 2743023,
+        "margin": -5.66,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Connecticut",
     "abbr": "CT",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Delaware",
-    "abbr": "DE",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Florida",
-    "abbr": "FL",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Richard Blumenthal",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 57.45,
+        "repPct": 42.54,
+        "demCandidate": "Richard Blumenthal",
+        "repCandidate": "Leora R. Levy",
+        "demVotes": 723864,
+        "repVotes": 535943,
+        "totalVotes": 1259887,
+        "margin": -14.92,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 63.19,
+        "repPct": 34.62,
+        "demCandidate": "Richard Blumenthal",
+        "repCandidate": "Dan Carter",
+        "demVotes": 1008714,
+        "repVotes": 552621,
+        "totalVotes": 1596276,
+        "margin": -28.57,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Georgia",
     "abbr": "GA",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Raphael Warnock",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 51.4,
+        "repPct": 48.6,
+        "demCandidate": "Raphael Warnock",
+        "repCandidate": "Herschel Junior Walker",
+        "demVotes": 1820633,
+        "repVotes": 1721244,
+        "totalVotes": 3541877,
+        "margin": -2.81,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2020,
+        "demPct": 51.04,
+        "repPct": 48.96,
+        "demCandidate": "Raphael Warnock",
+        "repCandidate": "Kelly Loeffler",
+        "demVotes": 2289113,
+        "repVotes": 2195841,
+        "totalVotes": 4484954,
+        "margin": -2.08,
+        "seat": 2,
+        "seatClass": 3,
+        "electionType": "Special",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 41.03,
+        "repPct": 54.78,
+        "demCandidate": "Jim Barksdale",
+        "repCandidate": "Johnny Isakson",
+        "demVotes": 1599726,
+        "repVotes": 2135806,
+        "totalVotes": 3898605,
+        "margin": 13.75,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Hawaii",
     "abbr": "HI",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Iowa",
-    "abbr": "IA",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Brian Schatz",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 71.21,
+        "repPct": 26.04,
+        "demCandidate": "Brian Schatz",
+        "repCandidate": "Bob McDermott",
+        "demVotes": 290894,
+        "repVotes": 106358,
+        "totalVotes": 419363,
+        "margin": -45.17,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 73.6,
+        "repPct": 22.24,
+        "demCandidate": "Brian Schatz",
+        "repCandidate": "John Stanley Carroll",
+        "demVotes": 306604,
+        "repVotes": 92653,
+        "totalVotes": 437664,
+        "margin": -51.36,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2014,
+        "demPct": 69.77,
+        "repPct": 27.7,
+        "demCandidate": "Brian Schatz",
+        "repCandidate": "Cam Cavasso",
+        "demVotes": 246827,
+        "repVotes": 98006,
+        "totalVotes": 369703,
+        "margin": -42.07,
+        "seat": 2,
+        "seatClass": 3,
+        "electionType": "Special",
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Idaho",
     "abbr": "ID",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Mike Crapo",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 28.74,
+        "repPct": 60.68,
+        "demCandidate": "David Roth",
+        "repCandidate": "Mike Crapo",
+        "demVotes": 169808,
+        "repVotes": 358539,
+        "totalVotes": 590890,
+        "margin": 31.94,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 27.73,
+        "repPct": 66.13,
+        "demCandidate": "Jerry Sturgill",
+        "repCandidate": "Mike Crapo",
+        "demVotes": 188249,
+        "repVotes": 449017,
+        "totalVotes": 678943,
+        "margin": 38.41,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Illinois",
     "abbr": "IL",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Tammy Duckworth",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 56.82,
+        "repPct": 41.5,
+        "demCandidate": "Tammy Duckworth",
+        "repCandidate": "Kathy Salvi",
+        "demVotes": 2329136,
+        "repVotes": 1701055,
+        "totalVotes": 4098896,
+        "margin": -15.32,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 54.86,
+        "repPct": 39.78,
+        "demCandidate": "Tammy Duckworth",
+        "repCandidate": "Mark Kirk",
+        "demVotes": 3012940,
+        "repVotes": 2184692,
+        "totalVotes": 5491878,
+        "margin": -15.08,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Indiana",
     "abbr": "IN",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Todd Young",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 37.87,
+        "repPct": 58.62,
+        "demCandidate": "Thomas McDermott",
+        "repCandidate": "Todd Young",
+        "demVotes": 704480,
+        "repVotes": 1090390,
+        "totalVotes": 1860154,
+        "margin": 20.75,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 42.41,
+        "repPct": 52.11,
+        "demCandidate": "Evan Bayh",
+        "repCandidate": "Todd Young",
+        "demVotes": 1158947,
+        "repVotes": 1423991,
+        "totalVotes": 2732546,
+        "margin": 9.7,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "Iowa",
+    "abbr": "IA",
+    "incumbent": "Chuck Grassley",
+    "party": "R",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 43.84,
+        "repPct": 56.01,
+        "demCandidate": "Michael Franken",
+        "repCandidate": "Chuck Grassley",
+        "demVotes": 533330,
+        "repVotes": 681501,
+        "totalVotes": 1230416,
+        "margin": 12.18,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 35.66,
+        "repPct": 60.09,
+        "demCandidate": "Patty Judge",
+        "repCandidate": "Chuck Grassley",
+        "demVotes": 549460,
+        "repVotes": 926007,
+        "totalVotes": 1541036,
+        "margin": 24.43,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Kansas",
     "abbr": "KS",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Jerry Moran",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 37.04,
+        "repPct": 60,
+        "demCandidate": "Mark R. Holland",
+        "repCandidate": "Jerry Moran",
+        "demVotes": 372214,
+        "repVotes": 602976,
+        "totalVotes": 1004956,
+        "margin": 22.96,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 32.24,
+        "repPct": 62.18,
+        "demCandidate": "Patrick Wiesner",
+        "repCandidate": "Jerry Moran",
+        "demVotes": 379740,
+        "repVotes": 732376,
+        "totalVotes": 1177922,
+        "margin": 29.94,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Kentucky",
     "abbr": "KY",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Rand Paul",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 38.19,
+        "repPct": 61.8,
+        "demCandidate": "Charles Booker",
+        "repCandidate": "Rand Paul",
+        "demVotes": 564311,
+        "repVotes": 913326,
+        "totalVotes": 1477830,
+        "margin": 23.62,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 42.72,
+        "repPct": 57.27,
+        "demCandidate": "Jim Gray",
+        "repCandidate": "Rand Paul",
+        "demVotes": 813246,
+        "repVotes": 1090177,
+        "totalVotes": 1903465,
+        "margin": 14.55,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Louisiana",
     "abbr": "LA",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "John Kennedy",
     "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Massachusetts",
-    "abbr": "MA",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 17.85,
+        "repPct": 61.56,
+        "demCandidate": "Gary Chambers",
+        "repCandidate": "John Kennedy",
+        "demVotes": 246933,
+        "repVotes": 851568,
+        "totalVotes": 1383290,
+        "margin": 43.71,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 39.35,
+        "repPct": 60.65,
+        "demCandidate": "Foster L. Campbell",
+        "repCandidate": "John Kennedy",
+        "demVotes": 347816,
+        "repVotes": 536191,
+        "totalVotes": 884007,
+        "margin": 21.31,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Maryland",
     "abbr": "MD",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Maine",
-    "abbr": "ME",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
-  },
-  {
-    "state": "Michigan",
-    "abbr": "MI",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
-  },
-  {
-    "state": "Minnesota",
-    "abbr": "MN",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
+    "incumbent": "Chris Van Hollen",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 65.77,
+        "repPct": 34.07,
+        "demCandidate": "Chris Van Hollen",
+        "repCandidate": "Chris Chaffee",
+        "demVotes": 1316897,
+        "repVotes": 682293,
+        "totalVotes": 2002336,
+        "margin": -31.69,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 60.89,
+        "repPct": 35.67,
+        "demCandidate": "Chris Van Hollen",
+        "repCandidate": "Kathy Szeliga",
+        "demVotes": 1659907,
+        "repVotes": 972557,
+        "totalVotes": 2726170,
+        "margin": -25.21,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Missouri",
     "abbr": "MO",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Eric Schmitt",
     "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Mississippi",
-    "abbr": "MS",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Montana",
-    "abbr": "MT",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
-  },
-  {
-    "state": "North Carolina",
-    "abbr": "NC",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "North Dakota",
-    "abbr": "ND",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Nebraska",
-    "abbr": "NE",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "New Hampshire",
-    "abbr": "NH",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "New Jersey",
-    "abbr": "NJ",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
-  },
-  {
-    "state": "New Mexico",
-    "abbr": "NM",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 42.18,
+        "repPct": 55.43,
+        "demCandidate": "Trudy Busch Valentine",
+        "repCandidate": "Eric Schmitt",
+        "demVotes": 872694,
+        "repVotes": 1146966,
+        "totalVotes": 2069130,
+        "margin": 13.26,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 46.39,
+        "repPct": 49.18,
+        "demCandidate": "Jason Kander",
+        "repCandidate": "Roy Blunt",
+        "demVotes": 1300200,
+        "repVotes": 1378458,
+        "totalVotes": 2802641,
+        "margin": 2.79,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Nevada",
     "abbr": "NV",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
+    "incumbent": "Catherine Cortez Masto",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 48.81,
+        "repPct": 48.04,
+        "demCandidate": "Catherine Cortez Masto",
+        "repCandidate": "Adam Paul Laxalt",
+        "demVotes": 498316,
+        "repVotes": 490388,
+        "totalVotes": 1020850,
+        "margin": -0.78,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 47.1,
+        "repPct": 44.67,
+        "demCandidate": "Catherine Cortez Masto",
+        "repCandidate": "Joseph J. Heck",
+        "demVotes": 521994,
+        "repVotes": 495079,
+        "totalVotes": 1108294,
+        "margin": -2.43,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
+  },
+  {
+    "state": "New Hampshire",
+    "abbr": "NH",
+    "incumbent": "Maggie Hassan",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 53.5,
+        "repPct": 44.43,
+        "demCandidate": "Maggie Hassan",
+        "repCandidate": "Donald C. Bolduc",
+        "demVotes": 332193,
+        "repVotes": 275928,
+        "totalVotes": 620975,
+        "margin": -9.06,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 47.98,
+        "repPct": 47.84,
+        "demCandidate": "Maggie Hassan",
+        "repCandidate": "Kelly Ayotte",
+        "demVotes": 354649,
+        "repVotes": 353632,
+        "totalVotes": 739140,
+        "margin": -0.14,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "New York",
     "abbr": "NY",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Chuck Schumer",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 56.74,
+        "repPct": 42.73,
+        "demCandidate": "Charles E. Schumer",
+        "repCandidate": "Joe Pinion",
+        "demVotes": 3320561,
+        "repVotes": 2501151,
+        "totalVotes": 5965684,
+        "margin": -14,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 70.18,
+        "repPct": 27.56,
+        "demCandidate": "Charles E. Schumer",
+        "repCandidate": "Wendy E. Long",
+        "demVotes": 5116696,
+        "repVotes": 2009353,
+        "totalVotes": 7695473,
+        "margin": -42.62,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
-    "state": "Ohio",
-    "abbr": "OH",
-    "incumbent": "Incumbent TBD",
+    "state": "North Carolina",
+    "abbr": "NC",
+    "incumbent": "Ted Budd",
     "party": "R",
-    "nextElection": 2030
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 47.27,
+        "repPct": 50.5,
+        "demCandidate": "Cheri Beasley",
+        "repCandidate": "Ted Budd",
+        "demVotes": 1784049,
+        "repVotes": 1905786,
+        "totalVotes": 3773924,
+        "margin": 3.23,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 45.37,
+        "repPct": 51.06,
+        "demCandidate": "Deborah K. Ross",
+        "repCandidate": "Richard Burr",
+        "demVotes": 2128165,
+        "repVotes": 2395376,
+        "totalVotes": 4691133,
+        "margin": 5.7,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "state": "North Dakota",
+    "abbr": "ND",
+    "incumbent": "John Hoeven",
+    "party": "R",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 24.98,
+        "repPct": 56.41,
+        "demCandidate": "Katrina Christiansen",
+        "repCandidate": "John Hoeven",
+        "demVotes": 59995,
+        "repVotes": 135474,
+        "totalVotes": 240140,
+        "margin": 31.43,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 16.97,
+        "repPct": 78.48,
+        "demCandidate": "Eliot Glassheim",
+        "repCandidate": "John Hoeven",
+        "demVotes": 58116,
+        "repVotes": 268788,
+        "totalVotes": 342501,
+        "margin": 61.51,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Oklahoma",
     "abbr": "OK",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "James Lankford",
     "party": "R",
-    "nextElection": 2030
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 32.1,
+        "repPct": 64.3,
+        "demCandidate": "Madison Horn",
+        "repCandidate": "James Lankford",
+        "demVotes": 369370,
+        "repVotes": 739960,
+        "totalVotes": 1150732,
+        "margin": 32.2,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2022,
+        "demPct": 35.24,
+        "repPct": 61.77,
+        "demCandidate": "Kendra Horn",
+        "repCandidate": "Markwayne Mullin",
+        "demVotes": 405389,
+        "repVotes": 710643,
+        "totalVotes": 1150481,
+        "margin": 26.53,
+        "seat": 2,
+        "seatClass": 2,
+        "electionType": "Special",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 24.58,
+        "repPct": 67.74,
+        "demCandidate": "Mike Workman",
+        "repCandidate": "James Lankford",
+        "demVotes": 355911,
+        "repVotes": 980892,
+        "totalVotes": 1448047,
+        "margin": 43.16,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 28.98,
+        "repPct": 67.85,
+        "demCandidate": "Constance N. Johnson",
+        "repCandidate": "James Lankford",
+        "demVotes": 237923,
+        "repVotes": 557002,
+        "totalVotes": 820890,
+        "margin": 38.87,
+        "seat": 2,
+        "seatClass": 3,
+        "electionType": "Special",
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Oregon",
     "abbr": "OR",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Ron Wyden",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 55.83,
+        "repPct": 40.92,
+        "demCandidate": "Ron Wyden",
+        "repCandidate": "Jo Rae Perkins",
+        "demVotes": 1076424,
+        "repVotes": 788991,
+        "totalVotes": 1927949,
+        "margin": -14.91,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 56.6,
+        "repPct": 33.35,
+        "demCandidate": "Ron Wyden",
+        "repCandidate": "Mark Callahan",
+        "demVotes": 1105119,
+        "repVotes": 651106,
+        "totalVotes": 1952478,
+        "margin": -23.25,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Pennsylvania",
     "abbr": "PA",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Rhode Island",
-    "abbr": "RI",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
+    "incumbent": "John Fetterman",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 51.25,
+        "repPct": 46.33,
+        "demCandidate": "John Fetterman",
+        "repCandidate": "Mehmet Oz",
+        "demVotes": 2751012,
+        "repVotes": 2487260,
+        "totalVotes": 5368021,
+        "margin": -4.91,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 47.34,
+        "repPct": 48.77,
+        "demCandidate": "Kathleen Alana McGinty",
+        "repCandidate": "Patrick J. Toomey",
+        "demVotes": 2865012,
+        "repVotes": 2951702,
+        "totalVotes": 6051856,
+        "margin": 1.43,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "South Carolina",
     "abbr": "SC",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Tim Scott",
     "party": "R",
-    "nextElection": 2028
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 37.01,
+        "repPct": 62.88,
+        "demCandidate": "Krystle Matthews",
+        "repCandidate": "Tim Scott",
+        "demVotes": 627616,
+        "repVotes": 1066274,
+        "totalVotes": 1695702,
+        "margin": 25.87,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 36.93,
+        "repPct": 60.57,
+        "demCandidate": "Thomas Dixon",
+        "repCandidate": "Tim Scott",
+        "demVotes": 757022,
+        "repVotes": 1241609,
+        "totalVotes": 2049893,
+        "margin": 23.64,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 38.01,
+        "repPct": 60.15,
+        "demCandidate": "Joyce Dickerson",
+        "repCandidate": "Tim Scott",
+        "demVotes": 459583,
+        "repVotes": 727215,
+        "totalVotes": 1208982,
+        "margin": 22.14,
+        "seat": 2,
+        "seatClass": 3,
+        "electionType": "Special",
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "South Dakota",
     "abbr": "SD",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "John Thune",
     "party": "R",
-    "nextElection": 2030
-  },
-  {
-    "state": "Tennessee",
-    "abbr": "TN",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
-  },
-  {
-    "state": "Texas",
-    "abbr": "TX",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 26.15,
+        "repPct": 69.63,
+        "demCandidate": "Brian L. Bengs",
+        "repCandidate": "John R. Thune",
+        "demVotes": 91007,
+        "repVotes": 242316,
+        "totalVotes": 348020,
+        "margin": 43.48,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 28.17,
+        "repPct": 71.83,
+        "demCandidate": "Jay H. Williams",
+        "repCandidate": "John R. Thune",
+        "demVotes": 104140,
+        "repVotes": 265516,
+        "totalVotes": 369656,
+        "margin": 43.66,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Utah",
     "abbr": "UT",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Mike Lee",
     "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Virginia",
-    "abbr": "VA",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 0,
+        "repPct": 53.15,
+        "repCandidate": "Mike Lee",
+        "repVotes": 571974,
+        "totalVotes": 1076068,
+        "margin": 53.15,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 27.06,
+        "repPct": 68.15,
+        "demCandidate": "Misty Katherine Snow",
+        "repCandidate": "Mike Lee",
+        "demVotes": 301860,
+        "repVotes": 760241,
+        "totalVotes": 1115608,
+        "margin": 41.09,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Vermont",
     "abbr": "VT",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Peter Welch",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 68.47,
+        "repPct": 28.03,
+        "demCandidate": "Peter Welch",
+        "repCandidate": "Gerald Malloy",
+        "demVotes": 196575,
+        "repVotes": 80468,
+        "totalVotes": 291955,
+        "margin": -40.44,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 61.26,
+        "repPct": 33.03,
+        "demCandidate": "Patrick J. Leahy",
+        "repCandidate": "Scott Milne",
+        "demVotes": 192243,
+        "repVotes": 103637,
+        "totalVotes": 320467,
+        "margin": -28.24,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Washington",
     "abbr": "WA",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
+    "incumbent": "Patty Murray",
+    "party": "D",
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 57.15,
+        "repPct": 42.63,
+        "demCandidate": "Patty Murray",
+        "repCandidate": "Tiffany Smiley",
+        "demVotes": 1741827,
+        "repVotes": 1299322,
+        "totalVotes": 3047900,
+        "margin": -14.52,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 59.01,
+        "repPct": 40.99,
+        "demCandidate": "Patty Murray",
+        "repCandidate": "Chris Vance",
+        "demVotes": 1913979,
+        "repVotes": 1329338,
+        "totalVotes": 3243317,
+        "margin": -18.03,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Wisconsin",
     "abbr": "WI",
-    "incumbent": "Incumbent TBD",
+    "incumbent": "Ron Johnson",
     "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "West Virginia",
-    "abbr": "WV",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2028
-  },
-  {
-    "state": "Wyoming",
-    "abbr": "WY",
-    "incumbent": "Incumbent TBD",
-    "party": "R",
-    "nextElection": 2030
+    "nextElection": 2028,
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 49.41,
+        "repPct": 50.41,
+        "demCandidate": "Mandela Barnes",
+        "repCandidate": "Ron Johnson",
+        "demVotes": 1310467,
+        "repVotes": 1337185,
+        "totalVotes": 2652477,
+        "margin": 1.01,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 46.81,
+        "repPct": 50.17,
+        "demCandidate": "Russ Feingold",
+        "repCandidate": "Ron Johnson",
+        "demVotes": 1380335,
+        "repVotes": 1479471,
+        "totalVotes": 2948741,
+        "margin": 3.36,
+        "seat": 2,
+        "seatClass": 3,
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   }
 ];
 
 export const senateCurrent: Record<string, ["D" | "R" | "I", "D" | "R" | "I"]> = {
+  "AL": [
+    "R",
+    "R"
+  ],
   "AK": [
     "R",
     "R"
   ],
-  "AL": [
-    "R",
-    "R"
+  "AZ": [
+    "D",
+    "D"
   ],
   "AR": [
     "R",
     "R"
   ],
-  "AZ": [
-    "R",
-    "R"
-  ],
   "CA": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
   "CO": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
   "CT": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
   "DE": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
   "FL": [
     "R",
     "R"
   ],
   "GA": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
   "HI": [
-    "R",
-    "R"
-  ],
-  "IA": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
   "ID": [
     "R",
     "R"
   ],
   "IL": [
+    "D",
+    "D"
+  ],
+  "IN": [
     "R",
     "R"
   ],
-  "IN": [
+  "IA": [
     "R",
     "R"
   ],
@@ -1956,31 +6382,31 @@ export const senateCurrent: Record<string, ["D" | "R" | "I", "D" | "R" | "I"]> =
     "R",
     "R"
   ],
-  "MA": [
-    "R",
+  "ME": [
+    "D",
     "R"
   ],
   "MD": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
-  "ME": [
-    "R",
-    "R"
+  "MA": [
+    "D",
+    "D"
   ],
   "MI": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
   "MN": [
-    "R",
-    "R"
-  ],
-  "MO": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
   "MS": [
+    "R",
+    "D"
+  ],
+  "MO": [
     "R",
     "R"
   ],
@@ -1988,35 +6414,35 @@ export const senateCurrent: Record<string, ["D" | "R" | "I", "D" | "R" | "I"]> =
     "R",
     "R"
   ],
+  "NE": [
+    "R",
+    "R"
+  ],
+  "NV": [
+    "D",
+    "D"
+  ],
+  "NH": [
+    "D",
+    "D"
+  ],
+  "NJ": [
+    "D",
+    "D"
+  ],
+  "NM": [
+    "D",
+    "D"
+  ],
+  "NY": [
+    "D",
+    "D"
+  ],
   "NC": [
     "R",
     "R"
   ],
   "ND": [
-    "R",
-    "R"
-  ],
-  "NE": [
-    "R",
-    "R"
-  ],
-  "NH": [
-    "R",
-    "R"
-  ],
-  "NJ": [
-    "R",
-    "R"
-  ],
-  "NM": [
-    "R",
-    "R"
-  ],
-  "NV": [
-    "R",
-    "R"
-  ],
-  "NY": [
     "R",
     "R"
   ],
@@ -2029,16 +6455,16 @@ export const senateCurrent: Record<string, ["D" | "R" | "I", "D" | "R" | "I"]> =
     "R"
   ],
   "OR": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
   "PA": [
     "R",
-    "R"
+    "D"
   ],
   "RI": [
-    "R",
-    "R"
+    "D",
+    "D"
   ],
   "SC": [
     "R",
@@ -2060,24 +6486,24 @@ export const senateCurrent: Record<string, ["D" | "R" | "I", "D" | "R" | "I"]> =
     "R",
     "R"
   ],
-  "VA": [
-    "R",
-    "R"
-  ],
   "VT": [
-    "R",
-    "R"
+    "D",
+    "D"
+  ],
+  "VA": [
+    "D",
+    "D"
   ],
   "WA": [
+    "D",
+    "D"
+  ],
+  "WV": [
     "R",
     "R"
   ],
   "WI": [
-    "R",
-    "R"
-  ],
-  "WV": [
-    "R",
+    "D",
     "R"
   ],
   "WY": [
@@ -2150,6 +6576,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kari Lake",
         "demVotes": 1287891,
         "repVotes": 1270774,
+        "margin": -0.67,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2162,6 +6589,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Doug Ducey",
         "demVotes": 994341,
         "repVotes": 1330863,
+        "margin": 14.16,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -2174,6 +6602,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Doug Ducey",
         "demVotes": 626921,
         "repVotes": 805062,
+        "margin": 11.82,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2243,6 +6672,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Brian Dahle",
         "demVotes": 6470104,
         "repVotes": 4462914,
+        "margin": -18.36,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2255,6 +6685,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "John H. Cox",
         "demVotes": 7721410,
         "repVotes": 4742825,
+        "margin": -23.9,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2267,6 +6698,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Neel Kashkari",
         "demVotes": 4388368,
         "repVotes": 2929213,
+        "margin": -19.94,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2336,6 +6768,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Heidi Ganahl",
         "demVotes": 1468481,
         "repVotes": 983040,
+        "margin": -19.35,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2348,6 +6781,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Walker Stapleton",
         "demVotes": 1348888,
         "repVotes": 1080801,
+        "margin": -10.62,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2360,6 +6794,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Bob Beauprez",
         "demVotes": 1006433,
         "repVotes": 938195,
+        "margin": -3.35,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2429,6 +6864,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Bob Stefanowski",
         "demVotes": 710186,
         "repVotes": 546209,
+        "margin": -12.92,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2441,6 +6877,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Bob Stefanowski",
         "demVotes": 694510,
         "repVotes": 650138,
+        "margin": -3.16,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2453,6 +6890,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Thomas C. Foley",
         "demVotes": 554314,
         "repVotes": 526295,
+        "margin": -2.57,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2508,7 +6946,7 @@ export const governorData: RaceForecast[] = [
         "incumbent": true
       },
       "rep": {
-        "name": "TBD",
+        "name": "Republican Candidate",
         "party": "R",
         "incumbent": false
       }
@@ -2522,6 +6960,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Duke Aiona",
         "demVotes": 259901,
         "repVotes": 151258,
+        "margin": -26.42,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2534,6 +6973,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Andria Tupola",
         "demVotes": 244934,
         "repVotes": 131719,
+        "margin": -28.97,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2546,6 +6986,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Duke Aiona",
         "demVotes": 181106,
         "repVotes": 135775,
+        "margin": -12.37,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2615,6 +7056,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Darren Bailey",
         "demVotes": 2253748,
         "repVotes": 1739095,
+        "margin": -12.54,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2627,6 +7069,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Bruce Rauner",
         "demVotes": 2479746,
         "repVotes": 1765751,
+        "margin": -15.7,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -2639,6 +7082,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Bruce Rauner",
         "demVotes": 1681343,
         "repVotes": 1823627,
+        "margin": 3.92,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2708,6 +7152,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Derek Schmidt",
         "demVotes": 499849,
         "repVotes": 477591,
+        "margin": -2.21,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2720,6 +7165,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kris Kobach",
         "demVotes": 506727,
         "repVotes": 453645,
+        "margin": -5.03,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2732,6 +7178,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Sam Brownback",
         "demVotes": 401100,
         "repVotes": 433196,
+        "margin": 3.69,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -2801,6 +7248,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Paul LePage",
         "demVotes": 376934,
         "repVotes": 287304,
+        "margin": -13.24,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -2813,6 +7261,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Shawn Moody",
         "demVotes": 320962,
         "repVotes": 272311,
+        "margin": -7.71,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2825,6 +7274,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Paul LePage",
         "demVotes": 265114,
         "repVotes": 294519,
+        "margin": 4.82,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -2894,6 +7344,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Dan Cox",
         "demVotes": 1293944,
         "repVotes": 644000,
+        "margin": -32.41,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2906,6 +7357,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Larry Hogan",
         "demVotes": 1002639,
         "repVotes": 1275644,
+        "margin": 11.84,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -2918,6 +7370,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Larry Hogan",
         "demVotes": 818890,
         "repVotes": 884400,
+        "margin": 3.78,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2987,6 +7440,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Geoff Diehl",
         "demVotes": 1584403,
         "repVotes": 859343,
+        "margin": -29.17,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -2999,6 +7453,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Charlie Baker",
         "demVotes": 885770,
         "repVotes": 1781341,
+        "margin": 33.48,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -3011,6 +7466,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Charlie Baker",
         "demVotes": 1004408,
         "repVotes": 1044573,
+        "margin": 1.85,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -3080,6 +7536,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Tudor Dixon",
         "demVotes": 2430505,
         "repVotes": 1960635,
+        "margin": -10.53,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3092,6 +7549,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Bill Schuette",
         "demVotes": 2266193,
         "repVotes": 1859534,
+        "margin": -9.56,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -3104,6 +7562,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Rick Snyder",
         "demVotes": 1479057,
         "repVotes": 1607399,
+        "margin": 4.06,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -3173,6 +7632,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Scott Jensen",
         "demVotes": 1312349,
         "repVotes": 1119941,
+        "margin": -7.66,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3185,6 +7645,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Jeff Johnson",
         "demVotes": 1393096,
         "repVotes": 1097705,
+        "margin": -11.41,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -3197,6 +7658,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Jeff Johnson",
         "demVotes": 989113,
         "repVotes": 879257,
+        "margin": -5.56,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3266,6 +7728,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Mark Ronchetti",
         "demVotes": 370168,
         "repVotes": 324701,
+        "margin": -6.38,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3278,6 +7741,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Steve Pearce",
         "demVotes": 398368,
         "repVotes": 298091,
+        "margin": -14.4,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -3290,6 +7754,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Susana Martinez",
         "demVotes": 219362,
         "repVotes": 293443,
+        "margin": 14.44,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -3359,6 +7824,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Lee Zeldin",
         "demVotes": 3140415,
         "repVotes": 2762581,
+        "margin": -6.4,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3371,6 +7837,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Marc Molinaro",
         "demVotes": 3635340,
         "repVotes": 2207602,
+        "margin": -23.41,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3383,6 +7850,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Rob Astorino",
         "demVotes": 2069480,
         "repVotes": 1537077,
+        "margin": -13.97,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3452,6 +7920,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Christine Drazan",
         "demVotes": 917074,
         "repVotes": 850347,
+        "margin": -3.42,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -3464,6 +7933,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Knute Buehler",
         "demVotes": 934498,
         "repVotes": 814988,
+        "margin": -6.4,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3476,6 +7946,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Bud Pierce",
         "demVotes": 985027,
         "repVotes": 845609,
+        "margin": -7.1,
         "electionType": "Special",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3545,6 +8016,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Doug Mastriano",
         "demVotes": 3031137,
         "repVotes": 2238477,
+        "margin": -14.78,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -3557,6 +8029,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Scott Wagner",
         "demVotes": 2895652,
         "repVotes": 2039882,
+        "margin": -17.07,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3569,6 +8042,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Tom Corbett",
         "demVotes": 1920355,
         "repVotes": 1575511,
+        "margin": -9.86,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -3638,6 +8112,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Ashley Kalus",
         "demVotes": 207166,
         "repVotes": 139001,
+        "margin": -19.06,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3650,6 +8125,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Allan Fung",
         "demVotes": 198122,
         "repVotes": 139932,
+        "margin": -15.46,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3662,6 +8138,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Allan Fung",
         "demVotes": 131899,
         "repVotes": 117428,
+        "margin": -4.46,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -3731,6 +8208,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Tim Michels",
         "demVotes": 1358774,
         "repVotes": 1268535,
+        "margin": -3.4,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -3743,6 +8221,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Scott Walker",
         "demVotes": 1324307,
         "repVotes": 1295080,
+        "margin": -1.1,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -3755,6 +8234,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Scott Walker",
         "demVotes": 1122913,
         "repVotes": 1259706,
+        "margin": 5.67,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -3824,6 +8304,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kay Ivey",
         "demVotes": 412961,
         "repVotes": 946932,
+        "margin": 37.73,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -3836,6 +8317,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kay Ivey",
         "demVotes": 694495,
         "repVotes": 1022457,
+        "margin": 19.07,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -3848,6 +8330,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Robert J. Bentley",
         "demVotes": 427787,
         "repVotes": 750231,
+        "margin": 27.32,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -3917,6 +8400,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Mike Dunleavy",
         "demVotes": 63851,
         "repVotes": 132632,
+        "margin": 26.08,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -3929,6 +8413,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Mike Dunleavy",
         "demVotes": 125739,
         "repVotes": 145631,
+        "margin": 7.03,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -3941,6 +8426,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Sean Parnell",
         "demVotes": 134658,
         "repVotes": 128435,
+        "margin": -2.22,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4010,6 +8496,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Sarah Huckabee Sanders",
         "demVotes": 319242,
         "repVotes": 571105,
+        "margin": 27.8,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4022,6 +8509,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Asa Hutchinson",
         "demVotes": 283218,
         "repVotes": 582406,
+        "margin": 33.56,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4034,6 +8522,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Asa Hutchinson",
         "demVotes": 352115,
         "repVotes": 470429,
+        "margin": 13.95,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4103,6 +8592,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Ron DeSantis",
         "demVotes": 3106313,
         "repVotes": 4614210,
+        "margin": 19.4,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4115,6 +8605,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Ron DeSantis",
         "demVotes": 4043723,
         "repVotes": 4076186,
+        "margin": 0.4,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4127,6 +8618,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Rick Scott",
         "demVotes": 2801198,
         "repVotes": 2865343,
+        "margin": 1.07,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4196,6 +8688,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Brian Kemp",
         "demVotes": 1813673,
         "repVotes": 2111572,
+        "margin": 7.53,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4208,6 +8701,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Brian Kemp",
         "demVotes": 1923685,
         "repVotes": 1978408,
+        "margin": 1.39,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4220,6 +8714,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Nathan Deal",
         "demVotes": 1144794,
         "repVotes": 1345237,
+        "margin": 7.86,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4270,7 +8765,7 @@ export const governorData: RaceForecast[] = [
     "kalshiRep": 0.93,
     "candidates": {
       "dem": {
-        "name": "TBD",
+        "name": "Democratic Candidate",
         "party": "D",
         "incumbent": false
       },
@@ -4289,6 +8784,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Brad Little",
         "demVotes": 120160,
         "repVotes": 358598,
+        "margin": 40.24,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4301,6 +8797,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Brad Little",
         "demVotes": 231081,
         "repVotes": 361661,
+        "margin": 21.57,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4313,6 +8810,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Butch Otter",
         "demVotes": 169556,
         "repVotes": 235405,
+        "margin": 14.97,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4382,6 +8880,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kim Reynolds",
         "demVotes": 482950,
         "repVotes": 709198,
+        "margin": 18.51,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4394,6 +8893,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kim Reynolds",
         "demVotes": 630986,
         "repVotes": 667275,
+        "margin": 2.73,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4406,6 +8906,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Terry Branstad",
         "demVotes": 420787,
         "repVotes": 666032,
+        "margin": 21.72,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4456,7 +8957,7 @@ export const governorData: RaceForecast[] = [
     "kalshiRep": 0.9,
     "candidates": {
       "dem": {
-        "name": "TBD",
+        "name": "Democratic Candidate",
         "party": "D",
         "incumbent": false
       },
@@ -4475,6 +8976,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Jim Pillen",
         "demVotes": 242006,
         "repVotes": 398334,
+        "margin": 23.45,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4487,6 +8989,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Pete Ricketts",
         "demVotes": 286169,
         "repVotes": 411812,
+        "margin": 18,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4499,6 +9002,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Pete Ricketts",
         "demVotes": 211905,
         "repVotes": 308751,
+        "margin": 17.92,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4568,6 +9072,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Joe Lombardo",
         "demVotes": 481991,
         "repVotes": 497377,
+        "margin": 1.51,
         "electionType": "Regular",
         "demIncumbent": true,
         "repIncumbent": false
@@ -4580,6 +9085,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Adam Laxalt",
         "demVotes": 480007,
         "repVotes": 440320,
+        "margin": -4.08,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4592,6 +9098,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Brian Sandoval",
         "demVotes": 130722,
         "repVotes": 386340,
+        "margin": 46.7,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4661,6 +9168,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kelly Ayotte",
         "demVotes": 360149,
         "repVotes": 436122,
+        "margin": 9.34,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4673,6 +9181,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Chris Sununu",
         "demVotes": 256766,
         "repVotes": 352813,
+        "margin": 15.51,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4685,6 +9194,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Chris Sununu",
         "demVotes": 264639,
         "repVotes": 516609,
+        "margin": 31.76,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4754,6 +9264,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Mike DeWine",
         "demVotes": 1545489,
         "repVotes": 2580424,
+        "margin": 25.03,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4766,6 +9277,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Mike DeWine",
         "demVotes": 2070046,
         "repVotes": 2235825,
+        "margin": 3.71,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4778,6 +9290,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "John Kasich",
         "demVotes": 1009359,
         "repVotes": 1944848,
+        "margin": 30.61,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4828,7 +9341,7 @@ export const governorData: RaceForecast[] = [
     "kalshiRep": 0.89,
     "candidates": {
       "dem": {
-        "name": "TBD",
+        "name": "Democratic Candidate",
         "party": "D",
         "incumbent": false
       },
@@ -4847,6 +9360,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kevin Stitt",
         "demVotes": 481904,
         "repVotes": 639484,
+        "margin": 13.66,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4859,6 +9373,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kevin Stitt",
         "demVotes": 500973,
         "repVotes": 644579,
+        "margin": 12.1,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -4871,6 +9386,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Mary Fallin",
         "demVotes": 338239,
         "repVotes": 460298,
+        "margin": 14.79,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4921,7 +9437,7 @@ export const governorData: RaceForecast[] = [
     "kalshiRep": 0.95,
     "candidates": {
       "dem": {
-        "name": "TBD",
+        "name": "Democratic Candidate",
         "party": "D",
         "incumbent": false
       },
@@ -4940,6 +9456,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Henry McMaster",
         "demVotes": 692691,
         "repVotes": 988501,
+        "margin": 17.37,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4952,6 +9469,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Henry McMaster",
         "demVotes": 784182,
         "repVotes": 921342,
+        "margin": 8.04,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -4964,6 +9482,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Nikki Haley",
         "demVotes": 516166,
         "repVotes": 696645,
+        "margin": 14.48,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5014,7 +9533,7 @@ export const governorData: RaceForecast[] = [
     "kalshiRep": 0.96,
     "candidates": {
       "dem": {
-        "name": "TBD",
+        "name": "Democratic Candidate",
         "party": "D",
         "incumbent": false
       },
@@ -5033,6 +9552,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kristi Noem",
         "demVotes": 123148,
         "repVotes": 217035,
+        "margin": 26.81,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5045,6 +9565,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Kristi Noem",
         "demVotes": 161454,
         "repVotes": 172912,
+        "margin": 3.37,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -5057,6 +9578,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Dennis Daugaard",
         "demVotes": 70549,
         "repVotes": 195477,
+        "margin": 45.04,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5126,6 +9648,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Bill Lee",
         "demVotes": 572818,
         "repVotes": 1129390,
+        "margin": 31.99,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5138,6 +9661,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Bill Lee",
         "demVotes": 864863,
         "repVotes": 1336106,
+        "margin": 21.01,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -5150,6 +9674,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Bill Haslam",
         "demVotes": 309237,
         "repVotes": 951796,
+        "margin": 47.47,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5219,6 +9744,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Greg Abbott",
         "demVotes": 3553656,
         "repVotes": 4437099,
+        "margin": 10.9,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5231,6 +9757,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Greg Abbott",
         "demVotes": 3546615,
         "repVotes": 4656196,
+        "margin": 13.3,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5243,6 +9770,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Greg Abbott",
         "demVotes": 1835596,
         "repVotes": 2796547,
+        "margin": 20.37,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -5312,6 +9840,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Phil Scott",
         "demVotes": 79217,
         "repVotes": 266439,
+        "margin": 51.6,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5324,6 +9853,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Phil Scott",
         "demVotes": 68248,
         "repVotes": 202147,
+        "margin": 46.97,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5336,6 +9866,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Phil Scott",
         "demVotes": 99214,
         "repVotes": 248412,
+        "margin": 41.1,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5386,7 +9917,7 @@ export const governorData: RaceForecast[] = [
     "kalshiRep": 0.93,
     "candidates": {
       "dem": {
-        "name": "TBD",
+        "name": "Democratic Candidate",
         "party": "D",
         "incumbent": false
       },
@@ -5405,6 +9936,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Mark Gordon",
         "demVotes": 30686,
         "repVotes": 143696,
+        "margin": 58.25,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5417,6 +9949,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Mark Gordon",
         "demVotes": 55965,
         "repVotes": 136412,
+        "margin": 39.58,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": false
@@ -5429,6 +9962,7 @@ export const governorData: RaceForecast[] = [
         "repCandidate": "Matt Mead",
         "demVotes": 45752,
         "repVotes": 99700,
+        "margin": 32.14,
         "electionType": "Regular",
         "demIncumbent": false,
         "repIncumbent": true
@@ -5445,7 +9979,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2027,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2023,
+        "demPct": 52.53,
+        "repPct": 47.46,
+        "demCandidate": "Andy Beshear",
+        "repCandidate": "Daniel Cameron",
+        "demVotes": 694482,
+        "repVotes": 627457,
+        "margin": -5.07,
+        "electionType": "Regular",
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2019,
+        "demPct": 49.2,
+        "repPct": 48.8,
+        "demCandidate": "Andy Beshear",
+        "repCandidate": "Matt Bevin",
+        "demVotes": 709890,
+        "repVotes": 704754,
+        "margin": -0.4,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2015,
+        "demPct": 43.82,
+        "repPct": 52.52,
+        "demCandidate": "Jack Conway",
+        "repCandidate": "Matt Bevin",
+        "demVotes": 426620,
+        "repVotes": 511374,
+        "margin": 8.7,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Louisiana",
@@ -5454,7 +10028,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2027,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2023,
+        "demPct": 25.93,
+        "repPct": 51.56,
+        "demCandidate": "Shawn Wilson",
+        "repCandidate": "Jeff Landry",
+        "demVotes": 275525,
+        "repVotes": 547827,
+        "margin": 25.63,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2019,
+        "demPct": 51.3,
+        "repPct": 48.7,
+        "demCandidate": "John Bel Edwards",
+        "repCandidate": "Eddie Rispone",
+        "demVotes": 774498,
+        "repVotes": 734268,
+        "margin": -2.6,
+        "electionType": "Regular",
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2015,
+        "demPct": 56.1,
+        "repPct": 43.9,
+        "demCandidate": "John Bel Edwards",
+        "repCandidate": "David Vitter",
+        "demVotes": 646924,
+        "repVotes": 505940,
+        "margin": -12.2,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Mississippi",
@@ -5463,7 +10077,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2027,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2023,
+        "demPct": 47.7,
+        "repPct": 50.94,
+        "demCandidate": "Brandon Presley",
+        "repCandidate": "Tate Reeves",
+        "demVotes": 391614,
+        "repVotes": 418233,
+        "margin": 3.24,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2019,
+        "demPct": 46.83,
+        "repPct": 51.91,
+        "demCandidate": "Jim Hood",
+        "repCandidate": "Tate Reeves",
+        "demVotes": 414368,
+        "repVotes": 459396,
+        "margin": 5.08,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2015,
+        "demPct": 32.4,
+        "repPct": 66.2,
+        "demCandidate": "Robert Gray",
+        "repCandidate": "Phil Bryant",
+        "demVotes": 234858,
+        "repVotes": 480399,
+        "margin": 33.8,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Utah",
@@ -5472,7 +10126,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2028,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 28.63,
+        "repPct": 52.89,
+        "demCandidate": "Brian King",
+        "repCandidate": "Spencer Cox",
+        "demVotes": 420514,
+        "repVotes": 781431,
+        "margin": 24.26,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2020,
+        "demPct": 30.35,
+        "repPct": 62.98,
+        "demCandidate": "Christopher Peterson",
+        "repCandidate": "Spencer Cox",
+        "demVotes": 442754,
+        "repVotes": 918754,
+        "margin": 32.63,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 28.7,
+        "repPct": 66.7,
+        "demCandidate": "Mike Weinholtz",
+        "repCandidate": "Gary Herbert",
+        "demVotes": 323349,
+        "repVotes": 750850,
+        "margin": 38,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "North Carolina",
@@ -5481,7 +10175,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2028,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 54.9,
+        "repPct": 40.08,
+        "demCandidate": "Josh Stein",
+        "repCandidate": "Mark Robinson",
+        "demVotes": 3069496,
+        "repVotes": 2241309,
+        "margin": -14.82,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2020,
+        "demPct": 51.52,
+        "repPct": 47.01,
+        "demCandidate": "Roy Cooper",
+        "repCandidate": "Dan Forest",
+        "demVotes": 2834790,
+        "repVotes": 2586605,
+        "margin": -4.51,
+        "electionType": "Regular",
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 49,
+        "repPct": 48.8,
+        "demCandidate": "Roy Cooper",
+        "repCandidate": "Pat McCrory",
+        "demVotes": 2309157,
+        "repVotes": 2298880,
+        "margin": -0.2,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      }
+    ]
   },
   {
     "state": "Delaware",
@@ -5490,7 +10224,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2028,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 56.07,
+        "repPct": 43.93,
+        "demCandidate": "Matt Meyer",
+        "repCandidate": "Mike Ramone",
+        "demVotes": 279585,
+        "repVotes": 219050,
+        "margin": -12.14,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2020,
+        "demPct": 59.46,
+        "repPct": 38.63,
+        "demCandidate": "John Carney",
+        "repCandidate": "Julianne Murray",
+        "demVotes": 292903,
+        "repVotes": 190312,
+        "margin": -20.83,
+        "electionType": "Regular",
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 58.3,
+        "repPct": 39.2,
+        "demCandidate": "John Carney",
+        "repCandidate": "Colin Bonini",
+        "demVotes": 248404,
+        "repVotes": 166852,
+        "margin": -19.1,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Washington",
@@ -5499,7 +10273,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2028,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 55.51,
+        "repPct": 44.28,
+        "demCandidate": "Bob Ferguson",
+        "repCandidate": "Dave Reichert",
+        "demVotes": 2143368,
+        "repVotes": 1709818,
+        "margin": -11.23,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2020,
+        "demPct": 56.56,
+        "repPct": 43.12,
+        "demCandidate": "Jay Inslee",
+        "repCandidate": "Loren Culp",
+        "demVotes": 2294243,
+        "repVotes": 1749066,
+        "margin": -13.44,
+        "electionType": "Regular",
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 54.25,
+        "repPct": 45.49,
+        "demCandidate": "Jay Inslee",
+        "repCandidate": "Bill Bryant",
+        "demVotes": 1760520,
+        "repVotes": 1476346,
+        "margin": -8.76,
+        "electionType": "Regular",
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Indiana",
@@ -5508,7 +10322,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2028,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 41.11,
+        "repPct": 54.38,
+        "demCandidate": "Jennifer McCormick",
+        "repCandidate": "Mike Braun",
+        "demVotes": 1183741,
+        "repVotes": 1566081,
+        "margin": 13.27,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2020,
+        "demPct": 32.05,
+        "repPct": 56.51,
+        "demCandidate": "Woody Myers",
+        "repCandidate": "Eric Holcomb",
+        "demVotes": 968094,
+        "repVotes": 1706727,
+        "margin": 24.46,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 45.4,
+        "repPct": 51.4,
+        "demCandidate": "John R. Gregg",
+        "repCandidate": "Eric Holcomb",
+        "demVotes": 1235503,
+        "repVotes": 1397396,
+        "margin": 6,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Missouri",
@@ -5517,7 +10371,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2028,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 38.68,
+        "repPct": 59.12,
+        "demCandidate": "Crystal Quade",
+        "repCandidate": "Mike Kehoe",
+        "demVotes": 1141152,
+        "repVotes": 1746317,
+        "margin": 20.44,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2020,
+        "demPct": 40.69,
+        "repPct": 57.11,
+        "demCandidate": "Nicole Galloway",
+        "repCandidate": "Mike Parson",
+        "demVotes": 1225771,
+        "repVotes": 1720202,
+        "margin": 16.42,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 45.57,
+        "repPct": 51.14,
+        "demCandidate": "Chris Koster",
+        "repCandidate": "Eric Greitens",
+        "demVotes": 1277360,
+        "repVotes": 1433397,
+        "margin": 5.57,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Montana",
@@ -5526,7 +10420,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2028,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 38.62,
+        "repPct": 58.86,
+        "demCandidate": "Ryan Busse",
+        "repCandidate": "Greg Gianforte",
+        "demVotes": 232547,
+        "repVotes": 354448,
+        "margin": 20.24,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2020,
+        "demPct": 41.56,
+        "repPct": 54.43,
+        "demCandidate": "Mike Cooney",
+        "repCandidate": "Greg Gianforte",
+        "demVotes": 250860,
+        "repVotes": 328548,
+        "margin": 12.87,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2016,
+        "demPct": 50.3,
+        "repPct": 46.4,
+        "demCandidate": "Steve Bullock",
+        "repCandidate": "Greg Gianforte",
+        "demVotes": 255933,
+        "repVotes": 236115,
+        "margin": -3.9,
+        "electionType": "Regular",
+        "demIncumbent": true,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "North Dakota",
@@ -5535,7 +10469,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2028,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 25.98,
+        "repPct": 68.26,
+        "demCandidate": "Merrill Piepkorn",
+        "repCandidate": "Kelly Armstrong",
+        "demVotes": 94043,
+        "repVotes": 247056,
+        "margin": 42.28,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2020,
+        "demPct": 25.38,
+        "repPct": 65.84,
+        "demCandidate": "Shelley Lenz",
+        "repCandidate": "Doug Burgum",
+        "demVotes": 90789,
+        "repVotes": 235479,
+        "margin": 40.46,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 19.4,
+        "repPct": 76.5,
+        "demCandidate": "Marvin Nelson",
+        "repCandidate": "Doug Burgum",
+        "demVotes": 65855,
+        "repVotes": 259863,
+        "margin": 57.1,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "West Virginia",
@@ -5544,7 +10518,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2028,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 31.58,
+        "repPct": 61.99,
+        "demCandidate": "Steve Williams",
+        "repCandidate": "Patrick Morrisey",
+        "demVotes": 233976,
+        "repVotes": 459300,
+        "margin": 30.41,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2020,
+        "demPct": 30.22,
+        "repPct": 63.49,
+        "demCandidate": "Ben Salango",
+        "repCandidate": "Jim Justice",
+        "demVotes": 237024,
+        "repVotes": 497944,
+        "margin": 33.27,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": true
+      },
+      {
+        "year": 2016,
+        "demPct": 49.1,
+        "repPct": 42.3,
+        "demCandidate": "Jim Justice",
+        "repCandidate": "Bill Cole",
+        "demVotes": 350408,
+        "repVotes": 301987,
+        "margin": -6.8,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "New Jersey",
@@ -5553,7 +10567,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2029,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2025,
+        "demPct": 56.88,
+        "repPct": 42.52,
+        "demCandidate": "Mikie Sherrill",
+        "repCandidate": "Jack Ciattarelli",
+        "demVotes": 1896610,
+        "repVotes": 1417705,
+        "margin": -14.36,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2021,
+        "demPct": 51.22,
+        "repPct": 48,
+        "demCandidate": "Phil Murphy",
+        "repCandidate": "Jack Ciattarelli",
+        "demVotes": 1339471,
+        "repVotes": 1255185,
+        "margin": -3.22,
+        "electionType": "Regular",
+        "demIncumbent": true,
+        "repIncumbent": false
+      },
+      {
+        "year": 2017,
+        "demPct": 56.03,
+        "repPct": 41.89,
+        "demCandidate": "Phil Murphy",
+        "repCandidate": "Kim Guadagno",
+        "demVotes": 1203110,
+        "repVotes": 899583,
+        "margin": -14.14,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   },
   {
     "state": "Virginia",
@@ -5562,7 +10616,47 @@ export const governorNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2029,
     "termLength": 4,
-    "raceDesc": "TBD"
+    "pastResults": [
+      {
+        "year": 2025,
+        "demPct": 57.58,
+        "repPct": 42.22,
+        "demCandidate": "Abigail Spanberger",
+        "repCandidate": "Winsome Earle-Sears",
+        "demVotes": 1976857,
+        "repVotes": 1449586,
+        "margin": -15.36,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2021,
+        "demPct": 48.64,
+        "repPct": 50.58,
+        "demCandidate": "Terry McAuliffe",
+        "repCandidate": "Glenn Youngkin",
+        "demVotes": 1599470,
+        "repVotes": 1663158,
+        "margin": 1.94,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      },
+      {
+        "year": 2017,
+        "demPct": 53.9,
+        "repPct": 44.97,
+        "demCandidate": "Ralph Northam",
+        "repCandidate": "Ed Gillespie",
+        "demVotes": 1409175,
+        "repVotes": 1175731,
+        "margin": -8.93,
+        "electionType": "Regular",
+        "demIncumbent": false,
+        "repIncumbent": false
+      }
+    ]
   }
 ];
 
@@ -22535,3 +27629,5 @@ export const houseData: RaceForecast[] = [
 ];
 
 export const pres2024: Record<string, number> = {};
+
+export const electionYear: number = 2026;

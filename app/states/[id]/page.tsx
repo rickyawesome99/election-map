@@ -1,5 +1,5 @@
 import { statesData } from "@/data/statesData";
-import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, senateCurrent, pres2024, RaceForecast, NoElectionEntry } from "@/data/forecastData";
+import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, senateCurrent, pres2024, RaceForecast, NoElectionEntry, electionYear } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -221,8 +221,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const state = statesData.find((s) => s.id === id);
   if (!state) return { title: "State Not Found" };
   return {
-    title: `${state.name} — 2026 Forecast`,
-    description: `2026 election forecast for ${state.name}`,
+    title: `${state.name} — ${electionYear} Forecast`,
+    description: `${electionYear} election forecast for ${state.name}`,
   };
 }
 
@@ -232,19 +232,23 @@ export default async function StateDetailPage({ params, searchParams }: { params
   const state = statesData.find((s) => s.id === id);
   if (!state) notFound();
 
-  // Senate seat 1: 2026 race or no-election holdover
-  const senateRace = senateData.find((r) => r.id === state.abbr);
-  const senateNoEl = !senateRace ? senateNoElection.find((e) => e.abbr === state.abbr) : null;
-  // Senate seat 2: always a holdover (the other senator)
-  const senateHoldover = senateHoldovers.find((e) => e.abbr === state.abbr);
+  // Senate seat 1: 2026 race (id=abbr) or holdover (in senateNoElection)
+  const senateSeat1Race = senateData.find((r) => r.id === state.abbr);
+  const senateSeat1NoEl = !senateSeat1Race ? senateNoElection.find((e) => e.abbr === state.abbr) : null;
+  // Senate seat 2: 2026 race (id=abbr-2) or holdover (in senateHoldovers)
+  const senateSeat2Race = senateData.find((r) => r.id === `${state.abbr}-2`);
+  const senateSeat2Holdover = !senateSeat2Race ? senateHoldovers.find((e) => e.abbr === state.abbr) : null;
+  // The active 2026 senate race (either seat)
+  const anySenateRace = senateSeat1Race ?? senateSeat2Race;
   // Governor: 2026 race or no-election holdover
   const governorRace = governorData.find((r) => r.id === state.abbr);
   const governorNoEl = !governorRace ? governorNoElection.find((e) => e.abbr === state.abbr) : null;
 
   const houseRaces = houseData.filter((r) => r.state === state.name);
-  const senatePastResults = senateRace?.pastResults?.filter((r) => r.year >= 2016) ?? [];
-  const govPastResults = governorRace?.pastResults?.filter((r) => r.year >= 2016) ?? [];
-  const totalRaces2026 = houseRaces.length + (senateRace ? 1 : 0) + (governorRace ? 1 : 0);
+  const senatePastResults = anySenateRace?.pastResults?.filter((r) => r.year >= 2016) ?? [];
+  const govPastResults = (governorRace?.pastResults ?? governorNoEl?.pastResults ?? []).filter((r) => r.year >= 2016);
+  const govPageId = governorRace ? governorRace.id.toLowerCase() : governorNoEl?.abbr.toLowerCase();
+  const totalRaces2026 = houseRaces.length + (anySenateRace ? 1 : 0) + (governorRace ? 1 : 0);
 
   // Helper: current party from a race — explicit incumbent flag first, then margin sign as fallback
   function raceParty(race: RaceForecast): "D" | "R" {
@@ -310,10 +314,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
             </h2>
             <p className="text-sm leading-relaxed mb-5" style={{ color: "var(--app-text-primary)" }}>
               {state.name} is represented by {houseRaces.length} congressional district{houseRaces.length !== 1 ? "s" : ""} in the U.S. House.
-              {senateRace
-                ? ` The state's Class 2 Senate seat is on the ballot in 2026.`
-                : " No Senate seat is up for election in 2026."}
-              {governorRace ? " A gubernatorial election is also scheduled for November 2026." : ""}
+              {anySenateRace
+                ? ` A U.S. Senate seat is on the ballot in ${electionYear}.`
+                : ` No Senate seat is up for election in ${electionYear}.`}
+              {governorRace ? ` A gubernatorial election is also scheduled for November ${electionYear}.` : ""}
             </p>
 
             <div className="grid grid-cols-4 gap-2">
@@ -413,34 +417,40 @@ export default async function StateDetailPage({ params, searchParams }: { params
               Federal Offices
             </h2>
             <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-              {totalRaces2026} race{totalRaces2026 !== 1 ? "s" : ""} on ballot in 2026 · General: {GENERAL_ELECTION}
+              {totalRaces2026} race{totalRaces2026 !== 1 ? "s" : ""} on ballot in {electionYear} · General: {GENERAL_ELECTION}
             </span>
           </div>
 
           <div className="flex flex-col gap-3">
             {/* Senate seat 1 */}
-            {senateRace ? (
+            {senateSeat1Race ? (
               <ElectionCard
-                race={senateRace}
-                href={`/senate/${senateRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                race={senateSeat1Race}
+                href={`/senate/${senateSeat1Race.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
                 label="U.S. Senate (Seat 1)"
               />
-            ) : senateNoEl ? (
+            ) : senateSeat1NoEl ? (
               <IncumbentCard
-                entry={senateNoEl}
-                href={`/senate/${senateNoEl.abbr.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                entry={senateSeat1NoEl}
+                href={`/senate/${senateSeat1NoEl.abbr.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
                 label="U.S. Senate (Seat 1)"
               />
             ) : null}
 
-            {/* Senate seat 2 — always a holdover */}
-            {senateHoldover && (
-              <IncumbentCard
-                entry={senateHoldover}
-                href={`/senate/${senateHoldover.abbr.toLowerCase()}-2?from=${encodeURIComponent(`/states/${id}`)}`}
+            {/* Senate seat 2 — 2026 race or holdover */}
+            {senateSeat2Race ? (
+              <ElectionCard
+                race={senateSeat2Race}
+                href={`/senate/${senateSeat2Race.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
                 label="U.S. Senate (Seat 2)"
               />
-            )}
+            ) : senateSeat2Holdover ? (
+              <IncumbentCard
+                entry={senateSeat2Holdover}
+                href={`/senate/${senateSeat2Holdover.abbr.toLowerCase()}-2?from=${encodeURIComponent(`/states/${id}`)}`}
+                label="U.S. Senate (Seat 2)"
+              />
+            ) : null}
 
             {/* Governor */}
             {governorRace ? (
@@ -550,7 +560,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                   {res.year}
                 </span>
                 <Link
-                  href={senateRace ? `/senate/${senateRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}` : "#"}
+                  href={anySenateRace ? `/senate/${anySenateRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}` : "#"}
                   className="text-xs w-24 font-medium transition-colors hover:underline"
                   style={{ color: "var(--app-text-muted)" }}
                 >
@@ -567,7 +577,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
             ))}
 
             {/* Governor past results */}
-            {governorRace && govPastResults.length > 0 && (
+            {govPastResults.length > 0 && govPageId && (
               <>
                 <div className="h-px my-1" style={{ background: "var(--app-border)" }} />
                 {govPastResults.map((res) => (
@@ -579,7 +589,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                       {res.year}
                     </span>
                     <Link
-                      href={`/governor/${governorRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                      href={`/governor/${govPageId}?from=${encodeURIComponent(`/states/${id}`)}`}
                       className="text-xs w-24 font-medium transition-colors hover:underline"
                       style={{ color: "var(--app-text-muted)" }}
                     >

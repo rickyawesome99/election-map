@@ -1,11 +1,11 @@
-import { senateData } from "@/data/forecastData";
+import { senateData, electionYear } from "@/data/forecastData";
 import RaceTable from "@/components/RaceTable";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata = {
-  title: "Senate Races — 2026 Forecast",
-  description: "2026 U.S. Senate race forecasts for all Class 2 seats",
+  title: `Senate Races — ${electionYear} Forecast`,
+  description: `${electionYear} U.S. Senate race forecasts for all Class 2 seats`,
 };
 
 export default function SenateListPage() {
@@ -75,7 +75,7 @@ export default function SenateListPage() {
             Senate Races
           </h1>
           <p style={{ color: "var(--app-text-muted)" }}>
-            2026 U.S. Senate forecast · {senateData.length} Class 2 seats
+            {electionYear} U.S. Senate forecast · {senateData.length} Class 2 seats
           </p>
         </div>
 

@@ -1,4 +1,4 @@
-import { governorData, governorNoElection, NoElectionEntry } from "@/data/forecastData";
+import { governorData, governorNoElection, NoElectionEntry, electionYear } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const { id } = await params;
   const race = governorData.find((r) => r.id.toLowerCase() === id.toLowerCase());
   if (race) return {
-    title: `${race.name} Governor Race — 2026 Forecast`,
-    description: `2026 Governor forecast for ${race.name}: ${race.rating}, ${Math.round(race.probability * 100)}% Democratic win probability`,
+    title: `${race.name} Governor Race — ${electionYear} Forecast`,
+    description: `${electionYear} Governor forecast for ${race.name}: ${race.rating}, ${Math.round(race.probability * 100)}% Democratic win probability`,
   };
   const noEl = governorNoElection.find((e) => e.abbr.toLowerCase() === id.toLowerCase());
-  if (noEl) return { title: `${noEl.state} Governor — No Election in 2026` };
+  if (noEl) return { title: `${noEl.state} Governor — No Election in ${electionYear}` };
   return { title: "Race Not Found" };
 }
 
@@ -40,7 +40,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
           <div className="flex items-center gap-3 mb-2 flex-wrap">
             <Link href={`/states/${stateSlug(entry.state)}?from=${encodeURIComponent(from)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</Link>
             <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-              No Election in 2026
+              No Election in {electionYear}
             </span>
           </div>
           <p style={{ color: "var(--app-text-muted)" }}>Gubernatorial Office · No Election This Cycle</p>
@@ -63,13 +63,12 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
             <div className="flex-1">
               <div className="text-xl font-bold mb-1" style={{ color: "var(--app-text-primary)" }}>{entry.incumbent}</div>
               <div className="text-sm font-medium mb-3" style={{ color: partyColor }}>{partyLabel} · Incumbent</div>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-4">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
                 {[
                   { label: "State", value: entry.state },
                   { label: "Party", value: partyLabel },
                   { label: "Next Election", value: String(entry.nextElection) },
                   { label: "Term Started", value: "TBD" },
-                  { label: "Term Ends", value: String(entry.nextElection) },
                 ].map(({ label, value }) => (
                   <div key={label} className="rounded-lg p-3" style={{ background: "var(--app-bg)" }}>
                     <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>{label}</div>
@@ -91,7 +90,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
             <div>
               <div className="text-sm font-semibold mb-1" style={{ color: "var(--app-text-primary)" }}>No Election This Cycle</div>
               <div className="text-sm" style={{ color: "var(--app-text-muted)" }}>
-                This governorship is not on the ballot in 2026. The next election is scheduled for{" "}
+                This governorship is not on the ballot in {electionYear}. The next election is scheduled for{" "}
                 <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>{entry.nextElection}</span>.
                 Incumbent and biographical information to be filled in.
               </div>
@@ -108,27 +107,96 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
 
         <section className="rounded-xl p-6" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
           <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-5" style={{ color: "var(--app-text-muted)" }}>Past Election Results</h2>
-          <div className="flex flex-col gap-4">
-            {[entry.nextElection - 4, entry.nextElection - 8].map((year) => (
-              <div key={year} style={{ opacity: 0.45 }}>
-                <div className="flex items-center gap-3 mb-2">
-                  <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{year}</span>
-                  <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
-                </div>
-                <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
-                  <div>
-                    <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                    <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>TBD</div>
+          <div className="flex flex-col gap-6">
+            {(entry.pastResults && entry.pastResults.length > 0
+              ? entry.pastResults
+              : [entry.nextElection - 4, entry.nextElection - 8].map((year) => ({ year, demPct: 0, repPct: 0, placeholder: true }))
+            ).map((res) => {
+              const isPlaceholder = (res as { placeholder?: boolean }).placeholder;
+              const winner = res.demPct > res.repPct ? "D" : "R";
+              const margin = Math.abs(res.demPct - res.repPct).toFixed(1);
+              const total = res.demPct + res.repPct;
+              const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
+              const demName = (res as { demCandidate?: string }).demCandidate ?? "Democratic Candidate";
+              const repName = (res as { repCandidate?: string }).repCandidate ?? "Republican Candidate";
+              return (
+                <div key={res.year} style={{ opacity: isPlaceholder ? 0.45 : 1 }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+                    {isPlaceholder ? (
+                      <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
+                    ) : (
+                      <>
+                        {(res as { electionType?: string }).electionType && (
+                          <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+                            {(res as { electionType?: string }).electionType}
+                          </span>
+                        )}
+                        <span
+                          className="text-xs font-bold px-2 py-0.5 rounded-full"
+                          style={winner === "D"
+                            ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                            : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                        >
+                          {winner === "D" ? "D" : "R"}+{margin}
+                        </span>
+                      </>
+                    )}
                   </div>
-                  <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                  <div className="text-right">
-                    <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                    <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>TBD</div>
+                  <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
+                    <div className="flex flex-col">
+                      <div className="flex items-center gap-1.5 mb-0.5">
+                        <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
+                        {!isPlaceholder && (res as { demIncumbent?: boolean }).demIncumbent && (
+                          <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>
+                        )}
+                      </div>
+                      <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
+                        {isPlaceholder ? "TBD" : demName}
+                      </span>
+                    </div>
+                    <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
+                    <div className="flex flex-col items-end">
+                      <div className="flex items-center gap-1.5 mb-0.5">
+                        {!isPlaceholder && (res as { repIncumbent?: boolean }).repIncumbent && (
+                          <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
+                        )}
+                        <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
+                      </div>
+                      <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
+                        {isPlaceholder ? "TBD" : repName}
+                      </span>
+                    </div>
                   </div>
+                  <div className="flex h-4 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>
+                    {!isPlaceholder && (
+                      <>
+                        <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
+                        <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
+                      </>
+                    )}
+                  </div>
+                  {!isPlaceholder && (
+                    <>
+                      <div className="flex justify-between">
+                        <span className="text-xs font-semibold" style={{ color: "var(--party-dem)" }}>{res.demPct}%</span>
+                        <span className="text-xs font-semibold" style={{ color: "var(--party-rep)" }}>{res.repPct}%</span>
+                      </div>
+                      <div className="flex justify-between mt-1">
+                        {(res as { demVotes?: number }).demVotes != null
+                          ? <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{((res as { demVotes?: number }).demVotes!).toLocaleString()} votes</span>
+                          : <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>— votes</span>
+                        }
+                        {(res as { repVotes?: number }).repVotes != null
+                          ? <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{((res as { repVotes?: number }).repVotes!).toLocaleString()} votes</span>
+                          : <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>— votes</span>
+                        }
+                      </div>
+                    </>
+                  )}
                 </div>
-                <div className="flex h-4 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }} />
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
       </main>
@@ -174,7 +242,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
               {race.rating}
             </span>
           </div>
-          <p style={{ color: "var(--app-text-muted)" }}>2026 Gubernatorial Race</p>
+          <p style={{ color: "var(--app-text-muted)" }}>{electionYear} Gubernatorial Race</p>
         </div>
 
         {/* Bio section */}
@@ -247,19 +315,20 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                         </svg>
                       )}
                     </div>
-                    <div className="font-semibold text-sm leading-tight mb-1" style={{ color: "var(--app-text-primary)" }}>
-                      {candidate.name}
+                    <div className="flex items-center justify-center gap-1.5 mb-1">
+                      <div className="font-semibold text-sm leading-tight" style={{ color: "var(--app-text-primary)" }}>
+                        {candidate.name}
+                      </div>
+                      {candidate.incumbent && (
+                        <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: `${accentColor}22`, color: accentColor }}>Inc.</span>
+                      )}
                     </div>
-                    <div className="text-xs font-medium mb-1" style={{ color: accentColor }}>
+                    <div className="text-xs font-medium mb-2" style={{ color: accentColor }}>
                       {partyLabel}
                     </div>
-                    <div className="text-[10px] mb-1 h-4" style={{ color: "var(--app-text-muted)" }}>
-                      {candidate.incumbent ? "Incumbent" : ""}
-                    </div>
-                    <div className="text-lg font-bold tabular-nums mt-1" style={{ color: textColor }}>
+                    <div className="text-3xl font-bold tabular-nums" style={{ color: textColor }}>
                       {pct}%
                     </div>
-                    <div className="text-[10px]" style={{ color: "var(--app-text-muted)" }}>projected vote share</div>
                   </div>
                 );
               })}
@@ -323,6 +392,12 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             className="rounded-xl p-6"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
           >
+            <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+              Projected Margin
+            </h2>
+            <div className="text-4xl font-bold mb-6" style={{ color: marginIsD ? "var(--party-dem)" : "var(--party-rep)" }}>
+              {marginIsD ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
+            </div>
             <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-4" style={{ color: "var(--app-text-muted)" }}>
               Win Probability
             </h2>
@@ -333,18 +408,6 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             <div className="h-4 rounded-full overflow-hidden flex">
               <div style={{ width: `${demPct}%`, background: "#1b408c" }} className="transition-all duration-300" />
               <div style={{ width: `${repPct}%`, background: "#be1c29" }} className="transition-all duration-300" />
-            </div>
-
-            <div className="mt-6">
-              <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-                Projected Margin
-              </h2>
-              <div className="text-4xl font-bold" style={{ color: marginIsD ? "var(--party-dem)" : "var(--party-rep)" }}>
-                {marginIsD ? "+" : ""}{race.margin.toFixed(1)}
-              </div>
-              <div className="text-sm mt-1" style={{ color: "var(--app-text-muted)" }}>
-                {marginIsD ? "Democratic" : "Republican"} advantage
-              </div>
             </div>
           </section>
 

@@ -28,6 +28,9 @@ const path = require("path");
 const DATA_DIR  = path.join(__dirname, "../data");
 const SHEET_DIR = __dirname;
 
+// ── Election year — change this one value to target a new cycle ───────────────
+const ELECTION_YEAR = 2026;
+
 // ── CSV Parser ────────────────────────────────────────────────────────────────
 
 function parseCSV(filename) {
@@ -73,8 +76,8 @@ const num  = (v, def = 0) => { const n = parseFloat(v); return isNaN(n) ? def : 
 const int2 = (v, def = 0) => { const n = parseInt(v);   return isNaN(n) ? def : n; };
 // Handles TRUE/FALSE and Y/N
 const bool = (v) => { const s = (v || "").trim().toUpperCase(); return s === "TRUE" || s === "Y" || s === "YES"; };
-// Treats blank and "N/A" as missing
-const has  = (v) => v != null && v.trim() !== "" && v.trim().toUpperCase() !== "N/A";
+// Treats blank, "N/A", and "TBD" as missing
+const has  = (v) => v != null && v.trim() !== "" && v.trim().toUpperCase() !== "N/A" && v.trim().toUpperCase() !== "TBD";
 
 function rating(margin) {
   if (margin >= 15)  return "Safe D";
@@ -148,6 +151,11 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
   // termLength — governor only (optional)
   if (has(row.Term_Length)) forecast.termLength = int2(row.Term_Length);
 
+  // senate-specific fields
+  if (has(row.seat))       forecast.seat        = int2(row.seat);
+  if (has(row['class']))   forecast.seatClass   = int2(row['class']);
+  if (has(row.type))       forecast.electionType = row.type;
+
   // race description
   if (has(row.race_desc)) forecast.raceDesc = row.race_desc;
 
@@ -191,8 +199,13 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
         // Vote counts — strip commas in case of formatted numbers like "412,961"
         const dv = parseInt((r.dem_votes || "").replace(/,/g, ""));
         const rv = parseInt((r.rep_votes || "").replace(/,/g, ""));
+        const tv = parseInt((r.total_votes || "").replace(/,/g, ""));
         if (!isNaN(dv) && dv > 0) pr.demVotes = dv;
         if (!isNaN(rv) && rv > 0) pr.repVotes = rv;
+        if (!isNaN(tv) && tv > 0) pr.totalVotes = tv;
+        if (has(r.margin)) pr.margin = num(r.margin);
+        if (has(r.seat)) pr.seat = int2(r.seat);
+        if (has(r['class'])) pr.seatClass = int2(r['class']);
         if (has(r.type)) pr.electionType = r.type;
         if (has(r.dem_incumbent)) pr.demIncumbent = bool(r.dem_incumbent);
         if (has(r.rep_incumbent)) pr.repIncumbent = bool(r.rep_incumbent);
@@ -206,7 +219,7 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
 }
 
 // Build a NoElectionEntry object
-function buildNoElection(row, state, abbr) {
+function buildNoElection(row, state, abbr, pastRows) {
   const entry = {
     state,
     abbr,
@@ -216,6 +229,29 @@ function buildNoElection(row, state, abbr) {
   };
   if (has(row.Term_Length)) entry.termLength = int2(row.Term_Length);
   if (has(row.race_desc))   entry.raceDesc   = row.race_desc;
+  if (pastRows && pastRows.length > 0) {
+    entry.pastResults = pastRows
+      .map((r) => {
+        const pr = { year: int2(r.year, 0), demPct: num(r.dem_pct), repPct: num(r.rep_pct) };
+        if (has(r.dem_candidate)) pr.demCandidate = r.dem_candidate;
+        if (has(r.rep_candidate)) pr.repCandidate = r.rep_candidate;
+        const dv = parseInt((r.dem_votes || "").replace(/,/g, ""));
+        const rv = parseInt((r.rep_votes || "").replace(/,/g, ""));
+        const tv = parseInt((r.total_votes || "").replace(/,/g, ""));
+        if (!isNaN(dv) && dv > 0) pr.demVotes = dv;
+        if (!isNaN(rv) && rv > 0) pr.repVotes = rv;
+        if (!isNaN(tv) && tv > 0) pr.totalVotes = tv;
+        if (has(r.margin)) pr.margin = num(r.margin);
+        if (has(r.seat)) pr.seat = int2(r.seat);
+        if (has(r['class'])) pr.seatClass = int2(r['class']);
+        if (has(r.type)) pr.electionType = r.type;
+        if (has(r.dem_incumbent)) pr.demIncumbent = bool(r.dem_incumbent);
+        if (has(r.rep_incumbent)) pr.repIncumbent = bool(r.rep_incumbent);
+        return pr;
+      })
+      .filter((r) => r.year > 0)
+      .sort((a, b) => b.year - a.year);
+  }
   return entry;
 }
 
@@ -292,14 +328,17 @@ for (const row of senateRows) {
   const seat  = parseInt(row.seat);
   const nextY = int2(row.next_election, 2028);
 
-  if (nextY === 2026) {
-    // Active race
+  if (nextY === ELECTION_YEAR) {
+    // Active race — seat 1 uses abbr as id (e.g. "AK"), seat 2 uses "abbr-2" (e.g. "DE-2")
+    const raceId = seat === 2 ? `${abbr}-2` : abbr;
     const past = senatePastMap[`${abbr}-${seat}`] || [];
-    senateData.push(buildRaceForecast(row, "senate", abbr, state, state, past));
+    senateData.push(buildRaceForecast(row, "senate", raceId, state, state, past));
   } else if (seat === 1) {
-    senateNoElection.push(buildNoElection(row, state, abbr));
+    const past = senatePastMap[`${abbr}-${seat}`] || [];
+    senateNoElection.push(buildNoElection(row, state, abbr, past));
   } else {
-    senateHoldovers.push(buildNoElection(row, state, abbr));
+    const past = senatePastMap[`${abbr}-${seat}`] || [];
+    senateHoldovers.push(buildNoElection(row, state, abbr, past));
   }
 }
 
@@ -331,11 +370,11 @@ for (const row of govRows) {
   const state = row.state_name;
   const nextY = int2(row.next_election, 2028);
 
-  if (nextY === 2026) {
+  if (nextY === ELECTION_YEAR) {
     const past = govPastMap[abbr] || [];
     governorData.push(buildRaceForecast(row, "governor", abbr, state, state, past));
   } else {
-    governorNoElection.push(buildNoElection(row, state, abbr));
+    governorNoElection.push(buildNoElection(row, state, abbr, govPastMap[abbr] || []));
   }
 }
 
@@ -398,6 +437,10 @@ export type PastResult = {
   repCandidate?: string;
   demVotes?: number;
   repVotes?: number;
+  totalVotes?: number;
+  margin?: number;
+  seat?: number;
+  seatClass?: number;
   electionType?: string;
   demIncumbent?: boolean;
   repIncumbent?: boolean;
@@ -413,6 +456,9 @@ export type RaceForecast = {
   rating: string;
   history: { date: string; value: number }[];
   termLength?: number;
+  seat?: number;
+  seatClass?: number;
+  electionType?: string;
   raceDesc?: string;
   kalshiDem?: number;
   kalshiRep?: number;
@@ -432,6 +478,7 @@ export type NoElectionEntry = {
   nextElection: number;
   termLength?: number;
   raceDesc?: string;
+  pastResults?: PastResult[];
 };
 
 export const senateData: RaceForecast[] = ${j(senateData)};
@@ -449,6 +496,8 @@ export const governorNoElection: NoElectionEntry[] = ${j(governorNoElection)};
 export const houseData: RaceForecast[] = ${j(houseData)};
 
 export const pres2024: Record<string, number> = ${j(pres2024)};
+
+export const electionYear: number = ${ELECTION_YEAR};
 `;
 
 const outPath = path.join(DATA_DIR, "forecastData.ts");

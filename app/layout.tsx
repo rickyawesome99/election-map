@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// NOTE: Update year here manually when changing election cycle (all other references use electionYear from forecastData)
 export const metadata: Metadata = {
   title: "2026 Election Forecast",
   description: "Interactive U.S. election forecast map for House, Senate, and Governor races",

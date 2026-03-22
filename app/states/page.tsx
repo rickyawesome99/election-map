@@ -1,10 +1,11 @@
 import { statesData } from "@/data/statesData";
+import { electionYear } from "@/data/forecastData";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata = {
-  title: "States — 2026 Forecast",
-  description: "2026 U.S. election forecast by state",
+  title: `States — ${electionYear} Forecast`,
+  description: `${electionYear} U.S. election forecast by state`,
 };
 
 const NAV = [
@@ -67,7 +68,7 @@ export default function StatesListPage() {
             States
           </h1>
           <p style={{ color: "var(--app-text-muted)" }}>
-            2026 election forecast by state · all 50 states
+            {electionYear} election forecast by state · all 50 states
           </p>
         </div>
 

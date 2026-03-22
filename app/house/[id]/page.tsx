@@ -1,4 +1,4 @@
-import { houseData } from "@/data/forecastData";
+import { houseData, electionYear } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const race = houseData.find((r) => r.id.toLowerCase() === id.toLowerCase());
   if (!race) return { title: "Race Not Found" };
   return {
-    title: `${race.name} House Race — 2026 Forecast`,
-    description: `2026 House forecast for ${race.name}: ${race.rating}, ${Math.round(race.probability * 100)}% Democratic win probability`,
+    title: `${race.name} House Race — ${electionYear} Forecast`,
+    description: `${electionYear} House forecast for ${race.name}: ${race.rating}, ${Math.round(race.probability * 100)}% Democratic win probability`,
   };
 }
 
@@ -58,7 +58,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               {race.rating}
             </span>
           </div>
-          <p style={{ color: "var(--app-text-muted)" }}>2026 U.S. House Race · {districtLabel}</p>
+          <p style={{ color: "var(--app-text-muted)" }}>{electionYear} U.S. House Race · {districtLabel}</p>
         </div>
 
         {/* District map */}
@@ -129,19 +129,20 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                         <ellipse cx="64" cy="148" rx="48" ry="36" fill="var(--app-border)" />
                       </svg>
                     </div>
-                    <div className="font-semibold text-sm leading-tight mb-1" style={{ color: "var(--app-text-primary)" }}>
-                      {candidate.name}
+                    <div className="flex items-center justify-center gap-1.5 mb-1">
+                      <div className="font-semibold text-sm leading-tight" style={{ color: "var(--app-text-primary)" }}>
+                        {candidate.name}
+                      </div>
+                      {candidate.incumbent && (
+                        <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: `${accentColor}22`, color: accentColor }}>Inc.</span>
+                      )}
                     </div>
-                    <div className="text-xs font-medium mb-1" style={{ color: accentColor }}>
+                    <div className="text-xs font-medium mb-2" style={{ color: accentColor }}>
                       {partyLabel}
                     </div>
-                    <div className="text-[10px] mb-1 h-4" style={{ color: "var(--app-text-muted)" }}>
-                      {candidate.incumbent ? "Incumbent" : ""}
-                    </div>
-                    <div className="text-lg font-bold tabular-nums mt-1" style={{ color: textColor }}>
+                    <div className="text-3xl font-bold tabular-nums" style={{ color: textColor }}>
                       {pct}%
                     </div>
-                    <div className="text-[10px]" style={{ color: "var(--app-text-muted)" }}>projected vote share</div>
                   </div>
                 );
               })}
@@ -180,14 +181,12 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                   <div className="font-semibold text-sm leading-tight mb-1 italic" style={{ color: "var(--app-text-muted)" }}>
                     TBD
                   </div>
-                  <div className="text-xs font-medium mb-1" style={{ color }}>
+                  <div className="text-xs font-medium mb-2" style={{ color }}>
                     {label}
                   </div>
-                  <div className="text-[10px] mb-1 h-4" style={{ color: "var(--app-text-muted)" }} />
-                  <div className="text-lg font-bold tabular-nums mt-1" style={{ color }}>
+                  <div className="text-3xl font-bold tabular-nums" style={{ color }}>
                     {pct}%
                   </div>
-                  <div className="text-[10px]" style={{ color: "var(--app-text-muted)" }}>win probability</div>
                 </div>
               ))}
             </div>
@@ -205,6 +204,12 @@ export default async function HousePage({ params, searchParams }: { params: Prom
             className="rounded-xl p-6"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
           >
+            <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+              Projected Margin
+            </h2>
+            <div className="text-4xl font-bold mb-6" style={{ color: marginIsD ? "var(--party-dem)" : "var(--party-rep)" }}>
+              {marginIsD ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
+            </div>
             <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-4" style={{ color: "var(--app-text-muted)" }}>
               Win Probability
             </h2>
@@ -215,18 +220,6 @@ export default async function HousePage({ params, searchParams }: { params: Prom
             <div className="h-4 rounded-full overflow-hidden flex">
               <div style={{ width: `${demPct}%`, background: "#1b408c" }} className="transition-all duration-300" />
               <div style={{ width: `${repPct}%`, background: "#be1c29" }} className="transition-all duration-300" />
-            </div>
-
-            <div className="mt-6">
-              <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-                Projected Margin
-              </h2>
-              <div className="text-4xl font-bold" style={{ color: marginIsD ? "var(--party-dem)" : "var(--party-rep)" }}>
-                {marginIsD ? "+" : ""}{race.margin.toFixed(1)}
-              </div>
-              <div className="text-sm mt-1" style={{ color: "var(--app-text-muted)" }}>
-                {marginIsD ? "Democratic" : "Republican"} advantage
-              </div>
             </div>
           </section>
 
