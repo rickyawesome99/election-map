@@ -38,9 +38,11 @@ export default async function HousePage({ params, searchParams }: { params: Prom
   const districtLabel = districtNum === "AL"
     ? `${race.state} At-Large`
     : `${race.state}'s ${districtNum}${getOrdinalSuffix(parseInt(districtNum))} Congressional District`;
-  const incumbent = race.candidates
+  const incumbentCandidate = race.candidates
     ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
     : null;
+  const currentRepName = incumbentCandidate?.name ?? race.seatHolder ?? "TBD";
+  const currentRepParty = incumbentCandidate?.party ?? race.seatParty ?? null;
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -84,8 +86,8 @@ export default async function HousePage({ params, searchParams }: { params: Prom
             {[
               { label: "State", value: race.state },
               { label: "District", value: districtNum === "AL" ? "At-Large" : `${stateAbbr}-${districtNum}` },
-              { label: "Current Rep.", value: incumbent?.name ?? "TBD" },
-              { label: "Party", value: incumbent ? (incumbent.party === "D" ? "Democrat" : incumbent.party === "R" ? "Republican" : "Independent") : "TBD" },
+              { label: "Current Rep.", value: currentRepName },
+              { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD" },
             ].map(({ label, value }) => (
               <div key={label} className="rounded-lg p-3 flex flex-col" style={{ background: "var(--app-bg)" }}>
                 <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
@@ -269,8 +271,10 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                 const margin = Math.abs(res.demPct - res.repPct).toFixed(1);
                 const total = res.demPct + res.repPct;
                 const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
-                const demName = (res as { demCandidate?: string }).demCandidate ?? "Democratic Candidate";
-                const repName = (res as { repCandidate?: string }).repCandidate ?? "Republican Candidate";
+                const demName = (res as { demCandidate?: string }).demCandidate ?? "None";
+                const repName = (res as { repCandidate?: string }).repCandidate ?? "None";
+                const demInc = !isPlaceholder && !!(res as { demIncumbent?: boolean }).demIncumbent;
+                const repInc = !isPlaceholder && !!(res as { repIncumbent?: boolean }).repIncumbent;
                 return (
                   <div key={res.year} style={{ opacity: isPlaceholder ? 0.45 : 1 }}>
                     <div className="flex items-center gap-3 mb-3">
@@ -291,16 +295,26 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                     <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
                       <div className="flex flex-col">
                         <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                        <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
-                          {isPlaceholder ? "TBD" : demName}
-                        </span>
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
+                            {isPlaceholder ? "TBD" : demName}
+                          </span>
+                          {demInc && (
+                            <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>
+                          )}
+                        </div>
                       </div>
                       <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
                       <div className="flex flex-col items-end">
                         <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                        <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
-                          {isPlaceholder ? "TBD" : repName}
-                        </span>
+                        <div className="flex items-center gap-1.5 justify-end">
+                          {repInc && (
+                            <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
+                          )}
+                          <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
+                            {isPlaceholder ? "TBD" : repName}
+                          </span>
+                        </div>
                       </div>
                     </div>
                     <div className="flex h-4 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>
@@ -318,8 +332,12 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                           <span className="text-xs font-semibold" style={{ color: "var(--party-rep)" }}>{res.repPct}%</span>
                         </div>
                         <div className="flex justify-between mt-1">
-                          <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>
-                          <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD votes</span>
+                          <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+                            {(res as { demVotes?: number }).demVotes != null ? (res as { demVotes: number }).demVotes.toLocaleString() + " votes" : "— votes"}
+                          </span>
+                          <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+                            {(res as { repVotes?: number }).repVotes != null ? (res as { repVotes: number }).repVotes.toLocaleString() + " votes" : "— votes"}
+                          </span>
                         </div>
                       </>
                     )}

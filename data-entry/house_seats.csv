@@ -1,0 +1,436 @@
+district_id,district_name,state_abbr,state_name,year,incumbent,party,race_desc,prob_dem,prob_rep,margin,proj_dem,proj_rep,dem_name,dem_incumbent,rep_name,rep_incumbent,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
+101,AL-1,AL,Alabama,2026,Barry Moore,Republican,,,,,,,Clyde Jones,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+102,AL-2,AL,Alabama,2026,Shomari Figures,Democratic,,,,,,,Shomari Figures,TRUE,Hampton Harris,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+103,AL-3,AL,Alabama,2026,Mike Rogers,Republican,,,,,,,Lee McInnis,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+104,AL-4,AL,Alabama,2026,Robert B. Aderholt,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+105,AL-5,AL,Alabama,2026,Dale W. Strong,Republican,,,,,,,TBD,FALSE,Dale Strong,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+106,AL-6,AL,Alabama,2026,Gary J. Palmer,Republican,,,,,,,Keith Pilkington,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+107,AL-7,AL,Alabama,2026,Terri A. Sewell,Democratic,,,,,,,Terri Sewell,TRUE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+200,AK-AL,AK,Alaska,2026,Nicholas J. Begich III,Republican,,,,,,,TBD,FALSE,Nicholas Begich,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+401,AZ-1,AZ,Arizona,2026,David Schweikert,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+402,AZ-2,AZ,Arizona,2026,Elijah Crane,Republican,,,,,,,TBD,FALSE,Elijah Crane,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+403,AZ-3,AZ,Arizona,2026,Yassamin Ansari,Democratic,,,,,,,TBD,FALSE,Abe Hamadeh,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+404,AZ-4,AZ,Arizona,2026,Greg Stanton,Democratic,,,,,,,Greg Stanton,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+405,AZ-5,AZ,Arizona,2026,Andy Biggs,Republican,,,,,,,TBD,FALSE,Andy Biggs,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+406,AZ-6,AZ,Arizona,2026,Juan Ciscomani,Republican,,,,,,,Kirsten Engel,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+407,AZ-7,AZ,Arizona,2026,Adelita S. Grijalva,Democratic,,,,,,,Adelita Grijalva,TRUE,Daniel Butierez,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+408,AZ-8,AZ,Arizona,2026,Abraham J. Hamadeh,Republican,,,,,,,TBD,FALSE,Debbie Lesko,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+409,AZ-9,AZ,Arizona,2026,Paul A. Gosar,Republican,,,,,,,TBD,FALSE,Paul Gosar,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+501,AR-1,AR,Arkansas,2026,Eric A. “Rick” Crawford,Republican,,,,,,,Terri Yarbrough Green,FALSE,Rick Crawford,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+502,AR-2,AR,Arkansas,2026,J. French Hill,Republican,,,,,,,Chris Jones,FALSE,French Hill,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+503,AR-3,AR,Arkansas,2026,Steve Womack,Republican,,,,,,,Robb Ryerse,FALSE,Steve Womack,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+504,AR-4,AR,Arkansas,2026,Bruce Westerman,Republican,,,,,,,James Russell,FALSE,Bruce Westerman,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+601,CA-1,CA,California,2026,Vacancy,Vacant,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+602,CA-2,CA,California,2026,Jared Huffman,Democratic,,,,,,,Jared Huffman,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+603,CA-3,CA,California,2026,Kevin Kiley,Independent,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+604,CA-4,CA,California,2026,Mike Thompson,Democratic,,,,,,,Mike Thompson,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+605,CA-5,CA,California,2026,Tom McClintock,Republican,,,,,,,TBD,FALSE,Tom McClintock,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+606,CA-6,CA,California,2026,Ami Bera,Democratic,,,,,,,TBD,FALSE,Michael Stansfield,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+607,CA-7,CA,California,2026,Doris O. Matsui,Democratic,,,,,,,Doris O. Matsui,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+608,CA-8,CA,California,2026,John Garamendi,Democratic,,,,,,,John Garamendi,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+609,CA-9,CA,California,2026,Josh Harder,Democratic,,,,,,,Josh Harder,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+610,CA-10,CA,California,2026,Mark DeSaulnier,Democratic,,,,,,,Mark DeSaulnier,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+611,CA-11,CA,California,2026,Nancy Pelosi,Democratic,,,,,,,Nancy Pelosi,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+612,CA-12,CA,California,2026,Lateefah Simon,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+613,CA-13,CA,California,2026,Adam Gray,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+614,CA-14,CA,California,2026,Eric Swalwell,Democratic,,,,,,,Eric Swalwell,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+615,CA-15,CA,California,2026,Kevin Mullin,Democratic,,,,,,,Kevin Mullin,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+616,CA-16,CA,California,2026,Sam T. Liccardo,Democratic,,,,,,,Sam T. Liccardo,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+617,CA-17,CA,California,2026,Ro Khanna,Democratic,,,,,,,Ro Khanna,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+618,CA-18,CA,California,2026,Zoe Lofgren,Democratic,,,,,,,Zoe Lofgren,TRUE,Shane Lewis,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+619,CA-19,CA,California,2026,Jimmy Panetta,Democratic,,,,,,,Jimmy Panetta,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+620,CA-20,CA,California,2026,Vince Fong,Republican,,,,,,,Sandra Van Scotter,FALSE,Vince Fong,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+621,CA-21,CA,California,2026,Jim Costa,Democratic,,,,,,,Jim Costa,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+622,CA-22,CA,California,2026,David G. Valadao,Republican,,,,,,,TBD,FALSE,David G. Valadao,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+623,CA-23,CA,California,2026,Jay Obernolte,Republican,,,,,,,TBD,FALSE,Jay Obernolte,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+624,CA-24,CA,California,2026,Salud O. Carbajal,Democratic,,,,,,,Salud O. Carbajal,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+625,CA-25,CA,California,2026,Raul Ruiz,Democratic,,,,,,,Raul Ruiz,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+626,CA-26,CA,California,2026,Julia Brownley,Democratic,,,,,,,Julia Brownley,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+627,CA-27,CA,California,2026,George Whitesides,Democratic,,,,,,,TBD,FALSE,Jason Gibbs,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+628,CA-28,CA,California,2026,Judy Chu,Democratic,,,,,,,Judy Chu,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+629,CA-29,CA,California,2026,Luz M. Rivas,Democratic,,,,,,,TBD,FALSE,Rudy Melendez,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+630,CA-30,CA,California,2026,Laura Friedman,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+631,CA-31,CA,California,2026,"Gilbert Ray Cisneros, Jr.",Democratic,,,,,,,Gil Cisneros,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+632,CA-32,CA,California,2026,Brad Sherman,Democratic,,,,,,,Brad Sherman,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+633,CA-33,CA,California,2026,Pete Aguilar,Democratic,,,,,,,Pete Aguilar,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+634,CA-34,CA,California,2026,Jimmy Gomez,Democratic,,,,,,,Jimmy Gomez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+635,CA-35,CA,California,2026,Norma J. Torres,Democratic,,,,,,,Norma J. Torres,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+636,CA-36,CA,California,2026,Ted Lieu,Democratic,,,,,,,Ted Lieu,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+637,CA-37,CA,California,2026,Sydney Kamlager-Dove,Democratic,,,,,,,Sydney Kamlager-Dove,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+638,CA-38,CA,California,2026,Linda T. Sánchez,Democratic,,,,,,,TBD,FALSE,Pedro Antonio Casas,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+639,CA-39,CA,California,2026,Mark Takano,Democratic,,,,,,,Mark Takano,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+640,CA-40,CA,California,2026,Young Kim,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+641,CA-41,CA,California,2026,Ken Calvert,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+642,CA-42,CA,California,2026,Robert Garcia,Democratic,,,,,,,Robert Garcia,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+643,CA-43,CA,California,2026,Maxine Waters,Democratic,,,,,,,TBD,FALSE,Cristian Morales,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+644,CA-44,CA,California,2026,Nanette Diaz Barragán,Democratic,,,,,,,Nanette Barragan,FALSE,Genevieve Angel,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+645,CA-45,CA,California,2026,Derek Tran,Democratic,,,,,,,Derek Tran,TRUE,Mark Leonard,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+646,CA-46,CA,California,2026,J. Luis Correa,Democratic,,,,,,,TBD,FALSE,David Pan,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+647,CA-47,CA,California,2026,Dave Min,Democratic,,,,,,,Dave Min,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+648,CA-48,CA,California,2026,Darrell Issa,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+649,CA-49,CA,California,2026,Mike Levin,Democratic,,,,,,,Mike Levin,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+650,CA-50,CA,California,2026,Scott H. Peters,Democratic,,,,,,,Scott H. Peters,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+651,CA-51,CA,California,2026,Sara Jacobs,Democratic,,,,,,,TBD,FALSE,Ricardo Cabrera,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+652,CA-52,CA,California,2026,Juan Vargas,Democratic,,,,,,,TBD,FALSE,Jeff Belle,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+801,CO-1,CO,Colorado,2026,Diana DeGette,Democratic,,,,,,,TBD,FALSE,Gregory Cutlip,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+802,CO-2,CO,Colorado,2026,Joe Neguse,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+803,CO-3,CO,Colorado,2026,Jeff Hurd,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+804,CO-4,CO,Colorado,2026,Lauren Boebert,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+805,CO-5,CO,Colorado,2026,Jeff Crank,Republican,,,,,,,TBD,FALSE,Jeff Crank,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+806,CO-6,CO,Colorado,2026,Jason Crow,Democratic,,,,,,,Jason Crow,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+807,CO-7,CO,Colorado,2026,Brittany Pettersen,Democratic,,,,,,,Brittany Pettersen,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+808,CO-8,CO,Colorado,2026,Gabe Evans,Republican,,,,,,,TBD,FALSE,Gabe Evans,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+901,CT-1,CT,Connecticut,2026,John B. Larson,Democratic,,,,,,,TBD,FALSE,Amy Chai,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+902,CT-2,CT,Connecticut,2026,Joe Courtney,Democratic,,,,,,,Kyle Gauck,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+903,CT-3,CT,Connecticut,2026,Rosa L. DeLauro,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+904,CT-4,CT,Connecticut,2026,James A. Himes,Democratic,,,,,,,Jim Himes,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+905,CT-5,CT,Connecticut,2026,Jahana Hayes,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1000,DE-AL,DE,Delaware,2026,Sarah McBride,Democratic,,,,,,,Sarah McBride,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1201,FL-1,FL,Florida,2026,Jimmy Patronis,Republican,,,,,,,Gay Valimont,FALSE,Jimmy Patronis,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1202,FL-2,FL,Florida,2026,Neal P. Dunn,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1203,FL-3,FL,Florida,2026,Kat Cammack,Republican,,,,,,,TBD,FALSE,Kat Cammack,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1204,FL-4,FL,Florida,2026,Aaron Bean,Republican,,,,,,,TBD,FALSE,Aaron Bean,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1205,FL-5,FL,Florida,2026,John H. Rutherford,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1206,FL-6,FL,Florida,2026,Randy Fine,Republican,,,,,,,TBD,FALSE,Randy Fine,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1207,FL-7,FL,Florida,2026,Cory Mills,Republican,,,,,,,TBD,FALSE,Cory Mills,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1208,FL-8,FL,Florida,2026,Mike Haridopolos,Republican,,,,,,,TBD,FALSE,Mike Haridopolos,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1209,FL-9,FL,Florida,2026,Darren Soto,Democratic,,,,,,,Darren Soto,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1210,FL-10,FL,Florida,2026,Maxwell Frost,Democratic,,,,,,,Maxwell Frost,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1211,FL-11,FL,Florida,2026,Daniel Webster,Republican,,,,,,,TBD,FALSE,Daniel Webster,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1212,FL-12,FL,Florida,2026,Gus M. Bilirakis,Republican,,,,,,,TBD,FALSE,Gus Bilirakis,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1213,FL-13,FL,Florida,2026,Anna Paulina Luna,Republican,,,,,,,TBD,FALSE,Anna Paulina Luna,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1214,FL-14,FL,Florida,2026,Kathy Castor,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1215,FL-15,FL,Florida,2026,Laurel M. Lee,Republican,,,,,,,TBD,FALSE,Laurel Lee,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1216,FL-16,FL,Florida,2026,Vern Buchanan,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1217,FL-17,FL,Florida,2026,W. Gregory Steube,Republican,,,,,,,TBD,FALSE,Greg Steube,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1218,FL-18,FL,Florida,2026,Scott Franklin,Republican,,,,,,,TBD,FALSE,Scott Franklin,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1219,FL-19,FL,Florida,2026,Byron Donalds,Republican,,,,,,,TBD,FALSE,Byron Donalds,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1220,FL-20,FL,Florida,2026,Sheila Cherfilus-McCormick,Democratic,,,,,,,Sheila Cherfilus-McCormick,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1221,FL-21,FL,Florida,2026,Brian J. Mast,Republican,,,,,,,TBD,FALSE,Brian Mast,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1222,FL-22,FL,Florida,2026,Lois Frankel,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1223,FL-23,FL,Florida,2026,Jared Moskowitz,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1224,FL-24,FL,Florida,2026,Frederica S. Wilson,Democratic,,,,,,,Frederica Wilson,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1225,FL-25,FL,Florida,2026,Debbie Wasserman Schultz,Democratic,,,,,,,Debbie Wasserman Schultz,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1226,FL-26,FL,Florida,2026,Mario Diaz-Balart,Republican,,,,,,,TBD,FALSE,Mario Diaz-Balart,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1227,FL-27,FL,Florida,2026,Maria Elvira Salazar,Republican,,,,,,,TBD,FALSE,Maria Elvira Salazar,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1228,FL-28,FL,Florida,2026,Carlos A. Gimenez,Republican,,,,,,,TBD,FALSE,Carlos Gimenez,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1301,GA-1,GA,Georgia,2026,Earl L. “Buddy” Carter,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1302,GA-2,GA,Georgia,2026,"Sanford D. Bishop, Jr.",Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1303,GA-3,GA,Georgia,2026,Brian Jack,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1304,GA-4,GA,Georgia,2026,"Henry C. “Hank” Johnson, Jr.",Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1305,GA-5,GA,Georgia,2026,Nikema Williams,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1306,GA-6,GA,Georgia,2026,Lucy McBath,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1307,GA-7,GA,Georgia,2026,Richard McCormick,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1308,GA-8,GA,Georgia,2026,Austin Scott,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1309,GA-9,GA,Georgia,2026,Andrew S. Clyde,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1310,GA-10,GA,Georgia,2026,Mike Collins,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1311,GA-11,GA,Georgia,2026,Barry Loudermilk,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1312,GA-12,GA,Georgia,2026,Rick W. Allen,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1313,GA-13,GA,Georgia,2026,David Scott,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1314,GA-14,GA,Georgia,2026,Vacancy,Vacant,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1501,HI-1,HI,Hawaii,2026,Ed Case,Democratic,,,,,,,TBD,FALSE,Maxwell Frazier,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1502,HI-2,HI,Hawaii,2026,Jill N. Tokuda,Democratic,,,,,,,Steven King,FALSE,Brenton Awa,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1601,ID-1,ID,Idaho,2026,Russ Fulcher,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1602,ID-2,ID,Idaho,2026,Michael K. Simpson,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1701,IL-1,IL,Illinois,2026,Jonathan L. Jackson,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1702,IL-2,IL,Illinois,2026,Robin L. Kelly,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1703,IL-3,IL,Illinois,2026,Delia C. Ramirez,Democratic,,,,,,,Delia Ramirez,TRUE,Angel Oakley,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1704,IL-4,IL,Illinois,2026,Jesús G. “Chuy” García,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1705,IL-5,IL,Illinois,2026,Mike Quigley,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1706,IL-6,IL,Illinois,2026,Sean Casten,Democratic,,,,,,,Sean Casten,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1707,IL-7,IL,Illinois,2026,Danny K. Davis,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1708,IL-8,IL,Illinois,2026,Raja Krishnamoorthi,Democratic,,,,,,,Melissa Bean,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1709,IL-9,IL,Illinois,2026,Janice D. Schakowsky,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1710,IL-10,IL,Illinois,2026,Bradley Scott Schneider,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1711,IL-11,IL,Illinois,2026,Bill Foster,Democratic,,,,,,,Bill Foster,TRUE,Jeff Walter,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1712,IL-12,IL,Illinois,2026,Mike Bost,Republican,,,,,,,Julie Fortier,FALSE,Mike Bost,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1713,IL-13,IL,Illinois,2026,Nikki Budzinski,Democratic,,,,,,,Nikki Budzinski,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1714,IL-14,IL,Illinois,2026,Lauren Underwood,Democratic,,,,,,,Lauren Underwood,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1715,IL-15,IL,Illinois,2026,Mary E. Miller,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1716,IL-16,IL,Illinois,2026,Darin LaHood,Republican,,,,,,,Paul Nolley,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1717,IL-17,IL,Illinois,2026,Eric Sorensen,Democratic,,,,,,,Eric Sorensen,TRUE,Dillan Vancil,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1801,IN-1,IN,Indiana,2026,Frank J. Mrvan,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1802,IN-2,IN,Indiana,2026,Rudy Yakym III,Republican,,,,,,,TBD,FALSE,Rudy Yakym,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1803,IN-3,IN,Indiana,2026,Marlin A. Stutzman,Republican,,,,,,,Kelly Thompson,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1804,IN-4,IN,Indiana,2026,James R. Baird,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1805,IN-5,IN,Indiana,2026,Victoria Spartz,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1806,IN-6,IN,Indiana,2026,Jefferson Shreve,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1807,IN-7,IN,Indiana,2026,André Carson,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1808,IN-8,IN,Indiana,2026,Mark B. Messmer,Republican,,,,,,,TBD,FALSE,Mark Messmer,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1809,IN-9,IN,Indiana,2026,Erin Houchin,Republican,,,,,,,TBD,FALSE,Erin Houchin,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+1901,IA-1,IA,Iowa,2026,Mariannette Miller-Meeks,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1902,IA-2,IA,Iowa,2026,Ashley Hinson,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1903,IA-3,IA,Iowa,2026,Zachary Nunn,Republican,,,,,,,TBD,FALSE,Zach Nunn,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+1904,IA-4,IA,Iowa,2026,Randy Feenstra,Republican,,,,,,,TBD,FALSE,Chris McGowan,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2001,KS-1,KS,Kansas,2026,Tracey Mann,Republican,,,,,,,TBD,FALSE,Tracey Mann,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2002,KS-2,KS,Kansas,2026,Derek Schmidt,Republican,,,,,,,TBD,FALSE,Derek Schmidt,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2003,KS-3,KS,Kansas,2026,Sharice Davids,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2004,KS-4,KS,Kansas,2026,Ron Estes,Republican,,,,,,,TBD,FALSE,Ron Estes,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2101,KY-1,KY,Kentucky,2026,James Comer,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2102,KY-2,KY,Kentucky,2026,Brett Guthrie,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2103,KY-3,KY,Kentucky,2026,Morgan McGarvey,Democratic,,,,,,,Morgan McGarvey,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2104,KY-4,KY,Kentucky,2026,Thomas Massie,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2105,KY-5,KY,Kentucky,2026,Harold Rogers,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2106,KY-6,KY,Kentucky,2026,Andy Barr,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2201,LA-1,LA,Louisiana,2026,Steve Scalise,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2202,LA-2,LA,Louisiana,2026,Troy A. Carter,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2203,LA-3,LA,Louisiana,2026,Clay Higgins,Republican,,,,,,,TBD,FALSE,Clay Higgins,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2204,LA-4,LA,Louisiana,2026,Mike Johnson,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2205,LA-5,LA,Louisiana,2026,Julia Letlow,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2206,LA-6,LA,Louisiana,2026,Cleo Fields,Democratic,,,,,,,Cleo Fields,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2301,ME-1,ME,Maine,2026,Chellie Pingree,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2302,ME-2,ME,Maine,2026,Jared F. Golden,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2401,MD-1,MD,Maryland,2026,Andy Harris,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2402,MD-2,MD,Maryland,2026,"Johnny Olszewski, Jr.",Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2403,MD-3,MD,Maryland,2026,Sarah Elfreth,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2404,MD-4,MD,Maryland,2026,Glenn Ivey,Democratic,,,,,,,TBD,FALSE,George McDermott,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2405,MD-5,MD,Maryland,2026,Steny H. Hoyer,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2406,MD-6,MD,Maryland,2026,April McClain Delaney,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2407,MD-7,MD,Maryland,2026,Kweisi Mfume,Democratic,,,,,,,TBD,FALSE,Scott Collier,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2408,MD-8,MD,Maryland,2026,Jamie Raskin,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2501,MA-1,MA,Massachusetts,2026,Richard E. Neal,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2502,MA-2,MA,Massachusetts,2026,James P. McGovern,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2503,MA-3,MA,Massachusetts,2026,Lori Trahan,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2504,MA-4,MA,Massachusetts,2026,Jake Auchincloss,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2505,MA-5,MA,Massachusetts,2026,Katherine M. Clark,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2506,MA-6,MA,Massachusetts,2026,Seth Moulton,Democratic,,,,,,,TBD,FALSE,Micah Jones,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2507,MA-7,MA,Massachusetts,2026,Ayanna Pressley,Democratic,,,,,,,Ayanna Pressley,TRUE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2508,MA-8,MA,Massachusetts,2026,Stephen F. Lynch,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2509,MA-9,MA,Massachusetts,2026,William R. Keating,Democratic,,,,,,,Craig Swallow,FALSE,Tyler MacAllister,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2601,MI-1,MI,Michigan,2026,Jack Bergman,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2602,MI-2,MI,Michigan,2026,John R. Moolenaar,Republican,,,,,,,TBD,FALSE,John Moolenaar,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2603,MI-3,MI,Michigan,2026,Hillary J. Scholten,Democratic,,,,,,,Hillary Scholten,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2604,MI-4,MI,Michigan,2026,Bill Huizenga,Republican,,,,,,,TBD,FALSE,Bill Huizenga,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2605,MI-5,MI,Michigan,2026,Tim Walberg,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2606,MI-6,MI,Michigan,2026,Debbie Dingell,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2607,MI-7,MI,Michigan,2026,Tom Barrett,Republican,,,,,,,TBD,FALSE,Tom Barrett,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2608,MI-8,MI,Michigan,2026,Kristen McDonald Rivet,Democratic,,,,,,,Kristen McDonald Rivet,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2609,MI-9,MI,Michigan,2026,Lisa C. McClain,Republican,,,,,,,TBD,FALSE,Lisa McClain,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2610,MI-10,MI,Michigan,2026,John James,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2611,MI-11,MI,Michigan,2026,Haley M. Stevens,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2612,MI-12,MI,Michigan,2026,Rashida Tlaib,Democratic,,,,,,,Rashida Tlaib,TRUE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2613,MI-13,MI,Michigan,2026,Shri Thanedar,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2701,MN-1,MN,Minnesota,2026,Brad Finstad,Republican,,,,,,,TBD,FALSE,Brad Finstad,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2702,MN-2,MN,Minnesota,2026,Angie Craig,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2703,MN-3,MN,Minnesota,2026,Kelly Morrison,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2704,MN-4,MN,Minnesota,2026,Betty McCollum,Democratic,,,,,,,Betty McCollum,TRUE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2705,MN-5,MN,Minnesota,2026,Ilhan Omar,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2706,MN-6,MN,Minnesota,2026,Tom Emmer,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2707,MN-7,MN,Minnesota,2026,Michelle Fischbach,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2708,MN-8,MN,Minnesota,2026,Pete Stauber,Republican,,,,,,,TBD,FALSE,Pete Stauber,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2801,MS-1,MS,Mississippi,2026,Trent Kelly,Republican,,,,,,,Cliff Johnson,FALSE,Trent Kelly,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2802,MS-2,MS,Mississippi,2026,Bennie G. Thompson,Democratic,,,,,,,Bennie Thompson,TRUE,Ron Eller,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2803,MS-3,MS,Mississippi,2026,Michael Guest,Republican,,,,,,,Michael Chiaradio,FALSE,Michael Guest,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2804,MS-4,MS,Mississippi,2026,Mike Ezell,Republican,,,,,,,Jeffrey Hulum III,FALSE,Mike Ezell,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2901,MO-1,MO,Missouri,2026,Wesley Bell,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2902,MO-2,MO,Missouri,2026,Ann Wagner,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2903,MO-3,MO,Missouri,2026,"Robert F. Onder, Jr.",Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2904,MO-4,MO,Missouri,2026,Mark Alford,Republican,,,,,,,TBD,FALSE,Mark Alford,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+2905,MO-5,MO,Missouri,2026,Emanuel Cleaver,Democratic,,,,,,,Emanuel Cleaver,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2906,MO-6,MO,Missouri,2026,Sam Graves,Republican,,,,,,,,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2907,MO-7,MO,Missouri,2026,Eric Burlison,Republican,,,,,,,Missi Hesketh,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+2908,MO-8,MO,Missouri,2026,Jason Smith,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3001,MT-1,MT,Montana,2026,Ryan K. Zinke,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3002,MT-2,MT,Montana,2026,Troy Downing,Republican,,,,,,,TBD,FALSE,Troy Downing,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3101,NE-1,NE,Nebraska,2026,Mike Flood,Republican,,,,,,,TBD,FALSE,Mike Flood,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3102,NE-2,NE,Nebraska,2026,Don Bacon,Republican,,,,,,,TBD,FALSE,Brinker Harding,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3103,NE-3,NE,Nebraska,2026,Adrian Smith,Republican,,,,,,,Becky Stille,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3201,NV-1,NV,Nevada,2026,Dina Titus,Democratic,,,,,,,Dina Titus,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3202,NV-2,NV,Nevada,2026,Mark E. Amodei,Republican,,,,,,,TBD,FALSE,Mark Amodei,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3203,NV-3,NV,Nevada,2026,Susie Lee,Democratic,,,,,,,Susie Lee,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3204,NV-4,NV,Nevada,2026,Steven Horsford,Democratic,,,,,,,Steven Horsford,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3301,NH-1,NH,New Hampshire,2026,Chris Pappas,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3302,NH-2,NH,New Hampshire,2026,Maggie Goodlander,Democratic,,,,,,,TBD,FALSE,Lily Tang Williams,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3401,NJ-1,NJ,New Jersey,2026,Donald Norcross,Democratic,,,,,,,Donald Norcross,TRUE,Damon Galdo,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3402,NJ-2,NJ,New Jersey,2026,Jefferson Van Drew,Republican,,,,,,,TBD,FALSE,Jeff Van Drew,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3403,NJ-3,NJ,New Jersey,2026,"Herbert C. Conaway, Jr.",Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3404,NJ-4,NJ,New Jersey,2026,Christopher H. Smith,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3405,NJ-5,NJ,New Jersey,2026,Josh Gottheimer,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3406,NJ-6,NJ,New Jersey,2026,"Frank Pallone, Jr.",Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3407,NJ-7,NJ,New Jersey,2026,"Thomas H. Kean, Jr.",Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3408,NJ-8,NJ,New Jersey,2026,Robert Menendez,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3409,NJ-9,NJ,New Jersey,2026,Nellie Pou,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3410,NJ-10,NJ,New Jersey,2026,LaMonica McIver,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3411,NJ-11,NJ,New Jersey,2026,Vacancy,Vacant,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3412,NJ-12,NJ,New Jersey,2026,Bonnie Watson Coleman,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3501,NM-1,NM,New Mexico,2026,Melanie A. Stansbury,Democratic,,,,,,,Melanie Stansbury,TRUE,Didi Okpareke,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3502,NM-2,NM,New Mexico,2026,Gabe Vasquez,Democratic,,,,,,,Gabe Vasquez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3503,NM-3,NM,New Mexico,2026,Teresa Leger Fernandez,Democratic,,,,,,,Teresa Leger Fernandez,TRUE,Martin Zamora,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3601,NY-1,NY,New York,2026,Nick LaLota,Republican,,,,,,,TBD,FALSE,Nick LaLota,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3602,NY-2,NY,New York,2026,Andrew R. Garbarino,Republican,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3603,NY-3,NY,New York,2026,Thomas R. Suozzi,Democratic,,,,,,,Tom Suozzi,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3604,NY-4,NY,New York,2026,Laura Gillen,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3605,NY-5,NY,New York,2026,Gregory W. Meeks,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3606,NY-6,NY,New York,2026,Grace Meng,Democratic,,,,,,,Chuck Park,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3607,NY-7,NY,New York,2026,Nydia M. Velázquez,Democratic,,,,,,,Nydia M. Velázquez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3608,NY-8,NY,New York,2026,Hakeem S. Jeffries,Democratic,,,,,,,Hakeem S. Jeffries,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3609,NY-9,NY,New York,2026,Yvette D. Clarke,Democratic,,,,,,,Yvette D. Clarke,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3610,NY-10,NY,New York,2026,Daniel S. Goldman,Democratic,,,,,,,Daniel S. Goldman,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3611,NY-11,NY,New York,2026,Nicole Malliotakis,Republican,,,,,,,TBD,FALSE,Nicole Malliotakis,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3612,NY-12,NY,New York,2026,Jerrold Nadler,Democratic,,,,,,,Jerrold Nadler,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3613,NY-13,NY,New York,2026,Adriano Espaillat,Democratic,,,,,,,Adriano Espaillat,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3614,NY-14,NY,New York,2026,Alexandria Ocasio-Cortez,Democratic,,,,,,,Alexandria Ocasio-Cortez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3615,NY-15,NY,New York,2026,Ritchie Torres,Democratic,,,,,,,Ritchie Torres,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3616,NY-16,NY,New York,2026,George Latimer,Democratic,,,,,,,George Latimer,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3617,NY-17,NY,New York,2026,Michael Lawler,Republican,,,,,,,TBD,FALSE,Michael Lawler,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3618,NY-18,NY,New York,2026,Patrick Ryan,Democratic,,,,,,,Patrick Ryan,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3619,NY-19,NY,New York,2026,Josh Riley,Democratic,,,,,,,Josh Riley,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3620,NY-20,NY,New York,2026,Paul Tonko,Democratic,,,,,,,Paul Tonko,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3621,NY-21,NY,New York,2026,Elise M. Stefanik,Republican,,,,,,,TBD,FALSE,Elise M. Stefanik,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3622,NY-22,NY,New York,2026,John W. Mannion,Democratic,,,,,,,John W. Mannion,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3623,NY-23,NY,New York,2026,Nicholas A. Langworthy,Republican,,,,,,,TBD,FALSE,Nicholas A. Langworthy,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3624,NY-24,NY,New York,2026,Claudia Tenney,Republican,,,,,,,TBD,FALSE,Claudia Tenney,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3625,NY-25,NY,New York,2026,Joseph D. Morelle,Democratic,,,,,,,Joseph D. Morelle,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3626,NY-26,NY,New York,2026,Timothy M. Kennedy,Democratic,,,,,,,Timothy M. Kennedy,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3701,NC-1,NC,North Carolina,2026,Donald G. Davis,Democratic,,,,,,,Donald G. Davis,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3702,NC-2,NC,North Carolina,2026,Deborah K. Ross,Democratic,,,,,,,Deborah K. Ross,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3703,NC-3,NC,North Carolina,2026,Gregory F. Murphy,Republican,,,,,,,TBD,FALSE,Gregory F. Murphy,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3704,NC-4,NC,North Carolina,2026,Valerie P. Foushee,Democratic,,,,,,,Valerie P. Foushee,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3705,NC-5,NC,North Carolina,2026,Virginia Foxx,Republican,,,,,,,TBD,FALSE,Virginia Foxx,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3706,NC-6,NC,North Carolina,2026,Addison P. McDowell,Republican,,,,,,,TBD,FALSE,Addison P. McDowell,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3707,NC-7,NC,North Carolina,2026,David Rouzer,Republican,,,,,,,TBD,FALSE,David Rouzer,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3708,NC-8,NC,North Carolina,2026,Mark Harris,Republican,,,,,,,TBD,FALSE,Mark Harris,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3709,NC-9,NC,North Carolina,2026,Richard Hudson,Republican,,,,,,,TBD,FALSE,Richard Hudson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3710,NC-10,NC,North Carolina,2026,Pat Harrigan,Republican,,,,,,,TBD,FALSE,Pat Harrigan,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3711,NC-11,NC,North Carolina,2026,Chuck Edwards,Republican,,,,,,,TBD,FALSE,Chuck Edwards,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3712,NC-12,NC,North Carolina,2026,Alma S. Adams,Democratic,,,,,,,Alma Adams,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3713,NC-13,NC,North Carolina,2026,Brad Knott,Republican,,,,,,,TBD,FALSE,Brad Knott,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3714,NC-14,NC,North Carolina,2026,Tim Moore,Republican,,,,,,,TBD,FALSE,Tim Moore,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3800,ND-AL,ND,North Dakota,2026,Julie Fedorchak,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3901,OH-1,OH,Ohio,2026,Greg Landsman,Democratic,,,,,,,Greg Landsman,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3902,OH-2,OH,Ohio,2026,David J. Taylor,Republican,,,,,,,TBD,FALSE,David J. Taylor,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3903,OH-3,OH,Ohio,2026,Joyce Beatty,Democratic,,,,,,,Joyce Beatty,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3904,OH-4,OH,Ohio,2026,Jim Jordan,Republican,,,,,,,TBD,FALSE,Jim Jordan,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3905,OH-5,OH,Ohio,2026,Robert E. Latta,Republican,,,,,,,TBD,FALSE,Robert E. Latta,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3906,OH-6,OH,Ohio,2026,Michael A. Rulli,Republican,,,,,,,TBD,FALSE,Michael A. Rulli,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3907,OH-7,OH,Ohio,2026,Max L. Miller,Republican,,,,,,,TBD,FALSE,Max L. Miller,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3908,OH-8,OH,Ohio,2026,Warren Davidson,Republican,,,,,,,TBD,FALSE,Warren Davidson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3909,OH-9,OH,Ohio,2026,Marcy Kaptur,Democratic,,,,,,,Marcy Kaptur,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3910,OH-10,OH,Ohio,2026,Michael R. Turner,Republican,,,,,,,TBD,FALSE,Mike Turner,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3911,OH-11,OH,Ohio,2026,Shontel M. Brown,Democratic,,,,,,,TBD,FALSE,James Hemphill,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3912,OH-12,OH,Ohio,2026,Troy Balderson,Republican,,,,,,,TBD,FALSE,Troy Balderson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3913,OH-13,OH,Ohio,2026,Emilia Strong Sykes,Democratic,,,,,,,Emilia Sykes,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+3914,OH-14,OH,Ohio,2026,David P. Joyce,Republican,,,,,,,Bill O'Neill,FALSE,David Joyce,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+3915,OH-15,OH,Ohio,2026,Mike Carey,Republican,,,,,,,TBD,FALSE,Mike Carey,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4001,OK-1,OK,Oklahoma,2026,Kevin Hern,Republican,,,,,,,TBD,FALSE,Kevin Hern,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4002,OK-2,OK,Oklahoma,2026,Josh Brecheen,Republican,,,,,,,TBD,FALSE,Josh Brecheen,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4003,OK-3,OK,Oklahoma,2026,Frank D. Lucas,Republican,,,,,,,TBD,FALSE,Frank D. Lucas,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4004,OK-4,OK,Oklahoma,2026,Tom Cole,Republican,,,,,,,TBD,FALSE,Tom Cole,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4005,OK-5,OK,Oklahoma,2026,Stephanie I. Bice,Republican,,,,,,,TBD,FALSE,Stephanie I. Bice,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4101,OR-1,OR,Oregon,2026,Suzanne Bonamici,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4102,OR-2,OR,Oregon,2026,Cliff Bentz,Republican,,,,,,,TBD,FALSE,Cliff Bentz,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4103,OR-3,OR,Oregon,2026,Maxine Dexter,Democratic,,,,,,,Maxine Dexter,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4104,OR-4,OR,Oregon,2026,Val T. Hoyle,Democratic,,,,,,,Val Hoyle,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4105,OR-5,OR,Oregon,2026,Janelle S. Bynum,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4106,OR-6,OR,Oregon,2026,Andrea Salinas,Democratic,,,,,,,Andrea Salinas,TRUE,David Russ,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4201,PA-1,PA,Pennsylvania,2026,Brian K. Fitzpatrick,Republican,,,,,,,TBD,FALSE,Brian K. Fitzpatrick,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4202,PA-2,PA,Pennsylvania,2026,Brendan F. Boyle,Democratic,,,,,,,Brendan F. Boyle,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4203,PA-3,PA,Pennsylvania,2026,Dwight Evans,Democratic,,,,,,,Dwight Evans,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4204,PA-4,PA,Pennsylvania,2026,Madeleine Dean,Democratic,,,,,,,Madeleine Dean,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4205,PA-5,PA,Pennsylvania,2026,Mary Gay Scanlon,Democratic,,,,,,,Mary Gay Scanlon,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4206,PA-6,PA,Pennsylvania,2026,Chrissy Houlahan,Democratic,,,,,,,Chrissy Houlahan,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4207,PA-7,PA,Pennsylvania,2026,Ryan Mackenzie,Republican,,,,,,,TBD,FALSE,Ryan Mackenzie,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4208,PA-8,PA,Pennsylvania,2026,"Robert P. Bresnahan, Jr.",Republican,,,,,,,TBD,FALSE,Rob Bresnahan,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4209,PA-9,PA,Pennsylvania,2026,Daniel Meuser,Republican,,,,,,,TBD,FALSE,Daniel Meuser,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4210,PA-10,PA,Pennsylvania,2026,Scott Perry,Republican,,,,,,,TBD,FALSE,Scott Perry,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4211,PA-11,PA,Pennsylvania,2026,Lloyd Smucker,Republican,,,,,,,Nancy Mannion,FALSE,Lloyd Smucker,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4212,PA-12,PA,Pennsylvania,2026,Summer L. Lee,Democratic,,,,,,,Summer L. Lee,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4213,PA-13,PA,Pennsylvania,2026,John Joyce,Republican,,,,,,,TBD,FALSE,John Joyce,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4214,PA-14,PA,Pennsylvania,2026,Guy Reschenthaler,Republican,,,,,,,TBD,FALSE,Guy Reschenthaler,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4215,PA-15,PA,Pennsylvania,2026,Glenn Thompson,Republican,,,,,,,TBD,FALSE,Glenn Thompson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4216,PA-16,PA,Pennsylvania,2026,Mike Kelly,Republican,,,,,,,Justin Wagner,FALSE,Mike Kelly,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4217,PA-17,PA,Pennsylvania,2026,Christopher R. Deluzio,Democratic,,,,,,,Christopher R. Deluzio,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4401,RI-1,RI,Rhode Island,2026,Gabe Amo,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4402,RI-2,RI,Rhode Island,2026,Seth Magaziner,Democratic,,,,,,,Seth Magaziner,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4501,SC-1,SC,South Carolina,2026,Nancy Mace,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4502,SC-2,SC,South Carolina,2026,Joe Wilson,Republican,,,,,,,TBD,FALSE,Joe Wilson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4503,SC-3,SC,South Carolina,2026,Sheri Biggs,Republican,,,,,,,Eunice Lehmacher,FALSE,Sheri Biggs,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4504,SC-4,SC,South Carolina,2026,William R. Timmons IV,Republican,,,,,,,TBD,FALSE,William Timmons,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4505,SC-5,SC,South Carolina,2026,Ralph Norman,Republican,,,,,,,TBD,FALSE,Ralph Norman,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4506,SC-6,SC,South Carolina,2026,James E. Clyburn,Democratic,,,,,,,Jim Clyburn,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4507,SC-7,SC,South Carolina,2026,Russell Fry,Republican,,,,,,,TBD,FALSE,Russell Fry,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4600,SD-AL,SD,South Dakota,2026,Dusty Johnson,Republican,,,,,,,Nikki Gronli,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4701,TN-1,TN,Tennessee,2026,Diana Harshbarger,Republican,,,,,,,TBD,FALSE,Diana Harshbarger,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4702,TN-2,TN,Tennessee,2026,Tim Burchett,Republican,,,,,,,TBD,FALSE,Tim Burchett,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4703,TN-3,TN,Tennessee,2026,Charles J. “Chuck” Fleischmann,Republican,,,,,,,TBD,FALSE,Charles J. “Chuck” Fleischmann,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4704,TN-4,TN,Tennessee,2026,Scott DesJarlais,Republican,,,,,,,TBD,FALSE,Scott DesJarlais,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4705,TN-5,TN,Tennessee,2026,Andrew Ogles,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4706,TN-6,TN,Tennessee,2026,John W. Rose,Republican,,,,,,,TBD,FALSE,John W. Rose,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4707,TN-7,TN,Tennessee,2026,Matt Van Epps,Republican,,,,,,,TBD,FALSE,Matt Van Epps,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4708,TN-8,TN,Tennessee,2026,David Kustoff,Republican,,,,,,,TBD,FALSE,David Kustoff,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4709,TN-9,TN,Tennessee,2026,Steve Cohen,Democratic,,,,,,,Steve Cohen,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4801,TX-1,TX,Texas,2026,Nathaniel Moran,Republican,,,,,,,TBD,FALSE,Nathaniel Moran,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4802,TX-2,TX,Texas,2026,Dan Crenshaw,Republican,,,,,,,Shaun Finnie,FALSE,Steve Toth,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4803,TX-3,TX,Texas,2026,Keith Self,Republican,,,,,,,Evan Hunt,FALSE,Keith Self,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4804,TX-4,TX,Texas,2026,Pat Fallon,Republican,,,,,,,Jason Pearce,FALSE,Pat Fallon,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4805,TX-5,TX,Texas,2026,Lance Gooden,Republican,,,,,,,TBD,FALSE,Lance Gooden,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4806,TX-6,TX,Texas,2026,Jake Ellzey,Republican,,,,,,,Danny Minton,FALSE,Jake Ellzey,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4807,TX-7,TX,Texas,2026,Lizzie Fletcher,Democratic,,,,,,,Lizzie Fletcher,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4808,TX-8,TX,Texas,2026,Morgan Luttrell,Republican,,,,,,,Laura Jones,FALSE,Jessica Hart Steinmann,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4809,TX-9,TX,Texas,2026,Al Green,Democratic,,,,,,,Leticia Gutierrez,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4810,TX-10,TX,Texas,2026,Michael T. McCaul,Republican,,,,,,,Caitlin Rourk,FALSE,Chris Gober,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4811,TX-11,TX,Texas,2026,August Pfluger,Republican,,,,,,,TBD,FALSE,August Pfluger,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4812,TX-12,TX,Texas,2026,Craig A. Goldman,Republican,,,,,,,TBD,FALSE,Craig Goldman,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4813,TX-13,TX,Texas,2026,Ronny Jackson,Republican,,,,,,,TBD,FALSE,Ronny Jackson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4814,TX-14,TX,Texas,2026,"Randy K. Weber, Sr.",Republican,,,,,,,TBD,FALSE,Randy Weber,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4815,TX-15,TX,Texas,2026,Monica De La Cruz,Republican,,,,,,,TBD,FALSE,Monica De La Cruz,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4816,TX-16,TX,Texas,2026,Veronica Escobar,Democratic,,,,,,,Veronica Escobar,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4817,TX-17,TX,Texas,2026,Pete Sessions,Republican,,,,,,,TBD,FALSE,Pete Sessions,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4818,TX-18,TX,Texas,2026,Christian D. Menefee,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4819,TX-19,TX,Texas,2026,Jodey C. Arrington,Republican,,,,,,,TBD,FALSE,Jodey Arrington,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4820,TX-20,TX,Texas,2026,Joaquin Castro,Democratic,,,,,,,Joaquin Castro,TRUE,Edgardo Baez,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4821,TX-21,TX,Texas,2026,Chip Roy,Republican,,,,,,,TBD,FALSE,Mark Teixeira,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4822,TX-22,TX,Texas,2026,Troy E. Nehls,Republican,,,,,,,TBD,FALSE,Trever Nehls,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4823,TX-23,TX,Texas,2026,Tony Gonzales,Republican,,,,,,,TBD,FALSE,Tony Gonzales,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4824,TX-24,TX,Texas,2026,Beth Van Duyne,Republican,,,,,,,TBD,FALSE,Beth Van Duyne,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4825,TX-25,TX,Texas,2026,Roger Williams,Republican,,,,,,,TBD,FALSE,Roger Williams,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4826,TX-26,TX,Texas,2026,Brandon Gill,Republican,,,,,,,TBD,FALSE,Brandon Gill,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4827,TX-27,TX,Texas,2026,Michael Cloud,Republican,,,,,,,TBD,FALSE,Michael Cloud,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4828,TX-28,TX,Texas,2026,Henry Cuellar,Democratic,,,,,,,Henry Cuellar,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4829,TX-29,TX,Texas,2026,Sylvia R. Garcia,Democratic,,,,,,,Sylvia Garcia,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4830,TX-30,TX,Texas,2026,Jasmine Crockett,Democratic,,,,,,,Jasmine Crockett,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4831,TX-31,TX,Texas,2026,John R. Carter,Republican,,,,,,,TBD,FALSE,John Carter,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4832,TX-32,TX,Texas,2026,Julie Johnson,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4833,TX-33,TX,Texas,2026,Marc A. Veasey,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4834,TX-34,TX,Texas,2026,Vicente Gonzalez,Democratic,,,,,,,Vicente Gonzalez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4835,TX-35,TX,Texas,2026,Greg Casar,Democratic,,,,,,,Greg Casar,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4836,TX-36,TX,Texas,2026,Brian Babin,Republican,,,,,,,TBD,FALSE,Brian Babin,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4837,TX-37,TX,Texas,2026,Lloyd Doggett,Democratic,,,,,,,Greg Casar,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4838,TX-38,TX,Texas,2026,Wesley Hunt,Republican,,,,,,,TBD,FALSE,Wesley Hunt,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+4901,UT-1,UT,Utah,2026,Blake D. Moore,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4902,UT-2,UT,Utah,2026,Celeste Maloy,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4903,UT-3,UT,Utah,2026,Mike Kennedy,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+4904,UT-4,UT,Utah,2026,Burgess Owens,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5000,VT-AL,VT,Vermont,2026,Becca Balint,Democratic,,,,,,,Becca Balint,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5101,VA-1,VA,Virginia,2026,Robert J. Wittman,Republican,,,,,,,TBD,FALSE,Robert J. Wittman,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5102,VA-2,VA,Virginia,2026,Jennifer A. Kiggans,Republican,,,,,,,TBD,FALSE,Jennifer A. Kiggans,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5103,VA-3,VA,Virginia,2026,Robert C. “Bobby” Scott,Democratic,,,,,,,Robert C. “Bobby” Scott,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5104,VA-4,VA,Virginia,2026,Jennifer L. McClellan,Democratic,,,,,,,Jennifer L. McClellan,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5105,VA-5,VA,Virginia,2026,John J. McGuire III,Republican,,,,,,,TBD,FALSE,John J. McGuire III,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5106,VA-6,VA,Virginia,2026,Ben Cline,Republican,,,,,,,TBD,FALSE,Ben Cline,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5107,VA-7,VA,Virginia,2026,Eugene Simon Vindman,Democratic,,,,,,,Eugene Simon Vindman,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5108,VA-8,VA,Virginia,2026,"Donald S. Beyer, Jr.",Democratic,,,,,,,"Donald S. Beyer, Jr.",TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5109,VA-9,VA,Virginia,2026,H. Morgan Griffith,Republican,,,,,,,TBD,FALSE,H. Morgan Griffith,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5110,VA-10,VA,Virginia,2026,Suhas Subramanyam,Democratic,,,,,,,Suhas Subramanyam,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5111,VA-11,VA,Virginia,2026,James R. Walkinshaw,Democratic,,,,,,,James R. Walkinshaw,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5301,WA-1,WA,Washington,2026,Suzan K. DelBene,Democratic,,,,,,,Suzan K. DelBene,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5302,WA-2,WA,Washington,2026,Rick Larsen,Democratic,,,,,,,Rick Larsen,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5303,WA-3,WA,Washington,2026,Marie Gluesenkamp Perez,Democratic,,,,,,,Marie Gluesenkamp Perez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5304,WA-4,WA,Washington,2026,Dan Newhouse,Republican,,,,,,,TBD,FALSE,Dan Newhouse,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5305,WA-5,WA,Washington,2026,Michael Baumgartner,Republican,,,,,,,TBD,FALSE,Michael Baumgartner,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5306,WA-6,WA,Washington,2026,Emily Randall,Democratic,,,,,,,Emily Randall,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5307,WA-7,WA,Washington,2026,Pramila Jayapal,Democratic,,,,,,,Pramila Jayapal,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5308,WA-8,WA,Washington,2026,Kim Schrier,Democratic,,,,,,,Kim Schrier,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5309,WA-9,WA,Washington,2026,Adam Smith,Democratic,,,,,,,Adam Smith,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5310,WA-10,WA,Washington,2026,Marilyn Strickland,Democratic,,,,,,,Marilyn Strickland,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5401,WV-1,WV,West Virginia,2026,Carol D. Miller,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5402,WV-2,WV,West Virginia,2026,Riley M. Moore,Republican,,,,,,,TBD,FALSE,Riley Moore,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5501,WI-1,WI,Wisconsin,2026,Bryan Steil,Republican,,,,,,,TBD,FALSE,Bryan Steil,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5502,WI-2,WI,Wisconsin,2026,Mark Pocan,Democratic,,,,,,,Mark Pocan,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5503,WI-3,WI,Wisconsin,2026,Derrick Van Orden,Republican,,,,,,,TBD,FALSE,Derrick Van Orden,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5504,WI-4,WI,Wisconsin,2026,Gwen Moore,Democratic,,,,,,,Gwen Moore,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+5505,WI-5,WI,Wisconsin,2026,Scott Fitzgerald,Republican,,,,,,,TBD,FALSE,Scott Fitzgerald,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5506,WI-6,WI,Wisconsin,2026,Glenn Grothman,Republican,,,,,,,TBD,FALSE,Glenn Grothman,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5507,WI-7,WI,Wisconsin,2026,Thomas P. Tiffany,Republican,,,,,,,TBD,FALSE,Thomas P. Tiffany,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5508,WI-8,WI,Wisconsin,2026,Tony Wied,Republican,,,,,,,TBD,FALSE,Tony Wied,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
+5600,WY-AL,WY,Wyoming,2026,Harriet M. Hageman,Republican,,,,,,,,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A

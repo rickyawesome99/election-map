@@ -15,7 +15,8 @@
  *   data-entry/senate_past_results.csv
  *   data-entry/governor_seats.csv
  *   data-entry/governor_past_results.csv
- *   data-entry/house_races.csv
+ *   data-entry/house_seats.csv
+ *   data-entry/house_past_results.csv
  *   data-entry/presidential_2024.csv
  *
  * Writes:
@@ -189,6 +190,13 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
     };
   }
 
+  // Current seat holder (separate from candidate incumbency — covers cases where incumbent isn't running)
+  if (has(row.incumbent)) {
+    forecast.seatHolder = row.incumbent;
+    const p = (row.party || "").trim().toLowerCase();
+    forecast.seatParty = p.startsWith("dem") ? "D" : p.startsWith("rep") ? "R" : "I";
+  }
+
   // Past results (optional)
   if (pastRows && pastRows.length > 0) {
     forecast.pastResults = pastRows
@@ -211,7 +219,7 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
         if (has(r.rep_incumbent)) pr.repIncumbent = bool(r.rep_incumbent);
         return pr;
       })
-      .filter((r) => r.year > 0)
+      .filter((r) => r.year > 0 && (r.demPct > 0 || r.repPct > 0 || (r.totalVotes && r.totalVotes > 0)))
       .sort((a, b) => b.year - a.year);
   }
 
@@ -249,7 +257,7 @@ function buildNoElection(row, state, abbr, pastRows) {
         if (has(r.rep_incumbent)) pr.repIncumbent = bool(r.rep_incumbent);
         return pr;
       })
-      .filter((r) => r.year > 0)
+      .filter((r) => r.year > 0 && (r.demPct > 0 || r.repPct > 0 || (r.totalVotes && r.totalVotes > 0)))
       .sort((a, b) => b.year - a.year);
   }
   return entry;
@@ -306,7 +314,8 @@ const senateRows    = parseCSV("senate_seats.csv");
 const senatePast    = parseCSV("senate_past_results.csv");
 const govRows       = parseCSV("governor_seats.csv");
 const govPast       = parseCSV("governor_past_results.csv");
-const houseRows     = parseCSV("house_races.csv");
+const houseRows     = parseCSV("house_seats.csv");
+const housePast     = parseCSV("house_past_results.csv");
 const presRows      = parseCSV("presidential_2024.csv");
 
 // ── Senate ────────────────────────────────────────────────────────────────────
@@ -380,10 +389,19 @@ for (const row of govRows) {
 
 // ── House ─────────────────────────────────────────────────────────────────────
 
-// Index entered house data by district_id
+// Index entered house data by district_id (as integer, e.g. 101 for AL-1)
 const houseEnteredMap = {};
 for (const row of houseRows) {
-  if (row.district_id) houseEnteredMap[row.district_id] = row;
+  if (row.district_id) houseEnteredMap[parseInt(row.district_id)] = row;
+}
+
+// Index house past results by district_id (integer) → array of rows
+const housePastMap = {};
+for (const row of housePast) {
+  if (row.district_id) {
+    const key = parseInt(row.district_id);
+    (housePastMap[key] = housePastMap[key] || []).push(row);
+  }
 }
 
 const houseData = [];
@@ -391,12 +409,18 @@ for (const [fips, abbr, stateName, n, base] of STATE_INFO) {
   for (let d = 1; d <= n; d++) {
     const distStr = n === 1 ? "00" : String(d).padStart(2, "0");
     const id      = fips + distStr;
-    const entered = houseEnteredMap[id];
+    const entered = houseEnteredMap[parseInt(id)];
 
-    if (entered && has(entered.probability)) {
-      // Use entered data
-      houseData.push(buildRaceForecast(entered, "house", id,
-        n === 1 ? `${abbr}-AL` : `${abbr}-${d}`, stateName, []));
+    if (entered) {
+      // Use entered data; if prob_dem is blank, inject procedural probability so map coloring still works
+      const row = Object.assign({}, entered);
+      if (!has(row.prob_dem)) {
+        const variation = Math.sin(d * 2.4 + parseInt(fips) * 0.3) * 0.26;
+        row.prob_dem = String(Math.max(0.03, Math.min(0.97, base + variation)).toFixed(4));
+      }
+      const past = housePastMap[parseInt(id)] || [];
+      houseData.push(buildRaceForecast(row, "house", id,
+        n === 1 ? `${abbr}-AL` : `${abbr}-${d}`, stateName, past));
     } else {
       // Fall back to procedural generation
       houseData.push(proceduralHouseDistrict(fips, abbr, stateName, d, n, base));
@@ -467,6 +491,8 @@ export type RaceForecast = {
   polyDem?: number;
   polyRep?: number;
   candidates?: { dem: Candidate; rep: Candidate };
+  seatHolder?: string;
+  seatParty?: "D" | "R" | "I";
   pastResults?: PastResult[];
 };
 
