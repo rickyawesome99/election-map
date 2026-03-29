@@ -53,7 +53,11 @@ export default function StateDistrictMap({
   const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
 
+  // Build lookup by race id; also alias Census at-large GEOIDs (end in "00") → our new "01" ids
   const raceById = new Map(houseRaces.map((r) => [r.id, r]));
+  for (const r of houseRaces) {
+    if (r.id.endsWith("01")) raceById.set(r.id.slice(0, -2) + "00", r);
+  }
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
 
   if (houseRaces.length === 0) {
@@ -192,7 +196,7 @@ export default function StateDistrictMap({
         const repPct = 100 - demPct;
         const { bg: rBg, text: rText } = getRatingColors(selected.rating);
         const [, distNum] = selected.name.split("-");
-        const distLabel = distNum === "AL" ? "At-Large District" : `District ${distNum}`;
+        const distLabel = houseRaces.length === 1 ? "At-Large District" : `District ${parseInt(distNum)}`;
         return (
           <div className="md:hidden" style={{ borderTop: "1px solid var(--app-border)" }}>
             <div className="flex items-start justify-between gap-4 px-4 py-3">

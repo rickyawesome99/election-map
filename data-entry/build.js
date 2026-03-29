@@ -17,7 +17,6 @@
  *   data-entry/governor_past_results.csv
  *   data-entry/house_seats.csv
  *   data-entry/house_past_results.csv
- *   data-entry/presidential_2024.csv
  *
  * Writes:
  *   data/forecastData.ts  (replaces the existing file)
@@ -174,27 +173,37 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
     forecast.polyRep = num(row.poly_rep);
   }
 
+  // Determine incumbency from the "incumbent" column (R / D / Both / none).
+  // Falls back to separate dem_incumbent / rep_incumbent columns (Y/N) if "incumbent" is absent.
+  const incVal = (row.incumbent || "").trim().toUpperCase();
+  const isPartyIndicator = ["R", "D", "BOTH", "NONE"].includes(incVal);
+  const demInc = isPartyIndicator ? (incVal === "D" || incVal === "BOTH") : bool(row.dem_incumbent);
+  const repInc = isPartyIndicator ? (incVal === "R" || incVal === "BOTH") : bool(row.rep_incumbent);
+
   // Candidates (optional — only include if dem_name or rep_name is filled)
   if (has(row.dem_name) || has(row.rep_name)) {
     forecast.candidates = {
       dem: {
         name:      has(row.dem_name) ? row.dem_name : "Democratic Candidate",
         party:     has(row.dem_party) ? row.dem_party.trim() : "D",
-        incumbent: bool(row.dem_incumbent),
+        incumbent: demInc,
       },
       rep: {
         name:      has(row.rep_name) ? row.rep_name : "Republican Candidate",
         party:     "R",
-        incumbent: bool(row.rep_incumbent),
+        incumbent: repInc,
       },
     };
   }
 
-  // Current seat holder (separate from candidate incumbency — covers cases where incumbent isn't running)
-  if (has(row.incumbent)) {
-    forecast.seatHolder = row.incumbent;
+  // Current seat holder — sourced from "current_incumbent" (senate) or legacy "incumbent" name field.
+  const seatHolderName = has(row.current_incumbent) ? row.current_incumbent
+                       : (!isPartyIndicator && has(row.incumbent)) ? row.incumbent
+                       : null;
+  if (seatHolderName) {
+    forecast.seatHolder = seatHolderName;
     const p = (row.party || "").trim().toLowerCase();
-    forecast.seatParty = p.startsWith("dem") ? "D" : p.startsWith("rep") ? "R" : "I";
+    forecast.seatParty = (p === "d" || p.startsWith("dem")) ? "D" : (p === "r" || p.startsWith("rep")) ? "R" : "I";
   }
 
   // Past results (optional)
@@ -215,8 +224,16 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
         if (has(r.seat)) pr.seat = int2(r.seat);
         if (has(r['class'])) pr.seatClass = int2(r['class']);
         if (has(r.type)) pr.electionType = r.type;
-        if (has(r.dem_incumbent)) pr.demIncumbent = bool(r.dem_incumbent);
-        if (has(r.rep_incumbent)) pr.repIncumbent = bool(r.rep_incumbent);
+        // incumbent column: R/D/Both/none (house) or dem_incumbent/rep_incumbent (gov/senate)
+        const rIncVal = (r.incumbent || "").trim().toUpperCase();
+        const rIsParty = ["R", "D", "BOTH", "NONE"].includes(rIncVal);
+        if (rIsParty) {
+          if (rIncVal === "D" || rIncVal === "BOTH") pr.demIncumbent = true;
+          if (rIncVal === "R" || rIncVal === "BOTH") pr.repIncumbent = true;
+        } else {
+          if (has(r.dem_incumbent)) pr.demIncumbent = bool(r.dem_incumbent);
+          if (has(r.rep_incumbent)) pr.repIncumbent = bool(r.rep_incumbent);
+        }
         return pr;
       })
       .filter((r) => r.year > 0 && (r.demPct > 0 || r.repPct > 0 || (r.totalVotes && r.totalVotes > 0)))
@@ -231,7 +248,7 @@ function buildNoElection(row, state, abbr, pastRows) {
   const entry = {
     state,
     abbr,
-    incumbent:    has(row.incumbent) ? row.incumbent : "Incumbent TBD",
+    incumbent:    has(row.current_incumbent) ? row.current_incumbent : has(row.incumbent) ? row.incumbent : "Incumbent TBD",
     party:        row.party || "R",
     nextElection: int2(row.next_election, 2028),
   };
@@ -253,8 +270,15 @@ function buildNoElection(row, state, abbr, pastRows) {
         if (has(r.seat)) pr.seat = int2(r.seat);
         if (has(r['class'])) pr.seatClass = int2(r['class']);
         if (has(r.type)) pr.electionType = r.type;
-        if (has(r.dem_incumbent)) pr.demIncumbent = bool(r.dem_incumbent);
-        if (has(r.rep_incumbent)) pr.repIncumbent = bool(r.rep_incumbent);
+        const rIncVal = (r.incumbent || "").trim().toUpperCase();
+        const rIsParty = ["R", "D", "BOTH", "NONE"].includes(rIncVal);
+        if (rIsParty) {
+          if (rIncVal === "D" || rIncVal === "BOTH") pr.demIncumbent = true;
+          if (rIncVal === "R" || rIncVal === "BOTH") pr.repIncumbent = true;
+        } else {
+          if (has(r.dem_incumbent)) pr.demIncumbent = bool(r.dem_incumbent);
+          if (has(r.rep_incumbent)) pr.repIncumbent = bool(r.rep_incumbent);
+        }
         return pr;
       })
       .filter((r) => r.year > 0 && (r.demPct > 0 || r.repPct > 0 || (r.totalVotes && r.totalVotes > 0)))
@@ -293,10 +317,10 @@ const STATE_INFO = [
   ["55","WI","Wisconsin",8,0.48],["56","WY","Wyoming",1,0.08],
 ];
 
-function proceduralHouseDistrict(fips, abbr, stateName, d, n, base) {
-  const distStr  = n === 1 ? "00" : String(d).padStart(2, "0");
+function proceduralHouseDistrict(fips, abbr, stateName, d, _n, base) {
+  const distStr  = String(d).padStart(2, "0");
   const id       = fips + distStr;
-  const name     = n === 1 ? `${abbr}-AL` : `${abbr}-${d}`;
+  const name     = `${abbr}-${String(d).padStart(2, "0")}`;
   const variation = Math.sin(d * 2.4 + parseInt(fips) * 0.3) * 0.26;
   const prob     = Math.max(0.03, Math.min(0.97, base + variation));
   const margin   = parseFloat(((prob - 0.5) * 42).toFixed(1));
@@ -309,14 +333,48 @@ function proceduralHouseDistrict(fips, abbr, stateName, d, n, base) {
 
 // ── Load all CSVs ─────────────────────────────────────────────────────────────
 
+function parseCSVOptional(filename) {
+  const full = path.join(SHEET_DIR, filename);
+  if (!fs.existsSync(full)) return [];
+  const content = fs.readFileSync(full, "utf8").trim();
+  const lines   = content.split(/\r?\n/);
+  const headers = splitCSVLine(lines[0]);
+  return lines.slice(1)
+    .filter((l) => l.trim())
+    .map((line) => {
+      const values = splitCSVLine(line);
+      const row = {};
+      headers.forEach((h, i) => { row[h.trim()] = (values[i] ?? "").trim(); });
+      return row;
+    });
+}
+
+function parseTSVOptional(filename) {
+  const full = path.join(SHEET_DIR, filename);
+  if (!fs.existsSync(full)) return [];
+  const content = fs.readFileSync(full, "utf8").trim();
+  const lines   = content.split(/\r?\n/);
+  const headers = lines[0].split("\t");
+  return lines.slice(1)
+    .filter((l) => l.trim())
+    .map((line) => {
+      const values = line.split("\t");
+      const row = {};
+      headers.forEach((h, i) => { row[h.trim()] = (values[i] ?? "").trim(); });
+      return row;
+    });
+}
+
 console.log("Reading spreadsheet files…");
 const senateRows    = parseCSV("senate_seats.csv");
 const senatePast    = parseCSV("senate_past_results.csv");
 const govRows       = parseCSV("governor_seats.csv");
-const govPast       = parseCSV("governor_past_results.csv");
+const govPast       = parseCSVOptional("governor_past_results.csv");
 const houseRows     = parseCSV("house_seats.csv");
 const housePast     = parseCSV("house_past_results.csv");
-const presRows      = parseCSV("presidential_2024.csv");
+const districtInfoRows  = parseCSVOptional("house_district_info.csv");
+const presHistoryRows   = parseCSVOptional("president_past_results.csv");
+const houseDelHistoryRows = parseCSVOptional("house_del_history.csv");
 
 // ── Senate ────────────────────────────────────────────────────────────────────
 
@@ -334,7 +392,7 @@ const senateHoldovers  = [];
 for (const row of senateRows) {
   const abbr  = row.state_abbr;
   const state = row.state_name;
-  const seat  = parseInt(row.seat);
+  const seat  = parseInt(row.seat || row.seate);
   const nextY = int2(row.next_election, 2028);
 
   if (nextY === ELECTION_YEAR) {
@@ -356,7 +414,7 @@ const senateSeatsByState = {};
 for (const row of senateRows) {
   const abbr = row.state_abbr;
   if (!senateSeatsByState[abbr]) senateSeatsByState[abbr] = {};
-  senateSeatsByState[abbr][row.seat] = row.party || "R";
+  senateSeatsByState[abbr][row.seat || row.seate] = row.party || "R";
 }
 
 const senateCurrent = {};
@@ -407,7 +465,7 @@ for (const row of housePast) {
 const houseData = [];
 for (const [fips, abbr, stateName, n, base] of STATE_INFO) {
   for (let d = 1; d <= n; d++) {
-    const distStr = n === 1 ? "00" : String(d).padStart(2, "0");
+    const distStr = String(d).padStart(2, "0");
     const id      = fips + distStr;
     const entered = houseEnteredMap[parseInt(id)];
 
@@ -420,7 +478,7 @@ for (const [fips, abbr, stateName, n, base] of STATE_INFO) {
       }
       const past = housePastMap[parseInt(id)] || [];
       houseData.push(buildRaceForecast(row, "house", id,
-        n === 1 ? `${abbr}-AL` : `${abbr}-${d}`, stateName, past));
+        `${abbr}-${String(d).padStart(2, "0")}`, stateName, past));
     } else {
       // Fall back to procedural generation
       houseData.push(proceduralHouseDistrict(fips, abbr, stateName, d, n, base));
@@ -428,13 +486,111 @@ for (const [fips, abbr, stateName, n, base] of STATE_INFO) {
   }
 }
 
+// ── House District Boundary Info ──────────────────────────────────────────────
+
+// Year columns: key in CSV → actual year
+const BOUNDARY_YEAR_COLS = [
+  { col: "new_26", descCol: "new_26_desc", year: 2026 },
+  { col: "24",     descCol: "24_desc",     year: 2024 },
+  { col: "22",     descCol: "22_desc",     year: 2022 },
+  { col: "20",     descCol: "20_desc",     year: 2020 },
+  { col: "18",     descCol: "18_desc",     year: 2018 },
+  { col: "16",     descCol: "16_desc",     year: 2016 },
+];
+
+const houseDistrictInfo = {};
+for (const row of districtInfoRows) {
+  if (!row.district_id) continue;
+  // Normalize district_id to 4-char padded string matching race.id (e.g. "0101" for AL-1)
+  const key = String(parseInt(row.district_id)).padStart(4, "0");
+  const history = [];
+  for (const { col, descCol, year } of BOUNDARY_YEAR_COLS) {
+    const val = (row[col] || "").trim().toUpperCase();
+    if (val === "YES") {
+      history.push({ year, description: (row[descCol] || "").trim() });
+    }
+    // "NO" and "INACTIVE" are skipped
+  }
+  if (history.length > 0) {
+    houseDistrictInfo[key] = history;
+  }
+}
+
+// ── House Delegation History ──────────────────────────────────────────────────
+
+const houseDelegationHistory = {};
+for (const row of houseDelHistoryRows) {
+  const stateName = (row.State || row.state || "").trim();
+  if (!stateName) continue;
+  const year = int2(row.Year || row.year, 0);
+  if (!year) continue;
+  const entry = {
+    year,
+    demSeats: int2(row.Dem_Seats || row.dem_seats, 0),
+    repSeats: int2(row.Rep_Seats || row.rep_seats, 0),
+    demPct:   num(row.dem_pct),
+    repPct:   num(row.rep_pct),
+    margin:   num(row.margin),
+  };
+  const dv = parseInt((row.dem_votes   || "").replace(/,/g, ""));
+  const rv = parseInt((row.rep_votes   || "").replace(/,/g, ""));
+  const vm = parseInt((row.vote_margin || "").replace(/,/g, ""));
+  const tv = parseInt((row["total votes"] || row.total_votes || "").replace(/,/g, ""));
+  if (!isNaN(dv) && dv > 0) entry.demVotes   = dv;
+  if (!isNaN(rv) && rv > 0) entry.repVotes   = rv;
+  if (!isNaN(vm))           entry.voteMargin = vm;
+  if (!isNaN(tv) && tv > 0) entry.totalVotes = tv;
+  (houseDelegationHistory[stateName] = houseDelegationHistory[stateName] || []).push(entry);
+}
+for (const key of Object.keys(houseDelegationHistory)) {
+  houseDelegationHistory[key].sort((a, b) => b.year - a.year);
+}
+
+// ── Presidential Past Results ─────────────────────────────────────────────────
+
+// presPastResults: keyed by state_abbr from the CSV (e.g. "AL", "ME", "ME-01", "NE", "NE-02", "DC")
+// Convention: margin = dem_pct - rep_pct (positive = Dem wins), consistent with rest of codebase
+const presPastResults = {};
+for (const row of presHistoryRows) {
+  const abbr = (row.state_abbr || "").trim();
+  if (!abbr) continue;
+  const demPct = num(row.dem_pct);
+  const repPct = num(row.rep_pct);
+  const entry = {
+    stateAbbr:     abbr,
+    electoralVotes: int2(row["Electoral"], 0),
+    year:           int2(row.year, 0),
+    demPct,
+    repPct,
+    margin:         parseFloat((demPct - repPct).toFixed(2)),
+  };
+  if (has(row.dem_votes))   entry.demVotes   = parseInt(row.dem_votes.replace(/,/g, "")) || undefined;
+  if (has(row.rep_votes))   entry.repVotes   = parseInt(row.rep_votes.replace(/,/g, "")) || undefined;
+  if (has(row.vote_margin)) entry.voteMargin = parseInt(row.vote_margin.replace(/,/g, "")) || undefined;
+  if (has(row.total_votes)) entry.totalVotes = parseInt(row.total_votes.replace(/,/g, "")) || undefined;
+  if (has(row.dem_candidate)) entry.demCandidate = row.dem_candidate;
+  if (has(row.rep_candidate)) entry.repCandidate = row.rep_candidate;
+  const pIncVal = (row.incumbent || "").trim().toUpperCase();
+  if (pIncVal === "D" || pIncVal === "BOTH") entry.demIncumbent = true;
+  if (pIncVal === "R" || pIncVal === "BOTH") entry.repIncumbent = true;
+  (presPastResults[abbr] = presPastResults[abbr] || []).push(entry);
+}
+// Sort each state's entries by year descending
+for (const key of Object.keys(presPastResults)) {
+  presPastResults[key].sort((a, b) => b.year - a.year);
+}
+
 // ── Presidential 2024 ─────────────────────────────────────────────────────────
 
+// Build pres2024 from CSV statewide 2024 entries
+// ME and NE statewide rows are already keyed correctly; skip district rows (ME-01, ME-02, NE-01…)
 const pres2024 = {};
-for (const row of presRows) {
-  if (row.state_abbr && has(row.margin)) {
-    pres2024[row.state_abbr] = num(row.margin, 0);
-  }
+for (const row of presHistoryRows) {
+  if (int2(row.year) !== 2024) continue;
+  const abbr = (row.state_abbr || "").trim();
+  // Skip sub-district rows (ME-01, ME-02, NE-01, NE-02, NE-03) and DC
+  if (/^(ME|NE)-\d/.test(abbr) || abbr === "DC") continue;
+  pres2024[abbr] = parseFloat((num(row.dem_pct) - num(row.rep_pct)).toFixed(2));
 }
 
 // ── Output forecastData.ts ────────────────────────────────────────────────────
@@ -521,7 +677,48 @@ export const governorNoElection: NoElectionEntry[] = ${j(governorNoElection)};
 
 export const houseData: RaceForecast[] = ${j(houseData)};
 
+export type BoundaryHistoryEntry = {
+  year: number;
+  description: string;
+};
+
+export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = ${j(houseDistrictInfo)};
+
+export type PresResult = {
+  stateAbbr: string;
+  electoralVotes: number;
+  year: number;
+  demPct: number;
+  repPct: number;
+  margin: number;
+  demVotes?: number;
+  repVotes?: number;
+  voteMargin?: number;
+  totalVotes?: number;
+  demCandidate?: string;
+  repCandidate?: string;
+  demIncumbent?: boolean;
+  repIncumbent?: boolean;
+};
+
+export const presPastResults: Record<string, PresResult[]> = ${j(presPastResults)};
+
 export const pres2024: Record<string, number> = ${j(pres2024)};
+
+export type HouseDelegationEntry = {
+  year: number;
+  demSeats: number;
+  repSeats: number;
+  demPct: number;
+  repPct: number;
+  margin: number;
+  demVotes?: number;
+  repVotes?: number;
+  voteMargin?: number;
+  totalVotes?: number;
+};
+
+export const houseDelegationHistory: Record<string, HouseDelegationEntry[]> = ${j(houseDelegationHistory)};
 
 export const electionYear: number = ${ELECTION_YEAR};
 `;
@@ -535,4 +732,5 @@ console.log(`✓ Governor races:    ${governorData.length}`);
 console.log(`✓ Governor holdouts: ${governorNoElection.length}`);
 console.log(`✓ House districts:   ${houseData.length}`);
 console.log(`✓ Pres 2024 states:  ${Object.keys(pres2024).length}`);
+console.log(`✓ House del history: ${Object.keys(houseDelegationHistory).length} states`);
 console.log(`\n✅  data/forecastData.ts updated successfully.`);

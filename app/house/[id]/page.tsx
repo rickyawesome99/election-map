@@ -1,4 +1,4 @@
-import { houseData, electionYear } from "@/data/forecastData";
+import { houseData, houseDistrictInfo, electionYear } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -429,36 +429,40 @@ export default async function HousePage({ params, searchParams }: { params: Prom
             className="rounded-xl p-6 md:col-span-2"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
           >
-            <div className="flex items-baseline gap-3 mb-5">
-              <h2 className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-                District Boundaries
-              </h2>
-              <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-                Map released: <span className="font-semibold">TBD</span>
-              </span>
-            </div>
+            <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-5" style={{ color: "var(--app-text-muted)" }}>
+              District Boundaries
+            </h2>
             <div className="mb-4">
               <div className="text-[10px] uppercase tracking-wider font-semibold mb-3" style={{ color: "var(--app-text-muted)" }}>
                 Change History
               </div>
-              <div className="flex flex-col gap-3">
-                {[
-                  { date: "TBD", description: "Placeholder: Description of most recent redistricting change for this district." },
-                  { date: "TBD", description: "Placeholder: Description of prior redistricting change for this district." },
-                ].map((entry, i) => (
-                  <div key={i} className="flex gap-4 items-start">
-                    <div
-                      className="shrink-0 text-xs font-semibold tabular-nums rounded px-2 py-1 mt-0.5"
-                      style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", minWidth: 56, textAlign: "center" }}
-                    >
-                      {entry.date}
-                    </div>
-                    <div className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
-                      {entry.description}
-                    </div>
+              {(() => {
+                const entries = houseDistrictInfo[race.id] ?? [];
+                if (entries.length === 0) {
+                  return (
+                    <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>
+                      No redistricting changes recorded for this district.
+                    </p>
+                  );
+                }
+                return (
+                  <div className="flex flex-col gap-3">
+                    {entries.map((entry, i) => (
+                      <div key={i} className="flex gap-4 items-start">
+                        <div
+                          className="shrink-0 text-xs font-semibold tabular-nums rounded px-2 py-1 mt-0.5"
+                          style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", minWidth: 56, textAlign: "center" }}
+                        >
+                          {entry.year}
+                        </div>
+                        <div className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
+                          {entry.description}
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                );
+              })()}
             </div>
           </section>
 

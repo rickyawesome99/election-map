@@ -333,7 +333,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
             {[
               { label: "State", value: race.state },
               { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
-              { label: "Current Senator", value: incumbent?.name ?? "TBD" },
+              { label: "Current Senator", value: race.seatHolder ?? incumbent?.name ?? "TBD" },
             ].map(({ label, value }) => (
               <div key={label} className="rounded-lg p-3 flex flex-col" style={{ background: "var(--app-bg)" }}>
                 <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
@@ -528,12 +528,18 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
                       <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
                         <div className="flex flex-col">
                           <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                          <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{demName}</span>
+                          <div className="flex items-center gap-1.5">
+                            <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{demName}</span>
+                            {res.demIncumbent && <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>}
+                          </div>
                         </div>
                         <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
                         <div className="flex flex-col items-end">
                           <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                          <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{repName}</span>
+                          <div className="flex items-center gap-1.5 justify-end">
+                            {res.repIncumbent && <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>}
+                            <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{repName}</span>
+                          </div>
                         </div>
                       </div>
                       <div className="flex h-4 rounded-full overflow-hidden mb-1.5">

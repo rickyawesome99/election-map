@@ -1,436 +1,436 @@
-district_id,district_name,state_abbr,state_name,year,incumbent,party,race_desc,prob_dem,prob_rep,margin,proj_dem,proj_rep,dem_name,dem_incumbent,rep_name,rep_incumbent,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
-101,AL-1,AL,Alabama,2026,Barry Moore,Republican,,,,,,,Clyde Jones,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-102,AL-2,AL,Alabama,2026,Shomari Figures,Democratic,,,,,,,Shomari Figures,TRUE,Hampton Harris,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-103,AL-3,AL,Alabama,2026,Mike Rogers,Republican,,,,,,,Lee McInnis,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-104,AL-4,AL,Alabama,2026,Robert B. Aderholt,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-105,AL-5,AL,Alabama,2026,Dale W. Strong,Republican,,,,,,,TBD,FALSE,Dale Strong,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-106,AL-6,AL,Alabama,2026,Gary J. Palmer,Republican,,,,,,,Keith Pilkington,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-107,AL-7,AL,Alabama,2026,Terri A. Sewell,Democratic,,,,,,,Terri Sewell,TRUE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-200,AK-AL,AK,Alaska,2026,Nicholas J. Begich III,Republican,,,,,,,TBD,FALSE,Nicholas Begich,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-401,AZ-1,AZ,Arizona,2026,David Schweikert,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-402,AZ-2,AZ,Arizona,2026,Elijah Crane,Republican,,,,,,,TBD,FALSE,Elijah Crane,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-403,AZ-3,AZ,Arizona,2026,Yassamin Ansari,Democratic,,,,,,,TBD,FALSE,Abe Hamadeh,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-404,AZ-4,AZ,Arizona,2026,Greg Stanton,Democratic,,,,,,,Greg Stanton,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-405,AZ-5,AZ,Arizona,2026,Andy Biggs,Republican,,,,,,,TBD,FALSE,Andy Biggs,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-406,AZ-6,AZ,Arizona,2026,Juan Ciscomani,Republican,,,,,,,Kirsten Engel,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-407,AZ-7,AZ,Arizona,2026,Adelita S. Grijalva,Democratic,,,,,,,Adelita Grijalva,TRUE,Daniel Butierez,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-408,AZ-8,AZ,Arizona,2026,Abraham J. Hamadeh,Republican,,,,,,,TBD,FALSE,Debbie Lesko,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-409,AZ-9,AZ,Arizona,2026,Paul A. Gosar,Republican,,,,,,,TBD,FALSE,Paul Gosar,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-501,AR-1,AR,Arkansas,2026,Eric A. “Rick” Crawford,Republican,,,,,,,Terri Yarbrough Green,FALSE,Rick Crawford,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-502,AR-2,AR,Arkansas,2026,J. French Hill,Republican,,,,,,,Chris Jones,FALSE,French Hill,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-503,AR-3,AR,Arkansas,2026,Steve Womack,Republican,,,,,,,Robb Ryerse,FALSE,Steve Womack,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-504,AR-4,AR,Arkansas,2026,Bruce Westerman,Republican,,,,,,,James Russell,FALSE,Bruce Westerman,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-601,CA-1,CA,California,2026,Vacancy,Vacant,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-602,CA-2,CA,California,2026,Jared Huffman,Democratic,,,,,,,Jared Huffman,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-603,CA-3,CA,California,2026,Kevin Kiley,Independent,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-604,CA-4,CA,California,2026,Mike Thompson,Democratic,,,,,,,Mike Thompson,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-605,CA-5,CA,California,2026,Tom McClintock,Republican,,,,,,,TBD,FALSE,Tom McClintock,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-606,CA-6,CA,California,2026,Ami Bera,Democratic,,,,,,,TBD,FALSE,Michael Stansfield,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-607,CA-7,CA,California,2026,Doris O. Matsui,Democratic,,,,,,,Doris O. Matsui,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-608,CA-8,CA,California,2026,John Garamendi,Democratic,,,,,,,John Garamendi,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-609,CA-9,CA,California,2026,Josh Harder,Democratic,,,,,,,Josh Harder,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-610,CA-10,CA,California,2026,Mark DeSaulnier,Democratic,,,,,,,Mark DeSaulnier,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-611,CA-11,CA,California,2026,Nancy Pelosi,Democratic,,,,,,,Nancy Pelosi,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-612,CA-12,CA,California,2026,Lateefah Simon,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-613,CA-13,CA,California,2026,Adam Gray,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-614,CA-14,CA,California,2026,Eric Swalwell,Democratic,,,,,,,Eric Swalwell,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-615,CA-15,CA,California,2026,Kevin Mullin,Democratic,,,,,,,Kevin Mullin,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-616,CA-16,CA,California,2026,Sam T. Liccardo,Democratic,,,,,,,Sam T. Liccardo,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-617,CA-17,CA,California,2026,Ro Khanna,Democratic,,,,,,,Ro Khanna,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-618,CA-18,CA,California,2026,Zoe Lofgren,Democratic,,,,,,,Zoe Lofgren,TRUE,Shane Lewis,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-619,CA-19,CA,California,2026,Jimmy Panetta,Democratic,,,,,,,Jimmy Panetta,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-620,CA-20,CA,California,2026,Vince Fong,Republican,,,,,,,Sandra Van Scotter,FALSE,Vince Fong,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-621,CA-21,CA,California,2026,Jim Costa,Democratic,,,,,,,Jim Costa,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-622,CA-22,CA,California,2026,David G. Valadao,Republican,,,,,,,TBD,FALSE,David G. Valadao,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-623,CA-23,CA,California,2026,Jay Obernolte,Republican,,,,,,,TBD,FALSE,Jay Obernolte,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-624,CA-24,CA,California,2026,Salud O. Carbajal,Democratic,,,,,,,Salud O. Carbajal,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-625,CA-25,CA,California,2026,Raul Ruiz,Democratic,,,,,,,Raul Ruiz,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-626,CA-26,CA,California,2026,Julia Brownley,Democratic,,,,,,,Julia Brownley,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-627,CA-27,CA,California,2026,George Whitesides,Democratic,,,,,,,TBD,FALSE,Jason Gibbs,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-628,CA-28,CA,California,2026,Judy Chu,Democratic,,,,,,,Judy Chu,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-629,CA-29,CA,California,2026,Luz M. Rivas,Democratic,,,,,,,TBD,FALSE,Rudy Melendez,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-630,CA-30,CA,California,2026,Laura Friedman,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-631,CA-31,CA,California,2026,"Gilbert Ray Cisneros, Jr.",Democratic,,,,,,,Gil Cisneros,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-632,CA-32,CA,California,2026,Brad Sherman,Democratic,,,,,,,Brad Sherman,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-633,CA-33,CA,California,2026,Pete Aguilar,Democratic,,,,,,,Pete Aguilar,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-634,CA-34,CA,California,2026,Jimmy Gomez,Democratic,,,,,,,Jimmy Gomez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-635,CA-35,CA,California,2026,Norma J. Torres,Democratic,,,,,,,Norma J. Torres,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-636,CA-36,CA,California,2026,Ted Lieu,Democratic,,,,,,,Ted Lieu,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-637,CA-37,CA,California,2026,Sydney Kamlager-Dove,Democratic,,,,,,,Sydney Kamlager-Dove,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-638,CA-38,CA,California,2026,Linda T. Sánchez,Democratic,,,,,,,TBD,FALSE,Pedro Antonio Casas,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-639,CA-39,CA,California,2026,Mark Takano,Democratic,,,,,,,Mark Takano,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-640,CA-40,CA,California,2026,Young Kim,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-641,CA-41,CA,California,2026,Ken Calvert,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-642,CA-42,CA,California,2026,Robert Garcia,Democratic,,,,,,,Robert Garcia,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-643,CA-43,CA,California,2026,Maxine Waters,Democratic,,,,,,,TBD,FALSE,Cristian Morales,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-644,CA-44,CA,California,2026,Nanette Diaz Barragán,Democratic,,,,,,,Nanette Barragan,FALSE,Genevieve Angel,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-645,CA-45,CA,California,2026,Derek Tran,Democratic,,,,,,,Derek Tran,TRUE,Mark Leonard,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-646,CA-46,CA,California,2026,J. Luis Correa,Democratic,,,,,,,TBD,FALSE,David Pan,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-647,CA-47,CA,California,2026,Dave Min,Democratic,,,,,,,Dave Min,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-648,CA-48,CA,California,2026,Darrell Issa,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-649,CA-49,CA,California,2026,Mike Levin,Democratic,,,,,,,Mike Levin,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-650,CA-50,CA,California,2026,Scott H. Peters,Democratic,,,,,,,Scott H. Peters,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-651,CA-51,CA,California,2026,Sara Jacobs,Democratic,,,,,,,TBD,FALSE,Ricardo Cabrera,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-652,CA-52,CA,California,2026,Juan Vargas,Democratic,,,,,,,TBD,FALSE,Jeff Belle,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-801,CO-1,CO,Colorado,2026,Diana DeGette,Democratic,,,,,,,TBD,FALSE,Gregory Cutlip,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-802,CO-2,CO,Colorado,2026,Joe Neguse,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-803,CO-3,CO,Colorado,2026,Jeff Hurd,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-804,CO-4,CO,Colorado,2026,Lauren Boebert,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-805,CO-5,CO,Colorado,2026,Jeff Crank,Republican,,,,,,,TBD,FALSE,Jeff Crank,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-806,CO-6,CO,Colorado,2026,Jason Crow,Democratic,,,,,,,Jason Crow,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-807,CO-7,CO,Colorado,2026,Brittany Pettersen,Democratic,,,,,,,Brittany Pettersen,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-808,CO-8,CO,Colorado,2026,Gabe Evans,Republican,,,,,,,TBD,FALSE,Gabe Evans,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-901,CT-1,CT,Connecticut,2026,John B. Larson,Democratic,,,,,,,TBD,FALSE,Amy Chai,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-902,CT-2,CT,Connecticut,2026,Joe Courtney,Democratic,,,,,,,Kyle Gauck,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-903,CT-3,CT,Connecticut,2026,Rosa L. DeLauro,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-904,CT-4,CT,Connecticut,2026,James A. Himes,Democratic,,,,,,,Jim Himes,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-905,CT-5,CT,Connecticut,2026,Jahana Hayes,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1000,DE-AL,DE,Delaware,2026,Sarah McBride,Democratic,,,,,,,Sarah McBride,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1201,FL-1,FL,Florida,2026,Jimmy Patronis,Republican,,,,,,,Gay Valimont,FALSE,Jimmy Patronis,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1202,FL-2,FL,Florida,2026,Neal P. Dunn,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1203,FL-3,FL,Florida,2026,Kat Cammack,Republican,,,,,,,TBD,FALSE,Kat Cammack,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1204,FL-4,FL,Florida,2026,Aaron Bean,Republican,,,,,,,TBD,FALSE,Aaron Bean,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1205,FL-5,FL,Florida,2026,John H. Rutherford,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1206,FL-6,FL,Florida,2026,Randy Fine,Republican,,,,,,,TBD,FALSE,Randy Fine,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1207,FL-7,FL,Florida,2026,Cory Mills,Republican,,,,,,,TBD,FALSE,Cory Mills,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1208,FL-8,FL,Florida,2026,Mike Haridopolos,Republican,,,,,,,TBD,FALSE,Mike Haridopolos,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1209,FL-9,FL,Florida,2026,Darren Soto,Democratic,,,,,,,Darren Soto,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1210,FL-10,FL,Florida,2026,Maxwell Frost,Democratic,,,,,,,Maxwell Frost,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1211,FL-11,FL,Florida,2026,Daniel Webster,Republican,,,,,,,TBD,FALSE,Daniel Webster,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1212,FL-12,FL,Florida,2026,Gus M. Bilirakis,Republican,,,,,,,TBD,FALSE,Gus Bilirakis,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1213,FL-13,FL,Florida,2026,Anna Paulina Luna,Republican,,,,,,,TBD,FALSE,Anna Paulina Luna,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1214,FL-14,FL,Florida,2026,Kathy Castor,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1215,FL-15,FL,Florida,2026,Laurel M. Lee,Republican,,,,,,,TBD,FALSE,Laurel Lee,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1216,FL-16,FL,Florida,2026,Vern Buchanan,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1217,FL-17,FL,Florida,2026,W. Gregory Steube,Republican,,,,,,,TBD,FALSE,Greg Steube,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1218,FL-18,FL,Florida,2026,Scott Franklin,Republican,,,,,,,TBD,FALSE,Scott Franklin,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1219,FL-19,FL,Florida,2026,Byron Donalds,Republican,,,,,,,TBD,FALSE,Byron Donalds,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1220,FL-20,FL,Florida,2026,Sheila Cherfilus-McCormick,Democratic,,,,,,,Sheila Cherfilus-McCormick,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1221,FL-21,FL,Florida,2026,Brian J. Mast,Republican,,,,,,,TBD,FALSE,Brian Mast,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1222,FL-22,FL,Florida,2026,Lois Frankel,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1223,FL-23,FL,Florida,2026,Jared Moskowitz,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1224,FL-24,FL,Florida,2026,Frederica S. Wilson,Democratic,,,,,,,Frederica Wilson,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1225,FL-25,FL,Florida,2026,Debbie Wasserman Schultz,Democratic,,,,,,,Debbie Wasserman Schultz,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1226,FL-26,FL,Florida,2026,Mario Diaz-Balart,Republican,,,,,,,TBD,FALSE,Mario Diaz-Balart,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1227,FL-27,FL,Florida,2026,Maria Elvira Salazar,Republican,,,,,,,TBD,FALSE,Maria Elvira Salazar,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1228,FL-28,FL,Florida,2026,Carlos A. Gimenez,Republican,,,,,,,TBD,FALSE,Carlos Gimenez,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1301,GA-1,GA,Georgia,2026,Earl L. “Buddy” Carter,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1302,GA-2,GA,Georgia,2026,"Sanford D. Bishop, Jr.",Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1303,GA-3,GA,Georgia,2026,Brian Jack,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1304,GA-4,GA,Georgia,2026,"Henry C. “Hank” Johnson, Jr.",Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1305,GA-5,GA,Georgia,2026,Nikema Williams,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1306,GA-6,GA,Georgia,2026,Lucy McBath,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1307,GA-7,GA,Georgia,2026,Richard McCormick,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1308,GA-8,GA,Georgia,2026,Austin Scott,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1309,GA-9,GA,Georgia,2026,Andrew S. Clyde,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1310,GA-10,GA,Georgia,2026,Mike Collins,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1311,GA-11,GA,Georgia,2026,Barry Loudermilk,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1312,GA-12,GA,Georgia,2026,Rick W. Allen,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1313,GA-13,GA,Georgia,2026,David Scott,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1314,GA-14,GA,Georgia,2026,Vacancy,Vacant,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1501,HI-1,HI,Hawaii,2026,Ed Case,Democratic,,,,,,,TBD,FALSE,Maxwell Frazier,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1502,HI-2,HI,Hawaii,2026,Jill N. Tokuda,Democratic,,,,,,,Steven King,FALSE,Brenton Awa,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1601,ID-1,ID,Idaho,2026,Russ Fulcher,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1602,ID-2,ID,Idaho,2026,Michael K. Simpson,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1701,IL-1,IL,Illinois,2026,Jonathan L. Jackson,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1702,IL-2,IL,Illinois,2026,Robin L. Kelly,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1703,IL-3,IL,Illinois,2026,Delia C. Ramirez,Democratic,,,,,,,Delia Ramirez,TRUE,Angel Oakley,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1704,IL-4,IL,Illinois,2026,Jesús G. “Chuy” García,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1705,IL-5,IL,Illinois,2026,Mike Quigley,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1706,IL-6,IL,Illinois,2026,Sean Casten,Democratic,,,,,,,Sean Casten,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1707,IL-7,IL,Illinois,2026,Danny K. Davis,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1708,IL-8,IL,Illinois,2026,Raja Krishnamoorthi,Democratic,,,,,,,Melissa Bean,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1709,IL-9,IL,Illinois,2026,Janice D. Schakowsky,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1710,IL-10,IL,Illinois,2026,Bradley Scott Schneider,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1711,IL-11,IL,Illinois,2026,Bill Foster,Democratic,,,,,,,Bill Foster,TRUE,Jeff Walter,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1712,IL-12,IL,Illinois,2026,Mike Bost,Republican,,,,,,,Julie Fortier,FALSE,Mike Bost,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1713,IL-13,IL,Illinois,2026,Nikki Budzinski,Democratic,,,,,,,Nikki Budzinski,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1714,IL-14,IL,Illinois,2026,Lauren Underwood,Democratic,,,,,,,Lauren Underwood,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1715,IL-15,IL,Illinois,2026,Mary E. Miller,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1716,IL-16,IL,Illinois,2026,Darin LaHood,Republican,,,,,,,Paul Nolley,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1717,IL-17,IL,Illinois,2026,Eric Sorensen,Democratic,,,,,,,Eric Sorensen,TRUE,Dillan Vancil,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1801,IN-1,IN,Indiana,2026,Frank J. Mrvan,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1802,IN-2,IN,Indiana,2026,Rudy Yakym III,Republican,,,,,,,TBD,FALSE,Rudy Yakym,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1803,IN-3,IN,Indiana,2026,Marlin A. Stutzman,Republican,,,,,,,Kelly Thompson,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1804,IN-4,IN,Indiana,2026,James R. Baird,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1805,IN-5,IN,Indiana,2026,Victoria Spartz,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1806,IN-6,IN,Indiana,2026,Jefferson Shreve,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1807,IN-7,IN,Indiana,2026,André Carson,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1808,IN-8,IN,Indiana,2026,Mark B. Messmer,Republican,,,,,,,TBD,FALSE,Mark Messmer,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1809,IN-9,IN,Indiana,2026,Erin Houchin,Republican,,,,,,,TBD,FALSE,Erin Houchin,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-1901,IA-1,IA,Iowa,2026,Mariannette Miller-Meeks,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1902,IA-2,IA,Iowa,2026,Ashley Hinson,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1903,IA-3,IA,Iowa,2026,Zachary Nunn,Republican,,,,,,,TBD,FALSE,Zach Nunn,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-1904,IA-4,IA,Iowa,2026,Randy Feenstra,Republican,,,,,,,TBD,FALSE,Chris McGowan,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2001,KS-1,KS,Kansas,2026,Tracey Mann,Republican,,,,,,,TBD,FALSE,Tracey Mann,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2002,KS-2,KS,Kansas,2026,Derek Schmidt,Republican,,,,,,,TBD,FALSE,Derek Schmidt,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2003,KS-3,KS,Kansas,2026,Sharice Davids,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2004,KS-4,KS,Kansas,2026,Ron Estes,Republican,,,,,,,TBD,FALSE,Ron Estes,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2101,KY-1,KY,Kentucky,2026,James Comer,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2102,KY-2,KY,Kentucky,2026,Brett Guthrie,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2103,KY-3,KY,Kentucky,2026,Morgan McGarvey,Democratic,,,,,,,Morgan McGarvey,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2104,KY-4,KY,Kentucky,2026,Thomas Massie,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2105,KY-5,KY,Kentucky,2026,Harold Rogers,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2106,KY-6,KY,Kentucky,2026,Andy Barr,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2201,LA-1,LA,Louisiana,2026,Steve Scalise,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2202,LA-2,LA,Louisiana,2026,Troy A. Carter,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2203,LA-3,LA,Louisiana,2026,Clay Higgins,Republican,,,,,,,TBD,FALSE,Clay Higgins,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2204,LA-4,LA,Louisiana,2026,Mike Johnson,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2205,LA-5,LA,Louisiana,2026,Julia Letlow,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2206,LA-6,LA,Louisiana,2026,Cleo Fields,Democratic,,,,,,,Cleo Fields,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2301,ME-1,ME,Maine,2026,Chellie Pingree,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2302,ME-2,ME,Maine,2026,Jared F. Golden,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2401,MD-1,MD,Maryland,2026,Andy Harris,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2402,MD-2,MD,Maryland,2026,"Johnny Olszewski, Jr.",Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2403,MD-3,MD,Maryland,2026,Sarah Elfreth,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2404,MD-4,MD,Maryland,2026,Glenn Ivey,Democratic,,,,,,,TBD,FALSE,George McDermott,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2405,MD-5,MD,Maryland,2026,Steny H. Hoyer,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2406,MD-6,MD,Maryland,2026,April McClain Delaney,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2407,MD-7,MD,Maryland,2026,Kweisi Mfume,Democratic,,,,,,,TBD,FALSE,Scott Collier,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2408,MD-8,MD,Maryland,2026,Jamie Raskin,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2501,MA-1,MA,Massachusetts,2026,Richard E. Neal,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2502,MA-2,MA,Massachusetts,2026,James P. McGovern,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2503,MA-3,MA,Massachusetts,2026,Lori Trahan,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2504,MA-4,MA,Massachusetts,2026,Jake Auchincloss,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2505,MA-5,MA,Massachusetts,2026,Katherine M. Clark,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2506,MA-6,MA,Massachusetts,2026,Seth Moulton,Democratic,,,,,,,TBD,FALSE,Micah Jones,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2507,MA-7,MA,Massachusetts,2026,Ayanna Pressley,Democratic,,,,,,,Ayanna Pressley,TRUE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2508,MA-8,MA,Massachusetts,2026,Stephen F. Lynch,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2509,MA-9,MA,Massachusetts,2026,William R. Keating,Democratic,,,,,,,Craig Swallow,FALSE,Tyler MacAllister,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2601,MI-1,MI,Michigan,2026,Jack Bergman,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2602,MI-2,MI,Michigan,2026,John R. Moolenaar,Republican,,,,,,,TBD,FALSE,John Moolenaar,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2603,MI-3,MI,Michigan,2026,Hillary J. Scholten,Democratic,,,,,,,Hillary Scholten,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2604,MI-4,MI,Michigan,2026,Bill Huizenga,Republican,,,,,,,TBD,FALSE,Bill Huizenga,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2605,MI-5,MI,Michigan,2026,Tim Walberg,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2606,MI-6,MI,Michigan,2026,Debbie Dingell,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2607,MI-7,MI,Michigan,2026,Tom Barrett,Republican,,,,,,,TBD,FALSE,Tom Barrett,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2608,MI-8,MI,Michigan,2026,Kristen McDonald Rivet,Democratic,,,,,,,Kristen McDonald Rivet,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2609,MI-9,MI,Michigan,2026,Lisa C. McClain,Republican,,,,,,,TBD,FALSE,Lisa McClain,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2610,MI-10,MI,Michigan,2026,John James,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2611,MI-11,MI,Michigan,2026,Haley M. Stevens,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2612,MI-12,MI,Michigan,2026,Rashida Tlaib,Democratic,,,,,,,Rashida Tlaib,TRUE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2613,MI-13,MI,Michigan,2026,Shri Thanedar,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2701,MN-1,MN,Minnesota,2026,Brad Finstad,Republican,,,,,,,TBD,FALSE,Brad Finstad,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2702,MN-2,MN,Minnesota,2026,Angie Craig,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2703,MN-3,MN,Minnesota,2026,Kelly Morrison,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2704,MN-4,MN,Minnesota,2026,Betty McCollum,Democratic,,,,,,,Betty McCollum,TRUE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2705,MN-5,MN,Minnesota,2026,Ilhan Omar,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2706,MN-6,MN,Minnesota,2026,Tom Emmer,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2707,MN-7,MN,Minnesota,2026,Michelle Fischbach,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2708,MN-8,MN,Minnesota,2026,Pete Stauber,Republican,,,,,,,TBD,FALSE,Pete Stauber,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2801,MS-1,MS,Mississippi,2026,Trent Kelly,Republican,,,,,,,Cliff Johnson,FALSE,Trent Kelly,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2802,MS-2,MS,Mississippi,2026,Bennie G. Thompson,Democratic,,,,,,,Bennie Thompson,TRUE,Ron Eller,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2803,MS-3,MS,Mississippi,2026,Michael Guest,Republican,,,,,,,Michael Chiaradio,FALSE,Michael Guest,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2804,MS-4,MS,Mississippi,2026,Mike Ezell,Republican,,,,,,,Jeffrey Hulum III,FALSE,Mike Ezell,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2901,MO-1,MO,Missouri,2026,Wesley Bell,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2902,MO-2,MO,Missouri,2026,Ann Wagner,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2903,MO-3,MO,Missouri,2026,"Robert F. Onder, Jr.",Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2904,MO-4,MO,Missouri,2026,Mark Alford,Republican,,,,,,,TBD,FALSE,Mark Alford,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-2905,MO-5,MO,Missouri,2026,Emanuel Cleaver,Democratic,,,,,,,Emanuel Cleaver,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2906,MO-6,MO,Missouri,2026,Sam Graves,Republican,,,,,,,,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2907,MO-7,MO,Missouri,2026,Eric Burlison,Republican,,,,,,,Missi Hesketh,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-2908,MO-8,MO,Missouri,2026,Jason Smith,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3001,MT-1,MT,Montana,2026,Ryan K. Zinke,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3002,MT-2,MT,Montana,2026,Troy Downing,Republican,,,,,,,TBD,FALSE,Troy Downing,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3101,NE-1,NE,Nebraska,2026,Mike Flood,Republican,,,,,,,TBD,FALSE,Mike Flood,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3102,NE-2,NE,Nebraska,2026,Don Bacon,Republican,,,,,,,TBD,FALSE,Brinker Harding,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3103,NE-3,NE,Nebraska,2026,Adrian Smith,Republican,,,,,,,Becky Stille,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3201,NV-1,NV,Nevada,2026,Dina Titus,Democratic,,,,,,,Dina Titus,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3202,NV-2,NV,Nevada,2026,Mark E. Amodei,Republican,,,,,,,TBD,FALSE,Mark Amodei,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3203,NV-3,NV,Nevada,2026,Susie Lee,Democratic,,,,,,,Susie Lee,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3204,NV-4,NV,Nevada,2026,Steven Horsford,Democratic,,,,,,,Steven Horsford,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3301,NH-1,NH,New Hampshire,2026,Chris Pappas,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3302,NH-2,NH,New Hampshire,2026,Maggie Goodlander,Democratic,,,,,,,TBD,FALSE,Lily Tang Williams,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3401,NJ-1,NJ,New Jersey,2026,Donald Norcross,Democratic,,,,,,,Donald Norcross,TRUE,Damon Galdo,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3402,NJ-2,NJ,New Jersey,2026,Jefferson Van Drew,Republican,,,,,,,TBD,FALSE,Jeff Van Drew,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3403,NJ-3,NJ,New Jersey,2026,"Herbert C. Conaway, Jr.",Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3404,NJ-4,NJ,New Jersey,2026,Christopher H. Smith,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3405,NJ-5,NJ,New Jersey,2026,Josh Gottheimer,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3406,NJ-6,NJ,New Jersey,2026,"Frank Pallone, Jr.",Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3407,NJ-7,NJ,New Jersey,2026,"Thomas H. Kean, Jr.",Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3408,NJ-8,NJ,New Jersey,2026,Robert Menendez,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3409,NJ-9,NJ,New Jersey,2026,Nellie Pou,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3410,NJ-10,NJ,New Jersey,2026,LaMonica McIver,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3411,NJ-11,NJ,New Jersey,2026,Vacancy,Vacant,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3412,NJ-12,NJ,New Jersey,2026,Bonnie Watson Coleman,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3501,NM-1,NM,New Mexico,2026,Melanie A. Stansbury,Democratic,,,,,,,Melanie Stansbury,TRUE,Didi Okpareke,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3502,NM-2,NM,New Mexico,2026,Gabe Vasquez,Democratic,,,,,,,Gabe Vasquez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3503,NM-3,NM,New Mexico,2026,Teresa Leger Fernandez,Democratic,,,,,,,Teresa Leger Fernandez,TRUE,Martin Zamora,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3601,NY-1,NY,New York,2026,Nick LaLota,Republican,,,,,,,TBD,FALSE,Nick LaLota,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3602,NY-2,NY,New York,2026,Andrew R. Garbarino,Republican,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3603,NY-3,NY,New York,2026,Thomas R. Suozzi,Democratic,,,,,,,Tom Suozzi,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3604,NY-4,NY,New York,2026,Laura Gillen,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3605,NY-5,NY,New York,2026,Gregory W. Meeks,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3606,NY-6,NY,New York,2026,Grace Meng,Democratic,,,,,,,Chuck Park,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3607,NY-7,NY,New York,2026,Nydia M. Velázquez,Democratic,,,,,,,Nydia M. Velázquez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3608,NY-8,NY,New York,2026,Hakeem S. Jeffries,Democratic,,,,,,,Hakeem S. Jeffries,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3609,NY-9,NY,New York,2026,Yvette D. Clarke,Democratic,,,,,,,Yvette D. Clarke,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3610,NY-10,NY,New York,2026,Daniel S. Goldman,Democratic,,,,,,,Daniel S. Goldman,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3611,NY-11,NY,New York,2026,Nicole Malliotakis,Republican,,,,,,,TBD,FALSE,Nicole Malliotakis,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3612,NY-12,NY,New York,2026,Jerrold Nadler,Democratic,,,,,,,Jerrold Nadler,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3613,NY-13,NY,New York,2026,Adriano Espaillat,Democratic,,,,,,,Adriano Espaillat,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3614,NY-14,NY,New York,2026,Alexandria Ocasio-Cortez,Democratic,,,,,,,Alexandria Ocasio-Cortez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3615,NY-15,NY,New York,2026,Ritchie Torres,Democratic,,,,,,,Ritchie Torres,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3616,NY-16,NY,New York,2026,George Latimer,Democratic,,,,,,,George Latimer,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3617,NY-17,NY,New York,2026,Michael Lawler,Republican,,,,,,,TBD,FALSE,Michael Lawler,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3618,NY-18,NY,New York,2026,Patrick Ryan,Democratic,,,,,,,Patrick Ryan,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3619,NY-19,NY,New York,2026,Josh Riley,Democratic,,,,,,,Josh Riley,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3620,NY-20,NY,New York,2026,Paul Tonko,Democratic,,,,,,,Paul Tonko,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3621,NY-21,NY,New York,2026,Elise M. Stefanik,Republican,,,,,,,TBD,FALSE,Elise M. Stefanik,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3622,NY-22,NY,New York,2026,John W. Mannion,Democratic,,,,,,,John W. Mannion,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3623,NY-23,NY,New York,2026,Nicholas A. Langworthy,Republican,,,,,,,TBD,FALSE,Nicholas A. Langworthy,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3624,NY-24,NY,New York,2026,Claudia Tenney,Republican,,,,,,,TBD,FALSE,Claudia Tenney,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3625,NY-25,NY,New York,2026,Joseph D. Morelle,Democratic,,,,,,,Joseph D. Morelle,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3626,NY-26,NY,New York,2026,Timothy M. Kennedy,Democratic,,,,,,,Timothy M. Kennedy,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3701,NC-1,NC,North Carolina,2026,Donald G. Davis,Democratic,,,,,,,Donald G. Davis,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3702,NC-2,NC,North Carolina,2026,Deborah K. Ross,Democratic,,,,,,,Deborah K. Ross,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3703,NC-3,NC,North Carolina,2026,Gregory F. Murphy,Republican,,,,,,,TBD,FALSE,Gregory F. Murphy,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3704,NC-4,NC,North Carolina,2026,Valerie P. Foushee,Democratic,,,,,,,Valerie P. Foushee,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3705,NC-5,NC,North Carolina,2026,Virginia Foxx,Republican,,,,,,,TBD,FALSE,Virginia Foxx,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3706,NC-6,NC,North Carolina,2026,Addison P. McDowell,Republican,,,,,,,TBD,FALSE,Addison P. McDowell,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3707,NC-7,NC,North Carolina,2026,David Rouzer,Republican,,,,,,,TBD,FALSE,David Rouzer,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3708,NC-8,NC,North Carolina,2026,Mark Harris,Republican,,,,,,,TBD,FALSE,Mark Harris,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3709,NC-9,NC,North Carolina,2026,Richard Hudson,Republican,,,,,,,TBD,FALSE,Richard Hudson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3710,NC-10,NC,North Carolina,2026,Pat Harrigan,Republican,,,,,,,TBD,FALSE,Pat Harrigan,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3711,NC-11,NC,North Carolina,2026,Chuck Edwards,Republican,,,,,,,TBD,FALSE,Chuck Edwards,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3712,NC-12,NC,North Carolina,2026,Alma S. Adams,Democratic,,,,,,,Alma Adams,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3713,NC-13,NC,North Carolina,2026,Brad Knott,Republican,,,,,,,TBD,FALSE,Brad Knott,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3714,NC-14,NC,North Carolina,2026,Tim Moore,Republican,,,,,,,TBD,FALSE,Tim Moore,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3800,ND-AL,ND,North Dakota,2026,Julie Fedorchak,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3901,OH-1,OH,Ohio,2026,Greg Landsman,Democratic,,,,,,,Greg Landsman,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3902,OH-2,OH,Ohio,2026,David J. Taylor,Republican,,,,,,,TBD,FALSE,David J. Taylor,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3903,OH-3,OH,Ohio,2026,Joyce Beatty,Democratic,,,,,,,Joyce Beatty,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3904,OH-4,OH,Ohio,2026,Jim Jordan,Republican,,,,,,,TBD,FALSE,Jim Jordan,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3905,OH-5,OH,Ohio,2026,Robert E. Latta,Republican,,,,,,,TBD,FALSE,Robert E. Latta,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3906,OH-6,OH,Ohio,2026,Michael A. Rulli,Republican,,,,,,,TBD,FALSE,Michael A. Rulli,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3907,OH-7,OH,Ohio,2026,Max L. Miller,Republican,,,,,,,TBD,FALSE,Max L. Miller,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3908,OH-8,OH,Ohio,2026,Warren Davidson,Republican,,,,,,,TBD,FALSE,Warren Davidson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3909,OH-9,OH,Ohio,2026,Marcy Kaptur,Democratic,,,,,,,Marcy Kaptur,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3910,OH-10,OH,Ohio,2026,Michael R. Turner,Republican,,,,,,,TBD,FALSE,Mike Turner,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3911,OH-11,OH,Ohio,2026,Shontel M. Brown,Democratic,,,,,,,TBD,FALSE,James Hemphill,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3912,OH-12,OH,Ohio,2026,Troy Balderson,Republican,,,,,,,TBD,FALSE,Troy Balderson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3913,OH-13,OH,Ohio,2026,Emilia Strong Sykes,Democratic,,,,,,,Emilia Sykes,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-3914,OH-14,OH,Ohio,2026,David P. Joyce,Republican,,,,,,,Bill O'Neill,FALSE,David Joyce,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-3915,OH-15,OH,Ohio,2026,Mike Carey,Republican,,,,,,,TBD,FALSE,Mike Carey,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4001,OK-1,OK,Oklahoma,2026,Kevin Hern,Republican,,,,,,,TBD,FALSE,Kevin Hern,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4002,OK-2,OK,Oklahoma,2026,Josh Brecheen,Republican,,,,,,,TBD,FALSE,Josh Brecheen,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4003,OK-3,OK,Oklahoma,2026,Frank D. Lucas,Republican,,,,,,,TBD,FALSE,Frank D. Lucas,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4004,OK-4,OK,Oklahoma,2026,Tom Cole,Republican,,,,,,,TBD,FALSE,Tom Cole,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4005,OK-5,OK,Oklahoma,2026,Stephanie I. Bice,Republican,,,,,,,TBD,FALSE,Stephanie I. Bice,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4101,OR-1,OR,Oregon,2026,Suzanne Bonamici,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4102,OR-2,OR,Oregon,2026,Cliff Bentz,Republican,,,,,,,TBD,FALSE,Cliff Bentz,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4103,OR-3,OR,Oregon,2026,Maxine Dexter,Democratic,,,,,,,Maxine Dexter,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4104,OR-4,OR,Oregon,2026,Val T. Hoyle,Democratic,,,,,,,Val Hoyle,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4105,OR-5,OR,Oregon,2026,Janelle S. Bynum,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4106,OR-6,OR,Oregon,2026,Andrea Salinas,Democratic,,,,,,,Andrea Salinas,TRUE,David Russ,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4201,PA-1,PA,Pennsylvania,2026,Brian K. Fitzpatrick,Republican,,,,,,,TBD,FALSE,Brian K. Fitzpatrick,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4202,PA-2,PA,Pennsylvania,2026,Brendan F. Boyle,Democratic,,,,,,,Brendan F. Boyle,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4203,PA-3,PA,Pennsylvania,2026,Dwight Evans,Democratic,,,,,,,Dwight Evans,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4204,PA-4,PA,Pennsylvania,2026,Madeleine Dean,Democratic,,,,,,,Madeleine Dean,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4205,PA-5,PA,Pennsylvania,2026,Mary Gay Scanlon,Democratic,,,,,,,Mary Gay Scanlon,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4206,PA-6,PA,Pennsylvania,2026,Chrissy Houlahan,Democratic,,,,,,,Chrissy Houlahan,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4207,PA-7,PA,Pennsylvania,2026,Ryan Mackenzie,Republican,,,,,,,TBD,FALSE,Ryan Mackenzie,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4208,PA-8,PA,Pennsylvania,2026,"Robert P. Bresnahan, Jr.",Republican,,,,,,,TBD,FALSE,Rob Bresnahan,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4209,PA-9,PA,Pennsylvania,2026,Daniel Meuser,Republican,,,,,,,TBD,FALSE,Daniel Meuser,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4210,PA-10,PA,Pennsylvania,2026,Scott Perry,Republican,,,,,,,TBD,FALSE,Scott Perry,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4211,PA-11,PA,Pennsylvania,2026,Lloyd Smucker,Republican,,,,,,,Nancy Mannion,FALSE,Lloyd Smucker,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4212,PA-12,PA,Pennsylvania,2026,Summer L. Lee,Democratic,,,,,,,Summer L. Lee,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4213,PA-13,PA,Pennsylvania,2026,John Joyce,Republican,,,,,,,TBD,FALSE,John Joyce,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4214,PA-14,PA,Pennsylvania,2026,Guy Reschenthaler,Republican,,,,,,,TBD,FALSE,Guy Reschenthaler,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4215,PA-15,PA,Pennsylvania,2026,Glenn Thompson,Republican,,,,,,,TBD,FALSE,Glenn Thompson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4216,PA-16,PA,Pennsylvania,2026,Mike Kelly,Republican,,,,,,,Justin Wagner,FALSE,Mike Kelly,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4217,PA-17,PA,Pennsylvania,2026,Christopher R. Deluzio,Democratic,,,,,,,Christopher R. Deluzio,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4401,RI-1,RI,Rhode Island,2026,Gabe Amo,Democratic,,,,,,,TBD,FALSE,,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4402,RI-2,RI,Rhode Island,2026,Seth Magaziner,Democratic,,,,,,,Seth Magaziner,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4501,SC-1,SC,South Carolina,2026,Nancy Mace,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4502,SC-2,SC,South Carolina,2026,Joe Wilson,Republican,,,,,,,TBD,FALSE,Joe Wilson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4503,SC-3,SC,South Carolina,2026,Sheri Biggs,Republican,,,,,,,Eunice Lehmacher,FALSE,Sheri Biggs,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4504,SC-4,SC,South Carolina,2026,William R. Timmons IV,Republican,,,,,,,TBD,FALSE,William Timmons,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4505,SC-5,SC,South Carolina,2026,Ralph Norman,Republican,,,,,,,TBD,FALSE,Ralph Norman,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4506,SC-6,SC,South Carolina,2026,James E. Clyburn,Democratic,,,,,,,Jim Clyburn,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4507,SC-7,SC,South Carolina,2026,Russell Fry,Republican,,,,,,,TBD,FALSE,Russell Fry,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4600,SD-AL,SD,South Dakota,2026,Dusty Johnson,Republican,,,,,,,Nikki Gronli,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4701,TN-1,TN,Tennessee,2026,Diana Harshbarger,Republican,,,,,,,TBD,FALSE,Diana Harshbarger,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4702,TN-2,TN,Tennessee,2026,Tim Burchett,Republican,,,,,,,TBD,FALSE,Tim Burchett,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4703,TN-3,TN,Tennessee,2026,Charles J. “Chuck” Fleischmann,Republican,,,,,,,TBD,FALSE,Charles J. “Chuck” Fleischmann,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4704,TN-4,TN,Tennessee,2026,Scott DesJarlais,Republican,,,,,,,TBD,FALSE,Scott DesJarlais,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4705,TN-5,TN,Tennessee,2026,Andrew Ogles,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4706,TN-6,TN,Tennessee,2026,John W. Rose,Republican,,,,,,,TBD,FALSE,John W. Rose,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4707,TN-7,TN,Tennessee,2026,Matt Van Epps,Republican,,,,,,,TBD,FALSE,Matt Van Epps,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4708,TN-8,TN,Tennessee,2026,David Kustoff,Republican,,,,,,,TBD,FALSE,David Kustoff,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4709,TN-9,TN,Tennessee,2026,Steve Cohen,Democratic,,,,,,,Steve Cohen,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4801,TX-1,TX,Texas,2026,Nathaniel Moran,Republican,,,,,,,TBD,FALSE,Nathaniel Moran,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4802,TX-2,TX,Texas,2026,Dan Crenshaw,Republican,,,,,,,Shaun Finnie,FALSE,Steve Toth,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4803,TX-3,TX,Texas,2026,Keith Self,Republican,,,,,,,Evan Hunt,FALSE,Keith Self,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4804,TX-4,TX,Texas,2026,Pat Fallon,Republican,,,,,,,Jason Pearce,FALSE,Pat Fallon,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4805,TX-5,TX,Texas,2026,Lance Gooden,Republican,,,,,,,TBD,FALSE,Lance Gooden,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4806,TX-6,TX,Texas,2026,Jake Ellzey,Republican,,,,,,,Danny Minton,FALSE,Jake Ellzey,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4807,TX-7,TX,Texas,2026,Lizzie Fletcher,Democratic,,,,,,,Lizzie Fletcher,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4808,TX-8,TX,Texas,2026,Morgan Luttrell,Republican,,,,,,,Laura Jones,FALSE,Jessica Hart Steinmann,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4809,TX-9,TX,Texas,2026,Al Green,Democratic,,,,,,,Leticia Gutierrez,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4810,TX-10,TX,Texas,2026,Michael T. McCaul,Republican,,,,,,,Caitlin Rourk,FALSE,Chris Gober,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4811,TX-11,TX,Texas,2026,August Pfluger,Republican,,,,,,,TBD,FALSE,August Pfluger,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4812,TX-12,TX,Texas,2026,Craig A. Goldman,Republican,,,,,,,TBD,FALSE,Craig Goldman,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4813,TX-13,TX,Texas,2026,Ronny Jackson,Republican,,,,,,,TBD,FALSE,Ronny Jackson,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4814,TX-14,TX,Texas,2026,"Randy K. Weber, Sr.",Republican,,,,,,,TBD,FALSE,Randy Weber,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4815,TX-15,TX,Texas,2026,Monica De La Cruz,Republican,,,,,,,TBD,FALSE,Monica De La Cruz,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4816,TX-16,TX,Texas,2026,Veronica Escobar,Democratic,,,,,,,Veronica Escobar,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4817,TX-17,TX,Texas,2026,Pete Sessions,Republican,,,,,,,TBD,FALSE,Pete Sessions,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4818,TX-18,TX,Texas,2026,Christian D. Menefee,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4819,TX-19,TX,Texas,2026,Jodey C. Arrington,Republican,,,,,,,TBD,FALSE,Jodey Arrington,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4820,TX-20,TX,Texas,2026,Joaquin Castro,Democratic,,,,,,,Joaquin Castro,TRUE,Edgardo Baez,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4821,TX-21,TX,Texas,2026,Chip Roy,Republican,,,,,,,TBD,FALSE,Mark Teixeira,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4822,TX-22,TX,Texas,2026,Troy E. Nehls,Republican,,,,,,,TBD,FALSE,Trever Nehls,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4823,TX-23,TX,Texas,2026,Tony Gonzales,Republican,,,,,,,TBD,FALSE,Tony Gonzales,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4824,TX-24,TX,Texas,2026,Beth Van Duyne,Republican,,,,,,,TBD,FALSE,Beth Van Duyne,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4825,TX-25,TX,Texas,2026,Roger Williams,Republican,,,,,,,TBD,FALSE,Roger Williams,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4826,TX-26,TX,Texas,2026,Brandon Gill,Republican,,,,,,,TBD,FALSE,Brandon Gill,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4827,TX-27,TX,Texas,2026,Michael Cloud,Republican,,,,,,,TBD,FALSE,Michael Cloud,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4828,TX-28,TX,Texas,2026,Henry Cuellar,Democratic,,,,,,,Henry Cuellar,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4829,TX-29,TX,Texas,2026,Sylvia R. Garcia,Democratic,,,,,,,Sylvia Garcia,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4830,TX-30,TX,Texas,2026,Jasmine Crockett,Democratic,,,,,,,Jasmine Crockett,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4831,TX-31,TX,Texas,2026,John R. Carter,Republican,,,,,,,TBD,FALSE,John Carter,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4832,TX-32,TX,Texas,2026,Julie Johnson,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4833,TX-33,TX,Texas,2026,Marc A. Veasey,Democratic,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4834,TX-34,TX,Texas,2026,Vicente Gonzalez,Democratic,,,,,,,Vicente Gonzalez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4835,TX-35,TX,Texas,2026,Greg Casar,Democratic,,,,,,,Greg Casar,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4836,TX-36,TX,Texas,2026,Brian Babin,Republican,,,,,,,TBD,FALSE,Brian Babin,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4837,TX-37,TX,Texas,2026,Lloyd Doggett,Democratic,,,,,,,Greg Casar,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4838,TX-38,TX,Texas,2026,Wesley Hunt,Republican,,,,,,,TBD,FALSE,Wesley Hunt,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-4901,UT-1,UT,Utah,2026,Blake D. Moore,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4902,UT-2,UT,Utah,2026,Celeste Maloy,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4903,UT-3,UT,Utah,2026,Mike Kennedy,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-4904,UT-4,UT,Utah,2026,Burgess Owens,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5000,VT-AL,VT,Vermont,2026,Becca Balint,Democratic,,,,,,,Becca Balint,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5101,VA-1,VA,Virginia,2026,Robert J. Wittman,Republican,,,,,,,TBD,FALSE,Robert J. Wittman,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5102,VA-2,VA,Virginia,2026,Jennifer A. Kiggans,Republican,,,,,,,TBD,FALSE,Jennifer A. Kiggans,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5103,VA-3,VA,Virginia,2026,Robert C. “Bobby” Scott,Democratic,,,,,,,Robert C. “Bobby” Scott,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5104,VA-4,VA,Virginia,2026,Jennifer L. McClellan,Democratic,,,,,,,Jennifer L. McClellan,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5105,VA-5,VA,Virginia,2026,John J. McGuire III,Republican,,,,,,,TBD,FALSE,John J. McGuire III,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5106,VA-6,VA,Virginia,2026,Ben Cline,Republican,,,,,,,TBD,FALSE,Ben Cline,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5107,VA-7,VA,Virginia,2026,Eugene Simon Vindman,Democratic,,,,,,,Eugene Simon Vindman,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5108,VA-8,VA,Virginia,2026,"Donald S. Beyer, Jr.",Democratic,,,,,,,"Donald S. Beyer, Jr.",TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5109,VA-9,VA,Virginia,2026,H. Morgan Griffith,Republican,,,,,,,TBD,FALSE,H. Morgan Griffith,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5110,VA-10,VA,Virginia,2026,Suhas Subramanyam,Democratic,,,,,,,Suhas Subramanyam,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5111,VA-11,VA,Virginia,2026,James R. Walkinshaw,Democratic,,,,,,,James R. Walkinshaw,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5301,WA-1,WA,Washington,2026,Suzan K. DelBene,Democratic,,,,,,,Suzan K. DelBene,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5302,WA-2,WA,Washington,2026,Rick Larsen,Democratic,,,,,,,Rick Larsen,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5303,WA-3,WA,Washington,2026,Marie Gluesenkamp Perez,Democratic,,,,,,,Marie Gluesenkamp Perez,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5304,WA-4,WA,Washington,2026,Dan Newhouse,Republican,,,,,,,TBD,FALSE,Dan Newhouse,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5305,WA-5,WA,Washington,2026,Michael Baumgartner,Republican,,,,,,,TBD,FALSE,Michael Baumgartner,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5306,WA-6,WA,Washington,2026,Emily Randall,Democratic,,,,,,,Emily Randall,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5307,WA-7,WA,Washington,2026,Pramila Jayapal,Democratic,,,,,,,Pramila Jayapal,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5308,WA-8,WA,Washington,2026,Kim Schrier,Democratic,,,,,,,Kim Schrier,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5309,WA-9,WA,Washington,2026,Adam Smith,Democratic,,,,,,,Adam Smith,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5310,WA-10,WA,Washington,2026,Marilyn Strickland,Democratic,,,,,,,Marilyn Strickland,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5401,WV-1,WV,West Virginia,2026,Carol D. Miller,Republican,,,,,,,TBD,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5402,WV-2,WV,West Virginia,2026,Riley M. Moore,Republican,,,,,,,TBD,FALSE,Riley Moore,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5501,WI-1,WI,Wisconsin,2026,Bryan Steil,Republican,,,,,,,TBD,FALSE,Bryan Steil,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5502,WI-2,WI,Wisconsin,2026,Mark Pocan,Democratic,,,,,,,Mark Pocan,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5503,WI-3,WI,Wisconsin,2026,Derrick Van Orden,Republican,,,,,,,TBD,FALSE,Derrick Van Orden,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5504,WI-4,WI,Wisconsin,2026,Gwen Moore,Democratic,,,,,,,Gwen Moore,TRUE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
-5505,WI-5,WI,Wisconsin,2026,Scott Fitzgerald,Republican,,,,,,,TBD,FALSE,Scott Fitzgerald,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5506,WI-6,WI,Wisconsin,2026,Glenn Grothman,Republican,,,,,,,TBD,FALSE,Glenn Grothman,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5507,WI-7,WI,Wisconsin,2026,Thomas P. Tiffany,Republican,,,,,,,TBD,FALSE,Thomas P. Tiffany,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5508,WI-8,WI,Wisconsin,2026,Tony Wied,Republican,,,,,,,TBD,FALSE,Tony Wied,TRUE,N/A,N/A,N/A,N/A,N/A,N/A
-5600,WY-AL,WY,Wyoming,2026,Harriet M. Hageman,Republican,,,,,,,,FALSE,TBD,FALSE,N/A,N/A,N/A,N/A,N/A,N/A
+district_id,district_name,state_abbr,state_name,year,incumbent,party,race_desc,prob_dem,prob_rep,margin,proj_dem,proj_rep,dem_name,rep_name,incumbent,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
+101,AL-01,AL,Alabama,2026,Barry Moore,Republican,,0,100,50.7,24.65,75.35,Clyde Jones,Rhett Marques,None,N/A,N/A,N/A,N/A,N/A,N/A
+102,AL-02,AL,Alabama,2026,Shomari Figures,Democratic,,95.1,4.9,-17.3,58.65,41.35,Shomari Figures,Hampton Harris,D,N/A,N/A,N/A,N/A,N/A,N/A
+103,AL-03,AL,Alabama,2026,Mike Rogers,Republican,,0,100,48.8,25.6,74.4,Victor Mcinnis,Michael Rogers,None,N/A,N/A,N/A,N/A,N/A,N/A
+104,AL-04,AL,Alabama,2026,Robert B. Aderholt,Republican,,0,100,68.7,15.65,84.35,Amanda Pusczek,Robert Aderholt,None,N/A,N/A,N/A,N/A,N/A,N/A
+105,AL-05,AL,Alabama,2026,Dale W. Strong,Republican,,0.1,99.9,31.2,34.4,65.6,Andrew Sneed,Dale Strong,R,N/A,N/A,N/A,N/A,N/A,N/A
+106,AL-06,AL,Alabama,2026,Gary J. Palmer,Republican,,0,100,36.2,31.9,68.1,Elizabeth Anderson,Gary Palmer,None,N/A,N/A,N/A,N/A,N/A,N/A
+107,AL-07,AL,Alabama,2026,Terri A. Sewell,Democratic,,100,0,-36.0,68,32,Terri Sewell,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+201,AK-01,AK,Alaska,2026,Nicholas J. Begich III,Republican,,27.6,72.4,6.2,46.9,53.1,Matthew Schultz,Nicholas Begich,R,N/A,N/A,N/A,N/A,N/A,N/A
+401,AZ-01,AZ,Arizona,2026,David Schweikert,Republican,,58.9,41.1,-2.4,51.2,48.8,Jonathan Treble,Thomas Feely,None,N/A,N/A,N/A,N/A,N/A,N/A
+402,AZ-02,AZ,Arizona,2026,Elijah Crane,Republican,,20.9,79.1,8.5,45.75,54.25,Jonathan Nez,Eli Crane,R,N/A,N/A,N/A,N/A,N/A,N/A
+403,AZ-03,AZ,Arizona,2026,Yassamin Ansari,Democratic,,100,0,-51.1,75.55,24.45,Yassamin Ansari,Kirt Burgess,None,N/A,N/A,N/A,N/A,N/A,N/A
+404,AZ-04,AZ,Arizona,2026,Greg Stanton,Democratic,,88.6,11.4,-12.6,56.3,43.7,Greg Stanton,Zuhdi Jasser,D,N/A,N/A,N/A,N/A,N/A,N/A
+405,AZ-05,AZ,Arizona,2026,Andy Biggs,Republican,,7,93,15.4,42.3,57.7,Christopher James,Andy Biggs,R,N/A,N/A,N/A,N/A,N/A,N/A
+406,AZ-06,AZ,Arizona,2026,Juan Ciscomani,Republican,,61.6,38.4,-3.1,51.55,48.45,Joanna Mendoza,Juan Ciscomani,None,N/A,N/A,N/A,N/A,N/A,N/A
+407,AZ-07,AZ,Arizona,2026,Adelita S. Grijalva,Democratic,,99.9,0.1,-33.3,66.65,33.35,Adelita Grijalva,Daniel Butierez,D,N/A,N/A,N/A,N/A,N/A,N/A
+408,AZ-08,AZ,Arizona,2026,Abraham J. Hamadeh,Republican,,11.5,88.5,12.5,43.75,56.25,Bernadette Placentia,Abraham Hamadeh,None,N/A,N/A,N/A,N/A,N/A,N/A
+409,AZ-09,AZ,Arizona,2026,Paul A. Gosar,Republican,,0.6,99.4,26.1,36.95,63.05,Danielle Sterbinsky,Paul Gosar,R,N/A,N/A,N/A,N/A,N/A,N/A
+501,AR-01,AR,Arkansas,2026,Eric A. “Rick” Crawford,Republican,,0,100,44.1,27.95,72.05,Terri Green,Eric Crawford,None,N/A,N/A,N/A,N/A,N/A,N/A
+502,AR-02,AR,Arkansas,2026,J. French Hill,Republican,,10,90,13.4,43.3,56.7,Chris Jones,French Hill,None,N/A,N/A,N/A,N/A,N/A,N/A
+503,AR-03,AR,Arkansas,2026,Steve Womack,Republican,,0.5,99.5,26.7,36.65,63.35,Robb Ryerse,Steve Womack,R,N/A,N/A,N/A,N/A,N/A,N/A
+504,AR-04,AR,Arkansas,2026,Bruce Westerman,Republican,,0,100,39.9,30.05,69.95,James Russell,Bruce Westerman,R,N/A,N/A,N/A,N/A,N/A,N/A
+601,CA-01,CA,California,2026,Vacancy,Vacant,,96.9,3.1,-19.5,59.75,40.25,Mike McGuire,James Gallagher,None,N/A,N/A,N/A,N/A,N/A,N/A
+602,CA-02,CA,California,2026,Jared Huffman,Democratic,,99.9,0.1,-32.4,66.2,33.8,Jared Huffman,Paul Saulsbury,D,N/A,N/A,N/A,N/A,N/A,N/A
+603,CA-03,CA,California,2026,Kevin Kiley,Independent,,92.4,7.6,-14.9,57.45,42.55,Amerish Bera,Christine Bish,None,N/A,N/A,N/A,N/A,N/A,N/A
+604,CA-04,CA,California,2026,Mike Thompson,Democratic,,99,1,-24.3,62.15,37.85,Mike Thompson,Laurie MacKenzie,D,N/A,N/A,N/A,N/A,N/A,N/A
+605,CA-05,CA,California,2026,Tom McClintock,Republican,,4.1,95.9,18.0,41,59,Michael Masuda,Tom McClintock,R,N/A,N/A,N/A,N/A,N/A,N/A
+606,CA-06,CA,California,2026,Ami Bera,Democratic,,89.2,10.8,-12.9,56.45,43.55,Thien Ho,Kevin Kiley,None,N/A,N/A,N/A,N/A,N/A,N/A
+607,CA-07,CA,California,2026,Doris O. Matsui,Democratic,,98.4,1.6,-22.5,61.25,38.75,Doris Matsui,Kathryn Ming,D,N/A,N/A,N/A,N/A,N/A,N/A
+608,CA-08,CA,California,2026,John Garamendi,Democratic,,100,0,-45.0,72.5,27.5,John Garamendi,Rudy Recile,D,N/A,N/A,N/A,N/A,N/A,N/A
+609,CA-09,CA,California,2026,Josh Harder,Democratic,,99.1,0.9,-24.9,62.45,37.55,Josh Harder,James Shoemaker,D,N/A,N/A,N/A,N/A,N/A,N/A
+610,CA-10,CA,California,2026,Mark DeSaulnier,Democratic,,100,0,-40.8,70.4,29.6,Mark DeSaulnier,Katherine Piccinini,D,N/A,N/A,N/A,N/A,N/A,N/A
+611,CA-11,CA,California,2026,Nancy Pelosi,Democratic,,100,0,-80.2,90.1,9.9,Scott Wiener,David Ganezer,D,N/A,N/A,N/A,N/A,N/A,N/A
+612,CA-12,CA,California,2026,Lateefah Simon,Democratic,,100,0,-92.5,96.25,3.75,Lateefah Simon,Heath Fulkerson,None,N/A,N/A,N/A,N/A,N/A,N/A
+613,CA-13,CA,California,2026,Adam Gray,Democratic,,88.2,11.8,-12.4,56.2,43.8,Adam Gray,Vin Kruttiventi,None,N/A,N/A,N/A,N/A,N/A,N/A
+614,CA-14,CA,California,2026,Eric Swalwell,Democratic,,100,0,-44.1,72.05,27.95,Abrar Qadir,Wendy Huang,D,N/A,N/A,N/A,N/A,N/A,N/A
+615,CA-15,CA,California,2026,Kevin Mullin,Democratic,,100,0,-58.2,79.1,20.9,Kevin Mullin,Anna Kramer,D,N/A,N/A,N/A,N/A,N/A,N/A
+616,CA-16,CA,California,2026,Sam T. Liccardo,Democratic,,100,0,-65.4,82.7,17.3,Sam Liccardo,Gavin Solomon,D,N/A,N/A,N/A,N/A,N/A,N/A
+617,CA-17,CA,California,2026,Ro Khanna,Democratic,,100,0,-50.9,75.45,24.55,Rohit Khanna,Ritesh Tandon,D,N/A,N/A,N/A,N/A,N/A,N/A
+618,CA-18,CA,California,2026,Zoe Lofgren,Democratic,,100,0,-40.4,70.2,29.8,Zoe Lofgren,Shane Lewis,D,N/A,N/A,N/A,N/A,N/A,N/A
+619,CA-19,CA,California,2026,Jimmy Panetta,Democratic,,100,0,-45.5,72.75,27.25,Jimmy Panetta,Peter Verbica,D,N/A,N/A,N/A,N/A,N/A,N/A
+620,CA-20,CA,California,2026,Vince Fong,Republican,,0,100,35.8,32.1,67.9,Carol Roper,Vince Fong,R,N/A,N/A,N/A,N/A,N/A,N/A
+621,CA-21,CA,California,2026,Jim Costa,Democratic,,93.3,6.7,-15.7,57.85,42.15,Jim Costa,Lorenzo Rios,D,N/A,N/A,N/A,N/A,N/A,N/A
+622,CA-22,CA,California,2026,David G. Valadao,Republican,,73.2,26.8,-6.5,53.25,46.75,Randy Villegas,David Valadao,R,N/A,N/A,N/A,N/A,N/A,N/A
+623,CA-23,CA,California,2026,Jay Obernolte,Republican,,5.5,94.5,16.7,41.65,58.35,Paul Chakalian,Jay Obernolte,R,N/A,N/A,N/A,N/A,N/A,N/A
+624,CA-24,CA,California,2026,Salud O. Carbajal,Democratic,,99.9,0.1,-33.3,66.65,33.35,Salud Carbajal,Robert Smith,D,N/A,N/A,N/A,N/A,N/A,N/A
+625,CA-25,CA,California,2026,Raul Ruiz,Democratic,,95.4,4.6,-17.6,58.8,41.2,Raul Ruiz,Joe Males,D,N/A,N/A,N/A,N/A,N/A,N/A
+626,CA-26,CA,California,2026,Julia Brownley,Democratic,,97.6,2.4,-20.6,60.3,39.7,Sonia Devgan-Kacker,Samuel Gallucci,D,N/A,N/A,N/A,N/A,N/A,N/A
+627,CA-27,CA,California,2026,George Whitesides,Democratic,,96.6,3.4,-19.0,59.5,40.5,George Whitesides,Jason Gibbs,None,N/A,N/A,N/A,N/A,N/A,N/A
+628,CA-28,CA,California,2026,Judy Chu,Democratic,,100,0,-34.9,67.45,32.55,Judy Chu,April Verlato,D,N/A,N/A,N/A,N/A,N/A,N/A
+629,CA-29,CA,California,2026,Luz M. Rivas,Democratic,,100,0,-47.4,73.7,26.3,Luz Rivas,Margarita Carranza,None,N/A,N/A,N/A,N/A,N/A,N/A
+630,CA-30,CA,California,2026,Laura Friedman,Democratic,,100,0,-48.3,74.15,25.85,Laura Friedman,Dennis Feitosa,None,N/A,N/A,N/A,N/A,N/A,N/A
+631,CA-31,CA,California,2026,"Gilbert Ray Cisneros, Jr.",Democratic,,97.8,2.2,-21.1,60.55,39.45,Gilbert Cisneros,Eric Ching,None,N/A,N/A,N/A,N/A,N/A,N/A
+632,CA-32,CA,California,2026,Brad Sherman,Democratic,,100,0,-35.3,67.65,32.35,Brad Sherman,Larry Thompson,D,N/A,N/A,N/A,N/A,N/A,N/A
+633,CA-33,CA,California,2026,Pete Aguilar,Democratic,,99.3,0.7,-25.0,62.5,37.5,Pete Aguilar,Eugene Weems,D,N/A,N/A,N/A,N/A,N/A,N/A
+634,CA-34,CA,California,2026,Jimmy Gomez,Democratic,,100,0,-70.5,85.25,14.75,Jimmy Gomez,Calvin Lee,D,N/A,N/A,N/A,N/A,N/A,N/A
+635,CA-35,CA,California,2026,Norma J. Torres,Democratic,,97.8,2.2,-21.0,60.5,39.5,Norma Torres,Mike Cargile,D,N/A,N/A,N/A,N/A,N/A,N/A
+636,CA-36,CA,California,2026,Ted Lieu,Democratic,,100,0,-47.9,73.95,26.05,Ted Lieu,Leah Toomim,D,N/A,N/A,N/A,N/A,N/A,N/A
+637,CA-37,CA,California,2026,Sydney Kamlager-Dove,Democratic,,100,0,-79.7,89.85,10.15,Sydney Kamlager-Dove,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+638,CA-38,CA,California,2026,Linda T. Sánchez,Democratic,,99.1,0.9,-24.8,62.4,37.6,Hilda Solis,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+639,CA-39,CA,California,2026,Mark Takano,Democratic,,98.3,1.7,-22.1,61.05,38.95,Mark Takano,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+640,CA-40,CA,California,2026,Young Kim,Republican,,15.1,84.9,10.0,45,55,Esther Varet,Young Kim,None,N/A,N/A,N/A,N/A,N/A,N/A
+641,CA-41,CA,California,2026,Ken Calvert,Republican,,99.3,0.7,-25.5,62.75,37.25,Linda Sanchez,Cody Wiebelhaus,None,N/A,N/A,N/A,N/A,N/A,N/A
+642,CA-42,CA,California,2026,Robert Garcia,Democratic,,98.5,1.5,-22.6,61.3,38.7,Robert Garcia,Brian Burley,D,N/A,N/A,N/A,N/A,N/A,N/A
+643,CA-43,CA,California,2026,Maxine Waters,Democratic,,100,0,-61.5,80.75,19.25,Maxine Waters,Craig Geiger,None,N/A,N/A,N/A,N/A,N/A,N/A
+644,CA-44,CA,California,2026,Nanette Diaz Barragán,Democratic,,100,0,-51.8,75.9,24.1,Nanette Barragan,Genevieve Angel,None,N/A,N/A,N/A,N/A,N/A,N/A
+645,CA-45,CA,California,2026,Derek Tran,Democratic,,89.4,10.6,-13.0,56.5,43.5,Derek Tran,Tom Vo,D,N/A,N/A,N/A,N/A,N/A,N/A
+646,CA-46,CA,California,2026,J. Luis Correa,Democratic,,99.8,0.2,-29.6,64.8,35.2,Lou Correa,David Pan,None,N/A,N/A,N/A,N/A,N/A,N/A
+647,CA-47,CA,California,2026,Dave Min,Democratic,,96,4,-18.3,59.15,40.85,Dave Min,Michael Maxsenti,D,N/A,N/A,N/A,N/A,N/A,N/A
+648,CA-48,CA,California,2026,Darrell Issa,Republican,,80.7,19.3,-9.1,54.55,45.45,Brandon Riker,Jim Desmond,None,N/A,N/A,N/A,N/A,N/A,N/A
+649,CA-49,CA,California,2026,Mike Levin,Democratic,,95.8,4.2,-18.1,59.05,40.95,Mike Levin,Star Parker,D,N/A,N/A,N/A,N/A,N/A,N/A
+650,CA-50,CA,California,2026,Scott H. Peters,Democratic,,99.3,0.7,-25.6,62.8,37.2,Scott Peters,Adam Huntington,D,N/A,N/A,N/A,N/A,N/A,N/A
+651,CA-51,CA,California,2026,Sara Jacobs,Democratic,,99.4,0.6,-26.0,63,37,Sara Jacobs,John-Samuel Williams,None,N/A,N/A,N/A,N/A,N/A,N/A
+652,CA-52,CA,California,2026,Juan Vargas,Democratic,,99.9,0.1,-32.7,66.35,33.65,Juan Vargas,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+801,CO-01,CO,Colorado,2026,Diana DeGette,Democratic,,100,0,-67.1,83.55,16.45,Diana DeGette,Gregory Cutlip,None,N/A,N/A,N/A,N/A,N/A,N/A
+802,CO-02,CO,Colorado,2026,Joe Neguse,Democratic,,100,0,-49.6,74.8,25.2,Joe Neguse,Christina Blunt,None,N/A,N/A,N/A,N/A,N/A,N/A
+803,CO-03,CO,Colorado,2026,Jeff Hurd,Republican,,37.2,62.8,3.4,48.3,51.7,Alexander Kelloff,Jeff Hurd,None,N/A,N/A,N/A,N/A,N/A,N/A
+804,CO-04,CO,Colorado,2026,Lauren Boebert,Republican,,17.7,82.3,9.7,45.15,54.85,Eileen Laubacher,Lauren Boebert,None,N/A,N/A,N/A,N/A,N/A,N/A
+805,CO-05,CO,Colorado,2026,Jeff Crank,Republican,,27.5,72.5,6.2,46.9,53.1,Jessica Killin,Jeff Crank,R,N/A,N/A,N/A,N/A,N/A,N/A
+806,CO-06,CO,Colorado,2026,Jason Crow,Democratic,,99.7,0.3,-29.3,64.65,35.35,Jason Crow,Khaleb Dammen,D,N/A,N/A,N/A,N/A,N/A,N/A
+807,CO-07,CO,Colorado,2026,Brittany Pettersen,Democratic,,98.7,1.3,-23.2,61.6,38.4,Brittany Pettersen,Amanda Capobianco,D,N/A,N/A,N/A,N/A,N/A,N/A
+808,CO-08,CO,Colorado,2026,Gabe Evans,Republican,,70.8,29.2,-5.7,52.85,47.15,Manny Rutinel,Gabe Evans,R,N/A,N/A,N/A,N/A,N/A,N/A
+901,CT-01,CT,Connecticut,2026,John B. Larson,Democratic,,99.9,0.1,-31.6,65.8,34.2,John Larson,Amy Chai,None,N/A,N/A,N/A,N/A,N/A,N/A
+902,CT-02,CT,Connecticut,2026,Joe Courtney,Democratic,,93.6,6.4,-15.9,57.95,42.05,Joseph Courtney,Mike France,None,N/A,N/A,N/A,N/A,N/A,N/A
+903,CT-03,CT,Connecticut,2026,Rosa L. DeLauro,Democratic,,98.9,1.1,-23.9,61.95,38.05,Rosa Delauro,Christopher Lancia,None,N/A,N/A,N/A,N/A,N/A,N/A
+904,CT-04,CT,Connecticut,2026,James A. Himes,Democratic,,99.9,0.1,-31.6,65.8,34.2,Jim Himes,Michael Goldstein,None,N/A,N/A,N/A,N/A,N/A,N/A
+905,CT-05,CT,Connecticut,2026,Jahana Hayes,Democratic,,88.1,11.9,-12.3,56.15,43.85,Jahana Hayes,Michele Botelho,None,N/A,N/A,N/A,N/A,N/A,N/A
+1001,DE-01,DE,Delaware,2026,Sarah McBride,Democratic,,99.5,0.5,-26.6,63.3,36.7,Sarah McBride,Donyale Hall,D,N/A,N/A,N/A,N/A,N/A,N/A
+1201,FL-01,FL,Florida,2026,Jimmy Patronis,Republican,,0.1,99.9,31.2,34.4,65.6,Marcel Davis,Jimmy Patronis,R,N/A,N/A,N/A,N/A,N/A,N/A
+1202,FL-02,FL,Florida,2026,Neal P. Dunn,Republican,,12.6,87.4,11.9,44.05,55.95,Nicholas Zateslo,Neal Dunn,None,N/A,N/A,N/A,N/A,N/A,N/A
+1203,FL-03,FL,Florida,2026,Kat Cammack,Republican,,7.3,92.7,15.2,42.4,57.6,Seth Harp,Kat Cammack,R,N/A,N/A,N/A,N/A,N/A,N/A
+1204,FL-04,FL,Florida,2026,Aaron Bean,Republican,,28.3,71.7,6.0,47,53,Michael Kirwan,Aaron Bean,R,N/A,N/A,N/A,N/A,N/A,N/A
+1205,FL-05,FL,Florida,2026,John H. Rutherford,Republican,,6.6,93.4,15.7,42.15,57.85,Rachel Grage,John Rutherford,None,N/A,N/A,N/A,N/A,N/A,N/A
+1206,FL-06,FL,Florida,2026,Randy Fine,Republican,,1,99,24.2,37.9,62.1,Jennifer Jenkins,Randy Fine,R,N/A,N/A,N/A,N/A,N/A,N/A
+1207,FL-07,FL,Florida,2026,Cory Mills,Republican,,34.7,65.3,4.1,47.95,52.05,Bale Dalton,Cory Mills,R,N/A,N/A,N/A,N/A,N/A,N/A
+1208,FL-08,FL,Florida,2026,Mike Haridopolos,Republican,,4.4,95.6,17.0,41.5,58.5,Paul Dellinger,Mike Haridopolos,R,N/A,N/A,N/A,N/A,N/A,N/A
+1209,FL-09,FL,Florida,2026,Darren Soto,Democratic,,94.9,5.1,-17.1,58.55,41.45,Darren Soto,Thomas Chalifoux,D,N/A,N/A,N/A,N/A,N/A,N/A
+1210,FL-10,FL,Florida,2026,Maxwell Frost,Democratic,,100,0,-36.2,68.1,31.9,Maxwell Frost,Stuart Farber,D,N/A,N/A,N/A,N/A,N/A,N/A
+1211,FL-11,FL,Florida,2026,Daniel Webster,Republican,,14.5,85.5,11.1,44.45,55.55,Barbara Hall,Daniel Webster,R,N/A,N/A,N/A,N/A,N/A,N/A
+1212,FL-12,FL,Florida,2026,Gus M. Bilirakis,Republican,,0.2,99.8,30.0,35,65,Christopher Irizarry,Gus Bilirakis,R,N/A,N/A,N/A,N/A,N/A,N/A
+1213,FL-13,FL,Florida,2026,Anna Paulina Luna,Republican,,32.5,67.5,4.7,47.65,52.35,Earle Ford,Anna Paulina Luna,R,N/A,N/A,N/A,N/A,N/A,N/A
+1214,FL-14,FL,Florida,2026,Kathy Castor,Democratic,,98.3,1.7,-22.0,61,39,Kathy Castor,Robert Rochford,None,N/A,N/A,N/A,N/A,N/A,N/A
+1215,FL-15,FL,Florida,2026,Laurel M. Lee,Republican,,36.8,63.2,3.5,48.25,51.75,Darren McAuley,Laurel Lee,R,N/A,N/A,N/A,N/A,N/A,N/A
+1216,FL-16,FL,Florida,2026,Vern Buchanan,Republican,,15.4,84.6,10.7,44.65,55.35,Jan Schneider,Vernon Buchanan,None,N/A,N/A,N/A,N/A,N/A,N/A
+1217,FL-17,FL,Florida,2026,W. Gregory Steube,Republican,,3.8,96.2,18.6,40.7,59.3,Matthew Montavon,Greg Steube,None,N/A,N/A,N/A,N/A,N/A,N/A
+1218,FL-18,FL,Florida,2026,Scott Franklin,Republican,,1.4,98.6,22.9,38.55,61.45,Tiffanie Luong,Scott Franklin,R,N/A,N/A,N/A,N/A,N/A,N/A
+1219,FL-19,FL,Florida,2026,Byron Donalds,Republican,,1.4,98.6,22.8,38.6,61.4,Howard Sapp,Byron Donalds,R,N/A,N/A,N/A,N/A,N/A,N/A
+1220,FL-20,FL,Florida,2026,Sheila Cherfilus-McCormick,Democratic,,100,0,-58.0,79,21,Sheila Cherfilus-Mccormick,Rodenay Joseph,D,N/A,N/A,N/A,N/A,N/A,N/A
+1221,FL-21,FL,Florida,2026,Brian J. Mast,Republican,,14.4,85.6,11.0,44.5,55.5,Pia Dandiya,Brian Mast,R,N/A,N/A,N/A,N/A,N/A,N/A
+1222,FL-22,FL,Florida,2026,Lois Frankel,Democratic,,96.4,3.6,-18.0,59,41,Lois Frankel,Anna Medvedeva,None,N/A,N/A,N/A,N/A,N/A,N/A
+1223,FL-23,FL,Florida,2026,Jared Moskowitz,Democratic,,90.1,9.9,-13.4,56.7,43.3,Jared Moskowitz,Raven Harrison,None,N/A,N/A,N/A,N/A,N/A,N/A
+1224,FL-24,FL,Florida,2026,Frederica S. Wilson,Democratic,,100,0,-46.4,73.2,26.8,Frederica Wilson,Patricia Gonzalez,D,N/A,N/A,N/A,N/A,N/A,N/A
+1225,FL-25,FL,Florida,2026,Debbie Wasserman Schultz,Democratic,,95.9,4.1,-18.2,59.1,40.9,Debbie Wasserman Schultz,Michael Carbonara,D,N/A,N/A,N/A,N/A,N/A,N/A
+1226,FL-26,FL,Florida,2026,Mario Diaz-Balart,Republican,,0.4,99.6,27.7,36.15,63.85,Yurina Gil,Mario Diaz-Balart,R,N/A,N/A,N/A,N/A,N/A,N/A
+1227,FL-27,FL,Florida,2026,Maria Elvira Salazar,Republican,,31.1,68.9,5.1,47.45,52.55,Richard Lamondin,Maria Salazar,R,N/A,N/A,N/A,N/A,N/A,N/A
+1228,FL-28,FL,Florida,2026,Carlos A. Gimenez,Republican,,9.8,90.2,13.5,43.25,56.75,Phil Ehr,Carlos Gimenez,R,N/A,N/A,N/A,N/A,N/A,N/A
+1301,GA-01,GA,Georgia,2026,Earl L. “Buddy” Carter,Republican,,18.5,81.5,9.4,45.3,54.7,Michael Mccord,James Kingston,None,N/A,N/A,N/A,N/A,N/A,N/A
+1302,GA-02,GA,Georgia,2026,"Sanford D. Bishop, Jr.",Democratic,,96.1,3.9,-18.5,59.25,40.75,Sanford Bishop,Matt Day,None,N/A,N/A,N/A,N/A,N/A,N/A
+1303,GA-03,GA,Georgia,2026,Brian Jack,Republican,,0.5,99.5,26.8,36.6,63.4,Maura Keller,Brian Jack,None,N/A,N/A,N/A,N/A,N/A,N/A
+1304,GA-04,GA,Georgia,2026,"Henry C. “Hank” Johnson, Jr.",Democratic,,100,0,-61.3,80.65,19.35,Henry Johnson,Jim Duffie,None,N/A,N/A,N/A,N/A,N/A,N/A
+1305,GA-05,GA,Georgia,2026,Nikema Williams,Democratic,,100,0,-80.8,90.4,9.6,Nikema Williams,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+1306,GA-06,GA,Georgia,2026,Lucy McBath,Democratic,,100,0,-57.9,78.95,21.05,Lucia Mcbath,Justin Pinker,None,N/A,N/A,N/A,N/A,N/A,N/A
+1307,GA-07,GA,Georgia,2026,Richard McCormick,Republican,,2.3,97.7,20.0,40,60,Haiden Moburg,Richard Mccormick,None,N/A,N/A,N/A,N/A,N/A,N/A
+1308,GA-08,GA,Georgia,2026,Austin Scott,Republican,,0.3,99.7,28.2,35.9,64.1,James Cooper,James Scott,None,N/A,N/A,N/A,N/A,N/A,N/A
+1309,GA-09,GA,Georgia,2026,Andrew S. Clyde,Republican,,0.2,99.8,30.6,34.7,65.3,Nicholas Alex,Andrew Clyde,None,N/A,N/A,N/A,N/A,N/A,N/A
+1310,GA-10,GA,Georgia,2026,Mike Collins,Republican,,5.5,94.5,16.7,41.65,58.35,Alexandra Doherty,Houston Gaines,None,N/A,N/A,N/A,N/A,N/A,N/A
+1311,GA-11,GA,Georgia,2026,Barry Loudermilk,Republican,,5.6,94.4,16.6,41.7,58.3,Barry Wolfert,Chris Mora,None,N/A,N/A,N/A,N/A,N/A,N/A
+1312,GA-12,GA,Georgia,2026,Rick W. Allen,Republican,,17.5,82.5,9.8,45.1,54.9,Brianna Woodson,Rick Allen,None,N/A,N/A,N/A,N/A,N/A,N/A
+1313,GA-13,GA,Georgia,2026,David Scott,Democratic,,100,0,-49.9,74.95,25.05,David Scott,Simeon Nunnally,None,N/A,N/A,N/A,N/A,N/A,N/A
+1314,GA-14,GA,Georgia,2026,Vacancy,Vacant,,0.2,99.8,29.7,35.15,64.85,Shawn Harris,Clayton Fuller,None,N/A,N/A,N/A,N/A,N/A,N/A
+1501,HI-01,HI,Hawaii,2026,Ed Case,Democratic,,100,0,-38.5,69.25,30.75,Edward Case,Maxwell Frazier,None,N/A,N/A,N/A,N/A,N/A,N/A
+1502,HI-02,HI,Hawaii,2026,Jill N. Tokuda,Democratic,,100,0,-34.5,67.25,32.75,Jill Tokuda,Brenton Awa,None,N/A,N/A,N/A,N/A,N/A,N/A
+1601,ID-01,ID,Idaho,2026,Russ Fulcher,Republican,,0,100,39.0,30.5,69.5,Kaylee Peterson,Russ Fulcher,None,N/A,N/A,N/A,N/A,N/A,N/A
+1602,ID-02,ID,Idaho,2026,Michael K. Simpson,Republican,,1.4,98.6,22.9,38.55,61.45,Julie Wiley,Michael Simpson,None,N/A,N/A,N/A,N/A,N/A,N/A
+1701,IL-01,IL,Illinois,2026,Jonathan L. Jackson,Democratic,,100,0,-43.4,71.7,28.3,Jonathan Jackson,Christian Maxwell,None,N/A,N/A,N/A,N/A,N/A,N/A
+1702,IL-02,IL,Illinois,2026,Robin L. Kelly,Democratic,,100,0,-45.6,72.8,27.2,Donna Miller,Calvin Coleman,None,N/A,N/A,N/A,N/A,N/A,N/A
+1703,IL-03,IL,Illinois,2026,Delia C. Ramirez,Democratic,,100,0,-44.6,72.3,27.7,Delia Ramirez,Angel Oakley,D,N/A,N/A,N/A,N/A,N/A,N/A
+1704,IL-04,IL,Illinois,2026,Jesús G. “Chuy” García,Democratic,,100,0,-42.2,71.1,28.9,Patty Garcia,Lupe Castillo,None,N/A,N/A,N/A,N/A,N/A,N/A
+1705,IL-05,IL,Illinois,2026,Mike Quigley,Democratic,,100,0,-47.4,73.7,26.3,Mike Quigley,Tommy Hanson,None,N/A,N/A,N/A,N/A,N/A,N/A
+1706,IL-06,IL,Illinois,2026,Sean Casten,Democratic,,93.9,6.1,-16.1,58.05,41.95,Sean Casten,Niki Conforti,D,N/A,N/A,N/A,N/A,N/A,N/A
+1707,IL-07,IL,Illinois,2026,Danny K. Davis,Democratic,,100,0,-77.2,88.6,11.4,La Shawn Ford,Chad Koppie,None,N/A,N/A,N/A,N/A,N/A,N/A
+1708,IL-08,IL,Illinois,2026,Raja Krishnamoorthi,Democratic,,94.8,5.2,-17.0,58.5,41.5,Melissa Bean,Jennifer Davis,None,N/A,N/A,N/A,N/A,N/A,N/A
+1709,IL-09,IL,Illinois,2026,Janice D. Schakowsky,Democratic,,100,0,-48.6,74.3,25.7,Daniel Biss,John Elleson,None,N/A,N/A,N/A,N/A,N/A,N/A
+1710,IL-10,IL,Illinois,2026,Bradley Scott Schneider,Democratic,,99.9,0.1,-32.8,66.4,33.6,Brad Schneider,Carl Lambrecht,None,N/A,N/A,N/A,N/A,N/A,N/A
+1711,IL-11,IL,Illinois,2026,Bill Foster,Democratic,,97.6,2.4,-20.7,60.35,39.65,Bill Foster,Jeff Walter,D,N/A,N/A,N/A,N/A,N/A,N/A
+1712,IL-12,IL,Illinois,2026,Mike Bost,Republican,,0,100,40.7,29.65,70.35,Julie Fortier,Mike Bost,R,N/A,N/A,N/A,N/A,N/A,N/A
+1713,IL-13,IL,Illinois,2026,Nikki Budzinski,Democratic,,97.9,2.1,-21.2,60.6,39.4,Nikki Budzinski,Jeff Wilson,D,N/A,N/A,N/A,N/A,N/A,N/A
+1714,IL-14,IL,Illinois,2026,Lauren Underwood,Democratic,,95.3,4.7,-17.5,58.75,41.25,Lauren Underwood,James Marter,D,N/A,N/A,N/A,N/A,N/A,N/A
+1715,IL-15,IL,Illinois,2026,Mary E. Miller,Republican,,0,100,41.9,29.05,70.95,Jennifer Todd,Mary Miller,None,N/A,N/A,N/A,N/A,N/A,N/A
+1716,IL-16,IL,Illinois,2026,Darin LaHood,Republican,,0.8,99.2,25.0,37.5,62.5,Paul Nolley,Darin LaHood,None,N/A,N/A,N/A,N/A,N/A,N/A
+1717,IL-17,IL,Illinois,2026,Eric Sorensen,Democratic,,91.9,8.1,-14.6,57.3,42.7,Eric Sorensen,Dillan Vancil,D,N/A,N/A,N/A,N/A,N/A,N/A
+1801,IN-01,IN,Indiana,2026,Frank J. Mrvan,Democratic,,81.5,18.5,-9.4,54.7,45.3,Frank Mrvan,Barb Regnitz,None,N/A,N/A,N/A,N/A,N/A,N/A
+1802,IN-02,IN,Indiana,2026,Rudy Yakym III,Republican,,0.7,99.3,25.7,37.15,62.85,Jamee Decio,Rudy Yakym,R,N/A,N/A,N/A,N/A,N/A,N/A
+1803,IN-03,IN,Indiana,2026,Marlin A. Stutzman,Republican,,0.2,99.8,29.9,35.05,64.95,Kelly Thompson,Marlin Stutzman,None,N/A,N/A,N/A,N/A,N/A,N/A
+1804,IN-04,IN,Indiana,2026,James R. Baird,Republican,,0.3,99.7,28.7,35.65,64.35,Joseph Mackey,James Baird,None,N/A,N/A,N/A,N/A,N/A,N/A
+1805,IN-05,IN,Indiana,2026,Victoria Spartz,Republican,,6.9,93.1,15.5,42.25,57.75,James Ford,Victoria Spartz,None,N/A,N/A,N/A,N/A,N/A,N/A
+1806,IN-06,IN,Indiana,2026,Jefferson Shreve,Republican,,0.1,99.9,31.7,34.15,65.85,Cynthia Wirth,Jefferson Shreve,None,N/A,N/A,N/A,N/A,N/A,N/A
+1807,IN-07,IN,Indiana,2026,André Carson,Democratic,,100,0,-47.9,73.95,26.05,Andre Carson,Felipe Rios,None,N/A,N/A,N/A,N/A,N/A,N/A
+1808,IN-08,IN,Indiana,2026,Mark B. Messmer,Republican,,0.1,99.9,33.4,33.3,66.7,Mary Allen,Mark Messmer,R,N/A,N/A,N/A,N/A,N/A,N/A
+1809,IN-09,IN,Indiana,2026,Erin Houchin,Republican,,0.4,99.6,27.7,36.15,63.85,James Graham,Erin Houchin,R,N/A,N/A,N/A,N/A,N/A,N/A
+1901,IA-01,IA,Iowa,2026,Mariannette Miller-Meeks,Republican,,56.8,43.2,-1.8,50.9,49.1,Christina Bohannan,Mariannette Miller-Meeks,None,N/A,N/A,N/A,N/A,N/A,N/A
+1902,IA-02,IA,Iowa,2026,Ashley Hinson,Republican,,39.6,60.4,2.8,48.6,51.4,Lindsay James,Joe Mitchell,None,N/A,N/A,N/A,N/A,N/A,N/A
+1903,IA-03,IA,Iowa,2026,Zachary Nunn,Republican,,59.8,40.2,-2.6,51.3,48.7,Sarah Trone Garriott,Zach Nunn,None,N/A,N/A,N/A,N/A,N/A,N/A
+1904,IA-04,IA,Iowa,2026,Randy Feenstra,Republican,,0.9,99.1,24.9,37.55,62.45,Dave Dawson,Chris Mcgowan,None,N/A,N/A,N/A,N/A,N/A,N/A
+2001,KS-01,KS,Kansas,2026,Tracey Mann,Republican,,0.1,99.9,31.2,34.4,65.6,Kenneth McRoberts,Tracey Mann,R,N/A,N/A,N/A,N/A,N/A,N/A
+2002,KS-02,KS,Kansas,2026,Derek Schmidt,Republican,,8.2,91.8,14.6,42.7,57.3,Don Coover,Derek Schmidt,R,N/A,N/A,N/A,N/A,N/A,N/A
+2003,KS-03,KS,Kansas,2026,Sharice Davids,Democratic,,91.5,8.5,-14.4,57.2,42.8,Sharice Davids,Chase Laporte,None,N/A,N/A,N/A,N/A,N/A,N/A
+2004,KS-04,KS,Kansas,2026,Ron Estes,Republican,,1.7,98.3,22.1,38.95,61.05,Chris Carmichael,Ron Estes,R,N/A,N/A,N/A,N/A,N/A,N/A
+2101,KY-01,KY,Kentucky,2026,James Comer,Republican,,0,100,43.6,28.2,71.8,John Williams,James Comer,None,N/A,N/A,N/A,N/A,N/A,N/A
+2102,KY-02,KY,Kentucky,2026,Brett Guthrie,Republican,,0,100,39.2,30.4,69.6,William Compton,Brett Guthrie,None,N/A,N/A,N/A,N/A,N/A,N/A
+2103,KY-03,KY,Kentucky,2026,Morgan McGarvey,Democratic,,99.8,0.2,-30.1,65.05,34.95,Morgan Mcgarvey,Maria Rodriguez,D,N/A,N/A,N/A,N/A,N/A,N/A
+2104,KY-04,KY,Kentucky,2026,Thomas Massie,Republican,,0,100,38.6,30.7,69.3,Melissa Strange,Thomas Massie,None,N/A,N/A,N/A,N/A,N/A,N/A
+2105,KY-05,KY,Kentucky,2026,Harold Rogers,Republican,,0,100,65.2,17.4,82.6,Ned Pillersdorf,Harold Rogers,None,N/A,N/A,N/A,N/A,N/A,N/A
+2106,KY-06,KY,Kentucky,2026,Andy Barr,Republican,,20.1,79.9,8.8,45.6,54.4,Zach Dembo,Adam Arquette,None,N/A,N/A,N/A,N/A,N/A,N/A
+2201,LA-01,LA,Louisiana,2026,Steve Scalise,Republican,,0,100,43.3,28.35,71.65,Lauren Jewett,Steve Scalise,None,N/A,N/A,N/A,N/A,N/A,N/A
+2202,LA-02,LA,Louisiana,2026,Troy A. Carter,Democratic,,100,0,-41.8,70.9,29.1,Troy Carter,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+2203,LA-03,LA,Louisiana,2026,Clay Higgins,Republican,,0,100,48.2,25.9,74.1,Tia LeBrun,Clay Higgins,R,N/A,N/A,N/A,N/A,N/A,N/A
+2204,LA-04,LA,Louisiana,2026,Mike Johnson,Republican,,0,100,61.4,19.3,80.7,Matthew Gromlich,James Johnson,None,N/A,N/A,N/A,N/A,N/A,N/A
+2205,LA-05,LA,Louisiana,2026,Julia Letlow,Republican,,0,100,38.1,30.95,69.05,Dan Mckay,Julia Letlow,None,N/A,N/A,N/A,N/A,N/A,N/A
+2206,LA-06,LA,Louisiana,2026,Cleo Fields,Democratic,,96.1,3.9,-18.5,59.25,40.75,Cleo Fields,Peter Williams,D,N/A,N/A,N/A,N/A,N/A,N/A
+2301,ME-01,ME,Maine,2026,Chellie Pingree,Democratic,,99.6,0.4,-27.5,63.75,36.25,Chellie Pingree,Eric Small,None,N/A,N/A,N/A,N/A,N/A,N/A
+2302,ME-02,ME,Maine,2026,Jared F. Golden,Democratic,,28.6,71.4,5.9,47.05,52.95,Matt Dunlap,Paul LePage,None,N/A,N/A,N/A,N/A,N/A,N/A
+2401,MD-01,MD,Maryland,2026,Andy Harris,Republican,,7.6,92.4,15.0,42.5,57.5,Daniel Schwartz,Andrew Harris,None,N/A,N/A,N/A,N/A,N/A,N/A
+2402,MD-02,MD,Maryland,2026,"Johnny Olszewski, Jr.",Democratic,,99.3,0.7,-25.5,62.75,37.25,John Olszewski,David Wallace,None,N/A,N/A,N/A,N/A,N/A,N/A
+2403,MD-03,MD,Maryland,2026,Sarah Elfreth,Democratic,,99.8,0.2,-29.8,64.9,35.1,Sarah Elfreth,Penny Kennedy,None,N/A,N/A,N/A,N/A,N/A,N/A
+2404,MD-04,MD,Maryland,2026,Glenn Ivey,Democratic,,100,0,-84.8,92.4,7.6,Glenn Ivey,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+2405,MD-05,MD,Maryland,2026,Steny H. Hoyer,Democratic,,100,0,-40.6,70.3,29.7,Quincy Bareebe,Michelle Talkington,None,N/A,N/A,N/A,N/A,N/A,N/A
+2406,MD-06,MD,Maryland,2026,April McClain Delaney,Democratic,,87.9,12.1,-12.2,56.1,43.9,April Delaney,Robin Ficker,None,N/A,N/A,N/A,N/A,N/A,N/A
+2407,MD-07,MD,Maryland,2026,Kweisi Mfume,Democratic,,100,0,-68.8,84.4,15.6,Kweisi Mfume,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+2408,MD-08,MD,Maryland,2026,Jamie Raskin,Democratic,,100,0,-66.6,83.3,16.7,Jamie Raskin,Cheryl Riley,None,N/A,N/A,N/A,N/A,N/A,N/A
+2501,MA-01,MA,Massachusetts,2026,Richard E. Neal,Democratic,,99.9,0.1,-32.0,66,34,Richard Neal,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+2502,MA-02,MA,Massachusetts,2026,James P. McGovern,Democratic,,100,0,-40.9,70.45,29.55,James McGovern,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+2503,MA-03,MA,Massachusetts,2026,Lori Trahan,Democratic,,100,0,-37.6,68.8,31.2,Lori Trahan,Gary Grossi,None,N/A,N/A,N/A,N/A,N/A,N/A
+2504,MA-04,MA,Massachusetts,2026,Jake Auchincloss,Democratic,,100,0,-38.0,69,31,Jake Auchincloss,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+2505,MA-05,MA,Massachusetts,2026,Katherine M. Clark,Democratic,,100,0,-64.4,82.2,17.8,Katherine Clark,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+2506,MA-06,MA,Massachusetts,2026,Seth Moulton,Democratic,,99.9,0.1,-32.4,66.2,33.8,Daniel Koh,John Field,None,N/A,N/A,N/A,N/A,N/A,N/A
+2507,MA-07,MA,Massachusetts,2026,Ayanna Pressley,Democratic,,100,0,-83.1,91.55,8.45,Ayanna Pressley,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+2508,MA-08,MA,Massachusetts,2026,Stephen F. Lynch,Democratic,,100,0,-41.9,70.95,29.05,Stephen Lynch,Gavin Solomon,None,N/A,N/A,N/A,N/A,N/A,N/A
+2509,MA-09,MA,Massachusetts,2026,William R. Keating,Democratic,,97.3,2.7,-20.2,60.1,39.9,William Keating,Robert MacAllister,None,N/A,N/A,N/A,N/A,N/A,N/A
+2601,MI-01,MI,Michigan,2026,Jack Bergman,Republican,,6.6,93.4,15.8,42.1,57.9,Callie Barr,John Bergman,None,N/A,N/A,N/A,N/A,N/A,N/A
+2602,MI-02,MI,Michigan,2026,John R. Moolenaar,Republican,,0.4,99.6,27.4,36.3,63.7,Benjamin Ambrose,John Moolenaar,R,N/A,N/A,N/A,N/A,N/A,N/A
+2603,MI-03,MI,Michigan,2026,Hillary J. Scholten,Democratic,,95.3,4.7,-17.5,58.75,41.25,Hillary Scholten,J Fiorletta,D,N/A,N/A,N/A,N/A,N/A,N/A
+2604,MI-04,MI,Michigan,2026,Bill Huizenga,Republican,,40.5,59.5,2.5,48.75,51.25,Sean Mccann,William Huizenga,R,N/A,N/A,N/A,N/A,N/A,N/A
+2605,MI-05,MI,Michigan,2026,Tim Walberg,Republican,,0.9,99.1,24.8,37.6,62.4,Christian Vukasovich,Timothy Walberg,None,N/A,N/A,N/A,N/A,N/A,N/A
+2606,MI-06,MI,Michigan,2026,Debbie Dingell,Democratic,,99.9,0.1,-33.7,66.85,33.15,Debbie Dingell,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+2607,MI-07,MI,Michigan,2026,Tom Barrett,Republican,,62.5,37.5,-3.3,51.65,48.35,Bridget Brink,Thomas Barrett,R,N/A,N/A,N/A,N/A,N/A,N/A
+2608,MI-08,MI,Michigan,2026,Kristen McDonald Rivet,Democratic,,83.7,16.3,-10.3,55.15,44.85,Kristen McDonald Rivet,Amir Hassan,D,N/A,N/A,N/A,N/A,N/A,N/A
+2609,MI-09,MI,Michigan,2026,Lisa C. McClain,Republican,,0.2,99.8,30.9,34.55,65.45,Steven Pooley,Lisa Mcclain,R,N/A,N/A,N/A,N/A,N/A,N/A
+2610,MI-10,MI,Michigan,2026,John James,Republican,,54.9,45.1,-1.3,50.65,49.35,Eric Chung,Robert Lulgjuraj,None,N/A,N/A,N/A,N/A,N/A,N/A
+2611,MI-11,MI,Michigan,2026,Haley M. Stevens,Democratic,,99.2,0.8,-25.1,62.55,37.45,Jeremy Moss,Mike Steger,None,N/A,N/A,N/A,N/A,N/A,N/A
+2612,MI-12,MI,Michigan,2026,Rashida Tlaib,Democratic,,100,0,-53.0,76.5,23.5,Rashida Tlaib,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+2613,MI-13,MI,Michigan,2026,Shri Thanedar,Democratic,,100,0,-52.7,76.35,23.65,Shri Thanedar,Andrew Lorenz,None,N/A,N/A,N/A,N/A,N/A,N/A
+2701,MN-01,MN,Minnesota,2026,Brad Finstad,Republican,,19.8,80.2,8.9,45.55,54.45,Jacob Johnson,Brad Finstad,R,N/A,N/A,N/A,N/A,N/A,N/A
+2702,MN-02,MN,Minnesota,2026,Angie Craig,Democratic,,89.6,10.4,-13.2,56.6,43.4,Matt Little,Tyler Kistner,None,N/A,N/A,N/A,N/A,N/A,N/A
+2703,MN-03,MN,Minnesota,2026,Kelly Morrison,Democratic,,100,0,-36.6,68.3,31.7,Kelly Morrison,Tyler Bass,None,N/A,N/A,N/A,N/A,N/A,N/A
+2704,MN-04,MN,Minnesota,2026,Betty McCollum,Democratic,,100,0,-45.4,72.7,27.3,Betty McCollum,Paul Wikstrom,D,N/A,N/A,N/A,N/A,N/A,N/A
+2705,MN-05,MN,Minnesota,2026,Ilhan Omar,Democratic,,100,0,-68.0,84,16,Ilhan Omar,Dalia Al-Aqidi,None,N/A,N/A,N/A,N/A,N/A,N/A
+2706,MN-06,MN,Minnesota,2026,Tom Emmer,Republican,,1.4,98.6,23.0,38.5,61.5,Generic Democrat,Thomas Emmer,None,N/A,N/A,N/A,N/A,N/A,N/A
+2707,MN-07,MN,Minnesota,2026,Michelle Fischbach,Republican,,0,100,38.2,30.9,69.1,Generic Democrat,Michelle Fischbach,None,N/A,N/A,N/A,N/A,N/A,N/A
+2708,MN-08,MN,Minnesota,2026,Pete Stauber,Republican,,6.4,93.6,15.9,42.05,57.95,Generic Democrat,Peter Stauber,R,N/A,N/A,N/A,N/A,N/A,N/A
+2801,MS-01,MS,Mississippi,2026,Trent Kelly,Republican,,0.2,99.8,30.0,35,65,Cliff Johnson,John Kelly,R,N/A,N/A,N/A,N/A,N/A,N/A
+2802,MS-02,MS,Mississippi,2026,Bennie G. Thompson,Democratic,,99.9,0.1,-32.1,66.05,33.95,Bennie Thompson,Ron Eller,D,N/A,N/A,N/A,N/A,N/A,N/A
+2803,MS-03,MS,Mississippi,2026,Michael Guest,Republican,,0.3,99.7,28.9,35.55,64.45,Michael Chiaradio,Michael Guest,R,N/A,N/A,N/A,N/A,N/A,N/A
+2804,MS-04,MS,Mississippi,2026,Mike Ezell,Republican,,0,100,38.5,30.75,69.25,Jeffrey Hulum,Walter Ezell,R,N/A,N/A,N/A,N/A,N/A,N/A
+2901,MO-01,MO,Missouri,2026,Wesley Bell,Democratic,,100,0,-65.6,82.8,17.2,Wesley Bell,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+2902,MO-02,MO,Missouri,2026,Ann Wagner,Republican,,25.9,74.1,6.8,46.6,53.4,Frederick Wellman,Ann Wagner,None,N/A,N/A,N/A,N/A,N/A,N/A
+2903,MO-03,MO,Missouri,2026,"Robert F. Onder, Jr.",Republican,,1,99,24.3,37.85,62.15,Bethany Mann,Robert Onder,None,N/A,N/A,N/A,N/A,N/A,N/A
+2904,MO-04,MO,Missouri,2026,Mark Alford,Republican,,0,100,40.3,29.85,70.15,Hartzell Gray,Mark Alford,R,N/A,N/A,N/A,N/A,N/A,N/A
+2905,MO-05,MO,Missouri,2026,Emanuel Cleaver,Democratic,,99.8,0.2,-30.7,65.35,34.65,Emanuel Cleaver,Bradley Patty,D,N/A,N/A,N/A,N/A,N/A,N/A
+2906,MO-06,MO,Missouri,2026,Sam Graves,Republican,,0,100,38.4,30.8,69.2,Matthew Levine,Samuel Graves,None,N/A,N/A,N/A,N/A,N/A,N/A
+2907,MO-07,MO,Missouri,2026,Eric Burlison,Republican,,0,100,41.7,29.15,70.85,Missi Hesketh,Eric Burlison,None,N/A,N/A,N/A,N/A,N/A,N/A
+2908,MO-08,MO,Missouri,2026,Jason Smith,Republican,,0,100,53.2,23.4,76.6,Clayton Harbison,Jason Smith,None,N/A,N/A,N/A,N/A,N/A,N/A
+3001,MT-01,MT,Montana,2026,Ryan K. Zinke,Republican,,36.8,63.2,3.5,48.25,51.75,Russell Cleveland,Aaron Flint,None,N/A,N/A,N/A,N/A,N/A,N/A
+3002,MT-02,MT,Montana,2026,Troy Downing,Republican,,0.5,99.5,26.9,36.55,63.45,Brian Miller,Troy Downing,R,N/A,N/A,N/A,N/A,N/A,N/A
+3101,NE-01,NE,Nebraska,2026,Mike Flood,Republican,,9.5,90.5,13.7,43.15,56.85,Christopher Backemeyer,Mike Flood,R,N/A,N/A,N/A,N/A,N/A,N/A
+3102,NE-02,NE,Nebraska,2026,Don Bacon,Republican,,77.1,22.9,-7.8,53.9,46.1,Denise Powell,Brinker Harding,None,N/A,N/A,N/A,N/A,N/A,N/A
+3103,NE-03,NE,Nebraska,2026,Adrian Smith,Republican,,0,100,54.9,22.55,77.45,Becky Stille,Adrian Smith,None,N/A,N/A,N/A,N/A,N/A,N/A
+3201,NV-01,NV,Nevada,2026,Dina Titus,Democratic,,85,15,-10.8,55.4,44.6,Dina Titus,Carrie Buck,D,N/A,N/A,N/A,N/A,N/A,N/A
+3202,NV-02,NV,Nevada,2026,Mark E. Amodei,Republican,,4.2,95.8,18.0,41,59,Matthew Fonken,Mark Amodei,R,N/A,N/A,N/A,N/A,N/A,N/A
+3203,NV-03,NV,Nevada,2026,Susie Lee,Democratic,,75,25,-7.1,53.55,46.45,Susie Lee,Marty O'Donnell,D,N/A,N/A,N/A,N/A,N/A,N/A
+3204,NV-04,NV,Nevada,2026,Steven Horsford,Democratic,,86.4,13.6,-11.5,55.75,44.25,Steven Horsford,David Flippo,D,N/A,N/A,N/A,N/A,N/A,N/A
+3301,NH-01,NH,New Hampshire,2026,Chris Pappas,Democratic,,87,13,-11.8,55.9,44.1,Chris Pappas,Anthony Dilorenzo,None,N/A,N/A,N/A,N/A,N/A,N/A
+3302,NH-02,NH,New Hampshire,2026,Maggie Goodlander,Democratic,,89.7,10.3,-13.2,56.6,43.4,Maggie Goodlander,Lily Williams,None,N/A,N/A,N/A,N/A,N/A,N/A
+3401,NJ-01,NJ,New Jersey,2026,Donald Norcross,Democratic,,99.8,0.2,-30.6,65.3,34.7,Donald Norcross,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+3402,NJ-02,NJ,New Jersey,2026,Jefferson Van Drew,Republican,,34,66,4.3,47.85,52.15,Bayly Winder,Jeff Van Drew,None,N/A,N/A,N/A,N/A,N/A,N/A
+3403,NJ-03,NJ,New Jersey,2026,"Herbert C. Conaway, Jr.",Democratic,,97.3,2.7,-20.1,60.05,39.95,Herb Conaway,Jason Cullen,None,N/A,N/A,N/A,N/A,N/A,N/A
+3404,NJ-04,NJ,New Jersey,2026,Christopher H. Smith,Republican,,1.3,98.7,23.4,38.3,61.7,Nicholas Small,Christopher Smith,None,N/A,N/A,N/A,N/A,N/A,N/A
+3405,NJ-05,NJ,New Jersey,2026,Josh Gottheimer,Democratic,,95.6,4.4,-17.8,58.9,41.1,Josh Gottheimer,Mary Guinchard,None,N/A,N/A,N/A,N/A,N/A,N/A
+3406,NJ-06,NJ,New Jersey,2026,"Frank Pallone, Jr.",Democratic,,99,1,-24.2,62.1,37.9,Frank Pallone,Hillary Herzig,None,N/A,N/A,N/A,N/A,N/A,N/A
+3407,NJ-07,NJ,New Jersey,2026,"Thomas H. Kean, Jr.",Republican,,76.1,23.9,-7.4,53.7,46.3,Rebecca Bennett,Thomas Kean,None,N/A,N/A,N/A,N/A,N/A,N/A
+3408,NJ-08,NJ,New Jersey,2026,Robert Menendez,Democratic,,100,0,-41.9,70.95,29.05,Robert Menendez,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+3409,NJ-09,NJ,New Jersey,2026,Nellie Pou,Democratic,,93.1,6.9,-15.5,57.75,42.25,Nelida Pou,Rosemary Pino,None,N/A,N/A,N/A,N/A,N/A,N/A
+3410,NJ-10,NJ,New Jersey,2026,LaMonica McIver,Democratic,,100,0,-66.0,83,17,Lamonica Mciver,Carmen Bucco,None,N/A,N/A,N/A,N/A,N/A,N/A
+3411,NJ-11,NJ,New Jersey,2026,Vacancy,Vacant,,97.4,2.6,-20.4,60.2,39.8,Mikie Sherrill,Joe Hathaway,None,N/A,N/A,N/A,N/A,N/A,N/A
+3412,NJ-12,NJ,New Jersey,2026,Bonnie Watson Coleman,Democratic,,100,0,-36.5,68.25,31.75,Brad Cohen,Gregg Mele,None,N/A,N/A,N/A,N/A,N/A,N/A
+3501,NM-01,NM,New Mexico,2026,Melanie A. Stansbury,Democratic,,98.5,1.5,-22.6,61.3,38.7,Melanie Stansbury,Steve Jones,D,N/A,N/A,N/A,N/A,N/A,N/A
+3502,NM-02,NM,New Mexico,2026,Gabe Vasquez,Democratic,,85.5,14.5,-11.1,55.55,44.45,Gabriel Vasquez,Jose Orozco,D,N/A,N/A,N/A,N/A,N/A,N/A
+3503,NM-03,NM,New Mexico,2026,Teresa Leger Fernandez,Democratic,,95.2,4.8,-17.4,58.7,41.3,Teresa Leger Fernandez,Martin Zamora,D,N/A,N/A,N/A,N/A,N/A,N/A
+3601,NY-01,NY,New York,2026,Nick LaLota,Republican,,30.9,69.1,5.2,47.4,52.6,Christopher Gallant,Nick LaLota,R,N/A,N/A,N/A,N/A,N/A,N/A
+3602,NY-02,NY,New York,2026,Andrew R. Garbarino,Republican,,17.3,82.7,9.9,45.05,54.95,Patrick Halpin,Andrew Garbarino,None,N/A,N/A,N/A,N/A,N/A,N/A
+3603,NY-03,NY,New York,2026,Thomas R. Suozzi,Democratic,,77.1,22.9,-7.8,53.9,46.1,Thomas Suozzi,Gregory Hach,None,N/A,N/A,N/A,N/A,N/A,N/A
+3604,NY-04,NY,New York,2026,Laura Gillen,Democratic,,88.9,11.1,-12.7,56.35,43.65,Laura Gillen,Marvin Suber Williams,None,N/A,N/A,N/A,N/A,N/A,N/A
+3605,NY-05,NY,New York,2026,Gregory W. Meeks,Democratic,,100,0,-56.9,78.45,21.55,Gregory Meeks,Aaron Cherry,None,N/A,N/A,N/A,N/A,N/A,N/A
+3606,NY-06,NY,New York,2026,Grace Meng,Democratic,,99.3,0.7,-25.6,62.8,37.2,Grace Meng,Juan Pagan,None,N/A,N/A,N/A,N/A,N/A,N/A
+3607,NY-07,NY,New York,2026,Nydia M. Velázquez,Democratic,,100,0,-58.1,79.05,20.95,Antonio Reynoso,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+3608,NY-08,NY,New York,2026,Hakeem S. Jeffries,Democratic,,100,0,-59.5,79.75,20.25,Hakeem Jeffries,Richard Simmons,D,N/A,N/A,N/A,N/A,N/A,N/A
+3609,NY-09,NY,New York,2026,Yvette D. Clarke,Democratic,,100,0,-53.6,76.8,23.2,Yvette Clarke,Jean Depalis,D,N/A,N/A,N/A,N/A,N/A,N/A
+3610,NY-10,NY,New York,2026,Daniel S. Goldman,Democratic,,100,0,-73.0,86.5,13.5,Daniel Goldman,Gavin Solomon,D,N/A,N/A,N/A,N/A,N/A,N/A
+3611,NY-11,NY,New York,2026,Nicole Malliotakis,Republican,,3,97,19.6,40.2,59.8,Troy Mcghie,Nicole Malliotakis,R,N/A,N/A,N/A,N/A,N/A,N/A
+3612,NY-12,NY,New York,2026,Jerrold Nadler,Democratic,,100,0,-73.4,86.7,13.3,Alexander Bores,Amy Jordan,D,N/A,N/A,N/A,N/A,N/A,N/A
+3613,NY-13,NY,New York,2026,Adriano Espaillat,Democratic,,100,0,-74.8,87.4,12.6,Adriano Espaillat,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+3614,NY-14,NY,New York,2026,Alexandria Ocasio-Cortez,Democratic,,100,0,-48.6,74.3,25.7,Alexandria Ocasio-Cortez,Tina Forte,D,N/A,N/A,N/A,N/A,N/A,N/A
+3615,NY-15,NY,New York,2026,Ritchie Torres,Democratic,,100,0,-65.6,82.8,17.2,Ritchie Torres,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+3616,NY-16,NY,New York,2026,George Latimer,Democratic,,100,0,-44.5,72.25,27.75,George Latimer,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+3617,NY-17,NY,New York,2026,Michael Lawler,Republican,,69.5,30.5,-5.3,52.65,47.35,Peter Chatzky,Mike Lawler,R,N/A,N/A,N/A,N/A,N/A,N/A
+3618,NY-18,NY,New York,2026,Patrick Ryan,Democratic,,93.2,6.8,-15.6,57.8,42.2,Patrick Ryan,Sharanjit Thind,D,N/A,N/A,N/A,N/A,N/A,N/A
+3619,NY-19,NY,New York,2026,Josh Riley,Democratic,,78.8,21.2,-8.3,54.15,45.85,Josh Riley,Peter Oberacker,D,N/A,N/A,N/A,N/A,N/A,N/A
+3620,NY-20,NY,New York,2026,Paul Tonko,Democratic,,98.8,1.2,-23.7,61.85,38.15,Paul Tonko,Ralph Ambrosio,D,N/A,N/A,N/A,N/A,N/A,N/A
+3621,NY-21,NY,New York,2026,Elise M. Stefanik,Republican,,7.3,92.7,15.2,42.4,57.6,Blake Gendebien,Anthony Constantino,R,N/A,N/A,N/A,N/A,N/A,N/A
+3622,NY-22,NY,New York,2026,John W. Mannion,Democratic,,93.1,6.9,-15.5,57.75,42.25,John Mannion,John Lemondes,D,N/A,N/A,N/A,N/A,N/A,N/A
+3623,NY-23,NY,New York,2026,Nicholas A. Langworthy,Republican,,1.7,98.3,22.1,38.95,61.05,Aaron Gies,Nick Langworthy,R,N/A,N/A,N/A,N/A,N/A,N/A
+3624,NY-24,NY,New York,2026,Claudia Tenney,Republican,,1.3,98.7,23.2,38.4,61.6,Alissa Ellman,Claudia Tenney,R,N/A,N/A,N/A,N/A,N/A,N/A
+3625,NY-25,NY,New York,2026,Joseph D. Morelle,Democratic,,99.5,0.5,-26.6,63.3,36.7,Joseph Morelle,Virginia Mcintyre,D,N/A,N/A,N/A,N/A,N/A,N/A
+3626,NY-26,NY,New York,2026,Timothy M. Kennedy,Democratic,,99.9,0.1,-31.2,65.6,34.4,Timothy Kennedy,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+3701,NC-01,NC,North Carolina,2026,Donald G. Davis,Democratic,,44.7,55.3,1.4,49.3,50.7,Don Davis,Laurie Buckhout,D,N/A,N/A,N/A,N/A,N/A,N/A
+3702,NC-02,NC,North Carolina,2026,Deborah K. Ross,Democratic,,100,0,-44.0,72,28,Deborah Ross,Eugene Douglass,D,N/A,N/A,N/A,N/A,N/A,N/A
+3703,NC-03,NC,North Carolina,2026,Gregory F. Murphy,Republican,,8.3,91.7,14.5,42.75,57.25,Raymond Smith,Gregory Murphy,R,N/A,N/A,N/A,N/A,N/A,N/A
+3704,NC-04,NC,North Carolina,2026,Valerie P. Foushee,Democratic,,100,0,-54.7,77.35,22.65,Valerie Foushee,Mahesh Ganorkar,D,N/A,N/A,N/A,N/A,N/A,N/A
+3705,NC-05,NC,North Carolina,2026,Virginia Foxx,Republican,,10.5,89.5,13.1,43.45,56.55,Chuck Hubbard,Virginia Foxx,R,N/A,N/A,N/A,N/A,N/A,N/A
+3706,NC-06,NC,North Carolina,2026,Addison P. McDowell,Republican,,3.4,96.6,19.0,40.5,59.5,Cyril Jefferson,Addison McDowell,R,N/A,N/A,N/A,N/A,N/A,N/A
+3707,NC-07,NC,North Carolina,2026,David Rouzer,Republican,,19,81,9.2,45.4,54.6,Kimberly Hardy,David Rouzer,R,N/A,N/A,N/A,N/A,N/A,N/A
+3708,NC-08,NC,North Carolina,2026,Mark Harris,Republican,,9,91,14.0,43,57,Colby Watson,Mark Harris,R,N/A,N/A,N/A,N/A,N/A,N/A
+3709,NC-09,NC,North Carolina,2026,Richard Hudson,Republican,,17,83,10.0,45,55,Richard Ojeda,Richard Hudson,R,N/A,N/A,N/A,N/A,N/A,N/A
+3710,NC-10,NC,North Carolina,2026,Pat Harrigan,Republican,,10.3,89.7,13.2,43.4,56.6,Ashley Bell,Pat Harrigan,R,N/A,N/A,N/A,N/A,N/A,N/A
+3711,NC-11,NC,North Carolina,2026,Chuck Edwards,Republican,,32.5,67.5,4.7,47.65,52.35,Jamie Ager,Chuck Edwards,R,N/A,N/A,N/A,N/A,N/A,N/A
+3712,NC-12,NC,North Carolina,2026,Alma S. Adams,Democratic,,100,0,-56.1,78.05,21.95,Alma Adams,Jack Codiga,D,N/A,N/A,N/A,N/A,N/A,N/A
+3713,NC-13,NC,North Carolina,2026,Brad Knott,Republican,,14.3,85.7,11.1,44.45,55.55,Paul Barringer,Brad Knott,R,N/A,N/A,N/A,N/A,N/A,N/A
+3714,NC-14,NC,North Carolina,2026,Tim Moore,Republican,,13.3,86.7,11.6,44.2,55.8,Lakesha Womack,Tim Moore,R,N/A,N/A,N/A,N/A,N/A,N/A
+3801,ND-01,ND,North Dakota,2026,Julie Fedorchak,Republican,,0,100,41.1,29.45,70.55,Trygve Hammer,Julie Fedorchak,None,N/A,N/A,N/A,N/A,N/A,N/A
+3901,OH-01,OH,Ohio,2026,Greg Landsman,Democratic,,72.6,27.4,-6.3,53.15,46.85,Greg Landsman,Eric Conroy,D,N/A,N/A,N/A,N/A,N/A,N/A
+3902,OH-02,OH,Ohio,2026,David J. Taylor,Republican,,0,100,37.6,31.2,68.8,Todd Wilson,David Taylor,R,N/A,N/A,N/A,N/A,N/A,N/A
+3903,OH-03,OH,Ohio,2026,Joyce Beatty,Democratic,,100,0,-50.7,75.35,24.65,Joyce Beatty,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+3904,OH-04,OH,Ohio,2026,Jim Jordan,Republican,,0,100,38.0,31,69,Tamara Wilson,James Jordan,R,N/A,N/A,N/A,N/A,N/A,N/A
+3905,OH-05,OH,Ohio,2026,Robert E. Latta,Republican,,2.2,97.8,21.0,39.5,60.5,Daniel Burket,Robert Latta,R,N/A,N/A,N/A,N/A,N/A,N/A
+3906,OH-06,OH,Ohio,2026,Michael A. Rulli,Republican,,0.3,99.7,28.6,35.7,64.3,Malcolm Ritchie,Michael Rulli,R,N/A,N/A,N/A,N/A,N/A,N/A
+3907,OH-07,OH,Ohio,2026,Max L. Miller,Republican,,25.1,74.9,7.0,46.5,53.5,Edward Fitzgerald,Max Miller,R,N/A,N/A,N/A,N/A,N/A,N/A
+3908,OH-08,OH,Ohio,2026,Warren Davidson,Republican,,13.8,86.2,11.4,44.3,55.7,Madaris Grant,Warren Davidson,R,N/A,N/A,N/A,N/A,N/A,N/A
+3909,OH-09,OH,Ohio,2026,Marcy Kaptur,Democratic,,52.5,47.5,-0.7,50.35,49.65,Marcy Kaptur,Derek Merrin,D,N/A,N/A,N/A,N/A,N/A,N/A
+3910,OH-10,OH,Ohio,2026,Michael R. Turner,Republican,,26.6,73.4,6.5,46.75,53.25,Janice Beckett,Michael Turner,None,N/A,N/A,N/A,N/A,N/A,N/A
+3911,OH-11,OH,Ohio,2026,Shontel M. Brown,Democratic,,100,0,-67.0,83.5,16.5,Shontel Brown,James Hemphill,None,N/A,N/A,N/A,N/A,N/A,N/A
+3912,OH-12,OH,Ohio,2026,Troy Balderson,Republican,,0.5,99.5,26.6,36.7,63.3,Jerrad Christian,William Balderson,R,N/A,N/A,N/A,N/A,N/A,N/A
+3913,OH-13,OH,Ohio,2026,Emilia Strong Sykes,Democratic,,87.7,12.3,-12.1,56.05,43.95,Emilia Sykes,Kevin Coughlin,None,N/A,N/A,N/A,N/A,N/A,N/A
+3914,OH-14,OH,Ohio,2026,David P. Joyce,Republican,,4.4,95.6,17.8,41.1,58.9,Carl Setzer,David Joyce,R,N/A,N/A,N/A,N/A,N/A,N/A
+3915,OH-15,OH,Ohio,2026,Mike Carey,Republican,,30.9,69.1,5.2,47.4,52.6,Adam Miller,Mike Carey,R,N/A,N/A,N/A,N/A,N/A,N/A
+4001,OK-01,OK,Oklahoma,2026,Kevin Hern,Republican,,2.6,97.4,20.2,39.9,60.1,John Croisant,Kevin Hern,R,N/A,N/A,N/A,N/A,N/A,N/A
+4002,OK-02,OK,Oklahoma,2026,Josh Brecheen,Republican,,0,100,50.5,24.75,75.25,Erik Terwey,Josh Brecheen,R,N/A,N/A,N/A,N/A,N/A,N/A
+4003,OK-03,OK,Oklahoma,2026,Frank D. Lucas,Republican,,0,100,48.7,25.65,74.35,Jules Roberson,Frank Lucas,R,N/A,N/A,N/A,N/A,N/A,N/A
+4004,OK-04,OK,Oklahoma,2026,Tom Cole,Republican,,0.1,99.9,31.5,34.25,65.75,Mitchell Jacob,Tom Cole,R,N/A,N/A,N/A,N/A,N/A,N/A
+4005,OK-05,OK,Oklahoma,2026,Stephanie I. Bice,Republican,,7.4,92.6,15.1,42.45,57.55,Jena Nelson,Stephanie Bice,R,N/A,N/A,N/A,N/A,N/A,N/A
+4101,OR-01,OR,Oregon,2026,Suzanne Bonamici,Democratic,,100,0,-49.4,74.7,25.3,Suzanne Bonamici,Barbara Kahl,None,N/A,N/A,N/A,N/A,N/A,N/A
+4102,OR-02,OR,Oregon,2026,Cliff Bentz,Republican,,1.5,98.5,22.6,38.7,61.3,Dawn Rasmussen,Cliff Bentz,R,N/A,N/A,N/A,N/A,N/A,N/A
+4103,OR-03,OR,Oregon,2026,Maxine Dexter,Democratic,,100,0,-56.4,78.2,21.8,Maxine Dexter,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+4104,OR-04,OR,Oregon,2026,Val T. Hoyle,Democratic,,97,3,-19.6,59.8,40.2,Valerie Hoyle,Monique Despain,D,N/A,N/A,N/A,N/A,N/A,N/A
+4105,OR-05,OR,Oregon,2026,Janelle S. Bynum,Democratic,,94,6,-16.3,58.15,41.85,Janelle Bynum,Patti Adair,None,N/A,N/A,N/A,N/A,N/A,N/A
+4106,OR-06,OR,Oregon,2026,Andrea Salinas,Democratic,,97.3,2.7,-20.1,60.05,39.95,Andrea Salinas,David Russ,D,N/A,N/A,N/A,N/A,N/A,N/A
+4201,PA-01,PA,Pennsylvania,2026,Brian K. Fitzpatrick,Republican,,51.8,48.2,-0.5,50.25,49.75,Robert Harvie,Brian Fitzpatrick,R,N/A,N/A,N/A,N/A,N/A,N/A
+4202,PA-02,PA,Pennsylvania,2026,Brendan F. Boyle,Democratic,,100,0,-47.7,73.85,26.15,Brendan Boyle,Jessica Arriaga,D,N/A,N/A,N/A,N/A,N/A,N/A
+4203,PA-03,PA,Pennsylvania,2026,Dwight Evans,Democratic,,100,0,-85.8,92.9,7.1,Sharif Street,Alexander Schnell,D,N/A,N/A,N/A,N/A,N/A,N/A
+4204,PA-04,PA,Pennsylvania,2026,Madeleine Dean,Democratic,,98.9,1.1,-23.8,61.9,38.1,Madeleine Dean,Jordan Salerno-O'Donnell,D,N/A,N/A,N/A,N/A,N/A,N/A
+4205,PA-05,PA,Pennsylvania,2026,Mary Gay Scanlon,Democratic,,100,0,-36.3,68.15,31.85,Mary Scanlon,Melvin Johnakin,D,N/A,N/A,N/A,N/A,N/A,N/A
+4206,PA-06,PA,Pennsylvania,2026,Chrissy Houlahan,Democratic,,95.7,4.3,-17.9,58.95,41.05,Chrissy Houlahan,Martin Young,D,N/A,N/A,N/A,N/A,N/A,N/A
+4207,PA-07,PA,Pennsylvania,2026,Ryan Mackenzie,Republican,,59.5,40.5,-2.5,51.25,48.75,Ryan Crosswell,Ryan Mackenzie,R,N/A,N/A,N/A,N/A,N/A,N/A
+4208,PA-08,PA,Pennsylvania,2026,"Robert P. Bresnahan, Jr.",Republican,,46.9,53.1,0.8,49.6,50.4,Paige Cognetti,Rob Bresnahan,None,N/A,N/A,N/A,N/A,N/A,N/A
+4209,PA-09,PA,Pennsylvania,2026,Daniel Meuser,Republican,,0,100,36.9,31.55,68.45,Rachel Wallace,Daniel Meuser,R,N/A,N/A,N/A,N/A,N/A,N/A
+4210,PA-10,PA,Pennsylvania,2026,Scott Perry,Republican,,51.6,48.4,-0.4,50.2,49.8,Janelle Stelson,Scott Perry,R,N/A,N/A,N/A,N/A,N/A,N/A
+4211,PA-11,PA,Pennsylvania,2026,Lloyd Smucker,Republican,,2.6,97.4,20.3,39.85,60.15,Nancy Mannion,Lloyd Smucker,R,N/A,N/A,N/A,N/A,N/A,N/A
+4212,PA-12,PA,Pennsylvania,2026,Summer L. Lee,Democratic,,98.8,1.2,-23.7,61.85,38.15,Summer Lee,Leonard Fechter,D,N/A,N/A,N/A,N/A,N/A,N/A
+4213,PA-13,PA,Pennsylvania,2026,John Joyce,Republican,,0,100,45.1,27.45,72.55,Elizabeth Farnham,John Joyce,R,N/A,N/A,N/A,N/A,N/A,N/A
+4214,PA-14,PA,Pennsylvania,2026,Guy Reschenthaler,Republican,,0.1,99.9,32.0,34,66,David Bradstock,Guy Reschenthaler,R,N/A,N/A,N/A,N/A,N/A,N/A
+4215,PA-15,PA,Pennsylvania,2026,Glenn Thompson,Republican,,0,100,37.8,31.1,68.9,Raymond Bilger,Glenn Thompson,R,N/A,N/A,N/A,N/A,N/A,N/A
+4216,PA-16,PA,Pennsylvania,2026,Mike Kelly,Republican,,1.8,98.2,21.0,39.5,60.5,Justin Wagner,George Kelly,R,N/A,N/A,N/A,N/A,N/A,N/A
+4217,PA-17,PA,Pennsylvania,2026,Christopher R. Deluzio,Democratic,,90.6,9.4,-13.7,56.85,43.15,Christopher Deluzio,Jesse Vodvarka,D,N/A,N/A,N/A,N/A,N/A,N/A
+4401,RI-01,RI,Rhode Island,2026,Gabe Amo,Democratic,,100,0,-38.9,69.45,30.55,Gabriel Amo,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+4402,RI-02,RI,Rhode Island,2026,Seth Magaziner,Democratic,,98.1,1.9,-21.7,60.85,39.15,Seth Magaziner,Victor Mellor,D,N/A,N/A,N/A,N/A,N/A,N/A
+4501,SC-01,SC,South Carolina,2026,Nancy Mace,Republican,,26.5,73.5,6.6,46.7,53.3,William Deford,Sam Mccown,None,N/A,N/A,N/A,N/A,N/A,N/A
+4502,SC-02,SC,South Carolina,2026,Joe Wilson,Republican,,16.8,83.2,10.1,44.95,55.05,Roger Pruitt,Joe Wilson,R,N/A,N/A,N/A,N/A,N/A,N/A
+4503,SC-03,SC,South Carolina,2026,Sheri Biggs,Republican,,0,100,37.9,31.05,68.95,Eunice Lehmacher,Sheri Biggs,R,N/A,N/A,N/A,N/A,N/A,N/A
+4504,SC-04,SC,South Carolina,2026,William R. Timmons IV,Republican,,4.2,95.8,18.1,40.95,59.05,Courtney Mcclain,William Timmons,R,N/A,N/A,N/A,N/A,N/A,N/A
+4505,SC-05,SC,South Carolina,2026,Ralph Norman,Republican,,5.5,94.5,16.7,41.65,58.35,Mallory Dittmer,Wes Climer,R,N/A,N/A,N/A,N/A,N/A,N/A
+4506,SC-06,SC,South Carolina,2026,James E. Clyburn,Democratic,,100,0,-35.1,67.55,32.45,James Clyburn,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+4507,SC-07,SC,South Carolina,2026,Russell Fry,Republican,,2.7,97.3,20.1,39.95,60.05,John Vincent,Russell Fry,R,N/A,N/A,N/A,N/A,N/A,N/A
+4601,SD-01,SD,South Dakota,2026,Dusty Johnson,Republican,,0.4,99.6,28.2,35.9,64.1,Nicole Gronli,Marty Jackley,None,N/A,N/A,N/A,N/A,N/A,N/A
+4701,TN-01,TN,Tennessee,2026,Diana Harshbarger,Republican,,0,100,55.0,22.5,77.5,Kristi Burke,Diana Harshbarger,R,N/A,N/A,N/A,N/A,N/A,N/A
+4702,TN-02,TN,Tennessee,2026,Tim Burchett,Republican,,0.1,99.9,31.1,34.45,65.55,Michaela Barnett,Tim Burchett,R,N/A,N/A,N/A,N/A,N/A,N/A
+4703,TN-03,TN,Tennessee,2026,Charles J. “Chuck” Fleischmann,Republican,,0.1,99.9,34.3,32.85,67.15,Joel Hawn,Charles Fleischmann,R,N/A,N/A,N/A,N/A,N/A,N/A
+4704,TN-04,TN,Tennessee,2026,Scott DesJarlais,Republican,,0,100,38.7,30.65,69.35,Victoria Broderick,Scott Desjarlais,R,N/A,N/A,N/A,N/A,N/A,N/A
+4705,TN-05,TN,Tennessee,2026,Andrew Ogles,Republican,,14.2,85.8,11.2,44.4,55.6,Chaz Molder,Andy Ogles,None,N/A,N/A,N/A,N/A,N/A,N/A
+4706,TN-06,TN,Tennessee,2026,John W. Rose,Republican,,0.3,99.7,29.0,35.5,64.5,Chaney Mosley,John Rose,R,N/A,N/A,N/A,N/A,N/A,N/A
+4707,TN-07,TN,Tennessee,2026,Matt Van Epps,Republican,,5.7,94.3,16.6,41.7,58.3,Darden Copeland,Matthew Van Epps,R,N/A,N/A,N/A,N/A,N/A,N/A
+4708,TN-08,TN,Tennessee,2026,David Kustoff,Republican,,0,100,40.2,29.9,70.1,William Wicker,David Kustoff,R,N/A,N/A,N/A,N/A,N/A,N/A
+4709,TN-09,TN,Tennessee,2026,Steve Cohen,Democratic,,100,0,-52.3,76.15,23.85,Steve Cohen,Charlotte Bergmann,D,N/A,N/A,N/A,N/A,N/A,N/A
+4801,TX-01,TX,Texas,2026,Nathaniel Moran,Republican,,0,100,51.3,24.35,75.65,Generic Democrat,Nathaniel Moran,R,N/A,N/A,N/A,N/A,N/A,N/A
+4802,TX-02,TX,Texas,2026,Dan Crenshaw,Republican,,3.8,96.2,18.5,40.75,59.25,Shaun Finnie,Steve Toth,None,N/A,N/A,N/A,N/A,N/A,N/A
+4803,TX-03,TX,Texas,2026,Keith Self,Republican,,4.7,95.3,17.0,41.5,58.5,Evan Hunt,Keith Self,R,N/A,N/A,N/A,N/A,N/A,N/A
+4804,TX-04,TX,Texas,2026,Pat Fallon,Republican,,2.2,97.8,21.0,39.5,60.5,Jason Pearce,Patrick Fallon,R,N/A,N/A,N/A,N/A,N/A,N/A
+4805,TX-05,TX,Texas,2026,Lance Gooden,Republican,,6.1,93.9,16.1,41.95,58.05,Ruth Torres,Lance Gooden,R,N/A,N/A,N/A,N/A,N/A,N/A
+4806,TX-06,TX,Texas,2026,Jake Ellzey,Republican,,2.6,97.4,20.0,40,60,Danny Minton,John Ellzey,R,N/A,N/A,N/A,N/A,N/A,N/A
+4807,TX-07,TX,Texas,2026,Lizzie Fletcher,Democratic,,100,0,-35.3,67.65,32.35,Lizzie Fletcher,Alexander Hale,D,N/A,N/A,N/A,N/A,N/A,N/A
+4808,TX-08,TX,Texas,2026,Morgan Luttrell,Republican,,2,98,21.4,39.3,60.7,Keith Coleman,Jessica Steinmann,None,N/A,N/A,N/A,N/A,N/A,N/A
+4809,TX-09,TX,Texas,2026,Al Green,Democratic,,12.4,87.6,12.1,43.95,56.05,Leticia Gutierrez,Alexandra Mealer,None,N/A,N/A,N/A,N/A,N/A,N/A
+4810,TX-10,TX,Texas,2026,Michael T. McCaul,Republican,,6.8,93.2,15.6,42.2,57.8,Caitlin Rourk,Chris Gober,None,N/A,N/A,N/A,N/A,N/A,N/A
+4811,TX-11,TX,Texas,2026,August Pfluger,Republican,,0,100,36.9,31.55,68.45,Claire Reynolds,August Pfluger,R,N/A,N/A,N/A,N/A,N/A,N/A
+4812,TX-12,TX,Texas,2026,Craig A. Goldman,Republican,,2.8,97.2,20.0,40,60,Heli Rodriguez Prilliman,Craig Goldman,R,N/A,N/A,N/A,N/A,N/A,N/A
+4813,TX-13,TX,Texas,2026,Ronny Jackson,Republican,,0,100,48.7,25.65,74.35,Mark Nair,Ronny Jackson,R,N/A,N/A,N/A,N/A,N/A,N/A
+4814,TX-14,TX,Texas,2026,"Randy K. Weber, Sr.",Republican,,2.5,97.5,20.4,39.8,60.2,Richard Davis,Randy Weber,R,N/A,N/A,N/A,N/A,N/A,N/A
+4815,TX-15,TX,Texas,2026,Monica De La Cruz,Republican,,29.5,70.5,5.6,47.2,52.8,Bobby Pulido,Monica De La Cruz-Hernandez,R,N/A,N/A,N/A,N/A,N/A,N/A
+4816,TX-16,TX,Texas,2026,Veronica Escobar,Democratic,,99.9,0.1,-32.7,66.35,33.65,Veronica Escobar,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+4817,TX-17,TX,Texas,2026,Pete Sessions,Republican,,4.4,95.6,17.8,41.1,58.9,Generic Democrat,Pete Sessions,R,N/A,N/A,N/A,N/A,N/A,N/A
+4818,TX-18,TX,Texas,2026,Christian D. Menefee,Democratic,,100,0,-67.0,83.5,16.5,Alexander Green,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+4819,TX-19,TX,Texas,2026,Jodey C. Arrington,Republican,,0,100,46.8,26.6,73.4,Kyle Rable,Tom Sell,R,N/A,N/A,N/A,N/A,N/A,N/A
+4820,TX-20,TX,Texas,2026,Joaquin Castro,Democratic,,100,0,-46.3,73.15,26.85,Joaquin Castro,Edgardo Baez,D,N/A,N/A,N/A,N/A,N/A,N/A
+4821,TX-21,TX,Texas,2026,Chip Roy,Republican,,5.5,94.5,16.7,41.65,58.35,Kristin Hook,Mark Teixeira,None,N/A,N/A,N/A,N/A,N/A,N/A
+4822,TX-22,TX,Texas,2026,Troy E. Nehls,Republican,,6.3,93.7,16.0,42,58,Marquette Greene-Scott,Trever Nehls,None,N/A,N/A,N/A,N/A,N/A,N/A
+4823,TX-23,TX,Texas,2026,Tony Gonzales,Republican,,22.7,77.3,7.8,46.1,53.9,Katy Padilla Stout,Brandon Herrera,R,N/A,N/A,N/A,N/A,N/A,N/A
+4824,TX-24,TX,Texas,2026,Beth Van Duyne,Republican,,9.2,90.8,13.9,43.05,56.95,Generic Democrat,Beth Van Duyne,R,N/A,N/A,N/A,N/A,N/A,N/A
+4825,TX-25,TX,Texas,2026,Roger Williams,Republican,,0.9,99.1,24.0,38,62,Dione Sims,Roger Williams,R,N/A,N/A,N/A,N/A,N/A,N/A
+4826,TX-26,TX,Texas,2026,Brandon Gill,Republican,,2.3,97.7,20.8,39.6,60.4,Steven Shook,Brandon Gill,R,N/A,N/A,N/A,N/A,N/A,N/A
+4827,TX-27,TX,Texas,2026,Michael Cloud,Republican,,5.7,94.3,16.5,41.75,58.25,Tanya Lloyd,Michael Cloud,R,N/A,N/A,N/A,N/A,N/A,N/A
+4828,TX-28,TX,Texas,2026,Henry Cuellar,Democratic,,80,20,-8.8,54.4,45.6,Henry Cuellar,Tano Tijerina,D,N/A,N/A,N/A,N/A,N/A,N/A
+4829,TX-29,TX,Texas,2026,Sylvia R. Garcia,Democratic,,100,0,-46.6,73.3,26.7,Sylvia Garcia,Martha Fierro,D,N/A,N/A,N/A,N/A,N/A,N/A
+4830,TX-30,TX,Texas,2026,Jasmine Crockett,Democratic,,100,0,-55.9,77.95,22.05,Frederick Haynes,Sholdon Daniels,D,N/A,N/A,N/A,N/A,N/A,N/A
+4831,TX-31,TX,Texas,2026,John R. Carter,Republican,,3.8,96.2,18.5,40.75,59.25,Justin Early,John Carter,R,N/A,N/A,N/A,N/A,N/A,N/A
+4832,TX-32,TX,Texas,2026,Julie Johnson,Democratic,,14.6,85.4,11.0,44.5,55.5,Alex Cornwallis,Jace Yarbrough,None,N/A,N/A,N/A,N/A,N/A,N/A
+4833,TX-33,TX,Texas,2026,Marc A. Veasey,Democratic,,100,0,-46.9,73.45,26.55,Colin Allred,Generic Republican,None,N/A,N/A,N/A,N/A,N/A,N/A
+4834,TX-34,TX,Texas,2026,Vicente Gonzalez,Democratic,,62.7,37.3,-3.4,51.7,48.3,Vicente Gonzalez,Eric Flores,D,N/A,N/A,N/A,N/A,N/A,N/A
+4835,TX-35,TX,Texas,2026,Greg Casar,Democratic,,43.4,56.6,1.7,49.15,50.85,Johnny Garcia,Carlos De La Cruz,D,N/A,N/A,N/A,N/A,N/A,N/A
+4836,TX-36,TX,Texas,2026,Brian Babin,Republican,,2.9,97.1,19.8,40.1,59.9,Rhonda Hart,Brian Babin,R,N/A,N/A,N/A,N/A,N/A,N/A
+4837,TX-37,TX,Texas,2026,Lloyd Doggett,Democratic,,100,0,-66.8,83.4,16.6,Greg Casar,Lauren Pena,None,N/A,N/A,N/A,N/A,N/A,N/A
+4838,TX-38,TX,Texas,2026,Wesley Hunt,Republican,,6.1,93.9,16.1,41.95,58.05,Melissa McDonough,Jon Bonck,R,N/A,N/A,N/A,N/A,N/A,N/A
+4901,UT-01,UT,Utah,2026,Blake D. Moore,Republican,,99.2,0.8,-25.0,62.5,37.5,Ben Mcadams,Blake Moore,None,N/A,N/A,N/A,N/A,N/A,N/A
+4902,UT-02,UT,Utah,2026,Celeste Maloy,Republican,,0.4,99.6,27.8,36.1,63.9,Steven Merrill,Celeste Maloy,None,N/A,N/A,N/A,N/A,N/A,N/A
+4903,UT-03,UT,Utah,2026,Mike Kennedy,Republican,,0,100,43.3,28.35,71.65,Steven Merrill,Mike Kennedy,None,N/A,N/A,N/A,N/A,N/A,N/A
+4904,UT-04,UT,Utah,2026,Burgess Owens,Republican,,0.1,99.9,32.2,33.9,66.1,Jonathan Larsen,Burgess Owens,None,N/A,N/A,N/A,N/A,N/A,N/A
+5001,VT-01,VT,Vermont,2026,Becca Balint,Democratic,,100,0,-46.2,73.1,26.9,Rebecca Balint,Mark Coester,D,N/A,N/A,N/A,N/A,N/A,N/A
+5101,VA-01,VA,Virginia,2026,Robert J. Wittman,Republican,,45.1,54.9,1.3,49.35,50.65,Shannon Taylor,Robert Wittman,R,N/A,N/A,N/A,N/A,N/A,N/A
+5102,VA-02,VA,Virginia,2026,Jennifer A. Kiggans,Republican,,71.6,28.4,-6.0,53,47,Elaine Luria,Jennifer Kiggans,R,N/A,N/A,N/A,N/A,N/A,N/A
+5103,VA-03,VA,Virginia,2026,Robert C. “Bobby” Scott,Democratic,,100,0,-47.0,73.5,26.5,Robert Scott,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+5104,VA-04,VA,Virginia,2026,Jennifer L. McClellan,Democratic,,100,0,-44.6,72.3,27.7,Jennifer Mcclellan,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+5105,VA-05,VA,Virginia,2026,John J. McGuire III,Republican,,34.7,65.3,4.1,47.95,52.05,Thomas Perriello,John McGuire,R,N/A,N/A,N/A,N/A,N/A,N/A
+5106,VA-06,VA,Virginia,2026,Ben Cline,Republican,,5.2,94.8,17.0,41.5,58.5,Beth Macy,Benjamin Cline,R,N/A,N/A,N/A,N/A,N/A,N/A
+5107,VA-07,VA,Virginia,2026,Eugene Simon Vindman,Democratic,,91.3,8.7,-14.2,57.1,42.9,Eugene Vindman,Tara Durant,D,N/A,N/A,N/A,N/A,N/A,N/A
+5108,VA-08,VA,Virginia,2026,"Donald S. Beyer, Jr.",Democratic,,100,0,-61.7,80.85,19.15,Donald Beyer,Heerak Kim,D,N/A,N/A,N/A,N/A,N/A,N/A
+5109,VA-09,VA,Virginia,2026,H. Morgan Griffith,Republican,,0,100,38.0,31,69,Adam Murphy,Adam Griffith,R,N/A,N/A,N/A,N/A,N/A,N/A
+5110,VA-10,VA,Virginia,2026,Suhas Subramanyam,Democratic,,97.1,2.9,-19.0,59.5,40.5,Suhas Subramanyam,Sam Wong,D,N/A,N/A,N/A,N/A,N/A,N/A
+5111,VA-11,VA,Virginia,2026,James R. Walkinshaw,Democratic,,100,0,-45.8,72.9,27.1,James Walkinshaw,Stewart Whitson,D,N/A,N/A,N/A,N/A,N/A,N/A
+5301,WA-01,WA,Washington,2026,Suzan K. DelBene,Democratic,,100,0,-36.8,68.4,31.6,Suzan DelBene,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+5302,WA-02,WA,Washington,2026,Rick Larsen,Democratic,,99.9,0.1,-32.4,66.2,33.8,Rick Larsen,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+5303,WA-03,WA,Washington,2026,Marie Gluesenkamp Perez,Democratic,,65.1,34.9,-4.1,52.05,47.95,Marie Gluesenkamp Perez,John Braun,D,N/A,N/A,N/A,N/A,N/A,N/A
+5304,WA-04,WA,Washington,2026,Dan Newhouse,Republican,,4.6,95.4,17.6,41.2,58.8,John Duresky,Jerrod Sessler,R,N/A,N/A,N/A,N/A,N/A,N/A
+5305,WA-05,WA,Washington,2026,Michael Baumgartner,Republican,,13.8,86.2,11.4,44.3,55.7,Carmela Conroy,Michael Baumgartner,R,N/A,N/A,N/A,N/A,N/A,N/A
+5306,WA-06,WA,Washington,2026,Emily Randall,Democratic,,98.8,1.2,-23.0,61.5,38.5,Emily Randall,Teresa Fox,D,N/A,N/A,N/A,N/A,N/A,N/A
+5307,WA-07,WA,Washington,2026,Pramila Jayapal,Democratic,,100,0,-82.0,91,9,Pramila Jayapal,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+5308,WA-08,WA,Washington,2026,Kim Schrier,Democratic,,90.3,9.7,-13.5,56.75,43.25,Kim Schrier,Trinh Ha,D,N/A,N/A,N/A,N/A,N/A,N/A
+5309,WA-09,WA,Washington,2026,Adam Smith,Democratic,,100,0,-56.7,78.35,21.65,Adam Smith,Janis Clark,D,N/A,N/A,N/A,N/A,N/A,N/A
+5310,WA-10,WA,Washington,2026,Marilyn Strickland,Democratic,,98.9,1.1,-23.9,61.95,38.05,Marilyn Strickland,Generic Republican,D,N/A,N/A,N/A,N/A,N/A,N/A
+5401,WV-01,WV,West Virginia,2026,Carol D. Miller,Republican,,0,100,39.1,30.45,69.55,Britta Aguirre,Carol Miller,None,N/A,N/A,N/A,N/A,N/A,N/A
+5402,WV-02,WV,West Virginia,2026,Riley M. Moore,Republican,,0,100,36.7,31.65,68.35,Ahsan Parsi,Riley Moore,R,N/A,N/A,N/A,N/A,N/A,N/A
+5501,WI-01,WI,Wisconsin,2026,Bryan Steil,Republican,,36.7,63.3,3.5,48.25,51.75,Mitchell Berman,Bryan Steil,R,N/A,N/A,N/A,N/A,N/A,N/A
+5502,WI-02,WI,Wisconsin,2026,Mark Pocan,Democratic,,100,0,-48.3,74.15,25.85,Mark Pocan,Erik Olsen,D,N/A,N/A,N/A,N/A,N/A,N/A
+5503,WI-03,WI,Wisconsin,2026,Derrick Van Orden,Republican,,47.3,52.7,0.7,49.65,50.35,Rebecca Cooke,Derrick Van Orden,R,N/A,N/A,N/A,N/A,N/A,N/A
+5504,WI-04,WI,Wisconsin,2026,Gwen Moore,Democratic,,100,0,-59.6,79.8,20.2,Gwen Moore,Purnima Nath,D,N/A,N/A,N/A,N/A,N/A,N/A
+5505,WI-05,WI,Wisconsin,2026,Scott Fitzgerald,Republican,,1.6,98.4,22.4,38.8,61.2,Andrew Beck,Scott Fitzgerald,R,N/A,N/A,N/A,N/A,N/A,N/A
+5506,WI-06,WI,Wisconsin,2026,Glenn Grothman,Republican,,6.1,93.9,16.2,41.9,58.1,Aaron Wojciechowski,Glenn Grothman,R,N/A,N/A,N/A,N/A,N/A,N/A
+5507,WI-07,WI,Wisconsin,2026,Thomas P. Tiffany,Republican,,3.4,96.6,19.0,40.5,59.5,Frederic Clark,Paul Wassgren,R,N/A,N/A,N/A,N/A,N/A,N/A
+5508,WI-08,WI,Wisconsin,2026,Tony Wied,Republican,,9.2,90.8,13.9,43.05,56.95,Mark Scheffler,Tony Wied,R,N/A,N/A,N/A,N/A,N/A,N/A
+5601,WY-01,WY,Wyoming,2026,Harriet M. Hageman,Republican,,0,100,46.2,26.9,73.1,Generic Democrat,Harriet Hageman,None,N/A,N/A,N/A,N/A,N/A,N/A

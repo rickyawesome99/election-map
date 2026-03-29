@@ -1,51 +1,51 @@
-state_abbr,state_name,race_desc,next_election,incumbent,party,Term_Length,prob_dem,prob_rep,margin,proj_dem,proj_rep,dem_name,dem_incumbent,rep_name,rep_incumbent,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
-AZ,Arizona,Incumbent Katie Hobbs is running for a second term in a state that Trump won back in 2024.,2026,Katie Hobbs,D,4,0.71,0.29,-3,51.5,48.5,Katie Hobbs,Y,Andy Biggs,N,N/A,N/A,0.71,0.29,N/A,N/A
-CA,California,California hasn't elected a Republican for Governor since Arnold Schwarzenegger in 2006.,2026,Gavin Newsom,D,4,0.86,0.14,-20,60,40,Katie Porter,N,Chad Bianco,N,N/A,N/A,0.86,0.14,N/A,N/A
-CO,Colorado,Colorado is a reliable Democrat state and Republicans have not won a gubernatorial election in Colorado since Bill Owens was re-elected in 2002.,2026,Jared Polis,D,4,0.91,0.09,-20,60,40,Michael Bennet,N,Barbara Kirkmeyer,N,N/A,N/A,0.91,0.09,N/A,N/A
-CT,Connecticut,Incumbent Governor Ned Lamont is running for a third term.,2026,Ned Lamont,D,4,0.94,0.06,-11,55.5,44.5,Ned Lamont,Y,Ryan Fazio,N,N/A,N/A,0.94,0.06,N/A,N/A
-HI,Hawaii,Republicans have not won a gubernatorial election in Hawaii since Linda Lingle was re-elected in 2006.,2026,Josh Green,D,4,0.94,0.06,-30,65,35,Josh Green,Y,TBD,N,N/A,N/A,0.94,0.06,N/A,N/A
-IL,Illinois,Incumbent Governor JB Pritzker is running for a third term.,2026,JB Pritzker,D,4,0.9,0.1,-15,57.5,42.5,JB Pritzker,Y,Darren Bailey,N,N/A,N/A,0.9,0.1,N/A,N/A
-KS,Kansas,Democrat Governor Laura Kelly is term limited in this typically Republican state.,2026,Laura Kelly,D,4,0.29,0.71,10,45,55,Ethan Corson,N,Jeff Colyer,N,N/A,N/A,0.29,0.71,N/A,N/A
-ME,Maine,Maine is a reliably Democrat state although it currently has one Republican senator.,2026,Janet Mills,D,4,0.87,0.13,-10,55,45,Hannah Pingree,N,Robert Charles,N,N/A,N/A,0.87,0.13,N/A,N/A
-MD,Maryland,Incumbent Governor Wes Moore is running for a second term.,2026,Wes Moore,D,4,0.94,0.06,-30,65,35,Wes Moore,Y,Dan Cox,N,N/A,N/A,0.94,0.06,N/A,N/A
-MA,Massachusetts,Incumbent Governor Maura Healey is running for a second term.,2026,Maura Healey,D,4,0.92,0.08,-30,65,35,Maura Healey,Y,Brian Shortsleeve,N,N/A,N/A,0.92,0.08,N/A,N/A
-MI,Michigan,This race is unique as it features a decently strong Independent Candidate in former Detroit Mayor Mike Duggan.,2026,Gretchen Whitmer,D,4,0.61,0.39,-5,52.5,47.5,Jocelyn Benson,N,John James,N,N/A,N/A,0.61,0.39,N/A,N/A
-MN,Minnesota,"Incumbent Governor Tim Walz is not running for re-election, leaving the seat an open race in this reliably Democrat state.",2026,Tim Walz,D,4,0.91,0.09,-15,57.5,42.5,Amy Klobuchar,N,Lisa Demuth,N,N/A,N/A,0.91,0.09,N/A,N/A
-NM,New Mexico,New Mexico hasn't elected a Republican governor since 2014.,2026,Michelle Lujan Grisham,D,4,0.92,0.08,-12,56,44,Deb Haaland,N,Gregg Hull,N,N/A,N/A,0.92,0.08,N/A,N/A
-NY,New York,"Incumbent Governor Kathy Hochul is running for her second full term. Hochul took office after her predecessor Andrew Cuomo resigned in 2021.",2026,Kathy Hochul,D,4,0.89,0.11,-14,57,43,Kathy Hochul,Y,Bruce Blakeman,N,N/A,N/A,0.89,0.11,N/A,N/A
-OR,Oregon,Incumbent Governor Tina Kotek is running for a second full term.,2026,Tina Kotek,D,4,0.88,0.12,-9,54.5,45.5,Tina Kotek,Y,Christine Drazan,N,N/A,N/A,0.88,0.12,N/A,N/A
-PA,Pennsylvania,Incumbent Governor Josh Shapiro is running for a second term.,2026,Josh Shapiro,D,4,0.96,0.04,-18,59,41,Josh Shapiro,Y,Stacy Garrity,N,N/A,N/A,0.96,0.04,N/A,N/A
-RI,Rhode Island,"Incumbent Governor Dan McKee is running for a second full term in office. McKee became governor in 2021 upon the resignation of Gina Raimondo.",2026,Dan McKee,D,4,0.93,0.07,-25,62.5,37.5,Dan McKee,Y,Aaron Guckian,N,N/A,N/A,0.93,0.07,N/A,N/A
-WI,Wisconsin,Wisconsin has an open race which will be closely watched after incumbent Governor Tony Evers decided not to run for re-election.,2026,Tony Evers,D,4,0.75,0.25,-2,51,49,Mandela Barnes,N,Tom Tiffany,N,N/A,N/A,0.75,0.25,N/A,N/A
-AL,Alabama,Democrats have not won a gubernatorial election in Alabama since 1998.,2026,Kay Ivey,R,4,0.06,0.94,25,37.5,62.5,Doug Jones,N,Tommy Tuberville,N,N/A,N/A,0.06,0.94,N/A,N/A
-AK,Alaska,"Alaska has a very interesting race with Democrat Nick Begich, part of a well known family in Alaska, running for governor in this open seat.",2026,Mike Dunleavy,R,4,0.24,0.76,10,45,55,Nick Begich,N,Dave Bronson,N,N/A,N/A,0.24,0.76,N/A,N/A
-AR,Arkansas,Incumbent Governor Sarah Huckabee Sanders is seeking re-election to a second term.,2026,Sarah Huckabee Sanders,R,4,0.06,0.94,25,37.5,62.5,Fredrick Love,N,Sarah Huckabee Sanders,Y,N/A,N/A,0.06,0.94,N/A,N/A
-FL,Florida,The race to succeed Incumbent Governor Ron DeSantis will be an interesting one in this once swing state now trending strongly towards Republicans.,2026,Ron DeSantis,R,4,0.15,0.85,8,46,54,David Jolly,N,Byron Donalds,N,N/A,N/A,0.15,0.85,N/A,N/A
-GA,Georgia,Democrats have not won a gubernatorial election in Georgia since 1998. This year might be their best shot yet to break that streak.,2026,Brian Kemp,R,4,0.55,0.45,1,49.5,50.5,Keisha Lance Bottoms,N,Rick Jackson,N,N/A,N/A,0.55,0.45,N/A,N/A
-ID,Idaho,Incumbent Governor Brad Little is running for a third term. Democrats have not won the governorship here since 1990.,2026,Brad Little,R,4,0.07,0.93,30,35,65,TBD,N,Brad Little,Y,N/A,N/A,0.07,0.93,N/A,N/A
-IA,Iowa,"This is surprisingly the first open seat gubernatorial election in the state since 2006, which was also the last gubernatorial election in Iowa won by a Democrat.",2026,Kim Reynolds,R,4,0.49,0.51,2,49,51,Rob Sand,N,Randy Feenstra,N,N/A,N/A,0.49,0.51,N/A,N/A
-NE,Nebraska,Incumbent Governor Jim Pillen is seeking re-election to a second term. Democrats have not won a gubernatorial election in Nebraska since 1994.,2026,Jim Pillen,R,4,0.1,0.9,15,42.5,57.5,TBD,N,Jim Pillen,Y,N/A,N/A,0.1,0.9,N/A,N/A
-NV,Nevada,Incumbent Governor Joe Lombardo is running for re-election to a second term in office in this swing state.,2026,Joe Lombardo,R,4,0.49,0.51,3,48.5,51.5,Aaron Ford,N,Joe Lombardo,Y,N/A,N/A,0.49,0.51,N/A,N/A
-NH,New Hampshire,This is one of two Republican-held governorships up for election in a state that Kamala Harris won in the 2024 Presidential Election.,2026,Kelly Ayotte,R,2,0.29,0.71,10,45,55,Cinde Warmington,N,Kelly Ayotte,Y,N/A,N/A,0.29,0.71,N/A,N/A
-OH,Ohio,Democrats have not won a gubernatorial election in Ohio since 2006. This race may be the Democrats best chance to break that streak this year.,2026,Mike DeWine,R,4,0.56,0.44,-1,50.5,49.5,Amy Acton,N,Vivek Ramaswamy,N,N/A,N/A,0.56,0.44,N/A,N/A
-OK,Oklahoma,Oklahoma is a deeply red state where Democrats have not won statewide since 2006.,2026,Kevin Stitt,R,4,0.11,0.89,13,43.5,56.5,TBD,N,Genter Drummond,N,N/A,N/A,0.11,0.89,N/A,N/A
-SC,South Carolina,South Carolina has an open seat. Democrats have not won a gubernatorial election here since 1998.,2026,Henry McMaster,R,4,0.05,0.95,15,42.5,57.5,TBD,N,Pamela Evette,N,N/A,N/A,0.05,0.95,N/A,N/A
-SD,South Dakota,"Incumbent Governor Larry Rhoden, who ascended to the office in 2025 after Kristi Noem resigned to become Secretary of Homeland Security, is running for his first full term. Democrats have not won a gubernatorial election in South Dakota since 1974.",2026,Larry Rhoden,R,4,0.04,0.96,25,37.5,62.5,TBD,N,Larry Rhoden,Y,N/A,N/A,0.04,0.96,N/A,N/A
-TN,Tennessee,This deep red state has an open governor seat. Democrats have not won a statewide election in Tennessee since 2006.,2026,Bill Lee,R,4,0.05,0.95,15,42.5,57.5,Jerri Green,N,Marsha Blackburn,N,N/A,N/A,0.05,0.95,N/A,N/A
-TX,Texas,Incumbent Governor Greg Abbott is running for a fourth term.,2026,Greg Abbott,R,4,0.18,0.82,12,44,56,Gina Hinojosa,N,Greg Abbott,Y,N/A,N/A,0.18,0.82,N/A,N/A
-VT,Vermont,Phil Scott has been governor since 2016 and is currently the most popular state governor in the nation according to a Morning Consult poll.,2026,Phil Scott,R,2,0.25,0.75,25,37.5,62.5,Amanda Janoo,N,Phil Scott,Y,N/A,N/A,0.25,0.75,N/A,N/A
-WY,Wyoming,Democrats have not won statewide in Wyoming since 2006.,2026,Mark Gordon,R,4,0.07,0.93,38,31,69,TBD,N,Megan Degenfelder,N,N/A,N/A,0.07,0.93,N/A,N/A
-KY,Kentucky,TBD,2027,Andy Beshear,D,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-LA,Louisiana,TBD,2027,Jeff Landry,R,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-MS,Mississippi,TBD,2027,Tate Reeves,R,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-UT,Utah,TBD,2028,Spencer Cox,R,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-NC,North Carolina,TBD,2028,Josh Stein,D,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-DE,Delaware,TBD,2028,Matt Meyer,D,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-WA,Washington,TBD,2028,Bob Ferguson,D,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-IN,Indiana,TBD,2028,Mike Braun,R,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-MO,Missouri,TBD,2028,Mike Kehoe,R,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-MT,Montana,TBD,2028,Greg Gianforte,R,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-ND,North Dakota,TBD,2028,Kelly Armstrong,R,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-WV,West Virginia,TBD,2028,Patrick Morrisey,R,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-NJ,New Jersey,TBD,2029,Mikie Sherill,D,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
-VA,Virginia,TBD,2029,Abigail Spanberger,D,4,,,,50,50,,,,,N/A,N/A,,,N/A,N/A
+state_abbr,state_name,race_desc,next_election,current_incumbent,party,Term_Length,prob_dem,prob_rep,margin,proj_dem,proj_rep,dem_name,rep_name,incumbent,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
+AL,Alabama,Democrats have not won a gubernatorial election in Alabama since 1998.,2026,Kay Ivey,R,4,0.06,0.94,25,37.5,62.5,Doug Jones,Tommy Tuberville,None,N/A,N/A,0.06,0.94,N/A,N/A
+AK,Alaska,"Alaska has a very interesting race with Democrat Tom Begich, part of a well known family in Alaska, running for governor in this open seat.",2026,Mike Dunleavy,R,4,0.24,0.76,10,45,55,Nick Begich,Dave Bronson,None,N/A,N/A,0.24,0.76,N/A,N/A
+AZ,Arizona,Incumbent Katie Hubbs is running for a second term in a state that Trump won back in 2024.,2026,Katie Hobbs,D,4,0.71,0.29,-3,51.5,48.5,Katie Hobbs,Andy Biggs,D,N/A,N/A,0.71,0.29,N/A,N/A
+AR,Arkansas,Incumbent Governor Sarah Huckabee Sanders is seeking re-election to a second term.,2026,Sarah Huckabee Sanders,R,4,0.06,0.94,25,37.5,62.5,Fredrick Love,Sarah Huckabee Sanders,R,N/A,N/A,0.06,0.94,N/A,N/A
+CA,California,California hasn't elected a Republican for Governor since Arnold Schwarzenegger in 2006.,2026,Gavin Newsom,D,4,0.86,0.14,-20,60,40,Katie Porter,Chad Bianco,None,N/A,N/A,0.86,0.14,N/A,N/A
+CO,Colorado,Colorado is a reliable Democrat state and Republicans have not won a gubernatorial election in Colorado since Bill Owens was re-elected in 2002.,2026,Jared Polis,D,4,0.91,0.09,-20,60,40,Michael Bennet,Barbara Kirkmeyer,None,N/A,N/A,0.91,0.09,N/A,N/A
+CT,Connecticut,Incumbent Governor Ned Lamont is running for a third term.,2026,Ned Lamont,D,4,0.94,0.06,-11,55.5,44.5,Ned Lamont,Ryan Fazio,D,N/A,N/A,0.94,0.06,N/A,N/A
+FL,Florida,The race to succeed Incumbent Governor Ron DeSantis will be an interesting one in this once swing state now trending strongly towards Republicans.,2026,Ron DeSantis,R,4,0.15,0.85,8,46,54,David Jolly,Byron Donalds,None,N/A,N/A,0.15,0.85,N/A,N/A
+GA,Georgia,Democrats have not won a gubernatorial election in Georgia since 1998. This year might be their best shot yet to break that streak.,2026,Brian Kemp,R,4,0.55,0.45,1,49.5,50.5,Keisha Lance Bottoms,Rick Jackson,None,N/A,N/A,0.55,0.45,N/A,N/A
+HI,Hawaii,Republicans have not won a gubernatorial eelction in Hawaii since Linda Lingle was re-elected in 2006.,2026,Josh Green,D,4,0.94,0.06,-30,65,35,Josh Green,TBD,D,N/A,N/A,0.94,0.06,N/A,N/A
+ID,Idaho,Incumbent Governor Brad Little is running for a third term. Democrats have not won the governership here since 1990.,2026,Brad Little,R,4,0.07,0.93,30,35,65,TBD,Brad Little,R,N/A,N/A,0.07,0.93,N/A,N/A
+IL,Illinois,Incumbent Governor JB Pritzker is running for a third term.,2026,JB Pritzker,D,4,0.9,0.1,-15,57.5,42.5,JB Pritzker,Darren Bailey,D,N/A,N/A,0.9,0.1,N/A,N/A
+IA,Iowa,"This is surprisingly the first open seat gubernatorial election in the state since 2006, which as also the last gubernatorial election in Iowa won by a Democrat.",2026,Kim Reynolds,R,4,0.49,0.51,2,49,51,Rob Sand,Randy Feenstra,None,N/A,N/A,0.49,0.51,N/A,N/A
+KS,Kansas,Democrat Governor Laura Kelly is term limited in this typically Republican state.,2026,Laura Kelly,D,4,0.29,0.71,10,45,55,Ethan Corson,Jeff Colyer,None,N/A,N/A,0.29,0.71,N/A,N/A
+ME,Maine,Maine is a reliably Democrat state although it currenlty has one Republican senator.,2026,Janet Mills,D,4,0.87,0.13,-10,55,45,Hannah Pingree,Robert Charles,None,N/A,N/A,0.87,0.13,N/A,N/A
+MD,Maryland,Incumbent Governor Wes Moore is running for a second term.,2026,Wes Moore,D,4,0.94,0.06,-30,65,35,Wes Moore,Dan Cox,D,N/A,N/A,0.94,0.06,N/A,N/A
+MA,Massachusetts,Incumbent Governor Maura Healey is running for a second term.,2026,Maura Healey,D,4,0.92,0.08,-30,65,35,Maura Healey,Brian Shortsleeve,D,N/A,N/A,0.92,0.08,N/A,N/A
+MI,Michigan,This race is unique as it features a decently strong Independent Candidate in former Detroit Mayor Mike Duggan.,2026,Gretchen Whitmer,D,4,0.61,0.39,-5,52.5,47.5,Jocelyn Benson,John James,None,N/A,N/A,0.61,0.39,N/A,N/A
+MN,Minnesota,"Incumbent Governor Tim Walz is not running for re-election, leaving the seat an open race in this reliably Democrat state.",2026,Tim Walz,D,4,0.91,0.09,-15,57.5,42.5,Amy Klobuchar,Lisa Demuth,None,N/A,N/A,0.91,0.09,N/A,N/A
+NE,Nebraska,Incumbent Governor Jim Pillen is seeking re-eleciton to a second term. Democrats have not won a gubernatorial election in Nebraska since 1994.,2026,Jim Pillen,R,4,0.1,0.9,15,42.5,57.5,TBD,Jim Pillen,R,N/A,N/A,0.1,0.9,N/A,N/A
+NV,Nevada,Incumbent Governor Joe Lombardo is running for re-election to a second term in office in this swing state.,2026,Joe Lombardo,R,4,0.49,0.51,3,48.5,51.5,Aaron Ford,Joe Lombardo,R,N/A,N/A,0.49,0.51,N/A,N/A
+NH,New Hampshire,This is one of two Republican-held governorships up for election in a state that Kamala Harris won in the 2024 Presidential Election.,2026,Kelly Ayotte,R,2,0.29,0.71,10,45,55,Cinde Warmington,Kelly Ayotte,R,N/A,N/A,0.29,0.71,N/A,N/A
+NM,New Mexico,New Mexico hasn't elected a Republican governor since 2014.,2026,Michelle Lujan Grisham,D,4,0.92,0.08,-12,56,44,Deb Haaland,Gregg Hull,None,N/A,N/A,0.92,0.08,N/A,N/A
+NY,New York,Incumbent Governor Kathy Hochul is running for her second full term. Hochul took office after her predecessor Andrew Cuomo resigned in 2021.,2026,Kathy Hochul,D,4,0.89,0.11,-14,57,43,Kathy Hochul,Bruce Blakeman,D,N/A,N/A,0.89,0.11,N/A,N/A
+OH,Ohio,Democrats have not won a gubernatorial election in Ohio since 2006 and have not won statewide since 2020. This race may be the Democrats best chance to break that streak this year.,2026,Mike DeWine,R,4,0.56,0.44,-1,50.5,49.5,Amy Acton,Vivek Ramaswamy,None,N/A,N/A,0.56,0.44,N/A,N/A
+OK,Oklahoma,Oklahoma is a deeply red state where Democrats have not won statewide since 2006.,2026,Kevin Stitt,R,4,0.11,0.89,13,43.5,56.5,TBD,Genter Drummond,None,N/A,N/A,0.11,0.89,N/A,N/A
+OR,Oregon,Incumbent Governor Tina Kotek is running for a second full term.,2026,Tina Kotek,D,4,0.88,0.12,-9,54.5,45.5,Tina Kotek,Christine Drazan,D,N/A,N/A,0.88,0.12,N/A,N/A
+PA,Pennsylvania,Incumbent Governor Josh Shapiro is running for a second term.,2026,Josh Shapiro,D,4,0.96,0.04,-18,59,41,Josh Shapiro,Stacy Garrity,D,N/A,N/A,0.96,0.04,N/A,N/A
+RI,Rhode Island,Incumbent Governor Dan McKee is running for a second full term in office. McKee became governor in 2021 upon the resignation of Gina Raimondo.,2026,Dan McKee,D,4,0.93,0.07,-25,62.5,37.5,Dan McKee,Aaron Guckian,D,N/A,N/A,0.93,0.07,N/A,N/A
+SC,South Carolina,South Carolina has an open seat. Democrats have not won a gubernatorial election here since 1998.,2026,Henry McMaster,R,4,0.05,0.95,15,42.5,57.5,TBD,Pamela Evette,None,N/A,N/A,0.05,0.95,N/A,N/A
+SD,South Dakota,"Incumbent Governor Larry Rhoden, who ascended to the office in 2025 after Kristi Noem resigned to become secretary of homeland security, is running for his first full term in office. Rhoden had previously been serving as lieutenant governor under Noem since the two took office in 2019.[2] Democrats have not won a gubernatorial election in South Dakota since 1974.",2026,Larry Rhoden,R,4,0.04,0.96,25,37.5,62.5,TBD,Larry Rhoden,R,N/A,N/A,0.04,0.96,N/A,N/A
+TN,Tennessee,This deep red state has an open governor seat. Democrats have not won a statewide election in Tennessee since 2006.,2026,Bill Lee,R,4,0.05,0.95,15,42.5,57.5,Jerri Green,Marsha Blackburn,None,N/A,N/A,0.05,0.95,N/A,N/A
+TX,Texas,Incumbent Governor Greg Abbott is running for a fourth term.,2026,Greg Abbott,R,4,0.18,0.82,12,44,56,Gina Hinojosa,Greg Abbott,R,N/A,N/A,0.18,0.82,N/A,N/A
+VT,Vermont,Phil Scott has been governor since 2016 and is currently the most popular state governor in the nation according to a Morning Consult poll. ,2026,Phil Scott,R,2,0.25,0.75,25,37.5,62.5,Amanda Janoo,Phil Scott,R,N/A,N/A,0.25,0.75,N/A,N/A
+WI,Wisconsin,Wisconsin has an open race which will be closely watched after incumbent Governor Tony Evers decided not to run for re-election.,2026,Tony Evers,D,4,0.75,0.25,-2,51,49,Mandela Barnes,Tom Tiffany,None,N/A,N/A,0.75,0.25,N/A,N/A
+WY,Wyoming,Democrats have not won statewide in Wyoming since 2006.,2026,Mark Gordon,R,4,0.07,0.93,38,31,69,TBD,Megan Degenfelder,None,N/A,N/A,0.07,0.93,N/A,N/A
+KY,Kentucky,TBD,2027,Andy Beshear,D,4,,,,,,,,,,,,,,
+LA,Louisiana,TBD,2027,Jeff Landry,R,4,,,,,,,,,,,,,,
+MS,Mississippi,TBD,2027,Tate Reeves,R,4,,,,,,,,,,,,,,
+DE,Delaware,TBD,2028,Matt Meyer,D,4,,,,,,,,,,,,,,
+IN,Indiana,TBD,2028,Mike Braun,R,4,,,,,,,,,,,,,,
+MO,Missouri,TBD,2028,Mike Kehoe,R,4,,,,,,,,,,,,,,
+MT,Montana,TBD,2028,Greg Gianforte,R,4,,,,,,,,,,,,,,
+NC,North Carolina,TBD,2028,Josh Stein,D,4,,,,,,,,,,,,,,
+ND,North Dakota,TBD,2028,Kelly Armstrong,R,4,,,,,,,,,,,,,,
+UT,Utah,TBD,2028,Spencer Cox,R,4,,,,,,,,,,,,,,
+WA,Washington,TBD,2028,Bob Ferguson,D,4,,,,,,,,,,,,,,
+WV,West Virginia,TBD,2028,Patrick Morrisey,R,4,,,,,,,,,,,,,,
+NJ,New Jersey,TBD,2029,Mikie Sherill,D,4,,,,,,,,,,,,,,
+VA,Virginia,TBD,2029,Abigail Spanberger,D,4,,,,,,,,,,,,,,

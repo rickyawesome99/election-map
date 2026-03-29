@@ -123,7 +123,10 @@ export default function ForecastMap() {
   function findMatch(geo: any): RaceForecast | undefined {
     if (isHouse) {
       const geoId = geo.properties?.GEOID as string | undefined;
-      return geoId ? data.find((d) => d.id === geoId) : undefined;
+      if (!geoId) return undefined;
+      // Census at-large GEOIDs end in "00"; our ids end in "01" — try both
+      return data.find((d) => d.id === geoId)
+          ?? (geoId.endsWith("00") ? data.find((d) => d.id === geoId.slice(0, -2) + "01") : undefined);
     }
     return data.find((d) => d.state === geo.properties?.name);
   }
