@@ -30,7 +30,7 @@ function sortRaces(races: RaceForecast[], key: SortKey, dir: SortDir): RaceForec
         cmp = a.name.localeCompare(b.name);
         break;
       case "rating":
-        cmp = RATING_ORDER.indexOf(a.rating) - RATING_ORDER.indexOf(b.rating);
+        cmp = RATING_ORDER.indexOf(a.rating ?? "") - RATING_ORDER.indexOf(b.rating ?? "");
         if (cmp === 0) cmp = a.name.localeCompare(b.name);
         break;
       case "dem":
@@ -44,7 +44,7 @@ function sortRaces(races: RaceForecast[], key: SortKey, dir: SortDir): RaceForec
         cmp = (b.margin ?? 0) - (a.margin ?? 0);
         break;
       case "winpct":
-        cmp = a.probability - b.probability;
+        cmp = (a.probability ?? 0) - (b.probability ?? 0);
         break;
     }
     return dir === "asc" ? cmp : -cmp;
