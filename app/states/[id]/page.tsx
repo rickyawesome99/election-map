@@ -355,7 +355,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
               {governorRace ? ` A gubernatorial election is also scheduled for November ${electionYear}.` : ""}
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 xl:grid-cols-4 gap-2">
               {/* House: current incumbent composition */}
               <div className="rounded-lg p-3 text-center" style={{ background: "var(--app-bg)" }}>
                 <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
@@ -462,13 +462,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
               <ElectionCard
                 race={senateSeat1Race}
                 href={`/senate/${senateSeat1Race.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
-                label="U.S. Senate (Seat 1)"
+                label="Senate (Seat 1)"
               />
             ) : senateSeat1NoEl ? (
               <IncumbentCard
                 entry={senateSeat1NoEl}
                 href={`/senate/${senateSeat1NoEl.abbr.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
-                label="U.S. Senate (Seat 1)"
+                label="Senate (Seat 1)"
               />
             ) : null}
 
@@ -477,13 +477,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
               <ElectionCard
                 race={senateSeat2Race}
                 href={`/senate/${senateSeat2Race.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
-                label="U.S. Senate (Seat 2)"
+                label="Senate (Seat 2)"
               />
             ) : senateSeat2Holdover ? (
               <IncumbentCard
                 entry={senateSeat2Holdover}
                 href={`/senate/${senateSeat2Holdover.abbr.toLowerCase()}-2?from=${encodeURIComponent(`/states/${id}`)}`}
-                label="U.S. Senate (Seat 2)"
+                label="Senate (Seat 2)"
               />
             ) : null}
 

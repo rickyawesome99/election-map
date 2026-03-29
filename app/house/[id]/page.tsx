@@ -1,4 +1,4 @@
-import { houseData, houseDistrictInfo, electionYear } from "@/data/forecastData";
+import { houseData, houseDistrictInfo, houseStatewideResults, electionYear } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -130,7 +130,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
             showElectionType={false}
           />
 
-          <HouseOnlyRecentStatewideResultsSection />
+          <HouseOnlyRecentStatewideResultsSection results={houseStatewideResults[race.id]} />
 
           <HouseOnlyDistrictBoundariesSection entries={houseDistrictInfo[race.id] ?? []} />
 

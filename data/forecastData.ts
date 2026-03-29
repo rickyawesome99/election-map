@@ -68262,4 +68262,8728 @@ export const houseDelegationHistory: Record<string, HouseDelegationEntry[]> = {
   ]
 };
 
+export type HouseStatewideResult = {
+  year: number;
+  race: string;
+  demPct: number;
+  repPct: number;
+};
+
+export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
+  "1001": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 56.6,
+      "repPct": 41.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 58.8,
+      "repPct": 39.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 53.4,
+      "repPct": 41.9
+    }
+  ],
+  "1201": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 30.9,
+      "repPct": 68.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 32.4,
+      "repPct": 65.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 28.2,
+      "repPct": 67.5
+    }
+  ],
+  "1202": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 40.5,
+      "repPct": 58.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 32,
+      "repPct": 67
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 30.6,
+      "repPct": 66.2
+    }
+  ],
+  "1203": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.9,
+      "repPct": 60
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 42.8,
+      "repPct": 56
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 40.2,
+      "repPct": 56.2
+    }
+  ],
+  "1204": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 43.5,
+      "repPct": 55.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 38.9,
+      "repPct": 59.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.1,
+      "repPct": 62.1
+    }
+  ],
+  "1205": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.5,
+      "repPct": 59.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 62.7,
+      "repPct": 36.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 61.3,
+      "repPct": 35.9
+    }
+  ],
+  "1206": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.5,
+      "repPct": 64.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40.8,
+      "repPct": 58.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.9,
+      "repPct": 56.9
+    }
+  ],
+  "1207": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 43.1,
+      "repPct": 55.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.6,
+      "repPct": 44.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.4,
+      "repPct": 44.1
+    }
+  ],
+  "1208": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.4,
+      "repPct": 60.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40.6,
+      "repPct": 58.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 37.7,
+      "repPct": 58.4
+    }
+  ],
+  "1209": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 51.2,
+      "repPct": 47.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 53,
+      "repPct": 46.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 54.8,
+      "repPct": 41.9
+    }
+  ],
+  "1210": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.4,
+      "repPct": 37.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 62,
+      "repPct": 37
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 61.8,
+      "repPct": 34.9
+    }
+  ],
+  "1211": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.3,
+      "repPct": 57.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 33.8,
+      "repPct": 65.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 32.5,
+      "repPct": 64.8
+    }
+  ],
+  "1212": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 32.2,
+      "repPct": 66.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41,
+      "repPct": 57.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.8,
+      "repPct": 57.4
+    }
+  ],
+  "1213": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 43.4,
+      "repPct": 55.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.5,
+      "repPct": 47.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 49.6,
+      "repPct": 46.4
+    }
+  ],
+  "1214": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53,
+      "repPct": 45.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 57.2,
+      "repPct": 41.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 57.2,
+      "repPct": 39
+    }
+  ],
+  "1215": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 43.5,
+      "repPct": 54.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 45.2,
+      "repPct": 53.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 43.1,
+      "repPct": 53.1
+    }
+  ],
+  "1216": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.7,
+      "repPct": 57.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 45.5,
+      "repPct": 53.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 43,
+      "repPct": 53.7
+    }
+  ],
+  "1217": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.7,
+      "repPct": 61.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 35.9,
+      "repPct": 63.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 35,
+      "repPct": 62.2
+    }
+  ],
+  "1218": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.9,
+      "repPct": 64.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 45.5,
+      "repPct": 53.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44.1,
+      "repPct": 53.3
+    }
+  ],
+  "1219": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.9,
+      "repPct": 64
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 39.6,
+      "repPct": 59.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 37.5,
+      "repPct": 59.6
+    }
+  ],
+  "1220": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 69.3,
+      "repPct": 29.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 77.3,
+      "repPct": 22.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 80.2,
+      "repPct": 18.1
+    }
+  ],
+  "1221": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.2,
+      "repPct": 57.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 58.2,
+      "repPct": 41.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58.6,
+      "repPct": 39.1
+    }
+  ],
+  "1222": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52.2,
+      "repPct": 46.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 57.2,
+      "repPct": 42.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.8,
+      "repPct": 41
+    }
+  ],
+  "1223": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.3,
+      "repPct": 48.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 58.3,
+      "repPct": 41.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 61.9,
+      "repPct": 35.8
+    }
+  ],
+  "1224": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 64.4,
+      "repPct": 34.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 75.4,
+      "repPct": 24
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 82.9,
+      "repPct": 15.4
+    }
+  ],
+  "1225": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52,
+      "repPct": 46.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 38.2,
+      "repPct": 61.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 47.9,
+      "repPct": 49.7
+    }
+  ],
+  "1226": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 32.1,
+      "repPct": 67
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 46.9,
+      "repPct": 52.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.8,
+      "repPct": 40.5
+    }
+  ],
+  "1227": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42.1,
+      "repPct": 56.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.3,
+      "repPct": 48.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58.5,
+      "repPct": 38.9
+    }
+  ],
+  "1228": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 36.9,
+      "repPct": 62.2
+    }
+  ],
+  "1301": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42,
+      "repPct": 57.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.1,
+      "repPct": 55.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 40.9,
+      "repPct": 56.4
+    }
+  ],
+  "1302": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53.6,
+      "repPct": 46.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 55.7,
+      "repPct": 43.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 55,
+      "repPct": 43.3
+    }
+  ],
+  "1303": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.3,
+      "repPct": 65.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 36.8,
+      "repPct": 62
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 32.8,
+      "repPct": 64.3
+    }
+  ],
+  "1304": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 75.6,
+      "repPct": 23.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 78.8,
+      "repPct": 20.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 75.3,
+      "repPct": 22.2
+    }
+  ],
+  "1305": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 85.6,
+      "repPct": 13.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 86.2,
+      "repPct": 12.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 85,
+      "repPct": 11.9
+    }
+  ],
+  "1306": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 74.6,
+      "repPct": 24.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.8,
+      "repPct": 43.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 46.8,
+      "repPct": 48.3
+    }
+  ],
+  "1307": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.9,
+      "repPct": 60
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 52.4,
+      "repPct": 46.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44.8,
+      "repPct": 51.1
+    }
+  ],
+  "1308": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.2,
+      "repPct": 65.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 37,
+      "repPct": 62
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.4,
+      "repPct": 63.3
+    }
+  ],
+  "1309": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 32.2,
+      "repPct": 67.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 22.4,
+      "repPct": 76.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 19.3,
+      "repPct": 77.8
+    }
+  ],
+  "1310": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.8,
+      "repPct": 60.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 39.2,
+      "repPct": 59.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 35.8,
+      "repPct": 61.3
+    }
+  ],
+  "1311": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.7,
+      "repPct": 61.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.5,
+      "repPct": 56.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 35.3,
+      "repPct": 60.3
+    }
+  ],
+  "1312": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42.8,
+      "repPct": 56.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43,
+      "repPct": 55.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 40.7,
+      "repPct": 56.9
+    }
+  ],
+  "1313": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 70.7,
+      "repPct": 28.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 75.6,
+      "repPct": 23.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 71,
+      "repPct": 26.6
+    }
+  ],
+  "1314": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 31,
+      "repPct": 68.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 25.3,
+      "repPct": 73.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 22.1,
+      "repPct": 75
+    }
+  ],
+  "1501": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 61.5,
+      "repPct": 36.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 63.8,
+      "repPct": 34.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 63.1,
+      "repPct": 30.5
+    }
+  ],
+  "1502": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.7,
+      "repPct": 38.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 63.6,
+      "repPct": 34.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 61.4,
+      "repPct": 29.6
+    }
+  ],
+  "1601": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 26.2,
+      "repPct": 71.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 30.1,
+      "repPct": 67.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 25.4,
+      "repPct": 63.7
+    }
+  ],
+  "1602": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 35.1,
+      "repPct": 61.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 36.6,
+      "repPct": 60.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 29.8,
+      "repPct": 54.5
+    }
+  ],
+  "1701": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.4,
+      "repPct": 33.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 73.9,
+      "repPct": 24.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 75.4,
+      "repPct": 21.4
+    }
+  ],
+  "1702": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.9,
+      "repPct": 32.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 77.5,
+      "repPct": 21.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 78,
+      "repPct": 19.1
+    }
+  ],
+  "1703": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 64.7,
+      "repPct": 33.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 55.5,
+      "repPct": 42.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 55.2,
+      "repPct": 39.9
+    }
+  ],
+  "1704": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 63.3,
+      "repPct": 35
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 80.7,
+      "repPct": 17.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 82.1,
+      "repPct": 13.2
+    }
+  ],
+  "1705": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 68,
+      "repPct": 30.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 72.1,
+      "repPct": 26
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 70.5,
+      "repPct": 23.9
+    }
+  ],
+  "1706": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 51.6,
+      "repPct": 46.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 55.3,
+      "repPct": 42.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 50.2,
+      "repPct": 43.2
+    }
+  ],
+  "1707": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 82.2,
+      "repPct": 16.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 86.3,
+      "repPct": 12.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 87.4,
+      "repPct": 9.2
+    }
+  ],
+  "1708": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52.8,
+      "repPct": 45.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 59.2,
+      "repPct": 39
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58.1,
+      "repPct": 36.4
+    }
+  ],
+  "1709": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 67.7,
+      "repPct": 31.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 71,
+      "repPct": 27.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 70.1,
+      "repPct": 24.9
+    }
+  ],
+  "1710": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.3,
+      "repPct": 38.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 64.3,
+      "repPct": 34
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 62,
+      "repPct": 32.6
+    }
+  ],
+  "1711": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 55,
+      "repPct": 43.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 61.9,
+      "repPct": 36.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58.9,
+      "repPct": 35.4
+    }
+  ],
+  "1712": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 27.5,
+      "repPct": 71
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.9,
+      "repPct": 56.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 40.2,
+      "repPct": 55
+    }
+  ],
+  "1713": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 54.5,
+      "repPct": 43.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47,
+      "repPct": 50.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44.2,
+      "repPct": 49.7
+    }
+  ],
+  "1714": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 51.8,
+      "repPct": 46.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 50.2,
+      "repPct": 47.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44.8,
+      "repPct": 48.7
+    }
+  ],
+  "1715": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 29.3,
+      "repPct": 69.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 25.9,
+      "repPct": 72.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 24.5,
+      "repPct": 70.7
+    }
+  ],
+  "1716": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.8,
+      "repPct": 60.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40.9,
+      "repPct": 56.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.3,
+      "repPct": 55.5
+    }
+  ],
+  "1717": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 51.4,
+      "repPct": 46.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 48.1,
+      "repPct": 49.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 46.7,
+      "repPct": 47.4
+    }
+  ],
+  "1718": [
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 36.8,
+      "repPct": 61
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 33.3,
+      "repPct": 60.6
+    }
+  ],
+  "1801": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 49.6,
+      "repPct": 49.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 53.6,
+      "repPct": 44.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 54.1,
+      "repPct": 41.5
+    }
+  ],
+  "1802": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 35.9,
+      "repPct": 62.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 38.9,
+      "repPct": 59.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.1,
+      "repPct": 59.3
+    }
+  ],
+  "1803": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.1,
+      "repPct": 65.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 34,
+      "repPct": 63.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 30.1,
+      "repPct": 65.1
+    }
+  ],
+  "1804": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 35.1,
+      "repPct": 64.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 34,
+      "repPct": 63.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 30.2,
+      "repPct": 64.3
+    }
+  ],
+  "1805": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 40.5,
+      "repPct": 57.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.9,
+      "repPct": 50.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 41.3,
+      "repPct": 53.1
+    }
+  ],
+  "1806": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 33.4,
+      "repPct": 66.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 29.1,
+      "repPct": 68.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 27.4,
+      "repPct": 67.7
+    }
+  ],
+  "1807": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 69.8,
+      "repPct": 28.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 62.9,
+      "repPct": 35.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 59,
+      "repPct": 36.2
+    }
+  ],
+  "1808": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 31.8,
+      "repPct": 68.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 33.1,
+      "repPct": 65.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 30.9,
+      "repPct": 64.6
+    }
+  ],
+  "1809": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.8,
+      "repPct": 65.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 37.2,
+      "repPct": 60.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.2,
+      "repPct": 61.1
+    }
+  ],
+  "1901": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 45,
+      "repPct": 53.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.4,
+      "repPct": 50.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 45.2,
+      "repPct": 48.7
+    }
+  ],
+  "1902": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 44.3,
+      "repPct": 54.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.1,
+      "repPct": 51.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 45,
+      "repPct": 49.1
+    }
+  ],
+  "1903": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 47.2,
+      "repPct": 51.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 49,
+      "repPct": 49.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 45,
+      "repPct": 48.5
+    }
+  ],
+  "1904": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 33.6,
+      "repPct": 65.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 35.7,
+      "repPct": 62.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 33.5,
+      "repPct": 60.9
+    }
+  ],
+  "2001": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 33.4,
+      "repPct": 64.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 28.1,
+      "repPct": 69.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 24.3,
+      "repPct": 69.3
+    }
+  ],
+  "2002": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39.2,
+      "repPct": 58.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.3,
+      "repPct": 56.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 37.4,
+      "repPct": 55.8
+    }
+  ],
+  "2003": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 51.2,
+      "repPct": 47.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.3,
+      "repPct": 43.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 47.2,
+      "repPct": 46
+    }
+  ],
+  "2004": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.5,
+      "repPct": 60.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 38,
+      "repPct": 59.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 33,
+      "repPct": 60.2
+    }
+  ],
+  "2101": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 25.7,
+      "repPct": 73
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 25.5,
+      "repPct": 73.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 23.9,
+      "repPct": 72.4
+    }
+  ],
+  "2102": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 28.6,
+      "repPct": 69.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 30.6,
+      "repPct": 67.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 27.6,
+      "repPct": 67.5
+    }
+  ],
+  "2103": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 58.5,
+      "repPct": 39.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 60,
+      "repPct": 38.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 54.9,
+      "repPct": 39.9
+    }
+  ],
+  "2104": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 31.4,
+      "repPct": 66.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 33.4,
+      "repPct": 64.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 29.3,
+      "repPct": 65.2
+    }
+  ],
+  "2105": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 17.4,
+      "repPct": 81.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 18.6,
+      "repPct": 80.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 17.5,
+      "repPct": 79.6
+    }
+  ],
+  "2106": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.5,
+      "repPct": 56.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 44.5,
+      "repPct": 53.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.4,
+      "repPct": 54.7
+    }
+  ],
+  "2201": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 30,
+      "repPct": 68.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 30.1,
+      "repPct": 68
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 26.7,
+      "repPct": 68.7
+    }
+  ],
+  "2202": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 64.7,
+      "repPct": 33.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 75.3,
+      "repPct": 23
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 74.6,
+      "repPct": 22.2
+    }
+  ],
+  "2203": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 26.8,
+      "repPct": 71.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 30.2,
+      "repPct": 68.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 29.2,
+      "repPct": 67.3
+    }
+  ],
+  "2204": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 23.2,
+      "repPct": 75.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 37,
+      "repPct": 61.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.6,
+      "repPct": 60.6
+    }
+  ],
+  "2205": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 31.1,
+      "repPct": 67.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 34.1,
+      "repPct": 64.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.1,
+      "repPct": 63.5
+    }
+  ],
+  "2206": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 56.6,
+      "repPct": 41.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 34.4,
+      "repPct": 63.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 31,
+      "repPct": 64.8
+    }
+  ],
+  "2301": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.8,
+      "repPct": 38
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 60.1,
+      "repPct": 37
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 54.1,
+      "repPct": 39.3
+    }
+  ],
+  "2302": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 44.2,
+      "repPct": 53.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 44.8,
+      "repPct": 52.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 41.1,
+      "repPct": 51.4
+    }
+  ],
+  "2401": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 40.2,
+      "repPct": 57
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 39.1,
+      "repPct": 58.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 33.4,
+      "repPct": 62
+    }
+  ],
+  "2402": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 57.5,
+      "repPct": 39.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 65.8,
+      "repPct": 32.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 60.1,
+      "repPct": 35.7
+    }
+  ],
+  "2403": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.8,
+      "repPct": 36.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 68.7,
+      "repPct": 29.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 62.8,
+      "repPct": 32.3
+    }
+  ],
+  "2404": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 85,
+      "repPct": 11.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 79.1,
+      "repPct": 19.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 77.2,
+      "repPct": 19.7
+    }
+  ],
+  "2405": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.1,
+      "repPct": 32
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 68.6,
+      "repPct": 29.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 64.1,
+      "repPct": 32.1
+    }
+  ],
+  "2406": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 51.2,
+      "repPct": 45.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 60.6,
+      "repPct": 37.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 55.3,
+      "repPct": 40.2
+    }
+  ],
+  "2407": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 77.7,
+      "repPct": 19.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 78.4,
+      "repPct": 20
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 75.8,
+      "repPct": 20.2
+    }
+  ],
+  "2408": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 76,
+      "repPct": 20.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 69.3,
+      "repPct": 28.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 65,
+      "repPct": 30.6
+    }
+  ],
+  "2501": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 55.6,
+      "repPct": 41.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 61.1,
+      "repPct": 36.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 57.2,
+      "repPct": 36.5
+    }
+  ],
+  "2502": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.3,
+      "repPct": 36.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 61.8,
+      "repPct": 36
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.2,
+      "repPct": 36.8
+    }
+  ],
+  "2503": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 58.1,
+      "repPct": 39.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 63.4,
+      "repPct": 34.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58.2,
+      "repPct": 35.4
+    }
+  ],
+  "2504": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 58.4,
+      "repPct": 38.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 64.5,
+      "repPct": 33.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 59.2,
+      "repPct": 35
+    }
+  ],
+  "2505": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 70.8,
+      "repPct": 26
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 74.5,
+      "repPct": 23.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 69.3,
+      "repPct": 25.7
+    }
+  ],
+  "2506": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59,
+      "repPct": 38.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 62.6,
+      "repPct": 35.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.1,
+      "repPct": 38.2
+    }
+  ],
+  "2507": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 79.5,
+      "repPct": 16.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 85.3,
+      "repPct": 13.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 84.1,
+      "repPct": 11.9
+    }
+  ],
+  "2508": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 61.7,
+      "repPct": 35.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 66.2,
+      "repPct": 32.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 60.4,
+      "repPct": 34.4
+    }
+  ],
+  "2509": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 54.3,
+      "repPct": 43.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 57.9,
+      "repPct": 40.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 52.5,
+      "repPct": 41.8
+    }
+  ],
+  "2601": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.6,
+      "repPct": 59.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40.6,
+      "repPct": 57.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.6,
+      "repPct": 57.9
+    }
+  ],
+  "2602": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.3,
+      "repPct": 64.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.2,
+      "repPct": 55
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.2,
+      "repPct": 55.8
+    }
+  ],
+  "2603": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53,
+      "repPct": 45.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.4,
+      "repPct": 50.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.2,
+      "repPct": 51.6
+    }
+  ],
+  "2604": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 46.2,
+      "repPct": 51.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 37.1,
+      "repPct": 61.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.7,
+      "repPct": 59.5
+    }
+  ],
+  "2605": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 35.6,
+      "repPct": 62.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.4,
+      "repPct": 47.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 49.7,
+      "repPct": 45.5
+    }
+  ],
+  "2606": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.1,
+      "repPct": 36.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 46.8,
+      "repPct": 51.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.9,
+      "repPct": 51.3
+    }
+  ],
+  "2607": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 48.5,
+      "repPct": 49.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.4,
+      "repPct": 56.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.7,
+      "repPct": 55.7
+    }
+  ],
+  "2608": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 48.2,
+      "repPct": 50.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 48.8,
+      "repPct": 49.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 43.9,
+      "repPct": 50.6
+    }
+  ],
+  "2609": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 33.2,
+      "repPct": 65.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 55.9,
+      "repPct": 42.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.5,
+      "repPct": 43.7
+    }
+  ],
+  "2610": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 45.7,
+      "repPct": 52.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 34.4,
+      "repPct": 64.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 31.6,
+      "repPct": 63.8
+    }
+  ],
+  "2611": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 57.1,
+      "repPct": 41
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.6,
+      "repPct": 47.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 45.3,
+      "repPct": 49.7
+    }
+  ],
+  "2612": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 66.6,
+      "repPct": 28.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 64.2,
+      "repPct": 34.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 60.8,
+      "repPct": 34.5
+    }
+  ],
+  "2613": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 69.4,
+      "repPct": 28
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 78.8,
+      "repPct": 20
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 78.8,
+      "repPct": 18.1
+    }
+  ],
+  "2614": [
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 79.5,
+      "repPct": 19.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 79.2,
+      "repPct": 18.3
+    }
+  ],
+  "2701": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 43.1,
+      "repPct": 55.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.9,
+      "repPct": 54
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.4,
+      "repPct": 53.3
+    }
+  ],
+  "2702": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 51.9,
+      "repPct": 46.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 52.4,
+      "repPct": 45.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 45.3,
+      "repPct": 46.5
+    }
+  ],
+  "2703": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.6,
+      "repPct": 38.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 58.7,
+      "repPct": 39.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 50.8,
+      "repPct": 41.4
+    }
+  ],
+  "2704": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 66.8,
+      "repPct": 31.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 67.6,
+      "repPct": 30.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 61.5,
+      "repPct": 30.6
+    }
+  ],
+  "2705": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 79.6,
+      "repPct": 17.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 80.3,
+      "repPct": 17.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 73.7,
+      "repPct": 18.5
+    }
+  ],
+  "2706": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39.2,
+      "repPct": 58.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 38.8,
+      "repPct": 59
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 33.2,
+      "repPct": 58.9
+    }
+  ],
+  "2707": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 30.9,
+      "repPct": 67.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 34.4,
+      "repPct": 63.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 31,
+      "repPct": 61.8
+    }
+  ],
+  "2708": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42,
+      "repPct": 56.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.7,
+      "repPct": 56.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.6,
+      "repPct": 54.2
+    }
+  ],
+  "2801": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 30.8,
+      "repPct": 67.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 33.8,
+      "repPct": 64.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 32.4,
+      "repPct": 65.4
+    }
+  ],
+  "2802": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.7,
+      "repPct": 39.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 63.7,
+      "repPct": 35.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 63.6,
+      "repPct": 35.1
+    }
+  ],
+  "2803": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.5,
+      "repPct": 63.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 38.6,
+      "repPct": 60.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.8,
+      "repPct": 61.3
+    }
+  ],
+  "2804": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 28.2,
+      "repPct": 70.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 30.3,
+      "repPct": 68.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 28.2,
+      "repPct": 69.4
+    }
+  ],
+  "2901": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 77.6,
+      "repPct": 20.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 80.3,
+      "repPct": 18.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 77,
+      "repPct": 18.8
+    }
+  ],
+  "2902": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 45.2,
+      "repPct": 53.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 49.2,
+      "repPct": 49.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.3,
+      "repPct": 52.6
+    }
+  ],
+  "2903": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 35.9,
+      "repPct": 62.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.3,
+      "repPct": 66.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 28.1,
+      "repPct": 67.1
+    }
+  ],
+  "2904": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 28.2,
+      "repPct": 70.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.9,
+      "repPct": 66
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 29.3,
+      "repPct": 65.3
+    }
+  ],
+  "2905": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.7,
+      "repPct": 37.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 58.4,
+      "repPct": 39.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 54.1,
+      "repPct": 40.6
+    }
+  ],
+  "2906": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 30,
+      "repPct": 68.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 35,
+      "repPct": 63.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 31.7,
+      "repPct": 63.1
+    }
+  ],
+  "2907": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 28.1,
+      "repPct": 70.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 28.1,
+      "repPct": 70
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 24.7,
+      "repPct": 70.4
+    }
+  ],
+  "2908": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 22.5,
+      "repPct": 76.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 21.4,
+      "repPct": 77.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 21,
+      "repPct": 75.4
+    }
+  ],
+  "3001": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42.7,
+      "repPct": 54.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40.6,
+      "repPct": 56.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 35.9,
+      "repPct": 56.5
+    }
+  ],
+  "3002": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 33.6,
+      "repPct": 63.2
+    }
+  ],
+  "3101": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42.8,
+      "repPct": 55.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.3,
+      "repPct": 56.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.2,
+      "repPct": 57.5
+    }
+  ],
+  "3102": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 51.6,
+      "repPct": 47
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 52.3,
+      "repPct": 45.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 46,
+      "repPct": 48.2
+    }
+  ],
+  "3103": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 22.5,
+      "repPct": 76.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 22.4,
+      "repPct": 75.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 20,
+      "repPct": 74.9
+    }
+  ],
+  "3201": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.2,
+      "repPct": 48
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 61.5,
+      "repPct": 36.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 61.6,
+      "repPct": 32.6
+    }
+  ],
+  "3202": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.8,
+      "repPct": 55.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.6,
+      "repPct": 53.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.7,
+      "repPct": 52
+    }
+  ],
+  "3203": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 48.8,
+      "repPct": 49.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 49.2,
+      "repPct": 49
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 46.5,
+      "repPct": 47.5
+    }
+  ],
+  "3204": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.5,
+      "repPct": 47.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 50.9,
+      "repPct": 47
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 49.5,
+      "repPct": 44.6
+    }
+  ],
+  "3301": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.3,
+      "repPct": 48.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 52.2,
+      "repPct": 46.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 46.6,
+      "repPct": 48.2
+    }
+  ],
+  "3302": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 51,
+      "repPct": 47.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 53.5,
+      "repPct": 44.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 48.6,
+      "repPct": 46.2
+    }
+  ],
+  "3401": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 58.6,
+      "repPct": 39.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 62.1,
+      "repPct": 36.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 60.6,
+      "repPct": 36.1
+    }
+  ],
+  "3402": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 43,
+      "repPct": 55.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.9,
+      "repPct": 50.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 46,
+      "repPct": 50.6
+    }
+  ],
+  "3403": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53.4,
+      "repPct": 45
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 49.2,
+      "repPct": 49.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 45.2,
+      "repPct": 51.4
+    }
+  ],
+  "3404": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.3,
+      "repPct": 64.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 44.1,
+      "repPct": 54.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 41,
+      "repPct": 55.8
+    }
+  ],
+  "3405": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 49.8,
+      "repPct": 48.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.9,
+      "repPct": 46.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 47.7,
+      "repPct": 48.8
+    }
+  ],
+  "3406": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52,
+      "repPct": 45.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 57.2,
+      "repPct": 41.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.2,
+      "repPct": 40.6
+    }
+  ],
+  "3407": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 48.4,
+      "repPct": 49.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.2,
+      "repPct": 44.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 48.6,
+      "repPct": 47.5
+    }
+  ],
+  "3408": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.8,
+      "repPct": 36.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 73.1,
+      "repPct": 25.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 75.7,
+      "repPct": 21.5
+    }
+  ],
+  "3409": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 48,
+      "repPct": 49.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 62.2,
+      "repPct": 36.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 64.3,
+      "repPct": 33.1
+    }
+  ],
+  "3410": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 74.5,
+      "repPct": 23.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 82.8,
+      "repPct": 16.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 85.2,
+      "repPct": 12.8
+    }
+  ],
+  "3411": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53.3,
+      "repPct": 44.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 52.9,
+      "repPct": 45.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 47.9,
+      "repPct": 48.8
+    }
+  ],
+  "3412": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.6,
+      "repPct": 36.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 67.3,
+      "repPct": 31.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 65,
+      "repPct": 31.8
+    }
+  ],
+  "3501": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 56.1,
+      "repPct": 43.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 60.2,
+      "repPct": 37.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.6,
+      "repPct": 35.1
+    }
+  ],
+  "3502": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 48.3,
+      "repPct": 50.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.1,
+      "repPct": 54.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.9,
+      "repPct": 50.1
+    }
+  ],
+  "3503": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 51.7,
+      "repPct": 46.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 57.7,
+      "repPct": 40.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.8,
+      "repPct": 36.7
+    }
+  ],
+  "3601": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 44.3,
+      "repPct": 54.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.3,
+      "repPct": 51.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.2,
+      "repPct": 54.5
+    }
+  ],
+  "3602": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42.8,
+      "repPct": 56.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.4,
+      "repPct": 51.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 43.9,
+      "repPct": 53
+    }
+  ],
+  "3603": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 46.7,
+      "repPct": 51.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.7,
+      "repPct": 44.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.6,
+      "repPct": 45.5
+    }
+  ],
+  "3604": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 49.8,
+      "repPct": 49
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 55.6,
+      "repPct": 43.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 53.4,
+      "repPct": 43.8
+    }
+  ],
+  "3605": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 70.1,
+      "repPct": 28.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 83.3,
+      "repPct": 16.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 85.7,
+      "repPct": 12.7
+    }
+  ],
+  "3606": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52.3,
+      "repPct": 45.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 61.8,
+      "repPct": 37.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 65.1,
+      "repPct": 32.1
+    }
+  ],
+  "3607": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 71.6,
+      "repPct": 25.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 81.8,
+      "repPct": 17.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 86.9,
+      "repPct": 10.4
+    }
+  ],
+  "3608": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 71.3,
+      "repPct": 27.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 82.9,
+      "repPct": 16.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 84.6,
+      "repPct": 13.5
+    }
+  ],
+  "3609": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 69.2,
+      "repPct": 28.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 81.4,
+      "repPct": 17.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 83.5,
+      "repPct": 14.4
+    }
+  ],
+  "3610": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 79.1,
+      "repPct": 18.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 76.1,
+      "repPct": 22.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 78.3,
+      "repPct": 18.8
+    }
+  ],
+  "3611": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 36.9,
+      "repPct": 61.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 44.3,
+      "repPct": 54.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 43.8,
+      "repPct": 53.6
+    }
+  ],
+  "3612": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 80.8,
+      "repPct": 17.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 84.1,
+      "repPct": 14.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 83.3,
+      "repPct": 13.5
+    }
+  ],
+  "3613": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 78.7,
+      "repPct": 19.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 88.1,
+      "repPct": 11.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 92.3,
+      "repPct": 5.4
+    }
+  ],
+  "3614": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 64.9,
+      "repPct": 33.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 73.3,
+      "repPct": 25.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 77.7,
+      "repPct": 19.8
+    }
+  ],
+  "3615": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 73.6,
+      "repPct": 25.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 86.4,
+      "repPct": 13
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 93.8,
+      "repPct": 4.9
+    }
+  ],
+  "3616": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 66.2,
+      "repPct": 33.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 75.3,
+      "repPct": 23.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 75.1,
+      "repPct": 22.5
+    }
+  ],
+  "3617": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 49.9,
+      "repPct": 49.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 59.6,
+      "repPct": 39.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58.6,
+      "repPct": 38.4
+    }
+  ],
+  "3618": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.7,
+      "repPct": 48.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.8,
+      "repPct": 46.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 47.1,
+      "repPct": 49
+    }
+  ],
+  "3619": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 49.8,
+      "repPct": 49
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 49.8,
+      "repPct": 48.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44,
+      "repPct": 50.8
+    }
+  ],
+  "3620": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 56.5,
+      "repPct": 42.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 59.3,
+      "repPct": 38.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 54,
+      "repPct": 40.5
+    }
+  ],
+  "3621": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39,
+      "repPct": 60
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.8,
+      "repPct": 54.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 40,
+      "repPct": 53.9
+    }
+  ],
+  "3622": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53.5,
+      "repPct": 45.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.2,
+      "repPct": 54.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.3,
+      "repPct": 54.8
+    }
+  ],
+  "3623": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39.1,
+      "repPct": 60.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.3,
+      "repPct": 54.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.7,
+      "repPct": 54.5
+    }
+  ],
+  "3624": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.1,
+      "repPct": 61.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 53.4,
+      "repPct": 44.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 48.9,
+      "repPct": 45.3
+    }
+  ],
+  "3625": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.3,
+      "repPct": 40.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 60.1,
+      "repPct": 37.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 55.5,
+      "repPct": 39.1
+    }
+  ],
+  "3626": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 58.8,
+      "repPct": 39.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 62.6,
+      "repPct": 35.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 57.6,
+      "repPct": 38
+    }
+  ],
+  "3627": [
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.1,
+      "repPct": 56.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 35.2,
+      "repPct": 59.7
+    }
+  ],
+  "3701": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 48,
+      "repPct": 51.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 53.9,
+      "repPct": 45.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 67.5,
+      "repPct": 30.5
+    }
+  ],
+  "3702": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 66.2,
+      "repPct": 31.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 64.3,
+      "repPct": 34
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 43.6,
+      "repPct": 53.2
+    }
+  ],
+  "3703": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.5,
+      "repPct": 60.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 37.7,
+      "repPct": 60.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.9,
+      "repPct": 60.5
+    }
+  ],
+  "3704": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 71.8,
+      "repPct": 26.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 66.6,
+      "repPct": 32.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 68.2,
+      "repPct": 28.2
+    }
+  ],
+  "3705": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 40.4,
+      "repPct": 58.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.6,
+      "repPct": 67.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.8,
+      "repPct": 57.4
+    }
+  ],
+  "3706": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.1,
+      "repPct": 58.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 61.6,
+      "repPct": 37.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 41.4,
+      "repPct": 56.1
+    }
+  ],
+  "3707": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42.5,
+      "repPct": 56.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40.7,
+      "repPct": 58.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.9,
+      "repPct": 57.6
+    }
+  ],
+  "3708": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39.6,
+      "repPct": 59.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 46.1,
+      "repPct": 52.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 41.1,
+      "repPct": 56.1
+    }
+  ],
+  "3709": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.7,
+      "repPct": 57.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 45.5,
+      "repPct": 53.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.8,
+      "repPct": 54.4
+    }
+  ],
+  "3710": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 40.5,
+      "repPct": 58.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.2,
+      "repPct": 67.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.4,
+      "repPct": 61
+    }
+  ],
+  "3711": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 44.5,
+      "repPct": 54
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.3,
+      "repPct": 55.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34,
+      "repPct": 63.2
+    }
+  ],
+  "3712": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 72.2,
+      "repPct": 26
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 70.1,
+      "repPct": 28.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 68.4,
+      "repPct": 28.4
+    }
+  ],
+  "3713": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.1,
+      "repPct": 58
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.8,
+      "repPct": 67.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44,
+      "repPct": 53.4
+    }
+  ],
+  "3714": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.9,
+      "repPct": 57.1
+    }
+  ],
+  "3801": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 30.8,
+      "repPct": 67.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.9,
+      "repPct": 65.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 27.7,
+      "repPct": 64.1
+    }
+  ],
+  "3901": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52.7,
+      "repPct": 46.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.7,
+      "repPct": 50.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44.6,
+      "repPct": 51.2
+    }
+  ],
+  "3902": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 25.8,
+      "repPct": 73.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 42.9,
+      "repPct": 55.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.7,
+      "repPct": 55.8
+    }
+  ],
+  "3903": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 69.6,
+      "repPct": 29.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 70,
+      "repPct": 28.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 67,
+      "repPct": 28.6
+    }
+  ],
+  "3904": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 31.2,
+      "repPct": 67.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.2,
+      "repPct": 67.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 30.7,
+      "repPct": 64.3
+    }
+  ],
+  "3905": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.9,
+      "repPct": 64.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 36.7,
+      "repPct": 61.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.6,
+      "repPct": 59.7
+    }
+  ],
+  "3906": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 32.8,
+      "repPct": 66.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 26.5,
+      "repPct": 72.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 26.7,
+      "repPct": 69.3
+    }
+  ],
+  "3907": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 44.3,
+      "repPct": 54.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 33.2,
+      "repPct": 65.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 32.8,
+      "repPct": 62.5
+    }
+  ],
+  "3908": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.7,
+      "repPct": 61.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 32.5,
+      "repPct": 66
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 30.6,
+      "repPct": 65.1
+    }
+  ],
+  "3909": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 46.2,
+      "repPct": 52.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 58.8,
+      "repPct": 39.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58.7,
+      "repPct": 36.5
+    }
+  ],
+  "3910": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 46.6,
+      "repPct": 52.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47,
+      "repPct": 51.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44,
+      "repPct": 51.3
+    }
+  ],
+  "3911": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 77.2,
+      "repPct": 22.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 79.8,
+      "repPct": 19.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 80.5,
+      "repPct": 17
+    }
+  ],
+  "3912": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 33.2,
+      "repPct": 65.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 46.3,
+      "repPct": 52.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 41.9,
+      "repPct": 53.2
+    }
+  ],
+  "3913": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 49.6,
+      "repPct": 49.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51,
+      "repPct": 47.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.1,
+      "repPct": 44.6
+    }
+  ],
+  "3914": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 40.6,
+      "repPct": 58.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 44.9,
+      "repPct": 53.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.1,
+      "repPct": 53.6
+    }
+  ],
+  "3915": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 44.9,
+      "repPct": 54.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 42.2,
+      "repPct": 56.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.9,
+      "repPct": 55.3
+    }
+  ],
+  "3916": [
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 42.2,
+      "repPct": 56.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.5,
+      "repPct": 56.2
+    }
+  ],
+  "4001": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.2,
+      "repPct": 59.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 37.3,
+      "repPct": 60.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 32.7,
+      "repPct": 61.4
+    }
+  ],
+  "4002": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 21.4,
+      "repPct": 77
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 22.2,
+      "repPct": 76.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 22.8,
+      "repPct": 72.9
+    }
+  ],
+  "4003": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 26.7,
+      "repPct": 71.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 23.2,
+      "repPct": 74.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 20.9,
+      "repPct": 73.6
+    }
+  ],
+  "4004": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 32.6,
+      "repPct": 65.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 32,
+      "repPct": 65.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 28.3,
+      "repPct": 65.7
+    }
+  ],
+  "4005": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39.8,
+      "repPct": 58
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 46,
+      "repPct": 51.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.8,
+      "repPct": 53.2
+    }
+  ],
+  "4101": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 66.8,
+      "repPct": 29.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 63.3,
+      "repPct": 34.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 57.3,
+      "repPct": 34.5
+    }
+  ],
+  "4102": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.9,
+      "repPct": 62
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 42.1,
+      "repPct": 55.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.4,
+      "repPct": 56.5
+    }
+  ],
+  "4103": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 70.7,
+      "repPct": 25.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 74.3,
+      "repPct": 23.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 70.7,
+      "repPct": 22.5
+    }
+  ],
+  "4104": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 54.1,
+      "repPct": 42.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 50.7,
+      "repPct": 46.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 46.1,
+      "repPct": 46
+    }
+  ],
+  "4105": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52.5,
+      "repPct": 43.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 53.6,
+      "repPct": 43.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 48.3,
+      "repPct": 44.1
+    }
+  ],
+  "4106": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53.8,
+      "repPct": 42.4
+    }
+  ],
+  "4201": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 49.7,
+      "repPct": 49.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 52.4,
+      "repPct": 46.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 49.1,
+      "repPct": 47.1
+    }
+  ],
+  "4202": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 67.3,
+      "repPct": 31.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 70.1,
+      "repPct": 29.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 72.9,
+      "repPct": 24.9
+    }
+  ],
+  "4203": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 88.1,
+      "repPct": 10.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 91.3,
+      "repPct": 8.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 90.9,
+      "repPct": 7
+    }
+  ],
+  "4204": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 57.4,
+      "repPct": 41.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 61.5,
+      "repPct": 37.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 57.8,
+      "repPct": 38.5
+    }
+  ],
+  "4205": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 63.8,
+      "repPct": 35.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 65.1,
+      "repPct": 34
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 62.6,
+      "repPct": 34.4
+    }
+  ],
+  "4206": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 55.2,
+      "repPct": 43.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 56.9,
+      "repPct": 41.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 52.6,
+      "repPct": 43.3
+    }
+  ],
+  "4207": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 47.9,
+      "repPct": 51.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.8,
+      "repPct": 47
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 48.7,
+      "repPct": 47.6
+    }
+  ],
+  "4208": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 45.4,
+      "repPct": 53.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.3,
+      "repPct": 51.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 43.7,
+      "repPct": 53.3
+    }
+  ],
+  "4209": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 30.6,
+      "repPct": 68.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 34.1,
+      "repPct": 64.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 31,
+      "repPct": 65
+    }
+  ],
+  "4210": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 46.8,
+      "repPct": 52
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.8,
+      "repPct": 50.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 43.4,
+      "repPct": 52.3
+    }
+  ],
+  "4211": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.8,
+      "repPct": 60.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 38.3,
+      "repPct": 60.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.7,
+      "repPct": 60.5
+    }
+  ],
+  "4212": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.1,
+      "repPct": 40
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.2,
+      "repPct": 67.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 29.7,
+      "repPct": 66.1
+    }
+  ],
+  "4213": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 26.8,
+      "repPct": 72.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 27.2,
+      "repPct": 71.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 25.5,
+      "repPct": 71.2
+    }
+  ],
+  "4214": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 33,
+      "repPct": 66.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 35.7,
+      "repPct": 63.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 33.9,
+      "repPct": 62.9
+    }
+  ],
+  "4215": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 30.6,
+      "repPct": 68.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 27.5,
+      "repPct": 71.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 26.5,
+      "repPct": 69.8
+    }
+  ],
+  "4216": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.2,
+      "repPct": 61
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40,
+      "repPct": 58.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 37.9,
+      "repPct": 57.9
+    }
+  ],
+  "4217": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52.3,
+      "repPct": 46.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 50.7,
+      "repPct": 48
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 46.8,
+      "repPct": 49.4
+    }
+  ],
+  "4218": [
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 64.5,
+      "repPct": 34.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 62.1,
+      "repPct": 34.6
+    }
+  ],
+  "4401": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.7,
+      "repPct": 37.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 63.9,
+      "repPct": 34.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 60.5,
+      "repPct": 34.9
+    }
+  ],
+  "4402": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52,
+      "repPct": 45.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 56,
+      "repPct": 42.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.1,
+      "repPct": 44
+    }
+  ],
+  "4501": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42.7,
+      "repPct": 55.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 46.1,
+      "repPct": 52.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 40.4,
+      "repPct": 53.5
+    }
+  ],
+  "4502": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42.3,
+      "repPct": 56.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.6,
+      "repPct": 54.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.6,
+      "repPct": 56.3
+    }
+  ],
+  "4503": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 27.8,
+      "repPct": 70.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 30.5,
+      "repPct": 68.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 29,
+      "repPct": 67
+    }
+  ],
+  "4504": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.4,
+      "repPct": 61
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 38.9,
+      "repPct": 59.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.5,
+      "repPct": 60.2
+    }
+  ],
+  "4505": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.9,
+      "repPct": 60.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41,
+      "repPct": 57.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.8,
+      "repPct": 57.3
+    }
+  ],
+  "4506": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.6,
+      "repPct": 37.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 67,
+      "repPct": 31.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 66.8,
+      "repPct": 30.3
+    }
+  ],
+  "4507": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 36.3,
+      "repPct": 62.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40.2,
+      "repPct": 58.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.1,
+      "repPct": 58
+    }
+  ],
+  "4601": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.2,
+      "repPct": 63.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 35.6,
+      "repPct": 61.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 31.7,
+      "repPct": 61.5
+    }
+  ],
+  "4701": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 20.6,
+      "repPct": 78.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 22.1,
+      "repPct": 76.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 19.7,
+      "repPct": 76.7
+    }
+  ],
+  "4702": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 32.4,
+      "repPct": 66.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 34.5,
+      "repPct": 63.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 29.7,
+      "repPct": 65.1
+    }
+  ],
+  "4703": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 31.4,
+      "repPct": 67.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 32.9,
+      "repPct": 65.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 30.2,
+      "repPct": 65.4
+    }
+  ],
+  "4704": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 27.6,
+      "repPct": 71.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 30.7,
+      "repPct": 67.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 27.4,
+      "repPct": 68.6
+    }
+  ],
+  "4705": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 40.2,
+      "repPct": 58.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 60.3,
+      "repPct": 36.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.5,
+      "repPct": 38.2
+    }
+  ],
+  "4706": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 31.9,
+      "repPct": 66.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 25.6,
+      "repPct": 72.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 23.7,
+      "repPct": 72.6
+    }
+  ],
+  "4707": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.1,
+      "repPct": 60.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.3,
+      "repPct": 66.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 28.2,
+      "repPct": 67.5
+    }
+  ],
+  "4708": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 28.9,
+      "repPct": 70
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 33.2,
+      "repPct": 65.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 30.7,
+      "repPct": 66.3
+    }
+  ],
+  "4709": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 70.8,
+      "repPct": 27.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 78.5,
+      "repPct": 19.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 77.5,
+      "repPct": 19.8
+    }
+  ],
+  "4801": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 24,
+      "repPct": 75.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 27.2,
+      "repPct": 71.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 25.3,
+      "repPct": 72.2
+    }
+  ],
+  "4802": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.5,
+      "repPct": 61.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 48.6,
+      "repPct": 49.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 43.1,
+      "repPct": 52.4
+    }
+  ],
+  "4803": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.6,
+      "repPct": 58.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 48.7,
+      "repPct": 49.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 40.6,
+      "repPct": 54.8
+    }
+  ],
+  "4804": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 32.9,
+      "repPct": 65.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 24.4,
+      "repPct": 74.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 21.8,
+      "repPct": 75.4
+    }
+  ],
+  "4805": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 35.8,
+      "repPct": 62.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 37.9,
+      "repPct": 60.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.3,
+      "repPct": 62.7
+    }
+  ],
+  "4806": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 35.2,
+      "repPct": 63.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.8,
+      "repPct": 50.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 41.9,
+      "repPct": 54.2
+    }
+  ],
+  "4807": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 58.8,
+      "repPct": 38.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 53.6,
+      "repPct": 45.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 48.5,
+      "repPct": 47.1
+    }
+  ],
+  "4808": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 32.4,
+      "repPct": 66.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 28.1,
+      "repPct": 70.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 23.9,
+      "repPct": 72.7
+    }
+  ],
+  "4809": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 71.2,
+      "repPct": 27.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 75.7,
+      "repPct": 23.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 79.3,
+      "repPct": 18
+    }
+  ],
+  "4810": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 36.8,
+      "repPct": 61.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 48.4,
+      "repPct": 50
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 43.2,
+      "repPct": 52.3
+    }
+  ],
+  "4811": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 26.8,
+      "repPct": 72.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 19.7,
+      "repPct": 79.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 19.1,
+      "repPct": 77.8
+    }
+  ],
+  "4812": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.1,
+      "repPct": 60.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 37.9,
+      "repPct": 60.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 32.7,
+      "repPct": 62.9
+    }
+  ],
+  "4813": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 25.6,
+      "repPct": 73.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 19.4,
+      "repPct": 79.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 16.9,
+      "repPct": 79.9
+    }
+  ],
+  "4814": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 32.5,
+      "repPct": 66.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 39.6,
+      "repPct": 59
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.4,
+      "repPct": 58.2
+    }
+  ],
+  "4815": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 40.7,
+      "repPct": 58.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 50.4,
+      "repPct": 48.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.7,
+      "repPct": 40
+    }
+  ],
+  "4816": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 57.2,
+      "repPct": 41.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 66.4,
+      "repPct": 32
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 67.9,
+      "repPct": 27.2
+    }
+  ],
+  "4817": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.8,
+      "repPct": 64
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.6,
+      "repPct": 54.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.8,
+      "repPct": 56.3
+    }
+  ],
+  "4818": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 69.1,
+      "repPct": 29.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 75.7,
+      "repPct": 23
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 76.5,
+      "repPct": 20
+    }
+  ],
+  "4819": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 23.7,
+      "repPct": 75.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 26.3,
+      "repPct": 72.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 23.5,
+      "repPct": 72.5
+    }
+  ],
+  "4820": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.9,
+      "repPct": 38.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 63.7,
+      "repPct": 34.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 61,
+      "repPct": 34.3
+    }
+  ],
+  "4821": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.5,
+      "repPct": 61.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.9,
+      "repPct": 50.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.5,
+      "repPct": 52.5
+    }
+  ],
+  "4822": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39.2,
+      "repPct": 58.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 48.9,
+      "repPct": 49.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44.2,
+      "repPct": 52.1
+    }
+  ],
+  "4823": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.7,
+      "repPct": 57.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 48.5,
+      "repPct": 50.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 49.8,
+      "repPct": 46.4
+    }
+  ],
+  "4824": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.3,
+      "repPct": 56.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.9,
+      "repPct": 46.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44.5,
+      "repPct": 50.7
+    }
+  ],
+  "4825": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 31.2,
+      "repPct": 67.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 44.4,
+      "repPct": 54
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 40.2,
+      "repPct": 55.1
+    }
+  ],
+  "4826": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.6,
+      "repPct": 61
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 42.1,
+      "repPct": 56.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.4,
+      "repPct": 60.9
+    }
+  ],
+  "4827": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.7,
+      "repPct": 64.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 37.5,
+      "repPct": 61.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.5,
+      "repPct": 60.1
+    }
+  ],
+  "4828": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 45.8,
+      "repPct": 53.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.6,
+      "repPct": 47.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58.3,
+      "repPct": 38.5
+    }
+  ],
+  "4829": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.6,
+      "repPct": 39.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 65.9,
+      "repPct": 32.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 71.1,
+      "repPct": 25.4
+    }
+  ],
+  "4830": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 72.6,
+      "repPct": 25.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 79.8,
+      "repPct": 18.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 79.1,
+      "repPct": 18.3
+    }
+  ],
+  "4831": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.6,
+      "repPct": 60.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.6,
+      "repPct": 50.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 40.8,
+      "repPct": 53.5
+    }
+  ],
+  "4832": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.3,
+      "repPct": 36.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.4,
+      "repPct": 44
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 48.5,
+      "repPct": 46.6
+    }
+  ],
+  "4833": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.6,
+      "repPct": 31.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 73,
+      "repPct": 25.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 72.9,
+      "repPct": 23.7
+    }
+  ],
+  "4834": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 47.4,
+      "repPct": 51.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.5,
+      "repPct": 47.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 59.2,
+      "repPct": 37.7
+    }
+  ],
+  "4835": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.8,
+      "repPct": 32.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 67.7,
+      "repPct": 30.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 64.1,
+      "repPct": 30.5
+    }
+  ],
+  "4836": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 31,
+      "repPct": 67.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 26.9,
+      "repPct": 71.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 25.2,
+      "repPct": 72
+    }
+  ],
+  "4837": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 73.2,
+      "repPct": 24.2
+    }
+  ],
+  "4838": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.8,
+      "repPct": 59.4
+    }
+  ],
+  "4901": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.5,
+      "repPct": 58.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.6,
+      "repPct": 64.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 22.4,
+      "repPct": 49.7
+    }
+  ],
+  "4902": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.6,
+      "repPct": 58.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40.2,
+      "repPct": 56.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 32,
+      "repPct": 46
+    }
+  ],
+  "4903": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39,
+      "repPct": 58.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 35.2,
+      "repPct": 60.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 23.3,
+      "repPct": 47.2
+    }
+  ],
+  "4904": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 35.2,
+      "repPct": 61.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.3,
+      "repPct": 52.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 32.4,
+      "repPct": 39.1
+    }
+  ],
+  "5001": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 64.4,
+      "repPct": 32.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 66.4,
+      "repPct": 30.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.7,
+      "repPct": 30.3
+    }
+  ],
+  "5101": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 46.7,
+      "repPct": 51.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47,
+      "repPct": 51.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 41.2,
+      "repPct": 53.6
+    }
+  ],
+  "5102": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 49.1,
+      "repPct": 49.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 51.4,
+      "repPct": 46.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 45.4,
+      "repPct": 48.8
+    }
+  ],
+  "5103": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 66.4,
+      "repPct": 31.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 67.2,
+      "repPct": 31.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 63.6,
+      "repPct": 31.9
+    }
+  ],
+  "5104": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.4,
+      "repPct": 32.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 61.8,
+      "repPct": 36.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58.7,
+      "repPct": 37.1
+    }
+  ],
+  "5105": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 43.2,
+      "repPct": 55.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 45.1,
+      "repPct": 53.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.3,
+      "repPct": 53.4
+    }
+  ],
+  "5106": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.2,
+      "repPct": 61.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 38.6,
+      "repPct": 59.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.9,
+      "repPct": 59.7
+    }
+  ],
+  "5107": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.3,
+      "repPct": 47.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 49.8,
+      "repPct": 48.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44,
+      "repPct": 50.5
+    }
+  ],
+  "5108": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 73,
+      "repPct": 23.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 77.6,
+      "repPct": 21.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 73.5,
+      "repPct": 20.9
+    }
+  ],
+  "5109": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 27.5,
+      "repPct": 71.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 28.4,
+      "repPct": 70.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 27.3,
+      "repPct": 68.8
+    }
+  ],
+  "5110": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52.6,
+      "repPct": 44.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 58.9,
+      "repPct": 39.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 52.2,
+      "repPct": 42.2
+    }
+  ],
+  "5111": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.2,
+      "repPct": 31.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 70.3,
+      "repPct": 28.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 66.9,
+      "repPct": 27.5
+    }
+  ],
+  "5301": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 62.2,
+      "repPct": 33.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 59.1,
+      "repPct": 38.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 54.1,
+      "repPct": 37.8
+    }
+  ],
+  "5302": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.8,
+      "repPct": 36.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 62.1,
+      "repPct": 35.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.9,
+      "repPct": 34.8
+    }
+  ],
+  "5303": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 46.7,
+      "repPct": 50
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 46.9,
+      "repPct": 50.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.5,
+      "repPct": 49.9
+    }
+  ],
+  "5304": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.1,
+      "repPct": 58.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 39.6,
+      "repPct": 57.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 35.1,
+      "repPct": 57.9
+    }
+  ],
+  "5305": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42.8,
+      "repPct": 53.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 44,
+      "repPct": 53
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.1,
+      "repPct": 52.2
+    }
+  ],
+  "5306": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 57.7,
+      "repPct": 38.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 57.4,
+      "repPct": 39.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.8,
+      "repPct": 39.5
+    }
+  ],
+  "5307": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 85.3,
+      "repPct": 10.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 85.7,
+      "repPct": 12.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 82.1,
+      "repPct": 12.2
+    }
+  ],
+  "5308": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.9,
+      "repPct": 45.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 52,
+      "repPct": 45.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 47.7,
+      "repPct": 44.7
+    }
+  ],
+  "5309": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 68.4,
+      "repPct": 27.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 73.3,
+      "repPct": 24.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 70.5,
+      "repPct": 23.3
+    }
+  ],
+  "5310": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 57,
+      "repPct": 39.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 56.2,
+      "repPct": 40.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.3,
+      "repPct": 39.9
+    }
+  ],
+  "5401": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 26.9,
+      "repPct": 71.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 30.3,
+      "repPct": 68
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 26.4,
+      "repPct": 68
+    }
+  ],
+  "5402": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 29.2,
+      "repPct": 68.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 32.8,
+      "repPct": 65.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 29.4,
+      "repPct": 65.8
+    }
+  ],
+  "5403": [
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 25.5,
+      "repPct": 73.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 23.3,
+      "repPct": 72.5
+    }
+  ],
+  "5501": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 46.9,
+      "repPct": 51.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 44.7,
+      "repPct": 53.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.3,
+      "repPct": 52.6
+    }
+  ],
+  "5502": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 69.2,
+      "repPct": 29.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 69.4,
+      "repPct": 29.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 65.8,
+      "repPct": 29
+    }
+  ],
+  "5503": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 45.5,
+      "repPct": 52.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 46.8,
+      "repPct": 51.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 44.8,
+      "repPct": 49.3
+    }
+  ],
+  "5504": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 74.7,
+      "repPct": 23.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 76.2,
+      "repPct": 22.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 74,
+      "repPct": 21.8
+    }
+  ],
+  "5505": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 38.2,
+      "repPct": 60.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.7,
+      "repPct": 56.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 37.3,
+      "repPct": 57.4
+    }
+  ],
+  "5506": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41,
+      "repPct": 57.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.6,
+      "repPct": 56.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.8,
+      "repPct": 55.7
+    }
+  ],
+  "5507": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 37.9,
+      "repPct": 60.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 39.3,
+      "repPct": 59.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 37.3,
+      "repPct": 57.7
+    }
+  ],
+  "5508": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.2,
+      "repPct": 57.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.3,
+      "repPct": 57.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 38.6,
+      "repPct": 56.2
+    }
+  ],
+  "5601": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 26.1,
+      "repPct": 72.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 26.7,
+      "repPct": 70.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 22.5,
+      "repPct": 70.1
+    }
+  ],
+  "0101": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 21.9,
+      "repPct": 76.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 35.3,
+      "repPct": 63.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.1,
+      "repPct": 63.5
+    }
+  ],
+  "0102": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53.5,
+      "repPct": 45.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 35.1,
+      "repPct": 63.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 33,
+      "repPct": 64.9
+    }
+  ],
+  "0103": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 26.2,
+      "repPct": 72.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 33.7,
+      "repPct": 65.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 32.3,
+      "repPct": 65.3
+    }
+  ],
+  "0104": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 16,
+      "repPct": 83
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 17.8,
+      "repPct": 81.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 17.4,
+      "repPct": 80.4
+    }
+  ],
+  "0105": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34.2,
+      "repPct": 64
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 35.7,
+      "repPct": 62.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 31.3,
+      "repPct": 64.7
+    }
+  ],
+  "0106": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 29.7,
+      "repPct": 68.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 31.8,
+      "repPct": 67
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 26.1,
+      "repPct": 70.8
+    }
+  ],
+  "0107": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 61.4,
+      "repPct": 37.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 70.8,
+      "repPct": 28.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 69.8,
+      "repPct": 28.6
+    }
+  ],
+  "0201": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.4,
+      "repPct": 54.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43,
+      "repPct": 53.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 37.6,
+      "repPct": 52.8
+    }
+  ],
+  "0401": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 47.8,
+      "repPct": 50.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 50.1,
+      "repPct": 48.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 46.6,
+      "repPct": 47.7
+    }
+  ],
+  "0402": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 42,
+      "repPct": 56.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.5,
+      "repPct": 43.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 49.6,
+      "repPct": 44.7
+    }
+  ],
+  "0403": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 68.9,
+      "repPct": 29.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 62.8,
+      "repPct": 35.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 62.4,
+      "repPct": 32.5
+    }
+  ],
+  "0404": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52.4,
+      "repPct": 45.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 30.6,
+      "repPct": 68
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 27.5,
+      "repPct": 67.7
+    }
+  ],
+  "0405": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39.3,
+      "repPct": 59.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.9,
+      "repPct": 56.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.5,
+      "repPct": 57.6
+    }
+  ],
+  "0406": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 48.9,
+      "repPct": 49.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 47.3,
+      "repPct": 51.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.4,
+      "repPct": 52.4
+    }
+  ],
+  "0407": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.3,
+      "repPct": 38.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 73.7,
+      "repPct": 24.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 71.8,
+      "repPct": 22.6
+    }
+  ],
+  "0408": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.2,
+      "repPct": 57.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.4,
+      "repPct": 57.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 37,
+      "repPct": 58.1
+    }
+  ],
+  "0409": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 34,
+      "repPct": 65
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 60.8,
+      "repPct": 37.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 54.7,
+      "repPct": 38.4
+    }
+  ],
+  "0501": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 26.4,
+      "repPct": 71.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 27.9,
+      "repPct": 69.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 30.2,
+      "repPct": 65
+    }
+  ],
+  "0502": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41,
+      "repPct": 56.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 44.3,
+      "repPct": 53.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 41.7,
+      "repPct": 52.4
+    }
+  ],
+  "0503": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 36.2,
+      "repPct": 61.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 35.2,
+      "repPct": 61.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 30.5,
+      "repPct": 61.9
+    }
+  ],
+  "0504": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 29.1,
+      "repPct": 69
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 29.6,
+      "repPct": 67.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 31.3,
+      "repPct": 64.2
+    }
+  ],
+  "0601": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 36.1,
+      "repPct": 61.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.1,
+      "repPct": 56.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.5,
+      "repPct": 56.2
+    }
+  ],
+  "0602": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 70.9,
+      "repPct": 25.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 73.7,
+      "repPct": 23.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 69,
+      "repPct": 23.3
+    }
+  ],
+  "0603": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 46.5,
+      "repPct": 50.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.9,
+      "repPct": 42.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 53,
+      "repPct": 40.4
+    }
+  ],
+  "0604": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 64,
+      "repPct": 32.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 44,
+      "repPct": 53.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.3,
+      "repPct": 54
+    }
+  ],
+  "0605": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39.9,
+      "repPct": 57.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 72.5,
+      "repPct": 25.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 69.2,
+      "repPct": 24.3
+    }
+  ],
+  "0606": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 55.2,
+      "repPct": 41.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 70.3,
+      "repPct": 27.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 69.2,
+      "repPct": 24.4
+    }
+  ],
+  "0607": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 63.1,
+      "repPct": 33.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 55.7,
+      "repPct": 41.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 52.3,
+      "repPct": 40.9
+    }
+  ],
+  "0608": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 70.2,
+      "repPct": 26.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 43.6,
+      "repPct": 54.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.6,
+      "repPct": 54.7
+    }
+  ],
+  "0609": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 47.6,
+      "repPct": 49.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 57.9,
+      "repPct": 39.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.6,
+      "repPct": 38
+    }
+  ],
+  "0610": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.2,
+      "repPct": 31.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 50.3,
+      "repPct": 47.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 48.5,
+      "repPct": 45.5
+    }
+  ],
+  "0611": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 81.8,
+      "repPct": 14.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 74.3,
+      "repPct": 23.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 71.5,
+      "repPct": 22.7
+    }
+  ],
+  "0612": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 84.5,
+      "repPct": 10.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 86.1,
+      "repPct": 11.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 86.2,
+      "repPct": 8.7
+    }
+  ],
+  "0613": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 45.9,
+      "repPct": 51.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 88.9,
+      "repPct": 9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 87.4,
+      "repPct": 6.8
+    }
+  ],
+  "0614": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.8,
+      "repPct": 30.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 77.7,
+      "repPct": 20.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 76.9,
+      "repPct": 18.2
+    }
+  ],
+  "0615": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 72.2,
+      "repPct": 24.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 71.5,
+      "repPct": 26.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 69.9,
+      "repPct": 24.2
+    }
+  ],
+  "0616": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 72.5,
+      "repPct": 24
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 58.8,
+      "repPct": 38.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58,
+      "repPct": 36.4
+    }
+  ],
+  "0617": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 66.8,
+      "repPct": 28.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 72.5,
+      "repPct": 25.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 73.9,
+      "repPct": 20.5
+    }
+  ],
+  "0618": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 63.2,
+      "repPct": 33.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 76.4,
+      "repPct": 21.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 73.4,
+      "repPct": 20.2
+    }
+  ],
+  "0619": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.4,
+      "repPct": 31
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 70,
+      "repPct": 27.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 72.9,
+      "repPct": 21.5
+    }
+  ],
+  "0620": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 33.7,
+      "repPct": 64
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 72.7,
+      "repPct": 25
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 70.4,
+      "repPct": 23.2
+    }
+  ],
+  "0621": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.6,
+      "repPct": 46.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.4,
+      "repPct": 43.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 55.2,
+      "repPct": 39.7
+    }
+  ],
+  "0622": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 45.8,
+      "repPct": 51.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 46.2,
+      "repPct": 51.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 42.6,
+      "repPct": 52.1
+    }
+  ],
+  "0623": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 40.2,
+      "repPct": 57.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40.5,
+      "repPct": 57.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 36.1,
+      "repPct": 58.1
+    }
+  ],
+  "0624": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 61,
+      "repPct": 35.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 60.7,
+      "repPct": 36.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.7,
+      "repPct": 36.5
+    }
+  ],
+  "0625": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.1,
+      "repPct": 47.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54,
+      "repPct": 43.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 50.3,
+      "repPct": 43.6
+    }
+  ],
+  "0626": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 55.2,
+      "repPct": 42
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 61.4,
+      "repPct": 36.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 57.9,
+      "repPct": 36
+    }
+  ],
+  "0627": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.5,
+      "repPct": 46.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 67.2,
+      "repPct": 30.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 66,
+      "repPct": 28.4
+    }
+  ],
+  "0628": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 61.8,
+      "repPct": 34.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 70.9,
+      "repPct": 27.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 72.1,
+      "repPct": 22.3
+    }
+  ],
+  "0629": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.8,
+      "repPct": 31
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 74.1,
+      "repPct": 23.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 77.7,
+      "repPct": 16.8
+    }
+  ],
+  "0630": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 68.8,
+      "repPct": 27.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 68.7,
+      "repPct": 29.4
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 69.1,
+      "repPct": 25.7
+    }
+  ],
+  "0631": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 57,
+      "repPct": 40
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 58.8,
+      "repPct": 38.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 57.7,
+      "repPct": 36.6
+    }
+  ],
+  "0632": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 64.2,
+      "repPct": 32.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 65.2,
+      "repPct": 32.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 66.6,
+      "repPct": 27.7
+    }
+  ],
+  "0633": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52.9,
+      "repPct": 44.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 69,
+      "repPct": 29
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 67.8,
+      "repPct": 26.5
+    }
+  ],
+  "0634": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 73.1,
+      "repPct": 22.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 80.8,
+      "repPct": 16.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 83.6,
+      "repPct": 10.7
+    }
+  ],
+  "0635": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53.7,
+      "repPct": 43.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 65.1,
+      "repPct": 32.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 67.7,
+      "repPct": 26.9
+    }
+  ],
+  "0636": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 67.9,
+      "repPct": 28.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 55.9,
+      "repPct": 42.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 52.2,
+      "repPct": 43.4
+    }
+  ],
+  "0637": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 78.7,
+      "repPct": 18.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 84.3,
+      "repPct": 13.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 85.7,
+      "repPct": 9.6
+    }
+  ],
+  "0638": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 56.5,
+      "repPct": 40.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 65.6,
+      "repPct": 32.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 67,
+      "repPct": 27.4
+    }
+  ],
+  "0639": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53.3,
+      "repPct": 43.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.1,
+      "repPct": 44
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.5,
+      "repPct": 42.9
+    }
+  ],
+  "0640": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 47.2,
+      "repPct": 49.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 77.1,
+      "repPct": 20.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 82.2,
+      "repPct": 12.8
+    }
+  ],
+  "0641": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 45.7,
+      "repPct": 51.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 61.7,
+      "repPct": 36.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 61,
+      "repPct": 33.1
+    }
+  ],
+  "0642": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 64.5,
+      "repPct": 32
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 45.4,
+      "repPct": 52.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 41.4,
+      "repPct": 53.4
+    }
+  ],
+  "0643": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 72.9,
+      "repPct": 23.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 76.9,
+      "repPct": 20.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 78.4,
+      "repPct": 16.7
+    }
+  ],
+  "0644": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 65.3,
+      "repPct": 31.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 78.4,
+      "repPct": 19.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 83,
+      "repPct": 12.3
+    }
+  ],
+  "0645": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 49.3,
+      "repPct": 47.8
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.6,
+      "repPct": 43.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 49.8,
+      "repPct": 44.4
+    }
+  ],
+  "0646": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 57.3,
+      "repPct": 39.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 64.3,
+      "repPct": 33.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 66.3,
+      "repPct": 27.9
+    }
+  ],
+  "0647": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 50.3,
+      "repPct": 46.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 62.5,
+      "repPct": 35.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 62.6,
+      "repPct": 31
+    }
+  ],
+  "0648": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 41.1,
+      "repPct": 56.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 49.7,
+      "repPct": 48.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 47.9,
+      "repPct": 46.2
+    }
+  ],
+  "0649": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52.5,
+      "repPct": 44.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 55.2,
+      "repPct": 42.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 50.7,
+      "repPct": 43.2
+    }
+  ],
+  "0650": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 63.1,
+      "repPct": 33.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 45,
+      "repPct": 52.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 39.6,
+      "repPct": 54.6
+    }
+  ],
+  "0651": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.2,
+      "repPct": 36.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 66.9,
+      "repPct": 30.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 71.8,
+      "repPct": 22.8
+    }
+  ],
+  "0652": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 59.3,
+      "repPct": 38.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 63.4,
+      "repPct": 34.2
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 58.1,
+      "repPct": 35.6
+    }
+  ],
+  "0801": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 76.5,
+      "repPct": 20.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 75.6,
+      "repPct": 22.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 69,
+      "repPct": 23.2
+    }
+  ],
+  "0802": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 68.5,
+      "repPct": 28.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 63.7,
+      "repPct": 33.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 56.2,
+      "repPct": 34.9
+    }
+  ],
+  "0803": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 43.9,
+      "repPct": 53.6
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 46.1,
+      "repPct": 51.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 40,
+      "repPct": 52
+    }
+  ],
+  "0804": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 39.6,
+      "repPct": 57.9
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 40.8,
+      "repPct": 56.6
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 34.3,
+      "repPct": 57.4
+    }
+  ],
+  "0805": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 44.1,
+      "repPct": 53.2
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 41.8,
+      "repPct": 54.7
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 33.2,
+      "repPct": 57.2
+    }
+  ],
+  "0806": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 58.4,
+      "repPct": 38.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 58.2,
+      "repPct": 39.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 50.2,
+      "repPct": 41.3
+    }
+  ],
+  "0807": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 56.1,
+      "repPct": 41.1
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 60,
+      "repPct": 37.1
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 51.4,
+      "repPct": 39.4
+    }
+  ],
+  "0808": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 47.7,
+      "repPct": 49.6
+    }
+  ],
+  "0901": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.6,
+      "repPct": 37.7
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 63.3,
+      "repPct": 35.3
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 59.4,
+      "repPct": 36.3
+    }
+  ],
+  "0902": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 53,
+      "repPct": 45.3
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.5,
+      "repPct": 43.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 48.7,
+      "repPct": 45.8
+    }
+  ],
+  "0903": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 56,
+      "repPct": 42
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 59.9,
+      "repPct": 38.8
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 55.9,
+      "repPct": 40.4
+    }
+  ],
+  "0904": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 60.9,
+      "repPct": 37.5
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 64.2,
+      "repPct": 34.5
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 59.6,
+      "repPct": 36.6
+    }
+  ],
+  "0905": [
+    {
+      "year": 2024,
+      "race": "President",
+      "demPct": 52,
+      "repPct": 46.4
+    },
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 54.6,
+      "repPct": 43.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 49.9,
+      "repPct": 45.8
+    }
+  ],
+  "0653": [
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 67,
+      "repPct": 30.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 64.5,
+      "repPct": 29.6
+    }
+  ]
+};
+
 export const electionYear: number = 2026;

@@ -79,7 +79,7 @@ export default function SenateListPage() {
           </p>
         </div>
 
-        <RaceTable races={senateData} basePath="/senate" nameLabel="State" />
+        <RaceTable races={senateData} basePath="/senate" nameLabel="State" showSpecialBadge />
       </main>
     </div>
   );

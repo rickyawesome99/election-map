@@ -1,5 +1,6 @@
 import { statesData } from "@/data/statesData";
 import { electionYear } from "@/data/forecastData";
+import RaceTable from "@/components/RaceTable";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -72,29 +73,14 @@ export default function StatesListPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
-          {statesData.map((state) => (
-            <Link
-              key={state.id}
-              href={`/states/${state.id}`}
-              className="flex items-center gap-3 rounded-xl px-4 py-3 transition-colors"
-              style={{
-                background: "var(--app-panel)",
-                border: "1px solid var(--app-border)",
-              }}
-            >
-              <span
-                className="text-xs font-bold w-7 shrink-0 text-center rounded px-1 py-0.5"
-                style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
-              >
-                {state.abbr}
-              </span>
-              <span className="text-sm font-medium truncate" style={{ color: "var(--app-text-primary)" }}>
-                {state.name}
-              </span>
-            </Link>
-          ))}
-        </div>
+        <RaceTable
+          races={statesData.map((state) => ({ id: state.id, name: state.name }))}
+          basePath="/states"
+          nameLabel="State"
+          nameOnly
+          initialSortKey="name"
+          initialSortDir="asc"
+        />
       </main>
     </div>
   );

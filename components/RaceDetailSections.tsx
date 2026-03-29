@@ -485,8 +485,8 @@ export function HouseOnlyRecentStatewideResultsSection({
     race: string;
     demPct: number;
     repPct: number;
-    demCandidate: string;
-    repCandidate: string;
+    demCandidate?: string;
+    repCandidate?: string;
     placeholder?: boolean;
   }[];
 }) {
@@ -525,16 +525,20 @@ export function HouseOnlyRecentStatewideResultsSection({
               <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
                 <div className="flex flex-col min-w-0">
                   <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                  <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
-                    {isPlaceholder ? "TBD" : res.demCandidate}
-                  </span>
+                  {(isPlaceholder || res.demCandidate) && (
+                    <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
+                      {isPlaceholder ? "TBD" : res.demCandidate}
+                    </span>
+                  )}
                 </div>
                 <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
                 <div className="flex flex-col items-end min-w-0">
                   <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                  <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
-                    {isPlaceholder ? "TBD" : res.repCandidate}
-                  </span>
+                  {(isPlaceholder || res.repCandidate) && (
+                    <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
+                      {isPlaceholder ? "TBD" : res.repCandidate}
+                    </span>
+                  )}
                 </div>
               </div>
               <div className="flex h-4 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>

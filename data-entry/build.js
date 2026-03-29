@@ -487,6 +487,28 @@ for (const [fips, abbr, stateName, n, base] of STATE_INFO) {
   }
 }
 
+// ── House Statewide Results (presidential vote by district) ───────────────────
+
+const houseStatewideRows = parseCSVOptional("house_statewide_results.csv");
+const houseStatewideResults = {};
+for (const row of houseStatewideRows) {
+  if (!row.district_id) continue;
+  const key = String(parseInt(row.district_id)).padStart(4, "0");
+  const demPct = num(row.dem_pct);
+  const repPct = num(row.rep_pct);
+  const year = int2(row.year, 0);
+  if (!year || (!demPct && !repPct)) continue;
+  (houseStatewideResults[key] = houseStatewideResults[key] || []).push({
+    year,
+    race: (row.race || "").trim(),
+    demPct,
+    repPct,
+  });
+}
+for (const key of Object.keys(houseStatewideResults)) {
+  houseStatewideResults[key].sort((a, b) => b.year - a.year);
+}
+
 // ── House District Boundary Info ──────────────────────────────────────────────
 
 // Year columns: key in CSV → actual year
@@ -721,6 +743,15 @@ export type HouseDelegationEntry = {
 
 export const houseDelegationHistory: Record<string, HouseDelegationEntry[]> = ${j(houseDelegationHistory)};
 
+export type HouseStatewideResult = {
+  year: number;
+  race: string;
+  demPct: number;
+  repPct: number;
+};
+
+export const houseStatewideResults: Record<string, HouseStatewideResult[]> = ${j(houseStatewideResults)};
+
 export const electionYear: number = ${ELECTION_YEAR};
 `;
 
@@ -734,4 +765,5 @@ console.log(`✓ Governor holdouts: ${governorNoElection.length}`);
 console.log(`✓ House districts:   ${houseData.length}`);
 console.log(`✓ Pres 2024 states:  ${Object.keys(pres2024).length}`);
 console.log(`✓ House del history: ${Object.keys(houseDelegationHistory).length} states`);
+console.log(`✓ House statewide:   ${Object.keys(houseStatewideResults).length} districts`);
 console.log(`\n✅  data/forecastData.ts updated successfully.`);

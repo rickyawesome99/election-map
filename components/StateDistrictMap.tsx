@@ -190,7 +190,7 @@ export default function StateDistrictMap({
         </div>
       </div>
 
-      {/* Mobile-only selected panel — desktop version lives in StateMapSection */}
+      {/* Mobile/tablet selected panel — xl desktop version lives in StateMapSection */}
       {selected && (() => {
         const demPct = Math.max(0, Math.min(100, 50 + selected.margin / 2));
         const repPct = 100 - demPct;
@@ -198,7 +198,7 @@ export default function StateDistrictMap({
         const [, distNum] = selected.name.split("-");
         const distLabel = houseRaces.length === 1 ? "At-Large District" : `District ${parseInt(distNum)}`;
         return (
-          <div className="md:hidden" style={{ borderTop: "1px solid var(--app-border)" }}>
+          <div className="xl:hidden" style={{ borderTop: "1px solid var(--app-border)" }}>
             <div className="flex items-start justify-between gap-4 px-4 py-3">
               <div className="flex flex-col gap-1.5 min-w-0 flex-1">
                 <div className="flex items-center gap-2 flex-wrap">

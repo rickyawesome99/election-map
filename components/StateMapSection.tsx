@@ -7,7 +7,8 @@ import StateMapToggle from "./StateMapToggle";
 import Link from "next/link";
 
 // Map card height = 360px (content) + 49px (header + border) + 2px (section borders) = 411px
-const MAP_CARD_H = "md:h-[411px]";
+// Only lock heights when no district is selected; selected cards can exceed this height.
+const MAP_CARD_H = "xl:h-[411px]";
 
 export default function StateMapSection({
   children,
@@ -23,9 +24,18 @@ export default function StateMapSection({
   const [selected, setSelected] = useState<RaceForecast | null>(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+    <div className="grid grid-cols-1 xl:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] gap-6 items-start">
+      {/* Left column: map */}
+      <StateMapToggle
+        abbr={stateAbbr}
+        stateName={stateName}
+        houseRaces={houseRaces}
+        selected={selected}
+        onSelect={setSelected}
+      />
+
       {/* Left column — fixed to exact map card height on desktop */}
-      <div className={`flex flex-col gap-4 ${MAP_CARD_H}`}>
+      <div className={`flex flex-col gap-4 ${selected ? "" : MAP_CARD_H}`}>
         {/* Overview (natural height) */}
         {children}
 
@@ -38,7 +48,7 @@ export default function StateMapSection({
           const distLabel = distNum === "AL" ? "At-Large District" : `District ${distNum}`;
           return (
             <section
-              className="hidden md:flex flex-col flex-1 min-h-0 rounded-xl p-3 gap-2"
+              className="hidden xl:flex flex-col rounded-xl p-3 gap-2"
               style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
             >
               {/* Header */}
@@ -100,13 +110,10 @@ export default function StateMapSection({
                 </div>
               </div>
 
-              {/* Spacer pushes button to bottom */}
-              <div className="flex-1" />
-
               {/* Link */}
               <Link
                 href={`/house/${selected.id}`}
-                className="flex items-center justify-center gap-1 py-1 mx-3 mb-2 rounded-md text-xs font-semibold transition-colors shrink-0"
+                className="flex items-center justify-center gap-1 py-1 rounded-md text-xs font-semibold transition-colors shrink-0"
                 style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}
               >
                 View Full Race Details
@@ -118,15 +125,6 @@ export default function StateMapSection({
           );
         })()}
       </div>
-
-      {/* Right column: map */}
-      <StateMapToggle
-        abbr={stateAbbr}
-        stateName={stateName}
-        houseRaces={houseRaces}
-        selected={selected}
-        onSelect={setSelected}
-      />
     </div>
   );
 }
