@@ -144,7 +144,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
                     )}
                   </div>
                   <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
-                    <div className="flex flex-col">
+                    <div className="flex flex-col min-w-0">
                       <div className="flex items-center gap-1.5 mb-0.5">
                         <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
                         {!isPlaceholder && (res as { demIncumbent?: boolean }).demIncumbent && (
@@ -156,7 +156,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
                       </span>
                     </div>
                     <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                    <div className="flex flex-col items-end">
+                    <div className="flex flex-col items-end min-w-0">
                       <div className="flex items-center gap-1.5 mb-0.5">
                         {!isPlaceholder && (res as { repIncumbent?: boolean }).repIncumbent && (
                           <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
@@ -513,7 +513,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                       )}
                     </div>
                     <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
-                      <div className="flex flex-col">
+                      <div className="flex flex-col min-w-0">
                         <div className="flex items-center gap-1.5 mb-0.5">
                           <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
                           {!isPlaceholder && (res as { demIncumbent?: boolean }).demIncumbent && (
@@ -525,7 +525,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                         </span>
                       </div>
                       <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                      <div className="flex flex-col items-end">
+                      <div className="flex flex-col items-end min-w-0">
                         <div className="flex items-center gap-1.5 mb-0.5">
                           {!isPlaceholder && (res as { repIncumbent?: boolean }).repIncumbent && (
                             <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>

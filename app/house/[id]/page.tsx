@@ -293,9 +293,9 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                       )}
                     </div>
                     <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
-                      <div className="flex flex-col">
+                      <div className="flex flex-col min-w-0">
                         <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                        <div className="flex items-center gap-1.5">
+                        <div className="flex items-center gap-1.5 min-w-0">
                           <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
                             {isPlaceholder ? "TBD" : demName}
                           </span>
@@ -305,9 +305,9 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                         </div>
                       </div>
                       <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                      <div className="flex flex-col items-end">
+                      <div className="flex flex-col items-end min-w-0">
                         <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                        <div className="flex items-center gap-1.5 justify-end">
+                        <div className="flex items-center gap-1.5 justify-end min-w-0">
                           {repInc && (
                             <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
                           )}
@@ -384,14 +384,14 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                       )}
                     </div>
                     <div className="grid grid-cols-[1fr_auto_1fr] gap-4 items-center mb-2">
-                      <div className="flex flex-col">
+                      <div className="flex flex-col min-w-0">
                         <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
                         <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
                           {isPlaceholder ? "TBD" : res.demCandidate}
                         </span>
                       </div>
                       <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                      <div className="flex flex-col items-end">
+                      <div className="flex flex-col items-end min-w-0">
                         <span className="text-xs mb-0.5" style={{ color: "var(--app-text-muted)" }}>Republican</span>
                         <span className="text-sm font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>
                           {isPlaceholder ? "TBD" : res.repCandidate}
