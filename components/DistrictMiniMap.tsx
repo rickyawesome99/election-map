@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
 
@@ -35,19 +34,14 @@ export default function DistrictMiniMap({
   stateAbbr: string;
   margin: number;
 }) {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    setDarkMode(localStorage.getItem("darkMode") === "true");
-  }, []);
-
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
   const stateFips = raceId.slice(0, 2);
   // At-large districts are stored in the GeoJSON with GEOID ending "00", but our race IDs end "01"
   const targetGeoid = raceId.endsWith("01") ? raceId.slice(0, -2) + "00" : raceId;
   const highlightColor = getRaceColor(margin);
-  const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
-  const mutedFill = darkMode ? "#2a2f36" : "#d0d7de";
+  // Use theme variables so fills update immediately with light/dark toggles.
+  const mapStroke = "var(--app-bg)";
+  const mutedFill = "var(--app-border)";
 
   return (
     <div style={{ height: 220, background: "var(--app-bg)", borderRadius: 8, overflow: "hidden" }}>

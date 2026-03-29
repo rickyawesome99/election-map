@@ -8,7 +8,7 @@ import Sidebar from "./Sidebar";
 import Link from "next/link";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
-const DISTRICTS_URL = "/congressional-districts.json";
+const DISTRICTS_URL = "/congressional-districts-home.json";
 
 const LEGEND = [
   { color: "#1a4480", label: "Safe D" },

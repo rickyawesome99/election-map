@@ -1,4 +1,4 @@
-district_id,district_name,state_abbr,state_name,year,incumbent,party,race_desc,prob_dem,prob_rep,margin,proj_dem,proj_rep,dem_name,rep_name,incumbent,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
+district_id,district_name,state_abbr,state_name,year,current_incumbent,party,race_desc,prob_dem,prob_rep,margin,proj_dem,proj_rep,dem_name,rep_name,incumbent,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
 101,AL-01,AL,Alabama,2026,Barry Moore,Republican,,0,100,50.7,24.65,75.35,Clyde Jones,Rhett Marques,None,N/A,N/A,N/A,N/A,N/A,N/A
 102,AL-02,AL,Alabama,2026,Shomari Figures,Democratic,,95.1,4.9,-17.3,58.65,41.35,Shomari Figures,Hampton Harris,D,N/A,N/A,N/A,N/A,N/A,N/A
 103,AL-03,AL,Alabama,2026,Mike Rogers,Republican,,0,100,48.8,25.6,74.4,Victor Mcinnis,Michael Rogers,None,N/A,N/A,N/A,N/A,N/A,N/A

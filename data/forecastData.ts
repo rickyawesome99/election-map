@@ -10354,6 +10354,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Barry Moore",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -10418,37 +10420,37 @@ export const houseData: RaceForecast[] = [
     "name": "AL-02",
     "state": "Alabama",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.95,
     "margin": 17.3,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 90
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 92
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 95
       }
     ],
     "candidates": {
@@ -10463,6 +10465,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Shomari Figures",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -10574,6 +10578,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mike Rogers",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -10685,6 +10691,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Robert B. Aderholt",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -10794,6 +10802,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Dale W. Strong",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -10902,6 +10912,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Gary J. Palmer",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -11013,6 +11025,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Terri A. Sewell",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -11075,37 +11089,37 @@ export const houseData: RaceForecast[] = [
     "name": "AK-01",
     "state": "Alaska",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.28,
     "margin": -6.2,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 23
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 25
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 27
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 28
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 28
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 28
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 28
       }
     ],
     "candidates": {
@@ -11120,6 +11134,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Nicholas J. Begich III",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -11188,37 +11204,37 @@ export const houseData: RaceForecast[] = [
     "name": "AZ-01",
     "state": "Arizona",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.59,
     "margin": 2.4,
     "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 54
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 56
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 58
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 59
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 59
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 59
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 59
       }
     ],
     "candidates": {
@@ -11233,6 +11249,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "David Schweikert",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -11299,37 +11317,37 @@ export const houseData: RaceForecast[] = [
     "name": "AZ-02",
     "state": "Arizona",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.21,
     "margin": -8.5,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 16
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 18
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 20
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 21
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 21
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 21
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 21
       }
     ],
     "candidates": {
@@ -11344,6 +11362,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Elijah Crane",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -11455,6 +11475,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Yassamin Ansari",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -11521,37 +11543,37 @@ export const houseData: RaceForecast[] = [
     "name": "AZ-04",
     "state": "Arizona",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.89,
     "margin": 12.6,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 84
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 86
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 89
       }
     ],
     "candidates": {
@@ -11566,6 +11588,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Greg Stanton",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -11633,37 +11657,37 @@ export const houseData: RaceForecast[] = [
     "name": "AZ-05",
     "state": "Arizona",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.07,
     "margin": -15.4,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 7
       }
     ],
     "candidates": {
@@ -11678,6 +11702,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Andy Biggs",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -11745,37 +11771,37 @@ export const houseData: RaceForecast[] = [
     "name": "AZ-06",
     "state": "Arizona",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.62,
     "margin": 3.1,
     "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 57
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 59
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 61
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 62
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 62
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 62
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 62
       }
     ],
     "candidates": {
@@ -11790,6 +11816,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Juan Ciscomani",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -11902,6 +11930,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Adelita S. Grijalva",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -11969,37 +11999,37 @@ export const houseData: RaceForecast[] = [
     "name": "AZ-08",
     "state": "Arizona",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.12,
     "margin": -12.5,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 7
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 9
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 11
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 12
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 12
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 12
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 12
       }
     ],
     "candidates": {
@@ -12014,6 +12044,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Abraham J. Hamadeh",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -12126,6 +12158,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Paul A. Gosar",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -12237,6 +12271,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Eric A. “Rick” Crawford",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -12303,37 +12339,37 @@ export const houseData: RaceForecast[] = [
     "name": "AR-02",
     "state": "Arkansas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.1,
     "margin": -13.4,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 5
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 7
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 10
       }
     ],
     "candidates": {
@@ -12348,6 +12384,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "J. French Hill",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -12461,6 +12499,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Steve Womack",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -12574,6 +12614,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Bruce Westerman",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -12642,37 +12684,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-01",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.97,
     "margin": 19.5,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 92
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 94
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 97
       }
     ],
     "candidates": {
@@ -12687,6 +12729,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Vacancy",
+    "seatParty": "I",
     "pastResults": [
       {
         "year": 2024,
@@ -12800,6 +12844,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jared Huffman",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -12868,37 +12914,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-03",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.92,
     "margin": 14.9,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 87
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 89
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 91
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 92
       }
     ],
     "candidates": {
@@ -12913,6 +12959,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Kevin Kiley",
+    "seatParty": "I",
     "pastResults": [
       {
         "year": 2024,
@@ -12980,21 +13028,21 @@ export const houseData: RaceForecast[] = [
     "name": "CA-04",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 24.3,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -13010,7 +13058,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -13025,6 +13073,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mike Thompson",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -13092,37 +13142,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-05",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.04,
     "margin": -18,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 4
       }
     ],
     "candidates": {
@@ -13137,6 +13187,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Tom McClintock",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -13204,37 +13256,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-06",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.89,
     "margin": 12.9,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 84
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 86
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 89
       }
     ],
     "candidates": {
@@ -13249,6 +13301,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ami Bera",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -13314,37 +13368,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-07",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 22.5,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 93
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 95
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 98
       }
     ],
     "candidates": {
@@ -13359,6 +13413,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Doris O. Matsui",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -13471,6 +13527,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "John Garamendi",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -13535,21 +13593,21 @@ export const houseData: RaceForecast[] = [
     "name": "CA-09",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 24.9,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -13565,7 +13623,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -13580,6 +13638,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Josh Harder",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -13692,6 +13752,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mark DeSaulnier",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -13804,6 +13866,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Nancy Pelosi",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -13916,6 +13980,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Lateefah Simon",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -13980,37 +14046,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-13",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.88,
     "margin": 12.4,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 83
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 85
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 87
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 88
       }
     ],
     "candidates": {
@@ -14025,6 +14091,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Adam Gray",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -14137,6 +14205,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Eric Swalwell",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -14249,6 +14319,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Kevin Mullin",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -14359,6 +14431,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sam T. Liccardo",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -14468,6 +14542,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ro Khanna",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -14578,6 +14654,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Zoe Lofgren",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -14688,6 +14766,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jimmy Panetta",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -14800,6 +14880,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Vince Fong",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -14864,37 +14946,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-21",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.93,
     "margin": 15.7,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 88
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 90
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 93
       }
     ],
     "candidates": {
@@ -14909,6 +14991,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jim Costa",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -14976,37 +15060,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-22",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.73,
     "margin": 6.5,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 68
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 70
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 72
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 73
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 73
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 73
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 73
       }
     ],
     "candidates": {
@@ -15021,6 +15105,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "David G. Valadao",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -15088,37 +15174,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-23",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16.7,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -15133,6 +15219,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Jay Obernolte",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -15245,6 +15333,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Salud O. Carbajal",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -15312,37 +15402,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-25",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.95,
     "margin": 17.6,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 90
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 92
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 95
       }
     ],
     "candidates": {
@@ -15357,6 +15447,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Raul Ruiz",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -15424,37 +15516,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-26",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 20.6,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 93
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 95
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 98
       }
     ],
     "candidates": {
@@ -15469,6 +15561,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Julia Brownley",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -15537,37 +15631,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-27",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.97,
     "margin": 19,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 92
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 94
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 97
       }
     ],
     "candidates": {
@@ -15582,6 +15676,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "George Whitesides",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -15692,6 +15788,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Judy Chu",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -15804,6 +15902,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Luz M. Rivas",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -15910,6 +16010,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Laura Friedman",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -15974,37 +16076,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-31",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 21.1,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 93
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 95
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 98
       }
     ],
     "candidates": {
@@ -16019,6 +16121,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Gilbert Ray Cisneros, Jr.",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -16130,6 +16234,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Brad Sherman",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -16195,21 +16301,21 @@ export const houseData: RaceForecast[] = [
     "name": "CA-33",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 25,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -16225,7 +16331,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -16240,6 +16346,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Pete Aguilar",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -16352,6 +16460,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jimmy Gomez",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -16412,37 +16522,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-35",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 21,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 93
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 95
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 98
       }
     ],
     "candidates": {
@@ -16457,6 +16567,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Norma J. Torres",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -16570,6 +16682,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ted Lieu",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -16682,6 +16796,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sydney Kamlager-Dove",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -16745,21 +16861,21 @@ export const houseData: RaceForecast[] = [
     "name": "CA-38",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 24.8,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -16775,7 +16891,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -16790,6 +16906,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Linda T. Sánchez",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -16856,37 +16974,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-39",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 22.1,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 93
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 95
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 98
       }
     ],
     "candidates": {
@@ -16901,6 +17019,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mark Takano",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -16967,37 +17087,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-40",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.15,
     "margin": -10,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 10
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 12
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 15
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 15
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 15
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 15
       }
     ],
     "candidates": {
@@ -17012,6 +17132,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Young Kim",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -17079,21 +17201,21 @@ export const houseData: RaceForecast[] = [
     "name": "CA-41",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 25.5,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -17109,7 +17231,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -17124,6 +17246,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ken Calvert",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -17191,21 +17315,21 @@ export const houseData: RaceForecast[] = [
     "name": "CA-42",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 22.6,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -17221,7 +17345,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -17236,6 +17360,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Robert Garcia",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -17348,6 +17474,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Maxine Waters",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -17461,6 +17589,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Nanette Diaz Barragán",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -17522,37 +17652,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-45",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.89,
     "margin": 13,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 84
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 86
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 89
       }
     ],
     "candidates": {
@@ -17567,6 +17697,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Derek Tran",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -17679,6 +17811,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "J. Luis Correa",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -17744,37 +17878,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-47",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.96,
     "margin": 18.3,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 96
       }
     ],
     "candidates": {
@@ -17789,6 +17923,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Dave Min",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -17855,37 +17991,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-48",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.81,
     "margin": 9.1,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 76
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 78
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 80
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 81
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 81
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 81
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 81
       }
     ],
     "candidates": {
@@ -17900,6 +18036,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Darrell Issa",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -17967,37 +18105,37 @@ export const houseData: RaceForecast[] = [
     "name": "CA-49",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.96,
     "margin": 18.1,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 96
       }
     ],
     "candidates": {
@@ -18012,6 +18150,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mike Levin",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -18079,21 +18219,21 @@ export const houseData: RaceForecast[] = [
     "name": "CA-50",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 25.6,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -18109,7 +18249,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -18124,6 +18264,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Scott H. Peters",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -18190,21 +18332,21 @@ export const houseData: RaceForecast[] = [
     "name": "CA-51",
     "state": "California",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 26,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -18220,7 +18362,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -18235,6 +18377,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sara Jacobs",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -18347,6 +18491,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Juan Vargas",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -18459,6 +18605,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Diana DeGette",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -18572,6 +18720,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Joe Neguse",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -18639,37 +18789,37 @@ export const houseData: RaceForecast[] = [
     "name": "CO-03",
     "state": "Colorado",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.37,
     "margin": -3.4,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 32
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 34
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 36
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 37
       }
     ],
     "candidates": {
@@ -18684,6 +18834,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jeff Hurd",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -18750,37 +18902,37 @@ export const houseData: RaceForecast[] = [
     "name": "CO-04",
     "state": "Colorado",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.18,
     "margin": -9.7,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 13
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 15
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 18
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 18
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 18
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 18
       }
     ],
     "candidates": {
@@ -18795,6 +18947,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Lauren Boebert",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -18862,37 +19016,37 @@ export const houseData: RaceForecast[] = [
     "name": "CO-05",
     "state": "Colorado",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.28,
     "margin": -6.2,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 23
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 25
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 27
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 28
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 28
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 28
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 28
       }
     ],
     "candidates": {
@@ -18907,6 +19061,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Jeff Crank",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -19019,6 +19175,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jason Crow",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -19087,21 +19245,21 @@ export const houseData: RaceForecast[] = [
     "name": "CO-07",
     "state": "Colorado",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 23.2,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -19117,7 +19275,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -19132,6 +19290,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Brittany Pettersen",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -19199,37 +19359,37 @@ export const houseData: RaceForecast[] = [
     "name": "CO-08",
     "state": "Colorado",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.71,
     "margin": 5.7,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 66
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 68
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 70
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 71
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 71
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 71
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 71
       }
     ],
     "candidates": {
@@ -19244,6 +19404,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Gabe Evans",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -19320,6 +19482,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "John B. Larson",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -19388,37 +19552,37 @@ export const houseData: RaceForecast[] = [
     "name": "CT-02",
     "state": "Connecticut",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.94,
     "margin": 15.9,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 89
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 91
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 94
       }
     ],
     "candidates": {
@@ -19433,6 +19597,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Joe Courtney",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -19501,21 +19667,21 @@ export const houseData: RaceForecast[] = [
     "name": "CT-03",
     "state": "Connecticut",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 23.9,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -19531,7 +19697,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -19546,6 +19712,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Rosa L. DeLauro",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -19659,6 +19827,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "James A. Himes",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -19727,37 +19897,37 @@ export const houseData: RaceForecast[] = [
     "name": "CT-05",
     "state": "Connecticut",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.88,
     "margin": 12.3,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 83
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 85
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 87
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 88
       }
     ],
     "candidates": {
@@ -19772,6 +19942,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jahana Hayes",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -19839,7 +20011,7 @@ export const houseData: RaceForecast[] = [
     "name": "DE-01",
     "state": "Delaware",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 26.6,
     "rating": "Safe D",
     "history": [
@@ -19884,6 +20056,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sarah McBride",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -19995,6 +20169,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Jimmy Patronis",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -20062,37 +20238,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-02",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.13,
     "margin": -11.9,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 8
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 10
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 12
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 13
       }
     ],
     "candidates": {
@@ -20107,6 +20283,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Neal P. Dunn",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -20171,37 +20349,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-03",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.07,
     "margin": -15.2,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 7
       }
     ],
     "candidates": {
@@ -20216,6 +20394,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Kat Cammack",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -20283,37 +20463,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-04",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.28,
     "margin": -6,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 23
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 25
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 27
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 28
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 28
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 28
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 28
       }
     ],
     "candidates": {
@@ -20328,6 +20508,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Aaron Bean",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -20394,37 +20576,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-05",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.07,
     "margin": -15.7,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 7
       }
     ],
     "candidates": {
@@ -20439,6 +20621,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "John H. Rutherford",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -20546,6 +20730,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Randy Fine",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -20613,37 +20799,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-07",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.35,
     "margin": -4.1,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 30
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 32
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 34
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 35
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 35
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 35
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 35
       }
     ],
     "candidates": {
@@ -20658,6 +20844,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Cory Mills",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -20725,37 +20913,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-08",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.04,
     "margin": -17,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 4
       }
     ],
     "candidates": {
@@ -20770,6 +20958,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mike Haridopolos",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -20837,37 +21027,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-09",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.95,
     "margin": 17.1,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 90
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 92
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 95
       }
     ],
     "candidates": {
@@ -20882,6 +21072,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Darren Soto",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -20994,6 +21186,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Maxwell Frost",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -21056,37 +21250,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-11",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.14,
     "margin": -11.1,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 9
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 11
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 14
       }
     ],
     "candidates": {
@@ -21101,6 +21295,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Daniel Webster",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -21213,6 +21409,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Gus M. Bilirakis",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -21281,37 +21479,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-13",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.33,
     "margin": -4.7,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 28
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 30
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 32
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 33
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 33
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 33
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 33
       }
     ],
     "candidates": {
@@ -21326,6 +21524,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Anna Paulina Luna",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -21393,37 +21593,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-14",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 22,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 93
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 95
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 98
       }
     ],
     "candidates": {
@@ -21438,6 +21638,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Kathy Castor",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -21502,37 +21704,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-15",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.37,
     "margin": -3.5,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 32
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 34
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 36
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 37
       }
     ],
     "candidates": {
@@ -21547,6 +21749,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Laurel M. Lee",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -21612,37 +21816,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-16",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.15,
     "margin": -10.7,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 10
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 12
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 15
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 15
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 15
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 15
       }
     ],
     "candidates": {
@@ -21657,6 +21861,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Vern Buchanan",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -21725,37 +21931,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-17",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.04,
     "margin": -18.6,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 4
       }
     ],
     "candidates": {
@@ -21770,6 +21976,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "W. Gregory Steube",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -21837,37 +22045,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-18",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.01,
     "margin": -22.9,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 1
       }
     ],
     "candidates": {
@@ -21882,6 +22090,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Scott Franklin",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -21948,37 +22158,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-19",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.01,
     "margin": -22.8,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 1
       }
     ],
     "candidates": {
@@ -21993,6 +22203,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Byron Donalds",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -22104,6 +22316,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sheila Cherfilus-McCormick",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -22166,37 +22380,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-21",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.14,
     "margin": -11,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 9
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 11
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 14
       }
     ],
     "candidates": {
@@ -22211,6 +22425,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Brian J. Mast",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -22273,37 +22489,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-22",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.96,
     "margin": 18,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 96
       }
     ],
     "candidates": {
@@ -22318,6 +22534,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Lois Frankel",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -22384,37 +22602,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-23",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.9,
     "margin": 13.4,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 85
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 87
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 90
       }
     ],
     "candidates": {
@@ -22429,6 +22647,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jared Moskowitz",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -22541,6 +22761,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Frederica S. Wilson",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -22601,37 +22823,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-25",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.96,
     "margin": 18.2,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 96
       }
     ],
     "candidates": {
@@ -22646,6 +22868,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Debbie Wasserman Schultz",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -22754,6 +22978,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mario Diaz-Balart",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -22821,37 +23047,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-27",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.31,
     "margin": -5.1,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 26
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 28
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 30
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 31
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 31
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 31
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 31
       }
     ],
     "candidates": {
@@ -22866,6 +23092,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Maria Elvira Salazar",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -22933,37 +23161,37 @@ export const houseData: RaceForecast[] = [
     "name": "FL-28",
     "state": "Florida",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.1,
     "margin": -13.5,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 5
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 7
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 10
       }
     ],
     "candidates": {
@@ -22978,6 +23206,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Carlos A. Gimenez",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -23009,37 +23239,37 @@ export const houseData: RaceForecast[] = [
     "name": "GA-01",
     "state": "Georgia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.18,
     "margin": -9.4,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 14
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 16
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 18
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 19
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 19
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 19
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 19
       }
     ],
     "candidates": {
@@ -23054,6 +23284,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Earl L. “Buddy” Carter",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -23120,37 +23352,37 @@ export const houseData: RaceForecast[] = [
     "name": "GA-02",
     "state": "Georgia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.96,
     "margin": 18.5,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 96
       }
     ],
     "candidates": {
@@ -23165,6 +23397,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sanford D. Bishop, Jr.",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -23278,6 +23512,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Brian Jack",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -23389,6 +23625,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Henry C. “Hank” Johnson, Jr.",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -23502,6 +23740,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Nikema Williams",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -23612,6 +23852,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Lucy McBath",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -23678,37 +23920,37 @@ export const houseData: RaceForecast[] = [
     "name": "GA-07",
     "state": "Georgia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.02,
     "margin": -20,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 2
       }
     ],
     "candidates": {
@@ -23723,6 +23965,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Richard McCormick",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -23833,6 +24077,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Austin Scott",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -23944,6 +24190,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Andrew S. Clyde",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -24009,37 +24257,37 @@ export const houseData: RaceForecast[] = [
     "name": "GA-10",
     "state": "Georgia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16.7,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -24054,6 +24302,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mike Collins",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -24119,37 +24369,37 @@ export const houseData: RaceForecast[] = [
     "name": "GA-11",
     "state": "Georgia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16.6,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -24164,6 +24414,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Barry Loudermilk",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -24232,37 +24484,37 @@ export const houseData: RaceForecast[] = [
     "name": "GA-12",
     "state": "Georgia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.17,
     "margin": -9.8,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 13
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 15
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 18
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 18
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 18
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 18
       }
     ],
     "candidates": {
@@ -24277,6 +24529,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Rick W. Allen",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -24390,6 +24644,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "David Scott",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -24501,6 +24757,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Vacancy",
+    "seatParty": "I",
     "pastResults": [
       {
         "year": 2024,
@@ -24611,6 +24869,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ed Case",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -24722,6 +24982,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jill N. Tokuda",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -24833,6 +25095,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Russ Fulcher",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -24900,37 +25164,37 @@ export const houseData: RaceForecast[] = [
     "name": "ID-02",
     "state": "Idaho",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.01,
     "margin": -22.9,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 1
       }
     ],
     "candidates": {
@@ -24945,6 +25209,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Michael K. Simpson",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -25058,6 +25324,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jonathan L. Jackson",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -25170,6 +25438,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Robin L. Kelly",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -25283,6 +25553,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Delia C. Ramirez",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -25392,6 +25664,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jesús G. “Chuy” García",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -25502,6 +25776,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mike Quigley",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -25570,37 +25846,37 @@ export const houseData: RaceForecast[] = [
     "name": "IL-06",
     "state": "Illinois",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.94,
     "margin": 16.1,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 89
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 91
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 94
       }
     ],
     "candidates": {
@@ -25615,6 +25891,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sean Casten",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -25728,6 +26006,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Danny K. Davis",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -25794,37 +26074,37 @@ export const houseData: RaceForecast[] = [
     "name": "IL-08",
     "state": "Illinois",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.95,
     "margin": 17,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 90
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 92
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 95
       }
     ],
     "candidates": {
@@ -25839,6 +26119,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Raja Krishnamoorthi",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -25951,6 +26233,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Janice D. Schakowsky",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -26064,6 +26348,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Bradley Scott Schneider",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -26131,37 +26417,37 @@ export const houseData: RaceForecast[] = [
     "name": "IL-11",
     "state": "Illinois",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 20.7,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 93
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 95
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 98
       }
     ],
     "candidates": {
@@ -26176,6 +26462,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Bill Foster",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -26289,6 +26577,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mike Bost",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -26357,37 +26647,37 @@ export const houseData: RaceForecast[] = [
     "name": "IL-13",
     "state": "Illinois",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 21.2,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 93
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 95
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 98
       }
     ],
     "candidates": {
@@ -26402,6 +26692,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Nikki Budzinski",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -26469,37 +26761,37 @@ export const houseData: RaceForecast[] = [
     "name": "IL-14",
     "state": "Illinois",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.95,
     "margin": 17.5,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 90
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 92
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 95
       }
     ],
     "candidates": {
@@ -26514,6 +26806,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Lauren Underwood",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -26627,6 +26921,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mary E. Miller",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -26735,6 +27031,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Darin LaHood",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -26798,37 +27096,37 @@ export const houseData: RaceForecast[] = [
     "name": "IL-17",
     "state": "Illinois",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.92,
     "margin": 14.6,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 87
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 89
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 91
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 92
       }
     ],
     "candidates": {
@@ -26843,6 +27141,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Eric Sorensen",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -26910,37 +27210,37 @@ export const houseData: RaceForecast[] = [
     "name": "IN-01",
     "state": "Indiana",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.81,
     "margin": 9.4,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 77
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 79
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 81
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 82
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 82
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 82
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 82
       }
     ],
     "candidates": {
@@ -26955,6 +27255,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Frank J. Mrvan",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -27067,6 +27369,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Rudy Yakym III",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -27179,6 +27483,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Marlin A. Stutzman",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -27290,6 +27596,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "James R. Baird",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -27357,37 +27665,37 @@ export const houseData: RaceForecast[] = [
     "name": "IN-05",
     "state": "Indiana",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.07,
     "margin": -15.5,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 7
       }
     ],
     "candidates": {
@@ -27402,6 +27710,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Victoria Spartz",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -27514,6 +27824,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jefferson Shreve",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -27625,6 +27937,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "André Carson",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -27738,6 +28052,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mark B. Messmer",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -27850,6 +28166,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Erin Houchin",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -27916,37 +28234,37 @@ export const houseData: RaceForecast[] = [
     "name": "IA-01",
     "state": "Iowa",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.57,
     "margin": 1.8,
     "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 52
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 54
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 56
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 57
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 57
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 57
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 57
       }
     ],
     "candidates": {
@@ -27961,6 +28279,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mariannette Miller-Meeks",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -28028,37 +28348,37 @@ export const houseData: RaceForecast[] = [
     "name": "IA-02",
     "state": "Iowa",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.4,
     "margin": -2.8,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 35
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 37
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 39
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 40
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 40
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 40
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 40
       }
     ],
     "candidates": {
@@ -28073,6 +28393,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ashley Hinson",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -28139,37 +28461,37 @@ export const houseData: RaceForecast[] = [
     "name": "IA-03",
     "state": "Iowa",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.6,
     "margin": 2.6,
     "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 55
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 57
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 59
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 60
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 60
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 60
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 60
       }
     ],
     "candidates": {
@@ -28184,6 +28506,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Zachary Nunn",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -28297,6 +28621,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Randy Feenstra",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -28409,6 +28735,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Tracey Mann",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -28475,37 +28803,37 @@ export const houseData: RaceForecast[] = [
     "name": "KS-02",
     "state": "Kansas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.08,
     "margin": -14.6,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 3
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 5
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 8
       }
     ],
     "candidates": {
@@ -28520,6 +28848,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Derek Schmidt",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -28585,37 +28915,37 @@ export const houseData: RaceForecast[] = [
     "name": "KS-03",
     "state": "Kansas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.92,
     "margin": 14.4,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 87
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 89
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 91
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 92
       }
     ],
     "candidates": {
@@ -28630,6 +28960,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sharice Davids",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -28698,37 +29030,37 @@ export const houseData: RaceForecast[] = [
     "name": "KS-04",
     "state": "Kansas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.02,
     "margin": -22.1,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 2
       }
     ],
     "candidates": {
@@ -28743,6 +29075,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Ron Estes",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -28856,6 +29190,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "James Comer",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -28968,6 +29304,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Brett Guthrie",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -29079,6 +29417,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Morgan McGarvey",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -29191,6 +29531,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Thomas Massie",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -29302,6 +29644,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Harold Rogers",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -29366,37 +29710,37 @@ export const houseData: RaceForecast[] = [
     "name": "KY-06",
     "state": "Kentucky",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.2,
     "margin": -8.8,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 15
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 17
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 19
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 20
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 20
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 20
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 20
       }
     ],
     "candidates": {
@@ -29411,6 +29755,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Andy Barr",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -29519,6 +29865,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Steve Scalise",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -29632,6 +29980,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Troy A. Carter",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -29743,6 +30093,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Clay Higgins",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -29855,6 +30207,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mike Johnson",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -29961,6 +30315,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Julia Letlow",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -30026,37 +30382,37 @@ export const houseData: RaceForecast[] = [
     "name": "LA-06",
     "state": "Louisiana",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.96,
     "margin": 18.5,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 96
       }
     ],
     "candidates": {
@@ -30071,6 +30427,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Cleo Fields",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -30183,6 +30541,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Chellie Pingree",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -30251,37 +30611,37 @@ export const houseData: RaceForecast[] = [
     "name": "ME-02",
     "state": "Maine",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.29,
     "margin": -5.9,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 24
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 26
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 28
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 29
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 29
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 29
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 29
       }
     ],
     "candidates": {
@@ -30296,6 +30656,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jared F. Golden",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -30364,37 +30726,37 @@ export const houseData: RaceForecast[] = [
     "name": "MD-01",
     "state": "Maryland",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.08,
     "margin": -15,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 3
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 5
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 8
       }
     ],
     "candidates": {
@@ -30409,6 +30771,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Andy Harris",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -30477,21 +30841,21 @@ export const houseData: RaceForecast[] = [
     "name": "MD-02",
     "state": "Maryland",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 25.5,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -30507,7 +30871,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -30522,6 +30886,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Johnny Olszewski, Jr.",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -30634,6 +31000,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sarah Elfreth",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -30746,6 +31114,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Glenn Ivey",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -30857,6 +31227,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Steny H. Hoyer",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -30925,37 +31297,37 @@ export const houseData: RaceForecast[] = [
     "name": "MD-06",
     "state": "Maryland",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.88,
     "margin": 12.2,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 83
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 85
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 87
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 88
       }
     ],
     "candidates": {
@@ -30970,6 +31342,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "April McClain Delaney",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -31081,6 +31455,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Kweisi Mfume",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -31194,6 +31570,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jamie Raskin",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -31306,6 +31684,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Richard E. Neal",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -31415,6 +31795,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "James P. McGovern",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -31526,6 +31908,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Lori Trahan",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -31634,6 +32018,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jake Auchincloss",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -31740,6 +32126,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Katherine M. Clark",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -31849,6 +32237,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Seth Moulton",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -31958,6 +32348,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ayanna Pressley",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -32064,6 +32456,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Stephen F. Lynch",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -32130,37 +32524,37 @@ export const houseData: RaceForecast[] = [
     "name": "MA-09",
     "state": "Massachusetts",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.97,
     "margin": 20.2,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 92
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 94
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 97
       }
     ],
     "candidates": {
@@ -32175,6 +32569,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "William R. Keating",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -32243,37 +32639,37 @@ export const houseData: RaceForecast[] = [
     "name": "MI-01",
     "state": "Michigan",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.07,
     "margin": -15.8,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 7
       }
     ],
     "candidates": {
@@ -32288,6 +32684,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jack Bergman",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -32400,6 +32798,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "John R. Moolenaar",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -32467,37 +32867,37 @@ export const houseData: RaceForecast[] = [
     "name": "MI-03",
     "state": "Michigan",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.95,
     "margin": 17.5,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 90
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 92
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 95
       }
     ],
     "candidates": {
@@ -32512,6 +32912,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Hillary J. Scholten",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -32578,37 +32980,37 @@ export const houseData: RaceForecast[] = [
     "name": "MI-04",
     "state": "Michigan",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.41,
     "margin": -2.5,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 36
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 38
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 40
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 41
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 41
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 41
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 41
       }
     ],
     "candidates": {
@@ -32623,6 +33025,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Bill Huizenga",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -32735,6 +33139,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Tim Walberg",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -32847,6 +33253,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Debbie Dingell",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -32914,37 +33322,37 @@ export const houseData: RaceForecast[] = [
     "name": "MI-07",
     "state": "Michigan",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.63,
     "margin": 3.3,
     "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 58
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 60
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 62
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 63
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 63
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 63
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 63
       }
     ],
     "candidates": {
@@ -32959,6 +33367,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Tom Barrett",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -33025,37 +33435,37 @@ export const houseData: RaceForecast[] = [
     "name": "MI-08",
     "state": "Michigan",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.84,
     "margin": 10.3,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 79
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 81
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 83
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 84
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 84
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 84
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 84
       }
     ],
     "candidates": {
@@ -33070,6 +33480,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Kristen McDonald Rivet",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -33181,6 +33593,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Lisa C. McClain",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -33247,37 +33661,37 @@ export const houseData: RaceForecast[] = [
     "name": "MI-10",
     "state": "Michigan",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.55,
     "margin": 1.3,
     "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 50
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 52
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 54
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 55
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 55
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 55
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 55
       }
     ],
     "candidates": {
@@ -33292,6 +33706,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "John James",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -33357,21 +33773,21 @@ export const houseData: RaceForecast[] = [
     "name": "MI-11",
     "state": "Michigan",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 25.1,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -33387,7 +33803,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -33402,6 +33818,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Haley M. Stevens",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -33514,6 +33932,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Rashida Tlaib",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -33626,6 +34046,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Shri Thanedar",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -33692,37 +34114,37 @@ export const houseData: RaceForecast[] = [
     "name": "MN-01",
     "state": "Minnesota",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.2,
     "margin": -8.9,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 15
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 17
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 19
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 20
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 20
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 20
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 20
       }
     ],
     "candidates": {
@@ -33737,6 +34159,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Brad Finstad",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -33804,37 +34228,37 @@ export const houseData: RaceForecast[] = [
     "name": "MN-02",
     "state": "Minnesota",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.9,
     "margin": 13.2,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 85
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 87
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 90
       }
     ],
     "candidates": {
@@ -33849,6 +34273,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Angie Craig",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -33961,6 +34387,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Kelly Morrison",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -34073,6 +34501,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Betty McCollum",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -34186,6 +34616,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ilhan Omar",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -34253,37 +34685,37 @@ export const houseData: RaceForecast[] = [
     "name": "MN-06",
     "state": "Minnesota",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.01,
     "margin": -23,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 1
       }
     ],
     "candidates": {
@@ -34298,6 +34730,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Tom Emmer",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -34411,6 +34845,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Michelle Fischbach",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -34479,37 +34915,37 @@ export const houseData: RaceForecast[] = [
     "name": "MN-08",
     "state": "Minnesota",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -15.9,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -34524,6 +34960,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Pete Stauber",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -34636,6 +35074,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Trent Kelly",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -34749,6 +35189,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Bennie G. Thompson",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -34862,6 +35304,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Michael Guest",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -34972,6 +35416,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mike Ezell",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -35082,6 +35528,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Wesley Bell",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -35148,37 +35596,37 @@ export const houseData: RaceForecast[] = [
     "name": "MO-02",
     "state": "Missouri",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.26,
     "margin": -6.8,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 21
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 23
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 25
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 26
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 26
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 26
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 26
       }
     ],
     "candidates": {
@@ -35193,6 +35641,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ann Wagner",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -35306,6 +35756,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Robert F. Onder, Jr.",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -35418,6 +35870,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mark Alford",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -35530,6 +35984,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Emanuel Cleaver",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -35643,6 +36099,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sam Graves",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -35756,6 +36214,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Eric Burlison",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -35868,6 +36328,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jason Smith",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -35936,37 +36398,37 @@ export const houseData: RaceForecast[] = [
     "name": "MT-01",
     "state": "Montana",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.37,
     "margin": -3.5,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 32
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 34
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 36
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 37
       }
     ],
     "candidates": {
@@ -35981,6 +36443,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ryan K. Zinke",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -36092,6 +36556,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Troy Downing",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -36122,37 +36588,37 @@ export const houseData: RaceForecast[] = [
     "name": "NE-01",
     "state": "Nebraska",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.1,
     "margin": -13.7,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 5
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 7
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 10
       }
     ],
     "candidates": {
@@ -36167,6 +36633,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mike Flood",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -36235,37 +36703,37 @@ export const houseData: RaceForecast[] = [
     "name": "NE-02",
     "state": "Nebraska",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.77,
     "margin": 7.8,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 72
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 74
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 76
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 77
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 77
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 77
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 77
       }
     ],
     "candidates": {
@@ -36280,6 +36748,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Don Bacon",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -36393,6 +36863,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Adrian Smith",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -36459,37 +36931,37 @@ export const houseData: RaceForecast[] = [
     "name": "NV-01",
     "state": "Nevada",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.85,
     "margin": 10.8,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 80
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 82
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 84
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 85
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 85
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 85
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 85
       }
     ],
     "candidates": {
@@ -36504,6 +36976,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Dina Titus",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -36572,37 +37046,37 @@ export const houseData: RaceForecast[] = [
     "name": "NV-02",
     "state": "Nevada",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.04,
     "margin": -18,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 4
       }
     ],
     "candidates": {
@@ -36617,6 +37091,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mark E. Amodei",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -36685,37 +37161,37 @@ export const houseData: RaceForecast[] = [
     "name": "NV-03",
     "state": "Nevada",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.75,
     "margin": 7.1,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 70
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 72
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 74
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 75
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 75
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 75
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 75
       }
     ],
     "candidates": {
@@ -36730,6 +37206,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Susie Lee",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -36796,37 +37274,37 @@ export const houseData: RaceForecast[] = [
     "name": "NV-04",
     "state": "Nevada",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.86,
     "margin": 11.5,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 81
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 83
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 85
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 86
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 86
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 86
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 86
       }
     ],
     "candidates": {
@@ -36841,6 +37319,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Steven Horsford",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -36908,37 +37388,37 @@ export const houseData: RaceForecast[] = [
     "name": "NH-01",
     "state": "New Hampshire",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.87,
     "margin": 11.8,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 82
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 84
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 86
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 87
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 87
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 87
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 87
       }
     ],
     "candidates": {
@@ -36953,6 +37433,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Chris Pappas",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -37020,37 +37502,37 @@ export const houseData: RaceForecast[] = [
     "name": "NH-02",
     "state": "New Hampshire",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.9,
     "margin": 13.2,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 85
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 87
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 90
       }
     ],
     "candidates": {
@@ -37065,6 +37547,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Maggie Goodlander",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -37177,6 +37661,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Donald Norcross",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -37245,37 +37731,37 @@ export const houseData: RaceForecast[] = [
     "name": "NJ-02",
     "state": "New Jersey",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.34,
     "margin": -4.3,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 29
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 31
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 33
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 34
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 34
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 34
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 34
       }
     ],
     "candidates": {
@@ -37290,6 +37776,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jefferson Van Drew",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -37357,37 +37845,37 @@ export const houseData: RaceForecast[] = [
     "name": "NJ-03",
     "state": "New Jersey",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.97,
     "margin": 20.1,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 92
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 94
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 97
       }
     ],
     "candidates": {
@@ -37402,6 +37890,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Herbert C. Conaway, Jr.",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -37469,37 +37959,37 @@ export const houseData: RaceForecast[] = [
     "name": "NJ-04",
     "state": "New Jersey",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.01,
     "margin": -23.4,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 1
       }
     ],
     "candidates": {
@@ -37514,6 +38004,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Christopher H. Smith",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -37582,37 +38074,37 @@ export const houseData: RaceForecast[] = [
     "name": "NJ-05",
     "state": "New Jersey",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.96,
     "margin": 17.8,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 96
       }
     ],
     "candidates": {
@@ -37627,6 +38119,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Josh Gottheimer",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -37695,21 +38189,21 @@ export const houseData: RaceForecast[] = [
     "name": "NJ-06",
     "state": "New Jersey",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 24.2,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -37725,7 +38219,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -37740,6 +38234,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Frank Pallone, Jr.",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -37808,37 +38304,37 @@ export const houseData: RaceForecast[] = [
     "name": "NJ-07",
     "state": "New Jersey",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.76,
     "margin": 7.4,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 71
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 73
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 75
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 76
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 76
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 76
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 76
       }
     ],
     "candidates": {
@@ -37853,6 +38349,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Thomas H. Kean, Jr.",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -37966,6 +38464,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Robert Menendez",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -38033,37 +38533,37 @@ export const houseData: RaceForecast[] = [
     "name": "NJ-09",
     "state": "New Jersey",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.93,
     "margin": 15.5,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 88
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 90
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 93
       }
     ],
     "candidates": {
@@ -38078,6 +38578,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Nellie Pou",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -38190,6 +38692,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "LaMonica McIver",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -38258,37 +38762,37 @@ export const houseData: RaceForecast[] = [
     "name": "NJ-11",
     "state": "New Jersey",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.97,
     "margin": 20.4,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 92
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 94
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 97
       }
     ],
     "candidates": {
@@ -38303,6 +38807,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Vacancy",
+    "seatParty": "I",
     "pastResults": [
       {
         "year": 2024,
@@ -38415,6 +38921,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Bonnie Watson Coleman",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -38483,21 +38991,21 @@ export const houseData: RaceForecast[] = [
     "name": "NM-01",
     "state": "New Mexico",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 22.6,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -38513,7 +39021,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -38528,6 +39036,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Melanie A. Stansbury",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -38595,37 +39105,37 @@ export const houseData: RaceForecast[] = [
     "name": "NM-02",
     "state": "New Mexico",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.85,
     "margin": 11.1,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 81
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 83
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 85
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 86
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 86
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 86
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 86
       }
     ],
     "candidates": {
@@ -38640,6 +39150,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Gabe Vasquez",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -38707,37 +39219,37 @@ export const houseData: RaceForecast[] = [
     "name": "NM-03",
     "state": "New Mexico",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.95,
     "margin": 17.4,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 90
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 92
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 95
       }
     ],
     "candidates": {
@@ -38752,6 +39264,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Teresa Leger Fernandez",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -38819,37 +39333,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-01",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.31,
     "margin": -5.2,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 26
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 28
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 30
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 31
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 31
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 31
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 31
       }
     ],
     "candidates": {
@@ -38864,6 +39378,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Nick LaLota",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -38931,37 +39447,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-02",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.17,
     "margin": -9.9,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 12
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 14
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 16
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 17
       }
     ],
     "candidates": {
@@ -38976,6 +39492,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Andrew R. Garbarino",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -39043,37 +39561,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-03",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.77,
     "margin": 7.8,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 72
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 74
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 76
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 77
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 77
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 77
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 77
       }
     ],
     "candidates": {
@@ -39088,6 +39606,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Thomas R. Suozzi",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -39154,37 +39674,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-04",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.89,
     "margin": 12.7,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 84
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 86
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 89
       }
     ],
     "candidates": {
@@ -39199,6 +39719,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Laura Gillen",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -39311,6 +39833,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Gregory W. Meeks",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -39375,21 +39899,21 @@ export const houseData: RaceForecast[] = [
     "name": "NY-06",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 25.6,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -39405,7 +39929,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -39420,6 +39944,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Grace Meng",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -39533,6 +40059,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Nydia M. Velázquez",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -39646,6 +40174,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Hakeem S. Jeffries",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -39759,6 +40289,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Yvette D. Clarke",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -39872,6 +40404,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Daniel S. Goldman",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -39939,37 +40473,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-11",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.03,
     "margin": -19.6,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 3
       }
     ],
     "candidates": {
@@ -39984,6 +40518,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Nicole Malliotakis",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -40097,6 +40633,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jerrold Nadler",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -40209,6 +40747,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Adriano Espaillat",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -40319,6 +40859,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Alexandria Ocasio-Cortez",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -40431,6 +40973,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Ritchie Torres",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -40543,6 +41087,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "George Latimer",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -40607,37 +41153,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-17",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.69,
     "margin": 5.3,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 65
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 67
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 69
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 70
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 70
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 70
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 70
       }
     ],
     "candidates": {
@@ -40652,6 +41198,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Michael Lawler",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -40716,37 +41264,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-18",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.93,
     "margin": 15.6,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 88
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 90
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 93
       }
     ],
     "candidates": {
@@ -40761,6 +41309,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Patrick Ryan",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -40827,37 +41377,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-19",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.79,
     "margin": 8.3,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 74
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 76
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 78
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 79
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 79
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 79
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 79
       }
     ],
     "candidates": {
@@ -40872,6 +41422,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Josh Riley",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -40938,21 +41490,21 @@ export const houseData: RaceForecast[] = [
     "name": "NY-20",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 23.7,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -40968,7 +41520,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -40983,6 +41535,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Paul Tonko",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -41051,37 +41605,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-21",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.07,
     "margin": -15.2,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 7
       }
     ],
     "candidates": {
@@ -41096,6 +41650,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Elise M. Stefanik",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -41164,37 +41720,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-22",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.93,
     "margin": 15.5,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 88
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 90
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 92
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 93
       }
     ],
     "candidates": {
@@ -41209,6 +41765,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "John W. Mannion",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -41275,37 +41833,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-23",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.02,
     "margin": -22.1,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 2
       }
     ],
     "candidates": {
@@ -41320,6 +41878,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Nicholas A. Langworthy",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -41387,37 +41947,37 @@ export const houseData: RaceForecast[] = [
     "name": "NY-24",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.01,
     "margin": -23.2,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 1
       }
     ],
     "candidates": {
@@ -41432,6 +41992,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Claudia Tenney",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -41499,7 +42061,7 @@ export const houseData: RaceForecast[] = [
     "name": "NY-25",
     "state": "New York",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 26.6,
     "rating": "Safe D",
     "history": [
@@ -41544,6 +42106,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Joseph D. Morelle",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -41656,6 +42220,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Timothy M. Kennedy",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -41724,37 +42290,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-01",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.45,
     "margin": -1.4,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 40
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 42
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 44
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 45
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 45
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 45
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 45
       }
     ],
     "candidates": {
@@ -41769,6 +42335,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Donald G. Davis",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -41881,6 +42449,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Deborah K. Ross",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -41947,37 +42517,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-03",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.08,
     "margin": -14.5,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 3
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 5
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 8
       }
     ],
     "candidates": {
@@ -41992,6 +42562,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Gregory F. Murphy",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -42103,6 +42675,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Valerie P. Foushee",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -42170,37 +42744,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-05",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.1,
     "margin": -13.1,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 6
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 8
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 11
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 11
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 11
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 11
       }
     ],
     "candidates": {
@@ -42215,6 +42789,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Virginia Foxx",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -42283,37 +42859,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-06",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.03,
     "margin": -19,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 3
       }
     ],
     "candidates": {
@@ -42328,6 +42904,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Addison P. McDowell",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -42394,37 +42972,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-07",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.19,
     "margin": -9.2,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 14
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 16
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 18
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 19
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 19
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 19
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 19
       }
     ],
     "candidates": {
@@ -42439,6 +43017,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "David Rouzer",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -42507,37 +43087,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-08",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.09,
     "margin": -14,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 4
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 6
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 9
       }
     ],
     "candidates": {
@@ -42552,6 +43132,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mark Harris",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -42618,37 +43200,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-09",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.17,
     "margin": -10,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 12
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 14
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 16
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 17
       }
     ],
     "candidates": {
@@ -42663,6 +43245,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Richard Hudson",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -42729,37 +43313,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-10",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.1,
     "margin": -13.2,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 5
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 7
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 10
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 10
       }
     ],
     "candidates": {
@@ -42774,6 +43358,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Pat Harrigan",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -42841,37 +43427,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-11",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.33,
     "margin": -4.7,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 28
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 30
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 32
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 33
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 33
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 33
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 33
       }
     ],
     "candidates": {
@@ -42886,6 +43472,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Chuck Edwards",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -42997,6 +43585,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Alma S. Adams",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -43063,37 +43653,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-13",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.14,
     "margin": -11.1,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 9
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 11
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 14
       }
     ],
     "candidates": {
@@ -43108,6 +43698,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Brad Knott",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -43173,37 +43765,37 @@ export const houseData: RaceForecast[] = [
     "name": "NC-14",
     "state": "North Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.13,
     "margin": -11.6,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 8
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 10
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 12
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 13
       }
     ],
     "candidates": {
@@ -43218,6 +43810,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Tim Moore",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -43293,6 +43887,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Julie Fedorchak",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -43359,37 +43955,37 @@ export const houseData: RaceForecast[] = [
     "name": "OH-01",
     "state": "Ohio",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.73,
     "margin": 6.3,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 68
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 70
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 72
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 73
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 73
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 73
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 73
       }
     ],
     "candidates": {
@@ -43404,6 +44000,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Greg Landsman",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -43517,6 +44115,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "David J. Taylor",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -43629,6 +44229,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Joyce Beatty",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -43742,6 +44344,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Jim Jordan",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -43810,37 +44414,37 @@ export const houseData: RaceForecast[] = [
     "name": "OH-05",
     "state": "Ohio",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.02,
     "margin": -21,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 2
       }
     ],
     "candidates": {
@@ -43855,6 +44459,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Robert E. Latta",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -43968,6 +44574,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Michael A. Rulli",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -44036,37 +44644,37 @@ export const houseData: RaceForecast[] = [
     "name": "OH-07",
     "state": "Ohio",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.25,
     "margin": -7,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 20
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 22
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 24
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 25
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 25
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 25
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 25
       }
     ],
     "candidates": {
@@ -44081,6 +44689,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Max L. Miller",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -44148,37 +44758,37 @@ export const houseData: RaceForecast[] = [
     "name": "OH-08",
     "state": "Ohio",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.14,
     "margin": -11.4,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 9
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 11
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 14
       }
     ],
     "candidates": {
@@ -44193,6 +44803,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Warren Davidson",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -44261,37 +44873,37 @@ export const houseData: RaceForecast[] = [
     "name": "OH-09",
     "state": "Ohio",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.53,
     "margin": 0.7,
     "rating": "Tilt D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 48
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 50
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 52
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 53
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 53
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 53
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 53
       }
     ],
     "candidates": {
@@ -44306,6 +44918,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Marcy Kaptur",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -44374,37 +44988,37 @@ export const houseData: RaceForecast[] = [
     "name": "OH-10",
     "state": "Ohio",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.27,
     "margin": -6.5,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 22
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 24
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 26
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 27
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 27
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 27
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 27
       }
     ],
     "candidates": {
@@ -44419,6 +45033,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Michael R. Turner",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -44532,6 +45148,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Shontel M. Brown",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -44645,6 +45263,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Troy Balderson",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -44713,37 +45333,37 @@ export const houseData: RaceForecast[] = [
     "name": "OH-13",
     "state": "Ohio",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.88,
     "margin": 12.1,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 83
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 85
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 87
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 88
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 88
       }
     ],
     "candidates": {
@@ -44758,6 +45378,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Emilia Strong Sykes",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -44825,37 +45447,37 @@ export const houseData: RaceForecast[] = [
     "name": "OH-14",
     "state": "Ohio",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.04,
     "margin": -17.8,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 4
       }
     ],
     "candidates": {
@@ -44870,6 +45492,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "David P. Joyce",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -44938,37 +45562,37 @@ export const houseData: RaceForecast[] = [
     "name": "OH-15",
     "state": "Ohio",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.31,
     "margin": -5.2,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 26
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 28
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 30
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 31
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 31
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 31
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 31
       }
     ],
     "candidates": {
@@ -44983,6 +45607,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mike Carey",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -45051,37 +45677,37 @@ export const houseData: RaceForecast[] = [
     "name": "OK-01",
     "state": "Oklahoma",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.03,
     "margin": -20.2,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 3
       }
     ],
     "candidates": {
@@ -45096,6 +45722,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Kevin Hern",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -45204,6 +45832,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Josh Brecheen",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -45316,6 +45946,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Frank D. Lucas",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -45425,6 +46057,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Tom Cole",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -45493,37 +46127,37 @@ export const houseData: RaceForecast[] = [
     "name": "OK-05",
     "state": "Oklahoma",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.07,
     "margin": -15.1,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 7
       }
     ],
     "candidates": {
@@ -45538,6 +46172,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Stephanie I. Bice",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -45651,6 +46287,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Suzanne Bonamici",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -45719,37 +46357,37 @@ export const houseData: RaceForecast[] = [
     "name": "OR-02",
     "state": "Oregon",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.01,
     "margin": -22.6,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 2
       }
     ],
     "candidates": {
@@ -45764,6 +46402,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Cliff Bentz",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -45876,6 +46516,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Maxine Dexter",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -45943,37 +46585,37 @@ export const houseData: RaceForecast[] = [
     "name": "OR-04",
     "state": "Oregon",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.97,
     "margin": 19.6,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 92
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 94
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 97
       }
     ],
     "candidates": {
@@ -45988,6 +46630,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Val T. Hoyle",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -46055,37 +46699,37 @@ export const houseData: RaceForecast[] = [
     "name": "OR-05",
     "state": "Oregon",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.94,
     "margin": 16.3,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 89
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 91
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 93
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 94
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 94
       }
     ],
     "candidates": {
@@ -46100,6 +46744,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Janelle S. Bynum",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -46167,37 +46813,37 @@ export const houseData: RaceForecast[] = [
     "name": "OR-06",
     "state": "Oregon",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.97,
     "margin": 20.1,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 92
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 94
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 97
       }
     ],
     "candidates": {
@@ -46212,6 +46858,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Andrea Salinas",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -46243,37 +46891,37 @@ export const houseData: RaceForecast[] = [
     "name": "PA-01",
     "state": "Pennsylvania",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.52,
     "margin": 0.5,
     "rating": "Tilt D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 47
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 49
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 51
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 52
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 52
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 52
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 52
       }
     ],
     "candidates": {
@@ -46288,6 +46936,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Brian K. Fitzpatrick",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -46400,6 +47050,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Brendan F. Boyle",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -46511,6 +47163,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Dwight Evans",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -46574,21 +47228,21 @@ export const houseData: RaceForecast[] = [
     "name": "PA-04",
     "state": "Pennsylvania",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 23.8,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -46604,7 +47258,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -46619,6 +47273,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Madeleine Dean",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -46730,6 +47386,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mary Gay Scanlon",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -46797,37 +47455,37 @@ export const houseData: RaceForecast[] = [
     "name": "PA-06",
     "state": "Pennsylvania",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.96,
     "margin": 17.9,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 91
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 93
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 95
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 96
       }
     ],
     "candidates": {
@@ -46842,6 +47500,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Chrissy Houlahan",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -46909,37 +47569,37 @@ export const houseData: RaceForecast[] = [
     "name": "PA-07",
     "state": "Pennsylvania",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.59,
     "margin": 2.5,
     "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 55
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 57
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 59
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 60
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 60
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 60
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 60
       }
     ],
     "candidates": {
@@ -46954,6 +47614,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Ryan Mackenzie",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -47021,37 +47683,37 @@ export const houseData: RaceForecast[] = [
     "name": "PA-08",
     "state": "Pennsylvania",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.47,
     "margin": -0.8,
     "rating": "Tilt R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 42
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 44
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 46
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 47
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 47
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 47
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 47
       }
     ],
     "candidates": {
@@ -47066,6 +47728,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Robert P. Bresnahan, Jr.",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -47177,6 +47841,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Daniel Meuser",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -47244,37 +47910,37 @@ export const houseData: RaceForecast[] = [
     "name": "PA-10",
     "state": "Pennsylvania",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.52,
     "margin": 0.4,
     "rating": "Tilt D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 47
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 49
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 51
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 52
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 52
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 52
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 52
       }
     ],
     "candidates": {
@@ -47289,6 +47955,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Scott Perry",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -47356,37 +48024,37 @@ export const houseData: RaceForecast[] = [
     "name": "PA-11",
     "state": "Pennsylvania",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.03,
     "margin": -20.3,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 3
       }
     ],
     "candidates": {
@@ -47401,6 +48069,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Lloyd Smucker",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -47468,21 +48138,21 @@ export const houseData: RaceForecast[] = [
     "name": "PA-12",
     "state": "Pennsylvania",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 23.7,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -47498,7 +48168,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -47513,6 +48183,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Summer L. Lee",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -47624,6 +48296,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "John Joyce",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -47732,6 +48406,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Guy Reschenthaler",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -47842,6 +48518,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Glenn Thompson",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -47909,37 +48587,37 @@ export const houseData: RaceForecast[] = [
     "name": "PA-16",
     "state": "Pennsylvania",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.02,
     "margin": -21,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 2
       }
     ],
     "candidates": {
@@ -47954,6 +48632,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Mike Kelly",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -48019,37 +48699,37 @@ export const houseData: RaceForecast[] = [
     "name": "PA-17",
     "state": "Pennsylvania",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.91,
     "margin": 13.7,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 86
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 88
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 91
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 91
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 91
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 91
       }
     ],
     "candidates": {
@@ -48064,6 +48744,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Christopher R. Deluzio",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -48175,6 +48857,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Gabe Amo",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -48243,37 +48927,37 @@ export const houseData: RaceForecast[] = [
     "name": "RI-02",
     "state": "Rhode Island",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.98,
     "margin": 21.7,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 93
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 95
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 98
       }
     ],
     "candidates": {
@@ -48288,6 +48972,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Seth Magaziner",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -48355,37 +49041,37 @@ export const houseData: RaceForecast[] = [
     "name": "SC-01",
     "state": "South Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.27,
     "margin": -6.6,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 22
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 24
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 26
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 27
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 27
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 27
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 27
       }
     ],
     "candidates": {
@@ -48400,6 +49086,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Nancy Mace",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -48467,37 +49155,37 @@ export const houseData: RaceForecast[] = [
     "name": "SC-02",
     "state": "South Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.17,
     "margin": -10.1,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 12
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 14
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 16
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 17
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 17
       }
     ],
     "candidates": {
@@ -48512,6 +49200,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Joe Wilson",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -48625,6 +49315,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Sheri Biggs",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -48690,37 +49382,37 @@ export const houseData: RaceForecast[] = [
     "name": "SC-04",
     "state": "South Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.04,
     "margin": -18.1,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 4
       }
     ],
     "candidates": {
@@ -48735,6 +49427,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "William R. Timmons IV",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -48800,37 +49494,37 @@ export const houseData: RaceForecast[] = [
     "name": "SC-05",
     "state": "South Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16.7,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -48845,6 +49539,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Ralph Norman",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -48958,6 +49654,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "James E. Clyburn",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -49026,37 +49724,37 @@ export const houseData: RaceForecast[] = [
     "name": "SC-07",
     "state": "South Carolina",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.03,
     "margin": -20.1,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 3
       }
     ],
     "candidates": {
@@ -49071,6 +49769,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Russell Fry",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -49183,6 +49883,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Dusty Johnson",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -49295,6 +49997,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Diana Harshbarger",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -49407,6 +50111,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Tim Burchett",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -49519,6 +50225,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Charles J. “Chuck” Fleischmann",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -49632,6 +50340,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Scott DesJarlais",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -49700,37 +50410,37 @@ export const houseData: RaceForecast[] = [
     "name": "TN-05",
     "state": "Tennessee",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.14,
     "margin": -11.2,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 9
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 11
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 14
       }
     ],
     "candidates": {
@@ -49745,6 +50455,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Andrew Ogles",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -49855,6 +50567,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "John W. Rose",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -49922,37 +50636,37 @@ export const houseData: RaceForecast[] = [
     "name": "TN-07",
     "state": "Tennessee",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16.6,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -49967,6 +50681,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Matt Van Epps",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -50079,6 +50795,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "David Kustoff",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -50191,6 +50909,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Steve Cohen",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -50304,6 +51024,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Nathaniel Moran",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -50369,37 +51091,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-02",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.04,
     "margin": -18.5,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 4
       }
     ],
     "candidates": {
@@ -50414,6 +51136,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Dan Crenshaw",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -50481,37 +51205,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-03",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.05,
     "margin": -17,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 2
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 5
       }
     ],
     "candidates": {
@@ -50526,6 +51250,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Keith Self",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -50592,37 +51318,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-04",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.02,
     "margin": -21,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 2
       }
     ],
     "candidates": {
@@ -50637,6 +51363,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Pat Fallon",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -50704,37 +51432,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-05",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16.1,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -50749,6 +51477,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Lance Gooden",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -50816,37 +51546,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-06",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.03,
     "margin": -20,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 3
       }
     ],
     "candidates": {
@@ -50861,6 +51591,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Jake Ellzey",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -50971,6 +51703,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Lizzie Fletcher",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -51039,37 +51773,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-08",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.02,
     "margin": -21.4,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 2
       }
     ],
     "candidates": {
@@ -51084,6 +51818,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Morgan Luttrell",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -51149,37 +51885,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-09",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.12,
     "margin": -12.1,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 7
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 9
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 11
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 12
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 12
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 12
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 12
       }
     ],
     "candidates": {
@@ -51194,6 +51930,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Al Green",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -51260,37 +51998,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-10",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.07,
     "margin": -15.6,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 7
       }
     ],
     "candidates": {
@@ -51305,6 +52043,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Michael T. McCaul",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -51418,6 +52158,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "August Pfluger",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -51481,37 +52223,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-12",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.03,
     "margin": -20,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 3
       }
     ],
     "candidates": {
@@ -51526,6 +52268,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Craig A. Goldman",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -51638,6 +52382,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Ronny Jackson",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -51703,37 +52449,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-14",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.03,
     "margin": -20.4,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 3
       }
     ],
     "candidates": {
@@ -51748,6 +52494,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Randy K. Weber, Sr.",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -51816,37 +52564,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-15",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.29,
     "margin": -5.6,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 25
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 27
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 29
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 30
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 30
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 30
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 30
       }
     ],
     "candidates": {
@@ -51861,6 +52609,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Monica De La Cruz",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -51972,6 +52722,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Veronica Escobar",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -52039,37 +52791,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-17",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.04,
     "margin": -17.8,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 4
       }
     ],
     "candidates": {
@@ -52084,6 +52836,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Pete Sessions",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -52196,6 +52950,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Christian D. Menefee",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -52308,6 +53064,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Jodey C. Arrington",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -52420,6 +53178,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Joaquin Castro",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -52486,37 +53246,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-21",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16.7,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -52531,6 +53291,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Chip Roy",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -52598,37 +53360,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-22",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -52643,6 +53405,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Troy E. Nehls",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -52710,37 +53474,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-23",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.23,
     "margin": -7.8,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 18
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 20
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 22
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 23
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 23
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 23
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 23
       }
     ],
     "candidates": {
@@ -52755,6 +53519,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Tony Gonzales",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -52820,37 +53586,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-24",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.09,
     "margin": -13.9,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 4
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 6
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 9
       }
     ],
     "candidates": {
@@ -52865,6 +53631,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Beth Van Duyne",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -52977,6 +53745,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Roger Williams",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -53041,37 +53811,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-26",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.02,
     "margin": -20.8,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 2
       }
     ],
     "candidates": {
@@ -53086,6 +53856,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Brandon Gill",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -53153,37 +53925,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-27",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16.5,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -53198,6 +53970,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Michael Cloud",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -53266,37 +54040,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-28",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.8,
     "margin": 8.8,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 75
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 77
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 79
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 80
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 80
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 80
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 80
       }
     ],
     "candidates": {
@@ -53311,6 +54085,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Henry Cuellar",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -53424,6 +54200,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Sylvia R. Garcia",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -53536,6 +54314,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jasmine Crockett",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -53603,37 +54383,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-31",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.04,
     "margin": -18.5,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 4
       }
     ],
     "candidates": {
@@ -53648,6 +54428,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "John R. Carter",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -53714,37 +54496,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-32",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.15,
     "margin": -11,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 10
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 12
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 15
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 15
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 15
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 15
       }
     ],
     "candidates": {
@@ -53759,6 +54541,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Julie Johnson",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -53871,6 +54655,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Marc A. Veasey",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -53939,37 +54725,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-34",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.63,
     "margin": 3.4,
     "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 58
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 60
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 62
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 63
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 63
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 63
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 63
       }
     ],
     "candidates": {
@@ -53984,6 +54770,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Vicente Gonzalez",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -54051,37 +54839,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-35",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.43,
     "margin": -1.7,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 38
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 40
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 42
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 43
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 43
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 43
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 43
       }
     ],
     "candidates": {
@@ -54096,6 +54884,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Greg Casar",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -54163,37 +54953,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-36",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.03,
     "margin": -19.8,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 3
       }
     ],
     "candidates": {
@@ -54208,6 +54998,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Brian Babin",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -54321,6 +55113,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Lloyd Doggett",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -54352,37 +55146,37 @@ export const houseData: RaceForecast[] = [
     "name": "TX-38",
     "state": "Texas",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16.1,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -54397,6 +55191,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Wesley Hunt",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -54428,21 +55224,21 @@ export const houseData: RaceForecast[] = [
     "name": "UT-01",
     "state": "Utah",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 25,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -54458,7 +55254,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -54473,6 +55269,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Blake D. Moore",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -54585,6 +55383,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Celeste Maloy",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -54698,6 +55498,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mike Kennedy",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -54810,6 +55612,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Burgess Owens",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -54921,6 +55725,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Becca Balint",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -54988,37 +55794,37 @@ export const houseData: RaceForecast[] = [
     "name": "VA-01",
     "state": "Virginia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.45,
     "margin": -1.3,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 40
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 42
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 44
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 45
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 45
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 45
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 45
       }
     ],
     "candidates": {
@@ -55033,6 +55839,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Robert J. Wittman",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -55101,37 +55909,37 @@ export const houseData: RaceForecast[] = [
     "name": "VA-02",
     "state": "Virginia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.72,
     "margin": 6,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 67
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 69
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 71
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 72
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 72
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 72
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 72
       }
     ],
     "candidates": {
@@ -55146,6 +55954,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Jennifer A. Kiggans",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -55258,6 +56068,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Robert C. “Bobby” Scott",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -55369,6 +56181,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Jennifer L. McClellan",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -55436,37 +56250,37 @@ export const houseData: RaceForecast[] = [
     "name": "VA-05",
     "state": "Virginia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.35,
     "margin": -4.1,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 30
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 32
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 34
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 35
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 35
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 35
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 35
       }
     ],
     "candidates": {
@@ -55481,6 +56295,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "John J. McGuire III",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -55544,37 +56360,37 @@ export const houseData: RaceForecast[] = [
     "name": "VA-06",
     "state": "Virginia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.05,
     "margin": -17,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 2
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 5
       }
     ],
     "candidates": {
@@ -55589,6 +56405,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Ben Cline",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -55656,37 +56474,37 @@ export const houseData: RaceForecast[] = [
     "name": "VA-07",
     "state": "Virginia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.91,
     "margin": 14.2,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 86
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 88
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 91
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 91
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 91
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 91
       }
     ],
     "candidates": {
@@ -55701,6 +56519,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Eugene Simon Vindman",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -55813,6 +56633,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Donald S. Beyer, Jr.",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -55926,6 +56748,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "H. Morgan Griffith",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -55992,37 +56816,37 @@ export const houseData: RaceForecast[] = [
     "name": "VA-10",
     "state": "Virginia",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.97,
     "margin": 19,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 92
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 94
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 96
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 97
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 97
       }
     ],
     "candidates": {
@@ -56037,6 +56861,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Suhas Subramanyam",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -56149,6 +56975,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "James R. Walkinshaw",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -56260,6 +57088,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Suzan K. DelBene",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -56373,6 +57203,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Rick Larsen",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -56441,37 +57273,37 @@ export const houseData: RaceForecast[] = [
     "name": "WA-03",
     "state": "Washington",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.65,
     "margin": 4.1,
     "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 60
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 62
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 64
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 65
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 65
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 65
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 65
       }
     ],
     "candidates": {
@@ -56486,6 +57318,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Marie Gluesenkamp Perez",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -56553,37 +57387,37 @@ export const houseData: RaceForecast[] = [
     "name": "WA-04",
     "state": "Washington",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.05,
     "margin": -17.6,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 2
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 4
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 5
       }
     ],
     "candidates": {
@@ -56598,6 +57432,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Dan Newhouse",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -56662,37 +57498,37 @@ export const houseData: RaceForecast[] = [
     "name": "WA-05",
     "state": "Washington",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.14,
     "margin": -11.4,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 9
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 11
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 13
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 14
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 14
       }
     ],
     "candidates": {
@@ -56707,6 +57543,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Michael Baumgartner",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -56774,21 +57612,21 @@ export const houseData: RaceForecast[] = [
     "name": "WA-06",
     "state": "Washington",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 23,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -56804,7 +57642,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -56819,6 +57657,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Emily Randall",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -56931,6 +57771,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Pramila Jayapal",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -56996,37 +57838,37 @@ export const houseData: RaceForecast[] = [
     "name": "WA-08",
     "state": "Washington",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.9,
     "margin": 13.5,
     "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 85
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 87
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 89
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 90
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 90
       }
     ],
     "candidates": {
@@ -57041,6 +57883,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Kim Schrier",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -57153,6 +57997,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Adam Smith",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -57217,21 +58063,21 @@ export const houseData: RaceForecast[] = [
     "name": "WA-10",
     "state": "Washington",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.99,
     "margin": 23.9,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 94
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 96
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 98
       },
       {
         "date": "Dec",
@@ -57247,7 +58093,7 @@ export const houseData: RaceForecast[] = [
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 99
       }
     ],
     "candidates": {
@@ -57262,6 +58108,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Marilyn Strickland",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -57372,6 +58220,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Carol D. Miller",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -57484,6 +58334,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Riley M. Moore",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -57551,37 +58403,37 @@ export const houseData: RaceForecast[] = [
     "name": "WI-01",
     "state": "Wisconsin",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.37,
     "margin": -3.5,
     "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 32
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 34
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 36
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 37
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 37
       }
     ],
     "candidates": {
@@ -57596,6 +58448,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Bryan Steil",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -57708,6 +58562,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Mark Pocan",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -57776,37 +58632,37 @@ export const houseData: RaceForecast[] = [
     "name": "WI-03",
     "state": "Wisconsin",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.47,
     "margin": -0.7,
     "rating": "Tilt R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 42
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 44
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 46
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 47
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 47
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 47
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 47
       }
     ],
     "candidates": {
@@ -57821,6 +58677,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Derrick Van Orden",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -57933,6 +58791,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Gwen Moore",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -58001,37 +58861,37 @@ export const houseData: RaceForecast[] = [
     "name": "WI-05",
     "state": "Wisconsin",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.02,
     "margin": -22.4,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 1
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 2
       }
     ],
     "candidates": {
@@ -58046,6 +58906,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Scott Fitzgerald",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -58113,37 +58975,37 @@ export const houseData: RaceForecast[] = [
     "name": "WI-06",
     "state": "Wisconsin",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.06,
     "margin": -16.2,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 3
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 5
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 6
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 6
       }
     ],
     "candidates": {
@@ -58158,6 +59020,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Glenn Grothman",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -58224,37 +59088,37 @@ export const houseData: RaceForecast[] = [
     "name": "WI-07",
     "state": "Wisconsin",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.03,
     "margin": -19,
     "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 1
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 1
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 2
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 3
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 3
       }
     ],
     "candidates": {
@@ -58269,6 +59133,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Thomas P. Tiffany",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -58337,37 +59203,37 @@ export const houseData: RaceForecast[] = [
     "name": "WI-08",
     "state": "Wisconsin",
     "raceType": "house",
-    "probability": 1,
+    "probability": 0.09,
     "margin": -13.9,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 95
+        "value": 4
       },
       {
         "date": "Oct",
-        "value": 97
+        "value": 6
       },
       {
         "date": "Nov",
-        "value": 99
+        "value": 8
       },
       {
         "date": "Dec",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Jan",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Feb",
-        "value": 99
+        "value": 9
       },
       {
         "date": "Mar",
-        "value": 100
+        "value": 9
       }
     ],
     "candidates": {
@@ -58382,6 +59248,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
+    "seatHolder": "Tony Wied",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,
@@ -58494,6 +59362,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
+    "seatHolder": "Harriet M. Hageman",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2024,

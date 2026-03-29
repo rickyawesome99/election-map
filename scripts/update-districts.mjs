@@ -2,8 +2,8 @@
 /**
  * Updates congressional district boundaries for specified states
  * using 119th Congress data from Census Bureau TIGERWEB API,
- * simplified with mapshaper and winding-order-corrected to match
- * the original file's CW exterior ring convention.
+ * simplified with mapshaper and winding-order-corrected to RFC 7946
+ * (CCW exterior rings, CW interior rings).
  */
 
 import { readFileSync, writeFileSync } from 'fs';
@@ -31,16 +31,15 @@ function signedArea(ring) {
   return area / 2;
 }
 
-// Force exterior ring to CW (the convention used by the original file)
-// and holes to CCW (opposite of GeoJSON RFC 7946 standard)
+// Force exterior ring to CCW and holes to CW (GeoJSON RFC 7946).
 function fixWindingOrder(geometry) {
   if (geometry.type === 'Polygon') {
     geometry.coordinates = geometry.coordinates.map((ring, i) => {
       const area = signedArea(ring);
       const isExterior = i === 0;
-      // exterior should be CW (negative area), holes should be CCW (positive)
-      if (isExterior && area > 0) return [...ring].reverse();
-      if (!isExterior && area < 0) return [...ring].reverse();
+      // exterior should be CCW (positive area), holes should be CW (negative)
+      if (isExterior && area < 0) return [...ring].reverse();
+      if (!isExterior && area > 0) return [...ring].reverse();
       return ring;
     });
   } else if (geometry.type === 'MultiPolygon') {
@@ -48,8 +47,8 @@ function fixWindingOrder(geometry) {
       poly.map((ring, i) => {
         const area = signedArea(ring);
         const isExterior = i === 0;
-        if (isExterior && area > 0) return [...ring].reverse();
-        if (!isExterior && area < 0) return [...ring].reverse();
+        if (isExterior && area < 0) return [...ring].reverse();
+        if (!isExterior && area > 0) return [...ring].reverse();
         return ring;
       })
     );
@@ -101,7 +100,7 @@ async function main() {
   const simplified = JSON.parse(readFileSync(tmpOut, 'utf8'));
   console.log(`  Simplified to ${simplified.features.length} features`);
 
-  // Normalize properties and fix winding order to match original file (CW exterior)
+  // Normalize properties and enforce RFC 7946 winding order.
   const newFeatures = simplified.features.map(f => {
     const stateFips = f.properties.STATE;
     const districtNum = (f.properties.CD119 || '').padStart(2, '0');

@@ -21,6 +21,21 @@ function RatingBadge({ rating }: { rating: string }) {
   );
 }
 
+function isSpecialElection(electionType?: string) {
+  return (electionType ?? "").toLowerCase().includes("special");
+}
+
+function SpecialBadge() {
+  return (
+    <span
+      className="text-[10px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap"
+      style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}
+    >
+      Special
+    </span>
+  );
+}
+
 
 // Card for a seat that has no 2026 election — shows incumbent info + link
 function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: string; label: string }) {
@@ -29,10 +44,10 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
   return (
     <Link
       href={href}
-      className="flex items-center gap-4 rounded-lg px-4 py-3 transition-colors"
+      className="flex items-center gap-3 sm:gap-4 rounded-lg px-4 py-3 transition-colors min-w-0"
       style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
     >
-      <div className="w-24 shrink-0">
+      <div className="w-20 sm:w-24 shrink-0">
         <div className="text-[10px] uppercase tracking-wider font-semibold mb-0.5" style={{ color: "var(--app-text-muted)" }}>
           {label}
         </div>
@@ -67,10 +82,10 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
   return (
     <Link
       href={href}
-      className="flex items-center gap-4 rounded-lg px-4 py-3 transition-colors"
+      className="flex items-center gap-3 sm:gap-4 rounded-lg px-4 py-3 transition-colors min-w-0"
       style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
     >
-      <div className="w-24 shrink-0">
+      <div className="w-20 sm:w-24 shrink-0">
         <div className="text-[10px] uppercase tracking-wider font-semibold mb-0.5" style={{ color: "var(--app-text-muted)" }}>
           {label}
         </div>
@@ -89,7 +104,7 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
           <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
         )}
       </div>
-      <div className="shrink-0 flex items-center gap-2 sm:gap-3">
+      <div className="shrink-0 flex items-center gap-1.5 sm:gap-3">
         <div className="hidden sm:flex items-center gap-1.5 shrink-0">
           <span className="text-xs font-semibold tabular-nums" style={{ color: "var(--party-dem)" }}>
             D {((100 + race.margin) / 2).toFixed(1)}%
@@ -123,7 +138,7 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
   return (
     <Link
       href={`/house/${race.id}?from=${encodeURIComponent(from)}`}
-      className="flex items-center gap-3 px-4 py-2.5 rounded-lg transition-colors"
+      className="flex items-center gap-2 sm:gap-3 px-4 py-2.5 rounded-lg transition-colors min-w-0"
       style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
     >
       {/* District name */}
@@ -154,8 +169,8 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
 
       {/* Rating badge */}
       <span
-        className="text-xs font-semibold px-2 py-0.5 rounded-full text-center shrink-0"
-        style={{ background: bg, color: text, minWidth: "4.5rem" }}
+        className="text-xs font-semibold px-2 py-0.5 rounded-full text-center shrink-0 w-[4.1rem] sm:w-[4.5rem]"
+        style={{ background: bg, color: text }}
       >
         {race.rating}
       </span>
@@ -246,9 +261,9 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
   const houseRaces = houseData.filter((r) => r.state === state.name);
   const senatePastResults = [
-    ...(senateSeat1Race?.pastResults ?? senateSeat1NoEl?.pastResults ?? []),
-    ...(senateSeat2Race?.pastResults ?? senateSeat2Holdover?.pastResults ?? []),
-  ].filter((r) => r.year >= 2016).sort((a, b) => b.year - a.year);
+    ...(senateSeat1Race?.pastResults ?? senateSeat1NoEl?.pastResults ?? []).map((r) => ({ ...r, seat: 1 as const })),
+    ...(senateSeat2Race?.pastResults ?? senateSeat2Holdover?.pastResults ?? []).map((r) => ({ ...r, seat: 2 as const })),
+  ].filter((r) => r.year >= 2016).sort((a, b) => b.year - a.year || a.seat - b.seat);
   const govPastResults = (governorRace?.pastResults ?? governorNoEl?.pastResults ?? []).filter((r) => r.year >= 2016);
   const govPageId = governorRace ? governorRace.id.toLowerCase() : governorNoEl?.abbr.toLowerCase();
   const totalRaces2026 = houseRaces.length + (anySenateRace ? 1 : 0) + (governorRace ? 1 : 0);
@@ -340,7 +355,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
               {governorRace ? ` A gubernatorial election is also scheduled for November ${electionYear}.` : ""}
             </p>
 
-            <div className="grid grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
               {/* House: current incumbent composition */}
               <div className="rounded-lg p-3 text-center" style={{ background: "var(--app-bg)" }}>
                 <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
@@ -493,8 +508,8 @@ export default async function StateDetailPage({ params, searchParams }: { params
                 className="rounded-lg p-4"
                 style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
               >
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-3">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-1.5">
+                  <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
                     <span
                       className="text-[10px] uppercase tracking-wider font-semibold"
                       style={{ color: "var(--app-text-muted)" }}
@@ -507,7 +522,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                       <span style={{ color: "var(--party-rep)" }}>{houseRepProj}R</span>
                     </div>
                   </div>
-                  <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+                  <span className="text-xs sm:text-xs" style={{ color: "var(--app-text-very-muted)" }}>
                     {GENERAL_ELECTION}
                   </span>
                 </div>
@@ -535,11 +550,11 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
           {/* Table header */}
           <div
-            className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 pb-2 mb-3 text-[10px] uppercase tracking-wider font-semibold"
+            className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-2 sm:gap-4 pb-2 mb-3 text-[10px] uppercase tracking-wider font-semibold"
             style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-very-muted)" }}
           >
             <span className="w-12">Year</span>
-            <span className="w-24">Race</span>
+            <span className="w-20 sm:w-24">Race</span>
             <span className="hidden sm:block">Democrat</span>
             <span className="hidden sm:block">Republican</span>
             <span>Result</span>
@@ -550,12 +565,12 @@ export default async function StateDetailPage({ params, searchParams }: { params
             {presRows.length > 0 ? presRows.map((res, i) => (
               <div
                 key={`pres-${res.year}-${res.stateAbbr}-${i}`}
-                className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
+                className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-2 sm:gap-4 items-center"
               >
                 <span className="text-sm font-bold w-12 tabular-nums" style={{ color: "var(--app-text-primary)" }}>
                   {res.year}
                 </span>
-                <span className="text-xs w-24 font-medium" style={{ color: "var(--app-text-muted)" }}>
+                <span className="text-xs w-20 sm:w-24 font-medium" style={{ color: "var(--app-text-muted)" }}>
                   {presRaceLabel(res.stateAbbr)}
                 </span>
                 <div className="hidden sm:flex items-center gap-1 min-w-0">
@@ -571,10 +586,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
             )) : [2024, 2020, 2016].map((year) => (
               <div
                 key={`pres-${year}`}
-                className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
+                className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-2 sm:gap-4 items-center"
               >
                 <span className="text-sm font-bold w-12 tabular-nums" style={{ color: "var(--app-text-primary)" }}>{year}</span>
-                <span className="text-xs w-24 font-medium" style={{ color: "var(--app-text-muted)" }}>Presidential</span>
+                <span className="text-xs w-20 sm:w-24 font-medium" style={{ color: "var(--app-text-muted)" }}>Presidential</span>
                 <span className="hidden sm:block text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
                 <span className="hidden sm:block text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
                 <HistoryResultBar demPct={null} repPct={null} placeholder />
@@ -588,21 +603,21 @@ export default async function StateDetailPage({ params, searchParams }: { params
                 style={{ background: "var(--app-border)" }}
               />
             )}
-            {senatePastResults.map((res) => (
+            {senatePastResults.map((res, idx) => (
               <div
-                key={`senate-${res.year}`}
-                className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
+                key={`senate-${res.year}-${res.seat}-${res.electionType ?? "regular"}-${idx}`}
+                className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-2 sm:gap-4 items-center"
               >
-                <span className="text-sm font-bold w-12 tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                  {res.year}
-                </span>
-                <Link
-                  href={anySenateRace ? `/senate/${anySenateRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}` : "#"}
-                  className="text-xs w-24 font-medium transition-colors hover:underline"
-                  style={{ color: "var(--app-text-muted)" }}
-                >
-                  U.S. Senate
-                </Link>
+                <span className="text-sm font-bold w-12 tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+                <div className="w-20 sm:w-24 flex items-center gap-1.5">
+                  <Link
+                    href={`/senate/${(res.seat === 2 ? `${state.abbr}-2` : state.abbr).toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                    className="text-xs font-medium transition-colors hover:underline"
+                    style={{ color: "var(--app-text-muted)" }}
+                  >
+                    {isSpecialElection(res.electionType) ? "Senate Special" : "Senate"}
+                  </Link>
+                </div>
                 <div className="hidden sm:flex items-center gap-1 min-w-0">
                   <span className="text-sm font-semibold truncate" style={{ color: "var(--party-dem)" }}>{res.demCandidate ?? "Democratic Candidate"}</span>
                   {res.demIncumbent && <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>}
@@ -622,18 +637,19 @@ export default async function StateDetailPage({ params, searchParams }: { params
                 {govPastResults.map((res) => (
                   <div
                     key={`gov-${res.year}`}
-                    className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-4 items-center"
+                    className="grid grid-cols-[auto_auto_1fr] sm:grid-cols-[auto_auto_1fr_1fr_1fr] gap-2 sm:gap-4 items-center"
                   >
-                    <span className="text-sm font-bold w-12 tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                      {res.year}
-                    </span>
-                    <Link
-                      href={`/governor/${govPageId}?from=${encodeURIComponent(`/states/${id}`)}`}
-                      className="text-xs w-24 font-medium transition-colors hover:underline"
-                      style={{ color: "var(--app-text-muted)" }}
-                    >
-                      Governor
-                    </Link>
+                    <span className="text-sm font-bold w-12 tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+                    <div className="w-20 sm:w-24 flex items-center gap-1.5">
+                      <Link
+                        href={`/governor/${govPageId}?from=${encodeURIComponent(`/states/${id}`)}`}
+                        className="text-xs font-medium transition-colors hover:underline"
+                        style={{ color: "var(--app-text-muted)" }}
+                      >
+                        Governor
+                      </Link>
+                      {isSpecialElection(res.electionType) && <span className="hidden sm:inline-flex"><SpecialBadge /></span>}
+                    </div>
                     <div className="hidden sm:flex items-center gap-1 min-w-0">
                       <span className="text-sm font-semibold truncate" style={{ color: "var(--party-dem)" }}>{res.demCandidate ?? "Democratic Candidate"}</span>
                       {res.demIncumbent && <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>}

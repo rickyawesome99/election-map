@@ -120,9 +120,10 @@ function buildHistory(row, prob01) {
 
 // Build a RaceForecast object from a spreadsheet row + associated past results
 function buildRaceForecast(row, raceType, id, name, state, pastRows) {
-  // Probability — new format: prob_dem (0–1).  Old format: probability (0–100).
+  // Probability — prob_dem may be 0–1 or 0–100 scale depending on the CSV; auto-detect.
+  // Old format: probability (0–100).
   const prob01 = has(row.prob_dem)
-    ? Math.max(0, Math.min(1, num(row.prob_dem, 0.5)))
+    ? (() => { const v = num(row.prob_dem, 50); return Math.max(0, Math.min(1, v > 1 ? v / 100 : v)); })()
     : Math.max(0, Math.min(1, num(row.probability, 50) / 100));
 
   // Margin (internal convention: positive = Dem wins).
@@ -196,7 +197,7 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
     };
   }
 
-  // Current seat holder — sourced from "current_incumbent" (senate) or legacy "incumbent" name field.
+  // Current seat holder — sourced from "current_incumbent" (all race types) or legacy "incumbent" name field.
   const seatHolderName = has(row.current_incumbent) ? row.current_incumbent
                        : (!isPartyIndicator && has(row.incumbent)) ? row.incumbent
                        : null;
