@@ -43,6 +43,8 @@ export default function DistrictMiniMap({
 
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
   const stateFips = raceId.slice(0, 2);
+  // At-large districts are stored in the GeoJSON with GEOID ending "00", but our race IDs end "01"
+  const targetGeoid = raceId.endsWith("01") ? raceId.slice(0, -2) + "00" : raceId;
   const highlightColor = getRaceColor(margin);
   const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
   const mutedFill = darkMode ? "#2a2f36" : "#d0d7de";
@@ -63,7 +65,7 @@ export default function DistrictMiniMap({
               })
               .map((geo: any) => {
                 const geoid = geo.properties?.GEOID as string | undefined;
-                const isTarget = geoid === raceId;
+                const isTarget = geoid === raceId || geoid === targetGeoid;
                 return (
                   <Geography
                     key={geo.rsmKey}

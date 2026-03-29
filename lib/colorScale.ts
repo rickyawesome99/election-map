@@ -5,8 +5,8 @@ export function getRaceColor(margin: number): string {
   if (margin >= 1)   return "#8bafff"; // Lean D   (D+1–D+5)
   if (margin >= 0)   return "#959bb3"; // Tilt D   (D+0–D+1)
   if (margin > -1)   return "#cf8980"; // Tilt R   (R+0–R+1)
-  if (margin >= -5)  return "#ff8b98"; // Lean R   (R+1–R+5)
-  if (margin >= -15) return "#ff5864"; // Likely R (R+5–R+15)
+  if (margin > -5)   return "#ff8b98"; // Lean R   (R+1–R+5)
+  if (margin > -15)  return "#ff5864"; // Likely R (R+5–R+15)
   return "#be1c29";                    // Safe R   (R+15+)
 }
 
