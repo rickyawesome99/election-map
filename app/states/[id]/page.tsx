@@ -44,8 +44,8 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
   return (
     <Link
       href={href}
-      className="flex items-center gap-3 sm:gap-4 rounded-lg px-4 py-3 transition-colors min-w-0"
-      style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
+      className="flex items-center gap-3 sm:gap-4 px-1 py-4 transition-colors min-w-0"
+      style={{ borderBottom: "1px solid var(--app-border)" }}
     >
       <div className="w-20 sm:w-24 shrink-0">
         <div className="text-[10px] uppercase tracking-wider font-semibold mb-0.5" style={{ color: "var(--app-text-muted)" }}>
@@ -82,8 +82,8 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
   return (
     <Link
       href={href}
-      className="flex items-center gap-3 sm:gap-4 rounded-lg px-4 py-3 transition-colors min-w-0"
-      style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
+      className="flex items-center gap-3 sm:gap-4 px-1 py-4 transition-colors min-w-0"
+      style={{ borderBottom: "1px solid var(--app-border)" }}
     >
       <div className="w-20 sm:w-24 shrink-0">
         <div className="text-[10px] uppercase tracking-wider font-semibold mb-0.5" style={{ color: "var(--app-text-muted)" }}>
@@ -138,8 +138,7 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
   return (
     <Link
       href={`/house/${race.id}?from=${encodeURIComponent(from)}`}
-      className="flex items-center gap-2 sm:gap-3 px-4 py-2.5 rounded-lg transition-colors min-w-0"
-      style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
+      className="flex items-center gap-2 sm:gap-3 px-0 py-2.5 transition-colors min-w-0"
     >
       {/* District name */}
       <span className="text-sm font-bold tabular-nums w-24 shrink-0 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
@@ -277,9 +276,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
   const stateDelegationHistory = houseDelegationHistory[state.name] ?? [];
 
-  // House current composition (incumbent party per district)
-  const houseDemCurrent = houseRaces.filter((r) => raceParty(r) === "D").length;
-  const houseRepCurrent = houseRaces.filter((r) => raceParty(r) === "R").length;
+  // House current composition — use 2024 delegation history if available, else infer from incumbents
+  const houseDel2024 = stateDelegationHistory.find((e) => e.year === 2024);
+  const houseDemCurrent = houseDel2024 ? houseDel2024.demSeats : houseRaces.filter((r) => raceParty(r) === "D").length;
+  const houseRepCurrent = houseDel2024 ? houseDel2024.repSeats : houseRaces.filter((r) => raceParty(r) === "R").length;
 
   // House projected composition (2026 forecast)
   const houseDemProj = houseRaces.filter((r) => r.margin >= 0).length;
@@ -456,7 +456,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
             </span>
           </div>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col" style={{ borderTop: "1px solid var(--app-border)" }}>
             {/* Senate seat 1 */}
             {senateSeat1Race ? (
               <ElectionCard
@@ -505,8 +505,8 @@ export default async function StateDetailPage({ params, searchParams }: { params
             {/* House subsection */}
             {houseRaces.length > 0 && (
               <div
-                className="rounded-lg p-4"
-                style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
+                className="py-4"
+                style={{ borderBottom: "1px solid var(--app-border)" }}
               >
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3 gap-1.5">
                   <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
@@ -526,9 +526,11 @@ export default async function StateDetailPage({ params, searchParams }: { params
                     {GENERAL_ELECTION}
                   </span>
                 </div>
-                <div className="flex flex-col gap-1.5">
+                <div className="flex flex-col" style={{ borderTop: "1px solid var(--app-border)" }}>
                   {houseRaces.map((race) => (
-                    <HouseDistrictRow key={race.id} race={race} from={`/states/${id}`} />
+                    <div key={race.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
+                      <HouseDistrictRow race={race} from={`/states/${id}`} />
+                    </div>
                   ))}
                 </div>
               </div>
