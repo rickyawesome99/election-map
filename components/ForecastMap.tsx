@@ -80,6 +80,7 @@ export default function ForecastMap() {
   const [hovered, setHovered] = useState<RaceForecast | null>(null);
   const [hoveredNoElection, setHoveredNoElection] = useState<NoElectionEntry | null>(null);
   const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  const [mapSize, setMapSize] = useState<{ w: number; h: number }>({ w: 0, h: 0 });
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
@@ -228,6 +229,7 @@ export default function ForecastMap() {
           style={{}}
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
+            setMapSize({ w: rect.width, h: rect.height });
             setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
           }}
         >
@@ -244,14 +246,19 @@ export default function ForecastMap() {
             const tipW = 185;
             const tipH = hovered.candidates ? 108 : 80;
             const offset = 16;
+            const edgePad = 8;
             let left = mousePos.x + offset;
             let top = mousePos.y + offset;
-            if (left + tipW > (typeof window !== "undefined" ? window.innerWidth * 0.75 : 800)) {
+            const containerW = mapSize.w || 800;
+            const containerH = mapSize.h || 600;
+            if (left + tipW + edgePad > containerW) {
               left = mousePos.x - tipW - offset;
             }
-            if (top + tipH > (typeof window !== "undefined" ? window.innerHeight - 80 : 600)) {
+            if (top + tipH + edgePad > containerH) {
               top = mousePos.y - tipH - offset;
             }
+            if (left < edgePad) left = edgePad;
+            if (top < edgePad) top = edgePad;
 
             return (
               <div
@@ -303,14 +310,19 @@ export default function ForecastMap() {
             const tipW = 185;
             const tipH = 70;
             const offset = 16;
+            const edgePad = 8;
             let left = mousePos.x + offset;
             let top = mousePos.y + offset;
-            if (left + tipW > (typeof window !== "undefined" ? window.innerWidth * 0.75 : 800)) {
+            const containerW = mapSize.w || 800;
+            const containerH = mapSize.h || 600;
+            if (left + tipW + edgePad > containerW) {
               left = mousePos.x - tipW - offset;
             }
-            if (top + tipH > (typeof window !== "undefined" ? window.innerHeight - 80 : 600)) {
+            if (top + tipH + edgePad > containerH) {
               top = mousePos.y - tipH - offset;
             }
+            if (left < edgePad) left = edgePad;
+            if (top < edgePad) top = edgePad;
             return (
               <div
                 className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
