@@ -30,6 +30,7 @@ export default function HouseListPage() {
             { label: "House", href: "/house" },
             { label: "Senate", href: "/senate" },
             { label: "Governor", href: "/governor" },
+            { label: "Analysis", href: "/analysis" },
           ]).map(({ label, href }) => (
             <Link
               key={href}
@@ -56,6 +57,7 @@ export default function HouseListPage() {
           { label: "House", href: "/house" },
           { label: "Senate", href: "/senate" },
           { label: "Governor", href: "/governor" },
+          { label: "Analysis", href: "/analysis" },
         ]).map(({ label, href }) => (
           <Link
             key={href}

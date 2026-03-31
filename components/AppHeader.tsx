@@ -6,6 +6,7 @@ const NAV = [
   { label: "House",    href: "/house" },
   { label: "Senate",   href: "/senate" },
   { label: "Governor", href: "/governor" },
+  { label: "Analysis", href: "/analysis" },
 ];
 
 export default function AppHeader({ back }: { back?: React.ReactNode }) {

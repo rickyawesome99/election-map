@@ -157,6 +157,7 @@ export default function ForecastMap() {
               { label: "House", href: "/house" },
               { label: "Senate", href: "/senate" },
               { label: "Governor", href: "/governor" },
+              { label: "Analysis", href: "/analysis" },
             ] as { label: string; href: string }[]).map(({ label, href }) => (
               <Link
                 key={href}
@@ -169,7 +170,7 @@ export default function ForecastMap() {
             ))}
           </nav>
           <span className="hidden sm:block text-xs" style={{ color: t.textMuted }}>
-            Updated Mar 15, 2026
+            Updated Mar 30, 2026
           </span>
         </div>
 
@@ -208,6 +209,7 @@ export default function ForecastMap() {
           { label: "House", href: "/house" },
           { label: "Senate", href: "/senate" },
           { label: "Governor", href: "/governor" },
+          { label: "Analysis", href: "/analysis" },
         ] as { label: string; href: string }[]).map(({ label, href }) => (
           <Link
             key={href}
