@@ -73,21 +73,26 @@ export default function AnalysisPage() {
         </div>
 
         <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-          <table className="w-full">
+          <table className="w-full text-sm">
             <thead>
               <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
-                <th className="px-4 py-3 text-left text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>Category</th>
+                <th
+                  className="px-3 sm:px-4 py-3 text-left text-[10px] uppercase tracking-wider font-semibold"
+                  style={{ color: "var(--app-text-muted)" }}
+                >
+                  Category
+                </th>
               </tr>
             </thead>
             <tbody>
               <tr
                 className="transition-colors hover:opacity-80"
-                style={{ background: "var(--app-bg)" }}
+                style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}
               >
-                <td className="px-4 py-3 text-sm">
+                <td className="px-3 sm:px-4 py-3">
                   <Link
                     href="/analysis/oh-31"
-                    className="font-medium"
+                    className="font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     OH-31
