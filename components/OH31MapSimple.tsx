@@ -88,13 +88,14 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
   const edgePad = 8;
   const mapHeight = isMobile ? 520 : "min(72vh, 520px)";
   const mapScale = isMobile ? 110000 : 65000;
-  const stateRepMargin = hovered
-    ? hovered.stRep.dPct >= hovered.stRep.rPct
-      ? `D+${(hovered.stRep.dPct - hovered.stRep.rPct).toFixed(1)}%`
-      : `R+${(hovered.stRep.rPct - hovered.stRep.dPct).toFixed(1)}%`
+  const activeRaceResult = hovered ? hovered[activeRace] : null;
+  const activeRaceMargin = activeRaceResult
+    ? activeRaceResult.dPct >= activeRaceResult.rPct
+      ? `D+${(activeRaceResult.dPct - activeRaceResult.rPct).toFixed(1)}%`
+      : `R+${(activeRaceResult.rPct - activeRaceResult.dPct).toFixed(1)}%`
     : null;
-  const stateRepMarginColor = hovered
-    ? hovered.stRep.dPct >= hovered.stRep.rPct
+  const activeRaceMarginColor = activeRaceResult
+    ? activeRaceResult.dPct >= activeRaceResult.rPct
       ? t.demText
       : t.repText
     : t.textMuted;
@@ -108,7 +109,7 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
   return (
     <div
       className="relative rounded-xl overflow-hidden"
-      style={{ border: `1px solid ${t.border}`, background: t.mapUnfilled, height: mapHeight }}
+      style={{ border: "1px solid var(--app-border)", background: "var(--oh31-map-unfilled)", height: mapHeight }}
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
         setMapSize({ w: rect.width, h: rect.height });
@@ -134,7 +135,7 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill={race ? getRaceColor(race.dPct - race.rPct) : t.mapUnfilled}
+                  fill={race ? getRaceColor(race.dPct - race.rPct) : "var(--oh31-map-unfilled)"}
                   stroke={t.mapStroke}
                   strokeWidth={isHovered ? 1.5 : 0.4}
                   style={{
@@ -154,13 +155,14 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
       {/* Hover tooltip */}
       {hovered && !isMobile && (
         <div
-          className="absolute z-20 pointer-events-none rounded-lg"
+          className="absolute pointer-events-none rounded-lg"
           style={{
             left: tipLeft, top: tipTop, width: tipW,
             padding: "10px 12px",
             background: t.panel,
-            border: `1px solid ${t.border}`,
+            border: "1px solid var(--app-border)",
             boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+            zIndex: 10,
           }}
         >
           <div className="font-semibold text-sm mb-2" style={{ color: t.textPrimary }}>
@@ -184,25 +186,40 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
 
       {hovered && isMobile && (
         <div
-          className="absolute left-3 right-3 bottom-3 z-20 pointer-events-none rounded-lg"
+          className="absolute left-3 right-3 bottom-3 pointer-events-none rounded-lg"
           style={{
-            padding: "10px 12px",
+            padding: "8px 10px",
             background: t.panel,
-            border: `1px solid ${t.border}`,
+            border: "1px solid var(--app-border)",
             boxShadow: "0 4px 16px rgba(0,0,0,0.18)",
+            zIndex: 10,
           }}
         >
-          <div className="text-xs font-semibold mb-1 truncate" style={{ color: t.textPrimary }}>
+          <div className="text-[11px] font-semibold mb-1 truncate" style={{ color: t.textPrimary }}>
             {hovered.precinct}
           </div>
-          <div className="flex items-center justify-between gap-3 text-[11px]">
-            <span style={{ color: t.textMuted }}>
-              {hovered.ballotsCast.toLocaleString()} ballots
-            </span>
-            <span className="font-semibold" style={{ color: stateRepMarginColor }}>
-              State Rep {stateRepMargin}
-            </span>
-          </div>
+          {activeRaceResult && (
+            <div className="flex items-center gap-x-1 text-[10px] leading-none">
+              <span className="whitespace-nowrap" style={{ color: t.textMuted }}>
+                {hovered.ballotsCast.toLocaleString()} bal
+              </span>
+              <span className="whitespace-nowrap font-semibold tracking-tight" style={{ color: t.demText }}>
+                D {activeRaceResult.dVotes.toLocaleString()}
+              </span>
+              <span className="whitespace-nowrap font-semibold tracking-tight" style={{ color: t.repText }}>
+                R {activeRaceResult.rVotes.toLocaleString()}
+              </span>
+              <span className="whitespace-nowrap tracking-tight" style={{ color: t.demText }}>
+                {activeRaceResult.dPct.toFixed(1)}%
+              </span>
+              <span className="whitespace-nowrap tracking-tight" style={{ color: t.repText }}>
+                {activeRaceResult.rPct.toFixed(1)}%
+              </span>
+              <span className="ml-auto whitespace-nowrap text-[20px] leading-none font-semibold tracking-tight" style={{ color: activeRaceMarginColor }}>
+                {activeRaceMargin}
+              </span>
+            </div>
+          )}
         </div>
       )}
     </div>

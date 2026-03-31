@@ -141,7 +141,7 @@ export default function OH31MapLeaflet({ activeRace, darkMode, onReady }: Props)
     return (
       <div
         style={{ height: 520, display: "flex", alignItems: "center", justifyContent: "center",
-          background: t.mapUnfilled, borderRadius: 12, border: `1px solid ${t.border}` }}
+          background: "var(--oh31-map-unfilled)", borderRadius: 12, border: "1px solid var(--app-border)" }}
       >
         <span style={{ color: t.textMuted, fontSize: 14 }}>Loading map…</span>
       </div>
@@ -155,10 +155,13 @@ export default function OH31MapLeaflet({ activeRace, darkMode, onReady }: Props)
         .oh31-tooltip { background: transparent !important; border: none !important;
           box-shadow: none !important; padding: 0 !important; }
         .oh31-tooltip::before { display: none !important; }
-        .leaflet-container { font-family: inherit; }
+        .leaflet-container { font-family: inherit; z-index: 0; }
+        .leaflet-pane,
+        .leaflet-top,
+        .leaflet-bottom { z-index: 1; }
       `}</style>
 
-      <div style={{ borderRadius: 12, overflow: "hidden", border: `1px solid ${t.border}`, height: 520 }}>
+      <div style={{ borderRadius: 12, overflow: "hidden", border: "1px solid var(--app-border)", height: 520, position: "relative", zIndex: 0 }}>
         <MapContainer
           center={[41.1295, -81.5692]}
           zoom={10}

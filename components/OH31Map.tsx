@@ -40,7 +40,8 @@ const LEGEND = [
 
 function readDarkMode(): boolean {
   if (typeof window === "undefined") return false;
-  return localStorage.getItem("darkMode") === "true";
+  return document.documentElement.classList.contains("dark")
+    || localStorage.getItem("darkMode") === "true";
 }
 
 function sumRace(key: RaceKey) {
@@ -84,42 +85,15 @@ export default function OH31Map() {
 
   return (
     <div style={{ color: t.textPrimary }}>
-      {/* Map style toggle */}
-      <div className="flex items-center gap-3 mb-3 flex-wrap">
-        <div className="text-sm font-semibold" style={{ color: t.textMuted }}>
-          Design
-        </div>
-        <div
-          className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
-          style={{ border: `1px solid ${t.border}`, background: t.panel }}
-        >
-          {(["simple", "satellite"] as MapStyle[]).map((style) => (
-            <button
-              key={style}
-              onClick={() => setMapStyle(style)}
-              aria-pressed={mapStyle === style}
-              className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-              style={
-                mapStyle === style
-                  ? { background: t.tabBg, color: t.textPrimary, border: `1px solid ${t.border}` }
-                  : { color: t.textMuted, border: "1px solid transparent" }
-              }
-            >
-              {style === "satellite" ? "Overlay Map" : "Simple Map"}
-            </button>
-          ))}
-        </div>
-      </div>
-
       {/* Race selector tabs */}
-      <div className="flex items-center gap-3 mb-4 flex-wrap">
+      <div className="flex items-center gap-3 mb-3 flex-wrap">
         <div className="flex items-center gap-3 flex-wrap">
-          <div className="text-xs md:text-sm font-semibold" style={{ color: t.textMuted }}>
+          <div className="text-xs md:text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>
             2024
           </div>
           <div
             className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
-            style={{ border: `1px solid ${t.border}`, background: t.panel }}
+            style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
           >
             {(Object.keys(RACE_LABELS) as RaceKey[]).map((key) => (
               <button
@@ -129,8 +103,8 @@ export default function OH31Map() {
                 className="px-2 md:px-3 py-1 rounded-md text-xs md:text-sm font-medium transition-colors"
                 style={
                   activeRace === key
-                    ? { background: t.tabBg, color: t.textPrimary, border: `1px solid ${t.border}` }
-                    : { color: t.textMuted, border: "1px solid transparent" }
+                    ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
+                    : { color: "var(--app-text-muted)", border: "1px solid transparent" }
                 }
               >
                 {RACE_LABELS[key]}
@@ -140,35 +114,31 @@ export default function OH31Map() {
         </div>
       </div>
 
-      <div
-        className="mb-4 rounded-xl px-4 py-3 flex flex-wrap gap-3 items-center"
-        style={{ background: t.panel, border: `1px solid ${t.border}` }}
-      >
-        <div>
-          <div className="text-xs font-medium mb-1" style={{ color: t.textMuted }}>
-            Showing
-          </div>
-          <div className="text-sm font-semibold" style={{ color: t.textPrimary }}>
-            {RACE_LABELS[activeRace]}
-          </div>
+      {/* Map style toggle */}
+      <div className="flex items-center gap-3 mb-3 flex-wrap">
+        <div className="text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>
+          Design
         </div>
-        <div className="ml-auto text-right">
-          <div className="text-xs font-medium mb-1" style={{ color: t.textMuted }}>
-            District Margin
-          </div>
-          <div className="text-sm font-semibold tabular-nums" style={{ color: margin >= 0 ? t.demText : t.repText }}>
-            {marginLabel}
-          </div>
+        <div
+          className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
+          style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+        >
+          {(["simple", "satellite"] as MapStyle[]).map((style) => (
+            <button
+              key={style}
+              onClick={() => setMapStyle(style)}
+              aria-pressed={mapStyle === style}
+              className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
+              style={
+                mapStyle === style
+                  ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
+                  : { color: "var(--app-text-muted)", border: "1px solid transparent" }
+              }
+            >
+              {style === "satellite" ? "Overlay Map" : "Simple Map"}
+            </button>
+          ))}
         </div>
-        {mapStyle === "satellite" && (
-          <button
-            onClick={() => resetFnRef.current?.()}
-            className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-            style={{ color: t.textMuted, border: `1px solid ${t.border}` }}
-          >
-            Reset View
-          </button>
-        )}
       </div>
 
       {/* Map */}
@@ -181,7 +151,7 @@ export default function OH31Map() {
         {/* Legend */}
         <div
           className="absolute bottom-3 left-3 right-3 md:bottom-4 md:right-3 md:left-auto z-[1] rounded-lg px-2 py-1.5 text-[10px] md:px-3 md:py-2 md:text-xs"
-          style={{ background: t.legendBg, border: `1px solid ${t.border}`, color: t.textMuted }}
+          style={{ background: "var(--oh31-legend-bg)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}
         >
           <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:block">
             {LEGEND.map(({ color, label }) => (
@@ -192,6 +162,37 @@ export default function OH31Map() {
             ))}
           </div>
         </div>
+      </div>
+
+      <div
+        className="mt-4 mb-4 rounded-xl px-4 py-3 flex flex-wrap gap-3 items-center"
+        style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+      >
+        <div>
+          <div className="text-xs font-medium mb-1" style={{ color: "var(--app-text-muted)" }}>
+            Showing
+          </div>
+          <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>
+            {RACE_LABELS[activeRace]}
+          </div>
+        </div>
+        <div className="ml-auto text-right">
+          <div className="text-xs font-medium mb-1" style={{ color: "var(--app-text-muted)" }}>
+            District Margin
+          </div>
+          <div className="text-sm font-semibold tabular-nums" style={{ color: margin >= 0 ? t.demText : t.repText }}>
+            {marginLabel}
+          </div>
+        </div>
+        {mapStyle === "satellite" && (
+          <button
+            onClick={() => resetFnRef.current?.()}
+            className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
+            style={{ color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}
+          >
+            Reset View
+          </button>
+        )}
       </div>
     </div>
   );
