@@ -10,6 +10,7 @@ import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
 const GEO_URL = "/oh31_precincts.geojson";
 
 type RaceKey = "stRep" | "pres" | "senate" | "uSHouse";
+type RaceRowData = { key: RaceKey; label: string; dPct: number; rPct: number };
 type PrecinctGeography = {
   rsmKey: string;
   properties?: GeoJsonProperties & { GEOID?: string };
@@ -71,14 +72,15 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
   }, []);
 
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
-  const raceRows: { key: RaceKey; label: string; dPct: number; rPct: number }[] = hovered
+  const raceRows: RaceRowData[] = hovered
     ? [
         { key: "stRep", label: "State Rep", dPct: hovered.stRep.dPct, rPct: hovered.stRep.rPct },
         { key: "pres", label: "President", dPct: hovered.pres.dPct, rPct: hovered.pres.rPct },
         { key: "senate", label: "U.S. Senate", dPct: hovered.senate.dPct, rPct: hovered.senate.rPct },
         { key: "uSHouse", label: "U.S. House", dPct: hovered.uSHouse.dPct, rPct: hovered.uSHouse.rPct },
-      ].sort((a, b) => Number(b.key === activeRace) - Number(a.key === activeRace))
+      ]
     : [];
+  raceRows.sort((a, b) => Number(b.key === activeRace) - Number(a.key === activeRace));
 
   const tipW = 240;
   const tipH = 214;
