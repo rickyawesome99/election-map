@@ -1,7 +1,8 @@
 "use client";
 
 import { Fragment, useState } from "react";
-import { oh31PrecinctData, OH31Precinct } from "@/data/oh31PrecinctData";
+import { OH31Precinct } from "@/data/oh31PrecinctData";
+import { TOWNSHIP_OPTIONS, type TownshipFilter } from "@/lib/oh31Analysis";
 
 type SortDir = "asc" | "desc";
 
@@ -58,52 +59,44 @@ function SortIcon({ active, dir }: { active: boolean; dir: SortDir }) {
 }
 
 const RACE_GROUPS: { label: string; d: SortKey; r: SortKey; dpct: SortKey; rpct: SortKey; margin: SortKey }[] = [
-  { label: "President",   d: "pres_d",   r: "pres_r",   dpct: "pres_dpct",   rpct: "pres_rpct",   margin: "pres_margin"   },
-  { label: "U.S. Senate", d: "senate_d", r: "senate_r", dpct: "senate_dpct", rpct: "senate_rpct", margin: "senate_margin" },
-  { label: "U.S. House",  d: "house_d",  r: "house_r",  dpct: "house_dpct",  rpct: "house_rpct",  margin: "house_margin"  },
   { label: "State Rep",   d: "strep_d",  r: "strep_r",  dpct: "strep_dpct",  rpct: "strep_rpct",  margin: "strep_margin"  },
+  { label: "President",   d: "pres_d",   r: "pres_r",   dpct: "pres_dpct",   rpct: "pres_rpct",   margin: "pres_margin"   },
+  { label: "Senate",      d: "senate_d", r: "senate_r", dpct: "senate_dpct", rpct: "senate_rpct", margin: "senate_margin" },
+  { label: "House",       d: "house_d",  r: "house_r",  dpct: "house_dpct",  rpct: "house_rpct",  margin: "house_margin"  },
 ];
 
-const TOWNSHIP_OPTIONS = [
-  { value: "all", label: "All precincts" },
-  { value: "barberton", label: "Barberton" },
-  { value: "bath", label: "Bath" },
-  { value: "boston_heights", label: "Boston Heights" },
-  { value: "boston_twp", label: "Boston Twp" },
-  { value: "copley", label: "Copley" },
-  { value: "cuyahoga_falls", label: "Cuyahoga Falls" },
-  { value: "norton", label: "Norton" },
-  { value: "peninsula", label: "Peninsula" },
-  { value: "richfield_township", label: "Richfield Township" },
-  { value: "richfield_village", label: "Richfield Village" },
-] as const;
+const thBase = "px-3 py-2 font-medium whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity";
+const stickyTopLeftStyle: React.CSSProperties = {
+  position: "sticky",
+  left: 0,
+  zIndex: 4,
+  background: "var(--app-panel)",
+  boxShadow: "1px 0 0 var(--app-border)",
+};
+const stickyFirstColStyle: React.CSSProperties = {
+  position: "sticky",
+  left: 0,
+  zIndex: 3,
+  background: "inherit",
+  boxShadow: "1px 0 0 var(--app-border)",
+};
 
-type TownshipFilter = (typeof TOWNSHIP_OPTIONS)[number]["value"];
-
-function matchesTownship(precinctName: string, township: TownshipFilter): boolean {
-  if (township === "all") return true;
-  if (township === "barberton") return precinctName.startsWith("BARBERTON ");
-  if (township === "bath") return precinctName.startsWith("BATH TWP ");
-  if (township === "boston_heights") return precinctName.startsWith("BOSTON HTS ");
-  if (township === "boston_twp") return precinctName === "BOSTON TWP";
-  if (township === "copley") return precinctName.startsWith("COPLEY TWP ");
-  if (township === "cuyahoga_falls") return precinctName.startsWith("CUY FALLS ");
-  if (township === "norton") return precinctName.startsWith("NORTON ");
-  if (township === "peninsula") return precinctName.startsWith("PENINSULA ");
-  if (township === "richfield_township") return precinctName.startsWith("RICHFIELD TWP ");
-  if (township === "richfield_village") return precinctName.startsWith("RICHFIELD VILL ");
-  return true;
-}
-
-const thBase = "px-3 py-2 text-right font-medium whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity";
-
-export default function OH31PrecinctTable() {
+export default function OH31PrecinctTable({
+  data,
+  townshipFilter,
+  setTownshipFilter,
+  totalPrecinctCount,
+}: {
+  data: OH31Precinct[];
+  townshipFilter: TownshipFilter;
+  setTownshipFilter: (value: TownshipFilter) => void;
+  totalPrecinctCount: number;
+}) {
   const [sortKey, setSortKey] = useState<SortKey>("precinct");
   const [sortDir, setSortDir] = useState<SortDir>("asc");
-  const [showVotes, setShowVotes] = useState(true);
-  const [showPct, setShowPct] = useState(true);
-  const [showBallots, setShowBallots] = useState(true);
-  const [townshipFilter, setTownshipFilter] = useState<TownshipFilter>("all");
+  const [showVotes, setShowVotes] = useState(false);
+  const [showPct, setShowPct] = useState(false);
+  const [showBallots, setShowBallots] = useState(false);
 
   function handleSort(key: SortKey) {
     if (sortKey === key) {
@@ -114,13 +107,12 @@ export default function OH31PrecinctTable() {
     }
   }
 
-  const filtered = oh31PrecinctData.filter((precinct) => matchesTownship(precinct.precinct, townshipFilter));
-  const sorted = sortData(filtered, sortKey, sortDir);
+  const sorted = sortData(data, sortKey, sortDir);
 
-  const th = (key: SortKey, label: string, extraStyle?: React.CSSProperties) => (
+  const th = (key: SortKey, label: string, extraStyle?: React.CSSProperties, align: "left" | "right" = "right") => (
     <th
       key={key}
-      className={thBase}
+      className={`${thBase} ${align === "left" ? "text-left" : "text-right"}`}
       style={extraStyle}
       onClick={() => handleSort(key)}
     >
@@ -156,7 +148,7 @@ export default function OH31PrecinctTable() {
           </select>
         </div>
         <div className="text-sm" style={{ color: "var(--app-text-muted)" }}>
-          Showing {sorted.length} of {oh31PrecinctData.length} precincts
+          Showing {sorted.length} of {totalPrecinctCount} precincts
         </div>
         {townshipFilter !== "all" && (
           <button
@@ -185,30 +177,28 @@ export default function OH31PrecinctTable() {
         >
           {showBallots ? "Hide" : "Show"} Ballots &amp; Reg.
         </button>
-        <div className="ml-auto flex gap-2 flex-wrap">
-          <button
-            onClick={() => setShowVotes(v => !v)}
-            className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-            style={{
-              background: showVotes ? "var(--app-tab-bg)" : "transparent",
-              color: showVotes ? "var(--app-text-primary)" : "var(--app-text-muted)",
-              border: "1px solid var(--app-border)",
-            }}
-          >
-            {showVotes ? "Hide" : "Show"} Vote Counts
-          </button>
-          <button
-            onClick={() => setShowPct(v => !v)}
-            className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-            style={{
-              background: showPct ? "var(--app-tab-bg)" : "transparent",
-              color: showPct ? "var(--app-text-primary)" : "var(--app-text-muted)",
-              border: "1px solid var(--app-border)",
-            }}
-          >
-            {showPct ? "Hide" : "Show"} Percentages
-          </button>
-        </div>
+        <button
+          onClick={() => setShowVotes(v => !v)}
+          className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
+          style={{
+            background: showVotes ? "var(--app-tab-bg)" : "transparent",
+            color: showVotes ? "var(--app-text-primary)" : "var(--app-text-muted)",
+            border: "1px solid var(--app-border)",
+          }}
+        >
+          {showVotes ? "Hide" : "Show"} Vote Counts
+        </button>
+        <button
+          onClick={() => setShowPct(v => !v)}
+          className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
+          style={{
+            background: showPct ? "var(--app-tab-bg)" : "transparent",
+            color: showPct ? "var(--app-text-primary)" : "var(--app-text-muted)",
+            border: "1px solid var(--app-border)",
+          }}
+        >
+          {showPct ? "Hide" : "Show"} Percentages
+        </button>
       </div>
 
     <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
@@ -218,41 +208,17 @@ export default function OH31PrecinctTable() {
             {/* Group header row */}
             <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
               <th
-                rowSpan={2}
-                className="px-3 py-2 text-left font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
-                style={{ color: "var(--app-text-primary)", verticalAlign: "bottom", borderBottom: "1px solid var(--app-border)" }}
-                onClick={() => handleSort("precinct")}
-              >
-                Precinct<SortIcon active={sortKey === "precinct"} dir={sortDir} />
-              </th>
+                colSpan={1}
+                className="px-3 py-2 text-center font-semibold whitespace-nowrap"
+                style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)", ...stickyTopLeftStyle }}
+              />
               {showBallots && (
                 <th
-                  rowSpan={2}
-                  className="px-3 py-2 text-right font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
-                  style={{ color: "var(--app-text-muted)", verticalAlign: "bottom", borderBottom: "1px solid var(--app-border)" }}
-                  onClick={() => handleSort("ballots")}
+                  colSpan={3}
+                  className="px-3 py-2 text-center font-semibold whitespace-nowrap"
+                  style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)" }}
                 >
-                  Ballots<SortIcon active={sortKey === "ballots"} dir={sortDir} />
-                </th>
-              )}
-              {showBallots && (
-                <th
-                  rowSpan={2}
-                  className="px-3 py-2 text-right font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
-                  style={{ color: "var(--app-text-muted)", verticalAlign: "bottom", borderRight: "1px solid var(--app-border)", borderBottom: "1px solid var(--app-border)" }}
-                  onClick={() => handleSort("reg")}
-                >
-                  Reg.<SortIcon active={sortKey === "reg"} dir={sortDir} />
-                </th>
-              )}
-              {showBallots && (
-                <th
-                  rowSpan={2}
-                  className="px-3 py-2 text-right font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
-                  style={{ color: "var(--app-text-muted)", verticalAlign: "bottom", borderRight: "1px solid var(--app-border)", borderBottom: "1px solid var(--app-border)" }}
-                  onClick={() => handleSort("turnout")}
-                >
-                  Turnout<SortIcon active={sortKey === "turnout"} dir={sortDir} />
+                  Turnout
                 </th>
               )}
               {RACE_GROUPS.map(({ label }, i) => (
@@ -272,13 +238,47 @@ export default function OH31PrecinctTable() {
             </tr>
             {/* Sub-header row */}
             <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
+              <th
+                className="px-3 py-2 text-left font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
+                style={{ color: "var(--app-text-primary)", borderRight: showBallots ? "1px solid var(--app-border)" : undefined, ...stickyFirstColStyle }}
+                onClick={() => handleSort("precinct")}
+              >
+                Precinct<SortIcon active={sortKey === "precinct"} dir={sortDir} />
+              </th>
+              {showBallots && (
+                <th
+                  className="px-3 py-2 text-left font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
+                  style={{ color: "var(--app-text-muted)" }}
+                  onClick={() => handleSort("ballots")}
+                >
+                  Ballots<SortIcon active={sortKey === "ballots"} dir={sortDir} />
+                </th>
+              )}
+              {showBallots && (
+                <th
+                  className="px-3 py-2 text-left font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
+                  style={{ color: "var(--app-text-muted)" }}
+                  onClick={() => handleSort("reg")}
+                >
+                  Reg.<SortIcon active={sortKey === "reg"} dir={sortDir} />
+                </th>
+              )}
+              {showBallots && (
+                <th
+                  className="px-3 py-2 text-left font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
+                  style={{ color: "var(--app-text-muted)", borderRight: "1px solid var(--app-border)" }}
+                  onClick={() => handleSort("turnout")}
+                >
+                  Turnout<SortIcon active={sortKey === "turnout"} dir={sortDir} />
+                </th>
+              )}
               {RACE_GROUPS.map(({ d, r, dpct, rpct, margin }, gi) => (
                 <Fragment key={margin}>
-                  {showVotes && th(d,    "D Votes", { color: "var(--party-dem, #1b408c)", borderLeft: "1px solid var(--app-border)" })}
-                  {showVotes && th(r,    "R Votes", { color: "var(--party-rep, #be1c29)" })}
-                  {showPct   && th(dpct, "D%",      { color: "var(--party-dem, #1b408c)", borderLeft: !showVotes ? "1px solid var(--app-border)" : undefined })}
-                  {showPct   && th(rpct, "R%",      { color: "var(--party-rep, #be1c29)" })}
-                  {th(margin, "Margin",  { color: "var(--app-text-muted)", borderLeft: !showVotes && !showPct ? "1px solid var(--app-border)" : undefined, borderRight: gi < RACE_GROUPS.length - 1 ? "1px solid var(--app-border)" : undefined })}
+                  {showVotes && th(d,    "D Votes", { color: "var(--party-dem, #1b408c)", borderLeft: "1px solid var(--app-border)" }, "left")}
+                  {showVotes && th(r,    "R Votes", { color: "var(--party-rep, #be1c29)" }, "left")}
+                  {showPct   && th(dpct, "D%",      { color: "var(--party-dem, #1b408c)", borderLeft: !showVotes ? "1px solid var(--app-border)" : undefined }, "left")}
+                  {showPct   && th(rpct, "R%",      { color: "var(--party-rep, #be1c29)" }, "left")}
+                  {th(margin, "Margin",  { color: "var(--app-text-muted)", borderLeft: !showVotes && !showPct ? "1px solid var(--app-border)" : undefined, borderRight: gi < RACE_GROUPS.length - 1 ? "1px solid var(--app-border)" : undefined }, "left")}
                 </Fragment>
               ))}
             </tr>
@@ -302,21 +302,29 @@ export default function OH31PrecinctTable() {
                   borderBottom: "1px solid var(--app-border)",
                 }}
               >
-                <td className="px-3 py-2 font-medium whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
+                <td
+                  className="px-3 py-2 font-medium whitespace-nowrap"
+                  style={{
+                    color: "var(--app-text-primary)",
+                    borderRight: showBallots ? "1px solid var(--app-border)" : undefined,
+                    ...stickyFirstColStyle,
+                    background: i % 2 === 0 ? "var(--app-bg)" : "var(--app-panel)",
+                  }}
+                >
                   {p.precinct}
                 </td>
                 {showBallots && (
-                  <td className="px-3 py-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                  <td className="px-3 py-2 text-left tabular-nums" style={{ color: "var(--app-text-muted)" }}>
                     {p.ballotsCast.toLocaleString()}
                   </td>
                 )}
                 {showBallots && (
-                  <td className="px-3 py-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>
+                  <td className="px-3 py-2 text-left tabular-nums" style={{ color: "var(--app-text-muted)" }}>
                     {p.regVoters.toLocaleString()}
                   </td>
                 )}
                 {showBallots && (
-                  <td className="px-3 py-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)", borderRight: "1px solid var(--app-border)" }}>
+                  <td className="px-3 py-2 text-left tabular-nums" style={{ color: "var(--app-text-muted)", borderRight: "1px solid var(--app-border)" }}>
                     {p.regVoters > 0 ? `${((p.ballotsCast / p.regVoters) * 100).toFixed(1)}%` : "0.0%"}
                   </td>
                 )}
@@ -327,11 +335,11 @@ export default function OH31PrecinctTable() {
                   const marginColor = margin > 0 ? "var(--party-rep, #be1c29)" : margin < 0 ? "var(--party-dem, #1b408c)" : "var(--app-text-muted)";
                   return (
                     <Fragment key={`${p.precinct}-${mk}`}>
-                      {showVotes && <td className="px-3 py-2 text-right tabular-nums" style={{ color: "var(--party-dem, #1b408c)", borderLeft: "1px solid var(--app-border)" }}>{race.dVotes.toLocaleString()}</td>}
-                      {showVotes && <td className="px-3 py-2 text-right tabular-nums" style={{ color: "var(--party-rep, #be1c29)" }}>{race.rVotes.toLocaleString()}</td>}
-                      {showPct   && <td className="px-3 py-2 text-right tabular-nums" style={{ color: "var(--party-dem, #1b408c)", borderLeft: !showVotes ? "1px solid var(--app-border)" : undefined }}>{race.dPct.toFixed(1)}%</td>}
-                      {showPct   && <td className="px-3 py-2 text-right tabular-nums" style={{ color: "var(--party-rep, #be1c29)" }}>{race.rPct.toFixed(1)}%</td>}
-                      <td className="px-3 py-2 text-right tabular-nums font-medium" style={{ color: marginColor, borderLeft: !showVotes && !showPct ? "1px solid var(--app-border)" : undefined, borderRight: gi < RACE_GROUPS.length - 1 ? "1px solid var(--app-border)" : undefined }}>{marginStr}</td>
+                      {showVotes && <td className="px-3 py-2 text-left tabular-nums" style={{ color: "var(--party-dem, #1b408c)", borderLeft: "1px solid var(--app-border)" }}>{race.dVotes.toLocaleString()}</td>}
+                      {showVotes && <td className="px-3 py-2 text-left tabular-nums" style={{ color: "var(--party-rep, #be1c29)" }}>{race.rVotes.toLocaleString()}</td>}
+                      {showPct   && <td className="px-3 py-2 text-left tabular-nums" style={{ color: "var(--party-dem, #1b408c)", borderLeft: !showVotes ? "1px solid var(--app-border)" : undefined }}>{race.dPct.toFixed(1)}%</td>}
+                      {showPct   && <td className="px-3 py-2 text-left tabular-nums" style={{ color: "var(--party-rep, #be1c29)" }}>{race.rPct.toFixed(1)}%</td>}
+                      <td className="px-3 py-2 text-left tabular-nums font-medium" style={{ color: marginColor, borderLeft: !showVotes && !showPct ? "1px solid var(--app-border)" : undefined, borderRight: gi < RACE_GROUPS.length - 1 ? "1px solid var(--app-border)" : undefined }}>{marginStr}</td>
                     </Fragment>
                   );
                 })}

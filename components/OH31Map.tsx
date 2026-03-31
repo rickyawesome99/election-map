@@ -21,10 +21,10 @@ type RaceKey = "stRep" | "pres" | "senate" | "uSHouse";
 type MapStyle = "satellite" | "simple";
 
 const RACE_LABELS: Record<RaceKey, string> = {
-  stRep:   "OH State Rep (HD-31)",
+  stRep:   "State Rep",
   pres:    "President",
-  senate:  "U.S. Senate",
-  uSHouse: "U.S. House",
+  senate:  "Senate",
+  uSHouse: "House",
 };
 
 const LEGEND = [
@@ -85,50 +85,59 @@ export default function OH31Map() {
   return (
     <div style={{ color: t.textPrimary }}>
       {/* Map style toggle */}
-      <div className="flex gap-1 mb-3 flex-wrap">
-        {(["simple", "satellite"] as MapStyle[]).map((style) => (
-          <button
-            key={style}
-            onClick={() => setMapStyle(style)}
-            aria-pressed={mapStyle === style}
-            className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-            style={
-              mapStyle === style
-                ? { background: t.tabBg, color: t.textPrimary, border: `1px solid ${t.border}` }
-                : { color: t.textMuted, border: "1px solid transparent" }
-            }
-          >
-            {style === "satellite" ? "Overlay Map" : "Simple Map"}
-          </button>
-        ))}
+      <div className="flex items-center gap-3 mb-3 flex-wrap">
+        <div className="text-sm font-semibold" style={{ color: t.textMuted }}>
+          Design
+        </div>
+        <div
+          className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
+          style={{ border: `1px solid ${t.border}`, background: t.panel }}
+        >
+          {(["simple", "satellite"] as MapStyle[]).map((style) => (
+            <button
+              key={style}
+              onClick={() => setMapStyle(style)}
+              aria-pressed={mapStyle === style}
+              className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
+              style={
+                mapStyle === style
+                  ? { background: t.tabBg, color: t.textPrimary, border: `1px solid ${t.border}` }
+                  : { color: t.textMuted, border: "1px solid transparent" }
+              }
+            >
+              {style === "satellite" ? "Overlay Map" : "Simple Map"}
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Race selector tabs + reset button */}
-      <div className="flex items-center gap-1 mb-4 flex-wrap">
-        {(Object.keys(RACE_LABELS) as RaceKey[]).map((key) => (
-          <button
-            key={key}
-            onClick={() => setActiveRace(key)}
-            aria-pressed={activeRace === key}
-            className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-            style={
-              activeRace === key
-                ? { background: t.tabBg, color: t.textPrimary, border: `1px solid ${t.border}` }
-                : { color: t.textMuted, border: "1px solid transparent" }
-            }
+      {/* Race selector tabs */}
+      <div className="flex items-center gap-3 mb-4 flex-wrap">
+        <div className="flex items-center gap-3 flex-wrap">
+          <div className="text-xs md:text-sm font-semibold" style={{ color: t.textMuted }}>
+            2024
+          </div>
+          <div
+            className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
+            style={{ border: `1px solid ${t.border}`, background: t.panel }}
           >
-            {RACE_LABELS[key]}
-          </button>
-        ))}
-        {mapStyle === "satellite" && (
-          <button
-            onClick={() => resetFnRef.current?.()}
-            className="ml-auto px-3 py-1 rounded-md text-sm font-medium transition-colors"
-            style={{ color: t.textMuted, border: `1px solid ${t.border}` }}
-          >
-            Reset View
-          </button>
-        )}
+            {(Object.keys(RACE_LABELS) as RaceKey[]).map((key) => (
+              <button
+                key={key}
+                onClick={() => setActiveRace(key)}
+                aria-pressed={activeRace === key}
+                className="px-2 md:px-3 py-1 rounded-md text-xs md:text-sm font-medium transition-colors"
+                style={
+                  activeRace === key
+                    ? { background: t.tabBg, color: t.textPrimary, border: `1px solid ${t.border}` }
+                    : { color: t.textMuted, border: "1px solid transparent" }
+                }
+              >
+                {RACE_LABELS[key]}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div
@@ -151,6 +160,15 @@ export default function OH31Map() {
             {marginLabel}
           </div>
         </div>
+        {mapStyle === "satellite" && (
+          <button
+            onClick={() => resetFnRef.current?.()}
+            className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
+            style={{ color: t.textMuted, border: `1px solid ${t.border}` }}
+          >
+            Reset View
+          </button>
+        )}
       </div>
 
       {/* Map */}
@@ -162,15 +180,17 @@ export default function OH31Map() {
 
         {/* Legend */}
         <div
-          className="absolute bottom-3 left-3 md:bottom-4 md:right-3 md:left-auto z-[1] rounded-lg px-3 py-2 text-xs"
+          className="absolute bottom-3 left-3 right-3 md:bottom-4 md:right-3 md:left-auto z-[1] rounded-lg px-2 py-1.5 text-[10px] md:px-3 md:py-2 md:text-xs"
           style={{ background: t.legendBg, border: `1px solid ${t.border}`, color: t.textMuted }}
         >
-          {LEGEND.map(({ color, label }) => (
-            <div key={label} className="flex items-center gap-1.5 mb-0.5">
+          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:block">
+            {LEGEND.map(({ color, label }) => (
+            <div key={label} className="flex items-center gap-1 md:gap-1.5 md:mb-0.5">
               <div style={{ width: 10, height: 10, borderRadius: 2, background: color, flexShrink: 0 }} />
               <span>{label}</span>
             </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

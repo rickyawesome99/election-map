@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import type { GeoJsonProperties, Geometry } from "geojson";
 import { getRaceColor } from "@/lib/colorScale";
@@ -61,6 +61,14 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
   const [hovered, setHovered] = useState<OH31Precinct | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const syncViewport = () => setIsMobile(window.innerWidth < 768);
+    syncViewport();
+    window.addEventListener("resize", syncViewport);
+    return () => window.removeEventListener("resize", syncViewport);
+  }, []);
 
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
   const raceRows: { key: RaceKey; label: string; dPct: number; rPct: number }[] = hovered
@@ -76,6 +84,18 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
   const tipH = 214;
   const offset = 16;
   const edgePad = 8;
+  const mapHeight = isMobile ? 520 : "min(72vh, 520px)";
+  const mapScale = isMobile ? 110000 : 65000;
+  const stateRepMargin = hovered
+    ? hovered.stRep.dPct >= hovered.stRep.rPct
+      ? `D+${(hovered.stRep.dPct - hovered.stRep.rPct).toFixed(1)}%`
+      : `R+${(hovered.stRep.rPct - hovered.stRep.dPct).toFixed(1)}%`
+    : null;
+  const stateRepMarginColor = hovered
+    ? hovered.stRep.dPct >= hovered.stRep.rPct
+      ? t.demText
+      : t.repText
+    : t.textMuted;
   let tipLeft = mousePos.x + offset;
   let tipTop  = mousePos.y + offset;
   if (tipLeft + tipW + edgePad > mapSize.w) tipLeft = mousePos.x - tipW - offset;
@@ -86,7 +106,7 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
   return (
     <div
       className="relative rounded-xl overflow-hidden"
-      style={{ border: `1px solid ${t.border}`, background: t.mapUnfilled, height: 520 }}
+      style={{ border: `1px solid ${t.border}`, background: t.mapUnfilled, height: mapHeight }}
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
         setMapSize({ w: rect.width, h: rect.height });
@@ -96,7 +116,7 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
     >
       <ComposableMap
         projection="geoMercator"
-        projectionConfig={{ center: [-81.5692, 41.1295], scale: 65000 }}
+        projectionConfig={{ center: [-81.5692, 41.1295], scale: mapScale }}
         width={800}
         height={520}
         style={{ width: "100%", height: "100%" }}
@@ -130,7 +150,7 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
       </ComposableMap>
 
       {/* Hover tooltip */}
-      {hovered && (
+      {hovered && !isMobile && (
         <div
           className="absolute z-20 pointer-events-none rounded-lg"
           style={{
@@ -157,6 +177,30 @@ export default function OH31MapSimple({ activeRace, darkMode }: Props) {
               active={race.key === activeRace}
             />
           ))}
+        </div>
+      )}
+
+      {hovered && isMobile && (
+        <div
+          className="absolute left-3 right-3 bottom-3 z-20 pointer-events-none rounded-lg"
+          style={{
+            padding: "10px 12px",
+            background: t.panel,
+            border: `1px solid ${t.border}`,
+            boxShadow: "0 4px 16px rgba(0,0,0,0.18)",
+          }}
+        >
+          <div className="text-xs font-semibold mb-1 truncate" style={{ color: t.textPrimary }}>
+            {hovered.precinct}
+          </div>
+          <div className="flex items-center justify-between gap-3 text-[11px]">
+            <span style={{ color: t.textMuted }}>
+              {hovered.ballotsCast.toLocaleString()} ballots
+            </span>
+            <span className="font-semibold" style={{ color: stateRepMarginColor }}>
+              State Rep {stateRepMargin}
+            </span>
+          </div>
         </div>
       )}
     </div>
