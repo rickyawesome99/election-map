@@ -39,7 +39,7 @@ export default function AppHeader({ back }: { back?: React.ReactNode }) {
       </header>
 
       {/* Mobile nav tabs */}
-      <nav className="md:hidden flex border-b" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
+      <nav className="md:hidden flex border-b px-2" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
         {NAV.map(({ label, href }) => (
           <Link
             key={href}

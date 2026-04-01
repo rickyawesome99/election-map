@@ -51,7 +51,7 @@ export default function SenateListPage() {
         </div>
       </header>
 
-      <nav className="md:hidden flex border-b" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
+      <nav className="md:hidden flex border-b px-2" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
         {([
           { label: "States", href: "/states" },
           { label: "House", href: "/house" },

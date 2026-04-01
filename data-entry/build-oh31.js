@@ -3,12 +3,14 @@
  * OH-31 Precinct Data Builder
  *
  * WORKFLOW:
- *   1. Drop ohio_hd31_precinct_results.csv into data-entry/
+ *   1. Drop CSVs into data-entry/
  *   2. Run: node data-entry/build-oh31.js
- *   3. Done — data/oh31PrecinctData.ts is updated
+ *   3. Done — data/oh31PrecinctData.ts and data/oh31PrecinctData2022.ts are updated
  *
- * Reads:  data-entry/ohio_hd31_precinct_results.csv
+ * Reads:  data-entry/ohio_hd31_precinct_results.csv        → 2024 results
+ *         data-entry/summit_10_townships_results_22.csv    → 2022 results
  * Writes: data/oh31PrecinctData.ts
+ *         data/oh31PrecinctData2022.ts
  */
 
 const fs   = require("fs");
@@ -41,53 +43,70 @@ function parseCSV(filename) {
 const num = (v) => { const n = parseFloat(v); return isNaN(n) ? 0 : n; };
 const int = (v) => { const n = parseInt(v);   return isNaN(n) ? 0 : n; };
 
+// Normalize township names to canonical values that match TownshipFilter option labels.
+// Handles inconsistencies between 2024 and 2022 CSV exports.
+function normalizeTownship(csvTownship, precinctName) {
+  const t = csvTownship.toLowerCase().trim();
+  if (t === "bath" || t === "bath twp")                         return "Bath";
+  if (t === "boston twp" || t === "boston township")            return "Boston Twp";
+  if (t === "peninsula" || t === "peninsula village")           return "Peninsula";
+  if (t === "richfield" || t === "richfield township") {
+    return precinctName.startsWith("RICHFIELD VILL")
+      ? "Richfield Village"
+      : "Richfield Township";
+  }
+  if (t === "richfield village")                                return "Richfield Village";
+  return csvTownship.trim(); // Barberton, Boston Heights, Copley, Cuyahoga Falls, Norton
+}
+
 // ── Build ─────────────────────────────────────────────────────────────────────
 
 const rows = parseCSV("ohio_hd31_precinct_results.csv");
 
 const precincts = rows.map(r => ({
   precinct:       r.precinct,
+  township:       normalizeTownship(r.township, r.precinct),
   ballotsCast:    int(r.ballots_cast),
   regVoters:      int(r.reg_voters),
 
   pres: {
-    dName:  r.pres_D_name,
-    rName:  r.pres_R_name,
-    dVotes: int(r.pres_D_votes),
-    rVotes: int(r.pres_R_votes),
-    total:  int(r.pres_total_votes),
-    dPct:   num(r.pres_D_pct),
-    rPct:   num(r.pres_R_pct),
+    dName:  r.pres_d_name,
+    rName:  r.pres_r_name,
+    dVotes: int(r.pres_d),
+    rVotes: int(r.pres_r),
+    total:  int(r.pres_Total),
+    dPct:   num(r.pres_d_pct),
+    rPct:   num(r.pres_r_pct),
   },
 
   senate: {
-    dName:  r.senate_D_name,
-    rName:  r.senate_R_name,
-    dVotes: int(r.senate_D_votes),
-    rVotes: int(r.senate_R_votes),
-    total:  int(r.senate_total_votes),
-    dPct:   num(r.senate_D_pct),
-    rPct:   num(r.senate_R_pct),
+    dName:  r.senate_d_name,
+    rName:  r.senate_r_name,
+    dVotes: int(r.sen_d),
+    rVotes: int(r.sen_r),
+    total:  int(r.sen_total),
+    dPct:   num(r.sen_d_pct),
+    rPct:   num(r.sen_r_pct),
   },
 
   uSHouse: {
-    dName:  r.house_D_name,
-    rName:  r.house_R_name,
-    dVotes: int(r.house_D_votes),
-    rVotes: int(r.house_R_votes),
-    total:  int(r.house_total_votes),
-    dPct:   num(r.house_D_pct),
-    rPct:   num(r.house_R_pct),
+    dName:  r.house_d_name,
+    rName:  r.house_r_name,
+    dVotes: int(r.house_d),
+    rVotes: int(r.house_r),
+    total:  int(r.house_total),
+    dPct:   num(r.house_d_pct),
+    rPct:   num(r.house_r_pct),
   },
 
   stRep: {
-    dName:  r.st_rep_D_name,
-    rName:  r.st_rep_R_name,
-    dVotes: int(r.st_rep_D_votes),
-    rVotes: int(r.st_rep_R_votes),
-    total:  int(r.st_rep_total_votes),
-    dPct:   num(r.st_rep_D_pct),
-    rPct:   num(r.st_rep_R_pct),
+    dName:  r.srep_d_name,
+    rName:  r.srep_r_name,
+    dVotes: int(r.srep_d),
+    rVotes: int(r.srep_r),
+    total:  int(r.srep_total),
+    dPct:   num(r.srep_d_pct),
+    rPct:   num(r.srep_r_pct),
   },
 }));
 
@@ -108,6 +127,7 @@ export interface OH31RaceResult {
 
 export interface OH31Precinct {
   precinct:    string;
+  township:    string;
   ballotsCast: number;
   regVoters:   number;
   pres:        OH31RaceResult;
@@ -125,4 +145,91 @@ export const oh31ByPrecinct: Record<string, OH31Precinct> =
 
 const outPath = path.join(DATA_DIR, "oh31PrecinctData.ts");
 fs.writeFileSync(outPath, ts, "utf8");
-console.log(`✓ Wrote ${precincts.length} precincts → ${outPath}`);
+console.log(`✓ Wrote ${precincts.length} precincts (2024) → ${outPath}`);
+
+// ── 2022 Build ────────────────────────────────────────────────────────────────
+// In 2022, "pres" stores Governor results (Whaley vs DeWine).
+// No candidate name columns in source CSV — dName/rName left as empty strings.
+
+const rows22 = parseCSV("summit_10_townships_results_22.csv");
+
+// Build GeoJSON code → human-readable name lookup by matching on governor vote totals.
+// gov_d + gov_r is unique across all 97 precincts (verified at build time).
+const geoJsonPath22 = path.join(__dirname, "../public/oh31_2022_precincts.geojson");
+const geoJson22 = JSON.parse(fs.readFileSync(geoJsonPath22, "utf8"));
+const csvLookup22 = {};
+rows22.forEach(r => { csvLookup22[`${r.gov_d}|${r.gov_r}`] = r.precinct; });
+const precinctCodeToName22 = {};
+geoJson22.features.forEach(f => {
+  const p = f.properties;
+  const key = `${p.G22GOVDWHA}|${p.G22GOVRDEW}`;
+  const name = csvLookup22[key];
+  if (name) precinctCodeToName22[p.PRECINCT] = name;
+});
+
+const precincts22 = rows22.map(r => ({
+  precinct:    r.precinct,
+  township:    normalizeTownship(r.township, r.precinct),
+  ballotsCast: int(r.ballots),
+  regVoters:   int(r.reg_voters),
+
+  pres: {
+    dName:  "",
+    rName:  "",
+    dVotes: int(r.gov_d),
+    rVotes: int(r.gov_r),
+    total:  int(r.gov_total),
+    dPct:   num(r.gov_d_pct),
+    rPct:   num(r.gov_r_pct),
+  },
+
+  senate: {
+    dName:  "",
+    rName:  "",
+    dVotes: int(r.sen_d),
+    rVotes: int(r.sen_r),
+    total:  int(r.sen_total),
+    dPct:   num(r.sen_d_pct),
+    rPct:   num(r.sen_r_pct),
+  },
+
+  uSHouse: {
+    dName:  "",
+    rName:  "",
+    dVotes: int(r.house_d),
+    rVotes: int(r.house_r),
+    total:  int(r.house_total),
+    dPct:   num(r.house_d_pct),
+    rPct:   num(r.house_r_pct),
+  },
+
+  stRep: {
+    dName:  "",
+    rName:  "",
+    dVotes: int(r.srep_d),
+    rVotes: int(r.srep_r),
+    total:  int(r.srep_total),
+    dPct:   num(r.srep_d_pct),
+    rPct:   num(r.srep_r_pct),
+  },
+}));
+
+const ts22 = `// AUTO-GENERATED by data-entry/build-oh31.js — do not edit by hand
+// Source: data-entry/summit_10_townships_results_22.csv
+// NOTE: "pres" field stores 2022 Governor results (Whaley vs DeWine).
+
+import type { OH31Precinct } from "@/data/oh31PrecinctData";
+
+export const oh31PrecinctData2022: OH31Precinct[] = ${JSON.stringify(precincts22, null, 2)};
+
+/** Lookup map: precinct name → OH31Precinct */
+export const oh31ByPrecinct2022: Record<string, OH31Precinct> =
+  Object.fromEntries(oh31PrecinctData2022.map(p => [p.precinct, p]));
+
+/** Maps GeoJSON PRECINCT code (e.g. "ANO") → human-readable name (e.g. "NORTON A") */
+export const oh31PrecinctCodeToName2022: Record<string, string> = ${JSON.stringify(precinctCodeToName22, null, 2)};
+`;
+
+const outPath22 = path.join(DATA_DIR, "oh31PrecinctData2022.ts");
+fs.writeFileSync(outPath22, ts22, "utf8");
+console.log(`✓ Wrote ${precincts22.length} precincts (2022) → ${outPath22}`);

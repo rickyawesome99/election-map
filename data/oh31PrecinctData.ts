@@ -13,6 +13,7 @@ export interface OH31RaceResult {
 
 export interface OH31Precinct {
   precinct:    string;
+  township:    string;
   ballotsCast: number;
   regVoters:   number;
   pres:        OH31RaceResult;
@@ -24,6 +25,7 @@ export interface OH31Precinct {
 export const oh31PrecinctData: OH31Precinct[] = [
   {
     "precinct": "BARBERTON 1-A",
+    "township": "Barberton",
     "ballotsCast": 600,
     "regVoters": 935,
     "pres": {
@@ -65,6 +67,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 1-B",
+    "township": "Barberton",
     "ballotsCast": 572,
     "regVoters": 867,
     "pres": {
@@ -106,6 +109,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 1-C",
+    "township": "Barberton",
     "ballotsCast": 606,
     "regVoters": 873,
     "pres": {
@@ -147,6 +151,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 2-A",
+    "township": "Barberton",
     "ballotsCast": 572,
     "regVoters": 904,
     "pres": {
@@ -188,6 +193,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 2-B",
+    "township": "Barberton",
     "ballotsCast": 646,
     "regVoters": 923,
     "pres": {
@@ -229,6 +235,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 2-C",
+    "township": "Barberton",
     "ballotsCast": 723,
     "regVoters": 944,
     "pres": {
@@ -270,6 +277,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 3-A",
+    "township": "Barberton",
     "ballotsCast": 725,
     "regVoters": 1148,
     "pres": {
@@ -311,6 +319,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 3-B",
+    "township": "Barberton",
     "ballotsCast": 652,
     "regVoters": 1019,
     "pres": {
@@ -352,6 +361,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 3-C",
+    "township": "Barberton",
     "ballotsCast": 859,
     "regVoters": 1027,
     "pres": {
@@ -393,6 +403,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 4-A",
+    "township": "Barberton",
     "ballotsCast": 658,
     "regVoters": 1195,
     "pres": {
@@ -434,6 +445,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 4-B",
+    "township": "Barberton",
     "ballotsCast": 772,
     "regVoters": 1173,
     "pres": {
@@ -475,6 +487,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 5-A",
+    "township": "Barberton",
     "ballotsCast": 775,
     "regVoters": 1179,
     "pres": {
@@ -516,6 +529,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 5-B",
+    "township": "Barberton",
     "ballotsCast": 732,
     "regVoters": 1167,
     "pres": {
@@ -557,6 +571,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 6-A",
+    "township": "Barberton",
     "ballotsCast": 827,
     "regVoters": 1245,
     "pres": {
@@ -598,6 +613,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BARBERTON 6-B",
+    "township": "Barberton",
     "ballotsCast": 963,
     "regVoters": 1231,
     "pres": {
@@ -639,6 +655,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BATH TWP A",
+    "township": "Bath",
     "ballotsCast": 860,
     "regVoters": 1021,
     "pres": {
@@ -680,6 +697,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BATH TWP B",
+    "township": "Bath",
     "ballotsCast": 829,
     "regVoters": 988,
     "pres": {
@@ -721,6 +739,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BATH TWP C",
+    "township": "Bath",
     "ballotsCast": 843,
     "regVoters": 982,
     "pres": {
@@ -762,6 +781,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BATH TWP D",
+    "township": "Bath",
     "ballotsCast": 1068,
     "regVoters": 1270,
     "pres": {
@@ -803,6 +823,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BATH TWP E",
+    "township": "Bath",
     "ballotsCast": 788,
     "regVoters": 938,
     "pres": {
@@ -844,6 +865,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BATH TWP F",
+    "township": "Bath",
     "ballotsCast": 808,
     "regVoters": 977,
     "pres": {
@@ -885,6 +907,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BATH TWP G",
+    "township": "Bath",
     "ballotsCast": 798,
     "regVoters": 973,
     "pres": {
@@ -926,6 +949,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BATH TWP H",
+    "township": "Bath",
     "ballotsCast": 807,
     "regVoters": 958,
     "pres": {
@@ -967,6 +991,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BOSTON HTS VILL",
+    "township": "Boston Heights",
     "ballotsCast": 923,
     "regVoters": 1102,
     "pres": {
@@ -1008,6 +1033,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "BOSTON TWP",
+    "township": "Boston Twp",
     "ballotsCast": 453,
     "regVoters": 592,
     "pres": {
@@ -1049,6 +1075,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP A",
+    "township": "Copley",
     "ballotsCast": 1036,
     "regVoters": 1303,
     "pres": {
@@ -1090,6 +1117,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP B",
+    "township": "Copley",
     "ballotsCast": 985,
     "regVoters": 1272,
     "pres": {
@@ -1131,6 +1159,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP C",
+    "township": "Copley",
     "ballotsCast": 847,
     "regVoters": 1149,
     "pres": {
@@ -1172,6 +1201,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP D",
+    "township": "Copley",
     "ballotsCast": 876,
     "regVoters": 1045,
     "pres": {
@@ -1213,6 +1243,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP E",
+    "township": "Copley",
     "ballotsCast": 892,
     "regVoters": 1075,
     "pres": {
@@ -1254,6 +1285,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP F",
+    "township": "Copley",
     "ballotsCast": 897,
     "regVoters": 1180,
     "pres": {
@@ -1295,6 +1327,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP G",
+    "township": "Copley",
     "ballotsCast": 908,
     "regVoters": 1059,
     "pres": {
@@ -1336,6 +1369,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP H",
+    "township": "Copley",
     "ballotsCast": 888,
     "regVoters": 1088,
     "pres": {
@@ -1377,6 +1411,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP I",
+    "township": "Copley",
     "ballotsCast": 881,
     "regVoters": 1094,
     "pres": {
@@ -1418,6 +1453,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP J",
+    "township": "Copley",
     "ballotsCast": 844,
     "regVoters": 1129,
     "pres": {
@@ -1459,6 +1495,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP K",
+    "township": "Copley",
     "ballotsCast": 865,
     "regVoters": 1092,
     "pres": {
@@ -1500,6 +1537,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "COPLEY TWP L",
+    "township": "Copley",
     "ballotsCast": 849,
     "regVoters": 1033,
     "pres": {
@@ -1541,6 +1579,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 1-A",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 761,
     "regVoters": 1129,
     "pres": {
@@ -1582,6 +1621,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 1-B",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 829,
     "regVoters": 1123,
     "pres": {
@@ -1623,6 +1663,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 1-C",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 737,
     "regVoters": 1090,
     "pres": {
@@ -1664,6 +1705,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 1-D",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 797,
     "regVoters": 1132,
     "pres": {
@@ -1705,6 +1747,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 2-A",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 922,
     "regVoters": 1139,
     "pres": {
@@ -1746,6 +1789,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 2-B",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 810,
     "regVoters": 1151,
     "pres": {
@@ -1787,6 +1831,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 2-C",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 920,
     "regVoters": 1137,
     "pres": {
@@ -1828,6 +1873,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 2-D",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 805,
     "regVoters": 1136,
     "pres": {
@@ -1869,6 +1915,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 3-A",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 814,
     "regVoters": 1020,
     "pres": {
@@ -1910,6 +1957,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 3-B",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 736,
     "regVoters": 1024,
     "pres": {
@@ -1951,6 +1999,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 3-C",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 757,
     "regVoters": 988,
     "pres": {
@@ -1992,6 +2041,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 3-D",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 840,
     "regVoters": 1008,
     "pres": {
@@ -2033,6 +2083,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 3-E",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 831,
     "regVoters": 995,
     "pres": {
@@ -2074,6 +2125,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 4-A",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 845,
     "regVoters": 1097,
     "pres": {
@@ -2115,6 +2167,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 4-B",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 865,
     "regVoters": 1117,
     "pres": {
@@ -2156,6 +2209,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 4-C",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 896,
     "regVoters": 1107,
     "pres": {
@@ -2197,6 +2251,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 4-D",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 878,
     "regVoters": 1096,
     "pres": {
@@ -2238,6 +2293,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 5-A",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 618,
     "regVoters": 1027,
     "pres": {
@@ -2279,6 +2335,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 5-B",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 939,
     "regVoters": 1181,
     "pres": {
@@ -2320,6 +2377,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 5-C",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 804,
     "regVoters": 1090,
     "pres": {
@@ -2361,6 +2419,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 5-D",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 799,
     "regVoters": 1023,
     "pres": {
@@ -2402,6 +2461,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 6-A",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 816,
     "regVoters": 1057,
     "pres": {
@@ -2443,6 +2503,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 6-B",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 902,
     "regVoters": 1131,
     "pres": {
@@ -2484,6 +2545,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 6-C",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 790,
     "regVoters": 1051,
     "pres": {
@@ -2525,6 +2587,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 6-D",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 812,
     "regVoters": 1050,
     "pres": {
@@ -2566,6 +2629,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 7-A",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 720,
     "regVoters": 1077,
     "pres": {
@@ -2607,6 +2671,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 7-B",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 789,
     "regVoters": 1053,
     "pres": {
@@ -2648,6 +2713,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 7-C",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 846,
     "regVoters": 1132,
     "pres": {
@@ -2689,6 +2755,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 7-D",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 872,
     "regVoters": 1109,
     "pres": {
@@ -2730,6 +2797,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 8-A",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 858,
     "regVoters": 1001,
     "pres": {
@@ -2771,6 +2839,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 8-B",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 864,
     "regVoters": 1079,
     "pres": {
@@ -2812,6 +2881,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 8-C",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 820,
     "regVoters": 992,
     "pres": {
@@ -2853,6 +2923,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 8-D",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 881,
     "regVoters": 1058,
     "pres": {
@@ -2894,6 +2965,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "CUY FALLS 8-E",
+    "township": "Cuyahoga Falls",
     "ballotsCast": 837,
     "regVoters": 1031,
     "pres": {
@@ -2935,6 +3007,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "NORTON 1-A",
+    "township": "Norton",
     "ballotsCast": 857,
     "regVoters": 1051,
     "pres": {
@@ -2976,6 +3049,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "NORTON 1-B",
+    "township": "Norton",
     "ballotsCast": 842,
     "regVoters": 1017,
     "pres": {
@@ -3017,6 +3091,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "NORTON 2-A",
+    "township": "Norton",
     "ballotsCast": 757,
     "regVoters": 992,
     "pres": {
@@ -3058,6 +3133,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "NORTON 2-B",
+    "township": "Norton",
     "ballotsCast": 1037,
     "regVoters": 1235,
     "pres": {
@@ -3099,6 +3175,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "NORTON 3-A",
+    "township": "Norton",
     "ballotsCast": 1050,
     "regVoters": 1221,
     "pres": {
@@ -3140,6 +3217,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "NORTON 3-B",
+    "township": "Norton",
     "ballotsCast": 872,
     "regVoters": 1082,
     "pres": {
@@ -3181,6 +3259,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "NORTON 4-A",
+    "township": "Norton",
     "ballotsCast": 702,
     "regVoters": 927,
     "pres": {
@@ -3222,6 +3301,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "NORTON 4-B",
+    "township": "Norton",
     "ballotsCast": 758,
     "regVoters": 972,
     "pres": {
@@ -3263,6 +3343,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "PENINSULA VILL",
+    "township": "Peninsula",
     "ballotsCast": 358,
     "regVoters": 434,
     "pres": {
@@ -3304,6 +3385,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "RICHFIELD TWP Y",
+    "township": "Richfield Township",
     "ballotsCast": 901,
     "regVoters": 1056,
     "pres": {
@@ -3345,6 +3427,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "RICHFIELD TWP Z",
+    "township": "Richfield Township",
     "ballotsCast": 962,
     "regVoters": 1142,
     "pres": {
@@ -3386,6 +3469,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "RICHFIELD VILL A",
+    "township": "Richfield Village",
     "ballotsCast": 783,
     "regVoters": 946,
     "pres": {
@@ -3427,6 +3511,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "RICHFIELD VILL B",
+    "township": "Richfield Village",
     "ballotsCast": 923,
     "regVoters": 1073,
     "pres": {
@@ -3468,6 +3553,7 @@ export const oh31PrecinctData: OH31Precinct[] = [
   },
   {
     "precinct": "RICHFIELD VILL C",
+    "township": "Richfield Village",
     "ballotsCast": 843,
     "regVoters": 1022,
     "pres": {

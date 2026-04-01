@@ -58,12 +58,14 @@ function SortIcon({ active, dir }: { active: boolean; dir: SortDir }) {
   return <span className="inline-flex ml-1" style={{ fontSize: 9 }}>{dir === "asc" ? "▲" : "▼"}</span>;
 }
 
-const RACE_GROUPS: { label: string; d: SortKey; r: SortKey; dpct: SortKey; rpct: SortKey; margin: SortKey }[] = [
-  { label: "State Rep",   d: "strep_d",  r: "strep_r",  dpct: "strep_dpct",  rpct: "strep_rpct",  margin: "strep_margin"  },
-  { label: "President",   d: "pres_d",   r: "pres_r",   dpct: "pres_dpct",   rpct: "pres_rpct",   margin: "pres_margin"   },
-  { label: "Senate",      d: "senate_d", r: "senate_r", dpct: "senate_dpct", rpct: "senate_rpct", margin: "senate_margin" },
-  { label: "House",       d: "house_d",  r: "house_r",  dpct: "house_dpct",  rpct: "house_rpct",  margin: "house_margin"  },
-];
+function getRaceGroups(year: "2024" | "2022") {
+  return [
+    { label: "State Rep",                    d: "strep_d",  r: "strep_r",  dpct: "strep_dpct",  rpct: "strep_rpct",  margin: "strep_margin"  },
+    { label: year === "2022" ? "Governor" : "President", d: "pres_d",   r: "pres_r",   dpct: "pres_dpct",   rpct: "pres_rpct",   margin: "pres_margin"   },
+    { label: "Senate",                       d: "senate_d", r: "senate_r", dpct: "senate_dpct", rpct: "senate_rpct", margin: "senate_margin" },
+    { label: "House",                        d: "house_d",  r: "house_r",  dpct: "house_dpct",  rpct: "house_rpct",  margin: "house_margin"  },
+  ] as { label: string; d: SortKey; r: SortKey; dpct: SortKey; rpct: SortKey; margin: SortKey }[];
+}
 
 const thBase = "px-3 py-2 font-medium whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity";
 const stickyTopLeftStyle: React.CSSProperties = {
@@ -83,11 +85,13 @@ const stickyFirstColStyle: React.CSSProperties = {
 
 export default function OH31PrecinctTable({
   data,
+  year,
   townshipFilter,
   setTownshipFilter,
   totalPrecinctCount,
 }: {
   data: OH31Precinct[];
+  year: "2024" | "2022";
   townshipFilter: TownshipFilter;
   setTownshipFilter: (value: TownshipFilter) => void;
   totalPrecinctCount: number;
@@ -108,6 +112,7 @@ export default function OH31PrecinctTable({
   }
 
   const sorted = sortData(data, sortKey, sortDir);
+  const RACE_GROUPS = getRaceGroups(year);
 
   const th = (key: SortKey, label: string, extraStyle?: React.CSSProperties, align: "left" | "right" = "right") => (
     <th

@@ -18,23 +18,14 @@ export const TOWNSHIP_OPTIONS = [
 
 export type TownshipFilter = (typeof TOWNSHIP_OPTIONS)[number]["value"];
 
-export function matchesTownship(precinctName: string, township: TownshipFilter): boolean {
-  if (township === "all") return true;
-  if (township === "barberton") return precinctName.startsWith("BARBERTON ");
-  if (township === "bath") return precinctName.startsWith("BATH TWP ");
-  if (township === "boston_heights") return precinctName.startsWith("BOSTON HTS ");
-  if (township === "boston_twp") return precinctName === "BOSTON TWP";
-  if (township === "copley") return precinctName.startsWith("COPLEY TWP ");
-  if (township === "cuyahoga_falls") return precinctName.startsWith("CUY FALLS ");
-  if (township === "norton") return precinctName.startsWith("NORTON ");
-  if (township === "peninsula") return precinctName.startsWith("PENINSULA ");
-  if (township === "richfield_township") return precinctName.startsWith("RICHFIELD TWP ");
-  if (township === "richfield_village") return precinctName.startsWith("RICHFIELD VILL ");
-  return true;
+/** Match a canonical township name (from precinct.township) against a filter value. */
+export function matchesTownshipFilter(township: string, filter: TownshipFilter): boolean {
+  if (filter === "all") return true;
+  return township.toLowerCase().replace(/\s+/g, "_") === filter;
 }
 
-export function filterPrecincts(data: OH31Precinct[], township: TownshipFilter): OH31Precinct[] {
-  return data.filter((precinct) => matchesTownship(precinct.precinct, township));
+export function filterPrecincts(data: OH31Precinct[], filter: TownshipFilter): OH31Precinct[] {
+  return data.filter((p) => matchesTownshipFilter(p.township, filter));
 }
 
 export function sumRace(data: OH31Precinct[], key: OH31RaceKey) {

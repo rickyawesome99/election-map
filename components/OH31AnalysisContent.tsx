@@ -3,40 +3,48 @@
 import { useMemo, useState } from "react";
 import OH31Map from "@/components/OH31Map";
 import OH31PrecinctTable from "@/components/OH31PrecinctTable";
+import OH31TownshipTable from "@/components/OH31TownshipTable";
 import { oh31PrecinctData } from "@/data/oh31PrecinctData";
+import { oh31PrecinctData2022 } from "@/data/oh31PrecinctData2022";
 import { filterPrecincts, sumRace, type TownshipFilter } from "@/lib/oh31Analysis";
 
-const TOTAL_LABELS = {
-  pres: "2024 President",
-  senate: "2024 Senate",
-  uSHouse: "2024 House",
-  stRep: "2024 State Rep",
-} as const;
+type TableYear = "2024" | "2022";
+
+const TOTAL_LABELS: Record<TableYear, { pres: string; senate: string; uSHouse: string; stRep: string }> = {
+  "2024": { pres: "2024 President", senate: "2024 Senate", uSHouse: "2024 House", stRep: "2024 State Rep" },
+  "2022": { pres: "2022 Governor", senate: "2022 Senate", uSHouse: "2022 House", stRep: "2022 State Rep" },
+};
 
 export default function OH31AnalysisContent() {
+  const [tableYear, setTableYear] = useState<TableYear>("2024");
   const [townshipFilter, setTownshipFilter] = useState<TownshipFilter>("all");
 
+  const activeDataset = tableYear === "2022" ? oh31PrecinctData2022 : oh31PrecinctData;
+
   const filteredPrecincts = useMemo(
-    () => filterPrecincts(oh31PrecinctData, townshipFilter),
-    [townshipFilter]
+    () => filterPrecincts(activeDataset, townshipFilter),
+    [activeDataset, townshipFilter]
   );
 
   const totalBallots = filteredPrecincts.reduce((sum, precinct) => sum + precinct.ballotsCast, 0);
   const totalRegistered = filteredPrecincts.reduce((sum, precinct) => sum + precinct.regVoters, 0);
   const turnoutPct = totalRegistered > 0 ? (totalBallots / totalRegistered) * 100 : 0;
 
+  const labels = TOTAL_LABELS[tableYear];
   const totals = {
-    stRep: { label: TOTAL_LABELS.stRep, ...sumRace(filteredPrecincts, "stRep") },
-    pres: { label: TOTAL_LABELS.pres, ...sumRace(filteredPrecincts, "pres") },
-    senate: { label: TOTAL_LABELS.senate, ...sumRace(filteredPrecincts, "senate") },
-    uSHouse: { label: TOTAL_LABELS.uSHouse, ...sumRace(filteredPrecincts, "uSHouse") },
+    stRep: { label: labels.stRep, ...sumRace(filteredPrecincts, "stRep") },
+    pres: { label: labels.pres, ...sumRace(filteredPrecincts, "pres") },
+    senate: { label: labels.senate, ...sumRace(filteredPrecincts, "senate") },
+    uSHouse: { label: labels.uSHouse, ...sumRace(filteredPrecincts, "uSHouse") },
   };
 
   return (
     <>
       <section id="oh31-map" className="scroll-mt-24">
-        <OH31Map />
+        <OH31Map townshipFilter={townshipFilter} />
       </section>
+
+      <OH31TownshipTable />
 
       <section className="mt-8">
         <h2 className="text-xl font-semibold mb-4" style={{ color: "var(--app-text-primary)" }}>
@@ -130,14 +138,37 @@ export default function OH31AnalysisContent() {
       </section>
 
       <section id="oh31-table" className="mt-10 scroll-mt-24">
-        <h2 className="text-xl font-semibold mb-4" style={{ color: "var(--app-text-primary)" }}>
-          Precinct Results
-        </h2>
+        <div className="flex items-center gap-3 mb-4 flex-wrap">
+          <h2 className="text-xl font-semibold" style={{ color: "var(--app-text-primary)" }}>
+            Precinct Results
+          </h2>
+          <div
+            className="flex items-center gap-1 rounded-lg px-1 py-1"
+            style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+          >
+            {(["2024", "2022"] as TableYear[]).map((yr) => (
+              <button
+                key={yr}
+                onClick={() => setTableYear(yr)}
+                aria-pressed={tableYear === yr}
+                className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
+                style={
+                  tableYear === yr
+                    ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
+                    : { color: "var(--app-text-muted)", border: "1px solid transparent" }
+                }
+              >
+                {yr}
+              </button>
+            ))}
+          </div>
+        </div>
         <OH31PrecinctTable
           data={filteredPrecincts}
+          year={tableYear}
           townshipFilter={townshipFilter}
           setTownshipFilter={setTownshipFilter}
-          totalPrecinctCount={oh31PrecinctData.length}
+          totalPrecinctCount={activeDataset.length}
         />
       </section>
     </>
