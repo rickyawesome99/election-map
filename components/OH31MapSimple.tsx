@@ -85,7 +85,7 @@ export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, ra
     <div
       ref={mapRef}
       className="relative rounded-xl overflow-hidden"
-      style={{ border: "1px solid var(--app-border)", background: "var(--oh31-map-unfilled)", height: mapHeight, zIndex: 0 }}
+      style={{ border: "1px solid var(--app-border)", background: darkMode ? t.bg : t.panel, height: mapHeight, zIndex: 0 }}
       onClick={() => {
         if (!isMobile) {
           setPinned(null);
@@ -120,7 +120,7 @@ export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, ra
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill={matches && race ? getRaceColor(race.dPct - race.rPct) : matches ? "var(--oh31-map-unfilled)" : t.hoverUnfilled}
+                  fill={matches && race ? getRaceColor(race.dPct - race.rPct) : matches ? (darkMode ? t.bg : t.panel) : t.hoverUnfilled}
                   stroke={t.mapStroke}
                   strokeWidth={isHovered ? 1.5 : matches ? 0.4 : 0.2}
                   style={{

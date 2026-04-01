@@ -138,7 +138,7 @@ export default function OH31MapSimple2022({ activeRace, darkMode, townshipFilter
     <div
       ref={mapRef}
       className="relative rounded-xl overflow-hidden"
-      style={{ border: "1px solid var(--app-border)", background: "var(--oh31-map-unfilled)", height: mapHeight, zIndex: 0 }}
+      style={{ border: "1px solid var(--app-border)", background: darkMode ? t.bg : t.panel, height: mapHeight, zIndex: 0 }}
       onClick={() => {
         if (!isMobile) {
           setPinned(null);
@@ -175,7 +175,7 @@ export default function OH31MapSimple2022({ activeRace, darkMode, townshipFilter
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill={matches && data ? getRaceColor(data.margin) : matches ? "var(--oh31-map-unfilled)" : t.hoverUnfilled}
+                  fill={matches && data ? getRaceColor(data.margin) : matches ? (darkMode ? t.bg : t.panel) : t.hoverUnfilled}
                   stroke={t.mapStroke}
                   strokeWidth={isHovered ? 1.5 : matches ? 0.4 : 0.2}
                   style={{

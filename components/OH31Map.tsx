@@ -90,7 +90,7 @@ export default function OH31Map({ townshipFilter }: { townshipFilter: TownshipFi
 
   useEffect(() => {
     const syncDarkMode = () => {
-      setDarkMode(document.documentElement.classList.contains("dark"));
+      setDarkMode(readDarkMode());
     };
 
     syncDarkMode();
