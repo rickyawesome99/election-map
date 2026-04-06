@@ -7,81 +7,13 @@ import type { Feature, GeoJsonProperties, Geometry } from "geojson";
 import "leaflet/dist/leaflet.css";
 import { getRaceColor } from "@/lib/colorScale";
 import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
-import { oh31PrecinctCodeToName2022, oh31ByPrecinct2022 } from "@/data/oh31PrecinctData2022";
+import { oh31ByPrecinct2020 } from "@/data/oh31PrecinctData2020";
+import { OH31Precinct } from "@/data/oh31PrecinctData";
 import { matchesTownshipFilter, type TownshipFilter } from "@/lib/oh31Analysis";
 
 type RaceKey = "stRep" | "pres" | "senate" | "uSHouse";
 type PrecinctFeature = Feature<Geometry, GeoJsonProperties>;
 type GeoData = { type: "FeatureCollection"; features: PrecinctFeature[] };
-type PropsMap = Record<string, number>;
-
-function getVotes(props: PropsMap, raceKey: RaceKey): { d: number; r: number } {
-  if (raceKey === "pres") {
-    return { d: props.G22GOVDWHA ?? 0, r: props.G22GOVRDEW ?? 0 };
-  }
-  if (raceKey === "senate") {
-    return { d: props.G22USSDRYA ?? 0, r: props.G22USSRVAN ?? 0 };
-  }
-  let d = 0, r = 0;
-  for (const [key, val] of Object.entries(props)) {
-    if (typeof val !== "number" || val === 0) continue;
-    if (raceKey === "uSHouse") {
-      if (/^GCON\d+D/.test(key)) d += val;
-      else if (/^GCON\d+R/.test(key)) r += val;
-    } else {
-      // stRep: State House (GSL fields)
-      if (/^GSL\d+D/.test(key)) d += val;
-      else if (/^GSL\d+R/.test(key)) r += val;
-    }
-  }
-  return { d, r };
-}
-
-function getMargin(props: PropsMap, raceKey: RaceKey): number | null {
-  const { d, r } = getVotes(props, raceKey);
-  const total = d + r;
-  return total > 0 ? ((d - r) / total) * 100 : null;
-}
-
-
-function buildTooltipHtml(
-  props: PropsMap,
-  name: string,
-  activeRace: RaceKey,
-  raceLabel: string,
-  t: typeof DARK_THEME
-): string {
-  const bg = t.panel, border = t.border, text = t.textPrimary, muted = t.textMuted;
-  const dem = t.demText, rep = t.repText;
-
-  const { d, r } = getVotes(props, activeRace);
-  const total = d + r;
-  const dPct = total > 0 ? (d / total) * 100 : 0;
-  const rPct = total > 0 ? (r / total) * 100 : 0;
-  const margin = dPct - rPct;
-  const marginStr = margin >= 0 ? `D+${margin.toFixed(1)}%` : `R+${Math.abs(margin).toFixed(1)}%`;
-  const marginColor = margin >= 0 ? dem : rep;
-
-  const govData = getVotes(props, "pres");
-  const ballots = govData.d + govData.r;
-
-  return `
-    <div style="background:${bg};border:1px solid ${border};border-radius:8px;padding:12px;min-width:210px;font-family:inherit;box-shadow:0 4px 16px rgba(0,0,0,0.3)">
-      <div style="font-weight:700;font-size:12px;letter-spacing:0.04em;text-transform:uppercase;color:${text};margin-bottom:8px">${name}</div>
-      <div style="font-size:11px;color:${muted};margin-bottom:12px">${raceLabel} · ${ballots.toLocaleString()} ballots</div>
-      <div style="display:inline-grid;grid-template-columns:auto auto auto;align-items:start;column-gap:8px">
-        <div>
-          <div style="color:${dem};font-size:12px;font-weight:600">D ${d.toLocaleString()}</div>
-          <div style="color:${dem};opacity:0.9;font-size:11px">(${dPct.toFixed(1)}%)</div>
-        </div>
-        <div>
-          <div style="color:${rep};font-size:12px;font-weight:600">R ${r.toLocaleString()}</div>
-          <div style="color:${rep};opacity:0.9;font-size:11px">(${rPct.toFixed(1)}%)</div>
-        </div>
-        <div style="color:${marginColor};font-size:14px;line-height:1;font-weight:700;padding-top:1px;white-space:nowrap">${marginStr}</div>
-      </div>
-    </div>`;
-}
 
 function FitBoundsControl({ geoData, onReady }: { geoData: GeoData; onReady: (fn: () => void) => void }) {
   const map = useMap();
@@ -100,12 +32,37 @@ interface Props {
   raceLabel: string;
 }
 
-export default function OH31MapLeaflet2022({ activeRace, darkMode, onReady, townshipFilter, raceLabel }: Props) {
+function buildTooltipHtml(precinct: OH31Precinct, activeRace: RaceKey, raceLabel: string, t: typeof DARK_THEME): string {
+  const bg = t.panel, border = t.border, text = t.textPrimary, muted = t.textMuted;
+  const dem = t.demText, rep = t.repText;
+  const race = precinct[activeRace];
+  const margin = race.dPct - race.rPct;
+  const marginStr = margin >= 0 ? `D+${margin.toFixed(1)}%` : `R+${Math.abs(margin).toFixed(1)}%`;
+  const marginColor = margin >= 0 ? dem : rep;
+  return `
+    <div style="background:${bg};border:1px solid ${border};border-radius:8px;padding:12px;min-width:210px;font-family:inherit;box-shadow:0 4px 16px rgba(0,0,0,0.3)">
+      <div style="font-weight:700;font-size:12px;letter-spacing:0.04em;text-transform:uppercase;color:${text};margin-bottom:8px">${precinct.precinct}</div>
+      <div style="font-size:11px;color:${muted};margin-bottom:12px">${raceLabel} · ${precinct.ballotsCast.toLocaleString()} ballots</div>
+      <div style="display:inline-grid;grid-template-columns:auto auto auto;align-items:start;column-gap:8px">
+        <div>
+          <div style="color:${dem};font-size:12px;font-weight:600">D ${race.dVotes.toLocaleString()}</div>
+          <div style="color:${dem};opacity:0.9;font-size:11px">(${race.dPct.toFixed(1)}%)</div>
+        </div>
+        <div>
+          <div style="color:${rep};font-size:12px;font-weight:600">R ${race.rVotes.toLocaleString()}</div>
+          <div style="color:${rep};opacity:0.9;font-size:11px">(${race.rPct.toFixed(1)}%)</div>
+        </div>
+        <div style="color:${marginColor};font-size:14px;line-height:1;font-weight:700;padding-top:1px;white-space:nowrap">${marginStr}</div>
+      </div>
+    </div>`;
+}
+
+export default function OH31MapLeaflet2020({ activeRace, darkMode, onReady, townshipFilter, raceLabel }: Props) {
   const [geoData, setGeoData] = useState<GeoData | null>(null);
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
 
   useEffect(() => {
-    fetch("/oh31_2022_precincts.geojson")
+    fetch("/oh31_2020_precincts.geojson")
       .then((r) => r.json())
       .then((data: GeoData) => setGeoData(data));
   }, []);
@@ -115,14 +72,12 @@ export default function OH31MapLeaflet2022({ activeRace, darkMode, onReady, town
     : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
 
   const styleFeature: StyleFunction = (feature) => {
-    const props = (feature?.properties ?? {}) as PropsMap;
-    const code = (feature?.properties?.PRECINCT as string) ?? "";
-    const name = oh31PrecinctCodeToName2022[code] ?? code;
-    const township = oh31ByPrecinct2022[name]?.township ?? "";
-    const matches = !township || matchesTownshipFilter(township, townshipFilter);
-    const margin = getMargin(props, activeRace);
+    const name = (feature?.properties?.NAME20 as string) ?? "";
+    const precinct = oh31ByPrecinct2020[name];
+    const race = precinct?.[activeRace];
+    const matches = !precinct || matchesTownshipFilter(precinct.township, townshipFilter);
     return {
-      fillColor: matches && margin !== null ? getRaceColor(margin) : darkMode ? "#3a4455" : "#a8b0ba",
+      fillColor: matches && race ? getRaceColor(race.dPct - race.rPct) : darkMode ? "#3a4455" : "#a8b0ba",
       fillOpacity: matches ? 0.65 : 0.45,
       color: darkMode ? "#0d1117" : "#f6f8fa",
       weight: matches ? 0.8 : 0.3,
@@ -130,15 +85,14 @@ export default function OH31MapLeaflet2022({ activeRace, darkMode, onReady, town
   };
 
   const onEachFeature = (feature: PrecinctFeature, layer: Layer) => {
-    const props = (feature?.properties ?? {}) as PropsMap;
-    const code = (feature?.properties?.PRECINCT as string) ?? "";
-    const name = oh31PrecinctCodeToName2022[code] ?? code;
-    const township = oh31ByPrecinct2022[name]?.township ?? "";
-    if (township && !matchesTownshipFilter(township, townshipFilter)) return;
+    const name = (feature?.properties?.NAME20 as string) ?? "";
+    const precinct = oh31ByPrecinct2020[name];
+    if (!precinct) return;
+    if (!matchesTownshipFilter(precinct.township, townshipFilter)) return;
 
     const pathLayer = layer as L.Path;
 
-    layer.bindTooltip(buildTooltipHtml(props, name, activeRace, raceLabel, t), {
+    layer.bindTooltip(buildTooltipHtml(precinct, activeRace, raceLabel, t), {
       sticky: true,
       opacity: 1,
       className: "oh31-tooltip",
@@ -194,7 +148,7 @@ export default function OH31MapLeaflet2022({ activeRace, darkMode, onReady, town
             attribution='&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           />
           <GeoJSON
-            key={`2022-${activeRace}-${darkMode}-${townshipFilter}`}
+            key={`2020-${activeRace}-${darkMode}-${townshipFilter}`}
             data={geoData}
             style={styleFeature}
             onEachFeature={onEachFeature}

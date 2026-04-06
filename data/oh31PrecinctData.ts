@@ -29,8 +29,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 600,
     "regVoters": 935,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 226,
       "rVotes": 363,
       "total": 595,
@@ -38,8 +38,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 61.01
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 254,
       "rVotes": 312,
       "total": 589,
@@ -47,8 +47,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 52.97
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 238,
       "rVotes": 342,
       "total": 580,
@@ -56,8 +56,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 58.97
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 213,
       "rVotes": 352,
       "total": 565,
@@ -71,8 +71,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 572,
     "regVoters": 867,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 216,
       "rVotes": 343,
       "total": 569,
@@ -80,8 +80,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 60.28
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 229,
       "rVotes": 312,
       "total": 564,
@@ -89,8 +89,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 55.32
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 234,
       "rVotes": 323,
       "total": 557,
@@ -98,8 +98,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 57.99
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 209,
       "rVotes": 332,
       "total": 541,
@@ -113,8 +113,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 606,
     "regVoters": 873,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 234,
       "rVotes": 363,
       "total": 604,
@@ -122,8 +122,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 60.1
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 262,
       "rVotes": 306,
       "total": 593,
@@ -131,8 +131,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.6
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 254,
       "rVotes": 331,
       "total": 585,
@@ -140,8 +140,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 56.58
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 236,
       "rVotes": 340,
       "total": 576,
@@ -155,8 +155,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 572,
     "regVoters": 904,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 259,
       "rVotes": 301,
       "total": 566,
@@ -164,8 +164,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 53.18
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 272,
       "rVotes": 255,
       "total": 557,
@@ -173,8 +173,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.78
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 265,
       "rVotes": 282,
       "total": 547,
@@ -182,8 +182,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.55
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 242,
       "rVotes": 289,
       "total": 531,
@@ -197,8 +197,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 646,
     "regVoters": 923,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 284,
       "rVotes": 345,
       "total": 641,
@@ -206,8 +206,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 53.82
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 309,
       "rVotes": 285,
       "total": 629,
@@ -215,8 +215,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.31
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 296,
       "rVotes": 322,
       "total": 618,
@@ -224,8 +224,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 52.1
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 287,
       "rVotes": 319,
       "total": 606,
@@ -239,8 +239,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 723,
     "regVoters": 944,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 320,
       "rVotes": 383,
       "total": 711,
@@ -248,8 +248,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 53.87
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 351,
       "rVotes": 340,
       "total": 713,
@@ -257,8 +257,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.69
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 333,
       "rVotes": 364,
       "total": 697,
@@ -266,8 +266,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 52.22
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 287,
       "rVotes": 401,
       "total": 688,
@@ -281,8 +281,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 725,
     "regVoters": 1148,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 428,
       "rVotes": 281,
       "total": 719,
@@ -290,8 +290,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 39.08
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 443,
       "rVotes": 242,
       "total": 707,
@@ -299,8 +299,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 34.23
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 450,
       "rVotes": 250,
       "total": 700,
@@ -308,8 +308,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 35.71
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 426,
       "rVotes": 264,
       "total": 690,
@@ -323,8 +323,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 652,
     "regVoters": 1019,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 368,
       "rVotes": 272,
       "total": 645,
@@ -332,8 +332,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 42.17
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 378,
       "rVotes": 246,
       "total": 645,
@@ -341,8 +341,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.14
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 380,
       "rVotes": 256,
       "total": 636,
@@ -350,8 +350,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.25
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 355,
       "rVotes": 262,
       "total": 617,
@@ -365,8 +365,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 859,
     "regVoters": 1027,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 376,
       "rVotes": 456,
       "total": 844,
@@ -374,8 +374,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 54.03
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 400,
       "rVotes": 429,
       "total": 843,
@@ -383,8 +383,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 50.89
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 395,
       "rVotes": 438,
       "total": 833,
@@ -392,8 +392,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 52.58
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 354,
       "rVotes": 447,
       "total": 801,
@@ -407,8 +407,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 658,
     "regVoters": 1195,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 297,
       "rVotes": 351,
       "total": 654,
@@ -416,8 +416,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 53.67
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 307,
       "rVotes": 294,
       "total": 644,
@@ -425,8 +425,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.65
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 325,
       "rVotes": 308,
       "total": 633,
@@ -434,8 +434,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 48.66
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 294,
       "rVotes": 319,
       "total": 613,
@@ -449,8 +449,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 772,
     "regVoters": 1173,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 344,
       "rVotes": 409,
       "total": 762,
@@ -458,8 +458,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 53.67
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 378,
       "rVotes": 332,
       "total": 752,
@@ -467,8 +467,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.15
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 373,
       "rVotes": 357,
       "total": 730,
@@ -476,8 +476,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 48.9
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 347,
       "rVotes": 369,
       "total": 716,
@@ -491,8 +491,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 775,
     "regVoters": 1179,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 297,
       "rVotes": 458,
       "total": 770,
@@ -500,8 +500,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 59.48
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 339,
       "rVotes": 388,
       "total": 758,
@@ -509,8 +509,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.19
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 325,
       "rVotes": 419,
       "total": 744,
@@ -518,8 +518,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 56.32
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 288,
       "rVotes": 440,
       "total": 728,
@@ -533,8 +533,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 732,
     "regVoters": 1167,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 284,
       "rVotes": 436,
       "total": 723,
@@ -542,8 +542,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 60.3
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 296,
       "rVotes": 363,
       "total": 707,
@@ -551,8 +551,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.34
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 305,
       "rVotes": 395,
       "total": 700,
@@ -560,8 +560,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 56.43
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 279,
       "rVotes": 400,
       "total": 679,
@@ -575,8 +575,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 827,
     "regVoters": 1245,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 304,
       "rVotes": 508,
       "total": 820,
@@ -584,8 +584,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 61.95
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 324,
       "rVotes": 445,
       "total": 806,
@@ -593,8 +593,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 55.21
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 318,
       "rVotes": 474,
       "total": 792,
@@ -602,8 +602,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 59.85
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 282,
       "rVotes": 480,
       "total": 762,
@@ -617,8 +617,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 963,
     "regVoters": 1231,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 387,
       "rVotes": 554,
       "total": 953,
@@ -626,8 +626,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 58.13
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 421,
       "rVotes": 487,
       "total": 941,
@@ -635,8 +635,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.75
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 410,
       "rVotes": 522,
       "total": 932,
@@ -644,8 +644,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 56.01
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 369,
       "rVotes": 534,
       "total": 903,
@@ -659,8 +659,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 860,
     "regVoters": 1021,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 357,
       "rVotes": 475,
       "total": 845,
@@ -668,8 +668,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 56.21
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 375,
       "rVotes": 451,
       "total": 845,
@@ -677,8 +677,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 53.37
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 337,
       "rVotes": 495,
       "total": 832,
@@ -686,8 +686,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 59.5
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 287,
       "rVotes": 539,
       "total": 826,
@@ -701,8 +701,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 829,
     "regVoters": 988,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 351,
       "rVotes": 453,
       "total": 813,
@@ -710,8 +710,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 55.72
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 381,
       "rVotes": 410,
       "total": 813,
@@ -719,8 +719,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 50.43
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 342,
       "rVotes": 462,
       "total": 804,
@@ -728,8 +728,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 57.46
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 291,
       "rVotes": 502,
       "total": 793,
@@ -743,8 +743,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 843,
     "regVoters": 982,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 417,
       "rVotes": 404,
       "total": 837,
@@ -752,8 +752,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 48.27
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 427,
       "rVotes": 395,
       "total": 832,
@@ -761,8 +761,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.48
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 406,
       "rVotes": 410,
       "total": 816,
@@ -770,8 +770,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 50.25
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 351,
       "rVotes": 458,
       "total": 809,
@@ -785,8 +785,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 1068,
     "regVoters": 1270,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 496,
       "rVotes": 543,
       "total": 1057,
@@ -794,8 +794,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.37
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 515,
       "rVotes": 516,
       "total": 1057,
@@ -803,8 +803,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 48.82
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 463,
       "rVotes": 578,
       "total": 1041,
@@ -812,8 +812,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 55.52
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 427,
       "rVotes": 604,
       "total": 1031,
@@ -827,8 +827,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 788,
     "regVoters": 938,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 392,
       "rVotes": 379,
       "total": 781,
@@ -836,8 +836,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 48.53
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 401,
       "rVotes": 348,
       "total": 769,
@@ -845,8 +845,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.25
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 380,
       "rVotes": 385,
       "total": 765,
@@ -854,8 +854,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 50.33
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 331,
       "rVotes": 428,
       "total": 759,
@@ -869,8 +869,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 808,
     "regVoters": 977,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 413,
       "rVotes": 365,
       "total": 796,
@@ -878,8 +878,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.85
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 425,
       "rVotes": 355,
       "total": 793,
@@ -887,8 +887,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.77
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 400,
       "rVotes": 385,
       "total": 785,
@@ -896,8 +896,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 49.04
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 313,
       "rVotes": 391,
       "total": 704,
@@ -911,8 +911,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 798,
     "regVoters": 973,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 394,
       "rVotes": 388,
       "total": 791,
@@ -920,8 +920,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 49.05
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 394,
       "rVotes": 380,
       "total": 787,
@@ -929,8 +929,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 48.28
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 368,
       "rVotes": 405,
       "total": 773,
@@ -938,8 +938,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 52.39
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 325,
       "rVotes": 446,
       "total": 771,
@@ -953,8 +953,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 807,
     "regVoters": 958,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 495,
       "rVotes": 287,
       "total": 796,
@@ -962,8 +962,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 36.06
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 526,
       "rVotes": 248,
       "total": 791,
@@ -971,8 +971,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 31.35
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 498,
       "rVotes": 291,
       "total": 789,
@@ -980,8 +980,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 36.88
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 17,
       "rVotes": 25,
       "total": 42,
@@ -995,8 +995,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 923,
     "regVoters": 1102,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 363,
       "rVotes": 529,
       "total": 907,
@@ -1004,8 +1004,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 58.32
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 391,
       "rVotes": 483,
       "total": 901,
@@ -1013,8 +1013,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 53.61
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 354,
       "rVotes": 523,
       "total": 877,
@@ -1022,8 +1022,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 59.64
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 316,
       "rVotes": 551,
       "total": 867,
@@ -1037,8 +1037,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 453,
     "regVoters": 592,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 208,
       "rVotes": 234,
       "total": 449,
@@ -1046,8 +1046,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 52.12
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 214,
       "rVotes": 221,
       "total": 446,
@@ -1055,8 +1055,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 49.55
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 197,
       "rVotes": 237,
       "total": 434,
@@ -1064,8 +1064,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 54.61
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 193,
       "rVotes": 230,
       "total": 423,
@@ -1079,8 +1079,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 1036,
     "regVoters": 1303,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 574,
       "rVotes": 434,
       "total": 1020,
@@ -1088,8 +1088,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 42.55
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 599,
       "rVotes": 406,
       "total": 1021,
@@ -1097,8 +1097,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 39.76
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 550,
       "rVotes": 448,
       "total": 998,
@@ -1106,8 +1106,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.89
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 487,
       "rVotes": 493,
       "total": 980,
@@ -1121,8 +1121,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 985,
     "regVoters": 1272,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 556,
       "rVotes": 402,
       "total": 974,
@@ -1130,8 +1130,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.27
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 569,
       "rVotes": 371,
       "total": 969,
@@ -1139,8 +1139,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.29
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 531,
       "rVotes": 421,
       "total": 952,
@@ -1148,8 +1148,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.22
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 480,
       "rVotes": 456,
       "total": 936,
@@ -1163,8 +1163,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 847,
     "regVoters": 1149,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 443,
       "rVotes": 375,
       "total": 834,
@@ -1172,8 +1172,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.96
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 462,
       "rVotes": 338,
       "total": 823,
@@ -1181,8 +1181,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.07
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 428,
       "rVotes": 376,
       "total": 804,
@@ -1190,8 +1190,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 46.77
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 390,
       "rVotes": 393,
       "total": 783,
@@ -1205,8 +1205,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 876,
     "regVoters": 1045,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 497,
       "rVotes": 353,
       "total": 867,
@@ -1214,8 +1214,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.72
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 506,
       "rVotes": 322,
       "total": 851,
@@ -1223,8 +1223,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 37.84
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 475,
       "rVotes": 360,
       "total": 835,
@@ -1232,8 +1232,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.11
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 414,
       "rVotes": 409,
       "total": 823,
@@ -1247,8 +1247,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 892,
     "regVoters": 1075,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 509,
       "rVotes": 362,
       "total": 881,
@@ -1256,8 +1256,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.09
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 538,
       "rVotes": 315,
       "total": 877,
@@ -1265,8 +1265,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 35.92
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 501,
       "rVotes": 365,
       "total": 866,
@@ -1274,8 +1274,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 42.15
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 441,
       "rVotes": 413,
       "total": 854,
@@ -1289,8 +1289,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 897,
     "regVoters": 1180,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 485,
       "rVotes": 389,
       "total": 886,
@@ -1298,8 +1298,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.91
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 505,
       "rVotes": 351,
       "total": 881,
@@ -1307,8 +1307,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 39.84
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 492,
       "rVotes": 382,
       "total": 874,
@@ -1316,8 +1316,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.71
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 436,
       "rVotes": 422,
       "total": 858,
@@ -1331,8 +1331,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 908,
     "regVoters": 1059,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 420,
       "rVotes": 465,
       "total": 899,
@@ -1340,8 +1340,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.72
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 445,
       "rVotes": 420,
       "total": 890,
@@ -1349,8 +1349,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.19
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 422,
       "rVotes": 460,
       "total": 882,
@@ -1358,8 +1358,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 52.15
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 370,
       "rVotes": 501,
       "total": 871,
@@ -1373,8 +1373,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 888,
     "regVoters": 1088,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 427,
       "rVotes": 439,
       "total": 877,
@@ -1382,8 +1382,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 50.06
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 447,
       "rVotes": 399,
       "total": 873,
@@ -1391,8 +1391,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.7
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 444,
       "rVotes": 417,
       "total": 861,
@@ -1400,8 +1400,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 48.43
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 388,
       "rVotes": 450,
       "total": 838,
@@ -1415,8 +1415,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 881,
     "regVoters": 1094,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 475,
       "rVotes": 391,
       "total": 871,
@@ -1424,8 +1424,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.89
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 485,
       "rVotes": 351,
       "total": 859,
@@ -1433,8 +1433,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.86
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 473,
       "rVotes": 379,
       "total": 852,
@@ -1442,8 +1442,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.48
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 441,
       "rVotes": 395,
       "total": 836,
@@ -1457,8 +1457,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 844,
     "regVoters": 1129,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 516,
       "rVotes": 311,
       "total": 837,
@@ -1466,8 +1466,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 37.16
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 527,
       "rVotes": 269,
       "total": 829,
@@ -1475,8 +1475,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 32.45
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 524,
       "rVotes": 288,
       "total": 812,
@@ -1484,8 +1484,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 35.47
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 492,
       "rVotes": 301,
       "total": 793,
@@ -1499,8 +1499,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 865,
     "regVoters": 1092,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 494,
       "rVotes": 356,
       "total": 859,
@@ -1508,8 +1508,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.44
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 516,
       "rVotes": 301,
       "total": 848,
@@ -1517,8 +1517,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 35.5
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 509,
       "rVotes": 331,
       "total": 840,
@@ -1526,8 +1526,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 39.4
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 457,
       "rVotes": 359,
       "total": 816,
@@ -1541,8 +1541,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 849,
     "regVoters": 1033,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 309,
       "rVotes": 528,
       "total": 845,
@@ -1550,8 +1550,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 62.49
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 330,
       "rVotes": 483,
       "total": 832,
@@ -1559,8 +1559,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 58.05
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 312,
       "rVotes": 505,
       "total": 817,
@@ -1568,8 +1568,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 61.81
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 275,
       "rVotes": 532,
       "total": 807,
@@ -1583,8 +1583,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 761,
     "regVoters": 1129,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 399,
       "rVotes": 343,
       "total": 757,
@@ -1592,8 +1592,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.31
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 421,
       "rVotes": 280,
       "total": 737,
@@ -1601,8 +1601,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 37.99
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 414,
       "rVotes": 320,
       "total": 734,
@@ -1610,8 +1610,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.6
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 405,
       "rVotes": 304,
       "total": 709,
@@ -1625,8 +1625,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 829,
     "regVoters": 1123,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 427,
       "rVotes": 388,
       "total": 823,
@@ -1634,8 +1634,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.14
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 438,
       "rVotes": 327,
       "total": 806,
@@ -1643,8 +1643,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.57
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 436,
       "rVotes": 360,
       "total": 796,
@@ -1652,8 +1652,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.23
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 413,
       "rVotes": 359,
       "total": 772,
@@ -1667,8 +1667,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 737,
     "regVoters": 1090,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 429,
       "rVotes": 291,
       "total": 731,
@@ -1676,8 +1676,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 39.81
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 440,
       "rVotes": 250,
       "total": 710,
@@ -1685,8 +1685,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 35.21
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 432,
       "rVotes": 275,
       "total": 707,
@@ -1694,8 +1694,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.9
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 403,
       "rVotes": 287,
       "total": 690,
@@ -1709,8 +1709,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 797,
     "regVoters": 1132,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 485,
       "rVotes": 300,
       "total": 792,
@@ -1718,8 +1718,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 37.88
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 489,
       "rVotes": 250,
       "total": 766,
@@ -1727,8 +1727,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 32.64
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 478,
       "rVotes": 280,
       "total": 758,
@@ -1736,8 +1736,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 36.94
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 455,
       "rVotes": 278,
       "total": 733,
@@ -1751,8 +1751,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 922,
     "regVoters": 1139,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 516,
       "rVotes": 388,
       "total": 914,
@@ -1760,8 +1760,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 42.45
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 532,
       "rVotes": 329,
       "total": 901,
@@ -1769,8 +1769,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 36.51
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 526,
       "rVotes": 361,
       "total": 887,
@@ -1778,8 +1778,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.7
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 507,
       "rVotes": 366,
       "total": 873,
@@ -1793,8 +1793,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 810,
     "regVoters": 1151,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 434,
       "rVotes": 343,
       "total": 795,
@@ -1802,8 +1802,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.14
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 451,
       "rVotes": 296,
       "total": 790,
@@ -1811,8 +1811,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 37.47
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 456,
       "rVotes": 317,
       "total": 773,
@@ -1820,8 +1820,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.01
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 421,
       "rVotes": 341,
       "total": 762,
@@ -1835,8 +1835,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 920,
     "regVoters": 1137,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 542,
       "rVotes": 348,
       "total": 908,
@@ -1844,8 +1844,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.33
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 567,
       "rVotes": 302,
       "total": 905,
@@ -1853,8 +1853,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 33.37
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 547,
       "rVotes": 347,
       "total": 894,
@@ -1862,8 +1862,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.81
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 524,
       "rVotes": 347,
       "total": 871,
@@ -1877,8 +1877,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 805,
     "regVoters": 1136,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 477,
       "rVotes": 305,
       "total": 799,
@@ -1886,8 +1886,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.17
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 496,
       "rVotes": 253,
       "total": 781,
@@ -1895,8 +1895,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 32.39
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 478,
       "rVotes": 279,
       "total": 757,
@@ -1904,8 +1904,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 36.86
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 460,
       "rVotes": 285,
       "total": 745,
@@ -1919,8 +1919,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 814,
     "regVoters": 1020,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 419,
       "rVotes": 363,
       "total": 798,
@@ -1928,8 +1928,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.49
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 447,
       "rVotes": 322,
       "total": 804,
@@ -1937,8 +1937,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.05
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 426,
       "rVotes": 363,
       "total": 789,
@@ -1946,8 +1946,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 46.01
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 389,
       "rVotes": 383,
       "total": 772,
@@ -1961,8 +1961,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 736,
     "regVoters": 1024,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 407,
       "rVotes": 313,
       "total": 724,
@@ -1970,8 +1970,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.23
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 419,
       "rVotes": 272,
       "total": 711,
@@ -1979,8 +1979,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.26
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 387,
       "rVotes": 310,
       "total": 697,
@@ -1988,8 +1988,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.48
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 368,
       "rVotes": 308,
       "total": 676,
@@ -2003,8 +2003,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 757,
     "regVoters": 988,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 440,
       "rVotes": 301,
       "total": 752,
@@ -2012,8 +2012,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.03
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 446,
       "rVotes": 265,
       "total": 740,
@@ -2021,8 +2021,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 35.81
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 461,
       "rVotes": 282,
       "total": 743,
@@ -2030,8 +2030,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 37.95
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 421,
       "rVotes": 302,
       "total": 723,
@@ -2045,8 +2045,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 840,
     "regVoters": 1008,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 456,
       "rVotes": 370,
       "total": 832,
@@ -2054,8 +2054,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.47
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 475,
       "rVotes": 334,
       "total": 830,
@@ -2063,8 +2063,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.24
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 458,
       "rVotes": 359,
       "total": 817,
@@ -2072,8 +2072,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.94
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 432,
       "rVotes": 371,
       "total": 803,
@@ -2087,8 +2087,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 831,
     "regVoters": 995,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 503,
       "rVotes": 317,
       "total": 827,
@@ -2096,8 +2096,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.33
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 506,
       "rVotes": 285,
       "total": 816,
@@ -2105,8 +2105,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 34.93
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 486,
       "rVotes": 322,
       "total": 808,
@@ -2114,8 +2114,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 39.85
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 470,
       "rVotes": 325,
       "total": 795,
@@ -2129,8 +2129,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 845,
     "regVoters": 1097,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 433,
       "rVotes": 389,
       "total": 835,
@@ -2138,8 +2138,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 46.59
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 456,
       "rVotes": 329,
       "total": 823,
@@ -2147,8 +2147,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 39.98
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 440,
       "rVotes": 363,
       "total": 803,
@@ -2156,8 +2156,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.21
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 426,
       "rVotes": 356,
       "total": 782,
@@ -2171,8 +2171,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 865,
     "regVoters": 1117,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 483,
       "rVotes": 355,
       "total": 851,
@@ -2180,8 +2180,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.72
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 505,
       "rVotes": 315,
       "total": 849,
@@ -2189,8 +2189,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 37.1
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 500,
       "rVotes": 335,
       "total": 835,
@@ -2198,8 +2198,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.12
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 468,
       "rVotes": 343,
       "total": 811,
@@ -2213,8 +2213,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 896,
     "regVoters": 1107,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 444,
       "rVotes": 428,
       "total": 884,
@@ -2222,8 +2222,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 48.42
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 481,
       "rVotes": 364,
       "total": 882,
@@ -2231,8 +2231,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.27
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 465,
       "rVotes": 406,
       "total": 871,
@@ -2240,8 +2240,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 46.61
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 434,
       "rVotes": 415,
       "total": 849,
@@ -2255,8 +2255,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 878,
     "regVoters": 1096,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 495,
       "rVotes": 356,
       "total": 870,
@@ -2264,8 +2264,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.92
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 527,
       "rVotes": 291,
       "total": 858,
@@ -2273,8 +2273,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 33.92
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 504,
       "rVotes": 346,
       "total": 850,
@@ -2282,8 +2282,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.71
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 463,
       "rVotes": 359,
       "total": 822,
@@ -2297,8 +2297,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 618,
     "regVoters": 1027,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 383,
       "rVotes": 217,
       "total": 608,
@@ -2306,8 +2306,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 35.69
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 387,
       "rVotes": 189,
       "total": 604,
@@ -2315,8 +2315,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 31.29
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 397,
       "rVotes": 207,
       "total": 604,
@@ -2324,8 +2324,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 34.27
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 362,
       "rVotes": 215,
       "total": 577,
@@ -2339,8 +2339,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 939,
     "regVoters": 1181,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 501,
       "rVotes": 413,
       "total": 925,
@@ -2348,8 +2348,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.65
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 529,
       "rVotes": 371,
       "total": 924,
@@ -2357,8 +2357,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.15
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 498,
       "rVotes": 402,
       "total": 900,
@@ -2366,8 +2366,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.67
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 443,
       "rVotes": 425,
       "total": 868,
@@ -2381,8 +2381,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 804,
     "regVoters": 1090,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 450,
       "rVotes": 327,
       "total": 787,
@@ -2390,8 +2390,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.55
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 470,
       "rVotes": 299,
       "total": 794,
@@ -2399,8 +2399,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 37.66
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 459,
       "rVotes": 325,
       "total": 784,
@@ -2408,8 +2408,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.45
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 414,
       "rVotes": 355,
       "total": 769,
@@ -2423,8 +2423,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 799,
     "regVoters": 1023,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 439,
       "rVotes": 343,
       "total": 792,
@@ -2432,8 +2432,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.31
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 450,
       "rVotes": 300,
       "total": 779,
@@ -2441,8 +2441,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.51
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 435,
       "rVotes": 330,
       "total": 765,
@@ -2450,8 +2450,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.14
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 415,
       "rVotes": 347,
       "total": 762,
@@ -2465,8 +2465,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 816,
     "regVoters": 1057,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 412,
       "rVotes": 387,
       "total": 809,
@@ -2474,8 +2474,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.84
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 437,
       "rVotes": 335,
       "total": 800,
@@ -2483,8 +2483,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.88
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 418,
       "rVotes": 367,
       "total": 785,
@@ -2492,8 +2492,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 46.75
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 401,
       "rVotes": 363,
       "total": 764,
@@ -2507,8 +2507,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 902,
     "regVoters": 1131,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 444,
       "rVotes": 438,
       "total": 894,
@@ -2516,8 +2516,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 48.99
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 470,
       "rVotes": 378,
       "total": 886,
@@ -2525,8 +2525,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 42.66
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 452,
       "rVotes": 409,
       "total": 861,
@@ -2534,8 +2534,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.5
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 413,
       "rVotes": 436,
       "total": 849,
@@ -2549,8 +2549,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 790,
     "regVoters": 1051,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 413,
       "rVotes": 362,
       "total": 783,
@@ -2558,8 +2558,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 46.23
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 445,
       "rVotes": 295,
       "total": 767,
@@ -2567,8 +2567,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.46
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 412,
       "rVotes": 337,
       "total": 749,
@@ -2576,8 +2576,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.99
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 382,
       "rVotes": 350,
       "total": 732,
@@ -2591,8 +2591,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 812,
     "regVoters": 1050,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 460,
       "rVotes": 336,
       "total": 804,
@@ -2600,8 +2600,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.79
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 472,
       "rVotes": 283,
       "total": 791,
@@ -2609,8 +2609,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 35.78
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 458,
       "rVotes": 322,
       "total": 780,
@@ -2618,8 +2618,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.28
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 432,
       "rVotes": 334,
       "total": 766,
@@ -2633,8 +2633,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 720,
     "regVoters": 1077,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 437,
       "rVotes": 268,
       "total": 717,
@@ -2642,8 +2642,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 37.38
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 448,
       "rVotes": 224,
       "total": 707,
@@ -2651,8 +2651,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 31.68
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 447,
       "rVotes": 246,
       "total": 693,
@@ -2660,8 +2660,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 35.5
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 429,
       "rVotes": 246,
       "total": 675,
@@ -2675,8 +2675,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 789,
     "regVoters": 1053,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 403,
       "rVotes": 370,
       "total": 782,
@@ -2684,8 +2684,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.31
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 411,
       "rVotes": 324,
       "total": 772,
@@ -2693,8 +2693,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 41.97
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 403,
       "rVotes": 363,
       "total": 766,
@@ -2702,8 +2702,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.39
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 392,
       "rVotes": 360,
       "total": 752,
@@ -2717,8 +2717,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 846,
     "regVoters": 1132,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 413,
       "rVotes": 416,
       "total": 836,
@@ -2726,8 +2726,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 49.76
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 436,
       "rVotes": 357,
       "total": 823,
@@ -2735,8 +2735,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.38
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 429,
       "rVotes": 386,
       "total": 815,
@@ -2744,8 +2744,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.36
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 397,
       "rVotes": 391,
       "total": 788,
@@ -2759,8 +2759,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 872,
     "regVoters": 1109,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 404,
       "rVotes": 444,
       "total": 861,
@@ -2768,8 +2768,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.57
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 439,
       "rVotes": 372,
       "total": 848,
@@ -2777,8 +2777,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 43.87
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 412,
       "rVotes": 412,
       "total": 824,
@@ -2786,8 +2786,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 50
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 382,
       "rVotes": 421,
       "total": 803,
@@ -2801,8 +2801,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 858,
     "regVoters": 1001,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 412,
       "rVotes": 432,
       "total": 853,
@@ -2810,8 +2810,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 50.64
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 423,
       "rVotes": 384,
       "total": 835,
@@ -2819,8 +2819,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 45.99
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 406,
       "rVotes": 410,
       "total": 816,
@@ -2828,8 +2828,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 50.25
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 360,
       "rVotes": 410,
       "total": 770,
@@ -2843,8 +2843,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 864,
     "regVoters": 1079,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 426,
       "rVotes": 399,
       "total": 843,
@@ -2852,8 +2852,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.33
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 446,
       "rVotes": 376,
       "total": 844,
@@ -2861,8 +2861,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.55
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 421,
       "rVotes": 407,
       "total": 828,
@@ -2870,8 +2870,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 49.15
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 385,
       "rVotes": 419,
       "total": 804,
@@ -2885,8 +2885,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 820,
     "regVoters": 992,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 338,
       "rVotes": 466,
       "total": 811,
@@ -2894,8 +2894,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 57.46
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 361,
       "rVotes": 415,
       "total": 803,
@@ -2903,8 +2903,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.68
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 328,
       "rVotes": 459,
       "total": 787,
@@ -2912,8 +2912,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 58.32
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 295,
       "rVotes": 469,
       "total": 764,
@@ -2927,8 +2927,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 881,
     "regVoters": 1058,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 440,
       "rVotes": 413,
       "total": 868,
@@ -2936,8 +2936,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 47.58
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 452,
       "rVotes": 386,
       "total": 860,
@@ -2945,8 +2945,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 44.88
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 445,
       "rVotes": 411,
       "total": 856,
@@ -2954,8 +2954,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 48.01
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 404,
       "rVotes": 417,
       "total": 821,
@@ -2969,8 +2969,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 837,
     "regVoters": 1031,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 375,
       "rVotes": 436,
       "total": 822,
@@ -2978,8 +2978,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 53.04
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 403,
       "rVotes": 405,
       "total": 820,
@@ -2987,8 +2987,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 49.39
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 354,
       "rVotes": 452,
       "total": 806,
@@ -2996,8 +2996,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 56.08
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 329,
       "rVotes": 462,
       "total": 791,
@@ -3011,8 +3011,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 857,
     "regVoters": 1051,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 265,
       "rVotes": 571,
       "total": 848,
@@ -3020,8 +3020,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 67.33
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 292,
       "rVotes": 509,
       "total": 843,
@@ -3029,8 +3029,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 60.38
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 284,
       "rVotes": 541,
       "total": 825,
@@ -3038,8 +3038,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 65.58
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 235,
       "rVotes": 573,
       "total": 808,
@@ -3053,8 +3053,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 842,
     "regVoters": 1017,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 319,
       "rVotes": 510,
       "total": 838,
@@ -3062,8 +3062,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 60.86
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 336,
       "rVotes": 445,
       "total": 817,
@@ -3071,8 +3071,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 54.47
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 322,
       "rVotes": 482,
       "total": 804,
@@ -3080,8 +3080,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 59.95
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 288,
       "rVotes": 496,
       "total": 784,
@@ -3095,8 +3095,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 757,
     "regVoters": 992,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 277,
       "rVotes": 466,
       "total": 751,
@@ -3104,8 +3104,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 62.05
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 296,
       "rVotes": 403,
       "total": 735,
@@ -3113,8 +3113,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 54.83
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 297,
       "rVotes": 418,
       "total": 715,
@@ -3122,8 +3122,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 58.46
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 265,
       "rVotes": 436,
       "total": 701,
@@ -3137,8 +3137,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 1037,
     "regVoters": 1235,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 411,
       "rVotes": 608,
       "total": 1029,
@@ -3146,8 +3146,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 59.09
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 443,
       "rVotes": 550,
       "total": 1018,
@@ -3155,8 +3155,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 54.03
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 431,
       "rVotes": 567,
       "total": 998,
@@ -3164,8 +3164,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 56.81
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 368,
       "rVotes": 624,
       "total": 992,
@@ -3179,8 +3179,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 1050,
     "regVoters": 1221,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 378,
       "rVotes": 638,
       "total": 1033,
@@ -3188,8 +3188,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 61.76
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 418,
       "rVotes": 569,
       "total": 1030,
@@ -3197,8 +3197,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 55.24
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 388,
       "rVotes": 617,
       "total": 1005,
@@ -3206,8 +3206,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 61.39
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 336,
       "rVotes": 642,
       "total": 978,
@@ -3221,8 +3221,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 872,
     "regVoters": 1082,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 347,
       "rVotes": 507,
       "total": 866,
@@ -3230,8 +3230,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 58.55
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 369,
       "rVotes": 455,
       "total": 857,
@@ -3239,8 +3239,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 53.09
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 361,
       "rVotes": 480,
       "total": 841,
@@ -3248,8 +3248,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 57.07
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 302,
       "rVotes": 517,
       "total": 819,
@@ -3263,8 +3263,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 702,
     "regVoters": 927,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 231,
       "rVotes": 460,
       "total": 700,
@@ -3272,8 +3272,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 65.71
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 248,
       "rVotes": 409,
       "total": 691,
@@ -3281,8 +3281,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 59.19
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 238,
       "rVotes": 439,
       "total": 677,
@@ -3290,8 +3290,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 64.84
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 225,
       "rVotes": 440,
       "total": 665,
@@ -3305,8 +3305,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 758,
     "regVoters": 972,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 214,
       "rVotes": 534,
       "total": 755,
@@ -3314,8 +3314,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 70.73
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 248,
       "rVotes": 465,
       "total": 742,
@@ -3323,8 +3323,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 62.67
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 221,
       "rVotes": 493,
       "total": 714,
@@ -3332,8 +3332,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 69.05
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 195,
       "rVotes": 506,
       "total": 701,
@@ -3347,8 +3347,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 358,
     "regVoters": 434,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 206,
       "rVotes": 145,
       "total": 355,
@@ -3356,8 +3356,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 40.85
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 220,
       "rVotes": 127,
       "total": 353,
@@ -3365,8 +3365,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 35.98
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 211,
       "rVotes": 132,
       "total": 343,
@@ -3374,8 +3374,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 38.48
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 180,
       "rVotes": 152,
       "total": 332,
@@ -3389,8 +3389,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 901,
     "regVoters": 1056,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 351,
       "rVotes": 530,
       "total": 889,
@@ -3398,8 +3398,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 59.62
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 353,
       "rVotes": 509,
       "total": 878,
@@ -3407,8 +3407,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 57.97
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 323,
       "rVotes": 536,
       "total": 859,
@@ -3416,8 +3416,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 62.4
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 271,
       "rVotes": 589,
       "total": 860,
@@ -3431,8 +3431,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 962,
     "regVoters": 1142,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 412,
       "rVotes": 524,
       "total": 948,
@@ -3440,8 +3440,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 55.27
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 429,
       "rVotes": 487,
       "total": 940,
@@ -3449,8 +3449,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.81
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 380,
       "rVotes": 532,
       "total": 912,
@@ -3458,8 +3458,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 58.33
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 335,
       "rVotes": 589,
       "total": 924,
@@ -3473,8 +3473,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 783,
     "regVoters": 946,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 310,
       "rVotes": 451,
       "total": 773,
@@ -3482,8 +3482,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 58.34
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 321,
       "rVotes": 421,
       "total": 755,
@@ -3491,8 +3491,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 55.76
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 281,
       "rVotes": 451,
       "total": 732,
@@ -3500,8 +3500,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 61.61
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 241,
       "rVotes": 492,
       "total": 733,
@@ -3515,8 +3515,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 923,
     "regVoters": 1073,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 382,
       "rVotes": 518,
       "total": 910,
@@ -3524,8 +3524,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 56.92
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 423,
       "rVotes": 464,
       "total": 906,
@@ -3533,8 +3533,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 51.21
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 375,
       "rVotes": 505,
       "total": 880,
@@ -3542,8 +3542,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 57.39
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 304,
       "rVotes": 570,
       "total": 874,
@@ -3557,8 +3557,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
     "ballotsCast": 843,
     "regVoters": 1022,
     "pres": {
-      "dName": "Kamala Harris",
-      "rName": "Donald J. Trump",
+      "dName": "",
+      "rName": "",
       "dVotes": 318,
       "rVotes": 510,
       "total": 838,
@@ -3566,8 +3566,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 60.86
     },
     "senate": {
-      "dName": "Sherrod Brown",
-      "rName": "Bernie Moreno",
+      "dName": "",
+      "rName": "",
       "dVotes": 352,
       "rVotes": 453,
       "total": 830,
@@ -3575,8 +3575,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 54.58
     },
     "uSHouse": {
-      "dName": "Emilia Sykes",
-      "rName": "Kevin Coughlin",
+      "dName": "",
+      "rName": "",
       "dVotes": 323,
       "rVotes": 479,
       "total": 802,
@@ -3584,8 +3584,8 @@ export const oh31PrecinctData: OH31Precinct[] = [
       "rPct": 59.73
     },
     "stRep": {
-      "dName": "A. J. Harris",
-      "rName": "Bill Roemer",
+      "dName": "",
+      "rName": "",
       "dVotes": 282,
       "rVotes": 529,
       "total": 811,

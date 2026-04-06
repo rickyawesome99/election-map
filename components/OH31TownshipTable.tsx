@@ -3,6 +3,9 @@
 import { useMemo } from "react";
 import { oh31PrecinctData } from "@/data/oh31PrecinctData";
 import { oh31PrecinctData2022 } from "@/data/oh31PrecinctData2022";
+import { oh31PrecinctData2020 } from "@/data/oh31PrecinctData2020";
+import { oh31PrecinctData2018, oh31ByPrecinct2018 } from "@/data/oh31PrecinctData2018";
+import { oh31PrecinctData2016, oh31ByPrecinct2016 } from "@/data/oh31PrecinctData2016";
 import { TOWNSHIP_OPTIONS, filterPrecincts, sumRace } from "@/lib/oh31Analysis";
 import type { TownshipFilter } from "@/lib/oh31Analysis";
 import type { OH31RaceKey } from "@/lib/oh31Analysis";
@@ -21,6 +24,27 @@ const RACES_2022: { key: OH31RaceKey; label: string }[] = [
   { key: "uSHouse", label: "House"    },
 ];
 
+// 2020: no Senate race
+const RACES_2020: { key: OH31RaceKey; label: string }[] = [
+  { key: "stRep",   label: "St. Rep"   },
+  { key: "pres",    label: "President" },
+  { key: "uSHouse", label: "House"     },
+];
+
+const RACES_2018: { key: OH31RaceKey; label: string }[] = [
+  { key: "stRep",   label: "St. Rep"  },
+  { key: "pres",    label: "Governor" },
+  { key: "senate",  label: "Senate"   },
+  { key: "uSHouse", label: "House"    },
+];
+
+const RACES_2016: { key: OH31RaceKey; label: string }[] = [
+  { key: "stRep",   label: "St. Rep"   },
+  { key: "pres",    label: "President" },
+  { key: "senate",  label: "Senate"    },
+  { key: "uSHouse", label: "House"     },
+];
+
 function computeMargin(d: number, r: number): number {
   const total = d + r;
   return total === 0 ? 0 : ((d - r) / total) * 100;
@@ -32,11 +56,6 @@ function formatMargin(margin: number): string {
     : `R+${Math.abs(margin).toFixed(1)}`;
 }
 
-function formatSwing(swingToRep: number): string {
-  return swingToRep >= 0
-    ? `R+${swingToRep.toFixed(1)}`
-    : `D+${Math.abs(swingToRep).toFixed(1)}`;
-}
 
 const HEADER_STYLE: React.CSSProperties = {
   padding: "6px 10px",
@@ -71,6 +90,13 @@ const TOWNSHIP_CELL_STYLE: React.CSSProperties = {
   boxShadow: "inset -1px 0 0 var(--app-border)",
 };
 
+const TBD_CELL_STYLE: React.CSSProperties = {
+  ...CELL_STYLE,
+  color: "var(--app-text-muted)",
+  opacity: 0.6,
+  fontWeight: 400,
+};
+
 export default function OH31TownshipTable() {
   const townships = TOWNSHIP_OPTIONS.filter((t) => t.value !== "all");
 
@@ -79,6 +105,9 @@ export default function OH31TownshipTable() {
       const filter = value as TownshipFilter;
       const p24 = filterPrecincts(oh31PrecinctData, filter);
       const p22 = filterPrecincts(oh31PrecinctData2022, filter);
+      const p20 = filterPrecincts(oh31PrecinctData2020, filter);
+      const p18 = filterPrecincts(oh31PrecinctData2018, filter);
+      const p16 = filterPrecincts(oh31PrecinctData2016, filter);
 
       return {
         label,
@@ -92,13 +121,21 @@ export default function OH31TownshipTable() {
           const { d, r } = sumRace(p22, key);
           return computeMargin(d, r);
         }),
-        swingRep: (() => {
-          const stRep24 = sumRace(p24, "stRep");
-          const stRep22 = sumRace(p22, "stRep");
-          const margin24 = computeMargin(stRep24.d, stRep24.r);
-          const margin22 = computeMargin(stRep22.d, stRep22.r);
-          return margin22 - margin24;
-        })(),
+        votes2020: p20.reduce((sum, precinct) => sum + precinct.ballotsCast, 0),
+        margins2020: RACES_2020.map(({ key }) => {
+          const { d, r } = sumRace(p20, key);
+          return computeMargin(d, r);
+        }),
+        votes2018: p18.reduce((sum, precinct) => sum + precinct.ballotsCast, 0),
+        margins2018: RACES_2018.map(({ key }) => {
+          const { d, r } = sumRace(p18, key);
+          return computeMargin(d, r);
+        }),
+        votes2016: p16.reduce((sum, precinct) => sum + precinct.ballotsCast, 0),
+        margins2016: RACES_2016.map(({ key }) => {
+          const { d, r } = sumRace(p16, key);
+          return computeMargin(d, r);
+        }),
       };
     });
   }, [townships]);
@@ -133,17 +170,7 @@ export default function OH31TownshipTable() {
                 >
                   Township
                 </th>
-                <th
-                  colSpan={1}
-                  style={{
-                    ...HEADER_STYLE,
-                    borderRight: "1px solid var(--app-border)",
-                    color: "var(--app-text-muted)",
-                    letterSpacing: "0.05em",
-                    textTransform: "uppercase",
-                    fontSize: 10,
-                  }}
-                />
+                {/* 2024 */}
                 <th
                   colSpan={5}
                   style={{
@@ -157,10 +184,12 @@ export default function OH31TownshipTable() {
                 >
                   2024
                 </th>
+                {/* 2022 */}
                 <th
                   colSpan={5}
                   style={{
                     ...HEADER_STYLE,
+                    borderRight: "1px solid var(--app-border)",
                     color: "var(--app-text-muted)",
                     letterSpacing: "0.05em",
                     textTransform: "uppercase",
@@ -169,30 +198,55 @@ export default function OH31TownshipTable() {
                 >
                   2022
                 </th>
-              </tr>
-              {/* Race label row */}
-              <tr style={{ background: "var(--app-panel)" }}>
+                {/* 2020 — Votes + 3 races (no Senate) */}
                 <th
+                  colSpan={4}
                   style={{
                     ...HEADER_STYLE,
                     borderRight: "1px solid var(--app-border)",
+                    color: "var(--app-text-muted)",
+                    letterSpacing: "0.05em",
                     textTransform: "uppercase",
-                    letterSpacing: "0.04em",
                     fontSize: 10,
+                    opacity: 0.7,
                   }}
                 >
-                  Swing Rep
+                  2020
                 </th>
+                {/* 2018 — Votes + 4 races */}
                 <th
+                  colSpan={5}
                   style={{
                     ...HEADER_STYLE,
+                    borderRight: "1px solid var(--app-border)",
+                    color: "var(--app-text-muted)",
+                    letterSpacing: "0.05em",
                     textTransform: "uppercase",
-                    letterSpacing: "0.04em",
                     fontSize: 10,
+                    opacity: 0.7,
                   }}
                 >
-                  Votes
+                  2018
                 </th>
+                {/* 2016 — Votes + 4 races */}
+                <th
+                  colSpan={5}
+                  style={{
+                    ...HEADER_STYLE,
+                    color: "var(--app-text-muted)",
+                    letterSpacing: "0.05em",
+                    textTransform: "uppercase",
+                    fontSize: 10,
+                    opacity: 0.7,
+                  }}
+                >
+                  2016
+                </th>
+              </tr>
+              {/* Race label row */}
+              <tr style={{ background: "var(--app-panel)" }}>
+                {/* 2024 sub-headers */}
+                <th style={{ ...HEADER_STYLE, textTransform: "uppercase", letterSpacing: "0.04em", fontSize: 10 }}>Votes</th>
                 {RACES_2024.map(({ label }, i) => (
                   <th
                     key={`h24-${i}`}
@@ -207,21 +261,14 @@ export default function OH31TownshipTable() {
                     {label}
                   </th>
                 ))}
-                <th
-                  style={{
-                    ...HEADER_STYLE,
-                    textTransform: "uppercase",
-                    letterSpacing: "0.04em",
-                    fontSize: 10,
-                  }}
-                >
-                  Votes
-                </th>
+                {/* 2022 sub-headers */}
+                <th style={{ ...HEADER_STYLE, textTransform: "uppercase", letterSpacing: "0.04em", fontSize: 10 }}>Votes</th>
                 {RACES_2022.map(({ label }, i) => (
                   <th
                     key={`h22-${i}`}
                     style={{
                       ...HEADER_STYLE,
+                      borderRight: i === 3 ? "1px solid var(--app-border)" : undefined,
                       textTransform: "uppercase",
                       letterSpacing: "0.04em",
                       fontSize: 10,
@@ -230,10 +277,60 @@ export default function OH31TownshipTable() {
                     {label}
                   </th>
                 ))}
+                {/* 2020 sub-headers */}
+                <th style={{ ...HEADER_STYLE, textTransform: "uppercase", letterSpacing: "0.04em", fontSize: 10, opacity: 0.7 }}>Votes</th>
+                {RACES_2020.map(({ label }, i) => (
+                  <th
+                    key={`h20-${i}`}
+                    style={{
+                      ...HEADER_STYLE,
+                      borderRight: i === 2 ? "1px solid var(--app-border)" : undefined,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.04em",
+                      fontSize: 10,
+                      opacity: 0.7,
+                    }}
+                  >
+                    {label}
+                  </th>
+                ))}
+                {/* 2018 sub-headers */}
+                <th style={{ ...HEADER_STYLE, textTransform: "uppercase", letterSpacing: "0.04em", fontSize: 10, opacity: 0.7 }}>Votes</th>
+                {RACES_2018.map(({ label }, i) => (
+                  <th
+                    key={`h18-${i}`}
+                    style={{
+                      ...HEADER_STYLE,
+                      borderRight: i === 3 ? "1px solid var(--app-border)" : undefined,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.04em",
+                      fontSize: 10,
+                      opacity: 0.7,
+                    }}
+                  >
+                    {label}
+                  </th>
+                ))}
+                {/* 2016 sub-headers */}
+                <th style={{ ...HEADER_STYLE, textTransform: "uppercase", letterSpacing: "0.04em", fontSize: 10, opacity: 0.7 }}>Votes</th>
+                {RACES_2016.map(({ label }, i) => (
+                  <th
+                    key={`h16-${i}`}
+                    style={{
+                      ...HEADER_STYLE,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.04em",
+                      fontSize: 10,
+                      opacity: 0.7,
+                    }}
+                  >
+                    {label}
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>
-              {rows.map(({ label, votes2024, margins2024, votes2022, margins2022, swingRep }, rowIdx) => (
+              {rows.map(({ label, votes2024, margins2024, votes2022, margins2022, votes2020, margins2020, votes2018, margins2018, votes2016, margins2016 }, rowIdx) => (
                 <tr
                   key={label}
                   style={rowIdx % 2 === 1 ? { background: "var(--app-panel)" } : undefined}
@@ -246,21 +343,8 @@ export default function OH31TownshipTable() {
                   >
                     {label}
                   </td>
-                  <td
-                    style={{
-                      ...CELL_STYLE,
-                      color: swingRep >= 0 ? "var(--party-rep)" : "var(--party-dem)",
-                      borderRight: "1px solid var(--app-border)",
-                      }}
-                    >
-                      {formatSwing(swingRep)}
-                    </td>
-                  <td
-                    style={{
-                      ...CELL_STYLE,
-                      color: "var(--app-text-primary)",
-                    }}
-                  >
+                  {/* 2024 */}
+                  <td style={{ ...CELL_STYLE, color: "var(--app-text-primary)" }}>
                     {votes2024.toLocaleString()}
                   </td>
                   {margins2024.map((m, i) => (
@@ -275,18 +359,64 @@ export default function OH31TownshipTable() {
                       {formatMargin(m)}
                     </td>
                   ))}
-                  <td
-                    style={{
-                      ...CELL_STYLE,
-                      color: "var(--app-text-primary)",
-                      opacity: 0.9,
-                    }}
-                  >
+                  {/* 2022 */}
+                  <td style={{ ...CELL_STYLE, color: "var(--app-text-primary)", opacity: 0.9 }}>
                     {votes2022.toLocaleString()}
                   </td>
                   {margins2022.map((m, i) => (
                     <td
                       key={`m22-${i}`}
+                      style={{
+                        ...CELL_STYLE,
+                        color: m >= 0 ? "var(--party-dem)" : "var(--party-rep)",
+                        opacity: 0.85,
+                        borderRight: i === 3 ? "1px solid var(--app-border)" : undefined,
+                      }}
+                    >
+                      {formatMargin(m)}
+                    </td>
+                  ))}
+                  {/* 2020 — real data */}
+                  <td style={{ ...CELL_STYLE, color: "var(--app-text-primary)", opacity: 0.9 }}>
+                    {votes2020.toLocaleString()}
+                  </td>
+                  {margins2020.map((m, i) => (
+                    <td
+                      key={`m20-${i}`}
+                      style={{
+                        ...CELL_STYLE,
+                        color: m >= 0 ? "var(--party-dem)" : "var(--party-rep)",
+                        opacity: 0.85,
+                        borderRight: i === 2 ? "1px solid var(--app-border)" : undefined,
+                      }}
+                    >
+                      {formatMargin(m)}
+                    </td>
+                  ))}
+                  {/* 2018 — real data */}
+                  <td style={{ ...CELL_STYLE, color: "var(--app-text-primary)", opacity: 0.9 }}>
+                    {votes2018.toLocaleString()}
+                  </td>
+                  {margins2018.map((m, i) => (
+                    <td
+                      key={`m18-${i}`}
+                      style={{
+                        ...CELL_STYLE,
+                        color: m >= 0 ? "var(--party-dem)" : "var(--party-rep)",
+                        opacity: 0.85,
+                        borderRight: i === 3 ? "1px solid var(--app-border)" : undefined,
+                      }}
+                    >
+                      {formatMargin(m)}
+                    </td>
+                  ))}
+                  {/* 2016 — real data */}
+                  <td style={{ ...CELL_STYLE, color: "var(--app-text-primary)", opacity: 0.9 }}>
+                    {votes2016.toLocaleString()}
+                  </td>
+                  {margins2016.map((m, i) => (
+                    <td
+                      key={`m16-${i}`}
                       style={{
                         ...CELL_STYLE,
                         color: m >= 0 ? "var(--party-dem)" : "var(--party-rep)",

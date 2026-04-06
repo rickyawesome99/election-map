@@ -13,6 +13,7 @@
   --app-text-muted: #656d76;
   --app-text-very-muted: #949ea6;
   --oh31-map-unfilled: #c8cdd3;
+  --oh31-simple-map-bg: #ffffff;
   --oh31-legend-bg: rgba(255,255,255,0.92);
 
   /* Party colors — text (change in dark mode) */
@@ -34,6 +35,7 @@ html.dark {
   --app-text-muted: #8b949e;
   --app-text-very-muted: #484f58;
   --oh31-map-unfilled: #1e2530;
+  --oh31-simple-map-bg: #0d1117;
   --oh31-legend-bg: rgba(22,27,34,0.90);
 
   /* Party colors — lighter for dark mode readability */

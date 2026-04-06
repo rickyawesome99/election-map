@@ -58,13 +58,20 @@ function SortIcon({ active, dir }: { active: boolean; dir: SortDir }) {
   return <span className="inline-flex ml-1" style={{ fontSize: 9 }}>{dir === "asc" ? "▲" : "▼"}</span>;
 }
 
-function getRaceGroups(year: "2024" | "2022") {
-  return [
-    { label: "State Rep",                    d: "strep_d",  r: "strep_r",  dpct: "strep_dpct",  rpct: "strep_rpct",  margin: "strep_margin"  },
-    { label: year === "2022" ? "Governor" : "President", d: "pres_d",   r: "pres_r",   dpct: "pres_dpct",   rpct: "pres_rpct",   margin: "pres_margin"   },
-    { label: "Senate",                       d: "senate_d", r: "senate_r", dpct: "senate_dpct", rpct: "senate_rpct", margin: "senate_margin" },
-    { label: "House",                        d: "house_d",  r: "house_r",  dpct: "house_dpct",  rpct: "house_rpct",  margin: "house_margin"  },
-  ] as { label: string; d: SortKey; r: SortKey; dpct: SortKey; rpct: SortKey; margin: SortKey }[];
+type TableYear = "2024" | "2022" | "2020" | "2018" | "2016";
+
+function getRaceGroups(year: TableYear) {
+  const presLabel = year === "2022" || year === "2018" ? "Governor" : "President";
+  const groups: { label: string; d: SortKey; r: SortKey; dpct: SortKey; rpct: SortKey; margin: SortKey }[] = [
+    { label: "State Rep", d: "strep_d",  r: "strep_r",  dpct: "strep_dpct",  rpct: "strep_rpct",  margin: "strep_margin"  },
+    { label: presLabel,   d: "pres_d",   r: "pres_r",   dpct: "pres_dpct",   rpct: "pres_rpct",   margin: "pres_margin"   },
+  ];
+  // 2020 had no Ohio U.S. Senate race
+  if (year !== "2020") {
+    groups.push({ label: "Senate", d: "senate_d", r: "senate_r", dpct: "senate_dpct", rpct: "senate_rpct", margin: "senate_margin" });
+  }
+  groups.push({ label: "House", d: "house_d", r: "house_r", dpct: "house_dpct", rpct: "house_rpct", margin: "house_margin" });
+  return groups;
 }
 
 const thBase = "px-3 py-2 font-medium whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity";
@@ -91,7 +98,7 @@ export default function OH31PrecinctTable({
   totalPrecinctCount,
 }: {
   data: OH31Precinct[];
-  year: "2024" | "2022";
+  year: TableYear;
   townshipFilter: TownshipFilter;
   setTownshipFilter: (value: TownshipFilter) => void;
   totalPrecinctCount: number;
@@ -296,7 +303,9 @@ export default function OH31PrecinctTable({
                   className="px-4 py-8 text-center text-sm"
                   style={{ color: "var(--app-text-muted)" }}
                 >
-                  No precincts match that filter.
+                  {totalPrecinctCount === 0
+                    ? `Precinct data for ${year} coming soon`
+                    : "No precincts match that filter."}
                 </td>
               </tr>
             ) : sorted.map((p, i) => (
