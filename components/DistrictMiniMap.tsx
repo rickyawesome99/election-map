@@ -5,6 +5,13 @@ import { getRaceColor } from "@/lib/colorScale";
 
 const DISTRICTS_URL = "/congressional-districts.json";
 
+type DistrictGeometry = {
+  rsmKey: string;
+  properties?: {
+    GEOID?: string;
+  };
+};
+
 const STATE_PROJ: Record<string, [number, number, number]> = {
   AL: [-86.8, 32.8, 4800],  AK: [-153.0, 64.0, 900],   AZ: [-111.7, 34.3, 3600],
   AR: [-92.4, 34.9, 5500],  CA: [-119.5, 37.2, 2200],  CO: [-105.5, 39.0, 4200],
@@ -44,20 +51,20 @@ export default function DistrictMiniMap({
   const mutedFill = "var(--app-border)";
 
   return (
-    <div style={{ height: 220, background: "var(--app-bg)", borderRadius: 8, overflow: "hidden" }}>
+    <div style={{ height: "100%", minHeight: 180, background: "var(--app-bg)", borderRadius: 8, overflow: "hidden" }}>
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{ scale: proj[2], center: [proj[0], proj[1]] }}
         style={{ width: "100%", height: "100%" }}
       >
         <Geographies geography={DISTRICTS_URL}>
-          {({ geographies }: any) =>
+          {({ geographies }: { geographies: DistrictGeometry[] }) =>
             geographies
-              .filter((geo: any) => {
+              .filter((geo) => {
                 const geoid = geo.properties?.GEOID as string | undefined;
                 return geoid?.startsWith(stateFips);
               })
-              .map((geo: any) => {
+              .map((geo) => {
                 const geoid = geo.properties?.GEOID as string | undefined;
                 const isTarget = geoid === raceId || geoid === targetGeoid;
                 return (

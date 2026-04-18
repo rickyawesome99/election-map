@@ -1,12 +1,18 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import { getRaceColor, getRatingColors } from "@/lib/colorScale";
+import { getRaceColor } from "@/lib/colorScale";
 import type { RaceForecast } from "@/data/forecastData";
-import Link from "next/link";
 
 const DISTRICTS_URL = "/congressional-districts.json";
+
+type DistrictGeometry = {
+  rsmKey: string;
+  properties?: {
+    GEOID?: string;
+  };
+};
 
 // [center_lon, center_lat, mercator_scale] per state abbreviation
 const STATE_PROJ: Record<string, [number, number, number]> = {
@@ -44,11 +50,7 @@ export default function StateDistrictMap({
 }) {
   const [hovered, setHovered] = useState<RaceForecast | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    setDarkMode(localStorage.getItem("darkMode") === "true");
-  }, []);
+  const [darkMode] = useState(() => typeof window !== "undefined" && localStorage.getItem("darkMode") === "true");
 
   const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
@@ -139,8 +141,8 @@ export default function StateDistrictMap({
           style={{ width: "100%", height: "100%" }}
         >
           <Geographies geography={DISTRICTS_URL}>
-            {({ geographies }: any) =>
-              geographies.map((geo: any) => {
+            {({ geographies }: { geographies: DistrictGeometry[] }) =>
+              geographies.map((geo) => {
                 const geoId = geo.properties?.GEOID as string | undefined;
                 const race = geoId ? raceById.get(geoId) : undefined;
                 if (!race) return null;
@@ -189,65 +191,6 @@ export default function StateDistrictMap({
           {houseRaces.length} district{houseRaces.length !== 1 ? "s" : ""}
         </div>
       </div>
-
-      {/* Mobile/tablet selected panel — xl desktop version lives in StateMapSection */}
-      {selected && (() => {
-        const demPct = Math.max(0, Math.min(100, 50 + selected.margin / 2));
-        const repPct = 100 - demPct;
-        const { bg: rBg, text: rText } = getRatingColors(selected.rating);
-        const [, distNum] = selected.name.split("-");
-        const distLabel = houseRaces.length === 1 ? "At-Large District" : `District ${parseInt(distNum)}`;
-        return (
-          <div className="xl:hidden" style={{ borderTop: "1px solid var(--app-border)" }}>
-            <div className="flex items-start justify-between gap-4 px-4 py-3">
-              <div className="flex flex-col gap-1.5 min-w-0 flex-1">
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{selected.name}</span>
-                  <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>{distLabel}</span>
-                  <span className="text-xs font-semibold px-2 py-0.5 rounded-full" style={{ background: rBg, color: rText }}>
-                    {selected.rating}
-                  </span>
-                </div>
-                {selected.candidates ? (
-                  <div className="flex items-center gap-2 text-xs flex-wrap">
-                    <span style={{ color: "var(--party-dem)" }}>
-                      {selected.candidates.dem.name}{selected.candidates.dem.incumbent ? " (Inc.)" : ""}
-                    </span>
-                    <span style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                    <span style={{ color: "var(--party-rep)" }}>
-                      {selected.candidates.rep.name}{selected.candidates.rep.incumbent ? " (Inc.)" : ""}
-                    </span>
-                  </div>
-                ) : (
-                  <div className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
-                )}
-                <div className="flex items-center gap-3 text-xs">
-                  <span style={{ color: "var(--party-dem)" }}>D {demPct.toFixed(1)}%</span>
-                  <span style={{ color: "var(--app-text-very-muted)" }}>·</span>
-                  <span style={{ color: "var(--party-rep)" }}>R {repPct.toFixed(1)}%</span>
-                  <span className="font-semibold" style={{ color: selected.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
-                    {selected.margin >= 0 ? "D" : "R"}+{Math.abs(selected.margin).toFixed(1)}
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-center gap-2 shrink-0">
-                <Link
-                  href={`/house/${selected.id}`}
-                  className="text-xs font-semibold px-3 py-1.5 rounded-lg whitespace-nowrap"
-                  style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
-                >
-                  View Race →
-                </Link>
-                <button onClick={() => onSelect(null)} style={{ color: "var(--app-text-very-muted)" }}>
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        );
-      })()}
     </div>
   );
 }

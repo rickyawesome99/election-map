@@ -5,7 +5,7 @@ import Link from "next/link";
 import BackButton from "@/components/BackButton";
 import AppHeader from "@/components/AppHeader";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
-import { AboutRaceCard, CandidatesSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, MarginAndWinProbabilityCard, PastElectionResultsSection, PollAggregateCard } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, MarginAndWinProbabilityCard, PastElectionResultsSection } from "@/components/RaceDetailSections";
 
 function inferCurrentHouseSeatFromPastResults(race: { pastResults?: { demIncumbent?: boolean; repIncumbent?: boolean; demCandidate?: string; repCandidate?: string }[] }) {
   for (const res of race.pastResults ?? []) {
@@ -57,11 +57,11 @@ export default async function HousePage({ params, searchParams }: { params: Prom
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <AppHeader back={<BackButton />} />
 
-      <main className="max-w-4xl mx-auto px-6 py-10">
+      <main className="max-w-6xl mx-auto px-4 py-5 sm:px-6 sm:py-6">
         {/* Title block */}
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-2">
-            <Link href={`/states/${race.state.toLowerCase().replace(/\s+/g, "-")}?from=${encodeURIComponent(`/house/${race.id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
+        <div className="mb-4 flex flex-col gap-2 sm:mb-5">
+          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
+            <Link href={`/states/${race.state.toLowerCase().replace(/\s+/g, "-")}?from=${encodeURIComponent(`/house/${race.id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`)}`} className="text-3xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
             <span
               className="text-xs font-semibold px-2.5 py-1 rounded-full"
               style={{ background: bg, color: text }}
@@ -72,68 +72,71 @@ export default async function HousePage({ params, searchParams }: { params: Prom
           <p style={{ color: "var(--app-text-muted)" }}>{electionYear} U.S. House Race · {districtLabel}</p>
         </div>
 
-        {/* District map */}
-        <section
-          className="rounded-xl overflow-hidden mb-6"
-          style={{ border: "1px solid var(--app-border)" }}
-        >
-          <DistrictMiniMap raceId={race.id} stateAbbr={stateAbbr} margin={race.margin} />
-        </section>
+        <div className="grid grid-cols-1 items-stretch gap-4 md:grid-cols-3 mb-4">
+          <section
+            className="order-1 rounded-xl overflow-hidden h-full md:order-2 md:col-span-1"
+            style={{ border: "1px solid var(--app-border)" }}
+          >
+            <DistrictMiniMap raceId={race.id} stateAbbr={stateAbbr} margin={race.margin} />
+          </section>
 
-        <AboutRaceCard
-          title="About this District"
-          description={`[Placeholder — overview of ${districtLabel}, including its geography, key communities, and political history to be filled in.]`}
-          items={[
-            { label: "State", value: race.state },
-            { label: "District", value: districtNum === "AL" ? "At-Large" : `${stateAbbr}-${districtNum}` },
-            { label: "Incumbent", value: currentRepName },
-            { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD" },
-          ]}
-        />
+          <div className="order-2 md:order-1 md:col-span-2 grid grid-cols-1 gap-4">
+            <div className="[&>section]:mb-0 [&>section]:h-full">
+              <AboutRaceCard
+                title="About this District"
+                description={`[Placeholder — overview of ${districtLabel}, including its geography, key communities, and political history to be filled in.]`}
+                items={[
+                  { label: "District", value: districtNum === "AL" ? "At-Large" : `${stateAbbr}-${districtNum}` },
+                  { label: "Incumbent", value: currentRepName },
+                  { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD" },
+                ]}
+              />
+            </div>
 
-        <CandidatesSection
-          candidates={race.candidates
-            ? [
-                {
-                  name: race.candidates.dem.name,
-                  party: race.candidates.dem.party,
-                  incumbent: race.candidates.dem.incumbent,
-                  pct: demVoteShare,
-                },
-                {
-                  name: race.candidates.rep.name,
-                  party: race.candidates.rep.party,
-                  incumbent: race.candidates.rep.incumbent,
-                  pct: repVoteShare,
-                },
-              ]
-            : [
-                { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
-                { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
-              ]}
-        />
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 [&>div>section]:mb-0 [&>div>section]:h-full">
+              <div>
+                <CandidatesSection
+                  candidates={race.candidates
+                    ? [
+                        {
+                          name: race.candidates.dem.name,
+                          party: race.candidates.dem.party,
+                          incumbent: race.candidates.dem.incumbent,
+                          pct: demVoteShare,
+                        },
+                        {
+                          name: race.candidates.rep.name,
+                          party: race.candidates.rep.party,
+                          incumbent: race.candidates.rep.incumbent,
+                          pct: repVoteShare,
+                        },
+                      ]
+                    : [
+                        { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
+                        { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
+                      ]}
+                />
+              </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <MarginAndWinProbabilityCard margin={race.margin} demPct={demPct} repPct={repPct} />
+              <div>
+                <MarginAndWinProbabilityCard margin={race.margin} demPct={demPct} repPct={repPct} rcpDem={race.rcpDem} rcpRep={race.rcpRep} polyDem={race.polyDem} polyRep={race.polyRep} />
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <PollAggregateCard
-            rows={[
-              { label: "RCP Average", type: "voteshare" },
-              { label: "Kalshi Odds", type: "winprob" },
-              { label: "Polymarket Odds", type: "winprob" },
-            ]}
-          />
-
+        <div className="grid grid-cols-1 gap-4 xl:grid-cols-12">
           <PastElectionResultsSection
             results={race.pastResults}
             fallbackYears={[2024, 2022, 2020]}
             showElectionType={false}
+            layoutClassName="xl:col-span-7"
           />
 
-          <HouseOnlyRecentStatewideResultsSection results={houseStatewideResults[race.id]} />
-
-          <HouseOnlyDistrictBoundariesSection entries={houseDistrictInfo[race.id] ?? []} />
-
+          <div className="space-y-4 xl:col-span-5">
+            <HouseOnlyRecentStatewideResultsSection results={houseStatewideResults[race.id]} />
+            <HouseOnlyDistrictBoundariesSection entries={houseDistrictInfo[race.id] ?? []} />
+          </div>
         </div>
       </main>
     </div>

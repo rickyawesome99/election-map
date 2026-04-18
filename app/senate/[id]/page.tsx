@@ -5,7 +5,7 @@ import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import BackButton from "@/components/BackButton";
 import AppHeader from "@/components/AppHeader";
-import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, MarginAndWinProbabilityCard, PastElectionResultsSection, PollAggregateCard } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, MarginAndWinProbabilityCard, PastElectionResultsSection } from "@/components/RaceDetailSections";
 
 function stateSlug(name: string) { return name.toLowerCase().replace(/\s+/g, "-"); }
 function isSpecialElection(electionType?: string) {
@@ -76,9 +76,9 @@ function NoElectionPage({
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <AppHeader back={<BackButton />} />
 
-      <main className="max-w-4xl mx-auto px-6 py-10">
+      <main className="max-w-4xl mx-auto px-6 py-6">
         {/* Title + banner */}
-        <div className="mb-8">
+        <div className="mb-5">
           <div className="flex items-center gap-3 mb-2 flex-wrap">
             <Link href={`/states/${stateSlug(state)}?from=${encodeURIComponent(from)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{state}</Link>
             <span
@@ -187,10 +187,10 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <AppHeader back={<BackButton />} />
 
-      <main className="max-w-4xl mx-auto px-6 py-10">
+      <main className="max-w-6xl mx-auto px-4 py-5 sm:px-6 sm:py-6">
         {/* Title block */}
-        <div className="mb-8">
-          <div className="flex items-center gap-3 mb-2">
+        <div className="mb-5">
+          <div className="flex items-center gap-3 mb-2 flex-wrap">
             <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/senate/${id}`)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
             <span
               className="text-xs font-semibold px-2.5 py-1 rounded-full"
@@ -205,54 +205,63 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           </p>
         </div>
 
-        <AboutRaceCard
-          title="About this Race"
-          description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
-          items={[
-            { label: "State", value: race.state },
-            { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
-            { label: "Incumbent", value: currentSenatorName },
-            { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD" },
-          ]}
-        />
+        <div className="grid grid-cols-1 gap-4 mb-4">
+          <div className="[&>section]:mb-0 [&>section]:h-full">
+            <AboutRaceCard
+              title="About this Race"
+              description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
+              items={[
+                { label: "State", value: race.state },
+                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
+                { label: "Incumbent", value: currentSenatorName },
+                { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD" },
+              ]}
+            />
+          </div>
 
-        {race.candidates && (
-          <CandidatesSection
-            candidates={[
-              {
-                name: race.candidates.dem.name,
-                party: race.candidates.dem.party,
-                incumbent: race.candidates.dem.incumbent,
-                photo: demPhoto,
-                pct: demVoteShare,
-              },
-              {
-                name: race.candidates.rep.name,
-                party: race.candidates.rep.party,
-                incumbent: race.candidates.rep.incumbent,
-                photo: repPhoto,
-                pct: repVoteShare,
-              },
-            ]}
-          />
-        )}
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 [&>div>section]:mb-0 [&>div>section]:h-full">
+            {race.candidates && (
+              <div>
+                <CandidatesSection
+                  candidates={[
+                    {
+                      name: race.candidates.dem.name,
+                      party: race.candidates.dem.party,
+                      incumbent: race.candidates.dem.incumbent,
+                      photo: demPhoto,
+                      pct: demVoteShare,
+                    },
+                    {
+                      name: race.candidates.rep.name,
+                      party: race.candidates.rep.party,
+                      incumbent: race.candidates.rep.incumbent,
+                      photo: repPhoto,
+                      pct: repVoteShare,
+                    },
+                  ]}
+                />
+              </div>
+            )}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <MarginAndWinProbabilityCard margin={race.margin} demPct={demPct} repPct={repPct} />
-
-          <PollAggregateCard
-            rows={[
-              { label: "RCP Average", dem: race.rcpDem, rep: race.rcpRep, type: "voteshare" },
-              { label: "Kalshi Odds", dem: race.kalshiDem, rep: race.kalshiRep, type: "winprob" },
-              { label: "Polymarket Odds", dem: race.polyDem, rep: race.polyRep, type: "winprob" },
-            ]}
-          />
-
-          {/* Past results */}
-          {race.pastResults && race.pastResults.length > 0 && (
-            <PastElectionResultsSection results={race.pastResults} fallbackYears={[]} showElectionType />
-          )}
+            <div>
+              <MarginAndWinProbabilityCard
+                margin={race.margin}
+                demPct={demPct}
+                repPct={repPct}
+                rcpDem={race.rcpDem}
+                rcpRep={race.rcpRep}
+                polyDem={race.polyDem}
+                polyRep={race.polyRep}
+              />
+            </div>
+          </div>
         </div>
+
+        {race.pastResults && race.pastResults.length > 0 && (
+          <div className="grid grid-cols-1 gap-4">
+            <PastElectionResultsSection results={race.pastResults} fallbackYears={[]} showElectionType layoutClassName="" />
+          </div>
+        )}
       </main>
     </div>
   );

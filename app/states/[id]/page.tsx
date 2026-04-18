@@ -327,7 +327,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
         </Link>
       } />
 
-      <main className="max-w-5xl mx-auto px-6 py-10 space-y-8">
+      <main className="max-w-6xl mx-auto px-4 py-5 sm:px-6 sm:py-6 space-y-6">
         {/* Title */}
         <div className="flex items-center gap-4">
           <span
@@ -345,16 +345,16 @@ export default async function StateDetailPage({ params, searchParams }: { params
         <StateMapSection houseRaces={houseRaces} stateAbbr={state.abbr} stateName={state.name}>
           {/* Overview */}
           <section
-            className="rounded-xl p-6"
+            className="rounded-xl p-4"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
           >
             <h2
-              className="text-[10px] uppercase tracking-wider font-semibold mb-4"
+              className="text-[10px] uppercase tracking-wider font-semibold mb-2"
               style={{ color: "var(--app-text-muted)" }}
             >
               Overview
             </h2>
-            <p className="text-sm leading-relaxed mb-5" style={{ color: "var(--app-text-primary)" }}>
+            <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--app-text-primary)" }}>
               {state.name} is represented by {houseRaces.length} congressional district{houseRaces.length !== 1 ? "s" : ""} in the U.S. House.
               {anySenateRace
                 ? ` A U.S. Senate seat is on the ballot in ${electionYear}.`
@@ -362,9 +362,9 @@ export default async function StateDetailPage({ params, searchParams }: { params
               {governorRace ? ` A gubernatorial election is also scheduled for November ${electionYear}.` : ""}
             </p>
 
-            <div className="grid grid-cols-2 xl:grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 gap-2 xl:grid-cols-4">
               {/* House: current incumbent composition */}
-              <div className="rounded-lg p-3 text-center" style={{ background: "var(--app-bg)" }}>
+              <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
                 <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
                   House
                 </div>
@@ -376,7 +376,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
               </div>
 
               {/* Senate: current composition of both seats */}
-              <div className="rounded-lg p-3 text-center" style={{ background: "var(--app-bg)" }}>
+              <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
                 <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
                   Senate
                 </div>
@@ -404,7 +404,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
               </div>
 
               {/* Governor: incumbent party */}
-              <div className="rounded-lg p-3 text-center" style={{ background: "var(--app-bg)" }}>
+              <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
                 <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
                   Governor
                 </div>
@@ -427,7 +427,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                 const m = pres2024[state.abbr];
                 const isD = m != null && m >= 0;
                 return (
-                  <div className="rounded-lg p-3 text-center" style={{ background: "var(--app-bg)" }}>
+                  <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
                     <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
                       Pres. 2024
                     </div>
@@ -691,8 +691,8 @@ export default async function StateDetailPage({ params, searchParams }: { params
                       <span style={{ color: "var(--app-text-very-muted)" }}>/</span>
                       <span className="w-5 text-center" style={{ color: "var(--party-rep)" }}>R</span>
                     </div>
-                    <span className="hidden sm:block">D Votes</span>
-                    <span className="hidden sm:block">R Votes</span>
+                    <span className="hidden sm:block w-24">D Votes</span>
+                    <span className="hidden sm:block w-24">R Votes</span>
                   </div>
                   <span>Dem</span>
                   <span>Rep</span>
@@ -727,17 +727,17 @@ export default async function StateDetailPage({ params, searchParams }: { params
                       </div>
                       {entry && popVote ? (
                         <>
-                          <span className="hidden sm:block text-[10px] tabular-nums truncate" style={{ color: "var(--party-dem)" }}>
+                          <span className="hidden sm:block text-[10px] tabular-nums truncate w-24" style={{ color: "var(--party-dem)" }}>
                             {(entry.demVotes ?? 0).toLocaleString()}
                           </span>
-                          <span className="hidden sm:block text-[10px] tabular-nums truncate" style={{ color: "var(--party-rep)" }}>
+                          <span className="hidden sm:block text-[10px] tabular-nums truncate w-24" style={{ color: "var(--party-rep)" }}>
                             {(entry.repVotes ?? 0).toLocaleString()}
                           </span>
                         </>
                       ) : (
                         <>
-                          <span className="hidden sm:block text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
-                          <span className="hidden sm:block text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                          <span className="hidden sm:block text-xs italic w-24" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                          <span className="hidden sm:block text-xs italic w-24" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
                         </>
                       )}
                     </div>
