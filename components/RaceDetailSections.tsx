@@ -52,7 +52,7 @@ function MarginPollRow({ label, dem, rep }: { label: string; dem?: number; rep?:
   const hasData = dem != null && rep != null;
   const demR = hasData ? Math.round(dem * 100) : null;
   const repR = hasData ? Math.round(rep * 100) : null;
-  const total = hasData ? demR + repR : 0;
+  const total = demR !== null && repR !== null ? demR + repR : 0;
   const dWidth = total > 0 ? (demR! / total) * 100 : 50;
   const winner = hasData && demR! >= repR! ? "D" : "R";
 

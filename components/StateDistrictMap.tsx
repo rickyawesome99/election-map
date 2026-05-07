@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import { getRaceColor } from "@/lib/colorScale";
+import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import type { RaceForecast } from "@/data/forecastData";
 
 const DISTRICTS_URL = "/congressional-districts.json";
