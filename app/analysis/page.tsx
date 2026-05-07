@@ -99,6 +99,20 @@ export default function AnalysisPage() {
                   </Link>
                 </td>
               </tr>
+              <tr
+                className="transition-colors hover:opacity-80"
+                style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}
+              >
+                <td className="px-3 sm:px-4 py-3 pl-8">
+                  <Link
+                    href="/analysis/oh-31/ohio-treasurer"
+                    className="hover:underline"
+                    style={{ color: "var(--app-text-primary)" }}
+                  >
+                    Ohio State Treasurer Primary
+                  </Link>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
