@@ -1,101 +1,101 @@
-state_abbr,state_name,seat,class,type,next_election,race_desc,current_incumbent,party,dem_name,rep_name,incumbent,prob_dem,prob_rep,margin,proj_dem,proj_rep,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
-SC,South Carolina,1,2,Regular,2026,TBD,Lindsey Graham,R,Annie Andrews,Lindsey Graham,R,0.14,0.86,8.5,45.75,54.25,N/A,N/A,0.14,0.86,N/A,N/A
-KY,Kentucky,1,2,Regular,2026,TBD,Mitch McConnell,R,Charles Booker,Andy Barr,None,0.07,0.93,13.5,43.25,56.75,N/A,N/A,0.07,0.93,N/A,N/A
-NH,New Hampshire,1,2,Regular,2026,TBD,Jeanne Shaheen,D,Chris Pappas,John Sununu,None,0.85,0.15,-4.5,52.25,47.75,N/A,N/A,0.85,0.15,N/A,N/A
-AR,Arkansas,1,2,Regular,2026,TBD,Tom Cotton,R,Hallie Shoffner,Tom Cotton,R,0.04,0.96,21,39.5,60.5,N/A,N/A,0.04,0.96,N/A,N/A
-LA,Louisiana,1,2,Regular,2026,TBD,Bill Cassidy,R,Jamie Davis,Bill Cassidy,R,0.09,0.91,20,40,60,N/A,N/A,0.09,0.91,N/A,N/A
-OR,Oregon,1,2,Regular,2026,TBD,Jeff Merkley,D,Jeff Merkley,TBD,D,0.95,0.05,-17,58.5,41.5,N/A,N/A,0.95,0.05,N/A,N/A
-CO,Colorado,1,2,Regular,2026,TBD,John Hickenlooper,D,John Hickenlooper,Mark Baisley,D,0.97,0.03,-14,57,43,N/A,N/A,0.97,0.03,N/A,N/A
-GA,Georgia,1,2,Regular,2026,TBD,Jon Ossoff,D,Jon Ossoff,Mike Collins,D,0.65,0.35,-3.5,51.75,48.25,N/A,N/A,0.8,0.2,N/A,N/A
-SD,South Dakota,1,2,Regular,2026,TBD,Mike Rounds,R,Julian Beaudion,Mike Rounds,R,0.06,0.94,27.5,36.25,63.75,N/A,N/A,0.06,0.94,N/A,N/A
-IL,Illinois,1,2,Regular,2026,TBD,Dick Durbin,D,Juliana Stratton,Don Tracy,None,0.93,0.07,-15,57.5,42.5,N/A,N/A,0.93,0.07,N/A,N/A
-AK,Alaska,1,2,Regular,2026,TBD,Dan Sullivan,R,Mary Peltola,Dan Sullivan,R,0.49,0.51,2,49,51,N/A,N/A,0.53,0.47,N/A,N/A
-NC,North Carolina,1,2,Regular,2026,TBD,Thom Tillis,R,Roy Cooper,Michael Whatley,None,0.52,0.48,-5.5,52.75,47.25,N/A,N/A,0.52,0.48,N/A,N/A
-KS,Kansas,1,2,Regular,2026,TBD,Roger Marshall,R,Sharice Davids,Roger Marshall,R,0.15,0.85,10.5,44.75,55.25,N/A,N/A,0.23,0.77,N/A,N/A
-AL,Alabama,1,2,Regular,2026,TBD,Tommy Tuberville,R,TBD,Barry Moore,None,0.05,0.95,17.5,41.25,58.75,N/A,N/A,0.03,0.97,N/A,N/A
-ID,Idaho,1,2,Regular,2026,TBD,Jim Risch,R,TBD,Jim Risch,R,0.07,0.93,24,38,62,N/A,N/A,0.07,0.93,N/A,N/A
-OK,Oklahoma,1,2,Regular,2026,TBD,Markwayne Mullin,R,TBD,Kevin Hern,None,0.04,0.96,25,37.5,62.5,N/A,N/A,0.04,0.96,N/A,N/A
-IA,Iowa,1,2,Regular,2026,TBD,Joni Ernst,R,Zach Wahls,Ashley Hinson,None,0.3,0.7,2.5,48.75,51.25,N/A,N/A,0.41,0.59,N/A,N/A
-FL,Florida,2,3,Special,2026,TBD,Ashley Moody,R,Alexander Vindman,Ashley Moody,R,0.18,0.82,11.5,44.25,55.75,N/A,N/A,0.14,0.86,N/A,N/A
-NM,New Mexico,2,2,Regular,2026,TBD,Ben Ray Lujan,D,Ben Ray Lujan,TBD,D,0.97,0.03,-48,74,26,N/A,N/A,0.97,0.03,N/A,N/A
-DE,Delaware,2,2,Regular,2026,TBD,Chris Coons,D,Chris Coons,TBD,D,0.94,0.06,-20.5,60.25,39.75,N/A,N/A,0.94,0.06,N/A,N/A
-NJ,New Jersey,2,2,Regular,2026,TBD,Cory Booker,D,Cory Booker,TBD,D,0.96,0.04,-14,57,43,N/A,N/A,0.96,0.04,N/A,N/A
-NE,Nebraska,2,2,Regular,2026,TBD,Pete Ricketts,R,Dan Osborne (I),Pete Ricketts,R,0.27,0.73,7,46.5,53.5,N/A,N/A,0.27,0.73,N/A,N/A
-MA,Massachusetts,2,2,Regular,2026,TBD,Ed Markey,D,Ed Markey,John Deaton,D,0.95,0.05,-28,64,36,N/A,N/A,0.95,0.05,N/A,N/A
-ME,Maine,2,2,Regular,2026,TBD,Susan Collins,R,Grahama Platner,Susan Collins,R,0.6,0.4,-3.5,51.75,48.25,N/A,N/A,0.7,0.3,N/A,N/A
-RI,Rhode Island,2,2,Regular,2026,TBD,Jack Reed,D,Jack Reed,Raymond McKay,D,0.96,0.04,-38,69,31,N/A,N/A,0.96,0.04,N/A,N/A
-WY,Wyoming,2,2,Regular,2026,TBD,Cynthia Lummis,R,James Byrd,Harriet Hageman,None,0.03,0.97,45.5,27.25,72.75,N/A,N/A,0.03,0.97,N/A,N/A
-WV,West Virginia,2,2,Regular,2026,TBD,Shelley Moore Capito,R,Jeff Kessler,Shelley Moore Capito,R,0.93,0.07,36.5,31.75,68.25,N/A,N/A,0.93,0.07,N/A,N/A
-MI,Michigan,2,2,Regular,2026,TBD,Gary Peters,D,Mallory McMorrow,Mike Rogers,None,0.79,0.21,-1.2,50.6,49.4,N/A,N/A,0.79,0.21,N/A,N/A
-VA,Virginia,2,2,Regular,2026,TBD,Mark Warner,D,Mark Warner,TBD,D,0.96,0.04,-14,57,43,N/A,N/A,0.96,0.04,N/A,N/A
-MN,Minnesota,2,2,Regular,2026,TBD,Tina Smith,D,Peggy Flanagan,Michele Tafoya,None,0.9,0.1,-9.5,54.75,45.25,N/A,N/A,0.9,0.1,N/A,N/A
-MT,Montana,2,2,Regular,2026,TBD,Steve Daines,R,Reilly Neill,Kurt Alme,None,0.21,0.79,12,44,56,N/A,N/A,0.21,0.79,N/A,N/A
-MS,Mississippi,2,2,Regular,2026,TBD,Cindy Hyde-Smith,D,Scott Colom,Cindy Hyde-Smith,R,0.06,0.94,13,43.5,56.5,N/A,N/A,0.06,0.94,N/A,N/A
-OH,Ohio,2,3,Special,2026,TBD,Jon Husted,R,Sherrod Brown,Jon Husted,R,0.48,0.52,1.5,49.25,50.75,N/A,N/A,0.52,0.48,N/A,N/A
-TN,Tennessee,2,2,Regular,2026,TBD,Bill Hagerty,R,TBD,Bill Hagerty,R,0.07,0.93,26.5,36.75,63.25,N/A,N/A,0.07,0.93,N/A,N/A
-TX,Texas,2,2,Regular,2026,TBD,John Cornyn,R,TBD,James Talarico,None,0.43,0.57,4.5,47.75,52.25,N/A,N/A,0.43,0.57,N/A,N/A
-AL,Alabama,2,3,,2028,TBD,Katie Britt,R,,,,,,,,,,,,,,
+state_abbr,state_name,seat,class,type,next_election,race_desc,current_incumbent,inc_party,dem_name,rep_name,incumbent,proj_dem,proj_rep,proj_margin,prob_dem,prob_rep,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
+AK,Alaska,1,2,Regular,2026,TBD,Dan Sullivan,R,Mary Peltola,Dan Sullivan,R,49,51,2,0.49,0.51,N/A,N/A,0.53,0.47,N/A,N/A
+AL,Alabama,1,2,Regular,2026,TBD,Tommy Tuberville,R,TBD,Barry Moore,None,41.25,58.75,17.5,0.05,0.95,N/A,N/A,0.03,0.97,N/A,N/A
+AR,Arkansas,1,2,Regular,2026,TBD,Tom Cotton,R,Hallie Shoffner,Tom Cotton,R,39.5,60.5,21,0.04,0.96,N/A,N/A,0.04,0.96,N/A,N/A
+CO,Colorado,1,2,Regular,2026,TBD,John Hickenlooper,D,John Hickenlooper,Mark Baisley,D,57,43,-14,0.97,0.03,N/A,N/A,0.97,0.03,N/A,N/A
+DE,Delaware,2,2,Regular,2026,TBD,Chris Coons,D,Chris Coons,TBD,D,60.25,39.75,-20.5,0.94,0.06,N/A,N/A,0.94,0.06,N/A,N/A
+GA,Georgia,1,2,Regular,2026,TBD,Jon Ossoff,D,Jon Ossoff,Mike Collins,D,51.75,48.25,-3.5,0.65,0.35,N/A,N/A,0.8,0.2,N/A,N/A
+IA,Iowa,1,2,Regular,2026,TBD,Joni Ernst,R,Zach Wahls,Ashley Hinson,None,48.75,51.25,2.5,0.3,0.7,N/A,N/A,0.41,0.59,N/A,N/A
+ID,Idaho,1,2,Regular,2026,TBD,Jim Risch,R,TBD,Jim Risch,R,38,62,24,0.07,0.93,N/A,N/A,0.07,0.93,N/A,N/A
+IL,Illinois,1,2,Regular,2026,TBD,Dick Durbin,D,Juliana Stratton,Don Tracy,None,57.5,42.5,-15,0.93,0.07,N/A,N/A,0.93,0.07,N/A,N/A
+KS,Kansas,1,2,Regular,2026,TBD,Roger Marshall,R,Sharice Davids,Roger Marshall,R,44.75,55.25,10.5,0.15,0.85,N/A,N/A,0.23,0.77,N/A,N/A
+KY,Kentucky,1,2,Regular,2026,TBD,Mitch McConnell,R,Charles Booker,Andy Barr,None,43.25,56.75,13.5,0.07,0.93,N/A,N/A,0.07,0.93,N/A,N/A
+LA,Louisiana,1,2,Regular,2026,TBD,Bill Cassidy,R,Jamie Davis,Bill Cassidy,R,40,60,20,0.09,0.91,N/A,N/A,0.09,0.91,N/A,N/A
+MA,Massachusetts,2,2,Regular,2026,TBD,Ed Markey,D,Ed Markey,John Deaton,D,64,36,-28,0.95,0.05,N/A,N/A,0.95,0.05,N/A,N/A
+ME,Maine,2,2,Regular,2026,TBD,Susan Collins,R,Grahama Platner,Susan Collins,R,51.75,48.25,-3.5,0.6,0.4,N/A,N/A,0.7,0.3,N/A,N/A
+MI,Michigan,2,2,Regular,2026,TBD,Gary Peters,D,Mallory McMorrow,Mike Rogers,None,50.6,49.4,-1.2,0.79,0.21,N/A,N/A,0.79,0.21,N/A,N/A
+MN,Minnesota,2,2,Regular,2026,TBD,Tina Smith,D,Peggy Flanagan,Michele Tafoya,None,54.75,45.25,-9.5,0.9,0.1,N/A,N/A,0.9,0.1,N/A,N/A
+MS,Mississippi,2,2,Regular,2026,TBD,Cindy Hyde-Smith,D,Scott Colom,Cindy Hyde-Smith,R,43.5,56.5,13,0.06,0.94,N/A,N/A,0.06,0.94,N/A,N/A
+MT,Montana,2,2,Regular,2026,TBD,Steve Daines,R,Reilly Neill,Kurt Alme,None,44,56,12,0.21,0.79,N/A,N/A,0.21,0.79,N/A,N/A
+NC,North Carolina,1,2,Regular,2026,TBD,Thom Tillis,R,Roy Cooper,Michael Whatley,None,52.75,47.25,-5.5,0.52,0.48,N/A,N/A,0.52,0.48,N/A,N/A
+NE,Nebraska,2,2,Regular,2026,TBD,Pete Ricketts,R,Dan Osborne (I),Pete Ricketts,R,46.5,53.5,7,0.27,0.73,N/A,N/A,0.27,0.73,N/A,N/A
+NH,New Hampshire,1,2,Regular,2026,TBD,Jeanne Shaheen,D,Chris Pappas,John Sununu,None,52.25,47.75,-4.5,0.85,0.15,N/A,N/A,0.85,0.15,N/A,N/A
+NJ,New Jersey,2,2,Regular,2026,TBD,Cory Booker,D,Cory Booker,TBD,D,57,43,-14,0.96,0.04,N/A,N/A,0.96,0.04,N/A,N/A
+NM,New Mexico,2,2,Regular,2026,TBD,Ben Ray Lujan,D,Ben Ray Lujan,TBD,D,74,26,-48,0.97,0.03,N/A,N/A,0.97,0.03,N/A,N/A
+OK,Oklahoma,1,2,Regular,2026,TBD,Markwayne Mullin,R,TBD,Kevin Hern,None,37.5,62.5,25,0.04,0.96,N/A,N/A,0.04,0.96,N/A,N/A
+OR,Oregon,1,2,Regular,2026,TBD,Jeff Merkley,D,Jeff Merkley,TBD,D,58.5,41.5,-17,0.95,0.05,N/A,N/A,0.95,0.05,N/A,N/A
+RI,Rhode Island,2,2,Regular,2026,TBD,Jack Reed,D,Jack Reed,Raymond McKay,D,69,31,-38,0.96,0.04,N/A,N/A,0.96,0.04,N/A,N/A
+SC,South Carolina,1,2,Regular,2026,TBD,Lindsey Graham,R,Annie Andrews,Lindsey Graham,R,45.75,54.25,8.5,0.14,0.86,N/A,N/A,0.14,0.86,N/A,N/A
+SD,South Dakota,1,2,Regular,2026,TBD,Mike Rounds,R,Julian Beaudion,Mike Rounds,R,36.25,63.75,27.5,0.06,0.94,N/A,N/A,0.06,0.94,N/A,N/A
+TN,Tennessee,2,2,Regular,2026,TBD,Bill Hagerty,R,TBD,Bill Hagerty,R,36.75,63.25,26.5,0.07,0.93,N/A,N/A,0.07,0.93,N/A,N/A
+TX,Texas,2,2,Regular,2026,TBD,John Cornyn,R,TBD,James Talarico,None,47.75,52.25,4.5,0.43,0.57,N/A,N/A,0.43,0.57,N/A,N/A
+VA,Virginia,2,2,Regular,2026,TBD,Mark Warner,D,Mark Warner,TBD,D,57,43,-14,0.96,0.04,N/A,N/A,0.96,0.04,N/A,N/A
+WV,West Virginia,2,2,Regular,2026,TBD,Shelley Moore Capito,R,Jeff Kessler,Shelley Moore Capito,R,31.75,68.25,36.5,0.93,0.07,N/A,N/A,0.93,0.07,N/A,N/A
+WY,Wyoming,2,2,Regular,2026,TBD,Cynthia Lummis,R,James Byrd,Harriet Hageman,None,27.25,72.75,45.5,0.03,0.97,N/A,N/A,0.03,0.97,N/A,N/A
+FL,Florida,2,3,Special,2026,TBD,Ashley Moody,R,Alexander Vindman,Ashley Moody,R,44.25,55.75,11.5,0.18,0.82,N/A,N/A,0.14,0.86,N/A,N/A
+OH,Ohio,2,3,Special,2026,TBD,Jon Husted,R,Sherrod Brown,Jon Husted,R,49.25,50.75,1.5,0.48,0.52,N/A,N/A,0.52,0.48,N/A,N/A
 AK,Alaska,2,3,,2028,TBD,Lisa Murkowski,R,,,,,,,,,,,,,,
-AZ,Arizona,2,3,,2028,TBD,Mark Kelly,D,,,,,,,,,,,,,,
+AL,Alabama,2,3,,2028,TBD,Katie Britt,R,,,,,,,,,,,,,,
 AR,Arkansas,2,3,,2028,TBD,John Boozman,R,,,,,,,,,,,,,,
+AZ,Arizona,2,3,,2028,TBD,Mark Kelly,D,,,,,,,,,,,,,,
+AZ,Arizona,1,1,,2030,TBD,Ruben Gallego,D,,,,,,,,,,,,,,
 CA,California,2,3,,2028,TBD,Alex Padilla,D,,,,,,,,,,,,,,
+CA,California,1,1,,2030,TBD,Adam Schiff,D,,,,,,,,,,,,,,
 CO,Colorado,2,3,,2028,TBD,Michael Bennet,D,,,,,,,,,,,,,,
 CT,Connecticut,2,3,,2028,TBD,Richard Blumenthal,D,,,,,,,,,,,,,,
-GA,Georgia,2,3,,2028,TBD,Raphael Warnock,D,,,,,,,,,,,,,,
-HI,Hawaii,2,3,,2028,TBD,Brian Schatz,D,,,,,,,,,,,,,,
-ID,Idaho,2,3,,2028,TBD,Mike Crapo,R,,,,,,,,,,,,,,
-IL,Illinois,2,3,,2028,TBD,Tammy Duckworth,D,,,,,,,,,,,,,,
-IN,Indiana,2,3,,2028,TBD,Todd Young,R,,,,,,,,,,,,,,
-IA,Iowa,2,3,,2028,TBD,Chuck Grassley,R,,,,,,,,,,,,,,
-KS,Kansas,2,3,,2028,TBD,Jerry Moran,R,,,,,,,,,,,,,,
-KY,Kentucky,2,3,,2028,TBD,Rand Paul,R,,,,,,,,,,,,,,
-LA,Louisiana,2,3,,2028,TBD,John Kennedy,R,,,,,,,,,,,,,,
-MD,Maryland,2,3,,2028,TBD,Chris Van Hollen,D,,,,,,,,,,,,,,
-MO,Missouri,2,3,,2028,TBD,Eric Schmitt,R,,,,,,,,,,,,,,
-NV,Nevada,2,3,,2028,TBD,Catherine Cortez Masto,D,,,,,,,,,,,,,,
-NH,New Hampshire,2,3,,2028,TBD,Maggie Hassan,D,,,,,,,,,,,,,,
-NY,New York,2,3,,2028,TBD,Chuck Schumer,D,,,,,,,,,,,,,,
-NC,North Carolina,2,3,,2028,TBD,Ted Budd,R,,,,,,,,,,,,,,
-ND,North Dakota,2,3,,2028,TBD,John Hoeven,R,,,,,,,,,,,,,,
-OK,Oklahoma,2,3,,2028,TBD,James Lankford,R,,,,,,,,,,,,,,
-OR,Oregon,2,3,,2028,TBD,Ron Wyden,D,,,,,,,,,,,,,,
-PA,Pennsylvania,2,3,,2028,TBD,John Fetterman,D,,,,,,,,,,,,,,
-SC,South Carolina,2,3,,2028,TBD,Tim Scott,R,,,,,,,,,,,,,,
-SD,South Dakota,2,3,,2028,TBD,John Thune,R,,,,,,,,,,,,,,
-UT,Utah,2,3,,2028,TBD,Mike Lee,R,,,,,,,,,,,,,,
-VT,Vermont,2,3,,2028,TBD,Peter Welch,D,,,,,,,,,,,,,,
-WA,Washington,2,3,,2028,TBD,Patty Murray,D,,,,,,,,,,,,,,
-WI,Wisconsin,2,3,,2028,TBD,Ron Johnson,R,,,,,,,,,,,,,,
-AZ,Arizona,1,1,,2030,TBD,Ruben Gallego,D,,,,,,,,,,,,,,
-CA,California,1,1,,2030,TBD,Adam Schiff,D,,,,,,,,,,,,,,
 CT,Connecticut,1,1,,2030,TBD,Chris Murphy,D,,,,,,,,,,,,,,
 DE,Delaware,1,1,,2030,TBD,Lisa Blunt Rochester,D,,,,,,,,,,,,,,
 FL,Florida,1,1,,2030,TBD,Rick Scott,R,,,,,,,,,,,,,,
+GA,Georgia,2,3,,2028,TBD,Raphael Warnock,D,,,,,,,,,,,,,,
+HI,Hawaii,2,3,,2028,TBD,Brian Schatz,D,,,,,,,,,,,,,,
 HI,Hawaii,1,1,,2030,TBD,Mazie Hirono,D,,,,,,,,,,,,,,
+IA,Iowa,2,3,,2028,TBD,Chuck Grassley,R,,,,,,,,,,,,,,
+ID,Idaho,2,3,,2028,TBD,Mike Crapo,R,,,,,,,,,,,,,,
+IL,Illinois,2,3,,2028,TBD,Tammy Duckworth,D,,,,,,,,,,,,,,
+IN,Indiana,2,3,,2028,TBD,Todd Young,R,,,,,,,,,,,,,,
 IN,Indiana,1,1,,2030,TBD,Jim Banks,R,,,,,,,,,,,,,,
-ME,Maine,1,1,,2030,TBD,Angus King,D,,,,,,,,,,,,,,
-MD,Maryland,1,1,,2030,TBD,Angela Alsobrooks,D,,,,,,,,,,,,,,
+KS,Kansas,2,3,,2028,TBD,Jerry Moran,R,,,,,,,,,,,,,,
+KY,Kentucky,2,3,,2028,TBD,Rand Paul,R,,,,,,,,,,,,,,
+LA,Louisiana,2,3,,2028,TBD,John Kennedy,R,,,,,,,,,,,,,,
 MA,Massachusetts,1,1,,2030,TBD,Elizabeth Warren,D,,,,,,,,,,,,,,
+MD,Maryland,2,3,,2028,TBD,Chris Van Hollen,D,,,,,,,,,,,,,,
+MD,Maryland,1,1,,2030,TBD,Angela Alsobrooks,D,,,,,,,,,,,,,,
+ME,Maine,1,1,,2030,TBD,Angus King,D,,,,,,,,,,,,,,
 MI,Michigan,1,1,,2030,TBD,Elissa Slotkin,D,,,,,,,,,,,,,,
 MN,Minnesota,1,1,,2030,TBD,Amy Klobuchar,D,,,,,,,,,,,,,,
-MS,Mississippi,1,1,,2030,TBD,Roger Wicker,R,,,,,,,,,,,,,,
+MO,Missouri,2,3,,2028,TBD,Eric Schmitt,R,,,,,,,,,,,,,,
 MO,Missouri,1,1,,2030,TBD,Josh Hawley,R,,,,,,,,,,,,,,
+MS,Mississippi,1,1,,2030,TBD,Roger Wicker,R,,,,,,,,,,,,,,
 MT,Montana,1,1,,2030,TBD,Tim Sheehy,R,,,,,,,,,,,,,,
+NC,North Carolina,2,3,,2028,TBD,Ted Budd,R,,,,,,,,,,,,,,
+ND,North Dakota,2,3,,2028,TBD,John Hoeven,R,,,,,,,,,,,,,,
+ND,North Dakota,1,1,,2030,TBD,Kevin Cramer,R,,,,,,,,,,,,,,
 NE,Nebraska,1,1,,2030,TBD,Deb Fischer,R,,,,,,,,,,,,,,
-NV,Nevada,1,1,,2030,TBD,Jacky Rosen,D,,,,,,,,,,,,,,
+NH,New Hampshire,2,3,,2028,TBD,Maggie Hassan,D,,,,,,,,,,,,,,
 NJ,New Jersey,1,1,,2030,TBD,Andy Kim,D,,,,,,,,,,,,,,
 NM,New Mexico,1,1,,2030,TBD,Martin Heinrich,D,,,,,,,,,,,,,,
+NV,Nevada,2,3,,2028,TBD,Catherine Cortez Masto,D,,,,,,,,,,,,,,
+NV,Nevada,1,1,,2030,TBD,Jacky Rosen,D,,,,,,,,,,,,,,
+NY,New York,2,3,,2028,TBD,Chuck Schumer,D,,,,,,,,,,,,,,
 NY,New York,1,1,,2030,TBD,Kirsten Gillibrand,D,,,,,,,,,,,,,,
-ND,North Dakota,1,1,,2030,TBD,Kevin Cramer,R,,,,,,,,,,,,,,
 OH,Ohio,1,1,,2030,TBD,Bernie Moreno,R,,,,,,,,,,,,,,
+OK,Oklahoma,2,3,,2028,TBD,James Lankford,R,,,,,,,,,,,,,,
+OR,Oregon,2,3,,2028,TBD,Ron Wyden,D,,,,,,,,,,,,,,
+PA,Pennsylvania,2,3,,2028,TBD,John Fetterman,D,,,,,,,,,,,,,,
 PA,Pennsylvania,1,1,,2030,TBD,David McCormick,R,,,,,,,,,,,,,,
 RI,Rhode Island,1,1,,2030,TBD,Sheldon Whitehouse,D,,,,,,,,,,,,,,
+SC,South Carolina,2,3,,2028,TBD,Tim Scott,R,,,,,,,,,,,,,,
+SD,South Dakota,2,3,,2028,TBD,John Thune,R,,,,,,,,,,,,,,
 TN,Tennessee,1,1,,2030,TBD,Marsha Blackburn,R,,,,,,,,,,,,,,
 TX,Texas,1,1,,2030,TBD,Ted Cruz,R,,,,,,,,,,,,,,
+UT,Utah,2,3,,2028,TBD,Mike Lee,R,,,,,,,,,,,,,,
 UT,Utah,1,1,,2030,TBD,John Curtiz,R,,,,,,,,,,,,,,
-VT,Vermont,1,1,,2030,TBD,Bernie Sanders,D,,,,,,,,,,,,,,
 VA,Virginia,1,1,,2030,TBD,Tim Kaine,D,,,,,,,,,,,,,,
+VT,Vermont,2,3,,2028,TBD,Peter Welch,D,,,,,,,,,,,,,,
+VT,Vermont,1,1,,2030,TBD,Bernie Sanders,D,,,,,,,,,,,,,,
+WA,Washington,2,3,,2028,TBD,Patty Murray,D,,,,,,,,,,,,,,
 WA,Washington,1,1,,2030,TBD,Maria Cantwell,D,,,,,,,,,,,,,,
-WV,West Virginia,1,1,,2030,TBD,Jim Justice,R,,,,,,,,,,,,,,
+WI,Wisconsin,2,3,,2028,TBD,Ron Johnson,R,,,,,,,,,,,,,,
 WI,Wisconsin,1,1,,2030,TBD,Tammy Baldwin,D,,,,,,,,,,,,,,
+WV,West Virginia,1,1,,2030,TBD,Jim Justice,R,,,,,,,,,,,,,,
 WY,Wyoming,1,1,,2030,TBD,John Barrasso,R,,,,,,,,,,,,,,

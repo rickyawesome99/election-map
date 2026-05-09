@@ -327,131 +327,210 @@ export default async function StateDetailPage({ params, searchParams }: { params
         </Link>
       } />
 
-      <main className="max-w-6xl mx-auto px-4 py-5 sm:px-6 sm:py-6 space-y-6">
+      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
         {/* Title */}
-        <div className="flex items-center gap-4">
+        <div className="mb-3 flex items-center gap-2">
           <span
-            className="text-sm font-bold px-3 py-1.5 rounded-lg"
+            className="text-xs font-bold px-2.5 py-0.5 rounded-full"
             style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
           >
             {state.abbr}
           </span>
-          <h1 className="text-3xl font-bold" style={{ color: "var(--app-text-primary)" }}>
+          <h1 className="text-2xl font-bold leading-none" style={{ color: "var(--app-text-primary)" }}>
             {state.name}
           </h1>
         </div>
 
         {/* Overview + Map */}
-        <StateMapSection houseRaces={houseRaces} stateAbbr={state.abbr} stateName={state.name}>
-          {/* Overview */}
-          <section
-            className="rounded-xl p-4"
-            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-          >
-            <h2
-              className="text-[10px] uppercase tracking-wider font-semibold mb-2"
-              style={{ color: "var(--app-text-muted)" }}
-            >
-              Overview
-            </h2>
-            <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--app-text-primary)" }}>
-              {state.name} is represented by {houseRaces.length} congressional district{houseRaces.length !== 1 ? "s" : ""} in the U.S. House.
-              {anySenateRace
-                ? ` A U.S. Senate seat is on the ballot in ${electionYear}.`
-                : ` No Senate seat is up for election in ${electionYear}.`}
-              {governorRace ? ` A gubernatorial election is also scheduled for November ${electionYear}.` : ""}
-            </p>
+        <StateMapSection
+          houseRaces={houseRaces}
+          stateAbbr={state.abbr}
+          stateName={state.name}
+          overview={(
+            <>
+              <section
+                className="rounded-xl p-3"
+                style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+              >
+                <h2
+                  className="text-[10px] uppercase tracking-wider font-semibold mb-1.5"
+                  style={{ color: "var(--app-text-muted)" }}
+                >
+                  Overview
+                </h2>
+                <p className="text-sm leading-relaxed mb-2.5" style={{ color: "var(--app-text-primary)" }}>
+                  {state.name} is represented by {houseRaces.length} congressional district{houseRaces.length !== 1 ? "s" : ""} in the U.S. House.
+                </p>
 
-            <div className="grid grid-cols-2 gap-2 xl:grid-cols-4">
-              {/* House: current incumbent composition */}
-              <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
-                <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
-                  House
-                </div>
-                <div className="text-lg font-bold flex items-center justify-center gap-1">
-                  <span style={{ color: "var(--party-dem)" }}>{houseDemCurrent}D</span>
-                  <span style={{ color: "var(--app-text-very-muted)", fontSize: "0.75rem" }}>·</span>
-                  <span style={{ color: "var(--party-rep)" }}>{houseRepCurrent}R</span>
-                </div>
-              </div>
-
-              {/* Senate: current composition of both seats */}
-              <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
-                <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
-                  Senate
-                </div>
-                <div className="text-lg font-bold flex items-center justify-center gap-1">
-                  {senateInds > 0 ? (
-                    // Mixed with independent (ME: 1R·1I, VT: 1D·1I)
-                    <>
-                      {senateDems > 0 && <span style={{ color: "var(--party-dem)" }}>{senateDems}D</span>}
-                      {senateReps > 0 && <span style={{ color: "var(--party-rep)" }}>{senateReps}R</span>}
-                      {(senateDems > 0 || senateReps > 0) && <span style={{ color: "var(--app-text-very-muted)", fontSize: "0.75rem" }}>·</span>}
-                      <span style={{ color: "var(--app-text-muted)" }}>{senateInds}I</span>
-                    </>
-                  ) : senateReps === 0 ? (
-                    <span style={{ color: "var(--party-dem)" }}>{senateDems}D</span>
-                  ) : senateDems === 0 ? (
-                    <span style={{ color: "var(--party-rep)" }}>{senateReps}R</span>
-                  ) : (
-                    <>
-                      <span style={{ color: "var(--party-dem)" }}>{senateDems}D</span>
-                      <span style={{ color: "var(--app-text-very-muted)", fontSize: "0.75rem" }}>·</span>
-                      <span style={{ color: "var(--party-rep)" }}>{senateReps}R</span>
-                    </>
-                  )}
-                </div>
-              </div>
-
-              {/* Governor: incumbent party */}
-              <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
-                <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
-                  Governor
-                </div>
-                {govParty ? (
-                  <span
-                    className="text-lg font-bold"
-                    style={{
-                      color: govParty === "D" ? "var(--party-dem)" : govParty === "R" ? "var(--party-rep)" : "var(--app-text-primary)",
-                    }}
-                  >
-                    {govParty}
-                  </span>
-                ) : (
-                  <span className="text-lg font-bold" style={{ color: "var(--app-text-very-muted)" }}>—</span>
-                )}
-              </div>
-
-              {/* President 2024 */}
-              {(() => {
-                const m = pres2024[state.abbr];
-                const isD = m != null && m >= 0;
-                return (
+                <div className="grid grid-cols-2 gap-2">
                   <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
                     <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
-                      Pres. 2024
+                      House
                     </div>
-                    {m != null ? (
-                      <div className="text-lg font-bold" style={{ color: isD ? "var(--party-dem)" : "var(--party-rep)" }}>
-                        {isD ? "D" : "R"}+{Math.abs(m).toFixed(1)}
-                      </div>
+                    <div className="text-lg font-bold flex items-center justify-center gap-1">
+                      <span style={{ color: "var(--party-dem)" }}>{houseDemCurrent}D</span>
+                      <span style={{ color: "var(--app-text-very-muted)", fontSize: "0.75rem" }}>·</span>
+                      <span style={{ color: "var(--party-rep)" }}>{houseRepCurrent}R</span>
+                    </div>
+                  </div>
+
+                  <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
+                    <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
+                      Senate
+                    </div>
+                    <div className="text-lg font-bold flex items-center justify-center gap-1">
+                      {senateInds > 0 ? (
+                        <>
+                          {senateDems > 0 && <span style={{ color: "var(--party-dem)" }}>{senateDems}D</span>}
+                          {senateReps > 0 && <span style={{ color: "var(--party-rep)" }}>{senateReps}R</span>}
+                          {(senateDems > 0 || senateReps > 0) && <span style={{ color: "var(--app-text-very-muted)", fontSize: "0.75rem" }}>·</span>}
+                          <span style={{ color: "var(--app-text-muted)" }}>{senateInds}I</span>
+                        </>
+                      ) : senateReps === 0 ? (
+                        <span style={{ color: "var(--party-dem)" }}>{senateDems}D</span>
+                      ) : senateDems === 0 ? (
+                        <span style={{ color: "var(--party-rep)" }}>{senateReps}R</span>
+                      ) : (
+                        <>
+                          <span style={{ color: "var(--party-dem)" }}>{senateDems}D</span>
+                          <span style={{ color: "var(--app-text-very-muted)", fontSize: "0.75rem" }}>·</span>
+                          <span style={{ color: "var(--party-rep)" }}>{senateReps}R</span>
+                        </>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
+                    <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
+                      Governor
+                    </div>
+                    {govParty ? (
+                      <span
+                        className="text-lg font-bold"
+                        style={{
+                          color: govParty === "D" ? "var(--party-dem)" : govParty === "R" ? "var(--party-rep)" : "var(--app-text-primary)",
+                        }}
+                      >
+                        {govParty}
+                      </span>
                     ) : (
                       <span className="text-lg font-bold" style={{ color: "var(--app-text-very-muted)" }}>—</span>
                     )}
                   </div>
-                );
-              })()}
-            </div>
-          </section>
 
-        </StateMapSection>
+                  {(() => {
+                    const m = pres2024[state.abbr];
+                    const isD = m != null && m >= 0;
+                    return (
+                      <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
+                        <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
+                          Pres. 2024
+                        </div>
+                        {m != null ? (
+                          <div className="text-lg font-bold" style={{ color: isD ? "var(--party-dem)" : "var(--party-rep)" }}>
+                            {isD ? "D" : "R"}+{Math.abs(m).toFixed(1)}
+                          </div>
+                        ) : (
+                          <span className="text-lg font-bold" style={{ color: "var(--app-text-very-muted)" }}>—</span>
+                        )}
+                      </div>
+                    );
+                  })()}
+                </div>
+              </section>
 
+              {houseRaces.length > 0 && (
+                <section
+                  className="rounded-xl p-3"
+                  style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+                >
+                  <h2
+                    className="text-[10px] uppercase tracking-wider font-semibold mb-3"
+                    style={{ color: "var(--app-text-muted)" }}
+                  >
+                    House Delegation Composition · Since 2016
+                  </h2>
+
+                  <div>
+                    <div className="flex flex-col gap-2.5">
+                      {([2024, 2022, 2020, 2018, 2016] as const).map((year) => {
+                        const entry = stateDelegationHistory.find((e) => e.year === year);
+                        let popVote = null;
+                        if (entry) {
+                          const winner = entry.demPct > entry.repPct ? "D" : "R";
+                          const margin = Math.abs(entry.demPct - entry.repPct).toFixed(1);
+                          popVote = { winner, margin };
+                        }
+                        return (
+                          <div
+                            key={year}
+                            className="rounded-lg p-2.5"
+                            style={{ background: "var(--app-bg)" }}
+                          >
+                            <div className="mb-2 flex items-center justify-between gap-3">
+                              <div className="flex items-center gap-3">
+                                <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+                                  {year}
+                                </span>
+                                <div className="flex items-center gap-1.5 text-sm font-semibold tabular-nums">
+                                  <span style={{ color: "var(--party-dem)" }}>{entry ? entry.demSeats : "—"}D</span>
+                                  <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>/</span>
+                                  <span style={{ color: "var(--party-rep)" }}>{entry && popVote ? entry.repSeats : "—"}R</span>
+                                </div>
+                              </div>
+                              {entry && popVote ? (
+                                <span
+                                  className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
+                                  style={popVote.winner === "D"
+                                    ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                                    : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                                >
+                                  {popVote.winner}+{popVote.margin}
+                                </span>
+                              ) : (
+                                <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                              )}
+                            </div>
+                            {entry && popVote ? (
+                              <>
+                                <div className="flex h-2.5 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>
+                                  <div style={{ width: `${entry.demPct}%`, background: "#1b408c" }} />
+                                  <div style={{ width: `${entry.repPct}%`, background: "#be1c29" }} />
+                                </div>
+                                <div className="flex justify-between text-xs font-semibold">
+                                  <span style={{ color: "var(--party-dem)" }}>{entry.demPct.toFixed(1)}%</span>
+                                  <span style={{ color: "var(--party-rep)" }}>{entry.repPct.toFixed(1)}%</span>
+                                </div>
+                                <div className="mt-0.5 flex justify-between gap-3 text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+                                  <span className="truncate">
+                                    {(entry.demVotes ?? 0).toLocaleString()} D votes
+                                  </span>
+                                  <span className="truncate text-right">
+                                    {(entry.repVotes ?? 0).toLocaleString()} R votes
+                                  </span>
+                                </div>
+                              </>
+                            ) : (
+                              <div className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>
+                                Election data TBD
+                              </div>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </section>
+              )}
+            </>
+          )}
+        >
         {/* Federal Offices */}
         <section
-          className="rounded-xl p-6"
+          className="rounded-xl p-3"
           style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
         >
-          <div className="flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-3 mb-5">
+          <div className="flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-3 mb-3">
             <h2
               className="text-[10px] uppercase tracking-wider font-semibold"
               style={{ color: "var(--app-text-muted)" }}
@@ -463,6 +542,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
             </span>
           </div>
 
+          <div className="max-h-[38rem] overflow-y-auto pr-1">
           <div className="flex flex-col" style={{ borderTop: "1px solid var(--app-border)" }}>
             {/* Senate seat 1 */}
             {senateSeat1Race ? (
@@ -543,32 +623,21 @@ export default async function StateDetailPage({ params, searchParams }: { params
               </div>
             )}
           </div>
+          </div>
         </section>
 
-        {/* Electoral History */}
-        <section
-          className="rounded-xl p-4 sm:p-6"
-          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-        >
-          <h2
-            className="text-[10px] uppercase tracking-wider font-semibold mb-4 sm:mb-6"
-            style={{ color: "var(--app-text-muted)" }}
+          {/* Electoral History */}
+          <section
+            className="rounded-xl p-3 lg:flex lg:min-h-0 lg:flex-col lg:overflow-hidden"
+            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
           >
-            Electoral History · Statewide Races Since 2016
-          </h2>
-          <div>
-              {/* Table header */}
-              <div
-                className="grid grid-cols-[2.5rem_minmax(0,1fr)_3.05rem_3.05rem_3.9rem] sm:grid-cols-[4rem_minmax(0,1fr)_4.5rem_4.5rem_6rem] gap-1 sm:gap-3 pb-2 mb-3 text-[10px] uppercase tracking-wider font-semibold"
-                style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-very-muted)" }}
-              >
-                <span>Year</span>
-                <span>Race</span>
-                <span>Dem</span>
-                <span>Rep</span>
-                <span>Margin</span>
-              </div>
-
+            <h2
+              className="text-[10px] uppercase tracking-wider font-semibold mb-3"
+              style={{ color: "var(--app-text-muted)" }}
+            >
+              Electoral History · Statewide Races Since 2016
+            </h2>
+            <div className="max-h-[28rem] overflow-y-auto pr-1 lg:min-h-0 lg:flex-1 lg:basis-0 lg:max-h-none">
               <div className="flex flex-col gap-2.5">
                 {presRows.length > 0 ? presRows.map((res, i) => {
                   const winner = res.demPct > res.repPct ? "D" : "R";
@@ -576,31 +645,63 @@ export default async function StateDetailPage({ params, searchParams }: { params
                   return (
                     <div
                       key={`pres-${res.year}-${res.stateAbbr}-${i}`}
-                      className="grid grid-cols-[2.5rem_minmax(0,1fr)_3.05rem_3.05rem_3.9rem] sm:grid-cols-[4rem_minmax(0,1fr)_4.5rem_4.5rem_6rem] gap-1 sm:gap-3 items-center"
+                      className="rounded-lg p-2.5"
+                      style={{ background: "var(--app-bg)" }}
                     >
-                      <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                        {res.year}
-                      </span>
-                      <span className="min-w-0 text-xs font-medium truncate" style={{ color: "var(--app-text-muted)" }}>
-                        {presRaceLabel(res.stateAbbr)}
-                      </span>
-                      <span className="text-xs tabular-nums whitespace-nowrap" style={{ color: "var(--party-dem)" }}>{res.demPct.toFixed(1)}%</span>
-                      <span className="text-xs tabular-nums whitespace-nowrap" style={{ color: "var(--party-rep)" }}>{res.repPct.toFixed(1)}%</span>
-                      <span className="inline-flex justify-self-start text-[11px] font-bold px-1.5 sm:px-2 py-0.5 rounded-full whitespace-nowrap" style={winner === "D" ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" } : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>
-                        {winner}+{margin}
-                      </span>
+                      <div className="mb-2 flex items-center justify-between gap-3">
+                        <div className="flex min-w-0 items-center gap-3">
+                          <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+                            {res.year}
+                          </span>
+                          <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>
+                            {presRaceLabel(res.stateAbbr)}
+                          </span>
+                        </div>
+                        <span
+                          className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
+                          style={winner === "D"
+                            ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                            : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                        >
+                          {winner}+{margin}
+                        </span>
+                      </div>
+                      <div className="flex h-2.5 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>
+                        <div style={{ width: `${res.demPct}%`, background: "#1b408c" }} />
+                        <div style={{ width: `${res.repPct}%`, background: "#be1c29" }} />
+                      </div>
+                      <div className="flex justify-between text-xs font-semibold">
+                        <span style={{ color: "var(--party-dem)" }}>{res.demPct.toFixed(1)}%</span>
+                        <span style={{ color: "var(--party-rep)" }}>{res.repPct.toFixed(1)}%</span>
+                      </div>
+                      <div className="mt-0.5 flex justify-between gap-3 text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+                        {res.demVotes != null ? (
+                          <span className="truncate">{res.demVotes.toLocaleString()} votes</span>
+                        ) : (
+                          <span className="italic">TBD votes</span>
+                        )}
+                        {res.repVotes != null ? (
+                          <span className="truncate text-right">{res.repVotes.toLocaleString()} votes</span>
+                        ) : (
+                          <span className="italic text-right">TBD votes</span>
+                        )}
+                      </div>
                     </div>
                   );
                 }) : [2024, 2020, 2016].map((year) => (
                   <div
                     key={`pres-${year}`}
-                    className="grid grid-cols-[2.5rem_minmax(0,1fr)_3.05rem_3.05rem_3.9rem] sm:grid-cols-[4rem_minmax(0,1fr)_4.5rem_4.5rem_6rem] gap-1 sm:gap-3 items-center"
+                    className="rounded-lg p-2.5"
+                    style={{ background: "var(--app-bg)" }}
                   >
-                    <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{year}</span>
-                    <span className="text-xs font-medium" style={{ color: "var(--app-text-muted)" }}>Presidential</span>
-                    <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>—</span>
-                    <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>—</span>
-                    <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                    <div className="mb-1 flex items-center justify-between gap-3">
+                      <div className="flex min-w-0 items-center gap-3">
+                        <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{year}</span>
+                        <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>Presidential</span>
+                      </div>
+                      <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                    </div>
+                    <div className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Election data TBD</div>
                   </div>
                 ))}
 
@@ -613,21 +714,49 @@ export default async function StateDetailPage({ params, searchParams }: { params
                   return (
                     <div
                       key={`senate-${res.year}-${res.seat}-${res.electionType ?? "regular"}-${idx}`}
-                      className="grid grid-cols-[2.5rem_minmax(0,1fr)_3.05rem_3.05rem_3.9rem] sm:grid-cols-[4rem_minmax(0,1fr)_4.5rem_4.5rem_6rem] gap-1 sm:gap-3 items-center"
+                      className="rounded-lg p-2.5"
+                      style={{ background: "var(--app-bg)" }}
                     >
-                      <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
-                      <Link
-                        href={`/senate/${(res.seat === 2 ? `${state.abbr}-2` : state.abbr).toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
-                        className="min-w-0 text-xs font-medium transition-colors hover:underline truncate"
-                        style={{ color: "var(--app-text-muted)" }}
-                      >
-                        {isSpecialElection(res.electionType) ? "Senate Special" : "Senate"}
-                      </Link>
-                      <span className="text-xs tabular-nums whitespace-nowrap" style={{ color: "var(--party-dem)" }}>{res.demPct.toFixed(1)}%</span>
-                      <span className="text-xs tabular-nums whitespace-nowrap" style={{ color: "var(--party-rep)" }}>{res.repPct.toFixed(1)}%</span>
-                      <span className="inline-flex justify-self-start text-[11px] font-bold px-1.5 sm:px-2 py-0.5 rounded-full whitespace-nowrap" style={winner === "D" ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" } : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>
-                        {winner}+{margin}
-                      </span>
+                      <div className="mb-2 flex items-center justify-between gap-3">
+                        <div className="flex min-w-0 items-center gap-3">
+                          <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+                          <Link
+                            href={`/senate/${(res.seat === 2 ? `${state.abbr}-2` : state.abbr).toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                            className="truncate text-sm font-semibold transition-colors hover:underline"
+                            style={{ color: "var(--app-text-muted)" }}
+                          >
+                            {isSpecialElection(res.electionType) ? "Senate Special" : "Senate"}
+                          </Link>
+                        </div>
+                        <span
+                          className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
+                          style={winner === "D"
+                            ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                            : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                        >
+                          {winner}+{margin}
+                        </span>
+                      </div>
+                      <div className="flex h-2.5 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>
+                        <div style={{ width: `${res.demPct}%`, background: "#1b408c" }} />
+                        <div style={{ width: `${res.repPct}%`, background: "#be1c29" }} />
+                      </div>
+                      <div className="flex justify-between text-xs font-semibold">
+                        <span style={{ color: "var(--party-dem)" }}>{res.demPct.toFixed(1)}%</span>
+                        <span style={{ color: "var(--party-rep)" }}>{res.repPct.toFixed(1)}%</span>
+                      </div>
+                      <div className="mt-0.5 flex justify-between gap-3 text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+                        {res.demVotes != null ? (
+                          <span className="truncate">{res.demVotes.toLocaleString()} votes</span>
+                        ) : (
+                          <span className="italic">TBD votes</span>
+                        )}
+                        {res.repVotes != null ? (
+                          <span className="truncate text-right">{res.repVotes.toLocaleString()} votes</span>
+                        ) : (
+                          <span className="italic text-right">TBD votes</span>
+                        )}
+                      </div>
                     </div>
                   );
                 })}
@@ -641,133 +770,58 @@ export default async function StateDetailPage({ params, searchParams }: { params
                       return (
                         <div
                           key={`gov-${res.year}`}
-                          className="grid grid-cols-[2.5rem_minmax(0,1fr)_3.05rem_3.05rem_3.9rem] sm:grid-cols-[4rem_minmax(0,1fr)_4.5rem_4.5rem_6rem] gap-1 sm:gap-3 items-center"
+                          className="rounded-lg p-2.5"
+                          style={{ background: "var(--app-bg)" }}
                         >
-                          <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
-                          <Link
-                            href={`/governor/${govPageId}?from=${encodeURIComponent(`/states/${id}`)}`}
-                            className="min-w-0 text-xs font-medium transition-colors hover:underline truncate"
-                            style={{ color: "var(--app-text-muted)" }}
-                          >
-                            Governor
-                          </Link>
-                          <span className="text-xs tabular-nums whitespace-nowrap" style={{ color: "var(--party-dem)" }}>{res.demPct.toFixed(1)}%</span>
-                          <span className="text-xs tabular-nums whitespace-nowrap" style={{ color: "var(--party-rep)" }}>{res.repPct.toFixed(1)}%</span>
-                          <span className="inline-flex justify-self-start text-[11px] font-bold px-1.5 sm:px-2 py-0.5 rounded-full whitespace-nowrap" style={winner === "D" ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" } : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>
-                            {winner}+{margin}
-                          </span>
+                          <div className="mb-2 flex items-center justify-between gap-3">
+                            <div className="flex min-w-0 items-center gap-3">
+                              <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+                              <Link
+                                href={`/governor/${govPageId}?from=${encodeURIComponent(`/states/${id}`)}`}
+                                className="truncate text-sm font-semibold transition-colors hover:underline"
+                                style={{ color: "var(--app-text-muted)" }}
+                              >
+                                Governor
+                              </Link>
+                            </div>
+                            <span
+                              className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
+                              style={winner === "D"
+                                ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                                : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                            >
+                              {winner}+{margin}
+                            </span>
+                          </div>
+                          <div className="flex h-2.5 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>
+                            <div style={{ width: `${res.demPct}%`, background: "#1b408c" }} />
+                            <div style={{ width: `${res.repPct}%`, background: "#be1c29" }} />
+                          </div>
+                          <div className="flex justify-between text-xs font-semibold">
+                            <span style={{ color: "var(--party-dem)" }}>{res.demPct.toFixed(1)}%</span>
+                            <span style={{ color: "var(--party-rep)" }}>{res.repPct.toFixed(1)}%</span>
+                          </div>
+                          <div className="mt-0.5 flex justify-between gap-3 text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+                            {res.demVotes != null ? (
+                              <span className="truncate">{res.demVotes.toLocaleString()} votes</span>
+                            ) : (
+                              <span className="italic">TBD votes</span>
+                            )}
+                            {res.repVotes != null ? (
+                              <span className="truncate text-right">{res.repVotes.toLocaleString()} votes</span>
+                            ) : (
+                              <span className="italic text-right">TBD votes</span>
+                            )}
+                          </div>
                         </div>
                       );
                     })}
                   </>
                 )}
               </div>
-          </div>
-        </section>
-
-        {/* House Composition History */}
-        {houseRaces.length > 0 && (
-          <section
-            className="rounded-xl p-4 sm:p-6"
-            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-          >
-            <h2
-              className="text-[10px] uppercase tracking-wider font-semibold mb-4 sm:mb-6"
-              style={{ color: "var(--app-text-muted)" }}
-            >
-              House Delegation Composition · Since 2016
-            </h2>
-
-            <div>
-                {/* Table header */}
-                <div
-                  className="grid grid-cols-[2.5rem_minmax(0,1fr)_3.05rem_3.05rem_3.9rem] sm:grid-cols-[4rem_minmax(0,1fr)_4.5rem_4.5rem_6rem] gap-1 sm:gap-3 pb-2 mb-1 sm:mb-3 text-[10px] uppercase tracking-wider font-semibold"
-                  style={{ borderBottom: "1px solid var(--app-border)", color: "var(--app-text-very-muted)" }}
-                >
-                  <span>Year</span>
-                  <div className="flex gap-6 sm:gap-10 items-center">
-                    <div className="flex gap-4 items-center">
-                      <span className="w-4 text-center" style={{ color: "var(--party-dem)" }}>D</span>
-                      <span style={{ color: "var(--app-text-very-muted)" }}>/</span>
-                      <span className="w-5 text-center" style={{ color: "var(--party-rep)" }}>R</span>
-                    </div>
-                    <span className="hidden sm:block w-24">D Votes</span>
-                    <span className="hidden sm:block w-24">R Votes</span>
-                  </div>
-                  <span>Dem</span>
-                  <span>Rep</span>
-                  <span>Margin</span>
-                </div>
-                <div className="flex flex-col gap-2.5">
-              {([2024, 2022, 2020, 2018, 2016] as const).map((year) => {
-                const entry = stateDelegationHistory.find((e) => e.year === year);
-                let popVote = null;
-                if (entry) {
-                  const winner = entry.demPct > entry.repPct ? "D" : "R";
-                  const margin = Math.abs(entry.demPct - entry.repPct).toFixed(1);
-                  popVote = { winner, margin };
-                }
-                return (
-                  <div
-                    key={year}
-                    className="grid grid-cols-[2.5rem_minmax(0,1fr)_3.05rem_3.05rem_3.9rem] sm:grid-cols-[4rem_minmax(0,1fr)_4.5rem_4.5rem_6rem] gap-1 sm:gap-3 items-center"
-                  >
-                    <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                      {year}
-                    </span>
-                    <div className="flex gap-6 sm:gap-10 items-center min-w-0">
-                      <div className="flex gap-4 items-center">
-                        <span className="w-4 text-center text-sm font-semibold tabular-nums" style={{ color: "var(--party-dem)" }}>
-                          {entry ? entry.demSeats : "—"}
-                        </span>
-                        <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>/</span>
-                        <span className="w-5 text-center text-sm font-semibold tabular-nums" style={{ color: "var(--party-rep)" }}>
-                          {entry && popVote ? entry.repSeats : "—"}
-                        </span>
-                      </div>
-                      {entry && popVote ? (
-                        <>
-                          <span className="hidden sm:block text-[10px] tabular-nums truncate w-24" style={{ color: "var(--party-dem)" }}>
-                            {(entry.demVotes ?? 0).toLocaleString()}
-                          </span>
-                          <span className="hidden sm:block text-[10px] tabular-nums truncate w-24" style={{ color: "var(--party-rep)" }}>
-                            {(entry.repVotes ?? 0).toLocaleString()}
-                          </span>
-                        </>
-                      ) : (
-                        <>
-                          <span className="hidden sm:block text-xs italic w-24" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
-                          <span className="hidden sm:block text-xs italic w-24" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
-                        </>
-                      )}
-                    </div>
-                    {entry && popVote ? (
-                      <>
-                        <span className="text-xs tabular-nums whitespace-nowrap" style={{ color: "var(--party-dem)" }}>{entry.demPct.toFixed(1)}%</span>
-                        <span className="text-xs tabular-nums whitespace-nowrap" style={{ color: "var(--party-rep)" }}>{entry.repPct.toFixed(1)}%</span>
-                        <span
-                          className="inline-flex justify-self-start text-[11px] font-bold px-1.5 sm:px-2 py-0.5 rounded-full whitespace-nowrap"
-                          style={popVote.winner === "D"
-                            ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
-                            : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
-                        >
-                          {popVote.winner}+{popVote.margin}
-                        </span>
-                      </>
-                    ) : (
-                      <>
-                        <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>—</span>
-                        <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>—</span>
-                        <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
-                      </>
-                    )}
-                  </div>
-                );
-              })}
-                </div>
             </div>
           </section>
-        )}
+        </StateMapSection>
       </main>
     </div>
   );

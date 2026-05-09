@@ -35,19 +35,19 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <AppHeader back={<BackButton />} />
 
-      <main className="max-w-6xl mx-auto px-4 py-5 sm:px-6 sm:py-6">
-        <div className="mb-5">
-          <div className="flex items-center gap-3 mb-2 flex-wrap">
-            <Link href={`/states/${stateSlug(entry.state)}?from=${encodeURIComponent(from)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</Link>
-            <span className="text-xs font-semibold px-3 py-1 rounded-full" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
+        <div className="mb-3 flex flex-col gap-1.5">
+          <div className="flex flex-wrap items-center gap-2">
+            <Link href={`/states/${stateSlug(entry.state)}?from=${encodeURIComponent(from)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</Link>
+            <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
               No Election in {electionYear}
             </span>
           </div>
-          <p style={{ color: "var(--app-text-muted)" }}>Gubernatorial Office · No Election This Cycle</p>
+          <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>Gubernatorial Office · No Election This Cycle</p>
         </div>
 
-        <div className="grid grid-cols-1 items-stretch gap-4 md:grid-cols-3 mb-4">
-          <div className="md:col-span-2 [&>section]:mb-0 [&>section]:h-full">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
+          <div className="[&>section]:mb-0">
             <CurrentIncumbentCard
               incumbentName={entry.incumbent}
               party={entry.party}
@@ -61,18 +61,21 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
             />
           </div>
 
-          <div className="md:col-span-1 [&>section]:mb-0 [&>section]:h-full">
+          <div className="grid grid-cols-1 gap-3">
             <ElectionStatusCard
               message={`This governorship is not on the ballot in ${electionYear}. The next election is scheduled for ${entry.nextElection}. Incumbent and biographical information to be filled in.`}
             />
+
+            <PastElectionResultsSection
+              results={entry.pastResults}
+              fallbackYears={[entry.nextElection - 4, entry.nextElection - 8]}
+              showElectionType
+              layoutClassName="lg:max-h-[34rem]"
+              density="compact"
+              scrollable
+            />
           </div>
         </div>
-
-        <PastElectionResultsSection
-          results={entry.pastResults}
-          fallbackYears={[entry.nextElection - 4, entry.nextElection - 8]}
-          showElectionType
-        />
       </main>
     </div>
   );
@@ -105,28 +108,27 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <AppHeader back={<BackButton />} />
 
-      <main className="max-w-6xl mx-auto px-4 py-5 sm:px-6 sm:py-6">
+      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
         {/* Title block */}
-        <div className="mb-5">
-          <div className="flex items-center gap-3 mb-2 flex-wrap">
-            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/governor/${id}`)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
+        <div className="mb-3 flex flex-col gap-1.5">
+          <div className="flex flex-wrap items-center gap-2">
+            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/governor/${id}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
             <span
-              className="text-xs font-semibold px-2.5 py-1 rounded-full"
+              className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}
             >
               {race.rating}
             </span>
           </div>
-          <p style={{ color: "var(--app-text-muted)" }}>{electionYear} Gubernatorial Race</p>
+          <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{electionYear} Gubernatorial Race</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 mb-4">
-          <div className="[&>section]:mb-0 [&>section]:h-full">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
+          <div className="[&>section]:h-full">
             <AboutRaceCard
               title="About this Race"
               description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
               items={[
-                { label: "State", value: race.state },
                 { label: "Term Length", value: "4 Years" },
                 { label: "Incumbent", value: currentGovernorName },
                 { label: "Party", value: currentGovernorParty ? (currentGovernorParty === "D" ? "Democrat" : currentGovernorParty === "R" ? "Republican" : "Independent") : "TBD" },
@@ -134,9 +136,10 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             />
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 [&>div>section]:mb-0 [&>div>section]:h-full">
-            <div>
+          <div className="grid grid-cols-1 gap-3 lg:grid-cols-8">
+            <div className="lg:col-span-5 [&>section]:h-full">
               <CandidatesSection
+                density="compact"
                 candidates={race.candidates
                   ? [
                       {
@@ -158,11 +161,12 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                       { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
                       { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
                     ]}
-              />
+                />
             </div>
 
-            <div>
+            <div className="lg:col-span-3 [&>section]:h-full">
               <MarginAndWinProbabilityCard
+                density="compact"
                 margin={race.margin}
                 demPct={demPct}
                 repPct={repPct}
@@ -172,11 +176,16 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                 polyRep={race.polyRep}
               />
             </div>
-          </div>
-        </div>
 
-        <div className="grid grid-cols-1 gap-4">
-          <PastElectionResultsSection results={race.pastResults} fallbackYears={[2022, 2018, 2014]} showElectionType layoutClassName="" />
+            <PastElectionResultsSection
+              results={race.pastResults}
+              fallbackYears={[2022, 2018, 2014]}
+              showElectionType
+              layoutClassName="lg:col-span-8 lg:max-h-[34rem]"
+              density="compact"
+              scrollable
+            />
+          </div>
         </div>
       </main>
     </div>

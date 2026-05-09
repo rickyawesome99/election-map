@@ -7,11 +7,13 @@ import StateMapToggle from "./StateMapToggle";
 import Link from "next/link";
 
 export default function StateMapSection({
+  overview,
   children,
   houseRaces,
   stateAbbr,
   stateName,
 }: {
+  overview: React.ReactNode;
   children: React.ReactNode;
   houseRaces: RaceForecast[];
   stateAbbr: string;
@@ -25,16 +27,21 @@ export default function StateMapSection({
   const distLabel = distNum === "AL" ? "At-Large District" : distNum ? `District ${distNum}` : "";
 
   return (
-    <div className="grid grid-cols-1 items-stretch gap-4 md:grid-cols-3">
-      <div className="order-2 md:order-1 md:col-span-2 grid grid-cols-1 gap-4">
-        {children}
-
+    <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-stretch">
+      <div className="flex flex-col gap-3 lg:h-full">
+        <StateMapToggle
+          abbr={stateAbbr}
+          stateName={stateName}
+          houseRaces={houseRaces}
+          selected={selected}
+          onSelect={setSelected}
+        />
         {selected && (
           <section
-            className="rounded-xl p-4"
+            className="rounded-xl p-3"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
           >
-            <div className="flex items-start justify-between gap-3 mb-3">
+            <div className="flex items-start justify-between gap-3 mb-2">
               <div className="min-w-0">
                 <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
                   Selected District
@@ -58,7 +65,7 @@ export default function StateMapSection({
 
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               <div className="rounded-lg p-3" style={{ background: "var(--app-bg)" }}>
-                <div className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+                <div className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>
                   Candidates
                 </div>
                 {selected.candidates ? (
@@ -76,10 +83,10 @@ export default function StateMapSection({
               </div>
 
               <div className="rounded-lg p-3" style={{ background: "var(--app-bg)" }}>
-                <div className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+                <div className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>
                   Forecast
                 </div>
-                <div className="text-2xl font-bold mb-2" style={{ color: selected.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
+                <div className="text-xl font-bold mb-1.5" style={{ color: selected.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
                   {selected.margin >= 0 ? "D" : "R"}+{Math.abs(selected.margin).toFixed(1)}
                 </div>
                 <div className="flex justify-between text-xs font-semibold mb-1.5">
@@ -108,16 +115,11 @@ export default function StateMapSection({
             </Link>
           </section>
         )}
+        {overview}
       </div>
 
-      <div className="order-1 md:order-2 md:col-span-1">
-        <StateMapToggle
-          abbr={stateAbbr}
-          stateName={stateName}
-          houseRaces={houseRaces}
-          selected={selected}
-          onSelect={setSelected}
-        />
+      <div className="grid grid-cols-1 gap-3 lg:flex lg:h-full lg:min-h-0 lg:flex-col lg:self-stretch [&>section:last-child]:lg:min-h-0 [&>section:last-child]:lg:flex-1">
+        {children}
       </div>
     </div>
   );

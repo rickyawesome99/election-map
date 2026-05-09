@@ -76,43 +76,52 @@ function NoElectionPage({
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <AppHeader back={<BackButton />} />
 
-      <main className="max-w-4xl mx-auto px-6 py-6">
+      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
         {/* Title + banner */}
-        <div className="mb-5">
-          <div className="flex items-center gap-3 mb-2 flex-wrap">
-            <Link href={`/states/${stateSlug(state)}?from=${encodeURIComponent(from)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{state}</Link>
+        <div className="mb-3 flex flex-col gap-1.5">
+          <div className="flex flex-wrap items-center gap-2">
+            <Link href={`/states/${stateSlug(state)}?from=${encodeURIComponent(from)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{state}</Link>
             <span
-              className="text-xs font-semibold px-3 py-1 rounded-full"
+              className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
             >
               No Election in {electionYear}
             </span>
           </div>
-          <p style={{ color: "var(--app-text-muted)" }}>{seatLabel}</p>
+          <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{seatLabel}</p>
         </div>
 
-        <CurrentIncumbentCard
-          incumbentName={incumbent}
-          party={party}
-          items={[
-            { label: "State", value: state },
-            { label: "Party", value: partyLabel },
-            { label: "Next Election", value: String(nextElection) },
-            { label: "Term Started", value: termStarted },
-          ]}
-          description={raceDesc ?? "[Placeholder — overview of this seat, its history, the incumbent's background, key issues, and political context to be filled in.]"}
-        />
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
+          <div className="[&>section]:mb-0">
+            <CurrentIncumbentCard
+              incumbentName={incumbent}
+              party={party}
+              items={[
+                { label: "State", value: state },
+                { label: "Party", value: partyLabel },
+                { label: "Next Election", value: String(nextElection) },
+                { label: "Term Started", value: termStarted },
+              ]}
+              description={raceDesc ?? "[Placeholder — overview of this seat, its history, the incumbent's background, key issues, and political context to be filled in.]"}
+            />
+          </div>
 
-        <ElectionStatusCard
-          message={`This seat is not on the ballot in November ${electionYear}. The next election for this seat is scheduled for ${nextElection}. Incumbent and biographical information to be filled in.`}
-        />
+          <div className="grid grid-cols-1 gap-3">
+            <ElectionStatusCard
+              message={`This seat is not on the ballot in November ${electionYear}. The next election for this seat is scheduled for ${nextElection}. Incumbent and biographical information to be filled in.`}
+            />
 
-        <PastElectionResultsSection
-          results={pastResults}
-          fallbackYears={[nextElection - termYears, nextElection - termYears * 2]}
-          showElectionType
-          showSpecialBadgeForSpecialElections
-        />
+            <PastElectionResultsSection
+              results={pastResults}
+              fallbackYears={[nextElection - termYears, nextElection - termYears * 2]}
+              showElectionType
+              showSpecialBadgeForSpecialElections
+              layoutClassName="lg:max-h-[34rem]"
+              density="compact"
+              scrollable
+            />
+          </div>
+        </div>
       </main>
     </div>
   );
@@ -187,26 +196,26 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <AppHeader back={<BackButton />} />
 
-      <main className="max-w-6xl mx-auto px-4 py-5 sm:px-6 sm:py-6">
+      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
         {/* Title block */}
-        <div className="mb-5">
-          <div className="flex items-center gap-3 mb-2 flex-wrap">
-            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/senate/${id}`)}`} className="text-3xl font-bold hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
+        <div className="mb-3 flex flex-col gap-1.5">
+          <div className="flex flex-wrap items-center gap-2">
+            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/senate/${id}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
             <span
-              className="text-xs font-semibold px-2.5 py-1 rounded-full"
+              className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}
             >
               {race.rating}
             </span>
             {isSpecialElection(race.electionType) && <SpecialBadge />}
           </div>
-          <p style={{ color: "var(--app-text-muted)" }}>
+          <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>
             {electionYear} {race.electionType ?? "Regular"} U.S. Senate Race{race.seatClass ? ` · Class ${race.seatClass}` : ""}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 mb-4">
-          <div className="[&>section]:mb-0 [&>section]:h-full">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
+          <div className="[&>section]:h-full">
             <AboutRaceCard
               title="About this Race"
               description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
@@ -219,10 +228,11 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
             />
           </div>
 
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 [&>div>section]:mb-0 [&>div>section]:h-full">
+          <div className="grid grid-cols-1 gap-3 lg:grid-cols-8">
             {race.candidates && (
-              <div>
+              <div className="lg:col-span-5 [&>section]:h-full">
                 <CandidatesSection
+                  density="compact"
                   candidates={[
                     {
                       name: race.candidates.dem.name,
@@ -243,8 +253,9 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               </div>
             )}
 
-            <div>
+            <div className={`${race.candidates ? "lg:col-span-3" : "lg:col-span-8"} [&>section]:h-full`}>
               <MarginAndWinProbabilityCard
+                density="compact"
                 margin={race.margin}
                 demPct={demPct}
                 repPct={repPct}
@@ -254,14 +265,19 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
                 polyRep={race.polyRep}
               />
             </div>
+
+            {race.pastResults && race.pastResults.length > 0 && (
+              <PastElectionResultsSection
+                results={race.pastResults}
+                fallbackYears={[]}
+                showElectionType
+                layoutClassName="lg:col-span-8 lg:max-h-[34rem]"
+                density="compact"
+                scrollable
+              />
+            )}
           </div>
         </div>
-
-        {race.pastResults && race.pastResults.length > 0 && (
-          <div className="grid grid-cols-1 gap-4">
-            <PastElectionResultsSection results={race.pastResults} fallbackYears={[]} showElectionType layoutClassName="" />
-          </div>
-        )}
       </main>
     </div>
   );

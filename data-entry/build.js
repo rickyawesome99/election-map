@@ -132,8 +132,8 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
   let margin;
   if (has(row.proj_dem) && has(row.proj_rep)) {
     margin = parseFloat((num(row.proj_dem) - num(row.proj_rep)).toFixed(1));
-  } else if (has(row.margin)) {
-    margin = parseFloat((-num(row.margin)).toFixed(1));
+  } else if (has(row.proj_margin) || has(row.margin)) {
+    margin = parseFloat((-num(row.proj_margin || row.margin)).toFixed(1));
   } else {
     margin = parseFloat(((prob01 - 0.5) * 42).toFixed(1));
   }
@@ -150,7 +150,7 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
   };
 
   // termLength — governor only (optional)
-  if (has(row.Term_Length)) forecast.termLength = int2(row.Term_Length);
+  if (has(row.term_length || row.Term_Length)) forecast.termLength = int2(row.term_length || row.Term_Length);
 
   // senate-specific fields
   if (has(row.seat))       forecast.seat        = int2(row.seat);
@@ -203,7 +203,7 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
                        : null;
   if (seatHolderName) {
     forecast.seatHolder = seatHolderName;
-    const p = (row.party || "").trim().toLowerCase();
+    const p = (row.inc_party || row.party || "").trim().toLowerCase();
     forecast.seatParty = (p === "d" || p.startsWith("dem")) ? "D" : (p === "r" || p.startsWith("rep")) ? "R" : "I";
   }
 
@@ -250,10 +250,10 @@ function buildNoElection(row, state, abbr, pastRows) {
     state,
     abbr,
     incumbent:    has(row.current_incumbent) ? row.current_incumbent : has(row.incumbent) ? row.incumbent : "Incumbent TBD",
-    party:        row.party || "R",
+    party:        row.inc_party || row.party || "R",
     nextElection: int2(row.next_election, 2028),
   };
-  if (has(row.Term_Length)) entry.termLength = int2(row.Term_Length);
+  if (has(row.term_length || row.Term_Length)) entry.termLength = int2(row.term_length || row.Term_Length);
   if (has(row.race_desc))   entry.raceDesc   = row.race_desc;
   if (pastRows && pastRows.length > 0) {
     entry.pastResults = pastRows
@@ -373,7 +373,7 @@ const govRows       = parseCSV("governor_seats.csv");
 const govPast       = parseCSVOptional("governor_past_results.csv");
 const houseRows     = parseCSV("house_seats.csv");
 const housePast     = parseCSV("house_past_results.csv");
-const districtInfoRows  = parseCSVOptional("house_district_info.csv");
+const districtInfoRows  = parseCSVOptional("house_redistrict.csv");
 const presHistoryRows   = parseCSVOptional("president_past_results.csv");
 const houseDelHistoryRows = parseCSVOptional("house_del_history.csv");
 
@@ -415,7 +415,7 @@ const senateSeatsByState = {};
 for (const row of senateRows) {
   const abbr = row.state_abbr;
   if (!senateSeatsByState[abbr]) senateSeatsByState[abbr] = {};
-  senateSeatsByState[abbr][row.seat || row.seate] = row.party || "R";
+  senateSeatsByState[abbr][row.seat || row.seate] = row.inc_party || row.party || "R";
 }
 
 const senateCurrent = {};
@@ -543,7 +543,7 @@ for (const row of districtInfoRows) {
 
 const houseDelegationHistory = {};
 for (const row of houseDelHistoryRows) {
-  const stateName = (row.State || row.state || "").trim();
+  const stateName = (row.state_name || row.State || row.state || "").trim();
   if (!stateName) continue;
   const year = int2(row.Year || row.year, 0);
   if (!year) continue;
@@ -581,7 +581,7 @@ for (const row of presHistoryRows) {
   const repPct = num(row.rep_pct);
   const entry = {
     stateAbbr:     abbr,
-    electoralVotes: int2(row["Electoral"], 0),
+    electoralVotes: int2(row["electoral_votes"] || row["Electoral"], 0),
     year:           int2(row.year, 0),
     demPct,
     repPct,

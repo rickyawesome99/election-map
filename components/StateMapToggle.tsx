@@ -28,7 +28,7 @@ export default function StateMapToggle({
     >
       {/* Toggle header */}
       <div
-        className="flex items-center gap-3 px-5 py-3"
+        className="flex items-center gap-3 px-3 py-2.5"
         style={{ borderBottom: "1px solid var(--app-border)" }}
       >
         <span
@@ -45,7 +45,7 @@ export default function StateMapToggle({
             <button
               key={v}
               onClick={() => setView(v)}
-              className="px-3 py-1 text-xs font-medium transition-colors"
+              className="px-2.5 py-1 text-xs font-medium transition-colors"
               style={
                 view === v
                   ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }
