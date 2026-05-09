@@ -6,6 +6,7 @@ import { candidatePhotos } from "@/lib/candidatePhotos";
 import BackButton from "@/components/BackButton";
 import AppHeader from "@/components/AppHeader";
 import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, MarginAndWinProbabilityCard, PastElectionResultsSection } from "@/components/RaceDetailSections";
+import StateCountyMap from "@/components/StateCountyMap";
 
 function stateSlug(name: string) { return name.toLowerCase().replace(/\s+/g, "-"); }
 
@@ -124,7 +125,10 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
         </div>
 
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
-          <div className="[&>section]:h-full">
+          <div className="flex flex-col gap-3">
+            <div className="overflow-hidden rounded-xl" style={{ border: "1px solid var(--app-border)" }}>
+              <StateCountyMap stateAbbr={id.toUpperCase()} stateName={race.name} />
+            </div>
             <AboutRaceCard
               title="About this Race"
               description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}

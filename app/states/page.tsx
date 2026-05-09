@@ -1,6 +1,6 @@
 import { statesData } from "@/data/statesData";
-import { electionYear } from "@/data/forecastData";
-import RaceTable from "@/components/RaceTable";
+import { electionYear, governorData, governorNoElection, houseData, senateCurrent, pres2024, houseDelegationHistory, RaceForecast } from "@/data/forecastData";
+import StatesTable, { StateRow } from "@/components/StatesTable";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -17,7 +17,50 @@ const NAV = [
   { label: "Analysis",  href: "/analysis" },
 ];
 
+function raceParty(race: RaceForecast): "D" | "R" {
+  if (race.candidates?.dem.incumbent) return "D";
+  if (race.candidates?.rep.incumbent) return "R";
+  return race.margin >= 0 ? "D" : "R";
+}
+
+function buildStateRows(): StateRow[] {
+  return statesData.map((state) => {
+    // Governor current party
+    const govRace = governorData.find((r) => r.id === state.abbr);
+    const govNoEl = !govRace ? governorNoElection.find((e) => e.abbr === state.abbr) : null;
+    const govParty: "D" | "R" | "I" | null = govRace ? raceParty(govRace) : (govNoEl?.party ?? null);
+
+    // Senate current composition
+    const [senSeat1, senSeat2] = senateCurrent[state.abbr] ?? ["R", "R"];
+    const seats = [senSeat1, senSeat2];
+    const senateDem = seats.filter((p) => p === "D").length;
+    const senateRep = seats.filter((p) => p === "R").length;
+    const senateInd = seats.filter((p) => p === "I").length;
+
+    // House current delegation (2024 results preferred, else infer from incumbents)
+    const houseRaces = houseData.filter((r) => r.state === state.name);
+    const del2024 = (houseDelegationHistory[state.name] ?? []).find((e) => e.year === 2024);
+    const houseDem = del2024 ? del2024.demSeats : houseRaces.filter((r) => raceParty(r) === "D").length;
+    const houseRep = del2024 ? del2024.repSeats : houseRaces.filter((r) => raceParty(r) === "R").length;
+
+    return {
+      id: state.id,
+      name: state.name,
+      abbr: state.abbr,
+      govParty,
+      senateDem,
+      senateRep,
+      senateInd,
+      houseDem,
+      houseRep,
+      houseTotal: houseRaces.length,
+      pres2024: pres2024[state.abbr] ?? null,
+    };
+  });
+}
+
 export default function StatesListPage() {
+  const rows = buildStateRows();
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div className="sticky top-0 z-10">
@@ -70,18 +113,11 @@ export default function StatesListPage() {
             States
           </h1>
           <p style={{ color: "var(--app-text-muted)" }}>
-            {electionYear} election forecast by state · all 50 states
+            {electionYear} Election Forecast by State · All 50 States
           </p>
         </div>
 
-        <RaceTable
-          races={statesData.map((state) => ({ id: state.id, name: state.name }))}
-          basePath="/states"
-          nameLabel="State"
-          nameOnly
-          initialSortKey="name"
-          initialSortDir="asc"
-        />
+        <StatesTable rows={rows} />
       </main>
     </div>
   );

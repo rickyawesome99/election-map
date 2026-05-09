@@ -77,7 +77,7 @@ export default function HouseListPage() {
             House Races
           </h1>
           <p style={{ color: "var(--app-text-muted)" }}>
-            {electionYear} U.S. House forecast · {houseData.length} districts
+            {electionYear} U.S. House Forecast · {houseData.length} Districts
           </p>
         </div>
 

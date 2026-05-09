@@ -77,7 +77,7 @@ export default function GovernorListPage() {
             Governor Races
           </h1>
           <p style={{ color: "var(--app-text-muted)" }}>
-            {electionYear} U.S. Governor forecast · {governorData.length} races
+            {electionYear} U.S. Governor Forecast · {governorData.length} Races
           </p>
         </div>
 

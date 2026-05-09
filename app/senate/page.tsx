@@ -77,7 +77,7 @@ export default function SenateListPage() {
             Senate Races
           </h1>
           <p style={{ color: "var(--app-text-muted)" }}>
-            {electionYear} U.S. Senate forecast · {senateData.length} Class 2 seats
+            {electionYear} U.S. Senate Forecast · {senateData.length} Class 2 Seats
           </p>
         </div>
 

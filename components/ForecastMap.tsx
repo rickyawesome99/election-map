@@ -170,7 +170,7 @@ export default function ForecastMap() {
             ))}
           </nav>
           <span className="hidden sm:block text-xs" style={{ color: t.textMuted }}>
-            Updated Mar 30, 2026
+            Updated Apr 9, 2026
           </span>
         </div>
 
@@ -392,13 +392,13 @@ export default function ForecastMap() {
                         default: {
                           fill,
                           stroke: (isSelected || isSelectedNoEl) ? t.hoverStroke : t.mapStroke,
-                          strokeWidth: (isSelected || isSelectedNoEl) ? 1.5 : (isHouse ? 0.25 : 0.6),
+                          strokeWidth: (isSelected || isSelectedNoEl) ? 1.5 : (isHouse ? 0.4 : 1.0),
                           outline: "none",
                         },
                         hover: {
                           fill: match ? fill : t.hoverUnfilled,
                           stroke: t.hoverStroke,
-                          strokeWidth: isHouse ? 0.6 : 1.2,
+                          strokeWidth: isHouse ? 0.7 : 1.5,
                           outline: "none",
                           cursor: isInteractive ? "pointer" : "default",
                         },

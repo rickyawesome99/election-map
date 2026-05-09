@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { RaceForecast } from "@/data/forecastData";
 import StateDistrictMap from "./StateDistrictMap";
+import StateCountyMap from "./StateCountyMap";
 
 type MapView = "county" | "districts";
 
@@ -68,31 +69,7 @@ export default function StateMapToggle({
           onSelect={onSelect}
         />
       ) : (
-        <div
-          className="flex flex-col items-center justify-center gap-2"
-          style={{ height: 360, background: "var(--app-bg)" }}
-        >
-          <svg
-            viewBox="0 0 24 24"
-            className="w-10 h-10"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={1}
-            style={{ color: "var(--app-border)" }}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-            />
-          </svg>
-          <p className="text-sm font-medium" style={{ color: "var(--app-text-very-muted)" }}>
-            {stateName} &middot; County Map
-          </p>
-          <p className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-            Coming soon
-          </p>
-        </div>
+        <StateCountyMap stateAbbr={abbr} stateName={stateName} />
       )}
     </section>
   );

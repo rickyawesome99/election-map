@@ -68,7 +68,7 @@ export default function AnalysisPage() {
             Analysis
           </h1>
           <p style={{ color: "var(--app-text-muted)" }}>
-            {electionYear} election analysis
+            {electionYear} Election Analysis
           </p>
         </div>
 
@@ -103,10 +103,10 @@ export default function AnalysisPage() {
                 className="transition-colors hover:opacity-80"
                 style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}
               >
-                <td className="px-3 sm:px-4 py-3 pl-8">
+                <td className="px-3 sm:px-4 py-3">
                   <Link
                     href="/analysis/oh-31/ohio-treasurer"
-                    className="hover:underline"
+                    className="font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     Ohio State Treasurer Primary
