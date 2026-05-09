@@ -263,6 +263,8 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
                 rcpRep={race.rcpRep}
                 polyDem={race.polyDem}
                 polyRep={race.polyRep}
+                kalshiDem={race.kalshiDem}
+                kalshiRep={race.kalshiRep}
               />
             </div>
 

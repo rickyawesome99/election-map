@@ -174,6 +174,8 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                 rcpRep={race.rcpRep}
                 polyDem={race.polyDem}
                 polyRep={race.polyRep}
+                kalshiDem={race.kalshiDem}
+                kalshiRep={race.kalshiRep}
               />
             </div>
 

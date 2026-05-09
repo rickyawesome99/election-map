@@ -63,12 +63,14 @@ html.dark {
 
 html {
   height: auto;
+  background-color: var(--app-bg);
 }
 
 body {
   color: var(--foreground);
+  background-color: var(--app-bg);
   font-family: var(--font-ibm-plex-sans), sans-serif;
   margin: 0;
-  height: auto;
+  min-height: 100dvh;
   overflow-y: auto;
 }

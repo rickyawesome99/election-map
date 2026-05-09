@@ -8,7 +8,9 @@
  */
 export const candidatePhotos: Record<string, string> = {
   // ── Democrats ──────────────────────────────────────────────────────────────
+  "Amy Acton": "/candidates/amy-acton.png",
 
   // ── Republicans ────────────────────────────────────────────────────────────
   "Susan Collins": "/candidates/susan-collins.jpg",
+  "Vivek Ramaswamy": "/candidates/vivek-ramaswamy.jpg",
 };

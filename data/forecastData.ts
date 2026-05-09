@@ -6293,376 +6293,374 @@ export const senateCurrent: Record<string, ["D" | "R" | "I", "D" | "R" | "I"]> =
 
 export const governorData: RaceForecast[] = [
   {
-    "id": "AL",
-    "name": "Alabama",
-    "state": "Alabama",
+    "id": "HI",
+    "name": "Hawaii",
+    "state": "Hawaii",
     "raceType": "governor",
-    "probability": 0.06,
-    "margin": -25,
-    "rating": "Safe R",
+    "probability": 0.94,
+    "margin": 30,
+    "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 1
+        "value": 89
       },
       {
         "date": "Oct",
-        "value": 3
+        "value": 91
       },
       {
         "date": "Nov",
-        "value": 5
+        "value": 93
       },
       {
         "date": "Dec",
-        "value": 6
+        "value": 94
       },
       {
         "date": "Jan",
-        "value": 6
+        "value": 94
       },
       {
         "date": "Feb",
-        "value": 6
+        "value": 94
       },
       {
         "date": "Mar",
-        "value": 6
+        "value": 94
       }
     ],
     "termLength": 4,
-    "raceDesc": "Democrats have not won a gubernatorial election in Alabama since 1998.",
-    "kalshiDem": 0.06,
-    "kalshiRep": 0.94,
+    "raceDesc": "Republicans have not won a gubernatorial eelction in Hawaii since Linda Lingle was re-elected in 2006.",
+    "kalshiDem": 0.94,
+    "kalshiRep": 0.06,
     "candidates": {
       "dem": {
-        "name": "Doug Jones",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Tommy Tuberville",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Kay Ivey",
-    "seatParty": "R",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 29.18,
-        "repPct": 66.91,
-        "demCandidate": "Yolanda Flowers",
-        "repCandidate": "Kay Ivey",
-        "demVotes": 412961,
-        "repVotes": 946932,
-        "margin": 37.73,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 40.39,
-        "repPct": 59.46,
-        "demCandidate": "Walt Maddox",
-        "repCandidate": "Kay Ivey",
-        "demVotes": 694495,
-        "repVotes": 1022457,
-        "margin": 19.07,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2014,
-        "demPct": 36.24,
-        "repPct": 63.56,
-        "demCandidate": "Parker Griffith",
-        "repCandidate": "Robert J. Bentley",
-        "demVotes": 427787,
-        "repVotes": 750231,
-        "margin": 27.32,
-        "electionType": "Regular",
-        "repIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "AK",
-    "name": "Alaska",
-    "state": "Alaska",
-    "raceType": "governor",
-    "probability": 0.24,
-    "margin": -10,
-    "rating": "Likely R",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 19
-      },
-      {
-        "date": "Oct",
-        "value": 21
-      },
-      {
-        "date": "Nov",
-        "value": 23
-      },
-      {
-        "date": "Dec",
-        "value": 24
-      },
-      {
-        "date": "Jan",
-        "value": 24
-      },
-      {
-        "date": "Feb",
-        "value": 24
-      },
-      {
-        "date": "Mar",
-        "value": 24
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Alaska has a very interesting race with Democrat Tom Begich, part of a well known family in Alaska, running for governor in this open seat.",
-    "kalshiDem": 0.24,
-    "kalshiRep": 0.76,
-    "candidates": {
-      "dem": {
-        "name": "Nick Begich",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Dave Bronson",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Mike Dunleavy",
-    "seatParty": "R",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 24.21,
-        "repPct": 50.29,
-        "demCandidate": "Les Gara",
-        "repCandidate": "Mike Dunleavy",
-        "demVotes": 63851,
-        "repVotes": 132632,
-        "margin": 26.08,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 44.41,
-        "repPct": 51.44,
-        "demCandidate": "Mark Begich",
-        "repCandidate": "Mike Dunleavy",
-        "demVotes": 125739,
-        "repVotes": 145631,
-        "margin": 7.03,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2014,
-        "demPct": 48.1,
-        "repPct": 45.88,
-        "demCandidate": "Bill Walker",
-        "repCandidate": "Sean Parnell",
-        "demVotes": 134658,
-        "repVotes": 128435,
-        "margin": -2.22,
-        "electionType": "Regular",
-        "repIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "AZ",
-    "name": "Arizona",
-    "state": "Arizona",
-    "raceType": "governor",
-    "probability": 0.71,
-    "margin": 3,
-    "rating": "Lean D",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 66
-      },
-      {
-        "date": "Oct",
-        "value": 68
-      },
-      {
-        "date": "Nov",
-        "value": 70
-      },
-      {
-        "date": "Dec",
-        "value": 71
-      },
-      {
-        "date": "Jan",
-        "value": 71
-      },
-      {
-        "date": "Feb",
-        "value": 71
-      },
-      {
-        "date": "Mar",
-        "value": 71
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Katie Hubbs is running for a second term in a state that Trump won back in 2024.",
-    "kalshiDem": 0.71,
-    "kalshiRep": 0.29,
-    "candidates": {
-      "dem": {
-        "name": "Katie Hobbs",
+        "name": "Josh Green",
         "party": "D",
         "incumbent": true
       },
       "rep": {
-        "name": "Andy Biggs",
+        "name": "Republican Candidate",
         "party": "R",
         "incumbent": false
       }
     },
-    "seatHolder": "Katie Hobbs",
+    "seatHolder": "Josh Green",
     "seatParty": "D",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 50.32,
-        "repPct": 49.65,
-        "demCandidate": "Katie Hobbs",
-        "repCandidate": "Kari Lake",
-        "demVotes": 1287891,
-        "repVotes": 1270774,
-        "margin": -0.67,
+        "demPct": 63.21,
+        "repPct": 36.79,
+        "demCandidate": "Josh Green",
+        "repCandidate": "Duke Aiona",
+        "demVotes": 259901,
+        "repVotes": 151258,
+        "margin": -26.42,
         "electionType": "Regular"
       },
       {
         "year": 2018,
-        "demPct": 41.84,
-        "repPct": 56,
-        "demCandidate": "David Garcia",
-        "repCandidate": "Doug Ducey",
-        "demVotes": 994341,
-        "repVotes": 1330863,
-        "margin": 14.16,
+        "demPct": 62.67,
+        "repPct": 33.7,
+        "demCandidate": "David Ige",
+        "repCandidate": "Andria Tupola",
+        "demVotes": 244934,
+        "repVotes": 131719,
+        "margin": -28.97,
         "electionType": "Regular",
-        "repIncumbent": true
+        "demIncumbent": true
       },
       {
         "year": 2014,
-        "demPct": 41.62,
-        "repPct": 53.44,
-        "demCandidate": "Fred DuVal",
-        "repCandidate": "Doug Ducey",
-        "demVotes": 626921,
-        "repVotes": 805062,
-        "margin": 11.82,
+        "demPct": 49.45,
+        "repPct": 37.08,
+        "demCandidate": "David Ige",
+        "repCandidate": "Duke Aiona",
+        "demVotes": 181106,
+        "repVotes": 135775,
+        "margin": -12.37,
         "electionType": "Regular"
       }
     ]
   },
   {
-    "id": "AR",
-    "name": "Arkansas",
-    "state": "Arkansas",
+    "id": "MD",
+    "name": "Maryland",
+    "state": "Maryland",
     "raceType": "governor",
-    "probability": 0.06,
-    "margin": -25,
-    "rating": "Safe R",
+    "probability": 0.94,
+    "margin": 30,
+    "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 1
+        "value": 89
       },
       {
         "date": "Oct",
-        "value": 3
+        "value": 91
       },
       {
         "date": "Nov",
-        "value": 5
+        "value": 93
       },
       {
         "date": "Dec",
-        "value": 6
+        "value": 94
       },
       {
         "date": "Jan",
-        "value": 6
+        "value": 94
       },
       {
         "date": "Feb",
-        "value": 6
+        "value": 94
       },
       {
         "date": "Mar",
-        "value": 6
+        "value": 94
       }
     ],
     "termLength": 4,
-    "raceDesc": "Incumbent Governor Sarah Huckabee Sanders is seeking re-election to a second term.",
-    "kalshiDem": 0.06,
-    "kalshiRep": 0.94,
+    "raceDesc": "Incumbent Governor Wes Moore is running for a second term.",
+    "kalshiDem": 0.94,
+    "kalshiRep": 0.06,
     "candidates": {
       "dem": {
-        "name": "Fredrick Love",
+        "name": "Wes Moore",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
-        "name": "Sarah Huckabee Sanders",
+        "name": "Dan Cox",
         "party": "R",
-        "incumbent": true
+        "incumbent": false
       }
     },
-    "seatHolder": "Sarah Huckabee Sanders",
-    "seatParty": "R",
+    "seatHolder": "Wes Moore",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 35.2,
-        "repPct": 63,
-        "demCandidate": "Chris Jones",
-        "repCandidate": "Sarah Huckabee Sanders",
-        "demVotes": 319242,
-        "repVotes": 571105,
-        "margin": 27.8,
+        "demPct": 64.53,
+        "repPct": 32.12,
+        "demCandidate": "Wes Moore",
+        "repCandidate": "Dan Cox",
+        "demVotes": 1293944,
+        "repVotes": 644000,
+        "margin": -32.41,
         "electionType": "Regular"
       },
       {
         "year": 2018,
-        "demPct": 31.77,
-        "repPct": 65.33,
-        "demCandidate": "Jared Henderson",
-        "repCandidate": "Asa Hutchinson",
-        "demVotes": 283218,
-        "repVotes": 582406,
-        "margin": 33.56,
+        "demPct": 43.51,
+        "repPct": 55.35,
+        "demCandidate": "Ben Jealous",
+        "repCandidate": "Larry Hogan",
+        "demVotes": 1002639,
+        "repVotes": 1275644,
+        "margin": 11.84,
         "electionType": "Regular",
         "repIncumbent": true
       },
       {
         "year": 2014,
-        "demPct": 41.49,
-        "repPct": 55.44,
-        "demCandidate": "Mike Ross",
-        "repCandidate": "Asa Hutchinson",
-        "demVotes": 352115,
-        "repVotes": 470429,
-        "margin": 13.95,
+        "demPct": 47.25,
+        "repPct": 51.03,
+        "demCandidate": "Anthony Brown",
+        "repCandidate": "Larry Hogan",
+        "demVotes": 818890,
+        "repVotes": 884400,
+        "margin": 3.78,
+        "electionType": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "MA",
+    "name": "Massachusetts",
+    "state": "Massachusetts",
+    "raceType": "governor",
+    "probability": 0.92,
+    "margin": 30,
+    "rating": "Safe D",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 87
+      },
+      {
+        "date": "Oct",
+        "value": 89
+      },
+      {
+        "date": "Nov",
+        "value": 91
+      },
+      {
+        "date": "Dec",
+        "value": 92
+      },
+      {
+        "date": "Jan",
+        "value": 92
+      },
+      {
+        "date": "Feb",
+        "value": 92
+      },
+      {
+        "date": "Mar",
+        "value": 92
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Maura Healey is running for a second term.",
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.08,
+    "candidates": {
+      "dem": {
+        "name": "Maura Healey",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "Brian Shortsleeve",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Maura Healey",
+    "seatParty": "D",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 63.74,
+        "repPct": 34.57,
+        "demCandidate": "Maura Healey",
+        "repCandidate": "Geoff Diehl",
+        "demVotes": 1584403,
+        "repVotes": 859343,
+        "margin": -29.17,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2018,
+        "demPct": 33.12,
+        "repPct": 66.6,
+        "demCandidate": "Jay Gonzalez",
+        "repCandidate": "Charlie Baker",
+        "demVotes": 885770,
+        "repVotes": 1781341,
+        "margin": 33.48,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 46.54,
+        "repPct": 48.39,
+        "demCandidate": "Martha Coakley",
+        "repCandidate": "Charlie Baker",
+        "demVotes": 1004408,
+        "repVotes": 1044573,
+        "margin": 1.85,
+        "electionType": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "RI",
+    "name": "Rhode Island",
+    "state": "Rhode Island",
+    "raceType": "governor",
+    "probability": 0.93,
+    "margin": 25,
+    "rating": "Safe D",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 88
+      },
+      {
+        "date": "Oct",
+        "value": 90
+      },
+      {
+        "date": "Nov",
+        "value": 92
+      },
+      {
+        "date": "Dec",
+        "value": 93
+      },
+      {
+        "date": "Jan",
+        "value": 93
+      },
+      {
+        "date": "Feb",
+        "value": 93
+      },
+      {
+        "date": "Mar",
+        "value": 93
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Dan McKee is running for a second full term in office. McKee became governor in 2021 upon the resignation of Gina Raimondo.",
+    "kalshiDem": 0.93,
+    "kalshiRep": 0.07,
+    "candidates": {
+      "dem": {
+        "name": "Dan McKee",
+        "party": "D",
+        "incumbent": true
+      },
+      "rep": {
+        "name": "Aaron Guckian",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Dan McKee",
+    "seatParty": "D",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 57.92,
+        "repPct": 38.86,
+        "demCandidate": "Dan McKee",
+        "repCandidate": "Ashley Kalus",
+        "demVotes": 207166,
+        "repVotes": 139001,
+        "margin": -19.06,
+        "electionType": "Regular",
+        "demIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 52.64,
+        "repPct": 37.18,
+        "demCandidate": "Gina Raimondo",
+        "repCandidate": "Allan Fung",
+        "demVotes": 198122,
+        "repVotes": 139932,
+        "margin": -15.46,
+        "electionType": "Regular",
+        "demIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 40.7,
+        "repPct": 36.24,
+        "demCandidate": "Gina Raimondo",
+        "repCandidate": "Allan Fung",
+        "demVotes": 131899,
+        "repVotes": 117428,
+        "margin": -4.46,
         "electionType": "Regular"
       }
     ]
@@ -6856,469 +6854,94 @@ export const governorData: RaceForecast[] = [
     ]
   },
   {
-    "id": "CT",
-    "name": "Connecticut",
-    "state": "Connecticut",
+    "id": "PA",
+    "name": "Pennsylvania",
+    "state": "Pennsylvania",
     "raceType": "governor",
-    "probability": 0.94,
-    "margin": 11,
-    "rating": "Likely D",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 89
-      },
-      {
-        "date": "Oct",
-        "value": 91
-      },
-      {
-        "date": "Nov",
-        "value": 93
-      },
-      {
-        "date": "Dec",
-        "value": 94
-      },
-      {
-        "date": "Jan",
-        "value": 94
-      },
-      {
-        "date": "Feb",
-        "value": 94
-      },
-      {
-        "date": "Mar",
-        "value": 94
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Ned Lamont is running for a third term.",
-    "kalshiDem": 0.94,
-    "kalshiRep": 0.06,
-    "candidates": {
-      "dem": {
-        "name": "Ned Lamont",
-        "party": "D",
-        "incumbent": true
-      },
-      "rep": {
-        "name": "Ryan Fazio",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Ned Lamont",
-    "seatParty": "D",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 55.97,
-        "repPct": 43.05,
-        "demCandidate": "Ned Lamont",
-        "repCandidate": "Bob Stefanowski",
-        "demVotes": 710186,
-        "repVotes": 546209,
-        "margin": -12.92,
-        "electionType": "Regular",
-        "demIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 49.37,
-        "repPct": 46.21,
-        "demCandidate": "Ned Lamont",
-        "repCandidate": "Bob Stefanowski",
-        "demVotes": 694510,
-        "repVotes": 650138,
-        "margin": -3.16,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2014,
-        "demPct": 50.73,
-        "repPct": 48.16,
-        "demCandidate": "Dannel Malloy",
-        "repCandidate": "Thomas C. Foley",
-        "demVotes": 554314,
-        "repVotes": 526295,
-        "margin": -2.57,
-        "electionType": "Regular",
-        "demIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "FL",
-    "name": "Florida",
-    "state": "Florida",
-    "raceType": "governor",
-    "probability": 0.15,
-    "margin": -8,
-    "rating": "Likely R",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 10
-      },
-      {
-        "date": "Oct",
-        "value": 12
-      },
-      {
-        "date": "Nov",
-        "value": 14
-      },
-      {
-        "date": "Dec",
-        "value": 15
-      },
-      {
-        "date": "Jan",
-        "value": 15
-      },
-      {
-        "date": "Feb",
-        "value": 15
-      },
-      {
-        "date": "Mar",
-        "value": 15
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "The race to succeed Incumbent Governor Ron DeSantis will be an interesting one in this once swing state now trending strongly towards Republicans.",
-    "kalshiDem": 0.15,
-    "kalshiRep": 0.85,
-    "candidates": {
-      "dem": {
-        "name": "David Jolly",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Byron Donalds",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Ron DeSantis",
-    "seatParty": "R",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 39.97,
-        "repPct": 59.37,
-        "demCandidate": "Charlie Crist",
-        "repCandidate": "Ron DeSantis",
-        "demVotes": 3106313,
-        "repVotes": 4614210,
-        "margin": 19.4,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 49.19,
-        "repPct": 49.59,
-        "demCandidate": "Andrew Gillum",
-        "repCandidate": "Ron DeSantis",
-        "demVotes": 4043723,
-        "repVotes": 4076186,
-        "margin": 0.4,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2014,
-        "demPct": 47.07,
-        "repPct": 48.14,
-        "demCandidate": "Charlie Crist",
-        "repCandidate": "Rick Scott",
-        "demVotes": 2801198,
-        "repVotes": 2865343,
-        "margin": 1.07,
-        "electionType": "Regular",
-        "repIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "GA",
-    "name": "Georgia",
-    "state": "Georgia",
-    "raceType": "governor",
-    "probability": 0.55,
-    "margin": -1,
-    "rating": "Lean R",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 50
-      },
-      {
-        "date": "Oct",
-        "value": 52
-      },
-      {
-        "date": "Nov",
-        "value": 54
-      },
-      {
-        "date": "Dec",
-        "value": 55
-      },
-      {
-        "date": "Jan",
-        "value": 55
-      },
-      {
-        "date": "Feb",
-        "value": 55
-      },
-      {
-        "date": "Mar",
-        "value": 55
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Democrats have not won a gubernatorial election in Georgia since 1998. This year might be their best shot yet to break that streak.",
-    "kalshiDem": 0.55,
-    "kalshiRep": 0.45,
-    "candidates": {
-      "dem": {
-        "name": "Keisha Lance Bottoms",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Rick Jackson",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Brian Kemp",
-    "seatParty": "R",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 45.88,
-        "repPct": 53.41,
-        "demCandidate": "Stacey Abrams",
-        "repCandidate": "Brian Kemp",
-        "demVotes": 1813673,
-        "repVotes": 2111572,
-        "margin": 7.53,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 48.83,
-        "repPct": 50.22,
-        "demCandidate": "Stacey Abrams",
-        "repCandidate": "Brian Kemp",
-        "demVotes": 1923685,
-        "repVotes": 1978408,
-        "margin": 1.39,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2014,
-        "demPct": 44.88,
-        "repPct": 52.74,
-        "demCandidate": "Jason Carter",
-        "repCandidate": "Nathan Deal",
-        "demVotes": 1144794,
-        "repVotes": 1345237,
-        "margin": 7.86,
-        "electionType": "Regular",
-        "repIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "HI",
-    "name": "Hawaii",
-    "state": "Hawaii",
-    "raceType": "governor",
-    "probability": 0.94,
-    "margin": 30,
+    "probability": 0.96,
+    "margin": 18,
     "rating": "Safe D",
     "history": [
       {
         "date": "Sep",
-        "value": 89
-      },
-      {
-        "date": "Oct",
         "value": 91
       },
       {
-        "date": "Nov",
+        "date": "Oct",
         "value": 93
       },
       {
+        "date": "Nov",
+        "value": 95
+      },
+      {
         "date": "Dec",
-        "value": 94
+        "value": 96
       },
       {
         "date": "Jan",
-        "value": 94
+        "value": 96
       },
       {
         "date": "Feb",
-        "value": 94
+        "value": 96
       },
       {
         "date": "Mar",
-        "value": 94
+        "value": 96
       }
     ],
     "termLength": 4,
-    "raceDesc": "Republicans have not won a gubernatorial eelction in Hawaii since Linda Lingle was re-elected in 2006.",
-    "kalshiDem": 0.94,
-    "kalshiRep": 0.06,
+    "raceDesc": "Incumbent Governor Josh Shapiro is running for a second term.",
+    "kalshiDem": 0.96,
+    "kalshiRep": 0.04,
     "candidates": {
       "dem": {
-        "name": "Josh Green",
+        "name": "Josh Shapiro",
         "party": "D",
         "incumbent": true
       },
       "rep": {
-        "name": "Republican Candidate",
+        "name": "Stacy Garrity",
         "party": "R",
         "incumbent": false
       }
     },
-    "seatHolder": "Josh Green",
+    "seatHolder": "Josh Shapiro",
     "seatParty": "D",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 63.21,
-        "repPct": 36.79,
-        "demCandidate": "Josh Green",
-        "repCandidate": "Duke Aiona",
-        "demVotes": 259901,
-        "repVotes": 151258,
-        "margin": -26.42,
+        "demPct": 56.49,
+        "repPct": 41.71,
+        "demCandidate": "Josh Shapiro",
+        "repCandidate": "Doug Mastriano",
+        "demVotes": 3031137,
+        "repVotes": 2238477,
+        "margin": -14.78,
         "electionType": "Regular"
       },
       {
         "year": 2018,
-        "demPct": 62.67,
-        "repPct": 33.7,
-        "demCandidate": "David Ige",
-        "repCandidate": "Andria Tupola",
-        "demVotes": 244934,
-        "repVotes": 131719,
-        "margin": -28.97,
+        "demPct": 57.77,
+        "repPct": 40.7,
+        "demCandidate": "Tom Wolf",
+        "repCandidate": "Scott Wagner",
+        "demVotes": 2895652,
+        "repVotes": 2039882,
+        "margin": -17.07,
         "electionType": "Regular",
         "demIncumbent": true
       },
       {
         "year": 2014,
-        "demPct": 49.45,
-        "repPct": 37.08,
-        "demCandidate": "David Ige",
-        "repCandidate": "Duke Aiona",
-        "demVotes": 181106,
-        "repVotes": 135775,
-        "margin": -12.37,
-        "electionType": "Regular"
-      }
-    ]
-  },
-  {
-    "id": "ID",
-    "name": "Idaho",
-    "state": "Idaho",
-    "raceType": "governor",
-    "probability": 0.07,
-    "margin": -30,
-    "rating": "Safe R",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 2
-      },
-      {
-        "date": "Oct",
-        "value": 4
-      },
-      {
-        "date": "Nov",
-        "value": 6
-      },
-      {
-        "date": "Dec",
-        "value": 7
-      },
-      {
-        "date": "Jan",
-        "value": 7
-      },
-      {
-        "date": "Feb",
-        "value": 7
-      },
-      {
-        "date": "Mar",
-        "value": 7
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Brad Little is running for a third term. Democrats have not won the governership here since 1990.",
-    "kalshiDem": 0.07,
-    "kalshiRep": 0.93,
-    "candidates": {
-      "dem": {
-        "name": "Democratic Candidate",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Brad Little",
-        "party": "R",
-        "incumbent": true
-      }
-    },
-    "seatHolder": "Brad Little",
-    "seatParty": "R",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 20.28,
-        "repPct": 60.52,
-        "demCandidate": "Stephen Heidt",
-        "repCandidate": "Brad Little",
-        "demVotes": 120160,
-        "repVotes": 358598,
-        "margin": 40.24,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 38.19,
-        "repPct": 59.76,
-        "demCandidate": "Paulette Jordan",
-        "repCandidate": "Brad Little",
-        "demVotes": 231081,
-        "repVotes": 361661,
-        "margin": 21.57,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2014,
-        "demPct": 38.55,
-        "repPct": 53.52,
-        "demCandidate": "A.J. Balukoff",
-        "repCandidate": "Butch Otter",
-        "demVotes": 169556,
-        "repVotes": 235405,
-        "margin": 14.97,
+        "demPct": 54.93,
+        "repPct": 45.07,
+        "demCandidate": "Tom Wolf",
+        "repCandidate": "Tom Corbett",
+        "demVotes": 1920355,
+        "repVotes": 1575511,
+        "margin": -9.86,
         "electionType": "Regular",
         "repIncumbent": true
       }
@@ -7420,569 +7043,6 @@ export const governorData: RaceForecast[] = [
     ]
   },
   {
-    "id": "IA",
-    "name": "Iowa",
-    "state": "Iowa",
-    "raceType": "governor",
-    "probability": 0.49,
-    "margin": -2,
-    "rating": "Lean R",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 44
-      },
-      {
-        "date": "Oct",
-        "value": 46
-      },
-      {
-        "date": "Nov",
-        "value": 48
-      },
-      {
-        "date": "Dec",
-        "value": 49
-      },
-      {
-        "date": "Jan",
-        "value": 49
-      },
-      {
-        "date": "Feb",
-        "value": 49
-      },
-      {
-        "date": "Mar",
-        "value": 49
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "This is surprisingly the first open seat gubernatorial election in the state since 2006, which as also the last gubernatorial election in Iowa won by a Democrat.",
-    "kalshiDem": 0.49,
-    "kalshiRep": 0.51,
-    "candidates": {
-      "dem": {
-        "name": "Rob Sand",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Randy Feenstra",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Kim Reynolds",
-    "seatParty": "R",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 39.53,
-        "repPct": 58.04,
-        "demCandidate": "Deidre DeJear",
-        "repCandidate": "Kim Reynolds",
-        "demVotes": 482950,
-        "repVotes": 709198,
-        "margin": 18.51,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 47.53,
-        "repPct": 50.26,
-        "demCandidate": "Fred Hubbell",
-        "repCandidate": "Kim Reynolds",
-        "demVotes": 630986,
-        "repVotes": 667275,
-        "margin": 2.73,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2014,
-        "demPct": 37.27,
-        "repPct": 58.99,
-        "demCandidate": "Jack Hatch",
-        "repCandidate": "Terry Branstad",
-        "demVotes": 420787,
-        "repVotes": 666032,
-        "margin": 21.72,
-        "electionType": "Regular",
-        "repIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "KS",
-    "name": "Kansas",
-    "state": "Kansas",
-    "raceType": "governor",
-    "probability": 0.29,
-    "margin": -10,
-    "rating": "Likely R",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 24
-      },
-      {
-        "date": "Oct",
-        "value": 26
-      },
-      {
-        "date": "Nov",
-        "value": 28
-      },
-      {
-        "date": "Dec",
-        "value": 29
-      },
-      {
-        "date": "Jan",
-        "value": 29
-      },
-      {
-        "date": "Feb",
-        "value": 29
-      },
-      {
-        "date": "Mar",
-        "value": 29
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Democrat Governor Laura Kelly is term limited in this typically Republican state.",
-    "kalshiDem": 0.29,
-    "kalshiRep": 0.71,
-    "candidates": {
-      "dem": {
-        "name": "Ethan Corson",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Jeff Colyer",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Laura Kelly",
-    "seatParty": "D",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 49.54,
-        "repPct": 47.33,
-        "demCandidate": "Laura Kelly",
-        "repCandidate": "Derek Schmidt",
-        "demVotes": 499849,
-        "repVotes": 477591,
-        "margin": -2.21,
-        "electionType": "Regular",
-        "demIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 48.01,
-        "repPct": 42.98,
-        "demCandidate": "Laura Kelly",
-        "repCandidate": "Kris Kobach",
-        "demVotes": 506727,
-        "repVotes": 453645,
-        "margin": -5.03,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2014,
-        "demPct": 46.13,
-        "repPct": 49.82,
-        "demCandidate": "Paul Davis",
-        "repCandidate": "Sam Brownback",
-        "demVotes": 401100,
-        "repVotes": 433196,
-        "margin": 3.69,
-        "electionType": "Regular",
-        "repIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "ME",
-    "name": "Maine",
-    "state": "Maine",
-    "raceType": "governor",
-    "probability": 0.87,
-    "margin": 10,
-    "rating": "Likely D",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 82
-      },
-      {
-        "date": "Oct",
-        "value": 84
-      },
-      {
-        "date": "Nov",
-        "value": 86
-      },
-      {
-        "date": "Dec",
-        "value": 87
-      },
-      {
-        "date": "Jan",
-        "value": 87
-      },
-      {
-        "date": "Feb",
-        "value": 87
-      },
-      {
-        "date": "Mar",
-        "value": 87
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Maine is a reliably Democrat state although it currenlty has one Republican senator.",
-    "kalshiDem": 0.87,
-    "kalshiRep": 0.13,
-    "candidates": {
-      "dem": {
-        "name": "Hannah Pingree",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Robert Charles",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Janet Mills",
-    "seatParty": "D",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 55.69,
-        "repPct": 42.45,
-        "demCandidate": "Janet Mills",
-        "repCandidate": "Paul LePage",
-        "demVotes": 376934,
-        "repVotes": 287304,
-        "margin": -13.24,
-        "electionType": "Regular",
-        "demIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 50.89,
-        "repPct": 43.18,
-        "demCandidate": "Janet Mills",
-        "repCandidate": "Shawn Moody",
-        "demVotes": 320962,
-        "repVotes": 272311,
-        "margin": -7.71,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2014,
-        "demPct": 43.37,
-        "repPct": 48.19,
-        "demCandidate": "Mike Michaud",
-        "repCandidate": "Paul LePage",
-        "demVotes": 265114,
-        "repVotes": 294519,
-        "margin": 4.82,
-        "electionType": "Regular",
-        "repIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "MD",
-    "name": "Maryland",
-    "state": "Maryland",
-    "raceType": "governor",
-    "probability": 0.94,
-    "margin": 30,
-    "rating": "Safe D",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 89
-      },
-      {
-        "date": "Oct",
-        "value": 91
-      },
-      {
-        "date": "Nov",
-        "value": 93
-      },
-      {
-        "date": "Dec",
-        "value": 94
-      },
-      {
-        "date": "Jan",
-        "value": 94
-      },
-      {
-        "date": "Feb",
-        "value": 94
-      },
-      {
-        "date": "Mar",
-        "value": 94
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Wes Moore is running for a second term.",
-    "kalshiDem": 0.94,
-    "kalshiRep": 0.06,
-    "candidates": {
-      "dem": {
-        "name": "Wes Moore",
-        "party": "D",
-        "incumbent": true
-      },
-      "rep": {
-        "name": "Dan Cox",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Wes Moore",
-    "seatParty": "D",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 64.53,
-        "repPct": 32.12,
-        "demCandidate": "Wes Moore",
-        "repCandidate": "Dan Cox",
-        "demVotes": 1293944,
-        "repVotes": 644000,
-        "margin": -32.41,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2018,
-        "demPct": 43.51,
-        "repPct": 55.35,
-        "demCandidate": "Ben Jealous",
-        "repCandidate": "Larry Hogan",
-        "demVotes": 1002639,
-        "repVotes": 1275644,
-        "margin": 11.84,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2014,
-        "demPct": 47.25,
-        "repPct": 51.03,
-        "demCandidate": "Anthony Brown",
-        "repCandidate": "Larry Hogan",
-        "demVotes": 818890,
-        "repVotes": 884400,
-        "margin": 3.78,
-        "electionType": "Regular"
-      }
-    ]
-  },
-  {
-    "id": "MA",
-    "name": "Massachusetts",
-    "state": "Massachusetts",
-    "raceType": "governor",
-    "probability": 0.92,
-    "margin": 30,
-    "rating": "Safe D",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 87
-      },
-      {
-        "date": "Oct",
-        "value": 89
-      },
-      {
-        "date": "Nov",
-        "value": 91
-      },
-      {
-        "date": "Dec",
-        "value": 92
-      },
-      {
-        "date": "Jan",
-        "value": 92
-      },
-      {
-        "date": "Feb",
-        "value": 92
-      },
-      {
-        "date": "Mar",
-        "value": 92
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Maura Healey is running for a second term.",
-    "kalshiDem": 0.92,
-    "kalshiRep": 0.08,
-    "candidates": {
-      "dem": {
-        "name": "Maura Healey",
-        "party": "D",
-        "incumbent": true
-      },
-      "rep": {
-        "name": "Brian Shortsleeve",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Maura Healey",
-    "seatParty": "D",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 63.74,
-        "repPct": 34.57,
-        "demCandidate": "Maura Healey",
-        "repCandidate": "Geoff Diehl",
-        "demVotes": 1584403,
-        "repVotes": 859343,
-        "margin": -29.17,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2018,
-        "demPct": 33.12,
-        "repPct": 66.6,
-        "demCandidate": "Jay Gonzalez",
-        "repCandidate": "Charlie Baker",
-        "demVotes": 885770,
-        "repVotes": 1781341,
-        "margin": 33.48,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2014,
-        "demPct": 46.54,
-        "repPct": 48.39,
-        "demCandidate": "Martha Coakley",
-        "repCandidate": "Charlie Baker",
-        "demVotes": 1004408,
-        "repVotes": 1044573,
-        "margin": 1.85,
-        "electionType": "Regular"
-      }
-    ]
-  },
-  {
-    "id": "MI",
-    "name": "Michigan",
-    "state": "Michigan",
-    "raceType": "governor",
-    "probability": 0.61,
-    "margin": 5,
-    "rating": "Likely D",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 56
-      },
-      {
-        "date": "Oct",
-        "value": 58
-      },
-      {
-        "date": "Nov",
-        "value": 60
-      },
-      {
-        "date": "Dec",
-        "value": 61
-      },
-      {
-        "date": "Jan",
-        "value": 61
-      },
-      {
-        "date": "Feb",
-        "value": 61
-      },
-      {
-        "date": "Mar",
-        "value": 61
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "This race is unique as it features a decently strong Independent Candidate in former Detroit Mayor Mike Duggan.",
-    "kalshiDem": 0.61,
-    "kalshiRep": 0.39,
-    "candidates": {
-      "dem": {
-        "name": "Jocelyn Benson",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "John James",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Gretchen Whitmer",
-    "seatParty": "D",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 54.47,
-        "repPct": 43.94,
-        "demCandidate": "Gretchen Whitmer",
-        "repCandidate": "Tudor Dixon",
-        "demVotes": 2430505,
-        "repVotes": 1960635,
-        "margin": -10.53,
-        "electionType": "Regular",
-        "demIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 53.31,
-        "repPct": 43.75,
-        "demCandidate": "Gretchen Whitmer",
-        "repCandidate": "Bill Schuette",
-        "demVotes": 2266193,
-        "repVotes": 1859534,
-        "margin": -9.56,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2014,
-        "demPct": 46.86,
-        "repPct": 50.92,
-        "demCandidate": "Mark Schauer",
-        "repCandidate": "Rick Snyder",
-        "demVotes": 1479057,
-        "repVotes": 1607399,
-        "margin": 4.06,
-        "electionType": "Regular",
-        "repIncumbent": true
-      }
-    ]
-  },
-  {
     "id": "MN",
     "name": "Minnesota",
     "state": "Minnesota",
@@ -8073,381 +7133,6 @@ export const governorData: RaceForecast[] = [
         "margin": -5.56,
         "electionType": "Regular",
         "demIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "NE",
-    "name": "Nebraska",
-    "state": "Nebraska",
-    "raceType": "governor",
-    "probability": 0.1,
-    "margin": -15,
-    "rating": "Likely R",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 5
-      },
-      {
-        "date": "Oct",
-        "value": 7
-      },
-      {
-        "date": "Nov",
-        "value": 9
-      },
-      {
-        "date": "Dec",
-        "value": 10
-      },
-      {
-        "date": "Jan",
-        "value": 10
-      },
-      {
-        "date": "Feb",
-        "value": 10
-      },
-      {
-        "date": "Mar",
-        "value": 10
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Jim Pillen is seeking re-eleciton to a second term. Democrats have not won a gubernatorial election in Nebraska since 1994.",
-    "kalshiDem": 0.1,
-    "kalshiRep": 0.9,
-    "candidates": {
-      "dem": {
-        "name": "Democratic Candidate",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Jim Pillen",
-        "party": "R",
-        "incumbent": true
-      }
-    },
-    "seatHolder": "Jim Pillen",
-    "seatParty": "R",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 36.29,
-        "repPct": 59.74,
-        "demCandidate": "Carol Blood",
-        "repCandidate": "Jim Pillen",
-        "demVotes": 242006,
-        "repVotes": 398334,
-        "margin": 23.45,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2018,
-        "demPct": 41,
-        "repPct": 59,
-        "demCandidate": "Bob Krist",
-        "repCandidate": "Pete Ricketts",
-        "demVotes": 286169,
-        "repVotes": 411812,
-        "margin": 18,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2014,
-        "demPct": 39.23,
-        "repPct": 57.15,
-        "demCandidate": "Chuck Hassebrook",
-        "repCandidate": "Pete Ricketts",
-        "demVotes": 211905,
-        "repVotes": 308751,
-        "margin": 17.92,
-        "electionType": "Regular"
-      }
-    ]
-  },
-  {
-    "id": "NV",
-    "name": "Nevada",
-    "state": "Nevada",
-    "raceType": "governor",
-    "probability": 0.49,
-    "margin": -3,
-    "rating": "Lean R",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 44
-      },
-      {
-        "date": "Oct",
-        "value": 46
-      },
-      {
-        "date": "Nov",
-        "value": 48
-      },
-      {
-        "date": "Dec",
-        "value": 49
-      },
-      {
-        "date": "Jan",
-        "value": 49
-      },
-      {
-        "date": "Feb",
-        "value": 49
-      },
-      {
-        "date": "Mar",
-        "value": 49
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Joe Lombardo is running for re-election to a second term in office in this swing state.",
-    "kalshiDem": 0.49,
-    "kalshiRep": 0.51,
-    "candidates": {
-      "dem": {
-        "name": "Aaron Ford",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Joe Lombardo",
-        "party": "R",
-        "incumbent": true
-      }
-    },
-    "seatHolder": "Joe Lombardo",
-    "seatParty": "R",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 47.3,
-        "repPct": 48.81,
-        "demCandidate": "Steve Sisolak",
-        "repCandidate": "Joe Lombardo",
-        "demVotes": 481991,
-        "repVotes": 497377,
-        "margin": 1.51,
-        "electionType": "Regular",
-        "demIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 49.39,
-        "repPct": 45.31,
-        "demCandidate": "Steve Sisolak",
-        "repCandidate": "Adam Laxalt",
-        "demVotes": 480007,
-        "repVotes": 440320,
-        "margin": -4.08,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2014,
-        "demPct": 23.88,
-        "repPct": 70.58,
-        "demCandidate": "Bob Goodman",
-        "repCandidate": "Brian Sandoval",
-        "demVotes": 130722,
-        "repVotes": 386340,
-        "margin": 46.7,
-        "electionType": "Regular",
-        "repIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "NH",
-    "name": "New Hampshire",
-    "state": "New Hampshire",
-    "raceType": "governor",
-    "probability": 0.29,
-    "margin": -10,
-    "rating": "Likely R",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 24
-      },
-      {
-        "date": "Oct",
-        "value": 26
-      },
-      {
-        "date": "Nov",
-        "value": 28
-      },
-      {
-        "date": "Dec",
-        "value": 29
-      },
-      {
-        "date": "Jan",
-        "value": 29
-      },
-      {
-        "date": "Feb",
-        "value": 29
-      },
-      {
-        "date": "Mar",
-        "value": 29
-      }
-    ],
-    "termLength": 2,
-    "raceDesc": "This is one of two Republican-held governorships up for election in a state that Kamala Harris won in the 2024 Presidential Election.",
-    "kalshiDem": 0.29,
-    "kalshiRep": 0.71,
-    "candidates": {
-      "dem": {
-        "name": "Cinde Warmington",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Kelly Ayotte",
-        "party": "R",
-        "incumbent": true
-      }
-    },
-    "seatHolder": "Kelly Ayotte",
-    "seatParty": "R",
-    "pastResults": [
-      {
-        "year": 2024,
-        "demPct": 44.27,
-        "repPct": 53.61,
-        "demCandidate": "Joyce Craig",
-        "repCandidate": "Kelly Ayotte",
-        "demVotes": 360149,
-        "repVotes": 436122,
-        "margin": 9.34,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2022,
-        "demPct": 41.47,
-        "repPct": 56.98,
-        "demCandidate": "Tom Sherman",
-        "repCandidate": "Chris Sununu",
-        "demVotes": 256766,
-        "repVotes": 352813,
-        "margin": 15.51,
-        "electionType": "Regular",
-        "repIncumbent": true
-      },
-      {
-        "year": 2020,
-        "demPct": 33.36,
-        "repPct": 65.12,
-        "demCandidate": "Dan Feltes",
-        "repCandidate": "Chris Sununu",
-        "demVotes": 264639,
-        "repVotes": 516609,
-        "margin": 31.76,
-        "electionType": "Regular",
-        "repIncumbent": true
-      }
-    ]
-  },
-  {
-    "id": "NM",
-    "name": "New Mexico",
-    "state": "New Mexico",
-    "raceType": "governor",
-    "probability": 0.92,
-    "margin": 12,
-    "rating": "Likely D",
-    "history": [
-      {
-        "date": "Sep",
-        "value": 87
-      },
-      {
-        "date": "Oct",
-        "value": 89
-      },
-      {
-        "date": "Nov",
-        "value": 91
-      },
-      {
-        "date": "Dec",
-        "value": 92
-      },
-      {
-        "date": "Jan",
-        "value": 92
-      },
-      {
-        "date": "Feb",
-        "value": 92
-      },
-      {
-        "date": "Mar",
-        "value": 92
-      }
-    ],
-    "termLength": 4,
-    "raceDesc": "New Mexico hasn't elected a Republican governor since 2014.",
-    "kalshiDem": 0.92,
-    "kalshiRep": 0.08,
-    "candidates": {
-      "dem": {
-        "name": "Deb Haaland",
-        "party": "D",
-        "incumbent": false
-      },
-      "rep": {
-        "name": "Gregg Hull",
-        "party": "R",
-        "incumbent": false
-      }
-    },
-    "seatHolder": "Michelle Lujan Grisham",
-    "seatParty": "D",
-    "pastResults": [
-      {
-        "year": 2022,
-        "demPct": 51.97,
-        "repPct": 45.59,
-        "demCandidate": "Michelle Lujan Grisham",
-        "repCandidate": "Mark Ronchetti",
-        "demVotes": 370168,
-        "repVotes": 324701,
-        "margin": -6.38,
-        "electionType": "Regular",
-        "demIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 57.2,
-        "repPct": 42.8,
-        "demCandidate": "Michelle Lujan Grisham",
-        "repCandidate": "Steve Pearce",
-        "demVotes": 398368,
-        "repVotes": 298091,
-        "margin": -14.4,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2014,
-        "demPct": 42.78,
-        "repPct": 57.22,
-        "demCandidate": "Gary King",
-        "repCandidate": "Susana Martinez",
-        "demVotes": 219362,
-        "repVotes": 293443,
-        "margin": 14.44,
-        "electionType": "Regular",
-        "repIncumbent": true
       }
     ]
   },
@@ -8547,188 +7232,282 @@ export const governorData: RaceForecast[] = [
     ]
   },
   {
-    "id": "OH",
-    "name": "Ohio",
-    "state": "Ohio",
+    "id": "NM",
+    "name": "New Mexico",
+    "state": "New Mexico",
     "raceType": "governor",
-    "probability": 0.56,
-    "margin": 1,
-    "rating": "Lean D",
+    "probability": 0.92,
+    "margin": 12,
+    "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 51
+        "value": 87
       },
       {
         "date": "Oct",
-        "value": 53
+        "value": 89
       },
       {
         "date": "Nov",
-        "value": 55
+        "value": 91
       },
       {
         "date": "Dec",
-        "value": 56
+        "value": 92
       },
       {
         "date": "Jan",
-        "value": 56
+        "value": 92
       },
       {
         "date": "Feb",
-        "value": 56
+        "value": 92
       },
       {
         "date": "Mar",
-        "value": 56
+        "value": 92
       }
     ],
     "termLength": 4,
-    "raceDesc": "Democrats have not won a gubernatorial election in Ohio since 2006 and have not won statewide since 2020. This race may be the Democrats best chance to break that streak this year.",
-    "kalshiDem": 0.56,
-    "kalshiRep": 0.44,
+    "raceDesc": "New Mexico hasn't elected a Republican governor since 2014.",
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.08,
     "candidates": {
       "dem": {
-        "name": "Amy Acton",
+        "name": "Deb Haaland",
         "party": "D",
         "incumbent": false
       },
       "rep": {
-        "name": "Vivek Ramaswamy",
+        "name": "Gregg Hull",
         "party": "R",
         "incumbent": false
       }
     },
-    "seatHolder": "Mike DeWine",
-    "seatParty": "R",
+    "seatHolder": "Michelle Lujan Grisham",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 37.38,
-        "repPct": 62.41,
-        "demCandidate": "Nan Whaley",
-        "repCandidate": "Mike DeWine",
-        "demVotes": 1545489,
-        "repVotes": 2580424,
-        "margin": 25.03,
+        "demPct": 51.97,
+        "repPct": 45.59,
+        "demCandidate": "Michelle Lujan Grisham",
+        "repCandidate": "Mark Ronchetti",
+        "demVotes": 370168,
+        "repVotes": 324701,
+        "margin": -6.38,
         "electionType": "Regular",
-        "repIncumbent": true
+        "demIncumbent": true
       },
       {
         "year": 2018,
-        "demPct": 46.68,
-        "repPct": 50.39,
-        "demCandidate": "Richard Cordray",
-        "repCandidate": "Mike DeWine",
-        "demVotes": 2070046,
-        "repVotes": 2235825,
-        "margin": 3.71,
+        "demPct": 57.2,
+        "repPct": 42.8,
+        "demCandidate": "Michelle Lujan Grisham",
+        "repCandidate": "Steve Pearce",
+        "demVotes": 398368,
+        "repVotes": 298091,
+        "margin": -14.4,
         "electionType": "Regular"
       },
       {
         "year": 2014,
-        "demPct": 33.03,
-        "repPct": 63.64,
-        "demCandidate": "Ed FitzGerald",
-        "repCandidate": "John Kasich",
-        "demVotes": 1009359,
-        "repVotes": 1944848,
-        "margin": 30.61,
+        "demPct": 42.78,
+        "repPct": 57.22,
+        "demCandidate": "Gary King",
+        "repCandidate": "Susana Martinez",
+        "demVotes": 219362,
+        "repVotes": 293443,
+        "margin": 14.44,
         "electionType": "Regular",
         "repIncumbent": true
       }
     ]
   },
   {
-    "id": "OK",
-    "name": "Oklahoma",
-    "state": "Oklahoma",
+    "id": "CT",
+    "name": "Connecticut",
+    "state": "Connecticut",
     "raceType": "governor",
-    "probability": 0.11,
-    "margin": -13,
-    "rating": "Likely R",
+    "probability": 0.94,
+    "margin": 11,
+    "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 6
+        "value": 89
       },
       {
         "date": "Oct",
-        "value": 8
+        "value": 91
       },
       {
         "date": "Nov",
-        "value": 10
+        "value": 93
       },
       {
         "date": "Dec",
-        "value": 11
+        "value": 94
       },
       {
         "date": "Jan",
-        "value": 11
+        "value": 94
       },
       {
         "date": "Feb",
-        "value": 11
+        "value": 94
       },
       {
         "date": "Mar",
-        "value": 11
+        "value": 94
       }
     ],
     "termLength": 4,
-    "raceDesc": "Oklahoma is a deeply red state where Democrats have not won statewide since 2006.",
-    "kalshiDem": 0.11,
-    "kalshiRep": 0.89,
+    "raceDesc": "Incumbent Governor Ned Lamont is running for a third term.",
+    "kalshiDem": 0.94,
+    "kalshiRep": 0.06,
     "candidates": {
       "dem": {
-        "name": "Democratic Candidate",
+        "name": "Ned Lamont",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
-        "name": "Genter Drummond",
+        "name": "Ryan Fazio",
         "party": "R",
         "incumbent": false
       }
     },
-    "seatHolder": "Kevin Stitt",
-    "seatParty": "R",
+    "seatHolder": "Ned Lamont",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 41.79,
-        "repPct": 55.45,
-        "demCandidate": "Joy Hofmeister",
-        "repCandidate": "Kevin Stitt",
-        "demVotes": 481904,
-        "repVotes": 639484,
-        "margin": 13.66,
+        "demPct": 55.97,
+        "repPct": 43.05,
+        "demCandidate": "Ned Lamont",
+        "repCandidate": "Bob Stefanowski",
+        "demVotes": 710186,
+        "repVotes": 546209,
+        "margin": -12.92,
         "electionType": "Regular",
-        "repIncumbent": true
+        "demIncumbent": true
       },
       {
         "year": 2018,
-        "demPct": 42.23,
-        "repPct": 54.33,
-        "demCandidate": "Drew Edmondson",
-        "repCandidate": "Kevin Stitt",
-        "demVotes": 500973,
-        "repVotes": 644579,
-        "margin": 12.1,
+        "demPct": 49.37,
+        "repPct": 46.21,
+        "demCandidate": "Ned Lamont",
+        "repCandidate": "Bob Stefanowski",
+        "demVotes": 694510,
+        "repVotes": 650138,
+        "margin": -3.16,
         "electionType": "Regular"
       },
       {
         "year": 2014,
-        "demPct": 41.01,
-        "repPct": 55.8,
-        "demCandidate": "Joe Dorman",
-        "repCandidate": "Mary Fallin",
-        "demVotes": 338239,
-        "repVotes": 460298,
-        "margin": 14.79,
+        "demPct": 50.73,
+        "repPct": 48.16,
+        "demCandidate": "Dannel Malloy",
+        "repCandidate": "Thomas C. Foley",
+        "demVotes": 554314,
+        "repVotes": 526295,
+        "margin": -2.57,
+        "electionType": "Regular",
+        "demIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "ME",
+    "name": "Maine",
+    "state": "Maine",
+    "raceType": "governor",
+    "probability": 0.87,
+    "margin": 10,
+    "rating": "Likely D",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 82
+      },
+      {
+        "date": "Oct",
+        "value": 84
+      },
+      {
+        "date": "Nov",
+        "value": 86
+      },
+      {
+        "date": "Dec",
+        "value": 87
+      },
+      {
+        "date": "Jan",
+        "value": 87
+      },
+      {
+        "date": "Feb",
+        "value": 87
+      },
+      {
+        "date": "Mar",
+        "value": 87
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Maine is a reliably Democrat state although it currenlty has one Republican senator.",
+    "kalshiDem": 0.87,
+    "kalshiRep": 0.13,
+    "candidates": {
+      "dem": {
+        "name": "Hannah Pingree",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Robert Charles",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Janet Mills",
+    "seatParty": "D",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 55.69,
+        "repPct": 42.45,
+        "demCandidate": "Janet Mills",
+        "repCandidate": "Paul LePage",
+        "demVotes": 376934,
+        "repVotes": 287304,
+        "margin": -13.24,
+        "electionType": "Regular",
+        "demIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 50.89,
+        "repPct": 43.18,
+        "demCandidate": "Janet Mills",
+        "repCandidate": "Shawn Moody",
+        "demVotes": 320962,
+        "repVotes": 272311,
+        "margin": -7.71,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2014,
+        "demPct": 43.37,
+        "repPct": 48.19,
+        "demCandidate": "Mike Michaud",
+        "repCandidate": "Paul LePage",
+        "demVotes": 265114,
+        "repVotes": 294519,
+        "margin": 4.82,
         "electionType": "Regular",
         "repIncumbent": true
       }
@@ -8829,471 +7608,1039 @@ export const governorData: RaceForecast[] = [
     ]
   },
   {
-    "id": "PA",
-    "name": "Pennsylvania",
-    "state": "Pennsylvania",
+    "id": "MI",
+    "name": "Michigan",
+    "state": "Michigan",
     "raceType": "governor",
-    "probability": 0.96,
-    "margin": 18,
-    "rating": "Safe D",
+    "probability": 0.61,
+    "margin": 5,
+    "rating": "Likely D",
     "history": [
       {
         "date": "Sep",
-        "value": 91
+        "value": 56
       },
       {
         "date": "Oct",
-        "value": 93
+        "value": 58
       },
       {
         "date": "Nov",
-        "value": 95
+        "value": 60
       },
       {
         "date": "Dec",
-        "value": 96
+        "value": 61
       },
       {
         "date": "Jan",
-        "value": 96
+        "value": 61
       },
       {
         "date": "Feb",
-        "value": 96
+        "value": 61
       },
       {
         "date": "Mar",
-        "value": 96
+        "value": 61
       }
     ],
     "termLength": 4,
-    "raceDesc": "Incumbent Governor Josh Shapiro is running for a second term.",
-    "kalshiDem": 0.96,
-    "kalshiRep": 0.04,
+    "raceDesc": "This race is unique as it features a decently strong Independent Candidate in former Detroit Mayor Mike Duggan.",
+    "kalshiDem": 0.61,
+    "kalshiRep": 0.39,
     "candidates": {
       "dem": {
-        "name": "Josh Shapiro",
+        "name": "Jocelyn Benson",
         "party": "D",
-        "incumbent": true
+        "incumbent": false
       },
       "rep": {
-        "name": "Stacy Garrity",
+        "name": "John James",
         "party": "R",
         "incumbent": false
       }
     },
-    "seatHolder": "Josh Shapiro",
+    "seatHolder": "Gretchen Whitmer",
     "seatParty": "D",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 56.49,
-        "repPct": 41.71,
-        "demCandidate": "Josh Shapiro",
-        "repCandidate": "Doug Mastriano",
-        "demVotes": 3031137,
-        "repVotes": 2238477,
-        "margin": -14.78,
-        "electionType": "Regular"
-      },
-      {
-        "year": 2018,
-        "demPct": 57.77,
-        "repPct": 40.7,
-        "demCandidate": "Tom Wolf",
-        "repCandidate": "Scott Wagner",
-        "demVotes": 2895652,
-        "repVotes": 2039882,
-        "margin": -17.07,
+        "demPct": 54.47,
+        "repPct": 43.94,
+        "demCandidate": "Gretchen Whitmer",
+        "repCandidate": "Tudor Dixon",
+        "demVotes": 2430505,
+        "repVotes": 1960635,
+        "margin": -10.53,
         "electionType": "Regular",
         "demIncumbent": true
       },
       {
+        "year": 2018,
+        "demPct": 53.31,
+        "repPct": 43.75,
+        "demCandidate": "Gretchen Whitmer",
+        "repCandidate": "Bill Schuette",
+        "demVotes": 2266193,
+        "repVotes": 1859534,
+        "margin": -9.56,
+        "electionType": "Regular"
+      },
+      {
         "year": 2014,
-        "demPct": 54.93,
-        "repPct": 45.07,
-        "demCandidate": "Tom Wolf",
-        "repCandidate": "Tom Corbett",
-        "demVotes": 1920355,
-        "repVotes": 1575511,
-        "margin": -9.86,
+        "demPct": 46.86,
+        "repPct": 50.92,
+        "demCandidate": "Mark Schauer",
+        "repCandidate": "Rick Snyder",
+        "demVotes": 1479057,
+        "repVotes": 1607399,
+        "margin": 4.06,
         "electionType": "Regular",
         "repIncumbent": true
       }
     ]
   },
   {
-    "id": "RI",
-    "name": "Rhode Island",
-    "state": "Rhode Island",
+    "id": "AZ",
+    "name": "Arizona",
+    "state": "Arizona",
     "raceType": "governor",
-    "probability": 0.93,
-    "margin": 25,
-    "rating": "Safe D",
+    "probability": 0.71,
+    "margin": 3,
+    "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 88
+        "value": 66
       },
       {
         "date": "Oct",
-        "value": 90
+        "value": 68
       },
       {
         "date": "Nov",
-        "value": 92
+        "value": 70
       },
       {
         "date": "Dec",
-        "value": 93
+        "value": 71
       },
       {
         "date": "Jan",
-        "value": 93
+        "value": 71
       },
       {
         "date": "Feb",
-        "value": 93
+        "value": 71
       },
       {
         "date": "Mar",
-        "value": 93
+        "value": 71
       }
     ],
     "termLength": 4,
-    "raceDesc": "Incumbent Governor Dan McKee is running for a second full term in office. McKee became governor in 2021 upon the resignation of Gina Raimondo.",
-    "kalshiDem": 0.93,
-    "kalshiRep": 0.07,
+    "raceDesc": "Incumbent Katie Hubbs is running for a second term in a state that Trump won back in 2024.",
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.29,
     "candidates": {
       "dem": {
-        "name": "Dan McKee",
+        "name": "Katie Hobbs",
         "party": "D",
         "incumbent": true
       },
       "rep": {
-        "name": "Aaron Guckian",
+        "name": "Andy Biggs",
         "party": "R",
         "incumbent": false
       }
     },
-    "seatHolder": "Dan McKee",
+    "seatHolder": "Katie Hobbs",
     "seatParty": "D",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 57.92,
-        "repPct": 38.86,
-        "demCandidate": "Dan McKee",
-        "repCandidate": "Ashley Kalus",
-        "demVotes": 207166,
-        "repVotes": 139001,
-        "margin": -19.06,
-        "electionType": "Regular",
-        "demIncumbent": true
+        "demPct": 50.32,
+        "repPct": 49.65,
+        "demCandidate": "Katie Hobbs",
+        "repCandidate": "Kari Lake",
+        "demVotes": 1287891,
+        "repVotes": 1270774,
+        "margin": -0.67,
+        "electionType": "Regular"
       },
       {
         "year": 2018,
-        "demPct": 52.64,
-        "repPct": 37.18,
-        "demCandidate": "Gina Raimondo",
-        "repCandidate": "Allan Fung",
-        "demVotes": 198122,
-        "repVotes": 139932,
-        "margin": -15.46,
+        "demPct": 41.84,
+        "repPct": 56,
+        "demCandidate": "David Garcia",
+        "repCandidate": "Doug Ducey",
+        "demVotes": 994341,
+        "repVotes": 1330863,
+        "margin": 14.16,
         "electionType": "Regular",
-        "demIncumbent": true
+        "repIncumbent": true
       },
       {
         "year": 2014,
-        "demPct": 40.7,
-        "repPct": 36.24,
-        "demCandidate": "Gina Raimondo",
-        "repCandidate": "Allan Fung",
-        "demVotes": 131899,
-        "repVotes": 117428,
-        "margin": -4.46,
+        "demPct": 41.62,
+        "repPct": 53.44,
+        "demCandidate": "Fred DuVal",
+        "repCandidate": "Doug Ducey",
+        "demVotes": 626921,
+        "repVotes": 805062,
+        "margin": 11.82,
         "electionType": "Regular"
       }
     ]
   },
   {
-    "id": "SC",
-    "name": "South Carolina",
-    "state": "South Carolina",
+    "id": "WI",
+    "name": "Wisconsin",
+    "state": "Wisconsin",
     "raceType": "governor",
-    "probability": 0.05,
-    "margin": -15,
-    "rating": "Likely R",
+    "probability": 0.75,
+    "margin": 2,
+    "rating": "Lean D",
     "history": [
       {
         "date": "Sep",
-        "value": 1
+        "value": 70
       },
       {
         "date": "Oct",
-        "value": 2
+        "value": 72
       },
       {
         "date": "Nov",
-        "value": 4
+        "value": 74
       },
       {
         "date": "Dec",
-        "value": 5
+        "value": 75
       },
       {
         "date": "Jan",
-        "value": 5
+        "value": 75
       },
       {
         "date": "Feb",
-        "value": 5
+        "value": 75
       },
       {
         "date": "Mar",
-        "value": 5
+        "value": 75
       }
     ],
     "termLength": 4,
-    "raceDesc": "South Carolina has an open seat. Democrats have not won a gubernatorial election here since 1998.",
-    "kalshiDem": 0.05,
-    "kalshiRep": 0.95,
+    "raceDesc": "Wisconsin has an open race which will be closely watched after incumbent Governor Tony Evers decided not to run for re-election.",
+    "kalshiDem": 0.75,
+    "kalshiRep": 0.25,
     "candidates": {
       "dem": {
-        "name": "Democratic Candidate",
+        "name": "Mandela Barnes",
         "party": "D",
         "incumbent": false
       },
       "rep": {
-        "name": "Pamela Evette",
+        "name": "Tom Tiffany",
         "party": "R",
         "incumbent": false
       }
     },
-    "seatHolder": "Henry McMaster",
+    "seatHolder": "Tony Evers",
+    "seatParty": "D",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 51.15,
+        "repPct": 47.75,
+        "demCandidate": "Tony Evers",
+        "repCandidate": "Tim Michels",
+        "demVotes": 1358774,
+        "repVotes": 1268535,
+        "margin": -3.4,
+        "electionType": "Regular",
+        "demIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 49.54,
+        "repPct": 48.44,
+        "demCandidate": "Tony Evers",
+        "repCandidate": "Scott Walker",
+        "demVotes": 1324307,
+        "repVotes": 1295080,
+        "margin": -1.1,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 46.59,
+        "repPct": 52.26,
+        "demCandidate": "Mary Burke",
+        "repCandidate": "Scott Walker",
+        "demVotes": 1122913,
+        "repVotes": 1259706,
+        "margin": 5.67,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "OH",
+    "name": "Ohio",
+    "state": "Ohio",
+    "raceType": "governor",
+    "probability": 0.54,
+    "margin": 1,
+    "rating": "Lean D",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 49
+      },
+      {
+        "date": "Oct",
+        "value": 51
+      },
+      {
+        "date": "Nov",
+        "value": 53
+      },
+      {
+        "date": "Dec",
+        "value": 54
+      },
+      {
+        "date": "Jan",
+        "value": 54
+      },
+      {
+        "date": "Feb",
+        "value": 54
+      },
+      {
+        "date": "Mar",
+        "value": 54
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Democrats have not won a gubernatorial election in Ohio since 2006 and have not won statewide since 2020.",
+    "kalshiDem": 0.54,
+    "kalshiRep": 0.46,
+    "rcpDem": 0.46299999999999997,
+    "rcpRep": 0.46,
+    "polyDem": 0.56,
+    "polyRep": 0.44,
+    "candidates": {
+      "dem": {
+        "name": "Amy Acton",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Vivek Ramaswamy",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Mike DeWine",
     "seatParty": "R",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 40.67,
+        "demPct": 37.38,
+        "repPct": 62.41,
+        "demCandidate": "Nan Whaley",
+        "repCandidate": "Mike DeWine",
+        "demVotes": 1545489,
+        "repVotes": 2580424,
+        "margin": 25.03,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 46.68,
+        "repPct": 50.39,
+        "demCandidate": "Richard Cordray",
+        "repCandidate": "Mike DeWine",
+        "demVotes": 2070046,
+        "repVotes": 2235825,
+        "margin": 3.71,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2014,
+        "demPct": 33.03,
+        "repPct": 63.64,
+        "demCandidate": "Ed FitzGerald",
+        "repCandidate": "John Kasich",
+        "demVotes": 1009359,
+        "repVotes": 1944848,
+        "margin": 30.61,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "GA",
+    "name": "Georgia",
+    "state": "Georgia",
+    "raceType": "governor",
+    "probability": 0.55,
+    "margin": -1,
+    "rating": "Lean R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 50
+      },
+      {
+        "date": "Oct",
+        "value": 52
+      },
+      {
+        "date": "Nov",
+        "value": 54
+      },
+      {
+        "date": "Dec",
+        "value": 55
+      },
+      {
+        "date": "Jan",
+        "value": 55
+      },
+      {
+        "date": "Feb",
+        "value": 55
+      },
+      {
+        "date": "Mar",
+        "value": 55
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Democrats have not won a gubernatorial election in Georgia since 1998. This year might be their best shot yet to break that streak.",
+    "kalshiDem": 0.55,
+    "kalshiRep": 0.45,
+    "candidates": {
+      "dem": {
+        "name": "Keisha Lance Bottoms",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Rick Jackson",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Brian Kemp",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 45.88,
+        "repPct": 53.41,
+        "demCandidate": "Stacey Abrams",
+        "repCandidate": "Brian Kemp",
+        "demVotes": 1813673,
+        "repVotes": 2111572,
+        "margin": 7.53,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 48.83,
+        "repPct": 50.22,
+        "demCandidate": "Stacey Abrams",
+        "repCandidate": "Brian Kemp",
+        "demVotes": 1923685,
+        "repVotes": 1978408,
+        "margin": 1.39,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2014,
+        "demPct": 44.88,
+        "repPct": 52.74,
+        "demCandidate": "Jason Carter",
+        "repCandidate": "Nathan Deal",
+        "demVotes": 1144794,
+        "repVotes": 1345237,
+        "margin": 7.86,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "IA",
+    "name": "Iowa",
+    "state": "Iowa",
+    "raceType": "governor",
+    "probability": 0.49,
+    "margin": -2,
+    "rating": "Lean R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 44
+      },
+      {
+        "date": "Oct",
+        "value": 46
+      },
+      {
+        "date": "Nov",
+        "value": 48
+      },
+      {
+        "date": "Dec",
+        "value": 49
+      },
+      {
+        "date": "Jan",
+        "value": 49
+      },
+      {
+        "date": "Feb",
+        "value": 49
+      },
+      {
+        "date": "Mar",
+        "value": 49
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "This is surprisingly the first open seat gubernatorial election in the state since 2006, which as also the last gubernatorial election in Iowa won by a Democrat.",
+    "kalshiDem": 0.49,
+    "kalshiRep": 0.51,
+    "candidates": {
+      "dem": {
+        "name": "Rob Sand",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Randy Feenstra",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Kim Reynolds",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 39.53,
         "repPct": 58.04,
-        "demCandidate": "Joe Cunningham",
-        "repCandidate": "Henry McMaster",
-        "demVotes": 692691,
-        "repVotes": 988501,
-        "margin": 17.37,
+        "demCandidate": "Deidre DeJear",
+        "repCandidate": "Kim Reynolds",
+        "demVotes": 482950,
+        "repVotes": 709198,
+        "margin": 18.51,
         "electionType": "Regular",
         "repIncumbent": true
       },
       {
         "year": 2018,
-        "demPct": 45.92,
-        "repPct": 53.96,
-        "demCandidate": "James Smith",
-        "repCandidate": "Henry McMaster",
-        "demVotes": 784182,
-        "repVotes": 921342,
-        "margin": 8.04,
+        "demPct": 47.53,
+        "repPct": 50.26,
+        "demCandidate": "Fred Hubbell",
+        "repCandidate": "Kim Reynolds",
+        "demVotes": 630986,
+        "repVotes": 667275,
+        "margin": 2.73,
         "electionType": "Regular",
         "repIncumbent": true
       },
       {
         "year": 2014,
-        "demPct": 41.42,
-        "repPct": 55.9,
-        "demCandidate": "Vincent Sheheen",
-        "repCandidate": "Nikki Haley",
-        "demVotes": 516166,
-        "repVotes": 696645,
-        "margin": 14.48,
+        "demPct": 37.27,
+        "repPct": 58.99,
+        "demCandidate": "Jack Hatch",
+        "repCandidate": "Terry Branstad",
+        "demVotes": 420787,
+        "repVotes": 666032,
+        "margin": 21.72,
         "electionType": "Regular",
         "repIncumbent": true
       }
     ]
   },
   {
-    "id": "SD",
-    "name": "South Dakota",
-    "state": "South Dakota",
+    "id": "NV",
+    "name": "Nevada",
+    "state": "Nevada",
     "raceType": "governor",
-    "probability": 0.04,
-    "margin": -25,
-    "rating": "Safe R",
+    "probability": 0.49,
+    "margin": -3,
+    "rating": "Lean R",
     "history": [
       {
         "date": "Sep",
-        "value": 1
+        "value": 44
       },
       {
         "date": "Oct",
-        "value": 1
+        "value": 46
       },
       {
         "date": "Nov",
-        "value": 3
+        "value": 48
       },
       {
         "date": "Dec",
-        "value": 4
+        "value": 49
       },
       {
         "date": "Jan",
-        "value": 4
+        "value": 49
       },
       {
         "date": "Feb",
-        "value": 4
+        "value": 49
       },
       {
         "date": "Mar",
-        "value": 4
+        "value": 49
       }
     ],
     "termLength": 4,
-    "raceDesc": "Incumbent Governor Larry Rhoden, who ascended to the office in 2025 after Kristi Noem resigned to become secretary of homeland security, is running for his first full term in office. Rhoden had previously been serving as lieutenant governor under Noem since the two took office in 2019.[2] Democrats have not won a gubernatorial election in South Dakota since 1974.",
-    "kalshiDem": 0.04,
-    "kalshiRep": 0.96,
+    "raceDesc": "Incumbent Governor Joe Lombardo is running for re-election to a second term in office in this swing state.",
+    "kalshiDem": 0.49,
+    "kalshiRep": 0.51,
     "candidates": {
       "dem": {
-        "name": "Democratic Candidate",
+        "name": "Aaron Ford",
         "party": "D",
         "incumbent": false
       },
       "rep": {
-        "name": "Larry Rhoden",
+        "name": "Joe Lombardo",
         "party": "R",
         "incumbent": true
       }
     },
-    "seatHolder": "Larry Rhoden",
+    "seatHolder": "Joe Lombardo",
     "seatParty": "R",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 35.17,
-        "repPct": 61.98,
-        "demCandidate": "Jamie Smith",
-        "repCandidate": "Kristi Noem",
-        "demVotes": 123148,
-        "repVotes": 217035,
-        "margin": 26.81,
+        "demPct": 47.3,
+        "repPct": 48.81,
+        "demCandidate": "Steve Sisolak",
+        "repCandidate": "Joe Lombardo",
+        "demVotes": 481991,
+        "repVotes": 497377,
+        "margin": 1.51,
         "electionType": "Regular",
-        "repIncumbent": true
+        "demIncumbent": true
       },
       {
         "year": 2018,
-        "demPct": 47.6,
-        "repPct": 50.97,
-        "demCandidate": "Billie Sutton",
-        "repCandidate": "Kristi Noem",
-        "demVotes": 161454,
-        "repVotes": 172912,
-        "margin": 3.37,
+        "demPct": 49.39,
+        "repPct": 45.31,
+        "demCandidate": "Steve Sisolak",
+        "repCandidate": "Adam Laxalt",
+        "demVotes": 480007,
+        "repVotes": 440320,
+        "margin": -4.08,
         "electionType": "Regular"
       },
       {
         "year": 2014,
-        "demPct": 25.43,
-        "repPct": 70.47,
-        "demCandidate": "Susan Wismer",
-        "repCandidate": "Dennis Daugaard",
-        "demVotes": 70549,
-        "repVotes": 195477,
-        "margin": 45.04,
+        "demPct": 23.88,
+        "repPct": 70.58,
+        "demCandidate": "Bob Goodman",
+        "repCandidate": "Brian Sandoval",
+        "demVotes": 130722,
+        "repVotes": 386340,
+        "margin": 46.7,
         "electionType": "Regular",
         "repIncumbent": true
       }
     ]
   },
   {
-    "id": "TN",
-    "name": "Tennessee",
-    "state": "Tennessee",
+    "id": "FL",
+    "name": "Florida",
+    "state": "Florida",
     "raceType": "governor",
-    "probability": 0.05,
-    "margin": -15,
+    "probability": 0.15,
+    "margin": -8,
     "rating": "Likely R",
     "history": [
       {
         "date": "Sep",
-        "value": 1
+        "value": 10
       },
       {
         "date": "Oct",
-        "value": 2
+        "value": 12
       },
       {
         "date": "Nov",
-        "value": 4
+        "value": 14
       },
       {
         "date": "Dec",
-        "value": 5
+        "value": 15
       },
       {
         "date": "Jan",
-        "value": 5
+        "value": 15
       },
       {
         "date": "Feb",
-        "value": 5
+        "value": 15
       },
       {
         "date": "Mar",
-        "value": 5
+        "value": 15
       }
     ],
     "termLength": 4,
-    "raceDesc": "This deep red state has an open governor seat. Democrats have not won a statewide election in Tennessee since 2006.",
-    "kalshiDem": 0.05,
-    "kalshiRep": 0.95,
+    "raceDesc": "The race to succeed Incumbent Governor Ron DeSantis will be an interesting one in this once swing state now trending strongly towards Republicans.",
+    "kalshiDem": 0.15,
+    "kalshiRep": 0.85,
     "candidates": {
       "dem": {
-        "name": "Jerri Green",
+        "name": "David Jolly",
         "party": "D",
         "incumbent": false
       },
       "rep": {
-        "name": "Marsha Blackburn",
+        "name": "Byron Donalds",
         "party": "R",
         "incumbent": false
       }
     },
-    "seatHolder": "Bill Lee",
+    "seatHolder": "Ron DeSantis",
     "seatParty": "R",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 32.92,
-        "repPct": 64.91,
-        "demCandidate": "Jason Martin",
-        "repCandidate": "Bill Lee",
-        "demVotes": 572818,
-        "repVotes": 1129390,
-        "margin": 31.99,
+        "demPct": 39.97,
+        "repPct": 59.37,
+        "demCandidate": "Charlie Crist",
+        "repCandidate": "Ron DeSantis",
+        "demVotes": 3106313,
+        "repVotes": 4614210,
+        "margin": 19.4,
         "electionType": "Regular",
         "repIncumbent": true
       },
       {
         "year": 2018,
-        "demPct": 38.55,
-        "repPct": 59.56,
-        "demCandidate": "Karl Dean",
-        "repCandidate": "Bill Lee",
-        "demVotes": 864863,
-        "repVotes": 1336106,
-        "margin": 21.01,
+        "demPct": 49.19,
+        "repPct": 49.59,
+        "demCandidate": "Andrew Gillum",
+        "repCandidate": "Ron DeSantis",
+        "demVotes": 4043723,
+        "repVotes": 4076186,
+        "margin": 0.4,
         "electionType": "Regular"
       },
       {
         "year": 2014,
-        "demPct": 22.84,
-        "repPct": 70.31,
-        "demCandidate": "Charles Brown",
-        "repCandidate": "Bill Haslam",
-        "demVotes": 309237,
-        "repVotes": 951796,
-        "margin": 47.47,
+        "demPct": 47.07,
+        "repPct": 48.14,
+        "demCandidate": "Charlie Crist",
+        "repCandidate": "Rick Scott",
+        "demVotes": 2801198,
+        "repVotes": 2865343,
+        "margin": 1.07,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "AK",
+    "name": "Alaska",
+    "state": "Alaska",
+    "raceType": "governor",
+    "probability": 0.24,
+    "margin": -10,
+    "rating": "Likely R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 19
+      },
+      {
+        "date": "Oct",
+        "value": 21
+      },
+      {
+        "date": "Nov",
+        "value": 23
+      },
+      {
+        "date": "Dec",
+        "value": 24
+      },
+      {
+        "date": "Jan",
+        "value": 24
+      },
+      {
+        "date": "Feb",
+        "value": 24
+      },
+      {
+        "date": "Mar",
+        "value": 24
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Alaska has a very interesting race with Democrat Tom Begich, part of a well known family in Alaska, running for governor in this open seat.",
+    "kalshiDem": 0.24,
+    "kalshiRep": 0.76,
+    "candidates": {
+      "dem": {
+        "name": "Nick Begich",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Dave Bronson",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Mike Dunleavy",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 24.21,
+        "repPct": 50.29,
+        "demCandidate": "Les Gara",
+        "repCandidate": "Mike Dunleavy",
+        "demVotes": 63851,
+        "repVotes": 132632,
+        "margin": 26.08,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 44.41,
+        "repPct": 51.44,
+        "demCandidate": "Mark Begich",
+        "repCandidate": "Mike Dunleavy",
+        "demVotes": 125739,
+        "repVotes": 145631,
+        "margin": 7.03,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2014,
+        "demPct": 48.1,
+        "repPct": 45.88,
+        "demCandidate": "Bill Walker",
+        "repCandidate": "Sean Parnell",
+        "demVotes": 134658,
+        "repVotes": 128435,
+        "margin": -2.22,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "KS",
+    "name": "Kansas",
+    "state": "Kansas",
+    "raceType": "governor",
+    "probability": 0.29,
+    "margin": -10,
+    "rating": "Likely R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 24
+      },
+      {
+        "date": "Oct",
+        "value": 26
+      },
+      {
+        "date": "Nov",
+        "value": 28
+      },
+      {
+        "date": "Dec",
+        "value": 29
+      },
+      {
+        "date": "Jan",
+        "value": 29
+      },
+      {
+        "date": "Feb",
+        "value": 29
+      },
+      {
+        "date": "Mar",
+        "value": 29
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Democrat Governor Laura Kelly is term limited in this typically Republican state.",
+    "kalshiDem": 0.29,
+    "kalshiRep": 0.71,
+    "candidates": {
+      "dem": {
+        "name": "Ethan Corson",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Jeff Colyer",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Laura Kelly",
+    "seatParty": "D",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 49.54,
+        "repPct": 47.33,
+        "demCandidate": "Laura Kelly",
+        "repCandidate": "Derek Schmidt",
+        "demVotes": 499849,
+        "repVotes": 477591,
+        "margin": -2.21,
+        "electionType": "Regular",
+        "demIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 48.01,
+        "repPct": 42.98,
+        "demCandidate": "Laura Kelly",
+        "repCandidate": "Kris Kobach",
+        "demVotes": 506727,
+        "repVotes": 453645,
+        "margin": -5.03,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2014,
+        "demPct": 46.13,
+        "repPct": 49.82,
+        "demCandidate": "Paul Davis",
+        "repCandidate": "Sam Brownback",
+        "demVotes": 401100,
+        "repVotes": 433196,
+        "margin": 3.69,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "NH",
+    "name": "New Hampshire",
+    "state": "New Hampshire",
+    "raceType": "governor",
+    "probability": 0.29,
+    "margin": -10,
+    "rating": "Likely R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 24
+      },
+      {
+        "date": "Oct",
+        "value": 26
+      },
+      {
+        "date": "Nov",
+        "value": 28
+      },
+      {
+        "date": "Dec",
+        "value": 29
+      },
+      {
+        "date": "Jan",
+        "value": 29
+      },
+      {
+        "date": "Feb",
+        "value": 29
+      },
+      {
+        "date": "Mar",
+        "value": 29
+      }
+    ],
+    "termLength": 2,
+    "raceDesc": "This is one of two Republican-held governorships up for election in a state that Kamala Harris won in the 2024 Presidential Election.",
+    "kalshiDem": 0.29,
+    "kalshiRep": 0.71,
+    "candidates": {
+      "dem": {
+        "name": "Cinde Warmington",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Kelly Ayotte",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "seatHolder": "Kelly Ayotte",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2024,
+        "demPct": 44.27,
+        "repPct": 53.61,
+        "demCandidate": "Joyce Craig",
+        "repCandidate": "Kelly Ayotte",
+        "demVotes": 360149,
+        "repVotes": 436122,
+        "margin": 9.34,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2022,
+        "demPct": 41.47,
+        "repPct": 56.98,
+        "demCandidate": "Tom Sherman",
+        "repCandidate": "Chris Sununu",
+        "demVotes": 256766,
+        "repVotes": 352813,
+        "margin": 15.51,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2020,
+        "demPct": 33.36,
+        "repPct": 65.12,
+        "demCandidate": "Dan Feltes",
+        "repCandidate": "Chris Sununu",
+        "demVotes": 264639,
+        "repVotes": 516609,
+        "margin": 31.76,
         "electionType": "Regular",
         "repIncumbent": true
       }
@@ -9394,6 +8741,664 @@ export const governorData: RaceForecast[] = [
     ]
   },
   {
+    "id": "OK",
+    "name": "Oklahoma",
+    "state": "Oklahoma",
+    "raceType": "governor",
+    "probability": 0.11,
+    "margin": -13,
+    "rating": "Likely R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 6
+      },
+      {
+        "date": "Oct",
+        "value": 8
+      },
+      {
+        "date": "Nov",
+        "value": 10
+      },
+      {
+        "date": "Dec",
+        "value": 11
+      },
+      {
+        "date": "Jan",
+        "value": 11
+      },
+      {
+        "date": "Feb",
+        "value": 11
+      },
+      {
+        "date": "Mar",
+        "value": 11
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Oklahoma is a deeply red state where Democrats have not won statewide since 2006.",
+    "kalshiDem": 0.11,
+    "kalshiRep": 0.89,
+    "candidates": {
+      "dem": {
+        "name": "Democratic Candidate",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Genter Drummond",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Kevin Stitt",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 41.79,
+        "repPct": 55.45,
+        "demCandidate": "Joy Hofmeister",
+        "repCandidate": "Kevin Stitt",
+        "demVotes": 481904,
+        "repVotes": 639484,
+        "margin": 13.66,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 42.23,
+        "repPct": 54.33,
+        "demCandidate": "Drew Edmondson",
+        "repCandidate": "Kevin Stitt",
+        "demVotes": 500973,
+        "repVotes": 644579,
+        "margin": 12.1,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2014,
+        "demPct": 41.01,
+        "repPct": 55.8,
+        "demCandidate": "Joe Dorman",
+        "repCandidate": "Mary Fallin",
+        "demVotes": 338239,
+        "repVotes": 460298,
+        "margin": 14.79,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "NE",
+    "name": "Nebraska",
+    "state": "Nebraska",
+    "raceType": "governor",
+    "probability": 0.1,
+    "margin": -15,
+    "rating": "Likely R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 5
+      },
+      {
+        "date": "Oct",
+        "value": 7
+      },
+      {
+        "date": "Nov",
+        "value": 9
+      },
+      {
+        "date": "Dec",
+        "value": 10
+      },
+      {
+        "date": "Jan",
+        "value": 10
+      },
+      {
+        "date": "Feb",
+        "value": 10
+      },
+      {
+        "date": "Mar",
+        "value": 10
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Jim Pillen is seeking re-eleciton to a second term. Democrats have not won a gubernatorial election in Nebraska since 1994.",
+    "kalshiDem": 0.1,
+    "kalshiRep": 0.9,
+    "candidates": {
+      "dem": {
+        "name": "Democratic Candidate",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Jim Pillen",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "seatHolder": "Jim Pillen",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 36.29,
+        "repPct": 59.74,
+        "demCandidate": "Carol Blood",
+        "repCandidate": "Jim Pillen",
+        "demVotes": 242006,
+        "repVotes": 398334,
+        "margin": 23.45,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2018,
+        "demPct": 41,
+        "repPct": 59,
+        "demCandidate": "Bob Krist",
+        "repCandidate": "Pete Ricketts",
+        "demVotes": 286169,
+        "repVotes": 411812,
+        "margin": 18,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 39.23,
+        "repPct": 57.15,
+        "demCandidate": "Chuck Hassebrook",
+        "repCandidate": "Pete Ricketts",
+        "demVotes": 211905,
+        "repVotes": 308751,
+        "margin": 17.92,
+        "electionType": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "SC",
+    "name": "South Carolina",
+    "state": "South Carolina",
+    "raceType": "governor",
+    "probability": 0.05,
+    "margin": -15,
+    "rating": "Likely R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 1
+      },
+      {
+        "date": "Oct",
+        "value": 2
+      },
+      {
+        "date": "Nov",
+        "value": 4
+      },
+      {
+        "date": "Dec",
+        "value": 5
+      },
+      {
+        "date": "Jan",
+        "value": 5
+      },
+      {
+        "date": "Feb",
+        "value": 5
+      },
+      {
+        "date": "Mar",
+        "value": 5
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "South Carolina has an open seat. Democrats have not won a gubernatorial election here since 1998.",
+    "kalshiDem": 0.05,
+    "kalshiRep": 0.95,
+    "candidates": {
+      "dem": {
+        "name": "Democratic Candidate",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Pamela Evette",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Henry McMaster",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 40.67,
+        "repPct": 58.04,
+        "demCandidate": "Joe Cunningham",
+        "repCandidate": "Henry McMaster",
+        "demVotes": 692691,
+        "repVotes": 988501,
+        "margin": 17.37,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 45.92,
+        "repPct": 53.96,
+        "demCandidate": "James Smith",
+        "repCandidate": "Henry McMaster",
+        "demVotes": 784182,
+        "repVotes": 921342,
+        "margin": 8.04,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 41.42,
+        "repPct": 55.9,
+        "demCandidate": "Vincent Sheheen",
+        "repCandidate": "Nikki Haley",
+        "demVotes": 516166,
+        "repVotes": 696645,
+        "margin": 14.48,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "TN",
+    "name": "Tennessee",
+    "state": "Tennessee",
+    "raceType": "governor",
+    "probability": 0.05,
+    "margin": -15,
+    "rating": "Likely R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 1
+      },
+      {
+        "date": "Oct",
+        "value": 2
+      },
+      {
+        "date": "Nov",
+        "value": 4
+      },
+      {
+        "date": "Dec",
+        "value": 5
+      },
+      {
+        "date": "Jan",
+        "value": 5
+      },
+      {
+        "date": "Feb",
+        "value": 5
+      },
+      {
+        "date": "Mar",
+        "value": 5
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "This deep red state has an open governor seat. Democrats have not won a statewide election in Tennessee since 2006.",
+    "kalshiDem": 0.05,
+    "kalshiRep": 0.95,
+    "candidates": {
+      "dem": {
+        "name": "Jerri Green",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Marsha Blackburn",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Bill Lee",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 32.92,
+        "repPct": 64.91,
+        "demCandidate": "Jason Martin",
+        "repCandidate": "Bill Lee",
+        "demVotes": 572818,
+        "repVotes": 1129390,
+        "margin": 31.99,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 38.55,
+        "repPct": 59.56,
+        "demCandidate": "Karl Dean",
+        "repCandidate": "Bill Lee",
+        "demVotes": 864863,
+        "repVotes": 1336106,
+        "margin": 21.01,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2014,
+        "demPct": 22.84,
+        "repPct": 70.31,
+        "demCandidate": "Charles Brown",
+        "repCandidate": "Bill Haslam",
+        "demVotes": 309237,
+        "repVotes": 951796,
+        "margin": 47.47,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "AL",
+    "name": "Alabama",
+    "state": "Alabama",
+    "raceType": "governor",
+    "probability": 0.06,
+    "margin": -25,
+    "rating": "Safe R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 1
+      },
+      {
+        "date": "Oct",
+        "value": 3
+      },
+      {
+        "date": "Nov",
+        "value": 5
+      },
+      {
+        "date": "Dec",
+        "value": 6
+      },
+      {
+        "date": "Jan",
+        "value": 6
+      },
+      {
+        "date": "Feb",
+        "value": 6
+      },
+      {
+        "date": "Mar",
+        "value": 6
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Democrats have not won a gubernatorial election in Alabama since 1998.",
+    "kalshiDem": 0.06,
+    "kalshiRep": 0.94,
+    "candidates": {
+      "dem": {
+        "name": "Doug Jones",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Tommy Tuberville",
+        "party": "R",
+        "incumbent": false
+      }
+    },
+    "seatHolder": "Kay Ivey",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 29.18,
+        "repPct": 66.91,
+        "demCandidate": "Yolanda Flowers",
+        "repCandidate": "Kay Ivey",
+        "demVotes": 412961,
+        "repVotes": 946932,
+        "margin": 37.73,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 40.39,
+        "repPct": 59.46,
+        "demCandidate": "Walt Maddox",
+        "repCandidate": "Kay Ivey",
+        "demVotes": 694495,
+        "repVotes": 1022457,
+        "margin": 19.07,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 36.24,
+        "repPct": 63.56,
+        "demCandidate": "Parker Griffith",
+        "repCandidate": "Robert J. Bentley",
+        "demVotes": 427787,
+        "repVotes": 750231,
+        "margin": 27.32,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
+    "id": "AR",
+    "name": "Arkansas",
+    "state": "Arkansas",
+    "raceType": "governor",
+    "probability": 0.06,
+    "margin": -25,
+    "rating": "Safe R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 1
+      },
+      {
+        "date": "Oct",
+        "value": 3
+      },
+      {
+        "date": "Nov",
+        "value": 5
+      },
+      {
+        "date": "Dec",
+        "value": 6
+      },
+      {
+        "date": "Jan",
+        "value": 6
+      },
+      {
+        "date": "Feb",
+        "value": 6
+      },
+      {
+        "date": "Mar",
+        "value": 6
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Sarah Huckabee Sanders is seeking re-election to a second term.",
+    "kalshiDem": 0.06,
+    "kalshiRep": 0.94,
+    "candidates": {
+      "dem": {
+        "name": "Fredrick Love",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Sarah Huckabee Sanders",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "seatHolder": "Sarah Huckabee Sanders",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 35.2,
+        "repPct": 63,
+        "demCandidate": "Chris Jones",
+        "repCandidate": "Sarah Huckabee Sanders",
+        "demVotes": 319242,
+        "repVotes": 571105,
+        "margin": 27.8,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2018,
+        "demPct": 31.77,
+        "repPct": 65.33,
+        "demCandidate": "Jared Henderson",
+        "repCandidate": "Asa Hutchinson",
+        "demVotes": 283218,
+        "repVotes": 582406,
+        "margin": 33.56,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2014,
+        "demPct": 41.49,
+        "repPct": 55.44,
+        "demCandidate": "Mike Ross",
+        "repCandidate": "Asa Hutchinson",
+        "demVotes": 352115,
+        "repVotes": 470429,
+        "margin": 13.95,
+        "electionType": "Regular"
+      }
+    ]
+  },
+  {
+    "id": "SD",
+    "name": "South Dakota",
+    "state": "South Dakota",
+    "raceType": "governor",
+    "probability": 0.04,
+    "margin": -25,
+    "rating": "Safe R",
+    "history": [
+      {
+        "date": "Sep",
+        "value": 1
+      },
+      {
+        "date": "Oct",
+        "value": 1
+      },
+      {
+        "date": "Nov",
+        "value": 3
+      },
+      {
+        "date": "Dec",
+        "value": 4
+      },
+      {
+        "date": "Jan",
+        "value": 4
+      },
+      {
+        "date": "Feb",
+        "value": 4
+      },
+      {
+        "date": "Mar",
+        "value": 4
+      }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Larry Rhoden, who ascended to the office in 2025 after Kristi Noem resigned to become secretary of homeland security, is running for his first full term in office. Rhoden had previously been serving as lieutenant governor under Noem since the two took office in 2019.[2] Democrats have not won a gubernatorial election in South Dakota since 1974.",
+    "kalshiDem": 0.04,
+    "kalshiRep": 0.96,
+    "candidates": {
+      "dem": {
+        "name": "Democratic Candidate",
+        "party": "D",
+        "incumbent": false
+      },
+      "rep": {
+        "name": "Larry Rhoden",
+        "party": "R",
+        "incumbent": true
+      }
+    },
+    "seatHolder": "Larry Rhoden",
+    "seatParty": "R",
+    "pastResults": [
+      {
+        "year": 2022,
+        "demPct": 35.17,
+        "repPct": 61.98,
+        "demCandidate": "Jamie Smith",
+        "repCandidate": "Kristi Noem",
+        "demVotes": 123148,
+        "repVotes": 217035,
+        "margin": 26.81,
+        "electionType": "Regular",
+        "repIncumbent": true
+      },
+      {
+        "year": 2018,
+        "demPct": 47.6,
+        "repPct": 50.97,
+        "demCandidate": "Billie Sutton",
+        "repCandidate": "Kristi Noem",
+        "demVotes": 161454,
+        "repVotes": 172912,
+        "margin": 3.37,
+        "electionType": "Regular"
+      },
+      {
+        "year": 2014,
+        "demPct": 25.43,
+        "repPct": 70.47,
+        "demCandidate": "Susan Wismer",
+        "repCandidate": "Dennis Daugaard",
+        "demVotes": 70549,
+        "repVotes": 195477,
+        "margin": 45.04,
+        "electionType": "Regular",
+        "repIncumbent": true
+      }
+    ]
+  },
+  {
     "id": "VT",
     "name": "Vermont",
     "state": "Vermont",
@@ -9489,95 +9494,94 @@ export const governorData: RaceForecast[] = [
     ]
   },
   {
-    "id": "WI",
-    "name": "Wisconsin",
-    "state": "Wisconsin",
+    "id": "ID",
+    "name": "Idaho",
+    "state": "Idaho",
     "raceType": "governor",
-    "probability": 0.75,
-    "margin": 2,
-    "rating": "Lean D",
+    "probability": 0.07,
+    "margin": -30,
+    "rating": "Safe R",
     "history": [
       {
         "date": "Sep",
-        "value": 70
+        "value": 2
       },
       {
         "date": "Oct",
-        "value": 72
+        "value": 4
       },
       {
         "date": "Nov",
-        "value": 74
+        "value": 6
       },
       {
         "date": "Dec",
-        "value": 75
+        "value": 7
       },
       {
         "date": "Jan",
-        "value": 75
+        "value": 7
       },
       {
         "date": "Feb",
-        "value": 75
+        "value": 7
       },
       {
         "date": "Mar",
-        "value": 75
+        "value": 7
       }
     ],
     "termLength": 4,
-    "raceDesc": "Wisconsin has an open race which will be closely watched after incumbent Governor Tony Evers decided not to run for re-election.",
-    "kalshiDem": 0.75,
-    "kalshiRep": 0.25,
+    "raceDesc": "Incumbent Governor Brad Little is running for a third term. Democrats have not won the governership here since 1990.",
+    "kalshiDem": 0.07,
+    "kalshiRep": 0.93,
     "candidates": {
       "dem": {
-        "name": "Mandela Barnes",
+        "name": "Democratic Candidate",
         "party": "D",
         "incumbent": false
       },
       "rep": {
-        "name": "Tom Tiffany",
+        "name": "Brad Little",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Tony Evers",
-    "seatParty": "D",
+    "seatHolder": "Brad Little",
+    "seatParty": "R",
     "pastResults": [
       {
         "year": 2022,
-        "demPct": 51.15,
-        "repPct": 47.75,
-        "demCandidate": "Tony Evers",
-        "repCandidate": "Tim Michels",
-        "demVotes": 1358774,
-        "repVotes": 1268535,
-        "margin": -3.4,
-        "electionType": "Regular",
-        "demIncumbent": true
-      },
-      {
-        "year": 2018,
-        "demPct": 49.54,
-        "repPct": 48.44,
-        "demCandidate": "Tony Evers",
-        "repCandidate": "Scott Walker",
-        "demVotes": 1324307,
-        "repVotes": 1295080,
-        "margin": -1.1,
+        "demPct": 20.28,
+        "repPct": 60.52,
+        "demCandidate": "Stephen Heidt",
+        "repCandidate": "Brad Little",
+        "demVotes": 120160,
+        "repVotes": 358598,
+        "margin": 40.24,
         "electionType": "Regular",
         "repIncumbent": true
       },
       {
+        "year": 2018,
+        "demPct": 38.19,
+        "repPct": 59.76,
+        "demCandidate": "Paulette Jordan",
+        "repCandidate": "Brad Little",
+        "demVotes": 231081,
+        "repVotes": 361661,
+        "margin": 21.57,
+        "electionType": "Regular"
+      },
+      {
         "year": 2014,
-        "demPct": 46.59,
-        "repPct": 52.26,
-        "demCandidate": "Mary Burke",
-        "repCandidate": "Scott Walker",
-        "demVotes": 1122913,
-        "repVotes": 1259706,
-        "margin": 5.67,
+        "demPct": 38.55,
+        "repPct": 53.52,
+        "demCandidate": "A.J. Balukoff",
+        "repCandidate": "Butch Otter",
+        "demVotes": 169556,
+        "repVotes": 235405,
+        "margin": 14.97,
         "electionType": "Regular",
         "repIncumbent": true
       }

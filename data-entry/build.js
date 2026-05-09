@@ -166,8 +166,8 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
     forecast.kalshiRep = num(row.kalshi_rep);
   }
   if (has(row.rcp_dem) && has(row.rcp_rep)) {
-    forecast.rcpDem = num(row.rcp_dem);
-    forecast.rcpRep = num(row.rcp_rep);
+    forecast.rcpDem = num(row.rcp_dem) / 100;
+    forecast.rcpRep = num(row.rcp_rep) / 100;
   }
   if (has(row.poly_dem) && has(row.poly_rep)) {
     forecast.polyDem = num(row.poly_dem);

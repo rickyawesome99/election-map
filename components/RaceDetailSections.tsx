@@ -50,13 +50,14 @@ function partyAccent(party: "D" | "R" | "I") {
   return party === "R" ? "var(--party-rep)" : "var(--party-dem)";
 }
 
-function MarginPollRow({ label, dem, rep }: { label: string; dem?: number; rep?: number }) {
+function MarginPollRow({ label, dem, rep, precision = 0, pctMargin = false }: { label: string; dem?: number; rep?: number; precision?: number; pctMargin?: boolean }) {
   const hasData = dem != null && rep != null;
-  const demR = hasData ? Math.round(dem * 100) : null;
-  const repR = hasData ? Math.round(rep * 100) : null;
+  const demR = hasData ? parseFloat((dem * 100).toFixed(precision)) : null;
+  const repR = hasData ? parseFloat((rep * 100).toFixed(precision)) : null;
   const total = demR !== null && repR !== null ? demR + repR : 0;
   const dWidth = total > 0 ? (demR! / total) * 100 : 50;
   const winner = hasData && demR! >= repR! ? "D" : "R";
+  const marginVal = hasData ? Math.abs(demR! - repR!).toFixed(precision) : null;
 
   return (
     <div>
@@ -64,7 +65,7 @@ function MarginPollRow({ label, dem, rep }: { label: string; dem?: number; rep?:
         <span className="text-xs font-semibold" style={{ color: "var(--app-text-muted)" }}>{label}</span>
         {hasData ? (
           <span className="text-xs font-bold" style={{ color: winner === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>
-            {winner === "D" ? `D +${demR! - repR!}` : `R +${repR! - demR!}`}
+            {winner === "D" ? `D +${marginVal}${pctMargin ? "%" : ""}` : `R +${marginVal}${pctMargin ? "%" : ""}`}
           </span>
         ) : (
           <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
@@ -144,13 +145,13 @@ export function CandidatesSection({
 
   return (
     <section
-      className="rounded-xl p-3 mb-0 flex flex-col"
+      className="rounded-xl p-5 mb-0 flex flex-col"
       style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
     >
       <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
         Candidates
       </h2>
-      <div className={`mx-auto grid w-full grid-cols-2 gap-3 ${isCompact ? "max-w-none" : "max-w-sm sm:max-w-md"}`}>
+      <div className="grid w-full grid-cols-2 gap-4 mt-3">
         {candidates.map((candidate) => {
           const accentColor = partyAccent(candidate.party);
           const displayName = candidate.placeholder ? "TBD" : candidate.name;
@@ -158,15 +159,15 @@ export function CandidatesSection({
           return (
             <div key={`${candidate.name}-${candidate.party}`} className="flex h-full flex-col items-center text-center w-full">
               <div
-                className={`${isCompact ? "w-14 h-[4.5rem]" : "w-16 h-20"} rounded-lg overflow-hidden mb-2 flex items-center justify-center`}
+                className={`${isCompact ? "w-20 h-24" : "w-full aspect-[4/5]"} rounded-xl overflow-hidden mb-3 flex items-center justify-center`}
                 style={{ border: `2px solid ${accentColor}`, background: "var(--app-tab-bg)" }}
               >
                 {candidate.photo && !candidate.placeholder ? (
                   <Image
                     src={candidate.photo}
                     alt={candidate.name}
-                    width={96}
-                    height={120}
+                    width={240}
+                    height={300}
                     className="w-full h-full object-cover object-top"
                   />
                 ) : (
@@ -177,9 +178,9 @@ export function CandidatesSection({
                   </svg>
                 )}
               </div>
-              <div className={`${isCompact ? "min-h-[2.25rem]" : "min-h-[2.5rem]"} flex items-start justify-center gap-1 mb-0.5`}>
+              <div className="flex items-center justify-center gap-1 mb-1 w-full">
                 <div
-                  className={`font-semibold leading-tight ${isCompact ? "text-xs" : "text-sm"} ${candidate.placeholder ? "italic" : ""}`}
+                  className={`font-bold whitespace-nowrap overflow-hidden text-ellipsis ${isCompact ? "text-sm" : "text-xl"} ${candidate.placeholder ? "italic" : ""}`}
                   style={{ color: candidate.placeholder ? "var(--app-text-muted)" : "var(--app-text-primary)" }}
                 >
                   {displayName}
@@ -188,10 +189,10 @@ export function CandidatesSection({
                   <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: `${accentColor}22`, color: accentColor }}>Inc.</span>
                 )}
               </div>
-              <div className={`${isCompact ? "mb-1.5" : "mb-2"} text-xs font-medium`} style={{ color: accentColor }}>
+              <div className={`${isCompact ? "mb-1.5 text-xs" : "mb-3 text-base"} font-medium`} style={{ color: accentColor }}>
                 {displayParty}
               </div>
-              <div className={`${isCompact ? "text-xl" : "text-2xl"} mt-auto font-bold tabular-nums leading-none`} style={{ color: accentColor }}>
+              <div className={`${isCompact ? "text-2xl" : "text-6xl"} mt-auto font-bold tabular-nums leading-none`} style={{ color: accentColor }}>
                 {candidate.pct}%
               </div>
             </div>
@@ -309,6 +310,8 @@ export function MarginAndWinProbabilityCard({
   rcpRep,
   polyDem,
   polyRep,
+  kalshiDem,
+  kalshiRep,
   showPolls = true,
   density = "default",
 }: {
@@ -319,6 +322,8 @@ export function MarginAndWinProbabilityCard({
   rcpRep?: number;
   polyDem?: number;
   polyRep?: number;
+  kalshiDem?: number;
+  kalshiRep?: number;
   showPolls?: boolean;
   density?: DetailDensity;
 }) {
@@ -353,8 +358,19 @@ export function MarginAndWinProbabilityCard({
             Polls
           </h2>
           <div className="flex flex-col gap-2.5">
-            <MarginPollRow label="RCP Average" dem={rcpDem} rep={rcpRep} />
-            <MarginPollRow label="Polymarket" dem={polyDem} rep={polyRep} />
+            <MarginPollRow label="RCP Average" dem={rcpDem} rep={rcpRep} precision={1} />
+            <MarginPollRow
+              label="Market Average"
+              pctMargin
+              dem={
+                polyDem != null && kalshiDem != null ? (polyDem + kalshiDem) / 2
+                : polyDem ?? kalshiDem
+              }
+              rep={
+                polyRep != null && kalshiRep != null ? (polyRep + kalshiRep) / 2
+                : polyRep ?? kalshiRep
+              }
+            />
           </div>
         </>
       )}

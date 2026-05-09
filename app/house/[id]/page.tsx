@@ -123,7 +123,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
             </div>
 
             <div className="lg:col-span-3 [&>section]:h-full">
-              <MarginAndWinProbabilityCard density="compact" margin={race.margin} demPct={demPct} repPct={repPct} rcpDem={race.rcpDem} rcpRep={race.rcpRep} polyDem={race.polyDem} polyRep={race.polyRep} />
+              <MarginAndWinProbabilityCard density="compact" margin={race.margin} demPct={demPct} repPct={repPct} rcpDem={race.rcpDem} rcpRep={race.rcpRep} polyDem={race.polyDem} polyRep={race.polyRep} kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep} />
             </div>
 
             <PastElectionResultsSection

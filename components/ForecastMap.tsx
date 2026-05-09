@@ -245,8 +245,8 @@ export default function ForecastMap() {
               : `R+${marginAbs.toFixed(1)}`;
             const { bg: badgeColor, text: badgeText } = getRatingColors(hovered.rating);
 
-            const tipW = 185;
-            const tipH = hovered.candidates ? 108 : 80;
+            const tipW = 190;
+            const tipH = hovered.candidates ? 115 : 88;
             const offset = 16;
             const edgePad = 8;
             let left = mousePos.x + offset;
@@ -261,6 +261,7 @@ export default function ForecastMap() {
             }
             if (left < edgePad) left = edgePad;
             if (top < edgePad) top = edgePad;
+            const marginColor = hovered.margin >= 0 ? t.demText : t.repText;
 
             return (
               <div
@@ -269,39 +270,50 @@ export default function ForecastMap() {
                   left,
                   top,
                   width: tipW,
-                  padding: "8px 10px",
+                  padding: "6px 8px",
                   background: t.panel,
                   border: `1px solid ${t.border}`,
                   color: t.textPrimary,
                   boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
                 }}
               >
-                <div className="flex items-center gap-1.5 mb-1.5">
-                  <span className="font-bold text-sm">{hovered.name}</span>
-                  <span
-                    className="text-xs font-semibold px-1.5 py-0.5 rounded"
-                    style={{ background: badgeColor, color: badgeText, whiteSpace: "nowrap" }}
-                  >
-                    {hovered.rating}
+                {/* Header: district name + rating badge + margin top-right */}
+                <div className="flex items-center justify-between gap-1 mb-1.5">
+                  <div className="flex items-center gap-1">
+                    <span className="font-bold text-xs">{hovered.name}</span>
+                    <span
+                      className="font-semibold px-1 py-0.5 rounded"
+                      style={{ background: badgeColor, color: badgeText, whiteSpace: "nowrap", fontSize: 10 }}
+                    >
+                      {hovered.rating}
+                    </span>
+                  </div>
+                  <span className="font-bold shrink-0" style={{ fontSize: 15, color: marginColor }}>
+                    {marginLabel}
                   </span>
                 </div>
-                {hovered.candidates && (
+                {/* Candidate rows: name left, percentage right */}
+                {hovered.candidates ? (
                   <div className="mb-1.5">
-                    <div className="text-xs font-medium leading-tight" style={{ color: t.demText }}>
-                      {hovered.candidates.dem.name}
+                    <div className="flex justify-between items-baseline">
+                      <span className="truncate mr-1" style={{ color: t.demText, fontSize: 11 }}>{hovered.candidates.dem.name}</span>
+                      <span className="font-semibold shrink-0" style={{ color: t.demText, fontSize: 11 }}>{demPct.toFixed(1)}%</span>
                     </div>
-                    <div className="text-xs font-medium leading-tight" style={{ color: t.repText }}>
-                      {hovered.candidates.rep.name}
+                    <div className="flex justify-between items-baseline">
+                      <span className="truncate mr-1" style={{ color: t.repText, fontSize: 11 }}>{hovered.candidates.rep.name}</span>
+                      <span className="font-semibold shrink-0" style={{ color: t.repText, fontSize: 11 }}>{repPct.toFixed(1)}%</span>
                     </div>
                   </div>
+                ) : (
+                  <div className="flex gap-2 mb-1.5">
+                    <span className="font-semibold" style={{ color: t.demText, fontSize: 11 }}>D {demPct.toFixed(1)}%</span>
+                    <span className="font-semibold" style={{ color: t.repText, fontSize: 11 }}>R {repPct.toFixed(1)}%</span>
+                  </div>
                 )}
-                <div className="text-xs leading-tight mb-0.5">
-                  <span style={{ color: t.demText }}>D {demPct.toFixed(1)}%</span>
-                  <span style={{ color: t.textMuted }}> · </span>
-                  <span style={{ color: t.repText }}>R {repPct.toFixed(1)}%</span>
-                </div>
-                <div className="text-xs leading-tight" style={{ color: t.textMuted }}>
-                  Margin: {marginLabel}
+                {/* D/R split bar */}
+                <div className="flex rounded-full overflow-hidden" style={{ height: 3 }}>
+                  <div style={{ width: `${demPct}%`, background: t.demText }} />
+                  <div style={{ width: `${repPct}%`, background: t.repText }} />
                 </div>
               </div>
             );
