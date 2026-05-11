@@ -593,9 +593,11 @@ const BOUNDARY_YEAR_COLS = [
 
 const houseDistrictInfo = {};
 for (const row of districtInfoRows) {
-  if (!row.district_id) continue;
+  // Accept district_id column or scan row values for a 3-4 digit numeric ID
+  const rawId = row.district_id || Object.values(row).find(v => /^\d{3,4}$/.test((v || "").trim()));
+  if (!rawId) continue;
   // Normalize district_id to 4-char padded string matching race.id (e.g. "0101" for AL-1)
-  const key = String(parseInt(row.district_id)).padStart(4, "0");
+  const key = String(parseInt(rawId)).padStart(4, "0");
   const history = [];
   for (const { col, descCol, year } of BOUNDARY_YEAR_COLS) {
     const val = (row[col] || "").trim().toUpperCase();
