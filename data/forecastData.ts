@@ -72814,6 +72814,24 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "race": "President",
       "demPct": 46.6,
       "repPct": 47.7
+    },
+    {
+      "year": 2024,
+      "race": "Senate",
+      "demPct": 51.6,
+      "repPct": 46.6
+    },
+    {
+      "year": 2022,
+      "race": "Senate",
+      "demPct": 52.5,
+      "repPct": 45.8
+    },
+    {
+      "year": 2022,
+      "race": "Governor",
+      "demPct": 51.5,
+      "repPct": 48.1
     }
   ],
   "0402": [
@@ -72834,6 +72852,24 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "race": "President",
       "demPct": 49.6,
       "repPct": 44.7
+    },
+    {
+      "year": 2024,
+      "race": "Senate",
+      "demPct": 44.9,
+      "repPct": 53
+    },
+    {
+      "year": 2022,
+      "race": "Senate",
+      "demPct": 46.4,
+      "repPct": 51.2
+    },
+    {
+      "year": 2022,
+      "race": "Governor",
+      "demPct": 45.4,
+      "repPct": 54.4
     }
   ],
   "0403": [
@@ -72854,6 +72890,24 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "race": "President",
       "demPct": 62.4,
       "repPct": 32.5
+    },
+    {
+      "year": 2024,
+      "race": "Senate",
+      "demPct": 72.9,
+      "repPct": 24
+    },
+    {
+      "year": 2022,
+      "race": "Senate",
+      "demPct": 76.2,
+      "repPct": 21.4
+    },
+    {
+      "year": 2022,
+      "race": "Governor",
+      "demPct": 75.3,
+      "repPct": 24.3
     }
   ],
   "0404": [
@@ -72874,6 +72928,24 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "race": "President",
       "demPct": 27.5,
       "repPct": 67.7
+    },
+    {
+      "year": 2024,
+      "race": "Senate",
+      "demPct": 56.2,
+      "repPct": 41.1
+    },
+    {
+      "year": 2022,
+      "race": "Senate",
+      "demPct": 57,
+      "repPct": 40.7
+    },
+    {
+      "year": 2022,
+      "race": "Governor",
+      "demPct": 56.1,
+      "repPct": 43.5
     }
   ],
   "0405": [
@@ -72894,6 +72966,24 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "race": "President",
       "demPct": 36.5,
       "repPct": 57.6
+    },
+    {
+      "year": 2024,
+      "race": "Senate",
+      "demPct": 43.2,
+      "repPct": 54.7
+    },
+    {
+      "year": 2022,
+      "race": "Senate",
+      "demPct": 44,
+      "repPct": 53.9
+    },
+    {
+      "year": 2022,
+      "race": "Governor",
+      "demPct": 42.8,
+      "repPct": 56.9
     }
   ],
   "0406": [
@@ -72914,6 +73004,24 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "race": "President",
       "demPct": 42.4,
       "repPct": 52.4
+    },
+    {
+      "year": 2024,
+      "race": "Senate",
+      "demPct": 51.4,
+      "repPct": 46.3
+    },
+    {
+      "year": 2022,
+      "race": "Senate",
+      "demPct": 53.6,
+      "repPct": 44.3
+    },
+    {
+      "year": 2022,
+      "race": "Governor",
+      "demPct": 52.1,
+      "repPct": 47.6
     }
   ],
   "0407": [
@@ -72934,6 +73042,24 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "race": "President",
       "demPct": 71.8,
       "repPct": 22.6
+    },
+    {
+      "year": 2024,
+      "race": "Senate",
+      "demPct": 63.4,
+      "repPct": 33.3
+    },
+    {
+      "year": 2022,
+      "race": "Senate",
+      "demPct": 67.9,
+      "repPct": 29.7
+    },
+    {
+      "year": 2022,
+      "race": "Governor",
+      "demPct": 66.5,
+      "repPct": 33.2
     }
   ],
   "0408": [
@@ -72954,6 +73080,24 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "race": "President",
       "demPct": 37,
       "repPct": 58.1
+    },
+    {
+      "year": 2024,
+      "race": "Senate",
+      "demPct": 45,
+      "repPct": 52.7
+    },
+    {
+      "year": 2022,
+      "race": "Senate",
+      "demPct": 45.6,
+      "repPct": 52.2
+    },
+    {
+      "year": 2022,
+      "race": "Governor",
+      "demPct": 44.4,
+      "repPct": 55.2
     }
   ],
   "0409": [
@@ -72974,6 +73118,24 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "race": "President",
       "demPct": 54.7,
       "repPct": 38.4
+    },
+    {
+      "year": 2024,
+      "race": "Senate",
+      "demPct": 37.5,
+      "repPct": 60.1
+    },
+    {
+      "year": 2022,
+      "race": "Senate",
+      "demPct": 37.6,
+      "repPct": 59.9
+    },
+    {
+      "year": 2022,
+      "race": "Governor",
+      "demPct": 36.3,
+      "repPct": 63.4
     }
   ],
   "0501": [
@@ -74096,6 +74258,20 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "repPct": 35.6
     }
   ],
+  "0653": [
+    {
+      "year": 2020,
+      "race": "President",
+      "demPct": 67,
+      "repPct": 30.9
+    },
+    {
+      "year": 2016,
+      "race": "President",
+      "demPct": 64.5,
+      "repPct": 29.6
+    }
+  ],
   "0801": [
     {
       "year": 2024,
@@ -74342,20 +74518,6 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
       "race": "President",
       "demPct": 49.9,
       "repPct": 45.8
-    }
-  ],
-  "0653": [
-    {
-      "year": 2020,
-      "race": "President",
-      "demPct": 67,
-      "repPct": 30.9
-    },
-    {
-      "year": 2016,
-      "race": "President",
-      "demPct": 64.5,
-      "repPct": 29.6
     }
   ]
 };

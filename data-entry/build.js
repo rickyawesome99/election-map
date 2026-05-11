@@ -506,8 +506,14 @@ for (const row of houseStatewideRows) {
     repPct,
   });
 }
+const STATEWIDE_RACE_ORDER = { "President": 0, "Senate": 1, "Senate Special": 1, "Governor": 2 };
 for (const key of Object.keys(houseStatewideResults)) {
-  houseStatewideResults[key].sort((a, b) => b.year - a.year);
+  houseStatewideResults[key].sort((a, b) => {
+    const ao = STATEWIDE_RACE_ORDER[a.race] ?? 3;
+    const bo = STATEWIDE_RACE_ORDER[b.race] ?? 3;
+    if (ao !== bo) return ao - bo;
+    return b.year - a.year;
+  });
 }
 
 // ── House District PVI ────────────────────────────────────────────────────────
