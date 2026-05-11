@@ -543,29 +543,52 @@ export function PastElectionResultsSection({
                 )}
               </div>
               <div className="mb-2">
-                <div className="mb-0.5 flex items-center justify-between gap-3">
-                  <div className="flex min-w-0 items-center gap-1.5">
-                    <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                    {!isPlaceholder && res.demIncumbent && (
-                      <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>
-                    )}
-                  </div>
-                  <div className="flex min-w-0 items-center justify-end gap-1.5">
-                    {!isPlaceholder && res.repIncumbent && (
-                      <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
-                    )}
-                    <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                  </div>
-                </div>
-                <div className="flex min-w-0 items-center gap-1.5 whitespace-nowrap text-sm leading-tight">
-                  <span className="min-w-0 flex-1 truncate font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-dem)" }}>
-                    {isPlaceholder ? "TBD" : demName}
-                  </span>
-                  <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                  <span className="min-w-0 flex-1 truncate text-right font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-rep)" }}>
-                    {isPlaceholder ? "TBD" : repName}
-                  </span>
-                </div>
+                {(() => {
+                  const hasNames = isPlaceholder || res.demCandidate || res.repCandidate;
+                  return hasNames ? (
+                    <>
+                      <div className="mb-0.5 flex items-center justify-between gap-3">
+                        <div className="flex min-w-0 items-center gap-1.5">
+                          <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
+                          {!isPlaceholder && res.demIncumbent && (
+                            <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>
+                          )}
+                        </div>
+                        <div className="flex min-w-0 items-center justify-end gap-1.5">
+                          {!isPlaceholder && res.repIncumbent && (
+                            <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
+                          )}
+                          <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
+                        </div>
+                      </div>
+                      <div className="flex min-w-0 items-center gap-1.5 whitespace-nowrap text-sm leading-tight">
+                        <span className="min-w-0 flex-1 truncate font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-dem)" }}>
+                          {isPlaceholder ? "TBD" : demName}
+                        </span>
+                        <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
+                        <span className="min-w-0 flex-1 truncate text-right font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-rep)" }}>
+                          {isPlaceholder ? "TBD" : repName}
+                        </span>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="flex min-w-0 items-center gap-1.5">
+                        <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
+                        {res.demIncumbent && (
+                          <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>
+                        )}
+                      </div>
+                      <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
+                      <div className="flex min-w-0 items-center justify-end gap-1.5">
+                        {res.repIncumbent && (
+                          <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
+                        )}
+                        <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
+                      </div>
+                    </div>
+                  );
+                })()}
               </div>
               <div className={`${isCompact ? "h-3 mb-1.5" : "h-3.5 mb-1.5"} flex rounded-full overflow-hidden`} style={{ background: "var(--app-tab-bg)" }}>
                 {!isPlaceholder && (
@@ -616,6 +639,8 @@ export function HouseOnlyRecentStatewideResultsSection({
     repPct: number;
     demCandidate?: string;
     repCandidate?: string;
+    demVotes?: number;
+    repVotes?: number;
     placeholder?: boolean;
   }[];
   density?: DetailDensity;
@@ -662,23 +687,36 @@ export function HouseOnlyRecentStatewideResultsSection({
                 )}
               </div>
               <div className="mb-2">
-                <div className="mb-0.5 flex items-center justify-between gap-3">
-                  <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                  <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                </div>
-                <div className="flex min-w-0 items-center gap-1.5 whitespace-nowrap text-sm leading-tight">
-                  {(isPlaceholder || res.demCandidate) && (
-                    <span className="min-w-0 flex-1 truncate font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-dem)" }}>
-                      {isPlaceholder ? "TBD" : res.demCandidate}
-                    </span>
-                  )}
-                  <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                  {(isPlaceholder || res.repCandidate) && (
-                    <span className="min-w-0 flex-1 truncate text-right font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-rep)" }}>
-                      {isPlaceholder ? "TBD" : res.repCandidate}
-                    </span>
-                  )}
-                </div>
+                {(() => {
+                  const hasNames = isPlaceholder || res.demCandidate || res.repCandidate;
+                  return hasNames ? (
+                    <>
+                      <div className="mb-0.5 flex items-center justify-between gap-3">
+                        <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
+                        <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
+                      </div>
+                      <div className="flex min-w-0 items-center gap-1.5 whitespace-nowrap text-sm leading-tight">
+                        {(isPlaceholder || res.demCandidate) && (
+                          <span className="min-w-0 flex-1 truncate font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-dem)" }}>
+                            {isPlaceholder ? "TBD" : res.demCandidate}
+                          </span>
+                        )}
+                        <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
+                        {(isPlaceholder || res.repCandidate) && (
+                          <span className="min-w-0 flex-1 truncate text-right font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-rep)" }}>
+                            {isPlaceholder ? "TBD" : res.repCandidate}
+                          </span>
+                        )}
+                      </div>
+                    </>
+                  ) : (
+                    <div className="flex items-center justify-between gap-3">
+                      <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
+                      <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
+                      <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
+                    </div>
+                  );
+                })()}
               </div>
               <div className={`${isCompact ? "h-3 mb-1.5" : "h-3.5 mb-1.5"} flex rounded-full overflow-hidden`} style={{ background: "var(--app-tab-bg)" }}>
                 {!isPlaceholder && (
@@ -695,8 +733,14 @@ export function HouseOnlyRecentStatewideResultsSection({
                     <span style={{ color: "var(--party-rep)" }}>{res.repPct}%</span>
                   </div>
                   <div className="flex justify-between mt-0.5 gap-3 text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-                    <span className="italic">TBD votes</span>
-                    <span className="italic text-right">TBD votes</span>
+                    {res.demVotes != null
+                      ? <span className="truncate">{res.demVotes.toLocaleString()} votes</span>
+                      : <span className="italic">— votes</span>
+                    }
+                    {res.repVotes != null
+                      ? <span className="truncate text-right">{res.repVotes.toLocaleString()} votes</span>
+                      : <span className="italic text-right">— votes</span>
+                    }
                   </div>
                 </>
               )}

@@ -499,12 +499,12 @@ for (const row of houseStatewideRows) {
   const repPct = num(row.rep_pct);
   const year = int2(row.year, 0);
   if (!year || (!demPct && !repPct)) continue;
-  (houseStatewideResults[key] = houseStatewideResults[key] || []).push({
-    year,
-    race: (row.race || "").trim(),
-    demPct,
-    repPct,
-  });
+  const entry = { year, race: (row.race || "").trim(), demPct, repPct };
+  const dv = parseInt((row.dem_votes || "").replace(/,/g, ""));
+  const rv = parseInt((row.rep_votes || "").replace(/,/g, ""));
+  if (!isNaN(dv) && dv > 0) entry.demVotes = dv;
+  if (!isNaN(rv) && rv > 0) entry.repVotes = rv;
+  (houseStatewideResults[key] = houseStatewideResults[key] || []).push(entry);
 }
 const STATEWIDE_RACE_ORDER = { "President": 0, "Senate": 1, "Senate Special": 1, "Governor": 2 };
 for (const key of Object.keys(houseStatewideResults)) {
@@ -831,6 +831,8 @@ export type HouseStatewideResult = {
   race: string;
   demPct: number;
   repPct: number;
+  demVotes?: number;
+  repVotes?: number;
 };
 
 export const houseStatewideResults: Record<string, HouseStatewideResult[]> = ${j(houseStatewideResults)};
