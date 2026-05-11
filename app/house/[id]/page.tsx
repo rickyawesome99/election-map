@@ -1,4 +1,4 @@
-import { houseData, houseDistrictInfo, houseStatewideResults, electionYear } from "@/data/forecastData";
+import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, electionYear } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -52,6 +52,10 @@ export default async function HousePage({ params, searchParams }: { params: Prom
   const inferredSeat = inferCurrentHouseSeatFromPastResults(race);
   const currentRepName = incumbentCandidate?.name ?? race.seatHolder ?? inferredSeat?.name ?? "TBD";
   const currentRepParty = incumbentCandidate?.party ?? race.seatParty ?? inferredSeat?.party ?? null;
+  const pvi2026 = houseDistrictPvi[race.id];
+  const pviDisplay = pvi2026 != null
+    ? pvi2026 === 0 ? "EVEN" : pvi2026 > 0 ? `R+${pvi2026}` : `D+${Math.abs(pvi2026)}`
+    : "TBD";
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -87,7 +91,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               items={[
                 { label: "Incumbent", value: currentRepName },
                 { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD" },
-                { label: "PVI", value: "TBD" },
+                { label: "PVI", value: pviDisplay },
               ]}
             />
 

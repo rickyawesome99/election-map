@@ -50,6 +50,7 @@ export default function StateDistrictMap({
 }) {
   const [hovered, setHovered] = useState<RaceForecast | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
   const [darkMode] = useState(() => typeof window !== "undefined" && localStorage.getItem("darkMode") === "true");
 
   const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
@@ -81,55 +82,75 @@ export default function StateDistrictMap({
         onMouseMove={(e) => {
           const rect = e.currentTarget.getBoundingClientRect();
           setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+          setMapSize({ w: rect.width, h: rect.height });
         }}
       >
         {/* Hover tooltip */}
         {hovered && (() => {
           const demPct = Math.max(0, Math.min(100, 50 + hovered.margin / 2));
-          const repPct = 100 - demPct;
-          const { bg: rBg, text: rText } = getRatingColors(hovered.rating);
-          const tipW = 170;
-          const tipH = hovered.candidates ? 100 : 70;
-          let left = mousePos.x + 12;
-          let top = mousePos.y + 12;
-          if (left + tipW > 430) left = mousePos.x - tipW - 12;
-          if (top + tipH > 340) top = mousePos.y - tipH - 12;
+          const repPct = Math.max(0, Math.min(100, 50 - hovered.margin / 2));
+          const marginAbs = Math.abs(hovered.margin);
+          const marginLabel = hovered.margin >= 0 ? `D+${marginAbs.toFixed(1)}` : `R+${marginAbs.toFixed(1)}`;
+          const marginColor = hovered.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)";
+          const { bg: badgeColor, text: badgeText } = getRatingColors(hovered.rating);
+          const tipW = 190;
+          const tipH = hovered.candidates ? 115 : 88;
+          const offset = 16;
+          const edgePad = 8;
+          let left = mousePos.x + offset;
+          let top = mousePos.y + offset;
+          const containerW = mapSize.w || 800;
+          const containerH = mapSize.h || 600;
+          if (left + tipW + edgePad > containerW) left = mousePos.x - tipW - offset;
+          if (top + tipH + edgePad > containerH) top = mousePos.y - tipH - offset;
+          if (left < edgePad) left = edgePad;
+          if (top < edgePad) top = edgePad;
           return (
             <div
-              className="absolute z-20 pointer-events-none rounded-lg"
+              className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
               style={{
                 left, top, width: tipW,
-                padding: "8px 10px",
+                padding: "6px 8px",
                 background: "var(--app-panel)",
                 border: "1px solid var(--app-border)",
-                boxShadow: "0 4px 16px rgba(0,0,0,0.2)",
+                color: "var(--app-text-primary)",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
               }}
             >
-              <div className="flex items-center gap-1.5 mb-1">
-                <span className="font-bold text-xs" style={{ color: "var(--app-text-primary)" }}>
-                  {hovered.name}
-                </span>
-                <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded" style={{ background: rBg, color: rText }}>
-                  {hovered.rating}
+              <div className="flex items-center justify-between gap-1 mb-1.5">
+                <div className="flex items-center gap-1">
+                  <span className="font-bold text-xs">{hovered.name}</span>
+                  <span
+                    className="font-semibold px-1 py-0.5 rounded"
+                    style={{ background: badgeColor, color: badgeText, whiteSpace: "nowrap", fontSize: 10 }}
+                  >
+                    {hovered.rating}
+                  </span>
+                </div>
+                <span className="font-bold shrink-0" style={{ fontSize: 15, color: marginColor }}>
+                  {marginLabel}
                 </span>
               </div>
-              {hovered.candidates && (
-                <div className="mb-1">
-                  <div className="text-[10px] font-medium" style={{ color: "var(--party-dem)" }}>
-                    {hovered.candidates.dem.name}
+              {hovered.candidates ? (
+                <div className="mb-1.5">
+                  <div className="flex justify-between items-baseline">
+                    <span className="truncate mr-1" style={{ color: "var(--party-dem)", fontSize: 11 }}>{hovered.candidates.dem.name}</span>
+                    <span className="font-semibold shrink-0" style={{ color: "var(--party-dem)", fontSize: 11 }}>{demPct.toFixed(1)}%</span>
                   </div>
-                  <div className="text-[10px] font-medium" style={{ color: "var(--party-rep)" }}>
-                    {hovered.candidates.rep.name}
+                  <div className="flex justify-between items-baseline">
+                    <span className="truncate mr-1" style={{ color: "var(--party-rep)", fontSize: 11 }}>{hovered.candidates.rep.name}</span>
+                    <span className="font-semibold shrink-0" style={{ color: "var(--party-rep)", fontSize: 11 }}>{repPct.toFixed(1)}%</span>
                   </div>
                 </div>
+              ) : (
+                <div className="flex gap-2 mb-1.5">
+                  <span className="font-semibold" style={{ color: "var(--party-dem)", fontSize: 11 }}>D {demPct.toFixed(1)}%</span>
+                  <span className="font-semibold" style={{ color: "var(--party-rep)", fontSize: 11 }}>R {repPct.toFixed(1)}%</span>
+                </div>
               )}
-              <div className="text-[10px]">
-                <span style={{ color: "var(--party-dem)" }}>D {demPct.toFixed(1)}%</span>
-                <span style={{ color: "var(--app-text-muted)" }}> · </span>
-                <span style={{ color: "var(--party-rep)" }}>R {repPct.toFixed(1)}%</span>
-              </div>
-              <div className="text-[10px] mt-0.5" style={{ color: "var(--app-text-muted)" }}>
-                Margin: {hovered.margin >= 0 ? "D" : "R"}+{Math.abs(hovered.margin).toFixed(1)}
+              <div className="flex rounded-full overflow-hidden" style={{ height: 3 }}>
+                <div style={{ width: `${demPct}%`, background: "var(--party-dem)" }} />
+                <div style={{ width: `${repPct}%`, background: "var(--party-rep)" }} />
               </div>
             </div>
           );

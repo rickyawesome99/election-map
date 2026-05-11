@@ -1,5 +1,5 @@
 import { statesData } from "@/data/statesData";
-import { electionYear, governorData, governorNoElection, houseData, senateCurrent, pres2024, houseDelegationHistory, RaceForecast } from "@/data/forecastData";
+import { electionYear, governorData, governorNoElection, houseData, senateCurrent, pres2024, statePvi, houseDelegationHistory, RaceForecast } from "@/data/forecastData";
 import StatesTable, { StateRow } from "@/components/StatesTable";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
@@ -17,7 +17,8 @@ const NAV = [
   { label: "Analysis",  href: "/analysis" },
 ];
 
-function raceParty(race: RaceForecast): "D" | "R" {
+function raceParty(race: RaceForecast): "D" | "R" | "I" {
+  if (race.seatParty) return race.seatParty;
   if (race.candidates?.dem.incumbent) return "D";
   if (race.candidates?.rep.incumbent) return "R";
   return race.margin >= 0 ? "D" : "R";
@@ -55,6 +56,7 @@ function buildStateRows(): StateRow[] {
       houseRep,
       houseTotal: houseRaces.length,
       pres2024: pres2024[state.abbr] ?? null,
+      pvi2026: statePvi[state.abbr] ?? null,
     };
   });
 }

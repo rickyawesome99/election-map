@@ -38,6 +38,8 @@ type CandidateCardEntry = {
 type HouseBoundaryHistoryEntry = {
   year: number;
   description: string;
+  pviOld?: number;
+  pviNew?: number;
 };
 
 type DetailDensity = "default" | "compact";
@@ -706,6 +708,26 @@ export function HouseOnlyRecentStatewideResultsSection({
   );
 }
 
+function pviLabel(pvi: number): string {
+  if (pvi === 0) return "EVEN";
+  return pvi > 0 ? `R+${pvi}` : `D+${Math.abs(pvi)}`;
+}
+
+function PviBadge({ pvi }: { pvi: number }) {
+  const isR = pvi > 0;
+  const isEven = pvi === 0;
+  const bg = isEven ? "var(--app-tab-bg)" : isR ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)";
+  const color = isEven ? "var(--app-text-muted)" : isR ? "var(--party-rep)" : "var(--party-dem)";
+  return (
+    <span
+      className="text-[11px] font-bold px-1.5 py-0.5 rounded whitespace-nowrap tabular-nums"
+      style={{ background: bg, color }}
+    >
+      {pviLabel(pvi)}
+    </span>
+  );
+}
+
 export function HouseOnlyDistrictBoundariesSection({
   entries,
   density = "default",
@@ -745,8 +767,24 @@ export function HouseOnlyDistrictBoundariesSection({
                 >
                   {entry.year}
                 </div>
-                <div className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
-                  {entry.description}
+                <div className="flex-1 min-w-0">
+                  <div className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
+                    {entry.description}
+                  </div>
+                  {entry.pviNew != null && (
+                    <div className="mt-1.5 flex items-center gap-1.5">
+                      <span className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-very-muted)" }}>PVI</span>
+                      {entry.pviOld != null ? (
+                        <>
+                          <PviBadge pvi={entry.pviOld} />
+                          <span className="text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>→</span>
+                          <PviBadge pvi={entry.pviNew} />
+                        </>
+                      ) : (
+                        <PviBadge pvi={entry.pviNew} />
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             ))}

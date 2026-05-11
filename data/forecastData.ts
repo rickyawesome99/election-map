@@ -59434,3667 +59434,501 @@ export const houseData: RaceForecast[] = [
 export type BoundaryHistoryEntry = {
   year: number;
   description: string;
+  pviOld?: number;
+  pviNew?: number;
 };
 
-export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
-  "1201": [
-    {
-      "year": 2022,
-      "description": "FL-1 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1202": [
-    {
-      "year": 2022,
-      "description": "FL-2 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1203": [
-    {
-      "year": 2022,
-      "description": "FL-3 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1204": [
-    {
-      "year": 2022,
-      "description": "FL-4 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1205": [
-    {
-      "year": 2022,
-      "description": "FL-5 changed dramatically under Florida's 2022 map. The prior north Florida Black-performing district linking Jacksonville and Tallahassee was dismantled, and the new 5th became a very different Jacksonville-area district that leaned much more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "FL-5 was one of the most important changes on Florida's court-ordered 2016 map. The district was redrawn into a north Florida seat linking Jacksonville to Tallahassee, replacing the older Orlando-to-Jacksonville configuration."
-    }
-  ],
-  "1206": [
-    {
-      "year": 2022,
-      "description": "FL-6 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1207": [
-    {
-      "year": 2022,
-      "description": "FL-7 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1208": [
-    {
-      "year": 2022,
-      "description": "FL-8 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1209": [
-    {
-      "year": 2022,
-      "description": "FL-9 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1210": [
-    {
-      "year": 2022,
-      "description": "FL-10 was heavily reworked under Florida's 2022 map, becoming a more compact Orlando-based Democratic seat after the statewide reshuffle."
-    },
-    {
-      "year": 2016,
-      "description": "FL-10 was substantially reworked under Florida's 2016 remedial map as central Florida districts were untangled and redrawn around Orlando."
-    }
-  ],
-  "1211": [
-    {
-      "year": 2022,
-      "description": "FL-11 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1212": [
-    {
-      "year": 2022,
-      "description": "FL-12 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1213": [
-    {
-      "year": 2022,
-      "description": "FL-13 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "FL-13 was notably altered by Florida's 2016 court-ordered map, becoming more compact around Pinellas County and less like the prior configuration that extended further afield."
-    }
-  ],
-  "1214": [
-    {
-      "year": 2022,
-      "description": "FL-14 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1215": [
-    {
-      "year": 2022,
-      "description": "FL-15 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1216": [
-    {
-      "year": 2022,
-      "description": "FL-16 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1217": [
-    {
-      "year": 2022,
-      "description": "FL-17 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1218": [
-    {
-      "year": 2022,
-      "description": "FL-18 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "FL-18 saw meaningful changes on the 2016 remedial map as south and Treasure Coast districts were redrawn for population balance and to unwind the prior plan."
-    }
-  ],
-  "1219": [
-    {
-      "year": 2022,
-      "description": "FL-19 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1220": [
-    {
-      "year": 2022,
-      "description": "FL-20 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1221": [
-    {
-      "year": 2022,
-      "description": "FL-21 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1222": [
-    {
-      "year": 2022,
-      "description": "FL-22 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1223": [
-    {
-      "year": 2022,
-      "description": "FL-23 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1224": [
-    {
-      "year": 2022,
-      "description": "FL-24 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1225": [
-    {
-      "year": 2022,
-      "description": "FL-25 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election."
-    }
-  ],
-  "1226": [
-    {
-      "year": 2022,
-      "description": "FL-26 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "FL-26 was significantly redrawn under Florida's 2016 court-ordered map, with Miami-Dade and southwest Florida lines reconfigured in a way that changed the district's partisan balance."
-    }
-  ],
-  "1227": [
-    {
-      "year": 2022,
-      "description": "FL-27 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican."
-    },
-    {
-      "year": 2016,
-      "description": "FL-27 was effectively created as a new Miami-area seat under Florida's 2016 remedial map, taking territory that had been configured differently under the previous plan."
-    }
-  ],
-  "1228": [
-    {
-      "year": 2022,
-      "description": "FL-28 was a new district for 2022 after Florida gained a seat. It was drawn in southwest Florida and helped reshuffle neighboring South Florida districts."
-    }
-  ],
-  "1301": [
-    {
-      "year": 2024,
-      "description": "GA-1 saw only modest coastal and southeast Georgia adjustments under the 2024 map; its basic south-coastal footprint stayed intact."
-    },
-    {
-      "year": 2022,
-      "description": "GA-1 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1302": [
-    {
-      "year": 2024,
-      "description": "GA-2 remained the southwest Georgia/Black Belt district, with only secondary adjustments as the legislature reworked metro Atlanta seats in 2024."
-    },
-    {
-      "year": 2022,
-      "description": "GA-2 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1303": [
-    {
-      "year": 2024,
-      "description": "GA-3 stayed a west Georgia seat anchored outside metro Atlanta, with only modest population-balancing changes in the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "GA-3 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1304": [
-    {
-      "year": 2024,
-      "description": "GA-4 remained a heavily Democratic DeKalb/Gwinnett-area district, though its boundaries were adjusted as part of the metro Atlanta redraw."
-    },
-    {
-      "year": 2022,
-      "description": "GA-4 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1305": [
-    {
-      "year": 2024,
-      "description": "GA-5 stayed centered on Atlanta, with only limited changes compared with the more dramatic redraws in suburban districts around it."
-    },
-    {
-      "year": 2022,
-      "description": "GA-5 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1306": [
-    {
-      "year": 2024,
-      "description": "GA-6 was one of the biggest changes on Georgia's 2024 map. The district was redrawn to shed Democratic-leaning suburban territory and become substantially more Republican, making it much more favorable to the GOP than the 2022 version."
-    },
-    {
-      "year": 2022,
-      "description": "GA-6 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1307": [
-    {
-      "year": 2024,
-      "description": "GA-7 remained a Gwinnett-based suburban Atlanta seat, but it became more compact and more solidly Democratic after Georgia's 2024 redraw pushed Republican-leaning voters elsewhere."
-    },
-    {
-      "year": 2022,
-      "description": "GA-7 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1308": [
-    {
-      "year": 2024,
-      "description": "GA-8 remained a central/south Georgia district with only modest population-balancing changes in 2024."
-    },
-    {
-      "year": 2022,
-      "description": "GA-8 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1309": [
-    {
-      "year": 2024,
-      "description": "GA-9 stayed a strongly Republican north Georgia seat and was affected only marginally by the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "GA-9 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1310": [
-    {
-      "year": 2024,
-      "description": "GA-10 remained an outer-metro/east Georgia seat; the 2024 redraw made only secondary changes compared with the larger shifts in the Atlanta suburbs."
-    },
-    {
-      "year": 2022,
-      "description": "GA-10 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1311": [
-    {
-      "year": 2024,
-      "description": "GA-11 remained a northwest-metro Atlanta Republican seat, though some precincts shifted as the legislature rewired neighboring suburban districts in 2024."
-    },
-    {
-      "year": 2022,
-      "description": "GA-11 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1312": [
-    {
-      "year": 2024,
-      "description": "GA-12 stayed anchored in east-central and coastal Georgia with only limited boundary adjustments in 2024."
-    },
-    {
-      "year": 2022,
-      "description": "GA-12 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1313": [
-    {
-      "year": 2024,
-      "description": "GA-13 remained a heavily Democratic south-metro Atlanta seat, with some boundary changes tied to the broader Atlanta-area redraw."
-    },
-    {
-      "year": 2022,
-      "description": "GA-13 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1314": [
-    {
-      "year": 2024,
-      "description": "GA-14 stayed a deep-red northwest Georgia district with little substantive change in the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "GA-14 was redrawn for 2022. Georgia's 2022 map made moderate statewide changes, especially in fast-growing metro Atlanta suburbs, while keeping the same 14-seat structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1501": [
-    {
-      "year": 2022,
-      "description": "HI-1 was redrawn for 2022. Hawaii's 2022 map made only modest changes while preserving the state's two-district split between urban Oahu and the rest of the state. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1502": [
-    {
-      "year": 2022,
-      "description": "HI-2 was redrawn for 2022. Hawaii's 2022 map made only modest changes while preserving the state's two-district split between urban Oahu and the rest of the state. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1601": [
-    {
-      "year": 2022,
-      "description": "ID-1 was redrawn for 2022. Idaho's 2022 map made modest changes and kept its two-district east-west split broadly intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1602": [
-    {
-      "year": 2022,
-      "description": "ID-2 was redrawn for 2022. Idaho's 2022 map made modest changes and kept its two-district east-west split broadly intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1701": [
-    {
-      "year": 2022,
-      "description": "IL-1 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1702": [
-    {
-      "year": 2022,
-      "description": "IL-2 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1703": [
-    {
-      "year": 2022,
-      "description": "IL-3 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1704": [
-    {
-      "year": 2022,
-      "description": "IL-4 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1705": [
-    {
-      "year": 2022,
-      "description": "IL-5 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1706": [
-    {
-      "year": 2022,
-      "description": "IL-6 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1707": [
-    {
-      "year": 2022,
-      "description": "IL-7 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1708": [
-    {
-      "year": 2022,
-      "description": "IL-8 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1709": [
-    {
-      "year": 2022,
-      "description": "IL-9 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1710": [
-    {
-      "year": 2022,
-      "description": "IL-10 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1711": [
-    {
-      "year": 2022,
-      "description": "IL-11 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1712": [
-    {
-      "year": 2022,
-      "description": "IL-12 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1713": [
-    {
-      "year": 2022,
-      "description": "IL-13 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1714": [
-    {
-      "year": 2022,
-      "description": "IL-14 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1715": [
-    {
-      "year": 2022,
-      "description": "IL-15 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1716": [
-    {
-      "year": 2022,
-      "description": "IL-16 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1717": [
-    {
-      "year": 2022,
-      "description": "IL-17 was substantially reworked for 2022. Illinois' 2022 map, drawn by Democrats after the state lost a seat, significantly reworked several districts and was designed to shore up Democratic advantages in the Chicago area and beyond. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "1801": [
-    {
-      "year": 2022,
-      "description": "IN-1 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1802": [
-    {
-      "year": 2022,
-      "description": "IN-2 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1803": [
-    {
-      "year": 2022,
-      "description": "IN-3 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1804": [
-    {
-      "year": 2022,
-      "description": "IN-4 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1805": [
-    {
-      "year": 2022,
-      "description": "IN-5 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1806": [
-    {
-      "year": 2022,
-      "description": "IN-6 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1807": [
-    {
-      "year": 2022,
-      "description": "IN-7 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1808": [
-    {
-      "year": 2022,
-      "description": "IN-8 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1809": [
-    {
-      "year": 2022,
-      "description": "IN-9 was redrawn for 2022. Indiana's 2022 map made relatively modest changes and preserved the basic partisan structure of the state's nine districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "1901": [
-    {
-      "year": 2022,
-      "description": "IA-1 was materially redrawn for 2022. Iowa's nonpartisan 2022 map redrew all four districts in a cleaner population-balancing plan, altering numbering and regional combinations while keeping changes relatively evenhanded. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "1902": [
-    {
-      "year": 2022,
-      "description": "IA-2 was materially redrawn for 2022. Iowa's nonpartisan 2022 map redrew all four districts in a cleaner population-balancing plan, altering numbering and regional combinations while keeping changes relatively evenhanded. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "1903": [
-    {
-      "year": 2022,
-      "description": "IA-3 was materially redrawn for 2022. Iowa's nonpartisan 2022 map redrew all four districts in a cleaner population-balancing plan, altering numbering and regional combinations while keeping changes relatively evenhanded. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "1904": [
-    {
-      "year": 2022,
-      "description": "IA-4 was materially redrawn for 2022. Iowa's nonpartisan 2022 map redrew all four districts in a cleaner population-balancing plan, altering numbering and regional combinations while keeping changes relatively evenhanded. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "2001": [
-    {
-      "year": 2022,
-      "description": "KS-1 was redrawn for 2022. Kansas' 2022 map kept the four-district structure but notably reworked the Kansas City–area 3rd district and parts of the Wichita-based 4th. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2002": [
-    {
-      "year": 2022,
-      "description": "KS-2 was redrawn for 2022. Kansas' 2022 map kept the four-district structure but notably reworked the Kansas City–area 3rd district and parts of the Wichita-based 4th. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2003": [
-    {
-      "year": 2022,
-      "description": "KS-3 was redrawn for 2022. Kansas' 2022 map kept the four-district structure but notably reworked the Kansas City–area 3rd district and parts of the Wichita-based 4th. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2004": [
-    {
-      "year": 2022,
-      "description": "KS-4 was redrawn for 2022. Kansas' 2022 map kept the four-district structure but notably reworked the Kansas City–area 3rd district and parts of the Wichita-based 4th. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2101": [
-    {
-      "year": 2022,
-      "description": "KY-1 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2102": [
-    {
-      "year": 2022,
-      "description": "KY-2 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2103": [
-    {
-      "year": 2022,
-      "description": "KY-3 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2104": [
-    {
-      "year": 2022,
-      "description": "KY-4 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2105": [
-    {
-      "year": 2022,
-      "description": "KY-5 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2106": [
-    {
-      "year": 2022,
-      "description": "KY-6 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2201": [
-    {
-      "year": 2024,
-      "description": "LA-1 remained centered on the New Orleans suburbs and the Florida Parishes, with only ripple-effect changes from Louisiana's court-driven 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "LA-1 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2202": [
-    {
-      "year": 2024,
-      "description": "LA-2 remained the New Orleans-based Black-majority district, though its exact lines shifted as Louisiana created a second Black-majority seat elsewhere on the map."
-    },
-    {
-      "year": 2022,
-      "description": "LA-2 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2203": [
-    {
-      "year": 2024,
-      "description": "LA-3 stayed a south Louisiana/Cajun Country seat, but its boundaries were adjusted in the statewide reshuffle caused by the creation of a new Black-majority district."
-    },
-    {
-      "year": 2022,
-      "description": "LA-3 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2204": [
-    {
-      "year": 2024,
-      "description": "LA-4 remained a northwest Louisiana seat, though its boundaries changed significantly as the new map carved out a second Black-majority district running up the state."
-    },
-    {
-      "year": 2022,
-      "description": "LA-4 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2205": [
-    {
-      "year": 2024,
-      "description": "LA-5, previously a long northeast-to-central Louisiana district, was significantly altered by the 2024 redraw and gave up territory used to construct the new second Black-majority seat."
-    },
-    {
-      "year": 2022,
-      "description": "LA-5 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2206": [
-    {
-      "year": 2024,
-      "description": "LA-6 changed more than any other Louisiana district in 2024. It was redrawn from a Baton Rouge-centered seat into a long Baton Rouge-to-Shreveport district designed to create a second Black-majority/Black-opportunity seat, making it far more Democratic than before."
-    },
-    {
-      "year": 2022,
-      "description": "LA-6 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2301": [
-    {
-      "year": 2022,
-      "description": "ME-1 was redrawn for 2022. Maine's 2022 map made only modest adjustments while keeping the familiar north/south two-district split. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2302": [
-    {
-      "year": 2022,
-      "description": "ME-2 was redrawn for 2022. Maine's 2022 map made only modest adjustments while keeping the familiar north/south two-district split. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2401": [
-    {
-      "year": 2022,
-      "description": "MD-1 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "2402": [
-    {
-      "year": 2022,
-      "description": "MD-2 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "2403": [
-    {
-      "year": 2022,
-      "description": "MD-3 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "2404": [
-    {
-      "year": 2022,
-      "description": "MD-4 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "2405": [
-    {
-      "year": 2022,
-      "description": "MD-5 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "2406": [
-    {
-      "year": 2022,
-      "description": "MD-6 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "2407": [
-    {
-      "year": 2022,
-      "description": "MD-7 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "2408": [
-    {
-      "year": 2022,
-      "description": "MD-8 was materially redrawn for 2022. Maryland's 2022 map changed multiple districts after the legislature's first plan was struck down, ultimately producing a court-approved map that was less aggressively gerrymandered than the original proposal. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "2501": [
-    {
-      "year": 2022,
-      "description": "MA-1 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2502": [
-    {
-      "year": 2022,
-      "description": "MA-2 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2503": [
-    {
-      "year": 2022,
-      "description": "MA-3 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2504": [
-    {
-      "year": 2022,
-      "description": "MA-4 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2505": [
-    {
-      "year": 2022,
-      "description": "MA-5 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2506": [
-    {
-      "year": 2022,
-      "description": "MA-6 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2507": [
-    {
-      "year": 2022,
-      "description": "MA-7 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2508": [
-    {
-      "year": 2022,
-      "description": "MA-8 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2509": [
-    {
-      "year": 2022,
-      "description": "MA-9 was redrawn for 2022. Massachusetts' 2022 map kept the state's basic nine-district structure while making only modest regional adjustments. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2601": [
-    {
-      "year": 2022,
-      "description": "MI-1 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2602": [
-    {
-      "year": 2022,
-      "description": "MI-2 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2603": [
-    {
-      "year": 2022,
-      "description": "MI-3 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2604": [
-    {
-      "year": 2022,
-      "description": "MI-4 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2605": [
-    {
-      "year": 2022,
-      "description": "MI-5 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2606": [
-    {
-      "year": 2022,
-      "description": "MI-6 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2607": [
-    {
-      "year": 2022,
-      "description": "MI-7 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2608": [
-    {
-      "year": 2022,
-      "description": "MI-8 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2609": [
-    {
-      "year": 2022,
-      "description": "MI-9 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2610": [
-    {
-      "year": 2022,
-      "description": "MI-10 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2611": [
-    {
-      "year": 2022,
-      "description": "MI-11 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2612": [
-    {
-      "year": 2022,
-      "description": "MI-12 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2613": [
-    {
-      "year": 2022,
-      "description": "MI-13 was substantially reworked for 2022. Michigan's independent commission adopted a new 13-district map after the state lost a seat, producing major renumbering and several much more competitive districts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "2701": [
-    {
-      "year": 2022,
-      "description": "MN-1 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2702": [
-    {
-      "year": 2022,
-      "description": "MN-2 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2703": [
-    {
-      "year": 2022,
-      "description": "MN-3 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2704": [
-    {
-      "year": 2022,
-      "description": "MN-4 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2705": [
-    {
-      "year": 2022,
-      "description": "MN-5 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2706": [
-    {
-      "year": 2022,
-      "description": "MN-6 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2707": [
-    {
-      "year": 2022,
-      "description": "MN-7 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2708": [
-    {
-      "year": 2022,
-      "description": "MN-8 was redrawn for 2022. Minnesota's 2022 court-approved map changed district lines only modestly and preserved the state's basic metro/rural balance. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2801": [
-    {
-      "year": 2022,
-      "description": "MS-1 was redrawn for 2022. Mississippi's 2022 map made limited adjustments while keeping the four-district arrangement broadly familiar. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2802": [
-    {
-      "year": 2022,
-      "description": "MS-2 was redrawn for 2022. Mississippi's 2022 map made limited adjustments while keeping the four-district arrangement broadly familiar. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2803": [
-    {
-      "year": 2022,
-      "description": "MS-3 was redrawn for 2022. Mississippi's 2022 map made limited adjustments while keeping the four-district arrangement broadly familiar. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2804": [
-    {
-      "year": 2022,
-      "description": "MS-4 was redrawn for 2022. Mississippi's 2022 map made limited adjustments while keeping the four-district arrangement broadly familiar. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2901": [
-    {
-      "year": 2026,
-      "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "MO-1 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2902": [
-    {
-      "year": 2026,
-      "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "MO-2 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2903": [
-    {
-      "year": 2026,
-      "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "MO-3 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2904": [
-    {
-      "year": 2026,
-      "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "MO-4 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2905": [
-    {
-      "year": 2026,
-      "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "MO-5 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2906": [
-    {
-      "year": 2026,
-      "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "MO-6 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2907": [
-    {
-      "year": 2026,
-      "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "MO-7 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "2908": [
-    {
-      "year": 2026,
-      "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "MO-8 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3001": [
-    {
-      "year": 2022,
-      "description": "MT-1 was effectively created in 2022 when Montana regained a second House seat. The new map drew a western district centered on Missoula, Bozeman, and the more population-heavy western half of the state, making it markedly more competitive than the former at-large district."
-    }
-  ],
-  "3002": [
-    {
-      "year": 2022,
-      "description": "MT-2 was effectively created in 2022 when Montana regained a second House seat. The new map made it the eastern district covering the vast rural eastern half of the state, leaving it strongly Republican."
-    }
-  ],
-  "3101": [
-    {
-      "year": 2022,
-      "description": "NE-1 was redrawn for 2022. Nebraska's 2022 map made limited changes while keeping the familiar Omaha/Lincoln and rural district structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3102": [
-    {
-      "year": 2022,
-      "description": "NE-2 was redrawn for 2022. Nebraska's 2022 map made limited changes while keeping the familiar Omaha/Lincoln and rural district structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3103": [
-    {
-      "year": 2022,
-      "description": "NE-3 was redrawn for 2022. Nebraska's 2022 map made limited changes while keeping the familiar Omaha/Lincoln and rural district structure. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3201": [
-    {
-      "year": 2022,
-      "description": "NV-1 was materially redrawn for 2022. Nevada's 2022 map adjusted all four districts, especially in Las Vegas, to spread Democratic voters more broadly across the delegation. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "3202": [
-    {
-      "year": 2022,
-      "description": "NV-2 was materially redrawn for 2022. Nevada's 2022 map adjusted all four districts, especially in Las Vegas, to spread Democratic voters more broadly across the delegation. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "3203": [
-    {
-      "year": 2022,
-      "description": "NV-3 was materially redrawn for 2022. Nevada's 2022 map adjusted all four districts, especially in Las Vegas, to spread Democratic voters more broadly across the delegation. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "3204": [
-    {
-      "year": 2022,
-      "description": "NV-4 was materially redrawn for 2022. Nevada's 2022 map adjusted all four districts, especially in Las Vegas, to spread Democratic voters more broadly across the delegation. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "3301": [
-    {
-      "year": 2022,
-      "description": "NH-1 was redrawn for 2022. New Hampshire's 2022 map made only small changes to the state's two districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3302": [
-    {
-      "year": 2022,
-      "description": "NH-2 was redrawn for 2022. New Hampshire's 2022 map made only small changes to the state's two districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3401": [
-    {
-      "year": 2022,
-      "description": "NJ-1 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3402": [
-    {
-      "year": 2022,
-      "description": "NJ-2 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3403": [
-    {
-      "year": 2022,
-      "description": "NJ-3 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3404": [
-    {
-      "year": 2022,
-      "description": "NJ-4 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3405": [
-    {
-      "year": 2022,
-      "description": "NJ-5 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3406": [
-    {
-      "year": 2022,
-      "description": "NJ-6 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3407": [
-    {
-      "year": 2022,
-      "description": "NJ-7 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3408": [
-    {
-      "year": 2022,
-      "description": "NJ-8 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3409": [
-    {
-      "year": 2022,
-      "description": "NJ-9 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3410": [
-    {
-      "year": 2022,
-      "description": "NJ-10 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3411": [
-    {
-      "year": 2022,
-      "description": "NJ-11 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3412": [
-    {
-      "year": 2022,
-      "description": "NJ-12 was redrawn for 2022. New Jersey's 2022 bipartisan tiebreaker map made moderate adjustments but kept the basic 12-district framework recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "3501": [
-    {
-      "year": 2022,
-      "description": "NM-1 was materially redrawn for 2022. New Mexico's 2022 map materially reworked all three districts, especially by splitting Albuquerque differently and making the southern district more competitive. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "3502": [
-    {
-      "year": 2022,
-      "description": "NM-2 was materially redrawn for 2022. New Mexico's 2022 map materially reworked all three districts, especially by splitting Albuquerque differently and making the southern district more competitive. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "3503": [
-    {
-      "year": 2022,
-      "description": "NM-3 was materially redrawn for 2022. New Mexico's 2022 map materially reworked all three districts, especially by splitting Albuquerque differently and making the southern district more competitive. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "3601": [
-    {
-      "year": 2024,
-      "description": "NY-1 remained an eastern Long Island seat, but the 2024 court-drawn revision adjusted its boundaries and made only modest changes to its basic Suffolk County footprint."
-    },
-    {
-      "year": 2022,
-      "description": "NY-1 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3602": [
-    {
-      "year": 2024,
-      "description": "NY-2 stayed a Long Island district centered in Suffolk/Nassau territory, with moderate adjustments under the 2024 court-ordered redraw."
-    },
-    {
-      "year": 2022,
-      "description": "NY-2 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3603": [
-    {
-      "year": 2024,
-      "description": "NY-3 was meaningfully reworked in the 2024 court map, with Long Island and north Queens/Nassau lines adjusted to change the district's political balance and geographic composition."
-    },
-    {
-      "year": 2022,
-      "description": "NY-3 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3604": [
-    {
-      "year": 2024,
-      "description": "NY-4 remained a Nassau County district, though its boundaries shifted as the court map redivided Long Island's competitive seats for 2024."
-    },
-    {
-      "year": 2022,
-      "description": "NY-4 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3605": [
-    {
-      "year": 2024,
-      "description": "NY-5 stayed a heavily Democratic Queens-based seat, with only limited changes in the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "NY-5 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3606": [
-    {
-      "year": 2024,
-      "description": "NY-6 remained centered in Queens and changed only modestly under the 2024 court map."
-    },
-    {
-      "year": 2022,
-      "description": "NY-6 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3607": [
-    {
-      "year": 2024,
-      "description": "NY-7 stayed a Brooklyn/Queens district with only minor boundary tweaks in the 2024 revision."
-    },
-    {
-      "year": 2022,
-      "description": "NY-7 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3608": [
-    {
-      "year": 2024,
-      "description": "NY-8 remained a Brooklyn/Queens seat and saw only small adjustments in the 2024 court redraw."
-    },
-    {
-      "year": 2022,
-      "description": "NY-8 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3609": [
-    {
-      "year": 2024,
-      "description": "NY-9 stayed a Brooklyn-based Democratic district with little substantive change in 2024."
-    },
-    {
-      "year": 2022,
-      "description": "NY-9 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3610": [
-    {
-      "year": 2024,
-      "description": "NY-10 remained a Manhattan/Brooklyn district, with only small changes in the 2024 court-ordered update."
-    },
-    {
-      "year": 2022,
-      "description": "NY-10 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3611": [
-    {
-      "year": 2024,
-      "description": "NY-11 stayed centered on Staten Island and southern Brooklyn, but the 2024 court map made modest changes around its edges."
-    },
-    {
-      "year": 2022,
-      "description": "NY-11 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3612": [
-    {
-      "year": 2024,
-      "description": "NY-12 remained a Manhattan-based district and changed only marginally in the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "NY-12 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3613": [
-    {
-      "year": 2024,
-      "description": "NY-13 stayed centered in upper Manhattan and the Bronx, with little substantive change in 2024."
-    },
-    {
-      "year": 2022,
-      "description": "NY-13 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3614": [
-    {
-      "year": 2024,
-      "description": "NY-14 remained a Bronx/Queens district and saw only limited modifications in the 2024 court-drawn revision."
-    },
-    {
-      "year": 2022,
-      "description": "NY-14 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3615": [
-    {
-      "year": 2024,
-      "description": "NY-15 stayed a Bronx-based district with only minor line changes in 2024."
-    },
-    {
-      "year": 2022,
-      "description": "NY-15 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3616": [
-    {
-      "year": 2024,
-      "description": "NY-16 remained anchored in the lower Hudson Valley and southern Westchester/Bronx suburbs, though the 2024 map adjusted nearby suburban lines."
-    },
-    {
-      "year": 2022,
-      "description": "NY-16 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3617": [
-    {
-      "year": 2024,
-      "description": "NY-17 was one of the more important Hudson Valley battlegrounds touched by the 2024 court map. Its boundaries were adjusted in a way that changed the seat's political complexion while keeping its lower-Hudson core."
-    },
-    {
-      "year": 2022,
-      "description": "NY-17 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3618": [
-    {
-      "year": 2024,
-      "description": "NY-18 remained a Hudson Valley district, but the 2024 revision altered its boundaries as the court rebalanced the region's competitive seats."
-    },
-    {
-      "year": 2022,
-      "description": "NY-18 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3619": [
-    {
-      "year": 2024,
-      "description": "NY-19 stayed an upstate swing district, with moderate changes to its lines under the 2024 court-drawn map."
-    },
-    {
-      "year": 2022,
-      "description": "NY-19 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3620": [
-    {
-      "year": 2024,
-      "description": "NY-20 remained a Capital Region/upstate district and saw only moderate adjustments under the 2024 map."
-    },
-    {
-      "year": 2022,
-      "description": "NY-20 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3621": [
-    {
-      "year": 2024,
-      "description": "NY-21 stayed a vast North Country district, with only limited population-balancing changes in the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "NY-21 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3622": [
-    {
-      "year": 2024,
-      "description": "NY-22 remained centered on Syracuse and central New York, but its lines were adjusted in the court's 2024 update to the upstate map."
-    },
-    {
-      "year": 2022,
-      "description": "NY-22 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3623": [
-    {
-      "year": 2024,
-      "description": "NY-23 stayed a southern tier/western New York district with moderate adjustments under the 2024 court-drawn revision."
-    },
-    {
-      "year": 2022,
-      "description": "NY-23 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3624": [
-    {
-      "year": 2024,
-      "description": "NY-24 remained an upstate western/central New York seat, though its exact boundaries shifted in the 2024 revision."
-    },
-    {
-      "year": 2022,
-      "description": "NY-24 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3625": [
-    {
-      "year": 2024,
-      "description": "NY-25 stayed centered on Rochester, with only modest changes under the 2024 court map."
-    },
-    {
-      "year": 2022,
-      "description": "NY-25 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3626": [
-    {
-      "year": 2024,
-      "description": "NY-26 remained the Buffalo/Niagara Falls Democratic seat and saw only limited changes in the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "NY-26 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3701": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2025"
-    },
-    {
-      "year": 2024,
-      "description": "NC-1, long a northeastern Black-opportunity seat, was redrawn in 2023 for the 2024 election to add more Republican territory, making it notably less Democratic than the 2022 version."
-    },
-    {
-      "year": 2022,
-      "description": "NC-1 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election."
-    },
-    {
-      "year": 2016,
-      "description": "NC-1 was redrawn in 2016 after the prior map was struck down, becoming less of a packed Black-majority district and somewhat less Democratic than the earlier version."
-    }
-  ],
-  "3702": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2026"
-    },
-    {
-      "year": 2024,
-      "description": "NC-2 stayed a Raleigh-based district, but its lines were adjusted as North Carolina's 2024 map re-sorted the Triangle and made neighboring districts more favorable to Republicans."
-    },
-    {
-      "year": 2022,
-      "description": "NC-2 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "NC-2 was substantially redrawn under North Carolina's court-ordered 2020 interim map, shifting away from its earlier Raleigh-to-Fayetteville-style configuration and becoming a more compact, more Democratic Triangle-area seat."
-    },
-    {
-      "year": 2016,
-      "description": "NC-2 was substantially redrawn in 2016, shedding parts of its prior eastern reach and taking on a more compact Triangle-area configuration."
-    }
-  ],
-  "3703": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2027"
-    },
-    {
-      "year": 2024,
-      "description": "NC-3 remained an eastern North Carolina seat with mostly secondary changes under the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "NC-3 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election."
-    },
-    {
-      "year": 2016,
-      "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core."
-    }
-  ],
-  "3704": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2028"
-    },
-    {
-      "year": 2024,
-      "description": "NC-4 stayed centered on the Durham/Orange County core of the Triangle and remained strongly Democratic, though its boundaries changed as the region was re-divided."
-    },
-    {
-      "year": 2022,
-      "description": "NC-4 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election."
-    },
-    {
-      "year": 2016,
-      "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core."
-    }
-  ],
-  "3705": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2029"
-    },
-    {
-      "year": 2024,
-      "description": "NC-5 remained a northwestern North Carolina seat, with only modest adjustments under the 2024 map."
-    },
-    {
-      "year": 2022,
-      "description": "NC-5 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election."
-    },
-    {
-      "year": 2016,
-      "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core."
-    }
-  ],
-  "3706": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2030"
-    },
-    {
-      "year": 2024,
-      "description": "NC-6 was substantially redrawn. The old Greensboro/Winston-Salem swing seat was dismantled and replaced with a much more Republican district, one of the map's clearest partisan shifts."
-    },
-    {
-      "year": 2022,
-      "description": "NC-6 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "NC-6 changed sharply in the 2020 court-ordered redraw. The old Greensboro-centered Republican seat was reconfigured into a much more Democratic Piedmont Triad district."
-    },
-    {
-      "year": 2016,
-      "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core."
-    }
-  ],
-  "3707": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2031"
-    },
-    {
-      "year": 2024,
-      "description": "NC-7 remained a southeastern North Carolina seat, though it picked up and shed territory in the ripple effects of the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "NC-7 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election."
-    },
-    {
-      "year": 2016,
-      "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core."
-    }
-  ],
-  "3708": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2032"
-    },
-    {
-      "year": 2024,
-      "description": "NC-8 stayed a south-central district, but its exact boundaries shifted as Republicans reworked the Piedmont and Charlotte exurbs."
-    },
-    {
-      "year": 2022,
-      "description": "NC-8 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election."
-    },
-    {
-      "year": 2016,
-      "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core."
-    }
-  ],
-  "3709": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2033"
-    },
-    {
-      "year": 2024,
-      "description": "NC-9 remained a south-central/Charlotte-exurban Republican seat, with only secondary changes on the 2024 map."
-    },
-    {
-      "year": 2022,
-      "description": "NC-9 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election."
-    },
-    {
-      "year": 2016,
-      "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core."
-    }
-  ],
-  "3710": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2034"
-    },
-    {
-      "year": 2024,
-      "description": "NC-10 remained a western Piedmont foothills seat with only modest adjustments under the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "NC-10 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election."
-    },
-    {
-      "year": 2016,
-      "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core."
-    }
-  ],
-  "3711": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2035"
-    },
-    {
-      "year": 2024,
-      "description": "NC-11 stayed centered on western North Carolina and Appalachia, with little substantive change in 2024."
-    },
-    {
-      "year": 2022,
-      "description": "NC-11 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election."
-    },
-    {
-      "year": 2016,
-      "description": "North Carolina's 2016 congressional map was a court-ordered redraw after the previous districts were struck down as racial gerrymanders. This district was materially reworked, though many districts retained part of their earlier core."
-    }
-  ],
-  "3712": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2036"
-    },
-    {
-      "year": 2024,
-      "description": "NC-12 remained a Charlotte-based Democratic district, though the legislature repacked Democratic voters and changed its exact shape in the 2024 redraw."
-    },
-    {
-      "year": 2022,
-      "description": "NC-12 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election."
-    },
-    {
-      "year": 2016,
-      "description": "NC-12, previously the state's famous I-85 corridor district, was completely reworked in the 2016 court-ordered redraw into a more compact Charlotte-based seat."
-    }
-  ],
-  "3713": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2037"
-    },
-    {
-      "year": 2024,
-      "description": "NC-13 was heavily reworked for 2024. The district shifted away from its recent swing-seat configuration and became substantially more Republican under the new map."
-    },
-    {
-      "year": 2022,
-      "description": "NC-13 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024."
-    },
-    {
-      "year": 2020,
-      "description": "NC-13 was one of the districts most visibly changed in North Carolina's court-ordered 2020 redraw, with a new configuration that made it less of the oddly shaped 2016-era district and more of a competitive suburban/exurban seat."
-    },
-    {
-      "year": 2016,
-      "description": "NC-13 was significantly reconfigured in North Carolina's 2016 redraw, shifting away from the old Raleigh-anchored layout and taking on a more suburban/exurban identity."
-    }
-  ],
-  "3714": [
-    {
-      "year": 2026,
-      "description": "Legislature passed new map into law on Oct. 22, 2038"
-    },
-    {
-      "year": 2024,
-      "description": "NC-14 remained anchored in the Charlotte area but was redrawn to become more favorable to Republicans than the 2022 version."
-    },
-    {
-      "year": 2022,
-      "description": "NC-14 was created for 2022 after North Carolina gained a seat. It was drawn in the Charlotte area as a competitive-to-Democratic-leaning district, though it was later redrawn again for 2024."
-    }
-  ],
-  "3901": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-1 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3902": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-2 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3903": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-3 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3904": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-4 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3905": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-5 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3906": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-6 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3907": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-7 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3908": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-8 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3909": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-9 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3910": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-10 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3911": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-11 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3912": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-12 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3913": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-13 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3914": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-14 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3915": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    },
-    {
-      "year": 2022,
-      "description": "OH-15 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "3916": [
-    {
-      "year": 2026,
-      "description": "Redistricting commission approved a new map on Oct. 31, 2025"
-    }
-  ],
-  "4001": [
-    {
-      "year": 2022,
-      "description": "OK-1 was redrawn for 2022. Oklahoma's 2022 map kept the five-district structure largely intact, with the biggest changes in and around Oklahoma City. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4002": [
-    {
-      "year": 2022,
-      "description": "OK-2 was redrawn for 2022. Oklahoma's 2022 map kept the five-district structure largely intact, with the biggest changes in and around Oklahoma City. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4003": [
-    {
-      "year": 2022,
-      "description": "OK-3 was redrawn for 2022. Oklahoma's 2022 map kept the five-district structure largely intact, with the biggest changes in and around Oklahoma City. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4004": [
-    {
-      "year": 2022,
-      "description": "OK-4 was redrawn for 2022. Oklahoma's 2022 map kept the five-district structure largely intact, with the biggest changes in and around Oklahoma City. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4005": [
-    {
-      "year": 2022,
-      "description": "OK-5 was redrawn for 2022. Oklahoma's 2022 map kept the five-district structure largely intact, with the biggest changes in and around Oklahoma City. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4101": [
-    {
-      "year": 2022,
-      "description": "OR-1 was redrawn for 2022 as Oregon added a sixth district, with lines adjusted to accommodate the new Willamette Valley seat while retaining part of this district's prior core."
-    }
-  ],
-  "4102": [
-    {
-      "year": 2022,
-      "description": "OR-2 was redrawn for 2022 as Oregon added a sixth district, with lines adjusted to accommodate the new Willamette Valley seat while retaining part of this district's prior core."
-    }
-  ],
-  "4103": [
-    {
-      "year": 2022,
-      "description": "OR-3 was redrawn for 2022 as Oregon added a sixth district, with lines adjusted to accommodate the new Willamette Valley seat while retaining part of this district's prior core."
-    }
-  ],
-  "4104": [
-    {
-      "year": 2022,
-      "description": "OR-4 was redrawn for 2022 as Oregon added a sixth district, with lines adjusted to accommodate the new Willamette Valley seat while retaining part of this district's prior core."
-    }
-  ],
-  "4105": [
-    {
-      "year": 2022,
-      "description": "OR-5 was redrawn for 2022 as Oregon added a sixth district, with lines adjusted to accommodate the new Willamette Valley seat while retaining part of this district's prior core."
-    }
-  ],
-  "4106": [
-    {
-      "year": 2022,
-      "description": "OR-6 was created for 2022 after Oregon gained a seat. It was drawn in the Willamette Valley and southern Portland suburbs, carving new territory out of several older districts and creating a competitive new seat."
-    }
-  ],
-  "4201": [
-    {
-      "year": 2022,
-      "description": "PA-1 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-1 was re-created as a Bucks County–based seat under Pennsylvania's 2018 court-drawn map, replacing the old Philadelphia-based version of the 1st and giving the district a very different geographic and political identity."
-    }
-  ],
-  "4202": [
-    {
-      "year": 2022,
-      "description": "PA-2 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-2 became a heavily Democratic Philadelphia-based district under Pennsylvania's 2018 court-drawn map, taking over territory that had previously been divided differently under the struck-down plan."
-    }
-  ],
-  "4203": [
-    {
-      "year": 2022,
-      "description": "PA-3 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration."
-    }
-  ],
-  "4204": [
-    {
-      "year": 2022,
-      "description": "PA-4 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration."
-    }
-  ],
-  "4205": [
-    {
-      "year": 2022,
-      "description": "PA-5 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-5 was transformed by the 2018 court map into a Delaware County/Philadelphia-suburban seat, bearing little resemblance to the old south-central Pennsylvania 5th district."
-    }
-  ],
-  "4206": [
-    {
-      "year": 2022,
-      "description": "PA-6 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-6 was redrawn into a Chester County–centered suburban Philadelphia seat under the 2018 court map, replacing the very different pre-2018 configuration."
-    }
-  ],
-  "4207": [
-    {
-      "year": 2022,
-      "description": "PA-7 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-7 became the new Lehigh Valley–centered district under Pennsylvania's 2018 court map, one of the clearest examples of the state's renumbering and geographic reset."
-    }
-  ],
-  "4208": [
-    {
-      "year": 2022,
-      "description": "PA-8 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-8 was remade as a northeastern Pennsylvania seat under the 2018 court map, very different from the old suburban-Philadelphia 8th district."
-    }
-  ],
-  "4209": [
-    {
-      "year": 2022,
-      "description": "PA-9 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration."
-    }
-  ],
-  "4210": [
-    {
-      "year": 2022,
-      "description": "PA-10 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-10 was recast as a Harrisburg/York-centered seat under the 2018 court-drawn map, replacing the very different pre-2018 northeastern Pennsylvania 10th district."
-    }
-  ],
-  "4211": [
-    {
-      "year": 2022,
-      "description": "PA-11 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-11 became a south-central Pennsylvania/Lancaster-York district under the 2018 court map, very different from the old southwestern Pennsylvania 11th."
-    }
-  ],
-  "4212": [
-    {
-      "year": 2022,
-      "description": "PA-12 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-12 was turned into a western Pennsylvania seat under the 2018 court map, replacing the old central Pennsylvania 12th district."
-    }
-  ],
-  "4213": [
-    {
-      "year": 2022,
-      "description": "PA-13 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration."
-    }
-  ],
-  "4214": [
-    {
-      "year": 2022,
-      "description": "PA-14 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-14 became a heavily Republican southwest Pennsylvania district under the 2018 court map, distinct from the old Pittsburgh-based 14th."
-    }
-  ],
-  "4215": [
-    {
-      "year": 2022,
-      "description": "PA-15 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration."
-    }
-  ],
-  "4216": [
-    {
-      "year": 2022,
-      "description": "PA-16 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "Pennsylvania's 2018 map was imposed by the state Supreme Court after it struck down the old congressional plan. This district was effectively rebuilt under the new court-drawn map, with boundaries and numbering reset compared with the pre-2018 configuration."
-    }
-  ],
-  "4217": [
-    {
-      "year": 2022,
-      "description": "PA-17 was substantially reworked for 2022. Pennsylvania's 2022 map followed the state's loss of a seat after 2020, but compared with the 2018 court map it generally kept the broad regional logic while shifting lines for population balance. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    },
-    {
-      "year": 2018,
-      "description": "PA-17 was recast as a western Pennsylvania suburban seat under the 2018 court-drawn map, replacing the old east-central 17th district."
-    }
-  ],
-  "4401": [
-    {
-      "year": 2022,
-      "description": "RI-1 was redrawn for 2022. Rhode Island's 2022 map made only modest changes while preserving the state's two-district arrangement. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4402": [
-    {
-      "year": 2022,
-      "description": "RI-2 was redrawn for 2022. Rhode Island's 2022 map made only modest changes while preserving the state's two-district arrangement. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4501": [
-    {
-      "year": 2022,
-      "description": "SC-1 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4502": [
-    {
-      "year": 2022,
-      "description": "SC-2 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4503": [
-    {
-      "year": 2022,
-      "description": "SC-3 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4504": [
-    {
-      "year": 2022,
-      "description": "SC-4 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4505": [
-    {
-      "year": 2022,
-      "description": "SC-5 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4506": [
-    {
-      "year": 2022,
-      "description": "SC-6 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4507": [
-    {
-      "year": 2022,
-      "description": "SC-7 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4701": [
-    {
-      "year": 2022,
-      "description": "TN-1 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "4702": [
-    {
-      "year": 2022,
-      "description": "TN-2 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "4703": [
-    {
-      "year": 2022,
-      "description": "TN-3 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "4704": [
-    {
-      "year": 2022,
-      "description": "TN-4 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "4705": [
-    {
-      "year": 2022,
-      "description": "TN-5 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "4706": [
-    {
-      "year": 2022,
-      "description": "TN-6 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "4707": [
-    {
-      "year": 2022,
-      "description": "TN-7 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "4708": [
-    {
-      "year": 2022,
-      "description": "TN-8 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "4709": [
-    {
-      "year": 2022,
-      "description": "TN-9 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "4801": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026"
-    },
-    {
-      "year": 2022,
-      "description": "TX-1 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4802": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2027"
-    },
-    {
-      "year": 2022,
-      "description": "TX-2 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4803": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2028"
-    },
-    {
-      "year": 2022,
-      "description": "TX-3 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4804": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2029"
-    },
-    {
-      "year": 2022,
-      "description": "TX-4 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4805": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2030"
-    },
-    {
-      "year": 2022,
-      "description": "TX-5 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4806": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2031"
-    },
-    {
-      "year": 2022,
-      "description": "TX-6 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4807": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2032"
-    },
-    {
-      "year": 2022,
-      "description": "TX-7 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4808": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2033"
-    },
-    {
-      "year": 2022,
-      "description": "TX-8 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4809": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2034"
-    },
-    {
-      "year": 2022,
-      "description": "TX-9 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4810": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2035"
-    },
-    {
-      "year": 2022,
-      "description": "TX-10 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4811": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2036"
-    },
-    {
-      "year": 2022,
-      "description": "TX-11 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4812": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2037"
-    },
-    {
-      "year": 2022,
-      "description": "TX-12 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4813": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2038"
-    },
-    {
-      "year": 2022,
-      "description": "TX-13 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4814": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2039"
-    },
-    {
-      "year": 2022,
-      "description": "TX-14 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4815": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2040"
-    },
-    {
-      "year": 2022,
-      "description": "TX-15 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4816": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2041"
-    },
-    {
-      "year": 2022,
-      "description": "TX-16 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4817": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2042"
-    },
-    {
-      "year": 2022,
-      "description": "TX-17 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4818": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2043"
-    },
-    {
-      "year": 2022,
-      "description": "TX-18 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4819": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2044"
-    },
-    {
-      "year": 2022,
-      "description": "TX-19 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4820": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2045"
-    },
-    {
-      "year": 2022,
-      "description": "TX-20 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4821": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2046"
-    },
-    {
-      "year": 2022,
-      "description": "TX-21 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4822": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2047"
-    },
-    {
-      "year": 2022,
-      "description": "TX-22 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4823": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2048"
-    },
-    {
-      "year": 2022,
-      "description": "TX-23 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4824": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2049"
-    },
-    {
-      "year": 2022,
-      "description": "TX-24 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4825": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2050"
-    },
-    {
-      "year": 2022,
-      "description": "TX-25 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4826": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2051"
-    },
-    {
-      "year": 2022,
-      "description": "TX-26 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4827": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2052"
-    },
-    {
-      "year": 2022,
-      "description": "TX-27 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4828": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2053"
-    },
-    {
-      "year": 2022,
-      "description": "TX-28 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4829": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2054"
-    },
-    {
-      "year": 2022,
-      "description": "TX-29 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4830": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2055"
-    },
-    {
-      "year": 2022,
-      "description": "TX-30 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4831": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2056"
-    },
-    {
-      "year": 2022,
-      "description": "TX-31 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4832": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2057"
-    },
-    {
-      "year": 2022,
-      "description": "TX-32 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4833": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2058"
-    },
-    {
-      "year": 2022,
-      "description": "TX-33 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4834": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2059"
-    },
-    {
-      "year": 2022,
-      "description": "TX-34 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4835": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2060"
-    },
-    {
-      "year": 2022,
-      "description": "TX-35 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4836": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2061"
-    },
-    {
-      "year": 2022,
-      "description": "TX-36 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance."
-    }
-  ],
-  "4837": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2062"
-    },
-    {
-      "year": 2022,
-      "description": "TX-37 was a new district for 2022, created after Texas gained seats. It was drawn in the Austin area and designed as a safely Democratic district."
-    }
-  ],
-  "4838": [
-    {
-      "year": 2026,
-      "description": "U.S. Supreme Court ruled the new Texas map could be used in 2063"
-    },
-    {
-      "year": 2022,
-      "description": "TX-38 was a new district for 2022, created after Texas gained seats. It was drawn in the Houston suburbs and made strongly Republican."
-    }
-  ],
-  "4901": [
-    {
-      "year": 2026,
-      "description": "Court approved new plaintiff-submitted map"
-    },
-    {
-      "year": 2022,
-      "description": "UT-1 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4902": [
-    {
-      "year": 2026,
-      "description": "Court approved new plaintiff-submitted map"
-    },
-    {
-      "year": 2022,
-      "description": "UT-2 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4903": [
-    {
-      "year": 2026,
-      "description": "Court approved new plaintiff-submitted map"
-    },
-    {
-      "year": 2022,
-      "description": "UT-3 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "4904": [
-    {
-      "year": 2026,
-      "description": "Court approved new plaintiff-submitted map"
-    },
-    {
-      "year": 2022,
-      "description": "UT-4 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5101": [
-    {
-      "year": 2022,
-      "description": "VA-1 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5102": [
-    {
-      "year": 2022,
-      "description": "VA-2 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5103": [
-    {
-      "year": 2022,
-      "description": "VA-3 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5104": [
-    {
-      "year": 2022,
-      "description": "VA-4 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5105": [
-    {
-      "year": 2022,
-      "description": "VA-5 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5106": [
-    {
-      "year": 2022,
-      "description": "VA-6 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5107": [
-    {
-      "year": 2022,
-      "description": "VA-7 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5108": [
-    {
-      "year": 2022,
-      "description": "VA-8 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5109": [
-    {
-      "year": 2022,
-      "description": "VA-9 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5110": [
-    {
-      "year": 2022,
-      "description": "VA-10 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5111": [
-    {
-      "year": 2022,
-      "description": "VA-11 was materially redrawn for 2022. Virginia's 2022 court-approved bipartisan-commission backup map changed several districts, especially in Northern Virginia and Hampton Roads, while keeping the same 11-seat structure. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "5301": [
-    {
-      "year": 2022,
-      "description": "WA-1 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5302": [
-    {
-      "year": 2022,
-      "description": "WA-2 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5303": [
-    {
-      "year": 2022,
-      "description": "WA-3 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5304": [
-    {
-      "year": 2022,
-      "description": "WA-4 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5305": [
-    {
-      "year": 2022,
-      "description": "WA-5 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5306": [
-    {
-      "year": 2022,
-      "description": "WA-6 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5307": [
-    {
-      "year": 2022,
-      "description": "WA-7 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5308": [
-    {
-      "year": 2022,
-      "description": "WA-8 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5309": [
-    {
-      "year": 2022,
-      "description": "WA-9 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5310": [
-    {
-      "year": 2022,
-      "description": "WA-10 was redrawn for 2022. Washington's 2022 bipartisan map made modest changes and preserved the state's 10-district framework. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5401": [
-    {
-      "year": 2022,
-      "description": "WV-1 was fundamentally reshaped for 2022 after West Virginia lost a seat. The state collapsed from three districts to two, so this district absorbed substantial territory from the former 3rd district and took on a much different footprint."
-    }
-  ],
-  "5402": [
-    {
-      "year": 2022,
-      "description": "WV-2 was fundamentally reshaped for 2022 after West Virginia lost a seat. The state collapsed from three districts to two, so this district absorbed substantial territory from the former 3rd district and took on a much different footprint."
-    }
-  ],
-  "5501": [
-    {
-      "year": 2022,
-      "description": "WI-1 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5502": [
-    {
-      "year": 2022,
-      "description": "WI-2 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5503": [
-    {
-      "year": 2022,
-      "description": "WI-3 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5504": [
-    {
-      "year": 2022,
-      "description": "WI-4 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5505": [
-    {
-      "year": 2022,
-      "description": "WI-5 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5506": [
-    {
-      "year": 2022,
-      "description": "WI-6 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5507": [
-    {
-      "year": 2022,
-      "description": "WI-7 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "5508": [
-    {
-      "year": 2022,
-      "description": "WI-8 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0101": [
-    {
-      "year": 2024,
-      "description": "Under Alabama's court-ordered 2024 map, AL-1 remained anchored on the Gulf Coast around Mobile, but it gave up some inland territory as the state unpacked Black voters and created a second Black-opportunity district."
-    },
-    {
-      "year": 2022,
-      "description": "AL-1 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0102": [
-    {
-      "year": 2024,
-      "description": "AL-2 was the centerpiece of Alabama's 2024 redraw. Instead of the old Wiregrass-centered seat, it was reconfigured into a Mobile-to-Montgomery district with a much larger Black population, turning it from a safe Republican seat into a far more Democratic-leaning/open battlefield."
-    },
-    {
-      "year": 2022,
-      "description": "AL-2 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0103": [
-    {
-      "year": 2024,
-      "description": "AL-3 stayed centered in east Alabama, but its boundaries shifted to absorb territory moved out of neighboring districts after the court-ordered creation of a second Black-opportunity seat."
-    },
-    {
-      "year": 2022,
-      "description": "AL-3 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0104": [
-    {
-      "year": 2024,
-      "description": "AL-4 remained a north Alabama seat, though its lines were adjusted in the ripple effects of the 2024 court-ordered redraw that reworked the rest of the map around AL-2 and AL-7."
-    },
-    {
-      "year": 2022,
-      "description": "AL-4 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0105": [
-    {
-      "year": 2024,
-      "description": "AL-5 kept its north Alabama/Huntsville orientation, but it was trimmed and adjusted as Alabama rebalanced population under the court-ordered 2024 map."
-    },
-    {
-      "year": 2022,
-      "description": "AL-5 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0106": [
-    {
-      "year": 2024,
-      "description": "AL-6 remained the Birmingham suburbs seat, though it shed and picked up pieces at the margins as Alabama's 2024 court-ordered redraw reworked the surrounding districts."
-    },
-    {
-      "year": 2022,
-      "description": "AL-6 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0107": [
-    {
-      "year": 2024,
-      "description": "AL-7 stayed the state's other Black-opportunity district, still based in Birmingham and the Black Belt, but it was made somewhat less packed after Alabama's 2024 redraw created a second district giving Black voters an opportunity to elect their preferred candidate."
-    },
-    {
-      "year": 2022,
-      "description": "AL-7 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0401": [
-    {
-      "year": 2022,
-      "description": "AZ-1 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "0402": [
-    {
-      "year": 2022,
-      "description": "AZ-2 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "0403": [
-    {
-      "year": 2022,
-      "description": "AZ-3 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "0404": [
-    {
-      "year": 2022,
-      "description": "AZ-4 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "0405": [
-    {
-      "year": 2022,
-      "description": "AZ-5 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "0406": [
-    {
-      "year": 2022,
-      "description": "AZ-6 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "0407": [
-    {
-      "year": 2022,
-      "description": "AZ-7 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "0408": [
-    {
-      "year": 2022,
-      "description": "AZ-8 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "0409": [
-    {
-      "year": 2022,
-      "description": "AZ-9 was materially redrawn for 2022. Arizona's independent commission adopted a full new nine-district map for 2022, rebalancing metro Phoenix and southern Arizona seats and renumbering several districts. It retained some of its previous core, but the new map changed the district's composition in noticeable ways."
-    }
-  ],
-  "0501": [
-    {
-      "year": 2022,
-      "description": "AR-1 was redrawn for 2022. Arkansas' 2022 map kept the state's basic four-district structure but adjusted boundaries to balance population. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0502": [
-    {
-      "year": 2022,
-      "description": "AR-2 was redrawn for 2022. Arkansas' 2022 map kept the state's basic four-district structure but adjusted boundaries to balance population. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0503": [
-    {
-      "year": 2022,
-      "description": "AR-3 was redrawn for 2022. Arkansas' 2022 map kept the state's basic four-district structure but adjusted boundaries to balance population. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0504": [
-    {
-      "year": 2022,
-      "description": "AR-4 was redrawn for 2022. Arkansas' 2022 map kept the state's basic four-district structure but adjusted boundaries to balance population. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0601": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-1 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0602": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-2 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0603": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-3 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0604": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-4 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0605": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-5 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0606": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-6 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0607": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-7 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0608": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-8 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0609": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-9 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0610": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-10 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0611": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-11 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0612": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-12 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0613": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-13 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0614": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-14 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0615": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-15 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0616": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-16 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0617": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-17 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0618": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-18 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0619": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-19 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0620": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-20 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0621": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-21 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0622": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-22 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0623": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-23 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0624": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-24 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0625": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-25 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0626": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-26 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0627": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-27 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0628": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-28 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0629": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-29 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0630": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-30 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0631": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-31 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0632": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-32 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0633": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-33 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0634": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-34 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0635": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-35 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0636": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-36 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0637": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-37 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0638": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-38 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0639": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-39 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0640": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-40 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0641": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-41 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0642": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-42 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0643": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-43 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0644": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-44 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0645": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-45 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0646": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-46 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0647": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-47 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0648": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-48 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0649": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-49 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0650": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-50 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0651": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-51 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0652": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    },
-    {
-      "year": 2022,
-      "description": "CA-52 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak."
-    }
-  ],
-  "0653": [
-    {
-      "year": 2026,
-      "description": "Voters approved the use of a new map on Nov. 4, 2025."
-    }
-  ],
-  "0801": [
-    {
-      "year": 2022,
-      "description": "CO-1 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core."
-    }
-  ],
-  "0802": [
-    {
-      "year": 2022,
-      "description": "CO-2 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core."
-    }
-  ],
-  "0803": [
-    {
-      "year": 2022,
-      "description": "CO-3 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core."
-    }
-  ],
-  "0804": [
-    {
-      "year": 2022,
-      "description": "CO-4 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core."
-    }
-  ],
-  "0805": [
-    {
-      "year": 2022,
-      "description": "CO-5 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core."
-    }
-  ],
-  "0806": [
-    {
-      "year": 2022,
-      "description": "CO-6 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core."
-    }
-  ],
-  "0807": [
-    {
-      "year": 2022,
-      "description": "CO-7 was redrawn for 2022 as Colorado added an eighth district, with boundaries adjusted to make room for the new Front Range seat while keeping much of this district's prior regional core."
-    }
-  ],
-  "0808": [
-    {
-      "year": 2022,
-      "description": "CO-8 was a brand-new district for 2022, created after Colorado gained a seat. It was drawn in the fast-growing north Denver suburbs and exurbs, making it one of the state's most competitive seats."
-    }
-  ],
-  "0901": [
-    {
-      "year": 2022,
-      "description": "CT-1 was redrawn for 2022. Connecticut's 2022 bipartisan map made relatively modest changes and kept the state's five-district structure broadly recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0902": [
-    {
-      "year": 2022,
-      "description": "CT-2 was redrawn for 2022. Connecticut's 2022 bipartisan map made relatively modest changes and kept the state's five-district structure broadly recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0903": [
-    {
-      "year": 2022,
-      "description": "CT-3 was redrawn for 2022. Connecticut's 2022 bipartisan map made relatively modest changes and kept the state's five-district structure broadly recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0904": [
-    {
-      "year": 2022,
-      "description": "CT-4 was redrawn for 2022. Connecticut's 2022 bipartisan map made relatively modest changes and kept the state's five-district structure broadly recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ],
-  "0905": [
-    {
-      "year": 2022,
-      "description": "CT-5 was redrawn for 2022. Connecticut's 2022 bipartisan map made relatively modest changes and kept the state's five-district structure broadly recognizable. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan."
-    }
-  ]
+export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {};
+
+export const houseDistrictPvi: Record<string, number> = {
+  "1001": -8,
+  "1201": 18,
+  "1202": 8,
+  "1203": 10,
+  "1204": 5,
+  "1205": 10,
+  "1206": 14,
+  "1207": 5,
+  "1208": 11,
+  "1209": -4,
+  "1210": -13,
+  "1211": 8,
+  "1212": 17,
+  "1213": 5,
+  "1214": -5,
+  "1215": 5,
+  "1216": 7,
+  "1217": 11,
+  "1218": 14,
+  "1219": 14,
+  "1220": -22,
+  "1221": 7,
+  "1222": -4,
+  "1223": -2,
+  "1224": -18,
+  "1225": -5,
+  "1226": 16,
+  "1227": 6,
+  "1228": 10,
+  "1301": 8,
+  "1302": -4,
+  "1303": 15,
+  "1304": -27,
+  "1305": -36,
+  "1306": -25,
+  "1307": 11,
+  "1308": 15,
+  "1309": 17,
+  "1310": 11,
+  "1311": 12,
+  "1312": 7,
+  "1313": -21,
+  "1314": 19,
+  "1501": -13,
+  "1502": -12,
+  "1601": 22,
+  "1602": 13,
+  "1701": -18,
+  "1702": -18,
+  "1703": -17,
+  "1704": -17,
+  "1705": -19,
+  "1706": -3,
+  "1707": -34,
+  "1708": -5,
+  "1709": -19,
+  "1710": -12,
+  "1711": -6,
+  "1712": 22,
+  "1713": -5,
+  "1714": -3,
+  "1715": 20,
+  "1716": 11,
+  "1717": -3,
+  "1801": -1,
+  "1802": 13,
+  "1803": 16,
+  "1804": 15,
+  "1805": 8,
+  "1806": 16,
+  "1807": -21,
+  "1808": 18,
+  "1809": 15,
+  "1901": 4,
+  "1902": 4,
+  "1903": 2,
+  "1904": 15,
+  "2001": 16,
+  "2002": 10,
+  "2003": -2,
+  "2004": 12,
+  "2101": 23,
+  "2102": 20,
+  "2103": -10,
+  "2104": 18,
+  "2105": 32,
+  "2106": 7,
+  "2201": 19,
+  "2202": -17,
+  "2203": 22,
+  "2204": 26,
+  "2205": 18,
+  "2206": -8,
+  "2301": -11,
+  "2302": 4,
+  "2401": 8,
+  "2402": -10,
+  "2403": -12,
+  "2404": -39,
+  "2405": -17,
+  "2406": -3,
+  "2407": -31,
+  "2408": -30,
+  "2501": -8,
+  "2502": -13,
+  "2503": -11,
+  "2504": -11,
+  "2505": -24,
+  "2506": -11,
+  "2507": -34,
+  "2508": -15,
+  "2509": -6,
+  "2601": 11,
+  "2602": 15,
+  "2603": -4,
+  "2604": 3,
+  "2605": 13,
+  "2606": -12,
+  "2607": 0,
+  "2608": 1,
+  "2609": 16,
+  "2610": 3,
+  "2611": -9,
+  "2612": -21,
+  "2613": -22,
+  "2701": 6,
+  "2702": -3,
+  "2703": -11,
+  "2704": -18,
+  "2705": -32,
+  "2706": 10,
+  "2707": 18,
+  "2708": 7,
+  "2801": 18,
+  "2802": -11,
+  "2803": 14,
+  "2804": 21,
+  "2901": -29,
+  "2902": 4,
+  "2903": 13,
+  "2904": 21,
+  "2905": -12,
+  "2906": 19,
+  "2907": 21,
+  "2908": 27,
+  "3001": 5,
+  "3002": 15,
+  "3101": 6,
+  "3102": -3,
+  "3103": 27,
+  "3201": -2,
+  "3202": 7,
+  "3203": -1,
+  "3204": -2,
+  "3301": -2,
+  "3302": -2,
+  "3401": -10,
+  "3402": 5,
+  "3403": -5,
+  "3404": 14,
+  "3405": -2,
+  "3406": -5,
+  "3407": 0,
+  "3408": -15,
+  "3409": -2,
+  "3410": -27,
+  "3411": -5,
+  "3412": -13,
+  "3501": -7,
+  "3502": 0,
+  "3503": -3,
+  "3601": 4,
+  "3602": 6,
+  "3603": 0,
+  "3604": -2,
+  "3605": -24,
+  "3606": -6,
+  "3607": -25,
+  "3608": -24,
+  "3609": -22,
+  "3610": -32,
+  "3611": 10,
+  "3612": -33,
+  "3613": -32,
+  "3614": -19,
+  "3615": -27,
+  "3616": -18,
+  "3617": -1,
+  "3618": -2,
+  "3619": -1,
+  "3620": -8,
+  "3621": 10,
+  "3622": -4,
+  "3623": 10,
+  "3624": 11,
+  "3625": -10,
+  "3626": -11,
+  "3701": 1,
+  "3702": -17,
+  "3703": 10,
+  "3704": -23,
+  "3705": 9,
+  "3706": 9,
+  "3707": 7,
+  "3708": 10,
+  "3709": 8,
+  "3710": 9,
+  "3711": 5,
+  "3712": -24,
+  "3713": 8,
+  "3714": 8,
+  "3801": 18,
+  "3901": -3,
+  "3902": 24,
+  "3903": -21,
+  "3904": 18,
+  "3905": 14,
+  "3906": 16,
+  "3907": 5,
+  "3908": 12,
+  "3909": 3,
+  "3910": 3,
+  "3911": -28,
+  "3912": 16,
+  "3913": 0,
+  "3914": 9,
+  "3915": 4,
+  "4001": 11,
+  "4002": 28,
+  "4003": 23,
+  "4004": 17,
+  "4005": 9,
+  "4101": -20,
+  "4102": 14,
+  "4103": -24,
+  "4104": -6,
+  "4105": -4,
+  "4106": -6,
+  "4201": -1,
+  "4202": -19,
+  "4203": -40,
+  "4204": -8,
+  "4205": -15,
+  "4206": -6,
+  "4207": 1,
+  "4208": 4,
+  "4209": 19,
+  "4210": 3,
+  "4211": 11,
+  "4212": -10,
+  "4213": 23,
+  "4214": 17,
+  "4215": 19,
+  "4216": 11,
+  "4217": -3,
+  "4401": -12,
+  "4402": -4,
+  "4501": 6,
+  "4502": 7,
+  "4503": 21,
+  "4504": 11,
+  "4505": 11,
+  "4506": -13,
+  "4507": 12,
+  "4601": 15,
+  "4701": 29,
+  "4702": 17,
+  "4703": 18,
+  "4704": 21,
+  "4705": 8,
+  "4706": 17,
+  "4707": 10,
+  "4708": 21,
+  "4709": -23,
+  "4801": 25,
+  "4802": 12,
+  "4803": 10,
+  "4804": 16,
+  "4805": 13,
+  "4806": 14,
+  "4807": -12,
+  "4808": 16,
+  "4809": -24,
+  "4810": 12,
+  "4811": 22,
+  "4812": 11,
+  "4813": 24,
+  "4814": 17,
+  "4815": 7,
+  "4816": -11,
+  "4817": 14,
+  "4818": -21,
+  "4819": 25,
+  "4820": -12,
+  "4821": 11,
+  "4822": 9,
+  "4823": 7,
+  "4824": 7,
+  "4825": 18,
+  "4826": 11,
+  "4827": 14,
+  "4828": 2,
+  "4829": -12,
+  "4830": -25,
+  "4831": 11,
+  "4832": -13,
+  "4833": -19,
+  "4834": 0,
+  "4835": -19,
+  "4836": 18,
+  "4837": -26,
+  "4838": 10,
+  "4901": 10,
+  "4902": 10,
+  "4903": 10,
+  "4904": 14,
+  "5001": -17,
+  "5101": 3,
+  "5102": 0,
+  "5103": -18,
+  "5104": -17,
+  "5105": 6,
+  "5106": 12,
+  "5107": -2,
+  "5108": -26,
+  "5109": 22,
+  "5110": -6,
+  "5111": -18,
+  "5301": -15,
+  "5302": -12,
+  "5303": 2,
+  "5304": 10,
+  "5305": 5,
+  "5306": -10,
+  "5307": -39,
+  "5308": -3,
+  "5309": -22,
+  "5310": -9,
+  "5401": 22,
+  "5402": 20,
+  "5501": 2,
+  "5502": -21,
+  "5503": 3,
+  "5504": -26,
+  "5505": 11,
+  "5506": 8,
+  "5507": 11,
+  "5508": 8,
+  "5601": 23,
+  "0101": 27,
+  "0102": -5,
+  "0103": 23,
+  "0104": 33,
+  "0105": 15,
+  "0106": 20,
+  "0107": -13,
+  "0201": 6,
+  "0401": 1,
+  "0402": 7,
+  "0403": -22,
+  "0404": -4,
+  "0405": 10,
+  "0406": 0,
+  "0407": -13,
+  "0408": 8,
+  "0409": 15,
+  "0501": 23,
+  "0502": 8,
+  "0503": 13,
+  "0504": 20,
+  "0601": 12,
+  "0602": -24,
+  "0603": 2,
+  "0604": -17,
+  "0605": 8,
+  "0606": -8,
+  "0607": -16,
+  "0608": -24,
+  "0609": -1,
+  "0610": -18,
+  "0611": -36,
+  "0612": -39,
+  "0613": 1,
+  "0614": -20,
+  "0615": -26,
+  "0616": -26,
+  "0617": -21,
+  "0618": -17,
+  "0619": -18,
+  "0620": 15,
+  "0621": -4,
+  "0622": 1,
+  "0623": 8,
+  "0624": -13,
+  "0625": -3,
+  "0626": -8,
+  "0627": -3,
+  "0628": -15,
+  "0629": -20,
+  "0630": -22,
+  "0631": -10,
+  "0632": -17,
+  "0633": -7,
+  "0634": -28,
+  "0635": -8,
+  "0636": -21,
+  "0637": -33,
+  "0638": -10,
+  "0639": -7,
+  "0640": 1,
+  "0641": 2,
+  "0642": -18,
+  "0643": -27,
+  "0644": -19,
+  "0645": -1,
+  "0646": -11,
+  "0647": -3,
+  "0648": 7,
+  "0649": -4,
+  "0650": -16,
+  "0651": -13,
+  "0652": -13,
+  "0801": -29,
+  "0802": -20,
+  "0803": 5,
+  "0804": 9,
+  "0805": 5,
+  "0806": -11,
+  "0807": -8,
+  "0808": 0,
+  "0901": -12,
+  "0902": -4,
+  "0903": -8,
+  "0904": -13,
+  "0905": -3
+};
+
+export const statePvi: Record<string, number> = {
+  "AL": 15,
+  "AK": 6,
+  "AZ": 2,
+  "AR": 15,
+  "CA": -12,
+  "CO": -6,
+  "CT": -8,
+  "DE": -8,
+  "FL": 5,
+  "GA": 1,
+  "HI": -13,
+  "ID": 18,
+  "IL": -6,
+  "IN": 9,
+  "IA": 6,
+  "KS": 8,
+  "KY": 15,
+  "LA": 11,
+  "ME": -4,
+  "MD": -15,
+  "MA": -14,
+  "MI": 0,
+  "MN": -3,
+  "MS": 11,
+  "MO": 9,
+  "MT": 10,
+  "NE": 10,
+  "NV": 1,
+  "NH": -2,
+  "NJ": -4,
+  "NM": -4,
+  "NY": -8,
+  "NC": 1,
+  "ND": 18,
+  "OH": 5,
+  "OK": 17,
+  "OR": -8,
+  "PA": 1,
+  "RI": -8,
+  "SC": 8,
+  "SD": 15,
+  "TN": 14,
+  "TX": 6,
+  "UT": 11,
+  "VT": -17,
+  "VA": -3,
+  "WA": -10,
+  "WV": 21,
+  "WI": 0,
+  "WY": 23
 };
 
 export type PresResult = {
@@ -67095,8 +63929,8 @@ export const houseDelegationHistory: Record<string, HouseDelegationEntry[]> = {
     },
     {
       "year": 2020,
-      "demSeats": 5,
-      "repSeats": 3,
+      "demSeats": 4,
+      "repSeats": 4,
       "demPct": 48.67,
       "repPct": 46.18,
       "margin": -2.49,
@@ -67107,8 +63941,8 @@ export const houseDelegationHistory: Record<string, HouseDelegationEntry[]> = {
     },
     {
       "year": 2018,
-      "demSeats": 2,
-      "repSeats": 6,
+      "demSeats": 5,
+      "repSeats": 3,
       "demPct": 55.13,
       "repPct": 43.68,
       "margin": -11.45,

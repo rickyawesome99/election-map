@@ -376,6 +376,7 @@ const housePast     = parseCSV("house_past_results.csv");
 const districtInfoRows  = parseCSVOptional("house_redistrict.csv");
 const presHistoryRows   = parseCSVOptional("president_past_results.csv");
 const houseDelHistoryRows = parseCSVOptional("house_del_history.csv");
+const pviRows           = parseCSVOptional("pvi.csv");
 
 // ── Senate ────────────────────────────────────────────────────────────────────
 
@@ -509,6 +510,69 @@ for (const key of Object.keys(houseStatewideResults)) {
   houseStatewideResults[key].sort((a, b) => b.year - a.year);
 }
 
+// ── House District PVI ────────────────────────────────────────────────────────
+
+const PVI_YEAR_COLS = [
+  { col: "2026_pvi", year: 2026 },
+  { col: "2024_pvi", year: 2024 },
+  { col: "2022_pvi", year: 2022 },
+  { col: "2020_pvi", year: 2020 },
+  { col: "2018_pvi", year: 2018 },
+  { col: "2016_pvi", year: 2016 },
+];
+
+// Maps redistrict year → [newPviYear, oldPviYear] (oldPviYear null for 2016 baseline)
+const REDISTRICT_PVI_YEARS = {
+  2026: [2026, 2024],
+  2024: [2024, 2022],
+  2022: [2022, 2020],
+  2020: [2020, 2018],
+  2018: [2018, 2016],
+  2016: [2016, null],
+};
+
+const pviByDistrict = {};
+const houseDistrictPvi = {};
+const statePvi = {};
+
+// Name→abbr lookup built from STATE_INFO for statewide PVI matching
+const stateNameToAbbr = {};
+for (const [, abbr, stateName] of STATE_INFO) {
+  stateNameToAbbr[stateName.toLowerCase()] = abbr;
+}
+
+for (const row of pviRows) {
+  if (!row.id) continue;
+  const isStatewide = row.id.trim().toUpperCase() === "STATEWIDE";
+
+  if (isStatewide) {
+    const v = row["2026_pvi"];
+    const n = parseInt(v);
+    if (!has(v) || isNaN(n)) continue;
+    const rawName = row.state.trim().toLowerCase();
+    let abbr = stateNameToAbbr[rawName];
+    if (!abbr) {
+      // Handle cases like "Nebraska AL" → match "Nebraska"
+      for (const [name, a] of Object.entries(stateNameToAbbr)) {
+        if (rawName.startsWith(name)) { abbr = a; break; }
+      }
+    }
+    if (abbr) statePvi[abbr] = n;
+    continue;
+  }
+
+  const distId = String(parseInt(row.id)).padStart(4, "0");
+  const yearMap = {};
+  for (const { col, year } of PVI_YEAR_COLS) {
+    const v = row[col];
+    const n = parseInt(v);
+    if (has(v) && !isNaN(n)) yearMap[year] = n;
+  }
+  if (Object.keys(yearMap).length === 0) continue;
+  pviByDistrict[distId] = yearMap;
+  if (yearMap[2026] != null) houseDistrictPvi[distId] = yearMap[2026];
+}
+
 // ── House District Boundary Info ──────────────────────────────────────────────
 
 // Year columns: key in CSV → actual year
@@ -530,7 +594,14 @@ for (const row of districtInfoRows) {
   for (const { col, descCol, year } of BOUNDARY_YEAR_COLS) {
     const val = (row[col] || "").trim().toUpperCase();
     if (val === "YES") {
-      history.push({ year, description: (row[descCol] || "").trim() });
+      const entry = { year, description: (row[descCol] || "").trim() };
+      const pviYears = REDISTRICT_PVI_YEARS[year];
+      if (pviYears && pviByDistrict[key]) {
+        const [newYear, oldYear] = pviYears;
+        if (pviByDistrict[key][newYear] != null) entry.pviNew = pviByDistrict[key][newYear];
+        if (oldYear != null && pviByDistrict[key][oldYear] != null) entry.pviOld = pviByDistrict[key][oldYear];
+      }
+      history.push(entry);
     }
     // "NO" and "INACTIVE" are skipped
   }
@@ -703,9 +774,15 @@ export const houseData: RaceForecast[] = ${j(houseData)};
 export type BoundaryHistoryEntry = {
   year: number;
   description: string;
+  pviOld?: number;
+  pviNew?: number;
 };
 
 export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = ${j(houseDistrictInfo)};
+
+export const houseDistrictPvi: Record<string, number> = ${j(houseDistrictPvi)};
+
+export const statePvi: Record<string, number> = ${j(statePvi)};
 
 export type PresResult = {
   stateAbbr: string;
@@ -766,4 +843,6 @@ console.log(`✓ House districts:   ${houseData.length}`);
 console.log(`✓ Pres 2024 states:  ${Object.keys(pres2024).length}`);
 console.log(`✓ House del history: ${Object.keys(houseDelegationHistory).length} states`);
 console.log(`✓ House statewide:   ${Object.keys(houseStatewideResults).length} districts`);
+console.log(`✓ District PVI:      ${Object.keys(houseDistrictPvi).length} districts`);
+console.log(`✓ State PVI:         ${Object.keys(statePvi).length} states`);
 console.log(`\n✅  data/forecastData.ts updated successfully.`);

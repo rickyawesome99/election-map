@@ -275,7 +275,8 @@ export default async function StateDetailPage({ params, searchParams }: { params
   const totalRaces2026 = houseRaces.length + (anySenateRace ? 1 : 0) + (governorRace ? 1 : 0);
 
   // Helper: current party from a race — explicit incumbent flag first, then margin sign as fallback
-  function raceParty(race: RaceForecast): "D" | "R" {
+  function raceParty(race: RaceForecast): "D" | "R" | "I" {
+    if (race.seatParty) return race.seatParty;
     if (race.candidates?.dem.incumbent) return "D";
     if (race.candidates?.rep.incumbent) return "R";
     return race.margin >= 0 ? "D" : "R";

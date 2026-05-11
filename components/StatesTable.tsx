@@ -15,6 +15,7 @@ export type StateRow = {
   houseRep: number;
   houseTotal: number;
   pres2024: number | null;  // positive = D margin, negative = R margin
+  pvi2026: number | null;   // positive = R lean, negative = D lean
 };
 
 type SortKey = "name" | "gov" | "senate" | "house" | "pres2024" | "pvi";
@@ -57,7 +58,9 @@ function sortRows(rows: StateRow[], key: SortKey, dir: SortDir): StateRow[] {
         if (cmp === 0) cmp = a.name.localeCompare(b.name);
         break;
       case "pvi":
-        cmp = a.name.localeCompare(b.name);
+        // asc = most D-friendly first (most negative PVI first)
+        cmp = (b.pvi2026 ?? 999) - (a.pvi2026 ?? 999);
+        if (cmp === 0) cmp = a.name.localeCompare(b.name);
         break;
     }
     return dir === "asc" ? cmp : -cmp;
@@ -152,9 +155,15 @@ export default function StatesTable({ rows }: { rows: StateRow[] }) {
                     </Link>
                   </td>
 
-                  {/* PVI — placeholder */}
+                  {/* PVI */}
                   <td className="px-3 sm:px-4 py-3 text-center font-bold tabular-nums">
-                    <span style={{ color: "var(--app-text-very-muted)" }}>—</span>
+                    {row.pvi2026 != null ? (
+                      <span style={{ color: row.pvi2026 === 0 ? "var(--app-text-muted)" : row.pvi2026 > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                        {row.pvi2026 === 0 ? "EVEN" : row.pvi2026 > 0 ? `R+${row.pvi2026}` : `D+${Math.abs(row.pvi2026)}`}
+                      </span>
+                    ) : (
+                      <span style={{ color: "var(--app-text-very-muted)" }}>—</span>
+                    )}
                   </td>
 
                   {/* Governor */}
