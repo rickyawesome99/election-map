@@ -76,8 +76,8 @@ export default async function HousePage({ params, searchParams }: { params: Prom
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{electionYear} U.S. House Race · {districtLabel}</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-stretch">
-          <div className="flex flex-col gap-3 lg:h-full">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)]">
+          <div className="flex flex-col gap-3">
             <div
               className="min-h-[220px] overflow-hidden rounded-xl"
               style={{ border: "1px solid var(--app-border)" }}
@@ -94,13 +94,9 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                 { label: "PVI", value: pviDisplay },
               ]}
             />
-
-            <div className="min-h-0 flex-1 [&>section]:h-full">
-              <HouseOnlyDistrictBoundariesSection entries={houseDistrictInfo[race.id] ?? []} density="compact" scrollable />
-            </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-3 lg:grid-cols-8 lg:h-full">
+          <div className="grid grid-cols-1 gap-3 lg:grid-cols-8">
             <div className="lg:col-span-5 [&>section]:h-full">
               <CandidatesSection
                 density="compact"
@@ -129,16 +125,23 @@ export default async function HousePage({ params, searchParams }: { params: Prom
             <div className="lg:col-span-3 [&>section]:h-full">
               <MarginAndWinProbabilityCard density="compact" margin={race.margin} demPct={demPct} repPct={repPct} rcpDem={race.rcpDem} rcpRep={race.rcpRep} polyDem={race.polyDem} polyRep={race.polyRep} kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep} />
             </div>
+          </div>
 
-            <PastElectionResultsSection
-              results={race.pastResults}
-              fallbackYears={[2024, 2022, 2020]}
-              showElectionType={false}
-              layoutClassName="lg:col-span-4"
-              density="compact"
-              scrollable
-            />
-            <div className="lg:col-span-4 [&>section]:h-full">
+          <div className="[&>section]:h-full lg:h-[700px]">
+            <HouseOnlyDistrictBoundariesSection entries={houseDistrictInfo[race.id] ?? []} density="compact" scrollable />
+          </div>
+
+          <div className="grid grid-cols-1 gap-3 lg:grid-cols-8 lg:h-[700px]">
+            <div className="lg:col-span-4 [&>section]:h-full" style={{ height: "700px" }}>
+              <PastElectionResultsSection
+                results={race.pastResults}
+                fallbackYears={[2024, 2022, 2020]}
+                showElectionType={false}
+                density="compact"
+                scrollable
+              />
+            </div>
+            <div className="lg:col-span-4 [&>section]:h-full" style={{ height: "700px" }}>
               <HouseOnlyRecentStatewideResultsSection results={houseStatewideResults[race.id]} density="compact" />
             </div>
           </div>

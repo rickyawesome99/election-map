@@ -475,6 +475,7 @@ export function PastElectionResultsSection({
   layoutClassName = "md:col-span-2",
   density = "default",
   scrollable = false,
+  maxHeight,
 }: {
   results?: DetailPastResult[];
   fallbackYears: number[];
@@ -483,6 +484,7 @@ export function PastElectionResultsSection({
   layoutClassName?: string;
   density?: DetailDensity;
   scrollable?: boolean;
+  maxHeight?: string;
 }) {
   const isCompact = density === "compact";
   const rows: DetailPastResult[] =
@@ -492,13 +494,13 @@ export function PastElectionResultsSection({
 
   return (
     <section
-      className={`rounded-xl p-3 mb-0 ${scrollable ? "flex min-h-0 flex-col" : ""} ${layoutClassName}`}
-      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+      className={`rounded-xl p-3 mb-0 ${(scrollable || maxHeight) ? "flex flex-col" : ""} ${layoutClassName}`}
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", ...(maxHeight ? { maxHeight } : {}) }}
     >
       <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
         Past Election Results
       </h2>
-      <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"} ${scrollable ? "min-h-0 flex-1 overflow-y-auto pr-1" : ""}`}>
+      <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"} ${(scrollable || maxHeight) ? "min-h-0 flex-1 overflow-y-auto pr-1" : ""}`}>
         {rows.map((res) => {
           const isPlaceholder = !!res.placeholder;
           const winner = res.demPct > res.repPct ? "D" : "R";
@@ -649,13 +651,13 @@ export function HouseOnlyRecentStatewideResultsSection({
 
   return (
     <section
-      className="rounded-xl p-3 mb-0"
+      className="rounded-xl p-3 mb-0 flex flex-col"
       style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
     >
       <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
         Recent Statewide Results
       </h2>
-      <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"}`}>
+      <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"} min-h-0 flex-1 overflow-y-auto`}>
         {results.map((res) => {
           const isPlaceholder = !!res.placeholder;
           const winner = res.demPct > res.repPct ? "D" : "R";
@@ -776,23 +778,25 @@ export function HouseOnlyDistrictBoundariesSection({
   entries,
   density = "default",
   scrollable = false,
+  maxHeight,
 }: {
   entries: HouseBoundaryHistoryEntry[];
   density?: DetailDensity;
   scrollable?: boolean;
+  maxHeight?: string;
 }) {
   const isCompact = density === "compact";
 
   return (
     <section
-      className={`rounded-xl p-3 mb-0 ${scrollable ? "flex flex-col" : ""}`}
-      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+      className={`rounded-xl p-3 mb-0 ${(scrollable || maxHeight) ? "flex flex-col overflow-hidden" : ""}`}
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", ...(maxHeight ? { maxHeight } : {}) }}
     >
       <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
         District Boundaries
       </h2>
       <div
-        className={`mb-2 ${scrollable ? "min-h-0 flex-1 overflow-y-auto pr-1" : ""}`}
+        className={`mb-2 ${(scrollable || maxHeight) ? "min-h-0 flex-1 overflow-y-auto pr-1" : ""}`}
       >
         <div className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
           Change History
