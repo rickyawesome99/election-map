@@ -789,7 +789,7 @@ export function HouseOnlyDistrictBoundariesSection({
 
   return (
     <section
-      className={`rounded-xl p-3 mb-0 ${(scrollable || maxHeight) ? "flex flex-col overflow-hidden" : ""}`}
+      className={`rounded-xl p-3 mb-0 ${(scrollable || maxHeight) ? "flex min-h-0 flex-col overflow-hidden" : ""}`}
       style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", ...(maxHeight ? { maxHeight } : {}) }}
     >
       <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>

@@ -506,13 +506,13 @@ for (const row of houseStatewideRows) {
   if (!isNaN(rv) && rv > 0) entry.repVotes = rv;
   (houseStatewideResults[key] = houseStatewideResults[key] || []).push(entry);
 }
-const STATEWIDE_RACE_ORDER = { "President": 0, "Senate": 1, "Senate Special": 1, "Governor": 2 };
+const STATEWIDE_RACE_ORDER = { "President": 0, "Governor": 1, "Senate": 2, "Senate Special": 2 };
 for (const key of Object.keys(houseStatewideResults)) {
   houseStatewideResults[key].sort((a, b) => {
+    if (b.year !== a.year) return b.year - a.year;
     const ao = STATEWIDE_RACE_ORDER[a.race] ?? 3;
     const bo = STATEWIDE_RACE_ORDER[b.race] ?? 3;
-    if (ao !== bo) return ao - bo;
-    return b.year - a.year;
+    return ao - bo;
   });
 }
 
