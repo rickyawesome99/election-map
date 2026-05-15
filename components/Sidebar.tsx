@@ -203,8 +203,8 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
         className="md:hidden fixed bottom-14 left-0 right-0 z-30 flex items-center h-14 px-3 gap-0"
         style={{ background: t.panel, borderTop: `1px solid ${t.border}`, borderBottom: `1px solid ${t.border}` }}
       >
-        {/* Name + rating stacked */}
-        <div className="flex flex-col justify-center min-w-0 flex-1 pr-2">
+        {/* Name + rating stacked — 1/5 */}
+        <div className="flex flex-col justify-center min-w-0 pr-2" style={{ width: "25%" }}>
           <span className="text-xs font-bold leading-tight truncate" style={{ color: t.textPrimary }}>
             {selected.name}
           </span>
@@ -228,8 +228,8 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
         {/* Divider */}
         <div className="w-px self-stretch shrink-0 mx-2" style={{ background: t.border }} />
 
-        {/* Candidates OR past results */}
-        <div className="flex flex-col justify-center gap-0.5 shrink-0" style={{ width: 110 }}>
+        {/* Candidates OR past results — 3/5 */}
+        <div className="flex flex-col justify-center gap-0.5 min-w-0" style={{ width: "50%" }}>
           {selected.candidates ? (
             (
               [
@@ -240,7 +240,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
               const color = isD ? t.demText : t.repText;
               return (
                 <div key={c.name} className="flex items-center justify-between gap-1">
-                  <span className="text-[10px] font-medium truncate" style={{ color: t.textPrimary }}>{c.name}</span>
+                  <span className="text-[10px] font-medium truncate" style={{ color: t.textPrimary }}>{c.name}{c.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}</span>
                   <span className="text-[10px] font-bold tabular-nums shrink-0" style={{ color }}>{pct.toFixed(1)}%</span>
                 </div>
               );
@@ -268,24 +268,8 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
         {/* Divider */}
         <div className="w-px self-stretch shrink-0 mx-2" style={{ background: t.border }} />
 
-        {/* Win prob */}
-        <div className="flex flex-col justify-center shrink-0 pr-2" style={{ width: 64 }}>
-          <div className="flex justify-between text-[9px] font-bold mb-1">
-            <span style={{ color: t.demText }}>D {demWinPct}%</span>
-            <span style={{ color: t.repText }}>R {repWinPct}%</span>
-          </div>
-          <div className="h-1.5 rounded-full overflow-hidden flex">
-            <div style={{ width: `${demWinPct}%`, background: "#1b408c" }} />
-            <div style={{ width: `${repWinPct}%`, background: "#be1c29" }} />
-          </div>
-          <div className="text-[8px] mt-0.5 text-center" style={{ color: t.textMuted }}>win prob</div>
-        </div>
-
-        {/* Divider */}
-        <div className="w-px self-stretch shrink-0 mx-2" style={{ background: t.border }} />
-
-        {/* Margin */}
-        <div className="shrink-0 flex flex-col justify-center text-center">
+        {/* Margin — 1/5 */}
+        <div className="flex flex-col justify-center text-center" style={{ width: "25%" }}>
           <div className="text-[8px] font-semibold uppercase tracking-wider mb-0.5" style={{ color: t.textMuted }}>
             Margin
           </div>

@@ -296,11 +296,11 @@ export default function ForecastMap() {
                 {hovered.candidates ? (
                   <div className="mb-1.5">
                     <div className="flex justify-between items-baseline">
-                      <span className="truncate mr-1" style={{ color: t.demText, fontSize: 11 }}>{hovered.candidates.dem.name}</span>
+                      <span className="truncate mr-1" style={{ color: t.demText, fontSize: 11 }}>{hovered.candidates.dem.name}{hovered.candidates.dem.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}</span>
                       <span className="font-semibold shrink-0" style={{ color: t.demText, fontSize: 11 }}>{demPct.toFixed(1)}%</span>
                     </div>
                     <div className="flex justify-between items-baseline">
-                      <span className="truncate mr-1" style={{ color: t.repText, fontSize: 11 }}>{hovered.candidates.rep.name}</span>
+                      <span className="truncate mr-1" style={{ color: t.repText, fontSize: 11 }}>{hovered.candidates.rep.name}{hovered.candidates.rep.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}</span>
                       <span className="font-semibold shrink-0" style={{ color: t.repText, fontSize: 11 }}>{repPct.toFixed(1)}%</span>
                     </div>
                   </div>
