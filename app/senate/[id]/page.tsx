@@ -93,17 +93,19 @@ function NoElectionPage({
         </div>
 
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
-          <div className="[&>section]:mb-0">
+          <div className="flex flex-col gap-3">
             <CurrentIncumbentCard
               incumbentName={incumbent}
               party={party}
-              items={[
-                { label: "State", value: state },
-                { label: "Party", value: partyLabel },
-                { label: "Next Election", value: String(nextElection) },
-                { label: "Term Started", value: termStarted },
-              ]}
+            />
+            <AboutRaceCard
+              title="About this Seat"
               description={raceDesc ?? "[Placeholder — overview of this seat, its history, the incumbent's background, key issues, and political context to be filled in.]"}
+              items={[
+                { label: "Party", value: partyLabel },
+                { label: "Elected", value: termStarted },
+                { label: "Next Election", value: String(nextElection) },
+              ]}
             />
           </div>
 
@@ -150,7 +152,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           party={holdover.party}
           nextElection={holdover.nextElection}
           termLength={holdover.termLength}
-          seatLabel={`U.S. Senate · Seat 2 · Not up in ${electionYear}`}
+          seatLabel={`U.S. Senate · Seat 2 · Not Up in ${electionYear}`}
           from={`/senate/${id}`}
           raceDesc={holdover.raceDesc}
           pastResults={holdover.pastResults}
@@ -224,10 +226,9 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               title="About this Race"
               description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
               items={[
-                { label: "State", value: race.state },
-                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
                 { label: "Incumbent", value: currentSenatorName },
                 { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD" },
+                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
               ]}
             />
           </div>

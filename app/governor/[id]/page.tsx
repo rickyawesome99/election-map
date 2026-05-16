@@ -48,17 +48,19 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
         </div>
 
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
-          <div className="[&>section]:mb-0">
+          <div className="flex flex-col gap-3">
             <CurrentIncumbentCard
               incumbentName={entry.incumbent}
               party={entry.party}
-              items={[
-                { label: "State", value: entry.state },
-                { label: "Party", value: partyLabel },
-                { label: "Next Election", value: String(entry.nextElection) },
-                { label: "Term Started", value: termStarted },
-              ]}
+            />
+            <AboutRaceCard
+              title="About this Seat"
               description={entry.raceDesc ?? `[Placeholder — overview of the ${entry.state} governorship, its powers, the incumbent's background, key issues, and political context to be filled in.]`}
+              items={[
+                { label: "Party", value: partyLabel },
+                { label: "Elected", value: termStarted },
+                { label: "Next Election", value: String(entry.nextElection) },
+              ]}
             />
           </div>
 

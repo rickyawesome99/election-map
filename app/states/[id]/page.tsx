@@ -323,8 +323,8 @@ export default async function StateDetailPage({ params, searchParams }: { params
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <AppHeader back={
-        <Link href={from ?? "/states"} className="text-sm transition-colors" style={{ color: "var(--app-text-muted)" }}>
-          ← {from?.startsWith("/senate") ? "Back to Senate" : from?.startsWith("/governor") ? "Back to Governor" : from?.startsWith("/house") ? "Back to District" : "All States"}
+        <Link href={from ?? "/states"} className="flex items-center gap-1 text-sm transition-colors" style={{ color: "var(--app-text-muted)" }}>
+          ←<span className="hidden sm:inline">{from?.startsWith("/senate") ? " Back to Senate" : from?.startsWith("/governor") ? " Back to Governor" : from?.startsWith("/house") ? " Back to District" : " All States"}</span>
         </Link>
       } />
 

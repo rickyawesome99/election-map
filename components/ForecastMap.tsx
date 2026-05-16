@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import SearchBar from "@/components/SearchBar";
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry } from "@/data/forecastData";
@@ -175,6 +176,7 @@ export default function ForecastMap() {
         </div>
 
         <div className="flex items-center gap-3">
+          <SearchBar inputStyle={{ background: t.bg, border: `1px solid ${t.border}`, color: t.textPrimary }} />
           {/* Dark / Light mode toggle */}
           <button
             onClick={toggleDarkMode}

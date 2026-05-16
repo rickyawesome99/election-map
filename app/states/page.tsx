@@ -3,6 +3,7 @@ import { electionYear, governorData, governorNoElection, houseData, senateCurren
 import StatesTable, { StateRow } from "@/components/StatesTable";
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
+import SearchBar from "@/components/SearchBar";
 
 export const metadata = {
   title: `States — ${electionYear} Forecast`,
@@ -67,7 +68,7 @@ export default function StatesListPage() {
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <div className="sticky top-0 z-10">
       <header
-        className="px-6 py-4 flex items-center gap-4"
+        className="px-6 h-14 flex items-center gap-4"
         style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
       >
         <Link href="/" className="font-bold text-lg tracking-tight" style={{ color: "var(--app-text-primary)" }}>
@@ -90,12 +91,13 @@ export default function StatesListPage() {
             </Link>
           ))}
         </nav>
-        <div className="ml-auto">
+        <div className="ml-auto flex items-center gap-3">
+          <SearchBar />
           <ThemeToggle />
         </div>
       </header>
 
-      <nav className="md:hidden flex border-b px-2" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
+      <nav className="md:hidden flex border-b" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
         {NAV.map(({ label, href }) => (
           <Link
             key={href}

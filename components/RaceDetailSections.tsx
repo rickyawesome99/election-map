@@ -208,24 +208,24 @@ export function CandidatesSection({
 export function CurrentIncumbentCard({
   incumbentName,
   party,
-  items,
+  items = [],
   description,
 }: {
   incumbentName: string;
   party: "D" | "R" | "I";
-  items: DetailInfoItem[];
+  items?: DetailInfoItem[];
   description?: string;
 }) {
   const accentColor = partyAccent(party);
   return (
     <section
-      className="rounded-xl p-4 mb-4"
+      className="rounded-xl p-4 mb-0"
       style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
     >
       <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-3" style={{ color: "var(--app-text-muted)" }}>
         Current Incumbent
       </h2>
-      <div className="flex items-start gap-4">
+      <div className="flex items-end gap-4">
         <div
           className="w-20 h-24 rounded-lg overflow-hidden shrink-0 flex items-center justify-center"
           style={{ border: `2px solid ${accentColor}`, background: "var(--app-tab-bg)" }}
@@ -236,25 +236,27 @@ export function CurrentIncumbentCard({
             <ellipse cx="40" cy="88" rx="32" ry="22" fill="var(--app-border)" />
           </svg>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col justify-end pb-3">
           <div className="text-xl font-bold mb-1" style={{ color: "var(--app-text-primary)" }}>
             {incumbentName}
           </div>
-          <div className="text-sm font-medium mb-2" style={{ color: accentColor }}>
+          <div className="text-sm font-medium" style={{ color: accentColor }}>
             {partyLabel(party)} · Incumbent
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3">
-            {items.map(({ label, value }) => (
-              <div key={label} className="rounded-lg p-2.5 flex flex-col" style={{ background: "var(--app-bg)" }}>
-                <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
-                  {label}
+          {items.length > 0 && (
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3">
+              {items.map(({ label, value }) => (
+                <div key={label} className="rounded-lg p-2.5 flex flex-col" style={{ background: "var(--app-bg)" }}>
+                  <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
+                    {label}
+                  </div>
+                  <div className="text-sm font-semibold mt-auto" style={{ color: "var(--app-text-primary)" }}>
+                    {value}
+                  </div>
                 </div>
-                <div className="text-sm font-semibold mt-auto" style={{ color: "var(--app-text-primary)" }}>
-                  {value}
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
           {description && (
             <div className="mt-3 rounded-lg p-3" style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}>
               <div className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>

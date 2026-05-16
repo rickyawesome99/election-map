@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
+import SearchBar from "@/components/SearchBar";
 
 const NAV = [
   { label: "States",   href: "/states" },
@@ -13,7 +14,7 @@ export default function AppHeader({ back }: { back?: React.ReactNode }) {
   return (
     <div className="sticky top-0 z-10">
       <header
-        className="px-6 py-4 flex items-center gap-4"
+        className="px-6 h-14 flex items-center gap-4"
         style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
       >
         <Link href="/" className="font-bold text-lg tracking-tight shrink-0" style={{ color: "var(--app-text-primary)" }}>
@@ -34,12 +35,13 @@ export default function AppHeader({ back }: { back?: React.ReactNode }) {
         </nav>
         <div className="ml-auto flex items-center gap-3 shrink-0">
           {back}
+          <SearchBar />
           <ThemeToggle />
         </div>
       </header>
 
       {/* Mobile nav tabs */}
-      <nav className="md:hidden flex border-b px-2" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
+      <nav className="md:hidden flex border-b" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
         {NAV.map(({ label, href }) => (
           <Link
             key={href}
