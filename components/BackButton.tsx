@@ -11,8 +11,8 @@ function getLabel(from: string | null): string {
   if (from === "/governor") return "Back to Governor";
   if (from.startsWith("/states/")) {
     const slug = from.split("/")[2] ?? "";
-    const abbr = slug.charAt(0).toUpperCase() + slug.slice(1);
-    return `Back to ${abbr}`;
+    const label = slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join("-");
+    return `Back to ${label}`;
   }
   if (from === "/") return "Back to Map";
   return "Back";

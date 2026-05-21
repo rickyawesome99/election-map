@@ -1916,45 +1916,45 @@ district_id,district_name,state_abbr,state_name,year,race,dem_pct,rep_pct,margin
 2507,MA-07,MA,Massachusetts,2014,Governor,,,,,,,
 2508,MA-08,MA,Massachusetts,2014,Governor,,,,,,,
 2509,MA-09,MA,Massachusetts,2014,Governor,,,,,,,
-2601,MI-01,MI,Michigan,2024,President,38.7,59.9,21.2,,,0,
-2602,MI-02,MI,Michigan,2024,President,34.2,64.3,30.1,,,0,
-2603,MI-03,MI,Michigan,2024,President,53.1,45.2,-7.9,,,0,
-2604,MI-04,MI,Michigan,2024,President,46.5,52,5.5,,,0,
-2605,MI-05,MI,Michigan,2024,President,35.8,62.8,27,,,0,
-2606,MI-06,MI,Michigan,2024,President,60.3,37,-23.3,,,0,
-2607,MI-07,MI,Michigan,2024,President,48.6,49.9,1.3,,,0,
-2608,MI-08,MI,Michigan,2024,President,48.3,50.3,2,,,0,
-2609,MI-09,MI,Michigan,2024,President,33.2,65.5,32.3,,,0,
-2610,MI-10,MI,Michigan,2024,President,45.7,52.2,6.5,,,0,
-2611,MI-11,MI,Michigan,2024,President,57,40.9,-16.1,,,0,
-2612,MI-12,MI,Michigan,2024,President,66.4,28.7,-37.7,,,0,
-2613,MI-13,MI,Michigan,2024,President,69.6,28.2,-41.4,,,0,
-2601,MI-01,MI,Michigan,2024,Senate,39,59,20,,,0,
-2602,MI-02,MI,Michigan,2024,Senate,34,63,29,,,0,
-2603,MI-03,MI,Michigan,2024,Senate,52,45,-7,,,0,
-2604,MI-04,MI,Michigan,2024,Senate,46,52,6,,,0,
-2605,MI-05,MI,Michigan,2024,Senate,36,61,25,,,0,
-2606,MI-06,MI,Michigan,2024,Senate,60,36,-24,,,0,
-2607,MI-07,MI,Michigan,2024,Senate,49,48,-1,,,0,
-2608,MI-08,MI,Michigan,2024,Senate,49,48,-1,,,0,
-2609,MI-09,MI,Michigan,2024,Senate,35,63,28,,,0,
-2610,MI-10,MI,Michigan,2024,Senate,47,50,3,,,0,
-2611,MI-11,MI,Michigan,2024,Senate,57,40,-17,,,0,
-2612,MI-12,MI,Michigan,2024,Senate,67,27,-40,,,0,
-2613,MI-13,MI,Michigan,2024,Senate,70,26,-44,,,0,
-2601,MI-01,MI,Michigan,2022,Governor,44,54,10,,,0,
-2602,MI-02,MI,Michigan,2022,Governor,40,58,18,,,0,
-2603,MI-03,MI,Michigan,2022,Governor,55,43,-12,,,0,
-2604,MI-04,MI,Michigan,2022,Governor,50,49,-1,,,0,
-2605,MI-05,MI,Michigan,2022,Governor,41,57,16,,,0,
-2606,MI-06,MI,Michigan,2022,Governor,66,32,-34,,,0,
-2607,MI-07,MI,Michigan,2022,Governor,54,44,-10,,,0,
-2608,MI-08,MI,Michigan,2022,Governor,55,43,-12,,,0,
-2609,MI-09,MI,Michigan,2022,Governor,41,57,16,,,0,
-2610,MI-10,MI,Michigan,2022,Governor,55,43,-12,,,0,
-2611,MI-11,MI,Michigan,2022,Governor,64,35,-29,,,0,
-2612,MI-12,MI,Michigan,2022,Governor,76,23,-53,,,0,
-2613,MI-13,MI,Michigan,2022,Governor,77,22,-55,,,0,
+2601,MI-01,MI,Michigan,2024,President,38.7,59.7,21,"187,191","288,956","101,765","483,631"
+2602,MI-02,MI,Michigan,2024,President,34.2,64.2,30,"151,091","283,937","132,846","442,037"
+2603,MI-03,MI,Michigan,2024,President,53,45.1,-7.9,"226,447","192,690","-33,757","427,334"
+2604,MI-04,MI,Michigan,2024,President,46.4,51.9,5.5,"201,649","225,615","23,966","434,652"
+2605,MI-05,MI,Michigan,2024,President,35.8,62.8,27,"151,102","265,209","114,107","422,614"
+2606,MI-06,MI,Michigan,2024,President,60.2,36.9,-23.3,"280,092","171,956","-108,136","465,450"
+2607,MI-07,MI,Michigan,2024,President,48.5,49.8,1.3,"224,818","230,862","6,044","463,235"
+2608,MI-08,MI,Michigan,2024,President,48.3,50.2,1.9,"209,472","218,035","8,563","433,944"
+2609,MI-09,MI,Michigan,2024,President,33.1,65.4,32.3,"161,474","318,875","157,401","487,769"
+2610,MI-10,MI,Michigan,2024,President,45.6,52.1,6.5,"199,324","227,882","28,558","437,194"
+2611,MI-11,MI,Michigan,2024,President,56.9,40.8,-16.1,"262,383","188,356","-74,027","461,479"
+2612,MI-12,MI,Michigan,2024,President,66.2,28.6,-37.6,"247,356","106,968","-140,388","373,504"
+2613,MI-13,MI,Michigan,2024,President,69.3,28.1,-41.2,"232,935","94,494","-138,441","336,325"
+2601,MI-01,MI,Michigan,2024,Senate,39,59,20,,,,
+2602,MI-02,MI,Michigan,2024,Senate,34,63,29,,,,
+2603,MI-03,MI,Michigan,2024,Senate,52,45,-7,,,,
+2604,MI-04,MI,Michigan,2024,Senate,46,52,6,,,,
+2605,MI-05,MI,Michigan,2024,Senate,36,61,25,,,,
+2606,MI-06,MI,Michigan,2024,Senate,60,36,-24,,,,
+2607,MI-07,MI,Michigan,2024,Senate,49,48,-1,,,,
+2608,MI-08,MI,Michigan,2024,Senate,49,48,-1,,,,
+2609,MI-09,MI,Michigan,2024,Senate,35,63,28,,,,
+2610,MI-10,MI,Michigan,2024,Senate,47,50,3,,,,
+2611,MI-11,MI,Michigan,2024,Senate,57,40,-17,,,,
+2612,MI-12,MI,Michigan,2024,Senate,67,27,-40,,,,
+2613,MI-13,MI,Michigan,2024,Senate,70,26,-44,,,,
+2601,MI-01,MI,Michigan,2022,Governor,44,54,10,,,,
+2602,MI-02,MI,Michigan,2022,Governor,40,58,18,,,,
+2603,MI-03,MI,Michigan,2022,Governor,55,43,-12,,,,
+2604,MI-04,MI,Michigan,2022,Governor,50,49,-1,,,,
+2605,MI-05,MI,Michigan,2022,Governor,41,57,16,,,,
+2606,MI-06,MI,Michigan,2022,Governor,66,32,-34,,,,
+2607,MI-07,MI,Michigan,2022,Governor,54,44,-10,,,,
+2608,MI-08,MI,Michigan,2022,Governor,55,43,-12,,,,
+2609,MI-09,MI,Michigan,2022,Governor,41,57,16,,,,
+2610,MI-10,MI,Michigan,2022,Governor,55,43,-12,,,,
+2611,MI-11,MI,Michigan,2022,Governor,64,35,-29,,,,
+2612,MI-12,MI,Michigan,2022,Governor,76,23,-53,,,,
+2613,MI-13,MI,Michigan,2022,Governor,77,22,-55,,,,
 2601,MI-01,MI,Michigan,2020,President,40.6,57.9,17.3,"171,399","244,448","73,049","422,395"
 2602,MI-02,MI,Michigan,2020,President,43.2,55,11.8,"177,095","225,489","48,394","410,010"
 2603,MI-03,MI,Michigan,2020,President,47.4,50.6,3.2,"194,569","207,739","13,170","410,191"
@@ -2874,146 +2874,146 @@ district_id,district_name,state_abbr,state_name,year,race,dem_pct,rep_pct,margin
 3801,ND-01,ND,North Dakota,2016,President,27.2,63.0,35.7,93758,216794,123036,344360
 3801,ND-01,ND,North Dakota,2016,Senate,17.0,78.5,61.5,58116,268788,210672,342501
 3801,ND-01,ND,North Dakota,2016,Governor,19.4,76.5,57.1,65855,259863,194008,339601
-3901,OH-01,OH,Ohio,2024,President,52.7,46.3,-6.4,,,0,
-3902,OH-02,OH,Ohio,2024,President,25.8,73.4,47.6,,,0,
-3903,OH-03,OH,Ohio,2024,President,69.6,29.4,-40.2,,,0,
-3904,OH-04,OH,Ohio,2024,President,31.2,67.9,36.7,,,0,
-3905,OH-05,OH,Ohio,2024,President,34.9,64.2,29.3,,,0,
-3906,OH-06,OH,Ohio,2024,President,32.8,66.4,33.6,,,0,
-3907,OH-07,OH,Ohio,2024,President,44.3,54.9,10.6,,,0,
-3908,OH-08,OH,Ohio,2024,President,37.7,61.4,23.7,,,0,
-3909,OH-09,OH,Ohio,2024,President,46.2,52.9,6.7,,,0,
-3910,OH-10,OH,Ohio,2024,President,46.6,52.4,5.8,,,0,
-3911,OH-11,OH,Ohio,2024,President,77.2,22.1,-55.1,,,0,
-3912,OH-12,OH,Ohio,2024,President,33.2,65.9,32.7,,,0,
-3913,OH-13,OH,Ohio,2024,President,49.6,49.5,-0.1,,,0,
-3914,OH-14,OH,Ohio,2024,President,40.6,58.5,17.9,,,0,
-3915,OH-15,OH,Ohio,2024,President,44.9,54.1,9.2,,,0,
-3901,OH-01,OH,Ohio,2024,Senate,,,,,,,
-3902,OH-02,OH,Ohio,2024,Senate,,,,,,,
-3903,OH-03,OH,Ohio,2024,Senate,,,,,,,
-3904,OH-04,OH,Ohio,2024,Senate,,,,,,,
-3905,OH-05,OH,Ohio,2024,Senate,,,,,,,
-3906,OH-06,OH,Ohio,2024,Senate,,,,,,,
-3907,OH-07,OH,Ohio,2024,Senate,,,,,,,
-3908,OH-08,OH,Ohio,2024,Senate,,,,,,,
-3909,OH-09,OH,Ohio,2024,Senate,,,,,,,
-3910,OH-10,OH,Ohio,2024,Senate,,,,,,,
-3911,OH-11,OH,Ohio,2024,Senate,,,,,,,
-3912,OH-12,OH,Ohio,2024,Senate,,,,,,,
-3913,OH-13,OH,Ohio,2024,Senate,,,,,,,
-3914,OH-14,OH,Ohio,2024,Senate,,,,,,,
-3915,OH-15,OH,Ohio,2024,Senate,,,,,,,
-3901,OH-01,OH,Ohio,2022,Senate,,,,,,,
-3902,OH-02,OH,Ohio,2022,Senate,,,,,,,
-3903,OH-03,OH,Ohio,2022,Senate,,,,,,,
-3904,OH-04,OH,Ohio,2022,Senate,,,,,,,
-3905,OH-05,OH,Ohio,2022,Senate,,,,,,,
-3906,OH-06,OH,Ohio,2022,Senate,,,,,,,
-3907,OH-07,OH,Ohio,2022,Senate,,,,,,,
-3908,OH-08,OH,Ohio,2022,Senate,,,,,,,
-3909,OH-09,OH,Ohio,2022,Senate,,,,,,,
-3910,OH-10,OH,Ohio,2022,Senate,,,,,,,
-3911,OH-11,OH,Ohio,2022,Senate,,,,,,,
-3912,OH-12,OH,Ohio,2022,Senate,,,,,,,
-3913,OH-13,OH,Ohio,2022,Senate,,,,,,,
-3914,OH-14,OH,Ohio,2022,Senate,,,,,,,
-3915,OH-15,OH,Ohio,2022,Senate,,,,,,,
-3901,OH-01,OH,Ohio,2022,Governor,,,,,,,
-3902,OH-02,OH,Ohio,2022,Governor,,,,,,,
-3903,OH-03,OH,Ohio,2022,Governor,,,,,,,
-3904,OH-04,OH,Ohio,2022,Governor,,,,,,,
-3905,OH-05,OH,Ohio,2022,Governor,,,,,,,
-3906,OH-06,OH,Ohio,2022,Governor,,,,,,,
-3907,OH-07,OH,Ohio,2022,Governor,,,,,,,
-3908,OH-08,OH,Ohio,2022,Governor,,,,,,,
-3909,OH-09,OH,Ohio,2022,Governor,,,,,,,
-3910,OH-10,OH,Ohio,2022,Governor,,,,,,,
-3911,OH-11,OH,Ohio,2022,Governor,,,,,,,
-3912,OH-12,OH,Ohio,2022,Governor,,,,,,,
-3913,OH-13,OH,Ohio,2022,Governor,,,,,,,
-3914,OH-14,OH,Ohio,2022,Governor,,,,,,,
-3915,OH-15,OH,Ohio,2022,Governor,,,,,,,
-3901,OH-01,OH,Ohio,2020,President,47.7,50.9,3.2,,,0,
-3902,OH-02,OH,Ohio,2020,President,42.9,55.6,12.7,,,0,
-3903,OH-03,OH,Ohio,2020,President,70,28.4,-41.6,,,0,
-3904,OH-04,OH,Ohio,2020,President,31.2,67.1,35.9,,,0,
-3905,OH-05,OH,Ohio,2020,President,36.7,61.6,24.9,,,0,
-3906,OH-06,OH,Ohio,2020,President,26.5,72.2,45.7,,,0,
-3907,OH-07,OH,Ohio,2020,President,33.2,65.3,32.1,,,0,
-3908,OH-08,OH,Ohio,2020,President,32.5,66,33.5,,,0,
-3909,OH-09,OH,Ohio,2020,President,58.8,39.7,-19.1,,,0,
-3910,OH-10,OH,Ohio,2020,President,47,51.4,4.4,,,0,
-3911,OH-11,OH,Ohio,2020,President,79.8,19.2,-60.6,,,0,
-3912,OH-12,OH,Ohio,2020,President,46.3,52.2,5.9,,,0,
-3913,OH-13,OH,Ohio,2020,President,51,47.6,-3.4,,,0,
-3914,OH-14,OH,Ohio,2020,President,44.9,53.9,9,,,0,
-3915,OH-15,OH,Ohio,2020,President,42.2,56.3,14.1,,,0,
-3916,OH-16,OH,Ohio,2020,President,42.2,56.5,14.3,,,0,
-3901,OH-01,OH,Ohio,2018,Senate,,,,,,,
-3902,OH-02,OH,Ohio,2018,Senate,,,,,,,
-3903,OH-03,OH,Ohio,2018,Senate,,,,,,,
-3904,OH-04,OH,Ohio,2018,Senate,,,,,,,
-3905,OH-05,OH,Ohio,2018,Senate,,,,,,,
-3906,OH-06,OH,Ohio,2018,Senate,,,,,,,
-3907,OH-07,OH,Ohio,2018,Senate,,,,,,,
-3908,OH-08,OH,Ohio,2018,Senate,,,,,,,
-3909,OH-09,OH,Ohio,2018,Senate,,,,,,,
-3910,OH-10,OH,Ohio,2018,Senate,,,,,,,
-3911,OH-11,OH,Ohio,2018,Senate,,,,,,,
-3912,OH-12,OH,Ohio,2018,Senate,,,,,,,
-3913,OH-13,OH,Ohio,2018,Senate,,,,,,,
-3914,OH-14,OH,Ohio,2018,Senate,,,,,,,
-3915,OH-15,OH,Ohio,2018,Senate,,,,,,,
-3916,OH-16,OH,Ohio,2018,Senate,,,,,,,
-3901,OH-01,OH,Ohio,2018,Governor,,,,,,,
-3902,OH-02,OH,Ohio,2018,Governor,,,,,,,
-3903,OH-03,OH,Ohio,2018,Governor,,,,,,,
-3904,OH-04,OH,Ohio,2018,Governor,,,,,,,
-3905,OH-05,OH,Ohio,2018,Governor,,,,,,,
-3906,OH-06,OH,Ohio,2018,Governor,,,,,,,
-3907,OH-07,OH,Ohio,2018,Governor,,,,,,,
-3908,OH-08,OH,Ohio,2018,Governor,,,,,,,
-3909,OH-09,OH,Ohio,2018,Governor,,,,,,,
-3910,OH-10,OH,Ohio,2018,Governor,,,,,,,
-3911,OH-11,OH,Ohio,2018,Governor,,,,,,,
-3912,OH-12,OH,Ohio,2018,Governor,,,,,,,
-3913,OH-13,OH,Ohio,2018,Governor,,,,,,,
-3914,OH-14,OH,Ohio,2018,Governor,,,,,,,
-3915,OH-15,OH,Ohio,2018,Governor,,,,,,,
-3916,OH-16,OH,Ohio,2018,Governor,,,,,,,
-3901,OH-01,OH,Ohio,2016,President,44.6,51.2,6.6,,,0,
-3902,OH-02,OH,Ohio,2016,President,39.7,55.8,16.1,,,0,
-3903,OH-03,OH,Ohio,2016,President,67,28.6,-38.4,,,0,
-3904,OH-04,OH,Ohio,2016,President,30.7,64.3,33.6,,,0,
-3905,OH-05,OH,Ohio,2016,President,34.6,59.7,25.1,,,0,
-3906,OH-06,OH,Ohio,2016,President,26.7,69.3,42.6,,,0,
-3907,OH-07,OH,Ohio,2016,President,32.8,62.5,29.7,,,0,
-3908,OH-08,OH,Ohio,2016,President,30.6,65.1,34.5,,,0,
-3909,OH-09,OH,Ohio,2016,President,58.7,36.5,-22.2,,,0,
-3910,OH-10,OH,Ohio,2016,President,44,51.3,7.3,,,0,
-3911,OH-11,OH,Ohio,2016,President,80.5,17,-63.5,,,0,
-3912,OH-12,OH,Ohio,2016,President,41.9,53.2,11.3,,,0,
-3913,OH-13,OH,Ohio,2016,President,51.1,44.6,-6.5,,,0,
-3914,OH-14,OH,Ohio,2016,President,42.1,53.6,11.5,,,0,
-3915,OH-15,OH,Ohio,2016,President,39.9,55.3,15.4,,,0,
-3916,OH-16,OH,Ohio,2016,President,39.5,56.2,16.7,,,0,
-3901,OH-01,OH,Ohio,2016,Senate,,,,,,,
-3902,OH-02,OH,Ohio,2016,Senate,,,,,,,
-3903,OH-03,OH,Ohio,2016,Senate,,,,,,,
-3904,OH-04,OH,Ohio,2016,Senate,,,,,,,
-3905,OH-05,OH,Ohio,2016,Senate,,,,,,,
-3906,OH-06,OH,Ohio,2016,Senate,,,,,,,
-3907,OH-07,OH,Ohio,2016,Senate,,,,,,,
-3908,OH-08,OH,Ohio,2016,Senate,,,,,,,
-3909,OH-09,OH,Ohio,2016,Senate,,,,,,,
-3910,OH-10,OH,Ohio,2016,Senate,,,,,,,
-3911,OH-11,OH,Ohio,2016,Senate,,,,,,,
-3912,OH-12,OH,Ohio,2016,Senate,,,,,,,
-3913,OH-13,OH,Ohio,2016,Senate,,,,,,,
-3914,OH-14,OH,Ohio,2016,Senate,,,,,,,
-3915,OH-15,OH,Ohio,2016,Senate,,,,,,,
-3916,OH-16,OH,Ohio,2016,Senate,,,,,,,
+3901,OH-01,OH,Ohio,2024,President,52.7,46.3,-6.4,"210,872","185,460","-25,412","400,250"
+3902,OH-02,OH,Ohio,2024,President,25.8,73.4,47.6,"97,852","278,096","180,244","378,802"
+3903,OH-03,OH,Ohio,2024,President,69.6,29.4,-40.2,"249,431","105,242","-144,189","358,346"
+3904,OH-04,OH,Ohio,2024,President,31.2,67.9,36.7,"126,892","276,504","149,612","406,953"
+3905,OH-05,OH,Ohio,2024,President,34.9,64.2,29.3,"138,185","254,061","115,876","395,871"
+3906,OH-06,OH,Ohio,2024,President,32.8,66.4,33.6,"125,068","253,587","128,519","381,642"
+3907,OH-07,OH,Ohio,2024,President,44.3,54.9,10.6,"185,149","229,664","44,515","418,302"
+3908,OH-08,OH,Ohio,2024,President,37.7,61.4,23.7,"147,576","240,234","92,658","391,280"
+3909,OH-09,OH,Ohio,2024,President,46.2,52.9,6.7,"174,724","200,125","25,401","378,390"
+3910,OH-10,OH,Ohio,2024,President,46.6,52.4,5.8,"176,359","198,060","21,701","378,167"
+3911,OH-11,OH,Ohio,2024,President,77.2,22.1,-55.1,"247,372","70,858","-176,514","320,521"
+3912,OH-12,OH,Ohio,2024,President,33.2,65.9,32.7,"129,846","257,795","127,949","390,998"
+3913,OH-13,OH,Ohio,2024,President,49.6,49.5,-0.1,"196,022","195,856",-166,"395,465"
+3914,OH-14,OH,Ohio,2024,President,40.6,58.5,17.9,"164,400","237,006","72,606","404,841"
+3915,OH-15,OH,Ohio,2024,President,44.9,54.1,9.2,"163,951","197,568","33,617","365,189"
+3901,OH-01,OH,Ohio,2024,Senate,53.7,43.1,-10.6,"213,904","171,932","-41,972","398,685"
+3902,OH-02,OH,Ohio,2024,Senate,28.8,67.4,38.6,"107,603","252,061","144,458","373,880"
+3903,OH-03,OH,Ohio,2024,Senate,71.1,26.4,-44.7,"251,373","93,313","-158,060","353,651"
+3904,OH-04,OH,Ohio,2024,Senate,34,62.5,28.5,"137,240","252,067","114,827","403,387"
+3905,OH-05,OH,Ohio,2024,Senate,38.2,58.1,19.9,"149,181","226,914","77,733","390,660"
+3906,OH-06,OH,Ohio,2024,Senate,36.6,59.7,23.1,"137,891","224,931","87,040","376,865"
+3907,OH-07,OH,Ohio,2024,Senate,47.7,49.4,1.7,"196,986","204,388","7,402","413,345"
+3908,OH-08,OH,Ohio,2024,Senate,39.7,56.8,17.1,"153,901","220,174","66,273","387,822"
+3909,OH-09,OH,Ohio,2024,Senate,48.1,47.4,-0.7,"180,143","177,483","-2,660","374,268"
+3910,OH-10,OH,Ohio,2024,Senate,48.7,47.7,-1,"182,619","178,973","-3,646","375,126"
+3911,OH-11,OH,Ohio,2024,Senate,78.4,19.2,-59.2,"248,064","60,852","-187,212","316,436"
+3912,OH-12,OH,Ohio,2024,Senate,36.1,60.3,24.2,"140,239","233,822","93,583","388,005"
+3913,OH-13,OH,Ohio,2024,Senate,52.1,44.5,-7.6,"203,922","174,288","-29,634","391,761"
+3914,OH-14,OH,Ohio,2024,Senate,44.2,52.3,8.1,"176,879","209,149","32,270","399,831"
+3915,OH-15,OH,Ohio,2024,Senate,47.5,49.1,1.6,"171,004","177,036","6,032","360,258"
+3901,OH-01,OH,Ohio,2022,Senate,54.2,45.8,-8.4,"160,402","135,705","-24,697","296,107"
+3902,OH-02,OH,Ohio,2022,Senate,29.6,70.4,40.8,"76,475","181,596","105,121","258,071"
+3903,OH-03,OH,Ohio,2022,Senate,71.8,28.2,-43.6,"186,641","73,392","-113,249","260,033"
+3904,OH-04,OH,Ohio,2022,Senate,33.4,66.6,33.2,"96,624","192,673","96,049","289,297"
+3905,OH-05,OH,Ohio,2022,Senate,38.6,61.4,22.8,"108,393","172,365","63,972","280,758"
+3906,OH-06,OH,Ohio,2022,Senate,37.6,62.4,24.8,"105,776","175,380","69,604","281,156"
+3907,OH-07,OH,Ohio,2022,Senate,48.2,51.8,3.6,"149,186","160,177","10,991","309,363"
+3908,OH-08,OH,Ohio,2022,Senate,38.8,61.2,22.4,"108,056","170,717","62,661","278,773"
+3909,OH-09,OH,Ohio,2022,Senate,50.2,49.8,-0.4,"134,149","133,045","-1,104","267,194"
+3910,OH-10,OH,Ohio,2022,Senate,48,52,4,"131,752","142,970","11,218","274,722"
+3911,OH-11,OH,Ohio,2022,Senate,79.6,20.4,-59.2,"173,067","44,401","-128,666","217,468"
+3912,OH-12,OH,Ohio,2022,Senate,36.6,63.4,26.8,"101,206","175,675","74,469","276,881"
+3913,OH-13,OH,Ohio,2022,Senate,53,47,-6,"153,001","135,905","-17,096","288,906"
+3914,OH-14,OH,Ohio,2022,Senate,44.9,55.1,10.2,"134,649","165,134","30,485","299,783"
+3915,OH-15,OH,Ohio,2022,Senate,47.5,52.5,5,"120,112","132,979","12,867","253,091"
+3901,OH-01,OH,Ohio,2022,Governor,45.2,54.8,9.6,"134,050","162,767","28,717","296,817"
+3902,OH-02,OH,Ohio,2022,Governor,22.8,77.2,54.4,"58,636","198,321","139,685","256,957"
+3903,OH-03,OH,Ohio,2022,Governor,62.6,37.4,-25.2,"163,058","97,304","-65,754","260,362"
+3904,OH-04,OH,Ohio,2022,Governor,25.5,74.5,49,"73,391","214,227","140,836","287,618"
+3905,OH-05,OH,Ohio,2022,Governor,28.8,71.2,42.4,"80,581","199,014","118,433","279,595"
+3906,OH-06,OH,Ohio,2022,Governor,27.6,72.4,44.8,"77,051","202,282","125,231","279,333"
+3907,OH-07,OH,Ohio,2022,Governor,37.4,62.6,25.2,"115,714","193,396","77,682","309,110"
+3908,OH-08,OH,Ohio,2022,Governor,30.6,69.4,38.8,"85,491","194,166","108,675","279,657"
+3909,OH-09,OH,Ohio,2022,Governor,37,63,26,"99,420","169,315","69,895","268,735"
+3910,OH-10,OH,Ohio,2022,Governor,38,62,24,"104,683","170,870","66,187","275,553"
+3911,OH-11,OH,Ohio,2022,Governor,69.9,30.1,-39.8,"152,524","65,720","-86,804","218,244"
+3912,OH-12,OH,Ohio,2022,Governor,28.4,71.6,43.2,"78,248","196,962","118,714","275,210"
+3913,OH-13,OH,Ohio,2022,Governor,42.9,57.1,14.2,"123,067","163,984","40,917","287,051"
+3914,OH-14,OH,Ohio,2022,Governor,34.3,65.7,31.4,"102,529","196,187","93,658","298,716"
+3915,OH-15,OH,Ohio,2022,Governor,38.4,61.6,23.2,"97,046","155,909","58,863","252,955"
+3901,OH-01,OH,Ohio,2020,President,47.7,50.8,3.1,"185,962","198,439","12,477","390,247"
+3902,OH-02,OH,Ohio,2020,President,42.9,55.6,12.7,"165,591","214,640","49,049","385,955"
+3903,OH-03,OH,Ohio,2020,President,70,28.4,-41.6,"232,020","94,328","-137,692","331,693"
+3904,OH-04,OH,Ohio,2020,President,31.2,67.1,35.9,"110,324","237,090","126,766","353,207"
+3905,OH-05,OH,Ohio,2020,President,36.7,61.6,24.9,"141,550","237,811","96,261","385,944"
+3906,OH-06,OH,Ohio,2020,President,26.5,72.2,45.7,"91,284","248,505","157,221","344,178"
+3907,OH-07,OH,Ohio,2020,President,33.2,65.3,32.1,"120,588","237,049","116,461","362,969"
+3908,OH-08,OH,Ohio,2020,President,32.5,66,33.5,"119,845","243,067","123,222","368,356"
+3909,OH-09,OH,Ohio,2020,President,58.8,39.7,-19.1,"184,302","124,558","-59,744","313,493"
+3910,OH-10,OH,Ohio,2020,President,47,51.4,4.4,"172,459","188,604","16,145","367,220"
+3911,OH-11,OH,Ohio,2020,President,79.8,19.2,-60.6,"252,830","60,940","-191,890","316,958"
+3912,OH-12,OH,Ohio,2020,President,46.2,52.2,6,"206,007","232,831","26,824","445,718"
+3913,OH-13,OH,Ohio,2020,President,51,47.6,-3.4,"171,134","159,891","-11,243","335,730"
+3914,OH-14,OH,Ohio,2020,President,44.9,53.9,9,"185,724","223,010","37,286","413,903"
+3915,OH-15,OH,Ohio,2020,President,42.1,56.4,14.3,"165,788","221,752","55,964","393,482"
+3916,OH-16,OH,Ohio,2020,President,42.2,56.5,14.3,"173,757","232,319","58,562","411,327"
+3901,OH-01,OH,Ohio,2018,Senate,50.7,49.3,-1.4,"151,202","146,905","-4,297","298,107"
+3902,OH-02,OH,Ohio,2018,Senate,48.5,51.5,3,"139,925","148,859","8,934","288,784"
+3903,OH-03,OH,Ohio,2018,Senate,74.8,25.2,-49.6,"186,530","62,881","-123,649","249,411"
+3904,OH-04,OH,Ohio,2018,Senate,42.9,57.1,14.2,"110,454","147,138","36,684","257,592"
+3905,OH-05,OH,Ohio,2018,Senate,47.4,52.6,5.2,"133,750","148,224","14,474","281,974"
+3906,OH-06,OH,Ohio,2018,Senate,41.2,58.8,17.6,"102,736","146,538","43,802","249,274"
+3907,OH-07,OH,Ohio,2018,Senate,44.4,55.6,11.2,"115,651","144,893","29,242","260,544"
+3908,OH-08,OH,Ohio,2018,Senate,39.5,60.5,21,"105,912","162,450","56,538","268,362"
+3909,OH-09,OH,Ohio,2018,Senate,68.4,31.6,-36.8,"159,721","73,680","-86,041","233,401"
+3910,OH-10,OH,Ohio,2018,Senate,52.7,47.3,-5.4,"147,929","132,681","-15,248","280,610"
+3911,OH-11,OH,Ohio,2018,Senate,84,16,-68,"212,294","40,483","-171,811","252,777"
+3912,OH-12,OH,Ohio,2018,Senate,51.3,48.7,-2.6,"173,942","165,184","-8,758","339,126"
+3913,OH-13,OH,Ohio,2018,Senate,62.4,37.6,-24.8,"156,433","94,282","-62,151","250,715"
+3914,OH-14,OH,Ohio,2018,Senate,52.7,47.3,-5.4,"162,786","146,174","-16,612","308,960"
+3915,OH-15,OH,Ohio,2018,Senate,50.8,49.2,-1.6,"148,224","143,484","-4,740","291,708"
+3916,OH-16,OH,Ohio,2018,Senate,49.6,50.4,0.8,"151,019","153,703","2,684","304,722"
+3901,OH-01,OH,Ohio,2018,Governor,45.1,52.2,7.1,"135,132","156,100","20,968","299,319"
+3902,OH-02,OH,Ohio,2018,Governor,42.6,54.3,11.7,"123,882","157,844","33,962","290,514"
+3903,OH-03,OH,Ohio,2018,Governor,70,27.5,-42.5,"175,345","68,919","-106,426","250,392"
+3904,OH-04,OH,Ohio,2018,Governor,34.2,62.1,27.9,"88,421","160,491","72,070","258,273"
+3905,OH-05,OH,Ohio,2018,Governor,38.3,58.3,20,"109,047","166,023","56,976","284,669"
+3906,OH-06,OH,Ohio,2018,Governor,32.8,64.3,31.5,"82,058","160,919","78,861","250,117"
+3907,OH-07,OH,Ohio,2018,Governor,37.2,59.5,22.3,"97,227","155,566","58,339","261,663"
+3908,OH-08,OH,Ohio,2018,Governor,32.4,64.4,32,"87,272","173,135","85,863","268,969"
+3909,OH-09,OH,Ohio,2018,Governor,61.3,35.3,-26,"143,775","82,795","-60,980","234,435"
+3910,OH-10,OH,Ohio,2018,Governor,44.9,52.1,7.2,"126,413","146,861","20,448","281,802"
+3911,OH-11,OH,Ohio,2018,Governor,79.5,18.4,-61.1,"201,534","46,731","-154,803","253,514"
+3912,OH-12,OH,Ohio,2018,Governor,45.2,52.5,7.3,"154,246","179,134","24,888","341,400"
+3913,OH-13,OH,Ohio,2018,Governor,56.5,40.4,-16.1,"141,758","101,245","-40,513","250,701"
+3914,OH-14,OH,Ohio,2018,Governor,45.2,52,6.8,"139,949","160,994","21,045","309,761"
+3915,OH-15,OH,Ohio,2018,Governor,44.7,52.6,7.9,"131,269","154,716","23,447","293,963"
+3916,OH-16,OH,Ohio,2018,Governor,43.4,53.7,10.3,"132,718","164,352","31,634","305,970"
+3901,OH-01,OH,Ohio,2016,President,44.6,51.2,6.6,"161,003","185,028","24,025","361,316"
+3902,OH-02,OH,Ohio,2016,President,39.7,55.8,16.1,"140,778","197,926","57,148","354,922"
+3903,OH-03,OH,Ohio,2016,President,66.9,28.6,-38.3,"211,471","90,499","-120,972","315,956"
+3904,OH-04,OH,Ohio,2016,President,30.7,64.3,33.6,"99,618","208,642","109,024","324,544"
+3905,OH-05,OH,Ohio,2016,President,34.6,59.7,25.1,"124,420","214,706","90,286","359,687"
+3906,OH-06,OH,Ohio,2016,President,26.7,69.3,42.6,"85,505","221,818","136,313","320,023"
+3907,OH-07,OH,Ohio,2016,President,32.8,62.5,29.7,"107,889","205,329","97,440","328,571"
+3908,OH-08,OH,Ohio,2016,President,30.6,65.1,34.5,"104,926","223,201","118,275","342,764"
+3909,OH-09,OH,Ohio,2016,President,58.7,36.5,-22.2,"177,061","110,208","-66,853","301,604"
+3910,OH-10,OH,Ohio,2016,President,44,51.3,7.3,"153,342","178,775","25,433","348,276"
+3911,OH-11,OH,Ohio,2016,President,80.5,17,-63.5,"260,499","55,086","-205,413","323,581"
+3912,OH-12,OH,Ohio,2016,President,41.9,53.2,11.3,"161,907","205,744","43,837","386,778"
+3913,OH-13,OH,Ohio,2016,President,51.1,44.7,-6.4,"163,355","142,708","-20,647","319,573"
+3914,OH-14,OH,Ohio,2016,President,42.1,53.6,11.5,"155,664","197,933","42,269","369,388"
+3915,OH-15,OH,Ohio,2016,President,39.8,55.4,15.6,"140,983","196,189","55,206","354,164"
+3916,OH-16,OH,Ohio,2016,President,39.5,56.2,16.7,"145,743","207,213","61,470","369,026"
+3901,OH-01,OH,Ohio,2016,Senate,35.9,59.9,24,"127,446","212,920","85,474","355,187"
+3902,OH-02,OH,Ohio,2016,Senate,31.3,64.6,33.3,"110,226","227,329","117,103","351,788"
+3903,OH-03,OH,Ohio,2016,Senate,59.2,36.1,-23.1,"182,217","111,169","-71,048","307,796"
+3904,OH-04,OH,Ohio,2016,Senate,25.7,68.9,43.2,"82,352","220,423","138,071","320,031"
+3905,OH-05,OH,Ohio,2016,Senate,29.6,65.6,36,"104,794","231,891","127,097","353,645"
+3906,OH-06,OH,Ohio,2016,Senate,28.6,66.3,37.7,"89,474","207,693","118,219","313,114"
+3907,OH-07,OH,Ohio,2016,Senate,28.9,65.3,36.4,"93,467","211,386","117,919","323,479"
+3908,OH-08,OH,Ohio,2016,Senate,23.9,71.9,48,"80,717","243,024","162,307","337,976"
+3909,OH-09,OH,Ohio,2016,Senate,51.1,43,-8.1,"149,179","125,474","-23,705","292,065"
+3910,OH-10,OH,Ohio,2016,Senate,35.6,60.1,24.5,"122,574","206,765","84,191","344,135"
+3911,OH-11,OH,Ohio,2016,Senate,72.2,23.3,-48.9,"223,358","72,234","-151,124","309,547"
+3912,OH-12,OH,Ohio,2016,Senate,33.4,62.4,29,"128,479","239,900","111,421","384,219"
+3913,OH-13,OH,Ohio,2016,Senate,46.4,47.8,1.4,"144,207","148,635","4,428","311,031"
+3914,OH-14,OH,Ohio,2016,Senate,34.3,60.8,26.5,"123,808","219,250","95,442","360,741"
+3915,OH-15,OH,Ohio,2016,Senate,34.1,61.6,27.5,"118,993","215,342","96,349","349,416"
+3916,OH-16,OH,Ohio,2016,Senate,32.1,62.6,30.5,"115,617","225,132","109,515","359,883"
 3901,OH-01,OH,Ohio,2014,Governor,,,,,,,
 3902,OH-02,OH,Ohio,2014,Governor,,,,,,,
 3903,OH-03,OH,Ohio,2014,Governor,,,,,,,
@@ -3030,262 +3030,262 @@ district_id,district_name,state_abbr,state_name,year,race,dem_pct,rep_pct,margin
 3914,OH-14,OH,Ohio,2014,Governor,,,,,,,
 3915,OH-15,OH,Ohio,2014,Governor,,,,,,,
 3916,OH-16,OH,Ohio,2014,Governor,,,,,,,
-4001,OK-01,OK,Oklahoma,2024,President,38.2,59.7,21.5,,,0,
-4002,OK-02,OK,Oklahoma,2024,President,21.4,77,55.6,,,0,
-4003,OK-03,OK,Oklahoma,2024,President,26.7,71.5,44.8,,,0,
-4004,OK-04,OK,Oklahoma,2024,President,32.6,65.5,32.9,,,0,
-4005,OK-05,OK,Oklahoma,2024,President,39.8,58,18.2,,,0,
-4001,OK-01,OK,Oklahoma,2022,Senate,,,,,,,
-4002,OK-02,OK,Oklahoma,2022,Senate,,,,,,,
-4003,OK-03,OK,Oklahoma,2022,Senate,,,,,,,
-4004,OK-04,OK,Oklahoma,2022,Senate,,,,,,,
-4005,OK-05,OK,Oklahoma,2022,Senate,,,,,,,
-4001,OK-01,OK,Oklahoma,2022,Senate Special,,,,,,,
-4002,OK-02,OK,Oklahoma,2022,Senate Special,,,,,,,
-4003,OK-03,OK,Oklahoma,2022,Senate Special,,,,,,,
-4004,OK-04,OK,Oklahoma,2022,Senate Special,,,,,,,
-4005,OK-05,OK,Oklahoma,2022,Senate Special,,,,,,,
-4001,OK-01,OK,Oklahoma,2022,Governor,,,,,,,
-4002,OK-02,OK,Oklahoma,2022,Governor,,,,,,,
-4003,OK-03,OK,Oklahoma,2022,Governor,,,,,,,
-4004,OK-04,OK,Oklahoma,2022,Governor,,,,,,,
-4005,OK-05,OK,Oklahoma,2022,Governor,,,,,,,
-4001,OK-01,OK,Oklahoma,2020,President,37.3,60.1,22.8,,,0,
-4002,OK-02,OK,Oklahoma,2020,President,22.2,76.1,53.9,,,0,
-4003,OK-03,OK,Oklahoma,2020,President,23.2,74.6,51.4,,,0,
-4004,OK-04,OK,Oklahoma,2020,President,32,65.6,33.6,,,0,
-4005,OK-05,OK,Oklahoma,2020,President,46,51.4,5.4,,,0,
-4001,OK-01,OK,Oklahoma,2020,Senate,,,,,,,
-4002,OK-02,OK,Oklahoma,2020,Senate,,,,,,,
-4003,OK-03,OK,Oklahoma,2020,Senate,,,,,,,
-4004,OK-04,OK,Oklahoma,2020,Senate,,,,,,,
-4005,OK-05,OK,Oklahoma,2020,Senate,,,,,,,
-4001,OK-01,OK,Oklahoma,2018,Governor,,,,,,,
-4002,OK-02,OK,Oklahoma,2018,Governor,,,,,,,
-4003,OK-03,OK,Oklahoma,2018,Governor,,,,,,,
-4004,OK-04,OK,Oklahoma,2018,Governor,,,,,,,
-4005,OK-05,OK,Oklahoma,2018,Governor,,,,,,,
-4001,OK-01,OK,Oklahoma,2016,President,32.7,61.4,28.7,,,0,
-4002,OK-02,OK,Oklahoma,2016,President,22.8,72.9,50.1,,,0,
-4003,OK-03,OK,Oklahoma,2016,President,20.9,73.6,52.7,,,0,
-4004,OK-04,OK,Oklahoma,2016,President,28.3,65.7,37.4,,,0,
-4005,OK-05,OK,Oklahoma,2016,President,39.8,53.2,13.4,,,0,
-4001,OK-01,OK,Oklahoma,2016,Senate,,,,,,,
-4002,OK-02,OK,Oklahoma,2016,Senate,,,,,,,
-4003,OK-03,OK,Oklahoma,2016,Senate,,,,,,,
-4004,OK-04,OK,Oklahoma,2016,Senate,,,,,,,
-4005,OK-05,OK,Oklahoma,2016,Senate,,,,,,,
+4001,OK-01,OK,Oklahoma,2024,President,38.2,59.7,21.5,"120,251","188,080","67,829","314,998"
+4002,OK-02,OK,Oklahoma,2024,President,21.4,77,55.6,"69,690","250,807","181,117","325,621"
+4003,OK-03,OK,Oklahoma,2024,President,26.7,71.5,44.8,"73,290","196,570","123,280","274,885"
+4004,OK-04,OK,Oklahoma,2024,President,32.6,65.5,32.9,"101,433","203,961","102,528","311,328"
+4005,OK-05,OK,Oklahoma,2024,President,39.8,58,18.2,"134,935","196,796","61,861","339,341"
+4001,OK-01,OK,Oklahoma,2022,Senate,37.6,59,21.4,,,,
+4002,OK-02,OK,Oklahoma,2022,Senate,23.3,73.3,50,,,,
+4003,OK-03,OK,Oklahoma,2022,Senate,26.1,70,43.9,,,,
+4004,OK-04,OK,Oklahoma,2022,Senate,33,63.1,30.1,,,,
+4005,OK-05,OK,Oklahoma,2022,Senate,38.9,57.6,18.7,,,,
+4001,OK-01,OK,Oklahoma,2022,Senate Special,40.5,56.5,16,,,,
+4002,OK-02,OK,Oklahoma,2022,Senate Special,24.6,72.5,47.9,,,,
+4003,OK-03,OK,Oklahoma,2022,Senate Special,29.6,67.3,37.7,,,,
+4004,OK-04,OK,Oklahoma,2022,Senate Special,36.5,60.3,23.8,,,,
+4005,OK-05,OK,Oklahoma,2022,Senate Special,43.4,53.8,10.4,,,,
+4001,OK-01,OK,Oklahoma,2022,Governor,46,52,6,,,,
+4002,OK-02,OK,Oklahoma,2022,Governor,34,63,29,,,,
+4003,OK-03,OK,Oklahoma,2022,Governor,36,61,25,,,,
+4004,OK-04,OK,Oklahoma,2022,Governor,43,54,11,,,,
+4005,OK-05,OK,Oklahoma,2022,Governor,48.69,48.65,-0.04,,,,
+4001,OK-01,OK,Oklahoma,2020,President,37.3,60.1,22.8,"125,905","202,885","76,980","337,501"
+4002,OK-02,OK,Oklahoma,2020,President,22.1,76.1,54,"64,350","221,112","156,762","290,561"
+4003,OK-03,OK,Oklahoma,2020,President,23.2,74.6,51.4,"72,144","232,421","160,277","311,633"
+4004,OK-04,OK,Oklahoma,2020,President,32.3,65.3,33,"102,926","208,407","105,481","318,993"
+4005,OK-05,OK,Oklahoma,2020,President,45.9,51.5,5.6,"138,565","155,455","16,890","302,011"
+4001,OK-01,OK,Oklahoma,2020,Senate,37.5,58,20.5,"126,373","195,267","68,894","336,951"
+4002,OK-02,OK,Oklahoma,2020,Senate,24,71.8,47.8,"69,265","207,631","138,366","289,135"
+4003,OK-03,OK,Oklahoma,2020,Senate,24.1,71.6,47.5,"74,834","222,351","147,517","310,711"
+4004,OK-04,OK,Oklahoma,2020,Senate,32.1,63.5,31.4,"102,215","202,139","99,924","318,086"
+4005,OK-05,OK,Oklahoma,2020,Senate,45.5,50.3,4.8,"137,076","151,752","14,676","301,478"
+4001,OK-01,OK,Oklahoma,2018,Governor,44.2,52.9,8.7,"112,743","134,951","22,208","255,174"
+4002,OK-02,OK,Oklahoma,2018,Governor,37.1,59.5,22.4,"80,573","129,076","48,503","216,906"
+4003,OK-03,OK,Oklahoma,2018,Governor,33.5,62.6,29.1,"79,059","147,516","68,457","235,815"
+4004,OK-04,OK,Oklahoma,2018,Governor,42.7,53.7,11,"102,042","128,511","26,469","239,207"
+4005,OK-05,OK,Oklahoma,2018,Governor,52.9,43.7,-9.2,"126,556","104,525","-22,031","239,283"
+4001,OK-01,OK,Oklahoma,2016,President,32.7,61.4,28.7,"101,755","191,338","89,583","311,499"
+4002,OK-02,OK,Oklahoma,2016,President,22.8,72.9,50.1,"62,023","198,158","136,135","271,848"
+4003,OK-03,OK,Oklahoma,2016,President,20.9,73.6,52.7,"61,180","216,080","154,900","293,420"
+4004,OK-04,OK,Oklahoma,2016,President,28.3,65.7,37.4,"83,647","194,160","110,513","295,424"
+4005,OK-05,OK,Oklahoma,2016,President,39.8,53.2,13.4,"111,770","149,400","37,630","280,801"
+4001,OK-01,OK,Oklahoma,2016,Senate,27.2,65.2,38,"84,369","202,229","117,860","310,269"
+4002,OK-02,OK,Oklahoma,2016,Senate,24.1,69.3,45.2,"64,832","186,450","121,618","268,865"
+4003,OK-03,OK,Oklahoma,2016,Senate,17.2,76.2,59,"50,243","223,023","172,780","292,846"
+4004,OK-04,OK,Oklahoma,2016,Senate,23.1,68,44.9,"68,165","200,582","132,417","294,833"
+4005,OK-05,OK,Oklahoma,2016,Senate,31.4,60,28.6,"88,302","168,608","80,306","281,234"
 4001,OK-01,OK,Oklahoma,2014,Governor,,,,,,,
 4002,OK-02,OK,Oklahoma,2014,Governor,,,,,,,
 4003,OK-03,OK,Oklahoma,2014,Governor,,,,,,,
 4004,OK-04,OK,Oklahoma,2014,Governor,,,,,,,
 4005,OK-05,OK,Oklahoma,2014,Governor,,,,,,,
-4101,OR-01,OR,Oregon,2024,President,66.8,29.2,-37.6,,,0,
-4102,OR-02,OR,Oregon,2024,President,34.9,62,27.1,,,0,
-4103,OR-03,OR,Oregon,2024,President,70.7,25.1,-45.6,,,0,
-4104,OR-04,OR,Oregon,2024,President,54.1,42.2,-11.9,,,0,
-4105,OR-05,OR,Oregon,2024,President,52.5,43.8,-8.7,,,0,
-4106,OR-06,OR,Oregon,2024,President,53.8,42.4,-11.4,,,0,
-4101,OR-01,OR,Oregon,2022,Senate,,,,,,,
-4102,OR-02,OR,Oregon,2022,Senate,,,,,,,
-4103,OR-03,OR,Oregon,2022,Senate,,,,,,,
-4104,OR-04,OR,Oregon,2022,Senate,,,,,,,
-4105,OR-05,OR,Oregon,2022,Senate,,,,,,,
-4106,OR-06,OR,Oregon,2022,Senate,,,,,,,
-4101,OR-01,OR,Oregon,2022,Governor,,,,,,,
-4102,OR-02,OR,Oregon,2022,Governor,,,,,,,
-4103,OR-03,OR,Oregon,2022,Governor,,,,,,,
-4104,OR-04,OR,Oregon,2022,Governor,,,,,,,
-4105,OR-05,OR,Oregon,2022,Governor,,,,,,,
-4106,OR-06,OR,Oregon,2022,Governor,,,,,,,
-4101,OR-01,OR,Oregon,2020,President,63.3,34.1,-29.2,,,0,
-4102,OR-02,OR,Oregon,2020,President,42.1,55.6,13.5,,,0,
-4103,OR-03,OR,Oregon,2020,President,74.3,23.5,-50.8,,,0,
-4104,OR-04,OR,Oregon,2020,President,50.7,46.7,-4,,,0,
-4105,OR-05,OR,Oregon,2020,President,53.6,43.9,-9.7,,,0,
-4101,OR-01,OR,Oregon,2020,Senate,,,,,,,
-4102,OR-02,OR,Oregon,2020,Senate,,,,,,,
-4103,OR-03,OR,Oregon,2020,Senate,,,,,,,
-4104,OR-04,OR,Oregon,2020,Senate,,,,,,,
-4105,OR-05,OR,Oregon,2020,Senate,,,,,,,
-4101,OR-01,OR,Oregon,2018,Governor,,,,,,,
-4102,OR-02,OR,Oregon,2018,Governor,,,,,,,
-4103,OR-03,OR,Oregon,2018,Governor,,,,,,,
-4104,OR-04,OR,Oregon,2018,Governor,,,,,,,
-4105,OR-05,OR,Oregon,2018,Governor,,,,,,,
-4101,OR-01,OR,Oregon,2016,President,57.3,34.5,-22.8,,,0,
-4102,OR-02,OR,Oregon,2016,President,36.4,56.5,20.1,,,0,
-4103,OR-03,OR,Oregon,2016,President,70.7,22.5,-48.2,,,0,
-4104,OR-04,OR,Oregon,2016,President,46.1,46,-0.1,,,0,
-4105,OR-05,OR,Oregon,2016,President,48.3,44.1,-4.2,,,0,
-4101,OR-01,OR,Oregon,2016,Senate,,,,,,,
-4102,OR-02,OR,Oregon,2016,Senate,,,,,,,
-4103,OR-03,OR,Oregon,2016,Senate,,,,,,,
-4104,OR-04,OR,Oregon,2016,Senate,,,,,,,
-4105,OR-05,OR,Oregon,2016,Senate,,,,,,,
-4101,OR-01,OR,Oregon,2016,Governor,,,,,,,
-4102,OR-02,OR,Oregon,2016,Governor,,,,,,,
-4103,OR-03,OR,Oregon,2016,Governor,,,,,,,
-4104,OR-04,OR,Oregon,2016,Governor,,,,,,,
-4105,OR-05,OR,Oregon,2016,Governor,,,,,,,
-4201,PA-01,PA,Pennsylvania,2024,President,49.7,49.4,-0.3,,,0,
-4202,PA-02,PA,Pennsylvania,2024,President,67.3,31.5,-35.8,,,0,
-4203,PA-03,PA,Pennsylvania,2024,President,88.1,10.7,-77.4,,,0,
-4204,PA-04,PA,Pennsylvania,2024,President,57.4,41.6,-15.8,,,0,
-4205,PA-05,PA,Pennsylvania,2024,President,63.8,35.2,-28.6,,,0,
-4206,PA-06,PA,Pennsylvania,2024,President,55.2,43.8,-11.4,,,0,
-4207,PA-07,PA,Pennsylvania,2024,President,47.9,51.1,3.2,,,0,
-4208,PA-08,PA,Pennsylvania,2024,President,45.4,53.8,8.4,,,0,
-4209,PA-09,PA,Pennsylvania,2024,President,30.6,68.5,37.9,,,0,
-4210,PA-10,PA,Pennsylvania,2024,President,46.8,52,5.2,,,0,
-4211,PA-11,PA,Pennsylvania,2024,President,38.8,60.2,21.4,,,0,
-4212,PA-12,PA,Pennsylvania,2024,President,59.1,40,-19.1,,,0,
-4213,PA-13,PA,Pennsylvania,2024,President,26.8,72.4,45.6,,,0,
-4214,PA-14,PA,Pennsylvania,2024,President,33,66.3,33.3,,,0,
-4215,PA-15,PA,Pennsylvania,2024,President,30.6,68.6,38,,,0,
-4216,PA-16,PA,Pennsylvania,2024,President,38.2,61,22.8,,,0,
-4217,PA-17,PA,Pennsylvania,2024,President,52.3,46.8,-5.5,,,0,
-4201,PA-01,PA,Pennsylvania,2024,Senate,,,,,,,
-4202,PA-02,PA,Pennsylvania,2024,Senate,,,,,,,
-4203,PA-03,PA,Pennsylvania,2024,Senate,,,,,,,
-4204,PA-04,PA,Pennsylvania,2024,Senate,,,,,,,
-4205,PA-05,PA,Pennsylvania,2024,Senate,,,,,,,
-4206,PA-06,PA,Pennsylvania,2024,Senate,,,,,,,
-4207,PA-07,PA,Pennsylvania,2024,Senate,,,,,,,
-4208,PA-08,PA,Pennsylvania,2024,Senate,,,,,,,
-4209,PA-09,PA,Pennsylvania,2024,Senate,,,,,,,
-4210,PA-10,PA,Pennsylvania,2024,Senate,,,,,,,
-4211,PA-11,PA,Pennsylvania,2024,Senate,,,,,,,
-4212,PA-12,PA,Pennsylvania,2024,Senate,,,,,,,
-4213,PA-13,PA,Pennsylvania,2024,Senate,,,,,,,
-4214,PA-14,PA,Pennsylvania,2024,Senate,,,,,,,
-4215,PA-15,PA,Pennsylvania,2024,Senate,,,,,,,
-4216,PA-16,PA,Pennsylvania,2024,Senate,,,,,,,
-4217,PA-17,PA,Pennsylvania,2024,Senate,,,,,,,
-4201,PA-01,PA,Pennsylvania,2022,Senate,,,,,,,
-4202,PA-02,PA,Pennsylvania,2022,Senate,,,,,,,
-4203,PA-03,PA,Pennsylvania,2022,Senate,,,,,,,
-4204,PA-04,PA,Pennsylvania,2022,Senate,,,,,,,
-4205,PA-05,PA,Pennsylvania,2022,Senate,,,,,,,
-4206,PA-06,PA,Pennsylvania,2022,Senate,,,,,,,
-4207,PA-07,PA,Pennsylvania,2022,Senate,,,,,,,
-4208,PA-08,PA,Pennsylvania,2022,Senate,,,,,,,
-4209,PA-09,PA,Pennsylvania,2022,Senate,,,,,,,
-4210,PA-10,PA,Pennsylvania,2022,Senate,,,,,,,
-4211,PA-11,PA,Pennsylvania,2022,Senate,,,,,,,
-4212,PA-12,PA,Pennsylvania,2022,Senate,,,,,,,
-4213,PA-13,PA,Pennsylvania,2022,Senate,,,,,,,
-4214,PA-14,PA,Pennsylvania,2022,Senate,,,,,,,
-4215,PA-15,PA,Pennsylvania,2022,Senate,,,,,,,
-4216,PA-16,PA,Pennsylvania,2022,Senate,,,,,,,
-4217,PA-17,PA,Pennsylvania,2022,Senate,,,,,,,
-4201,PA-01,PA,Pennsylvania,2022,Governor,,,,,,,
-4202,PA-02,PA,Pennsylvania,2022,Governor,,,,,,,
-4203,PA-03,PA,Pennsylvania,2022,Governor,,,,,,,
-4204,PA-04,PA,Pennsylvania,2022,Governor,,,,,,,
-4205,PA-05,PA,Pennsylvania,2022,Governor,,,,,,,
-4206,PA-06,PA,Pennsylvania,2022,Governor,,,,,,,
-4207,PA-07,PA,Pennsylvania,2022,Governor,,,,,,,
-4208,PA-08,PA,Pennsylvania,2022,Governor,,,,,,,
-4209,PA-09,PA,Pennsylvania,2022,Governor,,,,,,,
-4210,PA-10,PA,Pennsylvania,2022,Governor,,,,,,,
-4211,PA-11,PA,Pennsylvania,2022,Governor,,,,,,,
-4212,PA-12,PA,Pennsylvania,2022,Governor,,,,,,,
-4213,PA-13,PA,Pennsylvania,2022,Governor,,,,,,,
-4214,PA-14,PA,Pennsylvania,2022,Governor,,,,,,,
-4215,PA-15,PA,Pennsylvania,2022,Governor,,,,,,,
-4216,PA-16,PA,Pennsylvania,2022,Governor,,,,,,,
-4217,PA-17,PA,Pennsylvania,2022,Governor,,,,,,,
-4201,PA-01,PA,Pennsylvania,2020,President,52.4,46.6,-5.8,,,0,
-4202,PA-02,PA,Pennsylvania,2020,President,70.1,29.1,-41,,,0,
-4203,PA-03,PA,Pennsylvania,2020,President,91.3,8.1,-83.2,,,0,
-4204,PA-04,PA,Pennsylvania,2020,President,61.5,37.4,-24.1,,,0,
-4205,PA-05,PA,Pennsylvania,2020,President,65.1,34,-31.1,,,0,
-4206,PA-06,PA,Pennsylvania,2020,President,56.9,41.9,-15,,,0,
-4207,PA-07,PA,Pennsylvania,2020,President,51.8,47,-4.8,,,0,
-4208,PA-08,PA,Pennsylvania,2020,President,47.3,51.7,4.4,,,0,
-4209,PA-09,PA,Pennsylvania,2020,President,34.1,64.5,30.4,,,0,
-4210,PA-10,PA,Pennsylvania,2020,President,47.8,50.7,2.9,,,0,
-4211,PA-11,PA,Pennsylvania,2020,President,38.3,60.2,21.9,,,0,
-4212,PA-12,PA,Pennsylvania,2020,President,31.2,67.3,36.1,,,0,
-4213,PA-13,PA,Pennsylvania,2020,President,27.2,71.6,44.4,,,0,
-4214,PA-14,PA,Pennsylvania,2020,President,35.7,63.2,27.5,,,0,
-4215,PA-15,PA,Pennsylvania,2020,President,27.5,71.2,43.7,,,0,
-4216,PA-16,PA,Pennsylvania,2020,President,40,58.7,18.7,,,0,
-4217,PA-17,PA,Pennsylvania,2020,President,50.7,48,-2.7,,,0,
-4218,PA-18,PA,Pennsylvania,2020,President,64.5,34.4,-30.1,,,0,
-4201,PA-01,PA,Pennsylvania,2018,Senate,,,,,,,
-4202,PA-02,PA,Pennsylvania,2018,Senate,,,,,,,
-4203,PA-03,PA,Pennsylvania,2018,Senate,,,,,,,
-4204,PA-04,PA,Pennsylvania,2018,Senate,,,,,,,
-4205,PA-05,PA,Pennsylvania,2018,Senate,,,,,,,
-4206,PA-06,PA,Pennsylvania,2018,Senate,,,,,,,
-4207,PA-07,PA,Pennsylvania,2018,Senate,,,,,,,
-4208,PA-08,PA,Pennsylvania,2018,Senate,,,,,,,
-4209,PA-09,PA,Pennsylvania,2018,Senate,,,,,,,
-4210,PA-10,PA,Pennsylvania,2018,Senate,,,,,,,
-4211,PA-11,PA,Pennsylvania,2018,Senate,,,,,,,
-4212,PA-12,PA,Pennsylvania,2018,Senate,,,,,,,
-4213,PA-13,PA,Pennsylvania,2018,Senate,,,,,,,
-4214,PA-14,PA,Pennsylvania,2018,Senate,,,,,,,
-4215,PA-15,PA,Pennsylvania,2018,Senate,,,,,,,
-4216,PA-16,PA,Pennsylvania,2018,Senate,,,,,,,
-4217,PA-17,PA,Pennsylvania,2018,Senate,,,,,,,
-4218,PA-18,PA,Pennsylvania,2018,Senate,,,,,,,
-4201,PA-01,PA,Pennsylvania,2018,Governor,,,,,,,
-4202,PA-02,PA,Pennsylvania,2018,Governor,,,,,,,
-4203,PA-03,PA,Pennsylvania,2018,Governor,,,,,,,
-4204,PA-04,PA,Pennsylvania,2018,Governor,,,,,,,
-4205,PA-05,PA,Pennsylvania,2018,Governor,,,,,,,
-4206,PA-06,PA,Pennsylvania,2018,Governor,,,,,,,
-4207,PA-07,PA,Pennsylvania,2018,Governor,,,,,,,
-4208,PA-08,PA,Pennsylvania,2018,Governor,,,,,,,
-4209,PA-09,PA,Pennsylvania,2018,Governor,,,,,,,
-4210,PA-10,PA,Pennsylvania,2018,Governor,,,,,,,
-4211,PA-11,PA,Pennsylvania,2018,Governor,,,,,,,
-4212,PA-12,PA,Pennsylvania,2018,Governor,,,,,,,
-4213,PA-13,PA,Pennsylvania,2018,Governor,,,,,,,
-4214,PA-14,PA,Pennsylvania,2018,Governor,,,,,,,
-4215,PA-15,PA,Pennsylvania,2018,Governor,,,,,,,
-4216,PA-16,PA,Pennsylvania,2018,Governor,,,,,,,
-4217,PA-17,PA,Pennsylvania,2018,Governor,,,,,,,
-4218,PA-18,PA,Pennsylvania,2018,Governor,,,,,,,
-4201,PA-01,PA,Pennsylvania,2016,President,49.1,47.1,-2,,,0,
-4202,PA-02,PA,Pennsylvania,2016,President,72.9,24.9,-48,,,0,
-4203,PA-03,PA,Pennsylvania,2016,President,90.9,7,-83.9,,,0,
-4204,PA-04,PA,Pennsylvania,2016,President,57.8,38.5,-19.3,,,0,
-4205,PA-05,PA,Pennsylvania,2016,President,62.6,34.4,-28.2,,,0,
-4206,PA-06,PA,Pennsylvania,2016,President,52.6,43.3,-9.3,,,0,
-4207,PA-07,PA,Pennsylvania,2016,President,48.7,47.6,-1.1,,,0,
-4208,PA-08,PA,Pennsylvania,2016,President,43.7,53.3,9.6,,,0,
-4209,PA-09,PA,Pennsylvania,2016,President,31,65,34,,,0,
-4210,PA-10,PA,Pennsylvania,2016,President,43.4,52.3,8.9,,,0,
-4211,PA-11,PA,Pennsylvania,2016,President,34.7,60.5,25.8,,,0,
-4212,PA-12,PA,Pennsylvania,2016,President,29.7,66.1,36.4,,,0,
-4213,PA-13,PA,Pennsylvania,2016,President,25.5,71.2,45.7,,,0,
-4214,PA-14,PA,Pennsylvania,2016,President,33.9,62.9,29,,,0,
-4215,PA-15,PA,Pennsylvania,2016,President,26.5,69.8,43.3,,,0,
-4216,PA-16,PA,Pennsylvania,2016,President,37.9,57.9,20,,,0,
-4217,PA-17,PA,Pennsylvania,2016,President,46.8,49.4,2.6,,,0,
-4218,PA-18,PA,Pennsylvania,2016,President,62.1,34.6,-27.5,,,0,
-4201,PA-01,PA,Pennsylvania,2016,Senate,,,,,,,
-4202,PA-02,PA,Pennsylvania,2016,Senate,,,,,,,
-4203,PA-03,PA,Pennsylvania,2016,Senate,,,,,,,
-4204,PA-04,PA,Pennsylvania,2016,Senate,,,,,,,
-4205,PA-05,PA,Pennsylvania,2016,Senate,,,,,,,
-4206,PA-06,PA,Pennsylvania,2016,Senate,,,,,,,
-4207,PA-07,PA,Pennsylvania,2016,Senate,,,,,,,
-4208,PA-08,PA,Pennsylvania,2016,Senate,,,,,,,
-4209,PA-09,PA,Pennsylvania,2016,Senate,,,,,,,
-4210,PA-10,PA,Pennsylvania,2016,Senate,,,,,,,
-4211,PA-11,PA,Pennsylvania,2016,Senate,,,,,,,
-4212,PA-12,PA,Pennsylvania,2016,Senate,,,,,,,
-4213,PA-13,PA,Pennsylvania,2016,Senate,,,,,,,
-4214,PA-14,PA,Pennsylvania,2016,Senate,,,,,,,
-4215,PA-15,PA,Pennsylvania,2016,Senate,,,,,,,
-4216,PA-16,PA,Pennsylvania,2016,Senate,,,,,,,
-4217,PA-17,PA,Pennsylvania,2016,Senate,,,,,,,
-4218,PA-18,PA,Pennsylvania,2016,Senate,,,,,,,
+4101,OR-01,OR,Oregon,2024,President,66.8,29.2,-37.6,"245,702","107,307","-138,395","368,037"
+4102,OR-02,OR,Oregon,2024,President,34.9,62,27.1,"128,140","227,486","99,346","367,172"
+4103,OR-03,OR,Oregon,2024,President,70.7,25.1,-45.6,"248,433","88,226","-160,207","351,240"
+4104,OR-04,OR,Oregon,2024,President,54.1,42.2,-11.9,"211,870","164,979","-46,891","391,317"
+4105,OR-05,OR,Oregon,2024,President,52.5,43.8,-8.7,"218,398","182,440","-35,958","416,287"
+4106,OR-06,OR,Oregon,2024,President,53.7,42.5,-11.2,"188,844","149,147","-39,697","351,344"
+4101,OR-01,OR,Oregon,2022,Senate,66,30,-36,,,,
+4102,OR-02,OR,Oregon,2022,Senate,37,60,23,,,,
+4103,OR-03,OR,Oregon,2022,Senate,71,25,-46,,,,
+4104,OR-04,OR,Oregon,2022,Senate,55,41,-14,,,,
+4105,OR-05,OR,Oregon,2022,Senate,52,45,-7,,,,
+4106,OR-06,OR,Oregon,2022,Senate,53,44,-9,,,,
+4101,OR-01,OR,Oregon,2022,Governor,57,31,-26,,,,
+4102,OR-02,OR,Oregon,2022,Governor,27,64,37,,,,
+4103,OR-03,OR,Oregon,2022,Governor,65,27,-38,,,,
+4104,OR-04,OR,Oregon,2022,Governor,46,44,-2,,,,
+4105,OR-05,OR,Oregon,2022,Governor,43,48,5,,,,
+4106,OR-06,OR,Oregon,2022,Governor,44,46,2,,,,
+4101,OR-01,OR,Oregon,2020,President,62.7,33.8,-28.9,"298,745","160,810","-137,935","476,159"
+4102,OR-02,OR,Oregon,2020,President,41.8,55.3,13.5,"197,467","260,948","63,481","472,049"
+4103,OR-03,OR,Oregon,2020,President,73.8,23.3,-50.5,"356,488","112,330","-244,158","483,039"
+4104,OR-04,OR,Oregon,2020,President,50.3,46.4,-3.9,"238,581","219,759","-18,822","474,101"
+4105,OR-05,OR,Oregon,2020,President,53.2,43.6,-9.6,"248,609","203,855","-44,754","467,692"
+4101,OR-01,OR,Oregon,2020,Senate,62.3,33.7,-28.6,"290,037","156,593","-133,444","465,225"
+4102,OR-02,OR,Oregon,2020,Senate,43.3,53.5,10.2,"199,995","246,915","46,920","461,920"
+4103,OR-03,OR,Oregon,2020,Senate,73.4,22.5,-50.9,"347,059","106,241","-240,818","472,684"
+4104,OR-04,OR,Oregon,2020,Senate,51.7,44.5,-7.2,"239,438","205,979","-33,459","462,975"
+4105,OR-05,OR,Oregon,2020,Senate,53.4,43,-10.4,"244,040","196,377","-47,663","457,216"
+4101,OR-01,OR,Oregon,2018,Governor,53.8,40.5,-13.3,"199,519","150,308","-49,211","371,029"
+4102,OR-02,OR,Oregon,2018,Governor,35.4,57.2,21.8,"130,069","210,269","80,200","367,683"
+4103,OR-03,OR,Oregon,2018,Governor,69.2,26.4,-42.8,"269,619","103,101","-166,518","389,807"
+4104,OR-04,OR,Oregon,2018,Governor,44.8,47.2,2.4,"167,505","176,135","8,630","373,563"
+4105,OR-05,OR,Oregon,2018,Governor,46,48,2,"167,417","174,487","7,070","363,763"
+4101,OR-01,OR,Oregon,2016,President,55,33.1,-21.9,"219,568","132,269","-87,299","399,267"
+4102,OR-02,OR,Oregon,2016,President,35.3,54.7,19.4,"138,712","215,018","76,306","392,919"
+4103,OR-03,OR,Oregon,2016,President,68.4,21.7,-46.7,"282,355","89,679","-192,676","412,774"
+4104,OR-04,OR,Oregon,2016,President,44.5,44.4,-0.1,"180,849","180,244",-605,"406,232"
+4105,OR-05,OR,Oregon,2016,President,46.4,42.3,-4.1,"180,252","164,426","-15,826","388,840"
+4101,OR-01,OR,Oregon,2016,Senate,59.7,30.6,-29.1,"232,159","119,143","-113,016","389,181"
+4102,OR-02,OR,Oregon,2016,Senate,47.9,42.9,-5,"184,303","164,741","-19,562","384,448"
+4103,OR-03,OR,Oregon,2016,Senate,69.9,18.5,-51.4,"279,737","74,166","-205,571","400,166"
+4104,OR-04,OR,Oregon,2016,Senate,51.9,37.5,-14.4,"205,783","148,595","-57,188","396,617"
+4105,OR-05,OR,Oregon,2016,Senate,53.2,37.8,-15.4,"202,619","143,867","-58,752","380,810"
+4101,OR-01,OR,Oregon,2016,Governor Special,53.7,40.5,-13.2,"207,644","156,738","-50,906","386,829"
+4102,OR-02,OR,Oregon,2016,Governor Special,38.1,55.1,17,"146,226","211,228","65,002","383,374"
+4103,OR-03,OR,Oregon,2016,Governor Special,68.4,26.3,-42.1,"271,607","104,437","-167,170","396,881"
+4104,OR-04,OR,Oregon,2016,Governor Special,46.9,46.4,-0.5,"185,707","183,904","-1,803","396,220"
+4105,OR-05,OR,Oregon,2016,Governor Special,45.5,49.4,3.9,"173,429","188,569","15,140","381,485"
+4201,PA-01,PA,Pennsylvania,2024,President,49.7,49.4,-0.3,"235,100","233,597","-1,503","473,305"
+4202,PA-02,PA,Pennsylvania,2024,President,67.3,31.5,-35.8,"198,759","93,169","-105,590","295,441"
+4203,PA-03,PA,Pennsylvania,2024,President,88.1,10.7,-77.4,"346,947","42,317","-304,630","394,010"
+4204,PA-04,PA,Pennsylvania,2024,President,57.4,41.6,-15.8,"268,397","194,494","-73,903","467,751"
+4205,PA-05,PA,Pennsylvania,2024,President,63.8,35.2,-28.6,"267,157","147,219","-119,938","418,780"
+4206,PA-06,PA,Pennsylvania,2024,President,55.2,43.8,-11.4,"234,627","186,142","-48,485","425,113"
+4207,PA-07,PA,Pennsylvania,2024,President,47.9,51.1,3.2,"196,712","209,881","13,169","410,973"
+4208,PA-08,PA,Pennsylvania,2024,President,45.4,53.8,8.4,"177,079","210,231","33,152","390,437"
+4209,PA-09,PA,Pennsylvania,2024,President,30.6,68.5,37.9,"121,858","272,905","151,047","398,355"
+4210,PA-10,PA,Pennsylvania,2024,President,46.8,52,5.2,"192,789","214,275","21,486","411,793"
+4211,PA-11,PA,Pennsylvania,2024,President,38.8,60.2,21.4,"160,185","248,335","88,150","412,559"
+4212,PA-12,PA,Pennsylvania,2024,President,59.1,39.9,-19.2,"253,683","171,396","-82,287","429,049"
+4213,PA-13,PA,Pennsylvania,2024,President,26.8,72.4,45.6,"110,793","298,896","188,103","412,997"
+4214,PA-14,PA,Pennsylvania,2024,President,33,66.3,33.3,"138,822","279,264","140,442","421,082"
+4215,PA-15,PA,Pennsylvania,2024,President,30.6,68.6,38,"121,641","272,777","151,136","397,727"
+4216,PA-16,PA,Pennsylvania,2024,President,38.2,61,22.8,"159,531","254,618","95,087","417,675"
+4217,PA-17,PA,Pennsylvania,2024,President,52.3,46.8,-5.5,"238,962","213,792","-25,170","457,099"
+4201,PA-01,PA,Pennsylvania,2024,Senate,49.3,48.4,-0.9,,,,
+4202,PA-02,PA,Pennsylvania,2024,Senate,67.8,29.3,-38.5,,,,
+4203,PA-03,PA,Pennsylvania,2024,Senate,86.7,10.4,-76.3,,,,
+4204,PA-04,PA,Pennsylvania,2024,Senate,56.8,40.8,-16,,,,
+4205,PA-05,PA,Pennsylvania,2024,Senate,62.9,34.8,-28.1,,,,
+4206,PA-06,PA,Pennsylvania,2024,Senate,54,43.4,-10.6,,,,
+4207,PA-07,PA,Pennsylvania,2024,Senate,47.8,49.6,1.8,,,,
+4208,PA-08,PA,Pennsylvania,2024,Senate,46.6,51.1,4.5,,,,
+4209,PA-09,PA,Pennsylvania,2024,Senate,31.3,66,34.7,,,,
+4210,PA-10,PA,Pennsylvania,2024,Senate,46.3,50.5,4.2,,,,
+4211,PA-11,PA,Pennsylvania,2024,Senate,38.6,58.5,19.9,,,,
+4212,PA-12,PA,Pennsylvania,2024,Senate,59.1,38.3,-20.8,,,,
+4213,PA-13,PA,Pennsylvania,2024,Senate,27.8,69.6,41.8,,,,
+4214,PA-14,PA,Pennsylvania,2024,Senate,34.3,63.3,29,,,,
+4215,PA-15,PA,Pennsylvania,2024,Senate,31.2,66.1,34.9,,,,
+4216,PA-16,PA,Pennsylvania,2024,Senate,38.9,58.7,19.8,,,,
+4217,PA-17,PA,Pennsylvania,2024,Senate,52.3,45.4,-6.9,,,,
+4201,PA-01,PA,Pennsylvania,2022,Senate,52.4,44.9,-7.5,"194,301","166,287","-28,014","370,587"
+4202,PA-02,PA,Pennsylvania,2022,Senate,72,26,-46,"138,480","50,020","-88,460","192,352"
+4203,PA-03,PA,Pennsylvania,2022,Senate,90.5,8.2,-82.3,"257,815","23,367","-234,448","284,912"
+4204,PA-04,PA,Pennsylvania,2022,Senate,59.8,37.6,-22.2,"221,563","139,218","-82,345","370,243"
+4205,PA-05,PA,Pennsylvania,2022,Senate,65.4,32.4,-33,"208,626","103,425","-105,201","318,948"
+4206,PA-06,PA,Pennsylvania,2022,Senate,56.3,41.1,-15.2,"184,694","134,840","-49,854","328,152"
+4207,PA-07,PA,Pennsylvania,2022,Senate,50.7,46.4,-4.3,"151,653","138,743","-12,910","299,090"
+4208,PA-08,PA,Pennsylvania,2022,Senate,49.4,48.2,-1.2,"141,802","138,276","-3,526","287,038"
+4209,PA-09,PA,Pennsylvania,2022,Senate,33.1,63.4,30.3,"100,315","192,442","92,127","303,298"
+4210,PA-10,PA,Pennsylvania,2022,Senate,48.3,49.2,0.9,"151,987","154,772","2,785","314,588"
+4211,PA-11,PA,Pennsylvania,2022,Senate,39.8,57.8,18,"126,792","184,212","57,420","318,744"
+4212,PA-12,PA,Pennsylvania,2022,Senate,63.2,35.2,-28,"213,905","119,061","-94,844","338,279"
+4213,PA-13,PA,Pennsylvania,2022,Senate,28.8,68.4,39.6,"92,441","219,372","126,931","320,638"
+4214,PA-14,PA,Pennsylvania,2022,Senate,37.9,59.9,22,"123,576","195,211","71,635","325,877"
+4215,PA-15,PA,Pennsylvania,2022,Senate,33.4,63.8,30.4,"102,447","195,623","93,176","306,394"
+4216,PA-16,PA,Pennsylvania,2022,Senate,41.9,55.4,13.5,"134,778","178,183","43,405","321,402"
+4217,PA-17,PA,Pennsylvania,2022,Senate,56,42.1,-13.9,"205,142","154,039","-51,103","366,096"
+4201,PA-01,PA,Pennsylvania,2022,Governor,59,39.2,-19.8,"218,566","145,148","-73,418","370,371"
+4202,PA-02,PA,Pennsylvania,2022,Governor,76.4,22.1,-54.3,"146,697","42,513","-104,184","191,980"
+4203,PA-03,PA,Pennsylvania,2022,Governor,92.5,6.5,-86,"263,497","18,422","-245,075","285,015"
+4204,PA-04,PA,Pennsylvania,2022,Governor,66,32.4,-33.6,"244,339","120,173","-124,166","370,399"
+4205,PA-05,PA,Pennsylvania,2022,Governor,70.3,28.3,-42,"224,237","90,132","-134,105","319,035"
+4206,PA-06,PA,Pennsylvania,2022,Governor,61.3,36.8,-24.5,"201,074","120,595","-80,479","328,112"
+4207,PA-07,PA,Pennsylvania,2022,Governor,55.3,42.5,-12.8,"165,527","127,245","-38,282","299,093"
+4208,PA-08,PA,Pennsylvania,2022,Governor,53.6,44.5,-9.1,"153,854","127,542","-26,312","286,782"
+4209,PA-09,PA,Pennsylvania,2022,Governor,38.1,59.3,21.2,"115,634","179,957","64,323","303,349"
+4210,PA-10,PA,Pennsylvania,2022,Governor,54.9,43,-11.9,"172,630","135,417","-37,213","314,565"
+4211,PA-11,PA,Pennsylvania,2022,Governor,45.9,52.2,6.3,"146,055","166,171","20,116","318,395"
+4212,PA-12,PA,Pennsylvania,2022,Governor,68.1,30.3,-37.8,"229,981","102,147","-127,834","337,599"
+4213,PA-13,PA,Pennsylvania,2022,Governor,34.4,63.9,29.5,"110,639","205,316","94,677","321,214"
+4214,PA-14,PA,Pennsylvania,2022,Governor,43.7,54.6,10.9,"142,355","177,989","35,634","325,810"
+4215,PA-15,PA,Pennsylvania,2022,Governor,37.8,60.3,22.5,"116,126","185,270","69,144","307,279"
+4216,PA-16,PA,Pennsylvania,2022,Governor,47.6,50.5,2.9,"152,965","162,101","9,136","321,293"
+4217,PA-17,PA,Pennsylvania,2022,Governor,62,36.2,-25.8,"226,856","132,199","-94,657","365,638"
+4201,PA-01,PA,Pennsylvania,2020,President,52.4,46.6,-5.8,"233,446","207,433","-26,013","445,566"
+4202,PA-02,PA,Pennsylvania,2020,President,70.1,29.1,-41,"207,491","86,128","-121,363","295,805"
+4203,PA-03,PA,Pennsylvania,2020,President,91.3,8.1,-83.2,"357,935","31,764","-326,171","392,077"
+4204,PA-04,PA,Pennsylvania,2020,President,61.5,37.4,-24.1,"276,513","168,209","-108,304","449,399"
+4205,PA-05,PA,Pennsylvania,2020,President,65.1,34,-31.1,"263,655","137,682","-125,973","404,753"
+4206,PA-06,PA,Pennsylvania,2020,President,56.9,41.9,-15,"231,791","170,356","-61,435","407,041"
+4207,PA-07,PA,Pennsylvania,2020,President,51.8,47,-4.8,"199,283","180,774","-18,509","384,606"
+4208,PA-08,PA,Pennsylvania,2020,President,47.3,51.7,4.4,"168,603","184,346","15,743","356,537"
+4209,PA-09,PA,Pennsylvania,2020,President,34.1,64.5,30.4,"122,749","232,357","109,608","360,102"
+4210,PA-10,PA,Pennsylvania,2020,President,47.8,50.7,2.9,"189,816","201,420","11,604","397,047"
+4211,PA-11,PA,Pennsylvania,2020,President,38.3,60.2,21.9,"148,540","233,066","84,526","387,419"
+4212,PA-12,PA,Pennsylvania,2020,President,31.2,67.3,36.1,"107,802","232,402","124,600","345,195"
+4213,PA-13,PA,Pennsylvania,2020,President,27.2,71.6,44.4,"100,402","263,906","163,504","368,686"
+4214,PA-14,PA,Pennsylvania,2020,President,35.7,63.2,27.5,"135,920","240,512","104,592","380,481"
+4215,PA-15,PA,Pennsylvania,2020,President,27.5,71.2,43.7,"96,911","250,621","153,710","352,069"
+4216,PA-16,PA,Pennsylvania,2020,President,40,58.7,18.7,"145,188","212,922","67,734","362,823"
+4217,PA-17,PA,Pennsylvania,2020,President,50.7,48,-2.7,"221,789","209,910","-11,879","437,161"
+4218,PA-18,PA,Pennsylvania,2020,President,64.5,34.4,-30.1,"252,641","134,634","-118,007","391,582"
+4201,PA-01,PA,Pennsylvania,2018,Senate,56.7,41.7,-15,"187,272","137,505","-49,767","330,143"
+4202,PA-02,PA,Pennsylvania,2018,Senate,78.5,20.3,-58.2,"161,059","41,693","-119,366","205,100"
+4203,PA-03,PA,Pennsylvania,2018,Senate,93.1,5.8,-87.3,"289,739","17,945","-271,794","311,329"
+4204,PA-04,PA,Pennsylvania,2018,Senate,64.4,34.1,-30.3,"215,017","113,955","-101,062","334,075"
+4205,PA-05,PA,Pennsylvania,2018,Senate,67.9,30.8,-37.1,"208,581","94,755","-113,826","307,283"
+4206,PA-06,PA,Pennsylvania,2018,Senate,59.1,39.2,-19.9,"178,339","118,301","-60,038","301,994"
+4207,PA-07,PA,Pennsylvania,2018,Senate,56.1,42.2,-13.9,"147,651","111,150","-36,501","263,311"
+4208,PA-08,PA,Pennsylvania,2018,Senate,51.9,47,-4.9,"129,530","117,226","-12,304","249,588"
+4209,PA-09,PA,Pennsylvania,2018,Senate,39.6,58.8,19.2,"99,228","147,438","48,210","250,817"
+4210,PA-10,PA,Pennsylvania,2018,Senate,49.8,48.2,-1.6,"145,037","140,231","-4,806","291,192"
+4211,PA-11,PA,Pennsylvania,2018,Senate,42,55.8,13.8,"116,420","154,459","38,039","276,932"
+4212,PA-12,PA,Pennsylvania,2018,Senate,37.8,60.3,22.5,"92,958","148,280","55,322","246,005"
+4213,PA-13,PA,Pennsylvania,2018,Senate,34.2,64.1,29.9,"86,946","162,943","75,997","254,084"
+4214,PA-14,PA,Pennsylvania,2018,Senate,46,52.3,6.3,"122,149","138,832","16,683","265,274"
+4215,PA-15,PA,Pennsylvania,2018,Senate,38,60.2,22.2,"92,863","146,961","54,098","244,161"
+4216,PA-16,PA,Pennsylvania,2018,Senate,48.1,50.2,2.1,"125,386","130,940","5,554","260,740"
+4217,PA-17,PA,Pennsylvania,2018,Senate,57.5,40.7,-16.8,"186,840","132,443","-54,397","325,119"
+4218,PA-18,PA,Pennsylvania,2018,Senate,70.9,27.4,-43.5,"207,599","80,205","-127,394","292,885"
+4201,PA-01,PA,Pennsylvania,2018,Governor,59,39.6,-19.4,"194,919","130,647","-64,272","330,220"
+4202,PA-02,PA,Pennsylvania,2018,Governor,79.2,19.8,-59.4,"162,548","40,587","-121,961","205,285"
+4203,PA-03,PA,Pennsylvania,2018,Governor,93.5,5.5,-88,"290,473","17,214","-273,259","310,756"
+4204,PA-04,PA,Pennsylvania,2018,Governor,66.4,32.3,-34.1,"222,078","108,105","-113,973","334,626"
+4205,PA-05,PA,Pennsylvania,2018,Governor,69.4,29.5,-39.9,"213,127","90,482","-122,645","306,935"
+4206,PA-06,PA,Pennsylvania,2018,Governor,61.1,37.3,-23.8,"184,473","112,710","-71,763","301,998"
+4207,PA-07,PA,Pennsylvania,2018,Governor,58.8,39.5,-19.3,"155,276","104,269","-51,007","264,002"
+4208,PA-08,PA,Pennsylvania,2018,Governor,56,42.6,-13.4,"139,381","106,082","-33,299","248,813"
+4209,PA-09,PA,Pennsylvania,2018,Governor,43.8,54.4,10.6,"109,793","136,191","26,398","250,386"
+4210,PA-10,PA,Pennsylvania,2018,Governor,54.3,43.8,-10.5,"158,062","127,519","-30,543","291,152"
+4211,PA-11,PA,Pennsylvania,2018,Governor,44.8,53.3,8.5,"123,943","147,568","23,625","276,879"
+4212,PA-12,PA,Pennsylvania,2018,Governor,39.4,58.6,19.2,"96,950","144,155","47,205","245,975"
+4213,PA-13,PA,Pennsylvania,2018,Governor,35.1,63.2,28.1,"89,454","161,005","71,551","254,603"
+4214,PA-14,PA,Pennsylvania,2018,Governor,47.7,50.6,2.9,"126,957","134,715","7,758","266,386"
+4215,PA-15,PA,Pennsylvania,2018,Governor,38.1,60.1,22,"93,454","147,280","53,826","245,059"
+4216,PA-16,PA,Pennsylvania,2018,Governor,49.5,48.8,-0.7,"129,907","128,036","-1,871","262,327"
+4217,PA-17,PA,Pennsylvania,2018,Governor,59.4,39.1,-20.3,"193,116","127,106","-66,010","325,160"
+4218,PA-18,PA,Pennsylvania,2018,Governor,72.4,26.2,-46.2,"212,042","76,600","-135,442","292,697"
+4201,PA-01,PA,Pennsylvania,2016,President,79.5,18.2,-61.3,"250,973","57,527","-193,446","315,657"
+4202,PA-02,PA,Pennsylvania,2016,President,90.4,7.6,-82.8,"334,275","28,065","-306,210","369,705"
+4203,PA-03,PA,Pennsylvania,2016,President,35,61.1,26.1,"113,569","197,968","84,399","324,216"
+4204,PA-04,PA,Pennsylvania,2016,President,37.2,58.6,21.4,"125,947","198,570","72,623","338,870"
+4205,PA-05,PA,Pennsylvania,2016,President,33.5,62.3,28.8,"105,137","195,724","90,587","314,131"
+4206,PA-06,PA,Pennsylvania,2016,President,48.2,47.6,-0.6,"177,637","175,331","-2,306","368,541"
+4207,PA-07,PA,Pennsylvania,2016,President,49.3,47,-2.3,"190,565","181,396","-9,169","386,240"
+4208,PA-08,PA,Pennsylvania,2016,President,48,48.2,0.2,"185,686","186,604",918,"387,023"
+4209,PA-09,PA,Pennsylvania,2016,President,26.3,70.7,44.4,"75,279","202,101","126,822","285,941"
+4210,PA-10,PA,Pennsylvania,2016,President,30.1,66.1,36,"93,076","204,531","111,455","309,202"
+4211,PA-11,PA,Pennsylvania,2016,President,36.2,60.1,23.9,"115,413","191,681","76,268","319,175"
+4212,PA-12,PA,Pennsylvania,2016,President,37.9,58.6,20.7,"137,589","213,091","75,502","363,367"
+4213,PA-13,PA,Pennsylvania,2016,President,65.3,31.7,-33.6,"217,255","105,552","-111,703","332,628"
+4214,PA-14,PA,Pennsylvania,2016,President,66,30.5,-35.5,"231,954","107,173","-124,781","351,273"
+4215,PA-15,PA,Pennsylvania,2016,President,44.2,51.8,7.6,"148,111","173,613","25,502","334,917"
+4216,PA-16,PA,Pennsylvania,2016,President,44.2,51,6.8,"140,236","161,837","21,601","317,140"
+4217,PA-17,PA,Pennsylvania,2016,President,43.3,53.4,10.1,"132,897","163,866","30,969","306,982"
+4218,PA-18,PA,Pennsylvania,2016,President,38.5,58,19.5,"142,859","215,226","72,367","370,786"
+4201,PA-01,PA,Pennsylvania,2016,Senate,78.8,20,-58.8,"240,059","60,923","-179,136","304,824"
+4202,PA-02,PA,Pennsylvania,2016,Senate,88.5,10.6,-77.9,"319,743","38,261","-281,482","361,445"
+4203,PA-03,PA,Pennsylvania,2016,Senate,36,59,23,"115,643","189,788","74,145","321,666"
+4204,PA-04,PA,Pennsylvania,2016,Senate,36.8,58.6,21.8,"124,398","198,106","73,708","338,331"
+4205,PA-05,PA,Pennsylvania,2016,Senate,34.6,59.5,24.9,"108,078","186,039","77,961","312,577"
+4206,PA-06,PA,Pennsylvania,2016,Senate,44.8,52,7.2,"164,694","191,549","26,855","368,024"
+4207,PA-07,PA,Pennsylvania,2016,Senate,45,53.1,8.1,"172,852","204,215","31,363","384,445"
+4208,PA-08,PA,Pennsylvania,2016,Senate,45.8,52.5,6.7,"175,064","200,411","25,347","381,968"
+4209,PA-09,PA,Pennsylvania,2016,Senate,29.3,65,35.7,"83,333","184,882","101,549","284,642"
+4210,PA-10,PA,Pennsylvania,2016,Senate,31.9,62,30.1,"97,614","189,874","92,260","306,235"
+4211,PA-11,PA,Pennsylvania,2016,Senate,38.1,56.7,18.6,"119,798","178,150","58,352","314,451"
+4212,PA-12,PA,Pennsylvania,2016,Senate,38.5,56.4,17.9,"139,445","204,571","65,126","362,469"
+4213,PA-13,PA,Pennsylvania,2016,Senate,63.1,35.6,-27.5,"205,521","116,011","-89,510","325,701"
+4214,PA-14,PA,Pennsylvania,2016,Senate,65.7,29.6,-36.1,"228,940","103,205","-125,735","348,507"
+4215,PA-15,PA,Pennsylvania,2016,Senate,43,53.3,10.3,"142,501","176,488","33,987","331,198"
+4216,PA-16,PA,Pennsylvania,2016,Senate,42.9,53.1,10.2,"135,980","168,223","32,243","316,892"
+4217,PA-17,PA,Pennsylvania,2016,Senate,46.3,48,1.7,"138,957","144,169","5,212","300,040"
+4218,PA-18,PA,Pennsylvania,2016,Senate,38.9,56.2,17.3,"143,508","207,295","63,787","368,638"
 4201,PA-01,PA,Pennsylvania,2014,Governor,,,,,,,
 4202,PA-02,PA,Pennsylvania,2014,Governor,,,,,,,
 4203,PA-03,PA,Pennsylvania,2014,Governor,,,,,,,
@@ -3304,80 +3304,80 @@ district_id,district_name,state_abbr,state_name,year,race,dem_pct,rep_pct,margin
 4216,PA-16,PA,Pennsylvania,2014,Governor,,,,,,,
 4217,PA-17,PA,Pennsylvania,2014,Governor,,,,,,,
 4218,PA-18,PA,Pennsylvania,2014,Governor,,,,,,,
-4401,RI-01,RI,Rhode Island,2024,President,59.7,37.6,-22.1,,,0,
-4402,RI-02,RI,Rhode Island,2024,President,52,45.3,-6.7,,,0,
-4401,RI-01,RI,Rhode Island,2024,Senate,,,,,,,
-4402,RI-02,RI,Rhode Island,2024,Senate,,,,,,,
-4401,RI-01,RI,Rhode Island,2022,Governor,,,,,,,
-4402,RI-02,RI,Rhode Island,2022,Governor,,,,,,,
-4401,RI-01,RI,Rhode Island,2020,President,63.9,34.6,-29.3,,,0,
-4402,RI-02,RI,Rhode Island,2020,President,56,42.5,-13.5,,,0,
-4401,RI-01,RI,Rhode Island,2020,Senate,,,,,,,
-4402,RI-02,RI,Rhode Island,2020,Senate,,,,,,,
-4401,RI-01,RI,Rhode Island,2018,Senate,,,,,,,
-4402,RI-02,RI,Rhode Island,2018,Senate,,,,,,,
-4401,RI-01,RI,Rhode Island,2018,Governor,,,,,,,
-4402,RI-02,RI,Rhode Island,2018,Governor,,,,,,,
-4401,RI-01,RI,Rhode Island,2016,President,60.5,34.9,-25.6,,,0,
-4402,RI-02,RI,Rhode Island,2016,President,51.1,44,-7.1,,,0,
+4401,RI-01,RI,Rhode Island,2024,President,59.6,37.6,-22,"140,675","88,768","-51,907","235,877"
+4402,RI-02,RI,Rhode Island,2024,President,52.1,45.3,-6.8,"144,457","125,630","-18,827","277,477"
+4401,RI-01,RI,Rhode Island,2024,Senate,64,35.8,-28.2,"143,517","80,253","-63,264","224,355"
+4402,RI-02,RI,Rhode Island,2024,Senate,56.5,43.3,-13.2,"151,127","115,778","-35,349","267,564"
+4401,RI-01,RI,Rhode Island,2022,Governor,62,35,-27,,,,
+4402,RI-02,RI,Rhode Island,2022,Governor,55,42,-13,,,,
+4401,RI-01,RI,Rhode Island,2020,President,63.6,34.4,-29.2,"154,430","83,606","-70,824","242,810"
+4402,RI-02,RI,Rhode Island,2020,President,55.7,42.3,-13.4,"153,056","116,316","-36,740","274,947"
+4401,RI-01,RI,Rhode Island,2020,Senate,70.4,29.4,-41,"161,726","67,455","-94,271","229,620"
+4402,RI-02,RI,Rhode Island,2020,Senate,63,36.8,-26.2,"166,848","97,400","-69,448","264,642"
+4401,RI-01,RI,Rhode Island,2018,Senate,66.1,33.6,-32.5,"115,831","58,928","-56,903","175,161"
+4402,RI-02,RI,Rhode Island,2018,Senate,57.4,42.4,-15,"115,646","85,493","-30,153","201,577"
+4401,RI-01,RI,Rhode Island,2018,Governor,58.9,31,-27.9,"103,112","54,234","-48,878","175,086"
+4402,RI-02,RI,Rhode Island,2018,Governor,47.2,42.6,-4.6,"95,010","85,698","-9,312","201,315"
+4401,RI-01,RI,Rhode Island,2016,President,59.3,34.3,-25,"130,686","75,511","-55,175","220,331"
+4402,RI-02,RI,Rhode Island,2016,President,50,43.1,-6.9,"121,839","105,032","-16,807","243,813"
 4401,RI-01,RI,Rhode Island,2014,Governor,,,,,,,
 4402,RI-02,RI,Rhode Island,2014,Governor,,,,,,,
-4501,SC-01,SC,South Carolina,2024,President,42.7,55.8,13.1,,,0,
-4502,SC-02,SC,South Carolina,2024,President,42.3,56.2,13.9,,,0,
-4503,SC-03,SC,South Carolina,2024,President,27.8,70.9,43.1,,,0,
-4504,SC-04,SC,South Carolina,2024,President,37.4,61,23.6,,,0,
-4505,SC-05,SC,South Carolina,2024,President,37.9,60.7,22.8,,,0,
-4506,SC-06,SC,South Carolina,2024,President,60.6,37.8,-22.8,,,0,
-4507,SC-07,SC,South Carolina,2024,President,36.3,62.6,26.3,,,0,
-4501,SC-01,SC,South Carolina,2022,Senate,,,,,,,
-4502,SC-02,SC,South Carolina,2022,Senate,,,,,,,
-4503,SC-03,SC,South Carolina,2022,Senate,,,,,,,
-4504,SC-04,SC,South Carolina,2022,Senate,,,,,,,
-4505,SC-05,SC,South Carolina,2022,Senate,,,,,,,
-4506,SC-06,SC,South Carolina,2022,Senate,,,,,,,
-4507,SC-07,SC,South Carolina,2022,Senate,,,,,,,
-4501,SC-01,SC,South Carolina,2022,Governor,,,,,,,
-4502,SC-02,SC,South Carolina,2022,Governor,,,,,,,
-4503,SC-03,SC,South Carolina,2022,Governor,,,,,,,
-4504,SC-04,SC,South Carolina,2022,Governor,,,,,,,
-4505,SC-05,SC,South Carolina,2022,Governor,,,,,,,
-4506,SC-06,SC,South Carolina,2022,Governor,,,,,,,
-4507,SC-07,SC,South Carolina,2022,Governor,,,,,,,
-4501,SC-01,SC,South Carolina,2020,President,46.1,52.1,6,,,0,
-4502,SC-02,SC,South Carolina,2020,President,43.6,54.9,11.3,,,0,
-4503,SC-03,SC,South Carolina,2020,President,30.5,68.1,37.6,,,0,
-4504,SC-04,SC,South Carolina,2020,President,38.9,59.3,20.4,,,0,
-4505,SC-05,SC,South Carolina,2020,President,41,57.6,16.6,,,0,
-4506,SC-06,SC,South Carolina,2020,President,67,31.8,-35.2,,,0,
-4507,SC-07,SC,South Carolina,2020,President,40.2,58.8,18.6,,,0,
-4501,SC-01,SC,South Carolina,2020,Senate,,,,,,,
-4502,SC-02,SC,South Carolina,2020,Senate,,,,,,,
-4503,SC-03,SC,South Carolina,2020,Senate,,,,,,,
-4504,SC-04,SC,South Carolina,2020,Senate,,,,,,,
-4505,SC-05,SC,South Carolina,2020,Senate,,,,,,,
-4506,SC-06,SC,South Carolina,2020,Senate,,,,,,,
-4507,SC-07,SC,South Carolina,2020,Senate,,,,,,,
-4501,SC-01,SC,South Carolina,2018,Governor,,,,,,,
-4502,SC-02,SC,South Carolina,2018,Governor,,,,,,,
-4503,SC-03,SC,South Carolina,2018,Governor,,,,,,,
-4504,SC-04,SC,South Carolina,2018,Governor,,,,,,,
-4505,SC-05,SC,South Carolina,2018,Governor,,,,,,,
-4506,SC-06,SC,South Carolina,2018,Governor,,,,,,,
-4507,SC-07,SC,South Carolina,2018,Governor,,,,,,,
-4501,SC-01,SC,South Carolina,2016,President,40.4,53.5,13.1,,,0,
-4502,SC-02,SC,South Carolina,2016,President,38.6,56.3,17.7,,,0,
-4503,SC-03,SC,South Carolina,2016,President,29,67,38,,,0,
-4504,SC-04,SC,South Carolina,2016,President,34.5,60.2,25.7,,,0,
-4505,SC-05,SC,South Carolina,2016,President,38.8,57.3,18.5,,,0,
-4506,SC-06,SC,South Carolina,2016,President,66.8,30.3,-36.5,,,0,
-4507,SC-07,SC,South Carolina,2016,President,39.1,58,18.9,,,0,
-4501,SC-01,SC,South Carolina,2016,Senate,,,,,,,
-4502,SC-02,SC,South Carolina,2016,Senate,,,,,,,
-4503,SC-03,SC,South Carolina,2016,Senate,,,,,,,
-4504,SC-04,SC,South Carolina,2016,Senate,,,,,,,
-4505,SC-05,SC,South Carolina,2016,Senate,,,,,,,
-4506,SC-06,SC,South Carolina,2016,Senate,,,,,,,
-4507,SC-07,SC,South Carolina,2016,Senate,,,,,,,
+4501,SC-01,SC,South Carolina,2024,President,42.7,55.8,13.1,"171,283","223,769","52,486","401,148"
+4502,SC-02,SC,South Carolina,2024,President,42.3,56.2,13.9,"154,598","205,591","50,993","365,657"
+4503,SC-03,SC,South Carolina,2024,President,27.8,70.9,43.1,"99,238","252,775","153,537","356,551"
+4504,SC-04,SC,South Carolina,2024,President,37.4,61,23.6,"132,503","215,950","83,447","354,171"
+4505,SC-05,SC,South Carolina,2024,President,37.9,60.7,22.8,"141,484","226,482","84,998","373,037"
+4506,SC-06,SC,South Carolina,2024,President,60.6,37.8,-22.8,"189,674","118,149","-71,525","312,822"
+4507,SC-07,SC,South Carolina,2024,President,36.3,62.6,26.3,"139,672","241,031","101,359","384,754"
+4501,SC-01,SC,South Carolina,2022,Senate,38.1,61.8,23.7,"103,312","167,789","64,477","271,389"
+4502,SC-02,SC,South Carolina,2022,Senate,38.3,61.6,23.3,"93,726","150,926","57,200","244,953"
+4503,SC-03,SC,South Carolina,2022,Senate,24.9,75,50.1,"58,930","177,219","118,289","236,391"
+4504,SC-04,SC,South Carolina,2022,Senate,33.1,66.7,33.6,"76,877","154,646","77,769","231,910"
+4505,SC-05,SC,South Carolina,2022,Senate,34.9,65,30.1,"83,964","156,419","72,455","240,542"
+4506,SC-06,SC,South Carolina,2022,Senate,58.9,41,-17.9,"123,891","86,308","-37,583","210,488"
+4507,SC-07,SC,South Carolina,2022,Senate,33.3,66.6,33.3,"84,624","169,210","84,586","253,975"
+4501,SC-01,SC,South Carolina,2022,Governor,44.4,54.5,10.1,"121,331","148,968","27,637","273,228"
+4502,SC-02,SC,South Carolina,2022,Governor,42,56.5,14.5,"103,411","139,032","35,621","246,120"
+4503,SC-03,SC,South Carolina,2022,Governor,28.1,70.6,42.5,"66,498","167,378","100,880","237,015"
+4504,SC-04,SC,South Carolina,2022,Governor,37.2,61.3,24.1,"86,500","142,602","56,102","232,762"
+4505,SC-05,SC,South Carolina,2022,Governor,36.8,61.8,25,"88,720","148,922","60,202","241,153"
+4506,SC-06,SC,South Carolina,2022,Governor,62.5,36.3,-26.2,"132,540","76,853","-55,687","212,003"
+4507,SC-07,SC,South Carolina,2022,Governor,35.7,63.3,27.6,"91,102","161,365","70,263","254,834"
+4501,SC-01,SC,South Carolina,2020,President,46.1,52.1,6,"197,136","222,689","25,553","427,430"
+4502,SC-02,SC,South Carolina,2020,President,43.5,54.9,11.4,"158,499","200,052","41,553","364,315"
+4503,SC-03,SC,South Carolina,2020,President,30.5,68.1,37.6,"102,268","227,930","125,662","334,927"
+4504,SC-04,SC,South Carolina,2020,President,38.9,59.3,20.4,"140,953","215,183","74,230","362,700"
+4505,SC-05,SC,South Carolina,2020,President,41,57.7,16.7,"150,849","212,131","61,282","367,902"
+4506,SC-06,SC,South Carolina,2020,President,67,31.8,-35.2,"195,073","92,438","-102,635","291,005"
+4507,SC-07,SC,South Carolina,2020,President,40.2,58.8,18.6,"146,763","214,680","67,917","365,050"
+4501,SC-01,SC,South Carolina,2020,Senate,46.3,52.3,6,"198,228","223,903","25,675","427,904"
+4502,SC-02,SC,South Carolina,2020,Senate,44,54.6,10.6,"160,308","199,302","38,994","364,742"
+4503,SC-03,SC,South Carolina,2020,Senate,31.4,67,35.6,"105,271","224,549","119,278","335,103"
+4504,SC-04,SC,South Carolina,2020,Senate,39.7,58.9,19.2,"143,933","213,763","69,830","362,956"
+4505,SC-05,SC,South Carolina,2020,Senate,42.1,56.3,14.2,"154,819","206,974","52,155","367,807"
+4506,SC-06,SC,South Carolina,2020,Senate,68.1,30.9,-37.2,"198,364","90,101","-108,263","291,392"
+4507,SC-07,SC,South Carolina,2020,Senate,41,57.7,16.7,"149,905","210,545","60,640","365,200"
+4501,SC-01,SC,South Carolina,2018,Governor,47.8,52,4.2,"136,045","148,045","12,000","284,443"
+4502,SC-02,SC,South Carolina,2018,Governor,45.8,54.1,8.3,"117,858","139,214","21,356","257,406"
+4503,SC-03,SC,South Carolina,2018,Governor,33.3,66.5,33.2,"75,262","150,294","75,032","225,895"
+4504,SC-04,SC,South Carolina,2018,Governor,41.1,58.7,17.6,"100,036","143,127","43,091","243,663"
+4505,SC-05,SC,South Carolina,2018,Governor,43.1,56.9,13.8,"107,069","141,445","34,376","248,682"
+4506,SC-06,SC,South Carolina,2018,Governor,70,29.9,-40.1,"145,794","62,357","-83,437","208,346"
+4507,SC-07,SC,South Carolina,2018,Governor,42.7,57.2,14.5,"102,118","136,860","34,742","239,134"
+4501,SC-01,SC,South Carolina,2016,President,40.4,53.5,13.1,"134,565","177,978","43,413","332,842"
+4502,SC-02,SC,South Carolina,2016,President,38.5,56.4,17.9,"119,905","175,689","55,784","311,598"
+4503,SC-03,SC,South Carolina,2016,President,29,67,38,"82,458","190,378","107,920","284,100"
+4504,SC-04,SC,South Carolina,2016,President,34.5,60.2,25.7,"104,023","181,702","77,679","301,877"
+4505,SC-05,SC,South Carolina,2016,President,38.8,57.3,18.5,"118,726","175,434","56,708","306,186"
+4506,SC-06,SC,South Carolina,2016,President,66.8,30.3,-36.5,"179,058","81,175","-97,883","268,200"
+4507,SC-07,SC,South Carolina,2016,President,39.1,58,18.9,"116,638","173,033","56,395","298,224"
+4501,SC-01,SC,South Carolina,2016,Senate,32.6,65,32.4,"106,214","211,764","105,550","325,580"
+4502,SC-02,SC,South Carolina,2016,Senate,34.2,62.9,28.7,"104,297","191,987","87,690","305,317"
+4503,SC-03,SC,South Carolina,2016,Senate,26.6,70.7,44.1,"73,671","195,642","121,971","276,603"
+4504,SC-04,SC,South Carolina,2016,Senate,30.1,67.1,37,"89,070","198,229","109,159","295,567"
+4505,SC-05,SC,South Carolina,2016,Senate,37.9,59.2,21.3,"112,577","175,940","63,363","297,185"
+4506,SC-06,SC,South Carolina,2016,Senate,63.4,34.8,-28.6,"165,146","90,679","-74,467","260,625"
+4507,SC-07,SC,South Carolina,2016,Senate,36.7,61.4,24.7,"106,047","177,368","71,321","289,016"
 4501,SC-01,SC,South Carolina,2014,Governor,,,,,,,
 4502,SC-02,SC,South Carolina,2014,Governor,,,,,,,
 4503,SC-03,SC,South Carolina,2014,Governor,,,,,,,
@@ -3385,12 +3385,14 @@ district_id,district_name,state_abbr,state_name,year,race,dem_pct,rep_pct,margin
 4505,SC-05,SC,South Carolina,2014,Governor,,,,,,,
 4506,SC-06,SC,South Carolina,2014,Governor,,,,,,,
 4507,SC-07,SC,South Carolina,2014,Governor,,,,,,,
-4601,SD-01,SD,South Dakota,2024,President,34.2,63.4,29.2,,,0,
-4601,SD-01,SD,South Dakota,2022,Senate,,,,,,,
-4601,SD-01,SD,South Dakota,2020,President,35.6,61.8,26.2,,,0,
-4601,SD-01,SD,South Dakota,2020,Senate,,,,,,,
-4601,SD-01,SD,South Dakota,2016,President,31.7,61.5,29.8,,,0,
-4601,SD-01,SD,South Dakota,2016,Senate,,,,,,,
+4601,SD-01,SD,South Dakota,2024,President,34.2,63.4,29.2,146859,272081,125222,428922
+4601,SD-01,SD,South Dakota,2022,Senate,26.1,69.6,43.5,91007,242316,151309,348020
+4601,SD-01,SD,South Dakota,2022,Governor,35.2,62.0,26.8,123148,217035,93887,350166
+4601,SD-01,SD,South Dakota,2020,President,35.6,61.8,26.2,150471,261043,110572,422609
+4601,SD-01,SD,South Dakota,2020,Senate,34.3,65.7,31.5,143987,276232,132245,420219
+4601,SD-01,SD,South Dakota,2018,Governor,47.6,51.0,3.4,161454,172912,11458,339214
+4601,SD-01,SD,South Dakota,2016,President,31.7,61.5,29.8,117458,227721,110263,370093
+4601,SD-01,SD,South Dakota,2016,Senate,28.2,71.8,43.7,104140,265516,161376,369656
 4701,TN-01,TN,Tennessee,2024,President,20.6,78.4,57.8,,,0,
 4702,TN-02,TN,Tennessee,2024,President,32.4,66.2,33.8,,,0,
 4703,TN-03,TN,Tennessee,2024,President,31.4,67.3,35.9,,,0,
