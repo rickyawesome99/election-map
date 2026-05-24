@@ -651,7 +651,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
           {/* Electoral History */}
           <section
-            className="rounded-xl p-3 lg:flex lg:min-h-0 lg:flex-col lg:overflow-hidden"
+            className="rounded-xl p-3 md:flex md:min-h-0 md:flex-col md:overflow-hidden"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
           >
             <h2
@@ -660,7 +660,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
             >
               Electoral History · Statewide Races Since 2016
             </h2>
-            <div className="max-h-[28rem] overflow-y-auto pr-1 lg:min-h-0 lg:flex-1 lg:basis-0 lg:max-h-none">
+            <div className="max-h-[28rem] overflow-y-auto pr-1 md:min-h-0 md:flex-1 md:basis-0 md:max-h-none">
               <div className="flex flex-col gap-2.5">
                 {presRows.length > 0 ? presRows.map((res, i) => {
                   const winner = res.demPct > res.repPct ? "D" : "R";

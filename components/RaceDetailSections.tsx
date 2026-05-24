@@ -647,6 +647,7 @@ export function HouseOnlyRecentStatewideResultsSection({
     repCandidate?: string;
     demVotes?: number;
     repVotes?: number;
+    stateDiff?: number | null;
     placeholder?: boolean;
   }[];
   density?: DetailDensity;
@@ -682,14 +683,31 @@ export function HouseOnlyRecentStatewideResultsSection({
                 {isPlaceholder ? (
                   <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
                 ) : (
-                  <span
-                    className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
-                    style={winner === "D"
-                      ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
-                      : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
-                  >
-                    {winner}+{margin}
-                  </span>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    {res.stateDiff != null && (() => {
+                      const diffIsD = res.stateDiff >= 0;
+                      const diffAbs = Math.abs(res.stateDiff).toFixed(1);
+                      return (
+                        <span
+                          className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
+                          style={diffIsD
+                            ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                            : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                          title="State Differential: district result minus statewide result"
+                        >
+                          {diffIsD ? "↓" : "↑"}{diffAbs}
+                        </span>
+                      );
+                    })()}
+                    <span
+                      className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
+                      style={winner === "D"
+                        ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                        : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                    >
+                      {winner}+{margin}
+                    </span>
+                  </div>
                 )}
               </div>
               <div className="mb-2">

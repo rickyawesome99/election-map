@@ -1,4 +1,5 @@
 import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, electionYear } from "@/data/forecastData";
+import { getStatewideMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
@@ -60,6 +61,16 @@ export default async function HousePage({ params, searchParams }: { params: Prom
     ? pvi2026 === 0 ? "EVEN" : pvi2026 > 0 ? `R+${pvi2026}` : `D+${Math.abs(pvi2026)}`
     : "TBD";
 
+  const rawStatewideResults = houseStatewideResults[race.id] ?? [];
+  const statewideResultsWithDiff = rawStatewideResults.map((res) => {
+    const districtMargin = res.demPct - res.repPct;
+    const statewideMargin = getStatewideMargin(stateAbbr, res.year, res.race);
+    return {
+      ...res,
+      stateDiff: statewideMargin != null ? districtMargin - statewideMargin : null,
+    };
+  });
+
   const PVI_DISPLAY_YEARS = [2026, 2024, 2022, 2020, 2018, 2016] as const;
   const districtPviByYear = pviHistory[race.id] ?? {};
   const boundaryByYear = new Map((houseDistrictInfo[race.id] ?? []).map(e => [e.year, e]));
@@ -97,7 +108,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{electionYear} U.S. House Race · {districtLabel}</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] md:items-start">
           <div className="flex flex-col gap-3">
             <div
               className="min-h-[220px] overflow-hidden rounded-xl"
@@ -138,8 +149,8 @@ export default async function HousePage({ params, searchParams }: { params: Prom
           </div>
 
           <div className="flex flex-col gap-3">
-            <div className="grid grid-cols-1 gap-3 lg:grid-cols-8 lg:items-stretch">
-              <div className="lg:col-span-5 [&>section]:h-full">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-8 md:items-stretch">
+              <div className="md:col-span-5 [&>section]:h-full">
                 <CandidatesSection
                   density="compact"
                   candidates={race.candidates
@@ -164,13 +175,13 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                 />
               </div>
 
-              <div className="lg:col-span-3 [&>section]:h-full">
+              <div className="md:col-span-3 [&>section]:h-full">
                 <MarginAndWinProbabilityCard density="compact" margin={race.margin} demPct={demPct} repPct={repPct} rcpDem={race.rcpDem} rcpRep={race.rcpRep} polyDem={race.polyDem} polyRep={race.polyRep} kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep} />
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-3 lg:grid-cols-8 lg:h-[700px]">
-              <div className="lg:col-span-4 [&>section]:h-full" style={{ height: "700px" }}>
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-8 md:h-[700px]">
+              <div className="md:col-span-4 [&>section]:h-full" style={{ height: "700px" }}>
                 <PastElectionResultsSection
                   results={race.pastResults}
                   fallbackYears={[2024, 2022, 2020]}
@@ -179,8 +190,8 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                   scrollable
                 />
               </div>
-              <div className="lg:col-span-4 [&>section]:h-full" style={{ height: "700px" }}>
-                <HouseOnlyRecentStatewideResultsSection results={houseStatewideResults[race.id]} density="compact" />
+              <div className="md:col-span-4 [&>section]:h-full" style={{ height: "700px" }}>
+                <HouseOnlyRecentStatewideResultsSection results={statewideResultsWithDiff} density="compact" />
               </div>
             </div>
           </div>
