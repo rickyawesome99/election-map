@@ -10577,9 +10577,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Michael Rogers",
+        "name": "Mike Rogers",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Mike Rogers",
@@ -10692,10 +10692,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Robert Aderholt",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Robert B. Aderholt",
+    "seatHolder": "Robert Aderholt",
     "seatParty": "R",
     "pastResults": [
       {
@@ -10913,10 +10913,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Gary Palmer",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Gary J. Palmer",
+    "seatHolder": "Gary Palmer",
     "seatParty": "R",
     "pastResults": [
       {
@@ -11471,7 +11471,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Yassamin Ansari",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Kirt Burgess",
@@ -11817,7 +11817,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Juan Ciscomani",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Juan Ciscomani",
@@ -12045,10 +12045,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Abraham Hamadeh",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Abraham J. Hamadeh",
+    "seatHolder": "Abraham Hamadeh",
     "seatParty": "R",
     "pastResults": [
       {
@@ -12270,12 +12270,12 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Eric Crawford",
+        "name": "Rick Crawford",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Eric A. “Rick” Crawford",
+    "seatHolder": "Rick Crawford",
     "seatParty": "R",
     "pastResults": [
       {
@@ -12385,10 +12385,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "French Hill",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "J. French Hill",
+    "seatHolder": "French Hill",
     "seatParty": "R",
     "pastResults": [
       {
@@ -13862,7 +13862,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Scott Wiener",
         "party": "D",
-        "incumbent": true
+        "incumbent": false
       },
       "rep": {
         "name": "David Ganezer",
@@ -14087,7 +14087,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Adam Gray",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Vin Kruttiventi",
@@ -14201,7 +14201,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Abrar Qadir",
         "party": "D",
-        "incumbent": true
+        "incumbent": false
       },
       "rep": {
         "name": "Wendy Huang",
@@ -15557,7 +15557,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Sonia Devgan-Kacker",
         "party": "D",
-        "incumbent": true
+        "incumbent": false
       },
       "rep": {
         "name": "Samuel Gallucci",
@@ -15672,7 +15672,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "George Whitesides",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Jason Gibbs",
@@ -15898,7 +15898,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Luz Rivas",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Margarita Carranza",
@@ -15906,7 +15906,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Luz M. Rivas",
+    "seatHolder": "Luz Rivas",
     "seatParty": "D",
     "pastResults": [
       {
@@ -16006,7 +16006,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Laura Friedman",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Dennis Feitosa",
@@ -16910,7 +16910,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Linda T. Sánchez",
+    "seatHolder": "Linda Sánchez",
     "seatParty": "D",
     "pastResults": [
       {
@@ -17133,7 +17133,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Young Kim",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Young Kim",
@@ -17470,7 +17470,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Maxine Waters",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Craig Geiger",
@@ -17585,7 +17585,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Nanette Barragan",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Genevieve Angel",
@@ -17593,7 +17593,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Nanette Diaz Barragán",
+    "seatHolder": "Nanette Barragan",
     "seatParty": "D",
     "pastResults": [
       {
@@ -17807,7 +17807,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Lou Correa",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "David Pan",
@@ -17815,7 +17815,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "J. Luis Correa",
+    "seatHolder": "Lou Correa",
     "seatParty": "D",
     "pastResults": [
       {
@@ -18035,9 +18035,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Jim Desmond",
+        "name": "Darrell Issa",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Darrell Issa",
@@ -18373,7 +18373,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Sara Jacobs",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "John-Samuel Williams",
@@ -18487,7 +18487,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Juan Vargas",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -18601,7 +18601,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Diana DeGette",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Gregory Cutlip",
@@ -18716,7 +18716,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Joe Neguse",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Christina Blunt",
@@ -18835,7 +18835,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Jeff Hurd",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Jeff Hurd",
@@ -18948,7 +18948,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Lauren Boebert",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Lauren Boebert",
@@ -19478,7 +19478,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "John Larson",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Amy Chai",
@@ -19486,7 +19486,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "John B. Larson",
+    "seatHolder": "John Larson",
     "seatParty": "D",
     "pastResults": [
       {
@@ -19591,9 +19591,9 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Joseph Courtney",
+        "name": "Joe Courtney",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Mike France",
@@ -19708,7 +19708,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Rosa Delauro",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Christopher Lancia",
@@ -19716,7 +19716,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Rosa L. DeLauro",
+    "seatHolder": "Rosa Delauro",
     "seatParty": "D",
     "pastResults": [
       {
@@ -19823,7 +19823,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Jim Himes",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Michael Goldstein",
@@ -19831,7 +19831,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "James A. Himes",
+    "seatHolder": "Jim Himes",
     "seatParty": "D",
     "pastResults": [
       {
@@ -19938,7 +19938,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Jahana Hayes",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Michele Botelho",
@@ -20284,10 +20284,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Neal Dunn",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Neal P. Dunn",
+    "seatHolder": "Neal Dunn",
     "seatParty": "R",
     "pastResults": [
       {
@@ -20622,10 +20622,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "John Rutherford",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "John H. Rutherford",
+    "seatHolder": "John Rutherford",
     "seatParty": "R",
     "pastResults": [
       {
@@ -21634,7 +21634,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Kathy Castor",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Robert Rochford",
@@ -21860,9 +21860,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Vernon Buchanan",
+        "name": "Vern Buchanan",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Vern Buchanan",
@@ -21977,10 +21977,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Greg Steube",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "W. Gregory Steube",
+    "seatHolder": "Greg Steube",
     "seatParty": "R",
     "pastResults": [
       {
@@ -22530,7 +22530,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Lois Frankel",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Anna Medvedeva",
@@ -22643,7 +22643,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Jared Moskowitz",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Raven Harrison",
@@ -23513,7 +23513,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Brian Jack",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Brian Jack",
@@ -23736,7 +23736,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Nikema Williams",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -23846,9 +23846,9 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Lucia Mcbath",
+        "name": "Lucy McBath",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Justin Pinker",
@@ -23964,9 +23964,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Richard Mccormick",
+        "name": "Richard McCormick",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Richard McCormick",
@@ -24076,9 +24076,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "James Scott",
+        "name": "Austin Scott",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Austin Scott",
@@ -24191,10 +24191,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Andrew Clyde",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Andrew S. Clyde",
+    "seatHolder": "Andrew Clyde",
     "seatParty": "R",
     "pastResults": [
       {
@@ -24530,10 +24530,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Rick Allen",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Rick W. Allen",
+    "seatHolder": "Rick Allen",
     "seatParty": "R",
     "pastResults": [
       {
@@ -24640,7 +24640,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "David Scott",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Simeon Nunnally",
@@ -24761,7 +24761,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Vacancy",
+    "seatHolder": "Marjorie Taylor Greene",
     "seatParty": "R",
     "pastResults": [
       {
@@ -24863,9 +24863,9 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Edward Case",
+        "name": "Ed Case",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Maxwell Frazier",
@@ -24978,7 +24978,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Jill Tokuda",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Brenton Awa",
@@ -24986,7 +24986,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Jill N. Tokuda",
+    "seatHolder": "Jill Tokuda",
     "seatParty": "D",
     "pastResults": [
       {
@@ -25096,7 +25096,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Russ Fulcher",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Russ Fulcher",
@@ -25210,10 +25210,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Michael Simpson",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Michael K. Simpson",
+    "seatHolder": "Michael Simpson",
     "seatParty": "R",
     "pastResults": [
       {
@@ -25320,7 +25320,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Jonathan Jackson",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Christian Maxwell",
@@ -25328,7 +25328,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Jonathan L. Jackson",
+    "seatHolder": "Jonathan Jackson",
     "seatParty": "D",
     "pastResults": [
       {
@@ -25442,7 +25442,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Robin L. Kelly",
+    "seatHolder": "Robin Kelly",
     "seatParty": "D",
     "pastResults": [
       {
@@ -25668,7 +25668,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Jesús G. “Chuy” García",
+    "seatHolder": "Chuy García",
     "seatParty": "D",
     "pastResults": [
       {
@@ -25772,7 +25772,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Mike Quigley",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Tommy Hanson",
@@ -26010,7 +26010,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Danny K. Davis",
+    "seatHolder": "Danny Davis",
     "seatParty": "D",
     "pastResults": [
       {
@@ -26237,7 +26237,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Janice D. Schakowsky",
+    "seatHolder": "Janice Schakowsky",
     "seatParty": "D",
     "pastResults": [
       {
@@ -26344,7 +26344,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Brad Schneider",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Carl Lambrecht",
@@ -26352,7 +26352,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Bradley Scott Schneider",
+    "seatHolder": "Brad Schneider",
     "seatParty": "D",
     "pastResults": [
       {
@@ -26922,10 +26922,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Mary Miller",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Mary E. Miller",
+    "seatHolder": "Mary Miller",
     "seatParty": "R",
     "pastResults": [
       {
@@ -27032,7 +27032,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Darin LaHood",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Darin LaHood",
@@ -27251,7 +27251,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Frank Mrvan",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Barb Regnitz",
@@ -27259,7 +27259,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Frank J. Mrvan",
+    "seatHolder": "Frank Mrvan",
     "seatParty": "D",
     "pastResults": [
       {
@@ -27484,10 +27484,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Marlin Stutzman",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Marlin A. Stutzman",
+    "seatHolder": "Marlin Stutzman",
     "seatParty": "R",
     "pastResults": [
       {
@@ -27597,10 +27597,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "James Baird",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "James R. Baird",
+    "seatHolder": "James Baird",
     "seatParty": "R",
     "pastResults": [
       {
@@ -27711,7 +27711,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Victoria Spartz",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Victoria Spartz",
@@ -27825,7 +27825,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Jefferson Shreve",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Jefferson Shreve",
@@ -27933,7 +27933,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Andre Carson",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Felipe Rios",
@@ -27941,7 +27941,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "André Carson",
+    "seatHolder": "Andre Carson",
     "seatParty": "D",
     "pastResults": [
       {
@@ -28280,7 +28280,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Mariannette Miller-Meeks",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Mariannette Miller-Meeks",
@@ -28507,10 +28507,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Zach Nunn",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Zachary Nunn",
+    "seatHolder": "Zach Nunn",
     "seatParty": "R",
     "pastResults": [
       {
@@ -28956,7 +28956,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Sharice Davids",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Chase Laporte",
@@ -29191,7 +29191,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "James Comer",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "James Comer",
@@ -29305,7 +29305,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Brett Guthrie",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Brett Guthrie",
@@ -29530,7 +29530,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Thomas Massie",
+        "name": "Ed Gallrein",
         "party": "R",
         "incumbent": false
       }
@@ -29866,7 +29866,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Steve Scalise",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Steve Scalise",
@@ -29976,7 +29976,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Troy Carter",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -29984,7 +29984,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Troy A. Carter",
+    "seatHolder": "Troy Carter",
     "seatParty": "D",
     "pastResults": [
       {
@@ -30206,9 +30206,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "James Johnson",
+        "name": "Mike Johnson",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Mike Johnson",
@@ -30316,7 +30316,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Julia Letlow",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Julia Letlow",
@@ -30537,7 +30537,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Chellie Pingree",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Eric Small",
@@ -30660,7 +30660,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Jared F. Golden",
+    "seatHolder": "Jared Golden",
     "seatParty": "D",
     "pastResults": [
       {
@@ -30770,9 +30770,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Andrew Harris",
+        "name": "Andy Harris",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Andy Harris",
@@ -30996,7 +30996,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Sarah Elfreth",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Penny Kennedy",
@@ -31110,7 +31110,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Glenn Ivey",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -31231,7 +31231,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Steny H. Hoyer",
+    "seatHolder": "Steny Hoyer",
     "seatParty": "D",
     "pastResults": [
       {
@@ -31338,7 +31338,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "April Delaney",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Robin Ficker",
@@ -31346,7 +31346,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "April McClain Delaney",
+    "seatHolder": "April Delaney",
     "seatParty": "D",
     "pastResults": [
       {
@@ -31451,7 +31451,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Kweisi Mfume",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -31566,7 +31566,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Jamie Raskin",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Cheryl Riley",
@@ -31680,7 +31680,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Richard Neal",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -31688,7 +31688,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Richard E. Neal",
+    "seatHolder": "Richard Neal",
     "seatParty": "D",
     "pastResults": [
       {
@@ -31791,7 +31791,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "James McGovern",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -31799,7 +31799,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "James P. McGovern",
+    "seatHolder": "James McGovern",
     "seatParty": "D",
     "pastResults": [
       {
@@ -31904,7 +31904,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Lori Trahan",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Gary Grossi",
@@ -32014,7 +32014,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Jake Auchincloss",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -32122,7 +32122,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Katherine Clark",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -32130,7 +32130,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Katherine M. Clark",
+    "seatHolder": "Katherine Clark",
     "seatParty": "D",
     "pastResults": [
       {
@@ -32452,7 +32452,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Stephen Lynch",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Gavin Solomon",
@@ -32460,7 +32460,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Stephen F. Lynch",
+    "seatHolder": "Stephen Lynch",
     "seatParty": "D",
     "pastResults": [
       {
@@ -32565,7 +32565,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "William Keating",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Robert MacAllister",
@@ -32573,7 +32573,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "William R. Keating",
+    "seatHolder": "William Keating",
     "seatParty": "D",
     "pastResults": [
       {
@@ -32683,9 +32683,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "John Bergman",
+        "name": "Jack Bergman",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Jack Bergman",
@@ -33138,9 +33138,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Timothy Walberg",
+        "name": "Tim Walberg",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Tim Walberg",
@@ -33249,7 +33249,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Debbie Dingell",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -34042,7 +34042,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Shri Thanedar",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Andrew Lorenz",
@@ -34383,7 +34383,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Kelly Morrison",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Tyler Bass",
@@ -34612,7 +34612,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Ilhan Omar",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Dalia Al-Aqidi",
@@ -34729,9 +34729,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Thomas Emmer",
+        "name": "Tom Emmer",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Tom Emmer",
@@ -34846,7 +34846,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Michelle Fischbach",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Michelle Fischbach",
@@ -35073,7 +35073,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "John Kelly",
+        "name": "Trent Kelly",
         "party": "R",
         "incumbent": true
       }
@@ -35415,7 +35415,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Walter Ezell",
+        "name": "Mike Ezell",
         "party": "R",
         "incumbent": true
       }
@@ -35524,7 +35524,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Wesley Bell",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -35642,7 +35642,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Ann Wagner",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Ann Wagner",
@@ -36098,9 +36098,9 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "Samuel Graves",
+        "name": "Sam Graves",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Sam Graves",
@@ -36215,7 +36215,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Eric Burlison",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Eric Burlison",
@@ -36329,7 +36329,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Jason Smith",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Jason Smith",
@@ -36447,7 +36447,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Ryan K. Zinke",
+    "seatHolder": "Ryan Zinke",
     "seatParty": "R",
     "pastResults": [
       {
@@ -36864,7 +36864,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Adrian Smith",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Adrian Smith",
@@ -37429,7 +37429,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Chris Pappas",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Anthony Dilorenzo",
@@ -37543,7 +37543,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Maggie Goodlander",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Lily Williams",
@@ -37777,10 +37777,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Jeff Van Drew",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Jefferson Van Drew",
+    "seatHolder": "Jeff Van Drew",
     "seatParty": "R",
     "pastResults": [
       {
@@ -38005,10 +38005,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Christopher Smith",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Christopher H. Smith",
+    "seatHolder": "Christopher Smith",
     "seatParty": "R",
     "pastResults": [
       {
@@ -38115,7 +38115,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Josh Gottheimer",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Mary Guinchard",
@@ -38460,7 +38460,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Robert Menendez",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -38572,9 +38572,9 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Nelida Pou",
+        "name": "Nellie Pou",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Rosemary Pino",
@@ -38686,9 +38686,9 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Lamonica Mciver",
+        "name": "LaMonica McIver",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Carmen Bucco",
@@ -38801,7 +38801,7 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Mikie Sherrill",
+        "name": "Democratic Candidate",
         "party": "D",
         "incumbent": false
       },
@@ -38811,8 +38811,8 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Vacancy",
-    "seatParty": "R",
+    "seatHolder": "Mikie Sherill",
+    "seatParty": "D",
     "pastResults": [
       {
         "year": 2024,
@@ -39493,10 +39493,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Andrew Garbarino",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Andrew R. Garbarino",
+    "seatHolder": "Andrew Garbarino",
     "seatParty": "R",
     "pastResults": [
       {
@@ -39602,7 +39602,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Thomas Suozzi",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Gregory Hach",
@@ -39610,7 +39610,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Thomas R. Suozzi",
+    "seatHolder": "Thomas Suozzi",
     "seatParty": "D",
     "pastResults": [
       {
@@ -39715,7 +39715,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Laura Gillen",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Marvin Suber Williams",
@@ -39829,7 +39829,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Gregory Meeks",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Aaron Cherry",
@@ -39837,7 +39837,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Gregory W. Meeks",
+    "seatHolder": "Gregory Meeks",
     "seatParty": "D",
     "pastResults": [
       {
@@ -39940,7 +39940,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Grace Meng",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Juan Pagan",
@@ -40055,7 +40055,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Antonio Reynoso",
         "party": "D",
-        "incumbent": true
+        "incumbent": false
       },
       "rep": {
         "name": "Generic Republican",
@@ -40063,7 +40063,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Nydia M. Velázquez",
+    "seatHolder": "Nydia Velázquez",
     "seatParty": "D",
     "pastResults": [
       {
@@ -40629,7 +40629,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Alexander Bores",
         "party": "D",
-        "incumbent": true
+        "incumbent": false
       },
       "rep": {
         "name": "Amy Jordan",
@@ -40637,7 +40637,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Jerrold Nadler",
+    "seatHolder": "Jerry Nadler",
     "seatParty": "D",
     "pastResults": [
       {
@@ -41651,10 +41651,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Anthony Constantino",
         "party": "R",
-        "incumbent": true
+        "incumbent": false
       }
     },
-    "seatHolder": "Elise M. Stefanik",
+    "seatHolder": "Elise Stefanik",
     "seatParty": "R",
     "pastResults": [
       {
@@ -42224,7 +42224,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Timothy M. Kennedy",
+    "seatHolder": "Timothy Kennedy",
     "seatParty": "D",
     "pastResults": [
       {
@@ -42339,7 +42339,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Donald G. Davis",
+    "seatHolder": "Donald Davis",
     "seatParty": "D",
     "pastResults": [
       {
@@ -42453,7 +42453,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Deborah K. Ross",
+    "seatHolder": "Deborah Ross",
     "seatParty": "D",
     "pastResults": [
       {
@@ -42566,7 +42566,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
-    "seatHolder": "Gregory F. Murphy",
+    "seatHolder": "Gregory Murphy",
     "seatParty": "R",
     "pastResults": [
       {
@@ -42679,7 +42679,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Valerie P. Foushee",
+    "seatHolder": "Valerie Foushee",
     "seatParty": "D",
     "pastResults": [
       {
@@ -42908,7 +42908,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
-    "seatHolder": "Addison P. McDowell",
+    "seatHolder": "Addison McDowell",
     "seatParty": "R",
     "pastResults": [
       {
@@ -43888,7 +43888,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Julie Fedorchak",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Julie Fedorchak",
@@ -45034,10 +45034,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Michael Turner",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Michael R. Turner",
+    "seatHolder": "Michael Turner",
     "seatParty": "R",
     "pastResults": [
       {
@@ -45144,7 +45144,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Shontel Brown",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "James Hemphill",
@@ -45152,7 +45152,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Shontel M. Brown",
+    "seatHolder": "Shontel Brown",
     "seatParty": "D",
     "pastResults": [
       {
@@ -45374,7 +45374,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Emilia Sykes",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Kevin Coughlin",
@@ -45382,7 +45382,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Emilia Strong Sykes",
+    "seatHolder": "Emilia Sykes",
     "seatParty": "D",
     "pastResults": [
       {
@@ -46283,7 +46283,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Suzanne Bonamici",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Barbara Kahl",
@@ -46740,7 +46740,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Janelle Bynum",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Patti Adair",
@@ -46748,7 +46748,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Janelle S. Bynum",
+    "seatHolder": "Janelle Bynum",
     "seatParty": "D",
     "pastResults": [
       {
@@ -47159,7 +47159,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Sharif Street",
         "party": "D",
-        "incumbent": true
+        "incumbent": false
       },
       "rep": {
         "name": "Alexander Schnell",
@@ -48631,7 +48631,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "George Kelly",
+        "name": "Mike Kelly",
         "party": "R",
         "incumbent": true
       }
@@ -48851,9 +48851,9 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Gabriel Amo",
+        "name": "Gabe Amo",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -49650,7 +49650,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "James Clyburn",
         "party": "D",
-        "incumbent": false
+        "incumbent": true
       },
       "rep": {
         "name": "Generic Republican",
@@ -49658,7 +49658,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "James E. Clyburn",
+    "seatHolder": "James Clyburn",
     "seatParty": "D",
     "pastResults": [
       {
@@ -50456,10 +50456,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Andy Ogles",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Andrew Ogles",
+    "seatHolder": "Andy Ogles",
     "seatParty": "R",
     "pastResults": [
       {
@@ -51590,7 +51590,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       },
       "rep": {
-        "name": "John Ellzey",
+        "name": "Jake Ellzey",
         "party": "R",
         "incumbent": true
       }
@@ -51812,7 +51812,7 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Keith Coleman",
+        "name": "Laura Jones",
         "party": "D",
         "incumbent": false
       },
@@ -52047,7 +52047,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Michael T. McCaul",
+    "seatHolder": "Michael McCaul",
     "seatParty": "R",
     "pastResults": [
       {
@@ -52944,17 +52944,17 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Alexander Green",
+        "name": "Democratic Candidate",
         "party": "D",
         "incumbent": false
       },
       "rep": {
-        "name": "Generic Republican",
+        "name": "Ronald Whitfield",
         "party": "R",
         "incumbent": false
       }
     },
-    "seatHolder": "Christian D. Menefee",
+    "seatHolder": "Christian Menefee",
     "seatParty": "D",
     "pastResults": [
       {
@@ -53065,10 +53065,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Tom Sell",
         "party": "R",
-        "incumbent": true
+        "incumbent": false
       }
     },
-    "seatHolder": "Jodey C. Arrington",
+    "seatHolder": "Jodey Arrington",
     "seatParty": "R",
     "pastResults": [
       {
@@ -53409,7 +53409,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Troy E. Nehls",
+    "seatHolder": "Troy Nehls",
     "seatParty": "R",
     "pastResults": [
       {
@@ -53520,7 +53520,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Brandon Herrera",
         "party": "R",
-        "incumbent": true
+        "incumbent": false
       }
     },
     "seatHolder": "Tony Gonzales",
@@ -54310,7 +54310,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Frederick Haynes",
         "party": "D",
-        "incumbent": true
+        "incumbent": false
       },
       "rep": {
         "name": "Sholdon Daniels",
@@ -54535,7 +54535,7 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Alex Cornwallis",
+        "name": "Dan Barrios",
         "party": "D",
         "incumbent": false
       },
@@ -54659,7 +54659,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": false
       }
     },
-    "seatHolder": "Marc A. Veasey",
+    "seatHolder": "Marc Veasey",
     "seatParty": "D",
     "pastResults": [
       {
@@ -54880,7 +54880,7 @@ export const houseData: RaceForecast[] = [
       "dem": {
         "name": "Johnny Garcia",
         "party": "D",
-        "incumbent": true
+        "incumbent": false
       },
       "rep": {
         "name": "Carlos De La Cruz",
@@ -55192,7 +55192,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Jon Bonck",
         "party": "R",
-        "incumbent": true
+        "incumbent": false
       }
     },
     "seatHolder": "Wesley Hunt",
@@ -55263,17 +55263,17 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": {
-        "name": "Ben Mcadams",
+        "name": "Ben McAdams",
         "party": "D",
         "incumbent": false
       },
       "rep": {
         "name": "Blake Moore",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Blake D. Moore",
+    "seatHolder": "Blake Moore",
     "seatParty": "R",
     "pastResults": [
       {
@@ -55384,7 +55384,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Celeste Maloy",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Celeste Maloy",
@@ -55499,7 +55499,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Mike Kennedy",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Mike Kennedy",
@@ -55613,7 +55613,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Burgess Owens",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
     "seatHolder": "Burgess Owens",
@@ -57433,7 +57433,7 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Jerrod Sessler",
         "party": "R",
-        "incumbent": true
+        "incumbent": false
       }
     },
     "seatHolder": "Dan Newhouse",
@@ -58221,10 +58221,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Carol Miller",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Carol D. Miller",
+    "seatHolder": "Carol Miller",
     "seatParty": "R",
     "pastResults": [
       {
@@ -58338,7 +58338,7 @@ export const houseData: RaceForecast[] = [
         "incumbent": true
       }
     },
-    "seatHolder": "Riley M. Moore",
+    "seatHolder": "Riley Moore",
     "seatParty": "R",
     "pastResults": [
       {
@@ -59134,10 +59134,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Paul Wassgren",
         "party": "R",
-        "incumbent": true
+        "incumbent": false
       }
     },
-    "seatHolder": "Thomas P. Tiffany",
+    "seatHolder": "Tom Tiffany",
     "seatParty": "R",
     "pastResults": [
       {
@@ -59363,10 +59363,10 @@ export const houseData: RaceForecast[] = [
       "rep": {
         "name": "Harriet Hageman",
         "party": "R",
-        "incumbent": false
+        "incumbent": true
       }
     },
-    "seatHolder": "Harriet M. Hageman",
+    "seatHolder": "Harriet Hageman",
     "seatParty": "R",
     "pastResults": [
       {

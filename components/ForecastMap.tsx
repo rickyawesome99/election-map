@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import SearchBar from "@/components/SearchBar";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry } from "@/data/forecastData";
 import Sidebar from "./Sidebar";
@@ -83,6 +83,8 @@ export default function ForecastMap() {
   const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [mapSize, setMapSize] = useState<{ w: number; h: number }>({ w: 0, h: 0 });
   const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [mapKey, setMapKey] = useState(0);
+  const [viewChanged, setViewChanged] = useState(false);
 
   useEffect(() => {
     const stored = localStorage.getItem("darkMode") === "true";
@@ -229,7 +231,7 @@ export default function ForecastMap() {
 
         {/* ── Map ── */}
         <div
-          className="relative flex-1 overflow-hidden pb-14 md:pb-16"
+          className="relative flex-1 overflow-hidden"
           style={{}}
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
@@ -367,6 +369,7 @@ export default function ForecastMap() {
             style={{ width: "100%", height: "100%" }}
             className="-translate-y-[12%] md:translate-y-0"
           >
+            <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
             <Geographies geography={geoUrl}>
               {({ geographies }: any) =>
                 geographies.map((geo: any) => {
@@ -416,88 +419,95 @@ export default function ForecastMap() {
                 })
               }
             </Geographies>
+            </ZoomableGroup>
           </ComposableMap>
 
-          {/* ── Race-type toggle ── */}
-          <div
-            className="hidden md:block absolute rounded-xl p-2 backdrop-blur-sm"
+          {/* ── Reset zoom button ── */}
+          {viewChanged && <div
+            className="block absolute rounded-xl p-2 backdrop-blur-sm z-10"
             style={{
-              bottom: "calc(73px + 120px + 12px)",
+              top: "1rem",
               left: "1rem",
               background: t.legendBg,
               border: `1px solid ${t.border}`,
               boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
             }}
           >
-            <nav className="flex rounded-lg p-1 gap-0.5" style={{ background: t.tabBg }}>
-              {([["house", "H"], ["senate", "S"], ["governor", "G"]] as [RaceType, string][]).map(([type, label]) => (
-                <button
-                  key={type}
-                  onClick={() => { setRaceType(type); setSelected(null); setSelectedNoElection(null); localStorage.setItem("raceType", type); }}
-                  className="w-8 py-1.5 rounded-md text-sm font-medium transition-all text-center"
-                  style={
-                    raceType === type
-                      ? { background: "#388bfd", color: "#ffffff" }
-                      : { color: t.textMuted }
-                  }
-                >
-                  {label}
-                </button>
-              ))}
+            <nav className="flex rounded-lg p-1" style={{ background: t.tabBg }}>
+              <button
+                onClick={() => { setMapKey(k => k + 1); setViewChanged(false); }}
+                className="px-3 py-1.5 rounded-md text-sm font-medium transition-all text-center"
+                style={{ color: t.textMuted }}
+              >
+                Reset
+              </button>
             </nav>
-          </div>
+          </div>}
 
-          {/* ── Seat Scorecard ── */}
+          {/* ── Left column: H/S/G + Scorecard + Legend ── */}
           <div
-            className="hidden md:block absolute bottom-[73px] left-4 rounded-xl p-2.5 backdrop-blur-sm"
-            style={{
-              background: t.legendBg,
-              border: `1px solid ${t.border}`,
-              width: 155,
-              boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
-            }}
+            className="hidden md:flex flex-col absolute justify-between items-start"
+            style={{ bottom: "12px", left: "1rem", height: "260px" }}
           >
-            <div className="text-[9px] font-semibold uppercase tracking-wider mb-1.5 text-center" style={{ color: t.textMuted }}>
-              {raceType === "house" ? "House" : raceType === "senate" ? "Senate" : "Governors"} Seats
+            {/* Race-type toggle */}
+            <div
+              className="rounded-xl p-2 backdrop-blur-sm"
+              style={{ background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
+            >
+              <nav className="flex rounded-lg p-1 gap-0.5" style={{ background: t.tabBg }}>
+                {([["house", "H"], ["senate", "S"], ["governor", "G"]] as [RaceType, string][]).map(([type, label]) => (
+                  <button
+                    key={type}
+                    onClick={() => { setRaceType(type); setSelected(null); setSelectedNoElection(null); localStorage.setItem("raceType", type); }}
+                    className="w-8 py-1.5 rounded-md text-sm font-medium transition-all text-center"
+                    style={raceType === type ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </nav>
             </div>
 
-            {/* Dem | Rep side by side */}
-            <div className="flex gap-1.5 mb-1.5">
-              {/* Dem */}
-              <div className="flex-1 flex flex-col items-center rounded-lg py-1.5" style={{ background: "rgba(26,68,128,0.18)" }}>
-                <span className="text-xl font-bold leading-none" style={{ color: t.demText }}>{demSeats}</span>
-                <span className="text-[9px] font-semibold mt-0.5" style={{ color: t.demText }}>Dem</span>
+            {/* Seat Scorecard */}
+            <div
+              className="rounded-xl p-3 backdrop-blur-sm"
+              style={{ background: t.legendBg, border: `1px solid ${t.border}`, width: 175, boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
+            >
+              <div className="text-[9px] font-semibold uppercase tracking-wider mb-2 text-center" style={{ color: t.textMuted }}>
+                {raceType === "house" ? "House" : raceType === "senate" ? "Senate" : "Governors"} Seats
               </div>
-              {/* Rep */}
-              <div className="flex-1 flex flex-col items-center rounded-lg py-1.5" style={{ background: "rgba(139,26,26,0.18)" }}>
-                <span className="text-xl font-bold leading-none" style={{ color: t.repText }}>{repSeats}</span>
-                <span className="text-[9px] font-semibold mt-0.5" style={{ color: t.repText }}>Rep</span>
-              </div>
-            </div>
-
-            {/* Split bar */}
-            <div className="flex h-1.5 rounded-full overflow-hidden">
-              <div style={{ width: `${demPct}%`, background: "#1a4480" }} />
-              <div style={{ width: `${100 - demPct}%`, background: "#8b1a1a" }} />
-            </div>
-
-            <div className="mt-1.5 text-center text-[9px]" style={{ color: t.textVeryMuted }}>
-              of {totalSeats} total seats
-            </div>
-          </div>
-
-          {/* ── Legend ── */}
-          <div
-            className="hidden md:block absolute bottom-3 left-5 rounded-lg p-2 backdrop-blur-sm"
-            style={{ background: t.legendBg, border: `1px solid ${t.border}` }}
-          >
-            <div className="flex items-center gap-1">
-              {LEGEND.map(({ color, label }) => (
-                <div key={label} className="flex flex-col items-center gap-0.5">
-                  <div style={{ background: color }} className="w-5 h-2.5 rounded-sm" />
-                  <span className="text-[8px] whitespace-nowrap" style={{ color: t.textMuted }}>{label}</span>
+              <div className="flex gap-2 mb-2">
+                <div className="flex-1 flex flex-col items-center rounded-lg py-2.5" style={{ background: "rgba(26,68,128,0.18)" }}>
+                  <span className="text-2xl font-bold leading-none" style={{ color: t.demText }}>{demSeats}</span>
+                  <span className="text-[10px] font-semibold mt-1" style={{ color: t.demText }}>Dem</span>
                 </div>
-              ))}
+                <div className="flex-1 flex flex-col items-center rounded-lg py-2.5" style={{ background: "rgba(139,26,26,0.18)" }}>
+                  <span className="text-2xl font-bold leading-none" style={{ color: t.repText }}>{repSeats}</span>
+                  <span className="text-[10px] font-semibold mt-1" style={{ color: t.repText }}>Rep</span>
+                </div>
+              </div>
+              <div className="flex h-1.5 rounded-full overflow-hidden">
+                <div style={{ width: `${demPct}%`, background: "#1a4480" }} />
+                <div style={{ width: `${100 - demPct}%`, background: "#8b1a1a" }} />
+              </div>
+              <div className="mt-2 text-center text-[9px]" style={{ color: t.textVeryMuted }}>
+                of {totalSeats} total seats
+              </div>
+            </div>
+
+            {/* Legend */}
+            <div
+              className="rounded-lg p-2 backdrop-blur-sm"
+              style={{ background: t.legendBg, border: `1px solid ${t.border}` }}
+            >
+              <div className="flex items-center gap-1">
+                {LEGEND.map(({ color, label }) => (
+                  <div key={label} className="flex flex-col items-center gap-0.5">
+                    <div style={{ background: color }} className="w-5 h-2.5 rounded-sm" />
+                    <span className="text-[8px] whitespace-nowrap" style={{ color: t.textMuted }}>{label}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 

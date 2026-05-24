@@ -1,4 +1,5 @@
 import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, electionYear } from "@/data/forecastData";
+import { pviHistory } from "@/lib/pviHistory";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -59,6 +60,24 @@ export default async function HousePage({ params, searchParams }: { params: Prom
     ? pvi2026 === 0 ? "EVEN" : pvi2026 > 0 ? `R+${pvi2026}` : `D+${Math.abs(pvi2026)}`
     : "TBD";
 
+  const PVI_DISPLAY_YEARS = [2026, 2024, 2022, 2020, 2018, 2016] as const;
+  const districtPviByYear = pviHistory[race.id] ?? {};
+  const boundaryByYear = new Map((houseDistrictInfo[race.id] ?? []).map(e => [e.year, e]));
+  const boundaryEntries = PVI_DISPLAY_YEARS
+    .filter(year => districtPviByYear[year] != null || boundaryByYear.has(year))
+    .map(year => {
+      const boundary = boundaryByYear.get(year);
+      const pvi = districtPviByYear[year];
+      return {
+        year,
+        pvi,
+        description: boundary?.description,
+        pviOld: boundary?.pviOld,
+        pviNew: pvi ?? boundary?.pviNew,
+        boundaryChanged: !!boundary,
+      };
+    });
+
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <AppHeader back={<BackButton />} />
@@ -84,7 +103,18 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               className="min-h-[220px] overflow-hidden rounded-xl"
               style={{ border: "1px solid var(--app-border)" }}
             >
-              <DistrictMiniMap raceId={race.id} stateAbbr={stateAbbr} margin={race.margin} />
+              <DistrictMiniMap
+                raceId={race.id}
+                stateAbbr={stateAbbr}
+                margin={race.margin}
+                boundaryYears={(() => {
+                  const entries = houseDistrictInfo[race.id] ?? [];
+                  if (entries.length === 0) return [];
+                  const years = new Set(entries.map(e => e.year));
+                  years.add(2016);
+                  return [...years].sort((a, b) => b - a);
+                })()}
+              />
             </div>
 
             <AboutRaceCard
@@ -99,7 +129,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
 
             <div className="[&>section]:h-full" style={{ height: HOUSE_BOUNDARIES_CARD_HEIGHT }}>
               <HouseOnlyDistrictBoundariesSection
-                entries={houseDistrictInfo[race.id] ?? []}
+                entries={boundaryEntries}
                 density="compact"
                 maxHeight={HOUSE_BOUNDARIES_CARD_HEIGHT}
                 scrollable

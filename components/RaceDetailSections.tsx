@@ -37,9 +37,11 @@ type CandidateCardEntry = {
 
 type HouseBoundaryHistoryEntry = {
   year: number;
-  description: string;
+  pvi?: number;
+  description?: string;
   pviOld?: number;
   pviNew?: number;
+  boundaryChanged?: boolean;
 };
 
 type DetailDensity = "default" | "compact";
@@ -801,43 +803,58 @@ export function HouseOnlyDistrictBoundariesSection({
         className={`mb-2 ${(scrollable || maxHeight) ? "min-h-0 flex-1 overflow-y-auto pr-1" : ""}`}
       >
         <div className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-          Change History
+          PVI History
         </div>
         {entries.length === 0 ? (
           <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>
-            No redistricting changes recorded for this district.
+            No PVI data recorded for this district.
           </p>
         ) : (
           <div className={`flex flex-col ${isCompact ? "gap-2" : "gap-2.5"}`}>
-            {entries.map((entry, i) => (
-              <div key={i} className="flex gap-3 items-start">
-                <div
-                  className="shrink-0 text-xs font-semibold tabular-nums rounded px-2 py-1 mt-0.5"
-                  style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", minWidth: 56, textAlign: "center" }}
-                >
-                  {entry.year}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
-                    {entry.description}
+            {entries.map((entry, i) => {
+              const displayPvi = entry.pvi ?? entry.pviNew;
+              return (
+                <div key={i} className="flex gap-3 items-start">
+                  <div
+                    className="shrink-0 text-xs font-semibold tabular-nums rounded px-2 py-1 mt-0.5"
+                    style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", minWidth: 56, textAlign: "center" }}
+                  >
+                    {entry.year}
                   </div>
-                  {entry.pviNew != null && (
-                    <div className="mt-1.5 flex items-center gap-1.5">
-                      <span className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-very-muted)" }}>PVI</span>
-                      {entry.pviOld != null ? (
-                        <>
-                          <PviBadge pvi={entry.pviOld} />
-                          <span className="text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>→</span>
-                          <PviBadge pvi={entry.pviNew} />
-                        </>
-                      ) : (
-                        <PviBadge pvi={entry.pviNew} />
-                      )}
-                    </div>
-                  )}
+                  <div className="flex-1 min-w-0">
+                    {entry.boundaryChanged && (
+                      <div className="flex items-center gap-1.5 mb-1">
+                        <span
+                          className="text-[10px] font-semibold px-1.5 py-0.5 rounded"
+                          style={{ background: "color-mix(in srgb, #b45309 15%, transparent)", color: "#b45309" }}
+                        >
+                          Boundaries Redrawn
+                        </span>
+                      </div>
+                    )}
+                    {displayPvi != null && (
+                      <div className="flex items-center gap-1.5 mb-1">
+                        <span className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-very-muted)" }}>PVI</span>
+                        {entry.boundaryChanged && entry.pviOld != null ? (
+                          <>
+                            <PviBadge pvi={entry.pviOld} />
+                            <span className="text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>→</span>
+                            <PviBadge pvi={displayPvi} />
+                          </>
+                        ) : (
+                          <PviBadge pvi={displayPvi} />
+                        )}
+                      </div>
+                    )}
+                    {entry.description && (
+                      <div className="text-xs leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
+                        {entry.description}
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>

@@ -31,7 +31,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
         className="absolute z-30 hidden flex-col overflow-hidden rounded-xl backdrop-blur-sm md:flex"
         style={{
           right: "1.25rem",
-          bottom: "73px",
+          bottom: "12px",
           width: 172,
           maxHeight: 260,
           background: panelSurface,

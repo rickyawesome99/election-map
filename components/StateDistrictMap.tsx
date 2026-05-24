@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import type { RaceForecast } from "@/data/forecastData";
 
@@ -51,6 +51,8 @@ export default function StateDistrictMap({
   const [hovered, setHovered] = useState<RaceForecast | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
+  const [mapKey, setMapKey] = useState(0);
+  const [viewChanged, setViewChanged] = useState(false);
   const [darkMode] = useState(() => typeof window !== "undefined" && localStorage.getItem("darkMode") === "true");
 
   const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
@@ -161,6 +163,7 @@ export default function StateDistrictMap({
           projectionConfig={{ scale: proj[2], center: [proj[0], proj[1]] }}
           style={{ width: "100%", height: "100%" }}
         >
+          <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
           <Geographies geography={DISTRICTS_URL}>
             {({ geographies }: { geographies: DistrictGeometry[] }) =>
               geographies.map((geo) => {
@@ -202,15 +205,27 @@ export default function StateDistrictMap({
               })
             }
           </Geographies>
+          </ZoomableGroup>
         </ComposableMap>
 
         {/* District count badge */}
         <div
-          className="absolute top-2 right-2 text-[10px] font-semibold px-2 py-1 rounded-md"
+          className="absolute top-2 left-2 text-[10px] font-semibold px-2 py-1 rounded-md"
           style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", opacity: 0.92 }}
         >
           {houseRaces.length} district{houseRaces.length !== 1 ? "s" : ""}
         </div>
+
+        {/* Reset zoom button */}
+        {viewChanged && (
+          <button
+            onClick={() => { setMapKey(k => k + 1); setViewChanged(false); }}
+            className="absolute top-2 right-2 z-10 text-[10px] font-semibold px-2 py-1 rounded-md"
+            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", opacity: 0.92 }}
+          >
+            Reset
+          </button>
+        )}
       </div>
     </div>
   );

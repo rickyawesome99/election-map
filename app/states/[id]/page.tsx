@@ -1,5 +1,5 @@
 import { statesData } from "@/data/statesData";
-import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, senateCurrent, pres2024, presPastResults, houseDelegationHistory, PresResult, RaceForecast, NoElectionEntry, electionYear } from "@/data/forecastData";
+import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, senateCurrent, pres2024, presPastResults, houseDelegationHistory, houseStatewideResults, PresResult, RaceForecast, NoElectionEntry, HouseStatewideResult, electionYear } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -282,6 +282,26 @@ export default async function StateDetailPage({ params, searchParams }: { params
     return race.margin >= 0 ? "D" : "R";
   }
 
+  const STATE_FIPS: Record<string, string> = {
+    AL: "01", AK: "02", AZ: "04", AR: "05", CA: "06", CO: "08", CT: "09",
+    DE: "10", FL: "12", GA: "13", HI: "15", ID: "16", IL: "17", IN: "18",
+    IA: "19", KS: "20", KY: "21", LA: "22", ME: "23", MD: "24", MA: "25",
+    MI: "26", MN: "27", MS: "28", MO: "29", MT: "30", NE: "31", NV: "32",
+    NH: "33", NJ: "34", NM: "35", NY: "36", NC: "37", ND: "38", OH: "39",
+    OK: "40", OR: "41", PA: "42", RI: "44", SC: "45", SD: "46", TN: "47",
+    TX: "48", UT: "49", VT: "50", VA: "51", WA: "53", WV: "54", WI: "55",
+    WY: "56",
+  };
+  const stateFips = STATE_FIPS[state.abbr] ?? "";
+  const MAJOR_RACES = new Set(["President", "Governor", "Senate"]);
+  const statePastResults: Record<string, HouseStatewideResult[]> = {};
+  for (const [geoid, results] of Object.entries(houseStatewideResults)) {
+    if (stateFips && geoid.startsWith(stateFips)) {
+      const filtered = results.filter(r => r.year >= 2016 && MAJOR_RACES.has(r.race));
+      if (filtered.length > 0) statePastResults[geoid] = filtered;
+    }
+  }
+
   const stateDelegationHistory = houseDelegationHistory[state.name] ?? [];
 
   // House current composition — use 2024 delegation history if available, else infer from incumbents
@@ -347,6 +367,8 @@ export default async function StateDetailPage({ params, searchParams }: { params
           houseRaces={houseRaces}
           stateAbbr={state.abbr}
           stateName={state.name}
+          stateFips={stateFips}
+          pastElectionResults={statePastResults}
           overview={(
             <>
               <section

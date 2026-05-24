@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 
 const COUNTIES_URL = "/us-counties.json";
 
@@ -68,6 +68,8 @@ export default function StateCountyMap({
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelected] = useState<County | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [mapKey, setMapKey] = useState(0);
+  const [viewChanged, setViewChanged] = useState(false);
   const [darkMode] = useState(
     () => typeof window !== "undefined" && localStorage.getItem("darkMode") === "true"
   );
@@ -128,6 +130,7 @@ export default function StateCountyMap({
           projectionConfig={{ scale: proj[2], center: [proj[0], proj[1]] }}
           style={{ width: "100%", height: "100%" }}
         >
+          <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
           <Geographies geography={COUNTIES_URL}>
             {({ geographies }: { geographies: CountyGeometry[] }) =>
               geographies
@@ -173,11 +176,12 @@ export default function StateCountyMap({
                 })
             }
           </Geographies>
+          </ZoomableGroup>
         </ComposableMap>
 
         {/* State label badge */}
         <div
-          className="absolute top-2 right-2 text-[10px] font-semibold px-2 py-1 rounded-md"
+          className="absolute top-2 left-2 text-[10px] font-semibold px-2 py-1 rounded-md"
           style={{
             background: "var(--app-panel)",
             border: "1px solid var(--app-border)",
@@ -187,6 +191,17 @@ export default function StateCountyMap({
         >
           {stateName} · Counties
         </div>
+
+        {/* Reset zoom button */}
+        {viewChanged && (
+          <button
+            onClick={() => { setMapKey(k => k + 1); setViewChanged(false); }}
+            className="absolute top-2 right-2 z-10 text-[10px] font-semibold px-2 py-1 rounded-md"
+            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", opacity: 0.92 }}
+          >
+            Reset
+          </button>
+        )}
       </div>
 
       {/* Selected county info panel */}

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { RaceForecast } from "@/data/forecastData";
+import type { RaceForecast, HouseStatewideResult } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import StateMapToggle from "./StateMapToggle";
 import Link from "next/link";
@@ -12,12 +12,16 @@ export default function StateMapSection({
   houseRaces,
   stateAbbr,
   stateName,
+  stateFips,
+  pastElectionResults,
 }: {
   overview: React.ReactNode;
   children: React.ReactNode;
   houseRaces: RaceForecast[];
   stateAbbr: string;
   stateName: string;
+  stateFips: string;
+  pastElectionResults: Record<string, HouseStatewideResult[]>;
 }) {
   const [selected, setSelected] = useState<RaceForecast | null>(null);
   const demPct = selected ? Math.max(0, Math.min(100, 50 + selected.margin / 2)) : 0;
@@ -32,9 +36,11 @@ export default function StateMapSection({
         <StateMapToggle
           abbr={stateAbbr}
           stateName={stateName}
+          stateFips={stateFips}
           houseRaces={houseRaces}
           selected={selected}
           onSelect={setSelected}
+          pastElectionResults={pastElectionResults}
         />
         {selected && (
           <section
