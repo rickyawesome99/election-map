@@ -424,7 +424,7 @@ export default function ForecastMap() {
 
           {/* ── Reset zoom button ── */}
           {viewChanged && <div
-            className="block absolute rounded-xl p-2 backdrop-blur-sm z-10"
+            className="block absolute rounded-xl p-1.5 backdrop-blur-sm z-10"
             style={{
               top: "1rem",
               left: "1rem",
@@ -436,7 +436,7 @@ export default function ForecastMap() {
             <nav className="flex rounded-lg p-1" style={{ background: t.tabBg }}>
               <button
                 onClick={() => { setMapKey(k => k + 1); setViewChanged(false); }}
-                className="px-3 py-1.5 rounded-md text-sm font-medium transition-all text-center"
+                className="px-2 py-1 rounded-md text-xs font-medium transition-all text-center"
                 style={{ color: t.textMuted }}
               >
                 Reset
@@ -498,7 +498,7 @@ export default function ForecastMap() {
             {/* Legend */}
             <div
               className="rounded-lg p-2 backdrop-blur-sm"
-              style={{ background: t.legendBg, border: `1px solid ${t.border}` }}
+              style={{ background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
             >
               <div className="flex items-center gap-1">
                 {LEGEND.map(({ color, label }) => (
