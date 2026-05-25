@@ -107,36 +107,44 @@ function NoElectionPage({
         </div>
 
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
-          <div className="flex flex-col gap-3">
-            <CurrentIncumbentCard
-              incumbentName={incumbent}
-              party={party}
-            />
-            <AboutRaceCard
-              title="About this Seat"
-              description={raceDesc ?? "[Placeholder — overview of this seat, its history, the incumbent's background, key issues, and political context to be filled in.]"}
-              items={[
-                { label: "Party", value: partyLabel },
-                { label: "Elected", value: termStarted },
-                { label: "Next Election", value: String(nextElection) },
-              ]}
-            />
+          <div className="contents lg:flex lg:flex-col lg:gap-3">
+            <div className="order-1">
+              <CurrentIncumbentCard
+                incumbentName={incumbent}
+                party={party}
+              />
+            </div>
+            <div className="order-2">
+              <AboutRaceCard
+                title="About this Seat"
+                description={raceDesc ?? "[Placeholder — overview of this seat, its history, the incumbent's background, key issues, and political context to be filled in.]"}
+                items={[
+                  { label: "Party", value: partyLabel },
+                  { label: "Elected", value: termStarted },
+                  { label: "Next Election", value: String(nextElection) },
+                ]}
+              />
+            </div>
             {pastResults && pastResults.length > 0 && (
-              <SeatVoteHistoryChart results={pastResults} />
+              <div className="order-4">
+                <SeatVoteHistoryChart results={pastResults} />
+              </div>
             )}
           </div>
 
-          <div className="grid grid-cols-1 gap-3">
-            <ElectionStatusCard
-              message={`This seat is not on the ballot in November ${electionYear}. The next election for this seat is scheduled for ${nextElection}. Incumbent and biographical information to be filled in.`}
-            />
+          <div className="contents lg:grid lg:grid-cols-1 lg:gap-3">
+            <div className="order-3">
+              <ElectionStatusCard
+                message={`This seat is not on the ballot in November ${electionYear}. The next election for this seat is scheduled for ${nextElection}. Incumbent and biographical information to be filled in.`}
+              />
+            </div>
 
             <PastElectionResultsSection
               results={pastResults}
               fallbackYears={[nextElection - termYears, nextElection - termYears * 2]}
               showElectionType
               showSpecialBadgeForSpecialElections
-              layoutClassName="lg:max-h-[34rem]"
+              layoutClassName="order-5 lg:max-h-[34rem]"
               density="compact"
               scrollable
             />
@@ -235,27 +243,31 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
         </div>
 
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
-          <div className="flex flex-col gap-3">
-            <div className="overflow-hidden rounded-xl" style={{ border: "1px solid var(--app-border)" }}>
-              <StateCountyMap stateAbbr={abbr} stateName={race.name} />
+          <div className="contents lg:flex lg:flex-col lg:gap-3">
+            <div className="order-1 overflow-hidden rounded-xl" style={{ border: "1px solid var(--app-border)" }}>
+              <StateCountyMap stateAbbr={abbr} stateName={race.name} height={300} />
             </div>
-            <AboutRaceCard
-              title="About this Race"
-              description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
-              items={[
-                { label: "Incumbent", value: currentSenatorName },
-                { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD" },
-                { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
-              ]}
-            />
+            <div className="order-2">
+              <AboutRaceCard
+                title="About this Race"
+                description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
+                items={[
+                  { label: "Incumbent", value: currentSenatorName },
+                  { label: "Party", value: currentSenatorParty ? (currentSenatorParty === "D" ? "Democrat" : currentSenatorParty === "R" ? "Republican" : "Independent") : "TBD" },
+                  { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
+                ]}
+              />
+            </div>
             {race.pastResults && race.pastResults.length > 0 && (
-              <SeatVoteHistoryChart results={enrichSenateResults(race.pastResults)} />
+              <div className="order-5">
+                <SeatVoteHistoryChart results={enrichSenateResults(race.pastResults)} />
+              </div>
             )}
           </div>
 
-          <div className="grid grid-cols-1 gap-3 lg:grid-cols-8">
+          <div className="contents lg:grid lg:grid-cols-8 lg:gap-3">
             {race.candidates && (
-              <div className="lg:col-span-5 [&>section]:h-full">
+              <div className="order-3 lg:col-span-5 [&>section]:h-full">
                 <CandidatesSection
                   density="compact"
                   candidates={[
@@ -278,7 +290,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
               </div>
             )}
 
-            <div className={`${race.candidates ? "lg:col-span-3" : "lg:col-span-8"} [&>section]:h-full`}>
+            <div className={`order-4 ${race.candidates ? "lg:col-span-3" : "lg:col-span-8"} [&>section]:h-full`}>
               <MarginAndWinProbabilityCard
                 density="compact"
                 margin={race.margin}
@@ -298,7 +310,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
                 results={enrichSenateResults(race.pastResults)}
                 fallbackYears={[]}
                 showElectionType
-                layoutClassName="lg:col-span-8 lg:max-h-[34rem]"
+                layoutClassName="order-6 lg:col-span-8 lg:max-h-[34rem]"
                 density="compact"
                 scrollable
               />

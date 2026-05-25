@@ -61,9 +61,11 @@ type CountyGeometry = {
 export default function StateCountyMap({
   stateAbbr,
   stateName,
+  height = 360,
 }: {
   stateAbbr: string;
   stateName: string;
+  height?: number;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelected] = useState<County | null>(null);
@@ -88,7 +90,7 @@ export default function StateCountyMap({
     <div>
       <div
         className="relative"
-        style={{ height: 360, background: "var(--app-bg)" }}
+        style={{ height, background: "var(--app-bg)" }}
         onMouseMove={(e) => {
           const rect = e.currentTarget.getBoundingClientRect();
           setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
