@@ -8,8 +8,8 @@ import BackButton from "@/components/BackButton";
 import AppHeader from "@/components/AppHeader";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
 import { AboutRaceCard, CandidatesSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, MarginAndWinProbabilityCard, PastElectionResultsSection } from "@/components/RaceDetailSections";
-
-const HOUSE_BOUNDARIES_CARD_HEIGHT = "445px";
+import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
+const HOUSE_BOUNDARIES_CARD_HEIGHT = "275px";
 
 function inferCurrentHouseSeatFromPastResults(race: { pastResults?: { demIncumbent?: boolean; repIncumbent?: boolean; demCandidate?: string; repCandidate?: string }[] }) {
   for (const res of race.pastResults ?? []) {
@@ -70,6 +70,9 @@ export default async function HousePage({ params, searchParams }: { params: Prom
   });
 
   const rawStatewideResults = houseStatewideResults[race.id] ?? [];
+  const stateDistrictCount = houseData.filter(r => r.state === race.state && r.raceType === "house").length;
+  // Year from which the state had multiple districts (for states that recently gained seats)
+  const multiDistrictSince: Record<string, number> = { MT: 2022 };
 
   function prevElectionYear(race: string, year: number): number | null {
     if (race === "President") return year - 4;
@@ -91,7 +94,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
       : null;
     return {
       ...res,
-      stateDiff: statewideMargin != null ? districtMargin - statewideMargin : null,
+      stateDiff: stateDistrictCount > 1 && statewideMargin != null && res.year >= (multiDistrictSince[stateAbbr] ?? 0) ? districtMargin - statewideMargin : null,
       nationalDiff: nationalMargin != null ? nationalMargin - districtMargin : null,
       swing,
     };
@@ -167,7 +170,11 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               />
             </div>
 
-            <div className="order-7 [&>section]:h-full" style={{ height: HOUSE_BOUNDARIES_CARD_HEIGHT }}>
+            <div className="order-7">
+              <DistrictVoteHistoryChart houseResults={pastResultsWithDiff} statewideResults={statewideResultsWithDiff} />
+            </div>
+
+            <div className="order-8 [&>section]:h-full" style={{ height: HOUSE_BOUNDARIES_CARD_HEIGHT }}>
               <HouseOnlyDistrictBoundariesSection
                 entries={boundaryEntries}
                 density="compact"

@@ -4,10 +4,10 @@ import { useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
 
-const DISTRICTS_URL = "/congressional-districts.json";
+const DISTRICTS_URL = "/congressional-districts-2026.json";
 
 function getGeoUrlForYear(year: number): string {
-  if (year >= 2026) return "/congressional-districts.json";
+  if (year >= 2026) return "/congressional-districts-2026.json";
   if (year >= 2024) return "/congressional-districts-2024.json";
   if (year >= 2022) return "/congressional-districts-2022.json";
   if (year >= 2020) return "/congressional-districts-pre2022.json";

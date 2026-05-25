@@ -32,17 +32,20 @@ export default function StateMapSection({
 
   return (
     <div className="grid grid-cols-1 gap-3 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] md:items-stretch">
-      <div className="flex flex-col gap-3 md:h-full">
-        <StateMapToggle
-          abbr={stateAbbr}
-          stateName={stateName}
-          stateFips={stateFips}
-          houseRaces={houseRaces}
-          selected={selected}
-          onSelect={setSelected}
-          pastElectionResults={pastElectionResults}
-        />
+      <div className="contents md:flex md:flex-col md:gap-3 md:h-full">
+        <div className="order-1">
+          <StateMapToggle
+            abbr={stateAbbr}
+            stateName={stateName}
+            stateFips={stateFips}
+            houseRaces={houseRaces}
+            selected={selected}
+            onSelect={setSelected}
+            pastElectionResults={pastElectionResults}
+          />
+        </div>
         {selected && (
+          <div className="order-2">
           <section
             className="rounded-xl p-3"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
@@ -120,11 +123,12 @@ export default function StateMapSection({
               </svg>
             </Link>
           </section>
+          </div>
         )}
         {overview}
       </div>
 
-      <div className="grid grid-cols-1 gap-3 md:flex md:h-full md:min-h-0 md:flex-col md:self-stretch [&>section:last-child]:md:min-h-0 [&>section:last-child]:md:flex-1">
+      <div className="contents md:flex md:h-full md:min-h-0 md:flex-col md:self-stretch md:gap-3 [&>section:last-child]:md:min-h-0 [&>section:last-child]:md:flex-1">
         {children}
       </div>
     </div>

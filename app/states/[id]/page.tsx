@@ -374,6 +374,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
           pastElectionResults={statePastResults}
           overview={(
             <>
+              <div className="order-3">
               <section
                 className="rounded-xl p-3"
                 style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
@@ -464,8 +465,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
                   })()}
                 </div>
               </section>
+              </div>
 
               {houseRaces.length > 0 && (
+                <div className="order-6">
                 <section
                   className="rounded-xl p-3"
                   style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
@@ -547,13 +550,14 @@ export default async function StateDetailPage({ params, searchParams }: { params
                     </div>
                   </div>
                 </section>
+                </div>
               )}
             </>
           )}
         >
         {/* Federal Offices */}
         <section
-          className="rounded-xl p-3"
+          className="order-4 rounded-xl p-3"
           style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
         >
           <div className="flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-3 mb-3">
@@ -654,7 +658,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
           {/* Electoral History */}
           <section
-            className="rounded-xl p-3 md:flex md:min-h-0 md:flex-col md:overflow-hidden"
+            className="order-5 rounded-xl p-3 md:flex md:min-h-0 md:flex-col md:overflow-hidden"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
           >
             <h2

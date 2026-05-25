@@ -5,7 +5,7 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import type { RaceForecast } from "@/data/forecastData";
 
-const DISTRICTS_URL = "/congressional-districts.json";
+const DISTRICTS_URL = "/congressional-districts-2026.json";
 
 type DistrictGeometry = {
   rsmKey: string;

@@ -300,18 +300,18 @@ export default function PopularVoteChart() {
                   type="monotone"
                   dataKey="demPct"
                   name="demPct"
-                  stroke="var(--party-dem)"
+                  stroke="#1b408c"
                   strokeWidth={2.5}
-                  dot={{ r: 7, fill: "var(--party-dem)", strokeWidth: 0 }}
+                  dot={{ r: 7, fill: "#1b408c", strokeWidth: 0 }}
                   activeDot={{ r: 5 }}
                 />
                 <Line
                   type="monotone"
                   dataKey="repPct"
                   name="repPct"
-                  stroke="var(--party-rep)"
+                  stroke="#be1c29"
                   strokeWidth={2.5}
-                  dot={{ r: 7, fill: "var(--party-rep)", strokeWidth: 0 }}
+                  dot={{ r: 7, fill: "#be1c29", strokeWidth: 0 }}
                   activeDot={{ r: 5 }}
                 />
               </>
@@ -319,7 +319,7 @@ export default function PopularVoteChart() {
               <Line
                 type="monotone"
                 dataKey="demMargin"
-                stroke="var(--party-dem)"
+                stroke="var(--app-text-muted)"
                 strokeWidth={2.5}
                 dot={({ cx, cy, payload }: { cx?: number; cy?: number; payload: ChartPoint }) => (
                   <circle
@@ -327,7 +327,7 @@ export default function PopularVoteChart() {
                     cx={cx ?? 0}
                     cy={cy ?? 0}
                     r={7}
-                    fill={payload.demMargin >= 0 ? "var(--party-dem)" : "var(--party-rep)"}
+                    fill={payload.demMargin >= 0 ? "#1b408c" : "#be1c29"}
                   />
                 )}
                 activeDot={{ r: 5 }}
@@ -344,7 +344,7 @@ export default function PopularVoteChart() {
                     cx={cx ?? 0}
                     cy={cy ?? 0}
                     r={7}
-                    fill={presIncParty(payload.presInc) === "dem" ? "var(--party-dem)" : "var(--party-rep)"}
+                    fill={presIncParty(payload.presInc) === "dem" ? "#1b408c" : "#be1c29"}
                     opacity={0.45}
                   />
                 )}
@@ -356,19 +356,20 @@ export default function PopularVoteChart() {
       </div>
 
       {/* Summary table */}
-      <div style={{ borderTop: "1px solid var(--app-border)" }}>
-        <table className="w-full text-xs" style={{ borderCollapse: "collapse" }}>
+      <div className="overflow-x-auto" style={{ borderTop: "1px solid var(--app-border)" }}>
+        <table className="w-full text-xs" style={{ borderCollapse: "collapse", minWidth: 520 }}>
           <thead>
             <tr style={{ background: "var(--app-tab-bg)" }}>
               <th className="px-4 py-2 text-left font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)", fontSize: 9 }}>Year</th>
-              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider" style={{ color: "var(--party-dem)", fontSize: 9 }}>Dem%</th>
-              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider" style={{ color: "var(--party-rep)", fontSize: 9 }}>Rep%</th>
+              <th className="px-4 py-2 text-left font-semibold uppercase tracking-wider" style={{ color: "var(--party-dem)", fontSize: 9 }}>Dem%</th>
+              <th className="px-4 py-2 text-left font-semibold uppercase tracking-wider" style={{ color: "var(--party-rep)", fontSize: 9 }}>Rep%</th>
               <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)", fontSize: 9 }}>Margin</th>
+              <th className="px-4 py-2 text-left font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)", fontSize: 9 }}>{selected === "President" ? "EV" : "Seats"}</th>
+              <th className="px-4 py-2 text-left font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)", fontSize: 9 }}>Pres Appr.</th>
               {(selected === "Senate" || selected === "Governor") && (
                 <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)", fontSize: 9 }}>Races</th>
               )}
-              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)", fontSize: 9 }}>Pres Appr.</th>
-              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider hidden sm:table-cell" style={{ color: "var(--app-text-muted)", fontSize: 9 }}>Total Votes</th>
+              <th className="px-4 py-2 text-right font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)", fontSize: 9 }}>Total Votes</th>
             </tr>
           </thead>
           <tbody>
@@ -383,26 +384,31 @@ export default function PopularVoteChart() {
                   }}
                 >
                   <td className="px-4 py-2 font-medium" style={{ color: "var(--app-text-muted)" }}>{r.year}</td>
-                  <td className="px-4 py-2 text-right font-mono font-semibold" style={{ color: "var(--party-dem)" }}>{r.demPct.toFixed(1)}%</td>
-                  <td className="px-4 py-2 text-right font-mono font-semibold" style={{ color: "var(--party-rep)" }}>{r.repPct.toFixed(1)}%</td>
+                  <td className="px-4 py-2 text-left font-mono font-semibold" style={{ color: "var(--party-dem)" }}>{r.demPct.toFixed(1)}%</td>
+                  <td className="px-4 py-2 text-left font-mono font-semibold" style={{ color: "var(--party-rep)" }}>{r.repPct.toFixed(1)}%</td>
                   <td
                     className="px-4 py-2 text-right font-mono font-bold"
                     style={{ color: demMargin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}
                   >
                     {marginLabel(demMargin)}
                   </td>
+                  <td className="px-4 py-2 text-left font-mono font-semibold whitespace-nowrap">
+                    <span style={{ color: "var(--party-dem)" }}>{r.seatsD}D</span>
+                    <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
+                    <span style={{ color: "var(--party-rep)" }}>{r.seatsR}R</span>
+                  </td>
+                  <td
+                    className="px-4 py-2 text-left font-mono font-semibold"
+                    style={{ color: presIncParty(r.presInc) === "dem" ? "var(--party-dem)" : "var(--party-rep)" }}
+                  >
+                    {r.presMargin > 0 ? "+" : ""}{r.presMargin.toFixed(1)}
+                  </td>
                   {(selected === "Senate" || selected === "Governor") && (
                     <td className="px-4 py-2 text-right font-mono" style={{ color: "var(--app-text-muted)" }}>
                       {r.totalRaces}
                     </td>
                   )}
-                  <td
-                    className="px-4 py-2 text-right font-mono font-semibold"
-                    style={{ color: presIncParty(r.presInc) === "dem" ? "var(--party-dem)" : "var(--party-rep)" }}
-                  >
-                    {r.presMargin > 0 ? "+" : ""}{r.presMargin.toFixed(1)}
-                  </td>
-                  <td className="px-4 py-2 text-right font-mono hidden sm:table-cell" style={{ color: "var(--app-text-muted)" }}>
+                  <td className="px-4 py-2 text-right font-mono" style={{ color: "var(--app-text-muted)" }}>
                     {formatVotes(r.totalVotes)}
                   </td>
                 </tr>

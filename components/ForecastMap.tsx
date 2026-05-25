@@ -9,7 +9,8 @@ import Sidebar from "./Sidebar";
 import Link from "next/link";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
-const DISTRICTS_URL = "/congressional-districts-home.json";
+// 2026 forecast geography: 2024 baseline plus states redistricted for 2026.
+const HOUSE_DISTRICTS_2026_URL = "/congressional-districts-2026.json";
 
 const LEGEND = [
   { color: "#1a4480", label: "Safe D" },
@@ -103,7 +104,7 @@ export default function ForecastMap() {
 
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
   const isHouse = raceType === "house";
-  const geoUrl = isHouse ? DISTRICTS_URL : STATES_URL;
+  const geoUrl = isHouse ? HOUSE_DISTRICTS_2026_URL : STATES_URL;
   const data = raceType === "house" ? houseData : raceType === "senate" ? senateData : governorData;
 
   // Seats not up for election in 2026 (holdovers with known party)

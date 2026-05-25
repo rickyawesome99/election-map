@@ -645,7 +645,7 @@ export function PastElectionResultsSection({
     return (
       <div>
         <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-          Past House Results
+          Past Race Results
         </h2>
         {cards}
       </div>
@@ -658,7 +658,7 @@ export function PastElectionResultsSection({
       style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", ...(maxHeight ? { maxHeight } : {}) }}
     >
       <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-        Past House Results
+        Past Race Results
       </h2>
       <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"} ${(scrollable || maxHeight) ? "min-h-0 flex-1 overflow-y-auto pr-1" : ""}`}>
         {cards}
