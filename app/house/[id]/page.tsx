@@ -1,5 +1,5 @@
 import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, electionYear } from "@/data/forecastData";
-import { getStatewideMargin } from "@/lib/statewideMargins";
+import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
@@ -61,13 +61,39 @@ export default async function HousePage({ params, searchParams }: { params: Prom
     ? pvi2026 === 0 ? "EVEN" : pvi2026 > 0 ? `R+${pvi2026}` : `D+${Math.abs(pvi2026)}`
     : "TBD";
 
+  const pastResultsWithDiff = (race.pastResults ?? []).map((res) => {
+    const nationalMargin = getNationalMargin("House", res.year);
+    return {
+      ...res,
+      nationalDiff: nationalMargin != null ? nationalMargin - (res.demPct - res.repPct) : null,
+    };
+  });
+
   const rawStatewideResults = houseStatewideResults[race.id] ?? [];
+
+  function prevElectionYear(race: string, year: number): number | null {
+    if (race === "President") return year - 4;
+    if (race.includes("Senate")) return year - 6;
+    if (race.includes("Governor")) return (stateAbbr === "NH" || stateAbbr === "VT") ? year - 2 : year - 4;
+    return null;
+  }
+
   const statewideResultsWithDiff = rawStatewideResults.map((res) => {
     const districtMargin = res.demPct - res.repPct;
     const statewideMargin = getStatewideMargin(stateAbbr, res.year, res.race);
+    const nationalMargin = getNationalMargin(res.race, res.year);
+    const prevYear = prevElectionYear(res.race, res.year);
+    const prevRes = prevYear != null
+      ? rawStatewideResults.find((r) => r.race === res.race && r.year === prevYear)
+      : null;
+    const swing = prevRes != null
+      ? parseFloat(((prevRes.demPct - prevRes.repPct) - districtMargin).toFixed(1))
+      : null;
     return {
       ...res,
       stateDiff: statewideMargin != null ? districtMargin - statewideMargin : null,
+      nationalDiff: nationalMargin != null ? nationalMargin - districtMargin : null,
+      swing,
     };
   });
 
@@ -109,9 +135,10 @@ export default async function HousePage({ params, searchParams }: { params: Prom
         </div>
 
         <div className="grid grid-cols-1 gap-3 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] md:items-start">
-          <div className="flex flex-col gap-3">
+          {/* Left column — display:contents on mobile so children become direct grid items (enabling order-based reflow), flex-col on desktop */}
+          <div className="contents md:flex md:flex-col md:gap-3">
             <div
-              className="min-h-[220px] overflow-hidden rounded-xl"
+              className="order-1 min-h-[220px] overflow-hidden rounded-xl"
               style={{ border: "1px solid var(--app-border)" }}
             >
               <DistrictMiniMap
@@ -128,17 +155,19 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               />
             </div>
 
-            <AboutRaceCard
-              title="About this District"
-              description={`[Placeholder — overview of ${districtLabel}, including its geography, key communities, and political history to be filled in.]`}
-              items={[
-                { label: "Incumbent", value: currentRepName },
-                { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD" },
-                { label: "PVI", value: pviDisplay },
-              ]}
-            />
+            <div className="order-2">
+              <AboutRaceCard
+                title="About this District"
+                description={`[Placeholder — overview of ${districtLabel}, including its geography, key communities, and political history to be filled in.]`}
+                items={[
+                  { label: "Incumbent", value: currentRepName },
+                  { label: "Party", value: currentRepParty ? (currentRepParty === "D" ? "Democrat" : currentRepParty === "R" ? "Republican" : "Independent") : "TBD" },
+                  { label: "PVI", value: pviDisplay },
+                ]}
+              />
+            </div>
 
-            <div className="[&>section]:h-full" style={{ height: HOUSE_BOUNDARIES_CARD_HEIGHT }}>
+            <div className="order-7 [&>section]:h-full" style={{ height: HOUSE_BOUNDARIES_CARD_HEIGHT }}>
               <HouseOnlyDistrictBoundariesSection
                 entries={boundaryEntries}
                 density="compact"
@@ -148,8 +177,9 @@ export default async function HousePage({ params, searchParams }: { params: Prom
             </div>
           </div>
 
-          <div className="flex flex-col gap-3">
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-8 md:items-stretch">
+          {/* Right column — display:contents on mobile, flex-col on desktop */}
+          <div className="contents md:flex md:flex-col md:gap-3">
+            <div className="order-3 grid grid-cols-1 gap-3 md:grid-cols-8 md:items-stretch">
               <div className="md:col-span-5 [&>section]:h-full">
                 <CandidatesSection
                   density="compact"
@@ -180,19 +210,19 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-8 md:h-[700px]">
-              <div className="md:col-span-4 [&>section]:h-full" style={{ height: "700px" }}>
-                <PastElectionResultsSection
-                  results={race.pastResults}
-                  fallbackYears={[2024, 2022, 2020]}
-                  showElectionType={false}
-                  density="compact"
-                  scrollable
-                />
-              </div>
-              <div className="md:col-span-4 [&>section]:h-full" style={{ height: "700px" }}>
-                <HouseOnlyRecentStatewideResultsSection results={statewideResultsWithDiff} density="compact" />
-              </div>
+            <div className="order-5">
+              <PastElectionResultsSection
+                results={pastResultsWithDiff}
+                fallbackYears={[2024, 2022, 2020]}
+                showElectionType={false}
+                density="compact"
+                scrollable
+                maxHeight="400px"
+              />
+            </div>
+
+            <div className="order-6">
+              <HouseOnlyRecentStatewideResultsSection results={statewideResultsWithDiff} density="compact" maxHeight="380px" />
             </div>
           </div>
         </div>

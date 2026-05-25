@@ -37,18 +37,16 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
       style={{ borderBottom: "1px solid var(--app-border)" }}
     >
       <div className="sm:hidden">
-        <div className="flex items-start justify-between gap-3 mb-1">
-          <div className="min-w-0">
-            <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-              {label}
-            </div>
-            <div className="text-xs font-semibold mt-0.5" style={{ color: "var(--app-text-very-muted)" }}>
-              No Election
-            </div>
+        <div className="mb-1">
+          <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
+            {label}
           </div>
-          <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
+          <div className="flex items-center gap-1.5 mt-0.5">
+            <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>No Election</span>
+            <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
         </div>
         <div className="flex items-center gap-2 text-sm min-w-0">
           <span className="font-semibold truncate" style={{ color: "var(--app-text-primary)" }}>{entry.incumbent}</span>
@@ -98,43 +96,52 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
 function ElectionCard({ race, href, label }: { race: RaceForecast; href: string; label: string }) {
   const dem = race.candidates?.dem;
   const rep = race.candidates?.rep;
+  const demPct = ((100 + race.margin) / 2).toFixed(1);
+  const repPct = ((100 - race.margin) / 2).toFixed(1);
   return (
     <Link
       href={href}
       className="block px-1 py-4 transition-colors min-w-0"
       style={{ borderBottom: "1px solid var(--app-border)" }}
     >
+      {/* Mobile */}
       <div className="sm:hidden">
-        <div className="flex items-start justify-between gap-3 mb-1">
-          <div className="min-w-0">
-            <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-              {label}
+        <div className="mb-1.5">
+          <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
+            {label}
+          </div>
+          <div className="flex items-center justify-between gap-2 mt-0.5">
+            <div className="flex items-center gap-1.5">
+              <span className="text-xs font-semibold" style={{ color: "var(--app-text-primary)" }}>{GENERAL_ELECTION}</span>
+              <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </div>
-            <div className="text-xs font-semibold mt-0.5" style={{ color: "var(--app-text-primary)" }}>
-              {GENERAL_ELECTION}
+            <div className="flex items-center gap-2 shrink-0">
+              <span className="text-xs font-semibold tabular-nums" style={{ color: race.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
+                {race.margin >= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
+              </span>
+              <RatingBadge rating={race.rating} />
             </div>
           </div>
-          <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
         </div>
         {dem && rep ? (
-          <div className="flex items-center gap-1.5 text-sm min-w-0">
-            <span className="font-semibold truncate" style={{ color: "var(--party-dem)" }}>{dem.name}</span>
-            <span className="text-xs shrink-0" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-            <span className="font-semibold truncate" style={{ color: "var(--party-rep)" }}>{rep.name}</span>
+          <div className="flex flex-col gap-0.5">
+            <div className="flex items-center justify-between gap-2">
+              <span className="font-semibold truncate text-sm" style={{ color: "var(--party-dem)" }}>{dem.name}</span>
+              <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: "var(--party-dem)" }}>D {demPct}%</span>
+            </div>
+            <div className="flex items-center justify-between gap-2">
+              <span className="font-semibold truncate text-sm" style={{ color: "var(--party-rep)" }}>{rep.name}</span>
+              <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: "var(--party-rep)" }}>R {repPct}%</span>
+            </div>
           </div>
         ) : (
           <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
         )}
-        <div className="flex items-center gap-2 mt-1.5">
-          <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: race.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
-            {race.margin >= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
-          </span>
-          <RatingBadge rating={race.rating} />
-        </div>
       </div>
 
+      {/* Desktop */}
       <div className="hidden sm:flex items-center gap-3 sm:gap-4 min-w-0">
         <div className="w-20 sm:w-24 shrink-0">
           <div className="text-[10px] uppercase tracking-wider font-semibold mb-0.5" style={{ color: "var(--app-text-muted)" }}>
@@ -146,25 +153,21 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
         </div>
         <div className="flex-1 min-w-0">
           {dem && rep ? (
-            <div className="flex items-center gap-2 text-sm">
-              <span className="font-semibold truncate" style={{ color: "var(--party-dem)" }}>{dem.name}</span>
-              <span className="text-xs shrink-0" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-              <span className="font-semibold truncate" style={{ color: "var(--party-rep)" }}>{rep.name}</span>
+            <div className="flex flex-col gap-0.5">
+              <div className="flex items-center justify-between gap-2">
+                <span className="font-semibold truncate text-sm" style={{ color: "var(--party-dem)" }}>{dem.name}</span>
+                <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: "var(--party-dem)" }}>D {demPct}%</span>
+              </div>
+              <div className="flex items-center justify-between gap-2">
+                <span className="font-semibold truncate text-sm" style={{ color: "var(--party-rep)" }}>{rep.name}</span>
+                <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: "var(--party-rep)" }}>R {repPct}%</span>
+              </div>
             </div>
           ) : (
             <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
           )}
         </div>
         <div className="shrink-0 flex items-center gap-1.5 sm:gap-3">
-          <div className="hidden sm:flex items-center gap-1.5 shrink-0">
-            <span className="text-xs font-semibold tabular-nums" style={{ color: "var(--party-dem)" }}>
-              D {((100 + race.margin) / 2).toFixed(1)}%
-            </span>
-            <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>·</span>
-            <span className="text-xs font-semibold tabular-nums" style={{ color: "var(--party-rep)" }}>
-              R {((100 - race.margin) / 2).toFixed(1)}%
-            </span>
-          </div>
           <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: race.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
             {race.margin >= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
           </span>

@@ -12,7 +12,7 @@ const NAV = [
 
 export default function AppHeader({ back }: { back?: React.ReactNode }) {
   return (
-    <div className="sticky top-0 z-10">
+    <div className="sticky top-0 z-50">
       <header
         className="px-6 h-14 flex items-center gap-4"
         style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}

@@ -10,9 +10,7 @@ function getLabel(from: string | null): string {
   if (from === "/house") return "Back to House";
   if (from === "/governor") return "Back to Governor";
   if (from.startsWith("/states/")) {
-    const slug = from.split("/")[2] ?? "";
-    const label = slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join("-");
-    return `Back to ${label}`;
+    return "Back";
   }
   if (from === "/") return "Back to Map";
   return "Back";

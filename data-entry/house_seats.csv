@@ -1,436 +1,436 @@
 district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent,inc_party,dem_name,rep_name,incumbent,proj_dem,proj_rep,proj_margin,prob_dem,prob_rep,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
-101,AL-01,AL,Alabama,2026,TBD,Barry Moore,R,Clyde Jones,Rhett Marques,None,24.65,75.35,50.7,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-102,AL-02,AL,Alabama,2026,TBD,Shomari Figures,D,Shomari Figures,Hampton Harris,D,58.65,41.35,-17.3,95.1,4.9,N/A,N/A,N/A,N/A,N/A,N/A
-103,AL-03,AL,Alabama,2026,TBD,Mike Rogers,R,Victor Mcinnis,Mike Rogers,R,25.6,74.4,48.8,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-104,AL-04,AL,Alabama,2026,TBD,Robert Aderholt,R,Amanda Pusczek,Robert Aderholt,R,15.65,84.35,68.7,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-105,AL-05,AL,Alabama,2026,TBD,Dale W. Strong,R,Andrew Sneed,Dale Strong,R,34.4,65.6,31.2,0.1,99.9,N/A,N/A,N/A,N/A,N/A,N/A
-106,AL-06,AL,Alabama,2026,TBD,Gary Palmer,R,Elizabeth Anderson,Gary Palmer,R,31.9,68.1,36.2,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-107,AL-07,AL,Alabama,2026,TBD,Terri A. Sewell,D,Terri Sewell,Generic Republican,D,68,32,-36.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
+101,AL-01,AL,Alabama,2026,TBD,Barry Moore,R,Clyde Jones,Rhett Marques,None,24.65,75.35,50.7,0,100,N/A,N/A,0.001,0.921,N/A,N/A
+102,AL-02,AL,Alabama,2026,TBD,Shomari Figures,D,Shomari Figures,Hampton Harris,D,58.65,41.35,-17.3,95.1,4.9,N/A,N/A,0.28,0.67,N/A,N/A
+103,AL-03,AL,Alabama,2026,TBD,Mike Rogers,R,Victor Mcinnis,Mike Rogers,R,25.6,74.4,48.8,0,100,N/A,N/A,0.001,0.76,N/A,N/A
+104,AL-04,AL,Alabama,2026,TBD,Robert Aderholt,R,Amanda Pusczek,Robert Aderholt,R,15.65,84.35,68.7,0,100,N/A,N/A,0.001,0.77,N/A,N/A
+105,AL-05,AL,Alabama,2026,TBD,Dale W. Strong,R,Andrew Sneed,Dale Strong,R,34.4,65.6,31.2,0.1,99.9,N/A,N/A,0.001,0.76,N/A,N/A
+106,AL-06,AL,Alabama,2026,TBD,Gary Palmer,R,Elizabeth Anderson,Gary Palmer,R,31.9,68.1,36.2,0,100,N/A,N/A,0.001,0.75,N/A,N/A
+107,AL-07,AL,Alabama,2026,TBD,Terri A. Sewell,D,Terri Sewell,Generic Republican,D,68,32,-36.0,100,0,N/A,N/A,0.7,0.11,N/A,N/A
 201,AK-01,AK,Alaska,2026,TBD,Nicholas J. Begich III,R,Matthew Schultz,Nicholas Begich,R,46.9,53.1,6.2,27.6,72.4,N/A,N/A,N/A,N/A,N/A,N/A
 401,AZ-01,AZ,Arizona,2026,TBD,David Schweikert,R,Jonathan Treble,Thomas Feely,None,51.2,48.8,-2.4,58.9,41.1,N/A,N/A,N/A,N/A,N/A,N/A
 402,AZ-02,AZ,Arizona,2026,TBD,Elijah Crane,R,Jonathan Nez,Eli Crane,R,45.75,54.25,8.5,20.9,79.1,N/A,N/A,N/A,N/A,N/A,N/A
-403,AZ-03,AZ,Arizona,2026,TBD,Yassamin Ansari,D,Yassamin Ansari,Kirt Burgess,D,75.55,24.45,-51.1,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-404,AZ-04,AZ,Arizona,2026,TBD,Greg Stanton,D,Greg Stanton,Zuhdi Jasser,D,56.3,43.7,-12.6,88.6,11.4,N/A,N/A,N/A,N/A,N/A,N/A
-405,AZ-05,AZ,Arizona,2026,TBD,Andy Biggs,R,Christopher James,Andy Biggs,R,42.3,57.7,15.4,7,93,N/A,N/A,N/A,N/A,N/A,N/A
+403,AZ-03,AZ,Arizona,2026,TBD,Yassamin Ansari,D,Yassamin Ansari,Kirt Burgess,D,75.55,24.45,-51.1,100,0,N/A,N/A,0.77,0.001,N/A,N/A
+404,AZ-04,AZ,Arizona,2026,TBD,Greg Stanton,D,Greg Stanton,Zuhdi Jasser,D,56.3,43.7,-12.6,88.6,11.4,N/A,N/A,0.88,0.081,N/A,N/A
+405,AZ-05,AZ,Arizona,2026,TBD,Andy Biggs,R,Christopher James,Andy Biggs,R,42.3,57.7,15.4,7,93,N/A,N/A,0.17,0.74,N/A,N/A
 406,AZ-06,AZ,Arizona,2026,TBD,Juan Ciscomani,R,Joanna Mendoza,Juan Ciscomani,R,51.55,48.45,-3.1,61.6,38.4,N/A,N/A,N/A,N/A,N/A,N/A
-407,AZ-07,AZ,Arizona,2026,TBD,Adelita S. Grijalva,D,Adelita Grijalva,Daniel Butierez,D,66.65,33.35,-33.3,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
-408,AZ-08,AZ,Arizona,2026,TBD,Abraham Hamadeh,R,Bernadette Placentia,Abraham Hamadeh,R,43.75,56.25,12.5,11.5,88.5,N/A,N/A,N/A,N/A,N/A,N/A
-409,AZ-09,AZ,Arizona,2026,TBD,Paul A. Gosar,R,Danielle Sterbinsky,Paul Gosar,R,36.95,63.05,26.1,0.6,99.4,N/A,N/A,N/A,N/A,N/A,N/A
-501,AR-01,AR,Arkansas,2026,TBD,Rick Crawford,R,Terri Green,Rick Crawford,R,27.95,72.05,44.1,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-502,AR-02,AR,Arkansas,2026,TBD,French Hill,R,Chris Jones,French Hill,R,43.3,56.7,13.4,10,90,N/A,N/A,N/A,N/A,N/A,N/A
-503,AR-03,AR,Arkansas,2026,TBD,Steve Womack,R,Robb Ryerse,Steve Womack,R,36.65,63.35,26.7,0.5,99.5,N/A,N/A,N/A,N/A,N/A,N/A
-504,AR-04,AR,Arkansas,2026,TBD,Bruce Westerman,R,James Russell,Bruce Westerman,R,30.05,69.95,39.9,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-601,CA-01,CA,California,2026,TBD,Vacancy,R,Mike McGuire,James Gallagher,None,59.75,40.25,-19.5,96.9,3.1,N/A,N/A,N/A,N/A,N/A,N/A
-602,CA-02,CA,California,2026,TBD,Jared Huffman,D,Jared Huffman,Paul Saulsbury,D,66.2,33.8,-32.4,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
+407,AZ-07,AZ,Arizona,2026,TBD,Adelita S. Grijalva,D,Adelita Grijalva,Daniel Butierez,D,66.65,33.35,-33.3,99.9,0.1,N/A,N/A,0.76,0.001,N/A,N/A
+408,AZ-08,AZ,Arizona,2026,TBD,Abraham Hamadeh,R,Bernadette Placentia,Abraham Hamadeh,R,43.75,56.25,12.5,11.5,88.5,N/A,N/A,0.082,0.69,N/A,N/A
+409,AZ-09,AZ,Arizona,2026,TBD,Paul A. Gosar,R,Danielle Sterbinsky,Paul Gosar,R,36.95,63.05,26.1,0.6,99.4,N/A,N/A,0.002,0.74,N/A,N/A
+501,AR-01,AR,Arkansas,2026,TBD,Rick Crawford,R,Terri Green,Rick Crawford,R,27.95,72.05,44.1,0,100,N/A,N/A,0.026,0.972,N/A,N/A
+502,AR-02,AR,Arkansas,2026,TBD,French Hill,R,Chris Jones,French Hill,R,43.3,56.7,13.4,10,90,N/A,N/A,0.16,0.83,N/A,N/A
+503,AR-03,AR,Arkansas,2026,TBD,Steve Womack,R,Robb Ryerse,Steve Womack,R,36.65,63.35,26.7,0.5,99.5,N/A,N/A,0.002,0.76,N/A,N/A
+504,AR-04,AR,Arkansas,2026,TBD,Bruce Westerman,R,James Russell,Bruce Westerman,R,30.05,69.95,39.9,0,100,N/A,N/A,0.001,0.84,N/A,N/A
+601,CA-01,CA,California,2026,TBD,Vacancy,R,Mike McGuire,James Gallagher,None,59.75,40.25,-19.5,96.9,3.1,N/A,N/A,0.92,0.001,N/A,N/A
+602,CA-02,CA,California,2026,TBD,Jared Huffman,D,Jared Huffman,Paul Saulsbury,D,66.2,33.8,-32.4,99.9,0.1,N/A,N/A,0.76,0.001,N/A,N/A
 603,CA-03,CA,California,2026,TBD,Kevin Kiley,R,Amerish Bera,Christine Bish,None,57.45,42.55,-14.9,92.4,7.6,N/A,N/A,N/A,N/A,N/A,N/A
-604,CA-04,CA,California,2026,TBD,Mike Thompson,D,Mike Thompson,Laurie MacKenzie,D,62.15,37.85,-24.3,99,1,N/A,N/A,N/A,N/A,N/A,N/A
-605,CA-05,CA,California,2026,TBD,Tom McClintock,R,Michael Masuda,Tom McClintock,R,41,59,18.0,4.1,95.9,N/A,N/A,N/A,N/A,N/A,N/A
-606,CA-06,CA,California,2026,TBD,Ami Bera,D,Thien Ho,Kevin Kiley,None,56.45,43.55,-12.9,89.2,10.8,N/A,N/A,N/A,N/A,N/A,N/A
-607,CA-07,CA,California,2026,TBD,Doris O. Matsui,D,Doris Matsui,Kathryn Ming,D,61.25,38.75,-22.5,98.4,1.6,N/A,N/A,N/A,N/A,N/A,N/A
-608,CA-08,CA,California,2026,TBD,John Garamendi,D,John Garamendi,Rudy Recile,D,72.5,27.5,-45.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
+604,CA-04,CA,California,2026,TBD,Mike Thompson,D,Mike Thompson,Laurie MacKenzie,D,62.15,37.85,-24.3,99,1,N/A,N/A,0.76,0.001,N/A,N/A
+605,CA-05,CA,California,2026,TBD,Tom McClintock,R,Michael Masuda,Tom McClintock,R,41,59,18.0,4.1,95.9,N/A,N/A,0.077,0.68,N/A,N/A
+606,CA-06,CA,California,2026,TBD,Ami Bera,D,Thien Ho,Kevin Kiley,None,56.45,43.55,-12.9,89.2,10.8,N/A,N/A,0.76,0.001,N/A,N/A
+607,CA-07,CA,California,2026,TBD,Doris O. Matsui,D,Doris Matsui,Kathryn Ming,D,61.25,38.75,-22.5,98.4,1.6,N/A,N/A,0.76,0.001,N/A,N/A
+608,CA-08,CA,California,2026,TBD,John Garamendi,D,John Garamendi,Rudy Recile,D,72.5,27.5,-45.0,100,0,N/A,N/A,0.77,0.001,N/A,N/A
 609,CA-09,CA,California,2026,TBD,Josh Harder,D,Josh Harder,James Shoemaker,D,62.45,37.55,-24.9,99.1,0.9,N/A,N/A,N/A,N/A,N/A,N/A
-610,CA-10,CA,California,2026,TBD,Mark DeSaulnier,D,Mark DeSaulnier,Katherine Piccinini,D,70.4,29.6,-40.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-611,CA-11,CA,California,2026,TBD,Nancy Pelosi,D,Scott Wiener,David Ganezer,None,90.1,9.9,-80.2,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-612,CA-12,CA,California,2026,TBD,Lateefah Simon,D,Lateefah Simon,Heath Fulkerson,D,96.25,3.75,-92.5,100,0,N/A,N/A,N/A,N/A,N/A,N/A
+610,CA-10,CA,California,2026,TBD,Mark DeSaulnier,D,Mark DeSaulnier,Katherine Piccinini,D,70.4,29.6,-40.8,100,0,N/A,N/A,0.77,0.001,N/A,N/A
+611,CA-11,CA,California,2026,TBD,Nancy Pelosi,D,Scott Wiener,David Ganezer,None,90.1,9.9,-80.2,100,0,N/A,N/A,0.79,0.001,N/A,N/A
+612,CA-12,CA,California,2026,TBD,Lateefah Simon,D,Lateefah Simon,Heath Fulkerson,D,96.25,3.75,-92.5,100,0,N/A,N/A,0.88,0.001,N/A,N/A
 613,CA-13,CA,California,2026,TBD,Adam Gray,D,Adam Gray,Vin Kruttiventi,D,56.2,43.8,-12.4,88.2,11.8,N/A,N/A,N/A,N/A,N/A,N/A
-614,CA-14,CA,California,2026,TBD,Eric Swalwell,D,Abrar Qadir,Wendy Huang,None,72.05,27.95,-44.1,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-615,CA-15,CA,California,2026,TBD,Kevin Mullin,D,Kevin Mullin,Anna Kramer,D,79.1,20.9,-58.2,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-616,CA-16,CA,California,2026,TBD,Sam T. Liccardo,D,Sam Liccardo,Gavin Solomon,D,82.7,17.3,-65.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-617,CA-17,CA,California,2026,TBD,Ro Khanna,D,Rohit Khanna,Ritesh Tandon,D,75.45,24.55,-50.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-618,CA-18,CA,California,2026,TBD,Zoe Lofgren,D,Zoe Lofgren,Shane Lewis,D,70.2,29.8,-40.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-619,CA-19,CA,California,2026,TBD,Jimmy Panetta,D,Jimmy Panetta,Peter Verbica,D,72.75,27.25,-45.5,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-620,CA-20,CA,California,2026,TBD,Vince Fong,R,Carol Roper,Vince Fong,R,32.1,67.9,35.8,0,100,N/A,N/A,N/A,N/A,N/A,N/A
+614,CA-14,CA,California,2026,TBD,Eric Swalwell,D,Abrar Qadir,Wendy Huang,None,72.05,27.95,-44.1,100,0,N/A,N/A,0.923,0.047,N/A,N/A
+615,CA-15,CA,California,2026,TBD,Kevin Mullin,D,Kevin Mullin,Anna Kramer,D,79.1,20.9,-58.2,100,0,N/A,N/A,0.9,0.01,N/A,N/A
+616,CA-16,CA,California,2026,TBD,Sam T. Liccardo,D,Sam Liccardo,Gavin Solomon,D,82.7,17.3,-65.4,100,0,N/A,N/A,0.77,0.001,N/A,N/A
+617,CA-17,CA,California,2026,TBD,Ro Khanna,D,Rohit Khanna,Ritesh Tandon,D,75.45,24.55,-50.9,100,0,N/A,N/A,0.82,0.001,N/A,N/A
+618,CA-18,CA,California,2026,TBD,Zoe Lofgren,D,Zoe Lofgren,Shane Lewis,D,70.2,29.8,-40.4,100,0,N/A,N/A,0.75,0.001,N/A,N/A
+619,CA-19,CA,California,2026,TBD,Jimmy Panetta,D,Jimmy Panetta,Peter Verbica,D,72.75,27.25,-45.5,100,0,N/A,N/A,0.84,0.001,N/A,N/A
+620,CA-20,CA,California,2026,TBD,Vince Fong,R,Carol Roper,Vince Fong,R,32.1,67.9,35.8,0,100,N/A,N/A,0.001,0.92,N/A,N/A
 621,CA-21,CA,California,2026,TBD,Jim Costa,D,Jim Costa,Lorenzo Rios,D,57.85,42.15,-15.7,93.3,6.7,N/A,N/A,N/A,N/A,N/A,N/A
 622,CA-22,CA,California,2026,TBD,David G. Valadao,R,Randy Villegas,David Valadao,R,53.25,46.75,-6.5,73.2,26.8,N/A,N/A,N/A,N/A,N/A,N/A
-623,CA-23,CA,California,2026,TBD,Jay Obernolte,R,Paul Chakalian,Jay Obernolte,R,41.65,58.35,16.7,5.5,94.5,N/A,N/A,N/A,N/A,N/A,N/A
-624,CA-24,CA,California,2026,TBD,Salud O. Carbajal,D,Salud Carbajal,Robert Smith,D,66.65,33.35,-33.3,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
-625,CA-25,CA,California,2026,TBD,Raul Ruiz,D,Raul Ruiz,Joe Males,D,58.8,41.2,-17.6,95.4,4.6,N/A,N/A,N/A,N/A,N/A,N/A
-626,CA-26,CA,California,2026,TBD,Julia Brownley,D,Sonia Devgan-Kacker,Samuel Gallucci,None,60.3,39.7,-20.6,97.6,2.4,N/A,N/A,N/A,N/A,N/A,N/A
+623,CA-23,CA,California,2026,TBD,Jay Obernolte,R,Paul Chakalian,Jay Obernolte,R,41.65,58.35,16.7,5.5,94.5,N/A,N/A,0.099,0.9,N/A,N/A
+624,CA-24,CA,California,2026,TBD,Salud O. Carbajal,D,Salud Carbajal,Robert Smith,D,66.65,33.35,-33.3,99.9,0.1,N/A,N/A,0.78,0.001,N/A,N/A
+625,CA-25,CA,California,2026,TBD,Raul Ruiz,D,Raul Ruiz,Joe Males,D,58.8,41.2,-17.6,95.4,4.6,N/A,N/A,0.72,0.01,N/A,N/A
+626,CA-26,CA,California,2026,TBD,Julia Brownley,D,Sonia Devgan-Kacker,Samuel Gallucci,None,60.3,39.7,-20.6,97.6,2.4,N/A,N/A,0.77,0.001,N/A,N/A
 627,CA-27,CA,California,2026,TBD,George Whitesides,D,George Whitesides,Jason Gibbs,D,59.5,40.5,-19.0,96.6,3.4,N/A,N/A,N/A,N/A,N/A,N/A
-628,CA-28,CA,California,2026,TBD,Judy Chu,D,Judy Chu,April Verlato,D,67.45,32.55,-34.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-629,CA-29,CA,California,2026,TBD,Luz Rivas,D,Luz Rivas,Margarita Carranza,D,73.7,26.3,-47.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-630,CA-30,CA,California,2026,TBD,Laura Friedman,D,Laura Friedman,Dennis Feitosa,D,74.15,25.85,-48.3,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-631,CA-31,CA,California,2026,TBD,"Gilbert Ray Cisneros, Jr.",D,Gilbert Cisneros,Eric Ching,None,60.55,39.45,-21.1,97.8,2.2,N/A,N/A,N/A,N/A,N/A,N/A
-632,CA-32,CA,California,2026,TBD,Brad Sherman,D,Brad Sherman,Larry Thompson,D,67.65,32.35,-35.3,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-633,CA-33,CA,California,2026,TBD,Pete Aguilar,D,Pete Aguilar,Eugene Weems,D,62.5,37.5,-25.0,99.3,0.7,N/A,N/A,N/A,N/A,N/A,N/A
-634,CA-34,CA,California,2026,TBD,Jimmy Gomez,D,Jimmy Gomez,Calvin Lee,D,85.25,14.75,-70.5,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-635,CA-35,CA,California,2026,TBD,Norma J. Torres,D,Norma Torres,Mike Cargile,D,60.5,39.5,-21.0,97.8,2.2,N/A,N/A,N/A,N/A,N/A,N/A
-636,CA-36,CA,California,2026,TBD,Ted Lieu,D,Ted Lieu,Leah Toomim,D,73.95,26.05,-47.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-637,CA-37,CA,California,2026,TBD,Sydney Kamlager-Dove,D,Sydney Kamlager-Dove,Generic Republican,D,89.85,10.15,-79.7,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-638,CA-38,CA,California,2026,TBD,Linda Sánchez,D,Hilda Solis,Generic Republican,None,62.4,37.6,-24.8,99.1,0.9,N/A,N/A,N/A,N/A,N/A,N/A
-639,CA-39,CA,California,2026,TBD,Mark Takano,D,Mark Takano,Generic Republican,D,61.05,38.95,-22.1,98.3,1.7,N/A,N/A,N/A,N/A,N/A,N/A
+628,CA-28,CA,California,2026,TBD,Judy Chu,D,Judy Chu,April Verlato,D,67.45,32.55,-34.9,100,0,N/A,N/A,0.74,0.01,N/A,N/A
+629,CA-29,CA,California,2026,TBD,Luz Rivas,D,Luz Rivas,Margarita Carranza,D,73.7,26.3,-47.4,100,0,N/A,N/A,0.77,0.001,N/A,N/A
+630,CA-30,CA,California,2026,TBD,Laura Friedman,D,Laura Friedman,Dennis Feitosa,D,74.15,25.85,-48.3,100,0,N/A,N/A,0.77,0.001,N/A,N/A
+631,CA-31,CA,California,2026,TBD,"Gilbert Ray Cisneros, Jr.",D,Gilbert Cisneros,Eric Ching,None,60.55,39.45,-21.1,97.8,2.2,N/A,N/A,0.77,0.001,N/A,N/A
+632,CA-32,CA,California,2026,TBD,Brad Sherman,D,Brad Sherman,Larry Thompson,D,67.65,32.35,-35.3,100,0,N/A,N/A,0.77,0.001,N/A,N/A
+633,CA-33,CA,California,2026,TBD,Pete Aguilar,D,Pete Aguilar,Eugene Weems,D,62.5,37.5,-25.0,99.3,0.7,N/A,N/A,0.77,0.001,N/A,N/A
+634,CA-34,CA,California,2026,TBD,Jimmy Gomez,D,Jimmy Gomez,Calvin Lee,D,85.25,14.75,-70.5,100,0,N/A,N/A,0.78,0.001,N/A,N/A
+635,CA-35,CA,California,2026,TBD,Norma J. Torres,D,Norma Torres,Mike Cargile,D,60.5,39.5,-21.0,97.8,2.2,N/A,N/A,0.8,0.001,N/A,N/A
+636,CA-36,CA,California,2026,TBD,Ted Lieu,D,Ted Lieu,Leah Toomim,D,73.95,26.05,-47.9,100,0,N/A,N/A,0.77,0.002,N/A,N/A
+637,CA-37,CA,California,2026,TBD,Sydney Kamlager-Dove,D,Sydney Kamlager-Dove,Generic Republican,D,89.85,10.15,-79.7,100,0,N/A,N/A,0.78,0.001,N/A,N/A
+638,CA-38,CA,California,2026,TBD,Linda Sánchez,D,Hilda Solis,Generic Republican,None,62.4,37.6,-24.8,99.1,0.9,N/A,N/A,0.76,0.001,N/A,N/A
+639,CA-39,CA,California,2026,TBD,Mark Takano,D,Mark Takano,Generic Republican,D,61.05,38.95,-22.1,98.3,1.7,N/A,N/A,0.74,0.001,N/A,N/A
 640,CA-40,CA,California,2026,TBD,Young Kim,R,Esther Varet,Young Kim,R,45,55,10.0,15.1,84.9,N/A,N/A,N/A,N/A,N/A,N/A
 641,CA-41,CA,California,2026,TBD,Ken Calvert,R,Linda Sanchez,Cody Wiebelhaus,None,62.75,37.25,-25.5,99.3,0.7,N/A,N/A,N/A,N/A,N/A,N/A
-642,CA-42,CA,California,2026,TBD,Robert Garcia,D,Robert Garcia,Brian Burley,D,61.3,38.7,-22.6,98.5,1.5,N/A,N/A,N/A,N/A,N/A,N/A
-643,CA-43,CA,California,2026,TBD,Maxine Waters,D,Maxine Waters,Craig Geiger,D,80.75,19.25,-61.5,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-644,CA-44,CA,California,2026,TBD,Nanette Barragan,D,Nanette Barragan,Genevieve Angel,D,75.9,24.1,-51.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
+642,CA-42,CA,California,2026,TBD,Robert Garcia,D,Robert Garcia,Brian Burley,D,61.3,38.7,-22.6,98.5,1.5,N/A,N/A,0.78,0.001,N/A,N/A
+643,CA-43,CA,California,2026,TBD,Maxine Waters,D,Maxine Waters,Craig Geiger,D,80.75,19.25,-61.5,100,0,N/A,N/A,0.79,0.001,N/A,N/A
+644,CA-44,CA,California,2026,TBD,Nanette Barragan,D,Nanette Barragan,Genevieve Angel,D,75.9,24.1,-51.8,100,0,N/A,N/A,0.78,0.001,N/A,N/A
 645,CA-45,CA,California,2026,TBD,Derek Tran,D,Derek Tran,Tom Vo,D,56.5,43.5,-13.0,89.4,10.6,N/A,N/A,N/A,N/A,N/A,N/A
-646,CA-46,CA,California,2026,TBD,Lou Correa,D,Lou Correa,David Pan,D,64.8,35.2,-29.6,99.8,0.2,N/A,N/A,N/A,N/A,N/A,N/A
+646,CA-46,CA,California,2026,TBD,Lou Correa,D,Lou Correa,David Pan,D,64.8,35.2,-29.6,99.8,0.2,N/A,N/A,0.77,0.001,N/A,N/A
 647,CA-47,CA,California,2026,TBD,Dave Min,D,Dave Min,Michael Maxsenti,D,59.15,40.85,-18.3,96,4,N/A,N/A,N/A,N/A,N/A,N/A
-648,CA-48,CA,California,2026,TBD,Darrell Issa,R,Brandon Riker,Darrell Issa,R,54.55,45.45,-9.1,80.7,19.3,N/A,N/A,N/A,N/A,N/A,N/A
+648,CA-48,CA,California,2026,TBD,Darrell Issa,R,Brandon Riker,Darrell Issa,R,54.55,45.45,-9.1,80.7,19.3,N/A,N/A,0.7,0.053,N/A,N/A
 649,CA-49,CA,California,2026,TBD,Mike Levin,D,Mike Levin,Star Parker,D,59.05,40.95,-18.1,95.8,4.2,N/A,N/A,N/A,N/A,N/A,N/A
-650,CA-50,CA,California,2026,TBD,Scott H. Peters,D,Scott Peters,Adam Huntington,D,62.8,37.2,-25.6,99.3,0.7,N/A,N/A,N/A,N/A,N/A,N/A
-651,CA-51,CA,California,2026,TBD,Sara Jacobs,D,Sara Jacobs,John-Samuel Williams,D,63,37,-26.0,99.4,0.6,N/A,N/A,N/A,N/A,N/A,N/A
-652,CA-52,CA,California,2026,TBD,Juan Vargas,D,Juan Vargas,Generic Republican,D,66.35,33.65,-32.7,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
-801,CO-01,CO,Colorado,2026,TBD,Diana DeGette,D,Diana DeGette,Gregory Cutlip,D,83.55,16.45,-67.1,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-802,CO-02,CO,Colorado,2026,TBD,Joe Neguse,D,Joe Neguse,Christina Blunt,D,74.8,25.2,-49.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
+650,CA-50,CA,California,2026,TBD,Scott H. Peters,D,Scott Peters,Adam Huntington,D,62.8,37.2,-25.6,99.3,0.7,N/A,N/A,0.78,0.001,N/A,N/A
+651,CA-51,CA,California,2026,TBD,Sara Jacobs,D,Sara Jacobs,John-Samuel Williams,D,63,37,-26.0,99.4,0.6,N/A,N/A,0.78,0.001,N/A,N/A
+652,CA-52,CA,California,2026,TBD,Juan Vargas,D,Juan Vargas,Generic Republican,D,66.35,33.65,-32.7,99.9,0.1,N/A,N/A,0.73,0.001,N/A,N/A
+801,CO-01,CO,Colorado,2026,TBD,Diana DeGette,D,Diana DeGette,Gregory Cutlip,D,83.55,16.45,-67.1,100,0,N/A,N/A,0.77,0.002,N/A,N/A
+802,CO-02,CO,Colorado,2026,TBD,Joe Neguse,D,Joe Neguse,Christina Blunt,D,74.8,25.2,-49.6,100,0,N/A,N/A,0.91,0.001,N/A,N/A
 803,CO-03,CO,Colorado,2026,TBD,Jeff Hurd,R,Alexander Kelloff,Jeff Hurd,R,48.3,51.7,3.4,37.2,62.8,N/A,N/A,N/A,N/A,N/A,N/A
-804,CO-04,CO,Colorado,2026,TBD,Lauren Boebert,R,Eileen Laubacher,Lauren Boebert,R,45.15,54.85,9.7,17.7,82.3,N/A,N/A,N/A,N/A,N/A,N/A
-805,CO-05,CO,Colorado,2026,TBD,Jeff Crank,R,Jessica Killin,Jeff Crank,R,46.9,53.1,6.2,27.5,72.5,N/A,N/A,N/A,N/A,N/A,N/A
-806,CO-06,CO,Colorado,2026,TBD,Jason Crow,D,Jason Crow,Khaleb Dammen,D,64.65,35.35,-29.3,99.7,0.3,N/A,N/A,N/A,N/A,N/A,N/A
-807,CO-07,CO,Colorado,2026,TBD,Brittany Pettersen,D,Brittany Pettersen,Amanda Capobianco,D,61.6,38.4,-23.2,98.7,1.3,N/A,N/A,N/A,N/A,N/A,N/A
+804,CO-04,CO,Colorado,2026,TBD,Lauren Boebert,R,Eileen Laubacher,Lauren Boebert,R,45.15,54.85,9.7,17.7,82.3,N/A,N/A,0.28,0.65,N/A,N/A
+805,CO-05,CO,Colorado,2026,TBD,Jeff Crank,R,Jessica Killin,Jeff Crank,R,46.9,53.1,6.2,27.5,72.5,N/A,N/A,0.3,0.68,N/A,N/A
+806,CO-06,CO,Colorado,2026,TBD,Jason Crow,D,Jason Crow,Khaleb Dammen,D,64.65,35.35,-29.3,99.7,0.3,N/A,N/A,0.79,0.001,N/A,N/A
+807,CO-07,CO,Colorado,2026,TBD,Brittany Pettersen,D,Brittany Pettersen,Amanda Capobianco,D,61.6,38.4,-23.2,98.7,1.3,N/A,N/A,0.76,0.001,N/A,N/A
 808,CO-08,CO,Colorado,2026,TBD,Gabe Evans,R,Manny Rutinel,Gabe Evans,R,52.85,47.15,-5.7,70.8,29.2,N/A,N/A,N/A,N/A,N/A,N/A
-901,CT-01,CT,Connecticut,2026,TBD,John Larson,D,John Larson,Amy Chai,D,65.8,34.2,-31.6,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
-902,CT-02,CT,Connecticut,2026,TBD,Joe Courtney,D,Joe Courtney,Mike France,D,57.95,42.05,-15.9,93.6,6.4,N/A,N/A,N/A,N/A,N/A,N/A
-903,CT-03,CT,Connecticut,2026,TBD,Rosa Delauro,D,Rosa Delauro,Christopher Lancia,D,61.95,38.05,-23.9,98.9,1.1,N/A,N/A,N/A,N/A,N/A,N/A
-904,CT-04,CT,Connecticut,2026,TBD,Jim Himes,D,Jim Himes,Michael Goldstein,D,65.8,34.2,-31.6,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
+901,CT-01,CT,Connecticut,2026,TBD,John Larson,D,John Larson,Amy Chai,D,65.8,34.2,-31.6,99.9,0.1,N/A,N/A,0.85,0.001,N/A,N/A
+902,CT-02,CT,Connecticut,2026,TBD,Joe Courtney,D,Joe Courtney,Mike France,D,57.95,42.05,-15.9,93.6,6.4,N/A,N/A,0.76,0.001,N/A,N/A
+903,CT-03,CT,Connecticut,2026,TBD,Rosa Delauro,D,Rosa Delauro,Christopher Lancia,D,61.95,38.05,-23.9,98.9,1.1,N/A,N/A,0.76,0.001,N/A,N/A
+904,CT-04,CT,Connecticut,2026,TBD,Jim Himes,D,Jim Himes,Michael Goldstein,D,65.8,34.2,-31.6,99.9,0.1,N/A,N/A,0.78,0.001,N/A,N/A
 905,CT-05,CT,Connecticut,2026,TBD,Jahana Hayes,D,Jahana Hayes,Michele Botelho,D,56.15,43.85,-12.3,88.1,11.9,N/A,N/A,N/A,N/A,N/A,N/A
 1001,DE-01,DE,Delaware,2026,TBD,Sarah McBride,D,Sarah McBride,Donyale Hall,D,63.3,36.7,-26.6,99.5,0.5,N/A,N/A,N/A,N/A,N/A,N/A
-1201,FL-01,FL,Florida,2026,TBD,Jimmy Patronis,R,Marcel Davis,Jimmy Patronis,R,34.4,65.6,31.2,0.1,99.9,N/A,N/A,N/A,N/A,N/A,N/A
-1202,FL-02,FL,Florida,2026,TBD,Neal Dunn,R,Nicholas Zateslo,Neal Dunn,R,44.05,55.95,11.9,12.6,87.4,N/A,N/A,N/A,N/A,N/A,N/A
-1203,FL-03,FL,Florida,2026,TBD,Kat Cammack,R,Seth Harp,Kat Cammack,R,42.4,57.6,15.2,7.3,92.7,N/A,N/A,N/A,N/A,N/A,N/A
-1204,FL-04,FL,Florida,2026,TBD,Aaron Bean,R,Michael Kirwan,Aaron Bean,R,47,53,6.0,28.3,71.7,N/A,N/A,N/A,N/A,N/A,N/A
-1205,FL-05,FL,Florida,2026,TBD,John Rutherford,R,Rachel Grage,John Rutherford,R,42.15,57.85,15.7,6.6,93.4,N/A,N/A,N/A,N/A,N/A,N/A
-1206,FL-06,FL,Florida,2026,TBD,Randy Fine,R,Jennifer Jenkins,Randy Fine,R,37.9,62.1,24.2,1,99,N/A,N/A,N/A,N/A,N/A,N/A
-1207,FL-07,FL,Florida,2026,TBD,Cory Mills,R,Bale Dalton,Cory Mills,R,47.95,52.05,4.1,34.7,65.3,N/A,N/A,N/A,N/A,N/A,N/A
-1208,FL-08,FL,Florida,2026,TBD,Mike Haridopolos,R,Paul Dellinger,Mike Haridopolos,R,41.5,58.5,17.0,4.4,95.6,N/A,N/A,N/A,N/A,N/A,N/A
-1209,FL-09,FL,Florida,2026,TBD,Darren Soto,D,Darren Soto,Thomas Chalifoux,D,58.55,41.45,-17.1,94.9,5.1,N/A,N/A,N/A,N/A,N/A,N/A
-1210,FL-10,FL,Florida,2026,TBD,Maxwell Frost,D,Maxwell Frost,Stuart Farber,D,68.1,31.9,-36.2,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1211,FL-11,FL,Florida,2026,TBD,Daniel Webster,R,Barbara Hall,Daniel Webster,R,44.45,55.55,11.1,14.5,85.5,N/A,N/A,N/A,N/A,N/A,N/A
-1212,FL-12,FL,Florida,2026,TBD,Gus M. Bilirakis,R,Christopher Irizarry,Gus Bilirakis,R,35,65,30.0,0.2,99.8,N/A,N/A,N/A,N/A,N/A,N/A
+1201,FL-01,FL,Florida,2026,TBD,Jimmy Patronis,R,Marcel Davis,Jimmy Patronis,R,34.4,65.6,31.2,0.1,99.9,N/A,N/A,0.001,0.39,N/A,N/A
+1202,FL-02,FL,Florida,2026,TBD,Neal Dunn,R,Nicholas Zateslo,Neal Dunn,R,44.05,55.95,11.9,12.6,87.4,N/A,N/A,0.07,0.69,N/A,N/A
+1203,FL-03,FL,Florida,2026,TBD,Kat Cammack,R,Seth Harp,Kat Cammack,R,42.4,57.6,15.2,7.3,92.7,N/A,N/A,0.01,0.7,N/A,N/A
+1204,FL-04,FL,Florida,2026,TBD,Aaron Bean,R,Michael Kirwan,Aaron Bean,R,47,53,6.0,28.3,71.7,N/A,N/A,0.02,0.65,N/A,N/A
+1205,FL-05,FL,Florida,2026,TBD,John Rutherford,R,Rachel Grage,John Rutherford,R,42.15,57.85,15.7,6.6,93.4,N/A,N/A,0.06,0.66,N/A,N/A
+1206,FL-06,FL,Florida,2026,TBD,Randy Fine,R,Jennifer Jenkins,Randy Fine,R,37.9,62.1,24.2,1,99,N/A,N/A,0.02,0.75,N/A,N/A
+1207,FL-07,FL,Florida,2026,TBD,Cory Mills,R,Bale Dalton,Cory Mills,R,47.95,52.05,4.1,34.7,65.3,N/A,N/A,0.002,0.62,N/A,N/A
+1208,FL-08,FL,Florida,2026,TBD,Mike Haridopolos,R,Paul Dellinger,Mike Haridopolos,R,41.5,58.5,17.0,4.4,95.6,N/A,N/A,0.03,0.68,N/A,N/A
+1209,FL-09,FL,Florida,2026,TBD,Darren Soto,D,Darren Soto,Thomas Chalifoux,D,58.55,41.45,-17.1,94.9,5.1,N/A,N/A,0.38,0.62,N/A,N/A
+1210,FL-10,FL,Florida,2026,TBD,Maxwell Frost,D,Maxwell Frost,Stuart Farber,D,68.1,31.9,-36.2,100,0,N/A,N/A,0.13,0.002,N/A,N/A
+1211,FL-11,FL,Florida,2026,TBD,Daniel Webster,R,Barbara Hall,Daniel Webster,R,44.45,55.55,11.1,14.5,85.5,N/A,N/A,0.01,0.74,N/A,N/A
+1212,FL-12,FL,Florida,2026,TBD,Gus M. Bilirakis,R,Christopher Irizarry,Gus Bilirakis,R,35,65,30.0,0.2,99.8,N/A,N/A,0.04,0.67,N/A,N/A
 1213,FL-13,FL,Florida,2026,TBD,Anna Paulina Luna,R,Earle Ford,Anna Paulina Luna,R,47.65,52.35,4.7,32.5,67.5,N/A,N/A,N/A,N/A,N/A,N/A
-1214,FL-14,FL,Florida,2026,TBD,Kathy Castor,D,Kathy Castor,Robert Rochford,D,61,39,-22.0,98.3,1.7,N/A,N/A,N/A,N/A,N/A,N/A
-1215,FL-15,FL,Florida,2026,TBD,Laurel M. Lee,R,Darren McAuley,Laurel Lee,R,48.25,51.75,3.5,36.8,63.2,N/A,N/A,N/A,N/A,N/A,N/A
-1216,FL-16,FL,Florida,2026,TBD,Vern Buchanan,R,Jan Schneider,Vern Buchanan,R,44.65,55.35,10.7,15.4,84.6,N/A,N/A,N/A,N/A,N/A,N/A
-1217,FL-17,FL,Florida,2026,TBD,Greg Steube,R,Matthew Montavon,Greg Steube,R,40.7,59.3,18.6,3.8,96.2,N/A,N/A,N/A,N/A,N/A,N/A
-1218,FL-18,FL,Florida,2026,TBD,Scott Franklin,R,Tiffanie Luong,Scott Franklin,R,38.55,61.45,22.9,1.4,98.6,N/A,N/A,N/A,N/A,N/A,N/A
-1219,FL-19,FL,Florida,2026,TBD,Byron Donalds,R,Howard Sapp,Byron Donalds,R,38.6,61.4,22.8,1.4,98.6,N/A,N/A,N/A,N/A,N/A,N/A
-1220,FL-20,FL,Florida,2026,TBD,Sheila Cherfilus-McCormick,D,Sheila Cherfilus-Mccormick,Rodenay Joseph,D,79,21,-58.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1221,FL-21,FL,Florida,2026,TBD,Brian J. Mast,R,Pia Dandiya,Brian Mast,R,44.5,55.5,11.0,14.4,85.6,N/A,N/A,N/A,N/A,N/A,N/A
-1222,FL-22,FL,Florida,2026,TBD,Lois Frankel,D,Lois Frankel,Anna Medvedeva,D,59,41,-18.0,96.4,3.6,N/A,N/A,N/A,N/A,N/A,N/A
+1214,FL-14,FL,Florida,2026,TBD,Kathy Castor,D,Kathy Castor,Robert Rochford,D,61,39,-22.0,98.3,1.7,N/A,N/A,0.47,0.5,N/A,N/A
+1215,FL-15,FL,Florida,2026,TBD,Laurel M. Lee,R,Darren McAuley,Laurel Lee,R,48.25,51.75,3.5,36.8,63.2,N/A,N/A,0.21,0.67,N/A,N/A
+1216,FL-16,FL,Florida,2026,TBD,Vern Buchanan,R,Jan Schneider,Vern Buchanan,R,44.65,55.35,10.7,15.4,84.6,N/A,N/A,0.21,0.76,N/A,N/A
+1217,FL-17,FL,Florida,2026,TBD,Greg Steube,R,Matthew Montavon,Greg Steube,R,40.7,59.3,18.6,3.8,96.2,N/A,N/A,0.13,0.84,N/A,N/A
+1218,FL-18,FL,Florida,2026,TBD,Scott Franklin,R,Tiffanie Luong,Scott Franklin,R,38.55,61.45,22.9,1.4,98.6,N/A,N/A,0.01,0.67,N/A,N/A
+1219,FL-19,FL,Florida,2026,TBD,Byron Donalds,R,Howard Sapp,Byron Donalds,R,38.6,61.4,22.8,1.4,98.6,N/A,N/A,0.01,0.74,N/A,N/A
+1220,FL-20,FL,Florida,2026,TBD,Sheila Cherfilus-McCormick,D,Sheila Cherfilus-Mccormick,Rodenay Joseph,D,79,21,-58.0,100,0,N/A,N/A,0.914,0.056,N/A,N/A
+1221,FL-21,FL,Florida,2026,TBD,Brian J. Mast,R,Pia Dandiya,Brian Mast,R,44.5,55.5,11.0,14.4,85.6,N/A,N/A,0.02,0.7,N/A,N/A
+1222,FL-22,FL,Florida,2026,TBD,Lois Frankel,D,Lois Frankel,Anna Medvedeva,D,59,41,-18.0,96.4,3.6,N/A,N/A,0.52,0.46,N/A,N/A
 1223,FL-23,FL,Florida,2026,TBD,Jared Moskowitz,D,Jared Moskowitz,Raven Harrison,D,56.7,43.3,-13.4,90.1,9.9,N/A,N/A,N/A,N/A,N/A,N/A
-1224,FL-24,FL,Florida,2026,TBD,Frederica S. Wilson,D,Frederica Wilson,Patricia Gonzalez,D,73.2,26.8,-46.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1225,FL-25,FL,Florida,2026,TBD,Debbie Wasserman Schultz,D,Debbie Wasserman Schultz,Michael Carbonara,D,59.1,40.9,-18.2,95.9,4.1,N/A,N/A,N/A,N/A,N/A,N/A
-1226,FL-26,FL,Florida,2026,TBD,Mario Diaz-Balart,R,Yurina Gil,Mario Diaz-Balart,R,36.15,63.85,27.7,0.4,99.6,N/A,N/A,N/A,N/A,N/A,N/A
-1227,FL-27,FL,Florida,2026,TBD,Maria Elvira Salazar,R,Richard Lamondin,Maria Salazar,R,47.45,52.55,5.1,31.1,68.9,N/A,N/A,N/A,N/A,N/A,N/A
-1228,FL-28,FL,Florida,2026,TBD,Carlos A. Gimenez,R,Phil Ehr,Carlos Gimenez,R,43.25,56.75,13.5,9.8,90.2,N/A,N/A,N/A,N/A,N/A,N/A
-1301,GA-01,GA,Georgia,2026,TBD,Earl L. “Buddy” Carter,R,Michael Mccord,James Kingston,None,45.3,54.7,9.4,18.5,81.5,N/A,N/A,N/A,N/A,N/A,N/A
-1302,GA-02,GA,Georgia,2026,TBD,"Sanford D. Bishop, Jr.",D,Sanford Bishop,Matt Day,None,59.25,40.75,-18.5,96.1,3.9,N/A,N/A,N/A,N/A,N/A,N/A
-1303,GA-03,GA,Georgia,2026,TBD,Brian Jack,R,Maura Keller,Brian Jack,R,36.6,63.4,26.8,0.5,99.5,N/A,N/A,N/A,N/A,N/A,N/A
-1304,GA-04,GA,Georgia,2026,TBD,"Henry C. “Hank” Johnson, Jr.",D,Henry Johnson,Jim Duffie,None,80.65,19.35,-61.3,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1305,GA-05,GA,Georgia,2026,TBD,Nikema Williams,D,Nikema Williams,Generic Republican,D,90.4,9.6,-80.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1306,GA-06,GA,Georgia,2026,TBD,Lucy McBath,D,Lucy McBath,Justin Pinker,D,78.95,21.05,-57.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1307,GA-07,GA,Georgia,2026,TBD,Richard McCormick,R,Haiden Moburg,Richard McCormick,R,40,60,20.0,2.3,97.7,N/A,N/A,N/A,N/A,N/A,N/A
-1308,GA-08,GA,Georgia,2026,TBD,Austin Scott,R,James Cooper,Austin Scott,R,35.9,64.1,28.2,0.3,99.7,N/A,N/A,N/A,N/A,N/A,N/A
-1309,GA-09,GA,Georgia,2026,TBD,Andrew Clyde,R,Nicholas Alex,Andrew Clyde,R,34.7,65.3,30.6,0.2,99.8,N/A,N/A,N/A,N/A,N/A,N/A
-1310,GA-10,GA,Georgia,2026,TBD,Mike Collins,R,Alexandra Doherty,Houston Gaines,None,41.65,58.35,16.7,5.5,94.5,N/A,N/A,N/A,N/A,N/A,N/A
-1311,GA-11,GA,Georgia,2026,TBD,Barry Loudermilk,R,Barry Wolfert,Chris Mora,None,41.7,58.3,16.6,5.6,94.4,N/A,N/A,N/A,N/A,N/A,N/A
-1312,GA-12,GA,Georgia,2026,TBD,Rick Allen,R,Brianna Woodson,Rick Allen,R,45.1,54.9,9.8,17.5,82.5,N/A,N/A,N/A,N/A,N/A,N/A
-1313,GA-13,GA,Georgia,2026,TBD,David Scott,D,David Scott,Simeon Nunnally,D,74.95,25.05,-49.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1314,GA-14,GA,Georgia,2026,TBD,Marjorie Taylor Greene,R,Shawn Harris,Clayton Fuller,None,35.15,64.85,29.7,0.2,99.8,N/A,N/A,N/A,N/A,N/A,N/A
-1501,HI-01,HI,Hawaii,2026,TBD,Ed Case,D,Ed Case,Maxwell Frazier,D,69.25,30.75,-38.5,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1502,HI-02,HI,Hawaii,2026,TBD,Jill Tokuda,D,Jill Tokuda,Brenton Awa,D,67.25,32.75,-34.5,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1601,ID-01,ID,Idaho,2026,TBD,Russ Fulcher,R,Kaylee Peterson,Russ Fulcher,R,30.5,69.5,39.0,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-1602,ID-02,ID,Idaho,2026,TBD,Michael Simpson,R,Julie Wiley,Michael Simpson,R,38.55,61.45,22.9,1.4,98.6,N/A,N/A,N/A,N/A,N/A,N/A
-1701,IL-01,IL,Illinois,2026,TBD,Jonathan Jackson,D,Jonathan Jackson,Christian Maxwell,D,71.7,28.3,-43.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1702,IL-02,IL,Illinois,2026,TBD,Robin Kelly,D,Donna Miller,Calvin Coleman,None,72.8,27.2,-45.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1703,IL-03,IL,Illinois,2026,TBD,Delia C. Ramirez,D,Delia Ramirez,Angel Oakley,D,72.3,27.7,-44.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1704,IL-04,IL,Illinois,2026,TBD,Chuy García,D,Patty Garcia,Lupe Castillo,None,71.1,28.9,-42.2,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1705,IL-05,IL,Illinois,2026,TBD,Mike Quigley,D,Mike Quigley,Tommy Hanson,D,73.7,26.3,-47.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1706,IL-06,IL,Illinois,2026,TBD,Sean Casten,D,Sean Casten,Niki Conforti,D,58.05,41.95,-16.1,93.9,6.1,N/A,N/A,N/A,N/A,N/A,N/A
-1707,IL-07,IL,Illinois,2026,TBD,Danny Davis,D,La Shawn Ford,Chad Koppie,None,88.6,11.4,-77.2,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1708,IL-08,IL,Illinois,2026,TBD,Raja Krishnamoorthi,D,Melissa Bean,Jennifer Davis,None,58.5,41.5,-17.0,94.8,5.2,N/A,N/A,N/A,N/A,N/A,N/A
-1709,IL-09,IL,Illinois,2026,TBD,Janice Schakowsky,D,Daniel Biss,John Elleson,None,74.3,25.7,-48.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1710,IL-10,IL,Illinois,2026,TBD,Brad Schneider,D,Brad Schneider,Carl Lambrecht,D,66.4,33.6,-32.8,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
-1711,IL-11,IL,Illinois,2026,TBD,Bill Foster,D,Bill Foster,Jeff Walter,D,60.35,39.65,-20.7,97.6,2.4,N/A,N/A,N/A,N/A,N/A,N/A
-1712,IL-12,IL,Illinois,2026,TBD,Mike Bost,R,Julie Fortier,Mike Bost,R,29.65,70.35,40.7,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-1713,IL-13,IL,Illinois,2026,TBD,Nikki Budzinski,D,Nikki Budzinski,Jeff Wilson,D,60.6,39.4,-21.2,97.9,2.1,N/A,N/A,N/A,N/A,N/A,N/A
-1714,IL-14,IL,Illinois,2026,TBD,Lauren Underwood,D,Lauren Underwood,James Marter,D,58.75,41.25,-17.5,95.3,4.7,N/A,N/A,N/A,N/A,N/A,N/A
-1715,IL-15,IL,Illinois,2026,TBD,Mary Miller,R,Jennifer Todd,Mary Miller,R,29.05,70.95,41.9,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-1716,IL-16,IL,Illinois,2026,TBD,Darin LaHood,R,Paul Nolley,Darin LaHood,R,37.5,62.5,25.0,0.8,99.2,N/A,N/A,N/A,N/A,N/A,N/A
+1224,FL-24,FL,Florida,2026,TBD,Frederica S. Wilson,D,Frederica Wilson,Patricia Gonzalez,D,73.2,26.8,-46.4,100,0,N/A,N/A,0.86,0.001,N/A,N/A
+1225,FL-25,FL,Florida,2026,TBD,Debbie Wasserman Schultz,D,Debbie Wasserman Schultz,Michael Carbonara,D,59.1,40.9,-18.2,95.9,4.1,N/A,N/A,0.69,0.31,N/A,N/A
+1226,FL-26,FL,Florida,2026,TBD,Mario Diaz-Balart,R,Yurina Gil,Mario Diaz-Balart,R,36.15,63.85,27.7,0.4,99.6,N/A,N/A,0.16,0.64,N/A,N/A
+1227,FL-27,FL,Florida,2026,TBD,Maria Elvira Salazar,R,Richard Lamondin,Maria Salazar,R,47.45,52.55,5.1,31.1,68.9,N/A,N/A,0.3,0.69,N/A,N/A
+1228,FL-28,FL,Florida,2026,TBD,Carlos A. Gimenez,R,Phil Ehr,Carlos Gimenez,R,43.25,56.75,13.5,9.8,90.2,N/A,N/A,0.01,0.74,N/A,N/A
+1301,GA-01,GA,Georgia,2026,TBD,Earl L. “Buddy” Carter,R,Michael Mccord,James Kingston,None,45.3,54.7,9.4,18.5,81.5,N/A,N/A,0.14,0.83,N/A,N/A
+1302,GA-02,GA,Georgia,2026,TBD,"Sanford D. Bishop, Jr.",D,Sanford Bishop,Matt Day,None,59.25,40.75,-18.5,96.1,3.9,N/A,N/A,0.86,0.01,N/A,N/A
+1303,GA-03,GA,Georgia,2026,TBD,Brian Jack,R,Maura Keller,Brian Jack,R,36.6,63.4,26.8,0.5,99.5,N/A,N/A,0.001,0.76,N/A,N/A
+1304,GA-04,GA,Georgia,2026,TBD,"Henry C. “Hank” Johnson, Jr.",D,Henry Johnson,Jim Duffie,None,80.65,19.35,-61.3,100,0,N/A,N/A,0.81,0.001,N/A,N/A
+1305,GA-05,GA,Georgia,2026,TBD,Nikema Williams,D,Nikema Williams,Generic Republican,D,90.4,9.6,-80.8,100,0,N/A,N/A,0.947,0.001,N/A,N/A
+1306,GA-06,GA,Georgia,2026,TBD,Lucy McBath,D,Lucy McBath,Justin Pinker,D,78.95,21.05,-57.9,100,0,N/A,N/A,0.85,0.001,N/A,N/A
+1307,GA-07,GA,Georgia,2026,TBD,Richard McCormick,R,Haiden Moburg,Richard McCormick,R,40,60,20.0,2.3,97.7,N/A,N/A,0.02,0.7,N/A,N/A
+1308,GA-08,GA,Georgia,2026,TBD,Austin Scott,R,James Cooper,Austin Scott,R,35.9,64.1,28.2,0.3,99.7,N/A,N/A,0.001,0.69,N/A,N/A
+1309,GA-09,GA,Georgia,2026,TBD,Andrew Clyde,R,Nicholas Alex,Andrew Clyde,R,34.7,65.3,30.6,0.2,99.8,N/A,N/A,0.001,0.9,N/A,N/A
+1310,GA-10,GA,Georgia,2026,TBD,Mike Collins,R,Alexandra Doherty,Houston Gaines,None,41.65,58.35,16.7,5.5,94.5,N/A,N/A,0.01,0.905,N/A,N/A
+1311,GA-11,GA,Georgia,2026,TBD,Barry Loudermilk,R,Barry Wolfert,Chris Mora,None,41.7,58.3,16.6,5.6,94.4,N/A,N/A,0.11,0.86,N/A,N/A
+1312,GA-12,GA,Georgia,2026,TBD,Rick Allen,R,Brianna Woodson,Rick Allen,R,45.1,54.9,9.8,17.5,82.5,N/A,N/A,0.17,0.8,N/A,N/A
+1313,GA-13,GA,Georgia,2026,TBD,David Scott,D,David Scott,Simeon Nunnally,D,74.95,25.05,-49.9,100,0,N/A,N/A,0.73,0.001,N/A,N/A
+1314,GA-14,GA,Georgia,2026,TBD,Marjorie Taylor Greene,R,Shawn Harris,Clayton Fuller,None,35.15,64.85,29.7,0.2,99.8,N/A,N/A,0.001,0.71,N/A,N/A
+1501,HI-01,HI,Hawaii,2026,TBD,Ed Case,D,Ed Case,Maxwell Frazier,D,69.25,30.75,-38.5,100,0,N/A,N/A,0.93,0.001,N/A,N/A
+1502,HI-02,HI,Hawaii,2026,TBD,Jill Tokuda,D,Jill Tokuda,Brenton Awa,D,67.25,32.75,-34.5,100,0,N/A,N/A,0.7,0.002,N/A,N/A
+1601,ID-01,ID,Idaho,2026,TBD,Russ Fulcher,R,Kaylee Peterson,Russ Fulcher,R,30.5,69.5,39.0,0,100,N/A,N/A,0.001,0.95,N/A,N/A
+1602,ID-02,ID,Idaho,2026,TBD,Michael Simpson,R,Julie Wiley,Michael Simpson,R,38.55,61.45,22.9,1.4,98.6,N/A,N/A,0.066,0.7,N/A,N/A
+1701,IL-01,IL,Illinois,2026,TBD,Jonathan Jackson,D,Jonathan Jackson,Christian Maxwell,D,71.7,28.3,-43.4,100,0,N/A,N/A,0.69,0.001,N/A,N/A
+1702,IL-02,IL,Illinois,2026,TBD,Robin Kelly,D,Donna Miller,Calvin Coleman,None,72.8,27.2,-45.6,100,0,N/A,N/A,0.962,0.001,N/A,N/A
+1703,IL-03,IL,Illinois,2026,TBD,Delia C. Ramirez,D,Delia Ramirez,Angel Oakley,D,72.3,27.7,-44.6,100,0,N/A,N/A,0.71,0.001,N/A,N/A
+1704,IL-04,IL,Illinois,2026,TBD,Chuy García,D,Patty Garcia,Lupe Castillo,None,71.1,28.9,-42.2,100,0,N/A,N/A,0.87,0.001,N/A,N/A
+1705,IL-05,IL,Illinois,2026,TBD,Mike Quigley,D,Mike Quigley,Tommy Hanson,D,73.7,26.3,-47.4,100,0,N/A,N/A,0.73,0.001,N/A,N/A
+1706,IL-06,IL,Illinois,2026,TBD,Sean Casten,D,Sean Casten,Niki Conforti,D,58.05,41.95,-16.1,93.9,6.1,N/A,N/A,0.72,0.001,N/A,N/A
+1707,IL-07,IL,Illinois,2026,TBD,Danny Davis,D,La Shawn Ford,Chad Koppie,None,88.6,11.4,-77.2,100,0,N/A,N/A,0.74,0.001,N/A,N/A
+1708,IL-08,IL,Illinois,2026,TBD,Raja Krishnamoorthi,D,Melissa Bean,Jennifer Davis,None,58.5,41.5,-17.0,94.8,5.2,N/A,N/A,0.922,0.048,N/A,N/A
+1709,IL-09,IL,Illinois,2026,TBD,Janice Schakowsky,D,Daniel Biss,John Elleson,None,74.3,25.7,-48.6,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+1710,IL-10,IL,Illinois,2026,TBD,Brad Schneider,D,Brad Schneider,Carl Lambrecht,D,66.4,33.6,-32.8,99.9,0.1,N/A,N/A,0.81,0.001,N/A,N/A
+1711,IL-11,IL,Illinois,2026,TBD,Bill Foster,D,Bill Foster,Jeff Walter,D,60.35,39.65,-20.7,97.6,2.4,N/A,N/A,0.7,0.001,N/A,N/A
+1712,IL-12,IL,Illinois,2026,TBD,Mike Bost,R,Julie Fortier,Mike Bost,R,29.65,70.35,40.7,0,100,N/A,N/A,0.001,0.77,N/A,N/A
+1713,IL-13,IL,Illinois,2026,TBD,Nikki Budzinski,D,Nikki Budzinski,Jeff Wilson,D,60.6,39.4,-21.2,97.9,2.1,N/A,N/A,0.93,0.01,N/A,N/A
+1714,IL-14,IL,Illinois,2026,TBD,Lauren Underwood,D,Lauren Underwood,James Marter,D,58.75,41.25,-17.5,95.3,4.7,N/A,N/A,0.72,0.001,N/A,N/A
+1715,IL-15,IL,Illinois,2026,TBD,Mary Miller,R,Jennifer Todd,Mary Miller,R,29.05,70.95,41.9,0,100,N/A,N/A,0.002,0.72,N/A,N/A
+1716,IL-16,IL,Illinois,2026,TBD,Darin LaHood,R,Paul Nolley,Darin LaHood,R,37.5,62.5,25.0,0.8,99.2,N/A,N/A,0.01,0.67,N/A,N/A
 1717,IL-17,IL,Illinois,2026,TBD,Eric Sorensen,D,Eric Sorensen,Dillan Vancil,D,57.3,42.7,-14.6,91.9,8.1,N/A,N/A,N/A,N/A,N/A,N/A
 1801,IN-01,IN,Indiana,2026,TBD,Frank Mrvan,D,Frank Mrvan,Barb Regnitz,D,54.7,45.3,-9.4,81.5,18.5,N/A,N/A,N/A,N/A,N/A,N/A
-1802,IN-02,IN,Indiana,2026,TBD,Rudy Yakym III,R,Jamee Decio,Rudy Yakym,R,37.15,62.85,25.7,0.7,99.3,N/A,N/A,N/A,N/A,N/A,N/A
-1803,IN-03,IN,Indiana,2026,TBD,Marlin Stutzman,R,Kelly Thompson,Marlin Stutzman,R,35.05,64.95,29.9,0.2,99.8,N/A,N/A,N/A,N/A,N/A,N/A
-1804,IN-04,IN,Indiana,2026,TBD,James Baird,R,Joseph Mackey,James Baird,R,35.65,64.35,28.7,0.3,99.7,N/A,N/A,N/A,N/A,N/A,N/A
-1805,IN-05,IN,Indiana,2026,TBD,Victoria Spartz,R,James Ford,Victoria Spartz,R,42.25,57.75,15.5,6.9,93.1,N/A,N/A,N/A,N/A,N/A,N/A
-1806,IN-06,IN,Indiana,2026,TBD,Jefferson Shreve,R,Cynthia Wirth,Jefferson Shreve,R,34.15,65.85,31.7,0.1,99.9,N/A,N/A,N/A,N/A,N/A,N/A
+1802,IN-02,IN,Indiana,2026,TBD,Rudy Yakym III,R,Jamee Decio,Rudy Yakym,R,37.15,62.85,25.7,0.7,99.3,N/A,N/A,0.1,0.89,N/A,N/A
+1803,IN-03,IN,Indiana,2026,TBD,Marlin Stutzman,R,Kelly Thompson,Marlin Stutzman,R,35.05,64.95,29.9,0.2,99.8,N/A,N/A,0.001,0.7,N/A,N/A
+1804,IN-04,IN,Indiana,2026,TBD,James Baird,R,Joseph Mackey,James Baird,R,35.65,64.35,28.7,0.3,99.7,N/A,N/A,0.094,0.71,N/A,N/A
+1805,IN-05,IN,Indiana,2026,TBD,Victoria Spartz,R,James Ford,Victoria Spartz,R,42.25,57.75,15.5,6.9,93.1,N/A,N/A,0.1,0.63,N/A,N/A
+1806,IN-06,IN,Indiana,2026,TBD,Jefferson Shreve,R,Cynthia Wirth,Jefferson Shreve,R,34.15,65.85,31.7,0.1,99.9,N/A,N/A,0.001,0.7,N/A,N/A
 1807,IN-07,IN,Indiana,2026,TBD,Andre Carson,D,Andre Carson,Felipe Rios,D,73.95,26.05,-47.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-1808,IN-08,IN,Indiana,2026,TBD,Mark B. Messmer,R,Mary Allen,Mark Messmer,R,33.3,66.7,33.4,0.1,99.9,N/A,N/A,N/A,N/A,N/A,N/A
-1809,IN-09,IN,Indiana,2026,TBD,Erin Houchin,R,James Graham,Erin Houchin,R,36.15,63.85,27.7,0.4,99.6,N/A,N/A,N/A,N/A,N/A,N/A
+1808,IN-08,IN,Indiana,2026,TBD,Mark B. Messmer,R,Mary Allen,Mark Messmer,R,33.3,66.7,33.4,0.1,99.9,N/A,N/A,0.001,0.7,N/A,N/A
+1809,IN-09,IN,Indiana,2026,TBD,Erin Houchin,R,James Graham,Erin Houchin,R,36.15,63.85,27.7,0.4,99.6,N/A,N/A,0.002,0.9,N/A,N/A
 1901,IA-01,IA,Iowa,2026,TBD,Mariannette Miller-Meeks,R,Christina Bohannan,Mariannette Miller-Meeks,R,50.9,49.1,-1.8,56.8,43.2,N/A,N/A,N/A,N/A,N/A,N/A
-1902,IA-02,IA,Iowa,2026,TBD,Ashley Hinson,R,Lindsay James,Joe Mitchell,None,48.6,51.4,2.8,39.6,60.4,N/A,N/A,N/A,N/A,N/A,N/A
+1902,IA-02,IA,Iowa,2026,TBD,Ashley Hinson,R,Lindsay James,Joe Mitchell,None,48.6,51.4,2.8,39.6,60.4,N/A,N/A,0.47,0.5,N/A,N/A
 1903,IA-03,IA,Iowa,2026,TBD,Zach Nunn,R,Sarah Trone Garriott,Zach Nunn,R,51.3,48.7,-2.6,59.8,40.2,N/A,N/A,N/A,N/A,N/A,N/A
-1904,IA-04,IA,Iowa,2026,TBD,Randy Feenstra,R,Dave Dawson,Chris Mcgowan,None,37.55,62.45,24.9,0.9,99.1,N/A,N/A,N/A,N/A,N/A,N/A
-2001,KS-01,KS,Kansas,2026,TBD,Tracey Mann,R,Kenneth McRoberts,Tracey Mann,R,34.4,65.6,31.2,0.1,99.9,N/A,N/A,N/A,N/A,N/A,N/A
-2002,KS-02,KS,Kansas,2026,TBD,Derek Schmidt,R,Don Coover,Derek Schmidt,R,42.7,57.3,14.6,8.2,91.8,N/A,N/A,N/A,N/A,N/A,N/A
-2003,KS-03,KS,Kansas,2026,TBD,Sharice Davids,D,Sharice Davids,Chase Laporte,D,57.2,42.8,-14.4,91.5,8.5,N/A,N/A,N/A,N/A,N/A,N/A
-2004,KS-04,KS,Kansas,2026,TBD,Ron Estes,R,Chris Carmichael,Ron Estes,R,38.95,61.05,22.1,1.7,98.3,N/A,N/A,N/A,N/A,N/A,N/A
-2101,KY-01,KY,Kentucky,2026,TBD,James Comer,R,John Williams,James Comer,R,28.2,71.8,43.6,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2102,KY-02,KY,Kentucky,2026,TBD,Brett Guthrie,R,William Compton,Brett Guthrie,R,30.4,69.6,39.2,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2103,KY-03,KY,Kentucky,2026,TBD,Morgan McGarvey,D,Morgan Mcgarvey,Maria Rodriguez,D,65.05,34.95,-30.1,99.8,0.2,N/A,N/A,N/A,N/A,N/A,N/A
-2104,KY-04,KY,Kentucky,2026,TBD,Thomas Massie,R,Melissa Strange,Ed Gallrein,None,30.7,69.3,38.6,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2105,KY-05,KY,Kentucky,2026,TBD,Harold Rogers,R,Ned Pillersdorf,Harold Rogers,None,17.4,82.6,65.2,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2106,KY-06,KY,Kentucky,2026,TBD,Andy Barr,R,Zach Dembo,Adam Arquette,None,45.6,54.4,8.8,20.1,79.9,N/A,N/A,N/A,N/A,N/A,N/A
-2201,LA-01,LA,Louisiana,2026,TBD,Steve Scalise,R,Lauren Jewett,Steve Scalise,R,28.35,71.65,43.3,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2202,LA-02,LA,Louisiana,2026,TBD,Troy Carter,D,Troy Carter,Generic Republican,D,70.9,29.1,-41.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2203,LA-03,LA,Louisiana,2026,TBD,Clay Higgins,R,Tia LeBrun,Clay Higgins,R,25.9,74.1,48.2,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2204,LA-04,LA,Louisiana,2026,TBD,Mike Johnson,R,Matthew Gromlich,Mike Johnson,R,19.3,80.7,61.4,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2205,LA-05,LA,Louisiana,2026,TBD,Julia Letlow,R,Dan Mckay,Julia Letlow,R,30.95,69.05,38.1,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2206,LA-06,LA,Louisiana,2026,TBD,Cleo Fields,D,Cleo Fields,Peter Williams,D,59.25,40.75,-18.5,96.1,3.9,N/A,N/A,N/A,N/A,N/A,N/A
-2301,ME-01,ME,Maine,2026,TBD,Chellie Pingree,D,Chellie Pingree,Eric Small,D,63.75,36.25,-27.5,99.6,0.4,N/A,N/A,N/A,N/A,N/A,N/A
+1904,IA-04,IA,Iowa,2026,TBD,Randy Feenstra,R,Dave Dawson,Chris Mcgowan,None,37.55,62.45,24.9,0.9,99.1,N/A,N/A,0.002,0.84,N/A,N/A
+2001,KS-01,KS,Kansas,2026,TBD,Tracey Mann,R,Kenneth McRoberts,Tracey Mann,R,34.4,65.6,31.2,0.1,99.9,N/A,N/A,0.003,0.91,N/A,N/A
+2002,KS-02,KS,Kansas,2026,TBD,Derek Schmidt,R,Don Coover,Derek Schmidt,R,42.7,57.3,14.6,8.2,91.8,N/A,N/A,0.02,0.87,N/A,N/A
+2003,KS-03,KS,Kansas,2026,TBD,Sharice Davids,D,Sharice Davids,Chase Laporte,D,57.2,42.8,-14.4,91.5,8.5,N/A,N/A,0.89,0.01,N/A,N/A
+2004,KS-04,KS,Kansas,2026,TBD,Ron Estes,R,Chris Carmichael,Ron Estes,R,38.95,61.05,22.1,1.7,98.3,N/A,N/A,0.03,0.86,N/A,N/A
+2101,KY-01,KY,Kentucky,2026,TBD,James Comer,R,John Williams,James Comer,R,28.2,71.8,43.6,0,100,N/A,N/A,0.002,0.72,N/A,N/A
+2102,KY-02,KY,Kentucky,2026,TBD,Brett Guthrie,R,William Compton,Brett Guthrie,R,30.4,69.6,39.2,0,100,N/A,N/A,0.002,0.71,N/A,N/A
+2103,KY-03,KY,Kentucky,2026,TBD,Morgan McGarvey,D,Morgan Mcgarvey,Maria Rodriguez,D,65.05,34.95,-30.1,99.8,0.2,N/A,N/A,0.71,0.001,N/A,N/A
+2104,KY-04,KY,Kentucky,2026,TBD,Thomas Massie,R,Melissa Strange,Ed Gallrein,None,30.7,69.3,38.6,0,100,N/A,N/A,0.14,0.87,N/A,N/A
+2105,KY-05,KY,Kentucky,2026,TBD,Harold Rogers,R,Ned Pillersdorf,Harold Rogers,None,17.4,82.6,65.2,0,100,N/A,N/A,0.001,0.95,N/A,N/A
+2106,KY-06,KY,Kentucky,2026,TBD,Andy Barr,R,Zach Dembo,Adam Arquette,None,45.6,54.4,8.8,20.1,79.9,N/A,N/A,0.03,0.64,N/A,N/A
+2201,LA-01,LA,Louisiana,2026,TBD,Steve Scalise,R,Lauren Jewett,Steve Scalise,R,28.35,71.65,43.3,0,100,N/A,N/A,0.001,0.69,N/A,N/A
+2202,LA-02,LA,Louisiana,2026,TBD,Troy Carter,D,Troy Carter,Generic Republican,D,70.9,29.1,-41.8,100,0,N/A,N/A,0.86,0.062,N/A,N/A
+2203,LA-03,LA,Louisiana,2026,TBD,Clay Higgins,R,Tia LeBrun,Clay Higgins,R,25.9,74.1,48.2,0,100,N/A,N/A,0.002,0.7,N/A,N/A
+2204,LA-04,LA,Louisiana,2026,TBD,Mike Johnson,R,Matthew Gromlich,Mike Johnson,R,19.3,80.7,61.4,0,100,N/A,N/A,0.01,0.68,N/A,N/A
+2205,LA-05,LA,Louisiana,2026,TBD,Julia Letlow,R,Dan Mckay,Julia Letlow,R,30.95,69.05,38.1,0,100,N/A,N/A,0.055,0.92,N/A,N/A
+2206,LA-06,LA,Louisiana,2026,TBD,Cleo Fields,D,Cleo Fields,Peter Williams,D,59.25,40.75,-18.5,96.1,3.9,N/A,N/A,0.05,0.66,N/A,N/A
+2301,ME-01,ME,Maine,2026,TBD,Chellie Pingree,D,Chellie Pingree,Eric Small,D,63.75,36.25,-27.5,99.6,0.4,N/A,N/A,0.956,0.001,N/A,N/A
 2302,ME-02,ME,Maine,2026,TBD,Jared Golden,D,Matt Dunlap,Paul LePage,None,47.05,52.95,5.9,28.6,71.4,N/A,N/A,N/A,N/A,N/A,N/A
-2401,MD-01,MD,Maryland,2026,TBD,Andy Harris,R,Daniel Schwartz,Andy Harris,R,42.5,57.5,15.0,7.6,92.4,N/A,N/A,N/A,N/A,N/A,N/A
-2402,MD-02,MD,Maryland,2026,TBD,"Johnny Olszewski, Jr.",D,John Olszewski,David Wallace,None,62.75,37.25,-25.5,99.3,0.7,N/A,N/A,N/A,N/A,N/A,N/A
-2403,MD-03,MD,Maryland,2026,TBD,Sarah Elfreth,D,Sarah Elfreth,Penny Kennedy,D,64.9,35.1,-29.8,99.8,0.2,N/A,N/A,N/A,N/A,N/A,N/A
-2404,MD-04,MD,Maryland,2026,TBD,Glenn Ivey,D,Glenn Ivey,Generic Republican,D,92.4,7.6,-84.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2405,MD-05,MD,Maryland,2026,TBD,Steny Hoyer,D,Quincy Bareebe,Michelle Talkington,None,70.3,29.7,-40.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2406,MD-06,MD,Maryland,2026,TBD,April Delaney,D,April Delaney,Robin Ficker,D,56.1,43.9,-12.2,87.9,12.1,N/A,N/A,N/A,N/A,N/A,N/A
-2407,MD-07,MD,Maryland,2026,TBD,Kweisi Mfume,D,Kweisi Mfume,Generic Republican,D,84.4,15.6,-68.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2408,MD-08,MD,Maryland,2026,TBD,Jamie Raskin,D,Jamie Raskin,Cheryl Riley,D,83.3,16.7,-66.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2501,MA-01,MA,Massachusetts,2026,TBD,Richard Neal,D,Richard Neal,Generic Republican,D,66,34,-32.0,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
-2502,MA-02,MA,Massachusetts,2026,TBD,James McGovern,D,James McGovern,Generic Republican,D,70.45,29.55,-40.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2503,MA-03,MA,Massachusetts,2026,TBD,Lori Trahan,D,Lori Trahan,Gary Grossi,D,68.8,31.2,-37.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2504,MA-04,MA,Massachusetts,2026,TBD,Jake Auchincloss,D,Jake Auchincloss,Generic Republican,D,69,31,-38.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2505,MA-05,MA,Massachusetts,2026,TBD,Katherine Clark,D,Katherine Clark,Generic Republican,D,82.2,17.8,-64.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2506,MA-06,MA,Massachusetts,2026,TBD,Seth Moulton,D,Daniel Koh,John Field,None,66.2,33.8,-32.4,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
-2507,MA-07,MA,Massachusetts,2026,TBD,Ayanna Pressley,D,Ayanna Pressley,Generic Republican,D,91.55,8.45,-83.1,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2508,MA-08,MA,Massachusetts,2026,TBD,Stephen Lynch,D,Stephen Lynch,Gavin Solomon,D,70.95,29.05,-41.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2509,MA-09,MA,Massachusetts,2026,TBD,William Keating,D,William Keating,Robert MacAllister,D,60.1,39.9,-20.2,97.3,2.7,N/A,N/A,N/A,N/A,N/A,N/A
-2601,MI-01,MI,Michigan,2026,TBD,Jack Bergman,R,Callie Barr,Jack Bergman,R,42.1,57.9,15.8,6.6,93.4,N/A,N/A,N/A,N/A,N/A,N/A
-2602,MI-02,MI,Michigan,2026,TBD,John R. Moolenaar,R,Benjamin Ambrose,John Moolenaar,R,36.3,63.7,27.4,0.4,99.6,N/A,N/A,N/A,N/A,N/A,N/A
+2401,MD-01,MD,Maryland,2026,TBD,Andy Harris,R,Daniel Schwartz,Andy Harris,R,42.5,57.5,15.0,7.6,92.4,N/A,N/A,0.18,0.56,N/A,N/A
+2402,MD-02,MD,Maryland,2026,TBD,"Johnny Olszewski, Jr.",D,John Olszewski,David Wallace,None,62.75,37.25,-25.5,99.3,0.7,N/A,N/A,0.87,0.001,N/A,N/A
+2403,MD-03,MD,Maryland,2026,TBD,Sarah Elfreth,D,Sarah Elfreth,Penny Kennedy,D,64.9,35.1,-29.8,99.8,0.2,N/A,N/A,0.73,0.001,N/A,N/A
+2404,MD-04,MD,Maryland,2026,TBD,Glenn Ivey,D,Glenn Ivey,Generic Republican,D,92.4,7.6,-84.8,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+2405,MD-05,MD,Maryland,2026,TBD,Steny Hoyer,D,Quincy Bareebe,Michelle Talkington,None,70.3,29.7,-40.6,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+2406,MD-06,MD,Maryland,2026,TBD,April Delaney,D,April Delaney,Robin Ficker,D,56.1,43.9,-12.2,87.9,12.1,N/A,N/A,0.68,0.01,N/A,N/A
+2407,MD-07,MD,Maryland,2026,TBD,Kweisi Mfume,D,Kweisi Mfume,Generic Republican,D,84.4,15.6,-68.8,100,0,N/A,N/A,0.14,0.001,N/A,N/A
+2408,MD-08,MD,Maryland,2026,TBD,Jamie Raskin,D,Jamie Raskin,Cheryl Riley,D,83.3,16.7,-66.6,100,0,N/A,N/A,0.69,0.002,N/A,N/A
+2501,MA-01,MA,Massachusetts,2026,TBD,Richard Neal,D,Richard Neal,Generic Republican,D,66,34,-32.0,99.9,0.1,N/A,N/A,0.71,0.001,N/A,N/A
+2502,MA-02,MA,Massachusetts,2026,TBD,James McGovern,D,James McGovern,Generic Republican,D,70.45,29.55,-40.9,100,0,N/A,N/A,0.94,0.001,N/A,N/A
+2503,MA-03,MA,Massachusetts,2026,TBD,Lori Trahan,D,Lori Trahan,Gary Grossi,D,68.8,31.2,-37.6,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+2504,MA-04,MA,Massachusetts,2026,TBD,Jake Auchincloss,D,Jake Auchincloss,Generic Republican,D,69,31,-38.0,100,0,N/A,N/A,0.8,0.001,N/A,N/A
+2505,MA-05,MA,Massachusetts,2026,TBD,Katherine Clark,D,Katherine Clark,Generic Republican,D,82.2,17.8,-64.4,100,0,N/A,N/A,0.973,0.001,N/A,N/A
+2506,MA-06,MA,Massachusetts,2026,TBD,Seth Moulton,D,Daniel Koh,John Field,None,66.2,33.8,-32.4,99.9,0.1,N/A,N/A,0.69,0.001,N/A,N/A
+2507,MA-07,MA,Massachusetts,2026,TBD,Ayanna Pressley,D,Ayanna Pressley,Generic Republican,D,91.55,8.45,-83.1,100,0,N/A,N/A,0.84,0.001,N/A,N/A
+2508,MA-08,MA,Massachusetts,2026,TBD,Stephen Lynch,D,Stephen Lynch,Gavin Solomon,D,70.95,29.05,-41.9,100,0,N/A,N/A,0.7,0.001,N/A,N/A
+2509,MA-09,MA,Massachusetts,2026,TBD,William Keating,D,William Keating,Robert MacAllister,D,60.1,39.9,-20.2,97.3,2.7,N/A,N/A,0.71,0.001,N/A,N/A
+2601,MI-01,MI,Michigan,2026,TBD,Jack Bergman,R,Callie Barr,Jack Bergman,R,42.1,57.9,15.8,6.6,93.4,N/A,N/A,0.27,0.7,N/A,N/A
+2602,MI-02,MI,Michigan,2026,TBD,John R. Moolenaar,R,Benjamin Ambrose,John Moolenaar,R,36.3,63.7,27.4,0.4,99.6,N/A,N/A,0.001,0.73,N/A,N/A
 2603,MI-03,MI,Michigan,2026,TBD,Hillary J. Scholten,D,Hillary Scholten,J Fiorletta,D,58.75,41.25,-17.5,95.3,4.7,N/A,N/A,N/A,N/A,N/A,N/A
 2604,MI-04,MI,Michigan,2026,TBD,Bill Huizenga,R,Sean Mccann,William Huizenga,R,48.75,51.25,2.5,40.5,59.5,N/A,N/A,N/A,N/A,N/A,N/A
-2605,MI-05,MI,Michigan,2026,TBD,Tim Walberg,R,Christian Vukasovich,Tim Walberg,R,37.6,62.4,24.8,0.9,99.1,N/A,N/A,N/A,N/A,N/A,N/A
-2606,MI-06,MI,Michigan,2026,TBD,Debbie Dingell,D,Debbie Dingell,Generic Republican,D,66.85,33.15,-33.7,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
+2605,MI-05,MI,Michigan,2026,TBD,Tim Walberg,R,Christian Vukasovich,Tim Walberg,R,37.6,62.4,24.8,0.9,99.1,N/A,N/A,0.025,0.69,N/A,N/A
+2606,MI-06,MI,Michigan,2026,TBD,Debbie Dingell,D,Debbie Dingell,Generic Republican,D,66.85,33.15,-33.7,99.9,0.1,N/A,N/A,0.7,0.001,N/A,N/A
 2607,MI-07,MI,Michigan,2026,TBD,Tom Barrett,R,Bridget Brink,Thomas Barrett,R,51.65,48.35,-3.3,62.5,37.5,N/A,N/A,N/A,N/A,N/A,N/A
 2608,MI-08,MI,Michigan,2026,TBD,Kristen McDonald Rivet,D,Kristen McDonald Rivet,Amir Hassan,D,55.15,44.85,-10.3,83.7,16.3,N/A,N/A,N/A,N/A,N/A,N/A
-2609,MI-09,MI,Michigan,2026,TBD,Lisa C. McClain,R,Steven Pooley,Lisa Mcclain,R,34.55,65.45,30.9,0.2,99.8,N/A,N/A,N/A,N/A,N/A,N/A
+2609,MI-09,MI,Michigan,2026,TBD,Lisa C. McClain,R,Steven Pooley,Lisa Mcclain,R,34.55,65.45,30.9,0.2,99.8,N/A,N/A,0.001,0.92,N/A,N/A
 2610,MI-10,MI,Michigan,2026,TBD,John James,R,Eric Chung,Robert Lulgjuraj,None,50.65,49.35,-1.3,54.9,45.1,N/A,N/A,N/A,N/A,N/A,N/A
-2611,MI-11,MI,Michigan,2026,TBD,Haley M. Stevens,D,Jeremy Moss,Mike Steger,None,62.55,37.45,-25.1,99.2,0.8,N/A,N/A,N/A,N/A,N/A,N/A
-2612,MI-12,MI,Michigan,2026,TBD,Rashida Tlaib,D,Rashida Tlaib,Generic Republican,D,76.5,23.5,-53.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2613,MI-13,MI,Michigan,2026,TBD,Shri Thanedar,D,Shri Thanedar,Andrew Lorenz,D,76.35,23.65,-52.7,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2701,MN-01,MN,Minnesota,2026,TBD,Brad Finstad,R,Jacob Johnson,Brad Finstad,R,45.55,54.45,8.9,19.8,80.2,N/A,N/A,N/A,N/A,N/A,N/A
+2611,MI-11,MI,Michigan,2026,TBD,Haley M. Stevens,D,Jeremy Moss,Mike Steger,None,62.55,37.45,-25.1,99.2,0.8,N/A,N/A,0.75,0.03,N/A,N/A
+2612,MI-12,MI,Michigan,2026,TBD,Rashida Tlaib,D,Rashida Tlaib,Generic Republican,D,76.5,23.5,-53.0,100,0,N/A,N/A,0.71,0.001,N/A,N/A
+2613,MI-13,MI,Michigan,2026,TBD,Shri Thanedar,D,Shri Thanedar,Andrew Lorenz,D,76.35,23.65,-52.7,100,0,N/A,N/A,0.75,0.001,N/A,N/A
+2701,MN-01,MN,Minnesota,2026,TBD,Brad Finstad,R,Jacob Johnson,Brad Finstad,R,45.55,54.45,8.9,19.8,80.2,N/A,N/A,0.32,0.67,N/A,N/A
 2702,MN-02,MN,Minnesota,2026,TBD,Angie Craig,D,Matt Little,Tyler Kistner,None,56.6,43.4,-13.2,89.6,10.4,N/A,N/A,N/A,N/A,N/A,N/A
-2703,MN-03,MN,Minnesota,2026,TBD,Kelly Morrison,D,Kelly Morrison,Tyler Bass,D,68.3,31.7,-36.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2704,MN-04,MN,Minnesota,2026,TBD,Betty McCollum,D,Betty McCollum,Paul Wikstrom,D,72.7,27.3,-45.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2705,MN-05,MN,Minnesota,2026,TBD,Ilhan Omar,D,Ilhan Omar,Dalia Al-Aqidi,D,84,16,-68.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2706,MN-06,MN,Minnesota,2026,TBD,Tom Emmer,R,Generic Democrat,Tom Emmer,R,38.5,61.5,23.0,1.4,98.6,N/A,N/A,N/A,N/A,N/A,N/A
-2707,MN-07,MN,Minnesota,2026,TBD,Michelle Fischbach,R,Generic Democrat,Michelle Fischbach,R,30.9,69.1,38.2,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2708,MN-08,MN,Minnesota,2026,TBD,Pete Stauber,R,Generic Democrat,Peter Stauber,R,42.05,57.95,15.9,6.4,93.6,N/A,N/A,N/A,N/A,N/A,N/A
-2801,MS-01,MS,Mississippi,2026,TBD,Trent Kelly,R,Cliff Johnson,Trent Kelly,R,35,65,30.0,0.2,99.8,N/A,N/A,N/A,N/A,N/A,N/A
-2802,MS-02,MS,Mississippi,2026,TBD,Bennie G. Thompson,D,Bennie Thompson,Ron Eller,D,66.05,33.95,-32.1,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
-2803,MS-03,MS,Mississippi,2026,TBD,Michael Guest,R,Michael Chiaradio,Michael Guest,R,35.55,64.45,28.9,0.3,99.7,N/A,N/A,N/A,N/A,N/A,N/A
-2804,MS-04,MS,Mississippi,2026,TBD,Mike Ezell,R,Jeffrey Hulum,Mike Ezell,R,30.75,69.25,38.5,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2901,MO-01,MO,Missouri,2026,TBD,Wesley Bell,D,Wesley Bell,Generic Republican,D,82.8,17.2,-65.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-2902,MO-02,MO,Missouri,2026,TBD,Ann Wagner,R,Frederick Wellman,Ann Wagner,R,46.6,53.4,6.8,25.9,74.1,N/A,N/A,N/A,N/A,N/A,N/A
-2903,MO-03,MO,Missouri,2026,TBD,"Robert F. Onder, Jr.",R,Bethany Mann,Robert Onder,None,37.85,62.15,24.3,1,99,N/A,N/A,N/A,N/A,N/A,N/A
-2904,MO-04,MO,Missouri,2026,TBD,Mark Alford,R,Hartzell Gray,Mark Alford,R,29.85,70.15,40.3,0,100,N/A,N/A,N/A,N/A,N/A,N/A
+2703,MN-03,MN,Minnesota,2026,TBD,Kelly Morrison,D,Kelly Morrison,Tyler Bass,D,68.3,31.7,-36.6,100,0,N/A,N/A,0.7,0.001,N/A,N/A
+2704,MN-04,MN,Minnesota,2026,TBD,Betty McCollum,D,Betty McCollum,Paul Wikstrom,D,72.7,27.3,-45.4,100,0,N/A,N/A,0.86,0.002,N/A,N/A
+2705,MN-05,MN,Minnesota,2026,TBD,Ilhan Omar,D,Ilhan Omar,Dalia Al-Aqidi,D,84,16,-68.0,100,0,N/A,N/A,0.91,0.001,N/A,N/A
+2706,MN-06,MN,Minnesota,2026,TBD,Tom Emmer,R,Generic Democrat,Tom Emmer,R,38.5,61.5,23.0,1.4,98.6,N/A,N/A,0.12,0.38,N/A,N/A
+2707,MN-07,MN,Minnesota,2026,TBD,Michelle Fischbach,R,Generic Democrat,Michelle Fischbach,R,30.9,69.1,38.2,0,100,N/A,N/A,0.002,0.69,N/A,N/A
+2708,MN-08,MN,Minnesota,2026,TBD,Pete Stauber,R,Generic Democrat,Peter Stauber,R,42.05,57.95,15.9,6.4,93.6,N/A,N/A,0.27,0.7,N/A,N/A
+2801,MS-01,MS,Mississippi,2026,TBD,Trent Kelly,R,Cliff Johnson,Trent Kelly,R,35,65,30.0,0.2,99.8,N/A,N/A,0.001,0.73,N/A,N/A
+2802,MS-02,MS,Mississippi,2026,TBD,Bennie G. Thompson,D,Bennie Thompson,Ron Eller,D,66.05,33.95,-32.1,99.9,0.1,N/A,N/A,0.84,0.13,N/A,N/A
+2803,MS-03,MS,Mississippi,2026,TBD,Michael Guest,R,Michael Chiaradio,Michael Guest,R,35.55,64.45,28.9,0.3,99.7,N/A,N/A,0.001,0.94,N/A,N/A
+2804,MS-04,MS,Mississippi,2026,TBD,Mike Ezell,R,Jeffrey Hulum,Mike Ezell,R,30.75,69.25,38.5,0,100,N/A,N/A,0.001,0.6,N/A,N/A
+2901,MO-01,MO,Missouri,2026,TBD,Wesley Bell,D,Wesley Bell,Generic Republican,D,82.8,17.2,-65.6,100,0,N/A,N/A,0.71,0.002,N/A,N/A
+2902,MO-02,MO,Missouri,2026,TBD,Ann Wagner,R,Frederick Wellman,Ann Wagner,R,46.6,53.4,6.8,25.9,74.1,N/A,N/A,0.19,0.78,N/A,N/A
+2903,MO-03,MO,Missouri,2026,TBD,"Robert F. Onder, Jr.",R,Bethany Mann,Robert Onder,None,37.85,62.15,24.3,1,99,N/A,N/A,0.001,0.7,N/A,N/A
+2904,MO-04,MO,Missouri,2026,TBD,Mark Alford,R,Hartzell Gray,Mark Alford,R,29.85,70.15,40.3,0,100,N/A,N/A,0.001,0.86,N/A,N/A
 2905,MO-05,MO,Missouri,2026,TBD,Emanuel Cleaver,D,Emanuel Cleaver,Bradley Patty,D,65.35,34.65,-30.7,99.8,0.2,N/A,N/A,N/A,N/A,N/A,N/A
-2906,MO-06,MO,Missouri,2026,TBD,Sam Graves,R,Matthew Levine,Sam Graves,R,30.8,69.2,38.4,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2907,MO-07,MO,Missouri,2026,TBD,Eric Burlison,R,Missi Hesketh,Eric Burlison,R,29.15,70.85,41.7,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-2908,MO-08,MO,Missouri,2026,TBD,Jason Smith,R,Clayton Harbison,Jason Smith,R,23.4,76.6,53.2,0,100,N/A,N/A,N/A,N/A,N/A,N/A
+2906,MO-06,MO,Missouri,2026,TBD,Sam Graves,R,Matthew Levine,Sam Graves,R,30.8,69.2,38.4,0,100,N/A,N/A,0.001,0.8,N/A,N/A
+2907,MO-07,MO,Missouri,2026,TBD,Eric Burlison,R,Missi Hesketh,Eric Burlison,R,29.15,70.85,41.7,0,100,N/A,N/A,0.02,0.72,N/A,N/A
+2908,MO-08,MO,Missouri,2026,TBD,Jason Smith,R,Clayton Harbison,Jason Smith,R,23.4,76.6,53.2,0,100,N/A,N/A,0.01,0.71,N/A,N/A
 3001,MT-01,MT,Montana,2026,TBD,Ryan Zinke,R,Russell Cleveland,Aaron Flint,None,48.25,51.75,3.5,36.8,63.2,N/A,N/A,N/A,N/A,N/A,N/A
-3002,MT-02,MT,Montana,2026,TBD,Troy Downing,R,Brian Miller,Troy Downing,R,36.55,63.45,26.9,0.5,99.5,N/A,N/A,N/A,N/A,N/A,N/A
-3101,NE-01,NE,Nebraska,2026,TBD,Mike Flood,R,Christopher Backemeyer,Mike Flood,R,43.15,56.85,13.7,9.5,90.5,N/A,N/A,N/A,N/A,N/A,N/A
+3002,MT-02,MT,Montana,2026,TBD,Troy Downing,R,Brian Miller,Troy Downing,R,36.55,63.45,26.9,0.5,99.5,N/A,N/A,0.001,0.82,N/A,N/A
+3101,NE-01,NE,Nebraska,2026,TBD,Mike Flood,R,Christopher Backemeyer,Mike Flood,R,43.15,56.85,13.7,9.5,90.5,N/A,N/A,0.1,0.79,N/A,N/A
 3102,NE-02,NE,Nebraska,2026,TBD,Don Bacon,R,Denise Powell,Brinker Harding,None,53.9,46.1,-7.8,77.1,22.9,N/A,N/A,N/A,N/A,N/A,N/A
-3103,NE-03,NE,Nebraska,2026,TBD,Adrian Smith,R,Becky Stille,Adrian Smith,R,22.55,77.45,54.9,0,100,N/A,N/A,N/A,N/A,N/A,N/A
+3103,NE-03,NE,Nebraska,2026,TBD,Adrian Smith,R,Becky Stille,Adrian Smith,R,22.55,77.45,54.9,0,100,N/A,N/A,0.031,0.938,N/A,N/A
 3201,NV-01,NV,Nevada,2026,TBD,Dina Titus,D,Dina Titus,Carrie Buck,D,55.4,44.6,-10.8,85,15,N/A,N/A,N/A,N/A,N/A,N/A
-3202,NV-02,NV,Nevada,2026,TBD,Mark E. Amodei,R,Matthew Fonken,Mark Amodei,R,41,59,18.0,4.2,95.8,N/A,N/A,N/A,N/A,N/A,N/A
+3202,NV-02,NV,Nevada,2026,TBD,Mark E. Amodei,R,Matthew Fonken,Mark Amodei,R,41,59,18.0,4.2,95.8,N/A,N/A,0.07,0.61,N/A,N/A
 3203,NV-03,NV,Nevada,2026,TBD,Susie Lee,D,Susie Lee,Marty O'Donnell,D,53.55,46.45,-7.1,75,25,N/A,N/A,N/A,N/A,N/A,N/A
 3204,NV-04,NV,Nevada,2026,TBD,Steven Horsford,D,Steven Horsford,David Flippo,D,55.75,44.25,-11.5,86.4,13.6,N/A,N/A,N/A,N/A,N/A,N/A
 3301,NH-01,NH,New Hampshire,2026,TBD,Chris Pappas,D,Chris Pappas,Anthony Dilorenzo,D,55.9,44.1,-11.8,87,13,N/A,N/A,N/A,N/A,N/A,N/A
-3302,NH-02,NH,New Hampshire,2026,TBD,Maggie Goodlander,D,Maggie Goodlander,Lily Williams,D,56.6,43.4,-13.2,89.7,10.3,N/A,N/A,N/A,N/A,N/A,N/A
-3401,NJ-01,NJ,New Jersey,2026,TBD,Donald Norcross,D,Donald Norcross,Generic Republican,D,65.3,34.7,-30.6,99.8,0.2,N/A,N/A,N/A,N/A,N/A,N/A
-3402,NJ-02,NJ,New Jersey,2026,TBD,Jeff Van Drew,R,Bayly Winder,Jeff Van Drew,R,47.85,52.15,4.3,34,66,N/A,N/A,N/A,N/A,N/A,N/A
-3403,NJ-03,NJ,New Jersey,2026,TBD,"Herbert C. Conaway, Jr.",D,Herb Conaway,Jason Cullen,None,60.05,39.95,-20.1,97.3,2.7,N/A,N/A,N/A,N/A,N/A,N/A
-3404,NJ-04,NJ,New Jersey,2026,TBD,Christopher Smith,R,Nicholas Small,Christopher Smith,R,38.3,61.7,23.4,1.3,98.7,N/A,N/A,N/A,N/A,N/A,N/A
+3302,NH-02,NH,New Hampshire,2026,TBD,Maggie Goodlander,D,Maggie Goodlander,Lily Williams,D,56.6,43.4,-13.2,89.7,10.3,N/A,N/A,0.9,0.002,N/A,N/A
+3401,NJ-01,NJ,New Jersey,2026,TBD,Donald Norcross,D,Donald Norcross,Generic Republican,D,65.3,34.7,-30.6,99.8,0.2,N/A,N/A,0.71,0.001,N/A,N/A
+3402,NJ-02,NJ,New Jersey,2026,TBD,Jeff Van Drew,R,Bayly Winder,Jeff Van Drew,R,47.85,52.15,4.3,34,66,N/A,N/A,0.24,0.58,N/A,N/A
+3403,NJ-03,NJ,New Jersey,2026,TBD,"Herbert C. Conaway, Jr.",D,Herb Conaway,Jason Cullen,None,60.05,39.95,-20.1,97.3,2.7,N/A,N/A,0.89,0.01,N/A,N/A
+3404,NJ-04,NJ,New Jersey,2026,TBD,Christopher Smith,R,Nicholas Small,Christopher Smith,R,38.3,61.7,23.4,1.3,98.7,N/A,N/A,0.001,0.9,N/A,N/A
 3405,NJ-05,NJ,New Jersey,2026,TBD,Josh Gottheimer,D,Josh Gottheimer,Mary Guinchard,D,58.9,41.1,-17.8,95.6,4.4,N/A,N/A,N/A,N/A,N/A,N/A
-3406,NJ-06,NJ,New Jersey,2026,TBD,"Frank Pallone, Jr.",D,Frank Pallone,Hillary Herzig,None,62.1,37.9,-24.2,99,1,N/A,N/A,N/A,N/A,N/A,N/A
+3406,NJ-06,NJ,New Jersey,2026,TBD,"Frank Pallone, Jr.",D,Frank Pallone,Hillary Herzig,None,62.1,37.9,-24.2,99,1,N/A,N/A,0.65,0.001,N/A,N/A
 3407,NJ-07,NJ,New Jersey,2026,TBD,"Thomas H. Kean, Jr.",R,Rebecca Bennett,Thomas Kean,None,53.7,46.3,-7.4,76.1,23.9,N/A,N/A,N/A,N/A,N/A,N/A
-3408,NJ-08,NJ,New Jersey,2026,TBD,Robert Menendez,D,Robert Menendez,Generic Republican,D,70.95,29.05,-41.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
+3408,NJ-08,NJ,New Jersey,2026,TBD,Robert Menendez,D,Robert Menendez,Generic Republican,D,70.95,29.05,-41.9,100,0,N/A,N/A,0.71,0.007,N/A,N/A
 3409,NJ-09,NJ,New Jersey,2026,TBD,Nellie Pou,D,Nellie Pou,Rosemary Pino,D,57.75,42.25,-15.5,93.1,6.9,N/A,N/A,N/A,N/A,N/A,N/A
-3410,NJ-10,NJ,New Jersey,2026,TBD,LaMonica McIver,D,LaMonica McIver,Carmen Bucco,D,83,17,-66.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3411,NJ-11,NJ,New Jersey,2026,TBD,Mikie Sherill,D,TBD,Joe Hathaway,None,60.2,39.8,-20.4,97.4,2.6,N/A,N/A,N/A,N/A,N/A,N/A
-3412,NJ-12,NJ,New Jersey,2026,TBD,Bonnie Watson Coleman,D,Brad Cohen,Gregg Mele,None,68.25,31.75,-36.5,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3501,NM-01,NM,New Mexico,2026,TBD,Melanie A. Stansbury,D,Melanie Stansbury,Steve Jones,D,61.3,38.7,-22.6,98.5,1.5,N/A,N/A,N/A,N/A,N/A,N/A
+3410,NJ-10,NJ,New Jersey,2026,TBD,LaMonica McIver,D,LaMonica McIver,Carmen Bucco,D,83,17,-66.0,100,0,N/A,N/A,0.73,0.001,N/A,N/A
+3411,NJ-11,NJ,New Jersey,2026,TBD,Mikie Sherill,D,TBD,Joe Hathaway,None,60.2,39.8,-20.4,97.4,2.6,N/A,N/A,0.86,0.002,N/A,N/A
+3412,NJ-12,NJ,New Jersey,2026,TBD,Bonnie Watson Coleman,D,Brad Cohen,Gregg Mele,None,68.25,31.75,-36.5,100,0,N/A,N/A,0.942,0.001,N/A,N/A
+3501,NM-01,NM,New Mexico,2026,TBD,Melanie A. Stansbury,D,Melanie Stansbury,Steve Jones,D,61.3,38.7,-22.6,98.5,1.5,N/A,N/A,0.7,0.002,N/A,N/A
 3502,NM-02,NM,New Mexico,2026,TBD,Gabe Vasquez,D,Gabriel Vasquez,Jose Orozco,D,55.55,44.45,-11.1,85.5,14.5,N/A,N/A,N/A,N/A,N/A,N/A
-3503,NM-03,NM,New Mexico,2026,TBD,Teresa Leger Fernandez,D,Teresa Leger Fernandez,Martin Zamora,D,58.7,41.3,-17.4,95.2,4.8,N/A,N/A,N/A,N/A,N/A,N/A
-3601,NY-01,NY,New York,2026,TBD,Nick LaLota,R,Christopher Gallant,Nick LaLota,R,47.4,52.6,5.2,30.9,69.1,N/A,N/A,N/A,N/A,N/A,N/A
-3602,NY-02,NY,New York,2026,TBD,Andrew Garbarino,R,Patrick Halpin,Andrew Garbarino,R,45.05,54.95,9.9,17.3,82.7,N/A,N/A,N/A,N/A,N/A,N/A
+3503,NM-03,NM,New Mexico,2026,TBD,Teresa Leger Fernandez,D,Teresa Leger Fernandez,Martin Zamora,D,58.7,41.3,-17.4,95.2,4.8,N/A,N/A,0.68,0.01,N/A,N/A
+3601,NY-01,NY,New York,2026,TBD,Nick LaLota,R,Christopher Gallant,Nick LaLota,R,47.4,52.6,5.2,30.9,69.1,N/A,N/A,0.3,0.68,N/A,N/A
+3602,NY-02,NY,New York,2026,TBD,Andrew Garbarino,R,Patrick Halpin,Andrew Garbarino,R,45.05,54.95,9.9,17.3,82.7,N/A,N/A,0.18,0.78,N/A,N/A
 3603,NY-03,NY,New York,2026,TBD,Thomas Suozzi,D,Thomas Suozzi,Gregory Hach,D,53.9,46.1,-7.8,77.1,22.9,N/A,N/A,N/A,N/A,N/A,N/A
 3604,NY-04,NY,New York,2026,TBD,Laura Gillen,D,Laura Gillen,Marvin Suber Williams,D,56.35,43.65,-12.7,88.9,11.1,N/A,N/A,N/A,N/A,N/A,N/A
-3605,NY-05,NY,New York,2026,TBD,Gregory Meeks,D,Gregory Meeks,Aaron Cherry,D,78.45,21.55,-56.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3606,NY-06,NY,New York,2026,TBD,Grace Meng,D,Grace Meng,Juan Pagan,D,62.8,37.2,-25.6,99.3,0.7,N/A,N/A,N/A,N/A,N/A,N/A
-3607,NY-07,NY,New York,2026,TBD,Nydia Velázquez,D,Antonio Reynoso,Generic Republican,None,79.05,20.95,-58.1,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3608,NY-08,NY,New York,2026,TBD,Hakeem S. Jeffries,D,Hakeem Jeffries,Richard Simmons,D,79.75,20.25,-59.5,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3609,NY-09,NY,New York,2026,TBD,Yvette D. Clarke,D,Yvette Clarke,Jean Depalis,D,76.8,23.2,-53.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3610,NY-10,NY,New York,2026,TBD,Daniel S. Goldman,D,Daniel Goldman,Gavin Solomon,D,86.5,13.5,-73.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3611,NY-11,NY,New York,2026,TBD,Nicole Malliotakis,R,Troy Mcghie,Nicole Malliotakis,R,40.2,59.8,19.6,3,97,N/A,N/A,N/A,N/A,N/A,N/A
-3612,NY-12,NY,New York,2026,TBD,Jerry Nadler,D,Alexander Bores,Amy Jordan,None,86.7,13.3,-73.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3613,NY-13,NY,New York,2026,TBD,Adriano Espaillat,D,Adriano Espaillat,Generic Republican,D,87.4,12.6,-74.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3614,NY-14,NY,New York,2026,TBD,Alexandria Ocasio-Cortez,D,Alexandria Ocasio-Cortez,Tina Forte,D,74.3,25.7,-48.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3615,NY-15,NY,New York,2026,TBD,Ritchie Torres,D,Ritchie Torres,Generic Republican,D,82.8,17.2,-65.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3616,NY-16,NY,New York,2026,TBD,George Latimer,D,George Latimer,Generic Republican,D,72.25,27.75,-44.5,100,0,N/A,N/A,N/A,N/A,N/A,N/A
+3605,NY-05,NY,New York,2026,TBD,Gregory Meeks,D,Gregory Meeks,Aaron Cherry,D,78.45,21.55,-56.9,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+3606,NY-06,NY,New York,2026,TBD,Grace Meng,D,Grace Meng,Juan Pagan,D,62.8,37.2,-25.6,99.3,0.7,N/A,N/A,0.7,0.001,N/A,N/A
+3607,NY-07,NY,New York,2026,TBD,Nydia Velázquez,D,Antonio Reynoso,Generic Republican,None,79.05,20.95,-58.1,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+3608,NY-08,NY,New York,2026,TBD,Hakeem S. Jeffries,D,Hakeem Jeffries,Richard Simmons,D,79.75,20.25,-59.5,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+3609,NY-09,NY,New York,2026,TBD,Yvette D. Clarke,D,Yvette Clarke,Jean Depalis,D,76.8,23.2,-53.6,100,0,N/A,N/A,0.83,0.001,N/A,N/A
+3610,NY-10,NY,New York,2026,TBD,Daniel S. Goldman,D,Daniel Goldman,Gavin Solomon,D,86.5,13.5,-73.0,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+3611,NY-11,NY,New York,2026,TBD,Nicole Malliotakis,R,Troy Mcghie,Nicole Malliotakis,R,40.2,59.8,19.6,3,97,N/A,N/A,0.1,0.86,N/A,N/A
+3612,NY-12,NY,New York,2026,TBD,Jerry Nadler,D,Alexander Bores,Amy Jordan,None,86.7,13.3,-73.4,100,0,N/A,N/A,0.83,0.001,N/A,N/A
+3613,NY-13,NY,New York,2026,TBD,Adriano Espaillat,D,Adriano Espaillat,Generic Republican,D,87.4,12.6,-74.8,100,0,N/A,N/A,0.98,0.001,N/A,N/A
+3614,NY-14,NY,New York,2026,TBD,Alexandria Ocasio-Cortez,D,Alexandria Ocasio-Cortez,Tina Forte,D,74.3,25.7,-48.6,100,0,N/A,N/A,0.77,0.001,N/A,N/A
+3615,NY-15,NY,New York,2026,TBD,Ritchie Torres,D,Ritchie Torres,Generic Republican,D,82.8,17.2,-65.6,100,0,N/A,N/A,0.72,0.01,N/A,N/A
+3616,NY-16,NY,New York,2026,TBD,George Latimer,D,George Latimer,Generic Republican,D,72.25,27.75,-44.5,100,0,N/A,N/A,0.81,0.001,N/A,N/A
 3617,NY-17,NY,New York,2026,TBD,Michael Lawler,R,Peter Chatzky,Mike Lawler,R,52.65,47.35,-5.3,69.5,30.5,N/A,N/A,N/A,N/A,N/A,N/A
 3618,NY-18,NY,New York,2026,TBD,Patrick Ryan,D,Patrick Ryan,Sharanjit Thind,D,57.8,42.2,-15.6,93.2,6.8,N/A,N/A,N/A,N/A,N/A,N/A
 3619,NY-19,NY,New York,2026,TBD,Josh Riley,D,Josh Riley,Peter Oberacker,D,54.15,45.85,-8.3,78.8,21.2,N/A,N/A,N/A,N/A,N/A,N/A
-3620,NY-20,NY,New York,2026,TBD,Paul Tonko,D,Paul Tonko,Ralph Ambrosio,D,61.85,38.15,-23.7,98.8,1.2,N/A,N/A,N/A,N/A,N/A,N/A
-3621,NY-21,NY,New York,2026,TBD,Elise Stefanik,R,Blake Gendebien,Anthony Constantino,None,42.4,57.6,15.2,7.3,92.7,N/A,N/A,N/A,N/A,N/A,N/A
+3620,NY-20,NY,New York,2026,TBD,Paul Tonko,D,Paul Tonko,Ralph Ambrosio,D,61.85,38.15,-23.7,98.8,1.2,N/A,N/A,0.95,0.001,N/A,N/A
+3621,NY-21,NY,New York,2026,TBD,Elise Stefanik,R,Blake Gendebien,Anthony Constantino,None,42.4,57.6,15.2,7.3,92.7,N/A,N/A,0.24,0.73,N/A,N/A
 3622,NY-22,NY,New York,2026,TBD,John W. Mannion,D,John Mannion,John Lemondes,D,57.75,42.25,-15.5,93.1,6.9,N/A,N/A,N/A,N/A,N/A,N/A
-3623,NY-23,NY,New York,2026,TBD,Nicholas A. Langworthy,R,Aaron Gies,Nick Langworthy,R,38.95,61.05,22.1,1.7,98.3,N/A,N/A,N/A,N/A,N/A,N/A
-3624,NY-24,NY,New York,2026,TBD,Claudia Tenney,R,Alissa Ellman,Claudia Tenney,R,38.4,61.6,23.2,1.3,98.7,N/A,N/A,N/A,N/A,N/A,N/A
-3625,NY-25,NY,New York,2026,TBD,Joseph D. Morelle,D,Joseph Morelle,Virginia Mcintyre,D,63.3,36.7,-26.6,99.5,0.5,N/A,N/A,N/A,N/A,N/A,N/A
-3626,NY-26,NY,New York,2026,TBD,Timothy Kennedy,D,Timothy Kennedy,Generic Republican,D,65.6,34.4,-31.2,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
+3623,NY-23,NY,New York,2026,TBD,Nicholas A. Langworthy,R,Aaron Gies,Nick Langworthy,R,38.95,61.05,22.1,1.7,98.3,N/A,N/A,0.11,0.85,N/A,N/A
+3624,NY-24,NY,New York,2026,TBD,Claudia Tenney,R,Alissa Ellman,Claudia Tenney,R,38.4,61.6,23.2,1.3,98.7,N/A,N/A,0.14,0.85,N/A,N/A
+3625,NY-25,NY,New York,2026,TBD,Joseph D. Morelle,D,Joseph Morelle,Virginia Mcintyre,D,63.3,36.7,-26.6,99.5,0.5,N/A,N/A,0.72,0.001,N/A,N/A
+3626,NY-26,NY,New York,2026,TBD,Timothy Kennedy,D,Timothy Kennedy,Generic Republican,D,65.6,34.4,-31.2,99.9,0.1,N/A,N/A,0.69,0.001,N/A,N/A
 3701,NC-01,NC,North Carolina,2026,TBD,Donald Davis,D,Don Davis,Laurie Buckhout,D,49.3,50.7,1.4,44.7,55.3,N/A,N/A,N/A,N/A,N/A,N/A
-3702,NC-02,NC,North Carolina,2026,TBD,Deborah Ross,D,Deborah Ross,Eugene Douglass,D,72,28,-44.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3703,NC-03,NC,North Carolina,2026,TBD,Gregory Murphy,R,Raymond Smith,Gregory Murphy,R,42.75,57.25,14.5,8.3,91.7,N/A,N/A,N/A,N/A,N/A,N/A
-3704,NC-04,NC,North Carolina,2026,TBD,Valerie Foushee,D,Valerie Foushee,Mahesh Ganorkar,D,77.35,22.65,-54.7,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3705,NC-05,NC,North Carolina,2026,TBD,Virginia Foxx,R,Chuck Hubbard,Virginia Foxx,R,43.45,56.55,13.1,10.5,89.5,N/A,N/A,N/A,N/A,N/A,N/A
-3706,NC-06,NC,North Carolina,2026,TBD,Addison McDowell,R,Cyril Jefferson,Addison McDowell,R,40.5,59.5,19.0,3.4,96.6,N/A,N/A,N/A,N/A,N/A,N/A
-3707,NC-07,NC,North Carolina,2026,TBD,David Rouzer,R,Kimberly Hardy,David Rouzer,R,45.4,54.6,9.2,19,81,N/A,N/A,N/A,N/A,N/A,N/A
-3708,NC-08,NC,North Carolina,2026,TBD,Mark Harris,R,Colby Watson,Mark Harris,R,43,57,14.0,9,91,N/A,N/A,N/A,N/A,N/A,N/A
-3709,NC-09,NC,North Carolina,2026,TBD,Richard Hudson,R,Richard Ojeda,Richard Hudson,R,45,55,10.0,17,83,N/A,N/A,N/A,N/A,N/A,N/A
-3710,NC-10,NC,North Carolina,2026,TBD,Pat Harrigan,R,Ashley Bell,Pat Harrigan,R,43.4,56.6,13.2,10.3,89.7,N/A,N/A,N/A,N/A,N/A,N/A
+3702,NC-02,NC,North Carolina,2026,TBD,Deborah Ross,D,Deborah Ross,Eugene Douglass,D,72,28,-44.0,100,0,N/A,N/A,0.74,0.02,N/A,N/A
+3703,NC-03,NC,North Carolina,2026,TBD,Gregory Murphy,R,Raymond Smith,Gregory Murphy,R,42.75,57.25,14.5,8.3,91.7,N/A,N/A,0.04,0.64,N/A,N/A
+3704,NC-04,NC,North Carolina,2026,TBD,Valerie Foushee,D,Valerie Foushee,Mahesh Ganorkar,D,77.35,22.65,-54.7,100,0,N/A,N/A,0.93,0.001,N/A,N/A
+3705,NC-05,NC,North Carolina,2026,TBD,Virginia Foxx,R,Chuck Hubbard,Virginia Foxx,R,43.45,56.55,13.1,10.5,89.5,N/A,N/A,0.01,0.64,N/A,N/A
+3706,NC-06,NC,North Carolina,2026,TBD,Addison McDowell,R,Cyril Jefferson,Addison McDowell,R,40.5,59.5,19.0,3.4,96.6,N/A,N/A,0.08,0.58,N/A,N/A
+3707,NC-07,NC,North Carolina,2026,TBD,David Rouzer,R,Kimberly Hardy,David Rouzer,R,45.4,54.6,9.2,19,81,N/A,N/A,0.03,0.68,N/A,N/A
+3708,NC-08,NC,North Carolina,2026,TBD,Mark Harris,R,Colby Watson,Mark Harris,R,43,57,14.0,9,91,N/A,N/A,0.01,0.54,N/A,N/A
+3709,NC-09,NC,North Carolina,2026,TBD,Richard Hudson,R,Richard Ojeda,Richard Hudson,R,45,55,10.0,17,83,N/A,N/A,0.03,0.55,N/A,N/A
+3710,NC-10,NC,North Carolina,2026,TBD,Pat Harrigan,R,Ashley Bell,Pat Harrigan,R,43.4,56.6,13.2,10.3,89.7,N/A,N/A,0.01,0.01,N/A,N/A
 3711,NC-11,NC,North Carolina,2026,TBD,Chuck Edwards,R,Jamie Ager,Chuck Edwards,R,47.65,52.35,4.7,32.5,67.5,N/A,N/A,N/A,N/A,N/A,N/A
-3712,NC-12,NC,North Carolina,2026,TBD,Alma S. Adams,D,Alma Adams,Jack Codiga,D,78.05,21.95,-56.1,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3713,NC-13,NC,North Carolina,2026,TBD,Brad Knott,R,Paul Barringer,Brad Knott,R,44.45,55.55,11.1,14.3,85.7,N/A,N/A,N/A,N/A,N/A,N/A
-3714,NC-14,NC,North Carolina,2026,TBD,Tim Moore,R,Lakesha Womack,Tim Moore,R,44.2,55.8,11.6,13.3,86.7,N/A,N/A,N/A,N/A,N/A,N/A
+3712,NC-12,NC,North Carolina,2026,TBD,Alma S. Adams,D,Alma Adams,Jack Codiga,D,78.05,21.95,-56.1,100,0,N/A,N/A,0.81,0.001,N/A,N/A
+3713,NC-13,NC,North Carolina,2026,TBD,Brad Knott,R,Paul Barringer,Brad Knott,R,44.45,55.55,11.1,14.3,85.7,N/A,N/A,0.11,0.86,N/A,N/A
+3714,NC-14,NC,North Carolina,2026,TBD,Tim Moore,R,Lakesha Womack,Tim Moore,R,44.2,55.8,11.6,13.3,86.7,N/A,N/A,0.17,0.8,N/A,N/A
 3801,ND-01,ND,North Dakota,2026,TBD,Julie Fedorchak,R,Trygve Hammer,Julie Fedorchak,R,29.45,70.55,41.1,0,100,N/A,N/A,N/A,N/A,N/A,N/A
 3901,OH-01,OH,Ohio,2026,TBD,Greg Landsman,D,Greg Landsman,Eric Conroy,D,53.15,46.85,-6.3,72.6,27.4,N/A,N/A,N/A,N/A,N/A,N/A
-3902,OH-02,OH,Ohio,2026,TBD,David J. Taylor,R,Todd Wilson,David Taylor,R,31.2,68.8,37.6,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-3903,OH-03,OH,Ohio,2026,TBD,Joyce Beatty,D,Joyce Beatty,Generic Republican,D,75.35,24.65,-50.7,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3904,OH-04,OH,Ohio,2026,TBD,Jim Jordan,R,Tamara Wilson,James Jordan,R,31,69,38.0,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-3905,OH-05,OH,Ohio,2026,TBD,Robert E. Latta,R,Daniel Burket,Robert Latta,R,39.5,60.5,21.0,2.2,97.8,N/A,N/A,N/A,N/A,N/A,N/A
-3906,OH-06,OH,Ohio,2026,TBD,Michael A. Rulli,R,Malcolm Ritchie,Michael Rulli,R,35.7,64.3,28.6,0.3,99.7,N/A,N/A,N/A,N/A,N/A,N/A
-3907,OH-07,OH,Ohio,2026,TBD,Max L. Miller,R,Edward Fitzgerald,Max Miller,R,46.5,53.5,7.0,25.1,74.9,N/A,N/A,N/A,N/A,N/A,N/A
-3908,OH-08,OH,Ohio,2026,TBD,Warren Davidson,R,Madaris Grant,Warren Davidson,R,44.3,55.7,11.4,13.8,86.2,N/A,N/A,N/A,N/A,N/A,N/A
+3902,OH-02,OH,Ohio,2026,TBD,David J. Taylor,R,Todd Wilson,David Taylor,R,31.2,68.8,37.6,0,100,N/A,N/A,0.02,0.72,N/A,N/A
+3903,OH-03,OH,Ohio,2026,TBD,Joyce Beatty,D,Joyce Beatty,Generic Republican,D,75.35,24.65,-50.7,100,0,N/A,N/A,0.84,0.001,N/A,N/A
+3904,OH-04,OH,Ohio,2026,TBD,Jim Jordan,R,Tamara Wilson,James Jordan,R,31,69,38.0,0,100,N/A,N/A,0.001,0.82,N/A,N/A
+3905,OH-05,OH,Ohio,2026,TBD,Robert E. Latta,R,Daniel Burket,Robert Latta,R,39.5,60.5,21.0,2.2,97.8,N/A,N/A,0.002,0.68,N/A,N/A
+3906,OH-06,OH,Ohio,2026,TBD,Michael A. Rulli,R,Malcolm Ritchie,Michael Rulli,R,35.7,64.3,28.6,0.3,99.7,N/A,N/A,0.04,0.69,N/A,N/A
+3907,OH-07,OH,Ohio,2026,TBD,Max L. Miller,R,Edward Fitzgerald,Max Miller,R,46.5,53.5,7.0,25.1,74.9,N/A,N/A,0.39,0.59,N/A,N/A
+3908,OH-08,OH,Ohio,2026,TBD,Warren Davidson,R,Madaris Grant,Warren Davidson,R,44.3,55.7,11.4,13.8,86.2,N/A,N/A,0.11,0.86,N/A,N/A
 3909,OH-09,OH,Ohio,2026,TBD,Marcy Kaptur,D,Marcy Kaptur,Derek Merrin,D,50.35,49.65,-0.7,52.5,47.5,N/A,N/A,N/A,N/A,N/A,N/A
-3910,OH-10,OH,Ohio,2026,TBD,Michael Turner,R,Janice Beckett,Michael Turner,R,46.75,53.25,6.5,26.6,73.4,N/A,N/A,N/A,N/A,N/A,N/A
-3911,OH-11,OH,Ohio,2026,TBD,Shontel Brown,D,Shontel Brown,James Hemphill,D,83.5,16.5,-67.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-3912,OH-12,OH,Ohio,2026,TBD,Troy Balderson,R,Jerrad Christian,William Balderson,R,36.7,63.3,26.6,0.5,99.5,N/A,N/A,N/A,N/A,N/A,N/A
+3910,OH-10,OH,Ohio,2026,TBD,Michael Turner,R,Janice Beckett,Michael Turner,R,46.75,53.25,6.5,26.6,73.4,N/A,N/A,0.2,0.79,N/A,N/A
+3911,OH-11,OH,Ohio,2026,TBD,Shontel Brown,D,Shontel Brown,James Hemphill,D,83.5,16.5,-67.0,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+3912,OH-12,OH,Ohio,2026,TBD,Troy Balderson,R,Jerrad Christian,William Balderson,R,36.7,63.3,26.6,0.5,99.5,N/A,N/A,0.001,0.68,N/A,N/A
 3913,OH-13,OH,Ohio,2026,TBD,Emilia Sykes,D,Emilia Sykes,Kevin Coughlin,D,56.05,43.95,-12.1,87.7,12.3,N/A,N/A,N/A,N/A,N/A,N/A
-3914,OH-14,OH,Ohio,2026,TBD,David P. Joyce,R,Carl Setzer,David Joyce,R,41.1,58.9,17.8,4.4,95.6,N/A,N/A,N/A,N/A,N/A,N/A
-3915,OH-15,OH,Ohio,2026,TBD,Mike Carey,R,Adam Miller,Mike Carey,R,47.4,52.6,5.2,30.9,69.1,N/A,N/A,N/A,N/A,N/A,N/A
-4001,OK-01,OK,Oklahoma,2026,TBD,Kevin Hern,R,John Croisant,Kevin Hern,R,39.9,60.1,20.2,2.6,97.4,N/A,N/A,N/A,N/A,N/A,N/A
-4002,OK-02,OK,Oklahoma,2026,TBD,Josh Brecheen,R,Erik Terwey,Josh Brecheen,R,24.75,75.25,50.5,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4003,OK-03,OK,Oklahoma,2026,TBD,Frank D. Lucas,R,Jules Roberson,Frank Lucas,R,25.65,74.35,48.7,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4004,OK-04,OK,Oklahoma,2026,TBD,Tom Cole,R,Mitchell Jacob,Tom Cole,R,34.25,65.75,31.5,0.1,99.9,N/A,N/A,N/A,N/A,N/A,N/A
-4005,OK-05,OK,Oklahoma,2026,TBD,Stephanie I. Bice,R,Jena Nelson,Stephanie Bice,R,42.45,57.55,15.1,7.4,92.6,N/A,N/A,N/A,N/A,N/A,N/A
-4101,OR-01,OR,Oregon,2026,TBD,Suzanne Bonamici,D,Suzanne Bonamici,Barbara Kahl,D,74.7,25.3,-49.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4102,OR-02,OR,Oregon,2026,TBD,Cliff Bentz,R,Dawn Rasmussen,Cliff Bentz,R,38.7,61.3,22.6,1.5,98.5,N/A,N/A,N/A,N/A,N/A,N/A
-4103,OR-03,OR,Oregon,2026,TBD,Maxine Dexter,D,Maxine Dexter,Generic Republican,D,78.2,21.8,-56.4,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4104,OR-04,OR,Oregon,2026,TBD,Val T. Hoyle,D,Valerie Hoyle,Monique Despain,D,59.8,40.2,-19.6,97,3,N/A,N/A,N/A,N/A,N/A,N/A
+3914,OH-14,OH,Ohio,2026,TBD,David P. Joyce,R,Carl Setzer,David Joyce,R,41.1,58.9,17.8,4.4,95.6,N/A,N/A,0.03,0.63,N/A,N/A
+3915,OH-15,OH,Ohio,2026,TBD,Mike Carey,R,Adam Miller,Mike Carey,R,47.4,52.6,5.2,30.9,69.1,N/A,N/A,0.23,0.76,N/A,N/A
+4001,OK-01,OK,Oklahoma,2026,TBD,Kevin Hern,R,John Croisant,Kevin Hern,R,39.9,60.1,20.2,2.6,97.4,N/A,N/A,0.02,0.85,N/A,N/A
+4002,OK-02,OK,Oklahoma,2026,TBD,Josh Brecheen,R,Erik Terwey,Josh Brecheen,R,24.75,75.25,50.5,0,100,N/A,N/A,0.001,0.72,N/A,N/A
+4003,OK-03,OK,Oklahoma,2026,TBD,Frank D. Lucas,R,Jules Roberson,Frank Lucas,R,25.65,74.35,48.7,0,100,N/A,N/A,0.001,0.84,N/A,N/A
+4004,OK-04,OK,Oklahoma,2026,TBD,Tom Cole,R,Mitchell Jacob,Tom Cole,R,34.25,65.75,31.5,0.1,99.9,N/A,N/A,0.001,0.72,N/A,N/A
+4005,OK-05,OK,Oklahoma,2026,TBD,Stephanie I. Bice,R,Jena Nelson,Stephanie Bice,R,42.45,57.55,15.1,7.4,92.6,N/A,N/A,0.05,0.44,N/A,N/A
+4101,OR-01,OR,Oregon,2026,TBD,Suzanne Bonamici,D,Suzanne Bonamici,Barbara Kahl,D,74.7,25.3,-49.4,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+4102,OR-02,OR,Oregon,2026,TBD,Cliff Bentz,R,Dawn Rasmussen,Cliff Bentz,R,38.7,61.3,22.6,1.5,98.5,N/A,N/A,0.001,0.93,N/A,N/A
+4103,OR-03,OR,Oregon,2026,TBD,Maxine Dexter,D,Maxine Dexter,Generic Republican,D,78.2,21.8,-56.4,100,0,N/A,N/A,0.8,0.001,N/A,N/A
+4104,OR-04,OR,Oregon,2026,TBD,Val T. Hoyle,D,Valerie Hoyle,Monique Despain,D,59.8,40.2,-19.6,97,3,N/A,N/A,0.69,0.001,N/A,N/A
 4105,OR-05,OR,Oregon,2026,TBD,Janelle Bynum,D,Janelle Bynum,Patti Adair,D,58.15,41.85,-16.3,94,6,N/A,N/A,N/A,N/A,N/A,N/A
-4106,OR-06,OR,Oregon,2026,TBD,Andrea Salinas,D,Andrea Salinas,David Russ,D,60.05,39.95,-20.1,97.3,2.7,N/A,N/A,N/A,N/A,N/A,N/A
+4106,OR-06,OR,Oregon,2026,TBD,Andrea Salinas,D,Andrea Salinas,David Russ,D,60.05,39.95,-20.1,97.3,2.7,N/A,N/A,0.7,0.001,N/A,N/A
 4201,PA-01,PA,Pennsylvania,2026,TBD,Brian K. Fitzpatrick,R,Robert Harvie,Brian Fitzpatrick,R,50.25,49.75,-0.5,51.8,48.2,N/A,N/A,N/A,N/A,N/A,N/A
-4202,PA-02,PA,Pennsylvania,2026,TBD,Brendan F. Boyle,D,Brendan Boyle,Jessica Arriaga,D,73.85,26.15,-47.7,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4203,PA-03,PA,Pennsylvania,2026,TBD,Dwight Evans,D,Sharif Street,Alexander Schnell,None,92.9,7.1,-85.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4204,PA-04,PA,Pennsylvania,2026,TBD,Madeleine Dean,D,Madeleine Dean,Jordan Salerno-O'Donnell,D,61.9,38.1,-23.8,98.9,1.1,N/A,N/A,N/A,N/A,N/A,N/A
-4205,PA-05,PA,Pennsylvania,2026,TBD,Mary Gay Scanlon,D,Mary Scanlon,Melvin Johnakin,D,68.15,31.85,-36.3,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4206,PA-06,PA,Pennsylvania,2026,TBD,Chrissy Houlahan,D,Chrissy Houlahan,Martin Young,D,58.95,41.05,-17.9,95.7,4.3,N/A,N/A,N/A,N/A,N/A,N/A
+4202,PA-02,PA,Pennsylvania,2026,TBD,Brendan F. Boyle,D,Brendan Boyle,Jessica Arriaga,D,73.85,26.15,-47.7,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+4203,PA-03,PA,Pennsylvania,2026,TBD,Dwight Evans,D,Sharif Street,Alexander Schnell,None,92.9,7.1,-85.8,100,0,N/A,N/A,0.86,0.001,N/A,N/A
+4204,PA-04,PA,Pennsylvania,2026,TBD,Madeleine Dean,D,Madeleine Dean,Jordan Salerno-O'Donnell,D,61.9,38.1,-23.8,98.9,1.1,N/A,N/A,0.71,0.001,N/A,N/A
+4205,PA-05,PA,Pennsylvania,2026,TBD,Mary Gay Scanlon,D,Mary Scanlon,Melvin Johnakin,D,68.15,31.85,-36.3,100,0,N/A,N/A,0.71,0.001,N/A,N/A
+4206,PA-06,PA,Pennsylvania,2026,TBD,Chrissy Houlahan,D,Chrissy Houlahan,Martin Young,D,58.95,41.05,-17.9,95.7,4.3,N/A,N/A,0.72,0.001,N/A,N/A
 4207,PA-07,PA,Pennsylvania,2026,TBD,Ryan Mackenzie,R,Ryan Crosswell,Ryan Mackenzie,R,51.25,48.75,-2.5,59.5,40.5,N/A,N/A,N/A,N/A,N/A,N/A
 4208,PA-08,PA,Pennsylvania,2026,TBD,"Robert P. Bresnahan, Jr.",R,Paige Cognetti,Rob Bresnahan,None,49.6,50.4,0.8,46.9,53.1,N/A,N/A,N/A,N/A,N/A,N/A
-4209,PA-09,PA,Pennsylvania,2026,TBD,Daniel Meuser,R,Rachel Wallace,Daniel Meuser,R,31.55,68.45,36.9,0,100,N/A,N/A,N/A,N/A,N/A,N/A
+4209,PA-09,PA,Pennsylvania,2026,TBD,Daniel Meuser,R,Rachel Wallace,Daniel Meuser,R,31.55,68.45,36.9,0,100,N/A,N/A,0.001,0.7,N/A,N/A
 4210,PA-10,PA,Pennsylvania,2026,TBD,Scott Perry,R,Janelle Stelson,Scott Perry,R,50.2,49.8,-0.4,51.6,48.4,N/A,N/A,N/A,N/A,N/A,N/A
-4211,PA-11,PA,Pennsylvania,2026,TBD,Lloyd Smucker,R,Nancy Mannion,Lloyd Smucker,R,39.85,60.15,20.3,2.6,97.4,N/A,N/A,N/A,N/A,N/A,N/A
-4212,PA-12,PA,Pennsylvania,2026,TBD,Summer L. Lee,D,Summer Lee,Leonard Fechter,D,61.85,38.15,-23.7,98.8,1.2,N/A,N/A,N/A,N/A,N/A,N/A
-4213,PA-13,PA,Pennsylvania,2026,TBD,John Joyce,R,Elizabeth Farnham,John Joyce,R,27.45,72.55,45.1,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4214,PA-14,PA,Pennsylvania,2026,TBD,Guy Reschenthaler,R,David Bradstock,Guy Reschenthaler,R,34,66,32.0,0.1,99.9,N/A,N/A,N/A,N/A,N/A,N/A
-4215,PA-15,PA,Pennsylvania,2026,TBD,Glenn Thompson,R,Raymond Bilger,Glenn Thompson,R,31.1,68.9,37.8,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4216,PA-16,PA,Pennsylvania,2026,TBD,Mike Kelly,R,Justin Wagner,Mike Kelly,R,39.5,60.5,21.0,1.8,98.2,N/A,N/A,N/A,N/A,N/A,N/A
+4211,PA-11,PA,Pennsylvania,2026,TBD,Lloyd Smucker,R,Nancy Mannion,Lloyd Smucker,R,39.85,60.15,20.3,2.6,97.4,N/A,N/A,0.01,0.64,N/A,N/A
+4212,PA-12,PA,Pennsylvania,2026,TBD,Summer L. Lee,D,Summer Lee,Leonard Fechter,D,61.85,38.15,-23.7,98.8,1.2,N/A,N/A,0.8,0.002,N/A,N/A
+4213,PA-13,PA,Pennsylvania,2026,TBD,John Joyce,R,Elizabeth Farnham,John Joyce,R,27.45,72.55,45.1,0,100,N/A,N/A,0.001,0.81,N/A,N/A
+4214,PA-14,PA,Pennsylvania,2026,TBD,Guy Reschenthaler,R,David Bradstock,Guy Reschenthaler,R,34,66,32.0,0.1,99.9,N/A,N/A,0.001,0.71,N/A,N/A
+4215,PA-15,PA,Pennsylvania,2026,TBD,Glenn Thompson,R,Raymond Bilger,Glenn Thompson,R,31.1,68.9,37.8,0,100,N/A,N/A,0.001,0.93,N/A,N/A
+4216,PA-16,PA,Pennsylvania,2026,TBD,Mike Kelly,R,Justin Wagner,Mike Kelly,R,39.5,60.5,21.0,1.8,98.2,N/A,N/A,0.02,0.73,N/A,N/A
 4217,PA-17,PA,Pennsylvania,2026,TBD,Christopher R. Deluzio,D,Christopher Deluzio,Jesse Vodvarka,D,56.85,43.15,-13.7,90.6,9.4,N/A,N/A,N/A,N/A,N/A,N/A
-4401,RI-01,RI,Rhode Island,2026,TBD,Gabe Amo,D,Gabe Amo,Generic Republican,D,69.45,30.55,-38.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4402,RI-02,RI,Rhode Island,2026,TBD,Seth Magaziner,D,Seth Magaziner,Victor Mellor,D,60.85,39.15,-21.7,98.1,1.9,N/A,N/A,N/A,N/A,N/A,N/A
-4501,SC-01,SC,South Carolina,2026,TBD,Nancy Mace,R,William Deford,Sam Mccown,None,46.7,53.3,6.6,26.5,73.5,N/A,N/A,N/A,N/A,N/A,N/A
-4502,SC-02,SC,South Carolina,2026,TBD,Joe Wilson,R,Roger Pruitt,Joe Wilson,R,44.95,55.05,10.1,16.8,83.2,N/A,N/A,N/A,N/A,N/A,N/A
-4503,SC-03,SC,South Carolina,2026,TBD,Sheri Biggs,R,Eunice Lehmacher,Sheri Biggs,R,31.05,68.95,37.9,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4504,SC-04,SC,South Carolina,2026,TBD,William R. Timmons IV,R,Courtney Mcclain,William Timmons,R,40.95,59.05,18.1,4.2,95.8,N/A,N/A,N/A,N/A,N/A,N/A
-4505,SC-05,SC,South Carolina,2026,TBD,Ralph Norman,R,Mallory Dittmer,Wes Climer,None,41.65,58.35,16.7,5.5,94.5,N/A,N/A,N/A,N/A,N/A,N/A
-4506,SC-06,SC,South Carolina,2026,TBD,James Clyburn,D,James Clyburn,Generic Republican,D,67.55,32.45,-35.1,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4507,SC-07,SC,South Carolina,2026,TBD,Russell Fry,R,John Vincent,Russell Fry,R,39.95,60.05,20.1,2.7,97.3,N/A,N/A,N/A,N/A,N/A,N/A
+4401,RI-01,RI,Rhode Island,2026,TBD,Gabe Amo,D,Gabe Amo,Generic Republican,D,69.45,30.55,-38.9,100,0,N/A,N/A,0.77,0.001,N/A,N/A
+4402,RI-02,RI,Rhode Island,2026,TBD,Seth Magaziner,D,Seth Magaziner,Victor Mellor,D,60.85,39.15,-21.7,98.1,1.9,N/A,N/A,0.69,0.001,N/A,N/A
+4501,SC-01,SC,South Carolina,2026,TBD,Nancy Mace,R,William Deford,Sam Mccown,None,46.7,53.3,6.6,26.5,73.5,N/A,N/A,0.24,0.73,N/A,N/A
+4502,SC-02,SC,South Carolina,2026,TBD,Joe Wilson,R,Roger Pruitt,Joe Wilson,R,44.95,55.05,10.1,16.8,83.2,N/A,N/A,0.03,0.58,N/A,N/A
+4503,SC-03,SC,South Carolina,2026,TBD,Sheri Biggs,R,Eunice Lehmacher,Sheri Biggs,R,31.05,68.95,37.9,0,100,N/A,N/A,0.001,0.69,N/A,N/A
+4504,SC-04,SC,South Carolina,2026,TBD,William R. Timmons IV,R,Courtney Mcclain,William Timmons,R,40.95,59.05,18.1,4.2,95.8,N/A,N/A,0.01,0.91,N/A,N/A
+4505,SC-05,SC,South Carolina,2026,TBD,Ralph Norman,R,Mallory Dittmer,Wes Climer,None,41.65,58.35,16.7,5.5,94.5,N/A,N/A,0.005,0.68,N/A,N/A
+4506,SC-06,SC,South Carolina,2026,TBD,James Clyburn,D,James Clyburn,Generic Republican,D,67.55,32.45,-35.1,100,0,N/A,N/A,0.31,0.67,N/A,N/A
+4507,SC-07,SC,South Carolina,2026,TBD,Russell Fry,R,John Vincent,Russell Fry,R,39.95,60.05,20.1,2.7,97.3,N/A,N/A,0.01,0.9,N/A,N/A
 4601,SD-01,SD,South Dakota,2026,TBD,Dusty Johnson,R,Nicole Gronli,Marty Jackley,None,35.9,64.1,28.2,0.4,99.6,N/A,N/A,N/A,N/A,N/A,N/A
-4701,TN-01,TN,Tennessee,2026,TBD,Diana Harshbarger,R,Kristi Burke,Diana Harshbarger,R,22.5,77.5,55.0,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4702,TN-02,TN,Tennessee,2026,TBD,Tim Burchett,R,Michaela Barnett,Tim Burchett,R,34.45,65.55,31.1,0.1,99.9,N/A,N/A,N/A,N/A,N/A,N/A
-4703,TN-03,TN,Tennessee,2026,TBD,Charles J. “Chuck” Fleischmann,R,Joel Hawn,Charles Fleischmann,R,32.85,67.15,34.3,0.1,99.9,N/A,N/A,N/A,N/A,N/A,N/A
-4704,TN-04,TN,Tennessee,2026,TBD,Scott DesJarlais,R,Victoria Broderick,Scott Desjarlais,R,30.65,69.35,38.7,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4705,TN-05,TN,Tennessee,2026,TBD,Andy Ogles,R,Chaz Molder,Andy Ogles,R,44.4,55.6,11.2,14.2,85.8,N/A,N/A,N/A,N/A,N/A,N/A
-4706,TN-06,TN,Tennessee,2026,TBD,John W. Rose,R,Chaney Mosley,John Rose,R,35.5,64.5,29.0,0.3,99.7,N/A,N/A,N/A,N/A,N/A,N/A
-4707,TN-07,TN,Tennessee,2026,TBD,Matt Van Epps,R,Darden Copeland,Matthew Van Epps,R,41.7,58.3,16.6,5.7,94.3,N/A,N/A,N/A,N/A,N/A,N/A
-4708,TN-08,TN,Tennessee,2026,TBD,David Kustoff,R,William Wicker,David Kustoff,R,29.9,70.1,40.2,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4709,TN-09,TN,Tennessee,2026,TBD,Steve Cohen,D,Steve Cohen,Charlotte Bergmann,D,76.15,23.85,-52.3,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4801,TX-01,TX,Texas,2026,TBD,Nathaniel Moran,R,Generic Democrat,Nathaniel Moran,R,24.35,75.65,51.3,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4802,TX-02,TX,Texas,2026,TBD,Dan Crenshaw,R,Shaun Finnie,Steve Toth,None,40.75,59.25,18.5,3.8,96.2,N/A,N/A,N/A,N/A,N/A,N/A
-4803,TX-03,TX,Texas,2026,TBD,Keith Self,R,Evan Hunt,Keith Self,R,41.5,58.5,17.0,4.7,95.3,N/A,N/A,N/A,N/A,N/A,N/A
-4804,TX-04,TX,Texas,2026,TBD,Pat Fallon,R,Jason Pearce,Patrick Fallon,R,39.5,60.5,21.0,2.2,97.8,N/A,N/A,N/A,N/A,N/A,N/A
-4805,TX-05,TX,Texas,2026,TBD,Lance Gooden,R,Ruth Torres,Lance Gooden,R,41.95,58.05,16.1,6.1,93.9,N/A,N/A,N/A,N/A,N/A,N/A
-4806,TX-06,TX,Texas,2026,TBD,Jake Ellzey,R,Danny Minton,Jake Ellzey,R,40,60,20.0,2.6,97.4,N/A,N/A,N/A,N/A,N/A,N/A
-4807,TX-07,TX,Texas,2026,TBD,Lizzie Fletcher,D,Lizzie Fletcher,Alexander Hale,D,67.65,32.35,-35.3,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4808,TX-08,TX,Texas,2026,TBD,Morgan Luttrell,R,Laura Jones,Jessica Steinmann,None,39.3,60.7,21.4,2,98,N/A,N/A,N/A,N/A,N/A,N/A
+4701,TN-01,TN,Tennessee,2026,TBD,Diana Harshbarger,R,Kristi Burke,Diana Harshbarger,R,22.5,77.5,55.0,0,100,N/A,N/A,0.001,0.94,N/A,N/A
+4702,TN-02,TN,Tennessee,2026,TBD,Tim Burchett,R,Michaela Barnett,Tim Burchett,R,34.45,65.55,31.1,0.1,99.9,N/A,N/A,0.001,0.73,N/A,N/A
+4703,TN-03,TN,Tennessee,2026,TBD,Charles J. “Chuck” Fleischmann,R,Joel Hawn,Charles Fleischmann,R,32.85,67.15,34.3,0.1,99.9,N/A,N/A,0.001,0.69,N/A,N/A
+4704,TN-04,TN,Tennessee,2026,TBD,Scott DesJarlais,R,Victoria Broderick,Scott Desjarlais,R,30.65,69.35,38.7,0,100,N/A,N/A,0.027,0.943,N/A,N/A
+4705,TN-05,TN,Tennessee,2026,TBD,Andy Ogles,R,Chaz Molder,Andy Ogles,R,44.4,55.6,11.2,14.2,85.8,N/A,N/A,0.19,0.8,N/A,N/A
+4706,TN-06,TN,Tennessee,2026,TBD,John W. Rose,R,Chaney Mosley,John Rose,R,35.5,64.5,29.0,0.3,99.7,N/A,N/A,0.001,0.71,N/A,N/A
+4707,TN-07,TN,Tennessee,2026,TBD,Matt Van Epps,R,Darden Copeland,Matthew Van Epps,R,41.7,58.3,16.6,5.7,94.3,N/A,N/A,0.005,0.65,N/A,N/A
+4708,TN-08,TN,Tennessee,2026,TBD,David Kustoff,R,William Wicker,David Kustoff,R,29.9,70.1,40.2,0,100,N/A,N/A,0.046,0.65,N/A,N/A
+4709,TN-09,TN,Tennessee,2026,TBD,Steve Cohen,D,Steve Cohen,Charlotte Bergmann,D,76.15,23.85,-52.3,100,0,N/A,N/A,0.01,0.83,N/A,N/A
+4801,TX-01,TX,Texas,2026,TBD,Nathaniel Moran,R,Generic Democrat,Nathaniel Moran,R,24.35,75.65,51.3,0,100,N/A,N/A,0.001,0.72,N/A,N/A
+4802,TX-02,TX,Texas,2026,TBD,Dan Crenshaw,R,Shaun Finnie,Steve Toth,None,40.75,59.25,18.5,3.8,96.2,N/A,N/A,0.01,0.66,N/A,N/A
+4803,TX-03,TX,Texas,2026,TBD,Keith Self,R,Evan Hunt,Keith Self,R,41.5,58.5,17.0,4.7,95.3,N/A,N/A,0.01,0.76,N/A,N/A
+4804,TX-04,TX,Texas,2026,TBD,Pat Fallon,R,Jason Pearce,Patrick Fallon,R,39.5,60.5,21.0,2.2,97.8,N/A,N/A,0.01,0.35,N/A,N/A
+4805,TX-05,TX,Texas,2026,TBD,Lance Gooden,R,Ruth Torres,Lance Gooden,R,41.95,58.05,16.1,6.1,93.9,N/A,N/A,0.002,0.68,N/A,N/A
+4806,TX-06,TX,Texas,2026,TBD,Jake Ellzey,R,Danny Minton,Jake Ellzey,R,40,60,20.0,2.6,97.4,N/A,N/A,0.02,0.66,N/A,N/A
+4807,TX-07,TX,Texas,2026,TBD,Lizzie Fletcher,D,Lizzie Fletcher,Alexander Hale,D,67.65,32.35,-35.3,100,0,N/A,N/A,0.72,0.002,N/A,N/A
+4808,TX-08,TX,Texas,2026,TBD,Morgan Luttrell,R,Laura Jones,Jessica Steinmann,None,39.3,60.7,21.4,2,98,N/A,N/A,0.001,0.68,N/A,N/A
 4809,TX-09,TX,Texas,2026,TBD,Al Green,D,Leticia Gutierrez,Alexandra Mealer,None,43.95,56.05,12.1,12.4,87.6,N/A,N/A,N/A,N/A,N/A,N/A
-4810,TX-10,TX,Texas,2026,TBD,Michael McCaul,R,Caitlin Rourk,Chris Gober,None,42.2,57.8,15.6,6.8,93.2,N/A,N/A,N/A,N/A,N/A,N/A
-4811,TX-11,TX,Texas,2026,TBD,August Pfluger,R,Claire Reynolds,August Pfluger,R,31.55,68.45,36.9,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4812,TX-12,TX,Texas,2026,TBD,Craig A. Goldman,R,Heli Rodriguez Prilliman,Craig Goldman,R,40,60,20.0,2.8,97.2,N/A,N/A,N/A,N/A,N/A,N/A
-4813,TX-13,TX,Texas,2026,TBD,Ronny Jackson,R,Mark Nair,Ronny Jackson,R,25.65,74.35,48.7,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4814,TX-14,TX,Texas,2026,TBD,"Randy K. Weber, Sr.",R,Richard Davis,Randy Weber,R,39.8,60.2,20.4,2.5,97.5,N/A,N/A,N/A,N/A,N/A,N/A
+4810,TX-10,TX,Texas,2026,TBD,Michael McCaul,R,Caitlin Rourk,Chris Gober,None,42.2,57.8,15.6,6.8,93.2,N/A,N/A,0.02,0.63,N/A,N/A
+4811,TX-11,TX,Texas,2026,TBD,August Pfluger,R,Claire Reynolds,August Pfluger,R,31.55,68.45,36.9,0,100,N/A,N/A,0.001,0.8,N/A,N/A
+4812,TX-12,TX,Texas,2026,TBD,Craig A. Goldman,R,Heli Rodriguez Prilliman,Craig Goldman,R,40,60,20.0,2.8,97.2,N/A,N/A,0.01,0.6,N/A,N/A
+4813,TX-13,TX,Texas,2026,TBD,Ronny Jackson,R,Mark Nair,Ronny Jackson,R,25.65,74.35,48.7,0,100,N/A,N/A,0.002,0.7,N/A,N/A
+4814,TX-14,TX,Texas,2026,TBD,"Randy K. Weber, Sr.",R,Richard Davis,Randy Weber,R,39.8,60.2,20.4,2.5,97.5,N/A,N/A,0.02,0.76,N/A,N/A
 4815,TX-15,TX,Texas,2026,TBD,Monica De La Cruz,R,Bobby Pulido,Monica De La Cruz-Hernandez,R,47.2,52.8,5.6,29.5,70.5,N/A,N/A,N/A,N/A,N/A,N/A
-4816,TX-16,TX,Texas,2026,TBD,Veronica Escobar,D,Veronica Escobar,Generic Republican,D,66.35,33.65,-32.7,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
-4817,TX-17,TX,Texas,2026,TBD,Pete Sessions,R,Generic Democrat,Pete Sessions,R,41.1,58.9,17.8,4.4,95.6,N/A,N/A,N/A,N/A,N/A,N/A
-4818,TX-18,TX,Texas,2026,TBD,Christian Menefee,D,TBD,Ronald Whitfield,None,83.5,16.5,-67.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4819,TX-19,TX,Texas,2026,TBD,Jodey Arrington,R,Kyle Rable,Tom Sell,None,26.6,73.4,46.8,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4820,TX-20,TX,Texas,2026,TBD,Joaquin Castro,D,Joaquin Castro,Edgardo Baez,D,73.15,26.85,-46.3,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4821,TX-21,TX,Texas,2026,TBD,Chip Roy,R,Kristin Hook,Mark Teixeira,None,41.65,58.35,16.7,5.5,94.5,N/A,N/A,N/A,N/A,N/A,N/A
-4822,TX-22,TX,Texas,2026,TBD,Troy Nehls,R,Marquette Greene-Scott,Trever Nehls,None,42,58,16.0,6.3,93.7,N/A,N/A,N/A,N/A,N/A,N/A
-4823,TX-23,TX,Texas,2026,TBD,Tony Gonzales,R,Katy Padilla Stout,Brandon Herrera,None,46.1,53.9,7.8,22.7,77.3,N/A,N/A,N/A,N/A,N/A,N/A
-4824,TX-24,TX,Texas,2026,TBD,Beth Van Duyne,R,Generic Democrat,Beth Van Duyne,R,43.05,56.95,13.9,9.2,90.8,N/A,N/A,N/A,N/A,N/A,N/A
-4825,TX-25,TX,Texas,2026,TBD,Roger Williams,R,Dione Sims,Roger Williams,R,38,62,24.0,0.9,99.1,N/A,N/A,N/A,N/A,N/A,N/A
-4826,TX-26,TX,Texas,2026,TBD,Brandon Gill,R,Steven Shook,Brandon Gill,R,39.6,60.4,20.8,2.3,97.7,N/A,N/A,N/A,N/A,N/A,N/A
-4827,TX-27,TX,Texas,2026,TBD,Michael Cloud,R,Tanya Lloyd,Michael Cloud,R,41.75,58.25,16.5,5.7,94.3,N/A,N/A,N/A,N/A,N/A,N/A
+4816,TX-16,TX,Texas,2026,TBD,Veronica Escobar,D,Veronica Escobar,Generic Republican,D,66.35,33.65,-32.7,99.9,0.1,N/A,N/A,0.85,0.001,N/A,N/A
+4817,TX-17,TX,Texas,2026,TBD,Pete Sessions,R,Generic Democrat,Pete Sessions,R,41.1,58.9,17.8,4.4,95.6,N/A,N/A,0.14,0.63,N/A,N/A
+4818,TX-18,TX,Texas,2026,TBD,Christian Menefee,D,TBD,Ronald Whitfield,None,83.5,16.5,-67.0,100,0,N/A,N/A,0.51,0.001,N/A,N/A
+4819,TX-19,TX,Texas,2026,TBD,Jodey Arrington,R,Kyle Rable,Tom Sell,None,26.6,73.4,46.8,0,100,N/A,N/A,0.002,0.71,N/A,N/A
+4820,TX-20,TX,Texas,2026,TBD,Joaquin Castro,D,Joaquin Castro,Edgardo Baez,D,73.15,26.85,-46.3,100,0,N/A,N/A,0.91,0.001,N/A,N/A
+4821,TX-21,TX,Texas,2026,TBD,Chip Roy,R,Kristin Hook,Mark Teixeira,None,41.65,58.35,16.7,5.5,94.5,N/A,N/A,0.15,0.82,N/A,N/A
+4822,TX-22,TX,Texas,2026,TBD,Troy Nehls,R,Marquette Greene-Scott,Trever Nehls,None,42,58,16.0,6.3,93.7,N/A,N/A,0.01,0.75,N/A,N/A
+4823,TX-23,TX,Texas,2026,TBD,Tony Gonzales,R,Katy Padilla Stout,Brandon Herrera,None,46.1,53.9,7.8,22.7,77.3,N/A,N/A,0.21,0.77,N/A,N/A
+4824,TX-24,TX,Texas,2026,TBD,Beth Van Duyne,R,Generic Democrat,Beth Van Duyne,R,43.05,56.95,13.9,9.2,90.8,N/A,N/A,0.23,0.74,N/A,N/A
+4825,TX-25,TX,Texas,2026,TBD,Roger Williams,R,Dione Sims,Roger Williams,R,38,62,24.0,0.9,99.1,N/A,N/A,0.01,0.67,N/A,N/A
+4826,TX-26,TX,Texas,2026,TBD,Brandon Gill,R,Steven Shook,Brandon Gill,R,39.6,60.4,20.8,2.3,97.7,N/A,N/A,0.002,0.67,N/A,N/A
+4827,TX-27,TX,Texas,2026,TBD,Michael Cloud,R,Tanya Lloyd,Michael Cloud,R,41.75,58.25,16.5,5.7,94.3,N/A,N/A,0.06,0.65,N/A,N/A
 4828,TX-28,TX,Texas,2026,TBD,Henry Cuellar,D,Henry Cuellar,Tano Tijerina,D,54.4,45.6,-8.8,80,20,N/A,N/A,N/A,N/A,N/A,N/A
-4829,TX-29,TX,Texas,2026,TBD,Sylvia R. Garcia,D,Sylvia Garcia,Martha Fierro,D,73.3,26.7,-46.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4830,TX-30,TX,Texas,2026,TBD,Jasmine Crockett,D,Frederick Haynes,Sholdon Daniels,None,77.95,22.05,-55.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4831,TX-31,TX,Texas,2026,TBD,John R. Carter,R,Justin Early,John Carter,R,40.75,59.25,18.5,3.8,96.2,N/A,N/A,N/A,N/A,N/A,N/A
+4829,TX-29,TX,Texas,2026,TBD,Sylvia R. Garcia,D,Sylvia Garcia,Martha Fierro,D,73.3,26.7,-46.6,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+4830,TX-30,TX,Texas,2026,TBD,Jasmine Crockett,D,Frederick Haynes,Sholdon Daniels,None,77.95,22.05,-55.9,100,0,N/A,N/A,0.961,0.001,N/A,N/A
+4831,TX-31,TX,Texas,2026,TBD,John R. Carter,R,Justin Early,John Carter,R,40.75,59.25,18.5,3.8,96.2,N/A,N/A,0.06,0.62,N/A,N/A
 4832,TX-32,TX,Texas,2026,TBD,Julie Johnson,D,Dan Barrios,Jace Yarbrough,None,44.5,55.5,11.0,14.6,85.4,N/A,N/A,N/A,N/A,N/A,N/A
-4833,TX-33,TX,Texas,2026,TBD,Marc Veasey,D,Colin Allred,Generic Republican,None,73.45,26.55,-46.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
+4833,TX-33,TX,Texas,2026,TBD,Marc Veasey,D,Colin Allred,Generic Republican,None,73.45,26.55,-46.9,100,0,N/A,N/A,0.7,0.001,N/A,N/A
 4834,TX-34,TX,Texas,2026,TBD,Vicente Gonzalez,D,Vicente Gonzalez,Eric Flores,D,51.7,48.3,-3.4,62.7,37.3,N/A,N/A,N/A,N/A,N/A,N/A
 4835,TX-35,TX,Texas,2026,TBD,Greg Casar,D,Johnny Garcia,Carlos De La Cruz,None,49.15,50.85,1.7,43.4,56.6,N/A,N/A,N/A,N/A,N/A,N/A
-4836,TX-36,TX,Texas,2026,TBD,Brian Babin,R,Rhonda Hart,Brian Babin,R,40.1,59.9,19.8,2.9,97.1,N/A,N/A,N/A,N/A,N/A,N/A
-4837,TX-37,TX,Texas,2026,TBD,Lloyd Doggett,D,Greg Casar,Lauren Pena,None,83.4,16.6,-66.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-4838,TX-38,TX,Texas,2026,TBD,Wesley Hunt,R,Melissa McDonough,Jon Bonck,None,41.95,58.05,16.1,6.1,93.9,N/A,N/A,N/A,N/A,N/A,N/A
+4836,TX-36,TX,Texas,2026,TBD,Brian Babin,R,Rhonda Hart,Brian Babin,R,40.1,59.9,19.8,2.9,97.1,N/A,N/A,0.02,0.63,N/A,N/A
+4837,TX-37,TX,Texas,2026,TBD,Lloyd Doggett,D,Greg Casar,Lauren Pena,None,83.4,16.6,-66.8,100,0,N/A,N/A,0.7,0.001,N/A,N/A
+4838,TX-38,TX,Texas,2026,TBD,Wesley Hunt,R,Melissa McDonough,Jon Bonck,None,41.95,58.05,16.1,6.1,93.9,N/A,N/A,0.02,0.7,N/A,N/A
 4901,UT-01,UT,Utah,2026,TBD,Blake Moore,R,Ben McAdams,Blake Moore,R,62.5,37.5,-25.0,99.2,0.8,N/A,N/A,N/A,N/A,N/A,N/A
 4902,UT-02,UT,Utah,2026,TBD,Celeste Maloy,R,Steven Merrill,Celeste Maloy,R,36.1,63.9,27.8,0.4,99.6,N/A,N/A,N/A,N/A,N/A,N/A
 4903,UT-03,UT,Utah,2026,TBD,Mike Kennedy,R,Steven Merrill,Mike Kennedy,R,28.35,71.65,43.3,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-4904,UT-04,UT,Utah,2026,TBD,Burgess Owens,R,Jonathan Larsen,Burgess Owens,R,33.9,66.1,32.2,0.1,99.9,N/A,N/A,N/A,N/A,N/A,N/A
+4904,UT-04,UT,Utah,2026,TBD,Burgess Owens,R,Jonathan Larsen,Burgess Owens,R,33.9,66.1,32.2,0.1,99.9,N/A,N/A,0.01,0.69,N/A,N/A
 5001,VT-01,VT,Vermont,2026,TBD,Becca Balint,D,Rebecca Balint,Mark Coester,D,73.1,26.9,-46.2,100,0,N/A,N/A,N/A,N/A,N/A,N/A
 5101,VA-01,VA,Virginia,2026,TBD,Robert J. Wittman,R,Shannon Taylor,Robert Wittman,R,49.35,50.65,1.3,45.1,54.9,N/A,N/A,N/A,N/A,N/A,N/A
 5102,VA-02,VA,Virginia,2026,TBD,Jennifer A. Kiggans,R,Elaine Luria,Jennifer Kiggans,R,53,47,-6.0,71.6,28.4,N/A,N/A,N/A,N/A,N/A,N/A
-5103,VA-03,VA,Virginia,2026,TBD,Robert C. “Bobby” Scott,D,Robert Scott,Generic Republican,D,73.5,26.5,-47.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-5104,VA-04,VA,Virginia,2026,TBD,Jennifer L. McClellan,D,Jennifer Mcclellan,Generic Republican,D,72.3,27.7,-44.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-5105,VA-05,VA,Virginia,2026,TBD,John J. McGuire III,R,Thomas Perriello,John McGuire,R,47.95,52.05,4.1,34.7,65.3,N/A,N/A,N/A,N/A,N/A,N/A
-5106,VA-06,VA,Virginia,2026,TBD,Ben Cline,R,Beth Macy,Benjamin Cline,R,41.5,58.5,17.0,5.2,94.8,N/A,N/A,N/A,N/A,N/A,N/A
+5103,VA-03,VA,Virginia,2026,TBD,Robert C. “Bobby” Scott,D,Robert Scott,Generic Republican,D,73.5,26.5,-47.0,100,0,N/A,N/A,0.72,0.001,N/A,N/A
+5104,VA-04,VA,Virginia,2026,TBD,Jennifer L. McClellan,D,Jennifer Mcclellan,Generic Republican,D,72.3,27.7,-44.6,100,0,N/A,N/A,0.71,0.001,N/A,N/A
+5105,VA-05,VA,Virginia,2026,TBD,John J. McGuire III,R,Thomas Perriello,John McGuire,R,47.95,52.05,4.1,34.7,65.3,N/A,N/A,0.14,0.36,N/A,N/A
+5106,VA-06,VA,Virginia,2026,TBD,Ben Cline,R,Beth Macy,Benjamin Cline,R,41.5,58.5,17.0,5.2,94.8,N/A,N/A,0.18,0.79,N/A,N/A
 5107,VA-07,VA,Virginia,2026,TBD,Eugene Simon Vindman,D,Eugene Vindman,Tara Durant,D,57.1,42.9,-14.2,91.3,8.7,N/A,N/A,N/A,N/A,N/A,N/A
-5108,VA-08,VA,Virginia,2026,TBD,"Donald S. Beyer, Jr.",D,Donald Beyer,Heerak Kim,D,80.85,19.15,-61.7,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-5109,VA-09,VA,Virginia,2026,TBD,H. Morgan Griffith,R,Adam Murphy,Adam Griffith,R,31,69,38.0,0,100,N/A,N/A,N/A,N/A,N/A,N/A
+5108,VA-08,VA,Virginia,2026,TBD,"Donald S. Beyer, Jr.",D,Donald Beyer,Heerak Kim,D,80.85,19.15,-61.7,100,0,N/A,N/A,0.92,0.001,N/A,N/A
+5109,VA-09,VA,Virginia,2026,TBD,H. Morgan Griffith,R,Adam Murphy,Adam Griffith,R,31,69,38.0,0,100,N/A,N/A,0.02,0.9,N/A,N/A
 5110,VA-10,VA,Virginia,2026,TBD,Suhas Subramanyam,D,Suhas Subramanyam,Sam Wong,D,59.5,40.5,-19.0,97.1,2.9,N/A,N/A,N/A,N/A,N/A,N/A
-5111,VA-11,VA,Virginia,2026,TBD,James R. Walkinshaw,D,James Walkinshaw,Stewart Whitson,D,72.9,27.1,-45.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-5301,WA-01,WA,Washington,2026,TBD,Suzan K. DelBene,D,Suzan DelBene,Generic Republican,D,68.4,31.6,-36.8,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-5302,WA-02,WA,Washington,2026,TBD,Rick Larsen,D,Rick Larsen,Generic Republican,D,66.2,33.8,-32.4,99.9,0.1,N/A,N/A,N/A,N/A,N/A,N/A
+5111,VA-11,VA,Virginia,2026,TBD,James R. Walkinshaw,D,James Walkinshaw,Stewart Whitson,D,72.9,27.1,-45.8,100,0,N/A,N/A,0.73,0.002,N/A,N/A
+5301,WA-01,WA,Washington,2026,TBD,Suzan K. DelBene,D,Suzan DelBene,Generic Republican,D,68.4,31.6,-36.8,100,0,N/A,N/A,0.52,0.001,N/A,N/A
+5302,WA-02,WA,Washington,2026,TBD,Rick Larsen,D,Rick Larsen,Generic Republican,D,66.2,33.8,-32.4,99.9,0.1,N/A,N/A,0.7,0.001,N/A,N/A
 5303,WA-03,WA,Washington,2026,TBD,Marie Gluesenkamp Perez,D,Marie Gluesenkamp Perez,John Braun,D,52.05,47.95,-4.1,65.1,34.9,N/A,N/A,N/A,N/A,N/A,N/A
-5304,WA-04,WA,Washington,2026,TBD,Dan Newhouse,R,John Duresky,Jerrod Sessler,None,41.2,58.8,17.6,4.6,95.4,N/A,N/A,N/A,N/A,N/A,N/A
-5305,WA-05,WA,Washington,2026,TBD,Michael Baumgartner,R,Carmela Conroy,Michael Baumgartner,R,44.3,55.7,11.4,13.8,86.2,N/A,N/A,N/A,N/A,N/A,N/A
-5306,WA-06,WA,Washington,2026,TBD,Emily Randall,D,Emily Randall,Teresa Fox,D,61.5,38.5,-23.0,98.8,1.2,N/A,N/A,N/A,N/A,N/A,N/A
-5307,WA-07,WA,Washington,2026,TBD,Pramila Jayapal,D,Pramila Jayapal,Generic Republican,D,91,9,-82.0,100,0,N/A,N/A,N/A,N/A,N/A,N/A
+5304,WA-04,WA,Washington,2026,TBD,Dan Newhouse,R,John Duresky,Jerrod Sessler,None,41.2,58.8,17.6,4.6,95.4,N/A,N/A,0.12,0.85,N/A,N/A
+5305,WA-05,WA,Washington,2026,TBD,Michael Baumgartner,R,Carmela Conroy,Michael Baumgartner,R,44.3,55.7,11.4,13.8,86.2,N/A,N/A,0.22,0.74,N/A,N/A
+5306,WA-06,WA,Washington,2026,TBD,Emily Randall,D,Emily Randall,Teresa Fox,D,61.5,38.5,-23.0,98.8,1.2,N/A,N/A,0.7,0.001,N/A,N/A
+5307,WA-07,WA,Washington,2026,TBD,Pramila Jayapal,D,Pramila Jayapal,Generic Republican,D,91,9,-82.0,100,0,N/A,N/A,0.73,0.001,N/A,N/A
 5308,WA-08,WA,Washington,2026,TBD,Kim Schrier,D,Kim Schrier,Trinh Ha,D,56.75,43.25,-13.5,90.3,9.7,N/A,N/A,N/A,N/A,N/A,N/A
-5309,WA-09,WA,Washington,2026,TBD,Adam Smith,D,Adam Smith,Janis Clark,D,78.35,21.65,-56.7,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-5310,WA-10,WA,Washington,2026,TBD,Marilyn Strickland,D,Marilyn Strickland,Generic Republican,D,61.95,38.05,-23.9,98.9,1.1,N/A,N/A,N/A,N/A,N/A,N/A
-5401,WV-01,WV,West Virginia,2026,TBD,Carol Miller,R,Britta Aguirre,Carol Miller,R,30.45,69.55,39.1,0,100,N/A,N/A,N/A,N/A,N/A,N/A
-5402,WV-02,WV,West Virginia,2026,TBD,Riley Moore,R,Ahsan Parsi,Riley Moore,R,31.65,68.35,36.7,0,100,N/A,N/A,N/A,N/A,N/A,N/A
+5309,WA-09,WA,Washington,2026,TBD,Adam Smith,D,Adam Smith,Janis Clark,D,78.35,21.65,-56.7,100,0,N/A,N/A,0.92,0.02,N/A,N/A
+5310,WA-10,WA,Washington,2026,TBD,Marilyn Strickland,D,Marilyn Strickland,Generic Republican,D,61.95,38.05,-23.9,98.9,1.1,N/A,N/A,0.92,0.001,N/A,N/A
+5401,WV-01,WV,West Virginia,2026,TBD,Carol Miller,R,Britta Aguirre,Carol Miller,R,30.45,69.55,39.1,0,100,N/A,N/A,0.067,0.75,N/A,N/A
+5402,WV-02,WV,West Virginia,2026,TBD,Riley Moore,R,Ahsan Parsi,Riley Moore,R,31.65,68.35,36.7,0,100,N/A,N/A,0.01,0.92,N/A,N/A
 5501,WI-01,WI,Wisconsin,2026,TBD,Bryan Steil,R,Mitchell Berman,Bryan Steil,R,48.25,51.75,3.5,36.7,63.3,N/A,N/A,N/A,N/A,N/A,N/A
-5502,WI-02,WI,Wisconsin,2026,TBD,Mark Pocan,D,Mark Pocan,Erik Olsen,D,74.15,25.85,-48.3,100,0,N/A,N/A,N/A,N/A,N/A,N/A
+5502,WI-02,WI,Wisconsin,2026,TBD,Mark Pocan,D,Mark Pocan,Erik Olsen,D,74.15,25.85,-48.3,100,0,N/A,N/A,0.92,0.02,N/A,N/A
 5503,WI-03,WI,Wisconsin,2026,TBD,Derrick Van Orden,R,Rebecca Cooke,Derrick Van Orden,R,49.65,50.35,0.7,47.3,52.7,N/A,N/A,N/A,N/A,N/A,N/A
-5504,WI-04,WI,Wisconsin,2026,TBD,Gwen Moore,D,Gwen Moore,Purnima Nath,D,79.8,20.2,-59.6,100,0,N/A,N/A,N/A,N/A,N/A,N/A
-5505,WI-05,WI,Wisconsin,2026,TBD,Scott Fitzgerald,R,Andrew Beck,Scott Fitzgerald,R,38.8,61.2,22.4,1.6,98.4,N/A,N/A,N/A,N/A,N/A,N/A
-5506,WI-06,WI,Wisconsin,2026,TBD,Glenn Grothman,R,Aaron Wojciechowski,Glenn Grothman,R,41.9,58.1,16.2,6.1,93.9,N/A,N/A,N/A,N/A,N/A,N/A
-5507,WI-07,WI,Wisconsin,2026,TBD,Tom Tiffany,R,Frederic Clark,Paul Wassgren,None,40.5,59.5,19.0,3.4,96.6,N/A,N/A,N/A,N/A,N/A,N/A
-5508,WI-08,WI,Wisconsin,2026,TBD,Tony Wied,R,Mark Scheffler,Tony Wied,R,43.05,56.95,13.9,9.2,90.8,N/A,N/A,N/A,N/A,N/A,N/A
+5504,WI-04,WI,Wisconsin,2026,TBD,Gwen Moore,D,Gwen Moore,Purnima Nath,D,79.8,20.2,-59.6,100,0,N/A,N/A,0.96,0.01,N/A,N/A
+5505,WI-05,WI,Wisconsin,2026,TBD,Scott Fitzgerald,R,Andrew Beck,Scott Fitzgerald,R,38.8,61.2,22.4,1.6,98.4,N/A,N/A,0.14,0.83,N/A,N/A
+5506,WI-06,WI,Wisconsin,2026,TBD,Glenn Grothman,R,Aaron Wojciechowski,Glenn Grothman,R,41.9,58.1,16.2,6.1,93.9,N/A,N/A,0.05,0.82,N/A,N/A
+5507,WI-07,WI,Wisconsin,2026,TBD,Tom Tiffany,R,Frederic Clark,Paul Wassgren,None,40.5,59.5,19.0,3.4,96.6,N/A,N/A,0.06,0.74,N/A,N/A
+5508,WI-08,WI,Wisconsin,2026,TBD,Tony Wied,R,Mark Scheffler,Tony Wied,R,43.05,56.95,13.9,9.2,90.8,N/A,N/A,0.09,0.78,N/A,N/A
 5601,WY-01,WY,Wyoming,2026,TBD,Harriet Hageman,R,Generic Democrat,Harriet Hageman,R,26.9,73.1,46.2,0,100,N/A,N/A,N/A,N/A,N/A,N/A

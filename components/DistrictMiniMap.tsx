@@ -8,7 +8,8 @@ const DISTRICTS_URL = "/congressional-districts.json";
 
 function getGeoUrlForYear(year: number): string {
   if (year >= 2026) return "/congressional-districts.json";
-  if (year >= 2022) return "/congressional-districts-2024.json";
+  if (year >= 2024) return "/congressional-districts-2024.json";
+  if (year >= 2022) return "/congressional-districts-2022.json";
   if (year >= 2020) return "/congressional-districts-pre2022.json";
   if (year >= 2018) return "/congressional-districts-2018.json";
   return "/congressional-districts-2016.json";
@@ -81,7 +82,7 @@ const STATE_PROJ: Record<string, [number, number, number]> = {
   ME: [-69.3, 45.4, 4800],  MD: [-77.0, 38.8, 10000],  MA: [-71.5, 42.1, 11000],
   MI: [-85.6, 44.2, 3200],  MN: [-94.3, 46.4, 3600],   MS: [-89.7, 32.7, 4800],
   MO: [-92.5, 38.5, 4200],  MT: [-110.3, 46.9, 3000],  NE: [-99.9, 41.5, 4800],
-  NV: [-116.5, 38.8, 3200], NH: [-71.6, 43.7, 9000],   NJ: [-74.5, 40.1, 11000],
+  NV: [-116.5, 38.8, 3200], NH: [-71.6, 44.1, 8200],   NJ: [-74.5, 40.1, 11000],
   NM: [-106.1, 34.5, 3800], NY: [-75.5, 42.8, 3800],   NC: [-79.4, 35.5, 4400],
   ND: [-100.5, 47.5, 5200], OH: [-82.8, 40.4, 5000],   OK: [-97.5, 35.5, 4500],
   OR: [-120.5, 43.9, 3600], PA: [-77.2, 40.9, 5000],   RI: [-71.5, 41.7, 26000],

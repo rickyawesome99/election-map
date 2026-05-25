@@ -11,6 +11,7 @@ function getGeoUrl(year: number): string {
   if (year <= 2017) return "/congressional-districts-2016.json";
   if (year <= 2019) return "/congressional-districts-2018.json";
   if (year <= 2021) return "/congressional-districts-pre2022.json";
+  if (year <= 2022) return "/congressional-districts-2022.json";
   return "/congressional-districts-2024.json";
 }
 

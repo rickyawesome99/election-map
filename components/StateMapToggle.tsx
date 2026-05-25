@@ -30,7 +30,7 @@ export default function StateMapToggle({
   const [cdCountyKey, setCdCountyKey] = useState<string>("");
 
   const tabs: { id: MapView; label: string }[] = [
-    { id: "projection", label: "Projection" },
+    { id: "projection", label: "Proj" },
     { id: "past", label: "Past" },
     { id: "cd", label: "District" },
     { id: "county", label: "County" },

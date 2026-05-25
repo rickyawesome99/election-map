@@ -115,6 +115,20 @@ export default function AnalysisPage() {
                   </Link>
                 </td>
               </tr>
+              <tr
+                className="transition-colors hover:opacity-80"
+                style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}
+              >
+                <td className="px-3 sm:px-4 py-3">
+                  <Link
+                    href="/analysis/popular-vote"
+                    className="font-semibold hover:underline"
+                    style={{ color: "var(--app-text-primary)" }}
+                  >
+                    Popular Vote
+                  </Link>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>

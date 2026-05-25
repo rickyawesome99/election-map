@@ -18,6 +18,7 @@ export type DetailPastResult = {
   demIncumbent?: boolean;
   repIncumbent?: boolean;
   electionType?: string;
+  nationalDiff?: number | null;
   placeholder?: boolean;
 };
 
@@ -69,7 +70,7 @@ function MarginPollRow({ label, dem, rep, precision = 0, pctMargin = false }: { 
         <span className="text-xs font-semibold" style={{ color: "var(--app-text-muted)" }}>{label}</span>
         {hasData ? (
           <span className="text-xs font-bold" style={{ color: winner === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>
-            {winner === "D" ? `D +${marginVal}${pctMargin ? "%" : ""}` : `R +${marginVal}${pctMargin ? "%" : ""}`}
+            {pctMargin ? `${winner === "D" ? demR : repR}% ${winner}` : `${winner} +${marginVal}`}
           </span>
         ) : (
           <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
@@ -480,6 +481,8 @@ export function PastElectionResultsSection({
   density = "default",
   scrollable = false,
   maxHeight,
+  bare = false,
+  swingCycleYears = 2,
 }: {
   results?: DetailPastResult[];
   fallbackYears: number[];
@@ -489,6 +492,8 @@ export function PastElectionResultsSection({
   density?: DetailDensity;
   scrollable?: boolean;
   maxHeight?: string;
+  bare?: boolean;
+  swingCycleYears?: number;
 }) {
   const isCompact = density === "compact";
   const rows: DetailPastResult[] =
@@ -496,23 +501,23 @@ export function PastElectionResultsSection({
       ? results
       : fallbackYears.map((year) => ({ year, demPct: 0, repPct: 0, placeholder: true }));
 
-  return (
-    <section
-      className={`rounded-xl p-3 mb-0 ${(scrollable || maxHeight) ? "flex flex-col" : ""} ${layoutClassName}`}
-      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", ...(maxHeight ? { maxHeight } : {}) }}
-    >
-      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-        Past Election Results
-      </h2>
-      <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"} ${(scrollable || maxHeight) ? "min-h-0 flex-1 overflow-y-auto pr-1" : ""}`}>
+  const cards = (
+    <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"}`}>
         {rows.map((res) => {
           const isPlaceholder = !!res.placeholder;
+          const isSpecial = res.electionType?.toLowerCase().includes("special") ?? false;
           const winner = res.demPct > res.repPct ? "D" : "R";
           const margin = Math.abs(res.demPct - res.repPct).toFixed(1);
           const total = res.demPct + res.repPct;
           const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
           const demName = res.demCandidate ?? "Democratic Candidate";
           const repName = res.repCandidate ?? "Republican Candidate";
+          const prevRow = !isPlaceholder && !isSpecial
+            ? rows.find(r => r.year === res.year - swingCycleYears && !r.placeholder && !r.electionType?.toLowerCase().includes("special"))
+            : null;
+          const swing = prevRow != null
+            ? parseFloat(((prevRow.demPct - prevRow.repPct) - (res.demPct - res.repPct)).toFixed(1))
+            : null;
 
           return (
             <div
@@ -520,15 +525,16 @@ export function PastElectionResultsSection({
               className="rounded-lg p-2.5"
               style={{ opacity: isPlaceholder ? 0.45 : 1, background: "var(--app-bg)" }}
             >
-              <div className="mb-2 flex items-center justify-between gap-3">
-                <div className="flex min-w-0 items-center gap-3">
-                  <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+              {/* Row 1: year + election type | result margin */}
+              <div className="flex items-center justify-between gap-2 mb-1.5">
+                <div className="flex min-w-0 items-center gap-2">
+                  <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
                   {showElectionType && res.electionType && (!showSpecialBadgeForSpecialElections || !res.electionType.toLowerCase().includes("special")) && (
                     <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{res.electionType}</span>
                   )}
                   {showElectionType && res.electionType && showSpecialBadgeForSpecialElections && res.electionType.toLowerCase().includes("special") && (
                     <span
-                      className="text-[11px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap"
+                      className="text-[11px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0"
                       style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}
                     >
                       Special
@@ -536,10 +542,10 @@ export function PastElectionResultsSection({
                   )}
                 </div>
                 {isPlaceholder ? (
-                  <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
+                  <span className="text-xs italic shrink-0" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
                 ) : (
                   <span
-                    className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
+                    className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0"
                     style={winner === "D"
                       ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
                       : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
@@ -548,83 +554,114 @@ export function PastElectionResultsSection({
                   </span>
                 )}
               </div>
-              <div className="mb-2">
-                {(() => {
-                  const hasNames = isPlaceholder || res.demCandidate || res.repCandidate;
-                  return hasNames ? (
-                    <>
-                      <div className="mb-0.5 flex items-center justify-between gap-3">
-                        <div className="flex min-w-0 items-center gap-1.5">
-                          <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                          {!isPlaceholder && res.demIncumbent && (
-                            <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>
-                          )}
-                        </div>
-                        <div className="flex min-w-0 items-center justify-end gap-1.5">
-                          {!isPlaceholder && res.repIncumbent && (
-                            <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
-                          )}
-                          <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                        </div>
-                      </div>
-                      <div className="flex min-w-0 items-center gap-1.5 whitespace-nowrap text-sm leading-tight">
-                        <span className="min-w-0 flex-1 truncate font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-dem)" }}>
-                          {isPlaceholder ? "TBD" : demName}
-                        </span>
-                        <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                        <span className="min-w-0 flex-1 truncate text-right font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-rep)" }}>
-                          {isPlaceholder ? "TBD" : repName}
-                        </span>
-                      </div>
-                    </>
-                  ) : (
-                    <div className="flex items-center justify-between gap-3">
-                      <div className="flex min-w-0 items-center gap-1.5">
-                        <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                        {res.demIncumbent && (
-                          <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>
-                        )}
-                      </div>
-                      <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                      <div className="flex min-w-0 items-center justify-end gap-1.5">
-                        {res.repIncumbent && (
-                          <span className="text-[10px] font-semibold px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
-                        )}
-                        <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                      </div>
-                    </div>
+
+              {/* Dem row */}
+              <div className="flex items-baseline gap-2 mb-1">
+                <div className="flex min-w-0 flex-1 items-baseline gap-1.5">
+                  <span className="text-sm font-semibold min-w-0 truncate" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-dem)" }}>
+                    {isPlaceholder ? "TBD" : `${demName} (D)`}
+                  </span>
+                  {!isPlaceholder && res.demIncumbent && (
+                    <span className="text-[10px] font-semibold shrink-0 px-1 py-0.5 rounded" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>
+                  )}
+                </div>
+                <div className="flex items-baseline gap-1 shrink-0">
+                  <span className="text-sm font-bold tabular-nums w-12" style={{ color: "var(--party-dem)" }}>
+                    {isPlaceholder ? "—" : `${res.demPct.toFixed(1)}%`}
+                  </span>
+                  <span className="text-xs tabular-nums w-16 text-right" style={{ color: "var(--app-text-very-muted)" }}>
+                    {!isPlaceholder && (res.demVotes != null ? res.demVotes.toLocaleString() : "—")}
+                  </span>
+                </div>
+              </div>
+
+              {/* Rep row */}
+              <div className="flex items-baseline gap-2 mb-1.5">
+                <div className="flex min-w-0 flex-1 items-baseline gap-1.5">
+                  <span className="text-sm font-semibold min-w-0 truncate" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-rep)" }}>
+                    {isPlaceholder ? "TBD" : `${repName} (R)`}
+                  </span>
+                  {!isPlaceholder && res.repIncumbent && (
+                    <span className="text-[10px] font-semibold shrink-0 px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
+                  )}
+                </div>
+                <div className="flex items-baseline gap-1 shrink-0">
+                  <span className="text-sm font-bold tabular-nums w-12" style={{ color: "var(--party-rep)" }}>
+                    {isPlaceholder ? "—" : `${res.repPct.toFixed(1)}%`}
+                  </span>
+                  <span className="text-xs tabular-nums w-16 text-right" style={{ color: "var(--app-text-very-muted)" }}>
+                    {!isPlaceholder && (res.repVotes != null ? res.repVotes.toLocaleString() : "—")}
+                  </span>
+                </div>
+              </div>
+
+              {/* Bottom row: national diff + swing + progress bar */}
+              <div className="flex items-center gap-2">
+                {!isPlaceholder && res.nationalDiff != null && (() => {
+                  const diffIsD = res.nationalDiff <= 0;
+                  const diffAbs = Math.abs(res.nationalDiff).toFixed(1);
+                  return (
+                    <span
+                      className="text-[11px] font-bold whitespace-nowrap shrink-0"
+                      style={{ color: diffIsD ? "var(--party-dem)" : "var(--party-rep)" }}
+                      title="National Differential: national popular vote minus district result"
+                    >
+                      N{diffIsD ? "↓" : "↑"}{diffAbs}
+                    </span>
                   );
                 })()}
+                {!isPlaceholder && swing != null && (() => {
+                  const swingIsR = swing > 0;
+                  const swingAbs = Math.abs(swing).toFixed(1);
+                  return (
+                    <span
+                      className="text-[11px] font-bold whitespace-nowrap shrink-0"
+                      style={{ color: swing === 0 ? "var(--app-text-muted)" : swingIsR ? "var(--party-rep)" : "var(--party-dem)" }}
+                      title="Swing: change in margin vs previous election"
+                    >
+                      {swing === 0 ? `=${swingAbs}` : swingIsR ? `→R+${swingAbs}` : `←D+${swingAbs}`}
+                    </span>
+                  );
+                })()}
+                <div
+                  className="ml-auto h-2 rounded-full overflow-hidden shrink-0"
+                  style={{ width: "calc(3rem + 0.25rem + 4rem)", background: "var(--app-tab-bg)" }}
+                >
+                  {!isPlaceholder && (
+                    <>
+                      <div className="h-full float-left" style={{ width: `${dWidth}%`, background: "#1b408c" }} />
+                      <div className="h-full float-left" style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
+                    </>
+                  )}
+                </div>
               </div>
-              <div className={`${isCompact ? "h-3 mb-1.5" : "h-3.5 mb-1.5"} flex rounded-full overflow-hidden`} style={{ background: "var(--app-tab-bg)" }}>
-                {!isPlaceholder && (
-                  <>
-                    <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
-                    <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
-                  </>
-                )}
-              </div>
-              {!isPlaceholder && (
-                <>
-                  <div className="flex justify-between text-xs font-semibold">
-                    <span className="text-xs font-semibold" style={{ color: "var(--party-dem)" }}>{res.demPct}%</span>
-                    <span className="text-xs font-semibold" style={{ color: "var(--party-rep)" }}>{res.repPct}%</span>
-                  </div>
-                  <div className="flex justify-between mt-0.5 gap-3 text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-                    {res.demVotes != null
-                      ? <span className="truncate">{res.demVotes.toLocaleString()} votes</span>
-                      : <span className="italic">— votes</span>
-                    }
-                    {res.repVotes != null
-                      ? <span className="truncate text-right">{res.repVotes.toLocaleString()} votes</span>
-                      : <span className="italic text-right">— votes</span>
-                    }
-                  </div>
-                </>
-              )}
             </div>
           );
         })}
+    </div>
+  );
+
+  if (bare) {
+    return (
+      <div>
+        <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+          Past House Results
+        </h2>
+        {cards}
+      </div>
+    );
+  }
+
+  return (
+    <section
+      className={`rounded-xl p-3 mb-0 ${(scrollable || maxHeight) ? "flex flex-col" : ""} ${layoutClassName}`}
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", ...(maxHeight ? { maxHeight } : {}) }}
+    >
+      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+        Past House Results
+      </h2>
+      <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"} ${(scrollable || maxHeight) ? "min-h-0 flex-1 overflow-y-auto pr-1" : ""}`}>
+        {cards}
       </div>
     </section>
   );
@@ -637,6 +674,8 @@ export function HouseOnlyRecentStatewideResultsSection({
     { year: 2022, race: "Governor", demPct: 0, repPct: 0, demCandidate: "TBD", repCandidate: "TBD", placeholder: true },
   ],
   density = "default",
+  bare = false,
+  maxHeight,
 }: {
   results?: {
     year: number;
@@ -648,129 +687,158 @@ export function HouseOnlyRecentStatewideResultsSection({
     demVotes?: number;
     repVotes?: number;
     stateDiff?: number | null;
+    nationalDiff?: number | null;
+    swing?: number | null;
     placeholder?: boolean;
   }[];
   density?: DetailDensity;
+  bare?: boolean;
+  maxHeight?: string;
 }) {
   const isCompact = density === "compact";
 
-  return (
-    <section
-      className="rounded-xl p-3 mb-0 flex flex-col"
-      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-    >
-      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-        Recent Statewide Results
-      </h2>
-      <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"} min-h-0 flex-1 overflow-y-auto`}>
+  const cards = (
+    <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"}`}>
         {results.map((res) => {
           const isPlaceholder = !!res.placeholder;
           const winner = res.demPct > res.repPct ? "D" : "R";
           const margin = Math.abs(res.demPct - res.repPct).toFixed(1);
           const total = res.demPct + res.repPct;
           const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
+          const hasDiffs = !isPlaceholder && (res.nationalDiff != null || res.stateDiff != null || res.swing != null);
           return (
             <div
               key={`${res.year}-${res.race}`}
               className="rounded-lg p-2.5"
               style={{ opacity: isPlaceholder ? 0.45 : 1, background: "var(--app-bg)" }}
             >
-              <div className="mb-2 flex items-center justify-between gap-3">
-                <div className="flex min-w-0 items-center gap-3">
-                  <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+              {/* Row 1: year + race | result margin */}
+              <div className="flex items-center justify-between gap-2 mb-1.5">
+                <div className="flex min-w-0 items-center gap-2">
+                  <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
                   <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{res.race}</span>
                 </div>
                 {isPlaceholder ? (
-                  <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
+                  <span className="text-xs italic shrink-0" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
                 ) : (
-                  <div className="flex items-center gap-1.5 shrink-0">
-                    {res.stateDiff != null && (() => {
-                      const diffIsD = res.stateDiff >= 0;
-                      const diffAbs = Math.abs(res.stateDiff).toFixed(1);
-                      return (
-                        <span
-                          className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
-                          style={diffIsD
-                            ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
-                            : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
-                          title="State Differential: district result minus statewide result"
-                        >
-                          {diffIsD ? "↓" : "↑"}{diffAbs}
-                        </span>
-                      );
-                    })()}
-                    <span
-                      className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
-                      style={winner === "D"
-                        ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
-                        : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
-                    >
-                      {winner}+{margin}
-                    </span>
-                  </div>
+                  <span
+                    className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0"
+                    style={winner === "D"
+                      ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                      : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                  >
+                    {winner}+{margin}
+                  </span>
                 )}
               </div>
-              <div className="mb-2">
-                {(() => {
-                  const hasNames = isPlaceholder || res.demCandidate || res.repCandidate;
-                  return hasNames ? (
-                    <>
-                      <div className="mb-0.5 flex items-center justify-between gap-3">
-                        <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                        <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                      </div>
-                      <div className="flex min-w-0 items-center gap-1.5 whitespace-nowrap text-sm leading-tight">
-                        {(isPlaceholder || res.demCandidate) && (
-                          <span className="min-w-0 flex-1 truncate font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-dem)" }}>
-                            {isPlaceholder ? "TBD" : res.demCandidate}
-                          </span>
-                        )}
-                        <span className="shrink-0 text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                        {(isPlaceholder || res.repCandidate) && (
-                          <span className="min-w-0 flex-1 truncate text-right font-semibold" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-rep)" }}>
-                            {isPlaceholder ? "TBD" : res.repCandidate}
-                          </span>
-                        )}
-                      </div>
-                    </>
-                  ) : (
-                    <div className="flex items-center justify-between gap-3">
-                      <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Democrat</span>
-                      <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>vs.</span>
-                      <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>Republican</span>
-                    </div>
-                  );
-                })()}
-              </div>
-              <div className={`${isCompact ? "h-3 mb-1.5" : "h-3.5 mb-1.5"} flex rounded-full overflow-hidden`} style={{ background: "var(--app-tab-bg)" }}>
-                {!isPlaceholder && (
-                  <>
-                    <div style={{ width: `${dWidth}%`, background: "#1b408c" }} />
-                    <div style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
-                  </>
+
+              {/* Dem row */}
+              <div className="flex items-baseline gap-2 mb-1">
+                <span className="text-sm font-semibold shrink-0 w-8" style={{ color: "var(--party-dem)" }}>Dem</span>
+                {res.demCandidate && (
+                  <span className="text-sm min-w-0 flex-1 truncate" style={{ color: "var(--party-dem)" }}>{res.demCandidate}</span>
                 )}
+                <div className="flex items-baseline gap-1 ml-auto shrink-0">
+                  <span className="text-sm font-bold tabular-nums w-12" style={{ color: "var(--party-dem)" }}>
+                    {isPlaceholder ? "—" : `${res.demPct.toFixed(1)}%`}
+                  </span>
+                  <span className="text-xs tabular-nums w-16 text-right" style={{ color: "var(--app-text-very-muted)" }}>
+                    {!isPlaceholder && (res.demVotes != null ? res.demVotes.toLocaleString() : "—")}
+                  </span>
+                </div>
               </div>
-              {!isPlaceholder && (
-                <>
-                  <div className="flex justify-between text-xs font-semibold">
-                    <span style={{ color: "var(--party-dem)" }}>{res.demPct}%</span>
-                    <span style={{ color: "var(--party-rep)" }}>{res.repPct}%</span>
+
+              {/* Rep row */}
+              <div className={`flex items-baseline gap-2 ${hasDiffs ? "mb-1.5" : ""}`}>
+                <span className="text-sm font-semibold shrink-0 w-8" style={{ color: "var(--party-rep)" }}>Rep</span>
+                {res.repCandidate && (
+                  <span className="text-sm min-w-0 flex-1 truncate" style={{ color: "var(--party-rep)" }}>{res.repCandidate}</span>
+                )}
+                <div className="flex items-baseline gap-1 ml-auto shrink-0">
+                  <span className="text-sm font-bold tabular-nums w-12" style={{ color: "var(--party-rep)" }}>
+                    {isPlaceholder ? "—" : `${res.repPct.toFixed(1)}%`}
+                  </span>
+                  <span className="text-xs tabular-nums w-16 text-right" style={{ color: "var(--app-text-very-muted)" }}>
+                    {!isPlaceholder && (res.repVotes != null ? res.repVotes.toLocaleString() : "—")}
+                  </span>
+                </div>
+              </div>
+
+              {/* Bottom row: N / S diffs + progress bar */}
+              {hasDiffs && (
+                <div className="flex items-center gap-2">
+                  {res.nationalDiff != null && (() => {
+                    const diffIsD = res.nationalDiff <= 0;
+                    const diffAbs = Math.abs(res.nationalDiff).toFixed(1);
+                    return (
+                      <span
+                        className="text-[11px] font-bold whitespace-nowrap shrink-0"
+                        style={{ color: diffIsD ? "var(--party-dem)" : "var(--party-rep)" }}
+                        title="National Differential: national popular vote minus district result"
+                      >
+                        N{diffIsD ? "↓" : "↑"}{diffAbs}
+                      </span>
+                    );
+                  })()}
+                  {res.stateDiff != null && (() => {
+                    const diffIsD = res.stateDiff >= 0;
+                    const diffAbs = Math.abs(res.stateDiff).toFixed(1);
+                    return (
+                      <span
+                        className="text-[11px] font-bold whitespace-nowrap shrink-0"
+                        style={{ color: diffIsD ? "var(--party-dem)" : "var(--party-rep)" }}
+                        title="State Differential: district result minus statewide result"
+                      >
+                        S{diffIsD ? "↓" : "↑"}{diffAbs}
+                      </span>
+                    );
+                  })()}
+                  {res.swing != null && (() => {
+                    const swingIsR = res.swing > 0;
+                    const swingAbs = Math.abs(res.swing).toFixed(1);
+                    return (
+                      <span
+                        className="text-[11px] font-bold whitespace-nowrap shrink-0"
+                        style={{ color: res.swing === 0 ? "var(--app-text-muted)" : swingIsR ? "var(--party-rep)" : "var(--party-dem)" }}
+                        title="Swing: change in margin vs previous election of same type"
+                      >
+                        {res.swing === 0 ? `=${swingAbs}` : swingIsR ? `→R+${swingAbs}` : `←D+${swingAbs}`}
+                      </span>
+                    );
+                  })()}
+                  <div className="ml-auto h-2 rounded-full overflow-hidden shrink-0" style={{ width: "calc(3rem + 0.25rem + 4rem)", background: "var(--app-tab-bg)" }}>
+                    <div className="h-full float-left" style={{ width: `${dWidth}%`, background: "#1b408c" }} />
+                    <div className="h-full float-left" style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
                   </div>
-                  <div className="flex justify-between mt-0.5 gap-3 text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-                    {res.demVotes != null
-                      ? <span className="truncate">{res.demVotes.toLocaleString()} votes</span>
-                      : <span className="italic">— votes</span>
-                    }
-                    {res.repVotes != null
-                      ? <span className="truncate text-right">{res.repVotes.toLocaleString()} votes</span>
-                      : <span className="italic text-right">— votes</span>
-                    }
-                  </div>
-                </>
+                </div>
               )}
             </div>
           );
         })}
+    </div>
+  );
+
+  if (bare) {
+    return (
+      <div>
+        <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+          Past Statewide Results
+        </h2>
+        {cards}
+      </div>
+    );
+  }
+
+  return (
+    <section
+      className="rounded-xl p-3 mb-0 flex flex-col"
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", ...(maxHeight ? { maxHeight } : {}) }}
+    >
+      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+        Past Statewide Results
+      </h2>
+      <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"} min-h-0 flex-1 overflow-y-auto pr-1`}>
+        {cards}
       </div>
     </section>
   );

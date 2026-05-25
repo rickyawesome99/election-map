@@ -10346,6 +10346,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.921,
     "candidates": {
       "dem": {
         "name": "Clyde Jones",
@@ -10457,6 +10459,8 @@ export const houseData: RaceForecast[] = [
         "value": 95
       }
     ],
+    "kalshiDem": 0.28,
+    "kalshiRep": 0.67,
     "candidates": {
       "dem": {
         "name": "Shomari Figures",
@@ -10570,6 +10574,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.76,
     "candidates": {
       "dem": {
         "name": "Victor Mcinnis",
@@ -10683,6 +10689,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.77,
     "candidates": {
       "dem": {
         "name": "Amanda Pusczek",
@@ -10794,6 +10802,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.76,
     "candidates": {
       "dem": {
         "name": "Andrew Sneed",
@@ -10904,6 +10914,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.75,
     "candidates": {
       "dem": {
         "name": "Elizabeth Anderson",
@@ -11017,6 +11029,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.11,
     "candidates": {
       "dem": {
         "name": "Terri Sewell",
@@ -11467,6 +11481,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Yassamin Ansari",
@@ -11580,6 +11596,8 @@ export const houseData: RaceForecast[] = [
         "value": 89
       }
     ],
+    "kalshiDem": 0.88,
+    "kalshiRep": 0.081,
     "candidates": {
       "dem": {
         "name": "Greg Stanton",
@@ -11694,6 +11712,8 @@ export const houseData: RaceForecast[] = [
         "value": 7
       }
     ],
+    "kalshiDem": 0.17,
+    "kalshiRep": 0.74,
     "candidates": {
       "dem": {
         "name": "Christopher James",
@@ -11922,6 +11942,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.76,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Adelita Grijalva",
@@ -12036,6 +12058,8 @@ export const houseData: RaceForecast[] = [
         "value": 12
       }
     ],
+    "kalshiDem": 0.082,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "Bernadette Placentia",
@@ -12150,6 +12174,8 @@ export const houseData: RaceForecast[] = [
         "value": 60
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.74,
     "candidates": {
       "dem": {
         "name": "Danielle Sterbinsky",
@@ -12263,6 +12289,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.026,
+    "kalshiRep": 0.972,
     "candidates": {
       "dem": {
         "name": "Terri Green",
@@ -12376,6 +12404,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.16,
+    "kalshiRep": 0.83,
     "candidates": {
       "dem": {
         "name": "Chris Jones",
@@ -12491,6 +12521,8 @@ export const houseData: RaceForecast[] = [
         "value": 50
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.76,
     "candidates": {
       "dem": {
         "name": "Robb Ryerse",
@@ -12606,6 +12638,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.84,
     "candidates": {
       "dem": {
         "name": "James Russell",
@@ -12721,6 +12755,8 @@ export const houseData: RaceForecast[] = [
         "value": 97
       }
     ],
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Mike McGuire",
@@ -12836,6 +12872,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.76,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Jared Huffman",
@@ -13065,6 +13103,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.76,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Mike Thompson",
@@ -13179,6 +13219,8 @@ export const houseData: RaceForecast[] = [
         "value": 4
       }
     ],
+    "kalshiDem": 0.077,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Michael Masuda",
@@ -13293,6 +13335,8 @@ export const houseData: RaceForecast[] = [
         "value": 89
       }
     ],
+    "kalshiDem": 0.76,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Thien Ho",
@@ -13405,6 +13449,8 @@ export const houseData: RaceForecast[] = [
         "value": 98
       }
     ],
+    "kalshiDem": 0.76,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Doris Matsui",
@@ -13519,6 +13565,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "John Garamendi",
@@ -13744,6 +13792,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Mark DeSaulnier",
@@ -13858,6 +13908,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.79,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Scott Wiener",
@@ -13972,6 +14024,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.88,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Lateefah Simon",
@@ -14197,6 +14251,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.923,
+    "kalshiRep": 0.047,
     "candidates": {
       "dem": {
         "name": "Abrar Qadir",
@@ -14311,6 +14367,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.9,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Kevin Mullin",
@@ -14423,6 +14481,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Sam Liccardo",
@@ -14534,6 +14594,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.82,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Rohit Khanna",
@@ -14646,6 +14708,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.75,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Zoe Lofgren",
@@ -14758,6 +14822,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.84,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Jimmy Panetta",
@@ -14872,6 +14938,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.92,
     "candidates": {
       "dem": {
         "name": "Carol Roper",
@@ -15211,6 +15279,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.099,
+    "kalshiRep": 0.9,
     "candidates": {
       "dem": {
         "name": "Paul Chakalian",
@@ -15325,6 +15395,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.78,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Salud Carbajal",
@@ -15439,6 +15511,8 @@ export const houseData: RaceForecast[] = [
         "value": 95
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Raul Ruiz",
@@ -15553,6 +15627,8 @@ export const houseData: RaceForecast[] = [
         "value": 98
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Sonia Devgan-Kacker",
@@ -15780,6 +15856,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.74,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Judy Chu",
@@ -15894,6 +15972,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Luz Rivas",
@@ -16002,6 +16082,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Laura Friedman",
@@ -16113,6 +16195,8 @@ export const houseData: RaceForecast[] = [
         "value": 98
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Gilbert Cisneros",
@@ -16226,6 +16310,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Brad Sherman",
@@ -16338,6 +16424,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Pete Aguilar",
@@ -16452,6 +16540,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.78,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Jimmy Gomez",
@@ -16559,6 +16649,8 @@ export const houseData: RaceForecast[] = [
         "value": 98
       }
     ],
+    "kalshiDem": 0.8,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Norma Torres",
@@ -16674,6 +16766,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Ted Lieu",
@@ -16788,6 +16882,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.78,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Sydney Kamlager-Dove",
@@ -16898,6 +16994,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.76,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Hilda Solis",
@@ -17011,6 +17109,8 @@ export const houseData: RaceForecast[] = [
         "value": 98
       }
     ],
+    "kalshiDem": 0.74,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Mark Takano",
@@ -17352,6 +17452,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.78,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Robert Garcia",
@@ -17466,6 +17568,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.79,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Maxine Waters",
@@ -17581,6 +17685,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.78,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Nanette Barragan",
@@ -17803,6 +17909,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Lou Correa",
@@ -18028,6 +18136,8 @@ export const houseData: RaceForecast[] = [
         "value": 81
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.053,
     "candidates": {
       "dem": {
         "name": "Brandon Riker",
@@ -18256,6 +18366,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.78,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Scott Peters",
@@ -18369,6 +18481,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.78,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Sara Jacobs",
@@ -18483,6 +18597,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.73,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Juan Vargas",
@@ -18597,6 +18713,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Diana DeGette",
@@ -18712,6 +18830,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.91,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Joe Neguse",
@@ -18939,6 +19059,8 @@ export const houseData: RaceForecast[] = [
         "value": 18
       }
     ],
+    "kalshiDem": 0.28,
+    "kalshiRep": 0.65,
     "candidates": {
       "dem": {
         "name": "Eileen Laubacher",
@@ -19053,6 +19175,8 @@ export const houseData: RaceForecast[] = [
         "value": 28
       }
     ],
+    "kalshiDem": 0.3,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Jessica Killin",
@@ -19167,6 +19291,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.79,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Jason Crow",
@@ -19282,6 +19408,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.76,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Brittany Pettersen",
@@ -19474,6 +19602,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.85,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "John Larson",
@@ -19589,6 +19719,8 @@ export const houseData: RaceForecast[] = [
         "value": 94
       }
     ],
+    "kalshiDem": 0.76,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Joe Courtney",
@@ -19704,6 +19836,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.76,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Rosa Delauro",
@@ -19819,6 +19953,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.78,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Jim Himes",
@@ -20161,6 +20297,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.39,
     "candidates": {
       "dem": {
         "name": "Marcel Davis",
@@ -20275,6 +20413,8 @@ export const houseData: RaceForecast[] = [
         "value": 13
       }
     ],
+    "kalshiDem": 0.07,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "Nicholas Zateslo",
@@ -20386,6 +20526,8 @@ export const houseData: RaceForecast[] = [
         "value": 7
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Seth Harp",
@@ -20500,6 +20642,8 @@ export const houseData: RaceForecast[] = [
         "value": 28
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.65,
     "candidates": {
       "dem": {
         "name": "Michael Kirwan",
@@ -20613,6 +20757,8 @@ export const houseData: RaceForecast[] = [
         "value": 7
       }
     ],
+    "kalshiDem": 0.06,
+    "kalshiRep": 0.66,
     "candidates": {
       "dem": {
         "name": "Rachel Grage",
@@ -20722,6 +20868,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.75,
     "candidates": {
       "dem": {
         "name": "Jennifer Jenkins",
@@ -20836,6 +20984,8 @@ export const houseData: RaceForecast[] = [
         "value": 35
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.62,
     "candidates": {
       "dem": {
         "name": "Bale Dalton",
@@ -20950,6 +21100,8 @@ export const houseData: RaceForecast[] = [
         "value": 4
       }
     ],
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Paul Dellinger",
@@ -21064,6 +21216,8 @@ export const houseData: RaceForecast[] = [
         "value": 95
       }
     ],
+    "kalshiDem": 0.38,
+    "kalshiRep": 0.62,
     "candidates": {
       "dem": {
         "name": "Darren Soto",
@@ -21178,6 +21332,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.13,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Maxwell Frost",
@@ -21287,6 +21443,8 @@ export const houseData: RaceForecast[] = [
         "value": 14
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.74,
     "candidates": {
       "dem": {
         "name": "Barbara Hall",
@@ -21401,6 +21559,8 @@ export const houseData: RaceForecast[] = [
         "value": 20
       }
     ],
+    "kalshiDem": 0.04,
+    "kalshiRep": 0.67,
     "candidates": {
       "dem": {
         "name": "Christopher Irizarry",
@@ -21630,6 +21790,8 @@ export const houseData: RaceForecast[] = [
         "value": 98
       }
     ],
+    "kalshiDem": 0.47,
+    "kalshiRep": 0.5,
     "candidates": {
       "dem": {
         "name": "Kathy Castor",
@@ -21741,6 +21903,8 @@ export const houseData: RaceForecast[] = [
         "value": 37
       }
     ],
+    "kalshiDem": 0.21,
+    "kalshiRep": 0.67,
     "candidates": {
       "dem": {
         "name": "Darren McAuley",
@@ -21853,6 +22017,8 @@ export const houseData: RaceForecast[] = [
         "value": 15
       }
     ],
+    "kalshiDem": 0.21,
+    "kalshiRep": 0.76,
     "candidates": {
       "dem": {
         "name": "Jan Schneider",
@@ -21968,6 +22134,8 @@ export const houseData: RaceForecast[] = [
         "value": 4
       }
     ],
+    "kalshiDem": 0.13,
+    "kalshiRep": 0.84,
     "candidates": {
       "dem": {
         "name": "Matthew Montavon",
@@ -22082,6 +22250,8 @@ export const houseData: RaceForecast[] = [
         "value": 1
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.67,
     "candidates": {
       "dem": {
         "name": "Tiffanie Luong",
@@ -22195,6 +22365,8 @@ export const houseData: RaceForecast[] = [
         "value": 1
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.74,
     "candidates": {
       "dem": {
         "name": "Howard Sapp",
@@ -22308,6 +22480,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.914,
+    "kalshiRep": 0.056,
     "candidates": {
       "dem": {
         "name": "Sheila Cherfilus-Mccormick",
@@ -22417,6 +22591,8 @@ export const houseData: RaceForecast[] = [
         "value": 14
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Pia Dandiya",
@@ -22526,6 +22702,8 @@ export const houseData: RaceForecast[] = [
         "value": 96
       }
     ],
+    "kalshiDem": 0.52,
+    "kalshiRep": 0.46,
     "candidates": {
       "dem": {
         "name": "Lois Frankel",
@@ -22753,6 +22931,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.86,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Frederica Wilson",
@@ -22860,6 +23040,8 @@ export const houseData: RaceForecast[] = [
         "value": 96
       }
     ],
+    "kalshiDem": 0.69,
+    "kalshiRep": 0.31,
     "candidates": {
       "dem": {
         "name": "Debbie Wasserman Schultz",
@@ -22970,6 +23152,8 @@ export const houseData: RaceForecast[] = [
         "value": 40
       }
     ],
+    "kalshiDem": 0.16,
+    "kalshiRep": 0.64,
     "candidates": {
       "dem": {
         "name": "Yurina Gil",
@@ -23084,6 +23268,8 @@ export const houseData: RaceForecast[] = [
         "value": 31
       }
     ],
+    "kalshiDem": 0.3,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "Richard Lamondin",
@@ -23198,6 +23384,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.74,
     "candidates": {
       "dem": {
         "name": "Phil Ehr",
@@ -23276,6 +23464,8 @@ export const houseData: RaceForecast[] = [
         "value": 19
       }
     ],
+    "kalshiDem": 0.14,
+    "kalshiRep": 0.83,
     "candidates": {
       "dem": {
         "name": "Michael Mccord",
@@ -23389,6 +23579,8 @@ export const houseData: RaceForecast[] = [
         "value": 96
       }
     ],
+    "kalshiDem": 0.86,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Sanford Bishop",
@@ -23504,6 +23696,8 @@ export const houseData: RaceForecast[] = [
         "value": 50
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.76,
     "candidates": {
       "dem": {
         "name": "Maura Keller",
@@ -23617,6 +23811,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.81,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Henry Johnson",
@@ -23732,6 +23928,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.947,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Nikema Williams",
@@ -23844,6 +24042,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.85,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Lucy McBath",
@@ -23957,6 +24157,8 @@ export const houseData: RaceForecast[] = [
         "value": 2
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Haiden Moburg",
@@ -24069,6 +24271,8 @@ export const houseData: RaceForecast[] = [
         "value": 30
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "James Cooper",
@@ -24182,6 +24386,8 @@ export const houseData: RaceForecast[] = [
         "value": 20
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.9,
     "candidates": {
       "dem": {
         "name": "Nicholas Alex",
@@ -24294,6 +24500,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.905,
     "candidates": {
       "dem": {
         "name": "Alexandra Doherty",
@@ -24406,6 +24614,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.11,
+    "kalshiRep": 0.86,
     "candidates": {
       "dem": {
         "name": "Barry Wolfert",
@@ -24521,6 +24731,8 @@ export const houseData: RaceForecast[] = [
         "value": 18
       }
     ],
+    "kalshiDem": 0.17,
+    "kalshiRep": 0.8,
     "candidates": {
       "dem": {
         "name": "Brianna Woodson",
@@ -24636,6 +24848,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.73,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "David Scott",
@@ -24749,6 +24963,8 @@ export const houseData: RaceForecast[] = [
         "value": 20
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.71,
     "candidates": {
       "dem": {
         "name": "Shawn Harris",
@@ -24861,6 +25077,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.93,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Ed Case",
@@ -24974,6 +25192,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Jill Tokuda",
@@ -25087,6 +25307,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.95,
     "candidates": {
       "dem": {
         "name": "Kaylee Peterson",
@@ -25201,6 +25423,8 @@ export const houseData: RaceForecast[] = [
         "value": 1
       }
     ],
+    "kalshiDem": 0.066,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Julie Wiley",
@@ -25316,6 +25540,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.69,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Jonathan Jackson",
@@ -25430,6 +25656,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.962,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Donna Miller",
@@ -25545,6 +25773,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Delia Ramirez",
@@ -25656,6 +25886,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.87,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Patty Garcia",
@@ -25768,6 +26000,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.73,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Mike Quigley",
@@ -25883,6 +26117,8 @@ export const houseData: RaceForecast[] = [
         "value": 94
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Sean Casten",
@@ -25998,6 +26234,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.74,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "La Shawn Ford",
@@ -26111,6 +26349,8 @@ export const houseData: RaceForecast[] = [
         "value": 95
       }
     ],
+    "kalshiDem": 0.922,
+    "kalshiRep": 0.048,
     "candidates": {
       "dem": {
         "name": "Melissa Bean",
@@ -26225,6 +26465,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Daniel Biss",
@@ -26340,6 +26582,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.81,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Brad Schneider",
@@ -26454,6 +26698,8 @@ export const houseData: RaceForecast[] = [
         "value": 98
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Bill Foster",
@@ -26569,6 +26815,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.77,
     "candidates": {
       "dem": {
         "name": "Julie Fortier",
@@ -26684,6 +26932,8 @@ export const houseData: RaceForecast[] = [
         "value": 98
       }
     ],
+    "kalshiDem": 0.93,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Nikki Budzinski",
@@ -26798,6 +27048,8 @@ export const houseData: RaceForecast[] = [
         "value": 95
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Lauren Underwood",
@@ -26913,6 +27165,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.72,
     "candidates": {
       "dem": {
         "name": "Jennifer Todd",
@@ -27023,6 +27277,8 @@ export const houseData: RaceForecast[] = [
         "value": 80
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.67,
     "candidates": {
       "dem": {
         "name": "Paul Nolley",
@@ -27361,6 +27617,8 @@ export const houseData: RaceForecast[] = [
         "value": 70
       }
     ],
+    "kalshiDem": 0.1,
+    "kalshiRep": 0.89,
     "candidates": {
       "dem": {
         "name": "Jamee Decio",
@@ -27475,6 +27733,8 @@ export const houseData: RaceForecast[] = [
         "value": 20
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Kelly Thompson",
@@ -27588,6 +27848,8 @@ export const houseData: RaceForecast[] = [
         "value": 30
       }
     ],
+    "kalshiDem": 0.094,
+    "kalshiRep": 0.71,
     "candidates": {
       "dem": {
         "name": "Joseph Mackey",
@@ -27702,6 +27964,8 @@ export const houseData: RaceForecast[] = [
         "value": 7
       }
     ],
+    "kalshiDem": 0.1,
+    "kalshiRep": 0.63,
     "candidates": {
       "dem": {
         "name": "James Ford",
@@ -27816,6 +28080,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Cynthia Wirth",
@@ -28044,6 +28310,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Mary Allen",
@@ -28158,6 +28426,8 @@ export const houseData: RaceForecast[] = [
         "value": 40
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.9,
     "candidates": {
       "dem": {
         "name": "James Graham",
@@ -28385,6 +28655,8 @@ export const houseData: RaceForecast[] = [
         "value": 40
       }
     ],
+    "kalshiDem": 0.47,
+    "kalshiRep": 0.5,
     "candidates": {
       "dem": {
         "name": "Lindsay James",
@@ -28613,6 +28885,8 @@ export const houseData: RaceForecast[] = [
         "value": 90
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.84,
     "candidates": {
       "dem": {
         "name": "Dave Dawson",
@@ -28727,6 +29001,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.003,
+    "kalshiRep": 0.91,
     "candidates": {
       "dem": {
         "name": "Kenneth McRoberts",
@@ -28840,6 +29116,8 @@ export const houseData: RaceForecast[] = [
         "value": 8
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.87,
     "candidates": {
       "dem": {
         "name": "Don Coover",
@@ -28952,6 +29230,8 @@ export const houseData: RaceForecast[] = [
         "value": 92
       }
     ],
+    "kalshiDem": 0.89,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Sharice Davids",
@@ -29067,6 +29347,8 @@ export const houseData: RaceForecast[] = [
         "value": 2
       }
     ],
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.86,
     "candidates": {
       "dem": {
         "name": "Chris Carmichael",
@@ -29182,6 +29464,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.72,
     "candidates": {
       "dem": {
         "name": "John Williams",
@@ -29296,6 +29580,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.71,
     "candidates": {
       "dem": {
         "name": "William Compton",
@@ -29409,6 +29695,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Morgan Mcgarvey",
@@ -29523,6 +29811,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.14,
+    "kalshiRep": 0.87,
     "candidates": {
       "dem": {
         "name": "Melissa Strange",
@@ -29636,6 +29926,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.95,
     "candidates": {
       "dem": {
         "name": "Ned Pillersdorf",
@@ -29747,6 +30039,8 @@ export const houseData: RaceForecast[] = [
         "value": 20
       }
     ],
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.64,
     "candidates": {
       "dem": {
         "name": "Zach Dembo",
@@ -29857,6 +30151,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "Lauren Jewett",
@@ -29972,6 +30268,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.86,
+    "kalshiRep": 0.062,
     "candidates": {
       "dem": {
         "name": "Troy Carter",
@@ -30085,6 +30383,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Tia LeBrun",
@@ -30199,6 +30499,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Matthew Gromlich",
@@ -30307,6 +30609,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.055,
+    "kalshiRep": 0.92,
     "candidates": {
       "dem": {
         "name": "Dan Mckay",
@@ -30419,6 +30723,8 @@ export const houseData: RaceForecast[] = [
         "value": 96
       }
     ],
+    "kalshiDem": 0.05,
+    "kalshiRep": 0.66,
     "candidates": {
       "dem": {
         "name": "Cleo Fields",
@@ -30533,6 +30839,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.956,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Chellie Pingree",
@@ -30763,6 +31071,8 @@ export const houseData: RaceForecast[] = [
         "value": 8
       }
     ],
+    "kalshiDem": 0.18,
+    "kalshiRep": 0.56,
     "candidates": {
       "dem": {
         "name": "Daniel Schwartz",
@@ -30878,6 +31188,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.87,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "John Olszewski",
@@ -30992,6 +31304,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.73,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Sarah Elfreth",
@@ -31106,6 +31420,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Glenn Ivey",
@@ -31219,6 +31535,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Quincy Bareebe",
@@ -31334,6 +31652,8 @@ export const houseData: RaceForecast[] = [
         "value": 88
       }
     ],
+    "kalshiDem": 0.68,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "April Delaney",
@@ -31447,6 +31767,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.14,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Kweisi Mfume",
@@ -31562,6 +31884,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.69,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Jamie Raskin",
@@ -31676,6 +32000,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Richard Neal",
@@ -31787,6 +32113,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.94,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "James McGovern",
@@ -31900,6 +32228,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Lori Trahan",
@@ -32010,6 +32340,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.8,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Jake Auchincloss",
@@ -32118,6 +32450,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.973,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Katherine Clark",
@@ -32229,6 +32563,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.69,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Daniel Koh",
@@ -32340,6 +32676,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.84,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Ayanna Pressley",
@@ -32448,6 +32786,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Stephen Lynch",
@@ -32561,6 +32901,8 @@ export const houseData: RaceForecast[] = [
         "value": 97
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "William Keating",
@@ -32676,6 +33018,8 @@ export const houseData: RaceForecast[] = [
         "value": 7
       }
     ],
+    "kalshiDem": 0.27,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Callie Barr",
@@ -32790,6 +33134,8 @@ export const houseData: RaceForecast[] = [
         "value": 40
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.73,
     "candidates": {
       "dem": {
         "name": "Benjamin Ambrose",
@@ -33131,6 +33477,8 @@ export const houseData: RaceForecast[] = [
         "value": 90
       }
     ],
+    "kalshiDem": 0.025,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "Christian Vukasovich",
@@ -33245,6 +33593,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Debbie Dingell",
@@ -33585,6 +33935,8 @@ export const houseData: RaceForecast[] = [
         "value": 20
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.92,
     "candidates": {
       "dem": {
         "name": "Steven Pooley",
@@ -33810,6 +34162,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.75,
+    "kalshiRep": 0.03,
     "candidates": {
       "dem": {
         "name": "Jeremy Moss",
@@ -33924,6 +34278,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Rashida Tlaib",
@@ -34038,6 +34394,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.75,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Shri Thanedar",
@@ -34151,6 +34509,8 @@ export const houseData: RaceForecast[] = [
         "value": 20
       }
     ],
+    "kalshiDem": 0.32,
+    "kalshiRep": 0.67,
     "candidates": {
       "dem": {
         "name": "Jacob Johnson",
@@ -34379,6 +34739,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Kelly Morrison",
@@ -34493,6 +34855,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.86,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Betty McCollum",
@@ -34608,6 +34972,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.91,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Ilhan Omar",
@@ -34722,6 +35088,8 @@ export const houseData: RaceForecast[] = [
         "value": 1
       }
     ],
+    "kalshiDem": 0.12,
+    "kalshiRep": 0.38,
     "candidates": {
       "dem": {
         "name": "Generic Democrat",
@@ -34837,6 +35205,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "Generic Democrat",
@@ -34952,6 +35322,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.27,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Generic Democrat",
@@ -35066,6 +35438,8 @@ export const houseData: RaceForecast[] = [
         "value": 20
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.73,
     "candidates": {
       "dem": {
         "name": "Cliff Johnson",
@@ -35181,6 +35555,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.84,
+    "kalshiRep": 0.13,
     "candidates": {
       "dem": {
         "name": "Bennie Thompson",
@@ -35296,6 +35672,8 @@ export const houseData: RaceForecast[] = [
         "value": 30
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.94,
     "candidates": {
       "dem": {
         "name": "Michael Chiaradio",
@@ -35408,6 +35786,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.6,
     "candidates": {
       "dem": {
         "name": "Jeffrey Hulum",
@@ -35520,6 +35900,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Wesley Bell",
@@ -35633,6 +36015,8 @@ export const houseData: RaceForecast[] = [
         "value": 26
       }
     ],
+    "kalshiDem": 0.19,
+    "kalshiRep": 0.78,
     "candidates": {
       "dem": {
         "name": "Frederick Wellman",
@@ -35748,6 +36132,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Bethany Mann",
@@ -35862,6 +36248,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.86,
     "candidates": {
       "dem": {
         "name": "Hartzell Gray",
@@ -36091,6 +36479,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.8,
     "candidates": {
       "dem": {
         "name": "Matthew Levine",
@@ -36206,6 +36596,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.72,
     "candidates": {
       "dem": {
         "name": "Missi Hesketh",
@@ -36320,6 +36712,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.71,
     "candidates": {
       "dem": {
         "name": "Clayton Harbison",
@@ -36548,6 +36942,8 @@ export const houseData: RaceForecast[] = [
         "value": 50
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.82,
     "candidates": {
       "dem": {
         "name": "Brian Miller",
@@ -36625,6 +37021,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.1,
+    "kalshiRep": 0.79,
     "candidates": {
       "dem": {
         "name": "Christopher Backemeyer",
@@ -36855,6 +37253,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.031,
+    "kalshiRep": 0.938,
     "candidates": {
       "dem": {
         "name": "Becky Stille",
@@ -37083,6 +37483,8 @@ export const houseData: RaceForecast[] = [
         "value": 4
       }
     ],
+    "kalshiDem": 0.07,
+    "kalshiRep": 0.61,
     "candidates": {
       "dem": {
         "name": "Matthew Fonken",
@@ -37539,6 +37941,8 @@ export const houseData: RaceForecast[] = [
         "value": 90
       }
     ],
+    "kalshiDem": 0.9,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Maggie Goodlander",
@@ -37653,6 +38057,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Donald Norcross",
@@ -37768,6 +38174,8 @@ export const houseData: RaceForecast[] = [
         "value": 34
       }
     ],
+    "kalshiDem": 0.24,
+    "kalshiRep": 0.58,
     "candidates": {
       "dem": {
         "name": "Bayly Winder",
@@ -37882,6 +38290,8 @@ export const houseData: RaceForecast[] = [
         "value": 97
       }
     ],
+    "kalshiDem": 0.89,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Herb Conaway",
@@ -37996,6 +38406,8 @@ export const houseData: RaceForecast[] = [
         "value": 1
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.9,
     "candidates": {
       "dem": {
         "name": "Nicholas Small",
@@ -38226,6 +38638,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.65,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Frank Pallone",
@@ -38456,6 +38870,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.007,
     "candidates": {
       "dem": {
         "name": "Robert Menendez",
@@ -38684,6 +39100,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.73,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "LaMonica McIver",
@@ -38799,6 +39217,8 @@ export const houseData: RaceForecast[] = [
         "value": 97
       }
     ],
+    "kalshiDem": 0.86,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Democratic Candidate",
@@ -38913,6 +39333,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.942,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Brad Cohen",
@@ -39028,6 +39450,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Melanie Stansbury",
@@ -39256,6 +39680,8 @@ export const houseData: RaceForecast[] = [
         "value": 95
       }
     ],
+    "kalshiDem": 0.68,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Teresa Leger Fernandez",
@@ -39370,6 +39796,8 @@ export const houseData: RaceForecast[] = [
         "value": 31
       }
     ],
+    "kalshiDem": 0.3,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Christopher Gallant",
@@ -39484,6 +39912,8 @@ export const houseData: RaceForecast[] = [
         "value": 17
       }
     ],
+    "kalshiDem": 0.18,
+    "kalshiRep": 0.78,
     "candidates": {
       "dem": {
         "name": "Patrick Halpin",
@@ -39825,6 +40255,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Gregory Meeks",
@@ -39936,6 +40368,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Grace Meng",
@@ -40051,6 +40485,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Antonio Reynoso",
@@ -40166,6 +40602,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Hakeem Jeffries",
@@ -40281,6 +40719,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.83,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Yvette Clarke",
@@ -40396,6 +40836,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Daniel Goldman",
@@ -40510,6 +40952,8 @@ export const houseData: RaceForecast[] = [
         "value": 3
       }
     ],
+    "kalshiDem": 0.1,
+    "kalshiRep": 0.86,
     "candidates": {
       "dem": {
         "name": "Troy Mcghie",
@@ -40625,6 +41069,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.83,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Alexander Bores",
@@ -40739,6 +41185,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.98,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Adriano Espaillat",
@@ -40851,6 +41299,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Alexandria Ocasio-Cortez",
@@ -40965,6 +41415,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Ritchie Torres",
@@ -41079,6 +41531,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.81,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "George Latimer",
@@ -41527,6 +41981,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.95,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Paul Tonko",
@@ -41642,6 +42098,8 @@ export const houseData: RaceForecast[] = [
         "value": 7
       }
     ],
+    "kalshiDem": 0.24,
+    "kalshiRep": 0.73,
     "candidates": {
       "dem": {
         "name": "Blake Gendebien",
@@ -41870,6 +42328,8 @@ export const houseData: RaceForecast[] = [
         "value": 2
       }
     ],
+    "kalshiDem": 0.11,
+    "kalshiRep": 0.85,
     "candidates": {
       "dem": {
         "name": "Aaron Gies",
@@ -41984,6 +42444,8 @@ export const houseData: RaceForecast[] = [
         "value": 1
       }
     ],
+    "kalshiDem": 0.14,
+    "kalshiRep": 0.85,
     "candidates": {
       "dem": {
         "name": "Alissa Ellman",
@@ -42098,6 +42560,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Joseph Morelle",
@@ -42212,6 +42676,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.69,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Timothy Kennedy",
@@ -42441,6 +42907,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.74,
+    "kalshiRep": 0.02,
     "candidates": {
       "dem": {
         "name": "Deborah Ross",
@@ -42554,6 +43022,8 @@ export const houseData: RaceForecast[] = [
         "value": 8
       }
     ],
+    "kalshiDem": 0.04,
+    "kalshiRep": 0.64,
     "candidates": {
       "dem": {
         "name": "Raymond Smith",
@@ -42667,6 +43137,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.93,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Valerie Foushee",
@@ -42781,6 +43253,8 @@ export const houseData: RaceForecast[] = [
         "value": 11
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.64,
     "candidates": {
       "dem": {
         "name": "Chuck Hubbard",
@@ -42896,6 +43370,8 @@ export const houseData: RaceForecast[] = [
         "value": 3
       }
     ],
+    "kalshiDem": 0.08,
+    "kalshiRep": 0.58,
     "candidates": {
       "dem": {
         "name": "Cyril Jefferson",
@@ -43009,6 +43485,8 @@ export const houseData: RaceForecast[] = [
         "value": 19
       }
     ],
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Kimberly Hardy",
@@ -43124,6 +43602,8 @@ export const houseData: RaceForecast[] = [
         "value": 9
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.54,
     "candidates": {
       "dem": {
         "name": "Colby Watson",
@@ -43237,6 +43717,8 @@ export const houseData: RaceForecast[] = [
         "value": 17
       }
     ],
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.55,
     "candidates": {
       "dem": {
         "name": "Richard Ojeda",
@@ -43350,6 +43832,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Ashley Bell",
@@ -43577,6 +44061,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.81,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Alma Adams",
@@ -43690,6 +44176,8 @@ export const houseData: RaceForecast[] = [
         "value": 14
       }
     ],
+    "kalshiDem": 0.11,
+    "kalshiRep": 0.86,
     "candidates": {
       "dem": {
         "name": "Paul Barringer",
@@ -43802,6 +44290,8 @@ export const houseData: RaceForecast[] = [
         "value": 13
       }
     ],
+    "kalshiDem": 0.17,
+    "kalshiRep": 0.8,
     "candidates": {
       "dem": {
         "name": "Lakesha Womack",
@@ -44107,6 +44597,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.72,
     "candidates": {
       "dem": {
         "name": "Todd Wilson",
@@ -44221,6 +44713,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.84,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Joyce Beatty",
@@ -44336,6 +44830,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.82,
     "candidates": {
       "dem": {
         "name": "Tamara Wilson",
@@ -44451,6 +44947,8 @@ export const houseData: RaceForecast[] = [
         "value": 2
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Daniel Burket",
@@ -44566,6 +45064,8 @@ export const houseData: RaceForecast[] = [
         "value": 30
       }
     ],
+    "kalshiDem": 0.04,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "Malcolm Ritchie",
@@ -44681,6 +45181,8 @@ export const houseData: RaceForecast[] = [
         "value": 25
       }
     ],
+    "kalshiDem": 0.39,
+    "kalshiRep": 0.59,
     "candidates": {
       "dem": {
         "name": "Edward Fitzgerald",
@@ -44795,6 +45297,8 @@ export const houseData: RaceForecast[] = [
         "value": 14
       }
     ],
+    "kalshiDem": 0.11,
+    "kalshiRep": 0.86,
     "candidates": {
       "dem": {
         "name": "Madaris Grant",
@@ -45025,6 +45529,8 @@ export const houseData: RaceForecast[] = [
         "value": 27
       }
     ],
+    "kalshiDem": 0.2,
+    "kalshiRep": 0.79,
     "candidates": {
       "dem": {
         "name": "Janice Beckett",
@@ -45140,6 +45646,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Shontel Brown",
@@ -45255,6 +45763,8 @@ export const houseData: RaceForecast[] = [
         "value": 50
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Jerrad Christian",
@@ -45484,6 +45994,8 @@ export const houseData: RaceForecast[] = [
         "value": 4
       }
     ],
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.63,
     "candidates": {
       "dem": {
         "name": "Carl Setzer",
@@ -45599,6 +46111,8 @@ export const houseData: RaceForecast[] = [
         "value": 31
       }
     ],
+    "kalshiDem": 0.23,
+    "kalshiRep": 0.76,
     "candidates": {
       "dem": {
         "name": "Adam Miller",
@@ -45714,6 +46228,8 @@ export const houseData: RaceForecast[] = [
         "value": 3
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.85,
     "candidates": {
       "dem": {
         "name": "John Croisant",
@@ -45824,6 +46340,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.72,
     "candidates": {
       "dem": {
         "name": "Erik Terwey",
@@ -45938,6 +46456,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.84,
     "candidates": {
       "dem": {
         "name": "Jules Roberson",
@@ -46049,6 +46569,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.72,
     "candidates": {
       "dem": {
         "name": "Mitchell Jacob",
@@ -46164,6 +46686,8 @@ export const houseData: RaceForecast[] = [
         "value": 7
       }
     ],
+    "kalshiDem": 0.05,
+    "kalshiRep": 0.44,
     "candidates": {
       "dem": {
         "name": "Jena Nelson",
@@ -46279,6 +46803,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Suzanne Bonamici",
@@ -46394,6 +46920,8 @@ export const houseData: RaceForecast[] = [
         "value": 2
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.93,
     "candidates": {
       "dem": {
         "name": "Dawn Rasmussen",
@@ -46508,6 +47036,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.8,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Maxine Dexter",
@@ -46622,6 +47152,8 @@ export const houseData: RaceForecast[] = [
         "value": 97
       }
     ],
+    "kalshiDem": 0.69,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Valerie Hoyle",
@@ -46850,6 +47382,8 @@ export const houseData: RaceForecast[] = [
         "value": 97
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Andrea Salinas",
@@ -47042,6 +47576,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Brendan Boyle",
@@ -47155,6 +47691,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.86,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Sharif Street",
@@ -47265,6 +47803,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Madeleine Dean",
@@ -47378,6 +47918,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Mary Scanlon",
@@ -47492,6 +48034,8 @@ export const houseData: RaceForecast[] = [
         "value": 96
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Chrissy Houlahan",
@@ -47833,6 +48377,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Rachel Wallace",
@@ -48061,6 +48607,8 @@ export const houseData: RaceForecast[] = [
         "value": 3
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.64,
     "candidates": {
       "dem": {
         "name": "Nancy Mannion",
@@ -48175,6 +48723,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.8,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Summer Lee",
@@ -48288,6 +48838,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.81,
     "candidates": {
       "dem": {
         "name": "Elizabeth Farnham",
@@ -48398,6 +48950,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.71,
     "candidates": {
       "dem": {
         "name": "David Bradstock",
@@ -48510,6 +49064,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.93,
     "candidates": {
       "dem": {
         "name": "Raymond Bilger",
@@ -48624,6 +49180,8 @@ export const houseData: RaceForecast[] = [
         "value": 2
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.73,
     "candidates": {
       "dem": {
         "name": "Justin Wagner",
@@ -48849,6 +49407,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.77,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Gabe Amo",
@@ -48964,6 +49524,8 @@ export const houseData: RaceForecast[] = [
         "value": 98
       }
     ],
+    "kalshiDem": 0.69,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Seth Magaziner",
@@ -49078,6 +49640,8 @@ export const houseData: RaceForecast[] = [
         "value": 27
       }
     ],
+    "kalshiDem": 0.24,
+    "kalshiRep": 0.73,
     "candidates": {
       "dem": {
         "name": "William Deford",
@@ -49192,6 +49756,8 @@ export const houseData: RaceForecast[] = [
         "value": 17
       }
     ],
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.58,
     "candidates": {
       "dem": {
         "name": "Roger Pruitt",
@@ -49307,6 +49873,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "Eunice Lehmacher",
@@ -49419,6 +49987,8 @@ export const houseData: RaceForecast[] = [
         "value": 4
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.91,
     "candidates": {
       "dem": {
         "name": "Courtney Mcclain",
@@ -49531,6 +50101,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.005,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Mallory Dittmer",
@@ -49646,6 +50218,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.31,
+    "kalshiRep": 0.67,
     "candidates": {
       "dem": {
         "name": "James Clyburn",
@@ -49761,6 +50335,8 @@ export const houseData: RaceForecast[] = [
         "value": 3
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.9,
     "candidates": {
       "dem": {
         "name": "John Vincent",
@@ -49989,6 +50565,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.94,
     "candidates": {
       "dem": {
         "name": "Kristi Burke",
@@ -50103,6 +50681,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.73,
     "candidates": {
       "dem": {
         "name": "Michaela Barnett",
@@ -50217,6 +50797,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "Joel Hawn",
@@ -50332,6 +50914,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.027,
+    "kalshiRep": 0.943,
     "candidates": {
       "dem": {
         "name": "Victoria Broderick",
@@ -50447,6 +51031,8 @@ export const houseData: RaceForecast[] = [
         "value": 14
       }
     ],
+    "kalshiDem": 0.19,
+    "kalshiRep": 0.8,
     "candidates": {
       "dem": {
         "name": "Chaz Molder",
@@ -50559,6 +51145,8 @@ export const houseData: RaceForecast[] = [
         "value": 30
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.71,
     "candidates": {
       "dem": {
         "name": "Chaney Mosley",
@@ -50673,6 +51261,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.005,
+    "kalshiRep": 0.65,
     "candidates": {
       "dem": {
         "name": "Darden Copeland",
@@ -50787,6 +51377,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.046,
+    "kalshiRep": 0.65,
     "candidates": {
       "dem": {
         "name": "William Wicker",
@@ -50901,6 +51493,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.83,
     "candidates": {
       "dem": {
         "name": "Steve Cohen",
@@ -51016,6 +51610,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.72,
     "candidates": {
       "dem": {
         "name": "Generic Democrat",
@@ -51128,6 +51724,8 @@ export const houseData: RaceForecast[] = [
         "value": 4
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.66,
     "candidates": {
       "dem": {
         "name": "Shaun Finnie",
@@ -51242,6 +51840,8 @@ export const houseData: RaceForecast[] = [
         "value": 5
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.76,
     "candidates": {
       "dem": {
         "name": "Evan Hunt",
@@ -51355,6 +51955,8 @@ export const houseData: RaceForecast[] = [
         "value": 2
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.35,
     "candidates": {
       "dem": {
         "name": "Jason Pearce",
@@ -51469,6 +52071,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Ruth Torres",
@@ -51583,6 +52187,8 @@ export const houseData: RaceForecast[] = [
         "value": 3
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.66,
     "candidates": {
       "dem": {
         "name": "Danny Minton",
@@ -51695,6 +52301,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "Lizzie Fletcher",
@@ -51810,6 +52418,8 @@ export const houseData: RaceForecast[] = [
         "value": 2
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.68,
     "candidates": {
       "dem": {
         "name": "Laura Jones",
@@ -52035,6 +52645,8 @@ export const houseData: RaceForecast[] = [
         "value": 7
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.63,
     "candidates": {
       "dem": {
         "name": "Caitlin Rourk",
@@ -52150,6 +52762,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.001,
+    "kalshiRep": 0.8,
     "candidates": {
       "dem": {
         "name": "Claire Reynolds",
@@ -52260,6 +52874,8 @@ export const houseData: RaceForecast[] = [
         "value": 3
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.6,
     "candidates": {
       "dem": {
         "name": "Heli Rodriguez Prilliman",
@@ -52374,6 +52990,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Mark Nair",
@@ -52486,6 +53104,8 @@ export const houseData: RaceForecast[] = [
         "value": 3
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.76,
     "candidates": {
       "dem": {
         "name": "Richard Davis",
@@ -52714,6 +53334,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.85,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Veronica Escobar",
@@ -52828,6 +53450,8 @@ export const houseData: RaceForecast[] = [
         "value": 4
       }
     ],
+    "kalshiDem": 0.14,
+    "kalshiRep": 0.63,
     "candidates": {
       "dem": {
         "name": "Generic Democrat",
@@ -52942,6 +53566,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.51,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Democratic Candidate",
@@ -53056,6 +53682,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.71,
     "candidates": {
       "dem": {
         "name": "Kyle Rable",
@@ -53170,6 +53798,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.91,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Joaquin Castro",
@@ -53283,6 +53913,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.15,
+    "kalshiRep": 0.82,
     "candidates": {
       "dem": {
         "name": "Kristin Hook",
@@ -53397,6 +54029,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.75,
     "candidates": {
       "dem": {
         "name": "Marquette Greene-Scott",
@@ -53511,6 +54145,8 @@ export const houseData: RaceForecast[] = [
         "value": 23
       }
     ],
+    "kalshiDem": 0.21,
+    "kalshiRep": 0.77,
     "candidates": {
       "dem": {
         "name": "Katy Padilla Stout",
@@ -53623,6 +54259,8 @@ export const houseData: RaceForecast[] = [
         "value": 9
       }
     ],
+    "kalshiDem": 0.23,
+    "kalshiRep": 0.74,
     "candidates": {
       "dem": {
         "name": "Generic Democrat",
@@ -53737,6 +54375,8 @@ export const houseData: RaceForecast[] = [
         "value": 90
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.67,
     "candidates": {
       "dem": {
         "name": "Dione Sims",
@@ -53848,6 +54488,8 @@ export const houseData: RaceForecast[] = [
         "value": 2
       }
     ],
+    "kalshiDem": 0.002,
+    "kalshiRep": 0.67,
     "candidates": {
       "dem": {
         "name": "Steven Shook",
@@ -53962,6 +54604,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.06,
+    "kalshiRep": 0.65,
     "candidates": {
       "dem": {
         "name": "Tanya Lloyd",
@@ -54192,6 +54836,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Sylvia Garcia",
@@ -54306,6 +54952,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.961,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Frederick Haynes",
@@ -54420,6 +55068,8 @@ export const houseData: RaceForecast[] = [
         "value": 4
       }
     ],
+    "kalshiDem": 0.06,
+    "kalshiRep": 0.62,
     "candidates": {
       "dem": {
         "name": "Justin Early",
@@ -54647,6 +55297,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Colin Allred",
@@ -54990,6 +55642,8 @@ export const houseData: RaceForecast[] = [
         "value": 3
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.63,
     "candidates": {
       "dem": {
         "name": "Rhonda Hart",
@@ -55105,6 +55759,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Greg Casar",
@@ -55183,6 +55839,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.7,
     "candidates": {
       "dem": {
         "name": "Melissa McDonough",
@@ -55604,6 +56262,8 @@ export const houseData: RaceForecast[] = [
         "value": 10
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.69,
     "candidates": {
       "dem": {
         "name": "Jonathan Larsen",
@@ -56060,6 +56720,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.72,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Robert Scott",
@@ -56173,6 +56835,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Jennifer Mcclellan",
@@ -56287,6 +56951,8 @@ export const houseData: RaceForecast[] = [
         "value": 35
       }
     ],
+    "kalshiDem": 0.14,
+    "kalshiRep": 0.36,
     "candidates": {
       "dem": {
         "name": "Thomas Perriello",
@@ -56397,6 +57063,8 @@ export const houseData: RaceForecast[] = [
         "value": 5
       }
     ],
+    "kalshiDem": 0.18,
+    "kalshiRep": 0.79,
     "candidates": {
       "dem": {
         "name": "Beth Macy",
@@ -56625,6 +57293,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Donald Beyer",
@@ -56740,6 +57410,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.02,
+    "kalshiRep": 0.9,
     "candidates": {
       "dem": {
         "name": "Adam Murphy",
@@ -56967,6 +57639,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.73,
+    "kalshiRep": 0.002,
     "candidates": {
       "dem": {
         "name": "James Walkinshaw",
@@ -57080,6 +57754,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.52,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Suzan DelBene",
@@ -57195,6 +57871,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Rick Larsen",
@@ -57424,6 +58102,8 @@ export const houseData: RaceForecast[] = [
         "value": 5
       }
     ],
+    "kalshiDem": 0.12,
+    "kalshiRep": 0.85,
     "candidates": {
       "dem": {
         "name": "John Duresky",
@@ -57535,6 +58215,8 @@ export const houseData: RaceForecast[] = [
         "value": 14
       }
     ],
+    "kalshiDem": 0.22,
+    "kalshiRep": 0.74,
     "candidates": {
       "dem": {
         "name": "Carmela Conroy",
@@ -57649,6 +58331,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.7,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Emily Randall",
@@ -57763,6 +58447,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.73,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Pramila Jayapal",
@@ -57989,6 +58675,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.02,
     "candidates": {
       "dem": {
         "name": "Adam Smith",
@@ -58100,6 +58788,8 @@ export const houseData: RaceForecast[] = [
         "value": 99
       }
     ],
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.001,
     "candidates": {
       "dem": {
         "name": "Marilyn Strickland",
@@ -58212,6 +58902,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.067,
+    "kalshiRep": 0.75,
     "candidates": {
       "dem": {
         "name": "Britta Aguirre",
@@ -58326,6 +59018,8 @@ export const houseData: RaceForecast[] = [
         "value": 0
       }
     ],
+    "kalshiDem": 0.01,
+    "kalshiRep": 0.92,
     "candidates": {
       "dem": {
         "name": "Ahsan Parsi",
@@ -58554,6 +59248,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.02,
     "candidates": {
       "dem": {
         "name": "Mark Pocan",
@@ -58783,6 +59479,8 @@ export const houseData: RaceForecast[] = [
         "value": 100
       }
     ],
+    "kalshiDem": 0.96,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": {
         "name": "Gwen Moore",
@@ -58898,6 +59596,8 @@ export const houseData: RaceForecast[] = [
         "value": 2
       }
     ],
+    "kalshiDem": 0.14,
+    "kalshiRep": 0.83,
     "candidates": {
       "dem": {
         "name": "Andrew Beck",
@@ -59012,6 +59712,8 @@ export const houseData: RaceForecast[] = [
         "value": 6
       }
     ],
+    "kalshiDem": 0.05,
+    "kalshiRep": 0.82,
     "candidates": {
       "dem": {
         "name": "Aaron Wojciechowski",
@@ -59125,6 +59827,8 @@ export const houseData: RaceForecast[] = [
         "value": 3
       }
     ],
+    "kalshiDem": 0.06,
+    "kalshiRep": 0.74,
     "candidates": {
       "dem": {
         "name": "Frederic Clark",
@@ -59240,6 +59944,8 @@ export const houseData: RaceForecast[] = [
         "value": 9
       }
     ],
+    "kalshiDem": 0.09,
+    "kalshiRep": 0.78,
     "candidates": {
       "dem": {
         "name": "Mark Scheffler",
