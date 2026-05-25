@@ -1,12 +1,26 @@
-import { senateData, senateNoElection, senateHoldovers, electionYear } from "@/data/forecastData";
+import { senateData, senateNoElection, senateHoldovers, electionYear, type PastResult } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
+import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import BackButton from "@/components/BackButton";
 import AppHeader from "@/components/AppHeader";
-import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, MarginAndWinProbabilityCard, PastElectionResultsSection } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
+import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
+
+function enrichSenateResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
+  if (!pastResults?.length) return [];
+  const sorted = [...pastResults].sort((a, b) => a.year - b.year);
+  return sorted.map((res, i) => {
+    const nationalMargin = getNationalMargin("Senate", res.year);
+    const swing = i > 0
+      ? parseFloat(((sorted[i - 1].demPct - sorted[i - 1].repPct) - (res.demPct - res.repPct)).toFixed(1))
+      : null;
+    return { ...res, nationalDiff: nationalMargin != null ? nationalMargin - (res.demPct - res.repPct) : null, swing };
+  }).reverse();
+}
 
 function stateSlug(name: string) { return name.toLowerCase().replace(/\s+/g, "-"); }
 function isSpecialElection(electionType?: string) {
@@ -68,7 +82,7 @@ function NoElectionPage({
   seatLabel: string;
   from: string;
   raceDesc?: string;
-  pastResults?: { year: number; demPct: number; repPct: number; demCandidate?: string; repCandidate?: string; demVotes?: number; repVotes?: number; electionType?: string }[];
+  pastResults?: DetailPastResult[];
 }) {
   const partyLabel = party === "D" ? "Democrat" : party === "R" ? "Republican" : "Independent";
   const termYears = termLength ?? 6;
@@ -107,6 +121,9 @@ function NoElectionPage({
                 { label: "Next Election", value: String(nextElection) },
               ]}
             />
+            {pastResults && pastResults.length > 0 && (
+              <SeatVoteHistoryChart results={pastResults} />
+            )}
           </div>
 
           <div className="grid grid-cols-1 gap-3">
@@ -155,7 +172,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           seatLabel={`U.S. Senate · Seat 2 · Not Up in ${electionYear}`}
           from={`/senate/${id}`}
           raceDesc={holdover.raceDesc}
-          pastResults={holdover.pastResults}
+          pastResults={enrichSenateResults(holdover.pastResults)}
         />
       );
     }
@@ -173,7 +190,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           seatLabel={`U.S. Senate · No Election in ${electionYear}`}
           from={`/senate/${id}`}
           raceDesc={noEl.raceDesc}
-          pastResults={noEl.pastResults}
+          pastResults={enrichSenateResults(noEl.pastResults)}
         />
       );
     }
@@ -231,6 +248,9 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
                 { label: "Seat Class", value: race.seatClass ? `Class ${race.seatClass}` : "TBD" },
               ]}
             />
+            {race.pastResults && race.pastResults.length > 0 && (
+              <SeatVoteHistoryChart results={enrichSenateResults(race.pastResults)} />
+            )}
           </div>
 
           <div className="grid grid-cols-1 gap-3 lg:grid-cols-8">
@@ -275,7 +295,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
 
             {race.pastResults && race.pastResults.length > 0 && (
               <PastElectionResultsSection
-                results={race.pastResults}
+                results={enrichSenateResults(race.pastResults)}
                 fallbackYears={[]}
                 showElectionType
                 layoutClassName="lg:col-span-8 lg:max-h-[34rem]"

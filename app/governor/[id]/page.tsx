@@ -1,12 +1,26 @@
-import { governorData, governorNoElection, NoElectionEntry, electionYear } from "@/data/forecastData";
+import { governorData, governorNoElection, NoElectionEntry, electionYear, type PastResult } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
+import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import BackButton from "@/components/BackButton";
 import AppHeader from "@/components/AppHeader";
-import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, MarginAndWinProbabilityCard, PastElectionResultsSection } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
+import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
+
+function enrichGovResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
+  if (!pastResults?.length) return [];
+  const sorted = [...pastResults].sort((a, b) => a.year - b.year);
+  return sorted.map((res, i) => {
+    const nationalMargin = getNationalMargin("Governor", res.year);
+    const swing = i > 0
+      ? parseFloat(((sorted[i - 1].demPct - sorted[i - 1].repPct) - (res.demPct - res.repPct)).toFixed(1))
+      : null;
+    return { ...res, nationalDiff: nationalMargin != null ? nationalMargin - (res.demPct - res.repPct) : null, swing };
+  }).reverse();
+}
 
 function stateSlug(name: string) { return name.toLowerCase().replace(/\s+/g, "-"); }
 
@@ -62,6 +76,9 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
                 { label: "Next Election", value: String(entry.nextElection) },
               ]}
             />
+            {entry.pastResults && entry.pastResults.length > 0 && (
+              <SeatVoteHistoryChart results={enrichGovResults(entry.pastResults)} />
+            )}
           </div>
 
           <div className="grid grid-cols-1 gap-3">
@@ -70,7 +87,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
             />
 
             <PastElectionResultsSection
-              results={entry.pastResults}
+              results={enrichGovResults(entry.pastResults)}
               fallbackYears={[entry.nextElection - 4, entry.nextElection - 8]}
               showElectionType
               layoutClassName="lg:max-h-[34rem]"
@@ -140,6 +157,9 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                 { label: "Party", value: currentGovernorParty ? (currentGovernorParty === "D" ? "Democrat" : currentGovernorParty === "R" ? "Republican" : "Independent") : "TBD" },
               ]}
             />
+            {race.pastResults && race.pastResults.length > 0 && (
+              <SeatVoteHistoryChart results={enrichGovResults(race.pastResults)} />
+            )}
           </div>
 
           <div className="grid grid-cols-1 gap-3 lg:grid-cols-8">
@@ -186,7 +206,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             </div>
 
             <PastElectionResultsSection
-              results={race.pastResults}
+              results={enrichGovResults(race.pastResults)}
               fallbackYears={[2022, 2018, 2014]}
               showElectionType
               layoutClassName="lg:col-span-8 lg:max-h-[34rem]"

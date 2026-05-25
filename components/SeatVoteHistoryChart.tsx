@@ -11,32 +11,12 @@ import {
   ReferenceLine,
   ResponsiveContainer,
 } from "recharts";
-
-type TabKey = "house" | "senate" | "governor" | "president";
-
-const TAB_ORDER: TabKey[] = ["house", "senate", "governor", "president"];
-const TAB_LABELS: Record<TabKey, string> = { house: "H", senate: "S", governor: "G", president: "P" };
-
-type HouseResultInput = {
-  year: number;
-  demPct: number;
-  repPct: number;
-  electionType?: string;
-  nationalDiff?: number | null;
-};
-
-type StatewideResultInput = {
-  year: number;
-  race: string;
-  demPct: number;
-  repPct: number;
-  nationalDiff?: number | null;
-};
+import type { DetailPastResult } from "@/components/RaceDetailSections";
 
 type ChartPoint = {
   year: string;
   repMargin: number;
-  // nationalDiff: positive = district more R than national
+  // nationalDiff: positive = seat more R than national
   natY: number | null;
   demPct: number;
   repPct: number;
@@ -44,14 +24,6 @@ type ChartPoint = {
 
 type ChartRenderPoint = ChartPoint & Record<string, number | string | null>;
 type SegmentLine = { key: string };
-
-function getRaceKey(race: string): TabKey | null {
-  const l = race.toLowerCase();
-  if (l.includes("president")) return "president";
-  if (l.includes("senate"))    return "senate";
-  if (l.includes("governor"))  return "governor";
-  return null;
-}
 
 function marginLabel(v: number): string {
   const abs = Math.abs(v).toFixed(1);
@@ -104,43 +76,6 @@ function MarginTooltip({ active, payload, label, showNational }: {
   );
 }
 
-function getChartPoints(
-  tab: TabKey,
-  houseResults: HouseResultInput[],
-  statewideResults: StatewideResultInput[],
-): ChartPoint[] {
-  if (tab === "house") {
-    return (houseResults ?? [])
-      .filter(r => !r.electionType?.toLowerCase().includes("special"))
-      .sort((a, b) => a.year - b.year)
-      .map(r => {
-        const repMargin = parseFloat((r.repPct - r.demPct).toFixed(1));
-        const natY = r.nationalDiff != null ? parseFloat((r.nationalDiff).toFixed(1)) : null;
-        return {
-          year: String(r.year),
-          repMargin,
-          natY,
-          demPct: r.demPct,
-          repPct: r.repPct,
-        };
-      });
-  }
-  return (statewideResults ?? [])
-    .filter(r => getRaceKey(r.race) === tab)
-    .sort((a, b) => a.year - b.year)
-    .map(r => {
-      const repMargin = parseFloat((r.repPct - r.demPct).toFixed(1));
-      const natY = r.nationalDiff != null ? parseFloat((r.nationalDiff).toFixed(1)) : null;
-      return {
-        year: String(r.year),
-        repMargin,
-        natY,
-        demPct: r.demPct,
-        repPct: r.repPct,
-      };
-    });
-}
-
 function buildSegmentLines(points: ChartPoint[], dataKey: "repMargin" | "natY"): {
   chartData: ChartRenderPoint[];
   segments: SegmentLine[];
@@ -162,23 +97,23 @@ function buildSegmentLines(points: ChartPoint[], dataKey: "repMargin" | "natY"):
   return { chartData, segments };
 }
 
-export default function DistrictVoteHistoryChart({
-  houseResults,
-  statewideResults,
-}: {
-  houseResults: HouseResultInput[];
-  statewideResults: StatewideResultInput[];
-}) {
-  const availableTabs = TAB_ORDER.filter(
-    tab => getChartPoints(tab, houseResults, statewideResults).length >= 1
-  );
-
-  const [activeTab, setActiveTab] = useState<TabKey>(() => availableTabs[0] ?? "house");
+export default function SeatVoteHistoryChart({ results }: { results: DetailPastResult[] }) {
   const [showNational, setShowNational] = useState(false);
 
-  if (availableTabs.length === 0) return null;
+  const chartPoints: ChartPoint[] = (results ?? [])
+    .filter(r => !r.placeholder && !r.electionType?.toLowerCase().includes("special"))
+    .sort((a, b) => a.year - b.year)
+    .map(r => ({
+      year: String(r.year),
+      repMargin: parseFloat((r.repPct - r.demPct).toFixed(1)),
+      natY: r.nationalDiff != null ? parseFloat((r.nationalDiff).toFixed(1)) : null,
+      demPct: r.demPct,
+      repPct: r.repPct,
+    }));
 
-  const chartPoints = getChartPoints(activeTab, houseResults, statewideResults);
+  if (chartPoints.length < 1) return null;
+
+  const hasNational = chartPoints.some(p => p.natY != null);
 
   const marginVals = chartPoints.map(p => p.repMargin);
   const natVals = chartPoints.map(p => p.natY).filter((v): v is number => v != null);
@@ -197,25 +132,7 @@ export default function DistrictVoteHistoryChart({
         <h2 className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
           Vote History
         </h2>
-        <div className="flex items-center gap-1.5">
-          {availableTabs.length > 1 && (
-            <div className="flex rounded-md overflow-hidden" style={{ border: "1px solid var(--app-border)", opacity: 0.92 }}>
-              {availableTabs.map(tab => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className="text-[10px] font-semibold px-2 py-1 transition-colors"
-                  style={
-                    activeTab === tab
-                      ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }
-                      : { background: "var(--app-panel)", color: "var(--app-text-muted)" }
-                  }
-                >
-                  {TAB_LABELS[tab]}
-                </button>
-              ))}
-            </div>
-          )}
+        {hasNational && (
           <div className="flex rounded-md overflow-hidden" style={{ border: "1px solid var(--app-border)", opacity: 0.92 }}>
             <button
               onClick={() => setShowNational(v => !v)}
@@ -229,7 +146,7 @@ export default function DistrictVoteHistoryChart({
               N
             </button>
           </div>
-        </div>
+        )}
       </div>
 
       <div className="px-4 pt-2 pb-3" style={{ height: 255 }}>

@@ -25,17 +25,23 @@ function formatVotes(n: number): string {
   return n.toLocaleString();
 }
 
-function marginLabel(demMinusRep: number): string {
-  const abs = Math.abs(demMinusRep).toFixed(1);
-  return demMinusRep >= 0 ? `D+${abs}` : `R+${abs}`;
+function marginLabel(repMinusDem: number): string {
+  const abs = Math.abs(repMinusDem).toFixed(1);
+  return repMinusDem >= 0 ? `R+${abs}` : `D+${abs}`;
+}
+
+function seatsMarginLabel(rMinusD: number): string {
+  if (rMinusD === 0) return "EVEN";
+  const abs = Math.abs(rMinusD);
+  return rMinusD > 0 ? `R+${abs}` : `D+${abs}`;
 }
 
 type ChartPoint = {
   year: string;
   demPct: number;
   repPct: number;
-  demMargin: number;
-  // approval mapped to D+/R+ scale: D pres → presMargin as-is; R pres → -presMargin
+  repMargin: number;
+  // approval mapped to R+/D+ scale: R pres → presMargin as-is; D pres → -presMargin
   approvalY: number;
   presInc: PopVoteRow["presInc"];
   presApp: number;
@@ -43,6 +49,9 @@ type ChartPoint = {
   demVotes: number;
   repVotes: number;
   totalVotes: number;
+  seatsD: number;
+  seatsR: number;
+  seatsMargin: number; // seatsR - seatsD (positive = R ahead)
 };
 
 function toChartPoints(rows: PopVoteRow[]): ChartPoint[] {
@@ -52,14 +61,17 @@ function toChartPoints(rows: PopVoteRow[]): ChartPoint[] {
       year: String(r.year),
       demPct: r.demPct,
       repPct: r.repPct,
-      demMargin: -r.margin,
-      approvalY: presIncParty(r.presInc) === "dem" ? r.presMargin : -r.presMargin,
+      repMargin: r.margin,
+      approvalY: presIncParty(r.presInc) === "dem" ? -r.presMargin : r.presMargin,
       presInc: r.presInc,
       presApp: r.presApp,
       presMargin: r.presMargin,
       demVotes: r.demVotes,
       repVotes: r.repVotes,
       totalVotes: r.totalVotes,
+      seatsD: r.seatsD,
+      seatsR: r.seatsR,
+      seatsMargin: r.seatsR - r.seatsD,
     }));
 }
 
@@ -85,7 +97,7 @@ function PctTooltip({ active, payload, label, showApproval }: {
 }) {
   if (!active || !payload?.length) return null;
   const d = payload[0].payload;
-  const demMargin = d.demPct - d.repPct;
+  const repMargin = d.repPct - d.demPct;
   return (
     <div
       className="rounded-lg px-3 py-2 text-xs shadow-lg"
@@ -106,9 +118,9 @@ function PctTooltip({ active, payload, label, showApproval }: {
       </div>
       <div
         className="mt-1.5 pt-1.5 font-bold font-mono text-sm text-center"
-        style={{ borderTop: "1px solid var(--app-border)", color: demMargin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}
+        style={{ borderTop: "1px solid var(--app-border)", color: repMargin >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
       >
-        {marginLabel(demMargin)}
+        {marginLabel(repMargin)}
       </div>
       {showApproval && <ApprovalRow d={d} viewMode="pct" />}
     </div>
@@ -123,15 +135,15 @@ function MarginTooltip({ active, payload, label, showApproval }: {
 }) {
   if (!active || !payload?.length) return null;
   const d = payload[0].payload;
-  const isDem = d.demMargin >= 0;
+  const isRep = d.repMargin >= 0;
   return (
     <div
       className="rounded-lg px-3 py-2 text-xs shadow-lg"
       style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", minWidth: 170 }}
     >
       <div className="font-bold mb-1" style={{ color: "var(--app-text-muted)" }}>{label}</div>
-      <div className="font-bold font-mono text-sm" style={{ color: isDem ? "var(--party-dem)" : "var(--party-rep)" }}>
-        {marginLabel(d.demMargin)}
+      <div className="font-bold font-mono text-sm" style={{ color: isRep ? "var(--party-rep)" : "var(--party-dem)" }}>
+        {marginLabel(d.repMargin)}
       </div>
       <div className="mt-0.5" style={{ color: "var(--app-text-muted)" }}>
         {d.demPct.toFixed(1)}% vs {d.repPct.toFixed(1)}%
@@ -163,9 +175,69 @@ function ApprovalTooltip({ active, payload, label }: {
       </div>
       <div
         className="mt-1 pt-1 font-bold font-mono text-sm"
-        style={{ borderTop: "1px solid var(--app-border)", color: d.approvalY >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}
+        style={{ borderTop: "1px solid var(--app-border)", color: d.approvalY >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
       >
         {marginLabel(d.approvalY)}
+      </div>
+    </div>
+  );
+}
+
+function SeatsRawTooltip({ active, payload, label, selected }: {
+  active?: boolean;
+  payload?: { payload: ChartPoint }[];
+  label?: string;
+  selected: RaceType;
+}) {
+  if (!active || !payload?.length) return null;
+  const d = payload[0].payload;
+  const seatWord = selected === "President" ? "EV" : "seats";
+  const rMinusD = d.seatsMargin;
+  return (
+    <div
+      className="rounded-lg px-3 py-2 text-xs shadow-lg"
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", minWidth: 150 }}
+    >
+      <div className="font-bold mb-1.5" style={{ color: "var(--app-text-muted)" }}>{label}</div>
+      <div className="flex justify-between gap-6 mb-0.5">
+        <span style={{ color: "var(--party-dem)" }}>Dem</span>
+        <span className="font-mono font-semibold" style={{ color: "var(--party-dem)" }}>{d.seatsD} {seatWord}</span>
+      </div>
+      <div className="flex justify-between gap-6">
+        <span style={{ color: "var(--party-rep)" }}>Rep</span>
+        <span className="font-mono font-semibold" style={{ color: "var(--party-rep)" }}>{d.seatsR} {seatWord}</span>
+      </div>
+      <div
+        className="mt-1.5 pt-1.5 font-bold font-mono text-sm text-center"
+        style={{ borderTop: "1px solid var(--app-border)", color: rMinusD <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}
+      >
+        {seatsMarginLabel(rMinusD)}
+      </div>
+    </div>
+  );
+}
+
+function SeatsMarginTooltip({ active, payload, label, selected }: {
+  active?: boolean;
+  payload?: { payload: ChartPoint }[];
+  label?: string;
+  selected: RaceType;
+}) {
+  if (!active || !payload?.length) return null;
+  const d = payload[0].payload;
+  const seatWord = selected === "President" ? "EV" : "seats";
+  const isR = d.seatsMargin > 0;
+  return (
+    <div
+      className="rounded-lg px-3 py-2 text-xs shadow-lg"
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", minWidth: 150 }}
+    >
+      <div className="font-bold mb-1" style={{ color: "var(--app-text-muted)" }}>{label}</div>
+      <div className="font-bold font-mono text-sm" style={{ color: isR ? "var(--party-rep)" : "var(--party-dem)" }}>
+        {seatsMarginLabel(d.seatsMargin)}
+      </div>
+      <div className="mt-0.5" style={{ color: "var(--app-text-muted)" }}>
+        {d.seatsD}D · {d.seatsR}R {seatWord}
       </div>
     </div>
   );
@@ -186,13 +258,16 @@ function niceAxisConfig(vals: number[], targetTicks = 5): { domain: [number, num
   return { domain: [domainMin, domainMax], ticks };
 }
 
-function TabButton({ label, shortLabel, active, onClick }: { label: string; shortLabel?: string; active: boolean; onClick: () => void }) {
+function TabButton({ label, shortLabel, active, disabled, onClick }: { label: string; shortLabel?: string; active: boolean; disabled?: boolean; onClick: () => void }) {
   return (
     <button
       onClick={onClick}
+      disabled={disabled}
       className="px-3 py-1.5 rounded-md text-sm font-medium transition-colors"
       style={
-        active
+        disabled
+          ? { color: "var(--app-text-very-muted)", cursor: "not-allowed" }
+          : active
           ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }
           : { color: "var(--app-text-muted)" }
       }
@@ -210,6 +285,7 @@ function TabButton({ label, shortLabel, active, onClick }: { label: string; shor
 export default function PopularVoteChart() {
   const [selected, setSelected] = useState<RaceType>("President");
   const [viewMode, setViewMode] = useState<ViewMode>("pct");
+  const [showSeats, setShowSeats] = useState(false);
   const [showApproval, setShowApproval] = useState(false);
 
   const rows = popVoteData
@@ -218,6 +294,13 @@ export default function PopularVoteChart() {
   const chartPoints = toChartPoints(popVoteData.filter((r) => r.type === selected));
 
   const axisConfig = (() => {
+    if (showSeats) {
+      if (viewMode === "margin") {
+        return niceAxisConfig(chartPoints.map((p) => p.seatsMargin), 5);
+      }
+      const vals = chartPoints.flatMap((p) => [p.seatsD, p.seatsR]);
+      return niceAxisConfig(vals, 5);
+    }
     if (viewMode === "pct") {
       const vals = showApproval
         ? chartPoints.flatMap((p) => [p.demPct, p.repPct, p.presApp])
@@ -225,15 +308,19 @@ export default function PopularVoteChart() {
       return niceAxisConfig(vals, 5);
     } else {
       const vals = showApproval
-        ? chartPoints.flatMap((p) => [p.demMargin, p.approvalY])
-        : chartPoints.map((p) => p.demMargin);
+        ? chartPoints.flatMap((p) => [p.repMargin, p.approvalY])
+        : chartPoints.map((p) => p.repMargin);
       return niceAxisConfig(vals, 5);
     }
   })();
 
-  const tooltipContent = viewMode === "pct"
-    ? <PctTooltip showApproval={showApproval} />
-    : <MarginTooltip showApproval={showApproval} />;
+  const tooltipContent = showSeats
+    ? (viewMode === "margin"
+        ? <SeatsMarginTooltip selected={selected} />
+        : <SeatsRawTooltip selected={selected} />)
+    : (viewMode === "pct"
+        ? <PctTooltip showApproval={showApproval} />
+        : <MarginTooltip showApproval={showApproval} />);
 
   return (
     <div
@@ -254,7 +341,9 @@ export default function PopularVoteChart() {
           <TabButton label="%" active={viewMode === "pct"} onClick={() => setViewMode("pct")} />
           <TabButton label="Margin" active={viewMode === "margin"} onClick={() => setViewMode("margin")} />
           <div className="w-px h-4 mx-1" style={{ background: "var(--app-border)" }} />
-          <TabButton label="Approval" active={showApproval} onClick={() => setShowApproval((v) => !v)} />
+          <TabButton label="Seats" active={showSeats} onClick={() => { setShowSeats((v) => { if (!v) setShowApproval(false); return !v; }); }} />
+          <div className="w-px h-4 mx-1" style={{ background: "var(--app-border)" }} />
+          <TabButton label="Approval" active={showApproval} disabled={showSeats} onClick={() => setShowApproval((v) => !v)} />
         </div>
       </div>
 
@@ -271,21 +360,75 @@ export default function PopularVoteChart() {
             <YAxis
               domain={axisConfig.domain}
               ticks={axisConfig.ticks}
-              tickFormatter={(v) => viewMode === "pct" ? `${v}%` : marginLabel(v)}
+              tickFormatter={(v) => {
+                if (showSeats) return viewMode === "margin" ? seatsMarginLabel(v) : String(v);
+                return viewMode === "pct" ? `${v}%` : marginLabel(v);
+              }}
               tick={{ fontSize: 10, fill: "var(--app-text-muted)" }}
               axisLine={false}
               tickLine={false}
-              width={46}
+              width={52}
             />
-            <ReferenceLine
-              y={viewMode === "pct" ? 50 : 0}
-              stroke="var(--app-border)"
-              strokeDasharray="4 3"
-              strokeWidth={1}
-            />
+            {(!showSeats || viewMode === "margin") && (
+              <ReferenceLine
+                y={showSeats ? 0 : viewMode === "pct" ? 50 : 0}
+                stroke="var(--app-border)"
+                strokeDasharray="4 3"
+                strokeWidth={1}
+              />
+            )}
             <Tooltip content={tooltipContent} cursor={{ stroke: "var(--app-border)", strokeWidth: 1 }} />
 
-            {viewMode === "pct" ? (
+            {showSeats ? (
+              viewMode === "margin" ? (
+                <Line
+                  type="monotone"
+                  dataKey="seatsMargin"
+                  stroke="var(--app-text-muted)"
+                  strokeWidth={2.5}
+                  dot={({ cx, cy, payload }: { cx?: number; cy?: number; payload: ChartPoint }) => (
+                    <circle
+                      key={`seatmargin-${payload.year}`}
+                      cx={cx ?? 0}
+                      cy={cy ?? 0}
+                      r={7}
+                      fill={payload.seatsMargin <= 0 ? "#1b408c" : "#be1c29"}
+                    />
+                  )}
+                  activeDot={{ r: 5 }}
+                />
+              ) : (
+                <>
+                  <Legend
+                    iconType="circle"
+                    iconSize={8}
+                    formatter={(value) => (
+                      <span style={{ fontSize: 11, color: "var(--app-text-muted)" }}>
+                        {value === "seatsD" ? "Democrat" : "Republican"}
+                      </span>
+                    )}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="seatsD"
+                    name="seatsD"
+                    stroke="#1b408c"
+                    strokeWidth={2.5}
+                    dot={{ r: 7, fill: "#1b408c", strokeWidth: 0 }}
+                    activeDot={{ r: 5 }}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="seatsR"
+                    name="seatsR"
+                    stroke="#be1c29"
+                    strokeWidth={2.5}
+                    dot={{ r: 7, fill: "#be1c29", strokeWidth: 0 }}
+                    activeDot={{ r: 5 }}
+                  />
+                </>
+              )
+            ) : viewMode === "pct" ? (
               <>
                 <Legend
                   iconType="circle"
@@ -318,7 +461,7 @@ export default function PopularVoteChart() {
             ) : (
               <Line
                 type="monotone"
-                dataKey="demMargin"
+                dataKey="repMargin"
                 stroke="var(--app-text-muted)"
                 strokeWidth={2.5}
                 dot={({ cx, cy, payload }: { cx?: number; cy?: number; payload: ChartPoint }) => (
@@ -327,7 +470,7 @@ export default function PopularVoteChart() {
                     cx={cx ?? 0}
                     cy={cy ?? 0}
                     r={7}
-                    fill={payload.demMargin >= 0 ? "#1b408c" : "#be1c29"}
+                    fill={payload.repMargin >= 0 ? "#be1c29" : "#1b408c"}
                   />
                 )}
                 activeDot={{ r: 5 }}

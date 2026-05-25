@@ -19,6 +19,7 @@ export type DetailPastResult = {
   repIncumbent?: boolean;
   electionType?: string;
   nationalDiff?: number | null;
+  swing?: number | null;
   placeholder?: boolean;
 };
 
@@ -512,11 +513,17 @@ export function PastElectionResultsSection({
           const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
           const demName = res.demCandidate ?? "Democratic Candidate";
           const repName = res.repCandidate ?? "Republican Candidate";
-          const prevRow = !isPlaceholder && !isSpecial
-            ? rows.find(r => r.year === res.year - swingCycleYears && !r.placeholder && !r.electionType?.toLowerCase().includes("special"))
-            : null;
-          const swing = prevRow != null
-            ? parseFloat(((prevRow.demPct - prevRow.repPct) - (res.demPct - res.repPct)).toFixed(1))
+          const swingVal: number | null = !isPlaceholder
+            ? (res.swing !== undefined
+              ? res.swing
+              : (!isSpecial
+                  ? (() => {
+                      const prevRow = rows.find(r => r.year === res.year - swingCycleYears && !r.placeholder && !r.electionType?.toLowerCase().includes("special"));
+                      return prevRow != null
+                        ? parseFloat(((prevRow.demPct - prevRow.repPct) - (res.demPct - res.repPct)).toFixed(1))
+                        : null;
+                    })()
+                  : null))
             : null;
 
           return (
@@ -610,16 +617,16 @@ export function PastElectionResultsSection({
                     </span>
                   );
                 })()}
-                {!isPlaceholder && swing != null && (() => {
-                  const swingIsR = swing > 0;
-                  const swingAbs = Math.abs(swing).toFixed(1);
+                {!isPlaceholder && swingVal != null && (() => {
+                  const swingIsR = swingVal > 0;
+                  const swingAbs = Math.abs(swingVal).toFixed(1);
                   return (
                     <span
                       className="text-[11px] font-bold whitespace-nowrap shrink-0"
-                      style={{ color: swing === 0 ? "var(--app-text-muted)" : swingIsR ? "var(--party-rep)" : "var(--party-dem)" }}
+                      style={{ color: swingVal === 0 ? "var(--app-text-muted)" : swingIsR ? "var(--party-rep)" : "var(--party-dem)" }}
                       title="Swing: change in margin vs previous election"
                     >
-                      {swing === 0 ? `=${swingAbs}` : swingIsR ? `→R+${swingAbs}` : `←D+${swingAbs}`}
+                      {swingVal === 0 ? `=${swingAbs}` : swingIsR ? `→R+${swingAbs}` : `←D+${swingAbs}`}
                     </span>
                   );
                 })()}
