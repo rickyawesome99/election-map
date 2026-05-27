@@ -396,6 +396,7 @@ export default function PopularVoteChart() {
                     />
                   )}
                   activeDot={{ r: 5 }}
+                  isAnimationActive={false}
                 />
               ) : (
                 <>
@@ -416,6 +417,7 @@ export default function PopularVoteChart() {
                     strokeWidth={2.5}
                     dot={{ r: 7, fill: "#1b408c", strokeWidth: 0 }}
                     activeDot={{ r: 5 }}
+                    isAnimationActive={false}
                   />
                   <Line
                     type="monotone"
@@ -425,6 +427,7 @@ export default function PopularVoteChart() {
                     strokeWidth={2.5}
                     dot={{ r: 7, fill: "#be1c29", strokeWidth: 0 }}
                     activeDot={{ r: 5 }}
+                    isAnimationActive={false}
                   />
                 </>
               )
@@ -447,6 +450,7 @@ export default function PopularVoteChart() {
                   strokeWidth={2.5}
                   dot={{ r: 7, fill: "#1b408c", strokeWidth: 0 }}
                   activeDot={{ r: 5 }}
+                  isAnimationActive={false}
                 />
                 <Line
                   type="monotone"
@@ -456,6 +460,7 @@ export default function PopularVoteChart() {
                   strokeWidth={2.5}
                   dot={{ r: 7, fill: "#be1c29", strokeWidth: 0 }}
                   activeDot={{ r: 5 }}
+                  isAnimationActive={false}
                 />
               </>
             ) : (
@@ -474,6 +479,7 @@ export default function PopularVoteChart() {
                   />
                 )}
                 activeDot={{ r: 5 }}
+                isAnimationActive={false}
               />
             )}
             {showApproval && (
@@ -492,6 +498,7 @@ export default function PopularVoteChart() {
                   />
                 )}
                 activeDot={{ r: 5 }}
+                isAnimationActive={false}
               />
             )}
           </LineChart>

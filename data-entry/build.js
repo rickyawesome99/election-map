@@ -695,6 +695,61 @@ for (const row of presHistoryRows) {
   pres2024[abbr] = parseFloat((num(row.dem_pct) - num(row.rep_pct)).toFixed(2));
 }
 
+// ── State Legislature Data ────────────────────────────────────────────────────
+
+const stateLegRows = parseCSVOptional("state_leg.csv");
+const stateLegData = {};
+
+for (const row of stateLegRows) {
+  const stateName = (row.state_name || "").trim();
+  if (!stateName) continue;
+  const type = (row.type || "").trim(); // "House" or "Senate"
+
+  // Skip Senate rows — they're placeholder stubs with no real data yet
+  if (type === "Senate") continue;
+
+  const year = int2(row.year, 0);
+  if (!year) continue;
+
+  // Helper: parse value, treating #DIV/0!, blank, and N/A as null
+  const safeNum = (v) => {
+    if (!v || v.trim() === "" || v.includes("#") || v.trim().toUpperCase() === "N/A") return null;
+    const n = parseFloat(v.replace(/,/g, ""));
+    return isNaN(n) ? null : n;
+  };
+  const safeInt = (v) => {
+    if (!v || v.trim() === "" || v.includes("#")) return null;
+    const n = parseInt(v.replace(/,/g, ""));
+    return isNaN(n) ? null : n;
+  };
+
+  const demSeats   = safeInt(row.dem_seats);
+  const repSeats   = safeInt(row.rep_seats);
+  const demPct     = safeNum(row.dem_pct);
+  const repPct     = safeNum(row.rep_pct);
+  const demVotes   = safeInt(row.dem_votes);
+  const repVotes   = safeInt(row.rep_votes);
+  const totalVotes = safeInt(row.total_votes);
+  const freq       = safeInt(row.freq);
+
+  const entry = { year, type };
+  if (freq       !== null) entry.freq       = freq;
+  if (demSeats   !== null) entry.demSeats   = demSeats;
+  if (repSeats   !== null) entry.repSeats   = repSeats;
+  if (demPct     !== null) entry.demPct     = demPct;
+  if (repPct     !== null) entry.repPct     = repPct;
+  if (demVotes   !== null) entry.demVotes   = demVotes;
+  if (repVotes   !== null) entry.repVotes   = repVotes;
+  if (totalVotes !== null) entry.totalVotes = totalVotes;
+  const noteStr = (row.note || "").trim();
+  if (noteStr) entry.note = noteStr;
+
+  (stateLegData[stateName] = stateLegData[stateName] || []).push(entry);
+}
+for (const key of Object.keys(stateLegData)) {
+  stateLegData[key].sort((a, b) => b.year - a.year);
+}
+
 // ── Output forecastData.ts ────────────────────────────────────────────────────
 
 function j(v) { return JSON.stringify(v, null, 2); }
@@ -840,6 +895,22 @@ export type HouseStatewideResult = {
 export const houseStatewideResults: Record<string, HouseStatewideResult[]> = ${j(houseStatewideResults)};
 
 export const electionYear: number = ${ELECTION_YEAR};
+
+export type StateLegEntry = {
+  year: number;
+  type: "House" | "Senate";
+  freq?: number;
+  demSeats?: number;
+  repSeats?: number;
+  demPct?: number;
+  repPct?: number;
+  demVotes?: number;
+  repVotes?: number;
+  totalVotes?: number;
+  note?: string;
+};
+
+export const stateLegData: Record<string, StateLegEntry[]> = ${j(stateLegData)};
 `;
 
 const outPath = path.join(DATA_DIR, "forecastData.ts");
@@ -855,4 +926,5 @@ console.log(`✓ House del history: ${Object.keys(houseDelegationHistory).length
 console.log(`✓ House statewide:   ${Object.keys(houseStatewideResults).length} districts`);
 console.log(`✓ District PVI:      ${Object.keys(houseDistrictPvi).length} districts`);
 console.log(`✓ State PVI:         ${Object.keys(statePvi).length} states`);
+console.log(`✓ State leg data:    ${Object.keys(stateLegData).length} states`);
 console.log(`\n✅  data/forecastData.ts updated successfully.`);

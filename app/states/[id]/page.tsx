@@ -1,10 +1,11 @@
 import { statesData } from "@/data/statesData";
-import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, senateCurrent, pres2024, presPastResults, houseDelegationHistory, houseStatewideResults, PresResult, RaceForecast, NoElectionEntry, HouseStatewideResult, electionYear } from "@/data/forecastData";
+import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, senateCurrent, pres2024, presPastResults, houseDelegationHistory, houseStatewideResults, stateLegData, PresResult, RaceForecast, NoElectionEntry, HouseStatewideResult, electionYear } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import AppHeader from "@/components/AppHeader";
 import StateMapSection from "@/components/StateMapSection";
+import StateVoteHistoryChart from "@/components/StateVoteHistoryChart";
 
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -306,6 +307,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
   }
 
   const stateDelegationHistory = houseDelegationHistory[state.name] ?? [];
+  const stateLegEntries = (stateLegData[state.name] ?? []).filter(e =>
+    e.type === "House" &&
+    (e.demSeats != null || e.repSeats != null || e.demPct != null || e.repPct != null)
+  );
 
   // House current composition — use 2024 delegation history if available, else infer from incumbents
   const houseDel2024 = stateDelegationHistory.find((e) => e.year === 2024);
@@ -342,6 +347,37 @@ export default async function StateDetailPage({ params, searchParams }: { params
     const m = abbr.match(/-(\d+)$/);
     return m ? `Pres. (CD-${m[1]})` : "Presidential";
   }
+
+  const voteHistoryResults = [
+    ...stateDelegationHistory
+      .filter((r) => r.year >= 2016)
+      .map((r) => ({
+        year: r.year,
+        race: "House",
+        demPct: r.demPct,
+        repPct: r.repPct,
+      })),
+    ...presRows.map((r) => ({
+      year: r.year,
+      race: "President",
+      demPct: r.demPct,
+      repPct: r.repPct,
+      label: r.stateAbbr === stateAbbr ? String(r.year) : `${r.year} ${presRaceLabel(r.stateAbbr).replace("Pres. ", "")}`,
+    })),
+    ...senatePastResults.map((r) => ({
+      year: r.year,
+      race: isSpecialElection(r.electionType) ? "Senate Special" : "Senate",
+      demPct: r.demPct,
+      repPct: r.repPct,
+      label: `${r.year}${r.seat === 2 ? " S2" : ""}`,
+    })),
+    ...govPastResults.map((r) => ({
+      year: r.year,
+      race: "Governor",
+      demPct: r.demPct,
+      repPct: r.repPct,
+    })),
+  ];
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -470,17 +506,22 @@ export default async function StateDetailPage({ params, searchParams }: { params
               {houseRaces.length > 0 && (
                 <div className="order-6">
                 <section
-                  className="rounded-xl p-3"
-                  style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+                  className="flex flex-col overflow-hidden rounded-xl p-3"
+                  style={{
+                    background: "var(--app-panel)",
+                    border: "1px solid var(--app-border)",
+                    flex: "0 0 23rem",
+                    height: "23rem",
+                  }}
                 >
                   <h2
-                    className="text-[10px] uppercase tracking-wider font-semibold mb-3"
+                    className="mb-3 shrink-0 text-[10px] uppercase tracking-wider font-semibold"
                     style={{ color: "var(--app-text-muted)" }}
                   >
-                    House Delegation Composition · Since 2016
+                    US House Delegation Composition · Since 2016
                   </h2>
 
-                  <div>
+                  <div className="min-h-0 flex-1 overflow-y-auto pr-1">
                     <div className="flex flex-col gap-2.5">
                       {([2024, 2022, 2020, 2018, 2016] as const).map((year) => {
                         const entry = stateDelegationHistory.find((e) => e.year === year);
@@ -552,6 +593,100 @@ export default async function StateDetailPage({ params, searchParams }: { params
                 </section>
                 </div>
               )}
+
+            {stateLegEntries.length > 0 && (
+              <div className="order-7">
+              <section
+                className="flex flex-col overflow-hidden rounded-xl p-3"
+                style={{
+                  background: "var(--app-panel)",
+                  border: "1px solid var(--app-border)",
+                  flex: "0 0 23rem",
+                  height: "23rem",
+                }}
+              >
+                <h2
+                  className="mb-3 shrink-0 text-[10px] uppercase tracking-wider font-semibold"
+                  style={{ color: "var(--app-text-muted)" }}
+                >
+                  State Legislature Composition · Since 2015
+                </h2>
+
+                <div className="min-h-0 flex-1 overflow-y-auto pr-1">
+                  <div className="flex flex-col gap-2.5">
+                    {stateLegEntries.map((entry) => {
+                      const hasSeats    = entry.demSeats != null && entry.repSeats != null;
+                      const hasVoteData = entry.demPct  != null && entry.repPct  != null;
+                      const winner      = hasVoteData ? (entry.demPct! > entry.repPct! ? "D" : "R") : null;
+                      const margin      = hasVoteData ? Math.abs(entry.demPct! - entry.repPct!).toFixed(1) : null;
+                      return (
+                        <div
+                          key={`${entry.year}-${entry.type}`}
+                          className="rounded-lg p-2.5"
+                          style={{ background: "var(--app-bg)" }}
+                        >
+                          <div className="mb-2 flex items-center justify-between gap-3">
+                            <div className="flex items-center gap-3">
+                              <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+                                {entry.year}
+                              </span>
+                              {hasSeats ? (
+                                <div className="flex items-center gap-1.5 text-sm font-semibold tabular-nums">
+                                  <span style={{ color: "var(--party-dem)" }}>{entry.demSeats}D</span>
+                                  <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>/</span>
+                                  <span style={{ color: "var(--party-rep)" }}>{entry.repSeats}R</span>
+                                </div>
+                              ) : (
+                                <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Seats TBD</span>
+                              )}
+                            </div>
+                            {winner && margin ? (
+                              <span
+                                className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
+                                style={winner === "D"
+                                  ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
+                                  : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                              >
+                                {winner}+{margin}
+                              </span>
+                            ) : (
+                              <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
+                            )}
+                          </div>
+                          {hasVoteData ? (
+                            <>
+                              <div className="flex h-2.5 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>
+                                <div style={{ width: `${entry.demPct}%`, background: "#1b408c" }} />
+                                <div style={{ width: `${entry.repPct}%`, background: "#be1c29" }} />
+                              </div>
+                              <div className="flex justify-between text-xs font-semibold">
+                                <span style={{ color: "var(--party-dem)" }}>{entry.demPct!.toFixed(1)}%</span>
+                                <span style={{ color: "var(--party-rep)" }}>{entry.repPct!.toFixed(1)}%</span>
+                              </div>
+                              {(entry.demVotes != null || entry.repVotes != null) && (
+                                <div className="mt-0.5 flex justify-between gap-3 text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+                                  <span className="truncate">
+                                    {entry.demVotes != null ? entry.demVotes.toLocaleString() + " D votes" : ""}
+                                  </span>
+                                  <span className="truncate text-right">
+                                    {entry.repVotes != null ? entry.repVotes.toLocaleString() + " R votes" : ""}
+                                  </span>
+                                </div>
+                              )}
+                            </>
+                          ) : (
+                            <div className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>
+                              Vote data unavailable
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </section>
+              </div>
+            )}
             </>
           )}
         >
@@ -658,16 +793,21 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
           {/* Electoral History */}
           <section
-            className="order-5 rounded-xl p-3 md:flex md:min-h-0 md:flex-col md:overflow-hidden"
-            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+            className="order-5 flex flex-col overflow-hidden rounded-xl p-3"
+            style={{
+              background: "var(--app-panel)",
+              border: "1px solid var(--app-border)",
+              flex: "0 0 38rem",
+              height: "38rem",
+            }}
           >
             <h2
-              className="text-[10px] uppercase tracking-wider font-semibold mb-3"
+              className="mb-3 shrink-0 text-[10px] uppercase tracking-wider font-semibold"
               style={{ color: "var(--app-text-muted)" }}
             >
               Electoral History · Statewide Races Since 2016
             </h2>
-            <div className="max-h-[28rem] overflow-y-auto pr-1 md:min-h-0 md:flex-1 md:basis-0 md:max-h-none">
+            <div className="min-h-0 flex-1 overflow-y-auto pr-1">
               <div className="flex flex-col gap-2.5">
                 {presRows.length > 0 ? presRows.map((res, i) => {
                   const winner = res.demPct > res.repPct ? "D" : "R";
@@ -851,6 +991,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
               </div>
             </div>
           </section>
+
+          <div className="order-8 md:order-6">
+            <StateVoteHistoryChart results={voteHistoryResults} />
+          </div>
         </StateMapSection>
       </main>
     </div>

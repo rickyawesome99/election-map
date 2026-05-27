@@ -101677,3 +101677,2903 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
 };
 
 export const electionYear: number = 2026;
+
+export type StateLegEntry = {
+  year: number;
+  type: "House" | "Senate";
+  freq?: number;
+  demSeats?: number;
+  repSeats?: number;
+  demPct?: number;
+  repPct?: number;
+  demVotes?: number;
+  repVotes?: number;
+  totalVotes?: number;
+  note?: string;
+};
+
+export const stateLegData: Record<string, StateLegEntry[]> = {
+  "Alabama": [
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 4,
+      "demSeats": 28,
+      "repSeats": 77,
+      "demPct": 24.8,
+      "repPct": 71.3,
+      "demVotes": 297978,
+      "repVotes": 857167,
+      "totalVotes": 1202196
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 4,
+      "demSeats": 28,
+      "repSeats": 77,
+      "demPct": 36.2,
+      "repPct": 62.2,
+      "demVotes": 554571,
+      "repVotes": 952859,
+      "totalVotes": 1531494
+    }
+  ],
+  "Alaska": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 21,
+      "demPct": 26,
+      "repPct": 55.5,
+      "demVotes": 74931,
+      "repVotes": 159813,
+      "totalVotes": 287881
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 13,
+      "repSeats": 21,
+      "demPct": 27.8,
+      "repPct": 56.2,
+      "demVotes": 66613,
+      "repVotes": 134545,
+      "totalVotes": 239361
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 15,
+      "repSeats": 21,
+      "demPct": 32.8,
+      "repPct": 49.1,
+      "demVotes": 100080,
+      "repVotes": 149728,
+      "totalVotes": 304826
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 16,
+      "repSeats": 23,
+      "demPct": 37.7,
+      "repPct": 51.6,
+      "demVotes": 99956,
+      "repVotes": 136961,
+      "totalVotes": 265400
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 17,
+      "repSeats": 21,
+      "demPct": 38.3,
+      "repPct": 51.2,
+      "demVotes": 102277,
+      "repVotes": 136723,
+      "totalVotes": 266824
+    }
+  ],
+  "Arizona": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 27,
+      "repSeats": 33,
+      "demPct": 44.3,
+      "repPct": 54.8,
+      "demVotes": 1951102,
+      "repVotes": 2412962,
+      "totalVotes": 4406000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 29,
+      "repSeats": 31,
+      "demPct": 41.9,
+      "repPct": 58.1,
+      "demVotes": 1544785,
+      "repVotes": 2146365,
+      "totalVotes": 3691150
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 29,
+      "repSeats": 31,
+      "demPct": 45.4,
+      "repPct": 54.6,
+      "demVotes": 2094461,
+      "repVotes": 2522188,
+      "totalVotes": 4616649
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 29,
+      "repSeats": 31,
+      "demPct": 48.5,
+      "repPct": 50.6,
+      "demVotes": 1826758,
+      "repVotes": 1906236,
+      "totalVotes": 3769500,
+      "note": "Estimate"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 25,
+      "repSeats": 35,
+      "demPct": 41.5,
+      "repPct": 56.8,
+      "demVotes": 1485924,
+      "repVotes": 2032005,
+      "totalVotes": 3580000,
+      "note": "Estimate"
+    }
+  ],
+  "Arkansas": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 19,
+      "repSeats": 81,
+      "demPct": 27.8,
+      "repPct": 70.7,
+      "demVotes": 299448,
+      "repVotes": 760692,
+      "totalVotes": 1075320
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 82,
+      "demPct": 23.5,
+      "repPct": 71.6,
+      "demVotes": 193673,
+      "repVotes": 590016,
+      "totalVotes": 824376
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 23,
+      "repSeats": 77,
+      "demPct": 28.4,
+      "repPct": 70.1,
+      "demVotes": 313643,
+      "repVotes": 772967,
+      "totalVotes": 1102850
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 24,
+      "repSeats": 76,
+      "demPct": 35.2,
+      "repPct": 62.6,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    }
+  ],
+  "California": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 60,
+      "repSeats": 20,
+      "demPct": 58.8,
+      "repPct": 40.6,
+      "demVotes": 8603080,
+      "repVotes": 5950501,
+      "totalVotes": 14640000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 62,
+      "repSeats": 18,
+      "demPct": 60.8,
+      "repPct": 37.6,
+      "demVotes": 6181972,
+      "repVotes": 3824294,
+      "totalVotes": 10175112
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 60,
+      "repSeats": 19,
+      "demPct": 62.8,
+      "repPct": 35.5,
+      "demVotes": 10091733,
+      "repVotes": 5708733,
+      "totalVotes": 16074014
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 60,
+      "repSeats": 20,
+      "demPct": 66.8,
+      "repPct": 31.5,
+      "demVotes": 7872315,
+      "repVotes": 3710882,
+      "totalVotes": 11791983
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 55,
+      "repSeats": 25,
+      "demPct": 61.1,
+      "repPct": 37.4,
+      "demVotes": 7929866,
+      "repVotes": 4849783,
+      "totalVotes": 12982391
+    }
+  ],
+  "Colorado": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 43,
+      "repSeats": 22,
+      "demPct": 53.7,
+      "repPct": 45.1,
+      "demVotes": 1563201,
+      "repVotes": 1313093,
+      "totalVotes": 2912408,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 46,
+      "repSeats": 19,
+      "demPct": 53.3,
+      "repPct": 45.9,
+      "demVotes": 1271525,
+      "repVotes": 1093148,
+      "totalVotes": 2384000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 41,
+      "repSeats": 24,
+      "demPct": 53.9,
+      "repPct": 43.7,
+      "demVotes": 1642008,
+      "repVotes": 1331774,
+      "totalVotes": 3046342
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 41,
+      "repSeats": 24,
+      "demPct": 54.8,
+      "repPct": 42.5,
+      "demVotes": 1321710,
+      "repVotes": 1025765,
+      "totalVotes": 2411949
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 37,
+      "repSeats": 28,
+      "demPct": 47.8,
+      "repPct": 49.3,
+      "demVotes": 1201949,
+      "repVotes": 1238154,
+      "totalVotes": 2513182
+    }
+  ],
+  "Connecticut": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 102,
+      "repSeats": 49,
+      "demPct": 56.1,
+      "repPct": 43.4,
+      "demVotes": 887403,
+      "repVotes": 686796,
+      "totalVotes": 1582000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 98,
+      "repSeats": 53,
+      "demPct": 56.1,
+      "repPct": 41.9,
+      "demVotes": 727440,
+      "repVotes": 544387,
+      "totalVotes": 1297811
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 97,
+      "repSeats": 54,
+      "demPct": 53.6,
+      "repPct": 42.2,
+      "demVotes": 908640,
+      "repVotes": 715311,
+      "totalVotes": 1695390
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 92,
+      "repSeats": 59,
+      "demPct": 54.6,
+      "repPct": 45.1,
+      "demVotes": 730652,
+      "repVotes": 603122,
+      "totalVotes": 1338142
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 80,
+      "repSeats": 71,
+      "demPct": 47.1,
+      "repPct": 51.8,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Delaware": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 27,
+      "repSeats": 14,
+      "demPct": 54.4,
+      "repPct": 45.6,
+      "demVotes": 246413,
+      "repVotes": 206761,
+      "totalVotes": 453174
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 26,
+      "repSeats": 15,
+      "demPct": 51.4,
+      "repPct": 47.7,
+      "demVotes": 149213,
+      "repVotes": 138326,
+      "totalVotes": 290085
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 26,
+      "repSeats": 15,
+      "demPct": 57.8,
+      "repPct": 42,
+      "demVotes": 247204,
+      "repVotes": 179698,
+      "totalVotes": 427630
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 26,
+      "repSeats": 15,
+      "demPct": 59.1,
+      "repPct": 40.1,
+      "demVotes": 199716,
+      "repVotes": 135694,
+      "totalVotes": 338169
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 25,
+      "repSeats": 16,
+      "demPct": 59.5,
+      "repPct": 39.5,
+      "demVotes": 226083,
+      "repVotes": 149871,
+      "totalVotes": 379895
+    }
+  ],
+  "Florida": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 35,
+      "repSeats": 85,
+      "demPct": 40.6,
+      "repPct": 59,
+      "demVotes": 3817390,
+      "repVotes": 5554635,
+      "totalVotes": 9408559
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 35,
+      "repSeats": 85,
+      "demPct": 39.3,
+      "repPct": 59.4,
+      "demVotes": 1870647,
+      "repVotes": 2824685,
+      "totalVotes": 4758610
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 42,
+      "repSeats": 78,
+      "demPct": 42.6,
+      "repPct": 57,
+      "demVotes": 3796251,
+      "repVotes": 5075575,
+      "totalVotes": 8909594
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 47,
+      "repSeats": 73,
+      "demPct": 42.2,
+      "repPct": 56.2,
+      "demVotes": 2494934,
+      "repVotes": 3320015,
+      "totalVotes": 5906926
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 41,
+      "repSeats": 79,
+      "demPct": 39.8,
+      "repPct": 57.1,
+      "demVotes": 2226861,
+      "repVotes": 3195961,
+      "totalVotes": 5600000,
+      "note": "Estimate"
+    }
+  ],
+  "Georgia": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 80,
+      "repSeats": 100,
+      "demPct": 45.4,
+      "repPct": 54.6,
+      "demVotes": 2172046,
+      "repVotes": 2616271,
+      "totalVotes": 4788317
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 79,
+      "repSeats": 101,
+      "demPct": 44.8,
+      "repPct": 55.2,
+      "demVotes": 1619542,
+      "repVotes": 1999536,
+      "totalVotes": 3619078
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 77,
+      "repSeats": 103,
+      "demPct": 48.6,
+      "repPct": 51.3,
+      "demVotes": 2217983,
+      "repVotes": 2338983,
+      "totalVotes": 4560000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 75,
+      "repSeats": 105,
+      "demPct": 45.6,
+      "repPct": 54.3,
+      "demVotes": 1582161,
+      "repVotes": 1884211,
+      "totalVotes": 3470967
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 62,
+      "repSeats": 118,
+      "demPct": 35.6,
+      "repPct": 64.2,
+      "demVotes": 1239831,
+      "repVotes": 2236549,
+      "totalVotes": 3484394,
+      "note": "Estimate"
+    }
+  ],
+  "Hawaii": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 45,
+      "repSeats": 6,
+      "demPct": 63.1,
+      "repPct": 35.8,
+      "demVotes": 210784,
+      "repVotes": 119556,
+      "totalVotes": 333801
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 45,
+      "repSeats": 6,
+      "demPct": 65.1,
+      "repPct": 33,
+      "demVotes": 208416,
+      "repVotes": 105732,
+      "totalVotes": 319980
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 47,
+      "repSeats": 4,
+      "demPct": 65.3,
+      "repPct": 28.7,
+      "demVotes": 240042,
+      "repVotes": 105475,
+      "totalVotes": 367715
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 46,
+      "repSeats": 5,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 45,
+      "repSeats": 6,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Idaho": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 61,
+      "demPct": 28.2,
+      "repPct": 71.1,
+      "demVotes": 456398,
+      "repVotes": 1151396,
+      "totalVotes": 1619099
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 59,
+      "demPct": 22.9,
+      "repPct": 76.3,
+      "demVotes": 243576,
+      "repVotes": 810556,
+      "totalVotes": 1062746
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 58,
+      "demPct": 25.4,
+      "repPct": 72.1,
+      "demVotes": 396678,
+      "repVotes": 1125614,
+      "totalVotes": 1560648
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 56,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Illinois": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 78,
+      "repSeats": 40,
+      "demPct": 54.9,
+      "repPct": 44.9,
+      "demVotes": 2731940,
+      "repVotes": 2234844,
+      "totalVotes": 4979723,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 78,
+      "repSeats": 40,
+      "demPct": 49.1,
+      "repPct": 50.9,
+      "demVotes": 1872947,
+      "repVotes": 1943438,
+      "totalVotes": 3816385
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 73,
+      "repSeats": 45,
+      "demPct": 58.4,
+      "repPct": 39.1,
+      "demVotes": 3157943,
+      "repVotes": 2113389,
+      "totalVotes": 5404047
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 74,
+      "repSeats": 44,
+      "demPct": 59.6,
+      "repPct": 40.4,
+      "demVotes": 2503372,
+      "repVotes": 1693846,
+      "totalVotes": 4197269
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 67,
+      "repSeats": 51,
+      "demPct": 53.9,
+      "repPct": 46,
+      "demVotes": 2604236,
+      "repVotes": 2222482,
+      "totalVotes": 4834247
+    }
+  ],
+  "Indiana": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 30,
+      "repSeats": 70,
+      "demPct": 35.8,
+      "repPct": 63.7,
+      "demVotes": 941783,
+      "repVotes": 1675017,
+      "totalVotes": 2630926
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 30,
+      "repSeats": 70,
+      "demPct": 33,
+      "repPct": 66,
+      "demVotes": 554181,
+      "repVotes": 1108854,
+      "totalVotes": 1678819
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 29,
+      "repSeats": 71,
+      "demPct": 39.8,
+      "repPct": 59.7,
+      "demVotes": 1121303,
+      "repVotes": 1682843,
+      "totalVotes": 2819207
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 33,
+      "repSeats": 67,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Iowa": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 33,
+      "repSeats": 67,
+      "demPct": 42.2,
+      "repPct": 54.6,
+      "demVotes": 625834,
+      "repVotes": 808492,
+      "totalVotes": 1481960,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 36,
+      "repSeats": 64,
+      "demPct": 39.9,
+      "repPct": 56.6,
+      "demVotes": 443603,
+      "repVotes": 629413,
+      "totalVotes": 1112267
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 41,
+      "repSeats": 59,
+      "demPct": 47.5,
+      "repPct": 51.3,
+      "demVotes": 726718,
+      "repVotes": 786409,
+      "totalVotes": 1531541
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 46,
+      "repSeats": 54,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 41,
+      "repSeats": 59,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Kansas": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 37,
+      "repSeats": 88,
+      "demPct": 23,
+      "repPct": 76.2,
+      "demVotes": 133932,
+      "repVotes": 442792,
+      "totalVotes": 581310,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 40,
+      "repSeats": 85,
+      "demPct": 36.9,
+      "repPct": 62.6,
+      "demVotes": 334211,
+      "repVotes": 566412,
+      "totalVotes": 905207
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 39,
+      "repSeats": 86,
+      "demPct": 37.6,
+      "repPct": 61.9,
+      "demVotes": 479381,
+      "repVotes": 789261,
+      "totalVotes": 1274632
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 41,
+      "repSeats": 84,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Kentucky": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 20,
+      "repSeats": 80,
+      "demPct": 28.4,
+      "repPct": 71.3,
+      "demVotes": 514267,
+      "repVotes": 1291761,
+      "totalVotes": 1810542
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 20,
+      "repSeats": 80,
+      "demPct": 29.4,
+      "repPct": 70.4,
+      "demVotes": 377805,
+      "repVotes": 904806,
+      "totalVotes": 1285119
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 25,
+      "repSeats": 75,
+      "demPct": 36.1,
+      "repPct": 62.6,
+      "demVotes": 706246,
+      "repVotes": 1225446,
+      "totalVotes": 1956200,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 39,
+      "repSeats": 61,
+      "demPct": 45.8,
+      "repPct": 53.4,
+      "demVotes": 699377,
+      "repVotes": 814787,
+      "totalVotes": 1526817
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 36,
+      "repSeats": 64,
+      "demPct": 39.9,
+      "repPct": 60,
+      "demVotes": 695707,
+      "repVotes": 1045502,
+      "totalVotes": 1742181
+    }
+  ],
+  "Louisiana": [
+    {
+      "year": 2023,
+      "type": "House",
+      "freq": 4,
+      "demSeats": 32,
+      "repSeats": 73,
+      "demPct": 27.8,
+      "repPct": 70.9,
+      "demVotes": 155795,
+      "repVotes": 398222,
+      "totalVotes": 561333
+    },
+    {
+      "year": 2019,
+      "type": "House",
+      "freq": 4,
+      "demSeats": 35,
+      "repSeats": 68,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2015,
+      "type": "House",
+      "freq": 4,
+      "demSeats": 42,
+      "repSeats": 61,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Maine": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 76,
+      "repSeats": 73,
+      "demPct": 49.2,
+      "repPct": 47.6,
+      "demVotes": 378082,
+      "repVotes": 366013,
+      "totalVotes": 768650,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 82,
+      "repSeats": 67,
+      "demPct": 50.2,
+      "repPct": 45.9,
+      "demVotes": 323064,
+      "repVotes": 295258,
+      "totalVotes": 643706
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 80,
+      "repSeats": 67,
+      "demPct": 51.5,
+      "repPct": 44.5,
+      "demVotes": 384500,
+      "repVotes": 332087,
+      "totalVotes": 746000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 89,
+      "repSeats": 57,
+      "demPct": 52.7,
+      "repPct": 43,
+      "demVotes": 324088,
+      "repVotes": 264282,
+      "totalVotes": 614968,
+      "note": "Estimate"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 77,
+      "repSeats": 72,
+      "demPct": 51.1,
+      "repPct": 46.7,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Maryland": [
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 4,
+      "demSeats": 102,
+      "repSeats": 39,
+      "demPct": 67.4,
+      "repPct": 31.6,
+      "demVotes": 2579561,
+      "repVotes": 1208564,
+      "totalVotes": 3829443
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 4,
+      "demSeats": 99,
+      "repSeats": 42,
+      "demPct": 65.5,
+      "repPct": 32.6,
+      "demVotes": 2940371,
+      "repVotes": 1462097,
+      "totalVotes": 4490000,
+      "note": "Estimate"
+    }
+  ],
+  "Massachusetts": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 134,
+      "repSeats": 25,
+      "demPct": 73,
+      "repPct": 21.8,
+      "demVotes": 2082712,
+      "repVotes": 623159,
+      "totalVotes": 2852930
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 134,
+      "repSeats": 25,
+      "demPct": 71.3,
+      "repPct": 25.6,
+      "demVotes": 1507301,
+      "repVotes": 541222,
+      "totalVotes": 2114475
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 129,
+      "repSeats": 30,
+      "demPct": 74.3,
+      "repPct": 22.8,
+      "demVotes": 2239316,
+      "repVotes": 686101,
+      "totalVotes": 3015019
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 127,
+      "repSeats": 32,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 125,
+      "repSeats": 35,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Michigan": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 52,
+      "repSeats": 58,
+      "demPct": 48.5,
+      "repPct": 51,
+      "demVotes": 2636046,
+      "repVotes": 2773258,
+      "totalVotes": 5433278
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 56,
+      "repSeats": 54,
+      "demPct": 50.6,
+      "repPct": 49.2,
+      "demVotes": 2179190,
+      "repVotes": 2121890,
+      "totalVotes": 4310000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 52,
+      "repSeats": 58,
+      "demPct": 49.9,
+      "repPct": 49.6,
+      "demVotes": 2667279,
+      "repVotes": 2653603,
+      "totalVotes": 5350000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 52,
+      "repSeats": 58,
+      "demPct": 52.1,
+      "repPct": 47.4,
+      "demVotes": 2128281,
+      "repVotes": 1935174,
+      "totalVotes": 4082747
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 47,
+      "repSeats": 63,
+      "demPct": 49.1,
+      "repPct": 49.2,
+      "demVotes": 2260633,
+      "repVotes": 2263633,
+      "totalVotes": 4601289
+    }
+  ],
+  "Minnesota": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 67,
+      "repSeats": 67,
+      "demPct": 49.5,
+      "repPct": 50,
+      "demVotes": 1530797,
+      "repVotes": 1545213,
+      "totalVotes": 3093483
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 70,
+      "repSeats": 64,
+      "demPct": 50.9,
+      "repPct": 48.3,
+      "demVotes": 1237520,
+      "repVotes": 1173659,
+      "totalVotes": 2430571
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 70,
+      "repSeats": 64,
+      "demPct": 51.1,
+      "repPct": 48.2,
+      "demVotes": 1601357,
+      "repVotes": 1510928,
+      "totalVotes": 3136514
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 75,
+      "repSeats": 59,
+      "demPct": 54.4,
+      "repPct": 45.1,
+      "demVotes": 1388938,
+      "repVotes": 1151135,
+      "totalVotes": 2553249
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 57,
+      "repSeats": 77,
+      "demPct": 49.1,
+      "repPct": 50.3,
+      "demVotes": 1366375,
+      "repVotes": 1400587,
+      "totalVotes": 2782505
+    }
+  ],
+  "Mississippi": [
+    {
+      "year": 2023,
+      "type": "House",
+      "freq": 4,
+      "demSeats": 41,
+      "repSeats": 79,
+      "demPct": 34.4,
+      "repPct": 62.2,
+      "demVotes": 247175,
+      "repVotes": 447034,
+      "totalVotes": 718848
+    },
+    {
+      "year": 2019,
+      "type": "House",
+      "freq": 4,
+      "demSeats": 46,
+      "repSeats": 75,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2015,
+      "type": "House",
+      "freq": 4,
+      "demSeats": 49,
+      "repSeats": 73,
+      "demPct": 44.7,
+      "repPct": 54.5,
+      "demVotes": 298355,
+      "repVotes": 363667,
+      "totalVotes": 667378
+    }
+  ],
+  "Missouri": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 52,
+      "repSeats": 111,
+      "demPct": 37.6,
+      "repPct": 61.7,
+      "demVotes": 1037432,
+      "repVotes": 1701567,
+      "totalVotes": 2758421
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 52,
+      "repSeats": 111,
+      "demPct": 33.5,
+      "repPct": 65.8,
+      "demVotes": 627512,
+      "repVotes": 1233795,
+      "totalVotes": 1875430
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 49,
+      "repSeats": 114,
+      "demPct": 36.8,
+      "repPct": 62.6,
+      "demVotes": 1016563,
+      "repVotes": 1732426,
+      "totalVotes": 2765300,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Montana": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 42,
+      "repSeats": 58,
+      "demPct": 36.6,
+      "repPct": 62.3,
+      "demVotes": 208871,
+      "repVotes": 355586,
+      "totalVotes": 570834
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 32,
+      "repSeats": 68,
+      "demPct": 35.2,
+      "repPct": 63.8,
+      "demVotes": 151477,
+      "repVotes": 274897,
+      "totalVotes": 430710
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 33,
+      "repSeats": 67,
+      "demPct": 42.8,
+      "repPct": 59.3,
+      "demVotes": 244210,
+      "repVotes": 338344,
+      "totalVotes": 570553
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 42,
+      "repSeats": 58,
+      "demPct": 44.8,
+      "repPct": 52.6,
+      "demVotes": 207402,
+      "repVotes": 243143,
+      "totalVotes": 462570
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 41,
+      "repSeats": 59,
+      "demPct": 44,
+      "repPct": 55.2,
+      "demVotes": 205981,
+      "repVotes": 258412,
+      "totalVotes": 468273
+    }
+  ],
+  "Nebraska": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 15,
+      "repSeats": 33,
+      "demPct": 30.1,
+      "repPct": 62.5,
+      "demVotes": 117830,
+      "repVotes": 244930,
+      "totalVotes": 392076
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 17,
+      "repSeats": 32,
+      "demPct": 27.2,
+      "repPct": 68.1,
+      "demVotes": 89093,
+      "repVotes": 222655,
+      "totalVotes": 327100,
+      "note": "Estimate"
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 17,
+      "repSeats": 32,
+      "demPct": 40,
+      "repPct": 59,
+      "demVotes": 166676,
+      "repVotes": 245639,
+      "totalVotes": 416480,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 30,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 16,
+      "repSeats": 31,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Nevada": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 27,
+      "repSeats": 15,
+      "demPct": 45.6,
+      "repPct": 53.1,
+      "demVotes": 614370,
+      "repVotes": 714720,
+      "totalVotes": 1346042
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 28,
+      "repSeats": 14,
+      "demPct": 41.4,
+      "repPct": 56,
+      "demVotes": 397353,
+      "repVotes": 536798,
+      "totalVotes": 959246
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 26,
+      "repSeats": 16,
+      "demPct": 46.7,
+      "repPct": 51.5,
+      "demVotes": 581197,
+      "repVotes": 640275,
+      "totalVotes": 1243365
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 29,
+      "repSeats": 13,
+      "demPct": 52.1,
+      "repPct": 47.1,
+      "demVotes": 462309,
+      "repVotes": 417116,
+      "totalVotes": 886500,
+      "note": "Estimate"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 27,
+      "repSeats": 15,
+      "note": "Incomplete Data"
+    }
+  ],
+  "New Hampshire": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 178,
+      "repSeats": 222,
+      "demPct": 47.2,
+      "repPct": 52.3,
+      "demVotes": 1218506,
+      "repVotes": 1351685,
+      "totalVotes": 2583024
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 199,
+      "repSeats": 201,
+      "demPct": 50.8,
+      "repPct": 48.6,
+      "demVotes": 1097393,
+      "repVotes": 1049787,
+      "totalVotes": 2158527
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 187,
+      "repSeats": 213,
+      "demPct": 48.9,
+      "repPct": 50.9,
+      "demVotes": 1267790,
+      "repVotes": 1319131,
+      "totalVotes": 2592105,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 234,
+      "repSeats": 166,
+      "demPct": 52.5,
+      "repPct": 47,
+      "demVotes": 1094719,
+      "repVotes": 980303,
+      "totalVotes": 2086630,
+      "note": "Estimate"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 173,
+      "repSeats": 227,
+      "note": "Incomplete Data"
+    }
+  ],
+  "New Jersey": [
+    {
+      "year": 2025,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 57,
+      "repSeats": 23,
+      "demPct": 57.8,
+      "repPct": 42.1,
+      "demVotes": 3570461,
+      "repVotes": 2602318,
+      "totalVotes": 6179141
+    },
+    {
+      "year": 2023,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 52,
+      "repSeats": 28,
+      "demPct": 53.1,
+      "repPct": 46.4,
+      "demVotes": 1804115,
+      "repVotes": 1575074,
+      "totalVotes": 3394645
+    },
+    {
+      "year": 2021,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 46,
+      "repSeats": 34,
+      "demPct": 51.6,
+      "repPct": 48.2,
+      "demVotes": 2521259,
+      "repVotes": 2351564,
+      "totalVotes": 4883589
+    },
+    {
+      "year": 2019,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 52,
+      "repSeats": 28,
+      "demPct": 60.9,
+      "repPct": 39.1,
+      "demVotes": 474160,
+      "repVotes": 304101,
+      "totalVotes": 778261
+    },
+    {
+      "year": 2017,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 54,
+      "repSeats": 26,
+      "demPct": 58.1,
+      "repPct": 41.4,
+      "demVotes": 2266879,
+      "repVotes": 1613865,
+      "totalVotes": 3902734
+    },
+    {
+      "year": 2015,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 52,
+      "repSeats": 28,
+      "demPct": 53.3,
+      "repPct": 45.9,
+      "demVotes": 1111320,
+      "repVotes": 958085,
+      "totalVotes": 2086119
+    }
+  ],
+  "New Mexico": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 44,
+      "repSeats": 26,
+      "demPct": 54.4,
+      "repPct": 45.2,
+      "demVotes": 421033,
+      "repVotes": 349661,
+      "totalVotes": 773992
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 45,
+      "repSeats": 25,
+      "demPct": 56.1,
+      "repPct": 42,
+      "demVotes": 355214,
+      "repVotes": 266240,
+      "totalVotes": 633671
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 44,
+      "repSeats": 25,
+      "demPct": 51.7,
+      "repPct": 46.3,
+      "demVotes": 438465,
+      "repVotes": 392345,
+      "totalVotes": 847700,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 46,
+      "repSeats": 24,
+      "demPct": 58.4,
+      "repPct": 39.2,
+      "demVotes": 364291,
+      "repVotes": 244576,
+      "totalVotes": 623770,
+      "note": "Estimate"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 38,
+      "repSeats": 32,
+      "demPct": 54.2,
+      "repPct": 45.2,
+      "demVotes": 365713,
+      "repVotes": 304989,
+      "totalVotes": 675331
+    }
+  ],
+  "New York": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 103,
+      "repSeats": 47,
+      "demPct": 54.5,
+      "repPct": 37,
+      "demVotes": 3983969,
+      "repVotes": 2700194,
+      "totalVotes": 7303401
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 102,
+      "repSeats": 48,
+      "demPct": 50.8,
+      "repPct": 39.7,
+      "demVotes": 2729459,
+      "repVotes": 2136277,
+      "totalVotes": 5376855
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 105,
+      "repSeats": 43,
+      "demPct": 58.5,
+      "repPct": 31.7,
+      "demVotes": 4482999,
+      "repVotes": 2430174,
+      "totalVotes": 7660491
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 106,
+      "repSeats": 43,
+      "demPct": 62,
+      "repPct": 28.3,
+      "demVotes": 3503874,
+      "repVotes": 1598468,
+      "totalVotes": 5650115
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 106,
+      "repSeats": 43,
+      "demPct": 58.1,
+      "repPct": 30.8,
+      "demVotes": 3851654,
+      "repVotes": 2041214,
+      "totalVotes": 6626856
+    }
+  ],
+  "North Carolina": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 49,
+      "repSeats": 71,
+      "demPct": 51.2,
+      "repPct": 47.5,
+      "demVotes": 2723032,
+      "repVotes": 2527117,
+      "totalVotes": 5318747
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 49,
+      "repSeats": 71,
+      "demPct": 42.2,
+      "repPct": 57.2,
+      "demVotes": 1463259,
+      "repVotes": 1985283,
+      "totalVotes": 3468045
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 51,
+      "repSeats": 69,
+      "demPct": 49.1,
+      "repPct": 50,
+      "demVotes": 2583773,
+      "repVotes": 2632672,
+      "totalVotes": 5266635
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 55,
+      "repSeats": 65,
+      "demPct": 50.5,
+      "repPct": 48.2,
+      "demVotes": 1866432,
+      "repVotes": 1779584,
+      "totalVotes": 3693284
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 46,
+      "repSeats": 74,
+      "demPct": 46.7,
+      "repPct": 52,
+      "demVotes": 1929943,
+      "repVotes": 2150258,
+      "totalVotes": 4134386
+    }
+  ],
+  "North Dakota": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 83,
+      "demPct": 22.1,
+      "repPct": 77.1,
+      "demVotes": 65674,
+      "repVotes": 229328,
+      "totalVotes": 297411,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 82,
+      "demPct": 20.6,
+      "repPct": 78,
+      "demVotes": 51956,
+      "repVotes": 196917,
+      "totalVotes": 252584,
+      "note": "Estimate"
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 80,
+      "demPct": 29.1,
+      "repPct": 70.2,
+      "demVotes": 86819,
+      "repVotes": 209433,
+      "totalVotes": 298466,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 15,
+      "repSeats": 79,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Ohio": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 34,
+      "repSeats": 65,
+      "demPct": 43,
+      "repPct": 56.5,
+      "demVotes": 2290035,
+      "repVotes": 3010168,
+      "totalVotes": 5331326
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 32,
+      "repSeats": 67,
+      "demPct": 39.9,
+      "repPct": 58.8,
+      "demVotes": 1540800,
+      "repVotes": 2270293,
+      "totalVotes": 3859983
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 35,
+      "repSeats": 64,
+      "demPct": 41.8,
+      "repPct": 57.7,
+      "demVotes": 2300433,
+      "repVotes": 3175713,
+      "totalVotes": 5508468
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 38,
+      "repSeats": 61,
+      "demPct": 47.8,
+      "repPct": 52,
+      "demVotes": 1992886,
+      "repVotes": 2166790,
+      "totalVotes": 4170288
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 33,
+      "repSeats": 66,
+      "demPct": 40.5,
+      "repPct": 58.5,
+      "demVotes": 1961329,
+      "repVotes": 2836624,
+      "totalVotes": 4845958
+    }
+  ],
+  "Oklahoma": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 20,
+      "repSeats": 81,
+      "demPct": 33.3,
+      "repPct": 61.3,
+      "demVotes": 163055,
+      "repVotes": 299975,
+      "totalVotes": 488959
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 20,
+      "repSeats": 81,
+      "demPct": 41.7,
+      "repPct": 56.6,
+      "demVotes": 150782,
+      "repVotes": 204587,
+      "totalVotes": 361209
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 19,
+      "repSeats": 82,
+      "demPct": 40.4,
+      "repPct": 58.5,
+      "demVotes": 214053,
+      "repVotes": 309808,
+      "totalVotes": 529690,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 24,
+      "repSeats": 77,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 26,
+      "repSeats": 75,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Oregon": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 36,
+      "repSeats": 24,
+      "demPct": 55.2,
+      "repPct": 43,
+      "demVotes": 1091491,
+      "repVotes": 850882,
+      "totalVotes": 1977753
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 35,
+      "repSeats": 25,
+      "demPct": 52.3,
+      "repPct": 46.9,
+      "demVotes": 981568,
+      "repVotes": 878962,
+      "totalVotes": 1875553
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 37,
+      "repSeats": 23,
+      "demPct": 55,
+      "repPct": 43.5,
+      "demVotes": 1210848,
+      "repVotes": 958075,
+      "totalVotes": 2200471
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 38,
+      "repSeats": 22,
+      "demPct": 56.9,
+      "repPct": 39.5,
+      "demVotes": 960817,
+      "repVotes": 666608,
+      "totalVotes": 1687368
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 35,
+      "repSeats": 25,
+      "demPct": 50.2,
+      "repPct": 43,
+      "demVotes": 882897,
+      "repVotes": 756619,
+      "totalVotes": 1757603
+    }
+  ],
+  "Pennsylvania": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 102,
+      "repSeats": 101,
+      "demPct": 47.1,
+      "repPct": 52.6,
+      "demVotes": 2971731,
+      "repVotes": 3319275,
+      "totalVotes": 6306837
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 102,
+      "repSeats": 101,
+      "demPct": 45.8,
+      "repPct": 53.5,
+      "demVotes": 2258892,
+      "repVotes": 2638894,
+      "totalVotes": 4929726
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 90,
+      "repSeats": 113,
+      "demPct": 46.6,
+      "repPct": 52.7,
+      "demVotes": 3017689,
+      "repVotes": 3416942,
+      "totalVotes": 6480273
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 93,
+      "repSeats": 110,
+      "demPct": 55,
+      "repPct": 44.4,
+      "demVotes": 2568968,
+      "repVotes": 2075093,
+      "totalVotes": 4670264
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 82,
+      "repSeats": 121,
+      "demPct": 48.8,
+      "repPct": 50.5,
+      "demVotes": 2755058,
+      "repVotes": 2852921,
+      "totalVotes": 5650203
+    }
+  ],
+  "Rhode Island": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 64,
+      "repSeats": 10,
+      "demPct": 72.7,
+      "repPct": 22.1,
+      "demVotes": 312685,
+      "repVotes": 95104,
+      "totalVotes": 429850,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 65,
+      "repSeats": 9,
+      "demPct": 63.8,
+      "repPct": 29.7,
+      "demVotes": 212251,
+      "repVotes": 99003,
+      "totalVotes": 332870
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 65,
+      "repSeats": 10,
+      "demPct": 70.4,
+      "repPct": 22.7,
+      "demVotes": 310198,
+      "repVotes": 100135,
+      "totalVotes": 440900
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 66,
+      "repSeats": 8,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    }
+  ],
+  "South Carolina": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 36,
+      "repSeats": 88,
+      "demPct": 31.7,
+      "repPct": 67.8,
+      "demVotes": 681595,
+      "repVotes": 1458624,
+      "totalVotes": 2150000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 36,
+      "repSeats": 88,
+      "demPct": 29.3,
+      "repPct": 69,
+      "demVotes": 436566,
+      "repVotes": 1027276,
+      "totalVotes": 1489719
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 43,
+      "repSeats": 81,
+      "demPct": 34.8,
+      "repPct": 62.6,
+      "demVotes": 779644,
+      "repVotes": 1402989,
+      "totalVotes": 2240391
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 44,
+      "repSeats": 80,
+      "demPct": 38.5,
+      "repPct": 58.5,
+      "demVotes": 572739,
+      "repVotes": 869238,
+      "totalVotes": 1486477
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 44,
+      "repSeats": 80,
+      "demPct": 38.5,
+      "repPct": 58.5,
+      "demVotes": 572739,
+      "repVotes": 869238,
+      "totalVotes": 1486477,
+      "note": "Identical?"
+    }
+  ],
+  "South Dakota": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 64,
+      "demPct": 19.8,
+      "repPct": 78,
+      "demVotes": 114668,
+      "repVotes": 452994,
+      "totalVotes": 580575,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 63,
+      "demPct": 23.8,
+      "repPct": 75.5,
+      "demVotes": 114138,
+      "repVotes": 361683,
+      "totalVotes": 479010,
+      "note": "Estimate"
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 8,
+      "repSeats": 62,
+      "demPct": 27.7,
+      "repPct": 71.7,
+      "demVotes": 166484,
+      "repVotes": 430885,
+      "totalVotes": 600565,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 59,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Tennessee": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 24,
+      "repSeats": 75,
+      "demPct": 31.4,
+      "repPct": 66.7,
+      "demVotes": 873533,
+      "repVotes": 1853837,
+      "totalVotes": 2779356
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 24,
+      "repSeats": 75,
+      "demPct": 26.9,
+      "repPct": 70.5,
+      "demVotes": 410589,
+      "repVotes": 1077324,
+      "totalVotes": 1528494
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 26,
+      "repSeats": 73,
+      "demPct": 30.9,
+      "repPct": 67.2,
+      "demVotes": 800069,
+      "repVotes": 1740193,
+      "totalVotes": 2587847
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 25,
+      "repSeats": 73,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Texas": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 62,
+      "repSeats": 88,
+      "demPct": 43.1,
+      "repPct": 56.3,
+      "demVotes": 4362814,
+      "repVotes": 5707863,
+      "totalVotes": 10130239
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 64,
+      "repSeats": 86,
+      "demPct": 45.7,
+      "repPct": 51.7,
+      "demVotes": 2308570,
+      "repVotes": 2612097,
+      "totalVotes": 5053540
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 67,
+      "repSeats": 83,
+      "demPct": 43.6,
+      "repPct": 54.9,
+      "demVotes": 4525726,
+      "repVotes": 5706147,
+      "totalVotes": 10391097
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 67,
+      "repSeats": 83,
+      "demPct": 46.6,
+      "repPct": 52.4,
+      "demVotes": 3606965,
+      "repVotes": 4059519,
+      "totalVotes": 7743242
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 55,
+      "repSeats": 95,
+      "demPct": 35.8,
+      "repPct": 61.5,
+      "demVotes": 2746667,
+      "repVotes": 4711481,
+      "totalVotes": 7666558
+    }
+  ],
+  "Utah": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 61,
+      "demPct": 27.5,
+      "repPct": 69.9,
+      "demVotes": 372020,
+      "repVotes": 944629,
+      "totalVotes": 1350688
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 61,
+      "demPct": 25.3,
+      "repPct": 70,
+      "demVotes": 250516,
+      "repVotes": 692787,
+      "totalVotes": 989272
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 17,
+      "repSeats": 58,
+      "demPct": 30.1,
+      "repPct": 66.1,
+      "demVotes": 418843,
+      "repVotes": 918220,
+      "totalVotes": 1389472
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 16,
+      "repSeats": 59,
+      "demPct": 34,
+      "repPct": 61.7,
+      "demVotes": 344736,
+      "repVotes": 624450,
+      "totalVotes": 1012500
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 13,
+      "repSeats": 62,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Vermont": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 105,
+      "repSeats": 37,
+      "demPct": 55.1,
+      "repPct": 38.4,
+      "demVotes": 250573,
+      "repVotes": 174572,
+      "totalVotes": 454935,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 104,
+      "repSeats": 38,
+      "demPct": 61.7,
+      "repPct": 31.1,
+      "demVotes": 229296,
+      "repVotes": 115456,
+      "totalVotes": 371500,
+      "note": "Estimate"
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 92,
+      "repSeats": 46,
+      "demPct": 54.8,
+      "repPct": 34.5,
+      "demVotes": 266017,
+      "repVotes": 167319,
+      "totalVotes": 485200,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 95,
+      "repSeats": 43,
+      "demPct": 58.5,
+      "repPct": 29.8,
+      "demVotes": 209630,
+      "repVotes": 106709,
+      "totalVotes": 358197,
+      "note": "Estimate"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 83,
+      "repSeats": 53,
+      "demPct": 50.6,
+      "repPct": 38.2,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Virginia": [
+    {
+      "year": 2025,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 64,
+      "repSeats": 36,
+      "demPct": 57.6,
+      "repPct": 41,
+      "demVotes": 1926456,
+      "repVotes": 1373057,
+      "totalVotes": 3345820
+    },
+    {
+      "year": 2023,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 51,
+      "repSeats": 49,
+      "demPct": 49.5,
+      "repPct": 47.7,
+      "demVotes": 1186887,
+      "repVotes": 1144704,
+      "totalVotes": 2397692
+    },
+    {
+      "year": 2021,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 48,
+      "repSeats": 52,
+      "demPct": 47.5,
+      "repPct": 51.6,
+      "demVotes": 1536509,
+      "repVotes": 1666569,
+      "totalVotes": 3232184
+    },
+    {
+      "year": 2019,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 55,
+      "repSeats": 45,
+      "demPct": 52.7,
+      "repPct": 44,
+      "demVotes": 1200666,
+      "repVotes": 1002105,
+      "totalVotes": 2280038
+    },
+    {
+      "year": 2017,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 49,
+      "repSeats": 51,
+      "demPct": 53.1,
+      "repPct": 43.8,
+      "demVotes": 1304241,
+      "repVotes": 1076081,
+      "totalVotes": 2456269
+    },
+    {
+      "year": 2015,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 34,
+      "repSeats": 66,
+      "demPct": 34.4,
+      "repPct": 60.8,
+      "demVotes": 451865,
+      "repVotes": 798868,
+      "totalVotes": 1314246
+    }
+  ],
+  "Washington": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 59,
+      "repSeats": 39,
+      "demPct": 54,
+      "repPct": 43,
+      "demVotes": 3782471,
+      "repVotes": 3011190,
+      "totalVotes": 6998651,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 58,
+      "repSeats": 40,
+      "demPct": 52.1,
+      "repPct": 45.8,
+      "demVotes": 2937173,
+      "repVotes": 2581809,
+      "totalVotes": 5641038
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 57,
+      "repSeats": 41,
+      "demPct": 56,
+      "repPct": 42,
+      "demVotes": 4192370,
+      "repVotes": 3138925,
+      "totalVotes": 7479947
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 57,
+      "repSeats": 41,
+      "demPct": 59.3,
+      "repPct": 38.1,
+      "demVotes": 3447724,
+      "repVotes": 2214282,
+      "totalVotes": 5817357
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 50,
+      "repSeats": 48,
+      "demPct": 54.1,
+      "repPct": 43.1,
+      "demVotes": 3130575,
+      "repVotes": 2490772,
+      "totalVotes": 5781687
+    }
+  ],
+  "West Virginia": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 91,
+      "demPct": 22.2,
+      "repPct": 77.5,
+      "demVotes": 152468,
+      "repVotes": 533240,
+      "totalVotes": 688255
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 88,
+      "demPct": 30.1,
+      "repPct": 68.7,
+      "demVotes": 138747,
+      "repVotes": 316588,
+      "totalVotes": 460943
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 24,
+      "repSeats": 76,
+      "demPct": 40.5,
+      "repPct": 58.8,
+      "demVotes": 521121,
+      "repVotes": 757431,
+      "totalVotes": 1287333
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 41,
+      "repSeats": 59,
+      "demPct": 48.3,
+      "repPct": 50.2,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 37,
+      "repSeats": 63,
+      "note": "Incomplete Data"
+    }
+  ],
+  "Wisconsin": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 45,
+      "repSeats": 54,
+      "demPct": 48.7,
+      "repPct": 50.5,
+      "demVotes": 1575590,
+      "repVotes": 1635148,
+      "totalVotes": 3237246
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 35,
+      "repSeats": 64,
+      "demPct": 44.7,
+      "repPct": 53.6,
+      "demVotes": 1124962,
+      "repVotes": 1350083,
+      "totalVotes": 2518813,
+      "note": "Estimate"
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 38,
+      "repSeats": 61,
+      "demPct": 45.3,
+      "repPct": 53.8,
+      "demVotes": 1402108,
+      "repVotes": 1665487,
+      "totalVotes": 3095700,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 36,
+      "repSeats": 63,
+      "demPct": 53,
+      "repPct": 44.7,
+      "demVotes": 1306878,
+      "repVotes": 1103505,
+      "totalVotes": 2466153
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 35,
+      "repSeats": 64,
+      "demPct": 45.4,
+      "repPct": 51.7,
+      "demVotes": 1175779,
+      "repVotes": 1337291,
+      "totalVotes": 2587171
+    }
+  ],
+  "Wyoming": [
+    {
+      "year": 2024,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 56,
+      "demPct": 12,
+      "repPct": 83.4,
+      "demVotes": 28497,
+      "repVotes": 197212,
+      "totalVotes": 236503
+    },
+    {
+      "year": 2022,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 5,
+      "repSeats": 57,
+      "demPct": 12.7,
+      "repPct": 76.7,
+      "demVotes": 22939,
+      "repVotes": 138719,
+      "totalVotes": 180811
+    },
+    {
+      "year": 2020,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 51,
+      "demPct": 16.1,
+      "repPct": 76.8,
+      "demVotes": 39962,
+      "repVotes": 191197,
+      "totalVotes": 248802
+    },
+    {
+      "year": 2018,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 50,
+      "demPct": 19.4,
+      "repPct": 75.2,
+      "demVotes": 35228,
+      "repVotes": 136565,
+      "totalVotes": 181644
+    },
+    {
+      "year": 2016,
+      "type": "House",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 51,
+      "demPct": 28.7,
+      "repPct": 68.8,
+      "demVotes": 68510,
+      "repVotes": 164140,
+      "totalVotes": 238464
+    }
+  ]
+};

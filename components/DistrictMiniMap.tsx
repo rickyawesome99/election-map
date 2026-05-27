@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
+import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
 
@@ -118,6 +119,27 @@ export default function DistrictMiniMap({
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const [selectedYear, setSelectedYear] = useState<number | null>(boundaryYears?.[0] ?? null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [mapViewport, setMapViewport] = useState({ width: 800, height: 600 });
+  const [autoProj, setAutoProj] = useState<ProjectionConfig | null>(null);
+  const measure = useCallback(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const { width, height } = el.getBoundingClientRect();
+    const nextViewport = {
+      width: Math.max(1, Math.round(width)),
+      height: Math.max(1, Math.round(height)),
+    };
+    setMapViewport(nextViewport);
+    const cfg = fitStateProjection(stateAbbr, nextViewport.width, nextViewport.height);
+    if (cfg) setAutoProj(cfg);
+  }, [stateAbbr]);
+  useEffect(() => {
+    measure();
+    const ro = new ResizeObserver(measure);
+    if (containerRef.current) ro.observe(containerRef.current);
+    return () => ro.disconnect();
+  }, [measure]);
 
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
   const stateFips = raceId.slice(0, 2);
@@ -130,7 +152,7 @@ export default function DistrictMiniMap({
   const showYearToggle = boundaryYears && boundaryYears.length > 1;
 
   return (
-    <div style={{ position: "relative", height: "100%", minHeight: 180, background: "var(--app-bg)", borderRadius: 8, overflow: "hidden" }}>
+    <div ref={containerRef} style={{ position: "relative", height: "100%", minHeight: 180, background: "var(--app-bg)", borderRadius: 8, overflow: "hidden" }}>
       {/* Year toggle — top left */}
       {showYearToggle && (
         <div className="absolute top-2 left-2 z-10 flex rounded-md overflow-hidden" style={{ border: "1px solid var(--app-border)", opacity: 0.92 }}>
@@ -154,8 +176,10 @@ export default function DistrictMiniMap({
       {viewChanged && <ResetButton onClick={() => { setMapKey(k => k + 1); setViewChanged(false); }} />}
 
       <ComposableMap
+        width={mapViewport.width}
+        height={mapViewport.height}
         projection="geoMercator"
-        projectionConfig={{ scale: proj[2], center: [proj[0], proj[1]] }}
+        projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
         style={{ width: "100%", height: "100%" }}
       >
         <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
+import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import type { RaceForecast } from "@/data/forecastData";
@@ -54,6 +55,27 @@ export default function StateDistrictMap({
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const [darkMode] = useState(() => typeof window !== "undefined" && localStorage.getItem("darkMode") === "true");
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [mapViewport, setMapViewport] = useState({ width: 800, height: 600 });
+  const [autoProj, setAutoProj] = useState<ProjectionConfig | null>(null);
+  const measure = useCallback(() => {
+    const el = containerRef.current;
+    if (!el) return;
+    const { width, height } = el.getBoundingClientRect();
+    const nextViewport = {
+      width: Math.max(1, Math.round(width)),
+      height: Math.max(1, Math.round(height)),
+    };
+    setMapViewport(nextViewport);
+    const cfg = fitStateProjection(stateAbbr, nextViewport.width, nextViewport.height);
+    if (cfg) setAutoProj(cfg);
+  }, [stateAbbr]);
+  useEffect(() => {
+    measure();
+    const ro = new ResizeObserver(measure);
+    if (containerRef.current) ro.observe(containerRef.current);
+    return () => ro.disconnect();
+  }, [measure]);
 
   const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
@@ -79,6 +101,7 @@ export default function StateDistrictMap({
     <div>
       {/* Map area */}
       <div
+        ref={containerRef}
         className="relative"
         style={{ height: 360, background: "var(--app-bg)" }}
         onMouseMove={(e) => {
@@ -159,8 +182,10 @@ export default function StateDistrictMap({
         })()}
 
         <ComposableMap
+          width={mapViewport.width}
+          height={mapViewport.height}
           projection="geoMercator"
-          projectionConfig={{ scale: proj[2], center: [proj[0], proj[1]] }}
+          projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
           style={{ width: "100%", height: "100%" }}
         >
           <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
