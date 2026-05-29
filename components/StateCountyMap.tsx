@@ -126,7 +126,7 @@ export default function StateCountyMap({
           if (top + tipH > 340) top = mousePos.y - tipH - 12;
           return (
             <div
-              className="absolute z-20 pointer-events-none rounded-lg"
+              className="absolute z-20 hidden pointer-events-none rounded-lg md:block"
               style={{
                 left,
                 top,

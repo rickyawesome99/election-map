@@ -50,7 +50,7 @@ export default function StateMapSection({
             className="rounded-xl p-3"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
           >
-            <div className="flex items-start justify-between gap-3 mb-2">
+            <div className="flex items-start justify-between gap-3 md:mb-2">
               <div className="min-w-0">
                 <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
                   Selected District
@@ -72,7 +72,18 @@ export default function StateMapSection({
               </button>
             </div>
 
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            <div className="mt-2 md:hidden">
+              <div className="mb-1.5 flex justify-between text-xs font-semibold">
+                <span style={{ color: "var(--party-dem)" }}>D {demPct.toFixed(1)}%</span>
+                <span style={{ color: "var(--party-rep)" }}>R {repPct.toFixed(1)}%</span>
+              </div>
+              <div className="flex h-2.5 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
+                <div style={{ width: `${demPct}%`, background: "#1b408c" }} />
+                <div style={{ width: `${repPct}%`, background: "#be1c29" }} />
+              </div>
+            </div>
+
+            <div className="hidden grid-cols-1 gap-3 md:grid md:grid-cols-2">
               <div className="rounded-lg p-3" style={{ background: "var(--app-bg)" }}>
                 <div className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>
                   Candidates
