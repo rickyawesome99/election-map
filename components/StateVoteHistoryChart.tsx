@@ -12,10 +12,10 @@ import {
   YAxis,
 } from "recharts";
 
-type TabKey = "house" | "senate" | "governor" | "president";
+type TabKey = "house" | "senate" | "governor" | "president" | "state_house" | "state_senate";
 
-const TAB_ORDER: TabKey[] = ["house", "senate", "governor", "president"];
-const TAB_LABELS: Record<TabKey, string> = { house: "H", senate: "S", governor: "G", president: "P" };
+const TAB_ORDER: TabKey[] = ["house", "senate", "governor", "president", "state_house", "state_senate"];
+const TAB_LABELS: Record<TabKey, string> = { house: "H", senate: "S", governor: "G", president: "P", state_house: "StH", state_senate: "StS" };
 
 type VoteResultInput = {
   year: number;
@@ -39,6 +39,8 @@ type SegmentLine = { key: string };
 function getRaceKey(race: string): TabKey | null {
   const l = race.toLowerCase();
   if (l.includes("president")) return "president";
+  if (l === "state senate") return "state_senate";
+  if (l === "state house") return "state_house";
   if (l.includes("senate")) return "senate";
   if (l.includes("governor")) return "governor";
   if (l.includes("house")) return "house";
@@ -161,7 +163,7 @@ export default function StateVoteHistoryChart({ results }: { results: VoteResult
         )}
       </div>
 
-      <div className="px-4 pt-2 pb-3" style={{ height: 314.5 }}>
+      <div className="px-4 pt-2 pb-3" style={{ height: 400 }}>
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={chartData} margin={{ top: 8, right: 16, bottom: 0, left: 0 }}>
             <XAxis

@@ -45,7 +45,7 @@ export default function StateMapSection({
           />
         </div>
         {selected && (
-          <div className="order-2">
+          <div className="order-8 md:order-2">
           <section
             className="rounded-xl p-3"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}

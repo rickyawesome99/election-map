@@ -6,6 +6,7 @@ import Link from "next/link";
 import AppHeader from "@/components/AppHeader";
 import StateMapSection from "@/components/StateMapSection";
 import StateVoteHistoryChart from "@/components/StateVoteHistoryChart";
+import StateLegCompositionBox from "@/components/StateLegCompositionBox";
 
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -311,6 +312,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
     e.type === "House" &&
     (e.demSeats != null || e.repSeats != null || e.demPct != null || e.repPct != null)
   );
+  const stateLegSenateEntries = (stateLegData[state.name] ?? []).filter(e =>
+    e.type === "Senate" &&
+    (e.demSeats != null || e.repSeats != null || e.demPct != null || e.repPct != null)
+  );
 
   // House current composition — use 2024 delegation history if available, else infer from incumbents
   const houseDel2024 = stateDelegationHistory.find((e) => e.year === 2024);
@@ -377,6 +382,22 @@ export default async function StateDetailPage({ params, searchParams }: { params
       demPct: r.demPct,
       repPct: r.repPct,
     })),
+    ...stateLegEntries
+      .filter((e) => e.demPct != null && e.repPct != null)
+      .map((e) => ({
+        year: e.year,
+        race: "State House",
+        demPct: e.demPct!,
+        repPct: e.repPct!,
+      })),
+    ...stateLegSenateEntries
+      .filter((e) => e.demPct != null && e.repPct != null)
+      .map((e) => ({
+        year: e.year,
+        race: "State Senate",
+        demPct: e.demPct!,
+        repPct: e.repPct!,
+      })),
   ];
 
   return (
@@ -410,7 +431,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
           pastElectionResults={statePastResults}
           overview={(
             <>
-              <div className="order-3">
+              <div className="order-2">
               <section
                 className="rounded-xl p-3"
                 style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
@@ -594,97 +615,12 @@ export default async function StateDetailPage({ params, searchParams }: { params
                 </div>
               )}
 
-            {stateLegEntries.length > 0 && (
+            {(stateLegEntries.length > 0 || stateLegSenateEntries.length > 0) && (
               <div className="order-7">
-              <section
-                className="flex flex-col overflow-hidden rounded-xl p-3"
-                style={{
-                  background: "var(--app-panel)",
-                  border: "1px solid var(--app-border)",
-                  flex: "0 0 23rem",
-                  height: "23rem",
-                }}
-              >
-                <h2
-                  className="mb-3 shrink-0 text-[10px] uppercase tracking-wider font-semibold"
-                  style={{ color: "var(--app-text-muted)" }}
-                >
-                  State Legislature Composition · Since 2015
-                </h2>
-
-                <div className="min-h-0 flex-1 overflow-y-auto pr-1">
-                  <div className="flex flex-col gap-2.5">
-                    {stateLegEntries.map((entry) => {
-                      const hasSeats    = entry.demSeats != null && entry.repSeats != null;
-                      const hasVoteData = entry.demPct  != null && entry.repPct  != null;
-                      const winner      = hasVoteData ? (entry.demPct! > entry.repPct! ? "D" : "R") : null;
-                      const margin      = hasVoteData ? Math.abs(entry.demPct! - entry.repPct!).toFixed(1) : null;
-                      return (
-                        <div
-                          key={`${entry.year}-${entry.type}`}
-                          className="rounded-lg p-2.5"
-                          style={{ background: "var(--app-bg)" }}
-                        >
-                          <div className="mb-2 flex items-center justify-between gap-3">
-                            <div className="flex items-center gap-3">
-                              <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                                {entry.year}
-                              </span>
-                              {hasSeats ? (
-                                <div className="flex items-center gap-1.5 text-sm font-semibold tabular-nums">
-                                  <span style={{ color: "var(--party-dem)" }}>{entry.demSeats}D</span>
-                                  <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>/</span>
-                                  <span style={{ color: "var(--party-rep)" }}>{entry.repSeats}R</span>
-                                </div>
-                              ) : (
-                                <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Seats TBD</span>
-                              )}
-                            </div>
-                            {winner && margin ? (
-                              <span
-                                className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
-                                style={winner === "D"
-                                  ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
-                                  : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
-                              >
-                                {winner}+{margin}
-                              </span>
-                            ) : (
-                              <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
-                            )}
-                          </div>
-                          {hasVoteData ? (
-                            <>
-                              <div className="flex h-2.5 rounded-full overflow-hidden mb-1.5" style={{ background: "var(--app-tab-bg)" }}>
-                                <div style={{ width: `${entry.demPct}%`, background: "#1b408c" }} />
-                                <div style={{ width: `${entry.repPct}%`, background: "#be1c29" }} />
-                              </div>
-                              <div className="flex justify-between text-xs font-semibold">
-                                <span style={{ color: "var(--party-dem)" }}>{entry.demPct!.toFixed(1)}%</span>
-                                <span style={{ color: "var(--party-rep)" }}>{entry.repPct!.toFixed(1)}%</span>
-                              </div>
-                              {(entry.demVotes != null || entry.repVotes != null) && (
-                                <div className="mt-0.5 flex justify-between gap-3 text-[10px] tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-                                  <span className="truncate">
-                                    {entry.demVotes != null ? entry.demVotes.toLocaleString() + " D votes" : ""}
-                                  </span>
-                                  <span className="truncate text-right">
-                                    {entry.repVotes != null ? entry.repVotes.toLocaleString() + " R votes" : ""}
-                                  </span>
-                                </div>
-                              )}
-                            </>
-                          ) : (
-                            <div className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>
-                              Vote data unavailable
-                            </div>
-                          )}
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </section>
+                <StateLegCompositionBox
+                  houseEntries={stateLegEntries}
+                  senateEntries={stateLegSenateEntries}
+                />
               </div>
             )}
             </>
@@ -692,7 +628,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
         >
         {/* Federal Offices */}
         <section
-          className="order-4 rounded-xl p-3"
+          className="order-3 rounded-xl p-3"
           style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
         >
           <div className="flex flex-col sm:flex-row sm:items-baseline gap-1.5 sm:gap-3 mb-3">
@@ -793,7 +729,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
           {/* Electoral History */}
           <section
-            className="order-5 flex flex-col overflow-hidden rounded-xl p-3"
+            className="order-5 md:order-7 flex flex-col overflow-hidden rounded-xl p-3"
             style={{
               background: "var(--app-panel)",
               border: "1px solid var(--app-border)",
@@ -992,7 +928,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
             </div>
           </section>
 
-          <div className="order-8 md:order-6">
+          <div className="order-4 md:order-5">
             <StateVoteHistoryChart results={voteHistoryResults} />
           </div>
         </StateMapSection>

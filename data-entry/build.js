@@ -705,9 +705,6 @@ for (const row of stateLegRows) {
   if (!stateName) continue;
   const type = (row.type || "").trim(); // "House" or "Senate"
 
-  // Skip Senate rows — they're placeholder stubs with no real data yet
-  if (type === "Senate") continue;
-
   const year = int2(row.year, 0);
   if (!year) continue;
 

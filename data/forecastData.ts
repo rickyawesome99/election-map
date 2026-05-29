@@ -101707,6 +101707,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1202196
     },
     {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 8,
+      "repSeats": 27,
+      "demPct": 22.9,
+      "repPct": 72.5,
+      "demVotes": 281312,
+      "repVotes": 891805,
+      "totalVotes": 1230093
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 4,
@@ -101717,6 +101729,31 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 554571,
       "repVotes": 952859,
       "totalVotes": 1531494
+    },
+    {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 8,
+      "repSeats": 27,
+      "demPct": 35,
+      "repPct": 62.8,
+      "demVotes": 527696,
+      "repVotes": 945469,
+      "totalVotes": 1506000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2014,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 8,
+      "repSeats": 27,
+      "demPct": 34.9,
+      "repPct": 61.1,
+      "demVotes": 366756,
+      "repVotes": 642053,
+      "totalVotes": 1049986
     }
   ],
   "Alaska": [
@@ -101733,6 +101770,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 287881
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 11,
+      "demPct": 35.5,
+      "repPct": 55.8,
+      "demVotes": 52654,
+      "repVotes": 82669,
+      "totalVotes": 148180
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -101743,6 +101792,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 66613,
       "repVotes": 134545,
       "totalVotes": 239361
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 11,
+      "demPct": 28.7,
+      "repPct": 64.7,
+      "demVotes": 68181,
+      "repVotes": 154004,
+      "totalVotes": 237848
     },
     {
       "year": 2020,
@@ -101757,6 +101818,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 304826
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 13,
+      "demPct": 21.8,
+      "repPct": 57.8,
+      "demVotes": 39447,
+      "repVotes": 104467,
+      "totalVotes": 180601
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -101769,6 +101842,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 265400
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 13,
+      "demPct": 39.8,
+      "repPct": 50.1,
+      "demVotes": 51891,
+      "repVotes": 65376,
+      "totalVotes": 130436
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -101779,6 +101864,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 102277,
       "repVotes": 136723,
       "totalVotes": 266824
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 14,
+      "demPct": 27,
+      "repPct": 60,
+      "demVotes": 36138,
+      "repVotes": 80123,
+      "totalVotes": 133620
     }
   ],
   "Arizona": [
@@ -101796,6 +101893,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 13,
+      "repSeats": 17,
+      "demPct": 46.3,
+      "repPct": 53.4,
+      "demVotes": 1377346,
+      "repVotes": 1587610,
+      "totalVotes": 2973093
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -101808,6 +101917,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 3691150
     },
     {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 16,
+      "demPct": 44.7,
+      "repPct": 53.8,
+      "demVotes": 1045625,
+      "repVotes": 1258896,
+      "totalVotes": 2338503
+    },
+    {
       "year": 2020,
       "type": "House",
       "freq": 2,
@@ -101818,6 +101939,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2094461,
       "repVotes": 2522188,
       "totalVotes": 4616649
+    },
+    {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 16,
+      "demPct": 49.5,
+      "repPct": 50.5,
+      "demVotes": 1472482,
+      "repVotes": 1499976,
+      "totalVotes": 2972458
     },
     {
       "year": 2018,
@@ -101833,6 +101966,14 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 13,
+      "repSeats": 17,
+      "note": "Incomplete Data"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -101843,6 +101984,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1485924,
       "repVotes": 2032005,
       "totalVotes": 3580000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 13,
+      "repSeats": 17,
+      "demPct": 45.3,
+      "repPct": 53.8,
+      "demVotes": 995317,
+      "repVotes": 1184066,
+      "totalVotes": 2199400,
       "note": "Estimate"
     }
   ],
@@ -101860,6 +102014,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1075320
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 29,
+      "demPct": 18,
+      "repPct": 79.7,
+      "demVotes": 97521,
+      "repVotes": 430976,
+      "totalVotes": 540885,
+      "note": "Estimate"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -101870,6 +102037,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 193673,
       "repVotes": 590016,
       "totalVotes": 824376
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 29,
+      "demPct": 22.8,
+      "repPct": 71.8,
+      "demVotes": 187923,
+      "repVotes": 591186,
+      "totalVotes": 823650,
+      "note": "Estimate"
     },
     {
       "year": 2020,
@@ -101884,6 +102064,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1102850
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 28,
+      "demPct": 28,
+      "repPct": 72,
+      "demVotes": 144986,
+      "repVotes": 372240,
+      "totalVotes": 517260,
+      "note": "Estimate"
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -101894,8 +102087,22 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 26,
+      "note": "Incomplete Data"
+    },
+    {
       "year": 2016,
       "type": "House",
+      "freq": 2,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
       "freq": 2,
       "note": "Incomplete Data"
     }
@@ -101915,6 +102122,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 30,
+      "repSeats": 10,
+      "demPct": 62.3,
+      "repPct": 37.7,
+      "demVotes": 4638045,
+      "repVotes": 2808543,
+      "totalVotes": 7446588,
+      "note": "Estimate"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -101925,6 +102145,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 6181972,
       "repVotes": 3824294,
       "totalVotes": 10175112
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 32,
+      "repSeats": 8,
+      "demPct": 63.7,
+      "repPct": 36.3,
+      "demVotes": 3201860,
+      "repVotes": 1825644,
+      "totalVotes": 5027504
     },
     {
       "year": 2020,
@@ -101939,6 +102171,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 16074014
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 31,
+      "repSeats": 9,
+      "demPct": 66.1,
+      "repPct": 32.3,
+      "demVotes": 5795870,
+      "repVotes": 2831711,
+      "totalVotes": 8769917
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -101951,6 +102195,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 11791983
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 29,
+      "repSeats": 11,
+      "demPct": 64.9,
+      "repPct": 31.8,
+      "demVotes": 3562527,
+      "repVotes": 1742012,
+      "totalVotes": 5485730
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -101961,6 +102217,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 7929866,
       "repVotes": 4849783,
       "totalVotes": 12982391
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 27,
+      "repSeats": 13,
+      "demPct": 67.5,
+      "repPct": 31.8,
+      "demVotes": 4769557,
+      "repVotes": 2250103,
+      "totalVotes": 7067976
     }
   ],
   "Colorado": [
@@ -101978,6 +102246,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 23,
+      "repSeats": 12,
+      "demPct": 56.4,
+      "repPct": 41,
+      "demVotes": 817303,
+      "repVotes": 594858,
+      "totalVotes": 1450200,
+      "note": "Estimate"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -101988,6 +102269,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1271525,
       "repVotes": 1093148,
       "totalVotes": 2384000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 23,
+      "repSeats": 12,
+      "demPct": 49.1,
+      "repPct": 50.3,
+      "demVotes": 587511,
+      "repVotes": 602095,
+      "totalVotes": 1197750,
       "note": "Estimate"
     },
     {
@@ -102003,6 +102297,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 3046342
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 20,
+      "repSeats": 15,
+      "demPct": 57.8,
+      "repPct": 39.6,
+      "demVotes": 920525,
+      "repVotes": 630299,
+      "totalVotes": 1592970,
+      "note": "Estimate"
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102015,6 +102322,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2411949
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 19,
+      "repSeats": 16,
+      "demPct": 50.3,
+      "repPct": 46.7,
+      "demVotes": 608037,
+      "repVotes": 564971,
+      "totalVotes": 1208660,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -102025,6 +102345,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1201949,
       "repVotes": 1238154,
       "totalVotes": 2513182
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 17,
+      "repSeats": 18,
+      "demPct": 53.4,
+      "repPct": 44.5,
+      "demVotes": 697521,
+      "repVotes": 580873,
+      "totalVotes": 1305295
     }
   ],
   "Connecticut": [
@@ -102042,6 +102374,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 25,
+      "repSeats": 11,
+      "demPct": 55.8,
+      "repPct": 43.8,
+      "demVotes": 900060,
+      "repVotes": 705691,
+      "totalVotes": 1612330
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102052,6 +102396,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 727440,
       "repVotes": 544387,
       "totalVotes": 1297811
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 24,
+      "repSeats": 12,
+      "demPct": 53,
+      "repPct": 44.1,
+      "demVotes": 643543,
+      "repVotes": 535500,
+      "totalVotes": 1215183
     },
     {
       "year": 2020,
@@ -102066,6 +102422,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1695390
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 24,
+      "repSeats": 12,
+      "demPct": 54.8,
+      "repPct": 43.7,
+      "demVotes": 925028,
+      "repVotes": 737405,
+      "totalVotes": 1687529
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102078,6 +102446,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1338142
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 23,
+      "repSeats": 13,
+      "demPct": 53.1,
+      "repPct": 43.4,
+      "demVotes": 725644,
+      "repVotes": 593346,
+      "totalVotes": 1366546
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -102086,6 +102466,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demPct": 47.1,
       "repPct": 51.8,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 18,
+      "demPct": 48.6,
+      "repPct": 46.4,
+      "demVotes": 747662,
+      "repVotes": 713635,
+      "totalVotes": 1539636
     }
   ],
   "Delaware": [
@@ -102102,6 +102494,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 453174
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 15,
+      "repSeats": 6,
+      "demPct": 62.2,
+      "repPct": 37.7,
+      "demVotes": 115338,
+      "repVotes": 69818,
+      "totalVotes": 185337
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102112,6 +102516,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 149213,
       "repVotes": 138326,
       "totalVotes": 290085
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 15,
+      "repSeats": 6,
+      "demPct": 51.8,
+      "repPct": 47.5,
+      "demVotes": 144347,
+      "repVotes": 132280,
+      "totalVotes": 278459
     },
     {
       "year": 2020,
@@ -102126,6 +102542,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 427630
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 7,
+      "demPct": 55.4,
+      "repPct": 44.6,
+      "demVotes": 130663,
+      "repVotes": 105142,
+      "totalVotes": 235805
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102138,6 +102566,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 338169
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 9,
+      "demPct": 57.9,
+      "repPct": 42.1,
+      "demVotes": 94396,
+      "repVotes": 68613,
+      "totalVotes": 163009
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -102148,6 +102588,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 226083,
       "repVotes": 149871,
       "totalVotes": 379895
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 10,
+      "demPct": 52.3,
+      "repPct": 47.5,
+      "demVotes": 106963,
+      "repVotes": 97082,
+      "totalVotes": 204507
     }
   ],
   "Florida": [
@@ -102164,6 +102616,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 9408559
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 28,
+      "demPct": 38.9,
+      "repPct": 60.8,
+      "demVotes": 1842050,
+      "repVotes": 2877697,
+      "totalVotes": 4730472
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102174,6 +102638,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1870647,
       "repVotes": 2824685,
       "totalVotes": 4758610
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 28,
+      "demPct": 38.5,
+      "repPct": 60.1,
+      "demVotes": 1813976,
+      "repVotes": 2827455,
+      "totalVotes": 4707243
     },
     {
       "year": 2020,
@@ -102188,6 +102664,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 8909594
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 16,
+      "repSeats": 24,
+      "demPct": 48.6,
+      "repPct": 49,
+      "demVotes": 2642318,
+      "repVotes": 2663076,
+      "totalVotes": 5431494
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102198,6 +102686,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2494934,
       "repVotes": 3320015,
       "totalVotes": 5906926
+    },
+    {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 17,
+      "repSeats": 23,
+      "demPct": 45.7,
+      "repPct": 54,
+      "demVotes": 1731716,
+      "repVotes": 2044404,
+      "totalVotes": 3785930,
+      "note": "Estimate"
     },
     {
       "year": 2016,
@@ -102211,6 +102712,14 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "repVotes": 3195961,
       "totalVotes": 5600000,
       "note": "Estimate"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 15,
+      "repSeats": 25,
+      "note": "Incomplete Data"
     }
   ],
   "Georgia": [
@@ -102227,6 +102736,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 4788317
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 23,
+      "repSeats": 33,
+      "demPct": 44.3,
+      "repPct": 55.7,
+      "demVotes": 2076688,
+      "repVotes": 2608006,
+      "totalVotes": 4684600,
+      "note": "Estimate"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102237,6 +102759,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1619542,
       "repVotes": 1999536,
       "totalVotes": 3619078
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 23,
+      "repSeats": 33,
+      "demPct": 44.7,
+      "repPct": 55.3,
+      "demVotes": 1607215,
+      "repVotes": 1985311,
+      "totalVotes": 3592926,
+      "note": "Estimate"
     },
     {
       "year": 2020,
@@ -102252,6 +102787,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 22,
+      "repSeats": 34,
+      "demPct": 45.4,
+      "repPct": 54.6,
+      "demVotes": 2013405,
+      "repVotes": 2419281,
+      "totalVotes": 4432300,
+      "note": "Estimate"
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102262,6 +102810,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1582161,
       "repVotes": 1884211,
       "totalVotes": 3470967
+    },
+    {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 21,
+      "repSeats": 35,
+      "demPct": 45.6,
+      "repPct": 54.4,
+      "demVotes": 1603472,
+      "repVotes": 1914110,
+      "totalVotes": 3517575,
+      "note": "Estimate"
     },
     {
       "year": 2016,
@@ -102275,6 +102836,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "repVotes": 2236549,
       "totalVotes": 3484394,
       "note": "Estimate"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 38,
+      "demPct": 35.9,
+      "repPct": 64.1,
+      "demVotes": 1260395,
+      "repVotes": 2247579,
+      "totalVotes": 3507974
     }
   ],
   "Hawaii": [
@@ -102291,6 +102864,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 333801
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 22,
+      "repSeats": 3,
+      "demPct": 64.3,
+      "repPct": 35.7,
+      "demVotes": 98701,
+      "repVotes": 54832,
+      "totalVotes": 153533
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102301,6 +102886,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 208416,
       "repVotes": 105732,
       "totalVotes": 319980
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 23,
+      "repSeats": 2,
+      "demPct": 68,
+      "repPct": 30.6,
+      "demVotes": 231076,
+      "repVotes": 103919,
+      "totalVotes": 339713
     },
     {
       "year": 2020,
@@ -102315,6 +102912,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 367715
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 24,
+      "repSeats": 1,
+      "demPct": 62.3,
+      "repPct": 31.2,
+      "demVotes": 112858,
+      "repVotes": 56447,
+      "totalVotes": 181199
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102323,11 +102932,27 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 24,
+      "repSeats": 1,
+      "note": "Incomplete Data"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "demSeats": 45,
       "repSeats": 6,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 25,
+      "repSeats": 0,
       "note": "Incomplete Data"
     }
   ],
@@ -102345,6 +102970,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1619099
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 29,
+      "demPct": 27.3,
+      "repPct": 70.1,
+      "demVotes": 226229,
+      "repVotes": 581630,
+      "totalVotes": 829648
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102355,6 +102992,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 243576,
       "repVotes": 810556,
       "totalVotes": 1062746
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 28,
+      "demPct": 19.9,
+      "repPct": 76.9,
+      "demVotes": 103634,
+      "repVotes": 400702,
+      "totalVotes": 521038
     },
     {
       "year": 2020,
@@ -102369,6 +103018,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1560648
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 28,
+      "demPct": 33.7,
+      "repPct": 60.2,
+      "demVotes": 159391,
+      "repVotes": 284487,
+      "totalVotes": 472423
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102377,9 +103038,30 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 28,
+      "demPct": 30.6,
+      "repPct": 68.1,
+      "demVotes": 169426,
+      "repVotes": 377542,
+      "totalVotes": 554400,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 29,
       "note": "Incomplete Data"
     }
   ],
@@ -102398,6 +103080,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 40,
+      "repSeats": 19,
+      "demPct": 58,
+      "repPct": 42,
+      "demVotes": 1124829,
+      "repVotes": 813476,
+      "totalVotes": 1938120,
+      "note": "Estimate"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102408,6 +103103,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1872947,
       "repVotes": 1943438,
       "totalVotes": 3816385
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 40,
+      "repSeats": 19,
+      "demPct": 51.7,
+      "repPct": 48.1,
+      "demVotes": 1859360,
+      "repVotes": 1729938,
+      "totalVotes": 3594888
     },
     {
       "year": 2020,
@@ -102422,6 +103129,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 5404047
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 41,
+      "repSeats": 18,
+      "demPct": 66.4,
+      "repPct": 33,
+      "demVotes": 1261848,
+      "repVotes": 627734,
+      "totalVotes": 1901773
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102434,6 +103153,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 4197269
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 40,
+      "repSeats": 19,
+      "demPct": 57.4,
+      "repPct": 41.4,
+      "demVotes": 1613380,
+      "repVotes": 1162385,
+      "totalVotes": 2808477
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -102444,6 +103175,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2604236,
       "repVotes": 2222482,
       "totalVotes": 4834247
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 37,
+      "repSeats": 22,
+      "demPct": 59.5,
+      "repPct": 40.5,
+      "demVotes": 1906007,
+      "repVotes": 1299861,
+      "totalVotes": 3205993
     }
   ],
   "Indiana": [
@@ -102460,6 +103203,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2630926
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 40,
+      "demPct": 34.1,
+      "repPct": 63.4,
+      "demVotes": 421033,
+      "repVotes": 783615,
+      "totalVotes": 1236339
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102470,6 +103225,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 554181,
       "repVotes": 1108854,
       "totalVotes": 1678819
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 40,
+      "demPct": 29.2,
+      "repPct": 70.8,
+      "demVotes": 260751,
+      "repVotes": 631551,
+      "totalVotes": 892302
     },
     {
       "year": 2020,
@@ -102484,6 +103251,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2819207
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 39,
+      "demPct": 43.4,
+      "repPct": 56.6,
+      "demVotes": 596836,
+      "repVotes": 778292,
+      "totalVotes": 1375128
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102492,10 +103271,36 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 40,
+      "demPct": 35.2,
+      "repPct": 64.3,
+      "demVotes": 369003,
+      "repVotes": 673237,
+      "totalVotes": 1046840,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 41,
+      "demPct": 40,
+      "repPct": 57.4,
+      "demVotes": 490406,
+      "repVotes": 704633,
+      "totalVotes": 1227460,
+      "note": "Estimate"
     }
   ],
   "Iowa": [
@@ -102513,6 +103318,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 15,
+      "repSeats": 35,
+      "demPct": 37,
+      "repPct": 59.6,
+      "demVotes": 289250,
+      "repVotes": 465937,
+      "totalVotes": 782100,
+      "note": "Estimate"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102523,6 +103341,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 443603,
       "repVotes": 629413,
       "totalVotes": 1112267
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 16,
+      "repSeats": 34,
+      "demPct": 44,
+      "repPct": 54.1,
+      "demVotes": 341775,
+      "repVotes": 419989,
+      "totalVotes": 776600,
+      "note": "Estimate"
     },
     {
       "year": 2020,
@@ -102537,6 +103368,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1531541
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 32,
+      "demPct": 40.4,
+      "repPct": 58.9,
+      "demVotes": 304302,
+      "repVotes": 442907,
+      "totalVotes": 752315,
+      "note": "Estimate"
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102545,12 +103389,37 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 32,
+      "demPct": 55.9,
+      "repPct": 44.1,
+      "demVotes": 348325,
+      "repVotes": 274664,
+      "totalVotes": 622958,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "demSeats": 41,
       "repSeats": 59,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 20,
+      "repSeats": 29,
+      "demPct": 38.1,
+      "repPct": 58.8,
+      "demVotes": 274439,
+      "repVotes": 424175,
+      "totalVotes": 720881
     }
   ],
   "Kansas": [
@@ -102566,6 +103435,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "repVotes": 442792,
       "totalVotes": 581310,
       "note": "Estimate"
+    },
+    {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 9,
+      "repSeats": 31,
+      "demPct": 38.7,
+      "repPct": 60.4,
+      "demVotes": 484632,
+      "repVotes": 756351,
+      "totalVotes": 1251652
     },
     {
       "year": 2022,
@@ -102592,6 +103473,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1274632
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 11,
+      "repSeats": 29,
+      "demPct": 36.9,
+      "repPct": 63.1,
+      "demVotes": 477582,
+      "repVotes": 817169,
+      "totalVotes": 1294751
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102604,6 +103497,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "type": "House",
       "freq": 2,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 9,
+      "repSeats": 31,
+      "demPct": 41.8,
+      "repPct": 57.5,
+      "demVotes": 476683,
+      "repVotes": 657057,
+      "totalVotes": 1141725,
+      "note": "Estimate"
     }
   ],
   "Kentucky": [
@@ -102620,6 +103526,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1810542
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 31,
+      "demPct": 31.9,
+      "repPct": 65.7,
+      "demVotes": 260754,
+      "repVotes": 536258,
+      "totalVotes": 816414
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102630,6 +103548,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 377805,
       "repVotes": 904806,
       "totalVotes": 1285119
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 31,
+      "demPct": 24.2,
+      "repPct": 75.5,
+      "demVotes": 160236,
+      "repVotes": 500535,
+      "totalVotes": 663119
     },
     {
       "year": 2020,
@@ -102645,6 +103575,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 8,
+      "repSeats": 30,
+      "demPct": 37.7,
+      "repPct": 59,
+      "demVotes": 340042,
+      "repVotes": 532205,
+      "totalVotes": 901865
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102657,6 +103599,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1526817
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 28,
+      "demPct": 40.3,
+      "repPct": 57.9,
+      "demVotes": 325800,
+      "repVotes": 468530,
+      "totalVotes": 808730
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -102667,6 +103621,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 695707,
       "repVotes": 1045502,
       "totalVotes": 1742181
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 27,
+      "demPct": 43.9,
+      "repPct": 56.1,
+      "demVotes": 328915,
+      "repVotes": 420578,
+      "totalVotes": 749493
     }
   ],
   "Louisiana": [
@@ -102683,6 +103649,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 561333
     },
     {
+      "year": 2023,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 11,
+      "repSeats": 28,
+      "demPct": 16.9,
+      "repPct": 82.4,
+      "demVotes": 85619,
+      "repVotes": 416502,
+      "totalVotes": 505617
+    },
+    {
       "year": 2019,
       "type": "House",
       "freq": 4,
@@ -102691,11 +103669,31 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2019,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 12,
+      "repSeats": 27,
+      "demPct": 31.8,
+      "repPct": 65.4,
+      "demVotes": 269181,
+      "repVotes": 552850,
+      "totalVotes": 845228
+    },
+    {
       "year": 2015,
       "type": "House",
       "freq": 4,
       "demSeats": 42,
       "repSeats": 61,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2015,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 14,
+      "repSeats": 25,
       "note": "Incomplete Data"
     }
   ],
@@ -102714,6 +103712,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 20,
+      "repSeats": 15,
+      "demPct": 52.3,
+      "repPct": 47.5,
+      "demVotes": 417563,
+      "repVotes": 379791,
+      "totalVotes": 798873,
+      "note": "Estimate"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102724,6 +103735,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 323064,
       "repVotes": 295258,
       "totalVotes": 643706
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 22,
+      "repSeats": 13,
+      "demPct": 52.7,
+      "repPct": 47,
+      "demVotes": 351606,
+      "repVotes": 313379,
+      "totalVotes": 667358
     },
     {
       "year": 2020,
@@ -102739,6 +103762,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 22,
+      "repSeats": 13,
+      "demPct": 52.9,
+      "repPct": 46.7,
+      "demVotes": 418062,
+      "repVotes": 369474,
+      "totalVotes": 791015
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102752,6 +103787,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 21,
+      "repSeats": 14,
+      "demPct": 55.9,
+      "repPct": 43.2,
+      "demVotes": 347752,
+      "repVotes": 268735,
+      "totalVotes": 622085,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -102760,6 +103808,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demPct": 51.1,
       "repPct": 46.7,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 17,
+      "repSeats": 18,
+      "demPct": 47.5,
+      "repPct": 49.2,
+      "demVotes": 349545,
+      "repVotes": 361976,
+      "totalVotes": 735706
     }
   ],
   "Maryland": [
@@ -102776,6 +103836,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 3829443
     },
     {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 34,
+      "repSeats": 13,
+      "demPct": 60.5,
+      "repPct": 37.4,
+      "demVotes": 1120385,
+      "repVotes": 692099,
+      "totalVotes": 1850511
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 4,
@@ -102786,6 +103858,32 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2940371,
       "repVotes": 1462097,
       "totalVotes": 4490000,
+      "note": "Estimate"
+    },
+    {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 32,
+      "repSeats": 15,
+      "demPct": 64.9,
+      "repPct": 33.3,
+      "demVotes": 1446326,
+      "repVotes": 742827,
+      "totalVotes": 2229630,
+      "note": "Estimate"
+    },
+    {
+      "year": 2014,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 33,
+      "repSeats": 14,
+      "demPct": 58.7,
+      "repPct": 40.6,
+      "demVotes": 948127,
+      "repVotes": 655037,
+      "totalVotes": 1614831,
       "note": "Estimate"
     }
   ],
@@ -102803,6 +103901,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2852930
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 35,
+      "repSeats": 5,
+      "demPct": 76.8,
+      "repPct": 21,
+      "demVotes": 2194884,
+      "repVotes": 600698,
+      "totalVotes": 2857775
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -102813,6 +103923,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1507301,
       "repVotes": 541222,
       "totalVotes": 2114475
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 37,
+      "repSeats": 3,
+      "demPct": 69.2,
+      "repPct": 27.1,
+      "demVotes": 1539792,
+      "repVotes": 602112,
+      "totalVotes": 2223744
     },
     {
       "year": 2020,
@@ -102827,6 +103949,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 3015019
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 37,
+      "repSeats": 3,
+      "demPct": 90.3,
+      "repPct": 7.5,
+      "demVotes": 2407534,
+      "repVotes": 200099,
+      "totalVotes": 2667512
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -102835,12 +103969,33 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 34,
+      "repSeats": 6,
+      "note": "Incompelte Data"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "demSeats": 125,
       "repSeats": 35,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 34,
+      "repSeats": 6,
+      "demPct": 74.6,
+      "repPct": 23.1,
+      "demVotes": 2053890,
+      "repVotes": 635030,
+      "totalVotes": 2752913,
+      "note": "Estimate"
     }
   ],
   "Michigan": [
@@ -102870,6 +104025,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 20,
+      "repSeats": 18,
+      "demPct": 50.4,
+      "repPct": 48.7,
+      "demVotes": 2183727,
+      "repVotes": 2111775,
+      "totalVotes": 4331890,
+      "note": "Estimate"
+    },
+    {
       "year": 2020,
       "type": "House",
       "freq": 2,
@@ -102895,6 +104063,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 4082747
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 16,
+      "repSeats": 22,
+      "demPct": 50.3,
+      "repPct": 48,
+      "demVotes": 2064029,
+      "repVotes": 1973098,
+      "totalVotes": 4107359,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -102905,6 +104086,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2260633,
       "repVotes": 2263633,
       "totalVotes": 4601289
+    },
+    {
+      "year": 2014,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 11,
+      "repSeats": 27,
+      "demPct": 47.2,
+      "repPct": 49.8,
+      "demVotes": 1420829,
+      "repVotes": 1499097,
+      "totalVotes": 3010233,
+      "note": "Estimate"
     }
   ],
   "Minnesota": [
@@ -102933,6 +104127,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2430571
     },
     {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 34,
+      "repSeats": 33,
+      "demPct": 50.7,
+      "repPct": 48.3,
+      "demVotes": 1239682,
+      "repVotes": 1180254,
+      "totalVotes": 2445079
+    },
+    {
       "year": 2020,
       "type": "House",
       "freq": 2,
@@ -102943,6 +104149,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1601357,
       "repVotes": 1510928,
       "totalVotes": 3136514
+    },
+    {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 33,
+      "repSeats": 34,
+      "demPct": 49.8,
+      "repPct": 48.4,
+      "demVotes": 1577523,
+      "repVotes": 1532446,
+      "totalVotes": 3166590
     },
     {
       "year": 2018,
@@ -102967,6 +104185,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1366375,
       "repVotes": 1400587,
       "totalVotes": 2782505
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 33,
+      "repSeats": 34,
+      "demPct": 50.1,
+      "repPct": 49,
+      "demVotes": 1409775,
+      "repVotes": 1377128,
+      "totalVotes": 2812780,
+      "note": "Estimate"
     }
   ],
   "Mississippi": [
@@ -102983,12 +104214,37 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 718848
     },
     {
+      "year": 2023,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 16,
+      "repSeats": 36,
+      "demPct": 32.9,
+      "repPct": 63.5,
+      "demVotes": 232036,
+      "repVotes": 447708,
+      "totalVotes": 705162
+    },
+    {
       "year": 2019,
       "type": "House",
       "freq": 4,
       "demSeats": 46,
       "repSeats": 75,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2019,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 16,
+      "repSeats": 36,
+      "demPct": 36.7,
+      "repPct": 62.5,
+      "demVotes": 281733,
+      "repVotes": 480583,
+      "totalVotes": 768510,
+      "note": "Estimate"
     },
     {
       "year": 2015,
@@ -103001,6 +104257,14 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 298355,
       "repVotes": 363667,
       "totalVotes": 667378
+    },
+    {
+      "year": 2015,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 19,
+      "repSeats": 33,
+      "note": "Incomplete Data"
     }
   ],
   "Missouri": [
@@ -103017,6 +104281,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2758421
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 24,
+      "demPct": 43.5,
+      "repPct": 56.5,
+      "demVotes": 598588,
+      "repVotes": 776116,
+      "totalVotes": 1374788,
+      "note": "Estimate"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103027,6 +104304,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 627512,
       "repVotes": 1233795,
       "totalVotes": 1875430
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 24,
+      "demPct": 31.1,
+      "repPct": 67.5,
+      "demVotes": 313588,
+      "repVotes": 682007,
+      "totalVotes": 1009864,
+      "note": "Estimate"
     },
     {
       "year": 2020,
@@ -103042,16 +104332,53 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 24,
+      "demPct": 43.7,
+      "repPct": 53.4,
+      "demVotes": 598526,
+      "repVotes": 731386,
+      "totalVotes": 1370102
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 24,
+      "demPct": 40.8,
+      "repPct": 58.6,
+      "demVotes": 494965,
+      "repVotes": 710940,
+      "totalVotes": 1213326
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 25,
+      "demPct": 43.4,
+      "repPct": 56.4,
+      "demVotes": 527527,
+      "repVotes": 686183,
+      "totalVotes": 1216184,
+      "note": "Estimate"
     }
   ],
   "Montana": [
@@ -103068,6 +104395,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 570834
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 32,
+      "demPct": 34,
+      "repPct": 64.2,
+      "demVotes": 97474,
+      "repVotes": 184066,
+      "totalVotes": 286523
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103078,6 +104417,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 151477,
       "repVotes": 274897,
       "totalVotes": 430710
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 16,
+      "repSeats": 34,
+      "demPct": 36.4,
+      "repPct": 63.6,
+      "demVotes": 84414,
+      "repVotes": 147211,
+      "totalVotes": 231625
     },
     {
       "year": 2020,
@@ -103092,6 +104443,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 570553
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 19,
+      "repSeats": 31,
+      "demPct": 34,
+      "repPct": 64.2,
+      "demVotes": 97474,
+      "repVotes": 184066,
+      "totalVotes": 286523
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103104,6 +104467,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 462570
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 20,
+      "repSeats": 30,
+      "demPct": 42.5,
+      "repPct": 54.8,
+      "demVotes": 99828,
+      "repVotes": 128760,
+      "totalVotes": 235154
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -103114,6 +104489,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 205981,
       "repVotes": 258412,
       "totalVotes": 468273
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 32,
+      "demPct": 40.2,
+      "repPct": 59.5,
+      "demVotes": 97280,
+      "repVotes": 143936,
+      "totalVotes": 241841
     }
   ],
   "Nebraska": [
@@ -103130,6 +104517,11 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 392076
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "note": "Unicameral"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103141,6 +104533,11 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "repVotes": 222655,
       "totalVotes": 327100,
       "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "note": "Unicameral"
     },
     {
       "year": 2020,
@@ -103156,6 +104553,11 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "note": "Unicameral"
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103164,12 +104566,22 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "note": "Unicameral"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "demSeats": 16,
       "repSeats": 31,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "note": "Unicameral"
     }
   ],
   "Nevada": [
@@ -103186,6 +104598,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1346042
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 13,
+      "repSeats": 8,
+      "demPct": 49.2,
+      "repPct": 50.2,
+      "demVotes": 320485,
+      "repVotes": 326549,
+      "totalVotes": 651129
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103198,6 +104622,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 959246
     },
     {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 13,
+      "repSeats": 8,
+      "demPct": 39.4,
+      "repPct": 60,
+      "demVotes": 201014,
+      "repVotes": 305964,
+      "totalVotes": 510042
+    },
+    {
       "year": 2020,
       "type": "House",
       "freq": 2,
@@ -103208,6 +104644,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 581197,
       "repVotes": 640275,
       "totalVotes": 1243365
+    },
+    {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 9,
+      "demPct": 56.2,
+      "repPct": 41,
+      "demVotes": 321290,
+      "repVotes": 234367,
+      "totalVotes": 572051
     },
     {
       "year": 2018,
@@ -103223,12 +104671,37 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 13,
+      "repSeats": 8,
+      "demPct": 51.3,
+      "repPct": 45.7,
+      "demVotes": 255036,
+      "repVotes": 227371,
+      "totalVotes": 497174,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "demSeats": 27,
       "repSeats": 15,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 10,
+      "demPct": 51.3,
+      "repPct": 41.2,
+      "demVotes": 271523,
+      "repVotes": 217829,
+      "totalVotes": 529087
     }
   ],
   "New Hampshire": [
@@ -103245,6 +104718,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2583024
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 8,
+      "repSeats": 16,
+      "demPct": 48.6,
+      "repPct": 51.3,
+      "demVotes": 381716,
+      "repVotes": 403116,
+      "totalVotes": 785400
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103257,6 +104742,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2158527
     },
     {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 14,
+      "demPct": 50.5,
+      "repPct": 49.5,
+      "demVotes": 299361,
+      "repVotes": 293304,
+      "totalVotes": 592664,
+      "note": "Estimate"
+    },
+    {
       "year": 2020,
       "type": "House",
       "freq": 2,
@@ -103267,6 +104765,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1267790,
       "repVotes": 1319131,
       "totalVotes": 2592105,
+      "note": "Estimate"
+    },
+    {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 14,
+      "demPct": 49.8,
+      "repPct": 50.2,
+      "demVotes": 381223,
+      "repVotes": 384138,
+      "totalVotes": 765362,
       "note": "Estimate"
     },
     {
@@ -103283,12 +104794,36 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 10,
+      "demPct": 53.8,
+      "repPct": 45.9,
+      "demVotes": 296608,
+      "repVotes": 253434,
+      "totalVotes": 551629
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "demSeats": 173,
       "repSeats": 227,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 14,
+      "demPct": 49.6,
+      "repPct": 50.4,
+      "demVotes": 341602,
+      "repVotes": 346564,
+      "totalVotes": 688166
     }
   ],
   "New Jersey": [
@@ -103317,6 +104852,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 3394645
     },
     {
+      "year": 2023,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 25,
+      "repSeats": 15,
+      "demPct": 54.2,
+      "repPct": 45.4,
+      "demVotes": 922977,
+      "repVotes": 772680,
+      "totalVotes": 1702483
+    },
+    {
       "year": 2021,
       "type": "House",
       "freq": 2,
@@ -103327,6 +104874,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2521259,
       "repVotes": 2351564,
       "totalVotes": 4883589
+    },
+    {
+      "year": 2021,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 24,
+      "repSeats": 16,
+      "demPct": 51.9,
+      "repPct": 48,
+      "demVotes": 1296465,
+      "repVotes": 1199006,
+      "totalVotes": 2497334
     },
     {
       "year": 2019,
@@ -103351,6 +104910,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2266879,
       "repVotes": 1613865,
       "totalVotes": 3902734
+    },
+    {
+      "year": 2017,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 25,
+      "repSeats": 15,
+      "demPct": 59.5,
+      "repPct": 40.3,
+      "demVotes": 1185420,
+      "repVotes": 802418,
+      "totalVotes": 1992263
     },
     {
       "year": 2015,
@@ -103379,6 +104950,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 773992
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 26,
+      "repSeats": 16,
+      "demPct": 58.6,
+      "repPct": 41.4,
+      "demVotes": 448818,
+      "repVotes": 317141,
+      "totalVotes": 765959
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103401,6 +104984,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 438465,
       "repVotes": 392345,
       "totalVotes": 847700,
+      "note": "Estimate"
+    },
+    {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 27,
+      "repSeats": 15,
+      "demPct": 51.6,
+      "repPct": 47,
+      "demVotes": 444518,
+      "repVotes": 404488,
+      "totalVotes": 861041,
       "note": "Estimate"
     },
     {
@@ -103427,6 +105023,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 365713,
       "repVotes": 304989,
       "totalVotes": 675331
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 26,
+      "repSeats": 16,
+      "demPct": 59.6,
+      "repPct": 40.4,
+      "demVotes": 399912,
+      "repVotes": 271028,
+      "totalVotes": 670940,
+      "note": "Estimate"
     }
   ],
   "New York": [
@@ -103443,6 +105052,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 7303401
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 41,
+      "repSeats": 22,
+      "demPct": 50.8,
+      "repPct": 40.2,
+      "demVotes": 3770406,
+      "repVotes": 2985013,
+      "totalVotes": 7423311
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103453,6 +105074,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2729459,
       "repVotes": 2136277,
       "totalVotes": 5376855
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 42,
+      "repSeats": 21,
+      "demPct": 48.7,
+      "repPct": 40.9,
+      "demVotes": 2658907,
+      "repVotes": 2233086,
+      "totalVotes": 5464766
     },
     {
       "year": 2020,
@@ -103467,6 +105100,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 7660491
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 43,
+      "repSeats": 20,
+      "demPct": 56,
+      "repPct": 34,
+      "demVotes": 4379045,
+      "repVotes": 2661869,
+      "totalVotes": 7824767
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103479,6 +105124,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 5650115
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 40,
+      "repSeats": 23,
+      "demPct": 56,
+      "repPct": 33.3,
+      "demVotes": 3242586,
+      "repVotes": 1926123,
+      "totalVotes": 5792627,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -103489,6 +105147,14 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 3851654,
       "repVotes": 2041214,
       "totalVotes": 6626856
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 32,
+      "repSeats": 31,
+      "note": "Incomplete Data"
     }
   ],
   "North Carolina": [
@@ -103505,6 +105171,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 5318747
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 20,
+      "repSeats": 30,
+      "demPct": 50.2,
+      "repPct": 48,
+      "demVotes": 2719418,
+      "repVotes": 2601321,
+      "totalVotes": 5420943
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103515,6 +105193,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1463259,
       "repVotes": 1985283,
       "totalVotes": 3468045
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 20,
+      "repSeats": 30,
+      "demPct": 40.5,
+      "repPct": 58.7,
+      "demVotes": 1401741,
+      "repVotes": 2030600,
+      "totalVotes": 3457656
     },
     {
       "year": 2020,
@@ -103529,6 +105219,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 5266635
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 22,
+      "repSeats": 28,
+      "demPct": 47.9,
+      "repPct": 50.8,
+      "demVotes": 2530188,
+      "repVotes": 2682645,
+      "totalVotes": 5283047
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103541,6 +105243,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 3693284
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 21,
+      "repSeats": 29,
+      "demPct": 50.1,
+      "repPct": 49,
+      "demVotes": 1856838,
+      "repVotes": 1816854,
+      "totalVotes": 3708212
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -103551,6 +105265,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1929943,
       "repVotes": 2150258,
       "totalVotes": 4134386
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 15,
+      "repSeats": 35,
+      "demPct": 43.3,
+      "repPct": 54.9,
+      "demVotes": 1823648,
+      "repVotes": 2310285,
+      "totalVotes": 4210865,
+      "note": "Estimate"
     }
   ],
   "North Dakota": [
@@ -103568,6 +105295,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 5,
+      "repSeats": 42,
+      "demPct": 22.7,
+      "repPct": 75.3,
+      "demVotes": 40532,
+      "repVotes": 134438,
+      "totalVotes": 178477
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103578,6 +105317,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 51956,
       "repVotes": 196917,
       "totalVotes": 252584,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 4,
+      "repSeats": 43,
+      "demPct": 18.1,
+      "repPct": 78.2,
+      "demVotes": 27285,
+      "repVotes": 118180,
+      "totalVotes": 151144,
       "note": "Estimate"
     },
     {
@@ -103594,6 +105346,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 40,
+      "demPct": 26.2,
+      "repPct": 73.1,
+      "demVotes": 43836,
+      "repVotes": 122164,
+      "totalVotes": 167120,
+      "note": "Estimate"
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103602,9 +105367,30 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 10,
+      "repSeats": 37,
+      "demPct": 36.2,
+      "repPct": 62.5,
+      "demVotes": 57924,
+      "repVotes": 100136,
+      "totalVotes": 160157,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 38,
       "note": "Incomplete Data"
     }
   ],
@@ -103622,6 +105408,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 5331326
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 24,
+      "demPct": 27.5,
+      "repPct": 72.5,
+      "demVotes": 1106983,
+      "repVotes": 2914102,
+      "totalVotes": 4021085,
+      "note": "Estimate"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103632,6 +105431,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1540800,
       "repVotes": 2270293,
       "totalVotes": 3859983
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 7,
+      "repSeats": 26,
+      "demPct": 42.2,
+      "repPct": 57.4,
+      "demVotes": 812696,
+      "repVotes": 1105112,
+      "totalVotes": 1924280
     },
     {
       "year": 2020,
@@ -103646,6 +105457,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 5508468
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 8,
+      "repSeats": 25,
+      "demPct": 38.5,
+      "repPct": 61.5,
+      "demVotes": 1097400,
+      "repVotes": 1754433,
+      "totalVotes": 2853783
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103658,6 +105481,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 4170288
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 24,
+      "demPct": 52.4,
+      "repPct": 47.3,
+      "demVotes": 1145439,
+      "repVotes": 1032867,
+      "totalVotes": 2185384
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -103668,6 +105503,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1961329,
       "repVotes": 2836624,
       "totalVotes": 4845958
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 24,
+      "demPct": 33.5,
+      "repPct": 66.5,
+      "demVotes": 821822,
+      "repVotes": 1633059,
+      "totalVotes": 2454750,
+      "note": "Estimate"
     }
   ],
   "Oklahoma": [
@@ -103684,6 +105532,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 488959
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 8,
+      "repSeats": 40,
+      "demPct": 31.1,
+      "repPct": 64.7,
+      "demVotes": 121569,
+      "repVotes": 252643,
+      "totalVotes": 390329
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103694,6 +105554,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 150782,
       "repVotes": 204587,
       "totalVotes": 361209
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 8,
+      "repSeats": 40,
+      "demPct": 39.1,
+      "repPct": 60.9,
+      "demVotes": 63501,
+      "repVotes": 99108,
+      "totalVotes": 162609
     },
     {
       "year": 2020,
@@ -103709,6 +105581,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 39,
+      "demPct": 32,
+      "repPct": 66.2,
+      "demVotes": 139506,
+      "repVotes": 288365,
+      "totalVotes": 435690
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103717,11 +105601,27 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 9,
+      "repSeats": 39,
+      "note": "Incomplete Data"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "demSeats": 26,
       "repSeats": 75,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 42,
       "note": "Incomplete Data"
     }
   ],
@@ -103739,6 +105639,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1977753
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 12,
+      "demPct": 49.9,
+      "repPct": 46.8,
+      "demVotes": 511377,
+      "repVotes": 479821,
+      "totalVotes": 1024769
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103749,6 +105661,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 981568,
       "repVotes": 878962,
       "totalVotes": 1875553
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 17,
+      "repSeats": 12,
+      "demPct": 55.9,
+      "repPct": 42.4,
+      "demVotes": 541049,
+      "repVotes": 410990,
+      "totalVotes": 968734
     },
     {
       "year": 2020,
@@ -103763,6 +105687,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2200471
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 12,
+      "demPct": 54.4,
+      "repPct": 44.7,
+      "demVotes": 628347,
+      "repVotes": 516030,
+      "totalVotes": 1154178
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103775,6 +105711,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1687368
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 18,
+      "repSeats": 12,
+      "demPct": 59.2,
+      "repPct": 38.5,
+      "demVotes": 564247,
+      "repVotes": 367063,
+      "totalVotes": 952669
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -103785,6 +105733,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 882897,
       "repVotes": 756619,
       "totalVotes": 1757603
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 17,
+      "repSeats": 13,
+      "demPct": 51,
+      "repPct": 44.3,
+      "demVotes": 472564,
+      "repVotes": 410566,
+      "totalVotes": 927466
     }
   ],
   "Pennsylvania": [
@@ -103801,6 +105761,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 6306837
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 22,
+      "repSeats": 28,
+      "demPct": 45.6,
+      "repPct": 54.3,
+      "demVotes": 1422433,
+      "repVotes": 1693844,
+      "totalVotes": 3119856
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103811,6 +105783,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2258892,
       "repVotes": 2638894,
       "totalVotes": 4929726
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 22,
+      "repSeats": 28,
+      "demPct": 48.9,
+      "repPct": 51,
+      "demVotes": 1140567,
+      "repVotes": 1190410,
+      "totalVotes": 2332923
     },
     {
       "year": 2020,
@@ -103825,6 +105809,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 6480273
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 21,
+      "repSeats": 28,
+      "demPct": 49.1,
+      "repPct": 50.9,
+      "demVotes": 1580922,
+      "repVotes": 1636593,
+      "totalVotes": 3217515
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103837,6 +105833,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 4670264
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 21,
+      "repSeats": 29,
+      "demPct": 53.8,
+      "repPct": 45.5,
+      "demVotes": 1297494,
+      "repVotes": 1096954,
+      "totalVotes": 2410166
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -103847,6 +105855,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2755058,
       "repVotes": 2852921,
       "totalVotes": 5650203
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 16,
+      "repSeats": 34,
+      "demPct": 46.2,
+      "repPct": 53.3,
+      "demVotes": 1272575,
+      "repVotes": 1467674,
+      "totalVotes": 2754281
     }
   ],
   "Rhode Island": [
@@ -103864,6 +105884,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 34,
+      "repSeats": 4,
+      "demPct": 72.8,
+      "repPct": 22.6,
+      "demVotes": 315596,
+      "repVotes": 98031,
+      "totalVotes": 433398
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103874,6 +105906,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 212251,
       "repVotes": 99003,
       "totalVotes": 332870
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 33,
+      "repSeats": 5,
+      "demPct": 62.4,
+      "repPct": 34.4,
+      "demVotes": 208664,
+      "repVotes": 115080,
+      "totalVotes": 334220,
+      "note": "Estimate"
     },
     {
       "year": 2020,
@@ -103888,6 +105933,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 440900
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 33,
+      "repSeats": 5,
+      "demPct": 69.9,
+      "repPct": 25.5,
+      "demVotes": 312363,
+      "repVotes": 114005,
+      "totalVotes": 446922
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103896,9 +105953,30 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 33,
+      "repSeats": 5,
+      "demPct": 69.6,
+      "repPct": 26.7,
+      "demVotes": 242177,
+      "repVotes": 93049,
+      "totalVotes": 348127,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 33,
+      "repSeats": 5,
       "note": "Incomplete Data"
     }
   ],
@@ -103915,6 +105993,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "repVotes": 1458624,
       "totalVotes": 2150000,
       "note": "Estimate"
+    },
+    {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 12,
+      "repSeats": 34,
+      "demPct": 34.3,
+      "repPct": 63.1,
+      "demVotes": 734338,
+      "repVotes": 1350807,
+      "totalVotes": 2140397
     },
     {
       "year": 2022,
@@ -103941,6 +106031,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2240391
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 16,
+      "repSeats": 30,
+      "demPct": 39.3,
+      "repPct": 59.5,
+      "demVotes": 924535,
+      "repVotes": 1399659,
+      "totalVotes": 2351766
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -103964,6 +106066,14 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "repVotes": 869238,
       "totalVotes": 1486477,
       "note": "Identical?"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 18,
+      "repSeats": 28,
+      "note": "Incomplete Data"
     }
   ],
   "South Dakota": [
@@ -103981,6 +106091,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 3,
+      "repSeats": 32,
+      "demPct": 19.9,
+      "repPct": 78.6,
+      "demVotes": 69347,
+      "repVotes": 273439,
+      "totalVotes": 347685
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -103992,6 +106114,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "repVotes": 361683,
       "totalVotes": 479010,
       "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 4,
+      "repSeats": 31,
+      "demPct": 14.6,
+      "repPct": 81.6,
+      "demVotes": 40958,
+      "repVotes": 229609,
+      "totalVotes": 281323
     },
     {
       "year": 2020,
@@ -104007,6 +106141,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 3,
+      "repSeats": 32,
+      "demPct": 21,
+      "repPct": 72.8,
+      "demVotes": 78110,
+      "repVotes": 271017,
+      "totalVotes": 372110
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -104015,9 +106161,25 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 5,
+      "repSeats": 30,
+      "note": "Incomplete Data"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
+      "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 29,
       "note": "Incomplete Data"
     }
   ],
@@ -104035,6 +106197,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2779356
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 27,
+      "demPct": 24.1,
+      "repPct": 71.7,
+      "demVotes": 325890,
+      "repVotes": 969827,
+      "totalVotes": 1353545
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -104045,6 +106219,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 410589,
       "repVotes": 1077324,
       "totalVotes": 1528494
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 27,
+      "demPct": 26.8,
+      "repPct": 70.6,
+      "demVotes": 207273,
+      "repVotes": 546264,
+      "totalVotes": 773253
     },
     {
       "year": 2020,
@@ -104059,6 +106245,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2587847
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 27,
+      "demPct": 24.4,
+      "repPct": 71.4,
+      "demVotes": 321494,
+      "repVotes": 939727,
+      "totalVotes": 1315926
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -104067,10 +106265,34 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 5,
+      "repSeats": 28,
+      "demPct": 40.2,
+      "repPct": 58.9,
+      "demVotes": 459033,
+      "repVotes": 671278,
+      "totalVotes": 1140488
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 5,
+      "repSeats": 28,
+      "demPct": 17.4,
+      "repPct": 80.8,
+      "demVotes": 172753,
+      "repVotes": 802362,
+      "totalVotes": 992756
     }
   ],
   "Texas": [
@@ -104087,6 +106309,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 10130239
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 20,
+      "demPct": 54.9,
+      "repPct": 45,
+      "demVotes": 2679156,
+      "repVotes": 2196004,
+      "totalVotes": 4880116
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -104097,6 +106331,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2308570,
       "repVotes": 2612097,
       "totalVotes": 5053540
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 19,
+      "demPct": 41.9,
+      "repPct": 54.1,
+      "demVotes": 2287700,
+      "repVotes": 2948643,
+      "totalVotes": 5454253
     },
     {
       "year": 2020,
@@ -104111,6 +106357,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 10391097
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 13,
+      "repSeats": 18,
+      "demPct": 44.6,
+      "repPct": 53.3,
+      "demVotes": 2226640,
+      "repVotes": 2660120,
+      "totalVotes": 4993109
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -104123,6 +106381,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 7743242
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 19,
+      "demPct": 46.3,
+      "repPct": 52.1,
+      "demVotes": 2026761,
+      "repVotes": 2280884,
+      "totalVotes": 4374707
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -104133,6 +106403,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2746667,
       "repVotes": 4711481,
       "totalVotes": 7666558
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 20,
+      "demPct": 38.4,
+      "repPct": 56.3,
+      "demVotes": 1355412,
+      "repVotes": 1985241,
+      "totalVotes": 3525443
     }
   ],
   "Utah": [
@@ -104149,6 +106431,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1350688
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 23,
+      "demPct": 22,
+      "repPct": 68.7,
+      "demVotes": 150013,
+      "repVotes": 467679,
+      "totalVotes": 681239
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -104159,6 +106453,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 250516,
       "repVotes": 692787,
       "totalVotes": 989272
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 23,
+      "demPct": 31.4,
+      "repPct": 63.6,
+      "demVotes": 151169,
+      "repVotes": 305987,
+      "totalVotes": 481212
     },
     {
       "year": 2020,
@@ -104173,6 +106479,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1389472
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 23,
+      "demPct": 19.5,
+      "repPct": 77.9,
+      "demVotes": 136448,
+      "repVotes": 546124,
+      "totalVotes": 701020
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -104185,12 +106503,36 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1012500
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 6,
+      "repSeats": 23,
+      "demPct": 40.6,
+      "repPct": 57.3,
+      "demVotes": 216893,
+      "repVotes": 306354,
+      "totalVotes": 534726
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "demSeats": 13,
       "repSeats": 62,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 5,
+      "repSeats": 24,
+      "demPct": 22.8,
+      "repPct": 74.8,
+      "demVotes": 123078,
+      "repVotes": 404023,
+      "totalVotes": 539967
     }
   ],
   "Vermont": [
@@ -104208,6 +106550,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 16,
+      "repSeats": 13,
+      "demPct": 52.6,
+      "repPct": 40.7,
+      "demVotes": 341868,
+      "repVotes": 264791,
+      "totalVotes": 649946
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -104221,6 +106575,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 22,
+      "repSeats": 7,
+      "demPct": 65.1,
+      "repPct": 29.5,
+      "demVotes": 365882,
+      "repVotes": 165921,
+      "totalVotes": 562087
+    },
+    {
       "year": 2020,
       "type": "House",
       "freq": 2,
@@ -104231,6 +106597,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 266017,
       "repVotes": 167319,
       "totalVotes": 485200,
+      "note": "Estimate"
+    },
+    {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 21,
+      "repSeats": 7,
+      "demPct": 53.7,
+      "repPct": 34.7,
+      "demVotes": 481506,
+      "repVotes": 311329,
+      "totalVotes": 896973,
       "note": "Estimate"
     },
     {
@@ -104247,6 +106626,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 22,
+      "repSeats": 6,
+      "demPct": 60.8,
+      "repPct": 26,
+      "demVotes": 417375,
+      "repVotes": 178737,
+      "totalVotes": 686855,
+      "note": "Estimate"
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -104255,6 +106647,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demPct": 50.6,
       "repPct": 38.2,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 21,
+      "repSeats": 7,
+      "demPct": 61.6,
+      "repPct": 26.5,
+      "demVotes": 436878,
+      "repVotes": 188047,
+      "totalVotes": 708685
     }
   ],
   "Virginia": [
@@ -104283,6 +106687,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2397692
     },
     {
+      "year": 2023,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 21,
+      "repSeats": 19,
+      "demPct": 49.8,
+      "repPct": 48.4,
+      "demVotes": 1229331,
+      "repVotes": 1193583,
+      "totalVotes": 2466385
+    },
+    {
       "year": 2021,
       "type": "House",
       "freq": 2,
@@ -104307,6 +106723,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2280038
     },
     {
+      "year": 2019,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 21,
+      "repSeats": 19,
+      "demPct": 53.2,
+      "repPct": 39.8,
+      "demVotes": 1211835,
+      "repVotes": 907477,
+      "totalVotes": 2278137
+    },
+    {
       "year": 2017,
       "type": "House",
       "freq": 2,
@@ -104329,6 +106757,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 451865,
       "repVotes": 798868,
       "totalVotes": 1314246
+    },
+    {
+      "year": 2015,
+      "type": "Senate",
+      "freq": 4,
+      "demSeats": 19,
+      "repSeats": 21,
+      "demPct": 43.8,
+      "repPct": 52.6,
+      "demVotes": 596198,
+      "repVotes": 716331,
+      "totalVotes": 1362664
     }
   ],
   "Washington": [
@@ -104346,6 +106786,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 30,
+      "repSeats": 19,
+      "demPct": 52.4,
+      "repPct": 46.9,
+      "demVotes": 978951,
+      "repVotes": 876073,
+      "totalVotes": 1868855,
+      "note": "Estimate"
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -104356,6 +106809,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 2937173,
       "repVotes": 2581809,
       "totalVotes": 5641038
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 29,
+      "repSeats": 20,
+      "demPct": 56.8,
+      "repPct": 39.3,
+      "demVotes": 793534,
+      "repVotes": 548781,
+      "totalVotes": 1396791,
+      "note": "Estimate"
     },
     {
       "year": 2020,
@@ -104370,6 +106836,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 7479947
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 28,
+      "repSeats": 21,
+      "demPct": 49.6,
+      "repPct": 47.4,
+      "demVotes": 987057,
+      "repVotes": 943884,
+      "totalVotes": 1990456,
+      "note": "Estimate"
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -104382,6 +106861,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 5817357
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 28,
+      "repSeats": 21,
+      "demPct": 64.5,
+      "repPct": 33.9,
+      "demVotes": 982741,
+      "repVotes": 516476,
+      "totalVotes": 1522462
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -104392,6 +106883,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 3130575,
       "repVotes": 2490772,
       "totalVotes": 5781687
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 25,
+      "repSeats": 24,
+      "demPct": 50.9,
+      "repPct": 45.8,
+      "demVotes": 787912,
+      "repVotes": 708898,
+      "totalVotes": 1549201
     }
   ],
   "West Virginia": [
@@ -104408,6 +106911,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 688255
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 2,
+      "repSeats": 32,
+      "demPct": 19.9,
+      "repPct": 79,
+      "demVotes": 134343,
+      "repVotes": 534558,
+      "totalVotes": 676280
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -104418,6 +106933,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 138747,
       "repVotes": 316588,
       "totalVotes": 460943
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 4,
+      "repSeats": 30,
+      "demPct": 28.6,
+      "repPct": 67,
+      "demVotes": 131305,
+      "repVotes": 307201,
+      "totalVotes": 458462
     },
     {
       "year": 2020,
@@ -104432,6 +106959,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 1287333
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 23,
+      "demPct": 36.1,
+      "repPct": 61.8,
+      "demVotes": 267073,
+      "repVotes": 456726,
+      "totalVotes": 739430
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -104442,12 +106981,72 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Incomplete Data"
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 20,
+      "demPct": 44.1,
+      "repPct": 53.4,
+      "demVotes": 252564,
+      "repVotes": 306182,
+      "totalVotes": 573313
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
       "demSeats": 37,
       "repSeats": 63,
       "note": "Incomplete Data"
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 22,
+      "demPct": 47.2,
+      "repPct": 51.8,
+      "demVotes": 345598,
+      "repVotes": 379414,
+      "totalVotes": 732035
+    },
+    {
+      "year": 2014,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 16,
+      "repSeats": 18,
+      "demPct": 43.2,
+      "repPct": 55.3,
+      "demVotes": 186688,
+      "repVotes": 239003,
+      "totalVotes": 432386
+    },
+    {
+      "year": 2012,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 25,
+      "repSeats": 9,
+      "demPct": 61.7,
+      "repPct": 38.3,
+      "demVotes": 352746,
+      "repVotes": 219193,
+      "totalVotes": 571939
+    },
+    {
+      "year": 2010,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 28,
+      "repSeats": 6,
+      "demPct": 57,
+      "repPct": 41.8,
+      "demVotes": 315959,
+      "repVotes": 231902,
+      "totalVotes": 554332
     }
   ],
   "Wisconsin": [
@@ -104464,6 +107063,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 3237246
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 15,
+      "repSeats": 18,
+      "demPct": 56.6,
+      "repPct": 42.7,
+      "demVotes": 861272,
+      "repVotes": 650328,
+      "totalVotes": 1521649
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -104474,6 +107085,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1124962,
       "repVotes": 1350083,
       "totalVotes": 2518813,
+      "note": "Estimate"
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 11,
+      "repSeats": 22,
+      "demPct": 37.7,
+      "repPct": 61.1,
+      "demVotes": 475900,
+      "repVotes": 772131,
+      "totalVotes": 1263442,
       "note": "Estimate"
     },
     {
@@ -104490,6 +107114,19 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "note": "Estimate"
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 12,
+      "repSeats": 21,
+      "demPct": 45.3,
+      "repPct": 53.8,
+      "demVotes": 1402108,
+      "repVotes": 1665487,
+      "totalVotes": 3095789,
+      "note": "Estimate"
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -104502,6 +107139,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 2466153
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 14,
+      "repSeats": 19,
+      "demPct": 46.9,
+      "repPct": 52.3,
+      "demVotes": 605142,
+      "repVotes": 675016,
+      "totalVotes": 1290337
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -104512,6 +107161,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 1175779,
       "repVotes": 1337291,
       "totalVotes": 2587171
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 13,
+      "repSeats": 20,
+      "demPct": 50.3,
+      "repPct": 48.6,
+      "demVotes": 639545,
+      "repVotes": 618589,
+      "totalVotes": 1272353
     }
   ],
   "Wyoming": [
@@ -104528,6 +107189,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 236503
     },
     {
+      "year": 2024,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 2,
+      "repSeats": 29,
+      "demPct": 6.6,
+      "repPct": 89.8,
+      "demVotes": 7742,
+      "repVotes": 105174,
+      "totalVotes": 117143
+    },
+    {
       "year": 2022,
       "type": "House",
       "freq": 2,
@@ -104538,6 +107211,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 22939,
       "repVotes": 138719,
       "totalVotes": 180811
+    },
+    {
+      "year": 2022,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 2,
+      "repSeats": 29,
+      "demPct": 17.3,
+      "repPct": 75.3,
+      "demVotes": 15477,
+      "repVotes": 67440,
+      "totalVotes": 89546
     },
     {
       "year": 2020,
@@ -104552,6 +107237,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 248802
     },
     {
+      "year": 2020,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 2,
+      "repSeats": 28,
+      "demPct": 11.6,
+      "repPct": 86.9,
+      "demVotes": 14559,
+      "repVotes": 109312,
+      "totalVotes": 125854
+    },
+    {
       "year": 2018,
       "type": "House",
       "freq": 2,
@@ -104564,6 +107261,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "totalVotes": 181644
     },
     {
+      "year": 2018,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 3,
+      "repSeats": 27,
+      "demPct": 22.3,
+      "repPct": 63.4,
+      "demVotes": 21854,
+      "repVotes": 62128,
+      "totalVotes": 98036
+    },
+    {
       "year": 2016,
       "type": "House",
       "freq": 2,
@@ -104574,6 +107283,18 @@ export const stateLegData: Record<string, StateLegEntry[]> = {
       "demVotes": 68510,
       "repVotes": 164140,
       "totalVotes": 238464
+    },
+    {
+      "year": 2016,
+      "type": "Senate",
+      "freq": 2,
+      "demSeats": 3,
+      "repSeats": 27,
+      "demPct": 21.6,
+      "repPct": 64.7,
+      "demVotes": 28717,
+      "repVotes": 85881,
+      "totalVotes": 132742
     }
   ]
 };
