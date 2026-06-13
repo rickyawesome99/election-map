@@ -82,7 +82,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
             </div>
             {entry.pastResults && entry.pastResults.length > 0 && (
               <div className="order-4">
-                <SeatVoteHistoryChart results={enrichGovResults(entry.pastResults)} />
+                <SeatVoteHistoryChart results={enrichGovResults(entry.pastResults)} electionType="Governor" />
               </div>
             )}
           </div>
@@ -169,7 +169,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
             </div>
             {race.pastResults && race.pastResults.length > 0 && (
               <div className="order-5">
-                <SeatVoteHistoryChart results={enrichGovResults(race.pastResults)} />
+                <SeatVoteHistoryChart results={enrichGovResults(race.pastResults)} electionType="Governor" />
               </div>
             )}
           </div>

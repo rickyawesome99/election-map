@@ -45,11 +45,11 @@ function niceAxisConfig(vals: number[]): { domain: [number, number]; ticks: numb
   return { domain: [domainMin, domainMax], ticks };
 }
 
-function MarginTooltip({ active, payload, label, showNational }: {
+function MarginTooltip({ active, payload, showNational, electionType }: {
   active?: boolean;
   payload?: { payload: ChartPoint }[];
-  label?: string;
   showNational?: boolean;
+  electionType: string;
 }) {
   if (!active || !payload?.length) return null;
   const d = payload[0].payload;
@@ -57,6 +57,7 @@ function MarginTooltip({ active, payload, label, showNational }: {
   if (val == null) return null;
   const displayValue = showNational ? val : d.repMargin;
   const displayIsRep = displayValue >= 0;
+  const displayColor = displayIsRep ? "var(--party-rep)" : "var(--party-dem)";
   const nationalDiffLabel = val === 0
     ? "Even with nation"
     : `${Math.abs(val).toFixed(1)} points more ${val >= 0 ? "R" : "D"} than nation`;
@@ -65,13 +66,22 @@ function MarginTooltip({ active, payload, label, showNational }: {
       className="rounded-lg px-3 py-2 text-xs shadow-lg"
       style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", minWidth: 150 }}
     >
-      <div className="font-bold mb-1" style={{ color: "var(--app-text-muted)" }}>{label}</div>
-      <div className="font-bold font-mono text-sm" style={{ color: displayIsRep ? "var(--party-rep)" : "var(--party-dem)" }}>
+      <div className="font-bold mb-1" style={{ color: "var(--app-text-muted)" }}>
+        {d.year} {electionType}
+      </div>
+      <div className="font-bold font-mono text-sm" style={{ color: displayColor }}>
         {marginLabel(displayValue)}
       </div>
-      <div className="mt-0.5" style={{ color: "var(--app-text-muted)" }}>
-        {showNational ? nationalDiffLabel : `D ${d.demPct.toFixed(1)}% R ${d.repPct.toFixed(1)}%`}
-      </div>
+      {showNational ? (
+        <div className="mt-0.5" style={{ color: displayColor }}>
+          {nationalDiffLabel}
+        </div>
+      ) : (
+        <div className="mt-0.5 flex gap-2">
+          <span style={{ color: "var(--party-dem)" }}>D {d.demPct.toFixed(1)}%</span>
+          <span style={{ color: "var(--party-rep)" }}>R {d.repPct.toFixed(1)}%</span>
+        </div>
+      )}
     </div>
   );
 }
@@ -97,7 +107,13 @@ function buildSegmentLines(points: ChartPoint[], dataKey: "repMargin" | "natY"):
   return { chartData, segments };
 }
 
-export default function SeatVoteHistoryChart({ results }: { results: DetailPastResult[] }) {
+export default function SeatVoteHistoryChart({
+  results,
+  electionType = "Election",
+}: {
+  results: DetailPastResult[];
+  electionType?: string;
+}) {
   const [showNational, setShowNational] = useState(false);
 
   const chartPoints: ChartPoint[] = (results ?? [])
@@ -176,7 +192,7 @@ export default function SeatVoteHistoryChart({ results }: { results: DetailPastR
             />
             <ReferenceLine y={0} stroke="var(--app-border)" strokeDasharray="4 3" strokeWidth={1} />
             <Tooltip
-              content={<MarginTooltip showNational={showNational} />}
+              content={<MarginTooltip showNational={showNational} electionType={electionType} />}
               cursor={{ stroke: "var(--app-border)", strokeWidth: 1 }}
             />
             {segments.map(({ key }) => (

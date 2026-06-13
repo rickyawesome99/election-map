@@ -13,6 +13,8 @@ export type DetailPastResult = {
   repPct: number;
   demCandidate?: string;
   repCandidate?: string;
+  demParty?: "D" | "R" | "I";
+  repParty?: "D" | "R" | "I";
   demVotes?: number;
   repVotes?: number;
   demIncumbent?: boolean;
@@ -53,7 +55,15 @@ function partyLabel(party: "D" | "R" | "I") {
 }
 
 function partyAccent(party: "D" | "R" | "I") {
-  return party === "R" ? "var(--party-rep)" : "var(--party-dem)";
+  if (party === "R") return "var(--party-rep)";
+  if (party === "I") return "var(--party-ind)";
+  return "var(--party-dem)";
+}
+
+function partySubtle(party: "D" | "R" | "I") {
+  if (party === "R") return "var(--party-rep-subtle)";
+  if (party === "I") return "var(--party-ind-subtle)";
+  return "var(--party-dem-subtle)";
 }
 
 function MarginPollRow({ label, dem, rep, precision = 0, pctMargin = false }: { label: string; dem?: number; rep?: number; precision?: number; pctMargin?: boolean }) {
@@ -507,7 +517,11 @@ export function PastElectionResultsSection({
         {rows.map((res) => {
           const isPlaceholder = !!res.placeholder;
           const isSpecial = res.electionType?.toLowerCase().includes("special") ?? false;
-          const winner = res.demPct > res.repPct ? "D" : "R";
+          const demParty = res.demParty ?? "D";
+          const repParty = res.repParty ?? "R";
+          const demAccent = partyAccent(demParty);
+          const repAccent = partyAccent(repParty);
+          const winnerParty = res.demPct > res.repPct ? demParty : repParty;
           const margin = Math.abs(res.demPct - res.repPct).toFixed(1);
           const total = res.demPct + res.repPct;
           const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
@@ -553,11 +567,9 @@ export function PastElectionResultsSection({
                 ) : (
                   <span
                     className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0"
-                    style={winner === "D"
-                      ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
-                      : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+                    style={{ background: partySubtle(winnerParty), color: partyAccent(winnerParty) }}
                   >
-                    {winner}+{margin}
+                    {winnerParty}+{margin}
                   </span>
                 )}
               </div>
@@ -565,15 +577,15 @@ export function PastElectionResultsSection({
               {/* Dem row */}
               <div className="flex items-baseline gap-2 mb-1">
                 <div className="flex min-w-0 flex-1 items-baseline gap-1.5">
-                  <span className="text-sm font-semibold min-w-0 truncate" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-dem)" }}>
-                    {isPlaceholder ? "TBD" : `${demName} (D)`}
+                  <span className="text-sm font-semibold min-w-0 truncate" style={{ color: isPlaceholder ? "var(--app-text-muted)" : demAccent }}>
+                    {isPlaceholder ? "TBD" : `${demName} (${demParty})`}
                   </span>
                   {!isPlaceholder && res.demIncumbent && (
-                    <span className="text-[10px] font-semibold shrink-0 px-1 py-0.5 rounded" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>Inc.</span>
+                    <span className="text-[10px] font-semibold shrink-0 px-1 py-0.5 rounded" style={{ background: partySubtle(demParty), color: demAccent }}>Inc.</span>
                   )}
                 </div>
                 <div className="flex items-baseline gap-1 shrink-0">
-                  <span className="text-sm font-bold tabular-nums w-12" style={{ color: "var(--party-dem)" }}>
+                  <span className="text-sm font-bold tabular-nums w-12" style={{ color: demAccent }}>
                     {isPlaceholder ? "—" : `${res.demPct.toFixed(1)}%`}
                   </span>
                   <span className="text-xs tabular-nums w-16 text-right" style={{ color: "var(--app-text-very-muted)" }}>
@@ -585,15 +597,15 @@ export function PastElectionResultsSection({
               {/* Rep row */}
               <div className="flex items-baseline gap-2 mb-1.5">
                 <div className="flex min-w-0 flex-1 items-baseline gap-1.5">
-                  <span className="text-sm font-semibold min-w-0 truncate" style={{ color: isPlaceholder ? "var(--app-text-muted)" : "var(--party-rep)" }}>
-                    {isPlaceholder ? "TBD" : `${repName} (R)`}
+                  <span className="text-sm font-semibold min-w-0 truncate" style={{ color: isPlaceholder ? "var(--app-text-muted)" : repAccent }}>
+                    {isPlaceholder ? "TBD" : `${repName} (${repParty})`}
                   </span>
                   {!isPlaceholder && res.repIncumbent && (
-                    <span className="text-[10px] font-semibold shrink-0 px-1 py-0.5 rounded" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>Inc.</span>
+                    <span className="text-[10px] font-semibold shrink-0 px-1 py-0.5 rounded" style={{ background: partySubtle(repParty), color: repAccent }}>Inc.</span>
                   )}
                 </div>
                 <div className="flex items-baseline gap-1 shrink-0">
-                  <span className="text-sm font-bold tabular-nums w-12" style={{ color: "var(--party-rep)" }}>
+                  <span className="text-sm font-bold tabular-nums w-12" style={{ color: repAccent }}>
                     {isPlaceholder ? "—" : `${res.repPct.toFixed(1)}%`}
                   </span>
                   <span className="text-xs tabular-nums w-16 text-right" style={{ color: "var(--app-text-very-muted)" }}>

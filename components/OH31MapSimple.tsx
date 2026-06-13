@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import type { MouseEvent as ReactMouseEvent } from "react";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import type { GeoJsonProperties, Geometry } from "geojson";
 import { getRaceColor } from "@/lib/colorScale";
 import { oh31ByPrecinct, OH31Precinct } from "@/data/oh31PrecinctData";
@@ -24,6 +24,8 @@ interface Props {
   townshipFilter: TownshipFilter;
   raceLabel: string;
   onMobilePopupChange?: (visible: boolean) => void;
+  swingLookup?: Record<string, { dPct: number; rPct: number; margin: number }> | null;
+  swingLabel?: string;
 }
 
 function precinctNameFromGeoid(geoid: string): string {
@@ -31,13 +33,15 @@ function precinctNameFromGeoid(geoid: string): string {
   return idx >= 0 ? geoid.slice(idx + 1) : geoid;
 }
 
-export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, raceLabel, onMobilePopupChange }: Props) {
+export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, raceLabel, onMobilePopupChange, swingLookup, swingLabel }: Props) {
   const [hovered, setHovered] = useState<OH31Precinct | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
   const [isMobile, setIsMobile] = useState(false);
   const [pinned, setPinned] = useState<{ precinct: OH31Precinct; pos: { x: number; y: number } } | null>(null);
   const mapRef = useRef<HTMLDivElement | null>(null);
+  const [mapKey, setMapKey] = useState(0);
+  const [viewChanged, setViewChanged] = useState(false);
 
   useEffect(() => {
     const syncViewport = () => {
@@ -51,8 +55,8 @@ export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, ra
   }, []);
 
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
-  const tipW = 200;
-  const tipH = 110;
+  const tipW = swingLookup != null ? 220 : 200;
+  const tipH = swingLookup != null ? 170 : 110;
   const offset = 16;
   const edgePad = 8;
   const mapHeight = isMobile ? 520 : "min(72vh, 520px)";
@@ -60,16 +64,19 @@ export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, ra
   const displayPrecinct = pinned?.precinct ?? hovered;
   const tooltipAnchor = pinned?.pos ?? mousePos;
   const activeRaceResult = displayPrecinct ? displayPrecinct[activeRace] : null;
-  const activeRaceMargin = activeRaceResult
-    ? activeRaceResult.dPct >= activeRaceResult.rPct
-      ? `D+${(activeRaceResult.dPct - activeRaceResult.rPct).toFixed(1)}%`
-      : `R+${(activeRaceResult.rPct - activeRaceResult.dPct).toFixed(1)}%`
+  const currentPctMargin = activeRaceResult ? activeRaceResult.dPct - activeRaceResult.rPct : null;
+  const swingEntry = (swingLookup != null && displayPrecinct) ? (swingLookup[displayPrecinct.precinct] ?? null) : null;
+  const swingMargin = currentPctMargin != null && swingEntry != null ? currentPctMargin - swingEntry.margin : null;
+  const absMarginLabel = currentPctMargin != null
+    ? (currentPctMargin >= 0 ? `D+${currentPctMargin.toFixed(1)}%` : `R+${Math.abs(currentPctMargin).toFixed(1)}%`)
     : null;
-  const activeRaceMarginColor = activeRaceResult
-    ? activeRaceResult.dPct >= activeRaceResult.rPct
-      ? t.demText
-      : t.repText
-    : t.textMuted;
+  const absMarginColor = currentPctMargin != null ? (currentPctMargin >= 0 ? t.demText : t.repText) : t.textMuted;
+  const activeRaceMargin = swingMargin != null
+    ? (swingMargin >= 0 ? `D+${swingMargin.toFixed(1)}%` : `R+${Math.abs(swingMargin).toFixed(1)}%`)
+    : absMarginLabel;
+  const activeRaceMarginColor = swingMargin != null
+    ? (swingMargin >= 0 ? t.demText : t.repText)
+    : absMarginColor;
   let tipLeft = tooltipAnchor.x + offset;
   let tipTop  = tooltipAnchor.y + offset;
   if (tipLeft + tipW + edgePad > mapSize.w) tipLeft = tooltipAnchor.x - tipW - offset;
@@ -108,6 +115,7 @@ export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, ra
         height={520}
         style={{ width: "100%", height: "100%" }}
       >
+        <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
         <Geographies geography={GEO_URL}>
           {({ geographies }: { geographies: PrecinctGeography[] }) =>
             geographies.map((geo) => {
@@ -120,7 +128,16 @@ export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, ra
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}
-                  fill={matches && race ? getRaceColor(race.dPct - race.rPct) : matches ? "var(--oh31-simple-map-bg)" : t.hoverUnfilled}
+                  fill={(() => {
+                    if (!matches) return t.hoverUnfilled;
+                    if (!race) return "var(--oh31-simple-map-bg)";
+                    const absMargin = race.dPct - race.rPct;
+                    if (swingLookup != null) {
+                      const entry = swingLookup[name];
+                      return entry !== undefined ? getRaceColor(absMargin - entry.margin) : "var(--oh31-simple-map-bg)";
+                    }
+                    return getRaceColor(absMargin);
+                  })()}
                   stroke={t.mapStroke}
                   strokeWidth={isHovered ? 1.5 : matches ? 0.4 : 0.2}
                   style={{
@@ -159,7 +176,19 @@ export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, ra
             })
           }
         </Geographies>
+        </ZoomableGroup>
       </ComposableMap>
+
+      {/* Reset zoom button */}
+      {viewChanged && (
+        <button
+          onClick={() => { setMapKey(k => k + 1); setViewChanged(false); }}
+          className="absolute top-2 right-2 z-10 text-[10px] font-semibold px-2 py-1 rounded-md"
+          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", opacity: 0.92 }}
+        >
+          Reset
+        </button>
+      )}
 
       {/* Hover tooltip */}
       {displayPrecinct && !isMobile && (
@@ -181,27 +210,45 @@ export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, ra
             {raceLabel} · {displayPrecinct.ballotsCast.toLocaleString()} ballots
           </div>
           {activeRaceResult && (
-            <div className="inline-grid grid-cols-[auto_auto_auto] items-start gap-2">
-              <div>
-                <div className="text-[12px] font-semibold" style={{ color: t.demText }}>
-                  D {activeRaceResult.dVotes.toLocaleString()}
+            <>
+              <div className="inline-grid grid-cols-[auto_auto_auto] items-start gap-2 mb-1">
+                <div>
+                  <div className="text-[12px] font-semibold" style={{ color: t.demText }}>
+                    D {activeRaceResult.dVotes.toLocaleString()}
+                  </div>
+                  <div className="text-[11px]" style={{ color: t.demText, opacity: 0.9 }}>
+                    ({activeRaceResult.dPct.toFixed(1)}%)
+                  </div>
                 </div>
-                <div className="text-[11px]" style={{ color: t.demText, opacity: 0.9 }}>
-                  ({activeRaceResult.dPct.toFixed(1)}%)
+                <div>
+                  <div className="text-[12px] font-semibold" style={{ color: t.repText }}>
+                    R {activeRaceResult.rVotes.toLocaleString()}
+                  </div>
+                  <div className="text-[11px]" style={{ color: t.repText, opacity: 0.9 }}>
+                    ({activeRaceResult.rPct.toFixed(1)}%)
+                  </div>
+                </div>
+                <div className="pt-[1px] text-[13px] leading-none font-bold whitespace-nowrap" style={{ color: absMarginColor }}>
+                  {absMarginLabel}
                 </div>
               </div>
-              <div>
-                <div className="text-[12px] font-semibold" style={{ color: t.repText }}>
-                  R {activeRaceResult.rVotes.toLocaleString()}
-                </div>
-                <div className="text-[11px]" style={{ color: t.repText, opacity: 0.9 }}>
-                  ({activeRaceResult.rPct.toFixed(1)}%)
-                </div>
-              </div>
-              <div className="pt-[1px] text-[14px] leading-none font-bold whitespace-nowrap" style={{ color: activeRaceMarginColor }}>
-                {activeRaceMargin}
-              </div>
-            </div>
+              {swingEntry && (
+                <>
+                  <div className="text-[10px] mt-2 mb-0.5" style={{ color: t.textMuted }}>vs {swingLabel}</div>
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <span className="text-[11px] font-medium" style={{ color: t.demText }}>D {swingEntry.dPct.toFixed(1)}%</span>
+                    <span className="text-[11px] font-medium" style={{ color: t.repText }}>R {swingEntry.rPct.toFixed(1)}%</span>
+                    <span className="text-[11px] font-bold" style={{ color: swingEntry.margin >= 0 ? t.demText : t.repText }}>
+                      {swingEntry.margin >= 0 ? `D+${swingEntry.margin.toFixed(1)}%` : `R+${Math.abs(swingEntry.margin).toFixed(1)}%`}
+                    </span>
+                  </div>
+                  <div className="pt-1.5" style={{ borderTop: "1px solid var(--app-border)" }}>
+                    <span className="text-[10px] mr-1" style={{ color: t.textMuted }}>Swing</span>
+                    <span className="text-[14px] font-bold" style={{ color: activeRaceMarginColor }}>{activeRaceMargin}</span>
+                  </div>
+                </>
+              )}
+            </>
           )}
         </div>
       )}
@@ -221,26 +268,42 @@ export default function OH31MapSimple({ activeRace, darkMode, townshipFilter, ra
             {displayPrecinct.precinct}
           </div>
           {activeRaceResult && (
-            <div className="flex items-center gap-x-1 text-[10px] leading-none">
-              <span className="whitespace-nowrap" style={{ color: t.textMuted }}>
-                {displayPrecinct.ballotsCast.toLocaleString()} bal
-              </span>
-              <span className="whitespace-nowrap font-semibold tracking-tight" style={{ color: t.demText }}>
-                D {activeRaceResult.dVotes.toLocaleString()}
-              </span>
-              <span className="whitespace-nowrap font-semibold tracking-tight" style={{ color: t.repText }}>
-                R {activeRaceResult.rVotes.toLocaleString()}
-              </span>
-              <span className="whitespace-nowrap tracking-tight" style={{ color: t.demText }}>
-                {activeRaceResult.dPct.toFixed(1)}%
-              </span>
-              <span className="whitespace-nowrap tracking-tight" style={{ color: t.repText }}>
-                {activeRaceResult.rPct.toFixed(1)}%
-              </span>
-              <span className="ml-auto whitespace-nowrap text-[20px] leading-none font-semibold tracking-tight" style={{ color: activeRaceMarginColor }}>
-                {activeRaceMargin}
-              </span>
-            </div>
+            <>
+              <div className="flex items-center gap-x-1 text-[10px] leading-none">
+                <span className="whitespace-nowrap" style={{ color: t.textMuted }}>
+                  {displayPrecinct.ballotsCast.toLocaleString()} bal
+                </span>
+                <span className="whitespace-nowrap font-semibold tracking-tight" style={{ color: t.demText }}>
+                  D {activeRaceResult.dVotes.toLocaleString()}
+                </span>
+                <span className="whitespace-nowrap font-semibold tracking-tight" style={{ color: t.repText }}>
+                  R {activeRaceResult.rVotes.toLocaleString()}
+                </span>
+                <span className="whitespace-nowrap tracking-tight" style={{ color: t.demText }}>
+                  {activeRaceResult.dPct.toFixed(1)}%
+                </span>
+                <span className="whitespace-nowrap tracking-tight" style={{ color: t.repText }}>
+                  {activeRaceResult.rPct.toFixed(1)}%
+                </span>
+                <span className="ml-auto whitespace-nowrap text-[18px] leading-none font-semibold tracking-tight" style={{ color: absMarginColor }}>
+                  {absMarginLabel}
+                </span>
+              </div>
+              {swingEntry && (
+                <>
+                  <div className="flex items-center gap-x-1 text-[9px] mt-1 leading-none" style={{ color: t.textMuted }}>
+                    <span>vs {swingLabel}:</span>
+                    <span style={{ color: t.demText }}>D {swingEntry.dPct.toFixed(1)}%</span>
+                    <span style={{ color: t.repText }}>R {swingEntry.rPct.toFixed(1)}%</span>
+                    <span style={{ color: swingEntry.margin >= 0 ? t.demText : t.repText }}>
+                      {swingEntry.margin >= 0 ? `D+${swingEntry.margin.toFixed(1)}%` : `R+${Math.abs(swingEntry.margin).toFixed(1)}%`}
+                    </span>
+                    <span className="ml-auto font-semibold" style={{ color: t.textMuted }}>Swing</span>
+                    <span className="font-bold text-[13px]" style={{ color: activeRaceMarginColor }}>{activeRaceMargin}</span>
+                  </div>
+                </>
+              )}
+            </>
           )}
         </div>
       )}

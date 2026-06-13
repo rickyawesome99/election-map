@@ -16,6 +16,14 @@ type TabKey = "house" | "senate" | "governor" | "president" | "state_house" | "s
 
 const TAB_ORDER: TabKey[] = ["house", "senate", "governor", "president", "state_house", "state_senate"];
 const TAB_LABELS: Record<TabKey, string> = { house: "H", senate: "S", governor: "G", president: "P", state_house: "StH", state_senate: "StS" };
+const TAB_NAMES: Record<TabKey, string> = {
+  house: "House",
+  senate: "Senate",
+  governor: "Governor",
+  president: "President",
+  state_house: "State House",
+  state_senate: "State Senate",
+};
 
 type VoteResultInput = {
   year: number;
@@ -67,10 +75,10 @@ function niceAxisConfig(vals: number[]): { domain: [number, number]; ticks: numb
   return { domain: [domainMin, domainMax], ticks };
 }
 
-function MarginTooltip({ active, payload, label }: {
+function MarginTooltip({ active, payload, activeTab }: {
   active?: boolean;
   payload?: { payload: ChartPoint }[];
-  label?: string;
+  activeTab: TabKey;
 }) {
   if (!active || !payload?.length) return null;
   const d = payload[0].payload;
@@ -80,12 +88,15 @@ function MarginTooltip({ active, payload, label }: {
       className="rounded-lg px-3 py-2 text-xs shadow-lg"
       style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", minWidth: 150 }}
     >
-      <div className="font-bold mb-1" style={{ color: "var(--app-text-muted)" }}>{label}</div>
+      <div className="font-bold mb-1" style={{ color: "var(--app-text-muted)" }}>
+        {d.year} {TAB_NAMES[activeTab]}
+      </div>
       <div className="font-bold font-mono text-sm" style={{ color: isRep ? "var(--party-rep)" : "var(--party-dem)" }}>
         {marginLabel(d.repMargin)}
       </div>
-      <div className="mt-0.5" style={{ color: "var(--app-text-muted)" }}>
-        {d.race} · D {d.demPct.toFixed(1)}% R {d.repPct.toFixed(1)}%
+      <div className="mt-0.5 flex gap-2">
+        <span style={{ color: "var(--party-dem)" }}>D {d.demPct.toFixed(1)}%</span>
+        <span style={{ color: "var(--party-rep)" }}>R {d.repPct.toFixed(1)}%</span>
       </div>
     </div>
   );
@@ -190,7 +201,7 @@ export default function StateVoteHistoryChart({ results }: { results: VoteResult
             />
             <ReferenceLine y={0} stroke="var(--app-border)" strokeDasharray="4 3" strokeWidth={1} />
             <Tooltip
-              content={<MarginTooltip />}
+              content={<MarginTooltip activeTab={activeTab} />}
               cursor={{ stroke: "var(--app-border)", strokeWidth: 1 }}
             />
             {segments.map(({ key }) => (

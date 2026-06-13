@@ -4,6 +4,7 @@ import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
+import StateLandClipPath from "./StateLandClipPath";
 import type { RaceForecast, PastResult } from "@/data/forecastData";
 
 const ELECTION_YEARS = [2024, 2022, 2020, 2018, 2016];
@@ -143,6 +144,7 @@ export default function HousePastMap({
   }, [measure]);
 
   const geoUrl = getGeoUrl(selectedYear);
+  const clipPathId = `state-land-clip-${stateFips}-house-past`;
   const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
@@ -284,6 +286,8 @@ export default function HousePastMap({
           style={{ width: "100%", height: "100%" }}
         >
           <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
+            <StateLandClipPath clipPathId={clipPathId} stateFips={stateFips} />
+            <g clipPath={`url(#${clipPathId})`}>
             <Geographies
               key={geoUrl}
               geography={geoUrl}
@@ -328,6 +332,7 @@ export default function HousePastMap({
                 })
               }
             </Geographies>
+            </g>
           </ZoomableGroup>
         </ComposableMap>
 

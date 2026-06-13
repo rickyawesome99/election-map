@@ -127,7 +127,7 @@ function NoElectionPage({
             </div>
             {pastResults && pastResults.length > 0 && (
               <div className="order-4">
-                <SeatVoteHistoryChart results={pastResults} />
+                <SeatVoteHistoryChart results={pastResults} electionType="Senate" />
               </div>
             )}
           </div>
@@ -260,7 +260,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
             </div>
             {race.pastResults && race.pastResults.length > 0 && (
               <div className="order-5">
-                <SeatVoteHistoryChart results={enrichSenateResults(race.pastResults)} />
+                <SeatVoteHistoryChart results={enrichSenateResults(race.pastResults)} electionType="Senate" />
               </div>
             )}
           </div>

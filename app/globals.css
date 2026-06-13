@@ -19,10 +19,13 @@
   /* Party colors — text (change in dark mode) */
   --party-dem: #1b408c;
   --party-rep: #be1c29;
+  --party-ind: #5a6472;
   --party-dem-muted: #1b408c99;
   --party-rep-muted: #be1c2999;
+  --party-ind-muted: #5a647299;
   --party-dem-subtle: #1b408c33;
   --party-rep-subtle: #be1c2933;
+  --party-ind-subtle: #5a647233;
 }
 
 html.dark {
@@ -41,10 +44,13 @@ html.dark {
   /* Party colors — lighter for dark mode readability */
   --party-dem: #8bafff;
   --party-rep: #ff8b98;
+  --party-ind: #a8b3bf;
   --party-dem-muted: #8bafff99;
   --party-rep-muted: #ff8b9899;
+  --party-ind-muted: #a8b3bf99;
   --party-dem-subtle: #8bafff33;
   --party-rep-subtle: #ff8b9833;
+  --party-ind-subtle: #a8b3bf33;
 }
 
 @theme inline {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback, useEffect } from "react";
+import { useState, useRef, useCallback, useEffect, useMemo } from "react";
 import dynamic from "next/dynamic";
 import OH31MapSimple from "@/components/OH31MapSimple";
 import OH31MapSimple2022 from "@/components/OH31MapSimple2022";
@@ -161,8 +161,21 @@ export default function OH31Map({
   const [simpleMobilePopupVisible, setSimpleMobilePopupVisible] = useState(false);
   const [activeRace, setActiveRace] = useState<RaceKey>("stRep");
   const [mapStyle, setMapStyle] = useState<MapStyle>("simple");
+  const [swingYear, setSwingYear] = useState<MapYear | null>(null);
+  const [swingRace, setSwingRace] = useState<RaceKey>("stRep");
   const resetFnRef = useRef<(() => void) | null>(null);
   const handleReady = useCallback((fn: () => void) => { resetFnRef.current = fn; }, []);
+
+  const swingLookup = useMemo<Record<string, { dPct: number; rPct: number; margin: number }> | null>(() => {
+    if (!swingYear) return null;
+    const data = getDataForYear(swingYear);
+    const result: Record<string, { dPct: number; rPct: number; margin: number }> = {};
+    for (const precinct of data) {
+      const race = precinct[swingRace];
+      if (race.total > 0) result[precinct.precinct] = { dPct: race.dPct, rPct: race.rPct, margin: race.dPct - race.rPct };
+    }
+    return result;
+  }, [swingYear, swingRace]);
 
   useEffect(() => {
     const syncDarkMode = () => {
@@ -209,6 +222,19 @@ export default function OH31Map({
   const marginLabel = !isTbdYear
     ? (margin >= 0 ? `D+${margin.toFixed(1)}%` : `R+${Math.abs(margin).toFixed(1)}%`)
     : "TBD";
+
+  const baselineTotals = swingYear ? sumRace(swingRace, swingYear) : null;
+  const baselineMarginPct = baselineTotals && (baselineTotals.d + baselineTotals.r) > 0
+    ? ((baselineTotals.d - baselineTotals.r) / (baselineTotals.d + baselineTotals.r)) * 100
+    : 0;
+  const swingPct = swingYear ? margin - baselineMarginPct : 0;
+  const swingMarginLabel = !isTbdYear
+    ? (swingPct >= 0 ? `D+${swingPct.toFixed(1)}%` : `R+${Math.abs(swingPct).toFixed(1)}%`)
+    : "TBD";
+  const swingBaselineLabel = swingYear
+    ? `${swingYear} ${YEAR_RACES[swingYear].find(r => r.key === swingRace)?.label ?? swingRace}`
+    : "";
+
   const legendHidden = mapStyle === "simple" && isTouchMobile && simpleMobilePopupVisible;
   const legendContainerClass =
     mapStyle === "simple"
@@ -281,6 +307,73 @@ export default function OH31Map({
         </div>
       </div>
 
+      {/* Swing selector */}
+      <div className="flex items-center gap-3 mb-2 flex-wrap">
+        <div className="text-xs md:text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>Swing</div>
+        <div
+          className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
+          style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+        >
+          <button
+            onClick={() => setSwingYear(null)}
+            aria-pressed={swingYear === null}
+            className="px-2 md:px-3 py-1 rounded-md text-xs md:text-sm font-medium transition-colors"
+            style={
+              swingYear === null
+                ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
+                : { color: "var(--app-text-muted)", border: "1px solid transparent" }
+            }
+          >
+            Off
+          </button>
+          {(["2024", "2022", "2020", "2018", "2016"] as MapYear[]).map((yr) => (
+            <button
+              key={yr}
+              onClick={() => {
+                setSwingYear(yr);
+                if (!YEAR_RACES[yr].some(r => r.key === swingRace)) setSwingRace("stRep");
+              }}
+              aria-pressed={swingYear === yr}
+              className="px-2 md:px-3 py-1 rounded-md text-xs md:text-sm font-medium transition-colors"
+              style={
+                swingYear === yr
+                  ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
+                  : { color: "var(--app-text-muted)", border: "1px solid transparent" }
+              }
+            >
+              {yr}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Swing race selector */}
+      {swingYear !== null && (
+        <div className="flex items-center gap-3 mb-3 flex-wrap">
+          <div className="text-xs md:text-sm font-semibold" style={{ color: "transparent" }}>Swing</div>
+          <div
+            className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
+            style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+          >
+            {YEAR_RACES[swingYear].map(({ key, label }) => (
+              <button
+                key={key}
+                onClick={() => setSwingRace(key)}
+                aria-pressed={swingRace === key}
+                className="px-2 md:px-3 py-1 rounded-md text-xs md:text-sm font-medium transition-colors"
+                style={
+                  swingRace === key
+                    ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
+                    : { color: "var(--app-text-muted)", border: "1px solid transparent" }
+                }
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Map style toggle — shown only for 2024/2022 */}
       {!isTbdYear && (
         <div className="flex items-center gap-3 mb-3 flex-wrap">
@@ -338,22 +431,22 @@ export default function OH31Map({
             {activeYear === "2022"
               ? mapStyle === "satellite"
                 ? <LeafletMap2022 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
-                : <OH31MapSimple2022 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} />
+                : <OH31MapSimple2022 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
               : activeYear === "2020"
                 ? mapStyle === "satellite"
                   ? <LeafletMap2020 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
-                  : <OH31MapSimple2020 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} />
+                  : <OH31MapSimple2020 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
                 : activeYear === "2018"
                   ? mapStyle === "satellite"
                     ? <LeafletMap2018 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
-                    : <OH31MapSimple2018 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} />
+                    : <OH31MapSimple2018 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
                   : activeYear === "2016"
                     ? mapStyle === "satellite"
                       ? <LeafletMap2016 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
-                      : <OH31MapSimple2016 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} />
+                      : <OH31MapSimple2016 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
                     : mapStyle === "satellite"
                   ? <LeafletMap activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
-                  : <OH31MapSimple activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} />
+                  : <OH31MapSimple activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
             }
 
             {/* Legend */}
@@ -388,14 +481,28 @@ export default function OH31Map({
         </div>
         <div className="ml-auto text-right">
           <div className="text-xs font-medium mb-1" style={{ color: "var(--app-text-muted)" }}>
-            District Margin
+            {swingYear ? "Swing" : "District Margin"}
           </div>
-          <div
-            className="text-sm font-semibold tabular-nums"
-            style={{ color: isTbdYear ? "var(--app-text-muted)" : (margin >= 0 ? t.demText : t.repText) }}
-          >
-            {marginLabel}
-          </div>
+          {swingYear ? (
+            <>
+              <div
+                className="text-sm font-semibold tabular-nums"
+                style={{ color: isTbdYear ? "var(--app-text-muted)" : (swingPct >= 0 ? t.demText : t.repText) }}
+              >
+                {swingMarginLabel}
+              </div>
+              <div className="text-[10px] mt-0.5" style={{ color: "var(--app-text-muted)" }}>
+                vs {swingBaselineLabel}
+              </div>
+            </>
+          ) : (
+            <div
+              className="text-sm font-semibold tabular-nums"
+              style={{ color: isTbdYear ? "var(--app-text-muted)" : (margin >= 0 ? t.demText : t.repText) }}
+            >
+              {marginLabel}
+            </div>
+          )}
         </div>
         {!isTbdYear && mapStyle === "satellite" && (
           <button

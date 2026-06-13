@@ -72,6 +72,17 @@ function splitCSVLine(line) {
 
 // ── Value helpers ─────────────────────────────────────────────────────────────
 
+// Parses a candidate name that may contain a party override like "(D)", "(R)", or "(I)".
+// Examples: "Katie Porter (D)" → { name: "Katie Porter", party: "D" }
+//           "Dan Osborn (I)"   → { name: "Dan Osborn",   party: "I" }
+//           "Barry Moore"      → { name: "Barry Moore",  party: defaultParty }
+function parseCandidateName(raw, defaultParty) {
+  if (!raw) return { name: raw, party: defaultParty };
+  const m = raw.match(/\(([DRI])\)/i);
+  if (!m) return { name: raw.trim(), party: defaultParty };
+  return { name: raw.replace(m[0], "").trim(), party: m[1].toUpperCase() };
+}
+
 const num  = (v, def = 0) => { const n = parseFloat(v); return isNaN(n) ? def : n; };
 const int2 = (v, def = 0) => { const n = parseInt(v);   return isNaN(n) ? def : n; };
 // Handles TRUE/FALSE and Y/N
@@ -183,17 +194,11 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
 
   // Candidates (optional — only include if dem_name or rep_name is filled)
   if (has(row.dem_name) || has(row.rep_name)) {
+    const demParsed = parseCandidateName(has(row.dem_name) ? row.dem_name : "Democratic Candidate", "D");
+    const repParsed = parseCandidateName(has(row.rep_name) ? row.rep_name : "Republican Candidate", "R");
     forecast.candidates = {
-      dem: {
-        name:      has(row.dem_name) ? row.dem_name : "Democratic Candidate",
-        party:     has(row.dem_party) ? row.dem_party.trim() : "D",
-        incumbent: demInc,
-      },
-      rep: {
-        name:      has(row.rep_name) ? row.rep_name : "Republican Candidate",
-        party:     "R",
-        incumbent: repInc,
-      },
+      dem: { name: demParsed.name, party: demParsed.party, incumbent: demInc },
+      rep: { name: repParsed.name, party: repParsed.party, incumbent: repInc },
     };
   }
 
@@ -212,8 +217,16 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
     forecast.pastResults = pastRows
       .map((r) => {
         const pr = { year: int2(r.year, 0), demPct: num(r.dem_pct), repPct: num(r.rep_pct) };
-        if (has(r.dem_candidate)) pr.demCandidate = r.dem_candidate;
-        if (has(r.rep_candidate)) pr.repCandidate = r.rep_candidate;
+        if (has(r.dem_candidate)) {
+          const p = parseCandidateName(r.dem_candidate, "D");
+          pr.demCandidate = p.name;
+          if (p.party !== "D") pr.demParty = p.party;
+        }
+        if (has(r.rep_candidate)) {
+          const p = parseCandidateName(r.rep_candidate, "R");
+          pr.repCandidate = p.name;
+          if (p.party !== "R") pr.repParty = p.party;
+        }
         // Vote counts — strip commas in case of formatted numbers like "412,961"
         const dv = parseInt((r.dem_votes || "").replace(/,/g, ""));
         const rv = parseInt((r.rep_votes || "").replace(/,/g, ""));
@@ -259,8 +272,16 @@ function buildNoElection(row, state, abbr, pastRows) {
     entry.pastResults = pastRows
       .map((r) => {
         const pr = { year: int2(r.year, 0), demPct: num(r.dem_pct), repPct: num(r.rep_pct) };
-        if (has(r.dem_candidate)) pr.demCandidate = r.dem_candidate;
-        if (has(r.rep_candidate)) pr.repCandidate = r.rep_candidate;
+        if (has(r.dem_candidate)) {
+          const p = parseCandidateName(r.dem_candidate, "D");
+          pr.demCandidate = p.name;
+          if (p.party !== "D") pr.demParty = p.party;
+        }
+        if (has(r.rep_candidate)) {
+          const p = parseCandidateName(r.rep_candidate, "R");
+          pr.repCandidate = p.name;
+          if (p.party !== "R") pr.repParty = p.party;
+        }
         const dv = parseInt((r.dem_votes || "").replace(/,/g, ""));
         const rv = parseInt((r.rep_votes || "").replace(/,/g, ""));
         const tv = parseInt((r.total_votes || "").replace(/,/g, ""));
@@ -769,6 +790,8 @@ export type PastResult = {
   repPct: number;
   demCandidate?: string;
   repCandidate?: string;
+  demParty?: "D" | "R" | "I";
+  repParty?: "D" | "R" | "I";
   demVotes?: number;
   repVotes?: number;
   totalVotes?: number;

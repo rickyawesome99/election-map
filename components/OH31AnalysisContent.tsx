@@ -5,6 +5,8 @@ import OH31Map from "@/components/OH31Map";
 import OH31PrecinctTable from "@/components/OH31PrecinctTable";
 import OH31TownshipTable from "@/components/OH31TownshipTable";
 import OH31SwingTable from "@/components/OH31SwingTable";
+import OH31DemographicsMap from "@/components/OH31DemographicsMap";
+import OH31DemographicsTable from "@/components/OH31DemographicsTable";
 import { oh31PrecinctData } from "@/data/oh31PrecinctData";
 import { oh31PrecinctData2022 } from "@/data/oh31PrecinctData2022";
 import { oh31PrecinctData2020 } from "@/data/oh31PrecinctData2020";
@@ -211,6 +213,23 @@ export default function OH31AnalysisContent() {
           setTownshipFilter={setTownshipFilter}
           totalPrecinctCount={activeDataset.length}
         />
+      </section>
+
+      <section id="oh31-demographics" className="mt-10 scroll-mt-24">
+        <h2 className="text-xl font-semibold mb-4" style={{ color: "var(--app-text-primary)" }}>
+          Demographics
+        </h2>
+        <p className="text-sm mb-4" style={{ color: "var(--app-text-muted)" }}>
+          2020 Census & 2020–2024 ACS · precinct-level estimates
+        </p>
+        <OH31DemographicsMap />
+      </section>
+
+      <section className="mt-8">
+        <h2 className="text-xl font-semibold mb-4" style={{ color: "var(--app-text-primary)" }}>
+          Demographics by Precinct
+        </h2>
+        <OH31DemographicsTable />
       </section>
     </>
   );
