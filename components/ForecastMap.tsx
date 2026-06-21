@@ -474,14 +474,14 @@ export default function ForecastMap() {
                         if (match) { setSelected(match); setSelectedNoElection(null); }
                         else if (noElMatch) { setSelectedNoElection(noElMatch); setSelected(null); }
                       }}
-                      onPointerDown={(e) => {
+                      onPointerDown={(e: React.PointerEvent) => {
                         if (e.pointerType !== "touch") {
                           touchStartRef.current = null;
                           return;
                         }
                         touchStartRef.current = { x: e.clientX, y: e.clientY };
                       }}
-                      onPointerUp={(e) => {
+                      onPointerUp={(e: React.PointerEvent) => {
                         if (e.pointerType !== "touch") return;
                         const start = touchStartRef.current;
                         touchStartRef.current = null;

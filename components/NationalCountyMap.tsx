@@ -159,14 +159,14 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                       if (Date.now() < ignoreClickUntilRef.current) return;
                       setSelected(isSelected ? null : county);
                     }}
-                    onPointerDown={(e) => {
+                    onPointerDown={(e: React.PointerEvent) => {
                       if (e.pointerType !== "touch") {
                         touchStartRef.current = null;
                         return;
                       }
                       touchStartRef.current = { x: e.clientX, y: e.clientY };
                     }}
-                    onPointerUp={(e) => {
+                    onPointerUp={(e: React.PointerEvent) => {
                       if (e.pointerType !== "touch") return;
                       const start = touchStartRef.current;
                       touchStartRef.current = null;

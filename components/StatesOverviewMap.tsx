@@ -187,14 +187,14 @@ export default function StatesOverviewMap({
                       if (Date.now() < ignoreClickUntilRef.current) return;
                       if (row) updateSelected(isSelected ? null : row);
                     }}
-                    onPointerDown={(e) => {
+                    onPointerDown={(e: React.PointerEvent) => {
                       if (e.pointerType !== "touch") {
                         touchStartRef.current = null;
                         return;
                       }
                       touchStartRef.current = { x: e.clientX, y: e.clientY };
                     }}
-                    onPointerUp={(e) => {
+                    onPointerUp={(e: React.PointerEvent) => {
                       if (e.pointerType !== "touch") return;
                       const start = touchStartRef.current;
                       touchStartRef.current = null;
