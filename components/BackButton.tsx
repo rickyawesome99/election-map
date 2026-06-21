@@ -23,7 +23,7 @@ function resolveFrom(from: string | null, pathname: string): string {
   if (pathname.startsWith("/governor/")) return "/?tab=governor";
   if (pathname.startsWith("/states/")) return "/?tab=states";
   if (pathname.startsWith("/analysis/")) return "/analysis";
-  return from;
+  return "/";
 }
 
 function BackButtonInner() {
