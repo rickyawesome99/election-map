@@ -16,7 +16,7 @@ function resolveFrom(from: string | null, pathname: string): string {
   if (from === "/senate") return "/?tab=senate";
   if (from === "/governor") return "/?tab=governor";
   if (from === "/states") return "/?tab=states";
-  if (from) return from;
+  if (from?.startsWith("/") && !from.startsWith("//")) return from;
 
   if (pathname.startsWith("/house/")) return "/?tab=house";
   if (pathname.startsWith("/senate/")) return "/?tab=senate";

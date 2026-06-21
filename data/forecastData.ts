@@ -1051,8 +1051,8 @@ export const senateData: RaceForecast[] = [
     "kalshiDem": 0.43,
     "kalshiRep": 0.57,
     "candidates": {
-      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
-      "rep": { "name": "James Talarico", "party": "R", "incumbent": false }
+      "dem": { "name": "James Talarico", "party": "D", "incumbent": false },
+      "rep": { "name": "Ken Paxton", "party": "R", "incumbent": false }
     },
     "seatHolder": "John Cornyn",
     "seatParty": "R",
@@ -3438,8 +3438,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
-    "kalshiRep": 0.921,
+    "kalshiDem": 0,
+    "kalshiRep": 0.92,
     "candidates": {
       "dem": { "name": "Clyde Jones", "party": "D", "incumbent": false },
       "rep": { "name": "Rhett Marques", "party": "R", "incumbent": false }
@@ -3504,10 +3504,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.76,
     "candidates": {
-      "dem": { "name": "Victor Mcinnis", "party": "D", "incumbent": false },
+      "dem": { "name": "Victor McInnis", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Rogers", "party": "R", "incumbent": true }
     },
     "seatHolder": "Mike Rogers",
@@ -3537,7 +3537,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.77,
     "candidates": {
       "dem": { "name": "Amanda Pusczek", "party": "D", "incumbent": false },
@@ -3570,13 +3570,13 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 10 },
       { "date": "Mar", "value": 10 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.76,
     "candidates": {
       "dem": { "name": "Andrew Sneed", "party": "D", "incumbent": false },
       "rep": { "name": "Dale Strong", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Dale W. Strong",
+    "seatHolder": "Dale Strong",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 0, "repPct": 95.4, "repCandidate": "Dale Strong", "repVotes": 250322, "totalVotes": 262410, "margin": 95.4, "repIncumbent": true },
@@ -3603,7 +3603,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.75,
     "candidates": {
       "dem": { "name": "Elizabeth Anderson", "party": "D", "incumbent": false },
@@ -3642,7 +3642,7 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Terri Sewell", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Terri A. Sewell",
+    "seatHolder": "Terri Sewell",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 63.7, "repPct": 36.3, "demCandidate": "Terri Sewell", "repCandidate": "Robin Litaker", "demVotes": 186723, "repVotes": 106312, "totalVotes": 293220, "margin": -27.4, "demIncumbent": true },
@@ -3671,9 +3671,9 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": { "name": "Matthew Schultz", "party": "D", "incumbent": false },
-      "rep": { "name": "Nicholas Begich", "party": "R", "incumbent": true }
+      "rep": { "name": "Nicholas Begich III", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Nicholas J. Begich III",
+    "seatHolder": "Nicholas Begich III",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 48.78, "repPct": 51.22, "demCandidate": "Mary Peltola", "repCandidate": "Nick Begich III", "demVotes": 164861, "repVotes": 156985, "totalVotes": 321846, "margin": 2.44, "demIncumbent": true },
@@ -3763,7 +3763,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Yassamin Ansari", "party": "D", "incumbent": true },
       "rep": { "name": "Kirt Burgess", "party": "R", "incumbent": false }
@@ -3796,7 +3796,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 89 }
     ],
     "kalshiDem": 0.88,
-    "kalshiRep": 0.081,
+    "kalshiRep": 0.08,
     "candidates": {
       "dem": { "name": "Greg Stanton", "party": "D", "incumbent": true },
       "rep": { "name": "Zuhdi Jasser", "party": "R", "incumbent": false }
@@ -3893,12 +3893,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.76,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Adelita Grijalva", "party": "D", "incumbent": true },
       "rep": { "name": "Daniel Butierez", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Adelita S. Grijalva",
+    "seatHolder": "Adelita Grijalva",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 63.4, "repPct": 36.6, "demCandidate": "Raul Grijalva", "repCandidate": "Daniel Butierez", "demVotes": 171954, "repVotes": 99057, "totalVotes": 271011, "margin": -26.8, "demIncumbent": true },
@@ -3925,7 +3925,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 12 },
       { "date": "Mar", "value": 12 }
     ],
-    "kalshiDem": 0.082,
+    "kalshiDem": 0.08,
     "kalshiRep": 0.69,
     "candidates": {
       "dem": { "name": "Bernadette Placentia", "party": "D", "incumbent": false },
@@ -3958,13 +3958,13 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 60 },
       { "date": "Mar", "value": 60 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.74,
     "candidates": {
       "dem": { "name": "Danielle Sterbinsky", "party": "D", "incumbent": false },
       "rep": { "name": "Paul Gosar", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Paul A. Gosar",
+    "seatHolder": "Paul Gosar",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 34.7, "repPct": 65.3, "demCandidate": "Quacy Smith", "repCandidate": "Paul Gosar", "demVotes": 132640, "repVotes": 249583, "totalVotes": 382223, "margin": 30.6, "repIncumbent": true },
@@ -3991,8 +3991,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.026,
-    "kalshiRep": 0.972,
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.97,
     "candidates": {
       "dem": { "name": "Terri Green", "party": "D", "incumbent": false },
       "rep": { "name": "Rick Crawford", "party": "R", "incumbent": true }
@@ -4057,7 +4057,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 50 },
       { "date": "Mar", "value": 50 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.76,
     "candidates": {
       "dem": { "name": "Robb Ryerse", "party": "D", "incumbent": false },
@@ -4090,7 +4090,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.84,
     "candidates": {
       "dem": { "name": "James Russell", "party": "D", "incumbent": false },
@@ -4124,12 +4124,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 97 }
     ],
     "kalshiDem": 0.92,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Mike McGuire", "party": "D", "incumbent": false },
-      "rep": { "name": "James Gallagher", "party": "R", "incumbent": false }
+      "rep": { "name": "James Gallagher", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Vacancy",
+    "seatHolder": "James Gallagher",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 34.7, "repPct": 65.3, "demCandidate": "Rese Penelope Yee", "repCandidate": "Doug LaMalfa", "demVotes": 110636, "repVotes": 208592, "totalVotes": 319228, "margin": 30.6, "repIncumbent": true },
@@ -4157,10 +4157,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.76,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Jared Huffman", "party": "D", "incumbent": true },
-      "rep": { "name": "Paul Saulsbury", "party": "R", "incumbent": false }
+      "rep": { "name": "Robin Littau", "party": "R", "incumbent": false }
     },
     "seatHolder": "Jared Huffman",
     "seatParty": "D",
@@ -4190,11 +4190,11 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 92 }
     ],
     "candidates": {
-      "dem": { "name": "Amerish Bera", "party": "D", "incumbent": false },
-      "rep": { "name": "Christine Bish", "party": "R", "incumbent": false }
+      "dem": { "name": "Ami Bera", "party": "D", "incumbent": true },
+      "rep": { "name": "Robb Tucker", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Kevin Kiley",
-    "seatParty": "R",
+    "seatHolder": "Ami Bera",
+    "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 44.5, "repPct": 55.5, "demCandidate": "Jessica Morse", "repCandidate": "Kevin Kiley", "demVotes": 188067, "repVotes": 234246, "totalVotes": 422313, "margin": 11, "repIncumbent": true },
       { "year": 2022, "demPct": 46.35, "repPct": 53.65, "demCandidate": "Kermit Jones", "repCandidate": "Kevin Kiley", "demVotes": 156761, "repVotes": 181438, "totalVotes": 338199, "margin": 7.3 },
@@ -4221,10 +4221,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.76,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Mike Thompson", "party": "D", "incumbent": true },
-      "rep": { "name": "Laurie MacKenzie", "party": "R", "incumbent": false }
+      "rep": { "name": "Eric Jones", "party": "D", "incumbent": false }
     },
     "seatHolder": "Mike Thompson",
     "seatParty": "D",
@@ -4253,7 +4253,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 4 },
       { "date": "Mar", "value": 4 }
     ],
-    "kalshiDem": 0.077,
+    "kalshiDem": 0.08,
     "kalshiRep": 0.68,
     "candidates": {
       "dem": { "name": "Michael Masuda", "party": "D", "incumbent": false },
@@ -4287,13 +4287,13 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 89 }
     ],
     "kalshiDem": 0.76,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
-      "dem": { "name": "Thien Ho", "party": "D", "incumbent": false },
-      "rep": { "name": "Kevin Kiley", "party": "R", "incumbent": false }
+      "dem": { "name": "Richard Pan", "party": "D", "incumbent": false },
+      "rep": { "name": "Kevin Kiley", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Ami Bera",
-    "seatParty": "D",
+    "seatHolder": "Kevin Kiley",
+    "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 57.6, "repPct": 42.4, "demCandidate": "Ami Bera", "repCandidate": "Christine Bish", "demVotes": 165408, "repVotes": 121664, "totalVotes": 287072, "margin": -15.2, "demIncumbent": true },
       { "year": 2022, "demPct": 55.95, "repPct": 44.05, "demCandidate": "Ami Bera", "repCandidate": "Tamika Hamilton", "demVotes": 121058, "repVotes": 95325, "totalVotes": 216383, "margin": -11.9 },
@@ -4320,12 +4320,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 98 }
     ],
     "kalshiDem": 0.76,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Doris Matsui", "party": "D", "incumbent": true },
-      "rep": { "name": "Kathryn Ming", "party": "R", "incumbent": false }
+      "rep": { "name": "Mai Vang", "party": "D", "incumbent": false }
     },
-    "seatHolder": "Doris O. Matsui",
+    "seatHolder": "Doris Matsui",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 66.8, "repPct": 33.2, "demCandidate": "Doris Matsui", "repCandidate": "Tom Silva", "demVotes": 197429, "repVotes": 98341, "totalVotes": 295770, "margin": -33.6, "demIncumbent": true },
@@ -4353,7 +4353,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "John Garamendi", "party": "D", "incumbent": true },
       "rep": { "name": "Rudy Recile", "party": "R", "incumbent": false }
@@ -4387,7 +4387,7 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": { "name": "Josh Harder", "party": "D", "incumbent": true },
-      "rep": { "name": "James Shoemaker", "party": "R", "incumbent": false }
+      "rep": { "name": "John McBride", "party": "R", "incumbent": false }
     },
     "seatHolder": "Josh Harder",
     "seatParty": "D",
@@ -4417,10 +4417,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Mark DeSaulnier", "party": "D", "incumbent": true },
-      "rep": { "name": "Katherine Piccinini", "party": "R", "incumbent": false }
+      "rep": { "name": "Jeff Frese", "party": "R", "incumbent": false }
     },
     "seatHolder": "Mark DeSaulnier",
     "seatParty": "D",
@@ -4450,10 +4450,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.79,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Scott Wiener", "party": "D", "incumbent": false },
-      "rep": { "name": "David Ganezer", "party": "R", "incumbent": false }
+      "rep": { "name": "Connie Chan", "party": "D", "incumbent": false }
     },
     "seatHolder": "Nancy Pelosi",
     "seatParty": "D",
@@ -4483,10 +4483,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.88,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Lateefah Simon", "party": "D", "incumbent": true },
-      "rep": { "name": "Heath Fulkerson", "party": "R", "incumbent": false }
+      "rep": { "name": "Jamie Joyce", "party": "D", "incumbent": false }
     },
     "seatHolder": "Lateefah Simon",
     "seatParty": "D",
@@ -4517,7 +4517,7 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": { "name": "Adam Gray", "party": "D", "incumbent": true },
-      "rep": { "name": "Vin Kruttiventi", "party": "R", "incumbent": false }
+      "rep": { "name": "Kevin Lincoln", "party": "R", "incumbent": false }
     },
     "seatHolder": "Adam Gray",
     "seatParty": "D",
@@ -4546,11 +4546,11 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
-    "kalshiDem": 0.923,
-    "kalshiRep": 0.047,
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.05,
     "candidates": {
-      "dem": { "name": "Abrar Qadir", "party": "D", "incumbent": false },
-      "rep": { "name": "Wendy Huang", "party": "R", "incumbent": false }
+      "dem": { "name": "Aisha Wahab", "party": "D", "incumbent": false },
+      "rep": { "name": "Melissa Hernandez", "party": "D", "incumbent": false }
     },
     "seatHolder": "Eric Swalwell",
     "seatParty": "D",
@@ -4583,7 +4583,7 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.01,
     "candidates": {
       "dem": { "name": "Kevin Mullin", "party": "D", "incumbent": true },
-      "rep": { "name": "Anna Kramer", "party": "R", "incumbent": false }
+      "rep": { "name": "Charles Hoelter", "party": "R", "incumbent": false }
     },
     "seatHolder": "Kevin Mullin",
     "seatParty": "D",
@@ -4613,12 +4613,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Sam Liccardo", "party": "D", "incumbent": true },
-      "rep": { "name": "Gavin Solomon", "party": "R", "incumbent": false }
+      "rep": { "name": "Peter Soule", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Sam T. Liccardo",
+    "seatHolder": "Sam Liccardo",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 58.2, "repPct": 41.8, "demCandidate": "Sam Liccardo", "repCandidate": "Evan Low", "demVotes": 179583, "repVotes": 128893, "totalVotes": 308476, "margin": -16.4 },
@@ -4646,9 +4646,9 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.82,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
-      "dem": { "name": "Rohit Khanna", "party": "D", "incumbent": true },
+      "dem": { "name": "Ro Khanna", "party": "D", "incumbent": true },
       "rep": { "name": "Ritesh Tandon", "party": "R", "incumbent": false }
     },
     "seatHolder": "Ro Khanna",
@@ -4679,7 +4679,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.75,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Zoe Lofgren", "party": "D", "incumbent": true },
       "rep": { "name": "Shane Lewis", "party": "R", "incumbent": false }
@@ -4712,7 +4712,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.84,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Jimmy Panetta", "party": "D", "incumbent": true },
       "rep": { "name": "Peter Verbica", "party": "R", "incumbent": false }
@@ -4744,10 +4744,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.92,
     "candidates": {
-      "dem": { "name": "Carol Roper", "party": "D", "incumbent": false },
+      "dem": { "name": "Sandra Van Scotter", "party": "D", "incumbent": false },
       "rep": { "name": "Vince Fong", "party": "R", "incumbent": true }
     },
     "seatHolder": "Vince Fong",
@@ -4779,7 +4779,7 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": { "name": "Jim Costa", "party": "D", "incumbent": true },
-      "rep": { "name": "Lorenzo Rios", "party": "R", "incumbent": false }
+      "rep": { "name": "Kyle Kirkland", "party": "R", "incumbent": false }
     },
     "seatHolder": "Jim Costa",
     "seatParty": "D",
@@ -4812,7 +4812,7 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Randy Villegas", "party": "D", "incumbent": false },
       "rep": { "name": "David Valadao", "party": "R", "incumbent": true }
     },
-    "seatHolder": "David G. Valadao",
+    "seatHolder": "David Valadao",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 46.58, "repPct": 53.42, "demCandidate": "Rudy Salas", "repCandidate": "David G. Valadao", "demVotes": 78023, "repVotes": 89484, "totalVotes": 167507, "margin": 6.84, "repIncumbent": true },
@@ -4839,10 +4839,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 6 },
       { "date": "Mar", "value": 6 }
     ],
-    "kalshiDem": 0.099,
+    "kalshiDem": 0.1,
     "kalshiRep": 0.9,
     "candidates": {
-      "dem": { "name": "Paul Chakalian", "party": "D", "incumbent": false },
+      "dem": { "name": "Tessa Lynn Hodge", "party": "D", "incumbent": false },
       "rep": { "name": "Jay Obernolte", "party": "R", "incumbent": true }
     },
     "seatHolder": "Jay Obernolte",
@@ -4873,12 +4873,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.78,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Salud Carbajal", "party": "D", "incumbent": true },
-      "rep": { "name": "Robert Smith", "party": "R", "incumbent": false }
+      "rep": { "name": "Bob Smith", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Salud O. Carbajal",
+    "seatHolder": "Salud Carbajal",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 62.7, "repPct": 37.3, "demCandidate": "Salud O. Carbajal", "repCandidate": "Thomas Cole", "demVotes": 214724, "repVotes": 127755, "totalVotes": 342479, "margin": -25.4, "demIncumbent": true },
@@ -4939,10 +4939,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 98 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
-      "dem": { "name": "Sonia Devgan-Kacker", "party": "D", "incumbent": false },
-      "rep": { "name": "Samuel Gallucci", "party": "R", "incumbent": false }
+      "dem": { "name": "Jacqui Irwin", "party": "D", "incumbent": false },
+      "rep": { "name": "Sam Gallucci", "party": "R", "incumbent": false }
     },
     "seatHolder": "Julia Brownley",
     "seatParty": "D",
@@ -5036,10 +5036,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Luz Rivas", "party": "D", "incumbent": true },
-      "rep": { "name": "Margarita Carranza", "party": "R", "incumbent": false }
+      "rep": { "name": "Angelica Duenas", "party": "D", "incumbent": false }
     },
     "seatHolder": "Luz Rivas",
     "seatParty": "D",
@@ -5069,10 +5069,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Laura Friedman", "party": "D", "incumbent": true },
-      "rep": { "name": "Dennis Feitosa", "party": "R", "incumbent": false }
+      "rep": { "name": "Scott Meyers", "party": "R", "incumbent": false }
     },
     "seatHolder": "Laura Friedman",
     "seatParty": "D",
@@ -5102,12 +5102,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 98 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
-      "dem": { "name": "Gilbert Cisneros", "party": "D", "incumbent": false },
+      "dem": { "name": "Gilbert Cisneros", "party": "D", "incumbent": true },
       "rep": { "name": "Eric Ching", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Gilbert Ray Cisneros, Jr.",
+    "seatHolder": "Gilbert Cisneros",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 59.73, "repPct": 40.27, "demCandidate": "Gil Cisneros", "repCandidate": "Daniel Jose Bocic Martinez", "demVotes": 148095, "repVotes": 99856, "totalVotes": 247951, "margin": -19.46 },
@@ -5135,7 +5135,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Brad Sherman", "party": "D", "incumbent": true },
       "rep": { "name": "Larry Thompson", "party": "R", "incumbent": false }
@@ -5168,10 +5168,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Pete Aguilar", "party": "D", "incumbent": true },
-      "rep": { "name": "Eugene Weems", "party": "R", "incumbent": false }
+      "rep": { "name": "Stephanie Vargas", "party": "R", "incumbent": false }
     },
     "seatHolder": "Pete Aguilar",
     "seatParty": "D",
@@ -5201,10 +5201,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.78,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Jimmy Gomez", "party": "D", "incumbent": true },
-      "rep": { "name": "Calvin Lee", "party": "R", "incumbent": false }
+      "rep": { "name": "Angela Gonzales-Torres", "party": "D", "incumbent": false }
     },
     "seatHolder": "Jimmy Gomez",
     "seatParty": "D",
@@ -5234,12 +5234,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 98 }
     ],
     "kalshiDem": 0.8,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Norma Torres", "party": "D", "incumbent": true },
       "rep": { "name": "Mike Cargile", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Norma J. Torres",
+    "seatHolder": "Norma Torres",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 58.41, "repPct": 41.59, "demCandidate": "Norma J. Torres", "repCandidate": "Mike Cargile", "demVotes": 136413, "repVotes": 97142, "totalVotes": 233555, "margin": -16.82, "demIncumbent": true },
@@ -5267,10 +5267,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Ted Lieu", "party": "D", "incumbent": true },
-      "rep": { "name": "Leah Toomim", "party": "R", "incumbent": false }
+      "rep": { "name": "Houston Brignano", "party": "R", "incumbent": false }
     },
     "seatHolder": "Ted Lieu",
     "seatParty": "D",
@@ -5300,10 +5300,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.78,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Sydney Kamlager-Dove", "party": "D", "incumbent": true },
-      "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
+      "rep": { "name": "Samantha Mota", "party": "D", "incumbent": false }
     },
     "seatHolder": "Sydney Kamlager-Dove",
     "seatParty": "D",
@@ -5333,10 +5333,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.76,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Hilda Solis", "party": "D", "incumbent": false },
-      "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
+      "rep": { "name": "Pedro Casas", "party": "R", "incumbent": false }
     },
     "seatHolder": "Linda Sánchez",
     "seatParty": "D",
@@ -5366,10 +5366,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 98 }
     ],
     "kalshiDem": 0.74,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Mark Takano", "party": "D", "incumbent": true },
-      "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
+      "rep": { "name": "Steve Manos", "party": "R", "incumbent": false }
     },
     "seatHolder": "Mark Takano",
     "seatParty": "D",
@@ -5399,7 +5399,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 15 }
     ],
     "candidates": {
-      "dem": { "name": "Esther Varet", "party": "D", "incumbent": false },
+      "dem": { "name": "Ken Calvert", "party": "R", "incumbent": false },
       "rep": { "name": "Young Kim", "party": "R", "incumbent": true }
     },
     "seatHolder": "Young Kim",
@@ -5430,11 +5430,11 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "candidates": {
-      "dem": { "name": "Linda Sanchez", "party": "D", "incumbent": false },
-      "rep": { "name": "Cody Wiebelhaus", "party": "R", "incumbent": false }
+      "dem": { "name": "Linda Sánchez", "party": "D", "incumbent": true },
+      "rep": { "name": "Mitch Clemmons", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Ken Calvert",
-    "seatParty": "R",
+    "seatHolder": "Linda Sánchez",
+    "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 48.31, "repPct": 51.69, "demCandidate": "Will Rollins", "repCandidate": "Ken Calvert", "demVotes": 171229, "repVotes": 183216, "totalVotes": 354445, "margin": 3.38, "repIncumbent": true },
       { "year": 2022, "demPct": 47.65, "repPct": 52.35, "demCandidate": "Will Rollins", "repCandidate": "Ken Calvert", "demVotes": 112769, "repVotes": 123869, "totalVotes": 236638, "margin": 4.7 },
@@ -5461,7 +5461,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.78,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Robert Garcia", "party": "D", "incumbent": true },
       "rep": { "name": "Brian Burley", "party": "R", "incumbent": false }
@@ -5494,10 +5494,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.79,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Maxine Waters", "party": "D", "incumbent": true },
-      "rep": { "name": "Craig Geiger", "party": "R", "incumbent": false }
+      "rep": { "name": "Cristian Morales", "party": "R", "incumbent": false }
     },
     "seatHolder": "Maxine Waters",
     "seatParty": "D",
@@ -5527,7 +5527,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.78,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Nanette Barragan", "party": "D", "incumbent": true },
       "rep": { "name": "Genevieve Angel", "party": "R", "incumbent": false }
@@ -5561,7 +5561,7 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": { "name": "Derek Tran", "party": "D", "incumbent": true },
-      "rep": { "name": "Tom Vo", "party": "R", "incumbent": false }
+      "rep": { "name": "Chuong Vo", "party": "R", "incumbent": false }
     },
     "seatHolder": "Derek Tran",
     "seatParty": "D",
@@ -5591,7 +5591,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Lou Correa", "party": "D", "incumbent": true },
       "rep": { "name": "David Pan", "party": "R", "incumbent": false }
@@ -5625,7 +5625,7 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": { "name": "Dave Min", "party": "D", "incumbent": true },
-      "rep": { "name": "Michael Maxsenti", "party": "R", "incumbent": false }
+      "rep": { "name": "Jenny Le Roux", "party": "R", "incumbent": false }
     },
     "seatHolder": "Dave Min",
     "seatParty": "D",
@@ -5655,10 +5655,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 81 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.053,
+    "kalshiRep": 0.05,
     "candidates": {
-      "dem": { "name": "Brandon Riker", "party": "D", "incumbent": false },
-      "rep": { "name": "Darrell Issa", "party": "R", "incumbent": true }
+      "dem": { "name": "Marni von Wilpert", "party": "D", "incumbent": false },
+      "rep": { "name": "Jim Desmond", "party": "R", "incumbent": false }
     },
     "seatHolder": "Darrell Issa",
     "seatParty": "R",
@@ -5689,7 +5689,7 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": { "name": "Mike Levin", "party": "D", "incumbent": true },
-      "rep": { "name": "Star Parker", "party": "R", "incumbent": false }
+      "rep": { "name": "Armen Kurdian", "party": "R", "incumbent": false }
     },
     "seatHolder": "Mike Levin",
     "seatParty": "D",
@@ -5719,12 +5719,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.78,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Scott Peters", "party": "D", "incumbent": true },
-      "rep": { "name": "Adam Huntington", "party": "R", "incumbent": false }
+      "rep": { "name": "Steve Cohen", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Scott H. Peters",
+    "seatHolder": "Scott Peters",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 64.27, "repPct": 35.73, "demCandidate": "Scott H. Peters", "repCandidate": "Peter J. Bono", "demVotes": 231836, "repVotes": 128859, "totalVotes": 360695, "margin": -28.54, "demIncumbent": true },
@@ -5752,10 +5752,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.78,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Sara Jacobs", "party": "D", "incumbent": true },
-      "rep": { "name": "John-Samuel Williams", "party": "R", "incumbent": false }
+      "rep": { "name": "Ricardo Cabrera", "party": "R", "incumbent": false }
     },
     "seatHolder": "Sara Jacobs",
     "seatParty": "D",
@@ -5785,10 +5785,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.73,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Juan Vargas", "party": "D", "incumbent": true },
-      "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
+      "rep": { "name": "Jeff Belle", "party": "R", "incumbent": false }
     },
     "seatHolder": "Juan Vargas",
     "seatParty": "D",
@@ -5818,7 +5818,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Diana DeGette", "party": "D", "incumbent": true },
       "rep": { "name": "Gregory Cutlip", "party": "R", "incumbent": false }
@@ -5851,7 +5851,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.91,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Joe Neguse", "party": "D", "incumbent": true },
       "rep": { "name": "Christina Blunt", "party": "R", "incumbent": false }
@@ -5981,7 +5981,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.79,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Jason Crow", "party": "D", "incumbent": true },
       "rep": { "name": "Khaleb Dammen", "party": "R", "incumbent": false }
@@ -6014,7 +6014,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.76,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Brittany Pettersen", "party": "D", "incumbent": true },
       "rep": { "name": "Amanda Capobianco", "party": "R", "incumbent": false }
@@ -6075,7 +6075,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.85,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "John Larson", "party": "D", "incumbent": true },
       "rep": { "name": "Amy Chai", "party": "R", "incumbent": false }
@@ -6108,7 +6108,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 94 }
     ],
     "kalshiDem": 0.76,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Joe Courtney", "party": "D", "incumbent": true },
       "rep": { "name": "Mike France", "party": "R", "incumbent": false }
@@ -6141,7 +6141,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.76,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Rosa Delauro", "party": "D", "incumbent": true },
       "rep": { "name": "Christopher Lancia", "party": "R", "incumbent": false }
@@ -6174,7 +6174,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.78,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Jim Himes", "party": "D", "incumbent": true },
       "rep": { "name": "Michael Goldstein", "party": "R", "incumbent": false }
@@ -6268,7 +6268,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 10 },
       { "date": "Mar", "value": 10 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.39,
     "candidates": {
       "dem": { "name": "Marcel Davis", "party": "D", "incumbent": false },
@@ -6466,7 +6466,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 35 },
       { "date": "Mar", "value": 35 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.62,
     "candidates": {
       "dem": { "name": "Bale Dalton", "party": "D", "incumbent": false },
@@ -6566,7 +6566,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.13,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Maxwell Frost", "party": "D", "incumbent": true },
       "rep": { "name": "Stuart Farber", "party": "R", "incumbent": false }
@@ -6893,10 +6893,10 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
-    "kalshiDem": 0.914,
-    "kalshiRep": 0.056,
+    "kalshiDem": 0.91,
+    "kalshiRep": 0.06,
     "candidates": {
-      "dem": { "name": "Sheila Cherfilus-Mccormick", "party": "D", "incumbent": true },
+      "dem": { "name": "Sheila Cherfilus-McCormick", "party": "D", "incumbent": true },
       "rep": { "name": "Rodenay Joseph", "party": "R", "incumbent": false }
     },
     "seatHolder": "Sheila Cherfilus-McCormick",
@@ -7024,7 +7024,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.86,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Frederica Wilson", "party": "D", "incumbent": true },
       "rep": { "name": "Patricia Gonzalez", "party": "R", "incumbent": false }
@@ -7161,7 +7161,7 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Phil Ehr", "party": "D", "incumbent": false },
       "rep": { "name": "Carlos Gimenez", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Carlos A. Gimenez",
+    "seatHolder": "Carlos Gimenez",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 35.43, "repPct": 64.57, "demCandidate": "Phil Ehr", "repCandidate": "Carlos A. Gimenez", "demVotes": 115280, "repVotes": 210057, "totalVotes": 325337, "margin": 29.14, "repIncumbent": true },
@@ -7188,10 +7188,10 @@ export const houseData: RaceForecast[] = [
     "kalshiDem": 0.14,
     "kalshiRep": 0.83,
     "candidates": {
-      "dem": { "name": "Michael Mccord", "party": "D", "incumbent": false },
+      "dem": { "name": "Michael McCord", "party": "D", "incumbent": false },
       "rep": { "name": "James Kingston", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Earl L. “Buddy” Carter",
+    "seatHolder": "Buddy Carter",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 38.02, "repPct": 61.98, "demCandidate": "Patti Hewitt", "repCandidate": "Earl L. “Buddy” Carter", "demVotes": 135281, "repVotes": 220576, "totalVotes": 355857, "margin": 23.96, "repIncumbent": true },
@@ -7251,7 +7251,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 50 },
       { "date": "Mar", "value": 50 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.76,
     "candidates": {
       "dem": { "name": "Maura Keller", "party": "D", "incumbent": false },
@@ -7285,7 +7285,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.81,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Henry Johnson", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Duffie", "party": "R", "incumbent": false }
@@ -7317,8 +7317,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
-    "kalshiDem": 0.947,
-    "kalshiRep": 0.001,
+    "kalshiDem": 0.95,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Nikema Williams", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -7351,7 +7351,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.85,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Lucy McBath", "party": "D", "incumbent": true },
       "rep": { "name": "Justin Pinker", "party": "R", "incumbent": false }
@@ -7416,7 +7416,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 30 },
       { "date": "Mar", "value": 30 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.69,
     "candidates": {
       "dem": { "name": "James Cooper", "party": "D", "incumbent": false },
@@ -7449,7 +7449,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 20 },
       { "date": "Mar", "value": 20 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.9,
     "candidates": {
       "dem": { "name": "Nicholas Alex", "party": "D", "incumbent": false },
@@ -7483,7 +7483,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 6 }
     ],
     "kalshiDem": 0.01,
-    "kalshiRep": 0.905,
+    "kalshiRep": 0.91,
     "candidates": {
       "dem": { "name": "Alexandra Doherty", "party": "D", "incumbent": false },
       "rep": { "name": "Houston Gaines", "party": "R", "incumbent": false }
@@ -7582,7 +7582,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.73,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "David Scott", "party": "D", "incumbent": true },
       "rep": { "name": "Simeon Nunnally", "party": "R", "incumbent": false }
@@ -7614,7 +7614,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 20 },
       { "date": "Mar", "value": 20 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.71,
     "candidates": {
       "dem": { "name": "Shawn Harris", "party": "D", "incumbent": false },
@@ -7648,7 +7648,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.93,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Ed Case", "party": "D", "incumbent": true },
       "rep": { "name": "Maxwell Frazier", "party": "R", "incumbent": false }
@@ -7681,7 +7681,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Jill Tokuda", "party": "D", "incumbent": true },
       "rep": { "name": "Brenton Awa", "party": "R", "incumbent": false }
@@ -7713,7 +7713,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.95,
     "candidates": {
       "dem": { "name": "Kaylee Peterson", "party": "D", "incumbent": false },
@@ -7746,7 +7746,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 1 }
     ],
-    "kalshiDem": 0.066,
+    "kalshiDem": 0.07,
     "kalshiRep": 0.7,
     "candidates": {
       "dem": { "name": "Julie Wiley", "party": "D", "incumbent": false },
@@ -7780,7 +7780,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.69,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Jonathan Jackson", "party": "D", "incumbent": true },
       "rep": { "name": "Christian Maxwell", "party": "R", "incumbent": false }
@@ -7812,8 +7812,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
-    "kalshiDem": 0.962,
-    "kalshiRep": 0.001,
+    "kalshiDem": 0.96,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Donna Miller", "party": "D", "incumbent": false },
       "rep": { "name": "Calvin Coleman", "party": "R", "incumbent": false }
@@ -7846,7 +7846,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Delia Ramirez", "party": "D", "incumbent": true },
       "rep": { "name": "Angel Oakley", "party": "R", "incumbent": false }
@@ -7879,7 +7879,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.87,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Patty Garcia", "party": "D", "incumbent": false },
       "rep": { "name": "Lupe Castillo", "party": "R", "incumbent": false }
@@ -7912,7 +7912,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.73,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Mike Quigley", "party": "D", "incumbent": true },
       "rep": { "name": "Tommy Hanson", "party": "R", "incumbent": false }
@@ -7945,7 +7945,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 94 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Sean Casten", "party": "D", "incumbent": true },
       "rep": { "name": "Niki Conforti", "party": "R", "incumbent": false }
@@ -7978,7 +7978,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.74,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "La Shawn Ford", "party": "D", "incumbent": false },
       "rep": { "name": "Chad Koppie", "party": "R", "incumbent": false }
@@ -8010,8 +8010,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 95 },
       { "date": "Mar", "value": 95 }
     ],
-    "kalshiDem": 0.922,
-    "kalshiRep": 0.048,
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.05,
     "candidates": {
       "dem": { "name": "Melissa Bean", "party": "D", "incumbent": false },
       "rep": { "name": "Jennifer Davis", "party": "R", "incumbent": false }
@@ -8044,7 +8044,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Daniel Biss", "party": "D", "incumbent": false },
       "rep": { "name": "John Elleson", "party": "R", "incumbent": false }
@@ -8077,7 +8077,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.81,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Brad Schneider", "party": "D", "incumbent": true },
       "rep": { "name": "Carl Lambrecht", "party": "R", "incumbent": false }
@@ -8110,7 +8110,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 98 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Bill Foster", "party": "D", "incumbent": true },
       "rep": { "name": "Jeff Walter", "party": "R", "incumbent": false }
@@ -8142,7 +8142,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.77,
     "candidates": {
       "dem": { "name": "Julie Fortier", "party": "D", "incumbent": false },
@@ -8209,7 +8209,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 95 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Lauren Underwood", "party": "D", "incumbent": true },
       "rep": { "name": "James Marter", "party": "R", "incumbent": false }
@@ -8241,7 +8241,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.72,
     "candidates": {
       "dem": { "name": "Jennifer Todd", "party": "D", "incumbent": false },
@@ -8402,7 +8402,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 20 },
       { "date": "Mar", "value": 20 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.7,
     "candidates": {
       "dem": { "name": "Kelly Thompson", "party": "D", "incumbent": false },
@@ -8435,7 +8435,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 30 },
       { "date": "Mar", "value": 30 }
     ],
-    "kalshiDem": 0.094,
+    "kalshiDem": 0.09,
     "kalshiRep": 0.71,
     "candidates": {
       "dem": { "name": "Joseph Mackey", "party": "D", "incumbent": false },
@@ -8501,7 +8501,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 10 },
       { "date": "Mar", "value": 10 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.7,
     "candidates": {
       "dem": { "name": "Cynthia Wirth", "party": "D", "incumbent": false },
@@ -8565,7 +8565,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 10 },
       { "date": "Mar", "value": 10 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.7,
     "candidates": {
       "dem": { "name": "Mary Allen", "party": "D", "incumbent": false },
@@ -8598,7 +8598,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 40 },
       { "date": "Mar", "value": 40 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.9,
     "candidates": {
       "dem": { "name": "James Graham", "party": "D", "incumbent": false },
@@ -8726,11 +8726,11 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 90 },
       { "date": "Mar", "value": 90 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.84,
     "candidates": {
       "dem": { "name": "Dave Dawson", "party": "D", "incumbent": false },
-      "rep": { "name": "Chris Mcgowan", "party": "R", "incumbent": false }
+      "rep": { "name": "Chris McGowan", "party": "R", "incumbent": false }
     },
     "seatHolder": "Randy Feenstra",
     "seatParty": "R",
@@ -8759,7 +8759,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 10 },
       { "date": "Mar", "value": 10 }
     ],
-    "kalshiDem": 0.003,
+    "kalshiDem": 0,
     "kalshiRep": 0.91,
     "candidates": {
       "dem": { "name": "Kenneth McRoberts", "party": "D", "incumbent": false },
@@ -8891,7 +8891,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.72,
     "candidates": {
       "dem": { "name": "John Williams", "party": "D", "incumbent": false },
@@ -8924,7 +8924,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.71,
     "candidates": {
       "dem": { "name": "William Compton", "party": "D", "incumbent": false },
@@ -8958,9 +8958,9 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
-      "dem": { "name": "Morgan Mcgarvey", "party": "D", "incumbent": true },
+      "dem": { "name": "Morgan McGarvey", "party": "D", "incumbent": true },
       "rep": { "name": "Maria Rodriguez", "party": "R", "incumbent": false }
     },
     "seatHolder": "Morgan McGarvey",
@@ -9023,7 +9023,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.95,
     "candidates": {
       "dem": { "name": "Ned Pillersdorf", "party": "D", "incumbent": false },
@@ -9089,7 +9089,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.69,
     "candidates": {
       "dem": { "name": "Lauren Jewett", "party": "D", "incumbent": false },
@@ -9123,7 +9123,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.86,
-    "kalshiRep": 0.062,
+    "kalshiRep": 0.06,
     "candidates": {
       "dem": { "name": "Troy Carter", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9155,7 +9155,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.7,
     "candidates": {
       "dem": { "name": "Tia LeBrun", "party": "D", "incumbent": false },
@@ -9221,7 +9221,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.055,
+    "kalshiDem": 0.06,
     "kalshiRep": 0.92,
     "candidates": {
       "dem": { "name": "Dan Mckay", "party": "D", "incumbent": false },
@@ -9287,8 +9287,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
-    "kalshiDem": 0.956,
-    "kalshiRep": 0.001,
+    "kalshiDem": 0.96,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Chellie Pingree", "party": "D", "incumbent": true },
       "rep": { "name": "Eric Small", "party": "R", "incumbent": false }
@@ -9385,7 +9385,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.87,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "John Olszewski", "party": "D", "incumbent": false },
       "rep": { "name": "David Wallace", "party": "R", "incumbent": false }
@@ -9418,7 +9418,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.73,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Sarah Elfreth", "party": "D", "incumbent": true },
       "rep": { "name": "Penny Kennedy", "party": "R", "incumbent": false }
@@ -9451,7 +9451,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Glenn Ivey", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9484,7 +9484,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Quincy Bareebe", "party": "D", "incumbent": false },
       "rep": { "name": "Michelle Talkington", "party": "R", "incumbent": false }
@@ -9550,7 +9550,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.14,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Kweisi Mfume", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9583,7 +9583,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.69,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Jamie Raskin", "party": "D", "incumbent": true },
       "rep": { "name": "Cheryl Riley", "party": "R", "incumbent": false }
@@ -9616,7 +9616,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Richard Neal", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9649,7 +9649,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.94,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "James McGovern", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9682,7 +9682,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Lori Trahan", "party": "D", "incumbent": true },
       "rep": { "name": "Gary Grossi", "party": "R", "incumbent": false }
@@ -9715,7 +9715,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.8,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Jake Auchincloss", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9747,8 +9747,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
-    "kalshiDem": 0.973,
-    "kalshiRep": 0.001,
+    "kalshiDem": 0.97,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Katherine Clark", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9781,7 +9781,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.69,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Daniel Koh", "party": "D", "incumbent": false },
       "rep": { "name": "John Field", "party": "R", "incumbent": false }
@@ -9814,7 +9814,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.84,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Ayanna Pressley", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9847,7 +9847,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Stephen Lynch", "party": "D", "incumbent": true },
       "rep": { "name": "Gavin Solomon", "party": "R", "incumbent": false }
@@ -9880,7 +9880,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 97 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "William Keating", "party": "D", "incumbent": true },
       "rep": { "name": "Robert MacAllister", "party": "R", "incumbent": false }
@@ -9945,13 +9945,13 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 40 },
       { "date": "Mar", "value": 40 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.73,
     "candidates": {
       "dem": { "name": "Benjamin Ambrose", "party": "D", "incumbent": false },
       "rep": { "name": "John Moolenaar", "party": "R", "incumbent": true }
     },
-    "seatHolder": "John R. Moolenaar",
+    "seatHolder": "John Moolenaar",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 31.69, "repPct": 65.14, "demCandidate": "Michael Lynch", "repCandidate": "John R. Moolenaar", "demVotes": 135824, "repVotes": 279167, "totalVotes": 428550, "margin": 33.45, "repIncumbent": true },
@@ -9982,7 +9982,7 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Hillary Scholten", "party": "D", "incumbent": true },
       "rep": { "name": "J Fiorletta", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Hillary J. Scholten",
+    "seatHolder": "Hillary Scholten",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 53.66, "repPct": 43.77, "demCandidate": "Hillary J. Scholten", "repCandidate": "Paul Hudson", "demVotes": 225510, "repVotes": 183952, "totalVotes": 420289, "margin": -9.89, "demIncumbent": true },
@@ -10010,7 +10010,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 41 }
     ],
     "candidates": {
-      "dem": { "name": "Sean Mccann", "party": "D", "incumbent": false },
+      "dem": { "name": "Sean McCann", "party": "D", "incumbent": false },
       "rep": { "name": "William Huizenga", "party": "R", "incumbent": true }
     },
     "seatHolder": "Bill Huizenga",
@@ -10040,7 +10040,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 90 },
       { "date": "Mar", "value": 90 }
     ],
-    "kalshiDem": 0.025,
+    "kalshiDem": 0.03,
     "kalshiRep": 0.69,
     "candidates": {
       "dem": { "name": "Christian Vukasovich", "party": "D", "incumbent": false },
@@ -10074,7 +10074,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Debbie Dingell", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -10168,13 +10168,13 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 20 },
       { "date": "Mar", "value": 20 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.92,
     "candidates": {
       "dem": { "name": "Steven Pooley", "party": "D", "incumbent": false },
-      "rep": { "name": "Lisa Mcclain", "party": "R", "incumbent": true }
+      "rep": { "name": "Lisa McClain", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Lisa C. McClain",
+    "seatHolder": "Lisa McClain",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 29.5, "repPct": 66.76, "demCandidate": "Clinton St. Mosley", "repCandidate": "Lisa C. McClain", "demVotes": 138138, "repVotes": 312593, "totalVotes": 468238, "margin": 37.26, "repIncumbent": true },
@@ -10266,7 +10266,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Rashida Tlaib", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -10299,7 +10299,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.75,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Shri Thanedar", "party": "D", "incumbent": true },
       "rep": { "name": "Andrew Lorenz", "party": "R", "incumbent": false }
@@ -10396,7 +10396,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Kelly Morrison", "party": "D", "incumbent": true },
       "rep": { "name": "Tyler Bass", "party": "R", "incumbent": false }
@@ -10429,7 +10429,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.86,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Betty McCollum", "party": "D", "incumbent": true },
       "rep": { "name": "Paul Wikstrom", "party": "R", "incumbent": false }
@@ -10462,7 +10462,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.91,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Ilhan Omar", "party": "D", "incumbent": true },
       "rep": { "name": "Dalia Al-Aqidi", "party": "R", "incumbent": false }
@@ -10527,7 +10527,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.69,
     "candidates": {
       "dem": { "name": "Generic Democrat", "party": "D", "incumbent": false },
@@ -10593,7 +10593,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 20 },
       { "date": "Mar", "value": 20 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.73,
     "candidates": {
       "dem": { "name": "Cliff Johnson", "party": "D", "incumbent": false },
@@ -10659,7 +10659,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 30 },
       { "date": "Mar", "value": 30 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.94,
     "candidates": {
       "dem": { "name": "Michael Chiaradio", "party": "D", "incumbent": false },
@@ -10692,7 +10692,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.6,
     "candidates": {
       "dem": { "name": "Jeffrey Hulum", "party": "D", "incumbent": false },
@@ -10726,7 +10726,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Wesley Bell", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -10791,7 +10791,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.7,
     "candidates": {
       "dem": { "name": "Bethany Mann", "party": "D", "incumbent": false },
@@ -10824,7 +10824,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.86,
     "candidates": {
       "dem": { "name": "Hartzell Gray", "party": "D", "incumbent": false },
@@ -10888,7 +10888,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.8,
     "candidates": {
       "dem": { "name": "Matthew Levine", "party": "D", "incumbent": false },
@@ -11018,7 +11018,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 50 },
       { "date": "Mar", "value": 50 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.82,
     "candidates": {
       "dem": { "name": "Brian Miller", "party": "D", "incumbent": false },
@@ -11112,8 +11112,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.031,
-    "kalshiRep": 0.938,
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.94,
     "candidates": {
       "dem": { "name": "Becky Stille", "party": "D", "incumbent": false },
       "rep": { "name": "Adrian Smith", "party": "R", "incumbent": true }
@@ -11303,7 +11303,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 90 }
     ],
     "kalshiDem": 0.9,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Maggie Goodlander", "party": "D", "incumbent": true },
       "rep": { "name": "Lily Williams", "party": "R", "incumbent": false }
@@ -11336,7 +11336,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Donald Norcross", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -11434,7 +11434,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 1 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.9,
     "candidates": {
       "dem": { "name": "Nicholas Small", "party": "D", "incumbent": false },
@@ -11499,7 +11499,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.65,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Frank Pallone", "party": "D", "incumbent": false },
       "rep": { "name": "Hillary Herzig", "party": "R", "incumbent": false }
@@ -11563,7 +11563,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.007,
+    "kalshiRep": 0.01,
     "candidates": {
       "dem": { "name": "Robert Menendez", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -11627,7 +11627,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.73,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "LaMonica McIver", "party": "D", "incumbent": true },
       "rep": { "name": "Carmen Bucco", "party": "R", "incumbent": false }
@@ -11660,7 +11660,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 97 }
     ],
     "kalshiDem": 0.86,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
       "rep": { "name": "Joe Hathaway", "party": "R", "incumbent": false }
@@ -11692,8 +11692,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
-    "kalshiDem": 0.942,
-    "kalshiRep": 0.001,
+    "kalshiDem": 0.94,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Brad Cohen", "party": "D", "incumbent": false },
       "rep": { "name": "Gregg Mele", "party": "R", "incumbent": false }
@@ -11726,7 +11726,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Melanie Stansbury", "party": "D", "incumbent": true },
       "rep": { "name": "Steve Jones", "party": "R", "incumbent": false }
@@ -11951,7 +11951,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Gregory Meeks", "party": "D", "incumbent": true },
       "rep": { "name": "Aaron Cherry", "party": "R", "incumbent": false }
@@ -11984,7 +11984,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Grace Meng", "party": "D", "incumbent": true },
       "rep": { "name": "Juan Pagan", "party": "R", "incumbent": false }
@@ -12017,7 +12017,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Antonio Reynoso", "party": "D", "incumbent": false },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -12050,7 +12050,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Hakeem Jeffries", "party": "D", "incumbent": true },
       "rep": { "name": "Richard Simmons", "party": "R", "incumbent": false }
@@ -12083,7 +12083,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.83,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Yvette Clarke", "party": "D", "incumbent": true },
       "rep": { "name": "Jean Depalis", "party": "R", "incumbent": false }
@@ -12116,7 +12116,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Daniel Goldman", "party": "D", "incumbent": true },
       "rep": { "name": "Gavin Solomon", "party": "R", "incumbent": false }
@@ -12151,7 +12151,7 @@ export const houseData: RaceForecast[] = [
     "kalshiDem": 0.1,
     "kalshiRep": 0.86,
     "candidates": {
-      "dem": { "name": "Troy Mcghie", "party": "D", "incumbent": false },
+      "dem": { "name": "Troy McGhie", "party": "D", "incumbent": false },
       "rep": { "name": "Nicole Malliotakis", "party": "R", "incumbent": true }
     },
     "seatHolder": "Nicole Malliotakis",
@@ -12182,7 +12182,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.83,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Alexander Bores", "party": "D", "incumbent": false },
       "rep": { "name": "Amy Jordan", "party": "R", "incumbent": false }
@@ -12215,7 +12215,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.98,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Adriano Espaillat", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -12248,7 +12248,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Alexandria Ocasio-Cortez", "party": "D", "incumbent": true },
       "rep": { "name": "Tina Forte", "party": "R", "incumbent": false }
@@ -12314,7 +12314,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.81,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "George Latimer", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -12440,7 +12440,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.95,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Paul Tonko", "party": "D", "incumbent": true },
       "rep": { "name": "Ralph Ambrosio", "party": "R", "incumbent": false }
@@ -12603,12 +12603,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Joseph Morelle", "party": "D", "incumbent": true },
-      "rep": { "name": "Virginia Mcintyre", "party": "R", "incumbent": false }
+      "rep": { "name": "Virginia McIntyre", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Joseph D. Morelle",
+    "seatHolder": "Joseph Morelle",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 58.68, "repPct": 41.32, "demCandidate": "Joseph D. Morelle", "repCandidate": "Gregg A. Sadwick", "demVotes": 200507, "repVotes": 141195, "totalVotes": 341702, "margin": -17.36, "demIncumbent": true },
@@ -12636,7 +12636,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.69,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Timothy Kennedy", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -12766,7 +12766,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.93,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Valerie Foushee", "party": "D", "incumbent": true },
       "rep": { "name": "Mahesh Ganorkar", "party": "R", "incumbent": false }
@@ -13028,7 +13028,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.81,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Alma Adams", "party": "D", "incumbent": true },
       "rep": { "name": "Jack Codiga", "party": "R", "incumbent": false }
@@ -13219,7 +13219,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.84,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Joyce Beatty", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -13251,7 +13251,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.82,
     "candidates": {
       "dem": { "name": "Tamara Wilson", "party": "D", "incumbent": false },
@@ -13284,7 +13284,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 2 },
       { "date": "Mar", "value": 2 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.68,
     "candidates": {
       "dem": { "name": "Daniel Burket", "party": "D", "incumbent": false },
@@ -13481,7 +13481,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Shontel Brown", "party": "D", "incumbent": true },
       "rep": { "name": "James Hemphill", "party": "R", "incumbent": false }
@@ -13513,7 +13513,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 50 },
       { "date": "Mar", "value": 50 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.68,
     "candidates": {
       "dem": { "name": "Jerrad Christian", "party": "D", "incumbent": false },
@@ -13676,7 +13676,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.72,
     "candidates": {
       "dem": { "name": "Erik Terwey", "party": "D", "incumbent": false },
@@ -13709,7 +13709,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.84,
     "candidates": {
       "dem": { "name": "Jules Roberson", "party": "D", "incumbent": false },
@@ -13742,7 +13742,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 10 },
       { "date": "Mar", "value": 10 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.72,
     "candidates": {
       "dem": { "name": "Mitchell Jacob", "party": "D", "incumbent": false },
@@ -13809,7 +13809,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Suzanne Bonamici", "party": "D", "incumbent": true },
       "rep": { "name": "Barbara Kahl", "party": "R", "incumbent": false }
@@ -13841,7 +13841,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 2 },
       { "date": "Mar", "value": 2 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.93,
     "candidates": {
       "dem": { "name": "Dawn Rasmussen", "party": "D", "incumbent": false },
@@ -13875,7 +13875,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.8,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Maxine Dexter", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -13908,7 +13908,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 97 }
     ],
     "kalshiDem": 0.69,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Valerie Hoyle", "party": "D", "incumbent": true },
       "rep": { "name": "Monique Despain", "party": "R", "incumbent": false }
@@ -13972,7 +13972,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 97 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Andrea Salinas", "party": "D", "incumbent": true },
       "rep": { "name": "David Russ", "party": "R", "incumbent": false }
@@ -14033,7 +14033,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Brendan Boyle", "party": "D", "incumbent": true },
       "rep": { "name": "Jessica Arriaga", "party": "R", "incumbent": false }
@@ -14066,7 +14066,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.86,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Sharif Street", "party": "D", "incumbent": false },
       "rep": { "name": "Alexander Schnell", "party": "R", "incumbent": false }
@@ -14099,7 +14099,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Madeleine Dean", "party": "D", "incumbent": true },
       "rep": { "name": "Jordan Salerno-O'Donnell", "party": "R", "incumbent": false }
@@ -14132,7 +14132,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Mary Scanlon", "party": "D", "incumbent": true },
       "rep": { "name": "Melvin Johnakin", "party": "R", "incumbent": false }
@@ -14165,7 +14165,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 96 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Chrissy Houlahan", "party": "D", "incumbent": true },
       "rep": { "name": "Martin Young", "party": "R", "incumbent": false }
@@ -14259,7 +14259,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.7,
     "candidates": {
       "dem": { "name": "Rachel Wallace", "party": "D", "incumbent": false },
@@ -14357,7 +14357,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.8,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Summer Lee", "party": "D", "incumbent": true },
       "rep": { "name": "Leonard Fechter", "party": "R", "incumbent": false }
@@ -14389,7 +14389,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.81,
     "candidates": {
       "dem": { "name": "Elizabeth Farnham", "party": "D", "incumbent": false },
@@ -14422,7 +14422,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 10 },
       { "date": "Mar", "value": 10 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.71,
     "candidates": {
       "dem": { "name": "David Bradstock", "party": "D", "incumbent": false },
@@ -14455,7 +14455,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.93,
     "candidates": {
       "dem": { "name": "Raymond Bilger", "party": "D", "incumbent": false },
@@ -14553,7 +14553,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.77,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Gabe Amo", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -14586,7 +14586,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 98 }
     ],
     "kalshiDem": 0.69,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Seth Magaziner", "party": "D", "incumbent": true },
       "rep": { "name": "Victor Mellor", "party": "R", "incumbent": false }
@@ -14622,7 +14622,7 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.73,
     "candidates": {
       "dem": { "name": "William Deford", "party": "D", "incumbent": false },
-      "rep": { "name": "Sam Mccown", "party": "R", "incumbent": false }
+      "rep": { "name": "Sam McCown", "party": "R", "incumbent": false }
     },
     "seatHolder": "Nancy Mace",
     "seatParty": "R",
@@ -14684,7 +14684,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.69,
     "candidates": {
       "dem": { "name": "Eunice Lehmacher", "party": "D", "incumbent": false },
@@ -14720,10 +14720,10 @@ export const houseData: RaceForecast[] = [
     "kalshiDem": 0.01,
     "kalshiRep": 0.91,
     "candidates": {
-      "dem": { "name": "Courtney Mcclain", "party": "D", "incumbent": false },
+      "dem": { "name": "Courtney McClain", "party": "D", "incumbent": false },
       "rep": { "name": "William Timmons", "party": "R", "incumbent": true }
     },
-    "seatHolder": "William R. Timmons IV",
+    "seatHolder": "William Timmons",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 37.23, "repPct": 59.73, "demCandidate": "Kathryn Harvey", "repCandidate": "William R. Timmons IV", "demVotes": 128976, "repVotes": 206916, "totalVotes": 346414, "margin": 22.5, "repIncumbent": true },
@@ -14750,7 +14750,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 6 },
       { "date": "Mar", "value": 6 }
     ],
-    "kalshiDem": 0.005,
+    "kalshiDem": 0.01,
     "kalshiRep": 0.68,
     "candidates": {
       "dem": { "name": "Mallory Dittmer", "party": "D", "incumbent": false },
@@ -14880,7 +14880,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.94,
     "candidates": {
       "dem": { "name": "Kristi Burke", "party": "D", "incumbent": false },
@@ -14913,7 +14913,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 10 },
       { "date": "Mar", "value": 10 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.73,
     "candidates": {
       "dem": { "name": "Michaela Barnett", "party": "D", "incumbent": false },
@@ -14946,7 +14946,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 10 },
       { "date": "Mar", "value": 10 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.69,
     "candidates": {
       "dem": { "name": "Joel Hawn", "party": "D", "incumbent": false },
@@ -14979,8 +14979,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.027,
-    "kalshiRep": 0.943,
+    "kalshiDem": 0.03,
+    "kalshiRep": 0.94,
     "candidates": {
       "dem": { "name": "Victoria Broderick", "party": "D", "incumbent": false },
       "rep": { "name": "Scott Desjarlais", "party": "R", "incumbent": true }
@@ -15045,7 +15045,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 30 },
       { "date": "Mar", "value": 30 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.71,
     "candidates": {
       "dem": { "name": "Chaney Mosley", "party": "D", "incumbent": false },
@@ -15078,7 +15078,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 6 },
       { "date": "Mar", "value": 6 }
     ],
-    "kalshiDem": 0.005,
+    "kalshiDem": 0.01,
     "kalshiRep": 0.65,
     "candidates": {
       "dem": { "name": "Darden Copeland", "party": "D", "incumbent": false },
@@ -15111,7 +15111,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.046,
+    "kalshiDem": 0.05,
     "kalshiRep": 0.65,
     "candidates": {
       "dem": { "name": "William Wicker", "party": "D", "incumbent": false },
@@ -15177,7 +15177,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.72,
     "candidates": {
       "dem": { "name": "Generic Democrat", "party": "D", "incumbent": false },
@@ -15309,7 +15309,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 6 },
       { "date": "Mar", "value": 6 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.68,
     "candidates": {
       "dem": { "name": "Ruth Torres", "party": "D", "incumbent": false },
@@ -15376,7 +15376,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Lizzie Fletcher", "party": "D", "incumbent": true },
       "rep": { "name": "Alexander Hale", "party": "R", "incumbent": false }
@@ -15408,7 +15408,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 2 },
       { "date": "Mar", "value": 2 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.68,
     "candidates": {
       "dem": { "name": "Laura Jones", "party": "D", "incumbent": false },
@@ -15505,7 +15505,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.001,
+    "kalshiDem": 0,
     "kalshiRep": 0.8,
     "candidates": {
       "dem": { "name": "Claire Reynolds", "party": "D", "incumbent": false },
@@ -15571,7 +15571,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.7,
     "candidates": {
       "dem": { "name": "Mark Nair", "party": "D", "incumbent": false },
@@ -15669,7 +15669,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.85,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Veronica Escobar", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -15735,7 +15735,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.51,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
       "rep": { "name": "Ronald Whitfield", "party": "R", "incumbent": false }
@@ -15767,7 +15767,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.71,
     "candidates": {
       "dem": { "name": "Kyle Rable", "party": "D", "incumbent": false },
@@ -15801,7 +15801,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.91,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Joaquin Castro", "party": "D", "incumbent": true },
       "rep": { "name": "Edgardo Baez", "party": "R", "incumbent": false }
@@ -15998,7 +15998,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 2 },
       { "date": "Mar", "value": 2 }
     ],
-    "kalshiDem": 0.002,
+    "kalshiDem": 0,
     "kalshiRep": 0.67,
     "candidates": {
       "dem": { "name": "Steven Shook", "party": "D", "incumbent": false },
@@ -16096,7 +16096,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Sylvia Garcia", "party": "D", "incumbent": true },
       "rep": { "name": "Martha Fierro", "party": "R", "incumbent": false }
@@ -16128,8 +16128,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
-    "kalshiDem": 0.961,
-    "kalshiRep": 0.001,
+    "kalshiDem": 0.96,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Frederick Haynes", "party": "D", "incumbent": false },
       "rep": { "name": "Sholdon Daniels", "party": "R", "incumbent": false }
@@ -16226,7 +16226,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Colin Allred", "party": "D", "incumbent": false },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -16354,7 +16354,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Greg Casar", "party": "D", "incumbent": false },
       "rep": { "name": "Lauren Pena", "party": "R", "incumbent": false }
@@ -16633,12 +16633,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.72,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
-      "dem": { "name": "Robert Scott", "party": "D", "incumbent": true },
+      "dem": { "name": "Bobby Scott", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Robert C. “Bobby” Scott",
+    "seatHolder": "Bobby Scott",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 69.95, "repPct": 29.84, "demCandidate": "Robert C. “Bobby” Scott", "repCandidate": "John Sitka III", "demVotes": 219926, "repVotes": 93801, "totalVotes": 314397, "margin": -40.11, "demIncumbent": true },
@@ -16666,12 +16666,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.71,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Jennifer Mcclellan", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Jennifer L. McClellan",
+    "seatHolder": "Jennifer McClellan",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 67.34, "repPct": 32.44, "demCandidate": "Jennifer L. McClellan", "repCandidate": "William J. “Bill” Moher III", "demVotes": 252885, "repVotes": 121814, "totalVotes": 375508, "margin": -34.9, "demIncumbent": true },
@@ -16796,12 +16796,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.92,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Donald Beyer", "party": "D", "incumbent": true },
       "rep": { "name": "Heerak Kim", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Donald S. Beyer, Jr.",
+    "seatHolder": "Donald Beyer",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 71.52, "repPct": 24.66, "demCandidate": "Donald S. Beyer, Jr.", "repCandidate": "Jerry W. Torres", "demVotes": 274593, "repVotes": 94676, "totalVotes": 383915, "margin": -46.86, "demIncumbent": true },
@@ -16832,9 +16832,9 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.9,
     "candidates": {
       "dem": { "name": "Adam Murphy", "party": "D", "incumbent": false },
-      "rep": { "name": "Adam Griffith", "party": "R", "incumbent": true }
+      "rep": { "name": "Morgan Griffith", "party": "R", "incumbent": true }
     },
-    "seatHolder": "H. Morgan Griffith",
+    "seatHolder": "Morgan Griffith",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 27.33, "repPct": 72.49, "demCandidate": "Karen G. H. Baker", "repCandidate": "H. Morgan Griffith", "demVotes": 109570, "repVotes": 290645, "totalVotes": 400963, "margin": 45.16, "repIncumbent": true },
@@ -16893,12 +16893,12 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.73,
-    "kalshiRep": 0.002,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "James Walkinshaw", "party": "D", "incumbent": true },
       "rep": { "name": "Stewart Whitson", "party": "R", "incumbent": false }
     },
-    "seatHolder": "James R. Walkinshaw",
+    "seatHolder": "James Walkinshaw",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 66.68, "repPct": 32.86, "demCandidate": "Gerald E. Connolly", "repCandidate": "Mike L. Van Meter", "demVotes": 273529, "repVotes": 134802, "totalVotes": 410186, "margin": -33.82, "demIncumbent": true },
@@ -16926,7 +16926,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.52,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Suzan DelBene", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -16959,7 +16959,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Rick Larsen", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -17089,7 +17089,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.7,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Emily Randall", "party": "D", "incumbent": true },
       "rep": { "name": "Teresa Fox", "party": "R", "incumbent": false }
@@ -17122,7 +17122,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 100 }
     ],
     "kalshiDem": 0.73,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Pramila Jayapal", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -17219,7 +17219,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 99 }
     ],
     "kalshiDem": 0.92,
-    "kalshiRep": 0.001,
+    "kalshiRep": 0,
     "candidates": {
       "dem": { "name": "Marilyn Strickland", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -17251,7 +17251,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
-    "kalshiDem": 0.067,
+    "kalshiDem": 0.07,
     "kalshiRep": 0.75,
     "candidates": {
       "dem": { "name": "Britta Aguirre", "party": "D", "incumbent": false },

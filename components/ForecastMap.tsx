@@ -13,6 +13,7 @@ import StatesOverviewMap, { type MapMode } from "./StatesOverviewMap";
 import Link from "next/link";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
+import TplModelPage from "./TplModelPage";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 const HOUSE_DISTRICTS_2026_URL = "/congressional-districts-2026.json";
@@ -168,10 +169,10 @@ function SeatScorecard({
 }
 
 export default function ForecastMap() {
-  const [activeTab, setActiveTab] = useState<"overview" | "states" | "counties" | RaceType>(() => {
+  const [activeTab, setActiveTab] = useState<"overview" | "states" | "counties" | "model" | RaceType>(() => {
     if (typeof window !== "undefined") {
       const urlTab = new URLSearchParams(window.location.search).get("tab");
-      if (urlTab === "overview" || urlTab === "states" || urlTab === "counties" || urlTab === "house" || urlTab === "senate" || urlTab === "governor") return urlTab;
+      if (urlTab === "overview" || urlTab === "states" || urlTab === "counties" || urlTab === "model" || urlTab === "house" || urlTab === "senate" || urlTab === "governor") return urlTab;
     }
     return "overview";
   });
@@ -200,7 +201,7 @@ export default function ForecastMap() {
 
   useEffect(() => {
     function setTab(type: string | null) {
-      if (type !== "overview" && type !== "house" && type !== "senate" && type !== "governor" && type !== "states" && type !== "counties") return;
+      if (type !== "overview" && type !== "house" && type !== "senate" && type !== "governor" && type !== "states" && type !== "counties" && type !== "model") return;
 
       setActiveTab(type);
       setSelected(null);
@@ -919,6 +920,7 @@ export default function ForecastMap() {
                 <RaceTable races={governorData} basePath="/governor" nameLabel="State" />
               </div>
             )}
+            {activeTab === "model" && <TplModelPage />}
           </>
         ), [activeTab, t])}
 

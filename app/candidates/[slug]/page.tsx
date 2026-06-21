@@ -41,8 +41,20 @@ function raceTypeLabel(raceType: "house" | "senate" | "governor") {
   return "Governor";
 }
 
-export default async function CandidatePage({ params }: { params: Promise<{ slug: string }> }) {
+function safeFromPath(from: string | undefined): string | null {
+  if (!from || !from.startsWith("/") || from.startsWith("//")) return null;
+  return from;
+}
+
+export default async function CandidatePage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ from?: string }>;
+}) {
   const { slug } = await params;
+  const { from } = await searchParams;
   const candidate = getCandidatePage(slug);
   if (!candidate) notFound();
 
@@ -51,6 +63,7 @@ export default async function CandidatePage({ params }: { params: Promise<{ slug
   const subtle = partySubtle(candidate.party);
 
   const backHref =
+    safeFromPath(from) ??
     candidate.currentRace?.racePath ??
     `/?tab=${candidate.tab}`;
   const backLabel =

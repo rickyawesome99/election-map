@@ -524,7 +524,6 @@ export default function PopularVoteChart() {
           </thead>
           <tbody>
             {rows.map((r, i) => {
-              const demMargin = -r.margin;
               return (
                 <tr
                   key={r.year}
@@ -538,9 +537,9 @@ export default function PopularVoteChart() {
                   <td className="px-4 py-2 text-left font-mono font-semibold" style={{ color: "var(--party-rep)" }}>{r.repPct.toFixed(1)}%</td>
                   <td
                     className="px-4 py-2 text-right font-mono font-bold"
-                    style={{ color: demMargin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}
+                    style={{ color: r.margin >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
                   >
-                    {marginLabel(demMargin)}
+                    {marginLabel(r.margin)}
                   </td>
                   <td className="px-4 py-2 text-left font-mono font-semibold whitespace-nowrap">
                     <span style={{ color: "var(--party-dem)" }}>{r.seatsD}D</span>

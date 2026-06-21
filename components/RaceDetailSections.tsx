@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-import { candidateSlug } from "@/lib/candidateSlug";
+import CandidateLink from "@/components/CandidateLink";
 
 type PollRow = {
   label: string;
@@ -205,13 +204,13 @@ export function CandidatesSection({
                     {displayName}
                   </div>
                 ) : (
-                  <Link
-                    href={`/candidates/${candidateSlug(candidate.name)}`}
+                  <CandidateLink
+                    name={candidate.name}
                     className={`font-bold whitespace-nowrap overflow-hidden text-ellipsis hover:underline ${isCompact ? "text-sm" : "text-xl"}`}
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     {displayName}
-                  </Link>
+                  </CandidateLink>
                 )}
                 {candidate.incumbent && !candidate.placeholder && (
                   <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: `${accentColor}22`, color: accentColor }}>Inc.</span>
@@ -263,13 +262,13 @@ export function CurrentIncumbentCard({
           </svg>
         </div>
         <div className="flex-1 flex flex-col justify-end pb-3">
-          <Link
-            href={`/candidates/${candidateSlug(incumbentName)}`}
+          <CandidateLink
+            name={incumbentName}
             className="text-xl font-bold mb-1 hover:underline inline-block"
             style={{ color: "var(--app-text-primary)" }}
           >
             {incumbentName}
-          </Link>
+          </CandidateLink>
           <div className="text-sm font-medium" style={{ color: accentColor }}>
             {partyLabel(party)} · Incumbent
           </div>
@@ -598,7 +597,7 @@ export function PastElectionResultsSection({
                   ) : (
                     <span className="text-sm font-semibold min-w-0 truncate" style={{ color: demAccent }}>
                       {res.demCandidate ? (
-                        <Link href={`/candidates/${candidateSlug(res.demCandidate)}`} className="hover:underline">{demName}</Link>
+                        <CandidateLink name={res.demCandidate} className="hover:underline">{demName}</CandidateLink>
                       ) : demName}
                       {" "}({demParty})
                     </span>
@@ -625,7 +624,7 @@ export function PastElectionResultsSection({
                   ) : (
                     <span className="text-sm font-semibold min-w-0 truncate" style={{ color: repAccent }}>
                       {res.repCandidate ? (
-                        <Link href={`/candidates/${candidateSlug(res.repCandidate)}`} className="hover:underline">{repName}</Link>
+                        <CandidateLink name={res.repCandidate} className="hover:underline">{repName}</CandidateLink>
                       ) : repName}
                       {" "}({repParty})
                     </span>

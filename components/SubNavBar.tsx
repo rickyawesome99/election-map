@@ -11,6 +11,7 @@ const TABS = [
   { key: "governor",  label: "Governor" },
   { key: "states",    label: "States" },
   { key: "counties",  label: "Counties" },
+  { key: "model",     label: "Model" },
 ];
 
 function getActiveTab(pathname: string, queryTab: string | null): string | null {

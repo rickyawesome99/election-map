@@ -1,9 +1,9 @@
 "use client";
 
 import { getRatingColors } from "@/lib/colorScale";
-import { candidateSlug } from "@/lib/candidateSlug";
 import Link from "next/link";
 import { useState } from "react";
+import CandidateLink from "./CandidateLink";
 
 type RaceForecast = {
   id: string;
@@ -236,13 +236,13 @@ export default function RaceTable({
                   <span className="flex min-w-0 items-center gap-1.5">
                     <span className="min-w-0 truncate">
                       {race.candidates?.dem.name ? (
-                        <Link
-                          href={`/candidates/${candidateSlug(race.candidates.dem.name)}`}
+                        <CandidateLink
+                          name={race.candidates.dem.name}
                           className="hover:underline"
                           onClick={e => e.stopPropagation()}
                         >
                           {race.candidates.dem.name}
-                        </Link>
+                        </CandidateLink>
                       ) : (
                         <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>
                       )}
@@ -258,13 +258,13 @@ export default function RaceTable({
                   <span className="flex min-w-0 items-center gap-1.5">
                     <span className="min-w-0 truncate">
                       {race.candidates?.rep.name ? (
-                        <Link
-                          href={`/candidates/${candidateSlug(race.candidates.rep.name)}`}
+                        <CandidateLink
+                          name={race.candidates.rep.name}
                           className="hover:underline"
                           onClick={e => e.stopPropagation()}
                         >
                           {race.candidates.rep.name}
-                        </Link>
+                        </CandidateLink>
                       ) : (
                         <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>
                       )}
