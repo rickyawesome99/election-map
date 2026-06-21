@@ -1,58 +1,67 @@
+"use client";
+
 import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 import SearchBar from "@/components/SearchBar";
 
-const NAV = [
-  { label: "States",   href: "/states" },
-  { label: "House",    href: "/house" },
-  { label: "Senate",   href: "/senate" },
-  { label: "Governor", href: "/governor" },
-  { label: "Analysis", href: "/analysis" },
-];
-
-export default function AppHeader({ back }: { back?: React.ReactNode }) {
+export default function AppHeader({
+  analysisActive = false,
+  back,
+}: {
+  analysisActive?: boolean;
+  back?: React.ReactNode;
+}) {
   return (
-    <div className="sticky top-0 z-50">
-      <header
-        className="px-6 h-14 flex items-center gap-4"
-        style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-      >
-        <Link href="/" className="font-bold text-lg tracking-tight shrink-0" style={{ color: "var(--app-text-primary)" }}>
+    <header
+      className="flex h-14 flex-nowrap items-center gap-2 px-3 backdrop-blur-xl sm:px-6 md:gap-4"
+      style={{
+        borderBottom: "1px solid var(--app-border)",
+        background: "color-mix(in srgb, var(--app-panel) 76%, transparent)",
+        backdropFilter: "blur(20px) saturate(140%)",
+        WebkitBackdropFilter: "blur(20px) saturate(140%)",
+      }}
+    >
+      <div className="flex h-full shrink-0 flex-nowrap items-center gap-2.5 md:gap-4">
+        <Link
+          href="/?tab=overview"
+          prefetch={false}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "auto" });
+            window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: "overview" }));
+          }}
+          onNavigate={(event) => {
+            event.preventDefault();
+            window.location.assign("/?tab=overview");
+          }}
+          className="shrink-0 text-lg font-bold leading-none tracking-tight sm:text-xl"
+          style={{ color: "var(--app-text-primary)" }}
+        >
           CT Strategies
         </Link>
-        <div className="hidden md:block h-4 w-px shrink-0" style={{ background: "var(--app-border)" }} />
-        <nav className="hidden md:flex items-center gap-1">
-          {NAV.map(({ label, href }) => (
-            <Link
-              key={href}
-              href={href}
-              className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-              style={{ color: "var(--app-text-muted)" }}
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
-        <div className="ml-auto flex items-center gap-3 shrink-0">
-          {back}
-          <SearchBar />
-          <ThemeToggle />
-        </div>
-      </header>
-
-      {/* Mobile nav tabs */}
-      <nav className="md:hidden flex border-b" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }}>
-        {NAV.map(({ label, href }) => (
+        <div className="h-5 w-px shrink-0" style={{ background: "var(--app-border)" }} />
+        <nav className="flex h-full items-center">
           <Link
-            key={href}
-            href={href}
-            className="flex-1 py-2 text-center text-sm font-medium"
-            style={{ color: "var(--app-text-muted)" }}
+            href="/analysis"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "auto" });
+            }}
+            className="rounded-md px-1 py-1 text-sm font-medium leading-none transition-colors md:px-3"
+            style={
+              analysisActive
+                ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }
+                : { color: "var(--app-text-muted)" }
+            }
           >
-            {label}
+            Analysis
           </Link>
-        ))}
-      </nav>
-    </div>
+        </nav>
+      </div>
+      <span className="hidden md:block text-xs" style={{ color: "var(--app-text-muted)" }}>Updated Jun 21, 2026</span>
+      <div className="ml-auto flex h-full shrink-0 flex-nowrap items-center gap-2">
+        {back}
+        <SearchBar />
+        <ThemeToggle />
+      </div>
+    </header>
   );
 }

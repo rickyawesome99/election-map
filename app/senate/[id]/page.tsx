@@ -4,8 +4,6 @@ import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import BackButton from "@/components/BackButton";
-import AppHeader from "@/components/AppHeader";
 import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
@@ -89,7 +87,6 @@ function NoElectionPage({
   const termStarted = String(nextElection - termYears);
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <AppHeader back={<BackButton />} />
 
       <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
         {/* Title + banner */}
@@ -222,7 +219,6 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <AppHeader back={<BackButton />} />
 
       <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
         {/* Title block */}

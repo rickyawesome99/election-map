@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
+import AppShell from "@/components/AppShell";
 
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
             __html: `(function(){try{if(localStorage.getItem('darkMode')==='true')document.documentElement.classList.add('dark')}catch(e){}})()`,
           }}
         />
+        <AppShell />
         {children}
       </body>
     </html>

@@ -90,7 +90,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
   }, [open, updateDropdownRect]);
 
   return (
-    <div ref={containerRef} className="relative flex items-center">
+    <div ref={containerRef} className="relative flex h-8 items-center">
       {/* Search icon */}
       <svg
         className="absolute left-2.5 w-3.5 h-3.5 pointer-events-none z-10"
@@ -118,7 +118,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
           setOpen(true);
         }}
         placeholder="Search races..."
-        className="pl-8 pr-3 py-1.5 rounded-lg w-36 sm:w-48 outline-none"
+        className="h-8 w-[5.5rem] rounded-lg pl-8 pr-2 outline-none max-sm:placeholder:text-transparent min-[420px]:w-24 sm:w-44 sm:pr-3"
         style={{
           fontSize: 16,
           background: "var(--app-bg)",
@@ -128,6 +128,14 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
         }}
         autoComplete="off"
       />
+      {!query && (
+        <span
+          className="pointer-events-none absolute left-8 right-1 truncate whitespace-nowrap text-sm sm:hidden"
+          style={{ color: "var(--app-text-muted)" }}
+        >
+          Search
+        </span>
+      )}
 
       {open && results.length > 0 && dropdownRect && typeof document !== "undefined" && createPortal(
         <div

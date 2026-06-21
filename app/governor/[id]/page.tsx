@@ -4,8 +4,6 @@ import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import BackButton from "@/components/BackButton";
-import AppHeader from "@/components/AppHeader";
 import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
@@ -48,7 +46,6 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
   const termStarted = entry.termLength ? String(entry.nextElection - entry.termLength) : "TBD";
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <AppHeader back={<BackButton />} />
 
       <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
         <div className="mb-3 flex flex-col gap-1.5">
@@ -134,7 +131,6 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <AppHeader back={<BackButton />} />
 
       <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
         {/* Title block */}

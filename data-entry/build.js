@@ -770,7 +770,57 @@ for (const key of Object.keys(stateLegData)) {
 
 // ── Output forecastData.ts ────────────────────────────────────────────────────
 
-function j(v) { return JSON.stringify(v, null, 2); }
+// Returns true if v is an object (not array) with only primitive values.
+function isSimpleObject(v) {
+  if (v === null || Array.isArray(v) || typeof v !== 'object') return false;
+  return Object.values(v).every(val => val === null || typeof val !== 'object');
+}
+
+// Returns true if v can be serialized on a single line (primitive, simple object, or
+// array whose every element is a primitive or simple object).
+function isInlinable(v) {
+  if (v === null || typeof v !== 'object') return true;
+  if (Array.isArray(v)) return v.every(i => i === null || typeof i !== 'object');
+  return isSimpleObject(v);
+}
+
+// Serialize v onto a single line (no newlines).
+function inlineVal(v) {
+  if (v === null) return 'null';
+  if (typeof v !== 'object') return JSON.stringify(v);
+  if (Array.isArray(v)) return '[' + v.map(inlineVal).join(', ') + ']';
+  const pairs = Object.entries(v).map(([k, u]) => JSON.stringify(k) + ': ' + JSON.stringify(u));
+  return '{ ' + pairs.join(', ') + ' }';
+}
+
+// Compact serializer: keeps flat (all-primitive) objects/arrays on one line,
+// expands complex structures. Produces valid TypeScript object literal syntax.
+function j(v, depth) {
+  if (depth === undefined) depth = 0;
+  if (v === null) return 'null';
+  if (typeof v !== 'object') return JSON.stringify(v);
+
+  const pad  = '  '.repeat(depth);
+  const pad1 = '  '.repeat(depth + 1);
+
+  if (!Array.isArray(v)) {
+    if (isSimpleObject(v)) return inlineVal(v);
+    const lines = Object.entries(v).map(([k, u]) => pad1 + JSON.stringify(k) + ': ' + j(u, depth + 1));
+    return '{\n' + lines.join(',\n') + '\n' + pad + '}';
+  }
+
+  if (v.length === 0) return '[]';
+
+  // Array of all-inlinable items: put each item on its own line (1 line per item).
+  // Exception: if every item is a primitive and the whole array fits on one line, inline it.
+  if (v.every(isInlinable)) {
+    const allPrimitive = v.every(i => i === null || typeof i !== 'object');
+    if (allPrimitive && inlineVal(v).length <= 80) return inlineVal(v);
+    return '[\n' + v.map(i => pad1 + inlineVal(i)).join(',\n') + '\n' + pad + ']';
+  }
+
+  return '[\n' + v.map(i => pad1 + j(i, depth + 1)).join(',\n') + '\n' + pad + ']';
+}
 
 const output = `// ⚠️  AUTO-GENERATED — do not edit by hand.
 // Edit your Google Sheets, export CSVs to data-entry/, then run:

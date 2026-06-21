@@ -1,16 +1,67 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import SearchBar from "@/components/SearchBar";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
-import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry } from "@/data/forecastData";
+import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry, electionYear, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
+import { statesData } from "@/data/statesData";
 import Sidebar from "./Sidebar";
+import RaceTable from "./RaceTable";
+import StatesTable, { StateRow } from "./StatesTable";
+import NationalCountyMap from "./NationalCountyMap";
+import StatesOverviewMap, { type MapMode } from "./StatesOverviewMap";
 import Link from "next/link";
+import { filterMapZoomEvent } from "@/lib/mapZoom";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
-// 2026 forecast geography: 2024 baseline plus states redistricted for 2026.
 const HOUSE_DISTRICTS_2026_URL = "/congressional-districts-2026.json";
+
+function racePartyOverview(race: RaceForecast): "D" | "R" | "I" {
+  if ((race as any).seatParty) return (race as any).seatParty;
+  if (race.candidates?.dem.incumbent) return "D";
+  if (race.candidates?.rep.incumbent) return "R";
+  return race.margin >= 0 ? "D" : "R";
+}
+
+const stateRows: StateRow[] = statesData.map((state) => {
+  const govRace = governorData.find((r) => r.id === state.abbr);
+  const govNoEl = !govRace ? governorNoElection.find((e) => e.abbr === state.abbr) : null;
+  const govParty: "D" | "R" | "I" | null = govRace ? racePartyOverview(govRace) : (govNoEl?.party ?? null);
+  const [senSeat1, senSeat2] = senateCurrent[state.abbr] ?? ["R", "R"];
+  const seats = [senSeat1, senSeat2];
+  const senateDem = seats.filter((p) => p === "D").length;
+  const senateRep = seats.filter((p) => p === "R").length;
+  const senateInd = seats.filter((p) => p === "I").length;
+  const houseRaces = houseData.filter((r) => r.state === state.name);
+  const del2024 = (houseDelegationHistory[state.name] ?? []).find((e) => e.year === 2024);
+  const houseDem = del2024 ? del2024.demSeats : houseRaces.filter((r) => racePartyOverview(r) === "D").length;
+  const houseRep = del2024 ? del2024.repSeats : houseRaces.filter((r) => racePartyOverview(r) === "R").length;
+  const legEntries = stateLegData[state.name] ?? [];
+  const latestLegHouse = legEntries.filter(e => e.type === "House" && e.demSeats != null && e.repSeats != null).sort((a, b) => b.year - a.year)[0];
+  const latestLegSenate = legEntries.filter(e => e.type === "Senate" && e.demSeats != null && e.repSeats != null).sort((a, b) => b.year - a.year)[0];
+  return {
+    id: state.id,
+    name: state.name,
+    abbr: state.abbr,
+    govParty,
+    senateDem,
+    senateRep,
+    senateInd,
+    houseDem,
+    houseRep,
+    houseTotal: houseRaces.length,
+    pres2024: pres2024[state.abbr] ?? null,
+    pvi2026: statePvi[state.abbr] ?? null,
+    stateLegHouseDem: latestLegHouse?.demSeats ?? null,
+    stateLegHouseRep: latestLegHouse?.repSeats ?? null,
+    stateLegSenateDem: latestLegSenate?.demSeats ?? null,
+    stateLegSenateRep: latestLegSenate?.repSeats ?? null,
+  };
+});
+
+const abbrByStateName: Record<string, string> = Object.fromEntries(
+  statesData.map((s) => [s.name, s.abbr])
+);
 
 const LEGEND = [
   { color: "#1a4480", label: "Safe D" },
@@ -56,7 +107,7 @@ export const LIGHT_THEME = {
   hoverUnfilled: "#dde2e7",
   mapUnfilled: "#c8cdd3",
   mapStroke: "#f6f8fa",
-  hoverStroke: "#555555",
+  hoverStroke: "#000000",
   legendBg: "rgba(255,255,255,0.92)",
   badgeBg: "rgba(255,255,255,0.92)",
   candidateDemBg: "#dbeafe",
@@ -69,9 +120,64 @@ export const LIGHT_THEME = {
 
 export type Theme = typeof DARK_THEME;
 
+function SeatScorecard({
+  raceType,
+  demSeats,
+  repSeats,
+  totalSeats,
+  theme: t,
+  mobile = false,
+}: {
+  raceType: RaceType;
+  demSeats: number;
+  repSeats: number;
+  totalSeats: number;
+  theme: Theme;
+  mobile?: boolean;
+}) {
+  const title = raceType === "house" ? "House Seats" : raceType === "senate" ? "Senate Seats" : "Governor Seats";
+
+  return (
+    <div
+      className={mobile ? "rounded-xl p-2" : "w-[132px] rounded-lg p-2 backdrop-blur-sm"}
+      style={{
+        background: mobile ? t.panel : t.legendBg,
+        border: `1px solid ${t.border}`,
+        boxShadow: mobile ? "0 2px 8px rgba(0,0,0,0.08)" : "0 4px 16px rgba(0,0,0,0.25)",
+      }}
+    >
+      <div className={mobile ? "mb-1.5 text-center text-[8px] font-bold uppercase tracking-wider" : "mb-1.5 text-center text-[8px] font-bold uppercase tracking-wider"} style={{ color: t.textMuted }}>
+        {mobile ? `Projected ${title}` : title}
+      </div>
+      <div className={mobile ? "grid grid-cols-2 gap-1.5" : "grid grid-cols-2 gap-1.5"}>
+        <div className={mobile ? "flex flex-col items-center rounded-md py-1.5" : "flex flex-col items-center rounded-md py-1.5"} style={{ background: t.candidateDemBg }}>
+          <span className={mobile ? "text-lg font-bold leading-none" : "text-lg font-bold leading-none"} style={{ color: t.demText }}>{demSeats}</span>
+          <span className="mt-0.5 text-[8px] font-semibold" style={{ color: t.demText }}>Dem</span>
+        </div>
+        <div className={mobile ? "flex flex-col items-center rounded-md py-1.5" : "flex flex-col items-center rounded-md py-1.5"} style={{ background: t.candidateRepBg }}>
+          <span className={mobile ? "text-lg font-bold leading-none" : "text-lg font-bold leading-none"} style={{ color: t.repText }}>{repSeats}</span>
+          <span className="mt-0.5 text-[8px] font-semibold" style={{ color: t.repText }}>Rep</span>
+        </div>
+      </div>
+      <div className={mobile ? "mt-1.5 text-center text-[8px]" : "mt-1.5 text-center text-[8px]"} style={{ color: t.textVeryMuted }}>
+        of {totalSeats} total seats
+      </div>
+    </div>
+  );
+}
+
 export default function ForecastMap() {
+  const [activeTab, setActiveTab] = useState<"overview" | "states" | "counties" | RaceType>(() => {
+    if (typeof window !== "undefined") {
+      const urlTab = new URLSearchParams(window.location.search).get("tab");
+      if (urlTab === "overview" || urlTab === "states" || urlTab === "counties" || urlTab === "house" || urlTab === "senate" || urlTab === "governor") return urlTab;
+    }
+    return "overview";
+  });
   const [raceType, setRaceType] = useState<RaceType>(() => {
     if (typeof window !== "undefined") {
+      const urlTab = new URLSearchParams(window.location.search).get("tab") as RaceType | null;
+      if (urlTab === "house" || urlTab === "senate" || urlTab === "governor") return urlTab;
       const stored = localStorage.getItem("raceType") as RaceType | null;
       if (stored === "house" || stored === "senate" || stored === "governor") return stored;
     }
@@ -79,51 +185,75 @@ export default function ForecastMap() {
   });
   const [selected, setSelected] = useState<RaceForecast | null>(null);
   const [selectedNoElection, setSelectedNoElection] = useState<NoElectionEntry | null>(null);
+  const [selectedStateRow, setSelectedStateRow] = useState<StateRow | null>(null);
+  const [selectedStateMode, setSelectedStateMode] = useState<MapMode>("default");
   const [hovered, setHovered] = useState<RaceForecast | null>(null);
   const [hoveredNoElection, setHoveredNoElection] = useState<NoElectionEntry | null>(null);
   const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
-  const [mapSize, setMapSize] = useState<{ w: number; h: number }>({ w: 0, h: 0 });
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const mapSizeRef = useRef<{ w: number; h: number }>({ w: 800, h: 520 });
+  const touchStartRef = useRef<{ x: number; y: number } | null>(null);
+  const ignoreClickUntilRef = useRef(0);
+  const [darkMode, setDarkMode] = useState<boolean>(() =>
+    typeof window !== "undefined" && document.documentElement.classList.contains("dark")
+  );
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
 
   useEffect(() => {
-    const stored = localStorage.getItem("darkMode") === "true";
-    setDarkMode(stored);
+    const observer = new MutationObserver(() => {
+      setDarkMode(document.documentElement.classList.contains("dark"));
+    });
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-  }, [darkMode]);
+    function setTab(type: string | null) {
+      if (type !== "overview" && type !== "house" && type !== "senate" && type !== "governor" && type !== "states" && type !== "counties") return;
 
-  function toggleDarkMode() {
-    const next = !darkMode;
-    setDarkMode(next);
-    localStorage.setItem("darkMode", String(next));
-  }
+      setActiveTab(type);
+      setSelected(null);
+      setSelectedNoElection(null);
+      setSelectedStateRow(null);
+      localStorage.setItem("activeTab", type);
+      if (type === "house" || type === "senate" || type === "governor") {
+        setRaceType(type);
+        localStorage.setItem("raceType", type);
+      }
+    }
+
+    function handleTabChange(event: Event) {
+      setTab((event as CustomEvent<string>).detail);
+    }
+
+    function handleHistoryChange() {
+      setTab(new URLSearchParams(window.location.search).get("tab"));
+    }
+
+    handleHistoryChange();
+    window.addEventListener("forecast-tab-change", handleTabChange);
+    window.addEventListener("popstate", handleHistoryChange);
+    return () => {
+      window.removeEventListener("forecast-tab-change", handleTabChange);
+      window.removeEventListener("popstate", handleHistoryChange);
+    };
+  }, []);
 
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
-  const isHouse = raceType === "house";
+  const isOverview = activeTab === "overview";
+  const isHouse = !isOverview && raceType === "house";
   const geoUrl = isHouse ? HOUSE_DISTRICTS_2026_URL : STATES_URL;
-  const data = raceType === "house" ? houseData : raceType === "senate" ? senateData : governorData;
-
-  // Seats not up for election in 2026 (holdovers with known party)
-  // Senate: 65 holdovers (100 total - 35 Class 2 races); current split 34D/31R
-  // Governor: 14 states not voting in 2026; current split 6D/8R
-  // House: all 435 seats up every cycle, no holdovers
-  const HOLDOVERS = {
-    senate:   { dem: 34, rep: 31 },
-    governor: { dem: 6,  rep: 8  },
-    house:    { dem: 0,  rep: 0  },
+  const data = isOverview ? [] as RaceForecast[] : raceType === "house" ? houseData : raceType === "senate" ? senateData : governorData;
+  const showSeatScorecard = activeTab === "house" || activeTab === "senate" || activeTab === "governor";
+  const holdovers = {
+    senate: { dem: 34, rep: 31 },
+    governor: { dem: 6, rep: 8 },
+    house: { dem: 0, rep: 0 },
   };
-  const TOTAL_SEATS = { senate: 100, governor: 50, house: 435 };
-
-  const ratedDem = data.filter((d) => d.margin >= 0).length;
-  const ratedRep = data.filter((d) => d.margin < 0).length;
-  const demSeats = HOLDOVERS[raceType].dem + ratedDem;
-  const repSeats = HOLDOVERS[raceType].rep + ratedRep;
-  const totalSeats = TOTAL_SEATS[raceType];
-  const demPct = (demSeats / totalSeats) * 100;
+  const totalSeatsByType = { senate: 100, governor: 50, house: 435 };
+  const demSeats = holdovers[raceType].dem + data.filter((race) => race.margin >= 0).length;
+  const repSeats = holdovers[raceType].rep + data.filter((race) => race.margin < 0).length;
+  const totalSeats = totalSeatsByType[raceType];
 
   function findMatch(geo: any): RaceForecast | undefined {
     if (isHouse) {
@@ -143,100 +273,35 @@ export default function ForecastMap() {
   }
 
   return (
-    <div className="flex flex-col fixed inset-0 overflow-hidden" style={{ background: t.bg }}>
+    <div className="min-h-screen" style={{ background: t.bg }}>
 
-      {/* ── Top bar ── */}
-      <header
-        className="flex items-center justify-between px-6 h-14 shrink-0 z-10"
-        style={{ background: t.panel, borderBottom: `1px solid ${t.border}` }}
-      >
-        <div className="flex items-center gap-4">
-          <span className="font-bold text-lg tracking-tight" style={{ color: t.textPrimary }}>
-            CT Strategies
-          </span>
-          <div className="hidden md:block h-4 w-px" style={{ background: t.border }} />
-          <nav className="hidden md:flex items-center gap-1">
-            {([
-              { label: "States", href: "/states" },
-              { label: "House", href: "/house" },
-              { label: "Senate", href: "/senate" },
-              { label: "Governor", href: "/governor" },
-              { label: "Analysis", href: "/analysis" },
-            ] as { label: string; href: string }[]).map(({ label, href }) => (
-              <Link
-                key={href}
-                href={href}
-                className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-                style={{ color: t.textMuted }}
-              >
-                {label}
-              </Link>
-            ))}
-          </nav>
-          <span className="hidden sm:block text-xs" style={{ color: t.textMuted }}>
-            Updated Apr 9, 2026
-          </span>
-        </div>
+      {/* ── Page content ── */}
+      <div className="px-3 py-3 sm:px-4 sm:py-4 md:px-6 md:py-5">
 
-        <div className="flex items-center gap-3">
-          <SearchBar inputStyle={{ background: t.bg, border: `1px solid ${t.border}`, color: t.textPrimary }} />
-          {/* Dark / Light mode toggle */}
-          <button
-            onClick={toggleDarkMode}
-            className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors"
-            style={{ background: t.tabBg, color: t.textMuted }}
-            title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
-          >
-            {darkMode ? (
-              /* Sun icon */
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
-              </svg>
-            ) : (
-              /* Moon icon */
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-              </svg>
-            )}
-          </button>
-        </div>
-      </header>
+        {/* ── Mobile seat scorecard ── */}
+        {showSeatScorecard && (
+          <div className="mb-3 md:hidden">
+            <SeatScorecard
+              raceType={raceType}
+              demSeats={demSeats}
+              repSeats={repSeats}
+              totalSeats={totalSeats}
+              theme={t}
+              mobile
+            />
+          </div>
+        )}
 
-      {/* ── Mobile nav bar ── */}
-      <nav
-        className="md:hidden shrink-0 flex border-b"
-        style={{ background: t.panel, borderColor: t.border }}
-      >
-        {([
-          { label: "States", href: "/states" },
-          { label: "House", href: "/house" },
-          { label: "Senate", href: "/senate" },
-          { label: "Governor", href: "/governor" },
-          { label: "Analysis", href: "/analysis" },
-        ] as { label: string; href: string }[]).map(({ label, href }) => (
-          <Link
-            key={href}
-            href={href}
-            className="flex-1 py-2 text-center text-sm font-medium transition-colors"
-            style={{ color: t.textMuted }}
-          >
-            {label}
-          </Link>
-        ))}
-      </nav>
-
-      {/* ── Body ── */}
-      <div className="flex flex-col flex-1 overflow-hidden">
-
-        {/* ── Map ── */}
-        <div
-          className="relative flex-1 overflow-hidden"
-          style={{}}
+        {/* ── Map card ── */}
+        {(activeTab === "house" || activeTab === "senate" || activeTab === "governor" || activeTab === "counties" || activeTab === "states") && <div
+          className="relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-[520px]"
+          style={{
+            border: `1px solid ${t.border}`,
+            boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
+          }}
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
-            setMapSize({ w: rect.width, h: rect.height });
+            mapSizeRef.current = { w: rect.width, h: rect.height };
             setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
           }}
         >
@@ -256,8 +321,8 @@ export default function ForecastMap() {
             const edgePad = 8;
             let left = mousePos.x + offset;
             let top = mousePos.y + offset;
-            const containerW = mapSize.w || 800;
-            const containerH = mapSize.h || 600;
+            const containerW = mapSizeRef.current.w || 800;
+            const containerH = mapSizeRef.current.h || 600;
             if (left + tipW + edgePad > containerW) {
               left = mousePos.x - tipW - offset;
             }
@@ -332,8 +397,8 @@ export default function ForecastMap() {
             const edgePad = 8;
             let left = mousePos.x + offset;
             let top = mousePos.y + offset;
-            const containerW = mapSize.w || 800;
-            const containerH = mapSize.h || 600;
+            const containerW = mapSizeRef.current.w || 800;
+            const containerH = mapSizeRef.current.h || 600;
             if (left + tipW + edgePad > containerW) {
               left = mousePos.x - tipW - offset;
             }
@@ -365,18 +430,32 @@ export default function ForecastMap() {
             );
           })()}
 
-          <ComposableMap
+          {activeTab === "counties"
+            ? <NationalCountyMap theme={t} />
+            : activeTab === "states"
+            ? <StatesOverviewMap rows={stateRows} theme={t} onSelect={setSelectedStateRow} onModeChange={setSelectedStateMode} />
+            : <ComposableMap
             projection="geoAlbersUsa"
+            projectionConfig={{ scale: 1200 }}
             style={{ width: "100%", height: "100%" }}
-            className="-translate-y-[12%] md:translate-y-0"
           >
-            <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
+            <ZoomableGroup
+              key={mapKey}
+              filterZoomEvent={filterMapZoomEvent}
+              onMoveEnd={() => setViewChanged(true)}
+            >
             <Geographies geography={geoUrl}>
               {({ geographies }: any) =>
                 geographies.map((geo: any) => {
                   const match = findMatch(geo);
                   const noElMatch = !match ? findNoElection(geo) : undefined;
-                  const fill = match ? getRaceColor(match.margin) : t.mapUnfilled;
+                  const fill = isOverview
+                    ? (() => {
+                        const abbr = abbrByStateName[geo.properties?.name ?? ""];
+                        const margin = abbr ? (pres2024[abbr] ?? null) : null;
+                        return margin !== null ? getRaceColor(margin) : t.mapUnfilled;
+                      })()
+                    : match ? getRaceColor(match.margin) : t.mapUnfilled;
                   const isSelected = selected && match && selected.id === match.id;
                   const isSelectedNoEl = selectedNoElection && noElMatch && selectedNoElection.abbr === noElMatch.abbr;
                   const isInteractive = !!(match || noElMatch);
@@ -391,6 +470,24 @@ export default function ForecastMap() {
                       }}
                       onMouseLeave={() => { setHovered(null); setHoveredNoElection(null); }}
                       onClick={() => {
+                        if (Date.now() < ignoreClickUntilRef.current) return;
+                        if (match) { setSelected(match); setSelectedNoElection(null); }
+                        else if (noElMatch) { setSelectedNoElection(noElMatch); setSelected(null); }
+                      }}
+                      onPointerDown={(e) => {
+                        if (e.pointerType !== "touch") {
+                          touchStartRef.current = null;
+                          return;
+                        }
+                        touchStartRef.current = { x: e.clientX, y: e.clientY };
+                      }}
+                      onPointerUp={(e) => {
+                        if (e.pointerType !== "touch") return;
+                        const start = touchStartRef.current;
+                        touchStartRef.current = null;
+                        if (!start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
+
+                        ignoreClickUntilRef.current = Date.now() + 500;
                         if (match) { setSelected(match); setSelectedNoElection(null); }
                         else if (noElMatch) { setSelectedNoElection(noElMatch); setSelected(null); }
                       }}
@@ -398,7 +495,7 @@ export default function ForecastMap() {
                         default: {
                           fill,
                           stroke: (isSelected || isSelectedNoEl) ? t.hoverStroke : t.mapStroke,
-                          strokeWidth: (isSelected || isSelectedNoEl) ? 1.5 : (isHouse ? 0.4 : 1.0),
+                          strokeWidth: (isSelected || isSelectedNoEl) ? (isHouse ? 2 : 3.5) : (isHouse ? 0.4 : 1.0),
                           outline: "none",
                         },
                         hover: {
@@ -411,7 +508,7 @@ export default function ForecastMap() {
                         pressed: {
                           fill,
                           stroke: t.hoverStroke,
-                          strokeWidth: 1.5,
+                          strokeWidth: isHouse ? 2 : 3.5,
                           outline: "none",
                         },
                       }}
@@ -421,267 +518,418 @@ export default function ForecastMap() {
               }
             </Geographies>
             </ZoomableGroup>
-          </ComposableMap>
+          </ComposableMap>}
 
           {/* ── Reset zoom button ── */}
-          {viewChanged && <div
-            className="block absolute rounded-xl p-1.5 backdrop-blur-sm z-10"
-            style={{
-              top: "1rem",
-              left: "1rem",
-              background: t.legendBg,
-              border: `1px solid ${t.border}`,
-              boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
-            }}
-          >
-            <nav className="flex rounded-lg p-1" style={{ background: t.tabBg }}>
-              <button
-                onClick={() => { setMapKey(k => k + 1); setViewChanged(false); }}
-                className="px-2 py-1 rounded-md text-xs font-medium transition-all text-center"
-                style={{ color: t.textMuted }}
-              >
-                Reset
-              </button>
-            </nav>
-          </div>}
+          {viewChanged && (
+            <button
+              onClick={() => { setMapKey(k => k + 1); setViewChanged(false); }}
+              className="absolute z-10 bottom-3 left-2 md:bottom-auto md:top-4 md:left-4 rounded-lg px-2.5 py-1 text-xs font-medium backdrop-blur-sm"
+              style={{ background: t.legendBg, border: `1px solid ${t.border}`, color: t.textMuted, boxShadow: "0 2px 8px rgba(0,0,0,0.18)" }}
+            >
+              Reset
+            </button>
+          )}
 
-          {/* ── Left column: H/S/G + Scorecard + Legend ── */}
+          {/* ── Desktop seat scorecard ── */}
+          {showSeatScorecard && (
+            <div className="absolute bottom-[52px] left-4 z-10 hidden md:block">
+              <SeatScorecard
+                raceType={raceType}
+                demSeats={demSeats}
+                repSeats={repSeats}
+                totalSeats={totalSeats}
+                theme={t}
+              />
+            </div>
+          )}
+
+          {/* ── Legend (bottom-left) ── */}
           <div
-            className="hidden md:flex flex-col absolute justify-between items-start"
-            style={{ bottom: "12px", left: "1rem", height: "260px" }}
+            className="hidden md:flex absolute items-center gap-1 p-1"
+            style={{ bottom: "12px", left: "1rem" }}
           >
-            {/* Race-type toggle */}
-            <div
-              className="rounded-xl p-2 backdrop-blur-sm"
-              style={{ background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
-            >
-              <nav className="flex rounded-lg p-1 gap-0.5" style={{ background: t.tabBg }}>
-                {([["house", "H"], ["senate", "S"], ["governor", "G"]] as [RaceType, string][]).map(([type, label]) => (
-                  <button
-                    key={type}
-                    onClick={() => { setRaceType(type); setSelected(null); setSelectedNoElection(null); localStorage.setItem("raceType", type); }}
-                    className="w-8 py-1.5 rounded-md text-sm font-medium transition-all text-center"
-                    style={raceType === type ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }}
-                  >
-                    {label}
-                  </button>
-                ))}
-              </nav>
-            </div>
-
-            {/* Seat Scorecard */}
-            <div
-              className="rounded-xl p-3 backdrop-blur-sm"
-              style={{ background: t.legendBg, border: `1px solid ${t.border}`, width: 175, boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
-            >
-              <div className="text-[9px] font-semibold uppercase tracking-wider mb-2 text-center" style={{ color: t.textMuted }}>
-                {raceType === "house" ? "House" : raceType === "senate" ? "Senate" : "Governors"} Seats
+            {LEGEND.map(({ color, label }) => (
+              <div key={label} className="flex flex-col items-center gap-0.5">
+                <div style={{ background: color }} className="w-5 h-2.5 rounded-sm" />
+                <span className="text-[8px] whitespace-nowrap" style={{ color: t.textMuted }}>{label}</span>
               </div>
-              <div className="flex gap-2 mb-2">
-                <div className="flex-1 flex flex-col items-center rounded-lg py-2.5" style={{ background: "rgba(26,68,128,0.18)" }}>
-                  <span className="text-2xl font-bold leading-none" style={{ color: t.demText }}>{demSeats}</span>
-                  <span className="text-[10px] font-semibold mt-1" style={{ color: t.demText }}>Dem</span>
-                </div>
-                <div className="flex-1 flex flex-col items-center rounded-lg py-2.5" style={{ background: "rgba(139,26,26,0.18)" }}>
-                  <span className="text-2xl font-bold leading-none" style={{ color: t.repText }}>{repSeats}</span>
-                  <span className="text-[10px] font-semibold mt-1" style={{ color: t.repText }}>Rep</span>
-                </div>
-              </div>
-              <div className="flex h-1.5 rounded-full overflow-hidden">
-                <div style={{ width: `${demPct}%`, background: "#1a4480" }} />
-                <div style={{ width: `${100 - demPct}%`, background: "#8b1a1a" }} />
-              </div>
-              <div className="mt-2 text-center text-[9px]" style={{ color: t.textVeryMuted }}>
-                of {totalSeats} total seats
-              </div>
-            </div>
-
-            {/* Legend */}
-            <div
-              className="rounded-lg p-2 backdrop-blur-sm"
-              style={{ background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
-            >
-              <div className="flex items-center gap-1">
-                {LEGEND.map(({ color, label }) => (
-                  <div key={label} className="flex flex-col items-center gap-0.5">
-                    <div style={{ background: color }} className="w-5 h-2.5 rounded-sm" />
-                    <span className="text-[8px] whitespace-nowrap" style={{ color: t.textMuted }}>{label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* ── Sidebar (floating panel) ── */}
           <Sidebar selected={selected} raceType={raceType} onClose={() => setSelected(null)} theme={t} />
 
           {/* ── No-Election Panel (desktop floating) ── */}
-          {selectedNoElection && (
-            <div
-              className="hidden md:flex flex-col absolute z-30 rounded-xl backdrop-blur-sm"
-              style={{
-                right: "1.25rem",
-                bottom: "73px",
-                width: 172,
-                background: t.legendBg,
-                border: `1px solid ${t.border}`,
-                boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
-                color: t.textPrimary,
-              }}
-            >
-              {/* Header */}
-              <div className="p-2 pb-1.5" style={{ borderBottom: `1px solid ${t.border}` }}>
-                <div className="flex items-start justify-between gap-1">
-                  <h2 className="text-[11px] font-bold leading-tight flex-1 min-w-0" style={{ color: t.textPrimary }}>
-                    {selectedNoElection.state}
-                  </h2>
-                  <button onClick={() => setSelectedNoElection(null)} className="shrink-0 mt-0.5" style={{ color: t.textVeryMuted }}>
-                    <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
+          {selectedNoElection && (() => {
+            const noElColor = selectedNoElection.party === "D" ? t.demText : selectedNoElection.party === "R" ? t.repText : t.textPrimary;
+            const noElBg = selectedNoElection.party === "D" ? t.candidateDemBg : selectedNoElection.party === "R" ? t.candidateRepBg : t.tabBg;
+            return (
+              <div
+                className="absolute z-30 hidden flex-col overflow-hidden rounded-xl backdrop-blur-sm md:flex"
+                style={{
+                  right: "1.25rem",
+                  bottom: "12px",
+                  width: 172,
+                  background: t.legendBg,
+                  border: `1px solid ${t.border}`,
+                  boxShadow: "0 10px 28px rgba(0,0,0,0.22)",
+                  color: t.textPrimary,
+                }}
+              >
+                {/* Header */}
+                <div className="shrink-0 p-2 pb-1.5" style={{ borderBottom: `1px solid ${t.border}` }}>
+                  <div className="flex items-center justify-between gap-1.5">
+                    <h2 className="min-w-0 flex-1 truncate text-sm font-bold leading-tight" style={{ color: t.textPrimary }}>
+                      {selectedNoElection.state}
+                    </h2>
+                    <span
+                      className="rounded-full px-1.5 py-0.5 text-[9px] font-bold shrink-0"
+                      style={{ background: t.tabBg, color: t.textMuted }}
+                    >
+                      No Election
+                    </span>
+                    <button
+                      onClick={() => setSelectedNoElection(null)}
+                      className="flex h-5 w-5 shrink-0 items-center justify-center rounded transition-colors"
+                      style={{ color: t.textVeryMuted, background: t.tabBg }}
+                      aria-label="Close"
+                    >
+                      <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 mt-1 flex-wrap">
-                  <div
-                    className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full inline-block"
+                {/* Body */}
+                <div className="p-2 flex flex-col gap-1.5">
+                  {/* Incumbent card */}
+                  <div className="rounded-md p-2" style={{ background: t.tabBg }}>
+                    <div className="text-[8px] font-bold uppercase tracking-wider mb-1" style={{ color: t.textMuted }}>
+                      Incumbent
+                    </div>
+                    <div className="flex items-center justify-between gap-1">
+                      <div className="truncate text-[10px] font-bold leading-tight" style={{ color: noElColor }}>
+                        {selectedNoElection.incumbent}
+                      </div>
+                      <span
+                        className="shrink-0 text-[9px] font-semibold px-1 py-0.5 rounded"
+                        style={{ background: noElBg, color: noElColor }}
+                      >
+                        {selectedNoElection.party}
+                      </span>
+                    </div>
+                  </div>
+                  {/* Next election card */}
+                  <div className="rounded-md p-2" style={{ background: t.tabBg }}>
+                    <div className="text-[8px] font-bold uppercase tracking-wider mb-1" style={{ color: t.textMuted }}>
+                      Next Election
+                    </div>
+                    <div className="text-base font-bold leading-none" style={{ color: t.textPrimary }}>
+                      {selectedNoElection.nextElection}
+                    </div>
+                  </div>
+                  {/* More info link */}
+                  <Link
+                    href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
+                    className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
                     style={{ background: t.tabBg, color: t.textMuted }}
                   >
-                    No Election in 2026
-                  </div>
-                  <Link
-                    href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}
-                    className="text-[9px] flex items-center gap-0.5 transition-colors"
-                    style={{ color: t.textMuted }}
-                  >
-                    View details
-                    <svg className="w-2 h-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    More Info
+                    <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </Link>
                 </div>
               </div>
-              {/* Incumbent info */}
-              <div className="p-2 flex flex-col gap-1.5">
-                <div>
-                  <div className="text-[8px] font-semibold uppercase tracking-wider mb-0.5" style={{ color: t.textMuted }}>
-                    Incumbent
-                  </div>
-                  <div className="flex items-center gap-1.5">
-                    <div
-                      className="text-[10px] font-bold leading-none"
-                      style={{ color: selectedNoElection.party === "D" ? t.demText : selectedNoElection.party === "R" ? t.repText : t.textPrimary }}
-                    >
-                      {selectedNoElection.incumbent}
-                    </div>
-                    <span
-                      className="text-[9px] font-semibold px-1 py-0.5 rounded"
-                      style={{
-                        background: selectedNoElection.party === "D" ? t.candidateDemBg : selectedNoElection.party === "R" ? t.candidateRepBg : t.tabBg,
-                        color: selectedNoElection.party === "D" ? t.demText : selectedNoElection.party === "R" ? t.repText : t.textPrimary,
-                      }}
-                    >
-                      ({selectedNoElection.party})
-                    </span>
-                  </div>
-                </div>
-                <div>
-                  <div className="text-[8px] font-semibold uppercase tracking-wider mb-0.5" style={{ color: t.textMuted }}>
-                    Next Election
-                  </div>
-                  <div className="text-[13px] font-bold" style={{ color: t.textPrimary }}>
-                    {selectedNoElection.nextElection}
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
+            );
+          })()}
 
-          {/* ── No-Election Panel (mobile strip) ── */}
-          {selectedNoElection && (
+        </div>}
+
+        {/* ── Mobile selected-race panel (below map) ── */}
+        {selected && (() => {
+          const demPct = (100 + selected.margin) / 2;
+          const repPct = (100 - selected.margin) / 2;
+          const { bg: rBg, text: rText } = getRatingColors(selected.rating);
+          const marginIsD = selected.margin >= 0;
+          return (
             <div
-              className="md:hidden fixed bottom-14 left-0 right-0 z-30 flex items-center h-14 px-3 gap-3"
-              style={{ background: t.panel, borderTop: `1px solid ${t.border}`, borderBottom: `1px solid ${t.border}` }}
+              className="mt-3 overflow-hidden rounded-xl md:hidden"
+              style={{ border: `1px solid ${t.border}`, background: t.legendBg, boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}
             >
-              <div className="flex flex-col justify-center min-w-0 flex-1">
-                <span className="text-xs font-bold leading-tight truncate" style={{ color: t.textPrimary }}>
-                  {selectedNoElection.state}
-                </span>
-                <div className="flex items-center gap-1.5 mt-0.5">
-                  <span
-                    className="text-[9px] font-semibold px-1.5 py-0.5 rounded-full inline-block"
-                    style={{ background: t.tabBg, color: t.textMuted }}
-                  >
-                    No Election in 2026
-                  </span>
-                  <Link
-                    href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}
-                    className="text-[9px] shrink-0"
-                    style={{ color: t.textMuted }}
-                  >
-                    Details ↗
-                  </Link>
-                </div>
-              </div>
-              <div className="w-px self-stretch shrink-0" style={{ background: t.border }} />
-              <div className="flex flex-col justify-center gap-0.5 shrink-0">
-                <div className="text-[8px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>Incumbent</div>
-                <div
-                  className="text-[10px] font-bold"
-                  style={{ color: selectedNoElection.party === "D" ? t.demText : selectedNoElection.party === "R" ? t.repText : t.textPrimary }}
+              {/* Header */}
+              <div className="flex items-center gap-2 p-3 pb-2.5" style={{ borderBottom: `1px solid ${t.border}` }}>
+                <span className="min-w-0 flex-1 truncate text-sm font-bold" style={{ color: t.textPrimary }}>{selected.name}</span>
+                <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-bold" style={{ background: rBg, color: rText }}>{selected.rating}</span>
+                <button
+                  onClick={() => setSelected(null)}
+                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded transition-colors"
+                  style={{ color: t.textVeryMuted, background: t.tabBg }}
+                  aria-label="Close"
                 >
-                  {selectedNoElection.incumbent} ({selectedNoElection.party})
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              {/* Body */}
+              <div className="grid grid-cols-[1fr_auto] gap-2 p-3">
+                <div className="rounded-md p-2" style={{ background: t.tabBg }}>
+                  <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Candidates</div>
+                  {selected.candidates ? (
+                    <>
+                      <div className="flex items-baseline justify-between gap-2 mb-0.5">
+                        <span className="truncate text-[10px] font-bold" style={{ color: t.textPrimary }}>
+                          {selected.candidates.dem.name}{selected.candidates.dem.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}
+                        </span>
+                        <span className="shrink-0 text-[10px] font-bold tabular-nums" style={{ color: t.demText }}>{demPct.toFixed(1)}%</span>
+                      </div>
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="truncate text-[10px] font-bold" style={{ color: t.textPrimary }}>
+                          {selected.candidates.rep.name}{selected.candidates.rep.incumbent && <span style={{ opacity: 0.7 }}> (inc)</span>}
+                        </span>
+                        <span className="shrink-0 text-[10px] font-bold tabular-nums" style={{ color: t.repText }}>{repPct.toFixed(1)}%</span>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="flex gap-3">
+                      <span className="text-[10px] font-bold" style={{ color: t.demText }}>D {demPct.toFixed(1)}%</span>
+                      <span className="text-[10px] font-bold" style={{ color: t.repText }}>R {repPct.toFixed(1)}%</span>
+                    </div>
+                  )}
+                </div>
+                <div className="rounded-md p-2" style={{ background: t.tabBg }}>
+                  <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Margin</div>
+                  <div className="text-base font-bold leading-none tabular-nums" style={{ color: marginIsD ? t.demText : t.repText }}>
+                    {marginIsD ? "D+" : "R+"}{Math.abs(selected.margin).toFixed(1)}
+                  </div>
                 </div>
               </div>
-              <div className="w-px self-stretch shrink-0" style={{ background: t.border }} />
-              <div className="flex flex-col justify-center shrink-0">
-                <div className="text-[8px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>Next Election</div>
-                <div className="text-sm font-bold" style={{ color: t.textPrimary }}>{selectedNoElection.nextElection}</div>
+              {/* More Info */}
+              <div className="px-3 pb-3">
+                <Link
+                  href={`/${raceType}/${selected.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
+                  className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
+                  style={{ background: t.tabBg, color: t.textMuted }}
+                >
+                  More Info
+                  <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </Link>
               </div>
-              <button onClick={() => setSelectedNoElection(null)} className="shrink-0 ml-auto" style={{ color: t.textVeryMuted }}>
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
             </div>
-          )}
-        </div>
+          );
+        })()}
 
-        {/* ── Mobile Controls Bar ── */}
-        <div
-          className="md:hidden fixed bottom-0 left-0 right-0 z-20 flex items-center justify-between gap-3 px-4 py-2"
-          style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
-        >
-          {/* Race-type toggle */}
-          <nav className="flex rounded-lg p-1 gap-0.5" style={{ background: t.tabBg }}>
-            {([["house", "H"], ["senate", "S"], ["governor", "G"]] as [RaceType, string][]).map(([type, label]) => (
-              <button
-                key={type}
-                onClick={() => { setRaceType(type); setSelected(null); setSelectedNoElection(null); localStorage.setItem("raceType", type); }}
-                className="w-8 py-1.5 rounded-md text-sm font-medium transition-all text-center"
-                style={raceType === type ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }}
-              >
-                {label}
-              </button>
-            ))}
-          </nav>
-
-          {/* Seat split */}
-          <div className="flex items-center gap-2 flex-1">
-            <span className="text-sm font-bold tabular-nums" style={{ color: t.demText }}>{demSeats}D</span>
-            <div className="flex h-2 rounded-full overflow-hidden flex-1">
-              <div style={{ width: `${demPct}%`, background: "#1a4480" }} />
-              <div style={{ width: `${100 - demPct}%`, background: "#8b1a1a" }} />
+        {/* ── Mobile no-election panel (below map) ── */}
+        {selectedNoElection && (() => {
+          const noElColor = selectedNoElection.party === "D" ? t.demText : selectedNoElection.party === "R" ? t.repText : t.textPrimary;
+          const noElBg = selectedNoElection.party === "D" ? t.candidateDemBg : selectedNoElection.party === "R" ? t.candidateRepBg : t.tabBg;
+          return (
+            <div
+              className="mt-3 overflow-hidden rounded-xl md:hidden"
+              style={{ border: `1px solid ${t.border}`, background: t.legendBg, boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}
+            >
+              {/* Header */}
+              <div className="flex items-center gap-2 p-3 pb-2.5" style={{ borderBottom: `1px solid ${t.border}` }}>
+                <span className="min-w-0 flex-1 truncate text-sm font-bold" style={{ color: t.textPrimary }}>{selectedNoElection.state}</span>
+                <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-bold" style={{ background: t.tabBg, color: t.textMuted }}>No Election</span>
+                <button
+                  onClick={() => setSelectedNoElection(null)}
+                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded transition-colors"
+                  style={{ color: t.textVeryMuted, background: t.tabBg }}
+                  aria-label="Close"
+                >
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              {/* Body */}
+              <div className="grid grid-cols-[1fr_auto] gap-2 p-3">
+                <div className="rounded-md p-2" style={{ background: t.tabBg }}>
+                  <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Incumbent</div>
+                  <div className="flex items-center justify-between gap-1">
+                    <span className="truncate text-[10px] font-bold" style={{ color: noElColor }}>{selectedNoElection.incumbent}</span>
+                    <span className="shrink-0 rounded px-1 py-0.5 text-[9px] font-semibold" style={{ background: noElBg, color: noElColor }}>{selectedNoElection.party}</span>
+                  </div>
+                </div>
+                <div className="rounded-md p-2" style={{ background: t.tabBg }}>
+                  <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Next Election</div>
+                  <div className="text-base font-bold leading-none" style={{ color: t.textPrimary }}>{selectedNoElection.nextElection}</div>
+                </div>
+              </div>
+              {/* More Info */}
+              <div className="px-3 pb-3">
+                <Link
+                  href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
+                  className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
+                  style={{ background: t.tabBg, color: t.textMuted }}
+                >
+                  More Info
+                  <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </Link>
+              </div>
             </div>
-            <span className="text-sm font-bold tabular-nums" style={{ color: t.repText }}>{repSeats}R</span>
-          </div>
+          );
+        })()}
 
-          {/* Compact legend */}
-          <div className="flex items-center gap-0.5">
-            {LEGEND.map(({ color }) => (
-              <div key={color} style={{ background: color }} className="w-3 h-3 rounded-sm" />
-            ))}
-          </div>
-        </div>
+        {/* ── Mobile states panel (below map) ── */}
+        {activeTab === "states" && selectedStateRow && (() => {
+          return (
+            <div
+              className="mt-3 overflow-hidden rounded-xl md:hidden"
+              style={{ border: `1px solid ${t.border}`, background: t.legendBg, boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}
+            >
+              {/* Header */}
+              <div className="flex items-center gap-2 p-3 pb-2.5" style={{ borderBottom: `1px solid ${t.border}` }}>
+                <span className="min-w-0 flex-1 truncate text-sm font-bold" style={{ color: t.textPrimary }}>{selectedStateRow.name}</span>
+                <button
+                  onClick={() => setSelectedStateRow(null)}
+                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded transition-colors"
+                  style={{ color: t.textVeryMuted, background: t.tabBg }}
+                  aria-label="Close"
+                >
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              {/* Body */}
+              <div className="grid grid-cols-2 gap-2 p-3">
+                {selectedStateMode === "governor" && (
+                  <div className="col-span-2 rounded-md p-2" style={{ background: t.tabBg }}>
+                    <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Governor</div>
+                    {(() => {
+                      const p = selectedStateRow.govParty;
+                      const colors: Record<string, { bg: string; text: string; label: string }> = {
+                        D: { bg: "rgba(26,68,128,0.18)", text: t.demText, label: "Democrat" },
+                        R: { bg: "rgba(139,26,26,0.18)", text: t.repText, label: "Republican" },
+                        I: { bg: "rgba(120,106,26,0.18)", text: "#b8a020", label: "Independent" },
+                      };
+                      const c = p ? colors[p] : null;
+                      return c ? (
+                        <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full" style={{ background: c.bg, color: c.text }}>{c.label}</span>
+                      ) : <span className="text-[10px]" style={{ color: t.textVeryMuted }}>Unknown</span>;
+                    })()}
+                  </div>
+                )}
+                {selectedStateMode === "senate" && (
+                  <div className="col-span-2 rounded-md p-2" style={{ background: t.tabBg }}>
+                    <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Senate Seats</div>
+                    <div className="text-sm font-bold">
+                      <span style={{ color: t.demText }}>{selectedStateRow.senateDem}D</span>
+                      <span style={{ color: t.textVeryMuted }}> / </span>
+                      <span style={{ color: t.repText }}>{selectedStateRow.senateRep}R</span>
+                      {selectedStateRow.senateInd > 0 && <><span style={{ color: t.textVeryMuted }}> / </span><span style={{ color: "#b8a020" }}>{selectedStateRow.senateInd}I</span></>}
+                    </div>
+                  </div>
+                )}
+                {selectedStateMode === "house" && (
+                  <div className="col-span-2 rounded-md p-2" style={{ background: t.tabBg }}>
+                    <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>House Delegation</div>
+                    <div className="text-sm font-bold">
+                      <span style={{ color: t.demText }}>{selectedStateRow.houseDem}D</span>
+                      <span style={{ color: t.textVeryMuted }}> / </span>
+                      <span style={{ color: t.repText }}>{selectedStateRow.houseRep}R</span>
+                    </div>
+                  </div>
+                )}
+                {selectedStateMode === "legislature" && (
+                  <>
+                    <div className="rounded-md p-2" style={{ background: t.tabBg }}>
+                      <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>State House</div>
+                      <div className="text-sm font-bold">
+                        <span style={{ color: t.demText }}>{selectedStateRow.stateLegHouseDem ?? "—"}D</span>
+                        <span style={{ color: t.textVeryMuted }}> / </span>
+                        <span style={{ color: t.repText }}>{selectedStateRow.stateLegHouseRep ?? "—"}R</span>
+                      </div>
+                    </div>
+                    <div className="rounded-md p-2" style={{ background: t.tabBg }}>
+                      <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>State Senate</div>
+                      <div className="text-sm font-bold">
+                        <span style={{ color: t.demText }}>{selectedStateRow.stateLegSenateDem ?? "—"}D</span>
+                        <span style={{ color: t.textVeryMuted }}> / </span>
+                        <span style={{ color: t.repText }}>{selectedStateRow.stateLegSenateRep ?? "—"}R</span>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
+              {/* More Info */}
+              <div className="px-3 pb-3">
+                <Link
+                  href={`/states/${selectedStateRow.id}?from=${encodeURIComponent("/?tab=states")}`}
+                  className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
+                  style={{ background: t.tabBg, color: t.textMuted }}
+                >
+                  More Info
+                  <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          );
+        })()}
+
+        {/* ── Below-map table (memoized — stable across mouse-move re-renders) ── */}
+        {useMemo(() => (
+          <>
+            {activeTab === "overview" && (
+              <div className="mt-5 flex items-center justify-center">
+                <div
+                  className="rounded-xl px-8 py-10 text-center"
+                  style={{ border: `1px solid ${t.border}`, background: t.panel, maxWidth: 420 }}
+                >
+                  <div className="text-2xl mb-2">🚧</div>
+                  <div className="text-base font-semibold mb-1" style={{ color: t.textPrimary }}>Work in Progress</div>
+                  <div className="text-sm" style={{ color: t.textMuted }}>This overview dashboard is coming soon.</div>
+                </div>
+              </div>
+            )}
+            {activeTab === "states" && (
+              <div className="mt-4 md:mt-5">
+                <div className="mb-3">
+                  <h2 className="text-xl font-bold sm:text-2xl" style={{ color: t.textPrimary }}>States</h2>
+                  <p className="text-sm mt-0.5" style={{ color: t.textMuted }}>{electionYear} Election Forecast by State · All 50 States</p>
+                </div>
+                <StatesTable rows={stateRows} />
+              </div>
+            )}
+            {activeTab === "house" && (
+              <div className="mt-4 md:mt-5">
+                <div className="mb-3">
+                  <h2 className="text-xl font-bold sm:text-2xl" style={{ color: t.textPrimary }}>House Races</h2>
+                  <p className="text-sm mt-0.5" style={{ color: t.textMuted }}>{electionYear} U.S. House Forecast · {houseData.length} Districts</p>
+                </div>
+                <RaceTable races={houseData} basePath="/house" nameLabel="District" />
+              </div>
+            )}
+            {activeTab === "senate" && (
+              <div className="mt-4 md:mt-5">
+                <div className="mb-3">
+                  <h2 className="text-xl font-bold sm:text-2xl" style={{ color: t.textPrimary }}>Senate Races</h2>
+                  <p className="text-sm mt-0.5" style={{ color: t.textMuted }}>{electionYear} U.S. Senate Forecast · {senateData.length} Class 2 Seats</p>
+                </div>
+                <RaceTable races={senateData} basePath="/senate" nameLabel="State" showSpecialBadge />
+              </div>
+            )}
+            {activeTab === "governor" && (
+              <div className="mt-4 md:mt-5">
+                <div className="mb-3">
+                  <h2 className="text-xl font-bold sm:text-2xl" style={{ color: t.textPrimary }}>Governor Races</h2>
+                  <p className="text-sm mt-0.5" style={{ color: t.textMuted }}>{electionYear} U.S. Governor Forecast · {governorData.length} Races</p>
+                </div>
+                <RaceTable races={governorData} basePath="/governor" nameLabel="State" />
+              </div>
+            )}
+          </>
+        ), [activeTab, t])}
 
       </div>
     </div>

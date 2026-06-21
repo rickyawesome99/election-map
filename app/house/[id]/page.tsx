@@ -4,8 +4,6 @@ import { pviHistory } from "@/lib/pviHistory";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import BackButton from "@/components/BackButton";
-import AppHeader from "@/components/AppHeader";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
 import { AboutRaceCard, CandidatesSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, MarginAndWinProbabilityCard, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
@@ -120,7 +118,6 @@ export default async function HousePage({ params, searchParams }: { params: Prom
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <AppHeader back={<BackButton />} />
 
       <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
         {/* Title block */}

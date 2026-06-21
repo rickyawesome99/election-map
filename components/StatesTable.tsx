@@ -16,9 +16,13 @@ export type StateRow = {
   houseTotal: number;
   pres2024: number | null;  // positive = D margin, negative = R margin
   pvi2026: number | null;   // positive = R lean, negative = D lean
+  stateLegHouseDem: number | null;
+  stateLegHouseRep: number | null;
+  stateLegSenateDem: number | null;
+  stateLegSenateRep: number | null;
 };
 
-type SortKey = "name" | "gov" | "senate" | "house" | "pres2024" | "pvi";
+type SortKey = "name" | "gov" | "senate" | "house" | "pres2024" | "pvi" | "stateLegHouse" | "stateLegSenate";
 type SortDir = "asc" | "desc";
 
 const govOrder = (p: "D" | "R" | "I" | null) =>
@@ -58,10 +62,25 @@ function sortRows(rows: StateRow[], key: SortKey, dir: SortDir): StateRow[] {
         if (cmp === 0) cmp = a.name.localeCompare(b.name);
         break;
       case "pvi":
-        // asc = most D-friendly first (most negative PVI first)
         cmp = (b.pvi2026 ?? 999) - (a.pvi2026 ?? 999);
         if (cmp === 0) cmp = a.name.localeCompare(b.name);
         break;
+      case "stateLegHouse": {
+        const ratio = (d: number | null, r: number | null) => (r === 0 || r == null) ? (d != null && d > 0 ? Infinity : 0) : (d ?? 0) / r;
+        const aR = ratio(a.stateLegHouseDem, a.stateLegHouseRep);
+        const bR = ratio(b.stateLegHouseDem, b.stateLegHouseRep);
+        cmp = isFinite(bR - aR) ? bR - aR : bR === aR ? 0 : bR === Infinity ? 1 : -1;
+        if (cmp === 0) cmp = a.name.localeCompare(b.name);
+        break;
+      }
+      case "stateLegSenate": {
+        const ratio = (d: number | null, r: number | null) => (r === 0 || r == null) ? (d != null && d > 0 ? Infinity : 0) : (d ?? 0) / r;
+        const aR = ratio(a.stateLegSenateDem, a.stateLegSenateRep);
+        const bR = ratio(b.stateLegSenateDem, b.stateLegSenateRep);
+        cmp = isFinite(bR - aR) ? bR - aR : bR === aR ? 0 : bR === Infinity ? 1 : -1;
+        if (cmp === 0) cmp = a.name.localeCompare(b.name);
+        break;
+      }
     }
     return dir === "asc" ? cmp : -cmp;
   });
@@ -105,10 +124,16 @@ export default function StatesTable({ rows }: { rows: StateRow[] }) {
     return (
       <th
         onClick={() => handleSort(key)}
-        className={`px-3 sm:px-4 py-3 text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap text-${align} ${extraClass}`}
+        className={`px-2 sm:px-4 py-2.5 sm:py-3 text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap text-${align} ${extraClass}`}
         style={{
           color: active ? "var(--app-text-primary)" : "var(--app-text-muted)",
           userSelect: "none",
+          ...(key === "name"
+            ? {
+                background: "var(--app-panel)",
+                boxShadow: "1px 0 0 var(--app-border)",
+              }
+            : {}),
         }}
       >
         {label}
@@ -120,34 +145,40 @@ export default function StatesTable({ rows }: { rows: StateRow[] }) {
   return (
     <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
       <div className="overflow-x-auto">
-        <table className="w-full text-sm">
+        <table className="w-full min-w-[720px] text-xs sm:text-sm lg:min-w-full">
           <thead>
             <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
-              {th("name", "State", "left")}
+              {th("name", "State", "left", "sticky left-0 z-20 w-28 min-w-28 lg:w-auto lg:min-w-0")}
               {th("pvi", "PVI", "center")}
-              {th("gov", "Governor", "center", "hidden sm:table-cell")}
-              {th("senate", "Senate", "center", "hidden sm:table-cell")}
-              {th("house", "House", "center", "hidden md:table-cell")}
+              {th("gov", "Governor", "center")}
+              {th("senate", "Senate", "center")}
+              {th("house", "House", "center")}
+              {th("stateLegSenate", "St. Senate", "center")}
+              {th("stateLegHouse", "St. House", "center")}
               {th("pres2024", "Pres. 2024", "center")}
             </tr>
           </thead>
           <tbody>
             {sorted.map((row, i) => {
+              const rowBackground = i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)";
               const pres = row.pres2024;
               const presIsD = pres != null && pres >= 0;
               return (
                 <tr
                   key={row.id}
                   style={{
-                    background: i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
+                    background: rowBackground,
                     borderBottom: "1px solid var(--app-border)",
                   }}
                   className="transition-colors hover:opacity-80"
                 >
                   {/* State name */}
-                  <td className="px-3 sm:px-4 py-3 text-left">
+                  <td
+                    className="sticky left-0 z-10 w-28 min-w-28 px-2 py-2.5 text-left sm:px-4 sm:py-3 lg:w-auto lg:min-w-0"
+                    style={{ background: rowBackground, boxShadow: "1px 0 0 var(--app-border)" }}
+                  >
                     <Link
-                      href={`/states/${row.id}`}
+                      href={`/states/${row.id}?from=${encodeURIComponent("/?tab=states")}`}
                       className="font-semibold hover:underline"
                       style={{ color: "var(--app-text-primary)" }}
                     >
@@ -156,7 +187,7 @@ export default function StatesTable({ rows }: { rows: StateRow[] }) {
                   </td>
 
                   {/* PVI */}
-                  <td className="px-3 sm:px-4 py-3 text-center font-bold tabular-nums">
+                  <td className="px-2 py-2.5 text-center font-bold tabular-nums sm:px-4 sm:py-3">
                     {row.pvi2026 != null ? (
                       <span style={{ color: row.pvi2026 === 0 ? "var(--app-text-muted)" : row.pvi2026 > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
                         {row.pvi2026 === 0 ? "EVEN" : row.pvi2026 > 0 ? `R+${row.pvi2026}` : `D+${Math.abs(row.pvi2026)}`}
@@ -167,12 +198,12 @@ export default function StatesTable({ rows }: { rows: StateRow[] }) {
                   </td>
 
                   {/* Governor */}
-                  <td className="px-3 sm:px-4 py-3 text-center hidden sm:table-cell">
+                  <td className="px-2 py-2.5 text-center sm:px-4 sm:py-3">
                     <PartyPill party={row.govParty} />
                   </td>
 
                   {/* Senate */}
-                  <td className="px-3 sm:px-4 py-3 text-center hidden sm:table-cell">
+                  <td className="px-2 py-2.5 text-center sm:px-4 sm:py-3">
                     <span className="font-bold tabular-nums">
                       {row.senateInd > 0 ? (
                         <>
@@ -201,7 +232,7 @@ export default function StatesTable({ rows }: { rows: StateRow[] }) {
                   </td>
 
                   {/* House */}
-                  <td className="px-3 sm:px-4 py-3 text-center hidden md:table-cell">
+                  <td className="px-2 py-2.5 text-center sm:px-4 sm:py-3">
                     <span className="font-bold tabular-nums">
                       <span style={{ color: "var(--party-dem)" }}>{row.houseDem}D</span>
                       <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
@@ -209,8 +240,34 @@ export default function StatesTable({ rows }: { rows: StateRow[] }) {
                     </span>
                   </td>
 
+                  {/* State Senate */}
+                  <td className="px-2 py-2.5 text-center sm:px-4 sm:py-3">
+                    <span className="font-bold tabular-nums">
+                      {row.stateLegSenateDem != null && row.stateLegSenateRep != null ? (
+                        <>
+                          <span style={{ color: "var(--party-dem)" }}>{row.stateLegSenateDem}D</span>
+                          <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
+                          <span style={{ color: "var(--party-rep)" }}>{row.stateLegSenateRep}R</span>
+                        </>
+                      ) : <span style={{ color: "var(--app-text-very-muted)" }}>—</span>}
+                    </span>
+                  </td>
+
+                  {/* State House */}
+                  <td className="px-2 py-2.5 text-center sm:px-4 sm:py-3">
+                    <span className="font-bold tabular-nums">
+                      {row.stateLegHouseDem != null && row.stateLegHouseRep != null ? (
+                        <>
+                          <span style={{ color: "var(--party-dem)" }}>{row.stateLegHouseDem}D</span>
+                          <span style={{ color: "var(--app-text-very-muted)" }}> · </span>
+                          <span style={{ color: "var(--party-rep)" }}>{row.stateLegHouseRep}R</span>
+                        </>
+                      ) : <span style={{ color: "var(--app-text-very-muted)" }}>—</span>}
+                    </span>
+                  </td>
+
                   {/* Pres. 2024 */}
-                  <td className="px-3 sm:px-4 py-3 text-center font-bold tabular-nums" style={{ color: pres != null ? (presIsD ? "var(--party-dem)" : "var(--party-rep)") : undefined }}>
+                  <td className="px-2 py-2.5 text-center font-bold tabular-nums sm:px-4 sm:py-3" style={{ color: pres != null ? (presIsD ? "var(--party-dem)" : "var(--party-rep)") : undefined }}>
                     {pres != null ? (
                       <>{presIsD ? "D" : "R"}+{Math.abs(pres).toFixed(1)}</>
                     ) : (

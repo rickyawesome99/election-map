@@ -27,9 +27,10 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggle}
-      className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors"
+      className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition-colors"
       style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
       title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
+      aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
     >
       {darkMode ? (
         /* Sun icon */

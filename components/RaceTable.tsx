@@ -98,10 +98,16 @@ export default function RaceTable({
     const active = sortKey === key;
     return {
       onClick: () => handleSort(key),
-      className: `px-3 sm:px-4 py-3 text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap text-${align} ${extraClass}`,
+      className: `px-2 sm:px-4 py-2.5 sm:py-3 text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap text-${align} ${extraClass}`,
       style: {
         color: active ? "var(--app-text-primary)" : "var(--app-text-muted)",
         userSelect: "none" as const,
+        ...(key === "name"
+          ? {
+              background: "var(--app-panel)",
+              boxShadow: "1px 0 0 var(--app-border)",
+            }
+          : {}),
       },
     };
   }
@@ -130,7 +136,7 @@ export default function RaceTable({
               >
                 <td className="px-4 py-3 text-left">
                   <Link
-                    href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(basePath)}`}
+                    href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${basePath.slice(1)}`)}`}
                     className="font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
@@ -147,30 +153,31 @@ export default function RaceTable({
 
   return (
     <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-      <table className="w-full text-sm table-fixed sm:table-auto">
+      <div className="overflow-x-auto">
+      <table className="w-full min-w-[700px] table-fixed text-xs sm:text-sm md:min-w-full md:table-auto">
         <thead>
           <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
-            <th {...thProps("name", "left", "w-[46%] sm:w-auto text-left")}>
+            <th {...thProps("name", "left", "sticky left-0 z-20 w-32 min-w-32 text-left md:w-auto md:min-w-0")}>
               {nameLabel}
               <SortIcon active={sortKey === "name"} dir={sortDir} />
             </th>
-            <th {...thProps("rating", "left", "w-[27%] sm:w-auto text-left")}>
+            <th {...thProps("rating", "left", "w-24 text-left md:w-auto")}>
               Rating
               <SortIcon active={sortKey === "rating"} dir={sortDir} />
             </th>
-            <th {...thProps("dem", "left", "hidden md:table-cell")}>
+            <th {...thProps("dem", "left", "w-36 md:w-auto")}>
               Democrat
               <SortIcon active={sortKey === "dem"} dir={sortDir} />
             </th>
-            <th {...thProps("rep", "left", "hidden md:table-cell")}>
+            <th {...thProps("rep", "left", "w-36 md:w-auto")}>
               Republican
               <SortIcon active={sortKey === "rep"} dir={sortDir} />
             </th>
-            <th {...thProps("margin", "right", "w-[27%] sm:w-auto")}>
+            <th {...thProps("margin", "right", "w-20 md:w-auto")}>
               Margin
               <SortIcon active={sortKey === "margin"} dir={sortDir} />
             </th>
-            <th {...thProps("winpct", "right", "hidden sm:table-cell")}>
+            <th {...thProps("winpct", "right", "w-28 md:w-auto")}>
               D Win %
               <SortIcon active={sortKey === "winpct"} dir={sortDir} />
             </th>
@@ -178,6 +185,7 @@ export default function RaceTable({
         </thead>
         <tbody>
           {sorted.map((race, i) => {
+            const rowBackground = i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)";
             const margin = race.margin ?? 0;
             const probability = race.probability ?? 0.5;
             const { bg, text } = getRatingColors(race.rating ?? "Tossup");
@@ -188,15 +196,18 @@ export default function RaceTable({
               <tr
                 key={race.id}
                 style={{
-                  background: i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
+                  background: rowBackground,
                   borderBottom: "1px solid var(--app-border)",
                 }}
                 className="transition-colors hover:opacity-80"
               >
-                <td className="px-3 sm:px-4 py-3 min-w-0 text-left">
+                <td
+                  className="sticky left-0 z-10 w-32 min-w-32 px-2 py-2.5 text-left sm:px-4 sm:py-3 md:w-auto md:min-w-0"
+                  style={{ background: rowBackground, boxShadow: "1px 0 0 var(--app-border)" }}
+                >
                   <div className="flex items-center gap-2 min-w-0">
                     <Link
-                      href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(basePath)}`}
+                      href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${basePath.slice(1)}`)}`}
                       className="font-semibold hover:underline truncate"
                       style={{ color: "var(--app-text-primary)" }}
                     >
@@ -204,7 +215,7 @@ export default function RaceTable({
                     </Link>
                     {showSpecialBadge && race.electionType?.toLowerCase().includes("special") && (
                       <span
-                        className="hidden sm:inline-flex text-[10px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap"
+                        className="inline-flex whitespace-nowrap rounded-full px-2 py-0.5 text-[10px] font-semibold"
                         style={{ background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }}
                       >
                         Special
@@ -212,38 +223,46 @@ export default function RaceTable({
                     )}
                   </div>
                 </td>
-                <td className="px-3 sm:px-4 py-3 text-left">
+                <td className="px-2 py-2.5 text-left sm:px-4 sm:py-3">
                   <span
-                    className="text-xs font-semibold px-2 py-0.5 rounded-full whitespace-nowrap"
+                    className="whitespace-nowrap rounded-full px-1.5 py-0.5 text-[10px] font-semibold sm:px-2 sm:text-xs"
                     style={{ background: bg, color: text }}
                   >
                     {race.rating ?? "TBD"}
                   </span>
                 </td>
-                <td className="px-4 py-3 hidden md:table-cell" style={{ color: "var(--party-dem)" }}>
-                  {race.candidates?.dem.name ?? (
-                    <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>
-                  )}
-                  {race.candidates?.dem.incumbent && (
-                    <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded-full font-medium" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>
-                      Inc.
+                <td className="px-2 py-2.5 sm:px-4 sm:py-3" style={{ color: "var(--party-dem)" }}>
+                  <span className="flex min-w-0 items-center gap-1.5">
+                    <span className="min-w-0 truncate">
+                      {race.candidates?.dem.name ?? (
+                        <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>
+                      )}
                     </span>
-                  )}
+                    {race.candidates?.dem.incumbent && (
+                      <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-medium" style={{ background: "var(--party-dem-subtle)", color: "var(--party-dem)" }}>
+                        Inc.
+                      </span>
+                    )}
+                  </span>
                 </td>
-                <td className="px-4 py-3 hidden md:table-cell" style={{ color: "var(--party-rep)" }}>
-                  {race.candidates?.rep.name ?? (
-                    <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>
-                  )}
-                  {race.candidates?.rep.incumbent && (
-                    <span className="ml-1.5 text-[10px] px-1.5 py-0.5 rounded-full font-medium" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>
-                      Inc.
+                <td className="px-2 py-2.5 sm:px-4 sm:py-3" style={{ color: "var(--party-rep)" }}>
+                  <span className="flex min-w-0 items-center gap-1.5">
+                    <span className="min-w-0 truncate">
+                      {race.candidates?.rep.name ?? (
+                        <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>
+                      )}
                     </span>
-                  )}
+                    {race.candidates?.rep.incumbent && (
+                      <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-medium" style={{ background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}>
+                        Inc.
+                      </span>
+                    )}
+                  </span>
                 </td>
-                <td className="px-3 sm:px-4 py-3 text-right font-bold tabular-nums" style={{ color: marginIsD ? "var(--party-dem)" : "var(--party-rep)" }}>
+                <td className="px-2 py-2.5 text-right font-bold tabular-nums sm:px-4 sm:py-3" style={{ color: marginIsD ? "var(--party-dem)" : "var(--party-rep)" }}>
                   {marginIsD ? "D" : "R"}+{Math.abs(margin).toFixed(1)}
                 </td>
-                <td className="px-4 py-3 hidden sm:table-cell">
+                <td className="px-2 py-2.5 sm:px-4 sm:py-3">
                   <div className="flex items-center justify-end gap-2">
                     <div className="w-20 h-2 rounded-full overflow-hidden flex">
                       <div style={{ width: `${demPct}%`, background: "#1b408c" }} />
@@ -259,6 +278,7 @@ export default function RaceTable({
           })}
         </tbody>
       </table>
+      </div>
     </div>
   );
 }
