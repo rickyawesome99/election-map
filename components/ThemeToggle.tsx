@@ -1,32 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
-
-function readDarkMode(): boolean {
-  if (typeof window === "undefined") return false;
-  return localStorage.getItem("darkMode") === "true";
-}
+import { setDarkMode, useDarkMode } from "@/lib/useDarkMode";
 
 export default function ThemeToggle() {
-  // Lazy initializer: on client-side navigation this reads the correct value
-  // immediately (no flash). On hard load, falls back to false and the body
-  // script handles the html.dark class before React hydrates.
-  const [darkMode, setDarkMode] = useState<boolean>(readDarkMode);
-
-  // Sync html.dark class whenever darkMode changes (including on first mount)
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", darkMode);
-  }, [darkMode]);
-
-  function toggle() {
-    const next = !darkMode;
-    setDarkMode(next);
-    localStorage.setItem("darkMode", String(next));
-  }
+  const darkMode = useDarkMode();
 
   return (
     <button
-      onClick={toggle}
+      onClick={() => setDarkMode(!darkMode)}
       className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition-colors"
       style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
       title={darkMode ? "Switch to light mode" : "Switch to dark mode"}

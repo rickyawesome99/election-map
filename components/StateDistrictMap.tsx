@@ -5,6 +5,7 @@ import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import type { RaceForecast } from "@/data/forecastData";
+import { useDarkMode } from "@/lib/useDarkMode";
 
 const DISTRICTS_URL = "/congressional-districts-2026.json";
 
@@ -54,7 +55,7 @@ export default function StateDistrictMap({
   const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
-  const [darkMode] = useState(() => typeof window !== "undefined" && localStorage.getItem("darkMode") === "true");
+  const darkMode = useDarkMode();
   const containerRef = useRef<HTMLDivElement>(null);
   const [mapViewport, setMapViewport] = useState({ width: 800, height: 600 });
   const [autoProj, setAutoProj] = useState<ProjectionConfig | null>(null);

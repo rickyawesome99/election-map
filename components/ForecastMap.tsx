@@ -12,6 +12,7 @@ import NationalCountyMap from "./NationalCountyMap";
 import StatesOverviewMap, { type MapMode } from "./StatesOverviewMap";
 import Link from "next/link";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
+import { useDarkMode } from "@/lib/useDarkMode";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 const HOUSE_DISTRICTS_2026_URL = "/congressional-districts-2026.json";
@@ -193,19 +194,9 @@ export default function ForecastMap() {
   const mapSizeRef = useRef<{ w: number; h: number }>({ w: 800, h: 520 });
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const ignoreClickUntilRef = useRef(0);
-  const [darkMode, setDarkMode] = useState<boolean>(() =>
-    typeof window !== "undefined" && document.documentElement.classList.contains("dark")
-  );
+  const darkMode = useDarkMode();
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
-
-  useEffect(() => {
-    const observer = new MutationObserver(() => {
-      setDarkMode(document.documentElement.classList.contains("dark"));
-    });
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     function setTab(type: string | null) {

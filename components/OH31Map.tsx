@@ -14,6 +14,7 @@ import { oh31PrecinctData2020 } from "@/data/oh31PrecinctData2020";
 import { oh31PrecinctData2018 } from "@/data/oh31PrecinctData2018";
 import { oh31PrecinctData2016 } from "@/data/oh31PrecinctData2016";
 import { type TownshipFilter } from "@/lib/oh31Analysis";
+import { useDarkMode } from "@/lib/useDarkMode";
 
 const LeafletMap = dynamic(() => import("@/components/OH31MapLeaflet"), {
   ssr: false,
@@ -118,12 +119,6 @@ const LEGEND = [
   { color: "#be1c29", label: "R 15+" },
 ];
 
-function readDarkMode(): boolean {
-  if (typeof window === "undefined") return false;
-  return document.documentElement.classList.contains("dark")
-    || localStorage.getItem("darkMode") === "true";
-}
-
 function getDataForYear(year: MapYear) {
   switch (year) {
     case "2024": return oh31PrecinctData;
@@ -156,7 +151,7 @@ export default function OH31Map({
   activeYear: MapYear;
   onYearChange: (year: MapYear) => void;
 }) {
-  const [darkMode, setDarkMode] = useState<boolean>(readDarkMode);
+  const darkMode = useDarkMode();
   const [isTouchMobile, setIsTouchMobile] = useState(false);
   const [simpleMobilePopupVisible, setSimpleMobilePopupVisible] = useState(false);
   const [activeRace, setActiveRace] = useState<RaceKey>("stRep");
@@ -176,22 +171,6 @@ export default function OH31Map({
     }
     return result;
   }, [swingYear, swingRace]);
-
-  useEffect(() => {
-    const syncDarkMode = () => {
-      setDarkMode(readDarkMode());
-    };
-
-    syncDarkMode();
-
-    const observer = new MutationObserver(syncDarkMode);
-    observer.observe(document.documentElement, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
-
-    return () => observer.disconnect();
-  }, []);
 
   useEffect(() => {
     const syncViewport = () => {

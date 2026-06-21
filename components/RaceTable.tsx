@@ -1,6 +1,7 @@
 "use client";
 
 import { getRatingColors } from "@/lib/colorScale";
+import { candidateSlug } from "@/lib/candidateSlug";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -234,7 +235,15 @@ export default function RaceTable({
                 <td className="px-2 py-2.5 sm:px-4 sm:py-3" style={{ color: "var(--party-dem)" }}>
                   <span className="flex min-w-0 items-center gap-1.5">
                     <span className="min-w-0 truncate">
-                      {race.candidates?.dem.name ?? (
+                      {race.candidates?.dem.name ? (
+                        <Link
+                          href={`/candidates/${candidateSlug(race.candidates.dem.name)}`}
+                          className="hover:underline"
+                          onClick={e => e.stopPropagation()}
+                        >
+                          {race.candidates.dem.name}
+                        </Link>
+                      ) : (
                         <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>
                       )}
                     </span>
@@ -248,7 +257,15 @@ export default function RaceTable({
                 <td className="px-2 py-2.5 sm:px-4 sm:py-3" style={{ color: "var(--party-rep)" }}>
                   <span className="flex min-w-0 items-center gap-1.5">
                     <span className="min-w-0 truncate">
-                      {race.candidates?.rep.name ?? (
+                      {race.candidates?.rep.name ? (
+                        <Link
+                          href={`/candidates/${candidateSlug(race.candidates.rep.name)}`}
+                          className="hover:underline"
+                          onClick={e => e.stopPropagation()}
+                        >
+                          {race.candidates.rep.name}
+                        </Link>
+                      ) : (
                         <span style={{ color: "var(--app-text-very-muted)" }} className="italic">TBD</span>
                       )}
                     </span>

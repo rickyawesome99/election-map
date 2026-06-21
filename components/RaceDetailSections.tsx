@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { candidateSlug } from "@/lib/candidateSlug";
 
 type PollRow = {
   label: string;
@@ -195,12 +197,22 @@ export function CandidatesSection({
                 )}
               </div>
               <div className="flex items-center justify-center gap-1 mb-1 w-full">
-                <div
-                  className={`font-bold whitespace-nowrap overflow-hidden text-ellipsis ${isCompact ? "text-sm" : "text-xl"} ${candidate.placeholder ? "italic" : ""}`}
-                  style={{ color: candidate.placeholder ? "var(--app-text-muted)" : "var(--app-text-primary)" }}
-                >
-                  {displayName}
-                </div>
+                {candidate.placeholder ? (
+                  <div
+                    className={`font-bold whitespace-nowrap overflow-hidden text-ellipsis italic ${isCompact ? "text-sm" : "text-xl"}`}
+                    style={{ color: "var(--app-text-muted)" }}
+                  >
+                    {displayName}
+                  </div>
+                ) : (
+                  <Link
+                    href={`/candidates/${candidateSlug(candidate.name)}`}
+                    className={`font-bold whitespace-nowrap overflow-hidden text-ellipsis hover:underline ${isCompact ? "text-sm" : "text-xl"}`}
+                    style={{ color: "var(--app-text-primary)" }}
+                  >
+                    {displayName}
+                  </Link>
+                )}
                 {candidate.incumbent && !candidate.placeholder && (
                   <span className="text-[10px] font-semibold px-1 py-0.5 rounded shrink-0" style={{ background: `${accentColor}22`, color: accentColor }}>Inc.</span>
                 )}
@@ -251,9 +263,13 @@ export function CurrentIncumbentCard({
           </svg>
         </div>
         <div className="flex-1 flex flex-col justify-end pb-3">
-          <div className="text-xl font-bold mb-1" style={{ color: "var(--app-text-primary)" }}>
+          <Link
+            href={`/candidates/${candidateSlug(incumbentName)}`}
+            className="text-xl font-bold mb-1 hover:underline inline-block"
+            style={{ color: "var(--app-text-primary)" }}
+          >
             {incumbentName}
-          </div>
+          </Link>
           <div className="text-sm font-medium" style={{ color: accentColor }}>
             {partyLabel(party)} · Incumbent
           </div>
@@ -577,9 +593,16 @@ export function PastElectionResultsSection({
               {/* Dem row */}
               <div className="flex items-baseline gap-2 mb-1">
                 <div className="flex min-w-0 flex-1 items-baseline gap-1.5">
-                  <span className="text-sm font-semibold min-w-0 truncate" style={{ color: isPlaceholder ? "var(--app-text-muted)" : demAccent }}>
-                    {isPlaceholder ? "TBD" : `${demName} (${demParty})`}
-                  </span>
+                  {isPlaceholder ? (
+                    <span className="text-sm font-semibold min-w-0 truncate" style={{ color: "var(--app-text-muted)" }}>TBD</span>
+                  ) : (
+                    <span className="text-sm font-semibold min-w-0 truncate" style={{ color: demAccent }}>
+                      {res.demCandidate ? (
+                        <Link href={`/candidates/${candidateSlug(res.demCandidate)}`} className="hover:underline">{demName}</Link>
+                      ) : demName}
+                      {" "}({demParty})
+                    </span>
+                  )}
                   {!isPlaceholder && res.demIncumbent && (
                     <span className="text-[10px] font-semibold shrink-0 px-1 py-0.5 rounded" style={{ background: partySubtle(demParty), color: demAccent }}>Inc.</span>
                   )}
@@ -597,9 +620,16 @@ export function PastElectionResultsSection({
               {/* Rep row */}
               <div className="flex items-baseline gap-2 mb-1.5">
                 <div className="flex min-w-0 flex-1 items-baseline gap-1.5">
-                  <span className="text-sm font-semibold min-w-0 truncate" style={{ color: isPlaceholder ? "var(--app-text-muted)" : repAccent }}>
-                    {isPlaceholder ? "TBD" : `${repName} (${repParty})`}
-                  </span>
+                  {isPlaceholder ? (
+                    <span className="text-sm font-semibold min-w-0 truncate" style={{ color: "var(--app-text-muted)" }}>TBD</span>
+                  ) : (
+                    <span className="text-sm font-semibold min-w-0 truncate" style={{ color: repAccent }}>
+                      {res.repCandidate ? (
+                        <Link href={`/candidates/${candidateSlug(res.repCandidate)}`} className="hover:underline">{repName}</Link>
+                      ) : repName}
+                      {" "}({repParty})
+                    </span>
+                  )}
                   {!isPlaceholder && res.repIncumbent && (
                     <span className="text-[10px] font-semibold shrink-0 px-1 py-0.5 rounded" style={{ background: partySubtle(repParty), color: repAccent }}>Inc.</span>
                   )}

@@ -5,6 +5,7 @@ import type { MouseEvent as ReactMouseEvent } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import type { GeoJsonProperties, Geometry } from "geojson";
 import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
+import { useDarkMode } from "@/lib/useDarkMode";
 
 const GEO_URL = "/oh31-demographics.geojson";
 
@@ -95,17 +96,9 @@ function fmt(value: number | null, cfg: DemoVar): string {
   return value != null ? cfg.format(value) : "—";
 }
 
-function readDarkMode(): boolean {
-  if (typeof window === "undefined") return false;
-  return (
-    document.documentElement.classList.contains("dark") ||
-    localStorage.getItem("darkMode") === "true"
-  );
-}
-
 export default function OH31DemographicsMap() {
   const [activeVar, setActiveVar] = useState<DemoVarKey>("pct_white");
-  const [darkMode, setDarkMode] = useState(false);
+  const darkMode = useDarkMode();
   const [hovered, setHovered] = useState<PrecinctGeo["properties"] | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
@@ -114,13 +107,6 @@ export default function OH31DemographicsMap() {
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
   const mapRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    setDarkMode(readDarkMode());
-    const obs = new MutationObserver(() => setDarkMode(readDarkMode()));
-    obs.observe(document.documentElement, { attributeFilter: ["class"] });
-    return () => obs.disconnect();
-  }, []);
 
   useEffect(() => {
     const syncViewport = () => {
