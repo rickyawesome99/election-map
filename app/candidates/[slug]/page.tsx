@@ -1,4 +1,4 @@
-import { getAllCandidateSlugs, getCandidatePage } from "@/lib/candidateIndex";
+import { getPrebuiltCandidateSlugs, getCandidatePage } from "@/lib/candidateIndex";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
@@ -6,10 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
 
-export const dynamicParams = false;
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
-  return getAllCandidateSlugs().map((slug) => ({ slug }));
+  return getPrebuiltCandidateSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
