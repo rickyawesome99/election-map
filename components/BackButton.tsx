@@ -33,9 +33,17 @@ function BackButtonInner() {
   const from = searchParams.get("from");
   const label = getLabel(from);
 
+  function handleBack() {
+    if (from) {
+      router.push(resolveFrom(from, pathname));
+    } else {
+      router.back();
+    }
+  }
+
   return (
     <button
-      onClick={() => router.push(resolveFrom(from, pathname) ?? "/?tab=overview")}
+      onClick={handleBack}
       className="flex h-8 shrink-0 items-center justify-center gap-2 px-1 text-sm transition-colors max-sm:w-8 max-sm:px-0"
       style={{ color: "var(--app-text-muted)" }}
       aria-label={label}

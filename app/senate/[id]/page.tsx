@@ -154,8 +154,9 @@ function NoElectionPage({
 
 // ── Main page ─────────────────────────────────────────────────────────────────
 
-export default async function SenatePage({ params }: { params: Promise<{ id: string }> }) {
+export default async function SenatePage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ from?: string }> }) {
   const { id } = await params;
+  const { from: fromParam } = await searchParams;
   const abbr = id.replace(/-2$/, "").toUpperCase();
   const isSeat2Url = id.toLowerCase().endsWith("-2");
 
@@ -224,7 +225,7 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
         {/* Title block */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
-            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/senate/${id}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
+            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/senate/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
             <span
               className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}

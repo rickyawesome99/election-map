@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { RaceForecast, HouseStatewideResult } from "@/data/forecastData";
+import type { RaceForecast, HouseStatewideResult, PastResult } from "@/data/forecastData";
 import StateDistrictMap from "./StateDistrictMap";
 import HousePastMap from "./HousePastMap";
 import PastElectionsMap from "./PastElectionsMap";
@@ -14,6 +14,7 @@ export default function StateMapToggle({
   stateName,
   stateFips,
   houseRaces,
+  housePastResults,
   selected,
   onSelect,
   pastElectionResults,
@@ -22,6 +23,7 @@ export default function StateMapToggle({
   stateName: string;
   stateFips: string;
   houseRaces: RaceForecast[];
+  housePastResults: Record<string, PastResult[]>;
   selected: RaceForecast | null;
   onSelect: (race: RaceForecast | null) => void;
   pastElectionResults: Record<string, HouseStatewideResult[]>;
@@ -85,6 +87,7 @@ export default function StateMapToggle({
       ) : view === "past" ? (
         <HousePastMap
           houseRaces={houseRaces}
+          historicalResults={housePastResults}
           stateAbbr={abbr}
           stateName={stateName}
           stateFips={stateFips}

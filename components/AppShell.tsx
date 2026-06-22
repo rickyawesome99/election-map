@@ -19,11 +19,13 @@ export default function AppShell() {
   }, [pathname]);
 
   return (
-    <div className="sticky top-0 z-50">
-      <AppHeader
-        analysisActive={pathname.startsWith("/analysis")}
-        back={showBack ? <BackButton /> : undefined}
-      />
+    <>
+      <div className="sticky top-0 z-50">
+        <AppHeader
+          analysisActive={pathname.startsWith("/analysis")}
+          back={showBack ? <BackButton /> : undefined}
+        />
+      </div>
       {showSubNav && (
         <div className="px-2 pb-2 pt-2 sm:px-4 md:flex md:justify-center md:px-6">
           <Suspense fallback={<div className="h-[42px] rounded-xl border" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }} />}>
@@ -31,6 +33,6 @@ export default function AppShell() {
           </Suspense>
         </div>
       )}
-    </div>
+    </>
   );
 }

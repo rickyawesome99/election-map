@@ -17593,6 +17593,44 @@ export const houseData: RaceForecast[] = [
   }
 ];
 
+export const housePastResults: Record<string, PastResult[]> = {
+  "1718": [
+    { "year": 2020, "demPct": 29.59, "repPct": 70.41, "demCandidate": "George Petrilli", "repCandidate": "Darin LaHood", "demVotes": 110039, "repVotes": 261840, "totalVotes": 371879, "margin": 40.82, "repIncumbent": true },
+    { "year": 2018, "demPct": 32.77, "repPct": 67.23, "demCandidate": "Junius Rodriguez", "repCandidate": "Darin LaHood", "demVotes": 95486, "repVotes": 195927, "totalVotes": 291413, "margin": 34.46, "repIncumbent": true },
+    { "year": 2016, "demPct": 27.86, "repPct": 72.13, "demCandidate": "Junius Rodriguez", "repCandidate": "Darin LaHood", "demVotes": 96770, "repVotes": 250506, "totalVotes": 347283, "margin": 44.27, "repIncumbent": true }
+  ],
+  "2614": [
+    { "year": 2020, "demPct": 79.28, "repPct": 18.31, "demCandidate": "Brenda L. Lawrence", "repCandidate": "Robert Vance Patrick", "demVotes": 271370, "repVotes": 62664, "totalVotes": 342303, "margin": -60.97, "demIncumbent": true },
+    { "year": 2018, "demPct": 80.88, "repPct": 17.32, "demCandidate": "Brenda L. Lawrence", "repCandidate": "Marc S. Herschfus", "demVotes": 214334, "repVotes": 45899, "totalVotes": 264994, "margin": -63.56, "demIncumbent": true },
+    { "year": 2016, "demPct": 78.51, "repPct": 18.68, "demCandidate": "Brenda L. Lawrence", "repCandidate": "Howard Klausner", "demVotes": 244135, "repVotes": 58103, "totalVotes": 310974, "margin": -59.83, "demIncumbent": true }
+  ],
+  "3627": [
+    { "year": 2020, "demPct": 40.9, "repPct": 57.64, "demCandidate": "Nathan D. McMurray", "repCandidate": "Chris Jacobs", "demVotes": 136783, "repVotes": 192756, "totalVotes": 334423, "margin": 16.74, "repIncumbent": true },
+    { "year": 2018, "demPct": 51.55, "repPct": 46.05, "demCandidate": "Nathan D. McMurray", "repCandidate": "Chris Collins", "demVotes": 128167, "repVotes": 114506, "totalVotes": 248646, "margin": -5.5, "repIncumbent": true },
+    { "year": 2016, "demPct": 38.06, "repPct": 61.94, "demCandidate": "Diana K. Kastenbaum", "repCandidate": "Chris Collins", "demVotes": 107832, "repVotes": 175509, "totalVotes": 283341, "margin": 23.88, "repIncumbent": true }
+  ],
+  "3916": [
+    { "year": 2020, "demPct": 36.81, "repPct": 63.19, "demCandidate": "Aaron Paul Godfrey", "repCandidate": "Anthony Gonzalez", "demVotes": 144071, "repVotes": 247335, "totalVotes": 391406, "margin": 26.38, "repIncumbent": true },
+    { "year": 2018, "demPct": 43.27, "repPct": 56.73, "demCandidate": "Susan Moran Palmer", "repCandidate": "Anthony Gonzalez", "demVotes": 129681, "repVotes": 170029, "totalVotes": 299710, "margin": 13.46 },
+    { "year": 2016, "demPct": 34.67, "repPct": 65.33, "demCandidate": "Keith Mundy", "repCandidate": "James B. Renacci", "demVotes": 119830, "repVotes": 225794, "totalVotes": 345624, "margin": 30.66, "repIncumbent": true }
+  ],
+  "4218": [
+    { "year": 2020, "demPct": 69.25, "repPct": 30.75, "demCandidate": "Michael F. Doyle, Jr.", "repCandidate": "Luke Edison Negron", "demVotes": 266084, "repVotes": 118163, "totalVotes": 384247, "margin": -38.5, "demIncumbent": true },
+    { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Michael F. Doyle", "demVotes": 231472, "totalVotes": 231472, "margin": -100 },
+    { "year": 2016, "demPct": 0, "repPct": 100, "repCandidate": "Tim Murphy", "repVotes": 293684, "totalVotes": 293684, "margin": 100, "repIncumbent": true }
+  ],
+  "5403": [
+    { "year": 2020, "demPct": 28.64, "repPct": 71.29, "demCandidate": "Hilary Turner", "repCandidate": "Carol D. Miller", "demVotes": 64927, "repVotes": 161585, "totalVotes": 226668, "margin": 42.65, "repIncumbent": true },
+    { "year": 2018, "demPct": 43.63, "repPct": 56.37, "demCandidate": "Richard Ojeda II", "repCandidate": "Carol Miller", "demVotes": 76340, "repVotes": 98645, "totalVotes": 174985, "margin": 12.74 },
+    { "year": 2016, "demPct": 23.98, "repPct": 67.88, "demCandidate": "Matt Detch", "repCandidate": "Evan H. Jenkins", "demVotes": 49708, "repVotes": 140741, "totalVotes": 207332, "margin": 43.9, "repIncumbent": true }
+  ],
+  "0653": [
+    { "year": 2020, "demPct": 59.5, "repPct": 0, "demCandidate": "Sara Jacobs", "demVotes": 199244, "totalVotes": 334858, "margin": -59.5 },
+    { "year": 2018, "demPct": 69.07, "repPct": 30.93, "demCandidate": "Susan A. Davis", "repCandidate": "Morgan Murtaugh", "demVotes": 185667, "repVotes": 83127, "totalVotes": 268794, "margin": -38.14, "demIncumbent": true },
+    { "year": 2016, "demPct": 67.01, "repPct": 32.99, "demCandidate": "Susan A. Davis", "repCandidate": "James Veltmeyer", "demVotes": 198988, "repVotes": 97968, "totalVotes": 296956, "margin": -34.02, "demIncumbent": true }
+  ]
+};
+
 export type BoundaryHistoryEntry = {
   year: number;
   description: string;

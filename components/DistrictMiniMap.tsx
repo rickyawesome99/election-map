@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
-import StateLandClipPath from "./StateLandClipPath";
+import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 
 const DISTRICTS_URL = "/congressional-districts-2026.json";
 
@@ -149,7 +149,6 @@ export default function DistrictMiniMap({
   const mapStroke = "var(--app-bg)";
   const mutedFill = "var(--app-border)";
   const geoUrl = selectedYear ? getGeoUrlForYear(selectedYear) : DISTRICTS_URL;
-  const clipPathId = `state-land-clip-${stateFips}-${raceId}-mini`;
 
   const showYearToggle = boundaryYears && boundaryYears.length > 1;
 
@@ -185,8 +184,6 @@ export default function DistrictMiniMap({
         style={{ width: "100%", height: "100%" }}
       >
         <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
-          <StateLandClipPath clipPathId={clipPathId} stateFips={stateFips} />
-          <g clipPath={`url(#${clipPathId})`}>
           <Geographies
             key={geoUrl}
             geography={geoUrl}
@@ -196,7 +193,7 @@ export default function DistrictMiniMap({
               geographies
                 .filter((geo) => {
                   const geoid = geo.properties?.GEOID as string | undefined;
-                  return geoid?.startsWith(stateFips);
+                  return isCongressionalDistrictGeoid(geoid, stateFips);
                 })
                 .map((geo) => {
                   const geoid = geo.properties?.GEOID as string | undefined;
@@ -220,7 +217,6 @@ export default function DistrictMiniMap({
               })
             }
           </Geographies>
-          </g>
         </ZoomableGroup>
       </ComposableMap>
     </div>

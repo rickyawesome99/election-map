@@ -5,13 +5,14 @@ import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 
 const TABS = [
-  { key: "overview",  label: "Overview" },
-  { key: "house",     label: "House" },
-  { key: "senate",    label: "Senate" },
-  { key: "governor",  label: "Governor" },
-  { key: "states",    label: "States" },
-  { key: "counties",  label: "Counties" },
-  { key: "model",     label: "Model" },
+  { key: "overview",         label: "Overview" },
+  { key: "house",            label: "House" },
+  { key: "senate",           label: "Senate" },
+  { key: "governor",         label: "Governor" },
+  { key: "states",           label: "States" },
+  { key: "counties",         label: "Counties" },
+  { key: "model",            label: "Model" },
+  { key: "district-finder",  label: "District Finder" },
 ];
 
 function getActiveTab(pathname: string, queryTab: string | null): string | null {

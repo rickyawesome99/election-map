@@ -4,9 +4,9 @@ import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
-import StateLandClipPath from "./StateLandClipPath";
 import type { HouseStatewideResult } from "@/data/forecastData";
 import { useDarkMode } from "@/lib/useDarkMode";
+import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 
 function getGeoUrl(year: number): string {
   if (year <= 2017) return "/congressional-districts-2016.json";
@@ -126,7 +126,6 @@ export default function PastElectionsMap({
   const sel = availableElections.find(e => e.key === selectedKey) ?? availableElections[0] ?? null;
 
   const geoUrl = sel ? getGeoUrl(sel.year) : "/congressional-districts-pre2022.json";
-  const clipPathId = `state-land-clip-${stateFips}-past-elections`;
 
   const resultByGeoid = useMemo(() => {
     const map = new Map<string, HouseStatewideResult>();
@@ -279,8 +278,6 @@ export default function PastElectionsMap({
           style={{ width: "100%", height: "100%" }}
         >
           <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
-            <StateLandClipPath clipPathId={clipPathId} stateFips={stateFips} />
-            <g clipPath={`url(#${clipPathId})`}>
             <Geographies
               key={geoUrl}
               geography={geoUrl}
@@ -289,7 +286,7 @@ export default function PastElectionsMap({
                 {({ geographies }: { geographies: DistrictGeo[] }) =>
                   geographies.map(geo => {
                     const geoId = geo.properties?.GEOID as string | undefined;
-                    if (!geoId?.startsWith(stateFips)) return null;
+                    if (!isCongressionalDistrictGeoid(geoId, stateFips)) return null;
                     const result = geoId ? resultByGeoid.get(geoId) : undefined;
                     const fill = result
                       ? getRaceColor(result.demPct - result.repPct)
@@ -325,7 +322,6 @@ export default function PastElectionsMap({
                   })
                 }
             </Geographies>
-            </g>
           </ZoomableGroup>
         </ComposableMap>
 

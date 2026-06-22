@@ -485,6 +485,30 @@ for (const row of housePast) {
   }
 }
 
+// Keep history for districts that no longer exist in the current apportionment
+// and therefore are not represented in houseData.
+const currentHouseIds = new Set();
+for (const [fips, , , districtCount] of STATE_INFO) {
+  for (let district = 1; district <= districtCount; district++) {
+    currentHouseIds.add(fips + String(district).padStart(2, "0"));
+  }
+}
+const housePastResults = {};
+for (const [rawId, rows] of Object.entries(housePastMap)) {
+  const id = String(parseInt(rawId)).padStart(4, "0");
+  if (currentHouseIds.has(id)) continue;
+  const first = rows[0] || {};
+  const history = buildRaceForecast(
+    {},
+    "house",
+    id,
+    first.district_name || id,
+    first.state_name || "",
+    rows
+  ).pastResults;
+  if (history?.length) housePastResults[id] = history;
+}
+
 const houseData = [];
 for (const [fips, abbr, stateName, n, base] of STATE_INFO) {
   for (let d = 1; d <= n; d++) {
@@ -903,6 +927,8 @@ export const governorData: RaceForecast[] = ${j(governorData)};
 export const governorNoElection: NoElectionEntry[] = ${j(governorNoElection)};
 
 export const houseData: RaceForecast[] = ${j(houseData)};
+
+export const housePastResults: Record<string, PastResult[]> = ${j(housePastResults)};
 
 export type BoundaryHistoryEntry = {
   year: number;

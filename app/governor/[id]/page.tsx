@@ -106,11 +106,12 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
   );
 }
 
-export default async function GovernorPage({ params }: { params: Promise<{ id: string }> }) {
+export default async function GovernorPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ from?: string }> }) {
   const { id } = await params;
+  const { from: fromParam } = await searchParams;
 
   const noEl = governorNoElection.find((e) => e.abbr.toLowerCase() === id.toLowerCase());
-  if (noEl) return <NoElectionPage entry={noEl} from={`/governor/${id}`} />;
+  if (noEl) return <NoElectionPage entry={noEl} from={`/governor/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`} />;
 
   const race = governorData.find((r) => r.id.toLowerCase() === id.toLowerCase());
   if (!race) notFound();
@@ -136,7 +137,7 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
         {/* Title block */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
-            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/governor/${id}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
+            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/governor/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
             <span
               className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}

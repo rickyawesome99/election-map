@@ -14,6 +14,8 @@ import Link from "next/link";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import TplModelPage from "./TplModelPage";
+import DistrictFinder from "./DistrictFinder";
+import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 const HOUSE_DISTRICTS_2026_URL = "/congressional-districts-2026.json";
@@ -169,10 +171,10 @@ function SeatScorecard({
 }
 
 export default function ForecastMap() {
-  const [activeTab, setActiveTab] = useState<"overview" | "states" | "counties" | "model" | RaceType>(() => {
+  const [activeTab, setActiveTab] = useState<"overview" | "states" | "counties" | "model" | "district-finder" | RaceType>(() => {
     if (typeof window !== "undefined") {
       const urlTab = new URLSearchParams(window.location.search).get("tab");
-      if (urlTab === "overview" || urlTab === "states" || urlTab === "counties" || urlTab === "model" || urlTab === "house" || urlTab === "senate" || urlTab === "governor") return urlTab;
+      if (urlTab === "overview" || urlTab === "states" || urlTab === "counties" || urlTab === "model" || urlTab === "district-finder" || urlTab === "house" || urlTab === "senate" || urlTab === "governor") return urlTab;
     }
     return "overview";
   });
@@ -201,7 +203,7 @@ export default function ForecastMap() {
 
   useEffect(() => {
     function setTab(type: string | null) {
-      if (type !== "overview" && type !== "house" && type !== "senate" && type !== "governor" && type !== "states" && type !== "counties" && type !== "model") return;
+      if (type !== "overview" && type !== "house" && type !== "senate" && type !== "governor" && type !== "states" && type !== "counties" && type !== "model" && type !== "district-finder") return;
 
       setActiveTab(type);
       setSelected(null);
@@ -439,6 +441,7 @@ export default function ForecastMap() {
             <Geographies geography={geoUrl}>
               {({ geographies }: any) =>
                 geographies.map((geo: any) => {
+                  if (isHouse && !isCongressionalDistrictGeoid(geo.properties?.GEOID)) return null;
                   const match = findMatch(geo);
                   const noElMatch = !match ? findNoElection(geo) : undefined;
                   const fill = isOverview
@@ -793,6 +796,31 @@ export default function ForecastMap() {
               </div>
               {/* Body */}
               <div className="grid grid-cols-2 gap-2 p-3">
+                {selectedStateMode === "default" && (
+                  <div className="col-span-2 rounded-md p-2" style={{ background: t.tabBg }}>
+                    <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>PVI</div>
+                    <div
+                      className="text-sm font-bold"
+                      style={{
+                        color: selectedStateRow.pvi2026 == null
+                          ? t.textVeryMuted
+                          : selectedStateRow.pvi2026 > 0
+                            ? t.repText
+                            : selectedStateRow.pvi2026 < 0
+                              ? t.demText
+                              : t.textMuted,
+                      }}
+                    >
+                      {selectedStateRow.pvi2026 == null
+                        ? "—"
+                        : selectedStateRow.pvi2026 === 0
+                          ? "EVEN"
+                          : selectedStateRow.pvi2026 > 0
+                            ? `R+${selectedStateRow.pvi2026}`
+                            : `D+${Math.abs(selectedStateRow.pvi2026)}`}
+                    </div>
+                  </div>
+                )}
                 {selectedStateMode === "governor" && (
                   <div className="col-span-2 rounded-md p-2" style={{ background: t.tabBg }}>
                     <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Governor</div>
@@ -921,6 +949,7 @@ export default function ForecastMap() {
               </div>
             )}
             {activeTab === "model" && <TplModelPage />}
+            {activeTab === "district-finder" && <DistrictFinder />}
           </>
         ), [activeTab, t])}
 

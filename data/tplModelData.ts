@@ -3,6 +3,10 @@
 // This file stores only: model constants, and the per-race adjustment inputs (IF, CQF) that
 // are new data added by this feature and do not exist anywhere else in the codebase.
 
+import { houseDelegationHistory } from "./forecastData";
+import { popVoteData } from "./popVoteData";
+import { statesData } from "./statesData";
+
 export interface RaceModelInputs {
   race: string;        // display label + lookup key (e.g. "President", "Senate", "House IA-01")
   district?: string;   // district name for House races (e.g. "IA-01"), used for data lookup
@@ -29,20 +33,114 @@ export const TPL_GLOBAL_CONSTANTS = {
   YEARS: [2018, 2020, 2022, 2024] as number[],
 };
 
-// ── Per-state model constants ───────────────────────────────────────────────
-// Add a state here once its SWSC has been empirically derived.
-// Without SWSC, WF defaults to 1.00 for that state.
+// ── State Wave Sensitivity Coefficients ─────────────────────────────────────
+// SWSC is the average of each stable cycle's:
+//   state aggregate U.S. House margin swing ÷ national U.S. House margin swing
+//
+// Margins and swings use a D-positive sign convention. To match the published
+// Iowa example, cycle swings are rounded to one decimal and each cycle ratio is
+// rounded to two decimals before averaging. A national swing below 1 point is
+// excluded because the denominator is too small to produce a reliable ratio.
 
-export const STATE_MODEL_CONSTANTS: Record<string, { SWSC?: number }> = {
-  IA: { SWSC: 1.43 },
-};
+export const SWSC_MIN_NATIONAL_SWING = 1;
+export const SWSC_YEARS = [2016, 2018, 2020, 2022, 2024] as const;
+
+export interface SwscInterval {
+  fromYear: number;
+  toYear: number;
+  stateSwing: number;
+  nationalSwing: number;
+  ratio: number | null;
+}
+
+export interface StateSwscCalculation {
+  SWSC: number;
+  intervals: SwscInterval[];
+}
+
+function roundTo(value: number, decimals: number): number {
+  const scale = 10 ** decimals;
+  return Math.round((value + Number.EPSILON) * scale) / scale;
+}
+
+const NATIONAL_HOUSE_D_MARGIN = Object.fromEntries(
+  popVoteData
+    .filter((row) => row.type === "House")
+    .map((row) => [row.year, row.demPct - row.repPct])
+) as Record<number, number>;
+
+export function calculateStateSwsc(stateName: string): StateSwscCalculation | null {
+  const stateResults = houseDelegationHistory[stateName] ?? [];
+  const stateDMargins = Object.fromEntries(
+    stateResults.map((result) => [result.year, result.demPct - result.repPct])
+  ) as Record<number, number>;
+
+  const intervals: SwscInterval[] = [];
+
+  for (let i = 1; i < SWSC_YEARS.length; i += 1) {
+    const fromYear = SWSC_YEARS[i - 1];
+    const toYear = SWSC_YEARS[i];
+    const stateFrom = stateDMargins[fromYear];
+    const stateTo = stateDMargins[toYear];
+    const nationalFrom = NATIONAL_HOUSE_D_MARGIN[fromYear];
+    const nationalTo = NATIONAL_HOUSE_D_MARGIN[toYear];
+
+    if (
+      stateFrom == null ||
+      stateTo == null ||
+      nationalFrom == null ||
+      nationalTo == null
+    ) {
+      continue;
+    }
+
+    const stateSwing = roundTo(stateTo - stateFrom, 1);
+    const nationalSwing = roundTo(nationalTo - nationalFrom, 1);
+    const ratio =
+      Math.abs(nationalSwing) < SWSC_MIN_NATIONAL_SWING
+        ? null
+        : roundTo(stateSwing / nationalSwing, 2);
+
+    intervals.push({ fromYear, toYear, stateSwing, nationalSwing, ratio });
+  }
+
+  const stableRatios = intervals.flatMap((interval) =>
+    interval.ratio == null ? [] : [interval.ratio]
+  );
+
+  if (stableRatios.length === 0) return null;
+
+  return {
+    SWSC: roundTo(
+      stableRatios.reduce((sum, ratio) => sum + ratio, 0) / stableRatios.length,
+      2
+    ),
+    intervals,
+  };
+}
+
+export const STATE_SWSC_CALCULATIONS: Record<string, StateSwscCalculation> =
+  Object.fromEntries(
+    statesData.flatMap((state) => {
+      const calculation = calculateStateSwsc(state.name);
+      return calculation ? [[state.abbr, calculation]] : [];
+    })
+  );
+
+export const STATE_MODEL_CONSTANTS: Record<string, { SWSC?: number }> =
+  Object.fromEntries(
+    Object.entries(STATE_SWSC_CALCULATIONS).map(([abbr, calculation]) => [
+      abbr,
+      { SWSC: calculation.SWSC },
+    ])
+  );
 
 // ── Iowa model constants (kept for backward compatibility) ──────────────────
 
 export const IOWA_MODEL_CONSTANTS = {
   stateAbbr: "IA",
   stateName: "Iowa",
-  SWSC: 1.43,
+  SWSC: STATE_MODEL_CONSTANTS.IA?.SWSC ?? 1.43,
   k: TPL_GLOBAL_CONSTANTS.k,
   NES_BY_YEAR: TPL_GLOBAL_CONSTANTS.NES_BY_YEAR,
   RACE_TYPE_WEIGHTS: TPL_GLOBAL_CONSTANTS.RACE_TYPE_WEIGHTS,

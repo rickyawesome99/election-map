@@ -5,6 +5,7 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 import Link from "next/link";
 import type { Theme } from "./ForecastMap";
 import type { StateRow } from "./StatesTable";
+import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
@@ -24,7 +25,13 @@ function chamberLean(dem: number | null, rep: number | null): "D" | "R" | "tie" 
 
 function stateFill(row: StateRow | undefined, t: Theme, mode: MapMode): string {
   if (!row) return t.mapUnfilled;
-  if (mode === "default") return t.mapUnfilled;
+  // PVI uses positive values for Republicans, while the shared race color
+  // scale uses positive values for Democrats.
+  if (mode === "default") {
+    if (row.pvi2026 == null) return t.mapUnfilled;
+    if (row.pvi2026 === 0) return t.textMuted;
+    return getRaceColor(-row.pvi2026);
+  }
   if (mode === "governor") {
     if (row.govParty === "D") return DEM_FILL;
     if (row.govParty === "R") return REP_FILL;
@@ -57,6 +64,12 @@ function stateFill(row: StateRow | undefined, t: Theme, mode: MapMode): string {
     return SPLIT_FILL;
   }
   return t.mapUnfilled;
+}
+
+function formatPvi(pvi: number | null): string {
+  if (pvi == null) return "—";
+  if (pvi === 0) return "EVEN";
+  return pvi > 0 ? `R+${pvi}` : `D+${Math.abs(pvi)}`;
 }
 
 function PartyBadge({ party, t }: { party: "D" | "R" | "I" | null; t: Theme }) {
@@ -138,6 +151,11 @@ export default function StatesOverviewMap({
             }}
           >
             <div className="font-bold text-xs mb-1" style={{ color: t.textPrimary }}>{hovered.name}</div>
+            {mode === "default" && (
+              <div className="text-[10px] font-semibold" style={{ color: hovered.pvi2026 == null ? t.textVeryMuted : hovered.pvi2026 > 0 ? t.repText : hovered.pvi2026 < 0 ? t.demText : t.textMuted }}>
+                PVI: {formatPvi(hovered.pvi2026)}
+              </div>
+            )}
             {mode === "governor" && <PartyBadge party={hovered.govParty} t={t} />}
             {mode === "senate" && (
               <div className="text-[10px]" style={{ color: t.textMuted }}>
@@ -245,7 +263,7 @@ export default function StatesOverviewMap({
               className="rounded-md px-2.5 py-1 text-[10px] font-medium transition-all"
               style={mode === m ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }}
             >
-              {m === "default" ? "Default" : m === "governor" ? "Governor" : m === "senate" ? "Senate" : m === "house" ? "House" : "Legislature"}
+              {m === "default" ? "PVI" : m === "governor" ? "Governor" : m === "senate" ? "Senate" : m === "house" ? "House" : "Legislature"}
             </button>
           ))}
         </nav>
@@ -264,7 +282,7 @@ export default function StatesOverviewMap({
               className="px-2.5 py-1 rounded-md text-xs font-medium transition-all"
               style={mode === m ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }}
             >
-              {m === "default" ? "Default" : m === "governor" ? "G" : m === "senate" ? "S" : m === "house" ? "H" : "Leg."}
+              {m === "default" ? "PVI" : m === "governor" ? "G" : m === "senate" ? "S" : m === "house" ? "H" : "Leg."}
             </button>
           ))}
         </nav>
@@ -313,6 +331,17 @@ export default function StatesOverviewMap({
           </div>
           {/* Body */}
           <div className="p-2 flex flex-col gap-1.5">
+            {mode === "default" && (
+              <div className="rounded-md p-2" style={{ background: t.tabBg }}>
+                <div className="text-[8px] font-bold uppercase tracking-wider mb-1" style={{ color: t.textMuted }}>PVI</div>
+                <div
+                  className="text-[11px] font-bold"
+                  style={{ color: selected.pvi2026 == null ? t.textVeryMuted : selected.pvi2026 > 0 ? t.repText : selected.pvi2026 < 0 ? t.demText : t.textMuted }}
+                >
+                  {formatPvi(selected.pvi2026)}
+                </div>
+              </div>
+            )}
             {mode === "governor" && (
               <div className="rounded-md p-2" style={{ background: t.tabBg }}>
                 <div className="text-[8px] font-bold uppercase tracking-wider mb-1" style={{ color: t.textMuted }}>Governor</div>

@@ -4,9 +4,9 @@ import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
-import StateLandClipPath from "./StateLandClipPath";
 import type { RaceForecast, PastResult } from "@/data/forecastData";
 import { useDarkMode } from "@/lib/useDarkMode";
+import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 
 const ELECTION_YEARS = [2024, 2022, 2020, 2018, 2016];
 
@@ -38,7 +38,8 @@ const STATE_PROJ: Record<string, [number, number, number]> = {
   WI: [-89.8, 44.6, 4200],  WY: [-107.5, 43.0, 4800],
 };
 
-type HoveredDistrict = { geoid: string; race: RaceForecast; result: PastResult };
+type HistoricalDistrict = { id: string; name: string; pastResults: PastResult[] };
+type HoveredDistrict = { geoid: string; district: HistoricalDistrict; result: PastResult };
 type Position = [number, number];
 type PolygonCoordinates = Position[][];
 type MultiPolygonCoordinates = PolygonCoordinates[];
@@ -95,24 +96,45 @@ function normalizeDistrictGeography(geo: DistrictGeo): DistrictGeo {
 
 export default function HousePastMap({
   houseRaces,
+  historicalResults,
   stateAbbr,
   stateName,
   stateFips,
 }: {
   houseRaces: RaceForecast[];
+  historicalResults: Record<string, PastResult[]>;
   stateAbbr: string;
   stateName: string;
   stateFips: string;
 }) {
+  const districts = useMemo<HistoricalDistrict[]>(() => {
+    const byId = new Map<string, HistoricalDistrict>();
+    for (const race of houseRaces) {
+      byId.set(race.id, {
+        id: race.id,
+        name: race.name,
+        pastResults: race.pastResults ?? [],
+      });
+    }
+    for (const [id, pastResults] of Object.entries(historicalResults)) {
+      byId.set(id, {
+        id,
+        name: `${stateAbbr}-${id.slice(-2)}`,
+        pastResults,
+      });
+    }
+    return [...byId.values()];
+  }, [historicalResults, houseRaces, stateAbbr]);
+
   const availableYears = useMemo(() => {
     const found = new Set<number>();
-    for (const race of houseRaces) {
-      for (const r of race.pastResults ?? []) {
+    for (const district of districts) {
+      for (const r of district.pastResults) {
         if (ELECTION_YEARS.includes(r.year)) found.add(r.year);
       }
     }
     return ELECTION_YEARS.filter(y => found.has(y));
-  }, [houseRaces]);
+  }, [districts]);
 
   const [selectedYear, setSelectedYear] = useState<number>(availableYears[0] ?? 2024);
   const [hovered, setHovered] = useState<HoveredDistrict | null>(null);
@@ -145,23 +167,22 @@ export default function HousePastMap({
   }, [measure]);
 
   const geoUrl = getGeoUrl(selectedYear);
-  const clipPathId = `state-land-clip-${stateFips}-house-past`;
   const mapStroke = darkMode ? "#0d1117" : "#f6f8fa";
   const hoverStroke = darkMode ? "#ffffff" : "#333333";
   const proj = STATE_PROJ[stateAbbr] ?? [-96, 38, 800];
 
   const resultByGeoid = useMemo(() => {
     const map = new Map<string, HoveredDistrict>();
-    for (const race of houseRaces) {
-      const result = race.pastResults?.find(r => r.year === selectedYear);
+    for (const district of districts) {
+      const result = district.pastResults.find(r => r.year === selectedYear);
       if (!result) continue;
-      const entry = { geoid: race.id, race, result };
-      map.set(race.id, entry);
-      if (race.id.endsWith("01")) map.set(race.id.slice(0, -2) + "00", entry);
-      if (race.id.endsWith("00")) map.set(race.id.slice(0, -2) + "01", entry);
+      const entry = { geoid: district.id, district, result };
+      map.set(district.id, entry);
+      if (district.id.endsWith("01")) map.set(district.id.slice(0, -2) + "00", entry);
+      if (district.id.endsWith("00")) map.set(district.id.slice(0, -2) + "01", entry);
     }
     return map;
-  }, [houseRaces, selectedYear]);
+  }, [districts, selectedYear]);
 
   if (availableYears.length === 0) {
     return (
@@ -209,7 +230,7 @@ export default function HousePastMap({
       >
         {/* Hover tooltip */}
         {hovered && (() => {
-          const { race, result } = hovered;
+          const { district, result } = hovered;
           const margin = result.demPct - result.repPct;
           const marginLabel = margin >= 0 ? `D+${margin.toFixed(1)}` : `R+${Math.abs(margin).toFixed(1)}`;
           const marginColor = margin >= 0 ? "var(--party-dem)" : "var(--party-rep)";
@@ -237,7 +258,7 @@ export default function HousePastMap({
               }}
             >
               <div className="flex items-center justify-between gap-1 mb-1.5">
-                <span className="font-bold text-xs">{race.name}</span>
+                <span className="font-bold text-xs">{district.name}</span>
                 <span className="font-bold shrink-0" style={{ fontSize: 14, color: marginColor }}>{marginLabel}</span>
               </div>
               {result.demCandidate || result.repCandidate ? (
@@ -287,8 +308,6 @@ export default function HousePastMap({
           style={{ width: "100%", height: "100%" }}
         >
           <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
-            <StateLandClipPath clipPathId={clipPathId} stateFips={stateFips} />
-            <g clipPath={`url(#${clipPathId})`}>
             <Geographies
               key={geoUrl}
               geography={geoUrl}
@@ -297,7 +316,7 @@ export default function HousePastMap({
               {({ geographies }: { geographies: DistrictGeo[] }) =>
                 geographies.map(geo => {
                   const geoId = geo.properties?.GEOID as string | undefined;
-                  if (!geoId?.startsWith(stateFips)) return null;
+                  if (!isCongressionalDistrictGeoid(geoId, stateFips)) return null;
                   const entry = geoId ? resultByGeoid.get(geoId) : undefined;
                   const margin = entry ? entry.result.demPct - entry.result.repPct : 0;
                   const fill = entry ? getRaceColor(margin) : "var(--app-tab-bg)";
@@ -333,7 +352,6 @@ export default function HousePastMap({
                 })
               }
             </Geographies>
-            </g>
           </ZoomableGroup>
         </ComposableMap>
 
@@ -350,7 +368,7 @@ export default function HousePastMap({
 
       {/* Selected district panel */}
       {selected && (() => {
-        const { race, result } = selected;
+        const { district, result } = selected;
         const margin = result.demPct - result.repPct;
         const marginLabel = margin >= 0 ? `D+${margin.toFixed(1)}` : `R+${Math.abs(margin).toFixed(1)}`;
         const marginColor = margin >= 0 ? "var(--party-dem)" : "var(--party-rep)";
@@ -363,7 +381,7 @@ export default function HousePastMap({
                   Selected District
                 </div>
                 <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{race.name}</span>
+                  <span className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{district.name}</span>
                   <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>{selectedYear} House</span>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import { statesData } from "@/data/statesData";
-import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, senateCurrent, pres2024, presPastResults, houseDelegationHistory, houseStatewideResults, stateLegData, PresResult, RaceForecast, NoElectionEntry, HouseStatewideResult, electionYear } from "@/data/forecastData";
+import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, housePastResults, senateCurrent, pres2024, presPastResults, houseDelegationHistory, houseStatewideResults, stateLegData, PresResult, RaceForecast, NoElectionEntry, HouseStatewideResult, electionYear } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -254,6 +254,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 export default async function StateDetailPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ from?: string }> }) {
   const { id } = await params;
   const { from } = await searchParams;
+  // Build this page's "from" value for child links — chains the original from so BackButton works through 3+ levels
+  const stateFrom = `/states/${id}${from ? `?from=${encodeURIComponent(from)}` : ""}`;
   const state = statesData.find((s) => s.id === id);
   if (!state) notFound();
 
@@ -305,6 +307,9 @@ export default async function StateDetailPage({ params, searchParams }: { params
       if (filtered.length > 0) statePastResults[geoid] = filtered;
     }
   }
+  const stateHousePastResults = Object.fromEntries(
+    Object.entries(housePastResults).filter(([geoid]) => stateFips && geoid.startsWith(stateFips))
+  );
 
   const stateDelegationHistory = houseDelegationHistory[state.name] ?? [];
   const stateLegEntries = (stateLegData[state.name] ?? []).filter(e =>
@@ -419,6 +424,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
         {/* Overview + Map */}
         <StateMapSection
           houseRaces={houseRaces}
+          housePastResults={stateHousePastResults}
           stateAbbr={state.abbr}
           stateName={state.name}
           stateFips={stateFips}
@@ -643,13 +649,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
             {senateSeat1Race ? (
               <ElectionCard
                 race={senateSeat1Race}
-                href={`/senate/${senateSeat1Race.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                href={`/senate/${senateSeat1Race.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
                 label="Senate (Seat 1)"
               />
             ) : senateSeat1NoEl ? (
               <IncumbentCard
                 entry={senateSeat1NoEl}
-                href={`/senate/${senateSeat1NoEl.abbr.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                href={`/senate/${senateSeat1NoEl.abbr.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
                 label="Senate (Seat 1)"
               />
             ) : null}
@@ -658,13 +664,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
             {senateSeat2Race ? (
               <ElectionCard
                 race={senateSeat2Race}
-                href={`/senate/${senateSeat2Race.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                href={`/senate/${senateSeat2Race.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
                 label="Senate (Seat 2)"
               />
             ) : senateSeat2Holdover ? (
               <IncumbentCard
                 entry={senateSeat2Holdover}
-                href={`/senate/${senateSeat2Holdover.abbr.toLowerCase()}-2?from=${encodeURIComponent(`/states/${id}`)}`}
+                href={`/senate/${senateSeat2Holdover.abbr.toLowerCase()}-2?from=${encodeURIComponent(stateFrom)}`}
                 label="Senate (Seat 2)"
               />
             ) : null}
@@ -673,13 +679,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
             {governorRace ? (
               <ElectionCard
                 race={governorRace}
-                href={`/governor/${governorRace.id.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                href={`/governor/${governorRace.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
                 label="Governor"
               />
             ) : governorNoEl ? (
               <IncumbentCard
                 entry={governorNoEl}
-                href={`/governor/${governorNoEl.abbr.toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                href={`/governor/${governorNoEl.abbr.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
                 label="Governor"
               />
             ) : null}
@@ -711,7 +717,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                 <div className="flex flex-col" style={{ borderTop: "1px solid var(--app-border)" }}>
                   {houseRaces.map((race) => (
                     <div key={race.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                      <HouseDistrictRow race={race} from={`/states/${id}`} />
+                      <HouseDistrictRow race={race} from={stateFrom} />
                     </div>
                   ))}
                 </div>
@@ -821,7 +827,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                         <div className="flex min-w-0 items-center gap-3">
                           <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
                           <Link
-                            href={`/senate/${(res.seat === 2 ? `${state.abbr}-2` : state.abbr).toLowerCase()}?from=${encodeURIComponent(`/states/${id}`)}`}
+                            href={`/senate/${(res.seat === 2 ? `${state.abbr}-2` : state.abbr).toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
                             className="truncate text-sm font-semibold transition-colors hover:underline"
                             style={{ color: "var(--app-text-muted)" }}
                           >
@@ -877,7 +883,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                             <div className="flex min-w-0 items-center gap-3">
                               <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
                               <Link
-                                href={`/governor/${govPageId}?from=${encodeURIComponent(`/states/${id}`)}`}
+                                href={`/governor/${govPageId}?from=${encodeURIComponent(stateFrom)}`}
                                 className="truncate text-sm font-semibold transition-colors hover:underline"
                                 style={{ color: "var(--app-text-muted)" }}
                               >
