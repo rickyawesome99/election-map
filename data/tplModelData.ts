@@ -7,26 +7,47 @@ import { houseDelegationHistory } from "./forecastData";
 import { popVoteData } from "./popVoteData";
 import { statesData } from "./statesData";
 
+export type CQTier = "Elite" | "Strong" | "Generic" | "Weak" | "Sacrificial";
+
+// Winning candidate quality: elite winner suppresses margin, sacrificial inflates it
+export const WQ_VALUES: Record<CQTier, number> = {
+  Elite: 0.75,
+  Strong: 0.88,
+  Generic: 1.00,
+  Weak: 1.12,
+  Sacrificial: 1.25,
+};
+
+// Losing candidate quality: inverse — elite opponent inflates the signal, sacrificial suppresses it
+export const LQ_VALUES: Record<CQTier, number> = {
+  Elite: 1.25,
+  Strong: 1.12,
+  Generic: 1.00,
+  Weak: 0.88,
+  Sacrificial: 0.75,
+};
+
 export interface RaceModelInputs {
   race: string;        // display label + lookup key (e.g. "President", "Senate", "House IA-01")
   district?: string;   // district name for House races (e.g. "IA-01"), used for data lookup
   raceType: "P" | "S" | "G" | "H" | "L";
   year: number;
-  incumbent: string;
-  IF: number;
-  CQFMatchup: string;
-  CQF: number;
+  wqTier?: CQTier;   // winning candidate quality tier (default: "Generic")
+  lqTier?: CQTier;   // losing candidate quality tier  (default: "Generic")
+  FF?: number;         // Fundraising Factor (default: 1.00 → 0 pts)
+  PIF?: number;        // Presidential Incumbent Factor (default: 1.00 → 0 pts)
 }
 
 // ── Global TPL model constants (shared across all states) ───────────────────
 
 export const TPL_GLOBAL_CONSTANTS = {
-  k: 0.05,      // Wave scaling constant (placeholder, pending backtesting)
-  // NES = National Environment Score (positive = D-favored nationally)
+  k_add: 0.35,  // Additive wave scaling: WA_add = NES × SWSC × k_add (placeholder, pending calibration)
+  k_mult: 0.05, // Multiplicative wave scaling: WF = 1/(1 + NES × SWSC × k_mult × sign) (placeholder)
+  // NES = National Environment Score (positive = R-favored nationally)
   // Blended President+House popular vote (presidential years) or House alone (midterms)
-  NES_BY_YEAR: { 2018: 7.1, 2020: 2.3, 2022: -4.2, 2024: -3.5 } as Record<number, number>,
+  NES_BY_YEAR: { 2018: -7.1, 2020: -2.3, 2022: 4.2, 2024: 3.5 } as Record<number, number>,
   // Base race type weights before redistribution among present types
-  RACE_TYPE_WEIGHTS: { P: 0.30, S: 0.25, H: 0.20, L: 0.15, G: 0.10 } as Record<string, number>,
+  RACE_TYPE_WEIGHTS: { P: 0.25, S: 0.25, H: 0.30, L: 0.10, G: 0.10 } as Record<string, number>,
   // Year weights (recency-decay). Only even election years are used in the Pre-TPL aggregation.
   // Odd-year governor races (NJ, VA: 2017, 2021, 2025) appear in the race table but not in aggregation yet.
   YEAR_WEIGHTS: { 2024: 0.40, 2022: 0.28, 2020: 0.20, 2018: 0.12 } as Record<number, number>,
@@ -42,10 +63,10 @@ export const TPL_GLOBAL_CONSTANTS = {
 // rounded to two decimals before averaging. A national swing below 1 point is
 // excluded because the denominator is too small to produce a reliable ratio.
 
-export const SWSC_MIN_NATIONAL_SWING = 1;
-export const SWSC_YEARS = [2016, 2018, 2020, 2022, 2024] as const;
+export const S_MIN_NATIONAL_SWING = 1;
+export const S_YEARS = [2016, 2018, 2020, 2022, 2024] as const;
 
-export interface SwscInterval {
+export interface SInterval {
   fromYear: number;
   toYear: number;
   stateSwing: number;
@@ -53,9 +74,9 @@ export interface SwscInterval {
   ratio: number | null;
 }
 
-export interface StateSwscCalculation {
-  SWSC: number;
-  intervals: SwscInterval[];
+export interface StateSCalculation {
+  S: number;
+  intervals: SInterval[];
 }
 
 function roundTo(value: number, decimals: number): number {
@@ -69,17 +90,17 @@ const NATIONAL_HOUSE_D_MARGIN = Object.fromEntries(
     .map((row) => [row.year, row.demPct - row.repPct])
 ) as Record<number, number>;
 
-export function calculateStateSwsc(stateName: string): StateSwscCalculation | null {
+export function calculateStateS(stateName: string): StateSCalculation | null {
   const stateResults = houseDelegationHistory[stateName] ?? [];
   const stateDMargins = Object.fromEntries(
     stateResults.map((result) => [result.year, result.demPct - result.repPct])
   ) as Record<number, number>;
 
-  const intervals: SwscInterval[] = [];
+  const intervals: SInterval[] = [];
 
-  for (let i = 1; i < SWSC_YEARS.length; i += 1) {
-    const fromYear = SWSC_YEARS[i - 1];
-    const toYear = SWSC_YEARS[i];
+  for (let i = 1; i < S_YEARS.length; i += 1) {
+    const fromYear = S_YEARS[i - 1];
+    const toYear = S_YEARS[i];
     const stateFrom = stateDMargins[fromYear];
     const stateTo = stateDMargins[toYear];
     const nationalFrom = NATIONAL_HOUSE_D_MARGIN[fromYear];
@@ -97,7 +118,7 @@ export function calculateStateSwsc(stateName: string): StateSwscCalculation | nu
     const stateSwing = roundTo(stateTo - stateFrom, 1);
     const nationalSwing = roundTo(nationalTo - nationalFrom, 1);
     const ratio =
-      Math.abs(nationalSwing) < SWSC_MIN_NATIONAL_SWING
+      Math.abs(nationalSwing) < S_MIN_NATIONAL_SWING
         ? null
         : roundTo(stateSwing / nationalSwing, 2);
 
@@ -111,7 +132,7 @@ export function calculateStateSwsc(stateName: string): StateSwscCalculation | nu
   if (stableRatios.length === 0) return null;
 
   return {
-    SWSC: roundTo(
+    S: roundTo(
       stableRatios.reduce((sum, ratio) => sum + ratio, 0) / stableRatios.length,
       2
     ),
@@ -119,19 +140,19 @@ export function calculateStateSwsc(stateName: string): StateSwscCalculation | nu
   };
 }
 
-export const STATE_SWSC_CALCULATIONS: Record<string, StateSwscCalculation> =
+export const STATE_S_CALCULATIONS: Record<string, StateSCalculation> =
   Object.fromEntries(
     statesData.flatMap((state) => {
-      const calculation = calculateStateSwsc(state.name);
+      const calculation = calculateStateS(state.name);
       return calculation ? [[state.abbr, calculation]] : [];
     })
   );
 
-export const STATE_MODEL_CONSTANTS: Record<string, { SWSC?: number }> =
+export const STATE_MODEL_CONSTANTS: Record<string, { S?: number }> =
   Object.fromEntries(
-    Object.entries(STATE_SWSC_CALCULATIONS).map(([abbr, calculation]) => [
+    Object.entries(STATE_S_CALCULATIONS).map(([abbr, calculation]) => [
       abbr,
-      { SWSC: calculation.SWSC },
+      { S: calculation.S },
     ])
   );
 
@@ -140,8 +161,9 @@ export const STATE_MODEL_CONSTANTS: Record<string, { SWSC?: number }> =
 export const IOWA_MODEL_CONSTANTS = {
   stateAbbr: "IA",
   stateName: "Iowa",
-  SWSC: STATE_MODEL_CONSTANTS.IA?.SWSC ?? 1.43,
-  k: TPL_GLOBAL_CONSTANTS.k,
+  S: STATE_MODEL_CONSTANTS.IA?.S ?? 1.43,
+  k_add: TPL_GLOBAL_CONSTANTS.k_add,
+  k_mult: TPL_GLOBAL_CONSTANTS.k_mult,
   NES_BY_YEAR: TPL_GLOBAL_CONSTANTS.NES_BY_YEAR,
   RACE_TYPE_WEIGHTS: TPL_GLOBAL_CONSTANTS.RACE_TYPE_WEIGHTS,
   YEAR_WEIGHTS: TPL_GLOBAL_CONSTANTS.YEAR_WEIGHTS,
@@ -149,48 +171,70 @@ export const IOWA_MODEL_CONSTANTS = {
 };
 
 // ── Iowa per-race adjustment inputs (2018–2024) ─────────────────────────────
-// Raw margins come from forecastData.ts at render time; only IF/CQF are stored here.
+// wqTier = winning candidate quality, lqTier = losing candidate quality.
+// Omitted tiers default to "Generic" → CQ = 1.00, no CF adjustment.
+// Derived from old CQFMatchup strings; parenthetical candidate names dropped.
 
 export const IOWA_RACE_INPUTS: RaceModelInputs[] = [
-  // President
-  { race: "President", raceType: "P", year: 2020, incumbent: "Trump (R)", IF: 0.935, CQFMatchup: "Generic/Generic", CQF: 1.00 },
-  { race: "President", raceType: "P", year: 2024, incumbent: "Open seat", IF: 1.00, CQFMatchup: "Strong(Trump)/Weak(Harris)", CQF: 0.88 },
+  // President (Generic/Generic → both default)
+  { race: "President", raceType: "P", year: 2020 },
+  // Strong(Trump)/Weak(Harris)
+  { race: "President", raceType: "P", year: 2024, wqTier: "Strong", lqTier: "Weak" },
 
   // Senate
-  { race: "Senate", raceType: "S", year: 2020, incumbent: "Ernst (R)", IF: 0.875, CQFMatchup: "Generic/Weak", CQF: 0.94 },
-  { race: "Senate", raceType: "S", year: 2022, incumbent: "Grassley (R)", IF: 0.875, CQFMatchup: "Generic/Strong", CQF: 1.06 },
+  // Generic/Weak (Greenfield)
+  { race: "Senate", raceType: "S", year: 2020, lqTier: "Weak" },
+  // Generic/Strong (Franken)
+  { race: "Senate", raceType: "S", year: 2022, lqTier: "Strong" },
 
-  // Governor
-  { race: "Governor", raceType: "G", year: 2018, incumbent: "Reynolds (R, succession)", IF: 0.835, CQFMatchup: "Generic/Generic", CQF: 1.00 },
-  { race: "Governor", raceType: "G", year: 2022, incumbent: "Reynolds (R)", IF: 0.835, CQFMatchup: "Generic/Weak", CQF: 0.92 },
+  // Governor (Generic/Generic → both default)
+  { race: "Governor", raceType: "G", year: 2018 },
+  // Generic/Weak
+  { race: "Governor", raceType: "G", year: 2022, lqTier: "Weak" },
 
   // House IA-01
-  { race: "House IA-01", district: "IA-01", raceType: "H", year: 2018, incumbent: "Blum (R), lost", IF: 1.00, CQFMatchup: "Strong(Finkenauer)/Generic", CQF: 0.94 },
-  { race: "House IA-01", district: "IA-01", raceType: "H", year: 2020, incumbent: "Finkenauer (D), lost", IF: 1.00, CQFMatchup: "Strong(Hinson)/Generic", CQF: 0.92 },
-  { race: "House IA-01", district: "IA-01", raceType: "H", year: 2022, incumbent: "Miller-Meeks (R), won", IF: 0.80, CQFMatchup: "Generic/Strong", CQF: 1.06 },
-  { race: "House IA-01", district: "IA-01", raceType: "H", year: 2024, incumbent: "Miller-Meeks (R), won", IF: 0.80, CQFMatchup: "Generic/Strong", CQF: 1.10 },
+  // Strong(Finkenauer)/Generic
+  { race: "House IA-01", district: "IA-01", raceType: "H", year: 2018, wqTier: "Strong" },
+  // Strong(Hinson)/Generic
+  { race: "House IA-01", district: "IA-01", raceType: "H", year: 2020, wqTier: "Strong" },
+  // Generic/Strong
+  { race: "House IA-01", district: "IA-01", raceType: "H", year: 2022, lqTier: "Strong" },
+  // Generic/Strong
+  { race: "House IA-01", district: "IA-01", raceType: "H", year: 2024, lqTier: "Strong" },
 
   // House IA-02
-  { race: "House IA-02", district: "IA-02", raceType: "H", year: 2018, incumbent: "Loebsack (D), won", IF: 0.80, CQFMatchup: "Generic/Weak", CQF: 0.94 },
-  { race: "House IA-02", district: "IA-02", raceType: "H", year: 2020, incumbent: "Open seat (Loebsack retired)", IF: 1.00, CQFMatchup: "Strong/Strong", CQF: 1.00 },
-  { race: "House IA-02", district: "IA-02", raceType: "H", year: 2022, incumbent: "Hinson (R), won", IF: 0.80, CQFMatchup: "Generic/Strong", CQF: 1.06 },
-  { race: "House IA-02", district: "IA-02", raceType: "H", year: 2024, incumbent: "Hinson (R), won", IF: 0.80, CQFMatchup: "Generic/Weak", CQF: 0.92 },
+  // Generic/Weak
+  { race: "House IA-02", district: "IA-02", raceType: "H", year: 2018, lqTier: "Weak" },
+  // Strong/Strong
+  { race: "House IA-02", district: "IA-02", raceType: "H", year: 2020, wqTier: "Strong", lqTier: "Strong" },
+  // Generic/Strong
+  { race: "House IA-02", district: "IA-02", raceType: "H", year: 2022, lqTier: "Strong" },
+  // Generic/Weak
+  { race: "House IA-02", district: "IA-02", raceType: "H", year: 2024, lqTier: "Weak" },
 
   // House IA-03
-  { race: "House IA-03", district: "IA-03", raceType: "H", year: 2018, incumbent: "Young (R), lost", IF: 1.00, CQFMatchup: "Strong(Axne)/Generic", CQF: 0.92 },
-  { race: "House IA-03", district: "IA-03", raceType: "H", year: 2020, incumbent: "Axne (D), won", IF: 0.80, CQFMatchup: "Generic/Weak", CQF: 0.92 },
-  { race: "House IA-03", district: "IA-03", raceType: "H", year: 2022, incumbent: "Axne (D), lost", IF: 1.00, CQFMatchup: "Strong(Nunn)/Generic", CQF: 0.92 },
-  { race: "House IA-03", district: "IA-03", raceType: "H", year: 2024, incumbent: "Nunn (R), won", IF: 0.80, CQFMatchup: "Generic/Strong", CQF: 1.06 },
+  // Strong(Axne)/Generic
+  { race: "House IA-03", district: "IA-03", raceType: "H", year: 2018, wqTier: "Strong" },
+  // Generic/Weak
+  { race: "House IA-03", district: "IA-03", raceType: "H", year: 2020, lqTier: "Weak" },
+  // Strong(Nunn)/Generic
+  { race: "House IA-03", district: "IA-03", raceType: "H", year: 2022, wqTier: "Strong" },
+  // Generic/Strong
+  { race: "House IA-03", district: "IA-03", raceType: "H", year: 2024, lqTier: "Strong" },
 
   // House IA-04
-  { race: "House IA-04", district: "IA-04", raceType: "H", year: 2018, incumbent: "King (R), won", IF: 0.80, CQFMatchup: "Weak(King)/Strong(Scholten)", CQF: 1.10 },
-  { race: "House IA-04", district: "IA-04", raceType: "H", year: 2020, incumbent: "Open seat (King lost primary)", IF: 1.00, CQFMatchup: "Strong(Feenstra)/Generic", CQF: 0.94 },
-  { race: "House IA-04", district: "IA-04", raceType: "H", year: 2022, incumbent: "Feenstra (R), won", IF: 0.80, CQFMatchup: "Generic/Weak", CQF: 0.94 },
-  { race: "House IA-04", district: "IA-04", raceType: "H", year: 2024, incumbent: "Feenstra (R), won", IF: 0.80, CQFMatchup: "Generic/Weak", CQF: 0.94 },
+  // Weak(King)/Strong(Scholten)
+  { race: "House IA-04", district: "IA-04", raceType: "H", year: 2018, wqTier: "Weak", lqTier: "Strong" },
+  // Strong(Feenstra)/Generic
+  { race: "House IA-04", district: "IA-04", raceType: "H", year: 2020, wqTier: "Strong" },
+  // Generic/Weak
+  { race: "House IA-04", district: "IA-04", raceType: "H", year: 2022, lqTier: "Weak" },
+  // Generic/Weak
+  { race: "House IA-04", district: "IA-04", raceType: "H", year: 2024, lqTier: "Weak" },
 
-  // State Legislature (aggregate — IF/CQF not tracked at this level, both 1.00 by design)
-  { race: "State Legislature", raceType: "L", year: 2022, incumbent: "—", IF: 1.00, CQFMatchup: "—", CQF: 1.00 },
-  { race: "State Legislature", raceType: "L", year: 2024, incumbent: "—", IF: 1.00, CQFMatchup: "—", CQF: 1.00 },
+  // State Legislature (no candidate-level quality adjustment)
+  { race: "State Legislature", raceType: "L", year: 2022 },
+  { race: "State Legislature", raceType: "L", year: 2024 },
 ];
 
 // ── Per-state race inputs lookup ────────────────────────────────────────────
