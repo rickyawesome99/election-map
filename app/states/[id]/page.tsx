@@ -645,6 +645,21 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
           <div className="max-h-[38rem] overflow-y-auto pr-1">
           <div className="flex flex-col" style={{ borderTop: "1px solid var(--app-border)" }}>
+            {/* Governor */}
+            {governorRace ? (
+              <ElectionCard
+                race={governorRace}
+                href={`/governor/${governorRace.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                label="Governor"
+              />
+            ) : governorNoEl ? (
+              <IncumbentCard
+                entry={governorNoEl}
+                href={`/governor/${governorNoEl.abbr.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                label="Governor"
+              />
+            ) : null}
+
             {/* Senate seat 1 */}
             {senateSeat1Race ? (
               <ElectionCard
@@ -672,21 +687,6 @@ export default async function StateDetailPage({ params, searchParams }: { params
                 entry={senateSeat2Holdover}
                 href={`/senate/${senateSeat2Holdover.abbr.toLowerCase()}-2?from=${encodeURIComponent(stateFrom)}`}
                 label="Senate (Seat 2)"
-              />
-            ) : null}
-
-            {/* Governor */}
-            {governorRace ? (
-              <ElectionCard
-                race={governorRace}
-                href={`/governor/${governorRace.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
-                label="Governor"
-              />
-            ) : governorNoEl ? (
-              <IncumbentCard
-                entry={governorNoEl}
-                href={`/governor/${governorNoEl.abbr.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
-                label="Governor"
               />
             ) : null}
 

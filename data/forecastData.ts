@@ -163,7 +163,7 @@ export const senateData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2020, "demPct": 0, "repPct": 66.53, "repCandidate": "Tom Cotton", "repVotes": 793871, "totalVotes": 1193261, "margin": 66.53, "seat": 1, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 39.43, "repPct": 56.5, "demCandidate": "Mark L. Pryor", "repCandidate": "Tom Cotton", "demVotes": 334174, "repVotes": 478819, "totalVotes": 847505, "margin": 17.07, "seat": 1, "seatClass": 2, "demIncumbent": true }
+      { "year": 2014, "demPct": 39.43, "repPct": 56.5, "demCandidate": "Mark Pryor", "repCandidate": "Tom Cotton", "demVotes": 334174, "repVotes": 478819, "totalVotes": 847505, "margin": 17.07, "seat": 1, "seatClass": 2, "demIncumbent": true }
     ]
   },
   {
@@ -228,8 +228,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Chris Coons",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2020, "demPct": 59.44, "repPct": 37.9, "demCandidate": "Christopher A. Coons", "repCandidate": "Lauren E. Witzke", "demVotes": 291804, "repVotes": 186054, "totalVotes": 490935, "margin": -21.54, "seat": 2, "seatClass": 2, "demIncumbent": true },
-      { "year": 2014, "demPct": 55.83, "repPct": 42.23, "demCandidate": "Christopher A. Coons", "repCandidate": "Kevin Wade", "demVotes": 130655, "repVotes": 98823, "totalVotes": 234038, "margin": -13.6, "seat": 2, "seatClass": 2, "demIncumbent": true }
+      { "year": 2020, "demPct": 59.44, "repPct": 37.9, "demCandidate": "Christopher Coons", "repCandidate": "Lauren Witzke", "demVotes": 291804, "repVotes": 186054, "totalVotes": 490935, "margin": -21.54, "seat": 2, "seatClass": 2, "demIncumbent": true },
+      { "year": 2014, "demPct": 55.83, "repPct": 42.23, "demCandidate": "Christopher Coons", "repCandidate": "Kevin Wade", "demVotes": 130655, "repVotes": 98823, "totalVotes": 234038, "margin": -13.6, "seat": 2, "seatClass": 2, "demIncumbent": true }
     ]
   },
   {
@@ -261,8 +261,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Jon Ossoff",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2020, "demPct": 50.61, "repPct": 49.39, "demCandidate": "Jon Ossoff", "repCandidate": "David A. Perdue", "demVotes": 2269923, "repVotes": 2214979, "totalVotes": 4484902, "margin": -1.23, "seat": 1, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 45.21, "repPct": 52.89, "demCandidate": "Mary Michelle Nunn", "repCandidate": "David A. Perdue", "demVotes": 1160811, "repVotes": 1358088, "totalVotes": 2567805, "margin": 7.68, "seat": 1, "seatClass": 2 }
+      { "year": 2020, "demPct": 50.61, "repPct": 49.39, "demCandidate": "Jon Ossoff", "repCandidate": "David Perdue", "demVotes": 2269923, "repVotes": 2214979, "totalVotes": 4484902, "margin": -1.23, "seat": 1, "seatClass": 2, "repIncumbent": true },
+      { "year": 2014, "demPct": 45.21, "repPct": 52.89, "demCandidate": "Mary Michelle Nunn", "repCandidate": "David Perdue", "demVotes": 1160811, "repVotes": 1358088, "totalVotes": 2567805, "margin": 7.68, "seat": 1, "seatClass": 2 }
     ]
   },
   {
@@ -294,8 +294,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Joni Ernst",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2020, "demPct": 45.15, "repPct": 51.74, "demCandidate": "Theresa Greenfield", "repCandidate": "Joni K. Ernst", "demVotes": 754859, "repVotes": 864997, "totalVotes": 1700130, "margin": 6.59, "seat": 1, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 43.76, "repPct": 52.1, "demCandidate": "Bruce L. Braley", "repCandidate": "Joni K. Ernst", "demVotes": 494370, "repVotes": 588575, "totalVotes": 1129700, "margin": 8.34, "seat": 1, "seatClass": 2 }
+      { "year": 2020, "demPct": 45.15, "repPct": 51.74, "demCandidate": "Theresa Greenfield", "repCandidate": "Joni Ernst", "demVotes": 754859, "repVotes": 864997, "totalVotes": 1700130, "margin": 6.59, "seat": 1, "seatClass": 2, "repIncumbent": true },
+      { "year": 2014, "demPct": 43.76, "repPct": 52.1, "demCandidate": "Bruce Braley", "repCandidate": "Joni Ernst", "demVotes": 494370, "repVotes": 588575, "totalVotes": 1129700, "margin": 8.34, "seat": 1, "seatClass": 2 }
     ]
   },
   {
@@ -327,8 +327,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Jim Risch",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2020, "demPct": 33.25, "repPct": 62.62, "demCandidate": "Paulette E. Jordan", "repCandidate": "James E. Risch", "demVotes": 285864, "repVotes": 538446, "totalVotes": 859827, "margin": 29.38, "seat": 1, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 34.67, "repPct": 65.33, "demCandidate": "Nels Mitchell", "repCandidate": "James E. Risch", "demVotes": 151574, "repVotes": 285596, "totalVotes": 437170, "margin": 30.66, "seat": 1, "seatClass": 2, "repIncumbent": true }
+      { "year": 2020, "demPct": 33.25, "repPct": 62.62, "demCandidate": "Paulette Jordan", "repCandidate": "James Risch", "demVotes": 285864, "repVotes": 538446, "totalVotes": 859827, "margin": 29.38, "seat": 1, "seatClass": 2, "repIncumbent": true },
+      { "year": 2014, "demPct": 34.67, "repPct": 65.33, "demCandidate": "Nels Mitchell", "repCandidate": "James Risch", "demVotes": 151574, "repVotes": 285596, "totalVotes": 437170, "margin": 30.66, "seat": 1, "seatClass": 2, "repIncumbent": true }
     ]
   },
   {
@@ -360,8 +360,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Dick Durbin",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2020, "demPct": 54.93, "repPct": 38.87, "demCandidate": "Richard J. Durbin", "repCandidate": "Mark C. Curran", "demVotes": 3278930, "repVotes": 2319870, "totalVotes": 5968901, "margin": -16.07, "seat": 1, "seatClass": 2, "demIncumbent": true },
-      { "year": 2014, "demPct": 53.55, "repPct": 42.69, "demCandidate": "Richard J. Durbin", "repCandidate": "James D. Oberweis", "demVotes": 1929637, "repVotes": 1538522, "totalVotes": 3603519, "margin": -10.85, "seat": 1, "seatClass": 2, "demIncumbent": true }
+      { "year": 2020, "demPct": 54.93, "repPct": 38.87, "demCandidate": "Richard Durbin", "repCandidate": "Mark Curran", "demVotes": 3278930, "repVotes": 2319870, "totalVotes": 5968901, "margin": -16.07, "seat": 1, "seatClass": 2, "demIncumbent": true },
+      { "year": 2014, "demPct": 53.55, "repPct": 42.69, "demCandidate": "Richard Durbin", "repCandidate": "James Oberweis", "demVotes": 1929637, "repVotes": 1538522, "totalVotes": 3603519, "margin": -10.85, "seat": 1, "seatClass": 2, "demIncumbent": true }
     ]
   },
   {
@@ -460,7 +460,7 @@ export const senateData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2020, "demPct": 19.02, "repPct": 59.32, "demCandidate": "Adrian Perkins", "repCandidate": "Bill Cassidy", "demVotes": 394049, "repVotes": 1228908, "totalVotes": 2071543, "margin": 40.3, "seat": 1, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 44.07, "repPct": 55.93, "demCandidate": "Mary L. Landrieu", "repCandidate": "Bill Cassidy", "demVotes": 561210, "repVotes": 712379, "totalVotes": 1273589, "margin": 11.87, "seat": 1, "seatClass": 2, "demIncumbent": true }
+      { "year": 2014, "demPct": 44.07, "repPct": 55.93, "demCandidate": "Mary Landrieu", "repCandidate": "Bill Cassidy", "demVotes": 561210, "repVotes": 712379, "totalVotes": 1273589, "margin": 11.87, "seat": 1, "seatClass": 2, "demIncumbent": true }
     ]
   },
   {
@@ -492,8 +492,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Ed Markey",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2020, "demPct": 66.15, "repPct": 33.04, "demCandidate": "Edward J. Markey", "repCandidate": "Kevin J. O'Connor", "demVotes": 2357809, "repVotes": 1177765, "totalVotes": 3658005, "margin": -33.11, "seat": 2, "seatClass": 2, "demIncumbent": true },
-      { "year": 2014, "demPct": 61.87, "repPct": 37.98, "demCandidate": "Edward J. Markey", "repCandidate": "Brian J. Herr", "demVotes": 1289944, "repVotes": 791950, "totalVotes": 2186789, "margin": -23.88, "seat": 2, "seatClass": 2 }
+      { "year": 2020, "demPct": 66.15, "repPct": 33.04, "demCandidate": "Edward Markey", "repCandidate": "Kevin O'Connor", "demVotes": 2357809, "repVotes": 1177765, "totalVotes": 3658005, "margin": -33.11, "seat": 2, "seatClass": 2, "demIncumbent": true },
+      { "year": 2014, "demPct": 61.87, "repPct": 37.98, "demCandidate": "Edward Markey", "repCandidate": "Brian Herr", "demVotes": 1289944, "repVotes": 791950, "totalVotes": 2186789, "margin": -23.88, "seat": 2, "seatClass": 2 }
     ]
   },
   {
@@ -525,8 +525,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Susan Collins",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2020, "demPct": 42.39, "repPct": 50.98, "demCandidate": "Sara I. Gideon", "repCandidate": "Susan M. Collins", "demVotes": 347223, "repVotes": 417645, "totalVotes": 828305, "margin": 8.6, "seat": 2, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 31.5, "repPct": 68.46, "demCandidate": "Shenna Bellows", "repCandidate": "Susan M. Collins", "demVotes": 190254, "repVotes": 413505, "totalVotes": 616996, "margin": 36.96, "seat": 2, "seatClass": 2, "repIncumbent": true }
+      { "year": 2020, "demPct": 42.39, "repPct": 50.98, "demCandidate": "Sara Gideon", "repCandidate": "Susan Collins", "demVotes": 347223, "repVotes": 417645, "totalVotes": 828305, "margin": 8.6, "seat": 2, "seatClass": 2, "repIncumbent": true },
+      { "year": 2014, "demPct": 31.5, "repPct": 68.46, "demCandidate": "Shenna Bellows", "repCandidate": "Susan Collins", "demVotes": 190254, "repVotes": 413505, "totalVotes": 616996, "margin": 36.96, "seat": 2, "seatClass": 2, "repIncumbent": true }
     ]
   },
   {
@@ -558,8 +558,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Gary Peters",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2020, "demPct": 49.9, "repPct": 48.22, "demCandidate": "Gary C. Peters", "repCandidate": "John James", "demVotes": 2734568, "repVotes": 2642233, "totalVotes": 5479720, "margin": -1.69, "seat": 2, "seatClass": 2, "demIncumbent": true },
-      { "year": 2014, "demPct": 54.61, "repPct": 41.33, "demCandidate": "Gary C. Peters", "repCandidate": "Terri Lynn Land", "demVotes": 1704936, "repVotes": 1290199, "totalVotes": 3121771, "margin": -13.29, "seat": 2, "seatClass": 2 }
+      { "year": 2020, "demPct": 49.9, "repPct": 48.22, "demCandidate": "Gary Peters", "repCandidate": "John James", "demVotes": 2734568, "repVotes": 2642233, "totalVotes": 5479720, "margin": -1.69, "seat": 2, "seatClass": 2, "demIncumbent": true },
+      { "year": 2014, "demPct": 54.61, "repPct": 41.33, "demCandidate": "Gary Peters", "repCandidate": "Terri Lynn Land", "demVotes": 1704936, "repVotes": 1290199, "totalVotes": 3121771, "margin": -13.29, "seat": 2, "seatClass": 2 }
     ]
   },
   {
@@ -627,7 +627,7 @@ export const senateData: RaceForecast[] = [
     "pastResults": [
       { "year": 2020, "demPct": 44.13, "repPct": 54.11, "demCandidate": "Mike Espy", "repCandidate": "Cindy Hyde-Smith", "demVotes": 578691, "repVotes": 709511, "totalVotes": 1311354, "margin": 9.98, "seat": 2, "seatClass": 2, "repIncumbent": true },
       { "year": 2018, "demPct": 46.37, "repPct": 53.63, "demCandidate": "Mike Espy", "repCandidate": "Cindy Hyde-Smith", "demVotes": 420819, "repVotes": 486769, "totalVotes": 907588, "margin": 7.27, "seat": 2, "seatClass": 2, "electionType": "Special", "repIncumbent": true },
-      { "year": 2014, "demPct": 37.89, "repPct": 59.9, "demCandidate": "Travis W. Childers", "repCandidate": "Thad Cochran", "demVotes": 239439, "repVotes": 378481, "totalVotes": 631858, "margin": 22.01, "seat": 2, "seatClass": 2, "repIncumbent": true }
+      { "year": 2014, "demPct": 37.89, "repPct": 59.9, "demCandidate": "Travis Childers", "repCandidate": "Thad Cochran", "demVotes": 239439, "repVotes": 378481, "totalVotes": 631858, "margin": 22.01, "seat": 2, "seatClass": 2, "repIncumbent": true }
     ]
   },
   {
@@ -660,7 +660,7 @@ export const senateData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2020, "demPct": 44.99, "repPct": 55.01, "demCandidate": "Steve Bullock", "repCandidate": "Steve Daines", "demVotes": 272463, "repVotes": 333174, "totalVotes": 605637, "margin": 10.02, "seat": 2, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 40.07, "repPct": 57.79, "demCandidate": "Amanda G. Curtis", "repCandidate": "Steve Daines", "demVotes": 148184, "repVotes": 213709, "totalVotes": 369826, "margin": 17.72, "seat": 2, "seatClass": 2 }
+      { "year": 2014, "demPct": 40.07, "repPct": 57.79, "demCandidate": "Amanda Curtis", "repCandidate": "Steve Daines", "demVotes": 148184, "repVotes": 213709, "totalVotes": 369826, "margin": 17.72, "seat": 2, "seatClass": 2 }
     ]
   },
   {
@@ -693,7 +693,7 @@ export const senateData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2020, "demPct": 46.94, "repPct": 48.69, "demCandidate": "Cal Cunningham", "repCandidate": "Thomas Roland Tillis", "demVotes": 2569965, "repVotes": 2665598, "totalVotes": 5474952, "margin": 1.75, "seat": 1, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 47.26, "repPct": 48.82, "demCandidate": "Kay R. Hagan", "repCandidate": "Thomas Roland Tillis", "demVotes": 1377651, "repVotes": 1423259, "totalVotes": 2915281, "margin": 1.56, "seat": 1, "seatClass": 2, "demIncumbent": true }
+      { "year": 2014, "demPct": 47.26, "repPct": 48.82, "demCandidate": "Kay Hagan", "repCandidate": "Thomas Roland Tillis", "demVotes": 1377651, "repVotes": 1423259, "totalVotes": 2915281, "margin": 1.56, "seat": 1, "seatClass": 2, "demIncumbent": true }
     ]
   },
   {
@@ -725,8 +725,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Pete Ricketts",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 37.42, "repPct": 62.58, "demCandidate": "Preston Love Jr.", "repCandidate": "Pete Ricketts", "demVotes": 349902, "repVotes": 585103, "totalVotes": 935005, "margin": 25.16, "seat": 2, "seatClass": 2, "electionType": "Special", "repIncumbent": true },
-      { "year": 2020, "demPct": 24.43, "repPct": 62.74, "demCandidate": "Chris E. Janicek", "repCandidate": "Ben Sasse", "demVotes": 227191, "repVotes": 583507, "totalVotes": 930012, "margin": 38.31, "seat": 2, "seatClass": 2, "repIncumbent": true },
+      { "year": 2024, "demPct": 37.42, "repPct": 62.58, "demCandidate": "Preston Love", "repCandidate": "Pete Ricketts", "demVotes": 349902, "repVotes": 585103, "totalVotes": 935005, "margin": 25.16, "seat": 2, "seatClass": 2, "electionType": "Special", "repIncumbent": true },
+      { "year": 2020, "demPct": 24.43, "repPct": 62.74, "demCandidate": "Chris Janicek", "repCandidate": "Ben Sasse", "demVotes": 227191, "repVotes": 583507, "totalVotes": 930012, "margin": 38.31, "seat": 2, "seatClass": 2, "repIncumbent": true },
       { "year": 2014, "demPct": 31.49, "repPct": 64.34, "demCandidate": "Dave Domina", "repCandidate": "Ben Sasse", "demVotes": 170127, "repVotes": 347636, "totalVotes": 540337, "margin": 32.85, "seat": 2, "seatClass": 2 }
     ]
   },
@@ -792,8 +792,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Cory Booker",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2020, "demPct": 57.23, "repPct": 40.92, "demCandidate": "Cory A. Booker", "repCandidate": "Rikin Mehta", "demVotes": 2541178, "repVotes": 1817052, "totalVotes": 4440440, "margin": -16.31, "seat": 2, "seatClass": 2, "demIncumbent": true },
-      { "year": 2014, "demPct": 55.84, "repPct": 42.33, "demCandidate": "Cory A. Booker", "repCandidate": "Jeff Bell", "demVotes": 1043866, "repVotes": 791297, "totalVotes": 1869535, "margin": -13.51, "seat": 2, "seatClass": 2, "demIncumbent": true }
+      { "year": 2020, "demPct": 57.23, "repPct": 40.92, "demCandidate": "Cory Booker", "repCandidate": "Rikin Mehta", "demVotes": 2541178, "repVotes": 1817052, "totalVotes": 4440440, "margin": -16.31, "seat": 2, "seatClass": 2, "demIncumbent": true },
+      { "year": 2014, "demPct": 55.84, "repPct": 42.33, "demCandidate": "Cory Booker", "repCandidate": "Jeff Bell", "demVotes": 1043866, "repVotes": 791297, "totalVotes": 1869535, "margin": -13.51, "seat": 2, "seatClass": 2, "demIncumbent": true }
     ]
   },
   {
@@ -825,8 +825,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Ben Ray Lujan",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2020, "demPct": 51.73, "repPct": 45.62, "demCandidate": "Ben Ray Luján", "repCandidate": "Mark V. Ronchetti", "demVotes": 474483, "repVotes": 418483, "totalVotes": 917237, "margin": -6.11, "seat": 2, "seatClass": 2 },
-      { "year": 2014, "demPct": 55.56, "repPct": 44.44, "demCandidate": "Tom Udall", "repCandidate": "Allen E. Weh", "demVotes": 286409, "repVotes": 229097, "totalVotes": 515506, "margin": -11.12, "seat": 2, "seatClass": 2, "demIncumbent": true }
+      { "year": 2020, "demPct": 51.73, "repPct": 45.62, "demCandidate": "Ben Ray Luján", "repCandidate": "Mark Ronchetti", "demVotes": 474483, "repVotes": 418483, "totalVotes": 917237, "margin": -6.11, "seat": 2, "seatClass": 2 },
+      { "year": 2014, "demPct": 55.56, "repPct": 44.44, "demCandidate": "Tom Udall", "repCandidate": "Allen Weh", "demVotes": 286409, "repVotes": 229097, "totalVotes": 515506, "margin": -11.12, "seat": 2, "seatClass": 2, "demIncumbent": true }
     ]
   },
   {
@@ -859,8 +859,8 @@ export const senateData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2022, "demPct": 35.24, "repPct": 61.77, "demCandidate": "Kendra Horn", "repCandidate": "Markwayne Mullin", "demVotes": 405389, "repVotes": 710643, "totalVotes": 1150481, "margin": 26.53, "seat": 1, "seatClass": 2, "electionType": "Special" },
-      { "year": 2020, "demPct": 32.75, "repPct": 62.91, "demCandidate": "Abby Broyles", "repCandidate": "James M. Inhofe", "demVotes": 509763, "repVotes": 979140, "totalVotes": 1556361, "margin": 30.16, "seat": 1, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 28.55, "repPct": 68.01, "demCandidate": "Matt Silverstein", "repCandidate": "James M. Inhofe", "demVotes": 234307, "repVotes": 558166, "totalVotes": 820733, "margin": 39.46, "seat": 1, "seatClass": 2, "repIncumbent": true }
+      { "year": 2020, "demPct": 32.75, "repPct": 62.91, "demCandidate": "Abby Broyles", "repCandidate": "James Inhofe", "demVotes": 509763, "repVotes": 979140, "totalVotes": 1556361, "margin": 30.16, "seat": 1, "seatClass": 2, "repIncumbent": true },
+      { "year": 2014, "demPct": 28.55, "repPct": 68.01, "demCandidate": "Matt Silverstein", "repCandidate": "James Inhofe", "demVotes": 234307, "repVotes": 558166, "totalVotes": 820733, "margin": 39.46, "seat": 1, "seatClass": 2, "repIncumbent": true }
     ]
   },
   {
@@ -925,8 +925,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Jack Reed",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2020, "demPct": 66.48, "repPct": 33.35, "demCandidate": "Jack Reed", "repCandidate": "Allen R. Waters", "demVotes": 328574, "repVotes": 164855, "totalVotes": 494262, "margin": -33.12, "seat": 2, "seatClass": 2, "demIncumbent": true },
-      { "year": 2014, "demPct": 70.58, "repPct": 29.25, "demCandidate": "Jack Reed", "repCandidate": "Mark S. Zaccaria", "demVotes": 223675, "repVotes": 92684, "totalVotes": 316898, "margin": -41.34, "seat": 2, "seatClass": 2, "demIncumbent": true }
+      { "year": 2020, "demPct": 66.48, "repPct": 33.35, "demCandidate": "Jack Reed", "repCandidate": "Allen Waters", "demVotes": 328574, "repVotes": 164855, "totalVotes": 494262, "margin": -33.12, "seat": 2, "seatClass": 2, "demIncumbent": true },
+      { "year": 2014, "demPct": 70.58, "repPct": 29.25, "demCandidate": "Jack Reed", "repCandidate": "Mark Zaccaria", "demVotes": 223675, "repVotes": 92684, "totalVotes": 316898, "margin": -41.34, "seat": 2, "seatClass": 2, "demIncumbent": true }
     ]
   },
   {
@@ -991,8 +991,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Mike Rounds",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2020, "demPct": 34.26, "repPct": 65.74, "demCandidate": "Daniel P. Ahlers", "repCandidate": "M. Michael Rounds", "demVotes": 143987, "repVotes": 276232, "totalVotes": 420219, "margin": 31.47, "seat": 1, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 29.51, "repPct": 50.37, "demCandidate": "Richard P. Weiland", "repCandidate": "M. Michael Rounds", "demVotes": 82456, "repVotes": 140741, "totalVotes": 279412, "margin": 20.86, "seat": 1, "seatClass": 2 }
+      { "year": 2020, "demPct": 34.26, "repPct": 65.74, "demCandidate": "Daniel Ahlers", "repCandidate": "Michael Rounds", "demVotes": 143987, "repVotes": 276232, "totalVotes": 420219, "margin": 31.47, "seat": 1, "seatClass": 2, "repIncumbent": true },
+      { "year": 2014, "demPct": 29.51, "repPct": 50.37, "demCandidate": "Richard Weiland", "repCandidate": "Michael Rounds", "demVotes": 82456, "repVotes": 140741, "totalVotes": 279412, "margin": 20.86, "seat": 1, "seatClass": 2 }
     ]
   },
   {
@@ -1058,7 +1058,7 @@ export const senateData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2020, "demPct": 43.87, "repPct": 53.51, "demCandidate": "Mary Jennings Hegar", "repCandidate": "John Cornyn", "demVotes": 4888764, "repVotes": 5962983, "totalVotes": 11144040, "margin": 9.64, "seat": 2, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 34.36, "repPct": 61.56, "demCandidate": "David M. Alameel", "repCandidate": "John Cornyn", "demVotes": 1597387, "repVotes": 2861531, "totalVotes": 4648358, "margin": 27.2, "seat": 2, "seatClass": 2, "repIncumbent": true }
+      { "year": 2014, "demPct": 34.36, "repPct": 61.56, "demCandidate": "David Alameel", "repCandidate": "John Cornyn", "demVotes": 1597387, "repVotes": 2861531, "totalVotes": 4648358, "margin": 27.2, "seat": 2, "seatClass": 2, "repIncumbent": true }
     ]
   },
   {
@@ -1090,8 +1090,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Mark Warner",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2020, "demPct": 55.99, "repPct": 43.91, "demCandidate": "Mark R. Warner", "repCandidate": "Daniel M. Gade", "demVotes": 2466500, "repVotes": 1934199, "totalVotes": 4405087, "margin": -12.08, "seat": 2, "seatClass": 2, "demIncumbent": true },
-      { "year": 2014, "demPct": 49.15, "repPct": 48.34, "demCandidate": "Mark R. Warner", "repCandidate": "Ed W. Gillespie", "demVotes": 1073667, "repVotes": 1055940, "totalVotes": 2184473, "margin": -0.81, "seat": 2, "seatClass": 2, "demIncumbent": true }
+      { "year": 2020, "demPct": 55.99, "repPct": 43.91, "demCandidate": "Mark Warner", "repCandidate": "Daniel Gade", "demVotes": 2466500, "repVotes": 1934199, "totalVotes": 4405087, "margin": -12.08, "seat": 2, "seatClass": 2, "demIncumbent": true },
+      { "year": 2014, "demPct": 49.15, "repPct": 48.34, "demCandidate": "Mark Warner", "repCandidate": "Ed Gillespie", "demVotes": 1073667, "repVotes": 1055940, "totalVotes": 2184473, "margin": -0.81, "seat": 2, "seatClass": 2, "demIncumbent": true }
     ]
   },
   {
@@ -1124,7 +1124,7 @@ export const senateData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2020, "demPct": 27, "repPct": 70.28, "demCandidate": "Paula Jean Swearengin", "repCandidate": "Shelley Moore Capito", "demVotes": 210309, "repVotes": 547454, "totalVotes": 778918, "margin": 43.28, "seat": 2, "seatClass": 2, "repIncumbent": true },
-      { "year": 2014, "demPct": 34.46, "repPct": 62.12, "demCandidate": "Natalie E. Tennant", "repCandidate": "Shelley Moore Capito", "demVotes": 156360, "repVotes": 281820, "totalVotes": 453689, "margin": 27.65, "seat": 2, "seatClass": 2 }
+      { "year": 2014, "demPct": 34.46, "repPct": 62.12, "demCandidate": "Natalie Tennant", "repCandidate": "Shelley Moore Capito", "demVotes": 156360, "repVotes": 281820, "totalVotes": 453689, "margin": 27.65, "seat": 2, "seatClass": 2 }
     ]
   },
   {
@@ -1156,8 +1156,8 @@ export const senateData: RaceForecast[] = [
     "seatHolder": "Cynthia Lummis",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2020, "demPct": 26.76, "repPct": 72.85, "demCandidate": "Merav Ben-David", "repCandidate": "Cynthia M. Lummis", "demVotes": 72766, "repVotes": 198100, "totalVotes": 278503, "margin": 46.09, "seat": 2, "seatClass": 2 },
-      { "year": 2014, "demPct": 17.45, "repPct": 72.19, "demCandidate": "Charlie Hardy", "repCandidate": "Michael B. Enzi", "demVotes": 29377, "repVotes": 121554, "totalVotes": 171153, "margin": 54.74, "seat": 2, "seatClass": 2, "repIncumbent": true }
+      { "year": 2020, "demPct": 26.76, "repPct": 72.85, "demCandidate": "Merav Ben-David", "repCandidate": "Cynthia Lummis", "demVotes": 72766, "repVotes": 198100, "totalVotes": 278503, "margin": 46.09, "seat": 2, "seatClass": 2 },
+      { "year": 2014, "demPct": 17.45, "repPct": 72.19, "demCandidate": "Charlie Hardy", "repCandidate": "Michael Enzi", "demVotes": 29377, "repVotes": 121554, "totalVotes": 171153, "margin": 54.74, "seat": 2, "seatClass": 2, "repIncumbent": true }
     ]
   },
   {
@@ -1248,7 +1248,7 @@ export const senateNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2030,
     "pastResults": [
-      { "year": 2024, "demPct": 58.87, "repPct": 41.13, "demCandidate": "Adam B. Schiff", "repCandidate": "Steve Garvey", "demVotes": 9036252, "repVotes": 6312594, "totalVotes": 15348846, "margin": -17.75, "seat": 1, "seatClass": 1 },
+      { "year": 2024, "demPct": 58.87, "repPct": 41.13, "demCandidate": "Adam Schiff", "repCandidate": "Steve Garvey", "demVotes": 9036252, "repVotes": 6312594, "totalVotes": 15348846, "margin": -17.75, "seat": 1, "seatClass": 1 },
       { "year": 2018, "demPct": 54.16, "repPct": 0, "demCandidate": "Dianne Feinstein", "demVotes": 6019422, "totalVotes": 11113364, "margin": -54.16, "seat": 1, "seatClass": 1, "demIncumbent": true },
       { "year": 2012, "demPct": 62.52, "repPct": 37.48, "demCandidate": "Dianne Feinstein", "repCandidate": "Elizabeth Emken", "demVotes": 7864624, "repVotes": 4713887, "totalVotes": 12578511, "margin": -25.05, "seat": 1, "seatClass": 1, "demIncumbent": true }
     ]
@@ -1260,9 +1260,9 @@ export const senateNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2030,
     "pastResults": [
-      { "year": 2024, "demPct": 58.58, "repPct": 39.7, "demCandidate": "Christopher S. Murphy", "repCandidate": "Matthew M. Corey", "demVotes": 1000695, "repVotes": 678256, "totalVotes": 1708259, "margin": -18.88, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2018, "demPct": 59.53, "repPct": 39.35, "demCandidate": "Christopher S. Murphy", "repCandidate": "Matthew M. Corey", "demVotes": 825579, "repVotes": 545717, "totalVotes": 1386840, "margin": -20.18, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2012, "demPct": 54.82, "repPct": 43.07, "demCandidate": "Christopher S. Murphy", "repCandidate": "Linda McMahon", "demVotes": 828761, "repVotes": 651089, "totalVotes": 1511764, "margin": -11.75, "seat": 1, "seatClass": 1 }
+      { "year": 2024, "demPct": 58.58, "repPct": 39.7, "demCandidate": "Christopher Murphy", "repCandidate": "Matthew Corey", "demVotes": 1000695, "repVotes": 678256, "totalVotes": 1708259, "margin": -18.88, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2018, "demPct": 59.53, "repPct": 39.35, "demCandidate": "Christopher Murphy", "repCandidate": "Matthew Corey", "demVotes": 825579, "repVotes": 545717, "totalVotes": 1386840, "margin": -20.18, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2012, "demPct": 54.82, "repPct": 43.07, "demCandidate": "Christopher Murphy", "repCandidate": "Linda McMahon", "demVotes": 828761, "repVotes": 651089, "totalVotes": 1511764, "margin": -11.75, "seat": 1, "seatClass": 1 }
     ]
   },
   {
@@ -1273,8 +1273,8 @@ export const senateNoElection: NoElectionEntry[] = [
     "nextElection": 2030,
     "pastResults": [
       { "year": 2024, "demPct": 56.59, "repPct": 39.5, "demCandidate": "Lisa Blunt Rochester", "repCandidate": "Eric Hansen", "demVotes": 283298, "repVotes": 197753, "totalVotes": 500606, "margin": -17.09, "seat": 1, "seatClass": 1 },
-      { "year": 2018, "demPct": 59.95, "repPct": 37.82, "demCandidate": "Thomas R. Carper", "repCandidate": "Rob Arlett", "demVotes": 217385, "repVotes": 137127, "totalVotes": 362606, "margin": -22.13, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2012, "demPct": 66.42, "repPct": 28.95, "demCandidate": "Thomas R. Carper", "repCandidate": "Kevin Wade", "demVotes": 265415, "repVotes": 115700, "totalVotes": 399606, "margin": -37.47, "seat": 1, "seatClass": 1, "demIncumbent": true }
+      { "year": 2018, "demPct": 59.95, "repPct": 37.82, "demCandidate": "Thomas Carper", "repCandidate": "Rob Arlett", "demVotes": 217385, "repVotes": 137127, "totalVotes": 362606, "margin": -22.13, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2012, "demPct": 66.42, "repPct": 28.95, "demCandidate": "Thomas Carper", "repCandidate": "Kevin Wade", "demVotes": 265415, "repVotes": 115700, "totalVotes": 399606, "margin": -37.47, "seat": 1, "seatClass": 1, "demIncumbent": true }
     ]
   },
   {
@@ -1296,9 +1296,9 @@ export const senateNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2030,
     "pastResults": [
-      { "year": 2024, "demPct": 64.61, "repPct": 31.9, "demCandidate": "Mazie K. Hirono", "repCandidate": "Bob McDermott", "demVotes": 324194, "repVotes": 160075, "totalVotes": 522236, "margin": -32.71, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2018, "demPct": 71.15, "repPct": 28.85, "demCandidate": "Mazie K. Hirono", "repCandidate": "Ronald C. Curtis", "demVotes": 276316, "repVotes": 112035, "totalVotes": 398657, "margin": -42.3, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2012, "demPct": 62.6, "repPct": 37.4, "demCandidate": "Mazie K. Hirono", "repCandidate": "Linda Lingle", "demVotes": 269489, "repVotes": 160994, "totalVotes": 437159, "margin": -25.2, "seat": 1, "seatClass": 1 }
+      { "year": 2024, "demPct": 64.61, "repPct": 31.9, "demCandidate": "Mazie Hirono", "repCandidate": "Bob McDermott", "demVotes": 324194, "repVotes": 160075, "totalVotes": 522236, "margin": -32.71, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2018, "demPct": 71.15, "repPct": 28.85, "demCandidate": "Mazie Hirono", "repCandidate": "Ronald Curtis", "demVotes": 276316, "repVotes": 112035, "totalVotes": 398657, "margin": -42.3, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2012, "demPct": 62.6, "repPct": 37.4, "demCandidate": "Mazie Hirono", "repCandidate": "Linda Lingle", "demVotes": 269489, "repVotes": 160994, "totalVotes": 437159, "margin": -25.2, "seat": 1, "seatClass": 1 }
     ]
   },
   {
@@ -1333,8 +1333,8 @@ export const senateNoElection: NoElectionEntry[] = [
     "nextElection": 2030,
     "pastResults": [
       { "year": 2024, "demPct": 54.64, "repPct": 42.84, "demCandidate": "Angela Alsobrooks", "repCandidate": "Larry Hogan", "demVotes": 1650912, "repVotes": 1294344, "totalVotes": 3021378, "margin": -11.8, "seat": 1, "seatClass": 1 },
-      { "year": 2018, "demPct": 64.86, "repPct": 30.31, "demCandidate": "Benjamin L. Cardin", "repCandidate": "Tony Campbell", "demVotes": 1491614, "repVotes": 697017, "totalVotes": 2299889, "margin": -34.55, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2012, "demPct": 55.98, "repPct": 26.33, "demCandidate": "Benjamin L. Cardin", "repCandidate": "Daniel J. Bongino", "demVotes": 1474028, "repVotes": 693291, "totalVotes": 2633234, "margin": -29.65, "seat": 1, "seatClass": 1, "demIncumbent": true }
+      { "year": 2018, "demPct": 64.86, "repPct": 30.31, "demCandidate": "Benjamin Cardin", "repCandidate": "Tony Campbell", "demVotes": 1491614, "repVotes": 697017, "totalVotes": 2299889, "margin": -34.55, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2012, "demPct": 55.98, "repPct": 26.33, "demCandidate": "Benjamin Cardin", "repCandidate": "Daniel Bongino", "demVotes": 1474028, "repVotes": 693291, "totalVotes": 2633234, "margin": -29.65, "seat": 1, "seatClass": 1, "demIncumbent": true }
     ]
   },
   {
@@ -1345,7 +1345,7 @@ export const senateNoElection: NoElectionEntry[] = [
     "nextElection": 2030,
     "pastResults": [
       { "year": 2024, "demPct": 52.06, "repPct": 34.64, "demCandidate": "Angus King", "demParty": "I", "repCandidate": "Demi Kouzounas", "demVotes": 427331, "repVotes": 284338, "totalVotes": 842447, "margin": -17.42, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2018, "demPct": 53.41, "repPct": 35.23, "demCandidate": "Angus King", "demParty": "I", "repCandidate": "Eric L. Brakey", "demVotes": 344575, "repVotes": 223502, "totalVotes": 646064, "margin": -18.18, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2018, "demPct": 53.41, "repPct": 35.23, "demCandidate": "Angus King", "demParty": "I", "repCandidate": "Eric Brakey", "demVotes": 344575, "repVotes": 223502, "totalVotes": 646064, "margin": -18.18, "seat": 1, "seatClass": 1, "demIncumbent": true },
       { "year": 2012, "demPct": 13.26, "repPct": 30.74, "demCandidate": "Cynthia Dill", "repCandidate": "Charlie Summers", "demVotes": 92900, "repVotes": 215399, "totalVotes": 724720, "margin": 17.48, "seat": 1, "seatClass": 1 }
     ]
   },
@@ -1392,9 +1392,9 @@ export const senateNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2030,
     "pastResults": [
-      { "year": 2024, "demPct": 37.19, "repPct": 62.81, "demCandidate": "Ty Pinkins", "repCandidate": "Roger F. Wicker", "demVotes": 451981, "repVotes": 763420, "totalVotes": 1215401, "margin": 25.62, "seat": 1, "seatClass": 1, "repIncumbent": true },
-      { "year": 2018, "demPct": 39.47, "repPct": 58.49, "demCandidate": "David Baria", "repCandidate": "Roger F. Wicker", "demVotes": 369567, "repVotes": 547619, "totalVotes": 936215, "margin": 19.02, "seat": 1, "seatClass": 1, "repIncumbent": true },
-      { "year": 2012, "demPct": 40.55, "repPct": 57.16, "demCandidate": "Albert N. Gore", "repCandidate": "Roger F. Wicker", "demVotes": 503467, "repVotes": 709626, "totalVotes": 1241568, "margin": 16.6, "seat": 1, "seatClass": 1, "repIncumbent": true }
+      { "year": 2024, "demPct": 37.19, "repPct": 62.81, "demCandidate": "Ty Pinkins", "repCandidate": "Roger Wicker", "demVotes": 451981, "repVotes": 763420, "totalVotes": 1215401, "margin": 25.62, "seat": 1, "seatClass": 1, "repIncumbent": true },
+      { "year": 2018, "demPct": 39.47, "repPct": 58.49, "demCandidate": "David Baria", "repCandidate": "Roger Wicker", "demVotes": 369567, "repVotes": 547619, "totalVotes": 936215, "margin": 19.02, "seat": 1, "seatClass": 1, "repIncumbent": true },
+      { "year": 2012, "demPct": 40.55, "repPct": 57.16, "demCandidate": "Albert Gore", "repCandidate": "Roger Wicker", "demVotes": 503467, "repVotes": 709626, "totalVotes": 1241568, "margin": 16.6, "seat": 1, "seatClass": 1, "repIncumbent": true }
     ]
   },
   {
@@ -1454,7 +1454,7 @@ export const senateNoElection: NoElectionEntry[] = [
     "pastResults": [
       { "year": 2024, "demPct": 55.06, "repPct": 44.94, "demCandidate": "Martin Heinrich", "repCandidate": "Nella Louise Domenici", "demVotes": 497333, "repVotes": 405978, "totalVotes": 903311, "margin": -10.11, "seat": 1, "seatClass": 1, "demIncumbent": true },
       { "year": 2018, "demPct": 54.09, "repPct": 30.53, "demCandidate": "Martin Heinrich", "repCandidate": "Mick Rich", "demVotes": 376998, "repVotes": 212813, "totalVotes": 697012, "margin": -23.56, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2012, "demPct": 51.01, "repPct": 45.28, "demCandidate": "Martin Heinrich", "repCandidate": "Heather A. Wilson", "demVotes": 395717, "repVotes": 351260, "totalVotes": 775793, "margin": -5.73, "seat": 1, "seatClass": 1 }
+      { "year": 2012, "demPct": 51.01, "repPct": 45.28, "demCandidate": "Martin Heinrich", "repCandidate": "Heather Wilson", "demVotes": 395717, "repVotes": 351260, "totalVotes": 775793, "margin": -5.73, "seat": 1, "seatClass": 1 }
     ]
   },
   {
@@ -1464,8 +1464,8 @@ export const senateNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2030,
     "pastResults": [
-      { "year": 2024, "demPct": 47.87, "repPct": 46.22, "demCandidate": "Jacky S. Rosen", "repCandidate": "Sam Brown", "demVotes": 701105, "repVotes": 677046, "totalVotes": 1464728, "margin": -1.64, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2018, "demPct": 50.41, "repPct": 45.38, "demCandidate": "Jacky S. Rosen", "repCandidate": "Dean Heller", "demVotes": 490071, "repVotes": 441202, "totalVotes": 972132, "margin": -5.03, "seat": 1, "seatClass": 1, "repIncumbent": true },
+      { "year": 2024, "demPct": 47.87, "repPct": 46.22, "demCandidate": "Jacky Rosen", "repCandidate": "Sam Brown", "demVotes": 701105, "repVotes": 677046, "totalVotes": 1464728, "margin": -1.64, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2018, "demPct": 50.41, "repPct": 45.38, "demCandidate": "Jacky Rosen", "repCandidate": "Dean Heller", "demVotes": 490071, "repVotes": 441202, "totalVotes": 972132, "margin": -5.03, "seat": 1, "seatClass": 1, "repIncumbent": true },
       { "year": 2012, "demPct": 44.71, "repPct": 45.87, "demCandidate": "Shelley Berkley", "repCandidate": "Dean Heller", "demVotes": 446080, "repVotes": 457656, "totalVotes": 997805, "margin": 1.16, "seat": 1, "seatClass": 1, "repIncumbent": true }
     ]
   },
@@ -1476,9 +1476,9 @@ export const senateNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2030,
     "pastResults": [
-      { "year": 2024, "demPct": 58.82, "repPct": 40.52, "demCandidate": "Kirsten E. Gillibrand", "repCandidate": "Michael D. Sapraicone", "demVotes": 4711298, "repVotes": 3246114, "totalVotes": 8380426, "margin": -18.29, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2018, "demPct": 66.96, "repPct": 32.98, "demCandidate": "Kirsten E. Gillibrand", "repCandidate": "Chele Farley", "demVotes": 4056931, "repVotes": 1998220, "totalVotes": 6250886, "margin": -33.98, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2012, "demPct": 72.21, "repPct": 26.34, "demCandidate": "Kirsten E. Gillibrand", "repCandidate": "Wendy E. Long", "demVotes": 4822330, "repVotes": 1758702, "totalVotes": 7116628, "margin": -45.87, "seat": 1, "seatClass": 1, "demIncumbent": true }
+      { "year": 2024, "demPct": 58.82, "repPct": 40.52, "demCandidate": "Kirsten Gillibrand", "repCandidate": "Michael Sapraicone", "demVotes": 4711298, "repVotes": 3246114, "totalVotes": 8380426, "margin": -18.29, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2018, "demPct": 66.96, "repPct": 32.98, "demCandidate": "Kirsten Gillibrand", "repCandidate": "Chele Farley", "demVotes": 4056931, "repVotes": 1998220, "totalVotes": 6250886, "margin": -33.98, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2012, "demPct": 72.21, "repPct": 26.34, "demCandidate": "Kirsten Gillibrand", "repCandidate": "Wendy Long", "demVotes": 4822330, "repVotes": 1758702, "totalVotes": 7116628, "margin": -45.87, "seat": 1, "seatClass": 1, "demIncumbent": true }
     ]
   },
   {
@@ -1500,9 +1500,9 @@ export const senateNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2030,
     "pastResults": [
-      { "year": 2024, "demPct": 48.6, "repPct": 48.82, "demCandidate": "Robert P. Casey Jr.", "repCandidate": "Dave McCormick", "demVotes": 3384180, "repVotes": 3399295, "totalVotes": 6963137, "margin": 0.22, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2018, "demPct": 55.74, "repPct": 42.62, "demCandidate": "Robert P. Casey Jr.", "repCandidate": "Lou Barletta", "demVotes": 2792437, "repVotes": 2134848, "totalVotes": 5009400, "margin": -13.13, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2012, "demPct": 53.69, "repPct": 44.59, "demCandidate": "Robert P. Casey Jr.", "repCandidate": "Tom Smith", "demVotes": 3021364, "repVotes": 2509132, "totalVotes": 5627422, "margin": -9.1, "seat": 1, "seatClass": 1, "demIncumbent": true }
+      { "year": 2024, "demPct": 48.6, "repPct": 48.82, "demCandidate": "Robert Casey", "repCandidate": "Dave McCormick", "demVotes": 3384180, "repVotes": 3399295, "totalVotes": 6963137, "margin": 0.22, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2018, "demPct": 55.74, "repPct": 42.62, "demCandidate": "Robert Casey", "repCandidate": "Lou Barletta", "demVotes": 2792437, "repVotes": 2134848, "totalVotes": 5009400, "margin": -13.13, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2012, "demPct": 53.69, "repPct": 44.59, "demCandidate": "Robert Casey", "repCandidate": "Tom Smith", "demVotes": 3021364, "repVotes": 2509132, "totalVotes": 5627422, "margin": -9.1, "seat": 1, "seatClass": 1, "demIncumbent": true }
     ]
   },
   {
@@ -1526,7 +1526,7 @@ export const senateNoElection: NoElectionEntry[] = [
     "pastResults": [
       { "year": 2024, "demPct": 34.16, "repPct": 63.8, "demCandidate": "Gloria Johnson", "repCandidate": "Marsha Blackburn", "demVotes": 1027461, "repVotes": 1918743, "totalVotes": 3007608, "margin": 29.63, "seat": 1, "seatClass": 1, "repIncumbent": true },
       { "year": 2018, "demPct": 43.92, "repPct": 54.71, "demCandidate": "Phil Bredesen", "repCandidate": "Marsha Blackburn", "demVotes": 985450, "repVotes": 1227483, "totalVotes": 2243740, "margin": 10.79, "seat": 1, "seatClass": 1 },
-      { "year": 2012, "demPct": 30.41, "repPct": 64.89, "demCandidate": "Mark E. Clayton", "repCandidate": "Bob Corker", "demVotes": 705882, "repVotes": 1506443, "totalVotes": 2321477, "margin": 34.48, "seat": 1, "seatClass": 1, "repIncumbent": true }
+      { "year": 2012, "demPct": 30.41, "repPct": 64.89, "demCandidate": "Mark Clayton", "repCandidate": "Bob Corker", "demVotes": 705882, "repVotes": 1506443, "totalVotes": 2321477, "margin": 34.48, "seat": 1, "seatClass": 1, "repIncumbent": true }
     ]
   },
   {
@@ -1550,7 +1550,7 @@ export const senateNoElection: NoElectionEntry[] = [
     "pastResults": [
       { "year": 2024, "demPct": 31.74, "repPct": 62.5, "demCandidate": "Caroline Gleich", "repCandidate": "John Curtis", "demVotes": 464515, "repVotes": 914700, "totalVotes": 1472387, "margin": 30.76, "seat": 1, "seatClass": 1 },
       { "year": 2018, "demPct": 30.91, "repPct": 62.59, "demCandidate": "Jenny Wilson", "repCandidate": "Mitt Romney", "demVotes": 328541, "repVotes": 665215, "totalVotes": 1062897, "margin": 31.68, "seat": 1, "seatClass": 1 },
-      { "year": 2012, "demPct": 29.98, "repPct": 65.31, "demCandidate": "Scott N. Howell", "repCandidate": "Orrin G. Hatch", "demVotes": 301873, "repVotes": 657608, "totalVotes": 1006901, "margin": 35.33, "seat": 1, "seatClass": 1, "repIncumbent": true }
+      { "year": 2012, "demPct": 29.98, "repPct": 65.31, "demCandidate": "Scott Howell", "repCandidate": "Orrin Hatch", "demVotes": 301873, "repVotes": 657608, "totalVotes": 1006901, "margin": 35.33, "seat": 1, "seatClass": 1, "repIncumbent": true }
     ]
   },
   {
@@ -1562,7 +1562,7 @@ export const senateNoElection: NoElectionEntry[] = [
     "pastResults": [
       { "year": 2024, "demPct": 54.37, "repPct": 45.44, "demCandidate": "Timothy Michael Kaine", "repCandidate": "Hung Cao", "demVotes": 2415429, "repVotes": 2018992, "totalVotes": 4442926, "margin": -8.92, "seat": 1, "seatClass": 1, "demIncumbent": true },
       { "year": 2018, "demPct": 57, "repPct": 41.01, "demCandidate": "Timothy Michael Kaine", "repCandidate": "Corey Stewart", "demVotes": 1910370, "repVotes": 1374313, "totalVotes": 3351373, "margin": -16, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2012, "demPct": 52.87, "repPct": 46.96, "demCandidate": "Timothy Michael Kaine", "repCandidate": "George F. Allen", "demVotes": 2010067, "repVotes": 1785542, "totalVotes": 3802196, "margin": -5.91, "seat": 1, "seatClass": 1 }
+      { "year": 2012, "demPct": 52.87, "repPct": 46.96, "demCandidate": "Timothy Michael Kaine", "repCandidate": "George Allen", "demVotes": 2010067, "repVotes": 1785542, "totalVotes": 3802196, "margin": -5.91, "seat": 1, "seatClass": 1 }
     ]
   },
   {
@@ -1596,7 +1596,7 @@ export const senateNoElection: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2030,
     "pastResults": [
-      { "year": 2024, "demPct": 49.33, "repPct": 48.48, "demCandidate": "Tammy Baldwin", "repCandidate": "Eric D. Hovde", "demVotes": 1672777, "repVotes": 1643996, "totalVotes": 3390787, "margin": -0.85, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2024, "demPct": 49.33, "repPct": 48.48, "demCandidate": "Tammy Baldwin", "repCandidate": "Eric Hovde", "demVotes": 1672777, "repVotes": 1643996, "totalVotes": 3390787, "margin": -0.85, "seat": 1, "seatClass": 1, "demIncumbent": true },
       { "year": 2018, "demPct": 55.36, "repPct": 44.53, "demCandidate": "Tammy Baldwin", "repCandidate": "Leah Vukmir", "demVotes": 1472914, "repVotes": 1184885, "totalVotes": 2660763, "margin": -10.83, "seat": 1, "seatClass": 1, "demIncumbent": true },
       { "year": 2012, "demPct": 51.41, "repPct": 45.86, "demCandidate": "Tammy Baldwin", "repCandidate": "Tommy Thompson", "demVotes": 1547104, "repVotes": 1380126, "totalVotes": 3009411, "margin": -5.55, "seat": 1, "seatClass": 1 }
     ]
@@ -1609,8 +1609,8 @@ export const senateNoElection: NoElectionEntry[] = [
     "nextElection": 2030,
     "pastResults": [
       { "year": 2024, "demPct": 27.76, "repPct": 68.75, "demCandidate": "Glenn Elliott", "repCandidate": "Jim Justice", "demVotes": 207548, "repVotes": 514079, "totalVotes": 747717, "margin": 41, "seat": 1, "seatClass": 1 },
-      { "year": 2018, "demPct": 49.57, "repPct": 46.26, "demCandidate": "Joe Manchin, III", "repCandidate": "Patrick Morrisey", "demVotes": 290510, "repVotes": 271113, "totalVotes": 586034, "margin": -3.31, "seat": 1, "seatClass": 1, "demIncumbent": true },
-      { "year": 2012, "demPct": 60.57, "repPct": 36.47, "demCandidate": "Joe Manchin, III", "repCandidate": "John Raese", "demVotes": 399898, "repVotes": 240787, "totalVotes": 660202, "margin": -24.1, "seat": 1, "seatClass": 1, "demIncumbent": true }
+      { "year": 2018, "demPct": 49.57, "repPct": 46.26, "demCandidate": "Joe Manchin", "repCandidate": "Patrick Morrisey", "demVotes": 290510, "repVotes": 271113, "totalVotes": 586034, "margin": -3.31, "seat": 1, "seatClass": 1, "demIncumbent": true },
+      { "year": 2012, "demPct": 60.57, "repPct": 36.47, "demCandidate": "Joe Manchin", "repCandidate": "John Raese", "demVotes": 399898, "repVotes": 240787, "totalVotes": 660202, "margin": -24.1, "seat": 1, "seatClass": 1, "demIncumbent": true }
     ]
   },
   {
@@ -1620,7 +1620,7 @@ export const senateNoElection: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2030,
     "pastResults": [
-      { "year": 2024, "demPct": 24.12, "repPct": 75.11, "demCandidate": "Scott D. Morrow", "repCandidate": "John Barrasso", "demVotes": 63727, "repVotes": 198418, "totalVotes": 271123, "margin": 50.99, "seat": 1, "seatClass": 1, "repIncumbent": true },
+      { "year": 2024, "demPct": 24.12, "repPct": 75.11, "demCandidate": "Scott Morrow", "repCandidate": "John Barrasso", "demVotes": 63727, "repVotes": 198418, "totalVotes": 271123, "margin": 50.99, "seat": 1, "seatClass": 1, "repIncumbent": true },
       { "year": 2018, "demPct": 30.1, "repPct": 66.96, "demCandidate": "Gary Trauner", "repCandidate": "John Barrasso", "demVotes": 61227, "repVotes": 136210, "totalVotes": 205275, "margin": 36.86, "seat": 1, "seatClass": 1, "repIncumbent": true },
       { "year": 2012, "demPct": 21.65, "repPct": 75.65, "demCandidate": "Tim Chesnut", "repCandidate": "John Barrasso", "demVotes": 53019, "repVotes": 185250, "totalVotes": 250700, "margin": 54, "seat": 1, "seatClass": 1, "repIncumbent": true }
     ]
@@ -1647,7 +1647,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "nextElection": 2028,
     "pastResults": [
       { "year": 2022, "demPct": 30.88, "repPct": 66.62, "demCandidate": "Will Boyd", "repCandidate": "Katie Britt", "demVotes": 436746, "repVotes": 942154, "totalVotes": 1414238, "margin": 35.74, "seat": 2, "seatClass": 3 },
-      { "year": 2016, "demPct": 35.87, "repPct": 63.96, "demCandidate": "Ronald Steven Crumpton", "repCandidate": "Richard C. Shelby", "demVotes": 748709, "repVotes": 1335104, "totalVotes": 2087444, "margin": 28.09, "seat": 2, "seatClass": 3, "repIncumbent": true }
+      { "year": 2016, "demPct": 35.87, "repPct": 63.96, "demCandidate": "Ronald Steven Crumpton", "repCandidate": "Richard Shelby", "demVotes": 748709, "repVotes": 1335104, "totalVotes": 2087444, "margin": 28.09, "seat": 2, "seatClass": 3, "repIncumbent": true }
     ]
   },
   {
@@ -1658,7 +1658,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "nextElection": 2028,
     "pastResults": [
       { "year": 2022, "demPct": 31.09, "repPct": 65.73, "demCandidate": "Natalie James", "repCandidate": "John Boozman", "demVotes": 280187, "repVotes": 592437, "totalVotes": 901306, "margin": 34.64, "seat": 2, "seatClass": 3, "repIncumbent": true },
-      { "year": 2016, "demPct": 36.17, "repPct": 59.77, "demCandidate": "Conner W. Eldridge", "repCandidate": "John Boozman", "demVotes": 400602, "repVotes": 661984, "totalVotes": 1107522, "margin": 23.6, "seat": 2, "seatClass": 3, "repIncumbent": true }
+      { "year": 2016, "demPct": 36.17, "repPct": 59.77, "demCandidate": "Conner Eldridge", "repCandidate": "John Boozman", "demVotes": 400602, "repVotes": 661984, "totalVotes": 1107522, "margin": 23.6, "seat": 2, "seatClass": 3, "repIncumbent": true }
     ]
   },
   {
@@ -1680,7 +1680,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2028,
     "pastResults": [
-      { "year": 2022, "demPct": 61.06, "repPct": 38.94, "demCandidate": "Alex Padilla", "repCandidate": "Mark P. Meuser", "demVotes": 6621616, "repVotes": 4222025, "totalVotes": 10843641, "margin": -22.13, "seat": 2, "seatClass": 3, "demIncumbent": true },
+      { "year": 2022, "demPct": 61.06, "repPct": 38.94, "demCandidate": "Alex Padilla", "repCandidate": "Mark Meuser", "demVotes": 6621616, "repVotes": 4222025, "totalVotes": 10843641, "margin": -22.13, "seat": 2, "seatClass": 3, "demIncumbent": true },
       { "year": 2016, "demPct": 61.6, "repPct": 0, "demCandidate": "Kamala Harris", "demVotes": 7542759, "totalVotes": 12244176, "margin": -61.6, "seat": 2, "seatClass": 3 }
     ]
   },
@@ -1702,7 +1702,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2028,
     "pastResults": [
-      { "year": 2022, "demPct": 57.45, "repPct": 42.54, "demCandidate": "Richard Blumenthal", "repCandidate": "Leora R. Levy", "demVotes": 723864, "repVotes": 535943, "totalVotes": 1259887, "margin": -14.92, "seat": 2, "seatClass": 3, "demIncumbent": true },
+      { "year": 2022, "demPct": 57.45, "repPct": 42.54, "demCandidate": "Richard Blumenthal", "repCandidate": "Leora Levy", "demVotes": 723864, "repVotes": 535943, "totalVotes": 1259887, "margin": -14.92, "seat": 2, "seatClass": 3, "demIncumbent": true },
       { "year": 2016, "demPct": 63.19, "repPct": 34.62, "demCandidate": "Richard Blumenthal", "repCandidate": "Dan Carter", "demVotes": 1008714, "repVotes": 552621, "totalVotes": 1596276, "margin": -28.57, "seat": 2, "seatClass": 3, "demIncumbent": true }
     ]
   },
@@ -1781,7 +1781,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2028,
     "pastResults": [
-      { "year": 2022, "demPct": 37.04, "repPct": 60, "demCandidate": "Mark R. Holland", "repCandidate": "Jerry Moran", "demVotes": 372214, "repVotes": 602976, "totalVotes": 1004956, "margin": 22.96, "seat": 2, "seatClass": 3, "repIncumbent": true },
+      { "year": 2022, "demPct": 37.04, "repPct": 60, "demCandidate": "Mark Holland", "repCandidate": "Jerry Moran", "demVotes": 372214, "repVotes": 602976, "totalVotes": 1004956, "margin": 22.96, "seat": 2, "seatClass": 3, "repIncumbent": true },
       { "year": 2016, "demPct": 32.24, "repPct": 62.18, "demCandidate": "Patrick Wiesner", "repCandidate": "Jerry Moran", "demVotes": 379740, "repVotes": 732376, "totalVotes": 1177922, "margin": 29.94, "seat": 2, "seatClass": 3, "repIncumbent": true }
     ]
   },
@@ -1804,7 +1804,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "nextElection": 2028,
     "pastResults": [
       { "year": 2022, "demPct": 17.85, "repPct": 61.56, "demCandidate": "Gary Chambers", "repCandidate": "John Kennedy", "demVotes": 246933, "repVotes": 851568, "totalVotes": 1383290, "margin": 43.71, "seat": 2, "seatClass": 3, "repIncumbent": true },
-      { "year": 2016, "demPct": 39.35, "repPct": 60.65, "demCandidate": "Foster L. Campbell", "repCandidate": "John Kennedy", "demVotes": 347816, "repVotes": 536191, "totalVotes": 884007, "margin": 21.31, "seat": 2, "seatClass": 3 }
+      { "year": 2016, "demPct": 39.35, "repPct": 60.65, "demCandidate": "Foster Campbell", "repCandidate": "John Kennedy", "demVotes": 347816, "repVotes": 536191, "totalVotes": 884007, "margin": 21.31, "seat": 2, "seatClass": 3 }
     ]
   },
   {
@@ -1837,7 +1837,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "nextElection": 2028,
     "pastResults": [
       { "year": 2022, "demPct": 47.27, "repPct": 50.5, "demCandidate": "Cheri Beasley", "repCandidate": "Ted Budd", "demVotes": 1784049, "repVotes": 1905786, "totalVotes": 3773924, "margin": 3.23, "seat": 2, "seatClass": 3 },
-      { "year": 2016, "demPct": 45.37, "repPct": 51.06, "demCandidate": "Deborah K. Ross", "repCandidate": "Richard Burr", "demVotes": 2128165, "repVotes": 2395376, "totalVotes": 4691133, "margin": 5.7, "seat": 2, "seatClass": 3, "repIncumbent": true }
+      { "year": 2016, "demPct": 45.37, "repPct": 51.06, "demCandidate": "Deborah Ross", "repCandidate": "Richard Burr", "demVotes": 2128165, "repVotes": 2395376, "totalVotes": 4691133, "margin": 5.7, "seat": 2, "seatClass": 3, "repIncumbent": true }
     ]
   },
   {
@@ -1858,7 +1858,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2028,
     "pastResults": [
-      { "year": 2022, "demPct": 53.5, "repPct": 44.43, "demCandidate": "Maggie Hassan", "repCandidate": "Donald C. Bolduc", "demVotes": 332193, "repVotes": 275928, "totalVotes": 620975, "margin": -9.06, "seat": 2, "seatClass": 3, "demIncumbent": true },
+      { "year": 2022, "demPct": 53.5, "repPct": 44.43, "demCandidate": "Maggie Hassan", "repCandidate": "Donald Bolduc", "demVotes": 332193, "repVotes": 275928, "totalVotes": 620975, "margin": -9.06, "seat": 2, "seatClass": 3, "demIncumbent": true },
       { "year": 2016, "demPct": 47.98, "repPct": 47.84, "demCandidate": "Maggie Hassan", "repCandidate": "Kelly Ayotte", "demVotes": 354649, "repVotes": 353632, "totalVotes": 739140, "margin": -0.14, "seat": 2, "seatClass": 3, "repIncumbent": true }
     ]
   },
@@ -1870,7 +1870,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "nextElection": 2028,
     "pastResults": [
       { "year": 2022, "demPct": 48.81, "repPct": 48.04, "demCandidate": "Catherine Cortez Masto", "repCandidate": "Adam Paul Laxalt", "demVotes": 498316, "repVotes": 490388, "totalVotes": 1020850, "margin": -0.78, "seat": 2, "seatClass": 3, "demIncumbent": true },
-      { "year": 2016, "demPct": 47.1, "repPct": 44.67, "demCandidate": "Catherine Cortez Masto", "repCandidate": "Joseph J. Heck", "demVotes": 521994, "repVotes": 495079, "totalVotes": 1108294, "margin": -2.43, "seat": 2, "seatClass": 3 }
+      { "year": 2016, "demPct": 47.1, "repPct": 44.67, "demCandidate": "Catherine Cortez Masto", "repCandidate": "Joseph Heck", "demVotes": 521994, "repVotes": 495079, "totalVotes": 1108294, "margin": -2.43, "seat": 2, "seatClass": 3 }
     ]
   },
   {
@@ -1880,8 +1880,8 @@ export const senateHoldovers: NoElectionEntry[] = [
     "party": "D",
     "nextElection": 2028,
     "pastResults": [
-      { "year": 2022, "demPct": 56.74, "repPct": 42.73, "demCandidate": "Charles E. Schumer", "repCandidate": "Joe Pinion", "demVotes": 3320561, "repVotes": 2501151, "totalVotes": 5965684, "margin": -14, "seat": 2, "seatClass": 3, "demIncumbent": true },
-      { "year": 2016, "demPct": 70.18, "repPct": 27.56, "demCandidate": "Charles E. Schumer", "repCandidate": "Wendy E. Long", "demVotes": 5116696, "repVotes": 2009353, "totalVotes": 7695473, "margin": -42.62, "seat": 2, "seatClass": 3, "demIncumbent": true }
+      { "year": 2022, "demPct": 56.74, "repPct": 42.73, "demCandidate": "Charles Schumer", "repCandidate": "Joe Pinion", "demVotes": 3320561, "repVotes": 2501151, "totalVotes": 5965684, "margin": -14, "seat": 2, "seatClass": 3, "demIncumbent": true },
+      { "year": 2016, "demPct": 70.18, "repPct": 27.56, "demCandidate": "Charles Schumer", "repCandidate": "Wendy Long", "demVotes": 5116696, "repVotes": 2009353, "totalVotes": 7695473, "margin": -42.62, "seat": 2, "seatClass": 3, "demIncumbent": true }
     ]
   },
   {
@@ -1893,7 +1893,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "pastResults": [
       { "year": 2022, "demPct": 32.1, "repPct": 64.3, "demCandidate": "Madison Horn", "repCandidate": "James Lankford", "demVotes": 369370, "repVotes": 739960, "totalVotes": 1150732, "margin": 32.2, "seat": 2, "seatClass": 3, "repIncumbent": true },
       { "year": 2016, "demPct": 24.58, "repPct": 67.74, "demCandidate": "Mike Workman", "repCandidate": "James Lankford", "demVotes": 355911, "repVotes": 980892, "totalVotes": 1448047, "margin": 43.16, "seat": 2, "seatClass": 3, "repIncumbent": true },
-      { "year": 2014, "demPct": 28.98, "repPct": 67.85, "demCandidate": "Constance N. Johnson", "repCandidate": "James Lankford", "demVotes": 237923, "repVotes": 557002, "totalVotes": 820890, "margin": 38.87, "seat": 2, "seatClass": 3, "electionType": "Special" }
+      { "year": 2014, "demPct": 28.98, "repPct": 67.85, "demCandidate": "Constance Johnson", "repCandidate": "James Lankford", "demVotes": 237923, "repVotes": 557002, "totalVotes": 820890, "margin": 38.87, "seat": 2, "seatClass": 3, "electionType": "Special" }
     ]
   },
   {
@@ -1915,7 +1915,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "nextElection": 2028,
     "pastResults": [
       { "year": 2022, "demPct": 51.25, "repPct": 46.33, "demCandidate": "John Fetterman", "repCandidate": "Mehmet Oz", "demVotes": 2751012, "repVotes": 2487260, "totalVotes": 5368021, "margin": -4.91, "seat": 2, "seatClass": 3 },
-      { "year": 2016, "demPct": 47.34, "repPct": 48.77, "demCandidate": "Kathleen Alana McGinty", "repCandidate": "Patrick J. Toomey", "demVotes": 2865012, "repVotes": 2951702, "totalVotes": 6051856, "margin": 1.43, "seat": 2, "seatClass": 3, "repIncumbent": true }
+      { "year": 2016, "demPct": 47.34, "repPct": 48.77, "demCandidate": "Kathleen Alana McGinty", "repCandidate": "Patrick Toomey", "demVotes": 2865012, "repVotes": 2951702, "totalVotes": 6051856, "margin": 1.43, "seat": 2, "seatClass": 3, "repIncumbent": true }
     ]
   },
   {
@@ -1937,8 +1937,8 @@ export const senateHoldovers: NoElectionEntry[] = [
     "party": "R",
     "nextElection": 2028,
     "pastResults": [
-      { "year": 2022, "demPct": 26.15, "repPct": 69.63, "demCandidate": "Brian L. Bengs", "repCandidate": "John R. Thune", "demVotes": 91007, "repVotes": 242316, "totalVotes": 348020, "margin": 43.48, "seat": 2, "seatClass": 3, "repIncumbent": true },
-      { "year": 2016, "demPct": 28.17, "repPct": 71.83, "demCandidate": "Jay H. Williams", "repCandidate": "John R. Thune", "demVotes": 104140, "repVotes": 265516, "totalVotes": 369656, "margin": 43.66, "seat": 2, "seatClass": 3, "repIncumbent": true }
+      { "year": 2022, "demPct": 26.15, "repPct": 69.63, "demCandidate": "Brian Bengs", "repCandidate": "John Thune", "demVotes": 91007, "repVotes": 242316, "totalVotes": 348020, "margin": 43.48, "seat": 2, "seatClass": 3, "repIncumbent": true },
+      { "year": 2016, "demPct": 28.17, "repPct": 71.83, "demCandidate": "Jay Williams", "repCandidate": "John Thune", "demVotes": 104140, "repVotes": 265516, "totalVotes": 369656, "margin": 43.66, "seat": 2, "seatClass": 3, "repIncumbent": true }
     ]
   },
   {
@@ -1960,7 +1960,7 @@ export const senateHoldovers: NoElectionEntry[] = [
     "nextElection": 2028,
     "pastResults": [
       { "year": 2022, "demPct": 68.47, "repPct": 28.03, "demCandidate": "Peter Welch", "repCandidate": "Gerald Malloy", "demVotes": 196575, "repVotes": 80468, "totalVotes": 291955, "margin": -40.44, "seat": 2, "seatClass": 3 },
-      { "year": 2016, "demPct": 61.26, "repPct": 33.03, "demCandidate": "Patrick J. Leahy", "repCandidate": "Scott Milne", "demVotes": 192243, "repVotes": 103637, "totalVotes": 320467, "margin": -28.24, "seat": 2, "seatClass": 3, "demIncumbent": true }
+      { "year": 2016, "demPct": 61.26, "repPct": 33.03, "demCandidate": "Patrick Leahy", "repCandidate": "Scott Milne", "demVotes": 192243, "repVotes": 103637, "totalVotes": 320467, "margin": -28.24, "seat": 2, "seatClass": 3, "demIncumbent": true }
     ]
   },
   {
@@ -3448,9 +3448,9 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 21.5, "repPct": 78.4, "demCandidate": "Tom Holmes", "repCandidate": "Barry Moore", "demVotes": 70929, "repVotes": 258619, "totalVotes": 329854, "margin": 56.9 },
-      { "year": 2022, "demPct": 15.68, "repPct": 83.61, "demCandidate": "Alexander M. Remrey (L)", "repCandidate": "Jerry L. Carl", "demVotes": 26369, "repVotes": 140592, "totalVotes": 168150, "margin": 67.93, "repIncumbent": true },
+      { "year": 2022, "demPct": 15.68, "repPct": 83.61, "demCandidate": "Alexander Remrey (L)", "repCandidate": "Jerry Carl", "demVotes": 26369, "repVotes": 140592, "totalVotes": 168150, "margin": 67.93, "repIncumbent": true },
       { "year": 2020, "demPct": 35.54, "repPct": 64.37, "demCandidate": "James Averhart", "repCandidate": "Jerry Carl", "demVotes": 116949, "repVotes": 211825, "totalVotes": 329075, "margin": 28.83 },
-      { "year": 2018, "demPct": 36.78, "repPct": 63.16, "demCandidate": "Robert Kennedy, Jr.", "repCandidate": "Bradley Byrne", "demVotes": 89226, "repVotes": 153228, "totalVotes": 242617, "margin": 26.38, "repIncumbent": true },
+      { "year": 2018, "demPct": 36.78, "repPct": 63.16, "demCandidate": "Robert Kennedy", "repCandidate": "Bradley Byrne", "demVotes": 89226, "repVotes": 153228, "totalVotes": 242617, "margin": 26.38, "repIncumbent": true },
       { "year": 2016, "demPct": 0, "repPct": 96.38, "repCandidate": "Bradley Byrne", "repVotes": 208083, "totalVotes": 215893, "margin": 96.38, "repIncumbent": true }
     ]
   },
@@ -3547,10 +3547,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 0, "repPct": 98.8, "repCandidate": "Robert Aderholt", "repVotes": 274498, "totalVotes": 277872, "margin": 98.8, "repIncumbent": true },
-      { "year": 2022, "demPct": 13.64, "repPct": 84.12, "demCandidate": "Rick Neighbors", "repCandidate": "Robert B. Aderholt", "demVotes": 26694, "repVotes": 164655, "totalVotes": 195733, "margin": 70.48, "repIncumbent": true },
-      { "year": 2020, "demPct": 17.68, "repPct": 82.24, "demCandidate": "Rick Neighbors", "repCandidate": "Robert B. Aderholt", "demVotes": 56237, "repVotes": 261553, "totalVotes": 318029, "margin": 64.56, "repIncumbent": true },
-      { "year": 2018, "demPct": 20.13, "repPct": 79.77, "demCandidate": "Lee Auman", "repCandidate": "Robert B. Aderholt", "demVotes": 46492, "repVotes": 184255, "totalVotes": 230969, "margin": 59.64, "repIncumbent": true },
-      { "year": 2016, "demPct": 0, "repPct": 98.53, "repCandidate": "Robert B. Aderholt", "repVotes": 235925, "totalVotes": 239444, "margin": 98.53, "repIncumbent": true }
+      { "year": 2022, "demPct": 13.64, "repPct": 84.12, "demCandidate": "Rick Neighbors", "repCandidate": "Robert Aderholt", "demVotes": 26694, "repVotes": 164655, "totalVotes": 195733, "margin": 70.48, "repIncumbent": true },
+      { "year": 2020, "demPct": 17.68, "repPct": 82.24, "demCandidate": "Rick Neighbors", "repCandidate": "Robert Aderholt", "demVotes": 56237, "repVotes": 261553, "totalVotes": 318029, "margin": 64.56, "repIncumbent": true },
+      { "year": 2018, "demPct": 20.13, "repPct": 79.77, "demCandidate": "Lee Auman", "repCandidate": "Robert Aderholt", "demVotes": 46492, "repVotes": 184255, "totalVotes": 230969, "margin": 59.64, "repIncumbent": true },
+      { "year": 2016, "demPct": 0, "repPct": 98.53, "repCandidate": "Robert Aderholt", "repVotes": 235925, "totalVotes": 239444, "margin": 98.53, "repIncumbent": true }
     ]
   },
   {
@@ -3583,7 +3583,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 29.55, "repPct": 67.09, "demCandidate": "Kathy Warner-Stanton", "repCandidate": "Dale Strong", "demVotes": 62740, "repVotes": 142435, "totalVotes": 212317, "margin": 37.54 },
       { "year": 2020, "demPct": 0, "repPct": 95.81, "repCandidate": "Mo Brooks", "repVotes": 253094, "totalVotes": 264160, "margin": 95.81, "repIncumbent": true },
       { "year": 2018, "demPct": 38.89, "repPct": 61.02, "demCandidate": "Peter Joffrion", "repCandidate": "Mo Brooks", "demVotes": 101388, "repVotes": 159063, "totalVotes": 260673, "margin": 22.13, "repIncumbent": true },
-      { "year": 2016, "demPct": 33.16, "repPct": 66.7, "demCandidate": "Will Boyd, Jr.", "repCandidate": "Mo Brooks", "demVotes": 102234, "repVotes": 205647, "totalVotes": 308326, "margin": 33.54, "repIncumbent": true }
+      { "year": 2016, "demPct": 33.16, "repPct": 66.7, "demCandidate": "Will Boyd", "repCandidate": "Mo Brooks", "demVotes": 102234, "repVotes": 205647, "totalVotes": 308326, "margin": 33.54, "repIncumbent": true }
     ]
   },
   {
@@ -3613,10 +3613,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 29.6, "repPct": 70.3, "demCandidate": "Elizabeth Anderson", "repCandidate": "Gary Palmer", "demVotes": 102504, "repVotes": 243741, "totalVotes": 346625, "margin": 40.7, "repIncumbent": true },
-      { "year": 2022, "demPct": 15.11, "repPct": 83.73, "demCandidate": "Andria Chieffo (L)", "repCandidate": "Gary J. Palmer", "demVotes": 27833, "repVotes": 154233, "totalVotes": 184203, "margin": 68.62, "repIncumbent": true },
-      { "year": 2020, "demPct": 0, "repPct": 97.13, "repCandidate": "Gary J. Palmer", "repVotes": 274160, "totalVotes": 282261, "margin": 97.13, "repIncumbent": true },
-      { "year": 2018, "demPct": 30.77, "repPct": 69.18, "demCandidate": "Danner Kline", "repCandidate": "Gary J. Palmer", "demVotes": 85644, "repVotes": 192542, "totalVotes": 278328, "margin": 38.41, "repIncumbent": true },
-      { "year": 2016, "demPct": 25.42, "repPct": 74.49, "demCandidate": "David J. Putman", "repCandidate": "Gary J. Palmer", "demVotes": 83709, "repVotes": 245313, "totalVotes": 329306, "margin": 49.07, "repIncumbent": true }
+      { "year": 2022, "demPct": 15.11, "repPct": 83.73, "demCandidate": "Andria Chieffo (L)", "repCandidate": "Gary Palmer", "demVotes": 27833, "repVotes": 154233, "totalVotes": 184203, "margin": 68.62, "repIncumbent": true },
+      { "year": 2020, "demPct": 0, "repPct": 97.13, "repCandidate": "Gary Palmer", "repVotes": 274160, "totalVotes": 282261, "margin": 97.13, "repIncumbent": true },
+      { "year": 2018, "demPct": 30.77, "repPct": 69.18, "demCandidate": "Danner Kline", "repCandidate": "Gary Palmer", "demVotes": 85644, "repVotes": 192542, "totalVotes": 278328, "margin": 38.41, "repIncumbent": true },
+      { "year": 2016, "demPct": 25.42, "repPct": 74.49, "demCandidate": "David Putman", "repCandidate": "Gary Palmer", "demVotes": 83709, "repVotes": 245313, "totalVotes": 329306, "margin": 49.07, "repIncumbent": true }
     ]
   },
   {
@@ -3646,10 +3646,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 63.7, "repPct": 36.3, "demCandidate": "Terri Sewell", "repCandidate": "Robin Litaker", "demVotes": 186723, "repVotes": 106312, "totalVotes": 293220, "margin": -27.4, "demIncumbent": true },
-      { "year": 2022, "demPct": 63.54, "repPct": 34.76, "demCandidate": "Terri A. Sewell", "repCandidate": "Beatrice Nichols", "demVotes": 123233, "repVotes": 67416, "totalVotes": 193940, "margin": -28.78, "demIncumbent": true },
-      { "year": 2020, "demPct": 97.16, "repPct": 0, "demCandidate": "Terri A. Sewell", "demVotes": 225742, "totalVotes": 232331, "margin": -97.16, "demIncumbent": true },
-      { "year": 2018, "demPct": 97.8, "repPct": 0, "demCandidate": "Terri A. Sewell", "demVotes": 185010, "totalVotes": 189163, "margin": -97.8, "demIncumbent": true },
-      { "year": 2016, "demPct": 98.41, "repPct": 0, "demCandidate": "Terri A. Sewell", "demVotes": 229330, "totalVotes": 233028, "margin": -98.41, "demIncumbent": true }
+      { "year": 2022, "demPct": 63.54, "repPct": 34.76, "demCandidate": "Terri Sewell", "repCandidate": "Beatrice Nichols", "demVotes": 123233, "repVotes": 67416, "totalVotes": 193940, "margin": -28.78, "demIncumbent": true },
+      { "year": 2020, "demPct": 97.16, "repPct": 0, "demCandidate": "Terri Sewell", "demVotes": 225742, "totalVotes": 232331, "margin": -97.16, "demIncumbent": true },
+      { "year": 2018, "demPct": 97.8, "repPct": 0, "demCandidate": "Terri Sewell", "demVotes": 185010, "totalVotes": 189163, "margin": -97.8, "demIncumbent": true },
+      { "year": 2016, "demPct": 98.41, "repPct": 0, "demCandidate": "Terri Sewell", "demVotes": 229330, "totalVotes": 233028, "margin": -98.41, "demIncumbent": true }
     ]
   },
   {
@@ -3676,10 +3676,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Nicholas Begich III",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 48.78, "repPct": 51.22, "demCandidate": "Mary Peltola", "repCandidate": "Nick Begich III", "demVotes": 164861, "repVotes": 156985, "totalVotes": 321846, "margin": 2.44, "demIncumbent": true },
+      { "year": 2024, "demPct": 48.78, "repPct": 51.22, "demCandidate": "Mary Peltola", "repCandidate": "Nick Begich", "demVotes": 164861, "repVotes": 156985, "totalVotes": 321846, "margin": 2.44, "demIncumbent": true },
       { "year": 2022, "demPct": 54.96, "repPct": 45.04, "demCandidate": "Mary Peltola", "repCandidate": "Sarah Palin", "demVotes": 137263, "repVotes": 112471, "totalVotes": 249734, "margin": -9.92, "demIncumbent": true },
-      { "year": 2020, "demPct": 45.26, "repPct": 54.4, "demCandidate": "Alyse S. Galvin", "repCandidate": "Don Young", "demVotes": 159856, "repVotes": 192126, "totalVotes": 353165, "margin": 9.14, "repIncumbent": true },
-      { "year": 2018, "demPct": 46.5, "repPct": 53.08, "demCandidate": "Alyse S. Galvin", "repCandidate": "Don Young", "demVotes": 131199, "repVotes": 149779, "totalVotes": 282166, "margin": 6.58, "repIncumbent": true },
+      { "year": 2020, "demPct": 45.26, "repPct": 54.4, "demCandidate": "Alyse Galvin", "repCandidate": "Don Young", "demVotes": 159856, "repVotes": 192126, "totalVotes": 353165, "margin": 9.14, "repIncumbent": true },
+      { "year": 2018, "demPct": 46.5, "repPct": 53.08, "demCandidate": "Alyse Galvin", "repCandidate": "Don Young", "demVotes": 131199, "repVotes": 149779, "totalVotes": 282166, "margin": 6.58, "repIncumbent": true },
       { "year": 2016, "demPct": 36.02, "repPct": 50.32, "demCandidate": "Steve Lindbeck", "repCandidate": "Don Young", "demVotes": 111019, "repVotes": 155088, "totalVotes": 308198, "margin": 14.3, "repIncumbent": true }
     ]
   },
@@ -3735,7 +3735,7 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Jonathan Nez", "party": "D", "incumbent": false },
       "rep": { "name": "Eli Crane", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Elijah Crane",
+    "seatHolder": "Eli Crane",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 45.51, "repPct": 54.48, "demCandidate": "Jonathan Nez", "repCandidate": "Eli Crane", "demVotes": 184963, "repVotes": 221413, "totalVotes": 406431, "margin": 8.97, "repIncumbent": true },
@@ -3773,9 +3773,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 70.9, "repPct": 26.6, "demCandidate": "Yassamin Ansari", "repCandidate": "Jeff Zink", "demVotes": 143336, "repVotes": 53705, "totalVotes": 202065, "margin": -44.3 },
       { "year": 2022, "demPct": 76.98, "repPct": 23.02, "demCandidate": "Ruben Gallego", "repCandidate": "Jeff Zink", "demVotes": 108599, "repVotes": 32475, "totalVotes": 141074, "margin": -53.96 },
-      { "year": 2020, "demPct": 64.57, "repPct": 35.43, "demCandidate": "Raúl M. Grijalva", "repCandidate": "Daniel Wood", "demVotes": 174243, "repVotes": 95594, "totalVotes": 269837, "margin": -29.14, "demIncumbent": true },
-      { "year": 2018, "demPct": 63.87, "repPct": 36.13, "demCandidate": "Raúl M. Grijalva", "repCandidate": "Nicolas “Nick” Pierson", "demVotes": 114650, "repVotes": 64868, "totalVotes": 179518, "margin": -27.74, "demIncumbent": true },
-      { "year": 2016, "demPct": 98.63, "repPct": 0.86, "demCandidate": "Raúl M. Grijalva", "repCandidate": "Bill Abatecola", "demVotes": 148973, "repVotes": 1303, "totalVotes": 151035, "margin": -97.77, "demIncumbent": true }
+      { "year": 2020, "demPct": 64.57, "repPct": 35.43, "demCandidate": "Raúl Grijalva", "repCandidate": "Daniel Wood", "demVotes": 174243, "repVotes": 95594, "totalVotes": 269837, "margin": -29.14, "demIncumbent": true },
+      { "year": 2018, "demPct": 63.87, "repPct": 36.13, "demCandidate": "Raúl Grijalva", "repCandidate": "Nick Pierson", "demVotes": 114650, "repVotes": 64868, "totalVotes": 179518, "margin": -27.74, "demIncumbent": true },
+      { "year": 2016, "demPct": 98.63, "repPct": 0.86, "demCandidate": "Raúl Grijalva", "repCandidate": "Bill Abatecola", "demVotes": 148973, "repVotes": 1303, "totalVotes": 151035, "margin": -97.77, "demIncumbent": true }
     ]
   },
   {
@@ -3806,9 +3806,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 52.74, "repPct": 45.45, "demCandidate": "Greg Stanton", "repCandidate": "Kelly Cooper", "demVotes": 176428, "repVotes": 152052, "totalVotes": 334545, "margin": -7.29, "demIncumbent": true },
       { "year": 2022, "demPct": 56.1, "repPct": 43.89, "demCandidate": "Greg Stanton", "repCandidate": "Kelly Cooper", "demVotes": 148941, "repVotes": 116521, "totalVotes": 265498, "margin": -12.21 },
-      { "year": 2020, "demPct": 30.23, "repPct": 69.74, "demCandidate": "Delina DiSanto", "repCandidate": "Paul A. Gosar", "demVotes": 120484, "repVotes": 278002, "totalVotes": 398623, "margin": 39.51, "repIncumbent": true },
-      { "year": 2018, "demPct": 30.51, "repPct": 68.17, "demCandidate": "David Brill", "repCandidate": "Paul A. Gosar", "demVotes": 84521, "repVotes": 188842, "totalVotes": 277035, "margin": 37.66, "repIncumbent": true },
-      { "year": 2016, "demPct": 28.55, "repPct": 71.45, "demCandidate": "Mikel Weisser", "repCandidate": "Paul A. Gosar", "demVotes": 81296, "repVotes": 203487, "totalVotes": 284783, "margin": 42.9, "repIncumbent": true }
+      { "year": 2020, "demPct": 30.23, "repPct": 69.74, "demCandidate": "Delina DiSanto", "repCandidate": "Paul Gosar", "demVotes": 120484, "repVotes": 278002, "totalVotes": 398623, "margin": 39.51, "repIncumbent": true },
+      { "year": 2018, "demPct": 30.51, "repPct": 68.17, "demCandidate": "David Brill", "repCandidate": "Paul Gosar", "demVotes": 84521, "repVotes": 188842, "totalVotes": 277035, "margin": 37.66, "repIncumbent": true },
+      { "year": 2016, "demPct": 28.55, "repPct": 71.45, "demCandidate": "Mikel Weisser", "repCandidate": "Paul Gosar", "demVotes": 81296, "repVotes": 203487, "totalVotes": 284783, "margin": 42.9, "repIncumbent": true }
     ]
   },
   {
@@ -3872,7 +3872,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 49.23, "repPct": 50.73, "demCandidate": "Kirsten Engel", "repCandidate": "Juan Ciscomani", "demVotes": 171969, "repVotes": 177201, "totalVotes": 349283, "margin": 1.5 },
       { "year": 2020, "demPct": 47.83, "repPct": 52.17, "demCandidate": "Hiral Tipirneni", "repCandidate": "David Schweikert", "demVotes": 199644, "repVotes": 217783, "totalVotes": 417427, "margin": 4.34, "repIncumbent": true },
       { "year": 2018, "demPct": 44.81, "repPct": 55.19, "demCandidate": "Anita Malik", "repCandidate": "David Schweikert", "demVotes": 140559, "repVotes": 173140, "totalVotes": 313699, "margin": 10.38, "repIncumbent": true },
-      { "year": 2016, "demPct": 37.87, "repPct": 62.13, "demCandidate": "W. John Williamson", "repCandidate": "David Schweikert", "demVotes": 122866, "repVotes": 201578, "totalVotes": 324444, "margin": 24.26, "repIncumbent": true }
+      { "year": 2016, "demPct": 37.87, "repPct": 62.13, "demCandidate": "John Williamson", "repCandidate": "David Schweikert", "demVotes": 122866, "repVotes": 201578, "totalVotes": 324444, "margin": 24.26, "repIncumbent": true }
     ]
   },
   {
@@ -3902,9 +3902,9 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 63.4, "repPct": 36.6, "demCandidate": "Raul Grijalva", "repCandidate": "Daniel Butierez", "demVotes": 171954, "repVotes": 99057, "totalVotes": 271011, "margin": -26.8, "demIncumbent": true },
-      { "year": 2022, "demPct": 64.54, "repPct": 35.46, "demCandidate": "Raúl M. Grijalva", "repCandidate": "Luis Pozzolo", "demVotes": 126418, "repVotes": 69444, "totalVotes": 195862, "margin": -29.08 },
+      { "year": 2022, "demPct": 64.54, "repPct": 35.46, "demCandidate": "Raúl Grijalva", "repCandidate": "Luis Pozzolo", "demVotes": 126418, "repVotes": 69444, "totalVotes": 195862, "margin": -29.08 },
       { "year": 2020, "demPct": 76.69, "repPct": 23.28, "demCandidate": "Ruben Gallego", "repCandidate": "Joshua Barnett", "demVotes": 165452, "repVotes": 50226, "totalVotes": 215732, "margin": -53.41, "demIncumbent": true },
-      { "year": 2018, "demPct": 85.61, "repPct": 0.23, "demCandidate": "Ruben Gallego", "repCandidate": "James “007” Bond IV", "demVotes": 113044, "repVotes": 301, "totalVotes": 132051, "margin": -85.38, "demIncumbent": true },
+      { "year": 2018, "demPct": 85.61, "repPct": 0.23, "demCandidate": "Ruben Gallego", "repCandidate": "007 Bond IV", "demVotes": 113044, "repVotes": 301, "totalVotes": 132051, "margin": -85.38, "demIncumbent": true },
       { "year": 2016, "demPct": 75.22, "repPct": 24.74, "demCandidate": "Ruben Gallego", "repCandidate": "Eve Nunez", "demVotes": 119465, "repVotes": 39286, "totalVotes": 158811, "margin": -50.48, "demIncumbent": true }
     ]
   },
@@ -3970,7 +3970,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 34.7, "repPct": 65.3, "demCandidate": "Quacy Smith", "repCandidate": "Paul Gosar", "demVotes": 132640, "repVotes": 249583, "totalVotes": 382223, "margin": 30.6, "repIncumbent": true },
       { "year": 2022, "demPct": 1.79, "repPct": 97.77, "demCandidate": "Richard Grayson", "repCandidate": "Paul Gosar", "demVotes": 3531, "repVotes": 192796, "totalVotes": 197185, "margin": 95.98 },
       { "year": 2020, "demPct": 61.63, "repPct": 38.37, "demCandidate": "Greg Stanton", "repCandidate": "Dave Giles", "demVotes": 217094, "repVotes": 135180, "totalVotes": 352274, "margin": -23.26, "demIncumbent": true },
-      { "year": 2018, "demPct": 61.09, "repPct": 38.91, "demCandidate": "Greg Stanton", "repCandidate": "Stephen L. Ferrara", "demVotes": 159583, "repVotes": 101662, "totalVotes": 261245, "margin": -22.18 },
+      { "year": 2018, "demPct": 61.09, "repPct": 38.91, "demCandidate": "Greg Stanton", "repCandidate": "Stephen Ferrara", "demVotes": 159583, "repVotes": 101662, "totalVotes": 261245, "margin": -22.18 },
       { "year": 2016, "demPct": 60.92, "repPct": 39.04, "demCandidate": "Kyrsten Sinema", "repCandidate": "Dave Giles", "demVotes": 169055, "repVotes": 108350, "totalVotes": 277507, "margin": -21.88, "demIncumbent": true }
     ]
   },
@@ -4001,10 +4001,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 24, "repPct": 72.9, "demCandidate": "Rodney Govens", "repCandidate": "Rick Crawford", "demVotes": 64113, "repVotes": 194711, "totalVotes": 267177, "margin": 48.9, "repIncumbent": true },
-      { "year": 2022, "demPct": 26.2, "repPct": 73.8, "demCandidate": "Monte Hodges", "repCandidate": "Eric A. “Rick” Crawford", "demVotes": 54598, "repVotes": 153774, "totalVotes": 208372, "margin": 47.6, "repIncumbent": true },
-      { "year": 2020, "demPct": 0, "repPct": 100, "repCandidate": "Eric A. “Rick” Crawford", "repVotes": 237596, "totalVotes": 237596, "margin": 100, "repIncumbent": true },
-      { "year": 2018, "demPct": 28.77, "repPct": 68.95, "demCandidate": "Chintan Desai", "repCandidate": "Eric A. “Rick” Crawford", "demVotes": 57907, "repVotes": 138757, "totalVotes": 201245, "margin": 40.18, "repIncumbent": true },
-      { "year": 2016, "demPct": 23.72, "repPct": 76.28, "demCandidate": "Mark West (L)", "repCandidate": "Eric A. “Rick” Crawford", "demVotes": 57181, "repVotes": 183866, "totalVotes": 241047, "margin": 52.56, "repIncumbent": true }
+      { "year": 2022, "demPct": 26.2, "repPct": 73.8, "demCandidate": "Monte Hodges", "repCandidate": "Rick Crawford", "demVotes": 54598, "repVotes": 153774, "totalVotes": 208372, "margin": 47.6, "repIncumbent": true },
+      { "year": 2020, "demPct": 0, "repPct": 100, "repCandidate": "Rick Crawford", "repVotes": 237596, "totalVotes": 237596, "margin": 100, "repIncumbent": true },
+      { "year": 2018, "demPct": 28.77, "repPct": 68.95, "demCandidate": "Chintan Desai", "repCandidate": "Rick Crawford", "demVotes": 57907, "repVotes": 138757, "totalVotes": 201245, "margin": 40.18, "repIncumbent": true },
+      { "year": 2016, "demPct": 23.72, "repPct": 76.28, "demCandidate": "Mark West (L)", "repCandidate": "Rick Crawford", "demVotes": 57181, "repVotes": 183866, "totalVotes": 241047, "margin": 52.56, "repIncumbent": true }
     ]
   },
   {
@@ -4034,10 +4034,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 41.1, "repPct": 58.9, "demCandidate": "Marcus Jones", "repCandidate": "French Hill", "demVotes": 125777, "repVotes": 180509, "totalVotes": 306286, "margin": 17.8, "repIncumbent": true },
-      { "year": 2022, "demPct": 35.26, "repPct": 60.04, "demCandidate": "Quintessa Hathaway", "repCandidate": "J. French Hill", "demVotes": 86887, "repVotes": 147975, "totalVotes": 246446, "margin": 24.78, "repIncumbent": true },
-      { "year": 2020, "demPct": 44.63, "repPct": 55.37, "demCandidate": "Joyce Elliott", "repCandidate": "J. French Hill", "demVotes": 148410, "repVotes": 184093, "totalVotes": 332503, "margin": 10.74, "repIncumbent": true },
-      { "year": 2018, "demPct": 45.82, "repPct": 52.13, "demCandidate": "Clarke Tucker", "repCandidate": "J. French Hill", "demVotes": 116135, "repVotes": 132125, "totalVotes": 253453, "margin": 6.31, "repIncumbent": true },
-      { "year": 2016, "demPct": 36.81, "repPct": 58.34, "demCandidate": "Dianne Curry", "repCandidate": "J. French Hill", "demVotes": 111347, "repVotes": 176472, "totalVotes": 302464, "margin": 21.53, "repIncumbent": true }
+      { "year": 2022, "demPct": 35.26, "repPct": 60.04, "demCandidate": "Quintessa Hathaway", "repCandidate": "French Hill", "demVotes": 86887, "repVotes": 147975, "totalVotes": 246446, "margin": 24.78, "repIncumbent": true },
+      { "year": 2020, "demPct": 44.63, "repPct": 55.37, "demCandidate": "Joyce Elliott", "repCandidate": "French Hill", "demVotes": 148410, "repVotes": 184093, "totalVotes": 332503, "margin": 10.74, "repIncumbent": true },
+      { "year": 2018, "demPct": 45.82, "repPct": 52.13, "demCandidate": "Clarke Tucker", "repCandidate": "French Hill", "demVotes": 116135, "repVotes": 132125, "totalVotes": 253453, "margin": 6.31, "repIncumbent": true },
+      { "year": 2016, "demPct": 36.81, "repPct": 58.34, "demCandidate": "Dianne Curry", "repCandidate": "French Hill", "demVotes": 111347, "repVotes": 176472, "totalVotes": 302464, "margin": 21.53, "repIncumbent": true }
     ]
   },
   {
@@ -4101,7 +4101,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 27.1, "repPct": 72.9, "demCandidate": "Risie Howard", "repCandidate": "Bruce Westerman", "demVotes": 73207, "repVotes": 197046, "totalVotes": 270253, "margin": 45.8, "repIncumbent": true },
       { "year": 2022, "demPct": 26.19, "repPct": 71, "demCandidate": "John White", "repCandidate": "Bruce Westerman", "demVotes": 56745, "repVotes": 153850, "totalVotes": 216696, "margin": 44.81, "repIncumbent": true },
-      { "year": 2020, "demPct": 27.54, "repPct": 69.67, "demCandidate": "William H. Hanson", "repCandidate": "Bruce Westerman", "demVotes": 75750, "repVotes": 191617, "totalVotes": 275035, "margin": 42.13, "repIncumbent": true },
+      { "year": 2020, "demPct": 27.54, "repPct": 69.67, "demCandidate": "William Hanson", "repCandidate": "Bruce Westerman", "demVotes": 75750, "repVotes": 191617, "totalVotes": 275035, "margin": 42.13, "repIncumbent": true },
       { "year": 2018, "demPct": 31.23, "repPct": 66.74, "demCandidate": "Hayden Catherine Shamel", "repCandidate": "Bruce Westerman", "demVotes": 63984, "repVotes": 136740, "totalVotes": 204892, "margin": 35.51, "repIncumbent": true },
       { "year": 2016, "demPct": 25.1, "repPct": 74.9, "demCandidate": "Kerry Hicks (L)", "repCandidate": "Bruce Westerman", "demVotes": 61274, "repVotes": 182885, "totalVotes": 244159, "margin": 49.8, "repIncumbent": true }
     ]
@@ -4167,9 +4167,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 71.9, "repPct": 28.1, "demCandidate": "Jared Huffman", "repCandidate": "Chris Coulombe", "demVotes": 272883, "repVotes": 106734, "totalVotes": 379617, "margin": -43.8, "demIncumbent": true },
       { "year": 2022, "demPct": 74.4, "repPct": 25.6, "demCandidate": "Jared Huffman", "repCandidate": "Douglas Brower", "demVotes": 229720, "repVotes": 79029, "totalVotes": 308749, "margin": -48.8, "demIncumbent": true },
-      { "year": 2020, "demPct": 75.74, "repPct": 24.26, "demCandidate": "Jared Huffman", "repCandidate": "Dale K. Mensing", "demVotes": 294435, "repVotes": 94320, "totalVotes": 388755, "margin": -51.48, "demIncumbent": true },
-      { "year": 2018, "demPct": 77.01, "repPct": 22.99, "demCandidate": "Jared Huffman", "repCandidate": "Dale K. Mensing", "demVotes": 243081, "repVotes": 72576, "totalVotes": 315657, "margin": -54.02, "demIncumbent": true },
-      { "year": 2016, "demPct": 76.85, "repPct": 23.15, "demCandidate": "Jared Huffman", "repCandidate": "Dale K. Mensing", "demVotes": 254194, "repVotes": 76572, "totalVotes": 330766, "margin": -53.7, "demIncumbent": true }
+      { "year": 2020, "demPct": 75.74, "repPct": 24.26, "demCandidate": "Jared Huffman", "repCandidate": "Dale Mensing", "demVotes": 294435, "repVotes": 94320, "totalVotes": 388755, "margin": -51.48, "demIncumbent": true },
+      { "year": 2018, "demPct": 77.01, "repPct": 22.99, "demCandidate": "Jared Huffman", "repCandidate": "Dale Mensing", "demVotes": 243081, "repVotes": 72576, "totalVotes": 315657, "margin": -54.02, "demIncumbent": true },
+      { "year": 2016, "demPct": 76.85, "repPct": 23.15, "demCandidate": "Jared Huffman", "repCandidate": "Dale Mensing", "demVotes": 254194, "repVotes": 76572, "totalVotes": 330766, "margin": -53.7, "demIncumbent": true }
     ]
   },
   {
@@ -4200,7 +4200,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 46.35, "repPct": 53.65, "demCandidate": "Kermit Jones", "repCandidate": "Kevin Kiley", "demVotes": 156761, "repVotes": 181438, "totalVotes": 338199, "margin": 7.3 },
       { "year": 2020, "demPct": 54.67, "repPct": 45.33, "demCandidate": "John Garamendi", "repCandidate": "Tamika Hamilton", "demVotes": 176043, "repVotes": 145945, "totalVotes": 321988, "margin": -9.34, "demIncumbent": true },
       { "year": 2018, "demPct": 58.07, "repPct": 41.93, "demCandidate": "John Garamendi", "repCandidate": "Charlie Schaupp", "demVotes": 134875, "repVotes": 97376, "totalVotes": 232251, "margin": -16.14, "demIncumbent": true },
-      { "year": 2016, "demPct": 59.35, "repPct": 40.65, "demCandidate": "John Garamendi", "repCandidate": "N. Eugene Cleek", "demVotes": 152513, "repVotes": 104453, "totalVotes": 256966, "margin": -18.7, "demIncumbent": true }
+      { "year": 2016, "demPct": 59.35, "repPct": 40.65, "demCandidate": "John Garamendi", "repCandidate": "Eugene Cleek", "demVotes": 152513, "repVotes": 104453, "totalVotes": 256966, "margin": -18.7, "demIncumbent": true }
     ]
   },
   {
@@ -4231,9 +4231,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 66.5, "repPct": 33.5, "demCandidate": "Mike Thompson", "repCandidate": "John Munn", "demVotes": 227730, "repVotes": 114950, "totalVotes": 342680, "margin": -33, "demIncumbent": true },
       { "year": 2022, "demPct": 67.8, "repPct": 32.2, "demCandidate": "Mike Thompson", "repCandidate": "Matt Brock", "demVotes": 176900, "repVotes": 84007, "totalVotes": 260907, "margin": -35.6 },
-      { "year": 2020, "demPct": 44.05, "repPct": 55.95, "demCandidate": "Brynne S. Kennedy", "repCandidate": "Tom McClintock", "demVotes": 194731, "repVotes": 247291, "totalVotes": 442022, "margin": 11.9, "repIncumbent": true },
+      { "year": 2020, "demPct": 44.05, "repPct": 55.95, "demCandidate": "Brynne Kennedy", "repCandidate": "Tom McClintock", "demVotes": 194731, "repVotes": 247291, "totalVotes": 442022, "margin": 11.9, "repIncumbent": true },
       { "year": 2018, "demPct": 45.87, "repPct": 54.13, "demCandidate": "Jessica Morse", "repCandidate": "Tom McClintock", "demVotes": 156253, "repVotes": 184401, "totalVotes": 340654, "margin": 8.26, "repIncumbent": true },
-      { "year": 2016, "demPct": 37.28, "repPct": 62.72, "demCandidate": "Robert W. Derlet", "repCandidate": "Tom McClintock", "demVotes": 130845, "repVotes": 220133, "totalVotes": 350978, "margin": 25.44, "repIncumbent": true }
+      { "year": 2016, "demPct": 37.28, "repPct": 62.72, "demCandidate": "Robert Derlet", "repCandidate": "Tom McClintock", "demVotes": 130845, "repVotes": 220133, "totalVotes": 350978, "margin": 25.44, "repIncumbent": true }
     ]
   },
   {
@@ -4263,7 +4263,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 38.2, "repPct": 61.8, "demCandidate": "Mike Barkley", "repCandidate": "Tom McClintock", "demVotes": 140919, "repVotes": 227643, "totalVotes": 368562, "margin": 23.6, "repIncumbent": true },
-      { "year": 2022, "demPct": 38.69, "repPct": 61.31, "demCandidate": "Michael J. “Mike” Barkley", "repCandidate": "Tom McClintock", "demVotes": 109506, "repVotes": 173524, "totalVotes": 283030, "margin": 22.62 },
+      { "year": 2022, "demPct": 38.69, "repPct": 61.31, "demCandidate": "Mike Barkley", "repCandidate": "Tom McClintock", "demVotes": 109506, "repVotes": 173524, "totalVotes": 283030, "margin": 22.62 },
       { "year": 2020, "demPct": 76.09, "repPct": 23.91, "demCandidate": "Mike Thompson", "repCandidate": "Scott Giblin", "demVotes": 271233, "repVotes": 85227, "totalVotes": 356460, "margin": -52.18, "demIncumbent": true },
       { "year": 2018, "demPct": 78.87, "repPct": 21.13, "demCandidate": "Mike Thompson", "repCandidate": "Anthony Mills (NPP)", "demVotes": 205860, "repVotes": 55158, "totalVotes": 261018, "margin": -57.74, "demIncumbent": true },
       { "year": 2016, "demPct": 76.87, "repPct": 23.13, "demCandidate": "Mike Thompson", "repCandidate": "Carlos Santamaria", "demVotes": 224526, "repVotes": 67565, "totalVotes": 292091, "margin": -53.74, "demIncumbent": true }
@@ -4297,9 +4297,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 57.6, "repPct": 42.4, "demCandidate": "Ami Bera", "repCandidate": "Christine Bish", "demVotes": 165408, "repVotes": 121664, "totalVotes": 287072, "margin": -15.2, "demIncumbent": true },
       { "year": 2022, "demPct": 55.95, "repPct": 44.05, "demCandidate": "Ami Bera", "repCandidate": "Tamika Hamilton", "demVotes": 121058, "repVotes": 95325, "totalVotes": 216383, "margin": -11.9 },
-      { "year": 2020, "demPct": 73.34, "repPct": 26.66, "demCandidate": "Doris O. Matsui", "repCandidate": "Chris Bish", "demVotes": 229648, "repVotes": 83466, "totalVotes": 313114, "margin": -46.68, "demIncumbent": true },
-      { "year": 2018, "demPct": 80.43, "repPct": 0, "demCandidate": "Doris O. Matsui", "demVotes": 162411, "totalVotes": 201939, "margin": -80.43, "demIncumbent": true },
-      { "year": 2016, "demPct": 75.43, "repPct": 24.57, "demCandidate": "Doris O. Matsui", "repCandidate": "Robert “Bob” Evans", "demVotes": 177565, "repVotes": 57848, "totalVotes": 235413, "margin": -50.86, "demIncumbent": true }
+      { "year": 2020, "demPct": 73.34, "repPct": 26.66, "demCandidate": "Doris Matsui", "repCandidate": "Chris Bish", "demVotes": 229648, "repVotes": 83466, "totalVotes": 313114, "margin": -46.68, "demIncumbent": true },
+      { "year": 2018, "demPct": 80.43, "repPct": 0, "demCandidate": "Doris Matsui", "demVotes": 162411, "totalVotes": 201939, "margin": -80.43, "demIncumbent": true },
+      { "year": 2016, "demPct": 75.43, "repPct": 24.57, "demCandidate": "Doris Matsui", "repCandidate": "Bob Evans", "demVotes": 177565, "repVotes": 57848, "totalVotes": 235413, "margin": -50.86, "demIncumbent": true }
     ]
   },
   {
@@ -4329,10 +4329,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 66.8, "repPct": 33.2, "demCandidate": "Doris Matsui", "repCandidate": "Tom Silva", "demVotes": 197429, "repVotes": 98341, "totalVotes": 295770, "margin": -33.6, "demIncumbent": true },
-      { "year": 2022, "demPct": 68.26, "repPct": 31.74, "demCandidate": "Doris O. Matsui", "repCandidate": "Max Semenenko", "demVotes": 150618, "repVotes": 70033, "totalVotes": 220651, "margin": -36.52 },
+      { "year": 2022, "demPct": 68.26, "repPct": 31.74, "demCandidate": "Doris Matsui", "repCandidate": "Max Semenenko", "demVotes": 150618, "repVotes": 70033, "totalVotes": 220651, "margin": -36.52 },
       { "year": 2020, "demPct": 56.62, "repPct": 43.38, "demCandidate": "Ami Bera", "repCandidate": "Buzz Patterson", "demVotes": 217416, "repVotes": 166549, "totalVotes": 383965, "margin": -13.24, "demIncumbent": true },
       { "year": 2018, "demPct": 55.04, "repPct": 44.96, "demCandidate": "Ami Bera", "repCandidate": "Andrew Grant", "demVotes": 155016, "repVotes": 126601, "totalVotes": 281617, "margin": -10.08, "demIncumbent": true },
-      { "year": 2016, "demPct": 51.17, "repPct": 48.83, "demCandidate": "Ami Bera", "repCandidate": "Scott R. Jones", "demVotes": 152133, "repVotes": 145168, "totalVotes": 297301, "margin": -2.34, "demIncumbent": true }
+      { "year": 2016, "demPct": 51.17, "repPct": 48.83, "demCandidate": "Ami Bera", "repCandidate": "Scott Jones", "demVotes": 152133, "repVotes": 145168, "totalVotes": 297301, "margin": -2.34, "demIncumbent": true }
     ]
   },
   {
@@ -4394,9 +4394,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 51.8, "repPct": 48.2, "demCandidate": "Josh Harder", "repCandidate": "Kevin Lincoln", "demVotes": 130183, "repVotes": 121174, "totalVotes": 251357, "margin": -3.6, "demIncumbent": true },
       { "year": 2022, "demPct": 54.82, "repPct": 45.18, "demCandidate": "Josh Harder", "repCandidate": "Tom Patti", "demVotes": 95598, "repVotes": 78802, "totalVotes": 174400, "margin": -9.64 },
-      { "year": 2020, "demPct": 57.58, "repPct": 42.42, "demCandidate": "Jerry McNerney", "repCandidate": "Antonio C. “Tony” Amador", "demVotes": 174252, "repVotes": 128358, "totalVotes": 302610, "margin": -15.16, "demIncumbent": true },
+      { "year": 2020, "demPct": 57.58, "repPct": 42.42, "demCandidate": "Jerry McNerney", "repCandidate": "Tony Amador", "demVotes": 174252, "repVotes": 128358, "totalVotes": 302610, "margin": -15.16, "demIncumbent": true },
       { "year": 2018, "demPct": 56.49, "repPct": 43.51, "demCandidate": "Jerry McNerney", "repCandidate": "Marla Livengood", "demVotes": 113414, "repVotes": 87349, "totalVotes": 200763, "margin": -12.98, "demIncumbent": true },
-      { "year": 2016, "demPct": 57.36, "repPct": 42.64, "demCandidate": "Jerry McNerney", "repCandidate": "Antonio C. “Tony” Amador", "demVotes": 133163, "repVotes": 98992, "totalVotes": 232155, "margin": -14.72, "demIncumbent": true }
+      { "year": 2016, "demPct": 57.36, "repPct": 42.64, "demCandidate": "Jerry McNerney", "repCandidate": "Tony Amador", "demVotes": 133163, "repVotes": 98992, "totalVotes": 232155, "margin": -14.72, "demIncumbent": true }
     ]
   },
   {
@@ -4557,7 +4557,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 67.7, "repPct": 32.3, "demCandidate": "Eric Swalwell", "repCandidate": "Vin Kruttiventi", "demVotes": 187263, "repVotes": 89125, "totalVotes": 276388, "margin": -35.4, "demIncumbent": true },
       { "year": 2022, "demPct": 69.34, "repPct": 30.66, "demCandidate": "Eric Swalwell", "repCandidate": "Alison Hayden", "demVotes": 137612, "repVotes": 60852, "totalVotes": 198464, "margin": -38.68 },
-      { "year": 2020, "demPct": 79.29, "repPct": 20.71, "demCandidate": "Jackie Speier", "repCandidate": "Ran S. Petel", "demVotes": 278300, "repVotes": 72705, "totalVotes": 351005, "margin": -58.58, "demIncumbent": true },
+      { "year": 2020, "demPct": 79.29, "repPct": 20.71, "demCandidate": "Jackie Speier", "repCandidate": "Ran Petel", "demVotes": 278300, "repVotes": 72705, "totalVotes": 351005, "margin": -58.58, "demIncumbent": true },
       { "year": 2018, "demPct": 79.22, "repPct": 20.78, "demCandidate": "Jackie Speier", "repCandidate": "Cristina Osmeña", "demVotes": 211384, "repVotes": 55439, "totalVotes": 266823, "margin": -58.44, "demIncumbent": true },
       { "year": 2016, "demPct": 80.86, "repPct": 19.14, "demCandidate": "Jackie Speier", "repCandidate": "Angel Cardenas", "demVotes": 231630, "repVotes": 54817, "totalVotes": 286447, "margin": -61.72, "demIncumbent": true }
     ]
@@ -4591,8 +4591,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 73.1, "repPct": 26.9, "demCandidate": "Kevin Mullin", "repCandidate": "Anna Cheng Kramer", "demVotes": 211648, "repVotes": 77896, "totalVotes": 289544, "margin": -46.2, "demIncumbent": true },
       { "year": 2022, "demPct": 55.46, "repPct": 0, "demCandidate": "Kevin Mullin", "demVotes": 108077, "totalVotes": 194874, "margin": -55.46 },
       { "year": 2020, "demPct": 70.9, "repPct": 29.1, "demCandidate": "Eric Swalwell", "repCandidate": "Alison Hayden", "demVotes": 242991, "repVotes": 99710, "totalVotes": 342701, "margin": -41.8, "demIncumbent": true },
-      { "year": 2018, "demPct": 72.97, "repPct": 27.03, "demCandidate": "Eric Swalwell", "repCandidate": "Rudy L. Peters, Jr.", "demVotes": 177989, "repVotes": 65940, "totalVotes": 243929, "margin": -45.94, "demIncumbent": true },
-      { "year": 2016, "demPct": 73.77, "repPct": 26.23, "demCandidate": "Eric Swalwell", "repCandidate": "Danny R. Turner", "demVotes": 198578, "repVotes": 70619, "totalVotes": 269197, "margin": -47.54, "demIncumbent": true }
+      { "year": 2018, "demPct": 72.97, "repPct": 27.03, "demCandidate": "Eric Swalwell", "repCandidate": "Rudy Peters", "demVotes": 177989, "repVotes": 65940, "totalVotes": 243929, "margin": -45.94, "demIncumbent": true },
+      { "year": 2016, "demPct": 73.77, "repPct": 26.23, "demCandidate": "Eric Swalwell", "repCandidate": "Danny Turner", "demVotes": 198578, "repVotes": 70619, "totalVotes": 269197, "margin": -47.54, "demIncumbent": true }
     ]
   },
   {
@@ -4622,10 +4622,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 58.2, "repPct": 41.8, "demCandidate": "Sam Liccardo", "repCandidate": "Evan Low", "demVotes": 179583, "repVotes": 128893, "totalVotes": 308476, "margin": -16.4 },
-      { "year": 2022, "demPct": 57.77, "repPct": 0, "demCandidate": "Anna G. Eshoo", "demVotes": 139235, "totalVotes": 241007, "margin": -57.77 },
+      { "year": 2022, "demPct": 57.77, "repPct": 0, "demCandidate": "Anna Eshoo", "demVotes": 139235, "totalVotes": 241007, "margin": -57.77 },
       { "year": 2020, "demPct": 59.38, "repPct": 40.62, "demCandidate": "Jim Costa", "repCandidate": "Kevin Cookingham", "demVotes": 128690, "repVotes": 88039, "totalVotes": 216729, "margin": -18.76, "demIncumbent": true },
       { "year": 2018, "demPct": 57.55, "repPct": 42.45, "demCandidate": "Jim Costa", "repCandidate": "Elizabeth Heng", "demVotes": 82266, "repVotes": 60693, "totalVotes": 142959, "margin": -15.1, "demIncumbent": true },
-      { "year": 2016, "demPct": 58.03, "repPct": 41.97, "demCandidate": "Jim Costa", "repCandidate": "Johnny M. Tacherra", "demVotes": 97473, "repVotes": 70483, "totalVotes": 167956, "margin": -16.06, "demIncumbent": true }
+      { "year": 2016, "demPct": 58.03, "repPct": 41.97, "demCandidate": "Jim Costa", "repCandidate": "Johnny Tacherra", "demVotes": 97473, "repVotes": 70483, "totalVotes": 167956, "margin": -16.06, "demIncumbent": true }
     ]
   },
   {
@@ -4687,11 +4687,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Zoe Lofgren",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 64.63, "repPct": 35.37, "demCandidate": "Zoe Lofgren", "repCandidate": "Peter D. Hernandez", "demVotes": 147674, "repVotes": 80832, "totalVotes": 228506, "margin": -29.26, "demIncumbent": true },
+      { "year": 2024, "demPct": 64.63, "repPct": 35.37, "demCandidate": "Zoe Lofgren", "repCandidate": "Peter Hernandez", "demVotes": 147674, "repVotes": 80832, "totalVotes": 228506, "margin": -29.26, "demIncumbent": true },
       { "year": 2022, "demPct": 65.85, "repPct": 34.15, "demCandidate": "Zoe Lofgren", "repCandidate": "Peter Hernandez", "demVotes": 99776, "repVotes": 51737, "totalVotes": 151513, "margin": -31.7 },
-      { "year": 2020, "demPct": 63.17, "repPct": 0, "demCandidate": "Anna G. Eshoo", "demVotes": 217388, "totalVotes": 344139, "margin": -63.17, "demIncumbent": true },
-      { "year": 2018, "demPct": 74.49, "repPct": 25.51, "demCandidate": "Anna G. Eshoo", "repCandidate": "Christine Russell", "demVotes": 225142, "repVotes": 77096, "totalVotes": 302238, "margin": -48.98, "demIncumbent": true },
-      { "year": 2016, "demPct": 71.15, "repPct": 28.85, "demCandidate": "Anna G. Eshoo", "repCandidate": "Richard B. Fox", "demVotes": 230460, "repVotes": 93470, "totalVotes": 323930, "margin": -42.3, "demIncumbent": true }
+      { "year": 2020, "demPct": 63.17, "repPct": 0, "demCandidate": "Anna Eshoo", "demVotes": 217388, "totalVotes": 344139, "margin": -63.17, "demIncumbent": true },
+      { "year": 2018, "demPct": 74.49, "repPct": 25.51, "demCandidate": "Anna Eshoo", "repCandidate": "Christine Russell", "demVotes": 225142, "repVotes": 77096, "totalVotes": 302238, "margin": -48.98, "demIncumbent": true },
+      { "year": 2016, "demPct": 71.15, "repPct": 28.85, "demCandidate": "Anna Eshoo", "repCandidate": "Richard Fox", "demVotes": 230460, "repVotes": 93470, "totalVotes": 323930, "margin": -42.3, "demIncumbent": true }
     ]
   },
   {
@@ -4724,7 +4724,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 68.65, "repPct": 31.35, "demCandidate": "Jimmy Panetta", "repCandidate": "Jeff Gorman", "demVotes": 194494, "repVotes": 88816, "totalVotes": 283310, "margin": -37.3 },
       { "year": 2020, "demPct": 71.68, "repPct": 28.32, "demCandidate": "Zoe Lofgren", "repCandidate": "Justin James Aguilera", "demVotes": 224385, "repVotes": 88642, "totalVotes": 313027, "margin": -43.36, "demIncumbent": true },
       { "year": 2018, "demPct": 73.75, "repPct": 26.25, "demCandidate": "Zoe Lofgren", "repCandidate": "Justin James Aguilera", "demVotes": 162496, "repVotes": 57823, "totalVotes": 220319, "margin": -47.5, "demIncumbent": true },
-      { "year": 2016, "demPct": 73.94, "repPct": 26.06, "demCandidate": "Zoe Lofgren", "repCandidate": "G. Burt Lancaster", "demVotes": 181802, "repVotes": 64061, "totalVotes": 245863, "margin": -47.88, "demIncumbent": true }
+      { "year": 2016, "demPct": 73.94, "repPct": 26.06, "demCandidate": "Zoe Lofgren", "repCandidate": "Burt Lancaster", "demVotes": 181802, "repVotes": 64061, "totalVotes": 245863, "margin": -47.88, "demIncumbent": true }
     ]
   },
   {
@@ -4786,9 +4786,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 52.57, "repPct": 47.43, "demCandidate": "Jim Costa", "repCandidate": "Michael Maher", "demVotes": 102798, "repVotes": 92733, "totalVotes": 195531, "margin": -5.14, "demIncumbent": true },
       { "year": 2022, "demPct": 54.18, "repPct": 45.82, "demCandidate": "Jim Costa", "repCandidate": "Michael Maher", "demVotes": 68074, "repVotes": 57573, "totalVotes": 125647, "margin": -8.36 },
-      { "year": 2020, "demPct": 49.55, "repPct": 50.45, "demCandidate": "TJ Cox", "repCandidate": "David G. Valadao", "demVotes": 84406, "repVotes": 85928, "totalVotes": 170334, "margin": 0.9, "demIncumbent": true },
-      { "year": 2018, "demPct": 50.38, "repPct": 49.62, "demCandidate": "TJ Cox", "repCandidate": "David G. Valadao", "demVotes": 57239, "repVotes": 56377, "totalVotes": 113616, "margin": -0.76, "repIncumbent": true },
-      { "year": 2016, "demPct": 43.26, "repPct": 56.74, "demCandidate": "Emilio Huerta", "repCandidate": "David G. Valadao", "demVotes": 57282, "repVotes": 75126, "totalVotes": 132408, "margin": 13.48, "repIncumbent": true }
+      { "year": 2020, "demPct": 49.55, "repPct": 50.45, "demCandidate": "TJ Cox", "repCandidate": "David Valadao", "demVotes": 84406, "repVotes": 85928, "totalVotes": 170334, "margin": 0.9, "demIncumbent": true },
+      { "year": 2018, "demPct": 50.38, "repPct": 49.62, "demCandidate": "TJ Cox", "repCandidate": "David Valadao", "demVotes": 57239, "repVotes": 56377, "totalVotes": 113616, "margin": -0.76, "repIncumbent": true },
+      { "year": 2016, "demPct": 43.26, "repPct": 56.74, "demCandidate": "Emilio Huerta", "repCandidate": "David Valadao", "demVotes": 57282, "repVotes": 75126, "totalVotes": 132408, "margin": 13.48, "repIncumbent": true }
     ]
   },
   {
@@ -4815,11 +4815,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "David Valadao",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 46.58, "repPct": 53.42, "demCandidate": "Rudy Salas", "repCandidate": "David G. Valadao", "demVotes": 78023, "repVotes": 89484, "totalVotes": 167507, "margin": 6.84, "repIncumbent": true },
-      { "year": 2022, "demPct": 48.48, "repPct": 51.52, "demCandidate": "Rudy Salas", "repCandidate": "David G. Valadao", "demVotes": 49862, "repVotes": 52994, "totalVotes": 102856, "margin": 3.04 },
+      { "year": 2024, "demPct": 46.58, "repPct": 53.42, "demCandidate": "Rudy Salas", "repCandidate": "David Valadao", "demVotes": 78023, "repVotes": 89484, "totalVotes": 167507, "margin": 6.84, "repIncumbent": true },
+      { "year": 2022, "demPct": 48.48, "repPct": 51.52, "demCandidate": "Rudy Salas", "repCandidate": "David Valadao", "demVotes": 49862, "repVotes": 52994, "totalVotes": 102856, "margin": 3.04 },
       { "year": 2020, "demPct": 45.77, "repPct": 54.23, "demCandidate": "Phil Arballo", "repCandidate": "Devin Nunes", "demVotes": 144251, "repVotes": 170888, "totalVotes": 315139, "margin": 8.46, "repIncumbent": true },
-      { "year": 2018, "demPct": 47.28, "repPct": 52.72, "demCandidate": "Andrew Janz", "repCandidate": "Devin G. Nunes", "demVotes": 105136, "repVotes": 117243, "totalVotes": 222379, "margin": 5.44, "repIncumbent": true },
-      { "year": 2016, "demPct": 32.43, "repPct": 67.57, "demCandidate": "Louie J. Campos", "repCandidate": "Devin Nunes", "demVotes": 76211, "repVotes": 158755, "totalVotes": 234966, "margin": 35.14, "repIncumbent": true }
+      { "year": 2018, "demPct": 47.28, "repPct": 52.72, "demCandidate": "Andrew Janz", "repCandidate": "Devin Nunes", "demVotes": 105136, "repVotes": 117243, "totalVotes": 222379, "margin": 5.44, "repIncumbent": true },
+      { "year": 2016, "demPct": 32.43, "repPct": 67.57, "demCandidate": "Louie Campos", "repCandidate": "Devin Nunes", "demVotes": 76211, "repVotes": 158755, "totalVotes": 234966, "margin": 35.14, "repIncumbent": true }
     ]
   },
   {
@@ -4881,10 +4881,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Salud Carbajal",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 62.7, "repPct": 37.3, "demCandidate": "Salud O. Carbajal", "repCandidate": "Thomas Cole", "demVotes": 214724, "repVotes": 127755, "totalVotes": 342479, "margin": -25.4, "demIncumbent": true },
-      { "year": 2022, "demPct": 60.57, "repPct": 39.43, "demCandidate": "Salud O. Carbajal", "repCandidate": "Brad Allen", "demVotes": 159019, "repVotes": 103533, "totalVotes": 262552, "margin": -21.14, "demIncumbent": true },
-      { "year": 2020, "demPct": 58.66, "repPct": 41.34, "demCandidate": "Salud O. Carbajal", "repCandidate": "Andy Caldwell", "demVotes": 212564, "repVotes": 149781, "totalVotes": 362345, "margin": -17.32, "demIncumbent": true },
-      { "year": 2018, "demPct": 58.56, "repPct": 41.44, "demCandidate": "Salud O. Carbajal", "repCandidate": "Justin Fareed", "demVotes": 166550, "repVotes": 117881, "totalVotes": 284431, "margin": -17.12, "demIncumbent": true },
+      { "year": 2024, "demPct": 62.7, "repPct": 37.3, "demCandidate": "Salud Carbajal", "repCandidate": "Thomas Cole", "demVotes": 214724, "repVotes": 127755, "totalVotes": 342479, "margin": -25.4, "demIncumbent": true },
+      { "year": 2022, "demPct": 60.57, "repPct": 39.43, "demCandidate": "Salud Carbajal", "repCandidate": "Brad Allen", "demVotes": 159019, "repVotes": 103533, "totalVotes": 262552, "margin": -21.14, "demIncumbent": true },
+      { "year": 2020, "demPct": 58.66, "repPct": 41.34, "demCandidate": "Salud Carbajal", "repCandidate": "Andy Caldwell", "demVotes": 212564, "repVotes": 149781, "totalVotes": 362345, "margin": -17.32, "demIncumbent": true },
+      { "year": 2018, "demPct": 58.56, "repPct": 41.44, "demCandidate": "Salud Carbajal", "repCandidate": "Justin Fareed", "demVotes": 166550, "repVotes": 117881, "totalVotes": 284431, "margin": -17.12, "demIncumbent": true },
       { "year": 2016, "demPct": 53.42, "repPct": 46.58, "demCandidate": "Salud Carbajal", "repCandidate": "Justin Donald Fareed", "demVotes": 166034, "repVotes": 144780, "totalVotes": 310814, "margin": -6.84 }
     ]
   },
@@ -4914,8 +4914,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Raul Ruiz",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 56.25, "repPct": 43.75, "demCandidate": "Raul Ruiz", "repCandidate": "Ian M. Weeks", "demVotes": 137837, "repVotes": 107194, "totalVotes": 245031, "margin": -12.5, "demIncumbent": true },
-      { "year": 2022, "demPct": 57.38, "repPct": 42.62, "demCandidate": "Raul Ruiz", "repCandidate": "Brian E. Hawkins", "demVotes": 87641, "repVotes": 65101, "totalVotes": 152742, "margin": -14.76 },
+      { "year": 2024, "demPct": 56.25, "repPct": 43.75, "demCandidate": "Raul Ruiz", "repCandidate": "Ian Weeks", "demVotes": 137837, "repVotes": 107194, "totalVotes": 245031, "margin": -12.5, "demIncumbent": true },
+      { "year": 2022, "demPct": 57.38, "repPct": 42.62, "demCandidate": "Raul Ruiz", "repCandidate": "Brian Hawkins", "demVotes": 87641, "repVotes": 65101, "totalVotes": 152742, "margin": -14.76 },
       { "year": 2020, "demPct": 49.95, "repPct": 50.05, "demCandidate": "Christy Smith", "repCandidate": "Mike Garcia", "demVotes": 169305, "repVotes": 169638, "totalVotes": 338943, "margin": 0.1, "repIncumbent": true },
       { "year": 2018, "demPct": 54.37, "repPct": 45.63, "demCandidate": "Katie Hill", "repCandidate": "Stephen Knight", "demVotes": 133209, "repVotes": 111813, "totalVotes": 245022, "margin": -8.74, "repIncumbent": true },
       { "year": 2016, "demPct": 46.87, "repPct": 53.13, "demCandidate": "Bryan Caforio", "repCandidate": "Stephen Knight", "demVotes": 122406, "repVotes": 138755, "totalVotes": 261161, "margin": 6.26, "repIncumbent": true }
@@ -4950,8 +4950,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 56.05, "repPct": 43.95, "demCandidate": "Julia Brownley", "repCandidate": "Michael Koslow", "demVotes": 187393, "repVotes": 146913, "totalVotes": 334306, "margin": -12.1, "demIncumbent": true },
       { "year": 2022, "demPct": 54.53, "repPct": 45.47, "demCandidate": "Julia Brownley", "repCandidate": "Matt Jacobs", "demVotes": 134575, "repVotes": 112214, "totalVotes": 246789, "margin": -9.06, "demIncumbent": true },
       { "year": 2020, "demPct": 60.58, "repPct": 39.42, "demCandidate": "Julia Brownley", "repCandidate": "Ronda Baldwin-Kennedy", "demVotes": 208856, "repVotes": 135877, "totalVotes": 344733, "margin": -21.16, "demIncumbent": true },
-      { "year": 2018, "demPct": 61.94, "repPct": 38.06, "demCandidate": "Julia Brownley", "repCandidate": "Antonio Sabato, Jr.", "demVotes": 158216, "repVotes": 97210, "totalVotes": 255426, "margin": -23.88, "demIncumbent": true },
-      { "year": 2016, "demPct": 60.38, "repPct": 39.62, "demCandidate": "Julia Brownley", "repCandidate": "Rafael A. Dagnesses", "demVotes": 169248, "repVotes": 111059, "totalVotes": 280307, "margin": -20.76, "demIncumbent": true }
+      { "year": 2018, "demPct": 61.94, "repPct": 38.06, "demCandidate": "Julia Brownley", "repCandidate": "Antonio Sabato", "demVotes": 158216, "repVotes": 97210, "totalVotes": 255426, "margin": -23.88, "demIncumbent": true },
+      { "year": 2016, "demPct": 60.38, "repPct": 39.62, "demCandidate": "Julia Brownley", "repCandidate": "Rafael Dagnesses", "demVotes": 169248, "repVotes": 111059, "totalVotes": 280307, "margin": -20.76, "demIncumbent": true }
     ]
   },
   {
@@ -4980,7 +4980,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 51.33, "repPct": 48.67, "demCandidate": "George Whitesides", "repCandidate": "Mike Garcia", "demVotes": 154040, "repVotes": 146050, "totalVotes": 300090, "margin": -2.66, "repIncumbent": true },
       { "year": 2022, "demPct": 46.76, "repPct": 53.24, "demCandidate": "Christy Smith", "repCandidate": "Mike Garcia", "demVotes": 91892, "repVotes": 104624, "totalVotes": 196516, "margin": 6.48 },
-      { "year": 2020, "demPct": 69.78, "repPct": 30.22, "demCandidate": "Judy Chu", "repCandidate": "Johnny J. Nalbandian", "demVotes": 221411, "repVotes": 95907, "totalVotes": 317318, "margin": -39.56, "demIncumbent": true },
+      { "year": 2020, "demPct": 69.78, "repPct": 30.22, "demCandidate": "Judy Chu", "repCandidate": "Johnny Nalbandian", "demVotes": 221411, "repVotes": 95907, "totalVotes": 317318, "margin": -39.56, "demIncumbent": true },
       { "year": 2018, "demPct": 79.21, "repPct": 0, "demCandidate": "Judy Chu", "demVotes": 160504, "totalVotes": 202636, "margin": -79.21, "demIncumbent": true },
       { "year": 2016, "demPct": 67.42, "repPct": 32.58, "demCandidate": "Judy Chu", "repCandidate": "Jack Orswell", "demVotes": 168977, "repVotes": 81655, "totalVotes": 250632, "margin": -34.84, "demIncumbent": true }
     ]
@@ -5011,11 +5011,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Judy Chu",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 64.93, "repPct": 35.07, "demCandidate": "Judy Chu", "repCandidate": "April A. Verlato", "demVotes": 204489, "repVotes": 110455, "totalVotes": 314944, "margin": -29.86, "demIncumbent": true },
+      { "year": 2024, "demPct": 64.93, "repPct": 35.07, "demCandidate": "Judy Chu", "repCandidate": "April Verlato", "demVotes": 204489, "repVotes": 110455, "totalVotes": 314944, "margin": -29.86, "demIncumbent": true },
       { "year": 2022, "demPct": 66.24, "repPct": 33.76, "demCandidate": "Judy Chu", "repCandidate": "Wes Hallman", "demVotes": 150062, "repVotes": 76495, "totalVotes": 226557, "margin": -32.48 },
-      { "year": 2020, "demPct": 72.66, "repPct": 27.34, "demCandidate": "Adam B. Schiff", "repCandidate": "Eric Early", "demVotes": 244271, "repVotes": 91928, "totalVotes": 336199, "margin": -45.32, "demIncumbent": true },
-      { "year": 2018, "demPct": 78.37, "repPct": 21.63, "demCandidate": "Adam B. Schiff", "repCandidate": "Johnny J. Nalbandian", "demVotes": 196662, "repVotes": 54272, "totalVotes": 250934, "margin": -56.74, "demIncumbent": true },
-      { "year": 2016, "demPct": 77.99, "repPct": 22.01, "demCandidate": "Adam B. Schiff", "repCandidate": "Lenore Solis", "demVotes": 210883, "repVotes": 59526, "totalVotes": 270409, "margin": -55.98, "demIncumbent": true }
+      { "year": 2020, "demPct": 72.66, "repPct": 27.34, "demCandidate": "Adam Schiff", "repCandidate": "Eric Early", "demVotes": 244271, "repVotes": 91928, "totalVotes": 336199, "margin": -45.32, "demIncumbent": true },
+      { "year": 2018, "demPct": 78.37, "repPct": 21.63, "demCandidate": "Adam Schiff", "repCandidate": "Johnny Nalbandian", "demVotes": 196662, "repVotes": 54272, "totalVotes": 250934, "margin": -56.74, "demIncumbent": true },
+      { "year": 2016, "demPct": 77.99, "repPct": 22.01, "demCandidate": "Adam Schiff", "repCandidate": "Lenore Solis", "demVotes": 210883, "repVotes": 59526, "totalVotes": 270409, "margin": -55.98, "demIncumbent": true }
     ]
   },
   {
@@ -5078,9 +5078,9 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 68.38, "repPct": 31.62, "demCandidate": "Laura Friedman", "repCandidate": "Alex Balekian", "demVotes": 213100, "repVotes": 98559, "totalVotes": 311659, "margin": -36.76 },
-      { "year": 2022, "demPct": 71.11, "repPct": 0, "demCandidate": "Adam B. Schiff", "demVotes": 150100, "totalVotes": 211068, "margin": -71.11 },
-      { "year": 2020, "demPct": 69.48, "repPct": 30.52, "demCandidate": "Brad Sherman", "repCandidate": "Mark S. Reed", "demVotes": 240038, "repVotes": 105426, "totalVotes": 345464, "margin": -38.96, "demIncumbent": true },
-      { "year": 2018, "demPct": 73.4, "repPct": 26.6, "demCandidate": "Brad Sherman", "repCandidate": "Mark S. Reed", "demVotes": 191573, "repVotes": 69420, "totalVotes": 260993, "margin": -46.8, "demIncumbent": true },
+      { "year": 2022, "demPct": 71.11, "repPct": 0, "demCandidate": "Adam Schiff", "demVotes": 150100, "totalVotes": 211068, "margin": -71.11 },
+      { "year": 2020, "demPct": 69.48, "repPct": 30.52, "demCandidate": "Brad Sherman", "repCandidate": "Mark Reed", "demVotes": 240038, "repVotes": 105426, "totalVotes": 345464, "margin": -38.96, "demIncumbent": true },
+      { "year": 2018, "demPct": 73.4, "repPct": 26.6, "demCandidate": "Brad Sherman", "repCandidate": "Mark Reed", "demVotes": 191573, "repVotes": 69420, "totalVotes": 260993, "margin": -46.8, "demIncumbent": true },
       { "year": 2016, "demPct": 72.64, "repPct": 27.36, "demCandidate": "Brad Sherman", "repCandidate": "Mark Reed", "demVotes": 205279, "repVotes": 77325, "totalVotes": 282604, "margin": -45.28, "demIncumbent": true }
     ]
   },
@@ -5111,7 +5111,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 59.73, "repPct": 40.27, "demCandidate": "Gil Cisneros", "repCandidate": "Daniel Jose Bocic Martinez", "demVotes": 148095, "repVotes": 99856, "totalVotes": 247951, "margin": -19.46 },
-      { "year": 2022, "demPct": 59.54, "repPct": 40.46, "demCandidate": "Grace F. Napolitano", "repCandidate": "Daniel Bocic Martinez", "demVotes": 91472, "repVotes": 62153, "totalVotes": 153625, "margin": -19.08 },
+      { "year": 2022, "demPct": 59.54, "repPct": 40.46, "demCandidate": "Grace Napolitano", "repCandidate": "Daniel Bocic Martinez", "demVotes": 91472, "repVotes": 62153, "totalVotes": 153625, "margin": -19.08 },
       { "year": 2020, "demPct": 61.29, "repPct": 38.71, "demCandidate": "Pete Aguilar", "repCandidate": "Agnes Gibboney", "demVotes": 175315, "repVotes": 110735, "totalVotes": 286050, "margin": -22.58, "demIncumbent": true },
       { "year": 2018, "demPct": 58.74, "repPct": 41.26, "demCandidate": "Pete Aguilar", "repCandidate": "Sean Flynn", "demVotes": 110143, "repVotes": 77352, "totalVotes": 187495, "margin": -17.48, "demIncumbent": true },
       { "year": 2016, "demPct": 56.07, "repPct": 43.93, "demCandidate": "Pete Aguilar", "repCandidate": "Paul Chabot", "demVotes": 121070, "repVotes": 94866, "totalVotes": 215936, "margin": -12.14, "demIncumbent": true }
@@ -5145,9 +5145,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 66.2, "repPct": 33.8, "demCandidate": "Brad Sherman", "repCandidate": "Larry Thompson", "demVotes": 212934, "repVotes": 108711, "totalVotes": 321645, "margin": -32.4, "demIncumbent": true },
       { "year": 2022, "demPct": 69.17, "repPct": 30.83, "demCandidate": "Brad Sherman", "repCandidate": "Lucie Lapointe Volotzky", "demVotes": 167411, "repVotes": 74618, "totalVotes": 242029, "margin": -38.34 },
-      { "year": 2020, "demPct": 66.58, "repPct": 33.42, "demCandidate": "Grace F. Napolitano", "repCandidate": "Joshua M. Scott", "demVotes": 172942, "repVotes": 86818, "totalVotes": 259760, "margin": -33.16, "demIncumbent": true },
-      { "year": 2018, "demPct": 68.78, "repPct": 31.22, "demCandidate": "Grace F. Napolitano", "repCandidate": "Joshua M. Scott", "demVotes": 121759, "repVotes": 55272, "totalVotes": 177031, "margin": -37.56, "demIncumbent": true },
-      { "year": 2016, "demPct": 61.57, "repPct": 0, "demCandidate": "Grace F. Napolitano", "demVotes": 114926, "totalVotes": 186646, "margin": -61.57, "demIncumbent": true }
+      { "year": 2020, "demPct": 66.58, "repPct": 33.42, "demCandidate": "Grace Napolitano", "repCandidate": "Joshua Scott", "demVotes": 172942, "repVotes": 86818, "totalVotes": 259760, "margin": -33.16, "demIncumbent": true },
+      { "year": 2018, "demPct": 68.78, "repPct": 31.22, "demCandidate": "Grace Napolitano", "repCandidate": "Joshua Scott", "demVotes": 121759, "repVotes": 55272, "totalVotes": 177031, "margin": -37.56, "demIncumbent": true },
+      { "year": 2016, "demPct": 61.57, "repPct": 0, "demCandidate": "Grace Napolitano", "demVotes": 114926, "totalVotes": 186646, "margin": -61.57, "demIncumbent": true }
     ]
   },
   {
@@ -5178,9 +5178,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 58.81, "repPct": 41.19, "demCandidate": "Pete Aguilar", "repCandidate": "Tom Herman", "demVotes": 137197, "repVotes": 96078, "totalVotes": 233275, "margin": -17.62, "demIncumbent": true },
       { "year": 2022, "demPct": 57.71, "repPct": 42.29, "demCandidate": "Pete Aguilar", "repCandidate": "John Mark Porter", "demVotes": 76588, "repVotes": 56119, "totalVotes": 132707, "margin": -15.42 },
-      { "year": 2020, "demPct": 67.58, "repPct": 32.42, "demCandidate": "Ted Lieu", "repCandidate": "James P. Bradley", "demVotes": 257094, "repVotes": 123334, "totalVotes": 380428, "margin": -35.16, "demIncumbent": true },
+      { "year": 2020, "demPct": 67.58, "repPct": 32.42, "demCandidate": "Ted Lieu", "repCandidate": "James Bradley", "demVotes": 257094, "repVotes": 123334, "totalVotes": 380428, "margin": -35.16, "demIncumbent": true },
       { "year": 2018, "demPct": 70.03, "repPct": 29.97, "demCandidate": "Ted Lieu", "repCandidate": "Kenneth Weston Wright", "demVotes": 219091, "repVotes": 93769, "totalVotes": 312860, "margin": -40.06, "demIncumbent": true },
-      { "year": 2016, "demPct": 66.44, "repPct": 33.56, "demCandidate": "Ted Lieu", "repCandidate": "Kenneth W. Wright", "demVotes": 219397, "repVotes": 110822, "totalVotes": 330219, "margin": -32.88, "demIncumbent": true }
+      { "year": 2016, "demPct": 66.44, "repPct": 33.56, "demCandidate": "Ted Lieu", "repCandidate": "Kenneth Wright", "demVotes": 219397, "repVotes": 110822, "totalVotes": 330219, "margin": -32.88, "demIncumbent": true }
     ]
   },
   {
@@ -5242,11 +5242,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Norma Torres",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 58.41, "repPct": 41.59, "demCandidate": "Norma J. Torres", "repCandidate": "Mike Cargile", "demVotes": 136413, "repVotes": 97142, "totalVotes": 233555, "margin": -16.82, "demIncumbent": true },
-      { "year": 2022, "demPct": 57.36, "repPct": 42.64, "demCandidate": "Norma J. Torres", "repCandidate": "Mike Cargile", "demVotes": 75121, "repVotes": 55832, "totalVotes": 130953, "margin": -14.72, "demIncumbent": true },
-      { "year": 2020, "demPct": 69.33, "repPct": 30.67, "demCandidate": "Norma J. Torres", "repCandidate": "Mike Cargile", "demVotes": 169405, "repVotes": 74941, "totalVotes": 244346, "margin": -38.66, "demIncumbent": true },
-      { "year": 2018, "demPct": 69.4, "repPct": 30.6, "demCandidate": "Norma J. Torres", "repCandidate": "Christian Leonel Valiente", "demVotes": 103420, "repVotes": 45604, "totalVotes": 149024, "margin": -38.8, "demIncumbent": true },
-      { "year": 2016, "demPct": 72.39, "repPct": 27.61, "demCandidate": "Norma J. Torres", "repCandidate": "Tyler Fischella", "demVotes": 124044, "repVotes": 47309, "totalVotes": 171353, "margin": -44.78, "demIncumbent": true }
+      { "year": 2024, "demPct": 58.41, "repPct": 41.59, "demCandidate": "Norma Torres", "repCandidate": "Mike Cargile", "demVotes": 136413, "repVotes": 97142, "totalVotes": 233555, "margin": -16.82, "demIncumbent": true },
+      { "year": 2022, "demPct": 57.36, "repPct": 42.64, "demCandidate": "Norma Torres", "repCandidate": "Mike Cargile", "demVotes": 75121, "repVotes": 55832, "totalVotes": 130953, "margin": -14.72, "demIncumbent": true },
+      { "year": 2020, "demPct": 69.33, "repPct": 30.67, "demCandidate": "Norma Torres", "repCandidate": "Mike Cargile", "demVotes": 169405, "repVotes": 74941, "totalVotes": 244346, "margin": -38.66, "demIncumbent": true },
+      { "year": 2018, "demPct": 69.4, "repPct": 30.6, "demCandidate": "Norma Torres", "repCandidate": "Christian Leonel Valiente", "demVotes": 103420, "repVotes": 45604, "totalVotes": 149024, "margin": -38.8, "demIncumbent": true },
+      { "year": 2016, "demPct": 72.39, "repPct": 27.61, "demCandidate": "Norma Torres", "repCandidate": "Tyler Fischella", "demVotes": 124044, "repVotes": 47309, "totalVotes": 171353, "margin": -44.78, "demIncumbent": true }
     ]
   },
   {
@@ -5276,7 +5276,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 68.72, "repPct": 31.28, "demCandidate": "Ted Lieu", "repCandidate": "Melissa Toomim", "demVotes": 246002, "repVotes": 111985, "totalVotes": 357987, "margin": -37.44, "demIncumbent": true },
-      { "year": 2022, "demPct": 69.75, "repPct": 30.25, "demCandidate": "Ted Lieu", "repCandidate": "Joe E. Collins III", "demVotes": 194299, "repVotes": 84264, "totalVotes": 278563, "margin": -39.5 },
+      { "year": 2022, "demPct": 69.75, "repPct": 30.25, "demCandidate": "Ted Lieu", "repCandidate": "Joe Collins", "demVotes": 194299, "repVotes": 84264, "totalVotes": 278563, "margin": -39.5 },
       { "year": 2020, "demPct": 60.34, "repPct": 39.66, "demCandidate": "Raul Ruiz", "repCandidate": "Erin Cruz", "demVotes": 185151, "repVotes": 121698, "totalVotes": 306849, "margin": -20.68, "demIncumbent": true },
       { "year": 2018, "demPct": 59.02, "repPct": 40.98, "demCandidate": "Raul Ruiz", "repCandidate": "Kimberlin Brown Pelzer", "demVotes": 122169, "repVotes": 84839, "totalVotes": 207008, "margin": -18.04, "demIncumbent": true },
       { "year": 2016, "demPct": 62.05, "repPct": 37.95, "demCandidate": "Raul Ruiz", "repCandidate": "Jeff Stone", "demVotes": 144348, "repVotes": 88269, "totalVotes": 232617, "margin": -24.1, "demIncumbent": true }
@@ -5311,7 +5311,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 78.3, "repPct": 21.7, "demCandidate": "Sydney Kamlager-Dove", "repCandidate": "Juan Rey (NPP)", "demVotes": 160364, "repVotes": 44450, "totalVotes": 204814, "margin": -56.6, "demIncumbent": true },
       { "year": 2022, "demPct": 63.95, "repPct": 0, "demCandidate": "Sydney Kamlager", "demVotes": 84338, "totalVotes": 131880, "margin": -63.95 },
       { "year": 2020, "demPct": 85.94, "repPct": 14.06, "demCandidate": "Karen Bass", "repCandidate": "Errol Webber", "demVotes": 254916, "repVotes": 41705, "totalVotes": 296621, "margin": -71.88, "demIncumbent": true },
-      { "year": 2018, "demPct": 89.08, "repPct": 10.92, "demCandidate": "Karen Bass", "repCandidate": "Ron J. Bassilian", "demVotes": 210555, "repVotes": 25823, "totalVotes": 236378, "margin": -78.16, "demIncumbent": true },
+      { "year": 2018, "demPct": 89.08, "repPct": 10.92, "demCandidate": "Karen Bass", "repCandidate": "Ron Bassilian", "demVotes": 210555, "repVotes": 25823, "totalVotes": 236378, "margin": -78.16, "demIncumbent": true },
       { "year": 2016, "demPct": 81.13, "repPct": 0, "demCandidate": "Karen Bass", "demVotes": 192490, "totalVotes": 237272, "margin": -81.13, "demIncumbent": true }
     ]
   },
@@ -5341,11 +5341,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Linda Sánchez",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 59.84, "repPct": 40.16, "demCandidate": "Linda T. Sánchez", "repCandidate": "Eric J. Ching", "demVotes": 165110, "repVotes": 110818, "totalVotes": 275928, "margin": -19.68, "demIncumbent": true },
-      { "year": 2022, "demPct": 58.09, "repPct": 41.91, "demCandidate": "Linda T. Sánchez", "repCandidate": "Eric J. Ching", "demVotes": 101260, "repVotes": 73051, "totalVotes": 174311, "margin": -16.18, "demIncumbent": true },
-      { "year": 2020, "demPct": 74.34, "repPct": 0, "demCandidate": "Linda T. Sánchez", "demVotes": 190467, "totalVotes": 256206, "margin": -74.34, "demIncumbent": true },
-      { "year": 2018, "demPct": 68.85, "repPct": 31.15, "demCandidate": "Linda T. Sánchez", "repCandidate": "Ryan Downing", "demVotes": 139188, "repVotes": 62968, "totalVotes": 202156, "margin": -37.7, "demIncumbent": true },
-      { "year": 2016, "demPct": 70.48, "repPct": 29.52, "demCandidate": "Linda T. Sánchez", "repCandidate": "Ryan Downing", "demVotes": 163590, "repVotes": 68524, "totalVotes": 232114, "margin": -40.96, "demIncumbent": true }
+      { "year": 2024, "demPct": 59.84, "repPct": 40.16, "demCandidate": "Linda Sánchez", "repCandidate": "Eric Ching", "demVotes": 165110, "repVotes": 110818, "totalVotes": 275928, "margin": -19.68, "demIncumbent": true },
+      { "year": 2022, "demPct": 58.09, "repPct": 41.91, "demCandidate": "Linda Sánchez", "repCandidate": "Eric Ching", "demVotes": 101260, "repVotes": 73051, "totalVotes": 174311, "margin": -16.18, "demIncumbent": true },
+      { "year": 2020, "demPct": 74.34, "repPct": 0, "demCandidate": "Linda Sánchez", "demVotes": 190467, "totalVotes": 256206, "margin": -74.34, "demIncumbent": true },
+      { "year": 2018, "demPct": 68.85, "repPct": 31.15, "demCandidate": "Linda Sánchez", "repCandidate": "Ryan Downing", "demVotes": 139188, "repVotes": 62968, "totalVotes": 202156, "margin": -37.7, "demIncumbent": true },
+      { "year": 2016, "demPct": 70.48, "repPct": 29.52, "demCandidate": "Linda Sánchez", "repCandidate": "Ryan Downing", "demVotes": 163590, "repVotes": 68524, "totalVotes": 232114, "margin": -40.96, "demIncumbent": true }
     ]
   },
   {
@@ -5376,9 +5376,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 56.69, "repPct": 43.31, "demCandidate": "Mark Takano", "repCandidate": "David Serpa", "demVotes": 130191, "repVotes": 99469, "totalVotes": 229660, "margin": -13.38, "demIncumbent": true },
       { "year": 2022, "demPct": 57.67, "repPct": 42.33, "demCandidate": "Mark Takano", "repCandidate": "Aja Smith", "demVotes": 75896, "repVotes": 55701, "totalVotes": 131597, "margin": -15.34 },
-      { "year": 2020, "demPct": 49.4, "repPct": 50.6, "demCandidate": "Gilbert Ray Cisneros, Jr.", "repCandidate": "Young Kim", "demVotes": 169837, "repVotes": 173946, "totalVotes": 343783, "margin": 1.2, "demIncumbent": true },
+      { "year": 2020, "demPct": 49.4, "repPct": 50.6, "demCandidate": "Gilbert Ray Cisneros", "repCandidate": "Young Kim", "demVotes": 169837, "repVotes": 173946, "totalVotes": 343783, "margin": 1.2, "demIncumbent": true },
       { "year": 2018, "demPct": 51.56, "repPct": 48.44, "demCandidate": "Gil Cisneros", "repCandidate": "Young Kim", "demVotes": 126002, "repVotes": 118391, "totalVotes": 244393, "margin": -3.12 },
-      { "year": 2016, "demPct": 42.77, "repPct": 57.23, "demCandidate": "Brett Murdock", "repCandidate": "Edward R. Royce", "demVotes": 112679, "repVotes": 150777, "totalVotes": 263456, "margin": 14.46, "repIncumbent": true }
+      { "year": 2016, "demPct": 42.77, "repPct": 57.23, "demCandidate": "Brett Murdock", "repCandidate": "Edward Royce", "demVotes": 112679, "repVotes": 150777, "totalVotes": 263456, "margin": 14.46, "repIncumbent": true }
     ]
   },
   {
@@ -5407,7 +5407,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 44.74, "repPct": 55.26, "demCandidate": "Joe Kerr", "repCandidate": "Young Kim", "demVotes": 171637, "repVotes": 211998, "totalVotes": 383635, "margin": 10.52, "repIncumbent": true },
       { "year": 2022, "demPct": 43.16, "repPct": 56.84, "demCandidate": "Asif Mahmood", "repCandidate": "Young Kim", "demVotes": 122722, "repVotes": 161589, "totalVotes": 284311, "margin": 13.68 },
-      { "year": 2020, "demPct": 72.74, "repPct": 27.26, "demCandidate": "Lucille Roybal-Allard", "repCandidate": "C. Antonio Delgado", "demVotes": 135572, "repVotes": 50809, "totalVotes": 186381, "margin": -45.48, "demIncumbent": true },
+      { "year": 2020, "demPct": 72.74, "repPct": 27.26, "demCandidate": "Lucille Roybal-Allard", "repCandidate": "Antonio Delgado", "demVotes": 135572, "repVotes": 50809, "totalVotes": 186381, "margin": -45.48, "demIncumbent": true },
       { "year": 2018, "demPct": 77.35, "repPct": 22.65, "demCandidate": "Lucille Roybal-Allard", "repCandidate": "Rodolfo Cortes Barragan (G)", "demVotes": 93938, "repVotes": 27511, "totalVotes": 121449, "margin": -54.7, "demIncumbent": true },
       { "year": 2016, "demPct": 71.37, "repPct": 28.63, "demCandidate": "Lucille Roybal-Allard", "repCandidate": "Roman Gabriel Gonzalez (NPP)", "demVotes": 106554, "repVotes": 42743, "totalVotes": 149297, "margin": -42.74, "demIncumbent": true }
     ]
@@ -5471,8 +5471,8 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 68.14, "repPct": 31.86, "demCandidate": "Robert Garcia", "repCandidate": "John Briscoe", "demVotes": 159153, "repVotes": 74410, "totalVotes": 233563, "margin": -36.28, "demIncumbent": true },
       { "year": 2022, "demPct": 68.37, "repPct": 31.63, "demCandidate": "Robert Garcia", "repCandidate": "John Briscoe", "demVotes": 99217, "repVotes": 45903, "totalVotes": 145120, "margin": -36.74 },
-      { "year": 2020, "demPct": 42.87, "repPct": 57.13, "demCandidate": "William “Liam” O’Mara", "repCandidate": "Ken Calvert", "demVotes": 157773, "repVotes": 210274, "totalVotes": 368047, "margin": 14.26, "repIncumbent": true },
-      { "year": 2018, "demPct": 43.5, "repPct": 56.5, "demCandidate": "Julia C. Peacock", "repCandidate": "Ken Calvert", "demVotes": 100892, "repVotes": 131040, "totalVotes": 231932, "margin": 13, "repIncumbent": true },
+      { "year": 2020, "demPct": 42.87, "repPct": 57.13, "demCandidate": "Liam O’Mara", "repCandidate": "Ken Calvert", "demVotes": 157773, "repVotes": 210274, "totalVotes": 368047, "margin": 14.26, "repIncumbent": true },
+      { "year": 2018, "demPct": 43.5, "repPct": 56.5, "demCandidate": "Julia Peacock", "repCandidate": "Ken Calvert", "demVotes": 100892, "repVotes": 131040, "totalVotes": 231932, "margin": 13, "repIncumbent": true },
       { "year": 2016, "demPct": 41.18, "repPct": 58.82, "demCandidate": "Tim Sheridan", "repCandidate": "Ken Calvert", "demVotes": 104689, "repVotes": 149547, "totalVotes": 254236, "margin": 17.64, "repIncumbent": true }
     ]
   },
@@ -5504,7 +5504,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 75.07, "repPct": 24.93, "demCandidate": "Maxine Waters", "repCandidate": "Steve Williams", "demVotes": 160080, "repVotes": 53152, "totalVotes": 213232, "margin": -50.14, "demIncumbent": true },
       { "year": 2022, "demPct": 77.33, "repPct": 22.67, "demCandidate": "Maxine Waters", "repCandidate": "Omar Navarro", "demVotes": 95462, "repVotes": 27985, "totalVotes": 123447, "margin": -54.66, "demIncumbent": true },
-      { "year": 2020, "demPct": 71.68, "repPct": 28.32, "demCandidate": "Maxine Waters", "repCandidate": "Joe E. Collins III", "demVotes": 199210, "repVotes": 78688, "totalVotes": 277898, "margin": -43.36, "demIncumbent": true },
+      { "year": 2020, "demPct": 71.68, "repPct": 28.32, "demCandidate": "Maxine Waters", "repCandidate": "Joe Collins", "demVotes": 199210, "repVotes": 78688, "totalVotes": 277898, "margin": -43.36, "demIncumbent": true },
       { "year": 2018, "demPct": 77.67, "repPct": 22.33, "demCandidate": "Maxine Waters", "repCandidate": "Omar Navarro", "demVotes": 152272, "repVotes": 43780, "totalVotes": 196052, "margin": -55.34, "demIncumbent": true },
       { "year": 2016, "demPct": 76.08, "repPct": 23.92, "demCandidate": "Maxine Waters", "repCandidate": "Omar Navarro", "demVotes": 167017, "repVotes": 52499, "totalVotes": 219516, "margin": -52.16, "demIncumbent": true }
     ]
@@ -5567,7 +5567,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 50.1, "repPct": 49.9, "demCandidate": "Derek Tran", "repCandidate": "Michelle Steel", "demVotes": 158264, "repVotes": 157611, "totalVotes": 315875, "margin": -0.2, "repIncumbent": true },
-      { "year": 2022, "demPct": 47.59, "repPct": 52.41, "demCandidate": "Jay F. Chen", "repCandidate": "Michelle Steel", "demVotes": 103466, "repVotes": 113960, "totalVotes": 217426, "margin": 4.82 },
+      { "year": 2022, "demPct": 47.59, "repPct": 52.41, "demCandidate": "Jay Chen", "repCandidate": "Michelle Steel", "demVotes": 103466, "repVotes": 113960, "totalVotes": 217426, "margin": 4.82 },
       { "year": 2020, "demPct": 53.46, "repPct": 46.54, "demCandidate": "Katie Porter", "repCandidate": "Greg Raths", "demVotes": 221843, "repVotes": 193096, "totalVotes": 414939, "margin": -6.92, "demIncumbent": true },
       { "year": 2018, "demPct": 52.05, "repPct": 47.95, "demCandidate": "Katie Porter", "repCandidate": "Mimi Walters", "demVotes": 158906, "repVotes": 146383, "totalVotes": 305289, "margin": -4.1, "repIncumbent": true },
       { "year": 2016, "demPct": 41.44, "repPct": 58.56, "demCandidate": "Ron Varasteh", "repCandidate": "Mimi Walters", "demVotes": 129231, "repVotes": 182618, "totalVotes": 311849, "margin": 17.12, "repIncumbent": true }
@@ -5599,10 +5599,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Lou Correa",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 63.43, "repPct": 36.57, "demCandidate": "J. Luis Correa", "repCandidate": "David Pan", "demVotes": 134013, "repVotes": 77279, "totalVotes": 211292, "margin": -26.86, "demIncumbent": true },
-      { "year": 2022, "demPct": 61.79, "repPct": 38.21, "demCandidate": "J. Luis Correa", "repCandidate": "Christopher J. Gonzales", "demVotes": 78041, "repVotes": 48257, "totalVotes": 126298, "margin": -23.58, "demIncumbent": true },
-      { "year": 2020, "demPct": 68.75, "repPct": 31.25, "demCandidate": "J. Luis Correa", "repCandidate": "James S. Waters", "demVotes": 157803, "repVotes": 71716, "totalVotes": 229519, "margin": -37.5, "demIncumbent": true },
-      { "year": 2018, "demPct": 69.15, "repPct": 30.85, "demCandidate": "J. Luis Correa", "repCandidate": "Russell Rene Lambert", "demVotes": 102278, "repVotes": 45638, "totalVotes": 147916, "margin": -38.3, "demIncumbent": true },
+      { "year": 2024, "demPct": 63.43, "repPct": 36.57, "demCandidate": "Luis Correa", "repCandidate": "David Pan", "demVotes": 134013, "repVotes": 77279, "totalVotes": 211292, "margin": -26.86, "demIncumbent": true },
+      { "year": 2022, "demPct": 61.79, "repPct": 38.21, "demCandidate": "Luis Correa", "repCandidate": "Christopher Gonzales", "demVotes": 78041, "repVotes": 48257, "totalVotes": 126298, "margin": -23.58, "demIncumbent": true },
+      { "year": 2020, "demPct": 68.75, "repPct": 31.25, "demCandidate": "Luis Correa", "repCandidate": "James Waters", "demVotes": 157803, "repVotes": 71716, "totalVotes": 229519, "margin": -37.5, "demIncumbent": true },
+      { "year": 2018, "demPct": 69.15, "repPct": 30.85, "demCandidate": "Luis Correa", "repCandidate": "Russell Rene Lambert", "demVotes": 102278, "repVotes": 45638, "totalVotes": 147916, "margin": -38.3, "demIncumbent": true },
       { "year": 2016, "demPct": 70.02, "repPct": 0, "demCandidate": "Lou Correa", "demVotes": 115248, "totalVotes": 164593, "margin": -70.02 }
     ]
   },
@@ -5632,9 +5632,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 51.44, "repPct": 48.56, "demCandidate": "Dave Min", "repCandidate": "Scott Baugh", "demVotes": 181721, "repVotes": 171554, "totalVotes": 353275, "margin": -2.88 },
       { "year": 2022, "demPct": 51.72, "repPct": 48.28, "demCandidate": "Katie Porter", "repCandidate": "Scott Baugh", "demVotes": 137374, "repVotes": 128261, "totalVotes": 265635, "margin": -3.44 },
-      { "year": 2020, "demPct": 63.27, "repPct": 36.73, "demCandidate": "Alan S. Lowenthal", "repCandidate": "John Briscoe", "demVotes": 197028, "repVotes": 114371, "totalVotes": 311399, "margin": -26.54, "demIncumbent": true },
-      { "year": 2018, "demPct": 64.86, "repPct": 35.14, "demCandidate": "Alan S. Lowenthal", "repCandidate": "John Briscoe", "demVotes": 143354, "repVotes": 77682, "totalVotes": 221036, "margin": -29.72, "demIncumbent": true },
-      { "year": 2016, "demPct": 63.72, "repPct": 36.28, "demCandidate": "Alan S. Lowenthal", "repCandidate": "Andy Whallon", "demVotes": 154759, "repVotes": 88109, "totalVotes": 242868, "margin": -27.44, "demIncumbent": true }
+      { "year": 2020, "demPct": 63.27, "repPct": 36.73, "demCandidate": "Alan Lowenthal", "repCandidate": "John Briscoe", "demVotes": 197028, "repVotes": 114371, "totalVotes": 311399, "margin": -26.54, "demIncumbent": true },
+      { "year": 2018, "demPct": 64.86, "repPct": 35.14, "demCandidate": "Alan Lowenthal", "repCandidate": "John Briscoe", "demVotes": 143354, "repVotes": 77682, "totalVotes": 221036, "margin": -29.72, "demIncumbent": true },
+      { "year": 2016, "demPct": 63.72, "repPct": 36.28, "demCandidate": "Alan Lowenthal", "repCandidate": "Andy Whallon", "demVotes": 154759, "repVotes": 88109, "totalVotes": 242868, "margin": -27.44, "demIncumbent": true }
     ]
   },
   {
@@ -5697,8 +5697,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 52.17, "repPct": 47.83, "demCandidate": "Mike Levin", "repCandidate": "Matt Gunderson", "demVotes": 197397, "repVotes": 180950, "totalVotes": 378347, "margin": -4.34, "demIncumbent": true },
       { "year": 2022, "demPct": 52.63, "repPct": 47.37, "demCandidate": "Mike Levin", "repCandidate": "Brian Maryott", "demVotes": 153541, "repVotes": 138194, "totalVotes": 291735, "margin": -5.26, "demIncumbent": true },
       { "year": 2020, "demPct": 53.13, "repPct": 46.87, "demCandidate": "Mike Levin", "repCandidate": "Brian Maryott", "demVotes": 205349, "repVotes": 181157, "totalVotes": 386506, "margin": -6.26, "demIncumbent": true },
-      { "year": 2018, "demPct": 56.42, "repPct": 43.58, "demCandidate": "Mike Levin", "repCandidate": "Diane L. Harkey", "demVotes": 166453, "repVotes": 128577, "totalVotes": 295030, "margin": -12.84 },
-      { "year": 2016, "demPct": 49.74, "repPct": 50.26, "demCandidate": "Doug Applegate", "repCandidate": "Darrell E. Issa", "demVotes": 154267, "repVotes": 155888, "totalVotes": 310155, "margin": 0.52, "repIncumbent": true }
+      { "year": 2018, "demPct": 56.42, "repPct": 43.58, "demCandidate": "Mike Levin", "repCandidate": "Diane Harkey", "demVotes": 166453, "repVotes": 128577, "totalVotes": 295030, "margin": -12.84 },
+      { "year": 2016, "demPct": 49.74, "repPct": 50.26, "demCandidate": "Doug Applegate", "repCandidate": "Darrell Issa", "demVotes": 154267, "repVotes": 155888, "totalVotes": 310155, "margin": 0.52, "repIncumbent": true }
     ]
   },
   {
@@ -5727,8 +5727,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Scott Peters",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 64.27, "repPct": 35.73, "demCandidate": "Scott H. Peters", "repCandidate": "Peter J. Bono", "demVotes": 231836, "repVotes": 128859, "totalVotes": 360695, "margin": -28.54, "demIncumbent": true },
-      { "year": 2022, "demPct": 62.84, "repPct": 37.16, "demCandidate": "Scott H. Peters", "repCandidate": "Corey Gustafson", "demVotes": 168816, "repVotes": 99819, "totalVotes": 268635, "margin": -25.68 },
+      { "year": 2024, "demPct": 64.27, "repPct": 35.73, "demCandidate": "Scott Peters", "repCandidate": "Peter Bono", "demVotes": 231836, "repVotes": 128859, "totalVotes": 360695, "margin": -28.54, "demIncumbent": true },
+      { "year": 2022, "demPct": 62.84, "repPct": 37.16, "demCandidate": "Scott Peters", "repCandidate": "Corey Gustafson", "demVotes": 168816, "repVotes": 99819, "totalVotes": 268635, "margin": -25.68 },
       { "year": 2020, "demPct": 46.05, "repPct": 53.95, "demCandidate": "Ammar Campa-Najjar", "repCandidate": "Darrell Issa", "demVotes": 166869, "repVotes": 195521, "totalVotes": 362390, "margin": 7.9 },
       { "year": 2018, "demPct": 48.28, "repPct": 51.72, "demCandidate": "Ammar Campa-Najjar", "repCandidate": "Duncan Hunter", "demVotes": 125448, "repVotes": 134362, "totalVotes": 259810, "margin": 3.44, "repIncumbent": true },
       { "year": 2016, "demPct": 36.55, "repPct": 63.45, "demCandidate": "Patrick Malloy", "repCandidate": "Duncan Hunter", "demVotes": 103646, "repVotes": 179937, "totalVotes": 283583, "margin": 26.9, "repIncumbent": true }
@@ -5762,9 +5762,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 60.7, "repPct": 39.3, "demCandidate": "Sara Jacobs", "repCandidate": "Bill Wells", "demVotes": 198835, "repVotes": 128749, "totalVotes": 327584, "margin": -21.4, "demIncumbent": true },
       { "year": 2022, "demPct": 61.86, "repPct": 38.14, "demCandidate": "Sara Jacobs", "repCandidate": "Stan Caplan", "demVotes": 144186, "repVotes": 88886, "totalVotes": 233072, "margin": -23.72 },
-      { "year": 2020, "demPct": 68.3, "repPct": 31.7, "demCandidate": "Juan Vargas", "repCandidate": "Juan M. Hidalgo, Jr.", "demVotes": 165596, "repVotes": 76841, "totalVotes": 242437, "margin": -36.6, "demIncumbent": true },
-      { "year": 2018, "demPct": 71.2, "repPct": 28.8, "demCandidate": "Juan Vargas", "repCandidate": "Juan M. Hidalgo, Jr.", "demVotes": 109527, "repVotes": 44301, "totalVotes": 153828, "margin": -42.4, "demIncumbent": true },
-      { "year": 2016, "demPct": 72.75, "repPct": 27.25, "demCandidate": "Juan Vargas", "repCandidate": "Juan M. Hidalgo, Jr.", "demVotes": 145162, "repVotes": 54362, "totalVotes": 199524, "margin": -45.5, "demIncumbent": true }
+      { "year": 2020, "demPct": 68.3, "repPct": 31.7, "demCandidate": "Juan Vargas", "repCandidate": "Juan Hidalgo", "demVotes": 165596, "repVotes": 76841, "totalVotes": 242437, "margin": -36.6, "demIncumbent": true },
+      { "year": 2018, "demPct": 71.2, "repPct": 28.8, "demCandidate": "Juan Vargas", "repCandidate": "Juan Hidalgo", "demVotes": 109527, "repVotes": 44301, "totalVotes": 153828, "margin": -42.4, "demIncumbent": true },
+      { "year": 2016, "demPct": 72.75, "repPct": 27.25, "demCandidate": "Juan Vargas", "repCandidate": "Juan Hidalgo", "demVotes": 145162, "repVotes": 54362, "totalVotes": 199524, "margin": -45.5, "demIncumbent": true }
     ]
   },
   {
@@ -5795,9 +5795,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 66.31, "repPct": 33.69, "demCandidate": "Juan Vargas", "repCandidate": "Justin Lee", "demVotes": 172217, "repVotes": 87501, "totalVotes": 259718, "margin": -32.62, "demIncumbent": true },
       { "year": 2022, "demPct": 66.67, "repPct": 33.33, "demCandidate": "Juan Vargas", "repCandidate": "Tyler Geffeney", "demVotes": 100686, "repVotes": 50330, "totalVotes": 151016, "margin": -33.34 },
-      { "year": 2020, "demPct": 61.58, "repPct": 38.42, "demCandidate": "Scott H. Peters", "repCandidate": "Jim DeBello", "demVotes": 244145, "repVotes": 152350, "totalVotes": 396495, "margin": -23.16, "demIncumbent": true },
-      { "year": 2018, "demPct": 63.85, "repPct": 36.15, "demCandidate": "Scott H. Peters", "repCandidate": "Omar Qudrat", "demVotes": 188992, "repVotes": 107015, "totalVotes": 296007, "margin": -27.7, "demIncumbent": true },
-      { "year": 2016, "demPct": 56.53, "repPct": 43.47, "demCandidate": "Scott H. Peters", "repCandidate": "Denise Gitsham", "demVotes": 181253, "repVotes": 139403, "totalVotes": 320656, "margin": -13.06, "demIncumbent": true }
+      { "year": 2020, "demPct": 61.58, "repPct": 38.42, "demCandidate": "Scott Peters", "repCandidate": "Jim DeBello", "demVotes": 244145, "repVotes": 152350, "totalVotes": 396495, "margin": -23.16, "demIncumbent": true },
+      { "year": 2018, "demPct": 63.85, "repPct": 36.15, "demCandidate": "Scott Peters", "repCandidate": "Omar Qudrat", "demVotes": 188992, "repVotes": 107015, "totalVotes": 296007, "margin": -27.7, "demIncumbent": true },
+      { "year": 2016, "demPct": 56.53, "repPct": 43.47, "demCandidate": "Scott Peters", "repCandidate": "Denise Gitsham", "demVotes": 181253, "repVotes": 139403, "totalVotes": 320656, "margin": -13.06, "demIncumbent": true }
     ]
   },
   {
@@ -5830,7 +5830,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 80.3, "repPct": 17.53, "demCandidate": "Diana DeGette", "repCandidate": "Jennifer Qualteri", "demVotes": 226929, "repVotes": 49530, "totalVotes": 282616, "margin": -62.77, "demIncumbent": true },
       { "year": 2020, "demPct": 73.65, "repPct": 23.53, "demCandidate": "Diana DeGette", "repCandidate": "Shane Bolling", "demVotes": 331621, "repVotes": 105955, "totalVotes": 450290, "margin": -50.12, "demIncumbent": true },
       { "year": 2018, "demPct": 73.81, "repPct": 23.05, "demCandidate": "Diana DeGette", "repCandidate": "Charles Casper Stockham", "demVotes": 272886, "repVotes": 85207, "totalVotes": 369715, "margin": -50.76, "demIncumbent": true },
-      { "year": 2016, "demPct": 67.87, "repPct": 27.71, "demCandidate": "Diana DeGette", "repCandidate": "Charles “Casper” Stockham", "demVotes": 257254, "repVotes": 105030, "totalVotes": 379036, "margin": -40.16, "demIncumbent": true }
+      { "year": 2016, "demPct": 67.87, "repPct": 27.71, "demCandidate": "Diana DeGette", "repCandidate": "Casper Stockham", "demVotes": 257254, "repVotes": 105030, "totalVotes": 379036, "margin": -40.16, "demIncumbent": true }
     ]
   },
   {
@@ -5892,9 +5892,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 45.82, "repPct": 50.8, "demCandidate": "Adam Frisch", "repCandidate": "Jeff Hurd", "demVotes": 182147, "repVotes": 201951, "totalVotes": 397553, "margin": 4.98 },
       { "year": 2022, "demPct": 49.89, "repPct": 50.06, "demCandidate": "Adam Frisch", "repCandidate": "Lauren Boebert", "demVotes": 163293, "repVotes": 163839, "totalVotes": 327285, "margin": 0.17, "repIncumbent": true },
-      { "year": 2020, "demPct": 45.22, "repPct": 51.39, "demCandidate": "Diane E. Mitsch Bush", "repCandidate": "Lauren Boebert", "demVotes": 194122, "repVotes": 220634, "totalVotes": 429319, "margin": 6.17 },
-      { "year": 2018, "demPct": 43.55, "repPct": 51.52, "demCandidate": "Diane Mitsch Bush", "repCandidate": "Scott R. Tipton", "demVotes": 146426, "repVotes": 173205, "totalVotes": 336201, "margin": 7.97, "repIncumbent": true },
-      { "year": 2016, "demPct": 40.35, "repPct": 54.6, "demCandidate": "Gail Schwartz", "repCandidate": "Scott R. Tipton", "demVotes": 150914, "repVotes": 204220, "totalVotes": 374037, "margin": 14.25, "repIncumbent": true }
+      { "year": 2020, "demPct": 45.22, "repPct": 51.39, "demCandidate": "Diane Mitsch Bush", "repCandidate": "Lauren Boebert", "demVotes": 194122, "repVotes": 220634, "totalVotes": 429319, "margin": 6.17 },
+      { "year": 2018, "demPct": 43.55, "repPct": 51.52, "demCandidate": "Diane Mitsch Bush", "repCandidate": "Scott Tipton", "demVotes": 146426, "repVotes": 173205, "totalVotes": 336201, "margin": 7.97, "repIncumbent": true },
+      { "year": 2016, "demPct": 40.35, "repPct": 54.6, "demCandidate": "Gail Schwartz", "repCandidate": "Scott Tipton", "demVotes": 150914, "repVotes": 204220, "totalVotes": 374037, "margin": 14.25, "repIncumbent": true }
     ]
   },
   {
@@ -5989,7 +5989,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jason Crow",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 58.97, "repPct": 38.45, "demCandidate": "Jason Crow", "repCandidate": "John E. Fabbricatore", "demVotes": 202686, "repVotes": 132174, "totalVotes": 343721, "margin": -20.52, "demIncumbent": true },
+      { "year": 2024, "demPct": 58.97, "repPct": 38.45, "demCandidate": "Jason Crow", "repCandidate": "John Fabbricatore", "demVotes": 202686, "repVotes": 132174, "totalVotes": 343721, "margin": -20.52, "demIncumbent": true },
       { "year": 2022, "demPct": 60.6, "repPct": 37.43, "demCandidate": "Jason Crow", "repCandidate": "Steven Monahan", "demVotes": 170140, "repVotes": 105084, "totalVotes": 280755, "margin": -23.17, "demIncumbent": true },
       { "year": 2020, "demPct": 57.09, "repPct": 39.96, "demCandidate": "Jason Crow", "repCandidate": "Steve House", "demVotes": 250314, "repVotes": 175192, "totalVotes": 438473, "margin": -17.13, "demIncumbent": true },
       { "year": 2018, "demPct": 54.1, "repPct": 42.87, "demCandidate": "Jason Crow", "repCandidate": "Mike Coffman", "demVotes": 187639, "repVotes": 148685, "totalVotes": 346822, "margin": -11.23, "repIncumbent": true },
@@ -6024,7 +6024,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 55.33, "repPct": 41.15, "demCandidate": "Brittany Pettersen", "repCandidate": "Sergei Matveyuk", "demVotes": 235688, "repVotes": 175273, "totalVotes": 425966, "margin": -14.18, "demIncumbent": true },
       { "year": 2022, "demPct": 56.38, "repPct": 41.39, "demCandidate": "Brittany Pettersen", "repCandidate": "Erik Aadland", "demVotes": 204984, "repVotes": 150510, "totalVotes": 363601, "margin": -14.99 },
-      { "year": 2020, "demPct": 59.13, "repPct": 37.6, "demCandidate": "Ed Perlmutter", "repCandidate": "Charles “Casper” Stockham", "demVotes": 250525, "repVotes": 159301, "totalVotes": 423691, "margin": -21.53, "demIncumbent": true },
+      { "year": 2020, "demPct": 59.13, "repPct": 37.6, "demCandidate": "Ed Perlmutter", "repCandidate": "Casper Stockham", "demVotes": 250525, "repVotes": 159301, "totalVotes": 423691, "margin": -21.53, "demIncumbent": true },
       { "year": 2018, "demPct": 60.42, "repPct": 35.42, "demCandidate": "Ed Perlmutter", "repCandidate": "Mark Barrington", "demVotes": 204260, "repVotes": 119734, "totalVotes": 338067, "margin": -25, "demIncumbent": true },
       { "year": 2016, "demPct": 55.18, "repPct": 39.8, "demCandidate": "Ed Perlmutter", "repCandidate": "George Athanasopoulos", "demVotes": 199758, "repVotes": 144066, "totalVotes": 362010, "margin": -15.38, "demIncumbent": true }
     ]
@@ -6083,11 +6083,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "John Larson",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 61.88, "repPct": 36, "demCandidate": "John B. Larson", "repCandidate": "Jim Griffin", "demVotes": 197788, "repVotes": 115065, "totalVotes": 319621, "margin": -25.88, "demIncumbent": true },
-      { "year": 2022, "demPct": 60.56, "repPct": 38.25, "demCandidate": "John B. Larson", "repCandidate": "Larry Lazor", "demVotes": 144873, "repVotes": 91506, "totalVotes": 239230, "margin": -22.31, "demIncumbent": true },
-      { "year": 2020, "demPct": 62.73, "repPct": 35.96, "demCandidate": "John B. Larson", "repCandidate": "Mary Fay", "demVotes": 213001, "repVotes": 122111, "totalVotes": 339570, "margin": -26.77, "demIncumbent": true },
-      { "year": 2018, "demPct": 62.65, "repPct": 36.21, "demCandidate": "John B. Larson", "repCandidate": "Jennifer T. Nye", "demVotes": 166155, "repVotes": 96024, "totalVotes": 265208, "margin": -26.44, "demIncumbent": true },
-      { "year": 2016, "demPct": 62.49, "repPct": 35.31, "demCandidate": "John B. Larson", "repCandidate": "Matthew M. Corey", "demVotes": 187021, "repVotes": 105674, "totalVotes": 299260, "margin": -27.18, "demIncumbent": true }
+      { "year": 2024, "demPct": 61.88, "repPct": 36, "demCandidate": "John Larson", "repCandidate": "Jim Griffin", "demVotes": 197788, "repVotes": 115065, "totalVotes": 319621, "margin": -25.88, "demIncumbent": true },
+      { "year": 2022, "demPct": 60.56, "repPct": 38.25, "demCandidate": "John Larson", "repCandidate": "Larry Lazor", "demVotes": 144873, "repVotes": 91506, "totalVotes": 239230, "margin": -22.31, "demIncumbent": true },
+      { "year": 2020, "demPct": 62.73, "repPct": 35.96, "demCandidate": "John Larson", "repCandidate": "Mary Fay", "demVotes": 213001, "repVotes": 122111, "totalVotes": 339570, "margin": -26.77, "demIncumbent": true },
+      { "year": 2018, "demPct": 62.65, "repPct": 36.21, "demCandidate": "John Larson", "repCandidate": "Jennifer Nye", "demVotes": 166155, "repVotes": 96024, "totalVotes": 265208, "margin": -26.44, "demIncumbent": true },
+      { "year": 2016, "demPct": 62.49, "repPct": 35.31, "demCandidate": "John Larson", "repCandidate": "Matthew Corey", "demVotes": 187021, "repVotes": 105674, "totalVotes": 299260, "margin": -27.18, "demIncumbent": true }
     ]
   },
   {
@@ -6119,7 +6119,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 58.01, "repPct": 41.98, "demCandidate": "Joe Courtney", "repCandidate": "Mike France", "demVotes": 218162, "repVotes": 157878, "totalVotes": 376047, "margin": -16.03, "demIncumbent": true },
       { "year": 2022, "demPct": 58.22, "repPct": 40.17, "demCandidate": "Joe Courtney", "repCandidate": "Mike France", "demVotes": 165946, "repVotes": 114506, "totalVotes": 285031, "margin": -18.05, "demIncumbent": true },
       { "year": 2020, "demPct": 58.14, "repPct": 39.37, "demCandidate": "Joe Courtney", "repCandidate": "Justin Anderson", "demVotes": 207303, "repVotes": 140356, "totalVotes": 356531, "margin": -18.77, "demIncumbent": true },
-      { "year": 2018, "demPct": 60.52, "repPct": 36.99, "demCandidate": "Joe Courtney", "repCandidate": "Danny Postemski, Jr.", "demVotes": 167659, "repVotes": 102483, "totalVotes": 277042, "margin": -23.53, "demIncumbent": true },
+      { "year": 2018, "demPct": 60.52, "repPct": 36.99, "demCandidate": "Joe Courtney", "repCandidate": "Danny Postemski", "demVotes": 167659, "repVotes": 102483, "totalVotes": 277042, "margin": -23.53, "demIncumbent": true },
       { "year": 2016, "demPct": 60.53, "repPct": 36.13, "demCandidate": "Joe Courtney", "repCandidate": "Daria Novak", "demVotes": 186210, "repVotes": 111149, "totalVotes": 307649, "margin": -24.4, "demIncumbent": true }
     ]
   },
@@ -6149,11 +6149,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Rosa Delauro",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 59.8, "repPct": 40.16, "demCandidate": "Rosa L. DeLauro", "repCandidate": "Michael Massey", "demVotes": 193684, "repVotes": 130095, "totalVotes": 323905, "margin": -19.64, "demIncumbent": true },
-      { "year": 2022, "demPct": 56.84, "repPct": 40.68, "demCandidate": "Rosa L. DeLauro", "repCandidate": "Lesley DeNardis", "demVotes": 137924, "repVotes": 98704, "totalVotes": 242651, "margin": -16.16, "demIncumbent": true },
-      { "year": 2020, "demPct": 58.68, "repPct": 39.74, "demCandidate": "Rosa L. DeLauro", "repCandidate": "Margaret Streicker", "demVotes": 194259, "repVotes": 131568, "totalVotes": 331067, "margin": -18.94, "demIncumbent": true },
-      { "year": 2018, "demPct": 63.05, "repPct": 36.95, "demCandidate": "Rosa L. DeLauro", "repCandidate": "Angel Cadena", "demVotes": 163211, "repVotes": 95667, "totalVotes": 258878, "margin": -26.1, "demIncumbent": true },
-      { "year": 2016, "demPct": 66.74, "repPct": 33.25, "demCandidate": "Rosa L. DeLauro", "repCandidate": "Angel Cadena", "demVotes": 192274, "repVotes": 95786, "totalVotes": 288081, "margin": -33.49, "demIncumbent": true }
+      { "year": 2024, "demPct": 59.8, "repPct": 40.16, "demCandidate": "Rosa DeLauro", "repCandidate": "Michael Massey", "demVotes": 193684, "repVotes": 130095, "totalVotes": 323905, "margin": -19.64, "demIncumbent": true },
+      { "year": 2022, "demPct": 56.84, "repPct": 40.68, "demCandidate": "Rosa DeLauro", "repCandidate": "Lesley DeNardis", "demVotes": 137924, "repVotes": 98704, "totalVotes": 242651, "margin": -16.16, "demIncumbent": true },
+      { "year": 2020, "demPct": 58.68, "repPct": 39.74, "demCandidate": "Rosa DeLauro", "repCandidate": "Margaret Streicker", "demVotes": 194259, "repVotes": 131568, "totalVotes": 331067, "margin": -18.94, "demIncumbent": true },
+      { "year": 2018, "demPct": 63.05, "repPct": 36.95, "demCandidate": "Rosa DeLauro", "repCandidate": "Angel Cadena", "demVotes": 163211, "repVotes": 95667, "totalVotes": 258878, "margin": -26.1, "demIncumbent": true },
+      { "year": 2016, "demPct": 66.74, "repPct": 33.25, "demCandidate": "Rosa DeLauro", "repCandidate": "Angel Cadena", "demVotes": 192274, "repVotes": 95786, "totalVotes": 288081, "margin": -33.49, "demIncumbent": true }
     ]
   },
   {
@@ -6182,11 +6182,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jim Himes",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 61.06, "repPct": 37.34, "demCandidate": "James A. Himes", "repCandidate": "Michael Goldstein", "demVotes": 200791, "repVotes": 122793, "totalVotes": 328857, "margin": -23.72, "demIncumbent": true },
-      { "year": 2022, "demPct": 60.05, "repPct": 39.95, "demCandidate": "James A. Himes", "repCandidate": "Jayme Stevenson", "demVotes": 140262, "repVotes": 93329, "totalVotes": 233591, "margin": -20.1, "demIncumbent": true },
-      { "year": 2020, "demPct": 62.22, "repPct": 36.21, "demCandidate": "James A. Himes", "repCandidate": "Jonathan Riddle", "demVotes": 224432, "repVotes": 130627, "totalVotes": 360716, "margin": -26.01, "demIncumbent": true },
-      { "year": 2018, "demPct": 62.05, "repPct": 37.95, "demCandidate": "James A. Himes", "repCandidate": "Harry Arora", "demVotes": 168726, "repVotes": 103175, "totalVotes": 271905, "margin": -24.1, "demIncumbent": true },
-      { "year": 2016, "demPct": 60.88, "repPct": 39.11, "demCandidate": "James A. Himes", "repCandidate": "John Shaban", "demVotes": 187811, "repVotes": 120653, "totalVotes": 308469, "margin": -21.77, "demIncumbent": true }
+      { "year": 2024, "demPct": 61.06, "repPct": 37.34, "demCandidate": "James Himes", "repCandidate": "Michael Goldstein", "demVotes": 200791, "repVotes": 122793, "totalVotes": 328857, "margin": -23.72, "demIncumbent": true },
+      { "year": 2022, "demPct": 60.05, "repPct": 39.95, "demCandidate": "James Himes", "repCandidate": "Jayme Stevenson", "demVotes": 140262, "repVotes": 93329, "totalVotes": 233591, "margin": -20.1, "demIncumbent": true },
+      { "year": 2020, "demPct": 62.22, "repPct": 36.21, "demCandidate": "James Himes", "repCandidate": "Jonathan Riddle", "demVotes": 224432, "repVotes": 130627, "totalVotes": 360716, "margin": -26.01, "demIncumbent": true },
+      { "year": 2018, "demPct": 62.05, "repPct": 37.95, "demCandidate": "James Himes", "repCandidate": "Harry Arora", "demVotes": 168726, "repVotes": 103175, "totalVotes": 271905, "margin": -24.1, "demIncumbent": true },
+      { "year": 2016, "demPct": 60.88, "repPct": 39.11, "demCandidate": "James Himes", "repCandidate": "John Shaban", "demVotes": 187811, "repVotes": 120653, "totalVotes": 308469, "margin": -21.77, "demIncumbent": true }
     ]
   },
   {
@@ -6215,9 +6215,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 52.13, "repPct": 47.85, "demCandidate": "Jahana Hayes", "repCandidate": "George Logan", "demVotes": 171337, "repVotes": 157258, "totalVotes": 328674, "margin": -4.28, "demIncumbent": true },
       { "year": 2022, "demPct": 50.1, "repPct": 49.9, "demCandidate": "Jahana Hayes", "repCandidate": "George Logan", "demVotes": 123818, "repVotes": 123342, "totalVotes": 247160, "margin": -0.2, "demIncumbent": true },
-      { "year": 2020, "demPct": 53.93, "repPct": 44.59, "demCandidate": "Jahana Hayes", "repCandidate": "David X. Sullivan", "demVotes": 183797, "repVotes": 151988, "totalVotes": 340837, "margin": -9.34, "demIncumbent": true },
+      { "year": 2020, "demPct": 53.93, "repPct": 44.59, "demCandidate": "Jahana Hayes", "repCandidate": "David Sullivan", "demVotes": 183797, "repVotes": 151988, "totalVotes": 340837, "margin": -9.34, "demIncumbent": true },
       { "year": 2018, "demPct": 55.38, "repPct": 44.62, "demCandidate": "Jahana Hayes", "repCandidate": "Manny Santos", "demVotes": 142901, "repVotes": 115146, "totalVotes": 258060, "margin": -10.76 },
-      { "year": 2016, "demPct": 56.69, "repPct": 43.3, "demCandidate": "Elizabeth H. Esty", "repCandidate": "Clay Cope", "demVotes": 163499, "repVotes": 124900, "totalVotes": 288428, "margin": -13.39, "demIncumbent": true }
+      { "year": 2016, "demPct": 56.69, "repPct": 43.3, "demCandidate": "Elizabeth Esty", "repCandidate": "Clay Cope", "demVotes": 163499, "repVotes": 124900, "totalVotes": 288428, "margin": -13.39, "demIncumbent": true }
     ]
   },
   {
@@ -6244,7 +6244,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Sarah McBride",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 57.86, "repPct": 42.14, "demCandidate": "Sarah McBride", "repCandidate": "John J. Whalen III", "demVotes": 287830, "repVotes": 209606, "totalVotes": 497436, "margin": -15.72 },
+      { "year": 2024, "demPct": 57.86, "repPct": 42.14, "demCandidate": "Sarah McBride", "repCandidate": "John Whalen", "demVotes": 287830, "repVotes": 209606, "totalVotes": 497436, "margin": -15.72 },
       { "year": 2022, "demPct": 55.47, "repPct": 42.97, "demCandidate": "Lisa Blunt Rochester", "repCandidate": "Lee Murphy", "demVotes": 178416, "repVotes": 138201, "totalVotes": 321649, "margin": -12.5, "demIncumbent": true },
       { "year": 2020, "demPct": 57.63, "repPct": 40.22, "demCandidate": "Lisa Blunt Rochester", "repCandidate": "Lee Murphy", "demVotes": 281382, "repVotes": 196392, "totalVotes": 488270, "margin": -17.41, "demIncumbent": true },
       { "year": 2018, "demPct": 64.26, "repPct": 35.44, "demCandidate": "Lisa Blunt Rochester", "repCandidate": "Scott Walker", "demVotes": 227353, "repVotes": 125384, "totalVotes": 353814, "margin": -28.82, "demIncumbent": true },
@@ -6280,7 +6280,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 33.96, "repPct": 66.04, "demCandidate": "Gay Valimont", "repCandidate": "Matt Gaetz", "demVotes": 140980, "repVotes": 274108, "totalVotes": 415088, "margin": 32.08, "repIncumbent": true },
       { "year": 2022, "demPct": 32.14, "repPct": 67.86, "demCandidate": "Rebekah Jones", "repCandidate": "Matt Gaetz", "demVotes": 93467, "repVotes": 197349, "totalVotes": 290816, "margin": 35.72, "repIncumbent": true },
       { "year": 2020, "demPct": 34.01, "repPct": 64.61, "demCandidate": "Phil Ehr", "repCandidate": "Matt Gaetz", "demVotes": 149172, "repVotes": 283352, "totalVotes": 438562, "margin": 30.6, "repIncumbent": true },
-      { "year": 2018, "demPct": 32.94, "repPct": 67.06, "demCandidate": "Jennifer M. Zimmerman", "repCandidate": "Matt Gaetz", "demVotes": 106199, "repVotes": 216189, "totalVotes": 322388, "margin": 34.12, "repIncumbent": true },
+      { "year": 2018, "demPct": 32.94, "repPct": 67.06, "demCandidate": "Jennifer Zimmerman", "repCandidate": "Matt Gaetz", "demVotes": 106199, "repVotes": 216189, "totalVotes": 322388, "margin": 34.12, "repIncumbent": true },
       { "year": 2016, "demPct": 30.9, "repPct": 69.1, "demCandidate": "Steven Specht", "repCandidate": "Matt Gaetz", "demVotes": 114079, "repVotes": 255107, "totalVotes": 369186, "margin": 38.2 }
     ]
   },
@@ -6310,10 +6310,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Neal Dunn",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 38.36, "repPct": 61.64, "demCandidate": "Yen Bailey", "repCandidate": "Neal P. Dunn", "demVotes": 154323, "repVotes": 247957, "totalVotes": 402280, "margin": 23.28, "repIncumbent": true },
-      { "year": 2022, "demPct": 40.2, "repPct": 59.8, "demCandidate": "Al Lawson, Jr.", "repCandidate": "Neal P. Dunn", "demVotes": 121153, "repVotes": 180236, "totalVotes": 301389, "margin": 19.6 },
-      { "year": 2020, "demPct": 0, "repPct": 97.86, "repCandidate": "Neal P. Dunn", "repVotes": 305337, "totalVotes": 311999, "margin": 97.86, "repIncumbent": true },
-      { "year": 2018, "demPct": 32.56, "repPct": 67.44, "demCandidate": "Bob Rackleff", "repCandidate": "Neal P. Dunn", "demVotes": 96233, "repVotes": 199335, "totalVotes": 295568, "margin": 34.88, "repIncumbent": true },
+      { "year": 2024, "demPct": 38.36, "repPct": 61.64, "demCandidate": "Yen Bailey", "repCandidate": "Neal Dunn", "demVotes": 154323, "repVotes": 247957, "totalVotes": 402280, "margin": 23.28, "repIncumbent": true },
+      { "year": 2022, "demPct": 40.2, "repPct": 59.8, "demCandidate": "Al Lawson", "repCandidate": "Neal Dunn", "demVotes": 121153, "repVotes": 180236, "totalVotes": 301389, "margin": 19.6 },
+      { "year": 2020, "demPct": 0, "repPct": 97.86, "repCandidate": "Neal Dunn", "repVotes": 305337, "totalVotes": 311999, "margin": 97.86, "repIncumbent": true },
+      { "year": 2018, "demPct": 32.56, "repPct": 67.44, "demCandidate": "Bob Rackleff", "repCandidate": "Neal Dunn", "demVotes": 96233, "repVotes": 199335, "totalVotes": 295568, "margin": 34.88, "repIncumbent": true },
       { "year": 2016, "demPct": 29.94, "repPct": 67.32, "demCandidate": "Walter Dartland", "repCandidate": "Neal Dunn", "demVotes": 102801, "repVotes": 231163, "totalVotes": 343362, "margin": 37.38 }
     ]
   },
@@ -6346,8 +6346,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 38.39, "repPct": 61.61, "demCandidate": "Tom Wells", "repCandidate": "Kat Cammack", "demVotes": 150283, "repVotes": 241174, "totalVotes": 391457, "margin": 23.22, "repIncumbent": true },
       { "year": 2022, "demPct": 36.29, "repPct": 62.52, "demCandidate": "Danielle Hawk", "repCandidate": "Kat Cammack", "demVotes": 103382, "repVotes": 178101, "totalVotes": 284893, "margin": 26.23, "repIncumbent": true },
       { "year": 2020, "demPct": 42.86, "repPct": 57.14, "demCandidate": "Adam Christensen", "repCandidate": "Kat Cammack", "demVotes": 167326, "repVotes": 223075, "totalVotes": 390401, "margin": 14.28 },
-      { "year": 2018, "demPct": 42.38, "repPct": 57.62, "demCandidate": "Yvonne Hayes Hinson", "repCandidate": "Ted S. Yoho", "demVotes": 129880, "repVotes": 176616, "totalVotes": 306496, "margin": 15.24, "repIncumbent": true },
-      { "year": 2016, "demPct": 39.78, "repPct": 56.56, "demCandidate": "Kenneth “Ken” McGurn", "repCandidate": "Ted S. Yoho", "demVotes": 136338, "repVotes": 193843, "totalVotes": 342700, "margin": 16.78, "repIncumbent": true }
+      { "year": 2018, "demPct": 42.38, "repPct": 57.62, "demCandidate": "Yvonne Hayes Hinson", "repCandidate": "Ted Yoho", "demVotes": 129880, "repVotes": 176616, "totalVotes": 306496, "margin": 15.24, "repIncumbent": true },
+      { "year": 2016, "demPct": 39.78, "repPct": 56.56, "demCandidate": "Ken McGurn", "repCandidate": "Ted Yoho", "demVotes": 136338, "repVotes": 193843, "totalVotes": 342700, "margin": 16.78, "repIncumbent": true }
     ]
   },
   {
@@ -6376,11 +6376,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Aaron Bean",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 42.72, "repPct": 57.26, "demCandidate": "LaShonda “L. J.” Holloway", "repCandidate": "Aaron Bean", "demVotes": 165912, "repVotes": 222364, "totalVotes": 388349, "margin": 14.54, "repIncumbent": true },
-      { "year": 2022, "demPct": 39.55, "repPct": 60.45, "demCandidate": "LaShonda “LJ” Holloway", "repCandidate": "Aaron Bean", "demVotes": 108402, "repVotes": 165696, "totalVotes": 274103, "margin": 20.9 },
-      { "year": 2020, "demPct": 38.9, "repPct": 61.1, "demCandidate": "Donna Deegan", "repCandidate": "John H. Rutherford", "demVotes": 196423, "repVotes": 308497, "totalVotes": 504940, "margin": 22.2, "repIncumbent": true },
-      { "year": 2018, "demPct": 32.35, "repPct": 65.16, "demCandidate": "George “Ges” Selmont", "repCandidate": "John H. Rutherford", "demVotes": 123351, "repVotes": 248420, "totalVotes": 381249, "margin": 32.81, "repIncumbent": true },
-      { "year": 2016, "demPct": 27.61, "repPct": 70.18, "demCandidate": "David E. Bruderly", "repCandidate": "John Rutherford", "demVotes": 113088, "repVotes": 287509, "totalVotes": 409662, "margin": 42.57 }
+      { "year": 2024, "demPct": 42.72, "repPct": 57.26, "demCandidate": "L. J. Holloway", "repCandidate": "Aaron Bean", "demVotes": 165912, "repVotes": 222364, "totalVotes": 388349, "margin": 14.54, "repIncumbent": true },
+      { "year": 2022, "demPct": 39.55, "repPct": 60.45, "demCandidate": "LJ Holloway", "repCandidate": "Aaron Bean", "demVotes": 108402, "repVotes": 165696, "totalVotes": 274103, "margin": 20.9 },
+      { "year": 2020, "demPct": 38.9, "repPct": 61.1, "demCandidate": "Donna Deegan", "repCandidate": "John Rutherford", "demVotes": 196423, "repVotes": 308497, "totalVotes": 504940, "margin": 22.2, "repIncumbent": true },
+      { "year": 2018, "demPct": 32.35, "repPct": 65.16, "demCandidate": "Ges Selmont", "repCandidate": "John Rutherford", "demVotes": 123351, "repVotes": 248420, "totalVotes": 381249, "margin": 32.81, "repIncumbent": true },
+      { "year": 2016, "demPct": 27.61, "repPct": 70.18, "demCandidate": "David Bruderly", "repCandidate": "John Rutherford", "demVotes": 113088, "repVotes": 287509, "totalVotes": 409662, "margin": 42.57 }
     ]
   },
   {
@@ -6409,10 +6409,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "John Rutherford",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 36.92, "repPct": 63.07, "demCandidate": "Jay McGovern", "repCandidate": "John H. Rutherford", "demVotes": 156570, "repVotes": 267471, "totalVotes": 424064, "margin": 26.15, "repIncumbent": true },
+      { "year": 2024, "demPct": 36.92, "repPct": 63.07, "demCandidate": "Jay McGovern", "repCandidate": "John Rutherford", "demVotes": 156570, "repVotes": 267471, "totalVotes": 424064, "margin": 26.15, "repIncumbent": true },
       { "year": 2022, "demPct": 0, "repPct": 100, "repCandidate": "John Rutherford", "margin": 100 },
-      { "year": 2020, "demPct": 65.13, "repPct": 34.87, "demCandidate": "Al Lawson, Jr.", "repCandidate": "Gary Adler", "demVotes": 219463, "repVotes": 117510, "totalVotes": 336973, "margin": -30.26, "demIncumbent": true },
-      { "year": 2018, "demPct": 66.78, "repPct": 33.22, "demCandidate": "Al Lawson, Jr.", "repCandidate": "Virginia Fuller", "demVotes": 180527, "repVotes": 89799, "totalVotes": 270326, "margin": -33.56, "demIncumbent": true },
+      { "year": 2020, "demPct": 65.13, "repPct": 34.87, "demCandidate": "Al Lawson", "repCandidate": "Gary Adler", "demVotes": 219463, "repVotes": 117510, "totalVotes": 336973, "margin": -30.26, "demIncumbent": true },
+      { "year": 2018, "demPct": 66.78, "repPct": 33.22, "demCandidate": "Al Lawson", "repCandidate": "Virginia Fuller", "demVotes": 180527, "repVotes": 89799, "totalVotes": 270326, "margin": -33.56, "demIncumbent": true },
       { "year": 2016, "demPct": 64.23, "repPct": 35.77, "demCandidate": "Al Lawson", "repCandidate": "Glo Smith", "demVotes": 194549, "repVotes": 108325, "totalVotes": 302874, "margin": -28.46 }
     ]
   },
@@ -6442,11 +6442,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Randy Fine",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 33.46, "repPct": 66.53, "demCandidate": "James David Stockton III", "repCandidate": "Michael Waltz", "demVotes": 143050, "repVotes": 284414, "totalVotes": 427474, "margin": 33.07, "repIncumbent": true },
-      { "year": 2022, "demPct": 24.67, "repPct": 75.33, "demCandidate": "Joseph “Joe” Hannoush (L)", "repCandidate": "Michael Waltz", "demVotes": 74207, "repVotes": 226548, "totalVotes": 300755, "margin": 50.66, "repIncumbent": true },
+      { "year": 2024, "demPct": 33.46, "repPct": 66.53, "demCandidate": "James David Stockton", "repCandidate": "Michael Waltz", "demVotes": 143050, "repVotes": 284414, "totalVotes": 427474, "margin": 33.07, "repIncumbent": true },
+      { "year": 2022, "demPct": 24.67, "repPct": 75.33, "demCandidate": "Joe Hannoush (L)", "repCandidate": "Michael Waltz", "demVotes": 74207, "repVotes": 226548, "totalVotes": 300755, "margin": 50.66, "repIncumbent": true },
       { "year": 2020, "demPct": 39.35, "repPct": 60.61, "demCandidate": "Clint Curtis", "repCandidate": "Michael Waltz", "demVotes": 172305, "repVotes": 265393, "totalVotes": 437856, "margin": 21.26, "repIncumbent": true },
       { "year": 2018, "demPct": 43.69, "repPct": 56.31, "demCandidate": "Nancy Soderberg", "repCandidate": "Michael Waltz", "demVotes": 145758, "repVotes": 187891, "totalVotes": 333649, "margin": 12.62 },
-      { "year": 2016, "demPct": 41.43, "repPct": 58.57, "demCandidate": "William “Bill” McCullough", "repCandidate": "Ron DeSantis", "demVotes": 151051, "repVotes": 213519, "totalVotes": 364570, "margin": 17.14, "repIncumbent": true }
+      { "year": 2016, "demPct": 41.43, "repPct": 58.57, "demCandidate": "Bill McCullough", "repCandidate": "Ron DeSantis", "demVotes": 151051, "repVotes": 213519, "totalVotes": 364570, "margin": 17.14, "repIncumbent": true }
     ]
   },
   {
@@ -6477,9 +6477,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 43.47, "repPct": 56.53, "demCandidate": "Jennifer Adams", "repCandidate": "Cory Mills", "demVotes": 179917, "repVotes": 233937, "totalVotes": 413854, "margin": 13.06, "repIncumbent": true },
       { "year": 2022, "demPct": 41.47, "repPct": 58.53, "demCandidate": "Karen Green", "repCandidate": "Cory Mills", "demVotes": 126079, "repVotes": 177966, "totalVotes": 304055, "margin": 17.06 },
-      { "year": 2020, "demPct": 55.34, "repPct": 43.24, "demCandidate": "Stephanie N. Murphy", "repCandidate": "Leo Valentin", "demVotes": 224946, "repVotes": 175750, "totalVotes": 406449, "margin": -12.1, "demIncumbent": true },
-      { "year": 2018, "demPct": 57.69, "repPct": 42.31, "demCandidate": "Stephanie N. Murphy", "repCandidate": "Mike Miller", "demVotes": 183113, "repVotes": 134285, "totalVotes": 317398, "margin": -15.38, "demIncumbent": true },
-      { "year": 2016, "demPct": 51.47, "repPct": 48.52, "demCandidate": "Stephanie Murphy", "repCandidate": "John L. Mica", "demVotes": 182039, "repVotes": 171583, "totalVotes": 353655, "margin": -2.95, "repIncumbent": true }
+      { "year": 2020, "demPct": 55.34, "repPct": 43.24, "demCandidate": "Stephanie Murphy", "repCandidate": "Leo Valentin", "demVotes": 224946, "repVotes": 175750, "totalVotes": 406449, "margin": -12.1, "demIncumbent": true },
+      { "year": 2018, "demPct": 57.69, "repPct": 42.31, "demCandidate": "Stephanie Murphy", "repCandidate": "Mike Miller", "demVotes": 183113, "repVotes": 134285, "totalVotes": 317398, "margin": -15.38, "demIncumbent": true },
+      { "year": 2016, "demPct": 51.47, "repPct": 48.52, "demCandidate": "Stephanie Murphy", "repCandidate": "John Mica", "demVotes": 182039, "repVotes": 171583, "totalVotes": 353655, "margin": -2.95, "repIncumbent": true }
     ]
   },
   {
@@ -6543,7 +6543,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 55.13, "repPct": 42.58, "demCandidate": "Darren Soto", "repCandidate": "Thomas Chalifoux", "demVotes": 178785, "repVotes": 138076, "totalVotes": 324273, "margin": -12.55, "demIncumbent": true },
       { "year": 2022, "demPct": 53.64, "repPct": 46.36, "demCandidate": "Darren Soto", "repCandidate": "Scotty Moore", "demVotes": 108541, "repVotes": 93827, "totalVotes": 202368, "margin": -7.28, "demIncumbent": true },
-      { "year": 2020, "demPct": 56.03, "repPct": 43.96, "demCandidate": "Darren Soto", "repCandidate": "William P. “Bill” Olson", "demVotes": 240724, "repVotes": 188889, "totalVotes": 429638, "margin": -12.07, "demIncumbent": true },
+      { "year": 2020, "demPct": 56.03, "repPct": 43.96, "demCandidate": "Darren Soto", "repCandidate": "Bill Olson", "demVotes": 240724, "repVotes": 188889, "totalVotes": 429638, "margin": -12.07, "demIncumbent": true },
       { "year": 2018, "demPct": 58.02, "repPct": 41.98, "demCandidate": "Darren Soto", "repCandidate": "Wayne Liebnitzky", "demVotes": 172172, "repVotes": 124565, "totalVotes": 296737, "margin": -16.04, "demIncumbent": true },
       { "year": 2016, "demPct": 57.48, "repPct": 42.52, "demCandidate": "Darren Soto", "repCandidate": "Wayne Liebnitzky", "demVotes": 195311, "repVotes": 144450, "totalVotes": 339761, "margin": -14.96 }
     ]
@@ -6574,8 +6574,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Maxwell Frost",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 62.37, "repPct": 37.63, "demCandidate": "Maxwell Frost", "repCandidate": "Willie J. Montague", "demVotes": 181455, "repVotes": 109460, "totalVotes": 290915, "margin": -24.74, "demIncumbent": true },
-      { "year": 2022, "demPct": 59, "repPct": 39.44, "demCandidate": "Maxwell Alejandro Frost", "repCandidate": "Calvin B. Wimbish", "demVotes": 117955, "repVotes": 78844, "totalVotes": 199910, "margin": -19.56 },
+      { "year": 2024, "demPct": 62.37, "repPct": 37.63, "demCandidate": "Maxwell Frost", "repCandidate": "Willie Montague", "demVotes": 181455, "repVotes": 109460, "totalVotes": 290915, "margin": -24.74, "demIncumbent": true },
+      { "year": 2022, "demPct": 59, "repPct": 39.44, "demCandidate": "Maxwell Alejandro Frost", "repCandidate": "Calvin Wimbish", "demVotes": 117955, "repVotes": 78844, "totalVotes": 199910, "margin": -19.56 },
       { "year": 2020, "demPct": 63.61, "repPct": 36.37, "demCandidate": "Val Butler Demings", "repCandidate": "Vennia Francois", "demVotes": 239434, "repVotes": 136889, "totalVotes": 376397, "margin": -27.24, "demIncumbent": true },
       { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Val Demings", "margin": -100, "demIncumbent": true },
       { "year": 2016, "demPct": 64.87, "repPct": 35.13, "demCandidate": "Val Demings", "repCandidate": "Thuy Lowe", "demVotes": 198491, "repVotes": 107498, "totalVotes": 305989, "margin": -29.74 }
@@ -6637,14 +6637,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Christopher Irizarry", "party": "D", "incumbent": false },
       "rep": { "name": "Gus Bilirakis", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Gus M. Bilirakis",
+    "seatHolder": "Gus Bilirakis",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 28.96, "repPct": 71.04, "demCandidate": "Rock Aboujaoude, Jr.", "repCandidate": "Gus M. Bilirakis", "demVotes": 124949, "repVotes": 306487, "totalVotes": 431436, "margin": 42.08, "repIncumbent": true },
-      { "year": 2022, "demPct": 29.62, "repPct": 70.37, "demCandidate": "Kimberly Walker", "repCandidate": "Gus M. Bilirakis", "demVotes": 95390, "repVotes": 226601, "totalVotes": 321995, "margin": 40.75, "repIncumbent": true },
-      { "year": 2020, "demPct": 37.12, "repPct": 62.88, "demCandidate": "Kimberly Walker", "repCandidate": "Gus M. Bilirakis", "demVotes": 168194, "repVotes": 284941, "totalVotes": 453135, "margin": 25.76, "repIncumbent": true },
-      { "year": 2018, "demPct": 39.66, "repPct": 58.09, "demCandidate": "Chris Hunter", "repCandidate": "Gus M. Bilirakis", "demVotes": 132844, "repVotes": 194564, "totalVotes": 334918, "margin": 18.43, "repIncumbent": true },
-      { "year": 2016, "demPct": 31.41, "repPct": 68.59, "demCandidate": "Robert Matthew Tager", "repCandidate": "Gus M. Bilirakis", "demVotes": 116110, "repVotes": 253559, "totalVotes": 369669, "margin": 37.18, "repIncumbent": true }
+      { "year": 2024, "demPct": 28.96, "repPct": 71.04, "demCandidate": "Rock Aboujaoude", "repCandidate": "Gus Bilirakis", "demVotes": 124949, "repVotes": 306487, "totalVotes": 431436, "margin": 42.08, "repIncumbent": true },
+      { "year": 2022, "demPct": 29.62, "repPct": 70.37, "demCandidate": "Kimberly Walker", "repCandidate": "Gus Bilirakis", "demVotes": 95390, "repVotes": 226601, "totalVotes": 321995, "margin": 40.75, "repIncumbent": true },
+      { "year": 2020, "demPct": 37.12, "repPct": 62.88, "demCandidate": "Kimberly Walker", "repCandidate": "Gus Bilirakis", "demVotes": 168194, "repVotes": 284941, "totalVotes": 453135, "margin": 25.76, "repIncumbent": true },
+      { "year": 2018, "demPct": 39.66, "repPct": 58.09, "demCandidate": "Chris Hunter", "repCandidate": "Gus Bilirakis", "demVotes": 132844, "repVotes": 194564, "totalVotes": 334918, "margin": 18.43, "repIncumbent": true },
+      { "year": 2016, "demPct": 31.41, "repPct": 68.59, "demCandidate": "Robert Matthew Tager", "repCandidate": "Gus Bilirakis", "demVotes": 116110, "repVotes": 253559, "totalVotes": 369669, "margin": 37.18, "repIncumbent": true }
     ]
   },
   {
@@ -6675,7 +6675,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 45.05, "repPct": 53.14, "demCandidate": "Eric Lynn", "repCandidate": "Anna Paulina Luna", "demVotes": 153876, "repVotes": 181487, "totalVotes": 341546, "margin": 8.09 },
       { "year": 2020, "demPct": 53.04, "repPct": 46.96, "demCandidate": "Charlie Crist", "repCandidate": "Anna Paulina Luna", "demVotes": 215405, "repVotes": 190713, "totalVotes": 406125, "margin": -6.08, "demIncumbent": true },
       { "year": 2018, "demPct": 57.64, "repPct": 42.36, "demCandidate": "Charlie Crist", "repCandidate": "George Buck", "demVotes": 182717, "repVotes": 134254, "totalVotes": 316971, "margin": -15.28, "demIncumbent": true },
-      { "year": 2016, "demPct": 51.9, "repPct": 48.1, "demCandidate": "Charlie Crist", "repCandidate": "David W. Jolly", "demVotes": 184693, "repVotes": 171149, "totalVotes": 355842, "margin": -3.8, "repIncumbent": true }
+      { "year": 2016, "demPct": 51.9, "repPct": 48.1, "demCandidate": "Charlie Crist", "repCandidate": "David Jolly", "demVotes": 184693, "repVotes": 171149, "totalVotes": 355842, "margin": -3.8, "repIncumbent": true }
     ]
   },
   {
@@ -6704,9 +6704,9 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Kathy Castor",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 56.95, "repPct": 41.59, "demCandidate": "Kathy Castor", "repCandidate": "Robert “Rocky” Rochford", "demVotes": 199423, "repVotes": 145643, "totalVotes": 350185, "margin": -15.36, "demIncumbent": true },
+      { "year": 2024, "demPct": 56.95, "repPct": 41.59, "demCandidate": "Kathy Castor", "repCandidate": "Rocky Rochford", "demVotes": 199423, "repVotes": 145643, "totalVotes": 350185, "margin": -15.36, "demIncumbent": true },
       { "year": 2022, "demPct": 56.9, "repPct": 43.1, "demCandidate": "Kathy Castor", "repCandidate": "James Judge", "demVotes": 149737, "repVotes": 113427, "totalVotes": 263164, "margin": -13.8, "demIncumbent": true },
-      { "year": 2020, "demPct": 60.26, "repPct": 39.74, "demCandidate": "Kathy Castor", "repCandidate": "Christine Y. Quinn", "demVotes": 224240, "repVotes": 147896, "totalVotes": 372136, "margin": -20.52, "demIncumbent": true },
+      { "year": 2020, "demPct": 60.26, "repPct": 39.74, "demCandidate": "Kathy Castor", "repCandidate": "Christine Quinn", "demVotes": 224240, "repVotes": 147896, "totalVotes": 372136, "margin": -20.52, "demIncumbent": true },
       { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Kathy Castor", "margin": -100, "demIncumbent": true },
       { "year": 2016, "demPct": 61.79, "repPct": 38.21, "demCandidate": "Kathy Castor", "repCandidate": "Christine Quinn", "demVotes": 195789, "repVotes": 121088, "totalVotes": 316877, "margin": -23.58, "demIncumbent": true }
     ]
@@ -6734,14 +6734,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Darren McAuley", "party": "D", "incumbent": false },
       "rep": { "name": "Laurel Lee", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Laurel M. Lee",
+    "seatHolder": "Laurel Lee",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 43.82, "repPct": 56.18, "demCandidate": "Patricia “Pat” Kemp", "repCandidate": "Laurel M. Lee", "demVotes": 152361, "repVotes": 195334, "totalVotes": 347695, "margin": 12.36, "repIncumbent": true },
-      { "year": 2022, "demPct": 41.46, "repPct": 58.54, "demCandidate": "Alan M. Cohn", "repCandidate": "Laurel Lee", "demVotes": 102835, "repVotes": 145219, "totalVotes": 248054, "margin": 17.08 },
+      { "year": 2024, "demPct": 43.82, "repPct": 56.18, "demCandidate": "Pat Kemp", "repCandidate": "Laurel Lee", "demVotes": 152361, "repVotes": 195334, "totalVotes": 347695, "margin": 12.36, "repIncumbent": true },
+      { "year": 2022, "demPct": 41.46, "repPct": 58.54, "demCandidate": "Alan Cohn", "repCandidate": "Laurel Lee", "demVotes": 102835, "repVotes": 145219, "totalVotes": 248054, "margin": 17.08 },
       { "year": 2020, "demPct": 44.61, "repPct": 55.39, "demCandidate": "Alan Cohn", "repCandidate": "Scott Franklin", "demVotes": 174297, "repVotes": 216374, "totalVotes": 390671, "margin": 10.78 },
       { "year": 2018, "demPct": 46.98, "repPct": 53.02, "demCandidate": "Kristen Carlson", "repCandidate": "Ross Spano", "demVotes": 134132, "repVotes": 151380, "totalVotes": 285532, "margin": 6.04 },
-      { "year": 2016, "demPct": 42.54, "repPct": 57.46, "demCandidate": "Jim Lange", "repCandidate": "Dennis A. Ross", "demVotes": 135475, "repVotes": 182999, "totalVotes": 318474, "margin": 14.92, "repIncumbent": true }
+      { "year": 2016, "demPct": 42.54, "repPct": 57.46, "demCandidate": "Jim Lange", "repCandidate": "Dennis Ross", "demVotes": 135475, "repVotes": 182999, "totalVotes": 318474, "margin": 14.92, "repIncumbent": true }
     ]
   },
   {
@@ -6803,11 +6803,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Greg Steube",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 36.1, "repPct": 63.9, "demCandidate": "Manny Lopez", "repCandidate": "W. Gregory Steube", "demVotes": 164566, "repVotes": 291347, "totalVotes": 455921, "margin": 27.8, "repIncumbent": true },
-      { "year": 2022, "demPct": 35.52, "repPct": 63.84, "demCandidate": "Andrea Doria Kale", "repCandidate": "W. Gregory Steube", "demVotes": 123798, "repVotes": 222483, "totalVotes": 348506, "margin": 28.32, "repIncumbent": true },
-      { "year": 2020, "demPct": 34.07, "repPct": 64.63, "demCandidate": "Allen Ellison", "repCandidate": "W. Gregory Steube", "demVotes": 140487, "repVotes": 266514, "totalVotes": 412397, "margin": 30.56, "repIncumbent": true },
-      { "year": 2018, "demPct": 37.74, "repPct": 62.26, "demCandidate": "Allen L. Ellison", "repCandidate": "Greg Steube", "demVotes": 117194, "repVotes": 193326, "totalVotes": 310520, "margin": 24.52 },
-      { "year": 2016, "demPct": 34.24, "repPct": 61.81, "demCandidate": "April Freeman", "repCandidate": "Thomas J. Rooney", "demVotes": 115974, "repVotes": 209348, "totalVotes": 338675, "margin": 27.57, "repIncumbent": true }
+      { "year": 2024, "demPct": 36.1, "repPct": 63.9, "demCandidate": "Manny Lopez", "repCandidate": "Gregory Steube", "demVotes": 164566, "repVotes": 291347, "totalVotes": 455921, "margin": 27.8, "repIncumbent": true },
+      { "year": 2022, "demPct": 35.52, "repPct": 63.84, "demCandidate": "Andrea Doria Kale", "repCandidate": "Gregory Steube", "demVotes": 123798, "repVotes": 222483, "totalVotes": 348506, "margin": 28.32, "repIncumbent": true },
+      { "year": 2020, "demPct": 34.07, "repPct": 64.63, "demCandidate": "Allen Ellison", "repCandidate": "Gregory Steube", "demVotes": 140487, "repVotes": 266514, "totalVotes": 412397, "margin": 30.56, "repIncumbent": true },
+      { "year": 2018, "demPct": 37.74, "repPct": 62.26, "demCandidate": "Allen Ellison", "repCandidate": "Greg Steube", "demVotes": 117194, "repVotes": 193326, "totalVotes": 310520, "margin": 24.52 },
+      { "year": 2016, "demPct": 34.24, "repPct": 61.81, "demCandidate": "April Freeman", "repCandidate": "Thomas Rooney", "demVotes": 115974, "repVotes": 209348, "totalVotes": 338675, "margin": 27.57, "repIncumbent": true }
     ]
   },
   {
@@ -6837,9 +6837,9 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 34.7, "repPct": 65.3, "demCandidate": "Andrea Doria Kale", "repCandidate": "Scott Franklin", "demVotes": 119637, "repVotes": 225170, "totalVotes": 344807, "margin": 30.6, "repIncumbent": true },
-      { "year": 2022, "demPct": 25.26, "repPct": 74.67, "demCandidate": "Keith R. Hayden, Jr. (NPA)", "repCandidate": "C. Scott Franklin", "demVotes": 56647, "repVotes": 167429, "totalVotes": 224234, "margin": 49.41 },
-      { "year": 2020, "demPct": 41.51, "repPct": 56.32, "demCandidate": "Pam Keith", "repCandidate": "Brian J. Mast", "demVotes": 186674, "repVotes": 253286, "totalVotes": 449720, "margin": 14.81, "repIncumbent": true },
-      { "year": 2018, "demPct": 45.7, "repPct": 54.3, "demCandidate": "Lauren Baer", "repCandidate": "Brian J. Mast", "demVotes": 156454, "repVotes": 185905, "totalVotes": 342359, "margin": 8.6, "repIncumbent": true },
+      { "year": 2022, "demPct": 25.26, "repPct": 74.67, "demCandidate": "Keith Hayden Jr. (NPA)", "repCandidate": "Scott Franklin", "demVotes": 56647, "repVotes": 167429, "totalVotes": 224234, "margin": 49.41 },
+      { "year": 2020, "demPct": 41.51, "repPct": 56.32, "demCandidate": "Pam Keith", "repCandidate": "Brian Mast", "demVotes": 186674, "repVotes": 253286, "totalVotes": 449720, "margin": 14.81, "repIncumbent": true },
+      { "year": 2018, "demPct": 45.7, "repPct": 54.3, "demCandidate": "Lauren Baer", "repCandidate": "Brian Mast", "demVotes": 156454, "repVotes": 185905, "totalVotes": 342359, "margin": 8.6, "repIncumbent": true },
       { "year": 2016, "demPct": 43.07, "repPct": 53.6, "demCandidate": "Randy Perkins", "repCandidate": "Brian Mast", "demVotes": 161918, "repVotes": 201488, "totalVotes": 375918, "margin": 10.53 }
     ]
   },
@@ -6869,11 +6869,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Byron Donalds",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 33.68, "repPct": 66.32, "demCandidate": "Kari L. Lerner", "repCandidate": "Byron Donalds", "demVotes": 140038, "repVotes": 275708, "totalVotes": 415746, "margin": 32.64, "repIncumbent": true },
+      { "year": 2024, "demPct": 33.68, "repPct": 66.32, "demCandidate": "Kari Lerner", "repCandidate": "Byron Donalds", "demVotes": 140038, "repVotes": 275708, "totalVotes": 415746, "margin": 32.64, "repIncumbent": true },
       { "year": 2022, "demPct": 31.99, "repPct": 68, "demCandidate": "Cindy Banyai", "repCandidate": "Byron Donalds", "demVotes": 100226, "repVotes": 213035, "totalVotes": 313274, "margin": 36.01, "repIncumbent": true },
       { "year": 2020, "demPct": 38.72, "repPct": 61.28, "demCandidate": "Cindy Lyn Banyai", "repCandidate": "Byron Donalds", "demVotes": 172146, "repVotes": 272440, "totalVotes": 444589, "margin": 22.56 },
       { "year": 2018, "demPct": 37.72, "repPct": 62.27, "demCandidate": "David Holden", "repCandidate": "Francis Rooney", "demVotes": 128106, "repVotes": 211465, "totalVotes": 339607, "margin": 24.55, "repIncumbent": true },
-      { "year": 2016, "demPct": 34.09, "repPct": 65.87, "demCandidate": "Robert M. Neeld", "repCandidate": "Francis Rooney", "demVotes": 123812, "repVotes": 239225, "totalVotes": 363166, "margin": 31.78 }
+      { "year": 2016, "demPct": 34.09, "repPct": 65.87, "demCandidate": "Robert Neeld", "repCandidate": "Francis Rooney", "demVotes": 123812, "repVotes": 239225, "totalVotes": 363166, "margin": 31.78 }
     ]
   },
   {
@@ -6904,9 +6904,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 100, "repPct": 0, "demCandidate": "Sheila Cherfilus-McCormick", "margin": -100, "demIncumbent": true },
       { "year": 2022, "demPct": 72.31, "repPct": 27.69, "demCandidate": "Sheila Cherfilus-McCormick", "repCandidate": "Drew Montez Clark", "demVotes": 136215, "repVotes": 52151, "totalVotes": 188366, "margin": -44.62, "demIncumbent": true },
-      { "year": 2020, "demPct": 78.68, "repPct": 21.32, "demCandidate": "Alcee L. Hastings", "repCandidate": "Greg Musselwhite", "demVotes": 253661, "repVotes": 68748, "totalVotes": 322409, "margin": -57.36, "demIncumbent": true },
-      { "year": 2018, "demPct": 99.92, "repPct": 0, "demCandidate": "Alcee L. Hastings", "demVotes": 202659, "totalVotes": 202824, "margin": -99.92, "demIncumbent": true },
-      { "year": 2016, "demPct": 80.31, "repPct": 19.69, "demCandidate": "Alcee L. Hastings", "repCandidate": "Gary Stein", "demVotes": 222914, "repVotes": 54646, "totalVotes": 277560, "margin": -60.62, "demIncumbent": true }
+      { "year": 2020, "demPct": 78.68, "repPct": 21.32, "demCandidate": "Alcee Hastings", "repCandidate": "Greg Musselwhite", "demVotes": 253661, "repVotes": 68748, "totalVotes": 322409, "margin": -57.36, "demIncumbent": true },
+      { "year": 2018, "demPct": 99.92, "repPct": 0, "demCandidate": "Alcee Hastings", "demVotes": 202659, "totalVotes": 202824, "margin": -99.92, "demIncumbent": true },
+      { "year": 2016, "demPct": 80.31, "repPct": 19.69, "demCandidate": "Alcee Hastings", "repCandidate": "Gary Stein", "demVotes": 222914, "repVotes": 54646, "totalVotes": 277560, "margin": -60.62, "demIncumbent": true }
     ]
   },
   {
@@ -6932,11 +6932,11 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Pia Dandiya", "party": "D", "incumbent": false },
       "rep": { "name": "Brian Mast", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Brian J. Mast",
+    "seatHolder": "Brian Mast",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 38.17, "repPct": 61.82, "demCandidate": "Thomas Witkop", "repCandidate": "Brian J. Mast", "demVotes": 171312, "repVotes": 277435, "totalVotes": 448766, "margin": 23.65, "repIncumbent": true },
-      { "year": 2022, "demPct": 36.5, "repPct": 63.5, "demCandidate": "Corinna Balderramos Robinson", "repCandidate": "Brian J. Mast", "demVotes": 119891, "repVotes": 208614, "totalVotes": 328505, "margin": 27 },
+      { "year": 2024, "demPct": 38.17, "repPct": 61.82, "demCandidate": "Thomas Witkop", "repCandidate": "Brian Mast", "demVotes": 171312, "repVotes": 277435, "totalVotes": 448766, "margin": 23.65, "repIncumbent": true },
+      { "year": 2022, "demPct": 36.5, "repPct": 63.5, "demCandidate": "Corinna Balderramos Robinson", "repCandidate": "Brian Mast", "demVotes": 119891, "repVotes": 208614, "totalVotes": 328505, "margin": 27 },
       { "year": 2020, "demPct": 59.02, "repPct": 39.1, "demCandidate": "Lois Frankel", "repCandidate": "Laura Loomer", "demVotes": 237925, "repVotes": 157612, "totalVotes": 403093, "margin": -19.92, "demIncumbent": true },
       { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Lois Frankel", "margin": -100, "demIncumbent": true },
       { "year": 2016, "demPct": 62.71, "repPct": 35.14, "demCandidate": "Lois Frankel", "repCandidate": "Paul Spain", "demVotes": 210606, "repVotes": 118038, "totalVotes": 335861, "margin": -27.57 }
@@ -6970,9 +6970,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 54.96, "repPct": 45.04, "demCandidate": "Lois Frankel", "repCandidate": "Dan Franzese", "demVotes": 201608, "repVotes": 165248, "totalVotes": 366856, "margin": -9.92, "demIncumbent": true },
       { "year": 2022, "demPct": 55.11, "repPct": 44.89, "demCandidate": "Lois Frankel", "repCandidate": "Dan Franzese", "demVotes": 150010, "repVotes": 122194, "totalVotes": 272204, "margin": -10.22 },
-      { "year": 2020, "demPct": 58.6, "repPct": 41.4, "demCandidate": "Theodore E. Deutch", "repCandidate": "James “Jim” Pruden", "demVotes": 235764, "repVotes": 166553, "totalVotes": 402317, "margin": -17.2, "demIncumbent": true },
-      { "year": 2018, "demPct": 62.02, "repPct": 37.98, "demCandidate": "Theodore E. Deutch", "repCandidate": "Nicolas Kimaz", "demVotes": 184634, "repVotes": 113049, "totalVotes": 297683, "margin": -24.04, "demIncumbent": true },
-      { "year": 2016, "demPct": 58.94, "repPct": 41.06, "demCandidate": "Theodore E. Deutch", "repCandidate": "Andrea Leigh McGee", "demVotes": 199113, "repVotes": 138737, "totalVotes": 337850, "margin": -17.88 }
+      { "year": 2020, "demPct": 58.6, "repPct": 41.4, "demCandidate": "Theodore Deutch", "repCandidate": "Jim Pruden", "demVotes": 235764, "repVotes": 166553, "totalVotes": 402317, "margin": -17.2, "demIncumbent": true },
+      { "year": 2018, "demPct": 62.02, "repPct": 37.98, "demCandidate": "Theodore Deutch", "repCandidate": "Nicolas Kimaz", "demVotes": 184634, "repVotes": 113049, "totalVotes": 297683, "margin": -24.04, "demIncumbent": true },
+      { "year": 2016, "demPct": 58.94, "repPct": 41.06, "demCandidate": "Theodore Deutch", "repCandidate": "Andrea Leigh McGee", "demVotes": 199113, "repVotes": 138737, "totalVotes": 337850, "margin": -17.88 }
     ]
   },
   {
@@ -6999,11 +6999,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jared Moskowitz",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 52.45, "repPct": 47.55, "demCandidate": "Jared Moskowitz", "repCandidate": "Joseph “Joe” Kaufman", "demVotes": 196311, "repVotes": 178006, "totalVotes": 374317, "margin": -4.9, "demIncumbent": true },
+      { "year": 2024, "demPct": 52.45, "repPct": 47.55, "demCandidate": "Jared Moskowitz", "repCandidate": "Joe Kaufman", "demVotes": 196311, "repVotes": 178006, "totalVotes": 374317, "margin": -4.9, "demIncumbent": true },
       { "year": 2022, "demPct": 51.59, "repPct": 46.83, "demCandidate": "Jared Moskowitz", "repCandidate": "Joe Budd", "demVotes": 143951, "repVotes": 130681, "totalVotes": 279049, "margin": -4.76 },
       { "year": 2020, "demPct": 58.19, "repPct": 41.79, "demCandidate": "Debbie Wasserman Schultz", "repCandidate": "Carla Spalding", "demVotes": 221239, "repVotes": 158874, "totalVotes": 380196, "margin": -16.4, "demIncumbent": true },
-      { "year": 2018, "demPct": 58.48, "repPct": 35.98, "demCandidate": "Debbie Wasserman Schultz", "repCandidate": "Joseph “Joe” Kaufman", "demVotes": 161611, "repVotes": 99446, "totalVotes": 276366, "margin": -22.5, "demIncumbent": true },
-      { "year": 2016, "demPct": 56.7, "repPct": 40.49, "demCandidate": "Debbie Wasserman Schultz", "repCandidate": "Joseph “Joe” Kaufman", "demVotes": 183225, "repVotes": 130818, "totalVotes": 323120, "margin": -16.21, "demIncumbent": true }
+      { "year": 2018, "demPct": 58.48, "repPct": 35.98, "demCandidate": "Debbie Wasserman Schultz", "repCandidate": "Joe Kaufman", "demVotes": 161611, "repVotes": 99446, "totalVotes": 276366, "margin": -22.5, "demIncumbent": true },
+      { "year": 2016, "demPct": 56.7, "repPct": 40.49, "demCandidate": "Debbie Wasserman Schultz", "repCandidate": "Joe Kaufman", "demVotes": 183225, "repVotes": 130818, "totalVotes": 323120, "margin": -16.21, "demIncumbent": true }
     ]
   },
   {
@@ -7029,12 +7029,12 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Frederica Wilson", "party": "D", "incumbent": true },
       "rep": { "name": "Patricia Gonzalez", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Frederica S. Wilson",
+    "seatHolder": "Frederica Wilson",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 68.24, "repPct": 31.76, "demCandidate": "Frederica S. Wilson", "repCandidate": "Jesus Gabriel Navarro", "demVotes": 194874, "repVotes": 90692, "totalVotes": 285588, "margin": -36.48, "demIncumbent": true },
-      { "year": 2022, "demPct": 71.79, "repPct": 28.21, "demCandidate": "Frederica S. Wilson", "repCandidate": "Jesus G. Navarro", "demVotes": 133442, "repVotes": 52449, "totalVotes": 185891, "margin": -43.58, "demIncumbent": true },
-      { "year": 2020, "demPct": 75.55, "repPct": 20.4, "demCandidate": "Frederica S. Wilson", "repCandidate": "Lavern Spicer", "demVotes": 218825, "repVotes": 59084, "totalVotes": 289638, "margin": -55.15, "demIncumbent": true },
+      { "year": 2024, "demPct": 68.24, "repPct": 31.76, "demCandidate": "Frederica Wilson", "repCandidate": "Jesus Gabriel Navarro", "demVotes": 194874, "repVotes": 90692, "totalVotes": 285588, "margin": -36.48, "demIncumbent": true },
+      { "year": 2022, "demPct": 71.79, "repPct": 28.21, "demCandidate": "Frederica Wilson", "repCandidate": "Jesus Navarro", "demVotes": 133442, "repVotes": 52449, "totalVotes": 185891, "margin": -43.58, "demIncumbent": true },
+      { "year": 2020, "demPct": 75.55, "repPct": 20.4, "demCandidate": "Frederica Wilson", "repCandidate": "Lavern Spicer", "demVotes": 218825, "repVotes": 59084, "totalVotes": 289638, "margin": -55.15, "demIncumbent": true },
       { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Frederica Wilson", "margin": -100, "demIncumbent": true },
       { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Frederica Wilson", "margin": -100, "demIncumbent": true }
     ]
@@ -7128,12 +7128,12 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Richard Lamondin", "party": "D", "incumbent": false },
       "rep": { "name": "Maria Salazar", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Maria Elvira Salazar",
+    "seatHolder": "Maria Salazar",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 39.62, "repPct": 60.38, "demCandidate": "Lucia Baez-Geller", "repCandidate": "Maria Elvira Salazar", "demVotes": 130708, "repVotes": 199159, "totalVotes": 329867, "margin": 20.76, "repIncumbent": true },
       { "year": 2022, "demPct": 42.71, "repPct": 57.29, "demCandidate": "Annette Taddeo", "repCandidate": "Maria Elvira Salazar", "demVotes": 101404, "repVotes": 136038, "totalVotes": 237442, "margin": 14.58, "repIncumbent": true },
-      { "year": 2020, "demPct": 48.62, "repPct": 51.36, "demCandidate": "Donna E. Shalala", "repCandidate": "Maria Elvira Salazar", "demVotes": 166758, "repVotes": 176141, "totalVotes": 342975, "margin": 2.74, "demIncumbent": true },
+      { "year": 2020, "demPct": 48.62, "repPct": 51.36, "demCandidate": "Donna Shalala", "repCandidate": "Maria Elvira Salazar", "demVotes": 166758, "repVotes": 176141, "totalVotes": 342975, "margin": 2.74, "demIncumbent": true },
       { "year": 2018, "demPct": 51.76, "repPct": 45.76, "demCandidate": "Donna Shalala", "repCandidate": "Maria Elvira Salazar", "demVotes": 130743, "repVotes": 115588, "totalVotes": 252586, "margin": -6 },
       { "year": 2016, "demPct": 45.11, "repPct": 54.89, "demCandidate": "Scott Fuhrman", "repCandidate": "Ileana Ros-Lehtinen", "demVotes": 129760, "repVotes": 157917, "totalVotes": 287677, "margin": 9.78, "repIncumbent": true }
     ]
@@ -7164,8 +7164,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Carlos Gimenez",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 35.43, "repPct": 64.57, "demCandidate": "Phil Ehr", "repCandidate": "Carlos A. Gimenez", "demVotes": 115280, "repVotes": 210057, "totalVotes": 325337, "margin": 29.14, "repIncumbent": true },
-      { "year": 2022, "demPct": 36.31, "repPct": 63.68, "demCandidate": "Robert Asencio", "repCandidate": "Carlos A. Gimenez", "demVotes": 76665, "repVotes": 134457, "totalVotes": 211150, "margin": 27.37 }
+      { "year": 2024, "demPct": 35.43, "repPct": 64.57, "demCandidate": "Phil Ehr", "repCandidate": "Carlos Gimenez", "demVotes": 115280, "repVotes": 210057, "totalVotes": 325337, "margin": 29.14, "repIncumbent": true },
+      { "year": 2022, "demPct": 36.31, "repPct": 63.68, "demCandidate": "Robert Asencio", "repCandidate": "Carlos Gimenez", "demVotes": 76665, "repVotes": 134457, "totalVotes": 211150, "margin": 27.37 }
     ]
   },
   {
@@ -7194,11 +7194,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Buddy Carter",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 38.02, "repPct": 61.98, "demCandidate": "Patti Hewitt", "repCandidate": "Earl L. “Buddy” Carter", "demVotes": 135281, "repVotes": 220576, "totalVotes": 355857, "margin": 23.96, "repIncumbent": true },
-      { "year": 2022, "demPct": 40.85, "repPct": 59.15, "demCandidate": "Wade Herring", "repCandidate": "Earl L. “Buddy” Carter", "demVotes": 107837, "repVotes": 156128, "totalVotes": 263965, "margin": 18.3, "repIncumbent": true },
-      { "year": 2020, "demPct": 41.65, "repPct": 58.35, "demCandidate": "Joyce Marie Griggs", "repCandidate": "Earl L. “Buddy” Carter", "demVotes": 135238, "repVotes": 189457, "totalVotes": 324695, "margin": 16.7, "repIncumbent": true },
-      { "year": 2018, "demPct": 42.26, "repPct": 57.74, "demCandidate": "Lisa M. Ring", "repCandidate": "Earl L. “Buddy” Carter", "demVotes": 105942, "repVotes": 144741, "totalVotes": 250683, "margin": 15.48, "repIncumbent": true },
-      { "year": 2016, "demPct": 0, "repPct": 99.59, "repCandidate": "Earl L. “Buddy” Carter", "repVotes": 210243, "totalVotes": 211112, "margin": 99.59, "repIncumbent": true }
+      { "year": 2024, "demPct": 38.02, "repPct": 61.98, "demCandidate": "Patti Hewitt", "repCandidate": "Buddy Carter", "demVotes": 135281, "repVotes": 220576, "totalVotes": 355857, "margin": 23.96, "repIncumbent": true },
+      { "year": 2022, "demPct": 40.85, "repPct": 59.15, "demCandidate": "Wade Herring", "repCandidate": "Buddy Carter", "demVotes": 107837, "repVotes": 156128, "totalVotes": 263965, "margin": 18.3, "repIncumbent": true },
+      { "year": 2020, "demPct": 41.65, "repPct": 58.35, "demCandidate": "Joyce Marie Griggs", "repCandidate": "Buddy Carter", "demVotes": 135238, "repVotes": 189457, "totalVotes": 324695, "margin": 16.7, "repIncumbent": true },
+      { "year": 2018, "demPct": 42.26, "repPct": 57.74, "demCandidate": "Lisa Ring", "repCandidate": "Buddy Carter", "demVotes": 105942, "repVotes": 144741, "totalVotes": 250683, "margin": 15.48, "repIncumbent": true },
+      { "year": 2016, "demPct": 0, "repPct": 99.59, "repCandidate": "Buddy Carter", "repVotes": 210243, "totalVotes": 211112, "margin": 99.59, "repIncumbent": true }
     ]
   },
   {
@@ -7221,17 +7221,17 @@ export const houseData: RaceForecast[] = [
     "kalshiDem": 0.86,
     "kalshiRep": 0.01,
     "candidates": {
-      "dem": { "name": "Sanford Bishop", "party": "D", "incumbent": false },
+      "dem": { "name": "Sanford Bishop Jr.", "party": "D", "incumbent": false },
       "rep": { "name": "Matt Day", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Sanford D. Bishop, Jr.",
+    "seatHolder": "Sanford Bishop Jr.",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 56.33, "repPct": 43.67, "demCandidate": "Sanford D. Bishop, Jr.", "repCandidate": "A. Wayne Johnson", "demVotes": 176028, "repVotes": 136473, "totalVotes": 312501, "margin": -12.66, "demIncumbent": true },
-      { "year": 2022, "demPct": 54.97, "repPct": 45.03, "demCandidate": "Sanford D. Bishop, Jr.", "repCandidate": "Chris West", "demVotes": 132675, "repVotes": 108665, "totalVotes": 241340, "margin": -9.94, "demIncumbent": true },
-      { "year": 2020, "demPct": 59.11, "repPct": 40.88, "demCandidate": "Sanford D. Bishop, Jr.", "repCandidate": "Don Cole", "demVotes": 161397, "repVotes": 111620, "totalVotes": 273034, "margin": -18.23, "demIncumbent": true },
-      { "year": 2018, "demPct": 59.65, "repPct": 40.35, "demCandidate": "Sanford D. Bishop, Jr.", "repCandidate": "Herman West, Jr.", "demVotes": 136699, "repVotes": 92472, "totalVotes": 229171, "margin": -19.3, "demIncumbent": true },
-      { "year": 2016, "demPct": 61.23, "repPct": 38.77, "demCandidate": "Sanford D. Bishop, Jr.", "repCandidate": "Greg Duke", "demVotes": 148543, "repVotes": 94056, "totalVotes": 242599, "margin": -22.46, "demIncumbent": true }
+      { "year": 2024, "demPct": 56.33, "repPct": 43.67, "demCandidate": "Sanford Bishop", "repCandidate": "Wayne Johnson", "demVotes": 176028, "repVotes": 136473, "totalVotes": 312501, "margin": -12.66, "demIncumbent": true },
+      { "year": 2022, "demPct": 54.97, "repPct": 45.03, "demCandidate": "Sanford Bishop", "repCandidate": "Chris West", "demVotes": 132675, "repVotes": 108665, "totalVotes": 241340, "margin": -9.94, "demIncumbent": true },
+      { "year": 2020, "demPct": 59.11, "repPct": 40.88, "demCandidate": "Sanford Bishop", "repCandidate": "Don Cole", "demVotes": 161397, "repVotes": 111620, "totalVotes": 273034, "margin": -18.23, "demIncumbent": true },
+      { "year": 2018, "demPct": 59.65, "repPct": 40.35, "demCandidate": "Sanford Bishop", "repCandidate": "Herman West", "demVotes": 136699, "repVotes": 92472, "totalVotes": 229171, "margin": -19.3, "demIncumbent": true },
+      { "year": 2016, "demPct": 61.23, "repPct": 38.77, "demCandidate": "Sanford Bishop", "repCandidate": "Greg Duke", "demVotes": 148543, "repVotes": 94056, "totalVotes": 242599, "margin": -22.46, "demIncumbent": true }
     ]
   },
   {
@@ -7261,9 +7261,9 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 33.69, "repPct": 66.31, "demCandidate": "Maura Keller", "repCandidate": "Brian Jack", "demVotes": 138749, "repVotes": 273036, "totalVotes": 411785, "margin": 32.62 },
-      { "year": 2022, "demPct": 31.25, "repPct": 68.75, "demCandidate": "Val Almonord", "repCandidate": "A. Drew Ferguson IV", "demVotes": 97057, "repVotes": 213524, "totalVotes": 310581, "margin": 37.5, "repIncumbent": true },
-      { "year": 2020, "demPct": 34.95, "repPct": 65.05, "demCandidate": "Val Almonord", "repCandidate": "A. Drew Ferguson IV", "demVotes": 129792, "repVotes": 241526, "totalVotes": 371318, "margin": 30.1, "repIncumbent": true },
-      { "year": 2018, "demPct": 34.47, "repPct": 65.53, "demCandidate": "Chuck Enderlin", "repCandidate": "A. Drew Ferguson IV", "demVotes": 101010, "repVotes": 191996, "totalVotes": 293006, "margin": 31.06, "repIncumbent": true },
+      { "year": 2022, "demPct": 31.25, "repPct": 68.75, "demCandidate": "Val Almonord", "repCandidate": "Drew Ferguson", "demVotes": 97057, "repVotes": 213524, "totalVotes": 310581, "margin": 37.5, "repIncumbent": true },
+      { "year": 2020, "demPct": 34.95, "repPct": 65.05, "demCandidate": "Val Almonord", "repCandidate": "Drew Ferguson", "demVotes": 129792, "repVotes": 241526, "totalVotes": 371318, "margin": 30.1, "repIncumbent": true },
+      { "year": 2018, "demPct": 34.47, "repPct": 65.53, "demCandidate": "Chuck Enderlin", "repCandidate": "Drew Ferguson", "demVotes": 101010, "repVotes": 191996, "totalVotes": 293006, "margin": 31.06, "repIncumbent": true },
       { "year": 2016, "demPct": 31.65, "repPct": 68.35, "demCandidate": "Angela Pendley", "repCandidate": "Drew Ferguson", "demVotes": 95969, "repVotes": 207218, "totalVotes": 303187, "margin": 36.7 }
     ]
   },
@@ -7287,17 +7287,17 @@ export const houseData: RaceForecast[] = [
     "kalshiDem": 0.81,
     "kalshiRep": 0,
     "candidates": {
-      "dem": { "name": "Henry Johnson", "party": "D", "incumbent": false },
+      "dem": { "name": "Hank Johnson", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Duffie", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Henry C. “Hank” Johnson, Jr.",
+    "seatHolder": "Hank Johnson",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 75.58, "repPct": 24.42, "demCandidate": "Henry C. “Hank” Johnson, Jr.", "repCandidate": "Eugene Yu", "demVotes": 229290, "repVotes": 74071, "totalVotes": 303361, "margin": -51.16, "demIncumbent": true },
-      { "year": 2022, "demPct": 78.49, "repPct": 21.51, "demCandidate": "Henry C. “Hank” Johnson, Jr.", "repCandidate": "Jonathan Chavez", "demVotes": 216332, "repVotes": 59302, "totalVotes": 275634, "margin": -56.98, "demIncumbent": true },
-      { "year": 2020, "demPct": 80.08, "repPct": 19.92, "demCandidate": "Henry C. “Hank” Johnson, Jr.", "repCandidate": "Johsie Cruz Ezammudeen", "demVotes": 278906, "repVotes": 69393, "totalVotes": 348299, "margin": -60.16, "demIncumbent": true },
-      { "year": 2018, "demPct": 78.85, "repPct": 21.15, "demCandidate": "Henry C. “Hank” Johnson, Jr.", "repCandidate": "Joe Profit", "demVotes": 227717, "repVotes": 61092, "totalVotes": 288809, "margin": -57.7, "demIncumbent": true },
-      { "year": 2016, "demPct": 75.72, "repPct": 24.28, "demCandidate": "Henry C. “Hank” Johnson, Jr.", "repCandidate": "Victor Armendariz", "demVotes": 220146, "repVotes": 70593, "totalVotes": 290739, "margin": -51.44, "demIncumbent": true }
+      { "year": 2024, "demPct": 75.58, "repPct": 24.42, "demCandidate": "Hank Johnson, Jr.", "repCandidate": "Eugene Yu", "demVotes": 229290, "repVotes": 74071, "totalVotes": 303361, "margin": -51.16, "demIncumbent": true },
+      { "year": 2022, "demPct": 78.49, "repPct": 21.51, "demCandidate": "Hank Johnson, Jr.", "repCandidate": "Jonathan Chavez", "demVotes": 216332, "repVotes": 59302, "totalVotes": 275634, "margin": -56.98, "demIncumbent": true },
+      { "year": 2020, "demPct": 80.08, "repPct": 19.92, "demCandidate": "Hank Johnson, Jr.", "repCandidate": "Johsie Cruz Ezammudeen", "demVotes": 278906, "repVotes": 69393, "totalVotes": 348299, "margin": -60.16, "demIncumbent": true },
+      { "year": 2018, "demPct": 78.85, "repPct": 21.15, "demCandidate": "Hank Johnson, Jr.", "repCandidate": "Joe Profit", "demVotes": 227717, "repVotes": 61092, "totalVotes": 288809, "margin": -57.7, "demIncumbent": true },
+      { "year": 2016, "demPct": 75.72, "repPct": 24.28, "demCandidate": "Hank Johnson, Jr.", "repCandidate": "Victor Armendariz", "demVotes": 220146, "repVotes": 70593, "totalVotes": 290739, "margin": -51.44, "demIncumbent": true }
     ]
   },
   {
@@ -7326,7 +7326,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Nikema Williams",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 85.68, "repPct": 14.32, "demCandidate": "Nikema Williams", "repCandidate": "John “Bongo” Salvesen", "demVotes": 294470, "repVotes": 49221, "totalVotes": 343691, "margin": -71.36, "demIncumbent": true },
+      { "year": 2024, "demPct": 85.68, "repPct": 14.32, "demCandidate": "Nikema Williams", "repCandidate": "Bongo Salvesen", "demVotes": 294470, "repVotes": 49221, "totalVotes": 343691, "margin": -71.36, "demIncumbent": true },
       { "year": 2022, "demPct": 82.48, "repPct": 17.52, "demCandidate": "Nikema Williams", "repCandidate": "Christian Zimm", "demVotes": 243687, "repVotes": 51769, "totalVotes": 295456, "margin": -64.96, "demIncumbent": true },
       { "year": 2020, "demPct": 85.15, "repPct": 14.85, "demCandidate": "Nikema Williams", "repCandidate": "Angela Stanton-King", "demVotes": 301857, "repVotes": 52646, "totalVotes": 354503, "margin": -70.3 },
       { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "John Lewis", "demVotes": 275406, "totalVotes": 275406, "margin": -100, "demIncumbent": true },
@@ -7362,7 +7362,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 74.68, "repPct": 25.32, "demCandidate": "Lucy McBath", "repCandidate": "Jeff Criswell", "demVotes": 277027, "repVotes": 93909, "totalVotes": 370936, "margin": -49.36 },
       { "year": 2022, "demPct": 37.78, "repPct": 62.22, "demCandidate": "Bob Christian", "repCandidate": "Rich McCormick", "demVotes": 125612, "repVotes": 206886, "totalVotes": 332498, "margin": 24.44 },
       { "year": 2020, "demPct": 54.59, "repPct": 45.41, "demCandidate": "Lucy McBath", "repCandidate": "Karen Handel", "demVotes": 216775, "repVotes": 180329, "totalVotes": 397104, "margin": -9.18, "demIncumbent": true },
-      { "year": 2018, "demPct": 50.51, "repPct": 49.48, "demCandidate": "Lucy McBath", "repCandidate": "Karen C. Handel", "demVotes": 160139, "repVotes": 156875, "totalVotes": 317032, "margin": -1.03, "repIncumbent": true },
+      { "year": 2018, "demPct": 50.51, "repPct": 49.48, "demCandidate": "Lucy McBath", "repCandidate": "Karen Handel", "demVotes": 160139, "repVotes": 156875, "totalVotes": 317032, "margin": -1.03, "repIncumbent": true },
       { "year": 2016, "demPct": 38.32, "repPct": 61.68, "demCandidate": "Rodney Stooksbury", "repCandidate": "Tom Price", "demVotes": 124917, "repVotes": 201088, "totalVotes": 326005, "margin": 23.36, "repIncumbent": true }
     ]
   },
@@ -7458,8 +7458,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Andrew Clyde",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 31, "repPct": 69, "demCandidate": "Tambrei Cash", "repCandidate": "Andrew S. Clyde", "demVotes": 121754, "repVotes": 271062, "totalVotes": 392816, "margin": 38, "repIncumbent": true },
-      { "year": 2022, "demPct": 27.65, "repPct": 72.35, "demCandidate": "Michael “Mike” Ford", "repCandidate": "Andrew S. Clyde", "demVotes": 81318, "repVotes": 212820, "totalVotes": 294138, "margin": 44.7, "repIncumbent": true },
+      { "year": 2024, "demPct": 31, "repPct": 69, "demCandidate": "Tambrei Cash", "repCandidate": "Andrew Clyde", "demVotes": 121754, "repVotes": 271062, "totalVotes": 392816, "margin": 38, "repIncumbent": true },
+      { "year": 2022, "demPct": 27.65, "repPct": 72.35, "demCandidate": "Mike Ford", "repCandidate": "Andrew Clyde", "demVotes": 81318, "repVotes": 212820, "totalVotes": 294138, "margin": 44.7, "repIncumbent": true },
       { "year": 2020, "demPct": 21.42, "repPct": 78.58, "demCandidate": "Devin Pandy", "repCandidate": "Andrew Clyde", "demVotes": 79797, "repVotes": 292750, "totalVotes": 372547, "margin": 57.16 },
       { "year": 2018, "demPct": 20.49, "repPct": 79.5, "demCandidate": "Josh McCall", "repCandidate": "Doug Collins", "demVotes": 57912, "repVotes": 224661, "totalVotes": 282578, "margin": 59.01, "repIncumbent": true },
       { "year": 2016, "demPct": 0, "repPct": 100, "repCandidate": "Doug Collins", "repVotes": 256535, "totalVotes": 256535, "margin": 100, "repIncumbent": true }
@@ -7491,11 +7491,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Mike Collins",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 36.95, "repPct": 63.05, "demCandidate": "Alexandra “Lexy” Doherty", "repCandidate": "Mike Collins", "demVotes": 150274, "repVotes": 256442, "totalVotes": 406716, "margin": 26.1, "repIncumbent": true },
+      { "year": 2024, "demPct": 36.95, "repPct": 63.05, "demCandidate": "Lexy Doherty", "repCandidate": "Mike Collins", "demVotes": 150274, "repVotes": 256442, "totalVotes": 406716, "margin": 26.1, "repIncumbent": true },
       { "year": 2022, "demPct": 35.47, "repPct": 64.53, "demCandidate": "Tabitha Johnson-Green", "repCandidate": "Mike Collins", "demVotes": 109107, "repVotes": 198523, "totalVotes": 307630, "margin": 29.06 },
-      { "year": 2020, "demPct": 37.69, "repPct": 62.31, "demCandidate": "Tabitha Johnson-Green", "repCandidate": "Jody B. Hice", "demVotes": 142636, "repVotes": 235810, "totalVotes": 378446, "margin": 24.62, "repIncumbent": true },
-      { "year": 2018, "demPct": 37.11, "repPct": 62.89, "demCandidate": "Tabitha A. Johnson-Green", "repCandidate": "Jody B. Hice", "demVotes": 112339, "repVotes": 190396, "totalVotes": 302735, "margin": 25.78, "repIncumbent": true },
-      { "year": 2016, "demPct": 0, "repPct": 99.55, "repCandidate": "Jody B. Hice", "repVotes": 243725, "totalVotes": 244821, "margin": 99.55, "repIncumbent": true }
+      { "year": 2020, "demPct": 37.69, "repPct": 62.31, "demCandidate": "Tabitha Johnson-Green", "repCandidate": "Jody Hice", "demVotes": 142636, "repVotes": 235810, "totalVotes": 378446, "margin": 24.62, "repIncumbent": true },
+      { "year": 2018, "demPct": 37.11, "repPct": 62.89, "demCandidate": "Tabitha Johnson-Green", "repCandidate": "Jody Hice", "demVotes": 112339, "repVotes": 190396, "totalVotes": 302735, "margin": 25.78, "repIncumbent": true },
+      { "year": 2016, "demPct": 0, "repPct": 99.55, "repCandidate": "Jody Hice", "repVotes": 243725, "totalVotes": 244821, "margin": 99.55, "repIncumbent": true }
     ]
   },
   {
@@ -7524,10 +7524,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Barry Loudermilk",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 32.69, "repPct": 67.31, "demCandidate": "Katy “Kate” L. Stamper", "repCandidate": "Barry Loudermilk", "demVotes": 131064, "repVotes": 269849, "totalVotes": 400913, "margin": 34.62, "repIncumbent": true },
+      { "year": 2024, "demPct": 32.69, "repPct": 67.31, "demCandidate": "Kate L. Stamper", "repCandidate": "Barry Loudermilk", "demVotes": 131064, "repVotes": 269849, "totalVotes": 400913, "margin": 34.62, "repIncumbent": true },
       { "year": 2022, "demPct": 37.4, "repPct": 62.6, "demCandidate": "Antonio Daza", "repCandidate": "Barry Loudermilk", "demVotes": 113571, "repVotes": 190086, "totalVotes": 303657, "margin": 25.2, "repIncumbent": true },
       { "year": 2020, "demPct": 39.57, "repPct": 60.43, "demCandidate": "Dana Barrett", "repCandidate": "Barry Loudermilk", "demVotes": 160623, "repVotes": 245259, "totalVotes": 405882, "margin": 20.86, "repIncumbent": true },
-      { "year": 2018, "demPct": 38.21, "repPct": 61.79, "demCandidate": "Flynn D. Broady, Jr.", "repCandidate": "Barry Loudermilk", "demVotes": 118653, "repVotes": 191887, "totalVotes": 310540, "margin": 23.58, "repIncumbent": true },
+      { "year": 2018, "demPct": 38.21, "repPct": 61.79, "demCandidate": "Flynn Broady", "repCandidate": "Barry Loudermilk", "demVotes": 118653, "repVotes": 191887, "totalVotes": 310540, "margin": 23.58, "repIncumbent": true },
       { "year": 2016, "demPct": 32.59, "repPct": 67.41, "demCandidate": "Don Wilson", "repCandidate": "Barry Loudermilk", "demVotes": 105383, "repVotes": 217935, "totalVotes": 323318, "margin": 34.82, "repIncumbent": true }
     ]
   },
@@ -7557,11 +7557,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Rick Allen",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 39.68, "repPct": 60.32, "demCandidate": "Elizabeth “Liz” Johnson", "repCandidate": "Rick W. Allen", "demVotes": 135417, "repVotes": 205849, "totalVotes": 341266, "margin": 20.64, "repIncumbent": true },
-      { "year": 2022, "demPct": 40.4, "repPct": 59.6, "demCandidate": "Elizabeth “Liz” Johnson", "repCandidate": "Rick W. Allen", "demVotes": 107148, "repVotes": 158047, "totalVotes": 265195, "margin": 19.2, "repIncumbent": true },
-      { "year": 2020, "demPct": 41.62, "repPct": 58.38, "demCandidate": "Liz Johnson", "repCandidate": "Rick W. Allen", "demVotes": 129061, "repVotes": 181038, "totalVotes": 310099, "margin": 16.76, "repIncumbent": true },
-      { "year": 2018, "demPct": 40.52, "repPct": 59.48, "demCandidate": "Francys Johnson", "repCandidate": "Rick W. Allen", "demVotes": 101503, "repVotes": 148986, "totalVotes": 250492, "margin": 18.96, "repIncumbent": true },
-      { "year": 2016, "demPct": 38.4, "repPct": 61.6, "demCandidate": "Patricia C. McCracken", "repCandidate": "Rick W. Allen", "demVotes": 99420, "repVotes": 159492, "totalVotes": 258912, "margin": 23.2, "repIncumbent": true }
+      { "year": 2024, "demPct": 39.68, "repPct": 60.32, "demCandidate": "Liz Johnson", "repCandidate": "Rick Allen", "demVotes": 135417, "repVotes": 205849, "totalVotes": 341266, "margin": 20.64, "repIncumbent": true },
+      { "year": 2022, "demPct": 40.4, "repPct": 59.6, "demCandidate": "Liz Johnson", "repCandidate": "Rick Allen", "demVotes": 107148, "repVotes": 158047, "totalVotes": 265195, "margin": 19.2, "repIncumbent": true },
+      { "year": 2020, "demPct": 41.62, "repPct": 58.38, "demCandidate": "Liz Johnson", "repCandidate": "Rick Allen", "demVotes": 129061, "repVotes": 181038, "totalVotes": 310099, "margin": 16.76, "repIncumbent": true },
+      { "year": 2018, "demPct": 40.52, "repPct": 59.48, "demCandidate": "Francys Johnson", "repCandidate": "Rick Allen", "demVotes": 101503, "repVotes": 148986, "totalVotes": 250492, "margin": 18.96, "repIncumbent": true },
+      { "year": 2016, "demPct": 38.4, "repPct": 61.6, "demCandidate": "Patricia McCracken", "repCandidate": "Rick Allen", "demVotes": 99420, "repVotes": 159492, "totalVotes": 258912, "margin": 23.2, "repIncumbent": true }
     ]
   },
   {
@@ -7592,7 +7592,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 71.83, "repPct": 28.17, "demCandidate": "David Scott", "repCandidate": "Jonathan Chavez", "demVotes": 256902, "repVotes": 100730, "totalVotes": 357632, "margin": -43.66, "demIncumbent": true },
       { "year": 2022, "demPct": 81.77, "repPct": 18.23, "demCandidate": "David Scott", "repCandidate": "Caesar Gonzales", "demVotes": 216388, "repVotes": 48228, "totalVotes": 264616, "margin": -63.54, "demIncumbent": true },
-      { "year": 2020, "demPct": 77.39, "repPct": 22.6, "demCandidate": "David Scott", "repCandidate": "Becky E. Hites", "demVotes": 279045, "repVotes": 81476, "totalVotes": 360582, "margin": -54.79, "demIncumbent": true },
+      { "year": 2020, "demPct": 77.39, "repPct": 22.6, "demCandidate": "David Scott", "repCandidate": "Becky Hites", "demVotes": 279045, "repVotes": 81476, "totalVotes": 360582, "margin": -54.79, "demIncumbent": true },
       { "year": 2018, "demPct": 76.16, "repPct": 23.81, "demCandidate": "David Scott", "repCandidate": "David Callahan", "demVotes": 223157, "repVotes": 69760, "totalVotes": 293010, "margin": -52.35, "demIncumbent": true },
       { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "David Scott", "demVotes": 252833, "totalVotes": 252833, "margin": -100, "demIncumbent": true }
     ]
@@ -7656,11 +7656,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Ed Case",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 71.84, "repPct": 28.16, "demCandidate": "Ed Case", "repCandidate": "Patrick C. Largey", "demVotes": 164237, "repVotes": 64373, "totalVotes": 228610, "margin": -43.68, "demIncumbent": true },
+      { "year": 2024, "demPct": 71.84, "repPct": 28.16, "demCandidate": "Ed Case", "repCandidate": "Patrick Largey", "demVotes": 164237, "repVotes": 64373, "totalVotes": 228610, "margin": -43.68, "demIncumbent": true },
       { "year": 2022, "demPct": 73.7, "repPct": 26.3, "demCandidate": "Ed Case", "repCandidate": "Conrad Kress", "demVotes": 143546, "repVotes": 51217, "totalVotes": 194763, "margin": -47.4, "demIncumbent": true },
       { "year": 2020, "demPct": 72.02, "repPct": 27.98, "demCandidate": "Ed Case", "repCandidate": "Ron Curtis", "demVotes": 183245, "repVotes": 71188, "totalVotes": 254433, "margin": -44.04, "demIncumbent": true },
       { "year": 2018, "demPct": 73.1, "repPct": 23.07, "demCandidate": "Ed Case", "repCandidate": "Cam Cavasso", "demVotes": 134650, "repVotes": 42498, "totalVotes": 184211, "margin": -50.03 },
-      { "year": 2016, "demPct": 71.86, "repPct": 22.71, "demCandidate": "Colleen Wakako Hanabusa", "repCandidate": "Shirlene D. “Shirl” Ostrov", "demVotes": 145417, "repVotes": 45958, "totalVotes": 202357, "margin": -49.15 }
+      { "year": 2016, "demPct": 71.86, "repPct": 22.71, "demCandidate": "Colleen Wakako Hanabusa", "repCandidate": "Shirl Ostrov", "demVotes": 145417, "repVotes": 45958, "totalVotes": 202357, "margin": -49.15 }
     ]
   },
   {
@@ -7689,9 +7689,9 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jill Tokuda",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 66.46, "repPct": 30.17, "demCandidate": "Jill N. Tokuda", "repCandidate": "Steve Bond", "demVotes": 166251, "repVotes": 75471, "totalVotes": 250156, "margin": -36.29, "demIncumbent": true },
-      { "year": 2022, "demPct": 62.21, "repPct": 35.31, "demCandidate": "Jill N. Tokuda", "repCandidate": "Joe Akana", "demVotes": 128407, "repVotes": 72874, "totalVotes": 206411, "margin": -26.9 },
-      { "year": 2020, "demPct": 63.03, "repPct": 30.88, "demCandidate": "Kaiali‘i “Kai” Kahele", "repCandidate": "Joe Akana", "demVotes": 171517, "repVotes": 84027, "totalVotes": 272102, "margin": -32.15 },
+      { "year": 2024, "demPct": 66.46, "repPct": 30.17, "demCandidate": "Jill Tokuda", "repCandidate": "Steve Bond", "demVotes": 166251, "repVotes": 75471, "totalVotes": 250156, "margin": -36.29, "demIncumbent": true },
+      { "year": 2022, "demPct": 62.21, "repPct": 35.31, "demCandidate": "Jill Tokuda", "repCandidate": "Joe Akana", "demVotes": 128407, "repVotes": 72874, "totalVotes": 206411, "margin": -26.9 },
+      { "year": 2020, "demPct": 63.03, "repPct": 30.88, "demCandidate": "Kai Kahele", "repCandidate": "Joe Akana", "demVotes": 171517, "repVotes": 84027, "totalVotes": 272102, "margin": -32.15 },
       { "year": 2018, "demPct": 77.36, "repPct": 22.64, "demCandidate": "Tulsi Gabbard", "repCandidate": "Brian Evans", "demVotes": 153271, "repVotes": 44850, "totalVotes": 198121, "margin": -54.72, "demIncumbent": true },
       { "year": 2016, "demPct": 81.16, "repPct": 18.84, "demCandidate": "Tulsi Gabbard", "repCandidate": "Angela Aulani Kaaihue", "demVotes": 170848, "repVotes": 39668, "totalVotes": 210516, "margin": -62.32, "demIncumbent": true }
     ]
@@ -7726,7 +7726,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 26.33, "repPct": 71.34, "demCandidate": "Kaylee Peterson", "repCandidate": "Russ Fulcher", "demVotes": 82261, "repVotes": 222901, "totalVotes": 312442, "margin": 45.01, "repIncumbent": true },
       { "year": 2020, "demPct": 28.65, "repPct": 67.76, "demCandidate": "Rudy Soto", "repCandidate": "Russ Fulcher", "demVotes": 131380, "repVotes": 310736, "totalVotes": 458576, "margin": 39.11, "repIncumbent": true },
       { "year": 2018, "demPct": 30.76, "repPct": 62.75, "demCandidate": "Cristina McNeil", "repCandidate": "Russ Fulcher", "demVotes": 96922, "repVotes": 197719, "totalVotes": 315069, "margin": 31.99 },
-      { "year": 2016, "demPct": 31.81, "repPct": 68.17, "demCandidate": "James Piotrowski", "repCandidate": "Raúl R. Labrador", "demVotes": 113052, "repVotes": 242252, "totalVotes": 355357, "margin": 36.36, "repIncumbent": true }
+      { "year": 2016, "demPct": 31.81, "repPct": 68.17, "demCandidate": "James Piotrowski", "repCandidate": "Raúl Labrador", "demVotes": 113052, "repVotes": 242252, "totalVotes": 355357, "margin": 36.36, "repIncumbent": true }
     ]
   },
   {
@@ -7755,11 +7755,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Michael Simpson",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 30.98, "repPct": 61.38, "demCandidate": "David Roth", "repCandidate": "Michael K. Simpson", "demVotes": 126229, "repVotes": 250119, "totalVotes": 407462, "margin": 30.4, "repIncumbent": true },
-      { "year": 2022, "demPct": 36.41, "repPct": 63.59, "demCandidate": "Wendy Norman", "repCandidate": "Michael K. Simpson", "demVotes": 98736, "repVotes": 172450, "totalVotes": 271186, "margin": 27.18, "repIncumbent": true },
-      { "year": 2020, "demPct": 31.73, "repPct": 64.06, "demCandidate": "C. Aaron Swisher", "repCandidate": "Michael K. Simpson", "demVotes": 124151, "repVotes": 250669, "totalVotes": 391333, "margin": 32.33, "repIncumbent": true },
-      { "year": 2018, "demPct": 39.33, "repPct": 60.67, "demCandidate": "Aaron Swisher", "repCandidate": "Michael K. Simpson", "demVotes": 110381, "repVotes": 170274, "totalVotes": 280655, "margin": 21.34, "repIncumbent": true },
-      { "year": 2016, "demPct": 29.41, "repPct": 62.93, "demCandidate": "Jennifer Martinez", "repCandidate": "Michael K. Simpson", "demVotes": 95940, "repVotes": 205292, "totalVotes": 326237, "margin": 33.52, "repIncumbent": true }
+      { "year": 2024, "demPct": 30.98, "repPct": 61.38, "demCandidate": "David Roth", "repCandidate": "Michael Simpson", "demVotes": 126229, "repVotes": 250119, "totalVotes": 407462, "margin": 30.4, "repIncumbent": true },
+      { "year": 2022, "demPct": 36.41, "repPct": 63.59, "demCandidate": "Wendy Norman", "repCandidate": "Michael Simpson", "demVotes": 98736, "repVotes": 172450, "totalVotes": 271186, "margin": 27.18, "repIncumbent": true },
+      { "year": 2020, "demPct": 31.73, "repPct": 64.06, "demCandidate": "Aaron Swisher", "repCandidate": "Michael Simpson", "demVotes": 124151, "repVotes": 250669, "totalVotes": 391333, "margin": 32.33, "repIncumbent": true },
+      { "year": 2018, "demPct": 39.33, "repPct": 60.67, "demCandidate": "Aaron Swisher", "repCandidate": "Michael Simpson", "demVotes": 110381, "repVotes": 170274, "totalVotes": 280655, "margin": 21.34, "repIncumbent": true },
+      { "year": 2016, "demPct": 29.41, "repPct": 62.93, "demCandidate": "Jennifer Martinez", "repCandidate": "Michael Simpson", "demVotes": 95940, "repVotes": 205292, "totalVotes": 326237, "margin": 33.52, "repIncumbent": true }
     ]
   },
   {
@@ -7788,11 +7788,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jonathan Jackson",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 65.84, "repPct": 34.14, "demCandidate": "Jonathan L. Jackson", "repCandidate": "Marcus Lewis", "demVotes": 208398, "repVotes": 108064, "totalVotes": 316507, "margin": -31.7, "demIncumbent": true },
-      { "year": 2022, "demPct": 67.03, "repPct": 32.96, "demCandidate": "Jonathan L. Jackson", "repCandidate": "Eric Carlson", "demVotes": 159142, "repVotes": 78258, "totalVotes": 237425, "margin": -34.07 },
-      { "year": 2020, "demPct": 73.8, "repPct": 26.15, "demCandidate": "Bobby L. Rush", "repCandidate": "Philanise White", "demVotes": 239943, "repVotes": 85027, "totalVotes": 325123, "margin": -47.65, "demIncumbent": true },
-      { "year": 2018, "demPct": 73.51, "repPct": 19.76, "demCandidate": "Bobby L. Rush", "repCandidate": "Jimmy Lee Tillman II", "demVotes": 189560, "repVotes": 50960, "totalVotes": 257885, "margin": -53.75, "demIncumbent": true },
-      { "year": 2016, "demPct": 74.09, "repPct": 25.9, "demCandidate": "Bobby L. Rush", "repCandidate": "August “O’Neill” Deuser", "demVotes": 234037, "repVotes": 81817, "totalVotes": 315862, "margin": -48.19, "demIncumbent": true }
+      { "year": 2024, "demPct": 65.84, "repPct": 34.14, "demCandidate": "Jonathan Jackson", "repCandidate": "Marcus Lewis", "demVotes": 208398, "repVotes": 108064, "totalVotes": 316507, "margin": -31.7, "demIncumbent": true },
+      { "year": 2022, "demPct": 67.03, "repPct": 32.96, "demCandidate": "Jonathan Jackson", "repCandidate": "Eric Carlson", "demVotes": 159142, "repVotes": 78258, "totalVotes": 237425, "margin": -34.07 },
+      { "year": 2020, "demPct": 73.8, "repPct": 26.15, "demCandidate": "Bobby Rush", "repCandidate": "Philanise White", "demVotes": 239943, "repVotes": 85027, "totalVotes": 325123, "margin": -47.65, "demIncumbent": true },
+      { "year": 2018, "demPct": 73.51, "repPct": 19.76, "demCandidate": "Bobby Rush", "repCandidate": "Jimmy Lee Tillman", "demVotes": 189560, "repVotes": 50960, "totalVotes": 257885, "margin": -53.75, "demIncumbent": true },
+      { "year": 2016, "demPct": 74.09, "repPct": 25.9, "demCandidate": "Bobby Rush", "repCandidate": "O’Neill Deuser", "demVotes": 234037, "repVotes": 81817, "totalVotes": 315862, "margin": -48.19, "demIncumbent": true }
     ]
   },
   {
@@ -7821,11 +7821,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Robin Kelly",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 67.55, "repPct": 32.43, "demCandidate": "Robin L. Kelly", "repCandidate": "Ashley Ramos", "demVotes": 195777, "repVotes": 94004, "totalVotes": 289843, "margin": -35.12, "demIncumbent": true },
-      { "year": 2022, "demPct": 67.13, "repPct": 32.87, "demCandidate": "Robin L. Kelly", "repCandidate": "Thomas Lynch", "demVotes": 140414, "repVotes": 68761, "totalVotes": 209175, "margin": -34.26, "demIncumbent": true },
-      { "year": 2020, "demPct": 78.81, "repPct": 21.19, "demCandidate": "Robin L. Kelly", "repCandidate": "Theresa J. Raborn", "demVotes": 234896, "repVotes": 63142, "totalVotes": 298038, "margin": -57.62, "demIncumbent": true },
-      { "year": 2018, "demPct": 81.06, "repPct": 18.94, "demCandidate": "Robin L. Kelly", "repCandidate": "David Merkle", "demVotes": 190684, "repVotes": 44567, "totalVotes": 235251, "margin": -62.12, "demIncumbent": true },
-      { "year": 2016, "demPct": 79.81, "repPct": 20.19, "demCandidate": "Robin L. Kelly", "repCandidate": "John F. Morrow", "demVotes": 235051, "repVotes": 59471, "totalVotes": 294522, "margin": -59.62, "demIncumbent": true }
+      { "year": 2024, "demPct": 67.55, "repPct": 32.43, "demCandidate": "Robin Kelly", "repCandidate": "Ashley Ramos", "demVotes": 195777, "repVotes": 94004, "totalVotes": 289843, "margin": -35.12, "demIncumbent": true },
+      { "year": 2022, "demPct": 67.13, "repPct": 32.87, "demCandidate": "Robin Kelly", "repCandidate": "Thomas Lynch", "demVotes": 140414, "repVotes": 68761, "totalVotes": 209175, "margin": -34.26, "demIncumbent": true },
+      { "year": 2020, "demPct": 78.81, "repPct": 21.19, "demCandidate": "Robin Kelly", "repCandidate": "Theresa Raborn", "demVotes": 234896, "repVotes": 63142, "totalVotes": 298038, "margin": -57.62, "demIncumbent": true },
+      { "year": 2018, "demPct": 81.06, "repPct": 18.94, "demCandidate": "Robin Kelly", "repCandidate": "David Merkle", "demVotes": 190684, "repVotes": 44567, "totalVotes": 235251, "margin": -62.12, "demIncumbent": true },
+      { "year": 2016, "demPct": 79.81, "repPct": 20.19, "demCandidate": "Robin Kelly", "repCandidate": "John Morrow", "demVotes": 235051, "repVotes": 59471, "totalVotes": 294522, "margin": -59.62, "demIncumbent": true }
     ]
   },
   {
@@ -7851,13 +7851,13 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Delia Ramirez", "party": "D", "incumbent": true },
       "rep": { "name": "Angel Oakley", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Delia C. Ramirez",
+    "seatHolder": "Delia Ramirez",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 67.26, "repPct": 32.7, "demCandidate": "Delia C. Ramirez", "repCandidate": "John Booras", "demVotes": 174825, "repVotes": 84987, "totalVotes": 259908, "margin": -34.56, "demIncumbent": true },
+      { "year": 2024, "demPct": 67.26, "repPct": 32.7, "demCandidate": "Delia Ramirez", "repCandidate": "John Booras", "demVotes": 174825, "repVotes": 84987, "totalVotes": 259908, "margin": -34.56, "demIncumbent": true },
       { "year": 2022, "demPct": 68.5, "repPct": 31.5, "demCandidate": "Delia Ramirez", "repCandidate": "Justin Burau", "demVotes": 121764, "repVotes": 55995, "totalVotes": 177759, "margin": -37 },
       { "year": 2020, "demPct": 56.38, "repPct": 43.62, "demCandidate": "Marie Newman", "repCandidate": "Mike Fricilone", "demVotes": 172997, "repVotes": 133851, "totalVotes": 306848, "margin": -12.76 },
-      { "year": 2018, "demPct": 73.01, "repPct": 25.92, "demCandidate": "Daniel Lipinski", "repCandidate": "Arthur J. Jones", "demVotes": 163053, "repVotes": 57885, "totalVotes": 223334, "margin": -47.09, "demIncumbent": true },
+      { "year": 2018, "demPct": 73.01, "repPct": 25.92, "demCandidate": "Daniel Lipinski", "repCandidate": "Arthur Jones", "demVotes": 163053, "repVotes": 57885, "totalVotes": 223334, "margin": -47.09, "demIncumbent": true },
       { "year": 2016, "demPct": 99.96, "repPct": 0, "demCandidate": "Daniel Lipinski", "demVotes": 225320, "totalVotes": 225411, "margin": -99.96, "demIncumbent": true }
     ]
   },
@@ -7887,11 +7887,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Chuy García",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 67.51, "repPct": 27.29, "demCandidate": "Jesús G. “Chuy” García", "repCandidate": "Lupe Castillo", "demVotes": 139343, "repVotes": 56323, "totalVotes": 206396, "margin": -40.22, "demIncumbent": true },
-      { "year": 2022, "demPct": 68.42, "repPct": 28.07, "demCandidate": "Jesús G. “Chuy” García", "repCandidate": "James Falakos", "demVotes": 91036, "repVotes": 37352, "totalVotes": 133047, "margin": -40.35, "demIncumbent": true },
-      { "year": 2020, "demPct": 84.05, "repPct": 15.95, "demCandidate": "Jesús G. “Chuy” García", "repCandidate": "Jesus Solorio", "demVotes": 187219, "repVotes": 35518, "totalVotes": 222737, "margin": -68.1, "demIncumbent": true },
-      { "year": 2018, "demPct": 86.59, "repPct": 13.41, "demCandidate": "Jesus “Chuy” Garcia", "repCandidate": "Mark Wayne Lorch", "demVotes": 143895, "repVotes": 22294, "totalVotes": 166189, "margin": -73.18 },
-      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Luis V. Gutiérrez", "demVotes": 171297, "totalVotes": 171297, "margin": -100, "demIncumbent": true }
+      { "year": 2024, "demPct": 67.51, "repPct": 27.29, "demCandidate": "Chuy García", "repCandidate": "Lupe Castillo", "demVotes": 139343, "repVotes": 56323, "totalVotes": 206396, "margin": -40.22, "demIncumbent": true },
+      { "year": 2022, "demPct": 68.42, "repPct": 28.07, "demCandidate": "Chuy García", "repCandidate": "James Falakos", "demVotes": 91036, "repVotes": 37352, "totalVotes": 133047, "margin": -40.35, "demIncumbent": true },
+      { "year": 2020, "demPct": 84.05, "repPct": 15.95, "demCandidate": "Chuy García", "repCandidate": "Jesus Solorio", "demVotes": 187219, "repVotes": 35518, "totalVotes": 222737, "margin": -68.1, "demIncumbent": true },
+      { "year": 2018, "demPct": 86.59, "repPct": 13.41, "demCandidate": "Chuy Garcia", "repCandidate": "Mark Wayne Lorch", "demVotes": 143895, "repVotes": 22294, "totalVotes": 166189, "margin": -73.18 },
+      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Luis Gutiérrez", "demVotes": 171297, "totalVotes": 171297, "margin": -100, "demIncumbent": true }
     ]
   },
   {
@@ -7956,8 +7956,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 54.2, "repPct": 45.78, "demCandidate": "Sean Casten", "repCandidate": "Niki Conforti", "demVotes": 196647, "repVotes": 166116, "totalVotes": 362849, "margin": -8.42, "demIncumbent": true },
       { "year": 2022, "demPct": 54.36, "repPct": 45.64, "demCandidate": "Sean Casten", "repCandidate": "Keith Pekau", "demVotes": 150496, "repVotes": 126351, "totalVotes": 276859, "margin": -8.72, "demIncumbent": true },
       { "year": 2020, "demPct": 52.82, "repPct": 45.43, "demCandidate": "Sean Casten", "repCandidate": "Jeanne Ives", "demVotes": 213777, "repVotes": 183891, "totalVotes": 404747, "margin": -7.39, "demIncumbent": true },
-      { "year": 2018, "demPct": 53.58, "repPct": 46.42, "demCandidate": "Sean Casten", "repCandidate": "Peter J. Roskam", "demVotes": 169001, "repVotes": 146445, "totalVotes": 315446, "margin": -7.16, "repIncumbent": true },
-      { "year": 2016, "demPct": 40.78, "repPct": 59.22, "demCandidate": "Amanda Howland", "repCandidate": "Peter J. Roskam", "demVotes": 143591, "repVotes": 208555, "totalVotes": 352146, "margin": 18.44, "repIncumbent": true }
+      { "year": 2018, "demPct": 53.58, "repPct": 46.42, "demCandidate": "Sean Casten", "repCandidate": "Peter Roskam", "demVotes": 169001, "repVotes": 146445, "totalVotes": 315446, "margin": -7.16, "repIncumbent": true },
+      { "year": 2016, "demPct": 40.78, "repPct": 59.22, "demCandidate": "Amanda Howland", "repCandidate": "Peter Roskam", "demVotes": 143591, "repVotes": 208555, "totalVotes": 352146, "margin": 18.44, "repIncumbent": true }
     ]
   },
   {
@@ -7986,11 +7986,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Danny Davis",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 83.25, "repPct": 16.69, "demCandidate": "Danny K. Davis", "repCandidate": "Chad Koppie", "demVotes": 222408, "repVotes": 44598, "totalVotes": 267152, "margin": -66.56, "demIncumbent": true },
-      { "year": 2022, "demPct": 99.94, "repPct": 0, "demCandidate": "Danny K. Davis", "demVotes": 167650, "totalVotes": 167746, "margin": -99.94, "demIncumbent": true },
-      { "year": 2020, "demPct": 80.41, "repPct": 13.35, "demCandidate": "Danny K. Davis", "repCandidate": "Craig Cameron", "demVotes": 249383, "repVotes": 41390, "totalVotes": 310128, "margin": -67.06, "demIncumbent": true },
-      { "year": 2018, "demPct": 87.62, "repPct": 12.38, "demCandidate": "Danny K. Davis", "repCandidate": "Craig Cameron", "demVotes": 215746, "repVotes": 30497, "totalVotes": 246243, "margin": -75.24, "demIncumbent": true },
-      { "year": 2016, "demPct": 84.24, "repPct": 15.76, "demCandidate": "Danny K. Davis", "repCandidate": "Jeffrey A. Leef", "demVotes": 250584, "repVotes": 46882, "totalVotes": 297466, "margin": -68.48, "demIncumbent": true }
+      { "year": 2024, "demPct": 83.25, "repPct": 16.69, "demCandidate": "Danny Davis", "repCandidate": "Chad Koppie", "demVotes": 222408, "repVotes": 44598, "totalVotes": 267152, "margin": -66.56, "demIncumbent": true },
+      { "year": 2022, "demPct": 99.94, "repPct": 0, "demCandidate": "Danny Davis", "demVotes": 167650, "totalVotes": 167746, "margin": -99.94, "demIncumbent": true },
+      { "year": 2020, "demPct": 80.41, "repPct": 13.35, "demCandidate": "Danny Davis", "repCandidate": "Craig Cameron", "demVotes": 249383, "repVotes": 41390, "totalVotes": 310128, "margin": -67.06, "demIncumbent": true },
+      { "year": 2018, "demPct": 87.62, "repPct": 12.38, "demCandidate": "Danny Davis", "repCandidate": "Craig Cameron", "demVotes": 215746, "repVotes": 30497, "totalVotes": 246243, "margin": -75.24, "demIncumbent": true },
+      { "year": 2016, "demPct": 84.24, "repPct": 15.76, "demCandidate": "Danny Davis", "repCandidate": "Jeffrey Leef", "demVotes": 250584, "repVotes": 46882, "totalVotes": 297466, "margin": -68.48, "demIncumbent": true }
     ]
   },
   {
@@ -8022,8 +8022,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 57.06, "repPct": 42.94, "demCandidate": "Raja Krishnamoorthi", "repCandidate": "Mark Rice", "demVotes": 172920, "repVotes": 130153, "totalVotes": 303073, "margin": -14.12, "demIncumbent": true },
       { "year": 2022, "demPct": 56.89, "repPct": 43.11, "demCandidate": "Raja Krishnamoorthi", "repCandidate": "Chris Dargis", "demVotes": 117880, "repVotes": 89335, "totalVotes": 207215, "margin": -13.78, "demIncumbent": true },
       { "year": 2020, "demPct": 73.16, "repPct": 26.84, "demCandidate": "Raja Krishnamoorthi", "repCandidate": "Preston Gabriel Nelson (L)", "demVotes": 186251, "repVotes": 68327, "totalVotes": 254578, "margin": -46.32, "demIncumbent": true },
-      { "year": 2018, "demPct": 65.97, "repPct": 34.03, "demCandidate": "Raja Krishnamoorthi", "repCandidate": "Jitendra “JD” Diganvker", "demVotes": 130054, "repVotes": 67073, "totalVotes": 197127, "margin": -31.94, "demIncumbent": true },
-      { "year": 2016, "demPct": 58.31, "repPct": 41.69, "demCandidate": "Raja Krishnamoorthi", "repCandidate": "Peter “Pete” DiCianni", "demVotes": 144954, "repVotes": 103617, "totalVotes": 248571, "margin": -16.62 }
+      { "year": 2018, "demPct": 65.97, "repPct": 34.03, "demCandidate": "Raja Krishnamoorthi", "repCandidate": "JD Diganvker", "demVotes": 130054, "repVotes": 67073, "totalVotes": 197127, "margin": -31.94, "demIncumbent": true },
+      { "year": 2016, "demPct": 58.31, "repPct": 41.69, "demCandidate": "Raja Krishnamoorthi", "repCandidate": "Pete DiCianni", "demVotes": 144954, "repVotes": 103617, "totalVotes": 248571, "margin": -16.62 }
     ]
   },
   {
@@ -8052,11 +8052,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Janice Schakowsky",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 68.39, "repPct": 31.61, "demCandidate": "Janice D. Schakowsky", "repCandidate": "Seth Alan Cohen", "demVotes": 231722, "repVotes": 107106, "totalVotes": 338828, "margin": -36.78, "demIncumbent": true },
-      { "year": 2022, "demPct": 71.69, "repPct": 28.31, "demCandidate": "Janice D. Schakowsky", "repCandidate": "Maxwell “Max” Rice", "demVotes": 179615, "repVotes": 70915, "totalVotes": 250530, "margin": -43.38, "demIncumbent": true },
-      { "year": 2020, "demPct": 70.98, "repPct": 29.02, "demCandidate": "Janice D. Schakowsky", "repCandidate": "Sargis Sangari", "demVotes": 262045, "repVotes": 107125, "totalVotes": 369170, "margin": -41.96, "demIncumbent": true },
-      { "year": 2018, "demPct": 73.49, "repPct": 26.51, "demCandidate": "Janice D. Schakowsky", "repCandidate": "John D. Elleson", "demVotes": 213368, "repVotes": 76983, "totalVotes": 290351, "margin": -46.98, "demIncumbent": true },
-      { "year": 2016, "demPct": 66.47, "repPct": 33.51, "demCandidate": "Janice D. Schakowsky", "repCandidate": "Joan McCarthy Lasonde", "demVotes": 217306, "repVotes": 109550, "totalVotes": 326948, "margin": -32.96, "demIncumbent": true }
+      { "year": 2024, "demPct": 68.39, "repPct": 31.61, "demCandidate": "Janice Schakowsky", "repCandidate": "Seth Alan Cohen", "demVotes": 231722, "repVotes": 107106, "totalVotes": 338828, "margin": -36.78, "demIncumbent": true },
+      { "year": 2022, "demPct": 71.69, "repPct": 28.31, "demCandidate": "Janice Schakowsky", "repCandidate": "Max Rice", "demVotes": 179615, "repVotes": 70915, "totalVotes": 250530, "margin": -43.38, "demIncumbent": true },
+      { "year": 2020, "demPct": 70.98, "repPct": 29.02, "demCandidate": "Janice Schakowsky", "repCandidate": "Sargis Sangari", "demVotes": 262045, "repVotes": 107125, "totalVotes": 369170, "margin": -41.96, "demIncumbent": true },
+      { "year": 2018, "demPct": 73.49, "repPct": 26.51, "demCandidate": "Janice Schakowsky", "repCandidate": "John Elleson", "demVotes": 213368, "repVotes": 76983, "totalVotes": 290351, "margin": -46.98, "demIncumbent": true },
+      { "year": 2016, "demPct": 66.47, "repPct": 33.51, "demCandidate": "Janice Schakowsky", "repCandidate": "Joan McCarthy Lasonde", "demVotes": 217306, "repVotes": 109550, "totalVotes": 326948, "margin": -32.96, "demIncumbent": true }
     ]
   },
   {
@@ -8088,8 +8088,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 59.93, "repPct": 39.99, "demCandidate": "Bradley Scott Schneider", "repCandidate": "Jim Carris", "demVotes": 196358, "repVotes": 131025, "totalVotes": 327621, "margin": -19.94, "demIncumbent": true },
       { "year": 2022, "demPct": 63, "repPct": 37, "demCandidate": "Bradley Scott Schneider", "repCandidate": "Joseph Severino", "demVotes": 152566, "repVotes": 89599, "totalVotes": 242165, "margin": -26, "demIncumbent": true },
       { "year": 2020, "demPct": 63.87, "repPct": 36.12, "demCandidate": "Bradley Scott Schneider", "repCandidate": "Valerie Ramirez Mukherjee", "demVotes": 202402, "repVotes": 114442, "totalVotes": 316874, "margin": -27.75, "demIncumbent": true },
-      { "year": 2018, "demPct": 65.59, "repPct": 34.41, "demCandidate": "Bradley Scott Schneider", "repCandidate": "Douglas R. Bennett", "demVotes": 156540, "repVotes": 82124, "totalVotes": 238664, "margin": -31.18, "demIncumbent": true },
-      { "year": 2016, "demPct": 52.6, "repPct": 47.39, "demCandidate": "Brad Schneider", "repCandidate": "Robert J. Dold", "demVotes": 150435, "repVotes": 135535, "totalVotes": 285996, "margin": -5.21 }
+      { "year": 2018, "demPct": 65.59, "repPct": 34.41, "demCandidate": "Bradley Scott Schneider", "repCandidate": "Douglas Bennett", "demVotes": 156540, "repVotes": 82124, "totalVotes": 238664, "margin": -31.18, "demIncumbent": true },
+      { "year": 2016, "demPct": 52.6, "repPct": 47.39, "demCandidate": "Brad Schneider", "repCandidate": "Robert Dold", "demVotes": 150435, "repVotes": 135535, "totalVotes": 285996, "margin": -5.21 }
     ]
   },
   {
@@ -8152,10 +8152,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 25.81, "repPct": 74.19, "demCandidate": "Brian Roberts", "repCandidate": "Mike Bost", "demVotes": 94875, "repVotes": 272754, "totalVotes": 367629, "margin": 48.38, "repIncumbent": true },
-      { "year": 2022, "demPct": 25, "repPct": 75, "demCandidate": "Homer “Chip” Markel", "repCandidate": "Mike Bost", "demVotes": 72791, "repVotes": 218379, "totalVotes": 291171, "margin": 50, "repIncumbent": true },
-      { "year": 2020, "demPct": 39.57, "repPct": 60.43, "demCandidate": "Raymond C. Lenzi", "repCandidate": "Mike Bost", "demVotes": 127577, "repVotes": 194839, "totalVotes": 322416, "margin": 20.86, "repIncumbent": true },
+      { "year": 2022, "demPct": 25, "repPct": 75, "demCandidate": "Chip Markel", "repCandidate": "Mike Bost", "demVotes": 72791, "repVotes": 218379, "totalVotes": 291171, "margin": 50, "repIncumbent": true },
+      { "year": 2020, "demPct": 39.57, "repPct": 60.43, "demCandidate": "Raymond Lenzi", "repCandidate": "Mike Bost", "demVotes": 127577, "repVotes": 194839, "totalVotes": 322416, "margin": 20.86, "repIncumbent": true },
       { "year": 2018, "demPct": 45.39, "repPct": 51.57, "demCandidate": "Brendan Kelly", "repCandidate": "Mike Bost", "demVotes": 118724, "repVotes": 134884, "totalVotes": 261543, "margin": 6.18, "repIncumbent": true },
-      { "year": 2016, "demPct": 39.69, "repPct": 54.31, "demCandidate": "Charles “C. J.” Baricevic", "repCandidate": "Mike Bost", "demVotes": 124246, "repVotes": 169976, "totalVotes": 313002, "margin": 14.62, "repIncumbent": true }
+      { "year": 2016, "demPct": 39.69, "repPct": 54.31, "demCandidate": "C. J. Baricevic", "repCandidate": "Mike Bost", "demVotes": 124246, "repVotes": 169976, "totalVotes": 313002, "margin": 14.62, "repIncumbent": true }
     ]
   },
   {
@@ -8188,7 +8188,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 56.61, "repPct": 43.38, "demCandidate": "Nikki Budzinski", "repCandidate": "Regan Deering", "demVotes": 141788, "repVotes": 108646, "totalVotes": 250450, "margin": -13.23 },
       { "year": 2020, "demPct": 45.54, "repPct": 54.46, "demCandidate": "Betsy Dirksen Londrigan", "repCandidate": "Rodney Davis", "demVotes": 151648, "repVotes": 181373, "totalVotes": 333021, "margin": 8.92, "repIncumbent": true },
       { "year": 2018, "demPct": 49.62, "repPct": 50.38, "demCandidate": "Betsy Dirksen Londrigan", "repCandidate": "Rodney Davis", "demVotes": 134458, "repVotes": 136516, "totalVotes": 270981, "margin": 0.76, "repIncumbent": true },
-      { "year": 2016, "demPct": 40.34, "repPct": 59.66, "demCandidate": "Mark D. Wicklund", "repCandidate": "Rodney Davis", "demVotes": 126811, "repVotes": 187583, "totalVotes": 314394, "margin": 19.32, "repIncumbent": true }
+      { "year": 2016, "demPct": 40.34, "repPct": 59.66, "demCandidate": "Mark Wicklund", "repCandidate": "Rodney Davis", "demVotes": 126811, "repVotes": 187583, "totalVotes": 314394, "margin": 19.32, "repIncumbent": true }
     ]
   },
   {
@@ -8217,8 +8217,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Lauren Underwood",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 55.1, "repPct": 44.89, "demCandidate": "Lauren Underwood", "repCandidate": "James T. “Jim” Marter", "demVotes": 183446, "repVotes": 149464, "totalVotes": 332929, "margin": -10.21, "demIncumbent": true },
-      { "year": 2022, "demPct": 54.16, "repPct": 45.84, "demCandidate": "Lauren Underwood", "repCandidate": "Scott R. Gryder", "demVotes": 128141, "repVotes": 108451, "totalVotes": 236600, "margin": -8.32, "demIncumbent": true },
+      { "year": 2024, "demPct": 55.1, "repPct": 44.89, "demCandidate": "Lauren Underwood", "repCandidate": "Jim Marter", "demVotes": 183446, "repVotes": 149464, "totalVotes": 332929, "margin": -10.21, "demIncumbent": true },
+      { "year": 2022, "demPct": 54.16, "repPct": 45.84, "demCandidate": "Lauren Underwood", "repCandidate": "Scott Gryder", "demVotes": 128141, "repVotes": 108451, "totalVotes": 236600, "margin": -8.32, "demIncumbent": true },
       { "year": 2020, "demPct": 50.67, "repPct": 49.33, "demCandidate": "Lauren Underwood", "repCandidate": "Jim Oberweis", "demVotes": 203209, "repVotes": 197835, "totalVotes": 401052, "margin": -1.34, "demIncumbent": true },
       { "year": 2018, "demPct": 52.5, "repPct": 47.5, "demCandidate": "Lauren Underwood", "repCandidate": "Randy Hultgren", "demVotes": 156035, "repVotes": 141164, "totalVotes": 297199, "margin": -5, "repIncumbent": true },
       { "year": 2016, "demPct": 40.7, "repPct": 59.3, "demCandidate": "Jim Walz", "repCandidate": "Randy Hultgren", "demVotes": 137589, "repVotes": 200508, "totalVotes": 338097, "margin": 18.6, "repIncumbent": true }
@@ -8250,9 +8250,9 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Mary Miller",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 0, "repPct": 99.55, "repCandidate": "Mary E. Miller", "repVotes": 308825, "totalVotes": 310234, "margin": 99.55, "repIncumbent": true },
-      { "year": 2022, "demPct": 28.86, "repPct": 71.14, "demCandidate": "Paul J. Lange", "repCandidate": "Mary E. Miller", "demVotes": 86396, "repVotes": 213007, "totalVotes": 299403, "margin": 42.28, "repIncumbent": true },
-      { "year": 2020, "demPct": 26.55, "repPct": 73.45, "demCandidate": "Erika C. Weaver", "repCandidate": "Mary Miller", "demVotes": 88559, "repVotes": 244947, "totalVotes": 333506, "margin": 46.9 },
+      { "year": 2024, "demPct": 0, "repPct": 99.55, "repCandidate": "Mary Miller", "repVotes": 308825, "totalVotes": 310234, "margin": 99.55, "repIncumbent": true },
+      { "year": 2022, "demPct": 28.86, "repPct": 71.14, "demCandidate": "Paul Lange", "repCandidate": "Mary Miller", "demVotes": 86396, "repVotes": 213007, "totalVotes": 299403, "margin": 42.28, "repIncumbent": true },
+      { "year": 2020, "demPct": 26.55, "repPct": 73.45, "demCandidate": "Erika Weaver", "repCandidate": "Mary Miller", "demVotes": 88559, "repVotes": 244947, "totalVotes": 333506, "margin": 46.9 },
       { "year": 2018, "demPct": 29.07, "repPct": 70.93, "demCandidate": "Kevin Gaither", "repCandidate": "John Shimkus", "demVotes": 74309, "repVotes": 181294, "totalVotes": 255608, "margin": 41.86, "repIncumbent": true },
       { "year": 2016, "demPct": 0, "repPct": 100, "repCandidate": "John Shimkus", "repVotes": 274554, "totalVotes": 274554, "margin": 100, "repIncumbent": true }
     ]
@@ -8284,7 +8284,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 0, "repPct": 99.94, "repCandidate": "Darin LaHood", "repVotes": 310925, "totalVotes": 311108, "margin": 99.94, "repIncumbent": true },
-      { "year": 2022, "demPct": 33.67, "repPct": 66.33, "demCandidate": "Elizabeth “Lisa” Haderlein", "repCandidate": "Darin LaHood", "demVotes": 100325, "repVotes": 197621, "totalVotes": 297946, "margin": 32.66 },
+      { "year": 2022, "demPct": 33.67, "repPct": 66.33, "demCandidate": "Lisa Haderlein", "repCandidate": "Darin LaHood", "demVotes": 100325, "repVotes": 197621, "totalVotes": 297946, "margin": 32.66 },
       { "year": 2020, "demPct": 35.28, "repPct": 64.71, "demCandidate": "Dani Brzozowski", "repCandidate": "Adam Kinzinger", "demVotes": 119313, "repVotes": 218839, "totalVotes": 338159, "margin": 29.43, "repIncumbent": true },
       { "year": 2018, "demPct": 40.88, "repPct": 59.12, "demCandidate": "Sara Dady", "repCandidate": "Adam Kinzinger", "demVotes": 104569, "repVotes": 151254, "totalVotes": 255825, "margin": 18.24, "repIncumbent": true },
       { "year": 2016, "demPct": 0, "repPct": 99.95, "repCandidate": "Adam Kinzinger", "repVotes": 259722, "totalVotes": 259853, "margin": 99.95, "repIncumbent": true }
@@ -8317,7 +8317,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 54.43, "repPct": 45.57, "demCandidate": "Eric Sorensen", "repCandidate": "Joe McGraw", "demVotes": 170261, "repVotes": 142567, "totalVotes": 312828, "margin": -8.86, "demIncumbent": true },
       { "year": 2022, "demPct": 51.98, "repPct": 48.01, "demCandidate": "Eric Sorensen", "repCandidate": "Esther Joy King", "demVotes": 121186, "repVotes": 111931, "totalVotes": 233123, "margin": -3.97 },
       { "year": 2020, "demPct": 52.02, "repPct": 47.97, "demCandidate": "Cheri Bustos", "repCandidate": "Esther Joy King", "demVotes": 156011, "repVotes": 143863, "totalVotes": 299895, "margin": -4.05, "demIncumbent": true },
-      { "year": 2018, "demPct": 62.09, "repPct": 37.91, "demCandidate": "Cheri Bustos", "repCandidate": "William W. “Bill” Fawell", "demVotes": 142659, "repVotes": 87090, "totalVotes": 229749, "margin": -24.18, "demIncumbent": true },
+      { "year": 2018, "demPct": 62.09, "repPct": 37.91, "demCandidate": "Cheri Bustos", "repCandidate": "Bill Fawell", "demVotes": 142659, "repVotes": 87090, "totalVotes": 229749, "margin": -24.18, "demIncumbent": true },
       { "year": 2016, "demPct": 60.31, "repPct": 39.69, "demCandidate": "Cheri Bustos", "repCandidate": "Patrick Harlan", "demVotes": 173125, "repVotes": 113943, "totalVotes": 287068, "margin": -20.62, "demIncumbent": true }
     ]
   },
@@ -8345,11 +8345,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Frank Mrvan",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 53.44, "repPct": 44.95, "demCandidate": "Frank J. Mrvan", "repCandidate": "Randy Niemeyer", "demVotes": 172467, "repVotes": 145056, "totalVotes": 322723, "margin": -8.49, "demIncumbent": true },
-      { "year": 2022, "demPct": 52.84, "repPct": 47.16, "demCandidate": "Frank J. Mrvan", "repCandidate": "Jennifer-Ruth Green", "demVotes": 112656, "repVotes": 100542, "totalVotes": 213207, "margin": -5.68, "demIncumbent": true },
-      { "year": 2020, "demPct": 56.64, "repPct": 40.45, "demCandidate": "Frank J. Mrvan", "repCandidate": "Mark Leyva", "demVotes": 185180, "repVotes": 132247, "totalVotes": 326948, "margin": -16.19 },
-      { "year": 2018, "demPct": 65.09, "repPct": 34.91, "demCandidate": "Peter J. Visclosky", "repCandidate": "Mark Leyva", "demVotes": 159611, "repVotes": 85594, "totalVotes": 245209, "margin": -30.18, "demIncumbent": true },
-      { "year": 2016, "demPct": 81.51, "repPct": 18.48, "demCandidate": "Peter J. Visclosky", "repCandidate": "Donna Dunn (L)", "demVotes": 207515, "repVotes": 47051, "totalVotes": 254583, "margin": -63.03, "demIncumbent": true }
+      { "year": 2024, "demPct": 53.44, "repPct": 44.95, "demCandidate": "Frank Mrvan", "repCandidate": "Randy Niemeyer", "demVotes": 172467, "repVotes": 145056, "totalVotes": 322723, "margin": -8.49, "demIncumbent": true },
+      { "year": 2022, "demPct": 52.84, "repPct": 47.16, "demCandidate": "Frank Mrvan", "repCandidate": "Jennifer-Ruth Green", "demVotes": 112656, "repVotes": 100542, "totalVotes": 213207, "margin": -5.68, "demIncumbent": true },
+      { "year": 2020, "demPct": 56.64, "repPct": 40.45, "demCandidate": "Frank Mrvan", "repCandidate": "Mark Leyva", "demVotes": 185180, "repVotes": 132247, "totalVotes": 326948, "margin": -16.19 },
+      { "year": 2018, "demPct": 65.09, "repPct": 34.91, "demCandidate": "Peter Visclosky", "repCandidate": "Mark Leyva", "demVotes": 159611, "repVotes": 85594, "totalVotes": 245209, "margin": -30.18, "demIncumbent": true },
+      { "year": 2016, "demPct": 81.51, "repPct": 18.48, "demCandidate": "Peter Visclosky", "repCandidate": "Donna Dunn (L)", "demVotes": 207515, "repVotes": 47051, "totalVotes": 254583, "margin": -63.03, "demIncumbent": true }
     ]
   },
   {
@@ -8375,14 +8375,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Jamee Decio", "party": "D", "incumbent": false },
       "rep": { "name": "Rudy Yakym", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Rudy Yakym III",
+    "seatHolder": "Rudy Yakym",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 34.61, "repPct": 62.74, "demCandidate": "Lori A. Camp", "repCandidate": "Rudy Yakym III", "demVotes": 101962, "repVotes": 184848, "totalVotes": 294618, "margin": 28.13, "repIncumbent": true },
-      { "year": 2022, "demPct": 32.41, "repPct": 64.57, "demCandidate": "Paul D. Steury", "repCandidate": "Rudolph “Rudy” Yakym III", "demVotes": 62891, "repVotes": 125313, "totalVotes": 194073, "margin": 32.16 },
-      { "year": 2020, "demPct": 38.51, "repPct": 61.49, "demCandidate": "Patricia “Pat” Hackett", "repCandidate": "Jackie Walorski", "demVotes": 114967, "repVotes": 183601, "totalVotes": 298568, "margin": 22.98, "repIncumbent": true },
+      { "year": 2024, "demPct": 34.61, "repPct": 62.74, "demCandidate": "Lori Camp", "repCandidate": "Rudy Yakym III", "demVotes": 101962, "repVotes": 184848, "totalVotes": 294618, "margin": 28.13, "repIncumbent": true },
+      { "year": 2022, "demPct": 32.41, "repPct": 64.57, "demCandidate": "Paul Steury", "repCandidate": "Rudy Yakym III", "demVotes": 62891, "repVotes": 125313, "totalVotes": 194073, "margin": 32.16 },
+      { "year": 2020, "demPct": 38.51, "repPct": 61.49, "demCandidate": "Pat Hackett", "repCandidate": "Jackie Walorski", "demVotes": 114967, "repVotes": 183601, "totalVotes": 298568, "margin": 22.98, "repIncumbent": true },
       { "year": 2018, "demPct": 45.16, "repPct": 54.83, "demCandidate": "Mel Hall", "repCandidate": "Jackie Walorski", "demVotes": 103363, "repVotes": 125499, "totalVotes": 228889, "margin": 9.67, "repIncumbent": true },
-      { "year": 2016, "demPct": 36.92, "repPct": 59.26, "demCandidate": "Lynn C. Coleman", "repCandidate": "Jackie Walorski", "demVotes": 102401, "repVotes": 164355, "totalVotes": 277357, "margin": 22.34, "repIncumbent": true }
+      { "year": 2016, "demPct": 36.92, "repPct": 59.26, "demCandidate": "Lynn Coleman", "repCandidate": "Jackie Walorski", "demVotes": 102401, "repVotes": 164355, "totalVotes": 277357, "margin": 22.34, "repIncumbent": true }
     ]
   },
   {
@@ -8411,11 +8411,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Marlin Stutzman",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 31.42, "repPct": 65.05, "demCandidate": "Kiley M. Adolph", "repCandidate": "Marlin A. Stutzman", "demVotes": 97871, "repVotes": 202653, "totalVotes": 311539, "margin": 33.63 },
-      { "year": 2022, "demPct": 30.06, "repPct": 65.29, "demCandidate": "Gary L. Snyder", "repCandidate": "Jim Banks", "demVotes": 60577, "repVotes": 131579, "totalVotes": 201542, "margin": 35.23, "repIncumbent": true },
+      { "year": 2024, "demPct": 31.42, "repPct": 65.05, "demCandidate": "Kiley Adolph", "repCandidate": "Marlin Stutzman", "demVotes": 97871, "repVotes": 202653, "totalVotes": 311539, "margin": 33.63 },
+      { "year": 2022, "demPct": 30.06, "repPct": 65.29, "demCandidate": "Gary Snyder", "repCandidate": "Jim Banks", "demVotes": 60577, "repVotes": 131579, "totalVotes": 201542, "margin": 35.23, "repIncumbent": true },
       { "year": 2020, "demPct": 32.16, "repPct": 67.84, "demCandidate": "Chip Coldiron", "repCandidate": "Jim Banks", "demVotes": 104762, "repVotes": 220989, "totalVotes": 325751, "margin": 35.68, "repIncumbent": true },
       { "year": 2018, "demPct": 35.27, "repPct": 64.73, "demCandidate": "Courtney Tritch", "repCandidate": "Jim Banks", "demVotes": 86610, "repVotes": 158927, "totalVotes": 245537, "margin": 29.46, "repIncumbent": true },
-      { "year": 2016, "demPct": 22.98, "repPct": 70.11, "demCandidate": "Tommy A. Schrader", "repCandidate": "Jim Banks", "demVotes": 66023, "repVotes": 201396, "totalVotes": 287247, "margin": 47.13 }
+      { "year": 2016, "demPct": 22.98, "repPct": 70.11, "demCandidate": "Tommy Schrader", "repCandidate": "Jim Banks", "demVotes": 66023, "repVotes": 201396, "totalVotes": 287247, "margin": 47.13 }
     ]
   },
   {
@@ -8444,9 +8444,9 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "James Baird",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 30.93, "repPct": 64.83, "demCandidate": "Derrick Holder", "repCandidate": "James R. Baird", "demVotes": 100091, "repVotes": 209794, "totalVotes": 323595, "margin": 33.9, "repIncumbent": true },
-      { "year": 2022, "demPct": 31.78, "repPct": 68.22, "demCandidate": "Roger D. Day", "repCandidate": "James R. Baird", "demVotes": 62834, "repVotes": 134864, "totalVotes": 197698, "margin": 36.44, "repIncumbent": true },
-      { "year": 2020, "demPct": 33.38, "repPct": 66.62, "demCandidate": "Joe Mackey", "repCandidate": "James R. Baird", "demVotes": 112984, "repVotes": 225531, "totalVotes": 338515, "margin": 33.24, "repIncumbent": true },
+      { "year": 2024, "demPct": 30.93, "repPct": 64.83, "demCandidate": "Derrick Holder", "repCandidate": "James Baird", "demVotes": 100091, "repVotes": 209794, "totalVotes": 323595, "margin": 33.9, "repIncumbent": true },
+      { "year": 2022, "demPct": 31.78, "repPct": 68.22, "demCandidate": "Roger Day", "repCandidate": "James Baird", "demVotes": 62834, "repVotes": 134864, "totalVotes": 197698, "margin": 36.44, "repIncumbent": true },
+      { "year": 2020, "demPct": 33.38, "repPct": 66.62, "demCandidate": "Joe Mackey", "repCandidate": "James Baird", "demVotes": 112984, "repVotes": 225531, "totalVotes": 338515, "margin": 33.24, "repIncumbent": true },
       { "year": 2018, "demPct": 35.94, "repPct": 64.06, "demCandidate": "Tobi Beck", "repCandidate": "Jim Baird", "demVotes": 87824, "repVotes": 156539, "totalVotes": 244363, "margin": 28.12 },
       { "year": 2016, "demPct": 30.48, "repPct": 64.59, "demCandidate": "John Dale", "repCandidate": "Todd Rokita", "demVotes": 91256, "repVotes": 193412, "totalVotes": 299434, "margin": 34.11, "repIncumbent": true }
     ]
@@ -8477,11 +8477,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Victoria Spartz",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 38.02, "repPct": 56.6, "demCandidate": "Deborah A. Pickett", "repCandidate": "Victoria Spartz", "demVotes": 136554, "repVotes": 203293, "totalVotes": 359204, "margin": 18.58, "repIncumbent": true },
+      { "year": 2024, "demPct": 38.02, "repPct": 56.6, "demCandidate": "Deborah Pickett", "repCandidate": "Victoria Spartz", "demVotes": 136554, "repVotes": 203293, "totalVotes": 359204, "margin": 18.58, "repIncumbent": true },
       { "year": 2022, "demPct": 38.93, "repPct": 61.07, "demCandidate": "Jeannine Lee Lake", "repCandidate": "Victoria Spartz", "demVotes": 93434, "repVotes": 146575, "totalVotes": 240009, "margin": 22.14, "repIncumbent": true },
       { "year": 2020, "demPct": 45.94, "repPct": 50.02, "demCandidate": "Christina Hale", "repCandidate": "Victoria Spartz", "demVotes": 191226, "repVotes": 208212, "totalVotes": 416226, "margin": 4.08 },
-      { "year": 2018, "demPct": 43.24, "repPct": 56.76, "demCandidate": "Dee Thornton", "repCandidate": "Susan W. Brooks", "demVotes": 137142, "repVotes": 180035, "totalVotes": 317177, "margin": 13.52, "repIncumbent": true },
-      { "year": 2016, "demPct": 34.29, "repPct": 61.46, "demCandidate": "Angela Demaree", "repCandidate": "Susan W. Brooks", "demVotes": 123849, "repVotes": 221957, "totalVotes": 361135, "margin": 27.17, "repIncumbent": true }
+      { "year": 2018, "demPct": 43.24, "repPct": 56.76, "demCandidate": "Dee Thornton", "repCandidate": "Susan Brooks", "demVotes": 137142, "repVotes": 180035, "totalVotes": 317177, "margin": 13.52, "repIncumbent": true },
+      { "year": 2016, "demPct": 34.29, "repPct": 61.46, "demCandidate": "Angela Demaree", "repCandidate": "Susan Brooks", "demVotes": 123849, "repVotes": 221957, "totalVotes": 361135, "margin": 27.17, "repIncumbent": true }
     ]
   },
   {
@@ -8510,8 +8510,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jefferson Shreve",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 31.7, "repPct": 63.94, "demCandidate": "Cynthia “Cinde” Wirth", "repCandidate": "Jefferson Shreve", "demVotes": 99841, "repVotes": 201357, "totalVotes": 314909, "margin": 32.24 },
-      { "year": 2022, "demPct": 32.47, "repPct": 67.53, "demCandidate": "Cynthia “Cinde” Wirth", "repCandidate": "Greg Pence", "demVotes": 62838, "repVotes": 130686, "totalVotes": 193524, "margin": 35.06, "repIncumbent": true },
+      { "year": 2024, "demPct": 31.7, "repPct": 63.94, "demCandidate": "Cinde Wirth", "repCandidate": "Jefferson Shreve", "demVotes": 99841, "repVotes": 201357, "totalVotes": 314909, "margin": 32.24 },
+      { "year": 2022, "demPct": 32.47, "repPct": 67.53, "demCandidate": "Cinde Wirth", "repCandidate": "Greg Pence", "demVotes": 62838, "repVotes": 130686, "totalVotes": 193524, "margin": 35.06, "repIncumbent": true },
       { "year": 2020, "demPct": 27.76, "repPct": 68.65, "demCandidate": "Jeannine Lee Lake", "repCandidate": "Greg Pence", "demVotes": 91103, "repVotes": 225319, "totalVotes": 328213, "margin": 40.89, "repIncumbent": true },
       { "year": 2018, "demPct": 32.86, "repPct": 63.82, "demCandidate": "Jeannine Lee Lake", "repCandidate": "Greg Pence", "demVotes": 79430, "repVotes": 154260, "totalVotes": 241726, "margin": 30.96 },
       { "year": 2016, "demPct": 26.7, "repPct": 69.14, "demCandidate": "Barry Welsh", "repCandidate": "Luke Messer", "demVotes": 79135, "repVotes": 204920, "totalVotes": 296385, "margin": 42.44, "repIncumbent": true }
@@ -8541,11 +8541,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Andre Carson",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 68.34, "repPct": 28.95, "demCandidate": "André Carson", "repCandidate": "John P. Schmitz", "demVotes": 185987, "repVotes": 78792, "totalVotes": 272148, "margin": -39.39, "demIncumbent": true },
+      { "year": 2024, "demPct": 68.34, "repPct": 28.95, "demCandidate": "André Carson", "repCandidate": "John Schmitz", "demVotes": 185987, "repVotes": 78792, "totalVotes": 272148, "margin": -39.39, "demIncumbent": true },
       { "year": 2022, "demPct": 66.96, "repPct": 30.61, "demCandidate": "André Carson", "repCandidate": "Angela Grabovsky", "demVotes": 117309, "repVotes": 53631, "totalVotes": 175180, "margin": -36.35, "demIncumbent": true },
       { "year": 2020, "demPct": 62.44, "repPct": 37.56, "demCandidate": "André Carson", "repCandidate": "Susan Marie Smith", "demVotes": 176422, "repVotes": 106146, "totalVotes": 282568, "margin": -24.88, "demIncumbent": true },
-      { "year": 2018, "demPct": 64.86, "repPct": 35.14, "demCandidate": "André Carson", "repCandidate": "Wayne “Gunny” Harmon", "demVotes": 141139, "repVotes": 76457, "totalVotes": 217596, "margin": -29.72, "demIncumbent": true },
-      { "year": 2016, "demPct": 59.98, "repPct": 35.69, "demCandidate": "André Carson", "repCandidate": "Catherine “CAT” Ping", "demVotes": 158739, "repVotes": 94456, "totalVotes": 264670, "margin": -24.29, "demIncumbent": true }
+      { "year": 2018, "demPct": 64.86, "repPct": 35.14, "demCandidate": "André Carson", "repCandidate": "Gunny Harmon", "demVotes": 141139, "repVotes": 76457, "totalVotes": 217596, "margin": -29.72, "demIncumbent": true },
+      { "year": 2016, "demPct": 59.98, "repPct": 35.69, "demCandidate": "André Carson", "repCandidate": "CAT Ping", "demVotes": 158739, "repVotes": 94456, "totalVotes": 264670, "margin": -24.29, "demIncumbent": true }
     ]
   },
   {
@@ -8571,12 +8571,12 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Mary Allen", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Messmer", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Mark B. Messmer",
+    "seatHolder": "Mark Messmer",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 29.45, "repPct": 67.96, "demCandidate": "Erik Hurt", "repCandidate": "Mark Messmer", "demVotes": 95311, "repVotes": 219941, "totalVotes": 323633, "margin": 38.51 },
       { "year": 2022, "demPct": 31.53, "repPct": 65.73, "demCandidate": "Ray McCormick", "repCandidate": "Larry Bucshon", "demVotes": 68109, "repVotes": 141995, "totalVotes": 216040, "margin": 34.2, "repIncumbent": true },
-      { "year": 2020, "demPct": 29.85, "repPct": 66.95, "demCandidate": "E. Thomasina Marsili", "repCandidate": "Larry Bucshon", "demVotes": 95691, "repVotes": 214643, "totalVotes": 320617, "margin": 37.1, "repIncumbent": true },
+      { "year": 2020, "demPct": 29.85, "repPct": 66.95, "demCandidate": "Thomasina Marsili", "repCandidate": "Larry Bucshon", "demVotes": 95691, "repVotes": 214643, "totalVotes": 320617, "margin": 37.1, "repIncumbent": true },
       { "year": 2018, "demPct": 35.57, "repPct": 64.43, "demCandidate": "William Tanoos", "repCandidate": "Larry Bucshon", "demVotes": 86895, "repVotes": 157396, "totalVotes": 244291, "margin": 28.86, "repIncumbent": true },
       { "year": 2016, "demPct": 31.68, "repPct": 63.69, "demCandidate": "Ron Drake", "repCandidate": "Larry Bucshon", "demVotes": 93356, "repVotes": 187702, "totalVotes": 294713, "margin": 32.01, "repIncumbent": true }
     ]
@@ -8607,7 +8607,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Erin Houchin",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 32.8, "repPct": 64.47, "demCandidate": "Timothy “Tim” Peck", "repCandidate": "Erin Houchin", "demVotes": 113400, "repVotes": 222884, "totalVotes": 345738, "margin": 31.67, "repIncumbent": true },
+      { "year": 2024, "demPct": 32.8, "repPct": 64.47, "demCandidate": "Tim Peck", "repCandidate": "Erin Houchin", "demVotes": 113400, "repVotes": 222884, "totalVotes": 345738, "margin": 31.67, "repIncumbent": true },
       { "year": 2022, "demPct": 33.6, "repPct": 63.55, "demCandidate": "Matthew Fyfe", "repCandidate": "Erin Houchin", "demVotes": 75700, "repVotes": 143166, "totalVotes": 225276, "margin": 29.95 },
       { "year": 2020, "demPct": 34.14, "repPct": 61.85, "demCandidate": "Andy Ruff", "repCandidate": "Trey Hollingsworth", "demVotes": 122566, "repVotes": 222057, "totalVotes": 359038, "margin": 27.71, "repIncumbent": true },
       { "year": 2018, "demPct": 43.52, "repPct": 56.48, "demCandidate": "Liz Watson", "repCandidate": "Trey Hollingsworth", "demVotes": 118090, "repVotes": 153271, "totalVotes": 271361, "margin": 12.96, "repIncumbent": true },
@@ -8673,7 +8673,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 41.52, "repPct": 57.08, "demCandidate": "Sarah Corkery", "repCandidate": "Ashley Hinson", "demVotes": 169740, "repVotes": 233340, "totalVotes": 408802, "margin": 15.56, "repIncumbent": true },
       { "year": 2022, "demPct": 45.84, "repPct": 54.08, "demCandidate": "Liz Mathis", "repCandidate": "Ashley Hinson", "demVotes": 145940, "repVotes": 172181, "totalVotes": 318399, "margin": 8.24 },
-      { "year": 2020, "demPct": 49.91, "repPct": 49.91, "demCandidate": "Rita R. Hart", "repCandidate": "Mariannette Miller-Meeks", "demVotes": 196958, "repVotes": 196964, "totalVotes": 394625, "margin": 0 },
+      { "year": 2020, "demPct": 49.91, "repPct": 49.91, "demCandidate": "Rita Hart", "repCandidate": "Mariannette Miller-Meeks", "demVotes": 196958, "repVotes": 196964, "totalVotes": 394625, "margin": 0 },
       { "year": 2018, "demPct": 54.79, "repPct": 42.6, "demCandidate": "David Loebsack", "repCandidate": "Christopher Peters", "demVotes": 171446, "repVotes": 133287, "totalVotes": 312913, "margin": -12.19, "demIncumbent": true },
       { "year": 2016, "demPct": 53.66, "repPct": 46.19, "demCandidate": "David Loebsack", "repCandidate": "Christopher Peters", "demVotes": 198571, "repVotes": 170933, "totalVotes": 370032, "margin": -7.47, "demIncumbent": true }
     ]
@@ -8737,8 +8737,8 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 32.68, "repPct": 67.02, "demCandidate": "Ryan Melton", "repCandidate": "Randy Feenstra", "demVotes": 122175, "repVotes": 250522, "totalVotes": 373824, "margin": 34.34, "repIncumbent": true },
       { "year": 2022, "demPct": 30.41, "repPct": 67.31, "demCandidate": "Ryan Melton", "repCandidate": "Randy Feenstra", "demVotes": 84230, "repVotes": 186467, "totalVotes": 277008, "margin": 36.9, "repIncumbent": true },
-      { "year": 2020, "demPct": 37.79, "repPct": 61.97, "demCandidate": "J. D. Scholten", "repCandidate": "Randy Feenstra", "demVotes": 144761, "repVotes": 237369, "totalVotes": 383022, "margin": 24.18 },
-      { "year": 2018, "demPct": 47.04, "repPct": 50.37, "demCandidate": "J. D. Scholten", "repCandidate": "Steve King", "demVotes": 147246, "repVotes": 157676, "totalVotes": 313045, "margin": 3.33, "repIncumbent": true },
+      { "year": 2020, "demPct": 37.79, "repPct": 61.97, "demCandidate": "Scholten", "repCandidate": "Randy Feenstra", "demVotes": 144761, "repVotes": 237369, "totalVotes": 383022, "margin": 24.18 },
+      { "year": 2018, "demPct": 47.04, "repPct": 50.37, "demCandidate": "Scholten", "repCandidate": "Steve King", "demVotes": 147246, "repVotes": 157676, "totalVotes": 313045, "margin": 3.33, "repIncumbent": true },
       { "year": 2016, "demPct": 38.62, "repPct": 61.23, "demCandidate": "Kim Weaver", "repCandidate": "Steve King", "demVotes": 142993, "repVotes": 226719, "totalVotes": 370259, "margin": 22.61, "repIncumbent": true }
     ]
   },
@@ -8769,9 +8769,9 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 30.86, "repPct": 69.14, "demCandidate": "Paul Buskirk", "repCandidate": "Tracey Mann", "demVotes": 93965, "repVotes": 210493, "totalVotes": 304458, "margin": 38.28, "repIncumbent": true },
-      { "year": 2022, "demPct": 32.33, "repPct": 67.67, "demCandidate": "James “Jimmy” Beard", "repCandidate": "Tracey Mann", "demVotes": 77092, "repVotes": 161333, "totalVotes": 238425, "margin": 35.34, "repIncumbent": true },
+      { "year": 2022, "demPct": 32.33, "repPct": 67.67, "demCandidate": "Jimmy Beard", "repCandidate": "Tracey Mann", "demVotes": 77092, "repVotes": 161333, "totalVotes": 238425, "margin": 35.34, "repIncumbent": true },
       { "year": 2020, "demPct": 28.84, "repPct": 71.16, "demCandidate": "Kali Barnett", "repCandidate": "Tracey Mann", "demVotes": 84393, "repVotes": 208229, "totalVotes": 292622, "margin": 42.32 },
-      { "year": 2018, "demPct": 31.85, "repPct": 68.15, "demCandidate": "Alan LaPolice", "repCandidate": "Roger W. Marshall", "demVotes": 71558, "repVotes": 153082, "totalVotes": 224640, "margin": 36.3, "repIncumbent": true },
+      { "year": 2018, "demPct": 31.85, "repPct": 68.15, "demCandidate": "Alan LaPolice", "repCandidate": "Roger Marshall", "demVotes": 71558, "repVotes": 153082, "totalVotes": 224640, "margin": 36.3, "repIncumbent": true },
       { "year": 2016, "demPct": 26.26, "repPct": 65.9, "demCandidate": "Alan LaPolice", "demParty": "I", "repCandidate": "Roger Marshall", "demVotes": 67739, "repVotes": 169992, "totalVotes": 257971, "margin": 39.64 }
     ]
   },
@@ -8835,8 +8835,8 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 53.36, "repPct": 42.6, "demCandidate": "Sharice Davids", "repCandidate": "Prasanth Reddy", "demVotes": 209871, "repVotes": 167570, "totalVotes": 393333, "margin": -10.76, "demIncumbent": true },
-      { "year": 2022, "demPct": 54.94, "repPct": 42.76, "demCandidate": "Sharice Davids", "repCandidate": "Amanda L. Adkins", "demVotes": 165527, "repVotes": 128839, "totalVotes": 301294, "margin": -12.18, "demIncumbent": true },
-      { "year": 2020, "demPct": 53.62, "repPct": 43.56, "demCandidate": "Sharice Davids", "repCandidate": "Amanda L. Adkins", "demVotes": 220049, "repVotes": 178773, "totalVotes": 410418, "margin": -10.06, "demIncumbent": true },
+      { "year": 2022, "demPct": 54.94, "repPct": 42.76, "demCandidate": "Sharice Davids", "repCandidate": "Amanda Adkins", "demVotes": 165527, "repVotes": 128839, "totalVotes": 301294, "margin": -12.18, "demIncumbent": true },
+      { "year": 2020, "demPct": 53.62, "repPct": 43.56, "demCandidate": "Sharice Davids", "repCandidate": "Amanda Adkins", "demVotes": 220049, "repVotes": 178773, "totalVotes": 410418, "margin": -10.06, "demIncumbent": true },
       { "year": 2018, "demPct": 53.57, "repPct": 43.91, "demCandidate": "Sharice Davids", "repCandidate": "Kevin Yoder", "demVotes": 170518, "repVotes": 139762, "totalVotes": 318301, "margin": -9.66, "repIncumbent": true },
       { "year": 2016, "demPct": 40.6, "repPct": 51.3, "demCandidate": "Jay Sidie", "repCandidate": "Kevin Yoder", "demVotes": 139300, "repVotes": 176022, "totalVotes": 343113, "margin": 10.7, "repIncumbent": true }
     ]
@@ -8870,8 +8870,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 34.95, "repPct": 65.05, "demCandidate": "Esau Freeman", "repCandidate": "Ron Estes", "demVotes": 106632, "repVotes": 198465, "totalVotes": 305097, "margin": 30.1, "repIncumbent": true },
       { "year": 2022, "demPct": 36.66, "repPct": 63.34, "demCandidate": "Bob Hernandez", "repCandidate": "Ron Estes", "demVotes": 83851, "repVotes": 144889, "totalVotes": 228740, "margin": 26.68, "repIncumbent": true },
       { "year": 2020, "demPct": 36.35, "repPct": 63.65, "demCandidate": "Laura Lombard", "repCandidate": "Ron Estes", "demVotes": 116166, "repVotes": 203432, "totalVotes": 319598, "margin": 27.3, "repIncumbent": true },
-      { "year": 2018, "demPct": 40.56, "repPct": 59.44, "demCandidate": "James A. Thompson", "repCandidate": "Ron Estes", "demVotes": 98445, "repVotes": 144248, "totalVotes": 242693, "margin": 18.88, "repIncumbent": true },
-      { "year": 2016, "demPct": 29.61, "repPct": 60.67, "demCandidate": "Daniel B. Giroux", "repCandidate": "Mike Pompeo", "demVotes": 81495, "repVotes": 166998, "totalVotes": 275251, "margin": 31.06, "repIncumbent": true }
+      { "year": 2018, "demPct": 40.56, "repPct": 59.44, "demCandidate": "James Thompson", "repCandidate": "Ron Estes", "demVotes": 98445, "repVotes": 144248, "totalVotes": 242693, "margin": 18.88, "repIncumbent": true },
+      { "year": 2016, "demPct": 29.61, "repPct": 60.67, "demCandidate": "Daniel Giroux", "repCandidate": "Mike Pompeo", "demVotes": 81495, "repVotes": 166998, "totalVotes": 275251, "margin": 31.06, "repIncumbent": true }
     ]
   },
   {
@@ -8901,10 +8901,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 25.28, "repPct": 74.72, "demCandidate": "Erin Marshall", "repCandidate": "James Comer", "demVotes": 85524, "repVotes": 252729, "totalVotes": 338253, "margin": 49.44, "repIncumbent": true },
-      { "year": 2022, "demPct": 25.1, "repPct": 74.9, "demCandidate": "Jimmy C. Ausbrooks", "repCandidate": "James Comer", "demVotes": 61701, "repVotes": 184157, "totalVotes": 245858, "margin": 49.8, "repIncumbent": true },
+      { "year": 2022, "demPct": 25.1, "repPct": 74.9, "demCandidate": "Jimmy Ausbrooks", "repCandidate": "James Comer", "demVotes": 61701, "repVotes": 184157, "totalVotes": 245858, "margin": 49.8, "repIncumbent": true },
       { "year": 2020, "demPct": 25.01, "repPct": 74.99, "demCandidate": "James Rhodes", "repCandidate": "James Comer", "demVotes": 82141, "repVotes": 246329, "totalVotes": 328470, "margin": 49.98, "repIncumbent": true },
       { "year": 2018, "demPct": 31.41, "repPct": 68.59, "demCandidate": "Paul Walker", "repCandidate": "James Comer", "demVotes": 78849, "repVotes": 172167, "totalVotes": 251016, "margin": 37.18, "repIncumbent": true },
-      { "year": 2016, "demPct": 27.33, "repPct": 72.56, "demCandidate": "Samuel L. Gaskins", "repCandidate": "James R. Comer", "demVotes": 81710, "repVotes": 216959, "totalVotes": 299001, "margin": 45.23 }
+      { "year": 2016, "demPct": 27.33, "repPct": 72.56, "demCandidate": "Samuel Gaskins", "repCandidate": "James Comer", "demVotes": 81710, "repVotes": 216959, "totalVotes": 299001, "margin": 45.23 }
     ]
   },
   {
@@ -8967,10 +8967,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 61.95, "repPct": 38.04, "demCandidate": "Morgan McGarvey", "repCandidate": "Mike Craven", "demVotes": 203100, "repVotes": 124713, "totalVotes": 327864, "margin": -23.91, "demIncumbent": true },
-      { "year": 2022, "demPct": 61.99, "repPct": 38, "demCandidate": "Morgan McGarvey", "repCandidate": "Stuart N. Ray", "demVotes": 160920, "repVotes": 98637, "totalVotes": 259587, "margin": -23.99 },
-      { "year": 2020, "demPct": 62.67, "repPct": 37.33, "demCandidate": "John A. Yarmuth", "repCandidate": "Rhonda Palazzo", "demVotes": 230672, "repVotes": 137425, "totalVotes": 368097, "margin": -25.34, "demIncumbent": true },
-      { "year": 2018, "demPct": 62.07, "repPct": 36.57, "demCandidate": "John A. Yarmuth", "repCandidate": "Vickie Yates B. Glisson", "demVotes": 173002, "repVotes": 101930, "totalVotes": 278720, "margin": -25.5, "demIncumbent": true },
-      { "year": 2016, "demPct": 63.5, "repPct": 36.5, "demCandidate": "John A. Yarmuth", "repCandidate": "Harold Bratcher", "demVotes": 212401, "repVotes": 122093, "totalVotes": 334494, "margin": -27, "demIncumbent": true }
+      { "year": 2022, "demPct": 61.99, "repPct": 38, "demCandidate": "Morgan McGarvey", "repCandidate": "Stuart Ray", "demVotes": 160920, "repVotes": 98637, "totalVotes": 259587, "margin": -23.99 },
+      { "year": 2020, "demPct": 62.67, "repPct": 37.33, "demCandidate": "John Yarmuth", "repCandidate": "Rhonda Palazzo", "demVotes": 230672, "repVotes": 137425, "totalVotes": 368097, "margin": -25.34, "demIncumbent": true },
+      { "year": 2018, "demPct": 62.07, "repPct": 36.57, "demCandidate": "John Yarmuth", "repCandidate": "Vickie Yates Glisson", "demVotes": 173002, "repVotes": 101930, "totalVotes": 278720, "margin": -25.5, "demIncumbent": true },
+      { "year": 2016, "demPct": 63.5, "repPct": 36.5, "demCandidate": "John Yarmuth", "repCandidate": "Harold Bratcher", "demVotes": 212401, "repVotes": 122093, "totalVotes": 334494, "margin": -27, "demIncumbent": true }
     ]
   },
   {
@@ -9035,7 +9035,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 0, "repPct": 100, "repCandidate": "Harold Rogers", "repVotes": 261407, "totalVotes": 261407, "margin": 100, "repIncumbent": true },
       { "year": 2022, "demPct": 17.82, "repPct": 82.17, "demCandidate": "Conor Halbleib", "repCandidate": "Harold Rogers", "demVotes": 38549, "repVotes": 177712, "totalVotes": 216270, "margin": 64.35, "repIncumbent": true },
       { "year": 2020, "demPct": 15.79, "repPct": 84.21, "demCandidate": "Matthew Ryan Best", "repCandidate": "Harold Rogers", "demVotes": 47056, "repVotes": 250914, "totalVotes": 297970, "margin": 68.42, "repIncumbent": true },
-      { "year": 2018, "demPct": 21.05, "repPct": 78.94, "demCandidate": "Kenneth S. Stepp", "repCandidate": "Harold Rogers", "demVotes": 45890, "repVotes": 172093, "totalVotes": 218017, "margin": 57.89, "repIncumbent": true },
+      { "year": 2018, "demPct": 21.05, "repPct": 78.94, "demCandidate": "Kenneth Stepp", "repCandidate": "Harold Rogers", "demVotes": 45890, "repVotes": 172093, "totalVotes": 218017, "margin": 57.89, "repIncumbent": true },
       { "year": 2016, "demPct": 0, "repPct": 100, "repCandidate": "Harold Rogers", "repVotes": 221242, "totalVotes": 221242, "margin": 100, "repIncumbent": true }
     ]
   },
@@ -9066,7 +9066,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 36.96, "repPct": 63.04, "demCandidate": "Randy Cravens", "repCandidate": "Andy Barr", "demVotes": 130345, "repVotes": 222293, "totalVotes": 352638, "margin": 26.08 },
-      { "year": 2022, "demPct": 33.63, "repPct": 62.7, "demCandidate": "Geoffrey M. “Geoff” Young", "repCandidate": "Andy Barr", "demVotes": 83005, "repVotes": 154762, "totalVotes": 246818, "margin": 29.07 },
+      { "year": 2022, "demPct": 33.63, "repPct": 62.7, "demCandidate": "Geoff Young", "repCandidate": "Andy Barr", "demVotes": 83005, "repVotes": 154762, "totalVotes": 246818, "margin": 29.07 },
       { "year": 2020, "demPct": 40.96, "repPct": 57.33, "demCandidate": "Josh Hicks", "repCandidate": "Andy Barr", "demVotes": 155011, "repVotes": 216948, "totalVotes": 378450, "margin": 16.37 },
       { "year": 2018, "demPct": 47.79, "repPct": 51, "demCandidate": "Amy McGrath", "repCandidate": "Andy Barr", "demVotes": 144736, "repVotes": 154468, "totalVotes": 302888, "margin": 3.21 },
       { "year": 2016, "demPct": 38.91, "repPct": 61.09, "demCandidate": "Nancy Jo Kemper", "repCandidate": "Andy Barr", "demVotes": 128728, "repVotes": 202099, "totalVotes": 330827, "margin": 22.18 }
@@ -9101,7 +9101,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 24.02, "repPct": 66.77, "demCandidate": "Mel Manuel", "repCandidate": "Steve Scalise", "demVotes": 85911, "repVotes": 238842, "totalVotes": 357720, "margin": 42.75, "repIncumbent": true },
       { "year": 2022, "demPct": 25.19, "repPct": 72.8, "demCandidate": "Katie Darling", "repCandidate": "Steve Scalise", "demVotes": 61467, "repVotes": 177670, "totalVotes": 244044, "margin": 47.61, "repIncumbent": true },
       { "year": 2020, "demPct": 25.3, "repPct": 72.21, "demCandidate": "Lee Ann Dugas", "repCandidate": "Steve Scalise", "demVotes": 94730, "repVotes": 270330, "totalVotes": 374369, "margin": 46.91, "repIncumbent": true },
-      { "year": 2018, "demPct": 16.44, "repPct": 71.5, "demCandidate": "Tammy M. Savoie", "repCandidate": "Steve Scalise", "demVotes": 44273, "repVotes": 192555, "totalVotes": 269325, "margin": 55.06, "repIncumbent": true },
+      { "year": 2018, "demPct": 16.44, "repPct": 71.5, "demCandidate": "Tammy Savoie", "repCandidate": "Steve Scalise", "demVotes": 44273, "repVotes": 192555, "totalVotes": 269325, "margin": 55.06, "repIncumbent": true },
       { "year": 2016, "demPct": 12.8, "repPct": 74.56, "demCandidate": "Lee Ann Dugas", "repCandidate": "Steve Scalise", "demVotes": 41840, "repVotes": 243645, "totalVotes": 326788, "margin": 61.76, "repIncumbent": true }
     ]
   },
@@ -9131,11 +9131,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Troy Carter",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 60.29, "repPct": 13.64, "demCandidate": "Troy A. Carter", "repCandidate": "Christy Lynch", "demVotes": 184009, "repVotes": 41641, "totalVotes": 305184, "margin": -46.65, "demIncumbent": true },
-      { "year": 2022, "demPct": 77.11, "repPct": 22.89, "demCandidate": "Troy A. Carter", "repCandidate": "“Dan” Lux", "demVotes": 158120, "repVotes": 46927, "totalVotes": 205047, "margin": -54.22, "demIncumbent": true },
-      { "year": 2020, "demPct": 63.61, "repPct": 15.01, "demCandidate": "Cedric L. Richmond", "repCandidate": "David M. Schilling", "demVotes": 201636, "repVotes": 47575, "totalVotes": 316982, "margin": -48.6, "demIncumbent": true },
-      { "year": 2018, "demPct": 80.59, "repPct": 8.67, "demCandidate": "Cedric L. Richmond", "repCandidate": "Jesse Schmidt (NP)", "demVotes": 190182, "repVotes": 20465, "totalVotes": 235982, "margin": -71.92, "demIncumbent": true },
-      { "year": 2016, "demPct": 69.75, "repPct": 0, "demCandidate": "Cedric L. Richmond", "demVotes": 198289, "totalVotes": 284269, "margin": -69.75, "demIncumbent": true }
+      { "year": 2024, "demPct": 60.29, "repPct": 13.64, "demCandidate": "Troy Carter", "repCandidate": "Christy Lynch", "demVotes": 184009, "repVotes": 41641, "totalVotes": 305184, "margin": -46.65, "demIncumbent": true },
+      { "year": 2022, "demPct": 77.11, "repPct": 22.89, "demCandidate": "Troy Carter", "repCandidate": "“Dan” Lux", "demVotes": 158120, "repVotes": 46927, "totalVotes": 205047, "margin": -54.22, "demIncumbent": true },
+      { "year": 2020, "demPct": 63.61, "repPct": 15.01, "demCandidate": "Cedric Richmond", "repCandidate": "David Schilling", "demVotes": 201636, "repVotes": 47575, "totalVotes": 316982, "margin": -48.6, "demIncumbent": true },
+      { "year": 2018, "demPct": 80.59, "repPct": 8.67, "demCandidate": "Cedric Richmond", "repCandidate": "Jesse Schmidt (NP)", "demVotes": 190182, "repVotes": 20465, "totalVotes": 235982, "margin": -71.92, "demIncumbent": true },
+      { "year": 2016, "demPct": 69.75, "repPct": 0, "demCandidate": "Cedric Richmond", "demVotes": 198289, "totalVotes": 284269, "margin": -69.75, "demIncumbent": true }
     ]
   },
   {
@@ -9167,8 +9167,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 18.66, "repPct": 70.56, "demCandidate": "Priscilla Gonzalez", "repCandidate": "Clay Higgins", "demVotes": 59834, "repVotes": 226279, "totalVotes": 320682, "margin": 51.9, "repIncumbent": true },
       { "year": 2022, "demPct": 10.53, "repPct": 64.32, "demCandidate": "Lessie Olivia LeBlanc", "repCandidate": "Clay Higgins", "demVotes": 23641, "repVotes": 144423, "totalVotes": 224552, "margin": 53.79, "repIncumbent": true },
       { "year": 2020, "demPct": 17.89, "repPct": 67.76, "demCandidate": "Braylon Harris", "repCandidate": "Clay Higgins", "demVotes": 60852, "repVotes": 230480, "totalVotes": 340120, "margin": 49.87, "repIncumbent": true },
-      { "year": 2018, "demPct": 17.78, "repPct": 55.65, "demCandidate": "Mildred “Mimi” Methvin", "repCandidate": "Clay Higgins", "demVotes": 43729, "repVotes": 136876, "totalVotes": 245943, "margin": 37.87, "repIncumbent": true },
-      { "year": 2016, "demPct": 19.71, "repPct": 17.82, "demCandidate": "Jacob “Dorian Phibian” Hebert", "repCandidate": "“Gus” Rantz", "demVotes": 28385, "repVotes": 25662, "totalVotes": 144014, "margin": -1.89 }
+      { "year": 2018, "demPct": 17.78, "repPct": 55.65, "demCandidate": "Mimi Methvin", "repCandidate": "Clay Higgins", "demVotes": 43729, "repVotes": 136876, "totalVotes": 245943, "margin": 37.87, "repIncumbent": true },
+      { "year": 2016, "demPct": 19.71, "repPct": 17.82, "demCandidate": "Dorian Phibian Hebert", "repCandidate": "“Gus” Rantz", "demVotes": 28385, "repVotes": 25662, "totalVotes": 144014, "margin": -1.89 }
     ]
   },
   {
@@ -9201,7 +9201,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 0, "repPct": 100, "repCandidate": "Mike Johnson", "margin": 100, "repIncumbent": true },
       { "year": 2020, "demPct": 25.49, "repPct": 60.43, "demCandidate": "Kenny Houston", "repCandidate": "Mike Johnson", "demVotes": 78157, "repVotes": 185265, "totalVotes": 306578, "margin": 34.94, "repIncumbent": true },
       { "year": 2018, "demPct": 33.63, "repPct": 64.24, "demCandidate": "Ryan Trundle", "repCandidate": "Mike Johnson", "demVotes": 72934, "repVotes": 139326, "totalVotes": 216872, "margin": 30.61, "repIncumbent": true },
-      { "year": 2016, "demPct": 0, "repPct": 37.39, "demCandidate": "Marshall Jones", "repCandidate": "Ralph “Trey” Baucum", "demVotes": 3, "repVotes": 50412, "totalVotes": 134818, "margin": 37.39 }
+      { "year": 2016, "demPct": 0, "repPct": 37.39, "demCandidate": "Marshall Jones", "repCandidate": "Trey Baucum", "demVotes": 3, "repVotes": 50412, "totalVotes": 134818, "margin": 37.39 }
     ]
   },
   {
@@ -9230,9 +9230,9 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Julia Letlow",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 25.94, "repPct": 62.85, "demCandidate": "Michael Vallien, Jr.", "repCandidate": "Julia Letlow", "demVotes": 82981, "repVotes": 201037, "totalVotes": 319851, "margin": 36.91, "repIncumbent": true },
-      { "year": 2022, "demPct": 15.72, "repPct": 67.58, "demCandidate": "Oscar “Omar” Dantzler", "repCandidate": "Julia Letlow", "demVotes": 35149, "repVotes": 151080, "totalVotes": 223553, "margin": 51.86, "repIncumbent": true },
-      { "year": 2020, "demPct": 32.62, "repPct": 15.33, "demCandidate": "Sandra “Candy” Christophe", "repCandidate": "“Scotty” Robinson", "demVotes": 50812, "repVotes": 23887, "totalVotes": 155785, "margin": -17.29 },
+      { "year": 2024, "demPct": 25.94, "repPct": 62.85, "demCandidate": "Michael Vallien", "repCandidate": "Julia Letlow", "demVotes": 82981, "repVotes": 201037, "totalVotes": 319851, "margin": 36.91, "repIncumbent": true },
+      { "year": 2022, "demPct": 15.72, "repPct": 67.58, "demCandidate": "Omar Dantzler", "repCandidate": "Julia Letlow", "demVotes": 35149, "repVotes": 151080, "totalVotes": 223553, "margin": 51.86, "repIncumbent": true },
+      { "year": 2020, "demPct": 32.62, "repPct": 15.33, "demCandidate": "Candy Christophe", "repCandidate": "“Scotty” Robinson", "demVotes": 50812, "repVotes": 23887, "totalVotes": 155785, "margin": -17.29 },
       { "year": 2018, "demPct": 29.97, "repPct": 66.54, "demCandidate": "Jessee Carlton Fleenor", "repCandidate": "Ralph Lee Abraham", "demVotes": 67118, "repVotes": 149018, "totalVotes": 223946, "margin": 36.57, "repIncumbent": true },
       { "year": 2016, "demPct": 0, "repPct": 81.57, "repCandidate": "Ralph Lee Abraham", "repVotes": 208545, "totalVotes": 255662, "margin": 81.57, "repIncumbent": true }
     ]
@@ -9264,8 +9264,8 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 50.78, "repPct": 37.74, "demCandidate": "Cleo Fields", "repCandidate": "Elbert Guillory", "demVotes": 150323, "repVotes": 111737, "totalVotes": 296033, "margin": -13.04 },
-      { "year": 2022, "demPct": 13.02, "repPct": 80.4, "demCandidate": "Rufus Holt Craig, Jr. (L)", "repCandidate": "Garret Graves", "demVotes": 30709, "repVotes": 189684, "totalVotes": 235928, "margin": 67.38, "repIncumbent": true },
-      { "year": 2020, "demPct": 25.55, "repPct": 71.05, "demCandidate": "Dartanyon “DAW” Williams", "repCandidate": "Garret Graves", "demVotes": 95541, "repVotes": 265706, "totalVotes": 373996, "margin": 45.5, "repIncumbent": true },
+      { "year": 2022, "demPct": 13.02, "repPct": 80.4, "demCandidate": "Rufus Holt Craig Jr. (L)", "repCandidate": "Garret Graves", "demVotes": 30709, "repVotes": 189684, "totalVotes": 235928, "margin": 67.38, "repIncumbent": true },
+      { "year": 2020, "demPct": 25.55, "repPct": 71.05, "demCandidate": "DAW Williams", "repCandidate": "Garret Graves", "demVotes": 95541, "repVotes": 265706, "totalVotes": 373996, "margin": 45.5, "repIncumbent": true },
       { "year": 2018, "demPct": 20.52, "repPct": 69.47, "demCandidate": "Justin Dewitt", "repCandidate": "Garret Graves", "demVotes": 55089, "repVotes": 186553, "totalVotes": 268525, "margin": 48.95, "repIncumbent": true },
       { "year": 2016, "demPct": 14.91, "repPct": 62.67, "demCandidate": "Richard Lieberman", "repCandidate": "Garret Graves", "demVotes": 49380, "repVotes": 207483, "totalVotes": 331098, "margin": 47.76, "repIncumbent": true }
     ]
@@ -9296,11 +9296,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Chellie Pingree",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 58.7, "repPct": 36.39, "demCandidate": "Chellie Pingree", "repCandidate": "Ronald C. Russell", "demVotes": 249798, "repVotes": 154849, "totalVotes": 425530, "margin": -22.31, "demIncumbent": true },
+      { "year": 2024, "demPct": 58.7, "repPct": 36.39, "demCandidate": "Chellie Pingree", "repCandidate": "Ronald Russell", "demVotes": 249798, "repVotes": 154849, "totalVotes": 425530, "margin": -22.31, "demIncumbent": true },
       { "year": 2022, "demPct": 62.96, "repPct": 37.04, "demCandidate": "Chellie Pingree", "repCandidate": "Edwin Thelander", "demVotes": 219753, "repVotes": 129263, "totalVotes": 349016, "margin": -25.92, "demIncumbent": true },
-      { "year": 2020, "demPct": 62.16, "repPct": 37.84, "demCandidate": "Chellie Pingree", "repCandidate": "Jay T. Allen", "demVotes": 271004, "repVotes": 165008, "totalVotes": 436012, "margin": -24.32, "demIncumbent": true },
-      { "year": 2018, "demPct": 58.82, "repPct": 32.51, "demCandidate": "Chellie Pingree", "repCandidate": "Mark I. Holbrook", "demVotes": 201195, "repVotes": 111188, "totalVotes": 342053, "margin": -26.31, "demIncumbent": true },
-      { "year": 2016, "demPct": 57.99, "repPct": 41.94, "demCandidate": "Chellie Pingree", "repCandidate": "Mark I. Holbrook", "demVotes": 227546, "repVotes": 164569, "totalVotes": 392391, "margin": -16.05, "demIncumbent": true }
+      { "year": 2020, "demPct": 62.16, "repPct": 37.84, "demCandidate": "Chellie Pingree", "repCandidate": "Jay Allen", "demVotes": 271004, "repVotes": 165008, "totalVotes": 436012, "margin": -24.32, "demIncumbent": true },
+      { "year": 2018, "demPct": 58.82, "repPct": 32.51, "demCandidate": "Chellie Pingree", "repCandidate": "Mark Holbrook", "demVotes": 201195, "repVotes": 111188, "totalVotes": 342053, "margin": -26.31, "demIncumbent": true },
+      { "year": 2016, "demPct": 57.99, "repPct": 41.94, "demCandidate": "Chellie Pingree", "repCandidate": "Mark Holbrook", "demVotes": 227546, "repVotes": 164569, "totalVotes": 392391, "margin": -16.05, "demIncumbent": true }
     ]
   },
   {
@@ -9327,10 +9327,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jared Golden",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 50.35, "repPct": 49.65, "demCandidate": "Jared F. Golden", "repCandidate": "Austin Theriault", "demVotes": 197151, "repVotes": 194445, "totalVotes": 391596, "margin": -0.7, "demIncumbent": true },
-      { "year": 2022, "demPct": 53.05, "repPct": 46.95, "demCandidate": "Jared F. Golden", "repCandidate": "Bruce Poliquin", "demVotes": 165136, "repVotes": 146142, "totalVotes": 311278, "margin": -6.1, "demIncumbent": true },
-      { "year": 2020, "demPct": 53.05, "repPct": 46.95, "demCandidate": "Jared F. Golden", "repCandidate": "Dale John Crafts", "demVotes": 197974, "repVotes": 175228, "totalVotes": 373202, "margin": -6.1, "demIncumbent": true },
-      { "year": 2018, "demPct": 50.62, "repPct": 49.38, "demCandidate": "Jared F. Golden", "repCandidate": "Bruce Poliquin", "demVotes": 142440, "repVotes": 138931, "totalVotes": 281371, "margin": -1.24, "repIncumbent": true },
+      { "year": 2024, "demPct": 50.35, "repPct": 49.65, "demCandidate": "Jared Golden", "repCandidate": "Austin Theriault", "demVotes": 197151, "repVotes": 194445, "totalVotes": 391596, "margin": -0.7, "demIncumbent": true },
+      { "year": 2022, "demPct": 53.05, "repPct": 46.95, "demCandidate": "Jared Golden", "repCandidate": "Bruce Poliquin", "demVotes": 165136, "repVotes": 146142, "totalVotes": 311278, "margin": -6.1, "demIncumbent": true },
+      { "year": 2020, "demPct": 53.05, "repPct": 46.95, "demCandidate": "Jared Golden", "repCandidate": "Dale John Crafts", "demVotes": 197974, "repVotes": 175228, "totalVotes": 373202, "margin": -6.1, "demIncumbent": true },
+      { "year": 2018, "demPct": 50.62, "repPct": 49.38, "demCandidate": "Jared Golden", "repCandidate": "Bruce Poliquin", "demVotes": 142440, "repVotes": 138931, "totalVotes": 281371, "margin": -1.24, "repIncumbent": true },
       { "year": 2016, "demPct": 45.17, "repPct": 54.77, "demCandidate": "Emily Ann Cain", "repCandidate": "Bruce Poliquin", "demVotes": 159081, "repVotes": 192878, "totalVotes": 352183, "margin": 9.6, "repIncumbent": true }
     ]
   },
@@ -9360,8 +9360,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Andy Harris",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 37.44, "repPct": 59.51, "demCandidate": "Blane H. Miller III", "repCandidate": "Andy Harris", "demVotes": 154985, "repVotes": 246356, "totalVotes": 414005, "margin": 22.07, "repIncumbent": true },
-      { "year": 2022, "demPct": 43.16, "repPct": 54.48, "demCandidate": "Heather R. Mizeur", "repCandidate": "Andy Harris", "demVotes": 126511, "repVotes": 159673, "totalVotes": 293108, "margin": 11.32, "repIncumbent": true },
+      { "year": 2024, "demPct": 37.44, "repPct": 59.51, "demCandidate": "Blane Miller", "repCandidate": "Andy Harris", "demVotes": 154985, "repVotes": 246356, "totalVotes": 414005, "margin": 22.07, "repIncumbent": true },
+      { "year": 2022, "demPct": 43.16, "repPct": 54.48, "demCandidate": "Heather Mizeur", "repCandidate": "Andy Harris", "demVotes": 126511, "repVotes": 159673, "totalVotes": 293108, "margin": 11.32, "repIncumbent": true },
       { "year": 2020, "demPct": 36.38, "repPct": 63.44, "demCandidate": "Mia Mason", "repCandidate": "Andy Harris", "demVotes": 143877, "repVotes": 250901, "totalVotes": 395524, "margin": 27.06, "repIncumbent": true },
       { "year": 2018, "demPct": 38.11, "repPct": 60.01, "demCandidate": "Jesse Colvin", "repCandidate": "Andy Harris", "demVotes": 116631, "repVotes": 183662, "totalVotes": 306037, "margin": 21.9, "repIncumbent": true },
       { "year": 2016, "demPct": 28.66, "repPct": 67.09, "demCandidate": "Joe Werner", "repCandidate": "Andy Harris", "demVotes": 103622, "repVotes": 242574, "totalVotes": 361566, "margin": 38.43, "repIncumbent": true }
@@ -9390,14 +9390,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "John Olszewski", "party": "D", "incumbent": false },
       "rep": { "name": "David Wallace", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Johnny Olszewski, Jr.",
+    "seatHolder": "Johnny Olszewski",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 58.27, "repPct": 39.6, "demCandidate": "John “Johnny O” Olszewski, Jr.", "repCandidate": "Kim Klacik", "demVotes": 223797, "repVotes": 152079, "totalVotes": 384045, "margin": -18.67 },
-      { "year": 2022, "demPct": 59.31, "repPct": 40.69, "demCandidate": "C. A. Dutch Ruppersberger", "repCandidate": "Nicolee Ambrose", "demVotes": 158998, "repVotes": 109075, "totalVotes": 268073, "margin": -18.62, "demIncumbent": true },
-      { "year": 2020, "demPct": 67.72, "repPct": 32.03, "demCandidate": "C. A. Dutch Ruppersberger", "repCandidate": "Johnny Ray Salling", "demVotes": 224836, "repVotes": 106355, "totalVotes": 332026, "margin": -35.69, "demIncumbent": true },
-      { "year": 2018, "demPct": 66.06, "repPct": 30.73, "demCandidate": "C. A. Dutch Ruppersberger", "repCandidate": "Liz Matory", "demVotes": 167201, "repVotes": 77782, "totalVotes": 253102, "margin": -35.33, "demIncumbent": true },
-      { "year": 2016, "demPct": 62.22, "repPct": 33.21, "demCandidate": "C. A. Dutch Ruppersberger", "repCandidate": "Pat McDonough", "demVotes": 192183, "repVotes": 102577, "totalVotes": 308888, "margin": -29.01, "demIncumbent": true }
+      { "year": 2024, "demPct": 58.27, "repPct": 39.6, "demCandidate": "Johnny O Olszewski, Jr.", "repCandidate": "Kim Klacik", "demVotes": 223797, "repVotes": 152079, "totalVotes": 384045, "margin": -18.67 },
+      { "year": 2022, "demPct": 59.31, "repPct": 40.69, "demCandidate": "Dutch Ruppersberger", "repCandidate": "Nicolee Ambrose", "demVotes": 158998, "repVotes": 109075, "totalVotes": 268073, "margin": -18.62, "demIncumbent": true },
+      { "year": 2020, "demPct": 67.72, "repPct": 32.03, "demCandidate": "Dutch Ruppersberger", "repCandidate": "Johnny Ray Salling", "demVotes": 224836, "repVotes": 106355, "totalVotes": 332026, "margin": -35.69, "demIncumbent": true },
+      { "year": 2018, "demPct": 66.06, "repPct": 30.73, "demCandidate": "Dutch Ruppersberger", "repCandidate": "Liz Matory", "demVotes": 167201, "repVotes": 77782, "totalVotes": 253102, "margin": -35.33, "demIncumbent": true },
+      { "year": 2016, "demPct": 62.22, "repPct": 33.21, "demCandidate": "Dutch Ruppersberger", "repCandidate": "Pat McDonough", "demVotes": 192183, "repVotes": 102577, "totalVotes": 308888, "margin": -29.01, "demIncumbent": true }
     ]
   },
   {
@@ -9426,11 +9426,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Sarah Elfreth",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 59.42, "repPct": 37.95, "demCandidate": "Sarah Elfreth", "repCandidate": "Robert J. Steinberger", "demVotes": 236681, "repVotes": 151186, "totalVotes": 398338, "margin": -21.47 },
-      { "year": 2022, "demPct": 60.25, "repPct": 39.75, "demCandidate": "John P. Sarbanes", "repCandidate": "Yuripzy Morgan", "demVotes": 175514, "repVotes": 115801, "totalVotes": 291315, "margin": -20.5, "demIncumbent": true },
-      { "year": 2020, "demPct": 69.76, "repPct": 30.04, "demCandidate": "John P. Sarbanes", "repCandidate": "Charles Anthony", "demVotes": 260358, "repVotes": 112117, "totalVotes": 373206, "margin": -39.72, "demIncumbent": true },
-      { "year": 2018, "demPct": 69.16, "repPct": 28.28, "demCandidate": "John P. Sarbanes", "repCandidate": "Charles Anthony", "demVotes": 202407, "repVotes": 82774, "totalVotes": 292657, "margin": -40.88, "demIncumbent": true },
-      { "year": 2016, "demPct": 63.28, "repPct": 33.92, "demCandidate": "John P. Sarbanes", "repCandidate": "Mark Plaster", "demVotes": 214640, "repVotes": 115048, "totalVotes": 339212, "margin": -29.36, "demIncumbent": true }
+      { "year": 2024, "demPct": 59.42, "repPct": 37.95, "demCandidate": "Sarah Elfreth", "repCandidate": "Robert Steinberger", "demVotes": 236681, "repVotes": 151186, "totalVotes": 398338, "margin": -21.47 },
+      { "year": 2022, "demPct": 60.25, "repPct": 39.75, "demCandidate": "John Sarbanes", "repCandidate": "Yuripzy Morgan", "demVotes": 175514, "repVotes": 115801, "totalVotes": 291315, "margin": -20.5, "demIncumbent": true },
+      { "year": 2020, "demPct": 69.76, "repPct": 30.04, "demCandidate": "John Sarbanes", "repCandidate": "Charles Anthony", "demVotes": 260358, "repVotes": 112117, "totalVotes": 373206, "margin": -39.72, "demIncumbent": true },
+      { "year": 2018, "demPct": 69.16, "repPct": 28.28, "demCandidate": "John Sarbanes", "repCandidate": "Charles Anthony", "demVotes": 202407, "repVotes": 82774, "totalVotes": 292657, "margin": -40.88, "demIncumbent": true },
+      { "year": 2016, "demPct": 63.28, "repPct": 33.92, "demCandidate": "John Sarbanes", "repCandidate": "Mark Plaster", "demVotes": 214640, "repVotes": 115048, "totalVotes": 339212, "margin": -29.36, "demIncumbent": true }
     ]
   },
   {
@@ -9460,10 +9460,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 88.72, "repPct": 11.28, "demCandidate": "Glenn Ivey", "repCandidate": "George McDermott", "demVotes": 239596, "repVotes": 30454, "totalVotes": 270050, "margin": -77.44, "demIncumbent": true },
-      { "year": 2022, "demPct": 90.33, "repPct": 9.67, "demCandidate": "Glenn F. Ivey", "repCandidate": "Jeff Warner", "demVotes": 144168, "repVotes": 15441, "totalVotes": 159609, "margin": -80.66 },
-      { "year": 2020, "demPct": 79.58, "repPct": 20.22, "demCandidate": "Anthony G. Brown", "repCandidate": "George E. McDermott", "demVotes": 282119, "repVotes": 71671, "totalVotes": 354529, "margin": -59.36, "demIncumbent": true },
-      { "year": 2018, "demPct": 78.14, "repPct": 19.88, "demCandidate": "Anthony G. Brown", "repCandidate": "George McDermott", "demVotes": 209642, "repVotes": 53327, "totalVotes": 268295, "margin": -58.26, "demIncumbent": true },
-      { "year": 2016, "demPct": 74.19, "repPct": 21.45, "demCandidate": "Anthony G. Brown", "repCandidate": "George E. McDermott", "demVotes": 237501, "repVotes": 68670, "totalVotes": 320137, "margin": -52.74 }
+      { "year": 2022, "demPct": 90.33, "repPct": 9.67, "demCandidate": "Glenn Ivey", "repCandidate": "Jeff Warner", "demVotes": 144168, "repVotes": 15441, "totalVotes": 159609, "margin": -80.66 },
+      { "year": 2020, "demPct": 79.58, "repPct": 20.22, "demCandidate": "Anthony Brown", "repCandidate": "George McDermott", "demVotes": 282119, "repVotes": 71671, "totalVotes": 354529, "margin": -59.36, "demIncumbent": true },
+      { "year": 2018, "demPct": 78.14, "repPct": 19.88, "demCandidate": "Anthony Brown", "repCandidate": "George McDermott", "demVotes": 209642, "repVotes": 53327, "totalVotes": 268295, "margin": -58.26, "demIncumbent": true },
+      { "year": 2016, "demPct": 74.19, "repPct": 21.45, "demCandidate": "Anthony Brown", "repCandidate": "George McDermott", "demVotes": 237501, "repVotes": 68670, "totalVotes": 320137, "margin": -52.74 }
     ]
   },
   {
@@ -9492,11 +9492,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Steny Hoyer",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 67.92, "repPct": 32.08, "demCandidate": "Steny H. Hoyer", "repCandidate": "Michelle Talkington", "demVotes": 283619, "repVotes": 133985, "totalVotes": 417604, "margin": -35.84, "demIncumbent": true },
-      { "year": 2022, "demPct": 66, "repPct": 34, "demCandidate": "Steny H. Hoyer", "repCandidate": "Chris Palombi", "demVotes": 182478, "repVotes": 94000, "totalVotes": 276478, "margin": -32, "demIncumbent": true },
-      { "year": 2020, "demPct": 68.75, "repPct": 30.97, "demCandidate": "Steny H. Hoyer", "repCandidate": "Chris Palombi", "demVotes": 274210, "repVotes": 123525, "totalVotes": 398839, "margin": -37.78, "demIncumbent": true },
-      { "year": 2018, "demPct": 70.34, "repPct": 27.1, "demCandidate": "Steny H. Hoyer", "repCandidate": "William A. Devine III", "demVotes": 213796, "repVotes": 82361, "totalVotes": 303930, "margin": -43.24, "demIncumbent": true },
-      { "year": 2016, "demPct": 67.5, "repPct": 29.43, "demCandidate": "Steny H. Hoyer", "repCandidate": "Mark Arness", "demVotes": 242989, "repVotes": 105931, "totalVotes": 359998, "margin": -38.07, "demIncumbent": true }
+      { "year": 2024, "demPct": 67.92, "repPct": 32.08, "demCandidate": "Steny Hoyer", "repCandidate": "Michelle Talkington", "demVotes": 283619, "repVotes": 133985, "totalVotes": 417604, "margin": -35.84, "demIncumbent": true },
+      { "year": 2022, "demPct": 66, "repPct": 34, "demCandidate": "Steny Hoyer", "repCandidate": "Chris Palombi", "demVotes": 182478, "repVotes": 94000, "totalVotes": 276478, "margin": -32, "demIncumbent": true },
+      { "year": 2020, "demPct": 68.75, "repPct": 30.97, "demCandidate": "Steny Hoyer", "repCandidate": "Chris Palombi", "demVotes": 274210, "repVotes": 123525, "totalVotes": 398839, "margin": -37.78, "demIncumbent": true },
+      { "year": 2018, "demPct": 70.34, "repPct": 27.1, "demCandidate": "Steny Hoyer", "repCandidate": "William Devine", "demVotes": 213796, "repVotes": 82361, "totalVotes": 303930, "margin": -43.24, "demIncumbent": true },
+      { "year": 2016, "demPct": 67.5, "repPct": 29.43, "demCandidate": "Steny Hoyer", "repCandidate": "Mark Arness", "demVotes": 242989, "repVotes": 105931, "totalVotes": 359998, "margin": -38.07, "demIncumbent": true }
     ]
   },
   {
@@ -9525,11 +9525,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "April Delaney",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 53.17, "repPct": 46.83, "demCandidate": "April McClain Delaney", "repCandidate": "Neil C. Parrott", "demVotes": 199788, "repVotes": 175974, "totalVotes": 375762, "margin": -6.34 },
-      { "year": 2022, "demPct": 54.79, "repPct": 45.21, "demCandidate": "David J. Trone", "repCandidate": "Neil C. Parrott", "demVotes": 140295, "repVotes": 115771, "totalVotes": 256066, "margin": -9.58, "demIncumbent": true },
-      { "year": 2020, "demPct": 58.82, "repPct": 39.19, "demCandidate": "David J. Trone", "repCandidate": "Neil C. Parrott", "demVotes": 215540, "repVotes": 143599, "totalVotes": 366434, "margin": -19.63, "demIncumbent": true },
+      { "year": 2024, "demPct": 53.17, "repPct": 46.83, "demCandidate": "April McClain Delaney", "repCandidate": "Neil Parrott", "demVotes": 199788, "repVotes": 175974, "totalVotes": 375762, "margin": -6.34 },
+      { "year": 2022, "demPct": 54.79, "repPct": 45.21, "demCandidate": "David Trone", "repCandidate": "Neil Parrott", "demVotes": 140295, "repVotes": 115771, "totalVotes": 256066, "margin": -9.58, "demIncumbent": true },
+      { "year": 2020, "demPct": 58.82, "repPct": 39.19, "demCandidate": "David Trone", "repCandidate": "Neil Parrott", "demVotes": 215540, "repVotes": 143599, "totalVotes": 366434, "margin": -19.63, "demIncumbent": true },
       { "year": 2018, "demPct": 59.01, "repPct": 38.01, "demCandidate": "David Trone", "repCandidate": "Amie Hoeber", "demVotes": 163346, "repVotes": 105209, "totalVotes": 276802, "margin": -21 },
-      { "year": 2016, "demPct": 56.01, "repPct": 40.12, "demCandidate": "John K. Delaney", "repCandidate": "Amie Hoeber", "demVotes": 185770, "repVotes": 133081, "totalVotes": 331667, "margin": -15.89, "demIncumbent": true }
+      { "year": 2016, "demPct": 56.01, "repPct": 40.12, "demCandidate": "John Delaney", "repCandidate": "Amie Hoeber", "demVotes": 185770, "repVotes": 133081, "totalVotes": 331667, "margin": -15.89, "demIncumbent": true }
     ]
   },
   {
@@ -9558,11 +9558,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Kweisi Mfume",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 80.43, "repPct": 17.2, "demCandidate": "Kweisi Mfume", "repCandidate": "Scott M. Collier", "demVotes": 232849, "repVotes": 49799, "totalVotes": 289488, "margin": -63.23, "demIncumbent": true },
-      { "year": 2022, "demPct": 82.24, "repPct": 17.76, "demCandidate": "Kweisi Mfume", "repCandidate": "Scott M. Collier", "demVotes": 151640, "repVotes": 32737, "totalVotes": 184377, "margin": -64.48, "demIncumbent": true },
+      { "year": 2024, "demPct": 80.43, "repPct": 17.2, "demCandidate": "Kweisi Mfume", "repCandidate": "Scott Collier", "demVotes": 232849, "repVotes": 49799, "totalVotes": 289488, "margin": -63.23, "demIncumbent": true },
+      { "year": 2022, "demPct": 82.24, "repPct": 17.76, "demCandidate": "Kweisi Mfume", "repCandidate": "Scott Collier", "demVotes": 151640, "repVotes": 32737, "totalVotes": 184377, "margin": -64.48, "demIncumbent": true },
       { "year": 2020, "demPct": 71.63, "repPct": 28.04, "demCandidate": "Kweisi Mfume", "repCandidate": "Kimberly Klacik", "demVotes": 237084, "repVotes": 92825, "totalVotes": 330998, "margin": -43.59, "demIncumbent": true },
-      { "year": 2018, "demPct": 76.52, "repPct": 21.28, "demCandidate": "Elijah E. Cummings", "repCandidate": "Richmond Davis", "demVotes": 202345, "repVotes": 56266, "totalVotes": 264438, "margin": -55.24, "demIncumbent": true },
-      { "year": 2016, "demPct": 75.03, "repPct": 21.85, "demCandidate": "Elijah E. Cummings", "repCandidate": "Corrogan R. Vaughn", "demVotes": 238838, "repVotes": 69556, "totalVotes": 318328, "margin": -53.18, "demIncumbent": true }
+      { "year": 2018, "demPct": 76.52, "repPct": 21.28, "demCandidate": "Elijah Cummings", "repCandidate": "Richmond Davis", "demVotes": 202345, "repVotes": 56266, "totalVotes": 264438, "margin": -55.24, "demIncumbent": true },
+      { "year": 2016, "demPct": 75.03, "repPct": 21.85, "demCandidate": "Elijah Cummings", "repCandidate": "Corrogan Vaughn", "demVotes": 238838, "repVotes": 69556, "totalVotes": 318328, "margin": -53.18, "demIncumbent": true }
     ]
   },
   {
@@ -9624,11 +9624,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Richard Neal",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 62.58, "repPct": 37.42, "demCandidate": "Richard E. Neal", "repCandidate": "Nadia Donya Milleron", "repParty": "I", "demVotes": 223325, "repVotes": 133552, "totalVotes": 356877, "margin": -25.16, "demIncumbent": true },
-      { "year": 2022, "demPct": 61.57, "repPct": 38.43, "demCandidate": "Richard E. Neal", "repCandidate": "Dean James Martilli", "demVotes": 157635, "repVotes": 98386, "totalVotes": 256021, "margin": -23.14, "demIncumbent": true },
-      { "year": 2020, "demPct": 99.54, "repPct": 0, "demCandidate": "Richard E. Neal", "demVotes": 275376, "totalVotes": 276650, "margin": -99.54, "demIncumbent": true },
-      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Richard E. Neal", "demVotes": 211790, "totalVotes": 211790, "margin": -100, "demIncumbent": true },
-      { "year": 2016, "demPct": 73.5, "repPct": 17.92, "demCandidate": "Richard E. Neal", "repCandidate": "Frederick O. Mayock", "repParty": "I", "demVotes": 235803, "repVotes": 57504, "totalVotes": 320818, "margin": -55.58, "demIncumbent": true }
+      { "year": 2024, "demPct": 62.58, "repPct": 37.42, "demCandidate": "Richard Neal", "repCandidate": "Nadia Donya Milleron", "repParty": "I", "demVotes": 223325, "repVotes": 133552, "totalVotes": 356877, "margin": -25.16, "demIncumbent": true },
+      { "year": 2022, "demPct": 61.57, "repPct": 38.43, "demCandidate": "Richard Neal", "repCandidate": "Dean James Martilli", "demVotes": 157635, "repVotes": 98386, "totalVotes": 256021, "margin": -23.14, "demIncumbent": true },
+      { "year": 2020, "demPct": 99.54, "repPct": 0, "demCandidate": "Richard Neal", "demVotes": 275376, "totalVotes": 276650, "margin": -99.54, "demIncumbent": true },
+      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Richard Neal", "demVotes": 211790, "totalVotes": 211790, "margin": -100, "demIncumbent": true },
+      { "year": 2016, "demPct": 73.5, "repPct": 17.92, "demCandidate": "Richard Neal", "repCandidate": "Frederick Mayock", "repParty": "I", "demVotes": 235803, "repVotes": 57504, "totalVotes": 320818, "margin": -55.58, "demIncumbent": true }
     ]
   },
   {
@@ -9657,11 +9657,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "James McGovern",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 68.79, "repPct": 31.21, "demCandidate": "James P. McGovern", "repCandidate": "Cornelius Shea", "repParty": "I", "demVotes": 251441, "repVotes": 114065, "totalVotes": 365506, "margin": -37.58, "demIncumbent": true },
-      { "year": 2022, "demPct": 66.27, "repPct": 33.73, "demCandidate": "James P. McGovern", "repCandidate": "Jeffrey A. Sossa-Paquette", "demVotes": 180639, "repVotes": 91956, "totalVotes": 272595, "margin": -32.54, "demIncumbent": true },
-      { "year": 2020, "demPct": 65.39, "repPct": 34.61, "demCandidate": "James P. McGovern", "repCandidate": "Tracy Lyn Lovvorn", "demVotes": 249854, "repVotes": 132220, "totalVotes": 382074, "margin": -30.78, "demIncumbent": true },
-      { "year": 2018, "demPct": 67.2, "repPct": 32.8, "demCandidate": "James P. McGovern", "repCandidate": "Tracy Lyn Lovvorn", "demVotes": 191332, "repVotes": 93391, "totalVotes": 284723, "margin": -34.4, "demIncumbent": true },
-      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "James P. McGovern", "demVotes": 275487, "totalVotes": 275487, "margin": -100, "demIncumbent": true }
+      { "year": 2024, "demPct": 68.79, "repPct": 31.21, "demCandidate": "James McGovern", "repCandidate": "Cornelius Shea", "repParty": "I", "demVotes": 251441, "repVotes": 114065, "totalVotes": 365506, "margin": -37.58, "demIncumbent": true },
+      { "year": 2022, "demPct": 66.27, "repPct": 33.73, "demCandidate": "James McGovern", "repCandidate": "Jeffrey Sossa-Paquette", "demVotes": 180639, "repVotes": 91956, "totalVotes": 272595, "margin": -32.54, "demIncumbent": true },
+      { "year": 2020, "demPct": 65.39, "repPct": 34.61, "demCandidate": "James McGovern", "repCandidate": "Tracy Lyn Lovvorn", "demVotes": 249854, "repVotes": 132220, "totalVotes": 382074, "margin": -30.78, "demIncumbent": true },
+      { "year": 2018, "demPct": 67.2, "repPct": 32.8, "demCandidate": "James McGovern", "repCandidate": "Tracy Lyn Lovvorn", "demVotes": 191332, "repVotes": 93391, "totalVotes": 284723, "margin": -34.4, "demIncumbent": true },
+      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "James McGovern", "demVotes": 275487, "totalVotes": 275487, "margin": -100, "demIncumbent": true }
     ]
   },
   {
@@ -9691,7 +9691,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 100, "repPct": 0, "demCandidate": "Lori Trahan", "demVotes": 264698, "totalVotes": 264698, "margin": -100, "demIncumbent": true },
-      { "year": 2022, "demPct": 63.56, "repPct": 36.44, "demCandidate": "Lori Trahan", "repCandidate": "Dean A. Tran", "demVotes": 154496, "repVotes": 88585, "totalVotes": 243081, "margin": -27.12, "demIncumbent": true },
+      { "year": 2022, "demPct": 63.56, "repPct": 36.44, "demCandidate": "Lori Trahan", "repCandidate": "Dean Tran", "demVotes": 154496, "repVotes": 88585, "totalVotes": 243081, "margin": -27.12, "demIncumbent": true },
       { "year": 2020, "demPct": 100, "repPct": 0, "demCandidate": "Lori Trahan", "demVotes": 286896, "totalVotes": 286896, "margin": -100, "demIncumbent": true },
       { "year": 2018, "demPct": 62.03, "repPct": 33.47, "demCandidate": "Lori Loureiro Trahan", "repCandidate": "Rick Green", "demVotes": 173175, "repVotes": 93445, "totalVotes": 279192, "margin": -28.56 },
       { "year": 2016, "demPct": 68.77, "repPct": 31.23, "demCandidate": "Niki Tsongas", "repCandidate": "Ann Wofford", "demVotes": 236713, "repVotes": 107519, "totalVotes": 344232, "margin": -37.54, "demIncumbent": true }
@@ -9725,9 +9725,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 99.62, "repPct": 0, "demCandidate": "Jake Auchincloss", "demVotes": 289347, "totalVotes": 290446, "margin": -99.62, "demIncumbent": true },
       { "year": 2022, "demPct": 100, "repPct": 0, "demCandidate": "Jake Auchincloss", "demVotes": 201882, "totalVotes": 201882, "margin": -100, "demIncumbent": true },
-      { "year": 2020, "demPct": 61.01, "repPct": 38.99, "demCandidate": "Jake Auchincloss", "repCandidate": "Julie A. Hall", "demVotes": 251102, "repVotes": 160474, "totalVotes": 411576, "margin": -22.02 },
-      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Joseph P. Kennedy III", "demVotes": 245289, "totalVotes": 245289, "margin": -100, "demIncumbent": true },
-      { "year": 2016, "demPct": 70.16, "repPct": 29.84, "demCandidate": "Joseph P. Kennedy III", "repCandidate": "David A. Rosa", "demVotes": 265823, "repVotes": 113055, "totalVotes": 378878, "margin": -40.32, "demIncumbent": true }
+      { "year": 2020, "demPct": 61.01, "repPct": 38.99, "demCandidate": "Jake Auchincloss", "repCandidate": "Julie Hall", "demVotes": 251102, "repVotes": 160474, "totalVotes": 411576, "margin": -22.02 },
+      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Joseph Kennedy", "demVotes": 245289, "totalVotes": 245289, "margin": -100, "demIncumbent": true },
+      { "year": 2016, "demPct": 70.16, "repPct": 29.84, "demCandidate": "Joseph Kennedy", "repCandidate": "David Rosa", "demVotes": 265823, "repVotes": 113055, "totalVotes": 378878, "margin": -40.32, "demIncumbent": true }
     ]
   },
   {
@@ -9756,11 +9756,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Katherine Clark",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 100, "repPct": 0, "demCandidate": "Katherine M. Clark", "demVotes": 286689, "totalVotes": 286689, "margin": -100, "demIncumbent": true },
-      { "year": 2022, "demPct": 74.05, "repPct": 25.95, "demCandidate": "Katherine M. Clark", "repCandidate": "Caroline Colarusso", "demVotes": 203994, "repVotes": 71491, "totalVotes": 275485, "margin": -48.1, "demIncumbent": true },
-      { "year": 2020, "demPct": 74.39, "repPct": 25.61, "demCandidate": "Katherine M. Clark", "repCandidate": "Caroline Colarusso", "demVotes": 294427, "repVotes": 101351, "totalVotes": 395778, "margin": -48.78, "demIncumbent": true },
-      { "year": 2018, "demPct": 75.94, "repPct": 24.06, "demCandidate": "Katherine M. Clark", "repCandidate": "John Hugo", "demVotes": 236243, "repVotes": 74856, "totalVotes": 311099, "margin": -51.88, "demIncumbent": true },
-      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Katherine M. Clark", "demVotes": 285606, "totalVotes": 285606, "margin": -100, "demIncumbent": true }
+      { "year": 2024, "demPct": 100, "repPct": 0, "demCandidate": "Katherine Clark", "demVotes": 286689, "totalVotes": 286689, "margin": -100, "demIncumbent": true },
+      { "year": 2022, "demPct": 74.05, "repPct": 25.95, "demCandidate": "Katherine Clark", "repCandidate": "Caroline Colarusso", "demVotes": 203994, "repVotes": 71491, "totalVotes": 275485, "margin": -48.1, "demIncumbent": true },
+      { "year": 2020, "demPct": 74.39, "repPct": 25.61, "demCandidate": "Katherine Clark", "repCandidate": "Caroline Colarusso", "demVotes": 294427, "repVotes": 101351, "totalVotes": 395778, "margin": -48.78, "demIncumbent": true },
+      { "year": 2018, "demPct": 75.94, "repPct": 24.06, "demCandidate": "Katherine Clark", "repCandidate": "John Hugo", "demVotes": 236243, "repVotes": 74856, "totalVotes": 311099, "margin": -51.88, "demIncumbent": true },
+      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Katherine Clark", "demVotes": 285606, "totalVotes": 285606, "margin": -100, "demIncumbent": true }
     ]
   },
   {
@@ -9792,7 +9792,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 100, "repPct": 0, "demCandidate": "Seth Moulton", "demVotes": 321186, "totalVotes": 321186, "margin": -100, "demIncumbent": true },
       { "year": 2022, "demPct": 62.92, "repPct": 35.18, "demCandidate": "Seth Moulton", "repCandidate": "Bob May", "demVotes": 198119, "repVotes": 110770, "totalVotes": 314884, "margin": -27.74, "demIncumbent": true },
       { "year": 2020, "demPct": 65.52, "repPct": 34.48, "demCandidate": "Seth Moulton", "repCandidate": "John Paul Moran", "demVotes": 286377, "repVotes": 150695, "totalVotes": 437072, "margin": -31.04, "demIncumbent": true },
-      { "year": 2018, "demPct": 65.22, "repPct": 31.39, "demCandidate": "Seth Moulton", "repCandidate": "Joseph S. Schneider", "demVotes": 217703, "repVotes": 104798, "totalVotes": 333810, "margin": -33.83, "demIncumbent": true },
+      { "year": 2018, "demPct": 65.22, "repPct": 31.39, "demCandidate": "Seth Moulton", "repCandidate": "Joseph Schneider", "demVotes": 217703, "repVotes": 104798, "totalVotes": 333810, "margin": -33.83, "demIncumbent": true },
       { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Seth Moulton", "demVotes": 308923, "totalVotes": 308923, "margin": -100, "demIncumbent": true }
     ]
   },
@@ -9823,10 +9823,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 100, "repPct": 0, "demCandidate": "Ayanna Pressley", "demVotes": 232094, "totalVotes": 232094, "margin": -100, "demIncumbent": true },
-      { "year": 2022, "demPct": 84.84, "repPct": 15.16, "demCandidate": "Ayanna Pressley", "repCandidate": "Donnie Dionicio Palmer, Jr.", "demVotes": 151825, "repVotes": 27129, "totalVotes": 178954, "margin": -69.68, "demIncumbent": true },
-      { "year": 2020, "demPct": 87.16, "repPct": 12.61, "demCandidate": "Ayanna Pressley", "repCandidate": "Roy A. Owens, Sr. (U)", "demVotes": 267362, "repVotes": 38675, "totalVotes": 306744, "margin": -74.55, "demIncumbent": true },
-      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Ayanna S. Pressley", "demVotes": 216557, "totalVotes": 216557, "margin": -100 },
-      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Michael E. Capuano", "demVotes": 253354, "totalVotes": 253354, "margin": -100, "demIncumbent": true }
+      { "year": 2022, "demPct": 84.84, "repPct": 15.16, "demCandidate": "Ayanna Pressley", "repCandidate": "Donnie Dionicio Palmer", "demVotes": 151825, "repVotes": 27129, "totalVotes": 178954, "margin": -69.68, "demIncumbent": true },
+      { "year": 2020, "demPct": 87.16, "repPct": 12.61, "demCandidate": "Ayanna Pressley", "repCandidate": "Roy Owens Sr. (U)", "demVotes": 267362, "repVotes": 38675, "totalVotes": 306744, "margin": -74.55, "demIncumbent": true },
+      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Ayanna Pressley", "demVotes": 216557, "totalVotes": 216557, "margin": -100 },
+      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Michael Capuano", "demVotes": 253354, "totalVotes": 253354, "margin": -100, "demIncumbent": true }
     ]
   },
   {
@@ -9855,11 +9855,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Stephen Lynch",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 70.58, "repPct": 29.42, "demCandidate": "Stephen F. Lynch", "repCandidate": "Robert G. Burke", "demVotes": 265432, "repVotes": 110638, "totalVotes": 376070, "margin": -41.16, "demIncumbent": true },
-      { "year": 2022, "demPct": 69.82, "repPct": 30.18, "demCandidate": "Stephen F. Lynch", "repCandidate": "Robert G. Burke", "demVotes": 189987, "repVotes": 82126, "totalVotes": 272113, "margin": -39.64, "demIncumbent": true },
-      { "year": 2020, "demPct": 81.19, "repPct": 18.81, "demCandidate": "Stephen F. Lynch", "repCandidate": "Jonathan D. Lott (U)", "demVotes": 310940, "repVotes": 72060, "totalVotes": 383000, "margin": -62.38, "demIncumbent": true },
-      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Stephen F. Lynch", "demVotes": 259159, "totalVotes": 259159, "margin": -100, "demIncumbent": true },
-      { "year": 2016, "demPct": 72.51, "repPct": 27.49, "demCandidate": "Stephen F. Lynch", "repCandidate": "William Burke", "demVotes": 271019, "repVotes": 102744, "totalVotes": 373763, "margin": -45.02, "demIncumbent": true }
+      { "year": 2024, "demPct": 70.58, "repPct": 29.42, "demCandidate": "Stephen Lynch", "repCandidate": "Robert Burke", "demVotes": 265432, "repVotes": 110638, "totalVotes": 376070, "margin": -41.16, "demIncumbent": true },
+      { "year": 2022, "demPct": 69.82, "repPct": 30.18, "demCandidate": "Stephen Lynch", "repCandidate": "Robert Burke", "demVotes": 189987, "repVotes": 82126, "totalVotes": 272113, "margin": -39.64, "demIncumbent": true },
+      { "year": 2020, "demPct": 81.19, "repPct": 18.81, "demCandidate": "Stephen Lynch", "repCandidate": "Jonathan Lott (U)", "demVotes": 310940, "repVotes": 72060, "totalVotes": 383000, "margin": -62.38, "demIncumbent": true },
+      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Stephen Lynch", "demVotes": 259159, "totalVotes": 259159, "margin": -100, "demIncumbent": true },
+      { "year": 2016, "demPct": 72.51, "repPct": 27.49, "demCandidate": "Stephen Lynch", "repCandidate": "William Burke", "demVotes": 271019, "repVotes": 102744, "totalVotes": 373763, "margin": -45.02, "demIncumbent": true }
     ]
   },
   {
@@ -9888,11 +9888,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "William Keating",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 56.52, "repPct": 43.48, "demCandidate": "William R. Keating", "repCandidate": "Dan Sullivan", "demVotes": 251931, "repVotes": 193822, "totalVotes": 445753, "margin": -13.04, "demIncumbent": true },
-      { "year": 2022, "demPct": 59.2, "repPct": 40.8, "demCandidate": "William R. Keating", "repCandidate": "Jesse G. Brown", "demVotes": 197823, "repVotes": 136347, "totalVotes": 334170, "margin": -18.4, "demIncumbent": true },
-      { "year": 2020, "demPct": 61.35, "repPct": 36.36, "demCandidate": "William R. Keating", "repCandidate": "Helen Brady", "demVotes": 260262, "repVotes": 154261, "totalVotes": 424240, "margin": -24.99, "demIncumbent": true },
-      { "year": 2018, "demPct": 59.4, "repPct": 40.6, "demCandidate": "William R. Keating", "repCandidate": "Peter D. Tedeschi", "demVotes": 192347, "repVotes": 131463, "totalVotes": 323810, "margin": -18.8, "demIncumbent": true },
-      { "year": 2016, "demPct": 55.81, "repPct": 33.68, "demCandidate": "William R. Keating", "repCandidate": "Mark C. Alliegro", "demVotes": 211790, "repVotes": 127803, "totalVotes": 379484, "margin": -22.13, "demIncumbent": true }
+      { "year": 2024, "demPct": 56.52, "repPct": 43.48, "demCandidate": "William Keating", "repCandidate": "Dan Sullivan", "demVotes": 251931, "repVotes": 193822, "totalVotes": 445753, "margin": -13.04, "demIncumbent": true },
+      { "year": 2022, "demPct": 59.2, "repPct": 40.8, "demCandidate": "William Keating", "repCandidate": "Jesse Brown", "demVotes": 197823, "repVotes": 136347, "totalVotes": 334170, "margin": -18.4, "demIncumbent": true },
+      { "year": 2020, "demPct": 61.35, "repPct": 36.36, "demCandidate": "William Keating", "repCandidate": "Helen Brady", "demVotes": 260262, "repVotes": 154261, "totalVotes": 424240, "margin": -24.99, "demIncumbent": true },
+      { "year": 2018, "demPct": 59.4, "repPct": 40.6, "demCandidate": "William Keating", "repCandidate": "Peter Tedeschi", "demVotes": 192347, "repVotes": 131463, "totalVotes": 323810, "margin": -18.8, "demIncumbent": true },
+      { "year": 2016, "demPct": 55.81, "repPct": 33.68, "demCandidate": "William Keating", "repCandidate": "Mark Alliegro", "demVotes": 211790, "repVotes": 127803, "totalVotes": 379484, "margin": -22.13, "demIncumbent": true }
     ]
   },
   {
@@ -9924,7 +9924,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 37.92, "repPct": 59.15, "demCandidate": "Callie Barr", "repCandidate": "Jack Bergman", "demVotes": 180937, "repVotes": 282264, "totalVotes": 477184, "margin": 21.23, "repIncumbent": true },
       { "year": 2022, "demPct": 37.42, "repPct": 59.98, "demCandidate": "Bob Lorinser", "repCandidate": "Jack Bergman", "demVotes": 145403, "repVotes": 233094, "totalVotes": 388599, "margin": 22.56, "repIncumbent": true },
       { "year": 2020, "demPct": 36.84, "repPct": 61.65, "demCandidate": "Dana Ferguson", "repCandidate": "Jack Bergman", "demVotes": 153328, "repVotes": 256581, "totalVotes": 416219, "margin": 24.81, "repIncumbent": true },
-      { "year": 2018, "demPct": 43.68, "repPct": 56.32, "demCandidate": "Matthew W. Morgan", "repCandidate": "Jack Bergman", "demVotes": 145246, "repVotes": 187251, "totalVotes": 332497, "margin": 12.64, "repIncumbent": true },
+      { "year": 2018, "demPct": 43.68, "repPct": 56.32, "demCandidate": "Matthew Morgan", "repCandidate": "Jack Bergman", "demVotes": 145246, "repVotes": 187251, "totalVotes": 332497, "margin": 12.64, "repIncumbent": true },
       { "year": 2016, "demPct": 40.06, "repPct": 54.9, "demCandidate": "Lon Johnson", "repCandidate": "Jack Bergman", "demVotes": 144334, "repVotes": 197777, "totalVotes": 360271, "margin": 14.84 }
     ]
   },
@@ -9954,11 +9954,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "John Moolenaar",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 31.69, "repPct": 65.14, "demCandidate": "Michael Lynch", "repCandidate": "John R. Moolenaar", "demVotes": 135824, "repVotes": 279167, "totalVotes": 428550, "margin": 33.45, "repIncumbent": true },
-      { "year": 2022, "demPct": 34.3, "repPct": 63.68, "demCandidate": "Jerry Hilliard", "repCandidate": "John R. Moolenaar", "demVotes": 116452, "repVotes": 216222, "totalVotes": 339521, "margin": 29.38 },
+      { "year": 2024, "demPct": 31.69, "repPct": 65.14, "demCandidate": "Michael Lynch", "repCandidate": "John Moolenaar", "demVotes": 135824, "repVotes": 279167, "totalVotes": 428550, "margin": 33.45, "repIncumbent": true },
+      { "year": 2022, "demPct": 34.3, "repPct": 63.68, "demCandidate": "Jerry Hilliard", "repCandidate": "John Moolenaar", "demVotes": 116452, "repVotes": 216222, "totalVotes": 339521, "margin": 29.38 },
       { "year": 2020, "demPct": 38.22, "repPct": 59.2, "demCandidate": "Bryan Berghoef", "repCandidate": "Bill Huizenga", "demVotes": 154122, "repVotes": 238711, "totalVotes": 403247, "margin": 20.98, "repIncumbent": true },
       { "year": 2018, "demPct": 42.97, "repPct": 55.32, "demCandidate": "Rob Davidson", "repCandidate": "Bill Huizenga", "demVotes": 131254, "repVotes": 168970, "totalVotes": 305463, "margin": 12.35, "repIncumbent": true },
-      { "year": 2016, "demPct": 32.53, "repPct": 62.63, "demCandidate": "Dennis B. Murphy", "repCandidate": "Bill Huizenga", "demVotes": 110391, "repVotes": 212508, "totalVotes": 339328, "margin": 30.1, "repIncumbent": true }
+      { "year": 2016, "demPct": 32.53, "repPct": 62.63, "demCandidate": "Dennis Murphy", "repCandidate": "Bill Huizenga", "demVotes": 110391, "repVotes": 212508, "totalVotes": 339328, "margin": 30.1, "repIncumbent": true }
     ]
   },
   {
@@ -9985,7 +9985,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Hillary Scholten",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 53.66, "repPct": 43.77, "demCandidate": "Hillary J. Scholten", "repCandidate": "Paul Hudson", "demVotes": 225510, "repVotes": 183952, "totalVotes": 420289, "margin": -9.89, "demIncumbent": true },
+      { "year": 2024, "demPct": 53.66, "repPct": 43.77, "demCandidate": "Hillary Scholten", "repCandidate": "Paul Hudson", "demVotes": 225510, "repVotes": 183952, "totalVotes": 420289, "margin": -9.89, "demIncumbent": true },
       { "year": 2022, "demPct": 54.87, "repPct": 41.96, "demCandidate": "Hillary Scholten", "repCandidate": "John Gibbs", "demVotes": 185989, "repVotes": 142229, "totalVotes": 338988, "margin": -12.91 },
       { "year": 2020, "demPct": 47.04, "repPct": 52.96, "demCandidate": "Hillary Scholten", "repCandidate": "Peter Meijer", "demVotes": 189769, "repVotes": 213649, "totalVotes": 403419, "margin": 5.92 },
       { "year": 2018, "demPct": 43.18, "repPct": 54.42, "demCandidate": "Cathy Albro", "repCandidate": "Justin Amash", "demVotes": 134185, "repVotes": 169107, "totalVotes": 310740, "margin": 11.24, "repIncumbent": true },
@@ -10011,16 +10011,16 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": { "name": "Sean McCann", "party": "D", "incumbent": false },
-      "rep": { "name": "William Huizenga", "party": "R", "incumbent": true }
+      "rep": { "name": "Bill Huizenga", "party": "R", "incumbent": true }
     },
     "seatHolder": "Bill Huizenga",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 43.36, "repPct": 55.07, "demCandidate": "Jessica Swartz", "repCandidate": "Bill Huizenga", "demVotes": 184641, "repVotes": 234489, "totalVotes": 425817, "margin": 11.71, "repIncumbent": true },
       { "year": 2022, "demPct": 42.47, "repPct": 54.36, "demCandidate": "Joseph Alfonso", "repCandidate": "Bill Huizenga", "demVotes": 143690, "repVotes": 183936, "totalVotes": 338348, "margin": 11.89 },
-      { "year": 2020, "demPct": 32.37, "repPct": 65, "demCandidate": "Jerry Hilliard", "repCandidate": "John R. Moolenaar", "demVotes": 120802, "repVotes": 242621, "totalVotes": 373245, "margin": 32.63, "repIncumbent": true },
-      { "year": 2018, "demPct": 37.38, "repPct": 62.62, "demCandidate": "Jerry Hilliard", "repCandidate": "John R. Moolenaar", "demVotes": 106540, "repVotes": 178510, "totalVotes": 285050, "margin": 25.24, "repIncumbent": true },
-      { "year": 2016, "demPct": 32.07, "repPct": 61.62, "demCandidate": "Debra Wirth", "repCandidate": "John R. Moolenaar", "demVotes": 101277, "repVotes": 194572, "totalVotes": 315751, "margin": 29.55, "repIncumbent": true }
+      { "year": 2020, "demPct": 32.37, "repPct": 65, "demCandidate": "Jerry Hilliard", "repCandidate": "John Moolenaar", "demVotes": 120802, "repVotes": 242621, "totalVotes": 373245, "margin": 32.63, "repIncumbent": true },
+      { "year": 2018, "demPct": 37.38, "repPct": 62.62, "demCandidate": "Jerry Hilliard", "repCandidate": "John Moolenaar", "demVotes": 106540, "repVotes": 178510, "totalVotes": 285050, "margin": 25.24, "repIncumbent": true },
+      { "year": 2016, "demPct": 32.07, "repPct": 61.62, "demCandidate": "Debra Wirth", "repCandidate": "John Moolenaar", "demVotes": 101277, "repVotes": 194572, "totalVotes": 315751, "margin": 29.55, "repIncumbent": true }
     ]
   },
   {
@@ -10051,9 +10051,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 32.76, "repPct": 65.68, "demCandidate": "Libbi Urban", "repCandidate": "Tim Walberg", "demVotes": 134282, "repVotes": 269215, "totalVotes": 409876, "margin": 32.92, "repIncumbent": true },
       { "year": 2022, "demPct": 34.97, "repPct": 62.42, "demCandidate": "Bart Goldberg", "repCandidate": "Tim Walberg", "demVotes": 110946, "repVotes": 198020, "totalVotes": 317258, "margin": 27.45 },
-      { "year": 2020, "demPct": 54.45, "repPct": 41.76, "demCandidate": "Daniel T. Kildee", "repCandidate": "Tim Kelly", "demVotes": 196599, "repVotes": 150772, "totalVotes": 361032, "margin": -12.69, "demIncumbent": true },
-      { "year": 2018, "demPct": 59.51, "repPct": 35.91, "demCandidate": "Daniel T. Kildee", "repCandidate": "Travis Wines", "demVotes": 164502, "repVotes": 99265, "totalVotes": 276413, "margin": -23.6, "demIncumbent": true },
-      { "year": 2016, "demPct": 61.16, "repPct": 35.11, "demCandidate": "Daniel T. Kildee", "repCandidate": "Al Hardwick", "demVotes": 195279, "repVotes": 112102, "totalVotes": 319291, "margin": -26.05, "demIncumbent": true }
+      { "year": 2020, "demPct": 54.45, "repPct": 41.76, "demCandidate": "Daniel Kildee", "repCandidate": "Tim Kelly", "demVotes": 196599, "repVotes": 150772, "totalVotes": 361032, "margin": -12.69, "demIncumbent": true },
+      { "year": 2018, "demPct": 59.51, "repPct": 35.91, "demCandidate": "Daniel Kildee", "repCandidate": "Travis Wines", "demVotes": 164502, "repVotes": 99265, "totalVotes": 276413, "margin": -23.6, "demIncumbent": true },
+      { "year": 2016, "demPct": 61.16, "repPct": 35.11, "demCandidate": "Daniel Kildee", "repCandidate": "Al Hardwick", "demVotes": 195279, "repVotes": 112102, "totalVotes": 319291, "margin": -26.05, "demIncumbent": true }
     ]
   },
   {
@@ -10108,16 +10108,16 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": { "name": "Bridget Brink", "party": "D", "incumbent": false },
-      "rep": { "name": "Thomas Barrett", "party": "R", "incumbent": true }
+      "rep": { "name": "Tom Barrett", "party": "R", "incumbent": true }
     },
     "seatHolder": "Tom Barrett",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 46.56, "repPct": 50.28, "demCandidate": "Curtis Hertel", "repCandidate": "Tom Barrett", "demVotes": 209959, "repVotes": 226722, "totalVotes": 450912, "margin": 3.72 },
       { "year": 2022, "demPct": 51.73, "repPct": 46.32, "demCandidate": "Elissa Slotkin", "repCandidate": "Tom Barrett", "demVotes": 192809, "repVotes": 172624, "totalVotes": 372708, "margin": -5.41 },
-      { "year": 2020, "demPct": 41.25, "repPct": 58.75, "demCandidate": "Gretchen D. Driskell", "repCandidate": "Tim Walberg", "demVotes": 159743, "repVotes": 227524, "totalVotes": 387267, "margin": 17.5, "repIncumbent": true },
+      { "year": 2020, "demPct": 41.25, "repPct": 58.75, "demCandidate": "Gretchen Driskell", "repCandidate": "Tim Walberg", "demVotes": 159743, "repVotes": 227524, "totalVotes": 387267, "margin": 17.5, "repIncumbent": true },
       { "year": 2018, "demPct": 46.2, "repPct": 53.8, "demCandidate": "Gretchen Driskell", "repCandidate": "Tim Walberg", "demVotes": 136330, "repVotes": 158730, "totalVotes": 295060, "margin": 7.6, "repIncumbent": true },
-      { "year": 2016, "demPct": 40.03, "repPct": 55.05, "demCandidate": "Gretchen D. Driskell", "repCandidate": "Tim Walberg", "demVotes": 134010, "repVotes": 184321, "totalVotes": 334807, "margin": 15.02, "repIncumbent": true }
+      { "year": 2016, "demPct": 40.03, "repPct": 55.05, "demCandidate": "Gretchen Driskell", "repCandidate": "Tim Walberg", "demVotes": 134010, "repVotes": 184321, "totalVotes": 334807, "margin": 15.02, "repIncumbent": true }
     ]
   },
   {
@@ -10145,7 +10145,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 51.25, "repPct": 44.61, "demCandidate": "Kristen McDonald Rivet", "repCandidate": "Paul Junge", "demVotes": 217490, "repVotes": 189317, "totalVotes": 424350, "margin": -6.64 },
-      { "year": 2022, "demPct": 53.1, "repPct": 42.83, "demCandidate": "Daniel T. Kildee", "repCandidate": "Paul Junge", "demVotes": 178322, "repVotes": 143850, "totalVotes": 335829, "margin": -10.27 },
+      { "year": 2022, "demPct": 53.1, "repPct": 42.83, "demCandidate": "Daniel Kildee", "repCandidate": "Paul Junge", "demVotes": 178322, "repVotes": 143850, "totalVotes": 335829, "margin": -10.27 },
       { "year": 2020, "demPct": 50.88, "repPct": 47.28, "demCandidate": "Elissa Slotkin", "repCandidate": "Paul Junge", "demVotes": 217922, "repVotes": 202525, "totalVotes": 428344, "margin": -3.6, "demIncumbent": true },
       { "year": 2018, "demPct": 50.61, "repPct": 46.78, "demCandidate": "Elissa Slotkin", "repCandidate": "Mike Bishop", "demVotes": 172880, "repVotes": 159782, "totalVotes": 341593, "margin": -3.83, "repIncumbent": true },
       { "year": 2016, "demPct": 39.18, "repPct": 56.03, "demCandidate": "Suzanna Shkreli", "repCandidate": "Mike Bishop", "demVotes": 143791, "repVotes": 205629, "totalVotes": 366968, "margin": 16.85, "repIncumbent": true }
@@ -10177,11 +10177,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Lisa McClain",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 29.5, "repPct": 66.76, "demCandidate": "Clinton St. Mosley", "repCandidate": "Lisa C. McClain", "demVotes": 138138, "repVotes": 312593, "totalVotes": 468238, "margin": 37.26, "repIncumbent": true },
+      { "year": 2024, "demPct": 29.5, "repPct": 66.76, "demCandidate": "Clinton St. Mosley", "repCandidate": "Lisa McClain", "demVotes": 138138, "repVotes": 312593, "totalVotes": 468238, "margin": 37.26, "repIncumbent": true },
       { "year": 2022, "demPct": 33.17, "repPct": 63.9, "demCandidate": "Brian Jaye", "repCandidate": "Lisa McClain", "demVotes": 123702, "repVotes": 238300, "totalVotes": 372922, "margin": 30.73 },
-      { "year": 2020, "demPct": 57.71, "repPct": 38.41, "demCandidate": "Andy Levin", "repCandidate": "Charles J. Langworthy", "demVotes": 230318, "repVotes": 153296, "totalVotes": 399117, "margin": -19.3, "demIncumbent": true },
+      { "year": 2020, "demPct": 57.71, "repPct": 38.41, "demCandidate": "Andy Levin", "repCandidate": "Charles Langworthy", "demVotes": 230318, "repVotes": 153296, "totalVotes": 399117, "margin": -19.3, "demIncumbent": true },
       { "year": 2018, "demPct": 59.67, "repPct": 36.81, "demCandidate": "Andy Levin", "repCandidate": "Candius Stearns", "demVotes": 181734, "repVotes": 112123, "totalVotes": 304563, "margin": -22.86 },
-      { "year": 2016, "demPct": 57.91, "repPct": 37.4, "demCandidate": "Sander M. Levin", "repCandidate": "Christopher R. Morse", "demVotes": 199661, "repVotes": 128937, "totalVotes": 344775, "margin": -20.51, "demIncumbent": true }
+      { "year": 2016, "demPct": 57.91, "repPct": 37.4, "demCandidate": "Sander Levin", "repCandidate": "Christopher Morse", "demVotes": 199661, "repVotes": 128937, "totalVotes": 344775, "margin": -20.51, "demIncumbent": true }
     ]
   },
   {
@@ -10208,11 +10208,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "John James",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 44.99, "repPct": 51.13, "demCandidate": "Carl J. Marlinga", "repCandidate": "John James", "demVotes": 191363, "repVotes": 217437, "totalVotes": 425301, "margin": 6.14, "repIncumbent": true },
-      { "year": 2022, "demPct": 48.31, "repPct": 48.8, "demCandidate": "Carl J. Marlinga", "repCandidate": "John James", "demVotes": 157602, "repVotes": 159202, "totalVotes": 326237, "margin": 0.49 },
+      { "year": 2024, "demPct": 44.99, "repPct": 51.13, "demCandidate": "Carl Marlinga", "repCandidate": "John James", "demVotes": 191363, "repVotes": 217437, "totalVotes": 425301, "margin": 6.14, "repIncumbent": true },
+      { "year": 2022, "demPct": 48.31, "repPct": 48.8, "demCandidate": "Carl Marlinga", "repCandidate": "John James", "demVotes": 157602, "repVotes": 159202, "totalVotes": 326237, "margin": 0.49 },
       { "year": 2020, "demPct": 33.72, "repPct": 66.28, "demCandidate": "Kimberly Bizon", "repCandidate": "Lisa McClain", "demVotes": 138179, "repVotes": 271607, "totalVotes": 409786, "margin": 32.56 },
       { "year": 2018, "demPct": 35, "repPct": 60.32, "demCandidate": "Kimberly Bizon", "repCandidate": "Paul Mitchell", "demVotes": 106061, "repVotes": 182808, "totalVotes": 303064, "margin": 25.32, "repIncumbent": true },
-      { "year": 2016, "demPct": 32.29, "repPct": 63.09, "demCandidate": "Frank Accavitti, Jr.", "repCandidate": "Paul Mitchell", "demVotes": 110112, "repVotes": 215132, "totalVotes": 340983, "margin": 30.8 }
+      { "year": 2016, "demPct": 32.29, "repPct": 63.09, "demCandidate": "Frank Accavitti", "repCandidate": "Paul Mitchell", "demVotes": 110112, "repVotes": 215132, "totalVotes": 340983, "margin": 30.8 }
     ]
   },
   {
@@ -10238,14 +10238,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Jeremy Moss", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Steger", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Haley M. Stevens",
+    "seatHolder": "Haley Stevens",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 58.22, "repPct": 39.61, "demCandidate": "Haley M. Stevens", "repCandidate": "Nick Somberg", "demVotes": 260780, "repVotes": 177432, "totalVotes": 447925, "margin": -18.61, "demIncumbent": true },
-      { "year": 2022, "demPct": 61.32, "repPct": 38.68, "demCandidate": "Haley M. Stevens", "repCandidate": "Mark Ambrose", "demVotes": 224537, "repVotes": 141642, "totalVotes": 366179, "margin": -22.64, "demIncumbent": true },
-      { "year": 2020, "demPct": 50.2, "repPct": 47.82, "demCandidate": "Haley M. Stevens", "repCandidate": "Eric S. Esshaki", "demVotes": 226128, "repVotes": 215405, "totalVotes": 450473, "margin": -2.38, "demIncumbent": true },
+      { "year": 2024, "demPct": 58.22, "repPct": 39.61, "demCandidate": "Haley Stevens", "repCandidate": "Nick Somberg", "demVotes": 260780, "repVotes": 177432, "totalVotes": 447925, "margin": -18.61, "demIncumbent": true },
+      { "year": 2022, "demPct": 61.32, "repPct": 38.68, "demCandidate": "Haley Stevens", "repCandidate": "Mark Ambrose", "demVotes": 224537, "repVotes": 141642, "totalVotes": 366179, "margin": -22.64, "demIncumbent": true },
+      { "year": 2020, "demPct": 50.2, "repPct": 47.82, "demCandidate": "Haley Stevens", "repCandidate": "Eric Esshaki", "demVotes": 226128, "repVotes": 215405, "totalVotes": 450473, "margin": -2.38, "demIncumbent": true },
       { "year": 2018, "demPct": 51.84, "repPct": 45.16, "demCandidate": "Haley Stevens", "repCandidate": "Lena Epstein", "demVotes": 181912, "repVotes": 158463, "totalVotes": 350901, "margin": -6.68 },
-      { "year": 2016, "demPct": 40.18, "repPct": 52.93, "demCandidate": "Anil Kumar", "repCandidate": "David A. Trott", "demVotes": 152461, "repVotes": 200872, "totalVotes": 379488, "margin": 12.75, "repIncumbent": true }
+      { "year": 2016, "demPct": 40.18, "repPct": 52.93, "demCandidate": "Anil Kumar", "repCandidate": "David Trott", "demVotes": 152461, "repVotes": 200872, "totalVotes": 379488, "margin": 12.75, "repIncumbent": true }
     ]
   },
   {
@@ -10274,7 +10274,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Rashida Tlaib",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 69.7, "repPct": 25.44, "demCandidate": "Rashida Tlaib", "repCandidate": "James D. Hooper", "demVotes": 253354, "repVotes": 92490, "totalVotes": 363499, "margin": -44.26, "demIncumbent": true },
+      { "year": 2024, "demPct": 69.7, "repPct": 25.44, "demCandidate": "Rashida Tlaib", "repCandidate": "James Hooper", "demVotes": 253354, "repVotes": 92490, "totalVotes": 363499, "margin": -44.26, "demIncumbent": true },
       { "year": 2022, "demPct": 70.84, "repPct": 26.26, "demCandidate": "Rashida Tlaib", "repCandidate": "Steven Elliott", "demVotes": 196643, "repVotes": 72888, "totalVotes": 277577, "margin": -44.58 },
       { "year": 2020, "demPct": 66.43, "repPct": 30.67, "demCandidate": "Debbie Dingell", "repCandidate": "Jeff Jones", "demVotes": 254957, "repVotes": 117719, "totalVotes": 383823, "margin": -35.76, "demIncumbent": true },
       { "year": 2018, "demPct": 68.08, "repPct": 28.89, "demCandidate": "Debbie Dingell", "repCandidate": "Jeff Jones", "demVotes": 200588, "repVotes": 85115, "totalVotes": 294628, "margin": -39.19, "demIncumbent": true },
@@ -10307,11 +10307,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Shri Thanedar",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 68.64, "repPct": 24.54, "demCandidate": "Shri Thanedar", "repCandidate": "Martell D. Bivings", "demVotes": 220788, "repVotes": 78917, "totalVotes": 321649, "margin": -44.1, "demIncumbent": true },
-      { "year": 2022, "demPct": 71.08, "repPct": 23.97, "demCandidate": "Shri Thanedar", "repCandidate": "Martell D. Bivings", "demVotes": 166650, "repVotes": 56187, "totalVotes": 234444, "margin": -47.11 },
+      { "year": 2024, "demPct": 68.64, "repPct": 24.54, "demCandidate": "Shri Thanedar", "repCandidate": "Martell Bivings", "demVotes": 220788, "repVotes": 78917, "totalVotes": 321649, "margin": -44.1, "demIncumbent": true },
+      { "year": 2022, "demPct": 71.08, "repPct": 23.97, "demCandidate": "Shri Thanedar", "repCandidate": "Martell Bivings", "demVotes": 166650, "repVotes": 56187, "totalVotes": 234444, "margin": -47.11 },
       { "year": 2020, "demPct": 78.08, "repPct": 18.65, "demCandidate": "Rashida Tlaib", "repCandidate": "David Dudenhoefer", "demVotes": 223205, "repVotes": 53311, "totalVotes": 285885, "margin": -59.43, "demIncumbent": true },
       { "year": 2018, "demPct": 84.24, "repPct": 11.3, "demCandidate": "Rashida Tlaib", "repCandidate": "Sam Johnson (WC)", "demVotes": 165355, "repVotes": 22186, "totalVotes": 196299, "margin": -72.94 },
-      { "year": 2016, "demPct": 77.1, "repPct": 15.73, "demCandidate": "John Conyers, Jr.", "repCandidate": "Jeff Gorman", "demVotes": 198771, "repVotes": 40541, "totalVotes": 257797, "margin": -61.37, "demIncumbent": true }
+      { "year": 2016, "demPct": 77.1, "repPct": 15.73, "demCandidate": "John Conyers", "repCandidate": "Jeff Gorman", "demVotes": 198771, "repVotes": 40541, "totalVotes": 257797, "margin": -61.37, "demIncumbent": true }
     ]
   },
   {
@@ -10344,7 +10344,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 42.31, "repPct": 53.83, "demCandidate": "Jeff Ettinger", "repCandidate": "Brad Finstad", "demVotes": 125457, "repVotes": 159621, "totalVotes": 296547, "margin": 11.52, "repIncumbent": true },
       { "year": 2020, "demPct": 45.52, "repPct": 48.59, "demCandidate": "Dan Feehan", "repCandidate": "Jim Hagedorn", "demVotes": 167890, "repVotes": 179234, "totalVotes": 368856, "margin": 3.07, "repIncumbent": true },
       { "year": 2018, "demPct": 49.68, "repPct": 50.13, "demCandidate": "Dan Feehan", "repCandidate": "Jim Hagedorn", "demVotes": 144885, "repVotes": 146200, "totalVotes": 291661, "margin": 0.45 },
-      { "year": 2016, "demPct": 50.34, "repPct": 49.58, "demCandidate": "Timothy J. Walz", "repCandidate": "Jim Hagedorn", "demVotes": 169071, "repVotes": 166524, "totalVotes": 335873, "margin": -0.76, "demIncumbent": true }
+      { "year": 2016, "demPct": 50.34, "repPct": 49.58, "demCandidate": "Timothy Walz", "repCandidate": "Jim Hagedorn", "demVotes": 169071, "repVotes": 166524, "totalVotes": 335873, "margin": -0.76, "demIncumbent": true }
     ]
   },
   {
@@ -10408,7 +10408,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 59.56, "repPct": 40.37, "demCandidate": "Dean Phillips", "repCandidate": "Tom Weiler", "demVotes": 198883, "repVotes": 134797, "totalVotes": 333921, "margin": -19.19, "demIncumbent": true },
       { "year": 2020, "demPct": 55.61, "repPct": 44.32, "demCandidate": "Dean Phillips", "repCandidate": "Kendall Qualls", "demVotes": 246666, "repVotes": 196625, "totalVotes": 443603, "margin": -11.29, "demIncumbent": true },
       { "year": 2018, "demPct": 55.61, "repPct": 44.19, "demCandidate": "Dean Phillips", "repCandidate": "Erik Paulsen", "demVotes": 202404, "repVotes": 160839, "totalVotes": 363949, "margin": -11.42, "repIncumbent": true },
-      { "year": 2016, "demPct": 43.01, "repPct": 56.7, "demCandidate": "Terri E. Bonoff", "repCandidate": "Erik Paulsen", "demVotes": 169238, "repVotes": 223075, "totalVotes": 393457, "margin": 13.69, "repIncumbent": true }
+      { "year": 2016, "demPct": 43.01, "repPct": 56.7, "demCandidate": "Terri Bonoff", "repCandidate": "Erik Paulsen", "demVotes": 169238, "repVotes": 223075, "totalVotes": 393457, "margin": 13.69, "repIncumbent": true }
     ]
   },
   {
@@ -10536,11 +10536,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Michelle Fischbach",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 29.44, "repPct": 70.45, "demCandidate": "A J “John” Peters", "repCandidate": "Michelle Fischbach", "demVotes": 114979, "repVotes": 275098, "totalVotes": 390510, "margin": 41.01, "repIncumbent": true },
+      { "year": 2024, "demPct": 29.44, "repPct": 70.45, "demCandidate": "John Peters", "repCandidate": "Michelle Fischbach", "demVotes": 114979, "repVotes": 275098, "totalVotes": 390510, "margin": 41.01, "repIncumbent": true },
       { "year": 2022, "demPct": 27.61, "repPct": 66.95, "demCandidate": "Jill Abahsain", "repCandidate": "Michelle Fischbach", "demVotes": 84455, "repVotes": 204766, "totalVotes": 305866, "margin": 39.34, "repIncumbent": true },
-      { "year": 2020, "demPct": 39.85, "repPct": 53.39, "demCandidate": "Collin C. Peterson", "repCandidate": "Michelle Fischbach", "demVotes": 144840, "repVotes": 194066, "totalVotes": 363477, "margin": 13.54, "demIncumbent": true },
-      { "year": 2018, "demPct": 52.1, "repPct": 47.84, "demCandidate": "Collin C. Peterson", "repCandidate": "Dave Hughes", "demVotes": 146672, "repVotes": 134668, "totalVotes": 281509, "margin": -4.26, "demIncumbent": true },
-      { "year": 2016, "demPct": 52.47, "repPct": 47.44, "demCandidate": "Collin C. Peterson", "repCandidate": "Dave Hughes", "demVotes": 173572, "repVotes": 156944, "totalVotes": 330823, "margin": -5.03, "demIncumbent": true }
+      { "year": 2020, "demPct": 39.85, "repPct": 53.39, "demCandidate": "Collin Peterson", "repCandidate": "Michelle Fischbach", "demVotes": 144840, "repVotes": 194066, "totalVotes": 363477, "margin": 13.54, "demIncumbent": true },
+      { "year": 2018, "demPct": 52.1, "repPct": 47.84, "demCandidate": "Collin Peterson", "repCandidate": "Dave Hughes", "demVotes": 146672, "repVotes": 134668, "totalVotes": 281509, "margin": -4.26, "demIncumbent": true },
+      { "year": 2016, "demPct": 52.47, "repPct": 47.44, "demCandidate": "Collin Peterson", "repCandidate": "Dave Hughes", "demVotes": 173572, "repVotes": 156944, "totalVotes": 330823, "margin": -5.03, "demIncumbent": true }
     ]
   },
   {
@@ -10564,7 +10564,7 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.7,
     "candidates": {
       "dem": { "name": "Generic Democrat", "party": "D", "incumbent": false },
-      "rep": { "name": "Peter Stauber", "party": "R", "incumbent": true }
+      "rep": { "name": "Pete Stauber", "party": "R", "incumbent": true }
     },
     "seatHolder": "Pete Stauber",
     "seatParty": "R",
@@ -10573,7 +10573,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 42.72, "repPct": 57.18, "demCandidate": "Jen Schultz", "repCandidate": "Pete Stauber", "demVotes": 141009, "repVotes": 188755, "totalVotes": 330080, "margin": 14.46, "repIncumbent": true },
       { "year": 2020, "demPct": 37.55, "repPct": 56.75, "demCandidate": "Quinn Nystrom", "repCandidate": "Pete Stauber", "demVotes": 147853, "repVotes": 223432, "totalVotes": 393711, "margin": 19.2, "repIncumbent": true },
       { "year": 2018, "demPct": 45.18, "repPct": 50.72, "demCandidate": "Joe Radinovich", "repCandidate": "Pete Stauber", "demVotes": 141950, "repVotes": 159364, "totalVotes": 314211, "margin": 5.54 },
-      { "year": 2016, "demPct": 50.17, "repPct": 49.61, "demCandidate": "Richard M. Nolan", "repCandidate": "Stewart Mills", "demVotes": 179097, "repVotes": 177088, "totalVotes": 356971, "margin": -0.56, "demIncumbent": true }
+      { "year": 2016, "demPct": 50.17, "repPct": 49.61, "demCandidate": "Richard Nolan", "repCandidate": "Stewart Mills", "demVotes": 179097, "repVotes": 177088, "totalVotes": 356971, "margin": -0.56, "demIncumbent": true }
     ]
   },
   {
@@ -10632,14 +10632,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Bennie Thompson", "party": "D", "incumbent": true },
       "rep": { "name": "Ron Eller", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Bennie G. Thompson",
+    "seatHolder": "Bennie Thompson",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 62.02, "repPct": 37.98, "demCandidate": "Bennie G. Thompson", "repCandidate": "Ron Eller", "demVotes": 177885, "repVotes": 108956, "totalVotes": 286841, "margin": -24.04, "demIncumbent": true },
-      { "year": 2022, "demPct": 60.1, "repPct": 39.9, "demCandidate": "Bennie G. Thompson", "repCandidate": "Brian Flowers", "demVotes": 108285, "repVotes": 71884, "totalVotes": 180169, "margin": -20.2, "demIncumbent": true },
-      { "year": 2020, "demPct": 66.02, "repPct": 33.98, "demCandidate": "Bennie G. Thompson", "repCandidate": "Brian Flowers", "demVotes": 196224, "repVotes": 101010, "totalVotes": 297234, "margin": -32.04, "demIncumbent": true },
-      { "year": 2018, "demPct": 71.79, "repPct": 21.73, "demCandidate": "Bennie G. Thompson", "repCandidate": "Troy Ray", "repParty": "I", "demVotes": 158921, "repVotes": 48104, "totalVotes": 221379, "margin": -50.06, "demIncumbent": true },
-      { "year": 2016, "demPct": 67.11, "repPct": 29.15, "demCandidate": "Bennie G. Thompson", "repCandidate": "John Bouie II", "demVotes": 192343, "repVotes": 83542, "totalVotes": 286626, "margin": -37.96, "demIncumbent": true }
+      { "year": 2024, "demPct": 62.02, "repPct": 37.98, "demCandidate": "Bennie Thompson", "repCandidate": "Ron Eller", "demVotes": 177885, "repVotes": 108956, "totalVotes": 286841, "margin": -24.04, "demIncumbent": true },
+      { "year": 2022, "demPct": 60.1, "repPct": 39.9, "demCandidate": "Bennie Thompson", "repCandidate": "Brian Flowers", "demVotes": 108285, "repVotes": 71884, "totalVotes": 180169, "margin": -20.2, "demIncumbent": true },
+      { "year": 2020, "demPct": 66.02, "repPct": 33.98, "demCandidate": "Bennie Thompson", "repCandidate": "Brian Flowers", "demVotes": 196224, "repVotes": 101010, "totalVotes": 297234, "margin": -32.04, "demIncumbent": true },
+      { "year": 2018, "demPct": 71.79, "repPct": 21.73, "demCandidate": "Bennie Thompson", "repCandidate": "Troy Ray", "repParty": "I", "demVotes": 158921, "repVotes": 48104, "totalVotes": 221379, "margin": -50.06, "demIncumbent": true },
+      { "year": 2016, "demPct": 67.11, "repPct": 29.15, "demCandidate": "Bennie Thompson", "repCandidate": "John Bouie", "demVotes": 192343, "repVotes": 83542, "totalVotes": 286626, "margin": -37.96, "demIncumbent": true }
     ]
   },
   {
@@ -10669,8 +10669,8 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 0, "repPct": 100, "repCandidate": "Michael Guest", "repVotes": 265159, "totalVotes": 265159, "margin": 100, "repIncumbent": true },
-      { "year": 2022, "demPct": 29.26, "repPct": 70.74, "demCandidate": "Shuwaski A. Young", "repCandidate": "Michael Guest", "demVotes": 54803, "repVotes": 132481, "totalVotes": 187284, "margin": 41.48, "repIncumbent": true },
-      { "year": 2020, "demPct": 35.33, "repPct": 64.67, "demCandidate": "Dorothy “Dot” Benford", "repCandidate": "Michael Guest", "demVotes": 120782, "repVotes": 221064, "totalVotes": 341846, "margin": 29.34, "repIncumbent": true },
+      { "year": 2022, "demPct": 29.26, "repPct": 70.74, "demCandidate": "Shuwaski Young", "repCandidate": "Michael Guest", "demVotes": 54803, "repVotes": 132481, "totalVotes": 187284, "margin": 41.48, "repIncumbent": true },
+      { "year": 2020, "demPct": 35.33, "repPct": 64.67, "demCandidate": "Dot Benford", "repCandidate": "Michael Guest", "demVotes": 120782, "repVotes": 221064, "totalVotes": 341846, "margin": 29.34, "repIncumbent": true },
       { "year": 2018, "demPct": 36.72, "repPct": 62.3, "demCandidate": "Michael Ted Evans", "repCandidate": "Michael Guest", "demVotes": 94461, "repVotes": 160284, "totalVotes": 257271, "margin": 25.58 },
       { "year": 2016, "demPct": 30.37, "repPct": 66.2, "demCandidate": "Dennis Quinn", "repCandidate": "Gregg Harper", "demVotes": 96101, "repVotes": 209490, "totalVotes": 316445, "margin": 35.83, "repIncumbent": true }
     ]
@@ -10702,10 +10702,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 26.05, "repPct": 73.95, "demCandidate": "Craig Elliot Raybon", "repCandidate": "Mike Ezell", "demVotes": 75771, "repVotes": 215095, "totalVotes": 290866, "margin": 47.9, "repIncumbent": true },
-      { "year": 2022, "demPct": 24.6, "repPct": 73.35, "demCandidate": "Johnny L. DuPree", "repCandidate": "Mike Ezell", "demVotes": 42876, "repVotes": 127813, "totalVotes": 174258, "margin": 48.75 },
-      { "year": 2020, "demPct": 0, "repPct": 100, "repCandidate": "Steven M. Palazzo", "repVotes": 255971, "totalVotes": 255971, "margin": 100, "repIncumbent": true },
-      { "year": 2018, "demPct": 30.75, "repPct": 68.22, "demCandidate": "Jeramey Anderson", "repCandidate": "Steven M. Palazzo", "demVotes": 68787, "repVotes": 152633, "totalVotes": 223732, "margin": 37.47, "repIncumbent": true },
-      { "year": 2016, "demPct": 27.8, "repPct": 65.04, "demCandidate": "Mark Gladney", "repCandidate": "Steven M. Palazzo", "demVotes": 77505, "repVotes": 181323, "totalVotes": 278779, "margin": 37.24, "repIncumbent": true }
+      { "year": 2022, "demPct": 24.6, "repPct": 73.35, "demCandidate": "Johnny DuPree", "repCandidate": "Mike Ezell", "demVotes": 42876, "repVotes": 127813, "totalVotes": 174258, "margin": 48.75 },
+      { "year": 2020, "demPct": 0, "repPct": 100, "repCandidate": "Steven Palazzo", "repVotes": 255971, "totalVotes": 255971, "margin": 100, "repIncumbent": true },
+      { "year": 2018, "demPct": 30.75, "repPct": 68.22, "demCandidate": "Jeramey Anderson", "repCandidate": "Steven Palazzo", "demVotes": 68787, "repVotes": 152633, "totalVotes": 223732, "margin": 37.47, "repIncumbent": true },
+      { "year": 2016, "demPct": 27.8, "repPct": 65.04, "demCandidate": "Mark Gladney", "repCandidate": "Steven Palazzo", "demVotes": 77505, "repVotes": 181323, "totalVotes": 278779, "margin": 37.24, "repIncumbent": true }
     ]
   },
   {
@@ -10738,7 +10738,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 72.86, "repPct": 24.33, "demCandidate": "Cori Bush", "repCandidate": "Andrew Jones", "demVotes": 160999, "repVotes": 53767, "totalVotes": 220958, "margin": -48.53, "demIncumbent": true },
       { "year": 2020, "demPct": 78.78, "repPct": 18.96, "demCandidate": "Cori Bush", "repCandidate": "Anthony Rogers", "demVotes": 249087, "repVotes": 59940, "totalVotes": 316171, "margin": -59.82 },
       { "year": 2018, "demPct": 80.1, "repPct": 16.72, "demCandidate": "Wm. Lacy Clay", "repCandidate": "Robert Vroman", "demVotes": 219781, "repVotes": 45867, "totalVotes": 274375, "margin": -63.38, "demIncumbent": true },
-      { "year": 2016, "demPct": 75.47, "repPct": 19.97, "demCandidate": "Wm. Lacy Clay", "repCandidate": "Steven G. Bailey", "demVotes": 236993, "repVotes": 62714, "totalVotes": 314024, "margin": -55.5, "demIncumbent": true }
+      { "year": 2016, "demPct": 75.47, "repPct": 19.97, "demCandidate": "Wm. Lacy Clay", "repCandidate": "Steven Bailey", "demVotes": 236993, "repVotes": 62714, "totalVotes": 314024, "margin": -55.5, "demIncumbent": true }
     ]
   },
   {
@@ -10795,12 +10795,12 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.7,
     "candidates": {
       "dem": { "name": "Bethany Mann", "party": "D", "incumbent": false },
-      "rep": { "name": "Robert Onder", "party": "R", "incumbent": false }
+      "rep": { "name": "Bob Onder", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Robert F. Onder, Jr.",
+    "seatHolder": "Bob Onder",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 35.3, "repPct": 61.31, "demCandidate": "Bethany E. Mann", "repCandidate": "Bob Onder", "demVotes": 138532, "repVotes": 240620, "totalVotes": 392463, "margin": 26.01 },
+      { "year": 2024, "demPct": 35.3, "repPct": 61.31, "demCandidate": "Bethany Mann", "repCandidate": "Bob Onder", "demVotes": 138532, "repVotes": 240620, "totalVotes": 392463, "margin": 26.01 },
       { "year": 2022, "demPct": 34.89, "repPct": 65.11, "demCandidate": "Bethany Mann", "repCandidate": "Blaine Luetkemeyer", "demVotes": 96851, "repVotes": 180746, "totalVotes": 277597, "margin": 30.22, "repIncumbent": true },
       { "year": 2020, "demPct": 28.5, "repPct": 69.44, "demCandidate": "Megan Rezabek", "repCandidate": "Blaine Luetkemeyer", "demVotes": 116095, "repVotes": 282866, "totalVotes": 407348, "margin": 40.94, "repIncumbent": true },
       { "year": 2018, "demPct": 32.84, "repPct": 65.08, "demCandidate": "Katy Geppert", "repCandidate": "Blaine Luetkemeyer", "demVotes": 106589, "repVotes": 211243, "totalVotes": 324608, "margin": 32.24, "repIncumbent": true },
@@ -10864,7 +10864,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Emanuel Cleaver",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 60.22, "repPct": 36.44, "demCandidate": "Emanuel Cleaver", "repCandidate": "Sean E. Smith", "demVotes": 199900, "repVotes": 120957, "totalVotes": 331929, "margin": -23.78, "demIncumbent": true },
+      { "year": 2024, "demPct": 60.22, "repPct": 36.44, "demCandidate": "Emanuel Cleaver", "repCandidate": "Sean Smith", "demVotes": 199900, "repVotes": 120957, "totalVotes": 331929, "margin": -23.78, "demIncumbent": true },
       { "year": 2022, "demPct": 61.02, "repPct": 36.44, "demCandidate": "Emanuel Cleaver", "repCandidate": "Jacob Turk", "demVotes": 140688, "repVotes": 84008, "totalVotes": 230555, "margin": -24.58, "demIncumbent": true },
       { "year": 2020, "demPct": 58.79, "repPct": 38.57, "demCandidate": "Emanuel Cleaver", "repCandidate": "Ryan Derks", "demVotes": 207180, "repVotes": 135934, "totalVotes": 352430, "margin": -20.22, "demIncumbent": true },
       { "year": 2018, "demPct": 61.67, "repPct": 35.61, "demCandidate": "Emanuel Cleaver", "repCandidate": "Jacob Turk", "demVotes": 175019, "repVotes": 101069, "totalVotes": 283785, "margin": -26.06, "demIncumbent": true },
@@ -10899,9 +10899,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 26.92, "repPct": 70.69, "demCandidate": "Pam May", "repCandidate": "Sam Graves", "demVotes": 100999, "repVotes": 265210, "totalVotes": 375186, "margin": 43.77, "repIncumbent": true },
       { "year": 2022, "demPct": 27.48, "repPct": 70.32, "demCandidate": "Henry Martin", "repCandidate": "Sam Graves", "demVotes": 72253, "repVotes": 184865, "totalVotes": 262892, "margin": 42.84, "repIncumbent": true },
-      { "year": 2020, "demPct": 30.83, "repPct": 67.06, "demCandidate": "Gena L. Ross", "repCandidate": "Sam Graves", "demVotes": 118926, "repVotes": 258709, "totalVotes": 385779, "margin": 36.23, "repIncumbent": true },
+      { "year": 2020, "demPct": 30.83, "repPct": 67.06, "demCandidate": "Gena Ross", "repCandidate": "Sam Graves", "demVotes": 118926, "repVotes": 258709, "totalVotes": 385779, "margin": 36.23, "repIncumbent": true },
       { "year": 2018, "demPct": 31.98, "repPct": 65.42, "demCandidate": "Henry Robert Martin", "repCandidate": "Sam Graves", "demVotes": 97660, "repVotes": 199796, "totalVotes": 305409, "margin": 33.44, "repIncumbent": true },
-      { "year": 2016, "demPct": 28.45, "repPct": 68.02, "demCandidate": "David M. Blackwell", "repCandidate": "Sam Graves", "demVotes": 99692, "repVotes": 238388, "totalVotes": 350444, "margin": 39.57, "repIncumbent": true }
+      { "year": 2016, "demPct": 28.45, "repPct": 68.02, "demCandidate": "David Blackwell", "repCandidate": "Sam Graves", "demVotes": 99692, "repVotes": 238388, "totalVotes": 350444, "margin": 39.57, "repIncumbent": true }
     ]
   },
   {
@@ -10934,7 +10934,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 26.79, "repPct": 70.88, "demCandidate": "Kristen Radaker-Sheafer", "repCandidate": "Eric Burlison", "demVotes": 67485, "repVotes": 178592, "totalVotes": 251947, "margin": 44.09 },
       { "year": 2020, "demPct": 26.57, "repPct": 68.87, "demCandidate": "Teresa Montseny", "repCandidate": "Billy Long", "demVotes": 98111, "repVotes": 254318, "totalVotes": 369283, "margin": 42.3, "repIncumbent": true },
       { "year": 2018, "demPct": 30.09, "repPct": 66.23, "demCandidate": "Jamie Daniel Schoolcraft", "repCandidate": "Billy Long", "demVotes": 89190, "repVotes": 196343, "totalVotes": 296455, "margin": 36.14, "repIncumbent": true },
-      { "year": 2016, "demPct": 27.39, "repPct": 67.54, "demCandidate": "Genevieve “Gen” Williams", "repCandidate": "Billy Long", "demVotes": 92756, "repVotes": 228692, "totalVotes": 338607, "margin": 40.15, "repIncumbent": true }
+      { "year": 2016, "demPct": 27.39, "repPct": 67.54, "demCandidate": "Gen Williams", "repCandidate": "Billy Long", "demVotes": 92756, "repVotes": 228692, "totalVotes": 338607, "margin": 40.15, "repIncumbent": true }
     ]
   },
   {
@@ -10994,11 +10994,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Ryan Zinke",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 44.62, "repPct": 52.29, "demCandidate": "Monica Tranel", "repCandidate": "Ryan K. Zinke", "demVotes": 143783, "repVotes": 168529, "totalVotes": 322266, "margin": 7.67, "repIncumbent": true },
-      { "year": 2022, "demPct": 46.49, "repPct": 49.65, "demCandidate": "Monica Tranel", "repCandidate": "Ryan K. Zinke", "demVotes": 115265, "repVotes": 123102, "totalVotes": 247960, "margin": 3.16 },
+      { "year": 2024, "demPct": 44.62, "repPct": 52.29, "demCandidate": "Monica Tranel", "repCandidate": "Ryan Zinke", "demVotes": 143783, "repVotes": 168529, "totalVotes": 322266, "margin": 7.67, "repIncumbent": true },
+      { "year": 2022, "demPct": 46.49, "repPct": 49.65, "demCandidate": "Monica Tranel", "repCandidate": "Ryan Zinke", "demVotes": 115265, "repVotes": 123102, "totalVotes": 247960, "margin": 3.16 },
       { "year": 2020, "demPct": 43.61, "repPct": 56.39, "demCandidate": "Kathleen Williams", "repCandidate": "Matt Rosendale", "demVotes": 262340, "repVotes": 339169, "totalVotes": 601509, "margin": 12.78 },
       { "year": 2018, "demPct": 46.25, "repPct": 50.88, "demCandidate": "Kathleen Williams", "repCandidate": "Greg Gianforte", "demVotes": 233284, "repVotes": 256661, "totalVotes": 504421, "margin": 4.63, "repIncumbent": true },
-      { "year": 2016, "demPct": 40.55, "repPct": 56.19, "demCandidate": "Denise Juneau", "repCandidate": "Ryan K. Zinke", "demVotes": 205919, "repVotes": 285358, "totalVotes": 507831, "margin": 15.64, "repIncumbent": true }
+      { "year": 2016, "demPct": 40.55, "repPct": 56.19, "demCandidate": "Denise Juneau", "repCandidate": "Ryan Zinke", "demVotes": 205919, "repVotes": 285358, "totalVotes": 507831, "margin": 15.64, "repIncumbent": true }
     ]
   },
   {
@@ -11027,8 +11027,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Troy Downing",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 34.01, "repPct": 65.99, "demCandidate": "John B. Driscoll", "repCandidate": "Troy Downing", "demVotes": 93713, "repVotes": 181832, "totalVotes": 275545, "margin": 31.98 },
-      { "year": 2022, "demPct": 20.16, "repPct": 56.56, "demCandidate": "Penny Ronning", "repCandidate": "Matthew M. Rosendale, Sr.", "demVotes": 43480, "repVotes": 121979, "totalVotes": 215672, "margin": 36.4 }
+      { "year": 2024, "demPct": 34.01, "repPct": 65.99, "demCandidate": "John Driscoll", "repCandidate": "Troy Downing", "demVotes": 93713, "repVotes": 181832, "totalVotes": 275545, "margin": 31.98 },
+      { "year": 2022, "demPct": 20.16, "repPct": 56.56, "demCandidate": "Penny Ronning", "repCandidate": "Matthew Rosendale", "demVotes": 43480, "repVotes": 121979, "totalVotes": 215672, "margin": 36.4 }
     ]
   },
   {
@@ -11061,7 +11061,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 42.09, "repPct": 57.91, "demCandidate": "Patty Pansing Brooks", "repCandidate": "Mike Flood", "demVotes": 93929, "repVotes": 129236, "totalVotes": 223165, "margin": 15.82, "repIncumbent": true },
       { "year": 2020, "demPct": 37.67, "repPct": 59.52, "demCandidate": "Kate Bolz", "repCandidate": "Jeff Fortenberry", "demVotes": 119622, "repVotes": 189006, "totalVotes": 317566, "margin": 21.85, "repIncumbent": true },
       { "year": 2018, "demPct": 39.64, "repPct": 60.36, "demCandidate": "Jessica McClure", "repCandidate": "Jeff Fortenberry", "demVotes": 93069, "repVotes": 141712, "totalVotes": 234781, "margin": 20.72, "repIncumbent": true },
-      { "year": 2016, "demPct": 30.55, "repPct": 69.45, "demCandidate": "Daniel M. Wik", "repCandidate": "Jeff Fortenberry", "demVotes": 83467, "repVotes": 189771, "totalVotes": 273238, "margin": 38.9, "repIncumbent": true }
+      { "year": 2016, "demPct": 30.55, "repPct": 69.45, "demCandidate": "Daniel Wik", "repCandidate": "Jeff Fortenberry", "demVotes": 83467, "repVotes": 189771, "totalVotes": 273238, "margin": 38.9, "repIncumbent": true }
     ]
   },
   {
@@ -11122,8 +11122,8 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 19.58, "repPct": 80.42, "demCandidate": "Daniel Ebers", "repCandidate": "Adrian Smith", "demVotes": 59287, "repVotes": 243481, "totalVotes": 302768, "margin": 60.84, "repIncumbent": true },
-      { "year": 2022, "demPct": 15.79, "repPct": 78.3, "demCandidate": "David J. Else", "repCandidate": "Adrian Smith", "demVotes": 34836, "repVotes": 172700, "totalVotes": 220552, "margin": 62.51, "repIncumbent": true },
-      { "year": 2020, "demPct": 17.68, "repPct": 78.51, "demCandidate": "Mark Elworth, Jr.", "repCandidate": "Adrian Smith", "demVotes": 50690, "repVotes": 225157, "totalVotes": 286770, "margin": 60.83, "repIncumbent": true },
+      { "year": 2022, "demPct": 15.79, "repPct": 78.3, "demCandidate": "David Else", "repCandidate": "Adrian Smith", "demVotes": 34836, "repVotes": 172700, "totalVotes": 220552, "margin": 62.51, "repIncumbent": true },
+      { "year": 2020, "demPct": 17.68, "repPct": 78.51, "demCandidate": "Mark Elworth", "repCandidate": "Adrian Smith", "demVotes": 50690, "repVotes": 225157, "totalVotes": 286770, "margin": 60.83, "repIncumbent": true },
       { "year": 2018, "demPct": 23.28, "repPct": 76.72, "demCandidate": "Paul Theobald", "repCandidate": "Adrian Smith", "demVotes": 49654, "repVotes": 163650, "totalVotes": 213304, "margin": 53.44, "repIncumbent": true },
       { "year": 2016, "demPct": 0, "repPct": 100, "repCandidate": "Adrian Smith", "repVotes": 226720, "totalVotes": 226720, "margin": 100, "repIncumbent": true }
     ]
@@ -11182,14 +11182,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Matthew Fonken", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Amodei", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Mark E. Amodei",
+    "seatHolder": "Mark Amodei",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 36.05, "repPct": 55.04, "demCandidate": "Greg Kidd (NPP)", "repCandidate": "Mark E. Amodei", "demVotes": 144064, "repVotes": 219919, "totalVotes": 399584, "margin": 18.99, "repIncumbent": true },
-      { "year": 2022, "demPct": 37.8, "repPct": 59.73, "demCandidate": "Elizabeth Mercedes Krause", "repCandidate": "Mark E. Amodei", "demVotes": 117371, "repVotes": 185467, "totalVotes": 310498, "margin": 21.93, "repIncumbent": true },
-      { "year": 2020, "demPct": 40.71, "repPct": 56.47, "demCandidate": "Patricia Ackerman", "repCandidate": "Mark E. Amodei", "demVotes": 155780, "repVotes": 216078, "totalVotes": 382673, "margin": 15.76, "repIncumbent": true },
-      { "year": 2018, "demPct": 41.77, "repPct": 58.23, "demCandidate": "Clint Koble", "repCandidate": "Mark E. Amodei", "demVotes": 120102, "repVotes": 167435, "totalVotes": 287537, "margin": 16.46, "repIncumbent": true },
-      { "year": 2016, "demPct": 36.93, "repPct": 58.3, "demCandidate": "H. D. “Chip” Evans", "repCandidate": "Mark E. Amodei", "demVotes": 115722, "repVotes": 182676, "totalVotes": 313336, "margin": 21.37, "repIncumbent": true }
+      { "year": 2024, "demPct": 36.05, "repPct": 55.04, "demCandidate": "Greg Kidd (NPP)", "repCandidate": "Mark Amodei", "demVotes": 144064, "repVotes": 219919, "totalVotes": 399584, "margin": 18.99, "repIncumbent": true },
+      { "year": 2022, "demPct": 37.8, "repPct": 59.73, "demCandidate": "Elizabeth Mercedes Krause", "repCandidate": "Mark Amodei", "demVotes": 117371, "repVotes": 185467, "totalVotes": 310498, "margin": 21.93, "repIncumbent": true },
+      { "year": 2020, "demPct": 40.71, "repPct": 56.47, "demCandidate": "Patricia Ackerman", "repCandidate": "Mark Amodei", "demVotes": 155780, "repVotes": 216078, "totalVotes": 382673, "margin": 15.76, "repIncumbent": true },
+      { "year": 2018, "demPct": 41.77, "repPct": 58.23, "demCandidate": "Clint Koble", "repCandidate": "Mark Amodei", "demVotes": 120102, "repVotes": 167435, "totalVotes": 287537, "margin": 16.46, "repIncumbent": true },
+      { "year": 2016, "demPct": 36.93, "repPct": 58.3, "demCandidate": "Chip Evans", "repCandidate": "Mark Amodei", "demVotes": 115722, "repVotes": 182676, "totalVotes": 313336, "margin": 21.37, "repIncumbent": true }
     ]
   },
   {
@@ -11218,7 +11218,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 51.37, "repPct": 48.63, "demCandidate": "Susie Lee", "repCandidate": "Drew Johnson", "demVotes": 191304, "repVotes": 181084, "totalVotes": 372388, "margin": -2.74, "demIncumbent": true },
       { "year": 2022, "demPct": 51.98, "repPct": 48.02, "demCandidate": "Susie Lee", "repCandidate": "April Becker", "demVotes": 131086, "repVotes": 121083, "totalVotes": 252169, "margin": -3.96, "demIncumbent": true },
-      { "year": 2020, "demPct": 48.75, "repPct": 45.77, "demCandidate": "Susie Lee", "repCandidate": "Dan “Big Dan” Rodimer", "demVotes": 203421, "repVotes": 190975, "totalVotes": 417252, "margin": -2.98, "demIncumbent": true },
+      { "year": 2020, "demPct": 48.75, "repPct": 45.77, "demCandidate": "Susie Lee", "repCandidate": "Big Dan Rodimer", "demVotes": 203421, "repVotes": 190975, "totalVotes": 417252, "margin": -2.98, "demIncumbent": true },
       { "year": 2018, "demPct": 51.89, "repPct": 42.83, "demCandidate": "Susie Lee", "repCandidate": "Danny Tarkanian", "demVotes": 148501, "repVotes": 122566, "totalVotes": 286168, "margin": -9.06 },
       { "year": 2016, "demPct": 47.23, "repPct": 45.96, "demCandidate": "Jacky Rosen", "repCandidate": "Danny Tarkanian", "demVotes": 146869, "repVotes": 142926, "totalVotes": 310963, "margin": -1.27 }
     ]
@@ -11250,7 +11250,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 52.66, "repPct": 44.57, "demCandidate": "Steven Horsford", "repCandidate": "John Lee", "demVotes": 174926, "repVotes": 148061, "totalVotes": 332206, "margin": -8.09, "demIncumbent": true },
       { "year": 2022, "demPct": 52.42, "repPct": 47.58, "demCandidate": "Steven Horsford", "repCandidate": "Sam Peters", "demVotes": 116617, "repVotes": 105870, "totalVotes": 222487, "margin": -4.84, "demIncumbent": true },
       { "year": 2020, "demPct": 50.67, "repPct": 45.8, "demCandidate": "Steven Horsford", "repCandidate": "Jim Marchant", "demVotes": 168457, "repVotes": 152284, "totalVotes": 332469, "margin": -4.87, "demIncumbent": true },
-      { "year": 2018, "demPct": 51.93, "repPct": 43.75, "demCandidate": "Steven A. Horsford", "repCandidate": "Cresent Hardy", "demVotes": 121962, "repVotes": 102748, "totalVotes": 234868, "margin": -8.18 },
+      { "year": 2018, "demPct": 51.93, "repPct": 43.75, "demCandidate": "Steven Horsford", "repCandidate": "Cresent Hardy", "demVotes": 121962, "repVotes": 102748, "totalVotes": 234868, "margin": -8.18 },
       { "year": 2016, "demPct": 48.52, "repPct": 44.51, "demCandidate": "Ruben Kihuen", "repCandidate": "Cresent Hardy", "demVotes": 128985, "repVotes": 118328, "totalVotes": 265846, "margin": -4.01, "repIncumbent": true }
     ]
   },
@@ -11282,7 +11282,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 54.06, "repPct": 45.94, "demCandidate": "Chris Pappas", "repCandidate": "Karoline Leavitt", "demVotes": 167391, "repVotes": 142229, "totalVotes": 309620, "margin": -8.12, "demIncumbent": true },
       { "year": 2020, "demPct": 51.34, "repPct": 46.23, "demCandidate": "Chris Pappas", "repCandidate": "Matt Mowers", "demVotes": 205606, "repVotes": 185159, "totalVotes": 400512, "margin": -5.11, "demIncumbent": true },
       { "year": 2018, "demPct": 53.58, "repPct": 45.03, "demCandidate": "Chris Pappas", "repCandidate": "Eddie Edwards", "demVotes": 155884, "repVotes": 130996, "totalVotes": 290928, "margin": -8.55 },
-      { "year": 2016, "demPct": 44.31, "repPct": 42.97, "demCandidate": "Carol Shea-Porter", "repCandidate": "Frank C. Guinta", "demVotes": 162080, "repVotes": 157176, "totalVotes": 365790, "margin": -1.34, "repIncumbent": true }
+      { "year": 2016, "demPct": 44.31, "repPct": 42.97, "demCandidate": "Carol Shea-Porter", "repCandidate": "Frank Guinta", "demVotes": 162080, "repVotes": 157176, "totalVotes": 365790, "margin": -1.34, "repIncumbent": true }
     ]
   },
   {
@@ -11312,10 +11312,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 52.93, "repPct": 46.97, "demCandidate": "Maggie Goodlander", "repCandidate": "Lily Tang Williams", "demVotes": 211641, "repVotes": 187810, "totalVotes": 399818, "margin": -5.96 },
-      { "year": 2022, "demPct": 55.87, "repPct": 44.13, "demCandidate": "Ann M. Kuster", "repCandidate": "Robert Burns", "demVotes": 171636, "repVotes": 135579, "totalVotes": 307215, "margin": -11.74, "demIncumbent": true },
-      { "year": 2020, "demPct": 53.92, "repPct": 43.72, "demCandidate": "Ann M. Kuster", "repCandidate": "Steven Negron", "demVotes": 208289, "repVotes": 168886, "totalVotes": 386294, "margin": -10.2, "demIncumbent": true },
-      { "year": 2018, "demPct": 55.57, "repPct": 42.21, "demCandidate": "Ann M. Kuster", "repCandidate": "Steven Negron", "demVotes": 155358, "repVotes": 117990, "totalVotes": 279554, "margin": -13.36, "demIncumbent": true },
-      { "year": 2016, "demPct": 49.78, "repPct": 45.34, "demCandidate": "Ann M. Kuster", "repCandidate": "Jim Lawrence", "demVotes": 174371, "repVotes": 158825, "totalVotes": 350272, "margin": -4.44, "demIncumbent": true }
+      { "year": 2022, "demPct": 55.87, "repPct": 44.13, "demCandidate": "Ann Kuster", "repCandidate": "Robert Burns", "demVotes": 171636, "repVotes": 135579, "totalVotes": 307215, "margin": -11.74, "demIncumbent": true },
+      { "year": 2020, "demPct": 53.92, "repPct": 43.72, "demCandidate": "Ann Kuster", "repCandidate": "Steven Negron", "demVotes": 208289, "repVotes": 168886, "totalVotes": 386294, "margin": -10.2, "demIncumbent": true },
+      { "year": 2018, "demPct": 55.57, "repPct": 42.21, "demCandidate": "Ann Kuster", "repCandidate": "Steven Negron", "demVotes": 155358, "repVotes": 117990, "totalVotes": 279554, "margin": -13.36, "demIncumbent": true },
+      { "year": 2016, "demPct": 49.78, "repPct": 45.34, "demCandidate": "Ann Kuster", "repCandidate": "Jim Lawrence", "demVotes": 174371, "repVotes": 158825, "totalVotes": 350272, "margin": -4.44, "demIncumbent": true }
     ]
   },
   {
@@ -11344,10 +11344,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Donald Norcross",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 57.83, "repPct": 39.99, "demCandidate": "Donald Norcross", "repCandidate": "Theodore “Teddy” Liddell", "demVotes": 208808, "repVotes": 144390, "totalVotes": 361060, "margin": -17.84, "demIncumbent": true },
+      { "year": 2024, "demPct": 57.83, "repPct": 39.99, "demCandidate": "Donald Norcross", "repCandidate": "Teddy Liddell", "demVotes": 208808, "repVotes": 144390, "totalVotes": 361060, "margin": -17.84, "demIncumbent": true },
       { "year": 2022, "demPct": 62.34, "repPct": 35.19, "demCandidate": "Donald Norcross", "repCandidate": "Claire Gustafson", "demVotes": 139559, "repVotes": 78794, "totalVotes": 223884, "margin": -27.15, "demIncumbent": true },
-      { "year": 2020, "demPct": 62.48, "repPct": 37.52, "demCandidate": "Donald Norcross", "repCandidate": "Claire H. Gustafson", "demVotes": 240567, "repVotes": 144463, "totalVotes": 385030, "margin": -24.96, "demIncumbent": true },
-      { "year": 2018, "demPct": 64.39, "repPct": 33.26, "demCandidate": "Donald Norcross", "repCandidate": "Paul E. Dilks", "demVotes": 169628, "repVotes": 87617, "totalVotes": 263418, "margin": -31.13, "demIncumbent": true },
+      { "year": 2020, "demPct": 62.48, "repPct": 37.52, "demCandidate": "Donald Norcross", "repCandidate": "Claire Gustafson", "demVotes": 240567, "repVotes": 144463, "totalVotes": 385030, "margin": -24.96, "demIncumbent": true },
+      { "year": 2018, "demPct": 64.39, "repPct": 33.26, "demCandidate": "Donald Norcross", "repCandidate": "Paul Dilks", "demVotes": 169628, "repVotes": 87617, "totalVotes": 263418, "margin": -31.13, "demIncumbent": true },
       { "year": 2016, "demPct": 59.98, "repPct": 36.79, "demCandidate": "Donald Norcross", "repCandidate": "Bob Patterson", "demVotes": 183231, "repVotes": 112388, "totalVotes": 305473, "margin": -23.19, "demIncumbent": true }
     ]
   },
@@ -11377,11 +11377,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jeff Van Drew",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 41.2, "repPct": 58.11, "demCandidate": "Joseph F. Salerno", "repCandidate": "Jefferson Van Drew", "demVotes": 153117, "repVotes": 215946, "totalVotes": 371620, "margin": 16.91, "repIncumbent": true },
+      { "year": 2024, "demPct": 41.2, "repPct": 58.11, "demCandidate": "Joseph Salerno", "repCandidate": "Jefferson Van Drew", "demVotes": 153117, "repVotes": 215946, "totalVotes": 371620, "margin": 16.91, "repIncumbent": true },
       { "year": 2022, "demPct": 39.97, "repPct": 58.87, "demCandidate": "Tim Alexander", "repCandidate": "Jefferson Van Drew", "demVotes": 94522, "repVotes": 139217, "totalVotes": 236484, "margin": 18.9, "repIncumbent": true },
       { "year": 2020, "demPct": 46.17, "repPct": 51.93, "demCandidate": "Amy Kennedy", "repCandidate": "Jefferson Van Drew", "demVotes": 173849, "repVotes": 195526, "totalVotes": 376547, "margin": 5.76, "repIncumbent": true },
       { "year": 2018, "demPct": 52.9, "repPct": 45.23, "demCandidate": "Jeff Van Drew", "repCandidate": "Seth Grossman", "demVotes": 136685, "repVotes": 116866, "totalVotes": 258363, "margin": -7.67 },
-      { "year": 2016, "demPct": 37.42, "repPct": 59.53, "demCandidate": "David H. Cole", "repCandidate": "Frank A. LoBiondo", "demVotes": 110838, "repVotes": 176338, "totalVotes": 296221, "margin": 22.11, "repIncumbent": true }
+      { "year": 2016, "demPct": 37.42, "repPct": 59.53, "demCandidate": "David Cole", "repCandidate": "Frank LoBiondo", "demVotes": 110838, "repVotes": 176338, "totalVotes": 296221, "margin": 22.11, "repIncumbent": true }
     ]
   },
   {
@@ -11407,7 +11407,7 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Herb Conaway", "party": "D", "incumbent": false },
       "rep": { "name": "Jason Cullen", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Herbert C. Conaway, Jr.",
+    "seatHolder": "Herbert Conaway",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 53.24, "repPct": 44.65, "demCandidate": "Herb Conaway", "repCandidate": "Rajesh Mohan", "demVotes": 202034, "repVotes": 169454, "totalVotes": 379484, "margin": -8.59 },
@@ -11443,11 +11443,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Christopher Smith",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 31.66, "repPct": 67.39, "demCandidate": "Matthew Jenkins", "repCandidate": "Christopher H. Smith", "demVotes": 124803, "repVotes": 265652, "totalVotes": 394228, "margin": 35.73, "repIncumbent": true },
-      { "year": 2022, "demPct": 31.37, "repPct": 66.92, "demCandidate": "Matthew Jenkins", "repCandidate": "Christopher H. Smith", "demVotes": 81233, "repVotes": 173288, "totalVotes": 258962, "margin": 35.55, "repIncumbent": true },
-      { "year": 2020, "demPct": 38.27, "repPct": 59.88, "demCandidate": "Stephanie Schmid", "repCandidate": "Christopher H. Smith", "demVotes": 162420, "repVotes": 254103, "totalVotes": 424368, "margin": 21.61, "repIncumbent": true },
-      { "year": 2018, "demPct": 43.07, "repPct": 55.4, "demCandidate": "Joshua Welle", "repCandidate": "Christopher H. Smith", "demVotes": 126766, "repVotes": 163065, "totalVotes": 294348, "margin": 12.33, "repIncumbent": true },
-      { "year": 2016, "demPct": 33.52, "repPct": 63.72, "demCandidate": "Lorna Phillipson", "repCandidate": "Christopher H. Smith", "demVotes": 111532, "repVotes": 211992, "totalVotes": 332684, "margin": 30.2, "repIncumbent": true }
+      { "year": 2024, "demPct": 31.66, "repPct": 67.39, "demCandidate": "Matthew Jenkins", "repCandidate": "Christopher Smith", "demVotes": 124803, "repVotes": 265652, "totalVotes": 394228, "margin": 35.73, "repIncumbent": true },
+      { "year": 2022, "demPct": 31.37, "repPct": 66.92, "demCandidate": "Matthew Jenkins", "repCandidate": "Christopher Smith", "demVotes": 81233, "repVotes": 173288, "totalVotes": 258962, "margin": 35.55, "repIncumbent": true },
+      { "year": 2020, "demPct": 38.27, "repPct": 59.88, "demCandidate": "Stephanie Schmid", "repCandidate": "Christopher Smith", "demVotes": 162420, "repVotes": 254103, "totalVotes": 424368, "margin": 21.61, "repIncumbent": true },
+      { "year": 2018, "demPct": 43.07, "repPct": 55.4, "demCandidate": "Joshua Welle", "repCandidate": "Christopher Smith", "demVotes": 126766, "repVotes": 163065, "totalVotes": 294348, "margin": 12.33, "repIncumbent": true },
+      { "year": 2016, "demPct": 33.52, "repPct": 63.72, "demCandidate": "Lorna Phillipson", "repCandidate": "Christopher Smith", "demVotes": 111532, "repVotes": 211992, "totalVotes": 332684, "margin": 30.2, "repIncumbent": true }
     ]
   },
   {
@@ -11475,10 +11475,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 54.56, "repPct": 43.28, "demCandidate": "Josh Gottheimer", "repCandidate": "Mary Jo Guinchard", "demVotes": 208359, "repVotes": 165287, "totalVotes": 381889, "margin": -11.28, "demIncumbent": true },
-      { "year": 2022, "demPct": 54.73, "repPct": 44.32, "demCandidate": "Josh Gottheimer", "repCandidate": "Frank T. Pallotta", "demVotes": 145559, "repVotes": 117873, "totalVotes": 265943, "margin": -10.41, "demIncumbent": true },
-      { "year": 2020, "demPct": 53.15, "repPct": 45.64, "demCandidate": "Josh Gottheimer", "repCandidate": "Frank T. Pallotta", "demVotes": 225175, "repVotes": 193333, "totalVotes": 423636, "margin": -7.51, "demIncumbent": true },
-      { "year": 2018, "demPct": 56.17, "repPct": 42.49, "demCandidate": "Josh Gottheimer", "repCandidate": "John J. McCann, Jr.", "demVotes": 169546, "repVotes": 128255, "totalVotes": 301823, "margin": -13.68, "demIncumbent": true },
-      { "year": 2016, "demPct": 51.11, "repPct": 46.7, "demCandidate": "Joshua S. Gottheimer", "repCandidate": "Scott Garrett", "demVotes": 172587, "repVotes": 157690, "totalVotes": 337701, "margin": -4.41, "repIncumbent": true }
+      { "year": 2022, "demPct": 54.73, "repPct": 44.32, "demCandidate": "Josh Gottheimer", "repCandidate": "Frank Pallotta", "demVotes": 145559, "repVotes": 117873, "totalVotes": 265943, "margin": -10.41, "demIncumbent": true },
+      { "year": 2020, "demPct": 53.15, "repPct": 45.64, "demCandidate": "Josh Gottheimer", "repCandidate": "Frank Pallotta", "demVotes": 225175, "repVotes": 193333, "totalVotes": 423636, "margin": -7.51, "demIncumbent": true },
+      { "year": 2018, "demPct": 56.17, "repPct": 42.49, "demCandidate": "Josh Gottheimer", "repCandidate": "John McCann", "demVotes": 169546, "repVotes": 128255, "totalVotes": 301823, "margin": -13.68, "demIncumbent": true },
+      { "year": 2016, "demPct": 51.11, "repPct": 46.7, "demCandidate": "Joshua Gottheimer", "repCandidate": "Scott Garrett", "demVotes": 172587, "repVotes": 157690, "totalVotes": 337701, "margin": -4.41, "repIncumbent": true }
     ]
   },
   {
@@ -11504,14 +11504,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Frank Pallone", "party": "D", "incumbent": false },
       "rep": { "name": "Hillary Herzig", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Frank Pallone, Jr.",
+    "seatHolder": "Frank Pallone",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 56.07, "repPct": 40.34, "demCandidate": "Frank Pallone, Jr.", "repCandidate": "Scott Fegler", "demVotes": 170275, "repVotes": 122519, "totalVotes": 303681, "margin": -15.73, "demIncumbent": true },
-      { "year": 2022, "demPct": 57.45, "repPct": 41.01, "demCandidate": "Frank Pallone, Jr.", "repCandidate": "Susan M. Kiley", "demVotes": 106238, "repVotes": 75839, "totalVotes": 184919, "margin": -16.44, "demIncumbent": true },
-      { "year": 2020, "demPct": 61.17, "repPct": 38.83, "demCandidate": "Frank Pallone, Jr.", "repCandidate": "Christian Onuoha", "demVotes": 199648, "repVotes": 126760, "totalVotes": 326408, "margin": -22.34, "demIncumbent": true },
-      { "year": 2018, "demPct": 63.63, "repPct": 36.37, "demCandidate": "Frank Pallone, Jr.", "repCandidate": "Richard J. Pezzullo", "demVotes": 140752, "repVotes": 80443, "totalVotes": 221195, "margin": -27.26, "demIncumbent": true },
-      { "year": 2016, "demPct": 63.73, "repPct": 34.89, "demCandidate": "Frank Pallone, Jr.", "repCandidate": "Brent Sonnek-Schmelz", "demVotes": 167895, "repVotes": 91908, "totalVotes": 263435, "margin": -28.84, "demIncumbent": true }
+      { "year": 2024, "demPct": 56.07, "repPct": 40.34, "demCandidate": "Frank Pallone", "repCandidate": "Scott Fegler", "demVotes": 170275, "repVotes": 122519, "totalVotes": 303681, "margin": -15.73, "demIncumbent": true },
+      { "year": 2022, "demPct": 57.45, "repPct": 41.01, "demCandidate": "Frank Pallone", "repCandidate": "Susan Kiley", "demVotes": 106238, "repVotes": 75839, "totalVotes": 184919, "margin": -16.44, "demIncumbent": true },
+      { "year": 2020, "demPct": 61.17, "repPct": 38.83, "demCandidate": "Frank Pallone", "repCandidate": "Christian Onuoha", "demVotes": 199648, "repVotes": 126760, "totalVotes": 326408, "margin": -22.34, "demIncumbent": true },
+      { "year": 2018, "demPct": 63.63, "repPct": 36.37, "demCandidate": "Frank Pallone", "repCandidate": "Richard Pezzullo", "demVotes": 140752, "repVotes": 80443, "totalVotes": 221195, "margin": -27.26, "demIncumbent": true },
+      { "year": 2016, "demPct": 63.73, "repPct": 34.89, "demCandidate": "Frank Pallone", "repCandidate": "Brent Sonnek-Schmelz", "demVotes": 167895, "repVotes": 91908, "totalVotes": 263435, "margin": -28.84, "demIncumbent": true }
     ]
   },
   {
@@ -11535,12 +11535,12 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Rebecca Bennett", "party": "D", "incumbent": false },
       "rep": { "name": "Thomas Kean", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Thomas H. Kean, Jr.",
+    "seatHolder": "Thomas Kean",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 46.37, "repPct": 51.77, "demCandidate": "Sue Altman", "repCandidate": "Thomas H. Kean, Jr.", "demVotes": 200025, "repVotes": 223331, "totalVotes": 431398, "margin": 5.4, "repIncumbent": true },
-      { "year": 2022, "demPct": 48.6, "repPct": 51.4, "demCandidate": "Tom Malinowski", "repCandidate": "Thomas H. Kean, Jr.", "demVotes": 150701, "repVotes": 159392, "totalVotes": 310093, "margin": 2.8, "demIncumbent": true },
-      { "year": 2020, "demPct": 50.61, "repPct": 49.39, "demCandidate": "Tom Malinowski", "repCandidate": "Thomas H. Kean, Jr.", "demVotes": 219629, "repVotes": 214318, "totalVotes": 433947, "margin": -1.22, "demIncumbent": true },
+      { "year": 2024, "demPct": 46.37, "repPct": 51.77, "demCandidate": "Sue Altman", "repCandidate": "Thomas Kean", "demVotes": 200025, "repVotes": 223331, "totalVotes": 431398, "margin": 5.4, "repIncumbent": true },
+      { "year": 2022, "demPct": 48.6, "repPct": 51.4, "demCandidate": "Tom Malinowski", "repCandidate": "Thomas Kean", "demVotes": 150701, "repVotes": 159392, "totalVotes": 310093, "margin": 2.8, "demIncumbent": true },
+      { "year": 2020, "demPct": 50.61, "repPct": 49.39, "demCandidate": "Tom Malinowski", "repCandidate": "Thomas Kean", "demVotes": 219629, "repVotes": 214318, "totalVotes": 433947, "margin": -1.22, "demIncumbent": true },
       { "year": 2018, "demPct": 51.74, "repPct": 46.72, "demCandidate": "Tom Malinowski", "repCandidate": "Leonard Lance", "demVotes": 166985, "repVotes": 150785, "totalVotes": 322742, "margin": -5.02, "repIncumbent": true },
       { "year": 2016, "demPct": 43.12, "repPct": 54.08, "demCandidate": "Peter Jacob", "repCandidate": "Leonard Lance", "demVotes": 148188, "repVotes": 185850, "totalVotes": 343635, "margin": 10.96, "repIncumbent": true }
     ]
@@ -11572,9 +11572,9 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 59.17, "repPct": 34.64, "demCandidate": "Robert Menendez", "repCandidate": "Anthony Valdes", "demVotes": 116434, "repVotes": 68152, "totalVotes": 196765, "margin": -24.53, "demIncumbent": true },
-      { "year": 2022, "demPct": 73.62, "repPct": 23.44, "demCandidate": "Robert J. Menendez", "repCandidate": "Marcos Arroyo", "demVotes": 78382, "repVotes": 24957, "totalVotes": 106473, "margin": -50.18 },
+      { "year": 2022, "demPct": 73.62, "repPct": 23.44, "demCandidate": "Robert Menendez", "repCandidate": "Marcos Arroyo", "demVotes": 78382, "repVotes": 24957, "totalVotes": 106473, "margin": -50.18 },
       { "year": 2020, "demPct": 74.03, "repPct": 24.58, "demCandidate": "Albio Sires", "repCandidate": "Jason Todd Mushnick", "demVotes": 176758, "repVotes": 58686, "totalVotes": 238773, "margin": -49.45, "demIncumbent": true },
-      { "year": 2018, "demPct": 78.12, "repPct": 18.72, "demCandidate": "Albio Sires", "repCandidate": "John R. Muniz", "demVotes": 119881, "repVotes": 28725, "totalVotes": 153455, "margin": -59.4, "demIncumbent": true },
+      { "year": 2018, "demPct": 78.12, "repPct": 18.72, "demCandidate": "Albio Sires", "repCandidate": "John Muniz", "demVotes": 119881, "repVotes": 28725, "totalVotes": 153455, "margin": -59.4, "demIncumbent": true },
       { "year": 2016, "demPct": 77.04, "repPct": 18.49, "demCandidate": "Albio Sires", "repCandidate": "Agha Khan", "demVotes": 134733, "repVotes": 32337, "totalVotes": 174889, "margin": -58.55, "demIncumbent": true }
     ]
   },
@@ -11603,10 +11603,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 50.78, "repPct": 45.89, "demCandidate": "Nellie Pou", "repCandidate": "Billy Prempeh", "demVotes": 130514, "repVotes": 117939, "totalVotes": 257013, "margin": -4.89 },
-      { "year": 2022, "demPct": 54.98, "repPct": 43.58, "demCandidate": "Bill Pascrell, Jr.", "repCandidate": "Billy Prempeh", "demVotes": 82457, "repVotes": 65365, "totalVotes": 149984, "margin": -11.4, "demIncumbent": true },
-      { "year": 2020, "demPct": 65.8, "repPct": 31.86, "demCandidate": "Bill Pascrell, Jr.", "repCandidate": "Billy Prempeh", "demVotes": 203674, "repVotes": 98629, "totalVotes": 309542, "margin": -33.94, "demIncumbent": true },
-      { "year": 2018, "demPct": 70.27, "repPct": 28.87, "demCandidate": "Bill Pascrell, Jr.", "repCandidate": "Eric P. Fisher", "demVotes": 140832, "repVotes": 57854, "totalVotes": 200416, "margin": -41.4, "demIncumbent": true },
-      { "year": 2016, "demPct": 69.73, "repPct": 28.03, "demCandidate": "Bill Pascrell, Jr.", "repCandidate": "Hector L. Castillo", "demVotes": 162642, "repVotes": 65376, "totalVotes": 233242, "margin": -41.7, "demIncumbent": true }
+      { "year": 2022, "demPct": 54.98, "repPct": 43.58, "demCandidate": "Bill Pascrell", "repCandidate": "Billy Prempeh", "demVotes": 82457, "repVotes": 65365, "totalVotes": 149984, "margin": -11.4, "demIncumbent": true },
+      { "year": 2020, "demPct": 65.8, "repPct": 31.86, "demCandidate": "Bill Pascrell", "repCandidate": "Billy Prempeh", "demVotes": 203674, "repVotes": 98629, "totalVotes": 309542, "margin": -33.94, "demIncumbent": true },
+      { "year": 2018, "demPct": 70.27, "repPct": 28.87, "demCandidate": "Bill Pascrell", "repCandidate": "Eric Fisher", "demVotes": 140832, "repVotes": 57854, "totalVotes": 200416, "margin": -41.4, "demIncumbent": true },
+      { "year": 2016, "demPct": 69.73, "repPct": 28.03, "demCandidate": "Bill Pascrell", "repCandidate": "Hector Castillo", "demVotes": 162642, "repVotes": 65376, "totalVotes": 233242, "margin": -41.7, "demIncumbent": true }
     ]
   },
   {
@@ -11636,10 +11636,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 74.94, "repPct": 22.4, "demCandidate": "LaMonica McIver", "repCandidate": "Carmen Bucco", "demVotes": 182020, "repVotes": 54405, "totalVotes": 242891, "margin": -52.54, "demIncumbent": true },
-      { "year": 2022, "demPct": 77.64, "repPct": 20.04, "demCandidate": "Donald M. Payne, Jr.", "repCandidate": "David H. Pinckney", "demVotes": 100710, "repVotes": 25993, "totalVotes": 129707, "margin": -57.6, "demIncumbent": true },
-      { "year": 2020, "demPct": 83.28, "repPct": 13.9, "demCandidate": "Donald M. Payne, Jr.", "repCandidate": "Jennifer Zinone", "demVotes": 241522, "repVotes": 40298, "totalVotes": 290009, "margin": -69.38, "demIncumbent": true },
-      { "year": 2018, "demPct": 87.56, "repPct": 10.09, "demCandidate": "Donald M. Payne, Jr.", "repCandidate": "Agha Khan", "demVotes": 175253, "repVotes": 20191, "totalVotes": 200159, "margin": -77.47, "demIncumbent": true },
-      { "year": 2016, "demPct": 85.67, "repPct": 11.87, "demCandidate": "Donald M. Payne, Jr.", "repCandidate": "David H. Pinckney", "demVotes": 190856, "repVotes": 26450, "totalVotes": 222771, "margin": -73.8, "demIncumbent": true }
+      { "year": 2022, "demPct": 77.64, "repPct": 20.04, "demCandidate": "Donald Payne", "repCandidate": "David Pinckney", "demVotes": 100710, "repVotes": 25993, "totalVotes": 129707, "margin": -57.6, "demIncumbent": true },
+      { "year": 2020, "demPct": 83.28, "repPct": 13.9, "demCandidate": "Donald Payne", "repCandidate": "Jennifer Zinone", "demVotes": 241522, "repVotes": 40298, "totalVotes": 290009, "margin": -69.38, "demIncumbent": true },
+      { "year": 2018, "demPct": 87.56, "repPct": 10.09, "demCandidate": "Donald Payne", "repCandidate": "Agha Khan", "demVotes": 175253, "repVotes": 20191, "totalVotes": 200159, "margin": -77.47, "demIncumbent": true },
+      { "year": 2016, "demPct": 85.67, "repPct": 11.87, "demCandidate": "Donald Payne", "repCandidate": "David Pinckney", "demVotes": 190856, "repVotes": 26450, "totalVotes": 222771, "margin": -73.8, "demIncumbent": true }
     ]
   },
   {
@@ -11672,7 +11672,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 58.99, "repPct": 40.18, "demCandidate": "Mikie Sherrill", "repCandidate": "Paul DeGroot", "demVotes": 161436, "repVotes": 109952, "totalVotes": 273664, "margin": -18.81, "demIncumbent": true },
       { "year": 2020, "demPct": 53.3, "repPct": 46.7, "demCandidate": "Mikie Sherrill", "repCandidate": "Rosemary Becchi", "demVotes": 235163, "repVotes": 206013, "totalVotes": 441176, "margin": -6.6, "demIncumbent": true },
       { "year": 2018, "demPct": 56.77, "repPct": 42.13, "demCandidate": "Mikie Sherrill", "repCandidate": "Jay Webber", "demVotes": 183684, "repVotes": 136322, "totalVotes": 323574, "margin": -14.64 },
-      { "year": 2016, "demPct": 38.86, "repPct": 58, "demCandidate": "Joseph M. Wenzel", "repCandidate": "Rodney P. Frelinghuysen", "demVotes": 130162, "repVotes": 194299, "totalVotes": 334992, "margin": 19.14, "repIncumbent": true }
+      { "year": 2016, "demPct": 38.86, "repPct": 58, "demCandidate": "Joseph Wenzel", "repCandidate": "Rodney Frelinghuysen", "demVotes": 130162, "repVotes": 194299, "totalVotes": 334992, "margin": 19.14, "repIncumbent": true }
     ]
   },
   {
@@ -11705,7 +11705,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 63.12, "repPct": 35.91, "demCandidate": "Bonnie Watson Coleman", "repCandidate": "Darius Mayfield", "demVotes": 125127, "repVotes": 71175, "totalVotes": 198227, "margin": -27.21, "demIncumbent": true },
       { "year": 2020, "demPct": 65.64, "repPct": 32.58, "demCandidate": "Bonnie Watson Coleman", "repCandidate": "Mark Razzoli", "demVotes": 230883, "repVotes": 114591, "totalVotes": 351725, "margin": -33.06, "demIncumbent": true },
       { "year": 2018, "demPct": 68.68, "repPct": 31.32, "demCandidate": "Bonnie Watson Coleman", "repCandidate": "Daryl Kipnis", "demVotes": 173334, "repVotes": 79041, "totalVotes": 252375, "margin": -37.36, "demIncumbent": true },
-      { "year": 2016, "demPct": 62.86, "repPct": 32.02, "demCandidate": "Bonnie Watson Coleman", "repCandidate": "Steven J. Uccio", "demVotes": 181430, "repVotes": 92407, "totalVotes": 288634, "margin": -30.84, "demIncumbent": true }
+      { "year": 2016, "demPct": 62.86, "repPct": 32.02, "demCandidate": "Bonnie Watson Coleman", "repCandidate": "Steven Uccio", "demVotes": 181430, "repVotes": 92407, "totalVotes": 288634, "margin": -30.84, "demIncumbent": true }
     ]
   },
   {
@@ -11731,13 +11731,13 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Melanie Stansbury", "party": "D", "incumbent": true },
       "rep": { "name": "Steve Jones", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Melanie A. Stansbury",
+    "seatHolder": "Melanie Stansbury",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 56.37, "repPct": 43.63, "demCandidate": "Melanie A. Stansbury", "repCandidate": "Steve Jones", "demVotes": 193203, "repVotes": 149546, "totalVotes": 342749, "margin": -12.74, "demIncumbent": true },
-      { "year": 2022, "demPct": 55.75, "repPct": 44.23, "demCandidate": "Melanie A. Stansbury", "repCandidate": "Michelle Garcia Holmes", "demVotes": 156462, "repVotes": 124151, "totalVotes": 280671, "margin": -11.52, "demIncumbent": true },
-      { "year": 2020, "demPct": 58.19, "repPct": 41.81, "demCandidate": "Debra A. Haaland", "repCandidate": "Michelle Garcia Holmes", "demVotes": 186953, "repVotes": 134337, "totalVotes": 321290, "margin": -16.38, "demIncumbent": true },
-      { "year": 2018, "demPct": 59.13, "repPct": 36.32, "demCandidate": "Debra A. Haaland", "repCandidate": "Janice E. Arnold-Jones", "demVotes": 147336, "repVotes": 90507, "totalVotes": 249162, "margin": -22.81 },
+      { "year": 2024, "demPct": 56.37, "repPct": 43.63, "demCandidate": "Melanie Stansbury", "repCandidate": "Steve Jones", "demVotes": 193203, "repVotes": 149546, "totalVotes": 342749, "margin": -12.74, "demIncumbent": true },
+      { "year": 2022, "demPct": 55.75, "repPct": 44.23, "demCandidate": "Melanie Stansbury", "repCandidate": "Michelle Garcia Holmes", "demVotes": 156462, "repVotes": 124151, "totalVotes": 280671, "margin": -11.52, "demIncumbent": true },
+      { "year": 2020, "demPct": 58.19, "repPct": 41.81, "demCandidate": "Debra Haaland", "repCandidate": "Michelle Garcia Holmes", "demVotes": 186953, "repVotes": 134337, "totalVotes": 321290, "margin": -16.38, "demIncumbent": true },
+      { "year": 2018, "demPct": 59.13, "repPct": 36.32, "demCandidate": "Debra Haaland", "repCandidate": "Janice Arnold-Jones", "demVotes": 147336, "repVotes": 90507, "totalVotes": 249162, "margin": -22.81 },
       { "year": 2016, "demPct": 65.15, "repPct": 34.85, "demCandidate": "Michelle Lujan Grisham", "repCandidate": "Richard Gregory Priem", "demVotes": 181088, "repVotes": 96879, "totalVotes": 277967, "margin": -30.3, "demIncumbent": true }
     ]
   },
@@ -11759,7 +11759,7 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 86 }
     ],
     "candidates": {
-      "dem": { "name": "Gabriel Vasquez", "party": "D", "incumbent": true },
+      "dem": { "name": "Gabe Vasquez", "party": "D", "incumbent": true },
       "rep": { "name": "Jose Orozco", "party": "R", "incumbent": false }
     },
     "seatHolder": "Gabe Vasquez",
@@ -11798,11 +11798,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Teresa Leger Fernandez",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 56.29, "repPct": 43.71, "demCandidate": "Teresa Leger Fernandez", "repCandidate": "Sharon E. Clahchischilliage", "demVotes": 162342, "repVotes": 126085, "totalVotes": 288427, "margin": -12.58, "demIncumbent": true },
+      { "year": 2024, "demPct": 56.29, "repPct": 43.71, "demCandidate": "Teresa Leger Fernandez", "repCandidate": "Sharon Clahchischilliage", "demVotes": 162342, "repVotes": 126085, "totalVotes": 288427, "margin": -12.58, "demIncumbent": true },
       { "year": 2022, "demPct": 58.16, "repPct": 41.84, "demCandidate": "Teresa Leger Fernandez", "repCandidate": "Alexis Martinez Johnson", "demVotes": 134217, "repVotes": 96565, "totalVotes": 230782, "margin": -16.32, "demIncumbent": true },
-      { "year": 2020, "demPct": 58.68, "repPct": 41.32, "demCandidate": "Teresa Leger Fernandez", "repCandidate": "Alexis M. Johnson", "demVotes": 186282, "repVotes": 131166, "totalVotes": 317448, "margin": -17.36 },
+      { "year": 2020, "demPct": 58.68, "repPct": 41.32, "demCandidate": "Teresa Leger Fernandez", "repCandidate": "Alexis Johnson", "demVotes": 186282, "repVotes": 131166, "totalVotes": 317448, "margin": -17.36 },
       { "year": 2018, "demPct": 63.38, "repPct": 31.21, "demCandidate": "Ben Ray Luján", "repCandidate": "Jerald Steve McFall", "demVotes": 155201, "repVotes": 76427, "totalVotes": 244893, "margin": -32.17, "demIncumbent": true },
-      { "year": 2016, "demPct": 62.42, "repPct": 37.58, "demCandidate": "Ben Ray Luján", "repCandidate": "Michael H. Romero", "demVotes": 170612, "repVotes": 102730, "totalVotes": 273342, "margin": -24.84, "demIncumbent": true }
+      { "year": 2016, "demPct": 62.42, "repPct": 37.58, "demCandidate": "Ben Ray Luján", "repCandidate": "Michael Romero", "demVotes": 170612, "repVotes": 102730, "totalVotes": 273342, "margin": -24.84, "demIncumbent": true }
     ]
   },
   {
@@ -11831,11 +11831,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Nick LaLota",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 47.5, "repPct": 52.5, "demCandidate": "John P. Avlon", "repCandidate": "Nick LaLota", "demVotes": 181647, "repVotes": 200802, "totalVotes": 382449, "margin": 5, "repIncumbent": true },
-      { "year": 2022, "demPct": 46.74, "repPct": 53.26, "demCandidate": "Bridget Fleming", "repCandidate": "Nicholas J. LaLota", "demVotes": 135170, "repVotes": 154046, "totalVotes": 289216, "margin": 6.52 },
-      { "year": 2020, "demPct": 46, "repPct": 54, "demCandidate": "Nancy S. Goroff", "repCandidate": "Lee M. Zeldin", "demVotes": 149724, "repVotes": 175775, "totalVotes": 325499, "margin": 8, "repIncumbent": true },
-      { "year": 2018, "demPct": 49.93, "repPct": 48.87, "demCandidate": "Perry Gershon", "repCandidate": "Lee M. Zeldin", "demVotes": 124213, "repVotes": 121562, "totalVotes": 248763, "margin": -1.06, "repIncumbent": true },
-      { "year": 2016, "demPct": 44.43, "repPct": 55.57, "demCandidate": "Anna E. Throne-Holst", "repCandidate": "Lee M. Zeldin", "demVotes": 126635, "repVotes": 158409, "totalVotes": 285044, "margin": 11.14, "repIncumbent": true }
+      { "year": 2024, "demPct": 47.5, "repPct": 52.5, "demCandidate": "John Avlon", "repCandidate": "Nick LaLota", "demVotes": 181647, "repVotes": 200802, "totalVotes": 382449, "margin": 5, "repIncumbent": true },
+      { "year": 2022, "demPct": 46.74, "repPct": 53.26, "demCandidate": "Bridget Fleming", "repCandidate": "Nicholas LaLota", "demVotes": 135170, "repVotes": 154046, "totalVotes": 289216, "margin": 6.52 },
+      { "year": 2020, "demPct": 46, "repPct": 54, "demCandidate": "Nancy Goroff", "repCandidate": "Lee Zeldin", "demVotes": 149724, "repVotes": 175775, "totalVotes": 325499, "margin": 8, "repIncumbent": true },
+      { "year": 2018, "demPct": 49.93, "repPct": 48.87, "demCandidate": "Perry Gershon", "repCandidate": "Lee Zeldin", "demVotes": 124213, "repVotes": 121562, "totalVotes": 248763, "margin": -1.06, "repIncumbent": true },
+      { "year": 2016, "demPct": 44.43, "repPct": 55.57, "demCandidate": "Anna Throne-Holst", "repCandidate": "Lee Zeldin", "demVotes": 126635, "repVotes": 158409, "totalVotes": 285044, "margin": 11.14, "repIncumbent": true }
     ]
   },
   {
@@ -11864,11 +11864,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Andrew Garbarino",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 41.87, "repPct": 58.13, "demCandidate": "Rob Lubin", "repCandidate": "Andrew R. Garbarino", "demVotes": 129937, "repVotes": 180374, "totalVotes": 310311, "margin": 16.26, "repIncumbent": true },
-      { "year": 2022, "demPct": 41.63, "repPct": 58.37, "demCandidate": "Jackie Gordon", "repCandidate": "Andrew R. Garbarino", "demVotes": 93299, "repVotes": 130798, "totalVotes": 224097, "margin": 16.74, "repIncumbent": true },
-      { "year": 2020, "demPct": 47.25, "repPct": 51.62, "demCandidate": "Jackie Gordon", "repCandidate": "Andrew R. Garbarino", "demVotes": 144737, "repVotes": 158130, "totalVotes": 306313, "margin": 4.37 },
-      { "year": 2018, "demPct": 49.15, "repPct": 50.85, "demCandidate": "Liuba Grechen Shirley", "repCandidate": "Peter T. King", "demVotes": 108803, "repVotes": 112565, "totalVotes": 221368, "margin": 1.7, "repIncumbent": true },
-      { "year": 2016, "demPct": 39.36, "repPct": 60.64, "demCandidate": "DuWayne Gregory", "repCandidate": "Peter T. King", "demVotes": 102270, "repVotes": 157571, "totalVotes": 259841, "margin": 21.28, "repIncumbent": true }
+      { "year": 2024, "demPct": 41.87, "repPct": 58.13, "demCandidate": "Rob Lubin", "repCandidate": "Andrew Garbarino", "demVotes": 129937, "repVotes": 180374, "totalVotes": 310311, "margin": 16.26, "repIncumbent": true },
+      { "year": 2022, "demPct": 41.63, "repPct": 58.37, "demCandidate": "Jackie Gordon", "repCandidate": "Andrew Garbarino", "demVotes": 93299, "repVotes": 130798, "totalVotes": 224097, "margin": 16.74, "repIncumbent": true },
+      { "year": 2020, "demPct": 47.25, "repPct": 51.62, "demCandidate": "Jackie Gordon", "repCandidate": "Andrew Garbarino", "demVotes": 144737, "repVotes": 158130, "totalVotes": 306313, "margin": 4.37 },
+      { "year": 2018, "demPct": 49.15, "repPct": 50.85, "demCandidate": "Liuba Grechen Shirley", "repCandidate": "Peter King", "demVotes": 108803, "repVotes": 112565, "totalVotes": 221368, "margin": 1.7, "repIncumbent": true },
+      { "year": 2016, "demPct": 39.36, "repPct": 60.64, "demCandidate": "DuWayne Gregory", "repCandidate": "Peter King", "demVotes": 102270, "repVotes": 157571, "totalVotes": 259841, "margin": 21.28, "repIncumbent": true }
     ]
   },
   {
@@ -11895,11 +11895,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Thomas Suozzi",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 53.5, "repPct": 46.5, "demCandidate": "Thomas R. Suozzi", "repCandidate": "Michael J. LiPetri, Jr.", "demVotes": 185491, "repVotes": 161196, "totalVotes": 346687, "margin": -7, "demIncumbent": true },
-      { "year": 2022, "demPct": 47.28, "repPct": 52.72, "demCandidate": "Robert P. Zimmerman", "repCandidate": "George A. D. Santos", "demVotes": 120045, "repVotes": 133859, "totalVotes": 253904, "margin": 5.44 },
-      { "year": 2020, "demPct": 56.71, "repPct": 42.67, "demCandidate": "Thomas R. Suozzi", "repCandidate": "George A. D. Santos", "demVotes": 195927, "repVotes": 147437, "totalVotes": 345518, "margin": -14.04, "demIncumbent": true },
-      { "year": 2018, "demPct": 60.3, "repPct": 39.7, "demCandidate": "Thomas R. Suozzi", "repCandidate": "Dan P. DeBono", "demVotes": 149937, "repVotes": 98716, "totalVotes": 248653, "margin": -20.6, "demIncumbent": true },
-      { "year": 2016, "demPct": 56.19, "repPct": 43.81, "demCandidate": "Thomas R. Suozzi", "repCandidate": "Jack M. Martins", "demVotes": 171775, "repVotes": 133954, "totalVotes": 305729, "margin": -12.38 }
+      { "year": 2024, "demPct": 53.5, "repPct": 46.5, "demCandidate": "Thomas Suozzi", "repCandidate": "Michael LiPetri", "demVotes": 185491, "repVotes": 161196, "totalVotes": 346687, "margin": -7, "demIncumbent": true },
+      { "year": 2022, "demPct": 47.28, "repPct": 52.72, "demCandidate": "Robert Zimmerman", "repCandidate": "George Santos", "demVotes": 120045, "repVotes": 133859, "totalVotes": 253904, "margin": 5.44 },
+      { "year": 2020, "demPct": 56.71, "repPct": 42.67, "demCandidate": "Thomas Suozzi", "repCandidate": "George Santos", "demVotes": 195927, "repVotes": 147437, "totalVotes": 345518, "margin": -14.04, "demIncumbent": true },
+      { "year": 2018, "demPct": 60.3, "repPct": 39.7, "demCandidate": "Thomas Suozzi", "repCandidate": "Dan DeBono", "demVotes": 149937, "repVotes": 98716, "totalVotes": 248653, "margin": -20.6, "demIncumbent": true },
+      { "year": 2016, "demPct": 56.19, "repPct": 43.81, "demCandidate": "Thomas Suozzi", "repCandidate": "Jack Martins", "demVotes": 171775, "repVotes": 133954, "totalVotes": 305729, "margin": -12.38 }
     ]
   },
   {
@@ -11926,11 +11926,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Laura Gillen",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 52.9, "repPct": 47.1, "demCandidate": "Laura A. Gillen", "repCandidate": "Anthony D’Esposito", "demVotes": 190569, "repVotes": 169641, "totalVotes": 360210, "margin": -5.8, "repIncumbent": true },
-      { "year": 2022, "demPct": 50.29, "repPct": 49.71, "demCandidate": "Laura A. Gillen", "repCandidate": "Anthony P. D’Esposito", "demVotes": 130871, "repVotes": 129353, "totalVotes": 260224, "margin": -0.58 },
-      { "year": 2020, "demPct": 58.35, "repPct": 40.77, "demCandidate": "Kathleen M. Rice", "repCandidate": "Douglas L. Tuman", "demVotes": 199762, "repVotes": 139559, "totalVotes": 342345, "margin": -17.58, "demIncumbent": true },
-      { "year": 2018, "demPct": 63.44, "repPct": 36.56, "demCandidate": "Kathleen M. Rice", "repCandidate": "Ameer N. Benno", "demVotes": 156728, "repVotes": 90306, "totalVotes": 247034, "margin": -26.88, "demIncumbent": true },
-      { "year": 2016, "demPct": 62.05, "repPct": 37.95, "demCandidate": "Kathleen M. Rice", "repCandidate": "David H. Gurfein", "demVotes": 181861, "repVotes": 111246, "totalVotes": 293107, "margin": -24.1, "demIncumbent": true }
+      { "year": 2024, "demPct": 52.9, "repPct": 47.1, "demCandidate": "Laura Gillen", "repCandidate": "Anthony D’Esposito", "demVotes": 190569, "repVotes": 169641, "totalVotes": 360210, "margin": -5.8, "repIncumbent": true },
+      { "year": 2022, "demPct": 50.29, "repPct": 49.71, "demCandidate": "Laura Gillen", "repCandidate": "Anthony D’Esposito", "demVotes": 130871, "repVotes": 129353, "totalVotes": 260224, "margin": -0.58 },
+      { "year": 2020, "demPct": 58.35, "repPct": 40.77, "demCandidate": "Kathleen Rice", "repCandidate": "Douglas Tuman", "demVotes": 199762, "repVotes": 139559, "totalVotes": 342345, "margin": -17.58, "demIncumbent": true },
+      { "year": 2018, "demPct": 63.44, "repPct": 36.56, "demCandidate": "Kathleen Rice", "repCandidate": "Ameer Benno", "demVotes": 156728, "repVotes": 90306, "totalVotes": 247034, "margin": -26.88, "demIncumbent": true },
+      { "year": 2016, "demPct": 62.05, "repPct": 37.95, "demCandidate": "Kathleen Rice", "repCandidate": "David Gurfein", "demVotes": 181861, "repVotes": 111246, "totalVotes": 293107, "margin": -24.1, "demIncumbent": true }
     ]
   },
   {
@@ -11959,11 +11959,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Gregory Meeks",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 72.93, "repPct": 24.55, "demCandidate": "Gregory W. Meeks", "repCandidate": "Paul King", "demVotes": 168425, "repVotes": 56689, "totalVotes": 230954, "margin": -48.38, "demIncumbent": true },
-      { "year": 2022, "demPct": 76.87, "repPct": 23.13, "demCandidate": "Gregory W. Meeks", "repCandidate": "Paul King", "demVotes": 104396, "repVotes": 31405, "totalVotes": 135801, "margin": -53.74, "demIncumbent": true },
-      { "year": 2020, "demPct": 100, "repPct": 0, "demCandidate": "Gregory W. Meeks", "demVotes": 229125, "totalVotes": 229125, "margin": -100, "demIncumbent": true },
-      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Gregory W. Meeks", "demVotes": 160500, "totalVotes": 160500, "margin": -100, "demIncumbent": true },
-      { "year": 2016, "demPct": 86.69, "repPct": 11.74, "demCandidate": "Gregory W. Meeks", "repCandidate": "Michael A. O’Reilly", "demVotes": 197852, "repVotes": 26791, "totalVotes": 228230, "margin": -74.95, "demIncumbent": true }
+      { "year": 2024, "demPct": 72.93, "repPct": 24.55, "demCandidate": "Gregory Meeks", "repCandidate": "Paul King", "demVotes": 168425, "repVotes": 56689, "totalVotes": 230954, "margin": -48.38, "demIncumbent": true },
+      { "year": 2022, "demPct": 76.87, "repPct": 23.13, "demCandidate": "Gregory Meeks", "repCandidate": "Paul King", "demVotes": 104396, "repVotes": 31405, "totalVotes": 135801, "margin": -53.74, "demIncumbent": true },
+      { "year": 2020, "demPct": 100, "repPct": 0, "demCandidate": "Gregory Meeks", "demVotes": 229125, "totalVotes": 229125, "margin": -100, "demIncumbent": true },
+      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Gregory Meeks", "demVotes": 160500, "totalVotes": 160500, "margin": -100, "demIncumbent": true },
+      { "year": 2016, "demPct": 86.69, "repPct": 11.74, "demCandidate": "Gregory Meeks", "repCandidate": "Michael O’Reilly", "demVotes": 197852, "repVotes": 26791, "totalVotes": 228230, "margin": -74.95, "demIncumbent": true }
     ]
   },
   {
@@ -11992,11 +11992,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Grace Meng",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 62.24, "repPct": 36.07, "demCandidate": "Grace Meng", "repCandidate": "Thomas J. Zmich", "demVotes": 120205, "repVotes": 69654, "totalVotes": 193131, "margin": -26.17, "demIncumbent": true },
-      { "year": 2022, "demPct": 65.77, "repPct": 34.23, "demCandidate": "Grace Meng", "repCandidate": "Thomas J. Zmich", "demVotes": 85049, "repVotes": 44264, "totalVotes": 129313, "margin": -31.54, "demIncumbent": true },
-      { "year": 2020, "demPct": 68.03, "repPct": 31.97, "demCandidate": "Grace Meng", "repCandidate": "Thomas J. Zmich", "demVotes": 144149, "repVotes": 67735, "totalVotes": 211884, "margin": -36.06, "demIncumbent": true },
-      { "year": 2018, "demPct": 90.3, "repPct": 9.7, "demCandidate": "Grace Meng", "repCandidate": "Thomas J. Hillgardner (G)", "demVotes": 104293, "repVotes": 11209, "totalVotes": 115502, "margin": -80.6, "demIncumbent": true },
-      { "year": 2016, "demPct": 74.12, "repPct": 24.68, "demCandidate": "Grace Meng", "repCandidate": "Danniel S. Maio", "demVotes": 131463, "repVotes": 43770, "totalVotes": 177356, "margin": -49.44, "demIncumbent": true }
+      { "year": 2024, "demPct": 62.24, "repPct": 36.07, "demCandidate": "Grace Meng", "repCandidate": "Thomas Zmich", "demVotes": 120205, "repVotes": 69654, "totalVotes": 193131, "margin": -26.17, "demIncumbent": true },
+      { "year": 2022, "demPct": 65.77, "repPct": 34.23, "demCandidate": "Grace Meng", "repCandidate": "Thomas Zmich", "demVotes": 85049, "repVotes": 44264, "totalVotes": 129313, "margin": -31.54, "demIncumbent": true },
+      { "year": 2020, "demPct": 68.03, "repPct": 31.97, "demCandidate": "Grace Meng", "repCandidate": "Thomas Zmich", "demVotes": 144149, "repVotes": 67735, "totalVotes": 211884, "margin": -36.06, "demIncumbent": true },
+      { "year": 2018, "demPct": 90.3, "repPct": 9.7, "demCandidate": "Grace Meng", "repCandidate": "Thomas Hillgardner (G)", "demVotes": 104293, "repVotes": 11209, "totalVotes": 115502, "margin": -80.6, "demIncumbent": true },
+      { "year": 2016, "demPct": 74.12, "repPct": 24.68, "demCandidate": "Grace Meng", "repCandidate": "Danniel Maio", "demVotes": 131463, "repVotes": 43770, "totalVotes": 177356, "margin": -49.44, "demIncumbent": true }
     ]
   },
   {
@@ -12025,11 +12025,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Nydia Velázquez",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 77.12, "repPct": 22.88, "demCandidate": "Nydia M. Velázquez", "repCandidate": "Bill Kregler", "demVotes": 145141, "repVotes": 43052, "totalVotes": 188193, "margin": -54.24, "demIncumbent": true },
-      { "year": 2022, "demPct": 78.4, "repPct": 21.6, "demCandidate": "Nydia M. Velázquez", "repCandidate": "Juan Pagan", "demVotes": 95645, "repVotes": 26351, "totalVotes": 121996, "margin": -56.8, "demIncumbent": true },
-      { "year": 2020, "demPct": 83.53, "repPct": 15.66, "demCandidate": "Nydia M. Velázquez", "repCandidate": "Brian W. Kelly", "demVotes": 156889, "repVotes": 29404, "totalVotes": 187815, "margin": -67.87, "demIncumbent": true },
-      { "year": 2018, "demPct": 92.8, "repPct": 6, "demCandidate": "Nydia M. Velázquez", "repCandidate": "Joseph Lieberman (Con)", "demVotes": 134125, "repVotes": 8670, "totalVotes": 144535, "margin": -86.8, "demIncumbent": true },
-      { "year": 2016, "demPct": 91.73, "repPct": 8.27, "demCandidate": "Nydia M. Velázquez", "repCandidate": "Allan E. Romaguera", "demVotes": 165819, "repVotes": 14941, "totalVotes": 180760, "margin": -83.46, "demIncumbent": true }
+      { "year": 2024, "demPct": 77.12, "repPct": 22.88, "demCandidate": "Nydia Velázquez", "repCandidate": "Bill Kregler", "demVotes": 145141, "repVotes": 43052, "totalVotes": 188193, "margin": -54.24, "demIncumbent": true },
+      { "year": 2022, "demPct": 78.4, "repPct": 21.6, "demCandidate": "Nydia Velázquez", "repCandidate": "Juan Pagan", "demVotes": 95645, "repVotes": 26351, "totalVotes": 121996, "margin": -56.8, "demIncumbent": true },
+      { "year": 2020, "demPct": 83.53, "repPct": 15.66, "demCandidate": "Nydia Velázquez", "repCandidate": "Brian Kelly", "demVotes": 156889, "repVotes": 29404, "totalVotes": 187815, "margin": -67.87, "demIncumbent": true },
+      { "year": 2018, "demPct": 92.8, "repPct": 6, "demCandidate": "Nydia Velázquez", "repCandidate": "Joseph Lieberman (Con)", "demVotes": 134125, "repVotes": 8670, "totalVotes": 144535, "margin": -86.8, "demIncumbent": true },
+      { "year": 2016, "demPct": 91.73, "repPct": 8.27, "demCandidate": "Nydia Velázquez", "repCandidate": "Allan Romaguera", "demVotes": 165819, "repVotes": 14941, "totalVotes": 180760, "margin": -83.46, "demIncumbent": true }
     ]
   },
   {
@@ -12055,14 +12055,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Hakeem Jeffries", "party": "D", "incumbent": true },
       "rep": { "name": "Richard Simmons", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Hakeem S. Jeffries",
+    "seatHolder": "Hakeem Jeffries",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 77.65, "repPct": 22.35, "demCandidate": "Hakeem S. Jeffries", "repCandidate": "John J. Delaney", "demVotes": 168036, "repVotes": 48369, "totalVotes": 216405, "margin": -55.3, "demIncumbent": true },
-      { "year": 2022, "demPct": 72.93, "repPct": 27.07, "demCandidate": "Hakeem S. Jeffries", "repCandidate": "Yuri Dashevsky", "demVotes": 99079, "repVotes": 36776, "totalVotes": 135855, "margin": -45.86, "demIncumbent": true },
-      { "year": 2020, "demPct": 84.11, "repPct": 15.89, "demCandidate": "Hakeem S. Jeffries", "repCandidate": "Garfield H. Wallace", "demVotes": 207111, "repVotes": 39124, "totalVotes": 246235, "margin": -68.22, "demIncumbent": true },
-      { "year": 2018, "demPct": 93.94, "repPct": 5.5, "demCandidate": "Hakeem S. Jeffries", "repCandidate": "Ernest C. Johnson (Con)", "demVotes": 170850, "repVotes": 9997, "totalVotes": 181878, "margin": -88.44, "demIncumbent": true },
-      { "year": 2016, "demPct": 92.96, "repPct": 7.04, "demCandidate": "Hakeem S. Jeffries", "repCandidate": "Daniel J. Cavanagh (Con)", "demVotes": 203235, "repVotes": 15401, "totalVotes": 218636, "margin": -85.92, "demIncumbent": true }
+      { "year": 2024, "demPct": 77.65, "repPct": 22.35, "demCandidate": "Hakeem Jeffries", "repCandidate": "John Delaney", "demVotes": 168036, "repVotes": 48369, "totalVotes": 216405, "margin": -55.3, "demIncumbent": true },
+      { "year": 2022, "demPct": 72.93, "repPct": 27.07, "demCandidate": "Hakeem Jeffries", "repCandidate": "Yuri Dashevsky", "demVotes": 99079, "repVotes": 36776, "totalVotes": 135855, "margin": -45.86, "demIncumbent": true },
+      { "year": 2020, "demPct": 84.11, "repPct": 15.89, "demCandidate": "Hakeem Jeffries", "repCandidate": "Garfield Wallace", "demVotes": 207111, "repVotes": 39124, "totalVotes": 246235, "margin": -68.22, "demIncumbent": true },
+      { "year": 2018, "demPct": 93.94, "repPct": 5.5, "demCandidate": "Hakeem Jeffries", "repCandidate": "Ernest Johnson (Con)", "demVotes": 170850, "repVotes": 9997, "totalVotes": 181878, "margin": -88.44, "demIncumbent": true },
+      { "year": 2016, "demPct": 92.96, "repPct": 7.04, "demCandidate": "Hakeem Jeffries", "repCandidate": "Daniel Cavanagh (Con)", "demVotes": 203235, "repVotes": 15401, "totalVotes": 218636, "margin": -85.92, "demIncumbent": true }
     ]
   },
   {
@@ -12088,14 +12088,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Yvette Clarke", "party": "D", "incumbent": true },
       "rep": { "name": "Jean Depalis", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Yvette D. Clarke",
+    "seatHolder": "Yvette Clarke",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 77.1, "repPct": 22.9, "demCandidate": "Yvette D. Clarke", "repCandidate": "Menachem M. Raitport", "demVotes": 173207, "repVotes": 51458, "totalVotes": 224665, "margin": -54.2, "demIncumbent": true },
-      { "year": 2022, "demPct": 79, "repPct": 21, "demCandidate": "Yvette D. Clarke", "repCandidate": "Menachem M. Raitport (Con)", "demVotes": 99771, "repVotes": 26521, "totalVotes": 126292, "margin": -58, "demIncumbent": true },
-      { "year": 2020, "demPct": 82.06, "repPct": 16.81, "demCandidate": "Yvette D. Clarke", "repCandidate": "Constantine Jean-Pierre", "demVotes": 195758, "repVotes": 40110, "totalVotes": 238564, "margin": -65.25, "demIncumbent": true },
-      { "year": 2018, "demPct": 89.57, "repPct": 10.01, "demCandidate": "Yvette D. Clarke", "repCandidate": "Lutchi Gayot", "demVotes": 167269, "repVotes": 18702, "totalVotes": 186750, "margin": -79.56, "demIncumbent": true },
-      { "year": 2016, "demPct": 91.88, "repPct": 8.12, "demCandidate": "Yvette D. Clarke", "repCandidate": "Alan Bellone (Con)", "demVotes": 198886, "repVotes": 17576, "totalVotes": 216462, "margin": -83.76, "demIncumbent": true }
+      { "year": 2024, "demPct": 77.1, "repPct": 22.9, "demCandidate": "Yvette Clarke", "repCandidate": "Menachem Raitport", "demVotes": 173207, "repVotes": 51458, "totalVotes": 224665, "margin": -54.2, "demIncumbent": true },
+      { "year": 2022, "demPct": 79, "repPct": 21, "demCandidate": "Yvette Clarke", "repCandidate": "Menachem Raitport (Con)", "demVotes": 99771, "repVotes": 26521, "totalVotes": 126292, "margin": -58, "demIncumbent": true },
+      { "year": 2020, "demPct": 82.06, "repPct": 16.81, "demCandidate": "Yvette Clarke", "repCandidate": "Constantine Jean-Pierre", "demVotes": 195758, "repVotes": 40110, "totalVotes": 238564, "margin": -65.25, "demIncumbent": true },
+      { "year": 2018, "demPct": 89.57, "repPct": 10.01, "demCandidate": "Yvette Clarke", "repCandidate": "Lutchi Gayot", "demVotes": 167269, "repVotes": 18702, "totalVotes": 186750, "margin": -79.56, "demIncumbent": true },
+      { "year": 2016, "demPct": 91.88, "repPct": 8.12, "demCandidate": "Yvette Clarke", "repCandidate": "Alan Bellone (Con)", "demVotes": 198886, "repVotes": 17576, "totalVotes": 216462, "margin": -83.76, "demIncumbent": true }
     ]
   },
   {
@@ -12121,12 +12121,12 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Daniel Goldman", "party": "D", "incumbent": true },
       "rep": { "name": "Gavin Solomon", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Daniel S. Goldman",
+    "seatHolder": "Daniel Goldman",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 82.32, "repPct": 14.99, "demCandidate": "Daniel S. Goldman", "repCandidate": "Alexander Dodenhoff", "demVotes": 206206, "repVotes": 37555, "totalVotes": 250508, "margin": -67.33, "demIncumbent": true },
-      { "year": 2022, "demPct": 85.08, "repPct": 14.15, "demCandidate": "Daniel Goldman", "repCandidate": "Benine A. Hamdan", "demVotes": 160582, "repVotes": 26711, "totalVotes": 188740, "margin": -70.93 },
-      { "year": 2020, "demPct": 73.78, "repPct": 24.85, "demCandidate": "Jerrold Nadler", "repCandidate": "Cathy A. Bernstein", "demVotes": 181215, "repVotes": 61045, "totalVotes": 245630, "margin": -48.93, "demIncumbent": true },
+      { "year": 2024, "demPct": 82.32, "repPct": 14.99, "demCandidate": "Daniel Goldman", "repCandidate": "Alexander Dodenhoff", "demVotes": 206206, "repVotes": 37555, "totalVotes": 250508, "margin": -67.33, "demIncumbent": true },
+      { "year": 2022, "demPct": 85.08, "repPct": 14.15, "demCandidate": "Daniel Goldman", "repCandidate": "Benine Hamdan", "demVotes": 160582, "repVotes": 26711, "totalVotes": 188740, "margin": -70.93 },
+      { "year": 2020, "demPct": 73.78, "repPct": 24.85, "demCandidate": "Jerrold Nadler", "repCandidate": "Cathy Bernstein", "demVotes": 181215, "repVotes": 61045, "totalVotes": 245630, "margin": -48.93, "demIncumbent": true },
       { "year": 2018, "demPct": 82.79, "repPct": 17.21, "demCandidate": "Jerrold Nadler", "repCandidate": "Naomi Levin", "demVotes": 162131, "repVotes": 33692, "totalVotes": 195823, "margin": -65.58, "demIncumbent": true },
       { "year": 2016, "demPct": 79.56, "repPct": 20.44, "demCandidate": "Jerrold Nadler", "repCandidate": "Philip Rosenthal", "demVotes": 180117, "repVotes": 46275, "totalVotes": 226392, "margin": -59.12, "demIncumbent": true }
     ]
@@ -12157,11 +12157,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Nicole Malliotakis",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 37.94, "repPct": 62.06, "demCandidate": "Andrea S. Morse", "repCandidate": "Nicole Malliotakis", "demVotes": 93586, "repVotes": 153105, "totalVotes": 246691, "margin": 24.12, "repIncumbent": true },
-      { "year": 2022, "demPct": 39.94, "repPct": 60.06, "demCandidate": "Max N. Rose", "repCandidate": "Nicole Malliotakis", "demVotes": 71801, "repVotes": 107989, "totalVotes": 179790, "margin": 20.12, "repIncumbent": true },
+      { "year": 2024, "demPct": 37.94, "repPct": 62.06, "demCandidate": "Andrea Morse", "repCandidate": "Nicole Malliotakis", "demVotes": 93586, "repVotes": 153105, "totalVotes": 246691, "margin": 24.12, "repIncumbent": true },
+      { "year": 2022, "demPct": 39.94, "repPct": 60.06, "demCandidate": "Max Rose", "repCandidate": "Nicole Malliotakis", "demVotes": 71801, "repVotes": 107989, "totalVotes": 179790, "margin": 20.12, "repIncumbent": true },
       { "year": 2020, "demPct": 48.42, "repPct": 51.58, "demCandidate": "Max Rose", "repCandidate": "Nicole Malliotakis", "demVotes": 134625, "repVotes": 143420, "totalVotes": 278045, "margin": 3.16, "demIncumbent": true },
-      { "year": 2018, "demPct": 54.39, "repPct": 45.17, "demCandidate": "Max N. Rose", "repCandidate": "Daniel M. Donovan, Jr.", "demVotes": 96850, "repVotes": 80440, "totalVotes": 178064, "margin": -9.22, "repIncumbent": true },
-      { "year": 2016, "demPct": 40.26, "repPct": 57.9, "demCandidate": "Richard A. Reichard", "repCandidate": "Daniel M. Donovan, Jr.", "demVotes": 85257, "repVotes": 122606, "totalVotes": 211769, "margin": 17.64, "repIncumbent": true }
+      { "year": 2018, "demPct": 54.39, "repPct": 45.17, "demCandidate": "Max Rose", "repCandidate": "Daniel Donovan", "demVotes": 96850, "repVotes": 80440, "totalVotes": 178064, "margin": -9.22, "repIncumbent": true },
+      { "year": 2016, "demPct": 40.26, "repPct": 57.9, "demCandidate": "Richard Reichard", "repCandidate": "Daniel Donovan", "demVotes": 85257, "repVotes": 122606, "totalVotes": 211769, "margin": 17.64, "repIncumbent": true }
     ]
   },
   {
@@ -12190,11 +12190,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jerry Nadler",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 79.42, "repPct": 20.58, "demCandidate": "Jerrold Nadler", "repCandidate": "Michael K. Zumbluskas", "demVotes": 243111, "repVotes": 62989, "totalVotes": 306100, "margin": -58.84, "demIncumbent": true },
-      { "year": 2022, "demPct": 81.62, "repPct": 18.1, "demCandidate": "Jerrold Nadler", "repCandidate": "Michael K. Zumbluskas", "demVotes": 184872, "repVotes": 40994, "totalVotes": 226497, "margin": -63.52 },
-      { "year": 2020, "demPct": 83.3, "repPct": 15.44, "demCandidate": "Carolyn B. Maloney", "repCandidate": "Carlos Santiago-Cano", "demVotes": 265172, "repVotes": 49157, "totalVotes": 318344, "margin": -67.86, "demIncumbent": true },
-      { "year": 2018, "demPct": 85.76, "repPct": 12.68, "demCandidate": "Carolyn B. Maloney", "repCandidate": "Eliot Rabin", "demVotes": 205858, "repVotes": 30446, "totalVotes": 240032, "margin": -73.08, "demIncumbent": true },
-      { "year": 2016, "demPct": 82.33, "repPct": 17.67, "demCandidate": "Carolyn B. Maloney", "repCandidate": "Robert Ardini", "demVotes": 230153, "repVotes": 49398, "totalVotes": 279551, "margin": -64.66, "demIncumbent": true }
+      { "year": 2024, "demPct": 79.42, "repPct": 20.58, "demCandidate": "Jerrold Nadler", "repCandidate": "Michael Zumbluskas", "demVotes": 243111, "repVotes": 62989, "totalVotes": 306100, "margin": -58.84, "demIncumbent": true },
+      { "year": 2022, "demPct": 81.62, "repPct": 18.1, "demCandidate": "Jerrold Nadler", "repCandidate": "Michael Zumbluskas", "demVotes": 184872, "repVotes": 40994, "totalVotes": 226497, "margin": -63.52 },
+      { "year": 2020, "demPct": 83.3, "repPct": 15.44, "demCandidate": "Carolyn Maloney", "repCandidate": "Carlos Santiago-Cano", "demVotes": 265172, "repVotes": 49157, "totalVotes": 318344, "margin": -67.86, "demIncumbent": true },
+      { "year": 2018, "demPct": 85.76, "repPct": 12.68, "demCandidate": "Carolyn Maloney", "repCandidate": "Eliot Rabin", "demVotes": 205858, "repVotes": 30446, "totalVotes": 240032, "margin": -73.08, "demIncumbent": true },
+      { "year": 2016, "demPct": 82.33, "repPct": 17.67, "demCandidate": "Carolyn Maloney", "repCandidate": "Robert Ardini", "demVotes": 230153, "repVotes": 49398, "totalVotes": 279551, "margin": -64.66, "demIncumbent": true }
     ]
   },
   {
@@ -12223,11 +12223,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Adriano Espaillat",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 85, "repPct": 15, "demCandidate": "Adriano Espaillat", "repCandidate": "Ruben D. Vargas", "demVotes": 181800, "repVotes": 32071, "totalVotes": 213871, "margin": -70, "demIncumbent": true },
+      { "year": 2024, "demPct": 85, "repPct": 15, "demCandidate": "Adriano Espaillat", "repCandidate": "Ruben Vargas", "demVotes": 181800, "repVotes": 32071, "totalVotes": 213871, "margin": -70, "demIncumbent": true },
       { "year": 2022, "demPct": 100, "repPct": 0, "demCandidate": "Adriano Espaillat", "demVotes": 116589, "totalVotes": 116589, "margin": -100, "demIncumbent": true },
       { "year": 2020, "demPct": 89.77, "repPct": 8.77, "demCandidate": "Adriano Espaillat", "repCandidate": "Lovelynn Gwinn", "demVotes": 202916, "repVotes": 19829, "totalVotes": 226040, "margin": -81, "demIncumbent": true },
-      { "year": 2018, "demPct": 94.73, "repPct": 5.27, "demCandidate": "Adriano Espaillat", "repCandidate": "Jineea R. Butler", "demVotes": 171341, "repVotes": 9535, "totalVotes": 180876, "margin": -89.46, "demIncumbent": true },
-      { "year": 2016, "demPct": 89.91, "repPct": 5.7, "demCandidate": "Adriano Espaillat", "repCandidate": "Robert A. Evans, Jr.", "demVotes": 207194, "repVotes": 13129, "totalVotes": 230448, "margin": -84.21 }
+      { "year": 2018, "demPct": 94.73, "repPct": 5.27, "demCandidate": "Adriano Espaillat", "repCandidate": "Jineea Butler", "demVotes": 171341, "repVotes": 9535, "totalVotes": 180876, "margin": -89.46, "demIncumbent": true },
+      { "year": 2016, "demPct": 89.91, "repPct": 5.7, "demCandidate": "Adriano Espaillat", "repCandidate": "Robert Evans", "demVotes": 207194, "repVotes": 13129, "totalVotes": 230448, "margin": -84.21 }
     ]
   },
   {
@@ -12258,9 +12258,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 68.63, "repPct": 31.37, "demCandidate": "Alexandria Ocasio-Cortez", "repCandidate": "Tina Forte", "demVotes": 118477, "repVotes": 54157, "totalVotes": 172634, "margin": -37.26, "demIncumbent": true },
       { "year": 2022, "demPct": 68.44, "repPct": 29.52, "demCandidate": "Alexandria Ocasio-Cortez", "repCandidate": "Tina Forte", "demVotes": 74050, "repVotes": 31935, "totalVotes": 108193, "margin": -38.92, "demIncumbent": true },
-      { "year": 2020, "demPct": 73.7, "repPct": 25.33, "demCandidate": "Alexandria Ocasio-Cortez", "repCandidate": "John C. Cummings", "demVotes": 152661, "repVotes": 52477, "totalVotes": 207138, "margin": -48.37, "demIncumbent": true },
+      { "year": 2020, "demPct": 73.7, "repPct": 25.33, "demCandidate": "Alexandria Ocasio-Cortez", "repCandidate": "John Cummings", "demVotes": 152661, "repVotes": 52477, "totalVotes": 207138, "margin": -48.37, "demIncumbent": true },
       { "year": 2018, "demPct": 78.88, "repPct": 13.73, "demCandidate": "Alexandria Ocasio-Cortez", "repCandidate": "Anthony Pappas", "demVotes": 110318, "repVotes": 19202, "totalVotes": 139849, "margin": -65.15 },
-      { "year": 2016, "demPct": 83.73, "repPct": 16.27, "demCandidate": "Joseph Crowley", "repCandidate": "Frank J. Spotorno", "demVotes": 138367, "repVotes": 26891, "totalVotes": 165258, "margin": -67.46, "demIncumbent": true }
+      { "year": 2016, "demPct": 83.73, "repPct": 16.27, "demCandidate": "Joseph Crowley", "repCandidate": "Frank Spotorno", "demVotes": 138367, "repVotes": 26891, "totalVotes": 165258, "margin": -67.46, "demIncumbent": true }
     ]
   },
   {
@@ -12290,10 +12290,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 78.09, "repPct": 19.46, "demCandidate": "Ritchie Torres", "repCandidate": "Gonzalo Duran", "demVotes": 130392, "repVotes": 32494, "totalVotes": 166972, "margin": -58.63, "demIncumbent": true },
-      { "year": 2022, "demPct": 82.79, "repPct": 17.21, "demCandidate": "Ritchie Torres", "repCandidate": "Stylo A. Sapaskis", "demVotes": 76406, "repVotes": 15882, "totalVotes": 92288, "margin": -65.58, "demIncumbent": true },
+      { "year": 2022, "demPct": 82.79, "repPct": 17.21, "demCandidate": "Ritchie Torres", "repCandidate": "Stylo Sapaskis", "demVotes": 76406, "repVotes": 15882, "totalVotes": 92288, "margin": -65.58, "demIncumbent": true },
       { "year": 2020, "demPct": 89.93, "repPct": 10.07, "demCandidate": "Ritchie Torres", "repCandidate": "Patrick Delices", "demVotes": 169533, "repVotes": 18984, "totalVotes": 188517, "margin": -79.86 },
-      { "year": 2018, "demPct": 96.39, "repPct": 3.61, "demCandidate": "José E. Serrano", "repCandidate": "Jason D. Gonzalez", "demVotes": 122007, "repVotes": 4566, "totalVotes": 126573, "margin": -92.78, "demIncumbent": true },
-      { "year": 2016, "demPct": 95.27, "repPct": 3.52, "demCandidate": "José E. Serrano", "repCandidate": "Alejandro Vega", "demVotes": 165688, "repVotes": 6129, "totalVotes": 173921, "margin": -91.75, "demIncumbent": true }
+      { "year": 2018, "demPct": 96.39, "repPct": 3.61, "demCandidate": "José Serrano", "repCandidate": "Jason Gonzalez", "demVotes": 122007, "repVotes": 4566, "totalVotes": 126573, "margin": -92.78, "demIncumbent": true },
+      { "year": 2016, "demPct": 95.27, "repPct": 3.52, "demCandidate": "José Serrano", "repCandidate": "Alejandro Vega", "demVotes": 165688, "repVotes": 6129, "totalVotes": 173921, "margin": -91.75, "demIncumbent": true }
     ]
   },
   {
@@ -12322,11 +12322,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "George Latimer",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 71.58, "repPct": 28.42, "demCandidate": "George S. Latimer", "repCandidate": "Miriam Levitt Flisser", "demVotes": 217668, "repVotes": 86408, "totalVotes": 304076, "margin": -43.16 },
-      { "year": 2022, "demPct": 63.14, "repPct": 36.86, "demCandidate": "Jamaal Bowman", "repCandidate": "Miriam L. Flisser", "demVotes": 127024, "repVotes": 74156, "totalVotes": 201180, "margin": -26.28, "demIncumbent": true },
+      { "year": 2024, "demPct": 71.58, "repPct": 28.42, "demCandidate": "George Latimer", "repCandidate": "Miriam Levitt Flisser", "demVotes": 217668, "repVotes": 86408, "totalVotes": 304076, "margin": -43.16 },
+      { "year": 2022, "demPct": 63.14, "repPct": 36.86, "demCandidate": "Jamaal Bowman", "repCandidate": "Miriam Flisser", "demVotes": 127024, "repVotes": 74156, "totalVotes": 201180, "margin": -26.28, "demIncumbent": true },
       { "year": 2020, "demPct": 84.17, "repPct": 15.83, "demCandidate": "Jamaal Bowman", "repCandidate": "Patrick McManus (Con)", "demVotes": 218471, "repVotes": 41085, "totalVotes": 259556, "margin": -68.34 },
-      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Eliot L. Engel", "demVotes": 172815, "totalVotes": 172815, "margin": -100, "demIncumbent": true },
-      { "year": 2016, "demPct": 94.39, "repPct": 5.61, "demCandidate": "Eliot L. Engel", "repCandidate": "Derickson K. Lawrence (PSC)", "demVotes": 198811, "repVotes": 11825, "totalVotes": 210636, "margin": -88.78, "demIncumbent": true }
+      { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Eliot Engel", "demVotes": 172815, "totalVotes": 172815, "margin": -100, "demIncumbent": true },
+      { "year": 2016, "demPct": 94.39, "repPct": 5.61, "demCandidate": "Eliot Engel", "repCandidate": "Derickson Lawrence (PSC)", "demVotes": 198811, "repVotes": 11825, "totalVotes": 210636, "margin": -88.78, "demIncumbent": true }
     ]
   },
   {
@@ -12350,14 +12350,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Peter Chatzky", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Lawler", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Michael Lawler",
+    "seatHolder": "Mike Lawler",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 47.99, "repPct": 49.93, "demCandidate": "Mondaire L. Jones", "repCandidate": "Michael Lawler", "demVotes": 173899, "repVotes": 180924, "totalVotes": 362353, "margin": 1.94, "repIncumbent": true },
-      { "year": 2022, "demPct": 51.49, "repPct": 48.51, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Michael V. Lawler", "demVotes": 133457, "repVotes": 125738, "totalVotes": 259195, "margin": -2.98 },
+      { "year": 2024, "demPct": 47.99, "repPct": 49.93, "demCandidate": "Mondaire Jones", "repCandidate": "Michael Lawler", "demVotes": 173899, "repVotes": 180924, "totalVotes": 362353, "margin": 1.94, "repIncumbent": true },
+      { "year": 2022, "demPct": 51.49, "repPct": 48.51, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Michael Lawler", "demVotes": 133457, "repVotes": 125738, "totalVotes": 259195, "margin": -2.98 },
       { "year": 2020, "demPct": 57.62, "repPct": 36.74, "demCandidate": "Mondaire Jones", "repCandidate": "Maureen McArdle-Schulman", "demVotes": 183975, "repVotes": 117307, "totalVotes": 319277, "margin": -20.88 },
-      { "year": 2018, "demPct": 87.35, "repPct": 12.65, "demCandidate": "Nita M. Lowey", "repCandidate": "Joseph J. Ciardullo", "demVotes": 159923, "repVotes": 23150, "totalVotes": 183073, "margin": -74.7, "demIncumbent": true },
-      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Nita M. Lowey", "demVotes": 193819, "totalVotes": 193819, "margin": -100, "demIncumbent": true }
+      { "year": 2018, "demPct": 87.35, "repPct": 12.65, "demCandidate": "Nita Lowey", "repCandidate": "Joseph Ciardullo", "demVotes": 159923, "repVotes": 23150, "totalVotes": 183073, "margin": -74.7, "demIncumbent": true },
+      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Nita Lowey", "demVotes": 193819, "totalVotes": 193819, "margin": -100, "demIncumbent": true }
     ]
   },
   {
@@ -12385,8 +12385,8 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 57.77, "repPct": 42.23, "demCandidate": "Patrick Ryan", "repCandidate": "Alison Esposito", "demVotes": 189345, "repVotes": 138409, "totalVotes": 327754, "margin": -15.54 },
-      { "year": 2022, "demPct": 51.29, "repPct": 48.71, "demCandidate": "Patrick Ryan", "repCandidate": "Colin J. Schmitt", "demVotes": 123168, "repVotes": 116972, "totalVotes": 240140, "margin": -2.58 },
-      { "year": 2020, "demPct": 56.56, "repPct": 42.55, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Chele C. Farley", "demVotes": 170899, "repVotes": 128568, "totalVotes": 302153, "margin": -14.01, "demIncumbent": true },
+      { "year": 2022, "demPct": 51.29, "repPct": 48.71, "demCandidate": "Patrick Ryan", "repCandidate": "Colin Schmitt", "demVotes": 123168, "repVotes": 116972, "totalVotes": 240140, "margin": -2.58 },
+      { "year": 2020, "demPct": 56.56, "repPct": 42.55, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Chele Farley", "demVotes": 170899, "repVotes": 128568, "totalVotes": 302153, "margin": -14.01, "demIncumbent": true },
       { "year": 2018, "demPct": 56.74, "repPct": 43.26, "demCandidate": "Sean Patrick Maloney", "repCandidate": "James O’Donnell", "demVotes": 126368, "repVotes": 96345, "totalVotes": 222713, "margin": -13.48, "demIncumbent": true },
       { "year": 2016, "demPct": 55.92, "repPct": 44.08, "demCandidate": "Sean Patrick Maloney", "repCandidate": "Phil Oliva", "demVotes": 140951, "repVotes": 111117, "totalVotes": 252068, "margin": -11.84, "demIncumbent": true }
     ]
@@ -12415,11 +12415,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Josh Riley",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 50.91, "repPct": 49.09, "demCandidate": "Josh Riley", "repCandidate": "Marcus J. Molinaro", "demVotes": 170049, "repVotes": 164001, "totalVotes": 334050, "margin": -1.82, "repIncumbent": true },
+      { "year": 2024, "demPct": 50.91, "repPct": 49.09, "demCandidate": "Josh Riley", "repCandidate": "Marcus Molinaro", "demVotes": 170049, "repVotes": 164001, "totalVotes": 334050, "margin": -1.82, "repIncumbent": true },
       { "year": 2022, "demPct": 48.91, "repPct": 51.09, "demCandidate": "Josh Riley", "repCandidate": "Marcus Molinaro", "demVotes": 124396, "repVotes": 129960, "totalVotes": 254356, "margin": 2.18 },
       { "year": 2020, "demPct": 51.5, "repPct": 46.35, "demCandidate": "Antonio Delgado", "repCandidate": "Kyle Van De Water", "demVotes": 168281, "repVotes": 151475, "totalVotes": 326779, "margin": -5.15, "demIncumbent": true },
-      { "year": 2018, "demPct": 53.16, "repPct": 44.03, "demCandidate": "Antonio Delgado", "repCandidate": "John J. Faso", "demVotes": 135582, "repVotes": 112304, "totalVotes": 255034, "margin": -9.13, "repIncumbent": true },
-      { "year": 2016, "demPct": 48.1, "repPct": 51.9, "demCandidate": "Zephyr Teachout", "repCandidate": "John J. Faso", "demVotes": 125956, "repVotes": 135905, "totalVotes": 261861, "margin": 3.8 }
+      { "year": 2018, "demPct": 53.16, "repPct": 44.03, "demCandidate": "Antonio Delgado", "repCandidate": "John Faso", "demVotes": 135582, "repVotes": 112304, "totalVotes": 255034, "margin": -9.13, "repIncumbent": true },
+      { "year": 2016, "demPct": 48.1, "repPct": 51.9, "demCandidate": "Zephyr Teachout", "repCandidate": "John Faso", "demVotes": 125956, "repVotes": 135905, "totalVotes": 261861, "margin": 3.8 }
     ]
   },
   {
@@ -12448,9 +12448,9 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Paul Tonko",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 62.23, "repPct": 37.77, "demCandidate": "Paul Tonko", "repCandidate": "Kevin M. Waltz", "demVotes": 200354, "repVotes": 121609, "totalVotes": 321963, "margin": -24.46, "demIncumbent": true },
-      { "year": 2022, "demPct": 56.82, "repPct": 43.18, "demCandidate": "Paul Tonko", "repCandidate": "Elizabeth L. Joy", "demVotes": 145928, "repVotes": 110903, "totalVotes": 256831, "margin": -13.64, "demIncumbent": true },
-      { "year": 2020, "demPct": 61.63, "repPct": 38.37, "demCandidate": "Paul Tonko", "repCandidate": "Elizabeth L. Joy", "demVotes": 194071, "repVotes": 120839, "totalVotes": 314910, "margin": -23.26, "demIncumbent": true },
+      { "year": 2024, "demPct": 62.23, "repPct": 37.77, "demCandidate": "Paul Tonko", "repCandidate": "Kevin Waltz", "demVotes": 200354, "repVotes": 121609, "totalVotes": 321963, "margin": -24.46, "demIncumbent": true },
+      { "year": 2022, "demPct": 56.82, "repPct": 43.18, "demCandidate": "Paul Tonko", "repCandidate": "Elizabeth Joy", "demVotes": 145928, "repVotes": 110903, "totalVotes": 256831, "margin": -13.64, "demIncumbent": true },
+      { "year": 2020, "demPct": 61.63, "repPct": 38.37, "demCandidate": "Paul Tonko", "repCandidate": "Elizabeth Joy", "demVotes": 194071, "repVotes": 120839, "totalVotes": 314910, "margin": -23.26, "demIncumbent": true },
       { "year": 2018, "demPct": 64.43, "repPct": 35.57, "demCandidate": "Paul Tonko", "repCandidate": "Joe Vitollo", "demVotes": 161330, "repVotes": 89058, "totalVotes": 250388, "margin": -28.86, "demIncumbent": true },
       { "year": 2016, "demPct": 69.34, "repPct": 30.66, "demCandidate": "Paul Tonko", "repCandidate": "Joe Vitollo", "demVotes": 188428, "repVotes": 83328, "totalVotes": 271756, "margin": -38.68, "demIncumbent": true }
     ]
@@ -12481,11 +12481,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Elise Stefanik",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 38.29, "repPct": 61.71, "demCandidate": "Paula Collins", "repCandidate": "Elise M. Stefanik", "demVotes": 121289, "repVotes": 195464, "totalVotes": 316753, "margin": 23.42, "repIncumbent": true },
-      { "year": 2022, "demPct": 42.79, "repPct": 57.21, "demCandidate": "Matt Castelli", "repCandidate": "Elise M. Stefanik", "demVotes": 112645, "repVotes": 150595, "totalVotes": 263240, "margin": 14.42, "repIncumbent": true },
-      { "year": 2020, "demPct": 41.91, "repPct": 58.09, "demCandidate": "Tedra L. Cobb", "repCandidate": "Elise M. Stefanik", "demVotes": 122419, "repVotes": 169679, "totalVotes": 292098, "margin": 16.18, "repIncumbent": true },
-      { "year": 2018, "demPct": 43.79, "repPct": 54.6, "demCandidate": "Tedra L. Cobb", "repCandidate": "Elise M. Stefanik", "demVotes": 93394, "repVotes": 116433, "totalVotes": 213264, "margin": 10.81, "repIncumbent": true },
-      { "year": 2016, "demPct": 31.52, "repPct": 63.31, "demCandidate": "Mike Derrick", "repCandidate": "Elise M. Stefanik", "demVotes": 75965, "repVotes": 152597, "totalVotes": 241014, "margin": 31.79, "repIncumbent": true }
+      { "year": 2024, "demPct": 38.29, "repPct": 61.71, "demCandidate": "Paula Collins", "repCandidate": "Elise Stefanik", "demVotes": 121289, "repVotes": 195464, "totalVotes": 316753, "margin": 23.42, "repIncumbent": true },
+      { "year": 2022, "demPct": 42.79, "repPct": 57.21, "demCandidate": "Matt Castelli", "repCandidate": "Elise Stefanik", "demVotes": 112645, "repVotes": 150595, "totalVotes": 263240, "margin": 14.42, "repIncumbent": true },
+      { "year": 2020, "demPct": 41.91, "repPct": 58.09, "demCandidate": "Tedra Cobb", "repCandidate": "Elise Stefanik", "demVotes": 122419, "repVotes": 169679, "totalVotes": 292098, "margin": 16.18, "repIncumbent": true },
+      { "year": 2018, "demPct": 43.79, "repPct": 54.6, "demCandidate": "Tedra Cobb", "repCandidate": "Elise Stefanik", "demVotes": 93394, "repVotes": 116433, "totalVotes": 213264, "margin": 10.81, "repIncumbent": true },
+      { "year": 2016, "demPct": 31.52, "repPct": 63.31, "demCandidate": "Mike Derrick", "repCandidate": "Elise Stefanik", "demVotes": 75965, "repVotes": 152597, "totalVotes": 241014, "margin": 31.79, "repIncumbent": true }
     ]
   },
   {
@@ -12509,14 +12509,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "John Mannion", "party": "D", "incumbent": true },
       "rep": { "name": "John Lemondes", "party": "R", "incumbent": false }
     },
-    "seatHolder": "John W. Mannion",
+    "seatHolder": "John Mannion",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 55.67, "repPct": 44.33, "demCandidate": "John W. Mannion", "repCandidate": "Brandon Williams", "demVotes": 178394, "repVotes": 142082, "totalVotes": 320476, "margin": -11.34, "repIncumbent": true },
-      { "year": 2022, "demPct": 53.28, "repPct": 46.72, "demCandidate": "Francis Conole", "repCandidate": "Brandon M. Williams", "demVotes": 132913, "repVotes": 116529, "totalVotes": 249442, "margin": -6.56 },
+      { "year": 2024, "demPct": 55.67, "repPct": 44.33, "demCandidate": "John Mannion", "repCandidate": "Brandon Williams", "demVotes": 178394, "repVotes": 142082, "totalVotes": 320476, "margin": -11.34, "repIncumbent": true },
+      { "year": 2022, "demPct": 53.28, "repPct": 46.72, "demCandidate": "Francis Conole", "repCandidate": "Brandon Williams", "demVotes": 132913, "repVotes": 116529, "totalVotes": 249442, "margin": -6.56 },
       { "year": 2020, "demPct": 48.07, "repPct": 49.59, "demCandidate": "Anthony Brindisi", "repCandidate": "Claudia Tenney", "demVotes": 138898, "repVotes": 143291, "totalVotes": 288969, "margin": 1.52, "demIncumbent": true },
-      { "year": 2018, "demPct": 51.3, "repPct": 48.7, "demCandidate": "Anthony J. Brindisi", "repCandidate": "Claudia Tenney", "demVotes": 116001, "repVotes": 110125, "totalVotes": 226126, "margin": -2.6, "repIncumbent": true },
-      { "year": 2016, "demPct": 42.7, "repPct": 47.08, "demCandidate": "Kim A. Myers", "repCandidate": "Claudia Tenney", "demVotes": 102734, "repVotes": 113287, "totalVotes": 240616, "margin": 4.38 }
+      { "year": 2018, "demPct": 51.3, "repPct": 48.7, "demCandidate": "Anthony Brindisi", "repCandidate": "Claudia Tenney", "demVotes": 116001, "repVotes": 110125, "totalVotes": 226126, "margin": -2.6, "repIncumbent": true },
+      { "year": 2016, "demPct": 42.7, "repPct": 47.08, "demCandidate": "Kim Myers", "repCandidate": "Claudia Tenney", "demVotes": 102734, "repVotes": 113287, "totalVotes": 240616, "margin": 4.38 }
     ]
   },
   {
@@ -12542,14 +12542,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Aaron Gies", "party": "D", "incumbent": false },
       "rep": { "name": "Nick Langworthy", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Nicholas A. Langworthy",
+    "seatHolder": "Nick Langworthy",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 37.51, "repPct": 62.49, "demCandidate": "Thomas A. Carle", "repCandidate": "Nicholas A. Langworthy", "demVotes": 128397, "repVotes": 213928, "totalVotes": 342325, "margin": 24.98, "repIncumbent": true },
-      { "year": 2022, "demPct": 38.98, "repPct": 61.02, "demCandidate": "Max H. Della Pia", "repCandidate": "Nick Langworthy", "demVotes": 104114, "repVotes": 163000, "totalVotes": 267114, "margin": 22.04 },
+      { "year": 2024, "demPct": 37.51, "repPct": 62.49, "demCandidate": "Thomas Carle", "repCandidate": "Nicholas Langworthy", "demVotes": 128397, "repVotes": 213928, "totalVotes": 342325, "margin": 24.98, "repIncumbent": true },
+      { "year": 2022, "demPct": 38.98, "repPct": 61.02, "demCandidate": "Max Della Pia", "repCandidate": "Nick Langworthy", "demVotes": 104114, "repVotes": 163000, "totalVotes": 267114, "margin": 22.04 },
       { "year": 2020, "demPct": 41.22, "repPct": 57.48, "demCandidate": "Tracy Mitrano", "repCandidate": "Tom Reed", "demVotes": 116062, "repVotes": 161830, "totalVotes": 281542, "margin": 16.26, "repIncumbent": true },
       { "year": 2018, "demPct": 46.8, "repPct": 53.2, "demCandidate": "Tracy Mitrano", "repCandidate": "Tom Reed", "demVotes": 100914, "repVotes": 114722, "totalVotes": 215636, "margin": 6.4, "repIncumbent": true },
-      { "year": 2016, "demPct": 43.77, "repPct": 56.23, "demCandidate": "John F. Plumb", "repCandidate": "Tom Reed", "demVotes": 106600, "repVotes": 136964, "totalVotes": 243564, "margin": 12.46, "repIncumbent": true }
+      { "year": 2016, "demPct": 43.77, "repPct": 56.23, "demCandidate": "John Plumb", "repCandidate": "Tom Reed", "demVotes": 106600, "repVotes": 136964, "totalVotes": 243564, "margin": 12.46, "repIncumbent": true }
     ]
   },
   {
@@ -12611,11 +12611,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Joseph Morelle",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 58.68, "repPct": 41.32, "demCandidate": "Joseph D. Morelle", "repCandidate": "Gregg A. Sadwick", "demVotes": 200507, "repVotes": 141195, "totalVotes": 341702, "margin": -17.36, "demIncumbent": true },
-      { "year": 2022, "demPct": 56.43, "repPct": 43.57, "demCandidate": "Joseph D. Morelle", "repCandidate": "La’Ron D. Singletary", "demVotes": 139875, "repVotes": 108010, "totalVotes": 247885, "margin": -12.86, "demIncumbent": true },
-      { "year": 2020, "demPct": 60.73, "repPct": 37.55, "demCandidate": "Joseph D. Morelle", "repCandidate": "George Mitris", "demVotes": 187503, "repVotes": 115940, "totalVotes": 308768, "margin": -23.18, "demIncumbent": true },
-      { "year": 2018, "demPct": 61.83, "repPct": 38.17, "demCandidate": "Joseph D. Morelle", "repCandidate": "Jim Maxwell", "demVotes": 147979, "repVotes": 91342, "totalVotes": 239321, "margin": -23.66 },
-      { "year": 2016, "demPct": 59.7, "repPct": 40.3, "demCandidate": "Louise McIntosh Slaughter", "repCandidate": "Mark W. Assini", "demVotes": 168660, "repVotes": 113840, "totalVotes": 282500, "margin": -19.4, "demIncumbent": true }
+      { "year": 2024, "demPct": 58.68, "repPct": 41.32, "demCandidate": "Joseph Morelle", "repCandidate": "Gregg Sadwick", "demVotes": 200507, "repVotes": 141195, "totalVotes": 341702, "margin": -17.36, "demIncumbent": true },
+      { "year": 2022, "demPct": 56.43, "repPct": 43.57, "demCandidate": "Joseph Morelle", "repCandidate": "La’Ron Singletary", "demVotes": 139875, "repVotes": 108010, "totalVotes": 247885, "margin": -12.86, "demIncumbent": true },
+      { "year": 2020, "demPct": 60.73, "repPct": 37.55, "demCandidate": "Joseph Morelle", "repCandidate": "George Mitris", "demVotes": 187503, "repVotes": 115940, "totalVotes": 308768, "margin": -23.18, "demIncumbent": true },
+      { "year": 2018, "demPct": 61.83, "repPct": 38.17, "demCandidate": "Joseph Morelle", "repCandidate": "Jim Maxwell", "demVotes": 147979, "repVotes": 91342, "totalVotes": 239321, "margin": -23.66 },
+      { "year": 2016, "demPct": 59.7, "repPct": 40.3, "demCandidate": "Louise McIntosh Slaughter", "repCandidate": "Mark Assini", "demVotes": 168660, "repVotes": 113840, "totalVotes": 282500, "margin": -19.4, "demIncumbent": true }
     ]
   },
   {
@@ -12644,10 +12644,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Timothy Kennedy",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 66.74, "repPct": 33.26, "demCandidate": "Timothy M. Kennedy", "repCandidate": "Anthony G. Marecki", "demVotes": 190668, "repVotes": 95035, "totalVotes": 285703, "margin": -33.48, "demIncumbent": true },
-      { "year": 2022, "demPct": 66.8, "repPct": 33.2, "demCandidate": "Brian Higgins", "repCandidate": "Steven L. Sams II", "demVotes": 141942, "repVotes": 70547, "totalVotes": 212489, "margin": -33.6, "demIncumbent": true },
-      { "year": 2020, "demPct": 67.75, "repPct": 30.7, "demCandidate": "Brian Higgins", "repCandidate": "Ricky T. Donovan, Sr.", "demVotes": 202315, "repVotes": 91687, "totalVotes": 298630, "margin": -37.05, "demIncumbent": true },
-      { "year": 2018, "demPct": 71.85, "repPct": 28.15, "demCandidate": "Brian Higgins", "repCandidate": "Renee M. Zeno", "demVotes": 156968, "repVotes": 61488, "totalVotes": 218456, "margin": -43.7, "demIncumbent": true },
+      { "year": 2024, "demPct": 66.74, "repPct": 33.26, "demCandidate": "Timothy Kennedy", "repCandidate": "Anthony Marecki", "demVotes": 190668, "repVotes": 95035, "totalVotes": 285703, "margin": -33.48, "demIncumbent": true },
+      { "year": 2022, "demPct": 66.8, "repPct": 33.2, "demCandidate": "Brian Higgins", "repCandidate": "Steven Sams", "demVotes": 141942, "repVotes": 70547, "totalVotes": 212489, "margin": -33.6, "demIncumbent": true },
+      { "year": 2020, "demPct": 67.75, "repPct": 30.7, "demCandidate": "Brian Higgins", "repCandidate": "Ricky Donovan", "demVotes": 202315, "repVotes": 91687, "totalVotes": 298630, "margin": -37.05, "demIncumbent": true },
+      { "year": 2018, "demPct": 71.85, "repPct": 28.15, "demCandidate": "Brian Higgins", "repCandidate": "Renee Zeno", "demVotes": 156968, "repVotes": 61488, "totalVotes": 218456, "margin": -43.7, "demIncumbent": true },
       { "year": 2016, "demPct": 77.43, "repPct": 22.57, "demCandidate": "Brian Higgins", "repCandidate": "Shelly Schratz", "demVotes": 195322, "repVotes": 56930, "totalVotes": 252252, "margin": -54.86, "demIncumbent": true }
     ]
   },
@@ -12672,14 +12672,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Don Davis", "party": "D", "incumbent": true },
       "rep": { "name": "Laurie Buckhout", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Donald Davis",
+    "seatHolder": "Don Davis",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 49.52, "repPct": 47.84, "demCandidate": "Donald G. Davis", "repCandidate": "Laurie Buckhout", "demVotes": 186341, "repVotes": 180034, "totalVotes": 376324, "margin": -1.68, "demIncumbent": true },
+      { "year": 2024, "demPct": 49.52, "repPct": 47.84, "demCandidate": "Donald Davis", "repCandidate": "Laurie Buckhout", "demVotes": 186341, "repVotes": 180034, "totalVotes": 376324, "margin": -1.68, "demIncumbent": true },
       { "year": 2022, "demPct": 52.37, "repPct": 47.63, "demCandidate": "Don Davis", "repCandidate": "Sandy Smith", "demVotes": 134996, "repVotes": 122780, "totalVotes": 257776, "margin": -4.74 },
-      { "year": 2020, "demPct": 54.18, "repPct": 45.82, "demCandidate": "G. K. Butterfield", "repCandidate": "Sandy Smith", "demVotes": 188870, "repVotes": 159748, "totalVotes": 348618, "margin": -8.36, "demIncumbent": true },
-      { "year": 2018, "demPct": 69.85, "repPct": 30.15, "demCandidate": "G. K. Butterfield", "repCandidate": "Roger W. Allison", "demVotes": 190457, "repVotes": 82218, "totalVotes": 272675, "margin": -39.7, "demIncumbent": true },
-      { "year": 2016, "demPct": 68.62, "repPct": 28.96, "demCandidate": "G. K. Butterfield", "repCandidate": "H. Powell Dew, Jr.", "demVotes": 240661, "repVotes": 101567, "totalVotes": 350699, "margin": -39.66, "demIncumbent": true }
+      { "year": 2020, "demPct": 54.18, "repPct": 45.82, "demCandidate": "Butterfield", "repCandidate": "Sandy Smith", "demVotes": 188870, "repVotes": 159748, "totalVotes": 348618, "margin": -8.36, "demIncumbent": true },
+      { "year": 2018, "demPct": 69.85, "repPct": 30.15, "demCandidate": "Butterfield", "repCandidate": "Roger Allison", "demVotes": 190457, "repVotes": 82218, "totalVotes": 272675, "margin": -39.7, "demIncumbent": true },
+      { "year": 2016, "demPct": 68.62, "repPct": 28.96, "demCandidate": "Butterfield", "repCandidate": "Powell Dew", "demVotes": 240661, "repVotes": 101567, "totalVotes": 350699, "margin": -39.66, "demIncumbent": true }
     ]
   },
   {
@@ -12708,11 +12708,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Deborah Ross",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 66.25, "repPct": 31.61, "demCandidate": "Deborah K. Ross", "repCandidate": "Alan D. Swain", "demVotes": 268662, "repVotes": 128164, "totalVotes": 405517, "margin": -34.64, "demIncumbent": true },
-      { "year": 2022, "demPct": 64.68, "repPct": 35.32, "demCandidate": "Deborah K. Ross", "repCandidate": "Christine E. Villaverde", "demVotes": 190714, "repVotes": 104155, "totalVotes": 294869, "margin": -29.36, "demIncumbent": true },
-      { "year": 2020, "demPct": 62.96, "repPct": 34.83, "demCandidate": "Deborah K. Ross", "repCandidate": "Alan D. Swain", "demVotes": 311887, "repVotes": 172544, "totalVotes": 495345, "margin": -28.13 },
+      { "year": 2024, "demPct": 66.25, "repPct": 31.61, "demCandidate": "Deborah Ross", "repCandidate": "Alan Swain", "demVotes": 268662, "repVotes": 128164, "totalVotes": 405517, "margin": -34.64, "demIncumbent": true },
+      { "year": 2022, "demPct": 64.68, "repPct": 35.32, "demCandidate": "Deborah Ross", "repCandidate": "Christine Villaverde", "demVotes": 190714, "repVotes": 104155, "totalVotes": 294869, "margin": -29.36, "demIncumbent": true },
+      { "year": 2020, "demPct": 62.96, "repPct": 34.83, "demCandidate": "Deborah Ross", "repCandidate": "Alan Swain", "demVotes": 311887, "repVotes": 172544, "totalVotes": 495345, "margin": -28.13 },
       { "year": 2018, "demPct": 45.82, "repPct": 51.27, "demCandidate": "Linda Coleman", "repCandidate": "George Holding", "demVotes": 151977, "repVotes": 170072, "totalVotes": 331704, "margin": 5.45, "repIncumbent": true },
-      { "year": 2016, "demPct": 43.29, "repPct": 56.71, "demCandidate": "John P. McNeil", "repCandidate": "George Holding", "demVotes": 169082, "repVotes": 221485, "totalVotes": 390567, "margin": 13.42 }
+      { "year": 2016, "demPct": 43.29, "repPct": 56.71, "demCandidate": "John McNeil", "repCandidate": "George Holding", "demVotes": 169082, "repVotes": 221485, "totalVotes": 390567, "margin": 13.42 }
     ]
   },
   {
@@ -12741,11 +12741,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Gregory Murphy",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 22.62, "repPct": 77.38, "demCandidate": "Gheorghe Cormos (L)", "repCandidate": "Gregory F. Murphy", "demVotes": 72565, "repVotes": 248276, "totalVotes": 320841, "margin": 54.76, "repIncumbent": true },
-      { "year": 2022, "demPct": 33.1, "repPct": 66.9, "demCandidate": "Barbara D. Gaskins", "repCandidate": "Gregory F. Murphy", "demVotes": 82378, "repVotes": 166520, "totalVotes": 248898, "margin": 33.8, "repIncumbent": true },
-      { "year": 2020, "demPct": 36.62, "repPct": 63.38, "demCandidate": "Daryl Farrow", "repCandidate": "Gregory F. Murphy", "demVotes": 132752, "repVotes": 229800, "totalVotes": 362552, "margin": 26.76, "repIncumbent": true },
-      { "year": 2018, "demPct": 0, "repPct": 100, "repCandidate": "Walter B. Jones", "repVotes": 187901, "totalVotes": 187901, "margin": 100, "repIncumbent": true },
-      { "year": 2016, "demPct": 32.8, "repPct": 67.2, "demCandidate": "Ernest T. Reeves", "repCandidate": "Walter B. Jones", "demVotes": 106170, "repVotes": 217531, "totalVotes": 323701, "margin": 34.4, "repIncumbent": true }
+      { "year": 2024, "demPct": 22.62, "repPct": 77.38, "demCandidate": "Gheorghe Cormos (L)", "repCandidate": "Gregory Murphy", "demVotes": 72565, "repVotes": 248276, "totalVotes": 320841, "margin": 54.76, "repIncumbent": true },
+      { "year": 2022, "demPct": 33.1, "repPct": 66.9, "demCandidate": "Barbara Gaskins", "repCandidate": "Gregory Murphy", "demVotes": 82378, "repVotes": 166520, "totalVotes": 248898, "margin": 33.8, "repIncumbent": true },
+      { "year": 2020, "demPct": 36.62, "repPct": 63.38, "demCandidate": "Daryl Farrow", "repCandidate": "Gregory Murphy", "demVotes": 132752, "repVotes": 229800, "totalVotes": 362552, "margin": 26.76, "repIncumbent": true },
+      { "year": 2018, "demPct": 0, "repPct": 100, "repCandidate": "Walter Jones", "repVotes": 187901, "totalVotes": 187901, "margin": 100, "repIncumbent": true },
+      { "year": 2016, "demPct": 32.8, "repPct": 67.2, "demCandidate": "Ernest Reeves", "repCandidate": "Walter Jones", "demVotes": 106170, "repVotes": 217531, "totalVotes": 323701, "margin": 34.4, "repIncumbent": true }
     ]
   },
   {
@@ -12774,11 +12774,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Valerie Foushee",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 71.85, "repPct": 26.14, "demCandidate": "Valerie P. Foushee", "repCandidate": "Eric Blankenburg", "demVotes": 308064, "repVotes": 112084, "totalVotes": 428780, "margin": -45.71, "demIncumbent": true },
-      { "year": 2022, "demPct": 66.91, "repPct": 33.09, "demCandidate": "Valerie P. Foushee", "repCandidate": "Courtney Geels", "demVotes": 194983, "repVotes": 96442, "totalVotes": 291425, "margin": -33.82 },
-      { "year": 2020, "demPct": 67.33, "repPct": 32.67, "demCandidate": "David E. Price", "repCandidate": "Robert Thomas", "demVotes": 332421, "repVotes": 161298, "totalVotes": 493719, "margin": -34.66, "demIncumbent": true },
-      { "year": 2018, "demPct": 72.37, "repPct": 24.03, "demCandidate": "David E. Price", "repCandidate": "Steve A. Von Loor", "demVotes": 247067, "repVotes": 82052, "totalVotes": 341403, "margin": -48.34, "demIncumbent": true },
-      { "year": 2016, "demPct": 68.22, "repPct": 31.78, "demCandidate": "David E. Price", "repCandidate": "Sue Googe", "demVotes": 279380, "repVotes": 130161, "totalVotes": 409541, "margin": -36.44, "demIncumbent": true }
+      { "year": 2024, "demPct": 71.85, "repPct": 26.14, "demCandidate": "Valerie Foushee", "repCandidate": "Eric Blankenburg", "demVotes": 308064, "repVotes": 112084, "totalVotes": 428780, "margin": -45.71, "demIncumbent": true },
+      { "year": 2022, "demPct": 66.91, "repPct": 33.09, "demCandidate": "Valerie Foushee", "repCandidate": "Courtney Geels", "demVotes": 194983, "repVotes": 96442, "totalVotes": 291425, "margin": -33.82 },
+      { "year": 2020, "demPct": 67.33, "repPct": 32.67, "demCandidate": "David Price", "repCandidate": "Robert Thomas", "demVotes": 332421, "repVotes": 161298, "totalVotes": 493719, "margin": -34.66, "demIncumbent": true },
+      { "year": 2018, "demPct": 72.37, "repPct": 24.03, "demCandidate": "David Price", "repCandidate": "Steve Von Loor", "demVotes": 247067, "repVotes": 82052, "totalVotes": 341403, "margin": -48.34, "demIncumbent": true },
+      { "year": 2016, "demPct": 68.22, "repPct": 31.78, "demCandidate": "David Price", "repCandidate": "Sue Googe", "demVotes": 279380, "repVotes": 130161, "totalVotes": 409541, "margin": -36.44, "demIncumbent": true }
     ]
   },
   {
@@ -12840,8 +12840,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Addison McDowell",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 30.84, "repPct": 69.16, "demCandidate": "Kevin E. Hayes (C)", "repCandidate": "Addison McDowell", "demVotes": 104017, "repVotes": 233303, "totalVotes": 337320, "margin": 38.32 },
-      { "year": 2022, "demPct": 53.88, "repPct": 45.03, "demCandidate": "Kathy E. Manning", "repCandidate": "Christian Castelli", "demVotes": 139553, "repVotes": 116635, "totalVotes": 258998, "margin": -8.85, "demIncumbent": true },
+      { "year": 2024, "demPct": 30.84, "repPct": 69.16, "demCandidate": "Kevin Hayes (C)", "repCandidate": "Addison McDowell", "demVotes": 104017, "repVotes": 233303, "totalVotes": 337320, "margin": 38.32 },
+      { "year": 2022, "demPct": 53.88, "repPct": 45.03, "demCandidate": "Kathy Manning", "repCandidate": "Christian Castelli", "demVotes": 139553, "repVotes": 116635, "totalVotes": 258998, "margin": -8.85, "demIncumbent": true },
       { "year": 2020, "demPct": 62.27, "repPct": 37.73, "demCandidate": "Kathy Manning", "repCandidate": "Lee Haywood", "demVotes": 253531, "repVotes": 153598, "totalVotes": 407129, "margin": -24.54 },
       { "year": 2018, "demPct": 43.48, "repPct": 56.52, "demCandidate": "Ryan Watts", "repCandidate": "Mark Walker", "demVotes": 123651, "repVotes": 160709, "totalVotes": 284360, "margin": 13.04, "repIncumbent": true },
       { "year": 2016, "demPct": 40.77, "repPct": 59.23, "demCandidate": "Pete Glidewell", "repCandidate": "Mark Walker", "demVotes": 143167, "repVotes": 207983, "totalVotes": 351150, "margin": 18.46, "repIncumbent": true }
@@ -12873,11 +12873,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "David Rouzer",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 41.41, "repPct": 58.59, "demCandidate": "Marlando D. Pridgen", "repCandidate": "David Rouzer", "demVotes": 179512, "repVotes": 254022, "totalVotes": 433534, "margin": 17.18, "repIncumbent": true },
+      { "year": 2024, "demPct": 41.41, "repPct": 58.59, "demCandidate": "Marlando Pridgen", "repCandidate": "David Rouzer", "demVotes": 179512, "repVotes": 254022, "totalVotes": 433534, "margin": 17.18, "repIncumbent": true },
       { "year": 2022, "demPct": 42.29, "repPct": 57.71, "demCandidate": "Charles Graham", "repCandidate": "David Rouzer", "demVotes": 120222, "repVotes": 164047, "totalVotes": 284269, "margin": 15.42, "repIncumbent": true },
-      { "year": 2020, "demPct": 39.59, "repPct": 60.25, "demCandidate": "Christopher M. Ward", "repCandidate": "David Rouzer", "demVotes": 179045, "repVotes": 272443, "totalVotes": 452208, "margin": 20.66, "repIncumbent": true },
+      { "year": 2020, "demPct": 39.59, "repPct": 60.25, "demCandidate": "Christopher Ward", "repCandidate": "David Rouzer", "demVotes": 179045, "repVotes": 272443, "totalVotes": 452208, "margin": 20.66, "repIncumbent": true },
       { "year": 2018, "demPct": 42.8, "repPct": 55.54, "demCandidate": "Kyle Horton", "repCandidate": "David Rouzer", "demVotes": 120838, "repVotes": 156809, "totalVotes": 282312, "margin": 12.74, "repIncumbent": true },
-      { "year": 2016, "demPct": 39.09, "repPct": 60.91, "demCandidate": "J. Wesley Casteen", "repCandidate": "David Rouzer", "demVotes": 135905, "repVotes": 211801, "totalVotes": 347706, "margin": 21.82, "repIncumbent": true }
+      { "year": 2016, "demPct": 39.09, "repPct": 60.91, "demCandidate": "Wesley Casteen", "repCandidate": "David Rouzer", "demVotes": 135905, "repVotes": 211801, "totalVotes": 347706, "margin": 21.82, "repIncumbent": true }
     ]
   },
   {
@@ -12906,7 +12906,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Mark Harris",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 40.39, "repPct": 59.61, "demCandidate": "Justin E. Dues", "repCandidate": "Mark Harris", "demVotes": 161709, "repVotes": 238640, "totalVotes": 400349, "margin": 19.22 },
+      { "year": 2024, "demPct": 40.39, "repPct": 59.61, "demCandidate": "Justin Dues", "repCandidate": "Mark Harris", "demVotes": 161709, "repVotes": 238640, "totalVotes": 400349, "margin": 19.22 },
       { "year": 2022, "demPct": 30.09, "repPct": 69.91, "demCandidate": "Scott Huffman", "repCandidate": "Dan Bishop", "demVotes": 79192, "repVotes": 183998, "totalVotes": 263190, "margin": 39.82 },
       { "year": 2020, "demPct": 46.72, "repPct": 53.28, "demCandidate": "Patricia Timmons-Goodson", "repCandidate": "Richard Hudson", "demVotes": 177781, "repVotes": 202774, "totalVotes": 380555, "margin": 6.56, "repIncumbent": true },
       { "year": 2018, "demPct": 44.66, "repPct": 55.34, "demCandidate": "Frank McNeill", "repCandidate": "Richard Hudson", "demVotes": 114119, "repVotes": 141402, "totalVotes": 255521, "margin": 10.68, "repIncumbent": true },
@@ -12941,7 +12941,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 37.75, "repPct": 56.3, "demCandidate": "Nigel William Bristow", "repCandidate": "Richard Hudson", "demVotes": 140852, "repVotes": 210042, "totalVotes": 373077, "margin": 18.55, "repIncumbent": true },
       { "year": 2022, "demPct": 43.5, "repPct": 56.5, "demCandidate": "Ben Clark", "repCandidate": "Richard Hudson", "demVotes": 101202, "repVotes": 131453, "totalVotes": 232655, "margin": 13 },
-      { "year": 2020, "demPct": 44.41, "repPct": 55.59, "demCandidate": "Cynthia L. Wallace", "repCandidate": "Dan Bishop", "demVotes": 179463, "repVotes": 224661, "totalVotes": 404124, "margin": 11.18, "repIncumbent": true },
+      { "year": 2020, "demPct": 44.41, "repPct": 55.59, "demCandidate": "Cynthia Wallace", "repCandidate": "Dan Bishop", "demVotes": 179463, "repVotes": 224661, "totalVotes": 404124, "margin": 11.18, "repIncumbent": true },
       { "year": 2018, "demPct": 48.93, "repPct": 49.25, "demCandidate": "Dan McCready", "repCandidate": "Mark Harris", "demVotes": 138341, "repVotes": 139246, "totalVotes": 282717, "margin": 0.32 },
       { "year": 2016, "demPct": 41.82, "repPct": 58.18, "demCandidate": "Christian Cano", "repCandidate": "Robert Pittenger", "demVotes": 139041, "repVotes": 193452, "totalVotes": 332493, "margin": 16.36, "repIncumbent": true }
     ]
@@ -12972,11 +12972,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Pat Harrigan",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 38.21, "repPct": 57.49, "demCandidate": "Ralph R. Scott, Jr.", "repCandidate": "Pat Harrigan", "demVotes": 155383, "repVotes": 233814, "totalVotes": 406695, "margin": 19.28 },
-      { "year": 2022, "demPct": 27.28, "repPct": 72.59, "demCandidate": "Pam Genant", "repCandidate": "Patrick T. McHenry", "demVotes": 73174, "repVotes": 194681, "totalVotes": 268207, "margin": 45.31, "repIncumbent": true },
-      { "year": 2020, "demPct": 31.09, "repPct": 68.91, "demCandidate": "David Parker", "repCandidate": "Patrick T. McHenry", "demVotes": 128189, "repVotes": 284095, "totalVotes": 412284, "margin": 37.82, "repIncumbent": true },
-      { "year": 2018, "demPct": 40.71, "repPct": 59.29, "demCandidate": "David Wilson Brown", "repCandidate": "Patrick T. McHenry", "demVotes": 113259, "repVotes": 164969, "totalVotes": 278228, "margin": 18.58, "repIncumbent": true },
-      { "year": 2016, "demPct": 36.86, "repPct": 63.14, "demCandidate": "Andy Millard", "repCandidate": "Patrick T. McHenry", "demVotes": 128919, "repVotes": 220825, "totalVotes": 349744, "margin": 26.28, "repIncumbent": true }
+      { "year": 2024, "demPct": 38.21, "repPct": 57.49, "demCandidate": "Ralph Scott", "repCandidate": "Pat Harrigan", "demVotes": 155383, "repVotes": 233814, "totalVotes": 406695, "margin": 19.28 },
+      { "year": 2022, "demPct": 27.28, "repPct": 72.59, "demCandidate": "Pam Genant", "repCandidate": "Patrick McHenry", "demVotes": 73174, "repVotes": 194681, "totalVotes": 268207, "margin": 45.31, "repIncumbent": true },
+      { "year": 2020, "demPct": 31.09, "repPct": 68.91, "demCandidate": "David Parker", "repCandidate": "Patrick McHenry", "demVotes": 128189, "repVotes": 284095, "totalVotes": 412284, "margin": 37.82, "repIncumbent": true },
+      { "year": 2018, "demPct": 40.71, "repPct": 59.29, "demCandidate": "David Wilson Brown", "repCandidate": "Patrick McHenry", "demVotes": 113259, "repVotes": 164969, "totalVotes": 278228, "margin": 18.58, "repIncumbent": true },
+      { "year": 2016, "demPct": 36.86, "repPct": 63.14, "demCandidate": "Andy Millard", "repCandidate": "Patrick McHenry", "demVotes": 128919, "repVotes": 220825, "totalVotes": 349744, "margin": 26.28, "repIncumbent": true }
     ]
   },
   {
@@ -13006,7 +13006,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 43.23, "repPct": 56.77, "demCandidate": "Caleb Rudow", "repCandidate": "Chuck Edwards", "demVotes": 186977, "repVotes": 245546, "totalVotes": 432523, "margin": 13.54, "repIncumbent": true },
       { "year": 2022, "demPct": 44.51, "repPct": 53.79, "demCandidate": "Jasmine Beach-Ferrara", "repCandidate": "Chuck Edwards", "demVotes": 144165, "repVotes": 174232, "totalVotes": 323912, "margin": 9.28 },
       { "year": 2020, "demPct": 42.34, "repPct": 54.5, "demCandidate": "Moe Davis", "repCandidate": "Madison Cawthorn", "demVotes": 190609, "repVotes": 245351, "totalVotes": 450145, "margin": 12.16 },
-      { "year": 2018, "demPct": 38.75, "repPct": 59.21, "demCandidate": "Phillip G. Price", "repCandidate": "Mark Meadows", "demVotes": 116508, "repVotes": 178012, "totalVotes": 300666, "margin": 20.46, "repIncumbent": true },
+      { "year": 2018, "demPct": 38.75, "repPct": 59.21, "demCandidate": "Phillip Price", "repCandidate": "Mark Meadows", "demVotes": 116508, "repVotes": 178012, "totalVotes": 300666, "margin": 20.46, "repIncumbent": true },
       { "year": 2016, "demPct": 35.91, "repPct": 64.09, "demCandidate": "Rick Bryson", "repCandidate": "Mark Meadows", "demVotes": 129103, "repVotes": 230405, "totalVotes": 359508, "margin": 28.18, "repIncumbent": true }
     ]
   },
@@ -13033,14 +13033,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Alma Adams", "party": "D", "incumbent": true },
       "rep": { "name": "Jack Codiga", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Alma S. Adams",
+    "seatHolder": "Alma Adams",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 74.02, "repPct": 25.98, "demCandidate": "Alma S. Adams", "repCandidate": "Addul Ali", "demVotes": 259627, "repVotes": 91128, "totalVotes": 350755, "margin": -48.04, "demIncumbent": true },
-      { "year": 2022, "demPct": 62.75, "repPct": 37.25, "demCandidate": "Alma S. Adams", "repCandidate": "Tyler Lee", "demVotes": 140494, "repVotes": 83414, "totalVotes": 223908, "margin": -25.5, "demIncumbent": true },
-      { "year": 2020, "demPct": 100, "repPct": 0, "demCandidate": "Alma S. Adams", "demVotes": 341457, "totalVotes": 341457, "margin": -100, "demIncumbent": true },
-      { "year": 2018, "demPct": 73.07, "repPct": 26.93, "demCandidate": "Alma S. Adams", "repCandidate": "Paul Wright", "demVotes": 203974, "repVotes": 75164, "totalVotes": 279138, "margin": -46.14, "demIncumbent": true },
-      { "year": 2016, "demPct": 67.02, "repPct": 32.98, "demCandidate": "Alma S. Adams", "repCandidate": "Leon Threatt", "demVotes": 234115, "repVotes": 115185, "totalVotes": 349300, "margin": -34.04, "demIncumbent": true }
+      { "year": 2024, "demPct": 74.02, "repPct": 25.98, "demCandidate": "Alma Adams", "repCandidate": "Addul Ali", "demVotes": 259627, "repVotes": 91128, "totalVotes": 350755, "margin": -48.04, "demIncumbent": true },
+      { "year": 2022, "demPct": 62.75, "repPct": 37.25, "demCandidate": "Alma Adams", "repCandidate": "Tyler Lee", "demVotes": 140494, "repVotes": 83414, "totalVotes": 223908, "margin": -25.5, "demIncumbent": true },
+      { "year": 2020, "demPct": 100, "repPct": 0, "demCandidate": "Alma Adams", "demVotes": 341457, "totalVotes": 341457, "margin": -100, "demIncumbent": true },
+      { "year": 2018, "demPct": 73.07, "repPct": 26.93, "demCandidate": "Alma Adams", "repCandidate": "Paul Wright", "demVotes": 203974, "repVotes": 75164, "totalVotes": 279138, "margin": -46.14, "demIncumbent": true },
+      { "year": 2016, "demPct": 67.02, "repPct": 32.98, "demCandidate": "Alma Adams", "repCandidate": "Leon Threatt", "demVotes": 234115, "repVotes": 115185, "totalVotes": 349300, "margin": -34.04, "demIncumbent": true }
     ]
   },
   {
@@ -13191,14 +13191,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Todd Wilson", "party": "D", "incumbent": false },
       "rep": { "name": "David Taylor", "party": "R", "incumbent": true }
     },
-    "seatHolder": "David J. Taylor",
+    "seatHolder": "David Taylor",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 26.44, "repPct": 73.56, "demCandidate": "Samantha Meadows", "repCandidate": "David J. Taylor", "demVotes": 96401, "repVotes": 268211, "totalVotes": 364616, "margin": 47.12 },
-      { "year": 2022, "demPct": 25.5, "repPct": 74.5, "demCandidate": "Samantha Meadows", "repCandidate": "Brad R. Wenstrup", "demVotes": 65745, "repVotes": 192117, "totalVotes": 257862, "margin": 49, "repIncumbent": true },
-      { "year": 2020, "demPct": 38.91, "repPct": 61.08, "demCandidate": "Jaime M. Castle", "repCandidate": "Brad R. Wenstrup", "demVotes": 146781, "repVotes": 230430, "totalVotes": 377248, "margin": 22.17, "repIncumbent": true },
-      { "year": 2018, "demPct": 41.2, "repPct": 57.55, "demCandidate": "Jill Schiller", "repCandidate": "Brad R. Wenstrup", "demVotes": 119333, "repVotes": 166714, "totalVotes": 289661, "margin": 16.35, "repIncumbent": true },
-      { "year": 2016, "demPct": 32.82, "repPct": 65, "demCandidate": "William R. Smith", "repCandidate": "Brad R. Wenstrup", "demVotes": 111694, "repVotes": 221193, "totalVotes": 340279, "margin": 32.18, "repIncumbent": true }
+      { "year": 2024, "demPct": 26.44, "repPct": 73.56, "demCandidate": "Samantha Meadows", "repCandidate": "David Taylor", "demVotes": 96401, "repVotes": 268211, "totalVotes": 364616, "margin": 47.12 },
+      { "year": 2022, "demPct": 25.5, "repPct": 74.5, "demCandidate": "Samantha Meadows", "repCandidate": "Brad Wenstrup", "demVotes": 65745, "repVotes": 192117, "totalVotes": 257862, "margin": 49, "repIncumbent": true },
+      { "year": 2020, "demPct": 38.91, "repPct": 61.08, "demCandidate": "Jaime Castle", "repCandidate": "Brad Wenstrup", "demVotes": 146781, "repVotes": 230430, "totalVotes": 377248, "margin": 22.17, "repIncumbent": true },
+      { "year": 2018, "demPct": 41.2, "repPct": 57.55, "demCandidate": "Jill Schiller", "repCandidate": "Brad Wenstrup", "demVotes": 119333, "repVotes": 166714, "totalVotes": 289661, "margin": 16.35, "repIncumbent": true },
+      { "year": 2016, "demPct": 32.82, "repPct": 65, "demCandidate": "William Smith", "repCandidate": "Brad Wenstrup", "demVotes": 111694, "repVotes": 221193, "totalVotes": 340279, "margin": 32.18, "repIncumbent": true }
     ]
   },
   {
@@ -13228,8 +13228,8 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 70.74, "repPct": 29.26, "demCandidate": "Joyce Beatty", "repCandidate": "Michael Young", "demVotes": 242632, "repVotes": 100355, "totalVotes": 342987, "margin": -41.48, "demIncumbent": true },
-      { "year": 2022, "demPct": 70.45, "repPct": 29.54, "demCandidate": "Joyce Beatty", "repCandidate": "Lee R. Stahley", "demVotes": 182324, "repVotes": 76455, "totalVotes": 258797, "margin": -40.91, "demIncumbent": true },
-      { "year": 2020, "demPct": 70.83, "repPct": 29.14, "demCandidate": "Joyce Beatty", "repCandidate": "Mark F. Richardson", "demVotes": 227420, "repVotes": 93569, "totalVotes": 321092, "margin": -41.69, "demIncumbent": true },
+      { "year": 2022, "demPct": 70.45, "repPct": 29.54, "demCandidate": "Joyce Beatty", "repCandidate": "Lee Stahley", "demVotes": 182324, "repVotes": 76455, "totalVotes": 258797, "margin": -40.91, "demIncumbent": true },
+      { "year": 2020, "demPct": 70.83, "repPct": 29.14, "demCandidate": "Joyce Beatty", "repCandidate": "Mark Richardson", "demVotes": 227420, "repVotes": 93569, "totalVotes": 321092, "margin": -41.69, "demIncumbent": true },
       { "year": 2018, "demPct": 73.61, "repPct": 26.37, "demCandidate": "Joyce Beatty", "repCandidate": "Jim Burgess", "demVotes": 181575, "repVotes": 65040, "totalVotes": 246677, "margin": -47.24, "demIncumbent": true },
       { "year": 2016, "demPct": 68.57, "repPct": 31.43, "demCandidate": "Joyce Beatty", "repCandidate": "John Adams", "demVotes": 199791, "repVotes": 91560, "totalVotes": 291351, "margin": -37.14, "demIncumbent": true }
     ]
@@ -13255,14 +13255,14 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.82,
     "candidates": {
       "dem": { "name": "Tamara Wilson", "party": "D", "incumbent": false },
-      "rep": { "name": "James Jordan", "party": "R", "incumbent": true }
+      "rep": { "name": "Jim Jordan", "party": "R", "incumbent": true }
     },
     "seatHolder": "Jim Jordan",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 31.54, "repPct": 68.46, "demCandidate": "Tamie Wilson", "repCandidate": "Jim Jordan", "demVotes": 125905, "repVotes": 273297, "totalVotes": 399202, "margin": 36.92, "repIncumbent": true },
       { "year": 2022, "demPct": 30.81, "repPct": 69.19, "demCandidate": "Tamie Wilson", "repCandidate": "Jim Jordan", "demVotes": 89383, "repVotes": 200773, "totalVotes": 290156, "margin": 38.38, "repIncumbent": true },
-      { "year": 2020, "demPct": 29.31, "repPct": 67.85, "demCandidate": "Shannon M. Freshour", "repCandidate": "Jim Jordan", "demVotes": 101897, "repVotes": 235875, "totalVotes": 347626, "margin": 38.54, "repIncumbent": true },
+      { "year": 2020, "demPct": 29.31, "repPct": 67.85, "demCandidate": "Shannon Freshour", "repCandidate": "Jim Jordan", "demVotes": 101897, "repVotes": 235875, "totalVotes": 347626, "margin": 38.54, "repIncumbent": true },
       { "year": 2018, "demPct": 34.74, "repPct": 65.26, "demCandidate": "Janet Garrett", "repCandidate": "Jim Jordan", "demVotes": 89412, "repVotes": 167993, "totalVotes": 257405, "margin": 30.52, "repIncumbent": true },
       { "year": 2016, "demPct": 32.01, "repPct": 67.99, "demCandidate": "Janet Garrett", "repCandidate": "Jim Jordan", "demVotes": 98981, "repVotes": 210227, "totalVotes": 309208, "margin": 35.98, "repIncumbent": true }
     ]
@@ -13290,14 +13290,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Daniel Burket", "party": "D", "incumbent": false },
       "rep": { "name": "Robert Latta", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Robert E. Latta",
+    "seatHolder": "Robert Latta",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 32.49, "repPct": 67.51, "demCandidate": "Keith Mundy", "repCandidate": "Robert E. Latta", "demVotes": 123024, "repVotes": 255633, "totalVotes": 378657, "margin": 35.02, "repIncumbent": true },
-      { "year": 2022, "demPct": 33.09, "repPct": 66.91, "demCandidate": "Craig Swartz", "repCandidate": "Robert E. Latta", "demVotes": 92634, "repVotes": 187303, "totalVotes": 279937, "margin": 33.82, "repIncumbent": true },
-      { "year": 2020, "demPct": 32, "repPct": 68, "demCandidate": "Nick Rubando", "repCandidate": "Robert E. Latta", "demVotes": 120962, "repVotes": 257019, "totalVotes": 377981, "margin": 36, "repIncumbent": true },
-      { "year": 2018, "demPct": 35.14, "repPct": 62.26, "demCandidate": "J. Michael Galbraith", "repCandidate": "Robert E. Latta", "demVotes": 99655, "repVotes": 176569, "totalVotes": 283617, "margin": 27.12, "repIncumbent": true },
-      { "year": 2016, "demPct": 29.1, "repPct": 70.9, "demCandidate": "James Neu, Jr.", "repCandidate": "Robert E. Latta", "demVotes": 100392, "repVotes": 244599, "totalVotes": 344991, "margin": 41.8, "repIncumbent": true }
+      { "year": 2024, "demPct": 32.49, "repPct": 67.51, "demCandidate": "Keith Mundy", "repCandidate": "Robert Latta", "demVotes": 123024, "repVotes": 255633, "totalVotes": 378657, "margin": 35.02, "repIncumbent": true },
+      { "year": 2022, "demPct": 33.09, "repPct": 66.91, "demCandidate": "Craig Swartz", "repCandidate": "Robert Latta", "demVotes": 92634, "repVotes": 187303, "totalVotes": 279937, "margin": 33.82, "repIncumbent": true },
+      { "year": 2020, "demPct": 32, "repPct": 68, "demCandidate": "Nick Rubando", "repCandidate": "Robert Latta", "demVotes": 120962, "repVotes": 257019, "totalVotes": 377981, "margin": 36, "repIncumbent": true },
+      { "year": 2018, "demPct": 35.14, "repPct": 62.26, "demCandidate": "Michael Galbraith", "repCandidate": "Robert Latta", "demVotes": 99655, "repVotes": 176569, "totalVotes": 283617, "margin": 27.12, "repIncumbent": true },
+      { "year": 2016, "demPct": 29.1, "repPct": 70.9, "demCandidate": "James Neu", "repCandidate": "Robert Latta", "demVotes": 100392, "repVotes": 244599, "totalVotes": 344991, "margin": 41.8, "repIncumbent": true }
     ]
   },
   {
@@ -13323,14 +13323,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Malcolm Ritchie", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Rulli", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Michael A. Rulli",
+    "seatHolder": "Michael Rulli",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 33.26, "repPct": 66.74, "demCandidate": "Michael L. Kripchak", "repCandidate": "Michael A. Rulli", "demVotes": 122515, "repVotes": 245860, "totalVotes": 368375, "margin": 33.48, "repIncumbent": true },
-      { "year": 2022, "demPct": 32.28, "repPct": 67.72, "demCandidate": "Louis G. Lyras", "repCandidate": "Bill Johnson", "demVotes": 90500, "repVotes": 189883, "totalVotes": 280383, "margin": 35.44, "repIncumbent": true },
+      { "year": 2024, "demPct": 33.26, "repPct": 66.74, "demCandidate": "Michael Kripchak", "repCandidate": "Michael Rulli", "demVotes": 122515, "repVotes": 245860, "totalVotes": 368375, "margin": 33.48, "repIncumbent": true },
+      { "year": 2022, "demPct": 32.28, "repPct": 67.72, "demCandidate": "Louis Lyras", "repCandidate": "Bill Johnson", "demVotes": 90500, "repVotes": 189883, "totalVotes": 280383, "margin": 35.44, "repIncumbent": true },
       { "year": 2020, "demPct": 25.59, "repPct": 74.41, "demCandidate": "Shawna Roberts", "repCandidate": "Bill Johnson", "demVotes": 85661, "repVotes": 249130, "totalVotes": 334791, "margin": 48.82, "repIncumbent": true },
       { "year": 2018, "demPct": 30.75, "repPct": 69.25, "demCandidate": "Shawna Roberts", "repCandidate": "Bill Johnson", "demVotes": 76716, "repVotes": 172774, "totalVotes": 249490, "margin": 38.5, "repIncumbent": true },
-      { "year": 2016, "demPct": 29.32, "repPct": 70.68, "demCandidate": "Michael L. Lorentz", "repCandidate": "Bill Johnson", "demVotes": 88780, "repVotes": 213975, "totalVotes": 302755, "margin": 41.36, "repIncumbent": true }
+      { "year": 2016, "demPct": 29.32, "repPct": 70.68, "demCandidate": "Michael Lorentz", "repCandidate": "Bill Johnson", "demVotes": 88780, "repVotes": 213975, "totalVotes": 302755, "margin": 41.36, "repIncumbent": true }
     ]
   },
   {
@@ -13356,10 +13356,10 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Edward Fitzgerald", "party": "D", "incumbent": false },
       "rep": { "name": "Max Miller", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Max L. Miller",
+    "seatHolder": "Max Miller",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 36.12, "repPct": 51.08, "demCandidate": "Matt Diemer", "repCandidate": "Max L. Miller", "demVotes": 144613, "repVotes": 204494, "totalVotes": 400371, "margin": 14.96, "repIncumbent": true },
+      { "year": 2024, "demPct": 36.12, "repPct": 51.08, "demCandidate": "Matt Diemer", "repCandidate": "Max Miller", "demVotes": 144613, "repVotes": 204494, "totalVotes": 400371, "margin": 14.96, "repIncumbent": true },
       { "year": 2022, "demPct": 44.63, "repPct": 55.34, "demCandidate": "Matthew Diemer", "repCandidate": "Max Miller", "demVotes": 135485, "repVotes": 168002, "totalVotes": 303573, "margin": 10.71 },
       { "year": 2020, "demPct": 29.17, "repPct": 67.5, "demCandidate": "Quentin Potter", "repCandidate": "Bob Gibbs", "demVotes": 102271, "repVotes": 236607, "totalVotes": 350549, "margin": 38.33, "repIncumbent": true },
       { "year": 2018, "demPct": 41.26, "repPct": 58.74, "demCandidate": "Ken Harbaugh", "repCandidate": "Bob Gibbs", "demVotes": 107536, "repVotes": 153117, "totalVotes": 260653, "margin": 17.48, "repIncumbent": true },
@@ -13424,10 +13424,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 48.27, "repPct": 47.63, "demCandidate": "Marcy Kaptur", "repCandidate": "Derek Merrin", "demVotes": 181098, "repVotes": 178716, "totalVotes": 375195, "margin": -0.64, "demIncumbent": true },
-      { "year": 2022, "demPct": 56.63, "repPct": 43.37, "demCandidate": "Marcy Kaptur", "repCandidate": "J. R. Majewski", "demVotes": 150655, "repVotes": 115362, "totalVotes": 266017, "margin": -13.26, "demIncumbent": true },
+      { "year": 2022, "demPct": 56.63, "repPct": 43.37, "demCandidate": "Marcy Kaptur", "repCandidate": "Majewski", "demVotes": 150655, "repVotes": 115362, "totalVotes": 266017, "margin": -13.26, "demIncumbent": true },
       { "year": 2020, "demPct": 63.07, "repPct": 36.91, "demCandidate": "Marcy Kaptur", "repCandidate": "Rob Weber", "demVotes": 190328, "repVotes": 111385, "totalVotes": 301752, "margin": -26.16, "demIncumbent": true },
-      { "year": 2018, "demPct": 67.79, "repPct": 32.19, "demCandidate": "Marcy Kaptur", "repCandidate": "Steven W. Kraus", "demVotes": 157219, "repVotes": 74670, "totalVotes": 231937, "margin": -35.6, "demIncumbent": true },
-      { "year": 2016, "demPct": 68.69, "repPct": 31.31, "demCandidate": "Marcy Kaptur", "repCandidate": "Donald P. Larson", "demVotes": 193966, "repVotes": 88427, "totalVotes": 282398, "margin": -37.38, "demIncumbent": true }
+      { "year": 2018, "demPct": 67.79, "repPct": 32.19, "demCandidate": "Marcy Kaptur", "repCandidate": "Steven Kraus", "demVotes": 157219, "repVotes": 74670, "totalVotes": 231937, "margin": -35.6, "demIncumbent": true },
+      { "year": 2016, "demPct": 68.69, "repPct": 31.31, "demCandidate": "Marcy Kaptur", "repCandidate": "Donald Larson", "demVotes": 193966, "repVotes": 88427, "totalVotes": 282398, "margin": -37.38, "demIncumbent": true }
     ]
   },
   {
@@ -13456,11 +13456,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Michael Turner",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 39.22, "repPct": 57.64, "demCandidate": "Amy Cox", "repCandidate": "Michael R. Turner", "demVotes": 145420, "repVotes": 213695, "totalVotes": 370746, "margin": 18.42, "repIncumbent": true },
-      { "year": 2022, "demPct": 38.33, "repPct": 61.67, "demCandidate": "David Esrati", "repCandidate": "Michael R. Turner", "demVotes": 104634, "repVotes": 168327, "totalVotes": 272961, "margin": 23.34, "repIncumbent": true },
-      { "year": 2020, "demPct": 41.64, "repPct": 58.36, "demCandidate": "Desiree Tims", "repCandidate": "Michael R. Turner", "demVotes": 151976, "repVotes": 212972, "totalVotes": 364948, "margin": 16.72, "repIncumbent": true },
-      { "year": 2018, "demPct": 42.16, "repPct": 55.92, "demCandidate": "Theresa A. Gasper", "repCandidate": "Michael R. Turner", "demVotes": 118785, "repVotes": 157554, "totalVotes": 281726, "margin": 13.76, "repIncumbent": true },
-      { "year": 2016, "demPct": 32.67, "repPct": 64.09, "demCandidate": "Robert Klepinger", "repCandidate": "Michael R. Turner", "demVotes": 109981, "repVotes": 215724, "totalVotes": 336602, "margin": 31.42, "repIncumbent": true }
+      { "year": 2024, "demPct": 39.22, "repPct": 57.64, "demCandidate": "Amy Cox", "repCandidate": "Michael Turner", "demVotes": 145420, "repVotes": 213695, "totalVotes": 370746, "margin": 18.42, "repIncumbent": true },
+      { "year": 2022, "demPct": 38.33, "repPct": 61.67, "demCandidate": "David Esrati", "repCandidate": "Michael Turner", "demVotes": 104634, "repVotes": 168327, "totalVotes": 272961, "margin": 23.34, "repIncumbent": true },
+      { "year": 2020, "demPct": 41.64, "repPct": 58.36, "demCandidate": "Desiree Tims", "repCandidate": "Michael Turner", "demVotes": 151976, "repVotes": 212972, "totalVotes": 364948, "margin": 16.72, "repIncumbent": true },
+      { "year": 2018, "demPct": 42.16, "repPct": 55.92, "demCandidate": "Theresa Gasper", "repCandidate": "Michael Turner", "demVotes": 118785, "repVotes": 157554, "totalVotes": 281726, "margin": 13.76, "repIncumbent": true },
+      { "year": 2016, "demPct": 32.67, "repPct": 64.09, "demCandidate": "Robert Klepinger", "repCandidate": "Michael Turner", "demVotes": 109981, "repVotes": 215724, "totalVotes": 336602, "margin": 31.42, "repIncumbent": true }
     ]
   },
   {
@@ -13489,11 +13489,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Shontel Brown",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 78.33, "repPct": 19.64, "demCandidate": "Shontel M. Brown", "repCandidate": "Alan Rapoport", "demVotes": 236883, "repVotes": 59394, "totalVotes": 302413, "margin": -58.69, "demIncumbent": true },
-      { "year": 2022, "demPct": 77.75, "repPct": 22.25, "demCandidate": "Shontel M. Brown", "repCandidate": "Eric J. Brewer", "demVotes": 167722, "repVotes": 47988, "totalVotes": 215710, "margin": -55.5, "demIncumbent": true },
-      { "year": 2020, "demPct": 80.05, "repPct": 19.95, "demCandidate": "Marcia L. Fudge", "repCandidate": "Laverne Gore", "demVotes": 242098, "repVotes": 60323, "totalVotes": 302421, "margin": -60.1, "demIncumbent": true },
-      { "year": 2018, "demPct": 82.24, "repPct": 17.75, "demCandidate": "Marcia L. Fudge", "repCandidate": "Beverly A. Goldstein", "demVotes": 206138, "repVotes": 44486, "totalVotes": 250660, "margin": -64.49, "demIncumbent": true },
-      { "year": 2016, "demPct": 80.25, "repPct": 19.75, "demCandidate": "Marcia L. Fudge", "repCandidate": "Beverly A. Goldstein", "demVotes": 242917, "repVotes": 59769, "totalVotes": 302686, "margin": -60.5, "demIncumbent": true }
+      { "year": 2024, "demPct": 78.33, "repPct": 19.64, "demCandidate": "Shontel Brown", "repCandidate": "Alan Rapoport", "demVotes": 236883, "repVotes": 59394, "totalVotes": 302413, "margin": -58.69, "demIncumbent": true },
+      { "year": 2022, "demPct": 77.75, "repPct": 22.25, "demCandidate": "Shontel Brown", "repCandidate": "Eric Brewer", "demVotes": 167722, "repVotes": 47988, "totalVotes": 215710, "margin": -55.5, "demIncumbent": true },
+      { "year": 2020, "demPct": 80.05, "repPct": 19.95, "demCandidate": "Marcia Fudge", "repCandidate": "Laverne Gore", "demVotes": 242098, "repVotes": 60323, "totalVotes": 302421, "margin": -60.1, "demIncumbent": true },
+      { "year": 2018, "demPct": 82.24, "repPct": 17.75, "demCandidate": "Marcia Fudge", "repCandidate": "Beverly Goldstein", "demVotes": 206138, "repVotes": 44486, "totalVotes": 250660, "margin": -64.49, "demIncumbent": true },
+      { "year": 2016, "demPct": 80.25, "repPct": 19.75, "demCandidate": "Marcia Fudge", "repCandidate": "Beverly Goldstein", "demVotes": 242917, "repVotes": 59769, "totalVotes": 302686, "margin": -60.5, "demIncumbent": true }
     ]
   },
   {
@@ -13526,7 +13526,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 30.73, "repPct": 69.27, "demCandidate": "Amy Rippel-Elton", "repCandidate": "Troy Balderson", "demVotes": 84893, "repVotes": 191344, "totalVotes": 276237, "margin": 38.54, "repIncumbent": true },
       { "year": 2020, "demPct": 41.78, "repPct": 55.24, "demCandidate": "Alaina Shearer", "repCandidate": "Troy Balderson", "demVotes": 182847, "repVotes": 241790, "totalVotes": 437672, "margin": 13.46, "repIncumbent": true },
       { "year": 2018, "demPct": 47.2, "repPct": 51.42, "demCandidate": "Danny O’Connor", "repCandidate": "Troy Balderson", "demVotes": 161251, "repVotes": 175677, "totalVotes": 341647, "margin": 4.22, "repIncumbent": true },
-      { "year": 2016, "demPct": 29.84, "repPct": 66.55, "demCandidate": "Ed Albertson", "repCandidate": "Patrick J. Tiberi", "demVotes": 112638, "repVotes": 251266, "totalVotes": 377534, "margin": 36.71, "repIncumbent": true }
+      { "year": 2016, "demPct": 29.84, "repPct": 66.55, "demCandidate": "Ed Albertson", "repCandidate": "Patrick Tiberi", "demVotes": 112638, "repVotes": 251266, "totalVotes": 377534, "margin": 36.71, "repIncumbent": true }
     ]
   },
   {
@@ -13555,9 +13555,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 51.11, "repPct": 48.89, "demCandidate": "Emilia Strong Sykes", "repCandidate": "Kevin Coughlin", "demVotes": 197466, "repVotes": 188924, "totalVotes": 386390, "margin": -2.22, "demIncumbent": true },
       { "year": 2022, "demPct": 52.68, "repPct": 47.32, "demCandidate": "Emilia Sykes", "repCandidate": "Madison Gesiotto Gilbert", "demVotes": 149816, "repVotes": 134593, "totalVotes": 284409, "margin": -5.36 },
-      { "year": 2020, "demPct": 52.49, "repPct": 44.94, "demCandidate": "Tim Ryan", "repCandidate": "Christina M. Hagan", "demVotes": 173631, "repVotes": 148648, "totalVotes": 330801, "margin": -7.55, "demIncumbent": true },
+      { "year": 2020, "demPct": 52.49, "repPct": 44.94, "demCandidate": "Tim Ryan", "repCandidate": "Christina Hagan", "demVotes": 173631, "repVotes": 148648, "totalVotes": 330801, "margin": -7.55, "demIncumbent": true },
       { "year": 2018, "demPct": 60.99, "repPct": 39.01, "demCandidate": "Tim Ryan", "repCandidate": "Chris DePizzo", "demVotes": 153323, "repVotes": 98047, "totalVotes": 251370, "margin": -21.98, "demIncumbent": true },
-      { "year": 2016, "demPct": 67.73, "repPct": 32.26, "demCandidate": "Tim Ryan", "repCandidate": "Richard A. Morckel", "demVotes": 208610, "repVotes": 99377, "totalVotes": 308004, "margin": -35.47, "demIncumbent": true }
+      { "year": 2016, "demPct": 67.73, "repPct": 32.26, "demCandidate": "Tim Ryan", "repCandidate": "Richard Morckel", "demVotes": 208610, "repVotes": 99377, "totalVotes": 308004, "margin": -35.47, "demIncumbent": true }
     ]
   },
   {
@@ -13583,14 +13583,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Carl Setzer", "party": "D", "incumbent": false },
       "rep": { "name": "David Joyce", "party": "R", "incumbent": true }
     },
-    "seatHolder": "David P. Joyce",
+    "seatHolder": "David Joyce",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 36.58, "repPct": 63.42, "demCandidate": "Brian Bob Kenderes", "repCandidate": "David P. Joyce", "demVotes": 140431, "repVotes": 243427, "totalVotes": 383858, "margin": 26.84, "repIncumbent": true },
-      { "year": 2022, "demPct": 38.26, "repPct": 61.74, "demCandidate": "Matt Kilboy", "repCandidate": "David P. Joyce", "demVotes": 113639, "repVotes": 183389, "totalVotes": 297028, "margin": 23.48, "repIncumbent": true },
-      { "year": 2020, "demPct": 39.9, "repPct": 60.1, "demCandidate": "Hillary O’Connor Mueri", "repCandidate": "David P. Joyce", "demVotes": 158586, "repVotes": 238864, "totalVotes": 397450, "margin": 20.2, "repIncumbent": true },
-      { "year": 2018, "demPct": 44.75, "repPct": 55.25, "demCandidate": "Betsy Rader", "repCandidate": "David P. Joyce", "demVotes": 137549, "repVotes": 169809, "totalVotes": 307358, "margin": 10.5, "repIncumbent": true },
-      { "year": 2016, "demPct": 37.37, "repPct": 62.58, "demCandidate": "Michael Wager", "repCandidate": "David P. Joyce", "demVotes": 130907, "repVotes": 219191, "totalVotes": 350269, "margin": 25.21, "repIncumbent": true }
+      { "year": 2024, "demPct": 36.58, "repPct": 63.42, "demCandidate": "Brian Bob Kenderes", "repCandidate": "David Joyce", "demVotes": 140431, "repVotes": 243427, "totalVotes": 383858, "margin": 26.84, "repIncumbent": true },
+      { "year": 2022, "demPct": 38.26, "repPct": 61.74, "demCandidate": "Matt Kilboy", "repCandidate": "David Joyce", "demVotes": 113639, "repVotes": 183389, "totalVotes": 297028, "margin": 23.48, "repIncumbent": true },
+      { "year": 2020, "demPct": 39.9, "repPct": 60.1, "demCandidate": "Hillary O’Connor Mueri", "repCandidate": "David Joyce", "demVotes": 158586, "repVotes": 238864, "totalVotes": 397450, "margin": 20.2, "repIncumbent": true },
+      { "year": 2018, "demPct": 44.75, "repPct": 55.25, "demCandidate": "Betsy Rader", "repCandidate": "David Joyce", "demVotes": 137549, "repVotes": 169809, "totalVotes": 307358, "margin": 10.5, "repIncumbent": true },
+      { "year": 2016, "demPct": 37.37, "repPct": 62.58, "demCandidate": "Michael Wager", "repCandidate": "David Joyce", "demVotes": 130907, "repVotes": 219191, "totalVotes": 350269, "margin": 25.21, "repIncumbent": true }
     ]
   },
   {
@@ -13715,14 +13715,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Jules Roberson", "party": "D", "incumbent": false },
       "rep": { "name": "Frank Lucas", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Frank D. Lucas",
+    "seatHolder": "Frank Lucas",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 0, "repPct": 100, "repCandidate": "Frank Lucas", "margin": 100, "repIncumbent": true },
-      { "year": 2022, "demPct": 25.46, "repPct": 74.54, "demCandidate": "Jeremiah A. Ross", "repCandidate": "Frank D. Lucas", "demVotes": 50354, "repVotes": 147418, "totalVotes": 197772, "margin": 49.08, "repIncumbent": true },
-      { "year": 2020, "demPct": 21.51, "repPct": 78.49, "demCandidate": "Zoe Midyett", "repCandidate": "Frank D. Lucas", "demVotes": 66501, "repVotes": 242677, "totalVotes": 309178, "margin": 56.98, "repIncumbent": true },
-      { "year": 2018, "demPct": 26.13, "repPct": 73.87, "demCandidate": "Frankie Robbins", "repCandidate": "Frank D. Lucas", "demVotes": 61152, "repVotes": 172913, "totalVotes": 234065, "margin": 47.74, "repIncumbent": true },
-      { "year": 2016, "demPct": 21.71, "repPct": 78.29, "demCandidate": "Frankie Robbins", "repCandidate": "Frank D. Lucas", "demVotes": 63090, "repVotes": 227525, "totalVotes": 290615, "margin": 56.58, "repIncumbent": true }
+      { "year": 2022, "demPct": 25.46, "repPct": 74.54, "demCandidate": "Jeremiah Ross", "repCandidate": "Frank Lucas", "demVotes": 50354, "repVotes": 147418, "totalVotes": 197772, "margin": 49.08, "repIncumbent": true },
+      { "year": 2020, "demPct": 21.51, "repPct": 78.49, "demCandidate": "Zoe Midyett", "repCandidate": "Frank Lucas", "demVotes": 66501, "repVotes": 242677, "totalVotes": 309178, "margin": 56.98, "repIncumbent": true },
+      { "year": 2018, "demPct": 26.13, "repPct": 73.87, "demCandidate": "Frankie Robbins", "repCandidate": "Frank Lucas", "demVotes": 61152, "repVotes": 172913, "totalVotes": 234065, "margin": 47.74, "repIncumbent": true },
+      { "year": 2016, "demPct": 21.71, "repPct": 78.29, "demCandidate": "Frankie Robbins", "repCandidate": "Frank Lucas", "demVotes": 63090, "repVotes": 227525, "totalVotes": 290615, "margin": 56.58, "repIncumbent": true }
     ]
   },
   {
@@ -13781,12 +13781,12 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Jena Nelson", "party": "D", "incumbent": false },
       "rep": { "name": "Stephanie Bice", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Stephanie I. Bice",
+    "seatHolder": "Stephanie Bice",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 39.31, "repPct": 60.69, "demCandidate": "Madison Horn", "repCandidate": "Stephanie I. Bice", "demVotes": 134471, "repVotes": 207636, "totalVotes": 342107, "margin": 21.38, "repIncumbent": true },
-      { "year": 2022, "demPct": 37.4, "repPct": 59, "demCandidate": "Joshua Harris-Till", "repCandidate": "Stephanie I. Bice", "demVotes": 96799, "repVotes": 152699, "totalVotes": 258826, "margin": 21.6, "repIncumbent": true },
-      { "year": 2020, "demPct": 47.94, "repPct": 52.06, "demCandidate": "Kendra S. Horn", "repCandidate": "Stephanie Bice", "demVotes": 145658, "repVotes": 158191, "totalVotes": 303849, "margin": 4.12, "demIncumbent": true },
+      { "year": 2024, "demPct": 39.31, "repPct": 60.69, "demCandidate": "Madison Horn", "repCandidate": "Stephanie Bice", "demVotes": 134471, "repVotes": 207636, "totalVotes": 342107, "margin": 21.38, "repIncumbent": true },
+      { "year": 2022, "demPct": 37.4, "repPct": 59, "demCandidate": "Joshua Harris-Till", "repCandidate": "Stephanie Bice", "demVotes": 96799, "repVotes": 152699, "totalVotes": 258826, "margin": 21.6, "repIncumbent": true },
+      { "year": 2020, "demPct": 47.94, "repPct": 52.06, "demCandidate": "Kendra Horn", "repCandidate": "Stephanie Bice", "demVotes": 145658, "repVotes": 158191, "totalVotes": 303849, "margin": 4.12, "demIncumbent": true },
       { "year": 2018, "demPct": 50.7, "repPct": 49.3, "demCandidate": "Kendra Horn", "repCandidate": "Steve Russell", "demVotes": 121149, "repVotes": 117811, "totalVotes": 238960, "margin": -1.4, "repIncumbent": true },
       { "year": 2016, "demPct": 36.81, "repPct": 57.09, "demCandidate": "Al McAffrey", "repCandidate": "Steve Russell", "demVotes": 103273, "repVotes": 160184, "totalVotes": 280570, "margin": 20.28, "repIncumbent": true }
     ]
@@ -13818,10 +13818,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 68.76, "repPct": 28.15, "demCandidate": "Suzanne Bonamici", "repCandidate": "Bob Todd", "demVotes": 241556, "repVotes": 98908, "totalVotes": 351304, "margin": -40.61, "demIncumbent": true },
-      { "year": 2022, "demPct": 68.02, "repPct": 31.98, "demCandidate": "Suzanne Bonamici", "repCandidate": "Christopher A. Mann", "demVotes": 210682, "repVotes": 99042, "totalVotes": 309724, "margin": -36.04, "demIncumbent": true },
-      { "year": 2020, "demPct": 64.72, "repPct": 35.28, "demCandidate": "Suzanne Bonamici", "repCandidate": "Christopher C. Christensen", "demVotes": 297071, "repVotes": 161928, "totalVotes": 458999, "margin": -29.44, "demIncumbent": true },
+      { "year": 2022, "demPct": 68.02, "repPct": 31.98, "demCandidate": "Suzanne Bonamici", "repCandidate": "Christopher Mann", "demVotes": 210682, "repVotes": 99042, "totalVotes": 309724, "margin": -36.04, "demIncumbent": true },
+      { "year": 2020, "demPct": 64.72, "repPct": 35.28, "demCandidate": "Suzanne Bonamici", "repCandidate": "Christopher Christensen", "demVotes": 297071, "repVotes": 161928, "totalVotes": 458999, "margin": -29.44, "demIncumbent": true },
       { "year": 2018, "demPct": 63.73, "repPct": 32.1, "demCandidate": "Suzanne Bonamici", "repCandidate": "John Verbeek", "demVotes": 231198, "repVotes": 116446, "totalVotes": 362765, "margin": -31.63, "demIncumbent": true },
-      { "year": 2016, "demPct": 59.72, "repPct": 37.03, "demCandidate": "Suzanne Bonamici", "repCandidate": "Brian J. Heinrich", "demVotes": 225391, "repVotes": 139756, "totalVotes": 377404, "margin": -22.69, "demIncumbent": true }
+      { "year": 2016, "demPct": 59.72, "repPct": 37.03, "demCandidate": "Suzanne Bonamici", "repCandidate": "Brian Heinrich", "demVotes": 225391, "repVotes": 139756, "totalVotes": 377404, "margin": -22.69, "demIncumbent": true }
     ]
   },
   {
@@ -13854,7 +13854,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 32.4, "repPct": 67.6, "demCandidate": "Joe Yetter", "repCandidate": "Cliff Bentz", "demVotes": 99882, "repVotes": 208369, "totalVotes": 308251, "margin": 35.2, "repIncumbent": true },
       { "year": 2020, "demPct": 36.97, "repPct": 59.95, "demCandidate": "Alex Spenser", "repCandidate": "Cliff Bentz", "demVotes": 168881, "repVotes": 273835, "totalVotes": 456810, "margin": 22.98 },
       { "year": 2018, "demPct": 39.44, "repPct": 56.35, "demCandidate": "Jamie McLeod-Skinner", "repCandidate": "Greg Walden", "demVotes": 145298, "repVotes": 207597, "totalVotes": 368431, "margin": 16.91, "repIncumbent": true },
-      { "year": 2016, "demPct": 28.09, "repPct": 71.91, "demCandidate": "James “Jim” Crary", "repCandidate": "Greg Walden", "demVotes": 106640, "repVotes": 272952, "totalVotes": 379592, "margin": 43.82, "repIncumbent": true }
+      { "year": 2016, "demPct": 28.09, "repPct": 71.91, "demCandidate": "Jim Crary", "repCandidate": "Greg Walden", "demVotes": 106640, "repVotes": 272952, "totalVotes": 379592, "margin": 43.82, "repIncumbent": true }
     ]
   },
   {
@@ -13883,11 +13883,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Maxine Dexter",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 67.88, "repPct": 25.29, "demCandidate": "Maxine E. Dexter", "repCandidate": "Joanna Harbour", "demVotes": 226405, "repVotes": 84344, "totalVotes": 333559, "margin": -42.59 },
+      { "year": 2024, "demPct": 67.88, "repPct": 25.29, "demCandidate": "Maxine Dexter", "repCandidate": "Joanna Harbour", "demVotes": 226405, "repVotes": 84344, "totalVotes": 333559, "margin": -42.59 },
       { "year": 2022, "demPct": 70.04, "repPct": 26.34, "demCandidate": "Earl Blumenauer", "repCandidate": "Joanna Harbour", "demVotes": 212119, "repVotes": 79766, "totalVotes": 302867, "margin": -43.7, "demIncumbent": true },
       { "year": 2020, "demPct": 73.12, "repPct": 23.53, "demCandidate": "Earl Blumenauer", "repCandidate": "Joanna Harbour", "demVotes": 343574, "repVotes": 110570, "totalVotes": 469885, "margin": -49.59, "demIncumbent": true },
       { "year": 2018, "demPct": 72.7, "repPct": 19.85, "demCandidate": "Earl Blumenauer", "repCandidate": "Tom Harrison", "demVotes": 279019, "repVotes": 76187, "totalVotes": 383812, "margin": -52.85, "demIncumbent": true },
-      { "year": 2016, "demPct": 72.13, "repPct": 20.52, "demCandidate": "Earl Blumenauer", "repCandidate": "David W. Walker", "repParty": "I", "demVotes": 274687, "repVotes": 78154, "totalVotes": 380819, "margin": -51.61, "demIncumbent": true }
+      { "year": 2016, "demPct": 72.13, "repPct": 20.52, "demCandidate": "Earl Blumenauer", "repCandidate": "David Walker", "repParty": "I", "demVotes": 274687, "repVotes": 78154, "totalVotes": 380819, "margin": -51.61, "demIncumbent": true }
     ]
   },
   {
@@ -13910,17 +13910,17 @@ export const houseData: RaceForecast[] = [
     "kalshiDem": 0.69,
     "kalshiRep": 0,
     "candidates": {
-      "dem": { "name": "Valerie Hoyle", "party": "D", "incumbent": true },
+      "dem": { "name": "Val Hoyle", "party": "D", "incumbent": true },
       "rep": { "name": "Monique Despain", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Val T. Hoyle",
+    "seatHolder": "Val Hoyle",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 51.77, "repPct": 43.99, "demCandidate": "Val T. Hoyle", "repCandidate": "Monique DeSpain", "demVotes": 195862, "repVotes": 166430, "totalVotes": 378311, "margin": -7.78, "demIncumbent": true },
+      { "year": 2024, "demPct": 51.77, "repPct": 43.99, "demCandidate": "Val Hoyle", "repCandidate": "Monique DeSpain", "demVotes": 195862, "repVotes": 166430, "totalVotes": 378311, "margin": -7.78, "demIncumbent": true },
       { "year": 2022, "demPct": 50.61, "repPct": 43.14, "demCandidate": "Val Hoyle", "repCandidate": "Alek Skarlatos", "demVotes": 171372, "repVotes": 146055, "totalVotes": 338587, "margin": -7.47 },
-      { "year": 2020, "demPct": 51.58, "repPct": 46.26, "demCandidate": "Peter A. DeFazio", "repCandidate": "Alek Skarlatos", "demVotes": 240950, "repVotes": 216081, "totalVotes": 467149, "margin": -5.32, "demIncumbent": true },
-      { "year": 2018, "demPct": 56.04, "repPct": 40.92, "demCandidate": "Peter A. DeFazio", "repCandidate": "Art Robinson", "demVotes": 208710, "repVotes": 152414, "totalVotes": 372450, "margin": -15.12, "demIncumbent": true },
-      { "year": 2016, "demPct": 55.56, "repPct": 39.72, "demCandidate": "Peter A. DeFazio", "repCandidate": "Art Robinson", "demVotes": 220628, "repVotes": 157743, "totalVotes": 397092, "margin": -15.84, "demIncumbent": true }
+      { "year": 2020, "demPct": 51.58, "repPct": 46.26, "demCandidate": "Peter DeFazio", "repCandidate": "Alek Skarlatos", "demVotes": 240950, "repVotes": 216081, "totalVotes": 467149, "margin": -5.32, "demIncumbent": true },
+      { "year": 2018, "demPct": 56.04, "repPct": 40.92, "demCandidate": "Peter DeFazio", "repCandidate": "Art Robinson", "demVotes": 208710, "repVotes": 152414, "totalVotes": 372450, "margin": -15.12, "demIncumbent": true },
+      { "year": 2016, "demPct": 55.56, "repPct": 39.72, "demCandidate": "Peter DeFazio", "repCandidate": "Art Robinson", "demVotes": 220628, "repVotes": 157743, "totalVotes": 397092, "margin": -15.84, "demIncumbent": true }
     ]
   },
   {
@@ -13947,7 +13947,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Janelle Bynum",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 47.75, "repPct": 45.02, "demCandidate": "Janelle S. Bynum", "repCandidate": "Lori Chavez-DeRemer", "demVotes": 191365, "repVotes": 180420, "totalVotes": 400798, "margin": -2.73, "repIncumbent": true },
+      { "year": 2024, "demPct": 47.75, "repPct": 45.02, "demCandidate": "Janelle Bynum", "repCandidate": "Lori Chavez-DeRemer", "demVotes": 191365, "repVotes": 180420, "totalVotes": 400798, "margin": -2.73, "repIncumbent": true },
       { "year": 2022, "demPct": 48.96, "repPct": 51.04, "demCandidate": "Jamie McLeod-Skinner", "repCandidate": "Lori Chavez-DeRemer", "demVotes": 171514, "repVotes": 178813, "totalVotes": 350327, "margin": 2.08 },
       { "year": 2020, "demPct": 51.98, "repPct": 45.23, "demCandidate": "Kurt Schrader", "repCandidate": "Amy Ryan Courser", "demVotes": 234863, "repVotes": 204372, "totalVotes": 451875, "margin": -6.75, "demIncumbent": true },
       { "year": 2018, "demPct": 55.09, "repPct": 41.88, "demCandidate": "Kurt Schrader", "repCandidate": "Mark Callahan", "demVotes": 197187, "repVotes": 149887, "totalVotes": 357930, "margin": -13.21, "demIncumbent": true },
@@ -14005,14 +14005,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Robert Harvie", "party": "D", "incumbent": false },
       "rep": { "name": "Brian Fitzpatrick", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Brian K. Fitzpatrick",
+    "seatHolder": "Brian Fitzpatrick",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 43.6, "repPct": 56.4, "demCandidate": "Ashley Ehasz", "repCandidate": "Brian K. Fitzpatrick", "demVotes": 202042, "repVotes": 261390, "totalVotes": 463432, "margin": 12.8, "repIncumbent": true },
-      { "year": 2022, "demPct": 45.13, "repPct": 54.87, "demCandidate": "Ashley Ehasz", "repCandidate": "Brian K. Fitzpatrick", "demVotes": 165809, "repVotes": 201571, "totalVotes": 367380, "margin": 9.74, "repIncumbent": true },
-      { "year": 2020, "demPct": 43.44, "repPct": 56.56, "demCandidate": "Christina Finello", "repCandidate": "Brian K. Fitzpatrick", "demVotes": 191875, "repVotes": 249804, "totalVotes": 441679, "margin": 13.12, "repIncumbent": true },
-      { "year": 2018, "demPct": 48.74, "repPct": 51.26, "demCandidate": "Scott Wallace", "repCandidate": "Brian K. Fitzpatrick", "demVotes": 160745, "repVotes": 169053, "totalVotes": 329798, "margin": 2.52 },
-      { "year": 2016, "demPct": 82.2, "repPct": 17.8, "demCandidate": "Robert A. Brady", "repCandidate": "Deborah Williams", "demVotes": 245791, "repVotes": 53219, "totalVotes": 299010, "margin": -64.4, "demIncumbent": true }
+      { "year": 2024, "demPct": 43.6, "repPct": 56.4, "demCandidate": "Ashley Ehasz", "repCandidate": "Brian Fitzpatrick", "demVotes": 202042, "repVotes": 261390, "totalVotes": 463432, "margin": 12.8, "repIncumbent": true },
+      { "year": 2022, "demPct": 45.13, "repPct": 54.87, "demCandidate": "Ashley Ehasz", "repCandidate": "Brian Fitzpatrick", "demVotes": 165809, "repVotes": 201571, "totalVotes": 367380, "margin": 9.74, "repIncumbent": true },
+      { "year": 2020, "demPct": 43.44, "repPct": 56.56, "demCandidate": "Christina Finello", "repCandidate": "Brian Fitzpatrick", "demVotes": 191875, "repVotes": 249804, "totalVotes": 441679, "margin": 13.12, "repIncumbent": true },
+      { "year": 2018, "demPct": 48.74, "repPct": 51.26, "demCandidate": "Scott Wallace", "repCandidate": "Brian Fitzpatrick", "demVotes": 160745, "repVotes": 169053, "totalVotes": 329798, "margin": 2.52 },
+      { "year": 2016, "demPct": 82.2, "repPct": 17.8, "demCandidate": "Robert Brady", "repCandidate": "Deborah Williams", "demVotes": 245791, "repVotes": 53219, "totalVotes": 299010, "margin": -64.4, "demIncumbent": true }
     ]
   },
   {
@@ -14038,14 +14038,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Brendan Boyle", "party": "D", "incumbent": true },
       "rep": { "name": "Jessica Arriaga", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Brendan F. Boyle",
+    "seatHolder": "Brendan Boyle",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 71.46, "repPct": 28.54, "demCandidate": "Brendan F. Boyle", "repCandidate": "Aaron Bashir", "demVotes": 193691, "repVotes": 77355, "totalVotes": 271046, "margin": -42.92, "demIncumbent": true },
-      { "year": 2022, "demPct": 75.65, "repPct": 24.35, "demCandidate": "Brendan F. Boyle", "repCandidate": "Aaron Bashir", "demVotes": 141229, "repVotes": 45454, "totalVotes": 186683, "margin": -51.3, "demIncumbent": true },
-      { "year": 2020, "demPct": 72.54, "repPct": 27.46, "demCandidate": "Brendan F. Boyle", "repCandidate": "David Torres", "demVotes": 198140, "repVotes": 75022, "totalVotes": 273162, "margin": -45.08, "demIncumbent": true },
-      { "year": 2018, "demPct": 79.02, "repPct": 20.98, "demCandidate": "Brendan F. Boyle", "repCandidate": "David Torres", "demVotes": 159600, "repVotes": 42382, "totalVotes": 201982, "margin": -58.04 },
-      { "year": 2016, "demPct": 90.18, "repPct": 9.82, "demCandidate": "Dwight Evans", "repCandidate": "James A. Jones", "demVotes": 322514, "repVotes": 35131, "totalVotes": 357645, "margin": -80.36 }
+      { "year": 2024, "demPct": 71.46, "repPct": 28.54, "demCandidate": "Brendan Boyle", "repCandidate": "Aaron Bashir", "demVotes": 193691, "repVotes": 77355, "totalVotes": 271046, "margin": -42.92, "demIncumbent": true },
+      { "year": 2022, "demPct": 75.65, "repPct": 24.35, "demCandidate": "Brendan Boyle", "repCandidate": "Aaron Bashir", "demVotes": 141229, "repVotes": 45454, "totalVotes": 186683, "margin": -51.3, "demIncumbent": true },
+      { "year": 2020, "demPct": 72.54, "repPct": 27.46, "demCandidate": "Brendan Boyle", "repCandidate": "David Torres", "demVotes": 198140, "repVotes": 75022, "totalVotes": 273162, "margin": -45.08, "demIncumbent": true },
+      { "year": 2018, "demPct": 79.02, "repPct": 20.98, "demCandidate": "Brendan Boyle", "repCandidate": "David Torres", "demVotes": 159600, "repVotes": 42382, "totalVotes": 201982, "margin": -58.04 },
+      { "year": 2016, "demPct": 90.18, "repPct": 9.82, "demCandidate": "Dwight Evans", "repCandidate": "James Jones", "demVotes": 322514, "repVotes": 35131, "totalVotes": 357645, "margin": -80.36 }
     ]
   },
   {
@@ -14077,7 +14077,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 100, "repPct": 0, "demCandidate": "Dwight Evans", "demVotes": 340223, "totalVotes": 340223, "margin": -100, "demIncumbent": true },
       { "year": 2022, "demPct": 95.14, "repPct": 4.86, "demCandidate": "Dwight Evans", "repCandidate": "Christopher Hoeppner (SW)", "demVotes": 251115, "repVotes": 12820, "totalVotes": 263935, "margin": -90.28, "demIncumbent": true },
       { "year": 2020, "demPct": 91.03, "repPct": 8.97, "demCandidate": "Dwight Evans", "repCandidate": "Michael Harvey", "demVotes": 341708, "repVotes": 33671, "totalVotes": 375379, "margin": -82.06, "demIncumbent": true },
-      { "year": 2018, "demPct": 93.38, "repPct": 6.62, "demCandidate": "Dwight Evans", "repCandidate": "Bryan E. Leib", "demVotes": 287610, "repVotes": 20387, "totalVotes": 307997, "margin": -86.76 },
+      { "year": 2018, "demPct": 93.38, "repPct": 6.62, "demCandidate": "Dwight Evans", "repCandidate": "Bryan Leib", "demVotes": 287610, "repVotes": 20387, "totalVotes": 307997, "margin": -86.76 },
       { "year": 2016, "demPct": 0, "repPct": 100, "repCandidate": "Mike Kelly", "repVotes": 244893, "totalVotes": 244893, "margin": 100, "repIncumbent": true }
     ]
   },
@@ -14137,7 +14137,7 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Mary Scanlon", "party": "D", "incumbent": true },
       "rep": { "name": "Melvin Johnakin", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Mary Gay Scanlon",
+    "seatHolder": "Mary Scanlon",
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 65.29, "repPct": 34.71, "demCandidate": "Mary Gay Scanlon", "repCandidate": "Alfeia Goodwin", "demVotes": 267754, "repVotes": 142355, "totalVotes": 410109, "margin": -30.58, "demIncumbent": true },
@@ -14175,9 +14175,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 56.2, "repPct": 43.8, "demCandidate": "Chrissy Houlahan", "repCandidate": "Neil Young", "demVotes": 235625, "repVotes": 183638, "totalVotes": 419263, "margin": -12.4, "demIncumbent": true },
       { "year": 2022, "demPct": 58.31, "repPct": 41.69, "demCandidate": "Chrissy Houlahan", "repCandidate": "Guy Ciarrocchi", "demVotes": 190386, "repVotes": 136097, "totalVotes": 326483, "margin": -16.62, "demIncumbent": true },
-      { "year": 2020, "demPct": 56.05, "repPct": 43.95, "demCandidate": "Chrissy J. Houlahan", "repCandidate": "John William Emmons", "demVotes": 226440, "repVotes": 177526, "totalVotes": 403966, "margin": -12.1, "demIncumbent": true },
+      { "year": 2020, "demPct": 56.05, "repPct": 43.95, "demCandidate": "Chrissy Houlahan", "repCandidate": "John William Emmons", "demVotes": 226440, "repVotes": 177526, "totalVotes": 403966, "margin": -12.1, "demIncumbent": true },
       { "year": 2018, "demPct": 58.88, "repPct": 41.12, "demCandidate": "Chrissy Houlahan", "repCandidate": "Greg McCauley", "demVotes": 177704, "repVotes": 124124, "totalVotes": 301828, "margin": -17.76 },
-      { "year": 2016, "demPct": 42.76, "repPct": 57.24, "demCandidate": "Mike Parrish", "repCandidate": "Ryan A. Costello", "demVotes": 155000, "repVotes": 207469, "totalVotes": 362469, "margin": 14.48, "repIncumbent": true }
+      { "year": 2016, "demPct": 42.76, "repPct": 57.24, "demCandidate": "Mike Parrish", "repCandidate": "Ryan Costello", "demVotes": 155000, "repVotes": 207469, "totalVotes": 362469, "margin": 14.48, "repIncumbent": true }
     ]
   },
   {
@@ -14204,7 +14204,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Ryan Mackenzie",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 49.5, "repPct": 50.5, "demCandidate": "Susan Wild", "repCandidate": "Ryan E. Mackenzie", "demVotes": 199626, "repVotes": 203688, "totalVotes": 403314, "margin": 1, "demIncumbent": true },
+      { "year": 2024, "demPct": 49.5, "repPct": 50.5, "demCandidate": "Susan Wild", "repCandidate": "Ryan Mackenzie", "demVotes": 199626, "repVotes": 203688, "totalVotes": 403314, "margin": 1, "demIncumbent": true },
       { "year": 2022, "demPct": 50.98, "repPct": 49.02, "demCandidate": "Susan Wild", "repCandidate": "Lisa Scheller", "demVotes": 151364, "repVotes": 145527, "totalVotes": 296891, "margin": -1.96, "demIncumbent": true },
       { "year": 2020, "demPct": 51.87, "repPct": 48.13, "demCandidate": "Susan Ellis Wild", "repCandidate": "Lisa Scheller", "demVotes": 195475, "repVotes": 181407, "totalVotes": 376882, "margin": -3.74, "demIncumbent": true },
       { "year": 2018, "demPct": 53.49, "repPct": 43.47, "demCandidate": "Susan Ellis Wild", "repCandidate": "Marty Nothstein", "demVotes": 140813, "repVotes": 114437, "totalVotes": 263261, "margin": -10.02 },
@@ -14232,10 +14232,10 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Paige Cognetti", "party": "D", "incumbent": false },
       "rep": { "name": "Rob Bresnahan", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Robert P. Bresnahan, Jr.",
+    "seatHolder": "Robert Bresnahan",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 49.19, "repPct": 50.81, "demCandidate": "Matt Cartwright", "repCandidate": "Rob Bresnahan, Jr.", "demVotes": 189411, "repVotes": 195663, "totalVotes": 385074, "margin": 1.62, "demIncumbent": true },
+      { "year": 2024, "demPct": 49.19, "repPct": 50.81, "demCandidate": "Matt Cartwright", "repCandidate": "Rob Bresnahan", "demVotes": 189411, "repVotes": 195663, "totalVotes": 385074, "margin": 1.62, "demIncumbent": true },
       { "year": 2022, "demPct": 51.22, "repPct": 48.78, "demCandidate": "Matt Cartwright", "repCandidate": "Jim Bognet", "demVotes": 146956, "repVotes": 139930, "totalVotes": 286886, "margin": -2.44, "demIncumbent": true },
       { "year": 2020, "demPct": 51.78, "repPct": 48.22, "demCandidate": "Matthew Alton Cartwright", "repCandidate": "James Rocco Bognet", "demVotes": 178004, "repVotes": 165783, "totalVotes": 343787, "margin": -3.56, "demIncumbent": true },
       { "year": 2018, "demPct": 54.64, "repPct": 45.36, "demCandidate": "Matt Cartwright", "repCandidate": "John Chrin", "demVotes": 135603, "repVotes": 112563, "totalVotes": 248166, "margin": -9.28 },
@@ -14269,7 +14269,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 29.49, "repPct": 70.51, "demCandidate": "Amanda Waldman", "repCandidate": "Daniel Meuser", "demVotes": 115523, "repVotes": 276212, "totalVotes": 391735, "margin": 41.02, "repIncumbent": true },
-      { "year": 2022, "demPct": 30.69, "repPct": 69.31, "demCandidate": "Amanda R. Waldman", "repCandidate": "Daniel Meuser", "demVotes": 92622, "repVotes": 209185, "totalVotes": 301807, "margin": 38.62, "repIncumbent": true },
+      { "year": 2022, "demPct": 30.69, "repPct": 69.31, "demCandidate": "Amanda Waldman", "repCandidate": "Daniel Meuser", "demVotes": 92622, "repVotes": 209185, "totalVotes": 301807, "margin": 38.62, "repIncumbent": true },
       { "year": 2020, "demPct": 33.67, "repPct": 66.33, "demCandidate": "Gary Steven Wegman", "repCandidate": "Daniel Philip Meuser", "demVotes": 118266, "repVotes": 232988, "totalVotes": 351254, "margin": 32.66, "repIncumbent": true },
       { "year": 2018, "demPct": 40.25, "repPct": 59.75, "demCandidate": "Denny Wolff", "repCandidate": "Dan Meuser", "demVotes": 100204, "repVotes": 148723, "totalVotes": 248927, "margin": 19.5 },
       { "year": 2016, "demPct": 36.66, "repPct": 63.34, "demCandidate": "Art Halvorson", "repCandidate": "Bill Shuster", "demVotes": 107985, "repVotes": 186580, "totalVotes": 294565, "margin": 26.68, "repIncumbent": true }
@@ -14301,8 +14301,8 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 49.37, "repPct": 50.63, "demCandidate": "Janelle Stelson", "repCandidate": "Scott Perry", "demVotes": 200434, "repVotes": 205567, "totalVotes": 406001, "margin": 1.26, "repIncumbent": true },
       { "year": 2022, "demPct": 46.17, "repPct": 53.83, "demCandidate": "Shamaine Daniels", "repCandidate": "Scott Perry", "demVotes": 145215, "repVotes": 169331, "totalVotes": 314546, "margin": 7.66, "repIncumbent": true },
-      { "year": 2020, "demPct": 46.69, "repPct": 53.31, "demCandidate": "Eugene A. DePasquale", "repCandidate": "Scott G. Perry", "demVotes": 182938, "repVotes": 208896, "totalVotes": 391834, "margin": 6.62, "repIncumbent": true },
-      { "year": 2018, "demPct": 48.68, "repPct": 51.32, "demCandidate": "George B. Scott", "repCandidate": "Scott Perry", "demVotes": 141668, "repVotes": 149365, "totalVotes": 291033, "margin": 2.64 },
+      { "year": 2020, "demPct": 46.69, "repPct": 53.31, "demCandidate": "Eugene DePasquale", "repCandidate": "Scott Perry", "demVotes": 182938, "repVotes": 208896, "totalVotes": 391834, "margin": 6.62, "repIncumbent": true },
+      { "year": 2018, "demPct": 48.68, "repPct": 51.32, "demCandidate": "George Scott", "repCandidate": "Scott Perry", "demVotes": 141668, "repVotes": 149365, "totalVotes": 291033, "margin": 2.64 },
       { "year": 2016, "demPct": 29.83, "repPct": 70.17, "demCandidate": "Mike Molesevich", "repCandidate": "Tom Marino", "demVotes": 89823, "repVotes": 211282, "totalVotes": 301105, "margin": 40.34, "repIncumbent": true }
     ]
   },
@@ -14334,7 +14334,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 37.1, "repPct": 62.9, "demCandidate": "Jim Atkinson", "repCandidate": "Lloyd Smucker", "demVotes": 149641, "repVotes": 253672, "totalVotes": 403313, "margin": 25.8, "repIncumbent": true },
       { "year": 2022, "demPct": 38.45, "repPct": 61.55, "demCandidate": "Bob Hollister", "repCandidate": "Lloyd Smucker", "demVotes": 121835, "repVotes": 194991, "totalVotes": 316826, "margin": 23.1, "repIncumbent": true },
-      { "year": 2020, "demPct": 36.88, "repPct": 63.12, "demCandidate": "Sarah E. Hammond", "repCandidate": "Lloyd K. Smucker", "demVotes": 141325, "repVotes": 241915, "totalVotes": 383240, "margin": 26.24, "repIncumbent": true },
+      { "year": 2020, "demPct": 36.88, "repPct": 63.12, "demCandidate": "Sarah Hammond", "repCandidate": "Lloyd Smucker", "demVotes": 141325, "repVotes": 241915, "totalVotes": 383240, "margin": 26.24, "repIncumbent": true },
       { "year": 2018, "demPct": 41.02, "repPct": 58.98, "demCandidate": "Jessica King", "repCandidate": "Lloyd Smucker", "demVotes": 113876, "repVotes": 163708, "totalVotes": 277584, "margin": 17.96 },
       { "year": 2016, "demPct": 36.33, "repPct": 63.67, "demCandidate": "Mike Marsicano", "repCandidate": "Lou Barletta", "demVotes": 113800, "repVotes": 199421, "totalVotes": 313221, "margin": 27.34, "repIncumbent": true }
     ]
@@ -14362,14 +14362,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Summer Lee", "party": "D", "incumbent": true },
       "rep": { "name": "Leonard Fechter", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Summer L. Lee",
+    "seatHolder": "Summer Lee",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 56.41, "repPct": 43.59, "demCandidate": "Summer L. Lee", "repCandidate": "James Hayes", "demVotes": 234802, "repVotes": 181426, "totalVotes": 416228, "margin": -12.82, "demIncumbent": true },
+      { "year": 2024, "demPct": 56.41, "repPct": 43.59, "demCandidate": "Summer Lee", "repCandidate": "James Hayes", "demVotes": 234802, "repVotes": 181426, "totalVotes": 416228, "margin": -12.82, "demIncumbent": true },
       { "year": 2022, "demPct": 56.2, "repPct": 43.8, "demCandidate": "Summer Lee", "repCandidate": "Mike Doyle", "demVotes": 184674, "repVotes": 143946, "totalVotes": 328620, "margin": -12.4 },
-      { "year": 2020, "demPct": 29.16, "repPct": 70.84, "demCandidate": "Lee Griffin", "repCandidate": "Frederick B. Keller", "demVotes": 99199, "repVotes": 241035, "totalVotes": 340234, "margin": 41.68, "repIncumbent": true },
+      { "year": 2020, "demPct": 29.16, "repPct": 70.84, "demCandidate": "Lee Griffin", "repCandidate": "Frederick Keller", "demVotes": 99199, "repVotes": 241035, "totalVotes": 340234, "margin": 41.68, "repIncumbent": true },
       { "year": 2018, "demPct": 33.96, "repPct": 66.04, "demCandidate": "Marc Friedenberg", "repCandidate": "Tom Marino", "demVotes": 82825, "repVotes": 161047, "totalVotes": 243872, "margin": 32.08 },
-      { "year": 2016, "demPct": 38.24, "repPct": 61.76, "demCandidate": "Erin R. McClelland", "repCandidate": "Keith J. Rothfus", "demVotes": 137353, "repVotes": 221851, "totalVotes": 359204, "margin": 23.52, "repIncumbent": true }
+      { "year": 2016, "demPct": 38.24, "repPct": 61.76, "demCandidate": "Erin McClelland", "repCandidate": "Keith Rothfus", "demVotes": 137353, "repVotes": 221851, "totalVotes": 359204, "margin": 23.52, "repIncumbent": true }
     ]
   },
   {
@@ -14402,7 +14402,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 0, "repPct": 100, "repCandidate": "John Joyce", "repVotes": 260345, "totalVotes": 260345, "margin": 100, "repIncumbent": true },
       { "year": 2020, "demPct": 26.51, "repPct": 73.49, "demCandidate": "Raymond Todd Rowley", "repCandidate": "John Joyce", "demVotes": 96612, "repVotes": 267789, "totalVotes": 364401, "margin": 46.98, "repIncumbent": true },
       { "year": 2018, "demPct": 29.51, "repPct": 70.49, "demCandidate": "Brent Ottaway", "repCandidate": "John Joyce", "demVotes": 74733, "repVotes": 178533, "totalVotes": 253266, "margin": 40.98 },
-      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Brendan F. Boyle", "demVotes": 239316, "totalVotes": 239316, "margin": -100, "demIncumbent": true }
+      { "year": 2016, "demPct": 100, "repPct": 0, "demCandidate": "Brendan Boyle", "demVotes": 239316, "totalVotes": 239316, "margin": -100, "demIncumbent": true }
     ]
   },
   {
@@ -14433,9 +14433,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 33.43, "repPct": 66.57, "demCandidate": "Chris Dziados", "repCandidate": "Guy Reschenthaler", "demVotes": 134755, "repVotes": 268380, "totalVotes": 403135, "margin": 33.14, "repIncumbent": true },
       { "year": 2022, "demPct": 0, "repPct": 100, "repCandidate": "Guy Reschenthaler", "repVotes": 230865, "totalVotes": 230865, "margin": 100, "repIncumbent": true },
-      { "year": 2020, "demPct": 35.31, "repPct": 64.69, "demCandidate": "William A. Marx", "repCandidate": "Guy Reschenthaler", "demVotes": 131895, "repVotes": 241688, "totalVotes": 373583, "margin": 29.38, "repIncumbent": true },
+      { "year": 2020, "demPct": 35.31, "repPct": 64.69, "demCandidate": "William Marx", "repCandidate": "Guy Reschenthaler", "demVotes": 131895, "repVotes": 241688, "totalVotes": 373583, "margin": 29.38, "repIncumbent": true },
       { "year": 2018, "demPct": 42.09, "repPct": 57.91, "demCandidate": "Bibiana Boerio", "repCandidate": "Guy Reschenthaler", "demVotes": 110051, "repVotes": 151386, "totalVotes": 261437, "margin": 15.82 },
-      { "year": 2016, "demPct": 74.37, "repPct": 25.63, "demCandidate": "Michael F. Doyle", "repCandidate": "Lenny McAllister", "demVotes": 255293, "repVotes": 87999, "totalVotes": 343292, "margin": -48.74, "demIncumbent": true }
+      { "year": 2016, "demPct": 74.37, "repPct": 25.63, "demCandidate": "Michael Doyle", "repCandidate": "Lenny McAllister", "demVotes": 255293, "repVotes": 87999, "totalVotes": 343292, "margin": -48.74, "demIncumbent": true }
     ]
   },
   {
@@ -14466,9 +14466,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 28.53, "repPct": 71.47, "demCandidate": "Zach Womer", "repCandidate": "Glenn Thompson", "demVotes": 111408, "repVotes": 279027, "totalVotes": 390435, "margin": 42.94, "repIncumbent": true },
       { "year": 2022, "demPct": 30.06, "repPct": 69.94, "demCandidate": "Mike Molesevich", "repCandidate": "Glenn Thompson", "demVotes": 91729, "repVotes": 213417, "totalVotes": 305146, "margin": 39.88, "repIncumbent": true },
-      { "year": 2020, "demPct": 26.54, "repPct": 73.46, "demCandidate": "Robert M. Williams", "repCandidate": "Glenn W. Thompson, Jr.", "demVotes": 92156, "repVotes": 255058, "totalVotes": 347214, "margin": 46.92, "repIncumbent": true },
+      { "year": 2020, "demPct": 26.54, "repPct": 73.46, "demCandidate": "Robert Williams", "repCandidate": "Glenn Thompson", "demVotes": 92156, "repVotes": 255058, "totalVotes": 347214, "margin": 46.92, "repIncumbent": true },
       { "year": 2018, "demPct": 32.16, "repPct": 67.84, "demCandidate": "Susan Boser", "repCandidate": "Glenn Thompson", "demVotes": 78327, "repVotes": 165245, "totalVotes": 243572, "margin": 35.68 },
-      { "year": 2016, "demPct": 38.02, "repPct": 58.39, "demCandidate": "Rick Daugherty", "repCandidate": "Charles W. Dent", "demVotes": 124129, "repVotes": 190618, "totalVotes": 326474, "margin": 20.37, "repIncumbent": true }
+      { "year": 2016, "demPct": 38.02, "repPct": 58.39, "demCandidate": "Rick Daugherty", "repCandidate": "Charles Dent", "demVotes": 124129, "repVotes": 190618, "totalVotes": 326474, "margin": 20.37, "repIncumbent": true }
     ]
   },
   {
@@ -14499,9 +14499,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 36.35, "repPct": 63.65, "demCandidate": "Preston Nouri", "repCandidate": "Mike Kelly", "demVotes": 146709, "repVotes": 256923, "totalVotes": 403632, "margin": 27.3, "repIncumbent": true },
       { "year": 2022, "demPct": 40.64, "repPct": 59.36, "demCandidate": "Dan Pastore", "repCandidate": "Mike Kelly", "demVotes": 130443, "repVotes": 190546, "totalVotes": 320989, "margin": 18.72, "repIncumbent": true },
-      { "year": 2020, "demPct": 40.66, "repPct": 59.34, "demCandidate": "Kristy Marie Gnibus", "repCandidate": "George J. Kelly, Jr.", "demVotes": 143962, "repVotes": 210088, "totalVotes": 354050, "margin": 18.68 },
+      { "year": 2020, "demPct": 40.66, "repPct": 59.34, "demCandidate": "Kristy Marie Gnibus", "repCandidate": "George Kelly", "demVotes": 143962, "repVotes": 210088, "totalVotes": 354050, "margin": 18.68 },
       { "year": 2018, "demPct": 47.3, "repPct": 51.58, "demCandidate": "Ron DiNicola", "repCandidate": "Mike Kelly", "demVotes": 124109, "repVotes": 135348, "totalVotes": 262396, "margin": 4.28 },
-      { "year": 2016, "demPct": 42.89, "repPct": 53.76, "demCandidate": "Christina Hartman", "repCandidate": "Lloyd K. Smucker", "demVotes": 134586, "repVotes": 168669, "totalVotes": 313773, "margin": 10.87 }
+      { "year": 2016, "demPct": 42.89, "repPct": 53.76, "demCandidate": "Christina Hartman", "repCandidate": "Lloyd Smucker", "demVotes": 134586, "repVotes": 168669, "totalVotes": 313773, "margin": 10.87 }
     ]
   },
   {
@@ -14525,13 +14525,13 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Christopher Deluzio", "party": "D", "incumbent": true },
       "rep": { "name": "Jesse Vodvarka", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Christopher R. Deluzio",
+    "seatHolder": "Christopher Deluzio",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 53.88, "repPct": 46.12, "demCandidate": "Christopher R. Deluzio", "repCandidate": "Rob Mercuri", "demVotes": 242838, "repVotes": 207900, "totalVotes": 450738, "margin": -7.76, "demIncumbent": true },
+      { "year": 2024, "demPct": 53.88, "repPct": 46.12, "demCandidate": "Christopher Deluzio", "repCandidate": "Rob Mercuri", "demVotes": 242838, "repVotes": 207900, "totalVotes": 450738, "margin": -7.76, "demIncumbent": true },
       { "year": 2022, "demPct": 53.39, "repPct": 46.61, "demCandidate": "Chris Deluzio", "repCandidate": "Jeremy Shaffer", "demVotes": 193615, "repVotes": 169013, "totalVotes": 362628, "margin": -6.78 },
-      { "year": 2020, "demPct": 51.15, "repPct": 48.85, "demCandidate": "Conor J. Lamb", "repCandidate": "Richard Sean Parnell", "demVotes": 222253, "repVotes": 212284, "totalVotes": 434537, "margin": -2.3, "demIncumbent": true },
-      { "year": 2018, "demPct": 56.26, "repPct": 43.74, "demCandidate": "Conor Lamb", "repCandidate": "Keith J. Rothfus", "demVotes": 183162, "repVotes": 142417, "totalVotes": 325579, "margin": -12.52 },
+      { "year": 2020, "demPct": 51.15, "repPct": 48.85, "demCandidate": "Conor Lamb", "repCandidate": "Richard Sean Parnell", "demVotes": 222253, "repVotes": 212284, "totalVotes": 434537, "margin": -2.3, "demIncumbent": true },
+      { "year": 2018, "demPct": 56.26, "repPct": 43.74, "demCandidate": "Conor Lamb", "repCandidate": "Keith Rothfus", "demVotes": 183162, "repVotes": 142417, "totalVotes": 325579, "margin": -12.52 },
       { "year": 2016, "demPct": 53.8, "repPct": 46.2, "demCandidate": "Matt Cartwright", "repCandidate": "Matt Connolly", "demVotes": 157734, "repVotes": 135430, "totalVotes": 293164, "margin": -7.6, "demIncumbent": true }
     ]
   },
@@ -14562,10 +14562,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 63.02, "repPct": 31.99, "demCandidate": "Gabe Amo", "repCandidate": "Allen Rodney Waters", "demVotes": 139352, "repVotes": 70742, "totalVotes": 221118, "margin": -31.03, "demIncumbent": true },
-      { "year": 2022, "demPct": 64.01, "repPct": 35.76, "demCandidate": "David N. Cicilline", "repCandidate": "Allen R. Waters", "demVotes": 100318, "repVotes": 56055, "totalVotes": 156734, "margin": -28.25, "demIncumbent": true },
-      { "year": 2020, "demPct": 70.83, "repPct": 15.84, "demCandidate": "David N. Cicilline", "repCandidate": "Frederick Wysocki", "repParty": "I", "demVotes": 158550, "repVotes": 35457, "totalVotes": 223860, "margin": -54.99, "demIncumbent": true },
-      { "year": 2018, "demPct": 66.69, "repPct": 33.07, "demCandidate": "David N. Cicilline", "repCandidate": "Patrick J. Donovan", "demVotes": 116099, "repVotes": 57567, "totalVotes": 174083, "margin": -33.62, "demIncumbent": true },
-      { "year": 2016, "demPct": 64.5, "repPct": 35.1, "demCandidate": "David N. Cicilline", "repCandidate": "Harold Russell Taub", "demVotes": 130534, "repVotes": 71023, "totalVotes": 202371, "margin": -29.4, "demIncumbent": true }
+      { "year": 2022, "demPct": 64.01, "repPct": 35.76, "demCandidate": "David Cicilline", "repCandidate": "Allen Waters", "demVotes": 100318, "repVotes": 56055, "totalVotes": 156734, "margin": -28.25, "demIncumbent": true },
+      { "year": 2020, "demPct": 70.83, "repPct": 15.84, "demCandidate": "David Cicilline", "repCandidate": "Frederick Wysocki", "repParty": "I", "demVotes": 158550, "repVotes": 35457, "totalVotes": 223860, "margin": -54.99, "demIncumbent": true },
+      { "year": 2018, "demPct": 66.69, "repPct": 33.07, "demCandidate": "David Cicilline", "repCandidate": "Patrick Donovan", "demVotes": 116099, "repVotes": 57567, "totalVotes": 174083, "margin": -33.62, "demIncumbent": true },
+      { "year": 2016, "demPct": 64.5, "repPct": 35.1, "demCandidate": "David Cicilline", "repCandidate": "Harold Russell Taub", "demVotes": 130534, "repVotes": 71023, "totalVotes": 202371, "margin": -29.4, "demIncumbent": true }
     ]
   },
   {
@@ -14595,10 +14595,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 58.24, "repPct": 41.51, "demCandidate": "Seth Magaziner", "repCandidate": "Stephen Joseph Corvi", "demVotes": 153439, "repVotes": 109381, "totalVotes": 263480, "margin": -16.73, "demIncumbent": true },
-      { "year": 2022, "demPct": 50.44, "repPct": 46.73, "demCandidate": "Seth M. Magaziner", "repCandidate": "Allan W. Fung", "demVotes": 101432, "repVotes": 93969, "totalVotes": 201089, "margin": -3.71 },
-      { "year": 2020, "demPct": 58.24, "repPct": 41.54, "demCandidate": "James R. Langevin", "repCandidate": "Robert B. Lancia", "demVotes": 154086, "repVotes": 109894, "totalVotes": 264557, "margin": -16.7, "demIncumbent": true },
-      { "year": 2018, "demPct": 63.49, "repPct": 36.28, "demCandidate": "James R. Langevin", "repCandidate": "Salvatore G. Caiozzo", "demVotes": 126476, "repVotes": 72271, "totalVotes": 199197, "margin": -27.21, "demIncumbent": true },
-      { "year": 2016, "demPct": 58.09, "repPct": 30.68, "demCandidate": "James R. Langevin", "repCandidate": "Rhue R. Reis", "demVotes": 133108, "repVotes": 70301, "totalVotes": 229148, "margin": -27.41, "demIncumbent": true }
+      { "year": 2022, "demPct": 50.44, "repPct": 46.73, "demCandidate": "Seth Magaziner", "repCandidate": "Allan Fung", "demVotes": 101432, "repVotes": 93969, "totalVotes": 201089, "margin": -3.71 },
+      { "year": 2020, "demPct": 58.24, "repPct": 41.54, "demCandidate": "James Langevin", "repCandidate": "Robert Lancia", "demVotes": 154086, "repVotes": 109894, "totalVotes": 264557, "margin": -16.7, "demIncumbent": true },
+      { "year": 2018, "demPct": 63.49, "repPct": 36.28, "demCandidate": "James Langevin", "repCandidate": "Salvatore Caiozzo", "demVotes": 126476, "repVotes": 72271, "totalVotes": 199197, "margin": -27.21, "demIncumbent": true },
+      { "year": 2016, "demPct": 58.09, "repPct": 30.68, "demCandidate": "James Langevin", "repCandidate": "Rhue Reis", "demVotes": 133108, "repVotes": 70301, "totalVotes": 229148, "margin": -27.41, "demIncumbent": true }
     ]
   },
   {
@@ -14627,7 +14627,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Nancy Mace",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 41.6, "repPct": 58.22, "demCandidate": "Michael B. Moore", "repCandidate": "Nancy Mace", "demVotes": 162582, "repVotes": 227502, "totalVotes": 390777, "margin": 16.62, "repIncumbent": true },
+      { "year": 2024, "demPct": 41.6, "repPct": 58.22, "demCandidate": "Michael Moore", "repCandidate": "Nancy Mace", "demVotes": 162582, "repVotes": 227502, "totalVotes": 390777, "margin": 16.62, "repIncumbent": true },
       { "year": 2022, "demPct": 42.47, "repPct": 56.39, "demCandidate": "Annie Andrews", "repCandidate": "Nancy Mace", "demVotes": 115796, "repVotes": 153757, "totalVotes": 272681, "margin": 13.92, "repIncumbent": true },
       { "year": 2020, "demPct": 49.31, "repPct": 50.58, "demCandidate": "Joe Cunningham", "repCandidate": "Nancy Mace", "demVotes": 210627, "repVotes": 216042, "totalVotes": 427111, "margin": 1.27, "demIncumbent": true },
       { "year": 2018, "demPct": 50.6, "repPct": 49.22, "demCandidate": "Joe Cunningham", "repCandidate": "Katie Arrington", "demVotes": 145455, "repVotes": 141473, "totalVotes": 287433, "margin": -1.38 },
@@ -14660,7 +14660,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Joe Wilson",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 40.25, "repPct": 59.53, "demCandidate": "David Robinson II", "repCandidate": "Joe Wilson", "demVotes": 142985, "repVotes": 211514, "totalVotes": 355285, "margin": 19.28, "repIncumbent": true },
+      { "year": 2024, "demPct": 40.25, "repPct": 59.53, "demCandidate": "David Robinson", "repCandidate": "Joe Wilson", "demVotes": 142985, "repVotes": 211514, "totalVotes": 355285, "margin": 19.28, "repIncumbent": true },
       { "year": 2022, "demPct": 39.85, "repPct": 60.01, "demCandidate": "Judd Larkins", "repCandidate": "Joe Wilson", "demVotes": 98081, "repVotes": 147699, "totalVotes": 246126, "margin": 20.16, "repIncumbent": true },
       { "year": 2020, "demPct": 42.59, "repPct": 55.66, "demCandidate": "Adair Ford Boroughs", "repCandidate": "Joe Wilson", "demVotes": 155118, "repVotes": 202715, "totalVotes": 364215, "margin": 13.07, "repIncumbent": true },
       { "year": 2018, "demPct": 42.47, "repPct": 56.25, "demCandidate": "Sean Carrigan", "repCandidate": "Joe Wilson", "demVotes": 109199, "repVotes": 144642, "totalVotes": 257139, "margin": 13.78, "repIncumbent": true },
@@ -14693,7 +14693,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Sheri Biggs",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 25.3, "repPct": 71.66, "demCandidate": "Bryon L. Best", "repCandidate": "Sheri Biggs", "demVotes": 87735, "repVotes": 248451, "totalVotes": 346713, "margin": 46.36 },
+      { "year": 2024, "demPct": 25.3, "repPct": 71.66, "demCandidate": "Bryon Best", "repCandidate": "Sheri Biggs", "demVotes": 87735, "repVotes": 248451, "totalVotes": 346713, "margin": 46.36 },
       { "year": 2022, "demPct": 0, "repPct": 97.64, "repCandidate": "Jeff Duncan", "repVotes": 189971, "totalVotes": 194569, "margin": 97.64, "repIncumbent": true },
       { "year": 2020, "demPct": 28.69, "repPct": 71.21, "demCandidate": "Hosea Cleveland", "repCandidate": "Jeff Duncan", "demVotes": 95712, "repVotes": 237544, "totalVotes": 333564, "margin": 42.52, "repIncumbent": true },
       { "year": 2018, "demPct": 30.97, "repPct": 67.79, "demCandidate": "Mary Geren", "repCandidate": "Jeff Duncan", "demVotes": 70046, "repVotes": 153338, "totalVotes": 226204, "margin": 36.82, "repIncumbent": true },
@@ -14726,9 +14726,9 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "William Timmons",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 37.23, "repPct": 59.73, "demCandidate": "Kathryn Harvey", "repCandidate": "William R. Timmons IV", "demVotes": 128976, "repVotes": 206916, "totalVotes": 346414, "margin": 22.5, "repIncumbent": true },
-      { "year": 2022, "demPct": 0, "repPct": 90.81, "repCandidate": "William R. Timmons IV", "repVotes": 165607, "totalVotes": 182365, "margin": 90.81, "repIncumbent": true },
-      { "year": 2020, "demPct": 36.89, "repPct": 61.61, "demCandidate": "Kim Nelson", "repCandidate": "William R. Timmons IV", "demVotes": 133023, "repVotes": 222126, "totalVotes": 360550, "margin": 24.72, "repIncumbent": true },
+      { "year": 2024, "demPct": 37.23, "repPct": 59.73, "demCandidate": "Kathryn Harvey", "repCandidate": "William Timmons", "demVotes": 128976, "repVotes": 206916, "totalVotes": 346414, "margin": 22.5, "repIncumbent": true },
+      { "year": 2022, "demPct": 0, "repPct": 90.81, "repCandidate": "William Timmons", "repVotes": 165607, "totalVotes": 182365, "margin": 90.81, "repIncumbent": true },
+      { "year": 2020, "demPct": 36.89, "repPct": 61.61, "demCandidate": "Kim Nelson", "repCandidate": "William Timmons", "demVotes": 133023, "repVotes": 222126, "totalVotes": 360550, "margin": 24.72, "repIncumbent": true },
       { "year": 2018, "demPct": 36.56, "repPct": 59.57, "demCandidate": "Brandon Brown", "repCandidate": "William Timmons", "demVotes": 89182, "repVotes": 145321, "totalVotes": 243950, "margin": 23.01 },
       { "year": 2016, "demPct": 31.01, "repPct": 67.19, "demCandidate": "Chris Fedalei", "repCandidate": "Trey Gowdy", "demVotes": 91676, "repVotes": 198648, "totalVotes": 295670, "margin": 36.18, "repIncumbent": true }
     ]
@@ -14792,11 +14792,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "James Clyburn",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 59.5, "repPct": 36.72, "demCandidate": "James E. Clyburn", "repCandidate": "Duke Buckner", "demVotes": 182056, "repVotes": 112360, "totalVotes": 305977, "margin": -22.78, "demIncumbent": true },
-      { "year": 2022, "demPct": 62.04, "repPct": 37.85, "demCandidate": "James E. Clyburn", "repCandidate": "Duke Buckner", "demVotes": 130923, "repVotes": 79879, "totalVotes": 211028, "margin": -24.19, "demIncumbent": true },
-      { "year": 2020, "demPct": 68.18, "repPct": 30.82, "demCandidate": "James E. Clyburn", "repCandidate": "John McCollum", "demVotes": 197477, "repVotes": 89258, "totalVotes": 289653, "margin": -37.36, "demIncumbent": true },
-      { "year": 2018, "demPct": 70.13, "repPct": 28.23, "demCandidate": "James E. Clyburn", "repCandidate": "Gerhard R. Gressman", "demVotes": 144765, "repVotes": 58282, "totalVotes": 206433, "margin": -41.9, "demIncumbent": true },
-      { "year": 2016, "demPct": 70.09, "repPct": 27.61, "demCandidate": "James E. Clyburn", "repCandidate": "Laura Sterling", "demVotes": 177947, "repVotes": 70099, "totalVotes": 253901, "margin": -42.48, "demIncumbent": true }
+      { "year": 2024, "demPct": 59.5, "repPct": 36.72, "demCandidate": "James Clyburn", "repCandidate": "Duke Buckner", "demVotes": 182056, "repVotes": 112360, "totalVotes": 305977, "margin": -22.78, "demIncumbent": true },
+      { "year": 2022, "demPct": 62.04, "repPct": 37.85, "demCandidate": "James Clyburn", "repCandidate": "Duke Buckner", "demVotes": 130923, "repVotes": 79879, "totalVotes": 211028, "margin": -24.19, "demIncumbent": true },
+      { "year": 2020, "demPct": 68.18, "repPct": 30.82, "demCandidate": "James Clyburn", "repCandidate": "John McCollum", "demVotes": 197477, "repVotes": 89258, "totalVotes": 289653, "margin": -37.36, "demIncumbent": true },
+      { "year": 2018, "demPct": 70.13, "repPct": 28.23, "demCandidate": "James Clyburn", "repCandidate": "Gerhard Gressman", "demVotes": 144765, "repVotes": 58282, "totalVotes": 206433, "margin": -41.9, "demIncumbent": true },
+      { "year": 2016, "demPct": 70.09, "repPct": 27.61, "demCandidate": "James Clyburn", "repCandidate": "Laura Sterling", "demVotes": 177947, "repVotes": 70099, "totalVotes": 253901, "margin": -42.48, "demIncumbent": true }
     ]
   },
   {
@@ -14826,7 +14826,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 34.97, "repPct": 64.9, "demCandidate": "Mal Hyman", "repCandidate": "Russell Fry", "demVotes": 129522, "repVotes": 240326, "totalVotes": 370329, "margin": 29.93, "repIncumbent": true },
-      { "year": 2022, "demPct": 35.07, "repPct": 64.77, "demCandidate": "Daryl W. Scott", "repCandidate": "Russell Fry", "demVotes": 89030, "repVotes": 164440, "totalVotes": 253865, "margin": 29.7 },
+      { "year": 2022, "demPct": 35.07, "repPct": 64.77, "demCandidate": "Daryl Scott", "repCandidate": "Russell Fry", "demVotes": 89030, "repVotes": 164440, "totalVotes": 253865, "margin": 29.7 },
       { "year": 2020, "demPct": 38.14, "repPct": 61.8, "demCandidate": "Melissa Ward Watson", "repCandidate": "Tom Rice", "demVotes": 138863, "repVotes": 224993, "totalVotes": 364091, "margin": 23.66, "repIncumbent": true },
       { "year": 2018, "demPct": 40.31, "repPct": 59.56, "demCandidate": "Robert Williams", "repCandidate": "Tom Rice", "demVotes": 96564, "repVotes": 142681, "totalVotes": 239554, "margin": 19.25, "repIncumbent": true },
       { "year": 2016, "demPct": 36.93, "repPct": 62.99, "demCandidate": "Mal Hyman", "repCandidate": "Tom Rice", "demVotes": 103454, "repVotes": 176468, "totalVotes": 280173, "margin": 26.06, "repIncumbent": true }
@@ -14858,9 +14858,9 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 27.96, "repPct": 72.04, "demCandidate": "Sheryl Johnson", "repCandidate": "Dusty Johnson", "demVotes": 117818, "repVotes": 303630, "totalVotes": 421448, "margin": 44.08, "repIncumbent": true },
       { "year": 2022, "demPct": 22.58, "repPct": 77.42, "demCandidate": "Collin Duprel (L)", "repCandidate": "Dusty Johnson", "demVotes": 74020, "repVotes": 253821, "totalVotes": 327841, "margin": 54.84, "repIncumbent": true },
-      { "year": 2020, "demPct": 19.04, "repPct": 80.96, "demCandidate": "Randy “Uriah” Luallin (L)", "repCandidate": "Dusty Johnson", "demVotes": 75748, "repVotes": 321984, "totalVotes": 397732, "margin": 61.92, "repIncumbent": true },
-      { "year": 2018, "demPct": 36.03, "repPct": 60.33, "demCandidate": "Tim Bjorkman", "repCandidate": "Dustin “Dusty” Johnson", "demVotes": 121033, "repVotes": 202695, "totalVotes": 335965, "margin": 24.3 },
-      { "year": 2016, "demPct": 35.9, "repPct": 64.1, "demCandidate": "Paula Hawks", "repCandidate": "Kristi L. Noem", "demVotes": 132810, "repVotes": 237163, "totalVotes": 369973, "margin": 28.2, "repIncumbent": true }
+      { "year": 2020, "demPct": 19.04, "repPct": 80.96, "demCandidate": "Uriah Luallin (L)", "repCandidate": "Dusty Johnson", "demVotes": 75748, "repVotes": 321984, "totalVotes": 397732, "margin": 61.92, "repIncumbent": true },
+      { "year": 2018, "demPct": 36.03, "repPct": 60.33, "demCandidate": "Tim Bjorkman", "repCandidate": "Dusty Johnson", "demVotes": 121033, "repVotes": 202695, "totalVotes": 335965, "margin": 24.3 },
+      { "year": 2016, "demPct": 35.9, "repPct": 64.1, "demCandidate": "Paula Hawks", "repCandidate": "Kristi Noem", "demVotes": 132810, "repVotes": 237163, "totalVotes": 369973, "margin": 28.2, "repIncumbent": true }
     ]
   },
   {
@@ -14892,8 +14892,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 19.39, "repPct": 78.08, "demCandidate": "Kevin Jenkins", "repCandidate": "Diana Harshbarger", "demVotes": 64021, "repVotes": 257825, "totalVotes": 330199, "margin": 58.69, "repIncumbent": true },
       { "year": 2022, "demPct": 19.71, "repPct": 78.32, "demCandidate": "Cameron Parsons", "repCandidate": "Diana Harshbarger", "demVotes": 37049, "repVotes": 147241, "totalVotes": 188003, "margin": 58.61, "repIncumbent": true },
       { "year": 2020, "demPct": 22.47, "repPct": 74.71, "demCandidate": "Blair Walsingham", "repCandidate": "Diana Harshbarger", "demVotes": 68617, "repVotes": 228181, "totalVotes": 305423, "margin": 52.24 },
-      { "year": 2018, "demPct": 21.02, "repPct": 77.06, "demCandidate": "Marty Olsen", "repCandidate": "David P. Roe", "demVotes": 47138, "repVotes": 172835, "totalVotes": 224282, "margin": 56.04, "repIncumbent": true },
-      { "year": 2016, "demPct": 15.42, "repPct": 78.37, "demCandidate": "Alan Bohms", "repCandidate": "David P. Roe", "demVotes": 39024, "repVotes": 198293, "totalVotes": 253025, "margin": 62.95, "repIncumbent": true }
+      { "year": 2018, "demPct": 21.02, "repPct": 77.06, "demCandidate": "Marty Olsen", "repCandidate": "David Roe", "demVotes": 47138, "repVotes": 172835, "totalVotes": 224282, "margin": 56.04, "repIncumbent": true },
+      { "year": 2016, "demPct": 15.42, "repPct": 78.37, "demCandidate": "Alan Bohms", "repCandidate": "David Roe", "demVotes": 39024, "repVotes": 198293, "totalVotes": 253025, "margin": 62.95, "repIncumbent": true }
     ]
   },
   {
@@ -14926,7 +14926,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 32.09, "repPct": 67.91, "demCandidate": "Mark Harmon", "repCandidate": "Tim Burchett", "demVotes": 66673, "repVotes": 141089, "totalVotes": 207762, "margin": 35.82, "repIncumbent": true },
       { "year": 2020, "demPct": 31.05, "repPct": 67.64, "demCandidate": "Renee Hoyos", "repCandidate": "Tim Burchett", "demVotes": 109684, "repVotes": 238907, "totalVotes": 353197, "margin": 36.59, "repIncumbent": true },
       { "year": 2018, "demPct": 33.06, "repPct": 65.94, "demCandidate": "Renee Hoyos", "repCandidate": "Tim Burchett", "demVotes": 86668, "repVotes": 172856, "totalVotes": 262134, "margin": 32.88 },
-      { "year": 2016, "demPct": 24.35, "repPct": 75.65, "demCandidate": "Stuart Starr", "repCandidate": "John J. Duncan, Jr.", "demVotes": 68401, "repVotes": 212455, "totalVotes": 280856, "margin": 51.3, "repIncumbent": true }
+      { "year": 2016, "demPct": 24.35, "repPct": 75.65, "demCandidate": "Stuart Starr", "repCandidate": "John Duncan", "demVotes": 68401, "repVotes": 212455, "totalVotes": 280856, "margin": 51.3, "repIncumbent": true }
     ]
   },
   {
@@ -14950,16 +14950,16 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.69,
     "candidates": {
       "dem": { "name": "Joel Hawn", "party": "D", "incumbent": false },
-      "rep": { "name": "Charles Fleischmann", "party": "R", "incumbent": true }
+      "rep": { "name": "Chuck Fleischmann", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Charles J. “Chuck” Fleischmann",
+    "seatHolder": "Chuck Fleischmann",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 29.36, "repPct": 67.51, "demCandidate": "Jack Allen", "repCandidate": "Charles J. “Chuck” Fleischmann", "demVotes": 102841, "repVotes": 236519, "totalVotes": 350328, "margin": 38.15, "repIncumbent": true },
-      { "year": 2022, "demPct": 30.19, "repPct": 68.38, "demCandidate": "Meg Gorman", "repCandidate": "Charles J. “Chuck” Fleischmann", "demVotes": 60334, "repVotes": 136639, "totalVotes": 199830, "margin": 38.19, "repIncumbent": true },
-      { "year": 2020, "demPct": 30.5, "repPct": 67.3, "demCandidate": "Meg Gorman", "repCandidate": "Charles J. “Chuck” Fleischmann", "demVotes": 97687, "repVotes": 215571, "totalVotes": 320299, "margin": 36.8, "repIncumbent": true },
-      { "year": 2018, "demPct": 34.48, "repPct": 63.68, "demCandidate": "Danielle Mitchell", "repCandidate": "Charles J. “Chuck” Fleischmann", "demVotes": 84731, "repVotes": 156512, "totalVotes": 245765, "margin": 29.2, "repIncumbent": true },
-      { "year": 2016, "demPct": 28.84, "repPct": 66.39, "demCandidate": "Melody Shekari", "repCandidate": "Charles J. “Chuck” Fleischmann", "demVotes": 76727, "repVotes": 176613, "totalVotes": 266006, "margin": 37.55, "repIncumbent": true }
+      { "year": 2024, "demPct": 29.36, "repPct": 67.51, "demCandidate": "Jack Allen", "repCandidate": "Chuck Fleischmann", "demVotes": 102841, "repVotes": 236519, "totalVotes": 350328, "margin": 38.15, "repIncumbent": true },
+      { "year": 2022, "demPct": 30.19, "repPct": 68.38, "demCandidate": "Meg Gorman", "repCandidate": "Chuck Fleischmann", "demVotes": 60334, "repVotes": 136639, "totalVotes": 199830, "margin": 38.19, "repIncumbent": true },
+      { "year": 2020, "demPct": 30.5, "repPct": 67.3, "demCandidate": "Meg Gorman", "repCandidate": "Chuck Fleischmann", "demVotes": 97687, "repVotes": 215571, "totalVotes": 320299, "margin": 36.8, "repIncumbent": true },
+      { "year": 2018, "demPct": 34.48, "repPct": 63.68, "demCandidate": "Danielle Mitchell", "repCandidate": "Chuck Fleischmann", "demVotes": 84731, "repVotes": 156512, "totalVotes": 245765, "margin": 29.2, "repIncumbent": true },
+      { "year": 2016, "demPct": 28.84, "repPct": 66.39, "demCandidate": "Melody Shekari", "repCandidate": "Chuck Fleischmann", "demVotes": 76727, "repVotes": 176613, "totalVotes": 266006, "margin": 37.55, "repIncumbent": true }
     ]
   },
   {
@@ -14983,14 +14983,14 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.94,
     "candidates": {
       "dem": { "name": "Victoria Broderick", "party": "D", "incumbent": false },
-      "rep": { "name": "Scott Desjarlais", "party": "R", "incumbent": true }
+      "rep": { "name": "Scott DesJarlais", "party": "R", "incumbent": true }
     },
     "seatHolder": "Scott DesJarlais",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 26.76, "repPct": 69.95, "demCandidate": "Victoria Isabel Broderick", "repCandidate": "Scott DesJarlais", "demVotes": 83832, "repVotes": 219133, "totalVotes": 313255, "margin": 43.19, "repIncumbent": true },
       { "year": 2022, "demPct": 25.74, "repPct": 70.57, "demCandidate": "Wayne Steele", "repCandidate": "Scott DesJarlais", "demVotes": 44648, "repVotes": 122401, "totalVotes": 173437, "margin": 44.83, "repIncumbent": true },
-      { "year": 2020, "demPct": 33.33, "repPct": 66.67, "demCandidate": "Christopher J. Hale", "repCandidate": "Scott DesJarlais", "demVotes": 111908, "repVotes": 223802, "totalVotes": 335710, "margin": 33.34, "repIncumbent": true },
+      { "year": 2020, "demPct": 33.33, "repPct": 66.67, "demCandidate": "Christopher Hale", "repCandidate": "Scott DesJarlais", "demVotes": 111908, "repVotes": 223802, "totalVotes": 335710, "margin": 33.34, "repIncumbent": true },
       { "year": 2018, "demPct": 33.58, "repPct": 63.38, "demCandidate": "Mariah Phillips", "repCandidate": "Scott DesJarlais", "demVotes": 78065, "repVotes": 147323, "totalVotes": 232451, "margin": 29.8, "repIncumbent": true },
       { "year": 2016, "demPct": 34.97, "repPct": 65.03, "demCandidate": "Steven Reynolds", "repCandidate": "Scott DesJarlais", "demVotes": 89141, "repVotes": 165796, "totalVotes": 254937, "margin": 30.06, "repIncumbent": true }
     ]
@@ -15024,7 +15024,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 39.47, "repPct": 56.85, "demCandidate": "Maryam Abolfazli", "repCandidate": "Andrew Ogles", "demVotes": 142387, "repVotes": 205075, "totalVotes": 360714, "margin": 17.38, "repIncumbent": true },
       { "year": 2022, "demPct": 42.32, "repPct": 55.84, "demCandidate": "Heidi Campbell", "repCandidate": "Andy Ogles", "demVotes": 93648, "repVotes": 123558, "totalVotes": 221275, "margin": 13.52 },
       { "year": 2020, "demPct": 99.99, "repPct": 0, "demCandidate": "Jim Cooper", "demVotes": 252155, "totalVotes": 252169, "margin": -99.99, "demIncumbent": true },
-      { "year": 2018, "demPct": 67.85, "repPct": 32.15, "demCandidate": "Jim Cooper", "repCandidate": "Jody M. Ball", "demVotes": 177923, "repVotes": 84317, "totalVotes": 262248, "margin": -35.7, "demIncumbent": true },
+      { "year": 2018, "demPct": 67.85, "repPct": 32.15, "demCandidate": "Jim Cooper", "repCandidate": "Jody Ball", "demVotes": 177923, "repVotes": 84317, "totalVotes": 262248, "margin": -35.7, "demIncumbent": true },
       { "year": 2016, "demPct": 62.55, "repPct": 37.45, "demCandidate": "Jim Cooper", "repCandidate": "Stacy Ries Snyder", "demVotes": 171111, "repVotes": 102433, "totalVotes": 273544, "margin": -25.1, "demIncumbent": true }
     ]
   },
@@ -15051,14 +15051,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Chaney Mosley", "party": "D", "incumbent": false },
       "rep": { "name": "John Rose", "party": "R", "incumbent": true }
     },
-    "seatHolder": "John W. Rose",
+    "seatHolder": "John Rose",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 32, "repPct": 68, "demCandidate": "Lore Bergman", "repCandidate": "John W. Rose", "demVotes": 106144, "repVotes": 225543, "totalVotes": 331687, "margin": 36, "repIncumbent": true },
-      { "year": 2022, "demPct": 33.67, "repPct": 66.33, "demCandidate": "Randal Cooper", "repCandidate": "John W. Rose", "demVotes": 65675, "repVotes": 129388, "totalVotes": 195063, "margin": 32.66, "repIncumbent": true },
-      { "year": 2020, "demPct": 23.99, "repPct": 73.68, "demCandidate": "Christopher Martin Finley", "repCandidate": "John W. Rose", "demVotes": 83852, "repVotes": 257572, "totalVotes": 349578, "margin": 49.69, "repIncumbent": true },
+      { "year": 2024, "demPct": 32, "repPct": 68, "demCandidate": "Lore Bergman", "repCandidate": "John Rose", "demVotes": 106144, "repVotes": 225543, "totalVotes": 331687, "margin": 36, "repIncumbent": true },
+      { "year": 2022, "demPct": 33.67, "repPct": 66.33, "demCandidate": "Randal Cooper", "repCandidate": "John Rose", "demVotes": 65675, "repVotes": 129388, "totalVotes": 195063, "margin": 32.66, "repIncumbent": true },
+      { "year": 2020, "demPct": 23.99, "repPct": 73.68, "demCandidate": "Christopher Martin Finley", "repCandidate": "John Rose", "demVotes": 83852, "repVotes": 257572, "totalVotes": 349578, "margin": 49.69, "repIncumbent": true },
       { "year": 2018, "demPct": 28.29, "repPct": 69.47, "demCandidate": "Dawn Barlow", "repCandidate": "John Rose", "demVotes": 70370, "repVotes": 172810, "totalVotes": 248740, "margin": 41.18 },
-      { "year": 2016, "demPct": 21.79, "repPct": 71.09, "demCandidate": "David W. Kent", "repCandidate": "Diane Black", "demVotes": 61995, "repVotes": 202234, "totalVotes": 284490, "margin": 49.3, "repIncumbent": true }
+      { "year": 2016, "demPct": 21.79, "repPct": 71.09, "demCandidate": "David Kent", "repCandidate": "Diane Black", "demVotes": 61995, "repVotes": 202234, "totalVotes": 284490, "margin": 49.3, "repIncumbent": true }
     ]
   },
   {
@@ -15082,15 +15082,15 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.65,
     "candidates": {
       "dem": { "name": "Darden Copeland", "party": "D", "incumbent": false },
-      "rep": { "name": "Matthew Van Epps", "party": "R", "incumbent": true }
+      "rep": { "name": "Matt Van Epps", "party": "R", "incumbent": true }
     },
     "seatHolder": "Matt Van Epps",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 38.05, "repPct": 59.5, "demCandidate": "Megan Barry", "repCandidate": "Mark E. Green", "demVotes": 122764, "repVotes": 191992, "totalVotes": 322656, "margin": 21.45, "repIncumbent": true },
-      { "year": 2022, "demPct": 38.14, "repPct": 59.96, "demCandidate": "Odessa Kelly", "repCandidate": "Mark E. Green", "demVotes": 68973, "repVotes": 108421, "totalVotes": 180822, "margin": 21.82, "repIncumbent": true },
-      { "year": 2020, "demPct": 27.33, "repPct": 69.93, "demCandidate": "Kiran Sreepada", "repCandidate": "Mark E. Green", "demVotes": 95839, "repVotes": 245188, "totalVotes": 350635, "margin": 42.6, "repIncumbent": true },
-      { "year": 2018, "demPct": 32.1, "repPct": 66.86, "demCandidate": "Justin Kanew", "repCandidate": "Mark E. Green", "demVotes": 81661, "repVotes": 170071, "totalVotes": 254384, "margin": 34.76 },
+      { "year": 2024, "demPct": 38.05, "repPct": 59.5, "demCandidate": "Megan Barry", "repCandidate": "Mark Green", "demVotes": 122764, "repVotes": 191992, "totalVotes": 322656, "margin": 21.45, "repIncumbent": true },
+      { "year": 2022, "demPct": 38.14, "repPct": 59.96, "demCandidate": "Odessa Kelly", "repCandidate": "Mark Green", "demVotes": 68973, "repVotes": 108421, "totalVotes": 180822, "margin": 21.82, "repIncumbent": true },
+      { "year": 2020, "demPct": 27.33, "repPct": 69.93, "demCandidate": "Kiran Sreepada", "repCandidate": "Mark Green", "demVotes": 95839, "repVotes": 245188, "totalVotes": 350635, "margin": 42.6, "repIncumbent": true },
+      { "year": 2018, "demPct": 32.1, "repPct": 66.86, "demCandidate": "Justin Kanew", "repCandidate": "Mark Green", "demVotes": 81661, "repVotes": 170071, "totalVotes": 254384, "margin": 34.76 },
       { "year": 2016, "demPct": 23.5, "repPct": 72.22, "demCandidate": "Tharon Chandler", "repCandidate": "Marsha Blackburn", "demVotes": 65226, "repVotes": 200407, "totalVotes": 277513, "margin": 48.72, "repIncumbent": true }
     ]
   },
@@ -15121,7 +15121,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 25.59, "repPct": 72.34, "demCandidate": "Sarah Freeman", "repCandidate": "David Kustoff", "demVotes": 85043, "repVotes": 240411, "totalVotes": 332315, "margin": 46.75, "repIncumbent": true },
-      { "year": 2022, "demPct": 24.3, "repPct": 73.99, "demCandidate": "Lynnette P. Williams", "repCandidate": "David Kustoff", "demVotes": 51102, "repVotes": 155602, "totalVotes": 210315, "margin": 49.69, "repIncumbent": true },
+      { "year": 2022, "demPct": 24.3, "repPct": 73.99, "demCandidate": "Lynnette Williams", "repCandidate": "David Kustoff", "demVotes": 51102, "repVotes": 155602, "totalVotes": 210315, "margin": 49.69, "repIncumbent": true },
       { "year": 2020, "demPct": 29.5, "repPct": 68.47, "demCandidate": "Erika Stotts Pearson", "repCandidate": "David Kustoff", "demVotes": 97890, "repVotes": 227216, "totalVotes": 331853, "margin": 38.97, "repIncumbent": true },
       { "year": 2018, "demPct": 30.1, "repPct": 67.66, "demCandidate": "Erika Stotts Pearson", "repCandidate": "David Kustoff", "demVotes": 74755, "repVotes": 168030, "totalVotes": 248345, "margin": 37.56, "repIncumbent": true },
       { "year": 2016, "demPct": 25.09, "repPct": 68.75, "demCandidate": "Rickey Hobson", "repCandidate": "David Kustoff", "demVotes": 70925, "repVotes": 194386, "totalVotes": 282733, "margin": 43.66 }
@@ -15187,10 +15187,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 0, "repPct": 100, "repCandidate": "Nathaniel Moran", "repVotes": 258523, "totalVotes": 258523, "margin": 100, "repIncumbent": true },
-      { "year": 2022, "demPct": 21.92, "repPct": 78.08, "demCandidate": "Jrmar “JJ” Jefferson", "repCandidate": "Nathaniel Moran", "demVotes": 51438, "repVotes": 183224, "totalVotes": 234662, "margin": 56.16 },
+      { "year": 2022, "demPct": 21.92, "repPct": 78.08, "demCandidate": "JJ Jefferson", "repCandidate": "Nathaniel Moran", "demVotes": 51438, "repVotes": 183224, "totalVotes": 234662, "margin": 56.16 },
       { "year": 2020, "demPct": 27.42, "repPct": 72.58, "demCandidate": "Hank Gilbert", "repCandidate": "Louie Gohmert", "demVotes": 83016, "repVotes": 219726, "totalVotes": 302742, "margin": 45.16, "repIncumbent": true },
-      { "year": 2018, "demPct": 26.32, "repPct": 72.26, "demCandidate": "Shirley J. McKellar", "repCandidate": "Louie Gohmert", "demVotes": 61263, "repVotes": 168165, "totalVotes": 232720, "margin": 45.94, "repIncumbent": true },
-      { "year": 2016, "demPct": 24.13, "repPct": 73.9, "demCandidate": "Shirley J. McKellar", "repCandidate": "Louie Gohmert", "demVotes": 62847, "repVotes": 192434, "totalVotes": 260409, "margin": 49.77, "repIncumbent": true }
+      { "year": 2018, "demPct": 26.32, "repPct": 72.26, "demCandidate": "Shirley McKellar", "repCandidate": "Louie Gohmert", "demVotes": 61263, "repVotes": 168165, "totalVotes": 232720, "margin": 45.94, "repIncumbent": true },
+      { "year": 2016, "demPct": 24.13, "repPct": 73.9, "demCandidate": "Shirley McKellar", "repCandidate": "Louie Gohmert", "demVotes": 62847, "repVotes": 192434, "totalVotes": 260409, "margin": 49.77, "repIncumbent": true }
     ]
   },
   {
@@ -15256,7 +15256,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 36.91, "repPct": 60.55, "demCandidate": "Sandeep Srivastava", "repCandidate": "Keith Self", "demVotes": 100121, "repVotes": 164240, "totalVotes": 271256, "margin": 23.64 },
       { "year": 2020, "demPct": 42.87, "repPct": 55.07, "demCandidate": "Lulu Seikaly", "repCandidate": "Van Taylor", "demVotes": 179458, "repVotes": 230512, "totalVotes": 418591, "margin": 12.2, "repIncumbent": true },
       { "year": 2018, "demPct": 44.25, "repPct": 54.27, "demCandidate": "Lorie Burch", "repCandidate": "Van Taylor", "demVotes": 138234, "repVotes": 169520, "totalVotes": 312358, "margin": 10.02 },
-      { "year": 2016, "demPct": 34.58, "repPct": 61.2, "demCandidate": "Adam P. Bell", "repCandidate": "Sam Johnson", "demVotes": 109420, "repVotes": 193684, "totalVotes": 316467, "margin": 26.62, "repIncumbent": true }
+      { "year": 2016, "demPct": 34.58, "repPct": 61.2, "demCandidate": "Adam Bell", "repCandidate": "Sam Johnson", "demVotes": 109420, "repVotes": 193684, "totalVotes": 316467, "margin": 26.62, "repIncumbent": true }
     ]
   },
   {
@@ -15280,7 +15280,7 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.35,
     "candidates": {
       "dem": { "name": "Jason Pearce", "party": "D", "incumbent": false },
-      "rep": { "name": "Patrick Fallon", "party": "R", "incumbent": true }
+      "rep": { "name": "Pat Fallon", "party": "R", "incumbent": true }
     },
     "seatHolder": "Pat Fallon",
     "seatParty": "R",
@@ -15318,7 +15318,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Lance Gooden",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 35.92, "repPct": 64.08, "demCandidate": "Ruth “Truth” Torres", "repCandidate": "Lance Gooden", "demVotes": 107712, "repVotes": 192185, "totalVotes": 299897, "margin": 28.16, "repIncumbent": true },
+      { "year": 2024, "demPct": 35.92, "repPct": 64.08, "demCandidate": "Truth Torres", "repCandidate": "Lance Gooden", "demVotes": 107712, "repVotes": 192185, "totalVotes": 299897, "margin": 28.16, "repIncumbent": true },
       { "year": 2022, "demPct": 33.93, "repPct": 63.97, "demCandidate": "Tartisha Hill", "repCandidate": "Lance Gooden", "demVotes": 71930, "repVotes": 135595, "totalVotes": 211965, "margin": 30.04, "repIncumbent": true },
       { "year": 2020, "demPct": 35.93, "repPct": 61.99, "demCandidate": "Carolyn Salter", "repCandidate": "Lance Gooden", "demVotes": 100743, "repVotes": 173836, "totalVotes": 280413, "margin": 26.06, "repIncumbent": true },
       { "year": 2018, "demPct": 37.55, "repPct": 62.34, "demCandidate": "Dan Wood", "repCandidate": "Lance Gooden", "demVotes": 78666, "repVotes": 130617, "totalVotes": 209507, "margin": 24.79 },
@@ -15351,7 +15351,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jake Ellzey",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 34.32, "repPct": 65.68, "demCandidate": "John Love III", "repCandidate": "Jake Ellzey", "demVotes": 98319, "repVotes": 188119, "totalVotes": 286438, "margin": 31.36, "repIncumbent": true },
+      { "year": 2024, "demPct": 34.32, "repPct": 65.68, "demCandidate": "John Love", "repCandidate": "Jake Ellzey", "demVotes": 98319, "repVotes": 188119, "totalVotes": 286438, "margin": 31.36, "repIncumbent": true },
       { "year": 2022, "demPct": 0, "repPct": 100, "repCandidate": "Jake Ellzey", "repVotes": 149321, "totalVotes": 149321, "margin": 100, "repIncumbent": true },
       { "year": 2020, "demPct": 43.98, "repPct": 52.8, "demCandidate": "Stephen Daniel", "repCandidate": "Ron Wright", "demVotes": 149530, "repVotes": 179507, "totalVotes": 339992, "margin": 8.82, "repIncumbent": true },
       { "year": 2018, "demPct": 45.44, "repPct": 53.1, "demCandidate": "Jana Lynne Sanchez", "repCandidate": "Ron Wright", "demVotes": 116350, "repVotes": 135961, "totalVotes": 256042, "margin": 7.66 },
@@ -15449,7 +15449,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 100, "repPct": 0, "demCandidate": "Al Green", "demVotes": 184141, "totalVotes": 184141, "margin": -100, "demIncumbent": true },
-      { "year": 2022, "demPct": 76.68, "repPct": 23.32, "demCandidate": "Al Green", "repCandidate": "Jimmy I. Leon", "demVotes": 125446, "repVotes": 38161, "totalVotes": 163607, "margin": -53.36, "demIncumbent": true },
+      { "year": 2022, "demPct": 76.68, "repPct": 23.32, "demCandidate": "Al Green", "repCandidate": "Jimmy Leon", "demVotes": 125446, "repVotes": 38161, "totalVotes": 163607, "margin": -53.36, "demIncumbent": true },
       { "year": 2020, "demPct": 75.48, "repPct": 21.64, "demCandidate": "Al Green", "repCandidate": "Johnny Teague", "demVotes": 172938, "repVotes": 49575, "totalVotes": 229107, "margin": -53.84, "demIncumbent": true },
       { "year": 2018, "demPct": 89.06, "repPct": 3.88, "demCandidate": "Al Green", "repCandidate": "Phil Kurtz (L)", "demVotes": 136256, "repVotes": 5940, "totalVotes": 153001, "margin": -85.18, "demIncumbent": true },
       { "year": 2016, "demPct": 80.64, "repPct": 19.36, "demCandidate": "Al Green", "repCandidate": "Jeff Martin", "demVotes": 152032, "repVotes": 36491, "totalVotes": 188523, "margin": -61.28, "demIncumbent": true }
@@ -15481,11 +15481,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Michael McCaul",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 34.01, "repPct": 63.6, "demCandidate": "Theresa Boisseau", "repCandidate": "Michael T. McCaul", "demVotes": 118280, "repVotes": 221229, "totalVotes": 347818, "margin": 29.59, "repIncumbent": true },
-      { "year": 2022, "demPct": 34.3, "repPct": 63.3, "demCandidate": "Linda Nuno", "repCandidate": "Michael T. McCaul", "demVotes": 86404, "repVotes": 159469, "totalVotes": 251937, "margin": 29, "repIncumbent": true },
-      { "year": 2020, "demPct": 45.35, "repPct": 52.48, "demCandidate": "Mike Siegel", "repCandidate": "Michael T. McCaul", "demVotes": 187686, "repVotes": 217216, "totalVotes": 413894, "margin": 7.13, "repIncumbent": true },
-      { "year": 2018, "demPct": 46.79, "repPct": 51.06, "demCandidate": "Mike Siegel", "repCandidate": "Michael T. McCaul", "demVotes": 144034, "repVotes": 157166, "totalVotes": 307827, "margin": 4.27, "repIncumbent": true },
-      { "year": 2016, "demPct": 38.44, "repPct": 57.33, "demCandidate": "Tawana W. Cadien", "repCandidate": "Michael T. McCaul", "demVotes": 120170, "repVotes": 179221, "totalVotes": 312600, "margin": 18.89, "repIncumbent": true }
+      { "year": 2024, "demPct": 34.01, "repPct": 63.6, "demCandidate": "Theresa Boisseau", "repCandidate": "Michael McCaul", "demVotes": 118280, "repVotes": 221229, "totalVotes": 347818, "margin": 29.59, "repIncumbent": true },
+      { "year": 2022, "demPct": 34.3, "repPct": 63.3, "demCandidate": "Linda Nuno", "repCandidate": "Michael McCaul", "demVotes": 86404, "repVotes": 159469, "totalVotes": 251937, "margin": 29, "repIncumbent": true },
+      { "year": 2020, "demPct": 45.35, "repPct": 52.48, "demCandidate": "Mike Siegel", "repCandidate": "Michael McCaul", "demVotes": 187686, "repVotes": 217216, "totalVotes": 413894, "margin": 7.13, "repIncumbent": true },
+      { "year": 2018, "demPct": 46.79, "repPct": 51.06, "demCandidate": "Mike Siegel", "repCandidate": "Michael McCaul", "demVotes": 144034, "repVotes": 157166, "totalVotes": 307827, "margin": 4.27, "repIncumbent": true },
+      { "year": 2016, "demPct": 38.44, "repPct": 57.33, "demCandidate": "Tawana Cadien", "repCandidate": "Michael McCaul", "demVotes": 120170, "repVotes": 179221, "totalVotes": 312600, "margin": 18.89, "repIncumbent": true }
     ]
   },
   {
@@ -15517,8 +15517,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 0, "repPct": 100, "repCandidate": "August Pfluger", "repVotes": 211975, "totalVotes": 211975, "margin": 100, "repIncumbent": true },
       { "year": 2022, "demPct": 0, "repPct": 100, "repCandidate": "August Pfluger", "repVotes": 151066, "totalVotes": 151066, "margin": 100, "repIncumbent": true },
       { "year": 2020, "demPct": 18.3, "repPct": 79.71, "demCandidate": "Jon Mark Hogg", "repCandidate": "August Pfluger", "demVotes": 53394, "repVotes": 232568, "totalVotes": 291773, "margin": 61.41 },
-      { "year": 2018, "demPct": 18.44, "repPct": 80.14, "demCandidate": "Jennie Lou Leeder", "repCandidate": "K. Michael Conaway", "demVotes": 40631, "repVotes": 176603, "totalVotes": 220377, "margin": 61.7, "repIncumbent": true },
-      { "year": 2016, "demPct": 10.5, "repPct": 89.5, "demCandidate": "Nicholas Landholt (L)", "repCandidate": "K. Michael Conaway", "demVotes": 23677, "repVotes": 201871, "totalVotes": 225548, "margin": 79, "repIncumbent": true }
+      { "year": 2018, "demPct": 18.44, "repPct": 80.14, "demCandidate": "Jennie Lou Leeder", "repCandidate": "Michael Conaway", "demVotes": 40631, "repVotes": 176603, "totalVotes": 220377, "margin": 61.7, "repIncumbent": true },
+      { "year": 2016, "demPct": 10.5, "repPct": 89.5, "demCandidate": "Nicholas Landholt (L)", "repCandidate": "Michael Conaway", "demVotes": 23677, "repVotes": 201871, "totalVotes": 225548, "margin": 79, "repIncumbent": true }
     ]
   },
   {
@@ -15544,11 +15544,11 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Heli Rodriguez Prilliman", "party": "D", "incumbent": false },
       "rep": { "name": "Craig Goldman", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Craig A. Goldman",
+    "seatHolder": "Craig Goldman",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 36.55, "repPct": 63.45, "demCandidate": "Trey J. Hunt", "repCandidate": "Craig Goldman", "demVotes": 124154, "repVotes": 215564, "totalVotes": 339718, "margin": 26.9 },
-      { "year": 2022, "demPct": 35.73, "repPct": 64.27, "demCandidate": "Trey J. Hunt", "repCandidate": "Kay Granger", "demVotes": 85026, "repVotes": 152953, "totalVotes": 237979, "margin": 28.54, "repIncumbent": true },
+      { "year": 2024, "demPct": 36.55, "repPct": 63.45, "demCandidate": "Trey Hunt", "repCandidate": "Craig Goldman", "demVotes": 124154, "repVotes": 215564, "totalVotes": 339718, "margin": 26.9 },
+      { "year": 2022, "demPct": 35.73, "repPct": 64.27, "demCandidate": "Trey Hunt", "repCandidate": "Kay Granger", "demVotes": 85026, "repVotes": 152953, "totalVotes": 237979, "margin": 28.54, "repIncumbent": true },
       { "year": 2020, "demPct": 33.04, "repPct": 63.72, "demCandidate": "Lisa Welch", "repCandidate": "Kay Granger", "demVotes": 121250, "repVotes": 233853, "totalVotes": 367021, "margin": 30.68, "repIncumbent": true },
       { "year": 2018, "demPct": 33.89, "repPct": 64.27, "demCandidate": "Vanessa Adia", "repCandidate": "Kay Granger", "demVotes": 90994, "repVotes": 172557, "totalVotes": 268491, "margin": 30.38, "repIncumbent": true },
       { "year": 2016, "demPct": 26.85, "repPct": 69.4, "demCandidate": "Bill Bradshaw", "repCandidate": "Kay Granger", "demVotes": 76029, "repVotes": 196482, "totalVotes": 283115, "margin": 42.55, "repIncumbent": true }
@@ -15610,14 +15610,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Richard Davis", "party": "D", "incumbent": false },
       "rep": { "name": "Randy Weber", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Randy K. Weber, Sr.",
+    "seatHolder": "Randy Weber",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 31.31, "repPct": 68.69, "demCandidate": "Rhonda Hart", "repCandidate": "Randy K. Weber, Sr.", "demVotes": 95875, "repVotes": 210320, "totalVotes": 306195, "margin": 37.38, "repIncumbent": true },
-      { "year": 2022, "demPct": 29.84, "repPct": 70.16, "demCandidate": "Mikal Williams", "repCandidate": "Randy K. Weber, Sr.", "demVotes": 63606, "repVotes": 149543, "totalVotes": 213149, "margin": 40.32, "repIncumbent": true },
-      { "year": 2020, "demPct": 38.36, "repPct": 61.64, "demCandidate": "Adrienne Bell", "repCandidate": "Randy K. Weber, Sr.", "demVotes": 118574, "repVotes": 190541, "totalVotes": 309115, "margin": 23.28, "repIncumbent": true },
-      { "year": 2018, "demPct": 39.32, "repPct": 59.24, "demCandidate": "Adrienne Bell", "repCandidate": "Randy K. Weber, Sr.", "demVotes": 92212, "repVotes": 138942, "totalVotes": 234528, "margin": 19.92, "repIncumbent": true },
-      { "year": 2016, "demPct": 38.14, "repPct": 61.86, "demCandidate": "Michael Cole", "repCandidate": "Randy K. Weber, Sr.", "demVotes": 99054, "repVotes": 160631, "totalVotes": 259685, "margin": 23.72, "repIncumbent": true }
+      { "year": 2024, "demPct": 31.31, "repPct": 68.69, "demCandidate": "Rhonda Hart", "repCandidate": "Randy Weber", "demVotes": 95875, "repVotes": 210320, "totalVotes": 306195, "margin": 37.38, "repIncumbent": true },
+      { "year": 2022, "demPct": 29.84, "repPct": 70.16, "demCandidate": "Mikal Williams", "repCandidate": "Randy Weber", "demVotes": 63606, "repVotes": 149543, "totalVotes": 213149, "margin": 40.32, "repIncumbent": true },
+      { "year": 2020, "demPct": 38.36, "repPct": 61.64, "demCandidate": "Adrienne Bell", "repCandidate": "Randy Weber", "demVotes": 118574, "repVotes": 190541, "totalVotes": 309115, "margin": 23.28, "repIncumbent": true },
+      { "year": 2018, "demPct": 39.32, "repPct": 59.24, "demCandidate": "Adrienne Bell", "repCandidate": "Randy Weber", "demVotes": 92212, "repVotes": 138942, "totalVotes": 234528, "margin": 19.92, "repIncumbent": true },
+      { "year": 2016, "demPct": 38.14, "repPct": 61.86, "demCandidate": "Michael Cole", "repCandidate": "Randy Weber", "demVotes": 99054, "repVotes": 160631, "totalVotes": 259685, "margin": 23.72, "repIncumbent": true }
     ]
   },
   {
@@ -15639,7 +15639,7 @@ export const houseData: RaceForecast[] = [
     ],
     "candidates": {
       "dem": { "name": "Bobby Pulido", "party": "D", "incumbent": false },
-      "rep": { "name": "Monica De La Cruz-Hernandez", "party": "R", "incumbent": true }
+      "rep": { "name": "Monica De La Cruz", "party": "R", "incumbent": true }
     },
     "seatHolder": "Monica De La Cruz",
     "seatParty": "R",
@@ -15681,7 +15681,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 63.46, "repPct": 36.54, "demCandidate": "Veronica Escobar", "repCandidate": "Irene Armendariz Jackson", "demVotes": 95510, "repVotes": 54986, "totalVotes": 150496, "margin": -26.92, "demIncumbent": true },
       { "year": 2020, "demPct": 64.72, "repPct": 35.28, "demCandidate": "Veronica Escobar", "repCandidate": "Irene Armendariz-Jackson", "demVotes": 154108, "repVotes": 84006, "totalVotes": 238114, "margin": -29.44, "demIncumbent": true },
       { "year": 2018, "demPct": 68.46, "repPct": 27.03, "demCandidate": "Veronica Escobar", "repCandidate": "Rick Seeberger", "demVotes": 124437, "repVotes": 49127, "totalVotes": 181754, "margin": -41.43 },
-      { "year": 2016, "demPct": 85.73, "repPct": 9.98, "demCandidate": "Beto O’Rourke", "repCandidate": "Jaime O. Perez (L)", "demVotes": 150228, "repVotes": 17491, "totalVotes": 175229, "margin": -75.75, "demIncumbent": true }
+      { "year": 2016, "demPct": 85.73, "repPct": 9.98, "demCandidate": "Beto O’Rourke", "repCandidate": "Jaime Perez (L)", "demVotes": 150228, "repVotes": 17491, "totalVotes": 175229, "margin": -75.75, "demIncumbent": true }
     ]
   },
   {
@@ -15776,10 +15776,10 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jodey Arrington",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 10.31, "repPct": 80.69, "demCandidate": "Nathan Lewis", "demParty": "I", "repCandidate": "Jodey C. Arrington", "demVotes": 27461, "repVotes": 214950, "totalVotes": 266375, "margin": 70.38, "repIncumbent": true },
-      { "year": 2022, "demPct": 19.7, "repPct": 80.3, "demCandidate": "Nathan Lewis", "demParty": "I", "repCandidate": "Jodey C. Arrington", "demVotes": 37360, "repVotes": 152321, "totalVotes": 189681, "margin": 60.6, "repIncumbent": true },
-      { "year": 2020, "demPct": 22.86, "repPct": 74.78, "demCandidate": "Tom Watson", "repCandidate": "Jodey C. Arrington", "demVotes": 60583, "repVotes": 198198, "totalVotes": 265052, "margin": 51.92, "repIncumbent": true },
-      { "year": 2018, "demPct": 24.77, "repPct": 75.23, "demCandidate": "Miguel Levario", "repCandidate": "Jodey C. Arrington", "demVotes": 50039, "repVotes": 151946, "totalVotes": 201985, "margin": 50.46, "repIncumbent": true },
+      { "year": 2024, "demPct": 10.31, "repPct": 80.69, "demCandidate": "Nathan Lewis", "demParty": "I", "repCandidate": "Jodey Arrington", "demVotes": 27461, "repVotes": 214950, "totalVotes": 266375, "margin": 70.38, "repIncumbent": true },
+      { "year": 2022, "demPct": 19.7, "repPct": 80.3, "demCandidate": "Nathan Lewis", "demParty": "I", "repCandidate": "Jodey Arrington", "demVotes": 37360, "repVotes": 152321, "totalVotes": 189681, "margin": 60.6, "repIncumbent": true },
+      { "year": 2020, "demPct": 22.86, "repPct": 74.78, "demCandidate": "Tom Watson", "repCandidate": "Jodey Arrington", "demVotes": 60583, "repVotes": 198198, "totalVotes": 265052, "margin": 51.92, "repIncumbent": true },
+      { "year": 2018, "demPct": 24.77, "repPct": 75.23, "demCandidate": "Miguel Levario", "repCandidate": "Jodey Arrington", "demVotes": 50039, "repVotes": 151946, "totalVotes": 201985, "margin": 50.46, "repIncumbent": true },
       { "year": 2016, "demPct": 8.54, "repPct": 86.65, "demCandidate": "Troy Bonar (L)", "repCandidate": "Jodey Arrington", "demVotes": 17376, "repVotes": 176314, "totalVotes": 203475, "margin": 78.11 }
     ]
   },
@@ -15813,7 +15813,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 68.42, "repPct": 31.57, "demCandidate": "Joaquin Castro", "repCandidate": "Kyle Sinclair", "demVotes": 115352, "repVotes": 53226, "totalVotes": 168599, "margin": -36.85, "demIncumbent": true },
       { "year": 2020, "demPct": 64.67, "repPct": 33.11, "demCandidate": "Joaquin Castro", "repCandidate": "Mauro Garza", "demVotes": 175078, "repVotes": 89628, "totalVotes": 270723, "margin": -31.56, "demIncumbent": true },
       { "year": 2018, "demPct": 80.85, "repPct": 19.15, "demCandidate": "Joaquin Castro", "repCandidate": "Jeffrey Blunt (L)", "demVotes": 139038, "repVotes": 32925, "totalVotes": 171963, "margin": -61.7, "demIncumbent": true },
-      { "year": 2016, "demPct": 79.74, "repPct": 15.48, "demCandidate": "Joaquin Castro", "repCandidate": "Jeffrey C. Blunt (L)", "demVotes": 149640, "repVotes": 29055, "totalVotes": 187669, "margin": -64.26, "demIncumbent": true }
+      { "year": 2016, "demPct": 79.74, "repPct": 15.48, "demCandidate": "Joaquin Castro", "repCandidate": "Jeffrey Blunt (L)", "demVotes": 149640, "repVotes": 29055, "totalVotes": 187669, "margin": -64.26, "demIncumbent": true }
     ]
   },
   {
@@ -15844,7 +15844,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 36.06, "repPct": 61.85, "demCandidate": "Kristin Hook", "repCandidate": "Chip Roy", "demVotes": 153765, "repVotes": 263744, "totalVotes": 426423, "margin": 25.79, "repIncumbent": true },
       { "year": 2022, "demPct": 37.16, "repPct": 62.84, "demCandidate": "Claudia Andreana Zapata", "repCandidate": "Chip Roy", "demVotes": 122655, "repVotes": 207426, "totalVotes": 330081, "margin": 25.68, "repIncumbent": true },
-      { "year": 2020, "demPct": 45.35, "repPct": 51.95, "demCandidate": "Wendy R. Davis", "repCandidate": "Chip Roy", "demVotes": 205780, "repVotes": 235740, "totalVotes": 453750, "margin": 6.6, "repIncumbent": true },
+      { "year": 2020, "demPct": 45.35, "repPct": 51.95, "demCandidate": "Wendy Davis", "repCandidate": "Chip Roy", "demVotes": 205780, "repVotes": 235740, "totalVotes": 453750, "margin": 6.6, "repIncumbent": true },
       { "year": 2018, "demPct": 47.63, "repPct": 50.24, "demCandidate": "Joseph Kopser", "repCandidate": "Chip Roy", "demVotes": 168421, "repVotes": 177654, "totalVotes": 353617, "margin": 2.61 },
       { "year": 2016, "demPct": 36.45, "repPct": 57.01, "demCandidate": "Tom Wakely", "repCandidate": "Lamar Smith", "demVotes": 129765, "repVotes": 202967, "totalVotes": 356031, "margin": 20.56, "repIncumbent": true }
     ]
@@ -15875,8 +15875,8 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Troy Nehls",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 37.88, "repPct": 62.12, "demCandidate": "Marquette Greene-Scott", "repCandidate": "Troy E. Nehls", "demVotes": 127604, "repVotes": 209285, "totalVotes": 336889, "margin": 24.24, "repIncumbent": true },
-      { "year": 2022, "demPct": 35.51, "repPct": 62.19, "demCandidate": "Jamie Kaye Jordan", "repCandidate": "Troy E. Nehls", "demVotes": 85653, "repVotes": 150014, "totalVotes": 241215, "margin": 26.68, "repIncumbent": true },
+      { "year": 2024, "demPct": 37.88, "repPct": 62.12, "demCandidate": "Marquette Greene-Scott", "repCandidate": "Troy Nehls", "demVotes": 127604, "repVotes": 209285, "totalVotes": 336889, "margin": 24.24, "repIncumbent": true },
+      { "year": 2022, "demPct": 35.51, "repPct": 62.19, "demCandidate": "Jamie Kaye Jordan", "repCandidate": "Troy Nehls", "demVotes": 85653, "repVotes": 150014, "totalVotes": 241215, "margin": 26.68, "repIncumbent": true },
       { "year": 2020, "demPct": 44.6, "repPct": 51.53, "demCandidate": "Sri Preston Kulkarni", "repCandidate": "Troy Nehls", "demVotes": 181998, "repVotes": 210259, "totalVotes": 408048, "margin": 6.93 },
       { "year": 2018, "demPct": 46.45, "repPct": 51.36, "demCandidate": "Sri Preston Kulkarni", "repCandidate": "Pete Olson", "demVotes": 138153, "repVotes": 152750, "totalVotes": 297405, "margin": 4.91, "repIncumbent": true },
       { "year": 2016, "demPct": 40.48, "repPct": 59.52, "demCandidate": "Mark Gibson", "repCandidate": "Pete Olson", "demVotes": 123679, "repVotes": 181864, "totalVotes": 305543, "margin": 19.04, "repIncumbent": true }
@@ -15908,11 +15908,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Tony Gonzales",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 37.7, "repPct": 62.3, "demCandidate": "S. Limon", "repCandidate": "Tony Gonzales", "demVotes": 109373, "repVotes": 180720, "totalVotes": 290093, "margin": 24.6 },
+      { "year": 2024, "demPct": 37.7, "repPct": 62.3, "demCandidate": "Limon", "repCandidate": "Tony Gonzales", "demVotes": 109373, "repVotes": 180720, "totalVotes": 290093, "margin": 24.6 },
       { "year": 2022, "demPct": 38.77, "repPct": 55.87, "demCandidate": "John Lira", "repCandidate": "Tony Gonzales", "demVotes": 80947, "repVotes": 116649, "totalVotes": 208776, "margin": 17.1 },
       { "year": 2020, "demPct": 46.6, "repPct": 50.56, "demCandidate": "Gina Ortiz Jones", "repCandidate": "Tony Gonzales", "demVotes": 137693, "repVotes": 149395, "totalVotes": 295457, "margin": 3.96 },
       { "year": 2018, "demPct": 48.73, "repPct": 49.17, "demCandidate": "Gina Ortiz Jones", "repCandidate": "Will Hurd", "demVotes": 102359, "repVotes": 103285, "totalVotes": 210069, "margin": 0.44, "repIncumbent": true },
-      { "year": 2016, "demPct": 46.96, "repPct": 48.29, "demCandidate": "Pete P. Gallego", "repCandidate": "Will Hurd", "demVotes": 107526, "repVotes": 110577, "totalVotes": 228965, "margin": 1.33, "repIncumbent": true }
+      { "year": 2016, "demPct": 46.96, "repPct": 48.29, "demCandidate": "Pete Gallego", "repCandidate": "Will Hurd", "demVotes": 107526, "repVotes": 110577, "totalVotes": 228965, "margin": 1.33, "repIncumbent": true }
     ]
   },
   {
@@ -16007,11 +16007,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Brandon Gill",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 35.67, "repPct": 62.07, "demCandidate": "Ernest R. Lineberger III", "repCandidate": "Brandon Gill", "demVotes": 138558, "repVotes": 241096, "totalVotes": 388427, "margin": 26.4 },
-      { "year": 2022, "demPct": 30.71, "repPct": 69.29, "demCandidate": "Mike Kolls (L)", "repCandidate": "Michael C. Burgess", "demVotes": 81384, "repVotes": 183639, "totalVotes": 265023, "margin": 38.58, "repIncumbent": true },
-      { "year": 2020, "demPct": 37.25, "repPct": 60.61, "demCandidate": "Carol H. Iannuzzi", "repCandidate": "Michael C. Burgess", "demVotes": 161009, "repVotes": 261963, "totalVotes": 432215, "margin": 23.36, "repIncumbent": true },
-      { "year": 2018, "demPct": 39.02, "repPct": 59.38, "demCandidate": "Linsey Fagan", "repCandidate": "Michael C. Burgess", "demVotes": 121938, "repVotes": 185551, "totalVotes": 312505, "margin": 20.36, "repIncumbent": true },
-      { "year": 2016, "demPct": 29.62, "repPct": 66.36, "demCandidate": "Eric Mauck", "repCandidate": "Michael C. Burgess", "demVotes": 94507, "repVotes": 211730, "totalVotes": 319080, "margin": 36.74, "repIncumbent": true }
+      { "year": 2024, "demPct": 35.67, "repPct": 62.07, "demCandidate": "Ernest Lineberger", "repCandidate": "Brandon Gill", "demVotes": 138558, "repVotes": 241096, "totalVotes": 388427, "margin": 26.4 },
+      { "year": 2022, "demPct": 30.71, "repPct": 69.29, "demCandidate": "Mike Kolls (L)", "repCandidate": "Michael Burgess", "demVotes": 81384, "repVotes": 183639, "totalVotes": 265023, "margin": 38.58, "repIncumbent": true },
+      { "year": 2020, "demPct": 37.25, "repPct": 60.61, "demCandidate": "Carol Iannuzzi", "repCandidate": "Michael Burgess", "demVotes": 161009, "repVotes": 261963, "totalVotes": 432215, "margin": 23.36, "repIncumbent": true },
+      { "year": 2018, "demPct": 39.02, "repPct": 59.38, "demCandidate": "Linsey Fagan", "repCandidate": "Michael Burgess", "demVotes": 121938, "repVotes": 185551, "totalVotes": 312505, "margin": 20.36, "repIncumbent": true },
+      { "year": 2016, "demPct": 29.62, "repPct": 66.36, "demCandidate": "Eric Mauck", "repCandidate": "Michael Burgess", "demVotes": 94507, "repVotes": 211730, "totalVotes": 319080, "margin": 36.74, "repIncumbent": true }
     ]
   },
   {
@@ -16041,10 +16041,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 33.96, "repPct": 66.04, "demCandidate": "Tanya Lloyd", "repCandidate": "Michael Cloud", "demVotes": 94596, "repVotes": 183980, "totalVotes": 278576, "margin": 32.08, "repIncumbent": true },
-      { "year": 2022, "demPct": 35.56, "repPct": 64.44, "demCandidate": "Maclovio Perez, Jr.", "repCandidate": "Michael Cloud", "demVotes": 73611, "repVotes": 133416, "totalVotes": 207027, "margin": 28.88, "repIncumbent": true },
-      { "year": 2020, "demPct": 34.94, "repPct": 63.06, "demCandidate": "Ricardo “Rick” De La Fuente", "repCandidate": "Michael Cloud", "demVotes": 95466, "repVotes": 172305, "totalVotes": 273253, "margin": 28.12, "repIncumbent": true },
+      { "year": 2022, "demPct": 35.56, "repPct": 64.44, "demCandidate": "Maclovio Perez", "repCandidate": "Michael Cloud", "demVotes": 73611, "repVotes": 133416, "totalVotes": 207027, "margin": 28.88, "repIncumbent": true },
+      { "year": 2020, "demPct": 34.94, "repPct": 63.06, "demCandidate": "Rick De La Fuente", "repCandidate": "Michael Cloud", "demVotes": 95466, "repVotes": 172305, "totalVotes": 273253, "margin": 28.12, "repIncumbent": true },
       { "year": 2018, "demPct": 36.61, "repPct": 60.32, "demCandidate": "Eric Holguin", "repCandidate": "Michael Cloud", "demVotes": 75929, "repVotes": 125118, "totalVotes": 207421, "margin": 23.71, "repIncumbent": true },
-      { "year": 2016, "demPct": 38.31, "repPct": 61.69, "demCandidate": "Raul “Roy” Barrera", "repCandidate": "Blake Farenthold", "demVotes": 88329, "repVotes": 142251, "totalVotes": 230580, "margin": 23.38, "repIncumbent": true }
+      { "year": 2016, "demPct": 38.31, "repPct": 61.69, "demCandidate": "Roy Barrera", "repCandidate": "Blake Farenthold", "demVotes": 88329, "repVotes": 142251, "totalVotes": 230580, "margin": 23.38, "repIncumbent": true }
     ]
   },
   {
@@ -16074,7 +16074,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 52.79, "repPct": 47.21, "demCandidate": "Henry Cuellar", "repCandidate": "Jay Furman", "demVotes": 125280, "repVotes": 112018, "totalVotes": 237298, "margin": -5.58, "demIncumbent": true },
       { "year": 2022, "demPct": 56.65, "repPct": 43.35, "demCandidate": "Henry Cuellar", "repCandidate": "Cassy Garcia", "demVotes": 93803, "repVotes": 71778, "totalVotes": 165581, "margin": -13.3, "demIncumbent": true },
       { "year": 2020, "demPct": 58.3, "repPct": 38.98, "demCandidate": "Henry Cuellar", "repCandidate": "Sandra Whitten", "demVotes": 137494, "repVotes": 91925, "totalVotes": 235844, "margin": -19.32, "demIncumbent": true },
-      { "year": 2018, "demPct": 84.39, "repPct": 15.61, "demCandidate": "Henry Cuellar", "repCandidate": "Arthur M. Thomas IV (L)", "demVotes": 117494, "repVotes": 21732, "totalVotes": 139226, "margin": -68.78, "demIncumbent": true },
+      { "year": 2018, "demPct": 84.39, "repPct": 15.61, "demCandidate": "Henry Cuellar", "repCandidate": "Arthur Thomas IV (L)", "demVotes": 117494, "repVotes": 21732, "totalVotes": 139226, "margin": -68.78, "demIncumbent": true },
       { "year": 2016, "demPct": 66.19, "repPct": 31.31, "demCandidate": "Henry Cuellar", "repCandidate": "Zeffen Hardin", "demVotes": 122086, "repVotes": 57740, "totalVotes": 184442, "margin": -34.88, "demIncumbent": true }
     ]
   },
@@ -16101,13 +16101,13 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Sylvia Garcia", "party": "D", "incumbent": true },
       "rep": { "name": "Martha Fierro", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Sylvia R. Garcia",
+    "seatHolder": "Sylvia Garcia",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 65.29, "repPct": 34.71, "demCandidate": "Sylvia R. Garcia", "repCandidate": "Alan Garza", "demVotes": 99379, "repVotes": 52830, "totalVotes": 152209, "margin": -30.58, "demIncumbent": true },
-      { "year": 2022, "demPct": 71.41, "repPct": 28.59, "demCandidate": "Sylvia R. Garcia", "repCandidate": "Robert Schafranek", "demVotes": 71837, "repVotes": 28765, "totalVotes": 100602, "margin": -42.82, "demIncumbent": true },
-      { "year": 2020, "demPct": 71.13, "repPct": 27.38, "demCandidate": "Sylvia R. Garcia", "repCandidate": "Jaimy Z. Blanco", "demVotes": 111305, "repVotes": 42840, "totalVotes": 156473, "margin": -43.75, "demIncumbent": true },
-      { "year": 2018, "demPct": 75.06, "repPct": 23.91, "demCandidate": "Sylvia R. Garcia", "repCandidate": "Phillip Aronoff", "demVotes": 88188, "repVotes": 28098, "totalVotes": 117494, "margin": -51.15 },
+      { "year": 2024, "demPct": 65.29, "repPct": 34.71, "demCandidate": "Sylvia Garcia", "repCandidate": "Alan Garza", "demVotes": 99379, "repVotes": 52830, "totalVotes": 152209, "margin": -30.58, "demIncumbent": true },
+      { "year": 2022, "demPct": 71.41, "repPct": 28.59, "demCandidate": "Sylvia Garcia", "repCandidate": "Robert Schafranek", "demVotes": 71837, "repVotes": 28765, "totalVotes": 100602, "margin": -42.82, "demIncumbent": true },
+      { "year": 2020, "demPct": 71.13, "repPct": 27.38, "demCandidate": "Sylvia Garcia", "repCandidate": "Jaimy Blanco", "demVotes": 111305, "repVotes": 42840, "totalVotes": 156473, "margin": -43.75, "demIncumbent": true },
+      { "year": 2018, "demPct": 75.06, "repPct": 23.91, "demCandidate": "Sylvia Garcia", "repCandidate": "Phillip Aronoff", "demVotes": 88188, "repVotes": 28098, "totalVotes": 117494, "margin": -51.15 },
       { "year": 2016, "demPct": 72.47, "repPct": 23.98, "demCandidate": "Gene Green", "repCandidate": "Julio Garza", "demVotes": 95649, "repVotes": 31646, "totalVotes": 131982, "margin": -48.49, "demIncumbent": true }
     ]
   },
@@ -16137,7 +16137,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Jasmine Crockett",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 84.89, "repPct": 15.11, "demCandidate": "Jasmine Crockett", "repCandidate": "Jrmar “J J” Jefferson (L)", "demVotes": 197650, "repVotes": 35175, "totalVotes": 232825, "margin": -69.78, "demIncumbent": true },
+      { "year": 2024, "demPct": 84.89, "repPct": 15.11, "demCandidate": "Jasmine Crockett", "repCandidate": "J J Jefferson (L)", "demVotes": 197650, "repVotes": 35175, "totalVotes": 232825, "margin": -69.78, "demIncumbent": true },
       { "year": 2022, "demPct": 74.72, "repPct": 21.72, "demCandidate": "Jasmine Crockett", "repCandidate": "James Rodgers", "demVotes": 134876, "repVotes": 39209, "totalVotes": 180513, "margin": -53 },
       { "year": 2020, "demPct": 77.49, "repPct": 18.41, "demCandidate": "Eddie Bernice Johnson", "repCandidate": "Tre Pennie", "demVotes": 204928, "repVotes": 48685, "totalVotes": 264464, "margin": -59.08, "demIncumbent": true },
       { "year": 2018, "demPct": 91.05, "repPct": 8.95, "demCandidate": "Eddie Bernice Johnson", "repCandidate": "Shawn Jones (L)", "demVotes": 166784, "repVotes": 16390, "totalVotes": 183174, "margin": -82.1, "demIncumbent": true },
@@ -16167,14 +16167,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Justin Early", "party": "D", "incumbent": false },
       "rep": { "name": "John Carter", "party": "R", "incumbent": true }
     },
-    "seatHolder": "John R. Carter",
+    "seatHolder": "John Carter",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 35.57, "repPct": 64.43, "demCandidate": "Stuart Whitlow", "repCandidate": "John R. Carter", "demVotes": 126470, "repVotes": 229087, "totalVotes": 355557, "margin": 28.86, "repIncumbent": true },
-      { "year": 2022, "demPct": 0, "repPct": 100, "repCandidate": "John R. Carter", "repVotes": 183185, "totalVotes": 183185, "margin": 100, "repIncumbent": true },
-      { "year": 2020, "demPct": 44.29, "repPct": 53.43, "demCandidate": "Donna Imam", "repCandidate": "John R. Carter", "demVotes": 176293, "repVotes": 212695, "totalVotes": 398057, "margin": 9.14, "repIncumbent": true },
-      { "year": 2018, "demPct": 47.68, "repPct": 50.59, "demCandidate": "Mary Jennings “MJ” Hegar", "repCandidate": "John R. Carter", "demVotes": 136362, "repVotes": 144680, "totalVotes": 286007, "margin": 2.91, "repIncumbent": true },
-      { "year": 2016, "demPct": 36.49, "repPct": 58.35, "demCandidate": "Mike Clark", "repCandidate": "John R. Carter", "demVotes": 103852, "repVotes": 166060, "totalVotes": 284588, "margin": 21.86, "repIncumbent": true }
+      { "year": 2024, "demPct": 35.57, "repPct": 64.43, "demCandidate": "Stuart Whitlow", "repCandidate": "John Carter", "demVotes": 126470, "repVotes": 229087, "totalVotes": 355557, "margin": 28.86, "repIncumbent": true },
+      { "year": 2022, "demPct": 0, "repPct": 100, "repCandidate": "John Carter", "repVotes": 183185, "totalVotes": 183185, "margin": 100, "repIncumbent": true },
+      { "year": 2020, "demPct": 44.29, "repPct": 53.43, "demCandidate": "Donna Imam", "repCandidate": "John Carter", "demVotes": 176293, "repVotes": 212695, "totalVotes": 398057, "margin": 9.14, "repIncumbent": true },
+      { "year": 2018, "demPct": 47.68, "repPct": 50.59, "demCandidate": "MJ Hegar", "repCandidate": "John Carter", "demVotes": 136362, "repVotes": 144680, "totalVotes": 286007, "margin": 2.91, "repIncumbent": true },
+      { "year": 2016, "demPct": 36.49, "repPct": 58.35, "demCandidate": "Mike Clark", "repCandidate": "John Carter", "demVotes": 103852, "repVotes": 166060, "totalVotes": 284588, "margin": 21.86, "repIncumbent": true }
     ]
   },
   {
@@ -16202,8 +16202,8 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 60.45, "repPct": 36.97, "demCandidate": "Julie Johnson", "repCandidate": "Darrell Day", "demVotes": 140536, "repVotes": 85941, "totalVotes": 232464, "margin": -23.48 },
-      { "year": 2022, "demPct": 65.36, "repPct": 34.64, "demCandidate": "Colin Z. Allred", "repCandidate": "Antonio Swad", "demVotes": 116005, "repVotes": 61494, "totalVotes": 177499, "margin": -30.72, "demIncumbent": true },
-      { "year": 2020, "demPct": 51.95, "repPct": 45.93, "demCandidate": "Colin Z. Allred", "repCandidate": "Genevieve Collins", "demVotes": 178542, "repVotes": 157867, "totalVotes": 343687, "margin": -6.02, "demIncumbent": true },
+      { "year": 2022, "demPct": 65.36, "repPct": 34.64, "demCandidate": "Colin Allred", "repCandidate": "Antonio Swad", "demVotes": 116005, "repVotes": 61494, "totalVotes": 177499, "margin": -30.72, "demIncumbent": true },
+      { "year": 2020, "demPct": 51.95, "repPct": 45.93, "demCandidate": "Colin Allred", "repCandidate": "Genevieve Collins", "demVotes": 178542, "repVotes": 157867, "totalVotes": 343687, "margin": -6.02, "demIncumbent": true },
       { "year": 2018, "demPct": 52.27, "repPct": 45.75, "demCandidate": "Colin Allred", "repCandidate": "Pete Sessions", "demVotes": 144067, "repVotes": 126101, "totalVotes": 275620, "margin": -6.52, "repIncumbent": true },
       { "year": 2016, "demPct": 18.98, "repPct": 71.07, "demCandidate": "Ed Rankin (L)", "repCandidate": "Pete Sessions", "demVotes": 43490, "repVotes": 162868, "totalVotes": 229171, "margin": 52.09, "repIncumbent": true }
     ]
@@ -16234,11 +16234,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Marc Veasey",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 68.79, "repPct": 31.21, "demCandidate": "Marc A. Veasey", "repCandidate": "Patrick David Gillespie", "demVotes": 114289, "repVotes": 51864, "totalVotes": 166153, "margin": -37.58, "demIncumbent": true },
-      { "year": 2022, "demPct": 71.98, "repPct": 25.61, "demCandidate": "Marc A. Veasey", "repCandidate": "Patrick David Gillespie", "demVotes": 82081, "repVotes": 29203, "totalVotes": 114030, "margin": -46.37, "demIncumbent": true },
-      { "year": 2020, "demPct": 66.82, "repPct": 25.15, "demCandidate": "Marc A. Veasey", "repCandidate": "Fabian Cordova Vasquez", "demVotes": 105317, "repVotes": 39638, "totalVotes": 157606, "margin": -41.67, "demIncumbent": true },
-      { "year": 2018, "demPct": 76.16, "repPct": 21.91, "demCandidate": "Marc A. Veasey", "repCandidate": "Willie Billups", "demVotes": 90805, "repVotes": 26120, "totalVotes": 119224, "margin": -54.25, "demIncumbent": true },
-      { "year": 2016, "demPct": 73.71, "repPct": 26.29, "demCandidate": "Marc A. Veasey", "repCandidate": "M. Mark Mitchell", "demVotes": 93147, "repVotes": 33222, "totalVotes": 126369, "margin": -47.42, "demIncumbent": true }
+      { "year": 2024, "demPct": 68.79, "repPct": 31.21, "demCandidate": "Marc Veasey", "repCandidate": "Patrick David Gillespie", "demVotes": 114289, "repVotes": 51864, "totalVotes": 166153, "margin": -37.58, "demIncumbent": true },
+      { "year": 2022, "demPct": 71.98, "repPct": 25.61, "demCandidate": "Marc Veasey", "repCandidate": "Patrick David Gillespie", "demVotes": 82081, "repVotes": 29203, "totalVotes": 114030, "margin": -46.37, "demIncumbent": true },
+      { "year": 2020, "demPct": 66.82, "repPct": 25.15, "demCandidate": "Marc Veasey", "repCandidate": "Fabian Cordova Vasquez", "demVotes": 105317, "repVotes": 39638, "totalVotes": 157606, "margin": -41.67, "demIncumbent": true },
+      { "year": 2018, "demPct": 76.16, "repPct": 21.91, "demCandidate": "Marc Veasey", "repCandidate": "Willie Billups", "demVotes": 90805, "repVotes": 26120, "totalVotes": 119224, "margin": -54.25, "demIncumbent": true },
+      { "year": 2016, "demPct": 73.71, "repPct": 26.29, "demCandidate": "Marc Veasey", "repCandidate": "Mark Mitchell", "demVotes": 93147, "repVotes": 33222, "totalVotes": 126369, "margin": -47.42, "demIncumbent": true }
     ]
   },
   {
@@ -16268,8 +16268,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 51.29, "repPct": 48.71, "demCandidate": "Vicente Gonzalez", "repCandidate": "Mayra Flores", "demVotes": 102780, "repVotes": 97603, "totalVotes": 200383, "margin": -2.58, "demIncumbent": true },
       { "year": 2022, "demPct": 52.73, "repPct": 44.23, "demCandidate": "Vicente Gonzalez", "repCandidate": "Mayra Flores", "demVotes": 70896, "repVotes": 59464, "totalVotes": 134439, "margin": -8.5 },
       { "year": 2020, "demPct": 55.43, "repPct": 41.84, "demCandidate": "Filemon Vela", "repCandidate": "Rey Gonzalez", "demVotes": 111439, "repVotes": 84119, "totalVotes": 201027, "margin": -13.59, "demIncumbent": true },
-      { "year": 2018, "demPct": 59.99, "repPct": 40.01, "demCandidate": "Filemon B. Vela", "repCandidate": "Rey Gonzalez", "demVotes": 85825, "repVotes": 57243, "totalVotes": 143068, "margin": -19.98, "demIncumbent": true },
-      { "year": 2016, "demPct": 62.67, "repPct": 37.33, "demCandidate": "Filemon Vela", "repCandidate": "Rey Gonzalez, Jr.", "demVotes": 104638, "repVotes": 62323, "totalVotes": 166961, "margin": -25.34, "demIncumbent": true }
+      { "year": 2018, "demPct": 59.99, "repPct": 40.01, "demCandidate": "Filemon Vela", "repCandidate": "Rey Gonzalez", "demVotes": 85825, "repVotes": 57243, "totalVotes": 143068, "margin": -19.98, "demIncumbent": true },
+      { "year": 2016, "demPct": 62.67, "repPct": 37.33, "demCandidate": "Filemon Vela", "repCandidate": "Rey Gonzalez", "demVotes": 104638, "repVotes": 62323, "totalVotes": 166961, "margin": -25.34, "demIncumbent": true }
     ]
   },
   {
@@ -16333,7 +16333,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 30.54, "repPct": 69.46, "demCandidate": "Jon Haire", "repCandidate": "Brian Babin", "demVotes": 64016, "repVotes": 145599, "totalVotes": 209615, "margin": 38.92, "repIncumbent": true },
       { "year": 2020, "demPct": 24.27, "repPct": 73.61, "demCandidate": "Rashad Lewis", "repCandidate": "Brian Babin", "demVotes": 73418, "repVotes": 222712, "totalVotes": 302549, "margin": 49.34, "repIncumbent": true },
       { "year": 2018, "demPct": 27.44, "repPct": 72.56, "demCandidate": "Dayna Steele", "repCandidate": "Brian Babin", "demVotes": 60908, "repVotes": 161048, "totalVotes": 221956, "margin": 45.12, "repIncumbent": true },
-      { "year": 2016, "demPct": 11.39, "repPct": 88.61, "demCandidate": "Hal J. Ridley, Jr. (G)", "repCandidate": "Brian Babin", "demVotes": 24890, "repVotes": 193675, "totalVotes": 218565, "margin": 77.22, "repIncumbent": true }
+      { "year": 2016, "demPct": 11.39, "repPct": 88.61, "demCandidate": "Hal Ridley Jr. (G)", "repCandidate": "Brian Babin", "demVotes": 24890, "repVotes": 193675, "totalVotes": 218565, "margin": 77.22, "repIncumbent": true }
     ]
   },
   {
@@ -16393,7 +16393,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 37.24, "repPct": 62.73, "demCandidate": "Melissa McDonough", "repCandidate": "Wesley Hunt", "demVotes": 127640, "repVotes": 215030, "totalVotes": 342764, "margin": 25.49, "repIncumbent": true },
-      { "year": 2022, "demPct": 35.52, "repPct": 62.95, "demCandidate": "Duncan F. Klussmann", "repCandidate": "Wesley Hunt", "demVotes": 92302, "repVotes": 163597, "totalVotes": 259869, "margin": 27.43 }
+      { "year": 2022, "demPct": 35.52, "repPct": 62.95, "demCandidate": "Duncan Klussmann", "repCandidate": "Wesley Hunt", "demVotes": 92302, "repVotes": 163597, "totalVotes": 259869, "margin": 27.43 }
     ]
   },
   {
@@ -16420,11 +16420,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Blake Moore",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 32.06, "repPct": 63.13, "demCandidate": "Bill Campbell", "repCandidate": "Blake D. Moore", "demVotes": 117319, "repVotes": 230975, "totalVotes": 365895, "margin": 31.07, "repIncumbent": true },
-      { "year": 2022, "demPct": 33.03, "repPct": 66.97, "demCandidate": "Rick Edwin Jones", "repCandidate": "Blake D. Moore", "demVotes": 87986, "repVotes": 178434, "totalVotes": 266420, "margin": 33.94, "repIncumbent": true },
+      { "year": 2024, "demPct": 32.06, "repPct": 63.13, "demCandidate": "Bill Campbell", "repCandidate": "Blake Moore", "demVotes": 117319, "repVotes": 230975, "totalVotes": 365895, "margin": 31.07, "repIncumbent": true },
+      { "year": 2022, "demPct": 33.03, "repPct": 66.97, "demCandidate": "Rick Edwin Jones", "repCandidate": "Blake Moore", "demVotes": 87986, "repVotes": 178434, "totalVotes": 266420, "margin": 33.94, "repIncumbent": true },
       { "year": 2020, "demPct": 30.43, "repPct": 69.52, "demCandidate": "Darren Parry", "repCandidate": "Blake David Moore", "demVotes": 104194, "repVotes": 237988, "totalVotes": 342351, "margin": 39.09 },
       { "year": 2018, "demPct": 24.89, "repPct": 61.61, "demCandidate": "Lee Castillo", "repCandidate": "Rob Bishop", "demVotes": 63308, "repVotes": 156692, "totalVotes": 254333, "margin": 36.72, "repIncumbent": true },
-      { "year": 2016, "demPct": 26.45, "repPct": 65.93, "demCandidate": "Peter C. Clemens", "repCandidate": "Rob Bishop", "demVotes": 73380, "repVotes": 182925, "totalVotes": 277451, "margin": 39.48, "repIncumbent": true }
+      { "year": 2016, "demPct": 26.45, "repPct": 65.93, "demCandidate": "Peter Clemens", "repCandidate": "Rob Bishop", "demVotes": 73380, "repVotes": 182925, "totalVotes": 277451, "margin": 39.48, "repIncumbent": true }
     ]
   },
   {
@@ -16451,7 +16451,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Celeste Maloy",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 34.23, "repPct": 58, "demCandidate": "Nathaniel E. Woodward", "repCandidate": "Celeste Maloy", "demVotes": 121114, "repVotes": 205234, "totalVotes": 353838, "margin": 23.77, "repIncumbent": true },
+      { "year": 2024, "demPct": 34.23, "repPct": 58, "demCandidate": "Nathaniel Woodward", "repCandidate": "Celeste Maloy", "demVotes": 121114, "repVotes": 205234, "totalVotes": 353838, "margin": 23.77, "repIncumbent": true },
       { "year": 2022, "demPct": 34.01, "repPct": 59.71, "demCandidate": "Nick Mitchell", "repCandidate": "Chris Stewart", "demVotes": 88224, "repVotes": 154883, "totalVotes": 259399, "margin": 25.7, "repIncumbent": true },
       { "year": 2020, "demPct": 36.63, "repPct": 59, "demCandidate": "Kael Weston", "repCandidate": "Chris Stewart", "demVotes": 129762, "repVotes": 208997, "totalVotes": 354224, "margin": 22.37, "repIncumbent": true },
       { "year": 2018, "demPct": 38.9, "repPct": 56.1, "demCandidate": "Shireen Ghorbani", "repCandidate": "Chris Stewart", "demVotes": 105051, "repVotes": 151489, "totalVotes": 270044, "margin": 17.2, "repIncumbent": true },
@@ -16482,11 +16482,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Mike Kennedy",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 33.61, "repPct": 66.39, "demCandidate": "Glenn J. Wright", "repCandidate": "Mike Kennedy", "demVotes": 122780, "repVotes": 242496, "totalVotes": 365276, "margin": 32.78 },
-      { "year": 2022, "demPct": 29.53, "repPct": 64.4, "demCandidate": "Glenn J. Wright", "repCandidate": "John R. Curtis", "demVotes": 83687, "repVotes": 182497, "totalVotes": 283380, "margin": 34.87, "repIncumbent": true },
-      { "year": 2020, "demPct": 26.77, "repPct": 68.73, "demCandidate": "Devin D. Thorpe", "repCandidate": "John R. Curtis", "demVotes": 96067, "repVotes": 246674, "totalVotes": 358927, "margin": 41.96, "repIncumbent": true },
-      { "year": 2018, "demPct": 27.31, "repPct": 67.55, "demCandidate": "James Courage Singer", "repCandidate": "John R. Curtis", "demVotes": 70686, "repVotes": 174856, "totalVotes": 258858, "margin": 40.24, "repIncumbent": true },
-      { "year": 2016, "demPct": 26.54, "repPct": 73.46, "demCandidate": "Stephen P. Tryon", "repCandidate": "Jason Chaffetz", "demVotes": 75716, "repVotes": 209589, "totalVotes": 285305, "margin": 46.92, "repIncumbent": true }
+      { "year": 2024, "demPct": 33.61, "repPct": 66.39, "demCandidate": "Glenn Wright", "repCandidate": "Mike Kennedy", "demVotes": 122780, "repVotes": 242496, "totalVotes": 365276, "margin": 32.78 },
+      { "year": 2022, "demPct": 29.53, "repPct": 64.4, "demCandidate": "Glenn Wright", "repCandidate": "John Curtis", "demVotes": 83687, "repVotes": 182497, "totalVotes": 283380, "margin": 34.87, "repIncumbent": true },
+      { "year": 2020, "demPct": 26.77, "repPct": 68.73, "demCandidate": "Devin Thorpe", "repCandidate": "John Curtis", "demVotes": 96067, "repVotes": 246674, "totalVotes": 358927, "margin": 41.96, "repIncumbent": true },
+      { "year": 2018, "demPct": 27.31, "repPct": 67.55, "demCandidate": "James Courage Singer", "repCandidate": "John Curtis", "demVotes": 70686, "repVotes": 174856, "totalVotes": 258858, "margin": 40.24, "repIncumbent": true },
+      { "year": 2016, "demPct": 26.54, "repPct": 73.46, "demCandidate": "Stephen Tryon", "repCandidate": "Jason Chaffetz", "demVotes": 75716, "repVotes": 209589, "totalVotes": 285305, "margin": 46.92, "repIncumbent": true }
     ]
   },
   {
@@ -16518,8 +16518,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 30.2, "repPct": 63.42, "demCandidate": "Katrina Fallick-Wang", "repCandidate": "Burgess Owens", "demVotes": 109838, "repVotes": 230627, "totalVotes": 363668, "margin": 33.22 },
       { "year": 2022, "demPct": 32.35, "repPct": 61.05, "demCandidate": "Darlene McDonald", "repCandidate": "Burgess Owens", "demVotes": 82181, "repVotes": 155110, "totalVotes": 254059, "margin": 28.7 },
       { "year": 2020, "demPct": 46.7, "repPct": 47.7, "demCandidate": "Ben McAdams", "repCandidate": "Burgess Owens", "demVotes": 175923, "repVotes": 179688, "totalVotes": 376730, "margin": 1, "demIncumbent": true },
-      { "year": 2018, "demPct": 50.12, "repPct": 49.86, "demCandidate": "Ben McAdams", "repCandidate": "Mia B. Love", "demVotes": 134964, "repVotes": 134270, "totalVotes": 269271, "margin": -0.26, "repIncumbent": true },
-      { "year": 2016, "demPct": 41.31, "repPct": 53.76, "demCandidate": "Doug Owens", "repCandidate": "Mia B. Love", "demVotes": 113413, "repVotes": 147597, "totalVotes": 274569, "margin": 12.45, "repIncumbent": true }
+      { "year": 2018, "demPct": 50.12, "repPct": 49.86, "demCandidate": "Ben McAdams", "repCandidate": "Mia Love", "demVotes": 134964, "repVotes": 134270, "totalVotes": 269271, "margin": -0.26, "repIncumbent": true },
+      { "year": 2016, "demPct": 41.31, "repPct": 53.76, "demCandidate": "Doug Owens", "repCandidate": "Mia Love", "demVotes": 113413, "repVotes": 147597, "totalVotes": 274569, "margin": 12.45, "repIncumbent": true }
     ]
   },
   {
@@ -16546,7 +16546,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Becca Balint",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 62.29, "repPct": 29.79, "demCandidate": "Becca Balint", "repCandidate": "Mark Coester, Republican (L)", "demVotes": 218398, "repVotes": 104451, "totalVotes": 350616, "margin": -32.5, "demIncumbent": true },
+      { "year": 2024, "demPct": 62.29, "repPct": 29.79, "demCandidate": "Becca Balint", "repCandidate": "Mark Coester Republican (L)", "demVotes": 218398, "repVotes": 104451, "totalVotes": 350616, "margin": -32.5, "demIncumbent": true },
       { "year": 2022, "demPct": 62.58, "repPct": 27.8, "demCandidate": "Becca Balint", "repCandidate": "Liam Madden", "demVotes": 176494, "repVotes": 78397, "totalVotes": 282026, "margin": -34.78 },
       { "year": 2020, "demPct": 67.31, "repPct": 27.01, "demCandidate": "Peter Welch", "repCandidate": "Miriam Berry", "demVotes": 238827, "repVotes": 95830, "totalVotes": 354837, "margin": -40.3, "demIncumbent": true },
       { "year": 2018, "demPct": 69.2, "repPct": 25.95, "demCandidate": "Peter Welch", "repCandidate": "Anya Tynio", "demVotes": 188547, "repVotes": 70705, "totalVotes": 272451, "margin": -43.25, "demIncumbent": true },
@@ -16574,14 +16574,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Shannon Taylor", "party": "D", "incumbent": false },
       "rep": { "name": "Robert Wittman", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Robert J. Wittman",
+    "seatHolder": "Robert Wittman",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 43.53, "repPct": 56.31, "demCandidate": "Leslie C. Mehta", "repCandidate": "Robert J. Wittman", "demVotes": 208445, "repVotes": 269657, "totalVotes": 478906, "margin": 12.78, "repIncumbent": true },
-      { "year": 2022, "demPct": 42.96, "repPct": 55.97, "demCandidate": "Herbert C. “Herb” Jones, Jr.", "repCandidate": "Robert J. Wittman", "demVotes": 147229, "repVotes": 191828, "totalVotes": 342742, "margin": 13.01, "repIncumbent": true },
-      { "year": 2020, "demPct": 41.71, "repPct": 58.15, "demCandidate": "Qasim Rashid", "repCandidate": "Robert J. Wittman", "demVotes": 186923, "repVotes": 260614, "totalVotes": 448178, "margin": 16.44, "repIncumbent": true },
-      { "year": 2018, "demPct": 44.7, "repPct": 55.18, "demCandidate": "Vangie A. Williams", "repCandidate": "Robert J. Wittman", "demVotes": 148464, "repVotes": 183250, "totalVotes": 332101, "margin": 10.48, "repIncumbent": true },
-      { "year": 2016, "demPct": 36.61, "repPct": 59.86, "demCandidate": "M. D. “Matt” Rowe", "repCandidate": "Robert J. Wittman", "demVotes": 140785, "repVotes": 230213, "totalVotes": 384601, "margin": 23.25, "repIncumbent": true }
+      { "year": 2024, "demPct": 43.53, "repPct": 56.31, "demCandidate": "Leslie Mehta", "repCandidate": "Robert Wittman", "demVotes": 208445, "repVotes": 269657, "totalVotes": 478906, "margin": 12.78, "repIncumbent": true },
+      { "year": 2022, "demPct": 42.96, "repPct": 55.97, "demCandidate": "Herb Jones, Jr.", "repCandidate": "Robert Wittman", "demVotes": 147229, "repVotes": 191828, "totalVotes": 342742, "margin": 13.01, "repIncumbent": true },
+      { "year": 2020, "demPct": 41.71, "repPct": 58.15, "demCandidate": "Qasim Rashid", "repCandidate": "Robert Wittman", "demVotes": 186923, "repVotes": 260614, "totalVotes": 448178, "margin": 16.44, "repIncumbent": true },
+      { "year": 2018, "demPct": 44.7, "repPct": 55.18, "demCandidate": "Vangie Williams", "repCandidate": "Robert Wittman", "demVotes": 148464, "repVotes": 183250, "totalVotes": 332101, "margin": 10.48, "repIncumbent": true },
+      { "year": 2016, "demPct": 36.61, "repPct": 59.86, "demCandidate": "Matt Rowe", "repCandidate": "Robert Wittman", "demVotes": 140785, "repVotes": 230213, "totalVotes": 384601, "margin": 23.25, "repIncumbent": true }
     ]
   },
   {
@@ -16605,14 +16605,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Elaine Luria", "party": "D", "incumbent": false },
       "rep": { "name": "Jennifer Kiggans", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Jennifer A. Kiggans",
+    "seatHolder": "Jennifer Kiggans",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 46.9, "repPct": 50.74, "demCandidate": "Missy Cotter Smasal", "repCandidate": "Jennifer A. Kiggans", "demVotes": 191666, "repVotes": 207368, "totalVotes": 408702, "margin": 3.84, "repIncumbent": true },
-      { "year": 2022, "demPct": 48.22, "repPct": 51.63, "demCandidate": "Elaine G. Luria", "repCandidate": "Jen A. Kiggans", "demVotes": 143219, "repVotes": 153328, "totalVotes": 296996, "margin": 3.41, "demIncumbent": true },
-      { "year": 2020, "demPct": 52.9, "repPct": 47, "demCandidate": "Elaine G. Luria", "repCandidate": "Scott W. Taylor", "demVotes": 185733, "repVotes": 165031, "totalVotes": 351107, "margin": -5.9, "demIncumbent": true },
-      { "year": 2018, "demPct": 51.05, "repPct": 48.81, "demCandidate": "Elaine G. Luria", "repCandidate": "Scott Taylor", "demVotes": 139571, "repVotes": 133458, "totalVotes": 273400, "margin": -2.24, "repIncumbent": true },
-      { "year": 2016, "demPct": 38.46, "repPct": 61.33, "demCandidate": "Shaun D. Brown", "repCandidate": "Scott W. Taylor", "demVotes": 119440, "repVotes": 190475, "totalVotes": 310567, "margin": 22.87 }
+      { "year": 2024, "demPct": 46.9, "repPct": 50.74, "demCandidate": "Missy Cotter Smasal", "repCandidate": "Jennifer Kiggans", "demVotes": 191666, "repVotes": 207368, "totalVotes": 408702, "margin": 3.84, "repIncumbent": true },
+      { "year": 2022, "demPct": 48.22, "repPct": 51.63, "demCandidate": "Elaine Luria", "repCandidate": "Jen Kiggans", "demVotes": 143219, "repVotes": 153328, "totalVotes": 296996, "margin": 3.41, "demIncumbent": true },
+      { "year": 2020, "demPct": 52.9, "repPct": 47, "demCandidate": "Elaine Luria", "repCandidate": "Scott Taylor", "demVotes": 185733, "repVotes": 165031, "totalVotes": 351107, "margin": -5.9, "demIncumbent": true },
+      { "year": 2018, "demPct": 51.05, "repPct": 48.81, "demCandidate": "Elaine Luria", "repCandidate": "Scott Taylor", "demVotes": 139571, "repVotes": 133458, "totalVotes": 273400, "margin": -2.24, "repIncumbent": true },
+      { "year": 2016, "demPct": 38.46, "repPct": 61.33, "demCandidate": "Shaun Brown", "repCandidate": "Scott Taylor", "demVotes": 119440, "repVotes": 190475, "totalVotes": 310567, "margin": 22.87 }
     ]
   },
   {
@@ -16641,11 +16641,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Bobby Scott",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 69.95, "repPct": 29.84, "demCandidate": "Robert C. “Bobby” Scott", "repCandidate": "John Sitka III", "demVotes": 219926, "repVotes": 93801, "totalVotes": 314397, "margin": -40.11, "demIncumbent": true },
-      { "year": 2022, "demPct": 67.19, "repPct": 32.56, "demCandidate": "Robert C. “Bobby” Scott", "repCandidate": "Terry T. Namkung", "demVotes": 139659, "repVotes": 67668, "totalVotes": 207850, "margin": -34.63, "demIncumbent": true },
-      { "year": 2020, "demPct": 68.35, "repPct": 31.43, "demCandidate": "Robert C. “Bobby” Scott", "repCandidate": "John W. Collick, Jr.", "demVotes": 233326, "repVotes": 107299, "totalVotes": 341361, "margin": -36.92, "demIncumbent": true },
-      { "year": 2018, "demPct": 91.22, "repPct": 0, "demCandidate": "Robert C. “Bobby” Scott", "demVotes": 198615, "totalVotes": 217722, "margin": -91.22, "demIncumbent": true },
-      { "year": 2016, "demPct": 66.7, "repPct": 33.07, "demCandidate": "Robert C. “Bobby” Scott", "repCandidate": "M. L. “Marty” Williams", "demVotes": 208337, "repVotes": 103289, "totalVotes": 312340, "margin": -33.63, "demIncumbent": true }
+      { "year": 2024, "demPct": 69.95, "repPct": 29.84, "demCandidate": "Bobby Scott", "repCandidate": "John Sitka", "demVotes": 219926, "repVotes": 93801, "totalVotes": 314397, "margin": -40.11, "demIncumbent": true },
+      { "year": 2022, "demPct": 67.19, "repPct": 32.56, "demCandidate": "Bobby Scott", "repCandidate": "Terry Namkung", "demVotes": 139659, "repVotes": 67668, "totalVotes": 207850, "margin": -34.63, "demIncumbent": true },
+      { "year": 2020, "demPct": 68.35, "repPct": 31.43, "demCandidate": "Bobby Scott", "repCandidate": "John Collick", "demVotes": 233326, "repVotes": 107299, "totalVotes": 341361, "margin": -36.92, "demIncumbent": true },
+      { "year": 2018, "demPct": 91.22, "repPct": 0, "demCandidate": "Bobby Scott", "demVotes": 198615, "totalVotes": 217722, "margin": -91.22, "demIncumbent": true },
+      { "year": 2016, "demPct": 66.7, "repPct": 33.07, "demCandidate": "Bobby Scott", "repCandidate": "Marty Williams", "demVotes": 208337, "repVotes": 103289, "totalVotes": 312340, "margin": -33.63, "demIncumbent": true }
     ]
   },
   {
@@ -16668,17 +16668,17 @@ export const houseData: RaceForecast[] = [
     "kalshiDem": 0.71,
     "kalshiRep": 0,
     "candidates": {
-      "dem": { "name": "Jennifer Mcclellan", "party": "D", "incumbent": true },
+      "dem": { "name": "Jennifer McClellan", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
     },
     "seatHolder": "Jennifer McClellan",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 67.34, "repPct": 32.44, "demCandidate": "Jennifer L. McClellan", "repCandidate": "William J. “Bill” Moher III", "demVotes": 252885, "repVotes": 121814, "totalVotes": 375508, "margin": -34.9, "demIncumbent": true },
-      { "year": 2022, "demPct": 64.92, "repPct": 34.9, "demCandidate": "A. Donald McEachin", "repCandidate": "Leon Benjamin, Sr.", "demVotes": 159044, "repVotes": 85503, "totalVotes": 244978, "margin": -30.02, "demIncumbent": true },
-      { "year": 2020, "demPct": 61.62, "repPct": 38.23, "demCandidate": "A. Donald McEachin", "repCandidate": "Leon Benjamin, Sr.", "demVotes": 241142, "repVotes": 149625, "totalVotes": 391345, "margin": -23.39, "demIncumbent": true },
-      { "year": 2018, "demPct": 62.58, "repPct": 35.92, "demCandidate": "A. Donald McEachin", "repCandidate": "Ryan A. McAdams", "demVotes": 187642, "repVotes": 107706, "totalVotes": 299854, "margin": -26.66, "demIncumbent": true },
-      { "year": 2016, "demPct": 57.73, "repPct": 42.04, "demCandidate": "A. Donald McEachin", "repCandidate": "Michael L. “Mike” Wade", "demVotes": 200136, "repVotes": 145731, "totalVotes": 346656, "margin": -15.69 }
+      { "year": 2024, "demPct": 67.34, "repPct": 32.44, "demCandidate": "Jennifer McClellan", "repCandidate": "Bill Moher III", "demVotes": 252885, "repVotes": 121814, "totalVotes": 375508, "margin": -34.9, "demIncumbent": true },
+      { "year": 2022, "demPct": 64.92, "repPct": 34.9, "demCandidate": "Donald McEachin", "repCandidate": "Leon Benjamin", "demVotes": 159044, "repVotes": 85503, "totalVotes": 244978, "margin": -30.02, "demIncumbent": true },
+      { "year": 2020, "demPct": 61.62, "repPct": 38.23, "demCandidate": "Donald McEachin", "repCandidate": "Leon Benjamin", "demVotes": 241142, "repVotes": 149625, "totalVotes": 391345, "margin": -23.39, "demIncumbent": true },
+      { "year": 2018, "demPct": 62.58, "repPct": 35.92, "demCandidate": "Donald McEachin", "repCandidate": "Ryan McAdams", "demVotes": 187642, "repVotes": 107706, "totalVotes": 299854, "margin": -26.66, "demIncumbent": true },
+      { "year": 2016, "demPct": 57.73, "repPct": 42.04, "demCandidate": "Donald McEachin", "repCandidate": "Mike Wade", "demVotes": 200136, "repVotes": 145731, "totalVotes": 346656, "margin": -15.69 }
     ]
   },
   {
@@ -16704,14 +16704,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Thomas Perriello", "party": "D", "incumbent": false },
       "rep": { "name": "John McGuire", "party": "R", "incumbent": true }
     },
-    "seatHolder": "John J. McGuire III",
+    "seatHolder": "John McGuire",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 42.27, "repPct": 57.26, "demCandidate": "Gloria Tinsley Witt", "repCandidate": "John J. McGuire III", "demVotes": 184229, "repVotes": 249564, "totalVotes": 435839, "margin": 14.99 },
-      { "year": 2022, "demPct": 42.24, "repPct": 57.57, "demCandidate": "Joshua M. Throneburg", "repCandidate": "Bob Good", "demVotes": 129996, "repVotes": 177191, "totalVotes": 307790, "margin": 15.33 },
-      { "year": 2020, "demPct": 47.3, "repPct": 52.44, "demCandidate": "B. Cameron Webb", "repCandidate": "Robert G. “Bob” Good", "demVotes": 190315, "repVotes": 210988, "totalVotes": 402317, "margin": 5.14 },
-      { "year": 2018, "demPct": 46.65, "repPct": 53.18, "demCandidate": "Leslie C. Cockburn", "repCandidate": "Denver L. Riggleman III", "demVotes": 145040, "repVotes": 165339, "totalVotes": 310926, "margin": 6.53 },
-      { "year": 2016, "demPct": 41.58, "repPct": 58.24, "demCandidate": "Jane D. Dittmar", "repCandidate": "Tom A. Garrett, Jr.", "demVotes": 148339, "repVotes": 207758, "totalVotes": 356756, "margin": 16.66 }
+      { "year": 2024, "demPct": 42.27, "repPct": 57.26, "demCandidate": "Gloria Tinsley Witt", "repCandidate": "John McGuire", "demVotes": 184229, "repVotes": 249564, "totalVotes": 435839, "margin": 14.99 },
+      { "year": 2022, "demPct": 42.24, "repPct": 57.57, "demCandidate": "Joshua Throneburg", "repCandidate": "Bob Good", "demVotes": 129996, "repVotes": 177191, "totalVotes": 307790, "margin": 15.33 },
+      { "year": 2020, "demPct": 47.3, "repPct": 52.44, "demCandidate": "Cameron Webb", "repCandidate": "Bob Good", "demVotes": 190315, "repVotes": 210988, "totalVotes": 402317, "margin": 5.14 },
+      { "year": 2018, "demPct": 46.65, "repPct": 53.18, "demCandidate": "Leslie Cockburn", "repCandidate": "Denver Riggleman", "demVotes": 145040, "repVotes": 165339, "totalVotes": 310926, "margin": 6.53 },
+      { "year": 2016, "demPct": 41.58, "repPct": 58.24, "demCandidate": "Jane Dittmar", "repCandidate": "Tom Garrett", "demVotes": 148339, "repVotes": 207758, "totalVotes": 356756, "margin": 16.66 }
     ]
   },
   {
@@ -16735,16 +16735,16 @@ export const houseData: RaceForecast[] = [
     "kalshiRep": 0.79,
     "candidates": {
       "dem": { "name": "Beth Macy", "party": "D", "incumbent": false },
-      "rep": { "name": "Benjamin Cline", "party": "R", "incumbent": true }
+      "rep": { "name": "Ben Cline", "party": "R", "incumbent": true }
     },
     "seatHolder": "Ben Cline",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 34.79, "repPct": 63.12, "demCandidate": "Ken L. Mitchell", "repCandidate": "Ben Cline", "demVotes": 141612, "repVotes": 256933, "totalVotes": 407035, "margin": 28.33, "repIncumbent": true },
+      { "year": 2024, "demPct": 34.79, "repPct": 63.12, "demCandidate": "Ken Mitchell", "repCandidate": "Ben Cline", "demVotes": 141612, "repVotes": 256933, "totalVotes": 407035, "margin": 28.33, "repIncumbent": true },
       { "year": 2022, "demPct": 35.44, "repPct": 64.39, "demCandidate": "Jennifer Lynn Lewis", "repCandidate": "Ben Cline", "demVotes": 95410, "repVotes": 173352, "totalVotes": 269234, "margin": 28.95, "repIncumbent": true },
-      { "year": 2020, "demPct": 35.29, "repPct": 64.59, "demCandidate": "Nicholas A. Betts", "repCandidate": "Ben Cline", "demVotes": 134729, "repVotes": 246606, "totalVotes": 381813, "margin": 29.3, "repIncumbent": true },
-      { "year": 2018, "demPct": 40.21, "repPct": 59.69, "demCandidate": "Jennifer Lynn Lewis", "repCandidate": "Ben L. Cline", "demVotes": 113133, "repVotes": 167957, "totalVotes": 281377, "margin": 19.48 },
-      { "year": 2016, "demPct": 33.15, "repPct": 66.63, "demCandidate": "Kai E. Degner", "repCandidate": "Bob Goodlatte", "demVotes": 112170, "repVotes": 225471, "totalVotes": 338409, "margin": 33.48, "repIncumbent": true }
+      { "year": 2020, "demPct": 35.29, "repPct": 64.59, "demCandidate": "Nicholas Betts", "repCandidate": "Ben Cline", "demVotes": 134729, "repVotes": 246606, "totalVotes": 381813, "margin": 29.3, "repIncumbent": true },
+      { "year": 2018, "demPct": 40.21, "repPct": 59.69, "demCandidate": "Jennifer Lynn Lewis", "repCandidate": "Ben Cline", "demVotes": 113133, "repVotes": 167957, "totalVotes": 281377, "margin": 19.48 },
+      { "year": 2016, "demPct": 33.15, "repPct": 66.63, "demCandidate": "Kai Degner", "repCandidate": "Bob Goodlatte", "demVotes": 112170, "repVotes": 225471, "totalVotes": 338409, "margin": 33.48, "repIncumbent": true }
     ]
   },
   {
@@ -16768,14 +16768,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Eugene Vindman", "party": "D", "incumbent": true },
       "rep": { "name": "Tara Durant", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Eugene Simon Vindman",
+    "seatHolder": "Eugene Vindman",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 51.18, "repPct": 48.54, "demCandidate": "Eugene S. Vindman", "repCandidate": "Derrick M. Anderson", "demVotes": 203336, "repVotes": 192847, "totalVotes": 397299, "margin": -2.64 },
-      { "year": 2022, "demPct": 52.21, "repPct": 47.56, "demCandidate": "Abigail Davis Spanberger", "repCandidate": "Yesli I. Vega", "demVotes": 143357, "repVotes": 130586, "totalVotes": 274590, "margin": -4.65, "demIncumbent": true },
-      { "year": 2020, "demPct": 50.82, "repPct": 49, "demCandidate": "Abigail Davis Spanberger", "repCandidate": "Nick J. Freitas", "demVotes": 230893, "repVotes": 222623, "totalVotes": 454339, "margin": -1.82, "demIncumbent": true },
-      { "year": 2018, "demPct": 50.34, "repPct": 48.4, "demCandidate": "Abigail A. Spanberger", "repCandidate": "Dave Brat", "demVotes": 176079, "repVotes": 169295, "totalVotes": 349803, "margin": -1.94, "repIncumbent": true },
-      { "year": 2016, "demPct": 42.24, "repPct": 57.51, "demCandidate": "Eileen M. Bedell", "repCandidate": "Dave Brat", "demVotes": 160159, "repVotes": 218057, "totalVotes": 379163, "margin": 15.27, "repIncumbent": true }
+      { "year": 2024, "demPct": 51.18, "repPct": 48.54, "demCandidate": "Eugene Vindman", "repCandidate": "Derrick Anderson", "demVotes": 203336, "repVotes": 192847, "totalVotes": 397299, "margin": -2.64 },
+      { "year": 2022, "demPct": 52.21, "repPct": 47.56, "demCandidate": "Abigail Davis Spanberger", "repCandidate": "Yesli Vega", "demVotes": 143357, "repVotes": 130586, "totalVotes": 274590, "margin": -4.65, "demIncumbent": true },
+      { "year": 2020, "demPct": 50.82, "repPct": 49, "demCandidate": "Abigail Davis Spanberger", "repCandidate": "Nick Freitas", "demVotes": 230893, "repVotes": 222623, "totalVotes": 454339, "margin": -1.82, "demIncumbent": true },
+      { "year": 2018, "demPct": 50.34, "repPct": 48.4, "demCandidate": "Abigail Spanberger", "repCandidate": "Dave Brat", "demVotes": 176079, "repVotes": 169295, "totalVotes": 349803, "margin": -1.94, "repIncumbent": true },
+      { "year": 2016, "demPct": 42.24, "repPct": 57.51, "demCandidate": "Eileen Bedell", "repCandidate": "Dave Brat", "demVotes": 160159, "repVotes": 218057, "totalVotes": 379163, "margin": 15.27, "repIncumbent": true }
     ]
   },
   {
@@ -16804,11 +16804,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Donald Beyer",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 71.52, "repPct": 24.66, "demCandidate": "Donald S. Beyer, Jr.", "repCandidate": "Jerry W. Torres", "demVotes": 274593, "repVotes": 94676, "totalVotes": 383915, "margin": -46.86, "demIncumbent": true },
-      { "year": 2022, "demPct": 73.53, "repPct": 24.76, "demCandidate": "Donald S. Beyer, Jr.", "repCandidate": "Karina A. Lipsman", "demVotes": 197760, "repVotes": 66589, "totalVotes": 268936, "margin": -48.77, "demIncumbent": true },
-      { "year": 2020, "demPct": 75.79, "repPct": 23.98, "demCandidate": "Donald S. Beyer, Jr.", "repCandidate": "Jeff A. Jordan", "demVotes": 301454, "repVotes": 95365, "totalVotes": 397745, "margin": -51.81, "demIncumbent": true },
-      { "year": 2018, "demPct": 76.1, "repPct": 23.68, "demCandidate": "Donald S. Beyer, Jr.", "repCandidate": "Thomas S. Oh", "demVotes": 247137, "repVotes": 76899, "totalVotes": 324748, "margin": -52.42, "demIncumbent": true },
-      { "year": 2016, "demPct": 68.39, "repPct": 27.28, "demCandidate": "Donald S. Beyer, Jr.", "repCandidate": "Charles A. Hernick", "demVotes": 246653, "repVotes": 98387, "totalVotes": 360676, "margin": -41.11, "demIncumbent": true }
+      { "year": 2024, "demPct": 71.52, "repPct": 24.66, "demCandidate": "Donald Beyer", "repCandidate": "Jerry Torres", "demVotes": 274593, "repVotes": 94676, "totalVotes": 383915, "margin": -46.86, "demIncumbent": true },
+      { "year": 2022, "demPct": 73.53, "repPct": 24.76, "demCandidate": "Donald Beyer", "repCandidate": "Karina Lipsman", "demVotes": 197760, "repVotes": 66589, "totalVotes": 268936, "margin": -48.77, "demIncumbent": true },
+      { "year": 2020, "demPct": 75.79, "repPct": 23.98, "demCandidate": "Donald Beyer", "repCandidate": "Jeff Jordan", "demVotes": 301454, "repVotes": 95365, "totalVotes": 397745, "margin": -51.81, "demIncumbent": true },
+      { "year": 2018, "demPct": 76.1, "repPct": 23.68, "demCandidate": "Donald Beyer", "repCandidate": "Thomas Oh", "demVotes": 247137, "repVotes": 76899, "totalVotes": 324748, "margin": -52.42, "demIncumbent": true },
+      { "year": 2016, "demPct": 68.39, "repPct": 27.28, "demCandidate": "Donald Beyer", "repCandidate": "Charles Hernick", "demVotes": 246653, "repVotes": 98387, "totalVotes": 360676, "margin": -41.11, "demIncumbent": true }
     ]
   },
   {
@@ -16837,11 +16837,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Morgan Griffith",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 27.33, "repPct": 72.49, "demCandidate": "Karen G. H. Baker", "repCandidate": "H. Morgan Griffith", "demVotes": 109570, "repVotes": 290645, "totalVotes": 400963, "margin": 45.16, "repIncumbent": true },
-      { "year": 2022, "demPct": 26.54, "repPct": 73.24, "demCandidate": "Taysha Lee DeVaughan", "repCandidate": "H. Morgan Griffith", "demVotes": 66027, "repVotes": 182207, "totalVotes": 248792, "margin": 46.7, "repIncumbent": true },
-      { "year": 2020, "demPct": 0, "repPct": 93.98, "repCandidate": "H. Morgan Griffith", "repVotes": 271851, "totalVotes": 289274, "margin": 93.98, "repIncumbent": true },
-      { "year": 2018, "demPct": 34.75, "repPct": 65.16, "demCandidate": "Anthony J. Flaccavento", "repCandidate": "H. Morgan Griffith", "demVotes": 85833, "repVotes": 160933, "totalVotes": 246980, "margin": 30.41, "repIncumbent": true },
-      { "year": 2016, "demPct": 28.32, "repPct": 68.59, "demCandidate": "Derek W. Kitts", "repCandidate": "H. Morgan Griffith", "demVotes": 87877, "repVotes": 212838, "totalVotes": 310314, "margin": 40.27, "repIncumbent": true }
+      { "year": 2024, "demPct": 27.33, "repPct": 72.49, "demCandidate": "Karen Baker", "repCandidate": "Morgan Griffith", "demVotes": 109570, "repVotes": 290645, "totalVotes": 400963, "margin": 45.16, "repIncumbent": true },
+      { "year": 2022, "demPct": 26.54, "repPct": 73.24, "demCandidate": "Taysha Lee DeVaughan", "repCandidate": "Morgan Griffith", "demVotes": 66027, "repVotes": 182207, "totalVotes": 248792, "margin": 46.7, "repIncumbent": true },
+      { "year": 2020, "demPct": 0, "repPct": 93.98, "repCandidate": "Morgan Griffith", "repVotes": 271851, "totalVotes": 289274, "margin": 93.98, "repIncumbent": true },
+      { "year": 2018, "demPct": 34.75, "repPct": 65.16, "demCandidate": "Anthony Flaccavento", "repCandidate": "Morgan Griffith", "demVotes": 85833, "repVotes": 160933, "totalVotes": 246980, "margin": 30.41, "repIncumbent": true },
+      { "year": 2016, "demPct": 28.32, "repPct": 68.59, "demCandidate": "Derek Kitts", "repCandidate": "Morgan Griffith", "demVotes": 87877, "repVotes": 212838, "totalVotes": 310314, "margin": 40.27, "repIncumbent": true }
     ]
   },
   {
@@ -16868,11 +16868,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Suhas Subramanyam",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 52.09, "repPct": 47.54, "demCandidate": "Suhas Subramanyam", "repCandidate": "Mike W. Clancy", "demVotes": 215131, "repVotes": 196343, "totalVotes": 413012, "margin": -4.55 },
+      { "year": 2024, "demPct": 52.09, "repPct": 47.54, "demCandidate": "Suhas Subramanyam", "repCandidate": "Mike Clancy", "demVotes": 215131, "repVotes": 196343, "totalVotes": 413012, "margin": -4.55 },
       { "year": 2022, "demPct": 53.15, "repPct": 46.65, "demCandidate": "Jennifer Wexton", "repCandidate": "Hung Cao", "demVotes": 157405, "repVotes": 138163, "totalVotes": 296145, "margin": -6.5, "demIncumbent": true },
-      { "year": 2020, "demPct": 56.51, "repPct": 43.37, "demCandidate": "Jennifer Wexton", "repCandidate": "Aliscia N. Andrews", "demVotes": 268734, "repVotes": 206253, "totalVotes": 475546, "margin": -13.14, "demIncumbent": true },
-      { "year": 2018, "demPct": 56.11, "repPct": 43.73, "demCandidate": "Jennifer T. Wexton", "repCandidate": "Barbara Comstock", "demVotes": 206356, "repVotes": 160841, "totalVotes": 367795, "margin": -12.38, "repIncumbent": true },
-      { "year": 2016, "demPct": 46.92, "repPct": 52.69, "demCandidate": "LuAnn L. Bennett", "repCandidate": "Barbara Comstock", "demVotes": 187712, "repVotes": 210791, "totalVotes": 400083, "margin": 5.77, "repIncumbent": true }
+      { "year": 2020, "demPct": 56.51, "repPct": 43.37, "demCandidate": "Jennifer Wexton", "repCandidate": "Aliscia Andrews", "demVotes": 268734, "repVotes": 206253, "totalVotes": 475546, "margin": -13.14, "demIncumbent": true },
+      { "year": 2018, "demPct": 56.11, "repPct": 43.73, "demCandidate": "Jennifer Wexton", "repCandidate": "Barbara Comstock", "demVotes": 206356, "repVotes": 160841, "totalVotes": 367795, "margin": -12.38, "repIncumbent": true },
+      { "year": 2016, "demPct": 46.92, "repPct": 52.69, "demCandidate": "LuAnn Bennett", "repCandidate": "Barbara Comstock", "demVotes": 187712, "repVotes": 210791, "totalVotes": 400083, "margin": 5.77, "repIncumbent": true }
     ]
   },
   {
@@ -16901,11 +16901,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "James Walkinshaw",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 66.68, "repPct": 32.86, "demCandidate": "Gerald E. Connolly", "repCandidate": "Mike L. Van Meter", "demVotes": 273529, "repVotes": 134802, "totalVotes": 410186, "margin": -33.82, "demIncumbent": true },
-      { "year": 2022, "demPct": 66.69, "repPct": 33.01, "demCandidate": "Gerald E. Connolly", "repCandidate": "James G. “Jim” Myles", "demVotes": 193190, "repVotes": 95634, "totalVotes": 289676, "margin": -33.68, "demIncumbent": true },
-      { "year": 2020, "demPct": 71.39, "repPct": 28.32, "demCandidate": "Gerald E. Connolly", "repCandidate": "Manga A. Anantatmula", "demVotes": 280725, "repVotes": 111380, "totalVotes": 393241, "margin": -43.07, "demIncumbent": true },
-      { "year": 2018, "demPct": 71.11, "repPct": 26.93, "demCandidate": "Gerald E. Connolly", "repCandidate": "Jeff A. Dove, Jr.", "demVotes": 219191, "repVotes": 83023, "totalVotes": 308250, "margin": -44.18, "demIncumbent": true },
-      { "year": 2016, "demPct": 87.88, "repPct": 0, "demCandidate": "Gerald E. Connolly", "demVotes": 247818, "totalVotes": 282003, "margin": -87.88, "demIncumbent": true }
+      { "year": 2024, "demPct": 66.68, "repPct": 32.86, "demCandidate": "Gerald Connolly", "repCandidate": "Mike Van Meter", "demVotes": 273529, "repVotes": 134802, "totalVotes": 410186, "margin": -33.82, "demIncumbent": true },
+      { "year": 2022, "demPct": 66.69, "repPct": 33.01, "demCandidate": "Gerald Connolly", "repCandidate": "Jim Myles", "demVotes": 193190, "repVotes": 95634, "totalVotes": 289676, "margin": -33.68, "demIncumbent": true },
+      { "year": 2020, "demPct": 71.39, "repPct": 28.32, "demCandidate": "Gerald Connolly", "repCandidate": "Manga Anantatmula", "demVotes": 280725, "repVotes": 111380, "totalVotes": 393241, "margin": -43.07, "demIncumbent": true },
+      { "year": 2018, "demPct": 71.11, "repPct": 26.93, "demCandidate": "Gerald Connolly", "repCandidate": "Jeff Dove", "demVotes": 219191, "repVotes": 83023, "totalVotes": 308250, "margin": -44.18, "demIncumbent": true },
+      { "year": 2016, "demPct": 87.88, "repPct": 0, "demCandidate": "Gerald Connolly", "demVotes": 247818, "totalVotes": 282003, "margin": -87.88, "demIncumbent": true }
     ]
   },
   {
@@ -16931,14 +16931,14 @@ export const houseData: RaceForecast[] = [
       "dem": { "name": "Suzan DelBene", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Suzan K. DelBene",
+    "seatHolder": "Suzan DelBene",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 63, "repPct": 36.75, "demCandidate": "Suzan K. DelBene", "repCandidate": "Jeb Brewer", "demVotes": 227213, "repVotes": 132538, "totalVotes": 360658, "margin": -26.25, "demIncumbent": true },
-      { "year": 2022, "demPct": 63.48, "repPct": 36.39, "demCandidate": "Suzan K. DelBene", "repCandidate": "Vincent J. Caveleri", "demVotes": 181992, "repVotes": 104329, "totalVotes": 286684, "margin": -27.09, "demIncumbent": true },
-      { "year": 2020, "demPct": 58.55, "repPct": 41.33, "demCandidate": "Suzan K. DelBene", "repCandidate": "Jeffrey Beeler, Sr.", "demVotes": 249944, "repVotes": 176407, "totalVotes": 426862, "margin": -17.22, "demIncumbent": true },
-      { "year": 2018, "demPct": 59.27, "repPct": 40.73, "demCandidate": "Suzan K. DelBene", "repCandidate": "Jeffrey Beeler", "demVotes": 197209, "repVotes": 135534, "totalVotes": 332743, "margin": -18.54, "demIncumbent": true },
-      { "year": 2016, "demPct": 55.42, "repPct": 44.58, "demCandidate": "Suzan K. DelBene", "repCandidate": "Robert J. Sutherland", "demVotes": 193619, "repVotes": 155779, "totalVotes": 349398, "margin": -10.84, "demIncumbent": true }
+      { "year": 2024, "demPct": 63, "repPct": 36.75, "demCandidate": "Suzan DelBene", "repCandidate": "Jeb Brewer", "demVotes": 227213, "repVotes": 132538, "totalVotes": 360658, "margin": -26.25, "demIncumbent": true },
+      { "year": 2022, "demPct": 63.48, "repPct": 36.39, "demCandidate": "Suzan DelBene", "repCandidate": "Vincent Caveleri", "demVotes": 181992, "repVotes": 104329, "totalVotes": 286684, "margin": -27.09, "demIncumbent": true },
+      { "year": 2020, "demPct": 58.55, "repPct": 41.33, "demCandidate": "Suzan DelBene", "repCandidate": "Jeffrey Beeler", "demVotes": 249944, "repVotes": 176407, "totalVotes": 426862, "margin": -17.22, "demIncumbent": true },
+      { "year": 2018, "demPct": 59.27, "repPct": 40.73, "demCandidate": "Suzan DelBene", "repCandidate": "Jeffrey Beeler", "demVotes": 197209, "repVotes": 135534, "totalVotes": 332743, "margin": -18.54, "demIncumbent": true },
+      { "year": 2016, "demPct": 55.42, "repPct": 44.58, "demCandidate": "Suzan DelBene", "repCandidate": "Robert Sutherland", "demVotes": 193619, "repVotes": 155779, "totalVotes": 349398, "margin": -10.84, "demIncumbent": true }
     ]
   },
   {
@@ -16969,7 +16969,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 63.83, "repPct": 35.86, "demCandidate": "Rick Larsen", "repCandidate": "Cody Hart", "demVotes": 263750, "repVotes": 148167, "totalVotes": 413220, "margin": -27.97, "demIncumbent": true },
       { "year": 2022, "demPct": 60.07, "repPct": 39.75, "demCandidate": "Rick Larsen", "repCandidate": "Dan Matthews", "demVotes": 202980, "repVotes": 134335, "totalVotes": 337923, "margin": -20.32, "demIncumbent": true },
-      { "year": 2020, "demPct": 63.09, "repPct": 36.67, "demCandidate": "Rick Larsen", "repCandidate": "Timothy S. Hazelo", "demVotes": 255252, "repVotes": 148384, "totalVotes": 404598, "margin": -26.42, "demIncumbent": true },
+      { "year": 2020, "demPct": 63.09, "repPct": 36.67, "demCandidate": "Rick Larsen", "repCandidate": "Timothy Hazelo", "demVotes": 255252, "repVotes": 148384, "totalVotes": 404598, "margin": -26.42, "demIncumbent": true },
       { "year": 2018, "demPct": 71.29, "repPct": 28.71, "demCandidate": "Rick Larsen", "repCandidate": "Brian Luke (L)", "demVotes": 210187, "repVotes": 84646, "totalVotes": 294833, "margin": -42.58, "demIncumbent": true },
       { "year": 2016, "demPct": 64.02, "repPct": 35.98, "demCandidate": "Rick Larsen", "repCandidate": "Marc Hennemann", "demVotes": 208314, "repVotes": 117094, "totalVotes": 325408, "margin": -28.04, "demIncumbent": true }
     ]
@@ -17033,7 +17033,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 0, "repPct": 52.02, "repCandidate": "Dan Newhouse", "repVotes": 153477, "totalVotes": 295052, "margin": 52.02, "repIncumbent": true },
       { "year": 2022, "demPct": 31.2, "repPct": 66.46, "demCandidate": "Doug White", "repCandidate": "Dan Newhouse", "demVotes": 70710, "repVotes": 150619, "totalVotes": 226647, "margin": 35.26, "repIncumbent": true },
-      { "year": 2020, "demPct": 33.63, "repPct": 66.21, "demCandidate": "Douglas E. McKinley", "repCandidate": "Dan Newhouse", "demVotes": 102667, "repVotes": 202108, "totalVotes": 305263, "margin": 32.58, "repIncumbent": true },
+      { "year": 2020, "demPct": 33.63, "repPct": 66.21, "demCandidate": "Douglas McKinley", "repCandidate": "Dan Newhouse", "demVotes": 102667, "repVotes": 202108, "totalVotes": 305263, "margin": 32.58, "repIncumbent": true },
       { "year": 2018, "demPct": 37.18, "repPct": 62.82, "demCandidate": "Christine Brown", "repCandidate": "Dan Newhouse", "demVotes": 83785, "repVotes": 141551, "totalVotes": 225336, "margin": 25.64, "repIncumbent": true },
       { "year": 2016, "demPct": 0, "repPct": 57.64, "repCandidate": "Dan Newhouse", "repVotes": 132517, "totalVotes": 229919, "margin": 57.64, "repIncumbent": true }
     ]
@@ -17097,11 +17097,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Emily Randall",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 56.71, "repPct": 43.11, "demCandidate": "Emily Randall", "repCandidate": "Drew C. MacEwen", "demVotes": 239687, "repVotes": 182182, "totalVotes": 422622, "margin": -13.6 },
+      { "year": 2024, "demPct": 56.71, "repPct": 43.11, "demCandidate": "Emily Randall", "repCandidate": "Drew MacEwen", "demVotes": 239687, "repVotes": 182182, "totalVotes": 422622, "margin": -13.6 },
       { "year": 2022, "demPct": 60, "repPct": 39.89, "demCandidate": "Derek Kilmer", "repCandidate": "Elizabeth Kreiselmaier", "demVotes": 208710, "repVotes": 138754, "totalVotes": 347873, "margin": -20.11, "demIncumbent": true },
       { "year": 2020, "demPct": 59.3, "repPct": 40.45, "demCandidate": "Derek Kilmer", "repCandidate": "Elizabeth Kreiselmaier", "demVotes": 247429, "repVotes": 168783, "totalVotes": 417216, "margin": -18.85, "demIncumbent": true },
       { "year": 2018, "demPct": 63.89, "repPct": 36.11, "demCandidate": "Derek Kilmer", "repCandidate": "Douglas Dightman", "demVotes": 206409, "repVotes": 116677, "totalVotes": 323086, "margin": -27.78, "demIncumbent": true },
-      { "year": 2016, "demPct": 61.53, "repPct": 38.47, "demCandidate": "Derek Kilmer", "repCandidate": "Todd A. Bloom", "demVotes": 201718, "repVotes": 126116, "totalVotes": 327834, "margin": -23.06, "demIncumbent": true }
+      { "year": 2016, "demPct": 61.53, "repPct": 38.47, "demCandidate": "Derek Kilmer", "repCandidate": "Todd Bloom", "demVotes": 201718, "repVotes": 126116, "totalVotes": 327834, "margin": -23.06, "demIncumbent": true }
     ]
   },
   {
@@ -17165,7 +17165,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 53.27, "repPct": 46.42, "demCandidate": "Kim Schrier", "repCandidate": "Matt Larkin", "demVotes": 179003, "repVotes": 155976, "totalVotes": 336038, "margin": -6.85, "demIncumbent": true },
       { "year": 2020, "demPct": 51.71, "repPct": 48.15, "demCandidate": "Kim Schrier", "repCandidate": "Jesse Jensen", "demVotes": 213123, "repVotes": 198423, "totalVotes": 412112, "margin": -3.56, "demIncumbent": true },
       { "year": 2018, "demPct": 52.42, "repPct": 47.58, "demCandidate": "Kim Schrier", "repCandidate": "Dino Rossi (G)", "demVotes": 164089, "repVotes": 148968, "totalVotes": 313057, "margin": -4.84 },
-      { "year": 2016, "demPct": 39.8, "repPct": 60.2, "demCandidate": "Tony Ventrella", "repCandidate": "David G. Reichert", "demVotes": 127720, "repVotes": 193145, "totalVotes": 320865, "margin": 20.4, "repIncumbent": true }
+      { "year": 2016, "demPct": 39.8, "repPct": 60.2, "demCandidate": "Tony Ventrella", "repCandidate": "David Reichert", "demVotes": 127720, "repVotes": 193145, "totalVotes": 320865, "margin": 20.4, "repIncumbent": true }
     ]
   },
   {
@@ -17228,7 +17228,7 @@ export const houseData: RaceForecast[] = [
     "seatParty": "D",
     "pastResults": [
       { "year": 2024, "demPct": 58.54, "repPct": 41.23, "demCandidate": "Marilyn Strickland", "repCandidate": "Don Hewett", "demVotes": 203732, "repVotes": 143492, "totalVotes": 348044, "margin": -17.31, "demIncumbent": true },
-      { "year": 2022, "demPct": 56.97, "repPct": 42.87, "demCandidate": "Marilyn Strickland", "repCandidate": "Keith R. Swank", "demVotes": 152544, "repVotes": 114777, "totalVotes": 267748, "margin": -14.1, "demIncumbent": true },
+      { "year": 2022, "demPct": 56.97, "repPct": 42.87, "demCandidate": "Marilyn Strickland", "repCandidate": "Keith Swank", "demVotes": 152544, "repVotes": 114777, "totalVotes": 267748, "margin": -14.1, "demIncumbent": true },
       { "year": 2020, "demPct": 49.33, "repPct": 0, "demCandidate": "Marilyn Strickland", "demVotes": 167937, "totalVotes": 340407, "margin": -49.33 },
       { "year": 2018, "demPct": 61.54, "repPct": 38.46, "demCandidate": "Denny Heck", "repCandidate": "Joseph Brumbles", "demVotes": 166215, "repVotes": 103860, "totalVotes": 270075, "margin": -23.08, "demIncumbent": true },
       { "year": 2016, "demPct": 58.67, "repPct": 41.33, "demCandidate": "Denny Heck", "repCandidate": "Jim Postma", "demVotes": 170460, "repVotes": 120104, "totalVotes": 290564, "margin": -17.34, "demIncumbent": true }
@@ -17260,11 +17260,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Carol Miller",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 26.15, "repPct": 66.36, "demCandidate": "Chris Bob Reed", "repCandidate": "Carol D. Miller", "demVotes": 90038, "repVotes": 228491, "totalVotes": 344319, "margin": 40.21, "repIncumbent": true },
-      { "year": 2022, "demPct": 28.8, "repPct": 66.69, "demCandidate": "Lacy Watson", "repCandidate": "Carol D. Miller", "demVotes": 65428, "repVotes": 151511, "totalVotes": 227196, "margin": 37.89 },
-      { "year": 2020, "demPct": 31.02, "repPct": 68.96, "demCandidate": "Natalie Cline", "repCandidate": "David B. McKinley", "demVotes": 81177, "repVotes": 180488, "totalVotes": 261723, "margin": 37.94, "repIncumbent": true },
-      { "year": 2018, "demPct": 35.42, "repPct": 64.58, "demCandidate": "Kendra Fershee", "repCandidate": "David B. McKinley", "demVotes": 70217, "repVotes": 127997, "totalVotes": 198214, "margin": 29.16, "repIncumbent": true },
-      { "year": 2016, "demPct": 31.03, "repPct": 68.97, "demCandidate": "Mike Manypenny", "repCandidate": "David B. McKinley", "demVotes": 73534, "repVotes": 163469, "totalVotes": 237003, "margin": 37.94, "repIncumbent": true }
+      { "year": 2024, "demPct": 26.15, "repPct": 66.36, "demCandidate": "Chris Bob Reed", "repCandidate": "Carol Miller", "demVotes": 90038, "repVotes": 228491, "totalVotes": 344319, "margin": 40.21, "repIncumbent": true },
+      { "year": 2022, "demPct": 28.8, "repPct": 66.69, "demCandidate": "Lacy Watson", "repCandidate": "Carol Miller", "demVotes": 65428, "repVotes": 151511, "totalVotes": 227196, "margin": 37.89 },
+      { "year": 2020, "demPct": 31.02, "repPct": 68.96, "demCandidate": "Natalie Cline", "repCandidate": "David McKinley", "demVotes": 81177, "repVotes": 180488, "totalVotes": 261723, "margin": 37.94, "repIncumbent": true },
+      { "year": 2018, "demPct": 35.42, "repPct": 64.58, "demCandidate": "Kendra Fershee", "repCandidate": "David McKinley", "demVotes": 70217, "repVotes": 127997, "totalVotes": 198214, "margin": 29.16, "repIncumbent": true },
+      { "year": 2016, "demPct": 31.03, "repPct": 68.97, "demCandidate": "Mike Manypenny", "repCandidate": "David McKinley", "demVotes": 73534, "repVotes": 163469, "totalVotes": 237003, "margin": 37.94, "repIncumbent": true }
     ]
   },
   {
@@ -17294,10 +17294,10 @@ export const houseData: RaceForecast[] = [
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 29.23, "repPct": 70.77, "demCandidate": "Steven Wendelin", "repCandidate": "Riley Moore", "demVotes": 110775, "repVotes": 268190, "totalVotes": 378965, "margin": 41.54 },
-      { "year": 2022, "demPct": 34.42, "repPct": 65.54, "demCandidate": "Barry Lee Wendell", "repCandidate": "Alexander X. Mooney", "demVotes": 84278, "repVotes": 160493, "totalVotes": 244886, "margin": 31.12, "repIncumbent": true },
-      { "year": 2020, "demPct": 36.92, "repPct": 63.08, "demCandidate": "Cathy Kunkel", "repCandidate": "Alexander X. Mooney", "demVotes": 100799, "repVotes": 172195, "totalVotes": 272994, "margin": 26.16, "repIncumbent": true },
-      { "year": 2018, "demPct": 42.98, "repPct": 53.96, "demCandidate": "Talley Sergent", "repCandidate": "Alexander X. Mooney", "demVotes": 88011, "repVotes": 110504, "totalVotes": 204792, "margin": 10.98, "repIncumbent": true },
-      { "year": 2016, "demPct": 41.82, "repPct": 58.18, "demCandidate": "Mark Hunt", "repCandidate": "Alexander X. Mooney", "demVotes": 101207, "repVotes": 140807, "totalVotes": 242014, "margin": 16.36, "repIncumbent": true }
+      { "year": 2022, "demPct": 34.42, "repPct": 65.54, "demCandidate": "Barry Lee Wendell", "repCandidate": "Alexander Mooney", "demVotes": 84278, "repVotes": 160493, "totalVotes": 244886, "margin": 31.12, "repIncumbent": true },
+      { "year": 2020, "demPct": 36.92, "repPct": 63.08, "demCandidate": "Cathy Kunkel", "repCandidate": "Alexander Mooney", "demVotes": 100799, "repVotes": 172195, "totalVotes": 272994, "margin": 26.16, "repIncumbent": true },
+      { "year": 2018, "demPct": 42.98, "repPct": 53.96, "demCandidate": "Talley Sergent", "repCandidate": "Alexander Mooney", "demVotes": 88011, "repVotes": 110504, "totalVotes": 204792, "margin": 10.98, "repIncumbent": true },
+      { "year": 2016, "demPct": 41.82, "repPct": 58.18, "demCandidate": "Mark Hunt", "repCandidate": "Alexander Mooney", "demVotes": 101207, "repVotes": 140807, "totalVotes": 242014, "margin": 16.36, "repIncumbent": true }
     ]
   },
   {
@@ -17328,7 +17328,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 45.17, "repPct": 54.08, "demCandidate": "Ann Roe", "repCandidate": "Bryan Steil", "demVotes": 135825, "repVotes": 162610, "totalVotes": 300682, "margin": 8.91, "repIncumbent": true },
       { "year": 2020, "demPct": 40.65, "repPct": 59.35, "demCandidate": "Roger Polack", "repCandidate": "Bryan Steil", "demVotes": 163170, "repVotes": 238271, "totalVotes": 401441, "margin": 18.7, "repIncumbent": true },
       { "year": 2018, "demPct": 42.31, "repPct": 54.61, "demCandidate": "Randy Bryce", "repCandidate": "Bryan Steil", "demVotes": 137508, "repVotes": 177492, "totalVotes": 325013, "margin": 12.3 },
-      { "year": 2016, "demPct": 30.23, "repPct": 64.99, "demCandidate": "Ryan Solen", "repCandidate": "Paul D. Ryan", "demVotes": 107003, "repVotes": 230072, "totalVotes": 353990, "margin": 34.76, "repIncumbent": true }
+      { "year": 2016, "demPct": 30.23, "repPct": 64.99, "demCandidate": "Ryan Solen", "repCandidate": "Paul Ryan", "demVotes": 107003, "repVotes": 230072, "totalVotes": 353990, "margin": 34.76, "repIncumbent": true }
     ]
   },
   {
@@ -17425,7 +17425,7 @@ export const houseData: RaceForecast[] = [
       { "year": 2022, "demPct": 75.34, "repPct": 22.63, "demCandidate": "Gwen Moore", "repCandidate": "Tim Rogers", "demVotes": 191955, "repVotes": 57660, "totalVotes": 254779, "margin": -52.71, "demIncumbent": true },
       { "year": 2020, "demPct": 74.73, "repPct": 22.73, "demCandidate": "Gwen Moore", "repCandidate": "Tim Rogers", "demVotes": 232668, "repVotes": 70769, "totalVotes": 311348, "margin": -52, "demIncumbent": true },
       { "year": 2018, "demPct": 75.71, "repPct": 21.67, "demCandidate": "Gwen Moore", "repCandidate": "Tim Rogers", "demVotes": 206487, "repVotes": 59091, "totalVotes": 272748, "margin": -54.04, "demIncumbent": true },
-      { "year": 2016, "demPct": 77.02, "repPct": 11.72, "demCandidate": "Gwen Moore", "repCandidate": "Robert R. Raymond", "repParty": "I", "demVotes": 220181, "repVotes": 33494, "totalVotes": 285858, "margin": -65.3, "demIncumbent": true }
+      { "year": 2016, "demPct": 77.02, "repPct": 11.72, "demCandidate": "Gwen Moore", "repCandidate": "Robert Raymond", "repParty": "I", "demVotes": 220181, "repVotes": 33494, "totalVotes": 285858, "margin": -65.3, "demIncumbent": true }
     ]
   },
   {
@@ -17457,8 +17457,8 @@ export const houseData: RaceForecast[] = [
       { "year": 2024, "demPct": 35.53, "repPct": 64.47, "demCandidate": "Ben Steinhoff", "repCandidate": "Scott Fitzgerald", "demVotes": 165653, "repVotes": 300521, "totalVotes": 466174, "margin": 28.94, "repIncumbent": true },
       { "year": 2022, "demPct": 35.57, "repPct": 64.43, "demCandidate": "Mike Van Someren", "repCandidate": "Scott Fitzgerald", "demVotes": 134581, "repVotes": 243741, "totalVotes": 378322, "margin": 28.86, "repIncumbent": true },
       { "year": 2020, "demPct": 39.86, "repPct": 60.14, "demCandidate": "Tom Palzewicz", "repCandidate": "Scott Fitzgerald", "demVotes": 175902, "repVotes": 265434, "totalVotes": 441336, "margin": 20.28 },
-      { "year": 2018, "demPct": 38.02, "repPct": 61.98, "demCandidate": "Tom Palzewicz", "repCandidate": "F. James Sensenbrenner, Jr.", "demVotes": 138385, "repVotes": 225619, "totalVotes": 364005, "margin": 23.96, "repIncumbent": true },
-      { "year": 2016, "demPct": 29.31, "repPct": 66.76, "demCandidate": "Khary Penebaker", "repCandidate": "F. James Sensenbrenner, Jr.", "demVotes": 114477, "repVotes": 260706, "totalVotes": 390507, "margin": 37.45, "repIncumbent": true }
+      { "year": 2018, "demPct": 38.02, "repPct": 61.98, "demCandidate": "Tom Palzewicz", "repCandidate": "James Sensenbrenner", "demVotes": 138385, "repVotes": 225619, "totalVotes": 364005, "margin": 23.96, "repIncumbent": true },
+      { "year": 2016, "demPct": 29.31, "repPct": 66.76, "demCandidate": "Khary Penebaker", "repCandidate": "James Sensenbrenner", "demVotes": 114477, "repVotes": 260706, "totalVotes": 390507, "margin": 37.45, "repIncumbent": true }
     ]
   },
   {
@@ -17489,7 +17489,7 @@ export const houseData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 38.7, "repPct": 61.3, "demCandidate": "John Zarbano", "repCandidate": "Glenn Grothman", "demVotes": 159042, "repVotes": 251889, "totalVotes": 410931, "margin": 22.6, "repIncumbent": true },
       { "year": 2022, "demPct": 0, "repPct": 99.86, "repCandidate": "Glenn Grothman", "repVotes": 239231, "totalVotes": 239571, "margin": 99.86, "repIncumbent": true },
-      { "year": 2020, "demPct": 40.74, "repPct": 59.26, "demCandidate": "Jessica J. King", "repCandidate": "Glenn Grothman", "demVotes": 164239, "repVotes": 238874, "totalVotes": 403113, "margin": 18.52, "repIncumbent": true },
+      { "year": 2020, "demPct": 40.74, "repPct": 59.26, "demCandidate": "Jessica King", "repCandidate": "Glenn Grothman", "demVotes": 164239, "repVotes": 238874, "totalVotes": 403113, "margin": 18.52, "repIncumbent": true },
       { "year": 2018, "demPct": 44.49, "repPct": 55.51, "demCandidate": "Dan Kohl", "repCandidate": "Glenn Grothman", "demVotes": 144536, "repVotes": 180311, "totalVotes": 324847, "margin": 11.02, "repIncumbent": true },
       { "year": 2016, "demPct": 37.28, "repPct": 57.19, "demCandidate": "Sarah Lloyd", "repCandidate": "Glenn Grothman", "demVotes": 133072, "repVotes": 204147, "totalVotes": 356935, "margin": 19.91, "repIncumbent": true }
     ]
@@ -17520,11 +17520,11 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Tom Tiffany",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 36.39, "repPct": 63.61, "demCandidate": "Kyle Kilbourn", "repCandidate": "Thomas P. Tiffany", "demVotes": 156524, "repVotes": 273553, "totalVotes": 430077, "margin": 27.22, "repIncumbent": true },
-      { "year": 2022, "demPct": 38.12, "repPct": 61.88, "demCandidate": "Richard Dick Ausman", "repCandidate": "Thomas P. Tiffany", "demVotes": 128877, "repVotes": 209224, "totalVotes": 338101, "margin": 23.76, "repIncumbent": true },
-      { "year": 2020, "demPct": 39.23, "repPct": 60.77, "demCandidate": "Tricia Zunker", "repCandidate": "Thomas P. Tiffany", "demVotes": 162741, "repVotes": 252048, "totalVotes": 414789, "margin": 21.54, "repIncumbent": true },
-      { "year": 2018, "demPct": 38.51, "repPct": 60.12, "demCandidate": "Margaret Engebretson", "repCandidate": "Sean P. Duffy", "demVotes": 124307, "repVotes": 194061, "totalVotes": 322787, "margin": 21.61, "repIncumbent": true },
-      { "year": 2016, "demPct": 38.29, "repPct": 61.71, "demCandidate": "Mary Hoeft", "repCandidate": "Sean P. Duffy", "demVotes": 138643, "repVotes": 223418, "totalVotes": 362061, "margin": 23.42, "repIncumbent": true }
+      { "year": 2024, "demPct": 36.39, "repPct": 63.61, "demCandidate": "Kyle Kilbourn", "repCandidate": "Thomas Tiffany", "demVotes": 156524, "repVotes": 273553, "totalVotes": 430077, "margin": 27.22, "repIncumbent": true },
+      { "year": 2022, "demPct": 38.12, "repPct": 61.88, "demCandidate": "Richard Dick Ausman", "repCandidate": "Thomas Tiffany", "demVotes": 128877, "repVotes": 209224, "totalVotes": 338101, "margin": 23.76, "repIncumbent": true },
+      { "year": 2020, "demPct": 39.23, "repPct": 60.77, "demCandidate": "Tricia Zunker", "repCandidate": "Thomas Tiffany", "demVotes": 162741, "repVotes": 252048, "totalVotes": 414789, "margin": 21.54, "repIncumbent": true },
+      { "year": 2018, "demPct": 38.51, "repPct": 60.12, "demCandidate": "Margaret Engebretson", "repCandidate": "Sean Duffy", "demVotes": 124307, "repVotes": 194061, "totalVotes": 322787, "margin": 21.61, "repIncumbent": true },
+      { "year": 2016, "demPct": 38.29, "repPct": 61.71, "demCandidate": "Mary Hoeft", "repCandidate": "Sean Duffy", "demVotes": 138643, "repVotes": 223418, "totalVotes": 362061, "margin": 23.42, "repIncumbent": true }
     ]
   },
   {
@@ -17584,7 +17584,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Harriet Hageman",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 23.24, "repPct": 70.61, "demCandidate": "Kyle G. Cameron", "repCandidate": "Harriet M. Hageman", "demVotes": 60778, "repVotes": 184680, "totalVotes": 261548, "margin": 47.37, "repIncumbent": true },
+      { "year": 2024, "demPct": 23.24, "repPct": 70.61, "demCandidate": "Kyle Cameron", "repCandidate": "Harriet Hageman", "demVotes": 60778, "repVotes": 184680, "totalVotes": 261548, "margin": 47.37, "repIncumbent": true },
       { "year": 2022, "demPct": 24.37, "repPct": 68.18, "demCandidate": "Lynnette GreyBull", "repCandidate": "Harriet Hageman", "demVotes": 47250, "repVotes": 132206, "totalVotes": 193902, "margin": 43.81 },
       { "year": 2020, "demPct": 24.58, "repPct": 68.56, "demCandidate": "Lynnette Grey Bull", "repCandidate": "Liz Cheney", "demVotes": 66576, "repVotes": 185732, "totalVotes": 270892, "margin": 43.98, "repIncumbent": true },
       { "year": 2018, "demPct": 29.77, "repPct": 63.59, "demCandidate": "Greg Hunter", "repCandidate": "Liz Cheney", "demVotes": 59903, "repVotes": 127963, "totalVotes": 201245, "margin": 33.82, "repIncumbent": true },
@@ -17600,34 +17600,34 @@ export const housePastResults: Record<string, PastResult[]> = {
     { "year": 2016, "demPct": 27.86, "repPct": 72.13, "demCandidate": "Junius Rodriguez", "repCandidate": "Darin LaHood", "demVotes": 96770, "repVotes": 250506, "totalVotes": 347283, "margin": 44.27, "repIncumbent": true }
   ],
   "2614": [
-    { "year": 2020, "demPct": 79.28, "repPct": 18.31, "demCandidate": "Brenda L. Lawrence", "repCandidate": "Robert Vance Patrick", "demVotes": 271370, "repVotes": 62664, "totalVotes": 342303, "margin": -60.97, "demIncumbent": true },
-    { "year": 2018, "demPct": 80.88, "repPct": 17.32, "demCandidate": "Brenda L. Lawrence", "repCandidate": "Marc S. Herschfus", "demVotes": 214334, "repVotes": 45899, "totalVotes": 264994, "margin": -63.56, "demIncumbent": true },
-    { "year": 2016, "demPct": 78.51, "repPct": 18.68, "demCandidate": "Brenda L. Lawrence", "repCandidate": "Howard Klausner", "demVotes": 244135, "repVotes": 58103, "totalVotes": 310974, "margin": -59.83, "demIncumbent": true }
+    { "year": 2020, "demPct": 79.28, "repPct": 18.31, "demCandidate": "Brenda Lawrence", "repCandidate": "Robert Vance Patrick", "demVotes": 271370, "repVotes": 62664, "totalVotes": 342303, "margin": -60.97, "demIncumbent": true },
+    { "year": 2018, "demPct": 80.88, "repPct": 17.32, "demCandidate": "Brenda Lawrence", "repCandidate": "Marc Herschfus", "demVotes": 214334, "repVotes": 45899, "totalVotes": 264994, "margin": -63.56, "demIncumbent": true },
+    { "year": 2016, "demPct": 78.51, "repPct": 18.68, "demCandidate": "Brenda Lawrence", "repCandidate": "Howard Klausner", "demVotes": 244135, "repVotes": 58103, "totalVotes": 310974, "margin": -59.83, "demIncumbent": true }
   ],
   "3627": [
-    { "year": 2020, "demPct": 40.9, "repPct": 57.64, "demCandidate": "Nathan D. McMurray", "repCandidate": "Chris Jacobs", "demVotes": 136783, "repVotes": 192756, "totalVotes": 334423, "margin": 16.74, "repIncumbent": true },
-    { "year": 2018, "demPct": 51.55, "repPct": 46.05, "demCandidate": "Nathan D. McMurray", "repCandidate": "Chris Collins", "demVotes": 128167, "repVotes": 114506, "totalVotes": 248646, "margin": -5.5, "repIncumbent": true },
-    { "year": 2016, "demPct": 38.06, "repPct": 61.94, "demCandidate": "Diana K. Kastenbaum", "repCandidate": "Chris Collins", "demVotes": 107832, "repVotes": 175509, "totalVotes": 283341, "margin": 23.88, "repIncumbent": true }
+    { "year": 2020, "demPct": 40.9, "repPct": 57.64, "demCandidate": "Nathan McMurray", "repCandidate": "Chris Jacobs", "demVotes": 136783, "repVotes": 192756, "totalVotes": 334423, "margin": 16.74, "repIncumbent": true },
+    { "year": 2018, "demPct": 51.55, "repPct": 46.05, "demCandidate": "Nathan McMurray", "repCandidate": "Chris Collins", "demVotes": 128167, "repVotes": 114506, "totalVotes": 248646, "margin": -5.5, "repIncumbent": true },
+    { "year": 2016, "demPct": 38.06, "repPct": 61.94, "demCandidate": "Diana Kastenbaum", "repCandidate": "Chris Collins", "demVotes": 107832, "repVotes": 175509, "totalVotes": 283341, "margin": 23.88, "repIncumbent": true }
   ],
   "3916": [
     { "year": 2020, "demPct": 36.81, "repPct": 63.19, "demCandidate": "Aaron Paul Godfrey", "repCandidate": "Anthony Gonzalez", "demVotes": 144071, "repVotes": 247335, "totalVotes": 391406, "margin": 26.38, "repIncumbent": true },
     { "year": 2018, "demPct": 43.27, "repPct": 56.73, "demCandidate": "Susan Moran Palmer", "repCandidate": "Anthony Gonzalez", "demVotes": 129681, "repVotes": 170029, "totalVotes": 299710, "margin": 13.46 },
-    { "year": 2016, "demPct": 34.67, "repPct": 65.33, "demCandidate": "Keith Mundy", "repCandidate": "James B. Renacci", "demVotes": 119830, "repVotes": 225794, "totalVotes": 345624, "margin": 30.66, "repIncumbent": true }
+    { "year": 2016, "demPct": 34.67, "repPct": 65.33, "demCandidate": "Keith Mundy", "repCandidate": "James Renacci", "demVotes": 119830, "repVotes": 225794, "totalVotes": 345624, "margin": 30.66, "repIncumbent": true }
   ],
   "4218": [
-    { "year": 2020, "demPct": 69.25, "repPct": 30.75, "demCandidate": "Michael F. Doyle, Jr.", "repCandidate": "Luke Edison Negron", "demVotes": 266084, "repVotes": 118163, "totalVotes": 384247, "margin": -38.5, "demIncumbent": true },
-    { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Michael F. Doyle", "demVotes": 231472, "totalVotes": 231472, "margin": -100 },
+    { "year": 2020, "demPct": 69.25, "repPct": 30.75, "demCandidate": "Michael Doyle", "repCandidate": "Luke Edison Negron", "demVotes": 266084, "repVotes": 118163, "totalVotes": 384247, "margin": -38.5, "demIncumbent": true },
+    { "year": 2018, "demPct": 100, "repPct": 0, "demCandidate": "Michael Doyle", "demVotes": 231472, "totalVotes": 231472, "margin": -100 },
     { "year": 2016, "demPct": 0, "repPct": 100, "repCandidate": "Tim Murphy", "repVotes": 293684, "totalVotes": 293684, "margin": 100, "repIncumbent": true }
   ],
   "5403": [
-    { "year": 2020, "demPct": 28.64, "repPct": 71.29, "demCandidate": "Hilary Turner", "repCandidate": "Carol D. Miller", "demVotes": 64927, "repVotes": 161585, "totalVotes": 226668, "margin": 42.65, "repIncumbent": true },
-    { "year": 2018, "demPct": 43.63, "repPct": 56.37, "demCandidate": "Richard Ojeda II", "repCandidate": "Carol Miller", "demVotes": 76340, "repVotes": 98645, "totalVotes": 174985, "margin": 12.74 },
-    { "year": 2016, "demPct": 23.98, "repPct": 67.88, "demCandidate": "Matt Detch", "repCandidate": "Evan H. Jenkins", "demVotes": 49708, "repVotes": 140741, "totalVotes": 207332, "margin": 43.9, "repIncumbent": true }
+    { "year": 2020, "demPct": 28.64, "repPct": 71.29, "demCandidate": "Hilary Turner", "repCandidate": "Carol Miller", "demVotes": 64927, "repVotes": 161585, "totalVotes": 226668, "margin": 42.65, "repIncumbent": true },
+    { "year": 2018, "demPct": 43.63, "repPct": 56.37, "demCandidate": "Richard Ojeda", "repCandidate": "Carol Miller", "demVotes": 76340, "repVotes": 98645, "totalVotes": 174985, "margin": 12.74 },
+    { "year": 2016, "demPct": 23.98, "repPct": 67.88, "demCandidate": "Matt Detch", "repCandidate": "Evan Jenkins", "demVotes": 49708, "repVotes": 140741, "totalVotes": 207332, "margin": 43.9, "repIncumbent": true }
   ],
   "0653": [
     { "year": 2020, "demPct": 59.5, "repPct": 0, "demCandidate": "Sara Jacobs", "demVotes": 199244, "totalVotes": 334858, "margin": -59.5 },
-    { "year": 2018, "demPct": 69.07, "repPct": 30.93, "demCandidate": "Susan A. Davis", "repCandidate": "Morgan Murtaugh", "demVotes": 185667, "repVotes": 83127, "totalVotes": 268794, "margin": -38.14, "demIncumbent": true },
-    { "year": 2016, "demPct": 67.01, "repPct": 32.99, "demCandidate": "Susan A. Davis", "repCandidate": "James Veltmeyer", "demVotes": 198988, "repVotes": 97968, "totalVotes": 296956, "margin": -34.02, "demIncumbent": true }
+    { "year": 2018, "demPct": 69.07, "repPct": 30.93, "demCandidate": "Susan Davis", "repCandidate": "Morgan Murtaugh", "demVotes": 185667, "repVotes": 83127, "totalVotes": 268794, "margin": -38.14, "demIncumbent": true },
+    { "year": 2016, "demPct": 67.01, "repPct": 32.99, "demCandidate": "Susan Davis", "repCandidate": "James Veltmeyer", "demVotes": 198988, "repVotes": 97968, "totalVotes": 296956, "margin": -34.02, "demIncumbent": true }
   ]
 };
 

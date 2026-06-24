@@ -24,6 +24,29 @@ import {
   type RaceModelInputs,
   type CQTier,
 } from "@/data/tplModelData";
+import { districtPresidentialData } from "@/data/districtPresidentialData";
+import { popVoteData, presIncParty } from "@/data/popVoteData";
+
+// ── District lookup: state abbreviation → sorted list of districts ───────────
+
+const DISTRICTS_BY_STATE: Record<string, { id: string; code: string; num: number }[]> = {};
+for (const [id, d] of Object.entries(districtPresidentialData)) {
+  if (!DISTRICTS_BY_STATE[d.state]) DISTRICTS_BY_STATE[d.state] = [];
+  DISTRICTS_BY_STATE[d.state].push({ id, code: d.code, num: parseInt(d.code.split("-")[1]) });
+}
+for (const arr of Object.values(DISTRICTS_BY_STATE)) arr.sort((a, b) => a.num - b.num);
+
+// ── Presidential CQ inputs by year (national-level candidate quality) ─────────
+// These apply to the presidential race in each cycle when computing district IF/CQ.
+// 2016: Generic/Generic (Trump vs Clinton — no extreme tier assignment)
+// 2020: Generic/Generic (Biden vs Trump — symmetric)
+// 2024: Strong winner (Trump) / Weak loser (Harris)
+
+const PRESIDENTIAL_INPUTS_BY_YEAR: Record<number, { wqTier: CQTier; lqTier: CQTier }> = {
+  2016: { wqTier: "Generic", lqTier: "Generic" },
+  2020: { wqTier: "Generic", lqTier: "Generic" },
+  2024: { wqTier: "Strong", lqTier: "Weak" },
+};
 
 // ── Race stub type (input to computation) ───────────────────────────────────
 
@@ -37,7 +60,6 @@ interface RaceStub {
   lqTier: CQTier;
   CQ: number;
   FF: number;
-  PIF: number;
   historicalMargins: { year: number; margin: number }[];
 }
 
@@ -66,17 +88,19 @@ function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
     historicalMargins: RaceStub["historicalMargins"] = []
   ): RaceStub {
     const inp = overlay(race, year);
+    const presBase = raceType === "P" ? PRESIDENTIAL_INPUTS_BY_YEAR[year] : undefined;
+    const wqTier = inp?.wqTier ?? presBase?.wqTier ?? "Generic";
+    const lqTier = inp?.lqTier ?? presBase?.lqTier ?? "Generic";
     return {
       race,
       district,
       raceType,
       year,
       incumbent,
-      wqTier: inp?.wqTier ?? "Generic",
-      lqTier: inp?.lqTier ?? "Generic",
-      CQ: WQ_VALUES[inp?.wqTier ?? "Generic"] * LQ_VALUES[inp?.lqTier ?? "Generic"],
+      wqTier,
+      lqTier,
+      CQ: WQ_VALUES[wqTier] * LQ_VALUES[lqTier],
       FF: inp?.FF ?? 1.00,
-      PIF: inp?.PIF ?? 1.00,
       historicalMargins,
     };
   }
@@ -177,18 +201,25 @@ function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
     }
   }
 
-  // State Legislature — 2 most recent years with two-party vote data
+  // State Legislature — all years where BOTH a House entry AND a Senate entry have vote data.
+  // Nebraska exception (unicameral): any year with any entry having vote data is included.
   const legEntries = stateLegData[stateName] ?? [];
-  const legYears = [
-    ...new Set(
-      legEntries
-        .filter((e) => e.demVotes != null && e.repVotes != null)
-        .map((e) => e.year)
-    ),
-  ]
-    .sort((a, b) => b - a)
-    .slice(0, 2)
-    .reverse();
+  const isUnicameral = stateName === "Nebraska";
+  const legYears = [...new Set(legEntries.map((e) => e.year))]
+    .filter((year) => {
+      const yearEntries = legEntries.filter((e) => e.year === year);
+      if (isUnicameral) {
+        return yearEntries.some((e) => e.demVotes != null && e.repVotes != null);
+      }
+      const hasHouseData = yearEntries.some(
+        (e) => e.type === "House" && e.demVotes != null && e.repVotes != null
+      );
+      const hasSenateData = yearEntries.some(
+        (e) => e.type === "Senate" && e.demVotes != null && e.repVotes != null
+      );
+      return hasHouseData && hasSenateData;
+    })
+    .sort((a, b) => a - b);
 
   for (const year of legYears) {
     const historicalMargins = [
@@ -281,9 +312,9 @@ function getRawMargin(
   return null;
 }
 
-// ── Competitiveness adjustment for margins greater than 65 points ──────────
+// ── Competitiveness adjustment for margins of 50 points or greater ──────────
 
-const NONCOMPETITIVE_MARGIN_THRESHOLD = 65;
+const NONCOMPETITIVE_MARGIN_THRESHOLD = 50;
 const PRIOR_CONTESTED_WEIGHT = 0.6;
 const PRESIDENTIAL_BASELINE_WEIGHT = 0.4;
 
@@ -320,7 +351,7 @@ function computeCompetitivenessAdjustment(
   stub: RaceStub,
   stateAbbr: string
 ): CompetitivenessAdjustment {
-  if (Math.abs(rawMargin) <= NONCOMPETITIVE_MARGIN_THRESHOLD) {
+  if (Math.abs(rawMargin) < NONCOMPETITIVE_MARGIN_THRESHOLD) {
     return {
       adjustedMargin: rawMargin,
       adjusted: false,
@@ -334,7 +365,7 @@ function computeCompetitivenessAdjustment(
     .sort((a, b) => b.year - a.year);
   const priorContested =
     priorResults.find(
-      (result) => Math.abs(result.margin) <= NONCOMPETITIVE_MARGIN_THRESHOLD
+      (result) => Math.abs(result.margin) < NONCOMPETITIVE_MARGIN_THRESHOLD
     ) ??
     [...priorResults].sort(
       (a, b) => Math.abs(a.margin) - Math.abs(b.margin)
@@ -409,18 +440,17 @@ function marginBg(v: number | null): string {
 // ── Glossary ────────────────────────────────────────────────────────────────
 
 const GLOSSARY = [
-  { abbr: "CF", term: "Candidate Factor", desc: "Combined point contribution of IF and CQ: Adjusted Margin × (IF × CQ − 1). IF and CQ compound multiplicatively; the result is expressed as a signed point contribution." },
+  { abbr: "CF", term: "Candidate Factor", desc: "Combined point contribution of IF and CQ. Non-P: Adjusted × (IF × CQ − 1) — multiplicative. P: Adjusted × (IF−1) + cappedAdj × (CQ−1) — additive." },
+  { abbr: "Centered TPL", term: "Centered True Partisan Lean", desc: "TPL minus the 50-state median TPL. Shows how a state compares to the typical state, with systematic model bias removed." },
   { abbr: "CQ", term: "Candidate Quality Factor", desc: "<1.0 when the winning party had the quality advantage; >1.0 when the winner overcame a quality disadvantage. CQ = WQ × LQ." },
   { abbr: "FF", term: "Fundraising Factor", desc: "Adjusts margin based on fundraising advantage. 1.00 = no adjustment. Pending calibration." },
-  { abbr: "IF", term: "Incumbency Factor", desc: "Discounts margin attributable to incumbency advantage. Open seats = 1.00. Losing incumbents treated as 1.00." },
+  { abbr: "IF", term: "Incumbency Factor", desc: "Multiplier capturing seat-level incumbent effects (G/S/H/L races) or presidential approval (P races). For P races: IF = 1 + presMargin × k_pif × partySign. Open non-P seats = 1.00." },
   { abbr: "k", term: "Wave Scaling Constants", desc: "k_add = 0.35 (additive component), k_mult = 0.05 (multiplicative component). Both placeholders pending calibration." },
   { abbr: "NES", term: "National Environment Score", desc: "National partisan lean per cycle. Blended President+House popular vote (presidential years) or House alone (midterms). Positive = R-favored." },
-  { abbr: "NM", term: "Neutralized Margin", desc: "Adjusted Margin × (IF × CQ) + FF + PIF − WA. IF and CQ compound; FF, PIF, and WA contribute independently." },
+  { abbr: "NM", term: "Neutralized Margin", desc: "Adjusted Margin × (IF × CQ) + FF pts − WA. IF encodes incumbency (G/S/H/L) or presidential approval (P); all compound into CF." },
   { abbr: "PGSHL", term: "Race Type Codes", desc: "P = President, G = Governor, S = U.S. Senate, H = U.S. House, L = State Legislature." },
-  { abbr: "PIF", term: "Presidential Incumbent Factor", desc: "Adjusts margin based on whether the presidential incumbent's party affects down-ballot races. 1.00 = no adjustment. Pending calibration." },
-  { abbr: "Pre-TPL", term: "Pre-True Partisan Lean", desc: "The state's recency-weighted score before centering against the 50-state median." },
   { abbr: "S", term: "State Wave Sensitivity Coefficient", desc: "How much a state amplifies or dampens national swings, calculated from cycle-over-cycle state and national House-margin swing ratios." },
-  { abbr: "TPL", term: "True Partisan Lean", desc: "A state's neutral structural partisan lean, centered against the median of all 50 states." },
+  { abbr: "TPL", term: "True Partisan Lean", desc: "The state's neutral partisan composition — what a Generic R vs Generic D race with no wave would produce. Recency-weighted average of WRS scores." },
   { abbr: "WA", term: "Wave Adjustment", desc: "Hybrid point shift: 70% additive (NES × S × k_add) + 30% multiplicative (base × (1−WF)) converted to points. Positive = R wave stripped." },
   { abbr: "WRS", term: "Weighted Race Score", desc: "One year's TPL signal: the weighted average of NMs across all race types present that cycle." },
 ];
@@ -435,22 +465,19 @@ const FORMULA_PANELS: Record<string, { title: string; rows: { label: string; for
   "Adjusted ↗": {
     title: "Adjusted Margin (AM)",
     rows: [
-      { label: "Uncontested check", formula: "|Raw Margin| ≤ 65  →  Adjusted Margin = Raw Margin" },
-      { label: "Non-competitive", formula: "|Raw Margin| > 65  →  Adjusted Margin = 0.6 × Prior Contested + 0.4 × Prior Presidential", note: "Prior Contested = most recent prior result with |margin| ≤ 65 for the same seat. If either source is unavailable, the available source fills both weights." },
+      { label: "Uncontested check", formula: "|Raw Margin| < 50  →  Adjusted Margin = Raw Margin" },
+      { label: "Non-competitive", formula: "|Raw Margin| ≥ 50  →  Adjusted Margin = 0.6 × Prior Contested + 0.4 × Prior Presidential", note: "Prior Contested = most recent prior result with |margin| < 50 for the same seat. If either source is unavailable, the available source fills both weights." },
     ],
   },
   "IF ↗": {
     title: "Incumbency Factor (IF)",
     rows: [
-      { label: "Shown as", formula: "Multiplier — compounds with CQ into Candidate Factor" },
-      { label: "No incumbent / President", formula: "IF = 1.00" },
-      { label: "Incumbent won (H)", formula: "IF = 0.80" },
-      { label: "Incumbent won (S / Leg)", formula: "IF = 0.875" },
-      { label: "Incumbent won (G)", formula: "IF = 0.835" },
-      { label: "Challenger won (H)", formula: "IF = 1.25" },
-      { label: "Challenger won (S / Leg)", formula: "IF = 1.14" },
-      { label: "Challenger won (G)", formula: "IF = 1.20" },
-      { label: "Interpretation", formula: "< 1.00 = incumbent advantage discounted. > 1.00 = challenger upset inflates signal.", note: "President is excluded — a separate popularity-based metric is planned." },
+      { label: "Shown as", formula: "Multiplier — compounds with CQ into Candidate Factor (CF)" },
+      { label: "G / S / H / L — incumbent won", formula: "Open seat = 1.00 · H = 0.80 · S/Leg = 0.875 · G = 0.835" },
+      { label: "G / S / H / L — challenger won", formula: "H = 1.25 · S/Leg = 1.14 · G = 1.20" },
+      { label: "P — formula", formula: "IF = 1 + presMargin × k_pif × partySign   (k_pif = 0.005, placeholder)", note: "presMargin = approval − disapproval on election day. partySign: D president = +1, R president = −1." },
+      { label: "P — examples", formula: "2024: D incumbent, presMargin = −15.2  →  IF = 0.924     2020: R incumbent, presMargin = −6.6  →  IF = 1.033" },
+      { label: "Interpretation", formula: "< 1.00 = advantage discounted from margin. > 1.00 = signal inflated (challenger upset or approval drag)." },
     ],
   },
   "CQ ↗": {
@@ -467,27 +494,19 @@ const FORMULA_PANELS: Record<string, { title: string; rows: { label: string; for
   "CF ↗": {
     title: "Candidate Factor (CF)",
     rows: [
-      { label: "Formula", formula: "CF = Adjusted Margin × (IF × CQ − 1)" },
-      { label: "Interpretation", formula: "The combined point contribution of incumbency and candidate quality — the two compound rather than add." },
-      { label: "Default (no incumbent, Generic/Generic)", formula: "IF=1.00, CQ=1.00  →  1.00×1.00−1 = 0  →  0 pts" },
-      { label: "Example: R incumbent won, Elite/Generic", formula: "IF=0.80, CQ=0.75  →  0.80×0.75−1 = −0.40  →  CF = Adj × −0.40" },
-      { label: "Example: Challenger won, Weak/Strong", formula: "IF=1.25, CQ=1.12×1.12  →  1.25×1.2544−1 = +0.568  →  CF = Adj × +0.568" },
+      { label: "G / S / H / L formula", formula: "CF = Adjusted × (IF × CQ − 1)   [multiplicative: incumbent IS the candidate]" },
+      { label: "P formula", formula: "CF = Adjusted × (IF − 1) + cappedAdj × (CQ − 1)   [additive; CQ capped at ±15 pts margin]", note: "CQ is capped because structural blowouts are driven by partisan lean, not candidate quality." },
+      { label: "Default (open seat, Generic/Generic)", formula: "IF=1.00, CQ=1.00  →  CF = 0 pts" },
+      { label: "Example: R incumbent won, Elite/Generic (non-P)", formula: "IF=0.80, CQ=0.75  →  0.80×0.75−1 = −0.40  →  CF = Adj × −0.40" },
+      { label: "Example: P 2024 (Strong/Weak, D pres. approval −15.2)", formula: "IF=0.924, CQ=0.66  →  CF = Adj×(−0.076) + Adj×(−0.34)  →  CF = Adj × −0.416" },
     ],
   },
   "FF ↗": {
     title: "Fundraising Factor (FF)",
     rows: [
-      { label: "Formula", formula: "FF = Adjusted Margin × (FF − 1)" },
-      { label: "Default", formula: "FF = 1.00  →  FF = 0  (not yet calibrated)" },
+      { label: "Formula", formula: "FF pts = Adjusted × (FF − 1)" },
+      { label: "Default", formula: "FF = 1.00  →  0 pts  (not yet calibrated)" },
       { label: "Interpretation", formula: "Positive FF = fundraising advantage amplifies signal. Negative = disadvantage suppresses it.", note: "FF values pending calibration from campaign finance data." },
-    ],
-  },
-  "PIF ↗": {
-    title: "Presidential Incumbent Factor (PIF)",
-    rows: [
-      { label: "Formula", formula: "PIF = Adjusted Margin × (PIF − 1)" },
-      { label: "Default", formula: "PIF = 1.00  →  PIF = 0  (not yet calibrated)" },
-      { label: "Interpretation", formula: "Captures down-ballot drag or boost from the presidential incumbent's party approval.", note: "PIF values pending calibration." },
     ],
   },
   "WA ↗": {
@@ -504,10 +523,10 @@ const FORMULA_PANELS: Record<string, { title: string; rows: { label: string; for
   "NM ↗": {
     title: "Neutralized Margin (NM)",
     rows: [
-      { label: "Formula", formula: "NM = Adjusted Margin × (IF × CQ) + FF + PIF − WA" },
-      { label: "Additive view", formula: "NM = Adjusted Margin + CF + FF + PIF − WA" },
-      { label: "Pipeline", formula: "Raw → Adjusted → ×(IF×CQ) → +FF → +PIF → −WA → NM" },
-      { label: "Note", formula: "IF and CQ compound with each other (multiplicative). FF, PIF, and WA contribute independently (additive)." },
+      { label: "G/S/H/L formula", formula: "NM = Adjusted × (IF × CQ) + FF pts − WA" },
+      { label: "P formula", formula: "NM = Adjusted + CF + FF pts − WA   where CF = Adjusted×(IF−1) + cappedAdj×(CQ−1)" },
+      { label: "Both views", formula: "NM = Adjusted + CF + FF pts − WA" },
+      { label: "Note", formula: "For P races, IF (presidential approval) and CQ (candidate quality) are independent effects — they add into CF rather than compound. For all other races they multiply." },
       { label: "Purpose", formula: "NM is the stripped partisan signal: what the race result would look like without incumbency, candidate quality, or national wave effects." },
     ],
   },
@@ -520,7 +539,6 @@ interface ComputedRace extends RaceStub {
   IF: number;
   candidateFactor_pts: number | null;
   FF_pts: number | null;
-  PIF_pts: number | null;
   adjustedMargin: number | null;
   competitivenessAdjusted: boolean;
   priorContestedMargin: number | null;
@@ -542,7 +560,7 @@ interface YearAggregation {
 interface StateModelCalculation {
   races: ComputedRace[];
   yearAggregations: YearAggregation[];
-  preTpl: number;
+  tpl: number;
 }
 
 function calculateStateModel(
@@ -566,10 +584,26 @@ function calculateStateModel(
         ? null
         : computeCompetitivenessAdjustment(rawMargin, stub, stateAbbr);
     const adjustedMargin = competitiveness?.adjustedMargin ?? null;
-    const IF = computeIF(stub.raceType, stub.incumbent, rawMargin);
-    const candidateFactor_pts = adjustedMargin != null ? adjustedMargin * (IF * stub.CQ - 1) : null;
+    let IF: number;
+    if (stub.raceType === "P") {
+      const pifRow = popVoteData.find((r) => r.type === "President" && r.year === stub.year);
+      IF = pifRow
+        ? 1 + pifRow.presMargin * G.k_pif * (presIncParty(pifRow.presInc) === "dem" ? 1 : -1)
+        : 1.00;
+    } else {
+      IF = computeIF(stub.raceType, stub.incumbent, rawMargin);
+    }
+    // P races: IF (approval) and CQ (candidate quality) are independent → additive, CQ capped
+    // Non-P races: incumbent IS candidate → IF and CQ compound multiplicatively
+    const cappedAdj = adjustedMargin != null
+      ? Math.sign(adjustedMargin) * Math.min(Math.abs(adjustedMargin), G.CQ_MARGIN_CAP)
+      : null;
+    const candidateFactor_pts = adjustedMargin != null
+      ? stub.raceType === "P"
+        ? adjustedMargin * (IF - 1) + (cappedAdj ?? 0) * (stub.CQ - 1)
+        : adjustedMargin * (IF * stub.CQ - 1)
+      : null;
     const FF_pts = adjustedMargin != null ? adjustedMargin * (stub.FF - 1) : null;
-    const PIF_pts = adjustedMargin != null ? adjustedMargin * (stub.PIF - 1) : null;
     let WA = 0;
     let wfCapped = false;
     if (adjustedMargin != null && S != null && NES != null) {
@@ -581,7 +615,9 @@ function calculateStateModel(
     }
 
     const NM = adjustedMargin != null
-      ? adjustedMargin * IF * stub.CQ + (FF_pts ?? 0) + (PIF_pts ?? 0) - WA
+      ? stub.raceType === "P"
+        ? adjustedMargin + (candidateFactor_pts ?? 0) + (FF_pts ?? 0) - WA
+        : adjustedMargin * IF * stub.CQ + (FF_pts ?? 0) - WA
       : null;
     return {
       ...stub,
@@ -589,7 +625,6 @@ function calculateStateModel(
       IF,
       candidateFactor_pts,
       FF_pts,
-      PIF_pts,
       adjustedMargin,
       competitivenessAdjusted: competitiveness?.adjusted ?? false,
       priorContestedMargin: competitiveness?.priorContestedMargin ?? null,
@@ -628,26 +663,93 @@ function calculateStateModel(
     return { year, racesPresent, redistributedWeights, typeNMs, WRS };
   });
 
-  const preTpl = yearAggregations.reduce(
+  const tpl = yearAggregations.reduce(
     (sum, aggregation) =>
       sum + (G.YEAR_WEIGHTS[aggregation.year] ?? 0) * aggregation.WRS,
     0
   );
 
-  return { races, yearAggregations, preTpl };
+  return { races, yearAggregations, tpl };
+}
+
+// ── District TPL types ────────────────────────────────────────────────────────
+
+interface DistrictComputedRace {
+  year: number;
+  rawMargin: number;
+  IF: number;
+  wqTier: CQTier;
+  lqTier: CQTier;
+  CQ: number;
+  candidateFactor_pts: number;
+  FF_pts: number;
+  NM: number;
+}
+
+interface DistrictModelCalculation {
+  races: DistrictComputedRace[];
+  tpl: number;
+}
+
+// ── District TPL calculation ──────────────────────────────────────────────────
+
+function calculateDistrictModel(districtId: string): DistrictModelCalculation {
+  const d = districtPresidentialData[districtId];
+  if (!d) return { races: [], tpl: 0 };
+
+  const marginsById: Record<number, number> = {
+    2016: d.pres16Margin,
+    2020: d.pres20Margin,
+    2024: d.pres24Margin,
+  };
+
+  const races: DistrictComputedRace[] = G.DISTRICT_YEARS.map((year) => {
+    const rawMargin = marginsById[year];
+    const pifRow = popVoteData.find((r) => r.type === "President" && r.year === year);
+    const IF = pifRow
+      ? 1 + pifRow.presMargin * G.k_pif * (presIncParty(pifRow.presInc) === "dem" ? 1 : -1)
+      : 1.00;
+    const presBase = PRESIDENTIAL_INPUTS_BY_YEAR[year];
+    const wqTier: CQTier = presBase?.wqTier ?? "Generic";
+    const lqTier: CQTier = presBase?.lqTier ?? "Generic";
+    const CQ = WQ_VALUES[wqTier] * LQ_VALUES[lqTier];
+    const cappedAdj = Math.sign(rawMargin) * Math.min(Math.abs(rawMargin), G.CQ_MARGIN_CAP);
+    const candidateFactor_pts = rawMargin * (IF - 1) + cappedAdj * (CQ - 1);
+    const FF_pts = 0;
+    const NM = rawMargin + candidateFactor_pts + FF_pts;
+    return { year, rawMargin, IF, wqTier, lqTier, CQ, candidateFactor_pts, FF_pts, NM };
+  });
+
+  const tpl = races.reduce(
+    (sum, r) => sum + (G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0) * r.NM,
+    0
+  );
+  return { races, tpl };
 }
 
 // ── Component ────────────────────────────────────────────────────────────────
 
 export default function TplModelPage() {
-  const [selectedAbbr, setSelectedAbbr] = useState("IA");
+  const [selectedAbbr, setSelectedAbbr] = useState(statesData[0].abbr);
   const [raceFilter, setRaceFilter] = useState<string>("All");
   const [yearFilter, setYearFilter] = useState<string>("All");
   const [showGlossary, setShowGlossary] = useState(false);
   const [formulaOpen, setFormulaOpen] = useState<string | null>(null);
-  const [showAllStates, setShowAllStates] = useState(false);
-  const [allStatesSort, setAllStatesSort] = useState<"tpl" | "preTpl" | "absTpl" | "name">("tpl");
+  const [allStatesSort, setAllStatesSort] = useState<"centeredTpl" | "tpl" | "absCenteredTpl" | "name">("centeredTpl");
   const [allStatesSortDir, setAllStatesSortDir] = useState<"asc" | "desc">("asc");
+
+  // Sub-tab state
+  const [activeSubTab, setActiveSubTab] = useState<"state" | "district" | "table" | "districtTable">("state");
+
+  // District TPL state
+  const initialDistrictStateAbbr = Object.keys(DISTRICTS_BY_STATE).sort()[0];
+  const [selectedDistrictStateAbbr, setSelectedDistrictStateAbbr] = useState(initialDistrictStateAbbr);
+  const [selectedDistrictId, setSelectedDistrictId] = useState(
+    () => DISTRICTS_BY_STATE[initialDistrictStateAbbr]?.[0]?.id ?? ""
+  );
+  const [showAllDistricts, setShowAllDistricts] = useState(false);
+  const [allDistrictsSort, setAllDistrictsSort] = useState<"centeredTpl" | "tpl" | "absCenteredTpl" | "district">("centeredTpl");
+  const [allDistrictsSortDir, setAllDistrictsSortDir] = useState<"asc" | "desc">("asc");
 
   // Derive full state name from abbreviation
   const selectedStateName = useMemo(
@@ -664,38 +766,38 @@ export default function TplModelPage() {
   );
   const allRaces = selectedCalculation.races;
   const yearAggregations = selectedCalculation.yearAggregations;
-  const preTpl = selectedCalculation.preTpl;
+  const tpl = selectedCalculation.tpl;
 
   const nationalTpl = useMemo(() => {
     const stateScores = statesData.map((state) => ({
       ...state,
-      preTpl: calculateStateModel(state.abbr, state.name).preTpl,
+      tpl: calculateStateModel(state.abbr, state.name).tpl,
     }));
-    const sortedScores = stateScores.map((state) => state.preTpl).sort((a, b) => a - b);
+    const sortedScores = stateScores.map((state) => state.tpl).sort((a, b) => a - b);
     const midpoint = sortedScores.length / 2;
-    const medianPreTpl =
+    const medianTpl =
       sortedScores.length % 2 === 0
         ? (sortedScores[midpoint - 1] + sortedScores[midpoint]) / 2
         : sortedScores[Math.floor(midpoint)];
 
-    return { stateScores, medianPreTpl };
+    return { stateScores, medianTpl };
   }, []);
 
-  const finalTpl = preTpl - nationalTpl.medianPreTpl;
+  const centeredTpl = tpl - nationalTpl.medianTpl;
 
   const allStateRows = useMemo(() => {
     const rows = nationalTpl.stateScores.map((s) => ({
       abbr: s.abbr,
       name: s.name,
-      preTpl: s.preTpl,
-      tpl: s.preTpl - nationalTpl.medianPreTpl,
+      tpl: s.tpl,
+      centeredTpl: s.tpl - nationalTpl.medianTpl,
     }));
     return [...rows].sort((a, b) => {
       if (allStatesSort === "name") {
         return allStatesSortDir === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
       }
-      const valA = allStatesSort === "absTpl" ? Math.abs(a.tpl) : allStatesSort === "tpl" ? a.tpl : a.preTpl;
-      const valB = allStatesSort === "absTpl" ? Math.abs(b.tpl) : allStatesSort === "tpl" ? b.tpl : b.preTpl;
+      const valA = allStatesSort === "absCenteredTpl" ? Math.abs(a.centeredTpl) : allStatesSort === "centeredTpl" ? a.centeredTpl : a.tpl;
+      const valB = allStatesSort === "absCenteredTpl" ? Math.abs(b.centeredTpl) : allStatesSort === "centeredTpl" ? b.centeredTpl : b.tpl;
       return allStatesSortDir === "asc" ? valA - valB : valB - valA;
     });
   }, [nationalTpl, allStatesSort, allStatesSortDir]);
@@ -720,101 +822,92 @@ export default function TplModelPage() {
   const anyWFCapped = filteredRaces.some((r) => r.WFCapped);
   const hasOddYears = allRaces.some((r) => !r.inAggregation);
 
+  // ── District TPL computed values ──────────────────────────────────────────
+
+  const selectedDistrictCalc = useMemo(
+    () => calculateDistrictModel(selectedDistrictId),
+    [selectedDistrictId]
+  );
+
+  const nationalDistrictTpl = useMemo(() => {
+    const districtScores = Object.entries(districtPresidentialData).map(([id, d]) => ({
+      id,
+      code: d.code,
+      state: d.state,
+      stateName: d.stateName,
+      tpl: calculateDistrictModel(id).tpl,
+    }));
+    const sorted = [...districtScores.map((d) => d.tpl)].sort((a, b) => a - b);
+    const mid = sorted.length / 2;
+    const medianTpl =
+      sorted.length % 2 === 0
+        ? (sorted[mid - 1] + sorted[mid]) / 2
+        : sorted[Math.floor(mid)];
+    return { districtScores, medianTpl };
+  }, []);
+
+  const centeredDistrictTpl = selectedDistrictCalc.tpl - nationalDistrictTpl.medianTpl;
+
+  const selectedDistrictData = districtPresidentialData[selectedDistrictId];
+
+  const allDistrictRows = useMemo(() => {
+    const rows = nationalDistrictTpl.districtScores.map((d) => ({
+      ...d,
+      centeredTpl: d.tpl - nationalDistrictTpl.medianTpl,
+    }));
+    return [...rows].sort((a, b) => {
+      if (allDistrictsSort === "district") {
+        return allDistrictsSortDir === "asc" ? a.code.localeCompare(b.code) : b.code.localeCompare(a.code);
+      }
+      const valA = allDistrictsSort === "absCenteredTpl" ? Math.abs(a.centeredTpl) : allDistrictsSort === "centeredTpl" ? a.centeredTpl : a.tpl;
+      const valB = allDistrictsSort === "absCenteredTpl" ? Math.abs(b.centeredTpl) : allDistrictsSort === "centeredTpl" ? b.centeredTpl : b.tpl;
+      return allDistrictsSortDir === "asc" ? valA - valB : valB - valA;
+    });
+  }, [nationalDistrictTpl, allDistrictsSort, allDistrictsSortDir]);
+
   // ── Render ───────────────────────────────────────────────────────────────
 
-  function handleSortClick(col: "tpl" | "preTpl" | "absTpl" | "name") {
+  function handleSortClick(col: "centeredTpl" | "tpl" | "absCenteredTpl" | "name") {
     if (allStatesSort === col) {
       setAllStatesSortDir((d) => (d === "asc" ? "desc" : "asc"));
     } else {
       setAllStatesSort(col);
-      setAllStatesSortDir(col === "absTpl" ? "desc" : "asc");
+      setAllStatesSortDir(col === "absCenteredTpl" ? "desc" : "asc");
+    }
+  }
+
+  function handleDistrictSortClick(col: "centeredTpl" | "tpl" | "absCenteredTpl" | "district") {
+    if (allDistrictsSort === col) {
+      setAllDistrictsSortDir((d) => (d === "asc" ? "desc" : "asc"));
+    } else {
+      setAllDistrictsSort(col);
+      setAllDistrictsSortDir(col === "absCenteredTpl" ? "desc" : "asc");
     }
   }
 
   return (
     <div className="mt-1 md:mt-2">
 
-      {/* ── All states toggle ── */}
-      <div className="mb-4">
-        <button
-          onClick={() => setShowAllStates((v) => !v)}
-          className="text-xs font-semibold px-3 py-1.5 rounded-lg"
-          style={{
-            background: showAllStates ? "var(--app-text-muted)" : "var(--app-panel)",
-            color: showAllStates ? "var(--app-bg)" : "var(--app-text-muted)",
-            border: "1px solid var(--app-border)",
-          }}
-        >
-          {showAllStates ? "▲ Hide all states" : "▼ All 50 states overview"}
-        </button>
-
-        {showAllStates && (
-          <div className="mt-3 rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-            <div className="overflow-x-auto">
-              <table className="w-full text-xs">
-                <thead>
-                  <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
-                    <th
-                      className="px-4 py-2.5 text-left text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none"
-                      style={{ color: allStatesSort === "name" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
-                      onClick={() => handleSortClick("name")}
-                    >
-                      State {allStatesSort === "name" ? (allStatesSortDir === "asc" ? "↑" : "↓") : "↕"}
-                    </th>
-                    {([
-                      ["Pre-TPL", "preTpl", "Before 50-state centering"],
-                      ["TPL", "tpl", "Final centered score"],
-                      ["|TPL| (even→partisan)", "absTpl", "Sort by how competitive or one-sided the state is"],
-                    ] as const).map(([label, col, tip]) => (
-                      <th
-                        key={col}
-                        title={tip}
-                        className="px-4 py-2.5 text-right text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap"
-                        style={{ color: allStatesSort === col ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
-                        onClick={() => handleSortClick(col)}
-                      >
-                        {label} {allStatesSort === col ? (allStatesSortDir === "asc" ? "↑" : "↓") : "↕"}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {allStateRows.map((s, i) => (
-                    <tr
-                      key={s.abbr}
-                      className="cursor-pointer"
-                      style={{
-                        background: s.abbr === selectedAbbr
-                          ? "var(--app-border)"
-                          : i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
-                        borderBottom: "1px solid var(--app-border)",
-                      }}
-                      onClick={() => { setSelectedAbbr(s.abbr); setShowAllStates(false); setRaceFilter("All"); setYearFilter("All"); }}
-                    >
-                      <td className="px-4 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>
-                        {s.name}
-                        <span className="ml-1.5 text-[10px] font-mono" style={{ color: "var(--app-text-very-muted)" }}>{s.abbr}</span>
-                      </td>
-                      <td className="px-4 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(s.preTpl) }}>
-                        {fmtMargin(s.preTpl)}
-                      </td>
-                      <td className="px-4 py-2 text-right tabular-nums font-bold" style={{ color: marginColor(s.tpl), background: marginBg(s.tpl) }}>
-                        {fmtMargin(s.tpl)}
-                      </td>
-                      <td className="px-4 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
-                        {Math.abs(s.tpl).toFixed(2)}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <div className="px-4 py-2 text-[10px]" style={{ borderTop: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-very-muted)" }}>
-              Click a row to open that state. 50-state median Pre-TPL = {fmtMargin(nationalTpl.medianPreTpl)}.
-            </div>
-          </div>
-        )}
+      {/* ── Sub-tab bar ── */}
+      <div className="flex flex-wrap gap-2 mb-5">
+        {(["state", "district", "table", "districtTable"] as const).map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveSubTab(tab)}
+            className="text-xs font-semibold px-3 py-1.5 rounded-lg"
+            style={{
+              background: activeSubTab === tab ? "var(--app-text-muted)" : "var(--app-panel)",
+              color: activeSubTab === tab ? "var(--app-bg)" : "var(--app-text-muted)",
+              border: "1px solid var(--app-border)",
+            }}
+          >
+            {tab === "state" ? "State TPL" : tab === "district" ? "District TPL" : tab === "districtTable" ? "District Table" : "Table"}
+          </button>
+        ))}
       </div>
+
+      {/* ── State TPL ── */}
+      {activeSubTab === "state" && (<>
 
       {/* ── State selector ── */}
       <div
@@ -878,7 +971,7 @@ export default function TplModelPage() {
           </div>
           {!hasS && (
             <div className="self-end text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-              Add this state's S to <code className="font-mono text-[11px]">tplModelData.ts</code> to enable WA.
+              Add this state&apos;s S to <code className="font-mono text-[11px]">tplModelData.ts</code> to enable WA.
             </div>
           )}
         </div>
@@ -942,9 +1035,9 @@ export default function TplModelPage() {
           Step 1 — Per-Race Calculations
         </h3>
         <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-          NM = Adjusted Margin × (IF × CQ) + FF + PIF − WA. IF and CQ compound; all others add independently. Margins greater than 65 points are first blended from 60% prior contested result and 40% prior presidential result.{" "}
+          NM = Adjusted Margin × (IF × CQ) + FF pts − WA. IF encodes seat incumbency for G/S/H/L races and presidential approval for P races; both compound with CQ into CF. Margins of 50 points or greater are first blended from 60% prior contested result and 40% prior presidential result.{" "}
           {!hasS && <span style={{ color: "var(--app-text-very-muted)" }}>WA = 0 (no S). </span>}
-          Raw margins are live from the site's data.
+          Raw margins are live from the site&apos;s data.
         </p>
 
         {/* Filters */}
@@ -993,7 +1086,7 @@ export default function TplModelPage() {
                   boxShadow: yearFilter === String(y) ? "inset 0 0 0 1px var(--app-border)" : "none",
                   opacity: G.YEARS.includes(y) ? 1 : 0.6,
                 }}
-                title={!G.YEARS.includes(y) ? "Odd-year race — not included in Pre-TPL aggregation" : undefined}
+                title={!G.YEARS.includes(y) ? "Odd-year race — not included in TPL aggregation" : undefined}
               >
                 {y}{!G.YEARS.includes(y) ? "*" : ""}
               </button>
@@ -1009,18 +1102,17 @@ export default function TplModelPage() {
                 <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
                   {[
                     ["Race", "Race type and name"],
-                    ["Year", "Election year. * = odd-year race, not yet included in Pre-TPL aggregation"],
+                    ["Year", "Election year. * = odd-year race, not yet included in TPL aggregation"],
                     ["Raw", "Raw Margin = repPct − demPct. Positive = R wins. Live from site data."],
-                    ["Adjusted ↗", "Adjusted Margin — raw margin unless |margin| > 65, then 60% prior contested + 40% prior presidential."],
+                    ["Adjusted ↗", "Adjusted Margin — raw margin unless |margin| ≥ 50, then 60% prior contested + 40% prior presidential."],
                     ["Incumbent", "Incumbent party marker or Open. State Legislature = -."],
-                    ["IF ↗", "Incumbency Factor multiplier. Compounds with CQ into CF."],
+                    ["IF ↗", "Incumbency Factor multiplier. For G/S/H/L: seat incumbency (0.80–1.25). For P: approval-based (1 + presMargin × k_pif × partySign). Compounds with CQ into CF."],
                     ["WQ / LQ", "Winning and losing candidate quality tiers. Generic/Generic = CQ of 1.00."],
                     ["CQ ↗", "Candidate Quality Factor = WQ × LQ. Compounds with IF into CF."],
                     ["CF ↗", "Candidate Factor = Adjusted Margin × (IF × CQ − 1). Combined compounded signal."],
                     ["FF ↗", "Fundraising Factor pts = AM × (FF − 1). 0 until calibrated."],
-                    ["PIF ↗", "Presidential Incumbent Factor pts = AM × (PIF − 1). 0 until calibrated."],
                     ["WA ↗", "Wave Adjustment = NES × S × k. Subtracted from the sum. 0 if no S."],
-                    ["NM ↗", "Adjusted × (IF × CQ) + FF + PIF − WA."],
+                    ["NM ↗", "Adjusted × (IF × CQ) + FF pts − WA."],
                   ].map(([label, tip], ci) => {
                     const isClickable = label in FORMULA_PANELS;
                     return (
@@ -1028,7 +1120,7 @@ export default function TplModelPage() {
                         key={label}
                         title={isClickable ? `Click to see ${label} formula` : tip}
                         className={`px-2 py-2 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap text-left ${isClickable ? "cursor-pointer select-none" : ""}`}
-                        style={{ color: ci === 12 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                        style={{ color: ci === 11 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
                         onClick={isClickable ? () => setFormulaOpen(label) : undefined}
                       >
                         {label}{isClickable && <span className="ml-0.5 opacity-50">ⓘ</span>}
@@ -1070,7 +1162,7 @@ export default function TplModelPage() {
                       title={
                         r.competitivenessAdjusted
                           ? `60% prior result (${fmtMargin(r.priorContestedMargin)}) + 40% prior presidential result (${fmtMargin(r.presidentialBaselineMargin)})`
-                          : "Raw margin is 65 points or less; no competitiveness adjustment"
+                          : "Raw margin is under 50 points; no competitiveness adjustment"
                       }
                     >
                       {fmtMargin(r.adjustedMargin)}
@@ -1102,9 +1194,6 @@ export default function TplModelPage() {
                     <td className="px-2 py-2 text-left tabular-nums font-mono" style={{ color: r.FF_pts != null && r.FF_pts !== 0 ? marginColor(r.FF_pts) : "var(--app-text-very-muted)" }}>
                       {r.FF_pts != null && r.FF_pts !== 0 ? (r.FF_pts > 0 ? "+" : "") + r.FF_pts.toFixed(2) : "—"}
                     </td>
-                    <td className="px-2 py-2 text-left tabular-nums font-mono" style={{ color: r.PIF_pts != null && r.PIF_pts !== 0 ? marginColor(r.PIF_pts) : "var(--app-text-very-muted)" }}>
-                      {r.PIF_pts != null && r.PIF_pts !== 0 ? (r.PIF_pts > 0 ? "+" : "") + r.PIF_pts.toFixed(2) : "—"}
-                    </td>
                     <td className="px-2 py-2 text-left tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
                       {r.WA !== 0 ? (-r.WA > 0 ? "+" : "") + (-r.WA).toFixed(2) : "—"}
                       {r.WFCapped && <span style={{ color: "var(--app-text-very-muted)" }}>†</span>}
@@ -1119,7 +1208,7 @@ export default function TplModelPage() {
                 ))}
                 {filteredRaces.length === 0 && (
                   <tr>
-                    <td colSpan={13} className="px-4 py-6 text-center text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+                    <td colSpan={12} className="px-4 py-6 text-center text-xs" style={{ color: "var(--app-text-very-muted)" }}>
                       No races match the selected filters.
                     </td>
                   </tr>
@@ -1129,10 +1218,10 @@ export default function TplModelPage() {
           </div>
           <div className="px-4 py-2 flex flex-wrap gap-x-5 text-[10px]" style={{ borderTop: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-very-muted)" }}>
             {filteredRaces.some((r) => r.competitivenessAdjusted) && (
-              <span>‡ Raw margin was greater than 65 points and replaced by the 60/40 competitiveness blend.</span>
+              <span>‡ Raw margin was 50 points or greater and replaced by the 60/40 competitiveness blend.</span>
             )}
             {anyWFCapped && <span>† Multiplicative WF component was capped at the [0.6, 1.6] bound.</span>}
-            {hasOddYears && <span>* Odd-year race (NJ/VA governor elections). Shown in table but not yet included in Pre-TPL aggregation.</span>}
+            {hasOddYears && <span>* Odd-year race (NJ/VA governor elections). Shown in table but not yet included in TPL aggregation.</span>}
             {!hasS && <span>WA = 0 for all races (no S on record for {selectedStateName}).</span>}
           </div>
         </div>
@@ -1243,7 +1332,7 @@ export default function TplModelPage() {
           Step 3 — Final Calculation
         </h3>
         <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-          Pre-TPL = recency-weighted average of annual WRS scores. Final TPL centers that score against the 50-state median.
+          TPL = recency-weighted average of annual WRS scores — the state&apos;s neutral partisan composition. Centered TPL subtracts the 50-state median for cross-state comparison.
         </p>
 
         <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
@@ -1251,7 +1340,7 @@ export default function TplModelPage() {
           <div className="px-5 py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
             <p className="text-[10px] font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--app-text-very-muted)" }}>Formula</p>
             <div className="rounded-lg px-4 py-3 font-mono text-xs leading-relaxed" style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}>
-              <div style={{ color: "var(--app-text-muted)" }}>Pre-TPL =</div>
+              <div style={{ color: "var(--app-text-muted)" }}>TPL =</div>
               {yearAggregations.filter((a) => a.racesPresent.length > 0).map((agg, i) => {
                 const w = G.YEAR_WEIGHTS[agg.year] ?? 0;
                 return (
@@ -1269,15 +1358,15 @@ export default function TplModelPage() {
               {yearAggregations.every((a) => a.racesPresent.length === 0) && (
                 <div style={{ color: "var(--app-text-very-muted)" }} className="ml-4">No data available for this state</div>
               )}
-              <div className="mt-2" style={{ color: "var(--app-text-muted)" }}>Final TPL =</div>
+              <div className="mt-2" style={{ color: "var(--app-text-muted)" }}>Centered TPL =</div>
               <div className="ml-4">
-                <span style={{ color: marginColor(preTpl) }}>{fmtMargin(preTpl)}</span>
+                <span style={{ color: marginColor(tpl) }}>{fmtMargin(tpl)}</span>
                 <span style={{ color: "var(--app-text-very-muted)" }}> − median </span>
-                <span style={{ color: marginColor(nationalTpl.medianPreTpl) }}>
-                  {fmtMargin(nationalTpl.medianPreTpl)}
+                <span style={{ color: marginColor(nationalTpl.medianTpl) }}>
+                  {fmtMargin(nationalTpl.medianTpl)}
                 </span>
                 <span style={{ color: "var(--app-text-very-muted)" }}> = </span>
-                <span style={{ color: marginColor(finalTpl) }}>{fmtMargin(finalTpl)}</span>
+                <span style={{ color: marginColor(centeredTpl) }}>{fmtMargin(centeredTpl)}</span>
               </div>
             </div>
           </div>
@@ -1289,47 +1378,47 @@ export default function TplModelPage() {
                 className="flex flex-col items-center justify-center py-8 px-4"
                 style={{
                   borderRight: "1px solid var(--app-border)",
-                  background: preTpl >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)",
+                  background: centeredTpl >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)",
                 }}
               >
                 <div
                   className="text-[10px] font-bold uppercase tracking-widest mb-2 text-center"
-                  style={{ color: preTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
+                  style={{ color: centeredTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
                 >
-                  Pre-TPL
+                  {selectedStateName} Centered TPL
                 </div>
                 <div
                   className="text-4xl font-bold tabular-nums leading-none"
-                  style={{ color: preTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
+                  style={{ color: centeredTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
                 >
-                  {Math.abs(preTpl) < 0.05
+                  {Math.abs(centeredTpl) < 0.05
                     ? "EVEN"
-                    : `${preTpl >= 0 ? "R" : "D"}+${Math.abs(preTpl).toFixed(1)}`}
+                    : `${centeredTpl >= 0 ? "R" : "D"}+${Math.abs(centeredTpl).toFixed(1)}`}
                 </div>
                 <div className="text-[10px] mt-2" style={{ color: "var(--app-text-muted)" }}>
-                  Before centering
+                  vs. median state
                 </div>
               </div>
               <div
                 className="flex flex-col items-center justify-center py-8 px-4"
-                style={{ background: finalTpl >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)" }}
+                style={{ background: tpl >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)" }}
               >
                 <div
                   className="text-[10px] font-bold uppercase tracking-widest mb-2 text-center"
-                  style={{ color: finalTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
+                  style={{ color: tpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
                 >
                   {selectedStateName} TPL
                 </div>
                 <div
                   className="text-4xl font-bold tabular-nums leading-none"
-                  style={{ color: finalTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
+                  style={{ color: tpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}
                 >
-                  {Math.abs(finalTpl) < 0.05
+                  {Math.abs(tpl) < 0.05
                     ? "EVEN"
-                    : `${finalTpl >= 0 ? "R" : "D"}+${Math.abs(finalTpl).toFixed(1)}`}
+                    : `${tpl >= 0 ? "R" : "D"}+${Math.abs(tpl).toFixed(1)}`}
                 </div>
                 <div className="text-[10px] mt-2" style={{ color: "var(--app-text-muted)" }}>
-                  Provisional centered score
+                  Neutral partisan lean
                 </div>
               </div>
             </div>
@@ -1337,14 +1426,14 @@ export default function TplModelPage() {
             <div className="flex-1 px-5 py-5 flex flex-col gap-3 text-xs leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
               <div>
                 <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>50-state centering: </span>
-                The median Pre-TPL is {fmtMargin(nationalTpl.medianPreTpl)}. Final TPL subtracts this
-                common baseline so the median state is centered at EVEN.
+                The 50-state median TPL is {fmtMargin(nationalTpl.medianTpl)}. Centered TPL subtracts this
+                common baseline so the median state sits at EVEN.
               </div>
               {!hasS && (
                 <div style={{ color: "var(--app-text-very-muted)" }}>
                   <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>WA not active: </span>
-                  No S on record for {selectedStateName}. WA = 0 for all races, so NM = Adjusted Margin × (IF × CQ) + FF + PIF.
-                  Add <code className="font-mono">"{selectedAbbr}": {"{ S: X.XX }"}</code> to{" "}
+                  No S on record for {selectedStateName}. WA = 0 for all races, so NM = Adjusted Margin × (IF × CQ) + FF pts.
+                  Add <code className="font-mono">&quot;{selectedAbbr}&quot;: {"{ S: X.XX }"}</code> to{" "}
                   <code className="font-mono">STATE_MODEL_CONSTANTS</code> in{" "}
                   <code className="font-mono">tplModelData.ts</code> to enable it.
                 </div>
@@ -1352,19 +1441,486 @@ export default function TplModelPage() {
               {STATE_RACE_INPUTS[selectedAbbr] == null && (
                 <div style={{ color: "var(--app-text-very-muted)" }}>
                   <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>All factors = 1.00: </span>
-                  No per-race IF/CQ inputs have been entered for this state yet. Its centered TPL uses
-                  live raw margins and WF, but remains a provisional baseline rather than a fully calibrated estimate.
+                  No per-race IF/CQ inputs have been entered for this state yet. Its TPL and Centered TPL use
+                  live raw margins and WA, but remain provisional baselines rather than fully calibrated estimates.
                 </div>
               )}
               <div>
                 <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>Placeholder factors: </span>
-                FF and PIF are 1.00 for every state. NM recalculates automatically
-                as inputs are filled in.
+                FF is 0 for every state. IF for presidential races is auto-computed from incumbent approval (k_pif = 0.005). NM recalculates automatically as inputs are filled in.
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      </>)}
+
+      {/* ── District TPL ── */}
+      {activeSubTab === "district" && (
+        <>
+          {/* State + District selectors */}
+          <div className="mb-5 flex flex-col sm:flex-row sm:items-center gap-3 rounded-xl px-4 py-4"
+            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
+            <div>
+              <div className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--app-text-very-muted)" }}>State</div>
+              <select
+                value={selectedDistrictStateAbbr}
+                onChange={(e) => {
+                  const abbr = e.target.value;
+                  setSelectedDistrictStateAbbr(abbr);
+                  const first = DISTRICTS_BY_STATE[abbr]?.[0]?.id ?? "";
+                  setSelectedDistrictId(first);
+                }}
+                className="rounded-lg px-3 py-2 text-sm font-semibold cursor-pointer"
+                style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)", minWidth: 180 }}
+              >
+                {Object.keys(DISTRICTS_BY_STATE).sort().map((abbr) => {
+                  const name = statesData.find((s) => s.abbr === abbr)?.name ?? abbr;
+                  return <option key={abbr} value={abbr}>{name}</option>;
+                })}
+              </select>
+            </div>
+            <div>
+              <div className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--app-text-very-muted)" }}>District</div>
+              <select
+                value={selectedDistrictId}
+                onChange={(e) => setSelectedDistrictId(e.target.value)}
+                className="rounded-lg px-3 py-2 text-sm font-semibold cursor-pointer"
+                style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)", minWidth: 120 }}
+              >
+                {(DISTRICTS_BY_STATE[selectedDistrictStateAbbr] ?? []).map((dist) => (
+                  <option key={dist.id} value={dist.id}>{dist.code}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          {/* All districts toggle */}
+          <div className="mb-4">
+            <button
+              onClick={() => setShowAllDistricts((v) => !v)}
+              className="text-xs font-semibold px-3 py-1.5 rounded-lg"
+              style={{
+                background: showAllDistricts ? "var(--app-text-muted)" : "var(--app-panel)",
+                color: showAllDistricts ? "var(--app-bg)" : "var(--app-text-muted)",
+                border: "1px solid var(--app-border)",
+              }}
+            >
+              {showAllDistricts ? "▲ Hide all districts" : "▼ All 435 districts overview"}
+            </button>
+            {showAllDistricts && (
+              <div className="mt-3 rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-xs">
+                    <thead>
+                      <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
+                        <th
+                          className="px-4 py-2.5 text-left text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none"
+                          style={{ color: allDistrictsSort === "district" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                          onClick={() => handleDistrictSortClick("district")}
+                        >
+                          District {allDistrictsSort === "district" ? (allDistrictsSortDir === "asc" ? "↑" : "↓") : "↕"}
+                        </th>
+                        {([
+                          ["Centered District TPL", "centeredTpl", "District TPL minus 435-district median"],
+                          ["District TPL", "tpl", "Neutral presidential lean — 2016/2020/2024 weighted average"],
+                          ["|Centered District TPL| (even→partisan)", "absCenteredTpl", "Sort by competitiveness"],
+                        ] as const).map(([label, col, tip]) => (
+                          <th
+                            key={col}
+                            title={tip}
+                            className="px-4 py-2.5 text-right text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap"
+                            style={{ color: allDistrictsSort === col ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                            onClick={() => handleDistrictSortClick(col)}
+                          >
+                            {label} {allDistrictsSort === col ? (allDistrictsSortDir === "asc" ? "↑" : "↓") : "↕"}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {allDistrictRows.map((d, i) => (
+                        <tr
+                          key={d.id}
+                          className="cursor-pointer"
+                          style={{
+                            background: d.id === selectedDistrictId
+                              ? "var(--app-border)"
+                              : i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
+                            borderBottom: "1px solid var(--app-border)",
+                          }}
+                          onClick={() => {
+                            setSelectedDistrictStateAbbr(d.state);
+                            setSelectedDistrictId(d.id);
+                            setShowAllDistricts(false);
+                          }}
+                        >
+                          <td className="px-4 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                            {d.code}
+                            <span className="ml-1.5 text-[10px] font-mono" style={{ color: "var(--app-text-very-muted)" }}>{d.stateName}</span>
+                          </td>
+                          <td className="px-4 py-2 text-right tabular-nums font-bold" style={{ color: marginColor(d.centeredTpl), background: marginBg(d.centeredTpl) }}>
+                            {fmtMargin(d.centeredTpl)}
+                          </td>
+                          <td className="px-4 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(d.tpl) }}>
+                            {fmtMargin(d.tpl)}
+                          </td>
+                          <td className="px-4 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
+                            {Math.abs(d.centeredTpl).toFixed(2)}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div className="px-4 py-2 text-[10px]" style={{ borderTop: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-very-muted)" }}>
+                  Click a row to open that district. 435-district median TPL = {fmtMargin(nationalDistrictTpl.medianTpl)}.
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Header */}
+          <div className="mb-5">
+            <h2 className="text-xl font-bold sm:text-2xl" style={{ color: "var(--app-text-primary)" }}>
+              District True Partisan Lean — {selectedDistrictData?.code ?? "—"}
+            </h2>
+            <p className="text-sm mt-1" style={{ color: "var(--app-text-muted)" }}>
+              Presidential results 2016–2024 reaggregated to 2026 boundaries · IF (presidential approval) · CQ (candidate quality)
+            </p>
+          </div>
+
+          {/* Step 1 — Race table */}
+          <div className="mb-7">
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
+              Step 1 — Per-Race Calculations
+            </h3>
+            <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
+              NM = Raw Margin + CF + FF pts. IF encodes presidential approval; CQ encodes candidate quality. No wave adjustment for district model.
+            </p>
+            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
+              <div className="overflow-x-auto">
+                <table className="w-full min-w-[500px] text-xs">
+                  <thead>
+                    <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
+                      {[
+                        ["Year", "Election year"],
+                        ["Raw", "Presidential two-party margin (R-positive). Reaggregated to 2026 boundaries."],
+                        ["IF", "Presidential approval IF = 1 + presMargin × k_pif × partySign"],
+                        ["WQ / LQ", "Winning and losing candidate quality tiers"],
+                        ["CQ", "Candidate Quality Factor = WQ × LQ"],
+                        ["CF", "Candidate Factor = Raw×(IF−1) + cappedRaw×(CQ−1)"],
+                        ["FF", "Fundraising Factor pts (0 — not yet calibrated)"],
+                        ["NM", "Neutralized Margin = Raw + CF + FF"],
+                      ].map(([label, tip], ci) => (
+                        <th
+                          key={label}
+                          title={tip}
+                          className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap text-left"
+                          style={{ color: ci === 7 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                        >
+                          {label}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {selectedDistrictCalc.races.map((r, i) => (
+                      <tr
+                        key={r.year}
+                        style={{
+                          background: i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
+                          borderBottom: "1px solid var(--app-border)",
+                        }}
+                      >
+                        <td className="px-2 py-2 tabular-nums font-semibold" style={{ color: "var(--app-text-primary)" }}>{r.year}</td>
+                        <td className="px-2 py-2 tabular-nums font-mono" style={{ color: marginColor(r.rawMargin) }}>
+                          {fmtMargin(r.rawMargin)}
+                        </td>
+                        <td className="px-2 py-2 tabular-nums font-mono" style={{ color: r.IF !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
+                          {r.IF.toFixed(3)}
+                        </td>
+                        <td className="px-2 py-2 text-[11px]" style={{ color: r.wqTier === "Generic" && r.lqTier === "Generic" ? "var(--app-text-very-muted)" : "var(--app-text-muted)" }}>
+                          {r.wqTier === "Generic" && r.lqTier === "Generic" ? "—" : `${r.wqTier} / ${r.lqTier}`}
+                        </td>
+                        <td className="px-2 py-2 tabular-nums font-mono" style={{ color: r.CQ !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
+                          {r.CQ.toFixed(4)}
+                        </td>
+                        <td className="px-2 py-2 tabular-nums font-semibold" style={{ color: r.candidateFactor_pts !== 0 ? marginColor(r.candidateFactor_pts) : "var(--app-text-very-muted)" }}>
+                          {r.candidateFactor_pts !== 0 ? (r.candidateFactor_pts > 0 ? "+" : "") + r.candidateFactor_pts.toFixed(2) : "—"}
+                        </td>
+                        <td className="px-2 py-2 tabular-nums font-mono" style={{ color: "var(--app-text-very-muted)" }}>—</td>
+                        <td className="px-2 py-2 tabular-nums font-bold" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>
+                          {fmtMargin(r.NM)}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 2 — Year aggregation */}
+          <div className="mb-7">
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
+              Step 2 — Year Aggregation
+            </h3>
+            <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
+              Weighted average of presidential NMs. Year weights: 2024 = 70% · 2020 = 20% · 2016 = 10%.
+            </p>
+            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs">
+                  <thead>
+                    <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
+                      {["Year", "Weight", "President NM", "Weighted"].map((label, ci) => (
+                        <th key={label} className="px-3 py-2 text-[10px] uppercase tracking-wider font-semibold text-left"
+                          style={{ color: ci === 3 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
+                          {label}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {selectedDistrictCalc.races.slice().reverse().map((r, i) => {
+                      const w = G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0;
+                      const weighted = w * r.NM;
+                      return (
+                        <tr key={r.year} style={{ background: i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)", borderBottom: "1px solid var(--app-border)" }}>
+                          <td className="px-3 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>{r.year}</td>
+                          <td className="px-3 py-2 font-mono" style={{ color: "var(--app-text-muted)" }}>{(w * 100).toFixed(0)}%</td>
+                          <td className="px-3 py-2 tabular-nums font-mono" style={{ color: marginColor(r.NM) }}>{fmtMargin(r.NM)}</td>
+                          <td className="px-3 py-2 tabular-nums font-bold" style={{ color: marginColor(weighted) }}>{fmtMargin(weighted)}</td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 3 — District TPL card */}
+          <div className="mb-7">
+            <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
+              Step 3 — Final Calculation
+            </h3>
+            <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
+              District TPL = weighted average of presidential NMs. Centered District TPL subtracts the 435-district median.
+            </p>
+            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
+              {/* Formula */}
+              <div className="px-5 py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
+                <p className="text-[10px] font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--app-text-very-muted)" }}>Formula</p>
+                <div className="rounded-lg px-4 py-3 font-mono text-xs leading-relaxed" style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}>
+                  <div style={{ color: "var(--app-text-muted)" }}>District TPL =</div>
+                  {selectedDistrictCalc.races.slice().reverse().map((r, i) => {
+                    const w = G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0;
+                    return (
+                      <div key={r.year} className="ml-4">
+                        <span style={{ color: "var(--app-text-very-muted)" }}>{i === 0 ? "  " : "+ "}</span>
+                        <span style={{ color: "var(--app-text-primary)" }}>{w.toFixed(2)}</span>
+                        <span style={{ color: "var(--app-text-very-muted)" }}> × </span>
+                        <span style={{ color: r.NM >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                          {r.NM >= 0 ? "R" : "D"}+{Math.abs(r.NM).toFixed(2)}
+                        </span>
+                        <span style={{ color: "var(--app-text-very-muted)" }}> ({r.year})</span>
+                      </div>
+                    );
+                  })}
+                  <div className="mt-2" style={{ color: "var(--app-text-muted)" }}>Centered District TPL =</div>
+                  <div className="ml-4">
+                    <span style={{ color: marginColor(selectedDistrictCalc.tpl) }}>{fmtMargin(selectedDistrictCalc.tpl)}</span>
+                    <span style={{ color: "var(--app-text-very-muted)" }}> − median </span>
+                    <span style={{ color: marginColor(nationalDistrictTpl.medianTpl) }}>{fmtMargin(nationalDistrictTpl.medianTpl)}</span>
+                    <span style={{ color: "var(--app-text-very-muted)" }}> = </span>
+                    <span style={{ color: marginColor(centeredDistrictTpl) }}>{fmtMargin(centeredDistrictTpl)}</span>
+                  </div>
+                </div>
+              </div>
+              {/* Cards */}
+              <div className="grid grid-cols-2" style={{ borderBottom: "1px solid var(--app-border)" }}>
+                <div className="flex flex-col items-center justify-center py-8 px-4"
+                  style={{ borderRight: "1px solid var(--app-border)", background: centeredDistrictTpl >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)" }}>
+                  <div className="text-[10px] font-bold uppercase tracking-widest mb-2 text-center"
+                    style={{ color: centeredDistrictTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                    {selectedDistrictData?.code ?? "—"} Centered
+                  </div>
+                  <div className="text-4xl font-bold tabular-nums leading-none"
+                    style={{ color: centeredDistrictTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                    {Math.abs(centeredDistrictTpl) < 0.05 ? "EVEN" : `${centeredDistrictTpl >= 0 ? "R" : "D"}+${Math.abs(centeredDistrictTpl).toFixed(1)}`}
+                  </div>
+                  <div className="text-[10px] mt-2" style={{ color: "var(--app-text-muted)" }}>vs. median district</div>
+                </div>
+                <div className="flex flex-col items-center justify-center py-8 px-4"
+                  style={{ background: selectedDistrictCalc.tpl >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)" }}>
+                  <div className="text-[10px] font-bold uppercase tracking-widest mb-2 text-center"
+                    style={{ color: selectedDistrictCalc.tpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                    {selectedDistrictData?.code ?? "—"} District TPL
+                  </div>
+                  <div className="text-4xl font-bold tabular-nums leading-none"
+                    style={{ color: selectedDistrictCalc.tpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                    {Math.abs(selectedDistrictCalc.tpl) < 0.05 ? "EVEN" : `${selectedDistrictCalc.tpl >= 0 ? "R" : "D"}+${Math.abs(selectedDistrictCalc.tpl).toFixed(1)}`}
+                  </div>
+                  <div className="text-[10px] mt-2" style={{ color: "var(--app-text-muted)" }}>Neutral partisan lean</div>
+                </div>
+              </div>
+              <div className="px-5 py-4 text-xs" style={{ color: "var(--app-text-muted)" }}>
+                <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>435-district centering: </span>
+                The median district TPL is {fmtMargin(nationalDistrictTpl.medianTpl)}. Centered District TPL subtracts this baseline.
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* ── Table ── */}
+      {activeSubTab === "table" && (
+        <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs">
+              <thead>
+                <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
+                  <th
+                    className="px-4 py-2.5 text-left text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none"
+                    style={{ color: allStatesSort === "name" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                    onClick={() => handleSortClick("name")}
+                  >
+                    State {allStatesSort === "name" ? (allStatesSortDir === "asc" ? "↑" : "↓") : "↕"}
+                  </th>
+                  {([
+                    ["Centered TPL", "centeredTpl", "TPL minus 50-state median"],
+                    ["TPL", "tpl", "Neutral partisan lean — Generic R vs Generic D with no wave"],
+                    ["|Centered TPL| (even→partisan)", "absCenteredTpl", "Sort by how competitive or one-sided the state is"],
+                  ] as const).map(([label, col, tip]) => (
+                    <th
+                      key={col}
+                      title={tip}
+                      className="px-4 py-2.5 text-right text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap"
+                      style={{ color: allStatesSort === col ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                      onClick={() => handleSortClick(col)}
+                    >
+                      {label} {allStatesSort === col ? (allStatesSortDir === "asc" ? "↑" : "↓") : "↕"}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {allStateRows.map((s, i) => (
+                  <tr
+                    key={s.abbr}
+                    className="cursor-pointer"
+                    style={{
+                      background: s.abbr === selectedAbbr ? "var(--app-border)" : i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
+                      borderBottom: "1px solid var(--app-border)",
+                    }}
+                    onClick={() => {
+                      setSelectedAbbr(s.abbr);
+                      setActiveSubTab("state");
+                      setRaceFilter("All");
+                      setYearFilter("All");
+                      window.scrollTo({ top: 0, behavior: "instant" });
+                    }}
+                  >
+                    <td className="px-4 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                      {s.name}
+                      <span className="ml-1.5 text-[10px] font-mono" style={{ color: "var(--app-text-very-muted)" }}>{s.abbr}</span>
+                    </td>
+                    <td className="px-4 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(s.centeredTpl) }}>
+                      {fmtMargin(s.centeredTpl)}
+                    </td>
+                    <td className="px-4 py-2 text-right tabular-nums font-bold" style={{ color: marginColor(s.tpl), background: marginBg(s.tpl) }}>
+                      {fmtMargin(s.tpl)}
+                    </td>
+                    <td className="px-4 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
+                      {Math.abs(s.centeredTpl).toFixed(2)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="px-4 py-2 text-[10px]" style={{ borderTop: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-very-muted)" }}>
+            Click a row to open that state in State TPL. 50-state median TPL = {fmtMargin(nationalTpl.medianTpl)}.
+          </div>
+        </div>
+      )}
+
+      {/* ── District Table ── */}
+      {activeSubTab === "districtTable" && (
+        <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs">
+              <thead>
+                <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
+                  <th
+                    className="px-4 py-2.5 text-left text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none"
+                    style={{ color: allDistrictsSort === "district" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                    onClick={() => handleDistrictSortClick("district")}
+                  >
+                    District {allDistrictsSort === "district" ? (allDistrictsSortDir === "asc" ? "↑" : "↓") : "↕"}
+                  </th>
+                  {([
+                    ["Centered District TPL", "centeredTpl", "District TPL minus 435-district median"],
+                    ["District TPL", "tpl", "Neutral presidential lean — 2016/2020/2024 weighted average"],
+                    ["|Centered District TPL| (even→partisan)", "absCenteredTpl", "Sort by competitiveness"],
+                  ] as const).map(([label, col, tip]) => (
+                    <th
+                      key={col}
+                      title={tip}
+                      className="px-4 py-2.5 text-right text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap"
+                      style={{ color: allDistrictsSort === col ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                      onClick={() => handleDistrictSortClick(col)}
+                    >
+                      {label} {allDistrictsSort === col ? (allDistrictsSortDir === "asc" ? "↑" : "↓") : "↕"}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {allDistrictRows.map((d, i) => (
+                  <tr
+                    key={d.id}
+                    className="cursor-pointer"
+                    style={{
+                      background: d.id === selectedDistrictId
+                        ? "var(--app-border)"
+                        : i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
+                      borderBottom: "1px solid var(--app-border)",
+                    }}
+                    onClick={() => {
+                      setSelectedDistrictStateAbbr(d.state);
+                      setSelectedDistrictId(d.id);
+                      setShowAllDistricts(false);
+                      setActiveSubTab("district");
+                      window.scrollTo({ top: 0, behavior: "instant" });
+                    }}
+                  >
+                    <td className="px-4 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                      {d.code}
+                      <span className="ml-1.5 text-[10px] font-mono" style={{ color: "var(--app-text-very-muted)" }}>{d.stateName}</span>
+                    </td>
+                    <td className="px-4 py-2 text-right tabular-nums font-bold" style={{ color: marginColor(d.centeredTpl), background: marginBg(d.centeredTpl) }}>
+                      {fmtMargin(d.centeredTpl)}
+                    </td>
+                    <td className="px-4 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(d.tpl) }}>
+                      {fmtMargin(d.tpl)}
+                    </td>
+                    <td className="px-4 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
+                      {Math.abs(d.centeredTpl).toFixed(2)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="px-4 py-2 text-[10px]" style={{ borderTop: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-very-muted)" }}>
+            Click a row to open that district in District TPL. 435-district median TPL = {fmtMargin(nationalDistrictTpl.medianTpl)}.
+          </div>
+        </div>
+      )}
 
       {/* ── S modal ── */}
       {formulaOpen === "S" && (() => {

@@ -35,7 +35,6 @@ export interface RaceModelInputs {
   wqTier?: CQTier;   // winning candidate quality tier (default: "Generic")
   lqTier?: CQTier;   // losing candidate quality tier  (default: "Generic")
   FF?: number;         // Fundraising Factor (default: 1.00 → 0 pts)
-  PIF?: number;        // Presidential Incumbent Factor (default: 1.00 → 0 pts)
 }
 
 // ── Global TPL model constants (shared across all states) ───────────────────
@@ -43,12 +42,16 @@ export interface RaceModelInputs {
 export const TPL_GLOBAL_CONSTANTS = {
   k_add: 0.35,  // Additive wave scaling: WA_add = NES × SWSC × k_add (placeholder, pending calibration)
   k_mult: 0.05, // Multiplicative wave scaling: WF = 1/(1 + NES × SWSC × k_mult × sign) (placeholder)
+  k_pif: 0.005, // Presidential IF scaling: IF = 1 + presMargin × k_pif × partySign for P-type races (placeholder)
+  CQ_MARGIN_CAP: 15, // Max margin CQ scales against — limits CQ's absolute effect in structural blowouts
+  DISTRICT_YEAR_WEIGHTS: { 2024: 0.70, 2020: 0.20, 2016: 0.10 } as Record<number, number>,
+  DISTRICT_YEARS: [2016, 2020, 2024] as number[],
   // NES = National Environment Score (positive = R-favored nationally)
   // Blended President+House popular vote (presidential years) or House alone (midterms)
   NES_BY_YEAR: { 2018: -7.1, 2020: -2.3, 2022: 4.2, 2024: 3.5 } as Record<number, number>,
   // Base race type weights before redistribution among present types
-  RACE_TYPE_WEIGHTS: { P: 0.25, S: 0.25, H: 0.30, L: 0.10, G: 0.10 } as Record<string, number>,
-  // Year weights (recency-decay). Only even election years are used in the Pre-TPL aggregation.
+  RACE_TYPE_WEIGHTS: { P: 0.30, S: 0.30, H: 0.30, L: 0.05, G: 0.05 } as Record<string, number>,
+  // Year weights (recency-decay). Only even election years are used in the TPL aggregation.
   // Odd-year governor races (NJ, VA: 2017, 2021, 2025) appear in the race table but not in aggregation yet.
   YEAR_WEIGHTS: { 2024: 0.40, 2022: 0.28, 2020: 0.20, 2018: 0.12 } as Record<number, number>,
   YEARS: [2018, 2020, 2022, 2024] as number[],
@@ -156,24 +159,9 @@ export const STATE_MODEL_CONSTANTS: Record<string, { S?: number }> =
     ])
   );
 
-// ── Iowa model constants (kept for backward compatibility) ──────────────────
-
-export const IOWA_MODEL_CONSTANTS = {
-  stateAbbr: "IA",
-  stateName: "Iowa",
-  S: STATE_MODEL_CONSTANTS.IA?.S ?? 1.43,
-  k_add: TPL_GLOBAL_CONSTANTS.k_add,
-  k_mult: TPL_GLOBAL_CONSTANTS.k_mult,
-  NES_BY_YEAR: TPL_GLOBAL_CONSTANTS.NES_BY_YEAR,
-  RACE_TYPE_WEIGHTS: TPL_GLOBAL_CONSTANTS.RACE_TYPE_WEIGHTS,
-  YEAR_WEIGHTS: TPL_GLOBAL_CONSTANTS.YEAR_WEIGHTS,
-  YEARS: TPL_GLOBAL_CONSTANTS.YEARS,
-};
-
 // ── Iowa per-race adjustment inputs (2018–2024) ─────────────────────────────
 // wqTier = winning candidate quality, lqTier = losing candidate quality.
 // Omitted tiers default to "Generic" → CQ = 1.00, no CF adjustment.
-// Derived from old CQFMatchup strings; parenthetical candidate names dropped.
 
 export const IOWA_RACE_INPUTS: RaceModelInputs[] = [
   // President (Generic/Generic → both default)
@@ -236,6 +224,14 @@ export const IOWA_RACE_INPUTS: RaceModelInputs[] = [
   { race: "State Legislature", raceType: "L", year: 2022 },
   { race: "State Legislature", raceType: "L", year: 2024 },
 ];
+
+// ── Global presidential race inputs by year ─────────────────────────────────
+// WQ/LQ tiers for presidential races that apply uniformly across all 50 states.
+// State-specific entries in STATE_RACE_INPUTS override these if present.
+
+export const PRESIDENTIAL_INPUTS_BY_YEAR: Record<number, Pick<RaceModelInputs, "wqTier" | "lqTier" | "FF">> = {
+  2024: { wqTier: "Strong", lqTier: "Weak" }, // Trump (Strong) / Harris (Weak)
+};
 
 // ── Per-state race inputs lookup ────────────────────────────────────────────
 // Maps stateAbbr → array of per-race model inputs with real IF/CQF values.
