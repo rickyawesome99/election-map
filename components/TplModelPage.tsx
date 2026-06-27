@@ -874,6 +874,7 @@ function TplStateMap({ rows, onSelect }: { rows: TplMapRow[]; onSelect: (abbr: s
   const rowByName = Object.fromEntries(rows.map((r) => [r.name, r]));
 
   return (
+    <>
     <div
       className="relative w-full rounded-xl overflow-hidden h-[320px] sm:h-[400px] md:h-[520px]"
       style={{ border: "1px solid var(--app-border)" }}
@@ -999,6 +1000,42 @@ function TplStateMap({ rows, onSelect }: { rows: TplMapRow[]; onSelect: (abbr: s
         </div>
       )}
     </div>
+
+    {/* Selected state panel — mobile, below map */}
+    {selected && (
+      <div className="md:hidden mt-2 rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
+        <div className="flex items-center justify-between px-3 py-2.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
+          <h2 className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{selected.name}</h2>
+          <button
+            onClick={() => setSelected(null)}
+            className="flex h-6 w-6 items-center justify-center rounded transition-colors"
+            style={{ color: "var(--app-text-very-muted)", background: "var(--app-tab-bg)" }}
+            aria-label="Close"
+          >
+            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div className="flex items-center justify-between gap-3 px-3 py-2.5">
+          <div>
+            <div className="text-[9px] font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>TPL</div>
+            <div className="text-sm font-bold" style={{ color: marginColor(selected.tpl) }}>{fmtMargin(selected.tpl)}</div>
+          </div>
+          <button
+            onClick={() => onSelect(selected.abbr)}
+            className="flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
+            style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
+          >
+            View in State TPL
+            <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    )}
+    </>
   );
 }
 
@@ -1045,6 +1082,7 @@ function TplDistrictMap({
   const rowById = Object.fromEntries(rows.map((r) => [r.id, r]));
 
   return (
+    <>
     <div
       className="relative w-full rounded-xl overflow-hidden h-[320px] sm:h-[400px] md:h-[520px]"
       style={{ border: "1px solid var(--app-border)" }}
@@ -1172,6 +1210,42 @@ function TplDistrictMap({
         </div>
       )}
     </div>
+
+    {/* Selected district panel — mobile, below map */}
+    {selected && (
+      <div className="md:hidden mt-2 rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
+        <div className="flex items-center justify-between px-3 py-2.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
+          <h2 className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{selected.code}</h2>
+          <button
+            onClick={() => setSelected(null)}
+            className="flex h-6 w-6 items-center justify-center rounded transition-colors"
+            style={{ color: "var(--app-text-very-muted)", background: "var(--app-tab-bg)" }}
+            aria-label="Close"
+          >
+            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div className="flex items-center justify-between gap-3 px-3 py-2.5">
+          <div>
+            <div className="text-[9px] font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>District TPL</div>
+            <div className="text-sm font-bold" style={{ color: marginColor(selected.tpl) }}>{fmtMargin(selected.tpl)}</div>
+          </div>
+          <button
+            onClick={() => onSelect(selected.state, selected.id)}
+            className="flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
+            style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
+          >
+            View in District TPL
+            <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    )}
+    </>
   );
 }
 
