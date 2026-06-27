@@ -40,7 +40,7 @@ let congressionalGeoJSONCache: FeatureCollection | null = null;
 async function loadStatesGeoJSON(): Promise<FeatureCollection> {
   if (statesGeoJSONCache) return statesGeoJSONCache;
   const topo = (await fetch("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json").then(r => r.json())) as Topology;
-  const geo = topoFeature(topo, (topo.objects as any).states) as unknown as FeatureCollection;
+  const geo = topoFeature(topo, topo.objects["states"]) as unknown as FeatureCollection;
   statesGeoJSONCache = geo;
   return geo;
 }
@@ -55,7 +55,7 @@ async function loadCongressionalGeoJSON(): Promise<FeatureCollection> {
 
 type DistrictInfo = Omit<GeocodeResult, "lat" | "lng" | "matchedAddress">;
 
-function parseCensusGeographies(geo: Record<string, any[]>): DistrictInfo {
+function parseCensusGeographies(geo: Record<string, Record<string, string>[]>): DistrictInfo {
   const stateEntry = (geo["States"] ?? [])[0];
   const stateName: string | null = stateEntry?.NAME ?? null;
   const stateFIPS: string | null = stateEntry?.STATE ?? null;

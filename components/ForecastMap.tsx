@@ -20,8 +20,14 @@ import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 const HOUSE_DISTRICTS_2026_URL = "/congressional-districts-2026.json";
 
+type GeoFeature = {
+  rsmKey: string;
+  id?: string | number;
+  properties?: Record<string, string | undefined>;
+};
+
 function racePartyOverview(race: RaceForecast): "D" | "R" | "I" {
-  if ((race as any).seatParty) return (race as any).seatParty;
+  if (race.seatParty) return race.seatParty;
   if (race.candidates?.dem.incumbent) return "D";
   if (race.candidates?.rep.incumbent) return "R";
   return race.margin >= 0 ? "D" : "R";
@@ -193,8 +199,7 @@ export default function ForecastMap() {
   const [selectedStateMode, setSelectedStateMode] = useState<MapMode>("default");
   const [hovered, setHovered] = useState<RaceForecast | null>(null);
   const [hoveredNoElection, setHoveredNoElection] = useState<NoElectionEntry | null>(null);
-  const [mousePos, setMousePos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
-  const mapSizeRef = useRef<{ w: number; h: number }>({ w: 800, h: 520 });
+  const [mousePos, setMousePos] = useState<{ x: number; y: number; containerW: number; containerH: number }>({ x: 0, y: 0, containerW: 800, containerH: 520 });
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const ignoreClickUntilRef = useRef(0);
   const darkMode = useDarkMode();
@@ -249,7 +254,7 @@ export default function ForecastMap() {
   const repSeats = holdovers[raceType].rep + data.filter((race) => race.margin < 0).length;
   const totalSeats = totalSeatsByType[raceType];
 
-  function findMatch(geo: any): RaceForecast | undefined {
+  function findMatch(geo: GeoFeature): RaceForecast | undefined {
     if (isHouse) {
       const geoId = geo.properties?.GEOID as string | undefined;
       if (!geoId) return undefined;
@@ -260,7 +265,7 @@ export default function ForecastMap() {
     return data.find((d) => d.state === geo.properties?.name);
   }
 
-  function findNoElection(geo: any): NoElectionEntry | undefined {
+  function findNoElection(geo: GeoFeature): NoElectionEntry | undefined {
     if (isHouse) return undefined;
     const noElData = raceType === "senate" ? senateNoElection : governorNoElection;
     return noElData.find((d) => d.state === geo.properties?.name);
@@ -295,8 +300,7 @@ export default function ForecastMap() {
           }}
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
-            mapSizeRef.current = { w: rect.width, h: rect.height };
-            setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+            setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top, containerW: rect.width, containerH: rect.height });
           }}
         >
           {/* Hover tooltip */}
@@ -315,12 +319,10 @@ export default function ForecastMap() {
             const edgePad = 8;
             let left = mousePos.x + offset;
             let top = mousePos.y + offset;
-            const containerW = mapSizeRef.current.w || 800;
-            const containerH = mapSizeRef.current.h || 600;
-            if (left + tipW + edgePad > containerW) {
+            if (left + tipW + edgePad > mousePos.containerW) {
               left = mousePos.x - tipW - offset;
             }
-            if (top + tipH + edgePad > containerH) {
+            if (top + tipH + edgePad > mousePos.containerH) {
               top = mousePos.y - tipH - offset;
             }
             if (left < edgePad) left = edgePad;
@@ -391,12 +393,10 @@ export default function ForecastMap() {
             const edgePad = 8;
             let left = mousePos.x + offset;
             let top = mousePos.y + offset;
-            const containerW = mapSizeRef.current.w || 800;
-            const containerH = mapSizeRef.current.h || 600;
-            if (left + tipW + edgePad > containerW) {
+            if (left + tipW + edgePad > mousePos.containerW) {
               left = mousePos.x - tipW - offset;
             }
-            if (top + tipH + edgePad > containerH) {
+            if (top + tipH + edgePad > mousePos.containerH) {
               top = mousePos.y - tipH - offset;
             }
             if (left < edgePad) left = edgePad;
@@ -439,8 +439,8 @@ export default function ForecastMap() {
               onMoveEnd={() => setViewChanged(true)}
             >
             <Geographies geography={geoUrl}>
-              {({ geographies }: any) =>
-                geographies.map((geo: any) => {
+              {({ geographies }: { geographies: GeoFeature[] }) =>
+                geographies.map((geo) => {
                   if (isHouse && !isCongressionalDistrictGeoid(geo.properties?.GEOID)) return null;
                   const match = findMatch(geo);
                   const noElMatch = !match ? findNoElection(geo) : undefined;

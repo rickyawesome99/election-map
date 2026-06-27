@@ -10,6 +10,12 @@ import { filterMapZoomEvent } from "@/lib/mapZoom";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
+type GeoFeature = {
+  rsmKey: string;
+  id?: string | number;
+  properties?: Record<string, string | undefined>;
+};
+
 export type MapMode = "default" | "governor" | "senate" | "house" | "legislature";
 
 const DEM_FILL  = "#1b408c";
@@ -189,8 +195,8 @@ export default function StatesOverviewMap({
           onMoveEnd={() => setViewChanged(true)}
         >
           <Geographies geography={STATES_URL}>
-            {({ geographies }: any) =>
-              geographies.map((geo: any) => {
+            {({ geographies }: { geographies: GeoFeature[] }) =>
+              geographies.map((geo) => {
                 const row = rowByName[geo.properties?.name ?? ""];
                 const fill = stateFill(row, t, mode);
                 const isSelected = selected?.abbr === row?.abbr;

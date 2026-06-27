@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // CJS build scripts — not part of the Next.js app bundle
+    "data-entry/**",
+    // Claude Code worktrees
+    ".claude/worktrees/**",
   ]),
 ]);
 

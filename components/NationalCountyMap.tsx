@@ -8,6 +8,12 @@ import { filterMapZoomEvent } from "@/lib/mapZoom";
 const COUNTIES_URL = "/us-counties.json";
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 
+type GeoFeature = {
+  rsmKey: string;
+  id?: string | number;
+  properties?: Record<string, string | undefined>;
+};
+
 const FIPS_TO_STATE: Record<string, { abbr: string; name: string }> = {
   "01": { abbr: "AL", name: "Alabama" },
   "02": { abbr: "AK", name: "Alaska" },
@@ -136,8 +142,8 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
           onMoveEnd={() => setViewChanged(true)}
         >
           <Geographies geography={COUNTIES_URL}>
-            {({ geographies }: any) =>
-              geographies.map((geo: any) => {
+            {({ geographies }: { geographies: GeoFeature[] }) =>
+              geographies.map((geo) => {
                 const fips = String(geo.id ?? "");
                 const statePrefix = fips.slice(0, 2);
                 const stateInfo = FIPS_TO_STATE[statePrefix];
@@ -204,8 +210,8 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
 
           {/* State outlines overlay */}
           <Geographies geography={STATES_URL}>
-            {({ geographies }: any) =>
-              geographies.map((geo: any) => (
+            {({ geographies }: { geographies: GeoFeature[] }) =>
+              geographies.map((geo) => (
                 <Geography
                   key={geo.rsmKey}
                   geography={geo}

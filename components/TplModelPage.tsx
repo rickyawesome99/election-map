@@ -501,6 +501,48 @@ const FORMULA_PANELS: Record<string, { title: string; rows: { label: string; for
       { label: "Example: P 2024 (Strong/Weak, D pres. approval −15.2)", formula: "IF=0.924, CQ=0.66  →  CF = Adj×(−0.076) + Adj×(−0.34)  →  CF = Adj × −0.416" },
     ],
   },
+  "District CQ ↗": {
+    title: "District Candidate Quality Factor (CQ = WQ × LQ)",
+    rows: [
+      { label: "Formula", formula: "CQ = WQ × LQ" },
+      { label: "WQ — Winning Candidate Quality", formula: "Elite=0.75 · Strong=0.88 · Generic=1.00 · Weak=1.12 · Sacrificial=1.25" },
+      { label: "LQ — Losing Candidate Quality", formula: "Elite=1.25 · Strong=1.12 · Generic=1.00 · Weak=0.88 · Sacrificial=0.75" },
+      { label: "Default", formula: "Generic / Generic  →  CQ = 1.00  →  CQ term in CF = 0" },
+      { label: "2024 (Strong/Weak)", formula: "WQ=0.88 × LQ=0.75 = 0.66" },
+    ],
+  },
+  "District NM ↗": {
+    title: "District Neutralized Margin (NM)",
+    rows: [
+      { label: "Formula", formula: "NM = Raw + CF" },
+      { label: "Expanded", formula: "NM = Raw + Raw×(IF−1) + cappedRaw×(CQ−1)" },
+      { label: "No WA", formula: "Wave adjustment is omitted — three-cycle presidential averaging dampens wave effects" },
+      { label: "No FF", formula: "Fundraising factor is omitted — no per-district campaign finance data" },
+      { label: "Purpose", formula: "What the presidential result would look like with generic candidates and neutral presidential approval" },
+    ],
+  },
+  "District IF ↗": {
+    title: "District Incumbency Factor (IF) — Presidential Approval",
+    rows: [
+      { label: "Formula", formula: "IF = 1 + presMargin × k_pif × partySign" },
+      { label: "presMargin", formula: "Incumbent president's net approval (approval − disapproval) on election day" },
+      { label: "partySign", formula: "+1 if D incumbent president · −1 if R incumbent president" },
+      { label: "k_pif", formula: "0.005  (scaling constant, pending calibration)" },
+      { label: "2016 (Obama D, presMargin = +7.8)", formula: "IF = 1 + 7.8 × 0.005 × (+1) = 1.039" },
+      { label: "2020 (Trump R, presMargin = −6.6)", formula: "IF = 1 + (−6.6) × 0.005 × (−1) = 1.033" },
+      { label: "2024 (Biden D, presMargin = −15.2)", formula: "IF = 1 + (−15.2) × 0.005 × (+1) = 0.924" },
+    ],
+  },
+  "District CF ↗": {
+    title: "District Candidate Factor (CF)",
+    rows: [
+      { label: "Formula", formula: "CF = Raw × (IF − 1) + cappedRaw × (CQ − 1)" },
+      { label: "cappedRaw", formula: "sign(Raw) × min(|Raw|, 15)" },
+      { label: "Default (Generic/Generic)", formula: "CQ = 1.00  →  CF = Raw × (IF − 1)" },
+      { label: "Example: 2024 (IF=0.924, CQ=0.66, Raw=R+13)", formula: "13×(−0.076) + 13×(−0.34) = −0.99 + −4.42 = −5.41" },
+      { label: "Example: 2024 blowout (Raw=R+22, cap=15)", formula: "22×(−0.076) + 15×(−0.34) = −1.67 + −5.10 = −6.77" },
+    ],
+  },
   "FF ↗": {
     title: "Fundraising Factor (FF)",
     rows: [
@@ -682,7 +724,6 @@ interface DistrictComputedRace {
   lqTier: CQTier;
   CQ: number;
   candidateFactor_pts: number;
-  FF_pts: number;
   NM: number;
 }
 
@@ -715,9 +756,8 @@ function calculateDistrictModel(districtId: string): DistrictModelCalculation {
     const CQ = WQ_VALUES[wqTier] * LQ_VALUES[lqTier];
     const cappedAdj = Math.sign(rawMargin) * Math.min(Math.abs(rawMargin), G.CQ_MARGIN_CAP);
     const candidateFactor_pts = rawMargin * (IF - 1) + cappedAdj * (CQ - 1);
-    const FF_pts = 0;
-    const NM = rawMargin + candidateFactor_pts + FF_pts;
-    return { year, rawMargin, IF, wqTier, lqTier, CQ, candidateFactor_pts, FF_pts, NM };
+    const NM = rawMargin + candidateFactor_pts;
+    return { year, rawMargin, IF, wqTier, lqTier, CQ, candidateFactor_pts, NM };
   });
 
   const tpl = races.reduce(
@@ -747,8 +787,9 @@ export default function TplModelPage() {
   const [selectedDistrictId, setSelectedDistrictId] = useState(
     () => DISTRICTS_BY_STATE[initialDistrictStateAbbr]?.[0]?.id ?? ""
   );
-  const [showAllDistricts, setShowAllDistricts] = useState(false);
-  const [allDistrictsSort, setAllDistrictsSort] = useState<"centeredTpl" | "tpl" | "absCenteredTpl" | "district">("centeredTpl");
+
+  // District Table sort state
+  const [allDistrictsSort, setAllDistrictsSort] = useState<"tpl" | "centeredTpl" | "absCenteredTpl" | "district">("centeredTpl");
   const [allDistrictsSortDir, setAllDistrictsSortDir] = useState<"asc" | "desc">("asc");
 
   // Derive full state name from abbreviation
@@ -796,8 +837,8 @@ export default function TplModelPage() {
       if (allStatesSort === "name") {
         return allStatesSortDir === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
       }
-      const valA = allStatesSort === "absCenteredTpl" ? Math.abs(a.centeredTpl) : allStatesSort === "centeredTpl" ? a.centeredTpl : a.tpl;
-      const valB = allStatesSort === "absCenteredTpl" ? Math.abs(b.centeredTpl) : allStatesSort === "centeredTpl" ? b.centeredTpl : b.tpl;
+      const valA = allStatesSort === "absCenteredTpl" ? Math.abs(a.tpl) : allStatesSort === "centeredTpl" ? a.centeredTpl : a.tpl;
+      const valB = allStatesSort === "absCenteredTpl" ? Math.abs(b.tpl) : allStatesSort === "centeredTpl" ? b.centeredTpl : b.tpl;
       return allStatesSortDir === "asc" ? valA - valB : valB - valA;
     });
   }, [nationalTpl, allStatesSort, allStatesSortDir]);
@@ -859,13 +900,22 @@ export default function TplModelPage() {
       if (allDistrictsSort === "district") {
         return allDistrictsSortDir === "asc" ? a.code.localeCompare(b.code) : b.code.localeCompare(a.code);
       }
-      const valA = allDistrictsSort === "absCenteredTpl" ? Math.abs(a.centeredTpl) : allDistrictsSort === "centeredTpl" ? a.centeredTpl : a.tpl;
-      const valB = allDistrictsSort === "absCenteredTpl" ? Math.abs(b.centeredTpl) : allDistrictsSort === "centeredTpl" ? b.centeredTpl : b.tpl;
+      const valA = allDistrictsSort === "absCenteredTpl" ? Math.abs(a.tpl) : allDistrictsSort === "centeredTpl" ? a.centeredTpl : a.tpl;
+      const valB = allDistrictsSort === "absCenteredTpl" ? Math.abs(b.tpl) : allDistrictsSort === "centeredTpl" ? b.centeredTpl : b.tpl;
       return allDistrictsSortDir === "asc" ? valA - valB : valB - valA;
     });
   }, [nationalDistrictTpl, allDistrictsSort, allDistrictsSortDir]);
 
   // ── Render ───────────────────────────────────────────────────────────────
+
+  function handleDistrictSortClick(col: "tpl" | "centeredTpl" | "absCenteredTpl" | "district") {
+    if (allDistrictsSort === col) {
+      setAllDistrictsSortDir((d) => (d === "asc" ? "desc" : "asc"));
+    } else {
+      setAllDistrictsSort(col);
+      setAllDistrictsSortDir(col === "absCenteredTpl" ? "desc" : "asc");
+    }
+  }
 
   function handleSortClick(col: "centeredTpl" | "tpl" | "absCenteredTpl" | "name") {
     if (allStatesSort === col) {
@@ -873,15 +923,6 @@ export default function TplModelPage() {
     } else {
       setAllStatesSort(col);
       setAllStatesSortDir(col === "absCenteredTpl" ? "desc" : "asc");
-    }
-  }
-
-  function handleDistrictSortClick(col: "centeredTpl" | "tpl" | "absCenteredTpl" | "district") {
-    if (allDistrictsSort === col) {
-      setAllDistrictsSortDir((d) => (d === "asc" ? "desc" : "asc"));
-    } else {
-      setAllDistrictsSort(col);
-      setAllDistrictsSortDir(col === "absCenteredTpl" ? "desc" : "asc");
     }
   }
 
@@ -1182,8 +1223,8 @@ export default function TplModelPage() {
                     <td className="px-2 py-2 text-left tabular-nums font-mono" style={{ color: r.IF !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
                       {r.IF.toFixed(3)}
                     </td>
-                    <td className="px-2 py-2 text-[11px]" style={{ color: r.wqTier === "Generic" && r.lqTier === "Generic" ? "var(--app-text-very-muted)" : "var(--app-text-muted)" }}>
-                      {r.wqTier === "Generic" && r.lqTier === "Generic" ? "—" : `${r.wqTier} / ${r.lqTier}`}
+                    <td className="px-2 py-2 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
+                      {`${r.wqTier} / ${r.lqTier}`}
                     </td>
                     <td className="px-2 py-2 text-left tabular-nums font-mono" style={{ color: r.CQ !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
                       {r.CQ.toFixed(4)}
@@ -1496,90 +1537,6 @@ export default function TplModelPage() {
             </div>
           </div>
 
-          {/* All districts toggle */}
-          <div className="mb-4">
-            <button
-              onClick={() => setShowAllDistricts((v) => !v)}
-              className="text-xs font-semibold px-3 py-1.5 rounded-lg"
-              style={{
-                background: showAllDistricts ? "var(--app-text-muted)" : "var(--app-panel)",
-                color: showAllDistricts ? "var(--app-bg)" : "var(--app-text-muted)",
-                border: "1px solid var(--app-border)",
-              }}
-            >
-              {showAllDistricts ? "▲ Hide all districts" : "▼ All 435 districts overview"}
-            </button>
-            {showAllDistricts && (
-              <div className="mt-3 rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-xs">
-                    <thead>
-                      <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
-                        <th
-                          className="px-4 py-2.5 text-left text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none"
-                          style={{ color: allDistrictsSort === "district" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
-                          onClick={() => handleDistrictSortClick("district")}
-                        >
-                          District {allDistrictsSort === "district" ? (allDistrictsSortDir === "asc" ? "↑" : "↓") : "↕"}
-                        </th>
-                        {([
-                          ["Centered District TPL", "centeredTpl", "District TPL minus 435-district median"],
-                          ["District TPL", "tpl", "Neutral presidential lean — 2016/2020/2024 weighted average"],
-                          ["|Centered District TPL| (even→partisan)", "absCenteredTpl", "Sort by competitiveness"],
-                        ] as const).map(([label, col, tip]) => (
-                          <th
-                            key={col}
-                            title={tip}
-                            className="px-4 py-2.5 text-right text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap"
-                            style={{ color: allDistrictsSort === col ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
-                            onClick={() => handleDistrictSortClick(col)}
-                          >
-                            {label} {allDistrictsSort === col ? (allDistrictsSortDir === "asc" ? "↑" : "↓") : "↕"}
-                          </th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {allDistrictRows.map((d, i) => (
-                        <tr
-                          key={d.id}
-                          className="cursor-pointer"
-                          style={{
-                            background: d.id === selectedDistrictId
-                              ? "var(--app-border)"
-                              : i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
-                            borderBottom: "1px solid var(--app-border)",
-                          }}
-                          onClick={() => {
-                            setSelectedDistrictStateAbbr(d.state);
-                            setSelectedDistrictId(d.id);
-                            setShowAllDistricts(false);
-                          }}
-                        >
-                          <td className="px-4 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>
-                            {d.code}
-                            <span className="ml-1.5 text-[10px] font-mono" style={{ color: "var(--app-text-very-muted)" }}>{d.stateName}</span>
-                          </td>
-                          <td className="px-4 py-2 text-right tabular-nums font-bold" style={{ color: marginColor(d.centeredTpl), background: marginBg(d.centeredTpl) }}>
-                            {fmtMargin(d.centeredTpl)}
-                          </td>
-                          <td className="px-4 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(d.tpl) }}>
-                            {fmtMargin(d.tpl)}
-                          </td>
-                          <td className="px-4 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
-                            {Math.abs(d.centeredTpl).toFixed(2)}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-                <div className="px-4 py-2 text-[10px]" style={{ borderTop: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-very-muted)" }}>
-                  Click a row to open that district. 435-district median TPL = {fmtMargin(nationalDistrictTpl.medianTpl)}.
-                </div>
-              </div>
-            )}
-          </div>
 
           {/* Header */}
           <div className="mb-5">
@@ -1597,7 +1554,7 @@ export default function TplModelPage() {
               Step 1 — Per-Race Calculations
             </h3>
             <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-              NM = Raw Margin + CF + FF pts. IF encodes presidential approval; CQ encodes candidate quality. No wave adjustment for district model.
+              NM = Raw Margin + CF. IF encodes presidential approval; CQ encodes candidate quality. No FF or wave adjustment for district model.
             </p>
             <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
               <div className="overflow-x-auto">
@@ -1607,22 +1564,25 @@ export default function TplModelPage() {
                       {[
                         ["Year", "Election year"],
                         ["Raw", "Presidential two-party margin (R-positive). Reaggregated to 2026 boundaries."],
-                        ["IF", "Presidential approval IF = 1 + presMargin × k_pif × partySign"],
+                        ["IF ↗", "Presidential approval IF = 1 + presMargin × k_pif × partySign. Click for details."],
                         ["WQ / LQ", "Winning and losing candidate quality tiers"],
-                        ["CQ", "Candidate Quality Factor = WQ × LQ"],
-                        ["CF", "Candidate Factor = Raw×(IF−1) + cappedRaw×(CQ−1)"],
-                        ["FF", "Fundraising Factor pts (0 — not yet calibrated)"],
-                        ["NM", "Neutralized Margin = Raw + CF + FF"],
-                      ].map(([label, tip], ci) => (
+                        ["CQ ↗", "Candidate Quality Factor = WQ × LQ. Click for details."],
+                        ["CF ↗", "Candidate Factor = Raw×(IF−1) + cappedRaw×(CQ−1). Click for full breakdown."],
+                        ["NM ↗", "Neutralized Margin = Raw + CF. Click for details."],
+                      ].map(([label, tip], ci) => {
+                        const panelKey = label === "CF ↗" ? "District CF ↗" : label === "IF ↗" ? "District IF ↗" : label === "CQ ↗" ? "District CQ ↗" : label === "NM ↗" ? "District NM ↗" : null;
+                        return (
                         <th
                           key={label}
-                          title={tip}
-                          className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap text-left"
-                          style={{ color: ci === 7 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                          title={panelKey ? `Click to see ${label} formula` : tip}
+                          className={`px-2 py-2 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap text-left ${panelKey ? "cursor-pointer select-none" : ""}`}
+                          style={{ color: ci === 6 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                          onClick={panelKey ? () => setFormulaOpen(panelKey) : undefined}
                         >
-                          {label}
+                          {label}{panelKey && <span className="ml-0.5 opacity-50">ⓘ</span>}
                         </th>
-                      ))}
+                        );
+                      })}
                     </tr>
                   </thead>
                   <tbody>
@@ -1641,8 +1601,8 @@ export default function TplModelPage() {
                         <td className="px-2 py-2 tabular-nums font-mono" style={{ color: r.IF !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
                           {r.IF.toFixed(3)}
                         </td>
-                        <td className="px-2 py-2 text-[11px]" style={{ color: r.wqTier === "Generic" && r.lqTier === "Generic" ? "var(--app-text-very-muted)" : "var(--app-text-muted)" }}>
-                          {r.wqTier === "Generic" && r.lqTier === "Generic" ? "—" : `${r.wqTier} / ${r.lqTier}`}
+                        <td className="px-2 py-2 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
+                          {`${r.wqTier} / ${r.lqTier}`}
                         </td>
                         <td className="px-2 py-2 tabular-nums font-mono" style={{ color: r.CQ !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
                           {r.CQ.toFixed(4)}
@@ -1650,7 +1610,6 @@ export default function TplModelPage() {
                         <td className="px-2 py-2 tabular-nums font-semibold" style={{ color: r.candidateFactor_pts !== 0 ? marginColor(r.candidateFactor_pts) : "var(--app-text-very-muted)" }}>
                           {r.candidateFactor_pts !== 0 ? (r.candidateFactor_pts > 0 ? "+" : "") + r.candidateFactor_pts.toFixed(2) : "—"}
                         </td>
-                        <td className="px-2 py-2 tabular-nums font-mono" style={{ color: "var(--app-text-very-muted)" }}>—</td>
                         <td className="px-2 py-2 tabular-nums font-bold" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>
                           {fmtMargin(r.NM)}
                         </td>
@@ -1780,25 +1739,31 @@ export default function TplModelPage() {
       {activeSubTab === "table" && (
         <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
           <div className="overflow-x-auto">
-            <table className="w-full text-xs">
+            <table className="w-full table-fixed text-[11px] md:min-w-[720px] md:text-xs">
+              <colgroup>
+                <col className="w-[34%] md:w-1/4" />
+                <col className="w-[22%] md:w-1/4" />
+                <col className="w-[22%] md:w-1/4" />
+                <col className="w-[22%] md:w-1/4" />
+              </colgroup>
               <thead>
                 <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
                   <th
-                    className="px-4 py-2.5 text-left text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none"
+                    className="px-1 py-2.5 text-left text-[9px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap md:px-4 md:text-[10px]"
                     style={{ color: allStatesSort === "name" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
                     onClick={() => handleSortClick("name")}
                   >
                     State {allStatesSort === "name" ? (allStatesSortDir === "asc" ? "↑" : "↓") : "↕"}
                   </th>
                   {([
-                    ["Centered TPL", "centeredTpl", "TPL minus 50-state median"],
+                    [<><span className="md:hidden">Centered</span><span className="hidden md:inline">Centered TPL</span></>, "centeredTpl", "TPL minus 50-state median"],
                     ["TPL", "tpl", "Neutral partisan lean — Generic R vs Generic D with no wave"],
-                    ["|Centered TPL| (even→partisan)", "absCenteredTpl", "Sort by how competitive or one-sided the state is"],
+                    ["Competitive", "absCenteredTpl", "Sort by absolute TPL"],
                   ] as const).map(([label, col, tip]) => (
                     <th
                       key={col}
                       title={tip}
-                      className="px-4 py-2.5 text-right text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap"
+                      className="px-1 py-2.5 text-left text-[9px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap md:px-4 md:text-[10px]"
                       style={{ color: allStatesSort === col ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
                       onClick={() => handleSortClick(col)}
                     >
@@ -1824,18 +1789,18 @@ export default function TplModelPage() {
                       window.scrollTo({ top: 0, behavior: "instant" });
                     }}
                   >
-                    <td className="px-4 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                    <td className="px-2 py-2 font-semibold break-words md:px-4" style={{ color: "var(--app-text-primary)" }}>
                       {s.name}
                       <span className="ml-1.5 text-[10px] font-mono" style={{ color: "var(--app-text-very-muted)" }}>{s.abbr}</span>
                     </td>
-                    <td className="px-4 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(s.centeredTpl) }}>
+                    <td className="px-2 py-2 text-left tabular-nums font-semibold md:px-4" style={{ color: marginColor(s.centeredTpl) }}>
                       {fmtMargin(s.centeredTpl)}
                     </td>
-                    <td className="px-4 py-2 text-right tabular-nums font-bold" style={{ color: marginColor(s.tpl), background: marginBg(s.tpl) }}>
+                    <td className="px-2 py-2 text-left tabular-nums font-bold md:px-4" style={{ color: marginColor(s.tpl), background: marginBg(s.tpl) }}>
                       {fmtMargin(s.tpl)}
                     </td>
-                    <td className="px-4 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
-                      {Math.abs(s.centeredTpl).toFixed(2)}
+                    <td className="px-2 py-2 text-left tabular-nums font-mono md:px-4" style={{ color: "var(--app-text-muted)" }}>
+                      {Math.abs(s.tpl).toFixed(2)}
                     </td>
                   </tr>
                 ))}
@@ -1848,29 +1813,36 @@ export default function TplModelPage() {
         </div>
       )}
 
+
       {/* ── District Table ── */}
       {activeSubTab === "districtTable" && (
         <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
           <div className="overflow-x-auto">
-            <table className="w-full text-xs">
+            <table className="w-full table-fixed text-[11px] md:min-w-[720px] md:text-xs">
+              <colgroup>
+                <col className="w-[34%] md:w-1/4" />
+                <col className="w-[22%] md:w-1/4" />
+                <col className="w-[22%] md:w-1/4" />
+                <col className="w-[22%] md:w-1/4" />
+              </colgroup>
               <thead>
                 <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
                   <th
-                    className="px-4 py-2.5 text-left text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none"
+                    className="px-1 py-2.5 text-left text-[9px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap md:px-4 md:text-[10px]"
                     style={{ color: allDistrictsSort === "district" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
                     onClick={() => handleDistrictSortClick("district")}
                   >
                     District {allDistrictsSort === "district" ? (allDistrictsSortDir === "asc" ? "↑" : "↓") : "↕"}
                   </th>
                   {([
-                    ["Centered District TPL", "centeredTpl", "District TPL minus 435-district median"],
-                    ["District TPL", "tpl", "Neutral presidential lean — 2016/2020/2024 weighted average"],
-                    ["|Centered District TPL| (even→partisan)", "absCenteredTpl", "Sort by competitiveness"],
+                    [<><span className="md:hidden">Centered</span><span className="hidden md:inline">Centered TPL</span></>, "centeredTpl", "District TPL minus 435-district median"],
+                    ["TPL", "tpl", "Neutral presidential lean — 2016/2020/2024 weighted average"],
+                    ["Competitive", "absCenteredTpl", "Sort by absolute TPL"],
                   ] as const).map(([label, col, tip]) => (
                     <th
                       key={col}
                       title={tip}
-                      className="px-4 py-2.5 text-right text-[10px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap"
+                      className="px-1 py-2.5 text-left text-[9px] uppercase tracking-wider font-semibold cursor-pointer select-none whitespace-nowrap md:px-4 md:text-[10px]"
                       style={{ color: allDistrictsSort === col ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
                       onClick={() => handleDistrictSortClick(col)}
                     >
@@ -1885,31 +1857,28 @@ export default function TplModelPage() {
                     key={d.id}
                     className="cursor-pointer"
                     style={{
-                      background: d.id === selectedDistrictId
-                        ? "var(--app-border)"
-                        : i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
+                      background: d.id === selectedDistrictId ? "var(--app-border)" : i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
                       borderBottom: "1px solid var(--app-border)",
                     }}
                     onClick={() => {
                       setSelectedDistrictStateAbbr(d.state);
                       setSelectedDistrictId(d.id);
-                      setShowAllDistricts(false);
                       setActiveSubTab("district");
                       window.scrollTo({ top: 0, behavior: "instant" });
                     }}
                   >
-                    <td className="px-4 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                    <td className="px-2 py-2 font-semibold break-words md:px-4" style={{ color: "var(--app-text-primary)" }}>
                       {d.code}
-                      <span className="ml-1.5 text-[10px] font-mono" style={{ color: "var(--app-text-very-muted)" }}>{d.stateName}</span>
+                      <span className="ml-1.5 text-[10px] font-mono" style={{ color: "var(--app-text-very-muted)" }}>{d.state}</span>
                     </td>
-                    <td className="px-4 py-2 text-right tabular-nums font-bold" style={{ color: marginColor(d.centeredTpl), background: marginBg(d.centeredTpl) }}>
+                    <td className="px-2 py-2 text-left tabular-nums font-semibold md:px-4" style={{ color: marginColor(d.centeredTpl) }}>
                       {fmtMargin(d.centeredTpl)}
                     </td>
-                    <td className="px-4 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(d.tpl) }}>
+                    <td className="px-2 py-2 text-left tabular-nums font-bold md:px-4" style={{ color: marginColor(d.tpl), background: marginBg(d.tpl) }}>
                       {fmtMargin(d.tpl)}
                     </td>
-                    <td className="px-4 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
-                      {Math.abs(d.centeredTpl).toFixed(2)}
+                    <td className="px-2 py-2 text-left tabular-nums font-mono md:px-4" style={{ color: "var(--app-text-muted)" }}>
+                      {Math.abs(d.tpl).toFixed(2)}
                     </td>
                   </tr>
                 ))}

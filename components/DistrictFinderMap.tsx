@@ -4,8 +4,9 @@ import { useEffect, useRef, useCallback } from "react";
 import { MapContainer, TileLayer, GeoJSON, Marker, useMap, useMapEvents } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import type { FeatureCollection } from "geojson";
+import type { Feature, FeatureCollection } from "geojson";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
@@ -141,7 +142,7 @@ export default function DistrictFinderMap({
         <GeoJSON
           key={`cd-${highlightCdGEOID}`}
           data={congressionalGeoJSON}
-          style={(feat: any) => {
+          style={(feat?: Feature) => {
             if (feat?.properties?.GEOID === highlightCdGEOID) return HIGHLIGHT;
             return { color: borderColor, weight: 0.8, fillColor: "transparent", fillOpacity: 0 };
           }}
