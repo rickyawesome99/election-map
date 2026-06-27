@@ -239,4 +239,7 @@ export const PRESIDENTIAL_INPUTS_BY_YEAR: Record<number, Pick<RaceModelInputs, "
 
 export const STATE_RACE_INPUTS: Record<string, RaceModelInputs[]> = {
   IA: IOWA_RACE_INPUTS,
+  GA: [
+    { race: "Senate Special", raceType: "S", year: 2020, wqTier: "Generic", lqTier: "Weak" },
+  ],
 };

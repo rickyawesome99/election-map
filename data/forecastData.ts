@@ -17578,8 +17578,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Mar", "value": 0 }
     ],
     "candidates": {
-      "dem": { "name": "Generic Democrat", "party": "D", "incumbent": false },
-      "rep": { "name": "Harriet Hageman", "party": "R", "incumbent": true }
+      "dem": { "name": "Lisa Kinney", "party": "D", "incumbent": false },
+      "rep": { "name": "Chuck Gray", "party": "R", "incumbent": true }
     },
     "seatHolder": "Harriet Hageman",
     "seatParty": "R",

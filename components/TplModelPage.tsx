@@ -1,6 +1,11 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
+import Link from "next/link";
+import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
+import { getRaceColor } from "@/lib/colorScale";
+import { filterMapZoomEvent } from "@/lib/mapZoom";
+import { useDarkMode } from "@/lib/useDarkMode";
 import {
   presPastResults,
   senateData,
@@ -10,6 +15,7 @@ import {
   governorNoElection,
   houseData,
   houseStatewideResults,
+  houseDistrictInfo,
   stateLegData,
   type PastResult,
 } from "@/data/forecastData";
@@ -54,6 +60,7 @@ interface RaceStub {
   race: string;
   district?: string;
   raceType: "P" | "S" | "G" | "H" | "L";
+  detailHref?: string;
   year: number;
   incumbent: string;
   wqTier: CQTier;
@@ -68,6 +75,8 @@ interface RaceStub {
 function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
   const modelInputs: RaceModelInputs[] = STATE_RACE_INPUTS[stateAbbr] ?? [];
   const stubs: RaceStub[] = [];
+  const stateId = statesData.find((state) => state.abbr === stateAbbr)?.id ?? stateName.toLowerCase().replace(/\s+/g, "-");
+  const stateHref = `/states/${stateId}`;
 
   function incumbentFromResult(result?: Pick<PastResult, "demIncumbent" | "repIncumbent">): string {
     if (result?.demIncumbent) return "D";
@@ -85,7 +94,8 @@ function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
     year: number,
     district?: string,
     incumbent = "Open",
-    historicalMargins: RaceStub["historicalMargins"] = []
+    historicalMargins: RaceStub["historicalMargins"] = [],
+    detailHref?: string
   ): RaceStub {
     const inp = overlay(race, year);
     const presBase = raceType === "P" ? PRESIDENTIAL_INPUTS_BY_YEAR[year] : undefined;
@@ -95,6 +105,7 @@ function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
       race,
       district,
       raceType,
+      detailHref,
       year,
       incumbent,
       wqTier,
@@ -120,45 +131,55 @@ function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
           r.year,
           undefined,
           incumbentFromResult(r),
-          presidentialMargins
+          presidentialMargins,
+          stateHref
         )
       );
     }
   }
 
-  // Senate — all seats for this state (multiple seats OK — distinguished by year)
-  const allSenate = [
-    ...senateData.filter((d) => d.id === stateAbbr || d.id.startsWith(stateAbbr + "-")),
-    ...senateHoldovers.filter((d) => d.abbr === stateAbbr),
-    ...senateNoElection.filter((d) => d.abbr === stateAbbr),
-  ];
-  for (const seat of allSenate) {
+  function addSenateSeat(
+    seat: { pastResults?: PastResult[] },
+    detailHref: string
+  ) {
     const historicalMargins = (seat.pastResults ?? []).map((result) => ({
       year: result.year,
       margin: result.repPct - result.demPct,
     }));
     for (const r of seat.pastResults ?? []) {
       if (r.year >= 2017) {
+        const raceName = r.electionType === "Special" ? "Senate Special" : "Senate";
         stubs.push(
           makeStub(
-            "Senate",
+            raceName,
             "S",
             r.year,
             undefined,
             incumbentFromResult(r),
-            historicalMargins
+            historicalMargins,
+            detailHref
           )
         );
       }
     }
   }
 
+  // Senate — all seats for this state (multiple seats OK — distinguished by year/seat page)
+  for (const seat of senateData.filter((d) => d.id === stateAbbr || d.id.startsWith(stateAbbr + "-"))) {
+    addSenateSeat(seat, `/senate/${seat.id.toLowerCase()}`);
+  }
+  for (const seat of senateHoldovers.filter((d) => d.abbr === stateAbbr)) {
+    addSenateSeat(seat, `/senate/${seat.abbr.toLowerCase()}-2`);
+  }
+  for (const seat of senateNoElection.filter((d) => d.abbr === stateAbbr)) {
+    addSenateSeat(seat, `/senate/${seat.abbr.toLowerCase()}`);
+  }
+
   // Governor (2017+ — catches NJ/VA odd-year elections)
-  const allGov = [
-    ...governorData.filter((d) => d.id === stateAbbr),
-    ...governorNoElection.filter((d) => d.abbr === stateAbbr),
-  ];
-  for (const seat of allGov) {
+  function addGovernorSeat(
+    seat: { pastResults?: PastResult[] },
+    detailHref: string
+  ) {
     const historicalMargins = (seat.pastResults ?? []).map((result) => ({
       year: result.year,
       margin: result.repPct - result.demPct,
@@ -172,11 +193,18 @@ function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
             r.year,
             undefined,
             incumbentFromResult(r),
-            historicalMargins
+            historicalMargins,
+            detailHref
           )
         );
       }
     }
+  }
+  for (const seat of governorData.filter((d) => d.id === stateAbbr)) {
+    addGovernorSeat(seat, `/governor/${seat.id.toLowerCase()}`);
+  }
+  for (const seat of governorNoElection.filter((d) => d.abbr === stateAbbr)) {
+    addGovernorSeat(seat, `/governor/${seat.abbr.toLowerCase()}`);
   }
 
   // House — each district, each election year (2017+)
@@ -194,7 +222,8 @@ function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
             r.year,
             dist.name,
             incumbentFromResult(r),
-            historicalMargins
+            historicalMargins,
+            `/house/${dist.id.toLowerCase()}`
           )
         );
       }
@@ -207,6 +236,7 @@ function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
   const isUnicameral = stateName === "Nebraska";
   const legYears = [...new Set(legEntries.map((e) => e.year))]
     .filter((year) => {
+      if (year < 2018) return false;
       const yearEntries = legEntries.filter((e) => e.year === year);
       if (isUnicameral) {
         return yearEntries.some((e) => e.demVotes != null && e.repVotes != null);
@@ -238,7 +268,7 @@ function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
       };
     });
     stubs.push(
-      makeStub("State Legislature", "L", year, undefined, "-", historicalMargins)
+      makeStub("State Legislature", "L", year, undefined, "-", historicalMargins, stateHref)
     );
   }
 
@@ -265,14 +295,17 @@ function getRawMargin(
     return e != null ? e.repPct - e.demPct : null;
   }
 
-  if (race === "Senate") {
+  if (race === "Senate" || race === "Senate Special") {
+    const isSpecial = race === "Senate Special";
     const all = [
       ...senateData.filter((d) => d.id === stateAbbr || d.id.startsWith(stateAbbr + "-")),
       ...senateHoldovers.filter((d) => d.abbr === stateAbbr),
       ...senateNoElection.filter((d) => d.abbr === stateAbbr),
     ];
     for (const seat of all) {
-      const e = (seat.pastResults ?? []).find((r) => r.year === year);
+      const e = (seat.pastResults ?? []).find(
+        (r) => r.year === year && (isSpecial ? r.electionType === "Special" : r.electionType !== "Special")
+      );
       if (e != null) return e.repPct - e.demPct;
     }
     return null;
@@ -317,79 +350,107 @@ function getRawMargin(
 const NONCOMPETITIVE_MARGIN_THRESHOLD = 50;
 const PRIOR_CONTESTED_WEIGHT = 0.6;
 const PRESIDENTIAL_BASELINE_WEIGHT = 0.4;
+const BLANKET_ADJUSTMENT_MULTIPLIER = 0.8;
 
 interface CompetitivenessAdjustment {
   adjustedMargin: number;
   adjusted: boolean;
+  blanketApplied: boolean;
   priorContestedMargin: number | null;
+  priorContestedYear: number | null;
   presidentialBaselineMargin: number | null;
+  presidentialBaselineYear: number | null;
 }
 
-function getPriorPresidentialMargin(
+function getPriorPresidentialResult(
   stateAbbr: string,
   district: string | undefined,
-  year: number
-): number | null {
+  year: number,
+  minValidYear = 0
+): { margin: number; year: number } | null {
   if (district) {
     const districtId = houseData.find((race) => race.name === district)?.id;
-    const result = districtId
+    const entry = districtId
       ? (houseStatewideResults[districtId] ?? [])
-          .filter((entry) => entry.race === "President" && entry.year < year)
+          .filter((e) => e.race === "President" && e.year <= year && e.year >= minValidYear)
           .sort((a, b) => b.year - a.year)[0]
       : undefined;
-    return result ? result.repPct - result.demPct : null;
+    return entry ? { margin: entry.repPct - entry.demPct, year: entry.year } : null;
   }
 
-  const result = (presPastResults[stateAbbr] ?? [])
-    .filter((entry) => entry.year < year)
+  const entry = (presPastResults[stateAbbr] ?? [])
+    .filter((e) => e.year < year)
     .sort((a, b) => b.year - a.year)[0];
-  return result ? result.repPct - result.demPct : null;
+  return entry ? { margin: entry.repPct - entry.demPct, year: entry.year } : null;
 }
 
 function computeCompetitivenessAdjustment(
   rawMargin: number,
   stub: RaceStub,
-  stateAbbr: string
+  stateAbbr: string,
+  minValidYear = 0
 ): CompetitivenessAdjustment {
   if (Math.abs(rawMargin) < NONCOMPETITIVE_MARGIN_THRESHOLD) {
     return {
       adjustedMargin: rawMargin,
       adjusted: false,
+      blanketApplied: false,
       priorContestedMargin: null,
+      priorContestedYear: null,
       presidentialBaselineMargin: null,
+      presidentialBaselineYear: null,
     };
   }
 
   const priorResults = stub.historicalMargins
-    .filter((result) => result.year < stub.year)
+    .filter((result) => result.year < stub.year && result.year >= minValidYear)
     .sort((a, b) => b.year - a.year);
-  const priorContested =
-    priorResults.find(
-      (result) => Math.abs(result.margin) < NONCOMPETITIVE_MARGIN_THRESHOLD
-    ) ??
-    [...priorResults].sort(
-      (a, b) => Math.abs(a.margin) - Math.abs(b.margin)
-    )[0];
-  const presidentialBaselineMargin = getPriorPresidentialMargin(
+  // Only use a prior result as "contested" if it was genuinely competitive.
+  // If all priors are also ≥ 50, leave undefined so weights fall on presidential baseline.
+  const priorContested = priorResults.find(
+    (result) => Math.abs(result.margin) < NONCOMPETITIVE_MARGIN_THRESHOLD
+  );
+  const presidentialResult = getPriorPresidentialResult(
     stateAbbr,
     stub.district,
-    stub.year
+    stub.year,
+    minValidYear
   );
+
+  // No valid prior data at all within current boundary vintage → blanket haircut.
+  if (priorContested == null && presidentialResult == null) {
+    return {
+      adjustedMargin: rawMargin * BLANKET_ADJUSTMENT_MULTIPLIER,
+      adjusted: true,
+      blanketApplied: true,
+      priorContestedMargin: null,
+      priorContestedYear: null,
+      presidentialBaselineMargin: null,
+      presidentialBaselineYear: null,
+    };
+  }
 
   // If one source is unavailable, use the available source for both sides of
   // the blend so an extreme raw margin never silently re-enters the model.
-  const priorContestedMargin =
-    priorContested?.margin ?? presidentialBaselineMargin ?? rawMargin;
-  const presidentialMargin =
-    presidentialBaselineMargin ?? priorContested?.margin ?? rawMargin;
+  const priorContestedMargin = priorContested?.margin ?? presidentialResult!.margin;
+  const presidentialMargin = presidentialResult?.margin ?? priorContested!.margin;
+
+  const blendedMargin =
+    PRIOR_CONTESTED_WEIGHT * priorContestedMargin +
+    PRESIDENTIAL_BASELINE_WEIGHT * presidentialMargin;
+
+  // Never let the adjustment make the margin more extreme than the raw result.
+  const adjustedMargin =
+    Math.abs(blendedMargin) > Math.abs(rawMargin) ? rawMargin : blendedMargin;
 
   return {
-    adjustedMargin:
-      PRIOR_CONTESTED_WEIGHT * priorContestedMargin +
-      PRESIDENTIAL_BASELINE_WEIGHT * presidentialMargin,
+    adjustedMargin,
     adjusted: true,
-    priorContestedMargin,
-    presidentialBaselineMargin,
+    blanketApplied: false,
+    priorContestedMargin: priorContested?.margin ?? null,
+    priorContestedYear: priorContested?.year ?? null,
+    presidentialBaselineMargin: presidentialResult?.margin ?? null,
+    presidentialBaselineYear: presidentialResult?.year ?? null,
   };
 }
 
@@ -447,11 +508,11 @@ const GLOSSARY = [
   { abbr: "IF", term: "Incumbency Factor", desc: "Multiplier capturing seat-level incumbent effects (G/S/H/L races) or presidential approval (P races). For P races: IF = 1 + presMargin × k_pif × partySign. Open non-P seats = 1.00." },
   { abbr: "k", term: "Wave Scaling Constants", desc: "k_add = 0.35 (additive component), k_mult = 0.05 (multiplicative component). Both placeholders pending calibration." },
   { abbr: "NES", term: "National Environment Score", desc: "National partisan lean per cycle. Blended President+House popular vote (presidential years) or House alone (midterms). Positive = R-favored." },
-  { abbr: "NM", term: "Neutralized Margin", desc: "Adjusted Margin × (IF × CQ) + FF pts − WA. IF encodes incumbency (G/S/H/L) or presidential approval (P); all compound into CF." },
+  { abbr: "NM", term: "Neutralized Margin", desc: "Adjusted Margin × (IF × CQ) + FF pts + WA. IF encodes incumbency (G/S/H/L) or presidential approval (P); all compound into CF." },
   { abbr: "PGSHL", term: "Race Type Codes", desc: "P = President, G = Governor, S = U.S. Senate, H = U.S. House, L = State Legislature." },
   { abbr: "S", term: "State Wave Sensitivity Coefficient", desc: "How much a state amplifies or dampens national swings, calculated from cycle-over-cycle state and national House-margin swing ratios." },
   { abbr: "TPL", term: "True Partisan Lean", desc: "The state's neutral partisan composition — what a Generic R vs Generic D race with no wave would produce. Recency-weighted average of WRS scores." },
-  { abbr: "WA", term: "Wave Adjustment", desc: "Hybrid point shift: 70% additive (NES × S × k_add) + 30% multiplicative (base × (1−WF)) converted to points. Positive = R wave stripped." },
+  { abbr: "WA", term: "Wave Adjustment", desc: "Hybrid point shift: 70% additive (NES × S × k_add) + 30% multiplicative (base × (1−WF)) converted to points. Positive = D wave stripped (adds to R margin). Negative = R wave stripped (reduces R margin)." },
   { abbr: "WRS", term: "Weighted Race Score", desc: "One year's TPL signal: the weighted average of NMs across all race types present that cycle." },
 ];
 
@@ -465,8 +526,14 @@ const FORMULA_PANELS: Record<string, { title: string; rows: { label: string; for
   "Adjusted ↗": {
     title: "Adjusted Margin (AM)",
     rows: [
-      { label: "Uncontested check", formula: "|Raw Margin| < 50  →  Adjusted Margin = Raw Margin" },
-      { label: "Non-competitive", formula: "|Raw Margin| ≥ 50  →  Adjusted Margin = 0.6 × Prior Contested + 0.4 × Prior Presidential", note: "Prior Contested = most recent prior result with |margin| < 50 for the same seat. If either source is unavailable, the available source fills both weights." },
+      { label: "Step 1", formula: "|Raw| < 50  →  Adjusted = Raw" },
+      { label: "Step 2", formula: "|Raw| ≥ 50  →  Adjusted = 0.6 × Prior Contested + 0.4 × Prior Presidential" },
+      { label: "Prior Contested", formula: "Most recent result with |margin| < 50 in a year strictly before the race year" },
+      { label: "Prior Presidential", formula: "District presidential result in the most recent year ≤ race year" },
+      { label: "H races: boundary filter", formula: "Both priors restricted to years ≥ minValidYear (most recent redistricting year ≤ race year)", note: "Prevents old-boundary results from bleeding into a redrawn district's adjustment." },
+      { label: "One prior missing", formula: "Available prior fills both weights (effectively 100% weight on the available source)" },
+      { label: "Both priors missing (§)", formula: "Adjusted = Raw × 0.8  — no valid boundary-vintage data exists" },
+      { label: "Cap", formula: "|Adjusted| > |Raw|  →  Adjusted = Raw" },
     ],
   },
   "IF ↗": {
@@ -557,17 +624,17 @@ const FORMULA_PANELS: Record<string, { title: string; rows: { label: string; for
       { label: "Additive component (70%)", formula: "WA_add = NES × S × k_add   (k_add = 0.35)" },
       { label: "Multiplicative WF", formula: "WF = 1 / (1 + NES × S × k_mult × sign(Adj Margin))   (k_mult = 0.05, bounded [0.6, 1.6])" },
       { label: "Multiplicative component (30%)", formula: "WA_mult = Adjusted Margin × (1 − WF)" },
-      { label: "Blended WA", formula: "WA = 0.70 × WA_add + 0.30 × WA_mult" },
+      { label: "Blended WA", formula: "WA = −(0.70 × WA_add + 0.30 × WA_mult)" },
       { label: "NES values", formula: "2018: D+7.1 · 2020: D+2.3 · 2022: R+4.2 · 2024: R+3.5" },
-      { label: "Sign convention", formula: "Positive WA = R wave being stripped. Negative WA = D wave being stripped.", note: "WA = 0 for states without S on record." },
+      { label: "Sign convention", formula: "Positive WA = D wave stripped (adds to R margin). Negative WA = R wave stripped (reduces R margin).", note: "WA = 0 for states without S on record." },
     ],
   },
   "NM ↗": {
     title: "Neutralized Margin (NM)",
     rows: [
-      { label: "G/S/H/L formula", formula: "NM = Adjusted × (IF × CQ) + FF pts − WA" },
-      { label: "P formula", formula: "NM = Adjusted + CF + FF pts − WA   where CF = Adjusted×(IF−1) + cappedAdj×(CQ−1)" },
-      { label: "Both views", formula: "NM = Adjusted + CF + FF pts − WA" },
+      { label: "G/S/H/L formula", formula: "NM = Adjusted × (IF × CQ) + FF pts + WA" },
+      { label: "P formula", formula: "NM = Adjusted + CF + FF pts + WA   where CF = Adjusted×(IF−1) + cappedAdj×(CQ−1)" },
+      { label: "Both views", formula: "NM = Adjusted + CF + FF pts + WA" },
       { label: "Note", formula: "For P races, IF (presidential approval) and CQ (candidate quality) are independent effects — they add into CF rather than compound. For all other races they multiply." },
       { label: "Purpose", formula: "NM is the stripped partisan signal: what the race result would look like without incumbency, candidate quality, or national wave effects." },
     ],
@@ -583,8 +650,12 @@ interface ComputedRace extends RaceStub {
   FF_pts: number | null;
   adjustedMargin: number | null;
   competitivenessAdjusted: boolean;
+  blanketApplied: boolean;
   priorContestedMargin: number | null;
+  priorContestedYear: number | null;
   presidentialBaselineMargin: number | null;
+  presidentialBaselineYear: number | null;
+  minValidYear: number;
   WA: number;
   WFCapped: boolean;
   NM: number | null;
@@ -621,10 +692,18 @@ function calculateStateModel(
     );
     const NES = G.NES_BY_YEAR[stub.year] ?? null;
     const inAggregation = stub.year in G.YEAR_WEIGHTS;
+    let minValidYear = 0;
+    if (stub.raceType === "H" && stub.district) {
+      const districtId = houseData.find((r) => r.name === stub.district)?.id;
+      if (districtId) {
+        const validEntries = (houseDistrictInfo[districtId] ?? []).filter((e) => e.year <= stub.year);
+        if (validEntries.length > 0) minValidYear = Math.max(...validEntries.map((e) => e.year));
+      }
+    }
     const competitiveness =
       rawMargin == null
         ? null
-        : computeCompetitivenessAdjustment(rawMargin, stub, stateAbbr);
+        : computeCompetitivenessAdjustment(rawMargin, stub, stateAbbr, minValidYear);
     const adjustedMargin = competitiveness?.adjustedMargin ?? null;
     let IF: number;
     if (stub.raceType === "P") {
@@ -652,14 +731,14 @@ function calculateStateModel(
       const WA_add = NES * S * G.k_add;
       const { wf, capped } = computeWF(adjustedMargin, NES, S, G.k_mult);
       const WA_mult = adjustedMargin * (1 - wf);
-      WA = 0.70 * WA_add + 0.30 * WA_mult;
+      WA = -(0.70 * WA_add + 0.30 * WA_mult);
       wfCapped = capped;
     }
 
     const NM = adjustedMargin != null
       ? stub.raceType === "P"
-        ? adjustedMargin + (candidateFactor_pts ?? 0) + (FF_pts ?? 0) - WA
-        : adjustedMargin * IF * stub.CQ + (FF_pts ?? 0) - WA
+        ? adjustedMargin + (candidateFactor_pts ?? 0) + (FF_pts ?? 0) + WA
+        : adjustedMargin * IF * stub.CQ + (FF_pts ?? 0) + WA
       : null;
     return {
       ...stub,
@@ -669,9 +748,12 @@ function calculateStateModel(
       FF_pts,
       adjustedMargin,
       competitivenessAdjusted: competitiveness?.adjusted ?? false,
+      blanketApplied: competitiveness?.blanketApplied ?? false,
       priorContestedMargin: competitiveness?.priorContestedMargin ?? null,
-      presidentialBaselineMargin:
-        competitiveness?.presidentialBaselineMargin ?? null,
+      priorContestedYear: competitiveness?.priorContestedYear ?? null,
+      presidentialBaselineMargin: competitiveness?.presidentialBaselineMargin ?? null,
+      presidentialBaselineYear: competitiveness?.presidentialBaselineYear ?? null,
+      minValidYear,
       WA,
       WFCapped: wfCapped,
       NM,
@@ -767,30 +849,384 @@ function calculateDistrictModel(districtId: string): DistrictModelCalculation {
   return { races, tpl };
 }
 
+// ── TPL State Map ────────────────────────────────────────────────────────────
+
+const STATES_GEO_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
+
+type TplMapRow = { abbr: string; name: string; tpl: number };
+
+function TplStateMap({ rows, onSelect }: { rows: TplMapRow[]; onSelect: (abbr: string) => void }) {
+  const isDark = useDarkMode();
+  const mapUnfilled   = isDark ? "#1e2530" : "#c8cdd3";
+  const mapStroke     = isDark ? "#0d1117" : "#f6f8fa";
+  const hoverStroke   = isDark ? "#ffffff" : "#000000";
+  const hoverUnfilled = isDark ? "#2a3441" : "#dde2e7";
+
+  const [hovered, setHovered]   = useState<TplMapRow | null>(null);
+  const [selected, setSelected] = useState<TplMapRow | null>(null);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [mapSize, setMapSize]   = useState({ w: 0, h: 0 });
+  const [mapKey, setMapKey]     = useState(0);
+  const [viewChanged, setViewChanged] = useState(false);
+  const touchStartRef  = useRef<{ x: number; y: number } | null>(null);
+  const ignoreClickRef = useRef(0);
+
+  const rowByName = Object.fromEntries(rows.map((r) => [r.name, r]));
+
+  return (
+    <div
+      className="relative w-full rounded-xl overflow-hidden h-[320px] sm:h-[400px] md:h-[520px]"
+      style={{ border: "1px solid var(--app-border)" }}
+      onMouseMove={(e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        setMapSize({ w: rect.width, h: rect.height });
+        setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+      }}
+    >
+      {/* Hover tooltip — hidden when a panel is open */}
+      {hovered && !selected && (() => {
+        const tipW = 152, tipH = 48, offset = 14, pad = 8;
+        let left = mousePos.x + offset;
+        let top  = mousePos.y + offset;
+        const cW = mapSize.w || 800, cH = mapSize.h || 520;
+        if (left + tipW + pad > cW) left = mousePos.x - tipW - offset;
+        if (top  + tipH + pad > cH) top  = mousePos.y - tipH - offset;
+        if (left < pad) left = pad;
+        if (top  < pad) top  = pad;
+        return (
+          <div
+            className="absolute z-20 pointer-events-none rounded-lg hidden md:block"
+            style={{ left, top, width: tipW, padding: "7px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
+          >
+            <div className="font-bold text-xs mb-0.5" style={{ color: "var(--app-text-primary)" }}>{hovered.name}</div>
+            <div className="text-[10px] font-semibold" style={{ color: marginColor(hovered.tpl) }}>TPL: {fmtMargin(hovered.tpl)}</div>
+          </div>
+        );
+      })()}
+
+      <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} style={{ width: "100%", height: "100%" }}>
+        <ZoomableGroup key={mapKey} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
+          <Geographies geography={STATES_GEO_URL}>
+            {({ geographies }: { geographies: { rsmKey: string; properties?: Record<string, string | undefined> }[] }) =>
+              geographies.map((geo) => {
+                const row = rowByName[geo.properties?.name ?? ""];
+                const isSelected = selected?.abbr === row?.abbr;
+                const fill = row ? getRaceColor(-row.tpl) : mapUnfilled;
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    onMouseEnter={() => row && setHovered(row)}
+                    onMouseLeave={() => setHovered(null)}
+                    onClick={() => {
+                      if (Date.now() < ignoreClickRef.current) return;
+                      if (row) setSelected(isSelected ? null : row);
+                    }}
+                    onPointerDown={(e: React.PointerEvent) => {
+                      if (e.pointerType !== "touch") { touchStartRef.current = null; return; }
+                      touchStartRef.current = { x: e.clientX, y: e.clientY };
+                    }}
+                    onPointerUp={(e: React.PointerEvent) => {
+                      if (e.pointerType !== "touch") return;
+                      const start = touchStartRef.current;
+                      touchStartRef.current = null;
+                      if (!row || !start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
+                      ignoreClickRef.current = Date.now() + 500;
+                      setSelected(isSelected ? null : row);
+                    }}
+                    style={{
+                      default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? 3.5 : 1, outline: "none" },
+                      hover:   { fill: row ? fill : hoverUnfilled, stroke: hoverStroke, strokeWidth: 1.5, outline: "none", cursor: row ? "pointer" : "default" },
+                      pressed: { fill, stroke: hoverStroke, strokeWidth: 3.5, outline: "none" },
+                    }}
+                  />
+                );
+              })
+            }
+          </Geographies>
+        </ZoomableGroup>
+      </ComposableMap>
+
+      {viewChanged && (
+        <button
+          onClick={() => { setMapKey((k) => k + 1); setViewChanged(false); }}
+          className="absolute z-10 bottom-3 left-3 rounded-lg px-2.5 py-1 text-xs font-medium"
+          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", boxShadow: "0 2px 8px rgba(0,0,0,0.18)" }}
+        >
+          Reset
+        </button>
+      )}
+
+      {/* Selected state panel — desktop only, bottom-right */}
+      {selected && (
+        <div
+          className="absolute z-30 hidden md:flex flex-col overflow-hidden rounded-xl"
+          style={{ right: "1.25rem", bottom: 12, width: 172, background: isDark ? "rgba(22,27,34,0.95)" : "rgba(255,255,255,0.95)", border: "1px solid var(--app-border)", boxShadow: "0 10px 28px rgba(0,0,0,0.22)" }}
+        >
+          <div className="shrink-0 p-2 pb-1.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
+            <div className="flex items-center justify-between gap-1.5">
+              <h2 className="min-w-0 flex-1 truncate text-sm font-bold leading-tight" style={{ color: "var(--app-text-primary)" }}>
+                {selected.name}
+              </h2>
+              <button
+                onClick={() => setSelected(null)}
+                className="flex h-5 w-5 shrink-0 items-center justify-center rounded transition-colors"
+                style={{ color: "var(--app-text-very-muted)", background: "var(--app-tab-bg)" }}
+                aria-label="Close"
+              >
+                <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="p-2 flex flex-col gap-1.5">
+            <div className="rounded-md p-2" style={{ background: "var(--app-tab-bg)" }}>
+              <div className="text-[8px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>TPL</div>
+              <div className="text-[11px] font-bold" style={{ color: marginColor(selected.tpl) }}>{fmtMargin(selected.tpl)}</div>
+            </div>
+            <button
+              onClick={() => onSelect(selected.abbr)}
+              className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors w-full"
+              style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
+            >
+              View in State TPL
+              <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ── TPL District Map ─────────────────────────────────────────────────────────
+
+const DISTRICTS_GEO_URL = "/congressional-districts-2026.json";
+
+type TplDistrictRow = { id: string; code: string; state: string; tpl: number };
+
+type DistrictGeoFeature = {
+  rsmKey: string;
+  properties?: { GEOID?: string; CD119FP?: string };
+};
+
+// GeoJSON GEOID → districtPresidentialData key.
+// At-large districts use "00" in GeoJSON but "01" in data, so replace before stripping leading zeros.
+function geoidToDistrictKey(geoid: string): string {
+  const adjusted = geoid.endsWith("00") ? geoid.slice(0, -2) + "01" : geoid;
+  return String(parseInt(adjusted, 10));
+}
+
+function TplDistrictMap({
+  rows,
+  onSelect,
+}: {
+  rows: TplDistrictRow[];
+  onSelect: (state: string, id: string) => void;
+}) {
+  const isDark = useDarkMode();
+  const mapUnfilled   = isDark ? "#1e2530" : "#c8cdd3";
+  const mapStroke     = isDark ? "#0d1117" : "#f6f8fa";
+  const hoverStroke   = isDark ? "#ffffff" : "#000000";
+  const hoverUnfilled = isDark ? "#2a3441" : "#dde2e7";
+
+  const [hovered, setHovered]   = useState<TplDistrictRow | null>(null);
+  const [selected, setSelected] = useState<TplDistrictRow | null>(null);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [mapSize, setMapSize]   = useState({ w: 0, h: 0 });
+  const [mapKey, setMapKey]     = useState(0);
+  const [viewChanged, setViewChanged] = useState(false);
+  const touchStartRef  = useRef<{ x: number; y: number } | null>(null);
+  const ignoreClickRef = useRef(0);
+
+  const rowById = Object.fromEntries(rows.map((r) => [r.id, r]));
+
+  return (
+    <div
+      className="relative w-full rounded-xl overflow-hidden h-[320px] sm:h-[400px] md:h-[520px]"
+      style={{ border: "1px solid var(--app-border)" }}
+      onMouseMove={(e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        setMapSize({ w: rect.width, h: rect.height });
+        setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+      }}
+    >
+      {/* Hover tooltip — hidden when a panel is open */}
+      {hovered && !selected && (() => {
+        const tipW = 152, tipH = 48, offset = 14, pad = 8;
+        let left = mousePos.x + offset;
+        let top  = mousePos.y + offset;
+        const cW = mapSize.w || 800, cH = mapSize.h || 520;
+        if (left + tipW + pad > cW) left = mousePos.x - tipW - offset;
+        if (top  + tipH + pad > cH) top  = mousePos.y - tipH - offset;
+        if (left < pad) left = pad;
+        if (top  < pad) top  = pad;
+        return (
+          <div
+            className="absolute z-20 pointer-events-none rounded-lg hidden md:block"
+            style={{ left, top, width: tipW, padding: "7px 10px", background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
+          >
+            <div className="font-bold text-xs mb-0.5" style={{ color: "var(--app-text-primary)" }}>{hovered.code}</div>
+            <div className="text-[10px] font-semibold" style={{ color: marginColor(hovered.tpl) }}>TPL: {fmtMargin(hovered.tpl)}</div>
+          </div>
+        );
+      })()}
+
+      <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} style={{ width: "100%", height: "100%" }}>
+        <ZoomableGroup key={mapKey} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
+          <Geographies geography={DISTRICTS_GEO_URL}>
+            {({ geographies }: { geographies: DistrictGeoFeature[] }) =>
+              geographies.map((geo) => {
+                const geoid = geo.properties?.GEOID ?? "";
+                const key = geoidToDistrictKey(geoid);
+                const row = rowById[key];
+                const isSelected = selected?.id === row?.id;
+                const fill = row ? getRaceColor(-row.tpl) : mapUnfilled;
+                return (
+                  <Geography
+                    key={geo.rsmKey}
+                    geography={geo}
+                    onMouseEnter={() => row && setHovered(row)}
+                    onMouseLeave={() => setHovered(null)}
+                    onClick={() => {
+                      if (Date.now() < ignoreClickRef.current) return;
+                      if (row) setSelected(isSelected ? null : row);
+                    }}
+                    onPointerDown={(e: React.PointerEvent) => {
+                      if (e.pointerType !== "touch") { touchStartRef.current = null; return; }
+                      touchStartRef.current = { x: e.clientX, y: e.clientY };
+                    }}
+                    onPointerUp={(e: React.PointerEvent) => {
+                      if (e.pointerType !== "touch") return;
+                      const start = touchStartRef.current;
+                      touchStartRef.current = null;
+                      if (!row || !start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
+                      ignoreClickRef.current = Date.now() + 500;
+                      setSelected(isSelected ? null : row);
+                    }}
+                    style={{
+                      default: { fill, stroke: isSelected ? hoverStroke : mapStroke, strokeWidth: isSelected ? 2 : 0.5, outline: "none" },
+                      hover:   { fill: row ? fill : hoverUnfilled, stroke: hoverStroke, strokeWidth: 1, outline: "none", cursor: row ? "pointer" : "default" },
+                      pressed: { fill, stroke: hoverStroke, strokeWidth: 2, outline: "none" },
+                    }}
+                  />
+                );
+              })
+            }
+          </Geographies>
+        </ZoomableGroup>
+      </ComposableMap>
+
+      {viewChanged && (
+        <button
+          onClick={() => { setMapKey((k) => k + 1); setViewChanged(false); }}
+          className="absolute z-10 bottom-3 left-3 rounded-lg px-2.5 py-1 text-xs font-medium"
+          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", boxShadow: "0 2px 8px rgba(0,0,0,0.18)" }}
+        >
+          Reset
+        </button>
+      )}
+
+      {/* Selected district panel — desktop only, bottom-right */}
+      {selected && (
+        <div
+          className="absolute z-30 hidden md:flex flex-col overflow-hidden rounded-xl"
+          style={{ right: "1.25rem", bottom: 12, width: 172, background: isDark ? "rgba(22,27,34,0.95)" : "rgba(255,255,255,0.95)", border: "1px solid var(--app-border)", boxShadow: "0 10px 28px rgba(0,0,0,0.22)" }}
+        >
+          <div className="shrink-0 p-2 pb-1.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
+            <div className="flex items-center justify-between gap-1.5">
+              <h2 className="min-w-0 flex-1 truncate text-sm font-bold leading-tight" style={{ color: "var(--app-text-primary)" }}>
+                {selected.code}
+              </h2>
+              <button
+                onClick={() => setSelected(null)}
+                className="flex h-5 w-5 shrink-0 items-center justify-center rounded transition-colors"
+                style={{ color: "var(--app-text-very-muted)", background: "var(--app-tab-bg)" }}
+                aria-label="Close"
+              >
+                <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className="p-2 flex flex-col gap-1.5">
+            <div className="rounded-md p-2" style={{ background: "var(--app-tab-bg)" }}>
+              <div className="text-[8px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>District TPL</div>
+              <div className="text-[11px] font-bold" style={{ color: marginColor(selected.tpl) }}>{fmtMargin(selected.tpl)}</div>
+            </div>
+            <button
+              onClick={() => onSelect(selected.state, selected.id)}
+              className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors w-full"
+              style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
+            >
+              View in District TPL
+              <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ── Component ────────────────────────────────────────────────────────────────
 
 export default function TplModelPage() {
-  const [selectedAbbr, setSelectedAbbr] = useState(statesData[0].abbr);
+  const [selectedAbbr, setSelectedAbbr] = useState<string>(() => {
+    if (typeof window === "undefined") return statesData[0].abbr;
+    const stateFromUrl = new URLSearchParams(window.location.search).get("modelState")?.toUpperCase();
+    return stateFromUrl && statesData.some((state) => state.abbr === stateFromUrl) ? stateFromUrl : statesData[0].abbr;
+  });
   const [raceFilter, setRaceFilter] = useState<string>("All");
   const [yearFilter, setYearFilter] = useState<string>("All");
   const [showGlossary, setShowGlossary] = useState(false);
   const [formulaOpen, setFormulaOpen] = useState<string | null>(null);
+  const [adjustedPopupIdx, setAdjustedPopupIdx] = useState<number | null>(null);
   const [allStatesSort, setAllStatesSort] = useState<"centeredTpl" | "tpl" | "absCenteredTpl" | "name">("centeredTpl");
   const [allStatesSortDir, setAllStatesSortDir] = useState<"asc" | "desc">("asc");
 
   // Sub-tab state
-  const [activeSubTab, setActiveSubTab] = useState<"state" | "district" | "table" | "districtTable">("state");
+  const [activeSubTab, setActiveSubTab] = useState<"state" | "district" | "table" | "districtTable">(() => {
+    if (typeof window === "undefined") return "state";
+    const tab = new URLSearchParams(window.location.search).get("modelSubTab");
+    return tab === "state" || tab === "district" || tab === "table" || tab === "districtTable" ? tab : "state";
+  });
+  const [returnSubTab, setReturnSubTab] = useState<"table" | "districtTable" | null>(null);
 
   // District TPL state
-  const initialDistrictStateAbbr = Object.keys(DISTRICTS_BY_STATE).sort()[0];
-  const [selectedDistrictStateAbbr, setSelectedDistrictStateAbbr] = useState(initialDistrictStateAbbr);
-  const [selectedDistrictId, setSelectedDistrictId] = useState(
-    () => DISTRICTS_BY_STATE[initialDistrictStateAbbr]?.[0]?.id ?? ""
+  const initialDistrictId = typeof window !== "undefined"
+    ? new URLSearchParams(window.location.search).get("modelDistrict")
+    : null;
+  const validInitialDistrictId = initialDistrictId && districtPresidentialData[initialDistrictId] ? initialDistrictId : null;
+  const initialDistrictStateAbbr = validInitialDistrictId
+    ? districtPresidentialData[validInitialDistrictId].state
+    : Object.keys(DISTRICTS_BY_STATE).sort()[0];
+  const [selectedDistrictStateAbbr, setSelectedDistrictStateAbbr] = useState<string>(initialDistrictStateAbbr);
+  const [selectedDistrictId, setSelectedDistrictId] = useState<string>(
+    () => validInitialDistrictId ?? DISTRICTS_BY_STATE[initialDistrictStateAbbr]?.[0]?.id ?? ""
   );
 
   // District Table sort state
   const [allDistrictsSort, setAllDistrictsSort] = useState<"tpl" | "centeredTpl" | "absCenteredTpl" | "district">("centeredTpl");
   const [allDistrictsSortDir, setAllDistrictsSortDir] = useState<"asc" | "desc">("asc");
+
+  useEffect(() => {
+    const handlePopState = () => {
+      if (!returnSubTab) return;
+      setActiveSubTab(returnSubTab);
+      setReturnSubTab(null);
+      window.scrollTo({ top: 0, behavior: "instant" });
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [returnSubTab]);
 
   // Derive full state name from abbreviation
   const selectedStateName = useMemo(
@@ -926,6 +1362,50 @@ export default function TplModelPage() {
     }
   }
 
+  function handleSubTabClick(tab: "state" | "district" | "table" | "districtTable") {
+    setReturnSubTab(null);
+    setActiveSubTab(tab);
+  }
+
+  function openStateTplFromTable(abbr: string) {
+    window.history.pushState({ tplModelReturnSubTab: "table" }, "");
+    setReturnSubTab("table");
+    setSelectedAbbr(abbr);
+    setActiveSubTab("state");
+    setRaceFilter("All");
+    setYearFilter("All");
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }
+
+  function openDistrictTplFromDistrictTable(state: string, id: string) {
+    window.history.pushState({ tplModelReturnSubTab: "districtTable" }, "");
+    setReturnSubTab("districtTable");
+    setSelectedDistrictStateAbbr(state);
+    setSelectedDistrictId(id);
+    setActiveSubTab("district");
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }
+
+  function handleReturnToTable() {
+    if (returnSubTab) window.history.back();
+  }
+
+  function stateTplFromParam() {
+    return encodeURIComponent(`/?tab=model&modelSubTab=state&modelState=${selectedAbbr}`);
+  }
+
+  function districtTplFromParam() {
+    return encodeURIComponent(`/?tab=model&modelSubTab=district&modelDistrict=${selectedDistrictId}`);
+  }
+
+  function withTplReturn(href: string, from: string) {
+    return `${href}?from=${from}`;
+  }
+
+  const selectedDistrictHouseHref = selectedDistrictData
+    ? houseData.find((race) => race.name === selectedDistrictData.code)?.id.toLowerCase()
+    : null;
+
   return (
     <div className="mt-1 md:mt-2">
 
@@ -934,7 +1414,7 @@ export default function TplModelPage() {
         {(["state", "district", "table", "districtTable"] as const).map((tab) => (
           <button
             key={tab}
-            onClick={() => setActiveSubTab(tab)}
+            onClick={() => handleSubTabClick(tab)}
             className="text-xs font-semibold px-3 py-1.5 rounded-lg"
             style={{
               background: activeSubTab === tab ? "var(--app-text-muted)" : "var(--app-panel)",
@@ -949,6 +1429,15 @@ export default function TplModelPage() {
 
       {/* ── State TPL ── */}
       {activeSubTab === "state" && (<>
+      {returnSubTab === "table" && (
+        <button
+          onClick={handleReturnToTable}
+          className="mb-3 inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
+          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}
+        >
+          ← Back to Table
+        </button>
+      )}
 
       {/* ── State selector ── */}
       <div
@@ -1076,7 +1565,7 @@ export default function TplModelPage() {
           Step 1 — Per-Race Calculations
         </h3>
         <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-          NM = Adjusted Margin × (IF × CQ) + FF pts − WA. IF encodes seat incumbency for G/S/H/L races and presidential approval for P races; both compound with CQ into CF. Margins of 50 points or greater are first blended from 60% prior contested result and 40% prior presidential result.{" "}
+          NM = Adjusted Margin × (IF × CQ) + FF pts + WA. IF encodes seat incumbency for G/S/H/L races and presidential approval for P races; both compound with CQ into CF. Margins of 50 points or greater are first blended from 60% prior contested result and 40% prior presidential result.{" "}
           {!hasS && <span style={{ color: "var(--app-text-very-muted)" }}>WA = 0 (no S). </span>}
           Raw margins are live from the site&apos;s data.
         </p>
@@ -1145,7 +1634,7 @@ export default function TplModelPage() {
                     ["Race", "Race type and name"],
                     ["Year", "Election year. * = odd-year race, not yet included in TPL aggregation"],
                     ["Raw", "Raw Margin = repPct − demPct. Positive = R wins. Live from site data."],
-                    ["Adjusted ↗", "Adjusted Margin — raw margin unless |margin| ≥ 50, then 60% prior contested + 40% prior presidential."],
+                    ["Adjusted ↗", "Adjusted Margin — raw margin unless |margin| ≥ 50, then 60% prior contested + 40% prior presidential (restricted to current boundary vintage for H races). ‡ = blended. § = blanket ×0.8 (no valid prior data within current boundaries)."],
                     ["Incumbent", "Incumbent party marker or Open. State Legislature = -."],
                     ["IF ↗", "Incumbency Factor multiplier. For G/S/H/L: seat incumbency (0.80–1.25). For P: approval-based (1 + presMargin × k_pif × partySign). Compounds with CQ into CF."],
                     ["WQ / LQ", "Winning and losing candidate quality tiers. Generic/Generic = CQ of 1.00."],
@@ -1153,7 +1642,7 @@ export default function TplModelPage() {
                     ["CF ↗", "Candidate Factor = Adjusted Margin × (IF × CQ − 1). Combined compounded signal."],
                     ["FF ↗", "Fundraising Factor pts = AM × (FF − 1). 0 until calibrated."],
                     ["WA ↗", "Wave Adjustment = NES × S × k. Subtracted from the sum. 0 if no S."],
-                    ["NM ↗", "Adjusted × (IF × CQ) + FF pts − WA."],
+                    ["NM ↗", "Adjusted × (IF × CQ) + FF pts + WA."],
                   ].map(([label, tip], ci) => {
                     const isClickable = label in FORMULA_PANELS;
                     return (
@@ -1188,7 +1677,17 @@ export default function TplModelPage() {
                         >
                           {r.raceType}
                         </span>
-                        <span className="font-semibold">{r.race}</span>
+                        {r.detailHref ? (
+                          <Link
+                            href={withTplReturn(r.detailHref, stateTplFromParam())}
+                            className="font-semibold hover:underline"
+                            style={{ color: "var(--app-text-primary)" }}
+                          >
+                            {r.race}
+                          </Link>
+                        ) : (
+                          <span className="font-semibold">{r.race}</span>
+                        )}
                       </span>
                     </td>
                     <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>
@@ -1198,16 +1697,15 @@ export default function TplModelPage() {
                       {fmtMargin(r.rawMargin)}
                     </td>
                     <td
-                      className="px-2 py-2 text-left tabular-nums font-semibold"
+                      className={`px-2 py-2 text-left tabular-nums font-semibold${r.competitivenessAdjusted ? " cursor-pointer select-none" : ""}`}
                       style={{ color: marginColor(r.adjustedMargin) }}
-                      title={
-                        r.competitivenessAdjusted
-                          ? `60% prior result (${fmtMargin(r.priorContestedMargin)}) + 40% prior presidential result (${fmtMargin(r.presidentialBaselineMargin)})`
-                          : "Raw margin is under 50 points; no competitiveness adjustment"
-                      }
+                      onClick={r.competitivenessAdjusted ? () => setAdjustedPopupIdx(i) : undefined}
                     >
                       {fmtMargin(r.adjustedMargin)}
-                      {r.competitivenessAdjusted && (
+                      {r.blanketApplied && (
+                        <span className="ml-0.5" style={{ color: "var(--app-text-very-muted)" }}>§</span>
+                      )}
+                      {r.competitivenessAdjusted && !r.blanketApplied && (
                         <span className="ml-0.5" style={{ color: "var(--app-text-very-muted)" }}>‡</span>
                       )}
                     </td>
@@ -1236,7 +1734,7 @@ export default function TplModelPage() {
                       {r.FF_pts != null && r.FF_pts !== 0 ? (r.FF_pts > 0 ? "+" : "") + r.FF_pts.toFixed(2) : "—"}
                     </td>
                     <td className="px-2 py-2 text-left tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
-                      {r.WA !== 0 ? (-r.WA > 0 ? "+" : "") + (-r.WA).toFixed(2) : "—"}
+                      {r.WA !== 0 ? (r.WA > 0 ? "+" : "") + r.WA.toFixed(2) : "—"}
                       {r.WFCapped && <span style={{ color: "var(--app-text-very-muted)" }}>†</span>}
                     </td>
                     <td
@@ -1500,6 +1998,16 @@ export default function TplModelPage() {
       {/* ── District TPL ── */}
       {activeSubTab === "district" && (
         <>
+          {returnSubTab === "districtTable" && (
+            <button
+              onClick={handleReturnToTable}
+              className="mb-3 inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
+              style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}
+            >
+              ← Back to District Table
+            </button>
+          )}
+
           {/* State + District selectors */}
           <div className="mb-5 flex flex-col sm:flex-row sm:items-center gap-3 rounded-xl px-4 py-4"
             style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
@@ -1558,10 +2066,11 @@ export default function TplModelPage() {
             </p>
             <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
               <div className="overflow-x-auto">
-                <table className="w-full min-w-[500px] text-xs">
+                <table className="w-full min-w-[560px] text-xs">
                   <thead>
                     <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
                       {[
+                        ["Race", "Race type and name"],
                         ["Year", "Election year"],
                         ["Raw", "Presidential two-party margin (R-positive). Reaggregated to 2026 boundaries."],
                         ["IF ↗", "Presidential approval IF = 1 + presMargin × k_pif × partySign. Click for details."],
@@ -1576,7 +2085,7 @@ export default function TplModelPage() {
                           key={label}
                           title={panelKey ? `Click to see ${label} formula` : tip}
                           className={`px-2 py-2 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap text-left ${panelKey ? "cursor-pointer select-none" : ""}`}
-                          style={{ color: ci === 6 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                          style={{ color: ci === 7 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
                           onClick={panelKey ? () => setFormulaOpen(panelKey) : undefined}
                         >
                           {label}{panelKey && <span className="ml-0.5 opacity-50">ⓘ</span>}
@@ -1594,6 +2103,19 @@ export default function TplModelPage() {
                           borderBottom: "1px solid var(--app-border)",
                         }}
                       >
+                        <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
+                          {selectedDistrictHouseHref ? (
+                            <Link
+                              href={withTplReturn(`/house/${selectedDistrictHouseHref}`, districtTplFromParam())}
+                              className="font-semibold hover:underline"
+                              style={{ color: "var(--app-text-primary)" }}
+                            >
+                              President
+                            </Link>
+                          ) : (
+                            <span className="font-semibold">President</span>
+                          )}
+                        </td>
                         <td className="px-2 py-2 tabular-nums font-semibold" style={{ color: "var(--app-text-primary)" }}>{r.year}</td>
                         <td className="px-2 py-2 tabular-nums font-mono" style={{ color: marginColor(r.rawMargin) }}>
                           {fmtMargin(r.rawMargin)}
@@ -1737,6 +2259,11 @@ export default function TplModelPage() {
 
       {/* ── Table ── */}
       {activeSubTab === "table" && (
+        <div className="flex flex-col gap-4">
+        <TplStateMap
+          rows={allStateRows}
+          onSelect={openStateTplFromTable}
+        />
         <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
           <div className="overflow-x-auto">
             <table className="w-full table-fixed text-[11px] md:min-w-[720px] md:text-xs">
@@ -1808,14 +2335,20 @@ export default function TplModelPage() {
             </table>
           </div>
           <div className="px-4 py-2 text-[10px]" style={{ borderTop: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-very-muted)" }}>
-            Click a row to open that state in State TPL. 50-state median TPL = {fmtMargin(nationalTpl.medianTpl)}.
+            Click a row or map state to open in State TPL. 50-state median TPL = {fmtMargin(nationalTpl.medianTpl)}.
           </div>
+        </div>
         </div>
       )}
 
 
       {/* ── District Table ── */}
       {activeSubTab === "districtTable" && (
+        <div className="flex flex-col gap-4">
+        <TplDistrictMap
+          rows={allDistrictRows}
+          onSelect={openDistrictTplFromDistrictTable}
+        />
         <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
           <div className="overflow-x-auto">
             <table className="w-full table-fixed text-[11px] md:min-w-[720px] md:text-xs">
@@ -1886,8 +2419,9 @@ export default function TplModelPage() {
             </table>
           </div>
           <div className="px-4 py-2 text-[10px]" style={{ borderTop: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-very-muted)" }}>
-            Click a row to open that district in District TPL. 435-district median TPL = {fmtMargin(nationalDistrictTpl.medianTpl)}.
+            Click a row or map district to open in District TPL. 435-district median TPL = {fmtMargin(nationalDistrictTpl.medianTpl)}.
           </div>
+        </div>
         </div>
       )}
 
@@ -1953,6 +2487,95 @@ export default function TplModelPage() {
       })()}
 
       {/* ── Formula modal ── */}
+      {adjustedPopupIdx != null && (() => {
+        const r = filteredRaces[adjustedPopupIdx];
+        if (!r) return null;
+        const raw = r.rawMargin;
+        const adj = r.adjustedMargin;
+        const capped = adj != null && raw != null && Math.abs(adj) === Math.abs(raw) && r.competitivenessAdjusted;
+
+        const mc = (v: number | null) => (
+          <span style={{ color: marginColor(v) }}>{fmtMargin(v)}</span>
+        );
+
+        const rows: { label: string; value: React.ReactNode; note?: string }[] = [];
+
+        // Raw margin always first
+        rows.push({ label: "Raw Margin", value: mc(raw) });
+
+        if (r.blanketApplied) {
+          rows.push({ label: "Method", value: `No valid prior data within current boundary vintage (boundary from ${r.minValidYear})` });
+          rows.push({ label: "Adjusted = Raw × 0.8", value: <>{mc(raw)} × {BLANKET_ADJUSTMENT_MULTIPLIER} = {mc(adj)}</> });
+        } else {
+          const hasContested = r.priorContestedMargin != null;
+          const hasPres = r.presidentialBaselineMargin != null;
+          const oneOnly = hasContested !== hasPres;
+
+          rows.push({
+            label: `Prior Contested${hasContested ? ` (${r.priorContestedYear})` : ""}`,
+            value: hasContested ? mc(r.priorContestedMargin) : "—",
+            note: !hasContested ? "No result < 50 pts within valid boundary window" : undefined,
+          });
+          rows.push({
+            label: `Prior Presidential${hasPres ? ` (${r.presidentialBaselineYear})` : ""}`,
+            value: hasPres ? mc(r.presidentialBaselineMargin) : "—",
+            note: !hasPres ? "No presidential result within valid boundary window" : undefined,
+          });
+
+          if (oneOnly) {
+            const available = hasContested ? r.priorContestedMargin! : r.presidentialBaselineMargin!;
+            rows.push({ label: "One source missing — full weight on available", value: <>100% × {mc(available)} = {mc(available)}</> });
+          } else {
+            rows.push({
+              label: "Blend (0.6 × Contested + 0.4 × Presidential)",
+              value: <>0.6 × {mc(r.priorContestedMargin)} + 0.4 × {mc(r.presidentialBaselineMargin)}</>,
+            });
+          }
+
+          if (capped) {
+            rows.push({ label: "Cap applied (blend > raw)", value: <>Adjusted = Raw = {mc(raw)}</> });
+          } else {
+            rows.push({ label: "Adjusted Margin", value: mc(adj) });
+          }
+        }
+
+        return (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            style={{ background: "rgba(0,0,0,0.5)" }}
+            onClick={() => setAdjustedPopupIdx(null)}
+          >
+            <div
+              className="rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden"
+              style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex items-center justify-between px-5 py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
+                <div>
+                  <div className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>Adjusted Margin</div>
+                  <div className="text-[11px] mt-0.5" style={{ color: "var(--app-text-muted)" }}>
+                    {r.race} · {r.year}
+                    {r.raceType === "H" && r.minValidYear > 0 && (
+                      <span style={{ color: "var(--app-text-very-muted)" }}> · boundary from {r.minValidYear}</span>
+                    )}
+                  </div>
+                </div>
+                <button onClick={() => setAdjustedPopupIdx(null)} className="text-lg leading-none" style={{ color: "var(--app-text-muted)" }}>×</button>
+              </div>
+              <div className="divide-y" style={{ borderColor: "var(--app-border)" }}>
+                {rows.map((row, i) => (
+                  <div key={i} className="px-5 py-3">
+                    <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-very-muted)" }}>{row.label}</div>
+                    <div className="font-mono text-xs font-semibold" style={{ color: "var(--app-text-primary)" }}>{row.value}</div>
+                    {row.note && <div className="text-[11px] mt-1" style={{ color: "var(--app-text-muted)" }}>{row.note}</div>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+      })()}
+
       {formulaOpen && formulaOpen !== "S" && FORMULA_PANELS[formulaOpen] && (() => {
         const panel = FORMULA_PANELS[formulaOpen];
         return (

@@ -7,6 +7,7 @@ import { Suspense } from "react";
 
 function getLabel(from: string | null): string {
   if (!from) return "Back";
+  if (from.startsWith("/?tab=model")) return "Back to TPL";
   if (from === "/") return "Back to Map";
   return "Back to Map";
 }

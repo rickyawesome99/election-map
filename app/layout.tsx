@@ -27,10 +27,8 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: "light dark",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f6f8fa" },
-    { media: "(prefers-color-scheme: dark)", color: "#0d1117" },
-  ],
+  themeColor: "#f6f8fa",
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
@@ -46,7 +44,7 @@ export default function RootLayout({
           id="restore-theme"
           strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var dark=localStorage.getItem('darkMode')==='true';document.documentElement.classList.toggle('dark',dark);var color=dark?'#0d1117':'#f6f8fa';var meta=document.querySelector('meta[name="theme-color"]:not([media])');if(!meta){meta=document.createElement('meta');meta.name='theme-color';document.head.appendChild(meta)}meta.content=color}catch(e){}})()`,
+            __html: `(function(){try{var dark=localStorage.getItem('darkMode')==='true';var color=dark?'#0d1117':'#f6f8fa';document.documentElement.classList.toggle('dark',dark);document.documentElement.style.backgroundColor=color;document.documentElement.style.colorScheme=dark?'dark':'light';var metas=document.querySelectorAll('meta[name="theme-color"]');if(!metas.length){var meta=document.createElement('meta');meta.name='theme-color';document.head.appendChild(meta);metas=[meta]}metas.forEach(function(meta){meta.removeAttribute('media');meta.content=color})}catch(e){}})()`,
           }}
         />
         <AppShell />

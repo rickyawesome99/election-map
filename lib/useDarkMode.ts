@@ -8,13 +8,29 @@ const DARK_THEME_COLOR = "#0d1117";
 
 function syncThemeColor(darkMode: boolean): void {
   const color = darkMode ? DARK_THEME_COLOR : LIGHT_THEME_COLOR;
-  let meta = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]:not([media])');
-  if (!meta) {
-    meta = document.createElement("meta");
+  document.documentElement.style.backgroundColor = color;
+  document.documentElement.style.colorScheme = darkMode ? "dark" : "light";
+  let metas = document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]');
+  if (metas.length === 0) {
+    const meta = document.createElement("meta");
     meta.name = "theme-color";
     document.head.appendChild(meta);
+    metas = document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]');
   }
-  meta.content = color;
+  metas.forEach((meta) => {
+    meta.removeAttribute("media");
+    meta.content = color;
+  });
+}
+
+function ensureAppleStatusBarMeta(): void {
+  let meta = document.querySelector<HTMLMetaElement>('meta[name="apple-mobile-web-app-status-bar-style"]');
+  if (!meta) {
+    meta = document.createElement("meta");
+    meta.name = "apple-mobile-web-app-status-bar-style";
+    document.head.appendChild(meta);
+  }
+  meta.content = "black-translucent";
 }
 
 function getSnapshot(): boolean {
@@ -51,6 +67,7 @@ function subscribe(onStoreChange: () => void): () => void {
 export function setDarkMode(darkMode: boolean): void {
   document.documentElement.classList.toggle("dark", darkMode);
   syncThemeColor(darkMode);
+  ensureAppleStatusBarMeta();
   localStorage.setItem(THEME_STORAGE_KEY, String(darkMode));
 }
 

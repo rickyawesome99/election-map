@@ -1,4 +1,5 @@
 district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent,inc_party,dem_name,rep_name,incumbent,proj_dem,proj_rep,proj_margin,prob_dem,prob_rep,rcp_dem,rcp_rep,kalshi_dem,kalshi_rep,poly_dem,poly_rep
+201,AK-01,AK,Alaska,2026,TBD,Nicholas Begich III,R,Matthew Schultz,Nicholas Begich III,R,46.9,53.1,6.2,27.6,72.4,N/A,N/A,N/A,N/A,N/A,N/A
 101,AL-01,AL,Alabama,2026,TBD,Barry Moore,R,Clyde Jones,Rhett Marques,None,24.65,75.35,50.7,0,100,N/A,N/A,0.00,0.92,N/A,N/A
 102,AL-02,AL,Alabama,2026,TBD,Shomari Figures,D,Shomari Figures,Hampton Harris,D,58.65,41.35,-17.3,95.1,4.9,N/A,N/A,0.28,0.67,N/A,N/A
 103,AL-03,AL,Alabama,2026,TBD,Mike Rogers,R,Victor McInnis,Mike Rogers,R,25.6,74.4,48.8,0,100,N/A,N/A,0.00,0.76,N/A,N/A
@@ -6,7 +7,10 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 105,AL-05,AL,Alabama,2026,TBD,Dale Strong,R,Andrew Sneed,Dale Strong,R,34.4,65.6,31.2,0.1,99.9,N/A,N/A,0.00,0.76,N/A,N/A
 106,AL-06,AL,Alabama,2026,TBD,Gary Palmer,R,Elizabeth Anderson,Gary Palmer,R,31.9,68.1,36.2,0,100,N/A,N/A,0.00,0.75,N/A,N/A
 107,AL-07,AL,Alabama,2026,TBD,Terri Sewell,D,Terri Sewell,Generic Republican,D,68,32,-36.0,100,0,N/A,N/A,0.70,0.11,N/A,N/A
-201,AK-01,AK,Alaska,2026,TBD,Nicholas Begich III,R,Matthew Schultz,Nicholas Begich III,R,46.9,53.1,6.2,27.6,72.4,N/A,N/A,N/A,N/A,N/A,N/A
+501,AR-01,AR,Arkansas,2026,TBD,Rick Crawford,R,Terri Green,Rick Crawford,R,27.95,72.05,44.1,0,100,N/A,N/A,0.03,0.97,N/A,N/A
+502,AR-02,AR,Arkansas,2026,TBD,French Hill,R,Chris Jones,French Hill,R,43.3,56.7,13.4,10,90,N/A,N/A,0.16,0.83,N/A,N/A
+503,AR-03,AR,Arkansas,2026,TBD,Steve Womack,R,Robb Ryerse,Steve Womack,R,36.65,63.35,26.7,0.5,99.5,N/A,N/A,0.00,0.76,N/A,N/A
+504,AR-04,AR,Arkansas,2026,TBD,Bruce Westerman,R,James Russell,Bruce Westerman,R,30.05,69.95,39.9,0,100,N/A,N/A,0.00,0.84,N/A,N/A
 401,AZ-01,AZ,Arizona,2026,TBD,David Schweikert,R,Jonathan Treble,Thomas Feely,None,51.2,48.8,-2.4,58.9,41.1,N/A,N/A,N/A,N/A,N/A,N/A
 402,AZ-02,AZ,Arizona,2026,TBD,Eli Crane,R,Jonathan Nez,Eli Crane,R,45.75,54.25,8.5,20.9,79.1,N/A,N/A,N/A,N/A,N/A,N/A
 403,AZ-03,AZ,Arizona,2026,TBD,Yassamin Ansari,D,Yassamin Ansari,Kirt Burgess,D,75.55,24.45,-51.1,100,0,N/A,N/A,0.77,0.00,N/A,N/A
@@ -16,10 +20,6 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 407,AZ-07,AZ,Arizona,2026,TBD,Adelita Grijalva,D,Adelita Grijalva,Daniel Butierez,D,66.65,33.35,-33.3,99.9,0.1,N/A,N/A,0.76,0.00,N/A,N/A
 408,AZ-08,AZ,Arizona,2026,TBD,Abraham Hamadeh,R,Bernadette Placentia,Abraham Hamadeh,R,43.75,56.25,12.5,11.5,88.5,N/A,N/A,0.08,0.69,N/A,N/A
 409,AZ-09,AZ,Arizona,2026,TBD,Paul Gosar,R,Danielle Sterbinsky,Paul Gosar,R,36.95,63.05,26.1,0.6,99.4,N/A,N/A,0.00,0.74,N/A,N/A
-501,AR-01,AR,Arkansas,2026,TBD,Rick Crawford,R,Terri Green,Rick Crawford,R,27.95,72.05,44.1,0,100,N/A,N/A,0.03,0.97,N/A,N/A
-502,AR-02,AR,Arkansas,2026,TBD,French Hill,R,Chris Jones,French Hill,R,43.3,56.7,13.4,10,90,N/A,N/A,0.16,0.83,N/A,N/A
-503,AR-03,AR,Arkansas,2026,TBD,Steve Womack,R,Robb Ryerse,Steve Womack,R,36.65,63.35,26.7,0.5,99.5,N/A,N/A,0.00,0.76,N/A,N/A
-504,AR-04,AR,Arkansas,2026,TBD,Bruce Westerman,R,James Russell,Bruce Westerman,R,30.05,69.95,39.9,0,100,N/A,N/A,0.00,0.84,N/A,N/A
 601,CA-01,CA,California,2026,TBD,James Gallagher,R,Mike McGuire,James Gallagher,R,59.75,40.25,-19.5,96.9,3.1,N/A,N/A,0.92,0.00,N/A,N/A
 602,CA-02,CA,California,2026,TBD,Jared Huffman,D,Jared Huffman,Robin Littau,D,66.2,33.8,-32.4,99.9,0.1,N/A,N/A,0.76,0.00,N/A,N/A
 603,CA-03,CA,California,2026,TBD,Ami Bera,D,Ami Bera,Robb Tucker,D,57.45,42.55,-14.9,92.4,7.6,N/A,N/A,N/A,N/A,N/A,N/A
@@ -130,6 +130,10 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 1314,GA-14,GA,Georgia,2026,TBD,Marjorie Taylor Greene,R,Shawn Harris,Clayton Fuller,None,35.15,64.85,29.7,0.2,99.8,N/A,N/A,0.00,0.71,N/A,N/A
 1501,HI-01,HI,Hawaii,2026,TBD,Ed Case,D,Ed Case,Maxwell Frazier,D,69.25,30.75,-38.5,100,0,N/A,N/A,0.93,0.00,N/A,N/A
 1502,HI-02,HI,Hawaii,2026,TBD,Jill Tokuda,D,Jill Tokuda,Brenton Awa,D,67.25,32.75,-34.5,100,0,N/A,N/A,0.70,0.00,N/A,N/A
+1901,IA-01,IA,Iowa,2026,TBD,Mariannette Miller-Meeks,R,Christina Bohannan,Mariannette Miller-Meeks,R,50.9,49.1,-1.8,56.8,43.2,N/A,N/A,N/A,N/A,N/A,N/A
+1902,IA-02,IA,Iowa,2026,TBD,Ashley Hinson,R,Lindsay James,Joe Mitchell,None,48.6,51.4,2.8,39.6,60.4,N/A,N/A,0.47,0.50,N/A,N/A
+1903,IA-03,IA,Iowa,2026,TBD,Zach Nunn,R,Sarah Trone Garriott,Zach Nunn,R,51.3,48.7,-2.6,59.8,40.2,N/A,N/A,N/A,N/A,N/A,N/A
+1904,IA-04,IA,Iowa,2026,TBD,Randy Feenstra,R,Dave Dawson,Chris McGowan,None,37.55,62.45,24.9,0.9,99.1,N/A,N/A,0.00,0.84,N/A,N/A
 1601,ID-01,ID,Idaho,2026,TBD,Russ Fulcher,R,Kaylee Peterson,Russ Fulcher,R,30.5,69.5,39.0,0,100,N/A,N/A,0.00,0.95,N/A,N/A
 1602,ID-02,ID,Idaho,2026,TBD,Michael Simpson,R,Julie Wiley,Michael Simpson,R,38.55,61.45,22.9,1.4,98.6,N/A,N/A,0.07,0.70,N/A,N/A
 1701,IL-01,IL,Illinois,2026,TBD,Jonathan Jackson,D,Jonathan Jackson,Christian Maxwell,D,71.7,28.3,-43.4,100,0,N/A,N/A,0.69,0.00,N/A,N/A
@@ -158,10 +162,6 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 1807,IN-07,IN,Indiana,2026,TBD,Andre Carson,D,Andre Carson,Felipe Rios,D,73.95,26.05,-47.9,100,0,N/A,N/A,N/A,N/A,N/A,N/A
 1808,IN-08,IN,Indiana,2026,TBD,Mark Messmer,R,Mary Allen,Mark Messmer,R,33.3,66.7,33.4,0.1,99.9,N/A,N/A,0.00,0.70,N/A,N/A
 1809,IN-09,IN,Indiana,2026,TBD,Erin Houchin,R,James Graham,Erin Houchin,R,36.15,63.85,27.7,0.4,99.6,N/A,N/A,0.00,0.90,N/A,N/A
-1901,IA-01,IA,Iowa,2026,TBD,Mariannette Miller-Meeks,R,Christina Bohannan,Mariannette Miller-Meeks,R,50.9,49.1,-1.8,56.8,43.2,N/A,N/A,N/A,N/A,N/A,N/A
-1902,IA-02,IA,Iowa,2026,TBD,Ashley Hinson,R,Lindsay James,Joe Mitchell,None,48.6,51.4,2.8,39.6,60.4,N/A,N/A,0.47,0.50,N/A,N/A
-1903,IA-03,IA,Iowa,2026,TBD,Zach Nunn,R,Sarah Trone Garriott,Zach Nunn,R,51.3,48.7,-2.6,59.8,40.2,N/A,N/A,N/A,N/A,N/A,N/A
-1904,IA-04,IA,Iowa,2026,TBD,Randy Feenstra,R,Dave Dawson,Chris McGowan,None,37.55,62.45,24.9,0.9,99.1,N/A,N/A,0.00,0.84,N/A,N/A
 2001,KS-01,KS,Kansas,2026,TBD,Tracey Mann,R,Kenneth McRoberts,Tracey Mann,R,34.4,65.6,31.2,0.1,99.9,N/A,N/A,0.00,0.91,N/A,N/A
 2002,KS-02,KS,Kansas,2026,TBD,Derek Schmidt,R,Don Coover,Derek Schmidt,R,42.7,57.3,14.6,8.2,91.8,N/A,N/A,0.02,0.87,N/A,N/A
 2003,KS-03,KS,Kansas,2026,TBD,Sharice Davids,D,Sharice Davids,Chase Laporte,D,57.2,42.8,-14.4,91.5,8.5,N/A,N/A,0.89,0.01,N/A,N/A
@@ -178,16 +178,6 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 2204,LA-04,LA,Louisiana,2026,TBD,Mike Johnson,R,Matthew Gromlich,Mike Johnson,R,19.3,80.7,61.4,0,100,N/A,N/A,0.01,0.68,N/A,N/A
 2205,LA-05,LA,Louisiana,2026,TBD,Julia Letlow,R,Dan Mckay,Julia Letlow,R,30.95,69.05,38.1,0,100,N/A,N/A,0.06,0.92,N/A,N/A
 2206,LA-06,LA,Louisiana,2026,TBD,Cleo Fields,D,Cleo Fields,Peter Williams,D,59.25,40.75,-18.5,96.1,3.9,N/A,N/A,0.05,0.66,N/A,N/A
-2301,ME-01,ME,Maine,2026,TBD,Chellie Pingree,D,Chellie Pingree,Eric Small,D,63.75,36.25,-27.5,99.6,0.4,N/A,N/A,0.96,0.00,N/A,N/A
-2302,ME-02,ME,Maine,2026,TBD,Jared Golden,D,Matt Dunlap,Paul LePage,None,47.05,52.95,5.9,28.6,71.4,N/A,N/A,N/A,N/A,N/A,N/A
-2401,MD-01,MD,Maryland,2026,TBD,Andy Harris,R,Daniel Schwartz,Andy Harris,R,42.5,57.5,15.0,7.6,92.4,N/A,N/A,0.18,0.56,N/A,N/A
-2402,MD-02,MD,Maryland,2026,TBD,Johnny Olszewski,D,John Olszewski,David Wallace,None,62.75,37.25,-25.5,99.3,0.7,N/A,N/A,0.87,0.00,N/A,N/A
-2403,MD-03,MD,Maryland,2026,TBD,Sarah Elfreth,D,Sarah Elfreth,Penny Kennedy,D,64.9,35.1,-29.8,99.8,0.2,N/A,N/A,0.73,0.00,N/A,N/A
-2404,MD-04,MD,Maryland,2026,TBD,Glenn Ivey,D,Glenn Ivey,Generic Republican,D,92.4,7.6,-84.8,100,0,N/A,N/A,0.72,0.00,N/A,N/A
-2405,MD-05,MD,Maryland,2026,TBD,Steny Hoyer,D,Quincy Bareebe,Michelle Talkington,None,70.3,29.7,-40.6,100,0,N/A,N/A,0.72,0.00,N/A,N/A
-2406,MD-06,MD,Maryland,2026,TBD,April Delaney,D,April Delaney,Robin Ficker,D,56.1,43.9,-12.2,87.9,12.1,N/A,N/A,0.68,0.01,N/A,N/A
-2407,MD-07,MD,Maryland,2026,TBD,Kweisi Mfume,D,Kweisi Mfume,Generic Republican,D,84.4,15.6,-68.8,100,0,N/A,N/A,0.14,0.00,N/A,N/A
-2408,MD-08,MD,Maryland,2026,TBD,Jamie Raskin,D,Jamie Raskin,Cheryl Riley,D,83.3,16.7,-66.6,100,0,N/A,N/A,0.69,0.00,N/A,N/A
 2501,MA-01,MA,Massachusetts,2026,TBD,Richard Neal,D,Richard Neal,Generic Republican,D,66,34,-32.0,99.9,0.1,N/A,N/A,0.71,0.00,N/A,N/A
 2502,MA-02,MA,Massachusetts,2026,TBD,James McGovern,D,James McGovern,Generic Republican,D,70.45,29.55,-40.9,100,0,N/A,N/A,0.94,0.00,N/A,N/A
 2503,MA-03,MA,Massachusetts,2026,TBD,Lori Trahan,D,Lori Trahan,Gary Grossi,D,68.8,31.2,-37.6,100,0,N/A,N/A,0.72,0.00,N/A,N/A
@@ -197,6 +187,16 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 2507,MA-07,MA,Massachusetts,2026,TBD,Ayanna Pressley,D,Ayanna Pressley,Generic Republican,D,91.55,8.45,-83.1,100,0,N/A,N/A,0.84,0.00,N/A,N/A
 2508,MA-08,MA,Massachusetts,2026,TBD,Stephen Lynch,D,Stephen Lynch,Gavin Solomon,D,70.95,29.05,-41.9,100,0,N/A,N/A,0.70,0.00,N/A,N/A
 2509,MA-09,MA,Massachusetts,2026,TBD,William Keating,D,William Keating,Robert MacAllister,D,60.1,39.9,-20.2,97.3,2.7,N/A,N/A,0.71,0.00,N/A,N/A
+2401,MD-01,MD,Maryland,2026,TBD,Andy Harris,R,Daniel Schwartz,Andy Harris,R,42.5,57.5,15.0,7.6,92.4,N/A,N/A,0.18,0.56,N/A,N/A
+2402,MD-02,MD,Maryland,2026,TBD,Johnny Olszewski,D,John Olszewski,David Wallace,None,62.75,37.25,-25.5,99.3,0.7,N/A,N/A,0.87,0.00,N/A,N/A
+2403,MD-03,MD,Maryland,2026,TBD,Sarah Elfreth,D,Sarah Elfreth,Penny Kennedy,D,64.9,35.1,-29.8,99.8,0.2,N/A,N/A,0.73,0.00,N/A,N/A
+2404,MD-04,MD,Maryland,2026,TBD,Glenn Ivey,D,Glenn Ivey,Generic Republican,D,92.4,7.6,-84.8,100,0,N/A,N/A,0.72,0.00,N/A,N/A
+2405,MD-05,MD,Maryland,2026,TBD,Steny Hoyer,D,Quincy Bareebe,Michelle Talkington,None,70.3,29.7,-40.6,100,0,N/A,N/A,0.72,0.00,N/A,N/A
+2406,MD-06,MD,Maryland,2026,TBD,April Delaney,D,April Delaney,Robin Ficker,D,56.1,43.9,-12.2,87.9,12.1,N/A,N/A,0.68,0.01,N/A,N/A
+2407,MD-07,MD,Maryland,2026,TBD,Kweisi Mfume,D,Kweisi Mfume,Generic Republican,D,84.4,15.6,-68.8,100,0,N/A,N/A,0.14,0.00,N/A,N/A
+2408,MD-08,MD,Maryland,2026,TBD,Jamie Raskin,D,Jamie Raskin,Cheryl Riley,D,83.3,16.7,-66.6,100,0,N/A,N/A,0.69,0.00,N/A,N/A
+2301,ME-01,ME,Maine,2026,TBD,Chellie Pingree,D,Chellie Pingree,Eric Small,D,63.75,36.25,-27.5,99.6,0.4,N/A,N/A,0.96,0.00,N/A,N/A
+2302,ME-02,ME,Maine,2026,TBD,Jared Golden,D,Matt Dunlap,Paul LePage,None,47.05,52.95,5.9,28.6,71.4,N/A,N/A,N/A,N/A,N/A,N/A
 2601,MI-01,MI,Michigan,2026,TBD,Jack Bergman,R,Callie Barr,Jack Bergman,R,42.1,57.9,15.8,6.6,93.4,N/A,N/A,0.27,0.70,N/A,N/A
 2602,MI-02,MI,Michigan,2026,TBD,John Moolenaar,R,Benjamin Ambrose,John Moolenaar,R,36.3,63.7,27.4,0.4,99.6,N/A,N/A,0.00,0.73,N/A,N/A
 2603,MI-03,MI,Michigan,2026,TBD,Hillary Scholten,D,Hillary Scholten,J Fiorletta,D,58.75,41.25,-17.5,95.3,4.7,N/A,N/A,N/A,N/A,N/A,N/A
@@ -218,10 +218,6 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 2706,MN-06,MN,Minnesota,2026,TBD,Tom Emmer,R,Generic Democrat,Tom Emmer,R,38.5,61.5,23.0,1.4,98.6,N/A,N/A,0.12,0.38,N/A,N/A
 2707,MN-07,MN,Minnesota,2026,TBD,Michelle Fischbach,R,Generic Democrat,Michelle Fischbach,R,30.9,69.1,38.2,0,100,N/A,N/A,0.00,0.69,N/A,N/A
 2708,MN-08,MN,Minnesota,2026,TBD,Pete Stauber,R,Generic Democrat,Pete Stauber,R,42.05,57.95,15.9,6.4,93.6,N/A,N/A,0.27,0.70,N/A,N/A
-2801,MS-01,MS,Mississippi,2026,TBD,Trent Kelly,R,Cliff Johnson,Trent Kelly,R,35,65,30.0,0.2,99.8,N/A,N/A,0.00,0.73,N/A,N/A
-2802,MS-02,MS,Mississippi,2026,TBD,Bennie Thompson,D,Bennie Thompson,Ron Eller,D,66.05,33.95,-32.1,99.9,0.1,N/A,N/A,0.84,0.13,N/A,N/A
-2803,MS-03,MS,Mississippi,2026,TBD,Michael Guest,R,Michael Chiaradio,Michael Guest,R,35.55,64.45,28.9,0.3,99.7,N/A,N/A,0.00,0.94,N/A,N/A
-2804,MS-04,MS,Mississippi,2026,TBD,Mike Ezell,R,Jeffrey Hulum,Mike Ezell,R,30.75,69.25,38.5,0,100,N/A,N/A,0.00,0.60,N/A,N/A
 2901,MO-01,MO,Missouri,2026,TBD,Wesley Bell,D,Wesley Bell,Generic Republican,D,82.8,17.2,-65.6,100,0,N/A,N/A,0.71,0.00,N/A,N/A
 2902,MO-02,MO,Missouri,2026,TBD,Ann Wagner,R,Frederick Wellman,Ann Wagner,R,46.6,53.4,6.8,25.9,74.1,N/A,N/A,0.19,0.78,N/A,N/A
 2903,MO-03,MO,Missouri,2026,TBD,Bob Onder,R,Bethany Mann,Bob Onder,None,37.85,62.15,24.3,1,99,N/A,N/A,0.00,0.70,N/A,N/A
@@ -230,15 +226,30 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 2906,MO-06,MO,Missouri,2026,TBD,Sam Graves,R,Matthew Levine,Sam Graves,R,30.8,69.2,38.4,0,100,N/A,N/A,0.00,0.80,N/A,N/A
 2907,MO-07,MO,Missouri,2026,TBD,Eric Burlison,R,Missi Hesketh,Eric Burlison,R,29.15,70.85,41.7,0,100,N/A,N/A,0.02,0.72,N/A,N/A
 2908,MO-08,MO,Missouri,2026,TBD,Jason Smith,R,Clayton Harbison,Jason Smith,R,23.4,76.6,53.2,0,100,N/A,N/A,0.01,0.71,N/A,N/A
+2801,MS-01,MS,Mississippi,2026,TBD,Trent Kelly,R,Cliff Johnson,Trent Kelly,R,35,65,30.0,0.2,99.8,N/A,N/A,0.00,0.73,N/A,N/A
+2802,MS-02,MS,Mississippi,2026,TBD,Bennie Thompson,D,Bennie Thompson,Ron Eller,D,66.05,33.95,-32.1,99.9,0.1,N/A,N/A,0.84,0.13,N/A,N/A
+2803,MS-03,MS,Mississippi,2026,TBD,Michael Guest,R,Michael Chiaradio,Michael Guest,R,35.55,64.45,28.9,0.3,99.7,N/A,N/A,0.00,0.94,N/A,N/A
+2804,MS-04,MS,Mississippi,2026,TBD,Mike Ezell,R,Jeffrey Hulum,Mike Ezell,R,30.75,69.25,38.5,0,100,N/A,N/A,0.00,0.60,N/A,N/A
 3001,MT-01,MT,Montana,2026,TBD,Ryan Zinke,R,Russell Cleveland,Aaron Flint,None,48.25,51.75,3.5,36.8,63.2,N/A,N/A,N/A,N/A,N/A,N/A
 3002,MT-02,MT,Montana,2026,TBD,Troy Downing,R,Brian Miller,Troy Downing,R,36.55,63.45,26.9,0.5,99.5,N/A,N/A,0.00,0.82,N/A,N/A
+3701,NC-01,NC,North Carolina,2026,TBD,Don Davis,D,Don Davis,Laurie Buckhout,D,49.3,50.7,1.4,44.7,55.3,N/A,N/A,N/A,N/A,N/A,N/A
+3702,NC-02,NC,North Carolina,2026,TBD,Deborah Ross,D,Deborah Ross,Eugene Douglass,D,72,28,-44.0,100,0,N/A,N/A,0.74,0.02,N/A,N/A
+3703,NC-03,NC,North Carolina,2026,TBD,Gregory Murphy,R,Raymond Smith,Gregory Murphy,R,42.75,57.25,14.5,8.3,91.7,N/A,N/A,0.04,0.64,N/A,N/A
+3704,NC-04,NC,North Carolina,2026,TBD,Valerie Foushee,D,Valerie Foushee,Mahesh Ganorkar,D,77.35,22.65,-54.7,100,0,N/A,N/A,0.93,0.00,N/A,N/A
+3705,NC-05,NC,North Carolina,2026,TBD,Virginia Foxx,R,Chuck Hubbard,Virginia Foxx,R,43.45,56.55,13.1,10.5,89.5,N/A,N/A,0.01,0.64,N/A,N/A
+3706,NC-06,NC,North Carolina,2026,TBD,Addison McDowell,R,Cyril Jefferson,Addison McDowell,R,40.5,59.5,19.0,3.4,96.6,N/A,N/A,0.08,0.58,N/A,N/A
+3707,NC-07,NC,North Carolina,2026,TBD,David Rouzer,R,Kimberly Hardy,David Rouzer,R,45.4,54.6,9.2,19,81,N/A,N/A,0.03,0.68,N/A,N/A
+3708,NC-08,NC,North Carolina,2026,TBD,Mark Harris,R,Colby Watson,Mark Harris,R,43,57,14.0,9,91,N/A,N/A,0.01,0.54,N/A,N/A
+3709,NC-09,NC,North Carolina,2026,TBD,Richard Hudson,R,Richard Ojeda,Richard Hudson,R,45,55,10.0,17,83,N/A,N/A,0.03,0.55,N/A,N/A
+3710,NC-10,NC,North Carolina,2026,TBD,Pat Harrigan,R,Ashley Bell,Pat Harrigan,R,43.4,56.6,13.2,10.3,89.7,N/A,N/A,0.01,0.01,N/A,N/A
+3711,NC-11,NC,North Carolina,2026,TBD,Chuck Edwards,R,Jamie Ager,Chuck Edwards,R,47.65,52.35,4.7,32.5,67.5,N/A,N/A,N/A,N/A,N/A,N/A
+3712,NC-12,NC,North Carolina,2026,TBD,Alma Adams,D,Alma Adams,Jack Codiga,D,78.05,21.95,-56.1,100,0,N/A,N/A,0.81,0.00,N/A,N/A
+3713,NC-13,NC,North Carolina,2026,TBD,Brad Knott,R,Paul Barringer,Brad Knott,R,44.45,55.55,11.1,14.3,85.7,N/A,N/A,0.11,0.86,N/A,N/A
+3714,NC-14,NC,North Carolina,2026,TBD,Tim Moore,R,Lakesha Womack,Tim Moore,R,44.2,55.8,11.6,13.3,86.7,N/A,N/A,0.17,0.80,N/A,N/A
+3801,ND-01,ND,North Dakota,2026,TBD,Julie Fedorchak,R,Trygve Hammer,Julie Fedorchak,R,29.45,70.55,41.1,0,100,N/A,N/A,N/A,N/A,N/A,N/A
 3101,NE-01,NE,Nebraska,2026,TBD,Mike Flood,R,Christopher Backemeyer,Mike Flood,R,43.15,56.85,13.7,9.5,90.5,N/A,N/A,0.10,0.79,N/A,N/A
 3102,NE-02,NE,Nebraska,2026,TBD,Don Bacon,R,Denise Powell,Brinker Harding,None,53.9,46.1,-7.8,77.1,22.9,N/A,N/A,N/A,N/A,N/A,N/A
 3103,NE-03,NE,Nebraska,2026,TBD,Adrian Smith,R,Becky Stille,Adrian Smith,R,22.55,77.45,54.9,0,100,N/A,N/A,0.03,0.94,N/A,N/A
-3201,NV-01,NV,Nevada,2026,TBD,Dina Titus,D,Dina Titus,Carrie Buck,D,55.4,44.6,-10.8,85,15,N/A,N/A,N/A,N/A,N/A,N/A
-3202,NV-02,NV,Nevada,2026,TBD,Mark Amodei,R,Matthew Fonken,Mark Amodei,R,41,59,18.0,4.2,95.8,N/A,N/A,0.07,0.61,N/A,N/A
-3203,NV-03,NV,Nevada,2026,TBD,Susie Lee,D,Susie Lee,Marty O'Donnell,D,53.55,46.45,-7.1,75,25,N/A,N/A,N/A,N/A,N/A,N/A
-3204,NV-04,NV,Nevada,2026,TBD,Steven Horsford,D,Steven Horsford,David Flippo,D,55.75,44.25,-11.5,86.4,13.6,N/A,N/A,N/A,N/A,N/A,N/A
 3301,NH-01,NH,New Hampshire,2026,TBD,Chris Pappas,D,Chris Pappas,Anthony Dilorenzo,D,55.9,44.1,-11.8,87,13,N/A,N/A,N/A,N/A,N/A,N/A
 3302,NH-02,NH,New Hampshire,2026,TBD,Maggie Goodlander,D,Maggie Goodlander,Lily Williams,D,56.6,43.4,-13.2,89.7,10.3,N/A,N/A,0.90,0.00,N/A,N/A
 3401,NJ-01,NJ,New Jersey,2026,TBD,Donald Norcross,D,Donald Norcross,Generic Republican,D,65.3,34.7,-30.6,99.8,0.2,N/A,N/A,0.71,0.00,N/A,N/A
@@ -256,6 +267,10 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 3501,NM-01,NM,New Mexico,2026,TBD,Melanie Stansbury,D,Melanie Stansbury,Steve Jones,D,61.3,38.7,-22.6,98.5,1.5,N/A,N/A,0.70,0.00,N/A,N/A
 3502,NM-02,NM,New Mexico,2026,TBD,Gabe Vasquez,D,Gabe Vasquez,Jose Orozco,D,55.55,44.45,-11.1,85.5,14.5,N/A,N/A,N/A,N/A,N/A,N/A
 3503,NM-03,NM,New Mexico,2026,TBD,Teresa Leger Fernandez,D,Teresa Leger Fernandez,Martin Zamora,D,58.7,41.3,-17.4,95.2,4.8,N/A,N/A,0.68,0.01,N/A,N/A
+3201,NV-01,NV,Nevada,2026,TBD,Dina Titus,D,Dina Titus,Carrie Buck,D,55.4,44.6,-10.8,85,15,N/A,N/A,N/A,N/A,N/A,N/A
+3202,NV-02,NV,Nevada,2026,TBD,Mark Amodei,R,Matthew Fonken,Mark Amodei,R,41,59,18.0,4.2,95.8,N/A,N/A,0.07,0.61,N/A,N/A
+3203,NV-03,NV,Nevada,2026,TBD,Susie Lee,D,Susie Lee,Marty O'Donnell,D,53.55,46.45,-7.1,75,25,N/A,N/A,N/A,N/A,N/A,N/A
+3204,NV-04,NV,Nevada,2026,TBD,Steven Horsford,D,Steven Horsford,David Flippo,D,55.75,44.25,-11.5,86.4,13.6,N/A,N/A,N/A,N/A,N/A,N/A
 3601,NY-01,NY,New York,2026,TBD,Nick LaLota,R,Christopher Gallant,Nick LaLota,R,47.4,52.6,5.2,30.9,69.1,N/A,N/A,0.30,0.68,N/A,N/A
 3602,NY-02,NY,New York,2026,TBD,Andrew Garbarino,R,Patrick Halpin,Andrew Garbarino,R,45.05,54.95,9.9,17.3,82.7,N/A,N/A,0.18,0.78,N/A,N/A
 3603,NY-03,NY,New York,2026,TBD,Thomas Suozzi,D,Thomas Suozzi,Gregory Hach,D,53.9,46.1,-7.8,77.1,22.9,N/A,N/A,N/A,N/A,N/A,N/A
@@ -282,21 +297,6 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 3624,NY-24,NY,New York,2026,TBD,Claudia Tenney,R,Alissa Ellman,Claudia Tenney,R,38.4,61.6,23.2,1.3,98.7,N/A,N/A,0.14,0.85,N/A,N/A
 3625,NY-25,NY,New York,2026,TBD,Joseph Morelle,D,Joseph Morelle,Virginia McIntyre,D,63.3,36.7,-26.6,99.5,0.5,N/A,N/A,0.72,0.00,N/A,N/A
 3626,NY-26,NY,New York,2026,TBD,Timothy Kennedy,D,Timothy Kennedy,Generic Republican,D,65.6,34.4,-31.2,99.9,0.1,N/A,N/A,0.69,0.00,N/A,N/A
-3701,NC-01,NC,North Carolina,2026,TBD,Don Davis,D,Don Davis,Laurie Buckhout,D,49.3,50.7,1.4,44.7,55.3,N/A,N/A,N/A,N/A,N/A,N/A
-3702,NC-02,NC,North Carolina,2026,TBD,Deborah Ross,D,Deborah Ross,Eugene Douglass,D,72,28,-44.0,100,0,N/A,N/A,0.74,0.02,N/A,N/A
-3703,NC-03,NC,North Carolina,2026,TBD,Gregory Murphy,R,Raymond Smith,Gregory Murphy,R,42.75,57.25,14.5,8.3,91.7,N/A,N/A,0.04,0.64,N/A,N/A
-3704,NC-04,NC,North Carolina,2026,TBD,Valerie Foushee,D,Valerie Foushee,Mahesh Ganorkar,D,77.35,22.65,-54.7,100,0,N/A,N/A,0.93,0.00,N/A,N/A
-3705,NC-05,NC,North Carolina,2026,TBD,Virginia Foxx,R,Chuck Hubbard,Virginia Foxx,R,43.45,56.55,13.1,10.5,89.5,N/A,N/A,0.01,0.64,N/A,N/A
-3706,NC-06,NC,North Carolina,2026,TBD,Addison McDowell,R,Cyril Jefferson,Addison McDowell,R,40.5,59.5,19.0,3.4,96.6,N/A,N/A,0.08,0.58,N/A,N/A
-3707,NC-07,NC,North Carolina,2026,TBD,David Rouzer,R,Kimberly Hardy,David Rouzer,R,45.4,54.6,9.2,19,81,N/A,N/A,0.03,0.68,N/A,N/A
-3708,NC-08,NC,North Carolina,2026,TBD,Mark Harris,R,Colby Watson,Mark Harris,R,43,57,14.0,9,91,N/A,N/A,0.01,0.54,N/A,N/A
-3709,NC-09,NC,North Carolina,2026,TBD,Richard Hudson,R,Richard Ojeda,Richard Hudson,R,45,55,10.0,17,83,N/A,N/A,0.03,0.55,N/A,N/A
-3710,NC-10,NC,North Carolina,2026,TBD,Pat Harrigan,R,Ashley Bell,Pat Harrigan,R,43.4,56.6,13.2,10.3,89.7,N/A,N/A,0.01,0.01,N/A,N/A
-3711,NC-11,NC,North Carolina,2026,TBD,Chuck Edwards,R,Jamie Ager,Chuck Edwards,R,47.65,52.35,4.7,32.5,67.5,N/A,N/A,N/A,N/A,N/A,N/A
-3712,NC-12,NC,North Carolina,2026,TBD,Alma Adams,D,Alma Adams,Jack Codiga,D,78.05,21.95,-56.1,100,0,N/A,N/A,0.81,0.00,N/A,N/A
-3713,NC-13,NC,North Carolina,2026,TBD,Brad Knott,R,Paul Barringer,Brad Knott,R,44.45,55.55,11.1,14.3,85.7,N/A,N/A,0.11,0.86,N/A,N/A
-3714,NC-14,NC,North Carolina,2026,TBD,Tim Moore,R,Lakesha Womack,Tim Moore,R,44.2,55.8,11.6,13.3,86.7,N/A,N/A,0.17,0.80,N/A,N/A
-3801,ND-01,ND,North Dakota,2026,TBD,Julie Fedorchak,R,Trygve Hammer,Julie Fedorchak,R,29.45,70.55,41.1,0,100,N/A,N/A,N/A,N/A,N/A,N/A
 3901,OH-01,OH,Ohio,2026,TBD,Greg Landsman,D,Greg Landsman,Eric Conroy,D,53.15,46.85,-6.3,72.6,27.4,N/A,N/A,N/A,N/A,N/A,N/A
 3902,OH-02,OH,Ohio,2026,TBD,David Taylor,R,Todd Wilson,David Taylor,R,31.2,68.8,37.6,0,100,N/A,N/A,0.02,0.72,N/A,N/A
 3903,OH-03,OH,Ohio,2026,TBD,Joyce Beatty,D,Joyce Beatty,Generic Republican,D,75.35,24.65,-50.7,100,0,N/A,N/A,0.84,0.00,N/A,N/A
@@ -401,7 +401,6 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 4902,UT-02,UT,Utah,2026,TBD,Celeste Maloy,R,Steven Merrill,Celeste Maloy,R,36.1,63.9,27.8,0.4,99.6,N/A,N/A,N/A,N/A,N/A,N/A
 4903,UT-03,UT,Utah,2026,TBD,Mike Kennedy,R,Steven Merrill,Mike Kennedy,R,28.35,71.65,43.3,0,100,N/A,N/A,N/A,N/A,N/A,N/A
 4904,UT-04,UT,Utah,2026,TBD,Burgess Owens,R,Jonathan Larsen,Burgess Owens,R,33.9,66.1,32.2,0.1,99.9,N/A,N/A,0.01,0.69,N/A,N/A
-5001,VT-01,VT,Vermont,2026,TBD,Becca Balint,D,Rebecca Balint,Mark Coester,D,73.1,26.9,-46.2,100,0,N/A,N/A,N/A,N/A,N/A,N/A
 5101,VA-01,VA,Virginia,2026,TBD,Robert Wittman,R,Shannon Taylor,Robert Wittman,R,49.35,50.65,1.3,45.1,54.9,N/A,N/A,N/A,N/A,N/A,N/A
 5102,VA-02,VA,Virginia,2026,TBD,Jennifer Kiggans,R,Elaine Luria,Jennifer Kiggans,R,53,47,-6.0,71.6,28.4,N/A,N/A,N/A,N/A,N/A,N/A
 5103,VA-03,VA,Virginia,2026,TBD,Bobby Scott,D,Bobby Scott,Generic Republican,D,73.5,26.5,-47.0,100,0,N/A,N/A,0.72,0.00,N/A,N/A
@@ -413,6 +412,7 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 5109,VA-09,VA,Virginia,2026,TBD,Morgan Griffith,R,Adam Murphy,Morgan Griffith,R,31,69,38.0,0,100,N/A,N/A,0.02,0.90,N/A,N/A
 5110,VA-10,VA,Virginia,2026,TBD,Suhas Subramanyam,D,Suhas Subramanyam,Sam Wong,D,59.5,40.5,-19.0,97.1,2.9,N/A,N/A,N/A,N/A,N/A,N/A
 5111,VA-11,VA,Virginia,2026,TBD,James Walkinshaw,D,James Walkinshaw,Stewart Whitson,D,72.9,27.1,-45.8,100,0,N/A,N/A,0.73,0.00,N/A,N/A
+5001,VT-01,VT,Vermont,2026,TBD,Becca Balint,D,Rebecca Balint,Mark Coester,D,73.1,26.9,-46.2,100,0,N/A,N/A,N/A,N/A,N/A,N/A
 5301,WA-01,WA,Washington,2026,TBD,Suzan DelBene,D,Suzan DelBene,Generic Republican,D,68.4,31.6,-36.8,100,0,N/A,N/A,0.52,0.00,N/A,N/A
 5302,WA-02,WA,Washington,2026,TBD,Rick Larsen,D,Rick Larsen,Generic Republican,D,66.2,33.8,-32.4,99.9,0.1,N/A,N/A,0.70,0.00,N/A,N/A
 5303,WA-03,WA,Washington,2026,TBD,Marie Gluesenkamp Perez,D,Marie Gluesenkamp Perez,John Braun,D,52.05,47.95,-4.1,65.1,34.9,N/A,N/A,N/A,N/A,N/A,N/A
@@ -423,8 +423,6 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 5308,WA-08,WA,Washington,2026,TBD,Kim Schrier,D,Kim Schrier,Trinh Ha,D,56.75,43.25,-13.5,90.3,9.7,N/A,N/A,N/A,N/A,N/A,N/A
 5309,WA-09,WA,Washington,2026,TBD,Adam Smith,D,Adam Smith,Janis Clark,D,78.35,21.65,-56.7,100,0,N/A,N/A,0.92,0.02,N/A,N/A
 5310,WA-10,WA,Washington,2026,TBD,Marilyn Strickland,D,Marilyn Strickland,Generic Republican,D,61.95,38.05,-23.9,98.9,1.1,N/A,N/A,0.92,0.00,N/A,N/A
-5401,WV-01,WV,West Virginia,2026,TBD,Carol Miller,R,Britta Aguirre,Carol Miller,R,30.45,69.55,39.1,0,100,N/A,N/A,0.07,0.75,N/A,N/A
-5402,WV-02,WV,West Virginia,2026,TBD,Riley Moore,R,Ahsan Parsi,Riley Moore,R,31.65,68.35,36.7,0,100,N/A,N/A,0.01,0.92,N/A,N/A
 5501,WI-01,WI,Wisconsin,2026,TBD,Bryan Steil,R,Mitchell Berman,Bryan Steil,R,48.25,51.75,3.5,36.7,63.3,N/A,N/A,N/A,N/A,N/A,N/A
 5502,WI-02,WI,Wisconsin,2026,TBD,Mark Pocan,D,Mark Pocan,Erik Olsen,D,74.15,25.85,-48.3,100,0,N/A,N/A,0.92,0.02,N/A,N/A
 5503,WI-03,WI,Wisconsin,2026,TBD,Derrick Van Orden,R,Rebecca Cooke,Derrick Van Orden,R,49.65,50.35,0.7,47.3,52.7,N/A,N/A,N/A,N/A,N/A,N/A
@@ -433,4 +431,6 @@ district_id,district_name,state_abbr,state_name,year,race_desc,current_incumbent
 5506,WI-06,WI,Wisconsin,2026,TBD,Glenn Grothman,R,Aaron Wojciechowski,Glenn Grothman,R,41.9,58.1,16.2,6.1,93.9,N/A,N/A,0.05,0.82,N/A,N/A
 5507,WI-07,WI,Wisconsin,2026,TBD,Tom Tiffany,R,Frederic Clark,Paul Wassgren,None,40.5,59.5,19.0,3.4,96.6,N/A,N/A,0.06,0.74,N/A,N/A
 5508,WI-08,WI,Wisconsin,2026,TBD,Tony Wied,R,Mark Scheffler,Tony Wied,R,43.05,56.95,13.9,9.2,90.8,N/A,N/A,0.09,0.78,N/A,N/A
-5601,WY-01,WY,Wyoming,2026,TBD,Harriet Hageman,R,Generic Democrat,Harriet Hageman,R,26.9,73.1,46.2,0,100,N/A,N/A,N/A,N/A,N/A,N/A
+5401,WV-01,WV,West Virginia,2026,TBD,Carol Miller,R,Britta Aguirre,Carol Miller,R,30.45,69.55,39.1,0,100,N/A,N/A,0.07,0.75,N/A,N/A
+5402,WV-02,WV,West Virginia,2026,TBD,Riley Moore,R,Ahsan Parsi,Riley Moore,R,31.65,68.35,36.7,0,100,N/A,N/A,0.01,0.92,N/A,N/A
+5601,WY-01,WY,Wyoming,2026,TBD,Harriet Hageman,R,Lisa Kinney,Chuck Gray,R,26.9,73.1,46.2,0,100,N/A,N/A,N/A,N/A,N/A,N/A
