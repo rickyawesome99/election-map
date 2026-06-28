@@ -1,13 +1,13 @@
-// margin: positive = D advantage, negative = R advantage (e.g. +5 = D+5, -5 = R+5)
+// margin: positive = R advantage, negative = D advantage (e.g. +5 = R+5, -5 = D+5)
 export function getRaceColor(margin: number): string {
-  if (margin >= 15)  return "#1b408c"; // Safe D   (D+15+)
-  if (margin >= 5)   return "#587ccc"; // Likely D (D+5–D+15)
-  if (margin >= 1)   return "#8bafff"; // Lean D   (D+1–D+5)
-  if (margin >= 0)   return "#959bb3"; // Tilt D   (D+0–D+1)
-  if (margin > -1)   return "#cf8980"; // Tilt R   (R+0–R+1)
-  if (margin > -5)   return "#ff8b98"; // Lean R   (R+1–R+5)
-  if (margin > -15)  return "#ff5864"; // Likely R (R+5–R+15)
-  return "#be1c29";                    // Safe R   (R+15+)
+  if (margin >= 15)  return "#be1c29"; // Safe R   (R+15+)
+  if (margin >= 5)   return "#ff5864"; // Likely R (R+5–R+15)
+  if (margin >= 1)   return "#ff8b98"; // Lean R   (R+1–R+5)
+  if (margin >= 0)   return "#cf8980"; // Tilt R   (R+0–R+1)
+  if (margin > -1)   return "#959bb3"; // Tilt D   (D+0–D+1)
+  if (margin > -5)   return "#8bafff"; // Lean D   (D+1–D+5)
+  if (margin > -15)  return "#587ccc"; // Likely D (D+5–D+15)
+  return "#1b408c";                    // Safe D   (D+15+)
 }
 
 const RATING_COLORS: Record<string, { bg: string; text: string }> = {

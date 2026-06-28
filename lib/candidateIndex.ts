@@ -23,6 +23,8 @@ export type CandidateHistoryEntry = {
   side: "dem" | "rep";
   demPct: number;
   repPct: number;
+  demVotes?: number;
+  repVotes?: number;
   incumbent: boolean;
   isCurrent: boolean;
 };
@@ -60,6 +62,8 @@ type RawEntry = {
   side: "dem" | "rep";
   demPct: number;
   repPct: number;
+  demVotes?: number;
+  repVotes?: number;
   incumbent: boolean;
   isCurrent: boolean;
   currentPosition?: string;
@@ -166,6 +170,8 @@ function collectFromRaces(races: RaceForecast[], racePathPrefix: string): RawEnt
           side: "dem",
           demPct: res.demPct,
           repPct: res.repPct,
+          demVotes: res.demVotes,
+          repVotes: res.repVotes,
           incumbent: res.demIncumbent ?? false,
           isCurrent: false,
         });
@@ -183,6 +189,8 @@ function collectFromRaces(races: RaceForecast[], racePathPrefix: string): RawEnt
           side: "rep",
           demPct: res.demPct,
           repPct: res.repPct,
+          demVotes: res.demVotes,
+          repVotes: res.repVotes,
           incumbent: res.repIncumbent ?? false,
           isCurrent: false,
         });
@@ -353,6 +361,8 @@ function buildIndex(): Map<string, CandidatePage> {
       side: e.side,
       demPct: e.demPct,
       repPct: e.repPct,
+      demVotes: e.demVotes,
+      repVotes: e.repVotes,
       incumbent: e.incumbent,
       isCurrent: e.isCurrent,
     }));

@@ -296,7 +296,7 @@ export default function RaceTable({
           const margin = race.margin ?? 0;
           const probability = race.probability ?? 0.5;
           const { bg, text } = getRatingColors(race.rating ?? "Tossup");
-          const marginIsD = margin >= 0;
+          const marginIsD = margin <= 0;
           const demPct = Math.round(probability * 100);
           const repPct = 100 - demPct;
 
@@ -392,7 +392,7 @@ export default function RaceTable({
               const margin = race.margin ?? 0;
               const probability = race.probability ?? 0.5;
               const { bg, text } = getRatingColors(race.rating ?? "Tossup");
-              const marginIsD = margin >= 0;
+              const marginIsD = margin <= 0;
               const demPct = Math.round(probability * 100);
               const repPct = 100 - demPct;
               return (

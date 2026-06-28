@@ -26,7 +26,7 @@ export default function StateMapSection({
   pastElectionResults: Record<string, HouseStatewideResult[]>;
 }) {
   const [selected, setSelected] = useState<RaceForecast | null>(null);
-  const demPct = selected ? Math.max(0, Math.min(100, 50 + selected.margin / 2)) : 0;
+  const demPct = selected ? Math.max(0, Math.min(100, 50 - selected.margin / 2)) : 0;
   const repPct = 100 - demPct;
   const { bg: rBg, text: rText } = selected ? getRatingColors(selected.rating) : { bg: "", text: "" };
   const [, distNum = ""] = selected?.name.split("-") ?? [];
@@ -109,8 +109,8 @@ export default function StateMapSection({
                 <div className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>
                   Forecast
                 </div>
-                <div className="text-xl font-bold mb-1.5" style={{ color: selected.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
-                  {selected.margin >= 0 ? "D" : "R"}+{Math.abs(selected.margin).toFixed(1)}
+                <div className="text-xl font-bold mb-1.5" style={{ color: selected.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
+                  {selected.margin <= 0 ? "D" : "R"}+{Math.abs(selected.margin).toFixed(1)}
                 </div>
                 <div className="flex justify-between text-xs font-semibold mb-1.5">
                   <span style={{ color: "var(--party-dem)" }}>D {demPct.toFixed(1)}%</span>
@@ -120,8 +120,8 @@ export default function StateMapSection({
                   <div style={{ width: `${demPct}%`, background: "#1b408c" }} />
                   <div style={{ width: `${repPct}%`, background: "#be1c29" }} />
                 </div>
-                <div className="text-xs font-semibold" style={{ color: selected.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
-                  {Math.round(selected.probability * 100)}% {selected.margin >= 0 ? "D" : "R"} win probability
+                <div className="text-xs font-semibold" style={{ color: selected.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
+                  {Math.round(selected.probability * 100)}% {selected.margin <= 0 ? "D" : "R"} win probability
                 </div>
               </div>
             </div>

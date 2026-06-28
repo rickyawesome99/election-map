@@ -221,9 +221,9 @@ export default function PastElectionsMap({
         {/* Hover tooltip */}
         {hovered && (() => {
           const { geoid, result } = hovered;
-          const margin = result.demPct - result.repPct;
-          const marginLabel = margin >= 0 ? `D+${margin.toFixed(1)}` : `R+${Math.abs(margin).toFixed(1)}`;
-          const marginColor = margin >= 0 ? "var(--party-dem)" : "var(--party-rep)";
+          const margin = result.repPct - result.demPct;
+          const marginLabel = margin <= 0 ? `D+${Math.abs(margin).toFixed(1)}` : `R+${margin.toFixed(1)}`;
+          const marginColor = margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
           const cdNum = parseInt(geoid.slice(-2), 10);
           const distLabel = cdNum === 0 ? "At-Large" : `CD-${cdNum}`;
           const tipW = 175;
@@ -289,7 +289,7 @@ export default function PastElectionsMap({
                     if (!isCongressionalDistrictGeoid(geoId, stateFips)) return null;
                     const result = geoId ? resultByGeoid.get(geoId) : undefined;
                     const fill = result
-                      ? getRaceColor(result.demPct - result.repPct)
+                      ? getRaceColor(result.repPct - result.demPct)
                       : "var(--app-tab-bg)";
                     return (
                       <Geography
@@ -339,9 +339,9 @@ export default function PastElectionsMap({
       {/* Selected district panel */}
       {selected && (() => {
         const { geoid, result } = selected;
-        const margin = result.demPct - result.repPct;
-        const marginLabel = margin >= 0 ? `D+${margin.toFixed(1)}` : `R+${Math.abs(margin).toFixed(1)}`;
-        const marginColor = margin >= 0 ? "var(--party-dem)" : "var(--party-rep)";
+        const margin = result.repPct - result.demPct;
+        const marginLabel = margin <= 0 ? `D+${Math.abs(margin).toFixed(1)}` : `R+${margin.toFixed(1)}`;
+        const marginColor = margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
         const cdNum = parseInt(geoid.slice(-2), 10);
         const distLabel = cdNum === 0 ? "At-Large" : `CD-${cdNum}`;
         return (

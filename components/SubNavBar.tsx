@@ -4,25 +4,26 @@ import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 
-const TABS = [
-  { key: "overview",         label: "Overview" },
-  { key: "house",            label: "House" },
-  { key: "senate",           label: "Senate" },
-  { key: "governor",         label: "Governor" },
+const TABS: { key: string; label: string; href?: string }[] = [
+  { key: "forecast",         label: "2026 Forecast" },
   { key: "states",           label: "States" },
   { key: "counties",         label: "Counties" },
-  { key: "model",            label: "Model" },
+  { key: "model",            label: "TPL" },
+  { key: "analysis",         label: "Analysis",        href: "/analysis" },
   { key: "district-finder",  label: "District Finder" },
 ];
 
 function getActiveTab(pathname: string, queryTab: string | null): string | null {
+  const tplSubTabs = ["state", "district", "table", "districtTable"];
   if (pathname === "/") {
-    return TABS.some(({ key }) => key === queryTab) ? queryTab : "overview";
+    if (tplSubTabs.includes(queryTab ?? "")) return "model";
+    return TABS.some(({ key }) => key === queryTab) ? queryTab : "forecast";
   }
-  if (pathname.startsWith("/house/")) return "house";
-  if (pathname.startsWith("/senate/")) return "senate";
-  if (pathname.startsWith("/governor/")) return "governor";
+  if (pathname.startsWith("/house/")) return "forecast";
+  if (pathname.startsWith("/senate/")) return "forecast";
+  if (pathname.startsWith("/governor/")) return "forecast";
   if (pathname.startsWith("/states/")) return "states";
+  if (pathname.startsWith("/analysis")) return "analysis";
   return null;
 }
 
@@ -48,14 +49,14 @@ export default function SubNavBar() {
       }}
     >
       <nav className="scrollbar-none flex min-w-0 flex-1 gap-1 overflow-x-auto overflow-y-hidden">
-        {TABS.map(({ key, label }) => (
+        {TABS.map(({ key, label, href }) => (
           <Link
             key={key}
             ref={activeTab === key ? activeTabRef : null}
-            href={`/?tab=${key}`}
+            href={href ?? `/?tab=${key}`}
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "auto" });
-              window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: key }));
+              if (!href) window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: key }));
             }}
             className="shrink-0 rounded-full px-4 py-2 text-sm font-semibold transition-all"
             style={{

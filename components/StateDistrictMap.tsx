@@ -113,11 +113,11 @@ export default function StateDistrictMap({
       >
         {/* Hover tooltip */}
         {hovered && (() => {
-          const demPct = Math.max(0, Math.min(100, 50 + hovered.margin / 2));
-          const repPct = Math.max(0, Math.min(100, 50 - hovered.margin / 2));
+          const demPct = Math.max(0, Math.min(100, 50 - hovered.margin / 2));
+          const repPct = Math.max(0, Math.min(100, 50 + hovered.margin / 2));
           const marginAbs = Math.abs(hovered.margin);
-          const marginLabel = hovered.margin >= 0 ? `D+${marginAbs.toFixed(1)}` : `R+${marginAbs.toFixed(1)}`;
-          const marginColor = hovered.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)";
+          const marginLabel = hovered.margin <= 0 ? `D+${marginAbs.toFixed(1)}` : `R+${marginAbs.toFixed(1)}`;
+          const marginColor = hovered.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
           const { bg: badgeColor, text: badgeText } = getRatingColors(hovered.rating);
           const tipW = 190;
           const tipH = hovered.candidates ? 115 : 88;

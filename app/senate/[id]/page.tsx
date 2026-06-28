@@ -4,9 +4,10 @@ import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
+import { calculateStateTpl, GENERIC_BALLOT } from "@/lib/tplCompute";
 
 function enrichSenateResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
   if (!pastResults?.length) return [];
@@ -16,7 +17,7 @@ function enrichSenateResults(pastResults: PastResult[] | undefined): DetailPastR
     const swing = i > 0
       ? parseFloat(((sorted[i - 1].demPct - sorted[i - 1].repPct) - (res.demPct - res.repPct)).toFixed(1))
       : null;
-    return { ...res, nationalDiff: nationalMargin != null ? nationalMargin - (res.demPct - res.repPct) : null, swing };
+    return { ...res, nationalDiff: nationalMargin != null ? (res.repPct - res.demPct) - nationalMargin : null, swing };
   }).reverse();
 }
 
@@ -207,8 +208,10 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
   const demPct = Math.round(race.probability * 100);
   const repPct = 100 - demPct;
   const { bg, text } = getRatingColors(race.rating);
-  const demVoteShare = parseFloat(((100 + race.margin) / 2).toFixed(1));
-  const repVoteShare = parseFloat(((100 - race.margin) / 2).toFixed(1));
+  const stateTpl = calculateStateTpl(abbr, race.name);
+  const projectedMargin = stateTpl + GENERIC_BALLOT;
+  const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
+  const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
 
   const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
   const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
@@ -256,7 +259,7 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
               />
             </div>
             {race.pastResults && race.pastResults.length > 0 && (
-              <div className="order-5">
+              <div className="order-7">
                 <SeatVoteHistoryChart results={enrichSenateResults(race.pastResults)} electionType="Senate" />
               </div>
             )}
@@ -290,7 +293,7 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
             <div className={`order-4 ${race.candidates ? "lg:col-span-3" : "lg:col-span-8"} [&>section]:h-full`}>
               <MarginAndWinProbabilityCard
                 density="compact"
-                margin={race.margin}
+                margin={projectedMargin}
                 demPct={demPct}
                 repPct={repPct}
                 rcpDem={race.rcpDem}
@@ -300,6 +303,10 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
                 kalshiDem={race.kalshiDem}
                 kalshiRep={race.kalshiRep}
               />
+            </div>
+
+            <div className="order-5 lg:col-span-8">
+              <ForecastCalculationCard tpl={stateTpl} genericBallot={GENERIC_BALLOT} tplLabel="State TPL" />
             </div>
 
             {race.pastResults && race.pastResults.length > 0 && (

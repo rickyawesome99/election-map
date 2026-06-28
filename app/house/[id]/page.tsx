@@ -5,8 +5,9 @@ import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
-import { AboutRaceCard, CandidatesSection, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, MarginAndWinProbabilityCard, PastElectionResultsSection } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesSection, ForecastCalculationCard, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, MarginAndWinProbabilityCard, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
+import { calculateDistrictTpl, GENERIC_BALLOT } from "@/lib/tplCompute";
 const HOUSE_BOUNDARIES_CARD_HEIGHT = "275px";
 
 function inferCurrentHouseSeatFromPastResults(race: { pastResults?: { demIncumbent?: boolean; repIncumbent?: boolean; demCandidate?: string; repCandidate?: string }[] }) {
@@ -40,8 +41,6 @@ export default async function HousePage({ params, searchParams }: { params: Prom
   const demPct = Math.round(race.probability * 100);
   const repPct = 100 - demPct;
   const { bg, text } = getRatingColors(race.rating);
-  const demVoteShare = parseFloat(((100 + race.margin) / 2).toFixed(1));
-  const repVoteShare = parseFloat(((100 - race.margin) / 2).toFixed(1));
 
   // Parse district label for display (e.g. "CA-12" → state + district number)
   const [stateAbbr, districtNum] = race.name.split("-");
@@ -58,12 +57,16 @@ export default async function HousePage({ params, searchParams }: { params: Prom
   const pviDisplay = pvi2026 != null
     ? pvi2026 === 0 ? "EVEN" : pvi2026 > 0 ? `R+${pvi2026}` : `D+${Math.abs(pvi2026)}`
     : "TBD";
+  const districtTpl = calculateDistrictTpl(race.id);
+  const projectedMargin = districtTpl + GENERIC_BALLOT;
+  const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
+  const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
 
   const pastResultsWithDiff = (race.pastResults ?? []).map((res) => {
     const nationalMargin = getNationalMargin("House", res.year);
     return {
       ...res,
-      nationalDiff: nationalMargin != null ? nationalMargin - (res.demPct - res.repPct) : null,
+      nationalDiff: nationalMargin != null ? (res.repPct - res.demPct) - nationalMargin : null,
     };
   });
 
@@ -92,8 +95,8 @@ export default async function HousePage({ params, searchParams }: { params: Prom
       : null;
     return {
       ...res,
-      stateDiff: stateDistrictCount > 1 && statewideMargin != null && res.year >= (multiDistrictSince[stateAbbr] ?? 0) ? districtMargin - statewideMargin : null,
-      nationalDiff: nationalMargin != null ? nationalMargin - districtMargin : null,
+      stateDiff: stateDistrictCount > 1 && statewideMargin != null && res.year >= (multiDistrictSince[stateAbbr] ?? 0) ? districtMargin + statewideMargin : null,
+      nationalDiff: nationalMargin != null ? -districtMargin - nationalMargin : null,
       swing,
     };
   });
@@ -144,7 +147,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               <DistrictMiniMap
                 raceId={race.id}
                 stateAbbr={stateAbbr}
-                margin={race.margin}
+                margin={projectedMargin}
                 boundaryYears={(() => {
                   const entries = houseDistrictInfo[race.id] ?? [];
                   if (entries.length === 0) return [];
@@ -210,8 +213,12 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               </div>
 
               <div className="md:col-span-3 [&>section]:h-full">
-                <MarginAndWinProbabilityCard density="compact" margin={race.margin} demPct={demPct} repPct={repPct} rcpDem={race.rcpDem} rcpRep={race.rcpRep} polyDem={race.polyDem} polyRep={race.polyRep} kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep} />
+                <MarginAndWinProbabilityCard density="compact" margin={projectedMargin} demPct={demPct} repPct={repPct} rcpDem={race.rcpDem} rcpRep={race.rcpRep} polyDem={race.polyDem} polyRep={race.polyRep} kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep} />
               </div>
+            </div>
+
+            <div className="order-4">
+              <ForecastCalculationCard tpl={districtTpl} genericBallot={GENERIC_BALLOT} tplLabel="District TPL" />
             </div>
 
             <div className="order-5">

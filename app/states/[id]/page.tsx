@@ -1,5 +1,6 @@
 import { statesData } from "@/data/statesData";
 import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, housePastResults, senateCurrent, pres2024, presPastResults, houseDelegationHistory, houseStatewideResults, stateLegData, PresResult, RaceForecast, NoElectionEntry, HouseStatewideResult, electionYear } from "@/data/forecastData";
+import { computeProjectedMargin } from "@/lib/tplCompute";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -97,8 +98,8 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
 function ElectionCard({ race, href, label }: { race: RaceForecast; href: string; label: string }) {
   const dem = race.candidates?.dem;
   const rep = race.candidates?.rep;
-  const demPct = ((100 + race.margin) / 2).toFixed(1);
-  const repPct = ((100 - race.margin) / 2).toFixed(1);
+  const demPct = ((100 - race.margin) / 2).toFixed(1);
+  const repPct = ((100 + race.margin) / 2).toFixed(1);
   return (
     <Link
       href={href}
@@ -119,8 +120,8 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
               </svg>
             </div>
             <div className="flex items-center gap-2 shrink-0">
-              <span className="text-xs font-semibold tabular-nums" style={{ color: race.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
-                {race.margin >= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
+              <span className="text-xs font-semibold tabular-nums" style={{ color: race.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
+                {race.margin <= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
               </span>
               <RatingBadge rating={race.rating} />
             </div>
@@ -169,8 +170,8 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
           )}
         </div>
         <div className="shrink-0 flex items-center gap-1.5 sm:gap-3">
-          <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: race.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
-            {race.margin >= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
+          <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: race.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
+            {race.margin <= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
           </span>
           <RatingBadge rating={race.rating} />
           <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
@@ -188,8 +189,8 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
   const isAL = distNum === "AL";
   const demPct = Math.round(race.probability * 100);
   const repPct = 100 - demPct;
-  const demVS = ((100 + race.margin) / 2).toFixed(1);
-  const repVS = ((100 - race.margin) / 2).toFixed(1);
+  const demVS = ((100 - race.margin) / 2).toFixed(1);
+  const repVS = ((100 + race.margin) / 2).toFixed(1);
   const { bg, text } = getRatingColors(race.rating);
   return (
     <Link
@@ -218,8 +219,8 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
       <div className="flex-1 sm:hidden" />
 
       {/* Margin */}
-      <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: race.margin >= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
-        {race.margin >= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
+      <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: race.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
+        {race.margin <= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
       </span>
 
       {/* Rating badge */}
@@ -272,6 +273,12 @@ export default async function StateDetailPage({ params, searchParams }: { params
   const governorNoEl = !governorRace ? governorNoElection.find((e) => e.abbr === state.abbr) : null;
 
   const houseRaces = houseData.filter((r) => r.state === state.name);
+
+  // Projected 2026 margins (TPL + Generic Ballot) for all active races on this state page
+  const projectedHouseRaces = houseRaces.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
+  const projectedGovernorRace = governorRace ? { ...governorRace, margin: computeProjectedMargin(governorRace) } : null;
+  const projectedSenateSeat1Race = senateSeat1Race ? { ...senateSeat1Race, margin: computeProjectedMargin(senateSeat1Race) } : null;
+  const projectedSenateSeat2Race = senateSeat2Race ? { ...senateSeat2Race, margin: computeProjectedMargin(senateSeat2Race) } : null;
   const senatePastResults = [
     ...(senateSeat1Race?.pastResults ?? senateSeat1NoEl?.pastResults ?? []).map((r) => ({ ...r, seat: 1 as const })),
     ...(senateSeat2Race?.pastResults ?? senateSeat2Holdover?.pastResults ?? []).map((r) => ({ ...r, seat: 2 as const })),
@@ -285,7 +292,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
     if (race.seatParty) return race.seatParty;
     if (race.candidates?.dem.incumbent) return "D";
     if (race.candidates?.rep.incumbent) return "R";
-    return race.margin >= 0 ? "D" : "R";
+    return race.margin <= 0 ? "D" : "R";
   }
 
   const STATE_FIPS: Record<string, string> = {
@@ -326,9 +333,9 @@ export default async function StateDetailPage({ params, searchParams }: { params
   const houseDemCurrent = houseDel2024 ? houseDel2024.demSeats : houseRaces.filter((r) => raceParty(r) === "D").length;
   const houseRepCurrent = houseDel2024 ? houseDel2024.repSeats : houseRaces.filter((r) => raceParty(r) === "R").length;
 
-  // House projected composition (2026 forecast)
-  const houseDemProj = houseRaces.filter((r) => r.margin >= 0).length;
-  const houseRepProj = houseRaces.filter((r) => r.margin < 0).length;
+  // House projected composition (2026 forecast, from projected margins)
+  const houseDemProj = projectedHouseRaces.filter((r) => r.margin <= 0).length;
+  const houseRepProj = projectedHouseRaces.filter((r) => r.margin > 0).length;
 
   // Senate current composition — sourced from explicit lookup, not 2026 projections
   const [senSeat1, senSeat2] = senateCurrent[state.abbr] ?? ["R", "R"];
@@ -423,7 +430,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
         {/* Overview + Map */}
         <StateMapSection
-          houseRaces={houseRaces}
+          houseRaces={projectedHouseRaces}
           housePastResults={stateHousePastResults}
           stateAbbr={state.abbr}
           stateName={state.name}
@@ -504,7 +511,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
                   {(() => {
                     const m = pres2024[state.abbr];
-                    const isD = m != null && m >= 0;
+                    const isD = m != null && m <= 0;
                     return (
                       <div className="rounded-lg p-2.5 text-center" style={{ background: "var(--app-bg)" }}>
                         <div className="text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)" }}>
@@ -646,10 +653,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
           <div className="max-h-[38rem] overflow-y-auto pr-1">
           <div className="flex flex-col" style={{ borderTop: "1px solid var(--app-border)" }}>
             {/* Governor */}
-            {governorRace ? (
+            {projectedGovernorRace ? (
               <ElectionCard
-                race={governorRace}
-                href={`/governor/${governorRace.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                race={projectedGovernorRace}
+                href={`/governor/${projectedGovernorRace.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
                 label="Governor"
               />
             ) : governorNoEl ? (
@@ -661,10 +668,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
             ) : null}
 
             {/* Senate seat 1 */}
-            {senateSeat1Race ? (
+            {projectedSenateSeat1Race ? (
               <ElectionCard
-                race={senateSeat1Race}
-                href={`/senate/${senateSeat1Race.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                race={projectedSenateSeat1Race}
+                href={`/senate/${projectedSenateSeat1Race.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
                 label="Senate (Seat 1)"
               />
             ) : senateSeat1NoEl ? (
@@ -676,10 +683,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
             ) : null}
 
             {/* Senate seat 2 — 2026 race or holdover */}
-            {senateSeat2Race ? (
+            {projectedSenateSeat2Race ? (
               <ElectionCard
-                race={senateSeat2Race}
-                href={`/senate/${senateSeat2Race.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                race={projectedSenateSeat2Race}
+                href={`/senate/${projectedSenateSeat2Race.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
                 label="Senate (Seat 2)"
               />
             ) : senateSeat2Holdover ? (
@@ -715,7 +722,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                   </span>
                 </div>
                 <div className="flex flex-col" style={{ borderTop: "1px solid var(--app-border)" }}>
-                  {houseRaces.map((race) => (
+                  {projectedHouseRaces.map((race) => (
                     <div key={race.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
                       <HouseDistrictRow race={race} from={stateFrom} />
                     </div>

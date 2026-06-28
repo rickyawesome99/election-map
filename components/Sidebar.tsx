@@ -15,10 +15,10 @@ type Props = {
 export default function Sidebar({ selected, raceType, onClose, theme: t }: Props) {
   if (!selected) return null;
 
-  const demVoteShare = (100 + selected.margin) / 2;
-  const repVoteShare = (100 - selected.margin) / 2;
+  const demVoteShare = (100 - selected.margin) / 2;
+  const repVoteShare = (100 + selected.margin) / 2;
   const { bg, text } = getRatingColors(selected.rating);
-  const marginIsD = selected.margin >= 0;
+  const marginIsD = selected.margin <= 0;
   const panelSurface = t.legendBg;
   const cardSurface = t.tabBg;
 

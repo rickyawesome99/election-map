@@ -7,17 +7,8 @@ import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import {
-  presPastResults,
-  senateData,
-  senateHoldovers,
-  senateNoElection,
-  governorData,
-  governorNoElection,
   houseData,
-  houseStatewideResults,
   houseDistrictInfo,
-  stateLegData,
-  type PastResult,
 } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import {
@@ -25,13 +16,19 @@ import {
   STATE_MODEL_CONSTANTS,
   STATE_RACE_INPUTS,
   STATE_S_CALCULATIONS,
-  WQ_VALUES,
-  LQ_VALUES,
-  type RaceModelInputs,
   type CQTier,
 } from "@/data/tplModelData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
-import { popVoteData, presIncParty } from "@/data/popVoteData";
+import {
+  calculateStateModel,
+  calculateDistrictModel,
+  type RaceStub,
+  type ComputedRace,
+  type YearAggregation,
+  type StateModelCalculation,
+  type DistrictComputedRace,
+  type DistrictModelCalculation,
+} from "@/lib/tplCompute";
 
 // ── District lookup: state abbreviation → sorted list of districts ───────────
 
@@ -41,444 +38,6 @@ for (const [id, d] of Object.entries(districtPresidentialData)) {
   DISTRICTS_BY_STATE[d.state].push({ id, code: d.code, num: parseInt(d.code.split("-")[1]) });
 }
 for (const arr of Object.values(DISTRICTS_BY_STATE)) arr.sort((a, b) => a.num - b.num);
-
-// ── Presidential CQ inputs by year (national-level candidate quality) ─────────
-// These apply to the presidential race in each cycle when computing district IF/CQ.
-// 2016: Generic/Generic (Trump vs Clinton — no extreme tier assignment)
-// 2020: Generic/Generic (Biden vs Trump — symmetric)
-// 2024: Strong winner (Trump) / Weak loser (Harris)
-
-const PRESIDENTIAL_INPUTS_BY_YEAR: Record<number, { wqTier: CQTier; lqTier: CQTier }> = {
-  2016: { wqTier: "Generic", lqTier: "Generic" },
-  2020: { wqTier: "Generic", lqTier: "Generic" },
-  2024: { wqTier: "Strong", lqTier: "Weak" },
-};
-
-// ── Race stub type (input to computation) ───────────────────────────────────
-
-interface RaceStub {
-  race: string;
-  district?: string;
-  raceType: "P" | "S" | "G" | "H" | "L";
-  detailHref?: string;
-  year: number;
-  incumbent: string;
-  wqTier: CQTier;
-  lqTier: CQTier;
-  CQ: number;
-  FF: number;
-  historicalMargins: { year: number; margin: number }[];
-}
-
-// ── Dynamic race list generation ────────────────────────────────────────────
-
-function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
-  const modelInputs: RaceModelInputs[] = STATE_RACE_INPUTS[stateAbbr] ?? [];
-  const stubs: RaceStub[] = [];
-  const stateId = statesData.find((state) => state.abbr === stateAbbr)?.id ?? stateName.toLowerCase().replace(/\s+/g, "-");
-  const stateHref = `/states/${stateId}`;
-
-  function incumbentFromResult(result?: Pick<PastResult, "demIncumbent" | "repIncumbent">): string {
-    if (result?.demIncumbent) return "D";
-    if (result?.repIncumbent) return "R";
-    return "Open";
-  }
-
-  function overlay(race: string, year: number) {
-    return modelInputs.find((i) => i.race === race && i.year === year);
-  }
-
-  function makeStub(
-    race: string,
-    raceType: RaceStub["raceType"],
-    year: number,
-    district?: string,
-    incumbent = "Open",
-    historicalMargins: RaceStub["historicalMargins"] = [],
-    detailHref?: string
-  ): RaceStub {
-    const inp = overlay(race, year);
-    const presBase = raceType === "P" ? PRESIDENTIAL_INPUTS_BY_YEAR[year] : undefined;
-    const wqTier = inp?.wqTier ?? presBase?.wqTier ?? "Generic";
-    const lqTier = inp?.lqTier ?? presBase?.lqTier ?? "Generic";
-    return {
-      race,
-      district,
-      raceType,
-      detailHref,
-      year,
-      incumbent,
-      wqTier,
-      lqTier,
-      CQ: WQ_VALUES[wqTier] * LQ_VALUES[lqTier],
-      FF: inp?.FF ?? 1.00,
-      historicalMargins,
-    };
-  }
-
-  // President (2017+)
-  const presidentialResults = presPastResults[stateAbbr] ?? [];
-  const presidentialMargins = presidentialResults.map((result) => ({
-    year: result.year,
-    margin: result.repPct - result.demPct,
-  }));
-  for (const r of presidentialResults) {
-    if (r.year >= 2017) {
-      stubs.push(
-        makeStub(
-          "President",
-          "P",
-          r.year,
-          undefined,
-          incumbentFromResult(r),
-          presidentialMargins,
-          stateHref
-        )
-      );
-    }
-  }
-
-  function addSenateSeat(
-    seat: { pastResults?: PastResult[] },
-    detailHref: string
-  ) {
-    const historicalMargins = (seat.pastResults ?? []).map((result) => ({
-      year: result.year,
-      margin: result.repPct - result.demPct,
-    }));
-    for (const r of seat.pastResults ?? []) {
-      if (r.year >= 2017) {
-        const raceName = r.electionType === "Special" ? "Senate Special" : "Senate";
-        stubs.push(
-          makeStub(
-            raceName,
-            "S",
-            r.year,
-            undefined,
-            incumbentFromResult(r),
-            historicalMargins,
-            detailHref
-          )
-        );
-      }
-    }
-  }
-
-  // Senate — all seats for this state (multiple seats OK — distinguished by year/seat page)
-  for (const seat of senateData.filter((d) => d.id === stateAbbr || d.id.startsWith(stateAbbr + "-"))) {
-    addSenateSeat(seat, `/senate/${seat.id.toLowerCase()}`);
-  }
-  for (const seat of senateHoldovers.filter((d) => d.abbr === stateAbbr)) {
-    addSenateSeat(seat, `/senate/${seat.abbr.toLowerCase()}-2`);
-  }
-  for (const seat of senateNoElection.filter((d) => d.abbr === stateAbbr)) {
-    addSenateSeat(seat, `/senate/${seat.abbr.toLowerCase()}`);
-  }
-
-  // Governor (2017+ — catches NJ/VA odd-year elections)
-  function addGovernorSeat(
-    seat: { pastResults?: PastResult[] },
-    detailHref: string
-  ) {
-    const historicalMargins = (seat.pastResults ?? []).map((result) => ({
-      year: result.year,
-      margin: result.repPct - result.demPct,
-    }));
-    for (const r of seat.pastResults ?? []) {
-      if (r.year >= 2017) {
-        stubs.push(
-          makeStub(
-            "Governor",
-            "G",
-            r.year,
-            undefined,
-            incumbentFromResult(r),
-            historicalMargins,
-            detailHref
-          )
-        );
-      }
-    }
-  }
-  for (const seat of governorData.filter((d) => d.id === stateAbbr)) {
-    addGovernorSeat(seat, `/governor/${seat.id.toLowerCase()}`);
-  }
-  for (const seat of governorNoElection.filter((d) => d.abbr === stateAbbr)) {
-    addGovernorSeat(seat, `/governor/${seat.abbr.toLowerCase()}`);
-  }
-
-  // House — each district, each election year (2017+)
-  for (const dist of houseData.filter((r) => r.state === stateName)) {
-    const historicalMargins = (dist.pastResults ?? []).map((result) => ({
-      year: result.year,
-      margin: result.repPct - result.demPct,
-    }));
-    for (const r of dist.pastResults ?? []) {
-      if (r.year >= 2017) {
-        stubs.push(
-          makeStub(
-            `House ${dist.name}`,
-            "H",
-            r.year,
-            dist.name,
-            incumbentFromResult(r),
-            historicalMargins,
-            `/house/${dist.id.toLowerCase()}`
-          )
-        );
-      }
-    }
-  }
-
-  // State Legislature — all years where BOTH a House entry AND a Senate entry have vote data.
-  // Nebraska exception (unicameral): any year with any entry having vote data is included.
-  const legEntries = stateLegData[stateName] ?? [];
-  const isUnicameral = stateName === "Nebraska";
-  const legYears = [...new Set(legEntries.map((e) => e.year))]
-    .filter((year) => {
-      if (year < 2018) return false;
-      const yearEntries = legEntries.filter((e) => e.year === year);
-      if (isUnicameral) {
-        return yearEntries.some((e) => e.demVotes != null && e.repVotes != null);
-      }
-      const hasHouseData = yearEntries.some(
-        (e) => e.type === "House" && e.demVotes != null && e.repVotes != null
-      );
-      const hasSenateData = yearEntries.some(
-        (e) => e.type === "Senate" && e.demVotes != null && e.repVotes != null
-      );
-      return hasHouseData && hasSenateData;
-    })
-    .sort((a, b) => a - b);
-
-  for (const year of legYears) {
-    const historicalMargins = [
-      ...new Set(
-        legEntries
-          .filter((entry) => entry.demVotes != null && entry.repVotes != null)
-          .map((entry) => entry.year)
-      ),
-    ].map((historicalYear) => {
-      const entries = legEntries.filter((entry) => entry.year === historicalYear);
-      const demVotes = entries.reduce((sum, entry) => sum + (entry.demVotes ?? 0), 0);
-      const repVotes = entries.reduce((sum, entry) => sum + (entry.repVotes ?? 0), 0);
-      return {
-        year: historicalYear,
-        margin: ((repVotes - demVotes) / (demVotes + repVotes)) * 100,
-      };
-    });
-    stubs.push(
-      makeStub("State Legislature", "L", year, undefined, "-", historicalMargins, stateHref)
-    );
-  }
-
-  const RACE_TYPE_ORDER: Record<string, number> = { P: 0, G: 1, S: 2, H: 3, L: 4 };
-  return stubs.sort((a, b) => {
-    const typeOrder = (RACE_TYPE_ORDER[a.raceType] ?? 9) - (RACE_TYPE_ORDER[b.raceType] ?? 9);
-    if (typeOrder !== 0) return typeOrder;
-    if (a.year !== b.year) return b.year - a.year;
-    return a.race.localeCompare(b.race);
-  });
-}
-
-// ── Raw margin lookup (R-positive: positive = R wins) ──────────────────────
-
-function getRawMargin(
-  race: string,
-  district: string | undefined,
-  year: number,
-  stateAbbr: string,
-  stateName: string
-): number | null {
-  if (race === "President") {
-    const e = (presPastResults[stateAbbr] ?? []).find((r) => r.year === year);
-    return e != null ? e.repPct - e.demPct : null;
-  }
-
-  if (race === "Senate" || race === "Senate Special") {
-    const isSpecial = race === "Senate Special";
-    const all = [
-      ...senateData.filter((d) => d.id === stateAbbr || d.id.startsWith(stateAbbr + "-")),
-      ...senateHoldovers.filter((d) => d.abbr === stateAbbr),
-      ...senateNoElection.filter((d) => d.abbr === stateAbbr),
-    ];
-    for (const seat of all) {
-      const e = (seat.pastResults ?? []).find(
-        (r) => r.year === year && (isSpecial ? r.electionType === "Special" : r.electionType !== "Special")
-      );
-      if (e != null) return e.repPct - e.demPct;
-    }
-    return null;
-  }
-
-  if (race === "Governor") {
-    const all = [
-      ...governorData.filter((d) => d.id === stateAbbr),
-      ...governorNoElection.filter((d) => d.abbr === stateAbbr),
-    ];
-    for (const seat of all) {
-      const e = (seat.pastResults ?? []).find((r) => r.year === year);
-      if (e != null) return e.repPct - e.demPct;
-    }
-    return null;
-  }
-
-  if (district) {
-    const dist = houseData.find((r) => r.name === district);
-    const e = (dist?.pastResults ?? []).find((r) => r.year === year);
-    return e != null ? e.repPct - e.demPct : null;
-  }
-
-  if (race === "State Legislature") {
-    const entries = (stateLegData[stateName] ?? []).filter((e) => e.year === year);
-    let dem = 0, rep = 0;
-    for (const e of entries) {
-      if (e.demVotes != null && e.repVotes != null) {
-        dem += e.demVotes;
-        rep += e.repVotes;
-      }
-    }
-    const total = dem + rep;
-    return total > 0 ? ((rep - dem) / total) * 100 : null;
-  }
-
-  return null;
-}
-
-// ── Competitiveness adjustment for margins of 50 points or greater ──────────
-
-const NONCOMPETITIVE_MARGIN_THRESHOLD = 50;
-const PRIOR_CONTESTED_WEIGHT = 0.6;
-const PRESIDENTIAL_BASELINE_WEIGHT = 0.4;
-const BLANKET_ADJUSTMENT_MULTIPLIER = 0.8;
-
-interface CompetitivenessAdjustment {
-  adjustedMargin: number;
-  adjusted: boolean;
-  blanketApplied: boolean;
-  priorContestedMargin: number | null;
-  priorContestedYear: number | null;
-  presidentialBaselineMargin: number | null;
-  presidentialBaselineYear: number | null;
-}
-
-function getPriorPresidentialResult(
-  stateAbbr: string,
-  district: string | undefined,
-  year: number,
-  minValidYear = 0
-): { margin: number; year: number } | null {
-  if (district) {
-    const districtId = houseData.find((race) => race.name === district)?.id;
-    const entry = districtId
-      ? (houseStatewideResults[districtId] ?? [])
-          .filter((e) => e.race === "President" && e.year <= year && e.year >= minValidYear)
-          .sort((a, b) => b.year - a.year)[0]
-      : undefined;
-    return entry ? { margin: entry.repPct - entry.demPct, year: entry.year } : null;
-  }
-
-  const entry = (presPastResults[stateAbbr] ?? [])
-    .filter((e) => e.year < year)
-    .sort((a, b) => b.year - a.year)[0];
-  return entry ? { margin: entry.repPct - entry.demPct, year: entry.year } : null;
-}
-
-function computeCompetitivenessAdjustment(
-  rawMargin: number,
-  stub: RaceStub,
-  stateAbbr: string,
-  minValidYear = 0
-): CompetitivenessAdjustment {
-  if (Math.abs(rawMargin) < NONCOMPETITIVE_MARGIN_THRESHOLD) {
-    return {
-      adjustedMargin: rawMargin,
-      adjusted: false,
-      blanketApplied: false,
-      priorContestedMargin: null,
-      priorContestedYear: null,
-      presidentialBaselineMargin: null,
-      presidentialBaselineYear: null,
-    };
-  }
-
-  const priorResults = stub.historicalMargins
-    .filter((result) => result.year < stub.year && result.year >= minValidYear)
-    .sort((a, b) => b.year - a.year);
-  // Only use a prior result as "contested" if it was genuinely competitive.
-  // If all priors are also ≥ 50, leave undefined so weights fall on presidential baseline.
-  const priorContested = priorResults.find(
-    (result) => Math.abs(result.margin) < NONCOMPETITIVE_MARGIN_THRESHOLD
-  );
-  const presidentialResult = getPriorPresidentialResult(
-    stateAbbr,
-    stub.district,
-    stub.year,
-    minValidYear
-  );
-
-  // No valid prior data at all within current boundary vintage → blanket haircut.
-  if (priorContested == null && presidentialResult == null) {
-    return {
-      adjustedMargin: rawMargin * BLANKET_ADJUSTMENT_MULTIPLIER,
-      adjusted: true,
-      blanketApplied: true,
-      priorContestedMargin: null,
-      priorContestedYear: null,
-      presidentialBaselineMargin: null,
-      presidentialBaselineYear: null,
-    };
-  }
-
-  // If one source is unavailable, use the available source for both sides of
-  // the blend so an extreme raw margin never silently re-enters the model.
-  const priorContestedMargin = priorContested?.margin ?? presidentialResult!.margin;
-  const presidentialMargin = presidentialResult?.margin ?? priorContested!.margin;
-
-  const blendedMargin =
-    PRIOR_CONTESTED_WEIGHT * priorContestedMargin +
-    PRESIDENTIAL_BASELINE_WEIGHT * presidentialMargin;
-
-  // Never let the adjustment make the margin more extreme than the raw result.
-  const adjustedMargin =
-    Math.abs(blendedMargin) > Math.abs(rawMargin) ? rawMargin : blendedMargin;
-
-  return {
-    adjustedMargin,
-    adjusted: true,
-    blanketApplied: false,
-    priorContestedMargin: priorContested?.margin ?? null,
-    priorContestedYear: priorContested?.year ?? null,
-    presidentialBaselineMargin: presidentialResult?.margin ?? null,
-    presidentialBaselineYear: presidentialResult?.year ?? null,
-  };
-}
-
-// ── WF formula: 1/(1+NES×S×k×sign), bounded [0.6, 1.6] ────────────────────
-
-function computeWF(
-  base: number,
-  NES: number,
-  S: number,
-  k_mult: number
-): { wf: number; capped: boolean } {
-  if (base === 0) return { wf: 1.0, capped: false };
-  const sign = base > 0 ? 1 : -1;
-  const unclamped = 1 / (1 + NES * S * k_mult * sign);
-  const clamped = Math.max(0.6, Math.min(1.6, unclamped));
-  return { wf: clamped, capped: Math.abs(unclamped - clamped) > 0.0001 };
-}
-
-// ── IF formula ──────────────────────────────────────────────────────────────
-
-const IF_INCUMBENT_WINS: Record<string, number> = { P: 0.935, S: 0.875, G: 0.835, H: 0.80, L: 0.875 };
-const IF_CHALLENGER_WINS: Record<string, number> = { P: 1.07, S: 1.14, G: 1.20, H: 1.25, L: 1.14 };
-
-function computeIF(raceType: string, incumbent: string, rawMargin: number | null): number {
-  if (raceType === "P" || incumbent === "Open" || incumbent === "-" || rawMargin === null) return 1.00;
-  const incumbentWon = (incumbent === "R" && rawMargin > 0) || (incumbent === "D" && rawMargin < 0);
-  return incumbentWon ? (IF_INCUMBENT_WINS[raceType] ?? 1.00) : (IF_CHALLENGER_WINS[raceType] ?? 1.00);
-}
 
 // ── Display helpers ─────────────────────────────────────────────────────────
 
@@ -641,214 +200,6 @@ const FORMULA_PANELS: Record<string, { title: string; rows: { label: string; for
   },
 };
 
-// ── Computed race type ───────────────────────────────────────────────────────
-
-interface ComputedRace extends RaceStub {
-  rawMargin: number | null;
-  IF: number;
-  candidateFactor_pts: number | null;
-  FF_pts: number | null;
-  adjustedMargin: number | null;
-  competitivenessAdjusted: boolean;
-  blanketApplied: boolean;
-  priorContestedMargin: number | null;
-  priorContestedYear: number | null;
-  presidentialBaselineMargin: number | null;
-  presidentialBaselineYear: number | null;
-  minValidYear: number;
-  WA: number;
-  WFCapped: boolean;
-  NM: number | null;
-  inAggregation: boolean; // false for odd-year races not in YEAR_WEIGHTS
-}
-
-interface YearAggregation {
-  year: number;
-  racesPresent: string[];
-  redistributedWeights: Record<string, number>;
-  typeNMs: Record<string, number | null>;
-  WRS: number;
-}
-
-interface StateModelCalculation {
-  races: ComputedRace[];
-  yearAggregations: YearAggregation[];
-  tpl: number;
-}
-
-function calculateStateModel(
-  stateAbbr: string,
-  stateName: string
-): StateModelCalculation {
-  const S = STATE_MODEL_CONSTANTS[stateAbbr]?.S ?? null;
-  const stubs = generateRaceList(stateAbbr, stateName);
-  const races: ComputedRace[] = stubs.map((stub) => {
-    const rawMargin = getRawMargin(
-      stub.race,
-      stub.district,
-      stub.year,
-      stateAbbr,
-      stateName
-    );
-    const NES = G.NES_BY_YEAR[stub.year] ?? null;
-    const inAggregation = stub.year in G.YEAR_WEIGHTS;
-    let minValidYear = 0;
-    if (stub.raceType === "H" && stub.district) {
-      const districtId = houseData.find((r) => r.name === stub.district)?.id;
-      if (districtId) {
-        const validEntries = (houseDistrictInfo[districtId] ?? []).filter((e) => e.year <= stub.year);
-        if (validEntries.length > 0) minValidYear = Math.max(...validEntries.map((e) => e.year));
-      }
-    }
-    const competitiveness =
-      rawMargin == null
-        ? null
-        : computeCompetitivenessAdjustment(rawMargin, stub, stateAbbr, minValidYear);
-    const adjustedMargin = competitiveness?.adjustedMargin ?? null;
-    let IF: number;
-    if (stub.raceType === "P") {
-      const pifRow = popVoteData.find((r) => r.type === "President" && r.year === stub.year);
-      IF = pifRow
-        ? 1 + pifRow.presMargin * G.k_pif * (presIncParty(pifRow.presInc) === "dem" ? 1 : -1)
-        : 1.00;
-    } else {
-      IF = computeIF(stub.raceType, stub.incumbent, rawMargin);
-    }
-    // P races: IF (approval) and CQ (candidate quality) are independent → additive, CQ capped
-    // Non-P races: incumbent IS candidate → IF and CQ compound multiplicatively
-    const cappedAdj = adjustedMargin != null
-      ? Math.sign(adjustedMargin) * Math.min(Math.abs(adjustedMargin), G.CQ_MARGIN_CAP)
-      : null;
-    const candidateFactor_pts = adjustedMargin != null
-      ? stub.raceType === "P"
-        ? adjustedMargin * (IF - 1) + (cappedAdj ?? 0) * (stub.CQ - 1)
-        : adjustedMargin * (IF * stub.CQ - 1)
-      : null;
-    const FF_pts = adjustedMargin != null ? adjustedMargin * (stub.FF - 1) : null;
-    let WA = 0;
-    let wfCapped = false;
-    if (adjustedMargin != null && S != null && NES != null) {
-      const WA_add = NES * S * G.k_add;
-      const { wf, capped } = computeWF(adjustedMargin, NES, S, G.k_mult);
-      const WA_mult = adjustedMargin * (1 - wf);
-      WA = -(0.70 * WA_add + 0.30 * WA_mult);
-      wfCapped = capped;
-    }
-
-    const NM = adjustedMargin != null
-      ? stub.raceType === "P"
-        ? adjustedMargin + (candidateFactor_pts ?? 0) + (FF_pts ?? 0) + WA
-        : adjustedMargin * IF * stub.CQ + (FF_pts ?? 0) + WA
-      : null;
-    return {
-      ...stub,
-      rawMargin,
-      IF,
-      candidateFactor_pts,
-      FF_pts,
-      adjustedMargin,
-      competitivenessAdjusted: competitiveness?.adjusted ?? false,
-      blanketApplied: competitiveness?.blanketApplied ?? false,
-      priorContestedMargin: competitiveness?.priorContestedMargin ?? null,
-      priorContestedYear: competitiveness?.priorContestedYear ?? null,
-      presidentialBaselineMargin: competitiveness?.presidentialBaselineMargin ?? null,
-      presidentialBaselineYear: competitiveness?.presidentialBaselineYear ?? null,
-      minValidYear,
-      WA,
-      WFCapped: wfCapped,
-      NM,
-      inAggregation,
-    };
-  });
-
-  const yearAggregations = G.YEARS.map((year) => {
-    const yearRaces = races.filter((race) => race.year === year && race.NM != null);
-
-    const typeNMs: Record<string, number | null> = {};
-    for (const type of ["P", "G", "S", "H", "L"]) {
-      const typeRaces = yearRaces.filter((race) => race.raceType === type);
-      typeNMs[type] = typeRaces.length > 0
-        ? typeRaces.reduce((sum, race) => sum + (race.NM ?? 0), 0) / typeRaces.length
-        : null;
-    }
-
-    const racesPresent = ["P", "G", "S", "H", "L"].filter((t) => typeNMs[t] != null);
-    const totalBase = racesPresent.reduce((sum, type) => sum + (G.RACE_TYPE_WEIGHTS[type] ?? 0), 0);
-    const redistributedWeights: Record<string, number> = {};
-    for (const type of racesPresent) {
-      redistributedWeights[type] = (G.RACE_TYPE_WEIGHTS[type] ?? 0) / totalBase;
-    }
-
-    const WRS = racesPresent.reduce(
-      (sum, type) => sum + redistributedWeights[type] * (typeNMs[type] ?? 0),
-      0
-    );
-
-    return { year, racesPresent, redistributedWeights, typeNMs, WRS };
-  });
-
-  const tpl = yearAggregations.reduce(
-    (sum, aggregation) =>
-      sum + (G.YEAR_WEIGHTS[aggregation.year] ?? 0) * aggregation.WRS,
-    0
-  );
-
-  return { races, yearAggregations, tpl };
-}
-
-// ── District TPL types ────────────────────────────────────────────────────────
-
-interface DistrictComputedRace {
-  year: number;
-  rawMargin: number;
-  IF: number;
-  wqTier: CQTier;
-  lqTier: CQTier;
-  CQ: number;
-  candidateFactor_pts: number;
-  NM: number;
-}
-
-interface DistrictModelCalculation {
-  races: DistrictComputedRace[];
-  tpl: number;
-}
-
-// ── District TPL calculation ──────────────────────────────────────────────────
-
-function calculateDistrictModel(districtId: string): DistrictModelCalculation {
-  const d = districtPresidentialData[districtId];
-  if (!d) return { races: [], tpl: 0 };
-
-  const marginsById: Record<number, number> = {
-    2016: d.pres16Margin,
-    2020: d.pres20Margin,
-    2024: d.pres24Margin,
-  };
-
-  const races: DistrictComputedRace[] = G.DISTRICT_YEARS.map((year) => {
-    const rawMargin = marginsById[year];
-    const pifRow = popVoteData.find((r) => r.type === "President" && r.year === year);
-    const IF = pifRow
-      ? 1 + pifRow.presMargin * G.k_pif * (presIncParty(pifRow.presInc) === "dem" ? 1 : -1)
-      : 1.00;
-    const presBase = PRESIDENTIAL_INPUTS_BY_YEAR[year];
-    const wqTier: CQTier = presBase?.wqTier ?? "Generic";
-    const lqTier: CQTier = presBase?.lqTier ?? "Generic";
-    const CQ = WQ_VALUES[wqTier] * LQ_VALUES[lqTier];
-    const cappedAdj = Math.sign(rawMargin) * Math.min(Math.abs(rawMargin), G.CQ_MARGIN_CAP);
-    const candidateFactor_pts = rawMargin * (IF - 1) + cappedAdj * (CQ - 1);
-    const NM = rawMargin + candidateFactor_pts;
-    return { year, rawMargin, IF, wqTier, lqTier, CQ, candidateFactor_pts, NM };
-  });
-
-  const tpl = races.reduce(
-    (sum, r) => sum + (G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0) * r.NM,
-    0
-  );
-  return { races, tpl };
-}
-
 // ── TPL State Map ────────────────────────────────────────────────────────────
 
 const STATES_GEO_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
@@ -912,7 +263,7 @@ function TplStateMap({ rows, onSelect }: { rows: TplMapRow[]; onSelect: (abbr: s
               geographies.map((geo) => {
                 const row = rowByName[geo.properties?.name ?? ""];
                 const isSelected = selected?.abbr === row?.abbr;
-                const fill = row ? getRaceColor(-row.tpl) : mapUnfilled;
+                const fill = row ? getRaceColor(row.tpl) : mapUnfilled;
                 return (
                   <Geography
                     key={geo.rsmKey}
@@ -1122,7 +473,7 @@ function TplDistrictMap({
                 const key = geoidToDistrictKey(geoid);
                 const row = rowById[key];
                 const isSelected = selected?.id === row?.id;
-                const fill = row ? getRaceColor(-row.tpl) : mapUnfilled;
+                const fill = row ? getRaceColor(row.tpl) : mapUnfilled;
                 return (
                   <Geography
                     key={geo.rsmKey}
@@ -1268,7 +619,7 @@ export default function TplModelPage() {
   // Sub-tab state
   const [activeSubTab, setActiveSubTab] = useState<"state" | "district" | "table" | "districtTable">(() => {
     if (typeof window === "undefined") return "state";
-    const tab = new URLSearchParams(window.location.search).get("modelSubTab");
+    const tab = new URLSearchParams(window.location.search).get("tab");
     return tab === "state" || tab === "district" || tab === "table" || tab === "districtTable" ? tab : "state";
   });
   const [returnSubTab, setReturnSubTab] = useState<"table" | "districtTable" | null>(null);
@@ -1437,6 +788,7 @@ export default function TplModelPage() {
   }
 
   function handleSubTabClick(tab: "state" | "district" | "table" | "districtTable") {
+    window.history.pushState({}, "", `/?tab=${tab}`);
     setReturnSubTab(null);
     setActiveSubTab(tab);
   }
@@ -1465,11 +817,11 @@ export default function TplModelPage() {
   }
 
   function stateTplFromParam() {
-    return encodeURIComponent(`/?tab=model&modelSubTab=state&modelState=${selectedAbbr}`);
+    return encodeURIComponent(`/?tab=state&modelState=${selectedAbbr}`);
   }
 
   function districtTplFromParam() {
-    return encodeURIComponent(`/?tab=model&modelSubTab=district&modelDistrict=${selectedDistrictId}`);
+    return encodeURIComponent(`/?tab=district&modelDistrict=${selectedDistrictId}`);
   }
 
   function withTplReturn(href: string, from: string) {
@@ -2579,7 +1931,7 @@ export default function TplModelPage() {
 
         if (r.blanketApplied) {
           rows.push({ label: "Method", value: `No valid prior data within current boundary vintage (boundary from ${r.minValidYear})` });
-          rows.push({ label: "Adjusted = Raw × 0.8", value: <>{mc(raw)} × {BLANKET_ADJUSTMENT_MULTIPLIER} = {mc(adj)}</> });
+          rows.push({ label: "Adjusted = Raw × 0.8", value: <>{mc(raw)} × 0.8 = {mc(adj)}</> });
         } else {
           const hasContested = r.priorContestedMargin != null;
           const hasPres = r.presidentialBaselineMargin != null;

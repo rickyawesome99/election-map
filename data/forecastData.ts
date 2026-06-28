@@ -73,7 +73,7 @@ export const senateData: RaceForecast[] = [
     "state": "Alaska",
     "raceType": "senate",
     "probability": 0.49,
-    "margin": -2,
+    "margin": 2,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 44 },
@@ -106,7 +106,7 @@ export const senateData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "senate",
     "probability": 0.05,
-    "margin": -17.5,
+    "margin": 17.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -139,7 +139,7 @@ export const senateData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "senate",
     "probability": 0.04,
-    "margin": -21,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -172,7 +172,7 @@ export const senateData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "senate",
     "probability": 0.97,
-    "margin": 14,
+    "margin": -14,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -205,7 +205,7 @@ export const senateData: RaceForecast[] = [
     "state": "Delaware",
     "raceType": "senate",
     "probability": 0.94,
-    "margin": 20.5,
+    "margin": -20.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -238,7 +238,7 @@ export const senateData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "senate",
     "probability": 0.65,
-    "margin": 3.5,
+    "margin": -3.5,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 60 },
@@ -271,7 +271,7 @@ export const senateData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "senate",
     "probability": 0.3,
-    "margin": -2.5,
+    "margin": 2.5,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 25 },
@@ -304,7 +304,7 @@ export const senateData: RaceForecast[] = [
     "state": "Idaho",
     "raceType": "senate",
     "probability": 0.07,
-    "margin": -24,
+    "margin": 24,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -337,7 +337,7 @@ export const senateData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "senate",
     "probability": 0.93,
-    "margin": 15,
+    "margin": -15,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -370,7 +370,7 @@ export const senateData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "senate",
     "probability": 0.15,
-    "margin": -10.5,
+    "margin": 10.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 10 },
@@ -403,7 +403,7 @@ export const senateData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "senate",
     "probability": 0.07,
-    "margin": -13.5,
+    "margin": 13.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -436,7 +436,7 @@ export const senateData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "senate",
     "probability": 0.09,
-    "margin": -20,
+    "margin": 20,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 4 },
@@ -469,7 +469,7 @@ export const senateData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "senate",
     "probability": 0.95,
-    "margin": 28,
+    "margin": -28,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -502,7 +502,7 @@ export const senateData: RaceForecast[] = [
     "state": "Maine",
     "raceType": "senate",
     "probability": 0.6,
-    "margin": 3.5,
+    "margin": -3.5,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 55 },
@@ -535,7 +535,7 @@ export const senateData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "senate",
     "probability": 0.79,
-    "margin": 1.2,
+    "margin": -1.2,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 74 },
@@ -568,7 +568,7 @@ export const senateData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "senate",
     "probability": 0.9,
-    "margin": 9.5,
+    "margin": -9.5,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 85 },
@@ -602,7 +602,7 @@ export const senateData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "senate",
     "probability": 0.06,
-    "margin": -13,
+    "margin": 13,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -636,7 +636,7 @@ export const senateData: RaceForecast[] = [
     "state": "Montana",
     "raceType": "senate",
     "probability": 0.21,
-    "margin": -12,
+    "margin": 12,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 16 },
@@ -669,7 +669,7 @@ export const senateData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "senate",
     "probability": 0.52,
-    "margin": 5.5,
+    "margin": -5.5,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 47 },
@@ -702,7 +702,7 @@ export const senateData: RaceForecast[] = [
     "state": "Nebraska",
     "raceType": "senate",
     "probability": 0.27,
-    "margin": -7,
+    "margin": 7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 22 },
@@ -736,7 +736,7 @@ export const senateData: RaceForecast[] = [
     "state": "New Hampshire",
     "raceType": "senate",
     "probability": 0.85,
-    "margin": 4.5,
+    "margin": -4.5,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 80 },
@@ -769,7 +769,7 @@ export const senateData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "senate",
     "probability": 0.96,
-    "margin": 14,
+    "margin": -14,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -802,7 +802,7 @@ export const senateData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "senate",
     "probability": 0.97,
-    "margin": 48,
+    "margin": -48,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -835,7 +835,7 @@ export const senateData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "senate",
     "probability": 0.04,
-    "margin": -25,
+    "margin": 25,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -869,7 +869,7 @@ export const senateData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "senate",
     "probability": 0.95,
-    "margin": 17,
+    "margin": -17,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -902,7 +902,7 @@ export const senateData: RaceForecast[] = [
     "state": "Rhode Island",
     "raceType": "senate",
     "probability": 0.96,
-    "margin": 38,
+    "margin": -38,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -935,7 +935,7 @@ export const senateData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "senate",
     "probability": 0.14,
-    "margin": -8.5,
+    "margin": 8.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 9 },
@@ -968,7 +968,7 @@ export const senateData: RaceForecast[] = [
     "state": "South Dakota",
     "raceType": "senate",
     "probability": 0.06,
-    "margin": -27.5,
+    "margin": 27.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -1001,7 +1001,7 @@ export const senateData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "senate",
     "probability": 0.07,
-    "margin": -26.5,
+    "margin": 26.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -1034,7 +1034,7 @@ export const senateData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "senate",
     "probability": 0.43,
-    "margin": -4.5,
+    "margin": 4.5,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 38 },
@@ -1067,7 +1067,7 @@ export const senateData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "senate",
     "probability": 0.96,
-    "margin": 14,
+    "margin": -14,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -1100,7 +1100,7 @@ export const senateData: RaceForecast[] = [
     "state": "West Virginia",
     "raceType": "senate",
     "probability": 0.93,
-    "margin": -36.5,
+    "margin": 36.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -1133,7 +1133,7 @@ export const senateData: RaceForecast[] = [
     "state": "Wyoming",
     "raceType": "senate",
     "probability": 0.03,
-    "margin": -45.5,
+    "margin": 45.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -1166,7 +1166,7 @@ export const senateData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "senate",
     "probability": 0.18,
-    "margin": -11.5,
+    "margin": 11.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 13 },
@@ -1199,7 +1199,7 @@ export const senateData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "senate",
     "probability": 0.48,
-    "margin": -1.5,
+    "margin": 1.5,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 43 },
@@ -2047,7 +2047,7 @@ export const governorData: RaceForecast[] = [
     "state": "Hawaii",
     "raceType": "governor",
     "probability": 0.94,
-    "margin": 30,
+    "margin": -30,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -2080,7 +2080,7 @@ export const governorData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "governor",
     "probability": 0.94,
-    "margin": 30,
+    "margin": -30,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -2113,7 +2113,7 @@ export const governorData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "governor",
     "probability": 0.92,
-    "margin": 30,
+    "margin": -30,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 87 },
@@ -2146,7 +2146,7 @@ export const governorData: RaceForecast[] = [
     "state": "Rhode Island",
     "raceType": "governor",
     "probability": 0.93,
-    "margin": 25,
+    "margin": -25,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -2179,7 +2179,7 @@ export const governorData: RaceForecast[] = [
     "state": "California",
     "raceType": "governor",
     "probability": 0.86,
-    "margin": 20,
+    "margin": -20,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 81 },
@@ -2212,7 +2212,7 @@ export const governorData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "governor",
     "probability": 0.91,
-    "margin": 20,
+    "margin": -20,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 86 },
@@ -2245,7 +2245,7 @@ export const governorData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "governor",
     "probability": 0.96,
-    "margin": 18,
+    "margin": -18,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -2278,7 +2278,7 @@ export const governorData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "governor",
     "probability": 0.9,
-    "margin": 15,
+    "margin": -15,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 85 },
@@ -2311,7 +2311,7 @@ export const governorData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "governor",
     "probability": 0.91,
-    "margin": 15,
+    "margin": -15,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 86 },
@@ -2344,7 +2344,7 @@ export const governorData: RaceForecast[] = [
     "state": "New York",
     "raceType": "governor",
     "probability": 0.89,
-    "margin": 14,
+    "margin": -14,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 84 },
@@ -2377,7 +2377,7 @@ export const governorData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "governor",
     "probability": 0.92,
-    "margin": 12,
+    "margin": -12,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 87 },
@@ -2410,7 +2410,7 @@ export const governorData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "governor",
     "probability": 0.94,
-    "margin": 11,
+    "margin": -11,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -2443,7 +2443,7 @@ export const governorData: RaceForecast[] = [
     "state": "Maine",
     "raceType": "governor",
     "probability": 0.87,
-    "margin": 10,
+    "margin": -10,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 82 },
@@ -2476,7 +2476,7 @@ export const governorData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "governor",
     "probability": 0.88,
-    "margin": 9,
+    "margin": -9,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 83 },
@@ -2509,7 +2509,7 @@ export const governorData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "governor",
     "probability": 0.61,
-    "margin": 5,
+    "margin": -5,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 56 },
@@ -2542,7 +2542,7 @@ export const governorData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "governor",
     "probability": 0.71,
-    "margin": 3,
+    "margin": -3,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 66 },
@@ -2575,7 +2575,7 @@ export const governorData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "governor",
     "probability": 0.75,
-    "margin": 2,
+    "margin": -2,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 70 },
@@ -2608,7 +2608,7 @@ export const governorData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "governor",
     "probability": 0.54,
-    "margin": 1,
+    "margin": -1,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 49 },
@@ -2645,7 +2645,7 @@ export const governorData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "governor",
     "probability": 0.55,
-    "margin": -1,
+    "margin": 1,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 50 },
@@ -2678,7 +2678,7 @@ export const governorData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "governor",
     "probability": 0.49,
-    "margin": -2,
+    "margin": 2,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 44 },
@@ -2711,7 +2711,7 @@ export const governorData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "governor",
     "probability": 0.49,
-    "margin": -3,
+    "margin": 3,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 44 },
@@ -2744,7 +2744,7 @@ export const governorData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "governor",
     "probability": 0.15,
-    "margin": -8,
+    "margin": 8,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 10 },
@@ -2777,7 +2777,7 @@ export const governorData: RaceForecast[] = [
     "state": "Alaska",
     "raceType": "governor",
     "probability": 0.24,
-    "margin": -10,
+    "margin": 10,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 19 },
@@ -2810,7 +2810,7 @@ export const governorData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "governor",
     "probability": 0.29,
-    "margin": -10,
+    "margin": 10,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 24 },
@@ -2843,7 +2843,7 @@ export const governorData: RaceForecast[] = [
     "state": "New Hampshire",
     "raceType": "governor",
     "probability": 0.29,
-    "margin": -10,
+    "margin": 10,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 24 },
@@ -2876,7 +2876,7 @@ export const governorData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "governor",
     "probability": 0.18,
-    "margin": -12,
+    "margin": 12,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 13 },
@@ -2909,7 +2909,7 @@ export const governorData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "governor",
     "probability": 0.11,
-    "margin": -13,
+    "margin": 13,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 6 },
@@ -2942,7 +2942,7 @@ export const governorData: RaceForecast[] = [
     "state": "Nebraska",
     "raceType": "governor",
     "probability": 0.1,
-    "margin": -15,
+    "margin": 15,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -2975,7 +2975,7 @@ export const governorData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "governor",
     "probability": 0.05,
-    "margin": -15,
+    "margin": 15,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3008,7 +3008,7 @@ export const governorData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "governor",
     "probability": 0.05,
-    "margin": -15,
+    "margin": 15,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3041,7 +3041,7 @@ export const governorData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "governor",
     "probability": 0.06,
-    "margin": -25,
+    "margin": 25,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3074,7 +3074,7 @@ export const governorData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "governor",
     "probability": 0.06,
-    "margin": -25,
+    "margin": 25,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3107,7 +3107,7 @@ export const governorData: RaceForecast[] = [
     "state": "South Dakota",
     "raceType": "governor",
     "probability": 0.04,
-    "margin": -25,
+    "margin": 25,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3140,7 +3140,7 @@ export const governorData: RaceForecast[] = [
     "state": "Vermont",
     "raceType": "governor",
     "probability": 0.25,
-    "margin": -25,
+    "margin": 25,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 20 },
@@ -3173,7 +3173,7 @@ export const governorData: RaceForecast[] = [
     "state": "Idaho",
     "raceType": "governor",
     "probability": 0.07,
-    "margin": -30,
+    "margin": 30,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -3206,7 +3206,7 @@ export const governorData: RaceForecast[] = [
     "state": "Wyoming",
     "raceType": "governor",
     "probability": 0.07,
-    "margin": -38,
+    "margin": 38,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -3427,7 +3427,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0,
-    "margin": -50.7,
+    "margin": 50.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3460,7 +3460,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0.95,
-    "margin": 17.3,
+    "margin": -17.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -3493,7 +3493,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0,
-    "margin": -48.8,
+    "margin": 48.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3526,7 +3526,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0,
-    "margin": -68.7,
+    "margin": 68.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3559,7 +3559,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -31.2,
+    "margin": 31.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -3592,7 +3592,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0,
-    "margin": -36.2,
+    "margin": 36.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3625,7 +3625,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 1,
-    "margin": 36,
+    "margin": -36,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -3658,7 +3658,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alaska",
     "raceType": "house",
     "probability": 0.28,
-    "margin": -6.2,
+    "margin": 6.2,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 23 },
@@ -3689,7 +3689,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.59,
-    "margin": 2.4,
+    "margin": -2.4,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 54 },
@@ -3720,7 +3720,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.21,
-    "margin": -8.5,
+    "margin": 8.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 16 },
@@ -3751,7 +3751,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 1,
-    "margin": 51.1,
+    "margin": -51.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -3784,7 +3784,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.89,
-    "margin": 12.6,
+    "margin": -12.6,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 84 },
@@ -3817,7 +3817,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.07,
-    "margin": -15.4,
+    "margin": 15.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -3850,7 +3850,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.62,
-    "margin": 3.1,
+    "margin": -3.1,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 57 },
@@ -3881,7 +3881,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 1,
-    "margin": 33.3,
+    "margin": -33.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -3914,7 +3914,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.12,
-    "margin": -12.5,
+    "margin": 12.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 7 },
@@ -3947,7 +3947,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.6,
-    "margin": -26.1,
+    "margin": 26.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 55 },
@@ -3980,7 +3980,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "probability": 0,
-    "margin": -44.1,
+    "margin": 44.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -4013,7 +4013,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -13.4,
+    "margin": 13.4,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -4046,7 +4046,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "probability": 0.5,
-    "margin": -26.7,
+    "margin": 26.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 45 },
@@ -4079,7 +4079,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "probability": 0,
-    "margin": -39.9,
+    "margin": 39.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -4112,7 +4112,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.97,
-    "margin": 19.5,
+    "margin": -19.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -4145,7 +4145,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 32.4,
+    "margin": -32.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4178,7 +4178,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.92,
-    "margin": 14.9,
+    "margin": -14.9,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 87 },
@@ -4209,7 +4209,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 24.3,
+    "margin": -24.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -4242,7 +4242,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.04,
-    "margin": -18,
+    "margin": 18,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -4275,7 +4275,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.89,
-    "margin": 12.9,
+    "margin": -12.9,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 84 },
@@ -4308,7 +4308,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 22.5,
+    "margin": -22.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -4341,7 +4341,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 45,
+    "margin": -45,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4374,7 +4374,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 24.9,
+    "margin": -24.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -4405,7 +4405,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 40.8,
+    "margin": -40.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4438,7 +4438,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 80.2,
+    "margin": -80.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4471,7 +4471,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 92.5,
+    "margin": -92.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4504,7 +4504,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.88,
-    "margin": 12.4,
+    "margin": -12.4,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 83 },
@@ -4535,7 +4535,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 44.1,
+    "margin": -44.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4568,7 +4568,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 58.2,
+    "margin": -58.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4601,7 +4601,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 65.4,
+    "margin": -65.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4634,7 +4634,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 50.9,
+    "margin": -50.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4667,7 +4667,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 40.4,
+    "margin": -40.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4700,7 +4700,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 45.5,
+    "margin": -45.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4733,7 +4733,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0,
-    "margin": -35.8,
+    "margin": 35.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -4766,7 +4766,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.93,
-    "margin": 15.7,
+    "margin": -15.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -4797,7 +4797,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.73,
-    "margin": 6.5,
+    "margin": -6.5,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 68 },
@@ -4828,7 +4828,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16.7,
+    "margin": 16.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -4861,7 +4861,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 33.3,
+    "margin": -33.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4894,7 +4894,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.95,
-    "margin": 17.6,
+    "margin": -17.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -4927,7 +4927,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 20.6,
+    "margin": -20.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -4960,7 +4960,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.97,
-    "margin": 19,
+    "margin": -19,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -4991,7 +4991,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 34.9,
+    "margin": -34.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5024,7 +5024,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 47.4,
+    "margin": -47.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5057,7 +5057,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 48.3,
+    "margin": -48.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5090,7 +5090,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 21.1,
+    "margin": -21.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -5123,7 +5123,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 35.3,
+    "margin": -35.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5156,7 +5156,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 25,
+    "margin": -25,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5189,7 +5189,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 70.5,
+    "margin": -70.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5222,7 +5222,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 21,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -5255,7 +5255,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 47.9,
+    "margin": -47.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5288,7 +5288,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 79.7,
+    "margin": -79.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5321,7 +5321,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 24.8,
+    "margin": -24.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5354,7 +5354,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 22.1,
+    "margin": -22.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -5387,7 +5387,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.15,
-    "margin": -10,
+    "margin": 10,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 10 },
@@ -5418,7 +5418,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 25.5,
+    "margin": -25.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5449,7 +5449,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 22.6,
+    "margin": -22.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5482,7 +5482,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 61.5,
+    "margin": -61.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5515,7 +5515,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 51.8,
+    "margin": -51.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5548,7 +5548,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.89,
-    "margin": 13,
+    "margin": -13,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 84 },
@@ -5579,7 +5579,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 29.6,
+    "margin": -29.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5612,7 +5612,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.96,
-    "margin": 18.3,
+    "margin": -18.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -5643,7 +5643,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.81,
-    "margin": 9.1,
+    "margin": -9.1,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 76 },
@@ -5676,7 +5676,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.96,
-    "margin": 18.1,
+    "margin": -18.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -5707,7 +5707,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 25.6,
+    "margin": -25.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5740,7 +5740,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 26,
+    "margin": -26,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5773,7 +5773,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": 32.7,
+    "margin": -32.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5806,7 +5806,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 1,
-    "margin": 67.1,
+    "margin": -67.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5839,7 +5839,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 1,
-    "margin": 49.6,
+    "margin": -49.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5872,7 +5872,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 0.37,
-    "margin": -3.4,
+    "margin": 3.4,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 32 },
@@ -5903,7 +5903,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 0.18,
-    "margin": -9.7,
+    "margin": 9.7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 13 },
@@ -5936,7 +5936,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 0.28,
-    "margin": -6.2,
+    "margin": 6.2,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 23 },
@@ -5969,7 +5969,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 1,
-    "margin": 29.3,
+    "margin": -29.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6002,7 +6002,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 23.2,
+    "margin": -23.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -6035,7 +6035,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 0.71,
-    "margin": 5.7,
+    "margin": -5.7,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 66 },
@@ -6063,7 +6063,7 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "probability": 1,
-    "margin": 31.6,
+    "margin": -31.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6096,7 +6096,7 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "probability": 0.94,
-    "margin": 15.9,
+    "margin": -15.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -6129,7 +6129,7 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 23.9,
+    "margin": -23.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -6162,7 +6162,7 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "probability": 1,
-    "margin": 31.6,
+    "margin": -31.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6195,7 +6195,7 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "probability": 0.88,
-    "margin": 12.3,
+    "margin": -12.3,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 83 },
@@ -6226,7 +6226,7 @@ export const houseData: RaceForecast[] = [
     "state": "Delaware",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 26.6,
+    "margin": -26.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6257,7 +6257,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -31.2,
+    "margin": 31.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -6290,7 +6290,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.13,
-    "margin": -11.9,
+    "margin": 11.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 8 },
@@ -6323,7 +6323,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.07,
-    "margin": -15.2,
+    "margin": 15.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -6356,7 +6356,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.28,
-    "margin": -6,
+    "margin": 6,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 23 },
@@ -6389,7 +6389,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.07,
-    "margin": -15.7,
+    "margin": 15.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -6422,7 +6422,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 1,
-    "margin": -24.2,
+    "margin": 24.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6455,7 +6455,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.35,
-    "margin": -4.1,
+    "margin": 4.1,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 30 },
@@ -6488,7 +6488,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.04,
-    "margin": -17,
+    "margin": 17,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -6521,7 +6521,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.95,
-    "margin": 17.1,
+    "margin": -17.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -6554,7 +6554,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 1,
-    "margin": 36.2,
+    "margin": -36.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6587,7 +6587,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.14,
-    "margin": -11.1,
+    "margin": 11.1,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 9 },
@@ -6620,7 +6620,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.2,
-    "margin": -30,
+    "margin": 30,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 15 },
@@ -6653,7 +6653,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.33,
-    "margin": -4.7,
+    "margin": 4.7,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 28 },
@@ -6684,7 +6684,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 22,
+    "margin": -22,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -6717,7 +6717,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.37,
-    "margin": -3.5,
+    "margin": 3.5,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 32 },
@@ -6750,7 +6750,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.15,
-    "margin": -10.7,
+    "margin": 10.7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 10 },
@@ -6783,7 +6783,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.04,
-    "margin": -18.6,
+    "margin": 18.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -6816,7 +6816,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.01,
-    "margin": -22.9,
+    "margin": 22.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -6849,7 +6849,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.01,
-    "margin": -22.8,
+    "margin": 22.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -6882,7 +6882,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 1,
-    "margin": 58,
+    "margin": -58,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6915,7 +6915,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.14,
-    "margin": -11,
+    "margin": 11,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 9 },
@@ -6948,7 +6948,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.96,
-    "margin": 18,
+    "margin": -18,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -6981,7 +6981,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.9,
-    "margin": 13.4,
+    "margin": -13.4,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 85 },
@@ -7012,7 +7012,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 1,
-    "margin": 46.4,
+    "margin": -46.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7045,7 +7045,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.96,
-    "margin": 18.2,
+    "margin": -18.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -7078,7 +7078,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.4,
-    "margin": -27.7,
+    "margin": 27.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 35 },
@@ -7111,7 +7111,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.31,
-    "margin": -5.1,
+    "margin": 5.1,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 26 },
@@ -7144,7 +7144,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -13.5,
+    "margin": 13.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -7174,7 +7174,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.18,
-    "margin": -9.4,
+    "margin": 9.4,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 14 },
@@ -7207,7 +7207,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.96,
-    "margin": 18.5,
+    "margin": -18.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -7240,7 +7240,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.5,
-    "margin": -26.8,
+    "margin": 26.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 45 },
@@ -7273,7 +7273,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 1,
-    "margin": 61.3,
+    "margin": -61.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7306,7 +7306,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 1,
-    "margin": 80.8,
+    "margin": -80.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7339,7 +7339,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 1,
-    "margin": 57.9,
+    "margin": -57.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7372,7 +7372,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.02,
-    "margin": -20,
+    "margin": 20,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -7405,7 +7405,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.3,
-    "margin": -28.2,
+    "margin": 28.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 25 },
@@ -7438,7 +7438,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.2,
-    "margin": -30.6,
+    "margin": 30.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 15 },
@@ -7471,7 +7471,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16.7,
+    "margin": 16.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -7504,7 +7504,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16.6,
+    "margin": 16.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -7537,7 +7537,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.17,
-    "margin": -9.8,
+    "margin": 9.8,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 13 },
@@ -7570,7 +7570,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 1,
-    "margin": 49.9,
+    "margin": -49.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7603,7 +7603,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.2,
-    "margin": -29.7,
+    "margin": 29.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 15 },
@@ -7636,7 +7636,7 @@ export const houseData: RaceForecast[] = [
     "state": "Hawaii",
     "raceType": "house",
     "probability": 1,
-    "margin": 38.5,
+    "margin": -38.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7669,7 +7669,7 @@ export const houseData: RaceForecast[] = [
     "state": "Hawaii",
     "raceType": "house",
     "probability": 1,
-    "margin": 34.5,
+    "margin": -34.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7702,7 +7702,7 @@ export const houseData: RaceForecast[] = [
     "state": "Idaho",
     "raceType": "house",
     "probability": 0,
-    "margin": -39,
+    "margin": 39,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -7735,7 +7735,7 @@ export const houseData: RaceForecast[] = [
     "state": "Idaho",
     "raceType": "house",
     "probability": 0.01,
-    "margin": -22.9,
+    "margin": 22.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -7768,7 +7768,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": 43.4,
+    "margin": -43.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7801,7 +7801,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": 45.6,
+    "margin": -45.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7834,7 +7834,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": 44.6,
+    "margin": -44.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7867,7 +7867,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": 42.2,
+    "margin": -42.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7900,7 +7900,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": 47.4,
+    "margin": -47.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7933,7 +7933,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.94,
-    "margin": 16.1,
+    "margin": -16.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -7966,7 +7966,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": 77.2,
+    "margin": -77.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7999,7 +7999,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.95,
-    "margin": 17,
+    "margin": -17,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -8032,7 +8032,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": 48.6,
+    "margin": -48.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -8065,7 +8065,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": 32.8,
+    "margin": -32.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -8098,7 +8098,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 20.7,
+    "margin": -20.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -8131,7 +8131,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0,
-    "margin": -40.7,
+    "margin": 40.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -8164,7 +8164,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 21.2,
+    "margin": -21.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -8197,7 +8197,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.95,
-    "margin": 17.5,
+    "margin": -17.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -8230,7 +8230,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0,
-    "margin": -41.9,
+    "margin": 41.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -8263,7 +8263,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.8,
-    "margin": -25,
+    "margin": 25,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 75 },
@@ -8296,7 +8296,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.92,
-    "margin": 14.6,
+    "margin": -14.6,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 87 },
@@ -8327,7 +8327,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.81,
-    "margin": 9.4,
+    "margin": -9.4,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 77 },
@@ -8358,7 +8358,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.7,
-    "margin": -25.7,
+    "margin": 25.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 65 },
@@ -8391,7 +8391,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.2,
-    "margin": -29.9,
+    "margin": 29.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 15 },
@@ -8424,7 +8424,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.3,
-    "margin": -28.7,
+    "margin": 28.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 25 },
@@ -8457,7 +8457,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.07,
-    "margin": -15.5,
+    "margin": 15.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -8490,7 +8490,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -31.7,
+    "margin": 31.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -8523,7 +8523,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 1,
-    "margin": 47.9,
+    "margin": -47.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -8554,7 +8554,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -33.4,
+    "margin": 33.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -8587,7 +8587,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.4,
-    "margin": -27.7,
+    "margin": 27.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 35 },
@@ -8620,7 +8620,7 @@ export const houseData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "house",
     "probability": 0.57,
-    "margin": 1.8,
+    "margin": -1.8,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 52 },
@@ -8651,7 +8651,7 @@ export const houseData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "house",
     "probability": 0.4,
-    "margin": -2.8,
+    "margin": 2.8,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 35 },
@@ -8684,7 +8684,7 @@ export const houseData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "house",
     "probability": 0.6,
-    "margin": 2.6,
+    "margin": -2.6,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 55 },
@@ -8715,7 +8715,7 @@ export const houseData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "house",
     "probability": 0.9,
-    "margin": -24.9,
+    "margin": 24.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 85 },
@@ -8748,7 +8748,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -31.2,
+    "margin": 31.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -8781,7 +8781,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "probability": 0.08,
-    "margin": -14.6,
+    "margin": 14.6,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 3 },
@@ -8814,7 +8814,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "probability": 0.92,
-    "margin": 14.4,
+    "margin": -14.4,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 87 },
@@ -8847,7 +8847,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "probability": 0.02,
-    "margin": -22.1,
+    "margin": 22.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -8880,7 +8880,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 0,
-    "margin": -43.6,
+    "margin": 43.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -8913,7 +8913,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 0,
-    "margin": -39.2,
+    "margin": 39.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -8946,7 +8946,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 1,
-    "margin": 30.1,
+    "margin": -30.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -8979,7 +8979,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 0,
-    "margin": -38.6,
+    "margin": 38.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9012,7 +9012,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 0,
-    "margin": -65.2,
+    "margin": 65.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9045,7 +9045,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 0.2,
-    "margin": -8.8,
+    "margin": 8.8,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 15 },
@@ -9078,7 +9078,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 0,
-    "margin": -43.3,
+    "margin": 43.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9111,7 +9111,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 1,
-    "margin": 41.8,
+    "margin": -41.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9144,7 +9144,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 0,
-    "margin": -48.2,
+    "margin": 48.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9177,7 +9177,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 0,
-    "margin": -61.4,
+    "margin": 61.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9210,7 +9210,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 0,
-    "margin": -38.1,
+    "margin": 38.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9243,7 +9243,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 0.96,
-    "margin": 18.5,
+    "margin": -18.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -9276,7 +9276,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maine",
     "raceType": "house",
     "probability": 1,
-    "margin": 27.5,
+    "margin": -27.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9309,7 +9309,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maine",
     "raceType": "house",
     "probability": 0.29,
-    "margin": -5.9,
+    "margin": 5.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 24 },
@@ -9340,7 +9340,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 0.08,
-    "margin": -15,
+    "margin": 15,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 3 },
@@ -9373,7 +9373,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 25.5,
+    "margin": -25.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -9406,7 +9406,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 1,
-    "margin": 29.8,
+    "margin": -29.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9439,7 +9439,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 1,
-    "margin": 84.8,
+    "margin": -84.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9472,7 +9472,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 1,
-    "margin": 40.6,
+    "margin": -40.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9505,7 +9505,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 0.88,
-    "margin": 12.2,
+    "margin": -12.2,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 83 },
@@ -9538,7 +9538,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 1,
-    "margin": 68.8,
+    "margin": -68.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9571,7 +9571,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 1,
-    "margin": 66.6,
+    "margin": -66.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9604,7 +9604,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": 32,
+    "margin": -32,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9637,7 +9637,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": 40.9,
+    "margin": -40.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9670,7 +9670,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": 37.6,
+    "margin": -37.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9703,7 +9703,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": 38,
+    "margin": -38,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9736,7 +9736,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": 64.4,
+    "margin": -64.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9769,7 +9769,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": 32.4,
+    "margin": -32.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9802,7 +9802,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": 83.1,
+    "margin": -83.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9835,7 +9835,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": 41.9,
+    "margin": -41.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9868,7 +9868,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 0.97,
-    "margin": 20.2,
+    "margin": -20.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -9901,7 +9901,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.07,
-    "margin": -15.8,
+    "margin": 15.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -9934,7 +9934,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.4,
-    "margin": -27.4,
+    "margin": 27.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 35 },
@@ -9967,7 +9967,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.95,
-    "margin": 17.5,
+    "margin": -17.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -9998,7 +9998,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.41,
-    "margin": -2.5,
+    "margin": 2.5,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 36 },
@@ -10029,7 +10029,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.9,
-    "margin": -24.8,
+    "margin": 24.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 85 },
@@ -10062,7 +10062,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 1,
-    "margin": 33.7,
+    "margin": -33.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10095,7 +10095,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.63,
-    "margin": 3.3,
+    "margin": -3.3,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 58 },
@@ -10126,7 +10126,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.84,
-    "margin": 10.3,
+    "margin": -10.3,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 79 },
@@ -10157,7 +10157,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.2,
-    "margin": -30.9,
+    "margin": 30.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 15 },
@@ -10190,7 +10190,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.55,
-    "margin": 1.3,
+    "margin": -1.3,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 50 },
@@ -10221,7 +10221,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 25.1,
+    "margin": -25.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -10254,7 +10254,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 1,
-    "margin": 53,
+    "margin": -53,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10287,7 +10287,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 1,
-    "margin": 52.7,
+    "margin": -52.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10320,7 +10320,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 0.2,
-    "margin": -8.9,
+    "margin": 8.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 15 },
@@ -10353,7 +10353,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 0.9,
-    "margin": 13.2,
+    "margin": -13.2,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 85 },
@@ -10384,7 +10384,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 1,
-    "margin": 36.6,
+    "margin": -36.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10417,7 +10417,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 1,
-    "margin": 45.4,
+    "margin": -45.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10450,7 +10450,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 1,
-    "margin": 68,
+    "margin": -68,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10483,7 +10483,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 0.01,
-    "margin": -23,
+    "margin": 23,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10516,7 +10516,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 0,
-    "margin": -38.2,
+    "margin": 38.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10549,7 +10549,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -15.9,
+    "margin": 15.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10582,7 +10582,7 @@ export const houseData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "house",
     "probability": 0.2,
-    "margin": -30,
+    "margin": 30,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 15 },
@@ -10615,7 +10615,7 @@ export const houseData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "house",
     "probability": 1,
-    "margin": 32.1,
+    "margin": -32.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10648,7 +10648,7 @@ export const houseData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "house",
     "probability": 0.3,
-    "margin": -28.9,
+    "margin": 28.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 25 },
@@ -10681,7 +10681,7 @@ export const houseData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "house",
     "probability": 0,
-    "margin": -38.5,
+    "margin": 38.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10714,7 +10714,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 1,
-    "margin": 65.6,
+    "margin": -65.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10747,7 +10747,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 0.26,
-    "margin": -6.8,
+    "margin": 6.8,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 21 },
@@ -10780,7 +10780,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 1,
-    "margin": -24.3,
+    "margin": 24.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10813,7 +10813,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 0,
-    "margin": -40.3,
+    "margin": 40.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10846,7 +10846,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 1,
-    "margin": 30.7,
+    "margin": -30.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10877,7 +10877,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 0,
-    "margin": -38.4,
+    "margin": 38.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10910,7 +10910,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 0,
-    "margin": -41.7,
+    "margin": 41.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10943,7 +10943,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 0,
-    "margin": -53.2,
+    "margin": 53.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10976,7 +10976,7 @@ export const houseData: RaceForecast[] = [
     "state": "Montana",
     "raceType": "house",
     "probability": 0.37,
-    "margin": -3.5,
+    "margin": 3.5,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 32 },
@@ -11007,7 +11007,7 @@ export const houseData: RaceForecast[] = [
     "state": "Montana",
     "raceType": "house",
     "probability": 0.5,
-    "margin": -26.9,
+    "margin": 26.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 45 },
@@ -11037,7 +11037,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nebraska",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -13.7,
+    "margin": 13.7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -11070,7 +11070,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nebraska",
     "raceType": "house",
     "probability": 0.77,
-    "margin": 7.8,
+    "margin": -7.8,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 72 },
@@ -11101,7 +11101,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nebraska",
     "raceType": "house",
     "probability": 0,
-    "margin": -54.9,
+    "margin": 54.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -11134,7 +11134,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "probability": 0.85,
-    "margin": 10.8,
+    "margin": -10.8,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 80 },
@@ -11165,7 +11165,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "probability": 0.04,
-    "margin": -18,
+    "margin": 18,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -11198,7 +11198,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "probability": 0.75,
-    "margin": 7.1,
+    "margin": -7.1,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 70 },
@@ -11229,7 +11229,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "probability": 0.86,
-    "margin": 11.5,
+    "margin": -11.5,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 81 },
@@ -11260,7 +11260,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Hampshire",
     "raceType": "house",
     "probability": 0.87,
-    "margin": 11.8,
+    "margin": -11.8,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 82 },
@@ -11291,7 +11291,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Hampshire",
     "raceType": "house",
     "probability": 0.9,
-    "margin": 13.2,
+    "margin": -13.2,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 85 },
@@ -11324,7 +11324,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 1,
-    "margin": 30.6,
+    "margin": -30.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -11357,7 +11357,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.34,
-    "margin": -4.3,
+    "margin": 4.3,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 29 },
@@ -11390,7 +11390,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.97,
-    "margin": 20.1,
+    "margin": -20.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -11423,7 +11423,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.01,
-    "margin": -23.4,
+    "margin": 23.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -11456,7 +11456,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.96,
-    "margin": 17.8,
+    "margin": -17.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -11487,7 +11487,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 24.2,
+    "margin": -24.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -11520,7 +11520,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.76,
-    "margin": 7.4,
+    "margin": -7.4,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 71 },
@@ -11551,7 +11551,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 1,
-    "margin": 41.9,
+    "margin": -41.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -11584,7 +11584,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.93,
-    "margin": 15.5,
+    "margin": -15.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -11615,7 +11615,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 1,
-    "margin": 66,
+    "margin": -66,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -11648,7 +11648,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.97,
-    "margin": 20.4,
+    "margin": -20.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -11681,7 +11681,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 1,
-    "margin": 36.5,
+    "margin": -36.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -11714,7 +11714,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 22.6,
+    "margin": -22.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -11747,7 +11747,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "house",
     "probability": 0.85,
-    "margin": 11.1,
+    "margin": -11.1,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 81 },
@@ -11778,7 +11778,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "house",
     "probability": 0.95,
-    "margin": 17.4,
+    "margin": -17.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -11811,7 +11811,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.31,
-    "margin": -5.2,
+    "margin": 5.2,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 26 },
@@ -11844,7 +11844,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.17,
-    "margin": -9.9,
+    "margin": 9.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 12 },
@@ -11877,7 +11877,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.77,
-    "margin": 7.8,
+    "margin": -7.8,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 72 },
@@ -11908,7 +11908,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.89,
-    "margin": 12.7,
+    "margin": -12.7,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 84 },
@@ -11939,7 +11939,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 56.9,
+    "margin": -56.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -11972,7 +11972,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 25.6,
+    "margin": -25.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -12005,7 +12005,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 58.1,
+    "margin": -58.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12038,7 +12038,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 59.5,
+    "margin": -59.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12071,7 +12071,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 53.6,
+    "margin": -53.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12104,7 +12104,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 73,
+    "margin": -73,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12137,7 +12137,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.03,
-    "margin": -19.6,
+    "margin": 19.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -12170,7 +12170,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 73.4,
+    "margin": -73.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12203,7 +12203,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 74.8,
+    "margin": -74.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12236,7 +12236,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 48.6,
+    "margin": -48.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12269,7 +12269,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 65.6,
+    "margin": -65.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12302,7 +12302,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 44.5,
+    "margin": -44.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12335,7 +12335,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.69,
-    "margin": 5.3,
+    "margin": -5.3,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 65 },
@@ -12366,7 +12366,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.93,
-    "margin": 15.6,
+    "margin": -15.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -12397,7 +12397,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.79,
-    "margin": 8.3,
+    "margin": -8.3,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 74 },
@@ -12428,7 +12428,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 23.7,
+    "margin": -23.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -12461,7 +12461,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.07,
-    "margin": -15.2,
+    "margin": 15.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -12494,7 +12494,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.93,
-    "margin": 15.5,
+    "margin": -15.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -12525,7 +12525,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.02,
-    "margin": -22.1,
+    "margin": 22.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -12558,7 +12558,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.01,
-    "margin": -23.2,
+    "margin": 23.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -12591,7 +12591,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 26.6,
+    "margin": -26.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12624,7 +12624,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": 31.2,
+    "margin": -31.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12657,7 +12657,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.45,
-    "margin": -1.4,
+    "margin": 1.4,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 40 },
@@ -12688,7 +12688,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 1,
-    "margin": 44,
+    "margin": -44,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12721,7 +12721,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.08,
-    "margin": -14.5,
+    "margin": 14.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 3 },
@@ -12754,7 +12754,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 1,
-    "margin": 54.7,
+    "margin": -54.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12787,7 +12787,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -13.1,
+    "margin": 13.1,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 6 },
@@ -12820,7 +12820,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.03,
-    "margin": -19,
+    "margin": 19,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -12853,7 +12853,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.19,
-    "margin": -9.2,
+    "margin": 9.2,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 14 },
@@ -12886,7 +12886,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.09,
-    "margin": -14,
+    "margin": 14,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 4 },
@@ -12919,7 +12919,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.17,
-    "margin": -10,
+    "margin": 10,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 12 },
@@ -12952,7 +12952,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -13.2,
+    "margin": 13.2,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -12985,7 +12985,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.33,
-    "margin": -4.7,
+    "margin": 4.7,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 28 },
@@ -13016,7 +13016,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 1,
-    "margin": 56.1,
+    "margin": -56.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -13049,7 +13049,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.14,
-    "margin": -11.1,
+    "margin": 11.1,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 9 },
@@ -13082,7 +13082,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.13,
-    "margin": -11.6,
+    "margin": 11.6,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 8 },
@@ -13112,7 +13112,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Dakota",
     "raceType": "house",
     "probability": 0,
-    "margin": -41.1,
+    "margin": 41.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13143,7 +13143,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.73,
-    "margin": 6.3,
+    "margin": -6.3,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 68 },
@@ -13174,7 +13174,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0,
-    "margin": -37.6,
+    "margin": 37.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13207,7 +13207,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 1,
-    "margin": 50.7,
+    "margin": -50.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -13240,7 +13240,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0,
-    "margin": -38,
+    "margin": 38,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13273,7 +13273,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.02,
-    "margin": -21,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13306,7 +13306,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.3,
-    "margin": -28.6,
+    "margin": 28.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 25 },
@@ -13339,7 +13339,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.25,
-    "margin": -7,
+    "margin": 7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 20 },
@@ -13372,7 +13372,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.14,
-    "margin": -11.4,
+    "margin": 11.4,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 9 },
@@ -13405,7 +13405,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.53,
-    "margin": 0.7,
+    "margin": -0.7,
     "rating": "Tilt D",
     "history": [
       { "date": "Sep", "value": 48 },
@@ -13436,7 +13436,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.27,
-    "margin": -6.5,
+    "margin": 6.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 22 },
@@ -13469,7 +13469,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 1,
-    "margin": 67,
+    "margin": -67,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -13502,7 +13502,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.5,
-    "margin": -26.6,
+    "margin": 26.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 45 },
@@ -13535,7 +13535,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.88,
-    "margin": 12.1,
+    "margin": -12.1,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 83 },
@@ -13566,7 +13566,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.04,
-    "margin": -17.8,
+    "margin": 17.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13599,7 +13599,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.31,
-    "margin": -5.2,
+    "margin": 5.2,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 26 },
@@ -13632,7 +13632,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "probability": 0.03,
-    "margin": -20.2,
+    "margin": 20.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13665,7 +13665,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "probability": 0,
-    "margin": -50.5,
+    "margin": 50.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13698,7 +13698,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "probability": 0,
-    "margin": -48.7,
+    "margin": 48.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13731,7 +13731,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -31.5,
+    "margin": 31.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -13764,7 +13764,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "probability": 0.07,
-    "margin": -15.1,
+    "margin": 15.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -13797,7 +13797,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 1,
-    "margin": 49.4,
+    "margin": -49.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -13830,7 +13830,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 0.01,
-    "margin": -22.6,
+    "margin": 22.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13863,7 +13863,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 1,
-    "margin": 56.4,
+    "margin": -56.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -13896,7 +13896,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 0.97,
-    "margin": 19.6,
+    "margin": -19.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -13929,7 +13929,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 0.94,
-    "margin": 16.3,
+    "margin": -16.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -13960,7 +13960,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 0.97,
-    "margin": 20.1,
+    "margin": -20.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -13990,7 +13990,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.52,
-    "margin": 0.5,
+    "margin": -0.5,
     "rating": "Tilt D",
     "history": [
       { "date": "Sep", "value": 47 },
@@ -14021,7 +14021,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 1,
-    "margin": 47.7,
+    "margin": -47.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -14054,7 +14054,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 1,
-    "margin": 85.8,
+    "margin": -85.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -14087,7 +14087,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 23.8,
+    "margin": -23.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -14120,7 +14120,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 1,
-    "margin": 36.3,
+    "margin": -36.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -14153,7 +14153,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.96,
-    "margin": 17.9,
+    "margin": -17.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -14186,7 +14186,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.59,
-    "margin": 2.5,
+    "margin": -2.5,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 55 },
@@ -14217,7 +14217,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.47,
-    "margin": -0.8,
+    "margin": 0.8,
     "rating": "Tilt R",
     "history": [
       { "date": "Sep", "value": 42 },
@@ -14248,7 +14248,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0,
-    "margin": -36.9,
+    "margin": 36.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14281,7 +14281,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.52,
-    "margin": 0.4,
+    "margin": -0.4,
     "rating": "Tilt D",
     "history": [
       { "date": "Sep", "value": 47 },
@@ -14312,7 +14312,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.03,
-    "margin": -20.3,
+    "margin": 20.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14345,7 +14345,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 23.7,
+    "margin": -23.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -14378,7 +14378,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0,
-    "margin": -45.1,
+    "margin": 45.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14411,7 +14411,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -32,
+    "margin": 32,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -14444,7 +14444,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0,
-    "margin": -37.8,
+    "margin": 37.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14477,7 +14477,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.02,
-    "margin": -21,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14510,7 +14510,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.91,
-    "margin": 13.7,
+    "margin": -13.7,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 86 },
@@ -14541,7 +14541,7 @@ export const houseData: RaceForecast[] = [
     "state": "Rhode Island",
     "raceType": "house",
     "probability": 1,
-    "margin": 38.9,
+    "margin": -38.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -14574,7 +14574,7 @@ export const houseData: RaceForecast[] = [
     "state": "Rhode Island",
     "raceType": "house",
     "probability": 0.98,
-    "margin": 21.7,
+    "margin": -21.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -14607,7 +14607,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0.27,
-    "margin": -6.6,
+    "margin": 6.6,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 22 },
@@ -14640,7 +14640,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0.17,
-    "margin": -10.1,
+    "margin": 10.1,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 12 },
@@ -14673,7 +14673,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0,
-    "margin": -37.9,
+    "margin": 37.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14706,7 +14706,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0.04,
-    "margin": -18.1,
+    "margin": 18.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14739,7 +14739,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16.7,
+    "margin": 16.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14772,7 +14772,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 1,
-    "margin": 35.1,
+    "margin": -35.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -14805,7 +14805,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0.03,
-    "margin": -20.1,
+    "margin": 20.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14838,7 +14838,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Dakota",
     "raceType": "house",
     "probability": 0.4,
-    "margin": -28.2,
+    "margin": 28.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 35 },
@@ -14869,7 +14869,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0,
-    "margin": -55,
+    "margin": 55,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14902,7 +14902,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -31.1,
+    "margin": 31.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -14935,7 +14935,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -34.3,
+    "margin": 34.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -14968,7 +14968,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0,
-    "margin": -38.7,
+    "margin": 38.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15001,7 +15001,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0.14,
-    "margin": -11.2,
+    "margin": 11.2,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 9 },
@@ -15034,7 +15034,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0.3,
-    "margin": -29,
+    "margin": 29,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 25 },
@@ -15067,7 +15067,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16.6,
+    "margin": 16.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15100,7 +15100,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0,
-    "margin": -40.2,
+    "margin": 40.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15133,7 +15133,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 1,
-    "margin": 52.3,
+    "margin": -52.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -15166,7 +15166,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0,
-    "margin": -51.3,
+    "margin": 51.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15199,7 +15199,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.04,
-    "margin": -18.5,
+    "margin": 18.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15232,7 +15232,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.05,
-    "margin": -17,
+    "margin": 17,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15265,7 +15265,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.02,
-    "margin": -21,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15298,7 +15298,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16.1,
+    "margin": 16.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15331,7 +15331,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.03,
-    "margin": -20,
+    "margin": 20,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15364,7 +15364,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": 35.3,
+    "margin": -35.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -15397,7 +15397,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.02,
-    "margin": -21.4,
+    "margin": 21.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15430,7 +15430,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.12,
-    "margin": -12.1,
+    "margin": 12.1,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 7 },
@@ -15461,7 +15461,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.07,
-    "margin": -15.6,
+    "margin": 15.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -15494,7 +15494,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0,
-    "margin": -36.9,
+    "margin": 36.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15527,7 +15527,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.03,
-    "margin": -20,
+    "margin": 20,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15560,7 +15560,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0,
-    "margin": -48.7,
+    "margin": 48.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15593,7 +15593,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.03,
-    "margin": -20.4,
+    "margin": 20.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15626,7 +15626,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.29,
-    "margin": -5.6,
+    "margin": 5.6,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 25 },
@@ -15657,7 +15657,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": 32.7,
+    "margin": -32.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -15690,7 +15690,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.04,
-    "margin": -17.8,
+    "margin": 17.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15723,7 +15723,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": 67,
+    "margin": -67,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -15756,7 +15756,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0,
-    "margin": -46.8,
+    "margin": 46.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15789,7 +15789,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": 46.3,
+    "margin": -46.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -15822,7 +15822,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16.7,
+    "margin": 16.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15855,7 +15855,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16,
+    "margin": 16,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15888,7 +15888,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.23,
-    "margin": -7.8,
+    "margin": 7.8,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 18 },
@@ -15921,7 +15921,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.09,
-    "margin": -13.9,
+    "margin": 13.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 4 },
@@ -15954,7 +15954,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.9,
-    "margin": -24,
+    "margin": 24,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 85 },
@@ -15987,7 +15987,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.02,
-    "margin": -20.8,
+    "margin": 20.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16020,7 +16020,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16.5,
+    "margin": 16.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16053,7 +16053,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.8,
-    "margin": 8.8,
+    "margin": -8.8,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 75 },
@@ -16084,7 +16084,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": 46.6,
+    "margin": -46.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16117,7 +16117,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": 55.9,
+    "margin": -55.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16150,7 +16150,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.04,
-    "margin": -18.5,
+    "margin": 18.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16183,7 +16183,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.15,
-    "margin": -11,
+    "margin": 11,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 10 },
@@ -16214,7 +16214,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": 46.9,
+    "margin": -46.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16247,7 +16247,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.63,
-    "margin": 3.4,
+    "margin": -3.4,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 58 },
@@ -16278,7 +16278,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.43,
-    "margin": -1.7,
+    "margin": 1.7,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 38 },
@@ -16309,7 +16309,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.03,
-    "margin": -19.8,
+    "margin": 19.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16342,7 +16342,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": 66.8,
+    "margin": -66.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16372,7 +16372,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16.1,
+    "margin": 16.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16402,7 +16402,7 @@ export const houseData: RaceForecast[] = [
     "state": "Utah",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 25,
+    "margin": -25,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -16433,7 +16433,7 @@ export const houseData: RaceForecast[] = [
     "state": "Utah",
     "raceType": "house",
     "probability": 0.4,
-    "margin": -27.8,
+    "margin": 27.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 35 },
@@ -16464,7 +16464,7 @@ export const houseData: RaceForecast[] = [
     "state": "Utah",
     "raceType": "house",
     "probability": 0,
-    "margin": -43.3,
+    "margin": 43.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16495,7 +16495,7 @@ export const houseData: RaceForecast[] = [
     "state": "Utah",
     "raceType": "house",
     "probability": 0.1,
-    "margin": -32.2,
+    "margin": 32.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -16528,7 +16528,7 @@ export const houseData: RaceForecast[] = [
     "state": "Vermont",
     "raceType": "house",
     "probability": 1,
-    "margin": 46.2,
+    "margin": -46.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16559,7 +16559,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.45,
-    "margin": -1.3,
+    "margin": 1.3,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 40 },
@@ -16590,7 +16590,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.72,
-    "margin": 6,
+    "margin": -6,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 67 },
@@ -16621,7 +16621,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 1,
-    "margin": 47,
+    "margin": -47,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16654,7 +16654,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 1,
-    "margin": 44.6,
+    "margin": -44.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16687,7 +16687,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.35,
-    "margin": -4.1,
+    "margin": 4.1,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 30 },
@@ -16720,7 +16720,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.05,
-    "margin": -17,
+    "margin": 17,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16753,7 +16753,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.91,
-    "margin": 14.2,
+    "margin": -14.2,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 86 },
@@ -16784,7 +16784,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 1,
-    "margin": 61.7,
+    "margin": -61.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16817,7 +16817,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0,
-    "margin": -38,
+    "margin": 38,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16850,7 +16850,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.97,
-    "margin": 19,
+    "margin": -19,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -16881,7 +16881,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 1,
-    "margin": 45.8,
+    "margin": -45.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16914,7 +16914,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 1,
-    "margin": 36.8,
+    "margin": -36.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16947,7 +16947,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 1,
-    "margin": 32.4,
+    "margin": -32.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16980,7 +16980,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.65,
-    "margin": 4.1,
+    "margin": -4.1,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 60 },
@@ -17011,7 +17011,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.05,
-    "margin": -17.6,
+    "margin": 17.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17044,7 +17044,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.14,
-    "margin": -11.4,
+    "margin": 11.4,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 9 },
@@ -17077,7 +17077,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 23,
+    "margin": -23,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -17110,7 +17110,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 1,
-    "margin": 82,
+    "margin": -82,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -17143,7 +17143,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.9,
-    "margin": 13.5,
+    "margin": -13.5,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 85 },
@@ -17174,7 +17174,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 1,
-    "margin": 56.7,
+    "margin": -56.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -17207,7 +17207,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.99,
-    "margin": 23.9,
+    "margin": -23.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -17240,7 +17240,7 @@ export const houseData: RaceForecast[] = [
     "state": "West Virginia",
     "raceType": "house",
     "probability": 0,
-    "margin": -39.1,
+    "margin": 39.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17273,7 +17273,7 @@ export const houseData: RaceForecast[] = [
     "state": "West Virginia",
     "raceType": "house",
     "probability": 0,
-    "margin": -36.7,
+    "margin": 36.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17306,7 +17306,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.37,
-    "margin": -3.5,
+    "margin": 3.5,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 32 },
@@ -17337,7 +17337,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 1,
-    "margin": 48.3,
+    "margin": -48.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -17370,7 +17370,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.47,
-    "margin": -0.7,
+    "margin": 0.7,
     "rating": "Tilt R",
     "history": [
       { "date": "Sep", "value": 42 },
@@ -17401,7 +17401,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 1,
-    "margin": 59.6,
+    "margin": -59.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -17434,7 +17434,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.02,
-    "margin": -22.4,
+    "margin": 22.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17467,7 +17467,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.06,
-    "margin": -16.2,
+    "margin": 16.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17500,7 +17500,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.03,
-    "margin": -19,
+    "margin": 19,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17533,7 +17533,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.09,
-    "margin": -13.9,
+    "margin": 13.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 4 },
@@ -17566,7 +17566,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wyoming",
     "raceType": "house",
     "probability": 0,
-    "margin": -46.2,
+    "margin": 46.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -19506,7 +19506,7 @@ export const presPastResults: Record<string, PresResult[]> = {
   ]
 };
 
-export const pres2024: Record<string, number> = { "AK": -13.13, "AL": -30.47, "AR": -30.64, "AZ": -5.53, "CA": 20.14, "CO": 10.99, "CT": 14.51, "DE": 14.7, "FL": -13.1, "GA": -2.19, "HI": 23.11, "IA": -13.21, "ID": -36.49, "IL": 10.9, "IN": -18.96, "KS": -16.12, "KY": -30.53, "LA": -22.01, "MA": 25.2, "MD": 28.54, "ME": 6.94, "MI": -1.42, "MN": 4.24, "MO": -18.41, "MS": -22.89, "MT": -19.93, "NC": -3.21, "ND": -36.45, "NE": -20.46, "NH": 2.78, "NJ": 5.91, "NM": 6, "NV": -3.1, "NY": 12.6, "OH": -11.21, "OK": -34.26, "OR": 14.3, "PA": -1.71, "RI": 13.78, "SC": -17.87, "SD": -29.19, "TN": -29.72, "TX": -13.68, "UT": -21.59, "VA": 5.78, "VT": 31.51, "WA": 18.22, "WI": -0.86, "WV": -41.87, "WY": -45.76 };
+export const pres2024: Record<string, number> = { "AK": 13.13, "AL": 30.47, "AR": 30.64, "AZ": 5.53, "CA": -20.14, "CO": -10.99, "CT": -14.51, "DE": -14.7, "FL": 13.1, "GA": 2.19, "HI": -23.11, "IA": 13.21, "ID": 36.49, "IL": -10.9, "IN": 18.96, "KS": 16.12, "KY": 30.53, "LA": 22.01, "MA": -25.2, "MD": -28.54, "ME": -6.94, "MI": 1.42, "MN": -4.24, "MO": 18.41, "MS": 22.89, "MT": 19.93, "NC": 3.21, "ND": 36.45, "NE": 20.46, "NH": -2.78, "NJ": -5.91, "NM": -6, "NV": 3.1, "NY": -12.6, "OH": 11.21, "OK": 34.26, "OR": -14.3, "PA": 1.71, "RI": -13.78, "SC": 17.87, "SD": 29.19, "TN": 29.72, "TX": 13.68, "UT": 21.59, "VA": -5.78, "VT": -31.51, "WA": -18.22, "WI": 0.86, "WV": 41.87, "WY": 45.76 };
 
 export type HouseDelegationEntry = {
   year: number;

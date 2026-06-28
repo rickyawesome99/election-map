@@ -31,12 +31,10 @@ function chamberLean(dem: number | null, rep: number | null): "D" | "R" | "tie" 
 
 function stateFill(row: StateRow | undefined, t: Theme, mode: MapMode): string {
   if (!row) return t.mapUnfilled;
-  // PVI uses positive values for Republicans, while the shared race color
-  // scale uses positive values for Democrats.
   if (mode === "default") {
     if (row.pvi2026 == null) return t.mapUnfilled;
     if (row.pvi2026 === 0) return t.textMuted;
-    return getRaceColor(-row.pvi2026);
+    return getRaceColor(row.pvi2026);
   }
   if (mode === "governor") {
     if (row.govParty === "D") return DEM_FILL;

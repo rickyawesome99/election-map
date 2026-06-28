@@ -360,7 +360,7 @@ export function MarginAndWinProbabilityCard({
   showPolls?: boolean;
   density?: DetailDensity;
 }) {
-  const marginIsD = margin >= 0;
+  const marginIsD = margin <= 0;
   const isCompact = density === "compact";
 
   return (
@@ -493,6 +493,61 @@ export function PollAggregateCard({ rows }: { rows: PollRow[] }) {
             </div>
           );
         })}
+      </div>
+    </section>
+  );
+}
+
+export function ForecastCalculationCard({
+  tpl,
+  genericBallot,
+  tplLabel = "State TPL",
+}: {
+  tpl: number;
+  genericBallot: number;
+  tplLabel?: string;
+}) {
+  const projectedMargin = tpl + genericBallot;
+
+  function fmtMargin(v: number): string {
+    if (Math.abs(v) < 0.05) return "EVEN";
+    return `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(1)}`;
+  }
+
+  function marginColor(v: number): string {
+    if (Math.abs(v) < 0.05) return "var(--app-text-primary)";
+    return v > 0 ? "var(--party-rep)" : "var(--party-dem)";
+  }
+
+  const gbIsD = genericBallot < 0;
+  const gbDisplay = Math.abs(genericBallot) < 0.05
+    ? "EVEN"
+    : `${gbIsD ? "D" : "R"}+${Math.abs(genericBallot).toFixed(1)}`;
+
+  return (
+    <section
+      className="rounded-xl p-3"
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+    >
+      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+        Forecast Calculation
+      </h2>
+      <div className="flex flex-col gap-1.5">
+        <div className="rounded-lg px-2.5 py-2 flex items-center justify-between" style={{ background: "var(--app-bg)" }}>
+          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{tplLabel}</span>
+          <span className="text-sm font-bold" style={{ color: marginColor(tpl) }}>{fmtMargin(tpl)}</span>
+        </div>
+        <div className="rounded-lg px-2.5 py-2 flex items-center justify-between" style={{ background: "var(--app-bg)" }}>
+          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Generic Ballot</span>
+          <span className="text-sm font-bold" style={{ color: gbIsD ? "var(--party-dem)" : "var(--party-rep)" }}>{gbDisplay}</span>
+        </div>
+        <div
+          className="rounded-lg px-2.5 py-2 flex items-center justify-between mt-0.5"
+          style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
+        >
+          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Projected Margin</span>
+          <span className="text-base font-bold" style={{ color: marginColor(projectedMargin) }}>{fmtMargin(projectedMargin)}</span>
+        </div>
       </div>
     </section>
   );

@@ -91,14 +91,14 @@ const bool = (v) => { const s = (v || "").trim().toUpperCase(); return s === "TR
 const has  = (v) => v != null && v.trim() !== "" && v.trim().toUpperCase() !== "N/A" && v.trim().toUpperCase() !== "TBD";
 
 function rating(margin) {
-  if (margin >= 15)  return "Safe D";
-  if (margin >= 5)   return "Likely D";
-  if (margin >= 1)   return "Lean D";
-  if (margin >= 0)   return "Tilt D";
-  if (margin > -1)   return "Tilt R";
-  if (margin >= -5)  return "Lean R";
-  if (margin >= -15) return "Likely R";
-  return "Safe R";
+  if (margin >= 15)  return "Safe R";
+  if (margin >= 5)   return "Likely R";
+  if (margin >= 1)   return "Lean R";
+  if (margin >= 0)   return "Tilt R";
+  if (margin > -1)   return "Tilt D";
+  if (margin >= -5)  return "Lean D";
+  if (margin >= -15) return "Likely D";
+  return "Safe D";
 }
 
 // Build history array from spreadsheet row.
@@ -137,16 +137,16 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
     ? (() => { const v = num(row.prob_dem, 50); return Math.max(0, Math.min(1, v > 1 ? v / 100 : v)); })()
     : Math.max(0, Math.min(1, num(row.probability, 50) / 100));
 
-  // Margin (internal convention: positive = Dem wins).
-  // Prefer deriving from proj_dem - proj_rep.
-  // Fall back to negating user's margin column (user convention: positive = Rep wins).
+  // Margin (internal convention: positive = Rep wins, R-positive).
+  // Prefer deriving from proj_rep - proj_dem.
+  // CSV margin column uses the same R-positive convention — no negation needed.
   let margin;
   if (has(row.proj_dem) && has(row.proj_rep)) {
-    margin = parseFloat((num(row.proj_dem) - num(row.proj_rep)).toFixed(1));
+    margin = parseFloat((num(row.proj_rep) - num(row.proj_dem)).toFixed(1));
   } else if (has(row.proj_margin) || has(row.margin)) {
-    margin = parseFloat((-num(row.proj_margin || row.margin)).toFixed(1));
+    margin = parseFloat((num(row.proj_margin || row.margin)).toFixed(1));
   } else {
-    margin = parseFloat(((prob01 - 0.5) * 42).toFixed(1));
+    margin = parseFloat(((0.5 - prob01) * 42).toFixed(1));
   }
 
   const forecast = {
@@ -345,7 +345,7 @@ function proceduralHouseDistrict(fips, abbr, stateName, d, _n, base) {
   const name     = `${abbr}-${String(d).padStart(2, "0")}`;
   const variation = Math.sin(d * 2.4 + parseInt(fips) * 0.3) * 0.26;
   const prob     = Math.max(0.03, Math.min(0.97, base + variation));
-  const margin   = parseFloat(((prob - 0.5) * 42).toFixed(1));
+  const margin   = parseFloat(((0.5 - prob) * 42).toFixed(1));
   return {
     id, name, state: stateName, raceType: "house",
     probability: parseFloat(prob.toFixed(2)),
@@ -696,7 +696,7 @@ for (const key of Object.keys(houseDelegationHistory)) {
 // ── Presidential Past Results ─────────────────────────────────────────────────
 
 // presPastResults: keyed by state_abbr from the CSV (e.g. "AL", "ME", "ME-01", "NE", "NE-02", "DC")
-// Convention: margin = dem_pct - rep_pct (positive = Dem wins), consistent with rest of codebase
+// Convention: margin = rep_pct - dem_pct (positive = Rep wins, R-positive), consistent with rest of codebase
 const presPastResults = {};
 for (const row of presHistoryRows) {
   const abbr = (row.state_abbr || "").trim();
@@ -709,7 +709,7 @@ for (const row of presHistoryRows) {
     year:           int2(row.year, 0),
     demPct,
     repPct,
-    margin:         parseFloat((demPct - repPct).toFixed(2)),
+    margin:         parseFloat((repPct - demPct).toFixed(2)),
   };
   if (has(row.dem_votes))   entry.demVotes   = parseInt(row.dem_votes.replace(/,/g, "")) || undefined;
   if (has(row.rep_votes))   entry.repVotes   = parseInt(row.rep_votes.replace(/,/g, "")) || undefined;

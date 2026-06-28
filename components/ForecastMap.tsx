@@ -5,6 +5,12 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry, electionYear, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
+import { computeProjectedMargin } from "@/lib/tplCompute";
+
+// Both computeProjectedMargin and forecastData.margin are now R-positive — no negation needed
+const projectedSenateData = senateData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
+const projectedGovernorData = governorData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
+const projectedHouseData = houseData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
 import Sidebar from "./Sidebar";
 import RaceTable from "./RaceTable";
 import StatesTable, { StateRow } from "./StatesTable";
@@ -30,7 +36,7 @@ function racePartyOverview(race: RaceForecast): "D" | "R" | "I" {
   if (race.seatParty) return race.seatParty;
   if (race.candidates?.dem.incumbent) return "D";
   if (race.candidates?.rep.incumbent) return "R";
-  return race.margin >= 0 ? "D" : "R";
+  return race.margin <= 0 ? "D" : "R";
 }
 
 const stateRows: StateRow[] = statesData.map((state) => {
@@ -177,10 +183,21 @@ function SeatScorecard({
 }
 
 export default function ForecastMap() {
-  const [activeTab, setActiveTab] = useState<"overview" | "states" | "counties" | "model" | "district-finder" | RaceType>(() => {
+  const [activeTab, setActiveTab] = useState<"forecast" | "states" | "counties" | "model" | "district-finder">(() => {
     if (typeof window !== "undefined") {
       const urlTab = new URLSearchParams(window.location.search).get("tab");
-      if (urlTab === "overview" || urlTab === "states" || urlTab === "counties" || urlTab === "model" || urlTab === "district-finder" || urlTab === "house" || urlTab === "senate" || urlTab === "governor") return urlTab;
+      if (urlTab === "forecast" || urlTab === "states" || urlTab === "counties" || urlTab === "model" || urlTab === "district-finder") return urlTab;
+      if (urlTab === "state" || urlTab === "district" || urlTab === "table" || urlTab === "districtTable") return "model";
+    }
+    return "forecast";
+  });
+  const [forecastSubView, setForecastSubView] = useState<"overview" | RaceType>(() => {
+    if (typeof window !== "undefined") {
+      const urlTab = new URLSearchParams(window.location.search).get("tab");
+      if (urlTab === "overview") return "overview";
+      if (urlTab === "house" || urlTab === "senate" || urlTab === "governor") return urlTab;
+      const stored = localStorage.getItem("forecastSubView") as "overview" | RaceType | null;
+      if (stored === "overview" || stored === "house" || stored === "senate" || stored === "governor") return stored;
     }
     return "overview";
   });
@@ -208,17 +225,31 @@ export default function ForecastMap() {
 
   useEffect(() => {
     function setTab(type: string | null) {
-      if (type !== "overview" && type !== "house" && type !== "senate" && type !== "governor" && type !== "states" && type !== "counties" && type !== "model" && type !== "district-finder") return;
+      if (type === "overview") {
+        setActiveTab("forecast");
+        setForecastSubView("overview");
+        localStorage.setItem("activeTab", "forecast");
+        localStorage.setItem("forecastSubView", "overview");
+        setSelected(null); setSelectedNoElection(null); setSelectedStateRow(null);
+        return;
+      }
+      if (type === "house" || type === "senate" || type === "governor") {
+        setRaceType(type);
+        setForecastSubView(type);
+        localStorage.setItem("raceType", type);
+        localStorage.setItem("forecastSubView", type);
+        type = "forecast";
+      }
+      if (type === "state" || type === "district" || type === "table" || type === "districtTable") {
+        type = "model";
+      }
+      if (type !== "forecast" && type !== "states" && type !== "counties" && type !== "model" && type !== "district-finder") return;
 
       setActiveTab(type);
       setSelected(null);
       setSelectedNoElection(null);
       setSelectedStateRow(null);
       localStorage.setItem("activeTab", type);
-      if (type === "house" || type === "senate" || type === "governor") {
-        setRaceType(type);
-        localStorage.setItem("raceType", type);
-      }
     }
 
     function handleTabChange(event: Event) {
@@ -239,19 +270,19 @@ export default function ForecastMap() {
   }, []);
 
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
-  const isOverview = activeTab === "overview";
-  const isHouse = !isOverview && raceType === "house";
+  const isOverview = activeTab === "forecast" && forecastSubView === "overview";
+  const isHouse = activeTab === "forecast" && forecastSubView === "house";
   const geoUrl = isHouse ? HOUSE_DISTRICTS_2026_URL : STATES_URL;
-  const data = isOverview ? [] as RaceForecast[] : raceType === "house" ? houseData : raceType === "senate" ? senateData : governorData;
-  const showSeatScorecard = activeTab === "house" || activeTab === "senate" || activeTab === "governor";
+  const data = isOverview ? [] as RaceForecast[] : raceType === "house" ? projectedHouseData : raceType === "senate" ? projectedSenateData : projectedGovernorData;
+  const showSeatScorecard = activeTab === "forecast" && forecastSubView !== "overview";
   const holdovers = {
     senate: { dem: 34, rep: 31 },
     governor: { dem: 6, rep: 8 },
     house: { dem: 0, rep: 0 },
   };
   const totalSeatsByType = { senate: 100, governor: 50, house: 435 };
-  const demSeats = holdovers[raceType].dem + data.filter((race) => race.margin >= 0).length;
-  const repSeats = holdovers[raceType].rep + data.filter((race) => race.margin < 0).length;
+  const demSeats = holdovers[raceType].dem + data.filter((race) => race.margin <= 0).length;
+  const repSeats = holdovers[raceType].rep + data.filter((race) => race.margin > 0).length;
   const totalSeats = totalSeatsByType[raceType];
 
   function findMatch(geo: GeoFeature): RaceForecast | undefined {
@@ -277,6 +308,32 @@ export default function ForecastMap() {
       {/* ── Page content ── */}
       <div className="px-3 py-3 sm:px-4 sm:py-4 md:px-6 md:py-5">
 
+        {/* ── 2026 Forecast sub-tab bar ── */}
+        {activeTab === "forecast" && (
+          <div className="flex flex-wrap gap-2 mb-4">
+            {(["overview", "house", "senate", "governor"] as const).map((sv) => (
+              <button
+                key={sv}
+                onClick={() => {
+                  window.history.pushState({}, "", `/?tab=${sv}`);
+                  setForecastSubView(sv);
+                  localStorage.setItem("forecastSubView", sv);
+                  if (sv !== "overview") { setRaceType(sv); localStorage.setItem("raceType", sv); }
+                  setSelected(null); setSelectedNoElection(null);
+                }}
+                className="text-xs font-semibold px-3 py-1.5 rounded-lg"
+                style={{
+                  background: forecastSubView === sv ? "var(--app-text-muted)" : "var(--app-panel)",
+                  color: forecastSubView === sv ? "var(--app-bg)" : "var(--app-text-muted)",
+                  border: "1px solid var(--app-border)",
+                }}
+              >
+                {sv === "overview" ? "Overview" : sv === "house" ? "House" : sv === "senate" ? "Senate" : "Governor"}
+              </button>
+            ))}
+          </div>
+        )}
+
         {/* ── Mobile seat scorecard ── */}
         {showSeatScorecard && (
           <div className="mb-3 md:hidden">
@@ -292,7 +349,7 @@ export default function ForecastMap() {
         )}
 
         {/* ── Map card ── */}
-        {(activeTab === "house" || activeTab === "senate" || activeTab === "governor" || activeTab === "counties" || activeTab === "states") && <div
+        {((activeTab === "forecast" && forecastSubView !== "overview") || activeTab === "counties" || activeTab === "states") && <div
           className="relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-[520px]"
           style={{
             border: `1px solid ${t.border}`,
@@ -305,10 +362,10 @@ export default function ForecastMap() {
         >
           {/* Hover tooltip */}
           {hovered && (() => {
-            const demPct = Math.max(0, Math.min(100, 50 + hovered.margin / 2));
-            const repPct = Math.max(0, Math.min(100, 50 - hovered.margin / 2));
+            const demPct = Math.max(0, Math.min(100, 50 - hovered.margin / 2));
+            const repPct = Math.max(0, Math.min(100, 50 + hovered.margin / 2));
             const marginAbs = Math.abs(hovered.margin);
-            const marginLabel = hovered.margin >= 0
+            const marginLabel = hovered.margin <= 0
               ? `D+${marginAbs.toFixed(1)}`
               : `R+${marginAbs.toFixed(1)}`;
             const { bg: badgeColor, text: badgeText } = getRatingColors(hovered.rating);
@@ -327,7 +384,7 @@ export default function ForecastMap() {
             }
             if (left < edgePad) left = edgePad;
             if (top < edgePad) top = edgePad;
-            const marginColor = hovered.margin >= 0 ? t.demText : t.repText;
+            const marginColor = hovered.margin <= 0 ? t.demText : t.repText;
 
             return (
               <div
@@ -644,10 +701,10 @@ export default function ForecastMap() {
 
         {/* ── Mobile selected-race panel (below map) ── */}
         {selected && (() => {
-          const demPct = (100 + selected.margin) / 2;
-          const repPct = (100 - selected.margin) / 2;
+          const demPct = (100 - selected.margin) / 2;
+          const repPct = (100 + selected.margin) / 2;
           const { bg: rBg, text: rText } = getRatingColors(selected.rating);
-          const marginIsD = selected.margin >= 0;
+          const marginIsD = selected.margin <= 0;
           return (
             <div
               className="mt-3 overflow-hidden rounded-xl md:hidden"
@@ -900,11 +957,29 @@ export default function ForecastMap() {
         {/* ── Below-map table (memoized — stable across mouse-move re-renders) ── */}
         {useMemo(() => (
           <>
-            {activeTab === "overview" && (
-              <div className="mt-5 flex items-center justify-center">
+            {activeTab === "forecast" && forecastSubView === "overview" && (
+              <div className="mt-5 flex flex-col items-center gap-3">
                 <div
-                  className="rounded-xl px-8 py-10 text-center"
-                  style={{ border: `1px solid ${t.border}`, background: t.panel, maxWidth: 420 }}
+                  className="rounded-xl p-4 w-full"
+                  style={{ border: `1px solid ${t.border}`, background: t.panel, maxWidth: 480 }}
+                >
+                  <div
+                    className="text-[10px] uppercase tracking-wider font-semibold mb-2"
+                    style={{ color: t.textMuted }}
+                  >
+                    Generic Ballot Polling Average
+                  </div>
+                  <div
+                    className="rounded-lg px-3 py-2.5 flex items-center justify-between"
+                    style={{ background: t.bg }}
+                  >
+                    <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>2026 Forecast</span>
+                    <span className="text-xl font-bold" style={{ color: "var(--party-dem)" }}>D+5.3</span>
+                  </div>
+                </div>
+                <div
+                  className="rounded-xl px-8 py-8 text-center w-full"
+                  style={{ border: `1px solid ${t.border}`, background: t.panel, maxWidth: 480 }}
                 >
                   <div className="text-2xl mb-2">🚧</div>
                   <div className="text-base font-semibold mb-1" style={{ color: t.textPrimary }}>Work in Progress</div>
@@ -921,37 +996,37 @@ export default function ForecastMap() {
                 <StatesTable rows={stateRows} />
               </div>
             )}
-            {activeTab === "house" && (
+            {activeTab === "forecast" && forecastSubView === "house" && (
               <div className="mt-4 md:mt-5">
                 <div className="mb-3">
                   <h2 className="text-xl font-bold sm:text-2xl" style={{ color: t.textPrimary }}>House Races</h2>
                   <p className="text-sm mt-0.5" style={{ color: t.textMuted }}>{electionYear} U.S. House Forecast · {houseData.length} Districts</p>
                 </div>
-                <RaceTable races={houseData} basePath="/house" nameLabel="District" />
+                <RaceTable races={projectedHouseData} basePath="/house" nameLabel="District" />
               </div>
             )}
-            {activeTab === "senate" && (
+            {activeTab === "forecast" && forecastSubView === "senate" && (
               <div className="mt-4 md:mt-5">
                 <div className="mb-3">
                   <h2 className="text-xl font-bold sm:text-2xl" style={{ color: t.textPrimary }}>Senate Races</h2>
                   <p className="text-sm mt-0.5" style={{ color: t.textMuted }}>{electionYear} U.S. Senate Forecast · {senateData.length} Class 2 Seats</p>
                 </div>
-                <RaceTable races={senateData} basePath="/senate" nameLabel="State" showSpecialBadge />
+                <RaceTable races={projectedSenateData} basePath="/senate" nameLabel="State" showSpecialBadge />
               </div>
             )}
-            {activeTab === "governor" && (
+            {activeTab === "forecast" && forecastSubView === "governor" && (
               <div className="mt-4 md:mt-5">
                 <div className="mb-3">
                   <h2 className="text-xl font-bold sm:text-2xl" style={{ color: t.textPrimary }}>Governor Races</h2>
                   <p className="text-sm mt-0.5" style={{ color: t.textMuted }}>{electionYear} U.S. Governor Forecast · {governorData.length} Races</p>
                 </div>
-                <RaceTable races={governorData} basePath="/governor" nameLabel="State" />
+                <RaceTable races={projectedGovernorData} basePath="/governor" nameLabel="State" />
               </div>
             )}
             {activeTab === "model" && <TplModelPage />}
             {activeTab === "district-finder" && <DistrictFinder />}
           </>
-        ), [activeTab, t])}
+        ), [activeTab, forecastSubView, t])}
 
       </div>
     </div>

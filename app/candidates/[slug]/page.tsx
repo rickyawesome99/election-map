@@ -217,7 +217,13 @@ export default async function CandidatePage({
             <div className="flex flex-col gap-2">
               {pastEntries.map((entry, i) => {
                 const entryAccent = partyAccent(entry.party);
-                const won = entry.side === "dem" ? entry.demPct > entry.repPct : entry.repPct > entry.demPct;
+                // Fall back to vote counts when percentages are equal (e.g. IA-02 2020, 6-vote margin)
+                const wonByPct = entry.side === "dem" ? entry.demPct > entry.repPct : entry.repPct > entry.demPct;
+                const tiedByPct = entry.demPct === entry.repPct;
+                const wonByVotes = tiedByPct && entry.demVotes != null && entry.repVotes != null
+                  ? (entry.side === "dem" ? entry.demVotes > entry.repVotes : entry.repVotes > entry.demVotes)
+                  : null;
+                const won = wonByVotes ?? wonByPct;
                 const pct = entry.side === "dem" ? entry.demPct : entry.repPct;
                 const oppPct = entry.side === "dem" ? entry.repPct : entry.demPct;
                 const margin = Math.abs(pct - oppPct).toFixed(1);

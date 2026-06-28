@@ -231,9 +231,9 @@ export default function HousePastMap({
         {/* Hover tooltip */}
         {hovered && (() => {
           const { district, result } = hovered;
-          const margin = result.demPct - result.repPct;
-          const marginLabel = margin >= 0 ? `D+${margin.toFixed(1)}` : `R+${Math.abs(margin).toFixed(1)}`;
-          const marginColor = margin >= 0 ? "var(--party-dem)" : "var(--party-rep)";
+          const margin = result.repPct - result.demPct;
+          const marginLabel = margin <= 0 ? `D+${Math.abs(margin).toFixed(1)}` : `R+${margin.toFixed(1)}`;
+          const marginColor = margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
           const hasVotes = result.demVotes != null && result.repVotes != null;
           const tipW = 190;
           const tipH = result.demCandidate ? (hasVotes ? 115 : 96) : 76;
@@ -318,7 +318,7 @@ export default function HousePastMap({
                   const geoId = geo.properties?.GEOID as string | undefined;
                   if (!isCongressionalDistrictGeoid(geoId, stateFips)) return null;
                   const entry = geoId ? resultByGeoid.get(geoId) : undefined;
-                  const margin = entry ? entry.result.demPct - entry.result.repPct : 0;
+                  const margin = entry ? entry.result.repPct - entry.result.demPct : 0;
                   const fill = entry ? getRaceColor(margin) : "var(--app-tab-bg)";
                   const isSelected = selected?.geoid === entry?.geoid;
                   return (
@@ -369,9 +369,9 @@ export default function HousePastMap({
       {/* Selected district panel */}
       {selected && (() => {
         const { district, result } = selected;
-        const margin = result.demPct - result.repPct;
-        const marginLabel = margin >= 0 ? `D+${margin.toFixed(1)}` : `R+${Math.abs(margin).toFixed(1)}`;
-        const marginColor = margin >= 0 ? "var(--party-dem)" : "var(--party-rep)";
+        const margin = result.repPct - result.demPct;
+        const marginLabel = margin <= 0 ? `D+${Math.abs(margin).toFixed(1)}` : `R+${margin.toFixed(1)}`;
+        const marginColor = margin <= 0 ? "var(--party-dem)" : "var(--party-rep)";
         const hasVotes = result.demVotes != null && result.repVotes != null;
         return (
           <div className="px-3 py-3" style={{ borderTop: "1px solid var(--app-border)" }}>

@@ -14,7 +14,7 @@ export type StateRow = {
   houseDem: number;
   houseRep: number;
   houseTotal: number;
-  pres2024: number | null;  // positive = D margin, negative = R margin
+  pres2024: number | null;  // positive = R margin, negative = D margin
   pvi2026: number | null;   // positive = R lean, negative = D lean
   stateLegHouseDem: number | null;
   stateLegHouseRep: number | null;
@@ -162,7 +162,7 @@ export default function StatesTable({ rows }: { rows: StateRow[] }) {
             {sorted.map((row, i) => {
               const rowBackground = i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)";
               const pres = row.pres2024;
-              const presIsD = pres != null && pres >= 0;
+              const presIsD = pres != null && pres <= 0;
               return (
                 <tr
                   key={row.id}
