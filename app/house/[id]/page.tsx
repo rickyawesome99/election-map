@@ -6,7 +6,8 @@ import { notFound } from "next/navigation";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
 import { AboutRaceCard, CandidatesAndPollsCard, ForecastCalculationCard, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
-import { calculateDistrictTpl, GENERIC_BALLOT } from "@/lib/tplCompute";
+import { calculateDistrictTpl, GENERIC_BALLOT, marginToProbability } from "@/lib/tplCompute";
+import BackButton from "@/components/BackButton";
 const HOUSE_BOUNDARIES_CARD_HEIGHT = "275px";
 
 function inferCurrentHouseSeatFromPastResults(race: { pastResults?: { demIncumbent?: boolean; repIncumbent?: boolean; demCandidate?: string; repCandidate?: string }[] }) {
@@ -37,9 +38,6 @@ export default async function HousePage({ params, searchParams }: { params: Prom
   const race = houseData.find((r) => r.id.toLowerCase() === id.toLowerCase());
   if (!race) notFound();
 
-  const demPct = Math.round(race.probability * 100);
-  const repPct = 100 - demPct;
-
   // Parse district label for display (e.g. "CA-12" → state + district number)
   const [stateAbbr, districtNum] = race.name.split("-");
   const districtLabel = districtNum === "AL"
@@ -58,6 +56,8 @@ export default async function HousePage({ params, searchParams }: { params: Prom
   const districtTpl = calculateDistrictTpl(race.id);
   const districtTplId = parseInt(race.id, 10).toString();
   const projectedMargin = districtTpl + GENERIC_BALLOT;
+  const demPct = Math.round(marginToProbability(projectedMargin) * 100);
+  const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
   const { bg, text } = getRatingColors(forecastRating);
   const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
@@ -123,7 +123,10 @@ export default async function HousePage({ params, searchParams }: { params: Prom
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
+      <main className="max-w-7xl mx-auto px-4 pt-0 pb-4 sm:px-6">
+        <div className="mb-1">
+          <BackButton />
+        </div>
         {/* Title block */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
@@ -138,7 +141,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{electionYear} U.S. House Race · {districtLabel}</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] md:items-start">
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:items-start">
           {/* Left column — display:contents on mobile so children become direct grid items (enabling order-based reflow), flex-col on desktop */}
           <div className="contents md:flex md:flex-col md:gap-3">
             <div

@@ -116,7 +116,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
           setOpen(true);
         }}
         placeholder="Search races..."
-        className="h-8 w-[5.5rem] rounded-lg pl-8 pr-2 outline-none max-sm:placeholder:text-transparent min-[420px]:w-24 sm:w-44 sm:pr-3"
+        className="h-8 w-28 rounded-lg pl-8 pr-2 outline-none max-sm:placeholder:text-transparent min-[420px]:w-28 sm:w-56 sm:pr-3"
         style={{
           fontSize: 16,
           background: "var(--app-bg)",

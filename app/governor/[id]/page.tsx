@@ -6,7 +6,8 @@ import { candidatePhotos } from "@/lib/candidatePhotos";
 import { AboutRaceCard, CandidatesAndPollsCard, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
-import { calculateStateTpl, GENERIC_BALLOT } from "@/lib/tplCompute";
+import { calculateStateTpl, GENERIC_BALLOT, marginToProbability } from "@/lib/tplCompute";
+import BackButton from "@/components/BackButton";
 
 function enrichGovResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
   if (!pastResults?.length) return [];
@@ -47,7 +48,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
+      <main className="max-w-7xl mx-auto px-4 pt-0 pb-4 sm:px-6">
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
             <a href={`/states/${stateSlug(entry.state)}?from=${encodeURIComponent(from)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</a>
@@ -58,7 +59,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>Gubernatorial Office · No Election This Cycle</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:items-start">
           <div className="contents lg:flex lg:flex-col lg:gap-3">
             <div className="order-1">
               <CurrentIncumbentCard
@@ -116,10 +117,10 @@ export default async function GovernorPage({ params, searchParams }: { params: P
   const race = governorData.find((r) => r.id.toLowerCase() === id.toLowerCase());
   if (!race) notFound();
 
-  const demPct = Math.round(race.probability * 100);
-  const repPct = 100 - demPct;
   const stateTpl = calculateStateTpl(id.toUpperCase(), race.name);
   const projectedMargin = stateTpl + GENERIC_BALLOT;
+  const demPct = Math.round(marginToProbability(projectedMargin) * 100);
+  const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
   const { bg, text } = getRatingColors(forecastRating);
   const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
@@ -136,7 +137,10 @@ export default async function GovernorPage({ params, searchParams }: { params: P
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
+      <main className="max-w-7xl mx-auto px-4 pt-0 pb-4 sm:px-6">
+        <div className="mb-1">
+          <BackButton />
+        </div>
         {/* Title block */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
@@ -151,7 +155,7 @@ export default async function GovernorPage({ params, searchParams }: { params: P
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{electionYear} Gubernatorial Race</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:items-start">
           <div className="contents lg:flex lg:flex-col lg:gap-3">
             <div className="order-1 overflow-hidden rounded-xl" style={{ border: "1px solid var(--app-border)" }}>
               <StateCountyMap stateAbbr={id.toUpperCase()} stateName={race.name} height={300} />

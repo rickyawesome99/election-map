@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const TABS: { key: string; label: string; href?: string }[] = [
   { key: "forecast",         label: "2026 Forecast" },
@@ -33,20 +33,38 @@ export default function SubNavBar() {
   const [clientTab, setClientTab] = useState<{ pathname: string; key: string } | null>(null);
   const activeTab = clientTab?.pathname === pathname ? clientTab.key : urlActiveTab;
   const activeTabRef = useRef<HTMLElement | null>(null);
+  const tabRefs = useRef<Map<string, HTMLElement>>(new Map());
+  const navRef = useRef<HTMLElement | null>(null);
+  const [indicator, setIndicator] = useState<{ left: number; width: number } | null>(null);
+
+  useLayoutEffect(() => {
+    const el = activeTab ? tabRefs.current.get(activeTab) : null;
+    const nav = navRef.current;
+    if (!el || !nav) { setIndicator(null); return; }
+    const navRect = nav.getBoundingClientRect();
+    const elRect = el.getBoundingClientRect();
+    setIndicator({ left: elRect.left - navRect.left + nav.scrollLeft, width: elRect.width });
+  }, [activeTab]);
+
+  useEffect(() => {
+    const update = () => {
+      const el = activeTab ? tabRefs.current.get(activeTab) : null;
+      const nav = navRef.current;
+      if (!el || !nav) return;
+      const navRect = nav.getBoundingClientRect();
+      const elRect = el.getBoundingClientRect();
+      setIndicator({ left: elRect.left - navRect.left + nav.scrollLeft, width: elRect.width });
+    };
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, [activeTab]);
 
   useEffect(() => {
     if (!activeTab || !window.matchMedia("(max-width: 767px)").matches) return;
     activeTabRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
   }, [activeTab]);
 
-  const tabStyle = (isActive: boolean) => ({
-    color: isActive ? "var(--app-text-primary)" : "var(--app-text-muted)",
-    background: isActive ? "var(--app-tab-bg)" : "transparent",
-    boxShadow: isActive ? "inset 0 0 0 1px var(--app-border)" : "none",
-    display: "inline-block" as const,
-  });
-
-  const commonClass = "shrink-0 rounded-full px-4 py-2 text-sm font-semibold transition-all";
+  const commonClass = "relative z-10 shrink-0 px-4 py-2 text-sm font-semibold transition-colors duration-150";
 
   return (
     <div
@@ -58,18 +76,45 @@ export default function SubNavBar() {
         WebkitBackdropFilter: "blur(20px) saturate(140%)",
       }}
     >
-      <nav className="scrollbar-none flex min-w-0 flex-1 gap-1 overflow-x-auto overflow-y-hidden">
+      <nav
+        ref={navRef}
+        className="scrollbar-none relative flex min-w-0 flex-1 gap-1 overflow-x-auto overflow-y-hidden"
+      >
+        {indicator && (
+          <div
+            className="absolute inset-y-0 rounded-full pointer-events-none"
+            style={{
+              left: indicator.left,
+              width: indicator.width,
+              background: "var(--app-tab-bg)",
+              boxShadow: "inset 0 0 0 1px var(--app-border)",
+              transition: "left 200ms cubic-bezier(0.4, 0, 0.2, 1), width 200ms cubic-bezier(0.4, 0, 0.2, 1)",
+            }}
+          />
+        )}
+
         {TABS.map(({ key, label, href }) => {
           const isActive = activeTab === key;
+
+          const setRef = (el: HTMLElement | null) => {
+            if (el) tabRefs.current.set(key, el);
+            else tabRefs.current.delete(key);
+            if (isActive) activeTabRef.current = el;
+          };
+
+          const style = {
+            color: isActive ? "var(--app-text-primary)" : "var(--app-text-muted)",
+          };
+
           if (href) {
             return (
               <a
                 key={key}
-                ref={(el) => { if (isActive) activeTabRef.current = el; }}
+                ref={setRef}
                 href={href}
                 onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
                 className={commonClass}
-                style={tabStyle(isActive)}
+                style={style}
               >
                 {label}
               </a>
@@ -79,7 +124,7 @@ export default function SubNavBar() {
           return (
             <button
               key={key}
-              ref={(el) => { if (isActive) activeTabRef.current = el; }}
+              ref={setRef}
               type="button"
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "auto" });
@@ -92,7 +137,7 @@ export default function SubNavBar() {
                 window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: key }));
               }}
               className={commonClass}
-              style={tabStyle(isActive)}
+              style={style}
             >
               {label}
             </button>

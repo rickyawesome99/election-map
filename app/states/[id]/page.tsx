@@ -1,6 +1,7 @@
 import { statesData } from "@/data/statesData";
 import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, housePastResults, senateCurrent, pres2024, presPastResults, houseDelegationHistory, houseStatewideResults, stateLegData, PresResult, RaceForecast, NoElectionEntry, HouseStatewideResult, electionYear } from "@/data/forecastData";
 import { computeProjectedMargin } from "@/lib/tplCompute";
+import BackButton from "@/components/BackButton";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import StateMapSection from "@/components/StateMapSection";
@@ -413,7 +414,10 @@ export default async function StateDetailPage({ params, searchParams }: { params
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
+      <main className="max-w-7xl mx-auto px-4 pt-0 pb-4 sm:px-6">
+        <div className="mb-1">
+          <BackButton />
+        </div>
         {/* Title */}
         <div className="mb-3 flex items-center gap-2">
           <span

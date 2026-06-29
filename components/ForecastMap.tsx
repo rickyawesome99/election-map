@@ -303,35 +303,39 @@ export default function ForecastMap({ initialTab = null }: { initialTab?: string
     <div className="min-h-screen" style={{ background: t.bg }}>
 
       {/* ── Page content ── */}
-      <div className="px-3 py-3 sm:px-4 sm:py-4 md:px-6 md:py-5">
+      <div className="px-3 pt-1 pb-3 sm:px-4 sm:pt-1 sm:pb-4 md:px-6 md:pt-1 md:pb-5">
 
         {/* ── 2026 Forecast sub-tab bar ── */}
         {activeTab === "forecast" && (
-          <div className="flex flex-wrap gap-2 mb-4">
-            {(["overview", "house", "senate", "governor"] as const).map((sv) => (
-              <button
-                key={sv}
-                type="button"
-                onClick={() => {
-                  window.history.pushState({}, "", `/?tab=${sv}`);
-                  window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: sv }));
-                  setForecastSubView(sv);
-                  localStorage.setItem("forecastSubView", sv);
-                  if (sv !== "overview") { setRaceType(sv); localStorage.setItem("raceType", sv); }
-                  setSelected(null); setSelectedNoElection(null); setHovered(null); setHoveredNoElection(null);
-                  setMapKey((k) => k + 1);
-                }}
-                className="text-xs font-semibold px-3 py-1.5 rounded-lg"
-                style={{
-                  background: forecastSubView === sv ? "var(--app-text-muted)" : "var(--app-panel)",
-                  color: forecastSubView === sv ? "var(--app-bg)" : "var(--app-text-muted)",
-                  border: "1px solid var(--app-border)",
-                }}
-              >
-                {sv === "overview" ? "Overview" : sv === "house" ? "House" : sv === "senate" ? "Senate" : "Governor"}
-              </button>
-            ))}
-          </div>
+          <div className="flex justify-center mb-3"><div className="inline-flex rounded-lg overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
+            {(["overview", "house", "senate", "governor"] as const).map((sv, i) => {
+              const isActive = forecastSubView === sv;
+              const LABELS = { overview: "Overview", house: "House", senate: "Senate", governor: "Governor" };
+              return (
+                <button
+                  key={sv}
+                  type="button"
+                  onClick={() => {
+                    window.history.pushState({}, "", `/?tab=${sv}`);
+                    window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: sv }));
+                    setForecastSubView(sv);
+                    localStorage.setItem("forecastSubView", sv);
+                    if (sv !== "overview") { setRaceType(sv); localStorage.setItem("raceType", sv); }
+                    setSelected(null); setSelectedNoElection(null); setHovered(null); setHoveredNoElection(null);
+                    setMapKey((k) => k + 1);
+                  }}
+                  className="text-xs font-semibold px-3 py-1.5 transition-colors duration-150"
+                  style={{
+                    background: isActive ? "var(--app-text-muted)" : "var(--app-panel)",
+                    color: isActive ? "var(--app-bg)" : "var(--app-text-muted)",
+                    borderLeft: i > 0 ? "1px solid var(--app-border)" : undefined,
+                  }}
+                >
+                  {LABELS[sv]}
+                </button>
+              );
+            })}
+          </div></div>
         )}
 
         {/* ── Mobile seat scorecard ── */}
@@ -976,6 +980,29 @@ export default function ForecastMap({ initialTab = null }: { initialTab?: string
                   >
                     <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>2026 Forecast</span>
                     <span className="text-xl font-bold" style={{ color: "var(--party-dem)" }}>D+5.3</span>
+                  </div>
+                </div>
+                <div
+                  className="rounded-xl p-4 w-full"
+                  style={{ border: `1px solid ${t.border}`, background: t.panel, maxWidth: 480 }}
+                >
+                  <div
+                    className="text-[10px] uppercase tracking-wider font-semibold mb-2"
+                    style={{ color: t.textMuted }}
+                  >
+                    Trump Approval
+                  </div>
+                  <div
+                    className="rounded-lg px-3 py-2.5 flex items-center justify-between"
+                    style={{ background: t.bg }}
+                  >
+                    <div className="flex flex-col">
+                      <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>Net Approval</span>
+                      <span className="text-[10px]" style={{ color: t.textMuted }}>
+                        <span style={{ color: "#22c55e" }}>40.5%</span> approve · <span style={{ color: "#ef4444" }}>57.5%</span> disapprove
+                      </span>
+                    </div>
+                    <span className="text-xl font-bold" style={{ color: "#ef4444" }}>Net: −17.0</span>
                   </div>
                 </div>
                 <div

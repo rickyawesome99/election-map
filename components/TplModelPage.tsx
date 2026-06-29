@@ -832,24 +832,30 @@ export default function TplModelPage() {
     : null;
 
   return (
-    <div className="mt-1 md:mt-2">
+    <div className="mt-0.5">
 
       {/* ── Sub-tab bar ── */}
-      <div className="flex flex-wrap gap-2 mb-5">
-        {(["state", "district", "table", "districtTable"] as const).map((tab) => (
-          <button
-            key={tab}
-            onClick={() => handleSubTabClick(tab)}
-            className="text-xs font-semibold px-3 py-1.5 rounded-lg"
-            style={{
-              background: activeSubTab === tab ? "var(--app-text-muted)" : "var(--app-panel)",
-              color: activeSubTab === tab ? "var(--app-bg)" : "var(--app-text-muted)",
-              border: "1px solid var(--app-border)",
-            }}
-          >
-            {tab === "state" ? "State TPL" : tab === "district" ? "District TPL" : tab === "districtTable" ? "District Table" : "Table"}
-          </button>
-        ))}
+      <div className="flex justify-center mb-4">
+        <div className="inline-flex rounded-lg overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
+          {(["state", "district", "table", "districtTable"] as const).map((tab, i) => {
+            const isActive = activeSubTab === tab;
+            const LABELS = { state: "State TPL", district: "District TPL", table: "Table", districtTable: "District Table" };
+            return (
+              <button
+                key={tab}
+                onClick={() => handleSubTabClick(tab)}
+                className="text-xs font-semibold px-3 py-1.5 transition-colors duration-150"
+                style={{
+                  background: isActive ? "var(--app-text-muted)" : "var(--app-panel)",
+                  color: isActive ? "var(--app-bg)" : "var(--app-text-muted)",
+                  borderLeft: i > 0 ? "1px solid var(--app-border)" : undefined,
+                }}
+              >
+                {LABELS[tab]}
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* ── State TPL ── */}

@@ -9,7 +9,8 @@ import { syncThemeColor, useDarkMode } from "@/lib/useDarkMode";
 
 export default function AppShell() {
   const pathname = usePathname();
-  const showBack = pathname.split("/").filter(Boolean).length > 1;
+  const isForecastDetailPage = pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/") || pathname.startsWith("/states/");
+  const showBack = !isForecastDetailPage && pathname.split("/").filter(Boolean).length > 1;
   const darkMode = useDarkMode();
 
   useEffect(() => {
@@ -36,7 +37,7 @@ export default function AppShell() {
         />
       </div>
       <div
-        className="px-2 pb-2 pt-2 sm:px-4 md:flex md:justify-center md:px-6"
+        className="px-2 pb-0 pt-2 sm:px-4 md:flex md:justify-center md:px-6"
         style={{ background: "var(--app-bg)" }}
       >
         <Suspense fallback={<div className="h-[42px] rounded-xl border" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }} />}>

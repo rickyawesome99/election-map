@@ -32,7 +32,7 @@ export default function StateMapSection({
   const distLabel = distNum === "AL" ? "At-Large District" : distNum ? `District ${distNum}` : "";
 
   return (
-    <div className="grid grid-cols-1 gap-3 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] md:items-stretch">
+    <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:items-stretch">
       <div className="contents md:flex md:flex-col md:gap-3 md:h-full">
         <div className="order-1">
           <StateMapToggle

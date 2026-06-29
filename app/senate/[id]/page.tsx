@@ -6,7 +6,8 @@ import { candidatePhotos } from "@/lib/candidatePhotos";
 import { AboutRaceCard, CandidatesAndPollsCard, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
-import { calculateStateTpl, GENERIC_BALLOT } from "@/lib/tplCompute";
+import { calculateStateTpl, GENERIC_BALLOT, marginToProbability } from "@/lib/tplCompute";
+import BackButton from "@/components/BackButton";
 
 function enrichSenateResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
   if (!pastResults?.length) return [];
@@ -88,7 +89,7 @@ function NoElectionPage({
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
+      <main className="max-w-7xl mx-auto px-4 pt-0 pb-4 sm:px-6">
         {/* Title + banner */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
@@ -103,7 +104,7 @@ function NoElectionPage({
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{seatLabel}</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:items-start">
           <div className="contents lg:flex lg:flex-col lg:gap-3">
             <div className="order-1">
               <CurrentIncumbentCard
@@ -204,10 +205,10 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
 
   if (!race) notFound();
 
-  const demPct = Math.round(race.probability * 100);
-  const repPct = 100 - demPct;
   const stateTpl = calculateStateTpl(abbr, race.name);
   const projectedMargin = stateTpl + GENERIC_BALLOT;
+  const demPct = Math.round(marginToProbability(projectedMargin) * 100);
+  const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
   const { bg, text } = getRatingColors(forecastRating);
   const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
@@ -224,7 +225,10 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
+      <main className="max-w-7xl mx-auto px-4 pt-0 pb-4 sm:px-6">
+        <div className="mb-1">
+          <BackButton />
+        </div>
         {/* Title block */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
@@ -242,7 +246,7 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-3 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.6fr)] lg:items-start">
+        <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:items-start">
           <div className="contents lg:flex lg:flex-col lg:gap-3">
             <div className="order-1 overflow-hidden rounded-xl" style={{ border: "1px solid var(--app-border)" }}>
               <StateCountyMap stateAbbr={abbr} stateName={race.name} height={300} />

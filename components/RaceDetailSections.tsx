@@ -146,7 +146,15 @@ function WinProbabilitySummary({ demPct, repPct }: { demPct: number; repPct: num
   return (
     <div className="flex items-center justify-between gap-4 rounded-lg px-3 py-2" style={{ background: "var(--app-tab-bg)", border: "1px solid var(--app-border)" }}>
       <div>
-        <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Win Probability</div>
+        <div className="relative group inline-flex items-center gap-1">
+          <span className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Win Probability</span>
+          <span className="text-[10px] cursor-help select-none" style={{ color: "var(--app-text-very-muted)" }}>ⓘ</span>
+          <div className="absolute left-0 top-full mt-1.5 w-64 rounded-lg px-3 py-2 text-[11px] leading-relaxed z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.2)", color: "var(--app-text-muted)" }}>
+            Derived from projected margin via logistic function:<br />
+            <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>P(D) = 1 / (1 + e^(0.13 × margin))</span><br />
+            Clamped to 2–98%.
+          </div>
+        </div>
         <div className="mt-0.5 flex items-center gap-2 text-xs font-semibold tabular-nums">
           <span style={{ color: "var(--party-dem)" }}>Dem {demPct}%</span>
           <span style={{ color: "var(--app-text-very-muted)" }}>/</span>
@@ -491,7 +499,7 @@ export function CandidatesAndPollsCard({
       {showPolls && (
         <div className="flex flex-col gap-2.5 mt-2.5">
           <PollSummaryRow label="RCP Average" dem={rcpDem} rep={rcpRep} precision={1} />
-          <PollSummaryRow label="Market Average" pctMargin dem={marketDem} rep={marketRep} />
+          <PollSummaryRow label="Prediction Markets" pctMargin dem={marketDem} rep={marketRep} />
         </div>
       )}
     </section>
@@ -537,9 +545,15 @@ export function MarginAndWinProbabilityCard({
       <div className={`${isCompact ? "text-xl mb-1.5" : "text-2xl mb-2"} font-bold`} style={{ color: marginIsD ? "var(--party-dem)" : "var(--party-rep)" }}>
         {marginIsD ? "D" : "R"}+{Math.abs(margin).toFixed(1)}
       </div>
-      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>
-        Win Probability
-      </h2>
+      <div className="relative group inline-flex items-center gap-1 mb-1.5">
+        <h2 className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Win Probability</h2>
+        <span className="text-[10px] cursor-help select-none" style={{ color: "var(--app-text-very-muted)" }}>ⓘ</span>
+        <div className="absolute left-0 top-full mt-1.5 w-64 rounded-lg px-3 py-2 text-[11px] leading-relaxed z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.2)", color: "var(--app-text-muted)" }}>
+          Derived from projected margin via logistic function:<br />
+          <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>P(D) = 1 / (1 + e^(0.13 × margin))</span><br />
+          Clamped to 2–98%.
+        </div>
+      </div>
       <div className="flex justify-between text-xs font-semibold mb-1.5">
         <span style={{ color: "var(--party-dem)" }}>Dem {demPct}%</span>
         <span style={{ color: "var(--party-rep)" }}>Rep {repPct}%</span>

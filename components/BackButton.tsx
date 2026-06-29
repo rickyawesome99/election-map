@@ -50,8 +50,12 @@ function BackButtonInner() {
   return (
     <button
       onClick={handleBack}
-      className="flex h-8 shrink-0 items-center justify-center gap-2 px-1 text-sm transition-colors max-sm:w-8 max-sm:px-0"
+      className="flex shrink-0 items-center justify-center gap-2 py-2 px-2 -mx-2 text-sm transition-colors rounded-lg max-sm:px-0 max-sm:mx-0"
       style={{ color: "var(--app-text-muted)" }}
+      onMouseEnter={e => { e.currentTarget.style.background = "var(--app-tab-bg)"; e.currentTarget.style.color = "var(--app-text-primary)"; }}
+      onMouseLeave={e => { e.currentTarget.style.background = ""; e.currentTarget.style.color = "var(--app-text-muted)"; }}
+      onMouseDown={e => { e.currentTarget.style.opacity = "0.7"; }}
+      onMouseUp={e => { e.currentTarget.style.opacity = ""; }}
       aria-label={label}
     >
       <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -66,7 +70,7 @@ export default function BackButton() {
   return (
     <Suspense fallback={
       <span
-        className="flex h-8 shrink-0 items-center justify-center gap-2 px-1 text-sm max-sm:w-8 max-sm:px-0"
+        className="flex shrink-0 items-center justify-center gap-2 py-2 px-1 text-sm max-sm:px-0"
         style={{ color: "var(--app-text-muted)" }}
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

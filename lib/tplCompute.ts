@@ -609,3 +609,10 @@ export function formatForecastMargin(v: number, decimals = 1): string {
   if (Math.abs(v) < 0.05) return "EVEN";
   return `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(decimals)}`;
 }
+
+// Logistic curve: P(D wins) = 1 / (1 + e^(0.13 × margin))
+// margin is R-positive convention; result clamped to [0.02, 0.98]
+export function marginToProbability(margin: number): number {
+  const raw = 1 / (1 + Math.exp(0.13 * margin));
+  return Math.max(0.02, Math.min(0.98, raw));
+}
