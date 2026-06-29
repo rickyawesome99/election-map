@@ -11,6 +11,7 @@ import {
   stateLegData,
   type PastResult,
 } from "@/data/forecastData";
+import { GOVERNOR_MANUAL_MARGINS } from "@/data/manualOverrides";
 import { statesData } from "@/data/statesData";
 import {
   TPL_GLOBAL_CONSTANTS as G,
@@ -594,13 +595,77 @@ export function calculateDistrictTpl(districtId: string): number {
   return calculateDistrictModel(normalizedId).tpl;
 }
 
-export function computeProjectedMargin(race: { id: string; state: string; raceType: string }): number {
+export function computeProjectedMargin(race: {
+  id: string;
+  state: string;
+  raceType: string;
+  candidates?: { dem: { party: "D" | "R" | "I"; incumbent: boolean }; rep: { party: "D" | "R" | "I"; incumbent: boolean } };
+}): number {
+  const raceTypeMap: Record<string, "H" | "S" | "G"> = { house: "H", senate: "S", governor: "G" };
+  const shortType = raceTypeMap[race.raceType];
+  const incumbentCandidate = race.candidates
+    ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
+    : null;
+  const incumbentParty = (incumbentCandidate?.party === "D" || incumbentCandidate?.party === "R") ? incumbentCandidate.party : null;
+  const incumbentPts = shortType ? computeIncumbentPts(shortType, incumbentParty) : 0;
+
   if (race.raceType === "house") {
-    return calculateDistrictTpl(race.id) + GENERIC_BALLOT;
+    const stateAbbr = statesData.find((s) => s.name === race.state)?.abbr ?? "";
+    return calculateDistrictTpl(race.id) + effectiveGenericBallot(stateAbbr) + incumbentPts;
   }
   // senate/governor: id may have a numeric suffix (e.g. "DE-2"); strip it to get state abbr
   const stateAbbr = race.id.replace(/-\d+$/, "");
-  return calculateStateTpl(stateAbbr, race.state) + GENERIC_BALLOT;
+  const effectiveIncumbentPts = race.raceType === "governor" && GOVERNOR_MANUAL_MARGINS[stateAbbr] != null
+    ? GOVERNOR_MANUAL_MARGINS[stateAbbr]
+    : incumbentPts;
+  return calculateStateTpl(stateAbbr, race.state) + effectiveGenericBallot(stateAbbr) + effectiveIncumbentPts;
+}
+
+// ── Effective generic ballot (GB × state S) ──────────────────────────────────
+
+const GB_BLEND_K = 0.3;
+
+export function effectiveGenericBallot(stateAbbr: string): number {
+  const S = STATE_MODEL_CONSTANTS[stateAbbr]?.S ?? 1;
+  return GENERIC_BALLOT * (1 + (S - 1) * GB_BLEND_K);
+}
+
+// ── Candidate quality (forward projection) ───────────────────────────────────
+
+export const WQ_ADDITIVE: Record<CQTier, number> = {
+  Elite: 4, Strong: 2, Generic: 0, Weak: -2, Sacrificial: -4,
+};
+
+export const LQ_ADDITIVE: Record<CQTier, number> = {
+  Elite: -4, Strong: -2, Generic: 0, Weak: 2, Sacrificial: 4,
+};
+
+export function computeCandidatePts(wqTier: CQTier, lqTier: CQTier): number {
+  return WQ_ADDITIVE[wqTier] + LQ_ADDITIVE[lqTier];
+}
+
+// ── Fundraising factor (forward projection) ───────────────────────────────────
+
+const FF_K = 0.06;
+const FF_MAX = 4;
+
+// rCash and dCash in any consistent unit (dollars, thousands, etc.)
+// Returns R-positive pts: positive = R fundraising advantage
+export function computeFundraisingPts(rCash: number, dCash: number): number {
+  const total = rCash + dCash;
+  if (total === 0) return 0;
+  const gapPct = ((rCash - dCash) / total) * 100;
+  return Math.max(-FF_MAX, Math.min(FF_MAX, gapPct * FF_K));
+}
+
+// ── Incumbent factor (forward projection) ────────────────────────────────────
+
+export const INCUMBENT_ADVANTAGE: Record<string, number> = { H: 3, S: 2, G: 7 };
+
+export function computeIncumbentPts(raceType: "H" | "S" | "G", incumbentParty: "D" | "R" | null): number {
+  if (!incumbentParty) return 0;
+  const pts = INCUMBENT_ADVANTAGE[raceType] ?? 0;
+  return incumbentParty === "R" ? pts : -pts;
 }
 
 // ── Display helpers ───────────────────────────────────────────────────────────

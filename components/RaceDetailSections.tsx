@@ -1,5 +1,7 @@
 import Image from "next/image";
 import CandidateLink from "@/components/CandidateLink";
+import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
+import { InfoTooltip } from "@/components/InfoTooltip";
 
 type PollRow = {
   label: string;
@@ -146,15 +148,7 @@ function WinProbabilitySummary({ demPct, repPct }: { demPct: number; repPct: num
   return (
     <div className="flex items-center justify-between gap-4 rounded-lg px-3 py-2" style={{ background: "var(--app-tab-bg)", border: "1px solid var(--app-border)" }}>
       <div>
-        <div className="relative group inline-flex items-center gap-1">
-          <span className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Win Probability</span>
-          <span className="text-[10px] cursor-help select-none" style={{ color: "var(--app-text-very-muted)" }}>ⓘ</span>
-          <div className="absolute left-0 top-full mt-1.5 w-64 rounded-lg px-3 py-2 text-[11px] leading-relaxed z-20 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-150" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", boxShadow: "0 4px 16px rgba(0,0,0,0.2)", color: "var(--app-text-muted)" }}>
-            Derived from projected margin via logistic function:<br />
-            <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>P(D) = 1 / (1 + e^(0.13 × margin))</span><br />
-            Clamped to 2–98%.
-          </div>
-        </div>
+        <WinProbabilityLabel />
         <div className="mt-0.5 flex items-center gap-2 text-xs font-semibold tabular-nums">
           <span style={{ color: "var(--party-dem)" }}>Dem {demPct}%</span>
           <span style={{ color: "var(--app-text-very-muted)" }}>/</span>
@@ -675,18 +669,34 @@ export function PollAggregateCard({ rows }: { rows: PollRow[] }) {
   );
 }
 
+const POLL_WEIGHT = 0.2;
+
 export function ForecastCalculationCard({
   tpl,
   genericBallot,
   tplLabel = "State TPL",
   tplHref,
+  incumbentPts,
+  fundraisingPts,
+  candidatePts,
+  pollingAvg,
 }: {
   tpl: number;
   genericBallot: number;
   tplLabel?: string;
   tplHref?: string;
+  incumbentPts?: number;
+  fundraisingPts?: number | null;
+  candidatePts?: number | null;
+  pollingAvg?: number | null;
 }) {
-  const projectedMargin = tpl + genericBallot;
+  const incPts = incumbentPts ?? 0;
+  const ffPts = fundraisingPts ?? 0;
+  const cqPts = candidatePts ?? 0;
+  const structuralMargin = tpl + genericBallot + incPts + ffPts + cqPts;
+  const projectedMargin = pollingAvg != null
+    ? (1 - POLL_WEIGHT) * structuralMargin + POLL_WEIGHT * pollingAvg
+    : structuralMargin;
 
   function fmtMargin(v: number): string {
     if (Math.abs(v) < 0.05) return "EVEN";
@@ -702,6 +712,11 @@ export function ForecastCalculationCard({
   const gbDisplay = Math.abs(genericBallot) < 0.05
     ? "EVEN"
     : `${gbIsD ? "D" : "R"}+${Math.abs(genericBallot).toFixed(1)}`;
+
+  const showIncumbentRow = incumbentPts !== undefined;
+  const incIsOpen = incPts === 0;
+  const incDisplay = incIsOpen ? "Open" : incPts > 0 ? `R+${incPts}` : `D+${Math.abs(incPts)}`;
+  const incColor = incIsOpen ? "var(--app-text-very-muted)" : incPts > 0 ? "var(--party-rep)" : "var(--party-dem)";
 
   return (
     <section
@@ -728,8 +743,64 @@ export function ForecastCalculationCard({
           <span className="text-sm font-bold" style={{ color: marginColor(tpl) }}>{fmtMargin(tpl)}</span>
         </div>
         <div className="rounded-lg px-2.5 py-2 flex items-center justify-between" style={{ background: "var(--app-bg)" }}>
-          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Generic Ballot</span>
+          <InfoTooltip label="Generic Ballot">
+            National environment (D+5.3) scaled by this state&apos;s wave sensitivity coefficient S.
+            <br /><br />
+            <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Effective wave = GB × S</span>
+            <br /><br />
+            States that historically swing more with national tides get a larger adjustment.
+          </InfoTooltip>
           <span className="text-sm font-bold" style={{ color: gbIsD ? "var(--party-dem)" : "var(--party-rep)" }}>{gbDisplay}</span>
+        </div>
+        {showIncumbentRow && (
+          <div className="rounded-lg px-2.5 py-2 flex items-center justify-between" style={{ background: "var(--app-bg)" }}>
+            <InfoTooltip label="Incumbent">
+              Additive point advantage for the incumbent running in 2026.
+              <br /><br />
+              <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>House ±3 · Senate ±2 · Governor ±7</span>
+              <br /><br />
+              R incumbent = positive · D incumbent = negative · Open seat = 0.
+            </InfoTooltip>
+            <span className="text-sm font-bold" style={{ color: incColor }}>{incDisplay}</span>
+          </div>
+        )}
+        <div className="rounded-lg px-2.5 py-2 flex items-center justify-between" style={{ background: "var(--app-bg)" }}>
+          <InfoTooltip label="Fundraising">
+            Additive point adjustment based on cash-on-hand advantage.
+            <br /><br />
+            <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = gap% × 0.06, capped at ±4</span>
+            <br /><br />
+            gap% = (R cash − D cash) / total × 100. A 50% gap ≈ +3 pts. Pending FEC data entry.
+          </InfoTooltip>
+          <span className="text-sm font-bold" style={{ color: "var(--app-text-very-muted)" }}>
+            {fundraisingPts == null ? "—" : fundraisingPts > 0 ? `R+${fundraisingPts}` : fundraisingPts < 0 ? `D+${Math.abs(fundraisingPts)}` : "0"}
+          </span>
+        </div>
+        <div className="rounded-lg px-2.5 py-2 flex items-center justify-between" style={{ background: "var(--app-bg)" }}>
+          <InfoTooltip label="Candidates">
+            Additive point adjustment based on 2026 candidate quality matchup.
+            <br /><br />
+            <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = WQ pts + LQ pts</span>
+            <br /><br />
+            Your candidate — Elite +4 · Strong +2 · Generic 0 · Weak −2 · Sacrificial −4.
+            Opponent — Elite −4 · Strong −2 · Generic 0 · Weak +2 · Sacrificial +4.
+            Pending manual input per race.
+          </InfoTooltip>
+          <span className="text-sm font-bold" style={{ color: "var(--app-text-very-muted)" }}>
+            {candidatePts == null ? "—" : candidatePts > 0 ? `R+${candidatePts}` : candidatePts < 0 ? `D+${Math.abs(candidatePts)}` : "0"}
+          </span>
+        </div>
+        <div className="rounded-lg px-2.5 py-2 flex items-center justify-between" style={{ background: "var(--app-bg)" }}>
+          <InfoTooltip label="Polling Avg">
+            Blended {Math.round(POLL_WEIGHT * 100)}% polling / {Math.round((1 - POLL_WEIGHT) * 100)}% structural forecast.
+            <br /><br />
+            <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Final = 0.8 × Structural + 0.2 × Poll Avg</span>
+            <br /><br />
+            No polls currently available. Projected margin reflects structural forecast only.
+          </InfoTooltip>
+          <span className="text-sm font-bold" style={{ color: pollingAvg == null ? "var(--app-text-very-muted)" : pollingAvg > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+            {pollingAvg == null ? "—" : fmtMargin(pollingAvg)}
+          </span>
         </div>
         <div
           className="rounded-lg px-2.5 py-2 flex items-center justify-between mt-0.5"

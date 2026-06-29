@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { cookies } from "next/headers";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
@@ -32,11 +33,17 @@ export const viewport: Viewport = {
 
 const restoreThemeScript = `(function(){try{var dark=localStorage.getItem('darkMode')==='true';var themeColor=dark?'#000000':'#ffffff';var root=document.documentElement;root.classList.toggle('dark',dark);root.style.backgroundColor=themeColor;root.style.colorScheme=dark?'dark':'light';document.querySelectorAll('meta[name="theme-color"]').forEach(function(meta){meta.remove()});var themeMeta=document.createElement('meta');themeMeta.name='theme-color';themeMeta.content=themeColor;document.head.appendChild(themeMeta);var statusMeta=document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');if(!statusMeta){statusMeta=document.createElement('meta');statusMeta.name='apple-mobile-web-app-status-bar-style';document.head.appendChild(statusMeta)}statusMeta.content=dark?'black-translucent':'default'}catch(e){}})()`;
 
-export default function RootLayout({
+function validRaceType(value: string | undefined): "house" | "senate" | "governor" | null {
+  return value === "house" || value === "senate" || value === "governor" ? value : null;
+}
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialForecastTab = validRaceType((await cookies()).get("raceType")?.value);
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -44,7 +51,7 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: restoreThemeScript }} />
       </head>
       <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased`}>
-        <AppShell />
+        <AppShell initialForecastTab={initialForecastTab} />
         {children}
       </body>
     </html>

@@ -6,7 +6,7 @@ import { candidatePhotos } from "@/lib/candidatePhotos";
 import { AboutRaceCard, CandidatesAndPollsCard, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
-import { calculateStateTpl, GENERIC_BALLOT, marginToProbability } from "@/lib/tplCompute";
+import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
 
 function enrichSenateResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
@@ -206,19 +206,21 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
   if (!race) notFound();
 
   const stateTpl = calculateStateTpl(abbr, race.name);
-  const projectedMargin = stateTpl + GENERIC_BALLOT;
+  const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
+  const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
+  const incumbent = race.candidates
+    ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
+    : null;
+  const incumbentParty = (incumbent?.party === "D" || incumbent?.party === "R") ? incumbent.party : null;
+  const incumbentPts = computeIncumbentPts("S", incumbentParty);
+  const gb = effectiveGenericBallot(abbr);
+  const projectedMargin = stateTpl + gb + incumbentPts;
   const demPct = Math.round(marginToProbability(projectedMargin) * 100);
   const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
   const { bg, text } = getRatingColors(forecastRating);
   const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
   const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
-
-  const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
-  const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
-  const incumbent = race.candidates
-    ? [race.candidates.dem, race.candidates.rep].find((c) => c.incumbent) ?? null
-    : null;
   const currentSenatorName = race.seatHolder ?? incumbent?.name ?? "TBD";
   const currentSenatorParty = incumbent?.party ?? race.seatParty ?? null;
 
@@ -251,7 +253,7 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
             <div className="order-1 overflow-hidden rounded-xl" style={{ border: "1px solid var(--app-border)" }}>
               <StateCountyMap stateAbbr={abbr} stateName={race.name} height={300} />
             </div>
-            <div className="order-2">
+            <div className="order-5 lg:order-2">
               <AboutRaceCard
                 title="About this Race"
                 description={race.raceDesc ?? "[Placeholder — overview of this Senate seat, its history, key issues, and political context to be filled in.]"}
@@ -289,12 +291,16 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
               </div>
             )}
 
-            <div className="order-5 lg:col-span-8">
+            <div className="order-4 lg:col-span-8">
               <ForecastCalculationCard
                 tpl={stateTpl}
-                genericBallot={GENERIC_BALLOT}
+                genericBallot={gb}
                 tplLabel="State TPL"
                 tplHref={`/?tab=state&modelState=${encodeURIComponent(abbr)}`}
+                incumbentPts={incumbentPts}
+                fundraisingPts={null}
+                candidatePts={null}
+                pollingAvg={null}
               />
             </div>
 

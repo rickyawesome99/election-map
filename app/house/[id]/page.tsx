@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
 import { AboutRaceCard, CandidatesAndPollsCard, ForecastCalculationCard, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
-import { calculateDistrictTpl, GENERIC_BALLOT, marginToProbability } from "@/lib/tplCompute";
+import { calculateDistrictTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
 const HOUSE_BOUNDARIES_CARD_HEIGHT = "275px";
 
@@ -55,7 +55,10 @@ export default async function HousePage({ params, searchParams }: { params: Prom
     : "TBD";
   const districtTpl = calculateDistrictTpl(race.id);
   const districtTplId = parseInt(race.id, 10).toString();
-  const projectedMargin = districtTpl + GENERIC_BALLOT;
+  const incumbentParty = (incumbentCandidate?.party === "D" || incumbentCandidate?.party === "R") ? incumbentCandidate.party : null;
+  const incumbentPts = computeIncumbentPts("H", incumbentParty);
+  const gb = effectiveGenericBallot(stateAbbr);
+  const projectedMargin = districtTpl + gb + incumbentPts;
   const demPct = Math.round(marginToProbability(projectedMargin) * 100);
   const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
@@ -162,7 +165,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               />
             </div>
 
-            <div className="order-2">
+            <div className="order-5 md:order-2">
               <AboutRaceCard
                 title="About this District"
                 description={`[Placeholder — overview of ${districtLabel}, including its geography, key communities, and political history to be filled in.]`}
@@ -174,11 +177,11 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               />
             </div>
 
-            <div className="order-7">
+            <div className="order-8">
               <DistrictVoteHistoryChart houseResults={pastResultsWithDiff} statewideResults={statewideResultsWithDiff} />
             </div>
 
-            <div className="order-8 [&>section]:h-full" style={{ height: HOUSE_BOUNDARIES_CARD_HEIGHT }}>
+            <div className="order-9 [&>section]:h-full" style={{ height: HOUSE_BOUNDARIES_CARD_HEIGHT }}>
               <HouseOnlyDistrictBoundariesSection
                 entries={boundaryEntries}
                 density="compact"
@@ -211,13 +214,17 @@ export default async function HousePage({ params, searchParams }: { params: Prom
             <div className="order-4">
               <ForecastCalculationCard
                 tpl={districtTpl}
-                genericBallot={GENERIC_BALLOT}
+                genericBallot={gb}
                 tplLabel="District TPL"
                 tplHref={`/?tab=district&modelDistrict=${encodeURIComponent(districtTplId)}`}
+                incumbentPts={incumbentPts}
+                fundraisingPts={null}
+                candidatePts={null}
+                pollingAvg={null}
               />
             </div>
 
-            <div className="order-5">
+            <div className="order-6">
               <PastElectionResultsSection
                 results={pastResultsWithDiff}
                 fallbackYears={[2024, 2022, 2020]}
@@ -228,7 +235,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               />
             </div>
 
-            <div className="order-6">
+            <div className="order-7">
               <HouseOnlyRecentStatewideResultsSection results={statewideResultsWithDiff} density="compact" maxHeight="380px" />
             </div>
           </div>

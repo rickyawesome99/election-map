@@ -1,9 +1,10 @@
 "use client";
 
 import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const TABS: { key: string; label: string; href?: string }[] = [
+  { key: "overview",         label: "Overview" },
   { key: "forecast",         label: "2026 Forecast" },
   { key: "states",           label: "States" },
   { key: "counties",         label: "Counties" },
@@ -12,11 +13,18 @@ const TABS: { key: string; label: string; href?: string }[] = [
   { key: "district-finder",  label: "District Finder" },
 ];
 
+function getSavedForecastTab(): "house" | "senate" | "governor" | null {
+  if (typeof window === "undefined") return null;
+  const saved = window.localStorage.getItem("raceType");
+  return saved === "house" || saved === "senate" || saved === "governor" ? saved : null;
+}
+
 function getActiveTab(pathname: string, queryTab: string | null): string | null {
   const tplSubTabs = ["state", "district", "table", "districtTable"];
   if (pathname === "/") {
     if (tplSubTabs.includes(queryTab ?? "")) return "model";
-    return TABS.some(({ key }) => key === queryTab) ? queryTab : "forecast";
+    if (queryTab === "house" || queryTab === "senate" || queryTab === "governor" || queryTab === "forecast" || queryTab === "map") return "forecast";
+    return TABS.some(({ key }) => key === queryTab) ? queryTab : "overview";
   }
   if (pathname.startsWith("/house/")) return "forecast";
   if (pathname.startsWith("/senate/")) return "forecast";
@@ -26,18 +34,24 @@ function getActiveTab(pathname: string, queryTab: string | null): string | null 
   return null;
 }
 
-export default function SubNavBar() {
+export default function SubNavBar({
+  initialForecastTab = null,
+}: {
+  initialForecastTab?: "house" | "senate" | "governor" | null;
+}) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const urlActiveTab = getActiveTab(pathname, searchParams.get("tab"));
   const [clientTab, setClientTab] = useState<{ pathname: string; key: string } | null>(null);
+  const [savedForecastTab, setSavedForecastTab] = useState<"house" | "senate" | "governor">(initialForecastTab ?? "senate");
+  const effectiveSavedForecastTab = getSavedForecastTab() ?? savedForecastTab;
   const activeTab = clientTab?.pathname === pathname ? clientTab.key : urlActiveTab;
   const activeTabRef = useRef<HTMLElement | null>(null);
   const tabRefs = useRef<Map<string, HTMLElement>>(new Map());
   const navRef = useRef<HTMLElement | null>(null);
   const [indicator, setIndicator] = useState<{ left: number; width: number } | null>(null);
 
-  useLayoutEffect(() => {
+  const updateIndicator = useCallback(() => {
     const el = activeTab ? tabRefs.current.get(activeTab) : null;
     const nav = navRef.current;
     if (!el || !nav) { setIndicator(null); return; }
@@ -46,23 +60,39 @@ export default function SubNavBar() {
     setIndicator({ left: elRect.left - navRect.left + nav.scrollLeft, width: elRect.width });
   }, [activeTab]);
 
+  useLayoutEffect(() => {
+    const frame = window.requestAnimationFrame(updateIndicator);
+    return () => window.cancelAnimationFrame(frame);
+  }, [updateIndicator]);
+
   useEffect(() => {
-    const update = () => {
-      const el = activeTab ? tabRefs.current.get(activeTab) : null;
-      const nav = navRef.current;
-      if (!el || !nav) return;
-      const navRect = nav.getBoundingClientRect();
-      const elRect = el.getBoundingClientRect();
-      setIndicator({ left: elRect.left - navRect.left + nav.scrollLeft, width: elRect.width });
-    };
-    window.addEventListener("resize", update);
-    return () => window.removeEventListener("resize", update);
-  }, [activeTab]);
+    window.addEventListener("resize", updateIndicator);
+    return () => window.removeEventListener("resize", updateIndicator);
+  }, [updateIndicator]);
 
   useEffect(() => {
     if (!activeTab || !window.matchMedia("(max-width: 767px)").matches) return;
     activeTabRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
   }, [activeTab]);
+
+  useEffect(() => {
+    const frame = window.requestAnimationFrame(() => {
+      setSavedForecastTab(getSavedForecastTab() ?? "senate");
+    });
+
+    function handleSavedForecastTabChange(event: Event) {
+      const nextTab = (event as CustomEvent<string>).detail;
+      if (nextTab === "house" || nextTab === "senate" || nextTab === "governor") {
+        setSavedForecastTab(nextTab);
+      }
+    }
+
+    window.addEventListener("forecast-race-type-change", handleSavedForecastTabChange);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.removeEventListener("forecast-race-type-change", handleSavedForecastTabChange);
+    };
+  }, []);
 
   const commonClass = "relative z-10 shrink-0 px-4 py-2 text-sm font-semibold transition-colors duration-150";
 
@@ -121,26 +151,32 @@ export default function SubNavBar() {
             );
           }
 
+          const nextTab = key === "forecast" ? effectiveSavedForecastTab : key;
+
           return (
-            <button
+            <a
               key={key}
               ref={setRef}
-              type="button"
-              onClick={() => {
+              href={`/?tab=${nextTab}`}
+              onClick={(event) => {
                 window.scrollTo({ top: 0, behavior: "auto" });
                 if (pathname !== "/") {
-                  window.location.assign(`/?tab=${key}`);
+                  if (key === "forecast") {
+                    event.preventDefault();
+                    window.location.assign(`/?tab=${getSavedForecastTab() ?? savedForecastTab}`);
+                  }
                   return;
                 }
-                window.history.pushState({}, "", `/?tab=${key}`);
+                event.preventDefault();
+                window.history.pushState({}, "", `/?tab=${nextTab}`);
                 setClientTab({ pathname, key });
-                window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: key }));
+                window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: nextTab }));
               }}
               className={commonClass}
               style={style}
             >
               {label}
-            </button>
+            </a>
           );
         })}
       </nav>

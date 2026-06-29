@@ -98,6 +98,9 @@ export function calculateStateS(stateName: string): StateSCalculation | null {
   const stateDMargins = Object.fromEntries(
     stateResults.map((result) => [result.year, result.demPct - result.repPct])
   ) as Record<number, number>;
+  const contestedYears = new Set(
+    stateResults.filter((r) => r.repPct > 0 && r.demPct > 0).map((r) => r.year)
+  );
 
   const intervals: SInterval[] = [];
 
@@ -113,7 +116,9 @@ export function calculateStateS(stateName: string): StateSCalculation | null {
       stateFrom == null ||
       stateTo == null ||
       nationalFrom == null ||
-      nationalTo == null
+      nationalTo == null ||
+      !contestedYears.has(fromYear) ||
+      !contestedYears.has(toYear)
     ) {
       continue;
     }
