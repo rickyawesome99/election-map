@@ -1,8 +1,7 @@
 "use client";
 
 import { Candidate, RaceForecast, RaceType } from "@/data/forecastData";
-import { getRatingColors } from "@/lib/colorScale";
-import Link from "next/link";
+import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { Theme } from "./ForecastMap";
 
 type Props = {
@@ -17,7 +16,8 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
 
   const demVoteShare = (100 - selected.margin) / 2;
   const repVoteShare = (100 + selected.margin) / 2;
-  const { bg, text } = getRatingColors(selected.rating);
+  const forecastRating = marginToRating(selected.margin);
+  const { bg, text } = getRatingColors(forecastRating);
   const marginIsD = selected.margin <= 0;
   const panelSurface = t.legendBg;
   const cardSurface = t.tabBg;
@@ -48,7 +48,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
               className="rounded-full px-1.5 py-0.5 text-[9px] font-bold shrink-0"
               style={{ background: bg, color: text }}
             >
-              {selected.rating}
+              {forecastRating}
             </span>
             <button
               onClick={onClose}
@@ -111,7 +111,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
           </div>
 
           {/* More Info */}
-          <Link
+          <a
             href={`/${raceType}/${selected.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
             className="mt-1.5 flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
             style={{ background: cardSurface, color: t.textMuted }}
@@ -120,7 +120,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
             <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
-          </Link>
+          </a>
 
         </div>
       </div>

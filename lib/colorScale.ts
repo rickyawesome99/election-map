@@ -25,6 +25,17 @@ export function getRatingColors(rating: string): { bg: string; text: string } {
   return RATING_COLORS[rating] ?? { bg: "#555", text: "#fff" };
 }
 
+export function marginToRating(margin: number): string {
+  if (margin >= 15)  return "Safe R";
+  if (margin >= 5)   return "Likely R";
+  if (margin >= 1)   return "Lean R";
+  if (margin >= 0)   return "Tilt R";
+  if (margin > -1)   return "Tilt D";
+  if (margin >= -5)  return "Lean D";
+  if (margin >= -15) return "Likely D";
+  return "Safe D";
+}
+
 // Keep old export for any remaining references
 export function getStateColor(margin: number): string {
   return getRaceColor(margin);

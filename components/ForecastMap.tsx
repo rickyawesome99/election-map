@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, useMemo } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
-import { getRaceColor, getRatingColors } from "@/lib/colorScale";
+import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
 import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry, electionYear, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { computeProjectedMargin } from "@/lib/tplCompute";
@@ -16,7 +16,6 @@ import RaceTable from "./RaceTable";
 import StatesTable, { StateRow } from "./StatesTable";
 import NationalCountyMap from "./NationalCountyMap";
 import StatesOverviewMap, { type MapMode } from "./StatesOverviewMap";
-import Link from "next/link";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import TplModelPage from "./TplModelPage";
@@ -368,7 +367,8 @@ export default function ForecastMap() {
             const marginLabel = hovered.margin <= 0
               ? `D+${marginAbs.toFixed(1)}`
               : `R+${marginAbs.toFixed(1)}`;
-            const { bg: badgeColor, text: badgeText } = getRatingColors(hovered.rating);
+            const hoveredRating = marginToRating(hovered.margin);
+            const { bg: badgeColor, text: badgeText } = getRatingColors(hoveredRating);
 
             const tipW = 190;
             const tipH = hovered.candidates ? 115 : 88;
@@ -408,7 +408,7 @@ export default function ForecastMap() {
                       className="font-semibold px-1 py-0.5 rounded"
                       style={{ background: badgeColor, color: badgeText, whiteSpace: "nowrap", fontSize: 10 }}
                     >
-                      {hovered.rating}
+                      {hoveredRating}
                     </span>
                   </div>
                   <span className="font-bold shrink-0" style={{ fontSize: 15, color: marginColor }}>
@@ -682,7 +682,7 @@ export default function ForecastMap() {
                     </div>
                   </div>
                   {/* More info link */}
-                  <Link
+                  <a
                     href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
                     className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
                     style={{ background: t.tabBg, color: t.textMuted }}
@@ -691,7 +691,7 @@ export default function ForecastMap() {
                     <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
-                  </Link>
+                  </a>
                 </div>
               </div>
             );
@@ -703,7 +703,8 @@ export default function ForecastMap() {
         {selected && (() => {
           const demPct = (100 - selected.margin) / 2;
           const repPct = (100 + selected.margin) / 2;
-          const { bg: rBg, text: rText } = getRatingColors(selected.rating);
+          const selectedRating = marginToRating(selected.margin);
+          const { bg: rBg, text: rText } = getRatingColors(selectedRating);
           const marginIsD = selected.margin <= 0;
           return (
             <div
@@ -713,7 +714,7 @@ export default function ForecastMap() {
               {/* Header */}
               <div className="flex items-center gap-2 p-3 pb-2.5" style={{ borderBottom: `1px solid ${t.border}` }}>
                 <span className="min-w-0 flex-1 truncate text-sm font-bold" style={{ color: t.textPrimary }}>{selected.name}</span>
-                <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-bold" style={{ background: rBg, color: rText }}>{selected.rating}</span>
+                <span className="shrink-0 rounded-full px-1.5 py-0.5 text-[9px] font-bold" style={{ background: rBg, color: rText }}>{selectedRating}</span>
                 <button
                   onClick={() => setSelected(null)}
                   className="flex h-6 w-6 shrink-0 items-center justify-center rounded transition-colors"
@@ -760,7 +761,7 @@ export default function ForecastMap() {
               </div>
               {/* More Info */}
               <div className="px-3 pb-3">
-                <Link
+                <a
                   href={`/${raceType}/${selected.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
                   className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
                   style={{ background: t.tabBg, color: t.textMuted }}
@@ -769,7 +770,7 @@ export default function ForecastMap() {
                   <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
           );
@@ -815,7 +816,7 @@ export default function ForecastMap() {
               </div>
               {/* More Info */}
               <div className="px-3 pb-3">
-                <Link
+                <a
                   href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
                   className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
                   style={{ background: t.tabBg, color: t.textMuted }}
@@ -824,7 +825,7 @@ export default function ForecastMap() {
                   <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
           );
@@ -939,7 +940,7 @@ export default function ForecastMap() {
               </div>
               {/* More Info */}
               <div className="px-3 pb-3">
-                <Link
+                <a
                   href={`/states/${selectedStateRow.id}?from=${encodeURIComponent("/?tab=states")}`}
                   className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
                   style={{ background: t.tabBg, color: t.textMuted }}
@@ -948,7 +949,7 @@ export default function ForecastMap() {
                   <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
           );

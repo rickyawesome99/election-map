@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
 
@@ -27,9 +26,11 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   colorScheme: "light dark",
-  themeColor: "#f6f8fa",
+  themeColor: "#000000",
   viewportFit: "cover",
 };
+
+const restoreThemeScript = `(function(){try{var dark=localStorage.getItem('darkMode')==='true';var themeColor=dark?'#000000':'#ffffff';var root=document.documentElement;root.classList.toggle('dark',dark);root.style.backgroundColor=themeColor;root.style.colorScheme=dark?'dark':'light';document.querySelectorAll('meta[name="theme-color"]').forEach(function(meta){meta.remove()});var themeMeta=document.createElement('meta');themeMeta.name='theme-color';themeMeta.content=themeColor;document.head.appendChild(themeMeta);var statusMeta=document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');if(!statusMeta){statusMeta=document.createElement('meta');statusMeta.name='apple-mobile-web-app-status-bar-style';document.head.appendChild(statusMeta)}statusMeta.content=dark?'black-translucent':'default'}catch(e){}})()`;
 
 export default function RootLayout({
   children,
@@ -38,15 +39,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Runs in head so iOS Safari sees the active status-bar color before paint. */}
+        <script dangerouslySetInnerHTML={{ __html: restoreThemeScript }} />
+      </head>
       <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased`}>
-        {/* Runs before hydration to restore dark class without flash */}
-        <Script
-          id="restore-theme"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var dark=localStorage.getItem('darkMode')==='true';var color=dark?'#0d1117':'#f6f8fa';document.documentElement.classList.toggle('dark',dark);document.documentElement.style.backgroundColor=color;document.documentElement.style.colorScheme=dark?'dark':'light';var metas=document.querySelectorAll('meta[name="theme-color"]');if(!metas.length){var meta=document.createElement('meta');meta.name='theme-color';document.head.appendChild(meta);metas=[meta]}metas.forEach(function(meta){meta.removeAttribute('media');meta.content=color})}catch(e){}})()`,
-          }}
-        />
         <AppShell />
         {children}
       </body>

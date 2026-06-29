@@ -138,16 +138,8 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
     : Math.max(0, Math.min(1, num(row.probability, 50) / 100));
 
   // Margin (internal convention: positive = Rep wins, R-positive).
-  // Prefer deriving from proj_rep - proj_dem.
-  // CSV margin column uses the same R-positive convention — no negation needed.
-  let margin;
-  if (has(row.proj_dem) && has(row.proj_rep)) {
-    margin = parseFloat((num(row.proj_rep) - num(row.proj_dem)).toFixed(1));
-  } else if (has(row.proj_margin) || has(row.margin)) {
-    margin = parseFloat((num(row.proj_margin || row.margin)).toFixed(1));
-  } else {
-    margin = parseFloat(((0.5 - prob01) * 42).toFixed(1));
-  }
+  // Derived from prob_dem via the forecast formula; proj_dem/proj_rep/proj_margin columns are unused.
+  const margin = parseFloat(((0.5 - prob01) * 42).toFixed(1));
 
   const forecast = {
     id,

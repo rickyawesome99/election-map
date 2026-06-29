@@ -9,6 +9,7 @@
   --app-text-primary: #1f2328;
   --app-text-muted: #656d76;
   --app-text-very-muted: #949ea6;
+  --browser-chrome-bg: #ffffff;
   --oh31-map-unfilled: #c8cdd3;
   --oh31-simple-map-bg: #ffffff;
   --oh31-legend-bg: rgba(255,255,255,0.92);
@@ -37,6 +38,7 @@ html.dark {
   --app-text-primary: #ffffff;
   --app-text-muted: #8b949e;
   --app-text-very-muted: #484f58;
+  --browser-chrome-bg: #000000;
   --oh31-map-unfilled: #1e2530;
   --oh31-simple-map-bg: #0d1117;
   --oh31-legend-bg: rgba(22,27,34,0.90);
@@ -86,7 +88,7 @@ body::before {
   left: 0;
   right: 0;
   height: env(safe-area-inset-top, 0px);
-  background: var(--app-bg);
+  background: var(--browser-chrome-bg);
   pointer-events: none;
   z-index: 60;
 }

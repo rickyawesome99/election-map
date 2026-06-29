@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
-import { useEffect, useRef } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 
 const TABS: { key: string; label: string; href?: string }[] = [
   { key: "forecast",         label: "2026 Forecast" },
@@ -30,13 +30,27 @@ function getActiveTab(pathname: string, queryTab: string | null): string | null 
 export default function SubNavBar() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const activeTab = getActiveTab(pathname, searchParams.get("tab"));
-  const activeTabRef = useRef<HTMLAnchorElement | null>(null);
+  const router = useRouter();
+  const urlActiveTab = getActiveTab(pathname, searchParams.get("tab"));
+  const [clientTab, setClientTab] = useState<string | null>(null);
+  const activeTab = clientTab ?? urlActiveTab;
+  const activeTabRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => { setClientTab(null); }, [pathname]);
 
   useEffect(() => {
     if (!activeTab || !window.matchMedia("(max-width: 767px)").matches) return;
     activeTabRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
   }, [activeTab]);
+
+  const tabStyle = (isActive: boolean) => ({
+    color: isActive ? "var(--app-text-primary)" : "var(--app-text-muted)",
+    background: isActive ? "var(--app-tab-bg)" : "transparent",
+    boxShadow: isActive ? "inset 0 0 0 1px var(--app-border)" : "none",
+    display: "inline-block" as const,
+  });
+
+  const commonClass = "shrink-0 rounded-full px-4 py-2 text-sm font-semibold transition-all";
 
   return (
     <div
@@ -49,26 +63,43 @@ export default function SubNavBar() {
       }}
     >
       <nav className="scrollbar-none flex min-w-0 flex-1 gap-1 overflow-x-auto overflow-y-hidden">
-        {TABS.map(({ key, label, href }) => (
-          <Link
-            key={key}
-            ref={activeTab === key ? activeTabRef : null}
-            href={href ?? `/?tab=${key}`}
-            onClick={() => {
-              window.scrollTo({ top: 0, behavior: "auto" });
-              if (!href) window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: key }));
-            }}
-            className="shrink-0 rounded-full px-4 py-2 text-sm font-semibold transition-all"
-            style={{
-              color: activeTab === key ? "var(--app-text-primary)" : "var(--app-text-muted)",
-              background: activeTab === key ? "var(--app-tab-bg)" : "transparent",
-              boxShadow: activeTab === key ? "inset 0 0 0 1px var(--app-border)" : "none",
-              display: "inline-block",
-            }}
-          >
-            {label}
-          </Link>
-        ))}
+        {TABS.map(({ key, label, href }) => {
+          const isActive = activeTab === key;
+          if (href) {
+            return (
+              <Link
+                key={key}
+                ref={(el) => { if (isActive) activeTabRef.current = el; }}
+                href={href}
+                onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
+                className={commonClass}
+                style={tabStyle(isActive)}
+              >
+                {label}
+              </Link>
+            );
+          }
+          return (
+            <button
+              key={key}
+              ref={(el) => { if (isActive) activeTabRef.current = el; }}
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "auto" });
+                if (pathname === "/") {
+                  window.history.pushState({}, "", `/?tab=${key}`);
+                  setClientTab(key);
+                  window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: key }));
+                } else {
+                  router.push(`/?tab=${key}`);
+                }
+              }}
+              className={commonClass}
+              style={tabStyle(isActive)}
+            >
+              {label}
+            </button>
+          );
+        })}
       </nav>
     </div>
   );

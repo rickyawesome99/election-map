@@ -1,6 +1,6 @@
 "use client";
 
-import { getRatingColors } from "@/lib/colorScale";
+import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import Link from "next/link";
 import { useState } from "react";
 import CandidateLink from "./CandidateLink";
@@ -37,7 +37,7 @@ function sortRaces(races: RaceForecast[], key: SortKey, dir: SortDir): RaceForec
         cmp = a.name.localeCompare(b.name);
         break;
       case "rating":
-        cmp = RATING_ORDER.indexOf(a.rating ?? "") - RATING_ORDER.indexOf(b.rating ?? "");
+        cmp = RATING_ORDER.indexOf(marginToRating(a.margin ?? 0)) - RATING_ORDER.indexOf(marginToRating(b.margin ?? 0));
         if (cmp === 0) cmp = a.name.localeCompare(b.name);
         break;
       case "margin":
@@ -295,7 +295,8 @@ export default function RaceTable({
           const rowBackground = i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)";
           const margin = race.margin ?? 0;
           const probability = race.probability ?? 0.5;
-          const { bg, text } = getRatingColors(race.rating ?? "Tossup");
+          const computedRating = marginToRating(margin);
+          const { bg, text } = getRatingColors(computedRating);
           const marginIsD = margin <= 0;
           const demPct = Math.round(probability * 100);
           const repPct = 100 - demPct;
@@ -319,7 +320,7 @@ export default function RaceTable({
                   className="shrink-0 whitespace-nowrap rounded-full px-1.5 py-0.5 text-[9px] font-semibold"
                   style={{ background: bg, color: text }}
                 >
-                  {race.rating ?? "TBD"}
+                  {computedRating}
                 </span>
                 {showSpecialBadge && race.electionType?.toLowerCase().includes("special") && (
                   <span
@@ -391,7 +392,8 @@ export default function RaceTable({
               const rowBackground = i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)";
               const margin = race.margin ?? 0;
               const probability = race.probability ?? 0.5;
-              const { bg, text } = getRatingColors(race.rating ?? "Tossup");
+              const computedRating = marginToRating(margin);
+              const { bg, text } = getRatingColors(computedRating);
               const marginIsD = margin <= 0;
               const demPct = Math.round(probability * 100);
               const repPct = 100 - demPct;
@@ -421,7 +423,7 @@ export default function RaceTable({
                         className="shrink-0 whitespace-nowrap rounded-full px-1.5 py-0.5 text-[10px] font-semibold"
                         style={{ background: bg, color: text }}
                       >
-                        {race.rating ?? "TBD"}
+                        {computedRating}
                       </span>
                       {showSpecialBadge && race.electionType?.toLowerCase().includes("special") && (
                         <span

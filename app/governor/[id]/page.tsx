@@ -1,10 +1,10 @@
 import { governorData, governorNoElection, NoElectionEntry, electionYear, type PastResult } from "@/data/forecastData";
-import { getRatingColors } from "@/lib/colorScale";
+import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesAndPollsCard, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import { calculateStateTpl, GENERIC_BALLOT } from "@/lib/tplCompute";
@@ -119,9 +119,10 @@ export default async function GovernorPage({ params, searchParams }: { params: P
 
   const demPct = Math.round(race.probability * 100);
   const repPct = 100 - demPct;
-  const { bg, text } = getRatingColors(race.rating);
   const stateTpl = calculateStateTpl(id.toUpperCase(), race.name);
   const projectedMargin = stateTpl + GENERIC_BALLOT;
+  const forecastRating = marginToRating(projectedMargin);
+  const { bg, text } = getRatingColors(forecastRating);
   const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
   const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
 
@@ -145,7 +146,7 @@ export default async function GovernorPage({ params, searchParams }: { params: P
               className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}
             >
-              {race.rating}
+              {forecastRating}
             </span>
           </div>
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{electionYear} Gubernatorial Race</p>
@@ -175,50 +176,31 @@ export default async function GovernorPage({ params, searchParams }: { params: P
           </div>
 
           <div className="contents lg:grid lg:grid-cols-8 lg:gap-3">
-            <div className="order-3 lg:col-span-5 [&>section]:h-full">
-              <CandidatesSection
-                density="compact"
+            <div className="order-3 lg:col-span-8">
+              <CandidatesAndPollsCard
                 candidates={race.candidates
                   ? [
-                      {
-                        name: race.candidates.dem.name,
-                        party: race.candidates.dem.party,
-                        incumbent: race.candidates.dem.incumbent,
-                        photo: demPhoto,
-                        pct: demVoteShare,
-                      },
-                      {
-                        name: race.candidates.rep.name,
-                        party: race.candidates.rep.party,
-                        incumbent: race.candidates.rep.incumbent,
-                        photo: repPhoto,
-                        pct: repVoteShare,
-                      },
+                      { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
+                      { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
                     ]
                   : [
                       { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
                       { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
                     ]}
-                />
-            </div>
-
-            <div className="order-4 lg:col-span-3 [&>section]:h-full">
-              <MarginAndWinProbabilityCard
-                density="compact"
-                margin={projectedMargin}
-                demPct={demPct}
-                repPct={repPct}
-                rcpDem={race.rcpDem}
-                rcpRep={race.rcpRep}
-                polyDem={race.polyDem}
-                polyRep={race.polyRep}
-                kalshiDem={race.kalshiDem}
-                kalshiRep={race.kalshiRep}
+                demPct={demPct} repPct={repPct}
+                rcpDem={race.rcpDem} rcpRep={race.rcpRep}
+                polyDem={race.polyDem} polyRep={race.polyRep}
+                kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep}
               />
             </div>
 
             <div className="order-5 lg:col-span-8">
-              <ForecastCalculationCard tpl={stateTpl} genericBallot={GENERIC_BALLOT} tplLabel="State TPL" />
+              <ForecastCalculationCard
+                tpl={stateTpl}
+                genericBallot={GENERIC_BALLOT}
+                tplLabel="State TPL"
+                tplHref={`/?tab=state&modelState=${encodeURIComponent(id.toUpperCase())}`}
+              />
             </div>
 
             <PastElectionResultsSection

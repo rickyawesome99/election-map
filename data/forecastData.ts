@@ -73,8 +73,8 @@ export const senateData: RaceForecast[] = [
     "state": "Alaska",
     "raceType": "senate",
     "probability": 0.49,
-    "margin": 2,
-    "rating": "Lean R",
+    "margin": 0.4,
+    "rating": "Tilt R",
     "history": [
       { "date": "Sep", "value": 44 },
       { "date": "Oct", "value": 46 },
@@ -106,7 +106,7 @@ export const senateData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "senate",
     "probability": 0.05,
-    "margin": 17.5,
+    "margin": 18.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -123,7 +123,7 @@ export const senateData: RaceForecast[] = [
     "kalshiDem": 0.03,
     "kalshiRep": 0.97,
     "candidates": {
-      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
+      "dem": { "name": "Everett Wess", "party": "D", "incumbent": false },
       "rep": { "name": "Barry Moore", "party": "R", "incumbent": false }
     },
     "seatHolder": "Tommy Tuberville",
@@ -139,7 +139,7 @@ export const senateData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "senate",
     "probability": 0.04,
-    "margin": 21,
+    "margin": 19.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -172,8 +172,8 @@ export const senateData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "senate",
     "probability": 0.97,
-    "margin": -14,
-    "rating": "Likely D",
+    "margin": -19.7,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
       { "date": "Oct", "value": 94 },
@@ -205,7 +205,7 @@ export const senateData: RaceForecast[] = [
     "state": "Delaware",
     "raceType": "senate",
     "probability": 0.94,
-    "margin": -20.5,
+    "margin": -18.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -238,8 +238,8 @@ export const senateData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "senate",
     "probability": 0.65,
-    "margin": -3.5,
-    "rating": "Lean D",
+    "margin": -6.3,
+    "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 60 },
       { "date": "Oct", "value": 62 },
@@ -271,8 +271,8 @@ export const senateData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "senate",
     "probability": 0.3,
-    "margin": 2.5,
-    "rating": "Lean R",
+    "margin": 8.4,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 25 },
       { "date": "Oct", "value": 27 },
@@ -288,7 +288,7 @@ export const senateData: RaceForecast[] = [
     "kalshiDem": 0.41,
     "kalshiRep": 0.59,
     "candidates": {
-      "dem": { "name": "Zach Wahls", "party": "D", "incumbent": false },
+      "dem": { "name": "Josh Turek", "party": "D", "incumbent": false },
       "rep": { "name": "Ashley Hinson", "party": "R", "incumbent": false }
     },
     "seatHolder": "Joni Ernst",
@@ -304,7 +304,7 @@ export const senateData: RaceForecast[] = [
     "state": "Idaho",
     "raceType": "senate",
     "probability": 0.07,
-    "margin": 24,
+    "margin": 18.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -321,7 +321,7 @@ export const senateData: RaceForecast[] = [
     "kalshiDem": 0.07,
     "kalshiRep": 0.93,
     "candidates": {
-      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
+      "dem": { "name": "David Roth", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Risch", "party": "R", "incumbent": true }
     },
     "seatHolder": "Jim Risch",
@@ -337,7 +337,7 @@ export const senateData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "senate",
     "probability": 0.93,
-    "margin": -15,
+    "margin": -18.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -370,7 +370,7 @@ export const senateData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "senate",
     "probability": 0.15,
-    "margin": 10.5,
+    "margin": 14.7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 10 },
@@ -403,8 +403,8 @@ export const senateData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "senate",
     "probability": 0.07,
-    "margin": 13.5,
-    "rating": "Likely R",
+    "margin": 18.1,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
       { "date": "Oct", "value": 4 },
@@ -436,7 +436,7 @@ export const senateData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "senate",
     "probability": 0.09,
-    "margin": 20,
+    "margin": 17.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 4 },
@@ -454,7 +454,7 @@ export const senateData: RaceForecast[] = [
     "kalshiRep": 0.91,
     "candidates": {
       "dem": { "name": "Jamie Davis", "party": "D", "incumbent": false },
-      "rep": { "name": "Bill Cassidy", "party": "R", "incumbent": true }
+      "rep": { "name": "Julia Letlow", "party": "R", "incumbent": false }
     },
     "seatHolder": "Bill Cassidy",
     "seatParty": "R",
@@ -469,7 +469,7 @@ export const senateData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "senate",
     "probability": 0.95,
-    "margin": -28,
+    "margin": -18.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -502,7 +502,7 @@ export const senateData: RaceForecast[] = [
     "state": "Maine",
     "raceType": "senate",
     "probability": 0.6,
-    "margin": -3.5,
+    "margin": -4.2,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 55 },
@@ -519,7 +519,7 @@ export const senateData: RaceForecast[] = [
     "kalshiDem": 0.7,
     "kalshiRep": 0.3,
     "candidates": {
-      "dem": { "name": "Grahama Platner", "party": "D", "incumbent": false },
+      "dem": { "name": "Graham Platner", "party": "D", "incumbent": false },
       "rep": { "name": "Susan Collins", "party": "R", "incumbent": true }
     },
     "seatHolder": "Susan Collins",
@@ -535,8 +535,8 @@ export const senateData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "senate",
     "probability": 0.79,
-    "margin": -1.2,
-    "rating": "Lean D",
+    "margin": -12.2,
+    "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 74 },
       { "date": "Oct", "value": 76 },
@@ -568,8 +568,8 @@ export const senateData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "senate",
     "probability": 0.9,
-    "margin": -9.5,
-    "rating": "Likely D",
+    "margin": -16.8,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 85 },
       { "date": "Oct", "value": 87 },
@@ -602,8 +602,8 @@ export const senateData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "senate",
     "probability": 0.06,
-    "margin": 13,
-    "rating": "Likely R",
+    "margin": 18.5,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
       { "date": "Oct", "value": 3 },
@@ -636,7 +636,7 @@ export const senateData: RaceForecast[] = [
     "state": "Montana",
     "raceType": "senate",
     "probability": 0.21,
-    "margin": 12,
+    "margin": 12.2,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 16 },
@@ -653,7 +653,7 @@ export const senateData: RaceForecast[] = [
     "kalshiDem": 0.21,
     "kalshiRep": 0.79,
     "candidates": {
-      "dem": { "name": "Reilly Neill", "party": "D", "incumbent": false },
+      "dem": { "name": "Seth Bodnar", "party": "I", "incumbent": false },
       "rep": { "name": "Kurt Alme", "party": "R", "incumbent": false }
     },
     "seatHolder": "Steve Daines",
@@ -669,8 +669,8 @@ export const senateData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "senate",
     "probability": 0.52,
-    "margin": -5.5,
-    "rating": "Likely D",
+    "margin": -0.8,
+    "rating": "Tilt D",
     "history": [
       { "date": "Sep", "value": 47 },
       { "date": "Oct", "value": 49 },
@@ -702,7 +702,7 @@ export const senateData: RaceForecast[] = [
     "state": "Nebraska",
     "raceType": "senate",
     "probability": 0.27,
-    "margin": 7,
+    "margin": 9.7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 22 },
@@ -736,8 +736,8 @@ export const senateData: RaceForecast[] = [
     "state": "New Hampshire",
     "raceType": "senate",
     "probability": 0.85,
-    "margin": -4.5,
-    "rating": "Lean D",
+    "margin": -14.7,
+    "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 80 },
       { "date": "Oct", "value": 82 },
@@ -769,8 +769,8 @@ export const senateData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "senate",
     "probability": 0.96,
-    "margin": -14,
-    "rating": "Likely D",
+    "margin": -19.3,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
       { "date": "Oct", "value": 93 },
@@ -787,7 +787,7 @@ export const senateData: RaceForecast[] = [
     "kalshiRep": 0.04,
     "candidates": {
       "dem": { "name": "Cory Booker", "party": "D", "incumbent": true },
-      "rep": { "name": "Republican Candidate", "party": "R", "incumbent": false }
+      "rep": { "name": "Justin Murphy", "party": "R", "incumbent": false }
     },
     "seatHolder": "Cory Booker",
     "seatParty": "D",
@@ -802,7 +802,7 @@ export const senateData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "senate",
     "probability": 0.97,
-    "margin": -48,
+    "margin": -19.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -820,7 +820,7 @@ export const senateData: RaceForecast[] = [
     "kalshiRep": 0.03,
     "candidates": {
       "dem": { "name": "Ben Ray Lujan", "party": "D", "incumbent": true },
-      "rep": { "name": "Republican Candidate", "party": "R", "incumbent": false }
+      "rep": { "name": "Larry Marker", "party": "R", "incumbent": false }
     },
     "seatHolder": "Ben Ray Lujan",
     "seatParty": "D",
@@ -835,7 +835,7 @@ export const senateData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "senate",
     "probability": 0.04,
-    "margin": 25,
+    "margin": 19.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -869,7 +869,7 @@ export const senateData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "senate",
     "probability": 0.95,
-    "margin": -17,
+    "margin": -18.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -887,7 +887,7 @@ export const senateData: RaceForecast[] = [
     "kalshiRep": 0.05,
     "candidates": {
       "dem": { "name": "Jeff Merkley", "party": "D", "incumbent": true },
-      "rep": { "name": "Republican Candidate", "party": "R", "incumbent": false }
+      "rep": { "name": "David Brock Smith", "party": "R", "incumbent": false }
     },
     "seatHolder": "Jeff Merkley",
     "seatParty": "D",
@@ -902,7 +902,7 @@ export const senateData: RaceForecast[] = [
     "state": "Rhode Island",
     "raceType": "senate",
     "probability": 0.96,
-    "margin": -38,
+    "margin": -19.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -935,8 +935,8 @@ export const senateData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "senate",
     "probability": 0.14,
-    "margin": 8.5,
-    "rating": "Likely R",
+    "margin": 15.1,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 9 },
       { "date": "Oct", "value": 11 },
@@ -968,7 +968,7 @@ export const senateData: RaceForecast[] = [
     "state": "South Dakota",
     "raceType": "senate",
     "probability": 0.06,
-    "margin": 27.5,
+    "margin": 18.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -1001,7 +1001,7 @@ export const senateData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "senate",
     "probability": 0.07,
-    "margin": 26.5,
+    "margin": 18.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -1034,7 +1034,7 @@ export const senateData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "senate",
     "probability": 0.43,
-    "margin": 4.5,
+    "margin": 2.9,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 38 },
@@ -1067,8 +1067,8 @@ export const senateData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "senate",
     "probability": 0.96,
-    "margin": -14,
-    "rating": "Likely D",
+    "margin": -19.3,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
       { "date": "Oct", "value": 93 },
@@ -1100,8 +1100,8 @@ export const senateData: RaceForecast[] = [
     "state": "West Virginia",
     "raceType": "senate",
     "probability": 0.93,
-    "margin": 36.5,
-    "rating": "Safe R",
+    "margin": -18.1,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
       { "date": "Oct", "value": 90 },
@@ -1117,7 +1117,7 @@ export const senateData: RaceForecast[] = [
     "kalshiDem": 0.93,
     "kalshiRep": 0.07,
     "candidates": {
-      "dem": { "name": "Jeff Kessler", "party": "D", "incumbent": false },
+      "dem": { "name": "Rachel Fetty Anderson", "party": "D", "incumbent": false },
       "rep": { "name": "Shelley Moore Capito", "party": "R", "incumbent": true }
     },
     "seatHolder": "Shelley Moore Capito",
@@ -1133,7 +1133,7 @@ export const senateData: RaceForecast[] = [
     "state": "Wyoming",
     "raceType": "senate",
     "probability": 0.03,
-    "margin": 45.5,
+    "margin": 19.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -1166,7 +1166,7 @@ export const senateData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "senate",
     "probability": 0.18,
-    "margin": 11.5,
+    "margin": 13.4,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 13 },
@@ -1199,8 +1199,8 @@ export const senateData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "senate",
     "probability": 0.48,
-    "margin": 1.5,
-    "rating": "Lean R",
+    "margin": 0.8,
+    "rating": "Tilt R",
     "history": [
       { "date": "Sep", "value": 43 },
       { "date": "Oct", "value": 45 },
@@ -2042,758 +2042,28 @@ export const senateCurrent: Record<string, ["D" | "R" | "I", "D" | "R" | "I"]> =
 
 export const governorData: RaceForecast[] = [
   {
-    "id": "HI",
-    "name": "Hawaii",
-    "state": "Hawaii",
-    "raceType": "governor",
-    "probability": 0.94,
-    "margin": -30,
-    "rating": "Safe D",
-    "history": [
-      { "date": "Sep", "value": 89 },
-      { "date": "Oct", "value": 91 },
-      { "date": "Nov", "value": 93 },
-      { "date": "Dec", "value": 94 },
-      { "date": "Jan", "value": 94 },
-      { "date": "Feb", "value": 94 },
-      { "date": "Mar", "value": 94 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Republicans have not won a gubernatorial eelction in Hawaii since Linda Lingle was re-elected in 2006.",
-    "kalshiDem": 0.94,
-    "kalshiRep": 0.06,
-    "candidates": {
-      "dem": { "name": "Josh Green", "party": "D", "incumbent": true },
-      "rep": { "name": "Republican Candidate", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Josh Green",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 63.21, "repPct": 36.79, "demCandidate": "Josh Green", "repCandidate": "Duke Aiona", "demVotes": 259901, "repVotes": 151258, "margin": -26.42, "electionType": "Regular" },
-      { "year": 2018, "demPct": 62.67, "repPct": 33.7, "demCandidate": "David Ige", "repCandidate": "Andria Tupola", "demVotes": 244934, "repVotes": 131719, "margin": -28.97, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2014, "demPct": 49.45, "repPct": 37.08, "demCandidate": "David Ige", "repCandidate": "Duke Aiona", "demVotes": 181106, "repVotes": 135775, "margin": -12.37, "electionType": "Regular" }
-    ]
-  },
-  {
-    "id": "MD",
-    "name": "Maryland",
-    "state": "Maryland",
-    "raceType": "governor",
-    "probability": 0.94,
-    "margin": -30,
-    "rating": "Safe D",
-    "history": [
-      { "date": "Sep", "value": 89 },
-      { "date": "Oct", "value": 91 },
-      { "date": "Nov", "value": 93 },
-      { "date": "Dec", "value": 94 },
-      { "date": "Jan", "value": 94 },
-      { "date": "Feb", "value": 94 },
-      { "date": "Mar", "value": 94 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Wes Moore is running for a second term.",
-    "kalshiDem": 0.94,
-    "kalshiRep": 0.06,
-    "candidates": {
-      "dem": { "name": "Wes Moore", "party": "D", "incumbent": true },
-      "rep": { "name": "Dan Cox", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Wes Moore",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 64.53, "repPct": 32.12, "demCandidate": "Wes Moore", "repCandidate": "Dan Cox", "demVotes": 1293944, "repVotes": 644000, "margin": -32.41, "electionType": "Regular" },
-      { "year": 2018, "demPct": 43.51, "repPct": 55.35, "demCandidate": "Ben Jealous", "repCandidate": "Larry Hogan", "demVotes": 1002639, "repVotes": 1275644, "margin": 11.84, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2014, "demPct": 47.25, "repPct": 51.03, "demCandidate": "Anthony Brown", "repCandidate": "Larry Hogan", "demVotes": 818890, "repVotes": 884400, "margin": 3.78, "electionType": "Regular" }
-    ]
-  },
-  {
-    "id": "MA",
-    "name": "Massachusetts",
-    "state": "Massachusetts",
-    "raceType": "governor",
-    "probability": 0.92,
-    "margin": -30,
-    "rating": "Safe D",
-    "history": [
-      { "date": "Sep", "value": 87 },
-      { "date": "Oct", "value": 89 },
-      { "date": "Nov", "value": 91 },
-      { "date": "Dec", "value": 92 },
-      { "date": "Jan", "value": 92 },
-      { "date": "Feb", "value": 92 },
-      { "date": "Mar", "value": 92 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Maura Healey is running for a second term.",
-    "kalshiDem": 0.92,
-    "kalshiRep": 0.08,
-    "candidates": {
-      "dem": { "name": "Maura Healey", "party": "D", "incumbent": true },
-      "rep": { "name": "Brian Shortsleeve", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Maura Healey",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 63.74, "repPct": 34.57, "demCandidate": "Maura Healey", "repCandidate": "Geoff Diehl", "demVotes": 1584403, "repVotes": 859343, "margin": -29.17, "electionType": "Regular" },
-      { "year": 2018, "demPct": 33.12, "repPct": 66.6, "demCandidate": "Jay Gonzalez", "repCandidate": "Charlie Baker", "demVotes": 885770, "repVotes": 1781341, "margin": 33.48, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2014, "demPct": 46.54, "repPct": 48.39, "demCandidate": "Martha Coakley", "repCandidate": "Charlie Baker", "demVotes": 1004408, "repVotes": 1044573, "margin": 1.85, "electionType": "Regular" }
-    ]
-  },
-  {
-    "id": "RI",
-    "name": "Rhode Island",
-    "state": "Rhode Island",
-    "raceType": "governor",
-    "probability": 0.93,
-    "margin": -25,
-    "rating": "Safe D",
-    "history": [
-      { "date": "Sep", "value": 88 },
-      { "date": "Oct", "value": 90 },
-      { "date": "Nov", "value": 92 },
-      { "date": "Dec", "value": 93 },
-      { "date": "Jan", "value": 93 },
-      { "date": "Feb", "value": 93 },
-      { "date": "Mar", "value": 93 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Dan McKee is running for a second full term in office. McKee became governor in 2021 upon the resignation of Gina Raimondo.",
-    "kalshiDem": 0.93,
-    "kalshiRep": 0.07,
-    "candidates": {
-      "dem": { "name": "Dan McKee", "party": "D", "incumbent": true },
-      "rep": { "name": "Aaron Guckian", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Dan McKee",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 57.92, "repPct": 38.86, "demCandidate": "Dan McKee", "repCandidate": "Ashley Kalus", "demVotes": 207166, "repVotes": 139001, "margin": -19.06, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 52.64, "repPct": 37.18, "demCandidate": "Gina Raimondo", "repCandidate": "Allan Fung", "demVotes": 198122, "repVotes": 139932, "margin": -15.46, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2014, "demPct": 40.7, "repPct": 36.24, "demCandidate": "Gina Raimondo", "repCandidate": "Allan Fung", "demVotes": 131899, "repVotes": 117428, "margin": -4.46, "electionType": "Regular" }
-    ]
-  },
-  {
-    "id": "CA",
-    "name": "California",
-    "state": "California",
-    "raceType": "governor",
-    "probability": 0.86,
-    "margin": -20,
-    "rating": "Safe D",
-    "history": [
-      { "date": "Sep", "value": 81 },
-      { "date": "Oct", "value": 83 },
-      { "date": "Nov", "value": 85 },
-      { "date": "Dec", "value": 86 },
-      { "date": "Jan", "value": 86 },
-      { "date": "Feb", "value": 86 },
-      { "date": "Mar", "value": 86 }
-    ],
-    "termLength": 4,
-    "raceDesc": "California hasn't elected a Republican for Governor since Arnold Schwarzenegger in 2006.",
-    "kalshiDem": 0.86,
-    "kalshiRep": 0.14,
-    "candidates": {
-      "dem": { "name": "Katie Porter", "party": "D", "incumbent": false },
-      "rep": { "name": "Chad Bianco", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Gavin Newsom",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 59.18, "repPct": 40.82, "demCandidate": "Gavin Newsom", "repCandidate": "Brian Dahle", "demVotes": 6470104, "repVotes": 4462914, "margin": -18.36, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 61.95, "repPct": 38.05, "demCandidate": "Gavin Newsom", "repCandidate": "John H. Cox", "demVotes": 7721410, "repVotes": 4742825, "margin": -23.9, "electionType": "Regular" },
-      { "year": 2014, "demPct": 59.97, "repPct": 40.03, "demCandidate": "Jerry Brown", "repCandidate": "Neel Kashkari", "demVotes": 4388368, "repVotes": 2929213, "margin": -19.94, "electionType": "Regular", "demIncumbent": true }
-    ]
-  },
-  {
-    "id": "CO",
-    "name": "Colorado",
-    "state": "Colorado",
-    "raceType": "governor",
-    "probability": 0.91,
-    "margin": -20,
-    "rating": "Safe D",
-    "history": [
-      { "date": "Sep", "value": 86 },
-      { "date": "Oct", "value": 88 },
-      { "date": "Nov", "value": 90 },
-      { "date": "Dec", "value": 91 },
-      { "date": "Jan", "value": 91 },
-      { "date": "Feb", "value": 91 },
-      { "date": "Mar", "value": 91 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Colorado is a reliable Democrat state and Republicans have not won a gubernatorial election in Colorado since Bill Owens was re-elected in 2002.",
-    "kalshiDem": 0.91,
-    "kalshiRep": 0.09,
-    "candidates": {
-      "dem": { "name": "Michael Bennet", "party": "D", "incumbent": false },
-      "rep": { "name": "Barbara Kirkmeyer", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Jared Polis",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 58.53, "repPct": 39.18, "demCandidate": "Jared Polis", "repCandidate": "Heidi Ganahl", "demVotes": 1468481, "repVotes": 983040, "margin": -19.35, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 53.42, "repPct": 42.8, "demCandidate": "Jared Polis", "repCandidate": "Walker Stapleton", "demVotes": 1348888, "repVotes": 1080801, "margin": -10.62, "electionType": "Regular" },
-      { "year": 2014, "demPct": 49.3, "repPct": 45.95, "demCandidate": "John Hickenlooper", "repCandidate": "Bob Beauprez", "demVotes": 1006433, "repVotes": 938195, "margin": -3.35, "electionType": "Regular", "demIncumbent": true }
-    ]
-  },
-  {
-    "id": "PA",
-    "name": "Pennsylvania",
-    "state": "Pennsylvania",
-    "raceType": "governor",
-    "probability": 0.96,
-    "margin": -18,
-    "rating": "Safe D",
-    "history": [
-      { "date": "Sep", "value": 91 },
-      { "date": "Oct", "value": 93 },
-      { "date": "Nov", "value": 95 },
-      { "date": "Dec", "value": 96 },
-      { "date": "Jan", "value": 96 },
-      { "date": "Feb", "value": 96 },
-      { "date": "Mar", "value": 96 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Josh Shapiro is running for a second term.",
-    "kalshiDem": 0.96,
-    "kalshiRep": 0.04,
-    "candidates": {
-      "dem": { "name": "Josh Shapiro", "party": "D", "incumbent": true },
-      "rep": { "name": "Stacy Garrity", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Josh Shapiro",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 56.49, "repPct": 41.71, "demCandidate": "Josh Shapiro", "repCandidate": "Doug Mastriano", "demVotes": 3031137, "repVotes": 2238477, "margin": -14.78, "electionType": "Regular" },
-      { "year": 2018, "demPct": 57.77, "repPct": 40.7, "demCandidate": "Tom Wolf", "repCandidate": "Scott Wagner", "demVotes": 2895652, "repVotes": 2039882, "margin": -17.07, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2014, "demPct": 54.93, "repPct": 45.07, "demCandidate": "Tom Wolf", "repCandidate": "Tom Corbett", "demVotes": 1920355, "repVotes": 1575511, "margin": -9.86, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "IL",
-    "name": "Illinois",
-    "state": "Illinois",
-    "raceType": "governor",
-    "probability": 0.9,
-    "margin": -15,
-    "rating": "Safe D",
-    "history": [
-      { "date": "Sep", "value": 85 },
-      { "date": "Oct", "value": 87 },
-      { "date": "Nov", "value": 89 },
-      { "date": "Dec", "value": 90 },
-      { "date": "Jan", "value": 90 },
-      { "date": "Feb", "value": 90 },
-      { "date": "Mar", "value": 90 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor JB Pritzker is running for a third term.",
-    "kalshiDem": 0.9,
-    "kalshiRep": 0.1,
-    "candidates": {
-      "dem": { "name": "JB Pritzker", "party": "D", "incumbent": true },
-      "rep": { "name": "Darren Bailey", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "JB Pritzker",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 54.91, "repPct": 42.37, "demCandidate": "J.B. Pritzker", "repCandidate": "Darren Bailey", "demVotes": 2253748, "repVotes": 1739095, "margin": -12.54, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 54.53, "repPct": 38.83, "demCandidate": "J.B. Pritzker", "repCandidate": "Bruce Rauner", "demVotes": 2479746, "repVotes": 1765751, "margin": -15.7, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2014, "demPct": 46.35, "repPct": 50.27, "demCandidate": "Pat Quinn", "repCandidate": "Bruce Rauner", "demVotes": 1681343, "repVotes": 1823627, "margin": 3.92, "electionType": "Regular", "demIncumbent": true }
-    ]
-  },
-  {
-    "id": "MN",
-    "name": "Minnesota",
-    "state": "Minnesota",
-    "raceType": "governor",
-    "probability": 0.91,
-    "margin": -15,
-    "rating": "Safe D",
-    "history": [
-      { "date": "Sep", "value": 86 },
-      { "date": "Oct", "value": 88 },
-      { "date": "Nov", "value": 90 },
-      { "date": "Dec", "value": 91 },
-      { "date": "Jan", "value": 91 },
-      { "date": "Feb", "value": 91 },
-      { "date": "Mar", "value": 91 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Tim Walz is not running for re-election, leaving the seat an open race in this reliably Democrat state.",
-    "kalshiDem": 0.91,
-    "kalshiRep": 0.09,
-    "candidates": {
-      "dem": { "name": "Amy Klobuchar", "party": "D", "incumbent": false },
-      "rep": { "name": "Lisa Demuth", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Tim Walz",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 52.27, "repPct": 44.61, "demCandidate": "Tim Walz", "repCandidate": "Scott Jensen", "demVotes": 1312349, "repVotes": 1119941, "margin": -7.66, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 53.84, "repPct": 42.43, "demCandidate": "Tim Walz", "repCandidate": "Jeff Johnson", "demVotes": 1393096, "repVotes": 1097705, "margin": -11.41, "electionType": "Regular" },
-      { "year": 2014, "demPct": 50.07, "repPct": 44.51, "demCandidate": "Mark Dayton", "repCandidate": "Jeff Johnson", "demVotes": 989113, "repVotes": 879257, "margin": -5.56, "electionType": "Regular", "demIncumbent": true }
-    ]
-  },
-  {
-    "id": "NY",
-    "name": "New York",
-    "state": "New York",
-    "raceType": "governor",
-    "probability": 0.89,
-    "margin": -14,
-    "rating": "Likely D",
-    "history": [
-      { "date": "Sep", "value": 84 },
-      { "date": "Oct", "value": 86 },
-      { "date": "Nov", "value": 88 },
-      { "date": "Dec", "value": 89 },
-      { "date": "Jan", "value": 89 },
-      { "date": "Feb", "value": 89 },
-      { "date": "Mar", "value": 89 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Kathy Hochul is running for her second full term. Hochul took office after her predecessor Andrew Cuomo resigned in 2021.",
-    "kalshiDem": 0.89,
-    "kalshiRep": 0.11,
-    "candidates": {
-      "dem": { "name": "Kathy Hochul", "party": "D", "incumbent": true },
-      "rep": { "name": "Bruce Blakeman", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Kathy Hochul",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 53.2, "repPct": 46.8, "demCandidate": "Kathy Hochul", "repCandidate": "Lee Zeldin", "demVotes": 3140415, "repVotes": 2762581, "margin": -6.4, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 59.62, "repPct": 36.21, "demCandidate": "Andrew Cuomo", "repCandidate": "Marc Molinaro", "demVotes": 3635340, "repVotes": 2207602, "margin": -23.41, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2014, "demPct": 54.28, "repPct": 40.31, "demCandidate": "Andrew Cuomo", "repCandidate": "Rob Astorino", "demVotes": 2069480, "repVotes": 1537077, "margin": -13.97, "electionType": "Regular", "demIncumbent": true }
-    ]
-  },
-  {
-    "id": "NM",
-    "name": "New Mexico",
-    "state": "New Mexico",
-    "raceType": "governor",
-    "probability": 0.92,
-    "margin": -12,
-    "rating": "Likely D",
-    "history": [
-      { "date": "Sep", "value": 87 },
-      { "date": "Oct", "value": 89 },
-      { "date": "Nov", "value": 91 },
-      { "date": "Dec", "value": 92 },
-      { "date": "Jan", "value": 92 },
-      { "date": "Feb", "value": 92 },
-      { "date": "Mar", "value": 92 }
-    ],
-    "termLength": 4,
-    "raceDesc": "New Mexico hasn't elected a Republican governor since 2014.",
-    "kalshiDem": 0.92,
-    "kalshiRep": 0.08,
-    "candidates": {
-      "dem": { "name": "Deb Haaland", "party": "D", "incumbent": false },
-      "rep": { "name": "Gregg Hull", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Michelle Lujan Grisham",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 51.97, "repPct": 45.59, "demCandidate": "Michelle Lujan Grisham", "repCandidate": "Mark Ronchetti", "demVotes": 370168, "repVotes": 324701, "margin": -6.38, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 57.2, "repPct": 42.8, "demCandidate": "Michelle Lujan Grisham", "repCandidate": "Steve Pearce", "demVotes": 398368, "repVotes": 298091, "margin": -14.4, "electionType": "Regular" },
-      { "year": 2014, "demPct": 42.78, "repPct": 57.22, "demCandidate": "Gary King", "repCandidate": "Susana Martinez", "demVotes": 219362, "repVotes": 293443, "margin": 14.44, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "CT",
-    "name": "Connecticut",
-    "state": "Connecticut",
-    "raceType": "governor",
-    "probability": 0.94,
-    "margin": -11,
-    "rating": "Likely D",
-    "history": [
-      { "date": "Sep", "value": 89 },
-      { "date": "Oct", "value": 91 },
-      { "date": "Nov", "value": 93 },
-      { "date": "Dec", "value": 94 },
-      { "date": "Jan", "value": 94 },
-      { "date": "Feb", "value": 94 },
-      { "date": "Mar", "value": 94 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Ned Lamont is running for a third term.",
-    "kalshiDem": 0.94,
-    "kalshiRep": 0.06,
-    "candidates": {
-      "dem": { "name": "Ned Lamont", "party": "D", "incumbent": true },
-      "rep": { "name": "Ryan Fazio", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Ned Lamont",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 55.97, "repPct": 43.05, "demCandidate": "Ned Lamont", "repCandidate": "Bob Stefanowski", "demVotes": 710186, "repVotes": 546209, "margin": -12.92, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 49.37, "repPct": 46.21, "demCandidate": "Ned Lamont", "repCandidate": "Bob Stefanowski", "demVotes": 694510, "repVotes": 650138, "margin": -3.16, "electionType": "Regular" },
-      { "year": 2014, "demPct": 50.73, "repPct": 48.16, "demCandidate": "Dannel Malloy", "repCandidate": "Thomas C. Foley", "demVotes": 554314, "repVotes": 526295, "margin": -2.57, "electionType": "Regular", "demIncumbent": true }
-    ]
-  },
-  {
-    "id": "ME",
-    "name": "Maine",
-    "state": "Maine",
-    "raceType": "governor",
-    "probability": 0.87,
-    "margin": -10,
-    "rating": "Likely D",
-    "history": [
-      { "date": "Sep", "value": 82 },
-      { "date": "Oct", "value": 84 },
-      { "date": "Nov", "value": 86 },
-      { "date": "Dec", "value": 87 },
-      { "date": "Jan", "value": 87 },
-      { "date": "Feb", "value": 87 },
-      { "date": "Mar", "value": 87 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Maine is a reliably Democrat state although it currenlty has one Republican senator.",
-    "kalshiDem": 0.87,
-    "kalshiRep": 0.13,
-    "candidates": {
-      "dem": { "name": "Hannah Pingree", "party": "D", "incumbent": false },
-      "rep": { "name": "Robert Charles", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Janet Mills",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 55.69, "repPct": 42.45, "demCandidate": "Janet Mills", "repCandidate": "Paul LePage", "demVotes": 376934, "repVotes": 287304, "margin": -13.24, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 50.89, "repPct": 43.18, "demCandidate": "Janet Mills", "repCandidate": "Shawn Moody", "demVotes": 320962, "repVotes": 272311, "margin": -7.71, "electionType": "Regular" },
-      { "year": 2014, "demPct": 43.37, "repPct": 48.19, "demCandidate": "Mike Michaud", "repCandidate": "Paul LePage", "demVotes": 265114, "repVotes": 294519, "margin": 4.82, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "OR",
-    "name": "Oregon",
-    "state": "Oregon",
-    "raceType": "governor",
-    "probability": 0.88,
-    "margin": -9,
-    "rating": "Likely D",
-    "history": [
-      { "date": "Sep", "value": 83 },
-      { "date": "Oct", "value": 85 },
-      { "date": "Nov", "value": 87 },
-      { "date": "Dec", "value": 88 },
-      { "date": "Jan", "value": 88 },
-      { "date": "Feb", "value": 88 },
-      { "date": "Mar", "value": 88 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Tina Kotek is running for a second full term.",
-    "kalshiDem": 0.88,
-    "kalshiRep": 0.12,
-    "candidates": {
-      "dem": { "name": "Tina Kotek", "party": "D", "incumbent": true },
-      "rep": { "name": "Christine Drazan", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Tina Kotek",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 46.96, "repPct": 43.54, "demCandidate": "Tina Kotek", "repCandidate": "Christine Drazan", "demVotes": 917074, "repVotes": 850347, "margin": -3.42, "electionType": "Regular" },
-      { "year": 2018, "demPct": 50.05, "repPct": 43.65, "demCandidate": "Kate Brown", "repCandidate": "Knute Buehler", "demVotes": 934498, "repVotes": 814988, "margin": -6.4, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2016, "demPct": 50.6, "repPct": 43.5, "demCandidate": "Kate Brown", "repCandidate": "Bud Pierce", "demVotes": 985027, "repVotes": 845609, "margin": -7.1, "electionType": "Special", "demIncumbent": true }
-    ]
-  },
-  {
-    "id": "MI",
-    "name": "Michigan",
-    "state": "Michigan",
-    "raceType": "governor",
-    "probability": 0.61,
-    "margin": -5,
-    "rating": "Likely D",
-    "history": [
-      { "date": "Sep", "value": 56 },
-      { "date": "Oct", "value": 58 },
-      { "date": "Nov", "value": 60 },
-      { "date": "Dec", "value": 61 },
-      { "date": "Jan", "value": 61 },
-      { "date": "Feb", "value": 61 },
-      { "date": "Mar", "value": 61 }
-    ],
-    "termLength": 4,
-    "raceDesc": "This race is unique as it features a decently strong Independent Candidate in former Detroit Mayor Mike Duggan.",
-    "kalshiDem": 0.61,
-    "kalshiRep": 0.39,
-    "candidates": {
-      "dem": { "name": "Jocelyn Benson", "party": "D", "incumbent": false },
-      "rep": { "name": "John James", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Gretchen Whitmer",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 54.47, "repPct": 43.94, "demCandidate": "Gretchen Whitmer", "repCandidate": "Tudor Dixon", "demVotes": 2430505, "repVotes": 1960635, "margin": -10.53, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 53.31, "repPct": 43.75, "demCandidate": "Gretchen Whitmer", "repCandidate": "Bill Schuette", "demVotes": 2266193, "repVotes": 1859534, "margin": -9.56, "electionType": "Regular" },
-      { "year": 2014, "demPct": 46.86, "repPct": 50.92, "demCandidate": "Mark Schauer", "repCandidate": "Rick Snyder", "demVotes": 1479057, "repVotes": 1607399, "margin": 4.06, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "AZ",
-    "name": "Arizona",
-    "state": "Arizona",
-    "raceType": "governor",
-    "probability": 0.71,
-    "margin": -3,
-    "rating": "Lean D",
-    "history": [
-      { "date": "Sep", "value": 66 },
-      { "date": "Oct", "value": 68 },
-      { "date": "Nov", "value": 70 },
-      { "date": "Dec", "value": 71 },
-      { "date": "Jan", "value": 71 },
-      { "date": "Feb", "value": 71 },
-      { "date": "Mar", "value": 71 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Katie Hubbs is running for a second term in a state that Trump won back in 2024.",
-    "kalshiDem": 0.71,
-    "kalshiRep": 0.29,
-    "candidates": {
-      "dem": { "name": "Katie Hobbs", "party": "D", "incumbent": true },
-      "rep": { "name": "Andy Biggs", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Katie Hobbs",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 50.32, "repPct": 49.65, "demCandidate": "Katie Hobbs", "repCandidate": "Kari Lake", "demVotes": 1287891, "repVotes": 1270774, "margin": -0.67, "electionType": "Regular" },
-      { "year": 2018, "demPct": 41.84, "repPct": 56, "demCandidate": "David Garcia", "repCandidate": "Doug Ducey", "demVotes": 994341, "repVotes": 1330863, "margin": 14.16, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2014, "demPct": 41.62, "repPct": 53.44, "demCandidate": "Fred DuVal", "repCandidate": "Doug Ducey", "demVotes": 626921, "repVotes": 805062, "margin": 11.82, "electionType": "Regular" }
-    ]
-  },
-  {
-    "id": "WI",
-    "name": "Wisconsin",
-    "state": "Wisconsin",
-    "raceType": "governor",
-    "probability": 0.75,
-    "margin": -2,
-    "rating": "Lean D",
-    "history": [
-      { "date": "Sep", "value": 70 },
-      { "date": "Oct", "value": 72 },
-      { "date": "Nov", "value": 74 },
-      { "date": "Dec", "value": 75 },
-      { "date": "Jan", "value": 75 },
-      { "date": "Feb", "value": 75 },
-      { "date": "Mar", "value": 75 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Wisconsin has an open race which will be closely watched after incumbent Governor Tony Evers decided not to run for re-election.",
-    "kalshiDem": 0.75,
-    "kalshiRep": 0.25,
-    "candidates": {
-      "dem": { "name": "Mandela Barnes", "party": "D", "incumbent": false },
-      "rep": { "name": "Tom Tiffany", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Tony Evers",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 51.15, "repPct": 47.75, "demCandidate": "Tony Evers", "repCandidate": "Tim Michels", "demVotes": 1358774, "repVotes": 1268535, "margin": -3.4, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 49.54, "repPct": 48.44, "demCandidate": "Tony Evers", "repCandidate": "Scott Walker", "demVotes": 1324307, "repVotes": 1295080, "margin": -1.1, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2014, "demPct": 46.59, "repPct": 52.26, "demCandidate": "Mary Burke", "repCandidate": "Scott Walker", "demVotes": 1122913, "repVotes": 1259706, "margin": 5.67, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "OH",
-    "name": "Ohio",
-    "state": "Ohio",
-    "raceType": "governor",
-    "probability": 0.54,
-    "margin": -1,
-    "rating": "Lean D",
-    "history": [
-      { "date": "Sep", "value": 49 },
-      { "date": "Oct", "value": 51 },
-      { "date": "Nov", "value": 53 },
-      { "date": "Dec", "value": 54 },
-      { "date": "Jan", "value": 54 },
-      { "date": "Feb", "value": 54 },
-      { "date": "Mar", "value": 54 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Democrats have not won a gubernatorial election in Ohio since 2006 and have not won statewide since 2020.",
-    "kalshiDem": 0.54,
-    "kalshiRep": 0.46,
-    "rcpDem": 0.46299999999999997,
-    "rcpRep": 0.46,
-    "polyDem": 0.56,
-    "polyRep": 0.44,
-    "candidates": {
-      "dem": { "name": "Amy Acton", "party": "D", "incumbent": false },
-      "rep": { "name": "Vivek Ramaswamy", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Mike DeWine",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2022, "demPct": 37.38, "repPct": 62.41, "demCandidate": "Nan Whaley", "repCandidate": "Mike DeWine", "demVotes": 1545489, "repVotes": 2580424, "margin": 25.03, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2018, "demPct": 46.68, "repPct": 50.39, "demCandidate": "Richard Cordray", "repCandidate": "Mike DeWine", "demVotes": 2070046, "repVotes": 2235825, "margin": 3.71, "electionType": "Regular" },
-      { "year": 2014, "demPct": 33.03, "repPct": 63.64, "demCandidate": "Ed FitzGerald", "repCandidate": "John Kasich", "demVotes": 1009359, "repVotes": 1944848, "margin": 30.61, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "GA",
-    "name": "Georgia",
-    "state": "Georgia",
-    "raceType": "governor",
-    "probability": 0.55,
-    "margin": 1,
-    "rating": "Lean R",
-    "history": [
-      { "date": "Sep", "value": 50 },
-      { "date": "Oct", "value": 52 },
-      { "date": "Nov", "value": 54 },
-      { "date": "Dec", "value": 55 },
-      { "date": "Jan", "value": 55 },
-      { "date": "Feb", "value": 55 },
-      { "date": "Mar", "value": 55 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Democrats have not won a gubernatorial election in Georgia since 1998. This year might be their best shot yet to break that streak.",
-    "kalshiDem": 0.55,
-    "kalshiRep": 0.45,
-    "candidates": {
-      "dem": { "name": "Keisha Lance Bottoms", "party": "D", "incumbent": false },
-      "rep": { "name": "Rick Jackson", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Brian Kemp",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2022, "demPct": 45.88, "repPct": 53.41, "demCandidate": "Stacey Abrams", "repCandidate": "Brian Kemp", "demVotes": 1813673, "repVotes": 2111572, "margin": 7.53, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2018, "demPct": 48.83, "repPct": 50.22, "demCandidate": "Stacey Abrams", "repCandidate": "Brian Kemp", "demVotes": 1923685, "repVotes": 1978408, "margin": 1.39, "electionType": "Regular" },
-      { "year": 2014, "demPct": 44.88, "repPct": 52.74, "demCandidate": "Jason Carter", "repCandidate": "Nathan Deal", "demVotes": 1144794, "repVotes": 1345237, "margin": 7.86, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "IA",
-    "name": "Iowa",
-    "state": "Iowa",
-    "raceType": "governor",
-    "probability": 0.49,
-    "margin": 2,
-    "rating": "Lean R",
-    "history": [
-      { "date": "Sep", "value": 44 },
-      { "date": "Oct", "value": 46 },
-      { "date": "Nov", "value": 48 },
-      { "date": "Dec", "value": 49 },
-      { "date": "Jan", "value": 49 },
-      { "date": "Feb", "value": 49 },
-      { "date": "Mar", "value": 49 }
-    ],
-    "termLength": 4,
-    "raceDesc": "This is surprisingly the first open seat gubernatorial election in the state since 2006, which as also the last gubernatorial election in Iowa won by a Democrat.",
-    "kalshiDem": 0.49,
-    "kalshiRep": 0.51,
-    "candidates": {
-      "dem": { "name": "Rob Sand", "party": "D", "incumbent": false },
-      "rep": { "name": "Randy Feenstra", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Kim Reynolds",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2022, "demPct": 39.53, "repPct": 58.04, "demCandidate": "Deidre DeJear", "repCandidate": "Kim Reynolds", "demVotes": 482950, "repVotes": 709198, "margin": 18.51, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2018, "demPct": 47.53, "repPct": 50.26, "demCandidate": "Fred Hubbell", "repCandidate": "Kim Reynolds", "demVotes": 630986, "repVotes": 667275, "margin": 2.73, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2014, "demPct": 37.27, "repPct": 58.99, "demCandidate": "Jack Hatch", "repCandidate": "Terry Branstad", "demVotes": 420787, "repVotes": 666032, "margin": 21.72, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "NV",
-    "name": "Nevada",
-    "state": "Nevada",
-    "raceType": "governor",
-    "probability": 0.49,
-    "margin": 3,
-    "rating": "Lean R",
-    "history": [
-      { "date": "Sep", "value": 44 },
-      { "date": "Oct", "value": 46 },
-      { "date": "Nov", "value": 48 },
-      { "date": "Dec", "value": 49 },
-      { "date": "Jan", "value": 49 },
-      { "date": "Feb", "value": 49 },
-      { "date": "Mar", "value": 49 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Joe Lombardo is running for re-election to a second term in office in this swing state.",
-    "kalshiDem": 0.49,
-    "kalshiRep": 0.51,
-    "candidates": {
-      "dem": { "name": "Aaron Ford", "party": "D", "incumbent": false },
-      "rep": { "name": "Joe Lombardo", "party": "R", "incumbent": true }
-    },
-    "seatHolder": "Joe Lombardo",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2022, "demPct": 47.3, "repPct": 48.81, "demCandidate": "Steve Sisolak", "repCandidate": "Joe Lombardo", "demVotes": 481991, "repVotes": 497377, "margin": 1.51, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 49.39, "repPct": 45.31, "demCandidate": "Steve Sisolak", "repCandidate": "Adam Laxalt", "demVotes": 480007, "repVotes": 440320, "margin": -4.08, "electionType": "Regular" },
-      { "year": 2014, "demPct": 23.88, "repPct": 70.58, "demCandidate": "Bob Goodman", "repCandidate": "Brian Sandoval", "demVotes": 130722, "repVotes": 386340, "margin": 46.7, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "FL",
-    "name": "Florida",
-    "state": "Florida",
-    "raceType": "governor",
-    "probability": 0.15,
-    "margin": 8,
-    "rating": "Likely R",
-    "history": [
-      { "date": "Sep", "value": 10 },
-      { "date": "Oct", "value": 12 },
-      { "date": "Nov", "value": 14 },
-      { "date": "Dec", "value": 15 },
-      { "date": "Jan", "value": 15 },
-      { "date": "Feb", "value": 15 },
-      { "date": "Mar", "value": 15 }
-    ],
-    "termLength": 4,
-    "raceDesc": "The race to succeed Incumbent Governor Ron DeSantis will be an interesting one in this once swing state now trending strongly towards Republicans.",
-    "kalshiDem": 0.15,
-    "kalshiRep": 0.85,
-    "candidates": {
-      "dem": { "name": "David Jolly", "party": "D", "incumbent": false },
-      "rep": { "name": "Byron Donalds", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Ron DeSantis",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2022, "demPct": 39.97, "repPct": 59.37, "demCandidate": "Charlie Crist", "repCandidate": "Ron DeSantis", "demVotes": 3106313, "repVotes": 4614210, "margin": 19.4, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2018, "demPct": 49.19, "repPct": 49.59, "demCandidate": "Andrew Gillum", "repCandidate": "Ron DeSantis", "demVotes": 4043723, "repVotes": 4076186, "margin": 0.4, "electionType": "Regular" },
-      { "year": 2014, "demPct": 47.07, "repPct": 48.14, "demCandidate": "Charlie Crist", "repCandidate": "Rick Scott", "demVotes": 2801198, "repVotes": 2865343, "margin": 1.07, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
     "id": "AK",
     "name": "Alaska",
     "state": "Alaska",
     "raceType": "governor",
-    "probability": 0.24,
-    "margin": 10,
-    "rating": "Likely R",
+    "probability": 0.4,
+    "margin": 4.2,
+    "rating": "Lean R",
     "history": [
-      { "date": "Sep", "value": 19 },
-      { "date": "Oct", "value": 21 },
-      { "date": "Nov", "value": 23 },
-      { "date": "Dec", "value": 24 },
-      { "date": "Jan", "value": 24 },
-      { "date": "Feb", "value": 24 },
-      { "date": "Mar", "value": 24 }
+      { "date": "Sep", "value": 35 },
+      { "date": "Oct", "value": 37 },
+      { "date": "Nov", "value": 39 },
+      { "date": "Dec", "value": 40 },
+      { "date": "Jan", "value": 40 },
+      { "date": "Feb", "value": 40 },
+      { "date": "Mar", "value": 40 }
     ],
     "termLength": 4,
     "raceDesc": "Alaska has a very interesting race with Democrat Tom Begich, part of a well known family in Alaska, running for governor in this open seat.",
-    "kalshiDem": 0.24,
-    "kalshiRep": 0.76,
+    "kalshiDem": 0.4,
+    "kalshiRep": 0.6,
     "candidates": {
-      "dem": { "name": "Nick Begich", "party": "D", "incumbent": false },
+      "dem": { "name": "Tom Begich", "party": "D", "incumbent": false },
       "rep": { "name": "Dave Bronson", "party": "R", "incumbent": false }
     },
     "seatHolder": "Mike Dunleavy",
@@ -2805,243 +2075,12 @@ export const governorData: RaceForecast[] = [
     ]
   },
   {
-    "id": "KS",
-    "name": "Kansas",
-    "state": "Kansas",
-    "raceType": "governor",
-    "probability": 0.29,
-    "margin": 10,
-    "rating": "Likely R",
-    "history": [
-      { "date": "Sep", "value": 24 },
-      { "date": "Oct", "value": 26 },
-      { "date": "Nov", "value": 28 },
-      { "date": "Dec", "value": 29 },
-      { "date": "Jan", "value": 29 },
-      { "date": "Feb", "value": 29 },
-      { "date": "Mar", "value": 29 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Democrat Governor Laura Kelly is term limited in this typically Republican state.",
-    "kalshiDem": 0.29,
-    "kalshiRep": 0.71,
-    "candidates": {
-      "dem": { "name": "Ethan Corson", "party": "D", "incumbent": false },
-      "rep": { "name": "Jeff Colyer", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Laura Kelly",
-    "seatParty": "D",
-    "pastResults": [
-      { "year": 2022, "demPct": 49.54, "repPct": 47.33, "demCandidate": "Laura Kelly", "repCandidate": "Derek Schmidt", "demVotes": 499849, "repVotes": 477591, "margin": -2.21, "electionType": "Regular", "demIncumbent": true },
-      { "year": 2018, "demPct": 48.01, "repPct": 42.98, "demCandidate": "Laura Kelly", "repCandidate": "Kris Kobach", "demVotes": 506727, "repVotes": 453645, "margin": -5.03, "electionType": "Regular" },
-      { "year": 2014, "demPct": 46.13, "repPct": 49.82, "demCandidate": "Paul Davis", "repCandidate": "Sam Brownback", "demVotes": 401100, "repVotes": 433196, "margin": 3.69, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "NH",
-    "name": "New Hampshire",
-    "state": "New Hampshire",
-    "raceType": "governor",
-    "probability": 0.29,
-    "margin": 10,
-    "rating": "Likely R",
-    "history": [
-      { "date": "Sep", "value": 24 },
-      { "date": "Oct", "value": 26 },
-      { "date": "Nov", "value": 28 },
-      { "date": "Dec", "value": 29 },
-      { "date": "Jan", "value": 29 },
-      { "date": "Feb", "value": 29 },
-      { "date": "Mar", "value": 29 }
-    ],
-    "termLength": 2,
-    "raceDesc": "This is one of two Republican-held governorships up for election in a state that Kamala Harris won in the 2024 Presidential Election.",
-    "kalshiDem": 0.29,
-    "kalshiRep": 0.71,
-    "candidates": {
-      "dem": { "name": "Cinde Warmington", "party": "D", "incumbent": false },
-      "rep": { "name": "Kelly Ayotte", "party": "R", "incumbent": true }
-    },
-    "seatHolder": "Kelly Ayotte",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2024, "demPct": 44.27, "repPct": 53.61, "demCandidate": "Joyce Craig", "repCandidate": "Kelly Ayotte", "demVotes": 360149, "repVotes": 436122, "margin": 9.34, "electionType": "Regular" },
-      { "year": 2022, "demPct": 41.47, "repPct": 56.98, "demCandidate": "Tom Sherman", "repCandidate": "Chris Sununu", "demVotes": 256766, "repVotes": 352813, "margin": 15.51, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2020, "demPct": 33.36, "repPct": 65.12, "demCandidate": "Dan Feltes", "repCandidate": "Chris Sununu", "demVotes": 264639, "repVotes": 516609, "margin": 31.76, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "TX",
-    "name": "Texas",
-    "state": "Texas",
-    "raceType": "governor",
-    "probability": 0.18,
-    "margin": 12,
-    "rating": "Likely R",
-    "history": [
-      { "date": "Sep", "value": 13 },
-      { "date": "Oct", "value": 15 },
-      { "date": "Nov", "value": 17 },
-      { "date": "Dec", "value": 18 },
-      { "date": "Jan", "value": 18 },
-      { "date": "Feb", "value": 18 },
-      { "date": "Mar", "value": 18 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Greg Abbott is running for a fourth term.",
-    "kalshiDem": 0.18,
-    "kalshiRep": 0.82,
-    "candidates": {
-      "dem": { "name": "Gina Hinojosa", "party": "D", "incumbent": false },
-      "rep": { "name": "Greg Abbott", "party": "R", "incumbent": true }
-    },
-    "seatHolder": "Greg Abbott",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2022, "demPct": 43.86, "repPct": 54.76, "demCandidate": "Beto O’Rourke", "repCandidate": "Greg Abbott", "demVotes": 3553656, "repVotes": 4437099, "margin": 10.9, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2018, "demPct": 42.51, "repPct": 55.81, "demCandidate": "Lupe Valdez", "repCandidate": "Greg Abbott", "demVotes": 3546615, "repVotes": 4656196, "margin": 13.3, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2014, "demPct": 38.9, "repPct": 59.27, "demCandidate": "Wendy Davis", "repCandidate": "Greg Abbott", "demVotes": 1835596, "repVotes": 2796547, "margin": 20.37, "electionType": "Regular" }
-    ]
-  },
-  {
-    "id": "OK",
-    "name": "Oklahoma",
-    "state": "Oklahoma",
-    "raceType": "governor",
-    "probability": 0.11,
-    "margin": 13,
-    "rating": "Likely R",
-    "history": [
-      { "date": "Sep", "value": 6 },
-      { "date": "Oct", "value": 8 },
-      { "date": "Nov", "value": 10 },
-      { "date": "Dec", "value": 11 },
-      { "date": "Jan", "value": 11 },
-      { "date": "Feb", "value": 11 },
-      { "date": "Mar", "value": 11 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Oklahoma is a deeply red state where Democrats have not won statewide since 2006.",
-    "kalshiDem": 0.11,
-    "kalshiRep": 0.89,
-    "candidates": {
-      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
-      "rep": { "name": "Genter Drummond", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Kevin Stitt",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2022, "demPct": 41.79, "repPct": 55.45, "demCandidate": "Joy Hofmeister", "repCandidate": "Kevin Stitt", "demVotes": 481904, "repVotes": 639484, "margin": 13.66, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2018, "demPct": 42.23, "repPct": 54.33, "demCandidate": "Drew Edmondson", "repCandidate": "Kevin Stitt", "demVotes": 500973, "repVotes": 644579, "margin": 12.1, "electionType": "Regular" },
-      { "year": 2014, "demPct": 41.01, "repPct": 55.8, "demCandidate": "Joe Dorman", "repCandidate": "Mary Fallin", "demVotes": 338239, "repVotes": 460298, "margin": 14.79, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "NE",
-    "name": "Nebraska",
-    "state": "Nebraska",
-    "raceType": "governor",
-    "probability": 0.1,
-    "margin": 15,
-    "rating": "Likely R",
-    "history": [
-      { "date": "Sep", "value": 5 },
-      { "date": "Oct", "value": 7 },
-      { "date": "Nov", "value": 9 },
-      { "date": "Dec", "value": 10 },
-      { "date": "Jan", "value": 10 },
-      { "date": "Feb", "value": 10 },
-      { "date": "Mar", "value": 10 }
-    ],
-    "termLength": 4,
-    "raceDesc": "Incumbent Governor Jim Pillen is seeking re-eleciton to a second term. Democrats have not won a gubernatorial election in Nebraska since 1994.",
-    "kalshiDem": 0.1,
-    "kalshiRep": 0.9,
-    "candidates": {
-      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
-      "rep": { "name": "Jim Pillen", "party": "R", "incumbent": true }
-    },
-    "seatHolder": "Jim Pillen",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2022, "demPct": 36.29, "repPct": 59.74, "demCandidate": "Carol Blood", "repCandidate": "Jim Pillen", "demVotes": 242006, "repVotes": 398334, "margin": 23.45, "electionType": "Regular" },
-      { "year": 2018, "demPct": 41, "repPct": 59, "demCandidate": "Bob Krist", "repCandidate": "Pete Ricketts", "demVotes": 286169, "repVotes": 411812, "margin": 18, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2014, "demPct": 39.23, "repPct": 57.15, "demCandidate": "Chuck Hassebrook", "repCandidate": "Pete Ricketts", "demVotes": 211905, "repVotes": 308751, "margin": 17.92, "electionType": "Regular" }
-    ]
-  },
-  {
-    "id": "SC",
-    "name": "South Carolina",
-    "state": "South Carolina",
-    "raceType": "governor",
-    "probability": 0.05,
-    "margin": 15,
-    "rating": "Likely R",
-    "history": [
-      { "date": "Sep", "value": 1 },
-      { "date": "Oct", "value": 2 },
-      { "date": "Nov", "value": 4 },
-      { "date": "Dec", "value": 5 },
-      { "date": "Jan", "value": 5 },
-      { "date": "Feb", "value": 5 },
-      { "date": "Mar", "value": 5 }
-    ],
-    "termLength": 4,
-    "raceDesc": "South Carolina has an open seat. Democrats have not won a gubernatorial election here since 1998.",
-    "kalshiDem": 0.05,
-    "kalshiRep": 0.95,
-    "candidates": {
-      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
-      "rep": { "name": "Pamela Evette", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Henry McMaster",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2022, "demPct": 40.67, "repPct": 58.04, "demCandidate": "Joe Cunningham", "repCandidate": "Henry McMaster", "demVotes": 692691, "repVotes": 988501, "margin": 17.37, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2018, "demPct": 45.92, "repPct": 53.96, "demCandidate": "James Smith", "repCandidate": "Henry McMaster", "demVotes": 784182, "repVotes": 921342, "margin": 8.04, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2014, "demPct": 41.42, "repPct": 55.9, "demCandidate": "Vincent Sheheen", "repCandidate": "Nikki Haley", "demVotes": 516166, "repVotes": 696645, "margin": 14.48, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
-    "id": "TN",
-    "name": "Tennessee",
-    "state": "Tennessee",
-    "raceType": "governor",
-    "probability": 0.05,
-    "margin": 15,
-    "rating": "Likely R",
-    "history": [
-      { "date": "Sep", "value": 1 },
-      { "date": "Oct", "value": 2 },
-      { "date": "Nov", "value": 4 },
-      { "date": "Dec", "value": 5 },
-      { "date": "Jan", "value": 5 },
-      { "date": "Feb", "value": 5 },
-      { "date": "Mar", "value": 5 }
-    ],
-    "termLength": 4,
-    "raceDesc": "This deep red state has an open governor seat. Democrats have not won a statewide election in Tennessee since 2006.",
-    "kalshiDem": 0.05,
-    "kalshiRep": 0.95,
-    "candidates": {
-      "dem": { "name": "Jerri Green", "party": "D", "incumbent": false },
-      "rep": { "name": "Marsha Blackburn", "party": "R", "incumbent": false }
-    },
-    "seatHolder": "Bill Lee",
-    "seatParty": "R",
-    "pastResults": [
-      { "year": 2022, "demPct": 32.92, "repPct": 64.91, "demCandidate": "Jason Martin", "repCandidate": "Bill Lee", "demVotes": 572818, "repVotes": 1129390, "margin": 31.99, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2018, "demPct": 38.55, "repPct": 59.56, "demCandidate": "Karl Dean", "repCandidate": "Bill Lee", "demVotes": 864863, "repVotes": 1336106, "margin": 21.01, "electionType": "Regular" },
-      { "year": 2014, "demPct": 22.84, "repPct": 70.31, "demCandidate": "Charles Brown", "repCandidate": "Bill Haslam", "demVotes": 309237, "repVotes": 951796, "margin": 47.47, "electionType": "Regular", "repIncumbent": true }
-    ]
-  },
-  {
     "id": "AL",
     "name": "Alabama",
     "state": "Alabama",
     "raceType": "governor",
     "probability": 0.06,
-    "margin": 25,
+    "margin": 18.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3074,7 +2113,7 @@ export const governorData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "governor",
     "probability": 0.06,
-    "margin": 25,
+    "margin": 18.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3089,6 +2128,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Incumbent Governor Sarah Huckabee Sanders is seeking re-election to a second term.",
     "kalshiDem": 0.06,
     "kalshiRep": 0.94,
+    "polyDem": 0.6,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Fredrick Love", "party": "D", "incumbent": false },
       "rep": { "name": "Sarah Huckabee Sanders", "party": "R", "incumbent": true }
@@ -3102,12 +2143,909 @@ export const governorData: RaceForecast[] = [
     ]
   },
   {
+    "id": "AZ",
+    "name": "Arizona",
+    "state": "Arizona",
+    "raceType": "governor",
+    "probability": 0.71,
+    "margin": -8.8,
+    "rating": "Likely D",
+    "history": [
+      { "date": "Sep", "value": 66 },
+      { "date": "Oct", "value": 68 },
+      { "date": "Nov", "value": 70 },
+      { "date": "Dec", "value": 71 },
+      { "date": "Jan", "value": 71 },
+      { "date": "Feb", "value": 71 },
+      { "date": "Mar", "value": 71 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Katie Hubbs is running for a second term in a state that Trump won back in 2024.",
+    "kalshiDem": 0.71,
+    "kalshiRep": 0.29,
+    "candidates": {
+      "dem": { "name": "Katie Hobbs", "party": "D", "incumbent": true },
+      "rep": { "name": "Andy Biggs", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Katie Hobbs",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 50.32, "repPct": 49.65, "demCandidate": "Katie Hobbs", "repCandidate": "Kari Lake", "demVotes": 1287891, "repVotes": 1270774, "margin": -0.67, "electionType": "Regular" },
+      { "year": 2018, "demPct": 41.84, "repPct": 56, "demCandidate": "David Garcia", "repCandidate": "Doug Ducey", "demVotes": 994341, "repVotes": 1330863, "margin": 14.16, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2014, "demPct": 41.62, "repPct": 53.44, "demCandidate": "Fred DuVal", "repCandidate": "Doug Ducey", "demVotes": 626921, "repVotes": 805062, "margin": 11.82, "electionType": "Regular" }
+    ]
+  },
+  {
+    "id": "CA",
+    "name": "California",
+    "state": "California",
+    "raceType": "governor",
+    "probability": 0.86,
+    "margin": -15.1,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 81 },
+      { "date": "Oct", "value": 83 },
+      { "date": "Nov", "value": 85 },
+      { "date": "Dec", "value": 86 },
+      { "date": "Jan", "value": 86 },
+      { "date": "Feb", "value": 86 },
+      { "date": "Mar", "value": 86 }
+    ],
+    "termLength": 4,
+    "raceDesc": "California hasn't elected a Republican for Governor since Arnold Schwarzenegger in 2006.",
+    "kalshiDem": 0.86,
+    "kalshiRep": 0.14,
+    "candidates": {
+      "dem": { "name": "Xavier Becerra", "party": "D", "incumbent": false },
+      "rep": { "name": "Steve Hilton", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Gavin Newsom",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 59.18, "repPct": 40.82, "demCandidate": "Gavin Newsom", "repCandidate": "Brian Dahle", "demVotes": 6470104, "repVotes": 4462914, "margin": -18.36, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 61.95, "repPct": 38.05, "demCandidate": "Gavin Newsom", "repCandidate": "John H. Cox", "demVotes": 7721410, "repVotes": 4742825, "margin": -23.9, "electionType": "Regular" },
+      { "year": 2014, "demPct": 59.97, "repPct": 40.03, "demCandidate": "Jerry Brown", "repCandidate": "Neel Kashkari", "demVotes": 4388368, "repVotes": 2929213, "margin": -19.94, "electionType": "Regular", "demIncumbent": true }
+    ]
+  },
+  {
+    "id": "CO",
+    "name": "Colorado",
+    "state": "Colorado",
+    "raceType": "governor",
+    "probability": 0.91,
+    "margin": -17.2,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 86 },
+      { "date": "Oct", "value": 88 },
+      { "date": "Nov", "value": 90 },
+      { "date": "Dec", "value": 91 },
+      { "date": "Jan", "value": 91 },
+      { "date": "Feb", "value": 91 },
+      { "date": "Mar", "value": 91 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Colorado is a reliable Democrat state and Republicans have not won a gubernatorial election in Colorado since Bill Owens was re-elected in 2002.",
+    "kalshiDem": 0.91,
+    "kalshiRep": 0.09,
+    "candidates": {
+      "dem": { "name": "Michael Bennet", "party": "D", "incumbent": false },
+      "rep": { "name": "Barbara Kirkmeyer", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Jared Polis",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 58.53, "repPct": 39.18, "demCandidate": "Jared Polis", "repCandidate": "Heidi Ganahl", "demVotes": 1468481, "repVotes": 983040, "margin": -19.35, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 53.42, "repPct": 42.8, "demCandidate": "Jared Polis", "repCandidate": "Walker Stapleton", "demVotes": 1348888, "repVotes": 1080801, "margin": -10.62, "electionType": "Regular" },
+      { "year": 2014, "demPct": 49.3, "repPct": 45.95, "demCandidate": "John Hickenlooper", "repCandidate": "Bob Beauprez", "demVotes": 1006433, "repVotes": 938195, "margin": -3.35, "electionType": "Regular", "demIncumbent": true }
+    ]
+  },
+  {
+    "id": "CT",
+    "name": "Connecticut",
+    "state": "Connecticut",
+    "raceType": "governor",
+    "probability": 0.94,
+    "margin": -18.5,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 89 },
+      { "date": "Oct", "value": 91 },
+      { "date": "Nov", "value": 93 },
+      { "date": "Dec", "value": 94 },
+      { "date": "Jan", "value": 94 },
+      { "date": "Feb", "value": 94 },
+      { "date": "Mar", "value": 94 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Ned Lamont is running for a third term.",
+    "kalshiDem": 0.94,
+    "kalshiRep": 0.06,
+    "candidates": {
+      "dem": { "name": "Ned Lamont", "party": "D", "incumbent": true },
+      "rep": { "name": "Ryan Fazio", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Ned Lamont",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 55.97, "repPct": 43.05, "demCandidate": "Ned Lamont", "repCandidate": "Bob Stefanowski", "demVotes": 710186, "repVotes": 546209, "margin": -12.92, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 49.37, "repPct": 46.21, "demCandidate": "Ned Lamont", "repCandidate": "Bob Stefanowski", "demVotes": 694510, "repVotes": 650138, "margin": -3.16, "electionType": "Regular" },
+      { "year": 2014, "demPct": 50.73, "repPct": 48.16, "demCandidate": "Dannel Malloy", "repCandidate": "Thomas C. Foley", "demVotes": 554314, "repVotes": 526295, "margin": -2.57, "electionType": "Regular", "demIncumbent": true }
+    ]
+  },
+  {
+    "id": "FL",
+    "name": "Florida",
+    "state": "Florida",
+    "raceType": "governor",
+    "probability": 0.15,
+    "margin": 14.7,
+    "rating": "Likely R",
+    "history": [
+      { "date": "Sep", "value": 10 },
+      { "date": "Oct", "value": 12 },
+      { "date": "Nov", "value": 14 },
+      { "date": "Dec", "value": 15 },
+      { "date": "Jan", "value": 15 },
+      { "date": "Feb", "value": 15 },
+      { "date": "Mar", "value": 15 }
+    ],
+    "termLength": 4,
+    "raceDesc": "The race to succeed Incumbent Governor Ron DeSantis will be an interesting one in this once swing state now trending strongly towards Republicans.",
+    "kalshiDem": 0.15,
+    "kalshiRep": 0.85,
+    "candidates": {
+      "dem": { "name": "David Jolly", "party": "D", "incumbent": false },
+      "rep": { "name": "Byron Donalds", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Ron DeSantis",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 39.97, "repPct": 59.37, "demCandidate": "Charlie Crist", "repCandidate": "Ron DeSantis", "demVotes": 3106313, "repVotes": 4614210, "margin": 19.4, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2018, "demPct": 49.19, "repPct": 49.59, "demCandidate": "Andrew Gillum", "repCandidate": "Ron DeSantis", "demVotes": 4043723, "repVotes": 4076186, "margin": 0.4, "electionType": "Regular" },
+      { "year": 2014, "demPct": 47.07, "repPct": 48.14, "demCandidate": "Charlie Crist", "repCandidate": "Rick Scott", "demVotes": 2801198, "repVotes": 2865343, "margin": 1.07, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "GA",
+    "name": "Georgia",
+    "state": "Georgia",
+    "raceType": "governor",
+    "probability": 0.55,
+    "margin": -2.1,
+    "rating": "Lean D",
+    "history": [
+      { "date": "Sep", "value": 50 },
+      { "date": "Oct", "value": 52 },
+      { "date": "Nov", "value": 54 },
+      { "date": "Dec", "value": 55 },
+      { "date": "Jan", "value": 55 },
+      { "date": "Feb", "value": 55 },
+      { "date": "Mar", "value": 55 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Democrats have not won a gubernatorial election in Georgia since 1998. This year might be their best shot yet to break that streak.",
+    "kalshiDem": 0.55,
+    "kalshiRep": 0.45,
+    "candidates": {
+      "dem": { "name": "Keisha Lance Bottoms", "party": "D", "incumbent": false },
+      "rep": { "name": "Rick Jackson", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Brian Kemp",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 45.88, "repPct": 53.41, "demCandidate": "Stacey Abrams", "repCandidate": "Brian Kemp", "demVotes": 1813673, "repVotes": 2111572, "margin": 7.53, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2018, "demPct": 48.83, "repPct": 50.22, "demCandidate": "Stacey Abrams", "repCandidate": "Brian Kemp", "demVotes": 1923685, "repVotes": 1978408, "margin": 1.39, "electionType": "Regular" },
+      { "year": 2014, "demPct": 44.88, "repPct": 52.74, "demCandidate": "Jason Carter", "repCandidate": "Nathan Deal", "demVotes": 1144794, "repVotes": 1345237, "margin": 7.86, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "HI",
+    "name": "Hawaii",
+    "state": "Hawaii",
+    "raceType": "governor",
+    "probability": 0.94,
+    "margin": -18.5,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 89 },
+      { "date": "Oct", "value": 91 },
+      { "date": "Nov", "value": 93 },
+      { "date": "Dec", "value": 94 },
+      { "date": "Jan", "value": 94 },
+      { "date": "Feb", "value": 94 },
+      { "date": "Mar", "value": 94 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Republicans have not won a gubernatorial eelction in Hawaii since Linda Lingle was re-elected in 2006.",
+    "kalshiDem": 0.94,
+    "kalshiRep": 0.06,
+    "candidates": {
+      "dem": { "name": "Josh Green", "party": "D", "incumbent": true },
+      "rep": { "name": "Republican Candidate", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Josh Green",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 63.21, "repPct": 36.79, "demCandidate": "Josh Green", "repCandidate": "Duke Aiona", "demVotes": 259901, "repVotes": 151258, "margin": -26.42, "electionType": "Regular" },
+      { "year": 2018, "demPct": 62.67, "repPct": 33.7, "demCandidate": "David Ige", "repCandidate": "Andria Tupola", "demVotes": 244934, "repVotes": 131719, "margin": -28.97, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2014, "demPct": 49.45, "repPct": 37.08, "demCandidate": "David Ige", "repCandidate": "Duke Aiona", "demVotes": 181106, "repVotes": 135775, "margin": -12.37, "electionType": "Regular" }
+    ]
+  },
+  {
+    "id": "IA",
+    "name": "Iowa",
+    "state": "Iowa",
+    "raceType": "governor",
+    "probability": 0.49,
+    "margin": 0.4,
+    "rating": "Tilt R",
+    "history": [
+      { "date": "Sep", "value": 44 },
+      { "date": "Oct", "value": 46 },
+      { "date": "Nov", "value": 48 },
+      { "date": "Dec", "value": 49 },
+      { "date": "Jan", "value": 49 },
+      { "date": "Feb", "value": 49 },
+      { "date": "Mar", "value": 49 }
+    ],
+    "termLength": 4,
+    "raceDesc": "This is surprisingly the first open seat gubernatorial election in the state since 2006, which as also the last gubernatorial election in Iowa won by a Democrat.",
+    "kalshiDem": 0.49,
+    "kalshiRep": 0.51,
+    "candidates": {
+      "dem": { "name": "Rob Sand", "party": "D", "incumbent": false },
+      "rep": { "name": "Zach Lahn", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Kim Reynolds",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 39.53, "repPct": 58.04, "demCandidate": "Deidre DeJear", "repCandidate": "Kim Reynolds", "demVotes": 482950, "repVotes": 709198, "margin": 18.51, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2018, "demPct": 47.53, "repPct": 50.26, "demCandidate": "Fred Hubbell", "repCandidate": "Kim Reynolds", "demVotes": 630986, "repVotes": 667275, "margin": 2.73, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2014, "demPct": 37.27, "repPct": 58.99, "demCandidate": "Jack Hatch", "repCandidate": "Terry Branstad", "demVotes": 420787, "repVotes": 666032, "margin": 21.72, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "ID",
+    "name": "Idaho",
+    "state": "Idaho",
+    "raceType": "governor",
+    "probability": 0.07,
+    "margin": 18.1,
+    "rating": "Safe R",
+    "history": [
+      { "date": "Sep", "value": 2 },
+      { "date": "Oct", "value": 4 },
+      { "date": "Nov", "value": 6 },
+      { "date": "Dec", "value": 7 },
+      { "date": "Jan", "value": 7 },
+      { "date": "Feb", "value": 7 },
+      { "date": "Mar", "value": 7 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Brad Little is running for a third term. Democrats have not won the governership here since 1990.",
+    "kalshiDem": 0.07,
+    "kalshiRep": 0.93,
+    "candidates": {
+      "dem": { "name": "Terri Pickens", "party": "D", "incumbent": false },
+      "rep": { "name": "Brad Little", "party": "R", "incumbent": true }
+    },
+    "seatHolder": "Brad Little",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 20.28, "repPct": 60.52, "demCandidate": "Stephen Heidt", "repCandidate": "Brad Little", "demVotes": 120160, "repVotes": 358598, "margin": 40.24, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2018, "demPct": 38.19, "repPct": 59.76, "demCandidate": "Paulette Jordan", "repCandidate": "Brad Little", "demVotes": 231081, "repVotes": 361661, "margin": 21.57, "electionType": "Regular" },
+      { "year": 2014, "demPct": 38.55, "repPct": 53.52, "demCandidate": "A.J. Balukoff", "repCandidate": "Butch Otter", "demVotes": 169556, "repVotes": 235405, "margin": 14.97, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "IL",
+    "name": "Illinois",
+    "state": "Illinois",
+    "raceType": "governor",
+    "probability": 0.91,
+    "margin": -17.2,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 86 },
+      { "date": "Oct", "value": 88 },
+      { "date": "Nov", "value": 90 },
+      { "date": "Dec", "value": 91 },
+      { "date": "Jan", "value": 91 },
+      { "date": "Feb", "value": 91 },
+      { "date": "Mar", "value": 91 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor JB Pritzker is running for a third term.",
+    "kalshiDem": 0.91,
+    "kalshiRep": 0.09,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
+    "candidates": {
+      "dem": { "name": "JB Pritzker", "party": "D", "incumbent": true },
+      "rep": { "name": "Darren Bailey", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "JB Pritzker",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 54.91, "repPct": 42.37, "demCandidate": "J.B. Pritzker", "repCandidate": "Darren Bailey", "demVotes": 2253748, "repVotes": 1739095, "margin": -12.54, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 54.53, "repPct": 38.83, "demCandidate": "J.B. Pritzker", "repCandidate": "Bruce Rauner", "demVotes": 2479746, "repVotes": 1765751, "margin": -15.7, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2014, "demPct": 46.35, "repPct": 50.27, "demCandidate": "Pat Quinn", "repCandidate": "Bruce Rauner", "demVotes": 1681343, "repVotes": 1823627, "margin": 3.92, "electionType": "Regular", "demIncumbent": true }
+    ]
+  },
+  {
+    "id": "KS",
+    "name": "Kansas",
+    "state": "Kansas",
+    "raceType": "governor",
+    "probability": 0.29,
+    "margin": 8.8,
+    "rating": "Likely R",
+    "history": [
+      { "date": "Sep", "value": 24 },
+      { "date": "Oct", "value": 26 },
+      { "date": "Nov", "value": 28 },
+      { "date": "Dec", "value": 29 },
+      { "date": "Jan", "value": 29 },
+      { "date": "Feb", "value": 29 },
+      { "date": "Mar", "value": 29 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Democrat Governor Laura Kelly is term limited in this typically Republican state.",
+    "kalshiDem": 0.29,
+    "kalshiRep": 0.71,
+    "candidates": {
+      "dem": { "name": "Ethan Corson", "party": "D", "incumbent": false },
+      "rep": { "name": "Jeff Colyer", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Laura Kelly",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 49.54, "repPct": 47.33, "demCandidate": "Laura Kelly", "repCandidate": "Derek Schmidt", "demVotes": 499849, "repVotes": 477591, "margin": -2.21, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 48.01, "repPct": 42.98, "demCandidate": "Laura Kelly", "repCandidate": "Kris Kobach", "demVotes": 506727, "repVotes": 453645, "margin": -5.03, "electionType": "Regular" },
+      { "year": 2014, "demPct": 46.13, "repPct": 49.82, "demCandidate": "Paul Davis", "repCandidate": "Sam Brownback", "demVotes": 401100, "repVotes": 433196, "margin": 3.69, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "MA",
+    "name": "Massachusetts",
+    "state": "Massachusetts",
+    "raceType": "governor",
+    "probability": 0.92,
+    "margin": -17.6,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 87 },
+      { "date": "Oct", "value": 89 },
+      { "date": "Nov", "value": 91 },
+      { "date": "Dec", "value": 92 },
+      { "date": "Jan", "value": 92 },
+      { "date": "Feb", "value": 92 },
+      { "date": "Mar", "value": 92 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Maura Healey is running for a second term.",
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.08,
+    "candidates": {
+      "dem": { "name": "Maura Healey", "party": "D", "incumbent": true },
+      "rep": { "name": "Brian Shortsleeve", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Maura Healey",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 63.74, "repPct": 34.57, "demCandidate": "Maura Healey", "repCandidate": "Geoff Diehl", "demVotes": 1584403, "repVotes": 859343, "margin": -29.17, "electionType": "Regular" },
+      { "year": 2018, "demPct": 33.12, "repPct": 66.6, "demCandidate": "Jay Gonzalez", "repCandidate": "Charlie Baker", "demVotes": 885770, "repVotes": 1781341, "margin": 33.48, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2014, "demPct": 46.54, "repPct": 48.39, "demCandidate": "Martha Coakley", "repCandidate": "Charlie Baker", "demVotes": 1004408, "repVotes": 1044573, "margin": 1.85, "electionType": "Regular" }
+    ]
+  },
+  {
+    "id": "MD",
+    "name": "Maryland",
+    "state": "Maryland",
+    "raceType": "governor",
+    "probability": 0.94,
+    "margin": -18.5,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 89 },
+      { "date": "Oct", "value": 91 },
+      { "date": "Nov", "value": 93 },
+      { "date": "Dec", "value": 94 },
+      { "date": "Jan", "value": 94 },
+      { "date": "Feb", "value": 94 },
+      { "date": "Mar", "value": 94 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Wes Moore is running for a second term.",
+    "kalshiDem": 0.94,
+    "kalshiRep": 0.06,
+    "candidates": {
+      "dem": { "name": "Wes Moore", "party": "D", "incumbent": true },
+      "rep": { "name": "Dan Cox", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Wes Moore",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 64.53, "repPct": 32.12, "demCandidate": "Wes Moore", "repCandidate": "Dan Cox", "demVotes": 1293944, "repVotes": 644000, "margin": -32.41, "electionType": "Regular" },
+      { "year": 2018, "demPct": 43.51, "repPct": 55.35, "demCandidate": "Ben Jealous", "repCandidate": "Larry Hogan", "demVotes": 1002639, "repVotes": 1275644, "margin": 11.84, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2014, "demPct": 47.25, "repPct": 51.03, "demCandidate": "Anthony Brown", "repCandidate": "Larry Hogan", "demVotes": 818890, "repVotes": 884400, "margin": 3.78, "electionType": "Regular" }
+    ]
+  },
+  {
+    "id": "ME",
+    "name": "Maine",
+    "state": "Maine",
+    "raceType": "governor",
+    "probability": 0.87,
+    "margin": -15.5,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 82 },
+      { "date": "Oct", "value": 84 },
+      { "date": "Nov", "value": 86 },
+      { "date": "Dec", "value": 87 },
+      { "date": "Jan", "value": 87 },
+      { "date": "Feb", "value": 87 },
+      { "date": "Mar", "value": 87 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Maine is a reliably Democrat state although it currenlty has one Republican senator.",
+    "kalshiDem": 0.87,
+    "kalshiRep": 0.13,
+    "candidates": {
+      "dem": { "name": "Hannah Pingree", "party": "D", "incumbent": false },
+      "rep": { "name": "Robert Charles", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Janet Mills",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 55.69, "repPct": 42.45, "demCandidate": "Janet Mills", "repCandidate": "Paul LePage", "demVotes": 376934, "repVotes": 287304, "margin": -13.24, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 50.89, "repPct": 43.18, "demCandidate": "Janet Mills", "repCandidate": "Shawn Moody", "demVotes": 320962, "repVotes": 272311, "margin": -7.71, "electionType": "Regular" },
+      { "year": 2014, "demPct": 43.37, "repPct": 48.19, "demCandidate": "Mike Michaud", "repCandidate": "Paul LePage", "demVotes": 265114, "repVotes": 294519, "margin": 4.82, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "MI",
+    "name": "Michigan",
+    "state": "Michigan",
+    "raceType": "governor",
+    "probability": 0.61,
+    "margin": -4.6,
+    "rating": "Lean D",
+    "history": [
+      { "date": "Sep", "value": 56 },
+      { "date": "Oct", "value": 58 },
+      { "date": "Nov", "value": 60 },
+      { "date": "Dec", "value": 61 },
+      { "date": "Jan", "value": 61 },
+      { "date": "Feb", "value": 61 },
+      { "date": "Mar", "value": 61 }
+    ],
+    "termLength": 4,
+    "raceDesc": "This race is unique as it features a decently strong Independent Candidate in former Detroit Mayor Mike Duggan.",
+    "kalshiDem": 0.61,
+    "kalshiRep": 0.39,
+    "candidates": {
+      "dem": { "name": "Jocelyn Benson", "party": "D", "incumbent": false },
+      "rep": { "name": "John James", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Gretchen Whitmer",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 54.47, "repPct": 43.94, "demCandidate": "Gretchen Whitmer", "repCandidate": "Tudor Dixon", "demVotes": 2430505, "repVotes": 1960635, "margin": -10.53, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 53.31, "repPct": 43.75, "demCandidate": "Gretchen Whitmer", "repCandidate": "Bill Schuette", "demVotes": 2266193, "repVotes": 1859534, "margin": -9.56, "electionType": "Regular" },
+      { "year": 2014, "demPct": 46.86, "repPct": 50.92, "demCandidate": "Mark Schauer", "repCandidate": "Rick Snyder", "demVotes": 1479057, "repVotes": 1607399, "margin": 4.06, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "MN",
+    "name": "Minnesota",
+    "state": "Minnesota",
+    "raceType": "governor",
+    "probability": 0.91,
+    "margin": -17.2,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 86 },
+      { "date": "Oct", "value": 88 },
+      { "date": "Nov", "value": 90 },
+      { "date": "Dec", "value": 91 },
+      { "date": "Jan", "value": 91 },
+      { "date": "Feb", "value": 91 },
+      { "date": "Mar", "value": 91 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Tim Walz is not running for re-election, leaving the seat an open race in this reliably Democrat state.",
+    "kalshiDem": 0.91,
+    "kalshiRep": 0.09,
+    "candidates": {
+      "dem": { "name": "Amy Klobuchar", "party": "D", "incumbent": false },
+      "rep": { "name": "Lisa Demuth", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Tim Walz",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 52.27, "repPct": 44.61, "demCandidate": "Tim Walz", "repCandidate": "Scott Jensen", "demVotes": 1312349, "repVotes": 1119941, "margin": -7.66, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 53.84, "repPct": 42.43, "demCandidate": "Tim Walz", "repCandidate": "Jeff Johnson", "demVotes": 1393096, "repVotes": 1097705, "margin": -11.41, "electionType": "Regular" },
+      { "year": 2014, "demPct": 50.07, "repPct": 44.51, "demCandidate": "Mark Dayton", "repCandidate": "Jeff Johnson", "demVotes": 989113, "repVotes": 879257, "margin": -5.56, "electionType": "Regular", "demIncumbent": true }
+    ]
+  },
+  {
+    "id": "NE",
+    "name": "Nebraska",
+    "state": "Nebraska",
+    "raceType": "governor",
+    "probability": 0.1,
+    "margin": 16.8,
+    "rating": "Safe R",
+    "history": [
+      { "date": "Sep", "value": 5 },
+      { "date": "Oct", "value": 7 },
+      { "date": "Nov", "value": 9 },
+      { "date": "Dec", "value": 10 },
+      { "date": "Jan", "value": 10 },
+      { "date": "Feb", "value": 10 },
+      { "date": "Mar", "value": 10 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Jim Pillen is seeking re-eleciton to a second term. Democrats have not won a gubernatorial election in Nebraska since 1994.",
+    "kalshiDem": 0.1,
+    "kalshiRep": 0.9,
+    "candidates": {
+      "dem": { "name": "Lynne Walz", "party": "D", "incumbent": false },
+      "rep": { "name": "Jim Pillen", "party": "R", "incumbent": true }
+    },
+    "seatHolder": "Jim Pillen",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 36.29, "repPct": 59.74, "demCandidate": "Carol Blood", "repCandidate": "Jim Pillen", "demVotes": 242006, "repVotes": 398334, "margin": 23.45, "electionType": "Regular" },
+      { "year": 2018, "demPct": 41, "repPct": 59, "demCandidate": "Bob Krist", "repCandidate": "Pete Ricketts", "demVotes": 286169, "repVotes": 411812, "margin": 18, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2014, "demPct": 39.23, "repPct": 57.15, "demCandidate": "Chuck Hassebrook", "repCandidate": "Pete Ricketts", "demVotes": 211905, "repVotes": 308751, "margin": 17.92, "electionType": "Regular" }
+    ]
+  },
+  {
+    "id": "NH",
+    "name": "New Hampshire",
+    "state": "New Hampshire",
+    "raceType": "governor",
+    "probability": 0.29,
+    "margin": 8.8,
+    "rating": "Likely R",
+    "history": [
+      { "date": "Sep", "value": 24 },
+      { "date": "Oct", "value": 26 },
+      { "date": "Nov", "value": 28 },
+      { "date": "Dec", "value": 29 },
+      { "date": "Jan", "value": 29 },
+      { "date": "Feb", "value": 29 },
+      { "date": "Mar", "value": 29 }
+    ],
+    "termLength": 2,
+    "raceDesc": "This is one of two Republican-held governorships up for election in a state that Kamala Harris won in the 2024 Presidential Election.",
+    "kalshiDem": 0.29,
+    "kalshiRep": 0.71,
+    "candidates": {
+      "dem": { "name": "Cinde Warmington", "party": "D", "incumbent": false },
+      "rep": { "name": "Kelly Ayotte", "party": "R", "incumbent": true }
+    },
+    "seatHolder": "Kelly Ayotte",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2024, "demPct": 44.27, "repPct": 53.61, "demCandidate": "Joyce Craig", "repCandidate": "Kelly Ayotte", "demVotes": 360149, "repVotes": 436122, "margin": 9.34, "electionType": "Regular" },
+      { "year": 2022, "demPct": 41.47, "repPct": 56.98, "demCandidate": "Tom Sherman", "repCandidate": "Chris Sununu", "demVotes": 256766, "repVotes": 352813, "margin": 15.51, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2020, "demPct": 33.36, "repPct": 65.12, "demCandidate": "Dan Feltes", "repCandidate": "Chris Sununu", "demVotes": 264639, "repVotes": 516609, "margin": 31.76, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "NM",
+    "name": "New Mexico",
+    "state": "New Mexico",
+    "raceType": "governor",
+    "probability": 0.92,
+    "margin": -17.6,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 87 },
+      { "date": "Oct", "value": 89 },
+      { "date": "Nov", "value": 91 },
+      { "date": "Dec", "value": 92 },
+      { "date": "Jan", "value": 92 },
+      { "date": "Feb", "value": 92 },
+      { "date": "Mar", "value": 92 }
+    ],
+    "termLength": 4,
+    "raceDesc": "New Mexico hasn't elected a Republican governor since 2014.",
+    "kalshiDem": 0.92,
+    "kalshiRep": 0.08,
+    "candidates": {
+      "dem": { "name": "Deb Haaland", "party": "D", "incumbent": false },
+      "rep": { "name": "Gregg Hull", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Michelle Lujan Grisham",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 51.97, "repPct": 45.59, "demCandidate": "Michelle Lujan Grisham", "repCandidate": "Mark Ronchetti", "demVotes": 370168, "repVotes": 324701, "margin": -6.38, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 57.2, "repPct": 42.8, "demCandidate": "Michelle Lujan Grisham", "repCandidate": "Steve Pearce", "demVotes": 398368, "repVotes": 298091, "margin": -14.4, "electionType": "Regular" },
+      { "year": 2014, "demPct": 42.78, "repPct": 57.22, "demCandidate": "Gary King", "repCandidate": "Susana Martinez", "demVotes": 219362, "repVotes": 293443, "margin": 14.44, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "NV",
+    "name": "Nevada",
+    "state": "Nevada",
+    "raceType": "governor",
+    "probability": 0.49,
+    "margin": 0.4,
+    "rating": "Tilt R",
+    "history": [
+      { "date": "Sep", "value": 44 },
+      { "date": "Oct", "value": 46 },
+      { "date": "Nov", "value": 48 },
+      { "date": "Dec", "value": 49 },
+      { "date": "Jan", "value": 49 },
+      { "date": "Feb", "value": 49 },
+      { "date": "Mar", "value": 49 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Joe Lombardo is running for re-election to a second term in office in this swing state.",
+    "kalshiDem": 0.49,
+    "kalshiRep": 0.51,
+    "candidates": {
+      "dem": { "name": "Aaron Ford", "party": "D", "incumbent": false },
+      "rep": { "name": "Joe Lombardo", "party": "R", "incumbent": true }
+    },
+    "seatHolder": "Joe Lombardo",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 47.3, "repPct": 48.81, "demCandidate": "Steve Sisolak", "repCandidate": "Joe Lombardo", "demVotes": 481991, "repVotes": 497377, "margin": 1.51, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 49.39, "repPct": 45.31, "demCandidate": "Steve Sisolak", "repCandidate": "Adam Laxalt", "demVotes": 480007, "repVotes": 440320, "margin": -4.08, "electionType": "Regular" },
+      { "year": 2014, "demPct": 23.88, "repPct": 70.58, "demCandidate": "Bob Goodman", "repCandidate": "Brian Sandoval", "demVotes": 130722, "repVotes": 386340, "margin": 46.7, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "NY",
+    "name": "New York",
+    "state": "New York",
+    "raceType": "governor",
+    "probability": 0.89,
+    "margin": -16.4,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 84 },
+      { "date": "Oct", "value": 86 },
+      { "date": "Nov", "value": 88 },
+      { "date": "Dec", "value": 89 },
+      { "date": "Jan", "value": 89 },
+      { "date": "Feb", "value": 89 },
+      { "date": "Mar", "value": 89 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Kathy Hochul is running for her second full term. Hochul took office after her predecessor Andrew Cuomo resigned in 2021.",
+    "kalshiDem": 0.89,
+    "kalshiRep": 0.11,
+    "candidates": {
+      "dem": { "name": "Kathy Hochul", "party": "D", "incumbent": true },
+      "rep": { "name": "Bruce Blakeman", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Kathy Hochul",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 53.2, "repPct": 46.8, "demCandidate": "Kathy Hochul", "repCandidate": "Lee Zeldin", "demVotes": 3140415, "repVotes": 2762581, "margin": -6.4, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 59.62, "repPct": 36.21, "demCandidate": "Andrew Cuomo", "repCandidate": "Marc Molinaro", "demVotes": 3635340, "repVotes": 2207602, "margin": -23.41, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2014, "demPct": 54.28, "repPct": 40.31, "demCandidate": "Andrew Cuomo", "repCandidate": "Rob Astorino", "demVotes": 2069480, "repVotes": 1537077, "margin": -13.97, "electionType": "Regular", "demIncumbent": true }
+    ]
+  },
+  {
+    "id": "OH",
+    "name": "Ohio",
+    "state": "Ohio",
+    "raceType": "governor",
+    "probability": 0.54,
+    "margin": -1.7,
+    "rating": "Lean D",
+    "history": [
+      { "date": "Sep", "value": 49 },
+      { "date": "Oct", "value": 51 },
+      { "date": "Nov", "value": 53 },
+      { "date": "Dec", "value": 54 },
+      { "date": "Jan", "value": 54 },
+      { "date": "Feb", "value": 54 },
+      { "date": "Mar", "value": 54 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Democrats have not won a gubernatorial election in Ohio since 2006 and have not won statewide since 2020.",
+    "kalshiDem": 0.54,
+    "kalshiRep": 0.46,
+    "rcpDem": 0.46299999999999997,
+    "rcpRep": 0.46,
+    "polyDem": 0.56,
+    "polyRep": 0.44,
+    "candidates": {
+      "dem": { "name": "Amy Acton", "party": "D", "incumbent": false },
+      "rep": { "name": "Vivek Ramaswamy", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Mike DeWine",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 37.38, "repPct": 62.41, "demCandidate": "Nan Whaley", "repCandidate": "Mike DeWine", "demVotes": 1545489, "repVotes": 2580424, "margin": 25.03, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2018, "demPct": 46.68, "repPct": 50.39, "demCandidate": "Richard Cordray", "repCandidate": "Mike DeWine", "demVotes": 2070046, "repVotes": 2235825, "margin": 3.71, "electionType": "Regular" },
+      { "year": 2014, "demPct": 33.03, "repPct": 63.64, "demCandidate": "Ed FitzGerald", "repCandidate": "John Kasich", "demVotes": 1009359, "repVotes": 1944848, "margin": 30.61, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "OK",
+    "name": "Oklahoma",
+    "state": "Oklahoma",
+    "raceType": "governor",
+    "probability": 0.11,
+    "margin": 16.4,
+    "rating": "Safe R",
+    "history": [
+      { "date": "Sep", "value": 6 },
+      { "date": "Oct", "value": 8 },
+      { "date": "Nov", "value": 10 },
+      { "date": "Dec", "value": 11 },
+      { "date": "Jan", "value": 11 },
+      { "date": "Feb", "value": 11 },
+      { "date": "Mar", "value": 11 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Oklahoma is a deeply red state where Democrats have not won statewide since 2006.",
+    "kalshiDem": 0.11,
+    "kalshiRep": 0.89,
+    "candidates": {
+      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
+      "rep": { "name": "Genter Drummond", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Kevin Stitt",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 41.79, "repPct": 55.45, "demCandidate": "Joy Hofmeister", "repCandidate": "Kevin Stitt", "demVotes": 481904, "repVotes": 639484, "margin": 13.66, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2018, "demPct": 42.23, "repPct": 54.33, "demCandidate": "Drew Edmondson", "repCandidate": "Kevin Stitt", "demVotes": 500973, "repVotes": 644579, "margin": 12.1, "electionType": "Regular" },
+      { "year": 2014, "demPct": 41.01, "repPct": 55.8, "demCandidate": "Joe Dorman", "repCandidate": "Mary Fallin", "demVotes": 338239, "repVotes": 460298, "margin": 14.79, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "OR",
+    "name": "Oregon",
+    "state": "Oregon",
+    "raceType": "governor",
+    "probability": 0.88,
+    "margin": -16,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 83 },
+      { "date": "Oct", "value": 85 },
+      { "date": "Nov", "value": 87 },
+      { "date": "Dec", "value": 88 },
+      { "date": "Jan", "value": 88 },
+      { "date": "Feb", "value": 88 },
+      { "date": "Mar", "value": 88 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Tina Kotek is running for a second full term.",
+    "kalshiDem": 0.88,
+    "kalshiRep": 0.12,
+    "candidates": {
+      "dem": { "name": "Tina Kotek", "party": "D", "incumbent": true },
+      "rep": { "name": "Christine Drazan", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Tina Kotek",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 46.96, "repPct": 43.54, "demCandidate": "Tina Kotek", "repCandidate": "Christine Drazan", "demVotes": 917074, "repVotes": 850347, "margin": -3.42, "electionType": "Regular" },
+      { "year": 2018, "demPct": 50.05, "repPct": 43.65, "demCandidate": "Kate Brown", "repCandidate": "Knute Buehler", "demVotes": 934498, "repVotes": 814988, "margin": -6.4, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2016, "demPct": 50.6, "repPct": 43.5, "demCandidate": "Kate Brown", "repCandidate": "Bud Pierce", "demVotes": 985027, "repVotes": 845609, "margin": -7.1, "electionType": "Special", "demIncumbent": true }
+    ]
+  },
+  {
+    "id": "PA",
+    "name": "Pennsylvania",
+    "state": "Pennsylvania",
+    "raceType": "governor",
+    "probability": 0.96,
+    "margin": -19.3,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 91 },
+      { "date": "Oct", "value": 93 },
+      { "date": "Nov", "value": 95 },
+      { "date": "Dec", "value": 96 },
+      { "date": "Jan", "value": 96 },
+      { "date": "Feb", "value": 96 },
+      { "date": "Mar", "value": 96 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Josh Shapiro is running for a second term.",
+    "kalshiDem": 0.96,
+    "kalshiRep": 0.04,
+    "candidates": {
+      "dem": { "name": "Josh Shapiro", "party": "D", "incumbent": true },
+      "rep": { "name": "Stacy Garrity", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Josh Shapiro",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 56.49, "repPct": 41.71, "demCandidate": "Josh Shapiro", "repCandidate": "Doug Mastriano", "demVotes": 3031137, "repVotes": 2238477, "margin": -14.78, "electionType": "Regular" },
+      { "year": 2018, "demPct": 57.77, "repPct": 40.7, "demCandidate": "Tom Wolf", "repCandidate": "Scott Wagner", "demVotes": 2895652, "repVotes": 2039882, "margin": -17.07, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2014, "demPct": 54.93, "repPct": 45.07, "demCandidate": "Tom Wolf", "repCandidate": "Tom Corbett", "demVotes": 1920355, "repVotes": 1575511, "margin": -9.86, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "RI",
+    "name": "Rhode Island",
+    "state": "Rhode Island",
+    "raceType": "governor",
+    "probability": 0.93,
+    "margin": -18.1,
+    "rating": "Safe D",
+    "history": [
+      { "date": "Sep", "value": 88 },
+      { "date": "Oct", "value": 90 },
+      { "date": "Nov", "value": 92 },
+      { "date": "Dec", "value": 93 },
+      { "date": "Jan", "value": 93 },
+      { "date": "Feb", "value": 93 },
+      { "date": "Mar", "value": 93 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Dan McKee is running for a second full term in office. McKee became governor in 2021 upon the resignation of Gina Raimondo.",
+    "kalshiDem": 0.93,
+    "kalshiRep": 0.07,
+    "candidates": {
+      "dem": { "name": "Dan McKee", "party": "D", "incumbent": true },
+      "rep": { "name": "Aaron Guckian", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Dan McKee",
+    "seatParty": "D",
+    "pastResults": [
+      { "year": 2022, "demPct": 57.92, "repPct": 38.86, "demCandidate": "Dan McKee", "repCandidate": "Ashley Kalus", "demVotes": 207166, "repVotes": 139001, "margin": -19.06, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 52.64, "repPct": 37.18, "demCandidate": "Gina Raimondo", "repCandidate": "Allan Fung", "demVotes": 198122, "repVotes": 139932, "margin": -15.46, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2014, "demPct": 40.7, "repPct": 36.24, "demCandidate": "Gina Raimondo", "repCandidate": "Allan Fung", "demVotes": 131899, "repVotes": 117428, "margin": -4.46, "electionType": "Regular" }
+    ]
+  },
+  {
+    "id": "SC",
+    "name": "South Carolina",
+    "state": "South Carolina",
+    "raceType": "governor",
+    "probability": 0.05,
+    "margin": 18.9,
+    "rating": "Safe R",
+    "history": [
+      { "date": "Sep", "value": 1 },
+      { "date": "Oct", "value": 2 },
+      { "date": "Nov", "value": 4 },
+      { "date": "Dec", "value": 5 },
+      { "date": "Jan", "value": 5 },
+      { "date": "Feb", "value": 5 },
+      { "date": "Mar", "value": 5 }
+    ],
+    "termLength": 4,
+    "raceDesc": "South Carolina has an open seat. Democrats have not won a gubernatorial election here since 1998.",
+    "kalshiDem": 0.05,
+    "kalshiRep": 0.95,
+    "candidates": {
+      "dem": { "name": "Jermaine Johnson", "party": "D", "incumbent": false },
+      "rep": { "name": "Alan Wilson", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Henry McMaster",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 40.67, "repPct": 58.04, "demCandidate": "Joe Cunningham", "repCandidate": "Henry McMaster", "demVotes": 692691, "repVotes": 988501, "margin": 17.37, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2018, "demPct": 45.92, "repPct": 53.96, "demCandidate": "James Smith", "repCandidate": "Henry McMaster", "demVotes": 784182, "repVotes": 921342, "margin": 8.04, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2014, "demPct": 41.42, "repPct": 55.9, "demCandidate": "Vincent Sheheen", "repCandidate": "Nikki Haley", "demVotes": 516166, "repVotes": 696645, "margin": 14.48, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
     "id": "SD",
     "name": "South Dakota",
     "state": "South Dakota",
     "raceType": "governor",
     "probability": 0.04,
-    "margin": 25,
+    "margin": 19.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3135,13 +3073,79 @@ export const governorData: RaceForecast[] = [
     ]
   },
   {
+    "id": "TN",
+    "name": "Tennessee",
+    "state": "Tennessee",
+    "raceType": "governor",
+    "probability": 0.05,
+    "margin": 18.9,
+    "rating": "Safe R",
+    "history": [
+      { "date": "Sep", "value": 1 },
+      { "date": "Oct", "value": 2 },
+      { "date": "Nov", "value": 4 },
+      { "date": "Dec", "value": 5 },
+      { "date": "Jan", "value": 5 },
+      { "date": "Feb", "value": 5 },
+      { "date": "Mar", "value": 5 }
+    ],
+    "termLength": 4,
+    "raceDesc": "This deep red state has an open governor seat. Democrats have not won a statewide election in Tennessee since 2006.",
+    "kalshiDem": 0.05,
+    "kalshiRep": 0.95,
+    "candidates": {
+      "dem": { "name": "Jerri Green", "party": "D", "incumbent": false },
+      "rep": { "name": "Marsha Blackburn", "party": "R", "incumbent": false }
+    },
+    "seatHolder": "Bill Lee",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 32.92, "repPct": 64.91, "demCandidate": "Jason Martin", "repCandidate": "Bill Lee", "demVotes": 572818, "repVotes": 1129390, "margin": 31.99, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2018, "demPct": 38.55, "repPct": 59.56, "demCandidate": "Karl Dean", "repCandidate": "Bill Lee", "demVotes": 864863, "repVotes": 1336106, "margin": 21.01, "electionType": "Regular" },
+      { "year": 2014, "demPct": 22.84, "repPct": 70.31, "demCandidate": "Charles Brown", "repCandidate": "Bill Haslam", "demVotes": 309237, "repVotes": 951796, "margin": 47.47, "electionType": "Regular", "repIncumbent": true }
+    ]
+  },
+  {
+    "id": "TX",
+    "name": "Texas",
+    "state": "Texas",
+    "raceType": "governor",
+    "probability": 0.18,
+    "margin": 13.4,
+    "rating": "Likely R",
+    "history": [
+      { "date": "Sep", "value": 13 },
+      { "date": "Oct", "value": 15 },
+      { "date": "Nov", "value": 17 },
+      { "date": "Dec", "value": 18 },
+      { "date": "Jan", "value": 18 },
+      { "date": "Feb", "value": 18 },
+      { "date": "Mar", "value": 18 }
+    ],
+    "termLength": 4,
+    "raceDesc": "Incumbent Governor Greg Abbott is running for a fourth term.",
+    "kalshiDem": 0.18,
+    "kalshiRep": 0.82,
+    "candidates": {
+      "dem": { "name": "Gina Hinojosa", "party": "D", "incumbent": false },
+      "rep": { "name": "Greg Abbott", "party": "R", "incumbent": true }
+    },
+    "seatHolder": "Greg Abbott",
+    "seatParty": "R",
+    "pastResults": [
+      { "year": 2022, "demPct": 43.86, "repPct": 54.76, "demCandidate": "Beto O’Rourke", "repCandidate": "Greg Abbott", "demVotes": 3553656, "repVotes": 4437099, "margin": 10.9, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2018, "demPct": 42.51, "repPct": 55.81, "demCandidate": "Lupe Valdez", "repCandidate": "Greg Abbott", "demVotes": 3546615, "repVotes": 4656196, "margin": 13.3, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2014, "demPct": 38.9, "repPct": 59.27, "demCandidate": "Wendy Davis", "repCandidate": "Greg Abbott", "demVotes": 1835596, "repVotes": 2796547, "margin": 20.37, "electionType": "Regular" }
+    ]
+  },
+  {
     "id": "VT",
     "name": "Vermont",
     "state": "Vermont",
     "raceType": "governor",
     "probability": 0.25,
-    "margin": 25,
-    "rating": "Safe R",
+    "margin": 10.5,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 20 },
       { "date": "Oct", "value": 22 },
@@ -3168,36 +3172,36 @@ export const governorData: RaceForecast[] = [
     ]
   },
   {
-    "id": "ID",
-    "name": "Idaho",
-    "state": "Idaho",
+    "id": "WI",
+    "name": "Wisconsin",
+    "state": "Wisconsin",
     "raceType": "governor",
-    "probability": 0.07,
-    "margin": 30,
-    "rating": "Safe R",
+    "probability": 0.75,
+    "margin": -10.5,
+    "rating": "Likely D",
     "history": [
-      { "date": "Sep", "value": 2 },
-      { "date": "Oct", "value": 4 },
-      { "date": "Nov", "value": 6 },
-      { "date": "Dec", "value": 7 },
-      { "date": "Jan", "value": 7 },
-      { "date": "Feb", "value": 7 },
-      { "date": "Mar", "value": 7 }
+      { "date": "Sep", "value": 70 },
+      { "date": "Oct", "value": 72 },
+      { "date": "Nov", "value": 74 },
+      { "date": "Dec", "value": 75 },
+      { "date": "Jan", "value": 75 },
+      { "date": "Feb", "value": 75 },
+      { "date": "Mar", "value": 75 }
     ],
     "termLength": 4,
-    "raceDesc": "Incumbent Governor Brad Little is running for a third term. Democrats have not won the governership here since 1990.",
-    "kalshiDem": 0.07,
-    "kalshiRep": 0.93,
+    "raceDesc": "Wisconsin has an open race which will be closely watched after incumbent Governor Tony Evers decided not to run for re-election.",
+    "kalshiDem": 0.75,
+    "kalshiRep": 0.25,
     "candidates": {
-      "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
-      "rep": { "name": "Brad Little", "party": "R", "incumbent": true }
+      "dem": { "name": "Mandela Barnes", "party": "D", "incumbent": false },
+      "rep": { "name": "Tom Tiffany", "party": "R", "incumbent": false }
     },
-    "seatHolder": "Brad Little",
-    "seatParty": "R",
+    "seatHolder": "Tony Evers",
+    "seatParty": "D",
     "pastResults": [
-      { "year": 2022, "demPct": 20.28, "repPct": 60.52, "demCandidate": "Stephen Heidt", "repCandidate": "Brad Little", "demVotes": 120160, "repVotes": 358598, "margin": 40.24, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2018, "demPct": 38.19, "repPct": 59.76, "demCandidate": "Paulette Jordan", "repCandidate": "Brad Little", "demVotes": 231081, "repVotes": 361661, "margin": 21.57, "electionType": "Regular" },
-      { "year": 2014, "demPct": 38.55, "repPct": 53.52, "demCandidate": "A.J. Balukoff", "repCandidate": "Butch Otter", "demVotes": 169556, "repVotes": 235405, "margin": 14.97, "electionType": "Regular", "repIncumbent": true }
+      { "year": 2022, "demPct": 51.15, "repPct": 47.75, "demCandidate": "Tony Evers", "repCandidate": "Tim Michels", "demVotes": 1358774, "repVotes": 1268535, "margin": -3.4, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2018, "demPct": 49.54, "repPct": 48.44, "demCandidate": "Tony Evers", "repCandidate": "Scott Walker", "demVotes": 1324307, "repVotes": 1295080, "margin": -1.1, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2014, "demPct": 46.59, "repPct": 52.26, "demCandidate": "Mary Burke", "repCandidate": "Scott Walker", "demVotes": 1122913, "repVotes": 1259706, "margin": 5.67, "electionType": "Regular", "repIncumbent": true }
     ]
   },
   {
@@ -3206,7 +3210,7 @@ export const governorData: RaceForecast[] = [
     "state": "Wyoming",
     "raceType": "governor",
     "probability": 0.07,
-    "margin": 38,
+    "margin": 18.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -3427,7 +3431,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0,
-    "margin": 50.7,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3460,7 +3464,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0.95,
-    "margin": -17.3,
+    "margin": -18.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -3493,7 +3497,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0,
-    "margin": 48.8,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3526,7 +3530,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0,
-    "margin": 68.7,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3559,7 +3563,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 31.2,
+    "margin": 16.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -3592,7 +3596,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 0,
-    "margin": 36.2,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -3625,7 +3629,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alabama",
     "raceType": "house",
     "probability": 1,
-    "margin": -36,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -3658,7 +3662,7 @@ export const houseData: RaceForecast[] = [
     "state": "Alaska",
     "raceType": "house",
     "probability": 0.28,
-    "margin": 6.2,
+    "margin": 9.4,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 23 },
@@ -3689,7 +3693,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.59,
-    "margin": -2.4,
+    "margin": -3.7,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 54 },
@@ -3720,7 +3724,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.21,
-    "margin": 8.5,
+    "margin": 12.2,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 16 },
@@ -3751,7 +3755,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 1,
-    "margin": -51.1,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -3784,8 +3788,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.89,
-    "margin": -12.6,
-    "rating": "Likely D",
+    "margin": -16.2,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 84 },
       { "date": "Oct", "value": 86 },
@@ -3817,7 +3821,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.07,
-    "margin": 15.4,
+    "margin": 18.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -3850,7 +3854,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.62,
-    "margin": -3.1,
+    "margin": -4.9,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 57 },
@@ -3881,7 +3885,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 1,
-    "margin": -33.3,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -3914,8 +3918,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.12,
-    "margin": 12.5,
-    "rating": "Likely R",
+    "margin": 16.2,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 7 },
       { "date": "Oct", "value": 9 },
@@ -3947,8 +3951,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arizona",
     "raceType": "house",
     "probability": 0.6,
-    "margin": 26.1,
-    "rating": "Safe R",
+    "margin": -4.2,
+    "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 55 },
       { "date": "Oct", "value": 57 },
@@ -3980,7 +3984,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "probability": 0,
-    "margin": 44.1,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -4013,8 +4017,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 13.4,
-    "rating": "Likely R",
+    "margin": 16.8,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
       { "date": "Oct", "value": 7 },
@@ -4046,8 +4050,8 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "probability": 0.5,
-    "margin": 26.7,
-    "rating": "Safe R",
+    "margin": 0,
+    "rating": "Tilt R",
     "history": [
       { "date": "Sep", "value": 45 },
       { "date": "Oct", "value": 47 },
@@ -4079,7 +4083,7 @@ export const houseData: RaceForecast[] = [
     "state": "Arkansas",
     "raceType": "house",
     "probability": 0,
-    "margin": 39.9,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -4112,7 +4116,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.97,
-    "margin": -19.5,
+    "margin": -19.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -4145,7 +4149,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -32.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4178,8 +4182,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.92,
-    "margin": -14.9,
-    "rating": "Likely D",
+    "margin": -17.8,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 87 },
       { "date": "Oct", "value": 89 },
@@ -4209,7 +4213,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -24.3,
+    "margin": -20.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -4242,7 +4246,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.04,
-    "margin": 18,
+    "margin": 19.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -4275,8 +4279,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.89,
-    "margin": -12.9,
-    "rating": "Likely D",
+    "margin": -16.5,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 84 },
       { "date": "Oct", "value": 86 },
@@ -4308,7 +4312,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -22.5,
+    "margin": -20.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -4341,7 +4345,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -45,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4374,7 +4378,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -24.9,
+    "margin": -20.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -4405,7 +4409,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -40.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4438,7 +4442,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -80.2,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4471,7 +4475,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -92.5,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4504,8 +4508,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.88,
-    "margin": -12.4,
-    "rating": "Likely D",
+    "margin": -16,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 83 },
       { "date": "Oct", "value": 85 },
@@ -4535,7 +4539,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -44.1,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4568,7 +4572,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -58.2,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4601,7 +4605,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -65.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4634,7 +4638,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -50.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4667,7 +4671,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -40.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4700,7 +4704,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -45.5,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4733,7 +4737,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0,
-    "margin": 35.8,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -4766,7 +4770,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.93,
-    "margin": -15.7,
+    "margin": -18.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -4797,7 +4801,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.73,
-    "margin": -6.5,
+    "margin": -9.7,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 68 },
@@ -4828,7 +4832,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16.7,
+    "margin": 18.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -4861,7 +4865,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -33.3,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -4894,7 +4898,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.95,
-    "margin": -17.6,
+    "margin": -19.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -4927,7 +4931,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -20.6,
+    "margin": -20,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -4960,7 +4964,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.97,
-    "margin": -19,
+    "margin": -19.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -4991,7 +4995,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -34.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5024,7 +5028,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -47.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5057,7 +5061,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -48.3,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5090,7 +5094,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -21.1,
+    "margin": -20.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -5123,7 +5127,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -35.3,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5156,7 +5160,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -25,
+    "margin": -20.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5189,7 +5193,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -70.5,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5222,7 +5226,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -21,
+    "margin": -20.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -5255,7 +5259,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -47.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5288,7 +5292,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -79.7,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5321,7 +5325,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -24.8,
+    "margin": -20.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5354,7 +5358,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -22.1,
+    "margin": -20.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -5387,7 +5391,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.15,
-    "margin": 10,
+    "margin": 14.7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 10 },
@@ -5418,7 +5422,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -25.5,
+    "margin": -20.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5449,7 +5453,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -22.6,
+    "margin": -20.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5482,7 +5486,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -61.5,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5515,7 +5519,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -51.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5548,8 +5552,8 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.89,
-    "margin": -13,
-    "rating": "Likely D",
+    "margin": -16.5,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 84 },
       { "date": "Oct", "value": 86 },
@@ -5579,7 +5583,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -29.6,
+    "margin": -20.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5612,7 +5616,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.96,
-    "margin": -18.3,
+    "margin": -19.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -5643,7 +5647,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.81,
-    "margin": -9.1,
+    "margin": -12.9,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 76 },
@@ -5676,7 +5680,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.96,
-    "margin": -18.1,
+    "margin": -19.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -5707,7 +5711,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -25.6,
+    "margin": -20.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5740,7 +5744,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -26,
+    "margin": -20.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -5773,7 +5777,7 @@ export const houseData: RaceForecast[] = [
     "state": "California",
     "raceType": "house",
     "probability": 1,
-    "margin": -32.7,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5806,7 +5810,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 1,
-    "margin": -67.1,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5839,7 +5843,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 1,
-    "margin": -49.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -5872,8 +5876,8 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 0.37,
-    "margin": 3.4,
-    "rating": "Lean R",
+    "margin": 5.4,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 32 },
       { "date": "Oct", "value": 34 },
@@ -5903,7 +5907,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 0.18,
-    "margin": 9.7,
+    "margin": 13.6,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 13 },
@@ -5936,7 +5940,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 0.28,
-    "margin": 6.2,
+    "margin": 9.4,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 23 },
@@ -5969,7 +5973,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 1,
-    "margin": -29.3,
+    "margin": -20.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6002,7 +6006,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -23.2,
+    "margin": -20.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -6035,7 +6039,7 @@ export const houseData: RaceForecast[] = [
     "state": "Colorado",
     "raceType": "house",
     "probability": 0.71,
-    "margin": -5.7,
+    "margin": -8.7,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 66 },
@@ -6063,7 +6067,7 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "probability": 1,
-    "margin": -31.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6096,7 +6100,7 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "probability": 0.94,
-    "margin": -15.9,
+    "margin": -18.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -6129,7 +6133,7 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -23.9,
+    "margin": -20.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -6162,7 +6166,7 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "probability": 1,
-    "margin": -31.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6195,8 +6199,8 @@ export const houseData: RaceForecast[] = [
     "state": "Connecticut",
     "raceType": "house",
     "probability": 0.88,
-    "margin": -12.3,
-    "rating": "Likely D",
+    "margin": -16,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 83 },
       { "date": "Oct", "value": 85 },
@@ -6226,7 +6230,7 @@ export const houseData: RaceForecast[] = [
     "state": "Delaware",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -26.6,
+    "margin": -20.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6257,7 +6261,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 31.2,
+    "margin": 16.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -6290,8 +6294,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.13,
-    "margin": 11.9,
-    "rating": "Likely R",
+    "margin": 15.7,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 8 },
       { "date": "Oct", "value": 10 },
@@ -6323,7 +6327,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.07,
-    "margin": 15.2,
+    "margin": 17.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -6356,7 +6360,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.28,
-    "margin": 6,
+    "margin": 9.1,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 23 },
@@ -6389,7 +6393,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.07,
-    "margin": 15.7,
+    "margin": 18.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -6422,8 +6426,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 1,
-    "margin": 24.2,
-    "rating": "Safe R",
+    "margin": -21,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
       { "date": "Oct", "value": 97 },
@@ -6455,8 +6459,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.35,
-    "margin": 4.1,
-    "rating": "Lean R",
+    "margin": 6.4,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 30 },
       { "date": "Oct", "value": 32 },
@@ -6488,7 +6492,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.04,
-    "margin": 17,
+    "margin": 19.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -6521,7 +6525,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.95,
-    "margin": -17.1,
+    "margin": -18.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -6554,7 +6558,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 1,
-    "margin": -36.2,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6587,7 +6591,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.14,
-    "margin": 11.1,
+    "margin": 14.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 9 },
@@ -6620,8 +6624,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.2,
-    "margin": 30,
-    "rating": "Safe R",
+    "margin": 12.6,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 15 },
       { "date": "Oct", "value": 17 },
@@ -6653,8 +6657,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.33,
-    "margin": 4.7,
-    "rating": "Lean R",
+    "margin": 7.3,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 28 },
       { "date": "Oct", "value": 30 },
@@ -6684,7 +6688,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -22,
+    "margin": -20.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -6717,8 +6721,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.37,
-    "margin": 3.5,
-    "rating": "Lean R",
+    "margin": 5.5,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 32 },
       { "date": "Oct", "value": 34 },
@@ -6750,7 +6754,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.15,
-    "margin": 10.7,
+    "margin": 14.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 10 },
@@ -6783,7 +6787,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.04,
-    "margin": 18.6,
+    "margin": 19.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -6816,7 +6820,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.01,
-    "margin": 22.9,
+    "margin": 20.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -6849,7 +6853,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.01,
-    "margin": 22.8,
+    "margin": 20.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -6882,7 +6886,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 1,
-    "margin": -58,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -6915,8 +6919,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.14,
-    "margin": 11,
-    "rating": "Likely R",
+    "margin": 15,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 9 },
       { "date": "Oct", "value": 11 },
@@ -6948,7 +6952,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.96,
-    "margin": -18,
+    "margin": -19.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -6981,8 +6985,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.9,
-    "margin": -13.4,
-    "rating": "Likely D",
+    "margin": -16.8,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 85 },
       { "date": "Oct", "value": 87 },
@@ -7012,7 +7016,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 1,
-    "margin": -46.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7045,7 +7049,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.96,
-    "margin": -18.2,
+    "margin": -19.3,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -7078,8 +7082,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.4,
-    "margin": 27.7,
-    "rating": "Safe R",
+    "margin": 4.2,
+    "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 35 },
       { "date": "Oct", "value": 37 },
@@ -7111,7 +7115,7 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.31,
-    "margin": 5.1,
+    "margin": 7.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 26 },
@@ -7144,8 +7148,8 @@ export const houseData: RaceForecast[] = [
     "state": "Florida",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 13.5,
-    "rating": "Likely R",
+    "margin": 16.9,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
       { "date": "Oct", "value": 7 },
@@ -7174,7 +7178,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.18,
-    "margin": 9.4,
+    "margin": 13.2,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 14 },
@@ -7207,7 +7211,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.96,
-    "margin": -18.5,
+    "margin": -19.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -7240,8 +7244,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.5,
-    "margin": 26.8,
-    "rating": "Safe R",
+    "margin": 0,
+    "rating": "Tilt R",
     "history": [
       { "date": "Sep", "value": 45 },
       { "date": "Oct", "value": 47 },
@@ -7273,7 +7277,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 1,
-    "margin": -61.3,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7306,7 +7310,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 1,
-    "margin": -80.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7339,7 +7343,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 1,
-    "margin": -57.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7405,8 +7409,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.3,
-    "margin": 28.2,
-    "rating": "Safe R",
+    "margin": 8.4,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 25 },
       { "date": "Oct", "value": 27 },
@@ -7438,8 +7442,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.2,
-    "margin": 30.6,
-    "rating": "Safe R",
+    "margin": 12.6,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 15 },
       { "date": "Oct", "value": 17 },
@@ -7471,7 +7475,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16.7,
+    "margin": 18.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -7504,7 +7508,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16.6,
+    "margin": 18.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -7537,7 +7541,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.17,
-    "margin": 9.8,
+    "margin": 13.7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 13 },
@@ -7570,7 +7574,7 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 1,
-    "margin": -49.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7603,8 +7607,8 @@ export const houseData: RaceForecast[] = [
     "state": "Georgia",
     "raceType": "house",
     "probability": 0.2,
-    "margin": 29.7,
-    "rating": "Safe R",
+    "margin": 12.6,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 15 },
       { "date": "Oct", "value": 17 },
@@ -7636,7 +7640,7 @@ export const houseData: RaceForecast[] = [
     "state": "Hawaii",
     "raceType": "house",
     "probability": 1,
-    "margin": -38.5,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7669,7 +7673,7 @@ export const houseData: RaceForecast[] = [
     "state": "Hawaii",
     "raceType": "house",
     "probability": 1,
-    "margin": -34.5,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7702,7 +7706,7 @@ export const houseData: RaceForecast[] = [
     "state": "Idaho",
     "raceType": "house",
     "probability": 0,
-    "margin": 39,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -7735,7 +7739,7 @@ export const houseData: RaceForecast[] = [
     "state": "Idaho",
     "raceType": "house",
     "probability": 0.01,
-    "margin": 22.9,
+    "margin": 20.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -7768,7 +7772,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": -43.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7801,7 +7805,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": -45.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7834,7 +7838,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": -44.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7867,7 +7871,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": -42.2,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7900,7 +7904,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": -47.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7933,7 +7937,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.94,
-    "margin": -16.1,
+    "margin": -18.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -7966,7 +7970,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": -77.2,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -7999,7 +8003,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.95,
-    "margin": -17,
+    "margin": -18.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -8032,7 +8036,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": -48.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -8065,7 +8069,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 1,
-    "margin": -32.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -8098,7 +8102,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -20.7,
+    "margin": -20,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -8131,7 +8135,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0,
-    "margin": 40.7,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -8164,7 +8168,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -21.2,
+    "margin": -20.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -8197,7 +8201,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.95,
-    "margin": -17.5,
+    "margin": -19,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -8230,7 +8234,7 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0,
-    "margin": 41.9,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -8263,8 +8267,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.8,
-    "margin": 25,
-    "rating": "Safe R",
+    "margin": -12.6,
+    "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 75 },
       { "date": "Oct", "value": 77 },
@@ -8296,8 +8300,8 @@ export const houseData: RaceForecast[] = [
     "state": "Illinois",
     "raceType": "house",
     "probability": 0.92,
-    "margin": -14.6,
-    "rating": "Likely D",
+    "margin": -17.6,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 87 },
       { "date": "Oct", "value": 89 },
@@ -8327,7 +8331,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.81,
-    "margin": -9.4,
+    "margin": -13.2,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 77 },
@@ -8358,8 +8362,8 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.7,
-    "margin": 25.7,
-    "rating": "Safe R",
+    "margin": -8.4,
+    "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 65 },
       { "date": "Oct", "value": 67 },
@@ -8391,8 +8395,8 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.2,
-    "margin": 29.9,
-    "rating": "Safe R",
+    "margin": 12.6,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 15 },
       { "date": "Oct", "value": 17 },
@@ -8424,8 +8428,8 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.3,
-    "margin": 28.7,
-    "rating": "Safe R",
+    "margin": 8.4,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 25 },
       { "date": "Oct", "value": 27 },
@@ -8457,7 +8461,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.07,
-    "margin": 15.5,
+    "margin": 18.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -8490,7 +8494,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 31.7,
+    "margin": 16.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -8523,7 +8527,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 1,
-    "margin": -47.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -8554,7 +8558,7 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 33.4,
+    "margin": 16.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -8587,8 +8591,8 @@ export const houseData: RaceForecast[] = [
     "state": "Indiana",
     "raceType": "house",
     "probability": 0.4,
-    "margin": 27.7,
-    "rating": "Safe R",
+    "margin": 4.2,
+    "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 35 },
       { "date": "Oct", "value": 37 },
@@ -8620,7 +8624,7 @@ export const houseData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "house",
     "probability": 0.57,
-    "margin": -1.8,
+    "margin": -2.9,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 52 },
@@ -8651,7 +8655,7 @@ export const houseData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "house",
     "probability": 0.4,
-    "margin": 2.8,
+    "margin": 4.4,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 35 },
@@ -8684,7 +8688,7 @@ export const houseData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "house",
     "probability": 0.6,
-    "margin": -2.6,
+    "margin": -4.1,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 55 },
@@ -8715,8 +8719,8 @@ export const houseData: RaceForecast[] = [
     "state": "Iowa",
     "raceType": "house",
     "probability": 0.9,
-    "margin": 24.9,
-    "rating": "Safe R",
+    "margin": -16.8,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 85 },
       { "date": "Oct", "value": 87 },
@@ -8748,7 +8752,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 31.2,
+    "margin": 16.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -8781,8 +8785,8 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "probability": 0.08,
-    "margin": 14.6,
-    "rating": "Likely R",
+    "margin": 17.6,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 3 },
       { "date": "Oct", "value": 5 },
@@ -8814,8 +8818,8 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "probability": 0.92,
-    "margin": -14.4,
-    "rating": "Likely D",
+    "margin": -17.4,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 87 },
       { "date": "Oct", "value": 89 },
@@ -8847,7 +8851,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kansas",
     "raceType": "house",
     "probability": 0.02,
-    "margin": 22.1,
+    "margin": 20.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -8880,7 +8884,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 0,
-    "margin": 43.6,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -8913,7 +8917,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 0,
-    "margin": 39.2,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -8946,7 +8950,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 1,
-    "margin": -30.1,
+    "margin": -20.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -8979,7 +8983,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 0,
-    "margin": 38.6,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9012,7 +9016,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 0,
-    "margin": 65.2,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9045,7 +9049,7 @@ export const houseData: RaceForecast[] = [
     "state": "Kentucky",
     "raceType": "house",
     "probability": 0.2,
-    "margin": 8.8,
+    "margin": 12.6,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 15 },
@@ -9078,7 +9082,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 0,
-    "margin": 43.3,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9111,7 +9115,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 1,
-    "margin": -41.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9144,7 +9148,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 0,
-    "margin": 48.2,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9177,7 +9181,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 0,
-    "margin": 61.4,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9210,7 +9214,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 0,
-    "margin": 38.1,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -9243,7 +9247,7 @@ export const houseData: RaceForecast[] = [
     "state": "Louisiana",
     "raceType": "house",
     "probability": 0.96,
-    "margin": -18.5,
+    "margin": -19.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -9276,7 +9280,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maine",
     "raceType": "house",
     "probability": 1,
-    "margin": -27.5,
+    "margin": -20.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9309,7 +9313,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maine",
     "raceType": "house",
     "probability": 0.29,
-    "margin": 5.9,
+    "margin": 9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 24 },
@@ -9340,8 +9344,8 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 0.08,
-    "margin": 15,
-    "rating": "Likely R",
+    "margin": 17.8,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 3 },
       { "date": "Oct", "value": 5 },
@@ -9373,7 +9377,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -25.5,
+    "margin": -20.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -9406,7 +9410,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 1,
-    "margin": -29.8,
+    "margin": -20.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9439,7 +9443,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 1,
-    "margin": -84.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9472,7 +9476,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 1,
-    "margin": -40.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9505,8 +9509,8 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 0.88,
-    "margin": -12.2,
-    "rating": "Likely D",
+    "margin": -15.9,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 83 },
       { "date": "Oct", "value": 85 },
@@ -9538,7 +9542,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 1,
-    "margin": -68.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9571,7 +9575,7 @@ export const houseData: RaceForecast[] = [
     "state": "Maryland",
     "raceType": "house",
     "probability": 1,
-    "margin": -66.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9604,7 +9608,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": -32,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9637,7 +9641,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": -40.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9670,7 +9674,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": -37.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9703,7 +9707,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": -38,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9736,7 +9740,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": -64.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9769,7 +9773,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": -32.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9802,7 +9806,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": -83.1,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9835,7 +9839,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 1,
-    "margin": -41.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -9868,7 +9872,7 @@ export const houseData: RaceForecast[] = [
     "state": "Massachusetts",
     "raceType": "house",
     "probability": 0.97,
-    "margin": -20.2,
+    "margin": -19.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -9901,7 +9905,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.07,
-    "margin": 15.8,
+    "margin": 18.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -9934,8 +9938,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.4,
-    "margin": 27.4,
-    "rating": "Safe R",
+    "margin": 4.2,
+    "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 35 },
       { "date": "Oct", "value": 37 },
@@ -9967,7 +9971,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.95,
-    "margin": -17.5,
+    "margin": -19,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -9998,7 +10002,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.41,
-    "margin": 2.5,
+    "margin": 4,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 36 },
@@ -10029,8 +10033,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.9,
-    "margin": 24.8,
-    "rating": "Safe R",
+    "margin": -16.8,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 85 },
       { "date": "Oct", "value": 87 },
@@ -10062,7 +10066,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 1,
-    "margin": -33.7,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10095,8 +10099,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.63,
-    "margin": -3.3,
-    "rating": "Lean D",
+    "margin": -5.3,
+    "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 58 },
       { "date": "Oct", "value": 60 },
@@ -10126,7 +10130,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.84,
-    "margin": -10.3,
+    "margin": -14.2,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 79 },
@@ -10157,8 +10161,8 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.2,
-    "margin": 30.9,
-    "rating": "Safe R",
+    "margin": 12.6,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 15 },
       { "date": "Oct", "value": 17 },
@@ -10190,7 +10194,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.55,
-    "margin": -1.3,
+    "margin": -2.1,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 50 },
@@ -10221,7 +10225,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -25.1,
+    "margin": -20.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -10254,7 +10258,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 1,
-    "margin": -53,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10287,7 +10291,7 @@ export const houseData: RaceForecast[] = [
     "state": "Michigan",
     "raceType": "house",
     "probability": 1,
-    "margin": -52.7,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10320,7 +10324,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 0.2,
-    "margin": 8.9,
+    "margin": 12.7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 15 },
@@ -10353,8 +10357,8 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 0.9,
-    "margin": -13.2,
-    "rating": "Likely D",
+    "margin": -16.6,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 85 },
       { "date": "Oct", "value": 87 },
@@ -10384,7 +10388,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 1,
-    "margin": -36.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10417,7 +10421,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 1,
-    "margin": -45.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10450,7 +10454,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 1,
-    "margin": -68,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10483,7 +10487,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 0.01,
-    "margin": 23,
+    "margin": 20.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10516,7 +10520,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 0,
-    "margin": 38.2,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10549,7 +10553,7 @@ export const houseData: RaceForecast[] = [
     "state": "Minnesota",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 15.9,
+    "margin": 18.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10582,8 +10586,8 @@ export const houseData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "house",
     "probability": 0.2,
-    "margin": 30,
-    "rating": "Safe R",
+    "margin": 12.6,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 15 },
       { "date": "Oct", "value": 17 },
@@ -10615,7 +10619,7 @@ export const houseData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "house",
     "probability": 1,
-    "margin": -32.1,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10648,8 +10652,8 @@ export const houseData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "house",
     "probability": 0.3,
-    "margin": 28.9,
-    "rating": "Safe R",
+    "margin": 8.4,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 25 },
       { "date": "Oct", "value": 27 },
@@ -10681,7 +10685,7 @@ export const houseData: RaceForecast[] = [
     "state": "Mississippi",
     "raceType": "house",
     "probability": 0,
-    "margin": 38.5,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10714,7 +10718,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 1,
-    "margin": -65.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10747,7 +10751,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 0.26,
-    "margin": 6.8,
+    "margin": 10.1,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 21 },
@@ -10780,8 +10784,8 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 1,
-    "margin": 24.3,
-    "rating": "Safe R",
+    "margin": -21,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
       { "date": "Oct", "value": 97 },
@@ -10813,7 +10817,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 0,
-    "margin": 40.3,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10846,7 +10850,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 1,
-    "margin": -30.7,
+    "margin": -20.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -10877,7 +10881,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 0,
-    "margin": 38.4,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10910,7 +10914,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 0,
-    "margin": 41.7,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10943,7 +10947,7 @@ export const houseData: RaceForecast[] = [
     "state": "Missouri",
     "raceType": "house",
     "probability": 0,
-    "margin": 53.2,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -10976,8 +10980,8 @@ export const houseData: RaceForecast[] = [
     "state": "Montana",
     "raceType": "house",
     "probability": 0.37,
-    "margin": 3.5,
-    "rating": "Lean R",
+    "margin": 5.5,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 32 },
       { "date": "Oct", "value": 34 },
@@ -11007,8 +11011,8 @@ export const houseData: RaceForecast[] = [
     "state": "Montana",
     "raceType": "house",
     "probability": 0.5,
-    "margin": 26.9,
-    "rating": "Safe R",
+    "margin": 0,
+    "rating": "Tilt R",
     "history": [
       { "date": "Sep", "value": 45 },
       { "date": "Oct", "value": 47 },
@@ -11037,8 +11041,8 @@ export const houseData: RaceForecast[] = [
     "state": "Nebraska",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 13.7,
-    "rating": "Likely R",
+    "margin": 17,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
       { "date": "Oct", "value": 7 },
@@ -11070,7 +11074,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nebraska",
     "raceType": "house",
     "probability": 0.77,
-    "margin": -7.8,
+    "margin": -11.4,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 72 },
@@ -11101,7 +11105,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nebraska",
     "raceType": "house",
     "probability": 0,
-    "margin": 54.9,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -11134,7 +11138,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "probability": 0.85,
-    "margin": -10.8,
+    "margin": -14.7,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 80 },
@@ -11165,7 +11169,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "probability": 0.04,
-    "margin": 18,
+    "margin": 19.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -11198,7 +11202,7 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "probability": 0.75,
-    "margin": -7.1,
+    "margin": -10.5,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 70 },
@@ -11229,8 +11233,8 @@ export const houseData: RaceForecast[] = [
     "state": "Nevada",
     "raceType": "house",
     "probability": 0.86,
-    "margin": -11.5,
-    "rating": "Likely D",
+    "margin": -15.3,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 81 },
       { "date": "Oct", "value": 83 },
@@ -11260,8 +11264,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Hampshire",
     "raceType": "house",
     "probability": 0.87,
-    "margin": -11.8,
-    "rating": "Likely D",
+    "margin": -15.5,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 82 },
       { "date": "Oct", "value": 84 },
@@ -11291,8 +11295,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Hampshire",
     "raceType": "house",
     "probability": 0.9,
-    "margin": -13.2,
-    "rating": "Likely D",
+    "margin": -16.7,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 85 },
       { "date": "Oct", "value": 87 },
@@ -11324,7 +11328,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 1,
-    "margin": -30.6,
+    "margin": -20.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -11357,8 +11361,8 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.34,
-    "margin": 4.3,
-    "rating": "Lean R",
+    "margin": 6.7,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 29 },
       { "date": "Oct", "value": 31 },
@@ -11390,7 +11394,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.97,
-    "margin": -20.1,
+    "margin": -19.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -11423,7 +11427,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.01,
-    "margin": 23.4,
+    "margin": 20.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -11456,7 +11460,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.96,
-    "margin": -17.8,
+    "margin": -19.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -11487,7 +11491,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -24.2,
+    "margin": -20.6,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -11520,7 +11524,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.76,
-    "margin": -7.4,
+    "margin": -11,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 71 },
@@ -11551,7 +11555,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 1,
-    "margin": -41.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -11584,7 +11588,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.93,
-    "margin": -15.5,
+    "margin": -18.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -11615,7 +11619,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 1,
-    "margin": -66,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -11648,7 +11652,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 0.97,
-    "margin": -20.4,
+    "margin": -19.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -11681,7 +11685,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Jersey",
     "raceType": "house",
     "probability": 1,
-    "margin": -36.5,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -11714,7 +11718,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -22.6,
+    "margin": -20.4,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -11747,7 +11751,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "house",
     "probability": 0.85,
-    "margin": -11.1,
+    "margin": -14.9,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 81 },
@@ -11778,7 +11782,7 @@ export const houseData: RaceForecast[] = [
     "state": "New Mexico",
     "raceType": "house",
     "probability": 0.95,
-    "margin": -17.4,
+    "margin": -19,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 90 },
@@ -11811,7 +11815,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.31,
-    "margin": 5.2,
+    "margin": 8,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 26 },
@@ -11844,7 +11848,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.17,
-    "margin": 9.9,
+    "margin": 13.7,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 12 },
@@ -11877,7 +11881,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.77,
-    "margin": -7.8,
+    "margin": -11.4,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 72 },
@@ -11908,8 +11912,8 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.89,
-    "margin": -12.7,
-    "rating": "Likely D",
+    "margin": -16.3,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 84 },
       { "date": "Oct", "value": 86 },
@@ -11939,7 +11943,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -56.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -11972,7 +11976,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -25.6,
+    "margin": -20.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -12005,7 +12009,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -58.1,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12038,7 +12042,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -59.5,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12071,7 +12075,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -53.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12104,7 +12108,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -73,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12137,7 +12141,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.03,
-    "margin": 19.6,
+    "margin": 19.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -12170,7 +12174,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -73.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12203,7 +12207,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -74.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12236,7 +12240,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -48.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12269,7 +12273,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -65.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12302,7 +12306,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -44.5,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12335,7 +12339,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.69,
-    "margin": -5.3,
+    "margin": -8.2,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 65 },
@@ -12366,7 +12370,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.93,
-    "margin": -15.6,
+    "margin": -18.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -12397,7 +12401,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.79,
-    "margin": -8.3,
+    "margin": -12.1,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 74 },
@@ -12428,7 +12432,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -23.7,
+    "margin": -20.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -12461,7 +12465,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.07,
-    "margin": 15.2,
+    "margin": 17.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -12494,7 +12498,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.93,
-    "margin": -15.5,
+    "margin": -18.1,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 88 },
@@ -12525,7 +12529,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.02,
-    "margin": 22.1,
+    "margin": 20.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -12558,7 +12562,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.01,
-    "margin": 23.2,
+    "margin": 20.5,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -12591,7 +12595,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -26.6,
+    "margin": -20.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12624,7 +12628,7 @@ export const houseData: RaceForecast[] = [
     "state": "New York",
     "raceType": "house",
     "probability": 1,
-    "margin": -31.2,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12657,7 +12661,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.45,
-    "margin": 1.4,
+    "margin": 2.2,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 40 },
@@ -12688,7 +12692,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 1,
-    "margin": -44,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12721,8 +12725,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.08,
-    "margin": 14.5,
-    "rating": "Likely R",
+    "margin": 17.5,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 3 },
       { "date": "Oct", "value": 5 },
@@ -12754,7 +12758,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 1,
-    "margin": -54.7,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -12787,8 +12791,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 13.1,
-    "rating": "Likely R",
+    "margin": 16.6,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 6 },
       { "date": "Oct", "value": 8 },
@@ -12820,7 +12824,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.03,
-    "margin": 19,
+    "margin": 19.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -12853,7 +12857,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.19,
-    "margin": 9.2,
+    "margin": 13,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 14 },
@@ -12886,8 +12890,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.09,
-    "margin": 14,
-    "rating": "Likely R",
+    "margin": 17.2,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 4 },
       { "date": "Oct", "value": 6 },
@@ -12919,7 +12923,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.17,
-    "margin": 10,
+    "margin": 13.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 12 },
@@ -12952,8 +12956,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 13.2,
-    "rating": "Likely R",
+    "margin": 16.7,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
       { "date": "Oct", "value": 7 },
@@ -12985,8 +12989,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.33,
-    "margin": 4.7,
-    "rating": "Lean R",
+    "margin": 7.3,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 28 },
       { "date": "Oct", "value": 30 },
@@ -13016,7 +13020,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 1,
-    "margin": -56.1,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -13049,8 +13053,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.14,
-    "margin": 11.1,
-    "rating": "Likely R",
+    "margin": 15,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 9 },
       { "date": "Oct", "value": 11 },
@@ -13082,8 +13086,8 @@ export const houseData: RaceForecast[] = [
     "state": "North Carolina",
     "raceType": "house",
     "probability": 0.13,
-    "margin": 11.6,
-    "rating": "Likely R",
+    "margin": 15.4,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 8 },
       { "date": "Oct", "value": 10 },
@@ -13112,7 +13116,7 @@ export const houseData: RaceForecast[] = [
     "state": "North Dakota",
     "raceType": "house",
     "probability": 0,
-    "margin": 41.1,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13143,7 +13147,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.73,
-    "margin": -6.3,
+    "margin": -9.5,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 68 },
@@ -13174,7 +13178,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0,
-    "margin": 37.6,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13207,7 +13211,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 1,
-    "margin": -50.7,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -13240,7 +13244,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0,
-    "margin": 38,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13273,7 +13277,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.02,
-    "margin": 21,
+    "margin": 20.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13306,8 +13310,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.3,
-    "margin": 28.6,
-    "rating": "Safe R",
+    "margin": 8.4,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 25 },
       { "date": "Oct", "value": 27 },
@@ -13339,7 +13343,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.25,
-    "margin": 7,
+    "margin": 10.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 20 },
@@ -13372,8 +13376,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.14,
-    "margin": 11.4,
-    "rating": "Likely R",
+    "margin": 15.2,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 9 },
       { "date": "Oct", "value": 11 },
@@ -13405,8 +13409,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.53,
-    "margin": -0.7,
-    "rating": "Tilt D",
+    "margin": -1.1,
+    "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 48 },
       { "date": "Oct", "value": 50 },
@@ -13436,7 +13440,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.27,
-    "margin": 6.5,
+    "margin": 9.8,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 22 },
@@ -13469,7 +13473,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 1,
-    "margin": -67,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -13502,8 +13506,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.5,
-    "margin": 26.6,
-    "rating": "Safe R",
+    "margin": 0,
+    "rating": "Tilt R",
     "history": [
       { "date": "Sep", "value": 45 },
       { "date": "Oct", "value": 47 },
@@ -13535,8 +13539,8 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.88,
-    "margin": -12.1,
-    "rating": "Likely D",
+    "margin": -15.8,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 83 },
       { "date": "Oct", "value": 85 },
@@ -13566,7 +13570,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.04,
-    "margin": 17.8,
+    "margin": 19.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13599,7 +13603,7 @@ export const houseData: RaceForecast[] = [
     "state": "Ohio",
     "raceType": "house",
     "probability": 0.31,
-    "margin": 5.2,
+    "margin": 8,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 26 },
@@ -13632,7 +13636,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "probability": 0.03,
-    "margin": 20.2,
+    "margin": 19.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13665,7 +13669,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "probability": 0,
-    "margin": 50.5,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13698,7 +13702,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "probability": 0,
-    "margin": 48.7,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13731,7 +13735,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 31.5,
+    "margin": 16.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -13764,7 +13768,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oklahoma",
     "raceType": "house",
     "probability": 0.07,
-    "margin": 15.1,
+    "margin": 17.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -13797,7 +13801,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 1,
-    "margin": -49.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -13830,7 +13834,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 0.01,
-    "margin": 22.6,
+    "margin": 20.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -13863,7 +13867,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 1,
-    "margin": -56.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -13896,7 +13900,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 0.97,
-    "margin": -19.6,
+    "margin": -19.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -13929,7 +13933,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 0.94,
-    "margin": -16.3,
+    "margin": -18.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 89 },
@@ -13960,7 +13964,7 @@ export const houseData: RaceForecast[] = [
     "state": "Oregon",
     "raceType": "house",
     "probability": 0.97,
-    "margin": -20.1,
+    "margin": -19.9,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -13990,7 +13994,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.52,
-    "margin": -0.5,
+    "margin": -0.8,
     "rating": "Tilt D",
     "history": [
       { "date": "Sep", "value": 47 },
@@ -14021,7 +14025,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 1,
-    "margin": -47.7,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -14054,7 +14058,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 1,
-    "margin": -85.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -14087,7 +14091,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -23.8,
+    "margin": -20.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -14120,7 +14124,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 1,
-    "margin": -36.3,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -14153,7 +14157,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.96,
-    "margin": -17.9,
+    "margin": -19.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 91 },
@@ -14186,7 +14190,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.59,
-    "margin": -2.5,
+    "margin": -4,
     "rating": "Lean D",
     "history": [
       { "date": "Sep", "value": 55 },
@@ -14217,8 +14221,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.47,
-    "margin": 0.8,
-    "rating": "Tilt R",
+    "margin": 1.3,
+    "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 42 },
       { "date": "Oct", "value": 44 },
@@ -14248,7 +14252,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0,
-    "margin": 36.9,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14281,7 +14285,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.52,
-    "margin": -0.4,
+    "margin": -0.7,
     "rating": "Tilt D",
     "history": [
       { "date": "Sep", "value": 47 },
@@ -14312,7 +14316,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.03,
-    "margin": 20.3,
+    "margin": 19.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14345,7 +14349,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -23.7,
+    "margin": -20.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -14378,7 +14382,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0,
-    "margin": 45.1,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14411,7 +14415,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 32,
+    "margin": 16.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -14444,7 +14448,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0,
-    "margin": 37.8,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14477,7 +14481,7 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.02,
-    "margin": 21,
+    "margin": 20.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14510,8 +14514,8 @@ export const houseData: RaceForecast[] = [
     "state": "Pennsylvania",
     "raceType": "house",
     "probability": 0.91,
-    "margin": -13.7,
-    "rating": "Likely D",
+    "margin": -17.1,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 86 },
       { "date": "Oct", "value": 88 },
@@ -14541,7 +14545,7 @@ export const houseData: RaceForecast[] = [
     "state": "Rhode Island",
     "raceType": "house",
     "probability": 1,
-    "margin": -38.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -14574,7 +14578,7 @@ export const houseData: RaceForecast[] = [
     "state": "Rhode Island",
     "raceType": "house",
     "probability": 0.98,
-    "margin": -21.7,
+    "margin": -20.2,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 93 },
@@ -14607,7 +14611,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0.27,
-    "margin": 6.6,
+    "margin": 9.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 22 },
@@ -14640,7 +14644,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0.17,
-    "margin": 10.1,
+    "margin": 13.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 12 },
@@ -14673,7 +14677,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0,
-    "margin": 37.9,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14706,7 +14710,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0.04,
-    "margin": 18.1,
+    "margin": 19.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14739,7 +14743,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16.7,
+    "margin": 18.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14772,7 +14776,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 1,
-    "margin": -35.1,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -14805,7 +14809,7 @@ export const houseData: RaceForecast[] = [
     "state": "South Carolina",
     "raceType": "house",
     "probability": 0.03,
-    "margin": 20.1,
+    "margin": 19.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14838,8 +14842,8 @@ export const houseData: RaceForecast[] = [
     "state": "South Dakota",
     "raceType": "house",
     "probability": 0.4,
-    "margin": 28.2,
-    "rating": "Safe R",
+    "margin": 4.2,
+    "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 35 },
       { "date": "Oct", "value": 37 },
@@ -14869,7 +14873,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0,
-    "margin": 55,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -14902,7 +14906,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 31.1,
+    "margin": 16.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -14935,7 +14939,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 34.3,
+    "margin": 16.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -14968,7 +14972,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0,
-    "margin": 38.7,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15001,8 +15005,8 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0.14,
-    "margin": 11.2,
-    "rating": "Likely R",
+    "margin": 15,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 9 },
       { "date": "Oct", "value": 11 },
@@ -15034,8 +15038,8 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0.3,
-    "margin": 29,
-    "rating": "Safe R",
+    "margin": 8.4,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 25 },
       { "date": "Oct", "value": 27 },
@@ -15067,7 +15071,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16.6,
+    "margin": 18.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15100,7 +15104,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 0,
-    "margin": 40.2,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15133,7 +15137,7 @@ export const houseData: RaceForecast[] = [
     "state": "Tennessee",
     "raceType": "house",
     "probability": 1,
-    "margin": -52.3,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -15166,7 +15170,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0,
-    "margin": 51.3,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15199,7 +15203,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.04,
-    "margin": 18.5,
+    "margin": 19.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15232,7 +15236,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.05,
-    "margin": 17,
+    "margin": 19,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15265,7 +15269,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.02,
-    "margin": 21,
+    "margin": 20.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15298,7 +15302,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16.1,
+    "margin": 18.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15331,7 +15335,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.03,
-    "margin": 20,
+    "margin": 19.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15364,7 +15368,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": -35.3,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -15397,7 +15401,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.02,
-    "margin": 21.4,
+    "margin": 20.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15430,8 +15434,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.12,
-    "margin": 12.1,
-    "rating": "Likely R",
+    "margin": 15.8,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 7 },
       { "date": "Oct", "value": 9 },
@@ -15461,7 +15465,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.07,
-    "margin": 15.6,
+    "margin": 18.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 2 },
@@ -15494,7 +15498,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0,
-    "margin": 36.9,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15527,7 +15531,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.03,
-    "margin": 20,
+    "margin": 19.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15560,7 +15564,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0,
-    "margin": 48.7,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15593,7 +15597,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.03,
-    "margin": 20.4,
+    "margin": 19.9,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15626,7 +15630,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.29,
-    "margin": 5.6,
+    "margin": 8.6,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 25 },
@@ -15657,7 +15661,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": -32.7,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -15690,7 +15694,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.04,
-    "margin": 17.8,
+    "margin": 19.2,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15723,7 +15727,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": -67,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -15756,7 +15760,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0,
-    "margin": 46.8,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15789,7 +15793,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": -46.3,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -15822,7 +15826,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16.7,
+    "margin": 18.7,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15855,7 +15859,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16,
+    "margin": 18.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -15888,7 +15892,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.23,
-    "margin": 7.8,
+    "margin": 11.5,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 18 },
@@ -15921,8 +15925,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.09,
-    "margin": 13.9,
-    "rating": "Likely R",
+    "margin": 17.1,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 4 },
       { "date": "Oct", "value": 6 },
@@ -15954,8 +15958,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.9,
-    "margin": 24,
-    "rating": "Safe R",
+    "margin": -16.8,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 85 },
       { "date": "Oct", "value": 87 },
@@ -15987,7 +15991,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.02,
-    "margin": 20.8,
+    "margin": 20,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16020,7 +16024,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16.5,
+    "margin": 18.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16053,7 +16057,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.8,
-    "margin": -8.8,
+    "margin": -12.6,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 75 },
@@ -16084,7 +16088,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": -46.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16117,7 +16121,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": -55.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16150,7 +16154,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.04,
-    "margin": 18.5,
+    "margin": 19.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16183,7 +16187,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.15,
-    "margin": 11,
+    "margin": 14.9,
     "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 10 },
@@ -16214,7 +16218,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": -46.9,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16247,8 +16251,8 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.63,
-    "margin": -3.4,
-    "rating": "Lean D",
+    "margin": -5.3,
+    "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 58 },
       { "date": "Oct", "value": 60 },
@@ -16278,7 +16282,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.43,
-    "margin": 1.7,
+    "margin": 2.8,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 38 },
@@ -16342,7 +16346,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 1,
-    "margin": -66.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16372,7 +16376,7 @@ export const houseData: RaceForecast[] = [
     "state": "Texas",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16.1,
+    "margin": 18.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16402,7 +16406,7 @@ export const houseData: RaceForecast[] = [
     "state": "Utah",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -25,
+    "margin": -20.7,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -16433,8 +16437,8 @@ export const houseData: RaceForecast[] = [
     "state": "Utah",
     "raceType": "house",
     "probability": 0.4,
-    "margin": 27.8,
-    "rating": "Safe R",
+    "margin": 4.2,
+    "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 35 },
       { "date": "Oct", "value": 37 },
@@ -16464,7 +16468,7 @@ export const houseData: RaceForecast[] = [
     "state": "Utah",
     "raceType": "house",
     "probability": 0,
-    "margin": 43.3,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16495,7 +16499,7 @@ export const houseData: RaceForecast[] = [
     "state": "Utah",
     "raceType": "house",
     "probability": 0.1,
-    "margin": 32.2,
+    "margin": 16.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 5 },
@@ -16528,7 +16532,7 @@ export const houseData: RaceForecast[] = [
     "state": "Vermont",
     "raceType": "house",
     "probability": 1,
-    "margin": -46.2,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16559,7 +16563,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.45,
-    "margin": 1.3,
+    "margin": 2.1,
     "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 40 },
@@ -16590,7 +16594,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.72,
-    "margin": -6,
+    "margin": -9.1,
     "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 67 },
@@ -16621,7 +16625,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 1,
-    "margin": -47,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16654,7 +16658,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 1,
-    "margin": -44.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16687,8 +16691,8 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.35,
-    "margin": 4.1,
-    "rating": "Lean R",
+    "margin": 6.4,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 30 },
       { "date": "Oct", "value": 32 },
@@ -16720,7 +16724,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.05,
-    "margin": 17,
+    "margin": 18.8,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16753,8 +16757,8 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.91,
-    "margin": -14.2,
-    "rating": "Likely D",
+    "margin": -17.3,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 86 },
       { "date": "Oct", "value": 88 },
@@ -16784,7 +16788,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 1,
-    "margin": -61.7,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16817,7 +16821,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0,
-    "margin": 38,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -16850,7 +16854,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 0.97,
-    "margin": -19,
+    "margin": -19.8,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 92 },
@@ -16881,7 +16885,7 @@ export const houseData: RaceForecast[] = [
     "state": "Virginia",
     "raceType": "house",
     "probability": 1,
-    "margin": -45.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16914,7 +16918,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 1,
-    "margin": -36.8,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16947,7 +16951,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 1,
-    "margin": -32.4,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -16980,8 +16984,8 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.65,
-    "margin": -4.1,
-    "rating": "Lean D",
+    "margin": -6.3,
+    "rating": "Likely D",
     "history": [
       { "date": "Sep", "value": 60 },
       { "date": "Oct", "value": 62 },
@@ -17011,7 +17015,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.05,
-    "margin": 17.6,
+    "margin": 19.1,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17044,8 +17048,8 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.14,
-    "margin": 11.4,
-    "rating": "Likely R",
+    "margin": 15.2,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 9 },
       { "date": "Oct", "value": 11 },
@@ -17077,7 +17081,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -23,
+    "margin": -20.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -17110,7 +17114,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 1,
-    "margin": -82,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -17143,8 +17147,8 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.9,
-    "margin": -13.5,
-    "rating": "Likely D",
+    "margin": -16.9,
+    "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 85 },
       { "date": "Oct", "value": 87 },
@@ -17174,7 +17178,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 1,
-    "margin": -56.7,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -17207,7 +17211,7 @@ export const houseData: RaceForecast[] = [
     "state": "Washington",
     "raceType": "house",
     "probability": 0.99,
-    "margin": -23.9,
+    "margin": -20.5,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 94 },
@@ -17240,7 +17244,7 @@ export const houseData: RaceForecast[] = [
     "state": "West Virginia",
     "raceType": "house",
     "probability": 0,
-    "margin": 39.1,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17273,7 +17277,7 @@ export const houseData: RaceForecast[] = [
     "state": "West Virginia",
     "raceType": "house",
     "probability": 0,
-    "margin": 36.7,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17306,8 +17310,8 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.37,
-    "margin": 3.5,
-    "rating": "Lean R",
+    "margin": 5.6,
+    "rating": "Likely R",
     "history": [
       { "date": "Sep", "value": 32 },
       { "date": "Oct", "value": 34 },
@@ -17337,7 +17341,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 1,
-    "margin": -48.3,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -17370,8 +17374,8 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.47,
-    "margin": 0.7,
-    "rating": "Tilt R",
+    "margin": 1.1,
+    "rating": "Lean R",
     "history": [
       { "date": "Sep", "value": 42 },
       { "date": "Oct", "value": 44 },
@@ -17401,7 +17405,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 1,
-    "margin": -59.6,
+    "margin": -21,
     "rating": "Safe D",
     "history": [
       { "date": "Sep", "value": 95 },
@@ -17434,7 +17438,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.02,
-    "margin": 22.4,
+    "margin": 20.3,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17467,7 +17471,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.06,
-    "margin": 16.2,
+    "margin": 18.4,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17500,7 +17504,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.03,
-    "margin": 19,
+    "margin": 19.6,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -17533,8 +17537,8 @@ export const houseData: RaceForecast[] = [
     "state": "Wisconsin",
     "raceType": "house",
     "probability": 0.09,
-    "margin": 13.9,
-    "rating": "Likely R",
+    "margin": 17.1,
+    "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 4 },
       { "date": "Oct", "value": 6 },
@@ -17566,7 +17570,7 @@ export const houseData: RaceForecast[] = [
     "state": "Wyoming",
     "raceType": "house",
     "probability": 0,
-    "margin": 46.2,
+    "margin": 21,
     "rating": "Safe R",
     "history": [
       { "date": "Sep", "value": 1 },
@@ -19225,288 +19229,288 @@ export type PresResult = {
 
 export const presPastResults: Record<string, PresResult[]> = {
   "AK": [
-    { "stateAbbr": "AK", "electoralVotes": 3, "year": 2024, "demPct": 41.41, "repPct": 54.54, "margin": -13.13, "demVotes": 140026, "repVotes": 184458, "voteMargin": 44432, "totalVotes": 338177, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "AK", "electoralVotes": 3, "year": 2020, "demPct": 42.77, "repPct": 52.83, "margin": -10.06, "demVotes": 153778, "repVotes": 189951, "voteMargin": 36173, "totalVotes": 359530, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "AK", "electoralVotes": 3, "year": 2016, "demPct": 36.55, "repPct": 51.28, "margin": -14.73, "demVotes": 116454, "repVotes": 163387, "voteMargin": 46933, "totalVotes": 318608, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "AK", "electoralVotes": 3, "year": 2024, "demPct": 41.41, "repPct": 54.54, "margin": 13.13, "demVotes": 140026, "repVotes": 184458, "voteMargin": 44432, "totalVotes": 338177, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "AK", "electoralVotes": 3, "year": 2020, "demPct": 42.77, "repPct": 52.83, "margin": 10.06, "demVotes": 153778, "repVotes": 189951, "voteMargin": 36173, "totalVotes": 359530, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "AK", "electoralVotes": 3, "year": 2016, "demPct": 36.55, "repPct": 51.28, "margin": 14.73, "demVotes": 116454, "repVotes": 163387, "voteMargin": 46933, "totalVotes": 318608, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "AL": [
-    { "stateAbbr": "AL", "electoralVotes": 9, "year": 2024, "demPct": 34.1, "repPct": 64.57, "margin": -30.47, "demVotes": 772412, "repVotes": 1462616, "voteMargin": 690204, "totalVotes": 2265090, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "AL", "electoralVotes": 9, "year": 2020, "demPct": 36.57, "repPct": 62.03, "margin": -25.46, "demVotes": 849624, "repVotes": 1441170, "voteMargin": 591546, "totalVotes": 2323282, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "AL", "electoralVotes": 9, "year": 2016, "demPct": 34.36, "repPct": 62.08, "margin": -27.72, "demVotes": 729547, "repVotes": 1318255, "voteMargin": 588708, "totalVotes": 2123372, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "AL", "electoralVotes": 9, "year": 2024, "demPct": 34.1, "repPct": 64.57, "margin": 30.47, "demVotes": 772412, "repVotes": 1462616, "voteMargin": 690204, "totalVotes": 2265090, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "AL", "electoralVotes": 9, "year": 2020, "demPct": 36.57, "repPct": 62.03, "margin": 25.46, "demVotes": 849624, "repVotes": 1441170, "voteMargin": 591546, "totalVotes": 2323282, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "AL", "electoralVotes": 9, "year": 2016, "demPct": 34.36, "repPct": 62.08, "margin": 27.72, "demVotes": 729547, "repVotes": 1318255, "voteMargin": 588708, "totalVotes": 2123372, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "AR": [
-    { "stateAbbr": "AR", "electoralVotes": 6, "year": 2024, "demPct": 33.56, "repPct": 64.2, "margin": -30.64, "demVotes": 396905, "repVotes": 759241, "voteMargin": 362336, "totalVotes": 1182676, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "AR", "electoralVotes": 6, "year": 2020, "demPct": 34.78, "repPct": 62.4, "margin": -27.62, "demVotes": 423932, "repVotes": 760647, "voteMargin": 336715, "totalVotes": 1219069, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "AR", "electoralVotes": 6, "year": 2016, "demPct": 33.65, "repPct": 60.57, "margin": -26.92, "demVotes": 380494, "repVotes": 684872, "voteMargin": 304378, "totalVotes": 1130676, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "AR", "electoralVotes": 6, "year": 2024, "demPct": 33.56, "repPct": 64.2, "margin": 30.64, "demVotes": 396905, "repVotes": 759241, "voteMargin": 362336, "totalVotes": 1182676, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "AR", "electoralVotes": 6, "year": 2020, "demPct": 34.78, "repPct": 62.4, "margin": 27.62, "demVotes": 423932, "repVotes": 760647, "voteMargin": 336715, "totalVotes": 1219069, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "AR", "electoralVotes": 6, "year": 2016, "demPct": 33.65, "repPct": 60.57, "margin": 26.92, "demVotes": 380494, "repVotes": 684872, "voteMargin": 304378, "totalVotes": 1130676, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "AZ": [
-    { "stateAbbr": "AZ", "electoralVotes": 11, "year": 2024, "demPct": 46.69, "repPct": 52.22, "margin": -5.53, "demVotes": 1582860, "repVotes": 1770242, "voteMargin": 187382, "totalVotes": 3390161, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "AZ", "electoralVotes": 11, "year": 2020, "demPct": 49.36, "repPct": 49.06, "margin": 0.3, "demVotes": 1672143, "repVotes": 1661686, "voteMargin": -10457, "totalVotes": 3387326, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "AZ", "electoralVotes": 11, "year": 2016, "demPct": 45.13, "repPct": 48.67, "margin": -3.54, "demVotes": 1161167, "repVotes": 1252401, "voteMargin": 91234, "totalVotes": 2573165, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "AZ", "electoralVotes": 11, "year": 2024, "demPct": 46.69, "repPct": 52.22, "margin": 5.53, "demVotes": 1582860, "repVotes": 1770242, "voteMargin": 187382, "totalVotes": 3390161, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "AZ", "electoralVotes": 11, "year": 2020, "demPct": 49.36, "repPct": 49.06, "margin": -0.3, "demVotes": 1672143, "repVotes": 1661686, "voteMargin": -10457, "totalVotes": 3387326, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "AZ", "electoralVotes": 11, "year": 2016, "demPct": 45.13, "repPct": 48.67, "margin": 3.54, "demVotes": 1161167, "repVotes": 1252401, "voteMargin": 91234, "totalVotes": 2573165, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "CA": [
-    { "stateAbbr": "CA", "electoralVotes": 54, "year": 2024, "demPct": 58.47, "repPct": 38.33, "margin": 20.14, "demVotes": 9276179, "repVotes": 6081697, "voteMargin": -3194482, "totalVotes": 15865475, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "CA", "electoralVotes": 55, "year": 2020, "demPct": 63.48, "repPct": 34.32, "margin": 29.16, "demVotes": 11110639, "repVotes": 6006518, "voteMargin": -5104121, "totalVotes": 17501380, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "CA", "electoralVotes": 55, "year": 2016, "demPct": 61.73, "repPct": 31.62, "margin": 30.11, "demVotes": 8753788, "repVotes": 4483810, "voteMargin": -4269978, "totalVotes": 14181595, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "CA", "electoralVotes": 54, "year": 2024, "demPct": 58.47, "repPct": 38.33, "margin": -20.14, "demVotes": 9276179, "repVotes": 6081697, "voteMargin": -3194482, "totalVotes": 15865475, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "CA", "electoralVotes": 55, "year": 2020, "demPct": 63.48, "repPct": 34.32, "margin": -29.16, "demVotes": 11110639, "repVotes": 6006518, "voteMargin": -5104121, "totalVotes": 17501380, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "CA", "electoralVotes": 55, "year": 2016, "demPct": 61.73, "repPct": 31.62, "margin": -30.11, "demVotes": 8753788, "repVotes": 4483810, "voteMargin": -4269978, "totalVotes": 14181595, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "CO": [
-    { "stateAbbr": "CO", "electoralVotes": 10, "year": 2024, "demPct": 54.13, "repPct": 43.14, "margin": 10.99, "demVotes": 1728159, "repVotes": 1377441, "voteMargin": -350718, "totalVotes": 3192745, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "CO", "electoralVotes": 9, "year": 2020, "demPct": 55.4, "repPct": 41.9, "margin": 13.5, "demVotes": 1804352, "repVotes": 1364607, "voteMargin": -439745, "totalVotes": 3256980, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "CO", "electoralVotes": 9, "year": 2016, "demPct": 48.16, "repPct": 43.25, "margin": 4.91, "demVotes": 1338870, "repVotes": 1202484, "voteMargin": -136386, "totalVotes": 2780247, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "CO", "electoralVotes": 10, "year": 2024, "demPct": 54.13, "repPct": 43.14, "margin": -10.99, "demVotes": 1728159, "repVotes": 1377441, "voteMargin": -350718, "totalVotes": 3192745, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "CO", "electoralVotes": 9, "year": 2020, "demPct": 55.4, "repPct": 41.9, "margin": -13.5, "demVotes": 1804352, "repVotes": 1364607, "voteMargin": -439745, "totalVotes": 3256980, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "CO", "electoralVotes": 9, "year": 2016, "demPct": 48.16, "repPct": 43.25, "margin": -4.91, "demVotes": 1338870, "repVotes": 1202484, "voteMargin": -136386, "totalVotes": 2780247, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "CT": [
-    { "stateAbbr": "CT", "electoralVotes": 7, "year": 2024, "demPct": 56.4, "repPct": 41.89, "margin": 14.51, "demVotes": 992053, "repVotes": 736918, "voteMargin": -255135, "totalVotes": 1759010, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "CT", "electoralVotes": 7, "year": 2020, "demPct": 59.26, "repPct": 39.19, "margin": 20.07, "demVotes": 1080831, "repVotes": 714717, "voteMargin": -366114, "totalVotes": 1823857, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "CT", "electoralVotes": 7, "year": 2016, "demPct": 54.57, "repPct": 40.93, "margin": 13.64, "demVotes": 897572, "repVotes": 673215, "voteMargin": -224357, "totalVotes": 1644920, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "CT", "electoralVotes": 7, "year": 2024, "demPct": 56.4, "repPct": 41.89, "margin": -14.51, "demVotes": 992053, "repVotes": 736918, "voteMargin": -255135, "totalVotes": 1759010, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "CT", "electoralVotes": 7, "year": 2020, "demPct": 59.26, "repPct": 39.19, "margin": -20.07, "demVotes": 1080831, "repVotes": 714717, "voteMargin": -366114, "totalVotes": 1823857, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "CT", "electoralVotes": 7, "year": 2016, "demPct": 54.57, "repPct": 40.93, "margin": -13.64, "demVotes": 897572, "repVotes": 673215, "voteMargin": -224357, "totalVotes": 1644920, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "DC": [
-    { "stateAbbr": "DC", "electoralVotes": 3, "year": 2024, "demPct": 90.28, "repPct": 6.47, "margin": 83.81, "demVotes": 294185, "repVotes": 21076, "voteMargin": -273109, "totalVotes": 325869, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "DC", "electoralVotes": 3, "year": 2020, "demPct": 92.15, "repPct": 5.4, "margin": 86.75, "demVotes": 317323, "repVotes": 18586, "voteMargin": -298737, "totalVotes": 344356, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "DC", "electoralVotes": 3, "year": 2016, "demPct": 90.86, "repPct": 4.09, "margin": 86.77, "demVotes": 282830, "repVotes": 12723, "voteMargin": -270107, "totalVotes": 311268, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "DC", "electoralVotes": 3, "year": 2024, "demPct": 90.28, "repPct": 6.47, "margin": -83.81, "demVotes": 294185, "repVotes": 21076, "voteMargin": -273109, "totalVotes": 325869, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "DC", "electoralVotes": 3, "year": 2020, "demPct": 92.15, "repPct": 5.4, "margin": -86.75, "demVotes": 317323, "repVotes": 18586, "voteMargin": -298737, "totalVotes": 344356, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "DC", "electoralVotes": 3, "year": 2016, "demPct": 90.86, "repPct": 4.09, "margin": -86.77, "demVotes": 282830, "repVotes": 12723, "voteMargin": -270107, "totalVotes": 311268, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "DE": [
-    { "stateAbbr": "DE", "electoralVotes": 3, "year": 2024, "demPct": 56.49, "repPct": 41.79, "margin": 14.7, "demVotes": 289758, "repVotes": 214351, "voteMargin": -75407, "totalVotes": 512912, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "DE", "electoralVotes": 3, "year": 2020, "demPct": 58.74, "repPct": 39.77, "margin": 18.97, "demVotes": 296268, "repVotes": 200603, "voteMargin": -95665, "totalVotes": 504346, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "DE", "electoralVotes": 3, "year": 2016, "demPct": 53.09, "repPct": 41.71, "margin": 11.38, "demVotes": 235603, "repVotes": 185127, "voteMargin": -50476, "totalVotes": 443814, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "DE", "electoralVotes": 3, "year": 2024, "demPct": 56.49, "repPct": 41.79, "margin": -14.7, "demVotes": 289758, "repVotes": 214351, "voteMargin": -75407, "totalVotes": 512912, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "DE", "electoralVotes": 3, "year": 2020, "demPct": 58.74, "repPct": 39.77, "margin": -18.97, "demVotes": 296268, "repVotes": 200603, "voteMargin": -95665, "totalVotes": 504346, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "DE", "electoralVotes": 3, "year": 2016, "demPct": 53.09, "repPct": 41.71, "margin": -11.38, "demVotes": 235603, "repVotes": 185127, "voteMargin": -50476, "totalVotes": 443814, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "FL": [
-    { "stateAbbr": "FL", "electoralVotes": 30, "year": 2024, "demPct": 42.99, "repPct": 56.09, "margin": -13.1, "demVotes": 4683038, "repVotes": 6110125, "voteMargin": 1427087, "totalVotes": 10893752, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "FL", "electoralVotes": 29, "year": 2020, "demPct": 47.86, "repPct": 51.22, "margin": -3.36, "demVotes": 5297045, "repVotes": 5668731, "voteMargin": 371686, "totalVotes": 11067456, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "FL", "electoralVotes": 29, "year": 2016, "demPct": 47.82, "repPct": 49.02, "margin": -1.2, "demVotes": 4504975, "repVotes": 4617886, "voteMargin": 112911, "totalVotes": 9420039, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "FL", "electoralVotes": 30, "year": 2024, "demPct": 42.99, "repPct": 56.09, "margin": 13.1, "demVotes": 4683038, "repVotes": 6110125, "voteMargin": 1427087, "totalVotes": 10893752, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "FL", "electoralVotes": 29, "year": 2020, "demPct": 47.86, "repPct": 51.22, "margin": 3.36, "demVotes": 5297045, "repVotes": 5668731, "voteMargin": 371686, "totalVotes": 11067456, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "FL", "electoralVotes": 29, "year": 2016, "demPct": 47.82, "repPct": 49.02, "margin": 1.2, "demVotes": 4504975, "repVotes": 4617886, "voteMargin": 112911, "totalVotes": 9420039, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "GA": [
-    { "stateAbbr": "GA", "electoralVotes": 16, "year": 2024, "demPct": 48.53, "repPct": 50.72, "margin": -2.19, "demVotes": 2548017, "repVotes": 2663117, "voteMargin": 115100, "totalVotes": 5250905, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "GA", "electoralVotes": 16, "year": 2020, "demPct": 49.47, "repPct": 49.24, "margin": 0.23, "demVotes": 2473633, "repVotes": 2461854, "voteMargin": -11779, "totalVotes": 4999960, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "GA", "electoralVotes": 16, "year": 2016, "demPct": 45.64, "repPct": 50.77, "margin": -5.13, "demVotes": 1877963, "repVotes": 2089104, "voteMargin": 211141, "totalVotes": 4114732, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "GA", "electoralVotes": 16, "year": 2024, "demPct": 48.53, "repPct": 50.72, "margin": 2.19, "demVotes": 2548017, "repVotes": 2663117, "voteMargin": 115100, "totalVotes": 5250905, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "GA", "electoralVotes": 16, "year": 2020, "demPct": 49.47, "repPct": 49.24, "margin": -0.23, "demVotes": 2473633, "repVotes": 2461854, "voteMargin": -11779, "totalVotes": 4999960, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "GA", "electoralVotes": 16, "year": 2016, "demPct": 45.64, "repPct": 50.77, "margin": 5.13, "demVotes": 1877963, "repVotes": 2089104, "voteMargin": 211141, "totalVotes": 4114732, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "HI": [
-    { "stateAbbr": "HI", "electoralVotes": 4, "year": 2024, "demPct": 60.59, "repPct": 37.48, "margin": 23.11, "demVotes": 313044, "repVotes": 193661, "voteMargin": -119383, "totalVotes": 516701, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "HI", "electoralVotes": 4, "year": 2020, "demPct": 63.73, "repPct": 34.27, "margin": 29.46, "demVotes": 366130, "repVotes": 196864, "voteMargin": -169266, "totalVotes": 574469, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "HI", "electoralVotes": 4, "year": 2016, "demPct": 62.22, "repPct": 30.04, "margin": 32.18, "demVotes": 266891, "repVotes": 128847, "voteMargin": -138044, "totalVotes": 428937, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "HI", "electoralVotes": 4, "year": 2024, "demPct": 60.59, "repPct": 37.48, "margin": -23.11, "demVotes": 313044, "repVotes": 193661, "voteMargin": -119383, "totalVotes": 516701, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "HI", "electoralVotes": 4, "year": 2020, "demPct": 63.73, "repPct": 34.27, "margin": -29.46, "demVotes": 366130, "repVotes": 196864, "voteMargin": -169266, "totalVotes": 574469, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "HI", "electoralVotes": 4, "year": 2016, "demPct": 62.22, "repPct": 30.04, "margin": -32.18, "demVotes": 266891, "repVotes": 128847, "voteMargin": -138044, "totalVotes": 428937, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "IA": [
-    { "stateAbbr": "IA", "electoralVotes": 6, "year": 2024, "demPct": 42.52, "repPct": 55.73, "margin": -13.21, "demVotes": 707278, "repVotes": 927019, "voteMargin": 219741, "totalVotes": 1663506, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "IA", "electoralVotes": 6, "year": 2020, "demPct": 44.89, "repPct": 53.09, "margin": -8.2, "demVotes": 759061, "repVotes": 897672, "voteMargin": 138611, "totalVotes": 1690871, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "IA", "electoralVotes": 6, "year": 2016, "demPct": 41.74, "repPct": 51.15, "margin": -9.41, "demVotes": 653669, "repVotes": 800983, "voteMargin": 147314, "totalVotes": 1566031, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "IA", "electoralVotes": 6, "year": 2024, "demPct": 42.52, "repPct": 55.73, "margin": 13.21, "demVotes": 707278, "repVotes": 927019, "voteMargin": 219741, "totalVotes": 1663506, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "IA", "electoralVotes": 6, "year": 2020, "demPct": 44.89, "repPct": 53.09, "margin": 8.2, "demVotes": 759061, "repVotes": 897672, "voteMargin": 138611, "totalVotes": 1690871, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "IA", "electoralVotes": 6, "year": 2016, "demPct": 41.74, "repPct": 51.15, "margin": 9.41, "demVotes": 653669, "repVotes": 800983, "voteMargin": 147314, "totalVotes": 1566031, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "ID": [
-    { "stateAbbr": "ID", "electoralVotes": 4, "year": 2024, "demPct": 30.38, "repPct": 66.87, "margin": -36.49, "demVotes": 274972, "repVotes": 605246, "voteMargin": 330274, "totalVotes": 905057, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "ID", "electoralVotes": 4, "year": 2020, "demPct": 33.07, "repPct": 63.84, "margin": -30.77, "demVotes": 287021, "repVotes": 554119, "voteMargin": 267098, "totalVotes": 867934, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "ID", "electoralVotes": 4, "year": 2016, "demPct": 27.49, "repPct": 59.26, "margin": -31.77, "demVotes": 189765, "repVotes": 409055, "voteMargin": 219290, "totalVotes": 690255, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "ID", "electoralVotes": 4, "year": 2024, "demPct": 30.38, "repPct": 66.87, "margin": 36.49, "demVotes": 274972, "repVotes": 605246, "voteMargin": 330274, "totalVotes": 905057, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "ID", "electoralVotes": 4, "year": 2020, "demPct": 33.07, "repPct": 63.84, "margin": 30.77, "demVotes": 287021, "repVotes": 554119, "voteMargin": 267098, "totalVotes": 867934, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "ID", "electoralVotes": 4, "year": 2016, "demPct": 27.49, "repPct": 59.26, "margin": 31.77, "demVotes": 189765, "repVotes": 409055, "voteMargin": 219290, "totalVotes": 690255, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "IL": [
-    { "stateAbbr": "IL", "electoralVotes": 19, "year": 2024, "demPct": 54.37, "repPct": 43.47, "margin": 10.9, "demVotes": 3062863, "repVotes": 2449079, "voteMargin": -613784, "totalVotes": 5633310, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "IL", "electoralVotes": 20, "year": 2020, "demPct": 57.54, "repPct": 40.55, "margin": 16.99, "demVotes": 3471915, "repVotes": 2446891, "voteMargin": -1025024, "totalVotes": 6033744, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "IL", "electoralVotes": 20, "year": 2016, "demPct": 55.83, "repPct": 38.76, "margin": 17.07, "demVotes": 3090729, "repVotes": 2146015, "voteMargin": -944714, "totalVotes": 5536424, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "IL", "electoralVotes": 19, "year": 2024, "demPct": 54.37, "repPct": 43.47, "margin": -10.9, "demVotes": 3062863, "repVotes": 2449079, "voteMargin": -613784, "totalVotes": 5633310, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "IL", "electoralVotes": 20, "year": 2020, "demPct": 57.54, "repPct": 40.55, "margin": -16.99, "demVotes": 3471915, "repVotes": 2446891, "voteMargin": -1025024, "totalVotes": 6033744, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "IL", "electoralVotes": 20, "year": 2016, "demPct": 55.83, "repPct": 38.76, "margin": -17.07, "demVotes": 3090729, "repVotes": 2146015, "voteMargin": -944714, "totalVotes": 5536424, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "IN": [
-    { "stateAbbr": "IN", "electoralVotes": 11, "year": 2024, "demPct": 39.62, "repPct": 58.58, "margin": -18.96, "demVotes": 1163603, "repVotes": 1720347, "voteMargin": 556744, "totalVotes": 2936677, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "IN", "electoralVotes": 11, "year": 2020, "demPct": 40.96, "repPct": 57.03, "margin": -16.07, "demVotes": 1242498, "repVotes": 1729857, "voteMargin": 487359, "totalVotes": 3033210, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "IN", "electoralVotes": 11, "year": 2016, "demPct": 37.77, "repPct": 56.94, "margin": -19.17, "demVotes": 1033126, "repVotes": 1557286, "voteMargin": 524160, "totalVotes": 2734958, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "IN", "electoralVotes": 11, "year": 2024, "demPct": 39.62, "repPct": 58.58, "margin": 18.96, "demVotes": 1163603, "repVotes": 1720347, "voteMargin": 556744, "totalVotes": 2936677, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "IN", "electoralVotes": 11, "year": 2020, "demPct": 40.96, "repPct": 57.03, "margin": 16.07, "demVotes": 1242498, "repVotes": 1729857, "voteMargin": 487359, "totalVotes": 3033210, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "IN", "electoralVotes": 11, "year": 2016, "demPct": 37.77, "repPct": 56.94, "margin": 19.17, "demVotes": 1033126, "repVotes": 1557286, "voteMargin": 524160, "totalVotes": 2734958, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "KS": [
-    { "stateAbbr": "KS", "electoralVotes": 6, "year": 2024, "demPct": 41.04, "repPct": 57.16, "margin": -16.12, "demVotes": 544853, "repVotes": 758802, "voteMargin": 213949, "totalVotes": 1327591, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "KS", "electoralVotes": 6, "year": 2020, "demPct": 41.51, "repPct": 56.14, "margin": -14.63, "demVotes": 570323, "repVotes": 771406, "voteMargin": 201083, "totalVotes": 1373986, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "KS", "electoralVotes": 6, "year": 2016, "demPct": 36.05, "repPct": 56.65, "margin": -20.6, "demVotes": 427005, "repVotes": 671018, "voteMargin": 244013, "totalVotes": 1184402, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "KS", "electoralVotes": 6, "year": 2024, "demPct": 41.04, "repPct": 57.16, "margin": 16.12, "demVotes": 544853, "repVotes": 758802, "voteMargin": 213949, "totalVotes": 1327591, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "KS", "electoralVotes": 6, "year": 2020, "demPct": 41.51, "repPct": 56.14, "margin": 14.63, "demVotes": 570323, "repVotes": 771406, "voteMargin": 201083, "totalVotes": 1373986, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "KS", "electoralVotes": 6, "year": 2016, "demPct": 36.05, "repPct": 56.65, "margin": 20.6, "demVotes": 427005, "repVotes": 671018, "voteMargin": 244013, "totalVotes": 1184402, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "KY": [
-    { "stateAbbr": "KY", "electoralVotes": 8, "year": 2024, "demPct": 33.94, "repPct": 64.47, "margin": -30.53, "demVotes": 704043, "repVotes": 1337494, "voteMargin": 633451, "totalVotes": 2074530, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "KY", "electoralVotes": 8, "year": 2020, "demPct": 36.15, "repPct": 62.09, "margin": -25.94, "demVotes": 772474, "repVotes": 1326646, "voteMargin": 554172, "totalVotes": 2136768, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "KY", "electoralVotes": 8, "year": 2016, "demPct": 32.68, "repPct": 62.52, "margin": -29.84, "demVotes": 628854, "repVotes": 1202971, "voteMargin": 574117, "totalVotes": 1924149, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "KY", "electoralVotes": 8, "year": 2024, "demPct": 33.94, "repPct": 64.47, "margin": 30.53, "demVotes": 704043, "repVotes": 1337494, "voteMargin": 633451, "totalVotes": 2074530, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "KY", "electoralVotes": 8, "year": 2020, "demPct": 36.15, "repPct": 62.09, "margin": 25.94, "demVotes": 772474, "repVotes": 1326646, "voteMargin": 554172, "totalVotes": 2136768, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "KY", "electoralVotes": 8, "year": 2016, "demPct": 32.68, "repPct": 62.52, "margin": 29.84, "demVotes": 628854, "repVotes": 1202971, "voteMargin": 574117, "totalVotes": 1924149, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "LA": [
-    { "stateAbbr": "LA", "electoralVotes": 8, "year": 2024, "demPct": 38.21, "repPct": 60.22, "margin": -22.01, "demVotes": 766870, "repVotes": 1208505, "voteMargin": 441635, "totalVotes": 2006975, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "LA", "electoralVotes": 8, "year": 2020, "demPct": 39.85, "repPct": 58.46, "margin": -18.61, "demVotes": 856034, "repVotes": 1255776, "voteMargin": 399742, "totalVotes": 2148062, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "LA", "electoralVotes": 8, "year": 2016, "demPct": 38.45, "repPct": 58.09, "margin": -19.64, "demVotes": 780154, "repVotes": 1178638, "voteMargin": 398484, "totalVotes": 2029032, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "LA", "electoralVotes": 8, "year": 2024, "demPct": 38.21, "repPct": 60.22, "margin": 22.01, "demVotes": 766870, "repVotes": 1208505, "voteMargin": 441635, "totalVotes": 2006975, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "LA", "electoralVotes": 8, "year": 2020, "demPct": 39.85, "repPct": 58.46, "margin": 18.61, "demVotes": 856034, "repVotes": 1255776, "voteMargin": 399742, "totalVotes": 2148062, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "LA", "electoralVotes": 8, "year": 2016, "demPct": 38.45, "repPct": 58.09, "margin": 19.64, "demVotes": 780154, "repVotes": 1178638, "voteMargin": 398484, "totalVotes": 2029032, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "MA": [
-    { "stateAbbr": "MA", "electoralVotes": 11, "year": 2024, "demPct": 61.22, "repPct": 36.02, "margin": 25.2, "demVotes": 2126518, "repVotes": 1251303, "voteMargin": -875215, "totalVotes": 3473668, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "MA", "electoralVotes": 11, "year": 2020, "demPct": 65.6, "repPct": 32.14, "margin": 33.46, "demVotes": 2382202, "repVotes": 1167202, "voteMargin": -1215000, "totalVotes": 3631402, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "MA", "electoralVotes": 11, "year": 2016, "demPct": 60.01, "repPct": 32.81, "margin": 27.2, "demVotes": 1995196, "repVotes": 1090893, "voteMargin": -904303, "totalVotes": 3325046, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "MA", "electoralVotes": 11, "year": 2024, "demPct": 61.22, "repPct": 36.02, "margin": -25.2, "demVotes": 2126518, "repVotes": 1251303, "voteMargin": -875215, "totalVotes": 3473668, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "MA", "electoralVotes": 11, "year": 2020, "demPct": 65.6, "repPct": 32.14, "margin": -33.46, "demVotes": 2382202, "repVotes": 1167202, "voteMargin": -1215000, "totalVotes": 3631402, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "MA", "electoralVotes": 11, "year": 2016, "demPct": 60.01, "repPct": 32.81, "margin": -27.2, "demVotes": 1995196, "repVotes": 1090893, "voteMargin": -904303, "totalVotes": 3325046, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "MD": [
-    { "stateAbbr": "MD", "electoralVotes": 10, "year": 2024, "demPct": 62.62, "repPct": 34.08, "margin": 28.54, "demVotes": 1902577, "repVotes": 1035550, "voteMargin": -867027, "totalVotes": 3038334, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "MD", "electoralVotes": 10, "year": 2020, "demPct": 65.36, "repPct": 32.15, "margin": 33.21, "demVotes": 1985023, "repVotes": 976414, "voteMargin": -1008609, "totalVotes": 3037030, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "MD", "electoralVotes": 10, "year": 2016, "demPct": 60.33, "repPct": 33.91, "margin": 26.42, "demVotes": 1677928, "repVotes": 943169, "voteMargin": -734759, "totalVotes": 2781446, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "MD", "electoralVotes": 10, "year": 2024, "demPct": 62.62, "repPct": 34.08, "margin": -28.54, "demVotes": 1902577, "repVotes": 1035550, "voteMargin": -867027, "totalVotes": 3038334, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "MD", "electoralVotes": 10, "year": 2020, "demPct": 65.36, "repPct": 32.15, "margin": -33.21, "demVotes": 1985023, "repVotes": 976414, "voteMargin": -1008609, "totalVotes": 3037030, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "MD", "electoralVotes": 10, "year": 2016, "demPct": 60.33, "repPct": 33.91, "margin": -26.42, "demVotes": 1677928, "repVotes": 943169, "voteMargin": -734759, "totalVotes": 2781446, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "ME": [
-    { "stateAbbr": "ME", "electoralVotes": 2, "year": 2024, "demPct": 52.4, "repPct": 45.46, "margin": 6.94, "demVotes": 435652, "repVotes": 377977, "voteMargin": -57675, "totalVotes": 831375, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "ME", "electoralVotes": 2, "year": 2020, "demPct": 53.09, "repPct": 44.02, "margin": 9.07, "demVotes": 435072, "repVotes": 360737, "voteMargin": -74335, "totalVotes": 819461, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "ME", "electoralVotes": 2, "year": 2016, "demPct": 47.83, "repPct": 44.87, "margin": 2.96, "demVotes": 357735, "repVotes": 335593, "voteMargin": -22142, "totalVotes": 747927, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "ME", "electoralVotes": 2, "year": 2024, "demPct": 52.4, "repPct": 45.46, "margin": -6.94, "demVotes": 435652, "repVotes": 377977, "voteMargin": -57675, "totalVotes": 831375, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "ME", "electoralVotes": 2, "year": 2020, "demPct": 53.09, "repPct": 44.02, "margin": -9.07, "demVotes": 435072, "repVotes": 360737, "voteMargin": -74335, "totalVotes": 819461, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "ME", "electoralVotes": 2, "year": 2016, "demPct": 47.83, "repPct": 44.87, "margin": -2.96, "demVotes": 357735, "repVotes": 335593, "voteMargin": -22142, "totalVotes": 747927, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "ME-01": [
-    { "stateAbbr": "ME-01", "electoralVotes": 1, "year": 2024, "demPct": 59.69, "repPct": 38.09, "margin": 21.6, "demVotes": 258863, "repVotes": 165214, "voteMargin": -93649, "totalVotes": 433709, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "ME-01", "electoralVotes": 1, "year": 2020, "demPct": 60.11, "repPct": 37.02, "margin": 23.09, "demVotes": 266376, "repVotes": 164045, "voteMargin": -102331, "totalVotes": 443112, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "ME-01", "electoralVotes": 1, "year": 2016, "demPct": 53.96, "repPct": 39.15, "margin": 14.81, "demVotes": 212774, "repVotes": 154384, "voteMargin": -58390, "totalVotes": 394329, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "ME-01", "electoralVotes": 1, "year": 2024, "demPct": 59.69, "repPct": 38.09, "margin": -21.6, "demVotes": 258863, "repVotes": 165214, "voteMargin": -93649, "totalVotes": 433709, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "ME-01", "electoralVotes": 1, "year": 2020, "demPct": 60.11, "repPct": 37.02, "margin": -23.09, "demVotes": 266376, "repVotes": 164045, "voteMargin": -102331, "totalVotes": 443112, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "ME-01", "electoralVotes": 1, "year": 2016, "demPct": 53.96, "repPct": 39.15, "margin": -14.81, "demVotes": 212774, "repVotes": 154384, "voteMargin": -58390, "totalVotes": 394329, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "ME-02": [
-    { "stateAbbr": "ME-02", "electoralVotes": 1, "year": 2024, "demPct": 44.46, "repPct": 53.5, "margin": -9.04, "demVotes": 176789, "repVotes": 212763, "voteMargin": 35974, "totalVotes": 397666, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "ME-02", "electoralVotes": 1, "year": 2020, "demPct": 44.82, "repPct": 52.26, "margin": -7.44, "demVotes": 168696, "repVotes": 196692, "voteMargin": 27996, "totalVotes": 376349, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "ME-02", "electoralVotes": 1, "year": 2016, "demPct": 40.98, "repPct": 51.26, "margin": -10.28, "demVotes": 144817, "repVotes": 181177, "voteMargin": 36360, "totalVotes": 353416, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "ME-02", "electoralVotes": 1, "year": 2024, "demPct": 44.46, "repPct": 53.5, "margin": 9.04, "demVotes": 176789, "repVotes": 212763, "voteMargin": 35974, "totalVotes": 397666, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "ME-02", "electoralVotes": 1, "year": 2020, "demPct": 44.82, "repPct": 52.26, "margin": 7.44, "demVotes": 168696, "repVotes": 196692, "voteMargin": 27996, "totalVotes": 376349, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "ME-02", "electoralVotes": 1, "year": 2016, "demPct": 40.98, "repPct": 51.26, "margin": 10.28, "demVotes": 144817, "repVotes": 181177, "voteMargin": 36360, "totalVotes": 353416, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "MI": [
-    { "stateAbbr": "MI", "electoralVotes": 15, "year": 2024, "demPct": 48.31, "repPct": 49.73, "margin": -1.42, "demVotes": 2736533, "repVotes": 2816636, "voteMargin": 80103, "totalVotes": 5664186, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "MI", "electoralVotes": 16, "year": 2020, "demPct": 50.62, "repPct": 47.84, "margin": 2.78, "demVotes": 2804040, "repVotes": 2649852, "voteMargin": -154188, "totalVotes": 5539302, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "MI", "electoralVotes": 16, "year": 2016, "demPct": 47.27, "repPct": 47.5, "margin": -0.23, "demVotes": 2268839, "repVotes": 2279543, "voteMargin": 10704, "totalVotes": 4799284, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "MI", "electoralVotes": 15, "year": 2024, "demPct": 48.31, "repPct": 49.73, "margin": 1.42, "demVotes": 2736533, "repVotes": 2816636, "voteMargin": 80103, "totalVotes": 5664186, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "MI", "electoralVotes": 16, "year": 2020, "demPct": 50.62, "repPct": 47.84, "margin": -2.78, "demVotes": 2804040, "repVotes": 2649852, "voteMargin": -154188, "totalVotes": 5539302, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "MI", "electoralVotes": 16, "year": 2016, "demPct": 47.27, "repPct": 47.5, "margin": 0.23, "demVotes": 2268839, "repVotes": 2279543, "voteMargin": 10704, "totalVotes": 4799284, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "MN": [
-    { "stateAbbr": "MN", "electoralVotes": 10, "year": 2024, "demPct": 50.92, "repPct": 46.68, "margin": 4.24, "demVotes": 1656979, "repVotes": 1519032, "voteMargin": -137947, "totalVotes": 3253920, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "MN", "electoralVotes": 10, "year": 2020, "demPct": 52.4, "repPct": 45.28, "margin": 7.12, "demVotes": 1717077, "repVotes": 1484065, "voteMargin": -233012, "totalVotes": 3277171, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "MN", "electoralVotes": 10, "year": 2016, "demPct": 46.44, "repPct": 44.92, "margin": 1.52, "demVotes": 1367716, "repVotes": 1322951, "voteMargin": -44765, "totalVotes": 2944813, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "MN", "electoralVotes": 10, "year": 2024, "demPct": 50.92, "repPct": 46.68, "margin": -4.24, "demVotes": 1656979, "repVotes": 1519032, "voteMargin": -137947, "totalVotes": 3253920, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "MN", "electoralVotes": 10, "year": 2020, "demPct": 52.4, "repPct": 45.28, "margin": -7.12, "demVotes": 1717077, "repVotes": 1484065, "voteMargin": -233012, "totalVotes": 3277171, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "MN", "electoralVotes": 10, "year": 2016, "demPct": 46.44, "repPct": 44.92, "margin": -1.52, "demVotes": 1367716, "repVotes": 1322951, "voteMargin": -44765, "totalVotes": 2944813, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "MO": [
-    { "stateAbbr": "MO", "electoralVotes": 10, "year": 2024, "demPct": 40.08, "repPct": 58.49, "margin": -18.41, "demVotes": 1200599, "repVotes": 1751986, "voteMargin": 551387, "totalVotes": 2995327, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "MO", "electoralVotes": 10, "year": 2020, "demPct": 41.41, "repPct": 56.8, "margin": -15.39, "demVotes": 1253014, "repVotes": 1718736, "voteMargin": 465722, "totalVotes": 3025962, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "MO", "electoralVotes": 10, "year": 2016, "demPct": 38.14, "repPct": 56.77, "margin": -18.63, "demVotes": 1071068, "repVotes": 1594511, "voteMargin": 523443, "totalVotes": 2808605, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "MO", "electoralVotes": 10, "year": 2024, "demPct": 40.08, "repPct": 58.49, "margin": 18.41, "demVotes": 1200599, "repVotes": 1751986, "voteMargin": 551387, "totalVotes": 2995327, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "MO", "electoralVotes": 10, "year": 2020, "demPct": 41.41, "repPct": 56.8, "margin": 15.39, "demVotes": 1253014, "repVotes": 1718736, "voteMargin": 465722, "totalVotes": 3025962, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "MO", "electoralVotes": 10, "year": 2016, "demPct": 38.14, "repPct": 56.77, "margin": 18.63, "demVotes": 1071068, "repVotes": 1594511, "voteMargin": 523443, "totalVotes": 2808605, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "MS": [
-    { "stateAbbr": "MS", "electoralVotes": 6, "year": 2024, "demPct": 38, "repPct": 60.89, "margin": -22.89, "demVotes": 466668, "repVotes": 747744, "voteMargin": 281076, "totalVotes": 1228008, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "MS", "electoralVotes": 6, "year": 2020, "demPct": 41.06, "repPct": 57.6, "margin": -16.54, "demVotes": 539398, "repVotes": 756764, "voteMargin": 217366, "totalVotes": 1313759, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "MS", "electoralVotes": 6, "year": 2016, "demPct": 40.11, "repPct": 57.94, "margin": -17.83, "demVotes": 485131, "repVotes": 700714, "voteMargin": 215583, "totalVotes": 1209357, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "MS", "electoralVotes": 6, "year": 2024, "demPct": 38, "repPct": 60.89, "margin": 22.89, "demVotes": 466668, "repVotes": 747744, "voteMargin": 281076, "totalVotes": 1228008, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "MS", "electoralVotes": 6, "year": 2020, "demPct": 41.06, "repPct": 57.6, "margin": 16.54, "demVotes": 539398, "repVotes": 756764, "voteMargin": 217366, "totalVotes": 1313759, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "MS", "electoralVotes": 6, "year": 2016, "demPct": 40.11, "repPct": 57.94, "margin": 17.83, "demVotes": 485131, "repVotes": 700714, "voteMargin": 215583, "totalVotes": 1209357, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "MT": [
-    { "stateAbbr": "MT", "electoralVotes": 4, "year": 2024, "demPct": 38.46, "repPct": 58.39, "margin": -19.93, "demVotes": 231906, "repVotes": 352079, "voteMargin": 120173, "totalVotes": 602990, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "MT", "electoralVotes": 3, "year": 2020, "demPct": 40.55, "repPct": 56.92, "margin": -16.37, "demVotes": 244786, "repVotes": 343602, "voteMargin": 98816, "totalVotes": 603674, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "MT", "electoralVotes": 3, "year": 2016, "demPct": 35.75, "repPct": 56.17, "margin": -20.42, "demVotes": 177709, "repVotes": 279240, "voteMargin": 101531, "totalVotes": 497147, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "MT", "electoralVotes": 4, "year": 2024, "demPct": 38.46, "repPct": 58.39, "margin": 19.93, "demVotes": 231906, "repVotes": 352079, "voteMargin": 120173, "totalVotes": 602990, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "MT", "electoralVotes": 3, "year": 2020, "demPct": 40.55, "repPct": 56.92, "margin": 16.37, "demVotes": 244786, "repVotes": 343602, "voteMargin": 98816, "totalVotes": 603674, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "MT", "electoralVotes": 3, "year": 2016, "demPct": 35.75, "repPct": 56.17, "margin": 20.42, "demVotes": 177709, "repVotes": 279240, "voteMargin": 101531, "totalVotes": 497147, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "NC": [
-    { "stateAbbr": "NC", "electoralVotes": 16, "year": 2024, "demPct": 47.65, "repPct": 50.86, "margin": -3.21, "demVotes": 2715375, "repVotes": 2898423, "voteMargin": 183048, "totalVotes": 5699141, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "NC", "electoralVotes": 15, "year": 2020, "demPct": 48.59, "repPct": 49.93, "margin": -1.34, "demVotes": 2684292, "repVotes": 2758775, "voteMargin": 74483, "totalVotes": 5524804, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "NC", "electoralVotes": 15, "year": 2016, "demPct": 46.17, "repPct": 49.83, "margin": -3.66, "demVotes": 2189316, "repVotes": 2362631, "voteMargin": 173315, "totalVotes": 4741564, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "NC", "electoralVotes": 16, "year": 2024, "demPct": 47.65, "repPct": 50.86, "margin": 3.21, "demVotes": 2715375, "repVotes": 2898423, "voteMargin": 183048, "totalVotes": 5699141, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "NC", "electoralVotes": 15, "year": 2020, "demPct": 48.59, "repPct": 49.93, "margin": 1.34, "demVotes": 2684292, "repVotes": 2758775, "voteMargin": 74483, "totalVotes": 5524804, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "NC", "electoralVotes": 15, "year": 2016, "demPct": 46.17, "repPct": 49.83, "margin": 3.66, "demVotes": 2189316, "repVotes": 2362631, "voteMargin": 173315, "totalVotes": 4741564, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "ND": [
-    { "stateAbbr": "ND", "electoralVotes": 3, "year": 2024, "demPct": 30.51, "repPct": 66.96, "margin": -36.45, "demVotes": 112327, "repVotes": 246505, "voteMargin": 134178, "totalVotes": 368155, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "ND", "electoralVotes": 3, "year": 2020, "demPct": 31.78, "repPct": 65.12, "margin": -33.34, "demVotes": 115042, "repVotes": 235751, "voteMargin": 120709, "totalVotes": 362024, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "ND", "electoralVotes": 3, "year": 2016, "demPct": 27.23, "repPct": 62.96, "margin": -35.73, "demVotes": 93758, "repVotes": 216794, "voteMargin": 123036, "totalVotes": 344360, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "ND", "electoralVotes": 3, "year": 2024, "demPct": 30.51, "repPct": 66.96, "margin": 36.45, "demVotes": 112327, "repVotes": 246505, "voteMargin": 134178, "totalVotes": 368155, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "ND", "electoralVotes": 3, "year": 2020, "demPct": 31.78, "repPct": 65.12, "margin": 33.34, "demVotes": 115042, "repVotes": 235751, "voteMargin": 120709, "totalVotes": 362024, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "ND", "electoralVotes": 3, "year": 2016, "demPct": 27.23, "repPct": 62.96, "margin": 35.73, "demVotes": 93758, "repVotes": 216794, "voteMargin": 123036, "totalVotes": 344360, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "NE": [
-    { "stateAbbr": "NE", "electoralVotes": 2, "year": 2024, "demPct": 38.86, "repPct": 59.32, "margin": -20.46, "demVotes": 369995, "repVotes": 564816, "voteMargin": 194821, "totalVotes": 952182, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "NE", "electoralVotes": 2, "year": 2020, "demPct": 39.17, "repPct": 58.22, "margin": -19.05, "demVotes": 374583, "repVotes": 556846, "voteMargin": 182263, "totalVotes": 956383, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "NE", "electoralVotes": 2, "year": 2016, "demPct": 33.7, "repPct": 58.75, "margin": -25.05, "demVotes": 284494, "repVotes": 495961, "voteMargin": 211467, "totalVotes": 844227, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "NE", "electoralVotes": 2, "year": 2024, "demPct": 38.86, "repPct": 59.32, "margin": 20.46, "demVotes": 369995, "repVotes": 564816, "voteMargin": 194821, "totalVotes": 952182, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "NE", "electoralVotes": 2, "year": 2020, "demPct": 39.17, "repPct": 58.22, "margin": 19.05, "demVotes": 374583, "repVotes": 556846, "voteMargin": 182263, "totalVotes": 956383, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "NE", "electoralVotes": 2, "year": 2016, "demPct": 33.7, "repPct": 58.75, "margin": 25.05, "demVotes": 284494, "repVotes": 495961, "voteMargin": 211467, "totalVotes": 844227, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "NE-01": [
-    { "stateAbbr": "NE-01", "electoralVotes": 1, "year": 2024, "demPct": 42.52, "repPct": 55.49, "margin": -12.97, "demVotes": 136153, "repVotes": 177666, "voteMargin": 41513, "totalVotes": 320194, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "NE-01", "electoralVotes": 1, "year": 2020, "demPct": 41.09, "repPct": 56.01, "margin": -14.92, "demVotes": 132261, "repVotes": 180290, "voteMargin": 48029, "totalVotes": 321886, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "NE-01", "electoralVotes": 1, "year": 2016, "demPct": 35.46, "repPct": 56.18, "margin": -20.72, "demVotes": 100132, "repVotes": 158642, "voteMargin": 58510, "totalVotes": 282338, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "NE-01", "electoralVotes": 1, "year": 2024, "demPct": 42.52, "repPct": 55.49, "margin": 12.97, "demVotes": 136153, "repVotes": 177666, "voteMargin": 41513, "totalVotes": 320194, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "NE-01", "electoralVotes": 1, "year": 2020, "demPct": 41.09, "repPct": 56.01, "margin": 14.92, "demVotes": 132261, "repVotes": 180290, "voteMargin": 48029, "totalVotes": 321886, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "NE-01", "electoralVotes": 1, "year": 2016, "demPct": 35.46, "repPct": 56.18, "margin": 20.72, "demVotes": 100132, "repVotes": 158642, "voteMargin": 58510, "totalVotes": 282338, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "NE-02": [
-    { "stateAbbr": "NE-02", "electoralVotes": 1, "year": 2024, "demPct": 51.32, "repPct": 46.73, "margin": 4.59, "demVotes": 163541, "repVotes": 148905, "voteMargin": -14636, "totalVotes": 318646, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "NE-02", "electoralVotes": 1, "year": 2020, "demPct": 51.95, "repPct": 45.45, "margin": 6.5, "demVotes": 176468, "repVotes": 154377, "voteMargin": -22091, "totalVotes": 339666, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "NE-02", "electoralVotes": 1, "year": 2016, "demPct": 44.92, "repPct": 47.16, "margin": -2.24, "demVotes": 131030, "repVotes": 137564, "voteMargin": 6534, "totalVotes": 291680, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "NE-02", "electoralVotes": 1, "year": 2024, "demPct": 51.32, "repPct": 46.73, "margin": -4.59, "demVotes": 163541, "repVotes": 148905, "voteMargin": -14636, "totalVotes": 318646, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "NE-02", "electoralVotes": 1, "year": 2020, "demPct": 51.95, "repPct": 45.45, "margin": -6.5, "demVotes": 176468, "repVotes": 154377, "voteMargin": -22091, "totalVotes": 339666, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "NE-02", "electoralVotes": 1, "year": 2016, "demPct": 44.92, "repPct": 47.16, "margin": 2.24, "demVotes": 131030, "repVotes": 137564, "voteMargin": 6534, "totalVotes": 291680, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "NE-03": [
-    { "stateAbbr": "NE-03", "electoralVotes": 1, "year": 2024, "demPct": 22.44, "repPct": 76.03, "margin": -53.59, "demVotes": 70301, "repVotes": 238245, "voteMargin": 167944, "totalVotes": 313342, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "NE-03", "electoralVotes": 1, "year": 2020, "demPct": 22.34, "repPct": 75.36, "margin": -53.02, "demVotes": 65854, "repVotes": 222179, "voteMargin": 156325, "totalVotes": 294831, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "NE-03", "electoralVotes": 1, "year": 2016, "demPct": 19.73, "repPct": 73.92, "margin": -54.19, "demVotes": 53332, "repVotes": 199755, "voteMargin": 146423, "totalVotes": 270109, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "NE-03", "electoralVotes": 1, "year": 2024, "demPct": 22.44, "repPct": 76.03, "margin": 53.59, "demVotes": 70301, "repVotes": 238245, "voteMargin": 167944, "totalVotes": 313342, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "NE-03", "electoralVotes": 1, "year": 2020, "demPct": 22.34, "repPct": 75.36, "margin": 53.02, "demVotes": 65854, "repVotes": 222179, "voteMargin": 156325, "totalVotes": 294831, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "NE-03", "electoralVotes": 1, "year": 2016, "demPct": 19.73, "repPct": 73.92, "margin": 54.19, "demVotes": 53332, "repVotes": 199755, "voteMargin": 146423, "totalVotes": 270109, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "NH": [
-    { "stateAbbr": "NH", "electoralVotes": 4, "year": 2024, "demPct": 50.65, "repPct": 47.87, "margin": 2.78, "demVotes": 418488, "repVotes": 395523, "voteMargin": -22965, "totalVotes": 826189, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "NH", "electoralVotes": 4, "year": 2020, "demPct": 52.71, "repPct": 45.36, "margin": 7.35, "demVotes": 424937, "repVotes": 365660, "voteMargin": -59277, "totalVotes": 806205, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "NH", "electoralVotes": 4, "year": 2016, "demPct": 46.83, "repPct": 46.46, "margin": 0.37, "demVotes": 348526, "repVotes": 345790, "voteMargin": -2736, "totalVotes": 744296, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "NH", "electoralVotes": 4, "year": 2024, "demPct": 50.65, "repPct": 47.87, "margin": -2.78, "demVotes": 418488, "repVotes": 395523, "voteMargin": -22965, "totalVotes": 826189, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "NH", "electoralVotes": 4, "year": 2020, "demPct": 52.71, "repPct": 45.36, "margin": -7.35, "demVotes": 424937, "repVotes": 365660, "voteMargin": -59277, "totalVotes": 806205, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "NH", "electoralVotes": 4, "year": 2016, "demPct": 46.83, "repPct": 46.46, "margin": -0.37, "demVotes": 348526, "repVotes": 345790, "voteMargin": -2736, "totalVotes": 744296, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "NJ": [
-    { "stateAbbr": "NJ", "electoralVotes": 14, "year": 2024, "demPct": 51.97, "repPct": 46.06, "margin": 5.91, "demVotes": 2220713, "repVotes": 1968215, "voteMargin": -252498, "totalVotes": 4272725, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "NJ", "electoralVotes": 14, "year": 2020, "demPct": 57.33, "repPct": 41.4, "margin": 15.93, "demVotes": 2608400, "repVotes": 1883313, "voteMargin": -725087, "totalVotes": 4549457, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "NJ", "electoralVotes": 14, "year": 2016, "demPct": 55.45, "repPct": 41.35, "margin": 14.1, "demVotes": 2148278, "repVotes": 1601933, "voteMargin": -546345, "totalVotes": 3874046, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "NJ", "electoralVotes": 14, "year": 2024, "demPct": 51.97, "repPct": 46.06, "margin": -5.91, "demVotes": 2220713, "repVotes": 1968215, "voteMargin": -252498, "totalVotes": 4272725, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "NJ", "electoralVotes": 14, "year": 2020, "demPct": 57.33, "repPct": 41.4, "margin": -15.93, "demVotes": 2608400, "repVotes": 1883313, "voteMargin": -725087, "totalVotes": 4549457, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "NJ", "electoralVotes": 14, "year": 2016, "demPct": 55.45, "repPct": 41.35, "margin": -14.1, "demVotes": 2148278, "repVotes": 1601933, "voteMargin": -546345, "totalVotes": 3874046, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "NM": [
-    { "stateAbbr": "NM", "electoralVotes": 5, "year": 2024, "demPct": 51.85, "repPct": 45.85, "margin": 6, "demVotes": 478802, "repVotes": 423391, "voteMargin": -55411, "totalVotes": 923403, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "NM", "electoralVotes": 5, "year": 2020, "demPct": 54.29, "repPct": 43.5, "margin": 10.79, "demVotes": 501614, "repVotes": 401894, "voteMargin": -99720, "totalVotes": 923965, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "NM", "electoralVotes": 5, "year": 2016, "demPct": 48.26, "repPct": 40.04, "margin": 8.22, "demVotes": 385234, "repVotes": 319667, "voteMargin": -65567, "totalVotes": 798319, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "NM", "electoralVotes": 5, "year": 2024, "demPct": 51.85, "repPct": 45.85, "margin": -6, "demVotes": 478802, "repVotes": 423391, "voteMargin": -55411, "totalVotes": 923403, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "NM", "electoralVotes": 5, "year": 2020, "demPct": 54.29, "repPct": 43.5, "margin": -10.79, "demVotes": 501614, "repVotes": 401894, "voteMargin": -99720, "totalVotes": 923965, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "NM", "electoralVotes": 5, "year": 2016, "demPct": 48.26, "repPct": 40.04, "margin": -8.22, "demVotes": 385234, "repVotes": 319667, "voteMargin": -65567, "totalVotes": 798319, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "NV": [
-    { "stateAbbr": "NV", "electoralVotes": 6, "year": 2024, "demPct": 47.49, "repPct": 50.59, "margin": -3.1, "demVotes": 705197, "repVotes": 751205, "voteMargin": 46008, "totalVotes": 1484840, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "NV", "electoralVotes": 6, "year": 2020, "demPct": 50.06, "repPct": 47.67, "margin": 2.39, "demVotes": 703486, "repVotes": 669890, "voteMargin": -33596, "totalVotes": 1405376, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "NV", "electoralVotes": 6, "year": 2016, "demPct": 47.92, "repPct": 45.5, "margin": 2.42, "demVotes": 539260, "repVotes": 512058, "voteMargin": -27202, "totalVotes": 1125385, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "NV", "electoralVotes": 6, "year": 2024, "demPct": 47.49, "repPct": 50.59, "margin": 3.1, "demVotes": 705197, "repVotes": 751205, "voteMargin": 46008, "totalVotes": 1484840, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "NV", "electoralVotes": 6, "year": 2020, "demPct": 50.06, "repPct": 47.67, "margin": -2.39, "demVotes": 703486, "repVotes": 669890, "voteMargin": -33596, "totalVotes": 1405376, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "NV", "electoralVotes": 6, "year": 2016, "demPct": 47.92, "repPct": 45.5, "margin": -2.42, "demVotes": 539260, "repVotes": 512058, "voteMargin": -27202, "totalVotes": 1125385, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "NY": [
-    { "stateAbbr": "NY", "electoralVotes": 28, "year": 2024, "demPct": 55.91, "repPct": 43.31, "margin": 12.6, "demVotes": 4619195, "repVotes": 3578899, "voteMargin": -1040296, "totalVotes": 8262495, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "NY", "electoralVotes": 29, "year": 2020, "demPct": 60.87, "repPct": 37.74, "margin": 23.13, "demVotes": 5244886, "repVotes": 3251997, "voteMargin": -1992889, "totalVotes": 8616861, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "NY", "electoralVotes": 29, "year": 2016, "demPct": 59.01, "repPct": 36.52, "margin": 22.49, "demVotes": 4556124, "repVotes": 2819534, "voteMargin": -1736590, "totalVotes": 7721453, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "NY", "electoralVotes": 28, "year": 2024, "demPct": 55.91, "repPct": 43.31, "margin": -12.6, "demVotes": 4619195, "repVotes": 3578899, "voteMargin": -1040296, "totalVotes": 8262495, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "NY", "electoralVotes": 29, "year": 2020, "demPct": 60.87, "repPct": 37.74, "margin": -23.13, "demVotes": 5244886, "repVotes": 3251997, "voteMargin": -1992889, "totalVotes": 8616861, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "NY", "electoralVotes": 29, "year": 2016, "demPct": 59.01, "repPct": 36.52, "margin": -22.49, "demVotes": 4556124, "repVotes": 2819534, "voteMargin": -1736590, "totalVotes": 7721453, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "OH": [
-    { "stateAbbr": "OH", "electoralVotes": 17, "year": 2024, "demPct": 43.93, "repPct": 55.14, "margin": -11.21, "demVotes": 2533699, "repVotes": 3180116, "voteMargin": 646417, "totalVotes": 5767788, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "OH", "electoralVotes": 18, "year": 2020, "demPct": 45.24, "repPct": 53.27, "margin": -8.03, "demVotes": 2679165, "repVotes": 3154834, "voteMargin": 475669, "totalVotes": 5922202, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "OH", "electoralVotes": 18, "year": 2016, "demPct": 43.56, "repPct": 51.69, "margin": -8.13, "demVotes": 2394164, "repVotes": 2841005, "voteMargin": 446841, "totalVotes": 5496487, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "OH", "electoralVotes": 17, "year": 2024, "demPct": 43.93, "repPct": 55.14, "margin": 11.21, "demVotes": 2533699, "repVotes": 3180116, "voteMargin": 646417, "totalVotes": 5767788, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "OH", "electoralVotes": 18, "year": 2020, "demPct": 45.24, "repPct": 53.27, "margin": 8.03, "demVotes": 2679165, "repVotes": 3154834, "voteMargin": 475669, "totalVotes": 5922202, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "OH", "electoralVotes": 18, "year": 2016, "demPct": 43.56, "repPct": 51.69, "margin": 8.13, "demVotes": 2394164, "repVotes": 2841005, "voteMargin": 446841, "totalVotes": 5496487, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "OK": [
-    { "stateAbbr": "OK", "electoralVotes": 7, "year": 2024, "demPct": 31.9, "repPct": 66.16, "margin": -34.26, "demVotes": 499599, "repVotes": 1036213, "voteMargin": 536614, "totalVotes": 1566173, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "OK", "electoralVotes": 7, "year": 2020, "demPct": 32.29, "repPct": 65.37, "margin": -33.08, "demVotes": 503890, "repVotes": 1020280, "voteMargin": 516390, "totalVotes": 1560699, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "OK", "electoralVotes": 7, "year": 2016, "demPct": 28.93, "repPct": 65.32, "margin": -36.39, "demVotes": 420375, "repVotes": 949136, "voteMargin": 528761, "totalVotes": 1452992, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "OK", "electoralVotes": 7, "year": 2024, "demPct": 31.9, "repPct": 66.16, "margin": 34.26, "demVotes": 499599, "repVotes": 1036213, "voteMargin": 536614, "totalVotes": 1566173, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "OK", "electoralVotes": 7, "year": 2020, "demPct": 32.29, "repPct": 65.37, "margin": 33.08, "demVotes": 503890, "repVotes": 1020280, "voteMargin": 516390, "totalVotes": 1560699, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "OK", "electoralVotes": 7, "year": 2016, "demPct": 28.93, "repPct": 65.32, "margin": 36.39, "demVotes": 420375, "repVotes": 949136, "voteMargin": 528761, "totalVotes": 1452992, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "OR": [
-    { "stateAbbr": "OR", "electoralVotes": 8, "year": 2024, "demPct": 55.27, "repPct": 40.97, "margin": 14.3, "demVotes": 1240600, "repVotes": 919480, "voteMargin": -321120, "totalVotes": 2244493, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "OR", "electoralVotes": 7, "year": 2020, "demPct": 56.45, "repPct": 40.37, "margin": 16.08, "demVotes": 1340383, "repVotes": 958448, "voteMargin": -381935, "totalVotes": 2374321, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "OR", "electoralVotes": 7, "year": 2016, "demPct": 50.07, "repPct": 39.09, "margin": 10.98, "demVotes": 1002106, "repVotes": 782403, "voteMargin": -219703, "totalVotes": 2001336, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "OR", "electoralVotes": 8, "year": 2024, "demPct": 55.27, "repPct": 40.97, "margin": -14.3, "demVotes": 1240600, "repVotes": 919480, "voteMargin": -321120, "totalVotes": 2244493, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "OR", "electoralVotes": 7, "year": 2020, "demPct": 56.45, "repPct": 40.37, "margin": -16.08, "demVotes": 1340383, "repVotes": 958448, "voteMargin": -381935, "totalVotes": 2374321, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "OR", "electoralVotes": 7, "year": 2016, "demPct": 50.07, "repPct": 39.09, "margin": -10.98, "demVotes": 1002106, "repVotes": 782403, "voteMargin": -219703, "totalVotes": 2001336, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "PA": [
-    { "stateAbbr": "PA", "electoralVotes": 19, "year": 2024, "demPct": 48.66, "repPct": 50.37, "margin": -1.71, "demVotes": 3423042, "repVotes": 3543308, "voteMargin": 120266, "totalVotes": 7058732, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "PA", "electoralVotes": 20, "year": 2020, "demPct": 49.85, "repPct": 48.69, "margin": 1.16, "demVotes": 3458229, "repVotes": 3377674, "voteMargin": -80555, "totalVotes": 6936976, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "PA", "electoralVotes": 20, "year": 2016, "demPct": 47.46, "repPct": 48.18, "margin": -0.72, "demVotes": 2926441, "repVotes": 2970733, "voteMargin": 44292, "totalVotes": 6165478, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "PA", "electoralVotes": 19, "year": 2024, "demPct": 48.66, "repPct": 50.37, "margin": 1.71, "demVotes": 3423042, "repVotes": 3543308, "voteMargin": 120266, "totalVotes": 7058732, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "PA", "electoralVotes": 20, "year": 2020, "demPct": 49.85, "repPct": 48.69, "margin": -1.16, "demVotes": 3458229, "repVotes": 3377674, "voteMargin": -80555, "totalVotes": 6936976, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "PA", "electoralVotes": 20, "year": 2016, "demPct": 47.46, "repPct": 48.18, "margin": 0.72, "demVotes": 2926441, "repVotes": 2970733, "voteMargin": 44292, "totalVotes": 6165478, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "RI": [
-    { "stateAbbr": "RI", "electoralVotes": 4, "year": 2024, "demPct": 55.54, "repPct": 41.76, "margin": 13.78, "demVotes": 285156, "repVotes": 214406, "voteMargin": -70750, "totalVotes": 513386, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "RI", "electoralVotes": 4, "year": 2020, "demPct": 59.39, "repPct": 38.61, "margin": 20.78, "demVotes": 307486, "repVotes": 199922, "voteMargin": -107564, "totalVotes": 517757, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "RI", "electoralVotes": 4, "year": 2016, "demPct": 54.41, "repPct": 38.9, "margin": 15.51, "demVotes": 252525, "repVotes": 180543, "voteMargin": -71982, "totalVotes": 464144, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "RI", "electoralVotes": 4, "year": 2024, "demPct": 55.54, "repPct": 41.76, "margin": -13.78, "demVotes": 285156, "repVotes": 214406, "voteMargin": -70750, "totalVotes": 513386, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "RI", "electoralVotes": 4, "year": 2020, "demPct": 59.39, "repPct": 38.61, "margin": -20.78, "demVotes": 307486, "repVotes": 199922, "voteMargin": -107564, "totalVotes": 517757, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "RI", "electoralVotes": 4, "year": 2016, "demPct": 54.41, "repPct": 38.9, "margin": -15.51, "demVotes": 252525, "repVotes": 180543, "voteMargin": -71982, "totalVotes": 464144, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "SC": [
-    { "stateAbbr": "SC", "electoralVotes": 9, "year": 2024, "demPct": 40.36, "repPct": 58.23, "margin": -17.87, "demVotes": 1028452, "repVotes": 1483747, "voteMargin": 455295, "totalVotes": 2548140, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "SC", "electoralVotes": 9, "year": 2020, "demPct": 43.43, "repPct": 55.11, "margin": -11.68, "demVotes": 1091541, "repVotes": 1385103, "voteMargin": 293562, "totalVotes": 2513329, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "SC", "electoralVotes": 9, "year": 2016, "demPct": 40.67, "repPct": 54.94, "margin": -14.27, "demVotes": 855373, "repVotes": 1155389, "voteMargin": 300016, "totalVotes": 2103027, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "SC", "electoralVotes": 9, "year": 2024, "demPct": 40.36, "repPct": 58.23, "margin": 17.87, "demVotes": 1028452, "repVotes": 1483747, "voteMargin": 455295, "totalVotes": 2548140, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "SC", "electoralVotes": 9, "year": 2020, "demPct": 43.43, "repPct": 55.11, "margin": 11.68, "demVotes": 1091541, "repVotes": 1385103, "voteMargin": 293562, "totalVotes": 2513329, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "SC", "electoralVotes": 9, "year": 2016, "demPct": 40.67, "repPct": 54.94, "margin": 14.27, "demVotes": 855373, "repVotes": 1155389, "voteMargin": 300016, "totalVotes": 2103027, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "SD": [
-    { "stateAbbr": "SD", "electoralVotes": 3, "year": 2024, "demPct": 34.24, "repPct": 63.43, "margin": -29.19, "demVotes": 146859, "repVotes": 272081, "voteMargin": 125222, "totalVotes": 428922, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "SD", "electoralVotes": 3, "year": 2020, "demPct": 35.61, "repPct": 61.77, "margin": -26.16, "demVotes": 150471, "repVotes": 261043, "voteMargin": 110572, "totalVotes": 422609, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "SD", "electoralVotes": 3, "year": 2016, "demPct": 31.74, "repPct": 61.53, "margin": -29.79, "demVotes": 117458, "repVotes": 227721, "voteMargin": 110263, "totalVotes": 370093, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "SD", "electoralVotes": 3, "year": 2024, "demPct": 34.24, "repPct": 63.43, "margin": 29.19, "demVotes": 146859, "repVotes": 272081, "voteMargin": 125222, "totalVotes": 428922, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "SD", "electoralVotes": 3, "year": 2020, "demPct": 35.61, "repPct": 61.77, "margin": 26.16, "demVotes": 150471, "repVotes": 261043, "voteMargin": 110572, "totalVotes": 422609, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "SD", "electoralVotes": 3, "year": 2016, "demPct": 31.74, "repPct": 61.53, "margin": 29.79, "demVotes": 117458, "repVotes": 227721, "voteMargin": 110263, "totalVotes": 370093, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "TN": [
-    { "stateAbbr": "TN", "electoralVotes": 11, "year": 2024, "demPct": 34.47, "repPct": 64.19, "margin": -29.72, "demVotes": 1056265, "repVotes": 1966865, "voteMargin": 910600, "totalVotes": 3063942, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "TN", "electoralVotes": 11, "year": 2020, "demPct": 37.45, "repPct": 60.66, "margin": -23.21, "demVotes": 1143711, "repVotes": 1852475, "voteMargin": 708764, "totalVotes": 3053851, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "TN", "electoralVotes": 11, "year": 2016, "demPct": 34.72, "repPct": 60.72, "margin": -26, "demVotes": 870695, "repVotes": 1522925, "voteMargin": 652230, "totalVotes": 2508027, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "TN", "electoralVotes": 11, "year": 2024, "demPct": 34.47, "repPct": 64.19, "margin": 29.72, "demVotes": 1056265, "repVotes": 1966865, "voteMargin": 910600, "totalVotes": 3063942, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "TN", "electoralVotes": 11, "year": 2020, "demPct": 37.45, "repPct": 60.66, "margin": 23.21, "demVotes": 1143711, "repVotes": 1852475, "voteMargin": 708764, "totalVotes": 3053851, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "TN", "electoralVotes": 11, "year": 2016, "demPct": 34.72, "repPct": 60.72, "margin": 26, "demVotes": 870695, "repVotes": 1522925, "voteMargin": 652230, "totalVotes": 2508027, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "TX": [
-    { "stateAbbr": "TX", "electoralVotes": 40, "year": 2024, "demPct": 42.46, "repPct": 56.14, "margin": -13.68, "demVotes": 4835250, "repVotes": 6393597, "voteMargin": 1558347, "totalVotes": 11388674, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "TX", "electoralVotes": 38, "year": 2020, "demPct": 46.48, "repPct": 52.06, "margin": -5.58, "demVotes": 5259126, "repVotes": 5890347, "voteMargin": 631221, "totalVotes": 11315056, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "TX", "electoralVotes": 38, "year": 2016, "demPct": 43.24, "repPct": 52.23, "margin": -8.99, "demVotes": 3877868, "repVotes": 4685047, "voteMargin": 807179, "totalVotes": 8969226, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "TX", "electoralVotes": 40, "year": 2024, "demPct": 42.46, "repPct": 56.14, "margin": 13.68, "demVotes": 4835250, "repVotes": 6393597, "voteMargin": 1558347, "totalVotes": 11388674, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "TX", "electoralVotes": 38, "year": 2020, "demPct": 46.48, "repPct": 52.06, "margin": 5.58, "demVotes": 5259126, "repVotes": 5890347, "voteMargin": 631221, "totalVotes": 11315056, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "TX", "electoralVotes": 38, "year": 2016, "demPct": 43.24, "repPct": 52.23, "margin": 8.99, "demVotes": 3877868, "repVotes": 4685047, "voteMargin": 807179, "totalVotes": 8969226, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "UT": [
-    { "stateAbbr": "UT", "electoralVotes": 6, "year": 2024, "demPct": 37.79, "repPct": 59.38, "margin": -21.59, "demVotes": 562566, "repVotes": 883818, "voteMargin": 321252, "totalVotes": 1488494, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "UT", "electoralVotes": 6, "year": 2020, "demPct": 37.65, "repPct": 58.13, "margin": -20.48, "demVotes": 560282, "repVotes": 865140, "voteMargin": 304858, "totalVotes": 1488289, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "UT", "electoralVotes": 6, "year": 2016, "demPct": 27.46, "repPct": 45.54, "margin": -18.08, "demVotes": 310676, "repVotes": 515231, "voteMargin": 204555, "totalVotes": 1131430, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "UT", "electoralVotes": 6, "year": 2024, "demPct": 37.79, "repPct": 59.38, "margin": 21.59, "demVotes": 562566, "repVotes": 883818, "voteMargin": 321252, "totalVotes": 1488494, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "UT", "electoralVotes": 6, "year": 2020, "demPct": 37.65, "repPct": 58.13, "margin": 20.48, "demVotes": 560282, "repVotes": 865140, "voteMargin": 304858, "totalVotes": 1488289, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "UT", "electoralVotes": 6, "year": 2016, "demPct": 27.46, "repPct": 45.54, "margin": 18.08, "demVotes": 310676, "repVotes": 515231, "voteMargin": 204555, "totalVotes": 1131430, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "VA": [
-    { "stateAbbr": "VA", "electoralVotes": 13, "year": 2024, "demPct": 51.83, "repPct": 46.05, "margin": 5.78, "demVotes": 2335395, "repVotes": 2075085, "voteMargin": -260310, "totalVotes": 4505941, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "VA", "electoralVotes": 13, "year": 2020, "demPct": 54.11, "repPct": 44, "margin": 10.11, "demVotes": 2413568, "repVotes": 1962430, "voteMargin": -451138, "totalVotes": 4460524, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "VA", "electoralVotes": 13, "year": 2016, "demPct": 49.73, "repPct": 44.41, "margin": 5.32, "demVotes": 1981473, "repVotes": 1769443, "voteMargin": -212030, "totalVotes": 3984631, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "VA", "electoralVotes": 13, "year": 2024, "demPct": 51.83, "repPct": 46.05, "margin": -5.78, "demVotes": 2335395, "repVotes": 2075085, "voteMargin": -260310, "totalVotes": 4505941, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "VA", "electoralVotes": 13, "year": 2020, "demPct": 54.11, "repPct": 44, "margin": -10.11, "demVotes": 2413568, "repVotes": 1962430, "voteMargin": -451138, "totalVotes": 4460524, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "VA", "electoralVotes": 13, "year": 2016, "demPct": 49.73, "repPct": 44.41, "margin": -5.32, "demVotes": 1981473, "repVotes": 1769443, "voteMargin": -212030, "totalVotes": 3984631, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "VT": [
-    { "stateAbbr": "VT", "electoralVotes": 3, "year": 2024, "demPct": 63.83, "repPct": 32.32, "margin": 31.51, "demVotes": 235791, "repVotes": 119395, "voteMargin": -116396, "totalVotes": 369422, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "VT", "electoralVotes": 3, "year": 2020, "demPct": 66.09, "repPct": 30.67, "margin": 35.42, "demVotes": 242820, "repVotes": 112704, "voteMargin": -130116, "totalVotes": 367428, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "VT", "electoralVotes": 3, "year": 2016, "demPct": 56.68, "repPct": 30.27, "margin": 26.41, "demVotes": 178573, "repVotes": 95369, "voteMargin": -83204, "totalVotes": 315067, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "VT", "electoralVotes": 3, "year": 2024, "demPct": 63.83, "repPct": 32.32, "margin": -31.51, "demVotes": 235791, "repVotes": 119395, "voteMargin": -116396, "totalVotes": 369422, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "VT", "electoralVotes": 3, "year": 2020, "demPct": 66.09, "repPct": 30.67, "margin": -35.42, "demVotes": 242820, "repVotes": 112704, "voteMargin": -130116, "totalVotes": 367428, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "VT", "electoralVotes": 3, "year": 2016, "demPct": 56.68, "repPct": 30.27, "margin": -26.41, "demVotes": 178573, "repVotes": 95369, "voteMargin": -83204, "totalVotes": 315067, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "WA": [
-    { "stateAbbr": "WA", "electoralVotes": 12, "year": 2024, "demPct": 57.23, "repPct": 39.01, "margin": 18.22, "demVotes": 2245849, "repVotes": 1530923, "voteMargin": -714926, "totalVotes": 3924243, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "WA", "electoralVotes": 12, "year": 2020, "demPct": 57.97, "repPct": 38.77, "margin": 19.2, "demVotes": 2369612, "repVotes": 1584651, "voteMargin": -784961, "totalVotes": 4087631, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "WA", "electoralVotes": 12, "year": 2016, "demPct": 52.54, "repPct": 36.83, "margin": 15.71, "demVotes": 1742718, "repVotes": 1221747, "voteMargin": -520971, "totalVotes": 3317019, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "WA", "electoralVotes": 12, "year": 2024, "demPct": 57.23, "repPct": 39.01, "margin": -18.22, "demVotes": 2245849, "repVotes": 1530923, "voteMargin": -714926, "totalVotes": 3924243, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "WA", "electoralVotes": 12, "year": 2020, "demPct": 57.97, "repPct": 38.77, "margin": -19.2, "demVotes": 2369612, "repVotes": 1584651, "voteMargin": -784961, "totalVotes": 4087631, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "WA", "electoralVotes": 12, "year": 2016, "demPct": 52.54, "repPct": 36.83, "margin": -15.71, "demVotes": 1742718, "repVotes": 1221747, "voteMargin": -520971, "totalVotes": 3317019, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "WI": [
-    { "stateAbbr": "WI", "electoralVotes": 10, "year": 2024, "demPct": 48.74, "repPct": 49.6, "margin": -0.86, "demVotes": 1668229, "repVotes": 1697626, "voteMargin": 29397, "totalVotes": 3422918, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "WI", "electoralVotes": 10, "year": 2020, "demPct": 49.45, "repPct": 48.82, "margin": 0.63, "demVotes": 1630866, "repVotes": 1610184, "voteMargin": -20682, "totalVotes": 3298041, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "WI", "electoralVotes": 10, "year": 2016, "demPct": 46.45, "repPct": 47.22, "margin": -0.77, "demVotes": 1382536, "repVotes": 1405284, "voteMargin": 22748, "totalVotes": 2976150, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "WI", "electoralVotes": 10, "year": 2024, "demPct": 48.74, "repPct": 49.6, "margin": 0.86, "demVotes": 1668229, "repVotes": 1697626, "voteMargin": 29397, "totalVotes": 3422918, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "WI", "electoralVotes": 10, "year": 2020, "demPct": 49.45, "repPct": 48.82, "margin": -0.63, "demVotes": 1630866, "repVotes": 1610184, "voteMargin": -20682, "totalVotes": 3298041, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "WI", "electoralVotes": 10, "year": 2016, "demPct": 46.45, "repPct": 47.22, "margin": 0.77, "demVotes": 1382536, "repVotes": 1405284, "voteMargin": 22748, "totalVotes": 2976150, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "WV": [
-    { "stateAbbr": "WV", "electoralVotes": 4, "year": 2024, "demPct": 28.1, "repPct": 69.97, "margin": -41.87, "demVotes": 214309, "repVotes": 533556, "voteMargin": 319247, "totalVotes": 762582, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "WV", "electoralVotes": 5, "year": 2020, "demPct": 29.69, "repPct": 68.62, "margin": -38.93, "demVotes": 235984, "repVotes": 545382, "voteMargin": 309398, "totalVotes": 794731, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "WV", "electoralVotes": 5, "year": 2016, "demPct": 26.43, "repPct": 68.5, "margin": -42.07, "demVotes": 188794, "repVotes": 489371, "voteMargin": 300577, "totalVotes": 714423, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "WV", "electoralVotes": 4, "year": 2024, "demPct": 28.1, "repPct": 69.97, "margin": 41.87, "demVotes": 214309, "repVotes": 533556, "voteMargin": 319247, "totalVotes": 762582, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "WV", "electoralVotes": 5, "year": 2020, "demPct": 29.69, "repPct": 68.62, "margin": 38.93, "demVotes": 235984, "repVotes": 545382, "voteMargin": 309398, "totalVotes": 794731, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "WV", "electoralVotes": 5, "year": 2016, "demPct": 26.43, "repPct": 68.5, "margin": 42.07, "demVotes": 188794, "repVotes": 489371, "voteMargin": 300577, "totalVotes": 714423, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ],
   "WY": [
-    { "stateAbbr": "WY", "electoralVotes": 3, "year": 2024, "demPct": 25.84, "repPct": 71.6, "margin": -45.76, "demVotes": 69527, "repVotes": 192633, "voteMargin": 123106, "totalVotes": 269048, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
-    { "stateAbbr": "WY", "electoralVotes": 3, "year": 2020, "demPct": 26.55, "repPct": 69.94, "margin": -43.39, "demVotes": 73491, "repVotes": 193559, "voteMargin": 120068, "totalVotes": 276765, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
-    { "stateAbbr": "WY", "electoralVotes": 3, "year": 2016, "demPct": 21.88, "repPct": 68.17, "margin": -46.29, "demVotes": 55973, "repVotes": 174419, "voteMargin": 118446, "totalVotes": 255849, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
+    { "stateAbbr": "WY", "electoralVotes": 3, "year": 2024, "demPct": 25.84, "repPct": 71.6, "margin": 45.76, "demVotes": 69527, "repVotes": 192633, "voteMargin": 123106, "totalVotes": 269048, "demCandidate": "Kamala Harris", "repCandidate": "Donald Trump" },
+    { "stateAbbr": "WY", "electoralVotes": 3, "year": 2020, "demPct": 26.55, "repPct": 69.94, "margin": 43.39, "demVotes": 73491, "repVotes": 193559, "voteMargin": 120068, "totalVotes": 276765, "demCandidate": "Joe Biden", "repCandidate": "Donald Trump", "repIncumbent": true },
+    { "stateAbbr": "WY", "electoralVotes": 3, "year": 2016, "demPct": 21.88, "repPct": 68.17, "margin": 46.29, "demVotes": 55973, "repVotes": 174419, "voteMargin": 118446, "totalVotes": 255849, "demCandidate": "Hillary Clinton", "repCandidate": "Donald Trump" }
   ]
 };
 
-export const pres2024: Record<string, number> = { "AK": 13.13, "AL": 30.47, "AR": 30.64, "AZ": 5.53, "CA": -20.14, "CO": -10.99, "CT": -14.51, "DE": -14.7, "FL": 13.1, "GA": 2.19, "HI": -23.11, "IA": 13.21, "ID": 36.49, "IL": -10.9, "IN": 18.96, "KS": 16.12, "KY": 30.53, "LA": 22.01, "MA": -25.2, "MD": -28.54, "ME": -6.94, "MI": 1.42, "MN": -4.24, "MO": 18.41, "MS": 22.89, "MT": 19.93, "NC": 3.21, "ND": 36.45, "NE": 20.46, "NH": -2.78, "NJ": -5.91, "NM": -6, "NV": 3.1, "NY": -12.6, "OH": 11.21, "OK": 34.26, "OR": -14.3, "PA": 1.71, "RI": -13.78, "SC": 17.87, "SD": 29.19, "TN": 29.72, "TX": 13.68, "UT": 21.59, "VA": -5.78, "VT": -31.51, "WA": -18.22, "WI": 0.86, "WV": 41.87, "WY": 45.76 };
+export const pres2024: Record<string, number> = { "AK": -13.13, "AL": -30.47, "AR": -30.64, "AZ": -5.53, "CA": 20.14, "CO": 10.99, "CT": 14.51, "DE": 14.7, "FL": -13.1, "GA": -2.19, "HI": 23.11, "IA": -13.21, "ID": -36.49, "IL": 10.9, "IN": -18.96, "KS": -16.12, "KY": -30.53, "LA": -22.01, "MA": 25.2, "MD": 28.54, "ME": 6.94, "MI": -1.42, "MN": 4.24, "MO": -18.41, "MS": -22.89, "MT": -19.93, "NC": -3.21, "ND": -36.45, "NE": -20.46, "NH": 2.78, "NJ": 5.91, "NM": 6, "NV": -3.1, "NY": 12.6, "OH": -11.21, "OK": -34.26, "OR": 14.3, "PA": -1.71, "RI": 13.78, "SC": -17.87, "SD": -29.19, "TN": -29.72, "TX": -13.68, "UT": -21.59, "VA": 5.78, "VT": 31.51, "WA": 18.22, "WI": -0.86, "WV": -41.87, "WY": -45.76 };
 
 export type HouseDelegationEntry = {
   year: number;

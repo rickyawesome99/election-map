@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import CandidateLink from "@/components/CandidateLink";
 
 type PollRow = {
@@ -187,6 +188,22 @@ export function CandidatesSection({
                     height={300}
                     className="w-full h-full object-cover object-top"
                   />
+                ) : candidate.party === "R" && !candidate.placeholder ? (
+                  <Image
+                    src="/candidates/placeholder-republican.png"
+                    alt="Republican"
+                    width={240}
+                    height={300}
+                    className="w-full h-full object-contain p-2"
+                  />
+                ) : candidate.party === "D" && !candidate.placeholder ? (
+                  <Image
+                    src="/candidates/placeholder-democrat.png"
+                    alt="Democrat"
+                    width={240}
+                    height={300}
+                    className="w-full h-full object-contain p-2"
+                  />
                 ) : (
                   <svg viewBox="0 0 64 80" className="w-full h-full" fill="none">
                     <rect width="64" height="80" fill="var(--app-tab-bg)" />
@@ -331,6 +348,109 @@ export function ElectionStatusCard({
           </div>
         </div>
       </div>
+    </section>
+  );
+}
+
+export function CandidatesAndPollsCard({
+  candidates,
+  demPct,
+  repPct,
+  rcpDem,
+  rcpRep,
+  polyDem,
+  polyRep,
+  kalshiDem,
+  kalshiRep,
+  showPolls = true,
+}: {
+  candidates: [CandidateCardEntry, CandidateCardEntry];
+  demPct: number;
+  repPct: number;
+  rcpDem?: number;
+  rcpRep?: number;
+  polyDem?: number;
+  polyRep?: number;
+  kalshiDem?: number;
+  kalshiRep?: number;
+  showPolls?: boolean;
+}) {
+  const marketDem = polyDem != null && kalshiDem != null ? (polyDem + kalshiDem) / 2 : (polyDem ?? kalshiDem);
+  const marketRep = polyRep != null && kalshiRep != null ? (polyRep + kalshiRep) / 2 : (polyRep ?? kalshiRep);
+
+  return (
+    <section
+      className="rounded-xl p-5 mb-0 flex flex-col"
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+    >
+      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-4" style={{ color: "var(--app-text-muted)" }}>
+        Candidates
+      </h2>
+
+      <div className="grid grid-cols-2 gap-5 mb-5">
+        {candidates.map((candidate) => {
+          const accentColor = partyAccent(candidate.party);
+          const displayName = candidate.placeholder ? "TBD" : candidate.name;
+          const displayParty = partyLabel(candidate.party);
+          return (
+            <div key={`${candidate.name}-${candidate.party}`} className="flex flex-col items-center text-center">
+              <div
+                className="w-full max-w-[160px] mx-auto aspect-[3/4] rounded-xl overflow-hidden mb-3 flex items-center justify-center"
+                style={{ border: `2px solid ${accentColor}`, background: "var(--app-tab-bg)" }}
+              >
+                {candidate.photo && !candidate.placeholder ? (
+                  <Image src={candidate.photo} alt={candidate.name} width={300} height={400} className="w-full h-full object-cover object-top" />
+                ) : candidate.party === "R" && !candidate.placeholder ? (
+                  <Image src="/candidates/placeholder-republican.png" alt="Republican" width={300} height={400} className="w-full h-full object-contain p-3" />
+                ) : candidate.party === "D" && !candidate.placeholder ? (
+                  <Image src="/candidates/placeholder-democrat.png" alt="Democrat" width={300} height={400} className="w-full h-full object-contain p-3" />
+                ) : (
+                  <svg viewBox="0 0 64 80" className="w-full h-full" fill="none">
+                    <rect width="64" height="80" fill="var(--app-tab-bg)" />
+                    <circle cx="32" cy="28" r="14" fill="var(--app-border)" />
+                    <ellipse cx="32" cy="76" rx="25" ry="18" fill="var(--app-border)" />
+                  </svg>
+                )}
+              </div>
+              <div className="flex items-center justify-center gap-1.5 mb-1 w-full">
+                {candidate.placeholder ? (
+                  <div className="font-bold text-lg whitespace-nowrap overflow-hidden text-ellipsis italic" style={{ color: "var(--app-text-muted)" }}>{displayName}</div>
+                ) : (
+                  <CandidateLink name={candidate.name} className="font-bold text-lg whitespace-nowrap overflow-hidden text-ellipsis hover:underline" style={{ color: "var(--app-text-primary)" }}>
+                    {displayName}
+                  </CandidateLink>
+                )}
+                {candidate.incumbent && !candidate.placeholder && (
+                  <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: `${accentColor}22`, color: accentColor }}>Inc.</span>
+                )}
+              </div>
+              <div className="text-sm font-medium mb-3" style={{ color: accentColor }}>{displayParty}</div>
+              <div className="text-4xl font-bold tabular-nums leading-none" style={{ color: accentColor }}>{candidate.pct}%</div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="mb-4" style={{ borderTop: "1px solid var(--app-border)" }} />
+
+      <div className="mb-3">
+        <h3 className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>Win Probability</h3>
+        <div className="flex justify-between text-xs font-semibold mb-1.5">
+          <span style={{ color: "var(--party-dem)" }}>Dem {demPct}%</span>
+          <span style={{ color: "var(--party-rep)" }}>Rep {repPct}%</span>
+        </div>
+        <div className="h-3.5 rounded-full overflow-hidden flex">
+          <div style={{ width: `${demPct}%`, background: "#1b408c" }} className="transition-all duration-300" />
+          <div style={{ width: `${repPct}%`, background: "#be1c29" }} className="transition-all duration-300" />
+        </div>
+      </div>
+
+      {showPolls && (
+        <div className="flex flex-col gap-2.5">
+          <MarginPollRow label="RCP Average" dem={rcpDem} rep={rcpRep} precision={1} />
+          <MarginPollRow label="Market Average" pctMargin dem={marketDem} rep={marketRep} />
+        </div>
+      )}
     </section>
   );
 }
@@ -502,10 +622,12 @@ export function ForecastCalculationCard({
   tpl,
   genericBallot,
   tplLabel = "State TPL",
+  tplHref,
 }: {
   tpl: number;
   genericBallot: number;
   tplLabel?: string;
+  tplHref?: string;
 }) {
   const projectedMargin = tpl + genericBallot;
 
@@ -534,7 +656,18 @@ export function ForecastCalculationCard({
       </h2>
       <div className="flex flex-col gap-1.5">
         <div className="rounded-lg px-2.5 py-2 flex items-center justify-between" style={{ background: "var(--app-bg)" }}>
-          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{tplLabel}</span>
+          {tplHref ? (
+            <Link
+              href={tplHref}
+              className="text-[11px] font-semibold uppercase tracking-wider hover:underline underline-offset-2"
+              style={{ color: "var(--app-text-muted)" }}
+              title={`View ${tplLabel}`}
+            >
+              {tplLabel}
+            </Link>
+          ) : (
+            <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{tplLabel}</span>
+          )}
           <span className="text-sm font-bold" style={{ color: marginColor(tpl) }}>{fmtMargin(tpl)}</span>
         </div>
         <div className="rounded-lg px-2.5 py-2 flex items-center justify-between" style={{ background: "var(--app-bg)" }}>

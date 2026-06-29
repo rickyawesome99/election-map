@@ -1,11 +1,11 @@
 import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, electionYear } from "@/data/forecastData";
 import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
-import { getRatingColors } from "@/lib/colorScale";
+import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
-import { AboutRaceCard, CandidatesSection, ForecastCalculationCard, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, MarginAndWinProbabilityCard, PastElectionResultsSection } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesAndPollsCard, ForecastCalculationCard, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import { calculateDistrictTpl, GENERIC_BALLOT } from "@/lib/tplCompute";
 const HOUSE_BOUNDARIES_CARD_HEIGHT = "275px";
@@ -40,7 +40,6 @@ export default async function HousePage({ params, searchParams }: { params: Prom
 
   const demPct = Math.round(race.probability * 100);
   const repPct = 100 - demPct;
-  const { bg, text } = getRatingColors(race.rating);
 
   // Parse district label for display (e.g. "CA-12" → state + district number)
   const [stateAbbr, districtNum] = race.name.split("-");
@@ -58,7 +57,10 @@ export default async function HousePage({ params, searchParams }: { params: Prom
     ? pvi2026 === 0 ? "EVEN" : pvi2026 > 0 ? `R+${pvi2026}` : `D+${Math.abs(pvi2026)}`
     : "TBD";
   const districtTpl = calculateDistrictTpl(race.id);
+  const districtTplId = parseInt(race.id, 10).toString();
   const projectedMargin = districtTpl + GENERIC_BALLOT;
+  const forecastRating = marginToRating(projectedMargin);
+  const { bg, text } = getRatingColors(forecastRating);
   const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
   const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
 
@@ -131,7 +133,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}
             >
-              {race.rating}
+              {forecastRating}
             </span>
           </div>
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{electionYear} U.S. House Race · {districtLabel}</p>
@@ -186,39 +188,31 @@ export default async function HousePage({ params, searchParams }: { params: Prom
 
           {/* Right column — display:contents on mobile, flex-col on desktop */}
           <div className="contents md:flex md:flex-col md:gap-3">
-            <div className="order-3 grid grid-cols-1 gap-3 md:grid-cols-8 md:items-stretch">
-              <div className="md:col-span-5 [&>section]:h-full">
-                <CandidatesSection
-                  density="compact"
-                  candidates={race.candidates
-                    ? [
-                        {
-                          name: race.candidates.dem.name,
-                          party: race.candidates.dem.party,
-                          incumbent: race.candidates.dem.incumbent,
-                          pct: demVoteShare,
-                        },
-                        {
-                          name: race.candidates.rep.name,
-                          party: race.candidates.rep.party,
-                          incumbent: race.candidates.rep.incumbent,
-                          pct: repVoteShare,
-                        },
-                      ]
-                    : [
-                        { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
-                        { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
-                      ]}
-                />
-              </div>
-
-              <div className="md:col-span-3 [&>section]:h-full">
-                <MarginAndWinProbabilityCard density="compact" margin={projectedMargin} demPct={demPct} repPct={repPct} rcpDem={race.rcpDem} rcpRep={race.rcpRep} polyDem={race.polyDem} polyRep={race.polyRep} kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep} />
-              </div>
+            <div className="order-3">
+              <CandidatesAndPollsCard
+                candidates={race.candidates
+                  ? [
+                      { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, pct: demVoteShare },
+                      { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, pct: repVoteShare },
+                    ]
+                  : [
+                      { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
+                      { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
+                    ]}
+                demPct={demPct} repPct={repPct}
+                rcpDem={race.rcpDem} rcpRep={race.rcpRep}
+                polyDem={race.polyDem} polyRep={race.polyRep}
+                kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep}
+              />
             </div>
 
             <div className="order-4">
-              <ForecastCalculationCard tpl={districtTpl} genericBallot={GENERIC_BALLOT} tplLabel="District TPL" />
+              <ForecastCalculationCard
+                tpl={districtTpl}
+                genericBallot={GENERIC_BALLOT}
+                tplLabel="District TPL"
+                tplHref={`/?tab=district&modelDistrict=${encodeURIComponent(districtTplId)}`}
+              />
             </div>
 
             <div className="order-5">

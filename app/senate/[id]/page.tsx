@@ -1,10 +1,10 @@
 import { senateData, senateNoElection, senateHoldovers, electionYear, type PastResult } from "@/data/forecastData";
-import { getRatingColors } from "@/lib/colorScale";
+import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import { AboutRaceCard, CandidatesSection, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesAndPollsCard, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import { calculateStateTpl, GENERIC_BALLOT } from "@/lib/tplCompute";
@@ -207,9 +207,10 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
 
   const demPct = Math.round(race.probability * 100);
   const repPct = 100 - demPct;
-  const { bg, text } = getRatingColors(race.rating);
   const stateTpl = calculateStateTpl(abbr, race.name);
   const projectedMargin = stateTpl + GENERIC_BALLOT;
+  const forecastRating = marginToRating(projectedMargin);
+  const { bg, text } = getRatingColors(forecastRating);
   const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
   const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
 
@@ -233,7 +234,7 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
               className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}
             >
-              {race.rating}
+              {forecastRating}
             </span>
             {isSpecialElection(race.electionType) && <SpecialBadge />}
           </div>
@@ -266,47 +267,32 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
           </div>
 
           <div className="contents lg:grid lg:grid-cols-8 lg:gap-3">
-            {race.candidates && (
-              <div className="order-3 lg:col-span-5 [&>section]:h-full">
-                <CandidatesSection
-                  density="compact"
+            {race.candidates ? (
+              <div className="order-3 lg:col-span-8">
+                <CandidatesAndPollsCard
                   candidates={[
-                    {
-                      name: race.candidates.dem.name,
-                      party: race.candidates.dem.party,
-                      incumbent: race.candidates.dem.incumbent,
-                      photo: demPhoto,
-                      pct: demVoteShare,
-                    },
-                    {
-                      name: race.candidates.rep.name,
-                      party: race.candidates.rep.party,
-                      incumbent: race.candidates.rep.incumbent,
-                      photo: repPhoto,
-                      pct: repVoteShare,
-                    },
+                    { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
+                    { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
                   ]}
+                  demPct={demPct} repPct={repPct}
+                  rcpDem={race.rcpDem} rcpRep={race.rcpRep}
+                  polyDem={race.polyDem} polyRep={race.polyRep}
+                  kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep}
                 />
+              </div>
+            ) : (
+              <div className="order-3 lg:col-span-8 [&>section]:h-full">
+                <MarginAndWinProbabilityCard density="compact" margin={projectedMargin} demPct={demPct} repPct={repPct} rcpDem={race.rcpDem} rcpRep={race.rcpRep} polyDem={race.polyDem} polyRep={race.polyRep} kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep} />
               </div>
             )}
 
-            <div className={`order-4 ${race.candidates ? "lg:col-span-3" : "lg:col-span-8"} [&>section]:h-full`}>
-              <MarginAndWinProbabilityCard
-                density="compact"
-                margin={projectedMargin}
-                demPct={demPct}
-                repPct={repPct}
-                rcpDem={race.rcpDem}
-                rcpRep={race.rcpRep}
-                polyDem={race.polyDem}
-                polyRep={race.polyRep}
-                kalshiDem={race.kalshiDem}
-                kalshiRep={race.kalshiRep}
-              />
-            </div>
-
             <div className="order-5 lg:col-span-8">
-              <ForecastCalculationCard tpl={stateTpl} genericBallot={GENERIC_BALLOT} tplLabel="State TPL" />
+              <ForecastCalculationCard
+                tpl={stateTpl}
+                genericBallot={GENERIC_BALLOT}
+                tplLabel="State TPL"
+                tplHref={`/?tab=state&modelState=${encodeURIComponent(abbr)}`}
+              />
             </div>
 
             {race.pastResults && race.pastResults.length > 0 && (

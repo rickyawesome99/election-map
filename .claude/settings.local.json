@@ -4,7 +4,13 @@
       "WebFetch(domain:api.github.com)",
       "WebFetch(domain:tigerweb.geo.census.gov)",
       "Bash(node -e \":*)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(cp /Users/rickyjia/Downloads/nm-s-d.jpg /Users/rickyjia/election-map/public/candidates/ben-ray-lujan.jpg)",
+      "Bash(cp /Users/rickyjia/Downloads/nm-s-r.jpg /Users/rickyjia/election-map/public/candidates/larry-marker.jpg)",
+      "Bash(cp /Users/rickyjia/Downloads/oh-s-r.jpg /Users/rickyjia/election-map/public/candidates/jon-husted.jpg)",
+      "Bash(cp /Users/rickyjia/Downloads/oh-s-d.jpg /Users/rickyjia/election-map/public/candidates/sherrod-brown.jpg)",
+      "Bash(cp /Users/rickyjia/Downloads/or-s-d.jpg /Users/rickyjia/election-map/public/candidates/jeff-merkley.jpg)",
+      "Bash(cp /Users/rickyjia/Downloads/or-s-r.jpg /Users/rickyjia/election-map/public/candidates/david-brock-smith.jpg)"
     ]
   }
 }
