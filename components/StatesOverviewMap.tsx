@@ -2,7 +2,6 @@
 
 import { useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
-import Link from "next/link";
 import type { Theme } from "./ForecastMap";
 import type { StateRow } from "./StatesTable";
 import { getRaceColor } from "@/lib/colorScale";
@@ -393,7 +392,7 @@ export default function StatesOverviewMap({
                 </div>
               </>
             )}
-            <Link
+            <a
               href={`/states/${selected.id}?from=${encodeURIComponent("/?tab=states")}`}
               className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
               style={{ background: t.tabBg, color: t.textMuted }}
@@ -402,7 +401,7 @@ export default function StatesOverviewMap({
               <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       )}

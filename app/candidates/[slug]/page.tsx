@@ -2,7 +2,6 @@ import { getPrebuiltCandidateSlugs, getCandidatePage } from "@/lib/candidateInde
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -82,7 +81,7 @@ export default async function CandidatePage({
 
         {/* Back link */}
         <div className="mb-4">
-          <Link
+          <a
             href={backHref}
             className="inline-flex items-center gap-1.5 text-sm hover:underline"
             style={{ color: "var(--app-text-muted)" }}
@@ -91,7 +90,7 @@ export default async function CandidatePage({
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
             </svg>
             {backLabel}
-          </Link>
+          </a>
         </div>
 
         {/* Header card */}
@@ -151,13 +150,13 @@ export default async function CandidatePage({
               const repPct = 100 - demPct;
               return (
                 <div className="flex items-center gap-2 flex-wrap">
-                  <Link
+                  <a
                     href={candidate.currentRace.racePath}
                     className="text-sm font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     {candidate.currentRace.raceName}
-                  </Link>
+                  </a>
                   <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full" style={{ background: bg, color: text }}>
                     {candidate.currentRace.rating}
                   </span>
@@ -186,9 +185,9 @@ export default async function CandidatePage({
                   <div key={i} className="flex items-center justify-between gap-3 rounded-lg px-3 py-2" style={{ background: "var(--app-bg)" }}>
                     <div className="flex items-center gap-2 min-w-0">
                       <span className="text-xs font-semibold shrink-0" style={{ color: entryAccent }}>{partyLabel(entry.party)}</span>
-                      <Link href={entry.racePath} className="text-sm font-semibold hover:underline truncate" style={{ color: "var(--app-text-primary)" }}>
+                      <a href={entry.racePath} className="text-sm font-semibold hover:underline truncate" style={{ color: "var(--app-text-primary)" }}>
                         {entry.raceName}
-                      </Link>
+                      </a>
                       {entry.incumbent && (
                         <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: partySubtle(entry.party), color: entryAccent }}>
                           Inc.
@@ -240,13 +239,13 @@ export default async function CandidatePage({
                         <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>
                           {entry.year}
                         </span>
-                        <Link
+                        <a
                           href={entry.racePath}
                           className="text-sm font-semibold hover:underline truncate"
                           style={{ color: "var(--app-text-muted)" }}
                         >
                           {entry.raceName} · {raceTypeLabel(entry.raceType)}
-                        </Link>
+                        </a>
                         {entry.incumbent && (
                           <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: partySubtle(entry.party), color: entryAccent }}>
                             Inc.

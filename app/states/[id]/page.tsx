@@ -3,7 +3,6 @@ import { senateData, senateNoElection, senateHoldovers, governorData, governorNo
 import { computeProjectedMargin } from "@/lib/tplCompute";
 import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import StateMapSection from "@/components/StateMapSection";
 import StateVoteHistoryChart from "@/components/StateVoteHistoryChart";
 import StateLegCompositionBox from "@/components/StateLegCompositionBox";
@@ -33,7 +32,7 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
   const partyColor = entry.party === "D" ? "var(--party-dem)" : entry.party === "R" ? "var(--party-rep)" : "var(--app-text-primary)";
   const partyLabel = entry.party === "D" ? "Dem" : entry.party === "R" ? "Rep" : "Ind";
   return (
-    <Link
+    <a
       href={href}
       className="block px-1 py-4 transition-colors min-w-0"
       style={{ borderBottom: "1px solid var(--app-border)" }}
@@ -91,7 +90,7 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
           </svg>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }
 
@@ -101,7 +100,7 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
   const demPct = ((100 - race.margin) / 2).toFixed(1);
   const repPct = ((100 + race.margin) / 2).toFixed(1);
   return (
-    <Link
+    <a
       href={href}
       className="block px-1 py-4 transition-colors min-w-0"
       style={{ borderBottom: "1px solid var(--app-border)" }}
@@ -179,7 +178,7 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
           </svg>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }
 
@@ -193,7 +192,7 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
   const repVS = ((100 + race.margin) / 2).toFixed(1);
   const { bg, text } = getRatingColors(race.rating);
   return (
-    <Link
+    <a
       href={`/house/${race.id}?from=${encodeURIComponent(from)}`}
       className="flex items-center gap-2 sm:gap-3 px-0 py-2.5 transition-colors min-w-0"
     >
@@ -234,7 +233,7 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
       <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
       </svg>
-    </Link>
+    </a>
   );
 }
 
@@ -833,13 +832,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
                       <div className="mb-2 flex items-center justify-between gap-3">
                         <div className="flex min-w-0 items-center gap-3">
                           <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
-                          <Link
+                          <a
                             href={`/senate/${(res.seat === 2 ? `${state.abbr}-2` : state.abbr).toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
                             className="truncate text-sm font-semibold transition-colors hover:underline"
                             style={{ color: "var(--app-text-muted)" }}
                           >
                             {isSpecialElection(res.electionType) ? "Senate Special" : "Senate"}
-                          </Link>
+                          </a>
                         </div>
                         <span
                           className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"
@@ -889,13 +888,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
                           <div className="mb-2 flex items-center justify-between gap-3">
                             <div className="flex min-w-0 items-center gap-3">
                               <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
-                              <Link
+                              <a
                                 href={`/governor/${govPageId}?from=${encodeURIComponent(stateFrom)}`}
                                 className="truncate text-sm font-semibold transition-colors hover:underline"
                                 style={{ color: "var(--app-text-muted)" }}
                               >
                                 Governor
-                              </Link>
+                              </a>
                             </div>
                             <span
                               className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap"

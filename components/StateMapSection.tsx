@@ -4,7 +4,6 @@ import { useState } from "react";
 import type { RaceForecast, HouseStatewideResult, PastResult } from "@/data/forecastData";
 import { getRatingColors } from "@/lib/colorScale";
 import StateMapToggle from "./StateMapToggle";
-import Link from "next/link";
 
 export default function StateMapSection({
   overview,
@@ -126,7 +125,7 @@ export default function StateMapSection({
               </div>
             </div>
 
-            <Link
+            <a
               href={`/house/${selected.id}`}
               className="mt-3 flex items-center justify-center gap-1 rounded-md py-2 text-xs font-semibold transition-colors"
               style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}
@@ -135,7 +134,7 @@ export default function StateMapSection({
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </Link>
+            </a>
           </section>
           </div>
         )}

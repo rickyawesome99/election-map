@@ -5,7 +5,6 @@ import dynamic from "next/dynamic";
 import { feature as topoFeature } from "topojson-client";
 import type { Topology } from "topojson-specification";
 import type { FeatureCollection } from "geojson";
-import Link from "next/link";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
 import { statesData } from "@/data/statesData";
@@ -513,13 +512,13 @@ function InfoBox({ label, value, href, t }: { label: string; value: string; href
         {label}
       </div>
       {href ? (
-        <Link
+        <a
           href={href}
           className="text-xs font-semibold leading-snug underline-offset-2 hover:underline"
           style={{ color: t.demText }}
         >
           {value}
-        </Link>
+        </a>
       ) : (
         <div className="text-xs font-semibold leading-snug" style={{ color: t.textPrimary }}>
           {value}

@@ -1,7 +1,6 @@
 "use client";
 
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
-import Link from "next/link";
 import { useState } from "react";
 import CandidateLink from "./CandidateLink";
 
@@ -220,13 +219,13 @@ export default function RaceTable({
                 className="transition-colors hover:opacity-80"
               >
                 <td className="px-4 py-3 text-left">
-                  <Link
+                  <a
                     href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${basePath.slice(1)}`)}`}
                     className="font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     {race.name}
-                  </Link>
+                  </a>
                 </td>
               </tr>
             ))}
@@ -302,9 +301,8 @@ export default function RaceTable({
           const repPct = 100 - demPct;
 
           return (
-            <Link
+            <div
               key={race.id}
-              href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${basePath.slice(1)}`)}`}
               className="block px-3 py-3"
               style={{
                 background: rowBackground,
@@ -313,9 +311,13 @@ export default function RaceTable({
             >
               {/* Line 1: Name + Rating */}
               <div className="flex min-w-0 items-center gap-1.5">
-                <span className="min-w-0 truncate text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>
+                <a
+                  href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${basePath.slice(1)}`)}`}
+                  className="min-w-0 truncate text-sm font-semibold hover:underline"
+                  style={{ color: "var(--app-text-primary)" }}
+                >
                   {race.name}
-                </span>
+                </a>
                 <span
                   className="shrink-0 whitespace-nowrap rounded-full px-1.5 py-0.5 text-[9px] font-semibold"
                   style={{ background: bg, color: text }}
@@ -359,7 +361,7 @@ export default function RaceTable({
                   D {demPct}%
                 </span>
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>
@@ -412,13 +414,13 @@ export default function RaceTable({
                     style={{ background: rowBackground, boxShadow: "1px 0 0 var(--app-border)" }}
                   >
                     <div className="flex min-w-0 items-center gap-1.5">
-                      <Link
+                      <a
                         href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${basePath.slice(1)}`)}`}
                         className="min-w-0 truncate font-semibold hover:underline"
                         style={{ color: "var(--app-text-primary)" }}
                       >
                         {race.name}
-                      </Link>
+                      </a>
                       <span
                         className="shrink-0 whitespace-nowrap rounded-full px-1.5 py-0.5 text-[10px] font-semibold"
                         style={{ background: bg, color: text }}

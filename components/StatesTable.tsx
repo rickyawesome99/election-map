@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 
 export type StateRow = {
@@ -177,13 +176,13 @@ export default function StatesTable({ rows }: { rows: StateRow[] }) {
                     className="sticky left-0 z-10 w-28 min-w-28 px-2 py-2.5 text-left sm:px-4 sm:py-3 lg:w-auto lg:min-w-0"
                     style={{ background: rowBackground, boxShadow: "1px 0 0 var(--app-border)" }}
                   >
-                    <Link
+                    <a
                       href={`/states/${row.id}?from=${encodeURIComponent("/?tab=states")}`}
                       className="font-semibold hover:underline"
                       style={{ color: "var(--app-text-primary)" }}
                     >
                       {row.name}
-                    </Link>
+                    </a>
                   </td>
 
                   {/* PVI */}

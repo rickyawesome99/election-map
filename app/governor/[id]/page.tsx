@@ -2,7 +2,6 @@ import { governorData, governorNoElection, NoElectionEntry, electionYear, type P
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { candidatePhotos } from "@/lib/candidatePhotos";
 import { AboutRaceCard, CandidatesAndPollsCard, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
@@ -51,7 +50,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
       <main className="max-w-7xl mx-auto px-4 py-4 sm:px-6">
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
-            <Link href={`/states/${stateSlug(entry.state)}?from=${encodeURIComponent(from)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</Link>
+            <a href={`/states/${stateSlug(entry.state)}?from=${encodeURIComponent(from)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</a>
             <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
               No Election in {electionYear}
             </span>
@@ -141,7 +140,7 @@ export default async function GovernorPage({ params, searchParams }: { params: P
         {/* Title block */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
-            <Link href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/governor/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</Link>
+            <a href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/governor/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</a>
             <span
               className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}

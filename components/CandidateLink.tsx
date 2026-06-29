@@ -1,7 +1,6 @@
 "use client";
 
 import { candidateSlug } from "@/lib/candidateSlug";
-import Link from "next/link";
 import { useSyncExternalStore } from "react";
 
 function subscribe() {
@@ -36,8 +35,8 @@ export default function CandidateLink({
     : candidatePath;
 
   return (
-    <Link href={href} className={className} style={style} onClick={onClick}>
+    <a href={href} className={className} style={style} onClick={onClick}>
       {children ?? name}
-    </Link>
+    </a>
   );
 }

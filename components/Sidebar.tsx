@@ -1,6 +1,6 @@
 "use client";
 
-import { Candidate, RaceForecast, RaceType } from "@/data/forecastData";
+import { RaceForecast, RaceType } from "@/data/forecastData";
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { Theme } from "./ForecastMap";
 

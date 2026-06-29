@@ -181,33 +181,31 @@ function SeatScorecard({
   );
 }
 
-export default function ForecastMap() {
+function topLevelTabFromQuery(tab: string | null): "forecast" | "states" | "counties" | "model" | "district-finder" {
+  if (tab === "states" || tab === "counties" || tab === "model" || tab === "district-finder") return tab;
+  if (tab === "state" || tab === "district" || tab === "table" || tab === "districtTable") return "model";
+  return "forecast";
+}
+
+function forecastSubViewFromQuery(tab: string | null): "overview" | RaceType {
+  if (tab === "house" || tab === "senate" || tab === "governor") return tab;
+  return "overview";
+}
+
+function raceTypeFromQuery(tab: string | null): RaceType {
+  if (tab === "house" || tab === "senate" || tab === "governor") return tab;
+  return "senate";
+}
+
+export default function ForecastMap({ initialTab = null }: { initialTab?: string | null }) {
   const [activeTab, setActiveTab] = useState<"forecast" | "states" | "counties" | "model" | "district-finder">(() => {
-    if (typeof window !== "undefined") {
-      const urlTab = new URLSearchParams(window.location.search).get("tab");
-      if (urlTab === "forecast" || urlTab === "states" || urlTab === "counties" || urlTab === "model" || urlTab === "district-finder") return urlTab;
-      if (urlTab === "state" || urlTab === "district" || urlTab === "table" || urlTab === "districtTable") return "model";
-    }
-    return "forecast";
+    return topLevelTabFromQuery(initialTab);
   });
   const [forecastSubView, setForecastSubView] = useState<"overview" | RaceType>(() => {
-    if (typeof window !== "undefined") {
-      const urlTab = new URLSearchParams(window.location.search).get("tab");
-      if (urlTab === "overview") return "overview";
-      if (urlTab === "house" || urlTab === "senate" || urlTab === "governor") return urlTab;
-      const stored = localStorage.getItem("forecastSubView") as "overview" | RaceType | null;
-      if (stored === "overview" || stored === "house" || stored === "senate" || stored === "governor") return stored;
-    }
-    return "overview";
+    return forecastSubViewFromQuery(initialTab);
   });
   const [raceType, setRaceType] = useState<RaceType>(() => {
-    if (typeof window !== "undefined") {
-      const urlTab = new URLSearchParams(window.location.search).get("tab") as RaceType | null;
-      if (urlTab === "house" || urlTab === "senate" || urlTab === "governor") return urlTab;
-      const stored = localStorage.getItem("raceType") as RaceType | null;
-      if (stored === "house" || stored === "senate" || stored === "governor") return stored;
-    }
-    return "senate";
+    return raceTypeFromQuery(initialTab);
   });
   const [selected, setSelected] = useState<RaceForecast | null>(null);
   const [selectedNoElection, setSelectedNoElection] = useState<NoElectionEntry | null>(null);
@@ -217,7 +215,6 @@ export default function ForecastMap() {
   const [hoveredNoElection, setHoveredNoElection] = useState<NoElectionEntry | null>(null);
   const [mousePos, setMousePos] = useState<{ x: number; y: number; containerW: number; containerH: number }>({ x: 0, y: 0, containerW: 800, containerH: 520 });
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
-  const ignoreClickUntilRef = useRef(0);
   const darkMode = useDarkMode();
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
@@ -274,6 +271,7 @@ export default function ForecastMap() {
   const geoUrl = isHouse ? HOUSE_DISTRICTS_2026_URL : STATES_URL;
   const data = isOverview ? [] as RaceForecast[] : raceType === "house" ? projectedHouseData : raceType === "senate" ? projectedSenateData : projectedGovernorData;
   const showSeatScorecard = activeTab === "forecast" && forecastSubView !== "overview";
+  const forecastMapKey = `${geoUrl}:${raceType}:${forecastSubView}:${mapKey}`;
   const holdovers = {
     senate: { dem: 34, rep: 31 },
     governor: { dem: 6, rep: 8 },
@@ -313,12 +311,15 @@ export default function ForecastMap() {
             {(["overview", "house", "senate", "governor"] as const).map((sv) => (
               <button
                 key={sv}
+                type="button"
                 onClick={() => {
                   window.history.pushState({}, "", `/?tab=${sv}`);
+                  window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: sv }));
                   setForecastSubView(sv);
                   localStorage.setItem("forecastSubView", sv);
                   if (sv !== "overview") { setRaceType(sv); localStorage.setItem("raceType", sv); }
-                  setSelected(null); setSelectedNoElection(null);
+                  setSelected(null); setSelectedNoElection(null); setHovered(null); setHoveredNoElection(null);
+                  setMapKey((k) => k + 1);
                 }}
                 className="text-xs font-semibold px-3 py-1.5 rounded-lg"
                 style={{
@@ -486,6 +487,7 @@ export default function ForecastMap() {
             : activeTab === "states"
             ? <StatesOverviewMap rows={stateRows} theme={t} onSelect={setSelectedStateRow} onModeChange={setSelectedStateMode} />
             : <ComposableMap
+            key={forecastMapKey}
             projection="geoAlbersUsa"
             projectionConfig={{ scale: 1200 }}
             style={{ width: "100%", height: "100%" }}
@@ -511,6 +513,10 @@ export default function ForecastMap() {
                   const isSelected = selected && match && selected.id === match.id;
                   const isSelectedNoEl = selectedNoElection && noElMatch && selectedNoElection.abbr === noElMatch.abbr;
                   const isInteractive = !!(match || noElMatch);
+                  const selectGeography = () => {
+                    if (match) { setSelected(match); setSelectedNoElection(null); }
+                    else if (noElMatch) { setSelectedNoElection(noElMatch); setSelected(null); }
+                  };
 
                   return (
                     <Geography
@@ -521,11 +527,7 @@ export default function ForecastMap() {
                         else if (noElMatch) { setHoveredNoElection(noElMatch); setHovered(null); }
                       }}
                       onMouseLeave={() => { setHovered(null); setHoveredNoElection(null); }}
-                      onClick={() => {
-                        if (Date.now() < ignoreClickUntilRef.current) return;
-                        if (match) { setSelected(match); setSelectedNoElection(null); }
-                        else if (noElMatch) { setSelectedNoElection(noElMatch); setSelected(null); }
-                      }}
+                      onClick={selectGeography}
                       onPointerDown={(e: React.PointerEvent) => {
                         if (e.pointerType !== "touch") {
                           touchStartRef.current = null;
@@ -539,9 +541,7 @@ export default function ForecastMap() {
                         touchStartRef.current = null;
                         if (!start || Math.hypot(e.clientX - start.x, e.clientY - start.y) > 10) return;
 
-                        ignoreClickUntilRef.current = Date.now() + 500;
-                        if (match) { setSelected(match); setSelectedNoElection(null); }
-                        else if (noElMatch) { setSelectedNoElection(noElMatch); setSelected(null); }
+                        selectGeography();
                       }}
                       style={{
                         default: {

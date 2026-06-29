@@ -2,7 +2,6 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
-import { useRouter } from "next/navigation";
 import { queryIndex, type SearchEntry } from "@/lib/searchIndex";
 
 export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProperties }) {
@@ -14,7 +13,6 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
   const containerRef = useRef<HTMLDivElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const router = useRouter();
 
   const updateDropdownRect = useCallback(() => {
     const container = containerRef.current;
@@ -42,8 +40,8 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
     setOpen(false);
     setQuery("");
     setResults([]);
-    router.push(entry.href);
-  }, [router]);
+    window.location.assign(entry.href);
+  }, []);
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!open) return;

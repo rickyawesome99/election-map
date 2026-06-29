@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 const TABS: { key: string; label: string; href?: string }[] = [
@@ -30,13 +29,10 @@ function getActiveTab(pathname: string, queryTab: string | null): string | null 
 export default function SubNavBar() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const router = useRouter();
   const urlActiveTab = getActiveTab(pathname, searchParams.get("tab"));
-  const [clientTab, setClientTab] = useState<string | null>(null);
-  const activeTab = clientTab ?? urlActiveTab;
+  const [clientTab, setClientTab] = useState<{ pathname: string; key: string } | null>(null);
+  const activeTab = clientTab?.pathname === pathname ? clientTab.key : urlActiveTab;
   const activeTabRef = useRef<HTMLElement | null>(null);
-
-  useEffect(() => { setClientTab(null); }, [pathname]);
 
   useEffect(() => {
     if (!activeTab || !window.matchMedia("(max-width: 767px)").matches) return;
@@ -67,7 +63,7 @@ export default function SubNavBar() {
           const isActive = activeTab === key;
           if (href) {
             return (
-              <Link
+              <a
                 key={key}
                 ref={(el) => { if (isActive) activeTabRef.current = el; }}
                 href={href}
@@ -76,22 +72,24 @@ export default function SubNavBar() {
                 style={tabStyle(isActive)}
               >
                 {label}
-              </Link>
+              </a>
             );
           }
+
           return (
             <button
               key={key}
               ref={(el) => { if (isActive) activeTabRef.current = el; }}
+              type="button"
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "auto" });
-                if (pathname === "/") {
-                  window.history.pushState({}, "", `/?tab=${key}`);
-                  setClientTab(key);
-                  window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: key }));
-                } else {
-                  router.push(`/?tab=${key}`);
+                if (pathname !== "/") {
+                  window.location.assign(`/?tab=${key}`);
+                  return;
                 }
+                window.history.pushState({}, "", `/?tab=${key}`);
+                setClientTab({ pathname, key });
+                window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: key }));
               }}
               className={commonClass}
               style={tabStyle(isActive)}

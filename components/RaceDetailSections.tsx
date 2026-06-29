@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import CandidateLink from "@/components/CandidateLink";
 
 type PollRow = {
@@ -103,6 +102,60 @@ function MarginPollRow({ label, dem, rep, precision = 0, pctMargin = false }: { 
           <span className="text-[10px]" style={{ color: "var(--party-rep-muted)" }}>{repR}%</span>
         </div>
       )}
+    </div>
+  );
+}
+
+function PollSummaryRow({ label, dem, rep, precision = 0, pctMargin = false }: { label: string; dem?: number; rep?: number; precision?: number; pctMargin?: boolean }) {
+  const hasData = dem != null && rep != null;
+  const demR = hasData ? parseFloat((dem * 100).toFixed(precision)) : null;
+  const repR = hasData ? parseFloat((rep * 100).toFixed(precision)) : null;
+  const winner = hasData && demR! >= repR! ? "D" : "R";
+  const winnerColor = winner === "D" ? "var(--party-dem)" : "var(--party-rep)";
+  const marginVal = hasData ? Math.abs(demR! - repR!).toFixed(precision) : null;
+  const mainValue = hasData
+    ? pctMargin
+      ? `${winner === "D" ? demR : repR}% ${winner}`
+      : `${winner} +${marginVal}`
+    : "TBD";
+
+  return (
+    <div className="flex items-center justify-between gap-4 rounded-lg px-3 py-2" style={{ background: "var(--app-tab-bg)", border: "1px solid var(--app-border)" }}>
+      <div>
+        <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>{label}</div>
+        {hasData && (
+          <div className="mt-0.5 flex items-center gap-2 text-xs font-semibold tabular-nums">
+            <span style={{ color: "var(--party-dem-muted)" }}>Dem {demR}%</span>
+            <span style={{ color: "var(--app-text-very-muted)" }}>/</span>
+            <span style={{ color: "var(--party-rep-muted)" }}>Rep {repR}%</span>
+          </div>
+        )}
+      </div>
+      <div className="text-right text-lg font-bold tabular-nums" style={{ color: hasData ? winnerColor : "var(--app-text-very-muted)", fontStyle: hasData ? "normal" : "italic" }}>
+        {mainValue}
+      </div>
+    </div>
+  );
+}
+
+function WinProbabilitySummary({ demPct, repPct }: { demPct: number; repPct: number }) {
+  const winner = demPct >= repPct ? "D" : "R";
+  const winnerColor = winner === "D" ? "var(--party-dem)" : "var(--party-rep)";
+  const winnerPct = winner === "D" ? demPct : repPct;
+
+  return (
+    <div className="flex items-center justify-between gap-4 rounded-lg px-3 py-2" style={{ background: "var(--app-tab-bg)", border: "1px solid var(--app-border)" }}>
+      <div>
+        <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>Win Probability</div>
+        <div className="mt-0.5 flex items-center gap-2 text-xs font-semibold tabular-nums">
+          <span style={{ color: "var(--party-dem)" }}>Dem {demPct}%</span>
+          <span style={{ color: "var(--app-text-very-muted)" }}>/</span>
+          <span style={{ color: "var(--party-rep)" }}>Rep {repPct}%</span>
+        </div>
+      </div>
+      <div className="text-right text-lg font-bold tabular-nums" style={{ color: winnerColor }}>
+        {winnerPct}% {winner}
+      </div>
     </div>
   );
 }
@@ -387,7 +440,7 @@ export function CandidatesAndPollsCard({
         Candidates
       </h2>
 
-      <div className="grid grid-cols-2 gap-5 mb-5">
+      <div className="grid grid-cols-2 gap-6 sm:gap-10 mb-5 w-full max-w-[520px] mx-auto">
         {candidates.map((candidate) => {
           const accentColor = partyAccent(candidate.party);
           const displayName = candidate.placeholder ? "TBD" : candidate.name;
@@ -433,22 +486,12 @@ export function CandidatesAndPollsCard({
 
       <div className="mb-4" style={{ borderTop: "1px solid var(--app-border)" }} />
 
-      <div className="mb-3">
-        <h3 className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>Win Probability</h3>
-        <div className="flex justify-between text-xs font-semibold mb-1.5">
-          <span style={{ color: "var(--party-dem)" }}>Dem {demPct}%</span>
-          <span style={{ color: "var(--party-rep)" }}>Rep {repPct}%</span>
-        </div>
-        <div className="h-3.5 rounded-full overflow-hidden flex">
-          <div style={{ width: `${demPct}%`, background: "#1b408c" }} className="transition-all duration-300" />
-          <div style={{ width: `${repPct}%`, background: "#be1c29" }} className="transition-all duration-300" />
-        </div>
-      </div>
+      <WinProbabilitySummary demPct={demPct} repPct={repPct} />
 
       {showPolls && (
-        <div className="flex flex-col gap-2.5">
-          <MarginPollRow label="RCP Average" dem={rcpDem} rep={rcpRep} precision={1} />
-          <MarginPollRow label="Market Average" pctMargin dem={marketDem} rep={marketRep} />
+        <div className="flex flex-col gap-2.5 mt-2.5">
+          <PollSummaryRow label="RCP Average" dem={rcpDem} rep={rcpRep} precision={1} />
+          <PollSummaryRow label="Market Average" pctMargin dem={marketDem} rep={marketRep} />
         </div>
       )}
     </section>
@@ -657,14 +700,14 @@ export function ForecastCalculationCard({
       <div className="flex flex-col gap-1.5">
         <div className="rounded-lg px-2.5 py-2 flex items-center justify-between" style={{ background: "var(--app-bg)" }}>
           {tplHref ? (
-            <Link
+            <a
               href={tplHref}
               className="text-[11px] font-semibold uppercase tracking-wider hover:underline underline-offset-2"
               style={{ color: "var(--app-text-muted)" }}
               title={`View ${tplLabel}`}
             >
               {tplLabel}
-            </Link>
+            </a>
           ) : (
             <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{tplLabel}</span>
           )}

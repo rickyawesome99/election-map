@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { Suspense } from "react";
@@ -28,7 +27,6 @@ function resolveFrom(from: string | null, pathname: string): string {
 }
 
 function BackButtonInner() {
-  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const from = searchParams.get("from");
@@ -36,10 +34,17 @@ function BackButtonInner() {
 
   function handleBack() {
     if (from) {
-      router.push(resolveFrom(from, pathname));
-    } else {
-      router.back();
+      window.location.assign(resolveFrom(from, pathname));
+      return;
     }
+
+    const referrer = document.referrer ? new URL(document.referrer) : null;
+    if (referrer?.origin === window.location.origin) {
+      window.location.assign(`${referrer.pathname}${referrer.search}${referrer.hash}`);
+      return;
+    }
+
+    window.location.assign(resolveFrom(null, pathname));
   }
 
   return (

@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import ThemeToggle from "@/components/ThemeToggle";
 import SearchBar from "@/components/SearchBar";
 
@@ -20,22 +19,17 @@ export default function AppHeader({
       }}
     >
       <div className="flex h-full shrink-0 flex-nowrap items-center gap-2.5 md:gap-4">
-        <Link
-          href="/?tab=overview"
-          prefetch={false}
+        <button
+          type="button"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "auto" });
-            window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: "overview" }));
-          }}
-          onNavigate={(event) => {
-            event.preventDefault();
             window.location.assign("/?tab=overview");
           }}
-          className="shrink-0 text-lg font-bold leading-none tracking-tight sm:text-xl"
+          className="shrink-0 cursor-pointer text-left text-lg font-bold leading-none tracking-tight sm:text-xl"
           style={{ color: "var(--app-text-primary)" }}
         >
           CT Strategies
-        </Link>
+        </button>
       </div>
       <span className="hidden md:block text-xs" style={{ color: "var(--app-text-muted)" }}>Updated Jun 21, 2026</span>
       <div className="ml-auto flex h-full shrink-0 flex-nowrap items-center gap-2">

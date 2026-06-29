@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo, useRef, useEffect } from "react";
-import Link from "next/link";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
@@ -1104,13 +1103,13 @@ export default function TplModelPage() {
                           {r.raceType}
                         </span>
                         {r.detailHref ? (
-                          <Link
+                          <a
                             href={withTplReturn(r.detailHref, stateTplFromParam())}
                             className="font-semibold hover:underline"
                             style={{ color: "var(--app-text-primary)" }}
                           >
                             {r.race}
-                          </Link>
+                          </a>
                         ) : (
                           <span className="font-semibold">{r.race}</span>
                         )}
@@ -1531,13 +1530,13 @@ export default function TplModelPage() {
                       >
                         <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
                           {selectedDistrictHouseHref ? (
-                            <Link
+                            <a
                               href={withTplReturn(`/house/${selectedDistrictHouseHref}`, districtTplFromParam())}
                               className="font-semibold hover:underline"
                               style={{ color: "var(--app-text-primary)" }}
                             >
                               President
-                            </Link>
+                            </a>
                           ) : (
                             <span className="font-semibold">President</span>
                           )}

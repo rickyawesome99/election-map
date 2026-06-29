@@ -1,5 +1,4 @@
 import { electionYear } from "@/data/forecastData";
-import Link from "next/link";
 
 export const metadata = {
   title: `Analysis — ${electionYear} Forecast`,
@@ -38,13 +37,13 @@ export default function AnalysisPage() {
                 style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}
               >
                 <td className="px-3 sm:px-4 py-3">
-                  <Link
+                  <a
                     href="/analysis/oh-31"
                     className="font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     OH-31
-                  </Link>
+                  </a>
                 </td>
               </tr>
               <tr
@@ -52,13 +51,13 @@ export default function AnalysisPage() {
                 style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}
               >
                 <td className="px-3 sm:px-4 py-3">
-                  <Link
+                  <a
                     href="/analysis/popular-vote"
                     className="font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
                     Popular Vote
-                  </Link>
+                  </a>
                 </td>
               </tr>
             </tbody>
