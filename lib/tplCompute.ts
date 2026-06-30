@@ -595,11 +595,26 @@ export function calculateDistrictTpl(districtId: string): number {
   return calculateDistrictModel(normalizedId).tpl;
 }
 
+// Weight given to polling (RCP Average) vs. the structural forecast in the final blend.
+export const POLL_WEIGHT = 0.2;
+
+// RCP Average vote shares are stored as 0–1 decimals; convert to an R-positive margin (%).
+export function computeRcpMargin(rcpDem?: number | null, rcpRep?: number | null): number | null {
+  if (rcpDem == null || rcpRep == null) return null;
+  return (rcpRep - rcpDem) * 100;
+}
+
+// Single source of truth for a race's projected margin: structural forecast (TPL + generic
+// ballot + incumbent, plus fundraising/candidate points once that data exists) blended with the
+// RCP Average when available. Every consumer (map, table, state page, race detail pages) should
+// read margin off this function so changing an input here updates margin everywhere.
 export function computeProjectedMargin(race: {
   id: string;
   state: string;
   raceType: string;
   candidates?: { dem: { party: "D" | "R" | "I"; incumbent: boolean }; rep: { party: "D" | "R" | "I"; incumbent: boolean } };
+  rcpDem?: number;
+  rcpRep?: number;
 }): number {
   const raceTypeMap: Record<string, "H" | "S" | "G"> = { house: "H", senate: "S", governor: "G" };
   const shortType = raceTypeMap[race.raceType];
@@ -609,16 +624,23 @@ export function computeProjectedMargin(race: {
   const incumbentParty = (incumbentCandidate?.party === "D" || incumbentCandidate?.party === "R") ? incumbentCandidate.party : null;
   const incumbentPts = shortType ? computeIncumbentPts(shortType, incumbentParty) : 0;
 
+  let structuralMargin: number;
   if (race.raceType === "house") {
     const stateAbbr = statesData.find((s) => s.name === race.state)?.abbr ?? "";
-    return calculateDistrictTpl(race.id) + effectiveGenericBallot(stateAbbr) + incumbentPts;
+    structuralMargin = calculateDistrictTpl(race.id) + effectiveGenericBallot(stateAbbr) + incumbentPts;
+  } else {
+    // senate/governor: id may have a numeric suffix (e.g. "DE-2"); strip it to get state abbr
+    const stateAbbr = race.id.replace(/-\d+$/, "");
+    const effectiveIncumbentPts = race.raceType === "governor" && GOVERNOR_MANUAL_MARGINS[stateAbbr] != null
+      ? GOVERNOR_MANUAL_MARGINS[stateAbbr]
+      : incumbentPts;
+    structuralMargin = calculateStateTpl(stateAbbr, race.state) + effectiveGenericBallot(stateAbbr) + effectiveIncumbentPts;
   }
-  // senate/governor: id may have a numeric suffix (e.g. "DE-2"); strip it to get state abbr
-  const stateAbbr = race.id.replace(/-\d+$/, "");
-  const effectiveIncumbentPts = race.raceType === "governor" && GOVERNOR_MANUAL_MARGINS[stateAbbr] != null
-    ? GOVERNOR_MANUAL_MARGINS[stateAbbr]
-    : incumbentPts;
-  return calculateStateTpl(stateAbbr, race.state) + effectiveGenericBallot(stateAbbr) + effectiveIncumbentPts;
+
+  const pollingAvg = computeRcpMargin(race.rcpDem, race.rcpRep);
+  return pollingAvg != null
+    ? (1 - POLL_WEIGHT) * structuralMargin + POLL_WEIGHT * pollingAvg
+    : structuralMargin;
 }
 
 // ── Effective generic ballot (GB × state S) ──────────────────────────────────

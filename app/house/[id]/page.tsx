@@ -6,7 +6,8 @@ import { notFound } from "next/navigation";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
 import { AboutRaceCard, CandidatesAndPollsCard, ForecastCalculationCard, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
-import { calculateDistrictTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts } from "@/lib/tplCompute";
+import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
+import { calculateDistrictTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
 const HOUSE_BOUNDARIES_CARD_HEIGHT = "275px";
 
@@ -58,7 +59,8 @@ export default async function HousePage({ params, searchParams }: { params: Prom
   const incumbentParty = (incumbentCandidate?.party === "D" || incumbentCandidate?.party === "R") ? incumbentCandidate.party : null;
   const incumbentPts = computeIncumbentPts("H", incumbentParty);
   const gb = effectiveGenericBallot(stateAbbr);
-  const projectedMargin = districtTpl + gb + incumbentPts;
+  const rcpMargin = computeRcpMargin(race.rcpDem, race.rcpRep);
+  const projectedMargin = computeProjectedMargin(race);
   const demPct = Math.round(marginToProbability(projectedMargin) * 100);
   const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
@@ -177,9 +179,36 @@ export default async function HousePage({ params, searchParams }: { params: Prom
               />
             </div>
 
-            <div className="order-8">
-              <DistrictVoteHistoryChart houseResults={pastResultsWithDiff} statewideResults={statewideResultsWithDiff} />
-            </div>
+            <VoteHistoryTabbedSection
+              className="order-6 md:order-3"
+              defaultTabKey="race-results"
+              height="430px"
+              tabs={[
+                {
+                  key: "race-results",
+                  label: "Race Results",
+                  content: (
+                    <PastElectionResultsSection
+                      results={pastResultsWithDiff}
+                      fallbackYears={[2024, 2022, 2020]}
+                      showElectionType={false}
+                      density="compact"
+                      bare
+                    />
+                  ),
+                },
+                {
+                  key: "statewide-results",
+                  label: "Statewide",
+                  content: <HouseOnlyRecentStatewideResultsSection results={statewideResultsWithDiff} density="compact" bare />,
+                },
+                ...((pastResultsWithDiff.length > 0 || statewideResultsWithDiff.length > 0) ? [{
+                  key: "chart",
+                  label: "Graph",
+                  content: <DistrictVoteHistoryChart houseResults={pastResultsWithDiff} statewideResults={statewideResultsWithDiff} bare />,
+                }] : []),
+              ]}
+            />
 
             <div className="order-9 [&>section]:h-full" style={{ height: HOUSE_BOUNDARIES_CARD_HEIGHT }}>
               <HouseOnlyDistrictBoundariesSection
@@ -220,24 +249,11 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                 incumbentPts={incumbentPts}
                 fundraisingPts={null}
                 candidatePts={null}
-                pollingAvg={null}
+                pollingAvg={rcpMargin}
+                projectedMargin={projectedMargin}
               />
             </div>
 
-            <div className="order-6">
-              <PastElectionResultsSection
-                results={pastResultsWithDiff}
-                fallbackYears={[2024, 2022, 2020]}
-                showElectionType={false}
-                density="compact"
-                scrollable
-                maxHeight="400px"
-              />
-            </div>
-
-            <div className="order-7">
-              <HouseOnlyRecentStatewideResultsSection results={statewideResultsWithDiff} density="compact" maxHeight="380px" />
-            </div>
           </div>
         </div>
       </main>

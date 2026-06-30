@@ -32,11 +32,13 @@ export default function AppShell({
     <>
       <div
         aria-hidden="true"
+        data-browser-chrome
         className="pointer-events-none fixed inset-x-0 top-0 z-[60] h-[env(safe-area-inset-top,0px)]"
-        style={{ background: "var(--browser-chrome-bg)" }}
+        style={{ backgroundColor: darkMode ? "#000000" : "#ffffff" }}
       />
       <div className="sticky top-0 z-50">
         <AppHeader
+          darkMode={darkMode}
           back={showBack ? <BackButton /> : undefined}
         />
       </div>

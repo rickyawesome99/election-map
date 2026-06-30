@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   LineChart,
   Line,
@@ -9,7 +9,6 @@ import {
   Tooltip,
   CartesianGrid,
   ReferenceLine,
-  ResponsiveContainer,
 } from "recharts";
 
 type TabKey = "house" | "senate" | "governor" | "president";
@@ -176,9 +175,11 @@ function buildSegmentLines(points: ChartPoint[], dataKey: "repMargin" | "natY"):
 export default function DistrictVoteHistoryChart({
   houseResults,
   statewideResults,
+  bare = false,
 }: {
   houseResults: HouseResultInput[];
   statewideResults: StatewideResultInput[];
+  bare?: boolean;
 }) {
   const availableTabs = TAB_ORDER.filter(
     tab => getChartPoints(tab, houseResults, statewideResults).length >= 1
@@ -186,6 +187,32 @@ export default function DistrictVoteHistoryChart({
 
   const [activeTab, setActiveTab] = useState<TabKey>(() => availableTabs[0] ?? "house");
   const [showNational, setShowNational] = useState(false);
+  const [chartReady, setChartReady] = useState(false);
+  const chartHostRef = useRef<HTMLDivElement | null>(null);
+  const [chartSize, setChartSize] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    const frame = requestAnimationFrame(() => setChartReady(true));
+    return () => cancelAnimationFrame(frame);
+  }, []);
+
+  useEffect(() => {
+    const host = chartHostRef.current;
+    if (!host) return;
+
+    const updateSize = () => {
+      const rect = host.getBoundingClientRect();
+      setChartSize({
+        width: Math.max(0, Math.floor(rect.width)),
+        height: Math.max(0, Math.floor(rect.height)),
+      });
+    };
+
+    updateSize();
+    const observer = new ResizeObserver(updateSize);
+    observer.observe(host);
+    return () => observer.disconnect();
+  }, []);
 
   if (availableTabs.length === 0) return null;
 
@@ -199,15 +226,15 @@ export default function DistrictVoteHistoryChart({
   const activeDataKey = showNational ? "natY" : "repMargin";
   const { chartData, segments } = buildSegmentLines(chartPoints, activeDataKey);
 
-  return (
-    <div
-      className="rounded-xl overflow-hidden"
-      style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-    >
-      <div className="px-3 pt-3 pb-1 flex items-center justify-between">
-        <h2 className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-          Vote History
-        </h2>
+  const chart = (
+    <>
+      <div className={`${bare ? "pb-1" : "px-3 pt-3 pb-1"} flex items-center justify-between`}>
+        {!bare && (
+          <h2 className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
+            Vote History
+          </h2>
+        )}
+        {bare && <div />}
         <div className="flex items-center gap-1.5">
           {availableTabs.length > 1 && (
             <div className="flex rounded-md overflow-hidden" style={{ border: "1px solid var(--app-border)", opacity: 0.92 }}>
@@ -243,9 +270,9 @@ export default function DistrictVoteHistoryChart({
         </div>
       </div>
 
-      <div className="px-4 pt-2 pb-3" style={{ height: 255 }}>
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={chartData} margin={{ top: 8, right: 16, bottom: 0, left: 0 }}>
+      <div ref={chartHostRef} className={`${bare ? "px-1" : "px-4"} min-w-0 pt-2 pb-3`} style={{ height: 255 }}>
+        {chartReady && chartSize.width > 0 && chartSize.height > 0 && (
+            <LineChart width={chartSize.width} height={chartSize.height} data={chartData} margin={{ top: 8, right: 16, bottom: 0, left: 0 }}>
             <XAxis
               dataKey="year"
               tick={{ fontSize: 11, fill: "var(--app-text-muted)" }}
@@ -309,9 +336,20 @@ export default function DistrictVoteHistoryChart({
               activeDot={{ r: 5 }}
               isAnimationActive={false}
             />
-          </LineChart>
-        </ResponsiveContainer>
+            </LineChart>
+        )}
       </div>
+    </>
+  );
+
+  if (bare) return <div className="min-w-0">{chart}</div>;
+
+  return (
+    <div
+      className="rounded-xl overflow-hidden"
+      style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+    >
+      {chart}
     </div>
   );
 }

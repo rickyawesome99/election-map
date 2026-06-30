@@ -20,18 +20,15 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "2026 Election Forecast",
   description: "Interactive U.S. election forecast map for House, Senate, and Governor races",
-  appleWebApp: {
-    statusBarStyle: "black-translucent",
-  },
 };
 
 export const viewport: Viewport = {
-  colorScheme: "light dark",
-  themeColor: "#000000",
+  colorScheme: "light",
+  themeColor: "#ffffff",
   viewportFit: "cover",
 };
 
-const restoreThemeScript = `(function(){try{var dark=localStorage.getItem('darkMode')==='true';var themeColor=dark?'#000000':'#ffffff';var root=document.documentElement;root.classList.toggle('dark',dark);root.style.backgroundColor=themeColor;root.style.colorScheme=dark?'dark':'light';document.querySelectorAll('meta[name="theme-color"]').forEach(function(meta){meta.remove()});var themeMeta=document.createElement('meta');themeMeta.name='theme-color';themeMeta.content=themeColor;document.head.appendChild(themeMeta);var statusMeta=document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');if(!statusMeta){statusMeta=document.createElement('meta');statusMeta.name='apple-mobile-web-app-status-bar-style';document.head.appendChild(statusMeta)}statusMeta.content=dark?'black-translucent':'default'}catch(e){}})()`;
+const restoreThemeScript = `(function(){try{var dark=localStorage.getItem('darkMode')==='true';var themeColor=dark?'#000000':'#ffffff';var colorScheme=dark?'dark':'light';var root=document.documentElement;root.classList.toggle('dark',dark);root.dataset.theme=colorScheme;root.style.setProperty('--browser-chrome-bg',themeColor);root.style.backgroundColor=themeColor;root.style.colorScheme=colorScheme;function syncMeta(name,content,removeMedia){var metas=Array.prototype.slice.call(document.querySelectorAll('meta[name="'+name+'"]'));var meta=metas.shift()||document.createElement('meta');meta.name=name;meta.content=content;if(removeMedia)meta.removeAttribute('media');if(!meta.parentNode)document.head.appendChild(meta);metas.forEach(function(extra){extra.remove()})}syncMeta('theme-color',themeColor,true);syncMeta('color-scheme',colorScheme,false);syncMeta('apple-mobile-web-app-status-bar-style',dark?'black':'default',false)}catch(e){}})()`;
 
 function validRaceType(value: string | undefined): "house" | "senate" | "governor" | null {
   return value === "house" || value === "senate" || value === "governor" ? value : null;

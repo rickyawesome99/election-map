@@ -89,6 +89,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.53,
     "kalshiRep": 0.47,
+    "polyDem": 0.7,
+    "polyRep": 0.3,
     "candidates": {
       "dem": { "name": "Mary Peltola", "party": "D", "incumbent": false },
       "rep": { "name": "Dan Sullivan", "party": "R", "incumbent": true }
@@ -188,6 +190,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.97,
     "kalshiRep": 0.03,
+    "polyDem": 0.92,
+    "polyRep": 0.08,
     "candidates": {
       "dem": { "name": "John Hickenlooper", "party": "D", "incumbent": true },
       "rep": { "name": "Mark Baisley", "party": "R", "incumbent": false }
@@ -254,6 +258,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.8,
     "kalshiRep": 0.2,
+    "polyDem": 0.86,
+    "polyRep": 0.14,
     "candidates": {
       "dem": { "name": "Jon Ossoff", "party": "D", "incumbent": true },
       "rep": { "name": "Mike Collins", "party": "R", "incumbent": false }
@@ -287,6 +293,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.41,
     "kalshiRep": 0.59,
+    "polyDem": 0.45,
+    "polyRep": 0.55,
     "candidates": {
       "dem": { "name": "Josh Turek", "party": "D", "incumbent": false },
       "rep": { "name": "Ashley Hinson", "party": "R", "incumbent": false }
@@ -320,6 +328,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.07,
     "kalshiRep": 0.93,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "David Roth", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Risch", "party": "R", "incumbent": true }
@@ -353,6 +363,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.93,
     "kalshiRep": 0.07,
+    "polyDem": 0.5,
+    "polyRep": 0.5,
     "candidates": {
       "dem": { "name": "Juliana Stratton", "party": "D", "incumbent": false },
       "rep": { "name": "Don Tracy", "party": "R", "incumbent": false }
@@ -386,6 +398,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.23,
     "kalshiRep": 0.77,
+    "polyDem": 0.18,
+    "polyRep": 0.82,
     "candidates": {
       "dem": { "name": "Sharice Davids", "party": "D", "incumbent": false },
       "rep": { "name": "Roger Marshall", "party": "R", "incumbent": true }
@@ -452,6 +466,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.09,
     "kalshiRep": 0.91,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Jamie Davis", "party": "D", "incumbent": false },
       "rep": { "name": "Julia Letlow", "party": "R", "incumbent": false }
@@ -485,6 +501,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.95,
     "kalshiRep": 0.05,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Ed Markey", "party": "D", "incumbent": true },
       "rep": { "name": "John Deaton", "party": "R", "incumbent": false }
@@ -518,8 +536,10 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.7,
     "kalshiRep": 0.3,
+    "polyDem": 0.57,
+    "polyRep": 0.43,
     "candidates": {
-      "dem": { "name": "Graham Platner", "party": "D", "incumbent": false },
+      "dem": { "name": "Grahama Platner", "party": "D", "incumbent": false },
       "rep": { "name": "Susan Collins", "party": "R", "incumbent": true }
     },
     "seatHolder": "Susan Collins",
@@ -551,6 +571,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.79,
     "kalshiRep": 0.21,
+    "polyDem": 0.72,
+    "polyRep": 0.28,
     "candidates": {
       "dem": { "name": "Mallory McMorrow", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Rogers", "party": "R", "incumbent": false }
@@ -584,6 +606,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.9,
     "kalshiRep": 0.1,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Peggy Flanagan", "party": "D", "incumbent": false },
       "rep": { "name": "Michele Tafoya", "party": "R", "incumbent": false }
@@ -618,6 +642,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.06,
     "kalshiRep": 0.94,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Scott Colom", "party": "D", "incumbent": false },
       "rep": { "name": "Cindy Hyde-Smith", "party": "R", "incumbent": true }
@@ -652,6 +678,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.21,
     "kalshiRep": 0.79,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Seth Bodnar", "party": "I", "incumbent": false },
       "rep": { "name": "Kurt Alme", "party": "R", "incumbent": false }
@@ -685,6 +713,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.52,
     "kalshiRep": 0.48,
+    "polyDem": 0.5,
+    "polyRep": 0.5,
     "candidates": {
       "dem": { "name": "Roy Cooper", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Whatley", "party": "R", "incumbent": false }
@@ -718,6 +748,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.27,
     "kalshiRep": 0.73,
+    "polyDem": 0.03,
+    "polyRep": 0.97,
     "candidates": {
       "dem": { "name": "Dan Osborne", "party": "I", "incumbent": false },
       "rep": { "name": "Pete Ricketts", "party": "R", "incumbent": true }
@@ -752,6 +784,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.85,
     "kalshiRep": 0.15,
+    "polyDem": 0.86,
+    "polyRep": 0.14,
     "candidates": {
       "dem": { "name": "Chris Pappas", "party": "D", "incumbent": false },
       "rep": { "name": "John Sununu", "party": "R", "incumbent": false }
@@ -785,6 +819,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.96,
     "kalshiRep": 0.04,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Cory Booker", "party": "D", "incumbent": true },
       "rep": { "name": "Justin Murphy", "party": "R", "incumbent": false }
@@ -818,6 +854,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.97,
     "kalshiRep": 0.03,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Ben Ray Lujan", "party": "D", "incumbent": true },
       "rep": { "name": "Larry Marker", "party": "R", "incumbent": false }
@@ -851,6 +889,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.04,
     "kalshiRep": 0.96,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
       "rep": { "name": "Kevin Hern", "party": "R", "incumbent": false }
@@ -951,6 +991,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.14,
     "kalshiRep": 0.86,
+    "polyDem": 0.18,
+    "polyRep": 0.82,
     "candidates": {
       "dem": { "name": "Annie Andrews", "party": "D", "incumbent": false },
       "rep": { "name": "Lindsey Graham", "party": "R", "incumbent": true }
@@ -1017,6 +1059,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.07,
     "kalshiRep": 0.93,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
       "rep": { "name": "Bill Hagerty", "party": "R", "incumbent": true }
@@ -1050,6 +1094,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Regular",
     "kalshiDem": 0.43,
     "kalshiRep": 0.57,
+    "polyDem": 0.5,
+    "polyRep": 0.5,
     "candidates": {
       "dem": { "name": "James Talarico", "party": "D", "incumbent": false },
       "rep": { "name": "Ken Paxton", "party": "R", "incumbent": false }
@@ -1182,6 +1228,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Special",
     "kalshiDem": 0.14,
     "kalshiRep": 0.86,
+    "polyDem": 0.17,
+    "polyRep": 0.83,
     "candidates": {
       "dem": { "name": "Alexander Vindman", "party": "D", "incumbent": false },
       "rep": { "name": "Ashley Moody", "party": "R", "incumbent": true }
@@ -1215,6 +1263,8 @@ export const senateData: RaceForecast[] = [
     "electionType": "Special",
     "kalshiDem": 0.52,
     "kalshiRep": 0.48,
+    "polyDem": 0.5,
+    "polyRep": 0.5,
     "candidates": {
       "dem": { "name": "Sherrod Brown", "party": "D", "incumbent": false },
       "rep": { "name": "Jon Husted", "party": "R", "incumbent": true }
@@ -2163,6 +2213,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Incumbent Katie Hubbs is running for a second term in a state that Trump won back in 2024.",
     "kalshiDem": 0.71,
     "kalshiRep": 0.29,
+    "polyDem": 0.79,
+    "polyRep": 0.21,
     "candidates": {
       "dem": { "name": "Katie Hobbs", "party": "D", "incumbent": true },
       "rep": { "name": "Andy Biggs", "party": "R", "incumbent": false }
@@ -2229,6 +2281,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Colorado is a reliable Democrat state and Republicans have not won a gubernatorial election in Colorado since Bill Owens was re-elected in 2002.",
     "kalshiDem": 0.91,
     "kalshiRep": 0.09,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Michael Bennet", "party": "D", "incumbent": false },
       "rep": { "name": "Barbara Kirkmeyer", "party": "R", "incumbent": false }
@@ -2295,6 +2349,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "The race to succeed Incumbent Governor Ron DeSantis will be an interesting one in this once swing state now trending strongly towards Republicans.",
     "kalshiDem": 0.15,
     "kalshiRep": 0.85,
+    "polyDem": 0.23,
+    "polyRep": 0.77,
     "candidates": {
       "dem": { "name": "David Jolly", "party": "D", "incumbent": false },
       "rep": { "name": "Byron Donalds", "party": "R", "incumbent": false }
@@ -2328,6 +2384,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Democrats have not won a gubernatorial election in Georgia since 1998. This year might be their best shot yet to break that streak.",
     "kalshiDem": 0.55,
     "kalshiRep": 0.45,
+    "polyDem": 0.5,
+    "polyRep": 0.5,
     "candidates": {
       "dem": { "name": "Keisha Lance Bottoms", "party": "D", "incumbent": false },
       "rep": { "name": "Rick Jackson", "party": "R", "incumbent": false }
@@ -2394,6 +2452,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "This is surprisingly the first open seat gubernatorial election in the state since 2006, which as also the last gubernatorial election in Iowa won by a Democrat.",
     "kalshiDem": 0.49,
     "kalshiRep": 0.51,
+    "polyDem": 0.64,
+    "polyRep": 0.36,
     "candidates": {
       "dem": { "name": "Rob Sand", "party": "D", "incumbent": false },
       "rep": { "name": "Zach Lahn", "party": "R", "incumbent": false }
@@ -2528,6 +2588,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Incumbent Governor Maura Healey is running for a second term.",
     "kalshiDem": 0.92,
     "kalshiRep": 0.08,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Maura Healey", "party": "D", "incumbent": true },
       "rep": { "name": "Brian Shortsleeve", "party": "R", "incumbent": false }
@@ -2561,6 +2623,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Incumbent Governor Wes Moore is running for a second term.",
     "kalshiDem": 0.94,
     "kalshiRep": 0.06,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Wes Moore", "party": "D", "incumbent": true },
       "rep": { "name": "Dan Cox", "party": "R", "incumbent": false }
@@ -2726,6 +2790,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "This is one of two Republican-held governorships up for election in a state that Kamala Harris won in the 2024 Presidential Election.",
     "kalshiDem": 0.29,
     "kalshiRep": 0.71,
+    "polyDem": 0.25,
+    "polyRep": 0.75,
     "candidates": {
       "dem": { "name": "Cinde Warmington", "party": "D", "incumbent": false },
       "rep": { "name": "Kelly Ayotte", "party": "R", "incumbent": true }
@@ -2759,6 +2825,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "New Mexico hasn't elected a Republican governor since 2014.",
     "kalshiDem": 0.92,
     "kalshiRep": 0.08,
+    "polyDem": 0.88,
+    "polyRep": 0.12,
     "candidates": {
       "dem": { "name": "Deb Haaland", "party": "D", "incumbent": false },
       "rep": { "name": "Gregg Hull", "party": "R", "incumbent": false }
@@ -2792,6 +2860,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Incumbent Governor Joe Lombardo is running for re-election to a second term in office in this swing state.",
     "kalshiDem": 0.49,
     "kalshiRep": 0.51,
+    "polyDem": 0.56,
+    "polyRep": 0.44,
     "candidates": {
       "dem": { "name": "Aaron Ford", "party": "D", "incumbent": false },
       "rep": { "name": "Joe Lombardo", "party": "R", "incumbent": true }
@@ -2895,6 +2965,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Oklahoma is a deeply red state where Democrats have not won statewide since 2006.",
     "kalshiDem": 0.11,
     "kalshiRep": 0.89,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
       "rep": { "name": "Genter Drummond", "party": "R", "incumbent": false }
@@ -2928,6 +3000,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Incumbent Governor Tina Kotek is running for a second full term.",
     "kalshiDem": 0.88,
     "kalshiRep": 0.12,
+    "polyDem": 0.89,
+    "polyRep": 0.11,
     "candidates": {
       "dem": { "name": "Tina Kotek", "party": "D", "incumbent": true },
       "rep": { "name": "Christine Drazan", "party": "R", "incumbent": false }
@@ -2961,6 +3035,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Incumbent Governor Josh Shapiro is running for a second term.",
     "kalshiDem": 0.96,
     "kalshiRep": 0.04,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Josh Shapiro", "party": "D", "incumbent": true },
       "rep": { "name": "Stacy Garrity", "party": "R", "incumbent": false }
@@ -2994,6 +3070,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Incumbent Governor Dan McKee is running for a second full term in office. McKee became governor in 2021 upon the resignation of Gina Raimondo.",
     "kalshiDem": 0.93,
     "kalshiRep": 0.07,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Dan McKee", "party": "D", "incumbent": true },
       "rep": { "name": "Aaron Guckian", "party": "R", "incumbent": false }
@@ -3027,6 +3105,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "South Carolina has an open seat. Democrats have not won a gubernatorial election here since 1998.",
     "kalshiDem": 0.05,
     "kalshiRep": 0.95,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Jermaine Johnson", "party": "D", "incumbent": false },
       "rep": { "name": "Alan Wilson", "party": "R", "incumbent": false }
@@ -3060,6 +3140,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Incumbent Governor Larry Rhoden, who ascended to the office in 2025 after Kristi Noem resigned to become secretary of homeland security, is running for his first full term in office. Rhoden had previously been serving as lieutenant governor under Noem since the two took office in 2019.[2] Democrats have not won a gubernatorial election in South Dakota since 1974.",
     "kalshiDem": 0.04,
     "kalshiRep": 0.96,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
       "rep": { "name": "Larry Rhoden", "party": "R", "incumbent": true }
@@ -3126,6 +3208,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Incumbent Governor Greg Abbott is running for a fourth term.",
     "kalshiDem": 0.18,
     "kalshiRep": 0.82,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Gina Hinojosa", "party": "D", "incumbent": false },
       "rep": { "name": "Greg Abbott", "party": "R", "incumbent": true }
@@ -3159,6 +3243,8 @@ export const governorData: RaceForecast[] = [
     "raceDesc": "Phil Scott has been governor since 2016 and is currently the most popular state governor in the nation according to a Morning Consult poll.",
     "kalshiDem": 0.25,
     "kalshiRep": 0.75,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Amanda Janoo", "party": "D", "incumbent": false },
       "rep": { "name": "Phil Scott", "party": "R", "incumbent": true }
@@ -3444,6 +3530,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.92,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Clyde Jones", "party": "D", "incumbent": false },
       "rep": { "name": "Rhett Marques", "party": "R", "incumbent": false }
@@ -3477,6 +3565,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.28,
     "kalshiRep": 0.67,
+    "polyDem": 0.23,
+    "polyRep": 0.77,
     "candidates": {
       "dem": { "name": "Shomari Figures", "party": "D", "incumbent": true },
       "rep": { "name": "Hampton Harris", "party": "R", "incumbent": false }
@@ -3510,6 +3600,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.76,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Victor McInnis", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Rogers", "party": "R", "incumbent": true }
@@ -3543,6 +3635,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.77,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Amanda Pusczek", "party": "D", "incumbent": false },
       "rep": { "name": "Robert Aderholt", "party": "R", "incumbent": true }
@@ -3576,6 +3670,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.76,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Andrew Sneed", "party": "D", "incumbent": false },
       "rep": { "name": "Dale Strong", "party": "R", "incumbent": true }
@@ -3609,6 +3705,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.75,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Elizabeth Anderson", "party": "D", "incumbent": false },
       "rep": { "name": "Gary Palmer", "party": "R", "incumbent": true }
@@ -3642,6 +3740,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0.11,
+    "polyDem": 0.91,
+    "polyRep": 0.09,
     "candidates": {
       "dem": { "name": "Terri Sewell", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -3673,6 +3773,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 28 },
       { "date": "Mar", "value": 28 }
     ],
+    "polyDem": 0.17,
+    "polyRep": 0.83,
     "candidates": {
       "dem": { "name": "Matthew Schultz", "party": "D", "incumbent": false },
       "rep": { "name": "Nicholas Begich III", "party": "R", "incumbent": true }
@@ -3704,6 +3806,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 59 },
       { "date": "Mar", "value": 59 }
     ],
+    "polyDem": 0.76,
+    "polyRep": 0.24,
     "candidates": {
       "dem": { "name": "Jonathan Treble", "party": "D", "incumbent": false },
       "rep": { "name": "Thomas Feely", "party": "R", "incumbent": false }
@@ -3735,6 +3839,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 21 },
       { "date": "Mar", "value": 21 }
     ],
+    "polyDem": 0.37,
+    "polyRep": 0.63,
     "candidates": {
       "dem": { "name": "Jonathan Nez", "party": "D", "incumbent": false },
       "rep": { "name": "Eli Crane", "party": "R", "incumbent": true }
@@ -3768,6 +3874,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Yassamin Ansari", "party": "D", "incumbent": true },
       "rep": { "name": "Kirt Burgess", "party": "R", "incumbent": false }
@@ -3801,6 +3909,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.88,
     "kalshiRep": 0.08,
+    "polyDem": 0.83,
+    "polyRep": 0.17,
     "candidates": {
       "dem": { "name": "Greg Stanton", "party": "D", "incumbent": true },
       "rep": { "name": "Zuhdi Jasser", "party": "R", "incumbent": false }
@@ -3834,6 +3944,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.17,
     "kalshiRep": 0.74,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Christopher James", "party": "D", "incumbent": false },
       "rep": { "name": "Andy Biggs", "party": "R", "incumbent": true }
@@ -3865,6 +3977,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 62 },
       { "date": "Mar", "value": 62 }
     ],
+    "polyDem": 0.78,
+    "polyRep": 0.22,
     "candidates": {
       "dem": { "name": "Joanna Mendoza", "party": "D", "incumbent": false },
       "rep": { "name": "Juan Ciscomani", "party": "R", "incumbent": true }
@@ -3898,6 +4012,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.76,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Adelita Grijalva", "party": "D", "incumbent": true },
       "rep": { "name": "Daniel Butierez", "party": "R", "incumbent": false }
@@ -3931,6 +4047,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.08,
     "kalshiRep": 0.69,
+    "polyDem": 0.23,
+    "polyRep": 0.77,
     "candidates": {
       "dem": { "name": "Bernadette Placentia", "party": "D", "incumbent": false },
       "rep": { "name": "Abraham Hamadeh", "party": "R", "incumbent": true }
@@ -3964,6 +4082,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.74,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Danielle Sterbinsky", "party": "D", "incumbent": false },
       "rep": { "name": "Paul Gosar", "party": "R", "incumbent": true }
@@ -3997,6 +4117,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.97,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Terri Green", "party": "D", "incumbent": false },
       "rep": { "name": "Rick Crawford", "party": "R", "incumbent": true }
@@ -4030,6 +4152,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.16,
     "kalshiRep": 0.83,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Chris Jones", "party": "D", "incumbent": false },
       "rep": { "name": "French Hill", "party": "R", "incumbent": true }
@@ -4063,6 +4187,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.76,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Robb Ryerse", "party": "D", "incumbent": false },
       "rep": { "name": "Steve Womack", "party": "R", "incumbent": true }
@@ -4096,6 +4222,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.84,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "James Russell", "party": "D", "incumbent": false },
       "rep": { "name": "Bruce Westerman", "party": "R", "incumbent": true }
@@ -4129,6 +4257,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.92,
     "kalshiRep": 0,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Mike McGuire", "party": "D", "incumbent": false },
       "rep": { "name": "James Gallagher", "party": "R", "incumbent": true }
@@ -4162,6 +4292,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.76,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Jared Huffman", "party": "D", "incumbent": true },
       "rep": { "name": "Robin Littau", "party": "R", "incumbent": false }
@@ -4193,6 +4325,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 92 },
       { "date": "Mar", "value": 92 }
     ],
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Ami Bera", "party": "D", "incumbent": true },
       "rep": { "name": "Robb Tucker", "party": "R", "incumbent": false }
@@ -4226,6 +4360,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.76,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Mike Thompson", "party": "D", "incumbent": true },
       "rep": { "name": "Eric Jones", "party": "D", "incumbent": false }
@@ -4259,6 +4395,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.08,
     "kalshiRep": 0.68,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Michael Masuda", "party": "D", "incumbent": false },
       "rep": { "name": "Tom McClintock", "party": "R", "incumbent": true }
@@ -4292,6 +4430,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.76,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Richard Pan", "party": "D", "incumbent": false },
       "rep": { "name": "Kevin Kiley", "party": "R", "incumbent": true }
@@ -4325,6 +4465,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.76,
     "kalshiRep": 0,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Doris Matsui", "party": "D", "incumbent": true },
       "rep": { "name": "Mai Vang", "party": "D", "incumbent": false }
@@ -4358,6 +4500,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "John Garamendi", "party": "D", "incumbent": true },
       "rep": { "name": "Rudy Recile", "party": "R", "incumbent": false }
@@ -4389,6 +4533,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 99 }
     ],
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Josh Harder", "party": "D", "incumbent": true },
       "rep": { "name": "John McBride", "party": "R", "incumbent": false }
@@ -4422,6 +4568,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Mark DeSaulnier", "party": "D", "incumbent": true },
       "rep": { "name": "Jeff Frese", "party": "R", "incumbent": false }
@@ -4455,6 +4603,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.79,
     "kalshiRep": 0,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Scott Wiener", "party": "D", "incumbent": false },
       "rep": { "name": "Connie Chan", "party": "D", "incumbent": false }
@@ -4488,6 +4638,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.88,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Lateefah Simon", "party": "D", "incumbent": true },
       "rep": { "name": "Jamie Joyce", "party": "D", "incumbent": false }
@@ -4519,6 +4671,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 88 },
       { "date": "Mar", "value": 88 }
     ],
+    "polyDem": 0.89,
+    "polyRep": 0.11,
     "candidates": {
       "dem": { "name": "Adam Gray", "party": "D", "incumbent": true },
       "rep": { "name": "Kevin Lincoln", "party": "R", "incumbent": false }
@@ -4552,6 +4706,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.92,
     "kalshiRep": 0.05,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Aisha Wahab", "party": "D", "incumbent": false },
       "rep": { "name": "Melissa Hernandez", "party": "D", "incumbent": false }
@@ -4585,6 +4741,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.9,
     "kalshiRep": 0.01,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Kevin Mullin", "party": "D", "incumbent": true },
       "rep": { "name": "Charles Hoelter", "party": "R", "incumbent": false }
@@ -4618,6 +4776,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Sam Liccardo", "party": "D", "incumbent": true },
       "rep": { "name": "Peter Soule", "party": "R", "incumbent": false }
@@ -4651,6 +4811,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.82,
     "kalshiRep": 0,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Ro Khanna", "party": "D", "incumbent": true },
       "rep": { "name": "Ritesh Tandon", "party": "R", "incumbent": false }
@@ -4684,6 +4846,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.75,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Zoe Lofgren", "party": "D", "incumbent": true },
       "rep": { "name": "Shane Lewis", "party": "R", "incumbent": false }
@@ -4717,6 +4881,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.84,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Jimmy Panetta", "party": "D", "incumbent": true },
       "rep": { "name": "Peter Verbica", "party": "R", "incumbent": false }
@@ -4750,6 +4916,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.92,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Sandra Van Scotter", "party": "D", "incumbent": false },
       "rep": { "name": "Vince Fong", "party": "R", "incumbent": true }
@@ -4781,6 +4949,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 93 },
       { "date": "Mar", "value": 93 }
     ],
+    "polyDem": 0.88,
+    "polyRep": 0.12,
     "candidates": {
       "dem": { "name": "Jim Costa", "party": "D", "incumbent": true },
       "rep": { "name": "Kyle Kirkland", "party": "R", "incumbent": false }
@@ -4812,6 +4982,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 73 },
       { "date": "Mar", "value": 73 }
     ],
+    "polyDem": 0.83,
+    "polyRep": 0.17,
     "candidates": {
       "dem": { "name": "Randy Villegas", "party": "D", "incumbent": false },
       "rep": { "name": "David Valadao", "party": "R", "incumbent": true }
@@ -4845,6 +5017,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.1,
     "kalshiRep": 0.9,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Tessa Lynn Hodge", "party": "D", "incumbent": false },
       "rep": { "name": "Jay Obernolte", "party": "R", "incumbent": true }
@@ -4878,6 +5052,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.78,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Salud Carbajal", "party": "D", "incumbent": true },
       "rep": { "name": "Bob Smith", "party": "R", "incumbent": false }
@@ -4911,6 +5087,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0.01,
+    "polyDem": 0.91,
+    "polyRep": 0.09,
     "candidates": {
       "dem": { "name": "Raul Ruiz", "party": "D", "incumbent": true },
       "rep": { "name": "Joe Males", "party": "R", "incumbent": false }
@@ -4944,6 +5122,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Jacqui Irwin", "party": "D", "incumbent": false },
       "rep": { "name": "Sam Gallucci", "party": "R", "incumbent": false }
@@ -4975,6 +5155,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 97 },
       { "date": "Mar", "value": 97 }
     ],
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "George Whitesides", "party": "D", "incumbent": true },
       "rep": { "name": "Jason Gibbs", "party": "R", "incumbent": false }
@@ -5008,6 +5190,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.74,
     "kalshiRep": 0.01,
+    "polyDem": 0.9,
+    "polyRep": 0.1,
     "candidates": {
       "dem": { "name": "Judy Chu", "party": "D", "incumbent": true },
       "rep": { "name": "April Verlato", "party": "R", "incumbent": false }
@@ -5041,6 +5225,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Luz Rivas", "party": "D", "incumbent": true },
       "rep": { "name": "Angelica Duenas", "party": "D", "incumbent": false }
@@ -5074,6 +5260,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Laura Friedman", "party": "D", "incumbent": true },
       "rep": { "name": "Scott Meyers", "party": "R", "incumbent": false }
@@ -5107,6 +5295,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Gilbert Cisneros", "party": "D", "incumbent": true },
       "rep": { "name": "Eric Ching", "party": "R", "incumbent": false }
@@ -5140,6 +5330,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Brad Sherman", "party": "D", "incumbent": true },
       "rep": { "name": "Larry Thompson", "party": "R", "incumbent": false }
@@ -5173,6 +5365,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Pete Aguilar", "party": "D", "incumbent": true },
       "rep": { "name": "Stephanie Vargas", "party": "R", "incumbent": false }
@@ -5206,6 +5400,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.78,
     "kalshiRep": 0,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Jimmy Gomez", "party": "D", "incumbent": true },
       "rep": { "name": "Angela Gonzales-Torres", "party": "D", "incumbent": false }
@@ -5239,6 +5435,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.8,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Norma Torres", "party": "D", "incumbent": true },
       "rep": { "name": "Mike Cargile", "party": "R", "incumbent": false }
@@ -5272,6 +5470,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Ted Lieu", "party": "D", "incumbent": true },
       "rep": { "name": "Houston Brignano", "party": "R", "incumbent": false }
@@ -5305,6 +5505,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.78,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Sydney Kamlager-Dove", "party": "D", "incumbent": true },
       "rep": { "name": "Samantha Mota", "party": "D", "incumbent": false }
@@ -5338,6 +5540,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.76,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Hilda Solis", "party": "D", "incumbent": false },
       "rep": { "name": "Pedro Casas", "party": "R", "incumbent": false }
@@ -5371,6 +5575,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.74,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Mark Takano", "party": "D", "incumbent": true },
       "rep": { "name": "Steve Manos", "party": "R", "incumbent": false }
@@ -5433,6 +5639,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 99 }
     ],
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Linda Sánchez", "party": "D", "incumbent": true },
       "rep": { "name": "Mitch Clemmons", "party": "R", "incumbent": false }
@@ -5466,6 +5674,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.78,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Robert Garcia", "party": "D", "incumbent": true },
       "rep": { "name": "Brian Burley", "party": "R", "incumbent": false }
@@ -5499,6 +5709,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.79,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Maxine Waters", "party": "D", "incumbent": true },
       "rep": { "name": "Cristian Morales", "party": "R", "incumbent": false }
@@ -5532,6 +5744,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.78,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Nanette Barragan", "party": "D", "incumbent": true },
       "rep": { "name": "Genevieve Angel", "party": "R", "incumbent": false }
@@ -5563,6 +5777,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 89 },
       { "date": "Mar", "value": 89 }
     ],
+    "polyDem": 0.89,
+    "polyRep": 0.11,
     "candidates": {
       "dem": { "name": "Derek Tran", "party": "D", "incumbent": true },
       "rep": { "name": "Chuong Vo", "party": "R", "incumbent": false }
@@ -5596,6 +5812,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Lou Correa", "party": "D", "incumbent": true },
       "rep": { "name": "David Pan", "party": "R", "incumbent": false }
@@ -5627,6 +5845,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 96 },
       { "date": "Mar", "value": 96 }
     ],
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Dave Min", "party": "D", "incumbent": true },
       "rep": { "name": "Jenny Le Roux", "party": "R", "incumbent": false }
@@ -5660,6 +5880,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0.05,
+    "polyDem": 0.86,
+    "polyRep": 0.14,
     "candidates": {
       "dem": { "name": "Marni von Wilpert", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Desmond", "party": "R", "incumbent": false }
@@ -5691,6 +5913,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 96 },
       { "date": "Mar", "value": 96 }
     ],
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Mike Levin", "party": "D", "incumbent": true },
       "rep": { "name": "Armen Kurdian", "party": "R", "incumbent": false }
@@ -5724,6 +5948,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.78,
     "kalshiRep": 0,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Scott Peters", "party": "D", "incumbent": true },
       "rep": { "name": "Steve Cohen", "party": "R", "incumbent": false }
@@ -5757,6 +5983,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.78,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Sara Jacobs", "party": "D", "incumbent": true },
       "rep": { "name": "Ricardo Cabrera", "party": "R", "incumbent": false }
@@ -5790,6 +6018,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.73,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Juan Vargas", "party": "D", "incumbent": true },
       "rep": { "name": "Jeff Belle", "party": "R", "incumbent": false }
@@ -5823,6 +6053,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Diana DeGette", "party": "D", "incumbent": true },
       "rep": { "name": "Gregory Cutlip", "party": "R", "incumbent": false }
@@ -5856,6 +6088,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.91,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Joe Neguse", "party": "D", "incumbent": true },
       "rep": { "name": "Christina Blunt", "party": "R", "incumbent": false }
@@ -5887,6 +6121,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 37 },
       { "date": "Mar", "value": 37 }
     ],
+    "polyDem": 0.33,
+    "polyRep": 0.67,
     "candidates": {
       "dem": { "name": "Alexander Kelloff", "party": "D", "incumbent": false },
       "rep": { "name": "Jeff Hurd", "party": "R", "incumbent": true }
@@ -5920,6 +6156,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.28,
     "kalshiRep": 0.65,
+    "polyDem": 0.36,
+    "polyRep": 0.64,
     "candidates": {
       "dem": { "name": "Eileen Laubacher", "party": "D", "incumbent": false },
       "rep": { "name": "Lauren Boebert", "party": "R", "incumbent": true }
@@ -5953,6 +6191,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.3,
     "kalshiRep": 0.68,
+    "polyDem": 0.28,
+    "polyRep": 0.72,
     "candidates": {
       "dem": { "name": "Jessica Killin", "party": "D", "incumbent": false },
       "rep": { "name": "Jeff Crank", "party": "R", "incumbent": true }
@@ -5986,6 +6226,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.79,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Jason Crow", "party": "D", "incumbent": true },
       "rep": { "name": "Khaleb Dammen", "party": "R", "incumbent": false }
@@ -6019,6 +6261,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.76,
     "kalshiRep": 0,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Brittany Pettersen", "party": "D", "incumbent": true },
       "rep": { "name": "Amanda Capobianco", "party": "R", "incumbent": false }
@@ -6050,6 +6294,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 71 },
       { "date": "Mar", "value": 71 }
     ],
+    "polyDem": 0.79,
+    "polyRep": 0.21,
     "candidates": {
       "dem": { "name": "Manny Rutinel", "party": "D", "incumbent": false },
       "rep": { "name": "Gabe Evans", "party": "R", "incumbent": true }
@@ -6080,6 +6326,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.85,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "John Larson", "party": "D", "incumbent": true },
       "rep": { "name": "Amy Chai", "party": "R", "incumbent": false }
@@ -6113,6 +6361,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.76,
     "kalshiRep": 0,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Joe Courtney", "party": "D", "incumbent": true },
       "rep": { "name": "Mike France", "party": "R", "incumbent": false }
@@ -6146,6 +6396,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.76,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Rosa Delauro", "party": "D", "incumbent": true },
       "rep": { "name": "Christopher Lancia", "party": "R", "incumbent": false }
@@ -6179,6 +6431,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.78,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Jim Himes", "party": "D", "incumbent": true },
       "rep": { "name": "Michael Goldstein", "party": "R", "incumbent": false }
@@ -6210,6 +6464,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 88 },
       { "date": "Mar", "value": 88 }
     ],
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Jahana Hayes", "party": "D", "incumbent": true },
       "rep": { "name": "Michele Botelho", "party": "R", "incumbent": false }
@@ -6241,6 +6497,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Sarah McBride", "party": "D", "incumbent": true },
       "rep": { "name": "Donyale Hall", "party": "R", "incumbent": false }
@@ -6274,6 +6532,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.39,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Marcel Davis", "party": "D", "incumbent": false },
       "rep": { "name": "Jimmy Patronis", "party": "R", "incumbent": true }
@@ -6307,6 +6567,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.07,
     "kalshiRep": 0.69,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Nicholas Zateslo", "party": "D", "incumbent": false },
       "rep": { "name": "Neal Dunn", "party": "R", "incumbent": true }
@@ -6340,6 +6602,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.7,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Seth Harp", "party": "D", "incumbent": false },
       "rep": { "name": "Kat Cammack", "party": "R", "incumbent": true }
@@ -6373,6 +6637,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.65,
+    "polyDem": 0.27,
+    "polyRep": 0.73,
     "candidates": {
       "dem": { "name": "Michael Kirwan", "party": "D", "incumbent": false },
       "rep": { "name": "Aaron Bean", "party": "R", "incumbent": true }
@@ -6406,6 +6672,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.06,
     "kalshiRep": 0.66,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Rachel Grage", "party": "D", "incumbent": false },
       "rep": { "name": "John Rutherford", "party": "R", "incumbent": true }
@@ -6439,6 +6707,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.75,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Jennifer Jenkins", "party": "D", "incumbent": false },
       "rep": { "name": "Randy Fine", "party": "R", "incumbent": true }
@@ -6472,6 +6742,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.62,
+    "polyDem": 0.36,
+    "polyRep": 0.64,
     "candidates": {
       "dem": { "name": "Bale Dalton", "party": "D", "incumbent": false },
       "rep": { "name": "Cory Mills", "party": "R", "incumbent": true }
@@ -6505,6 +6777,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.68,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Paul Dellinger", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Haridopolos", "party": "R", "incumbent": true }
@@ -6538,6 +6812,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.38,
     "kalshiRep": 0.62,
+    "polyDem": 0.29,
+    "polyRep": 0.71,
     "candidates": {
       "dem": { "name": "Darren Soto", "party": "D", "incumbent": true },
       "rep": { "name": "Thomas Chalifoux", "party": "R", "incumbent": false }
@@ -6571,6 +6847,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.13,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Maxwell Frost", "party": "D", "incumbent": true },
       "rep": { "name": "Stuart Farber", "party": "R", "incumbent": false }
@@ -6604,6 +6882,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.74,
+    "polyDem": 0.15,
+    "polyRep": 0.85,
     "candidates": {
       "dem": { "name": "Barbara Hall", "party": "D", "incumbent": false },
       "rep": { "name": "Daniel Webster", "party": "R", "incumbent": true }
@@ -6637,6 +6917,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.04,
     "kalshiRep": 0.67,
+    "polyDem": 0.21,
+    "polyRep": 0.79,
     "candidates": {
       "dem": { "name": "Christopher Irizarry", "party": "D", "incumbent": false },
       "rep": { "name": "Gus Bilirakis", "party": "R", "incumbent": true }
@@ -6668,6 +6950,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 33 },
       { "date": "Mar", "value": 33 }
     ],
+    "polyDem": 0.39,
+    "polyRep": 0.61,
     "candidates": {
       "dem": { "name": "Earle Ford", "party": "D", "incumbent": false },
       "rep": { "name": "Anna Paulina Luna", "party": "R", "incumbent": true }
@@ -6701,6 +6985,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.47,
     "kalshiRep": 0.5,
+    "polyDem": 0.49,
+    "polyRep": 0.51,
     "candidates": {
       "dem": { "name": "Kathy Castor", "party": "D", "incumbent": true },
       "rep": { "name": "Robert Rochford", "party": "R", "incumbent": false }
@@ -6734,6 +7020,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.21,
     "kalshiRep": 0.67,
+    "polyDem": 0.16,
+    "polyRep": 0.84,
     "candidates": {
       "dem": { "name": "Darren McAuley", "party": "D", "incumbent": false },
       "rep": { "name": "Laurel Lee", "party": "R", "incumbent": true }
@@ -6767,6 +7055,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.21,
     "kalshiRep": 0.76,
+    "polyDem": 0.26,
+    "polyRep": 0.74,
     "candidates": {
       "dem": { "name": "Jan Schneider", "party": "D", "incumbent": false },
       "rep": { "name": "Vern Buchanan", "party": "R", "incumbent": true }
@@ -6800,6 +7090,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.13,
     "kalshiRep": 0.84,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Matthew Montavon", "party": "D", "incumbent": false },
       "rep": { "name": "Greg Steube", "party": "R", "incumbent": true }
@@ -6833,6 +7125,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.67,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Tiffanie Luong", "party": "D", "incumbent": false },
       "rep": { "name": "Scott Franklin", "party": "R", "incumbent": true }
@@ -6866,6 +7160,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.74,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Howard Sapp", "party": "D", "incumbent": false },
       "rep": { "name": "Byron Donalds", "party": "R", "incumbent": true }
@@ -6899,6 +7195,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.91,
     "kalshiRep": 0.06,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Sheila Cherfilus-McCormick", "party": "D", "incumbent": true },
       "rep": { "name": "Rodenay Joseph", "party": "R", "incumbent": false }
@@ -6932,6 +7230,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.7,
+    "polyDem": 0.15,
+    "polyRep": 0.85,
     "candidates": {
       "dem": { "name": "Pia Dandiya", "party": "D", "incumbent": false },
       "rep": { "name": "Brian Mast", "party": "R", "incumbent": true }
@@ -6965,6 +7265,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.52,
     "kalshiRep": 0.46,
+    "polyDem": 0.53,
+    "polyRep": 0.47,
     "candidates": {
       "dem": { "name": "Lois Frankel", "party": "D", "incumbent": true },
       "rep": { "name": "Anna Medvedeva", "party": "R", "incumbent": false }
@@ -6996,6 +7298,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 90 },
       { "date": "Mar", "value": 90 }
     ],
+    "polyDem": 0.92,
+    "polyRep": 0.08,
     "candidates": {
       "dem": { "name": "Jared Moskowitz", "party": "D", "incumbent": true },
       "rep": { "name": "Raven Harrison", "party": "R", "incumbent": false }
@@ -7029,6 +7333,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.86,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Frederica Wilson", "party": "D", "incumbent": true },
       "rep": { "name": "Patricia Gonzalez", "party": "R", "incumbent": false }
@@ -7062,6 +7368,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.69,
     "kalshiRep": 0.31,
+    "polyDem": 0.63,
+    "polyRep": 0.37,
     "candidates": {
       "dem": { "name": "Debbie Wasserman Schultz", "party": "D", "incumbent": true },
       "rep": { "name": "Michael Carbonara", "party": "R", "incumbent": false }
@@ -7095,6 +7403,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.16,
     "kalshiRep": 0.64,
+    "polyDem": 0.16,
+    "polyRep": 0.84,
     "candidates": {
       "dem": { "name": "Yurina Gil", "party": "D", "incumbent": false },
       "rep": { "name": "Mario Diaz-Balart", "party": "R", "incumbent": true }
@@ -7128,6 +7438,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.3,
     "kalshiRep": 0.69,
+    "polyDem": 0.34,
+    "polyRep": 0.66,
     "candidates": {
       "dem": { "name": "Richard Lamondin", "party": "D", "incumbent": false },
       "rep": { "name": "Maria Salazar", "party": "R", "incumbent": true }
@@ -7161,6 +7473,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.74,
+    "polyDem": 0.09,
+    "polyRep": 0.91,
     "candidates": {
       "dem": { "name": "Phil Ehr", "party": "D", "incumbent": false },
       "rep": { "name": "Carlos Gimenez", "party": "R", "incumbent": true }
@@ -7191,6 +7505,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.14,
     "kalshiRep": 0.83,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Michael McCord", "party": "D", "incumbent": false },
       "rep": { "name": "James Kingston", "party": "R", "incumbent": false }
@@ -7224,6 +7540,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.86,
     "kalshiRep": 0.01,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Sanford Bishop Jr.", "party": "D", "incumbent": false },
       "rep": { "name": "Matt Day", "party": "R", "incumbent": false }
@@ -7257,6 +7575,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.76,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Maura Keller", "party": "D", "incumbent": false },
       "rep": { "name": "Brian Jack", "party": "R", "incumbent": true }
@@ -7290,6 +7610,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.81,
     "kalshiRep": 0,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Hank Johnson", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Duffie", "party": "R", "incumbent": false }
@@ -7323,6 +7645,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.95,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Nikema Williams", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -7356,6 +7680,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.85,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Lucy McBath", "party": "D", "incumbent": true },
       "rep": { "name": "Justin Pinker", "party": "R", "incumbent": false }
@@ -7389,6 +7715,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.7,
+    "polyDem": 0.15,
+    "polyRep": 0.85,
     "candidates": {
       "dem": { "name": "Haiden Moburg", "party": "D", "incumbent": false },
       "rep": { "name": "Richard McCormick", "party": "R", "incumbent": true }
@@ -7422,6 +7750,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.69,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "James Cooper", "party": "D", "incumbent": false },
       "rep": { "name": "Austin Scott", "party": "R", "incumbent": true }
@@ -7455,6 +7785,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.9,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Nicholas Alex", "party": "D", "incumbent": false },
       "rep": { "name": "Andrew Clyde", "party": "R", "incumbent": true }
@@ -7488,6 +7820,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.91,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Alexandra Doherty", "party": "D", "incumbent": false },
       "rep": { "name": "Houston Gaines", "party": "R", "incumbent": false }
@@ -7521,6 +7855,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.11,
     "kalshiRep": 0.86,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Barry Wolfert", "party": "D", "incumbent": false },
       "rep": { "name": "Chris Mora", "party": "R", "incumbent": false }
@@ -7554,6 +7890,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.17,
     "kalshiRep": 0.8,
+    "polyDem": 0.17,
+    "polyRep": 0.83,
     "candidates": {
       "dem": { "name": "Brianna Woodson", "party": "D", "incumbent": false },
       "rep": { "name": "Rick Allen", "party": "R", "incumbent": true }
@@ -7587,6 +7925,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.73,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "David Scott", "party": "D", "incumbent": true },
       "rep": { "name": "Simeon Nunnally", "party": "R", "incumbent": false }
@@ -7620,6 +7960,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.71,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Shawn Harris", "party": "D", "incumbent": false },
       "rep": { "name": "Clayton Fuller", "party": "R", "incumbent": false }
@@ -7653,6 +7995,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.93,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Ed Case", "party": "D", "incumbent": true },
       "rep": { "name": "Maxwell Frazier", "party": "R", "incumbent": false }
@@ -7686,6 +8030,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Jill Tokuda", "party": "D", "incumbent": true },
       "rep": { "name": "Brenton Awa", "party": "R", "incumbent": false }
@@ -7719,6 +8065,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.95,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Kaylee Peterson", "party": "D", "incumbent": false },
       "rep": { "name": "Russ Fulcher", "party": "R", "incumbent": true }
@@ -7752,6 +8100,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.07,
     "kalshiRep": 0.7,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Julie Wiley", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Simpson", "party": "R", "incumbent": true }
@@ -7785,6 +8135,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.69,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Jonathan Jackson", "party": "D", "incumbent": true },
       "rep": { "name": "Christian Maxwell", "party": "R", "incumbent": false }
@@ -7818,6 +8170,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.96,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Donna Miller", "party": "D", "incumbent": false },
       "rep": { "name": "Calvin Coleman", "party": "R", "incumbent": false }
@@ -7851,6 +8205,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Delia Ramirez", "party": "D", "incumbent": true },
       "rep": { "name": "Angel Oakley", "party": "R", "incumbent": false }
@@ -7884,6 +8240,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.87,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Patty Garcia", "party": "D", "incumbent": false },
       "rep": { "name": "Lupe Castillo", "party": "R", "incumbent": false }
@@ -7917,6 +8275,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.73,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Mike Quigley", "party": "D", "incumbent": true },
       "rep": { "name": "Tommy Hanson", "party": "R", "incumbent": false }
@@ -7950,6 +8310,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Sean Casten", "party": "D", "incumbent": true },
       "rep": { "name": "Niki Conforti", "party": "R", "incumbent": false }
@@ -7983,6 +8345,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.74,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "La Shawn Ford", "party": "D", "incumbent": false },
       "rep": { "name": "Chad Koppie", "party": "R", "incumbent": false }
@@ -8016,6 +8380,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.92,
     "kalshiRep": 0.05,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Melissa Bean", "party": "D", "incumbent": false },
       "rep": { "name": "Jennifer Davis", "party": "R", "incumbent": false }
@@ -8049,6 +8415,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Daniel Biss", "party": "D", "incumbent": false },
       "rep": { "name": "John Elleson", "party": "R", "incumbent": false }
@@ -8082,6 +8450,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.81,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Brad Schneider", "party": "D", "incumbent": true },
       "rep": { "name": "Carl Lambrecht", "party": "R", "incumbent": false }
@@ -8115,6 +8485,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Bill Foster", "party": "D", "incumbent": true },
       "rep": { "name": "Jeff Walter", "party": "R", "incumbent": false }
@@ -8148,6 +8520,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.77,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Julie Fortier", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Bost", "party": "R", "incumbent": true }
@@ -8181,6 +8555,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.93,
     "kalshiRep": 0.01,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Nikki Budzinski", "party": "D", "incumbent": true },
       "rep": { "name": "Jeff Wilson", "party": "R", "incumbent": false }
@@ -8214,6 +8590,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Lauren Underwood", "party": "D", "incumbent": true },
       "rep": { "name": "James Marter", "party": "R", "incumbent": false }
@@ -8247,6 +8625,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.72,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Jennifer Todd", "party": "D", "incumbent": false },
       "rep": { "name": "Mary Miller", "party": "R", "incumbent": true }
@@ -8280,6 +8660,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.67,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Paul Nolley", "party": "D", "incumbent": false },
       "rep": { "name": "Darin LaHood", "party": "R", "incumbent": true }
@@ -8311,6 +8693,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 92 },
       { "date": "Mar", "value": 92 }
     ],
+    "polyDem": 0.85,
+    "polyRep": 0.15,
     "candidates": {
       "dem": { "name": "Eric Sorensen", "party": "D", "incumbent": true },
       "rep": { "name": "Dillan Vancil", "party": "R", "incumbent": false }
@@ -8342,6 +8726,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 82 },
       { "date": "Mar", "value": 82 }
     ],
+    "polyDem": 0.84,
+    "polyRep": 0.16,
     "candidates": {
       "dem": { "name": "Frank Mrvan", "party": "D", "incumbent": true },
       "rep": { "name": "Barb Regnitz", "party": "R", "incumbent": false }
@@ -8375,6 +8761,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.1,
     "kalshiRep": 0.89,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Jamee Decio", "party": "D", "incumbent": false },
       "rep": { "name": "Rudy Yakym", "party": "R", "incumbent": true }
@@ -8408,6 +8796,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.7,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Kelly Thompson", "party": "D", "incumbent": false },
       "rep": { "name": "Marlin Stutzman", "party": "R", "incumbent": true }
@@ -8441,6 +8831,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.09,
     "kalshiRep": 0.71,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Joseph Mackey", "party": "D", "incumbent": false },
       "rep": { "name": "James Baird", "party": "R", "incumbent": true }
@@ -8474,6 +8866,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.1,
     "kalshiRep": 0.63,
+    "polyDem": 0.21,
+    "polyRep": 0.79,
     "candidates": {
       "dem": { "name": "James Ford", "party": "D", "incumbent": false },
       "rep": { "name": "Victoria Spartz", "party": "R", "incumbent": true }
@@ -8507,6 +8901,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.7,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Cynthia Wirth", "party": "D", "incumbent": false },
       "rep": { "name": "Jefferson Shreve", "party": "R", "incumbent": true }
@@ -8538,6 +8934,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Andre Carson", "party": "D", "incumbent": true },
       "rep": { "name": "Felipe Rios", "party": "R", "incumbent": false }
@@ -8571,6 +8969,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.7,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Mary Allen", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Messmer", "party": "R", "incumbent": true }
@@ -8604,6 +9004,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.9,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "James Graham", "party": "D", "incumbent": false },
       "rep": { "name": "Erin Houchin", "party": "R", "incumbent": true }
@@ -8635,6 +9037,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 57 },
       { "date": "Mar", "value": 57 }
     ],
+    "polyDem": 0.78,
+    "polyRep": 0.22,
     "candidates": {
       "dem": { "name": "Christina Bohannan", "party": "D", "incumbent": false },
       "rep": { "name": "Mariannette Miller-Meeks", "party": "R", "incumbent": true }
@@ -8668,6 +9072,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.47,
     "kalshiRep": 0.5,
+    "polyDem": 0.41,
+    "polyRep": 0.59,
     "candidates": {
       "dem": { "name": "Lindsay James", "party": "D", "incumbent": false },
       "rep": { "name": "Joe Mitchell", "party": "R", "incumbent": false }
@@ -8699,6 +9105,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 60 },
       { "date": "Mar", "value": 60 }
     ],
+    "polyDem": 0.75,
+    "polyRep": 0.25,
     "candidates": {
       "dem": { "name": "Sarah Trone Garriott", "party": "D", "incumbent": false },
       "rep": { "name": "Zach Nunn", "party": "R", "incumbent": true }
@@ -8732,6 +9140,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.84,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Dave Dawson", "party": "D", "incumbent": false },
       "rep": { "name": "Chris McGowan", "party": "R", "incumbent": false }
@@ -8765,6 +9175,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.91,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Kenneth McRoberts", "party": "D", "incumbent": false },
       "rep": { "name": "Tracey Mann", "party": "R", "incumbent": true }
@@ -8798,6 +9210,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.87,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Don Coover", "party": "D", "incumbent": false },
       "rep": { "name": "Derek Schmidt", "party": "R", "incumbent": true }
@@ -8831,6 +9245,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.89,
     "kalshiRep": 0.01,
+    "polyDem": 0.89,
+    "polyRep": 0.11,
     "candidates": {
       "dem": { "name": "Sharice Davids", "party": "D", "incumbent": true },
       "rep": { "name": "Chase Laporte", "party": "R", "incumbent": false }
@@ -8864,6 +9280,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.86,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Chris Carmichael", "party": "D", "incumbent": false },
       "rep": { "name": "Ron Estes", "party": "R", "incumbent": true }
@@ -8897,6 +9315,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.72,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "John Williams", "party": "D", "incumbent": false },
       "rep": { "name": "James Comer", "party": "R", "incumbent": true }
@@ -8930,6 +9350,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.71,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "William Compton", "party": "D", "incumbent": false },
       "rep": { "name": "Brett Guthrie", "party": "R", "incumbent": true }
@@ -8963,6 +9385,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Morgan McGarvey", "party": "D", "incumbent": true },
       "rep": { "name": "Maria Rodriguez", "party": "R", "incumbent": false }
@@ -8996,6 +9420,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.14,
     "kalshiRep": 0.87,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Melissa Strange", "party": "D", "incumbent": false },
       "rep": { "name": "Ed Gallrein", "party": "R", "incumbent": false }
@@ -9029,6 +9455,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.95,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Ned Pillersdorf", "party": "D", "incumbent": false },
       "rep": { "name": "Harold Rogers", "party": "R", "incumbent": false }
@@ -9062,6 +9490,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.64,
+    "polyDem": 0.27,
+    "polyRep": 0.73,
     "candidates": {
       "dem": { "name": "Zach Dembo", "party": "D", "incumbent": false },
       "rep": { "name": "Adam Arquette", "party": "R", "incumbent": false }
@@ -9095,6 +9525,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.69,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Lauren Jewett", "party": "D", "incumbent": false },
       "rep": { "name": "Steve Scalise", "party": "R", "incumbent": true }
@@ -9128,6 +9560,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.86,
     "kalshiRep": 0.06,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Troy Carter", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9161,6 +9595,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.7,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Tia LeBrun", "party": "D", "incumbent": false },
       "rep": { "name": "Clay Higgins", "party": "R", "incumbent": true }
@@ -9194,6 +9630,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.68,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Matthew Gromlich", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Johnson", "party": "R", "incumbent": true }
@@ -9227,6 +9665,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.06,
     "kalshiRep": 0.92,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Dan Mckay", "party": "D", "incumbent": false },
       "rep": { "name": "Julia Letlow", "party": "R", "incumbent": true }
@@ -9260,6 +9700,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.05,
     "kalshiRep": 0.66,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Cleo Fields", "party": "D", "incumbent": true },
       "rep": { "name": "Peter Williams", "party": "R", "incumbent": false }
@@ -9293,6 +9735,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.96,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Chellie Pingree", "party": "D", "incumbent": true },
       "rep": { "name": "Eric Small", "party": "R", "incumbent": false }
@@ -9357,6 +9801,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.18,
     "kalshiRep": 0.56,
+    "polyDem": 0.22,
+    "polyRep": 0.78,
     "candidates": {
       "dem": { "name": "Daniel Schwartz", "party": "D", "incumbent": false },
       "rep": { "name": "Andy Harris", "party": "R", "incumbent": true }
@@ -9390,6 +9836,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.87,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "John Olszewski", "party": "D", "incumbent": false },
       "rep": { "name": "David Wallace", "party": "R", "incumbent": false }
@@ -9423,6 +9871,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.73,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Sarah Elfreth", "party": "D", "incumbent": true },
       "rep": { "name": "Penny Kennedy", "party": "R", "incumbent": false }
@@ -9456,6 +9906,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Glenn Ivey", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9489,6 +9941,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Quincy Bareebe", "party": "D", "incumbent": false },
       "rep": { "name": "Michelle Talkington", "party": "R", "incumbent": false }
@@ -9522,6 +9976,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.68,
     "kalshiRep": 0.01,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "April Delaney", "party": "D", "incumbent": true },
       "rep": { "name": "Robin Ficker", "party": "R", "incumbent": false }
@@ -9555,6 +10011,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.14,
     "kalshiRep": 0,
+    "polyDem": 1,
+    "polyRep": 0,
     "candidates": {
       "dem": { "name": "Kweisi Mfume", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9588,6 +10046,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.69,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Jamie Raskin", "party": "D", "incumbent": true },
       "rep": { "name": "Cheryl Riley", "party": "R", "incumbent": false }
@@ -9621,6 +10081,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Richard Neal", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9654,6 +10116,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.94,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "James McGovern", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9687,6 +10151,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Lori Trahan", "party": "D", "incumbent": true },
       "rep": { "name": "Gary Grossi", "party": "R", "incumbent": false }
@@ -9720,6 +10186,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.8,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Jake Auchincloss", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9753,6 +10221,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.97,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Katherine Clark", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9786,6 +10256,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.69,
     "kalshiRep": 0,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Daniel Koh", "party": "D", "incumbent": false },
       "rep": { "name": "John Field", "party": "R", "incumbent": false }
@@ -9819,6 +10291,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.84,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Ayanna Pressley", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -9852,6 +10326,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Stephen Lynch", "party": "D", "incumbent": true },
       "rep": { "name": "Gavin Solomon", "party": "R", "incumbent": false }
@@ -9885,6 +10361,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "William Keating", "party": "D", "incumbent": true },
       "rep": { "name": "Robert MacAllister", "party": "R", "incumbent": false }
@@ -9918,6 +10396,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.27,
     "kalshiRep": 0.7,
+    "polyDem": 0.17,
+    "polyRep": 0.83,
     "candidates": {
       "dem": { "name": "Callie Barr", "party": "D", "incumbent": false },
       "rep": { "name": "Jack Bergman", "party": "R", "incumbent": true }
@@ -9951,6 +10431,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.73,
+    "polyDem": 0.01,
+    "polyRep": 0.99,
     "candidates": {
       "dem": { "name": "Benjamin Ambrose", "party": "D", "incumbent": false },
       "rep": { "name": "John Moolenaar", "party": "R", "incumbent": true }
@@ -9982,6 +10464,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 95 },
       { "date": "Mar", "value": 95 }
     ],
+    "polyDem": 0.91,
+    "polyRep": 0.09,
     "candidates": {
       "dem": { "name": "Hillary Scholten", "party": "D", "incumbent": true },
       "rep": { "name": "J Fiorletta", "party": "R", "incumbent": false }
@@ -10013,6 +10497,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 41 },
       { "date": "Mar", "value": 41 }
     ],
+    "polyDem": 0.48,
+    "polyRep": 0.52,
     "candidates": {
       "dem": { "name": "Sean McCann", "party": "D", "incumbent": false },
       "rep": { "name": "Bill Huizenga", "party": "R", "incumbent": true }
@@ -10046,6 +10532,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.69,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Christian Vukasovich", "party": "D", "incumbent": false },
       "rep": { "name": "Tim Walberg", "party": "R", "incumbent": true }
@@ -10079,6 +10567,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Debbie Dingell", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -10110,6 +10600,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 63 },
       { "date": "Mar", "value": 63 }
     ],
+    "polyDem": 0.81,
+    "polyRep": 0.19,
     "candidates": {
       "dem": { "name": "Bridget Brink", "party": "D", "incumbent": false },
       "rep": { "name": "Tom Barrett", "party": "R", "incumbent": true }
@@ -10141,6 +10633,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 84 },
       { "date": "Mar", "value": 84 }
     ],
+    "polyDem": 0.87,
+    "polyRep": 0.13,
     "candidates": {
       "dem": { "name": "Kristen McDonald Rivet", "party": "D", "incumbent": true },
       "rep": { "name": "Amir Hassan", "party": "R", "incumbent": false }
@@ -10174,6 +10668,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.92,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Steven Pooley", "party": "D", "incumbent": false },
       "rep": { "name": "Lisa McClain", "party": "R", "incumbent": true }
@@ -10205,6 +10701,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 55 },
       { "date": "Mar", "value": 55 }
     ],
+    "polyDem": 0.5,
+    "polyRep": 0.5,
     "candidates": {
       "dem": { "name": "Eric Chung", "party": "D", "incumbent": false },
       "rep": { "name": "Robert Lulgjuraj", "party": "R", "incumbent": false }
@@ -10238,6 +10736,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.75,
     "kalshiRep": 0.03,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Jeremy Moss", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Steger", "party": "R", "incumbent": false }
@@ -10271,6 +10771,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Rashida Tlaib", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -10304,6 +10806,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.75,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Shri Thanedar", "party": "D", "incumbent": true },
       "rep": { "name": "Andrew Lorenz", "party": "R", "incumbent": false }
@@ -10337,6 +10841,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.32,
     "kalshiRep": 0.67,
+    "polyDem": 0.28,
+    "polyRep": 0.72,
     "candidates": {
       "dem": { "name": "Jacob Johnson", "party": "D", "incumbent": false },
       "rep": { "name": "Brad Finstad", "party": "R", "incumbent": true }
@@ -10368,6 +10874,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 90 },
       { "date": "Mar", "value": 90 }
     ],
+    "polyDem": 0.87,
+    "polyRep": 0.13,
     "candidates": {
       "dem": { "name": "Matt Little", "party": "D", "incumbent": false },
       "rep": { "name": "Tyler Kistner", "party": "R", "incumbent": false }
@@ -10401,6 +10909,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Kelly Morrison", "party": "D", "incumbent": true },
       "rep": { "name": "Tyler Bass", "party": "R", "incumbent": false }
@@ -10434,6 +10944,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.86,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Betty McCollum", "party": "D", "incumbent": true },
       "rep": { "name": "Paul Wikstrom", "party": "R", "incumbent": false }
@@ -10467,6 +10979,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.91,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Ilhan Omar", "party": "D", "incumbent": true },
       "rep": { "name": "Dalia Al-Aqidi", "party": "R", "incumbent": false }
@@ -10500,6 +11014,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.12,
     "kalshiRep": 0.38,
+    "polyDem": 0.19,
+    "polyRep": 0.81,
     "candidates": {
       "dem": { "name": "Generic Democrat", "party": "D", "incumbent": false },
       "rep": { "name": "Tom Emmer", "party": "R", "incumbent": true }
@@ -10533,6 +11049,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.69,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Generic Democrat", "party": "D", "incumbent": false },
       "rep": { "name": "Michelle Fischbach", "party": "R", "incumbent": true }
@@ -10566,6 +11084,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.27,
     "kalshiRep": 0.7,
+    "polyDem": 0.26,
+    "polyRep": 0.74,
     "candidates": {
       "dem": { "name": "Generic Democrat", "party": "D", "incumbent": false },
       "rep": { "name": "Pete Stauber", "party": "R", "incumbent": true }
@@ -10599,6 +11119,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.73,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Cliff Johnson", "party": "D", "incumbent": false },
       "rep": { "name": "Trent Kelly", "party": "R", "incumbent": true }
@@ -10632,6 +11154,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.84,
     "kalshiRep": 0.13,
+    "polyDem": 0.9,
+    "polyRep": 0.1,
     "candidates": {
       "dem": { "name": "Bennie Thompson", "party": "D", "incumbent": true },
       "rep": { "name": "Ron Eller", "party": "R", "incumbent": false }
@@ -10665,6 +11189,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.94,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Michael Chiaradio", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Guest", "party": "R", "incumbent": true }
@@ -10698,6 +11224,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.6,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Jeffrey Hulum", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Ezell", "party": "R", "incumbent": true }
@@ -10731,6 +11259,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Wesley Bell", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -10764,6 +11294,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.19,
     "kalshiRep": 0.78,
+    "polyDem": 0.21,
+    "polyRep": 0.79,
     "candidates": {
       "dem": { "name": "Frederick Wellman", "party": "D", "incumbent": false },
       "rep": { "name": "Ann Wagner", "party": "R", "incumbent": true }
@@ -10797,6 +11329,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.7,
+    "polyDem": 0.09,
+    "polyRep": 0.91,
     "candidates": {
       "dem": { "name": "Bethany Mann", "party": "D", "incumbent": false },
       "rep": { "name": "Bob Onder", "party": "R", "incumbent": false }
@@ -10830,6 +11364,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.86,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Hartzell Gray", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Alford", "party": "R", "incumbent": true }
@@ -10861,6 +11397,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Emanuel Cleaver", "party": "D", "incumbent": true },
       "rep": { "name": "Bradley Patty", "party": "R", "incumbent": false }
@@ -10894,6 +11432,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.8,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Matthew Levine", "party": "D", "incumbent": false },
       "rep": { "name": "Sam Graves", "party": "R", "incumbent": true }
@@ -10927,6 +11467,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.72,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Missi Hesketh", "party": "D", "incumbent": false },
       "rep": { "name": "Eric Burlison", "party": "R", "incumbent": true }
@@ -10960,6 +11502,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.71,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Clayton Harbison", "party": "D", "incumbent": false },
       "rep": { "name": "Jason Smith", "party": "R", "incumbent": true }
@@ -10991,6 +11535,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 37 },
       { "date": "Mar", "value": 37 }
     ],
+    "polyDem": 0.36,
+    "polyRep": 0.64,
     "candidates": {
       "dem": { "name": "Russell Cleveland", "party": "D", "incumbent": false },
       "rep": { "name": "Aaron Flint", "party": "R", "incumbent": false }
@@ -11024,6 +11570,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.82,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Brian Miller", "party": "D", "incumbent": false },
       "rep": { "name": "Troy Downing", "party": "R", "incumbent": true }
@@ -11054,6 +11602,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.1,
     "kalshiRep": 0.79,
+    "polyDem": 0.17,
+    "polyRep": 0.83,
     "candidates": {
       "dem": { "name": "Christopher Backemeyer", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Flood", "party": "R", "incumbent": true }
@@ -11085,6 +11635,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 77 },
       { "date": "Mar", "value": 77 }
     ],
+    "polyDem": 0.79,
+    "polyRep": 0.21,
     "candidates": {
       "dem": { "name": "Denise Powell", "party": "D", "incumbent": false },
       "rep": { "name": "Brinker Harding", "party": "R", "incumbent": false }
@@ -11118,6 +11670,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.94,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Becky Stille", "party": "D", "incumbent": false },
       "rep": { "name": "Adrian Smith", "party": "R", "incumbent": true }
@@ -11149,6 +11703,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 85 },
       { "date": "Mar", "value": 85 }
     ],
+    "polyDem": 0.85,
+    "polyRep": 0.15,
     "candidates": {
       "dem": { "name": "Dina Titus", "party": "D", "incumbent": true },
       "rep": { "name": "Carrie Buck", "party": "R", "incumbent": false }
@@ -11182,6 +11738,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.07,
     "kalshiRep": 0.61,
+    "polyDem": 0.21,
+    "polyRep": 0.79,
     "candidates": {
       "dem": { "name": "Matthew Fonken", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Amodei", "party": "R", "incumbent": true }
@@ -11213,6 +11771,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 75 },
       { "date": "Mar", "value": 75 }
     ],
+    "polyDem": 0.81,
+    "polyRep": 0.19,
     "candidates": {
       "dem": { "name": "Susie Lee", "party": "D", "incumbent": true },
       "rep": { "name": "Marty O'Donnell", "party": "R", "incumbent": false }
@@ -11244,6 +11804,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 86 },
       { "date": "Mar", "value": 86 }
     ],
+    "polyDem": 0.88,
+    "polyRep": 0.12,
     "candidates": {
       "dem": { "name": "Steven Horsford", "party": "D", "incumbent": true },
       "rep": { "name": "David Flippo", "party": "R", "incumbent": false }
@@ -11275,6 +11837,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 87 },
       { "date": "Mar", "value": 87 }
     ],
+    "polyDem": 0.87,
+    "polyRep": 0.13,
     "candidates": {
       "dem": { "name": "Chris Pappas", "party": "D", "incumbent": true },
       "rep": { "name": "Anthony Dilorenzo", "party": "R", "incumbent": false }
@@ -11308,6 +11872,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.9,
     "kalshiRep": 0,
+    "polyDem": 0.89,
+    "polyRep": 0.11,
     "candidates": {
       "dem": { "name": "Maggie Goodlander", "party": "D", "incumbent": true },
       "rep": { "name": "Lily Williams", "party": "R", "incumbent": false }
@@ -11341,6 +11907,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Donald Norcross", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -11374,6 +11942,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.24,
     "kalshiRep": 0.58,
+    "polyDem": 0.29,
+    "polyRep": 0.71,
     "candidates": {
       "dem": { "name": "Bayly Winder", "party": "D", "incumbent": false },
       "rep": { "name": "Jeff Van Drew", "party": "R", "incumbent": true }
@@ -11407,6 +11977,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.89,
     "kalshiRep": 0.01,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Herb Conaway", "party": "D", "incumbent": false },
       "rep": { "name": "Jason Cullen", "party": "R", "incumbent": false }
@@ -11440,6 +12012,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.9,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Nicholas Small", "party": "D", "incumbent": false },
       "rep": { "name": "Christopher Smith", "party": "R", "incumbent": true }
@@ -11471,6 +12045,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 96 },
       { "date": "Mar", "value": 96 }
     ],
+    "polyDem": 0.88,
+    "polyRep": 0.12,
     "candidates": {
       "dem": { "name": "Josh Gottheimer", "party": "D", "incumbent": true },
       "rep": { "name": "Mary Guinchard", "party": "R", "incumbent": false }
@@ -11504,6 +12080,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.65,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Frank Pallone", "party": "D", "incumbent": false },
       "rep": { "name": "Hillary Herzig", "party": "R", "incumbent": false }
@@ -11535,6 +12113,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 76 },
       { "date": "Mar", "value": 76 }
     ],
+    "polyDem": 0.79,
+    "polyRep": 0.21,
     "candidates": {
       "dem": { "name": "Rebecca Bennett", "party": "D", "incumbent": false },
       "rep": { "name": "Thomas Kean", "party": "R", "incumbent": false }
@@ -11568,6 +12148,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0.01,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Robert Menendez", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -11599,6 +12181,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 93 },
       { "date": "Mar", "value": 93 }
     ],
+    "polyDem": 0.87,
+    "polyRep": 0.13,
     "candidates": {
       "dem": { "name": "Nellie Pou", "party": "D", "incumbent": true },
       "rep": { "name": "Rosemary Pino", "party": "R", "incumbent": false }
@@ -11632,6 +12216,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.73,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "LaMonica McIver", "party": "D", "incumbent": true },
       "rep": { "name": "Carmen Bucco", "party": "R", "incumbent": false }
@@ -11665,6 +12251,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.86,
     "kalshiRep": 0,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
       "rep": { "name": "Joe Hathaway", "party": "R", "incumbent": false }
@@ -11698,6 +12286,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.94,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Brad Cohen", "party": "D", "incumbent": false },
       "rep": { "name": "Gregg Mele", "party": "R", "incumbent": false }
@@ -11731,6 +12321,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Melanie Stansbury", "party": "D", "incumbent": true },
       "rep": { "name": "Steve Jones", "party": "R", "incumbent": false }
@@ -11762,6 +12354,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 86 },
       { "date": "Mar", "value": 86 }
     ],
+    "polyDem": 0.84,
+    "polyRep": 0.16,
     "candidates": {
       "dem": { "name": "Gabe Vasquez", "party": "D", "incumbent": true },
       "rep": { "name": "Jose Orozco", "party": "R", "incumbent": false }
@@ -11795,6 +12389,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.68,
     "kalshiRep": 0.01,
+    "polyDem": 0.9,
+    "polyRep": 0.1,
     "candidates": {
       "dem": { "name": "Teresa Leger Fernandez", "party": "D", "incumbent": true },
       "rep": { "name": "Martin Zamora", "party": "R", "incumbent": false }
@@ -11828,6 +12424,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.3,
     "kalshiRep": 0.68,
+    "polyDem": 0.43,
+    "polyRep": 0.57,
     "candidates": {
       "dem": { "name": "Christopher Gallant", "party": "D", "incumbent": false },
       "rep": { "name": "Nick LaLota", "party": "R", "incumbent": true }
@@ -11861,6 +12459,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.18,
     "kalshiRep": 0.78,
+    "polyDem": 0.26,
+    "polyRep": 0.74,
     "candidates": {
       "dem": { "name": "Patrick Halpin", "party": "D", "incumbent": false },
       "rep": { "name": "Andrew Garbarino", "party": "R", "incumbent": true }
@@ -11892,6 +12492,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 77 },
       { "date": "Mar", "value": 77 }
     ],
+    "polyDem": 0.81,
+    "polyRep": 0.19,
     "candidates": {
       "dem": { "name": "Thomas Suozzi", "party": "D", "incumbent": true },
       "rep": { "name": "Gregory Hach", "party": "R", "incumbent": false }
@@ -11923,6 +12525,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 89 },
       { "date": "Mar", "value": 89 }
     ],
+    "polyDem": 0.87,
+    "polyRep": 0.13,
     "candidates": {
       "dem": { "name": "Laura Gillen", "party": "D", "incumbent": true },
       "rep": { "name": "Marvin Suber Williams", "party": "R", "incumbent": false }
@@ -11956,6 +12560,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Gregory Meeks", "party": "D", "incumbent": true },
       "rep": { "name": "Aaron Cherry", "party": "R", "incumbent": false }
@@ -11989,6 +12595,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Grace Meng", "party": "D", "incumbent": true },
       "rep": { "name": "Juan Pagan", "party": "R", "incumbent": false }
@@ -12022,6 +12630,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Antonio Reynoso", "party": "D", "incumbent": false },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -12055,6 +12665,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Hakeem Jeffries", "party": "D", "incumbent": true },
       "rep": { "name": "Richard Simmons", "party": "R", "incumbent": false }
@@ -12088,6 +12700,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.83,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Yvette Clarke", "party": "D", "incumbent": true },
       "rep": { "name": "Jean Depalis", "party": "R", "incumbent": false }
@@ -12121,6 +12735,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Daniel Goldman", "party": "D", "incumbent": true },
       "rep": { "name": "Gavin Solomon", "party": "R", "incumbent": false }
@@ -12154,6 +12770,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.1,
     "kalshiRep": 0.86,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Troy McGhie", "party": "D", "incumbent": false },
       "rep": { "name": "Nicole Malliotakis", "party": "R", "incumbent": true }
@@ -12187,6 +12805,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.83,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Alexander Bores", "party": "D", "incumbent": false },
       "rep": { "name": "Amy Jordan", "party": "R", "incumbent": false }
@@ -12220,6 +12840,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.98,
     "kalshiRep": 0,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Adriano Espaillat", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -12253,6 +12875,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Alexandria Ocasio-Cortez", "party": "D", "incumbent": true },
       "rep": { "name": "Tina Forte", "party": "R", "incumbent": false }
@@ -12286,6 +12910,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0.01,
+    "polyDem": 0.96,
+    "polyRep": 0.04,
     "candidates": {
       "dem": { "name": "Ritchie Torres", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -12319,6 +12945,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.81,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "George Latimer", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -12350,6 +12978,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 70 },
       { "date": "Mar", "value": 70 }
     ],
+    "polyDem": 0.71,
+    "polyRep": 0.29,
     "candidates": {
       "dem": { "name": "Peter Chatzky", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Lawler", "party": "R", "incumbent": true }
@@ -12381,6 +13011,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 93 },
       { "date": "Mar", "value": 93 }
     ],
+    "polyDem": 0.9,
+    "polyRep": 0.1,
     "candidates": {
       "dem": { "name": "Patrick Ryan", "party": "D", "incumbent": true },
       "rep": { "name": "Sharanjit Thind", "party": "R", "incumbent": false }
@@ -12412,6 +13044,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 79 },
       { "date": "Mar", "value": 79 }
     ],
+    "polyDem": 0.82,
+    "polyRep": 0.18,
     "candidates": {
       "dem": { "name": "Josh Riley", "party": "D", "incumbent": true },
       "rep": { "name": "Peter Oberacker", "party": "R", "incumbent": false }
@@ -12445,6 +13079,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.95,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Paul Tonko", "party": "D", "incumbent": true },
       "rep": { "name": "Ralph Ambrosio", "party": "R", "incumbent": false }
@@ -12478,6 +13114,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.24,
     "kalshiRep": 0.73,
+    "polyDem": 0.27,
+    "polyRep": 0.73,
     "candidates": {
       "dem": { "name": "Blake Gendebien", "party": "D", "incumbent": false },
       "rep": { "name": "Anthony Constantino", "party": "R", "incumbent": false }
@@ -12509,6 +13147,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 93 },
       { "date": "Mar", "value": 93 }
     ],
+    "polyDem": 0.9,
+    "polyRep": 0.1,
     "candidates": {
       "dem": { "name": "John Mannion", "party": "D", "incumbent": true },
       "rep": { "name": "John Lemondes", "party": "R", "incumbent": false }
@@ -12542,6 +13182,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.11,
     "kalshiRep": 0.85,
+    "polyDem": 0.17,
+    "polyRep": 0.83,
     "candidates": {
       "dem": { "name": "Aaron Gies", "party": "D", "incumbent": false },
       "rep": { "name": "Nick Langworthy", "party": "R", "incumbent": true }
@@ -12575,6 +13217,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.14,
     "kalshiRep": 0.85,
+    "polyDem": 0.16,
+    "polyRep": 0.84,
     "candidates": {
       "dem": { "name": "Alissa Ellman", "party": "D", "incumbent": false },
       "rep": { "name": "Claudia Tenney", "party": "R", "incumbent": true }
@@ -12608,6 +13252,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Joseph Morelle", "party": "D", "incumbent": true },
       "rep": { "name": "Virginia McIntyre", "party": "R", "incumbent": false }
@@ -12641,6 +13287,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.69,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Timothy Kennedy", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -12672,6 +13320,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 45 },
       { "date": "Mar", "value": 45 }
     ],
+    "polyDem": 0.55,
+    "polyRep": 0.45,
     "candidates": {
       "dem": { "name": "Don Davis", "party": "D", "incumbent": true },
       "rep": { "name": "Laurie Buckhout", "party": "R", "incumbent": false }
@@ -12705,6 +13355,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.74,
     "kalshiRep": 0.02,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Deborah Ross", "party": "D", "incumbent": true },
       "rep": { "name": "Eugene Douglass", "party": "R", "incumbent": false }
@@ -12738,6 +13390,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.04,
     "kalshiRep": 0.64,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Raymond Smith", "party": "D", "incumbent": false },
       "rep": { "name": "Gregory Murphy", "party": "R", "incumbent": true }
@@ -12771,6 +13425,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.93,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Valerie Foushee", "party": "D", "incumbent": true },
       "rep": { "name": "Mahesh Ganorkar", "party": "R", "incumbent": false }
@@ -12804,6 +13460,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.64,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Chuck Hubbard", "party": "D", "incumbent": false },
       "rep": { "name": "Virginia Foxx", "party": "R", "incumbent": true }
@@ -12837,6 +13495,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.08,
     "kalshiRep": 0.58,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Cyril Jefferson", "party": "D", "incumbent": false },
       "rep": { "name": "Addison McDowell", "party": "R", "incumbent": true }
@@ -12870,6 +13530,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.68,
+    "polyDem": 0.09,
+    "polyRep": 0.91,
     "candidates": {
       "dem": { "name": "Kimberly Hardy", "party": "D", "incumbent": false },
       "rep": { "name": "David Rouzer", "party": "R", "incumbent": true }
@@ -12903,6 +13565,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.54,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Colby Watson", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Harris", "party": "R", "incumbent": true }
@@ -12936,6 +13600,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.55,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Richard Ojeda", "party": "D", "incumbent": false },
       "rep": { "name": "Richard Hudson", "party": "R", "incumbent": true }
@@ -12969,6 +13635,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.01,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Ashley Bell", "party": "D", "incumbent": false },
       "rep": { "name": "Pat Harrigan", "party": "R", "incumbent": true }
@@ -13000,6 +13668,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 33 },
       { "date": "Mar", "value": 33 }
     ],
+    "polyDem": 0.55,
+    "polyRep": 0.45,
     "candidates": {
       "dem": { "name": "Jamie Ager", "party": "D", "incumbent": false },
       "rep": { "name": "Chuck Edwards", "party": "R", "incumbent": true }
@@ -13033,6 +13703,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.81,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Alma Adams", "party": "D", "incumbent": true },
       "rep": { "name": "Jack Codiga", "party": "R", "incumbent": false }
@@ -13066,6 +13738,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.11,
     "kalshiRep": 0.86,
+    "polyDem": 0.15,
+    "polyRep": 0.85,
     "candidates": {
       "dem": { "name": "Paul Barringer", "party": "D", "incumbent": false },
       "rep": { "name": "Brad Knott", "party": "R", "incumbent": true }
@@ -13099,6 +13773,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.17,
     "kalshiRep": 0.8,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Lakesha Womack", "party": "D", "incumbent": false },
       "rep": { "name": "Tim Moore", "party": "R", "incumbent": true }
@@ -13127,6 +13803,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Trygve Hammer", "party": "D", "incumbent": false },
       "rep": { "name": "Julie Fedorchak", "party": "R", "incumbent": true }
@@ -13158,6 +13836,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 73 },
       { "date": "Mar", "value": 73 }
     ],
+    "polyDem": 0.79,
+    "polyRep": 0.21,
     "candidates": {
       "dem": { "name": "Greg Landsman", "party": "D", "incumbent": true },
       "rep": { "name": "Eric Conroy", "party": "R", "incumbent": false }
@@ -13191,6 +13871,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.72,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Todd Wilson", "party": "D", "incumbent": false },
       "rep": { "name": "David Taylor", "party": "R", "incumbent": true }
@@ -13224,6 +13906,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.84,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Joyce Beatty", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -13257,6 +13941,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.82,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Tamara Wilson", "party": "D", "incumbent": false },
       "rep": { "name": "Jim Jordan", "party": "R", "incumbent": true }
@@ -13290,6 +13976,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.68,
+    "polyDem": 0.09,
+    "polyRep": 0.91,
     "candidates": {
       "dem": { "name": "Daniel Burket", "party": "D", "incumbent": false },
       "rep": { "name": "Robert Latta", "party": "R", "incumbent": true }
@@ -13323,6 +14011,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.04,
     "kalshiRep": 0.69,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Malcolm Ritchie", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Rulli", "party": "R", "incumbent": true }
@@ -13356,6 +14046,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.39,
     "kalshiRep": 0.59,
+    "polyDem": 0.37,
+    "polyRep": 0.63,
     "candidates": {
       "dem": { "name": "Edward Fitzgerald", "party": "D", "incumbent": false },
       "rep": { "name": "Max Miller", "party": "R", "incumbent": true }
@@ -13389,6 +14081,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.11,
     "kalshiRep": 0.86,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Madaris Grant", "party": "D", "incumbent": false },
       "rep": { "name": "Warren Davidson", "party": "R", "incumbent": true }
@@ -13420,6 +14114,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 53 },
       { "date": "Mar", "value": 53 }
     ],
+    "polyDem": 0.64,
+    "polyRep": 0.36,
     "candidates": {
       "dem": { "name": "Marcy Kaptur", "party": "D", "incumbent": true },
       "rep": { "name": "Derek Merrin", "party": "R", "incumbent": false }
@@ -13453,6 +14149,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.2,
     "kalshiRep": 0.79,
+    "polyDem": 0.26,
+    "polyRep": 0.74,
     "candidates": {
       "dem": { "name": "Janice Beckett", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Turner", "party": "R", "incumbent": true }
@@ -13486,6 +14184,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Shontel Brown", "party": "D", "incumbent": true },
       "rep": { "name": "James Hemphill", "party": "R", "incumbent": false }
@@ -13519,6 +14219,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.68,
+    "polyDem": 0.09,
+    "polyRep": 0.91,
     "candidates": {
       "dem": { "name": "Jerrad Christian", "party": "D", "incumbent": false },
       "rep": { "name": "William Balderson", "party": "R", "incumbent": true }
@@ -13550,6 +14252,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 88 },
       { "date": "Mar", "value": 88 }
     ],
+    "polyDem": 0.87,
+    "polyRep": 0.13,
     "candidates": {
       "dem": { "name": "Emilia Sykes", "party": "D", "incumbent": true },
       "rep": { "name": "Kevin Coughlin", "party": "R", "incumbent": false }
@@ -13583,6 +14287,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.63,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Carl Setzer", "party": "D", "incumbent": false },
       "rep": { "name": "David Joyce", "party": "R", "incumbent": true }
@@ -13616,6 +14322,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.23,
     "kalshiRep": 0.76,
+    "polyDem": 0.31,
+    "polyRep": 0.69,
     "candidates": {
       "dem": { "name": "Adam Miller", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Carey", "party": "R", "incumbent": true }
@@ -13649,6 +14357,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.85,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "John Croisant", "party": "D", "incumbent": false },
       "rep": { "name": "Kevin Hern", "party": "R", "incumbent": true }
@@ -13682,6 +14392,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.72,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Erik Terwey", "party": "D", "incumbent": false },
       "rep": { "name": "Josh Brecheen", "party": "R", "incumbent": true }
@@ -13715,6 +14427,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.84,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Jules Roberson", "party": "D", "incumbent": false },
       "rep": { "name": "Frank Lucas", "party": "R", "incumbent": true }
@@ -13748,6 +14462,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.72,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Mitchell Jacob", "party": "D", "incumbent": false },
       "rep": { "name": "Tom Cole", "party": "R", "incumbent": true }
@@ -13781,6 +14497,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.05,
     "kalshiRep": 0.44,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Jena Nelson", "party": "D", "incumbent": false },
       "rep": { "name": "Stephanie Bice", "party": "R", "incumbent": true }
@@ -13814,6 +14532,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Suzanne Bonamici", "party": "D", "incumbent": true },
       "rep": { "name": "Barbara Kahl", "party": "R", "incumbent": false }
@@ -13847,6 +14567,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.93,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Dawn Rasmussen", "party": "D", "incumbent": false },
       "rep": { "name": "Cliff Bentz", "party": "R", "incumbent": true }
@@ -13880,6 +14602,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.8,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Maxine Dexter", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -13913,6 +14637,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.69,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Val Hoyle", "party": "D", "incumbent": true },
       "rep": { "name": "Monique Despain", "party": "R", "incumbent": false }
@@ -13944,6 +14670,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 94 },
       { "date": "Mar", "value": 94 }
     ],
+    "polyDem": 0.89,
+    "polyRep": 0.11,
     "candidates": {
       "dem": { "name": "Janelle Bynum", "party": "D", "incumbent": true },
       "rep": { "name": "Patti Adair", "party": "R", "incumbent": false }
@@ -13977,6 +14705,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Andrea Salinas", "party": "D", "incumbent": true },
       "rep": { "name": "David Russ", "party": "R", "incumbent": false }
@@ -14005,6 +14735,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 52 },
       { "date": "Mar", "value": 52 }
     ],
+    "polyDem": 0.48,
+    "polyRep": 0.52,
     "candidates": {
       "dem": { "name": "Robert Harvie", "party": "D", "incumbent": false },
       "rep": { "name": "Brian Fitzpatrick", "party": "R", "incumbent": true }
@@ -14038,6 +14770,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Brendan Boyle", "party": "D", "incumbent": true },
       "rep": { "name": "Jessica Arriaga", "party": "R", "incumbent": false }
@@ -14071,6 +14805,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.86,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Sharif Street", "party": "D", "incumbent": false },
       "rep": { "name": "Alexander Schnell", "party": "R", "incumbent": false }
@@ -14104,6 +14840,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Madeleine Dean", "party": "D", "incumbent": true },
       "rep": { "name": "Jordan Salerno-O'Donnell", "party": "R", "incumbent": false }
@@ -14137,6 +14875,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Mary Scanlon", "party": "D", "incumbent": true },
       "rep": { "name": "Melvin Johnakin", "party": "R", "incumbent": false }
@@ -14170,6 +14910,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Chrissy Houlahan", "party": "D", "incumbent": true },
       "rep": { "name": "Martin Young", "party": "R", "incumbent": false }
@@ -14201,6 +14943,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 60 },
       { "date": "Mar", "value": 60 }
     ],
+    "polyDem": 0.76,
+    "polyRep": 0.24,
     "candidates": {
       "dem": { "name": "Ryan Crosswell", "party": "D", "incumbent": false },
       "rep": { "name": "Ryan Mackenzie", "party": "R", "incumbent": true }
@@ -14232,6 +14976,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 47 },
       { "date": "Mar", "value": 47 }
     ],
+    "polyDem": 0.53,
+    "polyRep": 0.47,
     "candidates": {
       "dem": { "name": "Paige Cognetti", "party": "D", "incumbent": false },
       "rep": { "name": "Rob Bresnahan", "party": "R", "incumbent": false }
@@ -14265,6 +15011,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.7,
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Rachel Wallace", "party": "D", "incumbent": false },
       "rep": { "name": "Daniel Meuser", "party": "R", "incumbent": true }
@@ -14296,6 +15044,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 52 },
       { "date": "Mar", "value": 52 }
     ],
+    "polyDem": 0.69,
+    "polyRep": 0.31,
     "candidates": {
       "dem": { "name": "Janelle Stelson", "party": "D", "incumbent": false },
       "rep": { "name": "Scott Perry", "party": "R", "incumbent": true }
@@ -14329,6 +15079,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.64,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Nancy Mannion", "party": "D", "incumbent": false },
       "rep": { "name": "Lloyd Smucker", "party": "R", "incumbent": true }
@@ -14362,6 +15114,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.8,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Summer Lee", "party": "D", "incumbent": true },
       "rep": { "name": "Leonard Fechter", "party": "R", "incumbent": false }
@@ -14395,6 +15149,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.81,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Elizabeth Farnham", "party": "D", "incumbent": false },
       "rep": { "name": "John Joyce", "party": "R", "incumbent": true }
@@ -14428,6 +15184,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.71,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "David Bradstock", "party": "D", "incumbent": false },
       "rep": { "name": "Guy Reschenthaler", "party": "R", "incumbent": true }
@@ -14461,6 +15219,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.93,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Raymond Bilger", "party": "D", "incumbent": false },
       "rep": { "name": "Glenn Thompson", "party": "R", "incumbent": true }
@@ -14494,6 +15254,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.73,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Justin Wagner", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Kelly", "party": "R", "incumbent": true }
@@ -14525,6 +15287,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 91 },
       { "date": "Mar", "value": 91 }
     ],
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Christopher Deluzio", "party": "D", "incumbent": true },
       "rep": { "name": "Jesse Vodvarka", "party": "R", "incumbent": false }
@@ -14558,6 +15322,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.77,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Gabe Amo", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -14591,6 +15357,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.69,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Seth Magaziner", "party": "D", "incumbent": true },
       "rep": { "name": "Victor Mellor", "party": "R", "incumbent": false }
@@ -14624,6 +15392,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.24,
     "kalshiRep": 0.73,
+    "polyDem": 0.3,
+    "polyRep": 0.7,
     "candidates": {
       "dem": { "name": "William Deford", "party": "D", "incumbent": false },
       "rep": { "name": "Sam McCown", "party": "R", "incumbent": false }
@@ -14657,6 +15427,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.58,
+    "polyDem": 0.17,
+    "polyRep": 0.83,
     "candidates": {
       "dem": { "name": "Roger Pruitt", "party": "D", "incumbent": false },
       "rep": { "name": "Joe Wilson", "party": "R", "incumbent": true }
@@ -14690,6 +15462,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.69,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Eunice Lehmacher", "party": "D", "incumbent": false },
       "rep": { "name": "Sheri Biggs", "party": "R", "incumbent": true }
@@ -14723,6 +15497,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.91,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Courtney McClain", "party": "D", "incumbent": false },
       "rep": { "name": "William Timmons", "party": "R", "incumbent": true }
@@ -14756,6 +15532,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.68,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Mallory Dittmer", "party": "D", "incumbent": false },
       "rep": { "name": "Wes Climer", "party": "R", "incumbent": false }
@@ -14789,6 +15567,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.31,
     "kalshiRep": 0.67,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "James Clyburn", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -14822,6 +15602,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.9,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "John Vincent", "party": "D", "incumbent": false },
       "rep": { "name": "Russell Fry", "party": "R", "incumbent": true }
@@ -14853,6 +15635,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 40 },
       { "date": "Mar", "value": 40 }
     ],
+    "polyDem": 0.05,
+    "polyRep": 0.95,
     "candidates": {
       "dem": { "name": "Nicole Gronli", "party": "D", "incumbent": false },
       "rep": { "name": "Marty Jackley", "party": "R", "incumbent": false }
@@ -14886,6 +15670,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.94,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Kristi Burke", "party": "D", "incumbent": false },
       "rep": { "name": "Diana Harshbarger", "party": "R", "incumbent": true }
@@ -14919,6 +15705,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.73,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Michaela Barnett", "party": "D", "incumbent": false },
       "rep": { "name": "Tim Burchett", "party": "R", "incumbent": true }
@@ -14952,6 +15740,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.69,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Joel Hawn", "party": "D", "incumbent": false },
       "rep": { "name": "Chuck Fleischmann", "party": "R", "incumbent": true }
@@ -14985,6 +15775,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.03,
     "kalshiRep": 0.94,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Victoria Broderick", "party": "D", "incumbent": false },
       "rep": { "name": "Scott DesJarlais", "party": "R", "incumbent": true }
@@ -15018,6 +15810,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.19,
     "kalshiRep": 0.8,
+    "polyDem": 0.25,
+    "polyRep": 0.75,
     "candidates": {
       "dem": { "name": "Chaz Molder", "party": "D", "incumbent": false },
       "rep": { "name": "Andy Ogles", "party": "R", "incumbent": true }
@@ -15051,6 +15845,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.71,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Chaney Mosley", "party": "D", "incumbent": false },
       "rep": { "name": "John Rose", "party": "R", "incumbent": true }
@@ -15084,6 +15880,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.65,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Darden Copeland", "party": "D", "incumbent": false },
       "rep": { "name": "Matt Van Epps", "party": "R", "incumbent": true }
@@ -15117,6 +15915,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.05,
     "kalshiRep": 0.65,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "William Wicker", "party": "D", "incumbent": false },
       "rep": { "name": "David Kustoff", "party": "R", "incumbent": true }
@@ -15150,6 +15950,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.83,
+    "polyDem": 0.16,
+    "polyRep": 0.84,
     "candidates": {
       "dem": { "name": "Steve Cohen", "party": "D", "incumbent": true },
       "rep": { "name": "Charlotte Bergmann", "party": "R", "incumbent": false }
@@ -15183,6 +15985,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.72,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Generic Democrat", "party": "D", "incumbent": false },
       "rep": { "name": "Nathaniel Moran", "party": "R", "incumbent": true }
@@ -15216,6 +16020,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.66,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Shaun Finnie", "party": "D", "incumbent": false },
       "rep": { "name": "Steve Toth", "party": "R", "incumbent": false }
@@ -15249,6 +16055,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.76,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Evan Hunt", "party": "D", "incumbent": false },
       "rep": { "name": "Keith Self", "party": "R", "incumbent": true }
@@ -15282,6 +16090,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.35,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Jason Pearce", "party": "D", "incumbent": false },
       "rep": { "name": "Pat Fallon", "party": "R", "incumbent": true }
@@ -15315,6 +16125,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.68,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Ruth Torres", "party": "D", "incumbent": false },
       "rep": { "name": "Lance Gooden", "party": "R", "incumbent": true }
@@ -15348,6 +16160,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.66,
+    "polyDem": 0.09,
+    "polyRep": 0.91,
     "candidates": {
       "dem": { "name": "Danny Minton", "party": "D", "incumbent": false },
       "rep": { "name": "Jake Ellzey", "party": "R", "incumbent": true }
@@ -15381,6 +16195,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Lizzie Fletcher", "party": "D", "incumbent": true },
       "rep": { "name": "Alexander Hale", "party": "R", "incumbent": false }
@@ -15414,6 +16230,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.68,
+    "polyDem": 0.08,
+    "polyRep": 0.92,
     "candidates": {
       "dem": { "name": "Laura Jones", "party": "D", "incumbent": false },
       "rep": { "name": "Jessica Steinmann", "party": "R", "incumbent": false }
@@ -15445,6 +16263,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 12 },
       { "date": "Mar", "value": 12 }
     ],
+    "polyDem": 0.17,
+    "polyRep": 0.83,
     "candidates": {
       "dem": { "name": "Leticia Gutierrez", "party": "D", "incumbent": false },
       "rep": { "name": "Alexandra Mealer", "party": "R", "incumbent": false }
@@ -15478,6 +16298,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.63,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Caitlin Rourk", "party": "D", "incumbent": false },
       "rep": { "name": "Chris Gober", "party": "R", "incumbent": false }
@@ -15511,6 +16333,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.8,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Claire Reynolds", "party": "D", "incumbent": false },
       "rep": { "name": "August Pfluger", "party": "R", "incumbent": true }
@@ -15544,6 +16368,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.6,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Heli Rodriguez Prilliman", "party": "D", "incumbent": false },
       "rep": { "name": "Craig Goldman", "party": "R", "incumbent": true }
@@ -15577,6 +16403,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.7,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Mark Nair", "party": "D", "incumbent": false },
       "rep": { "name": "Ronny Jackson", "party": "R", "incumbent": true }
@@ -15610,6 +16438,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.76,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Richard Davis", "party": "D", "incumbent": false },
       "rep": { "name": "Randy Weber", "party": "R", "incumbent": true }
@@ -15641,6 +16471,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 30 },
       { "date": "Mar", "value": 30 }
     ],
+    "polyDem": 0.59,
+    "polyRep": 0.41,
     "candidates": {
       "dem": { "name": "Bobby Pulido", "party": "D", "incumbent": false },
       "rep": { "name": "Monica De La Cruz", "party": "R", "incumbent": true }
@@ -15674,6 +16506,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.85,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Veronica Escobar", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -15707,6 +16541,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.14,
     "kalshiRep": 0.63,
+    "polyDem": 0.16,
+    "polyRep": 0.84,
     "candidates": {
       "dem": { "name": "Generic Democrat", "party": "D", "incumbent": false },
       "rep": { "name": "Pete Sessions", "party": "R", "incumbent": true }
@@ -15740,6 +16576,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.51,
     "kalshiRep": 0,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Democratic Candidate", "party": "D", "incumbent": false },
       "rep": { "name": "Ronald Whitfield", "party": "R", "incumbent": false }
@@ -15773,6 +16611,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.71,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Kyle Rable", "party": "D", "incumbent": false },
       "rep": { "name": "Tom Sell", "party": "R", "incumbent": false }
@@ -15806,6 +16646,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.91,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Joaquin Castro", "party": "D", "incumbent": true },
       "rep": { "name": "Edgardo Baez", "party": "R", "incumbent": false }
@@ -15839,6 +16681,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.15,
     "kalshiRep": 0.82,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Kristin Hook", "party": "D", "incumbent": false },
       "rep": { "name": "Mark Teixeira", "party": "R", "incumbent": false }
@@ -15872,6 +16716,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.75,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Marquette Greene-Scott", "party": "D", "incumbent": false },
       "rep": { "name": "Trever Nehls", "party": "R", "incumbent": false }
@@ -15905,6 +16751,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.21,
     "kalshiRep": 0.77,
+    "polyDem": 0.27,
+    "polyRep": 0.73,
     "candidates": {
       "dem": { "name": "Katy Padilla Stout", "party": "D", "incumbent": false },
       "rep": { "name": "Brandon Herrera", "party": "R", "incumbent": false }
@@ -15938,6 +16786,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.23,
     "kalshiRep": 0.74,
+    "polyDem": 0.22,
+    "polyRep": 0.78,
     "candidates": {
       "dem": { "name": "Generic Democrat", "party": "D", "incumbent": false },
       "rep": { "name": "Beth Van Duyne", "party": "R", "incumbent": true }
@@ -15971,6 +16821,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.67,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Dione Sims", "party": "D", "incumbent": false },
       "rep": { "name": "Roger Williams", "party": "R", "incumbent": true }
@@ -16004,6 +16856,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0,
     "kalshiRep": 0.67,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Steven Shook", "party": "D", "incumbent": false },
       "rep": { "name": "Brandon Gill", "party": "R", "incumbent": true }
@@ -16037,6 +16891,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.06,
     "kalshiRep": 0.65,
+    "polyDem": 0.13,
+    "polyRep": 0.87,
     "candidates": {
       "dem": { "name": "Tanya Lloyd", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Cloud", "party": "R", "incumbent": true }
@@ -16068,6 +16924,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 80 },
       { "date": "Mar", "value": 80 }
     ],
+    "polyDem": 0.77,
+    "polyRep": 0.23,
     "candidates": {
       "dem": { "name": "Henry Cuellar", "party": "D", "incumbent": true },
       "rep": { "name": "Tano Tijerina", "party": "R", "incumbent": false }
@@ -16101,6 +16959,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Sylvia Garcia", "party": "D", "incumbent": true },
       "rep": { "name": "Martha Fierro", "party": "R", "incumbent": false }
@@ -16134,6 +16994,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.96,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Frederick Haynes", "party": "D", "incumbent": false },
       "rep": { "name": "Sholdon Daniels", "party": "R", "incumbent": false }
@@ -16167,6 +17029,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.06,
     "kalshiRep": 0.62,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Justin Early", "party": "D", "incumbent": false },
       "rep": { "name": "John Carter", "party": "R", "incumbent": true }
@@ -16198,6 +17062,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 15 },
       { "date": "Mar", "value": 15 }
     ],
+    "polyDem": 0.26,
+    "polyRep": 0.74,
     "candidates": {
       "dem": { "name": "Dan Barrios", "party": "D", "incumbent": false },
       "rep": { "name": "Jace Yarbrough", "party": "R", "incumbent": false }
@@ -16231,6 +17097,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Colin Allred", "party": "D", "incumbent": false },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -16262,6 +17130,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 63 },
       { "date": "Mar", "value": 63 }
     ],
+    "polyDem": 0.71,
+    "polyRep": 0.29,
     "candidates": {
       "dem": { "name": "Vicente Gonzalez", "party": "D", "incumbent": true },
       "rep": { "name": "Eric Flores", "party": "R", "incumbent": false }
@@ -16293,6 +17163,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 43 },
       { "date": "Mar", "value": 43 }
     ],
+    "polyDem": 0.48,
+    "polyRep": 0.52,
     "candidates": {
       "dem": { "name": "Johnny Garcia", "party": "D", "incumbent": false },
       "rep": { "name": "Carlos De La Cruz", "party": "R", "incumbent": false }
@@ -16326,6 +17198,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.63,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Rhonda Hart", "party": "D", "incumbent": false },
       "rep": { "name": "Brian Babin", "party": "R", "incumbent": true }
@@ -16359,6 +17233,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Greg Casar", "party": "D", "incumbent": false },
       "rep": { "name": "Lauren Pena", "party": "R", "incumbent": false }
@@ -16389,6 +17265,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.7,
+    "polyDem": 0.12,
+    "polyRep": 0.88,
     "candidates": {
       "dem": { "name": "Melissa McDonough", "party": "D", "incumbent": false },
       "rep": { "name": "Jon Bonck", "party": "R", "incumbent": false }
@@ -16417,6 +17295,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 99 }
     ],
+    "polyDem": 0.91,
+    "polyRep": 0.09,
     "candidates": {
       "dem": { "name": "Ben McAdams", "party": "D", "incumbent": false },
       "rep": { "name": "Blake Moore", "party": "R", "incumbent": true }
@@ -16448,6 +17328,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 40 },
       { "date": "Mar", "value": 40 }
     ],
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Steven Merrill", "party": "D", "incumbent": false },
       "rep": { "name": "Celeste Maloy", "party": "R", "incumbent": true }
@@ -16479,6 +17361,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Steven Merrill", "party": "D", "incumbent": false },
       "rep": { "name": "Mike Kennedy", "party": "R", "incumbent": true }
@@ -16512,6 +17396,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.69,
+    "polyDem": 0.06,
+    "polyRep": 0.94,
     "candidates": {
       "dem": { "name": "Jonathan Larsen", "party": "D", "incumbent": false },
       "rep": { "name": "Burgess Owens", "party": "R", "incumbent": true }
@@ -16543,6 +17429,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 99 },
       { "date": "Mar", "value": 100 }
     ],
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Rebecca Balint", "party": "D", "incumbent": true },
       "rep": { "name": "Mark Coester", "party": "R", "incumbent": false }
@@ -16574,6 +17462,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 45 },
       { "date": "Mar", "value": 45 }
     ],
+    "polyDem": 0.63,
+    "polyRep": 0.37,
     "candidates": {
       "dem": { "name": "Shannon Taylor", "party": "D", "incumbent": false },
       "rep": { "name": "Robert Wittman", "party": "R", "incumbent": true }
@@ -16605,6 +17495,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 72 },
       { "date": "Mar", "value": 72 }
     ],
+    "polyDem": 0.82,
+    "polyRep": 0.18,
     "candidates": {
       "dem": { "name": "Elaine Luria", "party": "D", "incumbent": false },
       "rep": { "name": "Jennifer Kiggans", "party": "R", "incumbent": true }
@@ -16638,6 +17530,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.72,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Bobby Scott", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -16671,6 +17565,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.71,
     "kalshiRep": 0,
+    "polyDem": 0.93,
+    "polyRep": 0.07,
     "candidates": {
       "dem": { "name": "Jennifer McClellan", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -16704,6 +17600,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.14,
     "kalshiRep": 0.36,
+    "polyDem": 0.25,
+    "polyRep": 0.75,
     "candidates": {
       "dem": { "name": "Thomas Perriello", "party": "D", "incumbent": false },
       "rep": { "name": "John McGuire", "party": "R", "incumbent": true }
@@ -16737,6 +17635,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.18,
     "kalshiRep": 0.79,
+    "polyDem": 0.1,
+    "polyRep": 0.9,
     "candidates": {
       "dem": { "name": "Beth Macy", "party": "D", "incumbent": false },
       "rep": { "name": "Ben Cline", "party": "R", "incumbent": true }
@@ -16768,6 +17668,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 91 },
       { "date": "Mar", "value": 91 }
     ],
+    "polyDem": 0.88,
+    "polyRep": 0.12,
     "candidates": {
       "dem": { "name": "Eugene Vindman", "party": "D", "incumbent": true },
       "rep": { "name": "Tara Durant", "party": "R", "incumbent": false }
@@ -16801,6 +17703,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.92,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Donald Beyer", "party": "D", "incumbent": true },
       "rep": { "name": "Heerak Kim", "party": "R", "incumbent": false }
@@ -16834,6 +17738,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.02,
     "kalshiRep": 0.9,
+    "polyDem": 0.07,
+    "polyRep": 0.93,
     "candidates": {
       "dem": { "name": "Adam Murphy", "party": "D", "incumbent": false },
       "rep": { "name": "Morgan Griffith", "party": "R", "incumbent": true }
@@ -16865,6 +17771,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 97 },
       { "date": "Mar", "value": 97 }
     ],
+    "polyDem": 0.91,
+    "polyRep": 0.09,
     "candidates": {
       "dem": { "name": "Suhas Subramanyam", "party": "D", "incumbent": true },
       "rep": { "name": "Sam Wong", "party": "R", "incumbent": false }
@@ -16898,6 +17806,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.73,
     "kalshiRep": 0,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "James Walkinshaw", "party": "D", "incumbent": true },
       "rep": { "name": "Stewart Whitson", "party": "R", "incumbent": false }
@@ -16931,6 +17841,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.52,
     "kalshiRep": 0,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Suzan DelBene", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -16964,6 +17876,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Rick Larsen", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -16995,6 +17909,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 65 },
       { "date": "Mar", "value": 65 }
     ],
+    "polyDem": 0.82,
+    "polyRep": 0.18,
     "candidates": {
       "dem": { "name": "Marie Gluesenkamp Perez", "party": "D", "incumbent": true },
       "rep": { "name": "John Braun", "party": "R", "incumbent": false }
@@ -17028,6 +17944,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.12,
     "kalshiRep": 0.85,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "John Duresky", "party": "D", "incumbent": false },
       "rep": { "name": "Jerrod Sessler", "party": "R", "incumbent": false }
@@ -17061,6 +17979,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.22,
     "kalshiRep": 0.74,
+    "polyDem": 0.27,
+    "polyRep": 0.73,
     "candidates": {
       "dem": { "name": "Carmela Conroy", "party": "D", "incumbent": false },
       "rep": { "name": "Michael Baumgartner", "party": "R", "incumbent": true }
@@ -17094,6 +18014,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.7,
     "kalshiRep": 0,
+    "polyDem": 0.95,
+    "polyRep": 0.05,
     "candidates": {
       "dem": { "name": "Emily Randall", "party": "D", "incumbent": true },
       "rep": { "name": "Teresa Fox", "party": "R", "incumbent": false }
@@ -17127,6 +18049,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.73,
     "kalshiRep": 0,
+    "polyDem": 0.99,
+    "polyRep": 0.01,
     "candidates": {
       "dem": { "name": "Pramila Jayapal", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -17158,6 +18082,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 90 },
       { "date": "Mar", "value": 90 }
     ],
+    "polyDem": 0.91,
+    "polyRep": 0.09,
     "candidates": {
       "dem": { "name": "Kim Schrier", "party": "D", "incumbent": true },
       "rep": { "name": "Trinh Ha", "party": "R", "incumbent": false }
@@ -17191,6 +18117,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.92,
     "kalshiRep": 0.02,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Adam Smith", "party": "D", "incumbent": true },
       "rep": { "name": "Janis Clark", "party": "R", "incumbent": false }
@@ -17224,6 +18152,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.92,
     "kalshiRep": 0,
+    "polyDem": 0.94,
+    "polyRep": 0.06,
     "candidates": {
       "dem": { "name": "Marilyn Strickland", "party": "D", "incumbent": true },
       "rep": { "name": "Generic Republican", "party": "R", "incumbent": false }
@@ -17257,6 +18187,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.07,
     "kalshiRep": 0.75,
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Britta Aguirre", "party": "D", "incumbent": false },
       "rep": { "name": "Carol Miller", "party": "R", "incumbent": true }
@@ -17290,6 +18222,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.01,
     "kalshiRep": 0.92,
+    "polyDem": 0.04,
+    "polyRep": 0.96,
     "candidates": {
       "dem": { "name": "Ahsan Parsi", "party": "D", "incumbent": false },
       "rep": { "name": "Riley Moore", "party": "R", "incumbent": true }
@@ -17321,6 +18255,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 37 },
       { "date": "Mar", "value": 37 }
     ],
+    "polyDem": 0.46,
+    "polyRep": 0.54,
     "candidates": {
       "dem": { "name": "Mitchell Berman", "party": "D", "incumbent": false },
       "rep": { "name": "Bryan Steil", "party": "R", "incumbent": true }
@@ -17354,6 +18290,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.92,
     "kalshiRep": 0.02,
+    "polyDem": 0.97,
+    "polyRep": 0.03,
     "candidates": {
       "dem": { "name": "Mark Pocan", "party": "D", "incumbent": true },
       "rep": { "name": "Erik Olsen", "party": "R", "incumbent": false }
@@ -17385,6 +18323,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 47 },
       { "date": "Mar", "value": 47 }
     ],
+    "polyDem": 0.66,
+    "polyRep": 0.34,
     "candidates": {
       "dem": { "name": "Rebecca Cooke", "party": "D", "incumbent": false },
       "rep": { "name": "Derrick Van Orden", "party": "R", "incumbent": true }
@@ -17418,6 +18358,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.96,
     "kalshiRep": 0.01,
+    "polyDem": 0.98,
+    "polyRep": 0.02,
     "candidates": {
       "dem": { "name": "Gwen Moore", "party": "D", "incumbent": true },
       "rep": { "name": "Purnima Nath", "party": "R", "incumbent": false }
@@ -17451,6 +18393,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.14,
     "kalshiRep": 0.83,
+    "polyDem": 0.15,
+    "polyRep": 0.85,
     "candidates": {
       "dem": { "name": "Andrew Beck", "party": "D", "incumbent": false },
       "rep": { "name": "Scott Fitzgerald", "party": "R", "incumbent": true }
@@ -17484,6 +18428,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.05,
     "kalshiRep": 0.82,
+    "polyDem": 0.14,
+    "polyRep": 0.86,
     "candidates": {
       "dem": { "name": "Aaron Wojciechowski", "party": "D", "incumbent": false },
       "rep": { "name": "Glenn Grothman", "party": "R", "incumbent": true }
@@ -17517,6 +18463,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.06,
     "kalshiRep": 0.74,
+    "polyDem": 0.11,
+    "polyRep": 0.89,
     "candidates": {
       "dem": { "name": "Frederic Clark", "party": "D", "incumbent": false },
       "rep": { "name": "Paul Wassgren", "party": "R", "incumbent": false }
@@ -17550,6 +18498,8 @@ export const houseData: RaceForecast[] = [
     ],
     "kalshiDem": 0.09,
     "kalshiRep": 0.78,
+    "polyDem": 0.22,
+    "polyRep": 0.78,
     "candidates": {
       "dem": { "name": "Mark Scheffler", "party": "D", "incumbent": false },
       "rep": { "name": "Tony Wied", "party": "R", "incumbent": true }
@@ -17581,6 +18531,8 @@ export const houseData: RaceForecast[] = [
       { "date": "Feb", "value": 1 },
       { "date": "Mar", "value": 0 }
     ],
+    "polyDem": 0.02,
+    "polyRep": 0.98,
     "candidates": {
       "dem": { "name": "Lisa Kinney", "party": "D", "incumbent": false },
       "rep": { "name": "Chuck Gray", "party": "R", "incumbent": true }

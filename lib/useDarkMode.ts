@@ -5,28 +5,60 @@ import { useSyncExternalStore } from "react";
 const THEME_STORAGE_KEY = "darkMode";
 const LIGHT_THEME_COLOR = "#ffffff";
 const DARK_THEME_COLOR = "#000000";
+const LIGHT_APP_BG = "#f6f8fa";
+const DARK_APP_BG = "#0d1117";
+
+function syncMeta(name: string, content: string, options: { removeMedia?: boolean } = {}): void {
+  const metas = Array.from(document.querySelectorAll<HTMLMetaElement>(`meta[name="${name}"]`));
+  const [primary, ...duplicates] = metas;
+  const meta = primary ?? document.createElement("meta");
+
+  meta.name = name;
+  meta.content = content;
+  if (options.removeMedia) meta.removeAttribute("media");
+  if (!primary) document.head.appendChild(meta);
+
+  duplicates.forEach((duplicate) => duplicate.remove());
+}
 
 export function syncThemeColor(darkMode: boolean): void {
   const color = darkMode ? DARK_THEME_COLOR : LIGHT_THEME_COLOR;
+  const appBg = darkMode ? DARK_APP_BG : LIGHT_APP_BG;
+  const colorScheme = darkMode ? "dark" : "light";
+
+  document.documentElement.dataset.theme = colorScheme;
+  document.documentElement.style.setProperty("--browser-chrome-bg", color);
   document.documentElement.style.backgroundColor = color;
-  document.documentElement.style.colorScheme = darkMode ? "dark" : "light";
-  document.body.style.backgroundColor = color;
-  syncAppleStatusBarMeta(darkMode);
-  document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]').forEach((meta) => meta.remove());
-  const meta = document.createElement("meta");
-  meta.name = "theme-color";
-  meta.content = color;
-  document.head.appendChild(meta);
+  document.documentElement.style.colorScheme = colorScheme;
+  if (document.body) {
+    document.body.dataset.theme = colorScheme;
+    document.body.style.backgroundColor = color;
+  }
+
+  syncMeta("theme-color", color, { removeMedia: true });
+  syncMeta("color-scheme", colorScheme);
+  syncMeta("apple-mobile-web-app-status-bar-style", darkMode ? "black" : "default");
+
+  document
+    .querySelectorAll<HTMLElement>("[data-browser-chrome]")
+    .forEach((element) => {
+      element.style.backgroundColor = color;
+    });
+  document
+    .querySelectorAll<HTMLElement>("[data-app-header]")
+    .forEach((element) => {
+      element.style.backgroundColor = appBg;
+    });
 }
 
-function syncAppleStatusBarMeta(darkMode: boolean): void {
-  let meta = document.querySelector<HTMLMetaElement>('meta[name="apple-mobile-web-app-status-bar-style"]');
-  if (!meta) {
-    meta = document.createElement("meta");
-    meta.name = "apple-mobile-web-app-status-bar-style";
-    document.head.appendChild(meta);
-  }
-  meta.content = darkMode ? "black-translucent" : "default";
+function scheduleSafariChromeSync(darkMode: boolean): void {
+  [0, 50, 150, 350].forEach((delay) => {
+    window.setTimeout(() => {
+      syncThemeColor(darkMode);
+      const viewport = document.querySelector<HTMLMetaElement>('meta[name="viewport"]');
+      if (viewport) viewport.content = viewport.content;
+    }, delay);
+  });
 }
 
 function getSnapshot(): boolean {
@@ -66,6 +98,7 @@ function subscribe(onStoreChange: () => void): () => void {
 export function setDarkMode(darkMode: boolean): void {
   document.documentElement.classList.toggle("dark", darkMode);
   syncThemeColor(darkMode);
+  scheduleSafariChromeSync(darkMode);
   localStorage.setItem(THEME_STORAGE_KEY, String(darkMode));
 }
 

@@ -55,6 +55,14 @@ html.dark {
   --party-ind-subtle: #a8b3bf33;
 }
 
+html[data-theme="light"] {
+  --browser-chrome-bg: #ffffff;
+}
+
+html[data-theme="dark"] {
+  --browser-chrome-bg: #000000;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -88,7 +96,7 @@ body::before {
   left: 0;
   right: 0;
   height: env(safe-area-inset-top, 0px);
-  background: var(--browser-chrome-bg);
+  background-color: var(--browser-chrome-bg);
   pointer-events: none;
   z-index: 60;
 }

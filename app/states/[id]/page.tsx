@@ -2,7 +2,7 @@ import { statesData } from "@/data/statesData";
 import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, housePastResults, senateCurrent, pres2024, presPastResults, houseDelegationHistory, houseStatewideResults, stateLegData, PresResult, RaceForecast, NoElectionEntry, HouseStatewideResult, electionYear } from "@/data/forecastData";
 import { computeProjectedMargin } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
-import { getRatingColors } from "@/lib/colorScale";
+import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import StateMapSection from "@/components/StateMapSection";
 import StateVoteHistoryChart from "@/components/StateVoteHistoryChart";
@@ -123,7 +123,7 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
               <span className="text-xs font-semibold tabular-nums" style={{ color: race.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
                 {race.margin <= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
               </span>
-              <RatingBadge rating={race.rating} />
+              <RatingBadge rating={marginToRating(race.margin)} />
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
           <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: race.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
             {race.margin <= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
           </span>
-          <RatingBadge rating={race.rating} />
+          <RatingBadge rating={marginToRating(race.margin)} />
           <svg className="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
@@ -191,7 +191,7 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
   const repPct = 100 - demPct;
   const demVS = ((100 - race.margin) / 2).toFixed(1);
   const repVS = ((100 + race.margin) / 2).toFixed(1);
-  const { bg, text } = getRatingColors(race.rating);
+  const { bg, text } = getRatingColors(marginToRating(race.margin));
   return (
     <a
       href={`/house/${race.id}?from=${encodeURIComponent(from)}`}
@@ -228,7 +228,7 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
         className="text-xs font-semibold px-2 py-0.5 rounded-full text-center shrink-0 w-[4.1rem] sm:w-[4.5rem]"
         style={{ background: bg, color: text }}
       >
-        {race.rating}
+        {marginToRating(race.margin)}
       </span>
 
       <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
@@ -274,7 +274,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
 
   const houseRaces = houseData.filter((r) => r.state === state.name);
 
-  // Projected 2026 margins (TPL + Generic Ballot) for all active races on this state page
+  // Projected 2026 margins (structural forecast blended with RCP Average polling) for all active races on this state page
   const projectedHouseRaces = houseRaces.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
   const projectedGovernorRace = governorRace ? { ...governorRace, margin: computeProjectedMargin(governorRace) } : null;
   const projectedSenateSeat1Race = senateSeat1Race ? { ...senateSeat1Race, margin: computeProjectedMargin(senateSeat1Race) } : null;

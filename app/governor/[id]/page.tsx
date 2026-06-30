@@ -7,7 +7,8 @@ import { candidatePhotos } from "@/lib/candidatePhotos";
 import { AboutRaceCard, CandidatesAndPollsCard, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
-import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts } from "@/lib/tplCompute";
+import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
+import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
 
 function enrichGovResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
@@ -46,6 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string }) {
   const partyLabel = entry.party === "D" ? "Democrat" : entry.party === "R" ? "Republican" : "Independent";
   const termStarted = entry.termLength ? String(entry.nextElection - entry.termLength) : "TBD";
+  const enrichedPastResults = enrichGovResults(entry.pastResults);
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
@@ -79,11 +81,31 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
                 ]}
               />
             </div>
-            {entry.pastResults && entry.pastResults.length > 0 && (
-              <div className="order-4">
-                <SeatVoteHistoryChart results={enrichGovResults(entry.pastResults)} electionType="Governor" />
-              </div>
-            )}
+            <VoteHistoryTabbedSection
+              className="order-3"
+              defaultTabKey="race-results"
+              height="430px"
+              tabs={[
+                {
+                  key: "race-results",
+                  label: "Race Results",
+                  content: (
+                    <PastElectionResultsSection
+                      results={enrichedPastResults}
+                      fallbackYears={[entry.nextElection - 4, entry.nextElection - 8]}
+                      showElectionType
+                      density="compact"
+                      bare
+                    />
+                  ),
+                },
+                ...(enrichedPastResults.length > 0 ? [{
+                  key: "chart",
+                  label: "Graph",
+                  content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Governor" bare />,
+                }] : []),
+              ]}
+            />
           </div>
 
           <div className="contents lg:grid lg:grid-cols-1 lg:gap-3">
@@ -92,15 +114,6 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
                 message={`This governorship is not on the ballot in ${electionYear}. The next election is scheduled for ${entry.nextElection}. Incumbent and biographical information to be filled in.`}
               />
             </div>
-
-            <PastElectionResultsSection
-              results={enrichGovResults(entry.pastResults)}
-              fallbackYears={[entry.nextElection - 4, entry.nextElection - 8]}
-              showElectionType
-              layoutClassName="order-5 lg:max-h-[34rem]"
-              density="compact"
-              scrollable
-            />
           </div>
         </div>
       </main>
@@ -128,7 +141,8 @@ export default async function GovernorPage({ params, searchParams }: { params: P
   const standardIncumbentPts = computeIncumbentPts("G", incumbentParty);
   const incumbentPts = GOVERNOR_MANUAL_MARGINS[id.toUpperCase()] ?? standardIncumbentPts;
   const gb = effectiveGenericBallot(id.toUpperCase());
-  const projectedMargin = stateTpl + gb + incumbentPts;
+  const rcpMargin = computeRcpMargin(race.rcpDem, race.rcpRep);
+  const projectedMargin = computeProjectedMargin(race);
   const demPct = Math.round(marginToProbability(projectedMargin) * 100);
   const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
@@ -137,6 +151,7 @@ export default async function GovernorPage({ params, searchParams }: { params: P
   const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
   const currentGovernorName = race.seatHolder ?? incumbent?.name ?? "TBD";
   const currentGovernorParty = incumbent?.party ?? race.seatParty ?? null;
+  const enrichedPastResults = enrichGovResults(race.pastResults);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -175,11 +190,31 @@ export default async function GovernorPage({ params, searchParams }: { params: P
                 ]}
               />
             </div>
-            {race.pastResults && race.pastResults.length > 0 && (
-              <div className="order-7">
-                <SeatVoteHistoryChart results={enrichGovResults(race.pastResults)} electionType="Governor" />
-              </div>
-            )}
+            <VoteHistoryTabbedSection
+              className="order-6 lg:order-3"
+              defaultTabKey="race-results"
+              height="430px"
+              tabs={[
+                {
+                  key: "race-results",
+                  label: "Race Results",
+                  content: (
+                    <PastElectionResultsSection
+                      results={enrichedPastResults}
+                      fallbackYears={[2022, 2018, 2014]}
+                      showElectionType
+                      density="compact"
+                      bare
+                    />
+                  ),
+                },
+                ...(enrichedPastResults.length > 0 ? [{
+                  key: "chart",
+                  label: "Graph",
+                  content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Governor" bare />,
+                }] : []),
+              ]}
+            />
           </div>
 
           <div className="contents lg:grid lg:grid-cols-8 lg:gap-3">
@@ -210,18 +245,11 @@ export default async function GovernorPage({ params, searchParams }: { params: P
                 incumbentPts={incumbentPts}
                 fundraisingPts={null}
                 candidatePts={null}
-                pollingAvg={null}
+                pollingAvg={rcpMargin}
+                projectedMargin={projectedMargin}
               />
             </div>
 
-            <PastElectionResultsSection
-              results={enrichGovResults(race.pastResults)}
-              fallbackYears={[2022, 2018, 2014]}
-              showElectionType
-              layoutClassName="order-6 lg:col-span-8 lg:max-h-[34rem]"
-              density="compact"
-              scrollable
-            />
           </div>
         </div>
       </main>

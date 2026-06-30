@@ -5,15 +5,18 @@ import SearchBar from "@/components/SearchBar";
 
 export default function AppHeader({
   back,
+  darkMode,
 }: {
   back?: React.ReactNode;
+  darkMode: boolean;
 }) {
   return (
     <header
+      data-app-header
       className="flex h-14 flex-nowrap items-center gap-2 px-3 backdrop-blur-xl sm:px-6 md:gap-4"
       style={{
         borderBottom: "1px solid var(--app-border)",
-        background: "color-mix(in srgb, var(--app-panel) 76%, transparent)",
+        backgroundColor: darkMode ? "#0d1117" : "#f6f8fa",
         backdropFilter: "blur(20px) saturate(140%)",
         WebkitBackdropFilter: "blur(20px) saturate(140%)",
       }}

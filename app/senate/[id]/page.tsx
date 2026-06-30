@@ -6,7 +6,8 @@ import { candidatePhotos } from "@/lib/candidatePhotos";
 import { AboutRaceCard, CandidatesAndPollsCard, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, MarginAndWinProbabilityCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
-import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts } from "@/lib/tplCompute";
+import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
+import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
 
 function enrichSenateResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
@@ -123,11 +124,32 @@ function NoElectionPage({
                 ]}
               />
             </div>
-            {pastResults && pastResults.length > 0 && (
-              <div className="order-4">
-                <SeatVoteHistoryChart results={pastResults} electionType="Senate" />
-              </div>
-            )}
+            <VoteHistoryTabbedSection
+              className="order-3"
+              defaultTabKey="race-results"
+              height="430px"
+              tabs={[
+                {
+                  key: "race-results",
+                  label: "Race Results",
+                  content: (
+                    <PastElectionResultsSection
+                      results={pastResults}
+                      fallbackYears={[nextElection - termYears, nextElection - termYears * 2]}
+                      showElectionType
+                      showSpecialBadgeForSpecialElections
+                      density="compact"
+                      bare
+                    />
+                  ),
+                },
+                ...((pastResults?.length ?? 0) > 0 ? [{
+                  key: "chart",
+                  label: "Graph",
+                  content: <SeatVoteHistoryChart results={pastResults ?? []} electionType="Senate" bare />,
+                }] : []),
+              ]}
+            />
           </div>
 
           <div className="contents lg:grid lg:grid-cols-1 lg:gap-3">
@@ -136,16 +158,6 @@ function NoElectionPage({
                 message={`This seat is not on the ballot in November ${electionYear}. The next election for this seat is scheduled for ${nextElection}. Incumbent and biographical information to be filled in.`}
               />
             </div>
-
-            <PastElectionResultsSection
-              results={pastResults}
-              fallbackYears={[nextElection - termYears, nextElection - termYears * 2]}
-              showElectionType
-              showSpecialBadgeForSpecialElections
-              layoutClassName="order-5 lg:max-h-[34rem]"
-              density="compact"
-              scrollable
-            />
           </div>
         </div>
       </main>
@@ -214,7 +226,8 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
   const incumbentParty = (incumbent?.party === "D" || incumbent?.party === "R") ? incumbent.party : null;
   const incumbentPts = computeIncumbentPts("S", incumbentParty);
   const gb = effectiveGenericBallot(abbr);
-  const projectedMargin = stateTpl + gb + incumbentPts;
+  const rcpMargin = computeRcpMargin(race.rcpDem, race.rcpRep);
+  const projectedMargin = computeProjectedMargin(race);
   const demPct = Math.round(marginToProbability(projectedMargin) * 100);
   const repPct = 100 - demPct;
   const forecastRating = marginToRating(projectedMargin);
@@ -223,6 +236,7 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
   const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
   const currentSenatorName = race.seatHolder ?? incumbent?.name ?? "TBD";
   const currentSenatorParty = incumbent?.party ?? race.seatParty ?? null;
+  const enrichedPastResults = enrichSenateResults(race.pastResults);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -265,9 +279,31 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
               />
             </div>
             {race.pastResults && race.pastResults.length > 0 && (
-              <div className="order-7">
-                <SeatVoteHistoryChart results={enrichSenateResults(race.pastResults)} electionType="Senate" />
-              </div>
+              <VoteHistoryTabbedSection
+                className="order-6 lg:order-3"
+                defaultTabKey="race-results"
+                height="430px"
+                tabs={[
+                  {
+                    key: "race-results",
+                    label: "Race Results",
+                    content: (
+                      <PastElectionResultsSection
+                        results={enrichedPastResults}
+                        fallbackYears={[]}
+                        showElectionType
+                        density="compact"
+                        bare
+                      />
+                    ),
+                  },
+                  ...(enrichedPastResults.length > 0 ? [{
+                    key: "chart",
+                    label: "Graph",
+                    content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Senate" bare />,
+                  }] : []),
+                ]}
+              />
             )}
           </div>
 
@@ -300,20 +336,11 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
                 incumbentPts={incumbentPts}
                 fundraisingPts={null}
                 candidatePts={null}
-                pollingAvg={null}
+                pollingAvg={rcpMargin}
+                projectedMargin={projectedMargin}
               />
             </div>
 
-            {race.pastResults && race.pastResults.length > 0 && (
-              <PastElectionResultsSection
-                results={enrichSenateResults(race.pastResults)}
-                fallbackYears={[]}
-                showElectionType
-                layoutClassName="order-6 lg:col-span-8 lg:max-h-[34rem]"
-                density="compact"
-                scrollable
-              />
-            )}
           </div>
         </div>
       </main>
