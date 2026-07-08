@@ -65,9 +65,10 @@ export default async function CandidatePage({
     safeFromPath(from) ??
     candidate.currentRace?.racePath ??
     `/?tab=${candidate.tab}`;
+  const raceTypeSuffix = candidate.tab === "house" ? " House" : candidate.tab === "senate" ? " Senate" : " Governor";
   const backLabel =
     candidate.currentRace
-      ? candidate.currentRace.raceName + (candidate.tab === "house" ? " House" : candidate.tab === "senate" ? " Senate" : " Governor")
+      ? candidate.currentRace.raceName + raceTypeSuffix
       : candidate.tab === "house" ? "House Races" : candidate.tab === "senate" ? "Senate Races" : "Governor Races";
 
   // Separate history into current 2026 entries and past entries for display
@@ -143,6 +144,14 @@ export default async function CandidatePage({
               >
                 {raceTypeLabel(candidate.tab)}
               </span>
+              {candidate.currentRace?.incumbent && (
+                <span
+                  className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
+                  style={{ background: subtle, color: accent }}
+                >
+                  Inc.
+                </span>
+              )}
             </div>
             {candidate.currentRace && (() => {
               const { bg, text } = getRatingColors(candidate.currentRace.rating);
@@ -155,7 +164,7 @@ export default async function CandidatePage({
                     className="text-sm font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
-                    {candidate.currentRace.raceName}
+                    {candidate.currentRace.raceName}{candidate.tab === "house" ? "" : raceTypeSuffix}
                   </a>
                   <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full" style={{ background: bg, color: text }}>
                     {candidate.currentRace.rating}
@@ -205,14 +214,18 @@ export default async function CandidatePage({
         )}
 
         {/* Electoral history */}
-        {pastEntries.length > 0 && (
-          <section
-            className="rounded-xl p-3"
-            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-          >
-            <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-              Electoral History
-            </h2>
+        <section
+          className="rounded-xl p-3"
+          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+        >
+          <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+            Electoral History
+          </h2>
+          {pastEntries.length === 0 ? (
+            <div className="text-sm italic" style={{ color: "var(--app-text-muted)" }}>
+              No Recent Electoral History
+            </div>
+          ) : (
             <div className="flex flex-col gap-2">
               {pastEntries.map((entry, i) => {
                 const entryAccent = partyAccent(entry.party);
@@ -225,6 +238,8 @@ export default async function CandidatePage({
                 const won = wonByVotes ?? wonByPct;
                 const pct = entry.side === "dem" ? entry.demPct : entry.repPct;
                 const oppPct = entry.side === "dem" ? entry.repPct : entry.demPct;
+                const oppLabel = entry.side === "dem" ? "R" : "D";
+                const oppColor = entry.side === "dem" ? "var(--party-rep)" : "var(--party-dem)";
                 const margin = Math.abs(pct - oppPct).toFixed(1);
                 const total = entry.demPct + entry.repPct;
                 const dWidth = total > 0 ? (entry.demPct / total) * 100 : 50;
@@ -266,17 +281,17 @@ export default async function CandidatePage({
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <span className="text-xs font-semibold shrink-0 w-8" style={{ color: entryAccent }}>
-                        {partyLabel(entry.party)[0]}
-                      </span>
                       <div className="flex-1 h-2 rounded-full overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
                         <div className="h-full float-left" style={{ width: `${dWidth}%`, background: "#1b408c" }} />
                         <div className="h-full float-left" style={{ width: `${100 - dWidth}%`, background: "#be1c29" }} />
                       </div>
-                      <span className="text-xs font-bold tabular-nums shrink-0" style={{ color: entryAccent }}>
-                        {pct.toFixed(1)}%
+                      <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: oppColor }}>
+                        {oppLabel} {oppPct.toFixed(1)}%
                       </span>
-                      <span className="text-xs tabular-nums shrink-0" style={{ color: "var(--app-text-very-muted)" }}>
+                      <span className="text-xs font-bold tabular-nums shrink-0" style={{ color: entryAccent }}>
+                        {partyLabel(entry.party)[0]} {pct.toFixed(1)}%
+                      </span>
+                      <span className="text-xs tabular-nums shrink-0" style={{ color: entryAccent }}>
                         {won ? `+${margin}` : `-${margin}`}
                       </span>
                     </div>
@@ -284,14 +299,8 @@ export default async function CandidatePage({
                 );
               })}
             </div>
-          </section>
-        )}
-
-        {pastEntries.length === 0 && !candidate.currentRace && (
-          <div className="text-sm italic" style={{ color: "var(--app-text-muted)" }}>
-            No electoral history on record.
-          </div>
-        )}
+          )}
+        </section>
 
       </main>
     </div>
