@@ -13,7 +13,7 @@ export default function AppShell({
   initialForecastTab?: "house" | "senate" | "governor" | null;
 }) {
   const pathname = usePathname();
-  const isForecastDetailPage = pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/") || pathname.startsWith("/states/");
+  const isForecastDetailPage = pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/") || pathname.startsWith("/states/") || pathname.startsWith("/counties/");
   const showBack = !isForecastDetailPage && pathname.split("/").filter(Boolean).length > 1;
   const darkMode = useDarkMode();
 

@@ -265,7 +265,12 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:items-start">
           <div className="contents lg:flex lg:flex-col lg:gap-3">
             <div className="order-1 overflow-hidden rounded-xl" style={{ border: "1px solid var(--app-border)" }}>
-              <StateCountyMap stateAbbr={abbr} stateName={race.name} height={300} />
+              <StateCountyMap
+                stateAbbr={abbr}
+                stateName={race.name}
+                height={300}
+                fromPath={`/senate/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`}
+              />
             </div>
             <div className="order-5 lg:order-2">
               <AboutRaceCard

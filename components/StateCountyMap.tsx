@@ -63,10 +63,15 @@ export default function StateCountyMap({
   stateAbbr,
   stateName,
   height = 360,
+  highlightFips,
+  fromPath,
 }: {
   stateAbbr: string;
   stateName: string;
   height?: number;
+  highlightFips?: string;
+  /** Current page's path (+ its own ?from chain, if any) — set so the county page's back arrow returns here. */
+  fromPath?: string;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelected] = useState<County | null>(null);
@@ -104,6 +109,7 @@ export default function StateCountyMap({
   const defaultFill = "var(--oh31-map-unfilled)";
   const hoverFill = "var(--app-border)";
   const selectedFill = "var(--app-text-very-muted)";
+  const highlightFill = "#eab308";
 
   return (
     <div>
@@ -165,7 +171,8 @@ export default function StateCountyMap({
                   const county: County = { fips, name };
                   const isSelected = selected?.fips === fips;
                   const isHovered = hovered?.fips === fips;
-                  const fill = isSelected ? selectedFill : isHovered ? hoverFill : defaultFill;
+                  const isHighlighted = !isSelected && fips === highlightFips;
+                  const fill = isSelected ? selectedFill : isHovered ? hoverFill : isHighlighted ? highlightFill : defaultFill;
 
                   return (
                     <Geography
@@ -177,8 +184,8 @@ export default function StateCountyMap({
                       style={{
                         default: {
                           fill,
-                          stroke: isSelected ? hoverStroke : mapStroke,
-                          strokeWidth: isSelected ? 1.5 : 0.5,
+                          stroke: isSelected || isHighlighted ? hoverStroke : mapStroke,
+                          strokeWidth: isSelected || isHighlighted ? 1.5 : 0.5,
                           outline: "none",
                         },
                         hover: {
@@ -245,6 +252,15 @@ export default function StateCountyMap({
               <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
                 Election data coming soon
               </div>
+              {fromPath && (
+                <a
+                  href={`/counties/${selected.fips}?from=${encodeURIComponent(fromPath)}`}
+                  className="mt-2 inline-block text-xs font-semibold hover:underline"
+                  style={{ color: "var(--app-text-primary)" }}
+                >
+                  Go to county page →
+                </a>
+              )}
             </div>
             <button
               onClick={() => setSelected(null)}

@@ -4,6 +4,12 @@ import { useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import type { Theme } from "./ForecastMap";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
+import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
+import { FIPS_TO_STATE } from "@/lib/fips";
+
+const YEARS = [2008, 2012, 2016, 2020, 2024] as const;
+type Year = (typeof YEARS)[number];
 
 const COUNTIES_URL = "/us-counties.json";
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
@@ -14,60 +20,6 @@ type GeoFeature = {
   properties?: Record<string, string | undefined>;
 };
 
-const FIPS_TO_STATE: Record<string, { abbr: string; name: string }> = {
-  "01": { abbr: "AL", name: "Alabama" },
-  "02": { abbr: "AK", name: "Alaska" },
-  "04": { abbr: "AZ", name: "Arizona" },
-  "05": { abbr: "AR", name: "Arkansas" },
-  "06": { abbr: "CA", name: "California" },
-  "08": { abbr: "CO", name: "Colorado" },
-  "09": { abbr: "CT", name: "Connecticut" },
-  "10": { abbr: "DE", name: "Delaware" },
-  "11": { abbr: "DC", name: "District of Columbia" },
-  "12": { abbr: "FL", name: "Florida" },
-  "13": { abbr: "GA", name: "Georgia" },
-  "15": { abbr: "HI", name: "Hawaii" },
-  "16": { abbr: "ID", name: "Idaho" },
-  "17": { abbr: "IL", name: "Illinois" },
-  "18": { abbr: "IN", name: "Indiana" },
-  "19": { abbr: "IA", name: "Iowa" },
-  "20": { abbr: "KS", name: "Kansas" },
-  "21": { abbr: "KY", name: "Kentucky" },
-  "22": { abbr: "LA", name: "Louisiana" },
-  "23": { abbr: "ME", name: "Maine" },
-  "24": { abbr: "MD", name: "Maryland" },
-  "25": { abbr: "MA", name: "Massachusetts" },
-  "26": { abbr: "MI", name: "Michigan" },
-  "27": { abbr: "MN", name: "Minnesota" },
-  "28": { abbr: "MS", name: "Mississippi" },
-  "29": { abbr: "MO", name: "Missouri" },
-  "30": { abbr: "MT", name: "Montana" },
-  "31": { abbr: "NE", name: "Nebraska" },
-  "32": { abbr: "NV", name: "Nevada" },
-  "33": { abbr: "NH", name: "New Hampshire" },
-  "34": { abbr: "NJ", name: "New Jersey" },
-  "35": { abbr: "NM", name: "New Mexico" },
-  "36": { abbr: "NY", name: "New York" },
-  "37": { abbr: "NC", name: "North Carolina" },
-  "38": { abbr: "ND", name: "North Dakota" },
-  "39": { abbr: "OH", name: "Ohio" },
-  "40": { abbr: "OK", name: "Oklahoma" },
-  "41": { abbr: "OR", name: "Oregon" },
-  "42": { abbr: "PA", name: "Pennsylvania" },
-  "44": { abbr: "RI", name: "Rhode Island" },
-  "45": { abbr: "SC", name: "South Carolina" },
-  "46": { abbr: "SD", name: "South Dakota" },
-  "47": { abbr: "TN", name: "Tennessee" },
-  "48": { abbr: "TX", name: "Texas" },
-  "49": { abbr: "UT", name: "Utah" },
-  "50": { abbr: "VT", name: "Vermont" },
-  "51": { abbr: "VA", name: "Virginia" },
-  "53": { abbr: "WA", name: "Washington" },
-  "54": { abbr: "WV", name: "West Virginia" },
-  "55": { abbr: "WI", name: "Wisconsin" },
-  "56": { abbr: "WY", name: "Wyoming" },
-};
-
 function getAreaLabel(abbr: string): string {
   if (abbr === "LA") return "Parish";
   if (abbr === "AK") return "Borough";
@@ -76,6 +28,10 @@ function getAreaLabel(abbr: string): string {
 
 type County = { fips: string; name: string; stateAbbr: string; stateName: string };
 
+function marginLabel(margin: number): string {
+  return margin <= 0 ? `D+${Math.abs(margin).toFixed(1)}` : `R+${margin.toFixed(1)}`;
+}
+
 export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelected] = useState<County | null>(null);
@@ -83,22 +39,46 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
+  const [year, setYear] = useState<Year>(2024);
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const ignoreClickUntilRef = useRef(0);
 
   return (
-    <div
-      className="relative w-full h-full"
-      onMouseMove={(e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
-        setMapSize({ w: rect.width, h: rect.height });
-        setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
-      }}
-    >
+    <div className="w-full">
+    <div className="w-full h-[320px] sm:h-[400px] md:h-[520px] flex flex-col">
+      {/* Year toggle */}
+      <div className="flex justify-center py-2 shrink-0" style={{ borderBottom: `1px solid ${t.border}` }}>
+        <nav className="flex rounded-lg p-1 gap-0.5" style={{ background: t.tabBg }}>
+          {YEARS.map((y) => (
+            <button
+              key={y}
+              onClick={() => setYear(y)}
+              className="px-2.5 py-1 rounded-md text-xs font-medium transition-colors"
+              style={
+                y === year
+                  ? { background: t.panel, color: t.textPrimary }
+                  : { color: t.textMuted }
+              }
+            >
+              {y}
+            </button>
+          ))}
+        </nav>
+      </div>
+
+      <div
+        className="relative w-full flex-1 min-h-0"
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          setMapSize({ w: rect.width, h: rect.height });
+          setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+        }}
+      >
       {/* Hover tooltip */}
       {hovered && (() => {
-        const tipW = 170;
-        const tipH = 52;
+        const result = countyPresidentialData[hovered.fips]?.years[year] ?? null;
+        const tipW = 180;
+        const tipH = result ? 84 : 66;
         const offset = 14;
         const pad = 8;
         let left = mousePos.x + offset;
@@ -127,6 +107,20 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
             <div className="text-[10px] mt-0.5" style={{ color: t.textMuted }}>
               {hovered.stateName} · FIPS {hovered.fips}
             </div>
+            {result ? (
+              <>
+                <div className="text-xs font-bold mt-1" style={{ color: result.margin <= 0 ? t.demText : t.repText }}>
+                  {marginLabel(result.margin)}
+                </div>
+                <div className="text-[10px] mt-0.5" style={{ color: t.textMuted }}>
+                  {result.totalVotes.toLocaleString()} votes ({year})
+                </div>
+              </>
+            ) : (
+              <div className="text-[10px] mt-1" style={{ color: t.textVeryMuted }}>
+                No {year} data
+              </div>
+            )}
           </div>
         );
       })()}
@@ -147,6 +141,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                 const fips = String(geo.id ?? "");
                 const statePrefix = fips.slice(0, 2);
                 const stateInfo = FIPS_TO_STATE[statePrefix];
+                const result = countyPresidentialData[fips]?.years[year] ?? null;
                 const county: County = {
                   fips,
                   name: geo.properties?.name ?? "",
@@ -154,6 +149,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                   stateName: stateInfo?.name ?? "",
                 };
                 const isSelected = selected?.fips === fips;
+                const fill = result ? getRaceColor(result.margin) : t.mapUnfilled;
 
                 return (
                   <Geography
@@ -183,20 +179,20 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                     }}
                     style={{
                       default: {
-                        fill: isSelected ? t.hoverUnfilled : t.mapUnfilled,
+                        fill,
                         stroke: isSelected ? t.hoverStroke : t.mapStroke,
                         strokeWidth: isSelected ? 1.75 : 0.3,
                         outline: "none",
                       },
                       hover: {
-                        fill: t.hoverUnfilled,
+                        fill: result ? fill : t.hoverUnfilled,
                         stroke: t.hoverStroke,
                         strokeWidth: 0.5,
                         outline: "none",
                         cursor: "pointer",
                       },
                       pressed: {
-                        fill: t.hoverUnfilled,
+                        fill,
                         stroke: t.hoverStroke,
                         strokeWidth: 1.75,
                         outline: "none",
@@ -278,23 +274,71 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
           </div>
           <div className="p-2.5">
             <div className="text-[9px]" style={{ color: t.textVeryMuted }}>FIPS {selected.fips}</div>
-            <div className="mt-1.5 text-[9px]" style={{ color: t.textVeryMuted }}>Election data coming soon</div>
+            {(() => {
+              const result = countyPresidentialData[selected.fips]?.years[year] ?? null;
+              if (!result) {
+                return <div className="mt-1.5 text-[9px]" style={{ color: t.textVeryMuted }}>No {year} data</div>;
+              }
+              const { bg, text } = getRatingColors(marginToRating(result.margin));
+              return (
+                <>
+                  <div
+                    className="inline-block mt-1.5 px-1.5 py-0.5 rounded text-[9px] font-bold"
+                    style={{ background: bg, color: text }}
+                  >
+                    {marginLabel(result.margin)}
+                  </div>
+                  <div className="mt-1.5 text-[9px]" style={{ color: t.textMuted }}>
+                    {result.demVotes.toLocaleString()} D · {result.repVotes.toLocaleString()} R
+                  </div>
+                  <div className="text-[9px]" style={{ color: t.textVeryMuted }}>
+                    {result.totalVotes.toLocaleString()} total votes ({year})
+                  </div>
+                </>
+              );
+            })()}
+            <a
+              href={`/counties/${selected.fips}?from=${encodeURIComponent("/?tab=counties")}`}
+              className="mt-2 flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
+              style={{ background: t.tabBg, color: t.textMuted }}
+            >
+              More Info
+              <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
         </div>
       )}
 
-      {/* Mobile selected strip */}
+      </div>
+    </div>
+
+      {/* Mobile selected strip — normal document flow below the map, not overlapping/shrinking it */}
       {selected && (
         <div
-          className="md:hidden absolute bottom-0 left-0 right-0 z-30 flex items-center h-12 px-3 gap-3"
+          className="md:hidden flex items-center h-12 px-3 gap-3"
           style={{ background: t.panel, borderTop: `1px solid ${t.border}` }}
         >
           <div className="flex flex-col justify-center min-w-0 flex-1">
             <span className="text-xs font-bold leading-tight truncate" style={{ color: t.textPrimary }}>
               {selected.name} {getAreaLabel(selected.stateAbbr)}
             </span>
-            <span className="text-[10px]" style={{ color: t.textMuted }}>{selected.stateName} · FIPS {selected.fips}</span>
+            <span className="text-[10px]" style={{ color: t.textMuted }}>
+              {selected.stateName}
+              {(() => {
+                const result = countyPresidentialData[selected.fips]?.years[year] ?? null;
+                return result ? ` · ${marginLabel(result.margin)} (${year})` : ` · No ${year} data`;
+              })()}
+            </span>
           </div>
+          <a
+            href={`/counties/${selected.fips}?from=${encodeURIComponent("/?tab=counties")}`}
+            className="shrink-0 text-[10px] font-semibold px-2 py-1 rounded-md"
+            style={{ background: t.tabBg, color: t.textMuted }}
+          >
+            More Info
+          </a>
           <button onClick={() => setSelected(null)} className="shrink-0" style={{ color: t.textVeryMuted }}>
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

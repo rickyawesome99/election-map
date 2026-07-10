@@ -329,7 +329,11 @@ export default function ForecastMap({ initialTab = null }: { initialTab?: string
 
         {/* ── Map card ── */}
         {(activeTab === "forecast" || activeTab === "counties" || activeTab === "states") && <div
-          className="relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-[520px]"
+          className={
+            activeTab === "counties"
+              ? "relative rounded-xl"
+              : "relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-[520px]"
+          }
           style={{
             border: `1px solid ${t.border}`,
             boxShadow: "0 2px 12px rgba(0,0,0,0.08)",

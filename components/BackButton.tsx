@@ -22,6 +22,7 @@ function resolveFrom(from: string | null, pathname: string): string {
   if (pathname.startsWith("/senate/")) return "/?tab=senate";
   if (pathname.startsWith("/governor/")) return "/?tab=governor";
   if (pathname.startsWith("/states/")) return "/?tab=states";
+  if (pathname.startsWith("/counties/")) return "/?tab=counties";
   if (pathname.startsWith("/analysis/")) return "/analysis";
   return "/";
 }
