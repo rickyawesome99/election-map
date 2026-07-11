@@ -3,6 +3,7 @@ import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
+import { candidatePhotos } from "@/lib/candidatePhotos";
 import DistrictMiniMap from "@/components/DistrictMiniMap";
 import { AboutRaceCard, CandidatesAndPollsCard, ForecastCalculationCard, HouseOnlyDistrictBoundariesSection, HouseOnlyRecentStatewideResultsSection, PastElectionResultsSection } from "@/components/RaceDetailSections";
 import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
@@ -66,6 +67,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   const { bg, text } = getRatingColors(forecastRating);
   const demVoteShare = parseFloat(((100 - projectedMargin) / 2).toFixed(1));
   const repVoteShare = parseFloat(((100 + projectedMargin) / 2).toFixed(1));
+  const demPhoto = race.candidates ? (candidatePhotos[race.candidates.dem.name] ?? null) : null;
+  const repPhoto = race.candidates ? (candidatePhotos[race.candidates.rep.name] ?? null) : null;
 
   const pastResultsWithDiff = (race.pastResults ?? []).map((res) => {
     const nationalMargin = getNationalMargin("House", res.year);
@@ -225,8 +228,8 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
               <CandidatesAndPollsCard
                 candidates={race.candidates
                   ? [
-                      { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, pct: demVoteShare },
-                      { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, pct: repVoteShare },
+                      { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
+                      { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
                     ]
                   : [
                       { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },

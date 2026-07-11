@@ -62,13 +62,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
 
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:items-start">
           <div className="contents lg:flex lg:flex-col lg:gap-3">
-            <div className="order-1">
-              <CurrentIncumbentCard
-                incumbentName={entry.incumbent}
-                party={entry.party}
-              />
-            </div>
-            <div className="order-2">
+            <div className="order-3">
               <AboutRaceCard
                 title="About this Seat"
                 description={entry.raceDesc ?? `[Placeholder — overview of the ${entry.state} governorship, its powers, the incumbent's background, key issues, and political context to be filled in.]`}
@@ -80,7 +74,7 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
               />
             </div>
             <VoteHistoryTabbedSection
-              className="order-3"
+              className="order-4"
               defaultTabKey="race-results"
               height="430px"
               tabs={[
@@ -106,8 +100,15 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
             />
           </div>
 
-          <div className="contents lg:grid lg:grid-cols-1 lg:gap-3">
-            <div className="order-3">
+          <div className="contents lg:flex lg:flex-col lg:gap-3">
+            <div className="order-1">
+              <CurrentIncumbentCard
+                incumbentName={entry.incumbent}
+                party={entry.party}
+                photo={candidatePhotos[entry.incumbent] ?? null}
+              />
+            </div>
+            <div className="order-2">
               <ElectionStatusCard
                 message={`This governorship is not on the ballot in ${electionYear}. The next election is scheduled for ${entry.nextElection}. Incumbent and biographical information to be filled in.`}
               />

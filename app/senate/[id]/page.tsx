@@ -110,13 +110,7 @@ function NoElectionPage({
 
         <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:items-start">
           <div className="contents lg:flex lg:flex-col lg:gap-3">
-            <div className="order-1">
-              <CurrentIncumbentCard
-                incumbentName={incumbent}
-                party={party}
-              />
-            </div>
-            <div className="order-2">
+            <div className="order-3">
               <AboutRaceCard
                 title="About this Seat"
                 description={raceDesc ?? "[Placeholder — overview of this seat, its history, the incumbent's background, key issues, and political context to be filled in.]"}
@@ -128,7 +122,7 @@ function NoElectionPage({
               />
             </div>
             <VoteHistoryTabbedSection
-              className="order-3"
+              className="order-4"
               defaultTabKey="race-results"
               height="430px"
               tabs={[
@@ -155,8 +149,15 @@ function NoElectionPage({
             />
           </div>
 
-          <div className="contents lg:grid lg:grid-cols-1 lg:gap-3">
-            <div className="order-3">
+          <div className="contents lg:flex lg:flex-col lg:gap-3">
+            <div className="order-1">
+              <CurrentIncumbentCard
+                incumbentName={incumbent}
+                party={party}
+                photo={candidatePhotos[incumbent] ?? null}
+              />
+            </div>
+            <div className="order-2">
               <ElectionStatusCard
                 message={`This seat is not on the ballot in November ${electionYear}. The next election for this seat is scheduled for ${nextElection}. Incumbent and biographical information to be filled in.`}
               />

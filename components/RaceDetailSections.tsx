@@ -306,11 +306,13 @@ export function CandidatesSection({
 export function CurrentIncumbentCard({
   incumbentName,
   party,
+  photo,
   items = [],
   description,
 }: {
   incumbentName: string;
   party: "D" | "R" | "I";
+  photo?: string | null;
   items?: DetailInfoItem[];
   description?: string;
 }) {
@@ -323,21 +325,47 @@ export function CurrentIncumbentCard({
       <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-3" style={{ color: "var(--app-text-muted)" }}>
         Current Incumbent
       </h2>
-      <div className="flex items-end gap-4">
+      <div className="flex flex-col items-center text-center">
         <div
-          className="w-20 h-24 rounded-lg overflow-hidden shrink-0 flex items-center justify-center"
-          style={{ border: `2px solid ${accentColor}`, background: "var(--app-tab-bg)" }}
+          className="aspect-[3/4] rounded-xl overflow-hidden mb-3 flex items-center justify-center"
+          style={{ width: "min(42vw, 160px)", border: `2px solid ${accentColor}`, background: "var(--app-tab-bg)" }}
         >
-          <svg viewBox="0 0 80 96" className="w-full h-full" fill="none">
-            <rect width="80" height="96" fill="var(--app-tab-bg)" />
-            <circle cx="40" cy="34" r="18" fill="var(--app-border)" />
-            <ellipse cx="40" cy="88" rx="32" ry="22" fill="var(--app-border)" />
-          </svg>
+          {photo ? (
+            <Image
+              src={photo}
+              alt={incumbentName}
+              width={300}
+              height={400}
+              className="w-full h-full object-cover object-top"
+            />
+          ) : party === "R" ? (
+            <Image
+              src="/candidates/placeholder-republican.png"
+              alt="Republican"
+              width={300}
+              height={400}
+              className="w-full h-full object-contain p-3"
+            />
+          ) : party === "D" ? (
+            <Image
+              src="/candidates/placeholder-democrat.png"
+              alt="Democrat"
+              width={300}
+              height={400}
+              className="w-full h-full object-contain p-3"
+            />
+          ) : (
+            <svg viewBox="0 0 64 80" className="w-full h-full" fill="none">
+              <rect width="64" height="80" fill="var(--app-tab-bg)" />
+              <circle cx="32" cy="28" r="14" fill="var(--app-border)" />
+              <ellipse cx="32" cy="76" rx="25" ry="18" fill="var(--app-border)" />
+            </svg>
+          )}
         </div>
-        <div className="flex-1 flex flex-col justify-end pb-3">
+        <div className="w-full">
           <CandidateLink
             name={incumbentName}
-            className="text-xl font-bold mb-1 hover:underline inline-block"
+            className="text-xl font-bold leading-tight mb-1 hover:underline inline-block"
             style={{ color: "var(--app-text-primary)" }}
           >
             {incumbentName}
@@ -346,7 +374,7 @@ export function CurrentIncumbentCard({
             {partyLabel(party)} · Incumbent
           </div>
           {items.length > 0 && (
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3">
+            <div className="grid grid-cols-2 gap-2 mt-3 text-left">
               {items.map(({ label, value }) => (
                 <div key={label} className="rounded-lg p-2.5 flex flex-col" style={{ background: "var(--app-bg)" }}>
                   <div className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
@@ -360,7 +388,7 @@ export function CurrentIncumbentCard({
             </div>
           )}
           {description && (
-            <div className="mt-3 rounded-lg p-3" style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}>
+            <div className="mt-3 rounded-lg p-3 text-left" style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}>
               <div className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>
                 About this Seat
               </div>
@@ -382,21 +410,23 @@ export function ElectionStatusCard({
 }) {
   return (
     <section
-      className="rounded-xl p-4 mb-4"
+      className="rounded-xl p-5 mb-0"
       style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
     >
-      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-4" style={{ color: "var(--app-text-muted)" }}>
         Election Status
       </h2>
       <div
-        className="rounded-lg p-3 flex items-start gap-3"
+        className="rounded-lg p-4 flex items-start gap-3"
         style={{ background: "var(--app-tab-bg)", border: "1px solid var(--app-border)" }}
       >
-        <svg className="w-5 h-5 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-muted)" }}>
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
+        <div className="grid h-10 w-10 shrink-0 place-items-center rounded-lg" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}>
+          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3M5 11h14M6 21h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </div>
         <div>
-          <div className="text-sm font-semibold mb-1" style={{ color: "var(--app-text-primary)" }}>
+          <div className="text-lg font-bold leading-tight mb-1" style={{ color: "var(--app-text-primary)" }}>
             No Election This Cycle
           </div>
           <div className="text-sm" style={{ color: "var(--app-text-muted)" }}>
