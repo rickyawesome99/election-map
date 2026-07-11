@@ -393,7 +393,7 @@ export default function StatesOverviewMap({
               </>
             )}
             <a
-              href={`/states/${selected.id}?from=${encodeURIComponent("/?tab=states")}`}
+              href={`/states/${selected.id}`}
               className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
               style={{ background: t.tabBg, color: t.textMuted }}
             >

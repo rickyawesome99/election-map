@@ -22,7 +22,6 @@ function enrichSenateResults(pastResults: PastResult[] | undefined): DetailPastR
   }).reverse();
 }
 
-function stateSlug(name: string) { return name.toLowerCase().replace(/\s+/g, "-"); }
 function isSpecialElection(electionType?: string) {
   return (electionType ?? "").toLowerCase().includes("special");
 }
@@ -38,24 +37,28 @@ function SpecialBadge() {
   );
 }
 
+function senateUrlId(id: string): string {
+  return id.toLowerCase().replace(/-2$/, "2");
+}
+
 export async function generateStaticParams() {
   return [
-    ...senateData.map((race) => ({ id: race.id.toLowerCase() })),
+    ...senateData.map((race) => ({ id: senateUrlId(race.id) })),
     ...senateNoElection.map((e) => ({ id: e.abbr.toLowerCase() })),
-    ...senateHoldovers.map((e) => ({ id: `${e.abbr.toLowerCase()}-2` })),
+    ...senateHoldovers.map((e) => ({ id: `${e.abbr.toLowerCase()}2` })),
   ];
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const race = senateData.find((r) => r.id.toLowerCase() === id.toLowerCase());
+  const race = senateData.find((r) => senateUrlId(r.id) === id.toLowerCase());
   if (race) return {
     title: `${race.name} Senate Race — ${electionYear} Forecast`,
     description: `${electionYear} Senate forecast for ${race.name}: ${race.rating}, ${Math.round(race.probability * 100)}% Democratic win probability`,
   };
   const noEl = senateNoElection.find((e) => e.abbr.toLowerCase() === id.toLowerCase());
   if (noEl) return { title: `${noEl.state} Senate — No Election in ${electionYear}` };
-  const abbr = id.replace(/-2$/, "").toUpperCase();
+  const abbr = id.replace(/2$/i, "").toUpperCase();
   const holdover = senateHoldovers.find((e) => e.abbr === abbr);
   if (holdover) return { title: `${holdover.state} Senate (Seat 2) — Incumbent Info` };
   return { title: "Race Not Found" };
@@ -65,22 +68,22 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
 function NoElectionPage({
   state,
+  abbr,
   incumbent,
   party,
   nextElection,
   termLength,
   seatLabel,
-  from,
   raceDesc,
   pastResults,
 }: {
   state: string;
+  abbr: string;
   incumbent: string;
   party: "D" | "R" | "I";
   nextElection: number;
   termLength?: number;
   seatLabel: string;
-  from: string;
   raceDesc?: string;
   pastResults?: DetailPastResult[];
 }) {
@@ -94,7 +97,7 @@ function NoElectionPage({
         {/* Title + banner */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
-            <a href={`/states/${stateSlug(state)}?from=${encodeURIComponent(from)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{state}</a>
+            <a href={`/states/${abbr.toLowerCase()}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{state}</a>
             <span
               className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
@@ -167,29 +170,28 @@ function NoElectionPage({
 
 // ── Main page ─────────────────────────────────────────────────────────────────
 
-export default async function SenatePage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ from?: string }> }) {
+export default async function SenatePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const { from: fromParam } = await searchParams;
-  const abbr = id.replace(/-2$/, "").toUpperCase();
-  const isSeat2Url = id.toLowerCase().endsWith("-2");
+  const abbr = id.replace(/2$/i, "").toUpperCase();
+  const isSeat2Url = /2$/i.test(id);
 
   // Case 1: 2026 active race — checked FIRST to avoid collision with holdover entries
-  const race = senateData.find((r) => r.id.toLowerCase() === id.toLowerCase());
+  const race = senateData.find((r) => senateUrlId(r.id) === id.toLowerCase());
   if (race) {
     // fall through to race rendering below
   } else if (isSeat2Url) {
-    // Case 2: holdover second senator (e.g. /senate/ma-2) — seat 2 not up in 2026
+    // Case 2: holdover second senator (e.g. /senate/ma2) — seat 2 not up in 2026
     const holdover = senateHoldovers.find((e) => e.abbr === abbr);
     if (holdover) {
       return (
         <NoElectionPage
           state={holdover.state}
+          abbr={holdover.abbr}
           incumbent={holdover.incumbent}
           party={holdover.party}
           nextElection={holdover.nextElection}
           termLength={holdover.termLength}
           seatLabel={`U.S. Senate · Seat 2 · Not Up in ${electionYear}`}
-          from={`/senate/${id}`}
           raceDesc={holdover.raceDesc}
           pastResults={enrichSenateResults(holdover.pastResults)}
         />
@@ -202,12 +204,12 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
       return (
         <NoElectionPage
           state={noEl.state}
+          abbr={noEl.abbr}
           incumbent={noEl.incumbent}
           party={noEl.party}
           nextElection={noEl.nextElection}
           termLength={noEl.termLength}
           seatLabel={`U.S. Senate · No Election in ${electionYear}`}
-          from={`/senate/${id}`}
           raceDesc={noEl.raceDesc}
           pastResults={enrichSenateResults(noEl.pastResults)}
         />
@@ -248,7 +250,7 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
         {/* Title block */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
-            <a href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/senate/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</a>
+            <a href={`/states/${abbr.toLowerCase()}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</a>
             <span
               className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}
@@ -269,7 +271,6 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
                 stateAbbr={abbr}
                 stateName={race.name}
                 height={300}
-                fromPath={`/senate/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`}
               />
             </div>
             <div className="order-5 lg:order-2">
@@ -337,7 +338,7 @@ export default async function SenatePage({ params, searchParams }: { params: Pro
                 tpl={stateTpl}
                 genericBallot={gb}
                 tplLabel="State TPL"
-                tplHref={`/?tab=state&modelState=${encodeURIComponent(abbr)}`}
+                tplHref={`/model/state?modelState=${encodeURIComponent(abbr)}`}
                 incumbentPts={incumbentPts}
                 fundraisingPts={null}
                 candidatePts={null}

@@ -220,7 +220,7 @@ export default function RaceTable({
               >
                 <td className="px-4 py-3 text-left">
                   <a
-                    href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${basePath.slice(1)}`)}`}
+                    href={`${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`}
                     className="font-semibold hover:underline"
                     style={{ color: "var(--app-text-primary)" }}
                   >
@@ -312,7 +312,7 @@ export default function RaceTable({
               {/* Line 1: Name + Rating */}
               <div className="flex min-w-0 items-center gap-1.5">
                 <a
-                  href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${basePath.slice(1)}`)}`}
+                  href={`${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`}
                   className="min-w-0 truncate text-sm font-semibold hover:underline"
                   style={{ color: "var(--app-text-primary)" }}
                 >
@@ -415,7 +415,7 @@ export default function RaceTable({
                   >
                     <div className="flex min-w-0 items-center gap-1.5">
                       <a
-                        href={`${basePath}/${race.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${basePath.slice(1)}`)}`}
+                        href={`${basePath}/${(basePath === "/house" ? race.name : race.id).toLowerCase().replace(/-2$/, "2")}`}
                         className="min-w-0 truncate font-semibold hover:underline"
                         style={{ color: "var(--app-text-primary)" }}
                       >

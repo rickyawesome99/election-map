@@ -1,6 +1,7 @@
 "use client";
 
-import { usePathname, useSearchParams } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 
 const TABS: { key: string; label: string; href?: string }[] = [
@@ -19,18 +20,15 @@ function getSavedForecastTab(): "house" | "senate" | "governor" | null {
   return saved === "house" || saved === "senate" || saved === "governor" ? saved : null;
 }
 
-function getActiveTab(pathname: string, queryTab: string | null): string | null {
-  const tplSubTabs = ["state", "district", "table", "districtTable"];
-  if (pathname === "/") {
-    if (tplSubTabs.includes(queryTab ?? "")) return "model";
-    if (queryTab === "house" || queryTab === "senate" || queryTab === "governor" || queryTab === "forecast" || queryTab === "map") return "forecast";
-    return TABS.some(({ key }) => key === queryTab) ? queryTab : "overview";
-  }
-  if (pathname.startsWith("/house/")) return "forecast";
-  if (pathname.startsWith("/senate/")) return "forecast";
-  if (pathname.startsWith("/governor/")) return "forecast";
-  if (pathname.startsWith("/states/")) return "states";
+function getActiveTab(pathname: string): string | null {
+  if (pathname === "/house" || pathname === "/senate" || pathname === "/governor"
+    || pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/")) return "forecast";
+  if (pathname === "/states" || pathname.startsWith("/states/")) return "states";
+  if (pathname === "/counties" || pathname.startsWith("/counties/")) return "counties";
+  if (pathname === "/model" || pathname.startsWith("/model/")) return "model";
+  if (pathname === "/district-finder") return "district-finder";
   if (pathname.startsWith("/analysis")) return "analysis";
+  if (pathname === "/overview" || pathname === "/") return "overview";
   return null;
 }
 
@@ -40,12 +38,9 @@ export default function SubNavBar({
   initialForecastTab?: "house" | "senate" | "governor" | null;
 }) {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const urlActiveTab = getActiveTab(pathname, searchParams.get("tab"));
-  const [clientTab, setClientTab] = useState<{ pathname: string; key: string } | null>(null);
+  const activeTab = getActiveTab(pathname);
   const [savedForecastTab, setSavedForecastTab] = useState<"house" | "senate" | "governor">(initialForecastTab ?? "senate");
   const effectiveSavedForecastTab = getSavedForecastTab() ?? savedForecastTab;
-  const activeTab = clientTab?.pathname === pathname ? clientTab.key : urlActiveTab;
   const activeTabRef = useRef<HTMLElement | null>(null);
   const tabRefs = useRef<Map<string, HTMLElement>>(new Map());
   const navRef = useRef<HTMLElement | null>(null);
@@ -75,24 +70,11 @@ export default function SubNavBar({
     activeTabRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
   }, [activeTab]);
 
+  // Re-read the saved chamber preference on every navigation — SubNavBar lives in the
+  // root layout and never unmounts, so this is how it picks up a just-changed preference.
   useEffect(() => {
-    const frame = window.requestAnimationFrame(() => {
-      setSavedForecastTab(getSavedForecastTab() ?? "senate");
-    });
-
-    function handleSavedForecastTabChange(event: Event) {
-      const nextTab = (event as CustomEvent<string>).detail;
-      if (nextTab === "house" || nextTab === "senate" || nextTab === "governor") {
-        setSavedForecastTab(nextTab);
-      }
-    }
-
-    window.addEventListener("forecast-race-type-change", handleSavedForecastTabChange);
-    return () => {
-      window.cancelAnimationFrame(frame);
-      window.removeEventListener("forecast-race-type-change", handleSavedForecastTabChange);
-    };
-  }, []);
+    setSavedForecastTab(getSavedForecastTab() ?? "senate");
+  }, [pathname]);
 
   const commonClass = "relative z-10 shrink-0 px-4 py-2 text-sm font-semibold transition-colors duration-150";
 
@@ -136,47 +118,19 @@ export default function SubNavBar({
             color: isActive ? "var(--app-text-primary)" : "var(--app-text-muted)",
           };
 
-          if (href) {
-            return (
-              <a
-                key={key}
-                ref={setRef}
-                href={href}
-                onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
-                className={commonClass}
-                style={style}
-              >
-                {label}
-              </a>
-            );
-          }
-
-          const nextTab = key === "forecast" ? effectiveSavedForecastTab : key;
+          const targetHref = href ?? (key === "forecast" ? `/${effectiveSavedForecastTab}` : `/${key}`);
 
           return (
-            <a
+            <Link
               key={key}
               ref={setRef}
-              href={`/?tab=${nextTab}`}
-              onClick={(event) => {
-                window.scrollTo({ top: 0, behavior: "auto" });
-                if (pathname !== "/") {
-                  if (key === "forecast") {
-                    event.preventDefault();
-                    window.location.assign(`/?tab=${getSavedForecastTab() ?? savedForecastTab}`);
-                  }
-                  return;
-                }
-                event.preventDefault();
-                window.history.pushState({}, "", `/?tab=${nextTab}`);
-                setClientTab({ pathname, key });
-                window.dispatchEvent(new CustomEvent("forecast-tab-change", { detail: nextTab }));
-              }}
+              href={targetHref}
+              onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
               className={commonClass}
               style={style}
             >
               {label}
-            </a>
+            </Link>
           );
         })}
       </nav>

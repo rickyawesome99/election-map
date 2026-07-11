@@ -298,7 +298,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
               );
             })()}
             <a
-              href={`/counties/${selected.fips}?from=${encodeURIComponent("/?tab=counties")}`}
+              href={`/counties/${selected.fips}`}
               className="mt-2 flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
               style={{ background: t.tabBg, color: t.textMuted }}
             >
@@ -333,7 +333,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
             </span>
           </div>
           <a
-            href={`/counties/${selected.fips}?from=${encodeURIComponent("/?tab=counties")}`}
+            href={`/counties/${selected.fips}`}
             className="shrink-0 text-[10px] font-semibold px-2 py-1 rounded-md"
             style={{ background: t.tabBg, color: t.textMuted }}
           >

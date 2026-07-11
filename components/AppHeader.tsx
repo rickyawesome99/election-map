@@ -26,7 +26,7 @@ export default function AppHeader({
           type="button"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "auto" });
-            window.location.assign("/?tab=overview");
+            window.location.assign("/overview");
           }}
           className="shrink-0 cursor-pointer text-left text-lg font-bold leading-none tracking-tight sm:text-xl"
           style={{ color: "var(--app-text-primary)" }}

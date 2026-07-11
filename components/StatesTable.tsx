@@ -177,7 +177,7 @@ export default function StatesTable({ rows }: { rows: StateRow[] }) {
                     style={{ background: rowBackground, boxShadow: "1px 0 0 var(--app-border)" }}
                   >
                     <a
-                      href={`/states/${row.id}?from=${encodeURIComponent("/?tab=states")}`}
+                      href={`/states/${row.id}`}
                       className="font-semibold hover:underline"
                       style={{ color: "var(--app-text-primary)" }}
                     >

@@ -317,7 +317,7 @@ export function getRawMargin(
 export function generateRaceList(stateAbbr: string, stateName: string): RaceStub[] {
   const modelInputs: RaceModelInputs[] = STATE_RACE_INPUTS[stateAbbr] ?? [];
   const stubs: RaceStub[] = [];
-  const stateId = statesData.find((state) => state.abbr === stateAbbr)?.id ?? stateName.toLowerCase().replace(/\s+/g, "-");
+  const stateId = statesData.find((state) => state.abbr === stateAbbr)?.id ?? stateAbbr.toLowerCase();
   const stateHref = `/states/${stateId}`;
 
   function overlay(race: string, year: number) {
@@ -378,10 +378,10 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
   }
 
   for (const seat of senateData.filter((d) => d.id === stateAbbr || d.id.startsWith(stateAbbr + "-"))) {
-    addSenateSeat(seat, `/senate/${seat.id.toLowerCase()}`);
+    addSenateSeat(seat, `/senate/${seat.id.toLowerCase().replace(/-2$/, "2")}`);
   }
   for (const seat of senateHoldovers.filter((d) => d.abbr === stateAbbr)) {
-    addSenateSeat(seat, `/senate/${seat.abbr.toLowerCase()}-2`);
+    addSenateSeat(seat, `/senate/${seat.abbr.toLowerCase()}2`);
   }
   for (const seat of senateNoElection.filter((d) => d.abbr === stateAbbr)) {
     addSenateSeat(seat, `/senate/${seat.abbr.toLowerCase()}`);
@@ -413,7 +413,7 @@ export function generateRaceList(stateAbbr: string, stateName: string): RaceStub
     }));
     for (const r of dist.pastResults ?? []) {
       if (r.year >= 2017) {
-        stubs.push(makeStub(`House ${dist.name}`, "H", r.year, dist.name, incumbentFromResult(r), historicalMargins, `/house/${dist.id.toLowerCase()}`));
+        stubs.push(makeStub(`House ${dist.name}`, "H", r.year, dist.name, incumbentFromResult(r), historicalMargins, `/house/${dist.name.toLowerCase()}`));
       }
     }
   }

@@ -22,7 +22,16 @@ type ChartPoint = {
 };
 
 type ChartRenderPoint = ChartPoint & Record<string, number | string | null>;
-type SegmentLine = { key: string };
+type SegmentLine = { key: string; stroke: string };
+
+const REP_STROKE = "var(--party-rep-muted)";
+const DEM_STROKE = "var(--party-dem-muted)";
+const EVEN_STROKE = "var(--party-ind-muted)";
+
+function strokeForMargin(v: number): string {
+  if (Math.abs(v) < 0.05) return EVEN_STROKE;
+  return v >= 0 ? REP_STROKE : DEM_STROKE;
+}
 
 function marginLabel(v: number): string {
   const abs = Math.abs(v).toFixed(1);
@@ -100,7 +109,7 @@ function buildSegmentLines(points: ChartPoint[], dataKey: "repMargin" | "natY"):
     const key = `segment_${i}`;
     chartData[i][key] = start;
     chartData[i + 1][key] = end;
-    segments.push({ key });
+    segments.push({ key, stroke: strokeForMargin((start + end) / 2) });
   }
 
   return { chartData, segments };
@@ -168,7 +177,7 @@ export default function SeatVoteHistoryChart({
 
   const chart = (
     <>
-      <div className={`${bare ? "pb-1" : "px-3 pt-3 pb-1"} flex items-center justify-between`}>
+      <div className={`${bare ? "shrink-0 pb-2" : "px-3 pt-3 pb-1"} flex items-center justify-between`}>
         {!bare && (
           <h2 className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
             Vote History
@@ -192,9 +201,13 @@ export default function SeatVoteHistoryChart({
         )}
       </div>
 
-      <div ref={chartHostRef} className={`${bare ? "px-1" : "px-4"} min-w-0 pt-2 pb-3`} style={{ height: 255 }}>
+      <div
+        ref={chartHostRef}
+        className={`${bare ? "flex-1 px-1" : "px-4"} min-w-0 pt-1 pb-2`}
+        style={bare ? { minHeight: 0 } : { height: 320 }}
+      >
         {chartReady && chartSize.width > 0 && chartSize.height > 0 && (
-            <LineChart width={chartSize.width} height={chartSize.height} data={chartData} margin={{ top: 8, right: 16, bottom: 0, left: 0 }}>
+            <LineChart width={chartSize.width} height={chartSize.height} data={chartData} margin={{ top: 10, right: 12, bottom: 2, left: 0 }}>
             <XAxis
               dataKey="year"
               tick={{ fontSize: 11, fill: "var(--app-text-muted)" }}
@@ -214,21 +227,23 @@ export default function SeatVoteHistoryChart({
             <CartesianGrid
               vertical={false}
               stroke="var(--app-border)"
-              strokeOpacity={0.5}
-              strokeDasharray="3 4"
+              strokeOpacity={0.42}
+              strokeDasharray="2 5"
             />
-            <ReferenceLine y={0} stroke="var(--app-border)" strokeDasharray="4 3" strokeWidth={1} />
+            <ReferenceLine y={0} stroke="var(--app-text-muted)" strokeOpacity={0.55} strokeDasharray="4 3" strokeWidth={1.25} />
             <Tooltip
               content={<MarginTooltip showNational={showNational} electionType={electionType} />}
               cursor={{ stroke: "var(--app-border)", strokeWidth: 1 }}
             />
-            {segments.map(({ key }) => (
+            {segments.map(({ key, stroke }) => (
               <Line
                 key={key}
                 type="monotone"
                 dataKey={key}
-                stroke="var(--app-text-muted)"
-                strokeWidth={2.5}
+                stroke={stroke}
+                strokeWidth={3}
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 connectNulls={false}
                 dot={false}
                 activeDot={false}
@@ -245,17 +260,20 @@ export default function SeatVoteHistoryChart({
                 const val = showNational ? payload.natY : payload.repMargin;
                 if (val == null) return <g key={`empty-${payload.year}`} />;
                 return (
-                  <circle
-                    key={`dot-${payload.year}`}
-                    cx={cx ?? 0}
-                    cy={cy ?? 0}
-                    r={6}
-                    fill={val >= 0 ? "#be1c29" : "#1b408c"}
-                    strokeWidth={0}
-                  />
+                  <g key={`dot-${payload.year}`}>
+                    <circle cx={cx ?? 0} cy={cy ?? 0} r={7} fill={val >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)"} />
+                    <circle
+                      cx={cx ?? 0}
+                      cy={cy ?? 0}
+                      r={4.75}
+                      fill={val >= 0 ? "var(--party-rep)" : "var(--party-dem)"}
+                      stroke="var(--app-panel)"
+                      strokeWidth={1.5}
+                    />
+                  </g>
                 );
               }}
-              activeDot={{ r: 5 }}
+              activeDot={{ r: 6, stroke: "var(--app-panel)", strokeWidth: 2 }}
               isAnimationActive={false}
             />
             </LineChart>
@@ -264,7 +282,7 @@ export default function SeatVoteHistoryChart({
     </>
   );
 
-  if (bare) return <div className="min-w-0">{chart}</div>;
+  if (bare) return <div className="flex h-full min-w-0 flex-col">{chart}</div>;
 
   return (
     <div

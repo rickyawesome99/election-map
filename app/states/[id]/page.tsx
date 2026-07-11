@@ -183,7 +183,7 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
   );
 }
 
-function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) {
+function HouseDistrictRow({ race }: { race: RaceForecast }) {
   const parts = race.name.split("-");
   const distNum = parts[1];
   const isAL = distNum === "AL";
@@ -194,7 +194,7 @@ function HouseDistrictRow({ race, from }: { race: RaceForecast; from: string }) 
   const { bg, text } = getRatingColors(marginToRating(race.margin));
   return (
     <a
-      href={`/house/${race.id}?from=${encodeURIComponent(from)}`}
+      href={`/house/${race.name.toLowerCase()}`}
       className="flex items-center gap-2 sm:gap-3 px-0 py-2.5 transition-colors min-w-0"
     >
       {/* District name */}
@@ -252,11 +252,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-export default async function StateDetailPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ from?: string }> }) {
+export default async function StateDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const { from } = await searchParams;
-  // Build this page's "from" value for child links — chains the original from so BackButton works through 3+ levels
-  const stateFrom = `/states/${id}${from ? `?from=${encodeURIComponent(from)}` : ""}`;
   const state = statesData.find((s) => s.id === id);
   if (!state) notFound();
 
@@ -659,13 +656,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
             {projectedGovernorRace ? (
               <ElectionCard
                 race={projectedGovernorRace}
-                href={`/governor/${projectedGovernorRace.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                href={`/governor/${projectedGovernorRace.id.toLowerCase()}`}
                 label="Governor"
               />
             ) : governorNoEl ? (
               <IncumbentCard
                 entry={governorNoEl}
-                href={`/governor/${governorNoEl.abbr.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                href={`/governor/${governorNoEl.abbr.toLowerCase()}`}
                 label="Governor"
               />
             ) : null}
@@ -674,13 +671,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
             {projectedSenateSeat1Race ? (
               <ElectionCard
                 race={projectedSenateSeat1Race}
-                href={`/senate/${projectedSenateSeat1Race.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                href={`/senate/${projectedSenateSeat1Race.id.toLowerCase()}`}
                 label="Senate (Seat 1)"
               />
             ) : senateSeat1NoEl ? (
               <IncumbentCard
                 entry={senateSeat1NoEl}
-                href={`/senate/${senateSeat1NoEl.abbr.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                href={`/senate/${senateSeat1NoEl.abbr.toLowerCase()}`}
                 label="Senate (Seat 1)"
               />
             ) : null}
@@ -689,13 +686,13 @@ export default async function StateDetailPage({ params, searchParams }: { params
             {projectedSenateSeat2Race ? (
               <ElectionCard
                 race={projectedSenateSeat2Race}
-                href={`/senate/${projectedSenateSeat2Race.id.toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                href={`/senate/${projectedSenateSeat2Race.id.toLowerCase().replace(/-2$/, "2")}`}
                 label="Senate (Seat 2)"
               />
             ) : senateSeat2Holdover ? (
               <IncumbentCard
                 entry={senateSeat2Holdover}
-                href={`/senate/${senateSeat2Holdover.abbr.toLowerCase()}-2?from=${encodeURIComponent(stateFrom)}`}
+                href={`/senate/${senateSeat2Holdover.abbr.toLowerCase()}2`}
                 label="Senate (Seat 2)"
               />
             ) : null}
@@ -727,7 +724,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                 <div className="flex flex-col" style={{ borderTop: "1px solid var(--app-border)" }}>
                   {projectedHouseRaces.map((race) => (
                     <div key={race.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
-                      <HouseDistrictRow race={race} from={stateFrom} />
+                      <HouseDistrictRow race={race} />
                     </div>
                   ))}
                 </div>
@@ -837,7 +834,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                         <div className="flex min-w-0 items-center gap-3">
                           <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
                           <a
-                            href={`/senate/${(res.seat === 2 ? `${state.abbr}-2` : state.abbr).toLowerCase()}?from=${encodeURIComponent(stateFrom)}`}
+                            href={`/senate/${(res.seat === 2 ? `${state.abbr}2` : state.abbr).toLowerCase()}`}
                             className="truncate text-sm font-semibold transition-colors hover:underline"
                             style={{ color: "var(--app-text-muted)" }}
                           >
@@ -893,7 +890,7 @@ export default async function StateDetailPage({ params, searchParams }: { params
                             <div className="flex min-w-0 items-center gap-3">
                               <span className="text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
                               <a
-                                href={`/governor/${govPageId}?from=${encodeURIComponent(stateFrom)}`}
+                                href={`/governor/${govPageId}`}
                                 className="truncate text-sm font-semibold transition-colors hover:underline"
                                 style={{ color: "var(--app-text-muted)" }}
                               >

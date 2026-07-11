@@ -14,10 +14,6 @@ export type SearchEntry = {
   terms: string; // single lowercased string to match against
 };
 
-function slug(name: string) {
-  return name.toLowerCase().replace(/\s+/g, "-");
-}
-
 function buildIndex(): SearchEntry[] {
   const entries: SearchEntry[] = [];
 
@@ -36,7 +32,7 @@ function buildIndex(): SearchEntry[] {
     entries.push({
       label: name,
       sublabel: "State",
-      href: `/states/${slug(name)}`,
+      href: `/states/${abbr.toLowerCase()}`,
       terms: `${name} ${abbr} state`.toLowerCase(),
     });
   }
@@ -46,7 +42,7 @@ function buildIndex(): SearchEntry[] {
     entries.push({
       label: `${r.name} Senate`,
       sublabel: "Senate Race",
-      href: `/senate/${r.id.toLowerCase()}`,
+      href: `/senate/${r.id.toLowerCase().replace(/-2$/, "2")}`,
       terms: `${r.name} ${r.id} senate`.toLowerCase(),
     });
   }
@@ -66,7 +62,7 @@ function buildIndex(): SearchEntry[] {
     entries.push({
       label: `${e.state} Senate (Seat 2)`,
       sublabel: "Senate Holdover",
-      href: `/senate/${e.abbr.toLowerCase()}-2`,
+      href: `/senate/${e.abbr.toLowerCase()}2`,
       terms: `${e.state} ${e.abbr} senate seat 2`.toLowerCase(),
     });
   }
@@ -97,7 +93,7 @@ function buildIndex(): SearchEntry[] {
     entries.push({
       label: r.name,
       sublabel: "House District",
-      href: `/house/${r.id}`,
+      href: `/house/${r.name.toLowerCase()}`,
       terms: `${r.name} ${r.state} ${abbr} house district`.toLowerCase(),
     });
   }

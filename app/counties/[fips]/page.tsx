@@ -21,10 +21,6 @@ function getAreaLabel(abbr: string): string {
   return "County";
 }
 
-function stateSlug(name: string): string {
-  return name.toLowerCase().replace(/\s+/g, "-");
-}
-
 export async function generateStaticParams() {
   return Object.keys(countyPresidentialData).map((fips) => ({ fips }));
 }
@@ -78,7 +74,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
             {county.countyName} {areaLabel}
           </h1>
           <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>
-            <a href={`/states/${stateSlug(stateName)}?from=${encodeURIComponent(`/counties/${fips}?from=${encodeURIComponent("/?tab=counties")}`)}`} className="hover:underline">
+            <a href={`/states/${county.state.toLowerCase()}`} className="hover:underline">
               {stateName}
             </a>
           </p>

@@ -20,12 +20,12 @@ function inferCurrentHouseSeatFromPastResults(race: { pastResults?: { demIncumbe
 }
 
 export async function generateStaticParams() {
-  return houseData.map((race) => ({ id: race.id.toLowerCase() }));
+  return houseData.map((race) => ({ id: race.name.toLowerCase() }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const race = houseData.find((r) => r.id.toLowerCase() === id.toLowerCase());
+  const race = houseData.find((r) => r.name.toLowerCase() === id.toLowerCase());
   if (!race) return { title: "Race Not Found" };
   return {
     title: `${race.name} House Race — ${electionYear} Forecast`,
@@ -33,10 +33,9 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   };
 }
 
-export default async function HousePage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ from?: string }> }) {
+export default async function HousePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const { from: fromParam } = await searchParams;
-  const race = houseData.find((r) => r.id.toLowerCase() === id.toLowerCase());
+  const race = houseData.find((r) => r.name.toLowerCase() === id.toLowerCase());
   if (!race) notFound();
 
   // Parse district label for display (e.g. "CA-12" → state + district number)
@@ -135,7 +134,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
         {/* Title block */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
-            <a href={`/states/${race.state.toLowerCase().replace(/\s+/g, "-")}?from=${encodeURIComponent(`/house/${race.id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</a>
+            <a href={`/states/${stateAbbr.toLowerCase()}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</a>
             <span
               className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}
@@ -245,7 +244,7 @@ export default async function HousePage({ params, searchParams }: { params: Prom
                 tpl={districtTpl}
                 genericBallot={gb}
                 tplLabel="District TPL"
-                tplHref={`/?tab=district&modelDistrict=${encodeURIComponent(districtTplId)}`}
+                tplHref={`/model/district?modelDistrict=${encodeURIComponent(districtTplId)}`}
                 incumbentPts={incumbentPts}
                 fundraisingPts={null}
                 candidatePts={null}

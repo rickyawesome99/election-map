@@ -33,67 +33,67 @@ async function selectFirstInteractiveMapFeature(page: import("@playwright/test")
 }
 
 test("top-level tabs keep the URL and visible page in sync", async ({ page }) => {
-  await page.goto("/?tab=overview");
+  await page.goto("/overview");
 
   await page.getByRole("link", { name: "States" }).click();
-  await expect(page).toHaveURL(/\/\?tab=states$/);
+  await expect(page).toHaveURL(/\/states$/);
   await expect(page.getByRole("heading", { name: "States" })).toBeVisible();
 
   await page.getByRole("link", { name: "TPL" }).click();
-  await expect(page).toHaveURL(/\/\?tab=model$/);
+  await expect(page).toHaveURL(/\/model$/);
   await expect(page.getByRole("button", { name: "State TPL" })).toBeVisible();
 
   await page.getByRole("link", { name: "2026 Forecast" }).click();
-  await expect(page).toHaveURL(/\/\?tab=senate$/);
+  await expect(page).toHaveURL(/\/senate$/);
   await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
 });
 
 test("forecast tab returns to the last selected chamber after visiting analysis", async ({ page }) => {
-  await page.goto("/?tab=senate");
+  await page.goto("/senate");
   await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
 
   await page.getByRole("button", { name: "Governor" }).click();
-  await expect(page).toHaveURL(/\/\?tab=governor$/);
+  await expect(page).toHaveURL(/\/governor$/);
   await expect(page.getByRole("heading", { name: "Governor Races" })).toBeVisible();
 
   await page.getByRole("link", { name: "Analysis" }).click();
   await expect(page).toHaveURL(/\/analysis$/);
 
   await page.getByRole("link", { name: "2026 Forecast" }).click();
-  await expect(page).toHaveURL(/\/\?tab=governor$/);
+  await expect(page).toHaveURL(/\/governor$/);
   await expect(page.getByRole("heading", { name: "Governor Races" })).toBeVisible();
 });
 
 test("forecast map selection exposes a working more-info link", async ({ page }, testInfo) => {
-  await page.goto("/?tab=senate");
+  await page.goto("/senate");
   await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
   await selectFirstInteractiveMapFeature(page, testInfo.project.name);
 
   const moreInfo = page.getByRole("link", { name: "More Info" }).first();
   await expect(moreInfo).toBeVisible();
-  await expect(moreInfo).toHaveAttribute("href", /\/senate\/[a-z]{2}(?:-\d+)?\?from=/);
+  await expect(moreInfo).toHaveAttribute("href", /^\/senate\/[a-z]{2}\d?$/);
 });
 
 test("race table links render the destination page on the first click", async ({ page }) => {
-  await page.goto("/?tab=senate");
+  await page.goto("/senate");
   await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
 
   await page.getByRole("link", { name: "Alabama" }).first().click();
-  await expect(page).toHaveURL(/\/senate\/al\?from=/);
+  await expect(page).toHaveURL(/\/senate\/al$/);
   await expect(page.getByRole("link", { name: "Alabama" }).first()).toBeVisible();
   await expect(page.getByText("2026 Regular U.S. Senate Race")).toBeVisible();
 });
 
 test("forecast buttons remount a clickable map", async ({ page }, testInfo) => {
-  await page.goto("/?tab=senate");
+  await page.goto("/senate");
   await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
 
   await page.getByRole("button", { name: "House" }).click();
-  await expect(page).toHaveURL(/\/\?tab=house$/);
+  await expect(page).toHaveURL(/\/house$/);
   await expect(page.getByRole("heading", { name: "House Races" })).toBeVisible();
 
   await page.getByRole("button", { name: "Senate" }).click();
-  await expect(page).toHaveURL(/\/\?tab=senate$/);
+  await expect(page).toHaveURL(/\/senate$/);
   await expect(page.getByRole("heading", { name: "Senate Races" })).toBeVisible();
   await selectFirstInteractiveMapFeature(page, testInfo.project.name);
   await expect(page.getByRole("link", { name: "More Info" }).first()).toBeVisible();

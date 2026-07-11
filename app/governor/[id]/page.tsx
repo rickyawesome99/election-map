@@ -23,8 +23,6 @@ function enrichGovResults(pastResults: PastResult[] | undefined): DetailPastResu
   }).reverse();
 }
 
-function stateSlug(name: string) { return name.toLowerCase().replace(/\s+/g, "-"); }
-
 export async function generateStaticParams() {
   return [
     ...governorData.map((race) => ({ id: race.id.toLowerCase() })),
@@ -44,7 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return { title: "Race Not Found" };
 }
 
-function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string }) {
+function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
   const partyLabel = entry.party === "D" ? "Democrat" : entry.party === "R" ? "Republican" : "Independent";
   const termStarted = entry.termLength ? String(entry.nextElection - entry.termLength) : "TBD";
   const enrichedPastResults = enrichGovResults(entry.pastResults);
@@ -54,7 +52,7 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
       <main className="max-w-7xl mx-auto px-4 pt-0 pb-4 sm:px-6">
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
-            <a href={`/states/${stateSlug(entry.state)}?from=${encodeURIComponent(from)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</a>
+            <a href={`/states/${entry.abbr.toLowerCase()}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</a>
             <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
               No Election in {electionYear}
             </span>
@@ -121,12 +119,11 @@ function NoElectionPage({ entry, from }: { entry: NoElectionEntry; from: string 
   );
 }
 
-export default async function GovernorPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ from?: string }> }) {
+export default async function GovernorPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const { from: fromParam } = await searchParams;
 
   const noEl = governorNoElection.find((e) => e.abbr.toLowerCase() === id.toLowerCase());
-  if (noEl) return <NoElectionPage entry={noEl} from={`/governor/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`} />;
+  if (noEl) return <NoElectionPage entry={noEl} />;
 
   const race = governorData.find((r) => r.id.toLowerCase() === id.toLowerCase());
   if (!race) notFound();
@@ -163,7 +160,7 @@ export default async function GovernorPage({ params, searchParams }: { params: P
         {/* Title block */}
         <div className="mb-3 flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
-            <a href={`/states/${stateSlug(race.name)}?from=${encodeURIComponent(`/governor/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`)}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</a>
+            <a href={`/states/${race.id.toLowerCase()}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</a>
             <span
               className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
               style={{ background: bg, color: text }}
@@ -181,7 +178,6 @@ export default async function GovernorPage({ params, searchParams }: { params: P
                 stateAbbr={id.toUpperCase()}
                 stateName={race.name}
                 height={300}
-                fromPath={`/governor/${id}${fromParam ? `?from=${encodeURIComponent(fromParam)}` : ""}`}
               />
             </div>
             <div className="order-5 lg:order-2">
@@ -246,7 +242,7 @@ export default async function GovernorPage({ params, searchParams }: { params: P
                 tpl={stateTpl}
                 genericBallot={gb}
                 tplLabel="State TPL"
-                tplHref={`/?tab=state&modelState=${encodeURIComponent(id.toUpperCase())}`}
+                tplHref={`/model/state?modelState=${encodeURIComponent(id.toUpperCase())}`}
                 incumbentPts={incumbentPts}
                 fundraisingPts={null}
                 candidatePts={null}

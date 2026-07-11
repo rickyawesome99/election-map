@@ -112,7 +112,7 @@ export default function Sidebar({ selected, raceType, onClose, theme: t }: Props
 
           {/* More Info */}
           <a
-            href={`/${raceType}/${selected.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
+            href={`/${raceType}/${(raceType === "house" ? selected.name : selected.id).toLowerCase().replace(/-2$/, "2")}`}
             className="mt-1.5 flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
             style={{ background: cardSurface, color: t.textMuted }}
           >

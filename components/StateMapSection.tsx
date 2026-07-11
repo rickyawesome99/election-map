@@ -126,7 +126,7 @@ export default function StateMapSection({
             </div>
 
             <a
-              href={`/house/${selected.id}`}
+              href={`/house/${selected.name.toLowerCase()}`}
               className="mt-3 flex items-center justify-center gap-1 rounded-md py-2 text-xs font-semibold transition-colors"
               style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}
             >

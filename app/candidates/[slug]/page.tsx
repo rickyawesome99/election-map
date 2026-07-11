@@ -4,6 +4,7 @@ import { getRatingColors } from "@/lib/colorScale";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import ScrollToTop from "@/components/ScrollToTop";
+import BackLink from "@/components/BackLink";
 
 export const dynamicParams = true;
 
@@ -40,20 +41,12 @@ function raceTypeLabel(raceType: "house" | "senate" | "governor") {
   return "Governor";
 }
 
-function safeFromPath(from: string | undefined): string | null {
-  if (!from || !from.startsWith("/") || from.startsWith("//")) return null;
-  return from;
-}
-
 export default async function CandidatePage({
   params,
-  searchParams,
 }: {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ from?: string }>;
 }) {
   const { slug } = await params;
-  const { from } = await searchParams;
   const candidate = getCandidatePage(slug);
   if (!candidate) notFound();
 
@@ -61,10 +54,7 @@ export default async function CandidatePage({
   const accent = partyAccent(candidate.party);
   const subtle = partySubtle(candidate.party);
 
-  const backHref =
-    safeFromPath(from) ??
-    candidate.currentRace?.racePath ??
-    `/?tab=${candidate.tab}`;
+  const backHref = candidate.currentRace?.racePath ?? `/${candidate.tab}`;
   const raceTypeSuffix = candidate.tab === "house" ? " House" : candidate.tab === "senate" ? " Senate" : " Governor";
   const backLabel =
     candidate.currentRace
@@ -82,16 +72,7 @@ export default async function CandidatePage({
 
         {/* Back link */}
         <div className="mb-4">
-          <a
-            href={backHref}
-            className="inline-flex items-center gap-1.5 text-sm hover:underline"
-            style={{ color: "var(--app-text-muted)" }}
-          >
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-            {backLabel}
-          </a>
+          <BackLink fallbackHref={backHref} label={backLabel} />
         </div>
 
         {/* Header card */}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useMemo } from "react";
+import { useRouter } from "next/navigation";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
 import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry, electionYear, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
@@ -181,32 +182,17 @@ function SeatScorecard({
   );
 }
 
-function topLevelTabFromQuery(tab: string | null): "forecast" | "overview" | "states" | "counties" | "model" | "district-finder" {
-  if (tab === "forecast") return "forecast";
-  if (tab === "overview") return "overview";
-  if (tab === "states" || tab === "counties" || tab === "model" || tab === "district-finder") return tab;
-  if (tab === "state" || tab === "district" || tab === "table" || tab === "districtTable") return "model";
-  if (tab === "house" || tab === "senate" || tab === "governor" || tab === "map") return "forecast";
-  return "overview";
-}
-
-function raceTypeFromQuery(tab: string | null): RaceType {
-  if (tab === "house" || tab === "senate" || tab === "governor") return tab;
-  return "senate";
-}
-
 function persistRaceType(type: RaceType) {
   localStorage.setItem("raceType", type);
   document.cookie = `raceType=${type}; path=/; max-age=31536000; SameSite=Lax`;
 }
 
-export default function ForecastMap({ initialTab = null }: { initialTab?: string | null }) {
-  const [activeTab, setActiveTab] = useState<"forecast" | "overview" | "states" | "counties" | "model" | "district-finder">(() => {
-    return topLevelTabFromQuery(initialTab);
-  });
-  const [raceType, setRaceType] = useState<RaceType>(() => {
-    return raceTypeFromQuery(initialTab);
-  });
+type TopLevelTab = "forecast" | "overview" | "states" | "counties" | "model" | "district-finder";
+
+type ModelSubTab = "state" | "district" | "table" | "districtTable";
+
+export default function ForecastMap({ activeTab, raceType = "senate", modelSubTab }: { activeTab: TopLevelTab; raceType?: RaceType; modelSubTab?: ModelSubTab }) {
+  const router = useRouter();
   const [selected, setSelected] = useState<RaceForecast | null>(null);
   const [selectedNoElection, setSelectedNoElection] = useState<NoElectionEntry | null>(null);
   const [selectedStateRow, setSelectedStateRow] = useState<StateRow | null>(null);
@@ -219,60 +205,14 @@ export default function ForecastMap({ initialTab = null }: { initialTab?: string
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
 
-  function selectRaceType(type: RaceType) {
-    setRaceType(type);
-    persistRaceType(type);
-    setSelected(null);
-    setSelectedNoElection(null);
-    setMapKey(k => k + 1);
-    window.dispatchEvent(new CustomEvent("forecast-race-type-change", { detail: type }));
-    if (window.location.pathname === "/") {
-      window.history.pushState({}, "", `/?tab=${type}`);
-    }
-  }
-
   useEffect(() => {
-    function setTab(type: string | null) {
-      if (type === "house" || type === "senate" || type === "governor") {
-        setRaceType(type);
-        persistRaceType(type);
-        type = "forecast";
-      }
-      if (type === "forecast") {
-        const savedRaceType = localStorage.getItem("raceType");
-        if (savedRaceType === "house" || savedRaceType === "senate" || savedRaceType === "governor") {
-          setRaceType(savedRaceType);
-        }
-      }
-      if (type === "map") type = "forecast";
-      if (type === "state" || type === "district" || type === "table" || type === "districtTable") {
-        type = "model";
-      }
-      if (type !== "forecast" && type !== "overview" && type !== "states" && type !== "counties" && type !== "model" && type !== "district-finder") return;
+    if (activeTab === "forecast") persistRaceType(raceType);
+  }, [activeTab, raceType]);
 
-      setActiveTab(type);
-      setSelected(null);
-      setSelectedNoElection(null);
-      setSelectedStateRow(null);
-      localStorage.setItem("activeTab", type);
-    }
-
-    function handleTabChange(event: Event) {
-      setTab((event as CustomEvent<string>).detail);
-    }
-
-    function handleHistoryChange() {
-      setTab(new URLSearchParams(window.location.search).get("tab"));
-    }
-
-    handleHistoryChange();
-    window.addEventListener("forecast-tab-change", handleTabChange);
-    window.addEventListener("popstate", handleHistoryChange);
-    return () => {
-      window.removeEventListener("forecast-tab-change", handleTabChange);
-      window.removeEventListener("popstate", handleHistoryChange);
-    };
-  }, []);
+  function selectRaceType(type: RaceType) {
+    persistRaceType(type);
+    router.push(`/${type}`);
+  }
 
   const t = darkMode ? DARK_THEME : LIGHT_THEME;
   const isHouse = activeTab === "forecast" && raceType === "house";
@@ -704,7 +644,7 @@ export default function ForecastMap({ initialTab = null }: { initialTab?: string
                   </div>
                   {/* More info link */}
                   <a
-                    href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
+                    href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}
                     className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
                     style={{ background: t.tabBg, color: t.textMuted }}
                   >
@@ -783,7 +723,7 @@ export default function ForecastMap({ initialTab = null }: { initialTab?: string
               {/* More Info */}
               <div className="px-3 pb-3">
                 <a
-                  href={`/${raceType}/${selected.id.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
+                  href={`/${raceType}/${(raceType === "house" ? selected.name : selected.id).toLowerCase().replace(/-2$/, "2")}`}
                   className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
                   style={{ background: t.tabBg, color: t.textMuted }}
                 >
@@ -838,7 +778,7 @@ export default function ForecastMap({ initialTab = null }: { initialTab?: string
               {/* More Info */}
               <div className="px-3 pb-3">
                 <a
-                  href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}?from=${encodeURIComponent(`/?tab=${raceType}`)}`}
+                  href={`/${raceType}/${selectedNoElection.abbr.toLowerCase()}`}
                   className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
                   style={{ background: t.tabBg, color: t.textMuted }}
                 >
@@ -962,7 +902,7 @@ export default function ForecastMap({ initialTab = null }: { initialTab?: string
               {/* More Info */}
               <div className="px-3 pb-3">
                 <a
-                  href={`/states/${selectedStateRow.id}?from=${encodeURIComponent("/?tab=states")}`}
+                  href={`/states/${selectedStateRow.id}`}
                   className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
                   style={{ background: t.tabBg, color: t.textMuted }}
                 >
@@ -1060,10 +1000,10 @@ export default function ForecastMap({ initialTab = null }: { initialTab?: string
                 {raceType === "governor" && <RaceTable races={projectedGovernorData} basePath="/governor" nameLabel="State" />}
               </div>
             )}
-            {activeTab === "model" && <TplModelPage />}
+            {activeTab === "model" && <TplModelPage initialSubTab={modelSubTab} />}
             {activeTab === "district-finder" && <DistrictFinder />}
           </>
-        ), [activeTab, raceType, t])}
+        ), [activeTab, raceType, modelSubTab, t])}
 
       </div>
     </div>

@@ -104,7 +104,8 @@ function collectFromRaces(races: RaceForecast[], racePathPrefix: string): RawEnt
   const entries: RawEntry[] = [];
 
   for (const race of races) {
-    const racePath = `${racePathPrefix}/${race.id.toLowerCase()}`;
+    const raceSlug = racePathPrefix === "/house" ? race.name.toLowerCase() : race.id.toLowerCase().replace(/-2$/, "2");
+    const racePath = `${racePathPrefix}/${raceSlug}`;
     const demPctProjected = (100 + race.margin) / 2;
     const repPctProjected = (100 - race.margin) / 2;
 
@@ -270,7 +271,7 @@ function buildIndex(): Map<string, CandidatePage> {
     ...collectFromRaces(houseData, "/house"),
     ...collectFromRaces(governorData, "/governor"),
     ...collectFromNoElection(senateNoElection, "senate", "/senate"),
-    ...collectFromNoElection(senateHoldovers, "senate", "/senate", () => "-2"),
+    ...collectFromNoElection(senateHoldovers, "senate", "/senate", () => "2"),
     ...collectFromNoElection(governorNoElection, "governor", "/governor"),
   ];
 
@@ -302,7 +303,7 @@ function buildIndex(): Map<string, CandidatePage> {
   // so their name at least resolves to a (sparse) page.
   const allNoElectionIncumbents: { name: string; party: "D" | "R" | "I"; raceType: "senate" | "governor"; raceId: string; raceName: string; racePath: string }[] = [
     ...senateNoElection.map(e => ({ name: e.incumbent, party: e.party, raceType: "senate" as const, raceId: e.abbr, raceName: e.state, racePath: `/senate/${e.abbr.toLowerCase()}` })),
-    ...senateHoldovers.map(e => ({ name: e.incumbent, party: e.party, raceType: "senate" as const, raceId: e.abbr + "-2", raceName: e.state, racePath: `/senate/${e.abbr.toLowerCase()}-2` })),
+    ...senateHoldovers.map(e => ({ name: e.incumbent, party: e.party, raceType: "senate" as const, raceId: e.abbr + "-2", raceName: e.state, racePath: `/senate/${e.abbr.toLowerCase()}2` })),
     ...governorNoElection.map(e => ({ name: e.incumbent, party: e.party, raceType: "governor" as const, raceId: e.abbr, raceName: e.state, racePath: `/governor/${e.abbr.toLowerCase()}` })),
   ];
   for (const inc of allNoElectionIncumbents) {

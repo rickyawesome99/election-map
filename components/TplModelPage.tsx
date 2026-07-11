@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useRef, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
@@ -601,7 +602,8 @@ function TplDistrictMap({
 
 // ── Component ────────────────────────────────────────────────────────────────
 
-export default function TplModelPage() {
+export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state" | "district" | "table" | "districtTable" }) {
+  const router = useRouter();
   const [selectedAbbr, setSelectedAbbr] = useState<string>(() => {
     if (typeof window === "undefined") return statesData[0].abbr;
     const stateFromUrl = new URLSearchParams(window.location.search).get("modelState")?.toUpperCase();
@@ -616,11 +618,7 @@ export default function TplModelPage() {
   const [allStatesSortDir, setAllStatesSortDir] = useState<"asc" | "desc">("asc");
 
   // Sub-tab state
-  const [activeSubTab, setActiveSubTab] = useState<"state" | "district" | "table" | "districtTable">(() => {
-    if (typeof window === "undefined") return "state";
-    const tab = new URLSearchParams(window.location.search).get("tab");
-    return tab === "state" || tab === "district" || tab === "table" || tab === "districtTable" ? tab : "state";
-  });
+  const [activeSubTab, setActiveSubTab] = useState<"state" | "district" | "table" | "districtTable">(initialSubTab ?? "state");
   const [returnSubTab, setReturnSubTab] = useState<"table" | "districtTable" | null>(null);
 
   // District TPL state
@@ -787,7 +785,7 @@ export default function TplModelPage() {
   }
 
   function handleSubTabClick(tab: "state" | "district" | "table" | "districtTable") {
-    window.history.pushState({}, "", `/?tab=${tab}`);
+    router.push(`/model/${tab}`);
     setReturnSubTab(null);
     setActiveSubTab(tab);
   }
@@ -815,20 +813,8 @@ export default function TplModelPage() {
     if (returnSubTab) window.history.back();
   }
 
-  function stateTplFromParam() {
-    return encodeURIComponent(`/?tab=state&modelState=${selectedAbbr}`);
-  }
-
-  function districtTplFromParam() {
-    return encodeURIComponent(`/?tab=district&modelDistrict=${selectedDistrictId}`);
-  }
-
-  function withTplReturn(href: string, from: string) {
-    return `${href}?from=${from}`;
-  }
-
   const selectedDistrictHouseHref = selectedDistrictData
-    ? houseData.find((race) => race.name === selectedDistrictData.code)?.id.toLowerCase()
+    ? houseData.find((race) => race.name === selectedDistrictData.code)?.name.toLowerCase()
     : null;
 
   return (
@@ -1110,7 +1096,7 @@ export default function TplModelPage() {
                         </span>
                         {r.detailHref ? (
                           <a
-                            href={withTplReturn(r.detailHref, stateTplFromParam())}
+                            href={r.detailHref}
                             className="font-semibold hover:underline"
                             style={{ color: "var(--app-text-primary)" }}
                           >
@@ -1537,7 +1523,7 @@ export default function TplModelPage() {
                         <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
                           {selectedDistrictHouseHref ? (
                             <a
-                              href={withTplReturn(`/house/${selectedDistrictHouseHref}`, districtTplFromParam())}
+                              href={`/house/${selectedDistrictHouseHref}`}
                               className="font-semibold hover:underline"
                               style={{ color: "var(--app-text-primary)" }}
                             >

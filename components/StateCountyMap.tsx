@@ -64,14 +64,11 @@ export default function StateCountyMap({
   stateName,
   height = 360,
   highlightFips,
-  fromPath,
 }: {
   stateAbbr: string;
   stateName: string;
   height?: number;
   highlightFips?: string;
-  /** Current page's path (+ its own ?from chain, if any) — set so the county page's back arrow returns here. */
-  fromPath?: string;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelected] = useState<County | null>(null);
@@ -252,15 +249,13 @@ export default function StateCountyMap({
               <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
                 Election data coming soon
               </div>
-              {fromPath && (
-                <a
-                  href={`/counties/${selected.fips}?from=${encodeURIComponent(fromPath)}`}
-                  className="mt-2 inline-block text-xs font-semibold hover:underline"
-                  style={{ color: "var(--app-text-primary)" }}
-                >
-                  Go to county page →
-                </a>
-              )}
+              <a
+                href={`/counties/${selected.fips}`}
+                className="mt-2 inline-block text-xs font-semibold hover:underline"
+                style={{ color: "var(--app-text-primary)" }}
+              >
+                Go to county page →
+              </a>
             </div>
             <button
               onClick={() => setSelected(null)}

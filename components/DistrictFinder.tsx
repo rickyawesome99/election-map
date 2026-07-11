@@ -8,6 +8,7 @@ import type { FeatureCollection } from "geojson";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { DARK_THEME, LIGHT_THEME } from "@/components/ForecastMap";
 import { statesData } from "@/data/statesData";
+import { houseData } from "@/data/forecastData";
 
 const DistrictFinderMap = dynamic(() => import("@/components/DistrictFinderMap"), {
   ssr: false,
@@ -472,7 +473,9 @@ export default function DistrictFinder() {
       )}
 
       {/* District info box — below the map */}
-      {result && (
+      {result && (() => {
+        const cdRace = result.cdGEOID ? houseData.find(r => r.id === result.cdGEOID) : undefined;
+        return (
         <div className="mt-2 shrink-0 rounded-xl px-3 pb-3 pt-2.5" style={{ background: t.panel, border: `1px solid ${t.border}` }}>
           <div
             className="mb-2 truncate text-[10px] font-medium uppercase tracking-wider"
@@ -490,14 +493,15 @@ export default function DistrictFinder() {
             <InfoBox
               label="Congressional District"
               value={result.cdName ?? "—"}
-              href={result.cdGEOID ? `/house/${result.cdGEOID}` : undefined}
+              href={cdRace ? `/house/${cdRace.name.toLowerCase()}` : undefined}
               t={t}
             />
             <InfoBox label="State House District" value={result.sldlName ?? "—"} t={t} />
             <InfoBox label="State Senate District" value={result.slduName ?? "—"} t={t} />
           </div>
         </div>
-      )}
+        );
+      })()}
     </div>
   );
 }
