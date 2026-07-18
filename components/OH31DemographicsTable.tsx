@@ -1,50 +1,36 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import type { DemoProps } from "@/lib/oh31Demographics";
 
-type DemoPrecinct = {
+type DemoPrecinct = DemoProps & {
   PRECNAME: string;
   total_pop: number;
-  age_under18: number;
-  age_18_34: number;
-  age_35_64: number;
-  age_65plus: number;
-  pct_white: number | null;
-  pct_black: number | null;
-  pct_hispanic: number | null;
-  pct_asian: number | null;
-  pct_native: number | null;
-  pct_multi: number | null;
-  med_hh_income: number | null;
-  pct_bachelors_plus: number | null;
-  pct_no_hs_diploma: number | null;
-  pct_some_college: number | null;
 };
 
 type SortKey =
   | "precinct" | "total_pop"
   | "pct_white" | "pct_black" | "pct_hispanic" | "pct_asian"
-  | "pct_65plus" | "pct_under18" | "pct_18_34" | "pct_35_64"
-  | "med_hh_income" | "pct_bachelors_plus" | "pct_no_hs_diploma" | "pct_some_college";
-
-type SortDir = "asc" | "desc";
+  | "pct_under18" | "pct_18_34" | "pct_35_64" | "pct_65plus"
+  | "pct_no_hs_diploma" | "pct_some_college" | "pct_bachelors_plus"
+  | "med_hh_income";
 
 function getValue(p: DemoPrecinct, key: SortKey): number | string {
   switch (key) {
-    case "precinct":          return p.PRECNAME;
-    case "total_pop":         return p.total_pop ?? 0;
-    case "pct_white":         return p.pct_white ?? -1;
-    case "pct_black":         return p.pct_black ?? -1;
-    case "pct_hispanic":      return p.pct_hispanic ?? -1;
-    case "pct_asian":         return p.pct_asian ?? -1;
-    case "pct_65plus":         return p.total_pop > 0 ? (p.age_65plus  / p.total_pop) * 100 : -1;
-    case "pct_under18":        return p.total_pop > 0 ? (p.age_under18 / p.total_pop) * 100 : -1;
-    case "pct_18_34":          return p.total_pop > 0 ? (p.age_18_34   / p.total_pop) * 100 : -1;
-    case "pct_35_64":          return p.total_pop > 0 ? (p.age_35_64   / p.total_pop) * 100 : -1;
+    case "precinct":           return p.PRECNAME;
+    case "total_pop":          return p.total_pop ?? 0;
+    case "pct_white":          return p.pct_white ?? -1;
+    case "pct_black":          return p.pct_black ?? -1;
+    case "pct_hispanic":       return p.pct_hispanic ?? -1;
+    case "pct_asian":          return p.pct_asian ?? -1;
+    case "pct_under18":        return p.total_pop > 0 ? ((p.age_under18 ?? 0) / p.total_pop) * 100 : -1;
+    case "pct_18_34":          return p.total_pop > 0 ? ((p.age_18_34   ?? 0) / p.total_pop) * 100 : -1;
+    case "pct_35_64":          return p.total_pop > 0 ? ((p.age_35_64   ?? 0) / p.total_pop) * 100 : -1;
+    case "pct_65plus":         return p.total_pop > 0 ? ((p.age_65plus  ?? 0) / p.total_pop) * 100 : -1;
+    case "pct_no_hs_diploma":  return p.pct_no_hs_diploma  ?? -1;
+    case "pct_some_college":   return p.pct_some_college   ?? -1;
+    case "pct_bachelors_plus": return p.pct_bachelors_plus ?? -1;
     case "med_hh_income":      return p.med_hh_income      ?? -1;
-    case "pct_bachelors_plus": return p.pct_bachelors_plus  ?? -1;
-    case "pct_no_hs_diploma":  return p.pct_no_hs_diploma   ?? -1;
-    case "pct_some_college":   return p.pct_some_college    ?? -1;
   }
 }
 
@@ -53,7 +39,22 @@ function SortIcon({ active, dir }: { active: boolean; dir: SortDir }) {
   return <span className="inline-flex ml-1" style={{ fontSize: 9 }}>{dir === "asc" ? "▲" : "▼"}</span>;
 }
 
+type SortDir = "asc" | "desc";
+
 const thBase = "px-3 py-2 font-medium whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity text-center align-middle";
+const MAX_VISIBLE_DEMOGRAPHIC_ROWS = 12;
+const DEMOGRAPHICS_TABLE_HEADER_ROW_HEIGHT = 37;
+const DEMOGRAPHICS_TABLE_HEADER_HEIGHT = DEMOGRAPHICS_TABLE_HEADER_ROW_HEIGHT * 2;
+const DEMOGRAPHICS_TABLE_ROW_HEIGHT = 37;
+
+const stickyHeaderTopStyle: React.CSSProperties = {
+  background: "var(--app-panel)",
+};
+
+const stickyHeaderSecondRowStyle: React.CSSProperties = {
+  background: "var(--app-panel)",
+};
+
 const stickyTopLeftStyle: React.CSSProperties = {
   position: "sticky", left: 0, zIndex: 4,
   background: "var(--app-panel)", boxShadow: "1px 0 0 var(--app-border)",
@@ -67,7 +68,7 @@ function pctCell(value: number | null): string {
   return value != null ? `${value.toFixed(1)}%` : "—";
 }
 
-function incomeCell(value: number | null): string {
+function incomeCell(value: number | null | undefined): string {
   return value != null ? `$${Math.round(value / 1000)}k` : "—";
 }
 
@@ -92,8 +93,6 @@ export default function OH31DemographicsTable() {
           pct_black: f.properties.pct_black != null ? Number(f.properties.pct_black) : null,
           pct_hispanic: f.properties.pct_hispanic != null ? Number(f.properties.pct_hispanic) : null,
           pct_asian: f.properties.pct_asian != null ? Number(f.properties.pct_asian) : null,
-          pct_native: f.properties.pct_native != null ? Number(f.properties.pct_native) : null,
-          pct_multi: f.properties.pct_multi != null ? Number(f.properties.pct_multi) : null,
           med_hh_income: f.properties.med_hh_income != null ? Number(f.properties.med_hh_income) : null,
           pct_bachelors_plus: f.properties.pct_bachelors_plus != null ? Number(f.properties.pct_bachelors_plus) : null,
           pct_no_hs_diploma: f.properties.pct_no_hs_diploma != null ? Number(f.properties.pct_no_hs_diploma) : null,
@@ -119,71 +118,112 @@ export default function OH31DemographicsTable() {
     const cmp = typeof av === "string" ? av.localeCompare(bv as string) : (av as number) - (bv as number);
     return sortDir === "asc" ? cmp : -cmp;
   });
+  const shouldScrollRows = sorted.length > MAX_VISIBLE_DEMOGRAPHIC_ROWS;
 
   const th = (key: SortKey, label: string, style?: React.CSSProperties) => (
-    <th key={key} className={thBase} style={style} onClick={() => handleSort(key)}>
+    <th key={key} className={thBase} style={{ ...stickyHeaderSecondRowStyle, ...style }} onClick={() => handleSort(key)}>
       {label}<SortIcon active={sortKey === key} dir={sortDir} />
     </th>
   );
 
   return (
     <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-      <div className="overflow-x-auto">
-        <table className="text-sm" style={{ borderCollapse: "collapse", minWidth: "100%" }}>
-          <thead>
+      <style>{`
+        .oh31-scroll-table {
+          border-collapse: separate;
+          border-spacing: 0;
+        }
+        .oh31-scroll-table th,
+        .oh31-scroll-table td {
+          border-bottom: 1px solid var(--app-border);
+        }
+        .oh31-scroll-table tbody tr:last-child td {
+          border-bottom: 0;
+        }
+      `}</style>
+      <div
+        className="overflow-auto"
+        style={{
+          maxHeight: shouldScrollRows
+            ? DEMOGRAPHICS_TABLE_HEADER_HEIGHT + DEMOGRAPHICS_TABLE_ROW_HEIGHT * MAX_VISIBLE_DEMOGRAPHIC_ROWS
+            : undefined,
+        }}
+      >
+        <table className="oh31-scroll-table text-sm" style={{ minWidth: "100%" }}>
+          <thead
+            style={{
+              position: "sticky",
+              top: 0,
+              zIndex: 20,
+              background: "var(--app-panel)",
+              boxShadow: "0 1px 0 var(--app-border)",
+            }}
+          >
             {/* Group header row */}
             <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
               <th
                 className="px-3 py-2 text-center font-semibold whitespace-nowrap"
-                style={{ color: "var(--app-text-primary)", ...stickyTopLeftStyle }}
+                style={{ color: "var(--app-text-primary)", ...stickyTopLeftStyle, ...stickyHeaderTopStyle, zIndex: 7 }}
               />
               <th
                 className="px-3 py-2 text-center font-semibold whitespace-nowrap"
-                style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)" }}
+                style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)", ...stickyHeaderTopStyle }}
               />
               <th
                 colSpan={4}
                 className="px-3 py-2 text-center font-semibold whitespace-nowrap"
-                style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)" }}
+                style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)", ...stickyHeaderTopStyle }}
               >
                 Race / Ethnicity
               </th>
               <th
                 colSpan={4}
                 className="px-3 py-2 text-center font-semibold whitespace-nowrap"
-                style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)" }}
+                style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)", ...stickyHeaderTopStyle }}
               >
                 Age
               </th>
               <th
-                colSpan={4}
+                colSpan={3}
                 className="px-3 py-2 text-center font-semibold whitespace-nowrap"
-                style={{ color: "var(--app-text-primary)" }}
+                style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)", ...stickyHeaderTopStyle }}
               >
                 Education
+              </th>
+              <th
+                className="px-3 py-2 text-center font-semibold whitespace-nowrap"
+                style={{ color: "var(--app-text-primary)", ...stickyHeaderTopStyle }}
+              >
+                Income
               </th>
             </tr>
             {/* Sub-header row */}
             <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
               <th
                 className="px-3 py-2 text-center align-middle font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
-                style={{ color: "var(--app-text-primary)", ...stickyTopLeftStyle }}
+                style={{ color: "var(--app-text-primary)", ...stickyTopLeftStyle, ...stickyHeaderSecondRowStyle, zIndex: 7 }}
                 onClick={() => handleSort("precinct")}
               >
                 Precinct<SortIcon active={sortKey === "precinct"} dir={sortDir} />
               </th>
-              {th("total_pop",    "Pop.",       { color: "var(--app-text-muted)", borderRight: "1px solid var(--app-border)" })}
+              <th
+                className={thBase}
+                style={{ color: "var(--app-text-muted)", borderRight: "1px solid var(--app-border)", ...stickyHeaderSecondRowStyle }}
+                onClick={() => handleSort("total_pop")}
+              >
+                Pop.<SortIcon active={sortKey === "total_pop"} dir={sortDir} />
+              </th>
               {th("pct_white",    "White",     { color: "var(--app-text-muted)", borderLeft: "1px solid var(--app-border)" })}
               {th("pct_black",    "Black",     { color: "var(--app-text-muted)" })}
               {th("pct_hispanic", "Hispanic",  { color: "var(--app-text-muted)" })}
               {th("pct_asian",    "Asian",     { color: "var(--app-text-muted)", borderRight: "1px solid var(--app-border)" })}
-              {th("pct_under18",  "< 18",      { color: "var(--app-text-muted)", borderLeft: "1px solid var(--app-border)" })}
+              {th("pct_under18",  "< 18",      { color: "var(--app-text-muted)" })}
               {th("pct_18_34",    "18–34",     { color: "var(--app-text-muted)" })}
               {th("pct_35_64",    "35–64",     { color: "var(--app-text-muted)" })}
               {th("pct_65plus",   "65+",       { color: "var(--app-text-muted)", borderRight: "1px solid var(--app-border)" })}
-              {th("pct_no_hs_diploma",  "No HS",      { color: "var(--app-text-muted)", borderLeft: "1px solid var(--app-border)" })}
+              {th("pct_no_hs_diploma",  "No HS",       { color: "var(--app-text-muted)" })}
               {th("pct_some_college",   "Some College",{ color: "var(--app-text-muted)" })}
-              {th("pct_bachelors_plus", "College+",    { color: "var(--app-text-muted)" })}
+              {th("pct_bachelors_plus", "College+",    { color: "var(--app-text-muted)", borderRight: "1px solid var(--app-border)" })}
               {th("med_hh_income",      "Med. Income", { color: "var(--app-text-muted)" })}
             </tr>
           </thead>
@@ -195,10 +235,10 @@ export default function OH31DemographicsTable() {
                 </td>
               </tr>
             ) : sorted.map((p, i) => {
-              const pct65  = p.total_pop > 0 ? (p.age_65plus  / p.total_pop) * 100 : null;
-              const pctU18 = p.total_pop > 0 ? (p.age_under18 / p.total_pop) * 100 : null;
-              const pct1834 = p.total_pop > 0 ? (p.age_18_34  / p.total_pop) * 100 : null;
-              const pct3564 = p.total_pop > 0 ? (p.age_35_64  / p.total_pop) * 100 : null;
+              const pct65   = p.total_pop > 0 ? ((p.age_65plus  ?? 0) / p.total_pop) * 100 : null;
+              const pctU18  = p.total_pop > 0 ? ((p.age_under18 ?? 0) / p.total_pop) * 100 : null;
+              const pct1834 = p.total_pop > 0 ? ((p.age_18_34   ?? 0) / p.total_pop) * 100 : null;
+              const pct3564 = p.total_pop > 0 ? ((p.age_35_64   ?? 0) / p.total_pop) * 100 : null;
               const rowBg = i % 2 === 0 ? "var(--app-bg)" : "var(--app-panel)";
               return (
                 <tr key={p.PRECNAME} style={{ background: rowBg, borderBottom: "1px solid var(--app-border)" }}>
@@ -212,18 +252,18 @@ export default function OH31DemographicsTable() {
                     {p.total_pop.toLocaleString()}
                   </td>
                   <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)", borderLeft: "1px solid var(--app-border)" }}>
-                    {pctCell(p.pct_white)}
+                    {pctCell(p.pct_white ?? null)}
                   </td>
                   <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                    {pctCell(p.pct_black)}
+                    {pctCell(p.pct_black ?? null)}
                   </td>
                   <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                    {pctCell(p.pct_hispanic)}
+                    {pctCell(p.pct_hispanic ?? null)}
                   </td>
                   <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)" }}>
-                    {pctCell(p.pct_asian)}
+                    {pctCell(p.pct_asian ?? null)}
                   </td>
-                  <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)", borderLeft: "1px solid var(--app-border)" }}>
+                  <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)" }}>
                     {pctCell(pctU18)}
                   </td>
                   <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)" }}>
@@ -235,14 +275,14 @@ export default function OH31DemographicsTable() {
                   <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)" }}>
                     {pctCell(pct65)}
                   </td>
-                  <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)", borderLeft: "1px solid var(--app-border)" }}>
-                    {pctCell(p.pct_no_hs_diploma)}
+                  <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+                    {pctCell(p.pct_no_hs_diploma ?? null)}
                   </td>
                   <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                    {pctCell(p.pct_some_college)}
+                    {pctCell(p.pct_some_college ?? null)}
                   </td>
-                  <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                    {pctCell(p.pct_bachelors_plus)}
+                  <td className="px-3 py-2 text-center tabular-nums" style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)" }}>
+                    {pctCell(p.pct_bachelors_plus ?? null)}
                   </td>
                   <td className="px-3 py-2 text-center tabular-nums font-medium" style={{ color: "var(--app-text-primary)" }}>
                     {incomeCell(p.med_hh_income)}

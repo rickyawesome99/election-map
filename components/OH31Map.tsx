@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useCallback, useEffect, useMemo } from "react";
+import { useState, useRef, useCallback, useEffect, useMemo, type ReactNode } from "react";
 import dynamic from "next/dynamic";
 import OH31MapSimple from "@/components/OH31MapSimple";
 import OH31MapSimple2022 from "@/components/OH31MapSimple2022";
@@ -119,6 +119,64 @@ const LEGEND = [
   { color: "#be1c29", label: "R 15+" },
 ];
 
+function SegmentedButton({
+  active,
+  children,
+  onClick,
+}: {
+  active: boolean;
+  children: ReactNode;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      aria-pressed={active}
+      className="min-h-7 whitespace-nowrap rounded-md px-1.5 text-xs font-semibold transition-colors"
+      style={
+        active
+          ? {
+              background: "var(--app-tab-bg)",
+              color: "var(--app-text-primary)",
+              border: "1px solid var(--app-border)",
+              boxShadow: "0 1px 2px rgba(0,0,0,0.06)",
+            }
+          : {
+              color: "var(--app-text-muted)",
+              border: "1px solid transparent",
+            }
+      }
+    >
+      {children}
+    </button>
+  );
+}
+
+function ControlGroup({
+  label,
+  children,
+}: {
+  label: string;
+  children: ReactNode;
+}) {
+  return (
+    <div className="min-w-0">
+      <div
+        className="mb-1 text-[10px] font-semibold uppercase tracking-[0.08em]"
+        style={{ color: "var(--app-text-very-muted)" }}
+      >
+        {label}
+      </div>
+      <div
+        className="flex w-full flex-wrap items-center gap-0.5 rounded-lg p-0.5 lg:flex-nowrap"
+        style={{ border: "1px solid var(--app-border)", background: "var(--app-bg)" }}
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
+
 function getDataForYear(year: MapYear) {
   switch (year) {
     case "2024": return oh31PrecinctData;
@@ -234,264 +292,214 @@ export default function OH31Map({
         ? "flex items-center gap-1"
         : "mb-0.5 flex items-center gap-1.5";
 
-  return (
-    <div style={{ color: t.textPrimary }}>
-      {/* Year selector */}
-      <div className="flex items-center gap-3 mb-2 flex-wrap">
-        <div className="text-xs md:text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>Year</div>
+  const statusCard = (
+    <div className="grid grid-cols-2 overflow-hidden rounded-lg text-right" style={{ border: "1px solid var(--app-border)" }}>
+      <div className="px-2 py-1.5 text-left" style={{ borderRight: "1px solid var(--app-border)" }}>
+        <div className="text-[10px] font-semibold uppercase tracking-[0.08em]" style={{ color: "var(--app-text-very-muted)" }}>
+          Mode
+        </div>
         <div
-          className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
-          style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+          className="mt-0.5 flex items-center gap-1 rounded-md p-0.5"
+          style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}
         >
-          {(["2024", "2022", "2020", "2018", "2016"] as MapYear[]).map((yr) => (
+          {(["simple", "satellite"] as MapStyle[]).map((style) => (
             <button
-              key={yr}
-              onClick={() => handleYearClick(yr)}
-              aria-pressed={activeYear === yr}
-              className="px-2 md:px-3 py-1 rounded-md text-xs md:text-sm font-medium transition-colors"
+              key={style}
+              onClick={() => setMapStyle(style)}
+              aria-pressed={mapStyle === style}
+              className="min-h-6 flex-1 rounded px-2 text-xs font-semibold transition-colors"
               style={
-                activeYear === yr
+                mapStyle === style
                   ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
                   : { color: "var(--app-text-muted)", border: "1px solid transparent" }
               }
             >
-              {yr}
+              {style === "satellite" ? "Overlay" : "Simple"}
             </button>
           ))}
         </div>
       </div>
-
-      {/* Race selector — options depend on selected year */}
-      <div className="flex items-center gap-3 mb-3 flex-wrap">
-        <div className="text-xs md:text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>Race</div>
+      <div className="px-2 py-1.5">
+        <div className="text-[10px] font-semibold uppercase tracking-[0.08em]" style={{ color: "var(--app-text-very-muted)" }}>
+          {swingYear ? "Swing" : "Margin"}
+        </div>
         <div
-          className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
-          style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+          className="mt-0.5 text-sm font-bold tabular-nums"
+          style={{ color: isTbdYear ? "var(--app-text-muted)" : swingYear ? (swingPct >= 0 ? t.demText : t.repText) : (margin >= 0 ? t.demText : t.repText) }}
         >
-          {YEAR_RACES[activeYear].map(({ key, label }) => (
-            <button
-              key={key}
-              onClick={() => setActiveRace(key)}
-              aria-pressed={activeRace === key}
-              className="px-2 md:px-3 py-1 rounded-md text-xs md:text-sm font-medium transition-colors"
-              style={
-                activeRace === key
-                  ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
-                  : { color: "var(--app-text-muted)", border: "1px solid transparent" }
-              }
-            >
-              {label}
-            </button>
-          ))}
+          {swingYear ? swingMarginLabel : marginLabel}
         </div>
       </div>
+    </div>
+  );
 
-      {/* Swing selector */}
-      <div className="flex items-center gap-3 mb-2 flex-wrap">
-        <div className="text-xs md:text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>Swing</div>
-        <div
-          className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
-          style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-        >
-          <button
-            onClick={() => setSwingYear(null)}
-            aria-pressed={swingYear === null}
-            className="px-2 md:px-3 py-1 rounded-md text-xs md:text-sm font-medium transition-colors"
-            style={
-              swingYear === null
-                ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
-                : { color: "var(--app-text-muted)", border: "1px solid transparent" }
-            }
-          >
-            Off
-          </button>
-          {(["2024", "2022", "2020", "2018", "2016"] as MapYear[]).map((yr) => (
-            <button
-              key={yr}
-              onClick={() => {
-                setSwingYear(yr);
-                if (!YEAR_RACES[yr].some(r => r.key === swingRace)) setSwingRace("stRep");
-              }}
-              aria-pressed={swingYear === yr}
-              className="px-2 md:px-3 py-1 rounded-md text-xs md:text-sm font-medium transition-colors"
-              style={
-                swingYear === yr
-                  ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
-                  : { color: "var(--app-text-muted)", border: "1px solid transparent" }
-              }
-            >
-              {yr}
-            </button>
-          ))}
-        </div>
-      </div>
+  const controls = (
+    <div className="grid gap-2">
+      <ControlGroup label="Year">
+        {(["2024", "2022", "2020", "2018", "2016"] as MapYear[]).map((yr) => (
+          <SegmentedButton key={yr} active={activeYear === yr} onClick={() => handleYearClick(yr)}>
+            {yr}
+          </SegmentedButton>
+        ))}
+      </ControlGroup>
 
-      {/* Swing race selector */}
-      {swingYear !== null && (
-        <div className="flex items-center gap-3 mb-3 flex-wrap">
-          <div className="text-xs md:text-sm font-semibold" style={{ color: "transparent" }}>Swing</div>
-          <div
-            className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
-            style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-          >
-            {YEAR_RACES[swingYear].map(({ key, label }) => (
-              <button
-                key={key}
-                onClick={() => setSwingRace(key)}
-                aria-pressed={swingRace === key}
-                className="px-2 md:px-3 py-1 rounded-md text-xs md:text-sm font-medium transition-colors"
-                style={
-                  swingRace === key
-                    ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
-                    : { color: "var(--app-text-muted)", border: "1px solid transparent" }
-                }
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
+      <ControlGroup label="Race">
+        {YEAR_RACES[activeYear].map(({ key, label }) => (
+          <SegmentedButton key={key} active={activeRace === key} onClick={() => setActiveRace(key)}>
+            {label}
+          </SegmentedButton>
+        ))}
+      </ControlGroup>
 
-      {/* Map style toggle — shown only for 2024/2022 */}
-      {!isTbdYear && (
-        <div className="flex items-center gap-3 mb-3 flex-wrap">
-          <div className="text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>
-            Design
-          </div>
-          <div
-            className="flex items-center gap-1 flex-wrap rounded-lg px-1 py-1"
-            style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-          >
-            {(["simple", "satellite"] as MapStyle[]).map((style) => (
-              <button
-                key={style}
-                onClick={() => setMapStyle(style)}
-                aria-pressed={mapStyle === style}
-                className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-                style={
-                  mapStyle === style
-                    ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
-                    : { color: "var(--app-text-muted)", border: "1px solid transparent" }
-                }
-              >
-                {style === "satellite" ? "Overlay Map" : "Simple Map"}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Map */}
-      <div className="relative">
-        {isTbdYear ? (
-          <div
-            style={{
-              height: 400,
-              background: "var(--app-panel)",
-              borderRadius: 12,
-              border: "1px solid var(--app-border)",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "center",
-              gap: 8,
+      <ControlGroup label="Swing">
+        <SegmentedButton active={swingYear === null} onClick={() => setSwingYear(null)}>
+          Off
+        </SegmentedButton>
+        {(["2024", "2022", "2020", "2018", "2016"] as MapYear[]).map((yr) => (
+          <SegmentedButton
+            key={yr}
+            active={swingYear === yr}
+            onClick={() => {
+              setSwingYear(yr);
+              if (!YEAR_RACES[yr].some(r => r.key === swingRace)) setSwingRace("stRep");
             }}
           >
-            <div style={{ color: "var(--app-text-muted)", fontSize: 15, fontWeight: 600 }}>
-              {activeYear} map data coming soon
-            </div>
-            <div style={{ color: "var(--app-text-muted)", fontSize: 13 }}>
-              Precinct boundaries and results for {activeYear} will be added when available
-            </div>
-          </div>
-        ) : (
-          <>
-            {activeYear === "2022"
-              ? mapStyle === "satellite"
-                ? <LeafletMap2022 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
-                : <OH31MapSimple2022 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
-              : activeYear === "2020"
-                ? mapStyle === "satellite"
-                  ? <LeafletMap2020 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
-                  : <OH31MapSimple2020 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
-                : activeYear === "2018"
-                  ? mapStyle === "satellite"
-                    ? <LeafletMap2018 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
-                    : <OH31MapSimple2018 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
-                  : activeYear === "2016"
-                    ? mapStyle === "satellite"
-                      ? <LeafletMap2016 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
-                      : <OH31MapSimple2016 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
-                    : mapStyle === "satellite"
-                  ? <LeafletMap activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
-                  : <OH31MapSimple activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
-            }
+            {yr}
+          </SegmentedButton>
+        ))}
+      </ControlGroup>
 
-            {/* Legend */}
-            <div
-              className={legendContainerClass}
-              style={{ background: "var(--oh31-legend-bg)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", display: legendHidden ? "none" : undefined }}
-            >
-              <div className={legendContentClass}>
-                {LEGEND.map(({ color, label }) => (
+      {swingYear !== null && (
+        <ControlGroup label="Swing Race">
+          {YEAR_RACES[swingYear].map(({ key, label }) => (
+            <SegmentedButton key={key} active={swingRace === key} onClick={() => setSwingRace(key)}>
+              {label}
+            </SegmentedButton>
+          ))}
+        </ControlGroup>
+      )}
+    </div>
+  );
+
+  const mapView = (
+    <div className="relative">
+      {isTbdYear ? (
+        <div
+          style={{
+            height: 400,
+            background: "var(--app-panel)",
+            borderRadius: 12,
+            border: "1px solid var(--app-border)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: 8,
+          }}
+        >
+          <div style={{ color: "var(--app-text-muted)", fontSize: 15, fontWeight: 600 }}>
+            {activeYear} map data coming soon
+          </div>
+          <div style={{ color: "var(--app-text-muted)", fontSize: 13 }}>
+            Precinct boundaries and results for {activeYear} will be added when available
+          </div>
+        </div>
+      ) : (
+        <>
+          {activeYear === "2022"
+            ? mapStyle === "satellite"
+              ? <LeafletMap2022 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
+              : <OH31MapSimple2022 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
+            : activeYear === "2020"
+              ? mapStyle === "satellite"
+                ? <LeafletMap2020 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
+                : <OH31MapSimple2020 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
+              : activeYear === "2018"
+                ? mapStyle === "satellite"
+                  ? <LeafletMap2018 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
+                  : <OH31MapSimple2018 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
+                : activeYear === "2016"
+                  ? mapStyle === "satellite"
+                    ? <LeafletMap2016 activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
+                    : <OH31MapSimple2016 activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
+                  : mapStyle === "satellite"
+                ? <LeafletMap activeRace={activeRace} darkMode={darkMode} onReady={handleReady} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} />
+                : <OH31MapSimple activeRace={activeRace} darkMode={darkMode} townshipFilter={townshipFilter} raceLabel={currentRaceLabel} onMobilePopupChange={setSimpleMobilePopupVisible} swingLookup={swingLookup} swingLabel={swingBaselineLabel} />
+          }
+
+          <div
+            className={legendContainerClass}
+            style={{ background: "var(--oh31-legend-bg)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", display: legendHidden ? "none" : undefined }}
+          >
+            <div className={legendContentClass}>
+              {LEGEND.map(({ color, label }) => (
                 <div key={label} className={legendItemClass}>
                   <div style={{ width: 10, height: 10, borderRadius: 2, background: color, flexShrink: 0 }} />
                   <span>{label}</span>
                 </div>
-                ))}
-              </div>
+              ))}
             </div>
-          </>
-        )}
-      </div>
+          </div>
+        </>
+      )}
+    </div>
+  );
 
+  return (
+    <div style={{ color: t.textPrimary }}>
       <div
-        className="mt-4 mb-4 rounded-xl px-4 py-3 flex flex-wrap gap-3 items-center"
+        className="overflow-hidden rounded-xl"
         style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
       >
-        <div>
-          <div className="text-xs font-medium mb-1" style={{ color: "var(--app-text-muted)" }}>
-            Showing
-          </div>
-          <div className="text-sm font-semibold" style={{ color: "var(--app-text-primary)" }}>
-            {activeYear} {currentRaceLabel}
-          </div>
-        </div>
-        <div className="ml-auto text-right">
-          <div className="text-xs font-medium mb-1" style={{ color: "var(--app-text-muted)" }}>
-            {swingYear ? "Swing" : "District Margin"}
-          </div>
-          {swingYear ? (
-            <>
-              <div
-                className="text-sm font-semibold tabular-nums"
-                style={{ color: isTbdYear ? "var(--app-text-muted)" : (swingPct >= 0 ? t.demText : t.repText) }}
-              >
-                {swingMarginLabel}
-              </div>
-              <div className="text-[10px] mt-0.5" style={{ color: "var(--app-text-muted)" }}>
-                vs {swingBaselineLabel}
-              </div>
-            </>
-          ) : (
-            <div
-              className="text-sm font-semibold tabular-nums"
-              style={{ color: isTbdYear ? "var(--app-text-muted)" : (margin >= 0 ? t.demText : t.repText) }}
-            >
-              {marginLabel}
-            </div>
-          )}
-        </div>
-        {!isTbdYear && mapStyle === "satellite" && (
-          <button
-            onClick={() => resetFnRef.current?.()}
-            className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-            style={{ color: "var(--app-text-muted)", border: "1px solid var(--app-border)" }}
+        <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_340px]">
+          <div
+            className="order-2 border-t p-2 md:p-3 lg:order-1 lg:border-t-0 lg:pr-1.5"
+            style={{ borderColor: "var(--app-border)" }}
           >
-            Reset View
-          </button>
-        )}
+            {mapView}
+          </div>
+
+          <div
+            className="order-1 flex flex-col gap-3 p-2 md:p-3 lg:order-2 lg:border-l lg:pl-3"
+            style={{ borderColor: "var(--app-border)" }}
+          >
+            <div>
+              <div className="text-base font-bold leading-tight md:text-lg" style={{ color: "var(--app-text-primary)" }}>
+                Precinct Map
+              </div>
+              <div className="mt-0.5 text-xs md:text-sm" style={{ color: "var(--app-text-muted)" }}>
+                {activeYear} {currentRaceLabel}
+                {swingYear ? ` · swing vs ${swingBaselineLabel}` : ""}
+              </div>
+            </div>
+
+            {statusCard}
+            {controls}
+
+            <div className="mt-auto flex flex-col gap-2 text-xs md:text-sm" style={{ color: "var(--app-text-muted)" }}>
+              <div>
+                {swingYear ? (
+                  <>
+                    {swingBaselineLabel} → {activeYear} {currentRaceLabel}
+                  </>
+                ) : (
+                  <>
+                    Showing absolute precinct margins for {activeYear} {currentRaceLabel}
+                  </>
+                )}
+              </div>
+              {!isTbdYear && mapStyle === "satellite" && (
+                <button
+                  onClick={() => resetFnRef.current?.()}
+                  className="self-start rounded-md px-3 py-1.5 text-sm font-semibold transition-colors"
+                  style={{ color: "var(--app-text-muted)", border: "1px solid var(--app-border)", background: "var(--app-bg)" }}
+                >
+                  Reset View
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

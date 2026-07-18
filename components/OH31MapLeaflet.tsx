@@ -88,7 +88,7 @@ export default function OH31MapLeaflet({ activeRace, darkMode, onReady, township
     const race = precinct?.[activeRace];
     const matches = !precinct || matchesTownshipFilter(precinct.township, townshipFilter);
     return {
-      fillColor: matches && race ? getRaceColor(race.dPct - race.rPct) : darkMode ? "#3a4455" : "#a8b0ba",
+      fillColor: matches && race ? getRaceColor(race.rPct - race.dPct) : darkMode ? "#3a4455" : "#a8b0ba",
       fillOpacity: matches ? 0.65 : 0.45,
       color: darkMode ? "#0d1117" : "#f6f8fa",
       weight: matches ? 0.8 : 0.3,
@@ -156,6 +156,7 @@ export default function OH31MapLeaflet({ activeRace, darkMode, onReady, township
           style={{ height: "100%", width: "100%" }}
           zoomControl={true}
           scrollWheelZoom={true}
+          doubleClickZoom={false}
         >
           <FitBoundsControl geoData={geoData} onReady={onReady} />
           <TileLayer

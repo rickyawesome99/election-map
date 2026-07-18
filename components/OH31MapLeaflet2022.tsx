@@ -40,7 +40,7 @@ function getVotes(props: PropsMap, raceKey: RaceKey): { d: number; r: number } {
 function getMargin(props: PropsMap, raceKey: RaceKey): number | null {
   const { d, r } = getVotes(props, raceKey);
   const total = d + r;
-  return total > 0 ? ((d - r) / total) * 100 : null;
+  return total > 0 ? ((r - d) / total) * 100 : null;
 }
 
 
@@ -187,6 +187,7 @@ export default function OH31MapLeaflet2022({ activeRace, darkMode, onReady, town
           style={{ height: "100%", width: "100%" }}
           zoomControl={true}
           scrollWheelZoom={true}
+          doubleClickZoom={false}
         >
           <FitBoundsControl geoData={geoData} onReady={onReady} />
           <TileLayer

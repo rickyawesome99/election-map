@@ -9,8 +9,8 @@ export const metadata = {
 export default function OH31Page() {
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <main className="max-w-6xl mx-auto px-6 py-10">
-        <div className="mb-8">
+      <main className="max-w-6xl mx-auto px-6 pb-10 pt-3">
+        <div className="mb-4">
           <h1 className="text-3xl font-bold mb-1" style={{ color: "var(--app-text-primary)" }}>
             OH-31
           </h1>

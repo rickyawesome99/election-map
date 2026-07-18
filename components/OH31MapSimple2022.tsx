@@ -18,6 +18,10 @@ type PrecinctGeography = {
   geometry?: Geometry;
 };
 
+function filterMapZoomEvent(event: { type?: string; ctrlKey?: boolean; button?: number }): boolean {
+  return event.type !== "dblclick" && event.type !== "touchend" && (!event.ctrlKey || event.type === "wheel") && !event.button;
+}
+
 interface Props {
   activeRace: RaceKey;
   darkMode: boolean;
@@ -170,7 +174,7 @@ export default function OH31MapSimple2022({ activeRace, darkMode, townshipFilter
         height={520}
         style={{ width: "100%", height: "100%" }}
       >
-        <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
+        <ZoomableGroup key={mapKey} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
         <Geographies geography={GEO_URL}>
           {({ geographies }: { geographies: PrecinctGeography[] }) =>
             geographies.map((geo) => {
@@ -190,9 +194,9 @@ export default function OH31MapSimple2022({ activeRace, darkMode, townshipFilter
                     if (!data) return "var(--oh31-simple-map-bg)";
                     if (swingLookup != null) {
                       const entry = swingLookup[name];
-                      return entry !== undefined ? getRaceColor(data.margin - entry.margin) : "var(--oh31-simple-map-bg)";
+                      return entry !== undefined ? getRaceColor(entry.margin - data.margin) : "var(--oh31-simple-map-bg)";
                     }
-                    return getRaceColor(data.margin);
+                    return getRaceColor(-data.margin);
                   })()}
                   stroke={t.mapStroke}
                   strokeWidth={isHovered ? 1.5 : matches ? 0.4 : 0.2}

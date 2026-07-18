@@ -75,6 +75,19 @@ function getRaceGroups(year: TableYear) {
 }
 
 const thBase = "px-3 py-2 font-medium whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity";
+const MAX_VISIBLE_PRECINCT_ROWS = 12;
+const PRECINCT_TABLE_HEADER_ROW_HEIGHT = 37;
+const PRECINCT_TABLE_HEADER_HEIGHT = PRECINCT_TABLE_HEADER_ROW_HEIGHT * 2;
+const PRECINCT_TABLE_ROW_HEIGHT = 37;
+
+const stickyHeaderTopStyle: React.CSSProperties = {
+  background: "var(--app-panel)",
+};
+
+const stickyHeaderSecondRowStyle: React.CSSProperties = {
+  background: "var(--app-panel)",
+};
+
 const stickyTopLeftStyle: React.CSSProperties = {
   position: "sticky",
   left: 0,
@@ -120,12 +133,13 @@ export default function OH31PrecinctTable({
 
   const sorted = sortData(data, sortKey, sortDir);
   const RACE_GROUPS = getRaceGroups(year);
+  const shouldScrollRows = sorted.length > MAX_VISIBLE_PRECINCT_ROWS;
 
   const th = (key: SortKey, label: string, extraStyle?: React.CSSProperties, align: "left" | "right" = "right") => (
     <th
       key={key}
       className={`${thBase} ${align === "left" ? "text-left" : "text-right"}`}
-      style={extraStyle}
+      style={{ ...stickyHeaderSecondRowStyle, ...extraStyle }}
       onClick={() => handleSort(key)}
     >
       {label}<SortIcon active={sortKey === key} dir={sortDir} />
@@ -137,6 +151,19 @@ export default function OH31PrecinctTable({
 
   return (
     <div>
+      <style>{`
+        .oh31-scroll-table {
+          border-collapse: separate;
+          border-spacing: 0;
+        }
+        .oh31-scroll-table th,
+        .oh31-scroll-table td {
+          border-bottom: 1px solid var(--app-border);
+        }
+        .oh31-scroll-table tbody tr:last-child td {
+          border-bottom: 0;
+        }
+      `}</style>
       {/* Toggles */}
       <div className="flex flex-col gap-3 mb-3 lg:flex-row lg:items-center">
         <div className="flex-1 min-w-0">
@@ -214,21 +241,36 @@ export default function OH31PrecinctTable({
       </div>
 
     <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-      <div className="overflow-x-auto">
-        <table className="text-sm" style={{ borderCollapse: "collapse", minWidth: "100%" }}>
-          <thead>
+      <div
+        className="overflow-auto"
+        style={{
+          maxHeight: shouldScrollRows
+            ? PRECINCT_TABLE_HEADER_HEIGHT + PRECINCT_TABLE_ROW_HEIGHT * MAX_VISIBLE_PRECINCT_ROWS
+            : undefined,
+        }}
+      >
+        <table className="oh31-scroll-table text-sm" style={{ minWidth: "100%" }}>
+          <thead
+            style={{
+              position: "sticky",
+              top: 0,
+              zIndex: 20,
+              background: "var(--app-panel)",
+              boxShadow: "0 1px 0 var(--app-border)",
+            }}
+          >
             {/* Group header row */}
             <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
               <th
                 colSpan={1}
                 className="px-3 py-2 text-center font-semibold whitespace-nowrap"
-                style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)", ...stickyTopLeftStyle }}
+                style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)", ...stickyTopLeftStyle, ...stickyHeaderTopStyle, zIndex: 7 }}
               />
               {showBallots && (
                 <th
                   colSpan={3}
                   className="px-3 py-2 text-center font-semibold whitespace-nowrap"
-                  style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)" }}
+                  style={{ color: "var(--app-text-primary)", borderRight: "1px solid var(--app-border)", ...stickyHeaderTopStyle }}
                 >
                   Turnout
                 </th>
@@ -242,6 +284,7 @@ export default function OH31PrecinctTable({
                     color: "var(--app-text-primary)",
                     borderLeft: "1px solid var(--app-border)",
                     borderRight: i < RACE_GROUPS.length - 1 ? "1px solid var(--app-border)" : undefined,
+                    ...stickyHeaderTopStyle,
                   }}
                 >
                   {label}
@@ -252,7 +295,7 @@ export default function OH31PrecinctTable({
             <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
               <th
                 className="px-3 py-2 text-left font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
-                style={{ color: "var(--app-text-primary)", borderRight: showBallots ? "1px solid var(--app-border)" : undefined, ...stickyFirstColStyle }}
+                style={{ color: "var(--app-text-primary)", borderRight: showBallots ? "1px solid var(--app-border)" : undefined, ...stickyFirstColStyle, ...stickyHeaderSecondRowStyle, zIndex: 7 }}
                 onClick={() => handleSort("precinct")}
               >
                 Precinct<SortIcon active={sortKey === "precinct"} dir={sortDir} />
@@ -260,7 +303,7 @@ export default function OH31PrecinctTable({
               {showBallots && (
                 <th
                   className="px-3 py-2 text-left font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
-                  style={{ color: "var(--app-text-muted)" }}
+                  style={{ color: "var(--app-text-muted)", ...stickyHeaderSecondRowStyle }}
                   onClick={() => handleSort("ballots")}
                 >
                   Ballots<SortIcon active={sortKey === "ballots"} dir={sortDir} />
@@ -269,7 +312,7 @@ export default function OH31PrecinctTable({
               {showBallots && (
                 <th
                   className="px-3 py-2 text-left font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
-                  style={{ color: "var(--app-text-muted)" }}
+                  style={{ color: "var(--app-text-muted)", ...stickyHeaderSecondRowStyle }}
                   onClick={() => handleSort("reg")}
                 >
                   Reg.<SortIcon active={sortKey === "reg"} dir={sortDir} />
@@ -278,7 +321,7 @@ export default function OH31PrecinctTable({
               {showBallots && (
                 <th
                   className="px-3 py-2 text-left font-semibold whitespace-nowrap cursor-pointer select-none hover:opacity-70 transition-opacity"
-                  style={{ color: "var(--app-text-muted)", borderRight: "1px solid var(--app-border)" }}
+                  style={{ color: "var(--app-text-muted)", borderRight: "1px solid var(--app-border)", ...stickyHeaderSecondRowStyle }}
                   onClick={() => handleSort("turnout")}
                 >
                   Turnout<SortIcon active={sortKey === "turnout"} dir={sortDir} />

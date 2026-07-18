@@ -4,7 +4,6 @@ import { useMemo, useState } from "react";
 import OH31Map from "@/components/OH31Map";
 import OH31PrecinctTable from "@/components/OH31PrecinctTable";
 import OH31TownshipTable from "@/components/OH31TownshipTable";
-import OH31SwingTable from "@/components/OH31SwingTable";
 import OH31DemographicsMap from "@/components/OH31DemographicsMap";
 import OH31DemographicsTable from "@/components/OH31DemographicsTable";
 import { oh31PrecinctData } from "@/data/oh31PrecinctData";
@@ -77,8 +76,6 @@ export default function OH31AnalysisContent() {
       </section>
 
       <OH31TownshipTable />
-
-      <OH31SwingTable />
 
       <section className="mt-8">
         <div className="flex items-center gap-3 mb-4 flex-wrap">
