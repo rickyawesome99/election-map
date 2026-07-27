@@ -5,7 +5,7 @@ AK,2014,Regular,Bill Walker (I),Sean Parnell,R,48.1,45.88,-2.22,"134,658","128,4
 AL,2022,Regular,Yolanda Flowers,Kay Ivey,R,29.18,66.91,37.73,"412,961","946,932","533,971",1415283
 AL,2018,Regular,Walt Maddox,Kay Ivey,R,40.39,59.46,19.07,"694,495","1,022,457","327,962",1719589
 AL,2014,Regular,Parker Griffith,Robert Bentley,R,36.24,63.56,27.32,"427,787","750,231","322,444",1180413
-AR,2022,Regular,Chris Jones,Sarah Huckabee Sanders,None,35.2,63,27.8,"319,242","571,105","251,863",907037
+AR,2022,Regular,Chris Jones,Sarah Huckabee Sanders,None,35.2,62.96,27.76,"319,242","571,105","251,863",907037
 AR,2018,Regular,Jared Henderson,Asa Hutchinson,R,31.77,65.33,33.56,"283,218","582,406","299,188",891509
 AR,2014,Regular,Mike Ross,Asa Hutchinson,None,41.49,55.44,13.95,"352,115","470,429","118,314",848592
 AZ,2022,Regular,Katie Hobbs,Kari Lake,None,50.32,49.65,-0.67,"1,287,891","1,270,774","-17,117",2559485
@@ -19,7 +19,7 @@ CO,2018,Regular,Jared Polis,Walker Stapleton,None,53.42,42.8,-10.62,"1,348,888",
 CO,2014,Regular,John Hickenlooper,Bob Beauprez,D,49.3,45.95,-3.35,"1,006,433","938,195","-68,238",2041605
 CT,2022,Regular,Ned Lamont,Bob Stefanowski,D,55.97,43.05,-12.92,"710,186","546,209","-163,977",1268893
 CT,2018,Regular,Ned Lamont,Bob Stefanowski,None,49.37,46.21,-3.16,"694,510","650,138","-44,372",1406803
-CT,2014,Regular,Dannel Malloy,Thomas Foley,D,50.73,48.16,-2.57,"554,314","526,295","-28,019",1092773
+CT,2014,Regular,Dannel Malloy,Tom Foley,D,50.73,48.16,-2.57,"554,314","526,295","-28,019",1092773
 DE,2024,Regular,Matt Meyer,Mike Ramone,None,56.07,43.93,-12.14,"279,585","219,050","-60,535",498635
 DE,2020,Regular,John Carney,Julianne Murray,D,59.46,38.63,-20.83,"292,903","190,312","-102,591",492635
 DE,2016,Regular,John Carney,Colin Bonini,None,58.3,39.2,-19.1,"248,404","166,852","-81,552",425784
@@ -38,8 +38,8 @@ IA,2014,Regular,Jack Hatch,Terry Branstad,R,37.27,58.99,21.72,"420,787","666,032
 ID,2022,Regular,Stephen Heidt,Brad Little,R,20.28,60.52,40.24,"120,160","358,598","238,438",592528
 ID,2018,Regular,Paulette Jordan,Brad Little,None,38.19,59.76,21.57,"231,081","361,661","130,580",605150
 ID,2014,Regular,A.J. Balukoff,Butch Otter,R,38.55,53.52,14.97,"169,556","235,405","65,849",439845
-IL,2022,Regular,J.B. Pritzker,Darren Bailey,D,54.91,42.37,-12.54,"2,253,748","1,739,095","-514,653",4104440
-IL,2018,Regular,J.B. Pritzker,Bruce Rauner,R,54.53,38.83,-15.7,"2,479,746","1,765,751","-713,995",4547489
+IL,2022,Regular,JB Pritzker,Darren Bailey,D,54.91,42.37,-12.54,"2,253,748","1,739,095","-514,653",4104440
+IL,2018,Regular,JB Pritzker,Bruce Rauner,R,54.53,38.83,-15.7,"2,479,746","1,765,751","-713,995",4547489
 IL,2014,Regular,Pat Quinn,Bruce Rauner,D,46.35,50.27,3.92,"1,681,343","1,823,627","142,284",3627594
 IN,2024,Regular,Jennifer McCormick,Mike Braun,None,41.11,54.38,13.27,"1,183,741","1,566,081","382,340",2879709
 IN,2020,Regular,Woody Myers,Eric Holcomb,R,32.05,56.51,24.46,"968,094","1,706,727","738,633",3020296
@@ -125,11 +125,11 @@ SD,2014,Regular,Susan Wismer,Dennis Daugaard,R,25.43,70.47,45.04,"70,549","195,4
 TN,2022,Regular,Jason Martin,Bill Lee,R,32.92,64.91,31.99,"572,818","1,129,390","556,572",1739932
 TN,2018,Regular,Karl Dean,Bill Lee,None,38.55,59.56,21.01,"864,863","1,336,106","471,243",2243338
 TN,2014,Regular,Charles Brown,Bill Haslam,R,22.84,70.31,47.47,"309,237","951,796","642,559",1353720
-TX,2022,Regular,Beto O’Rourke,Greg Abbott,R,43.86,54.76,10.9,"3,553,656","4,437,099","883,443",8102633
+TX,2022,Regular,Beto O'Rourke,Greg Abbott,R,43.86,54.76,10.9,"3,553,656","4,437,099","883,443",8102633
 TX,2018,Regular,Lupe Valdez,Greg Abbott,R,42.51,55.81,13.3,"3,546,615","4,656,196","1,109,581",8342942
 TX,2014,Regular,Wendy Davis,Greg Abbott,None,38.9,59.27,20.37,"1,835,596","2,796,547","960,951",4718433
-UT,2024,Regular,Brian King,Spencer Cox,R,28.63,52.89,24.26,"420,514","781,431","360,917",1473185
-UT,2020,Regular,Christopher Peterson,Spencer Cox,None,30.35,62.98,32.63,"442,754","918,754","476,000",1458803
+UT,2024,Regular,Brian King,Spencer Cox,R,28.46,52.89,24.43,"420,514","781,431","360,917",1477457
+UT,2020,Regular,Chris Peterson,Spencer Cox,None,30.35,62.98,32.63,"442,754","918,754","476,000",1458803
 UT,2016,Regular,Mike Weinholtz,Gary Herbert,R,28.7,66.7,38,"323,349","750,850","427,501",1126126
 VA,2025,Regular,Abigail Spanberger,Winsome Earle-Sears,None,57.58,42.22,-15.36,"1,976,857","1,449,586","-527,271",3433269
 VA,2021,Regular,Terry McAuliffe,Glenn Youngkin,None,48.64,50.58,1.94,"1,599,470","1,663,158","63,688",3288272

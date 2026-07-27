@@ -11,7 +11,9 @@
       "Bash(cp /Users/rickyjia/Downloads/oh-s-d.jpg /Users/rickyjia/election-map/public/candidates/sherrod-brown.jpg)",
       "Bash(cp /Users/rickyjia/Downloads/or-s-d.jpg /Users/rickyjia/election-map/public/candidates/jeff-merkley.jpg)",
       "Bash(cp /Users/rickyjia/Downloads/or-s-r.jpg /Users/rickyjia/election-map/public/candidates/david-brock-smith.jpg)",
-      "Bash(grep -rn '/house/\\\\$\\\\|\"/house\"' --include=\"*.tsx\" --include=\"*.ts\" .)"
+      "Bash(grep -rn '/house/\\\\$\\\\|\"/house\"' --include=\"*.tsx\" --include=\"*.ts\" .)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(node /private/tmp/claude-501/-Users-rickyjia-election-map/4934c6d5-a129-48cf-9bb3-a5c19ab06787/scratchpad/compare_house.js)"
     ]
   }
 }
