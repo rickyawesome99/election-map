@@ -2,7 +2,7 @@ import Image from "next/image";
 import CandidateLink from "@/components/CandidateLink";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
 import { InfoTooltip } from "@/components/InfoTooltip";
-import { POLL_WEIGHT } from "@/lib/tplCompute";
+import { POLL_WEIGHT, GENERIC_BALLOT } from "@/lib/tplCompute";
 
 type PollRow = {
   label: string;
@@ -798,7 +798,7 @@ export function ForecastCalculationCard({
           </div>
           <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-3 py-2.5" style={rowStyle}>
             <InfoTooltip label="Generic Ballot">
-              National environment (D+5.3) scaled by this state&apos;s wave sensitivity coefficient S.
+              National environment ({Math.abs(GENERIC_BALLOT) < 0.05 ? "EVEN" : `${GENERIC_BALLOT < 0 ? "D" : "R"}+${Math.abs(GENERIC_BALLOT).toFixed(1)}`}) scaled by this state&apos;s wave sensitivity coefficient S.
               <br /><br />
               <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Effective wave = GB × S</span>
               <br /><br />

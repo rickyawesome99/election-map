@@ -6,6 +6,7 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 import { getRaceColor, getRatingColors } from "@/lib/colorScale";
 import type { RaceForecast } from "@/data/forecastData";
 import { useDarkMode } from "@/lib/useDarkMode";
+import { WisconsinLandClip, WisconsinLandMask } from "./WisconsinLandClip";
 
 const DISTRICTS_URL = "/congressional-districts-2026.json";
 
@@ -189,7 +190,9 @@ export default function StateDistrictMap({
           projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
           style={{ width: "100%", height: "100%" }}
         >
+          {stateAbbr === "WI" && <WisconsinLandClip />}
           <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
+          <WisconsinLandMask enabled={stateAbbr === "WI"}>
           <Geographies geography={DISTRICTS_URL}>
             {({ geographies }: { geographies: DistrictGeometry[] }) =>
               geographies.map((geo) => {
@@ -231,6 +234,7 @@ export default function StateDistrictMap({
               })
             }
           </Geographies>
+          </WisconsinLandMask>
           </ZoomableGroup>
         </ComposableMap>
 

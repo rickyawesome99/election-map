@@ -18430,9 +18430,9 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Tom Tiffany",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 36.39, "repPct": 63.61, "demCandidate": "Kyle Kilbourn", "repCandidate": "Thomas Tiffany", "demVotes": 156524, "repVotes": 273553, "totalVotes": 430077, "margin": 27.22, "repIncumbent": true },
-      { "year": 2022, "demPct": 38.12, "repPct": 61.88, "demCandidate": "Richard Dick Ausman", "repCandidate": "Thomas Tiffany", "demVotes": 128877, "repVotes": 209224, "totalVotes": 338101, "margin": 23.76, "repIncumbent": true },
-      { "year": 2020, "demPct": 39.23, "repPct": 60.77, "demCandidate": "Tricia Zunker", "repCandidate": "Thomas Tiffany", "demVotes": 162741, "repVotes": 252048, "totalVotes": 414789, "margin": 21.54, "repIncumbent": true },
+      { "year": 2024, "demPct": 36.39, "repPct": 63.61, "demCandidate": "Kyle Kilbourn", "repCandidate": "Tom Tiffany", "demVotes": 156524, "repVotes": 273553, "totalVotes": 430077, "margin": 27.22, "repIncumbent": true },
+      { "year": 2022, "demPct": 38.12, "repPct": 61.88, "demCandidate": "Richard Dick Ausman", "repCandidate": "Tom Tiffany", "demVotes": 128877, "repVotes": 209224, "totalVotes": 338101, "margin": 23.76, "repIncumbent": true },
+      { "year": 2020, "demPct": 39.23, "repPct": 60.77, "demCandidate": "Tricia Zunker", "repCandidate": "Tom Tiffany", "demVotes": 162741, "repVotes": 252048, "totalVotes": 414789, "margin": 21.54, "repIncumbent": true },
       { "year": 2018, "demPct": 38.51, "repPct": 60.12, "demCandidate": "Margaret Engebretson", "repCandidate": "Sean Duffy", "demVotes": 124307, "repVotes": 194061, "totalVotes": 322787, "margin": 21.61, "repIncumbent": true },
       { "year": 2016, "demPct": 38.29, "repPct": 61.71, "demCandidate": "Mary Hoeft", "repCandidate": "Sean Duffy", "demVotes": 138643, "repVotes": 223418, "totalVotes": 362061, "margin": 23.42, "repIncumbent": true }
     ]
@@ -20420,7 +20420,7 @@ export const presPastResults: Record<string, PresResult[]> = {
   ]
 };
 
-export const pres2024: Record<string, number> = { "AK": -13.13, "AL": -30.47, "AR": -30.64, "AZ": -5.53, "CA": 20.14, "CO": 10.99, "CT": 14.51, "DE": 14.7, "FL": -13.1, "GA": -2.19, "HI": 23.11, "IA": -13.21, "ID": -36.49, "IL": 10.9, "IN": -18.96, "KS": -16.12, "KY": -30.53, "LA": -22.01, "MA": 25.2, "MD": 28.54, "ME": 6.94, "MI": -1.42, "MN": 4.24, "MO": -18.41, "MS": -22.89, "MT": -19.93, "NC": -3.21, "ND": -36.45, "NE": -20.46, "NH": 2.78, "NJ": 5.91, "NM": 6, "NV": -3.1, "NY": 12.6, "OH": -11.21, "OK": -34.26, "OR": 14.3, "PA": -1.71, "RI": 13.78, "SC": -17.87, "SD": -29.19, "TN": -29.72, "TX": -13.68, "UT": -21.59, "VA": 5.78, "VT": 31.51, "WA": 18.22, "WI": -0.86, "WV": -41.87, "WY": -45.76 };
+export const pres2024: Record<string, number> = { "AK": 13.13, "AL": 30.47, "AR": 30.64, "AZ": 5.53, "CA": -20.14, "CO": -10.99, "CT": -14.51, "DE": -14.7, "FL": 13.1, "GA": 2.19, "HI": -23.11, "IA": 13.21, "ID": 36.49, "IL": -10.9, "IN": 18.96, "KS": 16.12, "KY": 30.53, "LA": 22.01, "MA": -25.2, "MD": -28.54, "ME": -6.94, "MI": 1.42, "MN": -4.24, "MO": 18.41, "MS": 22.89, "MT": 19.93, "NC": 3.21, "ND": 36.45, "NE": 20.46, "NH": -2.78, "NJ": -5.91, "NM": -6, "NV": 3.1, "NY": -12.6, "OH": 11.21, "OK": 34.26, "OR": -14.3, "PA": 1.71, "RI": -13.78, "SC": 17.87, "SD": 29.19, "TN": 29.72, "TX": 13.68, "UT": 21.59, "VA": -5.78, "VT": -31.51, "WA": -18.22, "WI": 0.86, "WV": 41.87, "WY": 45.76 };
 
 export type HouseDelegationEntry = {
   year: number;

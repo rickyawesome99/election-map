@@ -7,6 +7,7 @@ import { getRaceColor } from "@/lib/colorScale";
 import type { RaceForecast, PastResult } from "@/data/forecastData";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
+import { WisconsinLandClip, WisconsinLandMask } from "./WisconsinLandClip";
 
 const ELECTION_YEARS = [2024, 2022, 2020, 2018, 2016];
 
@@ -307,7 +308,9 @@ export default function HousePastMap({
           projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
           style={{ width: "100%", height: "100%" }}
         >
+          {stateAbbr === "WI" && <WisconsinLandClip />}
           <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
+            <WisconsinLandMask enabled={stateAbbr === "WI"}>
             <Geographies
               key={geoUrl}
               geography={geoUrl}
@@ -352,6 +355,7 @@ export default function HousePastMap({
                 })
               }
             </Geographies>
+            </WisconsinLandMask>
           </ZoomableGroup>
         </ComposableMap>
 

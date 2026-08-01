@@ -24,11 +24,14 @@ import {
 } from "@/data/tplModelData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
 import { popVoteData, presIncParty } from "@/data/popVoteData";
+import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
 
 // ── Generic ballot ────────────────────────────────────────────────────────────
-// R-positive convention: negative = D-favored. D+5.3 → -5.3
+// R-positive convention: negative = D-favored (e.g. D+5.3 → -5.3).
+// Sourced live from the weighted polling average (§lib/genericBallotAverage) — the
+// same number shown in the "Generic Ballot Polling Average" box on the Overview tab.
 
-export const GENERIC_BALLOT = -5.3;
+export const GENERIC_BALLOT = computeGenericBallotAverage().diff;
 
 // ── Presidential CQ inputs by cycle ─────────────────────────────────────────
 

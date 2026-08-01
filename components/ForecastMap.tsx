@@ -9,9 +9,18 @@ import { statesData } from "@/data/statesData";
 import { computeProjectedMargin } from "@/lib/tplCompute";
 
 // Both computeProjectedMargin and forecastData.margin are now R-positive — no negation needed
-const projectedSenateData = senateData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
-const projectedGovernorData = governorData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
-const projectedHouseData = houseData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
+export const projectedSenateData = senateData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
+export const projectedGovernorData = governorData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
+export const projectedHouseData = houseData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
+
+// Non-2026 seats already held by each party (Senate classes not up this cycle, Governor terms not up) —
+// added to projected win counts to get full chamber totals.
+export const SEAT_HOLDOVERS = {
+  senate: { dem: 34, rep: 31 },
+  governor: { dem: 6, rep: 8 },
+  house: { dem: 0, rep: 0 },
+};
+export const TOTAL_SEATS_BY_TYPE = { senate: 100, governor: 50, house: 435 };
 import Sidebar from "./Sidebar";
 import RaceTable from "./RaceTable";
 import StatesTable, { StateRow } from "./StatesTable";
@@ -21,6 +30,8 @@ import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import TplModelPage from "./TplModelPage";
 import DistrictFinder from "./DistrictFinder";
+import PollingAverageCard from "./PollingAverageCard";
+import OverviewDashboard from "./OverviewDashboard";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
@@ -220,15 +231,9 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
   const data = raceType === "house" ? projectedHouseData : raceType === "senate" ? projectedSenateData : projectedGovernorData;
   const showSeatScorecard = activeTab === "forecast";
   const forecastMapKey = `${geoUrl}:${raceType}:${mapKey}`;
-  const holdovers = {
-    senate: { dem: 34, rep: 31 },
-    governor: { dem: 6, rep: 8 },
-    house: { dem: 0, rep: 0 },
-  };
-  const totalSeatsByType = { senate: 100, governor: 50, house: 435 };
-  const demSeats = holdovers[raceType].dem + data.filter((race) => race.margin <= 0).length;
-  const repSeats = holdovers[raceType].rep + data.filter((race) => race.margin > 0).length;
-  const totalSeats = totalSeatsByType[raceType];
+  const demSeats = SEAT_HOLDOVERS[raceType].dem + data.filter((race) => race.margin <= 0).length;
+  const repSeats = SEAT_HOLDOVERS[raceType].rep + data.filter((race) => race.margin > 0).length;
+  const totalSeats = TOTAL_SEATS_BY_TYPE[raceType];
 
   function findMatch(geo: GeoFeature): RaceForecast | undefined {
     if (isHouse) {
@@ -921,54 +926,11 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
           <>
             {activeTab === "overview" && (
               <div className="mt-5 flex flex-col items-center gap-3">
-                <div
-                  className="rounded-xl p-4 w-full"
-                  style={{ border: `1px solid ${t.border}`, background: t.panel, maxWidth: 480 }}
-                >
-                  <div
-                    className="text-[10px] uppercase tracking-wider font-semibold mb-2"
-                    style={{ color: t.textMuted }}
-                  >
-                    Generic Ballot Polling Average
-                  </div>
-                  <div
-                    className="rounded-lg px-3 py-2.5 flex items-center justify-between"
-                    style={{ background: t.bg }}
-                  >
-                    <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>2026 Forecast</span>
-                    <span className="text-xl font-bold" style={{ color: "var(--party-dem)" }}>D+5.3</span>
-                  </div>
+                <div className="w-full" style={{ maxWidth: 720 }}>
+                  <OverviewDashboard theme={t} />
                 </div>
-                <div
-                  className="rounded-xl p-4 w-full"
-                  style={{ border: `1px solid ${t.border}`, background: t.panel, maxWidth: 480 }}
-                >
-                  <div
-                    className="text-[10px] uppercase tracking-wider font-semibold mb-2"
-                    style={{ color: t.textMuted }}
-                  >
-                    Trump Approval
-                  </div>
-                  <div
-                    className="rounded-lg px-3 py-2.5 flex items-center justify-between"
-                    style={{ background: t.bg }}
-                  >
-                    <div className="flex flex-col">
-                      <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>Net Approval</span>
-                      <span className="text-[10px]" style={{ color: t.textMuted }}>
-                        <span style={{ color: "#22c55e" }}>40.5%</span> approve · <span style={{ color: "#ef4444" }}>57.5%</span> disapprove
-                      </span>
-                    </div>
-                    <span className="text-xl font-bold" style={{ color: "#ef4444" }}>Net: −17.0</span>
-                  </div>
-                </div>
-                <div
-                  className="rounded-xl px-8 py-8 text-center w-full"
-                  style={{ border: `1px solid ${t.border}`, background: t.panel, maxWidth: 480 }}
-                >
-                  <div className="text-2xl mb-2">🚧</div>
-                  <div className="text-base font-semibold mb-1" style={{ color: t.textPrimary }}>Work in Progress</div>
-                  <div className="text-sm" style={{ color: t.textMuted }}>This overview dashboard is coming soon.</div>
+                <div className="w-full" style={{ maxWidth: 720 }}>
+                  <PollingAverageCard theme={t} />
                 </div>
               </div>
             )}
