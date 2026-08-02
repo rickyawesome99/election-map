@@ -212,9 +212,9 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                   key={geo.rsmKey}
                   geography={geo}
                   style={{
-                    default: { fill: "none", stroke: t.mapStroke, strokeWidth: 0.8, outline: "none", pointerEvents: "none" },
-                    hover:   { fill: "none", stroke: t.mapStroke, strokeWidth: 0.8, outline: "none", pointerEvents: "none" },
-                    pressed: { fill: "none", stroke: t.mapStroke, strokeWidth: 0.8, outline: "none", pointerEvents: "none" },
+                    default: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                    hover:   { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                    pressed: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
                   }}
                 />
               ))

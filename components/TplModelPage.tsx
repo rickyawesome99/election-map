@@ -506,6 +506,21 @@ function TplDistrictMap({
               })
             }
           </Geographies>
+          <Geographies geography={STATES_GEO_URL}>
+            {({ geographies }: { geographies: DistrictGeoFeature[] }) =>
+              geographies.map((geo) => (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  style={{
+                    default: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                    hover: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                    pressed: { fill: "none", stroke: mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                  }}
+                />
+              ))
+            }
+          </Geographies>
         </ZoomableGroup>
       </ComposableMap>
 

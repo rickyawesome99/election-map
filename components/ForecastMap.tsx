@@ -170,23 +170,30 @@ function SeatScorecard({
       style={{
         background: mobile ? t.panel : t.legendBg,
         border: `1px solid ${t.border}`,
-        boxShadow: mobile ? "0 2px 8px rgba(0,0,0,0.08)" : "0 4px 16px rgba(0,0,0,0.25)",
+        boxShadow: mobile
+          ? "0 2px 8px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.08)"
+          : "0 4px 16px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.10)",
       }}
     >
-      <div className={mobile ? "mb-1.5 text-center text-[8px] font-bold uppercase tracking-wider" : "mb-1.5 text-center text-[8px] font-bold uppercase tracking-wider"} style={{ color: t.textMuted }}>
-        {mobile ? `Projected ${title}` : title}
+      <div className="mb-1 flex items-center gap-1.5">
+        <span className="h-px flex-1" style={{ background: t.border }} />
+        <div className="text-center text-[8px] font-bold uppercase tracking-[0.12em]" style={{ color: t.textMuted }}>
+          {mobile ? `Projected ${title}` : title}
+        </div>
+        <span className="h-px flex-1" style={{ background: t.border }} />
       </div>
-      <div className={mobile ? "grid grid-cols-2 gap-1.5" : "grid grid-cols-2 gap-1.5"}>
-        <div className={mobile ? "flex flex-col items-center rounded-md py-1.5" : "flex flex-col items-center rounded-md py-1.5"} style={{ background: t.candidateDemBg }}>
-          <span className={mobile ? "text-lg font-bold leading-none" : "text-lg font-bold leading-none"} style={{ color: t.demText }}>{demSeats}</span>
+      <div className="flex items-start justify-center gap-1.5 py-1">
+        <div className="flex flex-col items-center">
+          <span className="tabular-nums text-2xl font-extrabold leading-none tracking-tight" style={{ color: t.demText }}>{demSeats}</span>
           <span className="mt-0.5 text-[8px] font-semibold" style={{ color: t.demText }}>Dem</span>
         </div>
-        <div className={mobile ? "flex flex-col items-center rounded-md py-1.5" : "flex flex-col items-center rounded-md py-1.5"} style={{ background: t.candidateRepBg }}>
-          <span className={mobile ? "text-lg font-bold leading-none" : "text-lg font-bold leading-none"} style={{ color: t.repText }}>{repSeats}</span>
+        <span className="text-base font-medium leading-6" style={{ color: t.textVeryMuted }}>–</span>
+        <div className="flex flex-col items-center">
+          <span className="tabular-nums text-2xl font-extrabold leading-none tracking-tight" style={{ color: t.repText }}>{repSeats}</span>
           <span className="mt-0.5 text-[8px] font-semibold" style={{ color: t.repText }}>Rep</span>
         </div>
       </div>
-      <div className={mobile ? "mt-1.5 text-center text-[8px]" : "mt-1.5 text-center text-[8px]"} style={{ color: t.textVeryMuted }}>
+      <div className="mt-1.5 text-center text-[8px]" style={{ color: t.textVeryMuted }}>
         of {totalSeats} total seats
       </div>
     </div>
@@ -257,20 +264,6 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
 
       {/* ── Page content ── */}
       <div className="px-3 pt-1 pb-3 sm:px-4 sm:pt-1 sm:pb-4 md:px-6 md:pt-1 md:pb-5">
-
-        {/* ── Mobile seat scorecard ── */}
-        {showSeatScorecard && (
-          <div className="mb-3 md:hidden">
-            <SeatScorecard
-              raceType={raceType}
-              demSeats={demSeats}
-              repSeats={repSeats}
-              totalSeats={totalSeats}
-              theme={t}
-              mobile
-            />
-          </div>
-        )}
 
         {/* ── Map card ── */}
         {(activeTab === "forecast" || activeTab === "counties" || activeTab === "states") && <div
@@ -535,6 +528,23 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
                 })
               }
             </Geographies>
+            {isHouse && (
+              <Geographies geography={STATES_URL}>
+                {({ geographies }: { geographies: GeoFeature[] }) =>
+                  geographies.map((geo) => (
+                    <Geography
+                      key={geo.rsmKey}
+                      geography={geo}
+                      style={{
+                        default: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                        hover: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                        pressed: { fill: "none", stroke: t.mapStroke, strokeWidth: 1.5, outline: "none", pointerEvents: "none" },
+                      }}
+                    />
+                  ))
+                }
+              </Geographies>
+            )}
             </ZoomableGroup>
           </ComposableMap>}
 
@@ -664,6 +674,20 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
           })()}
 
         </div>}
+
+        {/* ── Mobile seat scorecard ── */}
+        {showSeatScorecard && (
+          <div className="mt-3 md:hidden">
+            <SeatScorecard
+              raceType={raceType}
+              demSeats={demSeats}
+              repSeats={repSeats}
+              totalSeats={totalSeats}
+              theme={t}
+              mobile
+            />
+          </div>
+        )}
 
         {/* ── Mobile selected-race panel (below map) ── */}
         {selected && (() => {
