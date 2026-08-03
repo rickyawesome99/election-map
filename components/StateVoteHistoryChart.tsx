@@ -141,7 +141,7 @@ function buildSegmentLines(points: ChartPoint[]): {
   return { chartData, segments };
 }
 
-export default function StateVoteHistoryChart({ results }: { results: VoteResultInput[] }) {
+export default function StateVoteHistoryChart({ results, bare = false }: { results: VoteResultInput[]; bare?: boolean }) {
   const availableTabs = TAB_ORDER.filter(
     tab => getChartPoints(tab, results).length >= 1
   );
@@ -154,36 +154,27 @@ export default function StateVoteHistoryChart({ results }: { results: VoteResult
   const axisConfig = niceAxisConfig(chartPoints.map(p => p.repMargin));
   const { chartData, segments } = buildSegmentLines(chartPoints);
 
-  return (
-    <div
-      className="rounded-xl overflow-hidden"
-      style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-    >
-      <div className="px-3 pt-3 pb-1 flex items-center justify-between">
-        <h2 className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
-          Vote History
-        </h2>
-        {availableTabs.length > 1 && (
-          <div className="flex rounded-md overflow-hidden" style={{ border: "1px solid var(--app-border)", opacity: 0.92 }}>
-            {availableTabs.map(tab => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className="text-[10px] font-semibold px-2 py-1 transition-colors"
-                style={
-                  activeTab === tab
-                    ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }
-                    : { background: "var(--app-panel)", color: "var(--app-text-muted)" }
-                }
-              >
-                {TAB_LABELS[tab]}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
+  const raceTabs = availableTabs.length > 1 && (
+    <div className="flex overflow-hidden rounded-md" style={{ border: "1px solid var(--app-border)", opacity: 0.92 }}>
+      {availableTabs.map(tab => (
+        <button
+          key={tab}
+          onClick={() => setActiveTab(tab)}
+          className="px-2 py-1 text-[10px] font-semibold transition-colors"
+          style={
+            activeTab === tab
+              ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }
+              : { background: "var(--app-panel)", color: "var(--app-text-muted)" }
+          }
+        >
+          {TAB_LABELS[tab]}
+        </button>
+      ))}
+    </div>
+  );
 
-      <div className="px-4 pt-1 pb-3" style={{ height: 360 }}>
+  const chart = (
+      <div className={bare ? "min-h-0 flex-1 px-1 pb-1 pt-1" : "px-4 pb-3 pt-1"} style={bare ? undefined : { height: 360 }}>
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={chartData} margin={{ top: 10, right: 12, bottom: 2, left: 0 }}>
             <XAxis
@@ -258,6 +249,29 @@ export default function StateVoteHistoryChart({ results }: { results: VoteResult
           </LineChart>
         </ResponsiveContainer>
       </div>
+  );
+
+  if (bare) {
+    return (
+      <div className="flex h-full min-h-0 flex-col">
+        {raceTabs && <div className="flex shrink-0 justify-end pb-2">{raceTabs}</div>}
+        {chart}
+      </div>
+    );
+  }
+
+  return (
+    <div
+      className="overflow-hidden rounded-xl"
+      style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+    >
+      <div className="flex items-center justify-between px-3 pb-1 pt-3">
+        <h2 className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
+          Vote History
+        </h2>
+        {raceTabs}
+      </div>
+      {chart}
     </div>
   );
 }

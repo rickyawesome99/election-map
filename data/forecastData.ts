@@ -13287,7 +13287,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Don Davis",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2024, "demPct": 49.52, "repPct": 47.84, "demCandidate": "Donald Davis", "repCandidate": "Laurie Buckhout", "demVotes": 186341, "repVotes": 180034, "totalVotes": 376324, "margin": -1.68, "demIncumbent": true },
+      { "year": 2024, "demPct": 49.52, "repPct": 47.84, "demCandidate": "Don Davis", "repCandidate": "Laurie Buckhout", "demVotes": 186341, "repVotes": 180034, "totalVotes": 376324, "margin": -1.68, "demIncumbent": true },
       { "year": 2022, "demPct": 52.37, "repPct": 47.63, "demCandidate": "Don Davis", "repCandidate": "Sandy Smith", "demVotes": 134996, "repVotes": 122780, "totalVotes": 257776, "margin": -4.74 },
       { "year": 2020, "demPct": 54.18, "repPct": 45.82, "demCandidate": "Butterfield", "repCandidate": "Sandy Smith", "demVotes": 188870, "repVotes": 159748, "totalVotes": 348618, "margin": -8.36, "demIncumbent": true },
       { "year": 2018, "demPct": 69.85, "repPct": 30.15, "demCandidate": "Butterfield", "repCandidate": "Roger Allison", "demVotes": 190457, "repVotes": 82218, "totalVotes": 272675, "margin": -39.7, "demIncumbent": true },
