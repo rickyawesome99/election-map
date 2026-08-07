@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { countySenateData } from "@/data/countySenateData";
+import { senateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import BackButton from "@/components/BackButton";
 import StateCountyMap from "@/components/StateCountyMap";
@@ -14,6 +16,10 @@ const PRESIDENTIAL_CANDIDATES: Record<(typeof YEARS)[number], { dem: string; rep
   2020: { dem: "Joe Biden", rep: "Donald Trump" },
   2024: { dem: "Kamala Harris", rep: "Donald Trump" },
 };
+
+// Determines tie-break order when more than one race type shares a year (e.g. 2024
+// President + 2024 Senate), matching the type order used in the Counties map toggle.
+const RACE_TYPE_ORDER = ["President", "Governor", "Senate", "House"];
 
 function getAreaLabel(abbr: string): string {
   if (abbr === "LA") return "Parish";
@@ -33,7 +39,7 @@ export async function generateMetadata({ params }: { params: Promise<{ fips: str
   const areaLabel = getAreaLabel(county.state);
   return {
     title: `${county.countyName} ${areaLabel}, ${stateName} — Past Election Results`,
-    description: `2008-2024 presidential election results for ${county.countyName} ${areaLabel}, ${stateName}.`,
+    description: `Past presidential and Senate election results for ${county.countyName} ${areaLabel}, ${stateName}.`,
   };
 }
 
@@ -45,7 +51,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
   const stateName = FIPS_TO_STATE[fips.slice(0, 2)]?.name ?? county.state;
   const areaLabel = getAreaLabel(county.state);
 
-  const results: DetailPastResult[] = YEARS
+  const presidentResults: DetailPastResult[] = YEARS
     .filter((y) => county.years[y])
     .map((y) => {
       const r = county.years[y]!;
@@ -58,9 +64,48 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         repVotes: r.repVotes,
         demCandidate: candidates.dem,
         repCandidate: candidates.rep,
+        electionType: "President",
       };
-    })
-    .sort((a, b) => b.year - a.year);
+    });
+
+  const senateCounty = countySenateData[fips];
+  const senateResults: DetailPastResult[] = senateCounty
+    ? Object.entries(senateCounty.years)
+        .filter(([, r]) => r)
+        .map(([y, r]) => {
+          const year = Number(y);
+          const candidates = senateCandidatesByYear[county.state]?.[year];
+          return {
+            year,
+            demPct: r!.demPct,
+            repPct: r!.repPct,
+            demVotes: r!.demVotes,
+            repVotes: r!.repVotes,
+            demCandidate: candidates?.dem,
+            repCandidate: candidates?.rep,
+            electionType: "Senate",
+          };
+        })
+    : [];
+
+  const merged: DetailPastResult[] = [...presidentResults, ...senateResults].sort(
+    (a, b) =>
+      b.year - a.year ||
+      RACE_TYPE_ORDER.indexOf(a.electionType!) - RACE_TYPE_ORDER.indexOf(b.electionType!)
+  );
+
+  // Swing compares each race to the most recent prior result of the *same* race type -
+  // computed here (rather than left to PastElectionResultsSection's built-in swingCycleYears
+  // auto-calc) because that calc assumes one fixed cycle length and a single race type; with
+  // President (4-year) and Senate (6-year) rows interleaved, a naive year-cycle match would
+  // wrongly diff a Senate result against a President result from 4 years earlier.
+  const results: DetailPastResult[] = merged.map((res) => {
+    const prev = merged
+      .filter((r) => r.electionType === res.electionType && r.year < res.year)
+      .sort((a, b) => b.year - a.year)[0];
+    const swing = prev ? parseFloat(((prev.demPct - prev.repPct) - (res.demPct - res.repPct)).toFixed(1)) : null;
+    return { ...res, swing };
+  });
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
@@ -102,12 +147,11 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
               <PastElectionResultsSection
                 results={results}
                 fallbackYears={[2024, 2020, 2016, 2012, 2008]}
-                showElectionType={false}
-                swingCycleYears={4}
+                showElectionType
               />
             ) : (
               <div className="rounded-xl p-4 text-sm" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-very-muted)" }}>
-                No historical presidential results available for this {areaLabel.toLowerCase()}.
+                No historical election results available for this {areaLabel.toLowerCase()}.
               </div>
             )}
           </div>

@@ -4,13 +4,20 @@ import { useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import type { Theme } from "./ForecastMap";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
-import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { countyPresidentialData, type CountyYearResult } from "@/data/countyPresidentialData";
+import { countySenateData } from "@/data/countySenateData";
 import { electionCalendar, type CountyRaceType } from "@/data/electionCalendar";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
 import { FIPS_TO_STATE } from "@/lib/fips";
 
 type RaceType = "president" | CountyRaceType;
 type PresYear = 2008 | 2012 | 2016 | 2020 | 2024;
+
+function getCountyResult(raceType: RaceType, year: number, fips: string): CountyYearResult | null {
+  if (raceType === "president") return countyPresidentialData[fips]?.years[year as PresYear] ?? null;
+  if (raceType === "senate") return countySenateData[fips]?.years[year] ?? null;
+  return null; // governor/house county data not compiled yet
+}
 
 const RACE_TYPES: { key: RaceType; label: string }[] = [
   { key: "president", label: "President" },
@@ -125,7 +132,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
       >
       {/* Hover tooltip */}
       {hovered && (() => {
-        const result = isPresident ? countyPresidentialData[hovered.fips]?.years[year as PresYear] ?? null : null;
+        const result = getCountyResult(raceType, year, hovered.fips);
         const hasElection = isPresident || (electionCalendar[raceType as CountyRaceType][hovered.stateAbbr]?.includes(year) ?? false);
         const tipW = 180;
         const tipH = result ? 84 : 66;
@@ -151,7 +158,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
               boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
             }}
           >
-            {isPresident ? (
+            {result ? (
               <>
                 <div className="font-bold text-xs" style={{ color: t.textPrimary }}>
                   {hovered.name} {areaLabel}
@@ -159,20 +166,24 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                 <div className="text-[10px] mt-0.5" style={{ color: t.textMuted }}>
                   {hovered.stateName} · FIPS {hovered.fips}
                 </div>
-                {result ? (
-                  <>
-                    <div className="text-xs font-bold mt-1" style={{ color: result.margin <= 0 ? t.demText : t.repText }}>
-                      {marginLabel(result.margin)}
-                    </div>
-                    <div className="text-[10px] mt-0.5" style={{ color: t.textMuted }}>
-                      {result.totalVotes.toLocaleString()} votes ({year})
-                    </div>
-                  </>
-                ) : (
-                  <div className="text-[10px] mt-1" style={{ color: t.textVeryMuted }}>
-                    No {year} data
-                  </div>
-                )}
+                <div className="text-xs font-bold mt-1" style={{ color: result.margin <= 0 ? t.demText : t.repText }}>
+                  {marginLabel(result.margin)}
+                </div>
+                <div className="text-[10px] mt-0.5" style={{ color: t.textMuted }}>
+                  {result.totalVotes.toLocaleString()} votes ({year})
+                </div>
+              </>
+            ) : isPresident ? (
+              <>
+                <div className="font-bold text-xs" style={{ color: t.textPrimary }}>
+                  {hovered.name} {areaLabel}
+                </div>
+                <div className="text-[10px] mt-0.5" style={{ color: t.textMuted }}>
+                  {hovered.stateName} · FIPS {hovered.fips}
+                </div>
+                <div className="text-[10px] mt-1" style={{ color: t.textVeryMuted }}>
+                  No {year} data
+                </div>
               </>
             ) : hasElection ? (
               <>
@@ -216,7 +227,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                 const fips = String(geo.id ?? "");
                 const statePrefix = fips.slice(0, 2);
                 const stateInfo = FIPS_TO_STATE[statePrefix];
-                const result = isPresident ? countyPresidentialData[fips]?.years[year as PresYear] ?? null : null;
+                const result = getCountyResult(raceType, year, fips);
                 const hasElection = isPresident || (electionCalendar[raceType as CountyRaceType][stateInfo?.abbr ?? ""]?.includes(year) ?? false);
                 const county: County = {
                   fips,
@@ -225,8 +236,9 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                   stateName: stateInfo?.name ?? "",
                 };
                 const isSelected = selected?.fips === fips;
-                const fill = isPresident
-                  ? (result ? getRaceColor(result.margin) : t.mapUnfilled)
+                const clickable = result !== null;
+                const fill = result
+                  ? getRaceColor(result.margin)
                   : (hasElection ? t.mapUnfilled : t.noElection);
 
                 return (
@@ -236,7 +248,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                     onMouseEnter={() => setHovered(county)}
                     onMouseLeave={() => setHovered(null)}
                     onClick={() => {
-                      if (!isPresident) return;
+                      if (!clickable) return;
                       if (Date.now() < ignoreClickUntilRef.current) return;
                       setSelected(isSelected ? null : county);
                     }}
@@ -248,7 +260,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                       touchStartRef.current = { x: e.clientX, y: e.clientY };
                     }}
                     onPointerUp={(e: React.PointerEvent) => {
-                      if (!isPresident) return;
+                      if (!clickable) return;
                       if (e.pointerType !== "touch") return;
                       const start = touchStartRef.current;
                       touchStartRef.current = null;
@@ -265,11 +277,15 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                         outline: "none",
                       },
                       hover: {
-                        fill: isPresident ? (result ? fill : t.hoverUnfilled) : fill,
+                        // hoverUnfilled is a subtle "selectable but empty" highlight, only
+                        // meaningful where every county is normally clickable (president);
+                        // other race types have plenty of non-clickable counties by design
+                        // (pending data, no election that cycle) and shouldn't flash on hover.
+                        fill: isPresident && !result ? t.hoverUnfilled : fill,
                         stroke: t.hoverStroke,
                         strokeWidth: 0.5,
                         outline: "none",
-                        cursor: isPresident ? "pointer" : "default",
+                        cursor: clickable ? "pointer" : "default",
                       },
                       pressed: {
                         fill,
@@ -355,7 +371,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
           <div className="p-2.5">
             <div className="text-[9px]" style={{ color: t.textVeryMuted }}>FIPS {selected.fips}</div>
             {(() => {
-              const result = countyPresidentialData[selected.fips]?.years[year as PresYear] ?? null;
+              const result = getCountyResult(raceType, year, selected.fips);
               if (!result) {
                 return <div className="mt-1.5 text-[9px]" style={{ color: t.textVeryMuted }}>No {year} data</div>;
               }
@@ -407,7 +423,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
             <span className="text-[10px]" style={{ color: t.textMuted }}>
               {selected.stateName}
               {(() => {
-                const result = countyPresidentialData[selected.fips]?.years[year as PresYear] ?? null;
+                const result = getCountyResult(raceType, year, selected.fips);
                 return result ? ` · ${marginLabel(result.margin)} (${year})` : ` · No ${year} data`;
               })()}
             </span>
