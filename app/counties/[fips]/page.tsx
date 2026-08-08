@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
 import { senateCandidatesByYear } from "@/data/senateCandidatesByYear";
+import { countyGovernorData } from "@/data/countyGovernorData";
+import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import BackButton from "@/components/BackButton";
 import StateCountyMap from "@/components/StateCountyMap";
@@ -39,7 +41,7 @@ export async function generateMetadata({ params }: { params: Promise<{ fips: str
   const areaLabel = getAreaLabel(county.state);
   return {
     title: `${county.countyName} ${areaLabel}, ${stateName} — Past Election Results`,
-    description: `Past presidential and Senate election results for ${county.countyName} ${areaLabel}, ${stateName}.`,
+    description: `Past presidential, Senate, and Governor election results for ${county.countyName} ${areaLabel}, ${stateName}.`,
   };
 }
 
@@ -88,7 +90,27 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         })
     : [];
 
-  const merged: DetailPastResult[] = [...presidentResults, ...senateResults].sort(
+  const governorCounty = countyGovernorData[fips];
+  const governorResults: DetailPastResult[] = governorCounty
+    ? Object.entries(governorCounty.years)
+        .filter(([, r]) => r)
+        .map(([y, r]) => {
+          const year = Number(y);
+          const candidates = governorCandidatesByYear[county.state]?.[year];
+          return {
+            year,
+            demPct: r!.demPct,
+            repPct: r!.repPct,
+            demVotes: r!.demVotes,
+            repVotes: r!.repVotes,
+            demCandidate: candidates?.dem,
+            repCandidate: candidates?.rep,
+            electionType: "Governor",
+          };
+        })
+    : [];
+
+  const merged: DetailPastResult[] = [...presidentResults, ...governorResults, ...senateResults].sort(
     (a, b) =>
       b.year - a.year ||
       RACE_TYPE_ORDER.indexOf(a.electionType!) - RACE_TYPE_ORDER.indexOf(b.electionType!)

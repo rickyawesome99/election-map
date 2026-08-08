@@ -6,6 +6,7 @@ import type { Theme } from "./ForecastMap";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { countyPresidentialData, type CountyYearResult } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
+import { countyGovernorData } from "@/data/countyGovernorData";
 import { electionCalendar, type CountyRaceType } from "@/data/electionCalendar";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
 import { FIPS_TO_STATE } from "@/lib/fips";
@@ -16,7 +17,8 @@ type PresYear = 2008 | 2012 | 2016 | 2020 | 2024;
 function getCountyResult(raceType: RaceType, year: number, fips: string): CountyYearResult | null {
   if (raceType === "president") return countyPresidentialData[fips]?.years[year as PresYear] ?? null;
   if (raceType === "senate") return countySenateData[fips]?.years[year] ?? null;
-  return null; // governor/house county data not compiled yet
+  if (raceType === "governor") return countyGovernorData[fips]?.years[year] ?? null;
+  return null; // house county data not compiled yet
 }
 
 const RACE_TYPES: { key: RaceType; label: string }[] = [
