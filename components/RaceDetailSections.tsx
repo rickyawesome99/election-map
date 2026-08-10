@@ -26,6 +26,8 @@ export type DetailPastResult = {
   electionType?: string;
   nationalDiff?: number | null;
   swing?: number | null;
+  note?: string;
+  districtLabel?: string;
   placeholder?: boolean;
 };
 
@@ -974,6 +976,14 @@ export function PastElectionResultsSection({
                   {showElectionType && res.electionType && (!showSpecialBadgeForSpecialElections || !res.electionType.toLowerCase().includes("special")) && (
                     <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{res.electionType}</span>
                   )}
+                  {!isPlaceholder && res.districtLabel && (
+                    <span
+                      className="text-[11px] font-semibold px-1.5 py-0.5 rounded whitespace-nowrap shrink-0"
+                      style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
+                    >
+                      {res.districtLabel}
+                    </span>
+                  )}
                   {showElectionType && res.electionType && showSpecialBadgeForSpecialElections && res.electionType.toLowerCase().includes("special") && (
                     <span
                       className="text-[11px] font-semibold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0"
@@ -1089,6 +1099,15 @@ export function PastElectionResultsSection({
                   )}
                 </div>
               </div>
+
+              {!isPlaceholder && res.note && (
+                <div
+                  className="mt-1.5 text-[11px] leading-snug rounded px-2 py-1"
+                  style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
+                >
+                  {res.note}
+                </div>
+              )}
             </div>
           );
         })}

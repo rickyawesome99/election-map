@@ -4,6 +4,7 @@ import { countySenateData } from "@/data/countySenateData";
 import { senateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
+import { countyHouseData } from "@/data/countyHouseData";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import BackButton from "@/components/BackButton";
 import StateCountyMap from "@/components/StateCountyMap";
@@ -27,6 +28,17 @@ function getAreaLabel(abbr: string): string {
   if (abbr === "LA") return "Parish";
   if (abbr === "AK") return "Borough";
   return "County";
+}
+
+// A county's House number is the SUM of every congressional district touching it (see
+// data/countyHouseData.ts), and which district(s) those are can change year to year via
+// redistricting - so this is computed per year, not once for the county as a whole.
+function formatDistrictLabel(stateAbbr: string, districts: number[]): string | undefined {
+  if (districts.length === 0) return undefined;
+  const labels = districts.map((d) => `${stateAbbr}-${String(d).padStart(2, "0")}`);
+  if (labels.length === 1) return labels[0];
+  if (labels.length === 2) return `${labels[0]} & ${labels[1]}`;
+  return `${labels.slice(0, -1).join(", ")} & ${labels[labels.length - 1]}`;
 }
 
 export async function generateStaticParams() {
@@ -110,7 +122,26 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         })
     : [];
 
-  const merged: DetailPastResult[] = [...presidentResults, ...governorResults, ...senateResults].sort(
+  const houseCounty = countyHouseData[fips];
+  const houseResults: DetailPastResult[] = houseCounty
+    ? Object.entries(houseCounty.years)
+        .filter(([, r]) => r)
+        .map(([y, r]) => {
+          const year = Number(y);
+          return {
+            year,
+            demPct: r!.demPct,
+            repPct: r!.repPct,
+            demVotes: r!.demVotes,
+            repVotes: r!.repVotes,
+            electionType: "House",
+            note: r!.samePartyNote,
+            districtLabel: formatDistrictLabel(county.state, r!.districts),
+          };
+        })
+    : [];
+
+  const merged: DetailPastResult[] = [...presidentResults, ...governorResults, ...senateResults, ...houseResults].sort(
     (a, b) =>
       b.year - a.year ||
       RACE_TYPE_ORDER.indexOf(a.electionType!) - RACE_TYPE_ORDER.indexOf(b.electionType!)
