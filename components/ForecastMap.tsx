@@ -272,7 +272,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
         {(activeTab === "forecast" || activeTab === "counties" || activeTab === "states") && <div
           className={
             activeTab === "counties"
-              ? "relative rounded-xl"
+              ? "relative overflow-hidden rounded-xl"
               : "relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-[520px]"
           }
           style={{
@@ -580,7 +580,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
 
           {/* ── Legend (bottom-left) ── */}
           <div
-            className="hidden md:flex absolute items-center gap-1 p-1"
+            className={`${activeTab === "counties" ? "hidden" : "hidden md:flex"} absolute items-center gap-1 p-1`}
             style={{ bottom: "12px", left: "1rem" }}
           >
             {LEGEND.map(({ color, label }) => (

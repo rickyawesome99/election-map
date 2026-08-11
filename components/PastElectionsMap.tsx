@@ -6,16 +6,8 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 import { getRaceColor } from "@/lib/colorScale";
 import type { HouseStatewideResult } from "@/data/forecastData";
 import { useDarkMode } from "@/lib/useDarkMode";
-import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
+import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
-
-function getGeoUrl(year: number): string {
-  if (year <= 2017) return "/congressional-districts-2016.json";
-  if (year <= 2019) return "/congressional-districts-2018.json";
-  if (year <= 2021) return "/congressional-districts-pre2022.json";
-  if (year <= 2022) return "/congressional-districts-2022.json";
-  return "/congressional-districts-2024.json";
-}
 
 const STATE_PROJ: Record<string, [number, number, number]> = {
   AL: [-86.8, 32.8, 4800],  AK: [-153.0, 64.0, 900],   AZ: [-111.7, 34.3, 3600],
@@ -126,7 +118,7 @@ export default function PastElectionsMap({
 
   const sel = availableElections.find(e => e.key === selectedKey) ?? availableElections[0] ?? null;
 
-  const geoUrl = sel ? getGeoUrl(sel.year) : "/congressional-districts-pre2022.json";
+  const geoUrl = sel ? getCongressionalDistrictsGeoUrl(sel.year) : "/congressional-districts-pre2022.json";
   const landMaskFips = getLandMaskFips(stateAbbr);
 
   const resultByGeoid = useMemo(() => {

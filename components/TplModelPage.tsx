@@ -6,6 +6,7 @@ import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simp
 import { getRaceColor } from "@/lib/colorScale";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
+import { NationalLandMask, NationalLandMaskDefinition } from "./StateLandMask";
 import {
   houseData,
   houseDistrictInfo,
@@ -465,7 +466,9 @@ function TplDistrictMap({
       })()}
 
       <ComposableMap projection="geoAlbersUsa" projectionConfig={{ scale: 1200 }} style={{ width: "100%", height: "100%" }}>
+        <NationalLandMaskDefinition />
         <ZoomableGroup key={mapKey} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
+          <NationalLandMask enabled>
           <Geographies geography={DISTRICTS_GEO_URL}>
             {({ geographies }: { geographies: DistrictGeoFeature[] }) =>
               geographies.map((geo) => {
@@ -521,6 +524,7 @@ function TplDistrictMap({
               ))
             }
           </Geographies>
+          </NationalLandMask>
         </ZoomableGroup>
       </ComposableMap>
 
