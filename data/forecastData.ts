@@ -2759,7 +2759,9 @@ export const governorData: RaceForecast[] = [
     "pastResults": [
       { "year": 2024, "demPct": 44.27, "repPct": 53.61, "demCandidate": "Joyce Craig", "repCandidate": "Kelly Ayotte", "demVotes": 360149, "repVotes": 436122, "totalVotes": 813511, "margin": 9.34, "electionType": "Regular" },
       { "year": 2022, "demPct": 41.47, "repPct": 56.98, "demCandidate": "Tom Sherman", "repCandidate": "Chris Sununu", "demVotes": 256766, "repVotes": 352813, "totalVotes": 619184, "margin": 15.51, "electionType": "Regular", "repIncumbent": true },
-      { "year": 2020, "demPct": 33.36, "repPct": 65.12, "demCandidate": "Dan Feltes", "repCandidate": "Chris Sununu", "demVotes": 264639, "repVotes": 516609, "totalVotes": 793318, "margin": 31.76, "electionType": "Regular", "repIncumbent": true }
+      { "year": 2020, "demPct": 33.36, "repPct": 65.12, "demCandidate": "Dan Feltes", "repCandidate": "Chris Sununu", "demVotes": 264639, "repVotes": 516609, "totalVotes": 793318, "margin": 31.76, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2018, "demPct": 45.74, "repPct": 52.78, "demCandidate": "Molly Kelly", "repCandidate": "Chris Sununu", "demVotes": 262359, "repVotes": 302764, "totalVotes": 573602, "margin": 7.04, "electionType": "Regular", "repIncumbent": true },
+      { "year": 2016, "demPct": 46.57, "repPct": 48.84, "demCandidate": "Colin Van Ostern", "repCandidate": "Chris Sununu", "demVotes": 337589, "repVotes": 354040, "totalVotes": 724863, "margin": 2.27, "electionType": "Regular" }
     ]
   },
   {
@@ -14938,14 +14940,14 @@ export const houseData: RaceForecast[] = [
     "polyRep": 0.47,
     "candidates": {
       "dem": { "name": "Paige Cognetti", "party": "D", "incumbent": false },
-      "rep": { "name": "Rob Bresnahan", "party": "R", "incumbent": false }
+      "rep": { "name": "Rob Bresnahan", "party": "R", "incumbent": true }
     },
-    "seatHolder": "Robert Bresnahan",
+    "seatHolder": "Rob Bresnahan",
     "seatParty": "R",
     "pastResults": [
       { "year": 2024, "demPct": 49.19, "repPct": 50.81, "demCandidate": "Matt Cartwright", "repCandidate": "Rob Bresnahan", "demVotes": 189411, "repVotes": 195663, "totalVotes": 385074, "margin": 1.62, "demIncumbent": true },
       { "year": 2022, "demPct": 51.22, "repPct": 48.78, "demCandidate": "Matt Cartwright", "repCandidate": "Jim Bognet", "demVotes": 146956, "repVotes": 139930, "totalVotes": 286886, "margin": -2.44, "demIncumbent": true },
-      { "year": 2020, "demPct": 51.78, "repPct": 48.22, "demCandidate": "Matthew Alton Cartwright", "repCandidate": "James Rocco Bognet", "demVotes": 178004, "repVotes": 165783, "totalVotes": 343787, "margin": -3.56, "demIncumbent": true },
+      { "year": 2020, "demPct": 51.78, "repPct": 48.22, "demCandidate": "Matt Cartwright", "repCandidate": "Jim Bognet", "demVotes": 178004, "repVotes": 165783, "totalVotes": 343787, "margin": -3.56, "demIncumbent": true },
       { "year": 2018, "demPct": 54.64, "repPct": 45.36, "demCandidate": "Matt Cartwright", "repCandidate": "John Chrin", "demVotes": 135603, "repVotes": 112563, "totalVotes": 248166, "margin": -9.28 },
       { "year": 2016, "demPct": 45.57, "repPct": 54.43, "demCandidate": "Steve Santarsiero", "repCandidate": "Brian Fitzpatrick", "demVotes": 173555, "repVotes": 207263, "totalVotes": 380818, "margin": 8.86 }
     ]

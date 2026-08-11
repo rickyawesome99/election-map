@@ -5,7 +5,7 @@ import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
-import { WisconsinLandClip, WisconsinLandMask } from "./WisconsinLandClip";
+import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
 
 const DISTRICTS_URL = "/congressional-districts-2026.json";
 
@@ -150,6 +150,7 @@ export default function DistrictMiniMap({
   const mapStroke = "var(--app-bg)";
   const mutedFill = "var(--app-border)";
   const geoUrl = selectedYear ? getGeoUrlForYear(selectedYear) : DISTRICTS_URL;
+  const landMaskFips = getLandMaskFips(stateAbbr);
 
   const showYearToggle = boundaryYears && boundaryYears.length > 1;
 
@@ -184,9 +185,9 @@ export default function DistrictMiniMap({
         projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
         style={{ width: "100%", height: "100%" }}
       >
-        {stateAbbr === "WI" && <WisconsinLandClip />}
+        {landMaskFips && <StateLandMaskDefinition stateFips={landMaskFips} />}
         <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
-          <WisconsinLandMask enabled={stateAbbr === "WI"}>
+          <StateLandMask stateFips={landMaskFips}>
           <Geographies
             key={geoUrl}
             geography={geoUrl}
@@ -220,7 +221,7 @@ export default function DistrictMiniMap({
               })
             }
           </Geographies>
-          </WisconsinLandMask>
+          </StateLandMask>
         </ZoomableGroup>
       </ComposableMap>
     </div>

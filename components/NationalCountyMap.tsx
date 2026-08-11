@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import type { Theme } from "./ForecastMap";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
@@ -21,6 +21,42 @@ function getCountyResult(raceType: RaceType, year: number, fips: string): County
   if (raceType === "governor") return countyGovernorData[fips]?.years[year] ?? null;
   if (raceType === "house") return countyHouseData[fips]?.years[year] ?? null;
   return null;
+}
+
+function getAllCountyResults(raceType: RaceType, year: number): CountyYearResult[] {
+  const store =
+    raceType === "president" ? countyPresidentialData
+    : raceType === "senate" ? countySenateData
+    : raceType === "governor" ? countyGovernorData
+    : countyHouseData;
+  const results: CountyYearResult[] = [];
+  for (const fips in store) {
+    const result = store[fips]?.years[year as PresYear];
+    if (result) results.push(result);
+  }
+  return results;
+}
+
+type AggregateStats = {
+  demVotes: number; repVotes: number; totalVotes: number;
+  demPct: number; repPct: number; margin: number;
+  demCounties: number; repCounties: number;
+};
+
+function getAggregateStats(raceType: RaceType, year: number): AggregateStats {
+  const results = getAllCountyResults(raceType, year);
+  let demVotes = 0, repVotes = 0, totalVotes = 0, demCounties = 0, repCounties = 0;
+  for (const r of results) {
+    demVotes += r.demVotes;
+    repVotes += r.repVotes;
+    totalVotes += r.totalVotes;
+    if (r.margin <= 0) demCounties++;
+    else repCounties++;
+  }
+  const twoParty = demVotes + repVotes;
+  const demPct = twoParty > 0 ? (demVotes / twoParty) * 100 : 0;
+  const repPct = twoParty > 0 ? (repVotes / twoParty) * 100 : 0;
+  return { demVotes, repVotes, totalVotes, demPct, repPct, margin: repPct - demPct, demCounties, repCounties };
 }
 
 const RACE_TYPES: { key: RaceType; label: string }[] = [
@@ -79,9 +115,35 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
 
   const isPresident = raceType === "president";
   const raceLabel = RACE_TYPES.find((r) => r.key === raceType)!.label;
+  const stats = useMemo(() => getAggregateStats(raceType, year), [raceType, year]);
 
   return (
     <div className="w-full">
+      {/* Aggregate stats box */}
+      <div
+        className="grid grid-cols-4 sm:grid-cols-8 gap-px"
+        style={{ background: t.border, borderBottom: `1px solid ${t.border}` }}
+      >
+        {[
+          { label: "D Votes", value: stats.demVotes.toLocaleString(), color: t.demText },
+          { label: "R Votes", value: stats.repVotes.toLocaleString(), color: t.repText },
+          { label: "D %", value: `${stats.demPct.toFixed(1)}%`, color: t.demText },
+          { label: "R %", value: `${stats.repPct.toFixed(1)}%`, color: t.repText },
+          { label: "Margin", value: marginLabel(stats.margin), color: stats.margin <= 0 ? t.demText : t.repText },
+          { label: "Total Votes", value: stats.totalVotes.toLocaleString(), color: t.textPrimary },
+          { label: "D Counties", value: stats.demCounties.toLocaleString(), color: t.demText },
+          { label: "R Counties", value: stats.repCounties.toLocaleString(), color: t.repText },
+        ].map((stat) => (
+          <div key={stat.label} className="flex flex-col items-center justify-center py-1.5 px-1" style={{ background: t.panel }}>
+            <span className="text-[8px] font-semibold uppercase tracking-wide text-center" style={{ color: t.textMuted }}>
+              {stat.label}
+            </span>
+            <span className="tabular-nums text-xs sm:text-sm font-bold mt-0.5" style={{ color: stat.color }}>
+              {stat.value}
+            </span>
+          </div>
+        ))}
+      </div>
     <div className="w-full h-[320px] sm:h-[400px] md:h-[520px] flex flex-col">
       {/* Race type toggle */}
       <div className="flex justify-center pt-2 shrink-0">

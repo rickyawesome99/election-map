@@ -33,6 +33,7 @@ import DistrictFinder from "./DistrictFinder";
 import PollingAverageCard from "./PollingAverageCard";
 import OverviewDashboard from "./OverviewDashboard";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
+import { NationalLandMask, NationalLandMaskDefinition } from "./StateLandMask";
 
 const STATES_URL = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json";
 const HOUSE_DISTRICTS_2026_URL = "/congressional-districts-2026.json";
@@ -459,11 +460,13 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
             projectionConfig={{ scale: 1200 }}
             style={{ width: "100%", height: "100%" }}
           >
+            {isHouse && <NationalLandMaskDefinition />}
             <ZoomableGroup
               key={mapKey}
               filterZoomEvent={filterMapZoomEvent}
               onMoveEnd={() => setViewChanged(true)}
             >
+            <NationalLandMask enabled={isHouse}>
             <Geographies geography={geoUrl}>
               {({ geographies }: { geographies: GeoFeature[] }) =>
                 geographies.map((geo) => {
@@ -547,6 +550,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
                 }
               </Geographies>
             )}
+            </NationalLandMask>
             </ZoomableGroup>
           </ComposableMap>}
 

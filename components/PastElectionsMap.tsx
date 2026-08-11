@@ -7,7 +7,7 @@ import { getRaceColor } from "@/lib/colorScale";
 import type { HouseStatewideResult } from "@/data/forecastData";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
-import { WisconsinLandClip, WisconsinLandMask } from "./WisconsinLandClip";
+import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
 
 function getGeoUrl(year: number): string {
   if (year <= 2017) return "/congressional-districts-2016.json";
@@ -127,6 +127,7 @@ export default function PastElectionsMap({
   const sel = availableElections.find(e => e.key === selectedKey) ?? availableElections[0] ?? null;
 
   const geoUrl = sel ? getGeoUrl(sel.year) : "/congressional-districts-pre2022.json";
+  const landMaskFips = getLandMaskFips(stateAbbr);
 
   const resultByGeoid = useMemo(() => {
     const map = new Map<string, HouseStatewideResult>();
@@ -278,9 +279,9 @@ export default function PastElectionsMap({
           projectionConfig={autoProj ?? { scale: proj[2], center: [proj[0], proj[1]] }}
           style={{ width: "100%", height: "100%" }}
         >
-          {stateAbbr === "WI" && <WisconsinLandClip />}
+          {landMaskFips && <StateLandMaskDefinition stateFips={landMaskFips} />}
           <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
-            <WisconsinLandMask enabled={stateAbbr === "WI"}>
+            <StateLandMask stateFips={landMaskFips}>
             <Geographies
               key={geoUrl}
               geography={geoUrl}
@@ -325,7 +326,7 @@ export default function PastElectionsMap({
                   })
                 }
             </Geographies>
-            </WisconsinLandMask>
+            </StateLandMask>
           </ZoomableGroup>
         </ComposableMap>
 

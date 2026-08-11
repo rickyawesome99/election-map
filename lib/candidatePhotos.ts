@@ -322,7 +322,7 @@ export const candidatePhotos: Record<string, string> = {
   "Lauren Boebert": "/candidates/lauren-boebert.jpg",
   "Mike Bost": "/candidates/mike-bost.jpg",
   "Josh Brecheen": "/candidates/josh-brecheen.jpg",
-  "Robert Bresnahan": "/candidates/robert-bresnahan.jpg",
+  "Rob Bresnahan": "/candidates/robert-bresnahan.jpg",
   "Vern Buchanan": "/candidates/vern-buchanan.jpg",
   "Tim Burchett": "/candidates/tim-burchett.jpg",
   "Eric Burlison": "/candidates/eric-burlison.jpg",
