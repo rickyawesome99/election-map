@@ -443,7 +443,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   }
 
   return (
-    <div className="flex w-full flex-col md:grid md:h-[min(680px,calc(100vh-150px))] md:min-h-[520px] md:grid-cols-[minmax(0,3fr)_minmax(240px,1fr)]">
+    <div className="flex w-full flex-col md:grid md:h-[min(680px,calc(100vh-150px))] md:min-h-[520px] md:grid-cols-[minmax(0,4fr)_minmax(220px,1fr)]">
       <aside
         className="order-1 min-w-0 flex flex-col md:order-2 md:h-full md:min-h-0 md:overflow-y-auto md:border-l"
         style={{ background: t.panel, borderColor: t.border }}
@@ -649,7 +649,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         width={975}
         height={610}
         projection="geoAlbersUsa"
-        projectionConfig={{ scale: 1300 }}
+        projectionConfig={{ scale: 1200 }}
         preserveAspectRatio="xMidYMid slice"
         style={{
           position: "absolute",

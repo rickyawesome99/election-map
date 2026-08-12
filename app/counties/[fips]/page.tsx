@@ -5,10 +5,11 @@ import { senateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { countyHouseData } from "@/data/countyHouseData";
+import { countyDemographics } from "@/data/countyDemographics";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import BackButton from "@/components/BackButton";
 import StateCountyMap from "@/components/StateCountyMap";
-import { AboutRaceCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CountyDemographicsCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 
 const YEARS = [2008, 2012, 2016, 2020, 2024] as const;
 
@@ -162,7 +163,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <main className="max-w-2xl mx-auto px-4 pt-0 pb-4 sm:px-6">
+      <main className="max-w-7xl mx-auto px-4 pt-0 pb-4 sm:px-6">
         <div className="mb-1">
           <BackButton />
         </div>
@@ -178,35 +179,47 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
           </p>
         </div>
 
-        <div className="flex flex-col gap-3">
-          <div className="order-1 overflow-hidden rounded-xl" style={{ border: "1px solid var(--app-border)" }}>
-            <StateCountyMap stateAbbr={county.state} stateName={stateName} height={280} highlightFips={fips} />
-          </div>
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:items-start">
+          {/* Left column — display:contents on mobile so children become direct grid items (enabling order-based reflow), flex-col on desktop */}
+          <div className="contents md:flex md:flex-col md:gap-3">
+            <div className="order-1 overflow-hidden rounded-xl" style={{ border: "1px solid var(--app-border)" }}>
+              <StateCountyMap stateAbbr={county.state} stateName={stateName} height={280} highlightFips={fips} />
+            </div>
 
-          <div className="order-2">
-            <AboutRaceCard
-              title="About this County"
-              description={`${county.countyName} ${areaLabel} is located in ${stateName}.`}
-              items={[
-                { label: "State", value: stateName },
-                { label: "Area type", value: areaLabel },
-                { label: "FIPS", value: fips },
-              ]}
-            />
-          </div>
-
-          <div className="order-3">
-            {results.length > 0 ? (
-              <PastElectionResultsSection
-                results={results}
-                fallbackYears={[2024, 2020, 2016, 2012, 2008]}
-                showElectionType
+            <div className="order-2">
+              <AboutRaceCard
+                title="About this County"
+                description={`${county.countyName} ${areaLabel} is located in ${stateName}.`}
+                items={[
+                  { label: "State", value: stateName },
+                  { label: "Area type", value: areaLabel },
+                  { label: "FIPS", value: fips },
+                ]}
               />
-            ) : (
-              <div className="rounded-xl p-4 text-sm" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-very-muted)" }}>
-                No historical election results available for this {areaLabel.toLowerCase()}.
-              </div>
-            )}
+            </div>
+
+            <div className="order-3">
+              {results.length > 0 ? (
+                <PastElectionResultsSection
+                  results={results}
+                  fallbackYears={[2024, 2020, 2016, 2012, 2008]}
+                  showElectionType
+                  scrollable
+                  maxHeight="400px"
+                />
+              ) : (
+                <div className="rounded-xl p-4 text-sm" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-very-muted)" }}>
+                  No historical election results available for this {areaLabel.toLowerCase()}.
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Right column — display:contents on mobile, flex-col on desktop */}
+          <div className="contents md:flex md:flex-col md:gap-3">
+            <div className="order-4">
+              <CountyDemographicsCard {...(countyDemographics[fips] ?? {})} />
+            </div>
           </div>
         </div>
       </main>

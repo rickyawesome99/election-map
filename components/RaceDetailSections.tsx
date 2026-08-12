@@ -1414,3 +1414,61 @@ export function HouseOnlyDistrictBoundariesSection({
     </section>
   );
 }
+
+/** County-page-only demographics box (right column). Values come from
+ * data/countyDemographics.ts; any missing field (e.g. CT's legacy counties, see that
+ * file's header comment) renders as "N/A" rather than a fabricated 0. */
+export function CountyDemographicsCard({
+  collegePct, whitePct, blackPct, hispanicPct, asianPct, medianHouseholdIncome,
+}: {
+  collegePct?: number;
+  whitePct?: number;
+  blackPct?: number;
+  hispanicPct?: number;
+  asianPct?: number;
+  medianHouseholdIncome?: number;
+}) {
+  const noCollegePct = collegePct != null ? parseFloat((100 - collegePct).toFixed(1)) : undefined;
+  const stats: { label: string; value?: number; format: "pct" | "usd" }[] = [
+    { label: "College", value: collegePct, format: "pct" },
+    { label: "No College", value: noCollegePct, format: "pct" },
+    { label: "White", value: whitePct, format: "pct" },
+    { label: "Black", value: blackPct, format: "pct" },
+    { label: "Hispanic", value: hispanicPct, format: "pct" },
+    { label: "Asian", value: asianPct, format: "pct" },
+  ];
+
+  return (
+    <section
+      className="rounded-xl p-3 mb-0"
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+    >
+      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+        Demographics
+      </h2>
+      <div className="grid grid-cols-2 gap-2">
+        {stats.map(({ label, value }) => (
+          <div key={label} className="rounded-lg p-2.5 flex flex-col" style={{ background: "var(--app-bg)" }}>
+            <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
+              {label}
+            </div>
+            <div className="text-sm font-bold mt-auto tabular-nums" style={{ color: value != null ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
+              {value != null ? `${value.toFixed(1)}%` : "N/A"}
+            </div>
+          </div>
+        ))}
+        <div className="col-span-2 rounded-lg p-2.5 flex flex-col" style={{ background: "var(--app-bg)" }}>
+          <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
+            Median Household Income
+          </div>
+          <div className="text-sm font-bold mt-auto tabular-nums" style={{ color: medianHouseholdIncome != null ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
+            {medianHouseholdIncome != null ? `$${medianHouseholdIncome.toLocaleString()}` : "N/A"}
+          </div>
+        </div>
+      </div>
+      <p className="mt-2 text-[9px]" style={{ color: "var(--app-text-very-muted)" }}>
+        Source: County Health Rankings &amp; Roadmaps / USDA ERS, ACS 5-year estimates.
+      </p>
+    </section>
+  );
+}
