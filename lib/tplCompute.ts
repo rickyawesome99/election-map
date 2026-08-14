@@ -23,8 +23,13 @@ import {
   type CQTier,
 } from "@/data/tplModelData";
 import { districtPresidentialData } from "@/data/districtPresidentialData";
+import { countyPresidentialData } from "@/data/countyPresidentialData";
+import { countySenateData } from "@/data/countySenateData";
+import { countyGovernorData } from "@/data/countyGovernorData";
+import { countyHouseData } from "@/data/countyHouseData";
 import { popVoteData, presIncParty } from "@/data/popVoteData";
 import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
+import { FIPS_TO_STATE } from "@/lib/fips";
 
 // ── Generic ballot ────────────────────────────────────────────────────────────
 // R-positive convention: negative = D-favored (e.g. D+5.3 → -5.3).
@@ -169,8 +174,8 @@ function getPriorPresidentialResult(
 function computeCompetitivenessAdjustment(
   rawMargin: number,
   stub: RaceStub,
-  stateAbbr: string,
-  minValidYear = 0
+  minValidYear: number,
+  presidentialResult: { margin: number; year: number } | null
 ): CompetitivenessAdjustment {
   if (Math.abs(rawMargin) < NONCOMPETITIVE_MARGIN_THRESHOLD) {
     return {
@@ -189,12 +194,6 @@ function computeCompetitivenessAdjustment(
     .sort((a, b) => b.year - a.year);
   const priorContested = priorResults.find(
     (result) => Math.abs(result.margin) < NONCOMPETITIVE_MARGIN_THRESHOLD
-  );
-  const presidentialResult = getPriorPresidentialResult(
-    stateAbbr,
-    stub.district,
-    stub.year,
-    minValidYear
   );
 
   if (priorContested == null && presidentialResult == null) {
@@ -249,6 +248,71 @@ export function computeIF(raceType: string, incumbent: string, rawMargin: number
   if (raceType === "P" || incumbent === "Open" || incumbent === "-" || rawMargin === null) return 1.00;
   const incumbentWon = (incumbent === "R" && rawMargin > 0) || (incumbent === "D" && rawMargin < 0);
   return incumbentWon ? (IF_INCUMBENT_WINS[raceType] ?? 1.00) : (IF_CHALLENGER_WINS[raceType] ?? 1.00);
+}
+
+// ── computePresidentialIF ────────────────────────────────────────────────────
+// Approval-based IF for President races — a national number, so it's identical whether
+// the race is measured at the state, district, or county level; only the target sign varies.
+
+function computePresidentialIF(year: number): number {
+  const pifRow = popVoteData.find((r) => r.type === "President" && r.year === year);
+  return pifRow ? 1 + pifRow.presMargin * G.k_pif * (presIncParty(pifRow.presInc) === "dem" ? 1 : -1) : 1.00;
+}
+
+// ── computeCandidateFactor / computeNM ───────────────────────────────────────
+// Shared by the state and county models so a formula change to either applies to both.
+
+function computeCandidateFactor(raceType: string, adjustedMargin: number, IF: number, CQ: number): number {
+  const cappedAdj = Math.sign(adjustedMargin) * Math.min(Math.abs(adjustedMargin), G.CQ_MARGIN_CAP);
+  return raceType === "P"
+    ? adjustedMargin * (IF - 1) + cappedAdj * (CQ - 1)
+    : adjustedMargin * (IF * CQ - 1);
+}
+
+function computeNM(adjustedMargin: number, candidateFactor_pts: number, FF_pts: number, WA: number): number {
+  return adjustedMargin + candidateFactor_pts + FF_pts + WA;
+}
+
+// ── computeWaveAdjustment ─────────────────────────────────────────────────────
+
+function computeWaveAdjustment(
+  adjustedMargin: number | null,
+  NES: number | null,
+  S: number | null
+): { WA: number; wfCapped: boolean } {
+  if (adjustedMargin == null || NES == null || S == null) return { WA: 0, wfCapped: false };
+  const WA_add = NES * S * G.k_add;
+  const { wf, capped } = computeWF(adjustedMargin, NES, S, G.k_mult);
+  const WA_mult = adjustedMargin * (1 - wf);
+  return { WA: -(0.70 * WA_add + 0.30 * WA_mult), wfCapped: capped };
+}
+
+// ── aggregateYears ────────────────────────────────────────────────────────────
+// Shared by the state and county models: redistributes race-type weights among whichever
+// types are actually present each year, then produces the recency-weighted TPL.
+
+function aggregateYears(races: ComputedRace[]): { yearAggregations: YearAggregation[]; tpl: number } {
+  const yearAggregations = G.YEARS.map((year) => {
+    const yearRaces = races.filter((race) => race.year === year && race.NM != null);
+    const typeNMs: Record<string, number | null> = {};
+    for (const type of ["P", "G", "S", "H", "L"]) {
+      const typeRaces = yearRaces.filter((race) => race.raceType === type);
+      typeNMs[type] = typeRaces.length > 0
+        ? typeRaces.reduce((sum, race) => sum + (race.NM ?? 0), 0) / typeRaces.length
+        : null;
+    }
+    const racesPresent = ["P", "G", "S", "H", "L"].filter((t) => typeNMs[t] != null);
+    const totalBase = racesPresent.reduce((sum, type) => sum + (G.RACE_TYPE_WEIGHTS[type] ?? 0), 0);
+    const redistributedWeights: Record<string, number> = {};
+    for (const type of racesPresent) {
+      redistributedWeights[type] = (G.RACE_TYPE_WEIGHTS[type] ?? 0) / totalBase;
+    }
+    const WRS = racesPresent.reduce((sum, type) => sum + redistributedWeights[type] * (typeNMs[type] ?? 0), 0);
+    return { year, racesPresent, redistributedWeights, typeNMs, WRS };
+  });
+
+  const tpl = yearAggregations.reduce((sum, agg) => sum + (G.YEAR_WEIGHTS[agg.year] ?? 0) * agg.WRS, 0);
+  return { yearAggregations, tpl };
 }
 
 // ── getRawMargin ──────────────────────────────────────────────────────────────
@@ -473,39 +537,15 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
         if (validEntries.length > 0) minValidYear = Math.max(...validEntries.map((e) => e.year));
       }
     }
+    const presidentialBaseline = getPriorPresidentialResult(stateAbbr, stub.district, stub.year, minValidYear);
     const competitiveness =
-      rawMargin == null ? null : computeCompetitivenessAdjustment(rawMargin, stub, stateAbbr, minValidYear);
+      rawMargin == null ? null : computeCompetitivenessAdjustment(rawMargin, stub, minValidYear, presidentialBaseline);
     const adjustedMargin = competitiveness?.adjustedMargin ?? null;
-    let IF: number;
-    if (stub.raceType === "P") {
-      const pifRow = popVoteData.find((r) => r.type === "President" && r.year === stub.year);
-      IF = pifRow ? 1 + pifRow.presMargin * G.k_pif * (presIncParty(pifRow.presInc) === "dem" ? 1 : -1) : 1.00;
-    } else {
-      IF = computeIF(stub.raceType, stub.incumbent, rawMargin);
-    }
-    const cappedAdj = adjustedMargin != null
-      ? Math.sign(adjustedMargin) * Math.min(Math.abs(adjustedMargin), G.CQ_MARGIN_CAP)
-      : null;
-    const candidateFactor_pts = adjustedMargin != null
-      ? stub.raceType === "P"
-        ? adjustedMargin * (IF - 1) + (cappedAdj ?? 0) * (stub.CQ - 1)
-        : adjustedMargin * (IF * stub.CQ - 1)
-      : null;
+    const IF = stub.raceType === "P" ? computePresidentialIF(stub.year) : computeIF(stub.raceType, stub.incumbent, rawMargin);
+    const candidateFactor_pts = adjustedMargin != null ? computeCandidateFactor(stub.raceType, adjustedMargin, IF, stub.CQ) : null;
     const FF_pts = adjustedMargin != null ? adjustedMargin * (stub.FF - 1) : null;
-    let WA = 0;
-    let wfCapped = false;
-    if (adjustedMargin != null && S != null && NES != null) {
-      const WA_add = NES * S * G.k_add;
-      const { wf, capped } = computeWF(adjustedMargin, NES, S, G.k_mult);
-      const WA_mult = adjustedMargin * (1 - wf);
-      WA = -(0.70 * WA_add + 0.30 * WA_mult);
-      wfCapped = capped;
-    }
-    const NM = adjustedMargin != null
-      ? stub.raceType === "P"
-        ? adjustedMargin + (candidateFactor_pts ?? 0) + (FF_pts ?? 0) + WA
-        : adjustedMargin * IF * stub.CQ + (FF_pts ?? 0) + WA
-      : null;
+    const { WA, wfCapped } = computeWaveAdjustment(adjustedMargin, NES, S);
+    const NM = adjustedMargin != null ? computeNM(adjustedMargin, candidateFactor_pts ?? 0, FF_pts ?? 0, WA) : null;
     return {
       ...stub,
       rawMargin,
@@ -527,29 +567,7 @@ export function calculateStateModel(stateAbbr: string, stateName: string): State
     };
   });
 
-  const yearAggregations = G.YEARS.map((year) => {
-    const yearRaces = races.filter((race) => race.year === year && race.NM != null);
-    const typeNMs: Record<string, number | null> = {};
-    for (const type of ["P", "G", "S", "H", "L"]) {
-      const typeRaces = yearRaces.filter((race) => race.raceType === type);
-      typeNMs[type] = typeRaces.length > 0
-        ? typeRaces.reduce((sum, race) => sum + (race.NM ?? 0), 0) / typeRaces.length
-        : null;
-    }
-    const racesPresent = ["P", "G", "S", "H", "L"].filter((t) => typeNMs[t] != null);
-    const totalBase = racesPresent.reduce((sum, type) => sum + (G.RACE_TYPE_WEIGHTS[type] ?? 0), 0);
-    const redistributedWeights: Record<string, number> = {};
-    for (const type of racesPresent) {
-      redistributedWeights[type] = (G.RACE_TYPE_WEIGHTS[type] ?? 0) / totalBase;
-    }
-    const WRS = racesPresent.reduce((sum, type) => sum + redistributedWeights[type] * (typeNMs[type] ?? 0), 0);
-    return { year, racesPresent, redistributedWeights, typeNMs, WRS };
-  });
-
-  const tpl = yearAggregations.reduce(
-    (sum, agg) => sum + (G.YEAR_WEIGHTS[agg.year] ?? 0) * agg.WRS,
-    0
-  );
+  const { yearAggregations, tpl } = aggregateYears(races);
 
   return { races, yearAggregations, tpl };
 }
@@ -584,6 +602,130 @@ export function calculateDistrictModel(districtId: string): DistrictModelCalcula
 
   const tpl = races.reduce((sum, r) => sum + (G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0) * r.NM, 0);
   return { races, tpl };
+}
+
+// ── County TPL ────────────────────────────────────────────────────────────────
+// Reuses the exact same per-race formula pipeline as the state model (competitiveness
+// blend, IF, CQ, FF, WA, year aggregation — via the shared helpers above), so a change
+// to the state TPL formula automatically applies here too. Only the inputs differ:
+// - President/Senate/Governor are genuinely the same statewide race, just measured at
+//   county granularity, so incumbent + WQ/LQ/FF inputs are reused from the parent
+//   state's race list (STATE_RACE_INPUTS) — but raw margins, historical margins, and
+//   the presidential baseline used for the competitiveness blend all come from the
+//   county's own results, so the county TPL updates whenever county data changes.
+// - House: county data is already a same-year aggregate across every district touching
+//   the county (see data/countyHouseData.ts), so there's no single incumbent/candidate
+//   to attribute — IF and CQ default to neutral (Open / Generic / Generic).
+// - Wave Adjustment reuses the parent state's S (Wave Sensitivity Coefficient); no
+//   separate county-level S is computed.
+
+function getCountyHistoricalMargins(race: string, fips: string): { year: number; margin: number }[] {
+  const years =
+    race === "President" ? countyPresidentialData[fips]?.years
+    : race === "Senate" || race === "Senate Special" ? countySenateData[fips]?.years
+    : race === "Governor" ? countyGovernorData[fips]?.years
+    : undefined;
+  if (!years) return [];
+  const out: { year: number; margin: number }[] = [];
+  for (const [year, result] of Object.entries(years)) {
+    if (result) out.push({ year: Number(year), margin: result.margin });
+  }
+  return out;
+}
+
+function getCountyPriorPresidentialResult(
+  fips: string,
+  year: number,
+  minValidYear: number
+): { margin: number; year: number } | null {
+  return getCountyHistoricalMargins("President", fips)
+    .filter((result) => result.year < year && result.year >= minValidYear)
+    .sort((a, b) => b.year - a.year)[0] ?? null;
+}
+
+function generateCountyRaceList(fips: string, stateAbbr: string, stateName: string): RaceStub[] {
+  const statewideStubs: RaceStub[] = generateRaceList(stateAbbr, stateName)
+    .filter((stub) => stub.raceType === "P" || stub.raceType === "S" || stub.raceType === "G")
+    .map((stub) => ({ ...stub, historicalMargins: getCountyHistoricalMargins(stub.race, fips) }));
+
+  const houseYears = countyHouseData[fips]?.years;
+  const houseHistoricalMargins: { year: number; margin: number }[] = [];
+  if (houseYears) {
+    for (const [year, result] of Object.entries(houseYears)) {
+      if (result) houseHistoricalMargins.push({ year: Number(year), margin: result.margin });
+    }
+  }
+  const houseStubs: RaceStub[] = houseHistoricalMargins
+    .filter((m) => m.year >= 2017)
+    .map((m) => ({
+      race: "House",
+      raceType: "H",
+      year: m.year,
+      incumbent: "Open",
+      wqTier: "Generic",
+      lqTier: "Generic",
+      CQ: WQ_VALUES.Generic * LQ_VALUES.Generic,
+      FF: 1.00,
+      historicalMargins: houseHistoricalMargins,
+    }));
+
+  const RACE_TYPE_ORDER: Record<string, number> = { P: 0, G: 1, S: 2, H: 3 };
+  return [...statewideStubs, ...houseStubs].sort((a, b) => {
+    const typeOrder = (RACE_TYPE_ORDER[a.raceType] ?? 9) - (RACE_TYPE_ORDER[b.raceType] ?? 9);
+    if (typeOrder !== 0) return typeOrder;
+    if (a.year !== b.year) return b.year - a.year;
+    return a.race.localeCompare(b.race);
+  });
+}
+
+export function calculateCountyModel(fips: string): StateModelCalculation | null {
+  const county = countyPresidentialData[fips];
+  if (!county) return null;
+  const stateAbbr = county.state;
+  const stateName = FIPS_TO_STATE[fips.slice(0, 2)]?.name ?? stateAbbr;
+  const S = STATE_MODEL_CONSTANTS[stateAbbr]?.S ?? null;
+  const stubs = generateCountyRaceList(fips, stateAbbr, stateName);
+
+  const races: ComputedRace[] = stubs.map((stub) => {
+    const rawMargin = stub.historicalMargins.find((m) => m.year === stub.year)?.margin ?? null;
+    const NES = G.NES_BY_YEAR[stub.year] ?? null;
+    const inAggregation = stub.year in G.YEAR_WEIGHTS;
+    const presidentialBaseline = getCountyPriorPresidentialResult(fips, stub.year, 0);
+    const competitiveness =
+      rawMargin == null ? null : computeCompetitivenessAdjustment(rawMargin, stub, 0, presidentialBaseline);
+    const adjustedMargin = competitiveness?.adjustedMargin ?? null;
+    const IF = stub.raceType === "P" ? computePresidentialIF(stub.year) : computeIF(stub.raceType, stub.incumbent, rawMargin);
+    const candidateFactor_pts = adjustedMargin != null ? computeCandidateFactor(stub.raceType, adjustedMargin, IF, stub.CQ) : null;
+    const FF_pts = adjustedMargin != null ? adjustedMargin * (stub.FF - 1) : null;
+    const { WA, wfCapped } = computeWaveAdjustment(adjustedMargin, NES, S);
+    const NM = adjustedMargin != null ? computeNM(adjustedMargin, candidateFactor_pts ?? 0, FF_pts ?? 0, WA) : null;
+    return {
+      ...stub,
+      rawMargin,
+      IF,
+      candidateFactor_pts,
+      FF_pts,
+      adjustedMargin,
+      competitivenessAdjusted: competitiveness?.adjusted ?? false,
+      blanketApplied: competitiveness?.blanketApplied ?? false,
+      priorContestedMargin: competitiveness?.priorContestedMargin ?? null,
+      priorContestedYear: competitiveness?.priorContestedYear ?? null,
+      presidentialBaselineMargin: competitiveness?.presidentialBaselineMargin ?? null,
+      presidentialBaselineYear: competitiveness?.presidentialBaselineYear ?? null,
+      minValidYear: 0,
+      WA,
+      WFCapped: wfCapped,
+      NM,
+      inAggregation,
+    };
+  });
+
+  const { yearAggregations, tpl } = aggregateYears(races);
+  return { races, yearAggregations, tpl };
+}
+
+export function calculateCountyTpl(fips: string): number {
+  return calculateCountyModel(fips)?.tpl ?? 0;
 }
 
 // ── Public convenience functions ──────────────────────────────────────────────

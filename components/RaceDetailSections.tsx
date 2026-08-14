@@ -1115,7 +1115,11 @@ export function PastElectionResultsSection({
   );
 
   if (bare) {
-    return (
+    return (scrollable || maxHeight) ? (
+      <div className="overflow-y-auto pr-1" style={maxHeight ? { maxHeight } : undefined}>
+        {cards}
+      </div>
+    ) : (
       <div>
         {cards}
       </div>
@@ -1419,7 +1423,7 @@ export function HouseOnlyDistrictBoundariesSection({
  * data/countyDemographics.ts; any missing field (e.g. CT's legacy counties, see that
  * file's header comment) renders as "N/A" rather than a fabricated 0. */
 export function CountyDemographicsCard({
-  collegePct, whitePct, blackPct, hispanicPct, asianPct, medianHouseholdIncome,
+  collegePct, whitePct, blackPct, hispanicPct, asianPct, medianHouseholdIncome, bare = false,
 }: {
   collegePct?: number;
   whitePct?: number;
@@ -1427,6 +1431,7 @@ export function CountyDemographicsCard({
   hispanicPct?: number;
   asianPct?: number;
   medianHouseholdIncome?: number;
+  bare?: boolean;
 }) {
   const noCollegePct = collegePct != null ? parseFloat((100 - collegePct).toFixed(1)) : undefined;
   const stats: { label: string; value?: number; format: "pct" | "usd" }[] = [
@@ -1438,14 +1443,8 @@ export function CountyDemographicsCard({
     { label: "Asian", value: asianPct, format: "pct" },
   ];
 
-  return (
-    <section
-      className="rounded-xl p-3 mb-0"
-      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-    >
-      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
-        Demographics
-      </h2>
+  const content = (
+    <>
       <div className="grid grid-cols-2 gap-2">
         {stats.map(({ label, value }) => (
           <div key={label} className="rounded-lg p-2.5 flex flex-col" style={{ background: "var(--app-bg)" }}>
@@ -1469,6 +1468,20 @@ export function CountyDemographicsCard({
       <p className="mt-2 text-[9px]" style={{ color: "var(--app-text-very-muted)" }}>
         Source: County Health Rankings &amp; Roadmaps / USDA ERS, ACS 5-year estimates.
       </p>
+    </>
+  );
+
+  if (bare) return content;
+
+  return (
+    <section
+      className="rounded-xl p-3 mb-0"
+      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+    >
+      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
+        Demographics
+      </h2>
+      {content}
     </section>
   );
 }

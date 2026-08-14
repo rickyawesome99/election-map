@@ -9,7 +9,9 @@ import { countyDemographics } from "@/data/countyDemographics";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import BackButton from "@/components/BackButton";
 import StateCountyMap from "@/components/StateCountyMap";
-import { AboutRaceCard, CountyDemographicsCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import CountyTplCard from "@/components/CountyTplCard";
+import CountyRightPanel from "@/components/CountyRightPanel";
+import { AboutRaceCard, type DetailPastResult } from "@/components/RaceDetailSections";
 
 const YEARS = [2008, 2012, 2016, 2020, 2024] as const;
 
@@ -199,28 +201,27 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
               />
             </div>
 
-            <div className="order-3">
-              {results.length > 0 ? (
-                <PastElectionResultsSection
-                  results={results}
-                  fallbackYears={[2024, 2020, 2016, 2012, 2008]}
-                  showElectionType
-                  scrollable
-                  maxHeight="400px"
-                />
-              ) : (
-                <div className="rounded-xl p-4 text-sm" style={{ border: "1px solid var(--app-border)", color: "var(--app-text-very-muted)" }}>
-                  No historical election results available for this {areaLabel.toLowerCase()}.
-                </div>
-              )}
-            </div>
           </div>
 
           {/* Right column — display:contents on mobile, flex-col on desktop */}
           <div className="contents md:flex md:flex-col md:gap-3">
-            <div className="order-4">
-              <CountyDemographicsCard {...(countyDemographics[fips] ?? {})} />
+            <div className="order-3">
+              <CountyRightPanel
+                demographics={countyDemographics[fips] ?? {}}
+                results={results}
+                fallbackYears={[2024, 2020, 2016, 2012, 2008]}
+                areaLabel={areaLabel}
+              />
             </div>
+          </div>
+
+          <div className="order-5 md:col-span-2">
+            <CountyTplCard
+              fips={fips}
+              countyLabel={`${county.countyName} ${areaLabel}`}
+              stateAbbr={county.state}
+              stateName={stateName}
+            />
           </div>
         </div>
       </main>
