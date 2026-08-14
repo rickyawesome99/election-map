@@ -83,10 +83,13 @@ INDEPENDENT_CITY_OVERRIDES = {
 # it's listed here rather than reusing fetch-openelections-house-2024.py's
 # COUNTY_EXCLUSIONS naming. Every county below the ~0.85 ratio threshold in these two
 # states was excluded; single/double-district rural counties whose only district(s)
-# already succeeded are NOT in this list and stay published normally. Revisit once
-# CA/WI's remaining districts get filled in (from Wikipedia if it's ever completed,
-# or another source) - re-run the ratio check after any future CA/WI update rather
-# than assuming this list is still complete.
+# already succeeded are NOT in this list and stay published normally. WI's Winnebago
+# and, later, all of CA (added to fill-county-house-2024-medsl.py's TARGET_STATES,
+# which wholesale-replaces every CA county including the 48 this script covers, not
+# just these 10) were resolved via MEDSL - this list is now historical (documents WHY
+# those specific counties were excluded here) rather than a live gap list. Don't
+# re-run this script for CA alone without re-running the MEDSL fill afterward, same
+# WI-regression caveat documented in the county-scrape memory.
 PARTIAL_COVERAGE_EXCLUSIONS = {
     ("CA", "Alameda"), ("CA", "Los Angeles"), ("CA", "Orange"), ("CA", "Riverside"),
     ("CA", "Sacramento"), ("CA", "San Bernardino"), ("CA", "San Diego"),

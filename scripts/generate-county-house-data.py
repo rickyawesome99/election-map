@@ -77,14 +77,23 @@ SAME_PARTY_NOTES = {
     },
     # 2020: 7 CA jungle-primary districts plus WA-10, all Democrat-vs-Democrat (found via
     # house_past_results.csv's 2020 rows' "(D)" trailing markers - re-checked fresh, not
-    # assumed from 2022's list). LA-05 that year was the reverse shape (two Republicans,
-    # with dem_candidate itself carrying the "(R)" marker) but isn't listed here since
-    # it's excluded from the 2020 House output entirely (MEDSL's only source rows are the
-    # November jungle primary, a genuinely different contest than the December runoff
-    # house_past_results.csv tracks - see fill-county-house-2020-medsl.py's docstring).
-    # Every affected county touches at least one other normal district too (checked
-    # against each county's own districts_2020 list), so all get the partial wording.
+    # assumed from 2022's list), plus LA-05 (the reverse shape - two Republicans, Lance
+    # Harris vs. Luke Letlow, with dem_candidate itself carrying the "(R)" marker). LA-05
+    # went to a December runoff MEDSL's source file never covered (its only rows are the
+    # November jungle primary, a different contest) - closed via
+    # scripts/patch-county-house-2020-la.py (2026-08-13), user-supplied official
+    # parish-level runoff results, validated within 1 vote of house_past_results.csv.
     2020: {
+        # LA-05 (Lance Harris vs. Luke Letlow, both Republican) - 20 parishes confirmed
+        # single-district (districts_2020 == "5" only); East Feliciana/St. Helena (also
+        # LA-06), St. Landry (also LA-03/LA-04), and Tangipahoa (also LA-01) get the
+        # partial wording per patch-county-house-2020-la.py.
+        **{fips: "This parish's entire 2020 House total is LA-05, a runoff election between two Republicans (Lance Harris vs. Luke Letlow) - the party split shown here doesn't reflect a Democrat-vs-Republican contest."
+           for fips in ["22009", "22021", "22025", "22029", "22035", "22041", "22043",
+                        "22049", "22059", "22061", "22065", "22067", "22073", "22079",
+                        "22083", "22107", "22117", "22123", "22125", "22127"]},
+        **{fips: "Part of this parish's 2020 House total includes LA-05, a runoff election between two Republicans (Lance Harris vs. Luke Letlow); the party split shown here blends that with the parish's other district(s)."
+           for fips in ["22037", "22091", "22097", "22105"]},
         "06075": "Part of this county's 2020 House total includes CA-12, a general election between two Democrats (Nancy Pelosi vs. Shahid Buttar); the party split shown here blends that with the county's other district(s).",
         "06081": "Part of this county's 2020 House total includes CA-18, a general election between two Democrats (Anna Eshoo vs. Rishi Kumar); the party split shown here blends that with the county's other district(s).",
         "06085": "Part of this county's 2020 House total includes CA-18, a general election between two Democrats (Anna Eshoo vs. Rishi Kumar); the party split shown here blends that with the county's other district(s).",
@@ -122,19 +131,27 @@ SAME_PARTY_NOTES = {
         "53053": "Part of this county's 2018 House total includes WA-09, a general election between two Democrats (Adam Smith vs. Sarah Smith); the party split shown here blends that with the county's other district(s).",
     },
     # 2016: 6 CA jungle-primary districts plus WA-07, all Democrat-vs-Democrat (found via
-    # house_past_results.csv's 2016 rows' "(D)" trailing markers). LA-03 that year was
-    # the reverse shape (two Republicans, Scott Angelle vs. Clay Higgins) but isn't
-    # listed here since LA-03 (and LA-04, a normal contest that also went to a runoff) is
-    # excluded from the 2016 House output entirely - MEDSL's only source rows are the
-    # November jungle primary, a different contest than the December runoff
-    # house_past_results.csv tracks, same root cause as 2020's LA-05 exclusion (see
-    # fill-county-house-2016-medsl.py's docstring). WA-04 (Clint Didier vs. Dan
-    # Newhouse, also two Republicans) is a SEPARATE same-party district this year, not
-    # excluded like LA-03 - WA-04's contest was a normal top-two general, not a
-    # jungle-primary/runoff mismatch, so its counties get the usual notes below. Every
+    # house_past_results.csv's 2016 rows' "(D)" trailing markers), plus LA-03 (the
+    # reverse shape - two Republicans, Scott Angelle vs. Clay Higgins). LA-03 (and
+    # LA-04, a normal D-vs-R contest) both went to a December runoff that MEDSL's
+    # source file never covered (its only rows are the November jungle primary, a
+    # different contest - same root cause as 2020's LA-05 exclusion, see
+    # fill-county-house-2016-medsl.py's docstring) - closed via
+    # scripts/patch-county-house-2016-la.py (2026-08-13), user-supplied official
+    # parish-level runoff results, validated exact against house_past_results.csv.
+    # WA-04 (Clint Didier vs. Dan Newhouse, also two Republicans) is a separate
+    # same-party district this year - a normal top-two general, not a jungle-primary/
+    # runoff mismatch, so it was never excluded and gets the usual notes below. Every
     # affected county was checked against its own districts_2016 list for wholly-within
     # vs. partial wording.
     2016: {
+        # LA-03 (Scott Angelle vs. Clay Higgins, both Republican) - St. Landry is the
+        # only parish that also touches another district (LA-04 and LA-05), so it's the
+        # only one worded as partial; the other 9 are confirmed single-district
+        # (districts_2016 == "3" only) per patch-county-house-2016-la.py.
+        **{fips: "This parish's entire 2016 House total is LA-03, a runoff election between two Republicans (Scott Angelle vs. Clay Higgins) - the party split shown here doesn't reflect a Democrat-vs-Republican contest."
+           for fips in ["22001", "22019", "22023", "22045", "22053", "22055", "22099", "22101", "22113"]},
+        "22097": "Part of this parish's 2016 House total includes LA-03, a runoff election between two Republicans (Scott Angelle vs. Clay Higgins); the party split shown here blends that with the parish's other district(s).",
         "06001": "Part of this county's 2016 House total includes CA-17, a general election between two Democrats (Ro Khanna vs. Mike Honda); the party split shown here blends that with the county's other district(s).",
         "06085": "Part of this county's 2016 House total includes CA-17, a general election between two Democrats (Ro Khanna vs. Mike Honda); the party split shown here blends that with the county's other district(s).",
         # Los Angeles touches all 5 remaining same-party CA districts: CA-29 (Tony
@@ -160,6 +177,23 @@ def two_pct(a, b):
     total = a + b
     return round(a / total * 100, 2) if total else 0.0
 
+# Districts whose house_past_results.csv row is a literal 0/0 (dem_votes AND rep_votes
+# both zero) - a race no source has ever had real vote data for (uncontested after an
+# opponent withdrew, or a candidate ran with no major-party opposition at all), not an
+# ordinary "nobody voted" county. Keyed by (state_abbr, district_number, year) ->
+# (demPct, repPct) straight from that reference row. Used below: a county whose ENTIRE
+# 2024/etc. House total is 0 (no source has county-level data either) but whose only
+# district(s) are all one of these literal-0/0 races gets that district's known
+# demPct/repPct with votesKnown=False, instead of reading as a fabricated 0-0 tie.
+ZERO_VOTE_DISTRICTS = {}
+with open(os.path.join(os.path.dirname(__file__), "../data-entry/house_past_results.csv"), newline="") as f:
+    for r in csv.DictReader(f):
+        if r["dem_votes"] in ("0", "") and r["rep_votes"] in ("0", ""):
+            dnum = int(r["district_name"].split("-")[1])
+            ZERO_VOTE_DISTRICTS[(r["state_abbr"], dnum, int(r["year"]))] = (
+                float(r["dem_pct"]), float(r["rep_pct"])
+            )
+
 counties = {}
 for path in SRC_FILES:
     year = int(re.search(r"_(\d{4})\.csv$", path).group(1))
@@ -170,10 +204,22 @@ for path in SRC_FILES:
             dem, gop, oth, total = int(r[f"dem_{year}"]), int(r[f"gop_{year}"]), int(r[f"oth_{year}"]), int(r[f"total_{year}"])
             districts_raw = r.get(f"districts_{year}", "").strip()
             districts = [int(d) for d in districts_raw.split(";") if d.strip()]
+
+            votes_known = True
+            if total == 0 and districts:
+                zero_pcts = {ZERO_VOTE_DISTRICTS.get((r["state"], d, year)) for d in districts}
+                if len(zero_pcts) == 1 and None not in zero_pcts:
+                    dem_pct, rep_pct = next(iter(zero_pcts))
+                    votes_known = False
+
+            if votes_known:
+                dem_pct, rep_pct = two_pct(dem, gop), two_pct(gop, dem)
+
             entry["years"][year] = {
                 "dem": dem, "gop": gop, "oth": oth, "total": total,
-                "demPct": two_pct(dem, gop), "repPct": two_pct(gop, dem),
-                "margin": round(two_pct(gop, dem) - two_pct(dem, gop), 2),
+                "demPct": round(dem_pct, 2), "repPct": round(rep_pct, 2),
+                "margin": round(rep_pct - dem_pct, 2),
+                "votesKnown": votes_known,
                 "samePartyNote": SAME_PARTY_NOTES.get(year, {}).get(fips),
                 "districts": districts,
             }
@@ -268,6 +314,13 @@ out = [
     "  // bucketing is still correct (true party, not ballot column), but the D-vs-R",
     "  // framing is misleading for the affected district(s) without this context.",
     "  samePartyNote?: string;",
+    "  // False only for a county whose entire House total that year is a literal 0/0",
+    "  // unopposed race (house_past_results.csv itself has no vote counts, not just this",
+    "  // pipeline) - demPct/repPct still reflect the real 100/0 outcome, but demVotes/",
+    "  // repVotes/totalVotes are meaningless zeros, not real counts. Absent (the default",
+    "  // for every other county) means votes ARE known - county data otherwise always",
+    "  // carries real vote counts, unlike some district/state-level PastResult rows.",
+    "  votesKnown?: boolean;",
     "  // Congressional district number(s) that contributed to this county's totals that",
     "  // year (a county can span multiple districts, and which ones can change between",
     "  // years due to redistricting). Combine with the county's own `state` for a label",
@@ -288,6 +341,7 @@ for fips, c in sorted(counties.items()):
     year_entries = ", ".join(
         f'{y}: {{ demVotes: {v["dem"]}, repVotes: {v["gop"]}, othVotes: {v["oth"]}, totalVotes: {v["total"]}, '
         f'demPct: {v["demPct"]}, repPct: {v["repPct"]}, margin: {v["margin"]}'
+        + (', votesKnown: false' if not v["votesKnown"] else "")
         + (f', samePartyNote: "{v["samePartyNote"]}"' if v.get("samePartyNote") else "")
         + f', districts: [{", ".join(str(d) for d in v["districts"])}]'
         + " }"

@@ -76,7 +76,7 @@ YEAR = 2024
 # excluded - permanent structural gap, confirmed dead in every source across this
 # whole project; DC has no voting House seat at all).
 TARGET_STATES = [
-    "AZ", "CT", "FL", "IA", "ID", "IL", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN",
+    "AZ", "CA", "CT", "FL", "IA", "ID", "IL", "KS", "KY", "LA", "MA", "MD", "ME", "MI", "MN",
     "NC", "NE", "NH", "NJ", "NY", "OK", "PA", "RI", "TX", "WI",
 ]
 

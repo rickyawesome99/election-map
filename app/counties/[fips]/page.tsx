@@ -129,14 +129,15 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         .filter(([, r]) => r)
         .map(([y, r]) => {
           const year = Number(y);
+          const votesKnown = r!.votesKnown !== false;
           return {
             year,
             demPct: r!.demPct,
             repPct: r!.repPct,
-            demVotes: r!.demVotes,
-            repVotes: r!.repVotes,
+            demVotes: votesKnown ? r!.demVotes : undefined,
+            repVotes: votesKnown ? r!.repVotes : undefined,
             electionType: "House",
-            note: r!.samePartyNote,
+            note: r!.samePartyNote ?? (votesKnown ? undefined : "Uncontested race - no vote count is available for this county."),
             districtLabel: formatDistrictLabel(county.state, r!.districts),
           };
         })

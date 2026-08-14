@@ -33,8 +33,11 @@ const DEFAULT_MAP_CENTER: [number, number] = [-96.6, 38.7];
  * votesKnown is false for uncontested races the source data reports as pct-only (no vote
  * counts) — demVotes/repVotes/totalVotes are 0 in that case (safe to sum, since 0 doesn't
  * distort a total), but callers must gate on votesKnown before *displaying* them as if
- * they were real. Absent (county data) defaults to known, since county results always
- * carry vote counts. */
+ * they were real. Absent defaults to known - true for almost all county data, except a
+ * handful of House counties whose only district that cycle was a literal 0/0 unopposed
+ * race (no source has real vote data for it) - those carry an explicit `votesKnown:
+ * false` on their `CountyYearResult` (see data/countyHouseData.ts) so the map can still
+ * color them by the known 100/0 outcome without fabricating a vote count. */
 type NormalizedResult = {
   demVotes: number; repVotes: number; totalVotes: number;
   demPct: number; repPct: number; margin: number;

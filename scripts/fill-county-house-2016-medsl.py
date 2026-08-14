@@ -98,8 +98,13 @@ CANDIDATE_ALIASES = {
 # FIPS overrides for counties MEDSL tags with a stale/mismatched fips vs. the
 # presidential reference CSV. Starts with the SD renumbering confirmed in 2020's/2018's
 # scripts (old Shannon County fips), re-applied since it's baked into MEDSL's raw source
-# data, not year-specific.
-FIPS_OVERRIDES = {("SD", "46113"): "46102"}
+# data, not year-specific. NY's "36122" entry is this file's own data-entry typo (there
+# is no such NY county fips) - confirmed via the row's `jurisdiction` field reading
+# "Yates" and `district` reading 23 (matches Ontario/Seneca/Schuyler/Steuben, Yates's
+# real NY-23 neighbors) even though `county_name` itself is blank on every one of these
+# rows; real NY fips for Yates is 36123 (36121 is Wyoming, its actual neighbor in the
+# fips sequence - a plausible off-by-one).
+FIPS_OVERRIDES = {("SD", "46113"): "46102", ("NY", "36122"): "36123"}
 
 # NH's `county_fips` is blank for every one of its 13 INCORPORATED CITIES (as opposed to
 # towns) - confirmed these 12 cities never carry a populated county_fips anywhere in the
