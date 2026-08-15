@@ -1,22 +1,36 @@
-# Alaska county-level results from Cast Vote Records: methodology
+# Alaska county-level results from official precinct-level sources: methodology
 
 Alaska has no boroughs/census areas in its own election reporting — results are only
 published by precinct and by state house district, never by borough. Every prior attempt
 in this project's data pipeline (Wikipedia, MEDSL, OpenElections — see the county-election
 memory notes) confirmed no source publishes a by-borough breakdown for AK, for any office
-or year. This gap is being closed year by year using Alaska's own Cast Vote Record (CVR),
-starting with 2024 (President, US House) and 2022 (Governor, US Senate, US House).
+or year. **As of 2026-08-15, this gap is fully closed** for all AK county-level data this
+project's pipeline covers: 2024 (President, US House), 2022 (Governor, US Senate, US
+House), 2020 (President, US Senate, US House), 2018 (Governor, US House - AK had no Senate
+race that year), and 2016 (President, US Senate, US House) - reconstructed year by year
+using Alaska's own official precinct-level election data.
+
+**Alaska did not use ranked-choice voting until the 2022 cycle** (Ballot Measure 2 passed
+Nov 2020). 2020 and earlier years are plain plurality races — no ballot-level ranking data
+or IRV tabulation needed, just per-precinct vote totals straight from the state's own
+precinct-level results export. Only 2022+ years need the Cast Vote Record / IRV machinery
+described below; skip straight to "2020 and earlier: no CVR needed" if working on a
+pre-2022 year.
 
 ## Sources (per year)
 
-- `ENRbyPrecinct.csv` — AK Division of Elections' official precinct-level results
-  (`https://www.elections.alaska.gov/results/{ELECTION_ID}/ENRbyPrecinct.csv`, e.g.
-  `24GENR`). First-choice-only per precinct; used to cross-check, not as the primary
-  source.
-- `CVR_Export_*.zip` — the official Cast Vote Record (linked from the same results page),
-  containing every ballot's full ranked marks plus a precinct-portion id. This is the
-  primary source: it's the only one with ballot-level ranking data, needed to run a real
-  RCV tabulation for races that didn't resolve in round 1.
+- `ENRbyPrecinct.csv` (2022+) / `resultsbyprecinct.txt` (2020 and likely earlier - same
+  idea, older/plainer export format) — AK Division of Elections' official precinct-level
+  results (`https://www.elections.alaska.gov/results/{ELECTION_ID}/ENRbyPrecinct.csv` or
+  `.../resultsbyprecinct.txt`, e.g. `24GENR`, `20GENR`). For 2022+ this is first-choice-
+  only per precinct, used to cross-check rather than as the primary source (see below);
+  for pre-RCV years there's no "first choice vs. final" distinction, so this file alone is
+  the complete, sufficient primary source.
+- `CVR_Export_*.zip` (2022+ only) — the official Cast Vote Record (linked from the same
+  results page), containing every ballot's full ranked marks plus a precinct-portion id.
+  Needed only for races that didn't resolve in round 1 - that's the only reason to go
+  beyond the precinct CSV/txt file, since it's the only source with ballot-level ranking
+  data for a real RCV tabulation.
 
 Both are standard Dominion Democracy Suite exports (`CandidateManifest.json`,
 `ContestManifest.json`, `PrecinctManifest.json`, `PrecinctPortionManifest.json`, plus many
@@ -68,6 +82,90 @@ checking the CVR's own round-1 tallies:
   same-party jungle-primary House races this project already flags via `SAME_PARTY_NOTES`,
   but Senate's `CountyYearResult` type has no equivalent note field yet, so this is
   undocumented in the UI itself.
+
+## 2020 and earlier: no CVR needed
+
+2020 predates AK's RCV system entirely, so all three 2020 races (President, Senate, House)
+are plain plurality - first-choice IS the final result for every one, no elimination
+rounds, no same-party-final-round complication like 2022's Senate. This makes 2020 (and
+presumably any earlier year, not yet attempted) considerably simpler than 2022/2024:
+
+- No CVR zip needed at all - `resultsbyprecinct.txt` alone has everything.
+- No ballot-level parsing, no `IsVote`/`IsAmbiguous`/overvote-rule complexity - just sum
+  each precinct row's vote count per party code (`DEM`→dem, `REP`→rep, everything else→oth)
+  per race.
+- `resultsbyprecinct.txt` is a non-standard, inconsistently-quoted pseudo-CSV - fields are
+  wrapped in quotes, but some field VALUES already contain literal, unescaped quote
+  characters (e.g. a candidate nickname like `Cohen  Jeremy "Spike"`), which breaks
+  Python's standard `csv` module (it misparses field boundaries around the embedded
+  quotes). Parsed by hand instead: split each line on the literal delimiter `","`, which
+  reliably finds true field boundaries even though embedded quotes make it non-standard
+  CSV. This loses a trailing quote character on the rare candidate name that has one -
+  cosmetic only, since candidates are matched by party code, not by parsing exact names.
+- The SAME absentee/early-voting/question-only-resolved-to-district-level limitation
+  applies (`"District N - Absentee"` etc. pseudo-precinct rows exist in this file too, same
+  as the CVR-derived years) - same apportionment method, no changes needed there.
+
+Validated against `forecastData.ts`'s existing certified 2020 references (all three races
+already had trustworthy state-level numbers from this project's earlier Wikipedia-sourced
+work): President (153,406 D / 189,893 R here vs. certified 153,778 / 189,951), Senate
+(145,721 / 191,058 vs. 146,068 / 191,112), House (159,505 / 192,069 vs. 159,856 / 192,126).
+All three land within 0.03-0.24% on both candidates - a small, consistent, presumably
+absentee/late-count-related gap in the same tolerance class as every other CVR-vs-certified
+comparison in this document, not chased further.
+
+### 2018: same idea, but a genuinely different (and easier) file format
+
+2018's `resultsbyprecinct.txt` (fetched from `.../results/18GENR/data/resultsbyprecinct.txt`
+- note the extra `/data/` path segment, not present in 2020's URL) is **standard,
+well-formed CSV** - Python's `csv` module parses it cleanly, unlike 2020's file. No custom
+hand-rolled parser needed. Fields: `precinct, race, candidate_or_stat_label, party, "Total",
+votes, ""`. Race names differ from 2020's too - `"US REPRESENTATIVE"` and `"GOVERNOR/LT.
+GOVERNOR"` (all-caps, no "U.S." period style) rather than 2020's `"U.S. Representative"`.
+**Don't assume a prior year's exact race-name strings or CSV dialect carry over - check
+both fresh per year**, same standing rule as everything else in this document.
+
+**Precinct codes are 100% stable between 2018 and 2020** (both elections used the same
+pre-2022 redistricting map) - confirmed via a direct diff: all 441 codes match exactly.
+Only two precincts differ in DISPLAY NAME punctuation (`"Seldovia/Kachemak Bay"` in 2018 vs
+`"Seldovia-Kachemak Bay"` in 2020, same for `"Kachemak/Fritz Creek"` vs `"Kachemak-Fritz
+Creek"`) - same physical precinct, same code, just a cosmetic spelling drift. Rather than
+keep patching name variants, **the crosswalk was rebuilt keyed by the stable numeric CODE**
+(`precinct_code_to_fips.json`, derived once from `precinct_borough_2020.py`'s name-keyed
+data) instead of by name - more robust for reuse across any other year that shares this
+same redistricting cycle (2012-2020 elections, i.e. potentially 2012/2014/2016 too, not yet
+attempted). Re-verify this stability assumption fresh (a code-set diff) before reusing for
+another year, same as always - don't assume it holds indefinitely, only within one
+redistricting cycle.
+
+AK had no Senate race in 2018 (`senate.AK` calendar years are 2014/2016/2020/2022), so only
+Governor and US House were reconstructed. Both validated cleanly against
+`forecastData.ts`'s existing certified references: Governor matched EXACTLY, to the vote
+(Begich 125,739 / Dunleavy 145,631, both here and in `governor_past_results.csv`). House
+matched within the federal-overseas-ballot exclusion only (131,088 D / 149,772 R here vs.
+certified 131,199 / 149,779 - the 118-vote gap is entirely the excluded `HD99 Fed Overseas
+Absentee` bucket, which isn't attributable to any borough, same treatment as every other
+year in this document).
+
+### 2016: same file dialect as 2018, one new encoding gotcha
+
+2016's `resultsbyprct.txt` (note the filename: `resultsbyprct.txt`, not
+`resultsbyprecinct.txt` - fetched from `.../results/16GENR/data/resultsbyprct.txt`) uses
+the same well-formed standard-CSV dialect as 2018's file, and the same race-name style
+(`"US PRESIDENT"`, `"US SENATOR"`, `"US REPRESENTATIVE"` - all-caps). One new wrinkle:
+**this file needs `encoding="latin-1"`, not the default UTF-8** - it contains a raw
+Windows-1252 en-dash byte (`0x96`, in a ballot measure name) that isn't valid UTF-8 and
+raises `UnicodeDecodeError` on a plain `open()`. Precinct codes are 100% stable vs.
+2018/2020 (confirmed via a direct diff - all 441 codes match exactly, not even the minor
+punctuation drift 2018 had) - reused `precinct_code_to_fips.json` unchanged.
+
+All three 2016 races (President, Senate, House) were reconstructed - AK did have a Senate
+race this year, unlike 2018. All validated within the same small, HD99-overseas-ballot-
+attributable tolerance as every other pre-RCV year: President (116,181 D / 163,347 R here
+vs. certified 116,454 / 163,387), Senate (36,010 / 138,080 vs. 36,200 / 138,149), House
+(110,785 / 155,036 vs. certified 111,019 / 155,088). This closes out AK's coverage for
+every year and office this project's pipeline currently tracks (2016-2024, President/
+Senate/Governor/House, minus years each office had no election).
 
 ## Bugs found in ballot extraction (both years affected, fixed for both)
 
@@ -164,14 +262,28 @@ Of the 40 house districts, 25 fall entirely within a single borough (direct attr
 no estimation needed even for their absentee/question ballots). The other 15 span multiple
 boroughs: HD1, 2, 3, 5, 9, 29, 30, 36, 37, 38, 39, 40.
 
-### Precinct set is stable year to year
+### Precinct set is stable year to year - EXCEPT across a redistricting boundary
 
 Diffed 2022's and 2024's `PrecinctManifest.json` directly: identical except one precinct
 ("18-555 JBER") was split into two ("18-555 JBER No.1" and "18-556 JBER No.2") for 2024 -
 both are Anchorage regardless, so this has zero effect on FIPS assignment. **The same
-crosswalk file works unchanged for both years** - re-verify this assumption (a quick
-`ExternalId` diff between the two years' `PrecinctManifest.json`) before reusing it for any
-other year, rather than assuming it always holds.
+crosswalk file works unchanged for both years.**
+
+**This does NOT extend across a redistricting cycle.** 2020 used the OLD (pre-2022) state
+house district map. Confirmed empirically: the same physical precinct (e.g. "Aurora",
+Fairbanks) is coded `"31-446"` in 2022/2024 but `"01-446"` in 2020 - even the numeric
+SUFFIX isn't stable across the boundary (precincts themselves got renumbered, not just
+reassigned to a different district), so the 2022/2024 crosswalk cannot be reused keyed by
+its precinct code for 2020. **The 2020 crosswalk (`precinct_borough_2020.py` in that
+year's working directory) was built fresh, keyed by precinct NAME instead of code** (names
+were unique across all 440 real 2020 precincts) - the underlying name→borough associations
+themselves didn't need re-deriving from scratch (a borough is geography, not affected by
+which house district a precinct is grouped under), just re-verified for a handful of
+unfamiliar 2020-only names (confirmed via direct web search: "Pike"/"Richardson" = FNSB,
+"Tanaina" = Mat-Su). **Always re-verify the precinct set/coding scheme fresh (a quick raw
+inspection of that year's precinct names/codes) before assuming ANY prior year's crosswalk
+applies - re-verify per-cycle, not just per-year**, since AK's next redistricting will
+change this again (currently: 2013-2021 map, 2022-2031 map).
 
 ### Apportionment for the unresolved absentee/early/question vote
 
@@ -222,6 +334,10 @@ from this doc if redone for a future year):
 
 ## Status
 
-Done: 2024 President, 2024 US House, 2022 Governor, 2022 US Senate, 2022 US House. Not yet
-done: 2016/2018/2020 (any office), 2024 Senate/Governor (AK had no Senate/Governor race in
-2024, so this is N/A, not a gap), 2022 President (N/A, not a presidential year).
+**All done.** 2024 President, 2024 US House, 2022 Governor, 2022 US Senate, 2022 US House,
+2020 President, 2020 US Senate, 2020 US House, 2018 Governor, 2018 US House, 2016
+President, 2016 US Senate, 2016 US House. N/A (not a gap, no election that cycle): 2020/2024
+Governor, 2018/2024 Senate, 2022 President. Every AK county/office/year combination this
+project's pipeline tracks elsewhere (2016-2024, President/Senate/Governor/House) now has
+real county-level data - the "Alaska has no counties" gap flagged throughout this project's
+earlier history is closed.
