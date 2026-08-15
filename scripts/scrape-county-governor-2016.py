@@ -10,10 +10,12 @@ state,county_name,county_id,dem_2016,gop_2016,oth_2016,total_2016
 (county_name/county_id resolved by name-matching against
 data/county_presidential_results_2008_2024.csv, which already has verified FIPS).
 
-Only DE, IN, UT, WA, WV have a real "By county" heading on their 2016 gubernatorial
-Wikipedia pages (checked all 10 states with a 2016 race per governor_past_results.csv).
-MO, MT, NC, ND, OR have none - those are being filled from OpenElections
+DE, IN, NH, UT, WA, WV have a real "By county" heading on their 2016 gubernatorial
+Wikipedia pages. MO, MT, NC, ND, OR have none - those are being filled from OpenElections
 (github.com/openelections) instead, see scripts/fetch-openelections-governor-2016.py.
+(NH was originally missed here - governor_past_results.csv actually has 11 states with a
+2016 race, not 10; NH's own "By county" table just wasn't checked until a later session's
+missing-county sweep caught the gap.)
 
 Same parser as scripts/scrape-county-governor-2018.py / -2019.py / -2020.py / -2021.py /
 -2022.py / -2023.py / -2024.py / -2025.py / scrape-county-senate-2024.py (all their
@@ -32,8 +34,8 @@ OUT_CSV = os.path.join(ROOT, "data-entry/county_governor_results_2016.csv")
 
 YEAR = 2016
 STATE_NAMES = {
-    "DE": "Delaware", "IN": "Indiana", "OR": "Oregon", "UT": "Utah", "WA": "Washington",
-    "WV": "West Virginia",
+    "DE": "Delaware", "IN": "Indiana", "NH": "New Hampshire", "OR": "Oregon", "UT": "Utah",
+    "WA": "Washington", "WV": "West Virginia",
 }
 # OR's page is titled "..._special_election" (Brown was filling Kitzhaber's
 # unexpired term), not the usual "..._election" every other state uses - missing this

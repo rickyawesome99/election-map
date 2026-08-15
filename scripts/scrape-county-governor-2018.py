@@ -17,6 +17,9 @@ unfilled `[[Person]]` template placeholder with no real data anywhere in the pag
 FL, IA, ID, IL, KS, MI, MN, OH, SC excluded - no "By county" (or any county-related)
 heading at all on their 2018 gubernatorial pages, and no `{{election table}}` template
 either (checked, so not the MA-2022-style template-table miss).
+NH was originally missed entirely (not deliberately excluded, just never checked) - caught
+by a later session's missing-county sweep; its page does have a normal colspan-based "By
+county" table, added back in.
 
 Same parser as scripts/scrape-county-governor-2019.py / -2020.py / -2021.py / -2022.py /
 -2023.py / -2024.py / -2025.py / scrape-county-senate-2024.py (all their wikitext-format
@@ -40,7 +43,7 @@ STATE_NAMES = {
     "AL": "Alabama", "AR": "Arkansas", "AZ": "Arizona", "CA": "California",
     "CO": "Colorado", "CT": "Connecticut", "GA": "Georgia",
     "HI": "Hawaii", "MA": "Massachusetts", "MD": "Maryland", "ME": "Maine",
-    "NM": "New Mexico", "NV": "Nevada",
+    "NH": "New Hampshire", "NM": "New Mexico", "NV": "Nevada",
     "NY": "New York", "OK": "Oklahoma", "OR": "Oregon",
     "PA": "Pennsylvania", "RI": "Rhode Island",
     "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "WI": "Wisconsin",
@@ -523,13 +526,25 @@ def main():
         time.sleep(0.3)
 
     fieldnames = ["state", "county_name", "county_id", f"dem_{YEAR}", f"gop_{YEAR}", f"oth_{YEAR}", f"total_{YEAR}"]
+    # Merge with whatever's already on disk rather than overwriting wholesale - a re-run
+    # scoped to a subset of states (via argv) must not wipe out every other state's
+    # already-written rows. (This file previously did an unconditional overwrite - caused
+    # a real data-loss incident when re-run for just NH; fixed to match
+    # scrape-county-governor-2016.py's existing safe merge pattern.)
+    existing_rows = []
+    if os.path.exists(OUT_CSV):
+        with open(OUT_CSV, newline="") as f:
+            existing_rows = list(csv.DictReader(f))
+    handled_states = set(states)
+    kept = [r for r in existing_rows if r["state"] not in handled_states]
+
     with open(OUT_CSV, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
-        for r in out_rows:
+        for r in kept + out_rows:
             w.writerow(r)
 
-    print(f"Wrote {len(out_rows)} rows -> {OUT_CSV}\n")
+    print(f"Wrote {len(out_rows)} rows -> {OUT_CSV} (file now has {len(kept) + len(out_rows)} total)\n")
     for abbr, status in report:
         print(f"{abbr}: {status}")
 

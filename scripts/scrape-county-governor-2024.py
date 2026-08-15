@@ -395,13 +395,24 @@ def main():
         time.sleep(0.3)
 
     fieldnames = ["state", "county_name", "county_id", f"dem_{YEAR}", f"gop_{YEAR}", f"oth_{YEAR}", f"total_{YEAR}"]
+    # Merge with whatever's already on disk rather than overwriting wholesale - a
+    # re-run scoped to a subset of states (via argv) must not wipe out every other
+    # state's already-written rows (a real data-loss incident happened once from this
+    # exact bug - see scrape-county-governor-2018.py's history).
+    existing_rows = []
+    if os.path.exists(OUT_CSV):
+        with open(OUT_CSV, newline="") as f:
+            existing_rows = list(csv.DictReader(f))
+    handled_states = set(states)
+    kept = [r for r in existing_rows if r["state"] not in handled_states]
+
     with open(OUT_CSV, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fieldnames)
         w.writeheader()
-        for r in out_rows:
+        for r in kept + out_rows:
             w.writerow(r)
 
-    print(f"Wrote {len(out_rows)} rows -> {OUT_CSV}\n")
+    print(f"Wrote {len(out_rows)} rows -> {OUT_CSV} (file now has {len(kept) + len(out_rows)} total)\n")
     for abbr, status in report:
         print(f"{abbr}: {status}")
 

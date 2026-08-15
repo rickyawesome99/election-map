@@ -15,6 +15,7 @@ import {
   governorData, governorNoElection,
   presPastResults,
   type PastResult,
+  type HouseStatewideResult,
 } from "@/data/forecastData";
 import { getRaceColor } from "@/lib/colorScale";
 import { FIPS_TO_STATE } from "@/lib/fips";
@@ -164,6 +165,40 @@ function computeStatewideResult(raceType: RaceType, year: number, abbr: string):
   return null;
 }
 
+/** houseStatewideResults tags non-standard races with a suffix instead of the plain
+ * "President"/"Senate"/"Governor" label (e.g. AZ 2020's only Senate race was a special
+ * election, so it's "Senate Special"; GA 2020 had both a regular and a special Senate
+ * race up at once — "Senate (Runoff)" and "Senate Special (Runoff)"). Falls back through
+ * these variants in order so a plain-labeled regular race is always preferred over a
+ * special one when both exist for the same year (matches GA's regular Senate seat being
+ * the one shown, not the special). */
+const RACE_LABEL_FALLBACKS = ["", " (Runoff)", " Special", " Special (Runoff)"];
+
+function findRaceResult(results: HouseStatewideResult[], raceName: string, year: number): HouseStatewideResult | undefined {
+  for (const suffix of RACE_LABEL_FALLBACKS) {
+    const r = results.find((res) => res.race === `${raceName}${suffix}` && res.year === year);
+    if (r) return r;
+  }
+  return undefined;
+}
+
+/** Statewide races where BOTH the "dem" and "rep" slots (per this project's bucket
+ * convention — see senate_past_results.csv) were actually Democrats, e.g. CA's top-two
+ * primary sending Harris/Sanchez (2016) and Feinstein/de León (2018) to the general. The
+ * seat is guaranteed Democratic regardless of which of the two wins a given district, so
+ * the map should never show red here even in districts where the second Democrat (sitting
+ * in the "rep" column) led — margin is flipped to -|margin| below so color/badges always
+ * read Dem, while the magnitude (and the real demPct/repPct/votes shown in the tooltip)
+ * still reflects how lopsided that particular pairing was in that district. */
+const SAME_PARTY_STATEWIDE_RACES: { race: string; year: number; state: string }[] = [
+  { race: "Senate", year: 2016, state: "CA" },
+  { race: "Senate", year: 2018, state: "CA" },
+];
+
+function isSamePartyStatewideRace(raceName: string, year: number, state: string): boolean {
+  return SAME_PARTY_STATEWIDE_RACES.some((r) => r.race === raceName && r.year === year && r.state === state);
+}
+
 /** Builds one GeoResult per real congressional district (keyed by the data's own GEOID
  * convention — "XX01" for at-large, not the Census "XX00"), for the given race+year. */
 function buildDistrictResults(raceType: RaceType, year: number): Map<string, GeoResult> {
@@ -183,8 +218,11 @@ function buildDistrictResults(raceType: RaceType, year: number): Map<string, Geo
       const stateFips = geoid.slice(0, 2);
       const stateInfo = FIPS_TO_STATE[stateFips];
       if (!stateInfo) continue;
-      const r = results.find((res) => res.race === raceName && res.year === year);
+      const r = findRaceResult(results, raceName, year);
       const result = r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes) : null;
+      if (result && isSamePartyStatewideRace(raceName, year, stateInfo.abbr)) {
+        result.margin = -Math.abs(result.margin);
+      }
       map.set(geoid, { label: `${stateInfo.abbr}-${geoid.slice(-2)}`, stateAbbr: stateInfo.abbr, stateName: stateInfo.name, result });
     }
   }
