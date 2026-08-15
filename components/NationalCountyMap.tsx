@@ -136,6 +136,34 @@ function mergedHouseResultsById(): Map<string, PastResult[]> {
   return byId;
 }
 
+/** Computes a state's statewide two-party result for president/governor/senate (house is
+ * built differently — by summing real district-level results — so this returns null for
+ * it). */
+function computeStatewideResult(raceType: RaceType, year: number, abbr: string): NormalizedResult | null {
+  if (raceType === "president") {
+    const r = presPastResults[abbr]?.find((pr) => pr.year === year);
+    return r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes) : null;
+  }
+  if (raceType === "governor") {
+    const race = governorData.find((r) => r.id === abbr);
+    const noEl = !race ? governorNoElection.find((e) => e.abbr === abbr) : null;
+    const past = race?.pastResults ?? noEl?.pastResults ?? [];
+    const r = past.find((pr) => pr.year === year);
+    return r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes) : null;
+  }
+  if (raceType === "senate") {
+    const seat1Race = senateData.find((r) => r.id === abbr);
+    const seat1NoEl = !seat1Race ? senateNoElection.find((e) => e.abbr === abbr) : null;
+    const seat2Race = senateData.find((r) => r.id === `${abbr}-2`);
+    const seat2Holdover = !seat2Race ? senateHoldovers.find((e) => e.abbr === abbr) : null;
+    const seat1Past = seat1Race?.pastResults ?? seat1NoEl?.pastResults ?? [];
+    const seat2Past = seat2Race?.pastResults ?? seat2Holdover?.pastResults ?? [];
+    const matches = [...seat1Past, ...seat2Past].filter((pr) => pr.year === year);
+    return combineVotesResults(matches);
+  }
+  return null;
+}
+
 /** Builds one GeoResult per real congressional district (keyed by the data's own GEOID
  * convention — "XX01" for at-large, not the Census "XX00"), for the given race+year. */
 function buildDistrictResults(raceType: RaceType, year: number): Map<string, GeoResult> {
@@ -170,25 +198,7 @@ function buildStateResults(raceType: RaceType, year: number): Map<string, GeoRes
     const { abbr, name } = info;
     let result: NormalizedResult | null = null;
 
-    if (raceType === "president") {
-      const r = presPastResults[abbr]?.find((pr) => pr.year === year);
-      if (r) result = normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes);
-    } else if (raceType === "governor") {
-      const race = governorData.find((r) => r.id === abbr);
-      const noEl = !race ? governorNoElection.find((e) => e.abbr === abbr) : null;
-      const past = race?.pastResults ?? noEl?.pastResults ?? [];
-      const r = past.find((pr) => pr.year === year);
-      if (r) result = normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes);
-    } else if (raceType === "senate") {
-      const seat1Race = senateData.find((r) => r.id === abbr);
-      const seat1NoEl = !seat1Race ? senateNoElection.find((e) => e.abbr === abbr) : null;
-      const seat2Race = senateData.find((r) => r.id === `${abbr}-2`);
-      const seat2Holdover = !seat2Race ? senateHoldovers.find((e) => e.abbr === abbr) : null;
-      const seat1Past = seat1Race?.pastResults ?? seat1NoEl?.pastResults ?? [];
-      const seat2Past = seat2Race?.pastResults ?? seat2Holdover?.pastResults ?? [];
-      const matches = [...seat1Past, ...seat2Past].filter((pr) => pr.year === year);
-      result = combineVotesResults(matches);
-    } else {
+    if (raceType === "house") {
       const resultsById = new Map<string, PastResult[]>();
       for (const r of houseData) if (r.state === name) resultsById.set(r.id, r.pastResults ?? []);
       for (const [id, results] of Object.entries(housePastResults)) if (id.startsWith(fips)) resultsById.set(id, results);
@@ -198,6 +208,8 @@ function buildStateResults(raceType: RaceType, year: number): Map<string, GeoRes
         if (r) matches.push(r);
       }
       result = combineVotesResults(matches);
+    } else {
+      result = computeStatewideResult(raceType, year, abbr);
     }
 
     map.set(fips, { label: name, stateAbbr: abbr, stateName: name, result });
@@ -218,15 +230,18 @@ const RACE_TYPES: { key: RaceType; label: string }[] = [
   { key: "house", label: "House" },
 ];
 
+// President's underlying county data (countyPresidentialData.ts) also has 2008 and 2012 —
+// omitted here to keep the year picker to one row; those years still show on individual
+// county pages.
 const YEARS_BY_TYPE: Record<RaceType, number[]> = {
-  president: [2008, 2012, 2016, 2020, 2024],
+  president: [2024, 2020, 2016],
   governor: [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016],
   senate: [2024, 2022, 2020, 2018, 2016],
   house: [2024, 2022, 2020, 2018, 2016],
 };
 
 // District/State views are built from house_statewide_results.csv, president_past_results.csv,
-// etc., which only go back to 2016 — unlike county data, which has President back to 2008.
+// etc., which only go back to 2016.
 const DISTRICT_STATE_MIN_YEAR: Partial<Record<RaceType, number>> = { president: 2016 };
 
 function getYearsForLevel(raceType: RaceType, geoLevel: GeoLevel): number[] {
@@ -237,9 +252,9 @@ function getYearsForLevel(raceType: RaceType, geoLevel: GeoLevel): number[] {
 }
 
 const GEO_LEVELS: { key: GeoLevel; label: string }[] = [
-  { key: "county", label: "County" },
-  { key: "district", label: "District" },
   { key: "state", label: "State" },
+  { key: "district", label: "District" },
+  { key: "county", label: "County" },
 ];
 
 const MAP_LEGEND = [

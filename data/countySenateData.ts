@@ -10,10 +10,19 @@
 // in senate_past_results.csv); MO 2024 is missing Dallas County (absent from the Wikipedia
 // source table itself); most other states run <1% (often <0.1%) under the certified state
 // total, likely uncounted absentee/overseas ballots reported only at the state level.
-// 2022 has no county-level source table at all for AK, IA, KS, KY, LA, MO, NC, OK -
+// 2022 has no county-level source table at all for IA, KS, KY, LA, MO, NC, OK -
 // those states' Wikipedia Senate pages lack a "By county" section for that year (confirmed
-// by manual inspection, not a scraper bug); Alaska has no by-county breakdown in any year
-// since it has no counties.
+// by manual inspection, not a scraper bug). AK 2022 (and no other year yet) IS included -
+// Alaska has no by-county breakdown in ANY source's normal reporting since it has no
+// counties, but was reconstructed from the state's official Cast Vote Record instead;
+// see data-entry/README-ak-cvr-reconstructions.md. Uses ROUND-1 (first-choice) vote
+// shares for Chesbro (dem) / Murkowski (rep) specifically, matching how
+// senate_past_results.csv already stores this race (the true final RCV round was
+// Murkowski vs. Tshibaka - both Republicans - so a final-round number wouldn't be a
+// meaningful D-vs-R comparison). Because of that, this race's "oth" bucket is unusually
+// large in some counties (Tshibaka's own round-1 share), which distorts the two-party
+// demPct/repPct shown here more than a typical race - a real property of the underlying
+// contest, not a data error.
 
 export type CountyYearResult = {
   demVotes: number; repVotes: number; othVotes: number; totalVotes: number;
@@ -94,6 +103,35 @@ export const countySenateData: Record<string, CountySenateResult> = {
   "01129": { state: "AL", countyName: "Washington", years: { 2016: { demVotes: 2463, repVotes: 5830, othVotes: 5, totalVotes: 8298, demPct: 29.7, repPct: 70.3, margin: 40.6 }, 2020: { demVotes: 2635, repVotes: 6162, othVotes: 9, totalVotes: 8806, demPct: 29.95, repPct: 70.05, margin: 40.1 }, 2022: { demVotes: 1267, repVotes: 4557, othVotes: 54, totalVotes: 5878, demPct: 21.75, repPct: 78.25, margin: 56.5 } } },
   "01131": { state: "AL", countyName: "Wilcox", years: { 2016: { demVotes: 3857, repVotes: 1819, othVotes: 4, totalVotes: 5680, demPct: 67.95, repPct: 32.05, margin: -35.9 }, 2020: { demVotes: 4095, repVotes: 1779, othVotes: 5, totalVotes: 5879, demPct: 69.71, repPct: 30.29, margin: -39.42 }, 2022: { demVotes: 2446, repVotes: 1329, othVotes: 37, totalVotes: 3812, demPct: 64.79, repPct: 35.21, margin: -29.58 } } },
   "01133": { state: "AL", countyName: "Winston", years: { 2016: { demVotes: 1269, repVotes: 8817, othVotes: 12, totalVotes: 10098, demPct: 12.58, repPct: 87.42, margin: 74.84 }, 2020: { demVotes: 1302, repVotes: 9915, othVotes: 13, totalVotes: 11230, demPct: 11.61, repPct: 88.39, margin: 76.78 }, 2022: { demVotes: 403, repVotes: 6309, othVotes: 191, totalVotes: 6903, demPct: 6.0, repPct: 94.0, margin: 88.0 } } },
+  "02013": { state: "AK", countyName: "Aleutians East", years: { 2022: { demVotes: 23, repVotes: 154, othVotes: 111, totalVotes: 288, demPct: 12.99, repPct: 87.01, margin: 74.02 } } },
+  "02016": { state: "AK", countyName: "Aleutians West", years: { 2022: { demVotes: 80, repVotes: 439, othVotes: 253, totalVotes: 772, demPct: 15.41, repPct: 84.59, margin: 69.18 } } },
+  "02020": { state: "AK", countyName: "Anchorage", years: { 2022: { demVotes: 12767, repVotes: 50124, othVotes: 41611, totalVotes: 104502, demPct: 20.3, repPct: 79.7, margin: 59.4 } } },
+  "02050": { state: "AK", countyName: "Bethel", years: { 2022: { demVotes: 296, repVotes: 2923, othVotes: 705, totalVotes: 3924, demPct: 9.2, repPct: 90.8, margin: 81.6 } } },
+  "02060": { state: "AK", countyName: "Bristol Bay", years: { 2022: { demVotes: 20, repVotes: 183, othVotes: 129, totalVotes: 332, demPct: 9.85, repPct: 90.15, margin: 80.3 } } },
+  "02068": { state: "AK", countyName: "Denali", years: { 2022: { demVotes: 104, repVotes: 385, othVotes: 614, totalVotes: 1103, demPct: 21.27, repPct: 78.73, margin: 57.46 } } },
+  "02070": { state: "AK", countyName: "Dillingham", years: { 2022: { demVotes: 103, repVotes: 967, othVotes: 346, totalVotes: 1416, demPct: 9.63, repPct: 90.37, margin: 80.74 } } },
+  "02090": { state: "AK", countyName: "Fairbanks North Star", years: { 2022: { demVotes: 3519, repVotes: 13035, othVotes: 15639, totalVotes: 32193, demPct: 21.26, repPct: 78.74, margin: 57.48 } } },
+  "02100": { state: "AK", countyName: "Haines", years: { 2022: { demVotes: 214, repVotes: 759, othVotes: 479, totalVotes: 1452, demPct: 21.99, repPct: 78.01, margin: 56.02 } } },
+  "02105": { state: "AK", countyName: "Hoonah-Angoon", years: { 2022: { demVotes: 154, repVotes: 678, othVotes: 363, totalVotes: 1195, demPct: 18.51, repPct: 81.49, margin: 62.98 } } },
+  "02110": { state: "AK", countyName: "Juneau", years: { 2022: { demVotes: 2271, repVotes: 7649, othVotes: 3867, totalVotes: 13787, demPct: 22.89, repPct: 77.11, margin: 54.22 } } },
+  "02122": { state: "AK", countyName: "Kenai Peninsula", years: { 2022: { demVotes: 2005, repVotes: 8659, othVotes: 16112, totalVotes: 26776, demPct: 18.8, repPct: 81.2, margin: 62.4 } } },
+  "02130": { state: "AK", countyName: "Ketchikan Gateway", years: { 2022: { demVotes: 451, repVotes: 2272, othVotes: 2383, totalVotes: 5106, demPct: 16.56, repPct: 83.44, margin: 66.88 } } },
+  "02150": { state: "AK", countyName: "Kodiak Island", years: { 2022: { demVotes: 392, repVotes: 2104, othVotes: 1723, totalVotes: 4219, demPct: 15.71, repPct: 84.29, margin: 68.58 } } },
+  "02158": { state: "AK", countyName: "Kusilvak", years: { 2022: { demVotes: 101, repVotes: 1148, othVotes: 205, totalVotes: 1454, demPct: 8.09, repPct: 91.91, margin: 83.82 } } },
+  "02164": { state: "AK", countyName: "Lake and Peninsula", years: { 2022: { demVotes: 28, repVotes: 192, othVotes: 114, totalVotes: 334, demPct: 12.73, repPct: 87.27, margin: 74.54 } } },
+  "02170": { state: "AK", countyName: "Matanuska-Susitna", years: { 2022: { demVotes: 3091, repVotes: 10920, othVotes: 28417, totalVotes: 42428, demPct: 22.06, repPct: 77.94, margin: 55.88 } } },
+  "02180": { state: "AK", countyName: "Nome", years: { 2022: { demVotes: 167, repVotes: 1836, othVotes: 486, totalVotes: 2489, demPct: 8.34, repPct: 91.66, margin: 83.32 } } },
+  "02185": { state: "AK", countyName: "North Slope", years: { 2022: { demVotes: 145, repVotes: 772, othVotes: 391, totalVotes: 1308, demPct: 15.81, repPct: 84.19, margin: 68.38 } } },
+  "02188": { state: "AK", countyName: "Northwest Arctic", years: { 2022: { demVotes: 114, repVotes: 690, othVotes: 265, totalVotes: 1069, demPct: 14.18, repPct: 85.82, margin: 71.64 } } },
+  "02195": { state: "AK", countyName: "Petersburg", years: { 2022: { demVotes: 137, repVotes: 629, othVotes: 620, totalVotes: 1386, demPct: 17.89, repPct: 82.11, margin: 64.22 } } },
+  "02198": { state: "AK", countyName: "Prince of Wales-Hyder", years: { 2022: { demVotes: 257, repVotes: 1098, othVotes: 941, totalVotes: 2296, demPct: 18.97, repPct: 81.03, margin: 62.06 } } },
+  "02220": { state: "AK", countyName: "Sitka", years: { 2022: { demVotes: 407, repVotes: 1907, othVotes: 1141, totalVotes: 3455, demPct: 17.59, repPct: 82.41, margin: 64.82 } } },
+  "02230": { state: "AK", countyName: "Skagway", years: { 2022: { demVotes: 103, repVotes: 394, othVotes: 150, totalVotes: 647, demPct: 20.72, repPct: 79.28, margin: 58.56 } } },
+  "02240": { state: "AK", countyName: "Southeast Fairbanks", years: { 2022: { demVotes: 180, repVotes: 704, othVotes: 1959, totalVotes: 2843, demPct: 20.36, repPct: 79.64, margin: 59.28 } } },
+  "02261": { state: "AK", countyName: "Valdez-Cordova", years: { 2022: { demVotes: 309, repVotes: 1520, othVotes: 1788, totalVotes: 3617, demPct: 16.89, repPct: 83.11, margin: 66.22 } } },
+  "02275": { state: "AK", countyName: "Wrangell", years: { 2022: { demVotes: 67, repVotes: 391, othVotes: 501, totalVotes: 959, demPct: 14.63, repPct: 85.37, margin: 70.74 } } },
+  "02282": { state: "AK", countyName: "Yakutat", years: { 2022: { demVotes: 34, repVotes: 169, othVotes: 84, totalVotes: 287, demPct: 16.75, repPct: 83.25, margin: 66.5 } } },
+  "02290": { state: "AK", countyName: "Yukon-Koyukuk", years: { 2022: { demVotes: 189, repVotes: 1071, othVotes: 741, totalVotes: 2001, demPct: 15.0, repPct: 85.0, margin: 70.0 } } },
   "04001": { state: "AZ", countyName: "Apache", years: { 2016: { demVotes: 18446, repVotes: 7944, othVotes: 1476, totalVotes: 27866, demPct: 69.9, repPct: 30.1, margin: -39.8 }, 2018: { demVotes: 16298, repVotes: 7810, othVotes: 1015, totalVotes: 25123, demPct: 67.6, repPct: 32.4, margin: -35.2 }, 2020: { demVotes: 24050, repVotes: 11052, othVotes: 22, totalVotes: 35124, demPct: 68.51, repPct: 31.49, margin: -37.02 }, 2022: { demVotes: 18005, repVotes: 8163, othVotes: 551, totalVotes: 26719, demPct: 68.81, repPct: 31.19, margin: -37.62 }, 2024: { demVotes: 19901, repVotes: 11283, othVotes: 679, totalVotes: 31863, demPct: 63.82, repPct: 36.18, margin: -27.64 } } },
   "04003": { state: "AZ", countyName: "Cochise", years: { 2016: { demVotes: 17638, repVotes: 27627, othVotes: 3710, totalVotes: 48975, demPct: 38.97, repPct: 61.03, margin: 22.06 }, 2018: { demVotes: 17383, repVotes: 26929, othVotes: 1306, totalVotes: 45618, demPct: 39.23, repPct: 60.77, margin: 21.54 }, 2020: { demVotes: 24843, repVotes: 35214, othVotes: 29, totalVotes: 60086, demPct: 41.37, repPct: 58.63, margin: 17.26 }, 2022: { demVotes: 20002, repVotes: 25539, othVotes: 1450, totalVotes: 46991, demPct: 43.92, repPct: 56.08, margin: 12.16 }, 2024: { demVotes: 23347, repVotes: 33184, othVotes: 1585, totalVotes: 58116, demPct: 41.3, repPct: 58.7, margin: 17.4 } } },
   "04005": { state: "AZ", countyName: "Coconino", years: { 2016: { demVotes: 31695, repVotes: 24031, othVotes: 3455, totalVotes: 59181, demPct: 56.88, repPct: 43.12, margin: -13.76 }, 2018: { demVotes: 34240, repVotes: 19249, othVotes: 1851, totalVotes: 55340, demPct: 64.01, repPct: 35.99, margin: -28.02 }, 2020: { demVotes: 45561, repVotes: 27255, othVotes: 29, totalVotes: 72845, demPct: 62.57, repPct: 37.43, margin: -25.14 }, 2022: { demVotes: 35149, repVotes: 18697, othVotes: 1212, totalVotes: 55058, demPct: 65.28, repPct: 34.72, margin: -30.56 }, 2024: { demVotes: 42924, repVotes: 24825, othVotes: 1736, totalVotes: 69485, demPct: 63.36, repPct: 36.64, margin: -26.72 } } },

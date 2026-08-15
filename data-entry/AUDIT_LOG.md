@@ -326,3 +326,31 @@ does not read (house_statewide, state_leg), (b) legitimate third-party/RCV/jungl
 (c) the cosmetic ballots-cast totals listed above, (d) documented aggregate conventions
 (LA jungle party totals, NC-09 2018 exclusion, Clerk line-vote convention for fusion states).
 
+## data/county_presidential_results_2008_2024.csv — 2016 column (2026-08-14)
+
+Discovered while cross-checking summed county results against `pop_vote.csv`'s national
+Popular Vote totals (see [[project-data-audit]] for that comparison thread). This file's
+2016 column came from the `tonmcg/US_County_Level_Election_Results_08-24` compilation,
+whose README documents 2016 as scraped from Townhall.com election-night reporting —
+uncertified. Verified against this project's own certified `presPastResults` state totals:
+near-universal ~1-2% undercount everywhere, plus much larger gaps in slow-counting states
+(CA -32%, UT -25%, AZ -20%, WA -17%, MD -11%, NY -9%, plus NJ/OH/PA/OR/VA/CO/IL at 4-8%).
+2008/2012/2020/2024 in the same file are unaffected.
+
+Replaced dem_2016/gop_2016/oth_2016/total_2016 for all 3,112 counties (AK + Kalawao County,
+HI remain blank, as with every other year) using MIT Election Data & Science Lab's
+`countypres_2000-2016.csv`, saved to `data-entry/medsl/president_2000-2016_county.csv`
+(codebook and full fix writeup: `president_2000-2016_county_codebook.md` /
+`president_2000-2016_county_notes.md` in the same folder). Two FIPS remaps were needed:
+Shannon County, SD → Oglala Lakota County (46113 → 46102, 2015 rename) and Kansas City, MO
+folded into Jackson County (36000 → 29095, matching how every other year in this file
+already handles KC). `countyPresidentialData.ts` regenerated via
+`scripts/generate-county-pres-data.py`.
+
+Post-fix validation against `presPastResults`: every state matches certified dem/rep totals
+exactly except ME (-3,017 dem/-648 rep — overseas UOCAVA ballots MEDSL reports statewide,
+not by county) and NY (-8,562 dem/-4,945 rep, ~0.2% — likely fusion-line aggregation), both
+consistent with gaps already accepted elsewhere in this project. National county-summed 2016
+President margin moved from -0.56 to -2.26 (two-party), now within 0.03 points of
+`pop_vote.csv`'s -2.23, down from a 1.67-point gap.
+
