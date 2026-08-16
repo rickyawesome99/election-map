@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import type { Theme } from "./ForecastMap";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
@@ -8,7 +8,7 @@ import { countyPresidentialData, type CountyYearResult } from "@/data/countyPres
 import { countySenateData } from "@/data/countySenateData";
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { countyHouseData } from "@/data/countyHouseData";
-import { electionCalendar, type CountyRaceType } from "@/data/electionCalendar";
+import { electionCalendar, senateSpecialCalendar, type CountyRaceType } from "@/data/electionCalendar";
 import {
   houseData, housePastResults, houseStatewideResults,
   senateData, senateNoElection, senateHoldovers,
@@ -30,11 +30,19 @@ type MapView = { center: [number, number]; zoom: number };
 
 const DEFAULT_MAP_CENTER: [number, number] = [-96.6, 38.7];
 
-/** A single normalized two-party result, regardless of which geography/dataset it came from.
- * votesKnown is false for uncontested races the source data reports as pct-only (no vote
- * counts) — demVotes/repVotes/totalVotes are 0 in that case (safe to sum, since 0 doesn't
- * distort a total), but callers must gate on votesKnown before *displaying* them as if
- * they were real. Absent defaults to known - true for almost all county data, except a
+/** Every senate year where at least one state held BOTH a regular and a special
+ * election (per senate_past_results.csv's type="Special" rows — see
+ * data/electionCalendar.ts's senateSpecialCalendar). Drives whether the "special
+ * elections only" toggle button appears at all for the currently-selected year. */
+const SENATE_DOUBLE_YEARS = new Set(Object.values(senateSpecialCalendar).flat());
+
+/** A single normalized result, regardless of which geography/dataset it came from. demPct/
+ * repPct are each a SHARE OF totalVotes (D+R+Other all sum to 100), not a two-party share
+ * — totalVotes may exceed demVotes+repVotes whenever a third party/other candidate drew
+ * real votes. votesKnown is false for uncontested races the source data reports as pct-only
+ * (no vote counts) — demVotes/repVotes/totalVotes are 0 in that case (safe to sum, since 0
+ * doesn't distort a total), but callers must gate on votesKnown before *displaying* them as
+ * if they were real. Absent defaults to known - true for almost all county data, except a
  * handful of House counties whose only district that cycle was a literal 0/0 unopposed
  * race (no source has real vote data for it) - those carry an explicit `votesKnown:
  * false` on their `CountyYearResult` (see data/countyHouseData.ts) so the map can still
@@ -63,21 +71,46 @@ type Selection = {
   moreInfoHref: string | null;
 };
 
-function getCountyResult(raceType: RaceType, year: number, fips: string): CountyYearResult | null {
+/** Single result for one county, for MAP COLORING / the click-to-select panel — respects
+ * the "special elections only" toggle. `specialOnly` false (default): regular race
+ * preferred, falling back to the special race only if that's the state's ONLY race that
+ * year (e.g. AZ 2020, which never had a regular race). `specialOnly` true: special race
+ * only — a state with no special that year (the common case) shows no result (greys out),
+ * even if it had a regular race. See getAllCountyResults for the DIFFERENT "always sum
+ * both" rule the National Results aggregate panel uses. */
+function getCountyResult(raceType: RaceType, year: number, fips: string, specialOnly = false): CountyYearResult | null {
   if (raceType === "president") return countyPresidentialData[fips]?.years[year as PresYear] ?? null;
-  if (raceType === "senate") return countySenateData[fips]?.years[year] ?? null;
+  if (raceType === "senate") {
+    const county = countySenateData[fips];
+    if (specialOnly) return county?.specialYears[year] ?? null;
+    return county?.years[year] ?? county?.specialYears[year] ?? null;
+  }
   if (raceType === "governor") return countyGovernorData[fips]?.years[year] ?? null;
   if (raceType === "house") return countyHouseData[fips]?.years[year] ?? null;
   return null;
 }
 
+/** Every county-level result for the National Results aggregate — for senate, sums BOTH
+ * the regular AND special race for a county that had both (e.g. GA 2020's Fulton County
+ * contributes twice: once for Ossoff/Perdue, once for Warnock/Loeffler), independent of
+ * the map's "special elections only" toggle, which only controls per-county MAP COLORING
+ * (see getCountyResult) — the aggregate always reflects every Senate race held that year. */
 function getAllCountyResults(raceType: RaceType, year: number): CountyYearResult[] {
+  const results: CountyYearResult[] = [];
+  if (raceType === "senate") {
+    for (const fips in countySenateData) {
+      const county = countySenateData[fips];
+      const reg = county?.years[year];
+      const spec = county?.specialYears[year];
+      if (reg) results.push(reg);
+      if (spec) results.push(spec);
+    }
+    return results;
+  }
   const store =
     raceType === "president" ? countyPresidentialData
-    : raceType === "senate" ? countySenateData
     : raceType === "governor" ? countyGovernorData
     : countyHouseData;
-  const results: CountyYearResult[] = [];
   for (const fips in store) {
     const result = store[fips]?.years[year as PresYear];
     if (result) results.push(result);
@@ -85,8 +118,12 @@ function getAllCountyResults(raceType: RaceType, year: number): CountyYearResult
   return results;
 }
 
-function hasElectionInState(raceType: RaceType, year: number, stateAbbr: string): boolean {
+function hasElectionInState(raceType: RaceType, year: number, stateAbbr: string, specialOnly = false): boolean {
   if (raceType === "president") return true;
+  if (raceType === "senate") {
+    if (specialOnly) return senateSpecialCalendar[stateAbbr]?.includes(year) ?? false;
+    return (electionCalendar.senate[stateAbbr]?.includes(year) ?? false) || (senateSpecialCalendar[stateAbbr]?.includes(year) ?? false);
+  }
   return electionCalendar[raceType][stateAbbr]?.includes(year) ?? false;
 }
 
@@ -109,7 +146,9 @@ function normalizeVotesResult(
 /** Sums several same-year results into one (e.g. two Senate seats up the same year, or
  * every House district in a state). Matches lacking vote counts (uncontested races) are
  * excluded from the sum — not treated as zero votes cast — but don't null out the whole
- * combined result the way an early bail-out would. */
+ * combined result the way an early bail-out would. demPct/repPct are each a share of the
+ * combined totalVotes (not a two-party share), so any Other/third-party votes folded into
+ * totalVotes correctly pull both below 100 rather than being silently absorbed. */
 function combineVotesResults(matches: PastResult[]): NormalizedResult | null {
   if (matches.length === 0) return null;
   let demVotes = 0, repVotes = 0, totalVotes = 0, anyVotesKnown = false;
@@ -121,9 +160,8 @@ function combineVotesResults(matches: PastResult[]): NormalizedResult | null {
     totalVotes += m.totalVotes ?? m.demVotes + m.repVotes;
   }
   if (!anyVotesKnown) return null;
-  const twoParty = demVotes + repVotes;
-  const demPct = twoParty > 0 ? (demVotes / twoParty) * 100 : 0;
-  const repPct = twoParty > 0 ? (repVotes / twoParty) * 100 : 0;
+  const demPct = totalVotes > 0 ? (demVotes / totalVotes) * 100 : 0;
+  const repPct = totalVotes > 0 ? (repVotes / totalVotes) * 100 : 0;
   return { demVotes, repVotes, totalVotes, demPct, repPct, margin: repPct - demPct, votesKnown: true };
 }
 
@@ -137,10 +175,15 @@ function mergedHouseResultsById(): Map<string, PastResult[]> {
   return byId;
 }
 
-/** Computes a state's statewide two-party result for president/governor/senate (house is
+/** Computes a state's statewide result for president/governor/senate (house is
  * built differently — by summing real district-level results — so this returns null for
- * it). */
-function computeStatewideResult(raceType: RaceType, year: number, abbr: string): NormalizedResult | null {
+ * it), for MAP COLORING / the click-to-select panel — respects the "special elections
+ * only" toggle the same way getCountyResult does: `specialOnly` false (default) prefers
+ * the regular seat's race, falling back to the special seat's only if that's the state's
+ * sole race that year (AZ 2020); `specialOnly` true shows the special race only. See
+ * collectStateAggregateResults for the DIFFERENT "always sum both" rule the National
+ * Results aggregate panel uses. */
+function computeStatewideResult(raceType: RaceType, year: number, abbr: string, specialOnly = false): NormalizedResult | null {
   if (raceType === "president") {
     const r = presPastResults[abbr]?.find((pr) => pr.year === year);
     return r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes) : null;
@@ -159,8 +202,10 @@ function computeStatewideResult(raceType: RaceType, year: number, abbr: string):
     const seat2Holdover = !seat2Race ? senateHoldovers.find((e) => e.abbr === abbr) : null;
     const seat1Past = seat1Race?.pastResults ?? seat1NoEl?.pastResults ?? [];
     const seat2Past = seat2Race?.pastResults ?? seat2Holdover?.pastResults ?? [];
-    const matches = [...seat1Past, ...seat2Past].filter((pr) => pr.year === year);
-    return combineVotesResults(matches);
+    const allMatches = [...seat1Past, ...seat2Past].filter((pr) => pr.year === year);
+    if (specialOnly) return combineVotesResults(allMatches.filter((pr) => pr.electionType === "Special"));
+    const regularMatches = allMatches.filter((pr) => pr.electionType !== "Special");
+    return combineVotesResults(regularMatches.length > 0 ? regularMatches : allMatches);
   }
   return null;
 }
@@ -168,18 +213,33 @@ function computeStatewideResult(raceType: RaceType, year: number, abbr: string):
 /** houseStatewideResults tags non-standard races with a suffix instead of the plain
  * "President"/"Senate"/"Governor" label (e.g. AZ 2020's only Senate race was a special
  * election, so it's "Senate Special"; GA 2020 had both a regular and a special Senate
- * race up at once — "Senate (Runoff)" and "Senate Special (Runoff)"). Falls back through
- * these variants in order so a plain-labeled regular race is always preferred over a
- * special one when both exist for the same year (matches GA's regular Senate seat being
- * the one shown, not the special). */
+ * race up at once — "Senate (Runoff)" and "Senate Special (Runoff)"). For MAP COLORING:
+ * `specialOnly` false (default) tries the regular-family labels first, falling back to a
+ * special-family label only if no regular race exists that year (AZ); `specialOnly` true
+ * tries only the special-family labels. See findAllRaceResults for the district-level
+ * National Results aggregate, which needs BOTH regardless of this toggle. */
 const RACE_LABEL_FALLBACKS = ["", " (Runoff)", " Special", " Special (Runoff)"];
+const RACE_LABEL_FALLBACKS_SPECIAL_ONLY = [" Special", " Special (Runoff)"];
 
-function findRaceResult(results: HouseStatewideResult[], raceName: string, year: number): HouseStatewideResult | undefined {
-  for (const suffix of RACE_LABEL_FALLBACKS) {
+function findRaceResult(results: HouseStatewideResult[], raceName: string, year: number, specialOnly = false): HouseStatewideResult | undefined {
+  const fallbacks = specialOnly ? RACE_LABEL_FALLBACKS_SPECIAL_ONLY : RACE_LABEL_FALLBACKS;
+  for (const suffix of fallbacks) {
     const r = results.find((res) => res.race === `${raceName}${suffix}` && res.year === year);
     if (r) return r;
   }
   return undefined;
+}
+
+/** For the district-level National Results aggregate — returns EVERY matching race for a
+ * geoid+year (a regular-family match AND a special-family match, if both exist), unlike
+ * findRaceResult (used for map coloring) which only ever returns one. */
+function findAllRaceResults(results: HouseStatewideResult[], raceName: string, year: number): HouseStatewideResult[] {
+  const out: HouseStatewideResult[] = [];
+  const reg = results.find((r) => (r.race === raceName || r.race === `${raceName} (Runoff)`) && r.year === year);
+  if (reg) out.push(reg);
+  const spec = results.find((r) => (r.race === `${raceName} Special` || r.race === `${raceName} Special (Runoff)`) && r.year === year);
+  if (spec) out.push(spec);
+  return out;
 }
 
 /** Statewide races where BOTH the "dem" and "rep" slots (per this project's bucket
@@ -200,8 +260,9 @@ function isSamePartyStatewideRace(raceName: string, year: number, state: string)
 }
 
 /** Builds one GeoResult per real congressional district (keyed by the data's own GEOID
- * convention — "XX01" for at-large, not the Census "XX00"), for the given race+year. */
-function buildDistrictResults(raceType: RaceType, year: number): Map<string, GeoResult> {
+ * convention — "XX01" for at-large, not the Census "XX00"), for the given race+year — for
+ * MAP COLORING, so respects the "special elections only" toggle (see findRaceResult). */
+function buildDistrictResults(raceType: RaceType, year: number, specialOnly = false): Map<string, GeoResult> {
   const map = new Map<string, GeoResult>();
   if (raceType === "house") {
     for (const [id, results] of mergedHouseResultsById()) {
@@ -218,8 +279,8 @@ function buildDistrictResults(raceType: RaceType, year: number): Map<string, Geo
       const stateFips = geoid.slice(0, 2);
       const stateInfo = FIPS_TO_STATE[stateFips];
       if (!stateInfo) continue;
-      const r = findRaceResult(results, raceName, year);
-      const result = r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes) : null;
+      const r = findRaceResult(results, raceName, year, specialOnly);
+      const result = r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes) : null;
       if (result && isSamePartyStatewideRace(raceName, year, stateInfo.abbr)) {
         result.margin = -Math.abs(result.margin);
       }
@@ -229,8 +290,38 @@ function buildDistrictResults(raceType: RaceType, year: number): Map<string, Geo
   return map;
 }
 
-/** Builds one GeoResult per state (keyed by 2-digit state FIPS, matching states-10m.json). */
-function buildStateResults(raceType: RaceType, year: number): Map<string, GeoResult> {
+/** For the district-level National Results aggregate — sums EVERY district's race(s) for
+ * the year, both regular AND special where a state had both (e.g. every GA district
+ * contributes both its Ossoff/Perdue AND its Warnock/Loeffler numbers), independent of
+ * the map's "special elections only" toggle. Returns a flat array rather than a
+ * geoid-keyed Map since a double state's district contributes two separate results. */
+function collectDistrictAggregateResults(raceType: RaceType, year: number): NormalizedResult[] {
+  const out: NormalizedResult[] = [];
+  if (raceType === "house") {
+    for (const [, results] of mergedHouseResultsById()) {
+      const r = results.find((pr) => pr.year === year);
+      if (r) out.push(normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes));
+    }
+    return out;
+  }
+  const raceName = raceType === "president" ? "President" : raceType === "senate" ? "Senate" : "Governor";
+  for (const [geoid, results] of Object.entries(houseStatewideResults)) {
+    const stateFips = geoid.slice(0, 2);
+    const stateInfo = FIPS_TO_STATE[stateFips];
+    if (!stateInfo) continue;
+    for (const r of findAllRaceResults(results, raceName, year)) {
+      const result = normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes);
+      if (isSamePartyStatewideRace(raceName, year, stateInfo.abbr)) result.margin = -Math.abs(result.margin);
+      out.push(result);
+    }
+  }
+  return out;
+}
+
+/** Builds one GeoResult per state (keyed by 2-digit state FIPS, matching states-10m.json)
+ * — for MAP COLORING, so respects the "special elections only" toggle (see
+ * computeStatewideResult). */
+function buildStateResults(raceType: RaceType, year: number, specialOnly = false): Map<string, GeoResult> {
   const map = new Map<string, GeoResult>();
   for (const [fips, info] of Object.entries(FIPS_TO_STATE)) {
     const { abbr, name } = info;
@@ -247,7 +338,7 @@ function buildStateResults(raceType: RaceType, year: number): Map<string, GeoRes
       }
       result = combineVotesResults(matches);
     } else {
-      result = computeStatewideResult(raceType, year, abbr);
+      result = computeStatewideResult(raceType, year, abbr, specialOnly);
     }
 
     map.set(fips, { label: name, stateAbbr: abbr, stateName: name, result });
@@ -255,9 +346,44 @@ function buildStateResults(raceType: RaceType, year: number): Map<string, GeoRes
   return map;
 }
 
-function collectResults(map: Map<string, GeoResult>): NormalizedResult[] {
+/** For the state-level National Results aggregate — sums EVERY state's race(s) for the
+ * year. Senate pushes each seat's match as its OWN entry (not combined into one, unlike
+ * the old pre-toggle behavior) so a double state (e.g. MN 2018) contributes both
+ * Klobuchar's and Smith's results separately to the total, same "always both" rule
+ * collectDistrictAggregateResults/getAllCountyResults use — independent of the map's
+ * "special elections only" toggle. President/governor/house never have a special-election
+ * concept in this dataset, so their aggregate is just the normal single result. */
+function collectStateAggregateResults(raceType: RaceType, year: number): NormalizedResult[] {
   const out: NormalizedResult[] = [];
-  for (const gr of map.values()) if (gr.result) out.push(gr.result);
+  for (const [fips, info] of Object.entries(FIPS_TO_STATE)) {
+    const { abbr, name } = info;
+    if (raceType === "house") {
+      const resultsById = new Map<string, PastResult[]>();
+      for (const r of houseData) if (r.state === name) resultsById.set(r.id, r.pastResults ?? []);
+      for (const [id, results] of Object.entries(housePastResults)) if (id.startsWith(fips)) resultsById.set(id, results);
+      const matches: PastResult[] = [];
+      for (const results of resultsById.values()) {
+        const r = results.find((pr) => pr.year === year);
+        if (r) matches.push(r);
+      }
+      const result = combineVotesResults(matches);
+      if (result) out.push(result);
+    } else if (raceType === "senate") {
+      const seat1Race = senateData.find((r) => r.id === abbr);
+      const seat1NoEl = !seat1Race ? senateNoElection.find((e) => e.abbr === abbr) : null;
+      const seat2Race = senateData.find((r) => r.id === `${abbr}-2`);
+      const seat2Holdover = !seat2Race ? senateHoldovers.find((e) => e.abbr === abbr) : null;
+      const seat1Past = seat1Race?.pastResults ?? seat1NoEl?.pastResults ?? [];
+      const seat2Past = seat2Race?.pastResults ?? seat2Holdover?.pastResults ?? [];
+      for (const m of [...seat1Past, ...seat2Past].filter((pr) => pr.year === year)) {
+        if (m.demVotes == null || m.repVotes == null) continue;
+        out.push(normalizeVotesResult(m.demPct, m.repPct, m.demVotes, m.repVotes, m.totalVotes));
+      }
+    } else {
+      const result = computeStatewideResult(raceType, year, abbr);
+      if (result) out.push(result);
+    }
+  }
   return out;
 }
 
@@ -406,6 +532,9 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   const [viewChanged, setViewChanged] = useState(false);
   const [raceType, setRaceType] = useState<RaceType>("president");
   const [year, setYear] = useState<number>(2024);
+  // "Special elections only" toggle — only meaningful for senate on a year where at
+  // least one state held both a regular and a special race (SENATE_DOUBLE_YEARS).
+  const [specialOnly, setSpecialOnly] = useState(false);
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
   const ignoreClickUntilRef = useRef(0);
   // Last intentionally-settled pan/zoom (as opposed to whatever react-simple-maps'
@@ -433,15 +562,28 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
     setHovered(null);
   }
 
+  function selectYear(y: number) {
+    setYear(y);
+    setSelected(null);
+  }
+
   const isPresident = raceType === "president";
   const raceLabel = RACE_TYPES.find((r) => r.key === raceType)!.label;
   const unitLabel = UNIT_LABEL[geoLevel];
+  const hasSpecialThisYear = raceType === "senate" && SENATE_DOUBLE_YEARS.has(year);
+
+  // The toggle button disappears whenever it wouldn't apply (wrong office, or a senate
+  // year with no double election) — reset its state too so it doesn't come back silently
+  // pre-toggled if the user navigates back to a double year later.
+  useEffect(() => {
+    if (!hasSpecialThisYear) setSpecialOnly(false);
+  }, [hasSpecialThisYear]);
 
   // Only the active geoLevel's lookup is built — county view uses direct object lookups
   // (getCountyResult) instead, so it needs no upfront map.
   const districtResults = useMemo(
-    () => (geoLevel === "district" ? buildDistrictResults(raceType, year) : null),
-    [geoLevel, raceType, year],
+    () => (geoLevel === "district" ? buildDistrictResults(raceType, year, specialOnly) : null),
+    [geoLevel, raceType, year, specialOnly],
   );
   const districtRenderMap = useMemo(() => {
     if (!districtResults) return null;
@@ -450,15 +592,21 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
     return m;
   }, [districtResults]);
   const stateResults = useMemo(
-    () => (geoLevel === "state" ? buildStateResults(raceType, year) : null),
-    [geoLevel, raceType, year],
+    () => (geoLevel === "state" ? buildStateResults(raceType, year, specialOnly) : null),
+    [geoLevel, raceType, year, specialOnly],
   );
 
+  // The National Results aggregate ALWAYS sums every Senate race held that year (regular
+  // + special where a state had both) regardless of the toggle above, which only controls
+  // per-unit MAP COLORING — see getAllCountyResults/collectDistrictAggregateResults/
+  // collectStateAggregateResults's own docs. demPct/repPct are each a share of the summed
+  // totalVotes (D+R+Other all sum to 100), not a two-party share, so Other/third-party
+  // votes nationally reduce both rather than being silently folded into D or R.
   const stats = useMemo(() => {
     const results =
       geoLevel === "county" ? getAllCountyResults(raceType, year)
-      : geoLevel === "district" ? collectResults(districtResults ?? new Map())
-      : collectResults(stateResults ?? new Map());
+      : geoLevel === "district" ? collectDistrictAggregateResults(raceType, year)
+      : collectStateAggregateResults(raceType, year);
     let demVotes = 0, repVotes = 0, totalVotes = 0, demUnits = 0, repUnits = 0;
     for (const r of results) {
       demVotes += r.demVotes;
@@ -467,11 +615,10 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
       if (r.margin <= 0) demUnits++;
       else repUnits++;
     }
-    const twoParty = demVotes + repVotes;
-    const demPct = twoParty > 0 ? (demVotes / twoParty) * 100 : 0;
-    const repPct = twoParty > 0 ? (repVotes / twoParty) * 100 : 0;
+    const demPct = totalVotes > 0 ? (demVotes / totalVotes) * 100 : 0;
+    const repPct = totalVotes > 0 ? (repVotes / totalVotes) * 100 : 0;
     return { demVotes, repVotes, totalVotes, demPct, repPct, margin: repPct - demPct, demUnits, repUnits };
-  }, [geoLevel, raceType, year, districtResults, stateResults]);
+  }, [geoLevel, raceType, year]);
 
   const districtGeoUrl = getCongressionalDistrictsGeoUrl(year);
 
@@ -505,8 +652,23 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         style={{ background: t.panel, borderColor: t.border }}
       >
         <div className="p-2 md:p-3" style={{ borderBottom: `1px solid ${t.border}` }}>
-          <div className="mb-1.5 md:mb-2">
+          <div className="mb-1.5 flex items-center justify-between md:mb-2">
             <div className="text-xs font-bold md:text-sm" style={{ color: t.textPrimary }}>Map Controls</div>
+            {hasSpecialThisYear && (
+              <button
+                onClick={() => setSpecialOnly((v) => !v)}
+                aria-pressed={specialOnly}
+                title={specialOnly ? "Showing special elections only — click to show all" : "Show special elections only"}
+                className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-[7px] font-bold leading-none transition-colors md:h-6 md:w-6 md:text-[8px]"
+                style={
+                  specialOnly
+                    ? { background: t.textPrimary, color: t.panel }
+                    : { background: t.tabBg, color: t.textMuted, border: `1px solid ${t.border}` }
+                }
+              >
+                Sp
+              </button>
+            )}
           </div>
 
           <div className="grid gap-1.5 sm:grid-cols-3 md:grid-cols-1 md:gap-2">
@@ -556,7 +718,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
           {getYearsForLevel(raceType, geoLevel).map((y) => (
             <button
               key={y}
-              onClick={() => setYear(y)}
+              onClick={() => selectYear(y)}
                     className="rounded px-1 py-0.5 text-[8px] font-semibold transition-colors md:py-1 md:text-[9px]"
               style={
                 y === year
@@ -762,8 +924,8 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                     const fips = String(geo.id ?? "");
                     const statePrefix = fips.slice(0, 2);
                     const stateInfo = FIPS_TO_STATE[statePrefix];
-                    const result = getCountyResult(raceType, year, fips);
-                    const hasElection = hasElectionInState(raceType, year, stateInfo?.abbr ?? "");
+                    const result = getCountyResult(raceType, year, fips, specialOnly);
+                    const hasElection = hasElectionInState(raceType, year, stateInfo?.abbr ?? "", specialOnly);
                     const sel: Selection = {
                       key: fips,
                       title: `${geo.properties?.name ?? ""} ${getAreaLabel(stateInfo?.abbr ?? "")}`,
@@ -834,7 +996,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                     const geoId = geo.properties?.GEOID;
                     if (!isCongressionalDistrictGeoid(geoId)) return null;
                     const gr = districtRenderMap?.get(geoId);
-                    const hasElection = gr ? hasElectionInState(raceType, year, gr.stateAbbr) : false;
+                    const hasElection = gr ? hasElectionInState(raceType, year, gr.stateAbbr, specialOnly) : false;
                     const sel: Selection | null = gr ? {
                       key: geoId,
                       title: gr.label,
@@ -879,7 +1041,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                 geographies.map((geo) => {
                   const fips = String(geo.id ?? "").padStart(2, "0");
                   const gr = stateResults?.get(fips);
-                  const hasElection = gr ? hasElectionInState(raceType, year, gr.stateAbbr) : false;
+                  const hasElection = gr ? hasElectionInState(raceType, year, gr.stateAbbr, specialOnly) : false;
                   const sel: Selection | null = gr ? {
                     key: fips,
                     title: gr.stateName,

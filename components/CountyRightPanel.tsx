@@ -53,6 +53,7 @@ export default function CountyRightPanel({
             results={results}
             fallbackYears={fallbackYears}
             showElectionType
+            showSpecialBadgeForSpecialElections
             scrollable
             maxHeight="363px"
             bare

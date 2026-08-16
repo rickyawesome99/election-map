@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { countyPresidentialData } from "@/data/countyPresidentialData";
 import { countySenateData } from "@/data/countySenateData";
-import { senateCandidatesByYear } from "@/data/senateCandidatesByYear";
+import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { countyHouseData } from "@/data/countyHouseData";
@@ -25,7 +25,10 @@ const PRESIDENTIAL_CANDIDATES: Record<(typeof YEARS)[number], { dem: string; rep
 
 // Determines tie-break order when more than one race type shares a year (e.g. 2024
 // President + 2024 Senate), matching the type order used in the Counties map toggle.
-const RACE_TYPE_ORDER = ["President", "Governor", "Senate", "House"];
+// "Senate Special" sits right after "Senate" so a same-year regular+special pair (e.g.
+// GA 2020) sorts predictably instead of the special row jumping ahead of President/
+// Governor (RACE_TYPE_ORDER.indexOf returns -1 for any unlisted string, which sorts first).
+const RACE_TYPE_ORDER = ["President", "Governor", "Senate", "Senate Special", "House"];
 
 function getAreaLabel(abbr: string): string {
   if (abbr === "LA") return "Parish";
@@ -105,6 +108,31 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         })
     : [];
 
+  // A state can hold a SEPARATE special Senate election the same year as its regular one
+  // (e.g. GA 2020, MN/MS 2018, OK 2022, NE 2024) - specialYears/specialSenateCandidatesByYear
+  // are the sibling structures countySenateData.ts/senateCandidatesByYear.ts keep for that
+  // second race (see [[project_county_election_scrape]] memory). electionType "Senate
+  // Special" matches the convention PastElectionResultsSection already understands
+  // (badges it, excludes it from swing calc) for the live /senate/[id] pages.
+  const specialSenateResults: DetailPastResult[] = senateCounty
+    ? Object.entries(senateCounty.specialYears)
+        .filter(([, r]) => r)
+        .map(([y, r]) => {
+          const year = Number(y);
+          const candidates = specialSenateCandidatesByYear[county.state]?.[year];
+          return {
+            year,
+            demPct: r!.demPct,
+            repPct: r!.repPct,
+            demVotes: r!.demVotes,
+            repVotes: r!.repVotes,
+            demCandidate: candidates?.dem,
+            repCandidate: candidates?.rep,
+            electionType: "Senate Special",
+          };
+        })
+    : [];
+
   const governorCounty = countyGovernorData[fips];
   const governorResults: DetailPastResult[] = governorCounty
     ? Object.entries(governorCounty.years)
@@ -145,7 +173,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         })
     : [];
 
-  const merged: DetailPastResult[] = [...presidentResults, ...governorResults, ...senateResults, ...houseResults].sort(
+  const merged: DetailPastResult[] = [...presidentResults, ...governorResults, ...senateResults, ...specialSenateResults, ...houseResults].sort(
     (a, b) =>
       b.year - a.year ||
       RACE_TYPE_ORDER.indexOf(a.electionType!) - RACE_TYPE_ORDER.indexOf(b.electionType!)

@@ -173,8 +173,7 @@ SAME_PARTY_NOTES = {
     },
 }
 
-def two_pct(a, b):
-    total = a + b
+def share_pct(a, total):
     return round(a / total * 100, 2) if total else 0.0
 
 # Districts whose house_past_results.csv row is a literal 0/0 (dem_votes AND rep_votes
@@ -213,7 +212,7 @@ for path in SRC_FILES:
                     votes_known = False
 
             if votes_known:
-                dem_pct, rep_pct = two_pct(dem, gop), two_pct(gop, dem)
+                dem_pct, rep_pct = share_pct(dem, total), share_pct(gop, total)
 
             entry["years"][year] = {
                 "dem": dem, "gop": gop, "oth": oth, "total": total,
@@ -328,7 +327,7 @@ out = [
     "",
     "export type CountyYearResult = {",
     "  demVotes: number; repVotes: number; othVotes: number; totalVotes: number;",
-    "  demPct: number; repPct: number; // two-party",
+    "  demPct: number; repPct: number; // share of totalVotes (D+R+Other all sum to 100)",
     "  margin: number; // R-positive (repPct - demPct)",
     "  // Set when this county's total includes a top-two/jungle-primary district where",
     "  // both general-election candidates share the same party (CA, WA) - the dem/gop",

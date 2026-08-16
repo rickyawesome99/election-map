@@ -5,14 +5,14 @@ export const senateCandidatesByYear: Record<string, Record<number, { dem: string
   AK: { 2014: { dem: "Mark Begich", rep: "Dan Sullivan" }, 2016: { dem: "Ray Metcalfe", rep: "Lisa Murkowski" }, 2020: { dem: "Al Gross", rep: "Dan Sullivan" }, 2022: { dem: "Patricia Chesbro", rep: "Lisa Murkowski" } },
   AL: { 2014: { dem: "", rep: "Jeff Sessions" }, 2016: { dem: "Ron Crumpton", rep: "Richard Shelby" }, 2020: { dem: "Doug Jones", rep: "Tommy Tuberville" }, 2022: { dem: "Will Boyd", rep: "Katie Britt" } },
   AR: { 2014: { dem: "Mark Pryor", rep: "Tom Cotton" }, 2016: { dem: "Conner Eldridge", rep: "John Boozman" }, 2020: { dem: "Ricky Dale Harrington Jr. (I)", rep: "Tom Cotton" }, 2022: { dem: "Natalie James", rep: "John Boozman" } },
-  AZ: { 2012: { dem: "Richard Carmona", rep: "Jeff Flake" }, 2016: { dem: "Ann Kirkpatrick", rep: "John McCain" }, 2018: { dem: "Kyrsten Sinema", rep: "Martha McSally" }, 2020: { dem: "Mark Kelly", rep: "Martha McSally" }, 2022: { dem: "Mark Kelly", rep: "Blake Masters" }, 2024: { dem: "Ruben Gallego", rep: "Kari Lake" } },
+  AZ: { 2012: { dem: "Richard Carmona", rep: "Jeff Flake" }, 2016: { dem: "Ann Kirkpatrick", rep: "John McCain" }, 2018: { dem: "Kyrsten Sinema", rep: "Martha McSally" }, 2022: { dem: "Mark Kelly", rep: "Blake Masters" }, 2024: { dem: "Ruben Gallego", rep: "Kari Lake" } },
   CA: { 2012: { dem: "Dianne Feinstein", rep: "Elizabeth Emken" }, 2016: { dem: "Kamala Harris", rep: "Loretta Sanchez (D)" }, 2018: { dem: "Dianne Feinstein", rep: "Kevin de León (D)" }, 2022: { dem: "Alex Padilla", rep: "Mark Meuser" }, 2024: { dem: "Adam Schiff", rep: "Steve Garvey" } },
   CO: { 2014: { dem: "Mark Udall", rep: "Cory Gardner" }, 2016: { dem: "Michael Bennet", rep: "Darryl Glenn" }, 2020: { dem: "John Hickenlooper", rep: "Cory Gardner" }, 2022: { dem: "Michael Bennet", rep: "Joe O'Dea" } },
   CT: { 2012: { dem: "Chris Murphy", rep: "Linda McMahon" }, 2016: { dem: "Richard Blumenthal", rep: "Dan Carter" }, 2018: { dem: "Chris Murphy", rep: "Matthew Corey" }, 2022: { dem: "Richard Blumenthal", rep: "Leora Levy" }, 2024: { dem: "Chris Murphy", rep: "Matthew Corey" } },
   DE: { 2012: { dem: "Tom Carper", rep: "Kevin Wade" }, 2014: { dem: "Chris Coons", rep: "Kevin Wade" }, 2018: { dem: "Tom Carper", rep: "Rob Arlett" }, 2020: { dem: "Chris Coons", rep: "Lauren Witzke" }, 2024: { dem: "Lisa Blunt Rochester", rep: "Eric Hansen" } },
   FL: { 2012: { dem: "Bill Nelson", rep: "Connie Mack" }, 2016: { dem: "Patrick Murphy", rep: "Marco Rubio" }, 2018: { dem: "Bill Nelson", rep: "Rick Scott" }, 2022: { dem: "Val Demings", rep: "Marco Rubio" }, 2024: { dem: "Debbie Mucarsel-Powell", rep: "Rick Scott" } },
   GA: { 2014: { dem: "Michelle Nunn", rep: "David Perdue" }, 2016: { dem: "Jim Barksdale", rep: "Johnny Isakson" }, 2020: { dem: "Jon Ossoff", rep: "David Perdue" }, 2022: { dem: "Raphael Warnock", rep: "Herschel Walker" } },
-  HI: { 2012: { dem: "Mazie Hirono", rep: "Linda Lingle" }, 2014: { dem: "Brian Schatz", rep: "Cam Cavasso" }, 2016: { dem: "Brian Schatz", rep: "John Carroll" }, 2018: { dem: "Mazie Hirono", rep: "Ron Curtis" }, 2022: { dem: "Brian Schatz", rep: "Bob McDermott" }, 2024: { dem: "Mazie Hirono", rep: "Bob McDermott" } },
+  HI: { 2012: { dem: "Mazie Hirono", rep: "Linda Lingle" }, 2016: { dem: "Brian Schatz", rep: "John Carroll" }, 2018: { dem: "Mazie Hirono", rep: "Ron Curtis" }, 2022: { dem: "Brian Schatz", rep: "Bob McDermott" }, 2024: { dem: "Mazie Hirono", rep: "Bob McDermott" } },
   IA: { 2014: { dem: "Bruce Braley", rep: "Joni Ernst" }, 2016: { dem: "Patty Judge", rep: "Chuck Grassley" }, 2020: { dem: "Theresa Greenfield", rep: "Joni Ernst" }, 2022: { dem: "Michael Franken", rep: "Chuck Grassley" } },
   ID: { 2014: { dem: "Nels Mitchell", rep: "Jim Risch" }, 2016: { dem: "Jerry Sturgill", rep: "Mike Crapo" }, 2020: { dem: "Paulette Jordan", rep: "Jim Risch" }, 2022: { dem: "David Roth", rep: "Mike Crapo" } },
   IL: { 2014: { dem: "Dick Durbin", rep: "Jim Oberweis" }, 2016: { dem: "Tammy Duckworth", rep: "Mark Kirk" }, 2020: { dem: "Dick Durbin", rep: "Mark Curran" }, 2022: { dem: "Tammy Duckworth", rep: "Kathy Salvi" } },
@@ -52,4 +52,15 @@ export const senateCandidatesByYear: Record<string, Record<number, { dem: string
   WI: { 2012: { dem: "Tammy Baldwin", rep: "Tommy Thompson" }, 2016: { dem: "Russ Feingold", rep: "Ron Johnson" }, 2018: { dem: "Tammy Baldwin", rep: "Leah Vukmir" }, 2022: { dem: "Mandela Barnes", rep: "Ron Johnson" }, 2024: { dem: "Tammy Baldwin", rep: "Eric Hovde" } },
   WV: { 2012: { dem: "Joe Manchin", rep: "John Raese" }, 2014: { dem: "Natalie Tennant", rep: "Shelley Moore Capito" }, 2018: { dem: "Joe Manchin", rep: "Patrick Morrisey" }, 2020: { dem: "Paula Jean Swearengin", rep: "Shelley Moore Capito" }, 2024: { dem: "Glenn Elliott", rep: "Jim Justice" } },
   WY: { 2012: { dem: "Tim Chesnut", rep: "John Barrasso" }, 2014: { dem: "Charlie Hardy", rep: "Michael Enzi" }, 2018: { dem: "Gary Trauner", rep: "John Barrasso" }, 2020: { dem: "Merav Ben-David", rep: "Cynthia Lummis" }, 2024: { dem: "Scott Morrow", rep: "John Barrasso" } },
+};
+
+export const specialSenateCandidatesByYear: Record<string, Record<number, { dem: string; rep: string }>> = {
+  AZ: { 2020: { dem: "Mark Kelly", rep: "Martha McSally" } },
+  GA: { 2020: { dem: "Raphael Warnock", rep: "Kelly Loeffler" } },
+  HI: { 2014: { dem: "Brian Schatz", rep: "Cam Cavasso" } },
+  MN: { 2018: { dem: "Tina Smith", rep: "Karin Housley" } },
+  MS: { 2018: { dem: "Mike Espy", rep: "Cindy Hyde-Smith" } },
+  NE: { 2024: { dem: "Preston Love Jr.", rep: "Pete Ricketts" } },
+  OK: { 2014: { dem: "Connie Johnson", rep: "James Lankford" }, 2022: { dem: "Kendra Horn", rep: "Markwayne Mullin" } },
+  SC: { 2014: { dem: "Joyce Dickerson", rep: "Tim Scott" } },
 };

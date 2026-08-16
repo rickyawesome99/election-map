@@ -223,9 +223,9 @@ function buildRaceForecast(row, raceType, id, name, state, pastRows) {
         const dv = parseInt((r.dem_votes || "").replace(/,/g, ""));
         const rv = parseInt((r.rep_votes || "").replace(/,/g, ""));
         const tv = parseInt((r.total_votes || "").replace(/,/g, ""));
-        if (!isNaN(dv) && dv > 0) pr.demVotes = dv;
-        if (!isNaN(rv) && rv > 0) pr.repVotes = rv;
-        if (!isNaN(tv) && tv > 0) pr.totalVotes = tv;
+        if (!isNaN(dv)) pr.demVotes = dv;
+        if (!isNaN(rv)) pr.repVotes = rv;
+        if (!isNaN(tv)) pr.totalVotes = tv;
         if (has(r.margin)) pr.margin = num(r.margin);
         if (has(r.seat)) pr.seat = int2(r.seat);
         if (has(r['class'])) pr.seatClass = int2(r['class']);
@@ -277,9 +277,9 @@ function buildNoElection(row, state, abbr, pastRows) {
         const dv = parseInt((r.dem_votes || "").replace(/,/g, ""));
         const rv = parseInt((r.rep_votes || "").replace(/,/g, ""));
         const tv = parseInt((r.total_votes || "").replace(/,/g, ""));
-        if (!isNaN(dv) && dv > 0) pr.demVotes = dv;
-        if (!isNaN(rv) && rv > 0) pr.repVotes = rv;
-        if (!isNaN(tv) && tv > 0) pr.totalVotes = tv;
+        if (!isNaN(dv)) pr.demVotes = dv;
+        if (!isNaN(rv)) pr.repVotes = rv;
+        if (!isNaN(tv)) pr.totalVotes = tv;
         if (has(r.margin)) pr.margin = num(r.margin);
         if (has(r.seat)) pr.seat = int2(r.seat);
         if (has(r['class'])) pr.seatClass = int2(r['class']);
@@ -539,8 +539,10 @@ for (const row of houseStatewideRows) {
   const entry = { year, race: (row.race || "").trim(), demPct, repPct };
   const dv = parseInt((row.dem_votes || "").replace(/,/g, ""));
   const rv = parseInt((row.rep_votes || "").replace(/,/g, ""));
-  if (!isNaN(dv) && dv > 0) entry.demVotes = dv;
-  if (!isNaN(rv) && rv > 0) entry.repVotes = rv;
+  const tv = parseInt((row.total_votes || "").replace(/,/g, ""));
+  if (!isNaN(dv)) entry.demVotes = dv;
+  if (!isNaN(rv)) entry.repVotes = rv;
+  if (!isNaN(tv)) entry.totalVotes = tv;
   (houseStatewideResults[key] = houseStatewideResults[key] || []).push(entry);
 }
 const STATEWIDE_RACE_ORDER = { "President": 0, "Governor": 1, "Senate": 2, "Senate Special": 2 };
@@ -675,10 +677,10 @@ for (const row of houseDelHistoryRows) {
   const rv = parseInt((row.rep_votes   || "").replace(/,/g, ""));
   const vm = parseInt((row.vote_margin || "").replace(/,/g, ""));
   const tv = parseInt((row["total votes"] || row.total_votes || "").replace(/,/g, ""));
-  if (!isNaN(dv) && dv > 0) entry.demVotes   = dv;
-  if (!isNaN(rv) && rv > 0) entry.repVotes   = rv;
-  if (!isNaN(vm))           entry.voteMargin = vm;
-  if (!isNaN(tv) && tv > 0) entry.totalVotes = tv;
+  if (!isNaN(dv)) entry.demVotes   = dv;
+  if (!isNaN(rv)) entry.repVotes   = rv;
+  if (!isNaN(vm)) entry.voteMargin = vm;
+  if (!isNaN(tv)) entry.totalVotes = tv;
   (houseDelegationHistory[stateName] = houseDelegationHistory[stateName] || []).push(entry);
 }
 for (const key of Object.keys(houseDelegationHistory)) {
@@ -703,10 +705,14 @@ for (const row of presHistoryRows) {
     repPct,
     margin:         parseFloat((repPct - demPct).toFixed(2)),
   };
-  if (has(row.dem_votes))   entry.demVotes   = parseInt(row.dem_votes.replace(/,/g, "")) || undefined;
-  if (has(row.rep_votes))   entry.repVotes   = parseInt(row.rep_votes.replace(/,/g, "")) || undefined;
-  if (has(row.vote_margin)) entry.voteMargin = parseInt(row.vote_margin.replace(/,/g, "")) || undefined;
-  if (has(row.total_votes)) entry.totalVotes = parseInt(row.total_votes.replace(/,/g, "")) || undefined;
+  const presDv = parseInt((row.dem_votes   || "").replace(/,/g, ""));
+  const presRv = parseInt((row.rep_votes   || "").replace(/,/g, ""));
+  const presVm = parseInt((row.vote_margin || "").replace(/,/g, ""));
+  const presTv = parseInt((row.total_votes || "").replace(/,/g, ""));
+  if (!isNaN(presDv)) entry.demVotes   = presDv;
+  if (!isNaN(presRv)) entry.repVotes   = presRv;
+  if (!isNaN(presVm)) entry.voteMargin = presVm;
+  if (!isNaN(presTv)) entry.totalVotes = presTv;
   if (has(row.dem_candidate)) entry.demCandidate = row.dem_candidate;
   if (has(row.rep_candidate)) entry.repCandidate = row.rep_candidate;
   const pIncVal = (row.incumbent || "").trim().toUpperCase();
@@ -974,10 +980,11 @@ export const houseDelegationHistory: Record<string, HouseDelegationEntry[]> = ${
 export type HouseStatewideResult = {
   year: number;
   race: string;
-  demPct: number;
+  demPct: number; // share of totalVotes (D+R+Other all sum to 100), not two-party
   repPct: number;
   demVotes?: number;
   repVotes?: number;
+  totalVotes?: number;
 };
 
 export const houseStatewideResults: Record<string, HouseStatewideResult[]> = ${j(houseStatewideResults)};

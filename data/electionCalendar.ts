@@ -2,6 +2,8 @@
 // Source: data-entry/{senate,governor,house}_past_results.csv — presence of a
 // (state, year) row means that state held that race that year. President is excluded;
 // it never greys out since every state votes every presidential cycle.
+// electionCalendar.senate is REGULAR-class races only (excludes rows flagged
+// type="Special") - see senateSpecialCalendar below for those.
 
 export type CountyRaceType = "senate" | "governor" | "house";
 
@@ -10,14 +12,14 @@ export const electionCalendar: Record<CountyRaceType, Record<string, number[]>> 
     AK: [2014, 2016, 2020, 2022],
     AL: [2014, 2016, 2020, 2022],
     AR: [2014, 2016, 2020, 2022],
-    AZ: [2012, 2016, 2018, 2020, 2022, 2024],
+    AZ: [2012, 2016, 2018, 2022, 2024],
     CA: [2012, 2016, 2018, 2022, 2024],
     CO: [2014, 2016, 2020, 2022],
     CT: [2012, 2016, 2018, 2022, 2024],
     DE: [2012, 2014, 2018, 2020, 2024],
     FL: [2012, 2016, 2018, 2022, 2024],
     GA: [2014, 2016, 2020, 2022],
-    HI: [2012, 2014, 2016, 2018, 2022, 2024],
+    HI: [2012, 2016, 2018, 2022, 2024],
     IA: [2014, 2016, 2020, 2022],
     ID: [2014, 2016, 2020, 2022],
     IL: [2014, 2016, 2020, 2022],
@@ -88,7 +90,7 @@ export const electionCalendar: Record<CountyRaceType, Record<string, number[]>> 
     NC: [2016, 2020, 2024],
     ND: [2016, 2020, 2024],
     NE: [2014, 2018, 2022],
-    NH: [2020, 2022, 2024],
+    NH: [2016, 2018, 2020, 2022, 2024],
     NJ: [2017, 2021, 2025],
     NM: [2014, 2018, 2022],
     NV: [2014, 2018, 2022],
@@ -162,4 +164,19 @@ export const electionCalendar: Record<CountyRaceType, Record<string, number[]>> 
     WV: [2016, 2018, 2020, 2022, 2024],
     WY: [2016, 2018, 2020, 2022, 2024],
   },
+};
+
+// States/years with a Senate race flagged type="Special" in senate_past_results.csv
+// (a state can appear here AND in electionCalendar.senate for the same year if it had
+// both, e.g. GA 2020 - or ONLY here if it had a special with no regular race that same
+// year, e.g. AZ 2020).
+export const senateSpecialCalendar: Record<string, number[]> = {
+  AZ: [2020],
+  GA: [2020],
+  HI: [2014],
+  MN: [2018],
+  MS: [2018],
+  NE: [2024],
+  OK: [2014, 2022],
+  SC: [2014],
 };

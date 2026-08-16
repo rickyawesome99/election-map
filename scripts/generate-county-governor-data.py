@@ -15,8 +15,7 @@ DST = os.path.join(os.path.dirname(__file__), "../data/countyGovernorData.ts")
 SRC_FILES = sorted(glob.glob(SRC_GLOB))
 YEARS = sorted(int(re.search(r"_(\d{4})\.csv$", f).group(1)) for f in SRC_FILES)
 
-def two_pct(a, b):
-    total = a + b
+def share_pct(a, total):
     return round(a / total * 100, 2) if total else 0.0
 
 counties = {}
@@ -27,10 +26,11 @@ for path in SRC_FILES:
             fips = r["county_id"]
             entry = counties.setdefault(fips, {"state": r["state"], "countyName": r["county_name"], "years": {}})
             dem, gop, oth, total = int(r[f"dem_{year}"]), int(r[f"gop_{year}"]), int(r[f"oth_{year}"]), int(r[f"total_{year}"])
+            dem_pct, rep_pct = share_pct(dem, total), share_pct(gop, total)
             entry["years"][year] = {
                 "dem": dem, "gop": gop, "oth": oth, "total": total,
-                "demPct": two_pct(dem, gop), "repPct": two_pct(gop, dem),
-                "margin": round(two_pct(gop, dem) - two_pct(dem, gop), 2),
+                "demPct": dem_pct, "repPct": rep_pct,
+                "margin": round(rep_pct - dem_pct, 2),
             }
 
 out = [
@@ -51,7 +51,7 @@ out = [
     "",
     "export type CountyYearResult = {",
     "  demVotes: number; repVotes: number; othVotes: number; totalVotes: number;",
-    "  demPct: number; repPct: number; // two-party",
+    "  demPct: number; repPct: number; // share of totalVotes (D+R+Other all sum to 100)",
     "  margin: number; // R-positive (repPct - demPct)",
     "};",
     "export type CountyGovernorResult = {",
