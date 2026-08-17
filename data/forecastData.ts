@@ -9074,7 +9074,7 @@ export const houseData: RaceForecast[] = [
     "seatHolder": "Zach Nunn",
     "seatParty": "R",
     "pastResults": [
-      { "year": 2024, "demPct": 47.94, "repPct": 51.77, "demCandidate": "Lanon Baccam", "repCandidate": "Zachary Nunn", "demVotes": 197962, "repVotes": 213746, "totalVotes": 412905, "margin": 3.83, "repIncumbent": true },
+      { "year": 2024, "demPct": 47.94, "repPct": 51.77, "demCandidate": "Lanon Baccam", "repCandidate": "Zach Nunn", "demVotes": 197962, "repVotes": 213746, "totalVotes": 412905, "margin": 3.83, "repIncumbent": true },
       { "year": 2022, "demPct": 49.57, "repPct": 50.26, "demCandidate": "Cynthia Axne", "repCandidate": "Zach Nunn", "demVotes": 154117, "repVotes": 156262, "totalVotes": 310913, "margin": 0.69, "demIncumbent": true },
       { "year": 2020, "demPct": 48.94, "repPct": 47.55, "demCandidate": "Cynthia Axne", "repCandidate": "David Young", "demVotes": 219205, "repVotes": 212997, "totalVotes": 447947, "margin": -1.39, "demIncumbent": true },
       { "year": 2018, "demPct": 49.3, "repPct": 47.14, "demCandidate": "Cindy Axne", "repCandidate": "David Young", "demVotes": 175642, "repVotes": 167933, "totalVotes": 356241, "margin": -2.16, "repIncumbent": true },
@@ -18556,114 +18556,142 @@ export type BoundaryHistoryEntry = {
 
 export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
   "1201": [
+    { "year": 2026, "description": "", "pviNew": 18, "pviOld": 19 },
     { "year": 2022, "description": "FL-1 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 10, "pviOld": 20 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 22 }
   ],
   "1202": [
+    { "year": 2026, "description": "", "pviNew": 8, "pviOld": 8 },
     { "year": 2022, "description": "FL-2 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 8, "pviOld": 29 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 18 }
   ],
   "1203": [
+    { "year": 2026, "description": "", "pviNew": 10, "pviOld": 9 },
     { "year": 2022, "description": "FL-3 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 9, "pviOld": 8 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 9 }
   ],
   "1204": [
+    { "year": 2026, "description": "", "pviNew": 5, "pviOld": 6 },
     { "year": 2022, "description": "FL-4 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 6, "pviOld": 14 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 17 }
   ],
   "1205": [
+    { "year": 2026, "description": "", "pviNew": 10, "pviOld": 11 },
     { "year": 2022, "description": "FL-5 changed dramatically under Florida's 2022 map. The prior north Florida Black-performing district linking Jacksonville and Tallahassee was dismantled, and the new 5th became a very different Jacksonville-area district that leaned much more Republican.", "pviNew": 11, "pviOld": -12 },
     { "year": 2016, "description": "FL-5 was one of the most important changes on Florida's court-ordered 2016 map. The district was redrawn into a north Florida seat linking Jacksonville to Tallahassee, replacing the older Orlando-to-Jacksonville configuration.", "pviNew": -12 }
   ],
   "1206": [
+    { "year": 2026, "description": "", "pviNew": 14, "pviOld": 14 },
     { "year": 2022, "description": "FL-6 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 14, "pviOld": 10 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 7 }
   ],
   "1207": [
+    { "year": 2026, "description": "", "pviNew": 5, "pviOld": 5 },
     { "year": 2022, "description": "FL-7 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 5, "pviOld": -3 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 0 }
   ],
   "1208": [
+    { "year": 2026, "description": "", "pviNew": 11, "pviOld": 11 },
     { "year": 2022, "description": "FL-8 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 11, "pviOld": 12 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 11 }
   ],
   "1209": [
+    { "year": 2026, "description": "", "pviNew": -4, "pviOld": -8 },
     { "year": 2022, "description": "FL-9 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -8, "pviOld": -3 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -5 }
   ],
   "1210": [
+    { "year": 2026, "description": "", "pviNew": -13, "pviOld": -14 },
     { "year": 2022, "description": "FL-10 was heavily reworked under Florida's 2022 map, becoming a more compact Orlando-based Democratic seat after the statewide reshuffle.", "pviNew": -14, "pviOld": -12 },
     { "year": 2016, "description": "FL-10 was substantially reworked under Florida's 2016 remedial map as central Florida districts were untangled and redrawn around Orlando.", "pviNew": -11 }
   ],
   "1211": [
+    { "year": 2026, "description": "", "pviNew": 8, "pviOld": 8 },
     { "year": 2022, "description": "FL-11 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 8, "pviOld": 18 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 15 }
   ],
   "1212": [
+    { "year": 2026, "description": "", "pviNew": 17, "pviOld": 17 },
     { "year": 2022, "description": "FL-12 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 17, "pviOld": 11 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 8 }
   ],
   "1213": [
+    { "year": 2026, "description": "", "pviNew": 5, "pviOld": 6 },
     { "year": 2022, "description": "FL-13 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 6, "pviOld": 0 },
     { "year": 2016, "description": "FL-13 was notably altered by Florida's 2016 court-ordered map, becoming more compact around Pinellas County and less like the prior configuration that extended further afield.", "pviNew": -2 }
   ],
   "1214": [
+    { "year": 2026, "description": "", "pviNew": -5, "pviOld": -8 },
     { "year": 2022, "description": "FL-14 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -8, "pviOld": -7 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -7 }
   ],
   "1215": [
+    { "year": 2026, "description": "", "pviNew": 5, "pviOld": 4 },
     { "year": 2022, "description": "FL-15 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 4, "pviOld": 6 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 6 }
   ],
   "1216": [
+    { "year": 2026, "description": "", "pviNew": 7, "pviOld": 7 },
     { "year": 2022, "description": "FL-16 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 7, "pviOld": 7 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 7 }
   ],
   "1217": [
+    { "year": 2026, "description": "", "pviNew": 11, "pviOld": 10 },
     { "year": 2022, "description": "FL-17 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 10, "pviOld": 16 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 13 }
   ],
   "1218": [
+    { "year": 2026, "description": "", "pviNew": 14, "pviOld": 13 },
     { "year": 2022, "description": "FL-18 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 13, "pviOld": 6 },
     { "year": 2016, "description": "FL-18 saw meaningful changes on the 2016 remedial map as south and Treasure Coast districts were redrawn for population balance and to unwind the prior plan.", "pviNew": 5 }
   ],
   "1219": [
+    { "year": 2026, "description": "", "pviNew": 14, "pviOld": 13 },
     { "year": 2022, "description": "FL-19 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 13, "pviOld": 12 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 13 }
   ],
   "1220": [
+    { "year": 2026, "description": "", "pviNew": -22, "pviOld": -25 },
     { "year": 2022, "description": "FL-20 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -25, "pviOld": -28 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -31 }
   ],
   "1221": [
+    { "year": 2026, "description": "", "pviNew": 7, "pviOld": 7 },
     { "year": 2022, "description": "FL-21 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 7, "pviOld": -8 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -9 }
   ],
   "1222": [
+    { "year": 2026, "description": "", "pviNew": -4, "pviOld": -7 },
     { "year": 2022, "description": "FL-22 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -7, "pviOld": -6 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -6 }
   ],
   "1223": [
+    { "year": 2026, "description": "", "pviNew": -2, "pviOld": -5 },
     { "year": 2022, "description": "FL-23 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -5, "pviOld": -9 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -11 }
   ],
   "1224": [
+    { "year": 2026, "description": "", "pviNew": -18, "pviOld": -25 },
     { "year": 2022, "description": "FL-24 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -25, "pviOld": -28 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": -34 }
   ],
   "1225": [
+    { "year": 2026, "description": "", "pviNew": -5, "pviOld": -9 },
     { "year": 2022, "description": "FL-25 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": -9, "pviOld": 8 },
     { "year": 2016, "description": "Florida's 2016 congressional map was a court-ordered remedial plan that reworked district lines after the previous map was invalidated. This district kept some of its prior core but was materially adjusted for the 2016 election.", "pviNew": 4 }
   ],
   "1226": [
+    { "year": 2026, "description": "", "pviNew": 16, "pviOld": 8 },
     { "year": 2022, "description": "FL-26 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 8, "pviOld": -1 },
     { "year": 2016, "description": "FL-26 was significantly redrawn under Florida's 2016 court-ordered map, with Miami-Dade and southwest Florida lines reconfigured in a way that changed the district's partisan balance.", "pviNew": -6 }
   ],
   "1227": [
+    { "year": 2026, "description": "", "pviNew": 6, "pviOld": 0 },
     { "year": 2022, "description": "FL-27 was redrawn for 2022 under Florida's new map. The district kept some of its prior core, but the statewide plan materially altered boundaries and generally made the delegation more Republican.", "pviNew": 0, "pviOld": -4 },
     { "year": 2016, "description": "FL-27 was effectively created as a new Miami-area seat under Florida's 2016 remedial map, taking territory that had been configured differently under the previous plan.", "pviNew": -5 }
   ],
   "1228": [
+    { "year": 2026, "description": "", "pviNew": 10, "pviOld": 2 },
     { "year": 2022, "description": "FL-28 was a new district for 2022 after Florida gained a seat. It was drawn in southwest Florida and helped reshuffle neighboring South Florida districts.", "pviNew": 2 }
   ],
   "1301": [
@@ -18855,26 +18883,32 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "KY-6 was redrawn for 2022. Kentucky's 2022 map made limited changes and kept the state's six-district structure largely intact. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 9, "pviOld": 8 }
   ],
   "2201": [
+    { "year": 2026, "description": "", "pviNew": 20, "pviOld": 22 },
     { "year": 2024, "description": "LA-1 remained centered on the New Orleans suburbs and the Florida Parishes, with only ripple-effect changes from Louisiana's court-driven 2024 redraw.", "pviNew": 22, "pviOld": 23 },
     { "year": 2022, "description": "LA-1 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 23, "pviOld": 22 }
   ],
   "2202": [
+    { "year": 2026, "description": "", "pviNew": -25, "pviOld": -16 },
     { "year": 2024, "description": "LA-2 remained the New Orleans-based Black-majority district, though its exact lines shifted as Louisiana created a second Black-majority seat elsewhere on the map.", "pviNew": -16, "pviOld": -25 },
     { "year": 2022, "description": "LA-2 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -25, "pviOld": -25 }
   ],
   "2203": [
+    { "year": 2026, "description": "", "pviNew": 18, "pviOld": 24 },
     { "year": 2024, "description": "LA-3 stayed a south Louisiana/Cajun Country seat, but its boundaries were adjusted in the statewide reshuffle caused by the creation of a new Black-majority district.", "pviNew": 24, "pviOld": 21 },
     { "year": 2022, "description": "LA-3 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 21, "pviOld": 21 }
   ],
   "2204": [
+    { "year": 2026, "description": "", "pviNew": 17, "pviOld": 27 },
     { "year": 2024, "description": "LA-4 remained a northwest Louisiana seat, though its boundaries changed significantly as the new map carved out a second Black-majority district running up the state.", "pviNew": 27, "pviOld": 14 },
     { "year": 2022, "description": "LA-4 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 14, "pviOld": 14 }
   ],
   "2205": [
+    { "year": 2026, "description": "", "pviNew": 17, "pviOld": 19 },
     { "year": 2024, "description": "LA-5, previously a long northeast-to-central Louisiana district, was significantly altered by the 2024 redraw and gave up territory used to construct the new second Black-majority seat.", "pviNew": 19, "pviOld": 17 },
     { "year": 2022, "description": "LA-5 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 17, "pviOld": 17 }
   ],
   "2206": [
+    { "year": 2026, "description": "", "pviNew": 16, "pviOld": -8 },
     { "year": 2024, "description": "LA-6 changed more than any other Louisiana district in 2024. It was redrawn from a Baton Rouge-centered seat into a long Baton Rouge-to-Shreveport district designed to create a second Black-majority/Black-opportunity seat, making it far more Democratic than before.", "pviNew": -8, "pviOld": 19 },
     { "year": 2022, "description": "LA-6 was redrawn for 2022. Louisiana's 2022 map mostly preserved the state's existing six-district framework; the bigger VRA-driven changes did not arrive until the 2024 redraw. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 19, "pviOld": 18 }
   ],
@@ -19015,23 +19049,23 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "MO-1 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -27, "pviOld": -29 }
   ],
   "2902": [
-    { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 4, "pviOld": 7 },
+    { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 6, "pviOld": 7 },
     { "year": 2022, "description": "MO-2 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 7, "pviOld": 4 }
   ],
   "2903": [
-    { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 13, "pviOld": 16 },
+    { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 10, "pviOld": 16 },
     { "year": 2022, "description": "MO-3 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 16, "pviOld": 21 }
   ],
   "2904": [
-    { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 21, "pviOld": 23 },
+    { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 10, "pviOld": 23 },
     { "year": 2022, "description": "MO-4 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 23, "pviOld": 20 }
   ],
   "2905": [
-    { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": -12, "pviOld": -11 },
+    { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 9, "pviOld": -11 },
     { "year": 2022, "description": "MO-5 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -11, "pviOld": -7 }
   ],
   "2906": [
-    { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 19, "pviOld": 21 },
+    { "year": 2026, "description": "Gov. Mike Kehoe (R) signed new map into law on Sept. 28, 2025.", "pviNew": 13, "pviOld": 21 },
     { "year": 2022, "description": "MO-6 was redrawn for 2022. Missouri's 2022 map preserved the same basic eight-district structure with relatively modest changes. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 21, "pviOld": 18 }
   ],
   "2907": [
@@ -19225,7 +19259,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "NY-26 was substantially reworked for 2022. New York's 2022 map ended up court-drawn after litigation and the loss of one seat, producing major changes in several districts and a statewide renumbering/realignment. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -9, "pviOld": -10 }
   ],
   "3701": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 1, "pviOld": 1 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2025", "pviNew": 5, "pviOld": 1 },
     { "year": 2024, "description": "NC-1, long a northeastern Black-opportunity seat, was redrawn in 2023 for the 2024 election to add more Republican territory, making it notably less Democratic than the 2022 version.", "pviNew": 1, "pviOld": -2 },
     { "year": 2022, "description": "NC-1 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": -2, "pviOld": -3 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": -3, "pviOld": -17 },
@@ -19239,7 +19273,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2016, "description": "NC-2 was substantially redrawn in 2016, shedding parts of its prior eastern reach and taking on a more compact Triangle-area configuration.", "pviNew": 7 }
   ],
   "3703": [
-    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2027", "pviNew": 10, "pviOld": 11 },
+    { "year": 2026, "description": "Legislature passed new map into law on Oct. 22, 2027", "pviNew": 6, "pviOld": 11 },
     { "year": 2024, "description": "NC-3 remained an eastern North Carolina seat with mostly secondary changes under the 2024 redraw.", "pviNew": 11, "pviOld": 15 },
     { "year": 2022, "description": "NC-3 was redrawn for 2022 as North Carolina added a 14th district and reworked the statewide map. The district kept part of its prior core but took on a new configuration before being redrawn again for 2024.", "pviNew": 15, "pviOld": 14 },
     { "year": 2020, "description": "North Carolina's 2020 map was a court-ordered interim redraw that reworked the district's lines after the 2016 configuration was struck down; this district kept parts of its prior core but was notably adjusted for the 2020 election.", "pviNew": 14, "pviOld": 12 },
@@ -19321,11 +19355,11 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "NC-14 was created for 2022 after North Carolina gained a seat. It was drawn in the Charlotte area as a competitive-to-Democratic-leaning district, though it was later redrawn again for 2024.", "pviNew": -6 }
   ],
   "3901": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": -3, "pviOld": -2 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 1, "pviOld": -2 },
     { "year": 2022, "description": "OH-1 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -2, "pviOld": 4 }
   ],
   "3902": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 24, "pviOld": 25 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 21, "pviOld": 25 },
     { "year": 2022, "description": "OH-2 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 25, "pviOld": 9 }
   ],
   "3903": [
@@ -19333,15 +19367,15 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "OH-3 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -20, "pviOld": -19 }
   ],
   "3904": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 18, "pviOld": 20 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 21, "pviOld": 20 },
     { "year": 2022, "description": "OH-4 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 20, "pviOld": 20 }
   ],
   "3905": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 14, "pviOld": 15 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 12, "pviOld": 15 },
     { "year": 2022, "description": "OH-5 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 15, "pviOld": 15 }
   ],
   "3906": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 16, "pviOld": 16 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 17, "pviOld": 16 },
     { "year": 2022, "description": "OH-6 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 16, "pviOld": 24 }
   ],
   "3907": [
@@ -19349,15 +19383,15 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "OH-7 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 7, "pviOld": 18 }
   ],
   "3908": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 12, "pviOld": 14 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 8, "pviOld": 14 },
     { "year": 2022, "description": "OH-8 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 14, "pviOld": 19 }
   ],
   "3909": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 3, "pviOld": 3 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 5, "pviOld": 3 },
     { "year": 2022, "description": "OH-9 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 3, "pviOld": -9 }
   ],
   "3910": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 3, "pviOld": 4 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 4, "pviOld": 4 },
     { "year": 2022, "description": "OH-10 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 4, "pviOld": 5 }
   ],
   "3911": [
@@ -19365,19 +19399,19 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "OH-11 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -28, "pviOld": -30 }
   ],
   "3912": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 16, "pviOld": 18 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 15, "pviOld": 18 },
     { "year": 2022, "description": "OH-12 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 18, "pviOld": 6 }
   ],
   "3913": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 0, "pviOld": 1 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": -2, "pviOld": 1 },
     { "year": 2022, "description": "OH-13 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 1, "pviOld": -1 }
   ],
   "3914": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 9, "pviOld": 9 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 10, "pviOld": 9 },
     { "year": 2022, "description": "OH-14 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 9, "pviOld": 7 }
   ],
   "3915": [
-    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 4, "pviOld": 6 },
+    { "year": 2026, "description": "Redistricting commission approved a new map on Oct. 31, 2025", "pviNew": 5, "pviOld": 6 },
     { "year": 2022, "description": "OH-15 was substantially reworked for 2022. Ohio's 2022 map followed repeated litigation and the loss of one seat, forcing notable changes in several districts even though the overall partisan tilt remained Republican-friendly. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 6, "pviOld": 9 }
   ],
   "3916": [
@@ -19512,74 +19546,83 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "SC-7 was redrawn for 2022. South Carolina's 2022 map kept the seven-district structure but drew legal scrutiny, especially around the Charleston-based 1st district. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 11, "pviOld": 11 }
   ],
   "4701": [
+    { "year": 2026, "description": "", "pviNew": 29, "pviOld": 30 },
     { "year": 2022, "description": "TN-1 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 30, "pviOld": 30 }
   ],
   "4702": [
+    { "year": 2026, "description": "", "pviNew": 17, "pviOld": 18 },
     { "year": 2022, "description": "TN-2 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 18, "pviOld": 18 }
   ],
   "4703": [
+    { "year": 2026, "description": "", "pviNew": 18, "pviOld": 19 },
     { "year": 2022, "description": "TN-3 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 19, "pviOld": 19 }
   ],
   "4704": [
+    { "year": 2026, "description": "", "pviNew": 11, "pviOld": 22 },
     { "year": 2022, "description": "TN-4 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 22, "pviOld": 22 }
   ],
   "4705": [
+    { "year": 2026, "description": "", "pviNew": 10, "pviOld": 9 },
     { "year": 2022, "description": "TN-5 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 9, "pviOld": -9 }
   ],
   "4706": [
+    { "year": 2026, "description": "", "pviNew": 13, "pviOld": 17 },
     { "year": 2022, "description": "TN-6 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 17, "pviOld": 26 }
   ],
   "4707": [
+    { "year": 2026, "description": "", "pviNew": 11, "pviOld": 10 },
     { "year": 2022, "description": "TN-7 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 10, "pviOld": 21 }
   ],
   "4708": [
+    { "year": 2026, "description": "", "pviNew": 10, "pviOld": 21 },
     { "year": 2022, "description": "TN-8 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": 21, "pviOld": 19 }
   ],
   "4709": [
+    { "year": 2026, "description": "", "pviNew": 9, "pviOld": -22 },
     { "year": 2022, "description": "TN-9 was materially redrawn for 2022. Tennessee's 2022 map notably split Nashville and reworked several middle Tennessee districts in a plan more favorable to Republicans. It retained some of its previous core, but the new map changed the district's composition in noticeable ways.", "pviNew": -22, "pviOld": -28 }
   ],
   "4801": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 25, "pviOld": 26 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 24, "pviOld": 26 },
     { "year": 2022, "description": "TX-1 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 26, "pviOld": 25 }
   ],
   "4802": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 12, "pviOld": 15 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 15 },
     { "year": 2022, "description": "TX-2 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 15, "pviOld": 4 }
   ],
   "4803": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 11 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 11 },
     { "year": 2022, "description": "TX-3 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 11, "pviOld": 6 }
   ],
   "4804": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 16, "pviOld": 16 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 12, "pviOld": 16 },
     { "year": 2022, "description": "TX-4 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 16, "pviOld": 28 }
   ],
   "4805": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 13, "pviOld": 14 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 14 },
     { "year": 2022, "description": "TX-5 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 14, "pviOld": 15 }
   ],
   "4806": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 14, "pviOld": 15 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 15 },
     { "year": 2022, "description": "TX-6 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 15, "pviOld": 6 }
   ],
   "4807": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -12, "pviOld": -13 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -13, "pviOld": -13 },
     { "year": 2022, "description": "TX-7 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -13, "pviOld": -1 }
   ],
   "4808": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 16, "pviOld": 16 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 13, "pviOld": 16 },
     { "year": 2022, "description": "TX-8 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 16, "pviOld": 25 }
   ],
   "4809": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -24, "pviOld": -26 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 9, "pviOld": -26 },
     { "year": 2022, "description": "TX-9 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -26, "pviOld": -27 }
   ],
   "4810": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 12, "pviOld": 13 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 13 },
     { "year": 2022, "description": "TX-10 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 13, "pviOld": 5 }
   ],
   "4811": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 22, "pviOld": 23 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 17, "pviOld": 23 },
     { "year": 2022, "description": "TX-11 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 23, "pviOld": 32 }
   ],
   "4812": [
@@ -19587,11 +19630,11 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "TX-12 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 12, "pviOld": 15 }
   ],
   "4813": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 24, "pviOld": 26 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 23, "pviOld": 26 },
     { "year": 2022, "description": "TX-13 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 26, "pviOld": 33 }
   ],
   "4814": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 17, "pviOld": 17 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 12, "pviOld": 17 },
     { "year": 2022, "description": "TX-14 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 17, "pviOld": 12 }
   ],
   "4815": [
@@ -19603,11 +19646,11 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "TX-16 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -17, "pviOld": -18 }
   ],
   "4817": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 14, "pviOld": 14 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 14 },
     { "year": 2022, "description": "TX-17 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 14, "pviOld": 9 }
   ],
   "4818": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -21, "pviOld": -23 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -29, "pviOld": -23 },
     { "year": 2022, "description": "TX-18 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -23, "pviOld": -26 }
   ],
   "4819": [
@@ -19615,15 +19658,15 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "TX-19 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 26, "pviOld": 26 }
   ],
   "4820": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -12, "pviOld": -15 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -16, "pviOld": -15 },
     { "year": 2022, "description": "TX-20 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -15, "pviOld": -13 }
   ],
   "4821": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 13 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 13 },
     { "year": 2022, "description": "TX-21 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 13, "pviOld": 8 }
   ],
   "4822": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 9, "pviOld": 11 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 11 },
     { "year": 2022, "description": "TX-22 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 11, "pviOld": 4 }
   ],
   "4823": [
@@ -19631,11 +19674,11 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "TX-23 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 5, "pviOld": 1 }
   ],
   "4824": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 7, "pviOld": 10 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 8, "pviOld": 10 },
     { "year": 2022, "description": "TX-24 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 10, "pviOld": 2 }
   ],
   "4825": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 18, "pviOld": 19 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 11, "pviOld": 19 },
     { "year": 2022, "description": "TX-25 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 19, "pviOld": 8 }
   ],
   "4826": [
@@ -19643,15 +19686,15 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "TX-26 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 13, "pviOld": 12 }
   ],
   "4827": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 14, "pviOld": 13 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 10, "pviOld": 13 },
     { "year": 2022, "description": "TX-27 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 13, "pviOld": 14 }
   ],
   "4828": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 2, "pviOld": -3 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 3, "pviOld": -3 },
     { "year": 2022, "description": "TX-28 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -3, "pviOld": -5 }
   ],
   "4829": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -12, "pviOld": -18 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -17, "pviOld": -18 },
     { "year": 2022, "description": "TX-29 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -18, "pviOld": -19 }
   ],
   "4830": [
@@ -19663,27 +19706,27 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "TX-31 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 14, "pviOld": 6 }
   ],
   "4832": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -13, "pviOld": -14 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 8, "pviOld": -14 },
     { "year": 2022, "description": "TX-32 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -14, "pviOld": -1 }
   ],
   "4833": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -19, "pviOld": -25 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -18, "pviOld": -25 },
     { "year": 2022, "description": "TX-33 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -24, "pviOld": -23 }
   ],
   "4834": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 0, "pviOld": -9 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 3, "pviOld": -9 },
     { "year": 2022, "description": "TX-34 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -9, "pviOld": -5 }
   ],
   "4835": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -19, "pviOld": -21 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 4, "pviOld": -21 },
     { "year": 2022, "description": "TX-35 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": -21, "pviOld": -17 }
   ],
   "4836": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 18, "pviOld": 18 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": 12, "pviOld": 18 },
     { "year": 2022, "description": "TX-36 was substantially redrawn under Texas' 2022 map as the state added two seats and reworked multiple metro areas; many districts kept part of their prior core but saw meaningful changes in boundaries and partisan balance.", "pviNew": 18, "pviOld": 25 }
   ],
   "4837": [
-    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -26, "pviOld": -24 },
+    { "year": 2026, "description": "U.S. Supreme Court ruled the new Texas map could be used in 2026", "pviNew": -30, "pviOld": -24 },
     { "year": 2022, "description": "TX-37 was a new district for 2022, created after Texas gained seats. It was drawn in the Austin area and designed as a safely Democratic district.", "pviNew": -24 }
   ],
   "4838": [
@@ -19691,19 +19734,19 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "TX-38 was a new district for 2022, created after Texas gained seats. It was drawn in the Houston suburbs and made strongly Republican.", "pviNew": 12 }
   ],
   "4901": [
-    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": 10, "pviOld": 12 },
+    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": -12, "pviOld": 12 },
     { "year": 2022, "description": "UT-1 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 12, "pviOld": 20 }
   ],
   "4902": [
-    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": 10, "pviOld": 11 },
+    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": 15, "pviOld": 11 },
     { "year": 2022, "description": "UT-2 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 11, "pviOld": 10 }
   ],
   "4903": [
-    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": 10, "pviOld": 13 },
+    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": 21, "pviOld": 13 },
     { "year": 2022, "description": "UT-3 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 13, "pviOld": 17 }
   ],
   "4904": [
-    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": 14, "pviOld": 16 },
+    { "year": 2026, "description": "Court approved new plaintiff-submitted map", "pviNew": 17, "pviOld": 16 },
     { "year": 2022, "description": "UT-4 was redrawn for 2022. Utah's 2022 map kept the four-district structure but again split Salt Lake County among multiple districts. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 16, "pviOld": 6 }
   ],
   "5101": [
@@ -19800,37 +19843,37 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "WI-8 was redrawn for 2022. Wisconsin's 2022 map was adopted by the state Supreme Court under a least-change approach, so most districts remained broadly similar to the prior decade's plan. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 10, "pviOld": 10 }
   ],
   "0101": [
-    { "year": 2026, "description": "Alabama reinstated the legislature's 2023 map for 2026 (enacted June 2, 2026) after the U.S. Supreme Court let the state discard its court-ordered map; AL-1 keeps its Gulf Coast/Mobile core but its lines revert toward the pre-2024 configuration.", "pviOld": 28 },
+    { "year": 2026, "description": "Alabama reinstated the legislature's 2023 map for 2026 (enacted June 2, 2026) after the U.S. Supreme Court let the state discard its court-ordered map; AL-1 keeps its Gulf Coast/Mobile core but its lines revert toward the pre-2024 configuration.", "pviNew": 17, "pviOld": 28 },
     { "year": 2024, "description": "Under Alabama's court-ordered 2024 map, AL-1 remained anchored on the Gulf Coast around Mobile, but it gave up some inland territory as the state unpacked Black voters and created a second Black-opportunity district.", "pviNew": 28, "pviOld": 16 },
     { "year": 2022, "description": "AL-1 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 16, "pviOld": 16 }
   ],
   "0102": [
-    { "year": 2026, "description": "AL-2 saw the biggest change under Alabama's reinstated 2026 map (enacted June 2, 2026): after the U.S. Supreme Court let the state discard its court-ordered map, AL-2 reverted to the heavily Republican, Wiregrass-based district used before 2024, undoing the seat Democrats had flipped that year.", "pviOld": -4 },
+    { "year": 2026, "description": "AL-2 saw the biggest change under Alabama's reinstated 2026 map (enacted June 2, 2026): after the U.S. Supreme Court let the state discard its court-ordered map, AL-2 reverted to the heavily Republican, Wiregrass-based district used before 2024, undoing the seat Democrats had flipped that year.", "pviNew": 7, "pviOld": -4 },
     { "year": 2024, "description": "AL-2 was the centerpiece of Alabama's 2024 redraw. Instead of the old Wiregrass-centered seat, it was reconfigured into a Mobile-to-Montgomery district with a much larger Black population, turning it from a safe Republican seat into a far more Democratic-leaning/open battlefield.", "pviNew": -4, "pviOld": 17 },
     { "year": 2022, "description": "AL-2 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 17, "pviOld": 17 }
   ],
   "0103": [
-    { "year": 2026, "description": "Alabama's 2026 map (enacted June 2, 2026) reinstates the legislature's 2023 plan after the U.S. Supreme Court lifted the requirement for a court-ordered second Black-opportunity district; AL-3 shifts back toward its pre-2024 east Alabama footprint.", "pviOld": 23 },
+    { "year": 2026, "description": "Alabama's 2026 map (enacted June 2, 2026) reinstates the legislature's 2023 plan after the U.S. Supreme Court lifted the requirement for a court-ordered second Black-opportunity district; AL-3 shifts back toward its pre-2024 east Alabama footprint.", "pviNew": 23, "pviOld": 23 },
     { "year": 2024, "description": "AL-3 stayed centered in east Alabama, but its boundaries shifted to absorb territory moved out of neighboring districts after the court-ordered creation of a second Black-opportunity seat.", "pviNew": 23, "pviOld": 19 },
     { "year": 2022, "description": "AL-3 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 19, "pviOld": 18 }
   ],
   "0104": [
-    { "year": 2026, "description": "Under Alabama's reinstated 2026 map (enacted June 2, 2026), AL-4 reverts toward its pre-2024 north Alabama boundaries as the state abandoned the court-ordered map after a favorable U.S. Supreme Court ruling.", "pviOld": 33 },
+    { "year": 2026, "description": "Under Alabama's reinstated 2026 map (enacted June 2, 2026), AL-4 reverts toward its pre-2024 north Alabama boundaries as the state abandoned the court-ordered map after a favorable U.S. Supreme Court ruling.", "pviNew": 33, "pviOld": 33 },
     { "year": 2024, "description": "AL-4 remained a north Alabama seat, though its lines were adjusted in the ripple effects of the 2024 court-ordered redraw that reworked the rest of the map around AL-2 and AL-7.", "pviNew": 33, "pviOld": 33 },
     { "year": 2022, "description": "AL-4 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 33, "pviOld": 34 }
   ],
   "0105": [
-    { "year": 2026, "description": "Alabama's 2026 map (enacted June 2, 2026) restores the legislature's 2023 plan after the U.S. Supreme Court let the state discard its court-ordered map; AL-5 returns to roughly its pre-2024 north Alabama/Huntsville lines.", "pviOld": 17 },
+    { "year": 2026, "description": "Alabama's 2026 map (enacted June 2, 2026) restores the legislature's 2023 plan after the U.S. Supreme Court let the state discard its court-ordered map; AL-5 returns to roughly its pre-2024 north Alabama/Huntsville lines.", "pviNew": 15, "pviOld": 17 },
     { "year": 2024, "description": "AL-5 kept its north Alabama/Huntsville orientation, but it was trimmed and adjusted as Alabama rebalanced population under the court-ordered 2024 map.", "pviNew": 17, "pviOld": 17 },
     { "year": 2022, "description": "AL-5 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 17, "pviOld": 17 }
   ],
   "0106": [
-    { "year": 2026, "description": "Under Alabama's reinstated 2026 map (enacted June 2, 2026), AL-6's Birmingham-suburbs boundaries shift back toward their pre-2024 shape as the state abandoned the court-ordered map after the U.S. Supreme Court's ruling.", "pviOld": 22 },
+    { "year": 2026, "description": "Under Alabama's reinstated 2026 map (enacted June 2, 2026), AL-6's Birmingham-suburbs boundaries shift back toward their pre-2024 shape as the state abandoned the court-ordered map after the U.S. Supreme Court's ruling.", "pviNew": 17, "pviOld": 22 },
     { "year": 2024, "description": "AL-6 remained the Birmingham suburbs seat, though it shed and picked up pieces at the margins as Alabama's 2024 court-ordered redraw reworked the surrounding districts.", "pviNew": 22, "pviOld": 18 },
     { "year": 2022, "description": "AL-6 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 18, "pviOld": 22 }
   ],
   "0107": [
-    { "year": 2026, "description": "AL-7 remains Alabama's only Black-opportunity district under the reinstated 2026 map (enacted June 2, 2026), with its lines pulled back toward the more compact Black Belt-and-Birmingham configuration used before the 2024 court-ordered map created a second such district.", "pviOld": -12 },
+    { "year": 2026, "description": "AL-7 remains Alabama's only Black-opportunity district under the reinstated 2026 map (enacted June 2, 2026), with its lines pulled back toward the more compact Black Belt-and-Birmingham configuration used before the 2024 court-ordered map created a second such district.", "pviNew": -10, "pviOld": -12 },
     { "year": 2024, "description": "AL-7 stayed the state's other Black-opportunity district, still based in Birmingham and the Black Belt, but it was made somewhat less packed after Alabama's 2024 redraw created a second district giving Black voters an opportunity to elect their preferred candidate.", "pviNew": -12, "pviOld": -14 },
     { "year": 2022, "description": "AL-7 was redrawn for 2022. Alabama's 2022 map largely preserved the existing statewide structure, though it later became the subject of Voting Rights Act litigation and was replaced for 2024. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": -14, "pviOld": -19 }
   ],
@@ -19874,39 +19917,39 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "AR-4 was redrawn for 2022. Arkansas' 2022 map kept the state's basic four-district structure but adjusted boundaries to balance population. In most cases the district remained recognizable, but its boundaries were adjusted to equalize population and fit the new statewide plan.", "pviNew": 20, "pviOld": 20 }
   ],
   "0601": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 12, "pviOld": 12 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -7, "pviOld": 12 },
     { "year": 2022, "description": "CA-1 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 12, "pviOld": 11 }
   ],
   "0602": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -24, "pviOld": -23 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -13, "pviOld": -23 },
     { "year": 2022, "description": "CA-2 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -24, "pviOld": -23 }
   ],
   "0603": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 2, "pviOld": 4 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -6, "pviOld": 4 },
     { "year": 2022, "description": "CA-3 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 4, "pviOld": -5 }
   ],
   "0604": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -17, "pviOld": -17 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -17 },
     { "year": 2022, "description": "CA-4 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -17, "pviOld": 8 }
   ],
   "0605": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 8, "pviOld": 9 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 10, "pviOld": 9 },
     { "year": 2022, "description": "CA-5 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 9, "pviOld": -22 }
   ],
   "0606": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -7 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -5, "pviOld": -7 },
     { "year": 2022, "description": "CA-6 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -7, "pviOld": -21 }
   ],
   "0607": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -16, "pviOld": -17 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -7, "pviOld": -17 },
     { "year": 2022, "description": "CA-7 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -17, "pviOld": -5 }
   ],
   "0608": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -24, "pviOld": -26 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -19, "pviOld": -26 },
     { "year": 2022, "description": "CA-8 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -26, "pviOld": 8 }
   ],
   "0609": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -1, "pviOld": -5 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -5 },
     { "year": 2022, "description": "CA-9 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -5, "pviOld": -8 }
   ],
   "0610": [
@@ -19922,11 +19965,11 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-12 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -40, "pviOld": -38 }
   ],
   "0613": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 1, "pviOld": -4 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -2, "pviOld": -4 },
     { "year": 2022, "description": "CA-13 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -4, "pviOld": -40 }
   ],
   "0614": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -20, "pviOld": -22 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -19, "pviOld": -22 },
     { "year": 2022, "description": "CA-14 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -22, "pviOld": -28 }
   ],
   "0615": [
@@ -19934,7 +19977,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-15 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -28, "pviOld": -22 }
   ],
   "0616": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -26, "pviOld": -26 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -25, "pviOld": -26 },
     { "year": 2022, "description": "CA-16 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -26, "pviOld": -9 }
   ],
   "0617": [
@@ -19942,7 +19985,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-17 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -23, "pviOld": -24 }
   ],
   "0618": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -17, "pviOld": -21 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -16, "pviOld": -21 },
     { "year": 2022, "description": "CA-18 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -21, "pviOld": -27 }
   ],
   "0619": [
@@ -19950,19 +19993,19 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-19 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -18, "pviOld": -23 }
   ],
   "0620": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 15, "pviOld": 16 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 16, "pviOld": 16 },
     { "year": 2022, "description": "CA-20 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 16, "pviOld": -23 }
   ],
   "0621": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -4, "pviOld": -9 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -5, "pviOld": -9 },
     { "year": 2022, "description": "CA-21 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -9, "pviOld": -5 }
   ],
   "0622": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 1, "pviOld": -5 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -1, "pviOld": -5 },
     { "year": 2022, "description": "CA-22 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -5, "pviOld": 6 }
   ],
   "0623": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 8, "pviOld": 8 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 9, "pviOld": 8 },
     { "year": 2022, "description": "CA-23 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 8, "pviOld": 12 }
   ],
   "0624": [
@@ -19970,35 +20013,35 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-24 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -13, "pviOld": -10 }
   ],
   "0625": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -3, "pviOld": -6 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -4, "pviOld": -6 },
     { "year": 2022, "description": "CA-25 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -6, "pviOld": -3 }
   ],
   "0626": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -8 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -9, "pviOld": -8 },
     { "year": 2022, "description": "CA-26 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -8, "pviOld": -10 }
   ],
   "0627": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -3, "pviOld": -4 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -6, "pviOld": -4 },
     { "year": 2022, "description": "CA-27 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -4, "pviOld": -18 }
   ],
   "0628": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -15, "pviOld": -16 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -14, "pviOld": -16 },
     { "year": 2022, "description": "CA-28 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -16, "pviOld": -23 }
   ],
   "0629": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -20, "pviOld": -26 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -19, "pviOld": -26 },
     { "year": 2022, "description": "CA-29 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -26, "pviOld": -27 }
   ],
   "0630": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -22, "pviOld": -23 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -21, "pviOld": -23 },
     { "year": 2022, "description": "CA-30 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -23, "pviOld": -20 }
   ],
   "0631": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -10, "pviOld": -15 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -15 },
     { "year": 2022, "description": "CA-31 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -15, "pviOld": -9 }
   ],
   "0632": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -17, "pviOld": -20 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -14, "pviOld": -20 },
     { "year": 2022, "description": "CA-32 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -20, "pviOld": -17 }
   ],
   "0633": [
@@ -20010,7 +20053,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-34 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -32, "pviOld": -34 }
   ],
   "0635": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -13 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -6, "pviOld": -13 },
     { "year": 2022, "description": "CA-35 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -13, "pviOld": -17 }
   ],
   "0636": [
@@ -20022,7 +20065,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-37 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -37, "pviOld": -36 }
   ],
   "0638": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -10, "pviOld": -14 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -14 },
     { "year": 2022, "description": "CA-38 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -14, "pviOld": -17 }
   ],
   "0639": [
@@ -20030,15 +20073,15 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-39 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -12, "pviOld": -3 }
   ],
   "0640": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 1, "pviOld": 2 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 6, "pviOld": 2 },
     { "year": 2022, "description": "CA-40 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 2, "pviOld": -31 }
   ],
   "0641": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 2, "pviOld": 3 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -9, "pviOld": 3 },
     { "year": 2022, "description": "CA-41 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 3, "pviOld": -12 }
   ],
   "0642": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -18, "pviOld": -22 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -8, "pviOld": -22 },
     { "year": 2022, "description": "CA-42 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -22, "pviOld": 7 }
   ],
   "0643": [
@@ -20046,39 +20089,39 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
     { "year": 2022, "description": "CA-43 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -32, "pviOld": -20 }
   ],
   "0644": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -19, "pviOld": -24 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -20, "pviOld": -24 },
     { "year": 2022, "description": "CA-44 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -24, "pviOld": -32 }
   ],
   "0645": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -1, "pviOld": -2 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -3, "pviOld": -2 },
     { "year": 2022, "description": "CA-45 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -2, "pviOld": -3 }
   ],
   "0646": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -11, "pviOld": -15 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -10, "pviOld": -15 },
     { "year": 2022, "description": "CA-46 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -15, "pviOld": -16 }
   ],
   "0647": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -3, "pviOld": -3 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -6, "pviOld": -3 },
     { "year": 2022, "description": "CA-47 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -3, "pviOld": -14 }
   ],
   "0648": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": 7, "pviOld": 9 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -2, "pviOld": 9 },
     { "year": 2022, "description": "CA-48 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": 9, "pviOld": 1 }
   ],
   "0649": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -4, "pviOld": -3 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -7, "pviOld": -3 },
     { "year": 2022, "description": "CA-49 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -3, "pviOld": -4 }
   ],
   "0650": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -16, "pviOld": -14 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -10, "pviOld": -14 },
     { "year": 2022, "description": "CA-50 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -14, "pviOld": 8 }
   ],
   "0651": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -13, "pviOld": -12 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -10, "pviOld": -12 },
     { "year": 2022, "description": "CA-51 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -12, "pviOld": -20 }
   ],
   "0652": [
-    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -13, "pviOld": -18 },
+    { "year": 2026, "description": "Voters approved the use of a new map on Nov. 4, 2025.", "pviNew": -11, "pviOld": -18 },
     { "year": 2022, "description": "CA-52 was substantially reworked for 2022. California's independent commission adopted a new map for 2022 after the state lost a seat, leading to extensive renumbering and several districts with very different geographic identities from their pre-2022 counterparts. The district number continued, but its actual geographic and political identity changed more than a routine line tweak.", "pviNew": -18, "pviOld": -12 }
   ],
   "0653": [
@@ -20125,7 +20168,7 @@ export const houseDistrictInfo: Record<string, BoundaryHistoryEntry[]> = {
   ]
 };
 
-export const houseDistrictPvi: Record<string, number> = { "1001": -8, "1201": 18, "1202": 8, "1203": 10, "1204": 5, "1205": 10, "1206": 14, "1207": 5, "1208": 11, "1209": -4, "1210": -13, "1211": 8, "1212": 17, "1213": 5, "1214": -5, "1215": 5, "1216": 7, "1217": 11, "1218": 14, "1219": 14, "1220": -22, "1221": 7, "1222": -4, "1223": -2, "1224": -18, "1225": -5, "1226": 16, "1227": 6, "1228": 10, "1301": 8, "1302": -4, "1303": 15, "1304": -27, "1305": -36, "1306": -25, "1307": 11, "1308": 15, "1309": 17, "1310": 11, "1311": 12, "1312": 7, "1313": -21, "1314": 19, "1501": -13, "1502": -12, "1601": 22, "1602": 13, "1701": -18, "1702": -18, "1703": -17, "1704": -17, "1705": -19, "1706": -3, "1707": -34, "1708": -5, "1709": -19, "1710": -12, "1711": -6, "1712": 22, "1713": -5, "1714": -3, "1715": 20, "1716": 11, "1717": -3, "1801": -1, "1802": 13, "1803": 16, "1804": 15, "1805": 8, "1806": 16, "1807": -21, "1808": 18, "1809": 15, "1901": 4, "1902": 4, "1903": 2, "1904": 15, "2001": 16, "2002": 10, "2003": -2, "2004": 12, "2101": 23, "2102": 20, "2103": -10, "2104": 18, "2105": 32, "2106": 7, "2201": 19, "2202": -17, "2203": 22, "2204": 26, "2205": 18, "2206": -8, "2301": -11, "2302": 4, "2401": 8, "2402": -10, "2403": -12, "2404": -39, "2405": -17, "2406": -3, "2407": -31, "2408": -30, "2501": -8, "2502": -13, "2503": -11, "2504": -11, "2505": -24, "2506": -11, "2507": -34, "2508": -15, "2509": -6, "2601": 11, "2602": 15, "2603": -4, "2604": 3, "2605": 13, "2606": -12, "2607": 0, "2608": 1, "2609": 16, "2610": 3, "2611": -9, "2612": -21, "2613": -22, "2701": 6, "2702": -3, "2703": -11, "2704": -18, "2705": -32, "2706": 10, "2707": 18, "2708": 7, "2801": 18, "2802": -11, "2803": 14, "2804": 21, "2901": -29, "2902": 4, "2903": 13, "2904": 21, "2905": -12, "2906": 19, "2907": 21, "2908": 27, "3001": 5, "3002": 15, "3101": 6, "3102": -3, "3103": 27, "3201": -2, "3202": 7, "3203": -1, "3204": -2, "3301": -2, "3302": -2, "3401": -10, "3402": 5, "3403": -5, "3404": 14, "3405": -2, "3406": -5, "3407": 0, "3408": -15, "3409": -2, "3410": -27, "3411": -5, "3412": -13, "3501": -7, "3502": 0, "3503": -3, "3601": 4, "3602": 6, "3603": 0, "3604": -2, "3605": -24, "3606": -6, "3607": -25, "3608": -24, "3609": -22, "3610": -32, "3611": 10, "3612": -33, "3613": -32, "3614": -19, "3615": -27, "3616": -18, "3617": -1, "3618": -2, "3619": -1, "3620": -8, "3621": 10, "3622": -4, "3623": 10, "3624": 11, "3625": -10, "3626": -11, "3701": 1, "3702": -17, "3703": 10, "3704": -23, "3705": 9, "3706": 9, "3707": 7, "3708": 10, "3709": 8, "3710": 9, "3711": 5, "3712": -24, "3713": 8, "3714": 8, "3801": 18, "3901": -3, "3902": 24, "3903": -21, "3904": 18, "3905": 14, "3906": 16, "3907": 5, "3908": 12, "3909": 3, "3910": 3, "3911": -28, "3912": 16, "3913": 0, "3914": 9, "3915": 4, "4001": 11, "4002": 28, "4003": 23, "4004": 17, "4005": 9, "4101": -20, "4102": 14, "4103": -24, "4104": -6, "4105": -4, "4106": -6, "4201": -1, "4202": -19, "4203": -40, "4204": -8, "4205": -15, "4206": -6, "4207": 1, "4208": 4, "4209": 19, "4210": 3, "4211": 11, "4212": -10, "4213": 23, "4214": 17, "4215": 19, "4216": 11, "4217": -3, "4401": -12, "4402": -4, "4501": 6, "4502": 7, "4503": 21, "4504": 11, "4505": 11, "4506": -13, "4507": 12, "4601": 15, "4701": 29, "4702": 17, "4703": 18, "4704": 21, "4705": 8, "4706": 17, "4707": 10, "4708": 21, "4709": -23, "4801": 25, "4802": 12, "4803": 10, "4804": 16, "4805": 13, "4806": 14, "4807": -12, "4808": 16, "4809": -24, "4810": 12, "4811": 22, "4812": 11, "4813": 24, "4814": 17, "4815": 7, "4816": -11, "4817": 14, "4818": -21, "4819": 25, "4820": -12, "4821": 11, "4822": 9, "4823": 7, "4824": 7, "4825": 18, "4826": 11, "4827": 14, "4828": 2, "4829": -12, "4830": -25, "4831": 11, "4832": -13, "4833": -19, "4834": 0, "4835": -19, "4836": 18, "4837": -26, "4838": 10, "4901": 10, "4902": 10, "4903": 10, "4904": 14, "5001": -17, "5101": 3, "5102": 0, "5103": -18, "5104": -17, "5105": 6, "5106": 12, "5107": -2, "5108": -26, "5109": 22, "5110": -6, "5111": -18, "5301": -15, "5302": -12, "5303": 2, "5304": 10, "5305": 5, "5306": -10, "5307": -39, "5308": -3, "5309": -22, "5310": -9, "5401": 22, "5402": 20, "5501": 2, "5502": -21, "5503": 3, "5504": -26, "5505": 11, "5506": 8, "5507": 11, "5508": 8, "5601": 23, "0201": 6, "0401": 1, "0402": 7, "0403": -22, "0404": -4, "0405": 10, "0406": 0, "0407": -13, "0408": 8, "0409": 15, "0501": 23, "0502": 8, "0503": 13, "0504": 20, "0601": 12, "0602": -24, "0603": 2, "0604": -17, "0605": 8, "0606": -8, "0607": -16, "0608": -24, "0609": -1, "0610": -18, "0611": -36, "0612": -39, "0613": 1, "0614": -20, "0615": -26, "0616": -26, "0617": -21, "0618": -17, "0619": -18, "0620": 15, "0621": -4, "0622": 1, "0623": 8, "0624": -13, "0625": -3, "0626": -8, "0627": -3, "0628": -15, "0629": -20, "0630": -22, "0631": -10, "0632": -17, "0633": -7, "0634": -28, "0635": -8, "0636": -21, "0637": -33, "0638": -10, "0639": -7, "0640": 1, "0641": 2, "0642": -18, "0643": -27, "0644": -19, "0645": -1, "0646": -11, "0647": -3, "0648": 7, "0649": -4, "0650": -16, "0651": -13, "0652": -13, "0801": -29, "0802": -20, "0803": 5, "0804": 9, "0805": 5, "0806": -11, "0807": -8, "0808": 0, "0901": -12, "0902": -4, "0903": -8, "0904": -13, "0905": -3 };
+export const houseDistrictPvi: Record<string, number> = { "1001": -8, "1201": 18, "1202": 8, "1203": 10, "1204": 5, "1205": 10, "1206": 14, "1207": 5, "1208": 11, "1209": -4, "1210": -13, "1211": 8, "1212": 17, "1213": 5, "1214": -5, "1215": 5, "1216": 7, "1217": 11, "1218": 14, "1219": 14, "1220": -22, "1221": 7, "1222": -4, "1223": -2, "1224": -18, "1225": -5, "1226": 16, "1227": 6, "1228": 10, "1301": 8, "1302": -4, "1303": 15, "1304": -27, "1305": -36, "1306": -25, "1307": 11, "1308": 15, "1309": 17, "1310": 11, "1311": 12, "1312": 7, "1313": -21, "1314": 19, "1501": -13, "1502": -12, "1601": 22, "1602": 13, "1701": -18, "1702": -18, "1703": -17, "1704": -17, "1705": -19, "1706": -3, "1707": -34, "1708": -5, "1709": -19, "1710": -12, "1711": -6, "1712": 22, "1713": -5, "1714": -3, "1715": 20, "1716": 11, "1717": -3, "1801": -1, "1802": 13, "1803": 16, "1804": 15, "1805": 8, "1806": 16, "1807": -21, "1808": 18, "1809": 15, "1901": 4, "1902": 4, "1903": 2, "1904": 15, "2001": 16, "2002": 10, "2003": -2, "2004": 12, "2101": 23, "2102": 20, "2103": -10, "2104": 18, "2105": 32, "2106": 7, "2201": 20, "2202": -25, "2203": 18, "2204": 17, "2205": 17, "2206": 16, "2301": -11, "2302": 4, "2401": 8, "2402": -10, "2403": -12, "2404": -39, "2405": -17, "2406": -3, "2407": -31, "2408": -30, "2501": -8, "2502": -13, "2503": -11, "2504": -11, "2505": -24, "2506": -11, "2507": -34, "2508": -15, "2509": -6, "2601": 11, "2602": 15, "2603": -4, "2604": 3, "2605": 13, "2606": -12, "2607": 0, "2608": 1, "2609": 16, "2610": 3, "2611": -9, "2612": -21, "2613": -22, "2701": 6, "2702": -3, "2703": -11, "2704": -18, "2705": -32, "2706": 10, "2707": 18, "2708": 7, "2801": 18, "2802": -11, "2803": 14, "2804": 21, "2901": -29, "2902": 6, "2903": 10, "2904": 10, "2905": 9, "2906": 13, "2907": 21, "2908": 27, "3001": 5, "3002": 15, "3101": 6, "3102": -3, "3103": 27, "3201": -2, "3202": 7, "3203": -1, "3204": -2, "3301": -2, "3302": -2, "3401": -10, "3402": 5, "3403": -5, "3404": 14, "3405": -2, "3406": -5, "3407": 0, "3408": -15, "3409": -2, "3410": -27, "3411": -5, "3412": -13, "3501": -7, "3502": 0, "3503": -3, "3601": 4, "3602": 6, "3603": 0, "3604": -2, "3605": -24, "3606": -6, "3607": -25, "3608": -24, "3609": -22, "3610": -32, "3611": 10, "3612": -33, "3613": -32, "3614": -19, "3615": -27, "3616": -18, "3617": -1, "3618": -2, "3619": -1, "3620": -8, "3621": 10, "3622": -4, "3623": 10, "3624": 11, "3625": -10, "3626": -11, "3701": 5, "3702": -17, "3703": 6, "3704": -23, "3705": 9, "3706": 9, "3707": 7, "3708": 10, "3709": 8, "3710": 9, "3711": 5, "3712": -24, "3713": 8, "3714": 8, "3801": 18, "3901": 1, "3902": 21, "3903": -21, "3904": 21, "3905": 12, "3906": 17, "3907": 5, "3908": 8, "3909": 5, "3910": 4, "3911": -28, "3912": 15, "3913": -2, "3914": 10, "3915": 5, "4001": 11, "4002": 28, "4003": 23, "4004": 17, "4005": 9, "4101": -20, "4102": 14, "4103": -24, "4104": -6, "4105": -4, "4106": -6, "4201": -1, "4202": -19, "4203": -40, "4204": -8, "4205": -15, "4206": -6, "4207": 1, "4208": 4, "4209": 19, "4210": 3, "4211": 11, "4212": -10, "4213": 23, "4214": 17, "4215": 19, "4216": 11, "4217": -3, "4401": -12, "4402": -4, "4501": 6, "4502": 7, "4503": 21, "4504": 11, "4505": 11, "4506": -13, "4507": 12, "4601": 15, "4701": 29, "4702": 17, "4703": 18, "4704": 11, "4705": 10, "4706": 13, "4707": 11, "4708": 10, "4709": 9, "4801": 24, "4802": 11, "4803": 11, "4804": 12, "4805": 10, "4806": 11, "4807": -13, "4808": 13, "4809": 9, "4810": 10, "4811": 17, "4812": 11, "4813": 23, "4814": 12, "4815": 7, "4816": -11, "4817": 10, "4818": -29, "4819": 25, "4820": -16, "4821": 10, "4822": 11, "4823": 7, "4824": 8, "4825": 11, "4826": 11, "4827": 10, "4828": 3, "4829": -17, "4830": -25, "4831": 11, "4832": 8, "4833": -18, "4834": 3, "4835": 4, "4836": 12, "4837": -30, "4838": 10, "4901": -12, "4902": 15, "4903": 21, "4904": 17, "5001": -17, "5101": 3, "5102": 0, "5103": -18, "5104": -17, "5105": 6, "5106": 12, "5107": -2, "5108": -26, "5109": 22, "5110": -6, "5111": -18, "5301": -15, "5302": -12, "5303": 2, "5304": 10, "5305": 5, "5306": -10, "5307": -39, "5308": -3, "5309": -22, "5310": -9, "5401": 22, "5402": 20, "5501": 2, "5502": -21, "5503": 3, "5504": -26, "5505": 11, "5506": 8, "5507": 11, "5508": 8, "5601": 23, "0101": 17, "0102": 7, "0103": 23, "0104": 33, "0105": 15, "0106": 17, "0107": -10, "0201": 6, "0401": 1, "0402": 7, "0403": -22, "0404": -4, "0405": 10, "0406": 0, "0407": -13, "0408": 8, "0409": 15, "0501": 23, "0502": 8, "0503": 13, "0504": 20, "0601": -7, "0602": -13, "0603": -6, "0604": -8, "0605": 10, "0606": -5, "0607": -7, "0608": -19, "0609": -8, "0610": -18, "0611": -36, "0612": -39, "0613": -2, "0614": -19, "0615": -26, "0616": -25, "0617": -21, "0618": -16, "0619": -18, "0620": 16, "0621": -5, "0622": -1, "0623": 9, "0624": -13, "0625": -4, "0626": -9, "0627": -6, "0628": -14, "0629": -19, "0630": -21, "0631": -8, "0632": -14, "0633": -7, "0634": -28, "0635": -6, "0636": -21, "0637": -33, "0638": -8, "0639": -7, "0640": 6, "0641": -9, "0642": -8, "0643": -27, "0644": -20, "0645": -3, "0646": -10, "0647": -6, "0648": -2, "0649": -7, "0650": -10, "0651": -10, "0652": -11, "0801": -29, "0802": -20, "0803": 5, "0804": 9, "0805": 5, "0806": -11, "0807": -8, "0808": 0, "0901": -12, "0902": -4, "0903": -8, "0904": -13, "0905": -3 };
 
 export const statePvi: Record<string, number> = { "AL": 15, "AK": 6, "AZ": 2, "AR": 15, "CA": -12, "CO": -6, "CT": -8, "DE": -8, "FL": 5, "GA": 1, "HI": -13, "ID": 18, "IL": -6, "IN": 9, "IA": 6, "KS": 8, "KY": 15, "LA": 11, "ME": -4, "MD": -15, "MA": -14, "MI": 0, "MN": -3, "MS": 11, "MO": 9, "MT": 10, "NE": 10, "NV": 1, "NH": -2, "NJ": -4, "NM": -4, "NY": -8, "NC": 1, "ND": 18, "OH": 5, "OK": 17, "OR": -8, "PA": 1, "RI": -8, "SC": 8, "SD": 15, "TN": 14, "TX": 6, "UT": 11, "VT": -17, "VA": -3, "WA": -10, "WV": 21, "WI": 0, "WY": 23 };
 
