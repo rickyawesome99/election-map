@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
-import type { RaceForecast, HouseStatewideResult, PastResult } from "@/data/forecastData";
+import { useMemo, useState } from "react";
+import type { RaceForecast, PastResult } from "@/data/forecastData";
 import StateDistrictMap from "./StateDistrictMap";
 import HousePastMap from "./HousePastMap";
-import PastElectionsMap from "./PastElectionsMap";
 import PastElectionsCountyMap from "./PastElectionsCountyMap";
 
-type MapView = "projection" | "past" | "cd" | "county";
+type MapView = "projection" | "past" | "county";
+const ELECTION_YEARS = [2024, 2022, 2020, 2018, 2016];
 
 export default function StateMapToggle({
   abbr,
@@ -17,7 +17,6 @@ export default function StateMapToggle({
   housePastResults,
   selected,
   onSelect,
-  pastElectionResults,
 }: {
   abbr: string;
   stateName: string;
@@ -26,15 +25,23 @@ export default function StateMapToggle({
   housePastResults: Record<string, PastResult[]>;
   selected: RaceForecast | null;
   onSelect: (race: RaceForecast | null) => void;
-  pastElectionResults: Record<string, HouseStatewideResult[]>;
 }) {
   const [view, setView] = useState<MapView>("projection");
-  const [cdCountyKey, setCdCountyKey] = useState<string>("");
+  const availablePastYears = useMemo(() => {
+    const found = new Set<number>();
+    for (const results of Object.values(housePastResults)) {
+      for (const result of results) found.add(result.year);
+    }
+    for (const race of houseRaces) {
+      for (const result of race.pastResults ?? []) found.add(result.year);
+    }
+    return ELECTION_YEARS.filter((year) => found.has(year));
+  }, [housePastResults, houseRaces]);
+  const [selectedPastYear, setSelectedPastYear] = useState(availablePastYears[0] ?? 2024);
 
   const tabs: { id: MapView; label: string }[] = [
-    { id: "projection", label: "Proj" },
+    { id: "projection", label: "2026" },
     { id: "past", label: "Past" },
-    { id: "cd", label: "District" },
     { id: "county", label: "County" },
   ];
 
@@ -45,7 +52,7 @@ export default function StateMapToggle({
     >
       {/* Toggle header */}
       <div
-        className="flex items-center gap-3 px-3 py-2.5"
+        className="flex items-center gap-3 px-3 py-2.5 min-w-0"
         style={{ borderBottom: "1px solid var(--app-border)" }}
       >
         <span
@@ -55,7 +62,7 @@ export default function StateMapToggle({
           Map
         </span>
         <div
-          className="flex rounded-lg overflow-hidden"
+          className="flex shrink-0 rounded-lg overflow-hidden"
           style={{ border: "1px solid var(--app-border)" }}
         >
           {tabs.map((t) => (
@@ -73,6 +80,35 @@ export default function StateMapToggle({
             </button>
           ))}
         </div>
+        {view === "past" && availablePastYears.length > 0 && (
+          <div className="relative ml-auto min-w-0">
+            <div className="flex min-w-0 items-center gap-1 overflow-x-auto pr-5 scrollbar-none sm:pr-0">
+              {availablePastYears.map((year) => (
+                <button
+                  key={year}
+                  onClick={() => setSelectedPastYear(year)}
+                  className="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-medium transition-colors"
+                  style={
+                    year === selectedPastYear
+                      ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
+                      : { background: "transparent", color: "var(--app-text-muted)", border: "1px solid transparent" }
+                  }
+                >
+                  {year}
+                </button>
+              ))}
+            </div>
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-y-0 right-0 flex w-6 items-center justify-end sm:hidden"
+              style={{ background: "linear-gradient(to right, transparent, var(--app-panel) 55%)", color: "var(--app-text-muted)" }}
+            >
+              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Map content */}
@@ -85,29 +121,26 @@ export default function StateMapToggle({
           onSelect={onSelect}
         />
       ) : view === "past" ? (
-        <HousePastMap
-          houseRaces={houseRaces}
-          historicalResults={housePastResults}
-          stateAbbr={abbr}
-          stateName={stateName}
-          stateFips={stateFips}
-        />
-      ) : view === "cd" ? (
-        <PastElectionsMap
-          stateAbbr={abbr}
-          stateName={stateName}
-          stateFips={stateFips}
-          pastElectionResults={pastElectionResults}
-          selectedKey={cdCountyKey}
-          onSelectedKeyChange={setCdCountyKey}
-        />
+        availablePastYears.length > 0 ? (
+          <HousePastMap
+            key={selectedPastYear}
+            houseRaces={houseRaces}
+            historicalResults={housePastResults}
+            stateAbbr={abbr}
+            stateFips={stateFips}
+            selectedYear={selectedPastYear}
+          />
+        ) : (
+          <div className="flex items-center justify-center" style={{ height: 360, background: "var(--app-bg)" }}>
+            <p className="text-sm" style={{ color: "var(--app-text-very-muted)" }}>
+              No past House results available for {stateName}.
+            </p>
+          </div>
+        )
       ) : (
         <PastElectionsCountyMap
           stateAbbr={abbr}
           stateName={stateName}
-          pastElectionResults={pastElectionResults}
-          selectedKey={cdCountyKey}
-          onSelectedKeyChange={setCdCountyKey}
         />
       )}
     </section>

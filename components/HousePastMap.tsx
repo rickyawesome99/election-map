@@ -9,8 +9,6 @@ import { useDarkMode } from "@/lib/useDarkMode";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
 
-const ELECTION_YEARS = [2024, 2022, 2020, 2018, 2016];
-
 const STATE_PROJ: Record<string, [number, number, number]> = {
   AL: [-86.8, 32.8, 4800],  AK: [-153.0, 64.0, 900],   AZ: [-111.7, 34.3, 3600],
   AR: [-92.4, 34.9, 5500],  CA: [-119.5, 37.2, 2200],  CO: [-105.5, 39.0, 4200],
@@ -91,14 +89,14 @@ export default function HousePastMap({
   houseRaces,
   historicalResults,
   stateAbbr,
-  stateName,
   stateFips,
+  selectedYear,
 }: {
   houseRaces: RaceForecast[];
   historicalResults: Record<string, PastResult[]>;
   stateAbbr: string;
-  stateName: string;
   stateFips: string;
+  selectedYear: number;
 }) {
   const districts = useMemo<HistoricalDistrict[]>(() => {
     const byId = new Map<string, HistoricalDistrict>();
@@ -119,17 +117,6 @@ export default function HousePastMap({
     return [...byId.values()];
   }, [historicalResults, houseRaces, stateAbbr]);
 
-  const availableYears = useMemo(() => {
-    const found = new Set<number>();
-    for (const district of districts) {
-      for (const r of district.pastResults) {
-        if (ELECTION_YEARS.includes(r.year)) found.add(r.year);
-      }
-    }
-    return ELECTION_YEARS.filter(y => found.has(y));
-  }, [districts]);
-
-  const [selectedYear, setSelectedYear] = useState<number>(availableYears[0] ?? 2024);
   const [hovered, setHovered] = useState<HoveredDistrict | null>(null);
   const [selected, setSelected] = useState<HoveredDistrict | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -178,39 +165,8 @@ export default function HousePastMap({
     return map;
   }, [districts, selectedYear]);
 
-  if (availableYears.length === 0) {
-    return (
-      <div className="flex items-center justify-center" style={{ height: 360, background: "var(--app-bg)" }}>
-        <p className="text-sm" style={{ color: "var(--app-text-very-muted)" }}>
-          No past House results available for {stateName}.
-        </p>
-      </div>
-    );
-  }
-
   return (
     <div>
-      {/* Year selector */}
-      <div
-        className="flex flex-wrap gap-1 px-3 py-2"
-        style={{ borderBottom: "1px solid var(--app-border)" }}
-      >
-        {availableYears.map(year => (
-          <button
-            key={year}
-            onClick={() => { setSelectedYear(year); setSelected(null); }}
-            className="text-[11px] font-medium px-2 py-0.5 rounded-full transition-colors"
-            style={
-              year === selectedYear
-                ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
-                : { background: "transparent", color: "var(--app-text-muted)", border: "1px solid transparent" }
-            }
-          >
-            {year}
-          </button>
-        ))}
-      </div>
-
       {/* Map area */}
       <div
         ref={containerRef}

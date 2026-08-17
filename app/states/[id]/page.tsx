@@ -1,5 +1,5 @@
 import { statesData } from "@/data/statesData";
-import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, housePastResults, senateCurrent, pres2024, presPastResults, houseDelegationHistory, houseStatewideResults, stateLegData, PresResult, RaceForecast, NoElectionEntry, HouseStatewideResult, electionYear } from "@/data/forecastData";
+import { senateData, senateNoElection, senateHoldovers, governorData, governorNoElection, houseData, housePastResults, senateCurrent, pres2024, presPastResults, houseDelegationHistory, stateLegData, PresResult, RaceForecast, NoElectionEntry, electionYear } from "@/data/forecastData";
 import { computeProjectedMargin } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
 import { getRatingColors, marginToRating } from "@/lib/colorScale";
@@ -97,8 +97,6 @@ function IncumbentCard({ entry, href, label }: { entry: NoElectionEntry; href: s
 function ElectionCard({ race, href, label }: { race: RaceForecast; href: string; label: string }) {
   const dem = race.candidates?.dem;
   const rep = race.candidates?.rep;
-  const demPct = ((100 - race.margin) / 2).toFixed(1);
-  const repPct = ((100 + race.margin) / 2).toFixed(1);
   return (
     <a
       href={href}
@@ -107,35 +105,24 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
     >
       {/* Mobile */}
       <div className="sm:hidden">
-        <div className="mb-1.5">
+        <div className="mb-1.5 flex items-center justify-between gap-2">
           <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
             {label}
           </div>
-          <div className="flex items-center justify-between gap-2 mt-0.5">
-            <div className="flex items-center gap-1.5">
-              <span className="text-xs font-semibold" style={{ color: "var(--app-text-primary)" }}>{GENERAL_ELECTION}</span>
-              <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </div>
-            <div className="flex items-center gap-2 shrink-0">
-              <span className="text-xs font-semibold tabular-nums" style={{ color: race.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
-                {race.margin <= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
-              </span>
-              <RatingBadge rating={marginToRating(race.margin)} />
-            </div>
+          <div className="flex items-center gap-2 shrink-0">
+            <span className="text-xs font-semibold tabular-nums" style={{ color: race.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
+              {race.margin <= 0 ? "D" : "R"}+{Math.abs(race.margin).toFixed(1)}
+            </span>
+            <RatingBadge rating={marginToRating(race.margin)} />
+            <svg className="w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ color: "var(--app-text-very-muted)" }}>
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
           </div>
         </div>
         {dem && rep ? (
           <div className="flex flex-col gap-0.5">
-            <div className="flex items-center justify-between gap-2">
-              <span className="font-semibold truncate text-sm" style={{ color: "var(--party-dem)" }}>{dem.name}</span>
-              <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: "var(--party-dem)" }}>D {demPct}%</span>
-            </div>
-            <div className="flex items-center justify-between gap-2">
-              <span className="font-semibold truncate text-sm" style={{ color: "var(--party-rep)" }}>{rep.name}</span>
-              <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: "var(--party-rep)" }}>R {repPct}%</span>
-            </div>
+            <span className="font-semibold truncate text-sm" style={{ color: "var(--party-dem)" }}>{dem.name}</span>
+            <span className="font-semibold truncate text-sm" style={{ color: "var(--party-rep)" }}>{rep.name}</span>
           </div>
         ) : (
           <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
@@ -145,24 +132,15 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
       {/* Desktop */}
       <div className="hidden sm:flex items-center gap-3 sm:gap-4 min-w-0">
         <div className="w-20 sm:w-24 shrink-0">
-          <div className="text-[10px] uppercase tracking-wider font-semibold mb-0.5" style={{ color: "var(--app-text-muted)" }}>
+          <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-muted)" }}>
             {label}
-          </div>
-          <div className="text-xs font-semibold" style={{ color: "var(--app-text-primary)" }}>
-            {GENERAL_ELECTION}
           </div>
         </div>
         <div className="flex-1 min-w-0">
           {dem && rep ? (
             <div className="flex flex-col gap-0.5">
-              <div className="flex items-center justify-between gap-2">
-                <span className="font-semibold truncate text-sm" style={{ color: "var(--party-dem)" }}>{dem.name}</span>
-                <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: "var(--party-dem)" }}>D {demPct}%</span>
-              </div>
-              <div className="flex items-center justify-between gap-2">
-                <span className="font-semibold truncate text-sm" style={{ color: "var(--party-rep)" }}>{rep.name}</span>
-                <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: "var(--party-rep)" }}>R {repPct}%</span>
-              </div>
+              <span className="font-semibold truncate text-sm" style={{ color: "var(--party-dem)" }}>{dem.name}</span>
+              <span className="font-semibold truncate text-sm" style={{ color: "var(--party-rep)" }}>{rep.name}</span>
             </div>
           ) : (
             <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
@@ -186,10 +164,6 @@ function HouseDistrictRow({ race }: { race: RaceForecast }) {
   const parts = race.name.split("-");
   const distNum = parts[1];
   const isAL = distNum === "AL";
-  const demPct = Math.round(race.probability * 100);
-  const repPct = 100 - demPct;
-  const demVS = ((100 - race.margin) / 2).toFixed(1);
-  const repVS = ((100 + race.margin) / 2).toFixed(1);
   const { bg, text } = getRatingColors(marginToRating(race.margin));
   return (
     <a
@@ -201,21 +175,7 @@ function HouseDistrictRow({ race }: { race: RaceForecast }) {
         {isAL ? "At-Large" : `District ${distNum}`}
       </span>
 
-      {/* Bar + vote shares — hidden on mobile */}
-      <div className="hidden sm:flex flex-1 items-center gap-3 min-w-0">
-        <div className="flex h-2 rounded-full overflow-hidden flex-1">
-          <div style={{ width: `${demPct}%`, background: "#1b408c" }} />
-          <div style={{ width: `${repPct}%`, background: "#be1c29" }} />
-        </div>
-        <div className="flex items-center gap-1.5 shrink-0">
-          <span className="text-xs font-semibold tabular-nums" style={{ color: "var(--party-dem)" }}>D {demVS}%</span>
-          <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>·</span>
-          <span className="text-xs font-semibold tabular-nums" style={{ color: "var(--party-rep)" }}>R {repVS}%</span>
-        </div>
-      </div>
-
-      {/* Spacer on mobile */}
-      <div className="flex-1 sm:hidden" />
+      <div className="flex-1" />
 
       {/* Margin */}
       <span className="text-xs font-semibold tabular-nums shrink-0" style={{ color: race.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}>
@@ -262,8 +222,6 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
   // Senate seat 2: 2026 race (id=abbr-2) or holdover (in senateHoldovers)
   const senateSeat2Race = senateData.find((r) => r.id === `${state.abbr}-2`);
   const senateSeat2Holdover = !senateSeat2Race ? senateHoldovers.find((e) => e.abbr === state.abbr) : null;
-  // The active 2026 senate race (either seat)
-  const anySenateRace = senateSeat1Race ?? senateSeat2Race;
   // Governor: 2026 race or no-election holdover
   const governorRace = governorData.find((r) => r.id === state.abbr);
   const governorNoEl = !governorRace ? governorNoElection.find((e) => e.abbr === state.abbr) : null;
@@ -281,7 +239,10 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
   ].filter((r) => r.year >= 2016).sort((a, b) => b.year - a.year || a.seat - b.seat);
   const govPastResults = (governorRace?.pastResults ?? governorNoEl?.pastResults ?? []).filter((r) => r.year >= 2016);
   const govPageId = governorRace ? governorRace.id.toLowerCase() : governorNoEl?.abbr.toLowerCase();
-  const totalRaces2026 = houseRaces.length + (anySenateRace ? 1 : 0) + (governorRace ? 1 : 0);
+  const totalRaces2026 = houseRaces.length
+    + (senateSeat1Race ? 1 : 0)
+    + (senateSeat2Race ? 1 : 0)
+    + (governorRace ? 1 : 0);
 
   // Helper: current party from a race — explicit incumbent flag first, then margin sign as fallback
   function raceParty(race: RaceForecast): "D" | "R" | "I" {
@@ -302,14 +263,6 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
     WY: "56",
   };
   const stateFips = STATE_FIPS[state.abbr] ?? "";
-  const MAJOR_RACES = new Set(["President", "Governor", "Senate"]);
-  const statePastResults: Record<string, HouseStatewideResult[]> = {};
-  for (const [geoid, results] of Object.entries(houseStatewideResults)) {
-    if (stateFips && geoid.startsWith(stateFips)) {
-      const filtered = results.filter(r => r.year >= 2016 && MAJOR_RACES.has(r.race));
-      if (filtered.length > 0) statePastResults[geoid] = filtered;
-    }
-  }
   const stateHousePastResults = Object.fromEntries(
     Object.entries(housePastResults).filter(([geoid]) => stateFips && geoid.startsWith(stateFips))
   );
@@ -469,7 +422,6 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
           stateAbbr={state.abbr}
           stateName={state.name}
           stateFips={stateFips}
-          pastElectionResults={statePastResults}
           overview={(
             <>
               <div className="order-2">
@@ -573,9 +525,16 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
               </section>
               </div>
 
-              <div className="order-4 md:order-6">
-                <StatewideVoteHistoryPanel entries={statewideHistoryEntries} chartResults={voteHistoryResults} />
-              </div>
+              {(stateDelegationHistory.length > 0 || stateLegEntries.length > 0 || stateLegSenateEntries.length > 0) && (
+                <div className="order-4 md:order-6">
+                  <StateLegCompositionBox
+                    federalEntries={stateDelegationHistory}
+                    houseEntries={stateLegEntries}
+                    senateEntries={stateLegSenateEntries}
+                    isUnicameral={state.abbr === "NE"}
+                  />
+                </div>
+              )}
             </>
           )}
         >
@@ -680,16 +639,9 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
           </div>
         </section>
 
-          {(stateDelegationHistory.length > 0 || stateLegEntries.length > 0 || stateLegSenateEntries.length > 0) && (
-            <div className="order-6 md:order-5">
-              <StateLegCompositionBox
-                federalEntries={stateDelegationHistory}
-                houseEntries={stateLegEntries}
-                senateEntries={stateLegSenateEntries}
-                isUnicameral={state.abbr === "NE"}
-              />
-            </div>
-          )}
+          <div className="order-6 md:order-5">
+            <StatewideVoteHistoryPanel entries={statewideHistoryEntries} chartResults={voteHistoryResults} />
+          </div>
         </StateMapSection>
       </main>
     </div>

@@ -2,6 +2,8 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
+import { getRaceColor } from "@/lib/colorScale";
+import { calculateCountyModel } from "@/lib/tplCompute";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 
 const COUNTIES_URL = "/us-counties.json";
@@ -49,7 +51,14 @@ const STATE_PROJ: Record<string, [number, number, number]> = {
 type County = {
   fips: string;
   name: string;
+  tpl: number | null;
 };
+
+function formatTpl(tpl: number | null): string {
+  if (tpl == null) return "TPL unavailable";
+  if (Math.abs(tpl) < 0.05) return "TPL: EVEN";
+  return `TPL: ${tpl > 0 ? "R" : "D"}+${Math.abs(tpl).toFixed(1)}`;
+}
 
 type CountyGeometry = {
   rsmKey: string;
@@ -64,11 +73,13 @@ export default function StateCountyMap({
   stateName,
   height = 360,
   highlightFips,
+  showTpl = false,
 }: {
   stateAbbr: string;
   stateName: string;
   height?: number;
   highlightFips?: string;
+  showTpl?: boolean;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelected] = useState<County | null>(null);
@@ -78,6 +89,16 @@ export default function StateCountyMap({
   const containerRef = useRef<HTMLDivElement>(null);
   const [mapViewport, setMapViewport] = useState({ width: 800, height: 600 });
   const [autoProj, setAutoProj] = useState<ProjectionConfig | null>(null);
+  const countyTplCache = useRef(new Map<string, number | null>());
+  const getCountyTpl = useCallback((fips: string): number | null => {
+    if (!showTpl) return null;
+    const cached = countyTplCache.current.get(fips);
+    if (cached !== undefined || countyTplCache.current.has(fips)) return cached ?? null;
+    const calc = calculateCountyModel(fips);
+    const tpl = calc && calc.races.some((race) => race.NM != null) ? calc.tpl : null;
+    countyTplCache.current.set(fips, tpl);
+    return tpl;
+  }, [showTpl]);
   const measure = useCallback(() => {
     const el = containerRef.current;
     if (!el) return;
@@ -104,8 +125,6 @@ export default function StateCountyMap({
   const mapStroke = "var(--app-bg)";
   const hoverStroke = "var(--app-text-primary)";
   const defaultFill = "var(--oh31-map-unfilled)";
-  const hoverFill = "var(--app-border)";
-  const selectedFill = "var(--app-text-very-muted)";
   const highlightFill = "#eab308";
 
   return (
@@ -122,7 +141,7 @@ export default function StateCountyMap({
         {/* Hover tooltip */}
         {hovered && (() => {
           const tipW = 150;
-          const tipH = 46;
+          const tipH = showTpl ? 62 : 46;
           let left = mousePos.x + 12;
           let top = mousePos.y + 12;
           if (left + tipW > 430) left = mousePos.x - tipW - 12;
@@ -146,6 +165,11 @@ export default function StateCountyMap({
               <div className="text-[10px] mt-0.5" style={{ color: "var(--app-text-muted)" }}>
                 {stateName} · {hovered.fips}
               </div>
+              {showTpl && (
+                <div className="text-[10px] mt-0.5 font-semibold" style={{ color: hovered.tpl == null ? "var(--app-text-very-muted)" : "var(--app-text-primary)" }}>
+                  {formatTpl(hovered.tpl)}
+                </div>
+              )}
             </div>
           );
         })()}
@@ -165,11 +189,12 @@ export default function StateCountyMap({
                 .map((geo) => {
                   const fips = String(geo.id);
                   const name = geo.properties?.name ?? "";
-                  const county: County = { fips, name };
+                  const tpl = getCountyTpl(fips);
+                  const county: County = { fips, name, tpl };
                   const isSelected = selected?.fips === fips;
-                  const isHovered = hovered?.fips === fips;
                   const isHighlighted = !isSelected && fips === highlightFips;
-                  const fill = isSelected ? selectedFill : isHovered ? hoverFill : isHighlighted ? highlightFill : defaultFill;
+                  const baseFill = showTpl && tpl != null ? getRaceColor(tpl) : defaultFill;
+                  const fill = isHighlighted ? highlightFill : baseFill;
 
                   return (
                     <Geography
@@ -186,14 +211,14 @@ export default function StateCountyMap({
                           outline: "none",
                         },
                         hover: {
-                          fill: hoverFill,
+                          fill: baseFill,
                           stroke: hoverStroke,
                           strokeWidth: 1,
                           outline: "none",
                           cursor: "pointer",
                         },
                         pressed: {
-                          fill: selectedFill,
+                          fill: baseFill,
                           stroke: hoverStroke,
                           strokeWidth: 1.5,
                           outline: "none",
@@ -247,7 +272,7 @@ export default function StateCountyMap({
                 {stateName} · FIPS {selected.fips}
               </div>
               <div className="mt-1.5 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-                Election data coming soon
+                {showTpl ? formatTpl(selected.tpl) : "Election data coming soon"}
               </div>
               <a
                 href={`/counties/${selected.fips}`}
