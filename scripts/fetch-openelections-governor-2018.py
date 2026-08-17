@@ -40,6 +40,12 @@ Run from project root: python3 scripts/fetch-openelections-governor-2018.py
 import csv, io, os, re, unicodedata, urllib.request
 from collections import defaultdict
 
+# Ballot-accounting rows OpenElections includes alongside real candidates in some states'
+# precinct files - these aren't real votes for anyone and must be dropped outright, not
+# swept into "oth" (found via FL: UnderVotes+OverVotes were inflating oth_2018 by 76,642
+# votes statewide, an ~1% total_diff against governor_past_results.csv).
+NON_CANDIDATE_LABELS = {"undervotes", "overvotes"}
+
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 PRES_CSV = os.path.join(ROOT, "data/county_presidential_results_2008_2024.csv")
 GOVERNOR_PAST_CSV = os.path.join(ROOT, "data-entry/governor_past_results.csv")
@@ -206,6 +212,8 @@ def main():
             county = r[cfg["county_field"]].strip()
             county = NAME_ALIASES.get((abbr, county), county)
             cand = r[cfg["candidate_field"]].strip()
+            if cand.lower() in NON_CANDIDATE_LABELS:
+                continue
             if cfg["comma_swap"] and "," in cand:
                 last, first = [p.strip() for p in cand.split(",", 1)]
                 cand = f"{first} {last}"

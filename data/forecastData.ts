@@ -2248,7 +2248,7 @@ export const governorData: RaceForecast[] = [
     "seatHolder": "Jared Polis",
     "seatParty": "D",
     "pastResults": [
-      { "year": 2022, "demPct": 58.53, "repPct": 39.18, "demCandidate": "Jared Polis", "repCandidate": "Heidi Ganahl", "demVotes": 1468481, "repVotes": 983040, "totalVotes": 2540680, "margin": -19.35, "electionType": "Regular", "demIncumbent": true },
+      { "year": 2022, "demPct": 58.53, "repPct": 39.18, "demCandidate": "Jared Polis", "repCandidate": "Heidi Ganahl", "demVotes": 1468481, "repVotes": 983040, "totalVotes": 2508830, "margin": -19.35, "electionType": "Regular", "demIncumbent": true },
       { "year": 2018, "demPct": 53.42, "repPct": 42.8, "demCandidate": "Jared Polis", "repCandidate": "Walker Stapleton", "demVotes": 1348888, "repVotes": 1080801, "totalVotes": 2525062, "margin": -10.62, "electionType": "Regular" },
       { "year": 2014, "demPct": 49.3, "repPct": 45.95, "demCandidate": "John Hickenlooper", "repCandidate": "Bob Beauprez", "demVotes": 1006433, "repVotes": 938195, "totalVotes": 2041605, "margin": -3.35, "electionType": "Regular", "demIncumbent": true }
     ]
@@ -21745,60 +21745,60 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "2201": [
     { "year": 2024, "race": "President", "demPct": 30, "repPct": 68.2, "demVotes": 112920, "repVotes": 256662, "totalVotes": 376557 },
-    { "year": 2023, "race": "Governor", "demPct": 17.9, "repPct": 76.4, "demVotes": 32758, "repVotes": 140040, "totalVotes": 183330 },
-    { "year": 2022, "race": "Senate", "demPct": 26.7, "repPct": 71.7, "demVotes": 66113, "repVotes": 177845, "totalVotes": 247989 },
+    { "year": 2023, "race": "Governor", "demPct": 19.1, "repPct": 48.3, "demVotes": 40751, "repVotes": 103231, "totalVotes": 213573 },
+    { "year": 2022, "race": "Senate", "demPct": 12.3, "repPct": 67.4, "demVotes": 35428, "repVotes": 194743, "totalVotes": 288989 },
     { "year": 2020, "race": "President", "demPct": 29.8, "repPct": 68.3, "demVotes": 115178, "repVotes": 263500, "totalVotes": 385884 },
-    { "year": 2020, "race": "Senate", "demPct": 25.5, "repPct": 70.9, "demVotes": 95987, "repVotes": 266814, "totalVotes": 376249 },
+    { "year": 2020, "race": "Senate", "demPct": 14.6, "repPct": 65.6, "demVotes": 64117, "repVotes": 287499, "totalVotes": 438566 },
     { "year": 2019, "race": "Governor (Runoff)", "demPct": 45, "repPct": 55, "demVotes": 115150, "repVotes": 140732, "totalVotes": 255882 },
     { "year": 2016, "race": "President", "demPct": 26.7, "repPct": 68.7, "demVotes": 95154, "repVotes": 244915, "totalVotes": 356483 },
     { "year": 2016, "race": "Senate", "demPct": 25.3, "repPct": 74.7, "demVotes": 39351, "repVotes": 115956, "totalVotes": 155307 }
   ],
   "2202": [
     { "year": 2024, "race": "President", "demPct": 64.7, "repPct": 33.4, "demVotes": 207146, "repVotes": 106785, "totalVotes": 320161 },
-    { "year": 2023, "race": "Governor", "demPct": 64.3, "repPct": 30.6, "demVotes": 97963, "repVotes": 46662, "totalVotes": 152307 },
-    { "year": 2022, "race": "Senate", "demPct": 71.8, "repPct": 26.1, "demVotes": 149394, "repVotes": 54225, "totalVotes": 207936 },
+    { "year": 2023, "race": "Governor", "demPct": 56.4, "repPct": 21.8, "demVotes": 65111, "repVotes": 25135, "totalVotes": 115525 },
+    { "year": 2022, "race": "Senate", "demPct": 35.2, "repPct": 27.8, "demVotes": 56932, "repVotes": 44928, "totalVotes": 161636 },
     { "year": 2020, "race": "President", "demPct": 75.5, "repPct": 22.8, "demVotes": 272076, "repVotes": 82135, "totalVotes": 360158 },
-    { "year": 2020, "race": "Senate", "demPct": 70.2, "repPct": 25.5, "demVotes": 236960, "repVotes": 85897, "totalVotes": 337461 },
+    { "year": 2020, "race": "Senate", "demPct": 37.8, "repPct": 28.3, "demVotes": 92008, "repVotes": 68895, "totalVotes": 243392 },
     { "year": 2019, "race": "Governor (Runoff)", "demPct": 84.3, "repPct": 15.7, "demVotes": 211772, "repVotes": 39433, "totalVotes": 251205 },
     { "year": 2016, "race": "President", "demPct": 74.6, "repPct": 22.2, "demVotes": 247490, "repVotes": 73762, "totalVotes": 331669 },
     { "year": 2016, "race": "Senate", "demPct": 76.4, "repPct": 23.6, "demVotes": 113231, "repVotes": 35029, "totalVotes": 148260 }
   ],
   "2203": [
     { "year": 2024, "race": "President", "demPct": 26.8, "repPct": 71.8, "demVotes": 89993, "repVotes": 241083, "totalVotes": 335590 },
-    { "year": 2023, "race": "Governor", "demPct": 19.9, "repPct": 71.9, "demVotes": 36845, "repVotes": 132821, "totalVotes": 184726 },
-    { "year": 2022, "race": "Senate", "demPct": 24.8, "repPct": 73.2, "demVotes": 56062, "repVotes": 165392, "totalVotes": 225925 },
+    { "year": 2023, "race": "Governor", "demPct": 18.1, "repPct": 64.5, "demVotes": 33639, "repVotes": 120067, "totalVotes": 186018 },
+    { "year": 2022, "race": "Senate", "demPct": 13.6, "repPct": 71.1, "demVotes": 31037, "repVotes": 161728, "totalVotes": 227510 },
     { "year": 2020, "race": "President", "demPct": 30.2, "repPct": 68.1, "demVotes": 107521, "repVotes": 242939, "totalVotes": 356595 },
-    { "year": 2020, "race": "Senate", "demPct": 25.9, "repPct": 70.2, "demVotes": 89398, "repVotes": 241969, "totalVotes": 344771 },
+    { "year": 2020, "race": "Senate", "demPct": 11.7, "repPct": 67.9, "demVotes": 40149, "repVotes": 232799, "totalVotes": 342991 },
     { "year": 2019, "race": "Governor (Runoff)", "demPct": 39.5, "repPct": 60.5, "demVotes": 97515, "repVotes": 149193, "totalVotes": 246708 },
     { "year": 2016, "race": "President", "demPct": 29.2, "repPct": 67.3, "demVotes": 100243, "repVotes": 231019, "totalVotes": 343027 },
     { "year": 2016, "race": "Senate", "demPct": 27.9, "repPct": 72.1, "demVotes": 39793, "repVotes": 102709, "totalVotes": 142502 }
   ],
   "2204": [
     { "year": 2024, "race": "President", "demPct": 23.2, "repPct": 75.6, "demVotes": 78192, "repVotes": 254317, "totalVotes": 336551 },
-    { "year": 2023, "race": "Governor", "demPct": 26.1, "repPct": 68.3, "demVotes": 44082, "repVotes": 115525, "totalVotes": 169208 },
-    { "year": 2022, "race": "Senate", "demPct": 30.7, "repPct": 67.3, "demVotes": 69203, "repVotes": 151631, "totalVotes": 225446 },
+    { "year": 2023, "race": "Governor", "demPct": 21.9, "repPct": 61.5, "demVotes": 32334, "repVotes": 90673, "totalVotes": 147484 },
+    { "year": 2022, "race": "Senate", "demPct": 15.7, "repPct": 66, "demVotes": 30937, "repVotes": 129637, "totalVotes": 196482 },
     { "year": 2020, "race": "President", "demPct": 37, "repPct": 61.5, "demVotes": 121176, "repVotes": 201468, "totalVotes": 327614 },
-    { "year": 2020, "race": "Senate", "demPct": 33.6, "repPct": 63.4, "demVotes": 106262, "repVotes": 200656, "totalVotes": 316405 },
+    { "year": 2020, "race": "Senate", "demPct": 22.8, "repPct": 61.5, "demVotes": 67649, "repVotes": 182988, "totalVotes": 297328 },
     { "year": 2019, "race": "Governor (Runoff)", "demPct": 44.8, "repPct": 55.2, "demVotes": 105706, "repVotes": 130346, "totalVotes": 236052 },
     { "year": 2016, "race": "President", "demPct": 36.6, "repPct": 60.6, "demVotes": 116595, "repVotes": 192973, "totalVotes": 318450 },
     { "year": 2016, "race": "Senate", "demPct": 38, "repPct": 62, "demVotes": 52637, "repVotes": 85908, "totalVotes": 138545 }
   ],
   "2205": [
     { "year": 2024, "race": "President", "demPct": 31, "repPct": 67.5, "demVotes": 100557, "repVotes": 218462, "totalVotes": 323864 },
-    { "year": 2023, "race": "Governor", "demPct": 24.2, "repPct": 70.3, "demVotes": 45295, "repVotes": 131568, "totalVotes": 187076 },
-    { "year": 2022, "race": "Senate", "demPct": 28.2, "repPct": 70.1, "demVotes": 64768, "repVotes": 161059, "totalVotes": 229869 },
+    { "year": 2023, "race": "Governor", "demPct": 20.5, "repPct": 60.6, "demVotes": 41000, "repVotes": 121094, "totalVotes": 199975 },
+    { "year": 2022, "race": "Senate", "demPct": 13.7, "repPct": 68.8, "demVotes": 34312, "repVotes": 171572, "totalVotes": 249557 },
     { "year": 2020, "race": "President", "demPct": 34.1, "repPct": 64.4, "demVotes": 114245, "repVotes": 215736, "totalVotes": 334838 },
-    { "year": 2020, "race": "Senate", "demPct": 29.2, "repPct": 67.2, "demVotes": 93910, "repVotes": 215911, "totalVotes": 321086 },
+    { "year": 2020, "race": "Senate", "demPct": 13.5, "repPct": 65, "demVotes": 49786, "repVotes": 239867, "totalVotes": 368940 },
     { "year": 2019, "race": "Governor (Runoff)", "demPct": 45.5, "repPct": 54.5, "demVotes": 112651, "repVotes": 134986, "totalVotes": 247637 },
     { "year": 2016, "race": "President", "demPct": 34.1, "repPct": 63.5, "demVotes": 110259, "repVotes": 205262, "totalVotes": 323421 },
     { "year": 2016, "race": "Senate", "demPct": 35.2, "repPct": 64.8, "demVotes": 45284, "repVotes": 83516, "totalVotes": 128800 }
   ],
   "2206": [
     { "year": 2024, "race": "President", "demPct": 56.7, "repPct": 41.7, "demVotes": 178062, "repVotes": 131196, "totalVotes": 314252 },
-    { "year": 2023, "race": "Governor", "demPct": 24.9, "repPct": 69.7, "demVotes": 46244, "repVotes": 129549, "totalVotes": 185851 },
-    { "year": 2022, "race": "Senate", "demPct": 30.7, "repPct": 67.7, "demVotes": 75525, "repVotes": 166691, "totalVotes": 246125 },
+    { "year": 2023, "race": "Governor", "demPct": 31.4, "repPct": 43.8, "demVotes": 62690, "repVotes": 87627, "totalVotes": 199923 },
+    { "year": 2022, "race": "Senate", "demPct": 22.5, "repPct": 57.5, "demVotes": 58287, "repVotes": 148960, "totalVotes": 259116 },
     { "year": 2020, "race": "President", "demPct": 32.9, "repPct": 65.3, "demVotes": 125838, "repVotes": 249998, "totalVotes": 382973 },
-    { "year": 2020, "race": "Senate", "demPct": 28.9, "repPct": 68.2, "demVotes": 108472, "repVotes": 256044, "totalVotes": 375571 },
+    { "year": 2020, "race": "Senate", "demPct": 21.1, "repPct": 57, "demVotes": 80340, "repVotes": 216860, "totalVotes": 380326 },
     { "year": 2019, "race": "Governor (Runoff)", "demPct": 48.5, "repPct": 51.5, "demVotes": 131704, "repVotes": 139596, "totalVotes": 271300 },
     { "year": 2016, "race": "President", "demPct": 31, "repPct": 64.8, "demVotes": 110413, "repVotes": 230707, "totalVotes": 355982 },
     { "year": 2016, "race": "Senate", "demPct": 33.7, "repPct": 66.3, "demVotes": 57520, "repVotes": 113073, "totalVotes": 170593 }
@@ -23274,8 +23274,8 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4001": [
     { "year": 2024, "race": "President", "demPct": 38.2, "repPct": 59.7, "demVotes": 120251, "repVotes": 188080, "totalVotes": 314998 },
-    { "year": 2022, "race": "Governor", "demPct": 46, "repPct": 52 },
-    { "year": 2022, "race": "Senate", "demPct": 37.6, "repPct": 59 },
+    { "year": 2022, "race": "Governor", "demPct": 46, "repPct": 52, "demVotes": 108925, "repVotes": 121157, "totalVotes": 234727 },
+    { "year": 2022, "race": "Senate", "demPct": 37.6, "repPct": 59, "demVotes": 88096, "repVotes": 137698, "totalVotes": 233875 },
     { "year": 2022, "race": "Senate Special", "demPct": 40.5, "repPct": 56.5 },
     { "year": 2020, "race": "President", "demPct": 37.3, "repPct": 60.1, "demVotes": 125905, "repVotes": 202885, "totalVotes": 337501 },
     { "year": 2020, "race": "Senate", "demPct": 37.5, "repPct": 58, "demVotes": 126373, "repVotes": 195267, "totalVotes": 336951 },
@@ -23285,8 +23285,8 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4002": [
     { "year": 2024, "race": "President", "demPct": 21.4, "repPct": 77, "demVotes": 69690, "repVotes": 250807, "totalVotes": 325621 },
-    { "year": 2022, "race": "Governor", "demPct": 34, "repPct": 63 },
-    { "year": 2022, "race": "Senate", "demPct": 23.3, "repPct": 73.3 },
+    { "year": 2022, "race": "Governor", "demPct": 34, "repPct": 63, "demVotes": 77609, "repVotes": 148079, "totalVotes": 233320 },
+    { "year": 2022, "race": "Senate", "demPct": 23.3, "repPct": 73.3, "demVotes": 54174, "repVotes": 170619, "totalVotes": 232806 },
     { "year": 2022, "race": "Senate Special", "demPct": 24.6, "repPct": 72.5 },
     { "year": 2020, "race": "President", "demPct": 22.1, "repPct": 76.1, "demVotes": 64350, "repVotes": 221112, "totalVotes": 290561 },
     { "year": 2020, "race": "Senate", "demPct": 24, "repPct": 71.8, "demVotes": 69265, "repVotes": 207631, "totalVotes": 289135 },
@@ -23296,8 +23296,8 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4003": [
     { "year": 2024, "race": "President", "demPct": 26.7, "repPct": 71.5, "demVotes": 73290, "repVotes": 196570, "totalVotes": 274885 },
-    { "year": 2022, "race": "Governor", "demPct": 36, "repPct": 61 },
-    { "year": 2022, "race": "Senate", "demPct": 26.1, "repPct": 70 },
+    { "year": 2022, "race": "Governor", "demPct": 36, "repPct": 61, "demVotes": 71592, "repVotes": 119884, "totalVotes": 202149 },
+    { "year": 2022, "race": "Senate", "demPct": 26.1, "repPct": 70, "demVotes": 53146, "repVotes": 140964, "totalVotes": 201569 },
     { "year": 2022, "race": "Senate Special", "demPct": 29.6, "repPct": 67.3 },
     { "year": 2020, "race": "President", "demPct": 23.2, "repPct": 74.6, "demVotes": 72144, "repVotes": 232421, "totalVotes": 311633 },
     { "year": 2020, "race": "Senate", "demPct": 24.1, "repPct": 71.6, "demVotes": 74834, "repVotes": 222351, "totalVotes": 310711 },
@@ -23307,8 +23307,8 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4004": [
     { "year": 2024, "race": "President", "demPct": 32.6, "repPct": 65.5, "demVotes": 101433, "repVotes": 203961, "totalVotes": 311328 },
-    { "year": 2022, "race": "Governor", "demPct": 43, "repPct": 54 },
-    { "year": 2022, "race": "Senate", "demPct": 33, "repPct": 63.1 },
+    { "year": 2022, "race": "Governor", "demPct": 43, "repPct": 54, "demVotes": 98029, "repVotes": 119903, "totalVotes": 227233 },
+    { "year": 2022, "race": "Senate", "demPct": 33, "repPct": 63.1, "demVotes": 74568, "repVotes": 143476, "totalVotes": 226812 },
     { "year": 2022, "race": "Senate Special", "demPct": 36.5, "repPct": 60.3 },
     { "year": 2020, "race": "President", "demPct": 32.3, "repPct": 65.3, "demVotes": 102926, "repVotes": 208407, "totalVotes": 318993 },
     { "year": 2020, "race": "Senate", "demPct": 32.1, "repPct": 63.5, "demVotes": 102215, "repVotes": 202139, "totalVotes": 318086 },
@@ -23318,8 +23318,8 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4005": [
     { "year": 2024, "race": "President", "demPct": 39.8, "repPct": 58, "demVotes": 134935, "repVotes": 196796, "totalVotes": 339341 },
-    { "year": 2022, "race": "Governor", "demPct": 48.69, "repPct": 48.65 },
-    { "year": 2022, "race": "Senate", "demPct": 38.9, "repPct": 57.6 },
+    { "year": 2022, "race": "Governor", "demPct": 48.69, "repPct": 48.65, "demVotes": 123850, "repVotes": 124868, "totalVotes": 255855 },
+    { "year": 2022, "race": "Senate", "demPct": 38.9, "repPct": 57.6, "demVotes": 99387, "repVotes": 147203, "totalVotes": 255670 },
     { "year": 2022, "race": "Senate Special", "demPct": 43.4, "repPct": 53.8 },
     { "year": 2020, "race": "President", "demPct": 45.9, "repPct": 51.5, "demVotes": 138565, "repVotes": 155455, "totalVotes": 302011 },
     { "year": 2020, "race": "Senate", "demPct": 45.5, "repPct": 50.3, "demVotes": 137076, "repVotes": 151752, "totalVotes": 301478 },
@@ -23329,7 +23329,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4101": [
     { "year": 2024, "race": "President", "demPct": 66.8, "repPct": 29.2, "demVotes": 245702, "repVotes": 107307, "totalVotes": 368037 },
-    { "year": 2022, "race": "Governor", "demPct": 57, "repPct": 31 },
+    { "year": 2022, "race": "Governor", "demPct": 57, "repPct": 31, "demVotes": 183023, "repVotes": 100184, "totalVotes": 318794 },
     { "year": 2022, "race": "Senate", "demPct": 66, "repPct": 30 },
     { "year": 2020, "race": "President", "demPct": 62.7, "repPct": 33.8, "demVotes": 298745, "repVotes": 160810, "totalVotes": 476159 },
     { "year": 2020, "race": "Senate", "demPct": 62.3, "repPct": 33.7, "demVotes": 290037, "repVotes": 156593, "totalVotes": 465225 },
@@ -23340,7 +23340,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4102": [
     { "year": 2024, "race": "President", "demPct": 34.9, "repPct": 62, "demVotes": 128140, "repVotes": 227486, "totalVotes": 367172 },
-    { "year": 2022, "race": "Governor", "demPct": 27, "repPct": 64 },
+    { "year": 2022, "race": "Governor", "demPct": 27, "repPct": 64, "demVotes": 86605, "repVotes": 202303, "totalVotes": 317013 },
     { "year": 2022, "race": "Senate", "demPct": 37, "repPct": 60 },
     { "year": 2020, "race": "President", "demPct": 41.8, "repPct": 55.3, "demVotes": 197467, "repVotes": 260948, "totalVotes": 472049 },
     { "year": 2020, "race": "Senate", "demPct": 43.3, "repPct": 53.5, "demVotes": 199995, "repVotes": 246915, "totalVotes": 461920 },
@@ -23351,7 +23351,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4103": [
     { "year": 2024, "race": "President", "demPct": 70.7, "repPct": 25.1, "demVotes": 248433, "repVotes": 88226, "totalVotes": 351240 },
-    { "year": 2022, "race": "Governor", "demPct": 65, "repPct": 27 },
+    { "year": 2022, "race": "Governor", "demPct": 65, "repPct": 27, "demVotes": 199583, "repVotes": 84322, "totalVotes": 308289 },
     { "year": 2022, "race": "Senate", "demPct": 71, "repPct": 25 },
     { "year": 2020, "race": "President", "demPct": 73.8, "repPct": 23.3, "demVotes": 356488, "repVotes": 112330, "totalVotes": 483039 },
     { "year": 2020, "race": "Senate", "demPct": 73.4, "repPct": 22.5, "demVotes": 347059, "repVotes": 106241, "totalVotes": 472684 },
@@ -23362,7 +23362,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4104": [
     { "year": 2024, "race": "President", "demPct": 54.1, "repPct": 42.2, "demVotes": 211870, "repVotes": 164979, "totalVotes": 391317 },
-    { "year": 2022, "race": "Governor", "demPct": 46, "repPct": 44 },
+    { "year": 2022, "race": "Governor", "demPct": 46, "repPct": 44, "demVotes": 159835, "repVotes": 152685, "totalVotes": 343315 },
     { "year": 2022, "race": "Senate", "demPct": 55, "repPct": 41 },
     { "year": 2020, "race": "President", "demPct": 50.3, "repPct": 46.4, "demVotes": 238581, "repVotes": 219759, "totalVotes": 474101 },
     { "year": 2020, "race": "Senate", "demPct": 51.7, "repPct": 44.5, "demVotes": 239438, "repVotes": 205979, "totalVotes": 462975 },
@@ -23373,7 +23373,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4105": [
     { "year": 2024, "race": "President", "demPct": 52.5, "repPct": 43.8, "demVotes": 218398, "repVotes": 182440, "totalVotes": 416287 },
-    { "year": 2022, "race": "Governor", "demPct": 43, "repPct": 48 },
+    { "year": 2022, "race": "Governor", "demPct": 43, "repPct": 48, "demVotes": 154293, "repVotes": 171418, "totalVotes": 361243 },
     { "year": 2022, "race": "Senate", "demPct": 52, "repPct": 45 },
     { "year": 2020, "race": "President", "demPct": 53.2, "repPct": 43.6, "demVotes": 248609, "repVotes": 203855, "totalVotes": 467692 },
     { "year": 2020, "race": "Senate", "demPct": 53.4, "repPct": 43, "demVotes": 244040, "repVotes": 196377, "totalVotes": 457216 },
@@ -23384,7 +23384,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   ],
   "4106": [
     { "year": 2024, "race": "President", "demPct": 53.7, "repPct": 42.5, "demVotes": 188844, "repVotes": 149147, "totalVotes": 351344 },
-    { "year": 2022, "race": "Governor", "demPct": 44, "repPct": 46 },
+    { "year": 2022, "race": "Governor", "demPct": 44, "repPct": 46, "demVotes": 133735, "repVotes": 139435, "totalVotes": 302116 },
     { "year": 2022, "race": "Senate", "demPct": 53, "repPct": 44 }
   ],
   "4201": [
@@ -23584,7 +23584,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   "4401": [
     { "year": 2024, "race": "President", "demPct": 59.6, "repPct": 37.6, "demVotes": 140675, "repVotes": 88768, "totalVotes": 235877 },
     { "year": 2024, "race": "Senate", "demPct": 64, "repPct": 35.8, "demVotes": 143517, "repVotes": 80253, "totalVotes": 224355 },
-    { "year": 2022, "race": "Governor", "demPct": 62, "repPct": 35 },
+    { "year": 2022, "race": "Governor", "demPct": 62, "repPct": 35, "demVotes": 96970, "repVotes": 54968, "totalVotes": 157162 },
     { "year": 2020, "race": "President", "demPct": 63.6, "repPct": 34.4, "demVotes": 154430, "repVotes": 83606, "totalVotes": 242810 },
     { "year": 2020, "race": "Senate", "demPct": 70.4, "repPct": 29.4, "demVotes": 161726, "repVotes": 67455, "totalVotes": 229620 },
     { "year": 2018, "race": "Governor", "demPct": 58.9, "repPct": 31, "demVotes": 103112, "repVotes": 54234, "totalVotes": 175086 },
@@ -23594,7 +23594,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   "4402": [
     { "year": 2024, "race": "President", "demPct": 52.1, "repPct": 45.3, "demVotes": 144457, "repVotes": 125630, "totalVotes": 277477 },
     { "year": 2024, "race": "Senate", "demPct": 56.5, "repPct": 43.3, "demVotes": 151127, "repVotes": 115778, "totalVotes": 267564 },
-    { "year": 2022, "race": "Governor", "demPct": 55, "repPct": 42 },
+    { "year": 2022, "race": "Governor", "demPct": 55, "repPct": 42, "demVotes": 110196, "repVotes": 84033, "totalVotes": 200508 },
     { "year": 2020, "race": "President", "demPct": 55.7, "repPct": 42.3, "demVotes": 153056, "repVotes": 116316, "totalVotes": 274947 },
     { "year": 2020, "race": "Senate", "demPct": 63, "repPct": 36.8, "demVotes": 166848, "repVotes": 97400, "totalVotes": 264642 },
     { "year": 2018, "race": "Governor", "demPct": 47.2, "repPct": 42.6, "demVotes": 95010, "repVotes": 85698, "totalVotes": 201315 },
@@ -24204,7 +24204,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "Senate", "demPct": 61.3, "repPct": 33, "demVotes": 192243, "repVotes": 103637, "totalVotes": 313809 }
   ],
   "5101": [
-    { "year": 2025, "race": "Governor", "demPct": 51.2, "repPct": 48.6 },
+    { "year": 2025, "race": "Governor", "demPct": 51.2, "repPct": 48.6, "demVotes": 204237, "repVotes": 193426, "totalVotes": 398329 },
     { "year": 2024, "race": "President", "demPct": 46.7, "repPct": 51.6, "demVotes": 227074, "repVotes": 250992, "totalVotes": 486595 },
     { "year": 2024, "race": "Senate", "demPct": 48.2, "repPct": 51.7, "demVotes": 231533, "repVotes": 248580, "totalVotes": 480649 },
     { "year": 2021, "race": "Governor", "demPct": 40.7, "repPct": 58.7, "demVotes": 140475, "repVotes": 202713, "totalVotes": 345561 },
@@ -24215,7 +24215,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "President", "demPct": 40.9, "repPct": 53.3, "demVotes": 161579, "repVotes": 210783, "totalVotes": 395266 }
   ],
   "5102": [
-    { "year": 2025, "race": "Governor", "demPct": 53.7, "repPct": 46.1 },
+    { "year": 2025, "race": "Governor", "demPct": 53.7, "repPct": 46.1, "demVotes": 167560, "repVotes": 143857, "totalVotes": 311916 },
     { "year": 2024, "race": "President", "demPct": 49.1, "repPct": 49.3, "demVotes": 203172, "repVotes": 204261, "totalVotes": 414128 },
     { "year": 2024, "race": "Senate", "demPct": 51.2, "repPct": 48.6, "demVotes": 209608, "repVotes": 198986, "totalVotes": 409060 },
     { "year": 2021, "race": "Governor", "demPct": 45.5, "repPct": 53.7, "demVotes": 119823, "repVotes": 141578, "totalVotes": 263446 },
@@ -24226,7 +24226,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "President", "demPct": 45.1, "repPct": 48.4, "demVotes": 147023, "repVotes": 157841, "totalVotes": 326072 }
   ],
   "5103": [
-    { "year": 2025, "race": "Governor", "demPct": 71.9, "repPct": 27.9 },
+    { "year": 2025, "race": "Governor", "demPct": 71.9, "repPct": 27.9, "demVotes": 174397, "repVotes": 67699, "totalVotes": 242532 },
     { "year": 2024, "race": "President", "demPct": 66.4, "repPct": 31.8, "demVotes": 213132, "repVotes": 102213, "totalVotes": 320985 },
     { "year": 2024, "race": "Senate", "demPct": 68.9, "repPct": 31, "demVotes": 218149, "repVotes": 98235, "totalVotes": 316797 },
     { "year": 2021, "race": "Governor", "demPct": 61.9, "repPct": 37, "demVotes": 148052, "repVotes": 88568, "totalVotes": 239288 },
@@ -24237,7 +24237,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "President", "demPct": 63.2, "repPct": 31.7, "demVotes": 205753, "repVotes": 103066, "totalVotes": 325309 }
   ],
   "5104": [
-    { "year": 2025, "race": "Governor", "demPct": 70.6, "repPct": 29.2 },
+    { "year": 2025, "race": "Governor", "demPct": 70.6, "repPct": 29.2, "demVotes": 217050, "repVotes": 89876, "totalVotes": 307491 },
     { "year": 2024, "race": "President", "demPct": 65.4, "repPct": 32.8, "demVotes": 250985, "repVotes": 125928, "totalVotes": 383730 },
     { "year": 2024, "race": "Senate", "demPct": 67.8, "repPct": 32.1, "demVotes": 255668, "repVotes": 120996, "totalVotes": 377264 },
     { "year": 2021, "race": "Governor", "demPct": 55.9, "repPct": 42.6, "demVotes": 164643, "repVotes": 125441, "totalVotes": 294420 },
@@ -24248,7 +24248,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "President", "demPct": 58.4, "repPct": 37, "demVotes": 212677, "repVotes": 134676, "totalVotes": 364343 }
   ],
   "5105": [
-    { "year": 2025, "race": "Governor", "demPct": 46.3, "repPct": 53.5 },
+    { "year": 2025, "race": "Governor", "demPct": 46.3, "repPct": 53.5, "demVotes": 160164, "repVotes": 185080, "totalVotes": 345836 },
     { "year": 2024, "race": "President", "demPct": 43.2, "repPct": 55.4, "demVotes": 191693, "repVotes": 246006, "totalVotes": 444090 },
     { "year": 2024, "race": "Senate", "demPct": 45, "repPct": 54.8, "demVotes": 197142, "repVotes": 239958, "totalVotes": 437699 },
     { "year": 2021, "race": "Governor", "demPct": 39.7, "repPct": 59.7, "demVotes": 124837, "repVotes": 187589, "totalVotes": 314259 },
@@ -24259,7 +24259,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "President", "demPct": 42.1, "repPct": 53.1, "demVotes": 154665, "repVotes": 195190, "totalVotes": 367501 }
   ],
   "5106": [
-    { "year": 2025, "race": "Governor", "demPct": 41.6, "repPct": 58.2 },
+    { "year": 2025, "race": "Governor", "demPct": 41.6, "repPct": 58.2, "demVotes": 128270, "repVotes": 179639, "totalVotes": 308529 },
     { "year": 2024, "race": "President", "demPct": 37.2, "repPct": 61.2, "demVotes": 152726, "repVotes": 251675, "totalVotes": 410905 },
     { "year": 2024, "race": "Senate", "demPct": 40.6, "repPct": 59.3, "demVotes": 164513, "repVotes": 240472, "totalVotes": 405589 },
     { "year": 2021, "race": "Governor", "demPct": 33.3, "repPct": 66, "demVotes": 97826, "repVotes": 193939, "totalVotes": 293828 },
@@ -24270,7 +24270,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "President", "demPct": 34.7, "repPct": 59.3, "demVotes": 120596, "repVotes": 206303, "totalVotes": 347796 }
   ],
   "5107": [
-    { "year": 2025, "race": "Governor", "demPct": 57.6, "repPct": 42.2 },
+    { "year": 2025, "race": "Governor", "demPct": 57.6, "repPct": 42.2, "demVotes": 173532, "repVotes": 127356, "totalVotes": 301503 },
     { "year": 2024, "race": "President", "demPct": 50.3, "repPct": 47.4, "demVotes": 203210, "repVotes": 191700, "totalVotes": 404061 },
     { "year": 2024, "race": "Senate", "demPct": 53.3, "repPct": 46.5, "demVotes": 212359, "repVotes": 185236, "totalVotes": 398465 },
     { "year": 2021, "race": "Governor", "demPct": 44.3, "repPct": 55, "demVotes": 157515, "repVotes": 195461, "totalVotes": 355638 },
@@ -24281,7 +24281,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "President", "demPct": 43.7, "repPct": 50.2, "demVotes": 172544, "repVotes": 198032, "totalVotes": 394604 }
   ],
   "5108": [
-    { "year": 2025, "race": "Governor", "demPct": 80.1, "repPct": 19.6 },
+    { "year": 2025, "race": "Governor", "demPct": 80.1, "repPct": 19.6, "demVotes": 239840, "repVotes": 58778, "totalVotes": 299445 },
     { "year": 2024, "race": "President", "demPct": 73, "repPct": 23.8, "demVotes": 285004, "repVotes": 92725, "totalVotes": 390212 },
     { "year": 2024, "race": "Senate", "demPct": 74.6, "repPct": 25.1, "demVotes": 287851, "repVotes": 96800, "totalVotes": 385808 },
     { "year": 2021, "race": "Governor", "demPct": 72.4, "repPct": 26.9, "demVotes": 210441, "repVotes": 78004, "totalVotes": 290488 },
@@ -24292,7 +24292,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "President", "demPct": 72.4, "repPct": 20.6, "demVotes": 270415, "repVotes": 76854, "totalVotes": 373421 }
   ],
   "5109": [
-    { "year": 2025, "race": "Governor", "demPct": 31.7, "repPct": 68.1 },
+    { "year": 2025, "race": "Governor", "demPct": 31.7, "repPct": 68.1, "demVotes": 92252, "repVotes": 198204, "totalVotes": 290983 },
     { "year": 2024, "race": "President", "demPct": 27.5, "repPct": 71.4, "demVotes": 112210, "repVotes": 291613, "totalVotes": 408547 },
     { "year": 2024, "race": "Senate", "demPct": 32.9, "repPct": 66.9, "demVotes": 132031, "repVotes": 268488, "totalVotes": 401114 },
     { "year": 2021, "race": "Governor", "demPct": 24.8, "repPct": 74.6, "demVotes": 63186, "repVotes": 189841, "totalVotes": 254618 },
@@ -24303,7 +24303,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "President", "demPct": 27.2, "repPct": 68.4, "demVotes": 86463, "repVotes": 217837, "totalVotes": 318293 }
   ],
   "5110": [
-    { "year": 2025, "race": "Governor", "demPct": 60.1, "repPct": 39.6 },
+    { "year": 2025, "race": "Governor", "demPct": 60.1, "repPct": 39.6, "demVotes": 186986, "repVotes": 123219, "totalVotes": 310910 },
     { "year": 2024, "race": "President", "demPct": 52.6, "repPct": 44.3, "demVotes": 221133, "repVotes": 186201, "totalVotes": 420534 },
     { "year": 2024, "race": "Senate", "demPct": 54.8, "repPct": 44.9, "demVotes": 227947, "repVotes": 187031, "totalVotes": 416229 },
     { "year": 2021, "race": "Governor", "demPct": 52, "repPct": 47.4, "demVotes": 184248, "repVotes": 167889, "totalVotes": 354084 },
@@ -24314,7 +24314,7 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
     { "year": 2016, "race": "President", "demPct": 51.6, "repPct": 41.8, "demVotes": 210768, "repVotes": 170635, "totalVotes": 408689 }
   ],
   "5111": [
-    { "year": 2025, "race": "Governor", "demPct": 73.5, "repPct": 26.2 },
+    { "year": 2025, "race": "Governor", "demPct": 73.5, "repPct": 26.2, "demVotes": 233576, "repVotes": 83334, "totalVotes": 317759 },
     { "year": 2024, "race": "President", "demPct": 65.2, "repPct": 31.2, "demVotes": 273439, "repVotes": 130783, "totalVotes": 419501 },
     { "year": 2024, "race": "Senate", "demPct": 67.3, "repPct": 32.4, "demVotes": 278628, "repVotes": 134210, "totalVotes": 414252 },
     { "year": 2021, "race": "Governor", "demPct": 66.7, "repPct": 32.6, "demVotes": 188424, "repVotes": 92135, "totalVotes": 282697 },
@@ -25457,8 +25457,8 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   "0901": [
     { "year": 2024, "race": "President", "demPct": 60.6, "repPct": 37.7, "demVotes": 208405, "repVotes": 129726, "totalVotes": 343967 },
     { "year": 2024, "race": "Senate", "demPct": 62.4, "repPct": 35.7, "demVotes": 208931, "repVotes": 119344, "totalVotes": 334639 },
-    { "year": 2022, "race": "Governor", "demPct": 60.8, "repPct": 38 },
-    { "year": 2022, "race": "Senate", "demPct": 62.5, "repPct": 37.5 },
+    { "year": 2022, "race": "Governor", "demPct": 60.8, "repPct": 38, "demVotes": 147093, "repVotes": 96765, "totalVotes": 246484 },
+    { "year": 2022, "race": "Senate", "demPct": 62.5, "repPct": 37.5, "demVotes": 150474, "repVotes": 94804, "totalVotes": 245322 },
     { "year": 2020, "race": "President", "demPct": 63.2, "repPct": 35.3, "demVotes": 229220, "repVotes": 127803, "totalVotes": 362509 },
     { "year": 2018, "race": "Governor", "demPct": 52.2, "repPct": 41.2, "demVotes": 146582, "repVotes": 115806, "totalVotes": 280763 },
     { "year": 2018, "race": "Senate", "demPct": 62.7, "repPct": 36.2, "demVotes": 173197, "repVotes": 100042, "totalVotes": 276429 },
@@ -25468,8 +25468,8 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   "0902": [
     { "year": 2024, "race": "President", "demPct": 53, "repPct": 45.3, "demVotes": 206112, "repVotes": 176080, "totalVotes": 388818 },
     { "year": 2024, "race": "Senate", "demPct": 55.5, "repPct": 42.7, "demVotes": 209216, "repVotes": 161209, "totalVotes": 377277 },
-    { "year": 2022, "race": "Governor", "demPct": 53, "repPct": 45.7 },
-    { "year": 2022, "race": "Senate", "demPct": 54.9, "repPct": 45.1 },
+    { "year": 2022, "race": "Governor", "demPct": 53, "repPct": 45.7, "demVotes": 150972, "repVotes": 131563, "totalVotes": 286234 },
+    { "year": 2022, "race": "Senate", "demPct": 54.9, "repPct": 45.1, "demVotes": 155242, "repVotes": 129331, "totalVotes": 284589 },
     { "year": 2020, "race": "President", "demPct": 54.5, "repPct": 43.5, "demVotes": 205929, "repVotes": 164480, "totalVotes": 378111 },
     { "year": 2018, "race": "Governor", "demPct": 44.7, "repPct": 49.1, "demVotes": 131943, "repVotes": 145057, "totalVotes": 295361 },
     { "year": 2018, "race": "Senate", "demPct": 56.3, "repPct": 42.2, "demVotes": 164067, "repVotes": 123021, "totalVotes": 291366 },
@@ -25479,8 +25479,8 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   "0903": [
     { "year": 2024, "race": "President", "demPct": 56, "repPct": 42, "demVotes": 191831, "repVotes": 143737, "totalVotes": 342278 },
     { "year": 2024, "race": "Senate", "demPct": 59.4, "repPct": 38.7, "demVotes": 196662, "repVotes": 128052, "totalVotes": 330811 },
-    { "year": 2022, "race": "Governor", "demPct": 56.4, "repPct": 42.7 },
-    { "year": 2022, "race": "Senate", "demPct": 58.1, "repPct": 41.9 },
+    { "year": 2022, "race": "Governor", "demPct": 56.4, "repPct": 42.7, "demVotes": 137425, "repVotes": 104366, "totalVotes": 244063 },
+    { "year": 2022, "race": "Senate", "demPct": 58.1, "repPct": 41.9, "demVotes": 140987, "repVotes": 100681, "totalVotes": 241672 },
     { "year": 2020, "race": "President", "demPct": 59.9, "repPct": 38.8, "demVotes": 212185, "repVotes": 137454, "totalVotes": 354215 },
     { "year": 2018, "race": "Governor", "demPct": 51.6, "repPct": 45.2, "demVotes": 142475, "repVotes": 124771, "totalVotes": 275878 },
     { "year": 2018, "race": "Senate", "demPct": 61.5, "repPct": 37.5, "demVotes": 166496, "repVotes": 101523, "totalVotes": 270811 },
@@ -25490,8 +25490,8 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   "0904": [
     { "year": 2024, "race": "President", "demPct": 60.9, "repPct": 37.5, "demVotes": 206080, "repVotes": 127034, "totalVotes": 338459 },
     { "year": 2024, "race": "Senate", "demPct": 61.5, "repPct": 37.1, "demVotes": 203080, "repVotes": 122510, "totalVotes": 330114 },
-    { "year": 2022, "race": "Governor", "demPct": 60.3, "repPct": 39.1 },
-    { "year": 2022, "race": "Senate", "demPct": 61.3, "repPct": 38.7 },
+    { "year": 2022, "race": "Governor", "demPct": 60.3, "repPct": 39.1, "demVotes": 143120, "repVotes": 92094, "totalVotes": 236679 },
+    { "year": 2022, "race": "Senate", "demPct": 61.3, "repPct": 38.7, "demVotes": 143633, "repVotes": 91503, "totalVotes": 235139 },
     { "year": 2020, "race": "President", "demPct": 64.2, "repPct": 34.4, "demVotes": 237245, "repVotes": 126972, "totalVotes": 369345 },
     { "year": 2018, "race": "Governor", "demPct": 53.5, "repPct": 44.9, "demVotes": 149537, "repVotes": 125589, "totalVotes": 279521 },
     { "year": 2018, "race": "Senate", "demPct": 62.4, "repPct": 36.8, "demVotes": 172904, "repVotes": 101943, "totalVotes": 277164 },
@@ -25501,8 +25501,8 @@ export const houseStatewideResults: Record<string, HouseStatewideResult[]> = {
   "0905": [
     { "year": 2024, "race": "President", "demPct": 52, "repPct": 46.4, "demVotes": 179769, "repVotes": 160447, "totalVotes": 345747 },
     { "year": 2024, "race": "Senate", "demPct": 54.5, "repPct": 43.9, "demVotes": 182958, "repVotes": 147230, "totalVotes": 335672 },
-    { "year": 2022, "race": "Governor", "demPct": 50.2, "repPct": 48.8 },
-    { "year": 2022, "race": "Senate", "demPct": 51.6, "repPct": 48.4 },
+    { "year": 2022, "race": "Governor", "demPct": 50.2, "repPct": 48.8, "demVotes": 131582, "repVotes": 121421, "totalVotes": 255438 },
+    { "year": 2022, "race": "Senate", "demPct": 51.6, "repPct": 48.4, "demVotes": 133527, "repVotes": 119624, "totalVotes": 253164 },
     { "year": 2020, "race": "President", "demPct": 54.6, "repPct": 43.9, "demVotes": 196131, "repVotes": 157899, "totalVotes": 359447 },
     { "year": 2018, "race": "Governor", "demPct": 45, "repPct": 50.5, "demVotes": 123876, "repVotes": 138815, "totalVotes": 275080 },
     { "year": 2018, "race": "Senate", "demPct": 54.9, "repPct": 44, "demVotes": 148800, "repVotes": 119126, "totalVotes": 270893 },
