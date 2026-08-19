@@ -579,6 +579,11 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
     if (!hasSpecialThisYear) setSpecialOnly(false);
   }, [hasSpecialThisYear]);
 
+  // District's "More Info" link should point at its /house/[id] page (the closest thing
+  // to a dedicated district page) whenever that district has current House race data,
+  // regardless of which raceType is being viewed — falls back to the state page otherwise.
+  const houseDistrictNames = useMemo(() => new Set(houseData.map((r) => r.name.toLowerCase())), []);
+
   // Only the active geoLevel's lookup is built — county view uses direct object lookups
   // (getCountyResult) instead, so it needs no upfront map.
   const districtResults = useMemo(
@@ -1003,7 +1008,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                       subtitle: gr.stateName,
                       hasElection,
                       result: gr.result,
-                      moreInfoHref: raceType === "house" ? `/house/${gr.label.toLowerCase()}` : `/states/${gr.stateAbbr.toLowerCase()}`,
+                      moreInfoHref: houseDistrictNames.has(gr.label.toLowerCase()) ? `/house/${gr.label.toLowerCase()}` : `/states/${gr.stateAbbr.toLowerCase()}`,
                     } : null;
                     const isSelected = selected?.key === geoId;
                     const clickable = !!gr?.result;
