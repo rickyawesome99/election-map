@@ -35,7 +35,7 @@ OUT_CSV = os.path.join(ROOT, "data-entry/county_governor_results_2016.csv")
 YEAR = 2016
 STATE_NAMES = {
     "DE": "Delaware", "IN": "Indiana", "NH": "New Hampshire", "OR": "Oregon", "UT": "Utah",
-    "WA": "Washington", "WV": "West Virginia",
+    "VT": "Vermont", "WA": "Washington", "WV": "West Virginia",
 }
 # OR's page is titled "..._special_election" (Brown was filling Kitzhaber's
 # unexpired term), not the usual "..._election" every other state uses - missing this

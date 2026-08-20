@@ -46,8 +46,8 @@ STATE_NAMES = {
     "NH": "New Hampshire", "NM": "New Mexico", "NV": "Nevada",
     "NY": "New York", "OK": "Oklahoma", "OR": "Oregon",
     "PA": "Pennsylvania", "RI": "Rhode Island",
-    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "WI": "Wisconsin",
-    "WY": "Wyoming",
+    "SD": "South Dakota", "TN": "Tennessee", "TX": "Texas", "VT": "Vermont",
+    "WI": "Wisconsin", "WY": "Wyoming",
 }
 
 TEMPLATE_RE = re.compile(r"\{\{[^{}]*\}\}")

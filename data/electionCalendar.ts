@@ -106,7 +106,7 @@ export const electionCalendar: Record<CountyRaceType, Record<string, number[]>> 
     TX: [2014, 2018, 2022],
     UT: [2016, 2020, 2024],
     VA: [2017, 2021, 2025],
-    VT: [2020, 2022, 2024],
+    VT: [2016, 2018, 2020, 2022, 2024],
     WA: [2016, 2020, 2024],
     WI: [2014, 2018, 2022],
     WV: [2016, 2020, 2024],
