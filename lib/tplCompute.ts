@@ -311,7 +311,11 @@ function aggregateYears(races: ComputedRace[]): { yearAggregations: YearAggregat
     return { year, racesPresent, redistributedWeights, typeNMs, WRS };
   });
 
-  const tpl = yearAggregations.reduce((sum, agg) => sum + (G.YEAR_WEIGHTS[agg.year] ?? 0) * agg.WRS, 0);
+  const yearsPresent = yearAggregations.filter((agg) => agg.racesPresent.length > 0);
+  const totalYearWeight = yearsPresent.reduce((sum, agg) => sum + (G.YEAR_WEIGHTS[agg.year] ?? 0), 0);
+  const tpl = totalYearWeight > 0
+    ? yearsPresent.reduce((sum, agg) => sum + ((G.YEAR_WEIGHTS[agg.year] ?? 0) / totalYearWeight) * agg.WRS, 0)
+    : 0;
   return { yearAggregations, tpl };
 }
 
@@ -732,6 +736,23 @@ export function calculateCountyTpl(fips: string): number {
 
 export function calculateStateTpl(stateAbbr: string, stateName: string): number {
   return calculateStateModel(stateAbbr, stateName).tpl;
+}
+
+// There's no national TPL - the model is built state/district/county-up, not
+// aggregated from a national race. The median state TPL is used as a stand-in "how does
+// this compare to a typical state" baseline (median, not mean, so no single blowout state
+// skews it). Memoized since it's the same computation for every one of this app's ~3,100
+// county pages.
+let _medianStateTplCache: number | null = null;
+export function getMedianStateTpl(): number {
+  if (_medianStateTplCache != null) return _medianStateTplCache;
+  const tpls = statesData
+    .map(({ abbr, name }) => calculateStateTpl(abbr, name))
+    .filter((v) => Number.isFinite(v))
+    .sort((a, b) => a - b);
+  const mid = Math.floor(tpls.length / 2);
+  _medianStateTplCache = tpls.length % 2 !== 0 ? tpls[mid] : (tpls[mid - 1] + tpls[mid]) / 2;
+  return _medianStateTplCache;
 }
 
 export function calculateDistrictTpl(districtId: string): number {

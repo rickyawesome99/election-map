@@ -40,3 +40,17 @@ export function marginToRating(margin: number): string {
 export function getStateColor(margin: number): string {
   return getRaceColor(margin);
 }
+
+// Formats a signed R-D margin as "R+n.n" / "D+n.n" / "EVEN" (used by TPL-style figures,
+// distinct from marginToRating's Safe/Likely/Lean/Tilt bucketing above).
+export function fmtMargin(v: number | null): string {
+  if (v == null) return "—";
+  if (Math.abs(v) < 0.05) return "EVEN";
+  return `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(1)}`;
+}
+
+export function marginColor(v: number | null): string {
+  if (v == null) return "var(--app-text-very-muted)";
+  if (Math.abs(v) < 0.05) return "var(--app-text-primary)";
+  return v > 0 ? "var(--party-rep)" : "var(--party-dem)";
+}

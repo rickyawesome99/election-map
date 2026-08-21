@@ -1,18 +1,8 @@
 import { calculateCountyModel } from "@/lib/tplCompute";
+import { fmtMargin, marginColor } from "@/lib/colorScale";
+import CountyLeanTrendChart from "@/components/CountyLeanTrendChart";
 
 const RACE_TYPE_LABELS: Record<string, string> = { P: "President", S: "Senate", G: "Governor", H: "House" };
-
-function fmtMargin(v: number | null): string {
-  if (v == null) return "—";
-  if (Math.abs(v) < 0.05) return "EVEN";
-  return `${v > 0 ? "R" : "D"}+${Math.abs(v).toFixed(1)}`;
-}
-
-function marginColor(v: number | null): string {
-  if (v == null) return "var(--app-text-very-muted)";
-  if (Math.abs(v) < 0.05) return "var(--app-text-primary)";
-  return v > 0 ? "var(--party-rep)" : "var(--party-dem)";
-}
 
 export default function CountyTplCard({
   fips,
@@ -62,6 +52,13 @@ export default function CountyTplCard({
         <span className="text-xl font-bold tabular-nums" style={{ color: marginColor(tpl) }}>
           {fmtMargin(tpl)}
         </span>
+      </div>
+
+      <div className="px-3 py-2.5" style={{ borderBottom: "1px solid var(--app-border)" }}>
+        <h3 className="text-[10px] uppercase tracking-wider font-semibold mb-1.5" style={{ color: "var(--app-text-muted)" }}>
+          Partisan Lean by Cycle
+        </h3>
+        <CountyLeanTrendChart yearAggregations={yearAggregations} />
       </div>
 
       <div className="overflow-x-auto">

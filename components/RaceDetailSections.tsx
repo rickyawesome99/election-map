@@ -971,14 +971,17 @@ export function PastElectionResultsSection({
             >
               {/* Row 1: year + election type | result margin */}
               <div className="flex items-center justify-between gap-2 mb-1.5">
-                <div className="flex min-w-0 items-center gap-2">
+                <div className="flex min-w-0 flex-wrap items-center gap-2">
                   <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
                   {showElectionType && res.electionType && (!showSpecialBadgeForSpecialElections || !res.electionType.toLowerCase().includes("special")) && (
                     <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{res.electionType}</span>
                   )}
                   {!isPlaceholder && res.districtLabel && (
+                    // A county can span many districts (e.g. Cook County, IL spans 10) -
+                    // no nowrap/shrink-0 here, so a long list wraps within the pill
+                    // instead of overflowing past the card.
                     <span
-                      className="text-[11px] font-semibold px-1.5 py-0.5 rounded whitespace-nowrap shrink-0"
+                      className="min-w-0 max-w-full whitespace-normal break-words rounded px-1.5 py-0.5 text-[11px] font-semibold"
                       style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
                     >
                       {res.districtLabel}

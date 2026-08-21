@@ -51,6 +51,12 @@ type NormalizedResult = {
   demVotes: number; repVotes: number; totalVotes: number;
   demPct: number; repPct: number; margin: number;
   votesKnown?: boolean;
+  /** True for a same-party race (see SAME_PARTY_STATEWIDE_RACES) whose "rep slot" candidate
+   * is actually a Democrat — repVotes/repPct/repVotes stay that candidate's own real count
+   * (never merged into demVotes), but the UI should render that row's LABEL and COLOR as
+   * Dem, not Rep, the same way RaceDetailSections.tsx's demParty/repParty override does on
+   * /senate/ca. */
+  repIsDem?: boolean;
 };
 
 /** A geography's data-derived identity + result, independent of geoLevel. */
@@ -71,6 +77,62 @@ type Selection = {
   moreInfoHref: string | null;
 };
 
+/** Statewide races where BOTH the "dem" and "rep" slots (per this project's bucket
+ * convention — see senate_past_results.csv) were actually Democrats, e.g. CA's top-two
+ * primary sending Harris/Sanchez (2016) and Feinstein/de León (2018) to the general. The
+ * seat is guaranteed Democratic regardless of which of the two wins a given district,
+ * county, or state — matching how the rest of the site treats a same-party race
+ * (RaceDetailSections.tsx's PastElectionResultsSection colors/labels BOTH candidates Dem
+ * via demParty/repParty, e.g. "Kevin de León (D)" rendered in blue on /senate/ca, while
+ * each candidate keeps their OWN separate vote count — the two are never combined into one
+ * number there). applySamePartyResult/applySamePartyCountyResult below reproduce that same
+ * "second slot becomes another Dem slot" treatment here: repVotes/repPct are left exactly
+ * as recorded (that candidate's real, separate count — never merged into demVotes/demPct),
+ * only the `repIsDem` flag is set so the UI renders that row's label/color as Dem instead
+ * of Rep, and `margin`'s sign is normalized so the map/badge never reads red (it still
+ * reflects the real spread between the two Democrats, just always on the blue side).
+ * Applies uniformly at State (computeStatewideResult/collectStateAggregateResults),
+ * District (buildDistrictResults/collectDistrictAggregateResults), and County
+ * (getCountyResult/getAllCountyResults) — all three geo levels store the real
+ * per-candidate vote split in their underlying data (forecastData.ts / house_statewide_
+ * results.csv / county_senate_results_*.csv via fetch-county-senate-ca-samedem.py), so
+ * this is applied purely at display/aggregation time, not baked into any data file. */
+const SAME_PARTY_STATEWIDE_RACES: { race: string; year: number; state: string }[] = [
+  { race: "Senate", year: 2016, state: "CA" },
+  { race: "Senate", year: 2018, state: "CA" },
+];
+
+function isSamePartyStatewideRace(raceName: string, year: number, state: string): boolean {
+  return SAME_PARTY_STATEWIDE_RACES.some((r) => r.race === raceName && r.year === year && r.state === state);
+}
+
+/** Marks a same-party race's "rep slot" as Dem (repIsDem: true) and normalizes margin's
+ * sign so the map/badge never reads red — repVotes/repPct are left untouched, still that
+ * candidate's own real count. No-op for every non-same-party race/year/state. */
+function applySamePartyResult(result: NormalizedResult, raceName: string, year: number, state: string): NormalizedResult {
+  if (!isSamePartyStatewideRace(raceName, year, state)) return result;
+  return { ...result, repIsDem: true, margin: -Math.abs(result.margin) };
+}
+
+/** CountyYearResult plus the same repIsDem flag NormalizedResult carries — countySenateData
+ * itself never sets it (only applySamePartyCountyResult below does), but getCountyResult/
+ * getAllCountyResults need to declare it in their return type so callers (e.g. the National
+ * Results aggregate) can read it off a county result the same way they do a district/state
+ * NormalizedResult. */
+type CountyResult = CountyYearResult & { repIsDem?: boolean };
+
+/** applySamePartyResult's equivalent for a raw CountyYearResult (different field shape —
+ * has othVotes, no votesKnown) — needed because countySenateData has no built-in
+ * same-party awareness of its own. */
+function applySamePartyCountyResult(
+  result: CountyYearResult | null, raceType: RaceType, year: number, fips: string,
+): CountyResult | null {
+  if (!result || raceType !== "senate") return result;
+  const stateAbbr = FIPS_TO_STATE[fips.slice(0, 2)]?.abbr;
+  if (!stateAbbr || !isSamePartyStatewideRace("Senate", year, stateAbbr)) return result;
+  return { ...result, repIsDem: true, margin: -Math.abs(result.margin) };
+}
+
 /** Single result for one county, for MAP COLORING / the click-to-select panel — respects
  * the "special elections only" toggle. `specialOnly` false (default): regular race
  * preferred, falling back to the special race only if that's the state's ONLY race that
@@ -78,12 +140,14 @@ type Selection = {
  * only — a state with no special that year (the common case) shows no result (greys out),
  * even if it had a regular race. See getAllCountyResults for the DIFFERENT "always sum
  * both" rule the National Results aggregate panel uses. */
-function getCountyResult(raceType: RaceType, year: number, fips: string, specialOnly = false): CountyYearResult | null {
+function getCountyResult(raceType: RaceType, year: number, fips: string, specialOnly = false): CountyResult | null {
   if (raceType === "president") return countyPresidentialData[fips]?.years[year as PresYear] ?? null;
   if (raceType === "senate") {
     const county = countySenateData[fips];
-    if (specialOnly) return county?.specialYears[year] ?? null;
-    return county?.years[year] ?? county?.specialYears[year] ?? null;
+    const result = specialOnly
+      ? (county?.specialYears[year] ?? null)
+      : (county?.years[year] ?? county?.specialYears[year] ?? null);
+    return applySamePartyCountyResult(result, raceType, year, fips);
   }
   if (raceType === "governor") return countyGovernorData[fips]?.years[year] ?? null;
   if (raceType === "house") return countyHouseData[fips]?.years[year] ?? null;
@@ -95,13 +159,13 @@ function getCountyResult(raceType: RaceType, year: number, fips: string, special
  * contributes twice: once for Ossoff/Perdue, once for Warnock/Loeffler), independent of
  * the map's "special elections only" toggle, which only controls per-county MAP COLORING
  * (see getCountyResult) — the aggregate always reflects every Senate race held that year. */
-function getAllCountyResults(raceType: RaceType, year: number): CountyYearResult[] {
-  const results: CountyYearResult[] = [];
+function getAllCountyResults(raceType: RaceType, year: number): CountyResult[] {
+  const results: CountyResult[] = [];
   if (raceType === "senate") {
     for (const fips in countySenateData) {
       const county = countySenateData[fips];
-      const reg = county?.years[year];
-      const spec = county?.specialYears[year];
+      const reg = applySamePartyCountyResult(county?.years[year] ?? null, raceType, year, fips);
+      const spec = applySamePartyCountyResult(county?.specialYears[year] ?? null, raceType, year, fips);
       if (reg) results.push(reg);
       if (spec) results.push(spec);
     }
@@ -203,9 +267,12 @@ function computeStatewideResult(raceType: RaceType, year: number, abbr: string, 
     const seat1Past = seat1Race?.pastResults ?? seat1NoEl?.pastResults ?? [];
     const seat2Past = seat2Race?.pastResults ?? seat2Holdover?.pastResults ?? [];
     const allMatches = [...seat1Past, ...seat2Past].filter((pr) => pr.year === year);
-    if (specialOnly) return combineVotesResults(allMatches.filter((pr) => pr.electionType === "Special"));
     const regularMatches = allMatches.filter((pr) => pr.electionType !== "Special");
-    return combineVotesResults(regularMatches.length > 0 ? regularMatches : allMatches);
+    const matches = specialOnly
+      ? allMatches.filter((pr) => pr.electionType === "Special")
+      : regularMatches.length > 0 ? regularMatches : allMatches;
+    const result = combineVotesResults(matches);
+    return result ? applySamePartyResult(result, "Senate", year, abbr) : null;
   }
   return null;
 }
@@ -242,23 +309,6 @@ function findAllRaceResults(results: HouseStatewideResult[], raceName: string, y
   return out;
 }
 
-/** Statewide races where BOTH the "dem" and "rep" slots (per this project's bucket
- * convention — see senate_past_results.csv) were actually Democrats, e.g. CA's top-two
- * primary sending Harris/Sanchez (2016) and Feinstein/de León (2018) to the general. The
- * seat is guaranteed Democratic regardless of which of the two wins a given district, so
- * the map should never show red here even in districts where the second Democrat (sitting
- * in the "rep" column) led — margin is flipped to -|margin| below so color/badges always
- * read Dem, while the magnitude (and the real demPct/repPct/votes shown in the tooltip)
- * still reflects how lopsided that particular pairing was in that district. */
-const SAME_PARTY_STATEWIDE_RACES: { race: string; year: number; state: string }[] = [
-  { race: "Senate", year: 2016, state: "CA" },
-  { race: "Senate", year: 2018, state: "CA" },
-];
-
-function isSamePartyStatewideRace(raceName: string, year: number, state: string): boolean {
-  return SAME_PARTY_STATEWIDE_RACES.some((r) => r.race === raceName && r.year === year && r.state === state);
-}
-
 /** Builds one GeoResult per real congressional district (keyed by the data's own GEOID
  * convention — "XX01" for at-large, not the Census "XX00"), for the given race+year — for
  * MAP COLORING, so respects the "special elections only" toggle (see findRaceResult). */
@@ -280,10 +330,8 @@ function buildDistrictResults(raceType: RaceType, year: number, specialOnly = fa
       const stateInfo = FIPS_TO_STATE[stateFips];
       if (!stateInfo) continue;
       const r = findRaceResult(results, raceName, year, specialOnly);
-      const result = r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes) : null;
-      if (result && isSamePartyStatewideRace(raceName, year, stateInfo.abbr)) {
-        result.margin = -Math.abs(result.margin);
-      }
+      let result = r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes) : null;
+      if (result) result = applySamePartyResult(result, raceName, year, stateInfo.abbr);
       map.set(geoid, { label: `${stateInfo.abbr}-${geoid.slice(-2)}`, stateAbbr: stateInfo.abbr, stateName: stateInfo.name, result });
     }
   }
@@ -311,8 +359,7 @@ function collectDistrictAggregateResults(raceType: RaceType, year: number): Norm
     if (!stateInfo) continue;
     for (const r of findAllRaceResults(results, raceName, year)) {
       const result = normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes);
-      if (isSamePartyStatewideRace(raceName, year, stateInfo.abbr)) result.margin = -Math.abs(result.margin);
-      out.push(result);
+      out.push(applySamePartyResult(result, raceName, year, stateInfo.abbr));
     }
   }
   return out;
@@ -377,7 +424,8 @@ function collectStateAggregateResults(raceType: RaceType, year: number): Normali
       const seat2Past = seat2Race?.pastResults ?? seat2Holdover?.pastResults ?? [];
       for (const m of [...seat1Past, ...seat2Past].filter((pr) => pr.year === year)) {
         if (m.demVotes == null || m.repVotes == null) continue;
-        out.push(normalizeVotesResult(m.demPct, m.repPct, m.demVotes, m.repVotes, m.totalVotes));
+        const result = normalizeVotesResult(m.demPct, m.repPct, m.demVotes, m.repVotes, m.totalVotes);
+        out.push(applySamePartyResult(result, "Senate", year, abbr));
       }
     } else {
       const result = computeStatewideResult(raceType, year, abbr);
@@ -497,6 +545,12 @@ function ResultDetails({
     return <div className="text-[9px]" style={{ color: t.textVeryMuted }}>{msg}</div>;
   }
   const votesKnown = result.votesKnown !== false;
+  // A same-party race (see SAME_PARTY_STATEWIDE_RACES) means the "rep slot" candidate is
+  // actually a Democrat — that row keeps its own real vote count (never merged into the
+  // first row), but reads as a second Dem row instead of "Rep", matching how /senate/ca
+  // colors/labels both Feinstein and de León blue.
+  const repColor = result.repIsDem ? t.demText : t.repText;
+  const repLabel = result.repIsDem ? "Dem" : "Rep";
   return (
     <>
       <div>
@@ -507,8 +561,8 @@ function ResultDetails({
           </span>
         </div>
         <div className="flex justify-between items-baseline">
-          <span style={{ color: t.repText, fontSize: 10 }}>Rep</span>
-          <span className="font-semibold" style={{ color: t.repText, fontSize: 10 }}>
+          <span style={{ color: repColor, fontSize: 10 }}>{repLabel}</span>
+          <span className="font-semibold" style={{ color: repColor, fontSize: 10 }}>
             {showVotesInRows && votesKnown ? `${result.repVotes.toLocaleString()} · ` : ""}{result.repPct.toFixed(1)}%
           </span>
         </div>
@@ -606,7 +660,13 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   // per-unit MAP COLORING — see getAllCountyResults/collectDistrictAggregateResults/
   // collectStateAggregateResults's own docs. demPct/repPct are each a share of the summed
   // totalVotes (D+R+Other all sum to 100), not a two-party share, so Other/third-party
-  // votes nationally reduce both rather than being silently folded into D or R.
+  // votes nationally reduce both rather than being silently folded into D or R. A
+  // same-party result (r.repIsDem — see SAME_PARTY_STATEWIDE_RACES) folds its repVotes
+  // into the dem total here, unlike the per-unit tooltip (ResultDetails), which keeps that
+  // candidate's own count on a separate "Dem" row — this is the ONE place the two get
+  // combined, since the national total should count every Democratic vote as Democratic
+  // regardless of which data slot it's recorded in; an ordinary Dem-vs-Rep race is
+  // untouched (repIsDem is unset, so dem stays dem and rep stays rep as always).
   const stats = useMemo(() => {
     const results =
       geoLevel === "county" ? getAllCountyResults(raceType, year)
@@ -614,8 +674,8 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
       : collectStateAggregateResults(raceType, year);
     let demVotes = 0, repVotes = 0, totalVotes = 0, demUnits = 0, repUnits = 0;
     for (const r of results) {
-      demVotes += r.demVotes;
-      repVotes += r.repVotes;
+      demVotes += r.repIsDem ? r.demVotes + r.repVotes : r.demVotes;
+      repVotes += r.repIsDem ? 0 : r.repVotes;
       totalVotes += r.totalVotes;
       if (r.margin <= 0) demUnits++;
       else repUnits++;

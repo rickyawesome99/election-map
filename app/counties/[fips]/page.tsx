@@ -11,6 +11,9 @@ import BackButton from "@/components/BackButton";
 import StateCountyMap from "@/components/StateCountyMap";
 import CountyTplCard from "@/components/CountyTplCard";
 import CountyRightPanel from "@/components/CountyRightPanel";
+import CountyHeroBar from "@/components/CountyHeroBar";
+import CountyCompareCard from "@/components/CountyCompareCard";
+import CountyDemographicsStrip from "@/components/CountyDemographicsStrip";
 import { AboutRaceCard, type DetailPastResult } from "@/components/RaceDetailSections";
 
 const YEARS = [2008, 2012, 2016, 2020, 2024] as const;
@@ -210,6 +213,15 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
           </p>
         </div>
 
+        <CountyHeroBar fips={fips} results={results} />
+        <CountyDemographicsStrip {...(countyDemographics[fips] ?? {})} />
+        <CountyCompareCard
+          fips={fips}
+          stateAbbr={county.state}
+          stateName={stateName}
+          countyLabel={`${county.countyName} ${areaLabel}`}
+        />
+
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:items-start">
           {/* Left column — display:contents on mobile so children become direct grid items (enabling order-based reflow), flex-col on desktop */}
           <div className="contents md:flex md:flex-col md:gap-3">
@@ -235,7 +247,6 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
           <div className="contents md:flex md:flex-col md:gap-3">
             <div className="order-3">
               <CountyRightPanel
-                demographics={countyDemographics[fips] ?? {}}
                 results={results}
                 fallbackYears={[2024, 2020, 2016, 2012, 2008]}
                 areaLabel={areaLabel}
