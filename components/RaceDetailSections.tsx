@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Image from "next/image";
 import CandidateLink from "@/components/CandidateLink";
 import { WinProbabilityLabel } from "@/components/WinProbabilityLabel";
@@ -165,17 +166,54 @@ function WinProbabilitySummary({ demPct, repPct }: { demPct: number; repPct: num
   );
 }
 
+// Section header for the states-page-style layout — a bold uppercase label under a thick rule,
+// matching the "Federal Offices" / "U.S. House" section heads on the state page.
+export function LedgerSectionHead({ label, meta }: { label: string; meta?: ReactNode }) {
+  return (
+    <div
+      className="flex flex-wrap items-baseline gap-1.5 sm:gap-3 pb-3 mb-3"
+      style={{ borderBottom: "2px solid var(--app-text-primary)" }}
+    >
+      <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
+        {label}
+      </h2>
+      {meta && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{meta}</span>}
+    </div>
+  );
+}
+
 export function AboutRaceCard({
   title,
   description,
   items,
   compact = false,
+  bare = false,
 }: {
   title: string;
   description: string;
   items: DetailInfoItem[];
   compact?: boolean;
+  // Renders as a plain paragraph + inline label/value row, no card chrome or boxed tiles —
+  // the caller supplies its own section header (see LedgerSectionHead).
+  bare?: boolean;
 }) {
+  if (bare) {
+    return (
+      <div>
+        <p className="text-sm leading-relaxed mb-3" style={{ color: "var(--app-text-primary)" }}>
+          {description}
+        </p>
+        <div className="flex flex-wrap gap-x-6 gap-y-1.5">
+          {items.map(({ label, value }) => (
+            <div key={label} className="text-xs" style={{ color: "var(--app-text-muted)" }}>
+              {label} <span className="font-bold" style={{ color: "var(--app-text-primary)" }}>{value}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   const gridClass =
     items.length >= 4 ? "grid-cols-2 md:grid-cols-4" :
     items.length === 3 ? "grid-cols-3" :
@@ -405,6 +443,52 @@ export function CurrentIncumbentCard({
   );
 }
 
+// Borderless incumbent row for the states-page-style "no election this cycle" pages — same framed
+// square portrait treatment as CandidatesLedgerSection, without a vote-share figure.
+export function CurrentIncumbentLedgerRow({
+  incumbentName,
+  party,
+  photo,
+}: {
+  incumbentName: string;
+  party: "D" | "R" | "I";
+  photo?: string | null;
+}) {
+  const accentColor = partyAccent(party);
+  return (
+    <div className="flex items-center gap-4">
+      <div
+        className="shrink-0 overflow-hidden flex items-center justify-center"
+        style={{ width: "5.25rem", height: "5.25rem", borderRadius: "14px", border: `3px solid ${accentColor}`, background: "var(--app-tab-bg)" }}
+      >
+        {photo ? (
+          <Image src={photo} alt={incumbentName} width={168} height={168} className="w-full h-full object-cover object-top" />
+        ) : party === "R" ? (
+          <Image src="/candidates/placeholder-republican.png" alt="Republican" width={168} height={168} className="w-full h-full object-contain p-2" />
+        ) : party === "D" ? (
+          <Image src="/candidates/placeholder-democrat.png" alt="Democrat" width={168} height={168} className="w-full h-full object-contain p-2" />
+        ) : (
+          <svg viewBox="0 0 64 80" className="w-full h-full" fill="none">
+            <rect width="64" height="80" fill="var(--app-tab-bg)" />
+            <circle cx="32" cy="28" r="14" fill="var(--app-border)" />
+            <ellipse cx="32" cy="76" rx="25" ry="18" fill="var(--app-border)" />
+          </svg>
+        )}
+      </div>
+      <div className="min-w-0">
+        <CandidateLink
+          name={incumbentName}
+          className="hover:underline inline-block"
+          style={{ fontFamily: "var(--font-serif)", fontSize: "1.4rem", fontWeight: 700, color: "var(--app-text-primary)" }}
+        >
+          {incumbentName}
+        </CandidateLink>
+        <div className="text-sm font-medium mt-0.5" style={{ color: accentColor }}>{partyLabel(party)} &middot; Incumbent</div>
+      </div>
+    </div>
+  );
+}
+
 export function ElectionStatusCard({
   message,
 }: {
@@ -530,6 +614,73 @@ export function CandidatesAndPollsCard({
         </div>
       )}
     </section>
+  );
+}
+
+// Borderless candidate rows for the states-page-style layout — framed square portrait, serif name,
+// party label, tabular vote share. Win probability and polls move up into the page's own hero stat row.
+export function CandidatesLedgerSection({
+  candidates,
+}: {
+  candidates: [CandidateCardEntry, CandidateCardEntry];
+}) {
+  return (
+    <div>
+      {candidates.map((candidate, i) => {
+        const accentColor = partyAccent(candidate.party);
+        const displayName = candidate.placeholder ? "TBD" : candidate.name;
+        const displayParty = partyLabel(candidate.party);
+        const isLast = i === candidates.length - 1;
+        return (
+          <div
+            key={`${candidate.name}-${candidate.party}`}
+            className="flex items-center justify-between gap-4 py-4"
+            style={{ borderBottom: isLast ? "none" : "1px solid var(--app-border)" }}
+          >
+            <div className="flex items-center gap-4 min-w-0">
+              <div
+                className="shrink-0 overflow-hidden flex items-center justify-center"
+                style={{ width: "5.25rem", height: "5.25rem", borderRadius: "14px", border: `3px solid ${accentColor}`, background: "var(--app-tab-bg)" }}
+              >
+                {candidate.photo && !candidate.placeholder ? (
+                  <Image src={candidate.photo} alt={candidate.name} width={168} height={168} className="w-full h-full object-cover object-top" />
+                ) : candidate.party === "R" && !candidate.placeholder ? (
+                  <Image src="/candidates/placeholder-republican.png" alt="Republican" width={168} height={168} className="w-full h-full object-contain p-2" />
+                ) : candidate.party === "D" && !candidate.placeholder ? (
+                  <Image src="/candidates/placeholder-democrat.png" alt="Democrat" width={168} height={168} className="w-full h-full object-contain p-2" />
+                ) : (
+                  <svg viewBox="0 0 64 80" className="w-full h-full" fill="none">
+                    <rect width="64" height="80" fill="var(--app-tab-bg)" />
+                    <circle cx="32" cy="28" r="14" fill="var(--app-border)" />
+                    <ellipse cx="32" cy="76" rx="25" ry="18" fill="var(--app-border)" />
+                  </svg>
+                )}
+              </div>
+              <div className="min-w-0">
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  {candidate.placeholder ? (
+                    <span className="italic" style={{ fontFamily: "var(--font-serif)", fontSize: "1.3rem", fontWeight: 700, color: "var(--app-text-muted)" }}>{displayName}</span>
+                  ) : (
+                    <CandidateLink
+                      name={candidate.name}
+                      className="hover:underline"
+                      style={{ fontFamily: "var(--font-serif)", fontSize: "1.3rem", fontWeight: 700, color: accentColor }}
+                    >
+                      {displayName}
+                    </CandidateLink>
+                  )}
+                  {candidate.incumbent && !candidate.placeholder && (
+                    <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded shrink-0" style={{ background: `${accentColor}22`, color: accentColor }}>Inc.</span>
+                  )}
+                </div>
+                <div className="text-sm font-medium mt-0.5" style={{ color: accentColor }}>{displayParty}</div>
+              </div>
+            </div>
+            <div className="shrink-0 text-3xl font-extrabold tabular-nums" style={{ color: accentColor }}>{candidate.pct}%</div>
+          </div>
+        );
+      })}
+    </div>
   );
 }
 
@@ -712,6 +863,7 @@ export function ForecastCalculationCard({
   candidatePts,
   pollingAvg,
   projectedMargin,
+  bare = false,
 }: {
   tpl: number;
   genericBallot: number;
@@ -724,6 +876,8 @@ export function ForecastCalculationCard({
   // Sourced from lib/tplCompute.ts computeProjectedMargin() — the same value used by the map,
   // race table, and state page — so this card always displays the number driving the rest of the app.
   projectedMargin: number;
+  // Renders as flat, unboxed ledger rows (no card chrome) for pages using the states-page-style layout.
+  bare?: boolean;
 }) {
   const incPts = incumbentPts ?? 0;
   const ffPts = fundraisingPts ?? 0;
@@ -763,6 +917,123 @@ export function ForecastCalculationCard({
   };
   const finalAccent = marginColor(projectedMargin);
 
+  const gbTooltip = (
+    <>
+      National environment ({Math.abs(GENERIC_BALLOT) < 0.05 ? "EVEN" : `${GENERIC_BALLOT < 0 ? "D" : "R"}+${Math.abs(GENERIC_BALLOT).toFixed(1)}`}) scaled by this state&apos;s wave sensitivity coefficient S.
+      <br /><br />
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Effective wave = GB × S</span>
+      <br /><br />
+      States that historically swing more with national tides get a larger adjustment.
+    </>
+  );
+  const incTooltip = (
+    <>
+      Additive point advantage for the incumbent running in 2026.
+      <br /><br />
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>House ±3 · Senate ±2 · Governor ±7</span>
+      <br /><br />
+      R incumbent = positive · D incumbent = negative · Open seat = 0.
+    </>
+  );
+  const frTooltip = (
+    <>
+      Additive point adjustment based on cash-on-hand advantage.
+      <br /><br />
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = gap% × 0.06, capped at ±4</span>
+      <br /><br />
+      gap% = (R cash − D cash) / total × 100. A 50% gap ≈ +3 pts. Pending FEC data entry.
+    </>
+  );
+  const candTooltip = (
+    <>
+      Additive point adjustment based on 2026 candidate quality matchup.
+      <br /><br />
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = WQ pts + LQ pts</span>
+      <br /><br />
+      Your candidate — Elite +4 · Strong +2 · Generic 0 · Weak −2 · Sacrificial −4.
+      Opponent — Elite −4 · Strong −2 · Generic 0 · Weak +2 · Sacrificial +4.
+      Pending manual input per race.
+    </>
+  );
+  const modelTooltip = (
+    <>
+      Sum of State/District TPL, Generic Ballot, Incumbent, Fundraising, and Candidate points.
+      <br /><br />
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Model = TPL + GB + Incumbent + Fundraising + Candidates</span>
+    </>
+  );
+  const pollTooltip = pollingAvg == null
+    ? "No polls currently available."
+    : "Sourced from the RCP Average margin shown on the Candidates card.";
+  const marginTooltip = (
+    <>
+      <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Projected Margin = 0.8 × Model + 0.2 × Polling Avg</span>
+      <br /><br />
+      {pollingAvg == null
+        ? "No polls currently available, so this reflects the Model only."
+        : `Blended ${Math.round(effectiveModelWeight * 100)}% Model / ${Math.round(effectivePollWeight * 100)}% Polling Avg.`}
+    </>
+  );
+
+  if (bare) {
+    const ledgerRowStyle = { borderBottom: "1px solid var(--app-border)" };
+    return (
+      <div className="flex flex-col">
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
+          {tplHref ? (
+            <a
+              href={tplHref}
+              className="text-[11px] font-semibold uppercase tracking-wider hover:underline underline-offset-2"
+              style={{ color: "var(--app-text-muted)" }}
+              title={`View ${tplLabel}`}
+            >
+              {tplLabel}
+            </a>
+          ) : (
+            <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{tplLabel}</span>
+          )}
+          <span className="text-sm font-bold" style={{ color: marginColor(tpl) }}>{fmtMargin(tpl)}</span>
+        </div>
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
+          <InfoTooltip label="Generic Ballot">{gbTooltip}</InfoTooltip>
+          <span className="text-sm font-bold" style={{ color: gbIsD ? "var(--party-dem)" : "var(--party-rep)" }}>{gbDisplay}</span>
+        </div>
+        {showIncumbentRow && (
+          <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
+            <InfoTooltip label="Incumbent">{incTooltip}</InfoTooltip>
+            <span className="text-sm font-bold" style={{ color: incColor }}>{incDisplay}</span>
+          </div>
+        )}
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
+          <InfoTooltip label="Fundraising">{frTooltip}</InfoTooltip>
+          <span className="text-sm font-bold" style={{ color: "var(--app-text-very-muted)" }}>
+            {fundraisingPts == null ? "—" : fundraisingPts > 0 ? `R+${fundraisingPts}` : fundraisingPts < 0 ? `D+${Math.abs(fundraisingPts)}` : "0"}
+          </span>
+        </div>
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
+          <InfoTooltip label="Candidates">{candTooltip}</InfoTooltip>
+          <span className="text-sm font-bold" style={{ color: "var(--app-text-very-muted)" }}>
+            {candidatePts == null ? "—" : candidatePts > 0 ? `R+${candidatePts}` : candidatePts < 0 ? `D+${Math.abs(candidatePts)}` : "0"}
+          </span>
+        </div>
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
+          <InfoTooltip label="Model">{modelTooltip}</InfoTooltip>
+          <span className="text-sm font-bold" style={{ color: marginColor(modelMargin) }}>{fmtMargin(modelMargin)}</span>
+        </div>
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 py-2.5" style={ledgerRowStyle}>
+          <InfoTooltip label="Polling Avg">{pollTooltip}</InfoTooltip>
+          <span className="text-sm font-bold" style={{ color: pollingAvg == null ? "var(--app-text-very-muted)" : pollingAvg > 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+            {pollingAvg == null ? "—" : fmtMargin(pollingAvg)}
+          </span>
+        </div>
+        <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 pt-3.5">
+          <InfoTooltip label="Projected Margin" labelStyle={{ color: "var(--app-text-primary)" }}>{marginTooltip}</InfoTooltip>
+          <span className="text-2xl font-extrabold leading-none" style={{ color: finalAccent }}>{fmtMargin(projectedMargin)}</span>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <section
       className="rounded-xl"
@@ -799,35 +1070,17 @@ export function ForecastCalculationCard({
             <span className="text-sm font-bold" style={{ color: marginColor(tpl) }}>{fmtMargin(tpl)}</span>
           </div>
           <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-3 py-2.5" style={rowStyle}>
-            <InfoTooltip label="Generic Ballot">
-              National environment ({Math.abs(GENERIC_BALLOT) < 0.05 ? "EVEN" : `${GENERIC_BALLOT < 0 ? "D" : "R"}+${Math.abs(GENERIC_BALLOT).toFixed(1)}`}) scaled by this state&apos;s wave sensitivity coefficient S.
-              <br /><br />
-              <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Effective wave = GB × S</span>
-              <br /><br />
-              States that historically swing more with national tides get a larger adjustment.
-            </InfoTooltip>
+            <InfoTooltip label="Generic Ballot">{gbTooltip}</InfoTooltip>
             <span className="text-sm font-bold" style={{ color: gbIsD ? "var(--party-dem)" : "var(--party-rep)" }}>{gbDisplay}</span>
           </div>
           {showIncumbentRow && (
             <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-3 py-2.5" style={rowStyle}>
-              <InfoTooltip label="Incumbent">
-                Additive point advantage for the incumbent running in 2026.
-                <br /><br />
-                <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>House ±3 · Senate ±2 · Governor ±7</span>
-                <br /><br />
-                R incumbent = positive · D incumbent = negative · Open seat = 0.
-              </InfoTooltip>
+              <InfoTooltip label="Incumbent">{incTooltip}</InfoTooltip>
               <span className="text-sm font-bold" style={{ color: incColor }}>{incDisplay}</span>
             </div>
           )}
           <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-3 py-2.5" style={rowStyle}>
-            <InfoTooltip label="Fundraising">
-              Additive point adjustment based on cash-on-hand advantage.
-              <br /><br />
-              <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = gap% × 0.06, capped at ±4</span>
-              <br /><br />
-              gap% = (R cash − D cash) / total × 100. A 50% gap ≈ +3 pts. Pending FEC data entry.
-            </InfoTooltip>
+            <InfoTooltip label="Fundraising">{frTooltip}</InfoTooltip>
             <span className="text-sm font-bold" style={{ color: "var(--app-text-very-muted)" }}>
               {fundraisingPts == null ? "—" : fundraisingPts > 0 ? `R+${fundraisingPts}` : fundraisingPts < 0 ? `D+${Math.abs(fundraisingPts)}` : "0"}
             </span>
@@ -836,15 +1089,7 @@ export function ForecastCalculationCard({
             className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-3 py-2.5 rounded-b-lg"
             style={{ ...rowStyle, borderBottom: "0" }}
           >
-            <InfoTooltip label="Candidates">
-              Additive point adjustment based on 2026 candidate quality matchup.
-              <br /><br />
-              <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>pts = WQ pts + LQ pts</span>
-              <br /><br />
-              Your candidate — Elite +4 · Strong +2 · Generic 0 · Weak −2 · Sacrificial −4.
-              Opponent — Elite −4 · Strong −2 · Generic 0 · Weak +2 · Sacrificial +4.
-              Pending manual input per race.
-            </InfoTooltip>
+            <InfoTooltip label="Candidates">{candTooltip}</InfoTooltip>
             <span className="text-sm font-bold" style={{ color: "var(--app-text-very-muted)" }}>
               {candidatePts == null ? "—" : candidatePts > 0 ? `R+${candidatePts}` : candidatePts < 0 ? `D+${Math.abs(candidatePts)}` : "0"}
             </span>
@@ -854,11 +1099,7 @@ export function ForecastCalculationCard({
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
           <div className="rounded-lg px-3 py-2.5" style={weightedRowStyle}>
             <div className="mb-1.5 flex items-center justify-between gap-3">
-              <InfoTooltip label="Model">
-                Sum of State/District TPL, Generic Ballot, Incumbent, Fundraising, and Candidate points.
-                <br /><br />
-                <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Model = TPL + GB + Incumbent + Fundraising + Candidates</span>
-              </InfoTooltip>
+              <InfoTooltip label="Model">{modelTooltip}</InfoTooltip>
               <span className="text-[10px] font-semibold" style={{ color: "var(--app-text-very-muted)" }}>
                 {Math.round(effectiveModelWeight * 100)}%
               </span>
@@ -868,11 +1109,7 @@ export function ForecastCalculationCard({
 
           <div className="rounded-lg px-3 py-2.5" style={weightedRowStyle}>
             <div className="mb-1.5 flex items-center justify-between gap-3">
-              <InfoTooltip label="Polling Avg">
-                {pollingAvg == null
-                  ? "No polls currently available."
-                  : "Sourced from the RCP Average margin shown on the Candidates card."}
-              </InfoTooltip>
+              <InfoTooltip label="Polling Avg">{pollTooltip}</InfoTooltip>
               <span className="text-[10px] font-semibold" style={{ color: "var(--app-text-very-muted)" }}>
                 {Math.round(effectivePollWeight * 100)}%
               </span>
@@ -892,13 +1129,7 @@ export function ForecastCalculationCard({
             boxShadow: "inset 0 1px 0 rgba(255,255,255,0.05)",
           }}
         >
-          <InfoTooltip label="Projected Margin" labelStyle={{ color: "var(--app-text-muted)" }}>
-            <span className="font-mono text-[10px]" style={{ color: "var(--app-text-primary)" }}>Projected Margin = 0.8 × Model + 0.2 × Polling Avg</span>
-            <br /><br />
-            {pollingAvg == null
-              ? "No polls currently available, so this reflects the Model only."
-              : `Blended ${Math.round(effectiveModelWeight * 100)}% Model / ${Math.round(effectivePollWeight * 100)}% Polling Avg.`}
-          </InfoTooltip>
+          <InfoTooltip label="Projected Margin" labelStyle={{ color: "var(--app-text-muted)" }}>{marginTooltip}</InfoTooltip>
           <span className="text-3xl font-bold leading-none" style={{ color: finalAccent }}>{fmtMargin(projectedMargin)}</span>
         </div>
       </div>
@@ -917,6 +1148,7 @@ export function PastElectionResultsSection({
   maxHeight,
   bare = false,
   swingCycleYears = 2,
+  cardStyle = "boxed",
 }: {
   results?: DetailPastResult[];
   fallbackYears: number[];
@@ -928,16 +1160,21 @@ export function PastElectionResultsSection({
   maxHeight?: string;
   bare?: boolean;
   swingCycleYears?: number;
+  // "ledger" mirrors the states page's ResultCard row — serif year, plain-text margin,
+  // border-bottom divider instead of a boxed background. Used by the states-page-style
+  // race pages; "boxed" (default) keeps the existing look for House/Counties pages.
+  cardStyle?: "boxed" | "ledger";
 }) {
   const isCompact = density === "compact";
+  const isLedger = cardStyle === "ledger";
   const rows: DetailPastResult[] =
     results && results.length > 0
       ? results
       : fallbackYears.map((year) => ({ year, demPct: 0, repPct: 0, placeholder: true }));
 
   const cards = (
-    <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"}`}>
-        {rows.map((res) => {
+    <div className={`flex flex-col ${isLedger ? "" : (isCompact ? "gap-2.5" : "gap-3")}`}>
+        {rows.map((res, idx) => {
           const isPlaceholder = !!res.placeholder;
           const isSpecial = res.electionType?.toLowerCase().includes("special") ?? false;
           const demParty = res.demParty ?? "D";
@@ -963,16 +1200,26 @@ export function PastElectionResultsSection({
                   : null))
             : null;
 
+          const isLastRow = idx === rows.length - 1;
+
           return (
             <div
               key={`${res.year}-${res.demCandidate ?? ""}-${res.repCandidate ?? ""}`}
-              className="rounded-lg p-2.5"
-              style={{ opacity: isPlaceholder ? 0.45 : 1, background: "var(--app-bg)" }}
+              className={isLedger ? "" : "rounded-lg p-2.5"}
+              style={
+                isLedger
+                  ? { opacity: isPlaceholder ? 0.45 : 1, padding: "1rem 0", borderBottom: isLastRow ? "none" : "1px solid var(--app-border)" }
+                  : { opacity: isPlaceholder ? 0.45 : 1, background: "var(--app-bg)" }
+              }
             >
               {/* Row 1: year + election type | result margin */}
-              <div className="flex items-center justify-between gap-2 mb-1.5">
-                <div className="flex min-w-0 flex-wrap items-center gap-2">
-                  <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+              <div className="flex items-baseline justify-between gap-2 mb-1.5">
+                <div className="flex min-w-0 flex-wrap items-baseline gap-2">
+                  {isLedger ? (
+                    <span className="tabular-nums shrink-0" style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", fontWeight: 700, color: "var(--app-text-primary)" }}>{res.year}</span>
+                  ) : (
+                    <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+                  )}
                   {showElectionType && res.electionType && (!showSpecialBadgeForSpecialElections || !res.electionType.toLowerCase().includes("special")) && (
                     <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{res.electionType}</span>
                   )}
@@ -998,6 +1245,10 @@ export function PastElectionResultsSection({
                 </div>
                 {isPlaceholder ? (
                   <span className="text-xs italic shrink-0" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
+                ) : isLedger ? (
+                  <span className="text-sm font-bold whitespace-nowrap shrink-0" style={{ color: partyAccent(winnerParty) }}>
+                    {winnerParty}+{margin}
+                  </span>
                 ) : (
                   <span
                     className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0"

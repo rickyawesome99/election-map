@@ -124,15 +124,18 @@ def last_name_token(full_name: str) -> str:
     return toks[-1] if toks else ""
 
 
-def prefix_matches(last: str, toks: set) -> bool:
-    if not last or len(last) < MIN_PREFIX_LEN:
+def prefix_matches(last: str, cand_last: str) -> bool:
+    """Compares the reference last name against the CANDIDATE'S OWN last-name token only
+    (not their full token set) - checking against every token let a candidate's own FIRST
+    name collide with the opposing candidate's last name (CA-50 2024: MEDSL's "PETER J
+    BONO" has first-name token "PETER", a 5-char prefix of reference Democrat Scott
+    Peters' last name "PETERS" - matching against the full {PETER,J,BONO} token set
+    routed Bono's entire 128,859 Republican votes into the dem bucket). Same collision
+    class as PA-10 2018's Scott/Perry bug documented in this pipeline's other House
+    scripts - narrowed the same way here."""
+    if not last or len(last) < MIN_PREFIX_LEN or not cand_last or len(cand_last) < MIN_PREFIX_LEN:
         return False
-    for t in toks:
-        if len(t) < MIN_PREFIX_LEN:
-            continue
-        if last.startswith(t) or t.startswith(last):
-            return True
-    return False
+    return last.startswith(cand_last) or cand_last.startswith(last)
 
 
 def compact_matches(last: str, full_name: str) -> bool:
@@ -293,17 +296,18 @@ def main():
 
             n = norm_name(cand)
             toks = name_tokens(cand)
+            cand_last = last_name_token(cand)
             if dem_name and n == dem_name:
                 bucket = dem_col_bucket
             elif rep_name and n == rep_name:
                 bucket = rep_col_bucket
-            elif distinct_last and (dem_last in toks or prefix_matches(dem_last, toks) or compact_matches(dem_last, cand)):
+            elif distinct_last and (dem_last in toks or prefix_matches(dem_last, cand_last) or compact_matches(dem_last, cand)):
                 bucket = dem_col_bucket
-            elif distinct_last and (rep_last in toks or prefix_matches(rep_last, toks) or compact_matches(rep_last, cand)):
+            elif distinct_last and (rep_last in toks or prefix_matches(rep_last, cand_last) or compact_matches(rep_last, cand)):
                 bucket = rep_col_bucket
-            elif not distinct_last and dem_last and not rep_name and (dem_last in toks or prefix_matches(dem_last, toks) or compact_matches(dem_last, cand)):
+            elif not distinct_last and dem_last and not rep_name and (dem_last in toks or prefix_matches(dem_last, cand_last) or compact_matches(dem_last, cand)):
                 bucket = dem_col_bucket
-            elif not distinct_last and rep_last and not dem_name and (rep_last in toks or prefix_matches(rep_last, toks) or compact_matches(rep_last, cand)):
+            elif not distinct_last and rep_last and not dem_name and (rep_last in toks or prefix_matches(rep_last, cand_last) or compact_matches(rep_last, cand)):
                 bucket = rep_col_bucket
             else:
                 bucket = "oth"

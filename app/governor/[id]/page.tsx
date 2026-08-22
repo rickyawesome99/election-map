@@ -1,15 +1,17 @@
 import { governorData, governorNoElection, NoElectionEntry, electionYear, type PastResult } from "@/data/forecastData";
 import { GOVERNOR_MANUAL_MARGINS } from "@/data/manualOverrides";
-import { getRatingColors, marginToRating } from "@/lib/colorScale";
+import { getRatingColors, marginToRating, fmtMargin, marginColor } from "@/lib/colorScale";
 import { getNationalMargin } from "@/lib/statewideMargins";
 import { notFound } from "next/navigation";
 import { candidatePhotos } from "@/lib/candidatePhotos";
-import { AboutRaceCard, CandidatesAndPollsCard, CurrentIncumbentCard, ElectionStatusCard, ForecastCalculationCard, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
+import { AboutRaceCard, CandidatesLedgerSection, CurrentIncumbentLedgerRow, ForecastCalculationCard, LedgerSectionHead, PastElectionResultsSection, type DetailPastResult } from "@/components/RaceDetailSections";
 import StateCountyMap from "@/components/StateCountyMap";
 import SeatVoteHistoryChart from "@/components/SeatVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateStateTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
+
+const GENERAL_ELECTION = "November 3, 2026";
 
 function enrichGovResults(pastResults: PastResult[] | undefined): DetailPastResult[] {
   if (!pastResults?.length) return [];
@@ -46,37 +48,63 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
   const partyLabel = entry.party === "D" ? "Democrat" : entry.party === "R" ? "Republican" : "Independent";
   const termStarted = entry.termLength ? String(entry.nextElection - entry.termLength) : "TBD";
   const enrichedPastResults = enrichGovResults(entry.pastResults);
+
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-
-      <main className="max-w-7xl mx-auto px-4 pt-0 pb-4 sm:px-6">
-        <div className="mb-3 flex flex-col gap-1.5">
-          <div className="flex flex-wrap items-center gap-2">
-            <a href={`/states/${entry.abbr.toLowerCase()}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{entry.state}</a>
-            <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-              No Election in {electionYear}
-            </span>
-          </div>
-          <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>Gubernatorial Office · No Election This Cycle</p>
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-7">
+        <div className="mb-5 -ml-2">
+          <BackButton />
         </div>
+        <div className="flex items-center gap-2 flex-wrap">
+          <span className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+            {entry.abbr}
+          </span>
+          <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+            No Election in {electionYear}
+          </span>
+        </div>
+        <h1
+          className="mt-2"
+          style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
+        >
+          {entry.state}
+        </h1>
+        <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>Gubernatorial Office · No Election This Cycle</div>
+      </div>
 
-        <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:items-start">
-          <div className="contents lg:flex lg:flex-col lg:gap-3">
-            <div className="order-3">
-              <AboutRaceCard
-                title="About this Seat"
-                description={entry.raceDesc ?? `[Placeholder — overview of the ${entry.state} governorship, its powers, the incumbent's background, key issues, and political context to be filled in.]`}
-                items={[
-                  { label: "Party", value: partyLabel },
-                  { label: "Elected", value: termStarted },
-                  { label: "Next Election", value: String(entry.nextElection) },
-                ]}
-              />
-            </div>
+      <main className="max-w-3xl mx-auto px-4 pb-10 sm:px-6">
+        <div className="flex flex-col gap-8">
+          <section>
+            <LedgerSectionHead label="Current Incumbent" />
+            <CurrentIncumbentLedgerRow incumbentName={entry.incumbent} party={entry.party} photo={candidatePhotos[entry.incumbent] ?? null} />
+          </section>
+
+          <section>
+            <LedgerSectionHead label="Election Status" />
+            <p className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
+              This governorship is not on the ballot in {electionYear}. The next election is scheduled for {entry.nextElection}. Incumbent and biographical information to be filled in.
+            </p>
+          </section>
+
+          <section>
+            <LedgerSectionHead label="About this Seat" />
+            <AboutRaceCard
+              bare
+              title="About this Seat"
+              description={entry.raceDesc ?? `[Placeholder — overview of the ${entry.state} governorship, its powers, the incumbent's background, key issues, and political context to be filled in.]`}
+              items={[
+                { label: "Party", value: partyLabel },
+                { label: "Elected", value: termStarted },
+                { label: "Next Election", value: String(entry.nextElection) },
+              ]}
+            />
+          </section>
+
+          <section>
             <VoteHistoryTabbedSection
-              className="order-4"
+              variant="plain"
               defaultTabKey="race-results"
-              height="430px"
+              height="400px"
               tabs={[
                 {
                   key: "race-results",
@@ -87,33 +115,19 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
                       fallbackYears={[entry.nextElection - 4, entry.nextElection - 8]}
                       showElectionType
                       density="compact"
+                      cardStyle="ledger"
                       bare
                     />
                   ),
                 },
                 ...(enrichedPastResults.length > 0 ? [{
-                  key: "chart",
+                  key: "graph",
                   label: "Graph",
                   content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Governor" bare />,
                 }] : []),
               ]}
             />
-          </div>
-
-          <div className="contents lg:flex lg:flex-col lg:gap-3">
-            <div className="order-1">
-              <CurrentIncumbentCard
-                incumbentName={entry.incumbent}
-                party={entry.party}
-                photo={candidatePhotos[entry.incumbent] ?? null}
-              />
-            </div>
-            <div className="order-2">
-              <ElectionStatusCard
-                message={`This governorship is not on the ballot in ${electionYear}. The next election is scheduled for ${entry.nextElection}. Incumbent and biographical information to be filled in.`}
-              />
-            </div>
-          </div>
+          </section>
         </div>
       </main>
     </div>
@@ -151,51 +165,155 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
   const currentGovernorParty = incumbent?.party ?? race.seatParty ?? null;
   const enrichedPastResults = enrichGovResults(race.pastResults);
 
+  // Prediction-market win probability (Dem share) — averages Polymarket/Kalshi when both exist.
+  const marketDemProb = race.polyDem != null && race.kalshiDem != null
+    ? (race.polyDem + race.kalshiDem) / 2
+    : (race.polyDem ?? race.kalshiDem ?? null);
+
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
-      <main className="max-w-7xl mx-auto px-4 pt-0 pb-4 sm:px-6">
-        <div className="mb-1">
-          <BackButton />
-        </div>
-        {/* Title block */}
-        <div className="mb-3 flex flex-col gap-1.5">
-          <div className="flex flex-wrap items-center gap-2">
-            <a href={`/states/${race.id.toLowerCase()}`} className="text-2xl font-bold leading-none hover:underline" style={{ color: "var(--app-text-primary)" }}>{race.name}</a>
-            <span
-              className="text-xs font-semibold px-2.5 py-0.5 rounded-full"
-              style={{ background: bg, color: text }}
-            >
-              {forecastRating}
-            </span>
+      {/* Hero */}
+      <div
+        style={{
+          background: `linear-gradient(135deg, color-mix(in srgb, ${marginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+        }}
+      >
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-7">
+          <div className="mb-5 -ml-2">
+            <BackButton />
           </div>
-          <p className="text-sm" style={{ color: "var(--app-text-muted)" }}>{electionYear} Gubernatorial Race</p>
-        </div>
 
-        <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 lg:items-start">
-          <div className="contents lg:flex lg:flex-col lg:gap-3">
-            <div className="order-1 overflow-hidden rounded-xl" style={{ border: "1px solid var(--app-border)" }}>
-              <StateCountyMap
-                stateAbbr={id.toUpperCase()}
-                stateName={race.name}
-                height={300}
-              />
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+            <div className="min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+                  {id.toUpperCase()}
+                </span>
+                <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full shrink-0" style={{ background: bg, color: text }}>
+                  {forecastRating}
+                </span>
+              </div>
+              <h1
+                className="mt-2 truncate"
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
+              >
+                {race.name}
+              </h1>
+              <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
+                {electionYear} Gubernatorial Race · General {GENERAL_ELECTION}
+              </div>
             </div>
-            <div className="order-5 lg:order-2">
-              <AboutRaceCard
-                title="About this Race"
-                description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
-                items={[
-                  { label: "Term Length", value: "4 Years" },
-                  { label: "Incumbent", value: currentGovernorName },
-                  { label: "Party", value: currentGovernorParty ? (currentGovernorParty === "D" ? "Democrat" : currentGovernorParty === "R" ? "Republican" : "Independent") : "TBD" },
+
+            <div className="shrink-0 sm:text-right">
+              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
+                Projected Margin
+              </div>
+              <div
+                className="tabular-nums"
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 5.5vw, 3.75rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: marginColor(projectedMargin) }}
+              >
+                {fmtMargin(projectedMargin)}
+              </div>
+            </div>
+          </div>
+
+          {/* Stat row */}
+          <div className="mt-8 pt-5 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
+            <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div className="text-2xl font-extrabold tabular-nums">
+                <span style={{ color: "var(--party-dem)" }}>{demPct}%</span>
+                <span style={{ color: "var(--app-text-very-muted)", fontWeight: 500 }}> / </span>
+                <span style={{ color: "var(--party-rep)" }}>{repPct}%</span>
+              </div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                Win Probability
+              </div>
+            </div>
+
+            <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div className="text-2xl font-extrabold tabular-nums" style={{ color: marginColor(rcpMargin) }}>
+                {fmtMargin(rcpMargin)}
+              </div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                RCP Average
+              </div>
+            </div>
+
+            <div>
+              <div
+                className="text-2xl font-extrabold tabular-nums"
+                style={{ color: marketDemProb == null ? "var(--app-text-very-muted)" : marketDemProb >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }}
+              >
+                {marketDemProb == null
+                  ? "—"
+                  : `${Math.round((marketDemProb >= 0.5 ? marketDemProb : 1 - marketDemProb) * 100)}% ${marketDemProb >= 0.5 ? "D" : "R"}`}
+              </div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                Prediction Markets
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main className="max-w-3xl mx-auto px-4 pb-10 sm:px-6">
+        <div className="flex flex-col gap-8">
+
+          <section>
+            <LedgerSectionHead label="Candidates" />
+            {race.candidates ? (
+              <CandidatesLedgerSection
+                candidates={[
+                  { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
+                  { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
                 ]}
               />
-            </div>
+            ) : (
+              <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</p>
+            )}
+          </section>
+
+          <section>
+            <LedgerSectionHead label="About this Race" />
+            <AboutRaceCard
+              bare
+              title="About this Race"
+              description={race.raceDesc ?? "[Placeholder — overview of this gubernatorial race, the powers of the office, key issues, and political context to be filled in.]"}
+              items={[
+                { label: "Term Length", value: "4 Years" },
+                { label: "Incumbent", value: currentGovernorName },
+                { label: "Party", value: currentGovernorParty ? (currentGovernorParty === "D" ? "Democrat" : currentGovernorParty === "R" ? "Republican" : "Independent") : "TBD" },
+              ]}
+            />
+          </section>
+
+          <section>
+            <LedgerSectionHead label="State Map" />
+            <StateCountyMap stateAbbr={id.toUpperCase()} stateName={race.name} height={280} showLabel={false} />
+          </section>
+
+          <section>
+            <LedgerSectionHead label="Forecast Calculation" />
+            <ForecastCalculationCard
+              bare
+              tpl={stateTpl}
+              genericBallot={gb}
+              tplLabel="State TPL"
+              tplHref={`/model/state?modelState=${encodeURIComponent(id.toUpperCase())}`}
+              incumbentPts={incumbentPts}
+              fundraisingPts={null}
+              candidatePts={null}
+              pollingAvg={rcpMargin}
+              projectedMargin={projectedMargin}
+            />
+          </section>
+
+          <section>
             <VoteHistoryTabbedSection
-              className="order-6 lg:order-3"
+              variant="plain"
               defaultTabKey="race-results"
-              height="430px"
+              height="400px"
               tabs={[
                 {
                   key: "race-results",
@@ -206,53 +324,20 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
                       fallbackYears={[2022, 2018, 2014]}
                       showElectionType
                       density="compact"
+                      cardStyle="ledger"
                       bare
                     />
                   ),
                 },
                 ...(enrichedPastResults.length > 0 ? [{
-                  key: "chart",
+                  key: "graph",
                   label: "Graph",
                   content: <SeatVoteHistoryChart results={enrichedPastResults} electionType="Governor" bare />,
                 }] : []),
               ]}
             />
-          </div>
+          </section>
 
-          <div className="contents lg:grid lg:grid-cols-8 lg:gap-3">
-            <div className="order-3 lg:col-span-8">
-              <CandidatesAndPollsCard
-                candidates={race.candidates
-                  ? [
-                      { name: race.candidates.dem.name, party: race.candidates.dem.party, incumbent: race.candidates.dem.incumbent, photo: demPhoto, pct: demVoteShare },
-                      { name: race.candidates.rep.name, party: race.candidates.rep.party, incumbent: race.candidates.rep.incumbent, photo: repPhoto, pct: repVoteShare },
-                    ]
-                  : [
-                      { name: "Democrat", party: "D", pct: demVoteShare, placeholder: true },
-                      { name: "Republican", party: "R", pct: repVoteShare, placeholder: true },
-                    ]}
-                demPct={demPct} repPct={repPct}
-                rcpDem={race.rcpDem} rcpRep={race.rcpRep}
-                polyDem={race.polyDem} polyRep={race.polyRep}
-                kalshiDem={race.kalshiDem} kalshiRep={race.kalshiRep}
-              />
-            </div>
-
-            <div className="order-4 lg:col-span-8">
-              <ForecastCalculationCard
-                tpl={stateTpl}
-                genericBallot={gb}
-                tplLabel="State TPL"
-                tplHref={`/model/state?modelState=${encodeURIComponent(id.toUpperCase())}`}
-                incumbentPts={incumbentPts}
-                fundraisingPts={null}
-                candidatePts={null}
-                pollingAvg={rcpMargin}
-                projectedMargin={projectedMargin}
-              />
-            </div>
-
-          </div>
         </div>
       </main>
     </div>

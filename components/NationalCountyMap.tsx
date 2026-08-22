@@ -57,6 +57,10 @@ type NormalizedResult = {
    * Dem, not Rep, the same way RaceDetailSections.tsx's demParty/repParty override does on
    * /senate/ca. */
   repIsDem?: boolean;
+  /** Mirror of repIsDem for the reverse same-party shape (the "dem slot" candidate is
+   * actually a Republican, e.g. WA-04's Newhouse-vs-Didier — see applyHouseSamePartyResult).
+   * demVotes/demPct stay that candidate's own real count; UI renders that row as Rep. */
+  demIsRep?: boolean;
 };
 
 /** A geography's data-derived identity + result, independent of geoLevel. */
@@ -114,12 +118,41 @@ function applySamePartyResult(result: NormalizedResult, raceName: string, year: 
   return { ...result, repIsDem: true, margin: -Math.abs(result.margin) };
 }
 
+/** House equivalent of applySamePartyResult — but House has far more jungle-primary
+ * districts per cycle than Senate/Governor/President combined (e.g. 6 in CA alone for
+ * 2022), too many to hardcode into a SAME_PARTY_STATEWIDE_RACES-style list. Instead reads
+ * the PER-DISTRICT repParty/demParty field already recorded directly on the PastResult
+ * itself (e.g. CA-15 2022's Mullin-vs-Canepa row is tagged repParty: "D") — the same field
+ * RaceDetailSections.tsx already uses to color/label individual district pages correctly.
+ * Handles both shapes: repParty "D" (the common CA/WA jungle-primary case, two Democrats)
+ * and demParty "R" (the reverse — e.g. WA-04's Newhouse-vs-Didier, two Republicans). */
+function applyHouseSamePartyResult(result: NormalizedResult, pr: PastResult): NormalizedResult {
+  if (pr.repParty === "D") return { ...result, repIsDem: true, margin: -Math.abs(result.margin) };
+  if (pr.demParty === "R") return { ...result, demIsRep: true, margin: Math.abs(result.margin) };
+  return result;
+}
+
+/** For summing MANY House districts into ONE state-level number (buildStateResults/
+ * collectStateAggregateResults) — unlike applyHouseSamePartyResult (which preserves each
+ * candidate's own vote count for per-district display), the state total has no per-district
+ * breakdown to preserve, so the fold has to happen on the raw votes themselves, per match,
+ * BEFORE combineVotesResults sums them — otherwise a same-party district's votes can't be
+ * un-mixed from an ordinary district's real Republican votes after summing. Preserves the
+ * null-vs-known distinction (an uncontested race's missing demVotes/repVotes stay missing,
+ * not coerced to 0) so combineVotesResults' votesKnown skip logic is unaffected. */
+function trueHouseVotes(m: PastResult): Pick<PastResult, "demVotes" | "repVotes"> {
+  if (m.demVotes == null || m.repVotes == null) return { demVotes: m.demVotes, repVotes: m.repVotes };
+  if (m.repParty === "D") return { demVotes: m.demVotes + m.repVotes, repVotes: 0 };
+  if (m.demParty === "R") return { demVotes: 0, repVotes: m.demVotes + m.repVotes };
+  return { demVotes: m.demVotes, repVotes: m.repVotes };
+}
+
 /** CountyYearResult plus the same repIsDem flag NormalizedResult carries — countySenateData
  * itself never sets it (only applySamePartyCountyResult below does), but getCountyResult/
  * getAllCountyResults need to declare it in their return type so callers (e.g. the National
  * Results aggregate) can read it off a county result the same way they do a district/state
  * NormalizedResult. */
-type CountyResult = CountyYearResult & { repIsDem?: boolean };
+type CountyResult = CountyYearResult & { repIsDem?: boolean; demIsRep?: boolean };
 
 /** applySamePartyResult's equivalent for a raw CountyYearResult (different field shape —
  * has othVotes, no votesKnown) — needed because countySenateData has no built-in
@@ -320,7 +353,8 @@ function buildDistrictResults(raceType: RaceType, year: number, specialOnly = fa
       const stateInfo = FIPS_TO_STATE[stateFips];
       if (!stateInfo) continue;
       const r = results.find((pr) => pr.year === year);
-      const result = r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes) : null;
+      let result = r ? normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes) : null;
+      if (result && r) result = applyHouseSamePartyResult(result, r);
       map.set(id, { label: `${stateInfo.abbr}-${id.slice(-2)}`, stateAbbr: stateInfo.abbr, stateName: stateInfo.name, result });
     }
   } else {
@@ -348,7 +382,7 @@ function collectDistrictAggregateResults(raceType: RaceType, year: number): Norm
   if (raceType === "house") {
     for (const [, results] of mergedHouseResultsById()) {
       const r = results.find((pr) => pr.year === year);
-      if (r) out.push(normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes));
+      if (r) out.push(applyHouseSamePartyResult(normalizeVotesResult(r.demPct, r.repPct, r.demVotes, r.repVotes, r.totalVotes), r));
     }
     return out;
   }
@@ -383,7 +417,10 @@ function buildStateResults(raceType: RaceType, year: number, specialOnly = false
         const r = results.find((pr) => pr.year === year);
         if (r) matches.push(r);
       }
-      result = combineVotesResults(matches);
+      // Fold each district's own repParty/demParty BEFORE summing (see trueHouseVotes) —
+      // once combined into one state total there's no way to un-mix a jungle-primary
+      // district's votes from an ordinary district's real Republican votes after the fact.
+      result = combineVotesResults(matches.map((m) => ({ ...m, ...trueHouseVotes(m) })));
     } else {
       result = computeStatewideResult(raceType, year, abbr, specialOnly);
     }
@@ -413,7 +450,7 @@ function collectStateAggregateResults(raceType: RaceType, year: number): Normali
         const r = results.find((pr) => pr.year === year);
         if (r) matches.push(r);
       }
-      const result = combineVotesResults(matches);
+      const result = combineVotesResults(matches.map((m) => ({ ...m, ...trueHouseVotes(m) })));
       if (result) out.push(result);
     } else if (raceType === "senate") {
       const seat1Race = senateData.find((r) => r.id === abbr);
@@ -545,18 +582,20 @@ function ResultDetails({
     return <div className="text-[9px]" style={{ color: t.textVeryMuted }}>{msg}</div>;
   }
   const votesKnown = result.votesKnown !== false;
-  // A same-party race (see SAME_PARTY_STATEWIDE_RACES) means the "rep slot" candidate is
-  // actually a Democrat — that row keeps its own real vote count (never merged into the
-  // first row), but reads as a second Dem row instead of "Rep", matching how /senate/ca
-  // colors/labels both Feinstein and de León blue.
+  // A same-party race (see SAME_PARTY_STATEWIDE_RACES / applyHouseSamePartyResult) means
+  // one slot's candidate is actually the OTHER party — that row keeps its own real vote
+  // count (never merged into the other row), but reads/colors as its true party instead,
+  // matching how /senate/ca colors/labels both Feinstein and de León blue.
+  const demColor = result.demIsRep ? t.repText : t.demText;
+  const demLabel = result.demIsRep ? "Rep" : "Dem";
   const repColor = result.repIsDem ? t.demText : t.repText;
   const repLabel = result.repIsDem ? "Dem" : "Rep";
   return (
     <>
       <div>
         <div className="flex justify-between items-baseline">
-          <span style={{ color: t.demText, fontSize: 10 }}>Dem</span>
-          <span className="font-semibold" style={{ color: t.demText, fontSize: 10 }}>
+          <span style={{ color: demColor, fontSize: 10 }}>{demLabel}</span>
+          <span className="font-semibold" style={{ color: demColor, fontSize: 10 }}>
             {showVotesInRows && votesKnown ? `${result.demVotes.toLocaleString()} · ` : ""}{result.demPct.toFixed(1)}%
           </span>
         </div>
@@ -661,12 +700,13 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   // collectStateAggregateResults's own docs. demPct/repPct are each a share of the summed
   // totalVotes (D+R+Other all sum to 100), not a two-party share, so Other/third-party
   // votes nationally reduce both rather than being silently folded into D or R. A
-  // same-party result (r.repIsDem — see SAME_PARTY_STATEWIDE_RACES) folds its repVotes
-  // into the dem total here, unlike the per-unit tooltip (ResultDetails), which keeps that
-  // candidate's own count on a separate "Dem" row — this is the ONE place the two get
-  // combined, since the national total should count every Democratic vote as Democratic
-  // regardless of which data slot it's recorded in; an ordinary Dem-vs-Rep race is
-  // untouched (repIsDem is unset, so dem stays dem and rep stays rep as always).
+  // same-party result (r.repIsDem/r.demIsRep — see SAME_PARTY_STATEWIDE_RACES for
+  // Senate/Governor/President, applyHouseSamePartyResult for House) folds its "wrong slot"
+  // votes into the true-party total here, unlike the per-unit tooltip (ResultDetails),
+  // which keeps that candidate's own count on a separate row — this is the ONE place the
+  // two get combined, since the national total should count every vote by its candidate's
+  // real party regardless of which data slot it's recorded in; an ordinary Dem-vs-Rep race
+  // is untouched (neither flag is set, so dem stays dem and rep stays rep as always).
   const stats = useMemo(() => {
     const results =
       geoLevel === "county" ? getAllCountyResults(raceType, year)
@@ -674,8 +714,8 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
       : collectStateAggregateResults(raceType, year);
     let demVotes = 0, repVotes = 0, totalVotes = 0, demUnits = 0, repUnits = 0;
     for (const r of results) {
-      demVotes += r.repIsDem ? r.demVotes + r.repVotes : r.demVotes;
-      repVotes += r.repIsDem ? 0 : r.repVotes;
+      demVotes += r.repIsDem ? r.demVotes + r.repVotes : r.demIsRep ? 0 : r.demVotes;
+      repVotes += r.repIsDem ? 0 : r.demIsRep ? r.demVotes + r.repVotes : r.repVotes;
       totalVotes += r.totalVotes;
       if (r.margin <= 0) demUnits++;
       else repUnits++;

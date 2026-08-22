@@ -72,6 +72,15 @@ TARGET_STATES = [
 
 NON_CANDIDATE_LABELS = {
     "", "SCATTER", "SCATTERING",
+    # NY-specific ballot-accounting pseudo-candidate rows (found via a state/district
+    # County-vs-District national-aggregate audit: NY's county total ran ~217K votes
+    # ABOVE house_past_results.csv's district-level total, all landing in "oth" - these 6
+    # labels sum to 212,446 raw votes, accounting for nearly the entire gap). Same root
+    # cause/pattern as 2018's dedicated NY OpenElections script's own ballot-accounting
+    # label list (that file's "Public Counter" etc.) and 2018's MEDSL fill script's
+    # TOTAL/VOID/BLANK labels - this file just uses NY's own different label wording.
+    "ABSENTEE/MILITARY", "AFFIDAVIT", "FEDERAL", "SPECIAL VOTES",
+    "MANUALLY COUNTED EMERGENCY", "SPECIAL PRESIDENTIAL",
 }
 
 # HI-01 2016's Shirl Ostrov appears under TWO different full-name spellings in this
