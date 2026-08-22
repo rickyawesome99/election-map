@@ -46,40 +46,26 @@ export default function StateMapToggle({
   ];
 
   return (
-    <section
-      className="rounded-xl overflow-hidden"
-      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-    >
+    <section>
       {/* Toggle header */}
       <div
-        className="flex items-center gap-3 px-3 py-2.5 min-w-0"
+        className="flex items-end gap-5 mb-4 min-w-0"
         style={{ borderBottom: "1px solid var(--app-border)" }}
       >
-        <span
-          className="text-[10px] uppercase tracking-wider font-semibold"
-          style={{ color: "var(--app-text-muted)" }}
-        >
-          Map
-        </span>
-        <div
-          className="flex shrink-0 rounded-lg overflow-hidden"
-          style={{ border: "1px solid var(--app-border)" }}
-        >
-          {tabs.map((t) => (
-            <button
-              key={t.id}
-              onClick={() => setView(t.id)}
-              className="px-2.5 py-1 text-xs font-medium transition-colors"
-              style={
-                view === t.id
-                  ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }
-                  : { background: "transparent", color: "var(--app-text-muted)" }
-              }
-            >
-              {t.label}
-            </button>
-          ))}
-        </div>
+        {tabs.map((t) => (
+          <button
+            key={t.id}
+            onClick={() => setView(t.id)}
+            className="pb-2.5 text-sm font-semibold transition-colors"
+            style={
+              view === t.id
+                ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)", marginBottom: "-1px" }
+                : { color: "var(--app-text-muted)", borderBottom: "2px solid transparent", marginBottom: "-1px" }
+            }
+          >
+            {t.label}
+          </button>
+        ))}
         {view === "past" && availablePastYears.length > 0 && (
           <div className="relative ml-auto min-w-0">
             <div className="flex min-w-0 items-center gap-1 overflow-x-auto pr-5 scrollbar-none sm:pr-0">

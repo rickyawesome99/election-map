@@ -27,6 +27,8 @@
 
   --background: var(--app-bg);
   --foreground: var(--app-text-primary);
+
+  --font-serif: Georgia, "Times New Roman", serif;
 }
 
 html.dark {

@@ -7,5 +7,5 @@ export default function PastElectionsCountyMap({
   stateAbbr: string;
   stateName: string;
 }) {
-  return <StateCountyMap stateAbbr={stateAbbr} stateName={stateName} showTpl />;
+  return <StateCountyMap stateAbbr={stateAbbr} stateName={stateName} showTpl showLabel={false} />;
 }

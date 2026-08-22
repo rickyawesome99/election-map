@@ -74,12 +74,14 @@ export default function StateCountyMap({
   height = 360,
   highlightFips,
   showTpl = false,
+  showLabel = true,
 }: {
   stateAbbr: string;
   stateName: string;
   height?: number;
   highlightFips?: string;
   showTpl?: boolean;
+  showLabel?: boolean;
 }) {
   const [hovered, setHovered] = useState<County | null>(null);
   const [selected, setSelected] = useState<County | null>(null);
@@ -233,17 +235,19 @@ export default function StateCountyMap({
         </ComposableMap>
 
         {/* State label badge */}
-        <div
-          className="absolute top-2 left-2 text-[10px] font-semibold px-2 py-1 rounded-md"
-          style={{
-            background: "var(--app-panel)",
-            border: "1px solid var(--app-border)",
-            color: "var(--app-text-muted)",
-            opacity: 0.92,
-          }}
-        >
-          {stateName} · Counties
-        </div>
+        {showLabel && (
+          <div
+            className="absolute top-2 left-2 text-[10px] font-semibold px-2 py-1 rounded-md"
+            style={{
+              background: "var(--app-panel)",
+              border: "1px solid var(--app-border)",
+              color: "var(--app-text-muted)",
+              opacity: 0.92,
+            }}
+          >
+            {stateName} · Counties
+          </div>
+        )}
 
         {/* Reset zoom button */}
         {viewChanged && (

@@ -239,14 +239,6 @@ export default function StateDistrictMap({
           </ZoomableGroup>
         </ComposableMap>
 
-        {/* District count badge */}
-        <div
-          className="absolute top-2 left-2 text-[10px] font-semibold px-2 py-1 rounded-md"
-          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)", opacity: 0.92 }}
-        >
-          {houseRaces.length} district{houseRaces.length !== 1 ? "s" : ""}
-        </div>
-
         {/* Reset zoom button */}
         {viewChanged && (
           <button

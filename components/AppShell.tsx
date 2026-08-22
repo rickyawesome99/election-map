@@ -42,14 +42,9 @@ export default function AppShell({
           back={showBack ? <BackButton /> : undefined}
         />
       </div>
-      <div
-        className="px-2 pb-0 pt-2 sm:px-4 md:flex md:justify-center md:px-6"
-        style={{ background: "var(--app-bg)" }}
-      >
-        <Suspense fallback={<div className="h-[42px] rounded-xl border" style={{ background: "var(--app-panel)", borderColor: "var(--app-border)" }} />}>
-          <SubNavBar initialForecastTab={initialForecastTab} />
-        </Suspense>
-      </div>
+      <Suspense fallback={<div className="h-[45px]" style={{ background: "var(--app-bg)", borderBottom: "1px solid var(--app-border)" }} />}>
+        <SubNavBar initialForecastTab={initialForecastTab} />
+      </Suspense>
     </>
   );
 }

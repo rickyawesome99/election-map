@@ -76,30 +76,24 @@ export default function SubNavBar({
     setSavedForecastTab(getSavedForecastTab() ?? "senate");
   }, [pathname]);
 
-  const commonClass = "relative z-10 shrink-0 px-4 py-2 text-sm font-semibold transition-colors duration-150";
+  const commonClass = "relative z-10 shrink-0 px-3 py-3 text-sm font-semibold transition-colors duration-150 sm:px-3.5";
 
   return (
     <div
-      className="flex items-stretch overflow-hidden rounded-xl border px-1 py-1.5 backdrop-blur-xl md:w-fit md:max-w-full"
-      style={{
-        background: "color-mix(in srgb, var(--app-panel) 76%, transparent)",
-        borderColor: "var(--app-border)",
-        backdropFilter: "blur(20px) saturate(140%)",
-        WebkitBackdropFilter: "blur(20px) saturate(140%)",
-      }}
+      className="px-3 sm:px-6"
+      style={{ borderBottom: "1px solid var(--app-border)", background: "var(--app-bg)" }}
     >
       <nav
         ref={navRef}
-        className="scrollbar-none relative flex min-w-0 flex-1 gap-1 overflow-x-auto overflow-y-hidden"
+        className="scrollbar-none relative flex min-w-0 gap-1 overflow-x-auto overflow-y-hidden"
       >
         {indicator && (
           <div
-            className="absolute inset-y-0 rounded-full pointer-events-none"
+            className="absolute bottom-0 h-[2px] rounded-full pointer-events-none"
             style={{
               left: indicator.left,
               width: indicator.width,
-              background: "var(--app-tab-bg)",
-              boxShadow: "inset 0 0 0 1px var(--app-border)",
+              background: "var(--app-text-primary)",
               transition: "left 200ms cubic-bezier(0.4, 0, 0.2, 1), width 200ms cubic-bezier(0.4, 0, 0.2, 1)",
             }}
           />

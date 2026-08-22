@@ -12,17 +12,15 @@ function EntryCard({ entry }: { entry: CompositionEntry }) {
   const winner = hasVoteData ? (entry.demPct! > entry.repPct! ? "D" : "R") : null;
   const margin = hasVoteData ? Math.abs(entry.demPct! - entry.repPct!).toFixed(1) : null;
   return (
-    <div className="rounded-lg p-2.5" style={{ background: "var(--app-bg)" }}>
-      <div className="mb-1.5 flex items-center justify-between gap-2">
-        <span className="shrink-0 text-sm font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+    <div className="py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
+      <div className="mb-2 flex items-baseline justify-between gap-2">
+        <span className="shrink-0 tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", fontWeight: 700, color: "var(--app-text-primary)" }}>
           {entry.year}
         </span>
         {winner && margin ? (
           <span
-            className="shrink-0 whitespace-nowrap rounded-full px-2 py-0.5 text-[11px] font-bold"
-            style={winner === "D"
-              ? { background: "var(--party-dem-subtle)", color: "var(--party-dem)" }
-              : { background: "var(--party-rep-subtle)", color: "var(--party-rep)" }}
+            className="shrink-0 whitespace-nowrap text-sm font-bold tabular-nums"
+            style={{ color: winner === "D" ? "var(--party-dem)" : "var(--party-rep)" }}
           >
             {winner}+{margin}
           </span>
@@ -30,56 +28,33 @@ function EntryCard({ entry }: { entry: CompositionEntry }) {
           <span className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>
         )}
       </div>
-      {hasVoteData ? (
-        <>
-          <div className="mb-1.5 flex min-w-0 items-end gap-2">
-            {hasSeats ? (
-              <div className="flex min-w-0 flex-1 items-center gap-1.5 whitespace-nowrap text-xl font-bold leading-none tabular-nums">
-                <span style={{ color: "var(--party-dem)" }}>{entry.demSeats}D</span>
-                <span style={{ color: "var(--app-text-very-muted)" }}>-</span>
-                <span style={{ color: "var(--party-rep)" }}>{entry.repSeats}R</span>
-              </div>
-            ) : (
-              <span className="min-w-0 flex-1 text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Seats TBD</span>
-            )}
 
-            <div className="shrink-0">
-              <div className="mb-1 flex items-baseline gap-1">
-                <span className="w-7 text-sm font-bold" style={{ color: "var(--party-dem)" }}>D:</span>
-                <span className="w-12 text-sm font-bold tabular-nums" style={{ color: "var(--party-dem)" }}>
-                  {entry.demPct!.toFixed(1)}%
-                </span>
-                <span className="w-16 text-right text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-                  {entry.demVotes != null ? entry.demVotes.toLocaleString() : "—"}
-                </span>
-              </div>
-              <div className="flex items-baseline gap-1">
-                <span className="w-7 text-sm font-bold" style={{ color: "var(--party-rep)" }}>R:</span>
-                <span className="w-12 text-sm font-bold tabular-nums" style={{ color: "var(--party-rep)" }}>
-                  {entry.repPct!.toFixed(1)}%
-                </span>
-                <span className="w-16 text-right text-xs tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
-                  {entry.repVotes != null ? entry.repVotes.toLocaleString() : "—"}
-                </span>
-              </div>
-            </div>
-          </div>
-
-        </>
-      ) : (
-        <div className="flex items-center justify-between gap-3">
-          {hasSeats && (
-            <div className="flex items-center gap-1.5 whitespace-nowrap text-xl font-bold leading-none tabular-nums">
-              <span style={{ color: "var(--party-dem)" }}>{entry.demSeats}D</span>
-              <span style={{ color: "var(--app-text-very-muted)" }}>-</span>
-              <span style={{ color: "var(--party-rep)" }}>{entry.repSeats}R</span>
-            </div>
-          )}
-          <div className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>
-            Vote data unavailable
-          </div>
+      {hasSeats && (
+        <div className="mb-1.5 flex items-center gap-1.5 whitespace-nowrap text-lg font-bold leading-none tabular-nums">
+          <span style={{ color: "var(--party-dem)" }}>{entry.demSeats}D</span>
+          <span style={{ color: "var(--app-text-very-muted)" }}>–</span>
+          <span style={{ color: "var(--party-rep)" }}>{entry.repSeats}R</span>
         </div>
       )}
+
+      {hasVoteData ? (
+        <div className="flex flex-col gap-0.5">
+          <div className="flex items-baseline gap-1.5 text-xs">
+            <span className="font-bold" style={{ color: "var(--party-dem)" }}>D {entry.demPct!.toFixed(1)}%</span>
+            <span className="tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+              {entry.demVotes != null ? entry.demVotes.toLocaleString() : "—"}
+            </span>
+          </div>
+          <div className="flex items-baseline gap-1.5 text-xs">
+            <span className="font-bold" style={{ color: "var(--party-rep)" }}>R {entry.repPct!.toFixed(1)}%</span>
+            <span className="tabular-nums" style={{ color: "var(--app-text-very-muted)" }}>
+              {entry.repVotes != null ? entry.repVotes.toLocaleString() : "—"}
+            </span>
+          </div>
+        </div>
+      ) : !hasSeats ? (
+        <div className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Vote data unavailable</div>
+      ) : null}
     </div>
   );
 }
@@ -111,31 +86,29 @@ export default function StateLegCompositionBox({
 
   return (
     <section
-      className="flex min-w-0 flex-col overflow-hidden rounded-xl p-3"
+      className="flex min-w-0 flex-col"
       style={{
-        background: "var(--app-panel)",
-        border: "1px solid var(--app-border)",
         flex: "0 0 25rem",
         height: "25rem",
       }}
     >
-      <div className="mb-3 flex shrink-0 flex-col items-start gap-2">
+      <div className="mb-3 flex shrink-0 flex-col items-start gap-3">
         <h2
-          className="text-[10px] uppercase tracking-wider font-semibold"
+          className="text-[11px] uppercase tracking-wider font-bold"
           style={{ color: "var(--app-text-muted)" }}
         >
           Legislative Composition · Since 2016
         </h2>
         {tabs.length > 1 && (
-          <div className="flex overflow-hidden rounded-md" style={{ border: "1px solid var(--app-border)" }}>
+          <div className="flex items-end gap-4 w-full" style={{ borderBottom: "1px solid var(--app-border)" }}>
             {tabs.map((item) => (
               <button
                 key={item.key}
                 onClick={() => setTab(item.key)}
-                className="whitespace-nowrap px-2 py-1 text-[10px] font-semibold transition-colors"
+                className="whitespace-nowrap pb-2 text-xs font-semibold transition-colors"
                 style={tab === item.key
-                  ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }
-                  : { background: "var(--app-panel)", color: "var(--app-text-muted)" }}
+                  ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)", marginBottom: "-1px" }
+                  : { color: "var(--app-text-muted)", borderBottom: "2px solid transparent", marginBottom: "-1px" }}
               >
                 {item.label}
               </button>
@@ -145,7 +118,7 @@ export default function StateLegCompositionBox({
       </div>
 
       <div className="min-h-0 min-w-0 flex-1 overflow-x-hidden overflow-y-auto pr-1">
-        <div className="flex flex-col gap-2.5">
+        <div className="flex flex-col">
           {entries.map((entry) => (
             <EntryCard key={`${entry.year}-${"type" in entry ? entry.type : "US House"}`} entry={entry} />
           ))}
