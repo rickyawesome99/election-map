@@ -35,14 +35,7 @@ export default function CountyCompareCard({
   const natDiff = countyTpl - nationalTpl;
 
   return (
-    <section className="rounded-xl mb-3 px-4 py-4 sm:px-6" style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
-      <h2 className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: "var(--app-text-muted)" }}>
-        How {countyLabel} Compares
-      </h2>
-      <p className="text-[10px] mb-4" style={{ color: "var(--app-text-very-muted)" }}>
-        True Partisan Lean vs. {stateName} and a national baseline
-      </p>
-
+    <div>
       <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 mb-2">
         <span className="text-[13px] font-semibold" style={{ color: "var(--app-text-primary)" }}>County TPL</span>
         <span className="text-xs" style={{ color: "var(--app-text-muted)" }}>
@@ -89,6 +82,6 @@ export default function CountyCompareCard({
           National (median state)
         </span>
       </div>
-    </section>
+    </div>
   );
 }

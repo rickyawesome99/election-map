@@ -109,3 +109,35 @@ body::before {
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+/* County page "ledger spread" — see components/CountySpreadColumns.tsx */
+.county-spread {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.county-spread > .rule {
+  display: none;
+}
+@media (min-width: 768px) {
+  .county-spread {
+    grid-template-columns: 1fr 1px 1fr;
+    gap: 0;
+    align-items: start;
+  }
+  .county-spread > .rule {
+    display: block;
+    align-self: stretch;
+    background: var(--app-border);
+  }
+  .county-spread > .col-left {
+    padding-right: 2.5rem;
+  }
+  .county-spread > .col-right {
+    padding-left: 2.5rem;
+  }
+}
+.county-spread-fade {
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 32px), transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 32px), transparent 100%);
+}

@@ -34,6 +34,7 @@ export type CandidatePage = {
   slug: string;
   party: "D" | "R" | "I";
   tab: "house" | "senate" | "governor";
+  state: string;
   currentPosition?: string; // e.g. "Governor · Nebraska" or "U.S. Senator · Alaska"
   currentRace?: {
     id: string;
@@ -44,6 +45,7 @@ export type CandidatePage = {
     probability: number;
     rating: string;
     margin: number;
+    opponent?: { name: string; party: "D" | "R" | "I" };
   };
   history: CandidateHistoryEntry[];
 };
@@ -70,6 +72,8 @@ type RawEntry = {
   probability?: number;
   rating?: string;
   margin?: number;
+  opponentName?: string;
+  opponentParty?: "D" | "R" | "I";
 };
 
 const SKIP_NAMES = new Set([
@@ -131,6 +135,8 @@ function collectFromRaces(races: RaceForecast[], racePathPrefix: string): RawEnt
           probability: race.probability,
           rating: race.rating,
           margin: race.margin,
+          opponentName: isValidName(rep.name) ? rep.name : undefined,
+          opponentParty: rep.party,
         });
       }
       if (isValidName(rep.name)) {
@@ -152,6 +158,8 @@ function collectFromRaces(races: RaceForecast[], racePathPrefix: string): RawEnt
           probability: race.probability,
           rating: race.rating,
           margin: race.margin,
+          opponentName: isValidName(dem.name) ? dem.name : undefined,
+          opponentParty: dem.party,
         });
       }
     }
@@ -348,6 +356,9 @@ function buildIndex(): Map<string, CandidatePage> {
           probability: currentEntry.probability ?? 0.5,
           rating: currentEntry.rating ?? "TBD",
           margin: currentEntry.margin ?? 0,
+          opponent: currentEntry.opponentName
+            ? { name: currentEntry.opponentName, party: currentEntry.opponentParty ?? "I" }
+            : undefined,
         }
       : undefined;
 
@@ -373,9 +384,11 @@ function buildIndex(): Map<string, CandidatePage> {
       unique.find(e => e.currentPosition)?.currentPosition ??
       noElectionPositions.get(name);
 
+    const state = mostRecent?.state ?? "";
+
     // If slug collides (different name same slug), merge into same page — first writer wins for metadata
     if (!index.has(slug)) {
-      index.set(slug, { name, slug, party, tab, currentPosition, currentRace, history });
+      index.set(slug, { name, slug, party, tab, state, currentPosition, currentRace, history });
     } else {
       // Merge history into existing entry
       const existing = index.get(slug)!;

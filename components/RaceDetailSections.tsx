@@ -168,7 +168,7 @@ function WinProbabilitySummary({ demPct, repPct }: { demPct: number; repPct: num
 
 // Section header for the states-page-style layout — a bold uppercase label under a thick rule,
 // matching the "Federal Offices" / "U.S. House" section heads on the state page.
-export function LedgerSectionHead({ label, meta }: { label: string; meta?: ReactNode }) {
+export function LedgerSectionHead({ label, meta, right }: { label: string; meta?: ReactNode; right?: ReactNode }) {
   return (
     <div
       className="flex flex-wrap items-baseline gap-1.5 sm:gap-3 pb-3 mb-3"
@@ -178,6 +178,7 @@ export function LedgerSectionHead({ label, meta }: { label: string; meta?: React
         {label}
       </h2>
       {meta && <span className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>{meta}</span>}
+      {right && <span className="ml-auto">{right}</span>}
     </div>
   );
 }
@@ -449,12 +450,57 @@ export function CurrentIncumbentLedgerRow({
   incumbentName,
   party,
   photo,
+  compact = false,
 }: {
   incumbentName: string;
   party: "D" | "R" | "I";
   photo?: string | null;
+  // Smaller, right-aligned treatment for the race-detail hero (mirrors the
+  // "Projected Margin" stat block on active-race pages).
+  compact?: boolean;
 }) {
   const accentColor = partyAccent(party);
+
+  if (compact) {
+    // Large portrait card that anchors the race-detail hero as its right-side
+    // focal point — the photo, not the name, is the dominant element here.
+    return (
+      <div className="flex flex-col items-end shrink-0">
+        <div className="text-[11px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--app-text-muted)", lineHeight: 1 }}>
+          Current Incumbent
+        </div>
+        <div
+          className="shrink-0 overflow-hidden flex items-center justify-center"
+          style={{ width: "7rem", height: "8.5rem", borderRadius: "18px", border: `3px solid ${accentColor}`, background: "var(--app-tab-bg)" }}
+        >
+          {photo ? (
+            <Image src={photo} alt={incumbentName} width={224} height={272} className="w-full h-full object-cover object-top" />
+          ) : party === "R" ? (
+            <Image src="/candidates/placeholder-republican.png" alt="Republican" width={224} height={272} className="w-full h-full object-contain p-2" />
+          ) : party === "D" ? (
+            <Image src="/candidates/placeholder-democrat.png" alt="Democrat" width={224} height={272} className="w-full h-full object-contain p-2" />
+          ) : (
+            <svg viewBox="0 0 64 80" className="w-full h-full" fill="none">
+              <rect width="64" height="80" fill="var(--app-tab-bg)" />
+              <circle cx="32" cy="28" r="14" fill="var(--app-border)" />
+              <ellipse cx="32" cy="76" rx="25" ry="18" fill="var(--app-border)" />
+            </svg>
+          )}
+        </div>
+        <div className="mt-0.5 text-right">
+          <CandidateLink
+            name={incumbentName}
+            className="hover:underline inline-block"
+            style={{ fontFamily: "var(--font-serif)", fontSize: "1.05rem", fontWeight: 700, color: "var(--app-text-primary)", lineHeight: 1.1 }}
+          >
+            {incumbentName}
+          </CandidateLink>
+          <div className="text-sm font-medium" style={{ color: accentColor, lineHeight: 1.2 }}>{partyLabel(party)} &middot; Incumbent</div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="flex items-center gap-4">
       <div
@@ -479,7 +525,7 @@ export function CurrentIncumbentLedgerRow({
         <CandidateLink
           name={incumbentName}
           className="hover:underline inline-block"
-          style={{ fontFamily: "var(--font-serif)", fontSize: "1.4rem", fontWeight: 700, color: "var(--app-text-primary)" }}
+          style={{ fontFamily: "var(--font-serif)", fontSize: "1.4rem", fontWeight: 700, color: "var(--app-text-primary)", lineHeight: 1.15 }}
         >
           {incumbentName}
         </CandidateLink>
@@ -1404,6 +1450,7 @@ export function HouseOnlyRecentStatewideResultsSection({
   density = "default",
   bare = false,
   maxHeight,
+  cardStyle = "boxed",
 }: {
   results?: {
     year: number;
@@ -1422,32 +1469,50 @@ export function HouseOnlyRecentStatewideResultsSection({
   density?: DetailDensity;
   bare?: boolean;
   maxHeight?: string;
+  // "ledger" mirrors PastElectionResultsSection's ledger row treatment — serif year, plain-text
+  // margin, border-bottom divider instead of a boxed background. Used by the states-page-style
+  // House district page; "boxed" (default) keeps the original card look.
+  cardStyle?: "boxed" | "ledger";
 }) {
   const isCompact = density === "compact";
+  const isLedger = cardStyle === "ledger";
 
   const cards = (
-    <div className={`flex flex-col ${isCompact ? "gap-2.5" : "gap-3"}`}>
-        {results.map((res) => {
+    <div className={`flex flex-col ${isLedger ? "" : (isCompact ? "gap-2.5" : "gap-3")}`}>
+        {results.map((res, idx) => {
           const isPlaceholder = !!res.placeholder;
           const winner = res.demPct > res.repPct ? "D" : "R";
           const margin = Math.abs(res.demPct - res.repPct).toFixed(1);
           const total = res.demPct + res.repPct;
           const dWidth = total > 0 ? (res.demPct / total) * 100 : 50;
           const hasDiffs = !isPlaceholder && (res.nationalDiff != null || res.stateDiff != null || res.swing != null);
+          const isLastRow = idx === results.length - 1;
           return (
             <div
               key={`${res.year}-${res.race}`}
-              className="rounded-lg p-2.5"
-              style={{ opacity: isPlaceholder ? 0.45 : 1, background: "var(--app-bg)" }}
+              className={isLedger ? "" : "rounded-lg p-2.5"}
+              style={
+                isLedger
+                  ? { opacity: isPlaceholder ? 0.45 : 1, padding: "1rem 0", borderBottom: isLastRow ? "none" : "1px solid var(--app-border)" }
+                  : { opacity: isPlaceholder ? 0.45 : 1, background: "var(--app-bg)" }
+              }
             >
               {/* Row 1: year + race | result margin */}
-              <div className="flex items-center justify-between gap-2 mb-1.5">
-                <div className="flex min-w-0 items-center gap-2">
-                  <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+              <div className="flex items-baseline justify-between gap-2 mb-1.5">
+                <div className="flex min-w-0 items-baseline gap-2">
+                  {isLedger ? (
+                    <span className="tabular-nums shrink-0" style={{ fontFamily: "var(--font-serif)", fontSize: "1.375rem", fontWeight: 700, color: "var(--app-text-primary)" }}>{res.year}</span>
+                  ) : (
+                    <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
+                  )}
                   <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{res.race}</span>
                 </div>
                 {isPlaceholder ? (
                   <span className="text-xs italic shrink-0" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
+                ) : isLedger ? (
+                  <span className="text-sm font-bold whitespace-nowrap shrink-0" style={{ color: winner === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>
+                    {winner}+{margin}
+                  </span>
                 ) : (
                   <span
                     className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0"
@@ -1594,13 +1659,89 @@ export function HouseOnlyDistrictBoundariesSection({
   density = "default",
   scrollable = false,
   maxHeight,
+  bare = false,
 }: {
   entries: HouseBoundaryHistoryEntry[];
   density?: DetailDensity;
   scrollable?: boolean;
   maxHeight?: string;
+  // Renders as flat, unboxed ledger rows (no card chrome, no "PVI History" subheading) for
+  // pages using the states-page-style layout — the caller supplies its own LedgerSectionHead.
+  bare?: boolean;
 }) {
   const isCompact = density === "compact";
+
+  if (bare) {
+    const rows = (
+      <>
+        {entries.length === 0 ? (
+          <p className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>
+            No PVI data recorded for this district.
+          </p>
+        ) : (
+          entries.map((entry, i) => {
+            const displayPvi = entry.pvi ?? entry.pviNew;
+            const isLast = i === entries.length - 1;
+            return (
+              <div
+                key={i}
+                className="flex gap-4"
+                style={{ padding: "1rem 0", borderBottom: isLast ? "none" : "1px solid var(--app-border)" }}
+              >
+                <div
+                  className="shrink-0 tabular-nums"
+                  style={{ fontFamily: "var(--font-serif)", fontSize: "1.2rem", fontWeight: 700, width: "3.5rem", color: "var(--app-text-primary)" }}
+                >
+                  {entry.year}
+                </div>
+                <div className="flex-1 min-w-0">
+                  {entry.boundaryChanged && (
+                    <div className="mb-1.5">
+                      <span
+                        className="text-[10px] font-semibold px-1.5 py-0.5 rounded"
+                        style={{ background: "color-mix(in srgb, #b45309 16%, transparent)", color: "#b45309" }}
+                      >
+                        Boundaries Redrawn
+                      </span>
+                    </div>
+                  )}
+                  {displayPvi != null && (
+                    <div className="flex items-center gap-1.5 mb-1.5">
+                      <span className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: "var(--app-text-very-muted)" }}>PVI</span>
+                      {entry.boundaryChanged && entry.pviOld != null ? (
+                        <>
+                          <PviBadge pvi={entry.pviOld} />
+                          <span className="text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>→</span>
+                          <PviBadge pvi={displayPvi} />
+                        </>
+                      ) : (
+                        <PviBadge pvi={displayPvi} />
+                      )}
+                    </div>
+                  )}
+                  {entry.description && (
+                    <div className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
+                      {entry.description}
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })
+        )}
+      </>
+    );
+
+    return (scrollable || maxHeight) ? (
+      <div className="overflow-y-auto pr-1" style={maxHeight ? { maxHeight } : undefined}>
+        {rows}
+      </div>
+    ) : (
+      <div>
+        {rows}
+      </div>
+    );
+  }
 
   return (
     <section

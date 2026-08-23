@@ -68,6 +68,12 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
 
 // ── Shared "no election this cycle" page ─────────────────────────────────────
 
+function partyAccent(party: "D" | "R" | "I") {
+  if (party === "R") return "var(--party-rep)";
+  if (party === "I") return "var(--party-ind)";
+  return "var(--party-dem)";
+}
+
 function NoElectionPage({
   state,
   abbr,
@@ -92,44 +98,49 @@ function NoElectionPage({
   const partyLabel = party === "D" ? "Democrat" : party === "R" ? "Republican" : "Independent";
   const termYears = termLength ?? 6;
   const termStarted = String(nextElection - termYears);
+  const accentColor = partyAccent(party);
 
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-7">
-        <div className="mb-5 -ml-2">
-          <BackButton />
+
+      {/* Hero */}
+      <div
+        style={{
+          background: `linear-gradient(135deg, color-mix(in srgb, ${accentColor} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+          minHeight: "300px",
+        }}
+      >
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
+          <div className="mb-5 -ml-2">
+            <BackButton />
+          </div>
+
+          <div className="flex flex-row items-start justify-between gap-4 sm:gap-6">
+            <div className="min-w-0">
+              <div className="flex items-center gap-3 flex-wrap">
+                <span className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+                  {abbr}
+                </span>
+                <h1
+                  className="whitespace-nowrap"
+                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
+                >
+                  {state}
+                </h1>
+              </div>
+              <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>{seatLabel}</div>
+              <div className="mt-4 text-sm" style={{ color: "var(--app-text-muted)" }}>
+                Not on the ballot in November {electionYear} — next election scheduled for <strong style={{ color: "var(--app-text-primary)" }}>{nextElection}</strong>.
+              </div>
+            </div>
+
+            <CurrentIncumbentLedgerRow incumbentName={incumbent} party={party} photo={candidatePhotos[incumbent] ?? null} compact />
+          </div>
         </div>
-        <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-            {abbr}
-          </span>
-          <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
-            No Election in {electionYear}
-          </span>
-        </div>
-        <h1
-          className="mt-2"
-          style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
-        >
-          {state}
-        </h1>
-        <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>{seatLabel}</div>
       </div>
 
       <main className="max-w-3xl mx-auto px-4 pb-10 sm:px-6">
         <div className="flex flex-col gap-8">
-          <section>
-            <LedgerSectionHead label="Current Incumbent" />
-            <CurrentIncumbentLedgerRow incumbentName={incumbent} party={party} photo={candidatePhotos[incumbent] ?? null} />
-          </section>
-
-          <section>
-            <LedgerSectionHead label="Election Status" />
-            <p className="text-sm leading-relaxed" style={{ color: "var(--app-text-primary)" }}>
-              This seat is not on the ballot in November {electionYear}. The next election for this seat is scheduled for {nextElection}. Incumbent and biographical information to be filled in.
-            </p>
-          </section>
-
           <section>
             <LedgerSectionHead label="About this Seat" />
             <AboutRaceCard
@@ -265,16 +276,17 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
       <div
         style={{
           background: `linear-gradient(135deg, color-mix(in srgb, ${marginColor(projectedMargin)} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+          minHeight: "300px",
         }}
       >
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-7">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
           <div className="mb-5 -ml-2">
             <BackButton />
           </div>
 
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <div className="min-w-0">
-              <div className="flex items-center gap-2 flex-wrap">
+              <div className="flex items-center gap-3 flex-wrap">
                 <span className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
                   {abbr}
                 </span>
@@ -282,13 +294,13 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
                   {forecastRating}
                 </span>
                 {isSpecialElection(race.electionType) && <SpecialBadge />}
+                <h1
+                  className="whitespace-nowrap"
+                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
+                >
+                  {race.name}
+                </h1>
               </div>
-              <h1
-                className="mt-2 truncate"
-                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
-              >
-                {race.name}
-              </h1>
               <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
                 {electionYear} {race.electionType ?? "Regular"} U.S. Senate Race{race.seatClass ? ` · Class ${race.seatClass}` : ""} · General {GENERAL_ELECTION}
               </div>

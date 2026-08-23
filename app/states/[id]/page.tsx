@@ -330,6 +330,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
           background: heroMargin != null
             ? `linear-gradient(135deg, color-mix(in srgb, ${heroIsD ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`
             : "var(--app-bg)",
+          minHeight: "300px",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
@@ -347,7 +348,7 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
                   {state.abbr}
                 </span>
                 <h1
-                  className="truncate"
+                  className="whitespace-nowrap"
                   style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
                 >
                   {state.name}

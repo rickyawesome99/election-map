@@ -32,18 +32,10 @@ export default function CountyDemographicsStrip({
   if (stats.length === 0) return null;
 
   return (
-    <section
-      className="rounded-xl mb-3 flex flex-wrap items-center gap-x-6 gap-y-2 px-4 py-4 sm:px-6"
-      style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-    >
-      <span className="text-[10px] uppercase tracking-wider font-semibold shrink-0" style={{ color: "var(--app-text-muted)" }}>
-        Demographics
-      </span>
-      <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1.5 text-sm">
-        {stats.map((s) => (
-          <Stat key={s.label} value={s.value} label={s.label} />
-        ))}
-      </div>
-    </section>
+    <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1.5 text-sm">
+      {stats.map((s) => (
+        <Stat key={s.label} value={s.value} label={s.label} />
+      ))}
+    </div>
   );
 }
