@@ -66,7 +66,13 @@ export default function CountyTplCard({
                   >
                     {r.raceType}
                   </span>
-                  {RACE_TYPE_LABELS[r.raceType] ?? r.race}
+                  {r.raceType !== "H" && r.detailHref ? (
+                    <a href={r.detailHref} className="hover:underline">
+                      {RACE_TYPE_LABELS[r.raceType] ?? r.race}
+                    </a>
+                  ) : (
+                    RACE_TYPE_LABELS[r.raceType] ?? r.race
+                  )}
                 </td>
                 <td className="px-2 py-1.5 tabular-nums" style={{ color: "var(--app-text-muted)" }}>
                   {r.year}

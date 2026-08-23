@@ -1,4 +1,4 @@
-import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, electionYear } from "@/data/forecastData";
+import { houseData, houseDistrictInfo, houseDistrictPvi, houseStatewideResults, presPastResults, senateData, senateNoElection, senateHoldovers, electionYear } from "@/data/forecastData";
 import { getStatewideMargin, getNationalMargin } from "@/lib/statewideMargins";
 import { pviHistory } from "@/lib/pviHistory";
 import { getRatingColors, marginToRating, fmtMargin, marginColor } from "@/lib/colorScale";
@@ -10,8 +10,51 @@ import DistrictVoteHistoryChart from "@/components/DistrictVoteHistoryChart";
 import VoteHistoryTabbedSection from "@/components/VoteHistoryTabbedSection";
 import { calculateDistrictTpl, effectiveGenericBallot, marginToProbability, computeIncumbentPts, computeRcpMargin, computeProjectedMargin } from "@/lib/tplCompute";
 import BackButton from "@/components/BackButton";
+import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/senateCandidatesByYear";
+import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 
 const GENERAL_ELECTION = "November 3, 2026";
+
+function statewideRaceHref(stateAbbr: string, raceName: string, year: number): string | undefined {
+  if (raceName === "President") return `/states/${stateAbbr.toLowerCase()}`;
+  if (raceName.startsWith("Governor")) return `/governor/${stateAbbr.toLowerCase()}`;
+  if (!raceName.startsWith("Senate")) return undefined;
+
+  const seats = [
+    ...senateData
+      .filter((seat) => seat.id.replace(/-2$/, "") === stateAbbr)
+      .map((seat) => ({ href: `/senate/${seat.id.toLowerCase().replace(/-2$/, "2")}`, pastResults: seat.pastResults ?? [] })),
+    ...senateNoElection
+      .filter((seat) => seat.abbr === stateAbbr)
+      .map((seat) => ({ href: `/senate/${seat.abbr.toLowerCase()}`, pastResults: seat.pastResults ?? [] })),
+    ...senateHoldovers
+      .filter((seat) => seat.abbr === stateAbbr)
+      .map((seat) => ({ href: `/senate/${seat.abbr.toLowerCase()}2`, pastResults: seat.pastResults ?? [] })),
+  ];
+  const isSpecial = raceName.toLowerCase().includes("special");
+  const matchingSeat = seats.find((seat) => seat.pastResults.some((result) =>
+    result.year === year &&
+    (result.electionType?.toLowerCase().includes("special") ?? false) === isSpecial
+  ));
+
+  if (matchingSeat) return matchingSeat.href;
+  const seatClass = year % 6 === 2 ? 1 : year % 6 === 4 ? 2 : 3;
+  return seats.find((seat) => seat.pastResults.some((result) => result.seatClass === seatClass))?.href;
+}
+
+function statewideCandidates(stateAbbr: string, raceName: string, year: number): { dem?: string; rep?: string } {
+  if (raceName === "President") {
+    const result = presPastResults[stateAbbr]?.find((entry) => entry.year === year);
+    return { dem: result?.demCandidate, rep: result?.repCandidate };
+  }
+  if (raceName.startsWith("Governor")) return governorCandidatesByYear[stateAbbr]?.[year] ?? {};
+  if (raceName.startsWith("Senate")) {
+    return raceName.toLowerCase().includes("special")
+      ? specialSenateCandidatesByYear[stateAbbr]?.[year] ?? {}
+      : senateCandidatesByYear[stateAbbr]?.[year] ?? {};
+  }
+  return {};
+}
 
 function inferCurrentHouseSeatFromPastResults(race: { pastResults?: { demIncumbent?: boolean; repIncumbent?: boolean; demCandidate?: string; repCandidate?: string }[] }) {
   for (const res of race.pastResults ?? []) {
@@ -98,6 +141,7 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
   }
 
   const statewideResultsWithDiff = rawStatewideResults.map((res) => {
+    const candidates = statewideCandidates(stateAbbr, res.race, res.year);
     const districtMargin = res.demPct - res.repPct;
     const statewideMargin = getStatewideMargin(stateAbbr, res.year, res.race);
     const nationalMargin = getNationalMargin(res.race, res.year);
@@ -110,6 +154,9 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
       : null;
     return {
       ...res,
+      raceHref: statewideRaceHref(stateAbbr, res.race, res.year),
+      demCandidate: candidates.dem,
+      repCandidate: candidates.rep,
       stateDiff: stateDistrictCount > 1 && statewideMargin != null && res.year >= (multiDistrictSince[stateAbbr] ?? 0) ? districtMargin + statewideMargin : null,
       nationalDiff: nationalMargin != null ? -districtMargin - nationalMargin : null,
       swing,
@@ -158,12 +205,17 @@ export default async function HousePage({ params }: { params: Promise<{ id: stri
                   {heldLabel}
                 </span>
               </div>
-              <h1
-                className="mt-2 whitespace-nowrap"
-                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
-              >
-                {race.name}
-              </h1>
+              <div className="mt-2 flex items-center gap-3 flex-wrap">
+                <a href={`/states/${stateAbbr.toLowerCase()}`} aria-label={`View ${race.state} state page`} className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 hover:underline" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+                  {stateAbbr}
+                </a>
+                <h1
+                  className="whitespace-nowrap"
+                  style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
+                >
+                  {race.name}
+                </h1>
+              </div>
               <div className="mt-3 text-sm" style={{ color: "var(--app-text-muted)" }}>
                 {electionYear} U.S. House Race · {districtLabel} · General {GENERAL_ELECTION}
               </div>

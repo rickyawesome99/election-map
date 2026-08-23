@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import StateMapSection from "@/components/StateMapSection";
 import StateLegCompositionBox from "@/components/StateLegCompositionBox";
 import StatewideVoteHistoryPanel, { type StatewideHistoryEntry } from "@/components/StatewideVoteHistoryPanel";
+import CandidateLink from "@/components/CandidateLink";
 
 
 const GENERAL_ELECTION = "November 3, 2026";
@@ -51,24 +52,28 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
   const rep = race.candidates?.rep;
   const isD = race.margin <= 0;
   return (
-    <a
-      href={href}
-      className="block py-5 min-w-0"
+    <div
+      className="relative py-5 min-w-0"
       style={{ borderBottom: "1px solid var(--app-border)" }}
     >
-      <div className="flex items-start justify-between gap-4">
+      <a
+        href={href}
+        aria-label={`View ${label} race`}
+        className="absolute inset-0"
+      />
+      <div className="relative pointer-events-none flex items-start justify-between gap-4">
         <div className="min-w-0">
           <div className="text-[11px] uppercase tracking-wider font-semibold mb-2" style={{ color: "var(--app-text-muted)" }}>
             {label}
           </div>
           {dem && rep ? (
             <div className="flex flex-col gap-0.5">
-              <span className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: "var(--party-dem)" }}>
+              <CandidateLink name={dem.name} className="relative pointer-events-auto truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: "var(--party-dem)" }}>
                 {dem.name}
-              </span>
-              <span className="truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: "var(--party-rep)" }}>
+              </CandidateLink>
+              <CandidateLink name={rep.name} className="relative pointer-events-auto truncate hover:underline" style={{ fontFamily: "var(--font-serif)", fontSize: "1.25rem", fontWeight: 700, color: "var(--party-rep)" }}>
                 {rep.name}
-              </span>
+              </CandidateLink>
             </div>
           ) : (
             <div className="text-sm italic" style={{ color: "var(--app-text-very-muted)" }}>Candidates TBD</div>
@@ -83,7 +88,7 @@ function ElectionCard({ race, href, label }: { race: RaceForecast; href: string;
           </div>
         </div>
       </div>
-    </a>
+    </div>
   );
 }
 
@@ -291,6 +296,8 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
       repPct: res.repPct,
       demVotes: res.demVotes,
       repVotes: res.repVotes,
+      demCandidate: res.demCandidate,
+      repCandidate: res.repCandidate,
     })),
     ...senatePastResults.map((res, idx) => ({
       key: `senate-${res.year}-${res.seat}-${res.electionType ?? "regular"}-${idx}`,
@@ -302,6 +309,8 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
       repPct: res.repPct,
       demVotes: res.demVotes,
       repVotes: res.repVotes,
+      demCandidate: res.demCandidate,
+      repCandidate: res.repCandidate,
     })),
     ...(govPageId ? govPastResults.map((res) => ({
       key: `gov-${res.year}`,
@@ -313,6 +322,8 @@ export default async function StateDetailPage({ params }: { params: Promise<{ id
       repPct: res.repPct,
       demVotes: res.demVotes,
       repVotes: res.repVotes,
+      demCandidate: res.demCandidate,
+      repCandidate: res.repCandidate,
     })) : []),
   ];
 

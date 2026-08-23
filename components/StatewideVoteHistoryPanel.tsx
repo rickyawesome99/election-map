@@ -2,6 +2,7 @@
 
 import StateVoteHistoryChart from "./StateVoteHistoryChart";
 import VoteHistoryTabbedSection from "./VoteHistoryTabbedSection";
+import CandidateLink from "./CandidateLink";
 
 export type StatewideHistoryEntry = {
   key: string;
@@ -13,6 +14,8 @@ export type StatewideHistoryEntry = {
   repPct: number;
   demVotes?: number;
   repVotes?: number;
+  demCandidate?: string;
+  repCandidate?: string;
 };
 
 type ChartResult = { year: number; race: string; demPct: number; repPct: number; label?: string };
@@ -46,10 +49,11 @@ function ResultCard({ entry }: { entry: StatewideHistoryEntry }) {
         const dem = party === "D";
         const pct = dem ? entry.demPct : entry.repPct;
         const votes = dem ? entry.demVotes : entry.repVotes;
+        const candidate = dem ? entry.demCandidate : entry.repCandidate;
         return (
           <div key={party} className="flex items-baseline gap-2 mb-0.5">
             <span className="min-w-0 flex-1 truncate text-sm font-semibold" style={{ color: dem ? "var(--party-dem)" : "var(--party-rep)" }}>
-              {dem ? "Dem" : "Rep"}
+              {candidate ? <CandidateLink name={candidate} className="hover:underline" /> : (dem ? "Democratic Candidate" : "Republican Candidate")} ({party})
             </span>
             <div className="flex shrink-0 items-baseline gap-1">
               <span className="w-12 text-sm font-bold tabular-nums" style={{ color: dem ? "var(--party-dem)" : "var(--party-rep)" }}>{pct.toFixed(1)}%</span>

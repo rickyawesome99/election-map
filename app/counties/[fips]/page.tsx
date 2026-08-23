@@ -5,6 +5,7 @@ import { senateCandidatesByYear, specialSenateCandidatesByYear } from "@/data/se
 import { countyGovernorData } from "@/data/countyGovernorData";
 import { governorCandidatesByYear } from "@/data/governorCandidatesByYear";
 import { countyHouseData } from "@/data/countyHouseData";
+import { houseData, senateData, senateNoElection, senateHoldovers } from "@/data/forecastData";
 import { countyDemographics } from "@/data/countyDemographics";
 import { FIPS_TO_STATE } from "@/lib/fips";
 import { calculateCountyModel } from "@/lib/tplCompute";
@@ -52,6 +53,40 @@ function formatDistrictLabel(stateAbbr: string, districts: number[]): string | u
   return `${labels.slice(0, -1).join(", ")} & ${labels[labels.length - 1]}`;
 }
 
+function senateSeatHref(
+  stateAbbr: string,
+  year: number,
+  demCandidate: string | undefined,
+  repCandidate: string | undefined,
+  isSpecial: boolean,
+): string {
+  const seats = [
+    ...senateData
+      .filter((seat) => seat.id.replace(/-2$/, "") === stateAbbr)
+      .map((seat) => ({ href: `/senate/${seat.id.toLowerCase().replace(/-2$/, "2")}`, pastResults: seat.pastResults ?? [] })),
+    ...senateNoElection
+      .filter((seat) => seat.abbr === stateAbbr)
+      .map((seat) => ({ href: `/senate/${seat.abbr.toLowerCase()}`, pastResults: seat.pastResults ?? [] })),
+    ...senateHoldovers
+      .filter((seat) => seat.abbr === stateAbbr)
+      .map((seat) => ({ href: `/senate/${seat.abbr.toLowerCase()}2`, pastResults: seat.pastResults ?? [] })),
+  ];
+
+  const candidateMatch = seats.find((seat) => seat.pastResults.some((result) =>
+    result.year === year &&
+    result.demCandidate === demCandidate &&
+    result.repCandidate === repCandidate &&
+    (result.electionType?.toLowerCase().includes("special") ?? false) === isSpecial
+  ));
+  if (candidateMatch) return candidateMatch.href;
+
+  // Regular Senate classes recur every six years. This covers older county rows
+  // that predate the history currently displayed on the corresponding seat page.
+  const seatClass = year % 6 === 2 ? 1 : year % 6 === 4 ? 2 : 3;
+  return seats.find((seat) => seat.pastResults.some((result) => result.seatClass === seatClass))?.href
+    ?? `/senate/${stateAbbr.toLowerCase()}`;
+}
+
 export async function generateStaticParams() {
   return Object.keys(countyPresidentialData).map((fips) => ({ fips }));
 }
@@ -90,6 +125,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         demCandidate: candidates.dem,
         repCandidate: candidates.rep,
         electionType: "President",
+        electionHref: `/states/${county.state.toLowerCase()}`,
       };
     });
 
@@ -109,6 +145,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
             demCandidate: candidates?.dem,
             repCandidate: candidates?.rep,
             electionType: "Senate",
+            electionHref: senateSeatHref(county.state, year, candidates?.dem, candidates?.rep, false),
           };
         })
     : [];
@@ -134,6 +171,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
             demCandidate: candidates?.dem,
             repCandidate: candidates?.rep,
             electionType: "Senate Special",
+            electionHref: senateSeatHref(county.state, year, candidates?.dem, candidates?.rep, true),
           };
         })
     : [];
@@ -154,6 +192,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
             demCandidate: candidates?.dem,
             repCandidate: candidates?.rep,
             electionType: "Governor",
+            electionHref: `/governor/${county.state.toLowerCase()}`,
           };
         })
     : [];
@@ -165,6 +204,10 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
         .map(([y, r]) => {
           const year = Number(y);
           const votesKnown = r!.votesKnown !== false;
+          const soleDistrict = r!.districts.length === 1 ? r!.districts[0] : null;
+          const districtId = soleDistrict == null
+            ? null
+            : `${county.state}-${String(soleDistrict).padStart(2, "0")}`;
           return {
             year,
             demPct: r!.demPct,
@@ -172,6 +215,9 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
             demVotes: votesKnown ? r!.demVotes : undefined,
             repVotes: votesKnown ? r!.repVotes : undefined,
             electionType: "House",
+            electionHref: districtId == null || !houseData.some((race) => race.name === districtId)
+              ? undefined
+              : `/house/${districtId.toLowerCase()}`,
             note: r!.samePartyNote ?? (votesKnown ? undefined : "Uncontested race - no vote count is available for this county."),
             districtLabel: formatDistrictLabel(county.state, r!.districts),
           };
@@ -253,7 +299,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
                 )}
               </div>
               <h1
-                className="mt-2 truncate"
+                className="mt-2 whitespace-nowrap"
                 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
               >
                 {county.countyName}

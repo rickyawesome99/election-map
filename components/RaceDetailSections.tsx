@@ -25,6 +25,7 @@ export type DetailPastResult = {
   demIncumbent?: boolean;
   repIncumbent?: boolean;
   electionType?: string;
+  electionHref?: string;
   nationalDiff?: number | null;
   swing?: number | null;
   note?: string;
@@ -1266,9 +1267,17 @@ export function PastElectionResultsSection({
                   ) : (
                     <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
                   )}
-                  {showElectionType && res.electionType && (!showSpecialBadgeForSpecialElections || !res.electionType.toLowerCase().includes("special")) && (
-                    <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{res.electionType}</span>
-                  )}
+                  {showElectionType && res.electionType && (() => {
+                    const electionLabel = showSpecialBadgeForSpecialElections
+                      ? res.electionType.replace(/\s+special/i, "")
+                      : res.electionType;
+                    const electionTypeLabel = (
+                      <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{electionLabel}</span>
+                    );
+                    return res.electionHref
+                      ? <a href={res.electionHref} className="min-w-0 hover:underline">{electionTypeLabel}</a>
+                      : electionTypeLabel;
+                  })()}
                   {!isPlaceholder && res.districtLabel && (
                     // A county can span many districts (e.g. Cook County, IL spans 10) -
                     // no nowrap/shrink-0 here, so a long list wraps within the pill
@@ -1455,10 +1464,11 @@ export function HouseOnlyRecentStatewideResultsSection({
   results?: {
     year: number;
     race: string;
-    demPct: number;
-    repPct: number;
+    raceHref?: string;
     demCandidate?: string;
     repCandidate?: string;
+    demPct: number;
+    repPct: number;
     demVotes?: number;
     repVotes?: number;
     stateDiff?: number | null;
@@ -1505,7 +1515,13 @@ export function HouseOnlyRecentStatewideResultsSection({
                   ) : (
                     <span className="text-sm font-bold tabular-nums shrink-0" style={{ color: "var(--app-text-primary)" }}>{res.year}</span>
                   )}
-                  <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{res.race}</span>
+                  {res.raceHref ? (
+                    <a href={res.raceHref} className="truncate text-sm font-semibold hover:underline" style={{ color: "var(--app-text-muted)" }}>
+                      {res.race}
+                    </a>
+                  ) : (
+                    <span className="truncate text-sm font-semibold" style={{ color: "var(--app-text-muted)" }}>{res.race}</span>
+                  )}
                 </div>
                 {isPlaceholder ? (
                   <span className="text-xs italic shrink-0" style={{ color: "var(--app-text-very-muted)" }}>Data TBD</span>
@@ -1527,10 +1543,9 @@ export function HouseOnlyRecentStatewideResultsSection({
 
               {/* Dem row */}
               <div className="flex items-baseline gap-2 mb-1">
-                <span className="text-sm font-semibold shrink-0 w-8" style={{ color: "var(--party-dem)" }}>Dem</span>
-                {res.demCandidate && (
-                  <span className="text-sm min-w-0 flex-1 truncate" style={{ color: "var(--party-dem)" }}>{res.demCandidate}</span>
-                )}
+                <span className="text-sm font-semibold min-w-0 flex-1 truncate" style={{ color: "var(--party-dem)" }}>
+                  {res.demCandidate ? <CandidateLink name={res.demCandidate} className="hover:underline" /> : "Democratic Candidate"} (D)
+                </span>
                 <div className="flex items-baseline gap-1 ml-auto shrink-0">
                   <span className="text-sm font-bold tabular-nums w-12" style={{ color: "var(--party-dem)" }}>
                     {isPlaceholder ? "—" : `${res.demPct.toFixed(1)}%`}
@@ -1543,10 +1558,9 @@ export function HouseOnlyRecentStatewideResultsSection({
 
               {/* Rep row */}
               <div className={`flex items-baseline gap-2 ${hasDiffs ? "mb-1.5" : ""}`}>
-                <span className="text-sm font-semibold shrink-0 w-8" style={{ color: "var(--party-rep)" }}>Rep</span>
-                {res.repCandidate && (
-                  <span className="text-sm min-w-0 flex-1 truncate" style={{ color: "var(--party-rep)" }}>{res.repCandidate}</span>
-                )}
+                <span className="text-sm font-semibold min-w-0 flex-1 truncate" style={{ color: "var(--party-rep)" }}>
+                  {res.repCandidate ? <CandidateLink name={res.repCandidate} className="hover:underline" /> : "Republican Candidate"} (R)
+                </span>
                 <div className="flex items-baseline gap-1 ml-auto shrink-0">
                   <span className="text-sm font-bold tabular-nums w-12" style={{ color: "var(--party-rep)" }}>
                     {isPlaceholder ? "—" : `${res.repPct.toFixed(1)}%`}

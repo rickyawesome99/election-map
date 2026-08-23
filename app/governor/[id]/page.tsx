@@ -74,9 +74,9 @@ function NoElectionPage({ entry }: { entry: NoElectionEntry }) {
           <div className="flex flex-row items-start justify-between gap-4 sm:gap-6">
             <div className="min-w-0">
               <div className="flex items-center gap-3 flex-wrap">
-                <span className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+                <a href={`/states/${entry.abbr.toLowerCase()}`} aria-label={`View ${entry.state} state page`} className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 hover:underline" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
                   {entry.abbr}
-                </span>
+                </a>
                 <h1
                   className="whitespace-nowrap"
                   style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.25rem, 6.5vw, 4.75rem)", fontWeight: 700, lineHeight: 0.95, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
@@ -199,9 +199,9 @@ export default async function GovernorPage({ params }: { params: Promise<{ id: s
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
             <div className="min-w-0">
               <div className="flex items-center gap-3 flex-wrap">
-                <span className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+                <a href={`/states/${id.toLowerCase()}`} aria-label={`View ${race.name} state page`} className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 hover:underline" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
                   {id.toUpperCase()}
-                </span>
+                </a>
                 <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full shrink-0" style={{ background: bg, color: text }}>
                   {forecastRating}
                 </span>
