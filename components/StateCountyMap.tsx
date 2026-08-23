@@ -288,10 +288,11 @@ export default function StateCountyMap({
             </div>
             <button
               onClick={() => setSelected(null)}
-              className="shrink-0 text-xs px-2 py-1 rounded"
+              className="shrink-0 flex h-9 w-9 items-center justify-center rounded text-xl leading-none"
+              aria-label="Close county details"
               style={{ color: "var(--app-text-muted)", background: "var(--app-bg)" }}
             >
-              ✕
+              ×
             </button>
           </div>
         </div>

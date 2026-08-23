@@ -3,6 +3,10 @@ import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
 
+// Detail pages are generated from large county, candidate, and race datasets.
+// Render them on demand instead of prebuilding thousands of pages on every deploy.
+export const dynamic = "force-dynamic";
+
 const ibmPlexSans = IBM_Plex_Sans({
   variable: "--font-ibm-plex-sans",
   subsets: ["latin"],

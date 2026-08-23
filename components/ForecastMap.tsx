@@ -268,13 +268,9 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
       {/* ── Page content ── */}
       <div className="px-3 pt-1 pb-3 sm:px-4 sm:pt-1 sm:pb-4 md:px-6 md:pt-1 md:pb-5">
 
-        {/* ── Map card ── */}
-        {(activeTab === "forecast" || activeTab === "counties" || activeTab === "states") && <div
-          className={
-            activeTab === "counties"
-              ? "relative overflow-hidden rounded-xl"
-              : "relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-[520px]"
-          }
+        {/* ── Map card (forecast/states only — counties renders its own layout below) ── */}
+        {(activeTab === "forecast" || activeTab === "states") && <div
+          className="relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-[520px]"
           style={{
             border: `1px solid ${t.border}`,
             boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
@@ -450,9 +446,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
             );
           })()}
 
-          {activeTab === "counties"
-            ? <NationalCountyMap theme={t} />
-            : activeTab === "states"
+          {activeTab === "states"
             ? <StatesOverviewMap rows={stateRows} theme={t} onSelect={setSelectedStateRow} onModeChange={setSelectedStateMode} />
             : <ComposableMap
             key={forecastMapKey}
@@ -580,7 +574,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
 
           {/* ── Legend (bottom-left) ── */}
           <div
-            className={`${activeTab === "counties" ? "hidden" : "hidden md:flex"} absolute items-center gap-1 p-1`}
+            className="hidden md:flex absolute items-center gap-1 p-1"
             style={{ bottom: "12px", left: "1rem" }}
           >
             {LEGEND.map(({ color, label }) => (
@@ -680,6 +674,9 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
           })()}
 
         </div>}
+
+        {/* ── Counties (owns its own hero/controls/map/results layout) ── */}
+        {activeTab === "counties" && <NationalCountyMap theme={t} />}
 
         {/* ── Mobile seat scorecard ── */}
         {showSeatScorecard && (

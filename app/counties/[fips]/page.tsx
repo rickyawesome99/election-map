@@ -370,9 +370,7 @@ export default async function CountyPage({ params }: { params: Promise<{ fips: s
 
         {/* County Map */}
         <section className="mb-10">
-          <div style={{ height: 280 }}>
-            <StateCountyMap stateAbbr={county.state} stateName={stateName} height={280} highlightFips={fips} showLabel={false} />
-          </div>
+          <StateCountyMap stateAbbr={county.state} stateName={stateName} height={280} highlightFips={fips} showLabel={false} />
         </section>
 
         <CountySpreadColumns

@@ -119,6 +119,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
         className="h-8 w-28 rounded-lg pl-8 pr-2 outline-none max-sm:placeholder:text-transparent min-[420px]:w-28 sm:w-56 sm:pr-3"
         style={{
           fontSize: 16,
+          fontFamily: "var(--font-serif)",
           background: "var(--app-bg)",
           border: "1px solid var(--app-border)",
           color: "var(--app-text-primary)",
@@ -129,7 +130,7 @@ export default function SearchBar({ inputStyle }: { inputStyle?: React.CSSProper
       {!query && (
         <span
           className="pointer-events-none absolute left-8 right-1 truncate whitespace-nowrap text-sm sm:hidden"
-          style={{ color: "var(--app-text-muted)" }}
+          style={{ color: "var(--app-text-muted)", fontFamily: "var(--font-serif)" }}
         >
           Search
         </span>

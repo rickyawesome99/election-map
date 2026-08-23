@@ -37,14 +37,20 @@ function partySubtle(party: "D" | "R" | "I") {
   return "var(--party-dem-subtle)";
 }
 
-function raceTypeLabel(raceType: "house" | "senate" | "governor") {
+function raceTypeLabel(raceType: "house" | "senate" | "governor" | "president") {
   if (raceType === "house") return "U.S. House";
   if (raceType === "senate") return "U.S. Senate";
+  if (raceType === "president") return "President";
   return "Governor";
 }
 
 // Fall back to vote counts when percentages are tied (e.g. IA-02 2020, 6-vote margin)
 function wonEntry(entry: CandidateHistoryEntry): boolean {
+  // Presidential elections are decided by the Electoral College, not the national
+  // popular vote (e.g. 2016: Clinton led the popular vote but lost the election).
+  if (entry.raceType === "president" && entry.demEV != null && entry.repEV != null) {
+    return entry.side === "dem" ? entry.demEV > entry.repEV : entry.repEV > entry.demEV;
+  }
   const wonByPct = entry.side === "dem" ? entry.demPct > entry.repPct : entry.repPct > entry.demPct;
   const tiedByPct = entry.demPct === entry.repPct;
   const wonByVotes = tiedByPct && entry.demVotes != null && entry.repVotes != null
@@ -66,12 +72,12 @@ export default async function CandidatePage({
   const accent = partyAccent(candidate.party);
   const subtle = partySubtle(candidate.party);
 
-  const backHref = candidate.currentRace?.racePath ?? `/${candidate.tab}`;
-  const raceTypeSuffix = candidate.tab === "house" ? " House" : candidate.tab === "senate" ? " Senate" : " Governor";
+  const backHref = candidate.currentRace?.racePath ?? (candidate.tab === "president" ? "/analysis/popular-vote" : `/${candidate.tab}`);
+  const raceTypeSuffix = candidate.tab === "house" ? " House" : candidate.tab === "senate" ? " Senate" : candidate.tab === "governor" ? " Governor" : " President";
   const backLabel =
     candidate.currentRace
       ? candidate.currentRace.raceName + raceTypeSuffix
-      : candidate.tab === "house" ? "House Races" : candidate.tab === "senate" ? "Senate Races" : "Governor Races";
+      : candidate.tab === "house" ? "House Races" : candidate.tab === "senate" ? "Senate Races" : candidate.tab === "governor" ? "Governor Races" : "Popular Vote";
 
   const currentEntries = candidate.history.filter(h => h.isCurrent);
   const pastEntries = candidate.history.filter(h => !h.isCurrent);
@@ -251,7 +257,9 @@ export default async function CandidatePage({
                 ) : (
                   pastEntries.map((entry, i) => {
                     const entryAccent = partyAccent(entry.party);
+                    const oppAccent = partyAccent(entry.oppParty);
                     const won = wonEntry(entry);
+                    const isPresident = entry.raceType === "president";
                     const pct = entry.side === "dem" ? entry.demPct : entry.repPct;
                     const oppPct = entry.side === "dem" ? entry.repPct : entry.demPct;
                     const oppLabel = entry.side === "dem" ? "R" : "D";
@@ -259,6 +267,7 @@ export default async function CandidatePage({
                     const margin = Math.abs(pct - oppPct).toFixed(1);
                     const total = entry.demPct + entry.repPct;
                     const dWidth = total > 0 ? (entry.demPct / total) * 100 : 50;
+                    const ev = entry.side === "dem" ? entry.demEV : entry.repEV;
                     return (
                       <div key={i} className="py-5" style={{ borderBottom: i < pastEntries.length - 1 ? "1px solid var(--app-border)" : "none" }}>
                         <div className="flex items-start justify-between gap-4 mb-2.5">
@@ -282,8 +291,8 @@ export default async function CandidatePage({
                           <span
                             className="text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap shrink-0"
                             style={{
-                              background: won ? partySubtle(entry.party) : "var(--app-tab-bg)",
-                              color: won ? entryAccent : "var(--app-text-muted)",
+                              background: won ? partySubtle(entry.party) : partySubtle(entry.oppParty),
+                              color: won ? entryAccent : oppAccent,
                             }}
                           >
                             {won ? "Won" : "Lost"}
@@ -302,7 +311,7 @@ export default async function CandidatePage({
                             {partyLabel(entry.party)[0]} {pct.toFixed(1)}%
                           </span>
                           <span className="text-xs tabular-nums shrink-0" style={{ color: entryAccent }}>
-                            {won ? `+${margin}` : `-${margin}`}
+                            {isPresident && ev != null ? `${ev} EV` : won ? `+${margin}` : `-${margin}`}
                           </span>
                         </div>
                       </div>

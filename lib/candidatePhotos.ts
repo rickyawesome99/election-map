@@ -642,4 +642,13 @@ export const candidatePhotos: Record<string, string> = {
   "Larry Rhoden": "/candidates/larry-rhoden.jpg",
   "Phil Scott": "/candidates/phil-scott.jpg",
   "Kevin Stitt": "/candidates/kevin-stitt.jpg",
+
+  // ── Presidential Nominees (2008–2024) ─────────────────────────────────────
+  "Barack Obama": "/candidates/barack-obama.jpg",
+  "John McCain": "/candidates/john-mccain.jpg",
+  "Mitt Romney": "/candidates/mitt-romney.jpg",
+  "Hillary Clinton": "/candidates/hillary-clinton.jpg",
+  "Donald Trump": "/candidates/donald-trump.jpg",
+  "Joe Biden": "/candidates/joe-biden.jpg",
+  "Kamala Harris": "/candidates/kamala-harris.jpg",
 };

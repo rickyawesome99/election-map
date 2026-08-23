@@ -313,207 +313,200 @@ export default function DistrictFinder() {
     }
   }
 
+  function handleReset() {
+    setResetTrigger(n => n + 1);
+    setMapMoved(false);
+    setResult(null);
+    setPinPosition(null);
+    setFlyTarget(null);
+    setAddress("");
+    setError(null);
+  }
+
+  const cdRace = result?.cdGEOID ? houseData.find(r => r.id === result.cdGEOID) : undefined;
+  const stateMatch = result?.state ? statesData.find(s => s.name === result.state) : undefined;
+
   return (
     <div
-      className="mt-1 flex flex-col overflow-hidden"
-      style={{ height: "calc(100svh - 162px)" }}
+      className="relative mt-1 overflow-hidden rounded-xl"
+      style={{
+        height: "calc(100svh - 162px)",
+        border: `1px solid ${t.border}`,
+        boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
+      }}
     >
-      <div className="mb-2 flex shrink-0 items-baseline gap-3">
-        <h2 className="text-lg font-bold" style={{ color: t.textPrimary }}>
-          District Finder
-        </h2>
-        <span className="text-xs" style={{ color: t.textMuted }}>
-          Look up any US address to find its districts
-        </span>
-      </div>
+      <DistrictFinderMap
+        darkMode={darkMode}
+        pinPosition={pinPosition}
+        flyTarget={flyTarget}
+        statesGeoJSON={statesGeoJSON}
+        highlightCdGEOID={result?.cdGEOID ?? null}
+        resetTrigger={resetTrigger}
+        onMoved={setMapMoved}
+        onMapClick={handleMapClick}
+      />
 
-      {/* Search bar */}
-      <form onSubmit={handleSearch} className="mb-2 flex shrink-0 gap-2" style={{ position: "relative", zIndex: 2 }}>
-        <div ref={searchWrapperRef} className="relative min-w-0 flex-1">
-          <input
-            type="text"
-            value={address}
-            onChange={e => { setAddress(e.target.value); setShowSuggestions(true); }}
-            onFocus={() => { if (suggestions.length > 0) setShowSuggestions(true); }}
-            onKeyDown={handleKeyDown}
-            placeholder="Enter any US address (e.g. 123 Main St, Springfield, IL)"
-            className="w-full rounded-lg px-4 py-2.5 text-sm outline-none"
-            style={{
-              background: t.panel,
-              border: `1px solid ${showSuggestions && suggestions.length > 0 ? "#4275b5" : t.border}`,
-              borderRadius: showSuggestions && suggestions.length > 0 ? "8px 8px 0 0" : "8px",
-              color: t.textPrimary,
-              fontSize: "16px",
-            }}
-            autoComplete="off"
-          />
-          {showSuggestions && suggestions.length > 0 && (
-            <ul
-              className="absolute left-0 right-0 z-50 overflow-hidden"
+      {/* Floating search bar — top-left, full width on mobile */}
+      <div className="absolute left-3 right-3 top-3 sm:right-auto sm:w-96" style={{ zIndex: 800 }}>
+        <form onSubmit={handleSearch} className="flex gap-1.5">
+          <div ref={searchWrapperRef} className="relative min-w-0 flex-1">
+            <input
+              type="text"
+              value={address}
+              onChange={e => { setAddress(e.target.value); setShowSuggestions(true); }}
+              onFocus={() => { if (suggestions.length > 0) setShowSuggestions(true); }}
+              onKeyDown={handleKeyDown}
+              placeholder="Enter any US address"
+              className="w-full rounded-lg px-3.5 py-2.5 text-sm outline-none backdrop-blur-sm"
               style={{
-                top: "100%",
-                background: t.panel,
-                border: `1px solid #4275b5`,
-                borderTop: "none",
-                borderRadius: "0 0 8px 8px",
-                boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
+                background: t.legendBg,
+                border: `1px solid ${showSuggestions && suggestions.length > 0 ? "#4275b5" : t.border}`,
+                borderRadius: showSuggestions && suggestions.length > 0 ? "8px 8px 0 0" : "8px",
+                color: t.textPrimary,
+                fontSize: "16px",
+                fontFamily: "var(--font-serif)",
+                boxShadow: "0 2px 8px rgba(0,0,0,0.18)",
               }}
-            >
-              {suggestions.map((s, i) => (
-                <li
-                  key={i}
-                  onMouseDown={e => { e.preventDefault(); selectSuggestion(s); }}
-                  onMouseEnter={() => setActiveIndex(i)}
-                  className="cursor-pointer truncate px-4 py-2.5 text-sm"
-                  style={{
-                    background: i === activeIndex
-                      ? (darkMode ? "#1e3a5f" : "#dbeafe")
-                      : "transparent",
-                    color: t.textPrimary,
-                    borderTop: i > 0 ? `1px solid ${t.border}` : "none",
-                  }}
-                >
-                  {s.shortName}
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-        <button
-          type="submit"
-          disabled={loading}
-          className="shrink-0 rounded-lg px-5 py-2.5 text-sm font-semibold"
-          style={{
-            background: "#4275b5",
-            color: "#ffffff",
-            opacity: loading ? 0.65 : 1,
-            cursor: loading ? "default" : "pointer",
-          }}
-        >
-          {loading ? "Searching…" : "Search"}
-        </button>
-      </form>
-
-      {/* Map — flex-1 fills all remaining space */}
-      <div
-        className="relative min-h-0 flex-1 overflow-hidden rounded-xl"
-        style={{
-          border: `1px solid ${t.border}`,
-          zIndex: 0,
-        }}
-      >
-        <DistrictFinderMap
-          darkMode={darkMode}
-          pinPosition={pinPosition}
-          flyTarget={flyTarget}
-          statesGeoJSON={statesGeoJSON}
-          highlightCdGEOID={result?.cdGEOID ?? null}
-          resetTrigger={resetTrigger}
-          onMoved={setMapMoved}
-          onMapClick={handleMapClick}
-        />
-
-        {/* Empty-state hint */}
-        {!pinPosition && !loading && (
-          <div
-            className="pointer-events-none absolute bottom-4 left-1/2 -translate-x-1/2 rounded-lg px-4 py-2 text-xs font-medium shadow-md"
-            style={{ zIndex: 800, background: t.panel, border: `1px solid ${t.border}`, color: t.textMuted, whiteSpace: "nowrap" }}
-          >
-            Search above or click the map to find districts
+              autoComplete="off"
+            />
+            {showSuggestions && suggestions.length > 0 && (
+              <ul
+                className="absolute left-0 right-0 z-50 overflow-hidden"
+                style={{
+                  top: "100%",
+                  background: t.panel,
+                  border: `1px solid #4275b5`,
+                  borderTop: "none",
+                  borderRadius: "0 0 8px 8px",
+                  boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
+                }}
+              >
+                {suggestions.map((s, i) => (
+                  <li
+                    key={i}
+                    onMouseDown={e => { e.preventDefault(); selectSuggestion(s); }}
+                    onMouseEnter={() => setActiveIndex(i)}
+                    className="cursor-pointer truncate px-4 py-2.5 text-sm"
+                    style={{
+                      background: i === activeIndex
+                        ? (darkMode ? "#1e3a5f" : "#dbeafe")
+                        : "transparent",
+                      color: t.textPrimary,
+                      borderTop: i > 0 ? `1px solid ${t.border}` : "none",
+                    }}
+                  >
+                    {s.shortName}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
-        )}
-
-        {/* Reset view button — shown when map has moved or a result is selected */}
-        {(mapMoved || !!result) && (
           <button
-            onClick={() => {
-              setResetTrigger(n => n + 1);
-              setMapMoved(false);
-              setResult(null);
-              setPinPosition(null);
-              setFlyTarget(null);
-              setAddress("");
-              setError(null);
-            }}
-            className="absolute right-3 top-3 rounded-lg px-2.5 py-1 text-xs font-medium backdrop-blur-sm"
+            type="submit"
+            disabled={loading}
+            className="shrink-0 rounded-lg px-3.5 py-2.5 text-sm font-semibold sm:px-5"
             style={{
-              zIndex: 800,
-              background: t.legendBg,
-              border: `1px solid ${t.border}`,
-              color: t.textMuted,
+              background: "#4275b5",
+              color: "#ffffff",
+              opacity: loading ? 0.65 : 1,
+              cursor: loading ? "default" : "pointer",
               boxShadow: "0 2px 8px rgba(0,0,0,0.18)",
             }}
           >
-            Reset
+            {loading ? "…" : "Search"}
           </button>
-        )}
+          {(mapMoved || !!result) && (
+            <button
+              type="button"
+              onClick={handleReset}
+              className="shrink-0 rounded-lg px-2.5 py-2.5 text-xs font-medium backdrop-blur-sm"
+              style={{
+                background: t.legendBg,
+                border: `1px solid ${t.border}`,
+                color: t.textMuted,
+                boxShadow: "0 2px 8px rgba(0,0,0,0.18)",
+              }}
+              aria-label="Reset view"
+            >
+              Reset
+            </button>
+          )}
+        </form>
 
+        {error && (
+          <div
+            className="mt-2 rounded-lg px-4 py-2.5 text-sm backdrop-blur-sm"
+            style={{ background: t.candidateRepBg, color: t.repText, border: `1px solid ${t.border}`, boxShadow: "0 2px 8px rgba(0,0,0,0.18)" }}
+          >
+            {error}
+          </div>
+        )}
       </div>
 
-      {/* Error */}
-      {error && (
+      {/* Empty-state hint */}
+      {!pinPosition && !loading && (
         <div
-          className="mt-2 shrink-0 rounded-lg px-4 py-2.5 text-sm"
-          style={{ background: t.candidateRepBg, color: t.repText, border: `1px solid ${t.border}` }}
+          className="pointer-events-none absolute bottom-4 left-1/2 -translate-x-1/2 rounded-lg px-4 py-2 text-xs font-medium shadow-md"
+          style={{ zIndex: 800, background: t.panel, border: `1px solid ${t.border}`, color: t.textMuted, whiteSpace: "nowrap" }}
         >
-          {error}
+          Search above or click the map to find districts
         </div>
       )}
 
-      {/* District info box — below the map */}
-      {result && (() => {
-        const cdRace = result.cdGEOID ? houseData.find(r => r.id === result.cdGEOID) : undefined;
-        return (
-        <div className="mt-2 shrink-0 rounded-xl px-3 pb-3 pt-2.5" style={{ background: t.panel, border: `1px solid ${t.border}` }}>
-          <div
-            className="mb-2 truncate text-[10px] font-medium uppercase tracking-wider"
-            style={{ color: t.textMuted }}
-          >
+      {/* Result hero panel — bottom-left, full width on mobile */}
+      {result && (
+        <div
+          className="absolute bottom-3 left-3 right-3 rounded-xl p-4 backdrop-blur-sm sm:right-auto sm:w-80"
+          style={{ zIndex: 700, background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 8px 24px rgba(0,0,0,0.18)" }}
+        >
+          <div className="truncate text-[10px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>
             {result.matchedAddress}
           </div>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-            <InfoBox
-              label="State"
-              value={result.state ?? "—"}
-              href={statesData.find(s => s.name === result.state) ? `/states/${statesData.find(s => s.name === result.state)!.id}` : undefined}
-              t={t}
-            />
-            <InfoBox
-              label="Congressional District"
-              value={result.cdName ?? "—"}
-              href={cdRace ? `/house/${cdRace.name.toLowerCase()}` : undefined}
-              t={t}
-            />
-            <InfoBox label="State House District" value={result.sldlName ?? "—"} t={t} />
-            <InfoBox label="State Senate District" value={result.slduName ?? "—"} t={t} />
-          </div>
-        </div>
-        );
-      })()}
-    </div>
-  );
-}
 
-function InfoBox({ label, value, href, t }: { label: string; value: string; href?: string; t: typeof DARK_THEME }) {
-  return (
-    <div className="rounded-lg px-2.5 py-2" style={{ background: t.tabBg, border: `1px solid ${t.border}` }}>
-      <div
-        className="mb-0.5 text-[9px] font-semibold uppercase tracking-wider"
-        style={{ color: t.textMuted }}
-      >
-        {label}
-      </div>
-      {href ? (
-        <a
-          href={href}
-          className="text-xs font-semibold leading-snug underline-offset-2 hover:underline"
-          style={{ color: t.demText }}
-        >
-          {value}
-        </a>
-      ) : (
-        <div className="text-xs font-semibold leading-snug" style={{ color: t.textPrimary }}>
-          {value}
+          {stateMatch ? (
+            <a
+              href={`/states/${stateMatch.id}`}
+              className="mt-1 block text-2xl font-bold leading-tight hover:underline"
+              style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}
+            >
+              {result.state}
+            </a>
+          ) : (
+            <div className="mt-1 text-2xl font-bold leading-tight" style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}>
+              {result.state ?? "—"}
+            </div>
+          )}
+
+          {result.cdName && (
+            cdRace ? (
+              <a
+                href={`/house/${cdRace.name.toLowerCase()}`}
+                className="mt-2 inline-block rounded-full px-2.5 py-1 text-xs font-bold hover:underline"
+                style={{ background: t.tabBg, color: t.demText }}
+              >
+                {result.cdName}
+              </a>
+            ) : (
+              <div className="mt-2 inline-block rounded-full px-2.5 py-1 text-xs font-bold" style={{ background: t.tabBg, color: t.textMuted }}>
+                {result.cdName}
+              </div>
+            )
+          )}
+
+          <div className="mt-3 grid grid-cols-2 gap-3 border-t pt-3" style={{ borderColor: t.border }}>
+            <div>
+              <div className="text-[9px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>State House</div>
+              <div className="mt-0.5 text-sm font-bold leading-snug" style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}>
+                {result.sldlName ?? "—"}
+              </div>
+            </div>
+            <div>
+              <div className="text-[9px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>State Senate</div>
+              <div className="mt-0.5 text-sm font-bold leading-snug" style={{ fontFamily: "var(--font-serif)", color: t.textPrimary }}>
+                {result.slduName ?? "—"}
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </div>

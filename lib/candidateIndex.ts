@@ -6,25 +6,30 @@ import {
   senateHoldovers,
   governorNoElection,
   electionYear,
+  presPastResults,
   type RaceForecast,
   type NoElectionEntry,
 } from "@/data/forecastData";
+import { popVoteData } from "@/data/popVoteData";
 import { candidateSlug } from "./candidateSlug";
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
 export type CandidateHistoryEntry = {
   year: number;
-  raceType: "house" | "senate" | "governor";
+  raceType: "house" | "senate" | "governor" | "president";
   raceId: string;
   raceName: string;
   racePath: string;
   party: "D" | "R" | "I";
+  oppParty: "D" | "R" | "I";
   side: "dem" | "rep";
   demPct: number;
   repPct: number;
   demVotes?: number;
   repVotes?: number;
+  demEV?: number;
+  repEV?: number;
   incumbent: boolean;
   isCurrent: boolean;
 };
@@ -33,12 +38,12 @@ export type CandidatePage = {
   name: string;
   slug: string;
   party: "D" | "R" | "I";
-  tab: "house" | "senate" | "governor";
+  tab: "house" | "senate" | "governor" | "president";
   state: string;
   currentPosition?: string; // e.g. "Governor · Nebraska" or "U.S. Senator · Alaska"
   currentRace?: {
     id: string;
-    raceType: "house" | "senate" | "governor";
+    raceType: "house" | "senate" | "governor" | "president";
     raceName: string;
     racePath: string;
     incumbent: boolean;
@@ -55,7 +60,7 @@ export type CandidatePage = {
 type RawEntry = {
   name: string;
   party: "D" | "R" | "I";
-  raceType: "house" | "senate" | "governor";
+  raceType: "house" | "senate" | "governor" | "president";
   raceId: string;
   raceName: string;
   racePath: string;
@@ -66,6 +71,8 @@ type RawEntry = {
   repPct: number;
   demVotes?: number;
   repVotes?: number;
+  demEV?: number;
+  repEV?: number;
   incumbent: boolean;
   isCurrent: boolean;
   currentPosition?: string;
@@ -183,6 +190,7 @@ function collectFromRaces(races: RaceForecast[], racePathPrefix: string): RawEnt
           repVotes: res.repVotes,
           incumbent: res.demIncumbent ?? false,
           isCurrent: false,
+          opponentParty: res.repParty ?? "R",
         });
       }
       if (isValidName(res.repCandidate)) {
@@ -202,6 +210,7 @@ function collectFromRaces(races: RaceForecast[], racePathPrefix: string): RawEnt
           repVotes: res.repVotes,
           incumbent: res.repIncumbent ?? false,
           isCurrent: false,
+          opponentParty: res.demParty ?? "D",
         });
       }
     }
@@ -246,6 +255,7 @@ function collectFromNoElection(
           repPct: res.repPct,
           incumbent: res.demIncumbent ?? false,
           isCurrent: false,
+          opponentParty: res.repParty ?? "R",
         });
       }
       if (isValidName(res.repCandidate)) {
@@ -263,9 +273,103 @@ function collectFromNoElection(
           repPct: res.repPct,
           incumbent: res.repIncumbent ?? false,
           isCurrent: false,
+          opponentParty: res.demParty ?? "D",
         });
       }
     }
+  }
+
+  return entries;
+}
+
+// 2008 and 2012 predate the state-by-state presidential dataset (presPastResults, which
+// starts at 2016); figures here are the certified national popular-vote and electoral-vote
+// totals for those two elections.
+const PRE_2016_PRESIDENTIAL: {
+  year: number;
+  demCandidate: string;
+  repCandidate: string;
+  demIncumbent?: boolean;
+  repIncumbent?: boolean;
+  demPct: number;
+  repPct: number;
+  demVotes: number;
+  repVotes: number;
+  demEV: number;
+  repEV: number;
+}[] = [
+  { year: 2008, demCandidate: "Barack Obama", repCandidate: "John McCain", demPct: 52.9, repPct: 45.7, demVotes: 69498516, repVotes: 59948323, demEV: 365, repEV: 173 },
+  { year: 2012, demCandidate: "Barack Obama", repCandidate: "Mitt Romney", demIncumbent: true, demPct: 51.1, repPct: 47.2, demVotes: 65915795, repVotes: 60933504, demEV: 332, repEV: 206 },
+];
+
+function collectPresidential(): RawEntry[] {
+  const entries: RawEntry[] = [];
+  const racePath = "/analysis/popular-vote";
+  const raceName = "United States";
+
+  type PresYear = (typeof PRE_2016_PRESIDENTIAL)[number];
+  const byYear: PresYear[] = [...PRE_2016_PRESIDENTIAL];
+
+  for (const year of [2016, 2020, 2024] as const) {
+    const pv = popVoteData.find(r => r.type === "President" && r.year === year);
+    const stateRow = presPastResults["CA"]?.find(r => r.year === year);
+    if (!pv || !stateRow?.demCandidate || !stateRow?.repCandidate) continue;
+    byYear.push({
+      year,
+      demCandidate: stateRow.demCandidate,
+      repCandidate: stateRow.repCandidate,
+      demIncumbent: stateRow.demIncumbent,
+      repIncumbent: stateRow.repIncumbent,
+      demPct: pv.demPct,
+      repPct: pv.repPct,
+      demVotes: pv.demVotes,
+      repVotes: pv.repVotes,
+      demEV: pv.seatsD,
+      repEV: pv.seatsR,
+    });
+  }
+
+  for (const yr of byYear) {
+    entries.push({
+      name: yr.demCandidate,
+      party: "D",
+      raceType: "president",
+      raceId: `president-${yr.year}`,
+      raceName,
+      racePath,
+      state: "",
+      year: yr.year,
+      side: "dem",
+      demPct: yr.demPct,
+      repPct: yr.repPct,
+      demVotes: yr.demVotes,
+      repVotes: yr.repVotes,
+      demEV: yr.demEV,
+      repEV: yr.repEV,
+      incumbent: yr.demIncumbent ?? false,
+      isCurrent: false,
+      opponentParty: "R",
+    });
+    entries.push({
+      name: yr.repCandidate,
+      party: "R",
+      raceType: "president",
+      raceId: `president-${yr.year}`,
+      raceName,
+      racePath,
+      state: "",
+      year: yr.year,
+      side: "rep",
+      demPct: yr.demPct,
+      repPct: yr.repPct,
+      demVotes: yr.demVotes,
+      repVotes: yr.repVotes,
+      demEV: yr.demEV,
+      repEV: yr.repEV,
+      incumbent: yr.repIncumbent ?? false,
+      isCurrent: false,
+      opponentParty: "D",
+    });
   }
 
   return entries;
@@ -281,6 +385,7 @@ function buildIndex(): Map<string, CandidatePage> {
     ...collectFromNoElection(senateNoElection, "senate", "/senate"),
     ...collectFromNoElection(senateHoldovers, "senate", "/senate", () => "2"),
     ...collectFromNoElection(governorNoElection, "governor", "/governor"),
+    ...collectPresidential(),
   ];
 
   // Group by name (exact match — intentional; slightly different names get separate pages)
@@ -342,7 +447,7 @@ function buildIndex(): Map<string, CandidatePage> {
     // Most-recent party and tab
     const mostRecent = unique[0];
     const party: "D" | "R" | "I" = mostRecent?.party ?? "D";
-    const tab: "house" | "senate" | "governor" = mostRecent?.raceType ?? "house";
+    const tab: "house" | "senate" | "governor" | "president" = mostRecent?.raceType ?? "house";
 
     // Current 2026 race
     const currentEntry = unique.find(e => e.isCurrent);
@@ -370,11 +475,14 @@ function buildIndex(): Map<string, CandidatePage> {
       raceName: e.raceName,
       racePath: e.racePath,
       party: e.party,
+      oppParty: e.opponentParty ?? (e.side === "dem" ? "R" : "D"),
       side: e.side,
       demPct: e.demPct,
       repPct: e.repPct,
       demVotes: e.demVotes,
       repVotes: e.repVotes,
+      demEV: e.demEV,
+      repEV: e.repEV,
       incumbent: e.incumbent,
       isCurrent: e.isCurrent,
     }));
