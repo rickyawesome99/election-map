@@ -1,5 +1,5 @@
-import ForecastMap from "@/components/ForecastMap";
+import OverviewEditorial from "@/components/OverviewEditorial";
 
 export default function OverviewPage() {
-  return <ForecastMap activeTab="overview" />;
+  return <OverviewEditorial />;
 }

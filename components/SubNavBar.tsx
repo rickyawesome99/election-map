@@ -14,12 +14,6 @@ const TABS: { key: string; label: string; href?: string }[] = [
   { key: "district-finder",  label: "District Finder" },
 ];
 
-function getSavedForecastTab(): "house" | "senate" | "governor" | null {
-  if (typeof window === "undefined") return null;
-  const saved = window.localStorage.getItem("raceType");
-  return saved === "house" || saved === "senate" || saved === "governor" ? saved : null;
-}
-
 function getActiveTab(pathname: string): string | null {
   if (pathname === "/house" || pathname === "/senate" || pathname === "/governor"
     || pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/")) return "forecast";
@@ -32,15 +26,9 @@ function getActiveTab(pathname: string): string | null {
   return null;
 }
 
-export default function SubNavBar({
-  initialForecastTab = null,
-}: {
-  initialForecastTab?: "house" | "senate" | "governor" | null;
-}) {
+export default function SubNavBar() {
   const pathname = usePathname();
   const activeTab = getActiveTab(pathname);
-  const [savedForecastTab, setSavedForecastTab] = useState<"house" | "senate" | "governor">(initialForecastTab ?? "senate");
-  const effectiveSavedForecastTab = getSavedForecastTab() ?? savedForecastTab;
   const activeTabRef = useRef<HTMLElement | null>(null);
   const tabRefs = useRef<Map<string, HTMLElement>>(new Map());
   const navRef = useRef<HTMLElement | null>(null);
@@ -69,12 +57,6 @@ export default function SubNavBar({
     if (!activeTab || !window.matchMedia("(max-width: 767px)").matches) return;
     activeTabRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
   }, [activeTab]);
-
-  // Re-read the saved chamber preference on every navigation — SubNavBar lives in the
-  // root layout and never unmounts, so this is how it picks up a just-changed preference.
-  useEffect(() => {
-    setSavedForecastTab(getSavedForecastTab() ?? "senate");
-  }, [pathname]);
 
   const commonClass = "relative z-10 shrink-0 px-3 py-3 text-sm font-semibold transition-colors duration-150 sm:px-3.5";
 
@@ -112,7 +94,7 @@ export default function SubNavBar({
             color: isActive ? "var(--app-text-primary)" : "var(--app-text-muted)",
           };
 
-          const targetHref = href ?? (key === "forecast" ? `/${effectiveSavedForecastTab}` : `/${key}`);
+          const targetHref = href ?? (key === "forecast" ? "/senate" : `/${key}`);
 
           return (
             <Link

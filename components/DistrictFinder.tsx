@@ -35,7 +35,6 @@ interface GeocodeResult {
 
 // Module-level caches so data is loaded at most once per page session
 let statesGeoJSONCache: FeatureCollection | null = null;
-let congressionalGeoJSONCache: FeatureCollection | null = null;
 
 async function loadStatesGeoJSON(): Promise<FeatureCollection> {
   if (statesGeoJSONCache) return statesGeoJSONCache;
@@ -44,14 +43,6 @@ async function loadStatesGeoJSON(): Promise<FeatureCollection> {
   statesGeoJSONCache = geo;
   return geo;
 }
-
-async function loadCongressionalGeoJSON(): Promise<FeatureCollection> {
-  if (congressionalGeoJSONCache) return congressionalGeoJSONCache;
-  const geo = (await fetch("/congressional-districts-2026.json").then(r => r.json())) as FeatureCollection;
-  congressionalGeoJSONCache = geo;
-  return geo;
-}
-
 
 type DistrictInfo = Omit<GeocodeResult, "lat" | "lng" | "matchedAddress">;
 
@@ -195,7 +186,6 @@ export default function DistrictFinder() {
   const [pinPosition, setPinPosition] = useState<[number, number] | null>(null);
   const [flyTarget, setFlyTarget] = useState<[number, number] | null>(null);
   const [statesGeoJSON, setStatesGeoJSON] = useState<FeatureCollection | null>(null);
-  const [congressionalGeoJSON, setCongressionalGeoJSON] = useState<FeatureCollection | null>(null);
   const [mapMoved, setMapMoved] = useState(false);
   const [resetTrigger, setResetTrigger] = useState(0);
 
@@ -208,7 +198,6 @@ export default function DistrictFinder() {
 
   useEffect(() => {
     loadStatesGeoJSON().then(setStatesGeoJSON).catch(() => {});
-    loadCongressionalGeoJSON().then(setCongressionalGeoJSON).catch(() => {});
   }, []);
 
   // Prevent page scroll while this tab is active.
@@ -418,7 +407,6 @@ export default function DistrictFinder() {
           pinPosition={pinPosition}
           flyTarget={flyTarget}
           statesGeoJSON={statesGeoJSON}
-          congressionalGeoJSON={congressionalGeoJSON}
           highlightCdGEOID={result?.cdGEOID ?? null}
           resetTrigger={resetTrigger}
           onMoved={setMapMoved}

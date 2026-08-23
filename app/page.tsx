@@ -1,9 +1,4 @@
 import { redirect } from "next/navigation";
-import { cookies } from "next/headers";
-
-function validRaceType(value: string | undefined): "house" | "senate" | "governor" {
-  return value === "house" || value === "senate" || value === "governor" ? value : "senate";
-}
 
 // Legacy `/?tab=...` links (and bare `/`) redirect to the equivalent real path.
 export default async function Home({
@@ -16,7 +11,7 @@ export default async function Home({
 
   if (tab === "house" || tab === "senate" || tab === "governor") redirect(`/${tab}`);
   if (tab === "forecast" || tab === "map") {
-    redirect(`/${validRaceType((await cookies()).get("raceType")?.value)}`);
+    redirect("/senate");
   }
   if (tab === "states") redirect("/states");
   if (tab === "counties") redirect("/counties");

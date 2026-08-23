@@ -7,11 +7,7 @@ import SubNavBar from "./SubNavBar";
 import BackButton from "./BackButton";
 import { syncThemeColor, useDarkMode } from "@/lib/useDarkMode";
 
-export default function AppShell({
-  initialForecastTab = null,
-}: {
-  initialForecastTab?: "house" | "senate" | "governor" | null;
-}) {
+export default function AppShell() {
   const pathname = usePathname();
   const isForecastDetailPage = pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/") || pathname.startsWith("/states/") || pathname.startsWith("/counties/");
   const showBack = !isForecastDetailPage && pathname.split("/").filter(Boolean).length > 1;
@@ -43,7 +39,7 @@ export default function AppShell({
         />
       </div>
       <Suspense fallback={<div className="h-[45px]" style={{ background: "var(--app-bg)", borderBottom: "1px solid var(--app-border)" }} />}>
-        <SubNavBar initialForecastTab={initialForecastTab} />
+        <SubNavBar />
       </Suspense>
     </>
   );

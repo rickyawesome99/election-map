@@ -99,8 +99,7 @@ function buildTrend<P extends { endDate: string }>(
   return points;
 }
 
-function useGenericBallotConfig(): ModeConfig {
-  return useMemo(() => {
+function buildGenericBallotConfig(): ModeConfig {
     const polls: NormalizedPoll[] = genericBallotPolls.map((p) => ({
       pollster: p.pollster, startDate: p.startDate, endDate: p.endDate,
       sample: p.sample, population: p.population, a: p.dem, b: p.rep, diff: p.diff,
@@ -110,7 +109,7 @@ function useGenericBallotConfig(): ModeConfig {
       const r = computeGenericBallotAverage(asOf, ps);
       return { a: r.dem, b: r.rep, diff: r.diff };
     });
-    return {
+  return {
       key: "generic-ballot",
       navLabel: "Generic Ballot",
       seriesALabel: "Democrat",
@@ -124,12 +123,10 @@ function useGenericBallotConfig(): ModeConfig {
       polls,
       average: { diff: avg.diff, a: avg.dem, b: avg.rep, includedKeys: new Set(avg.polls.map((p) => pollKey({ ...p, a: p.dem, b: p.rep }))) },
       trend,
-    };
-  }, []);
+  };
 }
 
-function useTrumpApprovalConfig(): ModeConfig {
-  return useMemo(() => {
+function buildTrumpApprovalConfig(): ModeConfig {
     const polls: NormalizedPoll[] = trumpApprovalPolls.map((p) => ({
       pollster: p.pollster, startDate: p.startDate, endDate: p.endDate,
       sample: p.sample, population: p.population, a: p.approve, b: p.disapprove, diff: p.diff,
@@ -139,7 +136,7 @@ function useTrumpApprovalConfig(): ModeConfig {
       const r = computeTrumpApprovalAverage(asOf, ps);
       return { a: r.approve, b: r.disapprove, diff: r.diff };
     });
-    return {
+  return {
       key: "trump-approval",
       navLabel: "Trump Approval",
       seriesALabel: "Approve",
@@ -153,9 +150,27 @@ function useTrumpApprovalConfig(): ModeConfig {
       polls,
       average: { diff: avg.diff, a: avg.approve, b: avg.disapprove, includedKeys: new Set(avg.polls.map((p) => pollKey({ ...p, a: p.approve, b: p.disapprove }))) },
       trend,
-    };
-  }, []);
+  };
 }
+
+// Trend generation is the expensive part of this component. Build only the
+// selected mode, then retain it when the user switches away and back.
+const configCache = new Map<ModeKey, ModeConfig>();
+
+function getModeConfig(mode: ModeKey): ModeConfig {
+  const cached = configCache.get(mode);
+  if (cached) return cached;
+  const config = mode === "generic-ballot" ? buildGenericBallotConfig() : buildTrumpApprovalConfig();
+  configCache.set(mode, config);
+  return config;
+}
+
+const MODE_NAV: Array<{ key: ModeKey; label: string }> = [
+  { key: "generic-ballot", label: "Generic Ballot" },
+  { key: "trump-approval", label: "Trump Approval" },
+];
+
+const INITIAL_TABLE_ROWS = 10;
 
 function ShareDot(props: { cx?: number; cy?: number; payload?: ScatterPoint; color: string }) {
   const { cx, cy, payload, color } = props;
@@ -215,13 +230,22 @@ function ChartTooltip({ active, payload, theme, config }: { active?: boolean; pa
   );
 }
 
-export default function PollingAverageCard({ theme: t }: { theme: Theme }) {
+export default function PollingAverageCard({
+  theme: t,
+  variant = "card",
+  compact = false,
+  tableHeight,
+}: {
+  theme: Theme;
+  variant?: "card" | "editorial";
+  compact?: boolean;
+  tableHeight?: number;
+}) {
   const [mode, setMode] = useState<ModeKey>("generic-ballot");
   const [pinned, setPinned] = useState<PopupPoint | null>(null);
+  const [showAllRows, setShowAllRows] = useState(false);
 
-  const gbConfig = useGenericBallotConfig();
-  const approvalConfig = useTrumpApprovalConfig();
-  const base = mode === "generic-ballot" ? gbConfig : approvalConfig;
+  const base = getModeConfig(mode);
   // Generic ballot's colors follow the theme (dem/rep blue-red shift between light/dark);
   // Trump approval's colors are fixed green/red regardless of theme.
   const config: ModeConfig = {
@@ -235,6 +259,7 @@ export default function PollingAverageCard({ theme: t }: { theme: Theme }) {
     [config.polls]
   );
   const tableRows = useMemo(() => [...config.polls].reverse(), [config.polls]);
+  const displayedTableRows = showAllRows ? tableRows : tableRows.slice(0, INITIAL_TABLE_ROWS);
 
   const shareVals = config.polls.flatMap((p) => [p.a, p.b]);
   const yMin = Math.floor(Math.min(...shareVals) - 2);
@@ -252,29 +277,30 @@ export default function PollingAverageCard({ theme: t }: { theme: Theme }) {
   const switchMode = (m: ModeKey) => {
     setMode(m);
     setPinned(null);
+    setShowAllRows(false);
   };
 
   return (
-    <div className="rounded-xl p-4 w-full" style={{ border: `1px solid ${t.border}`, background: t.panel }}>
-      <div className="flex items-center justify-between mb-3">
-        <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: t.textMuted }}>
+    <div className={variant === "card" ? "rounded-xl p-4 w-full" : "w-full"} style={variant === "card" ? { border: `1px solid ${t.border}`, background: t.panel } : undefined}>
+      <div className={`flex items-center mb-3 ${variant === "card" ? "justify-between" : "justify-start"}`}>
+        {variant === "card" && <div className="text-[10px] uppercase tracking-wider font-semibold" style={{ color: t.textMuted }}>
           Polling Average
-        </div>
-        <nav className="flex rounded-lg p-1 gap-0.5" style={{ background: t.tabBg }}>
-          {([gbConfig, approvalConfig]).map((c) => (
+        </div>}
+        <nav className={variant === "card" ? "flex rounded-lg p-1 gap-0.5" : "flex gap-5"} style={variant === "card" ? { background: t.tabBg } : undefined}>
+          {MODE_NAV.map((item) => (
             <button
-              key={c.key}
-              onClick={() => switchMode(c.key)}
-              className="px-2.5 py-1 rounded-md text-[11px] font-medium transition-all"
-              style={mode === c.key ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }}
+              key={item.key}
+              onClick={() => switchMode(item.key)}
+              className={variant === "card" ? "px-2.5 py-1 rounded-md text-[11px] font-medium transition-all" : "border-b-2 px-0 py-1.5 text-[11px] font-semibold transition-colors"}
+              style={variant === "card" ? (mode === item.key ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }) : { color: mode === item.key ? t.textPrimary : t.textMuted, borderColor: mode === item.key ? t.textPrimary : "transparent" }}
             >
-              {c.navLabel}
+              {item.label}
             </button>
           ))}
         </nav>
       </div>
 
-      <div className="rounded-lg px-3 py-2.5 flex flex-col items-stretch justify-between gap-2 sm:flex-row sm:items-center sm:gap-4 mb-3" style={{ background: t.bg }}>
+      <div className={variant === "card" ? "rounded-lg px-3 py-2.5 flex flex-col items-stretch justify-between gap-2 sm:flex-row sm:items-center sm:gap-4 mb-3" : "border-y py-3 flex flex-col items-stretch justify-between gap-2 sm:flex-row sm:items-center sm:gap-4 mb-3"} style={variant === "card" ? { background: t.bg } : { borderColor: t.border }}>
         <div className="flex flex-col">
           <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: t.textMuted }}>Weighted Average</span>
           <span className="text-[10px]" style={{ color: t.textVeryMuted }}>Most recent poll per pollster · recency + sample weighted</span>
@@ -301,7 +327,7 @@ export default function PollingAverageCard({ theme: t }: { theme: Theme }) {
         </span>
       </div>
 
-      <div style={{ height: 200 }} className="[&_*:focus]:outline-none">
+      <div style={{ height: compact ? 175 : 200 }} className="[&_*:focus]:outline-none">
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart data={config.trend} margin={{ top: 4, right: 8, left: 0, bottom: 0 }}>
             <CartesianGrid stroke={t.border} strokeDasharray="3 3" vertical={false} />
@@ -383,9 +409,12 @@ export default function PollingAverageCard({ theme: t }: { theme: Theme }) {
         </div>
       )}
 
-      <div className="mt-3 max-h-72 overflow-y-auto rounded-lg" style={{ border: `1px solid ${t.border}` }}>
+      {!compact && <div
+        className="mt-3 max-h-72 overflow-y-auto rounded-lg"
+        style={{ border: `1px solid ${t.border}`, ...(tableHeight ? { height: tableHeight, maxHeight: tableHeight } : {}) }}
+      >
         <table className="w-full text-[11px] border-collapse">
-          <thead className="sticky top-0" style={{ background: t.tabBg }}>
+          <thead className="sticky top-0 z-10" style={{ background: t.tabBg }}>
             <tr>
               <th className="text-left font-semibold uppercase tracking-wider px-2.5 py-1.5" style={{ color: t.textMuted, fontSize: 9 }}>Dates</th>
               <th className="text-left font-semibold uppercase tracking-wider px-2.5 py-1.5" style={{ color: t.textMuted, fontSize: 9 }}>Pollster</th>
@@ -396,7 +425,7 @@ export default function PollingAverageCard({ theme: t }: { theme: Theme }) {
             </tr>
           </thead>
           <tbody>
-            {tableRows.map((p, i) => {
+            {displayedTableRows.map((p, i) => {
               const included = config.average.includedKeys.has(pollKey(p));
               return (
                 <tr
@@ -418,11 +447,19 @@ export default function PollingAverageCard({ theme: t }: { theme: Theme }) {
             })}
           </tbody>
         </table>
-      </div>
-      <div className="mt-1.5 flex items-center gap-1.5 px-0.5">
+      </div>}
+      {!compact && tableRows.length > INITIAL_TABLE_ROWS && <button
+        type="button"
+        onClick={() => setShowAllRows((current) => !current)}
+        className="mt-2 w-full py-2 text-[11px] font-semibold transition-opacity hover:opacity-65"
+        style={{ color: t.textMuted, borderBottom: `1px solid ${t.border}` }}
+      >
+        {showAllRows ? "Show 10 most recent polls" : `Show all ${tableRows.length} polls`}
+      </button>}
+      {!compact && <div className="mt-1.5 flex items-center gap-1.5 px-0.5">
         <span className="inline-block h-2.5 w-2.5 rounded-sm" style={{ background: includedRowBg, border: `1px solid ${t.border}` }} />
         <span className="text-[10px]" style={{ color: t.textVeryMuted }}>Shaded rows are each pollster&apos;s most recent survey — the ones counted in the weighted average above</span>
-      </div>
+      </div>}
     </div>
   );
 }

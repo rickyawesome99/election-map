@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { cookies } from "next/headers";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
@@ -30,17 +29,11 @@ export const viewport: Viewport = {
 
 const restoreThemeScript = `(function(){try{var dark=localStorage.getItem('darkMode')==='true';var themeColor=dark?'#000000':'#ffffff';var colorScheme=dark?'dark':'light';var root=document.documentElement;root.classList.toggle('dark',dark);root.dataset.theme=colorScheme;root.style.setProperty('--browser-chrome-bg',themeColor);root.style.backgroundColor=themeColor;root.style.colorScheme=colorScheme;function syncMeta(name,content,removeMedia){var metas=Array.prototype.slice.call(document.querySelectorAll('meta[name="'+name+'"]'));var meta=metas.shift()||document.createElement('meta');meta.name=name;meta.content=content;if(removeMedia)meta.removeAttribute('media');if(!meta.parentNode)document.head.appendChild(meta);metas.forEach(function(extra){extra.remove()})}syncMeta('theme-color',themeColor,true);syncMeta('color-scheme',colorScheme,false);syncMeta('apple-mobile-web-app-status-bar-style',dark?'black':'default',false)}catch(e){}})()`;
 
-function validRaceType(value: string | undefined): "house" | "senate" | "governor" | null {
-  return value === "house" || value === "senate" || value === "governor" ? value : null;
-}
-
 export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const initialForecastTab = validRaceType((await cookies()).get("raceType")?.value);
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -48,7 +41,7 @@ export default async function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: restoreThemeScript }} />
       </head>
       <body className={`${ibmPlexSans.variable} ${ibmPlexMono.variable} antialiased`}>
-        <AppShell initialForecastTab={initialForecastTab} />
+        <AppShell />
         {children}
       </body>
     </html>
