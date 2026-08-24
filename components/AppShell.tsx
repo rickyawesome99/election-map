@@ -9,7 +9,7 @@ import { syncThemeColor, useDarkMode } from "@/lib/useDarkMode";
 
 export default function AppShell() {
   const pathname = usePathname();
-  const isForecastDetailPage = pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/") || pathname.startsWith("/states/") || pathname.startsWith("/counties/");
+  const isForecastDetailPage = pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/") || pathname.startsWith("/states/") || pathname.startsWith("/historical/");
   const showBack = !isForecastDetailPage && pathname.split("/").filter(Boolean).length > 1;
   const darkMode = useDarkMode();
 

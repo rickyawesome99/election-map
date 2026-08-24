@@ -9,7 +9,7 @@ export function resolveDefaultBackHref(pathname: string): string {
   if (pathname.startsWith("/senate/")) return "/senate";
   if (pathname.startsWith("/governor/")) return "/governor";
   if (pathname.startsWith("/states/")) return "/states";
-  if (pathname.startsWith("/counties/")) return "/counties";
+  if (pathname.startsWith("/historical/")) return "/historical";
   if (pathname.startsWith("/analysis/")) return "/analysis";
   if (pathname.startsWith("/model/")) return "/model";
   return "/overview";

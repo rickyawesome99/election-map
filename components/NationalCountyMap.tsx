@@ -955,7 +955,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
                         subtitle: `${stateInfo?.name ?? ""} · FIPS ${fips}`,
                         hasElection,
                         result,
-                        moreInfoHref: `/counties/${fips}`,
+                        moreInfoHref: `/historical/${fips}`,
                       };
                       const isSelected = selected?.key === fips;
                       const clickable = result !== null;
@@ -1215,10 +1215,10 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         {/* ── Desktop floating selected panel (bottom-right) ── */}
         {selected && (
           <div
-            className="hidden md:block absolute z-20 rounded-xl p-3 backdrop-blur-sm"
-            style={{ bottom: "1rem", right: "1rem", width: 250, background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 12px 28px rgba(0,0,0,0.25)" }}
+            className="hidden md:block absolute z-20 rounded-xl p-2.5 backdrop-blur-sm"
+            style={{ bottom: "1rem", right: "1rem", width: 220, background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 12px 28px rgba(0,0,0,0.25)" }}
           >
-            <div className="flex items-start justify-between gap-2 pb-2 mb-2" style={{ borderBottom: `1px solid ${t.border}` }}>
+            <div className="mb-1.5 flex items-start justify-between gap-2 pb-1.5" style={{ borderBottom: `1px solid ${t.border}` }}>
               <div className="min-w-0">
                 <div className="truncate text-sm font-bold leading-tight" style={{ color: t.textPrimary }}>{selected.title}</div>
                 {selected.subtitle && <div className="mt-0.5 truncate text-[10px]" style={{ color: t.textMuted }}>{selected.subtitle}</div>}
@@ -1241,13 +1241,13 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
               </div>
             </div>
             {selected.result && (
-              <div className="mb-1.5 text-xl font-extrabold" style={{ fontFamily: "var(--font-serif)", color: selected.result.margin <= 0 ? t.demText : t.repText }}>
+              <div className="mb-1 text-lg font-extrabold leading-tight" style={{ fontFamily: "var(--font-serif)", color: selected.result.margin <= 0 ? t.demText : t.repText }}>
                 {marginLabel(selected.result.margin)}
               </div>
             )}
             <ResultDetails sel={selected} isPresident={isPresident} raceLabel={raceLabel} year={year} t={t} showVotesInRows />
             {selected.moreInfoHref && (
-              <a href={selected.moreInfoHref} className="mt-2 inline-flex items-center gap-1 text-[10px] font-bold" style={{ color: t.textPrimary }}>
+              <a href={selected.moreInfoHref} className="mt-1.5 inline-flex items-center gap-1 text-[10px] font-bold" style={{ color: t.textPrimary }}>
                 More Info
                 <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />

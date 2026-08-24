@@ -77,7 +77,7 @@ const PARTY_LABEL: Record<string, string> = {
   I: "Ind",
 };
 
-function CandidateName({
+export function CandidateName({
   candidate,
   slot,
   showPartyLabel = false,

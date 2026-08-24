@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useRef, useEffect } from "react";
+import { useState, useMemo, useRef, useEffect, useLayoutEffect } from "react";
 import { useRouter } from "next/navigation";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor } from "@/lib/colorScale";
@@ -623,16 +623,29 @@ function TplDistrictMap({
 
 export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state" | "district" | "table" | "districtTable" }) {
   const router = useRouter();
-  const [selectedAbbr, setSelectedAbbr] = useState<string>(() => {
-    if (typeof window === "undefined") return statesData[0].abbr;
+  // Deterministic on both server and client (no `window` check) to avoid a hydration mismatch;
+  // corrected to the real `modelState` URL param via useLayoutEffect below, before first paint.
+  const [selectedAbbr, setSelectedAbbr] = useState<string>(statesData[0].abbr);
+
+  useLayoutEffect(() => {
     const stateFromUrl = new URLSearchParams(window.location.search).get("modelState")?.toUpperCase();
-    return stateFromUrl && statesData.some((state) => state.abbr === stateFromUrl) ? stateFromUrl : statesData[0].abbr;
-  });
+    if (stateFromUrl && statesData.some((state) => state.abbr === stateFromUrl)) {
+      // Intentional one-time sync from the URL, done before paint to avoid a hydration mismatch
+      // (server has no `window` to read `modelState` from). Not a candidate for useMemo/render-time
+      // derivation since `window.location` isn't available during SSR.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setSelectedAbbr(stateFromUrl);
+    }
+  }, []);
   const [raceFilter, setRaceFilter] = useState<string>("All");
   const [yearFilter, setYearFilter] = useState<string>("All");
   const [showGlossary, setShowGlossary] = useState(false);
   const [formulaOpen, setFormulaOpen] = useState<string | null>(null);
   const [adjustedPopupIdx, setAdjustedPopupIdx] = useState<number | null>(null);
+  const [stepOneMode, setStepOneMode] = useState<"table" | "detail">("table");
+  const [stepOneSelectedIdx, setStepOneSelectedIdx] = useState(0);
+  const [districtStepMode, setDistrictStepMode] = useState<"table" | "detail">("table");
+  const [districtStepSelectedIdx, setDistrictStepSelectedIdx] = useState(0);
   const [allStatesSort, setAllStatesSort] = useState<"centeredTpl" | "tpl" | "absCenteredTpl" | "name">("centeredTpl");
   const [allStatesSortDir, setAllStatesSortDir] = useState<"asc" | "desc">("asc");
 
@@ -816,6 +829,8 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
     setActiveSubTab("state");
     setRaceFilter("All");
     setYearFilter("All");
+    setStepOneMode("table");
+    setStepOneSelectedIdx(0);
     window.scrollTo({ top: 0, behavior: "instant" });
   }
 
@@ -825,6 +840,8 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
     setSelectedDistrictStateAbbr(state);
     setSelectedDistrictId(id);
     setActiveSubTab("district");
+    setDistrictStepMode("table");
+    setDistrictStepSelectedIdx(0);
     window.scrollTo({ top: 0, behavior: "instant" });
   }
 
@@ -865,92 +882,113 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
 
       {/* ── State TPL ── */}
       {activeSubTab === "state" && (<>
-      {returnSubTab === "table" && (
-        <button
-          onClick={handleReturnToTable}
-          className="mb-3 inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
-          style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}
-        >
-          ← Back to Table
-        </button>
-      )}
-
-      {/* ── State selector ── */}
+      {/* ── Hero ── */}
       <div
-        className="mb-5 flex flex-col sm:flex-row sm:items-center gap-3 rounded-xl px-4 py-4"
-        style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
+        className="-mx-3 sm:-mx-4 md:-mx-6 mb-6"
+        style={{
+          background: `linear-gradient(135deg, color-mix(in srgb, ${tpl > 0 ? "var(--party-rep)" : "var(--party-dem)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+        }}
       >
-        <div>
-          <div className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--app-text-very-muted)" }}>
-            State
-          </div>
-          <select
-            value={selectedAbbr}
-            onChange={(e) => {
-              setSelectedAbbr(e.target.value);
-              setRaceFilter("All");
-              setYearFilter("All");
-            }}
-            className="rounded-lg px-3 py-2 text-sm font-semibold cursor-pointer"
-            style={{
-              background: "var(--app-bg)",
-              border: "1px solid var(--app-border)",
-              color: "var(--app-text-primary)",
-              minWidth: 200,
-            }}
-          >
-            {[...statesData].sort((a, b) => a.name.localeCompare(b.name)).map((s) => (
-              <option key={s.abbr} value={s.abbr}>{s.name}</option>
-            ))}
-          </select>
-        </div>
-
-        <div className="sm:ml-4 flex flex-wrap gap-x-6 gap-y-1.5">
-          <div>
-            <div className="text-[10px] font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-very-muted)" }}>S</div>
-            <div
-              className={hasS ? "text-sm font-bold font-mono cursor-pointer underline decoration-dotted underline-offset-2" : "text-sm font-bold font-mono"}
-              style={{ color: hasS ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}
-              onClick={hasS ? () => setFormulaOpen("S") : undefined}
-              title={hasS ? "Click to see S derivation" : undefined}
+        <div className="px-3 sm:px-4 md:px-6 pt-1 pb-6">
+          {returnSubTab === "table" && (
+            <button
+              onClick={handleReturnToTable}
+              className="mb-4 inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
+              style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
             >
-              {hasS ? S : "—"}{hasS && <span className="ml-0.5 text-[10px] opacity-50">ⓘ</span>}
+              ← Back to Table
+            </button>
+          )}
+
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+            <div className="min-w-0">
+              <select
+                value={selectedAbbr}
+                onChange={(e) => {
+                  setSelectedAbbr(e.target.value);
+                  setRaceFilter("All");
+                  setYearFilter("All");
+                  setStepOneSelectedIdx(0);
+                  setStepOneMode("table");
+                }}
+                className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 cursor-pointer"
+                style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}
+              >
+                {[...statesData].sort((a, b) => a.name.localeCompare(b.name)).map((s) => (
+                  <option key={s.abbr} value={s.abbr}>{s.abbr} — {s.name}</option>
+                ))}
+              </select>
+              <h1
+                className="mt-2"
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.98, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
+              >
+                {selectedStateName}
+              </h1>
+              <div className="mt-2 text-sm" style={{ color: "var(--app-text-muted)" }}>
+                True Partisan Lean · raw election data 2017&ndash;2024 · IF/CQ/WA{!hasS && " all"} defaulted to 1.00{hasS ? " where not yet calibrated" : " (no S set for this state)"}
+              </div>
+            </div>
+
+            <div className="shrink-0 sm:text-right">
+              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
+                True Partisan Lean
+              </div>
+              <div
+                className="tabular-nums"
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: marginColor(tpl) }}
+              >
+                {fmtMargin(tpl)}
+              </div>
+              <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>
+                Centered {fmtMargin(centeredTpl)} vs. 50-state median
+              </div>
             </div>
           </div>
-          <div>
-            <div className="text-[10px] font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-very-muted)" }}>WA Active</div>
-            <div className="text-sm font-bold" style={{ color: hasS ? "var(--party-dem)" : "var(--app-text-very-muted)" }}>
-              {hasS ? "Yes" : "No (WA = 0)"}
+
+          <div className="mt-7 pt-4 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
+            <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div
+                className={hasS ? "text-xl font-extrabold tabular-nums cursor-pointer underline decoration-dotted underline-offset-4" : "text-xl font-extrabold tabular-nums"}
+                style={{ color: hasS ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}
+                onClick={hasS ? () => setFormulaOpen("S") : undefined}
+                title={hasS ? "Click to see S derivation" : undefined}
+              >
+                {hasS ? S : "—"}{hasS && <span className="ml-0.5 text-xs opacity-50">ⓘ</span>}
+              </div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                Wave Sensitivity (S)
+              </div>
+            </div>
+            <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div className="text-xl font-extrabold" style={{ color: hasS ? "var(--party-dem)" : "var(--app-text-very-muted)" }}>
+                {hasS ? "Active" : "Inactive"}
+              </div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                Wave Adjustment
+              </div>
+            </div>
+            <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div className="text-xl font-extrabold" style={{ color: (STATE_RACE_INPUTS[selectedAbbr]?.length ?? 0) > 0 ? "var(--party-dem)" : "var(--app-text-very-muted)" }}>
+                {STATE_RACE_INPUTS[selectedAbbr]?.length ? `${STATE_RACE_INPUTS[selectedAbbr].length} races` : "Defaults (1.00)"}
+              </div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                Model Inputs
+              </div>
+            </div>
+            <div>
+              <div className="text-xl font-extrabold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{allRaces.length}</div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                Races Loaded
+              </div>
             </div>
           </div>
-          <div>
-            <div className="text-[10px] font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-very-muted)" }}>Model Inputs</div>
-            <div className="text-sm font-bold" style={{ color: (STATE_RACE_INPUTS[selectedAbbr]?.length ?? 0) > 0 ? "var(--party-dem)" : "var(--app-text-very-muted)" }}>
-              {STATE_RACE_INPUTS[selectedAbbr]?.length
-                ? `${STATE_RACE_INPUTS[selectedAbbr].length} races`
-                : "All defaults (1.00)"}
-            </div>
-          </div>
-          <div>
-            <div className="text-[10px] font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-very-muted)" }}>Races Loaded</div>
-            <div className="text-sm font-bold" style={{ color: "var(--app-text-primary)" }}>{allRaces.length}</div>
-          </div>
+
           {!hasS && (
-            <div className="self-end text-xs" style={{ color: "var(--app-text-very-muted)" }}>
-              Add this state&apos;s S to <code className="font-mono text-[11px]">tplModelData.ts</code> to enable WA.
+            <div className="mt-3 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+              Add this state&apos;s S to <code className="font-mono">tplModelData.ts</code> to enable Wave Adjustment.
             </div>
           )}
         </div>
-      </div>
-
-      {/* Header */}
-      <div className="mb-5">
-        <h2 className="text-xl font-bold sm:text-2xl" style={{ color: "var(--app-text-primary)" }}>
-          True Partisan Lean (TPL) — {selectedStateName}
-        </h2>
-        <p className="text-sm mt-1" style={{ color: "var(--app-text-muted)" }}>
-          Raw election data 2017–2024 · IF/CQ/WA{!hasS && " all"} defaulted to 1.00{hasS ? " where not yet calibrated" : " (no S set for this state)"}
-        </p>
       </div>
 
       {/* Glossary (collapsible) */}
@@ -1001,19 +1039,45 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
           Step 1 — Per-Race Calculations
         </h3>
         <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-          NM = Adjusted Margin × (IF × CQ) + FF pts + WA. IF encodes seat incumbency for G/S/H/L races and presidential approval for P races; both compound with CQ into CF. Margins of 50 points or greater are first blended from 60% prior contested result and 40% prior presidential result.{" "}
-          {!hasS && <span style={{ color: "var(--app-text-very-muted)" }}>WA = 0 (no S). </span>}
-          Raw margins are live from the site&apos;s data.
+          {stepOneMode === "table" ? (
+            <>
+              NM = Adjusted Margin × (IF × CQ) + FF pts + WA. Margins of 50 points or greater are first blended from 60% prior contested result and 40% prior presidential result.{" "}
+              {!hasS && <span style={{ color: "var(--app-text-very-muted)" }}>WA = 0 (no S). </span>}
+              Click any race to open its full calculation in Race Detail.
+            </>
+          ) : (
+            <>Pick a race from the list to audit its full step-by-step math — Raw Margin → Candidate Factor → Wave Adjustment → Neutralized Margin.</>
+          )}
         </p>
 
+        <div className="flex items-end gap-4 mb-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
+          {(["table", "detail"] as const).map((mode) => {
+            const active = stepOneMode === mode;
+            return (
+              <button
+                key={mode}
+                onClick={() => setStepOneMode(mode)}
+                className="whitespace-nowrap pb-2 text-xs font-semibold transition-colors"
+                style={
+                  active
+                    ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)", marginBottom: "-1px" }
+                    : { color: "var(--app-text-muted)", borderBottom: "2px solid transparent", marginBottom: "-1px" }
+                }
+              >
+                {mode === "table" ? "Table" : "Race Detail"}
+              </button>
+            );
+          })}
+        </div>
+
         {/* Filters */}
-        <div className="flex flex-wrap gap-3 mb-3">
+        <div className="flex flex-wrap gap-3 mb-3 mt-3">
           <div className="flex items-center gap-1.5 flex-wrap">
             <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>Race</span>
             {["All", "P", "S", "G", "H", "L"].map((f) => (
               <button
                 key={f}
-                onClick={() => setRaceFilter(f)}
+                onClick={() => { setRaceFilter(f); setStepOneSelectedIdx(0); }}
                 className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
                 style={{
                   background: raceFilter === f ? "var(--app-tab-bg)" : "transparent",
@@ -1029,7 +1093,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
           <div className="flex items-center gap-1.5 flex-wrap">
             <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>Year</span>
             <button
-              onClick={() => setYearFilter("All")}
+              onClick={() => { setYearFilter("All"); setStepOneSelectedIdx(0); }}
               className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
               style={{
                 background: yearFilter === "All" ? "var(--app-tab-bg)" : "transparent",
@@ -1043,7 +1107,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
             {availableYears.map((y) => (
               <button
                 key={y}
-                onClick={() => setYearFilter(String(y))}
+                onClick={() => { setYearFilter(String(y)); setStepOneSelectedIdx(0); }}
                 className="px-2.5 py-1 rounded-full text-xs font-semibold transition-all"
                 style={{
                   background: yearFilter === String(y) ? "var(--app-tab-bg)" : "transparent",
@@ -1061,11 +1125,12 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
         </div>
 
         {/* Per-race table */}
-        <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
+        {stepOneMode === "table" && (
+        <div>
           <div className="overflow-x-auto">
             <table className="w-full min-w-[600px] text-xs">
               <thead>
-                <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
+                <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
                   {[
                     ["Race", "Race type and name"],
                     ["Year", "Election year. * = odd-year race, not yet included in TPL aggregation"],
@@ -1099,8 +1164,9 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                 {filteredRaces.map((r, i) => (
                   <tr
                     key={i}
+                    onClick={() => { setStepOneSelectedIdx(i); setStepOneMode("detail"); }}
+                    className="cursor-pointer hover:bg-[var(--app-tab-bg)] transition-colors"
                     style={{
-                      background: i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
                       borderBottom: "1px solid var(--app-border)",
                       opacity: r.inAggregation ? 1 : 0.75,
                     }}
@@ -1116,6 +1182,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                         {r.detailHref ? (
                           <a
                             href={r.detailHref}
+                            onClick={(e) => e.stopPropagation()}
                             className="font-semibold hover:underline"
                             style={{ color: "var(--app-text-primary)" }}
                           >
@@ -1133,9 +1200,8 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                       {fmtMargin(r.rawMargin)}
                     </td>
                     <td
-                      className={`px-2 py-2 text-left tabular-nums font-semibold${r.competitivenessAdjusted ? " cursor-pointer select-none" : ""}`}
+                      className="px-2 py-2 text-left tabular-nums font-semibold"
                       style={{ color: marginColor(r.adjustedMargin) }}
-                      onClick={r.competitivenessAdjusted ? () => setAdjustedPopupIdx(i) : undefined}
                     >
                       {fmtMargin(r.adjustedMargin)}
                       {r.blanketApplied && (
@@ -1191,7 +1257,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
               </tbody>
             </table>
           </div>
-          <div className="px-4 py-2 flex flex-wrap gap-x-5 text-[10px]" style={{ borderTop: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-very-muted)" }}>
+          <div className="pt-2 flex flex-wrap gap-x-5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>
             {filteredRaces.some((r) => r.competitivenessAdjusted) && (
               <span>‡ Raw margin was 50 points or greater and replaced by the 60/40 competitiveness blend.</span>
             )}
@@ -1200,6 +1266,173 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
             {!hasS && <span>WA = 0 for all races (no S on record for {selectedStateName}).</span>}
           </div>
         </div>
+        )}
+
+        {/* Race Detail */}
+        {stepOneMode === "detail" && (() => {
+          const idx = Math.min(stepOneSelectedIdx, Math.max(filteredRaces.length - 1, 0));
+          const r = filteredRaces[idx];
+          return (
+            <div className="grid grid-cols-1 md:grid-cols-[19rem_1fr] gap-6 items-start">
+              {/* Race rail */}
+              <div className="overflow-x-auto max-h-[30rem] overflow-y-auto">
+                <table className="w-full text-xs">
+                  <thead>
+                    <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+                      <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Race</th>
+                      <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>Year</th>
+                      <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right tabular-nums" style={{ color: "var(--app-text-primary)" }}>NM</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {filteredRaces.map((race, i) => (
+                      <tr
+                        key={i}
+                        onClick={() => setStepOneSelectedIdx(i)}
+                        className="cursor-pointer hover:bg-[var(--app-tab-bg)] transition-colors"
+                        style={{
+                          borderBottom: "1px solid var(--app-border)",
+                          background: i === idx ? "var(--app-tab-bg)" : "transparent",
+                          boxShadow: i === idx ? "inset 3px 0 0 var(--app-text-primary)" : "none",
+                        }}
+                      >
+                        <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
+                          <span className="inline-flex items-center gap-1.5">
+                            <span className="px-1.5 py-0.5 rounded text-[9px] font-bold font-mono" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+                              {race.raceType}
+                            </span>
+                            <span className="font-semibold">{race.race}</span>
+                          </span>
+                        </td>
+                        <td className="px-2 py-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{race.year}</td>
+                        <td className="px-2 py-2 text-right tabular-nums font-bold" style={{ color: marginColor(race.NM) }}>{fmtMargin(race.NM)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Detail panel */}
+              {r ? (
+                <div>
+                  <div className="flex flex-wrap items-end justify-between gap-4 pb-3.5" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+                    <div>
+                      <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
+                        {RACE_TYPE_LABELS[r.raceType]} · {r.year} ·{" "}
+                        {r.raceType === "P"
+                          ? "—"
+                          : r.incumbent === "R" && r.rawMargin != null
+                          ? r.rawMargin > 0 ? "R won" : "R lost"
+                          : r.incumbent === "D" && r.rawMargin != null
+                          ? r.rawMargin < 0 ? "D won" : "D lost"
+                          : r.incumbent}
+                      </div>
+                      <div style={{ fontFamily: "var(--font-serif)", fontSize: "1.4rem", fontWeight: 700, marginTop: "0.25rem", color: "var(--app-text-primary)" }}>
+                        {r.race}
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>Neutralized Margin</div>
+                      <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.75rem", fontWeight: 700, color: marginColor(r.NM) }}>{fmtMargin(r.NM)}</div>
+                    </div>
+                  </div>
+
+                  <table className="w-full text-xs mt-1">
+                    <thead>
+                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Step</th>
+                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Detail</th>
+                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right" style={{ color: "var(--app-text-muted)" }}>Factor</th>
+                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right" style={{ color: "var(--app-text-muted)" }}>Contribution</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+                        <td className="px-2 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>Raw Margin</td>
+                        <td className="px-2 py-2" style={{ color: "var(--app-text-muted)" }}>repPct − demPct, live from site data</td>
+                        <td className="px-2 py-2 text-right" style={{ color: "var(--app-text-very-muted)" }}>—</td>
+                        <td className="px-2 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(r.rawMargin) }}>{fmtMargin(r.rawMargin)}</td>
+                      </tr>
+                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+                        <td
+                          className={r.competitivenessAdjusted ? "px-2 py-2 font-semibold cursor-pointer select-none" : "px-2 py-2 font-semibold"}
+                          style={{ color: "var(--app-text-primary)" }}
+                          onClick={r.competitivenessAdjusted ? () => setAdjustedPopupIdx(idx) : undefined}
+                        >
+                          Adjusted{(r.blanketApplied || r.competitivenessAdjusted) && <span className="ml-1 opacity-50">ⓘ</span>}
+                        </td>
+                        <td className="px-2 py-2" style={{ color: "var(--app-text-muted)" }}>
+                          {r.blanketApplied
+                            ? "§ blanket ×0.8 — no valid boundary-vintage prior data"
+                            : r.competitivenessAdjusted
+                            ? "‡ 60% prior contested + 40% prior presidential blend"
+                            : "Unchanged — below the 50-pt competitiveness threshold"}
+                        </td>
+                        <td className="px-2 py-2 text-right" style={{ color: "var(--app-text-very-muted)" }}>—</td>
+                        <td className="px-2 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(r.adjustedMargin) }}>{fmtMargin(r.adjustedMargin)}</td>
+                      </tr>
+                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+                        <td
+                          className="px-2 py-2 font-semibold cursor-pointer select-none"
+                          style={{ color: "var(--app-text-primary)" }}
+                          onClick={() => setFormulaOpen("CF ↗")}
+                        >
+                          Candidate Factor<span className="ml-1 opacity-50">ⓘ</span>
+                        </td>
+                        <td className="px-2 py-2" style={{ color: "var(--app-text-muted)" }}>{r.wqTier} / {r.lqTier} candidate quality</td>
+                        <td className="px-2 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
+                          <span className="cursor-pointer hover:underline" onClick={() => setFormulaOpen("IF ↗")}>IF {r.IF.toFixed(3)}</span>
+                          {" × "}
+                          <span className="cursor-pointer hover:underline" onClick={() => setFormulaOpen("CQ ↗")}>CQ {r.CQ.toFixed(3)}</span>
+                        </td>
+                        <td className="px-2 py-2 text-right tabular-nums font-semibold" style={{ color: r.candidateFactor_pts != null && r.candidateFactor_pts !== 0 ? marginColor(r.candidateFactor_pts) : "var(--app-text-very-muted)" }}>
+                          {r.candidateFactor_pts != null && r.candidateFactor_pts !== 0 ? (r.candidateFactor_pts > 0 ? "+" : "") + r.candidateFactor_pts.toFixed(2) : "—"}
+                        </td>
+                      </tr>
+                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+                        <td
+                          className="px-2 py-2 font-semibold cursor-pointer select-none"
+                          style={{ color: "var(--app-text-primary)" }}
+                          onClick={() => setFormulaOpen("FF ↗")}
+                        >
+                          Fundraising<span className="ml-1 opacity-50">ⓘ</span>
+                        </td>
+                        <td className="px-2 py-2" style={{ color: "var(--app-text-muted)" }}>Not yet calibrated for this race</td>
+                        <td className="px-2 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>FF 1.00</td>
+                        <td className="px-2 py-2 text-right tabular-nums font-semibold" style={{ color: r.FF_pts != null && r.FF_pts !== 0 ? marginColor(r.FF_pts) : "var(--app-text-very-muted)" }}>
+                          {r.FF_pts != null && r.FF_pts !== 0 ? (r.FF_pts > 0 ? "+" : "") + r.FF_pts.toFixed(2) : "—"}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          className="px-2 py-2 font-semibold cursor-pointer select-none"
+                          style={{ color: "var(--app-text-primary)" }}
+                          onClick={() => setFormulaOpen("WA ↗")}
+                        >
+                          Wave Adjustment<span className="ml-1 opacity-50">ⓘ</span>
+                        </td>
+                        <td className="px-2 py-2" style={{ color: "var(--app-text-muted)" }}>
+                          {hasS ? `S = ${S} × national environment, ${r.year}` : "No S on record — WA = 0"}
+                        </td>
+                        <td className="px-2 py-2 text-right" style={{ color: "var(--app-text-very-muted)" }}>—</td>
+                        <td className="px-2 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
+                          {r.WA !== 0 ? (r.WA > 0 ? "+" : "") + r.WA.toFixed(2) : "—"}
+                          {r.WFCapped && <span style={{ color: "var(--app-text-very-muted)" }}>†</span>}
+                        </td>
+                      </tr>
+                      <tr style={{ borderTop: "2px solid var(--app-text-primary)" }}>
+                        <td colSpan={3} className="px-2 py-2.5 font-bold" style={{ color: "var(--app-text-primary)" }}>Neutralized Margin</td>
+                        <td className="px-2 py-2.5 text-right tabular-nums font-bold" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>{fmtMargin(r.NM)}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>No races match the selected filters.</div>
+              )}
+            </div>
+          );
+        })()}
 
         {/* NES strip */}
         <div className="mt-2.5 flex flex-wrap gap-x-5 gap-y-1">
@@ -1228,76 +1461,86 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
           Step 2 — Year-Level Aggregation
         </h3>
         <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
+          Each cycle&apos;s weighted race score (WRS), and the share it contributes to the final TPL.
+        </p>
+
+        {/* Year-flow strip */}
+        <div className="flex flex-wrap gap-x-8 gap-y-4 mb-6" style={{ borderTop: "1px solid var(--app-border)", paddingTop: "1.1rem" }}>
+          {[...G.YEARS].reverse().map((year, i, arr) => {
+            const agg = yearAggregations.find((a) => a.year === year);
+            const hasData = agg && agg.racesPresent.length > 0;
+            const weight = (G.YEAR_WEIGHTS[year] ?? 0) * 100;
+            return (
+              <div key={year} className={i < arr.length - 1 ? "pr-8" : undefined} style={i < arr.length - 1 ? { borderRight: "1px solid var(--app-border)" } : undefined}>
+                <div className="text-xs font-bold" style={{ color: "var(--app-text-muted)" }}>{year}</div>
+                <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.5rem", fontWeight: 700, marginTop: "0.2rem", color: hasData ? marginColor(agg!.WRS) : "var(--app-text-very-muted)" }}>
+                  {hasData ? fmtMargin(agg!.WRS) : "—"}
+                </div>
+                <div className="h-[3px] rounded-full mt-3.5 max-w-[8rem] overflow-hidden" style={{ background: "var(--app-tab-bg)" }}>
+                  <div className="h-full" style={{ width: `${weight}%`, background: "var(--app-text-very-muted)" }} />
+                </div>
+                <div className="text-[10px] mt-1.5" style={{ color: "var(--app-text-very-muted)" }}>{weight.toFixed(0)}% of TPL</div>
+              </div>
+            );
+          })}
+        </div>
+
+        <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
           House districts averaged into one state-level signal per year.
           Race type weights redistributed among types present.
           <strong style={{ color: "var(--app-text-primary)" }}> WRS</strong> = weighted average of ARMs.
         </p>
 
-        <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[540px] text-xs">
-              <thead>
-                <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
-                  {(["Year", "President", "Governor", "Senate", "House Avg", "Leg", "WRS"] as const).map((label) => (
-                    <th
-                      key={label}
-                      className={`px-3 py-2.5 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${label === "Year" ? "text-left" : "text-right"}`}
-                      style={{ color: label === "WRS" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
-                    >
-                      {label}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {yearAggregations.map((agg, i) => (
-                  <tr
-                    key={agg.year}
-                    style={{
-                      background: i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
-                      borderBottom: "1px solid var(--app-border)",
-                    }}
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[540px] text-xs">
+            <thead>
+              <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+                {(["Year", "President", "Governor", "Senate", "House Avg", "Leg", "WRS"] as const).map((label) => (
+                  <th
+                    key={label}
+                    className={`px-3 py-2.5 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${label === "Year" ? "text-left" : "text-right"}`}
+                    style={{ color: label === "WRS" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
                   >
-                    <td className="px-3 py-2.5 font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
-                      {agg.year}
-                    </td>
-                    {(["P", "G", "S", "H", "L"] as const).map((type) => {
-                      const val = agg.typeNMs[type] ?? null;
-                      const wt = agg.redistributedWeights[type];
-                      return (
-                        <td key={type} className="px-3 py-2 text-right tabular-nums">
-                          <div className="font-semibold" style={{ color: val != null ? marginColor(val) : "var(--app-text-very-muted)" }}>
-                            {val != null ? fmtMargin(val) : "—"}
-                          </div>
-                          {wt != null && (
-                            <div className="text-[10px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>
-                              {(wt * 100).toFixed(1)}%
-                            </div>
-                          )}
-                        </td>
-                      );
-                    })}
-                    <td
-                      className="px-3 py-2.5 text-right tabular-nums font-bold"
-                      style={{ color: marginColor(agg.WRS || null), background: marginBg(agg.WRS || null) }}
-                    >
-                      {agg.racesPresent.length > 0 ? fmtMargin(agg.WRS) : "—"}
-                    </td>
-                  </tr>
+                    {label}
+                  </th>
                 ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div className="mt-2.5 flex flex-wrap gap-x-5 gap-y-1">
-          {G.YEARS.map((year) => (
-            <span key={year} className="text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
-              {year} weight: <span className="font-semibold" style={{ color: "var(--app-text-muted)" }}>
-                {((G.YEAR_WEIGHTS[year] ?? 0) * 100).toFixed(0)}%
-              </span>
-            </span>
-          ))}
+              </tr>
+            </thead>
+            <tbody>
+              {yearAggregations.map((agg, i) => (
+                <tr
+                  key={agg.year}
+                  style={{ borderBottom: i < yearAggregations.length - 1 ? "1px solid var(--app-border)" : undefined }}
+                >
+                  <td className="px-3 py-2.5 font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+                    {agg.year}
+                  </td>
+                  {(["P", "G", "S", "H", "L"] as const).map((type) => {
+                    const val = agg.typeNMs[type] ?? null;
+                    const wt = agg.redistributedWeights[type];
+                    return (
+                      <td key={type} className="px-3 py-2 text-right tabular-nums">
+                        <div className="font-semibold" style={{ color: val != null ? marginColor(val) : "var(--app-text-very-muted)" }}>
+                          {val != null ? fmtMargin(val) : "—"}
+                        </div>
+                        {wt != null && (
+                          <div className="text-[10px] font-normal" style={{ color: "var(--app-text-very-muted)" }}>
+                            {(wt * 100).toFixed(1)}%
+                          </div>
+                        )}
+                      </td>
+                    );
+                  })}
+                  <td
+                    className="px-3 py-2.5 text-right tabular-nums font-bold"
+                    style={{ color: marginColor(agg.WRS || null), background: marginBg(agg.WRS || null) }}
+                  >
+                    {agg.racesPresent.length > 0 ? fmtMargin(agg.WRS) : "—"}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -1432,266 +1675,469 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
       </>)}
 
       {/* ── District TPL ── */}
-      {activeSubTab === "district" && (
-        <>
+      {activeSubTab === "district" && (<>
+      {/* ── Hero ── */}
+      <div
+        className="-mx-3 sm:-mx-4 md:-mx-6 mb-6"
+        style={{
+          background: `linear-gradient(135deg, color-mix(in srgb, ${selectedDistrictCalc.tpl > 0 ? "var(--party-rep)" : "var(--party-dem)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
+        }}
+      >
+        <div className="px-3 sm:px-4 md:px-6 pt-1 pb-6">
           {returnSubTab === "districtTable" && (
             <button
               onClick={handleReturnToTable}
-              className="mb-3 inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
-              style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)", color: "var(--app-text-muted)" }}
+              className="mb-4 inline-flex items-center gap-1 rounded-lg px-3 py-1.5 text-xs font-semibold"
+              style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}
             >
               ← Back to District Table
             </button>
           )}
 
-          {/* State + District selectors */}
-          <div className="mb-5 flex flex-col sm:flex-row sm:items-center gap-3 rounded-xl px-4 py-4"
-            style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}>
-            <div>
-              <div className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--app-text-very-muted)" }}>State</div>
-              <select
-                value={selectedDistrictStateAbbr}
-                onChange={(e) => {
-                  const abbr = e.target.value;
-                  setSelectedDistrictStateAbbr(abbr);
-                  const first = DISTRICTS_BY_STATE[abbr]?.[0]?.id ?? "";
-                  setSelectedDistrictId(first);
-                }}
-                className="rounded-lg px-3 py-2 text-sm font-semibold cursor-pointer"
-                style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)", minWidth: 180 }}
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
+            <div className="min-w-0">
+              <div className="flex flex-wrap gap-2">
+                <select
+                  value={selectedDistrictStateAbbr}
+                  onChange={(e) => {
+                    const abbr = e.target.value;
+                    setSelectedDistrictStateAbbr(abbr);
+                    const first = DISTRICTS_BY_STATE[abbr]?.[0]?.id ?? "";
+                    setSelectedDistrictId(first);
+                    setDistrictStepMode("table");
+                    setDistrictStepSelectedIdx(0);
+                  }}
+                  className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 cursor-pointer"
+                  style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}
+                >
+                  {Object.keys(DISTRICTS_BY_STATE).sort().map((abbr) => {
+                    const name = statesData.find((s) => s.abbr === abbr)?.name ?? abbr;
+                    return <option key={abbr} value={abbr}>{name}</option>;
+                  })}
+                </select>
+                <select
+                  value={selectedDistrictId}
+                  onChange={(e) => {
+                    setSelectedDistrictId(e.target.value);
+                    setDistrictStepMode("table");
+                    setDistrictStepSelectedIdx(0);
+                  }}
+                  className="text-xs font-bold px-2.5 py-1 rounded-full shrink-0 cursor-pointer"
+                  style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)", border: "none" }}
+                >
+                  {(DISTRICTS_BY_STATE[selectedDistrictStateAbbr] ?? []).map((dist) => (
+                    <option key={dist.id} value={dist.id}>{dist.code}</option>
+                  ))}
+                </select>
+              </div>
+              <h1
+                className="mt-2"
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 5.5vw, 3.5rem)", fontWeight: 700, lineHeight: 0.98, letterSpacing: "-0.02em", color: "var(--app-text-primary)" }}
               >
-                {Object.keys(DISTRICTS_BY_STATE).sort().map((abbr) => {
-                  const name = statesData.find((s) => s.abbr === abbr)?.name ?? abbr;
-                  return <option key={abbr} value={abbr}>{name}</option>;
-                })}
-              </select>
+                {selectedDistrictData?.code ?? "—"}
+              </h1>
+              <div className="mt-2 text-sm" style={{ color: "var(--app-text-muted)" }}>
+                {selectedDistrictData?.stateName ?? selectedDistrictStateAbbr} · presidential results 2016&ndash;2024, reaggregated to 2026 boundaries
+              </div>
             </div>
-            <div>
-              <div className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: "var(--app-text-very-muted)" }}>District</div>
-              <select
-                value={selectedDistrictId}
-                onChange={(e) => setSelectedDistrictId(e.target.value)}
-                className="rounded-lg px-3 py-2 text-sm font-semibold cursor-pointer"
-                style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)", color: "var(--app-text-primary)", minWidth: 120 }}
+
+            <div className="shrink-0 sm:text-right">
+              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
+                District True Partisan Lean
+              </div>
+              <div
+                className="tabular-nums"
+                style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem, 4.5vw, 3rem)", fontWeight: 700, lineHeight: 1, marginTop: "0.35rem", color: marginColor(selectedDistrictCalc.tpl) }}
               >
-                {(DISTRICTS_BY_STATE[selectedDistrictStateAbbr] ?? []).map((dist) => (
-                  <option key={dist.id} value={dist.id}>{dist.code}</option>
-                ))}
-              </select>
+                {fmtMargin(selectedDistrictCalc.tpl)}
+              </div>
+              <div className="mt-1 text-xs" style={{ color: "var(--app-text-muted)" }}>
+                Centered {fmtMargin(centeredDistrictTpl)} vs. 435-district median
+              </div>
             </div>
           </div>
 
-
-          {/* Header */}
-          <div className="mb-5">
-            <h2 className="text-xl font-bold sm:text-2xl" style={{ color: "var(--app-text-primary)" }}>
-              District True Partisan Lean — {selectedDistrictData?.code ?? "—"}
-            </h2>
-            <p className="text-sm mt-1" style={{ color: "var(--app-text-muted)" }}>
-              Presidential results 2016–2024 reaggregated to 2026 boundaries · IF (presidential approval) · CQ (candidate quality)
-            </p>
+          <div className="mt-7 pt-4 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
+            <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div className="text-xl font-extrabold" style={{ color: "var(--app-text-primary)" }}>2016&ndash;2024</div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                Years Covered
+              </div>
+            </div>
+            <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div className="text-xl font-extrabold" style={{ color: "var(--app-text-primary)" }}>Presidential Only</div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                Race Types
+              </div>
+            </div>
+            <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div className="text-xl font-extrabold" style={{ color: "var(--app-text-very-muted)" }}>Not Modeled</div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                Wave Adjustment
+              </div>
+            </div>
+            <div>
+              <div className="text-xl font-extrabold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{selectedDistrictCalc.races.length}</div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+                Races Loaded
+              </div>
+            </div>
           </div>
 
-          {/* Step 1 — Race table */}
-          <div className="mb-7">
-            <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
-              Step 1 — Per-Race Calculations
-            </h3>
-            <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-              NM = Raw Margin + CF. IF encodes presidential approval; CQ encodes candidate quality. No FF or wave adjustment for district model.
-            </p>
-            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-              <div className="overflow-x-auto">
-                <table className="w-full min-w-[560px] text-xs">
-                  <thead>
-                    <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
-                      {[
-                        ["Race", "Race type and name"],
-                        ["Year", "Election year"],
-                        ["Raw", "Presidential two-party margin (R-positive). Reaggregated to 2026 boundaries."],
-                        ["IF ↗", "Presidential approval IF = 1 + presMargin × k_pif × partySign. Click for details."],
-                        ["WQ / LQ", "Winning and losing candidate quality tiers"],
-                        ["CQ ↗", "Candidate Quality Factor = WQ × LQ. Click for details."],
-                        ["CF ↗", "Candidate Factor = Raw×(IF−1) + cappedRaw×(CQ−1). Click for full breakdown."],
-                        ["NM ↗", "Neutralized Margin = Raw + CF. Click for details."],
-                      ].map(([label, tip], ci) => {
-                        const panelKey = label === "CF ↗" ? "District CF ↗" : label === "IF ↗" ? "District IF ↗" : label === "CQ ↗" ? "District CQ ↗" : label === "NM ↗" ? "District NM ↗" : null;
-                        return (
-                        <th
-                          key={label}
-                          title={panelKey ? `Click to see ${label} formula` : tip}
-                          className={`px-2 py-2 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap text-left ${panelKey ? "cursor-pointer select-none" : ""}`}
-                          style={{ color: ci === 7 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
-                          onClick={panelKey ? () => setFormulaOpen(panelKey) : undefined}
+          <div className="mt-3 text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+            Three-cycle presidential averaging dampens wave effects, so WA and FF are omitted from the district model.
+          </div>
+        </div>
+      </div>
+
+      {/* ── Step 1: Per-race table ── */}
+      <div className="mb-7">
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
+          Step 1 — Per-Race Calculations
+        </h3>
+        <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
+          {districtStepMode === "table" ? (
+            <>NM = Raw Margin + Candidate Factor. IF encodes presidential approval; CQ encodes candidate quality. Click any race to open its full calculation in Race Detail.</>
+          ) : (
+            <>Pick a presidential cycle to audit its full step-by-step math — Raw Margin → Candidate Factor → Neutralized Margin.</>
+          )}
+        </p>
+
+        <div className="flex items-end gap-4 mb-3" style={{ borderBottom: "1px solid var(--app-border)" }}>
+          {(["table", "detail"] as const).map((mode) => {
+            const active = districtStepMode === mode;
+            return (
+              <button
+                key={mode}
+                onClick={() => setDistrictStepMode(mode)}
+                className="whitespace-nowrap pb-2 text-xs font-semibold transition-colors"
+                style={
+                  active
+                    ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)", marginBottom: "-1px" }
+                    : { color: "var(--app-text-muted)", borderBottom: "2px solid transparent", marginBottom: "-1px" }
+                }
+              >
+                {mode === "table" ? "Table" : "Race Detail"}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Per-race table */}
+        {districtStepMode === "table" && (
+        <div>
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[560px] text-xs">
+              <thead>
+                <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+                  {[
+                    ["Race", "Race type and name"],
+                    ["Year", "Election year"],
+                    ["Raw", "Presidential two-party margin (R-positive). Reaggregated to 2026 boundaries."],
+                    ["IF ↗", "Presidential approval IF = 1 + presMargin × k_pif × partySign. Click for details."],
+                    ["WQ / LQ", "Winning and losing candidate quality tiers"],
+                    ["CQ ↗", "Candidate Quality Factor = WQ × LQ. Click for details."],
+                    ["CF ↗", "Candidate Factor = Raw×(IF−1) + cappedRaw×(CQ−1). Click for full breakdown."],
+                    ["NM ↗", "Neutralized Margin = Raw + CF. Click for details."],
+                  ].map(([label, tip], ci) => {
+                    const panelKey = label === "CF ↗" ? "District CF ↗" : label === "IF ↗" ? "District IF ↗" : label === "CQ ↗" ? "District CQ ↗" : label === "NM ↗" ? "District NM ↗" : null;
+                    return (
+                    <th
+                      key={label}
+                      title={panelKey ? `Click to see ${label} formula` : tip}
+                      className={`px-2 py-2 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap text-left ${panelKey ? "cursor-pointer select-none" : ""}`}
+                      style={{ color: ci === 7 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                      onClick={panelKey ? () => setFormulaOpen(panelKey) : undefined}
+                    >
+                      {label}{panelKey && <span className="ml-0.5 opacity-50">ⓘ</span>}
+                    </th>
+                    );
+                  })}
+                </tr>
+              </thead>
+              <tbody>
+                {selectedDistrictCalc.races.map((r, i) => (
+                  <tr
+                    key={r.year}
+                    onClick={() => { setDistrictStepSelectedIdx(i); setDistrictStepMode("detail"); }}
+                    className="cursor-pointer hover:bg-[var(--app-tab-bg)] transition-colors"
+                    style={{ borderBottom: "1px solid var(--app-border)" }}
+                  >
+                    <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
+                      {selectedDistrictHouseHref ? (
+                        <a
+                          href={`/house/${selectedDistrictHouseHref}`}
+                          onClick={(e) => e.stopPropagation()}
+                          className="font-semibold hover:underline"
+                          style={{ color: "var(--app-text-primary)" }}
                         >
-                          {label}{panelKey && <span className="ml-0.5 opacity-50">ⓘ</span>}
-                        </th>
-                        );
-                      })}
+                          President
+                        </a>
+                      ) : (
+                        <span className="font-semibold">President</span>
+                      )}
+                    </td>
+                    <td className="px-2 py-2 tabular-nums" style={{ color: "var(--app-text-muted)" }}>{r.year}</td>
+                    <td className="px-2 py-2 text-left tabular-nums font-semibold" style={{ color: marginColor(r.rawMargin) }}>
+                      {fmtMargin(r.rawMargin)}
+                    </td>
+                    <td className="px-2 py-2 text-left tabular-nums font-mono" style={{ color: r.IF !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
+                      {r.IF.toFixed(3)}
+                    </td>
+                    <td className="px-2 py-2 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
+                      {`${r.wqTier} / ${r.lqTier}`}
+                    </td>
+                    <td className="px-2 py-2 text-left tabular-nums font-mono" style={{ color: r.CQ !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
+                      {r.CQ.toFixed(4)}
+                    </td>
+                    <td className="px-2 py-2 text-left tabular-nums font-semibold" style={{ color: r.candidateFactor_pts !== 0 ? marginColor(r.candidateFactor_pts) : "var(--app-text-very-muted)" }}>
+                      {r.candidateFactor_pts !== 0 ? (r.candidateFactor_pts > 0 ? "+" : "") + r.candidateFactor_pts.toFixed(2) : "—"}
+                    </td>
+                    <td className="px-2 py-2 text-left tabular-nums font-bold" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>
+                      {fmtMargin(r.NM)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        )}
+
+        {/* Race Detail */}
+        {districtStepMode === "detail" && (() => {
+          const idx = Math.min(districtStepSelectedIdx, Math.max(selectedDistrictCalc.races.length - 1, 0));
+          const r = selectedDistrictCalc.races[idx];
+          return (
+            <div className="grid grid-cols-1 md:grid-cols-[19rem_1fr] gap-6 items-start">
+              {/* Race rail */}
+              <div className="overflow-x-auto max-h-[30rem] overflow-y-auto">
+                <table className="w-full text-xs">
+                  <thead>
+                    <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+                      <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Race</th>
+                      <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>Year</th>
+                      <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right tabular-nums" style={{ color: "var(--app-text-primary)" }}>NM</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {selectedDistrictCalc.races.map((r, i) => (
+                    {selectedDistrictCalc.races.map((race, i) => (
                       <tr
-                        key={r.year}
+                        key={race.year}
+                        onClick={() => setDistrictStepSelectedIdx(i)}
+                        className="cursor-pointer hover:bg-[var(--app-tab-bg)] transition-colors"
                         style={{
-                          background: i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
                           borderBottom: "1px solid var(--app-border)",
+                          background: i === idx ? "var(--app-tab-bg)" : "transparent",
+                          boxShadow: i === idx ? "inset 3px 0 0 var(--app-text-primary)" : "none",
                         }}
                       >
                         <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
-                          {selectedDistrictHouseHref ? (
-                            <a
-                              href={`/house/${selectedDistrictHouseHref}`}
-                              className="font-semibold hover:underline"
-                              style={{ color: "var(--app-text-primary)" }}
-                            >
-                              President
-                            </a>
-                          ) : (
+                          <span className="inline-flex items-center gap-1.5">
+                            <span className="px-1.5 py-0.5 rounded text-[9px] font-bold font-mono" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+                              P
+                            </span>
                             <span className="font-semibold">President</span>
-                          )}
+                          </span>
                         </td>
-                        <td className="px-2 py-2 tabular-nums font-semibold" style={{ color: "var(--app-text-primary)" }}>{r.year}</td>
-                        <td className="px-2 py-2 tabular-nums font-mono" style={{ color: marginColor(r.rawMargin) }}>
-                          {fmtMargin(r.rawMargin)}
-                        </td>
-                        <td className="px-2 py-2 tabular-nums font-mono" style={{ color: r.IF !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
-                          {r.IF.toFixed(3)}
-                        </td>
-                        <td className="px-2 py-2 text-[11px]" style={{ color: "var(--app-text-muted)" }}>
-                          {`${r.wqTier} / ${r.lqTier}`}
-                        </td>
-                        <td className="px-2 py-2 tabular-nums font-mono" style={{ color: r.CQ !== 1 ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
-                          {r.CQ.toFixed(4)}
-                        </td>
-                        <td className="px-2 py-2 tabular-nums font-semibold" style={{ color: r.candidateFactor_pts !== 0 ? marginColor(r.candidateFactor_pts) : "var(--app-text-very-muted)" }}>
-                          {r.candidateFactor_pts !== 0 ? (r.candidateFactor_pts > 0 ? "+" : "") + r.candidateFactor_pts.toFixed(2) : "—"}
-                        </td>
-                        <td className="px-2 py-2 tabular-nums font-bold" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>
-                          {fmtMargin(r.NM)}
-                        </td>
+                        <td className="px-2 py-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{race.year}</td>
+                        <td className="px-2 py-2 text-right tabular-nums font-bold" style={{ color: marginColor(race.NM) }}>{fmtMargin(race.NM)}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
-            </div>
-          </div>
 
-          {/* Step 2 — Year aggregation */}
-          <div className="mb-7">
-            <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
-              Step 2 — Year Aggregation
-            </h3>
-            <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-              Weighted average of presidential NMs. Year weights: 2024 = 70% · 2020 = 20% · 2016 = 10%.
-            </p>
-            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-              <div className="overflow-x-auto">
-                <table className="w-full text-xs">
-                  <thead>
-                    <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
-                      {["Year", "Weight", "President NM", "Weighted"].map((label, ci) => (
-                        <th key={label} className="px-3 py-2 text-[10px] uppercase tracking-wider font-semibold text-left"
-                          style={{ color: ci === 3 ? "var(--app-text-primary)" : "var(--app-text-muted)" }}>
-                          {label}
-                        </th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {selectedDistrictCalc.races.slice().reverse().map((r, i) => {
-                      const w = G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0;
-                      const weighted = w * r.NM;
-                      return (
-                        <tr key={r.year} style={{ background: i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)", borderBottom: "1px solid var(--app-border)" }}>
-                          <td className="px-3 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>{r.year}</td>
-                          <td className="px-3 py-2 font-mono" style={{ color: "var(--app-text-muted)" }}>{(w * 100).toFixed(0)}%</td>
-                          <td className="px-3 py-2 tabular-nums font-mono" style={{ color: marginColor(r.NM) }}>{fmtMargin(r.NM)}</td>
-                          <td className="px-3 py-2 tabular-nums font-bold" style={{ color: marginColor(weighted) }}>{fmtMargin(weighted)}</td>
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          {/* Step 3 — District TPL card */}
-          <div className="mb-7">
-            <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
-              Step 3 — Final Calculation
-            </h3>
-            <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
-              District TPL = weighted average of presidential NMs. Centered District TPL subtracts the 435-district median.
-            </p>
-            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
-              {/* Formula */}
-              <div className="px-5 py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <p className="text-[10px] font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--app-text-very-muted)" }}>Formula</p>
-                <div className="rounded-lg px-4 py-3 font-mono text-xs leading-relaxed" style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}>
-                  <div style={{ color: "var(--app-text-muted)" }}>District TPL =</div>
-                  {selectedDistrictCalc.races.slice().reverse().map((r, i) => {
-                    const w = G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0;
-                    return (
-                      <div key={r.year} className="ml-4">
-                        <span style={{ color: "var(--app-text-very-muted)" }}>{i === 0 ? "  " : "+ "}</span>
-                        <span style={{ color: "var(--app-text-primary)" }}>{w.toFixed(2)}</span>
-                        <span style={{ color: "var(--app-text-very-muted)" }}> × </span>
-                        <span style={{ color: r.NM >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
-                          {r.NM >= 0 ? "R" : "D"}+{Math.abs(r.NM).toFixed(2)}
-                        </span>
-                        <span style={{ color: "var(--app-text-very-muted)" }}> ({r.year})</span>
+              {/* Detail panel */}
+              {r ? (
+                <div>
+                  <div className="flex flex-wrap items-end justify-between gap-4 pb-3.5" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+                    <div>
+                      <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
+                        President · {r.year}
                       </div>
-                    );
-                  })}
-                  <div className="mt-2" style={{ color: "var(--app-text-muted)" }}>Centered District TPL =</div>
-                  <div className="ml-4">
-                    <span style={{ color: marginColor(selectedDistrictCalc.tpl) }}>{fmtMargin(selectedDistrictCalc.tpl)}</span>
-                    <span style={{ color: "var(--app-text-very-muted)" }}> − median </span>
-                    <span style={{ color: marginColor(nationalDistrictTpl.medianTpl) }}>{fmtMargin(nationalDistrictTpl.medianTpl)}</span>
-                    <span style={{ color: "var(--app-text-very-muted)" }}> = </span>
-                    <span style={{ color: marginColor(centeredDistrictTpl) }}>{fmtMargin(centeredDistrictTpl)}</span>
+                      <div style={{ fontFamily: "var(--font-serif)", fontSize: "1.4rem", fontWeight: 700, marginTop: "0.25rem", color: "var(--app-text-primary)" }}>
+                        {selectedDistrictData?.code ?? "—"}
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>Neutralized Margin</div>
+                      <div className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontSize: "1.75rem", fontWeight: 700, color: marginColor(r.NM) }}>{fmtMargin(r.NM)}</div>
+                    </div>
                   </div>
+
+                  <table className="w-full text-xs mt-1">
+                    <thead>
+                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Step</th>
+                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Detail</th>
+                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right" style={{ color: "var(--app-text-muted)" }}>Factor</th>
+                        <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right" style={{ color: "var(--app-text-muted)" }}>Contribution</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+                        <td className="px-2 py-2 font-semibold" style={{ color: "var(--app-text-primary)" }}>Raw Margin</td>
+                        <td className="px-2 py-2" style={{ color: "var(--app-text-muted)" }}>Presidential two-party margin, reaggregated to 2026 boundaries</td>
+                        <td className="px-2 py-2 text-right" style={{ color: "var(--app-text-very-muted)" }}>—</td>
+                        <td className="px-2 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(r.rawMargin) }}>{fmtMargin(r.rawMargin)}</td>
+                      </tr>
+                      <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
+                        <td
+                          className="px-2 py-2 font-semibold cursor-pointer select-none"
+                          style={{ color: "var(--app-text-primary)" }}
+                          onClick={() => setFormulaOpen("District CF ↗")}
+                        >
+                          Candidate Factor<span className="ml-1 opacity-50">ⓘ</span>
+                        </td>
+                        <td className="px-2 py-2" style={{ color: "var(--app-text-muted)" }}>{r.wqTier} / {r.lqTier} candidate quality</td>
+                        <td className="px-2 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>
+                          <span className="cursor-pointer hover:underline" onClick={() => setFormulaOpen("District IF ↗")}>IF {r.IF.toFixed(3)}</span>
+                          {" × "}
+                          <span className="cursor-pointer hover:underline" onClick={() => setFormulaOpen("District CQ ↗")}>CQ {r.CQ.toFixed(3)}</span>
+                        </td>
+                        <td className="px-2 py-2 text-right tabular-nums font-semibold" style={{ color: r.candidateFactor_pts !== 0 ? marginColor(r.candidateFactor_pts) : "var(--app-text-very-muted)" }}>
+                          {r.candidateFactor_pts !== 0 ? (r.candidateFactor_pts > 0 ? "+" : "") + r.candidateFactor_pts.toFixed(2) : "—"}
+                        </td>
+                      </tr>
+                      <tr style={{ borderTop: "2px solid var(--app-text-primary)" }}>
+                        <td colSpan={3} className="px-2 py-2.5 font-bold" style={{ color: "var(--app-text-primary)" }}>Neutralized Margin</td>
+                        <td className="px-2 py-2.5 text-right tabular-nums font-bold" style={{ color: marginColor(r.NM), background: marginBg(r.NM) }}>{fmtMargin(r.NM)}</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-              </div>
-              {/* Cards */}
-              <div className="grid grid-cols-2" style={{ borderBottom: "1px solid var(--app-border)" }}>
-                <div className="flex flex-col items-center justify-center py-8 px-4"
-                  style={{ borderRight: "1px solid var(--app-border)", background: centeredDistrictTpl >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)" }}>
-                  <div className="text-[10px] font-bold uppercase tracking-widest mb-2 text-center"
-                    style={{ color: centeredDistrictTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
-                    {selectedDistrictData?.code ?? "—"} Centered
+              ) : (
+                <div className="text-xs" style={{ color: "var(--app-text-very-muted)" }}>No races available.</div>
+              )}
+            </div>
+          );
+        })()}
+      </div>
+
+      {/* ── Step 2: Year aggregation ── */}
+      <div className="mb-7">
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
+          Step 2 — Year Aggregation
+        </h3>
+        <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
+          Weighted average of presidential NMs. Year weights: 2024 = 70% · 2020 = 20% · 2016 = 10%.
+        </p>
+
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[420px] text-xs">
+            <thead>
+              <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+                {(["Year", "Weight", "President NM", "Weighted"] as const).map((label) => (
+                  <th
+                    key={label}
+                    className={`px-3 py-2.5 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${label === "Year" ? "text-left" : "text-right"}`}
+                    style={{ color: label === "Weighted" ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
+                  >
+                    {label}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {selectedDistrictCalc.races.slice().reverse().map((r, i, arr) => {
+                const w = G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0;
+                const weighted = w * r.NM;
+                return (
+                  <tr key={r.year} style={{ borderBottom: i < arr.length - 1 ? "1px solid var(--app-border)" : undefined }}>
+                    <td className="px-3 py-2.5 font-bold tabular-nums" style={{ color: "var(--app-text-primary)" }}>{r.year}</td>
+                    <td className="px-3 py-2 text-right tabular-nums font-mono" style={{ color: "var(--app-text-muted)" }}>{(w * 100).toFixed(0)}%</td>
+                    <td className="px-3 py-2 text-right tabular-nums font-semibold" style={{ color: marginColor(r.NM) }}>{fmtMargin(r.NM)}</td>
+                    <td className="px-3 py-2.5 text-right tabular-nums font-bold" style={{ color: marginColor(weighted), background: marginBg(weighted) }}>{fmtMargin(weighted)}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      {/* ── Step 3: District TPL card ── */}
+      <div className="mb-7">
+        <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
+          Step 3 — Final Calculation
+        </h3>
+        <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
+          District TPL = weighted average of presidential NMs. Centered District TPL subtracts the 435-district median.
+        </p>
+
+        <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}>
+          {/* Formula */}
+          <div className="px-5 py-4" style={{ borderBottom: "1px solid var(--app-border)" }}>
+            <p className="text-[10px] font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--app-text-very-muted)" }}>Formula</p>
+            <div className="rounded-lg px-4 py-3 font-mono text-xs leading-relaxed" style={{ background: "var(--app-bg)", border: "1px solid var(--app-border)" }}>
+              <div style={{ color: "var(--app-text-muted)" }}>District TPL =</div>
+              {selectedDistrictCalc.races.slice().reverse().map((r, i) => {
+                const w = G.DISTRICT_YEAR_WEIGHTS[r.year] ?? 0;
+                return (
+                  <div key={r.year} className="ml-4">
+                    <span style={{ color: "var(--app-text-very-muted)" }}>{i === 0 ? "  " : "+ "}</span>
+                    <span style={{ color: "var(--app-text-primary)" }}>{w.toFixed(2)}</span>
+                    <span style={{ color: "var(--app-text-very-muted)" }}> × </span>
+                    <span style={{ color: r.NM >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                      {r.NM >= 0 ? "R" : "D"}+{Math.abs(r.NM).toFixed(2)}
+                    </span>
+                    <span style={{ color: "var(--app-text-very-muted)" }}> ({r.year})</span>
                   </div>
-                  <div className="text-4xl font-bold tabular-nums leading-none"
-                    style={{ color: centeredDistrictTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
-                    {Math.abs(centeredDistrictTpl) < 0.05 ? "EVEN" : `${centeredDistrictTpl >= 0 ? "R" : "D"}+${Math.abs(centeredDistrictTpl).toFixed(1)}`}
-                  </div>
-                  <div className="text-[10px] mt-2" style={{ color: "var(--app-text-muted)" }}>vs. median district</div>
-                </div>
-                <div className="flex flex-col items-center justify-center py-8 px-4"
-                  style={{ background: selectedDistrictCalc.tpl >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)" }}>
-                  <div className="text-[10px] font-bold uppercase tracking-widest mb-2 text-center"
-                    style={{ color: selectedDistrictCalc.tpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
-                    {selectedDistrictData?.code ?? "—"} District TPL
-                  </div>
-                  <div className="text-4xl font-bold tabular-nums leading-none"
-                    style={{ color: selectedDistrictCalc.tpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
-                    {Math.abs(selectedDistrictCalc.tpl) < 0.05 ? "EVEN" : `${selectedDistrictCalc.tpl >= 0 ? "R" : "D"}+${Math.abs(selectedDistrictCalc.tpl).toFixed(1)}`}
-                  </div>
-                  <div className="text-[10px] mt-2" style={{ color: "var(--app-text-muted)" }}>Neutral partisan lean</div>
-                </div>
-              </div>
-              <div className="px-5 py-4 text-xs" style={{ color: "var(--app-text-muted)" }}>
-                <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>435-district centering: </span>
-                The median district TPL is {fmtMargin(nationalDistrictTpl.medianTpl)}. Centered District TPL subtracts this baseline.
+                );
+              })}
+              <div className="mt-2" style={{ color: "var(--app-text-muted)" }}>Centered District TPL =</div>
+              <div className="ml-4">
+                <span style={{ color: marginColor(selectedDistrictCalc.tpl) }}>{fmtMargin(selectedDistrictCalc.tpl)}</span>
+                <span style={{ color: "var(--app-text-very-muted)" }}> − median </span>
+                <span style={{ color: marginColor(nationalDistrictTpl.medianTpl) }}>{fmtMargin(nationalDistrictTpl.medianTpl)}</span>
+                <span style={{ color: "var(--app-text-very-muted)" }}> = </span>
+                <span style={{ color: marginColor(centeredDistrictTpl) }}>{fmtMargin(centeredDistrictTpl)}</span>
               </div>
             </div>
           </div>
-        </>
-      )}
+
+          {/* Result */}
+          <div className="flex flex-col sm:flex-row gap-0">
+            <div className="grid grid-cols-2 sm:w-[28rem] sm:shrink-0" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div
+                className="flex flex-col items-center justify-center py-8 px-4"
+                style={{ borderRight: "1px solid var(--app-border)", background: centeredDistrictTpl >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)" }}
+              >
+                <div className="text-[10px] font-bold uppercase tracking-widest mb-2 text-center" style={{ color: centeredDistrictTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                  {selectedDistrictData?.code ?? "—"} Centered
+                </div>
+                <div className="text-4xl font-bold tabular-nums leading-none" style={{ color: centeredDistrictTpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                  {Math.abs(centeredDistrictTpl) < 0.05 ? "EVEN" : `${centeredDistrictTpl >= 0 ? "R" : "D"}+${Math.abs(centeredDistrictTpl).toFixed(1)}`}
+                </div>
+                <div className="text-[10px] mt-2" style={{ color: "var(--app-text-muted)" }}>vs. median district</div>
+              </div>
+              <div className="flex flex-col items-center justify-center py-8 px-4" style={{ background: selectedDistrictCalc.tpl >= 0 ? "var(--party-rep-subtle)" : "var(--party-dem-subtle)" }}>
+                <div className="text-[10px] font-bold uppercase tracking-widest mb-2 text-center" style={{ color: selectedDistrictCalc.tpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                  {selectedDistrictData?.code ?? "—"} District TPL
+                </div>
+                <div className="text-4xl font-bold tabular-nums leading-none" style={{ color: selectedDistrictCalc.tpl >= 0 ? "var(--party-rep)" : "var(--party-dem)" }}>
+                  {Math.abs(selectedDistrictCalc.tpl) < 0.05 ? "EVEN" : `${selectedDistrictCalc.tpl >= 0 ? "R" : "D"}+${Math.abs(selectedDistrictCalc.tpl).toFixed(1)}`}
+                </div>
+                <div className="text-[10px] mt-2" style={{ color: "var(--app-text-muted)" }}>Neutral partisan lean</div>
+              </div>
+            </div>
+
+            <div className="flex-1 px-5 py-5 flex flex-col gap-3 text-xs leading-relaxed" style={{ color: "var(--app-text-muted)" }}>
+              <div>
+                <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>435-district centering: </span>
+                The median district TPL is {fmtMargin(nationalDistrictTpl.medianTpl)}. Centered District TPL subtracts this common baseline so the median district sits at EVEN.
+              </div>
+              <div style={{ color: "var(--app-text-very-muted)" }}>
+                <span className="font-semibold" style={{ color: "var(--app-text-primary)" }}>No WA / FF: </span>
+                Three-cycle presidential averaging already dampens wave effects, so the district model omits Wave Adjustment and Fundraising Factor entirely — NM = Raw Margin + Candidate Factor.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </>)}
 
       {/* ── Table ── */}
       {activeSubTab === "table" && (
@@ -1744,13 +2190,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                       background: s.abbr === selectedAbbr ? "var(--app-border)" : i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
                       borderBottom: "1px solid var(--app-border)",
                     }}
-                    onClick={() => {
-                      setSelectedAbbr(s.abbr);
-                      setActiveSubTab("state");
-                      setRaceFilter("All");
-                      setYearFilter("All");
-                      window.scrollTo({ top: 0, behavior: "instant" });
-                    }}
+                    onClick={() => openStateTplFromTable(s.abbr)}
                   >
                     <td className="px-2 py-2 font-semibold break-words md:px-4" style={{ color: "var(--app-text-primary)" }}>
                       {s.name}
@@ -1829,12 +2269,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                       background: d.id === selectedDistrictId ? "var(--app-border)" : i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
                       borderBottom: "1px solid var(--app-border)",
                     }}
-                    onClick={() => {
-                      setSelectedDistrictStateAbbr(d.state);
-                      setSelectedDistrictId(d.id);
-                      setActiveSubTab("district");
-                      window.scrollTo({ top: 0, behavior: "instant" });
-                    }}
+                    onClick={() => openDistrictTplFromDistrictTable(d.state, d.id)}
                   >
                     <td className="px-2 py-2 font-semibold break-words md:px-4" style={{ color: "var(--app-text-primary)" }}>
                       {d.code}

@@ -279,7 +279,7 @@ export default function StateCountyMap({
                 {showTpl ? formatTpl(selected.tpl) : "Election data coming soon"}
               </div>
               <a
-                href={`/counties/${selected.fips}`}
+                href={`/historical/${selected.fips}`}
                 className="mt-2 inline-block text-xs font-semibold hover:underline"
                 style={{ color: "var(--app-text-primary)" }}
               >

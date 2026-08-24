@@ -627,7 +627,7 @@ export const senateData: RaceForecast[] = [
       "rep": { "name": "Cindy Hyde-Smith", "party": "R", "incumbent": true }
     },
     "seatHolder": "Cindy Hyde-Smith",
-    "seatParty": "D",
+    "seatParty": "R",
     "pastResults": [
       { "year": 2020, "demPct": 44.13, "repPct": 54.11, "demCandidate": "Mike Espy", "repCandidate": "Cindy Hyde-Smith", "demVotes": 578691, "repVotes": 709511, "totalVotes": 1311354, "margin": 9.98, "seat": 2, "seatClass": 2, "repIncumbent": true },
       { "year": 2018, "demPct": 46.37, "repPct": 53.63, "demCandidate": "Mike Espy", "repCandidate": "Cindy Hyde-Smith", "demVotes": 420819, "repVotes": 486769, "totalVotes": 907588, "margin": 7.27, "seat": 2, "seatClass": 2, "electionType": "Special", "repIncumbent": true },
@@ -2012,7 +2012,7 @@ export const senateCurrent: Record<string, ["D" | "R" | "I", "D" | "R" | "I"]> =
   "ME": ["D", "R"],
   "MI": ["D", "D"],
   "MN": ["D", "D"],
-  "MS": ["R", "D"],
+  "MS": ["R", "R"],
   "MT": ["R", "R"],
   "NC": ["R", "R"],
   "NE": ["R", "R"],

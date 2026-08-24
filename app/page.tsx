@@ -14,7 +14,7 @@ export default async function Home({
     redirect("/senate");
   }
   if (tab === "states") redirect("/states");
-  if (tab === "counties") redirect("/counties");
+  if (tab === "counties") redirect("/historical");
   if (tab === "district-finder") redirect("/district-finder");
   if (tab === "model" || tab === "state" || tab === "district" || tab === "table" || tab === "districtTable") {
     const path = tab === "model" ? "/model" : `/model/${tab}`;

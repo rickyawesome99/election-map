@@ -10,7 +10,7 @@ export default function AnalysisPage() {
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <main>
         <section style={{ background: "linear-gradient(110deg, color-mix(in srgb, var(--party-rep) 5%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 4%, var(--app-bg)) 100%)" }}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-14 sm:pt-16 pb-9 sm:pb-11">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-8 sm:pt-10 pb-9 sm:pb-11">
             <div className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)" }}>{electionYear} Election Analysis</div>
             <h1 className="mt-3" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.7rem, 6.4vw, 5.25rem)", fontWeight: 700, letterSpacing: "-0.025em", lineHeight: 0.92 }}>Analysis</h1>
             <p className="mt-5 max-w-2xl text-base sm:text-lg leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Deep dives into the races, coalitions, and national forces shaping {electionYear}.</p>

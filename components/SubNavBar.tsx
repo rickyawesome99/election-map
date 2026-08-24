@@ -6,10 +6,10 @@ import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react
 
 const TABS: { key: string; label: string; href?: string }[] = [
   { key: "overview",         label: "Overview" },
-  { key: "forecast",         label: "2026 Forecast" },
-  { key: "states",           label: "States" },
-  { key: "counties",         label: "Counties" },
+  { key: "forecast",         label: "Forecast" },
+  { key: "historical",       label: "Historical" },
   { key: "model",            label: "TPL" },
+  { key: "states",           label: "States" },
   { key: "analysis",         label: "Analysis",        href: "/analysis" },
   { key: "district-finder",  label: "District Finder" },
 ];
@@ -18,7 +18,7 @@ function getActiveTab(pathname: string): string | null {
   if (pathname === "/house" || pathname === "/senate" || pathname === "/governor"
     || pathname.startsWith("/house/") || pathname.startsWith("/senate/") || pathname.startsWith("/governor/")) return "forecast";
   if (pathname === "/states" || pathname.startsWith("/states/")) return "states";
-  if (pathname === "/counties" || pathname.startsWith("/counties/")) return "counties";
+  if (pathname === "/historical" || pathname.startsWith("/historical/")) return "historical";
   if (pathname === "/model" || pathname.startsWith("/model/")) return "model";
   if (pathname === "/district-finder") return "district-finder";
   if (pathname.startsWith("/analysis")) return "analysis";

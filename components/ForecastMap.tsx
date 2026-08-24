@@ -7,6 +7,8 @@ import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale"
 import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry, electionYear, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { computeProjectedMargin } from "@/lib/tplCompute";
+import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
+import { RaceTypeHeader, ForecastHero, ForecastRaceCards, KeyRaces } from "./ForecastLedger";
 
 // Both computeProjectedMargin and forecastData.margin are now R-positive — no negation needed
 export const projectedSenateData = senateData.map(r => ({ ...r, margin: computeProjectedMargin(r) }));
@@ -22,7 +24,6 @@ export const SEAT_HOLDOVERS = {
 };
 export const TOTAL_SEATS_BY_TYPE = { senate: 100, governor: 50, house: 435 };
 import Sidebar from "./Sidebar";
-import RaceTable from "./RaceTable";
 import StatesTable, { StateRow } from "./StatesTable";
 import NationalCountyMap from "./NationalCountyMap";
 import StatesOverviewMap, { type MapMode } from "./StatesOverviewMap";
@@ -150,65 +151,12 @@ export const LIGHT_THEME = {
 
 export type Theme = typeof DARK_THEME;
 
-function SeatScorecard({
-  raceType,
-  demSeats,
-  repSeats,
-  totalSeats,
-  theme: t,
-  mobile = false,
-}: {
-  raceType: RaceType;
-  demSeats: number;
-  repSeats: number;
-  totalSeats: number;
-  theme: Theme;
-  mobile?: boolean;
-}) {
-  const title = raceType === "house" ? "House Seats" : raceType === "senate" ? "Senate Seats" : "Governor Seats";
-
-  return (
-    <div
-      className={mobile ? "rounded-xl p-2" : "w-[132px] rounded-lg p-2 backdrop-blur-sm"}
-      style={{
-        background: mobile ? t.panel : t.legendBg,
-        border: `1px solid ${t.border}`,
-        boxShadow: mobile
-          ? "0 2px 8px rgba(0,0,0,0.08), inset 0 1px 0 rgba(255,255,255,0.08)"
-          : "0 4px 16px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.10)",
-      }}
-    >
-      <div className="mb-1 flex items-center gap-1.5">
-        <span className="h-px flex-1" style={{ background: t.border }} />
-        <div className="text-center text-[8px] font-bold uppercase tracking-[0.12em]" style={{ color: t.textMuted }}>
-          {mobile ? `Projected ${title}` : title}
-        </div>
-        <span className="h-px flex-1" style={{ background: t.border }} />
-      </div>
-      <div className="flex items-start justify-center gap-1.5 py-1">
-        <div className="flex flex-col items-center">
-          <span className="tabular-nums text-2xl font-extrabold leading-none tracking-tight" style={{ color: t.demText }}>{demSeats}</span>
-          <span className="mt-0.5 text-[8px] font-semibold" style={{ color: t.demText }}>Dem</span>
-        </div>
-        <span className="text-base font-medium leading-6" style={{ color: t.textVeryMuted }}>–</span>
-        <div className="flex flex-col items-center">
-          <span className="tabular-nums text-2xl font-extrabold leading-none tracking-tight" style={{ color: t.repText }}>{repSeats}</span>
-          <span className="mt-0.5 text-[8px] font-semibold" style={{ color: t.repText }}>Rep</span>
-        </div>
-      </div>
-      <div className="mt-1.5 text-center text-[8px]" style={{ color: t.textVeryMuted }}>
-        of {totalSeats} total seats
-      </div>
-    </div>
-  );
-}
-
 function persistRaceType(type: RaceType) {
   localStorage.setItem("raceType", type);
   document.cookie = `raceType=${type}; path=/; max-age=31536000; SameSite=Lax`;
 }
 
-type TopLevelTab = "forecast" | "overview" | "states" | "counties" | "model" | "district-finder";
+type TopLevelTab = "forecast" | "overview" | "states" | "historical" | "model" | "district-finder";
 
 type ModelSubTab = "state" | "district" | "table" | "districtTable";
 
@@ -225,9 +173,24 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
   const darkMode = useDarkMode();
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
+  const mapColRef = useRef<HTMLDivElement>(null);
+  const [mapColHeight, setMapColHeight] = useState<number | undefined>(undefined);
 
   useEffect(() => {
     if (activeTab === "forecast") persistRaceType(raceType);
+  }, [activeTab, raceType]);
+
+  // Keep the "Key Races" column capped to the height of the map+legend column
+  // (its own content scrolls past that instead of stretching the row).
+  useEffect(() => {
+    const el = mapColRef.current;
+    if (!el || activeTab !== "forecast") return;
+    const ro = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      if (entry) setMapColHeight(entry.contentRect.height);
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
   }, [activeTab, raceType]);
 
   function selectRaceType(type: RaceType) {
@@ -239,11 +202,16 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
   const isHouse = activeTab === "forecast" && raceType === "house";
   const geoUrl = isHouse ? HOUSE_DISTRICTS_2026_URL : STATES_URL;
   const data = raceType === "house" ? projectedHouseData : raceType === "senate" ? projectedSenateData : projectedGovernorData;
-  const showSeatScorecard = activeTab === "forecast";
   const forecastMapKey = `${geoUrl}:${raceType}:${mapKey}`;
   const demSeats = SEAT_HOLDOVERS[raceType].dem + data.filter((race) => race.margin <= 0).length;
   const repSeats = SEAT_HOLDOVERS[raceType].rep + data.filter((race) => race.margin > 0).length;
   const totalSeats = TOTAL_SEATS_BY_TYPE[raceType];
+  const genericBallot = useMemo(() => computeGenericBallotAverage(), []);
+  const tossUps = useMemo(() => data.filter((race) => Math.abs(race.margin) < 1).length, [data]);
+  const flipped = useMemo(
+    () => data.filter((race) => race.seatParty && race.seatParty !== (race.margin <= 0 ? "D" : "R")).length,
+    [data]
+  );
 
   function findMatch(geo: GeoFeature): RaceForecast | undefined {
     if (isHouse) {
@@ -268,62 +236,44 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
       {/* ── Page content ── */}
       <div className="px-3 pt-1 pb-3 sm:px-4 sm:pt-1 sm:pb-4 md:px-6 md:pt-1 md:pb-5">
 
+        {/* ── Forecast hero + flat race-type header (forecast tab only) ── */}
+        {activeTab === "forecast" && (
+          <>
+            <ForecastHero
+              raceType={raceType}
+              demSeats={demSeats}
+              repSeats={repSeats}
+              totalSeats={totalSeats}
+              seatsUp={data.length}
+              genericBallotDiff={genericBallot.diff}
+              tossUps={tossUps}
+              flipped={flipped}
+            />
+            <RaceTypeHeader raceType={raceType} onSelect={selectRaceType} count={data.length} />
+          </>
+        )}
+
+        {/* ── Map (2/3) + Key Races (1/3) on desktop, forecast tab only ── */}
+        <div className={activeTab === "forecast" ? "md:grid md:grid-cols-3 md:gap-8 md:items-start" : ""}>
+        <div ref={mapColRef} className={activeTab === "forecast" ? "md:col-span-2" : ""}>
+
         {/* ── Map card (forecast/states only — counties renders its own layout below) ── */}
         {(activeTab === "forecast" || activeTab === "states") && <div
-          className="relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-[520px]"
-          style={{
-            border: `1px solid ${t.border}`,
-            boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
-          }}
+          className={
+            activeTab === "forecast"
+              ? "relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-auto md:aspect-[8/5]"
+              : "relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-[520px]"
+          }
+          style={
+            activeTab === "forecast"
+              ? {}
+              : { border: `1px solid ${t.border}`, boxShadow: "0 2px 12px rgba(0,0,0,0.08)" }
+          }
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
             setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top, containerW: rect.width, containerH: rect.height });
           }}
         >
-          {/* ── H/S/G race-type toggle (forecast map only) ── */}
-          {activeTab === "forecast" && (
-            <>
-              {/* Mobile: centered top */}
-              <div
-                className="absolute left-1/2 top-2 -translate-x-1/2 rounded-lg p-1 md:hidden z-10"
-                style={{ background: t.legendBg, border: `1px solid ${t.border}` }}
-              >
-                <nav className="flex gap-0.5">
-                  {(["house", "senate", "governor"] as RaceType[]).map((rt) => (
-                    <button
-                      key={rt}
-                      aria-label={rt === "senate" ? "Senate" : rt === "house" ? "House" : "Governor"}
-                      onClick={() => selectRaceType(rt)}
-                      className="rounded-md px-2.5 py-1 text-[10px] font-medium transition-all"
-                      style={raceType === rt ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }}
-                    >
-                      {rt === "senate" ? "Senate" : rt === "house" ? "House" : "Governor"}
-                    </button>
-                  ))}
-                </nav>
-              </div>
-              {/* Desktop: top-right */}
-              <div
-                className="hidden md:block absolute rounded-xl p-1.5 backdrop-blur-sm z-10"
-                style={{ top: "1rem", right: "1.25rem", background: t.legendBg, border: `1px solid ${t.border}`, boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
-              >
-                <nav className="flex rounded-lg p-1 gap-0.5" style={{ background: t.tabBg }}>
-                  {(["house", "senate", "governor"] as RaceType[]).map((rt) => (
-                    <button
-                      key={rt}
-                      aria-label={rt === "senate" ? "Senate" : rt === "house" ? "House" : "Governor"}
-                      onClick={() => selectRaceType(rt)}
-                      className="px-2.5 py-1 rounded-md text-xs font-medium transition-all"
-                      style={raceType === rt ? { background: "#388bfd", color: "#ffffff" } : { color: t.textMuted }}
-                    >
-                      {rt === "senate" ? "S" : rt === "house" ? "H" : "G"}
-                    </button>
-                  ))}
-                </nav>
-              </div>
-            </>
-          )}
-
           {/* Hover tooltip */}
           {hovered && (() => {
             const demPct = Math.max(0, Math.min(100, 50 - hovered.margin / 2));
@@ -559,31 +509,20 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
             </button>
           )}
 
-          {/* ── Desktop seat scorecard ── */}
-          {showSeatScorecard && (
-            <div className="absolute bottom-[52px] left-4 z-10 hidden md:block">
-              <SeatScorecard
-                raceType={raceType}
-                demSeats={demSeats}
-                repSeats={repSeats}
-                totalSeats={totalSeats}
-                theme={t}
-              />
+          {/* ── Legend (bottom-left, states tab only — forecast gets a quiet one below the map) ── */}
+          {activeTab !== "forecast" && (
+            <div
+              className="hidden md:flex absolute items-center gap-1 p-1"
+              style={{ bottom: "12px", left: "1rem" }}
+            >
+              {LEGEND.map(({ color, label }) => (
+                <div key={label} className="flex flex-col items-center gap-0.5">
+                  <div style={{ background: color }} className="w-5 h-2.5 rounded-sm" />
+                  <span className="text-[8px] whitespace-nowrap" style={{ color: t.textMuted }}>{label}</span>
+                </div>
+              ))}
             </div>
           )}
-
-          {/* ── Legend (bottom-left) ── */}
-          <div
-            className="hidden md:flex absolute items-center gap-1 p-1"
-            style={{ bottom: "12px", left: "1rem" }}
-          >
-            {LEGEND.map(({ color, label }) => (
-              <div key={label} className="flex flex-col items-center gap-0.5">
-                <div style={{ background: color }} className="w-5 h-2.5 rounded-sm" />
-                <span className="text-[8px] whitespace-nowrap" style={{ color: t.textMuted }}>{label}</span>
-              </div>
-            ))}
-          </div>
 
           {/* ── Sidebar (floating panel) ── */}
           <Sidebar selected={selected} raceType={raceType} onClose={() => setSelected(null)} theme={t} />
@@ -675,22 +614,31 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
 
         </div>}
 
-        {/* ── Counties (owns its own hero/controls/map/results layout) ── */}
-        {activeTab === "counties" && <NationalCountyMap theme={t} />}
-
-        {/* ── Mobile seat scorecard ── */}
-        {showSeatScorecard && (
-          <div className="mt-3 md:hidden">
-            <SeatScorecard
-              raceType={raceType}
-              demSeats={demSeats}
-              repSeats={repSeats}
-              totalSeats={totalSeats}
-              theme={t}
-              mobile
-            />
+        {/* ── Quiet map legend (forecast tab only — sits under the map, not floating over it) ── */}
+        {activeTab === "forecast" && (
+          <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1.5">
+            {LEGEND.map(({ color, label }) => (
+              <span key={label} className="flex items-center gap-1.5 text-[10px] font-medium" style={{ color: t.textMuted }}>
+                <span className="h-2 w-2 rounded-sm" style={{ background: color }} />
+                {label}
+              </span>
+            ))}
           </div>
         )}
+
+        </div>
+        {activeTab === "forecast" && (
+          <div
+            className="hidden md:block md:overflow-y-auto md:pr-1"
+            style={{ maxHeight: mapColHeight }}
+          >
+            <KeyRaces races={data} basePath={`/${raceType}`} showSpecialBadge={raceType === "senate"} />
+          </div>
+        )}
+        </div>
+
+        {/* ── Counties (owns its own hero/controls/map/results layout) ── */}
+        {activeTab === "historical" && <NationalCountyMap theme={t} />}
 
         {/* ── Mobile selected-race panel (below map) ── */}
         {selected && (() => {
@@ -971,22 +919,10 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
               </div>
             )}
             {activeTab === "forecast" && (
-              <div className="mt-4 md:mt-5">
-                <div className="mb-3">
-                  <h2 className="text-xl font-bold sm:text-2xl" style={{ color: t.textPrimary }}>
-                    {raceType === "house" ? "House Races" : raceType === "senate" ? "Senate Races" : "Governor Races"}
-                  </h2>
-                  <p className="text-sm mt-0.5" style={{ color: t.textMuted }}>
-                    {raceType === "house"
-                      ? `${electionYear} U.S. House Forecast · ${houseData.length} Districts`
-                      : raceType === "senate"
-                      ? `${electionYear} U.S. Senate Forecast · ${senateData.length} Class 2 Seats`
-                      : `${electionYear} U.S. Governor Forecast · ${governorData.length} Races`}
-                  </p>
-                </div>
-                {raceType === "house" && <RaceTable races={projectedHouseData} basePath="/house" nameLabel="District" />}
-                {raceType === "senate" && <RaceTable races={projectedSenateData} basePath="/senate" nameLabel="State" showSpecialBadge />}
-                {raceType === "governor" && <RaceTable races={projectedGovernorData} basePath="/governor" nameLabel="State" />}
+              <div className="mt-6 md:mt-8">
+                {raceType === "house" && <ForecastRaceCards races={projectedHouseData} basePath="/house" />}
+                {raceType === "senate" && <ForecastRaceCards races={projectedSenateData} basePath="/senate" showSpecialBadge />}
+                {raceType === "governor" && <ForecastRaceCards races={projectedGovernorData} basePath="/governor" />}
               </div>
             )}
             {activeTab === "model" && <TplModelPage initialSubTab={modelSubTab} />}
