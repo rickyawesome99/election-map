@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import { RaceForecast, RaceType, electionYear } from "@/data/forecastData";
 import { getRatingColors, marginToRating, fmtMargin } from "@/lib/colorScale";
-import { CandidateName } from "./RaceTable";
+import RaceTable, { CandidateName } from "./RaceTable";
 
 // ─────────────────────────────────────────────────────────────────────────
 // Flat race-type switcher — sits above the map as its own header (replaces
@@ -271,7 +271,7 @@ function DesktopTierBlock({
   const visible = truncated ? races.slice(0, TIER_EXPAND_SHOW) : races;
 
   return (
-    <div className="mt-9 first:mt-0">
+    <div className="mt-6 first:mt-0">
       <TierHeader label={tier} count={races.length} />
       <div
         style={{
@@ -343,6 +343,7 @@ export function ForecastRaceCards({
   basePath: string;
   showSpecialBadge?: boolean;
 }) {
+  const [desktopView, setDesktopView] = useState<"cards" | "table">("cards");
   const sorted = useMemo(
     () => [...races].sort((a, b) => Math.abs(a.margin ?? 0) - Math.abs(b.margin ?? 0)),
     [races]
@@ -380,11 +381,68 @@ export function ForecastRaceCards({
 
       {/* Desktop: tier-grouped column ledger — same row as mobile, column count tapers with tier size */}
       <div className="hidden md:block">
-        {TIER_ORDER.map((tier) => {
-          const rows = byTier[tier];
-          if (!rows.length) return null;
-          return <DesktopTierBlock key={tier} tier={tier} races={rows} basePath={basePath} showSpecialBadge={showSpecialBadge} />;
-        })}
+        <div className="mb-2 flex justify-start">
+          <div
+            className="inline-flex rounded-lg border p-0.5"
+            style={{ background: "var(--app-tab-bg)", borderColor: "var(--app-border)" }}
+            role="group"
+            aria-label="Race display"
+          >
+            <button
+              type="button"
+              onClick={() => setDesktopView("cards")}
+              aria-pressed={desktopView === "cards"}
+              className="flex items-center gap-1.5 rounded-md px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider transition-colors"
+              style={{
+                background: desktopView === "cards" ? "var(--app-panel)" : "transparent",
+                color: desktopView === "cards" ? "var(--app-text-primary)" : "var(--app-text-muted)",
+                boxShadow: desktopView === "cards" ? "0 1px 2px rgba(0,0,0,.08)" : "none",
+              }}
+            >
+              <svg aria-hidden="true" className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="1" y="1" width="6" height="6" rx="1" /><rect x="9" y="1" width="6" height="6" rx="1" />
+                <rect x="1" y="9" width="6" height="6" rx="1" /><rect x="9" y="9" width="6" height="6" rx="1" />
+              </svg>
+              Cards
+            </button>
+            <button
+              type="button"
+              onClick={() => setDesktopView("table")}
+              aria-pressed={desktopView === "table"}
+              className="flex items-center gap-1.5 rounded-md px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider transition-colors"
+              style={{
+                background: desktopView === "table" ? "var(--app-panel)" : "transparent",
+                color: desktopView === "table" ? "var(--app-text-primary)" : "var(--app-text-muted)",
+                boxShadow: desktopView === "table" ? "0 1px 2px rgba(0,0,0,.08)" : "none",
+              }}
+            >
+              <svg aria-hidden="true" className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="currentColor">
+                <rect x="1" y="2" width="14" height="2" rx="1" /><rect x="1" y="7" width="14" height="2" rx="1" />
+                <rect x="1" y="12" width="14" height="2" rx="1" />
+              </svg>
+              Table
+            </button>
+          </div>
+        </div>
+
+        {desktopView === "cards" ? (
+          <div>
+            {TIER_ORDER.map((tier) => {
+              const rows = byTier[tier];
+              if (!rows.length) return null;
+              return <DesktopTierBlock key={tier} tier={tier} races={rows} basePath={basePath} showSpecialBadge={showSpecialBadge} />;
+            })}
+          </div>
+        ) : (
+          <RaceTable
+            races={races}
+            basePath={basePath}
+            nameLabel={basePath === "/house" ? "District" : "State"}
+            showSpecialBadge={showSpecialBadge}
+            initialSortKey="competitive"
+            initialSortDir="asc"
+          />
+        )}
       </div>
     </>
   );

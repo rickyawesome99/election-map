@@ -822,6 +822,35 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
     setActiveSubTab(tab);
   }
 
+  const SUB_TAB_LABELS = { state: "State TPL", district: "District TPL", table: "Table", districtTable: "District Table" } as const;
+
+  function renderSubTabRow() {
+    return (
+      <div className="flex h-5 justify-center">
+        <div className="flex items-center leading-5" style={{ gap: "14px" }}>
+          {(["state", "district", "table", "districtTable"] as const).flatMap((tab, i) => {
+            const isActive = activeSubTab === tab;
+            const nodes = [];
+            if (i > 0) {
+              nodes.push(<span key={`${tab}-dot`} style={{ fontSize: "12px", color: "var(--app-border)" }}>&middot;</span>);
+            }
+            nodes.push(
+              <button
+                key={tab}
+                onClick={() => handleSubTabClick(tab)}
+                className="text-[13px] leading-5"
+                style={{ fontWeight: isActive ? 700 : 500, color: isActive ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}
+              >
+                {SUB_TAB_LABELS[tab]}
+              </button>
+            );
+            return nodes;
+          })}
+        </div>
+      </div>
+    );
+  }
+
   function openStateTplFromTable(abbr: string) {
     window.history.pushState({ tplModelReturnSubTab: "table" }, "");
     setReturnSubTab("table");
@@ -854,42 +883,20 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
     : null;
 
   return (
-    <div className="mt-0.5">
-
-      {/* ── Sub-tab bar ── */}
-      <div className="flex justify-center mb-4">
-        <div className="inline-flex rounded-lg overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-          {(["state", "district", "table", "districtTable"] as const).map((tab, i) => {
-            const isActive = activeSubTab === tab;
-            const LABELS = { state: "State TPL", district: "District TPL", table: "Table", districtTable: "District Table" };
-            return (
-              <button
-                key={tab}
-                onClick={() => handleSubTabClick(tab)}
-                className="text-xs font-semibold px-3 py-1.5 transition-colors duration-150"
-                style={{
-                  background: isActive ? "var(--app-text-muted)" : "var(--app-panel)",
-                  color: isActive ? "var(--app-bg)" : "var(--app-text-muted)",
-                  borderLeft: i > 0 ? "1px solid var(--app-border)" : undefined,
-                }}
-              >
-                {LABELS[tab]}
-              </button>
-            );
-          })}
-        </div>
-      </div>
+    <div>
 
       {/* ── State TPL ── */}
       {activeSubTab === "state" && (<>
       {/* ── Hero ── */}
       <div
-        className="-mx-3 sm:-mx-4 md:-mx-6 mb-6"
+        className="-mx-3 -mt-1 mb-6 sm:-mx-4 md:-mx-6"
         style={{
           background: `linear-gradient(135deg, color-mix(in srgb, ${tpl > 0 ? "var(--party-rep)" : "var(--party-dem)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
         }}
       >
-        <div className="px-3 sm:px-4 md:px-6 pt-1 pb-6">
+        <div className="px-3 sm:px-4 md:px-6 pt-3 pb-6">
+          <div className="mb-5">{renderSubTabRow()}</div>
+
           {returnSubTab === "table" && (
             <button
               onClick={handleReturnToTable}
@@ -1678,12 +1685,14 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
       {activeSubTab === "district" && (<>
       {/* ── Hero ── */}
       <div
-        className="-mx-3 sm:-mx-4 md:-mx-6 mb-6"
+        className="-mx-3 -mt-1 mb-6 sm:-mx-4 md:-mx-6"
         style={{
           background: `linear-gradient(135deg, color-mix(in srgb, ${selectedDistrictCalc.tpl > 0 ? "var(--party-rep)" : "var(--party-dem)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`,
         }}
       >
-        <div className="px-3 sm:px-4 md:px-6 pt-1 pb-6">
+        <div className="px-3 sm:px-4 md:px-6 pt-3 pb-6">
+          <div className="mb-5">{renderSubTabRow()}</div>
+
           {returnSubTab === "districtTable" && (
             <button
               onClick={handleReturnToTable}
@@ -2141,7 +2150,8 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
 
       {/* ── Table ── */}
       {activeSubTab === "table" && (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 pt-2">
+        {renderSubTabRow()}
         <TplStateMap
           rows={allStateRows}
           onSelect={openStateTplFromTable}
@@ -2220,7 +2230,8 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
 
       {/* ── District Table ── */}
       {activeSubTab === "districtTable" && (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 pt-2">
+        {renderSubTabRow()}
         <TplDistrictMap
           rows={allDistrictRows}
           onSelect={openDistrictTplFromDistrictTable}

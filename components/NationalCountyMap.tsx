@@ -22,6 +22,7 @@ import { FIPS_TO_STATE } from "@/lib/fips";
 import { getCongressionalDistrictsGeoUrl, isCongressionalDistrictGeoid, withAtLargeAlias } from "@/lib/congressionalDistricts";
 import { normalizeGeographyWinding, type WindableGeography } from "@/lib/geoWinding";
 import { NationalLandMask, NationalLandMaskDefinition } from "./StateLandMask";
+import { popVoteData } from "@/data/popVoteData";
 
 type RaceType = "president" | CountyRaceType;
 type PresYear = 2008 | 2012 | 2016 | 2020 | 2024;
@@ -671,6 +672,10 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   const raceLabel = RACE_TYPES.find((r) => r.key === raceType)!.label;
   const unitLabel = UNIT_LABEL[geoLevel];
   const hasSpecialThisYear = raceType === "senate" && SENATE_DOUBLE_YEARS.has(year);
+  const seatCount = popVoteData.find(
+    (row) => row.year === year && row.type.toLowerCase() === raceType,
+  );
+  const seatLabel = raceType === "president" ? "Electoral votes" : `${raceLabel} seats`;
 
   // The toggle button disappears whenever it wouldn't apply (wrong office, or a senate
   // year with no double election) — reset its state too so it doesn't come back silently
@@ -760,54 +765,54 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
   return (
     <div className="flex w-full flex-col gap-3">
 
-      {/* ── Mobile hero (title only — national margin lives with the results below) ── */}
+      {/* ── Mobile summary — the page title is owned by the historical hero above ── */}
       <div className="md:hidden">
-        <h1 style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.75rem", letterSpacing: "-0.02em", lineHeight: 1, color: t.textPrimary, margin: 0 }}>
-          Counties
-        </h1>
-        <div className="mt-1.5 text-xs" style={{ color: t.textMuted }}>
+        <div className="text-xs" style={{ color: t.textMuted }}>
           {stats.totalVotes.toLocaleString()} votes counted · {year} {raceLabel}
         </div>
       </div>
 
       {/* ── Mobile control bar (above the map) ── */}
       <div
-        className="flex items-center gap-2 overflow-x-auto rounded-lg p-2 scrollbar-none md:hidden"
-        style={{ background: t.panel, border: `1px solid ${t.border}` }}
+        className="flex items-center gap-2.5 overflow-x-auto rounded-xl px-3 py-2 scrollbar-none md:hidden"
+        style={{ background: t.legendBg, border: `1px solid ${t.border}` }}
       >
-        <nav className="flex shrink-0 gap-0.5 rounded-md p-0.5" style={{ background: t.tabBg }}>
+        <nav className="flex shrink-0 items-center gap-1.5">
+          <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Geo</span>
           {GEO_LEVELS.map((gl) => (
             <button
               key={gl.key}
               onClick={() => selectGeoLevel(gl.key)}
-              className="shrink-0 rounded px-1.5 py-0.5 text-[9px] font-semibold"
-              style={gl.key === geoLevel ? { background: t.panel, color: t.textPrimary } : { color: t.textMuted }}
+              className="shrink-0 pb-0.5 text-xs font-semibold"
+              style={gl.key === geoLevel ? { color: t.textPrimary, borderBottom: `2px solid ${t.textPrimary}` } : { color: t.textMuted }}
             >
               {gl.label}
             </button>
           ))}
         </nav>
         <span className="h-4 w-px shrink-0" style={{ background: t.border }} />
-        <nav className="flex shrink-0 gap-0.5 rounded-md p-0.5" style={{ background: t.tabBg }}>
+        <nav className="flex shrink-0 items-center gap-1.5">
+          <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Office</span>
           {RACE_TYPES.map((rt) => (
             <button
               key={rt.key}
               onClick={() => selectRaceType(rt.key)}
-              className="shrink-0 rounded px-1.5 py-0.5 text-[9px] font-semibold"
-              style={rt.key === raceType ? { background: t.panel, color: t.textPrimary } : { color: t.textMuted }}
+              className="shrink-0 pb-0.5 text-xs font-semibold"
+              style={rt.key === raceType ? { color: t.textPrimary, borderBottom: `2px solid ${t.textPrimary}` } : { color: t.textMuted }}
             >
               {rt.key === "president" ? "Pres" : rt.key === "governor" ? "Gov" : rt.key === "senate" ? "Sen" : "House"}
             </button>
           ))}
         </nav>
         <span className="h-4 w-px shrink-0" style={{ background: t.border }} />
-        <nav className="flex shrink-0 gap-0.5 rounded-md p-0.5" style={{ background: t.tabBg }}>
+        <nav className="flex shrink-0 items-center gap-1.5">
+          <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Year</span>
           {getYearsForLevel(raceType, geoLevel).map((y) => (
             <button
               key={y}
               onClick={() => selectYear(y)}
-              className="shrink-0 rounded px-1.5 py-0.5 text-[9px] font-semibold"
-              style={y === year ? { background: t.panel, color: t.textPrimary } : { color: t.textMuted }}
+              className="shrink-0 pb-0.5 text-xs font-semibold"
+              style={y === year ? { color: t.textPrimary, borderBottom: `2px solid ${t.textPrimary}` } : { color: t.textMuted }}
             >
               {y}
             </button>
@@ -830,10 +835,63 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         )}
       </div>
 
+      {/* ── Aggregate national results ── */}
+      <div className="hidden items-start gap-4 pb-4 pt-1 md:flex xl:gap-6" style={{ borderBottom: `1px solid ${t.border}` }}>
+        <div className="flex min-w-0 flex-1 flex-nowrap items-center gap-4 xl:gap-6">
+          {[
+            { label: "Votes", dem: stats.demVotes.toLocaleString(), rep: stats.repVotes.toLocaleString() },
+            { label: "Share", dem: `${stats.demPct.toFixed(1)}%`, rep: `${stats.repPct.toFixed(1)}%` },
+            { label: `${unitLabel} won`, dem: stats.demUnits.toLocaleString(), rep: stats.repUnits.toLocaleString() },
+            ...(seatCount ? [{ label: seatLabel, dem: seatCount.seatsD.toLocaleString(), rep: seatCount.seatsR.toLocaleString() }] : []),
+          ].map((row, index) => (
+            <div key={row.label} className="contents">
+              {index > 0 && <span className="h-8 w-px" style={{ background: t.border }} />}
+              <div className="shrink-0 whitespace-nowrap">
+                <div className="mb-1 text-[10px] font-bold uppercase tracking-wide" style={{ color: t.textMuted }}>{row.label}</div>
+                <div className="flex items-baseline gap-1.5 tabular-nums text-sm font-bold xl:text-base">
+                  <span style={{ fontFamily: "var(--font-serif)", color: t.demText }}>{row.dem}</span>
+                  <span className="text-xs font-normal" style={{ color: t.textVeryMuted }}>–</span>
+                  <span style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{row.rep}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-[1.35rem] shrink-0 whitespace-nowrap text-right text-sm tabular-nums" style={{ color: t.textVeryMuted }}>
+          {stats.totalVotes.toLocaleString()} total votes
+        </div>
+      </div>
+
+      <div className="md:hidden">
+        <div className="flex items-baseline justify-between pb-2" style={{ borderBottom: `2px solid ${t.textPrimary}` }}>
+          <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>National Results</span>
+          <span className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1rem", color: stats.margin <= 0 ? t.demText : t.repText }}>
+            {marginLabel(stats.margin)}
+          </span>
+        </div>
+        <div className="flex justify-between py-3" style={{ borderBottom: `1px solid ${t.border}` }}>
+          {[
+            { label: "Votes", dem: stats.demVotes.toLocaleString(), rep: stats.repVotes.toLocaleString() },
+            { label: "Share", dem: `${stats.demPct.toFixed(1)}%`, rep: `${stats.repPct.toFixed(1)}%` },
+            { label: unitLabel, dem: stats.demUnits.toLocaleString(), rep: stats.repUnits.toLocaleString() },
+            ...(seatCount ? [{ label: seatLabel, dem: seatCount.seatsD.toLocaleString(), rep: seatCount.seatsR.toLocaleString() }] : []),
+          ].map((row) => (
+            <div key={row.label} className="flex-1 text-center">
+              <div className="mb-1 text-[8px] font-bold uppercase tracking-wide" style={{ color: t.textMuted }}>{row.label}</div>
+              <div className="tabular-nums text-sm font-bold">
+                <span style={{ fontFamily: "var(--font-serif)", color: t.demText }}>{row.dem}</span>
+                <span className="mx-1 font-normal" style={{ color: t.textVeryMuted }}>–</span>
+                <span style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{row.rep}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* ── Map ── */}
       <div
-        className="relative h-[380px] w-full overflow-hidden rounded-xl md:h-[min(720px,calc(100vh-140px))] md:min-h-[560px]"
-        style={{ background: t.bg, border: `1px solid ${t.border}` }}
+        className="relative h-[380px] w-full overflow-hidden rounded-xl md:h-[min(660px,calc(100vh-180px))] md:min-h-[520px] md:w-[96%] md:self-center"
+        style={{ background: t.bg }}
         onMouseEnter={(e) => {
           const rect = e.currentTarget.getBoundingClientRect();
           setMapSize({ w: rect.width, h: rect.height });
@@ -1106,7 +1164,7 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         {/* ── Desktop overlay toolbar (top-left) ── */}
         <div
           className="hidden md:flex absolute z-10 items-center gap-2.5 rounded-xl px-3 py-2 backdrop-blur-sm"
-          style={{ top: "1rem", left: "1rem", background: t.legendBg, border: `1px solid ${t.border}` }}
+          style={{ top: 0, left: "1rem", background: t.legendBg, border: `1px solid ${t.border}` }}
         >
           <div className="flex items-center gap-1.5">
             <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>Geo</span>
@@ -1191,25 +1249,12 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         {/* ── Desktop chyron (top-right) ── */}
         <div
           className="hidden md:block absolute z-10 rounded-xl px-3 py-2 text-right backdrop-blur-sm"
-          style={{ top: "1rem", right: "1rem", background: t.legendBg, border: `1px solid ${t.border}` }}
+          style={{ top: 0, right: "1rem", background: t.legendBg, border: `1px solid ${t.border}` }}
         >
           <div className="text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textVeryMuted }}>National margin</div>
           <div style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1.5rem", lineHeight: 1.15, color: stats.margin <= 0 ? t.demText : t.repText }}>
             {marginLabel(stats.margin)}
           </div>
-        </div>
-
-        {/* ── Desktop legend (bottom-left) ── */}
-        <div
-          className="hidden md:flex absolute z-10 items-center gap-2 rounded-lg px-2.5 py-1.5 backdrop-blur-sm"
-          style={{ bottom: "1rem", left: "1rem", background: t.legendBg, border: `1px solid ${t.border}` }}
-        >
-          {MAP_LEGEND.map(({ color, label }) => (
-            <div key={label} className="flex flex-col items-center gap-0.5">
-              <span className="block h-1.5 w-4 rounded-sm" style={{ background: color }} />
-              <span className="whitespace-nowrap text-[7px] font-medium" style={{ color: t.textMuted }}>{label}</span>
-            </div>
-          ))}
         </div>
 
         {/* ── Desktop floating selected panel (bottom-right) ── */}
@@ -1258,76 +1303,14 @@ export default function NationalCountyMap({ theme: t }: { theme: Theme }) {
         )}
       </div>
 
-      {/* ── Mobile legend (below the map) ── */}
-      <div className="flex items-center gap-1 overflow-x-auto scrollbar-none md:hidden">
+      {/* ── Map legend ── */}
+      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 md:gap-x-4">
         {MAP_LEGEND.map(({ color, label }) => (
-          <span key={label} title={label} className="h-2 w-4 shrink-0 rounded-sm" style={{ background: color }} />
+          <div key={label} className="flex items-center gap-1 md:gap-1.5">
+            <span className="h-2 w-2 shrink-0 rounded-full md:h-2.5 md:w-2.5" style={{ background: color }} />
+            <span className="whitespace-nowrap text-[9px] font-medium md:text-[10px]" style={{ color: t.textMuted }}>{label}</span>
+          </div>
         ))}
-        <span className="ml-1.5 shrink-0 text-[10px]" style={{ color: t.textVeryMuted }}>Safe D → Safe R</span>
-      </div>
-
-      {/* ── Desktop results ribbon (below the map) ── */}
-      <div className="hidden md:flex items-center gap-8 pt-4" style={{ borderTop: `2px solid ${t.textPrimary}` }}>
-        <div className="shrink-0" style={{ fontFamily: "var(--font-serif)", fontWeight: 800, fontSize: "2.25rem", lineHeight: 1, color: stats.margin <= 0 ? t.demText : t.repText }}>
-          {marginLabel(stats.margin)}
-        </div>
-        <div className="flex flex-1 flex-wrap items-center gap-8">
-          <div>
-            <div className="mb-1 text-[10px] font-bold uppercase tracking-wide" style={{ color: t.textMuted }}>Votes</div>
-            <div className="flex items-baseline gap-1.5 tabular-nums text-base font-bold">
-              <span style={{ fontFamily: "var(--font-serif)", color: t.demText }}>{stats.demVotes.toLocaleString()}</span>
-              <span className="text-xs font-normal" style={{ color: t.textVeryMuted }}>–</span>
-              <span style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{stats.repVotes.toLocaleString()}</span>
-            </div>
-          </div>
-          <span className="h-8 w-px" style={{ background: t.border }} />
-          <div>
-            <div className="mb-1 text-[10px] font-bold uppercase tracking-wide" style={{ color: t.textMuted }}>Share</div>
-            <div className="flex items-baseline gap-1.5 tabular-nums text-base font-bold">
-              <span style={{ fontFamily: "var(--font-serif)", color: t.demText }}>{stats.demPct.toFixed(1)}%</span>
-              <span className="text-xs font-normal" style={{ color: t.textVeryMuted }}>–</span>
-              <span style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{stats.repPct.toFixed(1)}%</span>
-            </div>
-          </div>
-          <span className="h-8 w-px" style={{ background: t.border }} />
-          <div>
-            <div className="mb-1 text-[10px] font-bold uppercase tracking-wide" style={{ color: t.textMuted }}>{unitLabel} won</div>
-            <div className="flex items-baseline gap-1.5 tabular-nums text-base font-bold">
-              <span style={{ fontFamily: "var(--font-serif)", color: t.demText }}>{stats.demUnits.toLocaleString()}</span>
-              <span className="text-xs font-normal" style={{ color: t.textVeryMuted }}>–</span>
-              <span style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{stats.repUnits.toLocaleString()}</span>
-            </div>
-          </div>
-        </div>
-        <div className="shrink-0 tabular-nums text-xs" style={{ color: t.textVeryMuted }}>
-          {stats.totalVotes.toLocaleString()} total votes
-        </div>
-      </div>
-
-      {/* ── Mobile results section (margin pill + stat row) ── */}
-      <div className="md:hidden">
-        <div className="flex items-baseline justify-between pb-2" style={{ borderBottom: `2px solid ${t.textPrimary}` }}>
-          <span className="text-[10px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>National Results</span>
-          <span className="tabular-nums" style={{ fontFamily: "var(--font-serif)", fontWeight: 700, fontSize: "1rem", color: stats.margin <= 0 ? t.demText : t.repText }}>
-            {marginLabel(stats.margin)}
-          </span>
-        </div>
-        <div className="flex justify-between py-3" style={{ borderBottom: `1px solid ${t.border}` }}>
-          {[
-            { label: "Votes", dem: stats.demVotes.toLocaleString(), rep: stats.repVotes.toLocaleString() },
-            { label: "Share", dem: `${stats.demPct.toFixed(1)}%`, rep: `${stats.repPct.toFixed(1)}%` },
-            { label: unitLabel, dem: stats.demUnits.toLocaleString(), rep: stats.repUnits.toLocaleString() },
-          ].map((row) => (
-            <div key={row.label} className="flex-1 text-center">
-              <div className="mb-1 text-[8px] font-bold uppercase tracking-wide" style={{ color: t.textMuted }}>{row.label}</div>
-              <div className="tabular-nums text-sm font-bold">
-                <span style={{ fontFamily: "var(--font-serif)", color: t.demText }}>{row.dem}</span>
-                <span className="mx-1 font-normal" style={{ color: t.textVeryMuted }}>–</span>
-                <span style={{ fontFamily: "var(--font-serif)", color: t.repText }}>{row.rep}</span>
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* ── Mobile selected geography (compact) ── */}

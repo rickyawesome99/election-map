@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
-import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry, electionYear, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
+import { senateData, governorData, houseData, senateNoElection, governorNoElection, RaceForecast, RaceType, NoElectionEntry, senateCurrent, pres2024, statePvi, houseDelegationHistory, stateLegData } from "@/data/forecastData";
 import { statesData } from "@/data/statesData";
 import { computeProjectedMargin } from "@/lib/tplCompute";
 import { computeGenericBallotAverage } from "@/lib/genericBallotAverage";
@@ -24,9 +24,11 @@ export const SEAT_HOLDOVERS = {
 };
 export const TOTAL_SEATS_BY_TYPE = { senate: 100, governor: 50, house: 435 };
 import Sidebar from "./Sidebar";
-import StatesTable, { StateRow } from "./StatesTable";
 import NationalCountyMap from "./NationalCountyMap";
-import StatesOverviewMap, { type MapMode } from "./StatesOverviewMap";
+import StatesOverviewMap, { type MapMode, type StateRow } from "./StatesOverviewMap";
+import StatesCartogramGrid from "./StatesCartogramGrid";
+import StatesLedgerList from "./StatesLedgerList";
+import StatesSelectedCard from "./StatesSelectedCard";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { useDarkMode } from "@/lib/useDarkMode";
 import TplModelPage from "./TplModelPage";
@@ -165,7 +167,8 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
   const [selected, setSelected] = useState<RaceForecast | null>(null);
   const [selectedNoElection, setSelectedNoElection] = useState<NoElectionEntry | null>(null);
   const [selectedStateRow, setSelectedStateRow] = useState<StateRow | null>(null);
-  const [selectedStateMode, setSelectedStateMode] = useState<MapMode>("default");
+  const [statesMode, setStatesMode] = useState<MapMode>("legislature");
+  const [statesView, setStatesView] = useState<"map" | "cartogram">("map");
   const [hovered, setHovered] = useState<RaceForecast | null>(null);
   const [hoveredNoElection, setHoveredNoElection] = useState<NoElectionEntry | null>(null);
   const [mousePos, setMousePos] = useState<{ x: number; y: number; containerW: number; containerH: number }>({ x: 0, y: 0, containerW: 800, containerH: 520 });
@@ -175,13 +178,14 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
   const [viewChanged, setViewChanged] = useState(false);
   const mapColRef = useRef<HTMLDivElement>(null);
   const [mapColHeight, setMapColHeight] = useState<number | undefined>(undefined);
+  const statesMapBoxRef = useRef<HTMLDivElement>(null);
+  const [statesMapBoxHeight, setStatesMapBoxHeight] = useState<number | undefined>(undefined);
 
   useEffect(() => {
     if (activeTab === "forecast") persistRaceType(raceType);
   }, [activeTab, raceType]);
 
-  // Keep the "Key Races" column capped to the height of the map+legend column
-  // (its own content scrolls past that instead of stretching the row).
+  // Keep the "Key Races" column capped to the height of the map column (forecast tab only).
   useEffect(() => {
     const el = mapColRef.current;
     if (!el || activeTab !== "forecast") return;
@@ -192,6 +196,19 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
     ro.observe(el);
     return () => ro.disconnect();
   }, [activeTab, raceType]);
+
+  // States tab: the list scrollbox is capped to the map/cartogram box's own height —
+  // deliberately excludes the legend below it.
+  useEffect(() => {
+    const el = statesMapBoxRef.current;
+    if (!el || activeTab !== "states") return;
+    const ro = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      if (entry) setStatesMapBoxHeight(entry.contentRect.height);
+    });
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [activeTab, statesView]);
 
   function selectRaceType(type: RaceType) {
     persistRaceType(type);
@@ -238,7 +255,12 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
 
         {/* ── Forecast hero + flat race-type header (forecast tab only) ── */}
         {activeTab === "forecast" && (
-          <>
+          <div
+            className="-mx-3 -mt-1 mb-3 px-3 pt-1 pb-px sm:-mx-4 sm:px-4 md:-mx-6 md:px-6"
+            style={{
+              background: "linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)",
+            }}
+          >
             <ForecastHero
               raceType={raceType}
               demSeats={demSeats}
@@ -250,25 +272,125 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
               flipped={flipped}
             />
             <RaceTypeHeader raceType={raceType} onSelect={selectRaceType} count={data.length} />
-          </>
+          </div>
+        )}
+
+        {/* ── Historical hero ── */}
+        {activeTab === "historical" && (
+          <div
+            className="-mx-3 -mt-1 px-3 pb-2 pt-3 sm:-mx-4 sm:px-4 md:-mx-6 md:px-6"
+            style={{
+              background: "linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)",
+            }}
+          >
+            <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
+              Election Archive
+            </div>
+            <h1
+              className="mt-1 text-2xl font-bold tracking-tight md:text-[1.65rem]"
+              style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}
+            >
+              Historical Results
+            </h1>
+          </div>
+        )}
+
+        {/* ── States hero ── */}
+        {activeTab === "states" && (
+          <div
+            className="-mx-3 -mt-1 px-3 pb-1 pt-3 sm:-mx-4 sm:px-4 md:-mx-6 md:px-6"
+            style={{
+              background: "linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)",
+            }}
+          >
+            <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>
+              Election Landscape
+            </div>
+            <h1
+              className="mt-1 text-2xl font-bold tracking-tight md:text-[1.65rem]"
+              style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}
+            >
+              States
+            </h1>
+          </div>
+        )}
+
+        {/* ── States tab controls: mode tabs + map/cartogram toggle ── */}
+        {activeTab === "states" && (
+          <div
+            className="mb-4 flex items-end justify-between gap-2"
+            style={{ borderBottom: "1px solid var(--app-border)" }}
+          >
+            <nav className="flex min-w-0 gap-3 sm:gap-5">
+              {(["governor", "senate", "house", "legislature"] as MapMode[]).map((m) => (
+                <button
+                  key={m}
+                  onClick={() => setStatesMode(m)}
+                  className="-mb-px pb-2.5 text-[10px] uppercase tracking-wider sm:text-[11px]"
+                  style={{
+                    color: statesMode === m ? "var(--app-text-primary)" : "var(--app-text-muted)",
+                    fontWeight: statesMode === m ? 700 : 600,
+                    borderBottom: statesMode === m ? "2px solid var(--app-text-primary)" : "2px solid transparent",
+                  }}
+                >
+                  {m === "governor" ? "Governor" : m === "senate" ? "Senate" : m === "house" ? "House" : "Legislature"}
+                </button>
+              ))}
+            </nav>
+            <button
+              type="button"
+              onClick={() => setStatesView((view) => view === "map" ? "cartogram" : "map")}
+              className="mb-1.5 shrink-0 rounded-full px-2.5 py-1 text-[10px] font-semibold md:hidden"
+              style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-muted)" }}
+              aria-label={`Switch to ${statesView === "map" ? "cartogram" : "map"} view`}
+            >
+              {statesView === "map" ? "Cartogram" : "Map"}
+            </button>
+            <div
+              className="hidden gap-0.5 rounded-full p-[3px] md:mb-1.5 md:flex"
+              style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+            >
+              {(["map", "cartogram"] as const).map((v) => (
+                <button
+                  key={v}
+                  onClick={() => setStatesView(v)}
+                  className="rounded-full px-3 py-1 text-[11px] font-semibold"
+                  style={statesView === v ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" } : { color: "var(--app-text-muted)" }}
+                >
+                  {v === "map" ? "Map" : "Cartogram"}
+                </button>
+              ))}
+            </div>
+          </div>
         )}
 
         {/* ── Map (2/3) + Key Races (1/3) on desktop, forecast tab only ── */}
-        <div className={activeTab === "forecast" ? "md:grid md:grid-cols-3 md:gap-8 md:items-start" : ""}>
-        <div ref={mapColRef} className={activeTab === "forecast" ? "md:col-span-2" : ""}>
+        <div className={activeTab === "forecast" || activeTab === "states" ? "md:grid md:grid-cols-3 md:gap-8 md:items-start" : ""}>
+        <div ref={mapColRef} className={activeTab === "forecast" || activeTab === "states" ? "md:col-span-2" : ""}>
 
-        {/* ── Map card (forecast/states only — counties renders its own layout below) ── */}
-        {(activeTab === "forecast" || activeTab === "states") && <div
-          className={
-            activeTab === "forecast"
-              ? "relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-auto md:aspect-[8/5]"
-              : "relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-[520px]"
-          }
-          style={
-            activeTab === "forecast"
-              ? {}
-              : { border: `1px solid ${t.border}`, boxShadow: "0 2px 12px rgba(0,0,0,0.08)" }
-          }
+        {/* ── States map/cartogram (its own block — decoupled from the forecast map's hover/zoom state) ── */}
+        {activeTab === "states" && (
+          <div ref={statesMapBoxRef}>
+            {statesView === "map" ? (
+              <div className="relative h-[280px] overflow-hidden rounded-lg sm:h-[360px] md:h-[460px]">
+                <StatesOverviewMap rows={stateRows} theme={t} mode={statesMode} selected={selectedStateRow} onSelect={setSelectedStateRow} />
+              </div>
+            ) : (
+              <StatesCartogramGrid rows={stateRows} mode={statesMode} selected={selectedStateRow} onSelect={setSelectedStateRow} />
+            )}
+          </div>
+        )}
+
+        {/* ── Mobile selected-state popup (below map, hidden on desktop where the list column shows selection inline) ── */}
+        {activeTab === "states" && selectedStateRow && (
+          <div className="md:hidden mt-4">
+            <StatesSelectedCard row={selectedStateRow} mode={statesMode} onClose={() => setSelectedStateRow(null)} />
+          </div>
+        )}
+
+        {/* ── Map card (forecast only — counties renders its own layout below) ── */}
+        {activeTab === "forecast" && <div
+          className="relative h-[320px] overflow-hidden rounded-xl sm:h-[400px] md:h-auto md:aspect-[8/5]"
           onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
             setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top, containerW: rect.width, containerH: rect.height });
@@ -396,9 +518,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
             );
           })()}
 
-          {activeTab === "states"
-            ? <StatesOverviewMap rows={stateRows} theme={t} onSelect={setSelectedStateRow} onModeChange={setSelectedStateMode} />
-            : <ComposableMap
+          <ComposableMap
             key={forecastMapKey}
             projection="geoAlbersUsa"
             projectionConfig={{ scale: 1200 }}
@@ -496,7 +616,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
             )}
             </NationalLandMask>
             </ZoomableGroup>
-          </ComposableMap>}
+          </ComposableMap>
 
           {/* ── Reset zoom button ── */}
           {viewChanged && (
@@ -507,21 +627,6 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
             >
               Reset
             </button>
-          )}
-
-          {/* ── Legend (bottom-left, states tab only — forecast gets a quiet one below the map) ── */}
-          {activeTab !== "forecast" && (
-            <div
-              className="hidden md:flex absolute items-center gap-1 p-1"
-              style={{ bottom: "12px", left: "1rem" }}
-            >
-              {LEGEND.map(({ color, label }) => (
-                <div key={label} className="flex flex-col items-center gap-0.5">
-                  <div style={{ background: color }} className="w-5 h-2.5 rounded-sm" />
-                  <span className="text-[8px] whitespace-nowrap" style={{ color: t.textMuted }}>{label}</span>
-                </div>
-              ))}
-            </div>
           )}
 
           {/* ── Sidebar (floating panel) ── */}
@@ -630,9 +735,17 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
         {activeTab === "forecast" && (
           <div
             className="hidden md:block md:overflow-y-auto md:pr-1"
-            style={{ maxHeight: mapColHeight }}
+            style={{ height: mapColHeight, maxHeight: mapColHeight }}
           >
             <KeyRaces races={data} basePath={`/${raceType}`} showSpecialBadge={raceType === "senate"} />
+          </div>
+        )}
+        {activeTab === "states" && (
+          <div
+            className="mt-5 md:mt-0 md:overflow-y-auto md:pr-1"
+            style={{ maxHeight: statesMapBoxHeight }}
+          >
+            <StatesLedgerList rows={stateRows} mode={statesMode} selected={selectedStateRow} onSelect={setSelectedStateRow} />
           </div>
         )}
         </div>
@@ -772,130 +885,6 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
           );
         })()}
 
-        {/* ── Mobile states panel (below map) ── */}
-        {activeTab === "states" && selectedStateRow && (() => {
-          return (
-            <div
-              className="mt-3 overflow-hidden rounded-xl md:hidden"
-              style={{ border: `1px solid ${t.border}`, background: t.legendBg, boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}
-            >
-              {/* Header */}
-              <div className="flex items-center gap-2 p-3 pb-2.5" style={{ borderBottom: `1px solid ${t.border}` }}>
-                <span className="min-w-0 flex-1 truncate text-sm font-bold" style={{ color: t.textPrimary }}>{selectedStateRow.name}</span>
-                <button
-                  onClick={() => setSelectedStateRow(null)}
-                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded transition-colors"
-                  style={{ color: t.textVeryMuted, background: t.tabBg }}
-                  aria-label="Close"
-                >
-                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-              {/* Body */}
-              <div className="grid grid-cols-2 gap-2 p-3">
-                {selectedStateMode === "default" && (
-                  <div className="col-span-2 rounded-md p-2" style={{ background: t.tabBg }}>
-                    <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>PVI</div>
-                    <div
-                      className="text-sm font-bold"
-                      style={{
-                        color: selectedStateRow.pvi2026 == null
-                          ? t.textVeryMuted
-                          : selectedStateRow.pvi2026 > 0
-                            ? t.repText
-                            : selectedStateRow.pvi2026 < 0
-                              ? t.demText
-                              : t.textMuted,
-                      }}
-                    >
-                      {selectedStateRow.pvi2026 == null
-                        ? "—"
-                        : selectedStateRow.pvi2026 === 0
-                          ? "EVEN"
-                          : selectedStateRow.pvi2026 > 0
-                            ? `R+${selectedStateRow.pvi2026}`
-                            : `D+${Math.abs(selectedStateRow.pvi2026)}`}
-                    </div>
-                  </div>
-                )}
-                {selectedStateMode === "governor" && (
-                  <div className="col-span-2 rounded-md p-2" style={{ background: t.tabBg }}>
-                    <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Governor</div>
-                    {(() => {
-                      const p = selectedStateRow.govParty;
-                      const colors: Record<string, { bg: string; text: string; label: string }> = {
-                        D: { bg: "rgba(26,68,128,0.18)", text: t.demText, label: "Democrat" },
-                        R: { bg: "rgba(139,26,26,0.18)", text: t.repText, label: "Republican" },
-                        I: { bg: "rgba(120,106,26,0.18)", text: "#b8a020", label: "Independent" },
-                      };
-                      const c = p ? colors[p] : null;
-                      return c ? (
-                        <span className="text-[10px] font-semibold px-1.5 py-0.5 rounded-full" style={{ background: c.bg, color: c.text }}>{c.label}</span>
-                      ) : <span className="text-[10px]" style={{ color: t.textVeryMuted }}>Unknown</span>;
-                    })()}
-                  </div>
-                )}
-                {selectedStateMode === "senate" && (
-                  <div className="col-span-2 rounded-md p-2" style={{ background: t.tabBg }}>
-                    <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>Senate Seats</div>
-                    <div className="text-sm font-bold">
-                      <span style={{ color: t.demText }}>{selectedStateRow.senateDem}D</span>
-                      <span style={{ color: t.textVeryMuted }}> / </span>
-                      <span style={{ color: t.repText }}>{selectedStateRow.senateRep}R</span>
-                      {selectedStateRow.senateInd > 0 && <><span style={{ color: t.textVeryMuted }}> / </span><span style={{ color: "#b8a020" }}>{selectedStateRow.senateInd}I</span></>}
-                    </div>
-                  </div>
-                )}
-                {selectedStateMode === "house" && (
-                  <div className="col-span-2 rounded-md p-2" style={{ background: t.tabBg }}>
-                    <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>House Delegation</div>
-                    <div className="text-sm font-bold">
-                      <span style={{ color: t.demText }}>{selectedStateRow.houseDem}D</span>
-                      <span style={{ color: t.textVeryMuted }}> / </span>
-                      <span style={{ color: t.repText }}>{selectedStateRow.houseRep}R</span>
-                    </div>
-                  </div>
-                )}
-                {selectedStateMode === "legislature" && (
-                  <>
-                    <div className="rounded-md p-2" style={{ background: t.tabBg }}>
-                      <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>State House</div>
-                      <div className="text-sm font-bold">
-                        <span style={{ color: t.demText }}>{selectedStateRow.stateLegHouseDem ?? "—"}D</span>
-                        <span style={{ color: t.textVeryMuted }}> / </span>
-                        <span style={{ color: t.repText }}>{selectedStateRow.stateLegHouseRep ?? "—"}R</span>
-                      </div>
-                    </div>
-                    <div className="rounded-md p-2" style={{ background: t.tabBg }}>
-                      <div className="mb-1 text-[8px] font-bold uppercase tracking-wider" style={{ color: t.textMuted }}>State Senate</div>
-                      <div className="text-sm font-bold">
-                        <span style={{ color: t.demText }}>{selectedStateRow.stateLegSenateDem ?? "—"}D</span>
-                        <span style={{ color: t.textVeryMuted }}> / </span>
-                        <span style={{ color: t.repText }}>{selectedStateRow.stateLegSenateRep ?? "—"}R</span>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
-              {/* More Info */}
-              <div className="px-3 pb-3">
-                <a
-                  href={`/states/${selectedStateRow.id}`}
-                  className="flex items-center justify-center gap-1 rounded-md py-1.5 text-[9px] font-semibold transition-colors"
-                  style={{ background: t.tabBg, color: t.textMuted }}
-                >
-                  More Info
-                  <svg className="h-2.5 w-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          );
-        })()}
-
         {/* ── Below-map table (memoized — stable across mouse-move re-renders) ── */}
         {useMemo(() => (
           <>
@@ -909,17 +898,8 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
                 </div>
               </div>
             )}
-            {activeTab === "states" && (
-              <div className="mt-4 md:mt-5">
-                <div className="mb-3">
-                  <h2 className="text-xl font-bold sm:text-2xl" style={{ color: t.textPrimary }}>States</h2>
-                  <p className="text-sm mt-0.5" style={{ color: t.textMuted }}>{electionYear} Election Forecast by State · All 50 States</p>
-                </div>
-                <StatesTable rows={stateRows} />
-              </div>
-            )}
             {activeTab === "forecast" && (
-              <div className="mt-6 md:mt-8">
+              <div className="mt-4 md:mt-3">
                 {raceType === "house" && <ForecastRaceCards races={projectedHouseData} basePath="/house" />}
                 {raceType === "senate" && <ForecastRaceCards races={projectedSenateData} basePath="/senate" showSpecialBadge />}
                 {raceType === "governor" && <ForecastRaceCards races={projectedGovernorData} basePath="/governor" />}

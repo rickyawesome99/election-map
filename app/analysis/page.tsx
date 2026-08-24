@@ -9,11 +9,14 @@ export default function AnalysisPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
       <main>
-        <section style={{ background: "linear-gradient(110deg, color-mix(in srgb, var(--party-rep) 5%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 4%, var(--app-bg)) 100%)" }}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-8 sm:pt-10 pb-9 sm:pb-11">
-            <div className="text-[11px] font-bold uppercase tracking-[0.12em]" style={{ color: "var(--app-text-muted)" }}>{electionYear} Election Analysis</div>
-            <h1 className="mt-3" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2.7rem, 6.4vw, 5.25rem)", fontWeight: 700, letterSpacing: "-0.025em", lineHeight: 0.92 }}>Analysis</h1>
-            <p className="mt-5 max-w-2xl text-base sm:text-lg leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Deep dives into the races, coalitions, and national forces shaping {electionYear}.</p>
+        <section
+          style={{
+            background: "linear-gradient(to bottom, transparent 0%, var(--app-bg) 100%), linear-gradient(105deg, color-mix(in srgb, var(--party-rep) 7%, var(--app-bg)) 0%, var(--app-bg) 48%, color-mix(in srgb, var(--party-dem) 6%, var(--app-bg)) 100%)",
+          }}
+        >
+          <div className="px-3 pb-4 pt-4 sm:px-4 md:px-6">
+            <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>{electionYear} Election Analysis</div>
+            <h1 className="mt-1 text-4xl font-bold leading-none tracking-tight md:text-[2.75rem]" style={{ fontFamily: "var(--font-serif)" }}>Analysis</h1>
           </div>
         </section>
 
