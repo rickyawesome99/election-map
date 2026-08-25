@@ -45,6 +45,16 @@ function chamberLean(dem: number | null, rep: number | null): "D" | "R" | "tie" 
   return "tie";
 }
 
+export function legislatureControl(row: StateRow): Array<"D" | "R"> {
+  const house = chamberLean(row.stateLegHouseDem, row.stateLegHouseRep);
+  if (row.abbr === "NE") return house === "D" || house === "R" ? [house] : [];
+
+  const senate = chamberLean(row.stateLegSenateDem, row.stateLegSenateRep);
+  const houseControl = house === "tie" && (senate === "D" || senate === "R") ? senate : house;
+  const senateControl = senate === "tie" && (house === "D" || house === "R") ? house : senate;
+  return [houseControl, senateControl].filter((party): party is "D" | "R" => party === "D" || party === "R");
+}
+
 // `unfilled` is passed in so this can drive both the SVG map (real hex, theme-object based)
 // and the cartogram grid (CSS custom properties) without either one depending on the other's theming.
 export function stateFill(row: StateRow | undefined, mode: MapMode, unfilled: string): string {
@@ -189,7 +199,7 @@ export default function StatesOverviewMap({
 
       <ComposableMap
         projection="geoAlbersUsa"
-        projectionConfig={{ scale: 1200 }}
+        projectionConfig={{ scale: 1100 }}
         style={{ width: "100%", height: "100%" }}
       >
         <ZoomableGroup

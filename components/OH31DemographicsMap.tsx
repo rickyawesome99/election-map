@@ -140,10 +140,7 @@ export default function OH31DemographicsMap() {
 
   return (
     <div style={{ color: t.textPrimary }}>
-      <div
-        className="overflow-hidden rounded-xl"
-        style={{ background: "var(--app-panel)", border: "1px solid var(--app-border)" }}
-      >
+      <div className="overflow-hidden rounded-xl">
         <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] xl:grid-cols-[minmax(0,1fr)_340px]">
           <div
             className="order-2 border-t p-2 md:p-3 lg:order-1 lg:border-t-0 lg:pr-1.5"
@@ -153,8 +150,6 @@ export default function OH31DemographicsMap() {
               ref={mapRef}
               className="relative rounded-xl overflow-hidden"
               style={{
-                border: "1px solid var(--app-border)",
-                background: "var(--oh31-simple-map-bg)",
                 height: mapHeight,
                 zIndex: 0,
               }}

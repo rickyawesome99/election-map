@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { formatPvi, type MapMode, type StateRow } from "./StatesOverviewMap";
+import { type MapMode, type StateRow } from "./StatesOverviewMap";
 import { MODE_LABELS, ModeValue } from "./StatesLedgerList";
 
 // Mobile-only popup summary for a tapped state — appears right below the map/cartogram.
@@ -19,7 +19,7 @@ export default function StatesSelectedCard({
   return (
     <section>
       <div
-        className="flex items-baseline justify-between gap-3 pb-2.5 mb-1"
+        className="flex items-baseline justify-between gap-3 pb-1.5"
         style={{ borderBottom: "2px solid var(--app-text-primary)" }}
       >
         <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
@@ -32,18 +32,18 @@ export default function StatesSelectedCard({
         </button>
       </div>
 
-      <div className="py-4 min-w-0">
+      <div className="py-2.5 min-w-0">
         <div className="flex items-start justify-between gap-4">
           <div className="min-w-0">
-            <div className="flex items-baseline gap-1.5 mb-2">
+            <div className="flex items-baseline gap-1.5 mb-1">
               <span className="text-base font-bold" style={{ fontFamily: "var(--font-serif)", color: "var(--app-text-primary)" }}>
                 {row.name}
               </span>
               <span className="text-xs font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{row.abbr}</span>
             </div>
 
-            <div className="flex flex-col gap-0.5">
-              {mode === "legislature" ? (
+            {mode === "legislature" && (
+              <div className="flex flex-col gap-0.5">
                 <>
                   <div className="flex items-baseline justify-between gap-3">
                     <span className="text-sm" style={{ color: "var(--app-text-muted)" }}>State House</span>
@@ -62,16 +62,12 @@ export default function StatesSelectedCard({
                     </span>
                   </div>
                 </>
-              ) : (
-                <div className="text-sm" style={{ color: "var(--app-text-muted)" }}>
-                  PVI {formatPvi(row.pvi2026)}
-                </div>
-              )}
-            </div>
+              </div>
+            )}
 
             <Link
               href={`/states/${row.id}`}
-              className="mt-3 flex items-center gap-1 text-xs font-bold hover:underline"
+              className="mt-2 flex items-center gap-1 text-xs font-bold hover:underline"
               style={{ color: "var(--app-text-primary)" }}
             >
               View State Page

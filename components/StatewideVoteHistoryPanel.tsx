@@ -6,7 +6,7 @@ import CandidateLink from "./CandidateLink";
 
 export type StatewideHistoryEntry = {
   key: string;
-  group: "president" | "senate" | "governor";
+  group: "president" | "senate" | "governor" | "house";
   year: number;
   label: string;
   href?: string;
@@ -67,6 +67,16 @@ function ResultCard({ entry }: { entry: StatewideHistoryEntry }) {
 }
 
 export default function StatewideVoteHistoryPanel({ entries, chartResults }: { entries: StatewideHistoryEntry[]; chartResults: ChartResult[] }) {
+  const racePriority: Record<StatewideHistoryEntry["group"], number> = {
+    president: 0,
+    governor: 1,
+    senate: 2,
+    house: 3,
+  };
+  const sortedEntries = [...entries].sort((a, b) =>
+    b.year - a.year || racePriority[a.group] - racePriority[b.group]
+  );
+
   return (
     <VoteHistoryTabbedSection
       variant="plain"
@@ -78,7 +88,7 @@ export default function StatewideVoteHistoryPanel({ entries, chartResults }: { e
           label: "Race Results",
           content: (
             <div className="flex flex-col">
-              {entries.map((entry) => (
+              {sortedEntries.map((entry) => (
                 <ResultCard key={entry.key} entry={entry} />
               ))}
             </div>

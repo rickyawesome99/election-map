@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useEffect, useRef, useMemo, type CSSProperties } from "react";
 import { useRouter } from "next/navigation";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { getRaceColor, getRatingColors, marginToRating } from "@/lib/colorScale";
@@ -340,27 +340,12 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
             <button
               type="button"
               onClick={() => setStatesView((view) => view === "map" ? "cartogram" : "map")}
-              className="mb-1.5 shrink-0 rounded-full px-2.5 py-1 text-[10px] font-semibold md:hidden"
-              style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)", color: "var(--app-text-muted)" }}
+              className="mb-1.5 shrink-0 rounded-full px-3 py-1 text-[10px] font-semibold transition-colors sm:text-[11px]"
+              style={{ border: "1px solid var(--app-border)", background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }}
               aria-label={`Switch to ${statesView === "map" ? "cartogram" : "map"} view`}
             >
               {statesView === "map" ? "Cartogram" : "Map"}
             </button>
-            <div
-              className="hidden gap-0.5 rounded-full p-[3px] md:mb-1.5 md:flex"
-              style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-            >
-              {(["map", "cartogram"] as const).map((v) => (
-                <button
-                  key={v}
-                  onClick={() => setStatesView(v)}
-                  className="rounded-full px-3 py-1 text-[11px] font-semibold"
-                  style={statesView === v ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" } : { color: "var(--app-text-muted)" }}
-                >
-                  {v === "map" ? "Map" : "Cartogram"}
-                </button>
-              ))}
-            </div>
           </div>
         )}
 
@@ -383,7 +368,7 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
 
         {/* ── Mobile selected-state popup (below map, hidden on desktop where the list column shows selection inline) ── */}
         {activeTab === "states" && selectedStateRow && (
-          <div className="md:hidden mt-4">
+          <div className="md:hidden mt-3">
             <StatesSelectedCard row={selectedStateRow} mode={statesMode} onClose={() => setSelectedStateRow(null)} />
           </div>
         )}
@@ -742,8 +727,8 @@ export default function ForecastMap({ activeTab, raceType = "senate", modelSubTa
         )}
         {activeTab === "states" && (
           <div
-            className="mt-5 md:mt-0 md:overflow-y-auto md:pr-1"
-            style={{ maxHeight: statesMapBoxHeight }}
+            className="mt-5 md:mt-0 md:pr-1"
+            style={{ "--states-map-height": `${statesMapBoxHeight}px` } as CSSProperties}
           >
             <StatesLedgerList rows={stateRows} mode={statesMode} selected={selectedStateRow} onSelect={setSelectedStateRow} />
           </div>

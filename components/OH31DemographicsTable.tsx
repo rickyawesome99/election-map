@@ -127,7 +127,7 @@ export default function OH31DemographicsTable() {
   );
 
   return (
-    <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
+    <div>
       <style>{`
         .oh31-scroll-table {
           border-collapse: separate;

@@ -151,7 +151,7 @@ export default function OH31MapSimple2022({ activeRace, darkMode, townshipFilter
     <div
       ref={mapRef}
       className="relative rounded-xl overflow-hidden"
-      style={{ border: "1px solid var(--app-border)", background: "var(--oh31-simple-map-bg)", height: mapHeight, zIndex: 0 }}
+      style={{ height: mapHeight, zIndex: 0 }}
       onClick={() => {
         if (!isMobile) {
           setPinned(null);

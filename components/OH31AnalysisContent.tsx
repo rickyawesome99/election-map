@@ -77,21 +77,21 @@ export default function OH31AnalysisContent() {
 
       <OH31TownshipTable />
 
-      <section className="mt-8">
-        <div className="flex items-center gap-3 mb-4 flex-wrap">
-          <h2 className="text-xl font-semibold" style={{ color: "var(--app-text-primary)" }}>
+      <section className="mt-10">
+        <div
+          className="flex flex-wrap items-end justify-between gap-x-5 gap-y-2 pb-3 mb-4"
+          style={{ borderBottom: "2px solid var(--app-text-primary)" }}
+        >
+          <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
             Vote Totals
           </h2>
-          <div
-            className="flex items-center gap-1 rounded-lg px-1 py-1"
-            style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-          >
+          <div className="flex items-center gap-1">
             {(["2024", "2022", "2020", "2018", "2016"] as TableYear[]).map((yr) => (
               <button
                 key={yr}
                 onClick={() => setTableYear(yr)}
                 aria-pressed={tableYear === yr}
-                className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
+                className="rounded-full px-2.5 py-0.5 text-[11px] font-medium transition-colors"
                 style={
                   tableYear === yr
                     ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
@@ -103,64 +103,52 @@ export default function OH31AnalysisContent() {
             ))}
           </div>
         </div>
-        <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-        <div className="grid grid-cols-3" style={{ background: "var(--app-bg)" }}>
-          <div className="px-3 md:px-4 py-3 md:py-4" style={{ borderRight: "1px solid var(--app-border)" }}>
-            <div className="text-[10px] md:text-xs font-medium mb-1" style={{ color: "var(--app-text-muted)" }}>
-              Precincts
-            </div>
-            <div className="text-lg md:text-2xl font-bold tabular-nums leading-none" style={{ color: "var(--app-text-primary)" }}>
+
+        <div className="flex flex-wrap gap-x-10 gap-y-4 mb-6">
+          <div>
+            <div className="text-2xl font-extrabold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
               {isTbdYear ? <span style={{ color: "var(--app-text-muted)", fontSize: "0.9em" }}>TBD</span> : filteredPrecincts.length}
             </div>
-          </div>
-          <div className="px-3 md:px-4 py-3 md:py-4" style={{ borderRight: "1px solid var(--app-border)" }}>
-            <div className="text-[10px] md:text-xs font-medium mb-1" style={{ color: "var(--app-text-muted)" }}>
-              Ballots Cast
+            <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+              Precincts
             </div>
-            <div className="text-lg md:text-2xl font-bold tabular-nums leading-none" style={{ color: "var(--app-text-primary)" }}>
+          </div>
+          <div>
+            <div className="text-2xl font-extrabold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
               {isTbdYear ? <span style={{ color: "var(--app-text-muted)", fontSize: "0.9em" }}>TBD</span> : totalBallots.toLocaleString()}
             </div>
-          </div>
-          <div className="px-3 md:px-4 py-3 md:py-4">
-            <div className="text-[10px] md:text-xs font-medium mb-1" style={{ color: "var(--app-text-muted)" }}>
-              Turnout
+            <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+              Ballots Cast
             </div>
-            <div className="text-lg md:text-2xl font-bold tabular-nums leading-none" style={{ color: "var(--app-text-primary)" }}>
+          </div>
+          <div>
+            <div className="text-2xl font-extrabold tabular-nums" style={{ color: "var(--app-text-primary)" }}>
               {isTbdYear ? <span style={{ color: "var(--app-text-muted)", fontSize: "0.9em" }}>TBD</span> : `${turnoutPct.toFixed(1)}%`}
+            </div>
+            <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
+              Turnout
             </div>
           </div>
         </div>
-        <div
-          className={`grid grid-cols-2 ${totals.length === 3 ? "md:grid-cols-3" : "md:grid-cols-4"}`}
-          style={{ background: "var(--app-bg)", borderTop: "1px solid var(--app-border)" }}
-        >
-          {isTbdYear ? (
-            <div
-              className="col-span-2 md:col-span-4 px-5 py-8 text-center text-sm"
-              style={{ color: "var(--app-text-muted)" }}
-            >
-              Vote total data for {tableYear} coming soon
-            </div>
-          ) : (
-            totals.map(({ label, d, r }, i) => {
+
+        {isTbdYear ? (
+          <div className="py-8 text-center text-sm" style={{ color: "var(--app-text-muted)" }}>
+            Vote total data for {tableYear} coming soon
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-5">
+            {totals.map(({ label, d, r }) => {
               const total = d + r;
               const dPct = total > 0 ? (d / total) * 100 : 0;
               const rPct = total > 0 ? (r / total) * 100 : 0;
               const dWins = d > r;
               return (
-                <div
-                  key={label}
-                  className="px-5 py-4"
-                  style={{
-                    borderRight: i < totals.length - 1 ? "1px solid var(--app-border)" : undefined,
-                    borderBottom: totals.length >= 3 && i < 2 ? "1px solid var(--app-border)" : undefined,
-                  }}
-                >
-                  <div className="text-[11px] md:text-xs font-medium mb-2 md:mb-3 text-center" style={{ color: "var(--app-text-muted)" }}>
+                <div key={label}>
+                  <div className="text-[11px] font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--app-text-very-muted)" }}>
                     {label}
                   </div>
-                  <div className="grid grid-cols-3 items-end gap-1 mb-2 text-center">
-                    <div className="flex flex-col items-center">
+                  <div className="grid grid-cols-3 items-end gap-1 mb-2">
+                    <div className="flex flex-col">
                       <div className="text-base md:text-lg font-bold tabular-nums leading-none" style={{ color: "var(--party-dem, #1b408c)" }}>
                         {d.toLocaleString()}
                       </div>
@@ -170,7 +158,7 @@ export default function OH31AnalysisContent() {
                     </div>
                     <div className="flex items-center justify-center">
                       <div
-                        className="text-[10px] md:text-xs font-semibold px-1.5 md:px-2 py-0.5 rounded whitespace-nowrap"
+                        className="text-[10px] md:text-xs font-semibold px-1.5 md:px-2 py-0.5 rounded-full whitespace-nowrap"
                         style={{
                           background: dWins ? "var(--party-dem-subtle, #dbeafe)" : "var(--party-rep-subtle, #fee2e2)",
                           color: dWins ? "var(--party-dem, #1b408c)" : "var(--party-rep, #be1c29)",
@@ -179,7 +167,7 @@ export default function OH31AnalysisContent() {
                         {dWins ? "D" : "R"}+{Math.abs(dPct - rPct).toFixed(1)}%
                       </div>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-end">
                       <div className="text-base md:text-lg font-bold tabular-nums leading-none" style={{ color: "var(--party-rep, #be1c29)" }}>
                         {r.toLocaleString()}
                       </div>
@@ -188,44 +176,48 @@ export default function OH31AnalysisContent() {
                       </div>
                     </div>
                   </div>
-                  <div className="h-1.5 rounded-full overflow-hidden mx-auto" style={{ background: "var(--app-border)", width: "92%" }}>
+                  <div className="h-1.5 rounded-full overflow-hidden" style={{ background: "var(--app-border)" }}>
                     <div className="h-full rounded-full" style={{ width: `${dPct}%`, background: "var(--party-dem, #1b408c)" }} />
                   </div>
                 </div>
               );
-            })
-          )}
-        </div>
-        </div>
+            })}
+          </div>
+        )}
       </section>
 
       <section id="oh31-table" className="mt-10 scroll-mt-24">
-        <h2 className="text-xl font-semibold mb-4" style={{ color: "var(--app-text-primary)" }}>
-          Precinct Results
-        </h2>
+        <div className="pb-3 mb-4" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+          <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
+            Precinct Results
+          </h2>
+        </div>
         <OH31PrecinctTable
-          data={filteredPrecincts}
+          data={activeDataset}
           year={tableYear}
           townshipFilter={townshipFilter}
           setTownshipFilter={setTownshipFilter}
-          totalPrecinctCount={activeDataset.length}
         />
       </section>
 
       <section id="oh31-demographics" className="mt-10 scroll-mt-24">
-        <h2 className="text-xl font-semibold mb-4" style={{ color: "var(--app-text-primary)" }}>
-          Demographics
-        </h2>
+        <div className="pb-3 mb-1" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+          <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
+            Demographics
+          </h2>
+        </div>
         <p className="text-sm mb-4" style={{ color: "var(--app-text-muted)" }}>
           2020 Census & 2020–2024 ACS · precinct-level estimates
         </p>
         <OH31DemographicsMap />
       </section>
 
-      <section className="mt-8">
-        <h2 className="text-xl font-semibold mb-4" style={{ color: "var(--app-text-primary)" }}>
-          Demographics by Precinct
-        </h2>
+      <section className="mt-10">
+        <div className="pb-3 mb-4" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+          <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
+            Demographics by Precinct
+          </h2>
+        </div>
         <OH31DemographicsTable />
       </section>
     </>

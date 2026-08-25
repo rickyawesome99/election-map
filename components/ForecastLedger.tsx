@@ -139,8 +139,8 @@ export function ForecastHero({
 }
 
 // ─────────────────────────────────────────────────────────────────────────
-// Race list — mobile: a tiered ledger (Toss-Up/Lean/Likely get full detail,
-// Safe collapses to compact rows). Desktop: the same tiered ledger, laid out
+// Race list — mobile: a tiered ledger with full detail for every rating.
+// Desktop: the same tiered ledger, laid out
 // in text columns per tier (more columns as a tier gets larger), with a
 // "show all" expand for tiers over TIER_EXPAND_AT (matters mainly for House
 // Safe, which can run into the hundreds).
@@ -224,24 +224,6 @@ function LedgerRow({ race, basePath, showSpecialBadge }: { race: RaceForecast; b
         <div className="mt-1"><RatingPill rating={rating} /></div>
       </div>
     </div>
-  );
-}
-
-function CompactRow({ race, basePath }: { race: RaceForecast; basePath: string }) {
-  const margin = race.margin ?? 0;
-  const rating = marginToRating(margin);
-  return (
-    <a
-      href={raceHref(basePath, race)}
-      className="flex items-center justify-between gap-2 py-2 text-sm"
-      style={{ borderBottom: "1px solid var(--app-border)" }}
-    >
-      <span className="min-w-0 truncate font-semibold" style={{ color: "var(--app-text-primary)" }}>{race.name}</span>
-      <span className="flex shrink-0 items-center gap-2">
-        <MarginFigure margin={margin} className="text-xs" />
-        <RatingPill rating={rating} />
-      </span>
-    </a>
   );
 }
 
@@ -372,9 +354,7 @@ export function ForecastRaceCards({
         {byTier.Safe.length > 0 && (
           <div className="mt-6">
             <TierHeader label="Safe" count={byTier.Safe.length} />
-            <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-x-6">
-              {byTier.Safe.map((r) => <CompactRow key={r.id} race={r} basePath={basePath} />)}
-            </div>
+            {byTier.Safe.map((r) => <LedgerRow key={r.id} race={r} basePath={basePath} showSpecialBadge={showSpecialBadge} />)}
           </div>
         )}
       </div>

@@ -320,38 +320,36 @@ export default async function SenatePage({ params }: { params: Promise<{ id: str
           </div>
 
           {/* Stat row */}
-          <div className="mt-8 pt-5 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
-            <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-2xl font-extrabold tabular-nums">
-                <span style={{ color: "var(--party-dem)" }}>{demPct}%</span>
-                <span style={{ color: "var(--app-text-very-muted)", fontWeight: 500 }}> / </span>
-                <span style={{ color: "var(--party-rep)" }}>{repPct}%</span>
+          <div className="mt-8 grid grid-cols-3 pt-5" style={{ borderTop: "1px solid var(--app-border)" }}>
+            <div className="min-w-0 pr-2 sm:pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div className="text-xl font-extrabold tabular-nums sm:text-2xl">
+                <span style={{ color: demPct >= repPct ? "var(--party-dem)" : "var(--party-rep)" }}>{Math.max(demPct, repPct)}% {demPct >= repPct ? "D" : "R"}</span>
               </div>
-              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
-                Win Probability
+              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+                Win Prob.
               </div>
             </div>
 
-            <div className="pr-8" style={{ borderRight: "1px solid var(--app-border)" }}>
-              <div className="text-2xl font-extrabold tabular-nums" style={{ color: marginColor(rcpMargin) }}>
+            <div className="min-w-0 px-2 sm:px-8" style={{ borderRight: "1px solid var(--app-border)" }}>
+              <div className="text-xl font-extrabold tabular-nums sm:text-2xl" style={{ color: marginColor(rcpMargin) }}>
                 {fmtMargin(rcpMargin)}
               </div>
-              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
-                RCP Average
+              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+                RCP Avg.
               </div>
             </div>
 
-            <div>
+            <div className="min-w-0 pl-2 sm:pl-8">
               <div
-                className="text-2xl font-extrabold tabular-nums"
+                className="text-xl font-extrabold tabular-nums sm:text-2xl"
                 style={{ color: marketDemProb == null ? "var(--app-text-very-muted)" : marketDemProb >= 0.5 ? "var(--party-dem)" : "var(--party-rep)" }}
               >
                 {marketDemProb == null
                   ? "—"
                   : `${Math.round((marketDemProb >= 0.5 ? marketDemProb : 1 - marketDemProb) * 100)}% ${marketDemProb >= 0.5 ? "D" : "R"}`}
               </div>
-              <div className="text-[11px] font-semibold uppercase tracking-wider mt-1" style={{ color: "var(--app-text-very-muted)" }}>
-                Prediction Markets
+              <div className="mt-1 text-[9px] font-semibold uppercase tracking-wider sm:text-[11px]" style={{ color: "var(--app-text-very-muted)" }}>
+                Markets
               </div>
             </div>
           </div>

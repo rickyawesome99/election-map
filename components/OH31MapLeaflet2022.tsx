@@ -162,7 +162,7 @@ export default function OH31MapLeaflet2022({ activeRace, darkMode, onReady, town
   if (!geoData) {
     return (
       <div style={{ height: 520, display: "flex", alignItems: "center", justifyContent: "center",
-        background: "var(--oh31-map-unfilled)", borderRadius: 12, border: "1px solid var(--app-border)" }}>
+        background: "var(--oh31-map-unfilled)", borderRadius: 12 }}>
         <span style={{ color: t.textMuted, fontSize: 14 }}>Loading map…</span>
       </div>
     );
@@ -180,7 +180,7 @@ export default function OH31MapLeaflet2022({ activeRace, darkMode, onReady, town
         .leaflet-bottom { z-index: 1; }
       `}</style>
 
-      <div style={{ borderRadius: 12, overflow: "hidden", border: "1px solid var(--app-border)", height: 520, position: "relative", zIndex: 0 }}>
+      <div style={{ borderRadius: 12, overflow: "hidden", height: 520, position: "relative", zIndex: 0 }}>
         <MapContainer
           center={[41.1295, -81.5692]}
           zoom={10}

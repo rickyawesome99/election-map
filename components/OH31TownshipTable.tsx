@@ -611,118 +611,98 @@ export default function OH31TownshipTable() {
   const activeRaceFilter = mode === "results" ? resultsRaceFilter : swingRaceFilter;
 
   return (
-    <section className="mt-8">
-      <div className="mb-4 flex flex-col gap-3">
-        <div className="flex items-center gap-3 flex-wrap">
-          <h2 className="text-xl font-semibold" style={{ color: "var(--app-text-primary)" }}>
-            {mode === "results" ? "Results by Township" : "Swing by Township"}
-          </h2>
-          <div
-            className="flex items-center gap-1 rounded-lg px-1 py-1"
-            style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-          >
-            {(["results", "swing"] as Mode[]).map((m) => (
-              <button
-                key={m}
-                onClick={() => setMode(m)}
-                aria-pressed={mode === m}
-                className="px-3 py-1 rounded-md text-sm font-medium capitalize transition-colors"
-                style={
-                  mode === m
-                    ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
-                    : { color: "var(--app-text-muted)", border: "1px solid transparent" }
-                }
-              >
-                {m}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-wrap items-center gap-2">
-          <div
-            className="flex items-center gap-1 rounded-lg px-1 py-1"
-            style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
-          >
-            {(["race", "year"] as ResultsViewMode[]).map((view) => (
-              <button
-                key={view}
-                onClick={() => {
-                  if (mode === "results") setResultsViewMode(view);
-                  else setSwingViewMode(view);
-                }}
-                aria-pressed={activeViewMode === view}
-                className="px-3 py-1 rounded-md text-sm font-medium capitalize transition-colors"
-                style={
-                  activeViewMode === view
-                    ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
-                    : { color: "var(--app-text-muted)", border: "1px solid transparent" }
-                }
-              >
-                {view}
-              </button>
-            ))}
-          </div>
-          <div className="flex flex-wrap items-center gap-2">
-            <div
-              className="flex flex-wrap items-center gap-1 rounded-lg px-1 py-1"
-              style={{ border: "1px solid var(--app-border)", background: "var(--app-panel)" }}
+    <section className="mt-10">
+      <div
+        className="flex flex-wrap items-end justify-between gap-x-5 gap-y-2 pb-3 mb-4"
+        style={{ borderBottom: "2px solid var(--app-text-primary)" }}
+      >
+        <div className="flex items-end gap-5">
+          {(["results", "swing"] as Mode[]).map((m) => (
+            <button
+              key={m}
+              onClick={() => setMode(m)}
+              className="text-[11px] uppercase tracking-wider font-bold transition-colors"
+              style={{ color: mode === m ? "var(--app-text-primary)" : "var(--app-text-muted)" }}
             >
-              {activeViewMode === "race"
-                ? RESULTS_RACE_FILTERS.map(({ key, label }) => (
-                    <button
-                      key={key}
-                      onClick={() => {
-                        if (mode === "results") setResultsRaceFilter(key);
-                        else setSwingRaceFilter(key);
-                      }}
-                      aria-pressed={activeRaceFilter === key}
-                      className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-                      style={
-                        activeRaceFilter === key
-                          ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
-                          : { color: "var(--app-text-muted)", border: "1px solid transparent" }
-                      }
-                    >
-                      {label}
-                    </button>
-                  ))
-                : (mode === "results" ? RESULTS_YEAR_FILTERS : SWING_YEAR_FILTERS).map(({ key, label }) => (
-                    <button
-                      key={key}
-                      onClick={() => {
-                        if (mode === "results") setResultsYearFilter(key as ResultsYearFilter);
-                        else setSwingYearFilter(key as SwingYearFilter);
-                      }}
-                      aria-pressed={mode === "results" ? resultsYearFilter === key : swingYearFilter === key}
-                      className="px-3 py-1 rounded-md text-sm font-medium transition-colors"
-                      style={
-                        (mode === "results" ? resultsYearFilter === key : swingYearFilter === key)
-                          ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
-                          : { color: "var(--app-text-muted)", border: "1px solid transparent" }
-                      }
-                    >
-                      {label}
-                    </button>
-                  ))}
-            </div>
-          </div>
+              Township {m === "results" ? "Results" : "Swing"}
+            </button>
+          ))}
+        </div>
+        <div className="flex items-center gap-0.5 rounded-full p-0.5" style={{ border: "1px solid var(--app-border)" }}>
+          {(["race", "year"] as ResultsViewMode[]).map((view) => (
+            <button
+              key={view}
+              onClick={() => {
+                if (mode === "results") setResultsViewMode(view);
+                else setSwingViewMode(view);
+              }}
+              aria-pressed={activeViewMode === view}
+              className="rounded-full px-2.5 py-0.5 text-[11px] font-semibold transition-colors"
+              style={
+                activeViewMode === view
+                  ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)" }
+                  : { color: "var(--app-text-muted)" }
+              }
+            >
+              {view === "race" ? "By race" : "By year"}
+            </button>
+          ))}
         </div>
       </div>
-      <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
-        {mode === "results" ? (
-          <ResultsTable
-            viewMode={resultsViewMode}
-            raceFilter={resultsRaceFilter}
-            yearFilter={resultsYearFilter}
-          />
-        ) : (
-          <SwingTable
-            viewMode={swingViewMode}
-            raceFilter={swingRaceFilter}
-            yearFilter={swingYearFilter}
-          />
-        )}
+
+      <div className="flex flex-wrap items-center gap-1 mb-4">
+        {activeViewMode === "race"
+          ? RESULTS_RACE_FILTERS.map(({ key, label }) => (
+              <button
+                key={key}
+                onClick={() => {
+                  if (mode === "results") setResultsRaceFilter(key);
+                  else setSwingRaceFilter(key);
+                }}
+                aria-pressed={activeRaceFilter === key}
+                className="rounded-full px-2.5 py-1 text-xs font-medium transition-colors"
+                style={
+                  activeRaceFilter === key
+                    ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
+                    : { color: "var(--app-text-muted)", border: "1px solid transparent" }
+                }
+              >
+                {label}
+              </button>
+            ))
+          : (mode === "results" ? RESULTS_YEAR_FILTERS : SWING_YEAR_FILTERS).map(({ key, label }) => (
+              <button
+                key={key}
+                onClick={() => {
+                  if (mode === "results") setResultsYearFilter(key as ResultsYearFilter);
+                  else setSwingYearFilter(key as SwingYearFilter);
+                }}
+                aria-pressed={mode === "results" ? resultsYearFilter === key : swingYearFilter === key}
+                className="rounded-full px-2.5 py-1 text-xs font-medium transition-colors"
+                style={
+                  (mode === "results" ? resultsYearFilter === key : swingYearFilter === key)
+                    ? { background: "var(--app-tab-bg)", color: "var(--app-text-primary)", border: "1px solid var(--app-border)" }
+                    : { color: "var(--app-text-muted)", border: "1px solid transparent" }
+                }
+              >
+                {label}
+              </button>
+            ))}
       </div>
+
+      {mode === "results" ? (
+        <ResultsTable
+          viewMode={resultsViewMode}
+          raceFilter={resultsRaceFilter}
+          yearFilter={resultsYearFilter}
+        />
+      ) : (
+        <SwingTable
+          viewMode={swingViewMode}
+          raceFilter={swingRaceFilter}
+          yearFilter={swingYearFilter}
+        />
+      )}
     </section>
   );
 }

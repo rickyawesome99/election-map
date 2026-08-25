@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { formatPvi, type MapMode, type StateRow } from "./StatesOverviewMap";
+import { legislatureControl, type MapMode, type StateRow } from "./StatesOverviewMap";
 
 export const MODE_LABELS: Record<MapMode, string> = {
   governor: "Governor",
@@ -20,12 +20,19 @@ export function ModeValue({ row, mode, large }: { row: StateRow; mode: MapMode; 
     return <span className={`font-extrabold ${sizeClass}`} style={{ color }}>{label}</span>;
   }
   if (mode === "senate") {
+    const seats = [
+      { count: row.senateDem, party: "D", color: "var(--party-dem)" },
+      { count: row.senateRep, party: "R", color: "var(--party-rep)" },
+      { count: row.senateInd, party: "I", color: "#b8a020" },
+    ].filter(({ count }) => count > 0);
     return (
       <span className={`tabular-nums font-extrabold ${sizeClass}`}>
-        <span style={{ color: "var(--party-dem)" }}>{row.senateDem}D</span>
-        <span style={{ color: "var(--app-text-very-muted)" }}>–</span>
-        <span style={{ color: "var(--party-rep)" }}>{row.senateRep}R</span>
-        {row.senateInd > 0 && <span style={{ color: "#b8a020" }}>–{row.senateInd}I</span>}
+        {seats.map(({ count, party, color }, index) => (
+          <span key={party}>
+            {index > 0 && <span style={{ color: "var(--app-text-very-muted)" }}>–</span>}
+            <span style={{ color }}>{count}{party}</span>
+          </span>
+        ))}
       </span>
     );
   }
@@ -38,11 +45,19 @@ export function ModeValue({ row, mode, large }: { row: StateRow; mode: MapMode; 
       </span>
     );
   }
+  const control = legislatureControl(row);
+  const demChambers = control.filter((party) => party === "D").length;
+  const repChambers = control.filter((party) => party === "R").length;
+  if (row.abbr === "NE") {
+    const party = control[0];
+    return <span className={`font-extrabold ${sizeClass}`} style={{ color: party === "D" ? "var(--party-dem)" : "var(--party-rep)" }}>{party ?? "—"}</span>;
+  }
   return (
     <span className={`tabular-nums font-extrabold ${sizeClass}`}>
-      <span style={{ color: "var(--party-dem)" }}>{row.stateLegHouseDem ?? "—"}D</span>
-      <span style={{ color: "var(--app-text-very-muted)" }}>–</span>
-      <span style={{ color: "var(--party-rep)" }}>{row.stateLegHouseRep ?? "—"}R</span>
+      {demChambers > 0 && <span style={{ color: "var(--party-dem)" }}>{demChambers}D</span>}
+      {demChambers > 0 && repChambers > 0 && " "}
+      {repChambers > 0 && <span style={{ color: "var(--party-rep)" }}>{repChambers}R</span>}
+      {control.length === 0 && <span style={{ color: "var(--app-text-very-muted)" }}>—</span>}
     </span>
   );
 }
@@ -84,60 +99,45 @@ export default function StatesLedgerList({
           {MODE_LABELS[mode]} · 50
         </span>
       </div>
-      <div ref={listRef} className="flex flex-col">
+      <div ref={listRef} className="states-ledger-scroll flex flex-col">
         {sorted.map((row) => {
           const isSelected = selected?.abbr === row.abbr;
           return (
-            <button
+            <div
               key={row.abbr}
-              type="button"
+              role="button"
+              tabIndex={0}
               data-abbr={row.abbr}
               onClick={() => onSelect(isSelected ? null : row)}
-              className="text-left py-2.5 w-full"
+              onKeyDown={(event) => {
+                if (event.key === "Enter" || event.key === " ") {
+                  event.preventDefault();
+                  onSelect(isSelected ? null : row);
+                }
+              }}
+              className={`cursor-pointer text-left py-2.5 w-full ${isSelected ? "states-ledger-row-selected" : ""}`}
               style={{
                 borderBottom: "1px solid var(--app-border)",
                 background: isSelected ? "var(--app-tab-bg)" : "transparent",
-                marginLeft: isSelected ? "-0.6rem" : 0,
-                marginRight: isSelected ? "-0.6rem" : 0,
-                paddingLeft: isSelected ? "0.6rem" : 0,
-                paddingRight: isSelected ? "0.6rem" : 0,
                 borderRadius: isSelected ? 6 : 0,
-                width: isSelected ? "calc(100% + 1.2rem)" : "100%",
               }}
             >
               <div className="flex items-center justify-between gap-3 min-w-0">
-                <span className="min-w-0 truncate" style={{ fontFamily: "var(--font-serif)", fontSize: "0.95rem", fontWeight: 700, color: "var(--app-text-primary)" }}>
+                <Link
+                  href={`/states/${row.id}`}
+                  onClick={(event) => event.stopPropagation()}
+                  onKeyDown={(event) => event.stopPropagation()}
+                  className="min-w-0 truncate hover:underline"
+                  style={{ fontFamily: "var(--font-serif)", fontSize: "0.95rem", fontWeight: 700, color: "var(--app-text-primary)" }}
+                >
                   {row.name}
                   <span className="ml-1.5 text-[10px] font-semibold" style={{ color: "var(--app-text-very-muted)" }}>{row.abbr}</span>
-                </span>
+                </Link>
                 <div className="shrink-0 flex items-center gap-2">
                   <ModeValue row={row} mode={mode} />
                 </div>
               </div>
-              {isSelected && (
-                <div className="mt-1.5">
-                  {mode === "legislature" && (
-                    <div className="text-[11px] mb-1" style={{ color: "var(--app-text-muted)" }}>
-                      St. Senate <span style={{ color: "var(--party-dem)" }}>{row.stateLegSenateDem ?? "—"}D</span>
-                      <span style={{ color: "var(--app-text-very-muted)" }}>–</span>
-                      <span style={{ color: "var(--party-rep)" }}>{row.stateLegSenateRep ?? "—"}R</span>
-                    </div>
-                  )}
-                  <div className="flex items-center justify-between gap-3">
-                    <span className="text-[11px]" style={{ color: "var(--app-text-muted)" }}>
-                      PVI {formatPvi(row.pvi2026)}
-                    </span>
-                    <Link
-                      href={`/states/${row.id}`}
-                      className="text-[11px] font-semibold hover:underline"
-                      style={{ color: "var(--app-text-muted)" }}
-                    >
-                      View state page →
-                    </Link>
-                  </div>
-                </div>
-              )}
-            </button>
+            </div>
           );
         })}
       </div>

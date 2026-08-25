@@ -110,6 +110,25 @@ body::before {
   display: none;
 }
 
+.states-ledger-scroll {
+  max-height: 26rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .states-ledger-scroll {
+    max-height: calc(var(--states-map-height) - 4.5rem);
+  }
+  .states-ledger-row-selected {
+    margin-left: -0.6rem;
+    margin-right: -0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    width: calc(100% + 1.2rem);
+  }
+}
+
 /* County page "ledger spread" — see components/CountySpreadColumns.tsx */
 .county-spread {
   display: grid;
