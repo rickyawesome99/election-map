@@ -40,18 +40,22 @@ function normalizeFeature(feature, stateFips, source, customFields) {
     };
   }
 
-  // Custom (non-TIGER) source — caller specifies which field holds the district number.
-  const raw = props[customFields.geoidFrom];
-  const districtNum = parseInt(raw, 10);
-  const padded = String(districtNum).padStart(customFields.pad ?? 3, "0");
+  // Custom (non-TIGER) source — caller specifies which field holds the district identifier.
+  // Usually numeric (padded into GEOID), but some states (e.g. NH's county-prefixed "BE1",
+  // "CH14" county-legislative-district codes) use non-numeric identifiers — those pass through
+  // as-is instead of being parsed/padded.
+  const raw = String(props[customFields.geoidFrom]);
+  const isNumeric = /^\d+$/.test(raw);
+  const districtId = isNumeric ? String(parseInt(raw, 10)) : raw;
+  const geoidSuffix = isNumeric ? districtId.padStart(customFields.pad ?? 3, "0") : raw;
   return {
     type: "Feature",
     geometry: feature.geometry,
     properties: {
       STATEFP: stateFips,
-      GEOID: `${stateFips}${padded}`,
-      DISTRICT: String(districtNum),
-      NAMELSAD: customFields.namePrefix ? `${customFields.namePrefix} ${districtNum}` : `District ${districtNum}`,
+      GEOID: `${stateFips}${geoidSuffix}`,
+      DISTRICT: districtId,
+      NAMELSAD: customFields.namePrefix ? `${customFields.namePrefix} ${districtId}` : `District ${districtId}`,
     },
   };
 }
