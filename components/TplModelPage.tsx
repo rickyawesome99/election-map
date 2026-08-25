@@ -649,6 +649,17 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
   const [allStatesSort, setAllStatesSort] = useState<"centeredTpl" | "tpl" | "absCenteredTpl" | "name">("centeredTpl");
   const [allStatesSortDir, setAllStatesSortDir] = useState<"asc" | "desc">("asc");
 
+  useEffect(() => {
+    const mobileQuery = window.matchMedia("(max-width: 767px)");
+    const enforceMobileRaceDetail = (event: MediaQueryListEvent | MediaQueryList) => {
+      if (event.matches) setStepOneMode("detail");
+    };
+
+    enforceMobileRaceDetail(mobileQuery);
+    mobileQuery.addEventListener("change", enforceMobileRaceDetail);
+    return () => mobileQuery.removeEventListener("change", enforceMobileRaceDetail);
+  }, []);
+
   // Sub-tab state
   const [activeSubTab, setActiveSubTab] = useState<"state" | "district" | "table" | "districtTable">(initialSubTab ?? "state");
   const [returnSubTab, setReturnSubTab] = useState<"table" | "districtTable" | null>(null);
@@ -881,6 +892,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
   const selectedDistrictHouseHref = selectedDistrictData
     ? houseData.find((race) => race.name === selectedDistrictData.code)?.name.toLowerCase()
     : null;
+  const raceTableGridColumns = "grid grid-cols-[minmax(12rem,2fr)_5rem_7rem_9rem_8rem_6rem_10rem_7rem_6rem_5rem_6rem_7rem]";
 
   return (
     <div>
@@ -1045,15 +1057,20 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
         <h3 className="text-sm font-bold uppercase tracking-wider mb-0.5" style={{ color: "var(--app-text-muted)" }}>
           Step 1 — Per-Race Calculations
         </h3>
-        <p className="text-xs mb-3" style={{ color: "var(--app-text-muted)" }}>
+        <p className="text-xs mb-3 leading-4" style={{ color: "var(--app-text-muted)" }}>
           {stepOneMode === "table" ? (
             <>
-              NM = Adjusted Margin × (IF × CQ) + FF pts + WA. Margins of 50 points or greater are first blended from 60% prior contested result and 40% prior presidential result.{" "}
-              {!hasS && <span style={{ color: "var(--app-text-very-muted)" }}>WA = 0 (no S). </span>}
-              Click any race to open its full calculation in Race Detail.
+              <span className="block">NM = Adjusted Margin × (IF × CQ) + FF pts + WA. Margins of 50 points or greater are first blended from 60% prior contested result and 40% prior presidential result.</span>
+              <span className="block">
+                {!hasS && <span style={{ color: "var(--app-text-very-muted)" }}>WA = 0 (no S). </span>}
+                Click any race to open its full calculation in Race Detail.
+              </span>
             </>
           ) : (
-            <>Pick a race from the list to audit its full step-by-step math — Raw Margin → Candidate Factor → Wave Adjustment → Neutralized Margin.</>
+            <>
+              <span className="block">Pick a race from the list to audit its full step-by-step math.</span>
+              <span className="block">Raw Margin → Candidate Factor → Wave Adjustment → Neutralized Margin.</span>
+            </>
           )}
         </p>
 
@@ -1064,7 +1081,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
               <button
                 key={mode}
                 onClick={() => setStepOneMode(mode)}
-                className="whitespace-nowrap pb-2 text-xs font-semibold transition-colors"
+                className={`${mode === "table" ? "hidden md:block" : "block"} whitespace-nowrap pb-2 text-xs font-semibold transition-colors`}
                 style={
                   active
                     ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)", marginBottom: "-1px" }
@@ -1133,11 +1150,14 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
 
         {/* Per-race table */}
         {stepOneMode === "table" && (
-        <div>
-          <div className="overflow-x-auto">
-            <table className="w-full min-w-[600px] text-xs">
-              <thead>
-                <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+        <div className="hidden md:block">
+          <div className="h-[30rem] overflow-x-auto overflow-y-hidden">
+            <table className="flex h-full w-full min-w-[95rem] flex-col text-xs">
+              <thead
+                className="block shrink-0"
+                style={{ background: "var(--app-bg)", boxShadow: "inset 0 -2px 0 var(--app-text-primary)" }}
+              >
+                <tr className={raceTableGridColumns}>
                   {[
                     ["Race", "Race type and name"],
                     ["Year", "Election year. * = odd-year race, not yet included in TPL aggregation"],
@@ -1167,12 +1187,12 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                   })}
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="block min-h-0 flex-1 overflow-y-auto">
                 {filteredRaces.map((r, i) => (
                   <tr
                     key={i}
                     onClick={() => { setStepOneSelectedIdx(i); setStepOneMode("detail"); }}
-                    className="cursor-pointer hover:bg-[var(--app-tab-bg)] transition-colors"
+                    className={`${raceTableGridColumns} h-9 cursor-pointer hover:bg-[var(--app-tab-bg)] transition-colors`}
                     style={{
                       borderBottom: "1px solid var(--app-border)",
                       opacity: r.inAggregation ? 1 : 0.75,
@@ -1255,8 +1275,8 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                   </tr>
                 ))}
                 {filteredRaces.length === 0 && (
-                  <tr>
-                    <td colSpan={12} className="px-4 py-6 text-center text-xs" style={{ color: "var(--app-text-very-muted)" }}>
+                  <tr className={raceTableGridColumns}>
+                    <td className="col-span-full px-4 py-6 text-center text-xs" style={{ color: "var(--app-text-very-muted)" }}>
                       No races match the selected filters.
                     </td>
                   </tr>
@@ -1280,35 +1300,58 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
           const idx = Math.min(stepOneSelectedIdx, Math.max(filteredRaces.length - 1, 0));
           const r = filteredRaces[idx];
           return (
-            <div className="grid grid-cols-1 md:grid-cols-[19rem_1fr] gap-6 items-start">
+            <div className="grid min-w-0 grid-cols-1 gap-6 items-start md:h-[30rem] md:grid-cols-[minmax(0,19rem)_minmax(0,1fr)]">
               {/* Race rail */}
-              <div className="overflow-x-auto max-h-[30rem] overflow-y-auto">
-                <table className="w-full text-xs">
-                  <thead>
-                    <tr style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
+              <div className="flex h-[30rem] min-w-0 flex-col overflow-hidden">
+                <table className="w-full table-fixed text-xs">
+                  <colgroup>
+                    <col />
+                    <col className="w-12" />
+                    <col className="w-16" />
+                  </colgroup>
+                  <thead
+                    className="sticky top-0 z-10"
+                    style={{ background: "var(--app-bg)" }}
+                  >
+                    <tr>
                       <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Race</th>
                       <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>Year</th>
                       <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-right tabular-nums" style={{ color: "var(--app-text-primary)" }}>NM</th>
                     </tr>
                   </thead>
+                </table>
+                <div className="h-0.5 w-full shrink-0 bg-[var(--app-text-primary)]" />
+                <div className="min-h-0 flex-1 overflow-y-auto overflow-x-hidden">
+                  <table className="w-full table-fixed text-xs">
+                    <colgroup>
+                      <col />
+                      <col className="w-12" />
+                      <col className="w-16" />
+                    </colgroup>
                   <tbody>
                     {filteredRaces.map((race, i) => (
                       <tr
                         key={i}
-                        onClick={() => setStepOneSelectedIdx(i)}
-                        className="cursor-pointer hover:bg-[var(--app-tab-bg)] transition-colors"
+                        onClick={() => {
+                          if (i === idx && window.matchMedia("(min-width: 768px)").matches) {
+                            setStepOneMode("table");
+                          } else {
+                            setStepOneSelectedIdx(i);
+                          }
+                        }}
+                        className="h-9 cursor-pointer hover:bg-[var(--app-tab-bg)] transition-colors"
                         style={{
                           borderBottom: "1px solid var(--app-border)",
                           background: i === idx ? "var(--app-tab-bg)" : "transparent",
                           boxShadow: i === idx ? "inset 3px 0 0 var(--app-text-primary)" : "none",
                         }}
                       >
-                        <td className="px-2 py-2 whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
-                          <span className="inline-flex items-center gap-1.5">
-                            <span className="px-1.5 py-0.5 rounded text-[9px] font-bold font-mono" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
+                        <td className="min-w-0 px-2 py-2" style={{ color: "var(--app-text-primary)" }}>
+                          <span className="flex min-w-0 items-center gap-1.5">
+                            <span className="shrink-0 px-1.5 py-0.5 rounded text-[9px] font-bold font-mono" style={{ background: "var(--app-tab-bg)", color: "var(--app-text-muted)" }}>
                               {race.raceType}
                             </span>
-                            <span className="font-semibold">{race.race}</span>
+                            <span className="min-w-0 truncate font-semibold" title={race.race}>{race.race}</span>
                           </span>
                         </td>
                         <td className="px-2 py-2 text-right tabular-nums" style={{ color: "var(--app-text-muted)" }}>{race.year}</td>
@@ -1316,12 +1359,13 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                       </tr>
                     ))}
                   </tbody>
-                </table>
+                  </table>
+                </div>
               </div>
 
               {/* Detail panel */}
               {r ? (
-                <div>
+                <div className="min-w-0 md:h-full md:overflow-y-auto">
                   <div className="flex flex-wrap items-end justify-between gap-4 pb-3.5" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
                     <div>
                       <div className="text-[10px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-very-muted)" }}>
@@ -1345,7 +1389,7 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
                   </div>
 
                   <table className="w-full text-xs mt-1">
-                    <thead>
+                    <thead className="sticky top-0 z-10" style={{ background: "var(--app-bg)" }}>
                       <tr style={{ borderBottom: "1px solid var(--app-border)" }}>
                         <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Step</th>
                         <th className="px-2 py-2 text-[10px] uppercase tracking-wider font-semibold text-left" style={{ color: "var(--app-text-muted)" }}>Detail</th>
@@ -1440,6 +1484,17 @@ export default function TplModelPage({ initialSubTab }: { initialSubTab?: "state
             </div>
           );
         })()}
+
+        {stepOneMode === "detail" && (
+          <div className="pt-2 flex min-h-4 flex-wrap gap-x-5 text-[10px]" style={{ color: "var(--app-text-very-muted)" }}>
+            {filteredRaces.some((race) => race.competitivenessAdjusted) && (
+              <span>‡ Raw margin was 50 points or greater and replaced by the 60/40 competitiveness blend.</span>
+            )}
+            {anyWFCapped && <span>† Multiplicative WF component was capped at the [0.6, 1.6] bound.</span>}
+            {hasOddYears && <span>* Odd-year race (NJ/VA governor elections). Shown in table but not yet included in TPL aggregation.</span>}
+            {!hasS && <span>WA = 0 for all races (no S on record for {selectedStateName}).</span>}
+          </div>
+        )}
 
         {/* NES strip */}
         <div className="mt-2.5 flex flex-wrap gap-x-5 gap-y-1">

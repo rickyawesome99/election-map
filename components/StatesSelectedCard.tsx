@@ -66,11 +66,11 @@ export default function StatesSelectedCard({
             )}
 
             <Link
-              href={`/states/${row.id}`}
+              href={mode === "legislature" ? `/states/${row.id}/legislature` : `/states/${row.id}`}
               className="mt-2 flex items-center gap-1 text-xs font-bold hover:underline"
               style={{ color: "var(--app-text-primary)" }}
             >
-              View State Page
+              {mode === "legislature" ? "View Legislature Page" : "View State Page"}
               <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

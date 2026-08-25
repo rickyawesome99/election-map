@@ -51,3 +51,7 @@ export const FIPS_TO_STATE: Record<string, { abbr: string; name: string }> = {
   "55": { abbr: "WI", name: "Wisconsin" },
   "56": { abbr: "WY", name: "Wyoming" },
 };
+
+export const ABBR_TO_FIPS: Record<string, string> = Object.fromEntries(
+  Object.entries(FIPS_TO_STATE).map(([fips, { abbr }]) => [abbr, fips])
+);

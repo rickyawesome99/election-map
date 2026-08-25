@@ -124,7 +124,7 @@ export default function StatesLedgerList({
             >
               <div className="flex items-center justify-between gap-3 min-w-0">
                 <Link
-                  href={`/states/${row.id}`}
+                  href={mode === "legislature" ? `/states/${row.id}/legislature` : `/states/${row.id}`}
                   onClick={(event) => event.stopPropagation()}
                   onKeyDown={(event) => event.stopPropagation()}
                   className="min-w-0 truncate hover:underline"

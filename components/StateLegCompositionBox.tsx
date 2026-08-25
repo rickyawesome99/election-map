@@ -60,12 +60,12 @@ function EntryCard({ entry }: { entry: CompositionEntry }) {
 }
 
 export default function StateLegCompositionBox({
-  federalEntries,
+  federalEntries = [],
   houseEntries,
   senateEntries,
   isUnicameral = false,
 }: {
-  federalEntries: HouseDelegationEntry[];
+  federalEntries?: HouseDelegationEntry[];
   houseEntries: StateLegEntry[];
   senateEntries: StateLegEntry[];
   isUnicameral?: boolean;
