@@ -33,6 +33,11 @@ export default function AnalysisPage() {
               <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>Popular Vote History</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Compare national vote margins, turnout, approval, and seats across election cycles.</p></div>
               <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
             </a>
+            <a href="/audit/state-leg-pres2024" className="grid grid-cols-1 sm:grid-cols-[8rem_minmax(0,1fr)_auto] gap-2 sm:gap-8 items-start py-6" style={{ borderBottom: "1px solid var(--app-border)" }}>
+              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: "var(--app-text-muted)" }}>Internal</div>
+              <div><h3 className="text-xl sm:text-2xl font-bold hover:underline" style={{ fontFamily: "var(--font-serif)" }}>State Leg 2024 President Audit</h3><p className="mt-1.5 text-sm leading-relaxed" style={{ color: "var(--app-text-muted)" }}>Temporary sanity check comparing aggregated state legislative district votes to official state totals.</p></div>
+              <span className="hidden sm:block text-sm font-bold" style={{ color: "var(--party-dem)" }}>Read Analysis →</span>
+            </a>
           </section>
         </div>
       </main>

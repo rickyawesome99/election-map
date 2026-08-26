@@ -2,6 +2,7 @@ import { statesData } from "@/data/statesData";
 import { stateLegData } from "@/data/forecastData";
 import { stateLegDistricts, UNICAMERAL_STATES } from "@/data/stateLegDistricts";
 import { stateLegMapInfo } from "@/data/stateLegMapInfo";
+import { stateLegPres2024 } from "@/data/stateLegPres2024";
 import { latestChamberSeats } from "@/lib/stateLegSeats";
 import { notFound } from "next/navigation";
 import BackButton from "@/components/BackButton";
@@ -134,6 +135,7 @@ export default async function StateLegislaturePage({ params }: { params: Promise
           stateName={state.name}
           districtsByChamber={stateLegDistricts[state.abbr] ?? {}}
           mapInfoByChamber={stateLegMapInfo[state.abbr] ?? {}}
+          pres2024ByChamber={stateLegPres2024[state.abbr] ?? {}}
           isUnicameral={isUnicameral}
           sidebar={
             <>

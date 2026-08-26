@@ -1,7 +1,8 @@
 "use client";
 
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
-import { getRatingColors } from "@/lib/colorScale";
+import type { StateLegPres2024 } from "@/data/stateLegPres2024";
+import { getRatingColors, fmtMargin } from "@/lib/colorScale";
 
 const CHAMBER_LABEL: Record<Chamber, string> = {
   house: "State House",
@@ -15,18 +16,20 @@ const PARTY_COLOR: Record<string, string> = {
   O: "var(--app-text-secondary)",
 };
 
-const COLUMN_HEADERS = ["District", "Incumbent", "Party", "Last Election", "Margin", "Rating"];
+const COLUMN_HEADERS = ["District", "Incumbent", "Party", "Last Election", "Margin", "Rating", "2024 President"];
 
 export default function StateLegDistrictTable({
   districts,
   chamber,
   stateName,
   isUnicameral = false,
+  pres2024 = {},
 }: {
   districts: StateLegDistrict[];
   chamber: Chamber;
   stateName: string;
   isUnicameral?: boolean;
+  pres2024?: Record<string, StateLegPres2024>;
 }) {
   const chamberLabel = isUnicameral ? "Legislature" : CHAMBER_LABEL[chamber];
 
@@ -75,6 +78,7 @@ export default function StateLegDistrictTable({
               districts.map((d) => {
                 const incumbents = d.incumbents ?? [];
                 const { bg, text } = d.rating ? getRatingColors(d.rating) : { bg: "", text: "" };
+                const pres = pres2024[d.number];
                 return (
                   <tr key={d.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
                     <td className="py-3 pr-3 text-left font-semibold whitespace-nowrap tabular-nums" style={{ color: "var(--app-text-primary)" }}>
@@ -114,7 +118,7 @@ export default function StateLegDistrictTable({
                     <td className="py-3 pr-3 text-right tabular-nums font-semibold whitespace-nowrap" style={{ color: d.margin != null ? (d.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)") : "var(--app-text-very-muted)" }}>
                       {d.margin != null ? `${d.margin <= 0 ? "D" : "R"}+${Math.abs(d.margin).toFixed(1)}` : "—"}
                     </td>
-                    <td className="py-3 text-right whitespace-nowrap">
+                    <td className="py-3 pr-3 text-right whitespace-nowrap">
                       {d.rating ? (
                         <span className="inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold" style={{ background: bg, color: text }}>
                           {d.rating}
@@ -122,6 +126,13 @@ export default function StateLegDistrictTable({
                       ) : (
                         <span style={{ color: "var(--app-text-very-muted)" }}>—</span>
                       )}
+                    </td>
+                    <td className="py-3 text-right tabular-nums font-semibold whitespace-nowrap" style={{ color: pres ? (pres.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)") : "var(--app-text-very-muted)" }}>
+                      {pres ? (
+                        <span title={pres.estimated ? "Estimated - no 2024 election in this district" : undefined}>
+                          {pres.estimated && "~"}{fmtMargin(pres.margin)}
+                        </span>
+                      ) : "—"}
                     </td>
                   </tr>
                 );

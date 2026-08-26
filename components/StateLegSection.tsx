@@ -5,6 +5,7 @@ import StateLegDistrictMap from "./StateLegDistrictMap";
 import StateLegDistrictTable from "./StateLegDistrictTable";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
 import type { ChamberMapInfo } from "@/data/stateLegMapInfo";
+import type { StateLegPres2024, MapViewMode } from "@/data/stateLegPres2024";
 
 const PARTY_COLOR: Record<string, string> = {
   D: "var(--party-dem)",
@@ -74,6 +75,7 @@ export default function StateLegSection({
   stateName,
   districtsByChamber,
   mapInfoByChamber = {},
+  pres2024ByChamber = {},
   isUnicameral = false,
   sidebar,
 }: {
@@ -81,16 +83,19 @@ export default function StateLegSection({
   stateName: string;
   districtsByChamber: Partial<Record<Chamber, StateLegDistrict[]>>;
   mapInfoByChamber?: Partial<Record<Chamber, ChamberMapInfo>>;
+  pres2024ByChamber?: Partial<Record<Chamber, Record<string, StateLegPres2024>>>;
   isUnicameral?: boolean;
   sidebar?: ReactNode;
 }) {
   const [chamber, setChamber] = useState<Chamber>("house");
   const [selected, setSelected] = useState<StateLegDistrict | null>(null);
+  const [viewMode, setViewMode] = useState<MapViewMode>("seats");
   // Nebraska's single chamber is classified as "senate" (SLDU) in Census/TIGER data, so
   // that's the chamber key its data is stored and looked up under even though the UI
   // just calls it "Legislature".
   const activeChamber = isUnicameral ? "senate" : chamber;
   const districts = districtsByChamber[activeChamber] ?? [];
+  const pres2024 = pres2024ByChamber[activeChamber] ?? {};
 
   // A selected district belongs to one chamber's map; switching chambers invalidates it.
   const handleChamberSwitch = useCallback((c: Chamber) => {
@@ -107,29 +112,49 @@ export default function StateLegSection({
       <div className="contents md:flex md:flex-col md:gap-4">
         {/* Chamber toggle — hidden for unicameral Nebraska, which has one chamber */}
         <div
-          className="order-1 flex items-end gap-5 min-w-0"
+          className="order-1 flex items-end justify-between gap-3 min-w-0"
           style={{ borderBottom: "1px solid var(--app-border)" }}
         >
-          {isUnicameral ? (
-            <span className="pb-2.5 text-sm font-semibold" style={{ color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)", marginBottom: "-1px" }}>
-              Legislature
-            </span>
-          ) : (
-            (["house", "senate"] as Chamber[]).map((c) => (
+          <div className="flex items-end gap-5 min-w-0">
+            {isUnicameral ? (
+              <span className="pb-2.5 text-sm font-semibold" style={{ color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)", marginBottom: "-1px" }}>
+                Legislature
+              </span>
+            ) : (
+              (["house", "senate"] as Chamber[]).map((c) => (
+                <button
+                  key={c}
+                  onClick={() => handleChamberSwitch(c)}
+                  className="pb-2.5 text-sm font-semibold transition-colors"
+                  style={
+                    chamber === c
+                      ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)", marginBottom: "-1px" }
+                      : { color: "var(--app-text-muted)", borderBottom: "2px solid transparent", marginBottom: "-1px" }
+                  }
+                >
+                  {c === "house" ? "State House" : "State Senate"}
+                </button>
+              ))
+            )}
+          </div>
+
+          {/* Map view-mode toggle — orthogonal to the chamber toggle above */}
+          <div className="mb-1.5 flex shrink-0 items-center gap-0.5 rounded-full p-0.5" style={{ background: "var(--app-tab-bg)" }}>
+            {([["seats", "Seats"], ["president", "2024 President"]] as [MapViewMode, string][]).map(([mode, label]) => (
               <button
-                key={c}
-                onClick={() => handleChamberSwitch(c)}
-                className="pb-2.5 text-sm font-semibold transition-colors"
+                key={mode}
+                onClick={() => setViewMode(mode)}
+                className="rounded-full px-2.5 py-1 text-[11px] font-semibold whitespace-nowrap transition-colors"
                 style={
-                  chamber === c
-                    ? { color: "var(--app-text-primary)", borderBottom: "2px solid var(--app-text-primary)", marginBottom: "-1px" }
-                    : { color: "var(--app-text-muted)", borderBottom: "2px solid transparent", marginBottom: "-1px" }
+                  viewMode === mode
+                    ? { background: "var(--app-panel)", color: "var(--app-text-primary)" }
+                    : { color: "var(--app-text-muted)" }
                 }
               >
-                {c === "house" ? "State House" : "State Senate"}
+                {label}
               </button>
-            ))
-          )}
+            ))}
+          </div>
         </div>
 
         <div className="order-2">
@@ -140,6 +165,8 @@ export default function StateLegSection({
             isUnicameral={isUnicameral}
             mapInfo={mapInfoByChamber[activeChamber] ?? null}
             districts={districts}
+            pres2024={pres2024}
+            viewMode={viewMode}
             selected={selected}
             onSelect={setSelected}
           />
@@ -151,6 +178,7 @@ export default function StateLegSection({
             chamber={activeChamber}
             stateName={stateName}
             isUnicameral={isUnicameral}
+            pres2024={pres2024}
           />
         </div>
       </div>

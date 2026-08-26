@@ -1,0 +1,1606 @@
+{
+  "house": {
+    "10th Bristol": {
+      "demPct": 50.2,
+      "demVotes": 13524,
+      "margin": -2.2,
+      "repPct": 48.0,
+      "repVotes": 12939,
+      "totalVotes": 26951
+    },
+    "10th Essex": {
+      "demPct": 59.7,
+      "demVotes": 7794,
+      "margin": -22.2,
+      "repPct": 37.5,
+      "repVotes": 4892,
+      "totalVotes": 13058
+    },
+    "10th Hampden": {
+      "demPct": 69.5,
+      "demVotes": 6933,
+      "margin": -41.4,
+      "repPct": 28.1,
+      "repVotes": 2807,
+      "totalVotes": 9982
+    },
+    "10th Middlesex": {
+      "demPct": 70.3,
+      "demVotes": 12199,
+      "margin": -43.7,
+      "repPct": 26.6,
+      "repVotes": 4620,
+      "totalVotes": 17354
+    },
+    "10th Norfolk": {
+      "demPct": 58.3,
+      "demVotes": 15372,
+      "margin": -19.2,
+      "repPct": 39.1,
+      "repVotes": 10294,
+      "totalVotes": 26352
+    },
+    "10th Plymouth": {
+      "demPct": 68.6,
+      "demVotes": 10811,
+      "margin": -39.3,
+      "repPct": 29.3,
+      "repVotes": 4610,
+      "totalVotes": 15754
+    },
+    "10th Suffolk": {
+      "demPct": 72.0,
+      "demVotes": 18936,
+      "margin": -47.2,
+      "repPct": 24.8,
+      "repVotes": 6533,
+      "totalVotes": 26292
+    },
+    "10th Worcester": {
+      "demPct": 54.2,
+      "demVotes": 11612,
+      "margin": -11.1,
+      "repPct": 43.1,
+      "repVotes": 9247,
+      "totalVotes": 21440
+    },
+    "11th Bristol": {
+      "demPct": 54.1,
+      "demVotes": 6316,
+      "margin": -10.8,
+      "repPct": 43.3,
+      "repVotes": 5053,
+      "totalVotes": 11674
+    },
+    "11th Essex": {
+      "demPct": 60.9,
+      "demVotes": 8940,
+      "margin": -24.4,
+      "repPct": 36.5,
+      "repVotes": 5361,
+      "totalVotes": 14669
+    },
+    "11th Hampden": {
+      "demPct": 71.1,
+      "demVotes": 9743,
+      "margin": -44.9,
+      "repPct": 26.2,
+      "repVotes": 3590,
+      "totalVotes": 13701
+    },
+    "11th Middlesex": {
+      "demPct": 79.7,
+      "demVotes": 17609,
+      "margin": -62.5,
+      "repPct": 17.2,
+      "repVotes": 3792,
+      "totalVotes": 22105
+    },
+    "11th Norfolk": {
+      "demPct": 61.9,
+      "demVotes": 16765,
+      "margin": -27.0,
+      "repPct": 34.9,
+      "repVotes": 9451,
+      "totalVotes": 27079
+    },
+    "11th Plymouth": {
+      "demPct": 76.1,
+      "demVotes": 8647,
+      "margin": -54.4,
+      "repPct": 21.7,
+      "repVotes": 2464,
+      "totalVotes": 11367
+    },
+    "11th Suffolk": {
+      "demPct": 66.0,
+      "demVotes": 6441,
+      "margin": -35.3,
+      "repPct": 30.7,
+      "repVotes": 3002,
+      "totalVotes": 9766
+    },
+    "11th Worcester": {
+      "demPct": 59.7,
+      "demVotes": 12812,
+      "margin": -23.1,
+      "repPct": 36.6,
+      "repVotes": 7850,
+      "totalVotes": 21464
+    },
+    "12th Bristol": {
+      "demPct": 43.6,
+      "demVotes": 11214,
+      "margin": 10.7,
+      "repPct": 54.3,
+      "repVotes": 13981,
+      "totalVotes": 25739
+    },
+    "12th Essex": {
+      "demPct": 52.5,
+      "demVotes": 11944,
+      "margin": -7.1,
+      "repPct": 45.4,
+      "repVotes": 10339,
+      "totalVotes": 22759
+    },
+    "12th Hampden": {
+      "demPct": 54.4,
+      "demVotes": 13161,
+      "margin": -11.1,
+      "repPct": 43.3,
+      "repVotes": 10473,
+      "totalVotes": 24203
+    },
+    "12th Middlesex": {
+      "demPct": 78.4,
+      "demVotes": 19383,
+      "margin": -60.4,
+      "repPct": 18.0,
+      "repVotes": 4439,
+      "totalVotes": 24709
+    },
+    "12th Norfolk": {
+      "demPct": 57.9,
+      "demVotes": 14000,
+      "margin": -18.6,
+      "repPct": 39.3,
+      "repVotes": 9495,
+      "totalVotes": 24186
+    },
+    "12th Plymouth": {
+      "demPct": 49.3,
+      "demVotes": 14021,
+      "margin": -0.6,
+      "repPct": 48.7,
+      "repVotes": 13861,
+      "totalVotes": 28453
+    },
+    "12th Suffolk": {
+      "demPct": 85.3,
+      "demVotes": 16212,
+      "margin": -73.0,
+      "repPct": 12.3,
+      "repVotes": 2333,
+      "totalVotes": 19016
+    },
+    "12th Worcester": {
+      "demPct": 55.5,
+      "demVotes": 14087,
+      "margin": -13.9,
+      "repPct": 41.6,
+      "repVotes": 10547,
+      "totalVotes": 25360
+    },
+    "13th Bristol": {
+      "demPct": 55.9,
+      "demVotes": 8290,
+      "margin": -13.8,
+      "repPct": 42.1,
+      "repVotes": 6238,
+      "totalVotes": 14818
+    },
+    "13th Essex": {
+      "demPct": 52.1,
+      "demVotes": 14338,
+      "margin": -6.5,
+      "repPct": 45.6,
+      "repVotes": 12565,
+      "totalVotes": 27533
+    },
+    "13th Middlesex": {
+      "demPct": 75.8,
+      "demVotes": 20398,
+      "margin": -54.7,
+      "repPct": 21.1,
+      "repVotes": 5681,
+      "totalVotes": 26921
+    },
+    "13th Norfolk": {
+      "demPct": 72.4,
+      "demVotes": 19738,
+      "margin": -48.2,
+      "repPct": 24.2,
+      "repVotes": 6611,
+      "totalVotes": 27281
+    },
+    "13th Suffolk": {
+      "demPct": 66.4,
+      "demVotes": 11567,
+      "margin": -36.1,
+      "repPct": 30.3,
+      "repVotes": 5273,
+      "totalVotes": 17422
+    },
+    "13th Worcester": {
+      "demPct": 64.9,
+      "demVotes": 12054,
+      "margin": -32.9,
+      "repPct": 32.0,
+      "repVotes": 5951,
+      "totalVotes": 18583
+    },
+    "14th Bristol": {
+      "demPct": 53.3,
+      "demVotes": 12447,
+      "margin": -9.5,
+      "repPct": 43.8,
+      "repVotes": 10234,
+      "totalVotes": 23363
+    },
+    "14th Essex": {
+      "demPct": 58.6,
+      "demVotes": 15890,
+      "margin": -19.9,
+      "repPct": 38.7,
+      "repVotes": 10494,
+      "totalVotes": 27100
+    },
+    "14th Middlesex": {
+      "demPct": 71.9,
+      "demVotes": 18848,
+      "margin": -46.8,
+      "repPct": 25.1,
+      "repVotes": 6593,
+      "totalVotes": 26219
+    },
+    "14th Norfolk": {
+      "demPct": 73.0,
+      "demVotes": 17045,
+      "margin": -49.6,
+      "repPct": 23.4,
+      "repVotes": 5469,
+      "totalVotes": 23336
+    },
+    "14th Suffolk": {
+      "demPct": 76.6,
+      "demVotes": 15636,
+      "margin": -56.1,
+      "repPct": 20.5,
+      "repVotes": 4181,
+      "totalVotes": 20403
+    },
+    "14th Worcester": {
+      "demPct": 61.9,
+      "demVotes": 11259,
+      "margin": -26.7,
+      "repPct": 35.2,
+      "repVotes": 6398,
+      "totalVotes": 18200
+    },
+    "15th Essex": {
+      "demPct": 50.2,
+      "demVotes": 12221,
+      "margin": -2.6,
+      "repPct": 47.6,
+      "repVotes": 11576,
+      "totalVotes": 24332
+    },
+    "15th Middlesex": {
+      "demPct": 71.6,
+      "demVotes": 17497,
+      "margin": -46.8,
+      "repPct": 24.8,
+      "repVotes": 6065,
+      "totalVotes": 24442
+    },
+    "15th Norfolk": {
+      "demPct": 85.7,
+      "demVotes": 17027,
+      "margin": -74.9,
+      "repPct": 10.8,
+      "repVotes": 2140,
+      "totalVotes": 19878
+    },
+    "15th Suffolk": {
+      "demPct": 86.5,
+      "demVotes": 17424,
+      "margin": -78.0,
+      "repPct": 8.5,
+      "repVotes": 1718,
+      "totalVotes": 20155
+    },
+    "15th Worcester": {
+      "demPct": 64.0,
+      "demVotes": 6516,
+      "margin": -31.4,
+      "repPct": 32.6,
+      "repVotes": 3316,
+      "totalVotes": 10177
+    },
+    "16th Essex": {
+      "demPct": 54.7,
+      "demVotes": 7287,
+      "margin": -12.1,
+      "repPct": 42.6,
+      "repVotes": 5682,
+      "totalVotes": 13323
+    },
+    "16th Middlesex": {
+      "demPct": 57.5,
+      "demVotes": 10057,
+      "margin": -17.4,
+      "repPct": 40.1,
+      "repVotes": 7003,
+      "totalVotes": 17481
+    },
+    "16th Suffolk": {
+      "demPct": 48.5,
+      "demVotes": 6546,
+      "margin": 0.3,
+      "repPct": 48.8,
+      "repVotes": 6583,
+      "totalVotes": 13485
+    },
+    "16th Worcester": {
+      "demPct": 58.2,
+      "demVotes": 7578,
+      "margin": -19.2,
+      "repPct": 39.0,
+      "repVotes": 5076,
+      "totalVotes": 13030
+    },
+    "17th Essex": {
+      "demPct": 60.7,
+      "demVotes": 7899,
+      "margin": -24.1,
+      "repPct": 36.6,
+      "repVotes": 4762,
+      "totalVotes": 13004
+    },
+    "17th Middlesex": {
+      "demPct": 60.0,
+      "demVotes": 9232,
+      "margin": -23.0,
+      "repPct": 37.0,
+      "repVotes": 5697,
+      "totalVotes": 15377
+    },
+    "17th Suffolk": {
+      "demPct": 80.5,
+      "demVotes": 13536,
+      "margin": -66.7,
+      "repPct": 13.8,
+      "repVotes": 2326,
+      "totalVotes": 16809
+    },
+    "17th Worcester": {
+      "demPct": 57.4,
+      "demVotes": 7584,
+      "margin": -17.7,
+      "repPct": 39.7,
+      "repVotes": 5239,
+      "totalVotes": 13211
+    },
+    "18th Essex": {
+      "demPct": 59.0,
+      "demVotes": 15601,
+      "margin": -20.9,
+      "repPct": 38.1,
+      "repVotes": 10083,
+      "totalVotes": 26441
+    },
+    "18th Middlesex": {
+      "demPct": 62.4,
+      "demVotes": 6926,
+      "margin": -27.5,
+      "repPct": 34.9,
+      "repVotes": 3877,
+      "totalVotes": 11099
+    },
+    "18th Suffolk": {
+      "demPct": 77.1,
+      "demVotes": 8923,
+      "margin": -59.1,
+      "repPct": 18.0,
+      "repVotes": 2078,
+      "totalVotes": 11572
+    },
+    "18th Worcester": {
+      "demPct": 44.0,
+      "demVotes": 11563,
+      "margin": 9.9,
+      "repPct": 53.9,
+      "repVotes": 14159,
+      "totalVotes": 26266
+    },
+    "19th Middlesex": {
+      "demPct": 49.5,
+      "demVotes": 12676,
+      "margin": -1.3,
+      "repPct": 48.2,
+      "repVotes": 12331,
+      "totalVotes": 25599
+    },
+    "19th Suffolk": {
+      "demPct": 56.0,
+      "demVotes": 9542,
+      "margin": -14.9,
+      "repPct": 41.1,
+      "repVotes": 7003,
+      "totalVotes": 17038
+    },
+    "19th Worcester": {
+      "demPct": 66.9,
+      "demVotes": 15381,
+      "margin": -37.5,
+      "repPct": 29.4,
+      "repVotes": 6764,
+      "totalVotes": 22976
+    },
+    "1st Barnstable": {
+      "demPct": 59.4,
+      "demVotes": 17244,
+      "margin": -20.8,
+      "repPct": 38.6,
+      "repVotes": 11187,
+      "totalVotes": 29015
+    },
+    "1st Berkshire": {
+      "demPct": 63.8,
+      "demVotes": 14143,
+      "margin": -30.0,
+      "repPct": 33.8,
+      "repVotes": 7486,
+      "totalVotes": 22153
+    },
+    "1st Bristol": {
+      "demPct": 54.3,
+      "demVotes": 13210,
+      "margin": -11.5,
+      "repPct": 42.8,
+      "repVotes": 10412,
+      "totalVotes": 24341
+    },
+    "1st Essex": {
+      "demPct": 62.6,
+      "demVotes": 18138,
+      "margin": -27.6,
+      "repPct": 35.0,
+      "repVotes": 10149,
+      "totalVotes": 28969
+    },
+    "1st Franklin": {
+      "demPct": 70.1,
+      "demVotes": 18168,
+      "margin": -44.0,
+      "repPct": 26.1,
+      "repVotes": 6754,
+      "totalVotes": 25909
+    },
+    "1st Hampden": {
+      "demPct": 44.9,
+      "demVotes": 10669,
+      "margin": 7.9,
+      "repPct": 52.8,
+      "repVotes": 12555,
+      "totalVotes": 23780
+    },
+    "1st Hampshire": {
+      "demPct": 78.5,
+      "demVotes": 20181,
+      "margin": -61.2,
+      "repPct": 17.3,
+      "repVotes": 4444,
+      "totalVotes": 25714
+    },
+    "1st Middlesex": {
+      "demPct": 53.1,
+      "demVotes": 14425,
+      "margin": -8.7,
+      "repPct": 44.4,
+      "repVotes": 12066,
+      "totalVotes": 27187
+    },
+    "1st Norfolk": {
+      "demPct": 62.9,
+      "demVotes": 12417,
+      "margin": -28.4,
+      "repPct": 34.5,
+      "repVotes": 6808,
+      "totalVotes": 19736
+    },
+    "1st Plymouth": {
+      "demPct": 53.1,
+      "demVotes": 16191,
+      "margin": -8.3,
+      "repPct": 44.8,
+      "repVotes": 13642,
+      "totalVotes": 30483
+    },
+    "1st Suffolk": {
+      "demPct": 68.3,
+      "demVotes": 9582,
+      "margin": -40.6,
+      "repPct": 27.7,
+      "repVotes": 3886,
+      "totalVotes": 14029
+    },
+    "1st Worcester": {
+      "demPct": 52.3,
+      "demVotes": 15258,
+      "margin": -6.9,
+      "repPct": 45.4,
+      "repVotes": 13243,
+      "totalVotes": 29199
+    },
+    "20th Middlesex": {
+      "demPct": 52.2,
+      "demVotes": 14873,
+      "margin": -6.4,
+      "repPct": 45.8,
+      "repVotes": 13049,
+      "totalVotes": 28499
+    },
+    "21st Middlesex": {
+      "demPct": 63.8,
+      "demVotes": 15778,
+      "margin": -30.9,
+      "repPct": 32.9,
+      "repVotes": 8148,
+      "totalVotes": 24740
+    },
+    "22nd Middlesex": {
+      "demPct": 49.5,
+      "demVotes": 11743,
+      "margin": -1.5,
+      "repPct": 48.0,
+      "repVotes": 11383,
+      "totalVotes": 23707
+    },
+    "23rd Middlesex": {
+      "demPct": 78.9,
+      "demVotes": 20373,
+      "margin": -60.9,
+      "repPct": 18.0,
+      "repVotes": 4649,
+      "totalVotes": 25818
+    },
+    "24th Middlesex": {
+      "demPct": 79.8,
+      "demVotes": 20027,
+      "margin": -63.3,
+      "repPct": 16.5,
+      "repVotes": 4137,
+      "totalVotes": 25107
+    },
+    "25th Middlesex": {
+      "demPct": 90.0,
+      "demVotes": 15328,
+      "margin": -84.2,
+      "repPct": 5.8,
+      "repVotes": 981,
+      "totalVotes": 17037
+    },
+    "26th Middlesex": {
+      "demPct": 84.4,
+      "demVotes": 17431,
+      "margin": -73.4,
+      "repPct": 11.0,
+      "repVotes": 2277,
+      "totalVotes": 20646
+    },
+    "27th Middlesex": {
+      "demPct": 86.0,
+      "demVotes": 20937,
+      "margin": -76.9,
+      "repPct": 9.1,
+      "repVotes": 2207,
+      "totalVotes": 24358
+    },
+    "28th Middlesex": {
+      "demPct": 60.8,
+      "demVotes": 6719,
+      "margin": -24.5,
+      "repPct": 36.3,
+      "repVotes": 4007,
+      "totalVotes": 11053
+    },
+    "29th Middlesex": {
+      "demPct": 81.4,
+      "demVotes": 19239,
+      "margin": -66.9,
+      "repPct": 14.5,
+      "repVotes": 3422,
+      "totalVotes": 23644
+    },
+    "2nd Barnstable": {
+      "demPct": 55.9,
+      "demVotes": 13701,
+      "margin": -14.0,
+      "repPct": 41.9,
+      "repVotes": 10289,
+      "totalVotes": 24528
+    },
+    "2nd Berkshire": {
+      "demPct": 70.4,
+      "demVotes": 14628,
+      "margin": -43.2,
+      "repPct": 27.2,
+      "repVotes": 5658,
+      "totalVotes": 20771
+    },
+    "2nd Bristol": {
+      "demPct": 54.2,
+      "demVotes": 11508,
+      "margin": -11.0,
+      "repPct": 43.2,
+      "repVotes": 9183,
+      "totalVotes": 21237
+    },
+    "2nd Essex": {
+      "demPct": 59.3,
+      "demVotes": 18359,
+      "margin": -21.3,
+      "repPct": 38.0,
+      "repVotes": 11776,
+      "totalVotes": 30977
+    },
+    "2nd Franklin": {
+      "demPct": 53.3,
+      "demVotes": 12306,
+      "margin": -9.5,
+      "repPct": 43.8,
+      "repVotes": 10122,
+      "totalVotes": 23088
+    },
+    "2nd Hampden": {
+      "demPct": 52.9,
+      "demVotes": 13674,
+      "margin": -8.3,
+      "repPct": 44.6,
+      "repVotes": 11527,
+      "totalVotes": 25836
+    },
+    "2nd Hampshire": {
+      "demPct": 65.5,
+      "demVotes": 16565,
+      "margin": -34.1,
+      "repPct": 31.4,
+      "repVotes": 7932,
+      "totalVotes": 25292
+    },
+    "2nd Middlesex": {
+      "demPct": 64.6,
+      "demVotes": 16803,
+      "margin": -32.1,
+      "repPct": 32.5,
+      "repVotes": 8454,
+      "totalVotes": 26018
+    },
+    "2nd Norfolk": {
+      "demPct": 61.5,
+      "demVotes": 12352,
+      "margin": -26.1,
+      "repPct": 35.4,
+      "repVotes": 7116,
+      "totalVotes": 20090
+    },
+    "2nd Plymouth": {
+      "demPct": 45.8,
+      "demVotes": 11397,
+      "margin": 6.6,
+      "repPct": 52.4,
+      "repVotes": 13045,
+      "totalVotes": 24894
+    },
+    "2nd Suffolk": {
+      "demPct": 75.8,
+      "demVotes": 12034,
+      "margin": -55.2,
+      "repPct": 20.6,
+      "repVotes": 3264,
+      "totalVotes": 15877
+    },
+    "2nd Worcester": {
+      "demPct": 47.6,
+      "demVotes": 10216,
+      "margin": 2.2,
+      "repPct": 49.8,
+      "repVotes": 10687,
+      "totalVotes": 21451
+    },
+    "30th Middlesex": {
+      "demPct": 59.8,
+      "demVotes": 15169,
+      "margin": -21.9,
+      "repPct": 37.9,
+      "repVotes": 9618,
+      "totalVotes": 25369
+    },
+    "31st Middlesex": {
+      "demPct": 62.6,
+      "demVotes": 15626,
+      "margin": -27.8,
+      "repPct": 34.8,
+      "repVotes": 8676,
+      "totalVotes": 24956
+    },
+    "32nd Middlesex": {
+      "demPct": 68.1,
+      "demVotes": 17815,
+      "margin": -39.1,
+      "repPct": 29.0,
+      "repVotes": 7580,
+      "totalVotes": 26147
+    },
+    "33rd Middlesex": {
+      "demPct": 66.3,
+      "demVotes": 10091,
+      "margin": -36.6,
+      "repPct": 29.7,
+      "repVotes": 4510,
+      "totalVotes": 15210
+    },
+    "34th Middlesex": {
+      "demPct": 77.9,
+      "demVotes": 15494,
+      "margin": -60.1,
+      "repPct": 17.8,
+      "repVotes": 3533,
+      "totalVotes": 19883
+    },
+    "35th Middlesex": {
+      "demPct": 67.3,
+      "demVotes": 13066,
+      "margin": -37.9,
+      "repPct": 29.4,
+      "repVotes": 5702,
+      "totalVotes": 19414
+    },
+    "36th Middlesex": {
+      "demPct": 46.8,
+      "demVotes": 11656,
+      "margin": 4.5,
+      "repPct": 51.3,
+      "repVotes": 12763,
+      "totalVotes": 24883
+    },
+    "37th Middlesex": {
+      "demPct": 69.6,
+      "demVotes": 17290,
+      "margin": -42.3,
+      "repPct": 27.3,
+      "repVotes": 6796,
+      "totalVotes": 24851
+    },
+    "3rd Barnstable": {
+      "demPct": 57.7,
+      "demVotes": 17392,
+      "margin": -17.5,
+      "repPct": 40.2,
+      "repVotes": 12124,
+      "totalVotes": 30142
+    },
+    "3rd Berkshire": {
+      "demPct": 71.2,
+      "demVotes": 18323,
+      "margin": -45.3,
+      "repPct": 25.9,
+      "repVotes": 6661,
+      "totalVotes": 25750
+    },
+    "3rd Bristol": {
+      "demPct": 51.7,
+      "demVotes": 11456,
+      "margin": -5.6,
+      "repPct": 46.1,
+      "repVotes": 10207,
+      "totalVotes": 22163
+    },
+    "3rd Essex": {
+      "demPct": 54.5,
+      "demVotes": 10701,
+      "margin": -11.3,
+      "repPct": 43.2,
+      "repVotes": 8484,
+      "totalVotes": 19625
+    },
+    "3rd Hampden": {
+      "demPct": 42.6,
+      "demVotes": 10917,
+      "margin": 12.6,
+      "repPct": 55.2,
+      "repVotes": 14153,
+      "totalVotes": 25644
+    },
+    "3rd Hampshire": {
+      "demPct": 81.8,
+      "demVotes": 10368,
+      "margin": -67.6,
+      "repPct": 14.2,
+      "repVotes": 1797,
+      "totalVotes": 12668
+    },
+    "3rd Middlesex": {
+      "demPct": 66.0,
+      "demVotes": 17429,
+      "margin": -35.0,
+      "repPct": 31.0,
+      "repVotes": 8185,
+      "totalVotes": 26410
+    },
+    "3rd Norfolk": {
+      "demPct": 57.4,
+      "demVotes": 11126,
+      "margin": -17.6,
+      "repPct": 39.8,
+      "repVotes": 7716,
+      "totalVotes": 19391
+    },
+    "3rd Plymouth": {
+      "demPct": 63.5,
+      "demVotes": 17694,
+      "margin": -30.0,
+      "repPct": 33.5,
+      "repVotes": 9330,
+      "totalVotes": 27845
+    },
+    "3rd Suffolk": {
+      "demPct": 75.7,
+      "demVotes": 13091,
+      "margin": -54.6,
+      "repPct": 21.1,
+      "repVotes": 3654,
+      "totalVotes": 17289
+    },
+    "3rd Worcester": {
+      "demPct": 54.5,
+      "demVotes": 9534,
+      "margin": -11.7,
+      "repPct": 42.8,
+      "repVotes": 7494,
+      "totalVotes": 17490
+    },
+    "4th Barnstable": {
+      "demPct": 68.1,
+      "demVotes": 20423,
+      "margin": -38.4,
+      "repPct": 29.7,
+      "repVotes": 8902,
+      "totalVotes": 30006
+    },
+    "4th Bristol": {
+      "demPct": 45.8,
+      "demVotes": 11899,
+      "margin": 6.3,
+      "repPct": 52.1,
+      "repVotes": 13542,
+      "totalVotes": 26006
+    },
+    "4th Essex": {
+      "demPct": 55.3,
+      "demVotes": 6812,
+      "margin": -12.9,
+      "repPct": 42.4,
+      "repVotes": 5228,
+      "totalVotes": 12323
+    },
+    "4th Hampden": {
+      "demPct": 47.9,
+      "demVotes": 10815,
+      "margin": 1.8,
+      "repPct": 49.7,
+      "repVotes": 11212,
+      "totalVotes": 22580
+    },
+    "4th Middlesex": {
+      "demPct": 62.2,
+      "demVotes": 11832,
+      "margin": -27.0,
+      "repPct": 35.2,
+      "repVotes": 6701,
+      "totalVotes": 19029
+    },
+    "4th Norfolk": {
+      "demPct": 55.1,
+      "demVotes": 12287,
+      "margin": -12.7,
+      "repPct": 42.4,
+      "repVotes": 9463,
+      "totalVotes": 22311
+    },
+    "4th Plymouth": {
+      "demPct": 56.4,
+      "demVotes": 17203,
+      "margin": -14.9,
+      "repPct": 41.5,
+      "repVotes": 12645,
+      "totalVotes": 30501
+    },
+    "4th Suffolk": {
+      "demPct": 62.1,
+      "demVotes": 14142,
+      "margin": -27.4,
+      "repPct": 34.7,
+      "repVotes": 7906,
+      "totalVotes": 22758
+    },
+    "4th Worcester": {
+      "demPct": 53.4,
+      "demVotes": 10955,
+      "margin": -9.2,
+      "repPct": 44.2,
+      "repVotes": 9059,
+      "totalVotes": 20502
+    },
+    "5th Barnstable": {
+      "demPct": 51.3,
+      "demVotes": 14155,
+      "margin": -4.8,
+      "repPct": 46.5,
+      "repVotes": 12828,
+      "totalVotes": 27601
+    },
+    "5th Bristol": {
+      "demPct": 45.4,
+      "demVotes": 11308,
+      "margin": 7.5,
+      "repPct": 52.9,
+      "repVotes": 13162,
+      "totalVotes": 24886
+    },
+    "5th Essex": {
+      "demPct": 65.5,
+      "demVotes": 18978,
+      "margin": -33.5,
+      "repPct": 32.0,
+      "repVotes": 9269,
+      "totalVotes": 28953
+    },
+    "5th Hampden": {
+      "demPct": 62.7,
+      "demVotes": 10122,
+      "margin": -28.5,
+      "repPct": 34.2,
+      "repVotes": 5524,
+      "totalVotes": 16143
+    },
+    "5th Middlesex": {
+      "demPct": 73.2,
+      "demVotes": 18281,
+      "margin": -49.4,
+      "repPct": 23.8,
+      "repVotes": 5946,
+      "totalVotes": 24963
+    },
+    "5th Norfolk": {
+      "demPct": 52.4,
+      "demVotes": 12202,
+      "margin": -7.4,
+      "repPct": 45.0,
+      "repVotes": 10478,
+      "totalVotes": 23304
+    },
+    "5th Plymouth": {
+      "demPct": 48.7,
+      "demVotes": 12815,
+      "margin": 0.2,
+      "repPct": 48.9,
+      "repVotes": 12892,
+      "totalVotes": 26339
+    },
+    "5th Suffolk": {
+      "demPct": 82.0,
+      "demVotes": 10581,
+      "margin": -67.1,
+      "repPct": 14.9,
+      "repVotes": 1927,
+      "totalVotes": 12903
+    },
+    "5th Worcester": {
+      "demPct": 43.9,
+      "demVotes": 11432,
+      "margin": 10.0,
+      "repPct": 53.9,
+      "repVotes": 14035,
+      "totalVotes": 26018
+    },
+    "6th Bristol": {
+      "demPct": 49.2,
+      "demVotes": 8195,
+      "margin": -0.4,
+      "repPct": 48.8,
+      "repVotes": 8117,
+      "totalVotes": 16649
+    },
+    "6th Essex": {
+      "demPct": 66.0,
+      "demVotes": 16149,
+      "margin": -34.5,
+      "repPct": 31.5,
+      "repVotes": 7700,
+      "totalVotes": 24481
+    },
+    "6th Hampden": {
+      "demPct": 48.7,
+      "demVotes": 9426,
+      "margin": 0.1,
+      "repPct": 48.8,
+      "repVotes": 9433,
+      "totalVotes": 19347
+    },
+    "6th Middlesex": {
+      "demPct": 68.0,
+      "demVotes": 8167,
+      "margin": -38.9,
+      "repPct": 29.1,
+      "repVotes": 3501,
+      "totalVotes": 12012
+    },
+    "6th Norfolk": {
+      "demPct": 59.8,
+      "demVotes": 13899,
+      "margin": -22.1,
+      "repPct": 37.7,
+      "repVotes": 8767,
+      "totalVotes": 23230
+    },
+    "6th Plymouth": {
+      "demPct": 51.4,
+      "demVotes": 14971,
+      "margin": -5.2,
+      "repPct": 46.2,
+      "repVotes": 13453,
+      "totalVotes": 29139
+    },
+    "6th Suffolk": {
+      "demPct": 85.0,
+      "demVotes": 12703,
+      "margin": -72.6,
+      "repPct": 12.4,
+      "repVotes": 1859,
+      "totalVotes": 14953
+    },
+    "6th Worcester": {
+      "demPct": 45.2,
+      "demVotes": 9562,
+      "margin": 7.3,
+      "repPct": 52.5,
+      "repVotes": 11094,
+      "totalVotes": 21149
+    },
+    "7th Bristol": {
+      "demPct": 46.7,
+      "demVotes": 5431,
+      "margin": 4.6,
+      "repPct": 51.3,
+      "repVotes": 5973,
+      "totalVotes": 11640
+    },
+    "7th Essex": {
+      "demPct": 71.4,
+      "demVotes": 16536,
+      "margin": -45.6,
+      "repPct": 25.8,
+      "repVotes": 5967,
+      "totalVotes": 23158
+    },
+    "7th Hampden": {
+      "demPct": 55.1,
+      "demVotes": 13778,
+      "margin": -12.5,
+      "repPct": 42.6,
+      "repVotes": 10644,
+      "totalVotes": 25013
+    },
+    "7th Middlesex": {
+      "demPct": 69.1,
+      "demVotes": 15613,
+      "margin": -40.8,
+      "repPct": 28.3,
+      "repVotes": 6384,
+      "totalVotes": 22589
+    },
+    "7th Norfolk": {
+      "demPct": 70.6,
+      "demVotes": 16234,
+      "margin": -43.9,
+      "repPct": 26.7,
+      "repVotes": 6151,
+      "totalVotes": 22997
+    },
+    "7th Plymouth": {
+      "demPct": 47.1,
+      "demVotes": 11648,
+      "margin": 3.6,
+      "repPct": 50.7,
+      "repVotes": 12544,
+      "totalVotes": 24742
+    },
+    "7th Suffolk": {
+      "demPct": 83.6,
+      "demVotes": 8635,
+      "margin": -71.4,
+      "repPct": 12.2,
+      "repVotes": 1263,
+      "totalVotes": 10325
+    },
+    "7th Worcester": {
+      "demPct": 48.6,
+      "demVotes": 12357,
+      "margin": 0.5,
+      "repPct": 49.1,
+      "repVotes": 12468,
+      "totalVotes": 25404
+    },
+    "8th Bristol": {
+      "demPct": 43.2,
+      "demVotes": 10270,
+      "margin": 11.7,
+      "repPct": 54.9,
+      "repVotes": 13032,
+      "totalVotes": 23749
+    },
+    "8th Essex": {
+      "demPct": 68.1,
+      "demVotes": 17158,
+      "margin": -38.8,
+      "repPct": 29.3,
+      "repVotes": 7391,
+      "totalVotes": 25204
+    },
+    "8th Hampden": {
+      "demPct": 51.3,
+      "demVotes": 10186,
+      "margin": -5.1,
+      "repPct": 46.2,
+      "repVotes": 9171,
+      "totalVotes": 19859
+    },
+    "8th Middlesex": {
+      "demPct": 66.9,
+      "demVotes": 17807,
+      "margin": -37.0,
+      "repPct": 29.9,
+      "repVotes": 7968,
+      "totalVotes": 26607
+    },
+    "8th Norfolk": {
+      "demPct": 64.5,
+      "demVotes": 16152,
+      "margin": -31.8,
+      "repPct": 32.7,
+      "repVotes": 8199,
+      "totalVotes": 25038
+    },
+    "8th Plymouth": {
+      "demPct": 47.5,
+      "demVotes": 11129,
+      "margin": 3.0,
+      "repPct": 50.5,
+      "repVotes": 11812,
+      "totalVotes": 23413
+    },
+    "8th Suffolk": {
+      "demPct": 80.1,
+      "demVotes": 13531,
+      "margin": -63.7,
+      "repPct": 16.4,
+      "repVotes": 2764,
+      "totalVotes": 16897
+    },
+    "8th Worcester": {
+      "demPct": 47.7,
+      "demVotes": 12187,
+      "margin": 2.4,
+      "repPct": 50.1,
+      "repVotes": 12799,
+      "totalVotes": 25553
+    },
+    "9th Bristol": {
+      "demPct": 48.6,
+      "demVotes": 11049,
+      "margin": 1.1,
+      "repPct": 49.7,
+      "repVotes": 11296,
+      "totalVotes": 22731
+    },
+    "9th Essex": {
+      "demPct": 50.1,
+      "demVotes": 12599,
+      "margin": -2.3,
+      "repPct": 47.8,
+      "repVotes": 12033,
+      "totalVotes": 25162
+    },
+    "9th Hampden": {
+      "demPct": 62.7,
+      "demVotes": 8930,
+      "margin": -28.2,
+      "repPct": 34.5,
+      "repVotes": 4918,
+      "totalVotes": 14248
+    },
+    "9th Middlesex": {
+      "demPct": 67.1,
+      "demVotes": 13163,
+      "margin": -36.3,
+      "repPct": 30.8,
+      "repVotes": 6043,
+      "totalVotes": 19617
+    },
+    "9th Norfolk": {
+      "demPct": 54.7,
+      "demVotes": 15053,
+      "margin": -12.3,
+      "repPct": 42.4,
+      "repVotes": 11669,
+      "totalVotes": 27530
+    },
+    "9th Plymouth": {
+      "demPct": 56.6,
+      "demVotes": 13266,
+      "margin": -15.5,
+      "repPct": 41.1,
+      "repVotes": 9629,
+      "totalVotes": 23418
+    },
+    "9th Suffolk": {
+      "demPct": 82.4,
+      "demVotes": 14390,
+      "margin": -68.0,
+      "repPct": 14.4,
+      "repVotes": 2515,
+      "totalVotes": 17455
+    },
+    "9th Worcester": {
+      "demPct": 54.7,
+      "demVotes": 14110,
+      "margin": -12.4,
+      "repPct": 42.3,
+      "repVotes": 10923,
+      "totalVotes": 25793
+    },
+    "Barnstable-Dukes-Nantucket": {
+      "demPct": 71.3,
+      "demVotes": 19135,
+      "margin": -45.1,
+      "repPct": 26.2,
+      "repVotes": 7037,
+      "totalVotes": 26820
+    }
+  },
+  "senate": {
+    "Berkshire-Hampden-Franklin-Hampshire": {
+      "demPct": 65.3,
+      "demVotes": 61443,
+      "margin": -33.3,
+      "repPct": 32.0,
+      "repVotes": 30067,
+      "totalVotes": 94037
+    },
+    "Bristol and Norfolk": {
+      "demPct": 56.5,
+      "demVotes": 56689,
+      "margin": -15.8,
+      "repPct": 40.7,
+      "repVotes": 40878,
+      "totalVotes": 100401
+    },
+    "Cape and Islands": {
+      "demPct": 62.7,
+      "demVotes": 68902,
+      "margin": -27.6,
+      "repPct": 35.1,
+      "repVotes": 38588,
+      "totalVotes": 109931
+    },
+    "Fifth Middlesex": {
+      "demPct": 64.5,
+      "demVotes": 59447,
+      "margin": -31.8,
+      "repPct": 32.7,
+      "repVotes": 30111,
+      "totalVotes": 92142
+    },
+    "First Bristol and Plymouth": {
+      "demPct": 45.6,
+      "demVotes": 36451,
+      "margin": 6.9,
+      "repPct": 52.5,
+      "repVotes": 41987,
+      "totalVotes": 79992
+    },
+    "First Essex": {
+      "demPct": 53.7,
+      "demVotes": 28611,
+      "margin": -9.8,
+      "repPct": 43.9,
+      "repVotes": 23364,
+      "totalVotes": 53267
+    },
+    "First Essex and Middlesex": {
+      "demPct": 60.0,
+      "demVotes": 69530,
+      "margin": -22.6,
+      "repPct": 37.4,
+      "repVotes": 43359,
+      "totalVotes": 115923
+    },
+    "First Middlesex": {
+      "demPct": 54.3,
+      "demVotes": 37670,
+      "margin": -11.0,
+      "repPct": 43.3,
+      "repVotes": 29992,
+      "totalVotes": 69325
+    },
+    "First Plymouth and Norfolk": {
+      "demPct": 58.0,
+      "demVotes": 62388,
+      "margin": -18.5,
+      "repPct": 39.5,
+      "repVotes": 42477,
+      "totalVotes": 107595
+    },
+    "First Suffolk": {
+      "demPct": 72.7,
+      "demVotes": 56761,
+      "margin": -48.5,
+      "repPct": 24.2,
+      "repVotes": 18851,
+      "totalVotes": 78037
+    },
+    "First Worcester": {
+      "demPct": 63.1,
+      "demVotes": 40481,
+      "margin": -29.5,
+      "repPct": 33.6,
+      "repVotes": 21568,
+      "totalVotes": 64149
+    },
+    "Fourth Middlesex": {
+      "demPct": 64.6,
+      "demVotes": 64381,
+      "margin": -32.2,
+      "repPct": 32.4,
+      "repVotes": 32318,
+      "totalVotes": 99661
+    },
+    "Hampden": {
+      "demPct": 63.3,
+      "demVotes": 34122,
+      "margin": -29.3,
+      "repPct": 34.0,
+      "repVotes": 18343,
+      "totalVotes": 53875
+    },
+    "Hampden and Hampshire": {
+      "demPct": 53.1,
+      "demVotes": 43246,
+      "margin": -9.0,
+      "repPct": 44.1,
+      "repVotes": 35950,
+      "totalVotes": 81453
+    },
+    "Hampden-Hampshire-Worcester": {
+      "demPct": 52.8,
+      "demVotes": 49996,
+      "margin": -8.0,
+      "repPct": 44.8,
+      "repVotes": 42451,
+      "totalVotes": 94683
+    },
+    "Hampshire-Franklin-Worcester": {
+      "demPct": 69.2,
+      "demVotes": 58200,
+      "margin": -42.0,
+      "repPct": 27.2,
+      "repVotes": 22880,
+      "totalVotes": 84147
+    },
+    "Middlesex and Norfolk": {
+      "demPct": 68.6,
+      "demVotes": 60662,
+      "margin": -40.0,
+      "repPct": 28.6,
+      "repVotes": 25322,
+      "totalVotes": 88493
+    },
+    "Middlesex and Suffolk": {
+      "demPct": 75.9,
+      "demVotes": 45283,
+      "margin": -55.7,
+      "repPct": 20.2,
+      "repVotes": 12070,
+      "totalVotes": 59682
+    },
+    "Middlesex and Worcester": {
+      "demPct": 68.9,
+      "demVotes": 68276,
+      "margin": -40.8,
+      "repPct": 28.1,
+      "repVotes": 27789,
+      "totalVotes": 99043
+    },
+    "Norfolk and Middlesex": {
+      "demPct": 79.2,
+      "demVotes": 71497,
+      "margin": -61.9,
+      "repPct": 17.3,
+      "repVotes": 15605,
+      "totalVotes": 90239
+    },
+    "Norfolk and Plymouth": {
+      "demPct": 55.6,
+      "demVotes": 45655,
+      "margin": -13.9,
+      "repPct": 41.7,
+      "repVotes": 34190,
+      "totalVotes": 82084
+    },
+    "Norfolk and Suffolk": {
+      "demPct": 65.7,
+      "demVotes": 65672,
+      "margin": -34.4,
+      "repPct": 31.3,
+      "repVotes": 31272,
+      "totalVotes": 99987
+    },
+    "Norfolk-Plymouth-Bristol": {
+      "demPct": 58.9,
+      "demVotes": 52362,
+      "margin": -20.2,
+      "repPct": 38.7,
+      "repVotes": 34396,
+      "totalVotes": 88913
+    },
+    "Norfolk-Worcester-Middlesex": {
+      "demPct": 60.2,
+      "demVotes": 62527,
+      "margin": -23.3,
+      "repPct": 36.9,
+      "repVotes": 38304,
+      "totalVotes": 103902
+    },
+    "Plymouth and Barnstable": {
+      "demPct": 54.2,
+      "demVotes": 65349,
+      "margin": -10.5,
+      "repPct": 43.7,
+      "repVotes": 52705,
+      "totalVotes": 120675
+    },
+    "Second Bristol and Plymouth": {
+      "demPct": 50.6,
+      "demVotes": 37257,
+      "margin": -3.1,
+      "repPct": 47.5,
+      "repVotes": 35038,
+      "totalVotes": 73687
+    },
+    "Second Essex": {
+      "demPct": 60.3,
+      "demVotes": 55412,
+      "margin": -23.0,
+      "repPct": 37.3,
+      "repVotes": 34233,
+      "totalVotes": 91843
+    },
+    "Second Essex and Middlesex": {
+      "demPct": 56.0,
+      "demVotes": 58130,
+      "margin": -14.4,
+      "repPct": 41.6,
+      "repVotes": 43168,
+      "totalVotes": 103803
+    },
+    "Second Middlesex": {
+      "demPct": 78.7,
+      "demVotes": 71182,
+      "margin": -61.7,
+      "repPct": 17.0,
+      "repVotes": 15406,
+      "totalVotes": 90394
+    },
+    "Second Plymouth and Norfolk": {
+      "demPct": 60.0,
+      "demVotes": 43749,
+      "margin": -22.2,
+      "repPct": 37.8,
+      "repVotes": 27556,
+      "totalVotes": 72859
+    },
+    "Second Suffolk": {
+      "demPct": 85.2,
+      "demVotes": 52563,
+      "margin": -74.0,
+      "repPct": 11.2,
+      "repVotes": 6917,
+      "totalVotes": 61721
+    },
+    "Second Worcester": {
+      "demPct": 58.4,
+      "demVotes": 44654,
+      "margin": -19.9,
+      "repPct": 38.5,
+      "repVotes": 29458,
+      "totalVotes": 76502
+    },
+    "Suffolk and Middlesex": {
+      "demPct": 78.6,
+      "demVotes": 55910,
+      "margin": -61.6,
+      "repPct": 17.0,
+      "repVotes": 12076,
+      "totalVotes": 71106
+    },
+    "Third Bristol and Plymouth": {
+      "demPct": 46.7,
+      "demVotes": 46820,
+      "margin": 4.7,
+      "repPct": 51.4,
+      "repVotes": 51555,
+      "totalVotes": 100352
+    },
+    "Third Essex": {
+      "demPct": 58.2,
+      "demVotes": 46375,
+      "margin": -18.7,
+      "repPct": 39.5,
+      "repVotes": 31500,
+      "totalVotes": 79729
+    },
+    "Third Middlesex": {
+      "demPct": 70.0,
+      "demVotes": 61530,
+      "margin": -42.8,
+      "repPct": 27.2,
+      "repVotes": 23900,
+      "totalVotes": 87886
+    },
+    "Third Suffolk": {
+      "demPct": 65.4,
+      "demVotes": 43672,
+      "margin": -34.1,
+      "repPct": 31.3,
+      "repVotes": 20936,
+      "totalVotes": 66802
+    },
+    "Worcester and Hampden": {
+      "demPct": 46.5,
+      "demVotes": 48054,
+      "margin": 4.7,
+      "repPct": 51.2,
+      "repVotes": 52989,
+      "totalVotes": 103445
+    },
+    "Worcester and Hampshire": {
+      "demPct": 49.0,
+      "demVotes": 45785,
+      "margin": -0.3,
+      "repPct": 48.7,
+      "repVotes": 45488,
+      "totalVotes": 93454
+    },
+    "Worcester and Middlesex": {
+      "demPct": 56.3,
+      "demVotes": 49824,
+      "margin": -15.3,
+      "repPct": 41.0,
+      "repVotes": 36246,
+      "totalVotes": 88449
+    }
+  }
+}
