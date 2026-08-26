@@ -1,0 +1,1314 @@
+[
+  {
+    "id": "ocd-person/0d1a7b74-9ed8-4d8c-a1fc-f2caafc3d364",
+    "name": "Adam Bass",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:la/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Bass",
+    "image": "https://senate.la.gov/SenPics/Sen36.jpg",
+    "email": "sen36@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-12T19:25:57.412598+00:00",
+    "updated_at": "2025-03-29T00:52:46.456559+00:00",
+    "openstates_url": "https://openstates.org/person/adam-bass-Oj0AGpnaDuemuktwvSsgm/"
+  },
+  {
+    "id": "ocd-person/5032448a-7275-4a02-8dc1-d251cdde8ad9",
+    "name": "Alan Seabaugh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:la/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Alan",
+    "family_name": "Seabaugh",
+    "image": "https://senate.la.gov/SenPics/Sen31.jpg",
+    "email": "sen31@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "1967-05-20",
+    "death_date": "",
+    "extras": {
+      "education": "Louisiana State University, B.A., 1990; Louisiana State University Law School, J.D., 1993",
+      "legislative assistant": "Emily Mott and Megan McCreary",
+      "representing parishes": [
+        "Caddo"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:46.883803+00:00",
+    "updated_at": "2025-03-29T00:52:45.410056+00:00",
+    "openstates_url": "https://openstates.org/person/alan-seabaugh-2RKMENSeFvu1IuYoaHHo6L/"
+  },
+  {
+    "id": "ocd-person/b6e8a5cf-ec5c-494b-b9ff-efa0fb92e1c1",
+    "name": "Beth Mizell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:la/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Beth",
+    "family_name": "Mizell",
+    "image": "https://senate.la.gov/SenatorPics/Sen12.jpg",
+    "email": "mizellb@legis.la.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "legislative assistant": "Penny Jones",
+      "representing parishes": [
+        "St. Tammany",
+        "Tangipahoa",
+        "Washington"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:42.810188+00:00",
+    "updated_at": "2025-03-29T00:52:42.418264+00:00",
+    "openstates_url": "https://openstates.org/person/beth-mizell-5Z8vH7eMzAe26HsYfNF6YL/"
+  },
+  {
+    "id": "ocd-person/20547e38-711f-4012-9217-b739f4450b91",
+    "name": "Bill Wheat",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:la/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Wheat",
+    "image": "https://senate.la.gov/SenPics/Sen37.jpg",
+    "email": "sen37@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-12T19:25:47.272083+00:00",
+    "updated_at": "2025-03-29T00:52:05.657878+00:00",
+    "openstates_url": "https://openstates.org/person/bill-wheat-z0MoBchF0lLTskZAwyNnN/"
+  },
+  {
+    "id": "ocd-person/8574f94d-93ed-49b0-a5f6-aa1832b5542a",
+    "name": "Blake Miguez",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:la/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Blake",
+    "family_name": "Miguez",
+    "image": "https://senate.la.gov/SenPics/Sen22.jpg",
+    "email": "sen22@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Catholic High School New Iberia, 1999; Louisiana State University, Political Science, 2004; Southern University Law Center, 2008",
+      "legislative assistant": "Kirsten D. Bourque",
+      "representing parishes": [
+        "Iberia and Vermilion"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:44.037264+00:00",
+    "updated_at": "2025-03-29T00:52:08.261299+00:00",
+    "openstates_url": "https://openstates.org/person/blake-miguez-43pR4buKQhWG62w0cXJNnu/"
+  },
+  {
+    "id": "ocd-person/7dac3861-2ffb-45ba-b690-a8e199eb2acd",
+    "name": "Bob Hensgens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:la/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Hensgens",
+    "image": "https://senate.la.gov/SenatorPics/Sen26.jpg",
+    "email": "sen26@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "1955-01-26",
+    "death_date": "",
+    "extras": {
+      "education": "Vermilion Catholic High, 1983; University Southwestern Louisiana, Business Administration",
+      "second phone": "(800)259-5035",
+      "legislative assistant": "Sue Ellen Duhon",
+      "representing parishes": [
+        "Acadia",
+        "Lafayette",
+        "St. Landry",
+        "Vermilion"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:49.713042+00:00",
+    "updated_at": "2025-03-29T00:52:20.675944+00:00",
+    "openstates_url": "https://openstates.org/person/bob-hensgens-3p8kEcfSGWHmIhHWamMK0j/"
+  },
+  {
+    "id": "ocd-person/cfe19d33-7048-4fb7-9d56-0fa0f5f985f5",
+    "name": "Bob Owen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:la/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Owen",
+    "image": "https://senate.la.gov/SenPics/Sen1.jpg",
+    "email": "sen01@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-12T19:25:40.254296+00:00",
+    "updated_at": "2025-03-29T00:52:16.262531+00:00",
+    "openstates_url": "https://openstates.org/person/bob-owen-6KGW5fCYK8g0e56RveZ9z3/"
+  },
+  {
+    "id": "ocd-person/92439b80-4646-445b-939f-5414e309f183",
+    "name": "Brach Myers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:la/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Brach",
+    "family_name": "Myers",
+    "image": "https://house.louisiana.gov/H_Reps/RepPics/rep45.jpg",
+    "email": "sen23@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-12T19:25:52.970661+00:00",
+    "updated_at": "2026-01-31T00:50:23.879926+00:00",
+    "openstates_url": "https://openstates.org/person/brach-myers-4Rzm8YeYmJSBbAjpV39Mep/"
+  },
+  {
+    "id": "ocd-person/75f165af-66d1-464e-99b0-4176b8636501",
+    "name": "Caleb Kleinpeter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:la/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Caleb",
+    "family_name": "Kleinpeter",
+    "image": "https://senate.la.gov/SenatorPics/Sen17.jpg",
+    "email": "sen17@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Brusly High School graduate\r\nBachelor of Science in Business",
+      "legislative assistant": "Kim Daigle",
+      "representing parishes": [
+        "Assumption",
+        "East Baton Rouge",
+        "East Feliciana",
+        "Iberville",
+        "Pointe Coupee",
+        "St. Helena",
+        "St. Martin",
+        "West Baton Rouge",
+        "West Feliciana"
+      ]
+    },
+    "created_at": "2023-02-14T16:49:13.541548+00:00",
+    "updated_at": "2025-03-29T00:51:58.660285+00:00",
+    "openstates_url": "https://openstates.org/person/caleb-kleinpeter-3aYQ6fSZpRjTOkYWuSEZ8r/"
+  },
+  {
+    "id": "ocd-person/684d1cc7-cce3-4545-a6ab-d689c7c56105",
+    "name": "Cameron Henry",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:la/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Cameron",
+    "family_name": "Henry",
+    "image": "https://senate.la.gov/SenatorPics/Sen9.jpg",
+    "email": "henryc@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "1974-11-01",
+    "death_date": "",
+    "extras": {
+      "education": "Jesuit High School; Louisiana State University, B.S., Political Science; Tulane, MBA, Finance",
+      "legislative assistant": "Myrna Schlesinger",
+      "representing parishes": [
+        "Jefferson",
+        "Orleans"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:39.340870+00:00",
+    "updated_at": "2025-03-29T00:51:59.678300+00:00",
+    "openstates_url": "https://openstates.org/person/cameron-henry-3AoRQu1i7uqEqs508e1SJ3/"
+  },
+  {
+    "id": "ocd-person/1899dc2e-bac6-4951-b3fc-87ea5e2d4969",
+    "name": "Ed Price",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:la/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Price",
+    "image": "https://senate.la.gov/SenatorPics/Sen2.jpg",
+    "email": "pricee@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Grambling State University, B.A., 1975",
+      "second phone": "(855)844-1430",
+      "legislative assistant": "Delania Bergeron",
+      "representing parishes": [
+        "Ascension",
+        "Assumption",
+        "Iberville",
+        "Lafourche",
+        "St. Charles",
+        "St. James",
+        "St. John the Baptist",
+        "West Baton Rouge"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:45.632272+00:00",
+    "updated_at": "2025-03-29T00:52:18.719617+00:00",
+    "openstates_url": "https://openstates.org/person/ed-price-kQ847WsTyLU8tUr2UKygD/"
+  },
+  {
+    "id": "ocd-person/c89a156e-8426-4001-8364-94a179482d76",
+    "name": "Eddie Lambert",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:la/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Eddie",
+    "family_name": "Lambert",
+    "image": "https://senate.la.gov/SenatorPics/Sen18.jpg",
+    "email": "lamberte@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "1956-02-16",
+    "death_date": "",
+    "extras": {
+      "education": "Louisiana State University, B.A. (1978); LSU, J.D. (1982)",
+      "legislative assistant": "Theresa M. Babin",
+      "representing parishes": [
+        "Ascension",
+        "Livingston",
+        "and St. James"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:46.711528+00:00",
+    "updated_at": "2025-03-29T00:52:04.131951+00:00",
+    "openstates_url": "https://openstates.org/person/eddie-lambert-66WsfqHTNtJ5NzdXrqHwFK/"
+  },
+  {
+    "id": "ocd-person/a8344aaa-aff7-42b3-b1a2-59539191fbb2",
+    "name": "Franklin Foil",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:la/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Franklin",
+    "family_name": "Foil",
+    "image": "https://senate.la.gov/SenatorPics/Sen16.jpg",
+    "email": "foilf@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "1964-10-31",
+    "death_date": "",
+    "extras": {
+      "education": "Louisiana State University, B.A., Political Science, 1987, Loyola School of Law, J.D., 1991",
+      "legislative assistant": "Meg Duggar",
+      "representing parishes": [
+        "East Baton Rouge"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:34.333609+00:00",
+    "updated_at": "2025-03-29T00:52:28.133373+00:00",
+    "openstates_url": "https://openstates.org/person/franklin-foil-57ObiH6LVETSRiYLOHe56Q/"
+  },
+  {
+    "id": "ocd-person/60ffe8d0-0469-4eca-a69a-deec93c203b3",
+    "name": "Gary Carter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:la/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Carter",
+    "image": "https://senate.la.gov/SenatorPics/Sen7.jpg",
+    "email": "carterg@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Archbishop Shaw High School, 1992; Xavier University of Louisiana, B.A., Political Science, 1996; Tulane Law School, J.D., 2002",
+      "second phone": "(504) 361-6600",
+      "legislative assistant": "Tosha Kish",
+      "representing parishes": [
+        "Jefferson",
+        "Orleans",
+        "Plaquemines"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:39.194722+00:00",
+    "updated_at": "2025-03-29T00:52:33.566344+00:00",
+    "openstates_url": "https://openstates.org/person/gary-carter-2x2DHrVMOsHoErVbmi6pIx/"
+  },
+  {
+    "id": "ocd-person/379e9992-463c-4188-9702-668457a75c3d",
+    "name": "Gerald Boudreaux",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:la/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Gerald",
+    "family_name": "Boudreaux",
+    "image": "https://senate.la.gov/SenatorPics/Sen24.jpg",
+    "email": "boudreauxg@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "1960-09-16",
+    "death_date": "",
+    "extras": {
+      "education": "Northside High School\r\nUniversity of Louisiana Lafayette, B.S. Education",
+      "second phone": "(844)885-6578",
+      "legislative assistant": "Phyllis Roy",
+      "representing parishes": [
+        "Lafayette",
+        "St. Landry",
+        "St. Martin"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:45.939613+00:00",
+    "updated_at": "2026-01-31T00:49:53.635031+00:00",
+    "openstates_url": "https://openstates.org/person/gerald-boudreaux-1gx3cF2oPO7PeA3D8iah93/"
+  },
+  {
+    "id": "ocd-person/25923053-3679-443e-bbb1-e2f63a50585c",
+    "name": "Glen Womack",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:la/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Glen",
+    "family_name": "Womack",
+    "image": "https://senate.la.gov/SenatorPics/Sen32.jpg",
+    "email": "sen32@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "legislative assistant": "Missy Weeks",
+      "representing parishes": [
+        "Avoyelles",
+        "Caldwell",
+        "Catahoula",
+        "Concordia",
+        "Franklin",
+        "LaSalle",
+        "Ouachita",
+        "Rapides",
+        "Richland",
+        "West Feliciana"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:39.670832+00:00",
+    "updated_at": "2025-03-29T00:52:01.705191+00:00",
+    "openstates_url": "https://openstates.org/person/glen-womack-18tWWNfL5i8ymlNWPh8TPA/"
+  },
+  {
+    "id": "ocd-person/77166b5f-e299-431c-869d-ab2fff79cd33",
+    "name": "Greg Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:la/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Miller",
+    "image": "https://senate.la.gov/SenPics/Sen19.jpg",
+    "email": "sen19@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-12T19:25:40.789838+00:00",
+    "updated_at": "2025-03-29T00:52:21.208603+00:00",
+    "openstates_url": "https://openstates.org/person/greg-miller-3ciKcakoIyL0hAX4wPLlQ3/"
+  },
+  {
+    "id": "ocd-person/aa2da413-7e13-4c2b-93e8-784edc0a495e",
+    "name": "Heather Cloud",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:la/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Heather",
+    "family_name": "Cloud",
+    "image": "https://senate.la.gov/SenatorPics/Sen28.jpg",
+    "email": "sen28@legis.la.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "legislative assistant": "Faith Kelly, David Allen",
+      "representing parishes": [
+        "Acadia",
+        "Allen",
+        "Avoyelles",
+        "Evangeline",
+        "St. Landry"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:32.738413+00:00",
+    "updated_at": "2025-03-29T00:53:02.569274+00:00",
+    "openstates_url": "https://openstates.org/person/heather-cloud-5B7YJpt3w8PUlz0cCPHqdK/"
+  },
+  {
+    "id": "ocd-person/b4a4657a-e588-4036-9a0f-48847e22a140",
+    "name": "Jay Luneau",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:la/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Luneau",
+    "image": "https://senate.la.gov/SenatorPics/Sen29.jpg",
+    "email": "luneauj@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "legislative assistant": "Vanessa Baptiste-McNeal",
+      "representing parishes": [
+        "Bienville",
+        "Grant",
+        "Jackson",
+        "Lincoln",
+        "Natchitoches",
+        "Rapides",
+        "Winn"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:48.928530+00:00",
+    "updated_at": "2025-03-29T00:52:13.306275+00:00",
+    "openstates_url": "https://openstates.org/person/jay-luneau-5UrkOB3FLmA1z5Y5WO77RI/"
+  },
+  {
+    "id": "ocd-person/9d6aa1d9-76b2-41ad-a3e0-4fa86da08645",
+    "name": "Jay Morris",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:la/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Morris",
+    "image": "https://senate.la.gov/SenatorPics/Sen35.jpg",
+    "email": "morrisjc@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "1958-05-24",
+    "death_date": "",
+    "extras": {
+      "education": "Louisiana State University, B.A., 1980; LSU Law School, J.D., 1983",
+      "second phone": "(855)594-4086",
+      "legislative assistant": "Katie May",
+      "representing parishes": [
+        "Grant",
+        "Jackson",
+        "Lincoln",
+        "Ouachita",
+        "Rapides",
+        "and Winn"
+      ]
+    },
+    "created_at": "2020-12-19T06:08:20.193964+00:00",
+    "updated_at": "2025-03-29T00:52:11.744042+00:00",
+    "openstates_url": "https://openstates.org/person/jay-morris-4n2WdTmmG1tkZxeRlhNFXp/"
+  },
+  {
+    "id": "ocd-person/e8c847e2-5ee6-4f9c-a4e4-d7d8daa8464c",
+    "name": "Jeremy Stine",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:la/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Jeremy",
+    "family_name": "Stine",
+    "image": "https://senate.la.gov/SenatorPics/Sen27.jpg",
+    "email": "sen27@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Degree in Political Science and French from Louisiana State University",
+      "legislative assistant": "Alexis Jackson",
+      "representing parishes": [
+        "Calcasieu"
+      ]
+    },
+    "created_at": "2022-01-31T04:06:33.089482+00:00",
+    "updated_at": "2025-03-29T00:52:59.095219+00:00",
+    "openstates_url": "https://openstates.org/person/jeremy-stine-75FkP0X26RVqO1PBuWnd40/"
+  },
+  {
+    "id": "ocd-person/ce11601e-9a67-48a1-9408-b80943312303",
+    "name": "Jimmy Harris",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:la/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Jimmy",
+    "family_name": "Harris",
+    "image": "https://senate.la.gov/SenatorPics/Sen4.jpg",
+    "email": "harrisj@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "St. Augustine High School; Morehouse College of Atlanta, B.A., Psychology; Southern University Law Center, J.D.",
+      "legislative assistant": "Corinne Villavaso",
+      "representing parishes": [
+        "Orleans"
+      ]
+    },
+    "created_at": "2020-12-19T06:08:17.941811+00:00",
+    "updated_at": "2025-03-29T00:52:38.282235+00:00",
+    "openstates_url": "https://openstates.org/person/jimmy-harris-6GqMJitTSAp3LtRm9uAeSB/"
+  },
+  {
+    "id": "ocd-person/acdaa5e6-3b22-44b9-8b47-480b801483dd",
+    "name": "Katrina Jackson-Andrews",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:la/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Katrina",
+    "family_name": "Jackson-Andrews",
+    "image": "https://senate.la.gov/SenatorPics/Sen34.jpg",
+    "email": "jacksonk@legis.la.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "University of Louisiana at Monroe, B.A.; Southern University Law Center, J.D.",
+      "legislative assistant": "Allison Johnson",
+      "representing parishes": [
+        "Concordia",
+        "East Carroll",
+        "Madison",
+        "Morehouse",
+        "Ouachita",
+        "Richland",
+        "Tensas"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:37.471215+00:00",
+    "updated_at": "2025-03-29T00:52:47.980708+00:00",
+    "openstates_url": "https://openstates.org/person/katrina-jackson-andrews-5GAbMgrDcmaJX39KIjIsMn/"
+  },
+  {
+    "id": "ocd-person/f6f401f7-7fb4-40df-84a0-b5a3f0fe9ec2",
+    "name": "Kirk Talbot",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:la/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Kirk",
+    "family_name": "Talbot",
+    "image": "https://senate.la.gov/SenatorPics/Sen10.jpg",
+    "email": "talbotk@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "1969-11-18",
+    "death_date": "",
+    "extras": {
+      "education": "University of Mississippi, B.A., Business Administration",
+      "legislative assistant": "Tia P. Russell",
+      "representing parishes": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:37.446023+00:00",
+    "updated_at": "2025-03-29T00:52:36.719679+00:00",
+    "openstates_url": "https://openstates.org/person/kirk-talbot-7VzcheyW1vL8IjFKM41rnO/"
+  },
+  {
+    "id": "ocd-person/52035a94-6995-4ea4-b463-1109d683048b",
+    "name": "Larry Selders",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:la/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Selders",
+    "image": "https://house.louisiana.gov/H_Reps/RepPics20/rep67.jpg",
+    "email": "sen14@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Southern University and A & M College, B.S., Social Work, 2005",
+      "legislative assistant": "Ana Victorian",
+      "representing parishes": [
+        "East Baton Rouge"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:34.776964+00:00",
+    "updated_at": "2025-05-15T00:50:20.025869+00:00",
+    "openstates_url": "https://openstates.org/person/larry-selders-2Uku17CY6FRVd0riOIvUHT/"
+  },
+  {
+    "id": "ocd-person/addae848-cfaf-4637-a23e-595e45c6e14f",
+    "name": "Mark Abraham",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:la/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Abraham",
+    "image": "https://senate.la.gov/SenatorPics/Sen25.jpg",
+    "email": "abrahamm@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "1953-11-11",
+    "death_date": "",
+    "extras": {
+      "education": "Louisiana State University, B.S., Accounting",
+      "legislative assistant": "Ginger Gomez",
+      "representing parishes": [
+        "Acadia",
+        "Calcasieu",
+        "Cameron",
+        "Jefferson Davis"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:32.255458+00:00",
+    "updated_at": "2025-03-29T00:52:05.112553+00:00",
+    "openstates_url": "https://openstates.org/person/mark-abraham-5I3iEjxGE959xPPyTwipl1/"
+  },
+  {
+    "id": "ocd-person/750a2868-c9b0-4124-95c7-3516f93ff087",
+    "name": "Mike F\u00e9si",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:la/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "F\u00e9si",
+    "image": "https://senate.la.gov/SenatorPics/Sen20.jpg",
+    "email": "sen20@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "legislative assistant": "Lucille Sposito",
+      "representing parishes": [
+        "Terrebonne",
+        "Lafourche"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:38.871963+00:00",
+    "updated_at": "2025-03-29T00:52:55.091751+00:00",
+    "openstates_url": "https://openstates.org/person/mike-fesi-3Yqk9V7XrlVvfR1Cy1IJNf/"
+  },
+  {
+    "id": "ocd-person/723f3444-f927-44b0-8659-7ac00370aa92",
+    "name": "Mike Reese",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:la/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Reese",
+    "image": "https://senate.la.gov/SenatorPics/Sen30.jpg",
+    "email": "sen30@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "legislative assistant": "Nanette Swisher",
+      "representing parishes": [
+        "Beauregard",
+        "Calcasieu",
+        "Vernon"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:39.747370+00:00",
+    "updated_at": "2025-03-29T00:52:06.751644+00:00",
+    "openstates_url": "https://openstates.org/person/mike-reese-3Ta0b9kYtlDBD3qcWUUGSQ/"
+  },
+  {
+    "id": "ocd-person/a5240587-95aa-4135-befc-de2ea2aa1d51",
+    "name": "Patrick Connick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:la/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Connick",
+    "image": "https://senate.la.gov/SenatorPics/Sen8.jpg",
+    "email": "connickp@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Archbishop Shaw High School, 1979; Loyola University at New Orleans, 1983, B.A.;  Loyola University Law School, 1993, J.D.",
+      "legislative assistant": "Erika Seifert",
+      "representing parishes": [
+        "Jefferson",
+        "Plaquemines"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:40.633777+00:00",
+    "updated_at": "2025-03-29T00:52:07.230251+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-connick-51cC8vJoV0OwCskkRwkSdV/"
+  },
+  {
+    "id": "ocd-person/d4a6db65-2f6f-464f-ae26-58176f2b68e6",
+    "name": "Patrick McMath",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:la/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "McMath",
+    "image": "https://senate.la.gov/SenatorPics/Sen11.jpg",
+    "email": "sen11@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "legislative assistant": "Noble-Bates Young",
+      "representing parishes": [
+        "St. Tammany",
+        "Tangipahoa"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:33.866199+00:00",
+    "updated_at": "2026-04-10T00:49:41.057986+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-mcmath-6TGcsuj1UIyXYrDhMOKmqk/"
+  },
+  {
+    "id": "ocd-person/8710f3da-9aea-41a9-acd2-181377cc6ae7",
+    "name": "Regina Barrow",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:la/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Regina",
+    "family_name": "Barrow",
+    "image": "https://senate.la.gov/SenatorPics/Sen15.jpg",
+    "email": "barrowr@legis.la.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "(225) 359-9332",
+      "legislative assistant": "",
+      "representing parishes": [
+        "East Baton Rouge"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:48.274612+00:00",
+    "updated_at": "2025-03-29T00:52:22.190711+00:00",
+    "openstates_url": "https://openstates.org/person/regina-barrow-46ri6w8G5C8Lyt2dVO7Cpr/"
+  },
+  {
+    "id": "ocd-person/e49647e3-b5c3-4329-9472-27048115441c",
+    "name": "Rick Edmonds",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:la/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Edmonds",
+    "image": "https://senate.la.gov/SenPics/Sen6.jpg",
+    "email": "sen06@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "1956-09-12",
+    "death_date": "",
+    "extras": {
+      "education": "Fair Park High School; East Texas Baptist University, B.A.; New Orleans Baptist Theological Seminary, M.Div., Doctoral Studies",
+      "legislative assistant": "Zoe McRaney and Mason Batts",
+      "representing parishes": [
+        "East Baton Rouge"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:55.159288+00:00",
+    "updated_at": "2025-03-29T00:52:33.006490+00:00",
+    "openstates_url": "https://openstates.org/person/rick-edmonds-6xKvbNVqIvi5ViyIV9zmKy/"
+  },
+  {
+    "id": "ocd-person/655ddc35-ecd0-4db2-a3fe-cd86f1cb7d61",
+    "name": "Robert Allain",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:la/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Allain",
+    "image": "https://senate.la.gov/SenatorPics/Sen21.jpg",
+    "email": "sen21@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Louisiana State University, agricultural engineering",
+      "second phone": "(985)850-2738",
+      "legislative assistant": "Laura Meadows",
+      "representing parishes": [
+        "Iberia",
+        "Lafourche",
+        "St. Mary",
+        "Terrebonne"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:36.376792+00:00",
+    "updated_at": "2026-01-31T00:50:13.676919+00:00",
+    "openstates_url": "https://openstates.org/person/robert-allain-35H7OQ1yaLHisc8yfDR0ZF/"
+  },
+  {
+    "id": "ocd-person/7d852e7a-ae99-4f89-b4c0-4d7cb7e816db",
+    "name": "Royce Duplessis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:la/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Royce",
+    "family_name": "Duplessis",
+    "image": "https://senate.la.gov/SenatorPics/Sen5.jpg",
+    "email": "duplessisr@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Xavier University of Louisiana - B.S. in Communications\r\nHoward University School of Law - Juris Doctorate",
+      "second phone": "(504) 568-2741",
+      "legislative assistant": "Tren\u00e9 McCormick",
+      "representing parishes": [
+        "Orleans",
+        "Jefferson"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:50.336420+00:00",
+    "updated_at": "2025-03-29T00:52:23.230818+00:00",
+    "openstates_url": "https://openstates.org/person/royce-duplessis-3oqu6sgNrHQe3XMAueieuB/"
+  },
+  {
+    "id": "ocd-person/fc43b9e1-5e0d-4767-a12e-b2e801444d22",
+    "name": "Sam Jenkins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:la/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Jenkins",
+    "image": "https://senate.la.gov/SenPics/Sen39.jpg",
+    "email": "sen39@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-12T19:25:41.605371+00:00",
+    "updated_at": "2025-03-29T00:52:54.589132+00:00",
+    "openstates_url": "https://openstates.org/person/sam-jenkins-7g114Y4nIXNTEcDfjYff6I/"
+  },
+  {
+    "id": "ocd-person/7b4128f7-b147-4cdd-b6ee-0d7d3f2edb6f",
+    "name": "Sidney Barthelemy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:la/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Sidney",
+    "family_name": "Barthelemy",
+    "image": "",
+    "email": "sen03@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-10T00:50:00.542975+00:00",
+    "updated_at": "2026-06-04T06:53:47.680248+00:00",
+    "openstates_url": "https://openstates.org/person/sidney-barthelemy-3kZpjZTezPeYK4rLBpFlZX/"
+  },
+  {
+    "id": "ocd-person/dd47283c-c202-461f-b56a-8cc2c0b14f15",
+    "name": "Stewart Cathey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:la/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Stewart",
+    "family_name": "Cathey",
+    "image": "https://senate.la.gov/SenatorPics/Sen33.jpg",
+    "email": "sen33@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "legislative assistant": "Cynthia Nyquist",
+      "representing parishes": [
+        "Claiborne",
+        "Lincoln",
+        "Morehouse",
+        "Ouachita",
+        "Union",
+        "West Carroll"
+      ]
+    },
+    "created_at": "2020-03-06T01:31:32.981232+00:00",
+    "updated_at": "2025-03-29T00:52:37.266362+00:00",
+    "openstates_url": "https://openstates.org/person/stewart-cathey-6jXp2K0HCw7ZyLl8P8QlDZ/"
+  },
+  {
+    "id": "ocd-person/577fe2a3-275b-4b82-b508-c0ce29deb2fa",
+    "name": "Thomas Pressly",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:la/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Thomas",
+    "family_name": "Pressly",
+    "image": "https://senate.la.gov/SenPics/Sen38.jpg",
+    "email": "sen38@legis.la.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-12T19:25:45.620261+00:00",
+    "updated_at": "2025-03-29T00:53:01.054194+00:00",
+    "openstates_url": "https://openstates.org/person/thomas-pressly-2f6m7goVaiUflyMcOzFEj4/"
+  },
+  {
+    "id": "ocd-person/33e76c3a-a834-444c-9872-fc2af5c83837",
+    "name": "Valarie Hodges",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:la/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:la/government",
+      "name": "Louisiana",
+      "classification": "state"
+    },
+    "given_name": "Valarie",
+    "family_name": "Hodges",
+    "image": "https://senate.la.gov/SenPics/Sen13.jpg",
+    "email": "sen13@legis.la.gov",
+    "gender": "Female",
+    "birth_date": "1955-03-12",
+    "death_date": "",
+    "extras": {
+      "education": "Glen Oaks High School, Baton Rouge; Bob Brooks School of Real Estate, Baton Rouge; Light University course work; Louisiana State University",
+      "legislative assistant": "Victoria L. Hymel",
+      "representing parishes": [
+        "East Baton Rouge and Livingston"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:51.100539+00:00",
+    "updated_at": "2025-03-29T00:52:22.682301+00:00",
+    "openstates_url": "https://openstates.org/person/valarie-hodges-1ZwMt7PWTUBir6KSdrYcLf/"
+  }
+]

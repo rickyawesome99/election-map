@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "ocd-person/78900b72-692c-4b5f-ac8b-290577d6abd4",
+    "name": "Aaron Reinhardt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ok/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Aaron",
+    "family_name": "Reinhardt",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Aaron_Reinhardt_20241023_121244.jpeg",
+    "email": "aaron.reinhardt@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:57:20.705295+00:00",
+    "updated_at": "2026-04-09T07:53:28.827891+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-reinhardt-3fUuHniwPJxZVFF3b61hLQ/"
+  },
+  {
+    "id": "ocd-person/7e356581-ff96-4e5d-b6bc-94b3c8e0005c",
+    "name": "Adam Pugh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:ok/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Pugh",
+    "image": "https://oksenate.gov/sites/default/files/pugh.jpg",
+    "email": "pugh@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1977-10-12",
+    "death_date": "",
+    "extras": {
+      "email": "pugh@oksenate.gov"
+    },
+    "created_at": "2018-10-18T14:57:30.348815+00:00",
+    "updated_at": "2026-04-09T07:54:29.545005+00:00",
+    "openstates_url": "https://openstates.org/person/adam-pugh-3q9Qzy50RwCDA9CD7BxWRQ/"
+  },
+  {
+    "id": "ocd-person/0e3e261d-437a-4e04-8328-70adb16c82d9",
+    "name": "Ally Seifried",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ok/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Ally",
+    "family_name": "Seifried",
+    "image": "https://oksenate.gov/sites/default/files/Seifried%2C%20Ally%20Flags%202022.jpg",
+    "email": "alexandra.seifried@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "1992-09-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:52.448049+00:00",
+    "updated_at": "2026-04-09T07:53:27.016719+00:00",
+    "openstates_url": "https://openstates.org/person/ally-seifried-QsIGoamfzJRMFIAYRFlRR/"
+  },
+  {
+    "id": "ocd-person/f2bc8c9d-050a-4531-84eb-1f233ad7042a",
+    "name": "Avery Frix",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ok/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Avery",
+    "family_name": "Frix",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Frix,%20Avery.jpg",
+    "email": "avery.frix@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1994-03-29",
+    "death_date": "",
+    "extras": {
+      "email": "avery.frix@okhouse.gov",
+      "_scraped_name": "Frix, Avery"
+    },
+    "created_at": "2018-10-18T14:57:43.308346+00:00",
+    "updated_at": "2025-03-05T08:33:46.098567+00:00",
+    "openstates_url": "https://openstates.org/person/avery-frix-7O2JF8Fbr6N2g5HyphKo94/"
+  },
+  {
+    "id": "ocd-person/446468ba-e7a8-49ff-8edc-e9f96da9d613",
+    "name": "Bill Coleman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ok/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Coleman",
+    "image": "https://oksenate.gov/sites/default/files/Coleman%2C%20Bill%20Flags%202022.jpg",
+    "email": "bill.coleman@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T05:09:17.941939+00:00",
+    "updated_at": "2026-04-09T07:54:12.813009+00:00",
+    "openstates_url": "https://openstates.org/person/bill-coleman-253MeIgPGVDbdZzY9Q2gfD/"
+  },
+  {
+    "id": "ocd-person/55b572a7-2951-4597-b70c-e37b51163b03",
+    "name": "Brenda Stanley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:ok/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Brenda",
+    "family_name": "Stanley",
+    "image": "https://oksenate.gov/sites/default/files/Brenda-Stanley_1.jpg",
+    "email": "brenda.stanley@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "1952-02-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T05:09:25.770913+00:00",
+    "updated_at": "2025-02-04T04:24:31.283097+00:00",
+    "openstates_url": "https://openstates.org/person/brenda-stanley-2bjGiiqYNaiy9YRD919cKh/"
+  },
+  {
+    "id": "ocd-person/bc85e399-f4bc-4690-b34b-685e15242904",
+    "name": "Brent Howard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ok/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Brent",
+    "family_name": "Howard",
+    "image": "https://oksenate.gov/sites/default/files/Howard%2C%20Brent_flags.jpg",
+    "email": "brent.howard@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T05:09:22.435813+00:00",
+    "updated_at": "2026-04-09T07:53:56.398175+00:00",
+    "openstates_url": "https://openstates.org/person/brent-howard-5jjkBa68oQcYU2c1kawfMS/"
+  },
+  {
+    "id": "ocd-person/19a4841c-4571-4803-8f5d-262f664fb31a",
+    "name": "Brian Guthrie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ok/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Guthrie",
+    "image": "https://bloximages.newyork1.vip.townnews.com/citynewsokc.com/content/tncms/assets/v3/editorial/5/d2/5d26a700-4e64-11ee-be35-db82e824c57c/64fb4b329045b.image.jpg?resize=500%2C500",
+    "email": "brian.guthrie@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:17.558199+00:00",
+    "updated_at": "2025-03-05T08:34:35.795390+00:00",
+    "openstates_url": "https://openstates.org/person/brian-guthrie-mNzW6Q4pCvETfiFTPi5yk/"
+  },
+  {
+    "id": "ocd-person/a3c36ebe-151f-4632-ab04-31963f55f9d8",
+    "name": "Bryan Logan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ok/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Bryan",
+    "family_name": "Logan",
+    "image": "https://nondoc.com/wp-content/uploads/2025/05/Bryan-Logan-mug-cropped-640x373.jpg",
+    "email": "bryan.logan@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-05-23T13:50:12.278597+00:00",
+    "updated_at": "2026-04-09T07:53:39.997090+00:00",
+    "openstates_url": "https://openstates.org/person/bryan-logan-4z13rFnvRQ3EWNEGAVq8Ay/"
+  },
+  {
+    "id": "ocd-person/6ecf8a12-033a-41da-9b5f-3fbcf41f4841",
+    "name": "Carri Hicks",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ok/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Carri",
+    "family_name": "Hicks",
+    "image": "https://oksenate.gov/sites/default/files/Hicks%2C%20Carri%20Flags%202022.jpg",
+    "email": "carri.hicks@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T05:09:18.560165+00:00",
+    "updated_at": "2025-02-04T04:23:03.396920+00:00",
+    "openstates_url": "https://openstates.org/person/carri-hicks-3N606ZjE06tFE0WDkFg2TJ/"
+  },
+  {
+    "id": "ocd-person/8c8517c3-75ee-4b27-8d8c-3444c036ba78",
+    "name": "Casey Murdock",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ok/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Casey",
+    "family_name": "Murdock",
+    "image": "https://oksenate.gov/sites/default/files/murdock.jpg",
+    "email": "murdock@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "murdock@oksenate.gov"
+    },
+    "created_at": "2018-10-18T14:57:31.245011+00:00",
+    "updated_at": "2026-04-09T07:54:16.803492+00:00",
+    "openstates_url": "https://openstates.org/person/casey-murdock-4H9kSZmqeAakvOgD28TvWy/"
+  },
+  {
+    "id": "ocd-person/b8b4337f-5741-4fad-bcf3-38c526cf6c5a",
+    "name": "Christi Gillespie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ok/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Christi",
+    "family_name": "Gillespie",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgg9y84-E8FaeDWzhd1s97N3Ko90lCow4sAQ&s",
+    "email": "christi.gillespie@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:57:02.147960+00:00",
+    "updated_at": "2026-04-09T07:53:34.124037+00:00",
+    "openstates_url": "https://openstates.org/person/christi-gillespie-5cWwIcAmaOr2nWkGbKcQdG/"
+  },
+  {
+    "id": "ocd-person/95f06268-cdfb-463b-aa2e-fb789fbc97c4",
+    "name": "Chuck Hall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ok/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Chuck",
+    "family_name": "Hall",
+    "image": "https://oksenate.gov/sites/default/files/hall.jpg",
+    "email": "chuck.hall@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T05:09:14.350105+00:00",
+    "updated_at": "2025-02-04T04:25:05.531796+00:00",
+    "openstates_url": "https://openstates.org/person/chuck-hall-4YviBdMhCm1Pn7EQPSrpdE/"
+  },
+  {
+    "id": "ocd-person/74fd77d2-ffa9-42cd-9849-0b64464bcc6f",
+    "name": "Dana Prieto",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ok/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Dana",
+    "family_name": "Prieto",
+    "image": "https://oksenate.gov/sites/default/files/Prieto%2C%20Dana%20Flags%202022.jpg",
+    "email": "dana.prieto@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:51.705878+00:00",
+    "updated_at": "2026-04-09T07:54:21.688303+00:00",
+    "openstates_url": "https://openstates.org/person/dana-prieto-3YkwbBtAwL2yjo3roEQe11/"
+  },
+  {
+    "id": "ocd-person/7143be5e-df9e-40ad-8591-dd4c9ea51261",
+    "name": "Darcy Jech",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ok/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Darcy",
+    "family_name": "Jech",
+    "image": "https://oksenate.gov/sites/default/files/1200px-DarcyJech_0.jpg",
+    "email": "darcy.jech@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1957-09-30",
+    "death_date": "",
+    "extras": {
+      "email": " jech@oksenate.gov"
+    },
+    "created_at": "2018-10-18T14:57:45.011595+00:00",
+    "updated_at": "2025-02-04T04:24:01.902662+00:00",
+    "openstates_url": "https://openstates.org/person/darcy-jech-3Rj5hAvfx5j5mHK8rYF3Hl/"
+  },
+  {
+    "id": "ocd-person/bea1fd3e-9a8e-4cd6-bdb8-abedd9f8a888",
+    "name": "Darrell Weaver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ok/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Darrell",
+    "family_name": "Weaver",
+    "image": "https://oksenate.gov/sites/default/files/Weaver%2C%20Darrell_flags.jpg",
+    "email": "darrell.weaver@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1962-03-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T05:09:23.064760+00:00",
+    "updated_at": "2025-02-04T04:24:33.527027+00:00",
+    "openstates_url": "https://openstates.org/person/darrell-weaver-5niZQWIoMnUkHPjynvQ61I/"
+  },
+  {
+    "id": "ocd-person/3714523f-ea6d-4bd5-a801-1397dd508208",
+    "name": "Dave Rader",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ok/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Rader",
+    "image": "https://oksenate.gov/sites/default/files/Rader%2C%20Dave%20Flags%202022.jpg",
+    "email": "rader@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1957-03-09",
+    "death_date": "",
+    "extras": {
+      "email": "rader@oksenate.gov"
+    },
+    "created_at": "2018-10-18T14:57:29.440190+00:00",
+    "updated_at": "2026-04-09T07:53:49.916998+00:00",
+    "openstates_url": "https://openstates.org/person/dave-rader-1fvrcRHlM1UmFs8DmwR1vk/"
+  },
+  {
+    "id": "ocd-person/f7e51701-fb8a-4d48-8f61-951096c0c76d",
+    "name": "David Bullard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ok/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Bullard",
+    "image": "https://oksenate.gov/sites/default/files/Bullard_David.jpg",
+    "email": "david.bullard@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1978-08-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T05:09:15.021321+00:00",
+    "updated_at": "2026-04-09T07:54:33.178550+00:00",
+    "openstates_url": "https://openstates.org/person/david-bullard-7XlnXrEKqZHmddNx9UNmcn/"
+  },
+  {
+    "id": "ocd-person/56666b37-2788-433a-9c32-19af826613e4",
+    "name": "Dusty Deevers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ok/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Dusty",
+    "family_name": "Deevers",
+    "image": "https://oksenate.gov/sites/default/files/Deevers%2C%20Dusty%202023%20Flags%20S_0.jpg",
+    "email": "dusty.deevers@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-04T20:48:52.031238+00:00",
+    "updated_at": "2026-04-09T07:54:27.503760+00:00",
+    "openstates_url": "https://openstates.org/person/dusty-deevers-2d291rzkV8gUGwlrK5N1CW/"
+  },
+  {
+    "id": "ocd-person/a0948c13-b3a0-4040-b0db-9f8f8c67eeac",
+    "name": "George Burns",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ok/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "George",
+    "family_name": "Burns",
+    "image": "https://oksenate.gov/sites/default/files/Burns%2C%20George_flags_1.jpg",
+    "email": "george.burns@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:04.665837+00:00",
+    "updated_at": "2026-04-09T07:53:28.211081+00:00",
+    "openstates_url": "https://openstates.org/person/george-burns-4t0epWvHLJnPeuSacPFrhM/"
+  },
+  {
+    "id": "ocd-person/9f0cacea-112a-425a-b212-4fa3cfd3b3a0",
+    "name": "Grant Green",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ok/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Grant",
+    "family_name": "Green",
+    "image": "https://oksenate.gov/sites/default/files/Green%2C%20Grant%20Flags%202022.jpg",
+    "email": "grant.green@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:38.638022+00:00",
+    "updated_at": "2026-04-09T07:54:12.201086+00:00",
+    "openstates_url": "https://openstates.org/person/grant-green-4q7ZVP95YuDzphc1EdIOSO/"
+  },
+  {
+    "id": "ocd-person/8e22d71d-fd9a-4d9d-aa7c-09af3da43118",
+    "name": "Jack Stewart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ok/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Stewart",
+    "image": "https://oksenate.gov/sites/default/files/Stewart%2C%20Jack%20Flags%202022.jpg",
+    "email": "jack.stewart@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:39.551303+00:00",
+    "updated_at": "2026-04-09T07:54:05.526066+00:00",
+    "openstates_url": "https://openstates.org/person/jack-stewart-4KCpc6i0cBGXKKQt1zT1lg/"
+  },
+  {
+    "id": "ocd-person/edf90069-7569-4cd7-9a8e-e3890e395ac7",
+    "name": "Jerry Alvord",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ok/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jerry",
+    "family_name": "Alvord",
+    "image": "https://oksenate.gov/sites/default/files/Alvord%2C%20Jerry%20Flags%202022.jpg",
+    "email": "jerry.alvord@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:36.616773+00:00",
+    "updated_at": "2026-04-09T07:53:32.026144+00:00",
+    "openstates_url": "https://openstates.org/person/jerry-alvord-7F2yU0hwP2Bzg1smZ8nMr1/"
+  },
+  {
+    "id": "ocd-person/164b3ba9-47d4-4c24-870d-4e6679e15cf8",
+    "name": "Jo Anna Dossett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ok/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jo Anna",
+    "family_name": "Dossett",
+    "image": "https://oksenate.gov/sites/default/files/Dossett%2C%20Jo%20Anna_flags.jpg",
+    "email": "joanna.dossett@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:03.711953+00:00",
+    "updated_at": "2026-04-25T01:58:13.300781+00:00",
+    "openstates_url": "https://openstates.org/person/jo-anna-dossett-g4DBysQ4EVoxFF9gJ6gJs/"
+  },
+  {
+    "id": "ocd-person/08dca8d5-4264-4509-aebd-bbf7736b9e90",
+    "name": "John Haste",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ok/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Haste",
+    "image": "https://oksenate.gov/sites/default/files/Haste%2C%20John%202022%20Flags.jpg",
+    "email": "john.haste@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T05:09:19.747989+00:00",
+    "updated_at": "2026-04-09T07:54:24.466840+00:00",
+    "openstates_url": "https://openstates.org/person/john-haste-GimNRDX2TkkN6kSrzutLk/"
+  },
+  {
+    "id": "ocd-person/077e2743-495e-4198-a096-5675796d78a4",
+    "name": "Jonathan Wingard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ok/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jonathan",
+    "family_name": "Wingard",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JonathanWingard2024.png",
+    "email": "jonathan.wingard@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1982-03-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:25.716226+00:00",
+    "updated_at": "2026-04-09T07:53:46.440466+00:00",
+    "openstates_url": "https://openstates.org/person/jonathan-wingard-E8b6mvCzx5EG85bwTOLqe/"
+  },
+  {
+    "id": "ocd-person/986cbe76-2b10-4fc8-92b0-39432b761e1a",
+    "name": "Julia Kirt",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ok/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Julia",
+    "family_name": "Kirt",
+    "image": "https://oksenate.gov/sites/default/files/Kirt%2C%20Julia%202023%20Flags%20S.jpg",
+    "email": "julia.kirt@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "1973-10-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T05:09:21.730690+00:00",
+    "updated_at": "2026-04-09T07:54:22.318318+00:00",
+    "openstates_url": "https://openstates.org/person/julia-kirt-4dcWqinVSC6PEyETtcC6J8/"
+  },
+  {
+    "id": "ocd-person/14ac3593-aa7a-491e-aba0-93474e93673d",
+    "name": "Julie Daniels",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ok/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Daniels",
+    "image": "https://oksenate.gov/sites/default/files/Daniels%2C%20Julie%202022.jpg",
+    "email": "julie.daniels@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "1954-02-12",
+    "death_date": "",
+    "extras": {
+      "email": "daniels@oksenate.gov"
+    },
+    "created_at": "2018-10-18T14:57:36.043796+00:00",
+    "updated_at": "2025-02-04T04:25:35.742788+00:00",
+    "openstates_url": "https://openstates.org/person/julie-daniels-d0XsN3jpNaHOE7Ny6G2px/"
+  },
+  {
+    "id": "ocd-person/3219df30-79cf-43c5-814d-b1f4b02d53bb",
+    "name": "Julie McIntosh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ok/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "McIntosh",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JulieMcIntosh2024.jpeg",
+    "email": "julie.mcintosh@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:34.498365+00:00",
+    "updated_at": "2026-04-09T07:54:10.811725+00:00",
+    "openstates_url": "https://openstates.org/person/julie-mcintosh-1WXRGd699qp2ctpVnwiS7v/"
+  },
+  {
+    "id": "ocd-person/595024d3-b5fd-45e4-a980-4774f531d051",
+    "name": "Kelly Hines",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:ok/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Kelly",
+    "family_name": "Hines",
+    "image": "https://images.squarespace-cdn.com/content/v1/642c607b85563b44f0aa5800/5c9a6226-10da-4b2b-848d-746244b9e4ad/headshot+%28002%29.jpg",
+    "email": "kelly.hines@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:57:13.704229+00:00",
+    "updated_at": "2025-02-04T04:23:47.925926+00:00",
+    "openstates_url": "https://openstates.org/person/kelly-hines-2iWwSgSjP5nOGdWtyVqh4T/"
+  },
+  {
+    "id": "ocd-person/8a183515-ff32-4660-8e9c-1317f274a603",
+    "name": "Kendal Sacchieri",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:ok/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Kendal",
+    "family_name": "Sacchieri",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KendalSacchieri2024.jpg",
+    "email": "kendal.sacchieri@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:25.513757+00:00",
+    "updated_at": "2026-04-09T07:54:01.848573+00:00",
+    "openstates_url": "https://openstates.org/person/kendal-sacchieri-4Ca0F4f7OOdM9LaWmIsLPn/"
+  },
+  {
+    "id": "ocd-person/c768c730-142e-4582-a137-ee09a0240784",
+    "name": "Kristen Thompson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ok/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Kristen",
+    "family_name": "Thompson",
+    "image": "https://oksenate.gov/sites/default/files/Thompson%2C%20Kristen%20Flags%202022.jpg",
+    "email": "kristen.thompson@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:48.695020+00:00",
+    "updated_at": "2025-04-25T02:06:11.320385+00:00",
+    "openstates_url": "https://openstates.org/person/kristen-thompson-64HM7Tz10Bxoszb0EkVmCq/"
+  },
+  {
+    "id": "ocd-person/6bf75215-5df0-4dfc-adfb-98c60a6871bd",
+    "name": "Lisa Standridge",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ok/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Standridge",
+    "image": "https://www.cairoklahoma.com/wp-content/uploads/2024/08/lisa-474x474.jpeg",
+    "email": "lisa.standridge@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:38.167490+00:00",
+    "updated_at": "2026-04-09T07:54:34.729289+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-standridge-3HjChNyz2jAiZXCmMJbKXd/"
+  },
+  {
+    "id": "ocd-person/fe64cfd8-d85e-472e-8761-27b6a3774971",
+    "name": "Lonnie Paxton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ok/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Lonnie",
+    "family_name": "Paxton",
+    "image": "https://oksenate.gov/sites/default/files/paxton.jpg",
+    "email": "paxton@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1968-08-08",
+    "death_date": "",
+    "extras": {
+      "email": "paxton@oksenate.gov"
+    },
+    "created_at": "2018-10-18T14:57:28.850886+00:00",
+    "updated_at": "2026-04-09T07:54:15.775194+00:00",
+    "openstates_url": "https://openstates.org/person/lonnie-paxton-7k27Zp7nlaZn8ZTYDqroyf/"
+  },
+  {
+    "id": "ocd-person/7bf07db8-9661-4f98-859d-9817cb4362dd",
+    "name": "Mark Mann",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:ok/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Mann",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Mark_Mann.png",
+    "email": "mark.mann@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1971-12-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:57:05.029486+00:00",
+    "updated_at": "2026-04-09T07:53:38.990250+00:00",
+    "openstates_url": "https://openstates.org/person/mark-mann-3lrxZvFvb9dK7hU9w1ax49/"
+  },
+  {
+    "id": "ocd-person/0172970c-3434-470b-98c8-6f7f0b167afb",
+    "name": "Mary Boren",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ok/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Boren",
+    "image": "https://oksenate.gov/sites/default/files/Boren%2C%20Mary%20Flags%202022.jpg",
+    "email": "mary.boren@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T05:09:14.882182+00:00",
+    "updated_at": "2026-04-09T07:54:14.231795+00:00",
+    "openstates_url": "https://openstates.org/person/mary-boren-2jMKHyTg51T3HPauhNzlj/"
+  },
+  {
+    "id": "ocd-person/faabecda-dfa0-4995-b574-2b0a33b039ef",
+    "name": "Michael Brooks",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:ok/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Brooks",
+    "image": "https://oksenate.gov/sites/default/files/Brooks%2C%20Michael%20Flags%202022.jpg",
+    "email": "michael.brooks@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:45.179925+00:00",
+    "updated_at": "2025-02-04T04:23:35.155029+00:00",
+    "openstates_url": "https://openstates.org/person/michael-brooks-7d0ePTfFFbL9SQQJQiQsJD/"
+  },
+  {
+    "id": "ocd-person/49a41053-6a43-44a8-92b9-9fd5e97a56fe",
+    "name": "Micheal Bergstrom",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ok/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Micheal",
+    "family_name": "Bergstrom",
+    "image": "https://oksenate.gov/sites/default/files/Bergstrom%2C%20Micheal%202022%20flags.jpg",
+    "email": "bergstrom@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1958-05-05",
+    "death_date": "",
+    "extras": {
+      "email": "bergstrom@oksenate.gov"
+    },
+    "created_at": "2018-10-18T14:57:49.324293+00:00",
+    "updated_at": "2026-04-09T07:54:09.853412+00:00",
+    "openstates_url": "https://openstates.org/person/micheal-bergstrom-2ExPro6SiF1BBXLOQpcs3i/"
+  },
+  {
+    "id": "ocd-person/365647a0-0840-4a40-aac8-697ab21dbcd5",
+    "name": "Nikki Nice",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:ok/sldu:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Nikki",
+    "family_name": "Nice",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/008O6811.jpg",
+    "email": "nikki.nice@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:15.714897+00:00",
+    "updated_at": "2025-02-04T04:25:10.581458+00:00",
+    "openstates_url": "https://openstates.org/person/nikki-nice-1eX0y4x7k2ZfaSz4T3MLLB/"
+  },
+  {
+    "id": "ocd-person/0388a9a8-8de3-4620-8c44-e887e0f1cecd",
+    "name": "Paul Rosino",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:ok/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Rosino",
+    "image": "https://oksenate.gov/sites/default/files/Rosino%2C%20Paul%20Flags%202022.jpg",
+    "email": "rosino@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1962-10-02",
+    "death_date": "",
+    "extras": {
+      "email": "rosino@oksenate.gov"
+    },
+    "created_at": "2018-10-18T14:57:33.925514+00:00",
+    "updated_at": "2026-04-09T07:53:27.501856+00:00",
+    "openstates_url": "https://openstates.org/person/paul-rosino-6fQmh0dU3pA4ggTYlKRjh/"
+  },
+  {
+    "id": "ocd-person/812abf8c-ed2d-4b91-8d69-0917a39adeed",
+    "name": "Randy Grellner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ok/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Grellner",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RandyGrellner2024.jpg",
+    "email": "randy.grellner@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:57.710209+00:00",
+    "updated_at": "2026-04-09T07:53:40.571075+00:00",
+    "openstates_url": "https://openstates.org/person/randy-grellner-3vjXrWo5OVPYbdEmjkq8bt/"
+  },
+  {
+    "id": "ocd-person/2d438999-104f-4405-8cdc-d53ba4715a19",
+    "name": "Regina Goodwin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ok/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Regina",
+    "family_name": "Goodwin",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Goodwin,%20Regina.jpg",
+    "email": "regina.goodwin@oksenate.gov",
+    "gender": "Female",
+    "birth_date": "1962-09-22",
+    "death_date": "",
+    "extras": {
+      "email": "Regina.Goodwin@okhouse.gov",
+      "_scraped_name": "Goodwin, Regina"
+    },
+    "created_at": "2018-10-18T14:57:46.656744+00:00",
+    "updated_at": "2025-02-04T04:23:30.137771+00:00",
+    "openstates_url": "https://openstates.org/person/regina-goodwin-1NPWChlbJGOzRUULa4FCkz/"
+  },
+  {
+    "id": "ocd-person/c0db5455-8d12-4525-ab57-afa8ed7e1d7f",
+    "name": "Roland Pederson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ok/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Roland",
+    "family_name": "Pederson",
+    "image": "https://oksenate.gov/sites/default/files/Pederson%2C%20Roland%202022%20flags.jpg",
+    "email": "roland.pederson@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "pederson@oksenate.gov"
+    },
+    "created_at": "2018-10-18T14:57:49.177442+00:00",
+    "updated_at": "2025-04-24T01:57:59.630263+00:00",
+    "openstates_url": "https://openstates.org/person/roland-pederson-5rul9mxtO5eTdQLM7LdyM3/"
+  },
+  {
+    "id": "ocd-person/97650810-9219-451e-97d1-e3d3318c5d53",
+    "name": "Shane Jett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ok/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Jett",
+    "image": "https://oksenate.gov/sites/default/files/Jett%2C%20Shane_flags.jpg",
+    "email": "shane.jett@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "1974-12-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:14:58.785737+00:00",
+    "updated_at": "2025-02-04T04:24:51.551121+00:00",
+    "openstates_url": "https://openstates.org/person/shane-jett-4bg0nad5F3s98DtKewsoL5/"
+  },
+  {
+    "id": "ocd-person/4d4f5043-830c-498d-806c-5b1e9eb183df",
+    "name": "Spencer Kern",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ok/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Spencer",
+    "family_name": "Kern",
+    "image": "https://static.votesmart.org/static/canphoto/216441.jpg",
+    "email": "spencer.kern@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:39.632497+00:00",
+    "updated_at": "2025-02-04T04:25:39.551892+00:00",
+    "openstates_url": "https://openstates.org/person/spencer-kern-2LsedyudP6Jqfe3zSkzBxn/"
+  },
+  {
+    "id": "ocd-person/54d37a3d-68cb-4e87-9916-c38f2f0f8ed3",
+    "name": "Todd Gollihare",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ok/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Gollihare",
+    "image": "https://oksenate.gov/sites/default/files/Gollihare%2C%20Todd%20Flags%202022.jpg",
+    "email": "todd.gollihare@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:44.766997+00:00",
+    "updated_at": "2026-04-09T07:53:47.997948+00:00",
+    "openstates_url": "https://openstates.org/person/todd-gollihare-2a403fQpr4MSEqyUvoYlRT/"
+  },
+  {
+    "id": "ocd-person/9b993707-70c1-4e3f-96ee-4257c0cf04e6",
+    "name": "Tom Woods",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ok/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Woods",
+    "image": "https://oksenate.gov/sites/default/files/Woods%2C%20Tom%20Flags%202022.jpg",
+    "email": "tom.woods@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:37.141938+00:00",
+    "updated_at": "2026-04-09T07:54:22.895681+00:00",
+    "openstates_url": "https://openstates.org/person/tom-woods-4jbpSxR2NNN3mbJB74llfK/"
+  },
+  {
+    "id": "ocd-person/48d6aa7c-97e1-4c69-8014-8818ae9ad055",
+    "name": "Warren Hamilton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ok/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Warren",
+    "family_name": "Hamilton",
+    "image": "https://oksenate.gov/sites/default/files/Hamilton%2C%20Warren%202022%20flags.jpg",
+    "email": "warren.hamilton@oksenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:01.497868+00:00",
+    "updated_at": "2025-02-04T04:24:43.704214+00:00",
+    "openstates_url": "https://openstates.org/person/warren-hamilton-2DRY6p9fR7LKqFrCFH8RYz/"
+  }
+]

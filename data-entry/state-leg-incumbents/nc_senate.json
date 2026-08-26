@@ -1,0 +1,1526 @@
+[
+  {
+    "id": "ocd-person/8be9deca-bbd6-404f-8726-0aecaeb19ca7",
+    "name": "Amy Galey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:nc/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Amy",
+    "family_name": "Galey",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/429/Low",
+    "email": "amy.galey@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "2 (0 in House)",
+      "represented counties": "Alamance, Randolph",
+      "legislative assistant": "Samuel Ward",
+      "legislative assistant email": "Samuel.Ward@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:59.588854+00:00",
+    "updated_at": "2026-06-04T07:28:48.441917+00:00",
+    "openstates_url": "https://openstates.org/person/amy-galey-4G0oN7wAbZ7jEsr93dEzkl/"
+  },
+  {
+    "id": "ocd-person/0c960acb-381f-4ce9-b9d3-313fd882b6e1",
+    "name": "Benton Sawrey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:nc/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Benton",
+    "family_name": "Sawrey",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/445/Low",
+    "email": "benton.sawrey@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "1 (0 in House)",
+      "represented counties": "Johnston",
+      "legislative assistant": "David Foxx",
+      "legislative assistant email": "David.Foxx@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:54.106126+00:00",
+    "updated_at": "2026-06-04T07:28:28.458651+00:00",
+    "openstates_url": "https://openstates.org/person/benton-sawrey-NkTb40d7qXgcOc0Oa9j0r/"
+  },
+  {
+    "id": "ocd-person/ac7e8e60-b5cb-41c2-92f9-1bdf9204f79a",
+    "name": "Bill Rabon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:nc/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Rabon",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/303/Low",
+    "email": "bill.rabon@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1951-07-06",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "7 (0 in House)",
+      "represented counties": "Brunswick, Columbus, New Hanover",
+      "legislative assistant": "Paula Fields",
+      "legislative assistant email": "Paula.Fields@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:28.914787+00:00",
+    "updated_at": "2025-04-24T07:33:32.193411+00:00",
+    "openstates_url": "https://openstates.org/person/bill-rabon-5FUW1h4qP3U3K9BWFyBlWM/"
+  },
+  {
+    "id": "ocd-person/0104c116-78b6-4a91-af98-464fdbf12904",
+    "name": "Bob Brinson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:nc/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Brinson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bob_Brinson.jpg",
+    "email": "bob.brinson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-10-09T22:57:52.089458+00:00",
+    "updated_at": "2025-04-24T07:34:55.959841+00:00",
+    "openstates_url": "https://openstates.org/person/bob-brinson-1vAEM3b9YitDAiEtQ1IV2/"
+  },
+  {
+    "id": "ocd-person/8911db0d-01aa-4e61-a0f5-727d07a5d232",
+    "name": "Bobby Hanig",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:nc/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bobby",
+    "family_name": "Hanig",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/435/Low",
+    "email": "bobby.hanig@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "1+ (2 in House)",
+      "represented counties": "Bertie, Camden, Currituck, Gates, Halifax, Hertford, Martin, Northampton, Tyrrell, Warren",
+      "legislative assistant": "Edward Stiles",
+      "legislative assistant email": "Edward.Stiles@ncleg.gov"
+    },
+    "created_at": "2023-05-23T01:45:38.052529+00:00",
+    "updated_at": "2025-04-24T07:33:34.688797+00:00",
+    "openstates_url": "https://openstates.org/person/bobby-hanig-4Ae6kSMQ0Kh91M62QcUD5O/"
+  },
+  {
+    "id": "ocd-person/dfacde1f-3324-4ebe-bc96-ae473548e951",
+    "name": "Brad Overcash",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:nc/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Overcash",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/444/Low",
+    "email": "brad.overcash@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "1 (0 in House)",
+      "represented counties": "Gaston",
+      "legislative assistant": "James Von Canon",
+      "legislative assistant email": "James.VonCanon@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:41.883495+00:00",
+    "updated_at": "2026-06-04T07:28:08.787947+00:00",
+    "openstates_url": "https://openstates.org/person/brad-overcash-6o4HxSLT86q2Pi2pXpLG7t/"
+  },
+  {
+    "id": "ocd-person/23f1da0b-34b2-4347-adb4-f5fc26e0475d",
+    "name": "Brent Jackson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:nc/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brent",
+    "family_name": "Jackson",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/281/Low",
+    "email": "brent.jackson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1957-11-08",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "7 (0 in House)",
+      "represented counties": "Bladen, Duplin, Jones, Pender, Sampson",
+      "legislative assistant": "Harrison Johnson",
+      "legislative assistant email": "Harrison.Johnson@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:13.040107+00:00",
+    "updated_at": "2025-04-24T07:34:01.028638+00:00",
+    "openstates_url": "https://openstates.org/person/brent-jackson-15pFzjaRmLplMUbXBi6NCf/"
+  },
+  {
+    "id": "ocd-person/b560f232-dfa2-49f7-81c8-42000cc9027b",
+    "name": "Buck Newton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:nc/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Buck",
+    "family_name": "Newton",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/443/Low",
+    "email": "buck.newton@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1968-07-05",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "4 (0 in House)",
+      "represented counties": "Greene, Wayne, Wilson"
+    },
+    "created_at": "2019-11-17T12:10:20.062419+00:00",
+    "updated_at": "2025-04-24T07:34:46.352133+00:00",
+    "openstates_url": "https://openstates.org/person/buck-newton-5WFulq272QKMebjE5IKlSN/"
+  },
+  {
+    "id": "ocd-person/a2013778-1144-4936-a0fa-895ad190649f",
+    "name": "Caleb Theodros",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:nc/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Caleb",
+    "family_name": "Theodros",
+    "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcST0VSf38rEGBD-siclt6NuNe1QJ5F0bSq2yeTZaPl6B5jN6UixO_XTlOxWxObcJM0wmNgic4MjyZBFddFBYaj7sg",
+    "email": "caleb.theodros@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:18.951681+00:00",
+    "updated_at": "2025-04-24T07:33:50.516809+00:00",
+    "openstates_url": "https://openstates.org/person/caleb-theodros-4vhJP9IDIvbl7zkEEVpUjf/"
+  },
+  {
+    "id": "ocd-person/91615553-5509-4625-ab20-7a81896438e0",
+    "name": "Carl Ford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:nc/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Carl",
+    "family_name": "Ford",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/410/Low",
+    "email": "carl.ford@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1957-07-11",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "3 (3 in House)",
+      "represented counties": "Rowan, Stanly",
+      "legislative assistant": "Angela Ford",
+      "legislative assistant email": "Angela.Ford@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:34.366123+00:00",
+    "updated_at": "2025-04-24T07:34:15.369194+00:00",
+    "openstates_url": "https://openstates.org/person/carl-ford-4QKMrstYJDRHjavBsAEkxk/"
+  },
+  {
+    "id": "ocd-person/9dfc9308-ec16-4da8-b5c7-8a9cc55df534",
+    "name": "Chris Measmer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:nc/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Measmer",
+    "image": "",
+    "email": "chris.measmer@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-04-24T07:34:20.956843+00:00",
+    "updated_at": "2026-01-29T07:20:30.971176+00:00",
+    "openstates_url": "https://openstates.org/person/chris-measmer-4o7Dlu6uD3zVYjR6WAOMOi/"
+  },
+  {
+    "id": "ocd-person/06dca4de-5217-45fc-b78a-fc7870ae7faf",
+    "name": "Dan Blue",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:nc/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Blue",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/268/Low",
+    "email": "dan.blue@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1949-04-18",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "7+ (13+ in House)",
+      "represented counties": "Wake",
+      "legislative assistant": "Bonnie McNeil",
+      "legislative assistant email": "Bonnie.McNeil@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:26.583941+00:00",
+    "updated_at": "2025-04-24T07:33:34.133173+00:00",
+    "openstates_url": "https://openstates.org/person/dan-blue-CwmtDqgUkaVGYWs5CYoox/"
+  },
+  {
+    "id": "ocd-person/93fbb331-6fe5-427f-802d-09881d4913d3",
+    "name": "Dana Jones",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:nc/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Dana",
+    "family_name": "Jones",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/162671.jpg",
+    "email": "dana.jones@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:14.072487+00:00",
+    "updated_at": "2025-04-24T07:34:16.066964+00:00",
+    "openstates_url": "https://openstates.org/person/dana-jones-4VEtkohtxBgzwSQhfYeE0R/"
+  },
+  {
+    "id": "ocd-person/91f238a6-29fd-4b65-bc48-1464da11786b",
+    "name": "Danny Britt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:nc/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Britt",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/399/Low",
+    "email": "danny.britt@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1979-07-06",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "4 (0 in House)",
+      "represented counties": "Hoke, Robeson, Scotland",
+      "legislative assistant": "Lane Hickman",
+      "legislative assistant email": "Lane.Hickman@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:28.747794+00:00",
+    "updated_at": "2025-04-24T07:34:23.183826+00:00",
+    "openstates_url": "https://openstates.org/person/danny-britt-4ROa8TS75KJQFoiXUnRoGB/"
+  },
+  {
+    "id": "ocd-person/7074c9f6-6a8e-4c63-b0b3-ae43b9cfba0d",
+    "name": "Dave Craven",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:nc/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Craven",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/423/Low",
+    "email": "david.craven@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "2+ (0 in House)",
+      "represented counties": "Anson, Montgomery, Randolph, Richmond, Union",
+      "legislative assistant": "Suzanne Castleberry",
+      "legislative assistant email": "Suzanne.Castleberry@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:51.111735+00:00",
+    "updated_at": "2026-06-04T07:29:19.896406+00:00",
+    "openstates_url": "https://openstates.org/person/dave-craven-3QCVp9I1l09uvXcoyiEvr3/"
+  },
+  {
+    "id": "ocd-person/1c0d5d12-7bc0-4296-a148-423e4faa7dae",
+    "name": "DeAndrea Salvador",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:nc/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "DeAndrea",
+    "family_name": "Salvador",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/431/Low",
+    "email": "deandrea.salvador@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "2 (0 in House)",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Jarrett Patrick",
+      "legislative assistant email": "Jarrett.Patrick@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:55.101266+00:00",
+    "updated_at": "2026-04-25T01:25:50.226159+00:00",
+    "openstates_url": "https://openstates.org/person/deandrea-salvador-qvtK56drIceArMjxO02YA/"
+  },
+  {
+    "id": "ocd-person/b4b6f0a7-baca-4062-947a-989cb9f98356",
+    "name": "Eddie Settle",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:nc/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Eddie",
+    "family_name": "Settle",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/446/Low",
+    "email": "eddie.settle@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "1 (0 in House)",
+      "represented counties": "Alexander, Surry, Wilkes, Yadkin",
+      "legislative assistant": "Shelia Settle",
+      "legislative assistant email": "Shelia.Settle@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:39.824802+00:00",
+    "updated_at": "2026-06-04T07:28:32.373457+00:00",
+    "openstates_url": "https://openstates.org/person/eddie-settle-5V0Do3GGZ9YmFkHNQiLSmk/"
+  },
+  {
+    "id": "ocd-person/1ba9c7a6-3a28-47ec-9704-6f3437463845",
+    "name": "Gale Adcock",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:nc/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Gale",
+    "family_name": "Adcock",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/436/Low",
+    "email": "gale.adcock@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1954-01-25",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "1 (4 in House)",
+      "represented counties": "Wake",
+      "legislative assistant": "Elizabeth Sharpe",
+      "legislative assistant email": "Elizabeth.Sharpe@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:54.630895+00:00",
+    "updated_at": "2026-04-25T01:26:03.967663+00:00",
+    "openstates_url": "https://openstates.org/person/gale-adcock-qCNi8icLMxSyZTq4VYcuz/"
+  },
+  {
+    "id": "ocd-person/af3f63da-d39a-4542-b0f2-41f118d96f55",
+    "name": "Gladys Robinson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:nc/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Gladys",
+    "family_name": "Robinson",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/364/Low",
+    "email": "gladys.robinson@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1949-11-17",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "7 (0 in House)",
+      "represented counties": "Guilford",
+      "legislative assistant": "Phyllis Cameron",
+      "legislative assistant email": "Phyllis.Cameron@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:21.877845+00:00",
+    "updated_at": "2025-04-24T07:33:20.649091+00:00",
+    "openstates_url": "https://openstates.org/person/gladys-robinson-5KgcqUnfZ2quNRsWHQUER3/"
+  },
+  {
+    "id": "ocd-person/75860d99-3e31-4c38-b511-734f76477c9b",
+    "name": "Jay Chaudhuri",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:nc/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Chaudhuri",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/395/Low",
+    "email": "jay.chaudhuri@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1969-06-08",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "4+ (0 in House)",
+      "represented counties": "Wake",
+      "legislative assistant": "Peter DeBaugh",
+      "legislative assistant email": "Peter.DeBaugh@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:27.087668+00:00",
+    "updated_at": "2025-04-24T07:33:24.212705+00:00",
+    "openstates_url": "https://openstates.org/person/jay-chaudhuri-3ZlMbvFHdqCmUGXV4jY08h/"
+  },
+  {
+    "id": "ocd-person/9793e1e4-641c-4a5c-b1bc-7f6d0a65a655",
+    "name": "Jim Burgin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:nc/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Burgin",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/412/Low",
+    "email": "jim.burgin@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1956-05-20",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "3 (0 in House)",
+      "represented counties": "Harnett, Lee, Sampson",
+      "legislative assistant": "Christie Darling",
+      "legislative assistant email": "Christie.Darling@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:27.776245+00:00",
+    "updated_at": "2026-06-04T07:28:43.039872+00:00",
+    "openstates_url": "https://openstates.org/person/jim-burgin-4c1QH9NQlW1caTwVdggsLt/"
+  },
+  {
+    "id": "ocd-person/3622ded7-77d3-46f8-a62b-dad1c8f3e589",
+    "name": "Jonah Garson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:nc/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jonah",
+    "family_name": "Garson",
+    "image": "https://images.squarespace-cdn.com/content/v1/5ce70c57184229000120643d/1635110523522-15B7H44X3PRPJSL2DYJH/ParryLaw_PLLC_20211020_1501-2.jpg",
+    "email": "jonah.garson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-25T01:25:52.763168+00:00",
+    "updated_at": "2026-04-25T01:25:53.560427+00:00",
+    "openstates_url": "https://openstates.org/person/jonah-garson-1e9WKgCYpm4tperADDPu5B/"
+  },
+  {
+    "id": "ocd-person/3e8067e6-6232-4ebb-979c-d077ab968446",
+    "name": "Joyce Waddell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:nc/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Joyce",
+    "family_name": "Waddell",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/393/Low",
+    "email": "joyce.waddell@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1944-07-11",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "5 (0 in House)",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Anita Bennett",
+      "legislative assistant email": "Anita.Bennett@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:25.746876+00:00",
+    "updated_at": "2025-04-24T07:33:42.704436+00:00",
+    "openstates_url": "https://openstates.org/person/joyce-waddell-1twClXGLbn4CYTd6seAt8A/"
+  },
+  {
+    "id": "ocd-person/c8ac71ee-e3dc-450f-83f7-efeb363e88bc",
+    "name": "Julie Mayfield",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:nc/sldu:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Mayfield",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/432/Low",
+    "email": "julie.mayfield@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1967-04-05",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "2 (0 in House)",
+      "represented counties": "Buncombe",
+      "legislative assistant": "Irma Avent Hurst",
+      "legislative assistant email": "Irma.AventHurst@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:12:00.893757+00:00",
+    "updated_at": "2026-06-04T07:28:41.826749+00:00",
+    "openstates_url": "https://openstates.org/person/julie-mayfield-66fGvQzow5aPhCQZRqmFUS/"
+  },
+  {
+    "id": "ocd-person/5afbb4dc-a121-414a-b600-53af0936beb8",
+    "name": "Kandie Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:nc/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Kandie",
+    "family_name": "Smith",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/447/Low",
+    "email": "kandie.smith@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1969-10-20",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "1 (2 in House)",
+      "represented counties": "Edgecombe, Pitt",
+      "legislative assistant": "Edward W. Sheehy",
+      "legislative assistant email": "Edward.Sheehy@ncleg.gov"
+    },
+    "created_at": "2023-05-23T01:43:56.910932+00:00",
+    "updated_at": "2025-04-24T07:33:26.865261+00:00",
+    "openstates_url": "https://openstates.org/person/kandie-smith-2lgL3UDx3WsiVhuN7htvSq/"
+  },
+  {
+    "id": "ocd-person/410836ee-4f48-4934-8f95-fca6b2d2f051",
+    "name": "Kevin Corbin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:nc/sldu:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Corbin",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/433/Low",
+    "email": "kevin.corbin@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "2 (2 in House)",
+      "represented counties": "Cherokee, Clay, Graham, Haywood, Jackson, Macon, Swain, Transylvania",
+      "legislative assistant": "Cindy Hobbs",
+      "legislative assistant email": "Cindy.Hobbs@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:16.530245+00:00",
+    "updated_at": "2026-06-04T07:28:17.065695+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-corbin-1yiFpT3vYFLEAsrkuBkpLl/"
+  },
+  {
+    "id": "ocd-person/21577fbd-e06f-4bc3-8717-e050ff165a74",
+    "name": "Lisa Barnes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:nc/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Barnes",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/427/Low",
+    "email": "lisa.barnes@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1966-07-16",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "2 (1 in House)",
+      "represented counties": "Franklin, Nash, Vance",
+      "legislative assistant": "Suzanna Lee",
+      "legislative assistant email": "Suzanna.Lee@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:18.452602+00:00",
+    "updated_at": "2025-04-24T07:34:24.045694+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-barnes-10ujVGkAIf0ePzDEpKXsyy/"
+  },
+  {
+    "id": "ocd-person/a370c6f1-338d-49c3-a0b4-41e885dc0d80",
+    "name": "Lisa Grafstein",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:nc/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Grafstein",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/439/Low",
+    "email": "lisa.grafstein@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1966-09-07",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "1 (0 in House)",
+      "represented counties": "Wake",
+      "legislative assistant": "Sylvia Hammons",
+      "legislative assistant email": "Sylvia.Hammons@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:51.467197+00:00",
+    "updated_at": "2026-06-04T07:28:22.571463+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-grafstein-4yPHtK4NnnQGCPY6qJ8KLg/"
+  },
+  {
+    "id": "ocd-person/1afc84ab-30e5-413a-8975-2a552e050aee",
+    "name": "Mark Hollo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:nc/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Hollo",
+    "image": "http://www.ncga.state.nc.us/House/pictures/hiRes/619.jpg",
+    "email": "mark.hollo@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-17T12:10:22.479176+00:00",
+    "updated_at": "2025-04-24T07:33:53.745387+00:00",
+    "openstates_url": "https://openstates.org/person/mark-hollo-ovCVAsuTIXu8abZUyrV7e/"
+  },
+  {
+    "id": "ocd-person/f40a7222-92eb-4d8e-ad4d-7008b859aae7",
+    "name": "Michael Garrett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:nc/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Garrett",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/414/Low",
+    "email": "michael.garrett@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "3 (0 in House)",
+      "represented counties": "Guilford",
+      "legislative assistant": "Tim Moreland",
+      "legislative assistant email": "Tim.Moreland@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:29.157346+00:00",
+    "updated_at": "2026-06-04T07:29:09.456523+00:00",
+    "openstates_url": "https://openstates.org/person/michael-garrett-7QUttXtK99GtNh0koCG8oh/"
+  },
+  {
+    "id": "ocd-person/f0121b49-81cc-45f5-98e1-1fbeee882c81",
+    "name": "Michael Lazzara",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:nc/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Lazzara",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/426/Low",
+    "email": "michael.lazzara@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "2 (0 in House)",
+      "represented counties": "Onslow",
+      "legislative assistant": "David Buzzard",
+      "legislative assistant email": "David.Buzzard@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:55.275678+00:00",
+    "updated_at": "2026-06-04T07:28:21.468844+00:00",
+    "openstates_url": "https://openstates.org/person/michael-lazzara-7J0QrGU63QzRzS5erLpn4j/"
+  },
+  {
+    "id": "ocd-person/082079ab-53d2-43e5-be5f-cb7c6054edd3",
+    "name": "Michael Lee",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:nc/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Lee",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/387/Low",
+    "email": "michael.lee@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1968-11-29",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "4+ (0 in House)",
+      "represented counties": "New Hanover",
+      "legislative assistant": "Candace Bowden",
+      "legislative assistant email": "Candace.Bowden@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:26.062118+00:00",
+    "updated_at": "2025-04-24T07:33:56.595623+00:00",
+    "openstates_url": "https://openstates.org/person/michael-lee-FKmLlWALa1XLCDKANN0r5/"
+  },
+  {
+    "id": "ocd-person/c733e47e-af6a-4f31-a350-010043b5164b",
+    "name": "Mujtaba Mohammed",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:nc/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mujtaba",
+    "family_name": "Mohammed",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/417/Low",
+    "email": "mujtaba.mohammed@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1985-06-08",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "3 (0 in House)",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Sean Grier",
+      "legislative assistant email": "Sean.Grier@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:30.169021+00:00",
+    "updated_at": "2025-04-24T07:33:19.655104+00:00",
+    "openstates_url": "https://openstates.org/person/mujtaba-mohammed-63tBeoA9TL4Mp06Op83V3D/"
+  },
+  {
+    "id": "ocd-person/121cec2b-d03f-45bc-a835-1ae5f4eb18d3",
+    "name": "Natalie Murdock",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:nc/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Natalie",
+    "family_name": "Murdock",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/422/Low",
+    "email": "natalie.murdock@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1984-01-25",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "2+ (0 in House)",
+      "represented counties": "Chatham, Durham",
+      "legislative assistant": "Divine Earth-Dowd",
+      "legislative assistant email": "Divine.Earth-Dowd@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:58.689830+00:00",
+    "updated_at": "2026-06-04T07:29:20.560753+00:00",
+    "openstates_url": "https://openstates.org/person/natalie-murdock-YB4vh3bavAO2YAD6iHCnD/"
+  },
+  {
+    "id": "ocd-person/7493bee0-b1ed-4d45-b772-b7fce91be4ff",
+    "name": "Norman Sanderson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:nc/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Norman",
+    "family_name": "Sanderson",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/375/Low",
+    "email": "norman.sanderson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1951-07-07",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "6 (1 in House)",
+      "represented counties": "Carteret, Chowan, Dare, Hyde, Pamlico, Pasquotank, Perquimans, Washington",
+      "legislative assistant": "Diane Cook",
+      "legislative assistant email": "Diane.Cook@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:07.815061+00:00",
+    "updated_at": "2025-04-24T07:33:38.230093+00:00",
+    "openstates_url": "https://openstates.org/person/norman-sanderson-3Xyd3CdQBiqlk7mLjkJZdP/"
+  },
+  {
+    "id": "ocd-person/a73e339a-9724-45a5-9ebd-f1ca506374a0",
+    "name": "Paul Lowe",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:nc/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Lowe",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/394/Low",
+    "email": "paul.lowe@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1959-05-19",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "4+ (0 in House)",
+      "represented counties": "Forsyth"
+    },
+    "created_at": "2018-10-18T14:52:10.857623+00:00",
+    "updated_at": "2025-04-24T07:34:13.879077+00:00",
+    "openstates_url": "https://openstates.org/person/paul-lowe-55a8ydbjArBqmj1bomkrui/"
+  },
+  {
+    "id": "ocd-person/f276e61a-c569-4924-b302-caeda17a306a",
+    "name": "Phil Berger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:nc/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Berger",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/64/Low",
+    "email": "phil.berger@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1952-08-08",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "12 (0 in House)",
+      "represented counties": "Guilford, Rockingham",
+      "legislative assistant": "Abbigail Clark",
+      "legislative assistant email": "Abbigail.Clark@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:31.033685+00:00",
+    "updated_at": "2025-04-24T07:33:16.283050+00:00",
+    "openstates_url": "https://openstates.org/person/phil-berger-7NWTlKbr9B1Tpeo1ZvL9AI/"
+  },
+  {
+    "id": "ocd-person/25828c07-8295-45af-bd01-b044b59d530a",
+    "name": "Ralph Hise",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:nc/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ralph",
+    "family_name": "Hise",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/298/Low",
+    "email": "ralph.hise@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1976-08-15",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "7 (0 in House)",
+      "represented counties": "Alleghany, Ashe, Avery, Caldwell, Haywood, Madison, Mitchell, Watauga, Yancey",
+      "legislative assistant": "Susan Fanning",
+      "legislative assistant email": "Susan.Fanning@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:22.567962+00:00",
+    "updated_at": "2026-06-04T07:28:17.832147+00:00",
+    "openstates_url": "https://openstates.org/person/ralph-hise-18mNKGPF2M9WI19iVYZ0ME/"
+  },
+  {
+    "id": "ocd-person/c8c4c09a-5b3a-4521-82d4-2e2ded1b6b0a",
+    "name": "Sophia Chitlik",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:nc/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Sophia",
+    "family_name": "Chitlik",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SophiaChitlik2024.jpg",
+    "email": "sophia.chitlik@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:15.214679+00:00",
+    "updated_at": "2025-04-24T07:33:25.555416+00:00",
+    "openstates_url": "https://openstates.org/person/sophia-chitlik-66qNeOAxIaMdgdQCm3qIkE/"
+  },
+  {
+    "id": "ocd-person/d0af18d6-b4e1-4a9a-92f3-a6950961e953",
+    "name": "Steve Jarvis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:nc/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Jarvis",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/430/Low",
+    "email": "steve.jarvis@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1968-04-22",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "2 (1 in House)",
+      "represented counties": "Davidson, Davie",
+      "legislative assistant": "Tracey Dranttel",
+      "legislative assistant email": "Tracey.Dranttel@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:29.640174+00:00",
+    "updated_at": "2026-06-04T07:29:11.693147+00:00",
+    "openstates_url": "https://openstates.org/person/steve-jarvis-6LmQGESOAnEbKQiAJ9uvQp/"
+  },
+  {
+    "id": "ocd-person/f29f268e-5a29-4f49-8c5e-3fa19688f4a2",
+    "name": "Sydney Batch",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:nc/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Sydney",
+    "family_name": "Batch",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/434/Low",
+    "email": "sydney.batch@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "1+ (1 in House)",
+      "represented counties": "Wake",
+      "legislative assistant": "Michael Hardison",
+      "legislative assistant email": "Michael.Hardison@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:21.439773+00:00",
+    "updated_at": "2026-01-29T07:20:58.786903+00:00",
+    "openstates_url": "https://openstates.org/person/sydney-batch-7NosG7lPyyKSx1eKhrkBb0/"
+  },
+  {
+    "id": "ocd-person/fe39f817-2024-401d-a0a8-3818ca22bdb1",
+    "name": "Ted Alexander",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:nc/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ted",
+    "family_name": "Alexander",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/416/Low",
+    "email": "ted.alexander@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1960-08-14",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "3 (0 in House)",
+      "represented counties": "Cleveland, Gaston, Lincoln",
+      "legislative assistant": "Lynn Tennant",
+      "legislative assistant email": "Lynn.Tennant@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:21.770509+00:00",
+    "updated_at": "2026-06-04T07:28:49.958029+00:00",
+    "openstates_url": "https://openstates.org/person/ted-alexander-7jiXfKAX8bHw6BJ49S0XCb/"
+  },
+  {
+    "id": "ocd-person/20f45197-ec0c-4031-a889-2825bffb008a",
+    "name": "Tim Moffitt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:nc/sldu:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Moffitt",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/438/Low",
+    "email": "tim.moffitt@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "1 (3+ in House)",
+      "represented counties": "Henderson, Polk, Rutherford",
+      "legislative assistant": "Dina Moffitt",
+      "legislative assistant email": "Dina.Moffitt@ncleg.gov"
+    },
+    "created_at": "2019-11-17T12:10:27.802265+00:00",
+    "updated_at": "2026-04-25T01:26:27.243052+00:00",
+    "openstates_url": "https://openstates.org/person/tim-moffitt-10BPK0we4Br7oNYExulKTC/"
+  },
+  {
+    "id": "ocd-person/37e615d5-0c02-488c-83e2-e6e6df5b8184",
+    "name": "Todd Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:nc/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Johnson",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/406/Low",
+    "email": "todd.johnson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "3 (0 in House)",
+      "represented counties": "Cabarrus, Union",
+      "legislative assistant": "Joseph Stansbury",
+      "legislative assistant email": "Joseph.Stansbury@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:18.581206+00:00",
+    "updated_at": "2026-04-10T01:21:06.634334+00:00",
+    "openstates_url": "https://openstates.org/person/todd-johnson-1hTj5YWtkRobNKhNOsZ4C4/"
+  },
+  {
+    "id": "ocd-person/81a19cd2-9493-4b85-b92b-44df8777530e",
+    "name": "Tom McInnis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:nc/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "McInnis",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/389/Low",
+    "email": "tom.mcinnis@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1954-04-16",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "5 (0 in House)",
+      "represented counties": "Cumberland, Moore",
+      "legislative assistant": "Lynn Taylor",
+      "legislative assistant email": "Lynn.Taylor@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:23.890774+00:00",
+    "updated_at": "2025-04-24T07:35:02.339914+00:00",
+    "openstates_url": "https://openstates.org/person/tom-mcinnis-3wbrm3WsHHkMzCHWs4wTYk/"
+  },
+  {
+    "id": "ocd-person/1ba98521-ee10-414a-9cf0-8b389ad02ffe",
+    "name": "Val Applewhite",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:nc/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Val",
+    "family_name": "Applewhite",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/440/Low",
+    "email": "val.applewhite@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "1 (0 in House)",
+      "represented counties": "Cumberland",
+      "legislative assistant": "Rochon Kearney",
+      "legislative assistant email": "Rochon.Kearney@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:52.237832+00:00",
+    "updated_at": "2026-06-04T07:29:16.544259+00:00",
+    "openstates_url": "https://openstates.org/person/val-applewhite-qCGLgtMwzWZqaKTAd0XfS/"
+  },
+  {
+    "id": "ocd-person/ece1f23b-841d-4145-9719-3807bf29f861",
+    "name": "Vickie Sawyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:nc/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Vickie",
+    "family_name": "Sawyer",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/405/Low",
+    "email": "vickie.sawyer@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "3+ (0 in House)",
+      "represented counties": "Iredell, Mecklenburg",
+      "legislative assistant": "Diana Xavier",
+      "legislative assistant email": "Diana.Xavier@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:24.736201+00:00",
+    "updated_at": "2026-04-25T01:26:34.789246+00:00",
+    "openstates_url": "https://openstates.org/person/vickie-sawyer-7CzRho5HDEmuKBitzkksjJ/"
+  },
+  {
+    "id": "ocd-person/5397305f-16ba-460d-aa16-3bee6185299b",
+    "name": "Warren Daniel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:nc/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Warren",
+    "family_name": "Daniel",
+    "image": "https://www.ncleg.gov/Members/MemberImage/S/295/Low",
+    "email": "warren.daniel@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1968-12-15",
+    "death_date": "",
+    "extras": {
+      "terms in senate": "7 (0 in House)",
+      "represented counties": "Buncombe, Burke, McDowell",
+      "legislative assistant": "Andy Perrigo",
+      "legislative assistant email": "Andy.Perrigo@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:09.146590+00:00",
+    "updated_at": "2025-04-24T07:33:46.308386+00:00",
+    "openstates_url": "https://openstates.org/person/warren-daniel-2XjSJUU6S51AbBz1Jqayfz/"
+  },
+  {
+    "id": "ocd-person/da2ebbae-4f50-4a95-927d-359ed2a9a42b",
+    "name": "Woodson Bradley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:nc/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Woodson",
+    "family_name": "Bradley",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Woodson_Bradley_20240820_013503.jpg",
+    "email": "woodson.bradley@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1973-02-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:20.951186+00:00",
+    "updated_at": "2025-04-24T07:33:30.498755+00:00",
+    "openstates_url": "https://openstates.org/person/woodson-bradley-6dhgQlVyJ32dBibt6VzcOx/"
+  }
+]

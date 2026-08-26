@@ -1,0 +1,1176 @@
+[
+  {
+    "id": "ocd-person/d2a82a0d-fbd1-4448-be2d-b786a7e11168",
+    "name": "Adam G\u00f3mez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldu:hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "G\u00f3mez",
+    "image": "https://malegislature.gov/Legislators/Profile/170/A_G0.jpg",
+    "email": "adam.gomez@masenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "A_G0"
+    },
+    "created_at": "2021-01-07T11:18:39.804210+00:00",
+    "updated_at": "2026-06-04T06:56:57.670387+00:00",
+    "openstates_url": "https://openstates.org/person/adam-gomez-6PVEsOFVrkTOOOOxZRDIYy/"
+  },
+  {
+    "id": "ocd-person/49397268-3fc9-4c83-a385-f55be18597f4",
+    "name": "Barry Finegold",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Second Essex and Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:2nd_essex_and_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Barry",
+    "family_name": "Finegold",
+    "image": "https://malegislature.gov/Legislators/Profile/170/BRF0.jpg",
+    "email": "barry.finegold@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1971-03-03",
+    "death_date": "",
+    "extras": {
+      "member code": "BRF0"
+    },
+    "created_at": "2019-01-05T03:23:57.426831+00:00",
+    "updated_at": "2025-03-05T07:14:54.548204+00:00",
+    "openstates_url": "https://openstates.org/person/barry-finegold-2EAgyZlao4Bo7mKJaHH0HE/"
+  },
+  {
+    "id": "ocd-person/fb97b139-c0dd-41b5-ae52-159528f47b11",
+    "name": "Becca Rausch",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Norfolk, Worcester and Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:norfolk_worcester_and_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Becca",
+    "family_name": "Rausch",
+    "image": "https://www.brandeis.edu/now/2019/january/images/rausch620.jpg",
+    "email": "becca.rausch@masenate.gov",
+    "gender": "Female",
+    "birth_date": "1979-08-31",
+    "death_date": "",
+    "extras": {
+      "member code": "RLR0"
+    },
+    "created_at": "2019-01-05T03:23:25.234241+00:00",
+    "updated_at": "2026-03-21T06:52:00.971192+00:00",
+    "openstates_url": "https://openstates.org/person/becca-rausch-7ekOeXPYLP0nzyw4cNGdkX/"
+  },
+  {
+    "id": "ocd-person/1b7d1710-da71-46cd-9ee3-fc891556f3a9",
+    "name": "Bill Driscoll",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Norfolk, Plymouth and Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldu:norfolk_plymouth_and_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Driscoll",
+    "image": "https://malegislature.gov/Legislators/Profile/170/WJD1.jpg",
+    "email": "william.driscoll@masenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "WJD1"
+    },
+    "created_at": "2018-10-18T14:46:46.902548+00:00",
+    "updated_at": "2026-03-21T06:51:47.813556+00:00",
+    "openstates_url": "https://openstates.org/person/bill-driscoll-prxT1lPrcttQqxuog3ZHt/"
+  },
+  {
+    "id": "ocd-person/77994b2c-f88c-4a5f-bf9d-7abd1875d8dc",
+    "name": "Brendan Crighton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Third Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:3rd_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Brendan",
+    "family_name": "Crighton",
+    "image": "https://malegislature.gov/Legislators/Profile/170/BPC0.jpg",
+    "email": "brendan.crighton@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1983-04-05",
+    "death_date": "",
+    "extras": {
+      "member code": "BPC0"
+    },
+    "created_at": "2018-10-18T14:46:47.522749+00:00",
+    "updated_at": "2026-01-29T06:53:14.303747+00:00",
+    "openstates_url": "https://openstates.org/person/brendan-crighton-3dg8p1rpwHGCALMU2JYWKa/"
+  },
+  {
+    "id": "ocd-person/429f87cf-f7a1-4201-ade4-9efeb9149d03",
+    "name": "Bruce Tarr",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "First Essex and Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:1st_essex_and_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Bruce",
+    "family_name": "Tarr",
+    "image": "https://malegislature.gov/Legislators/Profile/170/BET0.jpg",
+    "email": "bruce.tarr@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1964-01-02",
+    "death_date": "",
+    "extras": {
+      "member code": "BET0",
+      "leadership position": "Minority Leader"
+    },
+    "created_at": "2018-10-18T14:47:01.261620+00:00",
+    "updated_at": "2026-03-21T06:51:23.000631+00:00",
+    "openstates_url": "https://openstates.org/person/bruce-tarr-21iOkdyExZggeotHb1K3gx/"
+  },
+  {
+    "id": "ocd-person/456b0061-febd-4ff7-8547-42be0685526f",
+    "name": "Cindy Friedman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Fourth Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:4th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Cindy",
+    "family_name": "Friedman",
+    "image": "https://malegislature.gov/Legislators/Profile/170/CFF0.jpg",
+    "email": "cindy.friedman@masenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "CFF0",
+      "leadership position": "Senate Ways and Means Vice Chair"
+    },
+    "created_at": "2018-10-18T14:46:51.543085+00:00",
+    "updated_at": "2025-05-15T00:53:06.401659+00:00",
+    "openstates_url": "https://openstates.org/person/cindy-friedman-26zMxkQKVf02KQY4IicNNn/"
+  },
+  {
+    "id": "ocd-person/ece82669-b6f6-4f0f-ae5d-7b238b1cd1dd",
+    "name": "Cynthia Creem",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Norfolk and Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:norfolk_and_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Cynthia",
+    "family_name": "Creem",
+    "image": "https://malegislature.gov/Legislators/Profile/170/CSC0.jpg",
+    "email": "cynthia.creem@masenate.gov",
+    "gender": "Female",
+    "birth_date": "1942-09-17",
+    "death_date": "",
+    "extras": {
+      "member code": "CSC0",
+      "leadership position": "Majority Leader"
+    },
+    "created_at": "2018-10-18T14:46:43.486170+00:00",
+    "updated_at": "2026-03-21T06:51:21.576265+00:00",
+    "openstates_url": "https://openstates.org/person/cynthia-creem-7D2HU9fWCW1BAL3rTkg3H3/"
+  },
+  {
+    "id": "ocd-person/cd05a88c-19f0-4fc5-bc3b-d339572842b7",
+    "name": "Dylan Fernandes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Plymouth and Barnstable",
+      "division_id": "ocd-division/country:us/state:ma/sldu:plymouth_and_barnstable"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dylan",
+    "family_name": "Fernandes",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DAF0.jpg",
+    "email": "dylan.fernandes@masenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "DAF0"
+    },
+    "created_at": "2018-10-18T14:46:43.981785+00:00",
+    "updated_at": "2026-06-04T06:56:56.778535+00:00",
+    "openstates_url": "https://openstates.org/person/dylan-fernandes-6Es0nfqHiPUOpvYJJ0V7sV/"
+  },
+  {
+    "id": "ocd-person/b857e2f7-b65a-4d34-a680-50dfff745a16",
+    "name": "Jake Oliveira",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Hampden, Hampshire and Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldu:hampden_hampshire_and_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jake",
+    "family_name": "Oliveira",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JRO0.jpg",
+    "email": "jacob.oliveira@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1986-07-06",
+    "death_date": "",
+    "extras": {
+      "member code": "JRO0"
+    },
+    "created_at": "2021-01-07T11:18:44.962342+00:00",
+    "updated_at": "2025-04-01T00:51:54.106414+00:00",
+    "openstates_url": "https://openstates.org/person/jake-oliveira-5bqkeQ17msD1Y03LqN4rFG/"
+  },
+  {
+    "id": "ocd-person/23704722-a50c-4148-8f14-98c7d78324b9",
+    "name": "Jamie Eldridge",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Middlesex and Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldu:middlesex_and_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jamie",
+    "family_name": "Eldridge",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JBE0.jpg",
+    "email": "james.eldridge@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1973-08-11",
+    "death_date": "",
+    "extras": {
+      "member code": "JBE0"
+    },
+    "created_at": "2018-10-18T14:47:02.885885+00:00",
+    "updated_at": "2026-03-21T06:50:49.942187+00:00",
+    "openstates_url": "https://openstates.org/person/jamie-eldridge-14s2dexkVZIj0oc1YMdv2n/"
+  },
+  {
+    "id": "ocd-person/92a770ae-a348-4f86-92ad-c4a8ebc568f6",
+    "name": "Jason Lewis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Fifth Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:5th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Lewis",
+    "image": "https://malegislature.gov/Legislators/Profile/170/jml0.jpg",
+    "email": "jason.lewis@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1968-04-19",
+    "death_date": "",
+    "extras": {
+      "member code": "jml0"
+    },
+    "created_at": "2018-10-18T14:46:48.495035+00:00",
+    "updated_at": "2026-01-29T06:52:33.065487+00:00",
+    "openstates_url": "https://openstates.org/person/jason-lewis-4SjOo1EGiitFVuM4GWm4gw/"
+  },
+  {
+    "id": "ocd-person/2998b05b-b83e-4a9b-9659-a609ddc63a34",
+    "name": "Jo Comerford",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Hampshire, Franklin and Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldu:hampshire_franklin_and_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jo",
+    "family_name": "Comerford",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JMC0.jpg",
+    "email": "jo.comerford@masenate.gov",
+    "gender": "Female",
+    "birth_date": "1963-08-03",
+    "death_date": "",
+    "extras": {
+      "member code": "JMC0"
+    },
+    "created_at": "2019-01-05T03:23:41.307001+00:00",
+    "updated_at": "2026-03-21T06:51:04.954676+00:00",
+    "openstates_url": "https://openstates.org/person/jo-comerford-1GUSnGKYxQQ0uuO7IjRjXA/"
+  },
+  {
+    "id": "ocd-person/d0956cb2-93df-4096-82ce-d39fbf0b9e36",
+    "name": "Joan Lovely",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Second Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:2nd_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Joan",
+    "family_name": "Lovely",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JBL0.jpg",
+    "email": "joan.lovely@masenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JBL0",
+      "leadership position": "Assistant Majority Leader"
+    },
+    "created_at": "2018-10-18T14:46:37.976113+00:00",
+    "updated_at": "2026-03-21T06:51:59.872445+00:00",
+    "openstates_url": "https://openstates.org/person/joan-lovely-6Lagr9KYr6LSaICOW8v8xK/"
+  },
+  {
+    "id": "ocd-person/5a333327-70bb-4b95-9cfd-fadd701e9348",
+    "name": "John Cronin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Worcester and Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:worcester_and_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Cronin",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JJC0.jpg",
+    "email": "john.cronin@masenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JJC0"
+    },
+    "created_at": "2021-01-07T11:18:48.919639+00:00",
+    "updated_at": "2026-06-04T06:56:27.063679+00:00",
+    "openstates_url": "https://openstates.org/person/john-cronin-2kChspSo66EKzFuE9Mp8CO/"
+  },
+  {
+    "id": "ocd-person/7be04e69-85c6-44e4-a933-88c59c0675a5",
+    "name": "John Keenan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Norfolk and Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldu:norfolk_and_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Keenan",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JFK0.jpg",
+    "email": "john.keenan@masenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JFK0"
+    },
+    "created_at": "2018-10-18T14:46:57.801868+00:00",
+    "updated_at": "2026-06-04T06:56:25.277122+00:00",
+    "openstates_url": "https://openstates.org/person/john-keenan-3lkYzsJcF9eZrD3O8XYYNB/"
+  },
+  {
+    "id": "ocd-person/a37a3f66-83a2-4a7e-90e3-8de41be7262d",
+    "name": "John Velis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Hampden and Hampshire",
+      "division_id": "ocd-division/country:us/state:ma/sldu:hampden_and_hampshire"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Velis",
+    "image": "https://malegislature.gov/Legislators/Profile/170/jcv1.jpg",
+    "email": "john.velis@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1979-01-26",
+    "death_date": "",
+    "extras": {
+      "member code": "JCV0"
+    },
+    "created_at": "2018-10-18T14:46:51.220105+00:00",
+    "updated_at": "2026-01-29T06:52:58.950324+00:00",
+    "openstates_url": "https://openstates.org/person/john-velis-4yTcELJ9n51Q00xvB5PSFp/"
+  },
+  {
+    "id": "ocd-person/5a0688ef-c0cd-469d-bd3c-fe9848724387",
+    "name": "Julian Cyr",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Cape and Islands",
+      "division_id": "ocd-division/country:us/state:ma/sldu:cape_and_islands"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Julian",
+    "family_name": "Cyr",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JAC0.jpg",
+    "email": "julian.cyr@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1986-01-19",
+    "death_date": "",
+    "extras": {
+      "member code": "JAC0",
+      "leadership position": "Assistant Majority Whip"
+    },
+    "created_at": "2018-10-18T14:46:38.305953+00:00",
+    "updated_at": "2026-06-04T06:57:02.953069+00:00",
+    "openstates_url": "https://openstates.org/person/julian-cyr-2jsILOvtglah9c0TAN7mR5/"
+  },
+  {
+    "id": "ocd-person/e48879ef-ed74-4f93-8e5b-c0f3752d4fd7",
+    "name": "Karen Spilka",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Middlesex and Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldu:middlesex_and_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Spilka",
+    "image": "https://malegislature.gov/Legislators/Profile/170/KES0.jpg",
+    "email": "karen.spilka@masenate.gov",
+    "gender": "Female",
+    "birth_date": "1953-01-11",
+    "death_date": "",
+    "extras": {
+      "member code": "KES0",
+      "leadership position": "President of the Senate"
+    },
+    "created_at": "2018-10-18T14:47:02.543781+00:00",
+    "updated_at": "2026-03-21T06:51:55.057383+00:00",
+    "openstates_url": "https://openstates.org/person/karen-spilka-6xEcSpht9SEcrczZ2N2YnH/"
+  },
+  {
+    "id": "ocd-person/062618e6-3ba4-4170-8b4f-9d0fa325a9ab",
+    "name": "Kelly Dooner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Third Bristol and Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldu:3rd_bristol_and_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Kelly",
+    "family_name": "Dooner",
+    "image": "https://malegislature.gov/Legislators/Profile/170/KAD0.jpg",
+    "email": "kelly.dooner@masenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "KAD0"
+    },
+    "created_at": "2025-01-05T10:35:15.327537+00:00",
+    "updated_at": "2026-01-29T06:52:10.220893+00:00",
+    "openstates_url": "https://openstates.org/person/kelly-dooner-BbMayyZMxstQKCsD8fwB1/"
+  },
+  {
+    "id": "ocd-person/703d6d4e-3a1d-4a2e-82e3-3c9693b75953",
+    "name": "Liz Miranda",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Second Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldu:2nd_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Miranda",
+    "image": "https://malegislature.gov/Legislators/Profile/170/L%20M0.jpg",
+    "email": "liz.miranda@masenate.gov",
+    "gender": "Female",
+    "birth_date": "1981-06-29",
+    "death_date": "",
+    "extras": {
+      "member code": "L M0"
+    },
+    "created_at": "2019-01-05T03:24:07.809346+00:00",
+    "updated_at": "2026-03-21T06:51:58.399126+00:00",
+    "openstates_url": "https://openstates.org/person/liz-miranda-3PnDC6zN1arbIqrGvfkOlH/"
+  },
+  {
+    "id": "ocd-person/5278711f-55ec-4a67-acc9-edd1db1c4e8c",
+    "name": "Lydia Edwards",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Third Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldu:3rd_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Lydia",
+    "family_name": "Edwards",
+    "image": "https://malegislature.gov/Legislators/Profile/170/LME0.jpg",
+    "email": "lydia.edwards@masenate.gov",
+    "gender": "Female",
+    "birth_date": "1981-12-13",
+    "death_date": "",
+    "extras": {
+      "member code": "LME0"
+    },
+    "created_at": "2022-02-13T21:47:02.271707+00:00",
+    "updated_at": "2026-03-21T06:51:47.281336+00:00",
+    "openstates_url": "https://openstates.org/person/lydia-edwards-2VcPbDW4xGQvtLsiYKtVeO/"
+  },
+  {
+    "id": "ocd-person/31600b44-797b-4baf-80aa-0762b4f0aff5",
+    "name": "Mark Montigny",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Second Bristol and Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldu:2nd_bristol_and_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Montigny",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MCM0.jpg",
+    "email": "mark.montigny@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1961-06-20",
+    "death_date": "",
+    "extras": {
+      "member code": "MCM0"
+    },
+    "created_at": "2018-10-18T14:46:52.192808+00:00",
+    "updated_at": "2026-03-21T06:50:48.510690+00:00",
+    "openstates_url": "https://openstates.org/person/mark-montigny-1VAW0V1tBvgeV1ZkIWeWGL/"
+  },
+  {
+    "id": "ocd-person/af0d6647-3a7b-48d0-971c-bde55a75e78c",
+    "name": "Michael Rodrigues",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "First Bristol and Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldu:1st_bristol_and_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Rodrigues",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MJR0.jpg",
+    "email": "michael.rodrigues@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1959-05-30",
+    "death_date": "",
+    "extras": {
+      "member code": "MJR0",
+      "leadership position": "Senate Ways and Means Chair"
+    },
+    "created_at": "2018-10-18T14:47:00.910643+00:00",
+    "updated_at": "2026-06-04T06:57:07.332623+00:00",
+    "openstates_url": "https://openstates.org/person/michael-rodrigues-5KJmPTqMBWVbPjEEGvAIxw/"
+  },
+  {
+    "id": "ocd-person/2cf31d35-c3e8-4627-a534-08dce38078db",
+    "name": "Mike Barrett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Third Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:3rd_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Barrett",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MJB0.jpg",
+    "email": "mike.barrett@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1948-06-27",
+    "death_date": "",
+    "extras": {
+      "member code": "MJB0",
+      "leadership position": "Assistant Majority Leader"
+    },
+    "created_at": "2018-10-18T14:46:39.597790+00:00",
+    "updated_at": "2026-06-04T06:56:31.448344+00:00",
+    "openstates_url": "https://openstates.org/person/mike-barrett-1MolTtgVKhHDlH1gFd1kN9/"
+  },
+  {
+    "id": "ocd-person/c3cdd26f-1314-4366-89f6-17c4c540bce9",
+    "name": "Mike Brady",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Second Plymouth and Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldu:2nd_plymouth_and_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Brady",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MDB0.jpg",
+    "email": "michael.brady@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1962-05-05",
+    "death_date": "",
+    "extras": {
+      "member code": "MDB0"
+    },
+    "created_at": "2018-10-18T14:46:56.846460+00:00",
+    "updated_at": "2026-01-29T06:52:51.043514+00:00",
+    "openstates_url": "https://openstates.org/person/mike-brady-5xTZ0dgiho7Vfa8Ltvpiaf/"
+  },
+  {
+    "id": "ocd-person/7b48bd48-8d27-4dd8-958d-703571efe150",
+    "name": "Mike Moore",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Second Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldu:2nd_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Moore",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MOM0.jpg",
+    "email": "michael.moore@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1963-01-17",
+    "death_date": "",
+    "extras": {
+      "member code": "MOM0"
+    },
+    "created_at": "2018-10-18T14:46:45.133406+00:00",
+    "updated_at": "2026-03-21T06:50:52.223093+00:00",
+    "openstates_url": "https://openstates.org/person/mike-moore-3kdIUKRMqA2bYcHMc9PP3g/"
+  },
+  {
+    "id": "ocd-person/6a82d675-3496-48af-88cf-23c26355b01f",
+    "name": "Mike Rush",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Norfolk and Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldu:norfolk_and_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Rush",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MFR0.jpg",
+    "email": "mike.rush@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1973-11-30",
+    "death_date": "",
+    "extras": {
+      "member code": "MFR0",
+      "leadership position": "Senate Majority Whip"
+    },
+    "created_at": "2018-10-18T14:46:53.170945+00:00",
+    "updated_at": "2026-03-21T06:51:36.567419+00:00",
+    "openstates_url": "https://openstates.org/person/mike-rush-3EyyjqQ8sSmAT60KWr5KJD/"
+  },
+  {
+    "id": "ocd-person/8ca6ea6c-1121-40b3-a5cf-9b55dfe6a2b0",
+    "name": "Nick Collins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "First Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldu:1st_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Collins",
+    "image": "https://malegislature.gov/Legislators/Profile/170/N_C0.jpg",
+    "email": "nick.collins@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1982-08-26",
+    "death_date": "",
+    "extras": {
+      "member code": "N_C0"
+    },
+    "created_at": "2018-10-18T14:46:39.761630+00:00",
+    "updated_at": "2026-06-04T06:55:55.096965+00:00",
+    "openstates_url": "https://openstates.org/person/nick-collins-4HPCnfvtqDNh28t2obI5bc/"
+  },
+  {
+    "id": "ocd-person/6de50ed2-4fe8-4b98-894d-0bc391c876b5",
+    "name": "Pat Jehlen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Second Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:2nd_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Pat",
+    "family_name": "Jehlen",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PDJ0.jpg",
+    "email": "patricia.jehlen@masenate.gov",
+    "gender": "Female",
+    "birth_date": "1943-10-14",
+    "death_date": "",
+    "extras": {
+      "member code": "PDJ0"
+    },
+    "created_at": "2018-10-18T14:46:46.747791+00:00",
+    "updated_at": "2026-06-04T06:56:34.420985+00:00",
+    "openstates_url": "https://openstates.org/person/pat-jehlen-3LMqI08RJwWczeDSRbJGJ3/"
+  },
+  {
+    "id": "ocd-person/493988da-4de8-49a0-8d6c-090097e89920",
+    "name": "Patrick O'Connor",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "First Plymouth and Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldu:1st_plymouth_and_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "O'Connor",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PMO.jpg",
+    "email": "patrick.oconnor@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1984-08-13",
+    "death_date": "",
+    "extras": {
+      "member code": "PMO",
+      "leadership position": "Assistant Minority Leader"
+    },
+    "created_at": "2018-10-18T14:46:50.745300+00:00",
+    "updated_at": "2026-01-29T06:53:04.936668+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-o-connor-2EAjSbIvIanTtyPkiOpwO0/"
+  },
+  {
+    "id": "ocd-person/b390af07-1fa2-4516-b8f0-b6bd1b62121a",
+    "name": "Paul Feeney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Bristol and Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldu:bristol_and_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Feeney",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PRF0.jpg",
+    "email": "paul.feeney@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1978-03-23",
+    "death_date": "",
+    "extras": {
+      "member code": "PRF0"
+    },
+    "created_at": "2018-10-18T14:46:54.764614+00:00",
+    "updated_at": "2026-06-04T06:56:33.620182+00:00",
+    "openstates_url": "https://openstates.org/person/paul-feeney-5SpkK6v4jBbkDOv13ELnNi/"
+  },
+  {
+    "id": "ocd-person/fd5aaac8-48f5-42c2-82a8-abaf6c5de650",
+    "name": "Paul Mark",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Berkshire, Hampden, Franklin and Hampshire",
+      "division_id": "ocd-division/country:us/state:ma/sldu:berkshire_hampden_franklin_and_hampshire"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Mark",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PWM0.jpg",
+    "email": "paul.mark@masenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "PWM0"
+    },
+    "created_at": "2018-10-18T14:46:59.144551+00:00",
+    "updated_at": "2026-01-29T06:52:34.295792+00:00",
+    "openstates_url": "https://openstates.org/person/paul-mark-7i4UbqUwlscN7DDWSmfgf2/"
+  },
+  {
+    "id": "ocd-person/1d33d1e7-dae9-4e98-aa9e-626b0d711d9a",
+    "name": "Pavel Payano",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "First Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:1st_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Pavel",
+    "family_name": "Payano",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PMP0.jpg",
+    "email": "pavel.payano@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1985-11-30",
+    "death_date": "",
+    "extras": {
+      "member code": "PMP0"
+    },
+    "created_at": "2023-02-13T19:14:34.863375+00:00",
+    "updated_at": "2026-03-21T06:51:43.720804+00:00",
+    "openstates_url": "https://openstates.org/person/pavel-payano-t6STPI2beAFA3nKXqW7is/"
+  },
+  {
+    "id": "ocd-person/c674060b-4568-43fa-b72d-0921f4876713",
+    "name": "Peter Durant",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Worcester and Hampshire",
+      "division_id": "ocd-division/country:us/state:ma/sldu:worcester_and_hampshire"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Peter",
+    "family_name": "Durant",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PJD0.jpg",
+    "email": "peter.durant@masenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "PJD0",
+      "leadership position": "Assistant Minority Leader"
+    },
+    "created_at": "2023-12-28T22:53:44.113134+00:00",
+    "updated_at": "2026-03-21T06:51:00.612639+00:00",
+    "openstates_url": "https://openstates.org/person/peter-durant-62TVE9J25gxKAx7LKICgtP/"
+  },
+  {
+    "id": "ocd-person/2fb1c0e0-edaa-4b55-9bbb-b6fe6b3e5dcc",
+    "name": "Robyn Kennedy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "First Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldu:1st_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Robyn",
+    "family_name": "Kennedy",
+    "image": "https://malegislature.gov/Legislators/Profile/170/RKK0.jpg",
+    "email": "robyn.kennedy@masenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "RKK0"
+    },
+    "created_at": "2023-02-13T19:14:26.394766+00:00",
+    "updated_at": "2026-03-21T06:51:07.240521+00:00",
+    "openstates_url": "https://openstates.org/person/robyn-kennedy-1Rzs7Tp7AW6mO8crpFYSEu/"
+  },
+  {
+    "id": "ocd-person/edebef62-78d9-4f8b-a94d-65a29dbc09f6",
+    "name": "Ryan Fattman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Worcester and Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldu:worcester_and_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Fattman",
+    "image": "https://malegislature.gov/Legislators/Profile/170/RCF0.jpg",
+    "email": "ryan.fattman@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1984-07-01",
+    "death_date": "",
+    "extras": {
+      "member code": "RCF0",
+      "leadership position": "Assistant Minority Leader"
+    },
+    "created_at": "2018-10-18T14:46:41.831950+00:00",
+    "updated_at": "2026-03-21T06:52:06.947373+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-fattman-7Ex0Ftm5uhgXRapfWqWf5S/"
+  },
+  {
+    "id": "ocd-person/d691b834-a68d-44da-8140-9582ee37d8a6",
+    "name": "Sal DiDomenico",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Middlesex and Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldu:middlesex_and_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Sal",
+    "family_name": "DiDomenico",
+    "image": "https://malegislature.gov/Legislators/Profile/170/SND0.jpg",
+    "email": "sal.didomenico@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1971-06-20",
+    "death_date": "",
+    "extras": {
+      "member code": "SND0",
+      "leadership position": "Assistant Majority Leader"
+    },
+    "created_at": "2018-10-18T14:46:38.619885+00:00",
+    "updated_at": "2026-03-21T06:52:04.300399+00:00",
+    "openstates_url": "https://openstates.org/person/sal-didomenico-6Wsx1Ta3o7RJTOsgGL3B7G/"
+  },
+  {
+    "id": "ocd-person/053aae1e-ae76-41b0-912c-39f27f3f6d6f",
+    "name": "Vanna Howard",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "First Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:1st_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Vanna",
+    "family_name": "Howard",
+    "image": "https://malegislature.gov/Legislators/Profile/170/V_H1.jpg",
+    "email": "vanna.howard@masenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "V_H1"
+    },
+    "created_at": "2021-01-07T11:18:42.761025+00:00",
+    "updated_at": "2026-06-04T06:56:06.944661+00:00",
+    "openstates_url": "https://openstates.org/person/vanna-howard-9rmGi7jzxinglvchJ5SxD/"
+  },
+  {
+    "id": "ocd-person/94929da6-2219-4a44-99c3-d6561eead9f5",
+    "name": "Will Brownsberger",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Suffolk and Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldu:suffolk_and_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Brownsberger",
+    "image": "https://malegislature.gov/Legislators/Profile/170/WNB0.jpg",
+    "email": "william.brownsberger@masenate.gov",
+    "gender": "Male",
+    "birth_date": "1957-03-21",
+    "death_date": "",
+    "extras": {
+      "member code": "WNB0",
+      "leadership position": "President Pro Tempore"
+    },
+    "created_at": "2018-10-18T14:46:36.869726+00:00",
+    "updated_at": "2026-01-29T06:52:26.293201+00:00",
+    "openstates_url": "https://openstates.org/person/will-brownsberger-4WLrocvNAmh5WHS3m85Y9d/"
+  }
+]

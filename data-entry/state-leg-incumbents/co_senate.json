@@ -1,0 +1,1144 @@
+[
+  {
+    "id": "ocd-person/a033ad21-bdb7-4af2-be2e-e21c3e4cfa24",
+    "name": "Adrienne Benavidez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:co/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Adrienne",
+    "family_name": "Benavidez",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMmlFQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--23746f2c8382ad88801fb500a0e47384becef5d8/Benavidez,%20Adrienne.jpg",
+    "email": "adrienne.benavidez.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker Pro Tempore",
+      "counties represented": [
+        "Adams"
+      ]
+    },
+    "created_at": "2018-10-18T14:36:10.870564+00:00",
+    "updated_at": "2026-06-04T06:16:29.189652+00:00",
+    "openstates_url": "https://openstates.org/person/adrienne-benavidez-4sIO5CnIXeKRTZU5nHseCS/"
+  },
+  {
+    "id": "ocd-person/6d1fcaf0-ed3d-4772-876f-09dc5e931556",
+    "name": "Barbara Kirkmeyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:co/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Barbara",
+    "family_name": "Kirkmeyer",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBKzlTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--b75364af53ed9e801f5b0adfea3ca5cd1bbb3cf9/Kirkmeyer,%20Barbara.jpg",
+    "email": "barbara.kirkmeyer.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "1958-09-15",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Larimer",
+        "Weld"
+      ]
+    },
+    "created_at": "2021-01-13T00:04:09.143445+00:00",
+    "updated_at": "2026-05-10T00:16:30.292250+00:00",
+    "openstates_url": "https://openstates.org/person/barbara-kirkmeyer-3JugxkfPwIzAg4Lc7g5hGo/"
+  },
+  {
+    "id": "ocd-person/2d0d060c-6d5f-45da-a069-fe2be14547eb",
+    "name": "Byron Pelton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:co/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Byron",
+    "family_name": "Pelton",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdzk5QXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--7602b8809ffd638d639b8a39132341d13e764130/Pelton,%20Byron.jpg",
+    "email": "byron.pelton.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Logan",
+        "Morgan",
+        "Phillips",
+        "Sedgwick",
+        "Washington",
+        "Weld",
+        "Yuma"
+      ]
+    },
+    "created_at": "2023-01-13T22:24:20.053914+00:00",
+    "updated_at": "2026-06-04T06:16:09.828369+00:00",
+    "openstates_url": "https://openstates.org/person/byron-pelton-1N0bbUkqSQzLxxgZGsjc6d/"
+  },
+  {
+    "id": "ocd-person/0ddf3b75-c450-419e-8235-553157770e49",
+    "name": "Cathy Kipp",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:co/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Cathy",
+    "family_name": "Kipp",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBLzFTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--0c9240ecbd4ae088cff97b227aa60c5b2bf6ac83/Kipp,%20Cathy.jpg",
+    "email": "cathy.kipp.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Larimer"
+      ]
+    },
+    "created_at": "2019-03-20T05:03:58.764150+00:00",
+    "updated_at": "2026-06-04T06:15:38.781366+00:00",
+    "openstates_url": "https://openstates.org/person/cathy-kipp-QAutZAfrA73ISjQqmGHSz/"
+  },
+  {
+    "id": "ocd-person/f72691ec-a5a0-413b-a344-e452009551a2",
+    "name": "Chris Kolker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:co/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Kolker",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL2xTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--56397ac18c5c7504955ce6730cdb98acc6f36205/Kolker,%20Chris.jpg",
+    "email": "chris.kolker.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Arapahoe",
+        "Jefferson"
+      ]
+    },
+    "created_at": "2021-01-13T00:04:10.818065+00:00",
+    "updated_at": "2026-06-04T06:15:53.536610+00:00",
+    "openstates_url": "https://openstates.org/person/chris-kolker-7WMjLAK7KrsFcWd4Kbu1T8/"
+  },
+  {
+    "id": "ocd-person/715df6f2-cef6-4b88-b745-0207c8ffb4ff",
+    "name": "Cleave Simpson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:co/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Cleave",
+    "family_name": "Simpson",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL3hTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--7513585dd62fce02f81a3e6d3a1c44d08d397b9b/Simpson,%20Cleave.jpg",
+    "email": "cleave.simpson.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Whip",
+      "counties represented": [
+        "Alamosa",
+        "Archuleta",
+        "Conejos",
+        "Costilla",
+        "Dolores",
+        "La Plata",
+        "Mineral",
+        "Montezuma",
+        "Montrose",
+        "Ouray",
+        "Rio Grande",
+        "Saguache",
+        "San Juan",
+        "San Miguel"
+      ]
+    },
+    "created_at": "2021-01-13T00:04:10.486422+00:00",
+    "updated_at": "2026-06-04T06:15:59.799210+00:00",
+    "openstates_url": "https://openstates.org/person/cleave-simpson-3Rv4dxPs4mKIT4Q8tIm70Z/"
+  },
+  {
+    "id": "ocd-person/4be512fb-5ebc-422c-a858-d250cb5568ad",
+    "name": "Dylan Roberts",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:co/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Dylan",
+    "family_name": "Roberts",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXhTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8f1c6929289275427225aba6c766440b456c3b1a/Roberts,%20Dylan.jpg",
+    "email": "dylan.roberts.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "1989-07-17",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Clear Creek",
+        "Eagle",
+        "Garfield",
+        "Gilpin",
+        "Grand",
+        "Jackson",
+        "Moffat",
+        "Rio Blanco",
+        "Routt",
+        "Summit"
+      ]
+    },
+    "created_at": "2018-10-18T14:36:04.154394+00:00",
+    "updated_at": "2026-05-10T00:16:53.429838+00:00",
+    "openstates_url": "https://openstates.org/person/dylan-roberts-2JD6vNmO1kveCTJNRxnEUf/"
+  },
+  {
+    "id": "ocd-person/506f18ea-3611-408b-aa0e-73adf9681efe",
+    "name": "Iman Jodeh",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:co/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Iman",
+    "family_name": "Jodeh",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXRTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--29b2053d4c36e8d2d5d661dd8e279ff5a4fa30e5/Iman_Jodeh.jpg",
+    "email": "iman.jodeh.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Co-Whip",
+      "counties represented": [
+        "Arapahoe"
+      ]
+    },
+    "created_at": "2021-01-13T00:04:11.514032+00:00",
+    "updated_at": "2026-06-04T06:16:20.507957+00:00",
+    "openstates_url": "https://openstates.org/person/iman-jodeh-2Rm9mUrqovPdzr9wK6NvnK/"
+  },
+  {
+    "id": "ocd-person/e4e1f1a9-7134-4d90-9fed-2aa7a0e3a307",
+    "name": "James Coleman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:co/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Coleman",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBKzVTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--7a5daba3d83289b2d6431d3200c1731a422d6091/Coleman,%20James%20.jpg",
+    "email": "james.coleman.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "President Pro Tempore",
+      "counties represented": [
+        "Denver"
+      ]
+    },
+    "created_at": "2021-01-13T00:04:08.193133+00:00",
+    "updated_at": "2026-05-10T00:16:27.070247+00:00",
+    "openstates_url": "https://openstates.org/person/james-coleman-6xtVRqs492bMPYSK8Tc6YJ/"
+  },
+  {
+    "id": "ocd-person/2718c918-a38c-49c2-a120-5503164f959f",
+    "name": "Janice Marchman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:co/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Janice",
+    "family_name": "Marchman",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL0ZTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--fcb333a05c84defed2c15ce0bdf8723c605199f3/Marchman,%20Janice.jpg",
+    "email": "janice.marchman.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Boulder",
+        "Larimer"
+      ]
+    },
+    "created_at": "2023-01-13T22:24:06.133082+00:00",
+    "updated_at": "2026-06-04T06:15:55.271166+00:00",
+    "openstates_url": "https://openstates.org/person/janice-marchman-1Bm1ikvh3gzbdVIEsgetdn/"
+  },
+  {
+    "id": "ocd-person/2372415a-2aea-4423-8a3a-bed2d40493a6",
+    "name": "Janice Rich",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:co/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Janice",
+    "family_name": "Rich",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBLzVTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--afd770f3635f91909fdcc0bde3b95c1599089da7/Rich,%20Janice.jpg",
+    "email": "janicerichsd7@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Delta",
+        "Mesa"
+      ]
+    },
+    "created_at": "2023-01-13T22:24:22.425606+00:00",
+    "updated_at": "2026-05-10T00:16:48.839617+00:00",
+    "openstates_url": "https://openstates.org/person/janice-rich-14swfOuo6boTYRgKB2Tg4k/"
+  },
+  {
+    "id": "ocd-person/c2cade07-9c95-4439-938c-77ac4ed44fab",
+    "name": "Jeff Bridges",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:co/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Bridges",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeWhwQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1f18e804077a78214975ed08168ecc3aa4c6f896/Bridges,Jeff.jpg",
+    "email": "jeff.bridges.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Arapahoe",
+        "Denver",
+        "Jefferson"
+      ]
+    },
+    "created_at": "2018-10-18T14:36:06.812621+00:00",
+    "updated_at": "2026-05-10T00:16:45.523798+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-bridges-5vZDlZHOl9w6TIWvnNCsm3/"
+  },
+  {
+    "id": "ocd-person/c06af980-c553-4f79-a39d-295b7226f029",
+    "name": "Jessie Danielson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:co/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Jessie",
+    "family_name": "Danielson",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK1JTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--444190d18434e86fd51db8d0f3656887bb45824b/Danielson,%20Jessie.jpg",
+    "email": "jessie.danielson.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2019-03-20T05:03:58.869564+00:00",
+    "updated_at": "2026-06-04T06:16:13.240921+00:00",
+    "openstates_url": "https://openstates.org/person/jessie-danielson-5r5Pge2c2QrqmO1z7tRAIj/"
+  },
+  {
+    "id": "ocd-person/8e95ac06-ddbb-4f6c-ba7e-854a92860be4",
+    "name": "John Carson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:co/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Carson",
+    "image": "https://i0.wp.com/coloradocommunitymedia.com/wp-content/uploads/2024/06/DCO-0613-Commissioner-D3-race-2.jpg?w=768&ssl=1",
+    "email": "john.carson.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-23T15:21:00.305008+00:00",
+    "updated_at": "2026-06-04T06:16:27.215709+00:00",
+    "openstates_url": "https://openstates.org/person/john-carson-4L3JGOo6cKudlJWPfEbJeG/"
+  },
+  {
+    "id": "ocd-person/829879ea-a9a3-42b6-8f5f-d209b1cc961d",
+    "name": "Judy Amabile",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:co/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Judy",
+    "family_name": "Amabile",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUZTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--b064f9311bf3386a06c699ba6aeee37a07444669/Judy%20Amabile.jpg",
+    "email": "judy.amabile.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Boulder",
+        "Clear Creek",
+        "Gilpin",
+        "Larimer"
+      ]
+    },
+    "created_at": "2021-01-13T00:04:08.681908+00:00",
+    "updated_at": "2026-06-04T06:16:08.734311+00:00",
+    "openstates_url": "https://openstates.org/person/judy-amabile-3yQgQcAT6iBsajEVhQzLVl/"
+  },
+  {
+    "id": "ocd-person/8dae5ba5-6741-4aca-8c1e-24f014fda187",
+    "name": "Julie Gonzales",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:co/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Gonzales",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOXBTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f26a08c473c6f23699613abea473f8b3120e976c/Gonzales,%20Julie.jpg",
+    "email": "julie.gonzales.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip",
+      "counties represented": [
+        "Denver"
+      ]
+    },
+    "created_at": "2019-01-04T02:11:37.903298+00:00",
+    "updated_at": "2026-06-04T06:15:41.042335+00:00",
+    "openstates_url": "https://openstates.org/person/julie-gonzales-4JLbC8DrHhKo0uke0vk61H/"
+  },
+  {
+    "id": "ocd-person/f0fa561d-39cf-48f3-ae8c-84b4d30d2662",
+    "name": "Katie Wallace",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:co/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Katie",
+    "family_name": "Wallace",
+    "image": "",
+    "email": "katie.wallace.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-03-29T00:16:01.774760+00:00",
+    "updated_at": "2025-07-17T06:16:48.723534+00:00",
+    "openstates_url": "https://openstates.org/person/katie-wallace-7KiYsLAX92hkxsOrzSGezS/"
+  },
+  {
+    "id": "ocd-person/ebf0c3de-2f58-436f-af67-12863f9cb552",
+    "name": "Kyle Mullica",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:co/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Kyle",
+    "family_name": "Mullica",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK05TQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c8a05176c5f582700250b8669d5df16c090a5d05/Mullica,%20Kyle.jpg",
+    "email": "kyle.mullica.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "1986-07-31",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Adams"
+      ]
+    },
+    "created_at": "2019-01-04T02:11:51.153608+00:00",
+    "updated_at": "2026-05-10T00:16:31.215453+00:00",
+    "openstates_url": "https://openstates.org/person/kyle-mullica-7BDE3pnKsU1T6E48a6PvcY/"
+  },
+  {
+    "id": "ocd-person/c9fd6b10-91a3-44ec-ac6a-48f73eee3ed1",
+    "name": "Larry Liston",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:co/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Liston",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK1pTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4e7ce4fd5e7d42b1e4e7ad102c27293ed3fd28c6/Liston,%20Larry.jpg",
+    "email": "larry.liston.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "El Paso"
+      ]
+    },
+    "created_at": "2018-10-18T14:36:12.636958+00:00",
+    "updated_at": "2026-05-10T00:16:21.627995+00:00",
+    "openstates_url": "https://openstates.org/person/larry-liston-699GkYKXEDLV1TfhmkEk1h/"
+  },
+  {
+    "id": "ocd-person/2de0a3a1-a1e3-477f-88b9-3212fa52fb9c",
+    "name": "Lindsey Daugherty",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:co/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Lindsey",
+    "family_name": "Daugherty",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL0pTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4a370bf5b571c75e61965486b4074d0d108d80b8/Daugherty,%20Lindsey.jpg",
+    "email": "lindsey.daugherty.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Adams",
+        "Jefferson"
+      ]
+    },
+    "created_at": "2021-01-13T00:04:11.079003+00:00",
+    "updated_at": "2026-06-04T06:15:44.625311+00:00",
+    "openstates_url": "https://openstates.org/person/lindsey-daugherty-1OZJXHH2tYN5y0KYCSDJKW/"
+  },
+  {
+    "id": "ocd-person/5226ebdd-0710-49da-b446-61fac19765ce",
+    "name": "Lisa Cutter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:co/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Cutter",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL3BTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f08a5431fd4e493fd52194b1418976fd5a250df8/Cutter,%20Lisa.jpg",
+    "email": "lisa.cutter.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "1963-10-14",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2019-01-04T02:12:10.182837+00:00",
+    "updated_at": "2026-05-10T00:16:14.925782+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-cutter-2V19n1iJmY1KOAJ0y0TY0k/"
+  },
+  {
+    "id": "ocd-person/fce5c955-f43d-4f80-bad5-8369223bc0ea",
+    "name": "Lisa Frizell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:co/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Frizell",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBODVTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2ea2d7fd307e8f1e762f9099be3a5b09bcb15f0a/Frizell,%20Lisa.jpg",
+    "email": "lisa.frizell.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Douglas"
+      ]
+    },
+    "created_at": "2023-01-13T22:23:40.318040+00:00",
+    "updated_at": "2026-05-10T00:16:47.008290+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-frizell-7hD4u66w7U6jUl1skNxpHe/"
+  },
+  {
+    "id": "ocd-person/e5055578-02cb-435c-9fe0-b877318e3b1b",
+    "name": "Lynda Zamora Wilson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:co/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Lynda",
+    "family_name": "Zamora Wilson",
+    "image": "",
+    "email": "lynda.zamorawilson.senate@coleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-07-17T06:16:55.051086+00:00",
+    "updated_at": "2026-06-04T06:16:07.454246+00:00",
+    "openstates_url": "https://openstates.org/person/lynda-zamora-wilson-6y9gBh7oRJU1BBlmHYXEMN/"
+  },
+  {
+    "id": "ocd-person/c0cfa7d3-2c5e-4b68-8692-2e1b6f1b3372",
+    "name": "Marc Catlin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:co/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Marc",
+    "family_name": "Catlin",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdzlUQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a385166cb7a79caaf96ebfd19a9e619a73014264/Catlin,%20Marc.jpg",
+    "email": "marc.catlin.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Delta",
+        "Dolores",
+        "Gunnison",
+        "Hinsdale",
+        "Montezuma",
+        "Montrose",
+        "Ouray",
+        "San Miguel"
+      ]
+    },
+    "created_at": "2018-10-18T14:36:06.068967+00:00",
+    "updated_at": "2026-05-10T00:16:30.751548+00:00",
+    "openstates_url": "https://openstates.org/person/marc-catlin-5rpQOA0fAaeicS1reYNGKo/"
+  },
+  {
+    "id": "ocd-person/5dbb7ac2-a4c8-42b8-bfb1-1b012737fa74",
+    "name": "Marc Snyder",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:co/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Marc",
+    "family_name": "Snyder",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeWxwQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--af6fe2d0b4cf102c536ab81e2462d61d44783d1a/Snyder,%20Marc.jpg",
+    "email": "marc.snyder.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "1961-01-06",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "El Paso",
+        "Teller"
+      ]
+    },
+    "created_at": "2019-01-04T02:12:08.749992+00:00",
+    "updated_at": "2026-05-10T00:16:23.557480+00:00",
+    "openstates_url": "https://openstates.org/person/marc-snyder-2qrxofnpEOwvW2FMInJcAu/"
+  },
+  {
+    "id": "ocd-person/b4002b84-79a0-481a-94a8-00136c2dabb6",
+    "name": "Mark Baisley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:co/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Baisley",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK2hTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--7e5bc18c718b71be8507a78ac7fd5c9f047b70ae/Baisley,%20Mark.jpg",
+    "email": "mark.baisley@senate.co.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Chaffee",
+        "Custer",
+        "Douglas",
+        "Fremont",
+        "Jefferson",
+        "Lake",
+        "Park",
+        "Teller"
+      ]
+    },
+    "created_at": "2019-01-04T02:12:09.464351+00:00",
+    "updated_at": "2026-06-04T06:16:26.465430+00:00",
+    "openstates_url": "https://openstates.org/person/mark-baisley-5TehBVm924TSPI96qHmvuo/"
+  },
+  {
+    "id": "ocd-person/4a72c7ee-c3e5-4c61-8e79-3301cb70a599",
+    "name": "Matt Ball",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:co/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Ball",
+    "image": "https://images.squarespace-cdn.com/content/67330255adbf4c1a48d665b3/1732088535559-59YBHTFEFBLWVIPHRMDL/Matt+Ball+Headshot_park.jpeg?content-type=image%2Fjpeg",
+    "email": "matt.ball.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-23T15:20:50.959218+00:00",
+    "updated_at": "2026-06-04T06:16:05.214477+00:00",
+    "openstates_url": "https://openstates.org/person/matt-ball-2GTt0bdPYAQ1q1JmTsVZaD/"
+  },
+  {
+    "id": "ocd-person/b680cb39-442c-4dd2-81bd-88696cfe9df2",
+    "name": "Mike Weissman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:co/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Weissman",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOUJTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8f5c3253e6bdff26fefd8864913fd683300d7176/Weissman,Mike.jpg",
+    "email": "mike.weissman.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Adams",
+        "Arapahoe"
+      ]
+    },
+    "created_at": "2018-10-18T14:36:12.445878+00:00",
+    "updated_at": "2026-06-04T06:16:25.248836+00:00",
+    "openstates_url": "https://openstates.org/person/mike-weissman-5YNSfhfro9JEO6wGqH5iio/"
+  },
+  {
+    "id": "ocd-person/4d753f6e-b7e3-420d-a684-e9a27f7ab27b",
+    "name": "Nick Hinrichsen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:co/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Hinrichsen",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMmhUQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4b49d3c681dec554da650bb248660b5dca8c032a/Hinrichsen,%20Nick.jpg",
+    "email": "nick.hinrichsen.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Pueblo"
+      ]
+    },
+    "created_at": "2022-03-05T23:47:25.477580+00:00",
+    "updated_at": "2026-06-04T06:16:03.540722+00:00",
+    "openstates_url": "https://openstates.org/person/nick-hinrichsen-2M9zTZcMarSohaey1zWiwF/"
+  },
+  {
+    "id": "ocd-person/ab377224-ab70-4c20-a535-baa429520e7c",
+    "name": "Robert Rodriguez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:co/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Rodriguez",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOVZTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1d263d3105ce58458603b07ad78a431ab0fa5a38/Rodriguez,Robert.jpg",
+    "email": "robert.rodriguez.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Leader",
+      "counties represented": [
+        "Arapahoe",
+        "Denver",
+        "Jefferson"
+      ]
+    },
+    "created_at": "2019-01-04T02:11:54.385504+00:00",
+    "updated_at": "2026-05-10T00:16:28.430329+00:00",
+    "openstates_url": "https://openstates.org/person/robert-rodriguez-5D51ep378RcdlGv0r9pRgC/"
+  },
+  {
+    "id": "ocd-person/45cd06eb-9967-4468-9e4e-677549e7638d",
+    "name": "Rod Pelton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:co/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Rod",
+    "family_name": "Pelton",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOU5TQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--08b2017b389fcad9ad2c05f5ffc23692931b3216/Pelton,%20Rod.jpg",
+    "email": "rod.pelton.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Baca",
+        "Bent",
+        "Cheyenne",
+        "Crowley",
+        "El Paso",
+        "Elbert",
+        "Huerfano",
+        "Kiowa",
+        "Kit Carson",
+        "Las Animas",
+        "Lincoln",
+        "Otero",
+        "Prowers"
+      ]
+    },
+    "created_at": "2019-01-04T02:11:43.392556+00:00",
+    "updated_at": "2026-05-10T00:16:26.607787+00:00",
+    "openstates_url": "https://openstates.org/person/rod-pelton-27iAQTTa539GSsxpGkDIZJ/"
+  },
+  {
+    "id": "ocd-person/fb530f21-a08e-473c-b215-9a4de6a86ee9",
+    "name": "Scott Bright",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:co/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Bright",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ScottBright.jpg",
+    "email": "scott.bright.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "1970-03-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T18:29:13.393131+00:00",
+    "updated_at": "2026-06-04T06:15:36.453917+00:00",
+    "openstates_url": "https://openstates.org/person/scott-bright-7eF1zk9bHe7t3K0HEGRLOT/"
+  },
+  {
+    "id": "ocd-person/dc9056b8-fb9c-4a66-99b8-210acce64bff",
+    "name": "Tom Sullivan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:co/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Sullivan",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOWxTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--85d8c976f450d3f48b1dbe66ac712d2be0f5e86b/Sullivan,Tom.jpg",
+    "email": "tom.sullivan.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "1956-05-17",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Arapahoe",
+        "Douglas"
+      ]
+    },
+    "created_at": "2023-01-13T22:23:42.721415+00:00",
+    "updated_at": "2026-05-10T00:16:48.375137+00:00",
+    "openstates_url": "https://openstates.org/person/tom-sullivan-6iCH2qf19PvsCJuQGVsNKB/"
+  },
+  {
+    "id": "ocd-person/473bd095-778d-4418-8e61-96a2b8005c8e",
+    "name": "Tony Exum",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:co/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Exum",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBKzFTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--d4163d37a59db187d2e91b1e4af903d1385df345/Exum,%20Tony%20SR.jpg",
+    "email": "tony.exum.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "1952-06-16",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "El Paso"
+      ]
+    },
+    "created_at": "2023-01-13T22:23:49.950074+00:00",
+    "updated_at": "2026-06-04T06:15:45.357623+00:00",
+    "openstates_url": "https://openstates.org/person/tony-exum-2APn1FN5rpNMCeu9TR0CXG/"
+  },
+  {
+    "id": "ocd-person/dbe86f29-2ecb-449e-aaf6-3fc91baf2e0e",
+    "name": "William Lindstedt",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:co/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:co/government",
+      "name": "Colorado",
+      "classification": "state"
+    },
+    "given_name": "William",
+    "family_name": "Lindstedt",
+    "image": "https://leg.colorado.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBK1ZTQXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--5f021c807d11e6b00e9c2e987dd101e88185bee0/Lindstedt,%20William.jpg",
+    "email": "william.lindstedt.senate@coleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Adams",
+        "Broomfield",
+        "Weld"
+      ]
+    },
+    "created_at": "2023-01-13T22:23:35.941211+00:00",
+    "updated_at": "2026-06-04T06:15:37.698202+00:00",
+    "openstates_url": "https://openstates.org/person/william-lindstedt-6gxXcmLxGaJvTvqh6MmJvK/"
+  }
+]

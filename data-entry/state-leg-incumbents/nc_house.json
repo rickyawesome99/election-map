@@ -1,0 +1,3929 @@
+[
+  {
+    "id": "ocd-person/559521af-e5f9-43c3-a75e-de9b242d364f",
+    "name": "Abe Jones",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:nc/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Abe",
+    "family_name": "Jones",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/780/Low",
+    "email": "abe.jones@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1952-03-07",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney",
+      "mailing address": "16 West Jones Street, Rm. 1219; Raleigh, NC 27601-1096",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Wake",
+      "legislative assistant": "Catherine Leake",
+      "legislative assistant email": "Catherine.Leake@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:12:00.397864+00:00",
+    "updated_at": "2026-06-04T07:28:09.912106+00:00",
+    "openstates_url": "https://openstates.org/person/abe-jones-2bUV4JBemvSdQh86IEIasR/"
+  },
+  {
+    "id": "ocd-person/9f9d7fb9-9981-412d-b3e2-45c7f67d189a",
+    "name": "Aisha Dew",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "107",
+      "division_id": "ocd-division/country:us/state:nc/sldl:107"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Aisha",
+    "family_name": "Dew",
+    "image": "https://static.wixstatic.com/media/382708_03a01c002bae45c2a4dd4b665892e242~mv2.png/v1/fill/w_369,h_369,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/aisha%20dew%20updated%20headshot.png",
+    "email": "aisha.dew@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:11.106954+00:00",
+    "updated_at": "2025-04-24T07:34:58.433391+00:00",
+    "openstates_url": "https://openstates.org/person/aisha-dew-4rBkwgELWqDsdXMdaiZymY/"
+  },
+  {
+    "id": "ocd-person/6ca8b8ee-96ed-4b21-94cf-d67e49f9c1c8",
+    "name": "Alan Branson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:nc/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Alan",
+    "family_name": "Branson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/alan_branson.jpg",
+    "email": "alan.branson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1951-12-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-05T19:57:09.429960+00:00",
+    "updated_at": "2025-05-15T01:21:34.299285+00:00",
+    "openstates_url": "https://openstates.org/person/alan-branson-3J2HDKlNZ9DjiBcSdOvOIq/"
+  },
+  {
+    "id": "ocd-person/95a533af-7933-4992-aea6-dfdc626b7ca6",
+    "name": "Allen Buansi",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:nc/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Allen",
+    "family_name": "Buansi",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/790/Low",
+    "email": "allen.buansi@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney",
+      "mailing address": "300 N. Salisbury Street, Rm. 514; Raleigh, NC 27603-5925",
+      "terms in senate": "1.5 (0 in Senate)",
+      "represented counties": "Orange",
+      "legislative assistant": "Austin Hahn",
+      "legislative assistant email": "Austin.Hahn@ncleg.gov"
+    },
+    "created_at": "2022-07-20T21:27:49.581326+00:00",
+    "updated_at": "2026-06-04T07:29:12.364391+00:00",
+    "openstates_url": "https://openstates.org/person/allen-buansi-4YNLxXRlo8c0efhX7pKygQ/"
+  },
+  {
+    "id": "ocd-person/fc3772c1-d98a-4325-a6c8-96b9da492ed6",
+    "name": "Allen Chesser",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:nc/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Allen",
+    "family_name": "Chesser",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/799/Low",
+    "email": "allen.chesser@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Civil Engineering - Technician",
+      "mailing address": "300 N. Salisbury Street, Rm. 610; Raleigh, NC 27603-5925",
+      "terms in senate": "1 (0 in Senate)",
+      "military experience": "Army/Army National Guard, 2003-2009",
+      "represented counties": "Nash",
+      "legislative assistant": "Sean Harrington",
+      "legislative assistant email": "Sean.Harrington@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:44.832845+00:00",
+    "updated_at": "2026-06-04T07:28:43.697639+00:00",
+    "openstates_url": "https://openstates.org/person/allen-chesser-7fvPBw41GcGKPTLbtnUXos/"
+  },
+  {
+    "id": "ocd-person/785927b3-34ca-4a2d-bc1c-df4cc8e16c47",
+    "name": "Allison Dahle",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:nc/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Allison",
+    "family_name": "Dahle",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/740/Low",
+    "email": "allison.dahle@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1964-03-25",
+    "death_date": "",
+    "extras": {
+      "occupation": "Office Manager",
+      "mailing address": "16 West Jones Street, Rm. 1217; Raleigh, NC 27601-1096",
+      "terms in senate": "3 (0 in Senate)",
+      "represented counties": "Wake",
+      "legislative assistant": "Austen High",
+      "legislative assistant email": "Austen.High@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:27.684325+00:00",
+    "updated_at": "2025-04-24T07:34:45.161395+00:00",
+    "openstates_url": "https://openstates.org/person/allison-dahle-3f5p2T60GXSTUrr6UwHGuV/"
+  },
+  {
+    "id": "ocd-person/5f309927-de7a-4fd4-930b-a369dd10fec8",
+    "name": "Amanda Cook",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:nc/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Amanda",
+    "family_name": "Cook",
+    "image": "",
+    "email": "amanda.cook@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1982-11-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-29T07:20:59.511320+00:00",
+    "updated_at": "2026-04-10T01:20:36.064790+00:00",
+    "openstates_url": "https://openstates.org/person/amanda-cook-2tcTnAP6IHWELjjXz7ypsu/"
+  },
+  {
+    "id": "ocd-person/628fc48c-a48b-4128-87f1-2391ab795e0a",
+    "name": "Amber Baker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:nc/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Amber",
+    "family_name": "Baker",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/782/Low",
+    "email": "amber.baker@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Educator",
+      "mailing address": "16 West Jones Street, Rm. 1006; Raleigh, NC 27601-1096",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Forsyth",
+      "legislative assistant": "Elijah Bowers",
+      "legislative assistant email": "Elijah.Bowers@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:57.196044+00:00",
+    "updated_at": "2026-06-04T07:28:06.482759+00:00",
+    "openstates_url": "https://openstates.org/person/amber-baker-2zywuBMH10FntpR0TeAd1W/"
+  },
+  {
+    "id": "ocd-person/46275779-8191-48be-8b0b-8373376fa23d",
+    "name": "Amos Quick",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:nc/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Amos",
+    "family_name": "Quick",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/725/Low",
+    "email": "amos.quick@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1968-08-14",
+    "death_date": "",
+    "extras": {
+      "occupation": "Pastor - Friendship Baptist Church, Lexington, NC",
+      "mailing address": "300 N. Salisbury Street, Rm. 510; Raleigh, NC 27603-5925",
+      "terms in senate": "4 (0 in Senate)",
+      "represented counties": "Guilford",
+      "legislative assistant": "Jasmine Miller",
+      "legislative assistant email": "Jasmine.Miller@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:29.699402+00:00",
+    "updated_at": "2025-04-24T07:33:40.946708+00:00",
+    "openstates_url": "https://openstates.org/person/amos-quick-28NRPPfJA6FGVl9RrjpKjl/"
+  },
+  {
+    "id": "ocd-person/5ca31513-814c-44b9-9206-aae55c05d056",
+    "name": "Anna Ferguson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "119",
+      "division_id": "ocd-division/country:us/state:nc/sldl:119"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Anna",
+    "family_name": "Ferguson",
+    "image": "",
+    "email": "anna.ferguson@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-25T01:26:10.280733+00:00",
+    "updated_at": "2026-06-04T07:29:03.355985+00:00",
+    "openstates_url": "https://openstates.org/person/anna-ferguson-2onp1Hm2rRQUWzXa2gIRuA/"
+  },
+  {
+    "id": "ocd-person/367ad234-14bc-4d86-95ee-ab1176890d6e",
+    "name": "Becky Carney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "102",
+      "division_id": "ocd-division/country:us/state:nc/sldl:102"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Becky",
+    "family_name": "Carney",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/322/Low",
+    "email": "becky.carney@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1944-12-25",
+    "death_date": "",
+    "extras": {
+      "occupation": "Legislator, Former County Commissioner",
+      "mailing address": "16 West Jones Street, Rm. 1221; Raleigh, NC 27601-1096",
+      "terms in senate": "11 (0 in Senate)",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Beth LeGrande",
+      "legislative assistant email": "Beth.LeGrande@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:11.192840+00:00",
+    "updated_at": "2025-04-24T07:34:49.081413+00:00",
+    "openstates_url": "https://openstates.org/person/becky-carney-1eniKgqyNsl11XZnt6ccRy/"
+  },
+  {
+    "id": "ocd-person/fdc7d25a-085c-4100-b5f4-a8ae51979292",
+    "name": "Ben Moss",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:nc/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Moss",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/784/Low",
+    "email": "ben.moss@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "CSX - Engineer",
+      "mailing address": "300 N. Salisbury Street, Rm. 306C; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Moore, Richmond",
+      "legislative assistant": "Jeremy Bayon",
+      "legislative assistant email": "Jeremy.Bayon@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:39.117758+00:00",
+    "updated_at": "2026-06-04T07:28:55.538895+00:00",
+    "openstates_url": "https://openstates.org/person/ben-moss-7isNP5GgEt7EdzgysdpjBS/"
+  },
+  {
+    "id": "ocd-person/cf469ccf-d24e-4ccd-a2fb-041806933b93",
+    "name": "Beth Gardner Helfrich",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:nc/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Beth",
+    "family_name": "Gardner Helfrich",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Beth_Gardner_Helfrich.jpeg",
+    "email": "beth.helfrich@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1981-01-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:04.731836+00:00",
+    "updated_at": "2025-04-24T07:33:55.247022+00:00",
+    "openstates_url": "https://openstates.org/person/beth-gardner-helfrich-6J7gGUa3xpifVA4R7ihACx/"
+  },
+  {
+    "id": "ocd-person/f1d726fb-535d-456b-9712-b689afcb7763",
+    "name": "Bill Ward",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:nc/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Ward",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/816/Low",
+    "email": "bill.ward@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "main phone": "252-339-0130",
+      "occupation": "Retired Law Enforcement",
+      "mailing address": "300 N. Salisbury Street, Rm. 418A; Raleigh, NC 27603-5925",
+      "terms in senate": "1 (0 in Senate)",
+      "military experience": "US Army, 1974-1985; US Army Reserves, 1985-1990",
+      "represented counties": "Camden, Gates, Hertford, Pasquotank",
+      "legislative assistant": "Susan Ward",
+      "legislative assistant email": "Susan.Ward@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:39.976071+00:00",
+    "updated_at": "2025-04-24T07:34:32.207888+00:00",
+    "openstates_url": "https://openstates.org/person/bill-ward-7MLTUSmrXDuslukqBeSZ6Z/"
+  },
+  {
+    "id": "ocd-person/b558be80-96b1-4df6-8714-fcba387f8abc",
+    "name": "Blair Eddins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:nc/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Blair",
+    "family_name": "Eddins",
+    "image": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/151642.jpg",
+    "email": "blair.eddins@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-10-09T22:57:47.571240+00:00",
+    "updated_at": "2025-04-24T07:34:51.061305+00:00",
+    "openstates_url": "https://openstates.org/person/blair-eddins-5WCANNz2VcAbCIocO0Edno/"
+  },
+  {
+    "id": "ocd-person/4142addf-2eb1-4557-b3d3-bcea559cbbd3",
+    "name": "Brandon Lofton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "104",
+      "division_id": "ocd-division/country:us/state:nc/sldl:104"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Lofton",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/751/Low",
+    "email": "brandon.lofton@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1978-11-05",
+    "death_date": "",
+    "extras": {
+      "occupation": "Lawyer",
+      "mailing address": "16 West Jones Street, Rm. 1309; Raleigh, NC 27601-1096",
+      "terms in senate": "3 (0 in Senate)",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Katherine Kirby",
+      "legislative assistant email": "Katherine.Kirby@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:18.539971+00:00",
+    "updated_at": "2026-06-04T07:28:40.166211+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-lofton-1z8yN0Yq0sLWRohySintFT/"
+  },
+  {
+    "id": "ocd-person/1e419504-9efe-4b1f-b1e0-6e8d7d8c74a9",
+    "name": "Brenden Jones",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:nc/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brenden",
+    "family_name": "Jones",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/723/Low",
+    "email": "brenden.jones@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Small Business Owner",
+      "mailing address": "16 West Jones Street, Rm. 1227; Raleigh, NC 27601-1096",
+      "terms in senate": "4 (0 in Senate)",
+      "represented counties": "Columbus, Robeson",
+      "legislative assistant": "Christian Rape",
+      "legislative assistant email": "Christian.Rape@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:24.905299+00:00",
+    "updated_at": "2026-04-25T01:25:45.709141+00:00",
+    "openstates_url": "https://openstates.org/person/brenden-jones-v5jw4WKWiQj9PqGotqIeX/"
+  },
+  {
+    "id": "ocd-person/c476ab83-c1f7-44a7-b7c9-4cfa4679bed8",
+    "name": "Brian Biggs",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:nc/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Biggs",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/793/Low",
+    "email": "brian.biggs@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Realtor",
+      "mailing address": "300 N. Salisbury Street, Rm. 533; Raleigh, NC 27603-5925",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Randolph",
+      "legislative assistant": "Padraig Gibbons",
+      "legislative assistant email": "Padraig.Gibbons@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:47.035878+00:00",
+    "updated_at": "2026-06-04T07:29:21.707967+00:00",
+    "openstates_url": "https://openstates.org/person/brian-biggs-5yijA3EISAlD9ZS91zXVhA/"
+  },
+  {
+    "id": "ocd-person/19c32795-3313-4f2f-a1d2-b79ff1dd81fb",
+    "name": "Brian Echevarria",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:nc/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Echevarria",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Brian_Echiveria_.jpg",
+    "email": "brian.echevarria@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:14.556795+00:00",
+    "updated_at": "2025-04-24T07:34:36.468164+00:00",
+    "openstates_url": "https://openstates.org/person/brian-echevarria-mbzdGORRI7OBG0kCZXv7z/"
+  },
+  {
+    "id": "ocd-person/0229944f-1584-4c3c-9a7b-5c97b6785a6f",
+    "name": "Brian Turner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "116",
+      "division_id": "ocd-division/country:us/state:nc/sldl:116"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Turner",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/696/Low",
+    "email": "brian.turner@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Commercial Real Estate Agent",
+      "mailing address": "16 West Jones Street, Rm. 1217; Raleigh, NC 27601-1096",
+      "terms in senate": "4 (0 in Senate)",
+      "represented counties": "Buncombe",
+      "legislative assistant": "Austen High",
+      "legislative assistant email": "Austen.High@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:27.592879+00:00",
+    "updated_at": "2025-04-24T07:34:09.946853+00:00",
+    "openstates_url": "https://openstates.org/person/brian-turner-44z9xRFsLIF5EcbSYZhWx/"
+  },
+  {
+    "id": "ocd-person/e596d2ce-a208-475c-a9c1-15e25ccb3404",
+    "name": "Bryan Cohn",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:nc/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bryan",
+    "family_name": "Cohn",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bryan__Cohn__20240808_093541.jpg",
+    "email": "bryan.cohn@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:11.260335+00:00",
+    "updated_at": "2026-01-29T07:20:48.484883+00:00",
+    "openstates_url": "https://openstates.org/person/bryan-cohn-6zEAV9sp9j43JHMgr7Hsgu/"
+  },
+  {
+    "id": "ocd-person/f1ba290a-c2a5-453a-884c-6d03a2c8e83a",
+    "name": "Carla Cunningham",
+    "party": "Independent",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "106",
+      "division_id": "ocd-division/country:us/state:nc/sldl:106"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Carla",
+    "family_name": "Cunningham",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/642/Low",
+    "email": "carla.cunningham@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1962-01-12",
+    "death_date": "",
+    "extras": {
+      "main phone": "704-509-2939",
+      "occupation": "Registered Nurse",
+      "mailing address": "300 N. Salisbury Street, Rm. 403; Raleigh, NC 27603-5925",
+      "terms in senate": "6 (0 in Senate)",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Sherrie Burnette",
+      "legislative assistant email": "Sherrie.Burnette@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:08.983875+00:00",
+    "updated_at": "2026-06-04T07:28:29.862261+00:00",
+    "openstates_url": "https://openstates.org/person/carla-cunningham-7M8E1vXBe0fp0pYX2s5Aeg/"
+  },
+  {
+    "id": "ocd-person/80495071-4aea-43ff-9548-09860c77cc90",
+    "name": "Carolyn Logan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "101",
+      "division_id": "ocd-division/country:us/state:nc/sldl:101"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Carolyn",
+    "family_name": "Logan",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/750/Low",
+    "email": "carolyn.logan@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1957-07-05",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired",
+      "mailing address": "300 N. Salisbury Street, Rm. 503; Raleigh, NC 27603-5925",
+      "terms in senate": "3 (0 in Senate)",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Robert Lockard, III",
+      "legislative assistant email": "Robert.Lockard@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:32.683845+00:00",
+    "updated_at": "2026-06-04T07:29:13.515063+00:00",
+    "openstates_url": "https://openstates.org/person/carolyn-logan-3u4WOgP8EGEr002MzCST1U/"
+  },
+  {
+    "id": "ocd-person/6f78b8a8-f77c-4aef-bfa4-b3dac3312e33",
+    "name": "Carson Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:nc/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Carson",
+    "family_name": "Smith",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/755/Low",
+    "email": "carson.smith@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Sheriff - Pender County",
+      "mailing address": "300 N. Salisbury Street, Rm. 526; Raleigh, NC 27603-5925",
+      "terms in senate": "3 (0 in Senate)",
+      "represented counties": "Onslow, Pender",
+      "legislative assistant": "Gloria Whitehead",
+      "legislative assistant email": "Gloria.Whitehead@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:24.948602+00:00",
+    "updated_at": "2025-04-24T07:34:51.906910+00:00",
+    "openstates_url": "https://openstates.org/person/carson-smith-3OLJilLy56px7ynon0rIyh/"
+  },
+  {
+    "id": "ocd-person/51b17197-aa93-4c8f-821d-81a32b41e2ae",
+    "name": "Celeste Cairns",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:nc/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Celeste",
+    "family_name": "Cairns",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/797/Low",
+    "email": "celeste.cairns@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Former CPA",
+      "mailing address": "300 N. Salisbury Street, Rm. 602; Raleigh, NC 27603-5925",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Carteret, Craven",
+      "legislative assistant": "Jan Cope",
+      "legislative assistant email": "Jan.Cope@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:42.755290+00:00",
+    "updated_at": "2026-06-04T07:28:26.792848+00:00",
+    "openstates_url": "https://openstates.org/person/celeste-cairns-2U9TAZcC1zwDuuk5M9nDf4/"
+  },
+  {
+    "id": "ocd-person/2736ade6-4cc1-4833-ab0d-cf1953227726",
+    "name": "Charles Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:nc/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Charles",
+    "family_name": "Smith",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/813/Low",
+    "email": "charles.smith@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "main phone": "910-977-1602",
+      "occupation": "Attorney",
+      "mailing address": "16 West Jones Street, Rm. 1021; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Cumberland",
+      "legislative assistant": "Leigh Lawrence",
+      "legislative assistant email": "Leigh.Lawrence@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:43.411128+00:00",
+    "updated_at": "2026-06-04T07:28:10.618752+00:00",
+    "openstates_url": "https://openstates.org/person/charles-smith-1BzgjW1hvU3SnLAUEEOPG2/"
+  },
+  {
+    "id": "ocd-person/311f0605-29d2-4608-a964-323768582198",
+    "name": "Charlie Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:nc/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Charlie",
+    "family_name": "Miller",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/778/Low",
+    "email": "charles.miller@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Chief Deputy - Brunswick County Sheriff's Office",
+      "mailing address": "16 West Jones Street, Rm. 2219; Raleigh, NC 27601-1096",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Brunswick, New Hanover",
+      "legislative assistant": "Natalie Nichols",
+      "legislative assistant email": "Natalie.Nichols@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:57.062193+00:00",
+    "updated_at": "2026-06-04T07:28:36.843594+00:00",
+    "openstates_url": "https://openstates.org/person/charlie-miller-1Ugni9VwssZHr3MUQJG6ZM/"
+  },
+  {
+    "id": "ocd-person/fdf6de7b-aad3-403b-96c3-a6a007b11ccd",
+    "name": "Chris Humphrey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:nc/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Humphrey",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/747/Low",
+    "email": "chris.humphrey@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Allstate Insurance Agent",
+      "mailing address": "300 N. Salisbury Street, Rm. 638; Raleigh, NC 27603-5925",
+      "terms in senate": "3 (0 in Senate)",
+      "represented counties": "Greene, Jones, Lenoir",
+      "legislative assistant": "Chamberlayne Cromwell",
+      "legislative assistant email": "Chamberlayne.Cromwell@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:21.481212+00:00",
+    "updated_at": "2026-06-04T07:28:02.232616+00:00",
+    "openstates_url": "https://openstates.org/person/chris-humphrey-7jDsRq25v2H5lRykS5CJ2L/"
+  },
+  {
+    "id": "ocd-person/702adc2f-f401-4ab4-ac8e-8fcf1a14376b",
+    "name": "Cody Huneycutt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:nc/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Cody",
+    "family_name": "Huneycutt",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/797923/797923.jpg",
+    "email": "cody.huneycutt@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:10.500476+00:00",
+    "updated_at": "2025-04-24T07:34:02.416110+00:00",
+    "openstates_url": "https://openstates.org/person/cody-huneycutt-3Pej7SFfWThpbETsvG0SwF/"
+  },
+  {
+    "id": "ocd-person/a5d3d142-3601-429e-954c-fdb98b0e628a",
+    "name": "Cynthia Ball",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:nc/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Cynthia",
+    "family_name": "Ball",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/711/Low",
+    "email": "cynthia.ball@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Mediator",
+      "mailing address": "16 West Jones Street, Rm. 1004; Raleigh, NC 27601-1096",
+      "terms in senate": "4 (0 in Senate)",
+      "represented counties": "Wake",
+      "legislative assistant": "Emma Eatman",
+      "legislative assistant email": "Emma.Eatman@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:34.996500+00:00",
+    "updated_at": "2025-04-24T07:34:36.953357+00:00",
+    "openstates_url": "https://openstates.org/person/cynthia-ball-52uX9hh6E7ccahSgEbFq4g/"
+  },
+  {
+    "id": "ocd-person/d0cbde92-5f2b-4177-822a-f100613a9b30",
+    "name": "Dante Pittman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:nc/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Dante",
+    "family_name": "Pittman",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DantePittman2024.JPG",
+    "email": "dante.pittman@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:08.808053+00:00",
+    "updated_at": "2025-04-24T07:34:35.942687+00:00",
+    "openstates_url": "https://openstates.org/person/dante-pittman-6LzZV4NHxJQ89MUlowLTDU/"
+  },
+  {
+    "id": "ocd-person/6b06a564-763d-421d-bc9b-4779f4dbc1a4",
+    "name": "David Willis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:nc/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Willis",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/779/Low",
+    "email": "david.willis@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Small Business Owner",
+      "mailing address": "300 N. Salisbury Street, Rm. 420; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Union",
+      "legislative assistant": "Jalynn McDonald",
+      "legislative assistant email": "Jalynn.McDonald@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:58.301589+00:00",
+    "updated_at": "2026-06-04T07:28:45.623513+00:00",
+    "openstates_url": "https://openstates.org/person/david-willis-3FxDPFo73BhrLFDOatUbMy/"
+  },
+  {
+    "id": "ocd-person/ffdbb3fa-0445-460a-9501-18b5028fbe50",
+    "name": "Dean Arp",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:nc/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Dean",
+    "family_name": "Arp",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/640/Low",
+    "email": "dean.arp@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1966-07-07",
+    "death_date": "",
+    "extras": {
+      "main phone": "704-282-0418",
+      "occupation": "Engineer - Arp Engineering, Inc.",
+      "mailing address": "300 N. Salisbury Street, Rm. 307A; Raleigh, NC 27603-5925",
+      "terms in senate": "6 (0 in Senate)",
+      "represented counties": "Union",
+      "legislative assistant": "Anne Arp",
+      "legislative assistant email": "Anne.Arp@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:23.544873+00:00",
+    "updated_at": "2025-04-24T07:34:24.593349+00:00",
+    "openstates_url": "https://openstates.org/person/dean-arp-7mnRluhQi28p0J5uGeEmbA/"
+  },
+  {
+    "id": "ocd-person/cab978f1-1c91-41e4-9f2e-69af3c89bbf8",
+    "name": "Deb Butler",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:nc/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Deb",
+    "family_name": "Butler",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/730/Low",
+    "email": "deb.butler@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney",
+      "mailing address": "16 West Jones Street, Rm. 1109; Raleigh, NC 27601-1096",
+      "terms in senate": "3.5 (0 in Senate)",
+      "represented counties": "New Hanover",
+      "legislative assistant": "Maddie Majerus",
+      "legislative assistant email": "Maddie.Majerus@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:17.516500+00:00",
+    "updated_at": "2025-04-24T07:34:29.032433+00:00",
+    "openstates_url": "https://openstates.org/person/deb-butler-6AXD5o5Cxk27R3xRZ6or60/"
+  },
+  {
+    "id": "ocd-person/fcff21e8-b2a0-4fe5-8fb9-1b1c084a26e1",
+    "name": "Dennis Riddell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:nc/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Dennis",
+    "family_name": "Riddell",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/665/Low",
+    "email": "dennis.riddell@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1956-10-21",
+    "death_date": "",
+    "extras": {
+      "main phone": "336-222-1303",
+      "occupation": "Marine Engineer, Educator, Thermographer",
+      "mailing address": "300 N. Salisbury Street, Rm. 416A; Raleigh, NC 27603-5925",
+      "terms in senate": "6 (0 in Senate)",
+      "military experience": "US Navy Reserve, 1978-1988",
+      "represented counties": "Alamance",
+      "legislative assistant": "Polly Riddell",
+      "legislative assistant email": "Polly.Riddell@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:28.245913+00:00",
+    "updated_at": "2025-04-24T07:34:08.405341+00:00",
+    "openstates_url": "https://openstates.org/person/dennis-riddell-7hOf3iwVyIBgrgrdhfFQET/"
+  },
+  {
+    "id": "ocd-person/636555c9-b55c-47f8-9fcc-c9cb93b27f50",
+    "name": "Destin Hall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:nc/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Destin",
+    "family_name": "Hall",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/719/Low",
+    "email": "destin.hall@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1987-07-17",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney",
+      "mailing address": "16 West Jones Street, Rm. 2301; Raleigh, NC 27601-1096",
+      "terms in senate": "4 (0 in Senate)",
+      "represented counties": "Caldwell, Watauga",
+      "legislative assistant": "Kari Nadler",
+      "legislative assistant email": "Kari.Nadler@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:34.194330+00:00",
+    "updated_at": "2025-04-24T07:33:30.011651+00:00",
+    "openstates_url": "https://openstates.org/person/destin-hall-31YY8gLlLkmLtXrSdIYCh6/"
+  },
+  {
+    "id": "ocd-person/034ed56d-8058-4489-be3e-3d4b9977ac4b",
+    "name": "Diane Wheatley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:nc/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Diane",
+    "family_name": "Wheatley",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/785/Low",
+    "email": "diane.wheatley@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1951-04-12",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired",
+      "mailing address": "300 N. Salisbury Street, Rm. 301N; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Cumberland",
+      "legislative assistant": "Al Wheatley",
+      "legislative assistant email": "Al.Wheatley@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:55.668608+00:00",
+    "updated_at": "2026-06-04T07:28:26.023845+00:00",
+    "openstates_url": "https://openstates.org/person/diane-wheatley-6F0FhDPyL1sjMVZ0sF7vv/"
+  },
+  {
+    "id": "ocd-person/7e1cb220-ff5e-4543-bc51-f44ba7ee0a2b",
+    "name": "Donna White",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:nc/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Donna",
+    "family_name": "White",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/728/Low",
+    "email": "donna.white@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1948-11-29",
+    "death_date": "",
+    "extras": {
+      "main phone": "919-889-1239",
+      "occupation": "Registered Nurse, Aging Specialist",
+      "mailing address": "300 N. Salisbury Street, Rm. 307B; Raleigh, NC 27603-5925",
+      "terms in senate": "4 (0 in Senate)",
+      "represented counties": "Johnston",
+      "legislative assistant": "Jeff Jennings",
+      "legislative assistant email": "Jeff.Jennings@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:32.675359+00:00",
+    "updated_at": "2025-04-24T07:34:10.493501+00:00",
+    "openstates_url": "https://openstates.org/person/donna-white-3py97voOBSXzIgYVC53071/"
+  },
+  {
+    "id": "ocd-person/d7308aed-454d-4091-b32c-606f516e9421",
+    "name": "Donnie Loftis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "109",
+      "division_id": "ocd-division/country:us/state:nc/sldl:109"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Donnie",
+    "family_name": "Loftis",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/788/Low",
+    "email": "donnie.loftis@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1956-09-07",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired",
+      "mailing address": "300 N. Salisbury Street, Rm. 608; Raleigh, NC 27603-5925",
+      "terms in senate": "1.5 (0 in Senate)",
+      "military experience": "US Army, 1980-2010",
+      "represented counties": "Gaston",
+      "legislative assistant": "Deena Loftis",
+      "legislative assistant email": "Deena.Loftis@ncleg.gov"
+    },
+    "created_at": "2021-12-16T19:00:44.667428+00:00",
+    "updated_at": "2026-06-04T07:28:30.841833+00:00",
+    "openstates_url": "https://openstates.org/person/donnie-loftis-6Y3X87OO1KFRxpke0R3Vnl/"
+  },
+  {
+    "id": "ocd-person/dd2200c1-2bdb-4afc-a557-ebcbb5f1eee8",
+    "name": "Donny Lambeth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:nc/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Donny",
+    "family_name": "Lambeth",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/646/Low",
+    "email": "donny.lambeth@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Consultant",
+      "mailing address": "300 N. Salisbury Street, Rm. 303; Raleigh, NC 27603-5925",
+      "terms in senate": "6 (0 in Senate)",
+      "represented counties": "Forsyth",
+      "legislative assistant": "Pan Briles",
+      "legislative assistant email": "Pan.Briles@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:11.523567+00:00",
+    "updated_at": "2025-04-24T07:34:34.002097+00:00",
+    "openstates_url": "https://openstates.org/person/donny-lambeth-6jGqJ0UfSHKbEiChH0pARk/"
+  },
+  {
+    "id": "ocd-person/0573192d-0557-449a-9c3e-8462844a79ab",
+    "name": "Dudley Greene",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:nc/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Dudley",
+    "family_name": "Greene",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/777/Low",
+    "email": "dudley.greene@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Sheriff - McDowell County",
+      "mailing address": "300 N. Salisbury Street, Rm. 604; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Avery, McDowell, Mitchell, Yancey",
+      "legislative assistant": "Allyson Greene",
+      "legislative assistant email": "Allyson.Greene@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:53.005433+00:00",
+    "updated_at": "2026-06-04T07:28:50.988871+00:00",
+    "openstates_url": "https://openstates.org/person/dudley-greene-AHYpGkKNdS2HdFIdB33et/"
+  },
+  {
+    "id": "ocd-person/10d93679-f5f4-496f-8b7c-89f923038ac0",
+    "name": "Ed Goodwin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:nc/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Goodwin",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/744/Low",
+    "email": "edward.goodwin@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1952-09-04",
+    "death_date": "",
+    "extras": {
+      "main phone": "252-482-8168",
+      "occupation": "Retired",
+      "mailing address": "16 West Jones Street, Rm. 2217; Raleigh, NC 27601-1096",
+      "terms in senate": "3 (0 in Senate)",
+      "military experience": "US Air Force, 1972-1976",
+      "represented counties": "Chowan, Currituck, Dare, Perquimans, Tyrrell, Washington",
+      "legislative assistant": "Richard Blackwelder",
+      "legislative assistant email": "Richard.Blackwelder@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:25.645783+00:00",
+    "updated_at": "2025-07-17T07:31:35.798685+00:00",
+    "openstates_url": "https://openstates.org/person/ed-goodwin-Vn8ubaThUda2INfDbN8rI/"
+  },
+  {
+    "id": "ocd-person/8c10abe1-4b81-404a-9164-9823e023cd2b",
+    "name": "Eric Ager",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "114",
+      "division_id": "ocd-division/country:us/state:nc/sldl:114"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Ager",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/819/Low",
+    "email": "eric.ager@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Hickory Nut Gap Farm Business Operations Director/Project HNG Executive Director",
+      "mailing address": "16 West Jones Street, Rm. 1019; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "military experience": "US Navy, 1996-2021",
+      "represented counties": "Buncombe",
+      "legislative assistant": "Rachel Ager",
+      "legislative assistant email": "Rachel.Ager@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:46.271013+00:00",
+    "updated_at": "2026-06-04T07:28:35.542186+00:00",
+    "openstates_url": "https://openstates.org/person/eric-ager-4GIXlZ6DGv46990MKzTLvX/"
+  },
+  {
+    "id": "ocd-person/ea801bb0-b3bd-4dbc-9164-25e7f4e63f84",
+    "name": "Erin Par\u00e9",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:nc/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Erin",
+    "family_name": "Par\u00e9",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/770/Low",
+    "email": "erin.pare@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Small Business Owner",
+      "mailing address": "300 N. Salisbury Street, Rm. 306B2; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Wake",
+      "legislative assistant": "Sarah Wetherby",
+      "legislative assistant email": "Sarah.Wetherby@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:56.802532+00:00",
+    "updated_at": "2025-04-24T07:33:14.233384+00:00",
+    "openstates_url": "https://openstates.org/person/erin-pare-78UkVQCF98SefaCo1N3zr2/"
+  },
+  {
+    "id": "ocd-person/1a32e77b-9880-467c-88c8-6aeb738f6525",
+    "name": "Frances Jackson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:nc/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Frances",
+    "family_name": "Jackson",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/803/Low",
+    "email": "frances.jackson@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Educator, Adjunct",
+      "mailing address": "16 West Jones Street, Rm. 1017; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Cumberland",
+      "legislative assistant": "Valencia Handy",
+      "legislative assistant email": "Valencia.Handy@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:36.894130+00:00",
+    "updated_at": "2026-06-04T07:28:44.903885+00:00",
+    "openstates_url": "https://openstates.org/person/frances-jackson-nR3xFEo2hU8BOpwMEL86P/"
+  },
+  {
+    "id": "ocd-person/f75593f8-b178-47f1-8e72-e403f04dfb5d",
+    "name": "Frank Iler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:nc/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Frank",
+    "family_name": "Iler",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/598/Low",
+    "email": "frank.iler@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1942-01-10",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired",
+      "mailing address": "300 N. Salisbury Street, Rm. 639; Raleigh, NC 27603-5925",
+      "terms in senate": "7.5 (0 in Senate)",
+      "represented counties": "Brunswick",
+      "legislative assistant": "Carla Langdon",
+      "legislative assistant email": "Carla.Langdon@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:30.040544+00:00",
+    "updated_at": "2025-04-24T07:34:46.895146+00:00",
+    "openstates_url": "https://openstates.org/person/frank-iler-7WiDGifeTtoidrwZXBAqMv/"
+  },
+  {
+    "id": "ocd-person/32edee21-40a5-491f-b28e-316ba7262360",
+    "name": "Garland Pierce",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:nc/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Garland",
+    "family_name": "Pierce",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/497/Low",
+    "email": "garland.pierce@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1953-07-09",
+    "death_date": "",
+    "extras": {
+      "main phone": "910-369-2844",
+      "occupation": "Baptist Minister",
+      "mailing address": "16 West Jones Street, Rm. 1204; Raleigh, NC 27601-1096",
+      "terms in senate": "10 (0 in Senate)",
+      "military experience": "US Army, 1971-1974",
+      "represented counties": "Hoke, Scotland",
+      "legislative assistant": "Brandon R. Combs",
+      "legislative assistant email": "Brandon.Combs@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:14.208419+00:00",
+    "updated_at": "2025-04-24T07:33:57.656093+00:00",
+    "openstates_url": "https://openstates.org/person/garland-pierce-1Y6LkI5vOySPOwzIpg6NnM/"
+  },
+  {
+    "id": "ocd-person/d2ab7bb8-d0d6-4824-a42e-d180c2644f9e",
+    "name": "Gloristine Brown",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:nc/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Gloristine",
+    "family_name": "Brown",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/794/Low",
+    "email": "gloristine.brown@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "mailing address": "16 West Jones Street, Rm. 1023; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Pitt",
+      "legislative assistant": "Graeme Strickland",
+      "legislative assistant email": "Graeme.Strickland@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:44.985969+00:00",
+    "updated_at": "2026-06-04T07:29:04.583795+00:00",
+    "openstates_url": "https://openstates.org/person/gloristine-brown-6PWkuwWn4j9RfXgLm2ojfi/"
+  },
+  {
+    "id": "ocd-person/aca7632d-5a2a-470c-bb83-6cf374c68172",
+    "name": "Grant Campbell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:nc/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Grant",
+    "family_name": "Campbell",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/campbellgrant.jpg",
+    "email": "grant.campbell@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1971-09-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:06.019123+00:00",
+    "updated_at": "2025-04-24T07:34:19.999228+00:00",
+    "openstates_url": "https://openstates.org/person/grant-campbell-5FnAwTQHJBEPk5oLi8kPsg/"
+  },
+  {
+    "id": "ocd-person/940d4a15-ee12-4a3b-a7b5-70b9dea38379",
+    "name": "Harry Warren",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:nc/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Harry",
+    "family_name": "Warren",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/630/Low",
+    "email": "harry.warren@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1950-05-31",
+    "death_date": "",
+    "extras": {
+      "occupation": "Human Resource Specialist",
+      "mailing address": "300 N. Salisbury Street, Rm. 611; Raleigh, NC 27603-5925",
+      "terms in senate": "7 (0 in Senate)",
+      "represented counties": "Rowan",
+      "legislative assistant": "Cristy Yates",
+      "legislative assistant email": "Cristy.Yates@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:29.228586+00:00",
+    "updated_at": "2025-04-24T07:34:19.157537+00:00",
+    "openstates_url": "https://openstates.org/person/harry-warren-4VMw8NwIf4Okiprj2Oa0lt/"
+  },
+  {
+    "id": "ocd-person/d01232af-826f-441e-85c0-efaedd1ba422",
+    "name": "Heather Rhyne",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:nc/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Heather",
+    "family_name": "Rhyne",
+    "image": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/148921.jpg",
+    "email": "heather.rhyne@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-10-09T22:57:31.828049+00:00",
+    "updated_at": "2025-04-24T07:34:26.790801+00:00",
+    "openstates_url": "https://openstates.org/person/heather-rhyne-6KciffePCssqc9JV4yhEFW/"
+  },
+  {
+    "id": "ocd-person/9b6a3a48-9827-421f-9925-4717340110ab",
+    "name": "Howard Penny",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:nc/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Howard",
+    "family_name": "Penny",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/768/Low",
+    "email": "howard.penny@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1947-08-05",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Agribusiness",
+      "mailing address": "300 N. Salisbury Street, Rm. 418C; Raleigh, NC 27603-5925",
+      "terms in senate": "2.5 (0 in Senate)",
+      "represented counties": "Harnett, Johnston",
+      "legislative assistant": "Grace Rogers",
+      "legislative assistant email": "Grace.Rogers@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:58.509893+00:00",
+    "updated_at": "2026-06-04T07:28:38.609347+00:00",
+    "openstates_url": "https://openstates.org/person/howard-penny-4jGM7metDfKBGOSKG8JMIF/"
+  },
+  {
+    "id": "ocd-person/f7ffa24f-4c1f-416f-bf1d-30d762d9c6c3",
+    "name": "Hugh Blackwell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:nc/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Hugh",
+    "family_name": "Blackwell",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/580/Low",
+    "email": "hugh.blackwell@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1944-07-14",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Attorney",
+      "mailing address": "300 N. Salisbury Street, Rm. 541; Raleigh, NC 27603-5925",
+      "terms in senate": "8 (0 in Senate)",
+      "military experience": "US Army Reserve",
+      "represented counties": "Burke",
+      "legislative assistant": "Trevor Fulcher",
+      "legislative assistant email": "Trevor.Fulcher@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:20.017250+00:00",
+    "updated_at": "2025-04-24T07:34:44.664707+00:00",
+    "openstates_url": "https://openstates.org/person/hugh-blackwell-7XxveJ1fLdjO1DMQZp3SXT/"
+  },
+  {
+    "id": "ocd-person/11c5404c-5cb6-4f99-84a5-711a23e6295f",
+    "name": "Jake Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "113",
+      "division_id": "ocd-division/country:us/state:nc/sldl:113"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jake",
+    "family_name": "Johnson",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/762/Low",
+    "email": "jake.johnson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Real Estate",
+      "mailing address": "300 N. Salisbury Street, Rm. 306B1; Raleigh, NC 27603-5925",
+      "terms in senate": "2.5 (0 in Senate)",
+      "represented counties": "Henderson, McDowell, Polk, Rutherford",
+      "legislative assistant": "Megan Kluttz",
+      "legislative assistant email": "Megan.Kluttz@ncleg.gov"
+    },
+    "created_at": "2020-05-09T05:14:18.431643+00:00",
+    "updated_at": "2025-04-24T07:33:23.241754+00:00",
+    "openstates_url": "https://openstates.org/person/jake-johnson-XX0qFdtx9BPHxlSeqeaDf/"
+  },
+  {
+    "id": "ocd-person/4547831d-14b9-4d9d-9e3c-15b66c389054",
+    "name": "James Roberson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:nc/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Roberson",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/786/Low",
+    "email": "james.roberson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Sr. Dean and CCO, Western Wake Campus - Wake Technical Community College",
+      "mailing address": "300 N. Salisbury Street, Rm. 511; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Wake",
+      "legislative assistant": "Rebecca Llewellyn",
+      "legislative assistant email": "Rebecca.Llewellyn@ncleg.gov"
+    },
+    "created_at": "2021-01-23T17:53:36.506044+00:00",
+    "updated_at": "2026-06-04T07:28:46.985536+00:00",
+    "openstates_url": "https://openstates.org/person/james-roberson-26j9PB8l9vupRuErcgZwUW/"
+  },
+  {
+    "id": "ocd-person/1a75f967-8f35-40aa-8b0a-990a135e70cb",
+    "name": "Jay Adams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:nc/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Adams",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/697/Low",
+    "email": "jay.adams@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Commercial Real Estate Broker",
+      "mailing address": "16 West Jones Street, Rm. 2207; Raleigh, NC 27601-1096",
+      "terms in senate": "5 (0 in Senate)",
+      "represented counties": "Catawba",
+      "legislative assistant": "Susan Phillips",
+      "legislative assistant email": "Susan.Phillips@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:21.369237+00:00",
+    "updated_at": "2025-04-24T07:34:50.575441+00:00",
+    "openstates_url": "https://openstates.org/person/jay-adams-nviJzXM7e34En6DMjeljP/"
+  },
+  {
+    "id": "ocd-person/09d4ccb5-4456-4f33-aea7-36f3e2ef9e43",
+    "name": "Jeff McNeely",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:nc/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "McNeely",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/761/Low",
+    "email": "jeffrey.mcneely@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1964-06-12",
+    "death_date": "",
+    "extras": {
+      "occupation": "Owner of G&M Milling",
+      "mailing address": "300 N. Salisbury Street, Rm. 606; Raleigh, NC 27603-5925",
+      "terms in senate": "2.5 (0 in Senate)",
+      "represented counties": "Iredell",
+      "legislative assistant": "Abigail McKinney",
+      "legislative assistant email": "Abigail.McKinney@ncleg.gov"
+    },
+    "created_at": "2020-05-09T05:14:24.723249+00:00",
+    "updated_at": "2026-06-04T07:29:18.914443+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-mcneely-IYBCQ5jztF7wnCk2FGJgR/"
+  },
+  {
+    "id": "ocd-person/f3f10d50-4117-41f8-b2af-c9273d3c425e",
+    "name": "Jeff Zenger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:nc/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Zenger",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/775/Low",
+    "email": "jeff.zenger@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "General Contractor and Developer",
+      "mailing address": "300 N. Salisbury Street, Rm. 632; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Forsyth",
+      "legislative assistant": "Penny Jordan",
+      "legislative assistant email": "Penny.Jordan@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:57.794816+00:00",
+    "updated_at": "2026-06-04T07:28:46.398521+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-zenger-7QJINrxCICfki5lv2EBQze/"
+  },
+  {
+    "id": "ocd-person/1c0b287a-2695-47e3-8c7a-1868db5c8d5c",
+    "name": "Jennifer Balkcom",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "117",
+      "division_id": "ocd-division/country:us/state:nc/sldl:117"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jennifer",
+    "family_name": "Balkcom",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/820/Low",
+    "email": "jennifer.balkcom@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Mortgage Loan Officer",
+      "mailing address": "16 West Jones Street, Rm. 2215; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Henderson",
+      "legislative assistant": "Alison B. Johnson",
+      "legislative assistant email": "Alison.Johnson@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:51.611178+00:00",
+    "updated_at": "2026-06-04T07:29:06.706343+00:00",
+    "openstates_url": "https://openstates.org/person/jennifer-balkcom-quspjw5cKNx6sjZWmfD4u/"
+  },
+  {
+    "id": "ocd-person/2fdb425d-47c9-4683-943e-15a566f3552b",
+    "name": "Jimmy Dixon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:nc/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jimmy",
+    "family_name": "Dixon",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/613/Low",
+    "email": "jimmy.dixon@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1945-02-11",
+    "death_date": "",
+    "extras": {
+      "main phone": "910-590-1740",
+      "occupation": "Farmer",
+      "mailing address": "16 West Jones Street, Rm. 2226; Raleigh, NC 27601-1096",
+      "terms in senate": "7 (0 in Senate)",
+      "represented counties": "Duplin, Wayne",
+      "legislative assistant": "Michael Wiggins",
+      "legislative assistant email": "Michael.Wiggins@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:10.527755+00:00",
+    "updated_at": "2025-04-24T07:34:02.930537+00:00",
+    "openstates_url": "https://openstates.org/person/jimmy-dixon-1SIq9GG6qC75l5IJ70umHj/"
+  },
+  {
+    "id": "ocd-person/50435516-ccee-4b72-9075-e27a0bfe0a72",
+    "name": "Joe Pike",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:nc/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Pike",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/808/Low",
+    "email": "joe.pike@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Business Owner/President, Twisted Grape Investments Inc.",
+      "mailing address": "300 N. Salisbury Street, Rm. 542; Raleigh, NC 27603-5925",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Harnett",
+      "legislative assistant": "Deborah Holder",
+      "legislative assistant email": "Deborah.Holder@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:40.693078+00:00",
+    "updated_at": "2026-06-04T07:29:05.198797+00:00",
+    "openstates_url": "https://openstates.org/person/joe-pike-2RS9k3O7hy5xPLTzZVGMU6/"
+  },
+  {
+    "id": "ocd-person/cc410819-75a4-46dd-a3d5-edbd80d9f861",
+    "name": "John Bell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:nc/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Bell",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/661/Low",
+    "email": "john.bell@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1979-05-18",
+    "death_date": "",
+    "extras": {
+      "occupation": "RISE Capital",
+      "mailing address": "300 N. Salisbury Street, Rm. 301F; Raleigh, NC 27603-5925",
+      "terms in senate": "6 (0 in Senate)",
+      "represented counties": "Wayne",
+      "legislative assistant": "Susan W. Horne",
+      "legislative assistant email": "Susan.Horne@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:33.027156+00:00",
+    "updated_at": "2025-04-24T07:33:32.983344+00:00",
+    "openstates_url": "https://openstates.org/person/john-bell-6DQ9YvPRBQF1T0oRI1UbPV/"
+  },
+  {
+    "id": "ocd-person/3a96a66b-58e9-4ce5-bc6c-803b19c2746d",
+    "name": "John Blust",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:nc/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Blust",
+    "image": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/21657.jpg",
+    "email": "john.blust@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1954-06-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-10-09T22:57:42.322190+00:00",
+    "updated_at": "2025-04-24T07:34:54.404483+00:00",
+    "openstates_url": "https://openstates.org/person/john-blust-1mYOwDZ9uk7cI4SN01YqBp/"
+  },
+  {
+    "id": "ocd-person/7d07a14d-a5dc-46a9-8277-85fee42921a1",
+    "name": "John Lowery",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:nc/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Lowery",
+    "image": "",
+    "email": "john.lowery@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-29T07:21:07.887766+00:00",
+    "updated_at": "2026-04-10T01:20:33.116111+00:00",
+    "openstates_url": "https://openstates.org/person/john-lowery-3nvWizmoGr2xJYmztcM1hZ/"
+  },
+  {
+    "id": "ocd-person/bde014bb-27c1-42a3-909f-c5d96cca5c3f",
+    "name": "John Sauls",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:nc/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Sauls",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/393/Low",
+    "email": "john.sauls@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1949-11-29",
+    "death_date": "",
+    "extras": {
+      "main phone": "919-775-8033",
+      "occupation": "Minister",
+      "mailing address": "300 N. Salisbury Street, Rm. 408; Raleigh, NC 27603-5925",
+      "terms in senate": "6 (0 in Senate)",
+      "military experience": "US Army, 1969",
+      "represented counties": "Lee, Moore",
+      "legislative assistant": "Karen Rosser",
+      "legislative assistant email": "Karen.Rosser@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:12.044224+00:00",
+    "updated_at": "2025-04-24T07:34:17.558869+00:00",
+    "openstates_url": "https://openstates.org/person/john-sauls-5mHxDNrFFiGGkCpM24hUPH/"
+  },
+  {
+    "id": "ocd-person/cb059250-c895-4a14-bfa2-997aed42155e",
+    "name": "John Torbett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "108",
+      "division_id": "ocd-division/country:us/state:nc/sldl:108"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Torbett",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/606/Low",
+    "email": "john.torbett@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1956-05-21",
+    "death_date": "",
+    "extras": {
+      "main phone": "704-263-9282",
+      "occupation": "Legislator",
+      "mailing address": "300 N. Salisbury Street, Rm. 538; Raleigh, NC 27603-5925",
+      "terms in senate": "7 (0 in Senate)",
+      "represented counties": "Gaston",
+      "legislative assistant": "Viddia Torbett",
+      "legislative assistant email": "Viddia.Torbett@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:09.488105+00:00",
+    "updated_at": "2025-04-24T07:33:58.853584+00:00",
+    "openstates_url": "https://openstates.org/person/john-torbett-6B5zI6f7M0UhFljdkVGwAQ/"
+  },
+  {
+    "id": "ocd-person/a8fb7327-cfc3-4951-a15f-5a60ba05dcba",
+    "name": "Jonathan Almond",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:nc/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jonathan",
+    "family_name": "Almond",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jonathan_Almond_20241029_031016.png",
+    "email": "jonathan.almond@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:10.864070+00:00",
+    "updated_at": "2025-07-17T07:31:11.365002+00:00",
+    "openstates_url": "https://openstates.org/person/jonathan-almond-58rcfz5V5LfLueFnsP6pdS/"
+  },
+  {
+    "id": "ocd-person/196e72cf-7987-4847-8e2f-03b540064e86",
+    "name": "Jordan Lopez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "112",
+      "division_id": "ocd-division/country:us/state:nc/sldl:112"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jordan",
+    "family_name": "Lopez",
+    "image": "https://lopez4nc.com/wp-content/uploads/2023/12/FAV1127_LOPEZ_-121.webp",
+    "email": "jordan.lopez@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:05.380212+00:00",
+    "updated_at": "2025-04-24T07:33:48.824336+00:00",
+    "openstates_url": "https://openstates.org/person/jordan-lopez-lzHYtFaImZF2bb1tyrKcA/"
+  },
+  {
+    "id": "ocd-person/e9c35f8c-48f0-46e3-bd47-2e9481abc971",
+    "name": "Julia Greenfield",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:nc/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Julia",
+    "family_name": "Greenfield",
+    "image": "https://greenvoterguidenc.org/wp-content/uploads/Julia-Greenfield-square-400x400.png",
+    "email": "julia.greenfield@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:07.336373+00:00",
+    "updated_at": "2025-04-24T07:33:51.287726+00:00",
+    "openstates_url": "https://openstates.org/person/julia-greenfield-776UsKf39MOOTL4e2ZPDTF/"
+  },
+  {
+    "id": "ocd-person/5318144e-d466-40ea-8e35-f0f09bf57760",
+    "name": "Julia Howard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:nc/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Julia",
+    "family_name": "Howard",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/53/Low",
+    "email": "julia.howard@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1944-08-20",
+    "death_date": "",
+    "extras": {
+      "main phone": "336-751-3538",
+      "occupation": "Appraiser, Realtor",
+      "mailing address": "300 N. Salisbury Street, Rm. 302; Raleigh, NC 27603-5925",
+      "terms in senate": "18 (0 in Senate)",
+      "represented counties": "Davie, Rowan, Yadkin",
+      "legislative assistant": "Rita Harris",
+      "legislative assistant email": "Rita.Harris@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:35.312763+00:00",
+    "updated_at": "2025-04-24T07:34:41.953799+00:00",
+    "openstates_url": "https://openstates.org/person/julia-howard-2WnMmNIj284ae6mh9JJKvA/"
+  },
+  {
+    "id": "ocd-person/7b4481a0-466b-44be-8b39-def9e1bc04f8",
+    "name": "Julie von Haefen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:nc/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "von Haefen",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/758/Low",
+    "email": "julie.vonhaefen@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1971-02-04",
+    "death_date": "",
+    "extras": {
+      "mailing address": "16 West Jones Street, Rm. 1311; Raleigh, NC 27601-1096",
+      "terms in senate": "3 (0 in Senate)",
+      "represented counties": "Wake",
+      "legislative assistant": "Josh Watkins",
+      "legislative assistant email": "Josh.Watkins@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:22.387765+00:00",
+    "updated_at": "2025-04-24T07:34:16.554426+00:00",
+    "openstates_url": "https://openstates.org/person/julie-von-haefen-3kbMY6C8wUKYBoxba8FTc8/"
+  },
+  {
+    "id": "ocd-person/91f28923-c52e-4a47-aed2-944672902823",
+    "name": "Kanika Brown",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:nc/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Kanika",
+    "family_name": "Brown",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/795/Low",
+    "email": "kanika.brown@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Healthcare Habilitation Worker",
+      "mailing address": "16 West Jones Street, Rm. 1317; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Forsyth",
+      "legislative assistant": "Brenden Hipps",
+      "legislative assistant email": "Brenden.Hipps@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:39.391662+00:00",
+    "updated_at": "2026-01-29T07:21:37.665823+00:00",
+    "openstates_url": "https://openstates.org/person/kanika-brown-4ROj2oVuf4CKrBLus0XUvb/"
+  },
+  {
+    "id": "ocd-person/c0ca675d-4bd2-462f-9bcb-b7ac8226dbdf",
+    "name": "Karl Gillespie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "120",
+      "division_id": "ocd-division/country:us/state:nc/sldl:120"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Karl",
+    "family_name": "Gillespie",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/771/Low",
+    "email": "karl.gillespie@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1962-09-06",
+    "death_date": "",
+    "extras": {
+      "occupation": "Communications Contractor/Farmer",
+      "mailing address": "300 N. Salisbury Street, Rm. 530; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Cherokee, Clay, Graham, Macon",
+      "legislative assistant": "Andrew Bailey",
+      "legislative assistant email": "Andrew.Bailey@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:58.267713+00:00",
+    "updated_at": "2025-04-24T07:33:58.143158+00:00",
+    "openstates_url": "https://openstates.org/person/karl-gillespie-5rn1aG3PfSKDTNXvEvXKrn/"
+  },
+  {
+    "id": "ocd-person/a39903f1-cf67-494a-8c6a-4ae15c334fc9",
+    "name": "Keith Kidwell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:nc/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Kidwell",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/749/Low",
+    "email": "keith.kidwell@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Enrolled Agent",
+      "mailing address": "16 West Jones Street, Rm. 1206; Raleigh, NC 27601-1096",
+      "terms in senate": "3 (0 in Senate)",
+      "represented counties": "Beaufort, Dare, Hyde, Pamlico",
+      "legislative assistant": "Joy Albright",
+      "legislative assistant email": "Joy.Albright@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:28.964836+00:00",
+    "updated_at": "2025-07-17T07:31:47.814872+00:00",
+    "openstates_url": "https://openstates.org/person/keith-kidwell-4yhg0RmouT6iXsWkg4SXhx/"
+  },
+  {
+    "id": "ocd-person/4edb53d2-f5a1-447d-ac37-36da75a7a4ed",
+    "name": "Kelly Hastings",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "110",
+      "division_id": "ocd-division/country:us/state:nc/sldl:110"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Kelly",
+    "family_name": "Hastings",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/618/Low",
+    "email": "kelly.hastings@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1961-06-16",
+    "death_date": "",
+    "extras": {
+      "main phone": "704-473-3468",
+      "occupation": "Realtor",
+      "mailing address": "16 West Jones Street, Rm. 2208; Raleigh, NC 27601-1096",
+      "terms in senate": "7 (0 in Senate)",
+      "military experience": "US Marine Corps and Reserve",
+      "represented counties": "Cleveland, Gaston",
+      "legislative assistant": "Jan Copeland",
+      "legislative assistant email": "Jan.Copeland@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:09.307814+00:00",
+    "updated_at": "2025-04-24T07:34:00.542874+00:00",
+    "openstates_url": "https://openstates.org/person/kelly-hastings-2OndKj2Q4eFSJfnylQtO05/"
+  },
+  {
+    "id": "ocd-person/6d8e0e56-939e-45c4-a9db-2fc370fbbdef",
+    "name": "Kyle Hall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:nc/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Kyle",
+    "family_name": "Hall",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/704/Low",
+    "email": "kyle.hall@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Realtor",
+      "mailing address": "300 N. Salisbury Street, Rm. 305; Raleigh, NC 27603-5925",
+      "terms in senate": "4.5 (0 in Senate)",
+      "represented counties": "Forsyth, Stokes",
+      "legislative assistant": "Elise Ussery",
+      "legislative assistant email": "Elise.Ussery@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:10.692988+00:00",
+    "updated_at": "2025-04-24T07:33:40.452037+00:00",
+    "openstates_url": "https://openstates.org/person/kyle-hall-3Kj5Af3kH96RCbdUXribV9/"
+  },
+  {
+    "id": "ocd-person/11c903f8-ce25-4463-8a24-a49394c21955",
+    "name": "Larry Potts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:nc/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Potts",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/724/Low",
+    "email": "larry.potts@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1948-09-14",
+    "death_date": "",
+    "extras": {
+      "occupation": "Real Estate Investor; Building Contractor",
+      "mailing address": "300 N. Salisbury Street, Rm. 307B1; Raleigh, NC 27603-5925",
+      "terms in senate": "4 (0 in Senate)",
+      "military experience": "US Air Force, 1966-1970",
+      "represented counties": "Davidson",
+      "legislative assistant": "Caroline David",
+      "legislative assistant email": "Caroline.David@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:28.410017+00:00",
+    "updated_at": "2025-04-24T07:34:11.500679+00:00",
+    "openstates_url": "https://openstates.org/person/larry-potts-XYjV8LObNnxGPbwYB8c6P/"
+  },
+  {
+    "id": "ocd-person/3ed64eae-ecec-4cbf-a436-e7c1471a4cef",
+    "name": "Larry Strickland",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:nc/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Strickland",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/727/Low",
+    "email": "larry.strickland@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1955-06-07",
+    "death_date": "",
+    "extras": {
+      "occupation": "Real Estate Appraiser, Farmer",
+      "mailing address": "300 N. Salisbury Street, Rm. 304; Raleigh, NC 27603-5925",
+      "terms in senate": "4 (0 in Senate)",
+      "represented counties": "Johnston",
+      "legislative assistant": "Rhonda Todd",
+      "legislative assistant email": "Rhonda.Todd@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:09.686804+00:00",
+    "updated_at": "2025-04-24T07:34:53.920683+00:00",
+    "openstates_url": "https://openstates.org/person/larry-strickland-1uZShnz1CSkGHPSzcYh3Al/"
+  },
+  {
+    "id": "ocd-person/283007b1-e7a2-486b-b19b-5a8126bc4128",
+    "name": "Laura Budd",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "103",
+      "division_id": "ocd-division/country:us/state:nc/sldl:103"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Laura",
+    "family_name": "Budd",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/796/Low",
+    "email": "laura.budd@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1977-04-29",
+    "death_date": "",
+    "extras": {
+      "main phone": "704-839-9459",
+      "occupation": "Attorney",
+      "mailing address": "16 West Jones Street, Rm. 1015; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Elizabeth Whiteside",
+      "legislative assistant email": "Elizabeth.Whiteside@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:52.624853+00:00",
+    "updated_at": "2026-06-04T07:29:14.644302+00:00",
+    "openstates_url": "https://openstates.org/person/laura-budd-1DpdrDhkVv9hvFCBBraxqK/"
+  },
+  {
+    "id": "ocd-person/16a0c907-4efa-45a7-83d2-1c79cc541535",
+    "name": "Lindsey Prather",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "115",
+      "division_id": "ocd-division/country:us/state:nc/sldl:115"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Lindsey",
+    "family_name": "Prather",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/809/Low",
+    "email": "lindsey.prather@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1988-06-21",
+    "death_date": "",
+    "extras": {
+      "occupation": "Assistant Director of Admission, UNC Asheville",
+      "mailing address": "16 West Jones Street, Rm. 1301; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Buncombe",
+      "legislative assistant": "Margaret Hartzell",
+      "legislative assistant email": "Margaret.Hartzell@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:50.397874+00:00",
+    "updated_at": "2026-06-04T07:28:01.528089+00:00",
+    "openstates_url": "https://openstates.org/person/lindsey-prather-ghJEfBGcZfy34dD2eZXuv/"
+  },
+  {
+    "id": "ocd-person/be5acee4-3874-4414-9aff-77043943c1c1",
+    "name": "Marcia Morey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:nc/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Marcia",
+    "family_name": "Morey",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/732/Low",
+    "email": "marcia.morey@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1955-08-14",
+    "death_date": "",
+    "extras": {
+      "occupation": "Chief District Court Judge, Retired",
+      "mailing address": "16 West Jones Street, Rm. 1220; Raleigh, NC 27601-1096",
+      "terms in senate": "3.5 (0 in Senate)",
+      "represented counties": "Durham",
+      "legislative assistant": "Pamela Best",
+      "legislative assistant email": "Pamela.Best@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:31.193227+00:00",
+    "updated_at": "2025-04-24T07:34:25.816094+00:00",
+    "openstates_url": "https://openstates.org/person/marcia-morey-5nC2ZoyzTs9E2mBMnYgogT/"
+  },
+  {
+    "id": "ocd-person/7a50ad08-1f2a-4f5f-9463-b1672d3a60a3",
+    "name": "Maria Cervania",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:nc/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Maria",
+    "family_name": "Cervania",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/798/Low",
+    "email": "maria.cervania@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1968-01-14",
+    "death_date": "",
+    "extras": {
+      "occupation": "Epidemiologist/Biostatistician",
+      "mailing address": "16 West Jones Street, Rm. 1209; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Wake",
+      "legislative assistant": "Benjamin Porco",
+      "legislative assistant email": "Benjamin.Porco@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:38.973634+00:00",
+    "updated_at": "2026-06-04T07:27:52.952317+00:00",
+    "openstates_url": "https://openstates.org/person/maria-cervania-3invq0OiJSwN7JmM7GEnqN/"
+  },
+  {
+    "id": "ocd-person/cc238a7c-3222-4ac2-8d4d-3884dd342a5f",
+    "name": "Mark Brody",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:nc/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Brody",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/663/Low",
+    "email": "mark.brody@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1951-12-06",
+    "death_date": "",
+    "extras": {
+      "main phone": "704-965-6585",
+      "occupation": "Contractor",
+      "mailing address": "300 N. Salisbury Street, Rm. 416B; Raleigh, NC 27603-5925",
+      "terms in senate": "6 (0 in Senate)",
+      "military experience": "US Navy Reserve",
+      "represented counties": "Anson, Union",
+      "legislative assistant": "Neva Helms",
+      "legislative assistant email": "Neva.Helms@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:33.866543+00:00",
+    "updated_at": "2025-04-24T07:33:38.838650+00:00",
+    "openstates_url": "https://openstates.org/person/mark-brody-6DCfyGUulWLNC0NlI1GrKZ/"
+  },
+  {
+    "id": "ocd-person/601cab9a-8b58-42fa-a62e-4170ec23b955",
+    "name": "Mark Pless",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "118",
+      "division_id": "ocd-division/country:us/state:nc/sldl:118"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Pless",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/773/Low",
+    "email": "mark.pless@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "mailing address": "300 N. Salisbury Street, Rm. 306A1; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Haywood, Madison",
+      "legislative assistant": "Pless LA",
+      "legislative assistant email": "Pless.LA@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:55.064044+00:00",
+    "updated_at": "2026-06-04T07:29:10.165740+00:00",
+    "openstates_url": "https://openstates.org/person/mark-pless-2vMMg0SDhUfGVwfJ2lAvqv/"
+  },
+  {
+    "id": "ocd-person/819581b6-a44a-4d4a-8a08-14c2dccd86f5",
+    "name": "Mary Belk",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:nc/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Belk",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/713/Low",
+    "email": "mary.belk@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1956-10-05",
+    "death_date": "",
+    "extras": {
+      "main phone": "980-579-2800",
+      "occupation": "Partner - New River Retreat Properties LLC",
+      "mailing address": "16 West Jones Street, Rm. 1313; Raleigh, NC 27601-1096",
+      "terms in senate": "4 (0 in Senate)",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Ralph Belk",
+      "legislative assistant email": "Ralph.Belk@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:19.164092+00:00",
+    "updated_at": "2025-04-24T07:34:32.722217+00:00",
+    "openstates_url": "https://openstates.org/person/mary-belk-3wWKlTR8l9abXaD0AZ7wij/"
+  },
+  {
+    "id": "ocd-person/1dfa7f10-249d-43aa-930b-a5be9e4fce9f",
+    "name": "Matthew Winslow",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:nc/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Matthew",
+    "family_name": "Winslow",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/776/Low",
+    "email": "matthew.winslow@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Home Builder",
+      "mailing address": "300 N. Salisbury Street, Rm. 411; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Franklin, Granville",
+      "legislative assistant": "Michelle Kenny",
+      "legislative assistant email": "Michelle.Kenny@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:57.706719+00:00",
+    "updated_at": "2026-06-04T07:28:57.528940+00:00",
+    "openstates_url": "https://openstates.org/person/matthew-winslow-uZFmnSC4aJ4MmafAvcduJ/"
+  },
+  {
+    "id": "ocd-person/b3b24f9e-5eb4-475e-8b06-7040cfb39fb5",
+    "name": "Mike Colvin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:nc/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Colvin",
+    "image": "https://votemikecolvin.com/wp-content/uploads/2024/01/untitled-1024x1024.jpg",
+    "email": "mike.colvin@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:15.558514+00:00",
+    "updated_at": "2025-04-24T07:34:12.486839+00:00",
+    "openstates_url": "https://openstates.org/person/mike-colvin-5T577dWG0ajd21U8Dc0cp3/"
+  },
+  {
+    "id": "ocd-person/f6d0fc41-fbfa-4829-aa33-f5977edf1082",
+    "name": "Mike Schietzelt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:nc/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Schietzelt",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MikeSchietzelt2024.jpg",
+    "email": "mike.schietzelt@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:21.089704+00:00",
+    "updated_at": "2025-04-24T07:33:33.596670+00:00",
+    "openstates_url": "https://openstates.org/person/mike-schietzelt-7VjcNX1iLxHFLDOi4enrkI/"
+  },
+  {
+    "id": "ocd-person/d4713ec5-e36b-49bb-bfc8-6b7fe9c0e9a7",
+    "name": "Mitchell Setzer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:nc/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mitchell",
+    "family_name": "Setzer",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/149/Low",
+    "email": "mitchell.setzer@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1965-03-12",
+    "death_date": "",
+    "extras": {
+      "main phone": "828-241-3570",
+      "occupation": "Business Executive - Vice President, Smith Setzer & Sons, Inc.",
+      "mailing address": "16 West Jones Street, Rm. 2204; Raleigh, NC 27601-1096",
+      "terms in senate": "13 (0 in Senate)",
+      "represented counties": "Catawba, Iredell",
+      "legislative assistant": "Margaret Herring",
+      "legislative assistant email": "Margaret.Herring@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:34.027644+00:00",
+    "updated_at": "2025-04-24T07:34:04.993019+00:00",
+    "openstates_url": "https://openstates.org/person/mitchell-setzer-6Ss7qMYMwL87CvXCAR1Jd1/"
+  },
+  {
+    "id": "ocd-person/018cd1c9-5b84-4f8e-8a1d-6f0326ce1f2f",
+    "name": "Monika Johnson-Hostler",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:nc/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Monika",
+    "family_name": "Johnson-Hostler",
+    "image": "https://www.uncfsu.edu/assets/Images/Student_Stories/Monika-Hostler.jpg",
+    "email": "monika.johnson-hostler@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:16.589980+00:00",
+    "updated_at": "2025-04-24T07:33:51.769962+00:00",
+    "openstates_url": "https://openstates.org/person/monika-johnson-hostler-2vLVts6qiL2xswPn6Tm3T/"
+  },
+  {
+    "id": "ocd-person/6acc3963-2724-4d88-8762-f78df333be94",
+    "name": "Nasif Majeed",
+    "party": "Independent",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:nc/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Nasif",
+    "family_name": "Majeed",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/752/Low",
+    "email": "nasif.majeed@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1945-09-27",
+    "death_date": "",
+    "extras": {
+      "main phone": "704-965-1153",
+      "occupation": "Businessman",
+      "mailing address": "16 West Jones Street, Rm. 1008; Raleigh, NC 27601-1096",
+      "terms in senate": "3 (0 in Senate)",
+      "military experience": "US Air Force 1968-1973",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Beverlee Baker",
+      "legislative assistant email": "Beverlee.Baker@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:30.357737+00:00",
+    "updated_at": "2026-06-04T07:28:03.579618+00:00",
+    "openstates_url": "https://openstates.org/person/nasif-majeed-3FWW4kzBBAvqCu115QkohI/"
+  },
+  {
+    "id": "ocd-person/1e2d0ef7-d021-4427-af07-14fae1ad5aa0",
+    "name": "Neal Jackson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:nc/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Neal",
+    "family_name": "Jackson",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/804/Low",
+    "email": "neal.jackson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Pastor",
+      "mailing address": "300 N. Salisbury Street, Rm. 603; Raleigh, NC 27603-5925",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Moore, Randolph",
+      "legislative assistant": "Forrest Perrigo",
+      "legislative assistant email": "Forrest.Perrigo@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:35.709794+00:00",
+    "updated_at": "2026-01-29T07:21:13.849361+00:00",
+    "openstates_url": "https://openstates.org/person/neal-jackson-uwMPwP0oFkAYTLo1WVfw8/"
+  },
+  {
+    "id": "ocd-person/8f02ce28-e826-48f7-adc1-11f8e5c2ed26",
+    "name": "Paul Scott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "111",
+      "division_id": "ocd-division/country:us/state:nc/sldl:111"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Scott",
+    "image": "https://static.wixstatic.com/media/a254ce_1422fda1afc540a697d4c59e20275ee8~mv2.png/v1/fill/w_626,h_1003,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a254ce_1422fda1afc540a697d4c59e20275ee8~mv2.png",
+    "email": "paul.scott@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:19.647026+00:00",
+    "updated_at": "2025-04-24T07:33:35.264677+00:00",
+    "openstates_url": "https://openstates.org/person/paul-scott-4LrBSKessAC0PIM4DsEkL8/"
+  },
+  {
+    "id": "ocd-person/efae51b3-e547-46c0-87df-4ac35c0c60de",
+    "name": "Phil Rubin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:nc/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Rubin",
+    "image": "",
+    "email": "phillip.rubin@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1983-08-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-03-05T07:51:27.937835+00:00",
+    "updated_at": "2025-04-24T07:34:43.711230+00:00",
+    "openstates_url": "https://openstates.org/person/phil-rubin-7IGpTNlS306wxGr1WXuBVW/"
+  },
+  {
+    "id": "ocd-person/eab6e9df-d2e4-4476-b09d-cda1de0cf654",
+    "name": "Phil Shepard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:nc/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Shepard",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/628/Low",
+    "email": "phil.shepard@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1954-11-10",
+    "death_date": "",
+    "extras": {
+      "main phone": "910-389-6392",
+      "occupation": "Retired Civil Service, Minister",
+      "mailing address": "300 N. Salisbury Street, Rm. 534; Raleigh, NC 27603-5925",
+      "terms in senate": "7 (0 in Senate)",
+      "represented counties": "Onslow",
+      "legislative assistant": "Ethan Nichols",
+      "legislative assistant email": "Ethan.Nichols@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:31.684358+00:00",
+    "updated_at": "2025-04-24T07:34:37.955283+00:00",
+    "openstates_url": "https://openstates.org/person/phil-shepard-78tnMmpwValQhsIvpfHUnM/"
+  },
+  {
+    "id": "ocd-person/4c2e2654-2647-4394-8efe-f09532225ff6",
+    "name": "Pricey Harrison",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:nc/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Pricey",
+    "family_name": "Harrison",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/504/Low",
+    "email": "pricey.harrison@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1958-08-31",
+    "death_date": "",
+    "extras": {
+      "main phone": "336-274-5574",
+      "occupation": "Retired Communications Attorney",
+      "mailing address": "16 West Jones Street, Rm. 1218; Raleigh, NC 27601-1096",
+      "terms in senate": "10 (0 in Senate)",
+      "represented counties": "Guilford",
+      "legislative assistant": "Mary Lee",
+      "legislative assistant email": "Mary.Lee@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:12.720888+00:00",
+    "updated_at": "2025-04-24T07:33:44.836621+00:00",
+    "openstates_url": "https://openstates.org/person/pricey-harrison-2JkVSBZy3RIUMlbF43Qhbq/"
+  },
+  {
+    "id": "ocd-person/064a56b9-d616-43a1-a3f2-ffd4938740d3",
+    "name": "Ray Jeffers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:nc/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ray",
+    "family_name": "Jeffers",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/805/Low",
+    "email": "ray.jeffers@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Non-Profit Administration",
+      "mailing address": "16 West Jones Street, Rm. 1319; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Durham, Person",
+      "legislative assistant": "Nicholas Harris",
+      "legislative assistant email": "Nicholas.Harris@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:45.581841+00:00",
+    "updated_at": "2026-06-04T07:28:07.695820+00:00",
+    "openstates_url": "https://openstates.org/person/ray-jeffers-BrvSuY66IVZsNlFqYu5Zb/"
+  },
+  {
+    "id": "ocd-person/27cea850-e6f2-4fe8-a02e-26f9867d00f1",
+    "name": "Ray Pickett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:nc/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ray",
+    "family_name": "Pickett",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/772/Low",
+    "email": "ray.pickett@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Self-Employed",
+      "mailing address": "300 N. Salisbury Street, Rm. 306A2; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Alleghany, Ashe, Watauga",
+      "legislative assistant": "Joseph Verykoukis",
+      "legislative assistant email": "Joseph.Verykoukis@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:12:00.207601+00:00",
+    "updated_at": "2026-06-04T07:28:36.241902+00:00",
+    "openstates_url": "https://openstates.org/person/ray-pickett-1D78tYvoukJkgizDRfWm5B/"
+  },
+  {
+    "id": "ocd-person/837ec59b-a7db-41dc-9e9f-a7a83b462213",
+    "name": "Reece Pyrtle",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:nc/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Reece",
+    "family_name": "Pyrtle",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/787/Low",
+    "email": "reece.pyrtle@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired - Police Chief (City of Eden)",
+      "mailing address": "300 N. Salisbury Street, Rm. 418B; Raleigh, NC 27603-5925",
+      "terms in senate": "1.5 (0 in Senate)",
+      "represented counties": "Rockingham",
+      "legislative assistant": "Theresa Lopez",
+      "legislative assistant email": "Theresa.Lopez@ncleg.gov"
+    },
+    "created_at": "2021-12-16T19:00:17.840303+00:00",
+    "updated_at": "2026-01-29T07:21:28.972899+00:00",
+    "openstates_url": "https://openstates.org/person/reece-pyrtle-407vdzSLQ78TisOxPSvDwx/"
+  },
+  {
+    "id": "ocd-person/7ee23b19-064e-4531-a9e8-2e928f8f2203",
+    "name": "Ren\u00e9e Price",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:nc/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ren\u00e9e",
+    "family_name": "Price",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/810/Low",
+    "email": "renee.price@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Consultant",
+      "mailing address": "16 West Jones Street, Rm. 1315; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Caswell, Orange",
+      "legislative assistant": "Annette Moore",
+      "legislative assistant email": "Annette.Moore@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:50.977801+00:00",
+    "updated_at": "2026-06-04T07:28:44.300032+00:00",
+    "openstates_url": "https://openstates.org/person/renee-price-3rQQ6HEDdowNeN8DirJF1H/"
+  },
+  {
+    "id": "ocd-person/3aa6f3c5-cd15-42e1-907e-92e6f5362c8f",
+    "name": "Robert Reives",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:nc/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Reives",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/684/Low",
+    "email": "robert.reives@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1970-09-24",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney",
+      "mailing address": "300 N. Salisbury Street, Rm. 506; Raleigh, NC 27603-5925",
+      "terms in senate": "5.5 (0 in Senate)",
+      "represented counties": "Chatham, Randolph",
+      "legislative assistant": "Veronica Green",
+      "legislative assistant email": "Veronica.Green@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:26.414125+00:00",
+    "updated_at": "2025-04-24T07:33:35.754392+00:00",
+    "openstates_url": "https://openstates.org/person/robert-reives-1mfqqR3Fbg7karbWdQno4N/"
+  },
+  {
+    "id": "ocd-person/230ed41f-56c1-459d-a66d-7ab0a3a8342b",
+    "name": "Rodney Pierce",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:nc/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Rodney",
+    "family_name": "Pierce",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RodneyPierce2024.jpeg",
+    "email": "rodney.pierce@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1978-10-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:11.398140+00:00",
+    "updated_at": "2025-04-24T07:34:27.809242+00:00",
+    "openstates_url": "https://openstates.org/person/rodney-pierce-149VVGpSjEqvcDrBbdIcrz/"
+  },
+  {
+    "id": "ocd-person/4f490403-b729-4f33-b3ba-5417db20cb0b",
+    "name": "Sam Watford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:nc/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Watford",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/687/Low",
+    "email": "sam.watford@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Waterline Contractor",
+      "mailing address": "16 West Jones Street, Rm. 2121; Raleigh, NC 27601-1096",
+      "terms in senate": "4 (0 in Senate)",
+      "represented counties": "Davidson",
+      "legislative assistant": "Regina Irwin",
+      "legislative assistant email": "Regina.Irwin@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:10.195468+00:00",
+    "updated_at": "2025-04-24T07:33:48.163844+00:00",
+    "openstates_url": "https://openstates.org/person/sam-watford-2PblFTnf0Ah7vAOlG94IyB/"
+  },
+  {
+    "id": "ocd-person/4eb017f8-318e-43ba-b0c5-9fecbc3d0530",
+    "name": "Sarah Crawford",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:nc/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Sarah",
+    "family_name": "Crawford",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/800/Low",
+    "email": "sarah.crawford@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "CEO, Tammy Lynn Center",
+      "mailing address": "16 West Jones Street, Rm. 1323; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (1 in Senate)",
+      "represented counties": "Wake",
+      "legislative assistant": "Portia B. Pittman",
+      "legislative assistant email": "Portia.Pittman@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:48.725295+00:00",
+    "updated_at": "2026-06-04T07:28:00.344697+00:00",
+    "openstates_url": "https://openstates.org/person/sarah-crawford-2OTsLL4ACICwkNMlaJUPom/"
+  },
+  {
+    "id": "ocd-person/09099128-27fc-463f-af36-28253d1e7a60",
+    "name": "Sarah Stevens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:nc/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Sarah",
+    "family_name": "Stevens",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/592/Low",
+    "email": "sarah.stevens@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1960-02-15",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney",
+      "mailing address": "300 N. Salisbury Street, Rm. 419; Raleigh, NC 27603-5925",
+      "terms in senate": "8 (0 in Senate)",
+      "represented counties": "Surry, Wilkes",
+      "legislative assistant": "Lisa Brown",
+      "legislative assistant email": "Lisa.Brown@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:30.877050+00:00",
+    "updated_at": "2025-04-24T07:33:37.743230+00:00",
+    "openstates_url": "https://openstates.org/person/sarah-stevens-H3In36vu4iU4PtgLDvBeS/"
+  },
+  {
+    "id": "ocd-person/f0d9b7f4-abb7-4111-b640-766a1f81d653",
+    "name": "Shelly Willingham",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:nc/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Shelly",
+    "family_name": "Willingham",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/700/Low",
+    "email": "shelly.willingham@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1943-11-27",
+    "death_date": "",
+    "extras": {
+      "main phone": "252-442-8659",
+      "occupation": "Real Estate Consultant",
+      "mailing address": "300 N. Salisbury Street, Rm. 513; Raleigh, NC 27603-5925",
+      "terms in senate": "5.5 (0 in Senate)",
+      "represented counties": "Bertie, Edgecombe, Martin",
+      "legislative assistant": "Johnna Smith",
+      "legislative assistant email": "Johnna.Smith@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:15.705732+00:00",
+    "updated_at": "2025-04-24T07:35:00.306501+00:00",
+    "openstates_url": "https://openstates.org/person/shelly-willingham-7KTegDdeWs23EtxbI9juS3/"
+  },
+  {
+    "id": "ocd-person/6b6dc936-a880-4bdb-9fba-11e0a2ff9f01",
+    "name": "Stephen Ross",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:nc/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Stephen",
+    "family_name": "Ross",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/812/Low",
+    "email": "stephen.ross@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Financial Advisor",
+      "mailing address": "16 West Jones Street, Rm. 1229; Raleigh, NC 27601-1096",
+      "terms in senate": "5 (0 in Senate)",
+      "represented counties": "Alamance",
+      "legislative assistant": "Tammy Ross",
+      "legislative assistant email": "Tammy.Ross@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:42.610930+00:00",
+    "updated_at": "2025-04-24T07:34:03.589515+00:00",
+    "openstates_url": "https://openstates.org/person/stephen-ross-3GiLmUfUOAHlv9dBjz3H9t/"
+  },
+  {
+    "id": "ocd-person/e4c62004-8706-4984-acb1-0140967173f0",
+    "name": "Steve Tyson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:nc/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Tyson",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/774/Low",
+    "email": "steve.tyson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Realtor and General Contractor",
+      "mailing address": "300 N. Salisbury Street, Rm. 637; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "military experience": "US Army, 1973-1976",
+      "represented counties": "Craven",
+      "legislative assistant": "Susie Farrell",
+      "legislative assistant email": "Susie.Farrell@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:57.368890+00:00",
+    "updated_at": "2026-06-04T07:28:58.252686+00:00",
+    "openstates_url": "https://openstates.org/person/steve-tyson-6xgnDzW5000vW61In9fMlE/"
+  },
+  {
+    "id": "ocd-person/b654a887-2eca-41f7-83ba-60044df0fc1c",
+    "name": "Ted Davis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:nc/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ted",
+    "family_name": "Davis",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/637/Low",
+    "email": "ted.davis@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1950-01-23",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Attorney",
+      "mailing address": "300 N. Salisbury Street, Rm. 417B; Raleigh, NC 27603-5925",
+      "terms in senate": "6.5 (0 in Senate)",
+      "represented counties": "New Hanover",
+      "legislative assistant": "Martha Jenkins",
+      "legislative assistant email": "Martha.Jenkins@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:29.072468+00:00",
+    "updated_at": "2025-04-24T07:34:56.749164+00:00",
+    "openstates_url": "https://openstates.org/person/ted-davis-5Y3I8FSdk2VM4AH1qqfCVo/"
+  },
+  {
+    "id": "ocd-person/1ac38d5f-d089-4589-bcc4-bef1f1675956",
+    "name": "Terry Brown",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:nc/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Brown",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/783/Low",
+    "email": "terry.brown@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1987-06-08",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney",
+      "mailing address": "300 N. Salisbury Street, Rm. 509; Raleigh, NC 27603-5925",
+      "terms in senate": "2 (0 in Senate)",
+      "represented counties": "Mecklenburg",
+      "legislative assistant": "Ashley Luyindu",
+      "legislative assistant email": "Ashley.Luyindu@ncleg.gov"
+    },
+    "created_at": "2021-01-09T00:11:54.670346+00:00",
+    "updated_at": "2026-06-04T07:28:19.463208+00:00",
+    "openstates_url": "https://openstates.org/person/terry-brown-oVAQHHAc56B82vNfGbZSA/"
+  },
+  {
+    "id": "ocd-person/1bc1818f-49fd-478a-affa-1f167adcfb51",
+    "name": "Tim Longest",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:nc/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Longest",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/818/Low",
+    "email": "tim.longest@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1991-05-14",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney",
+      "mailing address": "16 West Jones Street, Rm. 1421; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Wake",
+      "legislative assistant": "Cora Martin",
+      "legislative assistant email": "Cora.Martin@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:39.679529+00:00",
+    "updated_at": "2026-06-04T07:28:04.071472+00:00",
+    "openstates_url": "https://openstates.org/person/tim-longest-qNDyHdKpkWF6BG3wdxPO5/"
+  },
+  {
+    "id": "ocd-person/f836e608-2d16-4792-bec5-0993fa2db3aa",
+    "name": "Tim Reeder",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:nc/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Reeder",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/811/Low",
+    "email": "timothy.reeder@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Physician - East Carolina University Emergency Medicine",
+      "mailing address": "300 N. Salisbury Street, Rm. 537; Raleigh, NC 27603-5925",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Pitt",
+      "legislative assistant": "Dalton Ashworth",
+      "legislative assistant email": "Dalton.Ashworth@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:36.171503+00:00",
+    "updated_at": "2025-04-24T07:34:38.443750+00:00",
+    "openstates_url": "https://openstates.org/person/tim-reeder-7YNBWEiRxmJnrihGoeANn0/"
+  },
+  {
+    "id": "ocd-person/1a7c3ce0-97be-4601-895d-8300458a7e42",
+    "name": "Todd Carver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:nc/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Carver",
+    "image": "https://www.iredellfreenews.com/wp-content/uploads/2023/12/Todd-Carver.jpg.webp",
+    "email": "todd.carver@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:15.025251+00:00",
+    "updated_at": "2025-04-24T07:33:46.825628+00:00",
+    "openstates_url": "https://openstates.org/person/todd-carver-nyZnHIfkv5kgqKCzyEt74/"
+  },
+  {
+    "id": "ocd-person/47d80aae-1c7b-4330-96bd-76db7fe8b060",
+    "name": "Tracy Clark",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:nc/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tracy",
+    "family_name": "Clark",
+    "image": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/148017.jpg",
+    "email": "tracy.clark@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-10-09T22:57:03.197436+00:00",
+    "updated_at": "2026-06-04T07:29:02.684460+00:00",
+    "openstates_url": "https://openstates.org/person/tracy-clark-2BZBZ7v5ZhtMgjl0xfRsJM/"
+  },
+  {
+    "id": "ocd-person/6045737f-cc7a-4cf5-b7e6-12419deed77b",
+    "name": "Tricia Cotham",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "105",
+      "division_id": "ocd-division/country:us/state:nc/sldl:105"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tricia",
+    "family_name": "Cotham",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/817/Low",
+    "email": "tricia.cotham@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "1978-11-26",
+    "death_date": "",
+    "extras": {
+      "mailing address": "300 N. Salisbury Street, Rm. 528; Raleigh, NC 27603-5925",
+      "terms in senate": "5.5 (0 in Senate)",
+      "represented counties": "Mecklenburg"
+    },
+    "created_at": "2023-01-20T00:29:51.857185+00:00",
+    "updated_at": "2025-04-24T07:34:09.402683+00:00",
+    "openstates_url": "https://openstates.org/person/tricia-cotham-2vf0AEnqqkRAXAEdY8WHgB/"
+  },
+  {
+    "id": "ocd-person/baca6c05-f6c5-4239-bf9b-c4f57001273d",
+    "name": "Vernetta Alston",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:nc/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Vernetta",
+    "family_name": "Alston",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/765/Low",
+    "email": "vernetta.alston@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Real Estate Development, Attorney",
+      "mailing address": "300 N. Salisbury Street, Rm. 505; Raleigh, NC 27603-5925",
+      "terms in senate": "2.5 (0 in Senate)",
+      "represented counties": "Durham",
+      "legislative assistant": "Laura Burns",
+      "legislative assistant email": "Laura.Burns@ncleg.gov"
+    },
+    "created_at": "2020-06-27T05:13:17.680509+00:00",
+    "updated_at": "2025-04-24T07:33:13.436641+00:00",
+    "openstates_url": "https://openstates.org/person/vernetta-alston-5gT4xCLaEKczdXSlgY1hKX/"
+  },
+  {
+    "id": "ocd-person/5eadd1cd-7d46-448d-9608-2901b596b24f",
+    "name": "William Brisson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:nc/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "William",
+    "family_name": "Brisson",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/558/Low",
+    "email": "william.brisson@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1946-08-18",
+    "death_date": "",
+    "extras": {
+      "main phone": "910-862-7007",
+      "occupation": "Farmer",
+      "mailing address": "300 N. Salisbury Street, Rm. 405; Raleigh, NC 27603-5925",
+      "terms in senate": "9 (0 in Senate)",
+      "represented counties": "Bladen, Sampson",
+      "legislative assistant": "Caroline Stirling",
+      "legislative assistant email": "Caroline.Stirling@ncleg.gov"
+    },
+    "created_at": "2018-10-18T14:52:29.545036+00:00",
+    "updated_at": "2025-04-24T07:33:43.787209+00:00",
+    "openstates_url": "https://openstates.org/person/william-brisson-2seiIUokuIPeQD3WBkynl9/"
+  },
+  {
+    "id": "ocd-person/89065b80-ca15-43b3-bbe5-c7bb5e3a3843",
+    "name": "Wyatt Gable",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:nc/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Wyatt",
+    "family_name": "Gable",
+    "image": "https://images.squarespace-cdn.com/content/v1/6555362b58434b0824932281/15739355-3436-4410-b02c-ed4d63322f69/untitled-7317.jpg",
+    "email": "wyatt.gable@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:42:06.987656+00:00",
+    "updated_at": "2025-04-24T07:34:50.058401+00:00",
+    "openstates_url": "https://openstates.org/person/wyatt-gable-4AYqxMTkNBqU6BiAJgIrTv/"
+  },
+  {
+    "id": "ocd-person/d48b59a1-cf27-438e-8a25-2f8f179992f2",
+    "name": "Ya Liu",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:nc/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ya",
+    "family_name": "Liu",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/806/Low",
+    "email": "ya.liu@ncleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Small Business Owner and Attorney",
+      "mailing address": "16 West Jones Street, Rm. 1325; Raleigh, NC 27601-1096",
+      "terms in senate": "1 (0 in Senate)",
+      "represented counties": "Wake",
+      "legislative assistant": "Jake Altman",
+      "legislative assistant email": "Jake.Altman@ncleg.gov"
+    },
+    "created_at": "2023-01-20T00:29:41.552844+00:00",
+    "updated_at": "2025-04-24T07:33:59.337987+00:00",
+    "openstates_url": "https://openstates.org/person/ya-liu-6T43VD3hBd6wFe4oWvZVMg/"
+  },
+  {
+    "id": "ocd-person/6dea5a89-20c8-4370-94c2-0dac7fe29d77",
+    "name": "Zack Hawkins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:nc/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nc/government",
+      "name": "North Carolina",
+      "classification": "state"
+    },
+    "given_name": "Zack",
+    "family_name": "Hawkins",
+    "image": "https://www.ncleg.gov/Members/MemberImage/H/742/Low",
+    "email": "zack.hawkins@ncleg.gov",
+    "gender": "Male",
+    "birth_date": "1979-05-08",
+    "death_date": "",
+    "extras": {
+      "mailing address": "16 West Jones Street, Rm. 1307; Raleigh, NC 27601-1096",
+      "terms in senate": "3 (0 in Senate)",
+      "represented counties": "Durham",
+      "legislative assistant": "Madison Kilgore",
+      "legislative assistant email": "Madison.Kilgore@ncleg.gov"
+    },
+    "created_at": "2019-01-24T06:13:28.773716+00:00",
+    "updated_at": "2026-06-04T07:28:04.854186+00:00",
+    "openstates_url": "https://openstates.org/person/zack-hawkins-3LPGL80WQhVLjs2DWHrIAR/"
+  }
+]

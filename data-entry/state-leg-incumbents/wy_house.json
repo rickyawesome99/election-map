@@ -1,0 +1,2682 @@
+[
+  {
+    "id": "ocd-person/9995703e-90eb-4d20-a2f6-bfd9542102bd",
+    "name": "Abby Angelos",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:wy/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Abby",
+    "family_name": "Angelos",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-AngelosAbby.jpg",
+    "email": "abby.angelos@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Campbell County",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "",
+          "gradYear": "1998",
+          "schoolName": "Wright Jr Sr High School "
+        }
+      ],
+      "occupation": "Women\u2019s Ministry Director ",
+      "birth place": "Buffalo, WY",
+      "house years": "House:  2023-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 03, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "3"
+    },
+    "created_at": "2023-02-15T00:34:12.040916+00:00",
+    "updated_at": "2026-01-28T02:54:46.979216+00:00",
+    "openstates_url": "https://openstates.org/person/abby-angelos-4fo7PiVcGLMWcnsSizX2lB/"
+  },
+  {
+    "id": "ocd-person/3198aa67-829e-4827-8b26-8955cbf36f4a",
+    "name": "Andrew Byron",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:wy/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Byron",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-ByronAndrew.jpg",
+    "email": "andrew.byron@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Lincoln, Teton Counties",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "BS Political Science ",
+          "gradYear": "2008",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "birth place": "Jackson",
+      "house years": "House:  2023-Present",
+      "organizations": [
+        {
+          "orgname": "Snake River Fund "
+        },
+        {
+          "orgname": "Jackson Hole Fire/EMS"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 22, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "1"
+    },
+    "created_at": "2023-02-15T00:33:28.129863+00:00",
+    "updated_at": "2026-01-28T02:54:33.543324+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-byron-1VaOKRePqBoEb7ZLe32cBe/"
+  },
+  {
+    "id": "ocd-person/4665c34f-70f5-4bc0-af49-0239e0e907a1",
+    "name": "Ann Lucas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:wy/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Ann",
+    "family_name": "Lucas",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LucasAnn.jpg",
+    "email": "ann.lucas@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:24:47.690131+00:00",
+    "updated_at": "2026-01-29T08:41:14.498736+00:00",
+    "openstates_url": "https://openstates.org/person/ann-lucas-28py3bCicxdx493QQaHKWP/"
+  },
+  {
+    "id": "ocd-person/394ba273-63d7-409d-90cd-5d183e750ea4",
+    "name": "Art Washut",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:wy/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Art",
+    "family_name": "Washut",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WashutArt.jpg",
+    "email": "art.washut@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1957-10-14",
+    "death_date": "",
+    "extras": {
+      "county": "Natrona County",
+      "religion": "Roman Catholic",
+      "education": [
+        {
+          "degree": "Masters Public Administration",
+          "gradYear": "1994",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "BA in Criminal Justice",
+          "gradYear": "1979",
+          "schoolName": "Chadron State College"
+        }
+      ],
+      "birth place": "Wyoming",
+      "house years": "House:  2019-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 36, ",
+          "startYear": 2019
+        }
+      ]
+    },
+    "created_at": "2019-01-07T05:14:22.367762+00:00",
+    "updated_at": "2026-01-28T02:54:24.919573+00:00",
+    "openstates_url": "https://openstates.org/person/art-washut-1k77v0mOzTV5AWvw4twsB2/"
+  },
+  {
+    "id": "ocd-person/2f0d84dc-df29-4c3d-83ea-aa56beca9839",
+    "name": "Bill Allemand",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:wy/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Allemand",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-AllemandBill.jpg",
+    "email": "bill.allemand@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Natrona County",
+      "religion": "Christian",
+      "birth place": "Casper, Wy",
+      "house years": "House:  2023-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 58, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "4",
+      "number of grandchildren": "6"
+    },
+    "created_at": "2023-02-15T00:33:31.947336+00:00",
+    "updated_at": "2026-01-28T02:54:37.720067+00:00",
+    "openstates_url": "https://openstates.org/person/bill-allemand-1Qmogiylf90EBHKdAZYsJd/"
+  },
+  {
+    "id": "ocd-person/8ddb8078-482c-4df5-983d-ece9e5825cc2",
+    "name": "Bob Davis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:wy/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Davis",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-DavisBob.jpg",
+    "email": "bob.davis@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Carbon, Sweetwater Counties",
+      "religion": "Christian",
+      "birth place": "Omaha, Nebraska",
+      "house years": "House:  2023-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 47, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "3",
+      "number of grandchildren": "8"
+    },
+    "created_at": "2023-02-15T00:33:36.753625+00:00",
+    "updated_at": "2026-01-28T02:54:59.891916+00:00",
+    "openstates_url": "https://openstates.org/person/bob-davis-4JgEIu2zBhSMwSqh2aQXLu/"
+  },
+  {
+    "id": "ocd-person/6ff4eff9-e68c-42a1-9aa5-b964daa37a89",
+    "name": "Bob Nicholas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:wy/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Nicholas",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-NicholasBob.jpg",
+    "email": "bob.nicholas@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1957-10-14",
+    "death_date": "",
+    "extras": {
+      "county": "Laramie County",
+      "education": [
+        {
+          "degree": "Political Science",
+          "gradYear": "1982",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "Law",
+          "gradYear": "1985",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "occupation": "Attorney & Businessman",
+      "house years": "House:  2011-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "2022",
+          "district": " District 08, ",
+          "startYear": 2011
+        },
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 07, ",
+          "startYear": 2023
+        }
+      ]
+    },
+    "created_at": "2018-10-18T16:14:44.832972+00:00",
+    "updated_at": "2026-01-28T02:54:25.879452+00:00",
+    "openstates_url": "https://openstates.org/person/bob-nicholas-3PG5GkfyHXwSOtYWZdT1M9/"
+  },
+  {
+    "id": "ocd-person/bc53e98d-bd3c-4a67-9822-68e609f45251",
+    "name": "Bob Wharff",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:wy/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Wharff",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WharffRobert.jpg",
+    "email": "robert.wharff@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Uinta County",
+      "religion": "Church of Jesus Christ of Latter-day Saints",
+      "birth place": "Salt Lake City, Utah",
+      "house years": "House:  2021-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 49, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "2"
+    },
+    "created_at": "2021-01-12T00:23:00.837647+00:00",
+    "updated_at": "2026-01-28T02:54:14.207709+00:00",
+    "openstates_url": "https://openstates.org/person/bob-wharff-5jMu8mUtd4ouAyEJiDJqGf/"
+  },
+  {
+    "id": "ocd-person/b9414bc4-f900-474b-b99c-8f2716419683",
+    "name": "Chip Neiman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:wy/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Chip",
+    "family_name": "Neiman",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-NeimanChip.jpg",
+    "email": "chip.neiman@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Floor Leader",
+      "county": "Crook, Weston Counties",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "",
+          "gradYear": "1985",
+          "schoolName": "Hulett High School"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2024",
+          "position": "House Majority Floor Leader                       ",
+          "startYear": "2023",
+          "currentLeader": true
+        }
+      ],
+      "occupation": "Rancher/Small Business",
+      "birth place": "Belle Fourche SD",
+      "house years": "House:  2021-Present",
+      "spouse name": "Joni",
+      "organizations": [
+        {
+          "orgname": "Hulett Assembly of God"
+        },
+        {
+          "orgname": "Vocations for Orphans"
+        },
+        {
+          "orgname": "Greater Hulett Community Center"
+        },
+        {
+          "orgname": "Followers of Christ"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 01, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "2",
+      "number of grandchildren": "4"
+    },
+    "created_at": "2021-01-12T00:23:05.268956+00:00",
+    "updated_at": "2026-01-28T02:54:30.807295+00:00",
+    "openstates_url": "https://openstates.org/person/chip-neiman-5dZQ5h33XoEGmOeOXl6wb5/"
+  },
+  {
+    "id": "ocd-person/ffe52a1f-bc33-424a-bd8c-a2df967ac83a",
+    "name": "Chris Knapp",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:wy/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Knapp",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-KnappChristopher.jpg",
+    "email": "chris.knapp@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Campbell County",
+      "house years": "House:  2020-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 53, ",
+          "startYear": 2020
+        }
+      ]
+    },
+    "created_at": "2021-01-12T00:23:00.281109+00:00",
+    "updated_at": "2026-01-28T02:54:32.695460+00:00",
+    "openstates_url": "https://openstates.org/person/chris-knapp-7mrlr4kY3PsPmqBQvQEZdi/"
+  },
+  {
+    "id": "ocd-person/0df4327b-df46-4886-ab09-0c8a55639548",
+    "name": "Clarence Styvar",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:wy/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Clarence",
+    "family_name": "Styvar",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-StyvarClarence.jpg",
+    "email": "clarence.styvar@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Laramie County",
+      "house years": "House:  2018-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 12, ",
+          "startYear": 2018
+        }
+      ],
+      "number of children": "4"
+    },
+    "created_at": "2018-10-18T16:14:45.741643+00:00",
+    "updated_at": "2026-01-28T02:54:46.087201+00:00",
+    "openstates_url": "https://openstates.org/person/clarence-styvar-QKUuwRQG3KvilU4h96zDk/"
+  },
+  {
+    "id": "ocd-person/9b6e58cd-4dbc-4554-a677-b362c913c069",
+    "name": "Cody Wylie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:wy/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Cody",
+    "family_name": "Wylie",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/67th-WylieCody.jpg",
+    "email": "cody.wylie@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Sweetwater County",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "Political Science ",
+          "gradYear": "2008",
+          "schoolName": "Western Wyoming Community College"
+        },
+        {
+          "degree": "Political Science ",
+          "gradYear": "2011",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "birth place": "Rock Springs Wyoming",
+      "house years": "House:  2023-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 39, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "1"
+    },
+    "created_at": "2023-02-15T00:33:35.852821+00:00",
+    "updated_at": "2026-01-28T02:54:52.087274+00:00",
+    "openstates_url": "https://openstates.org/person/cody-wylie-4jIEq3dB2wcp3OFA3B41Xt/"
+  },
+  {
+    "id": "ocd-person/416ee113-2983-43ab-bf24-3d7134767b41",
+    "name": "Dalton Banks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:wy/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Dalton",
+    "family_name": "Banks",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BanksDalton.jpg",
+    "email": "dalton.banks@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Big Horn, Park Counties",
+      "religion": "Church of Jesus Christ of Latter Day Saints",
+      "education": [
+        {
+          "degree": "Public Administration ",
+          "gradYear": "2020",
+          "schoolName": "University of Wyoming "
+        }
+      ],
+      "birth place": "Powell, WY",
+      "house years": "House:  2023-Present",
+      "spouse name": "Alexa Banks ",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 26, ",
+          "startYear": 2023
+        }
+      ]
+    },
+    "created_at": "2023-02-15T00:33:55.032873+00:00",
+    "updated_at": "2026-01-28T02:54:40.803328+00:00",
+    "openstates_url": "https://openstates.org/person/dalton-banks-1zTAjjungO67CifRlxOhgP/"
+  },
+  {
+    "id": "ocd-person/0a177e23-5f49-46dd-bc32-b2403ea7124c",
+    "name": "Daniel Singh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:wy/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Daniel",
+    "family_name": "Singh",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SinghDaniel.jpg",
+    "email": "daniel.singh@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Laramie County",
+      "religion": "Evangelical Christian",
+      "education": [
+        {
+          "degree": "Associates ",
+          "gradYear": "2020",
+          "schoolName": "Calvary Chapel Bible College"
+        }
+      ],
+      "birth place": "Torrington",
+      "house years": "House:  2023-Present",
+      "organizations": [
+        {
+          "orgname": "One Way Evangelistic Ministries "
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 61, ",
+          "startYear": 2023
+        }
+      ]
+    },
+    "created_at": "2023-02-15T00:33:58.734776+00:00",
+    "updated_at": "2026-01-28T02:53:54.313309+00:00",
+    "openstates_url": "https://openstates.org/person/daniel-singh-J2et1eE6JinyG33KfWLJE/"
+  },
+  {
+    "id": "ocd-person/ff389664-aac3-4241-abc7-3a8e781e5989",
+    "name": "Darin McCann",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:wy/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Darin",
+    "family_name": "McCann",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-McCannDarin.jpg",
+    "email": "darin.mccann@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:33.314521+00:00",
+    "updated_at": "2026-01-28T02:53:55.657076+00:00",
+    "openstates_url": "https://openstates.org/person/darin-mccann-7lau2hezBg5mR7k1uabq5h/"
+  },
+  {
+    "id": "ocd-person/c0c75f8e-6d58-4197-9076-154528191d47",
+    "name": "Elissa Campbell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:wy/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Elissa",
+    "family_name": "Campbell",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-CampbellElissa.jpg",
+    "email": "elissa.campbell@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:25:02.038818+00:00",
+    "updated_at": "2026-01-28T02:54:19.079276+00:00",
+    "openstates_url": "https://openstates.org/person/elissa-campbell-5rldiXTQqav82HAZDKfahr/"
+  },
+  {
+    "id": "ocd-person/472c50ea-da65-42c3-a9b3-3639a9881a7f",
+    "name": "Gary Brown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:wy/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Brown",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BrownGary.jpg",
+    "email": "gary.brown@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:24:11.934071+00:00",
+    "updated_at": "2026-01-28T02:54:49.299493+00:00",
+    "openstates_url": "https://openstates.org/person/gary-brown-2AIhsUAeCdDOrh4Z8reHh1/"
+  },
+  {
+    "id": "ocd-person/df82de40-cf5b-4197-b276-5e5982146849",
+    "name": "Ivan Posey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:wy/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Ivan",
+    "family_name": "Posey",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-PoseyIvan.jpg",
+    "email": "ivan.posey@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1960-01-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:51.151070+00:00",
+    "updated_at": "2026-01-28T02:54:51.279634+00:00",
+    "openstates_url": "https://openstates.org/person/ivan-posey-6nl5wPmm0lYahgdeYuNdZh/"
+  },
+  {
+    "id": "ocd-person/fc63a597-e32a-4c94-a2f2-7420f7836aeb",
+    "name": "J.D. Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:wy/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "J.D.",
+    "family_name": "Williams",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WilliamsJD.jpg",
+    "email": "jd.williams@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Niobrara, Weston, Goshen Counties",
+      "religion": "Nondenominational Christian",
+      "education": [
+        {
+          "degree": "BS Ag Economics",
+          "gradYear": "1997",
+          "schoolName": "University of Wyoming "
+        }
+      ],
+      "occupation": "Rancher ",
+      "birth place": "Scottsbluff, NE",
+      "house years": "House:  2021-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 02, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "3"
+    },
+    "created_at": "2021-12-16T19:20:49.798126+00:00",
+    "updated_at": "2026-01-28T02:54:11.684405+00:00",
+    "openstates_url": "https://openstates.org/person/j-d-williams-7gFbW9IDUkAx6uzvjQ4zDn/"
+  },
+  {
+    "id": "ocd-person/25e8e592-1425-4e8d-bcce-97ec84ef66c3",
+    "name": "J.R. Riggins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:wy/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "J.R.",
+    "family_name": "Riggins",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-RigginsJR.jpg",
+    "email": "jr.riggins@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:59.099338+00:00",
+    "updated_at": "2026-01-28T02:54:07.959569+00:00",
+    "openstates_url": "https://openstates.org/person/j-r-riggins-19X9JQXNjC92lBhsr91svr/"
+  },
+  {
+    "id": "ocd-person/2a0be03f-4f0a-4b2e-850b-50b4d0dade13",
+    "name": "J.T. Larson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:wy/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "J.T.",
+    "family_name": "Larson",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LarsonJT.jpg",
+    "email": "jt.larson@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "2001-04-06",
+    "death_date": "",
+    "extras": {
+      "county": "Sweetwater County",
+      "religion": "Episcopalian",
+      "education": [
+        {
+          "degree": "High School Diploma",
+          "gradYear": "2019",
+          "schoolName": "Rock Springs High School"
+        },
+        {
+          "degree": "A.S. Business Administration",
+          "gradYear": "2021",
+          "schoolName": "Western Wyoming Community College"
+        }
+      ],
+      "occupation": "Business Agent - Rock Springs Chamber of Commerce",
+      "birth place": "Rock Springs, WY",
+      "house years": "House:  2023-Present",
+      "organizations": [
+        {
+          "orgname": "Kiwanis Club of Rock Springs"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 17, ",
+          "startYear": 2023
+        }
+      ]
+    },
+    "created_at": "2023-02-15T00:33:19.402732+00:00",
+    "updated_at": "2026-01-28T02:54:31.859387+00:00",
+    "openstates_url": "https://openstates.org/person/j-t-larson-1HL6VrwtTJhvr5DLOxiEiZ/"
+  },
+  {
+    "id": "ocd-person/b598ad4e-6124-4863-ac74-dbb13630e7db",
+    "name": "Jacob Wasserburger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:wy/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Jacob",
+    "family_name": "Wasserburger",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WasserburgerJacob.jpg",
+    "email": "jacob.wasserburger@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:54.958834+00:00",
+    "updated_at": "2026-01-28T02:54:48.803051+00:00",
+    "openstates_url": "https://openstates.org/person/jacob-wasserburger-5WfNr0eKVQZmJ1DysoNaTT/"
+  },
+  {
+    "id": "ocd-person/89408a3a-ae27-4a8d-aa93-0050a48cf93d",
+    "name": "Jayme Lien",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:wy/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Jayme",
+    "family_name": "Lien",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LienJayme.jpg",
+    "email": "jayme.lien@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:28.532188+00:00",
+    "updated_at": "2026-01-28T02:54:01.470922+00:00",
+    "openstates_url": "https://openstates.org/person/jayme-lien-4AzRVLv6rSOeJ4G58IMtRd/"
+  },
+  {
+    "id": "ocd-person/b9bbea38-a84b-4173-a599-cd9f5500b181",
+    "name": "Jeremy Haroldson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:wy/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Jeremy",
+    "family_name": "Haroldson",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-HaroldsonJeremy.jpg",
+    "email": "jeremy.haroldson@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Laramie, Platte Counties",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "Power Plant Technology",
+          "gradYear": "2006",
+          "schoolName": "Bismark State College"
+        },
+        {
+          "degree": "Biblical Theology  ",
+          "gradYear": "2016",
+          "schoolName": "Global University "
+        }
+      ],
+      "occupation": "Pastor",
+      "birth place": "Wheatland",
+      "house years": "House:  2021-Present",
+      "spouse name": "Lori Haroldson",
+      "organizations": [
+        {
+          "orgname": "Platte County Chamber of Commerce Chairman of Board"
+        },
+        {
+          "orgname": "Rural Advancement Board Member "
+        },
+        {
+          "orgname": "Platte County Ministerial Association former President "
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 04, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "2"
+    },
+    "created_at": "2021-01-12T00:23:02.473583+00:00",
+    "updated_at": "2026-01-28T02:54:27.855398+00:00",
+    "openstates_url": "https://openstates.org/person/jeremy-haroldson-5eTSNzTaDfD02lUYsmB9az/"
+  },
+  {
+    "id": "ocd-person/19e421d2-03a4-4a0a-86e8-b18b63d13822",
+    "name": "Joe Webb",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:wy/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Webb",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WebbJoe.jpg",
+    "email": "joe.webb@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:24:48.960045+00:00",
+    "updated_at": "2026-01-28T02:54:19.668163+00:00",
+    "openstates_url": "https://openstates.org/person/joe-webb-mr41FLxbbYOBZ4E9wOVgw/"
+  },
+  {
+    "id": "ocd-person/39076643-ca3a-47d2-888e-d944eb4f5de9",
+    "name": "Joel Guggenmos",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:wy/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Joel",
+    "family_name": "Guggenmos",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-GuggenmosJoel.jpg",
+    "email": "joel.guggenmos@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:48.652599+00:00",
+    "updated_at": "2026-01-28T02:54:57.355388+00:00",
+    "openstates_url": "https://openstates.org/person/joel-guggenmos-1jbwXWoE7Fq6hf9ajtGZVB/"
+  },
+  {
+    "id": "ocd-person/931a9e71-33a6-4e65-be91-703ad612447e",
+    "name": "John Bear",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:wy/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Bear",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BearJohn.jpg",
+    "email": "john.bear@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Campbell County",
+      "education": [
+        {
+          "degree": "BA in Economics",
+          "gradYear": "1988",
+          "schoolName": "University of Colorado"
+        }
+      ],
+      "occupation": "Small business owner",
+      "birth place": "Trenton, MO",
+      "house years": "House:  2021-Present",
+      "spouse name": "Sage Coulter Bear",
+      "organizations": [
+        {
+          "orgname": "U.S. Navy"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 31, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "1",
+      "number of grandchildren": "2"
+    },
+    "created_at": "2021-01-12T00:23:05.882254+00:00",
+    "updated_at": "2026-01-28T02:53:53.486652+00:00",
+    "openstates_url": "https://openstates.org/person/john-bear-4Ta2I13Q4xnfxvvPy26W3K/"
+  },
+  {
+    "id": "ocd-person/e79049b8-a6d9-4356-a190-fc1e90837d5d",
+    "name": "John Winter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:wy/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Winter",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WinterJohn.jpg",
+    "email": "john.winter@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Big Horn, Fremont, Hot Springs, Park Counties",
+      "religion": "Church of Jesus Christ of Latter Day Saints",
+      "education": [
+        {
+          "degree": "B.S. Range Management",
+          "gradYear": "1972",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "occupation": "Rancher / Wyoming Outfitter& Guide",
+      "birth place": "Cody,Wyoming",
+      "house years": "House:  2019-Present",
+      "spouse name": "S. Diane Winter",
+      "organizations": [
+        {
+          "orgname": "Wyoming Outfitters & Guides Assn."
+        },
+        {
+          "orgname": "Hot Springs County Farm Bureau"
+        },
+        {
+          "orgname": "National Rifle Association"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 28, ",
+          "startYear": 2019
+        }
+      ],
+      "number of children": "10"
+    },
+    "created_at": "2019-01-07T05:14:16.009966+00:00",
+    "updated_at": "2026-01-28T02:54:54.091374+00:00",
+    "openstates_url": "https://openstates.org/person/john-winter-72xANBZnUiG4QMFrmw7D01/"
+  },
+  {
+    "id": "ocd-person/64428f70-4a9b-453d-b2f5-bbbdcdb370e5",
+    "name": "Julie Jarvis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:wy/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Jarvis",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-JarvisJulie.jpg",
+    "email": "julie.jarvis@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:24:40.296519+00:00",
+    "updated_at": "2026-01-28T02:54:23.167367+00:00",
+    "openstates_url": "https://openstates.org/person/julie-jarvis-33BeLqMbBeY2m6pYwqF2M1/"
+  },
+  {
+    "id": "ocd-person/970ff542-b60c-4a3b-bd63-492a38a0a878",
+    "name": "Justin Fornstrom",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:wy/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Fornstrom",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-FornstromJustin.JPG",
+    "email": "justin.fornstrom@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:54:41.099819+00:00",
+    "updated_at": "2026-01-28T02:54:42.067616+00:00",
+    "openstates_url": "https://openstates.org/person/justin-fornstrom-4b38JxIeAB7brDIgimABVQ/"
+  },
+  {
+    "id": "ocd-person/588c810c-0a65-475b-9593-46fa556cb962",
+    "name": "Karlee Provenza",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:wy/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Karlee",
+    "family_name": "Provenza",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-ProvenzaKarlee.jpg",
+    "email": "karlee.provenza@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "1989-10-09",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Whip",
+      "county": "Albany County",
+      "education": [
+        {
+          "degree": "Ph.D. Experimental Psychology and Law",
+          "gradYear": "2021",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "M.A. Experimental Psychology",
+          "gradYear": "2017",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "B.A. Psychology",
+          "gradYear": "2013",
+          "schoolName": "University of Northern Colorado"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2024",
+          "position": "House Minority Whip                               ",
+          "startYear": "2023",
+          "currentLeader": true
+        }
+      ],
+      "occupation": "Research Scientist/ Consultant",
+      "house years": "House:  2021-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 45, ",
+          "startYear": 2021
+        }
+      ]
+    },
+    "created_at": "2021-01-12T00:23:05.435052+00:00",
+    "updated_at": "2026-01-28T02:54:38.871832+00:00",
+    "openstates_url": "https://openstates.org/person/karlee-provenza-2h5XBmYZvCORcvnrSWeJbW/"
+  },
+  {
+    "id": "ocd-person/dcc60e43-41b3-44ef-976c-0604a295b9cd",
+    "name": "Ken Chestek",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:wy/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Chestek",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-ChestekKen.jpg",
+    "email": "ken.chestek@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Albany County",
+      "religion": "Unitarian Universalist",
+      "education": [
+        {
+          "degree": "J.D.",
+          "gradYear": "1979",
+          "schoolName": "University of Pittsburgh"
+        },
+        {
+          "degree": "B.A",
+          "gradYear": "1975",
+          "schoolName": "Penn State University"
+        }
+      ],
+      "occupation": "Professor",
+      "birth place": "Cincinnati, OH",
+      "house years": "House:  2023-Present",
+      "organizations": [
+        {
+          "orgname": "Wyoming Promise"
+        },
+        {
+          "orgname": "Legal Writing Institute"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 13, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "4",
+      "number of grandchildren": "6"
+    },
+    "created_at": "2023-02-15T00:34:33.360947+00:00",
+    "updated_at": "2026-01-28T02:55:08.007778+00:00",
+    "openstates_url": "https://openstates.org/person/ken-chestek-6iap479IQZ0MTM4E580ZBt/"
+  },
+  {
+    "id": "ocd-person/15ae95ba-274d-4b7b-a2c7-a5cfb5e2b089",
+    "name": "Ken Clouston",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:wy/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Clouston",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-CloustonKen.jpg",
+    "email": "ken.clouston@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Campbell County",
+      "religion": "Catholic",
+      "education": [
+        {
+          "degree": "Bachelors of Science in Physical Therapy",
+          "gradYear": "1992",
+          "schoolName": "University of North Dakota"
+        },
+        {
+          "degree": "Doctorate of Physical Therapy",
+          "gradYear": "2005",
+          "schoolName": "University of North Dakota"
+        }
+      ],
+      "occupation": "Physical Therapist",
+      "birth place": "Bismarck, ND",
+      "house years": "House:  2023-Present",
+      "spouse name": "Christine S Clouston",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 32, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "1"
+    },
+    "created_at": "2023-02-15T00:33:16.545158+00:00",
+    "updated_at": "2026-01-28T02:54:02.308402+00:00",
+    "openstates_url": "https://openstates.org/person/ken-clouston-euci6IyOhlHFxIJlEm4gD/"
+  },
+  {
+    "id": "ocd-person/b7a5cb78-6473-4b7b-9c27-90c8ab2130a5",
+    "name": "Ken Pendergraft",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:wy/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Pendergraft",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-PendergraftKen.jpg",
+    "email": "ken.pendergraft@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Sheridan County",
+      "religion": "Christian",
+      "occupation": "Contractor/Home builder",
+      "birth place": "Casper, Wyoming",
+      "house years": "House:  2023-Present",
+      "spouse name": "Diane",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 29, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "3",
+      "number of grandchildren": "9"
+    },
+    "created_at": "2023-02-15T00:33:15.636929+00:00",
+    "updated_at": "2026-01-28T02:54:21.439472+00:00",
+    "openstates_url": "https://openstates.org/person/ken-pendergraft-5aXMaHJ58bRXdupyhScr0X/"
+  },
+  {
+    "id": "ocd-person/e6242790-9cdf-48ec-a5d3-aae3e5439733",
+    "name": "Kevin Campbell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:wy/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Campbell",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-CampbellKevin.jpg",
+    "email": "kevin.campbell@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:25:11.972642+00:00",
+    "updated_at": "2026-01-28T02:54:09.247366+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-campbell-70GkzIePLB3bpqmMVcjhf1/"
+  },
+  {
+    "id": "ocd-person/7052600a-c1b3-484d-80a3-232fc9815d7c",
+    "name": "Landon Brown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:wy/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Landon",
+    "family_name": "Brown",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BrownLandon.jpg",
+    "email": "landon.brown@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1987-02-26",
+    "death_date": "",
+    "extras": {
+      "county": "Laramie County",
+      "education": [
+        {
+          "degree": "Professional Retail Sales & Management",
+          "gradYear": "2012",
+          "schoolName": "Bellevue University"
+        },
+        {
+          "degree": "Master's of Public Administration",
+          "gradYear": "2015",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "occupation": "Development Director, Cheyenne Regional Medical Center Foundation",
+      "house years": "House:  2017-Present",
+      "organizations": [
+        {
+          "orgname": "Cheyenne Planning Commission"
+        },
+        {
+          "orgname": "Laramie County School District No. 1"
+        },
+        {
+          "orgname": "Black Dog Animal Rescue"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 09, ",
+          "startYear": 2017
+        }
+      ]
+    },
+    "created_at": "2018-10-18T16:14:48.827621+00:00",
+    "updated_at": "2026-01-28T02:54:55.276465+00:00",
+    "openstates_url": "https://openstates.org/person/landon-brown-3Pwmk4AL5r88yPinTDoTLI/"
+  },
+  {
+    "id": "ocd-person/5eabff67-a57e-4fd5-b62c-3072d0374d56",
+    "name": "Laurie Bratten",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:wy/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Laurie",
+    "family_name": "Bratten",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BrattenLaurie.jpg",
+    "email": "laurie.bratten@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:25:08.112192+00:00",
+    "updated_at": "2026-01-28T02:54:42.463326+00:00",
+    "openstates_url": "https://openstates.org/person/laurie-bratten-2sdsg02b2Vx2sWOOoC9CvW/"
+  },
+  {
+    "id": "ocd-person/be3b0a04-4e00-42e4-9202-5c8f68aacedd",
+    "name": "Lee Filer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:wy/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Lee",
+    "family_name": "Filer",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-FilerLee.jpg",
+    "email": "lee.filer@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1980-01-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-16T02:10:28.380418+00:00",
+    "updated_at": "2026-01-28T02:54:08.623506+00:00",
+    "openstates_url": "https://openstates.org/person/lee-filer-5mxWQjfhhXj6tMxSPOTS1t/"
+  },
+  {
+    "id": "ocd-person/7d3ea3c1-de6a-433f-83e2-c53dde09be61",
+    "name": "Liz Storer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:wy/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Storer",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-StorerLiz.jpg",
+    "email": "liz.storer@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Teton County",
+      "education": [
+        {
+          "degree": "BA",
+          "gradYear": "1982",
+          "schoolName": "University of Southern California"
+        },
+        {
+          "degree": "MFA",
+          "gradYear": "1984",
+          "schoolName": "University of Southern California"
+        }
+      ],
+      "birth place": "Cleveland, Ohio",
+      "house years": "House:  2023-Present",
+      "spouse name": "Luther Propst",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 23, ",
+          "startYear": 2023
+        }
+      ]
+    },
+    "created_at": "2023-02-15T00:34:28.521014+00:00",
+    "updated_at": "2026-01-28T02:54:15.735677+00:00",
+    "openstates_url": "https://openstates.org/person/liz-storer-3oKfN2rrltxXCPtWxTReuP/"
+  },
+  {
+    "id": "ocd-person/6466bd0e-d531-4ac0-8667-3e7f34a32f9a",
+    "name": "Lloyd Larsen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:wy/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Lloyd",
+    "family_name": "Larsen",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LarsenLloyd.jpg",
+    "email": "lloyd.larsen@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Fremont County",
+      "religion": "LDS",
+      "occupation": "Oil and Gas Construction",
+      "birth place": "Monticello, UT",
+      "house years": "House:  2013-Present",
+      "spouse name": "Becky",
+      "organizations": [
+        {
+          "orgname": "NRA"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 54, ",
+          "startYear": 2013
+        }
+      ],
+      "number of children": "6",
+      "number of grandchildren": "15"
+    },
+    "created_at": "2018-10-18T16:14:49.171921+00:00",
+    "updated_at": "2026-01-28T02:54:13.485560+00:00",
+    "openstates_url": "https://openstates.org/person/lloyd-larsen-33SBQYUMoa5gZThi35CmiY/"
+  },
+  {
+    "id": "ocd-person/65ae499e-9549-42e2-ab16-65b56eb0f8ab",
+    "name": "Marilyn Connolly",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:wy/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Marilyn",
+    "family_name": "Connolly",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-ConnollyMarilyn.jpg",
+    "email": "marilyn.connolly@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:24:10.675221+00:00",
+    "updated_at": "2026-01-28T02:54:49.895282+00:00",
+    "openstates_url": "https://openstates.org/person/marilyn-connolly-35rsEETTGhdyqXEUr54R0l/"
+  },
+  {
+    "id": "ocd-person/b2d0dc89-4104-4f6e-a1eb-bbc9dafbefa9",
+    "name": "Marlene Brady",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:wy/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Marlene",
+    "family_name": "Brady",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BradyMarlene.jpg",
+    "email": "marlene.brady@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:24:18.744820+00:00",
+    "updated_at": "2026-01-28T02:54:10.961802+00:00",
+    "openstates_url": "https://openstates.org/person/marlene-brady-5RQ5DW8Kg3Ge0vCFTLKekL/"
+  },
+  {
+    "id": "ocd-person/c954b74f-1933-4be4-801d-cc93f7f37ac0",
+    "name": "Martha Lawley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:wy/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Martha",
+    "family_name": "Lawley",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LawleyMartha.jpg",
+    "email": "martha.lawley@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Big Horn, Washakie Counties",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "Bachelor in Political Science ",
+          "gradYear": "1978",
+          "schoolName": "University of Wyoming "
+        },
+        {
+          "degree": "JD",
+          "gradYear": "1981",
+          "schoolName": "Baylor Law School"
+        }
+      ],
+      "occupation": "Retired Attorney , Retired",
+      "birth place": "Lake Charles, LA",
+      "house years": "House:  2023-Present",
+      "spouse name": "Roger Lawley ",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 27, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "3",
+      "number of grandchildren": "4"
+    },
+    "created_at": "2023-02-15T00:34:25.704450+00:00",
+    "updated_at": "2026-01-28T02:55:08.795386+00:00",
+    "openstates_url": "https://openstates.org/person/martha-lawley-67uAjGsQXj3Qrvub7n8lzE/"
+  },
+  {
+    "id": "ocd-person/f3fe63a7-b938-41c4-b2f5-b4069949a163",
+    "name": "McKay Erickson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:wy/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "McKay",
+    "family_name": "Erickson",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-EricksonMcKay.jpg",
+    "email": "mckay.erickson@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:53.681842+00:00",
+    "updated_at": "2026-01-28T02:55:07.339935+00:00",
+    "openstates_url": "https://openstates.org/person/mckay-erickson-7QPOHcxlaLit6NUniCnNT9/"
+  },
+  {
+    "id": "ocd-person/4c9350f0-084c-4ba2-be0d-9ee0b5f6c629",
+    "name": "Mike Schmid",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:wy/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Schmid",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SchmidMike.jpg",
+    "email": "mike.schmid@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:42.263595+00:00",
+    "updated_at": "2026-01-28T02:54:36.463257+00:00",
+    "openstates_url": "https://openstates.org/person/mike-schmid-2KUjuZx3HTnj2iaCBmwcqf/"
+  },
+  {
+    "id": "ocd-person/28649646-1108-4954-9381-4aa2d3b6f31b",
+    "name": "Mike Yin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:wy/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Yin",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-YinMike.jpg",
+    "email": "mike.yin@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1986-03-14",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Floor Leader",
+      "county": "Teton County",
+      "education": [
+        {
+          "degree": "B.S. in Computer Science",
+          "gradYear": "2007",
+          "schoolName": "Carnegie Mellon University"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2024",
+          "position": "House Minority Floor Leader                       ",
+          "startYear": "2023",
+          "currentLeader": true
+        },
+        {
+          "endYear": "2022",
+          "position": "House Minority Caucus Chairman                    ",
+          "startYear": "2021",
+          "currentLeader": false
+        }
+      ],
+      "occupation": "Software Developer",
+      "birth place": "Atlanta",
+      "house years": "House:  2019-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 16, ",
+          "startYear": 2019
+        }
+      ]
+    },
+    "created_at": "2019-01-07T05:14:20.287947+00:00",
+    "updated_at": "2026-01-28T02:53:57.566860+00:00",
+    "openstates_url": "https://openstates.org/person/mike-yin-1EDf0gocHBhmETuUxNfTDv/"
+  },
+  {
+    "id": "ocd-person/86d51e65-7fef-49ff-a19a-60984fe2fab2",
+    "name": "Nina Webber",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:wy/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Nina",
+    "family_name": "Webber",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-WebberNina.jpg",
+    "email": "nina.webber@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:40.933292+00:00",
+    "updated_at": "2026-01-28T02:53:59.885881+00:00",
+    "openstates_url": "https://openstates.org/person/nina-webber-46QMm60LAV3u1XYmOVkv5O/"
+  },
+  {
+    "id": "ocd-person/d811f813-1093-449a-a4dc-5d02c704ee49",
+    "name": "Ocean Andrew",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:wy/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Ocean",
+    "family_name": "Andrew",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/66th-AndrewOcean.jpg",
+    "email": "ocean.andrew@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1994-03-24",
+    "death_date": "",
+    "extras": {
+      "county": "Albany County",
+      "religion": "Lutheran",
+      "house years": "House:  2021-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 46, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "1"
+    },
+    "created_at": "2021-01-12T00:23:00.081006+00:00",
+    "updated_at": "2026-01-28T02:54:07.263510+00:00",
+    "openstates_url": "https://openstates.org/person/ocean-andrew-6ZiYNVlxY0oAgLfz2B4CfR/"
+  },
+  {
+    "id": "ocd-person/4e09e885-4101-4e95-8560-17d35caad18c",
+    "name": "Pam Thayer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:wy/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Pam",
+    "family_name": "Thayer",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-ThayerPamela.jpg",
+    "email": "pam.thayer@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:24:21.409329+00:00",
+    "updated_at": "2026-01-28T02:54:02.888179+00:00",
+    "openstates_url": "https://openstates.org/person/pam-thayer-2NFvdORTPxCgMNrGwOtX00/"
+  },
+  {
+    "id": "ocd-person/d110d38a-8f1f-4056-b89d-d7d46613c72a",
+    "name": "Paul Hoeft",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:wy/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Hoeft",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-HoeftPaul.jpg",
+    "email": "paul.hoeft@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:20.671492+00:00",
+    "updated_at": "2026-01-28T02:54:23.959406+00:00",
+    "openstates_url": "https://openstates.org/person/paul-hoeft-6MV5KZE52JUp7OAv0IoXBi/"
+  },
+  {
+    "id": "ocd-person/9c9a9e1b-8107-40ac-b667-a8e75c5f806d",
+    "name": "Pepper Ottman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:wy/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Pepper",
+    "family_name": "Ottman",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-OttmanPepper.jpg",
+    "email": "pepper.ottman@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Fremont County",
+      "education": [
+        {
+          "degree": "General",
+          "gradYear": "2013",
+          "schoolName": "CWC"
+        }
+      ],
+      "birth place": "Virginia",
+      "house years": "House:  2021-Present",
+      "spouse name": "Larry",
+      "organizations": [
+        {
+          "orgname": "Lighthouse Bible Church"
+        },
+        {
+          "orgname": "Wyoming Prospectors Assoc."
+        },
+        {
+          "orgname": "NRA "
+        },
+        {
+          "orgname": "Farm Bureau"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 34, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "2",
+      "number of grandchildren": "9"
+    },
+    "created_at": "2021-01-12T00:23:04.581079+00:00",
+    "updated_at": "2026-01-28T02:54:44.319279+00:00",
+    "openstates_url": "https://openstates.org/person/pepper-ottman-4lVSjW2RD9Eur4hr2VQwaj/"
+  },
+  {
+    "id": "ocd-person/2fc47a70-0bf7-4d7c-bda2-5cdbf75a99ea",
+    "name": "Rachel Rodriguez-Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:wy/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Rachel",
+    "family_name": "Rodriguez-Williams",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-Rodriguez-WilliamsRachel.jpg",
+    "email": "rachel.rodriguez-williams@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "1978-02-14",
+    "death_date": "",
+    "extras": {
+      "county": "Park County",
+      "religion": "Catholic",
+      "education": [
+        {
+          "degree": "M.S. Criminal Justice Administration",
+          "gradYear": "2012",
+          "schoolName": "Columbia Southern University"
+        }
+      ],
+      "occupation": " Law Enforcement, Retired",
+      "house years": "House:  2021-Present",
+      "spouse name": "Chris ",
+      "organizations": [
+        {
+          "orgname": "Wyoming Outdoorsman"
+        },
+        {
+          "orgname": "Park County Republican Women"
+        },
+        {
+          "orgname": "Yellowstone Quake Hockey Billet mom"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 50, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "2",
+      "number of grandchildren": "1"
+    },
+    "created_at": "2021-01-12T00:23:04.906934+00:00",
+    "updated_at": "2026-01-28T02:54:43.431447+00:00",
+    "openstates_url": "https://openstates.org/person/rachel-rodriguez-williams-1S8QfeFxgw3dioGiqywTne/"
+  },
+  {
+    "id": "ocd-person/8b636fd9-d6e2-4369-9764-c56803244076",
+    "name": "Reuben Tarver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:wy/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Reuben",
+    "family_name": "Tarver",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-TarverReuben.jpg",
+    "email": "reuben.tarver@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Campbell County",
+      "religion": "Non-Denominational",
+      "education": [
+        {
+          "degree": "",
+          "gradYear": "1993",
+          "schoolName": "Campbell County High School "
+        }
+      ],
+      "occupation": "Rancher ",
+      "birth place": "Casper, Wyoming",
+      "house years": "House:  2023-Present",
+      "spouse name": "Jenny",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 52, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "4",
+      "number of grandchildren": "3"
+    },
+    "created_at": "2023-02-15T00:34:41.968725+00:00",
+    "updated_at": "2026-01-28T02:55:01.731440+00:00",
+    "openstates_url": "https://openstates.org/person/reuben-tarver-4F1NKInoXMgKx6yb2SRXni/"
+  },
+  {
+    "id": "ocd-person/219dcec3-8f83-401b-91df-1a79ac725889",
+    "name": "Rob Geringer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:wy/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Geringer",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-GeringerRob.jpg",
+    "email": "rob.geringer@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:24:25.106357+00:00",
+    "updated_at": "2026-01-28T02:54:14.871038+00:00",
+    "openstates_url": "https://openstates.org/person/rob-geringer-11QrdR4s3pD7VJmEj21vi5/"
+  },
+  {
+    "id": "ocd-person/232d6600-4cfd-40a1-abb9-8a1eecd84768",
+    "name": "Scott Heiner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:wy/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Heiner",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-HeinerScott.jpg",
+    "email": "scott.heiner@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Lincoln, Sweetwater, Uinta Counties",
+      "religion": "Church of Jesus Christ of Latter Day Saints",
+      "education": [
+        {
+          "degree": "Engineering",
+          "gradYear": "1985",
+          "schoolName": "USU"
+        }
+      ],
+      "birth place": "Afton, Wyoming",
+      "house years": "House:  2021-Present",
+      "spouse name": "Paula",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 18, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "7",
+      "number of grandchildren": "2"
+    },
+    "created_at": "2021-01-12T00:23:04.500937+00:00",
+    "updated_at": "2026-01-28T02:54:29.931727+00:00",
+    "openstates_url": "https://openstates.org/person/scott-heiner-14NTfhWqeg8GgnMTyysoBc/"
+  },
+  {
+    "id": "ocd-person/201b5fe9-4060-4dfa-ae2c-c59a3a3120ff",
+    "name": "Scott Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:wy/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Smith",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/67th-SmithScott.jpg",
+    "email": "scott.smith@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Goshen County",
+      "religion": "Protestant",
+      "education": [
+        {
+          "degree": "Business Administration",
+          "gradYear": "2006",
+          "schoolName": "Spring Arbor University"
+        }
+      ],
+      "occupation": "Administrator/Small Business Owner",
+      "birth place": "Fort Wayne, IN",
+      "house years": "House:  2023-Present",
+      "spouse name": "Charissa Smith",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 05, ",
+          "startYear": 2023
+        }
+      ]
+    },
+    "created_at": "2023-02-15T00:33:49.273087+00:00",
+    "updated_at": "2026-01-28T02:54:58.165184+00:00",
+    "openstates_url": "https://openstates.org/person/scott-smith-yaGPYyPh5zbFx3aD4ZB3H/"
+  },
+  {
+    "id": "ocd-person/1f6a3489-e152-487f-852a-23fc40a22185",
+    "name": "Steve Harshman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:wy/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Harshman",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-HarshmanSteve.jpg",
+    "email": "steve.harshman@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Natrona County",
+      "religion": "Catholic",
+      "education": [
+        {
+          "degree": "",
+          "gradYear": "",
+          "schoolName": "Midwest High School"
+        },
+        {
+          "degree": "BS Education",
+          "gradYear": "",
+          "schoolName": "Black Hills State University"
+        },
+        {
+          "degree": "",
+          "gradYear": "",
+          "schoolName": "Oregon State University - M Ed"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2020",
+          "position": "Speaker of the House",
+          "startYear": "2019",
+          "currentLeader": false
+        },
+        {
+          "endYear": "2018",
+          "position": "Speaker of the House",
+          "startYear": "2017",
+          "currentLeader": false
+        }
+      ],
+      "occupation": "Teacher/Coach",
+      "birth place": "Casper",
+      "house years": "House:  2003-Present",
+      "spouse name": "Becky",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 37, ",
+          "startYear": 2003
+        }
+      ],
+      "number of children": "4"
+    },
+    "created_at": "2018-10-18T16:14:50.609332+00:00",
+    "updated_at": "2026-01-28T02:55:03.631549+00:00",
+    "openstates_url": "https://openstates.org/person/steve-harshman-xHITkTvO0eIkZU0EFqDJd/"
+  },
+  {
+    "id": "ocd-person/51b4d190-c5b4-4860-acb9-a6569f26e064",
+    "name": "Steve Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:wy/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Johnson",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-JohnsonSteve.jpg",
+    "email": "steve.johnson@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:38.275180+00:00",
+    "updated_at": "2026-01-28T02:54:04.383401+00:00",
+    "openstates_url": "https://openstates.org/person/steve-johnson-2UB0nIKluVoDIMnWc93S7A/"
+  },
+  {
+    "id": "ocd-person/312edf5d-1dad-475a-b3bd-4b58f5f98ad4",
+    "name": "Tom Kelly",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:wy/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Kelly",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-KellyTom.jpg",
+    "email": "tom.kelly@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:24:04.390491+00:00",
+    "updated_at": "2026-01-28T02:54:55.855934+00:00",
+    "openstates_url": "https://openstates.org/person/tom-kelly-1Uo2mIBoD569qk0PKUS5rg/"
+  },
+  {
+    "id": "ocd-person/d1ac363d-41ed-4c2c-a661-6e400d0b7d57",
+    "name": "Tomi Strock",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:wy/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Tomi",
+    "family_name": "Strock",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-StrockTomi.jpg",
+    "email": "tomi.strock@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Converse County",
+      "religion": "Baptist",
+      "occupation": "Rancher",
+      "birth place": "Douglas Wy",
+      "house years": "House:  2023-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 06, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "7",
+      "number of grandchildren": "8"
+    },
+    "created_at": "2023-02-15T00:33:13.592269+00:00",
+    "updated_at": "2026-01-28T02:53:55.114865+00:00",
+    "openstates_url": "https://openstates.org/person/tomi-strock-6Ne62Ll1kroM8eeWWvOe7r/"
+  },
+  {
+    "id": "ocd-person/0cd9d0d3-09eb-4cf1-8e5b-bfc15a71b337",
+    "name": "Tony Locke",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:wy/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Locke",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LockeTony.jpg",
+    "email": "tony.locke@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Natrona County",
+      "religion": "Christ Follower",
+      "education": [
+        {
+          "degree": "Diploma",
+          "gradYear": "1978",
+          "schoolName": "Wheatland High School"
+        },
+        {
+          "degree": "BS Electrical Engineering",
+          "gradYear": "1984",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "MS Electrical Engineering",
+          "gradYear": "1992",
+          "schoolName": "West Coast University"
+        }
+      ],
+      "occupation": "Engineer",
+      "birth place": "Wheatland, WY",
+      "house years": "House:  2023-Present",
+      "spouse name": "Jayme",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 35, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "2"
+    },
+    "created_at": "2023-02-15T00:34:13.014163+00:00",
+    "updated_at": "2026-01-28T02:54:26.775652+00:00",
+    "openstates_url": "https://openstates.org/person/tony-locke-OFRtkJ2pOBWqjXYGQyGoR/"
+  },
+  {
+    "id": "ocd-person/b2265fcb-f768-4617-ad03-15f5b65af79f",
+    "name": "Trey Sherwood",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:wy/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Trey",
+    "family_name": "Sherwood",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SherwoodTrey.jpg",
+    "email": "trey.sherwood@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Chairman",
+      "county": "Albany County",
+      "religion": "Lutheran",
+      "education": [
+        {
+          "degree": "",
+          "gradYear": "2009",
+          "schoolName": "Leadership Wyoming"
+        },
+        {
+          "degree": "Public History/Museum Studies",
+          "gradYear": "2004",
+          "schoolName": "University of West Georgia"
+        },
+        {
+          "degree": "History/English",
+          "gradYear": "2001",
+          "schoolName": "Piedmont College"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2024",
+          "position": "House Minority Caucus Chairman                    ",
+          "startYear": "2023",
+          "currentLeader": true
+        }
+      ],
+      "occupation": "Director, Laramie Main Street",
+      "house years": "House:  2021-Present",
+      "organizations": [
+        {
+          "orgname": "Laramie Public Art Coalition"
+        },
+        {
+          "orgname": "Trinity Lutheran Church"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 14, ",
+          "startYear": 2021
+        }
+      ]
+    },
+    "created_at": "2021-01-12T00:23:05.999292+00:00",
+    "updated_at": "2026-01-28T02:54:56.855468+00:00",
+    "openstates_url": "https://openstates.org/person/trey-sherwood-5QAAcLCCooH3Ii6OJqNw2J/"
+  }
+]

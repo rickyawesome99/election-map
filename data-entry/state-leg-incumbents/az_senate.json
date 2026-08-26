@@ -1,0 +1,824 @@
+[
+  {
+    "id": "ocd-person/87e6206a-c16e-4038-a86f-0d5c88b993e3",
+    "name": "Analise Ortiz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:az/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Analise",
+    "family_name": "Ortiz",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/ORTIZ.jpg",
+    "email": "analise.ortiz@azleg.gov",
+    "gender": "Female",
+    "birth_date": "1993-04-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-11T22:32:29.100902+00:00",
+    "updated_at": "2026-01-29T00:08:11.893146+00:00",
+    "openstates_url": "https://openstates.org/person/analise-ortiz-48R8CaMOmlm2Y8wtqRHuZX/"
+  },
+  {
+    "id": "ocd-person/5425612b-fb2c-4857-8f75-31523345eb2b",
+    "name": "Brian Fernandez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:az/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Fernandez",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/FERNANDEZ.jpg",
+    "email": "bfernandez@azleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-05T22:10:23.243550+00:00",
+    "updated_at": "2026-06-18T06:09:00.499840+00:00",
+    "openstates_url": "https://openstates.org/person/brian-fernandez-2YmR9bFPbqgI6DgEbzZRk3/"
+  },
+  {
+    "id": "ocd-person/051cb7cf-e965-49a7-844a-a8830447df0c",
+    "name": "Carine Werner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:az/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Carine",
+    "family_name": "Werner",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/164676.jpg",
+    "email": "cwerner@azleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:42:38.904217+00:00",
+    "updated_at": "2026-06-18T06:09:26.045898+00:00",
+    "openstates_url": "https://openstates.org/person/carine-werner-9e5Jpjz4BJDMmo1RXFZjY/"
+  },
+  {
+    "id": "ocd-person/6241112b-910b-4ad8-9c0d-9caad318874f",
+    "name": "Catherine Miranda",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:az/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Catherine",
+    "family_name": "Miranda",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/MIRANDA.jpg",
+    "email": "cmiranda@azleg.gov",
+    "gender": "Female",
+    "birth_date": "1964-10-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-11T22:32:21.567757+00:00",
+    "updated_at": "2025-07-17T06:08:23.735985+00:00",
+    "openstates_url": "https://openstates.org/person/catherine-miranda-2zOyze8uNgwkdM7oWtfcAZ/"
+  },
+  {
+    "id": "ocd-person/263ebe9c-566a-4b5c-bfbc-ea1f1d0dc3f2",
+    "name": "Dave Farnsworth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:az/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Farnsworth",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/FARNSWORTH.jpg",
+    "email": "dfarnsworth@azleg.gov",
+    "gender": "Male",
+    "birth_date": "1951-07-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-11T22:32:21.131903+00:00",
+    "updated_at": "2026-06-18T06:09:23.430475+00:00",
+    "openstates_url": "https://openstates.org/person/dave-farnsworth-1AANjO7VlyIVcVXHNANqQE/"
+  },
+  {
+    "id": "ocd-person/51520de4-0e87-475b-91d2-99aa18addf72",
+    "name": "David Gowan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:az/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Gowan",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/GOWAN.jpg",
+    "email": "dgowan@azleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-11T22:32:22.755697+00:00",
+    "updated_at": "2026-01-29T00:07:56.374388+00:00",
+    "openstates_url": "https://openstates.org/person/david-gowan-2TRsOg8lWimGu9EiS6jPZS/"
+  },
+  {
+    "id": "ocd-person/e1cd66fa-a0de-45fd-ae53-a4db7d178d21",
+    "name": "Eva Diaz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:az/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Eva",
+    "family_name": "Diaz",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/DIAZ.jpg",
+    "email": "eva.diaz@azleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-11T22:32:24.544890+00:00",
+    "updated_at": "2025-07-17T06:08:54.615280+00:00",
+    "openstates_url": "https://openstates.org/person/eva-diaz-6s58qPmEl79lVwlUwYzrcX/"
+  },
+  {
+    "id": "ocd-person/36cc8d88-e944-4889-b8ab-cf5610f3f03e",
+    "name": "Flavio Bravo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:az/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Flavio",
+    "family_name": "Bravo",
+    "image": "https://chci.org/wp-content/uploads/2019/09/Bravo-Flavio.jpg",
+    "email": "fbravo@azleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-11T22:32:20.108057+00:00",
+    "updated_at": "2026-06-18T06:09:20.401718+00:00",
+    "openstates_url": "https://openstates.org/person/flavio-bravo-1fP47vwvuyfYrAlaEjPXGI/"
+  },
+  {
+    "id": "ocd-person/faca0001-6681-450b-9577-6185f4f49a3d",
+    "name": "Frank Carroll",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:az/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Frank",
+    "family_name": "Carroll",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/CARROLL.jpg",
+    "email": "fcarroll@azleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-05T07:25:10.454506+00:00",
+    "updated_at": "2025-02-13T14:03:11.732608+00:00",
+    "openstates_url": "https://openstates.org/person/frank-carroll-7dEOYHKVsfPKTQ89jHVvZd/"
+  },
+  {
+    "id": "ocd-person/a739b3e9-8161-4b10-b007-3d1e90de791f",
+    "name": "Hildy Angius",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:az/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Hildy",
+    "family_name": "Angius",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/ANGIUS.jpg",
+    "email": "hangius@azleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:43:25.523456+00:00",
+    "updated_at": "2026-01-29T00:08:19.936396+00:00",
+    "openstates_url": "https://openstates.org/person/hildy-angius-55Y5VXrBOggWXqAzVsU6wh/"
+  },
+  {
+    "id": "ocd-person/06adeea1-c37c-4dd1-8be5-92e9b5d3556e",
+    "name": "J.D. Mesnard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:az/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "J.D.",
+    "family_name": "Mesnard",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/MESNARD.jpg",
+    "email": "jmesnard@azleg.gov",
+    "gender": "Male",
+    "birth_date": "1980-05-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:34:54.682705+00:00",
+    "updated_at": "2026-06-18T06:09:08.164923+00:00",
+    "openstates_url": "https://openstates.org/person/j-d-mesnard-CbRLtNQlSivPXGJhamQWc/"
+  },
+  {
+    "id": "ocd-person/35f7056c-9f29-4b66-9ae0-f041fe6e7e05",
+    "name": "Jake Hoffman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:az/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Jake",
+    "family_name": "Hoffman",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/HOFFMAN.jpg",
+    "email": "jake.hoffman@azleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-12T00:04:32.135977+00:00",
+    "updated_at": "2026-06-18T06:09:22.712518+00:00",
+    "openstates_url": "https://openstates.org/person/jake-hoffman-1dpTu4VyOpI61la6NgurmH/"
+  },
+  {
+    "id": "ocd-person/c94f542a-52e0-4831-8479-02793a97ccd9",
+    "name": "Janae Shamp",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:az/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Janae",
+    "family_name": "Shamp",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/56leg/Senate/SHAMP.jpg",
+    "email": "jshamp@azleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-11T22:32:23.954934+00:00",
+    "updated_at": "2026-06-18T06:08:46.926853+00:00",
+    "openstates_url": "https://openstates.org/person/janae-shamp-67ri5Moxck05m0G1MRnVyj/"
+  },
+  {
+    "id": "ocd-person/b6144266-5383-491f-8c87-df8fd11805ea",
+    "name": "John Kavanagh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:az/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Kavanagh",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/KAVANAGH.jpg",
+    "email": "jkavanagh@azleg.gov",
+    "gender": "Male",
+    "birth_date": "1950-06-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:34:50.293285+00:00",
+    "updated_at": "2025-02-13T14:03:16.319402+00:00",
+    "openstates_url": "https://openstates.org/person/john-kavanagh-5XZrRnjM7pNi9assO4Lmry/"
+  },
+  {
+    "id": "ocd-person/4b336587-cb71-4a49-9cf8-514cdd2771ff",
+    "name": "Kevin Payne",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:az/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Payne",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/PAYNE.jpg",
+    "email": "kpayne@azleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:34:59.788545+00:00",
+    "updated_at": "2026-06-18T06:08:53.487638+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-payne-2Htuawha9kvWDU4z7pFmLH/"
+  },
+  {
+    "id": "ocd-person/78fce9ac-3aa4-484f-b345-f55bbbf9db9b",
+    "name": "Kiana Sears",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:az/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Kiana",
+    "family_name": "Sears",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/SEARS.jpg",
+    "email": "ksears@azleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-04-25T00:08:51.870970+00:00",
+    "updated_at": "2026-06-18T06:09:17.984774+00:00",
+    "openstates_url": "https://openstates.org/person/kiana-sears-3gIexkE4ZH1oluNVCrVI55/"
+  },
+  {
+    "id": "ocd-person/159091af-9aa8-4cb8-8c9c-9e20ba83c0ed",
+    "name": "Lauren Kuby",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:az/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Lauren",
+    "family_name": "Kuby",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/LaurenKuby24.jpg",
+    "email": "lkuby@azleg.gov",
+    "gender": "Female",
+    "birth_date": "1957-09-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:43:09.475717+00:00",
+    "updated_at": "2026-06-18T06:09:01.163736+00:00",
+    "openstates_url": "https://openstates.org/person/lauren-kuby-eguEywczTfiKdeWLWQpVF/"
+  },
+  {
+    "id": "ocd-person/030638cb-5fcd-4637-8c59-c129e28db988",
+    "name": "Lela Alston",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:az/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Lela",
+    "family_name": "Alston",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/ALSTON.jpg",
+    "email": "lalston@azleg.gov",
+    "gender": "Female",
+    "birth_date": "1942-06-26",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Chair"
+    },
+    "created_at": "2023-01-11T22:32:29.575589+00:00",
+    "updated_at": "2025-03-13T06:08:13.179826+00:00",
+    "openstates_url": "https://openstates.org/person/lela-alston-5horWX3RlHBiuUrGiMMiu/"
+  },
+  {
+    "id": "ocd-person/77415ae8-cbbc-4f67-ac01-3f749d44ff08",
+    "name": "Mark Finchem",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:az/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Finchem",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/FINCHEM.jpg",
+    "email": "mfinchem@azleg.gov",
+    "gender": "Male",
+    "birth_date": "1957-04-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:34:59.153127+00:00",
+    "updated_at": "2026-04-09T06:08:05.120646+00:00",
+    "openstates_url": "https://openstates.org/person/mark-finchem-3d1xAGBvCJ24J1nVX8StUe/"
+  },
+  {
+    "id": "ocd-person/f0175b18-52a0-407d-af38-c1fe118e209d",
+    "name": "Mitzi Epstein",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:az/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Mitzi",
+    "family_name": "Epstein",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/EPSTEIN.jpg",
+    "email": "mepstein@azleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Leader"
+    },
+    "created_at": "2018-10-18T14:34:45.575222+00:00",
+    "updated_at": "2025-07-17T06:08:50.060606+00:00",
+    "openstates_url": "https://openstates.org/person/mitzi-epstein-7J2pagnP5Iqypo4Ysv58gf/"
+  },
+  {
+    "id": "ocd-person/7ff01dde-5112-436f-a267-dd7a7f91ec9b",
+    "name": "Priya Sundareshan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:az/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Priya",
+    "family_name": "Sundareshan",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/SUNDARESHAN.jpg",
+    "email": "psundareshan@azleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-11T22:32:28.663974+00:00",
+    "updated_at": "2026-06-18T06:09:05.331861+00:00",
+    "openstates_url": "https://openstates.org/person/priya-sundareshan-3tPl4BbmijwWTOS7ZbQUcF/"
+  },
+  {
+    "id": "ocd-person/6de57177-1b9e-4864-bb87-97c528842030",
+    "name": "Rosanna Gabald\u00f3n",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:az/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Rosanna",
+    "family_name": "Gabald\u00f3n",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/54leg/House/GABALD%C3%93N.gif",
+    "email": "rgabaldon@azleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Whip"
+    },
+    "created_at": "2023-01-11T22:32:22.076249+00:00",
+    "updated_at": "2025-02-13T14:03:13.339472+00:00",
+    "openstates_url": "https://openstates.org/person/rosanna-gabaldon-3LN1CuUsHrNAmowORnuBP6/"
+  },
+  {
+    "id": "ocd-person/3c965e03-1e51-4f10-a037-4fb2f35292c5",
+    "name": "Sally Gonzales",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:az/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Sally",
+    "family_name": "Gonzales",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/GONZALES.jpg",
+    "email": "sgonzales@azleg.gov",
+    "gender": "Female",
+    "birth_date": "1957-10-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:34:50.846637+00:00",
+    "updated_at": "2025-07-17T06:08:34.451702+00:00",
+    "openstates_url": "https://openstates.org/person/sally-gonzales-1qKFyMHADaJIbfmUmKfRen/"
+  },
+  {
+    "id": "ocd-person/355be281-2f88-4108-b894-62c54b67fba3",
+    "name": "Shawnna Bolick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:az/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Shawnna",
+    "family_name": "Bolick",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/BOLICK.jpg",
+    "email": "sbolick@azleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-12-28T22:43:21.297010+00:00",
+    "updated_at": "2025-02-14T21:55:24.464642+00:00",
+    "openstates_url": "https://openstates.org/person/shawnna-bolick-1cgaFwjudMZExyDBZszVWF/"
+  },
+  {
+    "id": "ocd-person/bde26535-68ee-4eef-bbc8-bfa8a4380015",
+    "name": "T.J. Shope",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:az/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "T.J.",
+    "family_name": "Shope",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/54leg/House/SHOPE.png",
+    "email": "tshope@azleg.gov",
+    "gender": "Male",
+    "birth_date": "1985-08-12",
+    "death_date": "",
+    "extras": {
+      "title": "President Pro Tempore"
+    },
+    "created_at": "2018-10-18T14:34:56.210598+00:00",
+    "updated_at": "2025-05-15T00:08:11.451674+00:00",
+    "openstates_url": "https://openstates.org/person/t-j-shope-5mJ0n3kXv2qDPZgSjb7iSb/"
+  },
+  {
+    "id": "ocd-person/384e8b4c-d85b-4414-9372-40116a10b3b6",
+    "name": "Theresa Hatathlie",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:az/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Theresa",
+    "family_name": "Hatathlie",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/57leg/Senate/HATATHLIE.jpg",
+    "email": "thatathlie@azleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-12T01:52:09.364534+00:00",
+    "updated_at": "2026-06-18T06:09:09.408823+00:00",
+    "openstates_url": "https://openstates.org/person/theresa-hatathlie-1iFSpmZmXUaDQNFYZx0f38/"
+  },
+  {
+    "id": "ocd-person/0b8c9973-1ae5-4af3-8a73-713c8365eccd",
+    "name": "Tim Dunn",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:az/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Dunn",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/House/DUNN.jpg",
+    "email": "tdunn@azleg.gov",
+    "gender": "Male",
+    "birth_date": "1966-12-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:34:44.541571+00:00",
+    "updated_at": "2026-06-18T06:09:18.669075+00:00",
+    "openstates_url": "https://openstates.org/person/tim-dunn-LnAWMAUeGss3wAQz5NIXF/"
+  },
+  {
+    "id": "ocd-person/00f9103d-191e-40ca-8f5c-e5bf806896a6",
+    "name": "Vince Leach",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:az/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Vince",
+    "family_name": "Leach",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/Senate/LEACH.jpg",
+    "email": "vleach@azleg.gov",
+    "gender": "Male",
+    "birth_date": "1948-08-02",
+    "death_date": "",
+    "extras": {
+      "title": "President Pro Tempore"
+    },
+    "created_at": "2018-10-18T14:34:47.053488+00:00",
+    "updated_at": "2025-02-13T14:03:21.787896+00:00",
+    "openstates_url": "https://openstates.org/person/vince-leach-1poywhncorI30txHMun0Y/"
+  },
+  {
+    "id": "ocd-person/66e496a4-a407-4af1-add3-ef6899b89807",
+    "name": "Warren Petersen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:az/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Warren",
+    "family_name": "Petersen",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/Senate/PETERSEN.jpg",
+    "email": "wpetersen@azleg.gov",
+    "gender": "Male",
+    "birth_date": "1976-09-08",
+    "death_date": "",
+    "extras": {
+      "title": "President"
+    },
+    "created_at": "2023-01-11T22:32:20.838916+00:00",
+    "updated_at": "2025-07-17T06:08:35.447849+00:00",
+    "openstates_url": "https://openstates.org/person/warren-petersen-389gJmcYxni26ndfg2NWq7/"
+  },
+  {
+    "id": "ocd-person/417c9599-7617-4b6d-ac0a-1d1b2a005f4e",
+    "name": "Wendy Rogers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:az/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:az/government",
+      "name": "Arizona",
+      "classification": "state"
+    },
+    "given_name": "Wendy",
+    "family_name": "Rogers",
+    "image": "https://www.azleg.gov/alisImages/MemberPhotos/55leg/Senate/ROGERS.jpg",
+    "email": "wrogers@azleg.gov",
+    "gender": "Female",
+    "birth_date": "1954-07-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-12T00:04:26.910365+00:00",
+    "updated_at": "2025-02-13T14:03:21.135878+00:00",
+    "openstates_url": "https://openstates.org/person/wendy-rogers-1zZR3nQ4sFjMTiGa8Sqo9u/"
+  }
+]

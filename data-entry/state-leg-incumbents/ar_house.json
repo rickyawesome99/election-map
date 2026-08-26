@@ -1,0 +1,3083 @@
+[
+  {
+    "id": "ocd-person/7dff69f1-609b-4230-9937-b8bbc239f5b5",
+    "name": "Aaron Pilkington",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:ar/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Aaron",
+    "family_name": "Pilkington",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/533_sm.jpg",
+    "email": "aaron.pilkington@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "40",
+      "occupation": "Health Clinic Administrator",
+      "public service": "First Term House 2017",
+      "church affiliation": "Catholic"
+    },
+    "created_at": "2018-10-18T14:34:12.790203+00:00",
+    "updated_at": "2025-05-23T12:05:28.827301+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-pilkington-3pklRuB2Hkxo0q1hd6EnRN/"
+  },
+  {
+    "id": "ocd-person/54b2621c-cc79-4a5b-95bf-d9113525624e",
+    "name": "Alex Holladay",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:ar/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Holladay",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kathryn_Rhodes_20241023_120643.jpg",
+    "email": "alex.holladay@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-03-19T18:06:05.158699+00:00",
+    "updated_at": "2026-04-10T00:05:42.366891+00:00",
+    "openstates_url": "https://openstates.org/person/alex-holladay-2ZosMZjBbTge3RuGkg49tO/"
+  },
+  {
+    "id": "ocd-person/4dc31c5c-a5a5-417f-bbaa-d99442259b4f",
+    "name": "Alyssa Brown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:ar/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Alyssa",
+    "family_name": "Brown",
+    "image": "https://arkansasadvocate.com/wp-content/uploads/2024/09/Alyssa-Brown-SOS-2024.jpg",
+    "email": "alyssa.brown@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:41:22.267532+00:00",
+    "updated_at": "2026-01-29T00:05:18.099499+00:00",
+    "openstates_url": "https://openstates.org/person/alyssa-brown-2MjZeWKX1ZqJBSL1OLqIIx/"
+  },
+  {
+    "id": "ocd-person/5143965d-c539-411e-8a15-74ebbcbb7cd7",
+    "name": "Andrew Collins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:ar/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Collins",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/566_sm.jpg",
+    "email": "andrew.collins@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1983-09-07",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "55",
+      "occupation": "Real Estate",
+      "public service": "First Term House 2019",
+      "church affiliation": "Catholic"
+    },
+    "created_at": "2019-01-17T06:04:59.970558+00:00",
+    "updated_at": "2025-02-21T15:43:28.824569+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-collins-2TLGUV93lRCJllnZNnCCEp/"
+  },
+  {
+    "id": "ocd-person/0e0e799b-70de-4472-b289-4a0c2aba3a26",
+    "name": "Ashley Hudson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:ar/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Ashley",
+    "family_name": "Hudson",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/566_sm.jpg",
+    "email": "ashley.hudson@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "66",
+      "occupation": "Attorney"
+    },
+    "created_at": "2023-01-17T22:27:16.063798+00:00",
+    "updated_at": "2025-02-21T15:43:13.971309+00:00",
+    "openstates_url": "https://openstates.org/person/ashley-hudson-QWVTXLQFLDF40cX3vFZVW/"
+  },
+  {
+    "id": "ocd-person/30ea7268-a48a-424e-aadf-007b61874985",
+    "name": "Austin McCollum",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ar/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Austin",
+    "family_name": "McCollum",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/531_sm.jpg",
+    "email": "austin.mccollum@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "31",
+      "occupation": "Business/Analytics/Retail",
+      "public service": "First Term House 2017,  2019,  Majority Leader 2020",
+      "church affiliation": "Christian"
+    },
+    "created_at": "2018-10-18T14:34:20.710168+00:00",
+    "updated_at": "2025-05-15T00:06:09.204119+00:00",
+    "openstates_url": "https://openstates.org/person/austin-mccollum-1UIm09F4Qx1o48QGg0cUpZ/"
+  },
+  {
+    "id": "ocd-person/4f5cafe6-850c-42b3-8a75-cd13c8871baf",
+    "name": "Bart Schulz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ar/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Bart",
+    "family_name": "Schulz",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/614_sm.jpg",
+    "email": "bart.schulz@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "79"
+    },
+    "created_at": "2023-01-17T22:27:17.458359+00:00",
+    "updated_at": "2025-07-17T06:05:15.886992+00:00",
+    "openstates_url": "https://openstates.org/person/bart-schulz-2PkkcX9u0qooATh3726JKx/"
+  },
+  {
+    "id": "ocd-person/d1286114-790d-404b-ac09-ef86b7fa6556",
+    "name": "Brad Hall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ar/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Hall",
+    "image": "https://arkansasadvocate.com/wp-content/uploads/2024/09/Brad-Hall-SOS-2024.jpg",
+    "email": "brad.hall@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:40:46.025954+00:00",
+    "updated_at": "2025-02-21T15:43:25.116817+00:00",
+    "openstates_url": "https://openstates.org/person/brad-hall-6MfqgE2WADfm1py59VigCM/"
+  },
+  {
+    "id": "ocd-person/9bce7e7f-cd90-4b10-a557-c37d82923be2",
+    "name": "Brandon Achor",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:ar/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Achor",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/623_sm.jpg",
+    "email": "brandon.achor@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1989-04-04",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "77"
+    },
+    "created_at": "2023-01-17T22:27:16.757461+00:00",
+    "updated_at": "2025-05-15T00:05:49.401043+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-achor-4k0B5BJoKwm2vT0RONqG4Q/"
+  },
+  {
+    "id": "ocd-person/a1614a7c-f5f0-4fe1-a2b1-c8390e4bf106",
+    "name": "Brian Evans",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:ar/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Evans",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/568_sm.jpg",
+    "email": "brian.evans@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "57",
+      "occupation": "Logistics",
+      "public service": "First Term House 2019",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2023-01-17T22:27:15.111844+00:00",
+    "updated_at": "2025-05-23T12:05:10.372365+00:00",
+    "openstates_url": "https://openstates.org/person/brian-evans-4uWE3az0NTOBzwSJ77TraI/"
+  },
+  {
+    "id": "ocd-person/0fc23ae8-f37f-4684-b8f5-083c8e36e19d",
+    "name": "Brit McKenzie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ar/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Brit",
+    "family_name": "McKenzie",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/604_sm.jpg",
+    "email": "brit.mckenzie@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1991-06-25",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "96"
+    },
+    "created_at": "2023-01-17T22:27:16.698749+00:00",
+    "updated_at": "2026-06-18T06:06:06.417042+00:00",
+    "openstates_url": "https://openstates.org/person/brit-mckenzie-TjeC7wgimc7hMKSvOR1jh/"
+  },
+  {
+    "id": "ocd-person/49608f14-5f53-40fc-b662-0d48a2aa1340",
+    "name": "Bruce Cozart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:ar/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Bruce",
+    "family_name": "Cozart",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/392_sm.jpg",
+    "email": "bccci@cablelynx.com",
+    "gender": "Male",
+    "birth_date": "1955-10-03",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "6",
+      "occupation": "General Contractor",
+      "public service": "Lake Hamilton School Board 1991-2001; House Special Election March 11,  2011,  2013  Asst. Speaker Pro Tempore,  2015,  2017",
+      "church affiliation": "Assembly of God"
+    },
+    "created_at": "2018-10-18T14:34:09.330733+00:00",
+    "updated_at": "2025-02-21T15:43:18.049038+00:00",
+    "openstates_url": "https://openstates.org/person/bruce-cozart-2ESZB8Lgg9TpMvAry2BtSK/"
+  },
+  {
+    "id": "ocd-person/8b544682-2d9b-4759-bdc1-e560cced87fa",
+    "name": "Cameron Cooper",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:ar/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Cameron",
+    "family_name": "Cooper",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/561_sm.jpg",
+    "email": "cameron.cooper@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "53",
+      "occupation": "Manager for Pathfinder, Inc; Farmer",
+      "public service": "First Term House 2019",
+      "church affiliation": "Church of Christ"
+    },
+    "created_at": "2019-01-17T06:05:00.365439+00:00",
+    "updated_at": "2025-02-21T15:43:28.012241+00:00",
+    "openstates_url": "https://openstates.org/person/cameron-cooper-4EuRjuV0wsKM239bCtcTvu/"
+  },
+  {
+    "id": "ocd-person/247b430e-d46a-474a-87bc-24d03c636fd8",
+    "name": "Carol Dalby",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:ar/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Carol",
+    "family_name": "Dalby",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/525_sm.jpg",
+    "email": "carol.dalby@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "41",
+      "occupation": "Attorney",
+      "public service": "Board of Trustees,  Texarkana,  Arkansas School District #7,  First Term House 2017",
+      "church affiliation": "United Methodist"
+    },
+    "created_at": "2023-01-17T22:27:14.587214+00:00",
+    "updated_at": "2025-02-21T15:43:03.437398+00:00",
+    "openstates_url": "https://openstates.org/person/carol-dalby-16q3O1j71u7yJ5JtZlpKx6/"
+  },
+  {
+    "id": "ocd-person/53cecb4b-96b5-4cbe-bc72-6eab07cbdeea",
+    "name": "Chad Puryear",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ar/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Chad",
+    "family_name": "Puryear",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/612_sm.jpg",
+    "email": "chad.puryear@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "88"
+    },
+    "created_at": "2023-01-17T22:27:15.959596+00:00",
+    "updated_at": "2025-05-15T00:05:29.957132+00:00",
+    "openstates_url": "https://openstates.org/person/chad-puryear-2Y8rpoSI3rQJLflRUUIO30/"
+  },
+  {
+    "id": "ocd-person/c0936ba9-d863-4262-8fd1-3e08fb1013c8",
+    "name": "Cindy Crawford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:ar/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Cindy",
+    "family_name": "Crawford",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/551_sm.jpg",
+    "email": "cindy.crawford@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "48",
+      "occupation": "CEO",
+      "public service": "First Term House 2019",
+      "church affiliation": "Christian-Non Denomination"
+    },
+    "created_at": "2019-01-17T06:05:02.297997+00:00",
+    "updated_at": "2025-05-15T00:05:25.218841+00:00",
+    "openstates_url": "https://openstates.org/person/cindy-crawford-5rNtgY49qmNIWucw5MJcZE/"
+  },
+  {
+    "id": "ocd-person/4b6071ae-58c1-4400-a49f-416579c6371e",
+    "name": "David Ray",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:ar/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Ray",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/589_sm.jpg",
+    "email": "david.ray@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "63",
+      "occupation": "Consultant/Communications Strategist",
+      "public service": "Majority Leader (or designee) 2021"
+    },
+    "created_at": "2021-01-13T00:02:56.291266+00:00",
+    "updated_at": "2025-05-15T00:06:02.102462+00:00",
+    "openstates_url": "https://openstates.org/person/david-ray-2IEUyPEpTWnlkBH10vxsS6/"
+  },
+  {
+    "id": "ocd-person/7c229d62-dd8f-491c-8aab-15118335cfe9",
+    "name": "David Whitaker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ar/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Whitaker",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/440_sm.jpg",
+    "email": "david.whitaker@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1961-04-08",
+    "death_date": "",
+    "extras": {
+      "veteran": "Yes",
+      "seniority": "12",
+      "occupation": "Attorney",
+      "public service": "First Term House 2013,  2015,  Minority Leader 2017",
+      "church affiliation": "Independent Christian"
+    },
+    "created_at": "2018-10-18T14:34:00.606511+00:00",
+    "updated_at": "2025-07-17T06:06:11.561481+00:00",
+    "openstates_url": "https://openstates.org/person/david-whitaker-3mErmrL0ZhWzkjvBTuoAPZ/"
+  },
+  {
+    "id": "ocd-person/b165a0c6-fe5a-4505-9f6f-aaafce582b6a",
+    "name": "DeAnn Vaught",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:ar/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "DeAnn",
+    "family_name": "Vaught",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/505_sm.jpg",
+    "email": "deann.vaught@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "26",
+      "occupation": "Farmer",
+      "public service": "First Term House 2015,  2017",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2018-10-18T14:34:11.502083+00:00",
+    "updated_at": "2025-05-23T12:05:27.471152+00:00",
+    "openstates_url": "https://openstates.org/person/deann-vaught-5Ok5KektSOsGXzX4OsK1LG/"
+  },
+  {
+    "id": "ocd-person/44cca040-d890-4cf3-9a00-bc8f6f3ac3fc",
+    "name": "Denise Ennett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:ar/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Denise",
+    "family_name": "Ennett",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/577_sm.jpg",
+    "email": "denise.ennett@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "59",
+      "occupation": "Community Advocate",
+      "church affiliation": "Catholic"
+    },
+    "created_at": "2020-03-27T05:02:20.258859+00:00",
+    "updated_at": "2025-02-21T15:43:11.082519+00:00",
+    "openstates_url": "https://openstates.org/person/denise-ennett-25ozXS5joFnA0bMGP2Vv4O/"
+  },
+  {
+    "id": "ocd-person/e8e66020-d749-42e0-9e4e-35962d7f31f4",
+    "name": "Denise Garner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ar/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Denise",
+    "family_name": "Garner",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/555_sm.jpg",
+    "email": "denise.garner@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "1956-12-09",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "50",
+      "occupation": "Retired RNP/Small Business Owner",
+      "public service": "First Term House 2019,  House Minority Party Whip 2021",
+      "church affiliation": "Episcopal"
+    },
+    "created_at": "2019-01-17T06:04:56.048083+00:00",
+    "updated_at": "2025-02-21T15:43:11.845343+00:00",
+    "openstates_url": "https://openstates.org/person/denise-garner-75TV6lG88jwpGvsT5fQ0N2/"
+  },
+  {
+    "id": "ocd-person/4afdc38b-6ea9-4aa9-a8a1-0975c1147cfc",
+    "name": "Diana Gonzales Worthen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ar/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Diana",
+    "family_name": "Gonzales Worthen",
+    "image": "https://arkelect.com/storage/candidates/sjk3Ad2MX06FYpjWkUvZbh8l94Qa2HxVSfYPAsq0.jpg",
+    "email": "diana.gonzalesworthen@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:41:04.824523+00:00",
+    "updated_at": "2025-07-17T06:05:20.546831+00:00",
+    "openstates_url": "https://openstates.org/person/diana-gonzales-worthen-2HVOxaamfs05GbDQpfAUF2/"
+  },
+  {
+    "id": "ocd-person/50cdb325-0c04-483e-87cb-d6a9037d9bc9",
+    "name": "Dolly Henley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:ar/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Dolly",
+    "family_name": "Henley",
+    "image": "https://images.squarespace-cdn.com/content/v1/6570ab4ce162d11cdfa700b2/e700f6b2-1aba-4474-a367-e54965e30b67/DSC_9617.jpg",
+    "email": "dolly.henley@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:41:08.527043+00:00",
+    "updated_at": "2026-01-29T00:05:31.046012+00:00",
+    "openstates_url": "https://openstates.org/person/dolly-henley-2STOFrOBrjE9woOF5o2XP7/"
+  },
+  {
+    "id": "ocd-person/38a8f4c9-1138-461c-a8a1-ac853c79d3ca",
+    "name": "Dwight Tosh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ar/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Dwight",
+    "family_name": "Tosh",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/503_sm.jpg",
+    "email": "dwight.tosh@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1948-11-12",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "19",
+      "occupation": "Retired",
+      "public service": "First Term House 2015,  2017",
+      "church affiliation": "Community Fellowship"
+    },
+    "created_at": "2018-10-18T14:33:58.212762+00:00",
+    "updated_at": "2025-02-21T15:43:32.875309+00:00",
+    "openstates_url": "https://openstates.org/person/dwight-tosh-1iumZnipnFwvWeX0TnebhS/"
+  },
+  {
+    "id": "ocd-person/f3fd86cb-bfa0-47e0-8318-d53b2958c19c",
+    "name": "Fran Cavenaugh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ar/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Fran",
+    "family_name": "Cavenaugh",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/522_sm.jpg",
+    "email": "frances.cavenaugh@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "32",
+      "occupation": "CFO, Cavenaugh Auto Group",
+      "public service": "First Term House 2017",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2018-10-18T14:34:03.322732+00:00",
+    "updated_at": "2025-05-15T00:05:05.447445+00:00",
+    "openstates_url": "https://openstates.org/person/fran-cavenaugh-7QOzq3WKFrZmdEh5zxcUAO/"
+  },
+  {
+    "id": "ocd-person/b325559c-79b9-4ce3-a548-4c0c4116815e",
+    "name": "Fred Allen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:ar/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Fred",
+    "family_name": "Allen",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/519_sm.jpg",
+    "email": "allenfred@me.com",
+    "gender": "Male",
+    "birth_date": "1953-06-14",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "30",
+      "occupation": "Contractor/Photographer",
+      "public service": "House 2007,  2009,  2011,   2017,  Assistant Speaker Pro Tempore 2019",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2018-10-18T14:34:07.078057+00:00",
+    "updated_at": "2026-04-11T00:05:30.754827+00:00",
+    "openstates_url": "https://openstates.org/person/fred-allen-5S2ggEpsuLdP62OSXwssNa/"
+  },
+  {
+    "id": "ocd-person/192e3368-5acb-4ace-9909-fdc02ff2c3d3",
+    "name": "Glenn Barnes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:ar/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Glenn",
+    "family_name": "Barnes",
+    "image": "https://wehco.media.clients.ellingtoncms.com/imports/adg/photos/206673283_PBGlenn_Barnes_HD650306.jpg",
+    "email": "pinehillmbc111@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:41:10.071186+00:00",
+    "updated_at": "2025-02-21T15:43:06.565077+00:00",
+    "openstates_url": "https://openstates.org/person/glenn-barnes-lVvABRvPNxiBw0XR6823H/"
+  },
+  {
+    "id": "ocd-person/72ce8f2a-95f2-4c1c-8e91-203653d0610a",
+    "name": "Harlan Breaux",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ar/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Harlan",
+    "family_name": "Breaux",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/567_sm.jpg",
+    "email": "harlan.breaux@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1947-06-06",
+    "death_date": "",
+    "extras": {
+      "veteran": "Yes",
+      "seniority": "56",
+      "occupation": "Retired",
+      "public service": "First Term House 2019",
+      "church affiliation": "Bible"
+    },
+    "created_at": "2019-01-17T06:05:03.380161+00:00",
+    "updated_at": "2025-05-15T00:05:13.149671+00:00",
+    "openstates_url": "https://openstates.org/person/harlan-breaux-3UdWQqrQIbWPoVQrRVJh4k/"
+  },
+  {
+    "id": "ocd-person/8f4c182b-d257-45b7-8c34-c4c1f12bb4f6",
+    "name": "Hope Duke",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ar/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Hope",
+    "family_name": "Duke",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/607_sm.jpg",
+    "email": "hope.duke@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "86"
+    },
+    "created_at": "2023-01-17T22:27:16.407309+00:00",
+    "updated_at": "2025-07-17T06:05:25.765892+00:00",
+    "openstates_url": "https://openstates.org/person/hope-duke-4MOg2FipVGX1w4VVcxO2pa/"
+  },
+  {
+    "id": "ocd-person/95d21faa-0431-4285-8cee-36fc918959b6",
+    "name": "Howard Beaty",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:ar/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Howard",
+    "family_name": "Beaty",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/584_sm.jpg",
+    "email": "howard.beaty@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "64"
+    },
+    "created_at": "2021-01-13T00:03:02.820328+00:00",
+    "updated_at": "2025-02-21T15:43:08.503716+00:00",
+    "openstates_url": "https://openstates.org/person/howard-beaty-4YhsmEJmqT1we2p40g0lmw/"
+  },
+  {
+    "id": "ocd-person/acc25f3e-2151-45ae-8c48-26e598718a47",
+    "name": "Jack Ladyman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ar/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Ladyman",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/488_sm.jpg",
+    "email": "jackladyman@gmail.com",
+    "gender": "Male",
+    "birth_date": "1947-03-28",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "16",
+      "occupation": "Engineer",
+      "public service": "First Term House 2015,  2017,  2019",
+      "church affiliation": "Church of Christ"
+    },
+    "created_at": "2018-10-18T14:34:16.687148+00:00",
+    "updated_at": "2025-05-23T12:05:05.607040+00:00",
+    "openstates_url": "https://openstates.org/person/jack-ladyman-5FzVWitzkzdF2u96DOcTsF/"
+  },
+  {
+    "id": "ocd-person/43843e57-ce6c-45a5-877c-eca55b1c14e6",
+    "name": "James Eaton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ar/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Eaton",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxvAj9Lwd6c_syrbArKUd41KQlFcJAU-nykz2mvepYNvvtN1MKD5bp_QYywDjZyjS60qQ&usqp=CAU",
+    "email": "james.eaton@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:41:12.404260+00:00",
+    "updated_at": "2025-02-21T15:43:07.234540+00:00",
+    "openstates_url": "https://openstates.org/person/james-eaton-23Ov7k1zqlJIthhJPruIWk/"
+  },
+  {
+    "id": "ocd-person/8a728485-a8bf-4bf8-9197-710ee37eb5e1",
+    "name": "Jason Nazarenko",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ar/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Nazarenko",
+    "image": "https://arkelect.com/storage/candidates/InQFuhxflF3x3iJ7vpaZXg48Rjd5qRwjngeLLcSD.jpg",
+    "email": "jason.nazarenko@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:40:51.159763+00:00",
+    "updated_at": "2025-07-17T06:05:52.283125+00:00",
+    "openstates_url": "https://openstates.org/person/jason-nazarenko-4DFH6L8JSCZDAeWehxh2n3/"
+  },
+  {
+    "id": "ocd-person/65961429-87cb-4c8c-b9c9-006622ea63c7",
+    "name": "Jay Richardson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:ar/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Richardson",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/562_sm.jpg",
+    "email": "jay.richardson@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1971-01-30",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "54",
+      "occupation": "Business Development",
+      "public service": "First Term House 2019",
+      "church affiliation": "Non-Denominational"
+    },
+    "created_at": "2023-01-17T22:27:13.913558+00:00",
+    "updated_at": "2026-01-29T00:05:52.367526+00:00",
+    "openstates_url": "https://openstates.org/person/jay-richardson-35goII4eCMVAZG9kQ9tsUJ/"
+  },
+  {
+    "id": "ocd-person/80a1486d-1661-4409-adf4-63aacf4df148",
+    "name": "Jeff Wardlaw",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:ar/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Wardlaw",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/387_sm.jpg",
+    "email": "jeff@jeffwardlaw.com",
+    "gender": "Male",
+    "birth_date": "1980-08-25",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "4",
+      "occupation": "Farmer",
+      "public service": "School Board; House 2011,  2013,  2015,  2017",
+      "church affiliation": "United Methodist"
+    },
+    "created_at": "2018-10-18T14:34:17.654897+00:00",
+    "updated_at": "2025-07-17T06:05:13.695971+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-wardlaw-3uiiuPQ9OCKgTCfH57uVGS/"
+  },
+  {
+    "id": "ocd-person/982babbb-33e1-48ad-a199-10a86e6db5e6",
+    "name": "Jeremiah Moore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:ar/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jeremiah",
+    "family_name": "Moore",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/622_sm.jpg",
+    "email": "jeremiah.moore@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "76"
+    },
+    "created_at": "2023-01-17T22:27:19.188820+00:00",
+    "updated_at": "2025-02-21T15:43:12.068923+00:00",
+    "openstates_url": "https://openstates.org/person/jeremiah-moore-4d8n3qsPni4vzQnFbyALhO/"
+  },
+  {
+    "id": "ocd-person/bbb656fb-9de4-4ee7-aad5-dd713cba2e1c",
+    "name": "Jeremy Wooldridge",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ar/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jeremy",
+    "family_name": "Wooldridge",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/601_sm.jpg",
+    "email": "jeremy.wooldridge@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "97"
+    },
+    "created_at": "2023-01-17T22:27:11.180211+00:00",
+    "updated_at": "2025-07-17T06:06:19.774884+00:00",
+    "openstates_url": "https://openstates.org/person/jeremy-wooldridge-5iCtT3ut9wNkAFdVq3IdwK/"
+  },
+  {
+    "id": "ocd-person/f81fdd7f-aa3e-4678-bc4f-870114f8b0ce",
+    "name": "Jessie McGruder",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ar/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jessie",
+    "family_name": "McGruder",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jessie_McGruder_20240811_111220.jpg",
+    "email": "mcgruder4arkansashouse@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:41:23.279412+00:00",
+    "updated_at": "2025-07-17T06:05:33.570223+00:00",
+    "openstates_url": "https://openstates.org/person/jessie-mcgruder-7YCetHbT65j0ypjjyCp1ck/"
+  },
+  {
+    "id": "ocd-person/3016494b-fa9f-4f79-8530-7bd26120a31e",
+    "name": "Jim Wooten",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:ar/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Wooten",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/547_sm.jpg",
+    "email": "wjewooten@aol.com",
+    "gender": "Male",
+    "birth_date": "1941-09-20",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "44",
+      "occupation": "Retired",
+      "public service": "First Term 2018",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2019-01-17T06:05:01.250988+00:00",
+    "updated_at": "2025-02-21T15:43:12.845670+00:00",
+    "openstates_url": "https://openstates.org/person/jim-wooten-1SjoctVUOZNO7GdkrvurPC/"
+  },
+  {
+    "id": "ocd-person/5b260e70-f46b-4d1f-83d9-bd242c11a645",
+    "name": "Jimmy Gazaway",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ar/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jimmy",
+    "family_name": "Gazaway",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/526_sm.jpg",
+    "email": "jimmy.gazaway@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "34",
+      "occupation": "Attorney",
+      "public service": "First Term House 2017,  2019",
+      "church affiliation": "Christian"
+    },
+    "created_at": "2018-10-18T14:34:19.197660+00:00",
+    "updated_at": "2025-07-17T06:05:28.485741+00:00",
+    "openstates_url": "https://openstates.org/person/jimmy-gazaway-2lzh08XsiFr6uLgw7TEACr/"
+  },
+  {
+    "id": "ocd-person/99d5591e-13f9-40af-90f4-97c5f958031a",
+    "name": "Joey Carr",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ar/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Joey",
+    "family_name": "Carr",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/615_sm.jpg",
+    "email": "joey.carr@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "87"
+    },
+    "created_at": "2023-01-17T22:27:12.743039+00:00",
+    "updated_at": "2025-02-21T15:43:14.481464+00:00",
+    "openstates_url": "https://openstates.org/person/joey-carr-4gHKEdu1tc8G5670iWOLla/"
+  },
+  {
+    "id": "ocd-person/dfa1d0ff-842e-49d2-baa7-41525816070e",
+    "name": "John Carr",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ar/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Carr",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/594_sm.jpg",
+    "email": "john.carr@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1974-09-23",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "70",
+      "occupation": "Project Manager"
+    },
+    "created_at": "2021-01-13T00:02:55.296527+00:00",
+    "updated_at": "2025-05-23T12:04:59.534305+00:00",
+    "openstates_url": "https://openstates.org/person/john-carr-6nzEpYaHqHJlkOObtZyf30/"
+  },
+  {
+    "id": "ocd-person/240d9f6e-15f1-41eb-acbb-733861936e5b",
+    "name": "John Maddox",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:ar/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Maddox",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/529_sm.jpg",
+    "email": "john.maddox@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "33",
+      "occupation": "Attorney",
+      "public service": "First Term House 2017,  2019",
+      "church affiliation": "Christian"
+    },
+    "created_at": "2018-10-18T14:34:10.101502+00:00",
+    "updated_at": "2025-05-23T12:05:51.335090+00:00",
+    "openstates_url": "https://openstates.org/person/john-maddox-161wrTkW0OOXbpDIkAM7P1/"
+  },
+  {
+    "id": "ocd-person/3ce18467-b330-4d64-98d6-79c31414e7ca",
+    "name": "Johnny Rye",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ar/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Johnny",
+    "family_name": "Rye",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/534_sm.jpg",
+    "email": "johnny.rye@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "36",
+      "occupation": "Retired Poinsett County Assessor",
+      "public service": "Assessor Poinsett County (1991-2016),  Association of Arkansas Counties - Board (2002-2012),  Association of Arkansas Counties - Legislative Committee,  First Term House 2017",
+      "church affiliation": "Methodist"
+    },
+    "created_at": "2018-10-18T14:34:20.005992+00:00",
+    "updated_at": "2025-05-23T12:05:38.933307+00:00",
+    "openstates_url": "https://openstates.org/person/johnny-rye-1qsbHHiNbof4brixWjT8Sw/"
+  },
+  {
+    "id": "ocd-person/3220c1b9-f133-47fa-8ef9-9944493fbb2c",
+    "name": "Jon Eubanks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:ar/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Eubanks",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/357_sm.jpg",
+    "email": "jon.eubanks@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1951-10-01",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "5",
+      "occupation": "Farmer",
+      "public service": "Paris School Board; House 2011,  2013,  2015,  Speaker Pro Tem 2015,  2017",
+      "church affiliation": "Latter-Day Saints"
+    },
+    "created_at": "2023-01-17T22:27:10.868576+00:00",
+    "updated_at": "2025-02-21T15:43:27.426296+00:00",
+    "openstates_url": "https://openstates.org/person/jon-eubanks-1WaaLRLL9bf9L71tFFFWJw/"
+  },
+  {
+    "id": "ocd-person/2920db4d-9f68-411a-bd01-9ca6e9089ef7",
+    "name": "Jon Milligan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ar/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Milligan",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/590_sm.jpg",
+    "email": "jonmilligan@ymail.com",
+    "gender": "Male",
+    "birth_date": "1956-05-04",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "67",
+      "public service": "Majority Party Whip - House 2022"
+    },
+    "created_at": "2021-01-13T00:02:59.218329+00:00",
+    "updated_at": "2025-05-23T12:05:26.061685+00:00",
+    "openstates_url": "https://openstates.org/person/jon-milligan-1FbhSPN2z6zx2xkAKkrqvX/"
+  },
+  {
+    "id": "ocd-person/e5cf38cc-b933-4bbb-928a-8089d83a6d56",
+    "name": "Joy Springer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:ar/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Joy",
+    "family_name": "Springer",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/579_sm.jpg",
+    "email": "joy.springer@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "60",
+      "occupation": "Office manager and paralegal",
+      "church affiliation": "African Methodist Episcopal Church"
+    },
+    "created_at": "2020-03-27T05:02:21.669296+00:00",
+    "updated_at": "2025-07-17T06:05:44.343497+00:00",
+    "openstates_url": "https://openstates.org/person/joy-springer-6zdwUyEQE8q99qng81vvsM/"
+  },
+  {
+    "id": "ocd-person/1621cc3a-d18c-486f-96fb-57c6a2890da1",
+    "name": "Julie Mayberry",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:ar/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Mayberry",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/491_sm.jpg",
+    "email": "julie.mayberry@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "1971-07-17",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "47",
+      "occupation": "Media/Advertising",
+      "public service": "First Term House 2015,  2019",
+      "church affiliation": "Missionary Baptist"
+    },
+    "created_at": "2019-01-17T06:04:56.865363+00:00",
+    "updated_at": "2025-05-23T12:05:31.801364+00:00",
+    "openstates_url": "https://openstates.org/person/julie-mayberry-flHA5hCq7XnLTYp8lBCGv/"
+  },
+  {
+    "id": "ocd-person/96dbbbb4-8a04-42bc-a553-e178d47ce838",
+    "name": "Justin Gonzales",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:ar/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Gonzales",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/481_sm.jpg",
+    "email": "justinrory@yahoo.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "20",
+      "occupation": "Farmer",
+      "public service": "First Term House 2015,  2017",
+      "church affiliation": "Church of God"
+    },
+    "created_at": "2023-01-17T22:27:11.499041+00:00",
+    "updated_at": "2025-05-15T00:05:14.792868+00:00",
+    "openstates_url": "https://openstates.org/person/justin-gonzales-4afGZvj3I9EUDYuq3Gsbyi/"
+  },
+  {
+    "id": "ocd-person/dfbad34c-8e78-4a93-9029-9e50cb0ccb51",
+    "name": "Karilyn Brown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:ar/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Karilyn",
+    "family_name": "Brown",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/466_sm.jpg",
+    "email": "karilyn.brown@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "1947-09-19",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "25",
+      "occupation": "Technical/Expository Writer",
+      "public service": "First Term House 2015,  2017",
+      "church affiliation": "Lutheran"
+    },
+    "created_at": "2018-10-18T14:34:00.066820+00:00",
+    "updated_at": "2025-02-21T15:43:18.516062+00:00",
+    "openstates_url": "https://openstates.org/person/karilyn-brown-6oAfRAXPCwOw4PNSrlrpDt/"
+  },
+  {
+    "id": "ocd-person/d4c881c3-3d11-4cc4-a40d-64d3d0e11c60",
+    "name": "Keith Brooks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:ar/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Brooks",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/588_sm.jpg",
+    "email": "keith.brooks@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "68",
+      "occupation": "Insurance"
+    },
+    "created_at": "2023-01-17T22:27:18.783287+00:00",
+    "updated_at": "2025-05-15T00:06:05.758157+00:00",
+    "openstates_url": "https://openstates.org/person/keith-brooks-6TW0K4ztyw5WkALT02licK/"
+  },
+  {
+    "id": "ocd-person/58b100fe-13ff-4b17-a210-88c13cbd3217",
+    "name": "Ken Ferguson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:ar/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Ferguson",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/477_sm.jpg",
+    "email": "kenneth.ferguson@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "22",
+      "occupation": "Retired",
+      "public service": "First Term House 2015,  2017",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2023-01-17T22:27:13.033530+00:00",
+    "updated_at": "2025-02-21T15:43:07.042465+00:00",
+    "openstates_url": "https://openstates.org/person/ken-ferguson-2hMDNQfQTm4N1Y1xeHXStD/"
+  },
+  {
+    "id": "ocd-person/42e0cedc-8165-45c0-988a-d3a414a521c6",
+    "name": "Kendon Underwood",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ar/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Kendon",
+    "family_name": "Underwood",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/592_sm.jpg",
+    "email": "kendon.underwood@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "71",
+      "occupation": "Attorney"
+    },
+    "created_at": "2021-01-13T00:03:03.702137+00:00",
+    "updated_at": "2025-07-17T06:05:12.417817+00:00",
+    "openstates_url": "https://openstates.org/person/kendon-underwood-22CEKX3wFfuX4Q2LwKqBOg/"
+  },
+  {
+    "id": "ocd-person/46a1908a-c372-4f84-8ee2-361d767b982a",
+    "name": "Kendra Moore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ar/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Kendra",
+    "family_name": "Moore",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/611_sm.jpg",
+    "email": "kendra.moore@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "84"
+    },
+    "created_at": "2023-01-17T22:27:11.039138+00:00",
+    "updated_at": "2025-02-21T15:43:05.269757+00:00",
+    "openstates_url": "https://openstates.org/person/kendra-moore-29HITzfXhFQTeQrNRzOqQU/"
+  },
+  {
+    "id": "ocd-person/e04b2e49-1a8c-46e5-b9fc-c23d35e10393",
+    "name": "Lane Jean",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:ar/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Lane",
+    "family_name": "Jean",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/364_sm.jpg",
+    "email": "l_jean@sbcglobal.net",
+    "gender": "Male",
+    "birth_date": "1958-11-10",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "2",
+      "occupation": "Timber, Real Estate, Cattle",
+      "public service": "Mayor of Magnolia; JP Columbia County; House 2011,  2013,  2015,  2017",
+      "church affiliation": "Church of Christ"
+    },
+    "created_at": "2023-01-17T22:27:18.488892+00:00",
+    "updated_at": "2025-02-21T15:43:07.721569+00:00",
+    "openstates_url": "https://openstates.org/person/lane-jean-6pEdcBxsNKroGysvBGhUR9/"
+  },
+  {
+    "id": "ocd-person/4a794d08-4a71-424a-a17d-d35af3c979ae",
+    "name": "Lee Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:ar/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Lee",
+    "family_name": "Johnson",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/556_sm.jpg",
+    "email": "lee.johnson@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "51",
+      "occupation": "Physician",
+      "public service": "First Term House 2019",
+      "church affiliation": "Church of Christ"
+    },
+    "created_at": "2023-01-17T22:27:12.616055+00:00",
+    "updated_at": "2025-05-23T12:05:11.168361+00:00",
+    "openstates_url": "https://openstates.org/person/lee-johnson-2GWrkEd2DpxOnTJ5jmpR30/"
+  },
+  {
+    "id": "ocd-person/7d85c10d-346f-4c4f-a4e5-470799f7b21c",
+    "name": "Les Eaves",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:ar/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Les",
+    "family_name": "Eaves",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/476_sm.jpg",
+    "email": "les.eaves@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1967-06-27",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "14",
+      "occupation": "Manufacturing Executive",
+      "public service": "First Term House 2015,  2017,  2019",
+      "church affiliation": "Christian"
+    },
+    "created_at": "2023-01-17T22:27:16.568154+00:00",
+    "updated_at": "2025-02-21T15:43:22.092123+00:00",
+    "openstates_url": "https://openstates.org/person/les-eaves-3orAKgSoKqR3ZlCoYswDXQ/"
+  },
+  {
+    "id": "ocd-person/5e063acb-6720-4bb0-8f6e-1df169c856e7",
+    "name": "Les Warren",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:ar/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Les",
+    "family_name": "Warren",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/535_sm.jpg",
+    "email": "les.warren@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "43",
+      "occupation": "President, Title Company",
+      "public service": "Lakeside (Hot Springs) School Board,  First Term House 2017",
+      "church affiliation": "First Baptist"
+    },
+    "created_at": "2018-10-18T14:34:18.787015+00:00",
+    "updated_at": "2025-07-17T06:05:25.052782+00:00",
+    "openstates_url": "https://openstates.org/person/les-warren-2rQ7nCLBa4fwLWFsqSNL0B/"
+  },
+  {
+    "id": "ocd-person/6e3a7643-abe7-4d0f-8d03-47b514558a67",
+    "name": "Lincoln Barnett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:ar/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Lincoln",
+    "family_name": "Barnett",
+    "image": "https://static.wixstatic.com/media/e0590d_a448445eb66f44af836ca4edceee8ab4~mv2.jpeg/v1/crop/x_563,y_0,w_1048,h_1362/fill/w_567,h_737,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e0590d_a448445eb66f44af836ca4edceee8ab4~mv2.jpeg",
+    "email": "lincoln.barnett@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1989-02-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:40:57.439447+00:00",
+    "updated_at": "2026-01-29T00:06:03.963952+00:00",
+    "openstates_url": "https://openstates.org/person/lincoln-barnett-3Lzs8RJmgQ42WEzEchPGSt/"
+  },
+  {
+    "id": "ocd-person/41f3a186-d3b7-4b46-b3dc-2da6f89c902e",
+    "name": "Marcus Richmond",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:ar/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Marcus",
+    "family_name": "Richmond",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/496_sm.jpg",
+    "email": "richmond4staterep@gmail.com",
+    "gender": "Male",
+    "birth_date": "1956-05-04",
+    "death_date": "",
+    "extras": {
+      "veteran": "Yes",
+      "seniority": "28",
+      "occupation": "Retired/Cattle Farmer",
+      "public service": "First Term House 2015,  4th District Asst. Speaker Pro Tem 2017,  House Majority Leader 2018,  House Majority Leader (or designee) 2022",
+      "church affiliation": "Church of Christ"
+    },
+    "created_at": "2018-10-18T14:34:19.007205+00:00",
+    "updated_at": "2025-02-21T15:43:23.594701+00:00",
+    "openstates_url": "https://openstates.org/person/marcus-richmond-20Rq8TkNDY6d9osITgYU18/"
+  },
+  {
+    "id": "ocd-person/fc30e79a-ee65-4e5b-9cb8-f27ef06c951d",
+    "name": "Mark McElroy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:ar/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "McElroy",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/585_sm.jpg",
+    "email": "mdmcelroy1@yahoo.com",
+    "gender": "Male",
+    "birth_date": "1956-01-16",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "62",
+      "occupation": "Retired County Judge, Farmer"
+    },
+    "created_at": "2021-01-13T00:02:56.582368+00:00",
+    "updated_at": "2025-02-21T15:43:19.276676+00:00",
+    "openstates_url": "https://openstates.org/person/mark-mcelroy-7fsPmm5XKJetcM9mVejP01/"
+  },
+  {
+    "id": "ocd-person/4b44cfe9-fb9b-4c18-ba6e-34cf679ac3ef",
+    "name": "Mark Perry",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:ar/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Perry",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/548_sm.jpg",
+    "email": "mark.perry@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "45",
+      "occupation": "Financial Representative",
+      "public service": "House 2009,  2011,  2013,  2019",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2019-01-17T06:05:02.467879+00:00",
+    "updated_at": "2025-02-21T15:43:26.168919+00:00",
+    "openstates_url": "https://openstates.org/person/mark-perry-2I1s35PAbN9i2F2nL8ORTT/"
+  },
+  {
+    "id": "ocd-person/7e778aa7-3d02-4d6c-9373-42470990fdea",
+    "name": "Mary Bentley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:ar/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Bentley",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/469_sm.jpg",
+    "email": "mary.bentley@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "1961-12-26",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "18",
+      "occupation": "Owner, Bentley Plastics",
+      "public service": "First Term House 2015,  2017",
+      "church affiliation": "Assembly of God"
+    },
+    "created_at": "2018-10-18T14:34:16.447516+00:00",
+    "updated_at": "2025-02-21T15:43:18.999003+00:00",
+    "openstates_url": "https://openstates.org/person/mary-bentley-3qdf9uzYRm3IdNeO3Xl1B4/"
+  },
+  {
+    "id": "ocd-person/d1b32d51-8ec6-4493-afd2-1bc5feb44034",
+    "name": "Matt Brown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:ar/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Brown",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/621_sm.jpg",
+    "email": "matt.brown@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "83"
+    },
+    "created_at": "2023-01-17T22:27:16.117764+00:00",
+    "updated_at": "2025-05-15T00:05:34.765879+00:00",
+    "openstates_url": "https://openstates.org/person/matt-brown-6NhHO7oRxT9OgdrAG591sK/"
+  },
+  {
+    "id": "ocd-person/487bf09e-e78f-467c-b671-3b4c881f4341",
+    "name": "Matt Duffield",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:ar/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Duffield",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/620_sm.jpg",
+    "email": "matt.duffield@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1983-05-18",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "91"
+    },
+    "created_at": "2023-01-17T22:27:14.529272+00:00",
+    "updated_at": "2025-05-23T12:05:06.361289+00:00",
+    "openstates_url": "https://openstates.org/person/matt-duffield-2Cm5TDiJ84Rvpb3xdPm1qr/"
+  },
+  {
+    "id": "ocd-person/2774b34a-6b89-4ee9-b8af-32b7a7d8e174",
+    "name": "Matthew Shepherd",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:ar/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Matthew",
+    "family_name": "Shepherd",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/380_sm.jpg",
+    "email": "matthew.shepherd@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1976-02-21",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "3",
+      "occupation": "Attorney",
+      "public service": "House 2011,  2013,  2015,  2017,  Speaker-designate,  Speaker of the House 2018",
+      "church affiliation": "Southern Baptist"
+    },
+    "created_at": "2018-10-18T14:34:19.587218+00:00",
+    "updated_at": "2025-02-21T15:43:07.502343+00:00",
+    "openstates_url": "https://openstates.org/person/matthew-shepherd-1CS22i7AAfeTDRQ7wN3WGy/"
+  },
+  {
+    "id": "ocd-person/1bf7a3a7-5871-4777-af71-dbdfd358e41b",
+    "name": "Mike Holcomb",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:ar/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Holcomb",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/434_sm.jpg",
+    "email": "mike.holcomb@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "10",
+      "occupation": "Retired Educator/Retired County Judge",
+      "public service": "County Judge,  Quorum Court,  Former Police Officer,  Former Deputy Sheriff; First Term House 2013,  2015,  2017",
+      "church affiliation": "Baptist Watson Chapel"
+    },
+    "created_at": "2018-10-18T14:34:23.589191+00:00",
+    "updated_at": "2025-05-23T12:05:06.793976+00:00",
+    "openstates_url": "https://openstates.org/person/mike-holcomb-qlxmjrvcPRG3dz8293Sf5/"
+  },
+  {
+    "id": "ocd-person/5f09e022-f775-4da8-aaad-224793aa2230",
+    "name": "Mindy McAlindon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ar/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Mindy",
+    "family_name": "McAlindon",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/605_sm.jpg",
+    "email": "mindy.mcalindon@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "82"
+    },
+    "created_at": "2023-01-17T22:27:15.909622+00:00",
+    "updated_at": "2025-05-15T00:06:03.304994+00:00",
+    "openstates_url": "https://openstates.org/person/mindy-mcalindon-2tKmcRfSQWgPmQ9Gpy7i7c/"
+  },
+  {
+    "id": "ocd-person/4b82405d-205f-47f7-8d9c-a7af23e9bada",
+    "name": "Nick Burkes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ar/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Burkes",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nick_Burkes.jpeg",
+    "email": "nick.burkes@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:41:24.023219+00:00",
+    "updated_at": "2025-05-23T12:05:15.110962+00:00",
+    "openstates_url": "https://openstates.org/person/nick-burkes-2ITwsDpQZWU8lCeKJgBRdK/"
+  },
+  {
+    "id": "ocd-person/c3be3a52-2646-4ea6-9aef-e4ff36a16762",
+    "name": "Nicole Clowney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ar/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Nicole",
+    "family_name": "Clowney",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/559_sm.jpg",
+    "email": "nicole.clowney@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "1982-07-10",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "52",
+      "occupation": "Teacher"
+    },
+    "created_at": "2019-01-17T06:04:56.479097+00:00",
+    "updated_at": "2025-02-21T15:43:30.513722+00:00",
+    "openstates_url": "https://openstates.org/person/nicole-clowney-5xMRA7cHgDeVQDTLb1YuQM/"
+  },
+  {
+    "id": "ocd-person/bd307080-d45f-4c7b-8365-2c7386e0fc3a",
+    "name": "Paul Childress",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:ar/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Childress",
+    "image": "https://arkansasadvocate.com/wp-content/uploads/2024/09/Paul-Childress-SOS-2024.jpg",
+    "email": "paul.childress@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:41:16.125426+00:00",
+    "updated_at": "2025-03-13T06:05:11.127622+00:00",
+    "openstates_url": "https://openstates.org/person/paul-childress-5kzgZfPYRoSErd17oFOz0M/"
+  },
+  {
+    "id": "ocd-person/1bbfdd71-5072-4978-89bb-6aa19558c3f7",
+    "name": "R.J. Hawk",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:ar/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "R.J.",
+    "family_name": "Hawk",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/625_sm.jpg",
+    "email": "rj.hawk@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "81"
+    },
+    "created_at": "2023-01-17T22:27:13.338868+00:00",
+    "updated_at": "2025-05-15T00:06:04.870093+00:00",
+    "openstates_url": "https://openstates.org/person/r-j-hawk-qMTTNAz6Sb5ntI4DZ3qZr/"
+  },
+  {
+    "id": "ocd-person/aaa584ee-c86a-4631-a37d-8d006ecb8a7b",
+    "name": "Randy Torres",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ar/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Torres",
+    "image": "https://arkelect.com/storage/candidates/vtmHAyGq960CeWT3A0LweElNVr1RpuGqUTHIDIHF.jpg",
+    "email": "randy.torres@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:40:55.834033+00:00",
+    "updated_at": "2025-02-21T15:43:31.643369+00:00",
+    "openstates_url": "https://openstates.org/person/randy-torres-5C0KxfrBrG8sThB7a2ZRoh/"
+  },
+  {
+    "id": "ocd-person/8f012092-5f3f-4047-8047-f2520efe0fad",
+    "name": "Rebecca Burkes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ar/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Rebecca",
+    "family_name": "Burkes",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/606_sm.jpg",
+    "email": "rebecca.burkes@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "80"
+    },
+    "created_at": "2023-01-17T22:27:11.392031+00:00",
+    "updated_at": "2025-07-17T06:06:08.484983+00:00",
+    "openstates_url": "https://openstates.org/person/rebecca-burkes-4LqPuQknSf3J2Tw3ujbtE5/"
+  },
+  {
+    "id": "ocd-person/7f9f1a8b-47a7-456d-bc5d-1e6ec32e8572",
+    "name": "Richard McGrew",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:ar/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "McGrew",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/578_sm.jpg",
+    "email": "mcgrewrep22@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "61"
+    },
+    "created_at": "2020-03-27T05:02:23.635473+00:00",
+    "updated_at": "2025-05-23T12:04:57.288614+00:00",
+    "openstates_url": "https://openstates.org/person/richard-mcgrew-3sojdd0nXEY8FX6fojaV9O/"
+  },
+  {
+    "id": "ocd-person/f2b10588-1d21-4f8f-b313-d668bf58d967",
+    "name": "Richard Womack",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:ar/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Womack",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/436_sm.jpg",
+    "email": "richard@richardwomack.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "9",
+      "occupation": "Contractor",
+      "public service": "First Term House 2013,  2015,  2017,  2019",
+      "church affiliation": "Southern Baptist"
+    },
+    "created_at": "2018-10-18T14:34:12.263667+00:00",
+    "updated_at": "2025-07-17T06:05:13.053538+00:00",
+    "openstates_url": "https://openstates.org/person/richard-womack-7Nx2cL1aAKKw1v1E08bxCx/"
+  },
+  {
+    "id": "ocd-person/5559a783-5b5f-4dc5-b800-4b9493b7148b",
+    "name": "Rick Beck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:ar/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Beck",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/467_sm.jpg",
+    "email": "rick.beck@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1956-06-15",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "21",
+      "occupation": "Electrical Engineer",
+      "public service": "First Term House 2015,  2017",
+      "church affiliation": "Catholic"
+    },
+    "created_at": "2018-10-18T14:33:58.586637+00:00",
+    "updated_at": "2025-02-21T15:43:17.509278+00:00",
+    "openstates_url": "https://openstates.org/person/rick-beck-2b3JprxeTsAKaVrRMWvG2N/"
+  },
+  {
+    "id": "ocd-person/9b76655d-a7c5-474d-8a35-5a30e8bf9d3a",
+    "name": "Rick McClure",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ar/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "McClure",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/586_sm.jpg",
+    "email": "rick.mcclure@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "65",
+      "occupation": "Pastor, Economic Developer"
+    },
+    "created_at": "2023-01-17T22:27:17.164576+00:00",
+    "updated_at": "2025-05-23T12:04:54.282446+00:00",
+    "openstates_url": "https://openstates.org/person/rick-mcclure-4jLutyaEaEiVRgOe0k9RoQ/"
+  },
+  {
+    "id": "ocd-person/c26f1f0e-232e-4bf2-99f8-be3e80bfcdcc",
+    "name": "Robin Lundstrum",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ar/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Robin",
+    "family_name": "Lundstrum",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/490_sm.jpg",
+    "email": "robin.lundstrum@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "1962-12-28",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "17",
+      "occupation": "Property Management",
+      "public service": "First Term House 2015,  2017,  Majority Party Whip 2020",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2018-10-18T14:33:58.770396+00:00",
+    "updated_at": "2025-02-21T15:43:24.520117+00:00",
+    "openstates_url": "https://openstates.org/person/robin-lundstrum-5utIECBteQJHYXybSyD1FE/"
+  },
+  {
+    "id": "ocd-person/de934263-fe58-4281-bd70-1291fcbd0e25",
+    "name": "Roger Lynch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:ar/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Roger",
+    "family_name": "Lynch",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/528_sm.jpg",
+    "email": "roger.lynch@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "39",
+      "occupation": "Self-employed - Heating, Air Conditioning",
+      "public service": "Lonoke County Quorum Court (10 years),  First Term House 2017",
+      "church affiliation": "Southern Baptist"
+    },
+    "created_at": "2018-10-18T14:34:18.613351+00:00",
+    "updated_at": "2025-02-21T15:43:14.948909+00:00",
+    "openstates_url": "https://openstates.org/person/roger-lynch-6lzaqTY8TQQrbBC7S8g7hl/"
+  },
+  {
+    "id": "ocd-person/c45493e9-afbd-4f5e-bb69-e6caed58936a",
+    "name": "Ron McNair",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ar/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "McNair",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/492_sm.jpg",
+    "email": "rmcnair1950@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "15",
+      "occupation": "Self-employed - Automotive Repair",
+      "public service": "First Term House 2015,  2017",
+      "church affiliation": "Church of Christ"
+    },
+    "created_at": "2023-01-17T22:27:10.755202+00:00",
+    "updated_at": "2025-05-23T12:04:55.136113+00:00",
+    "openstates_url": "https://openstates.org/person/ron-mcnair-5yT9Bqv7538Yor8PHzX6xW/"
+  },
+  {
+    "id": "ocd-person/91123b36-1cbd-4696-b6d1-b9973c9d920f",
+    "name": "Ryan Rose",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:ar/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Rose",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/618_sm.jpg",
+    "email": "ryan.rose@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "85"
+    },
+    "created_at": "2023-01-17T22:27:10.812510+00:00",
+    "updated_at": "2025-05-23T12:05:43.872241+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-rose-4PkDaMhPmzyD8UIcmEZMA3/"
+  },
+  {
+    "id": "ocd-person/302953f6-213a-4bca-94a6-08a36b801d6c",
+    "name": "Scott Richardson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ar/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Richardson",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/608_sm.jpg",
+    "email": "scott.richardson@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "94"
+    },
+    "created_at": "2023-01-17T22:27:13.271082+00:00",
+    "updated_at": "2025-05-23T12:04:51.221546+00:00",
+    "openstates_url": "https://openstates.org/person/scott-richardson-1SsW9cdH37TONjaGcGK3W0/"
+  },
+  {
+    "id": "ocd-person/4f64d1ad-6e2b-443d-b8cb-64164febff31",
+    "name": "Shad Pearce",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ar/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Shad",
+    "family_name": "Pearce",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/617_sm.jpg",
+    "email": "shad.pearce@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "99"
+    },
+    "created_at": "2023-01-17T22:27:18.915107+00:00",
+    "updated_at": "2025-05-23T12:05:01.111575+00:00",
+    "openstates_url": "https://openstates.org/person/shad-pearce-2PoT21Jg9A4E2oW4xVgBW5/"
+  },
+  {
+    "id": "ocd-person/bd3c22f6-b1b5-4089-b03b-f8198ca843a2",
+    "name": "Sonia Barker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:ar/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Sonia",
+    "family_name": "Barker",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/520_sm.jpg",
+    "email": "sonia.barker@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "35",
+      "occupation": "High School Educator",
+      "public service": "First Term House 2017",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2023-01-17T22:27:13.652493+00:00",
+    "updated_at": "2025-02-21T15:43:22.894481+00:00",
+    "openstates_url": "https://openstates.org/person/sonia-barker-5l5208IHrWEUBURa8YkWva/"
+  },
+  {
+    "id": "ocd-person/8b64758a-b71a-4bb4-ad5d-d4ea812ebf58",
+    "name": "Stephen Meeks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:ar/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Stephen",
+    "family_name": "Meeks",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/374_sm.jpg",
+    "email": "stephen.meeks@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1970-10-30",
+    "death_date": "",
+    "extras": {
+      "veteran": "Yes",
+      "seniority": "1",
+      "occupation": "Computer Technician",
+      "public service": "House 2011,  2013,  2015,  2017",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2018-10-18T14:34:21.706729+00:00",
+    "updated_at": "2025-02-21T15:43:17.788301+00:00",
+    "openstates_url": "https://openstates.org/person/stephen-meeks-4F1qI4EAiQawfClN0VA4l6/"
+  },
+  {
+    "id": "ocd-person/120ce349-5d8a-4fa6-902e-4fa39945d7d7",
+    "name": "Stetson Painter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ar/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Stetson",
+    "family_name": "Painter",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/603_sm.jpg",
+    "email": "stetson.painter@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "Yes",
+      "seniority": "90"
+    },
+    "created_at": "2023-01-17T22:27:11.334869+00:00",
+    "updated_at": "2025-07-17T06:05:37.369281+00:00",
+    "openstates_url": "https://openstates.org/person/stetson-painter-Y3kbJsX6RCPRgqMAIbAYx/"
+  },
+  {
+    "id": "ocd-person/6eae19da-9b27-462c-af4b-28615d8d2f54",
+    "name": "Steve Hollowell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ar/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Hollowell",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/527_sm.jpg",
+    "email": "steve.hollowell@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "37",
+      "occupation": "Real Estate",
+      "public service": "Forrest City Alderman (2003-2016),  First Term House 2017",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2018-10-18T14:34:00.789709+00:00",
+    "updated_at": "2025-07-17T06:05:10.792433+00:00",
+    "openstates_url": "https://openstates.org/person/steve-hollowell-3Mqif0CAjMnPhP0dtlJONg/"
+  },
+  {
+    "id": "ocd-person/d7828297-0ad0-491b-88a6-93369de7acca",
+    "name": "Steve Magie",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:ar/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Magie",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/421_sm.jpg",
+    "email": "stephen.magie@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1953-08-21",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "7",
+      "occupation": "Physician",
+      "public service": "First Term House 2013,  2015,  2017",
+      "church affiliation": "Catholic"
+    },
+    "created_at": "2018-10-18T14:34:18.073897+00:00",
+    "updated_at": "2025-02-21T15:43:01.518629+00:00",
+    "openstates_url": "https://openstates.org/person/steve-magie-6YezbMtCqcEYu67ZizB1Eg/"
+  },
+  {
+    "id": "ocd-person/1d522f48-2a04-40ed-860f-3c580d9c87fa",
+    "name": "Steve Unger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ar/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Unger",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/610_sm.jpg",
+    "email": "steve.unger@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "1958-05-22",
+    "death_date": "",
+    "extras": {
+      "veteran": "Yes",
+      "seniority": "92"
+    },
+    "created_at": "2023-01-17T22:27:17.414794+00:00",
+    "updated_at": "2025-05-23T12:05:03.735002+00:00",
+    "openstates_url": "https://openstates.org/person/steve-unger-tKKpYZghDEbITPctgFasE/"
+  },
+  {
+    "id": "ocd-person/155853e2-b93f-442f-b551-5084b5c2105f",
+    "name": "Steven Walker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ar/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Steven",
+    "family_name": "Walker",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/613_sm.jpg",
+    "email": "steven.walker@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "75"
+    },
+    "created_at": "2023-01-17T22:27:11.555178+00:00",
+    "updated_at": "2025-07-17T06:06:03.271277+00:00",
+    "openstates_url": "https://openstates.org/person/steven-walker-eHCgyXIfo9iYKLxh1Gsjn/"
+  },
+  {
+    "id": "ocd-person/18f06e22-dd2c-4247-81c8-a40938de3ea1",
+    "name": "Tara Shephard",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:ar/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Tara",
+    "family_name": "Shephard",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/624_sm.jpg",
+    "email": "tara.shephard@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "93"
+    },
+    "created_at": "2023-01-17T22:27:12.304038+00:00",
+    "updated_at": "2026-01-29T00:05:38.443167+00:00",
+    "openstates_url": "https://openstates.org/person/tara-shephard-l3gwzJdBi5RRugzAY7gfZ/"
+  },
+  {
+    "id": "ocd-person/03241c54-792d-42c6-ba4c-7b81d02b24a9",
+    "name": "Tippi McCullough",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:ar/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Tippi",
+    "family_name": "McCullough",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/570_sm.jpg",
+    "email": "tippi.mccullough@arkansashouse.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "58",
+      "occupation": "Educator",
+      "public service": "First Term House 2019",
+      "church affiliation": "Methodist"
+    },
+    "created_at": "2019-01-17T06:04:58.664811+00:00",
+    "updated_at": "2025-02-21T15:43:05.022550+00:00",
+    "openstates_url": "https://openstates.org/person/tippi-mccullough-5vTjaEL96y0mjKokPTQr3/"
+  },
+  {
+    "id": "ocd-person/55779b79-fd86-4991-882f-05819d80a87d",
+    "name": "Tony Furman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:ar/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Furman",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/587_sm.jpg",
+    "email": "tony.furman@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "73",
+      "occupation": "Realtor"
+    },
+    "created_at": "2023-05-22T22:47:44.228505+00:00",
+    "updated_at": "2026-01-29T00:05:58.487587+00:00",
+    "openstates_url": "https://openstates.org/person/tony-furman-2bH0WexaKsgo5z9BHOAQW5/"
+  },
+  {
+    "id": "ocd-person/be626067-db01-4481-b096-d2792ff189c8",
+    "name": "Tracy Steele",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:ar/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Tracy",
+    "family_name": "Steele",
+    "image": "http://www.arkleg.state.ar.us/assembly/2011/Member%20Pictures/Steele_t.jpg",
+    "email": "sensteele@yahoo.com",
+    "gender": "Male",
+    "birth_date": "1963-12-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-31T18:03:45.335260+00:00",
+    "updated_at": "2025-07-17T06:06:03.835662+00:00",
+    "openstates_url": "https://openstates.org/person/tracy-steele-5nFV1LyDcOshjRvf700E6y/"
+  },
+  {
+    "id": "ocd-person/9d4e09cb-8d9f-4c8c-a8df-481af146436d",
+    "name": "Trey Steimel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ar/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Trey",
+    "family_name": "Steimel",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/602_sm.jpg",
+    "email": "trey.steimel@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "98"
+    },
+    "created_at": "2023-01-17T22:27:11.969105+00:00",
+    "updated_at": "2025-07-17T06:06:01.751612+00:00",
+    "openstates_url": "https://openstates.org/person/trey-steimel-4mpSS63u3zM1rv84DoXTZ7/"
+  },
+  {
+    "id": "ocd-person/9762816a-27bf-4209-864b-d15e2e39212a",
+    "name": "Wade Andrews",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:ar/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Wade",
+    "family_name": "Andrews",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/626_sm.jpg",
+    "email": "wade.andrews@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "100"
+    },
+    "created_at": "2023-01-17T22:27:18.240111+00:00",
+    "updated_at": "2025-02-21T15:43:06.379766+00:00",
+    "openstates_url": "https://openstates.org/person/wade-andrews-4berEApmaAxoGlqgbi3tqk/"
+  },
+  {
+    "id": "ocd-person/e8865ad0-46d2-49a0-8273-da14fe929f3e",
+    "name": "Wayne Long",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ar/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Wayne",
+    "family_name": "Long",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/616_sm.jpg",
+    "email": "wayne.long@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "78"
+    },
+    "created_at": "2023-01-17T22:27:17.866197+00:00",
+    "updated_at": "2025-05-23T12:05:02.309766+00:00",
+    "openstates_url": "https://openstates.org/person/wayne-long-74lcRqrEhrtMxhmswna6GM/"
+  },
+  {
+    "id": "ocd-person/417afb72-31e7-4152-bf79-0ba67e3cb63f",
+    "name": "Zack Gramlich",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:ar/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Zack",
+    "family_name": "Gramlich",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/619_sm.jpg",
+    "email": "zack.gramlich@arkansashouse.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "89"
+    },
+    "created_at": "2023-01-17T22:27:16.513580+00:00",
+    "updated_at": "2025-05-23T12:05:16.272646+00:00",
+    "openstates_url": "https://openstates.org/person/zack-gramlich-1zYhfG3kVFhPkszmgeUgut/"
+  }
+]

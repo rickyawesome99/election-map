@@ -1,0 +1,1216 @@
+[
+  {
+    "id": "ocd-person/b0101cd0-ad49-466b-a46e-8bb8671cb709",
+    "name": "Andr\u00e9 Jacque",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:wi/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Andr\u00e9",
+    "family_name": "Jacque",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2419.jpg",
+    "email": "sen.jacque@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1980-10-13",
+    "death_date": "",
+    "extras": {
+      "staff1": "Bill Cosh",
+      "staff2": "Nicolas Cravillion",
+      "staff3": "Malik Staude",
+      "staff4": "Matthew Tompach",
+      "website": "http://legis.wisconsin.gov/senate/01/jacque",
+      "extra phone": "",
+      "staff_email1": "Bill.Cosh@legis.wisconsin.gov",
+      "staff_email2": "Nicolas.Cravillion@legis.wisconsin.gov",
+      "staff_email3": "Malik.Staude@legis.wisconsin.gov",
+      "staff_email4": "Matthew.Tompach@legis.wisconsin.gov"
+    },
+    "created_at": "2019-01-06T20:07:50.257319+00:00",
+    "updated_at": "2026-01-28T02:47:22.819587+00:00",
+    "openstates_url": "https://openstates.org/person/andre-jacque-5ME0o0aiZY93ZAiWcM35IH/"
+  },
+  {
+    "id": "ocd-person/dc69e926-a090-4561-bb0f-2f81ec0dc977",
+    "name": "Bob Wirch",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:wi/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Wirch",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2440.jpg",
+    "email": "sen.wirch@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1943-11-16",
+    "death_date": "",
+    "extras": {
+      "staff1": "Paula McGuire",
+      "staff2": "Matt Archambo",
+      "staff3": "Steven Gillitzer-Brown",
+      "website": "http://legis.wisconsin.gov/senate/wirch",
+      "extra phone": "",
+      "staff_email1": "Paula.McGuire@legis.wisconsin.gov",
+      "staff_email2": "Matt.Archambo@legis.wisconsin.gov",
+      "staff_email3": "Steven.Gillitzer-Brown@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:14.954881+00:00",
+    "updated_at": "2025-04-24T02:49:06.259593+00:00",
+    "openstates_url": "https://openstates.org/person/bob-wirch-6huiDrKtwqwExzz0u6qchr/"
+  },
+  {
+    "id": "ocd-person/1c95c957-d9c9-4905-8dc6-37b13272c1f0",
+    "name": "Brad Pfaff",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:wi/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Pfaff",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2429.jpg",
+    "email": "sen.pfaff@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1967-12-07",
+    "death_date": "",
+    "extras": {
+      "staff1": "Dave Groshek",
+      "staff2": "Brett Halverson",
+      "staff3": "Benjamin O'Connell",
+      "staff4": "Sarah Semrad",
+      "website": "https://legis.wisconsin.gov/senate/32/pfaff",
+      "extra phone": "",
+      "staff_email1": "Dave.Groshek@legis.wisconsin.gov",
+      "staff_email2": "Brett.Halverson@legis.wisconsin.gov",
+      "staff_email3": "Benjamin.O'Connell@legis.wisconsin.gov",
+      "staff_email4": "Sarah.Semrad@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:15.300917+00:00",
+    "updated_at": "2026-01-28T02:47:31.804995+00:00",
+    "openstates_url": "https://openstates.org/person/brad-pfaff-rwEk0fUAnw5F6OnR025nk/"
+  },
+  {
+    "id": "ocd-person/8d93f6ba-19eb-4684-a47d-6de08e009741",
+    "name": "Chris Kapenga",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:wi/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Kapenga",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2422.jpg",
+    "email": "sen.kapenga@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1972-02-19",
+    "death_date": "",
+    "extras": {
+      "title": "Senate President",
+      "staff1": "Jennifer Esser",
+      "staff2": "Hope Certalic",
+      "staff3": "Samuel Krebs",
+      "staff4": "Denise Richter",
+      "staff5": "Jeff Sherman",
+      "website": "http://legis.wisconsin.gov/senate/33/kapenga",
+      "extra phone": "(800) 863-8883",
+      "staff_email1": "Jennifer.Esser@legis.wisconsin.gov",
+      "staff_email2": "Hope.Certalic@legis.wisconsin.gov",
+      "staff_email3": "Samuel.Krebs@legis.wisconsin.gov",
+      "staff_email4": "Denise.Richter@legis.wisconsin.gov",
+      "staff_email5": "Jeff.Sherman@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:07.113908+00:00",
+    "updated_at": "2026-01-28T02:47:11.547465+00:00",
+    "openstates_url": "https://openstates.org/person/chris-kapenga-4J9XL4Z7ja57pbCtMqC9c9/"
+  },
+  {
+    "id": "ocd-person/48d90383-6c55-47c7-979c-2b95a806ec4c",
+    "name": "Chris Larson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:wi/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Larson",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2424.jpg",
+    "email": "sen.larson@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1980-11-12",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Chair",
+      "staff1": "Justin Sargent",
+      "staff2": "Justin Bielinski",
+      "staff3": "Nick Janis",
+      "staff4": "Casey Steinau",
+      "website": "http://legis.wisconsin.gov/senate/07/Larson",
+      "extra phone": "(800) 361-5487",
+      "staff_email1": "Justin.Sargent@legis.wisconsin.gov",
+      "staff_email2": "Justin.Bielinski@legis.wisconsin.gov",
+      "staff_email3": "Nick.Janis@legis.wisconsin.gov",
+      "staff_email4": "Casey.Steinau@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:07.187739+00:00",
+    "updated_at": "2026-01-28T02:47:15.565600+00:00",
+    "openstates_url": "https://openstates.org/person/chris-larson-2DScdAIvqoNJoIbZufFQtw/"
+  },
+  {
+    "id": "ocd-person/365aa5a9-3584-4baa-86b5-51f096764f69",
+    "name": "Cory Tomczyk",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:wi/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Cory",
+    "family_name": "Tomczyk",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2567.jpg",
+    "email": "sen.tomczyk@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1962-10-26",
+    "death_date": "",
+    "extras": {
+      "staff1": "Mitch Sands",
+      "staff2": "Michael Donatello",
+      "staff3": "Timmy Gomez",
+      "staff4": "Adam Peterson",
+      "website": "https://legis.wisconsin.gov/senate/29/tomczyk/",
+      "extra phone": "",
+      "staff_email1": "Mitch.Sands@legis.wisconsin.gov",
+      "staff_email2": "Michael.Donatello@legis.wisconsin.gov",
+      "staff_email3": "Timmy.Gomez@legis.wisconsin.gov",
+      "staff_email4": "Adam.Peterson@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T06:58:55.961682+00:00",
+    "updated_at": "2026-01-28T02:47:32.931962+00:00",
+    "openstates_url": "https://openstates.org/person/cory-tomczyk-1eZ0iDfmH1l5dTqJFBRZbl/"
+  },
+  {
+    "id": "ocd-person/a0284290-ef4c-4f10-a5be-485115057ab5",
+    "name": "Dan Feyen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:wi/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Feyen",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2418.jpg",
+    "email": "sen.feyen@legis.wi.gov",
+    "gender": "Male",
+    "birth_date": "1968-07-12",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Leader",
+      "staff1": "Tim Lakin",
+      "staff2": "John Beauchamp",
+      "staff3": "Matthias Censky",
+      "website": "http://legis.wisconsin.gov/senate/18/feyen",
+      "extra phone": "",
+      "staff_email1": "Tim.Lakin@legis.wisconsin.gov",
+      "staff_email2": "John.Beauchamp@legis.wisconsin.gov",
+      "staff_email3": "Matthias.Censky@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:07.718861+00:00",
+    "updated_at": "2025-04-24T09:01:41.722974+00:00",
+    "openstates_url": "https://openstates.org/person/dan-feyen-4sDAc5okFiuW52tRtcMa8b/"
+  },
+  {
+    "id": "ocd-person/be7a6f06-6d2c-49d1-908d-451adef564eb",
+    "name": "Devin LeMahieu",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:wi/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Devin",
+    "family_name": "LeMahieu",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2425.jpg",
+    "email": "sen.lemahieu@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1972-08-08",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Leader",
+      "staff1": "Ashley Czaja",
+      "staff2": "Colin Nygren",
+      "staff3": "Brian Radday",
+      "staff4": "Karalyn Sagan",
+      "staff5": "Nathan Schwanz",
+      "staff6": "Dane Sutton",
+      "staff7": "Amanda Truax",
+      "website": "http://legis.wisconsin.gov/senate/09/LeMahieu",
+      "extra phone": "",
+      "staff_email1": "Ashley.Czaja@legis.wisconsin.gov",
+      "staff_email2": "Colin.Nygren@legis.wisconsin.gov",
+      "staff_email3": "Brian.Radday@legis.wisconsin.gov",
+      "staff_email4": "Karalyn.Sagan@legis.wisconsin.gov",
+      "staff_email5": "Nathan.Schwanz@legis.wisconsin.gov",
+      "staff_email6": "Dane.Sutton@legis.wisconsin.gov",
+      "staff_email7": "Amanda.Truax@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:08.614277+00:00",
+    "updated_at": "2026-01-28T02:48:38.818976+00:00",
+    "openstates_url": "https://openstates.org/person/devin-lemahieu-5nQUemfWGPNEQC3Avdwf3D/"
+  },
+  {
+    "id": "ocd-person/57a316e3-b233-4460-abf5-193dd042291f",
+    "name": "Dianne Hesselbein",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:wi/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Dianne",
+    "family_name": "Hesselbein",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2566.jpg",
+    "email": "sen.hesselbein@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1971-03-10",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Leader",
+      "staff1": "Denise Stromme",
+      "staff2": "Robert Abrahamian",
+      "staff3": "Margie Berkowitz",
+      "staff4": "Geoff Gaston",
+      "staff5": "Amanda Kind",
+      "staff6": "Ryan Knocke",
+      "staff7": "Chandra Munroe",
+      "website": "https://legis.wisconsin.gov/senate/27/hesselbein",
+      "extra phone": "",
+      "staff_email1": "Denise.Stromme@legis.wisconsin.gov",
+      "staff_email2": "Robert.Abrahamian@legis.wisconsin.gov",
+      "staff_email3": "Margie.Berkowitz@legis.wisconsin.gov",
+      "staff_email4": "Geoff.Gaston@legis.wisconsin.gov",
+      "staff_email5": "Amanda.Kind@legis.wisconsin.gov",
+      "staff_email6": "Ryan.Knocke@legis.wisconsin.gov",
+      "staff_email7": "Chandra.Munroe@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:08.690628+00:00",
+    "updated_at": "2026-01-28T02:47:40.746029+00:00",
+    "openstates_url": "https://openstates.org/person/dianne-hesselbein-2fMrbChE72OuHy3sKGzdOR/"
+  },
+  {
+    "id": "ocd-person/798979da-9683-41b4-b663-d5c73ec93364",
+    "name": "Dora Drake",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:wi/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Dora",
+    "family_name": "Drake",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2462.jpg",
+    "email": "sen.drake@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "staff1": "Ryan Schroeder",
+      "website": "https://legis.wisconsin.gov/assembly/11/drake",
+      "extra phone": "(888) 534-0011",
+      "staff_email1": "Ryan.Schroeder@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:15.073648+00:00",
+    "updated_at": "2026-01-28T02:48:21.171388+00:00",
+    "openstates_url": "https://openstates.org/person/dora-drake-3hKtgwgxXHIrByuko6sP0G/"
+  },
+  {
+    "id": "ocd-person/86a5289a-d18f-4869-ac53-432022c7f9c7",
+    "name": "Eric Wimberger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:wi/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Wimberger",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2439.jpg",
+    "email": "sen.wimberger@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1979-04-02",
+    "death_date": "",
+    "extras": {
+      "staff1": "Zachary Stollfus",
+      "staff2": "Nolen Gutgesell",
+      "staff3": "Bill Kloiber",
+      "staff4": "Alex Richter",
+      "website": "https://legis.wisconsin.gov/senate/30/wimberger",
+      "extra phone": "",
+      "staff_email1": "Zachary.Stollfus@legis.wisconsin.gov",
+      "staff_email2": "Nolen.Gutgesell@legis.wisconsin.gov",
+      "staff_email3": "Bill.Kloiber@legis.wisconsin.gov",
+      "staff_email4": "Alex.Richter@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:19.188325+00:00",
+    "updated_at": "2026-01-28T02:47:39.177664+00:00",
+    "openstates_url": "https://openstates.org/person/eric-wimberger-464RrvXHey4SuCRoaoUDG3/"
+  },
+  {
+    "id": "ocd-person/c405ad68-fdbd-43fe-abc2-f449f33c89b0",
+    "name": "Howard Marklein",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:wi/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Howard",
+    "family_name": "Marklein",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2426.jpg",
+    "email": "sen.marklein@legis.wi.gov",
+    "gender": "Male",
+    "birth_date": "1954-10-03",
+    "death_date": "",
+    "extras": {
+      "title": "Co-Chair Joint Finance Committee",
+      "staff1": "Katy Prange",
+      "staff2": "Connor Buss",
+      "staff3": "Peter Hienz",
+      "staff4": "Eileen O'Neill",
+      "staff5": "Zach Olstinske",
+      "staff6": "Vincent Williams",
+      "website": "http://legis.wisconsin.gov/senate/17/marklein",
+      "extra phone": "",
+      "staff_email1": "Katy.Prange@legis.wisconsin.gov",
+      "staff_email2": "Connor.Buss@legis.wisconsin.gov",
+      "staff_email3": "Peter.Hienz@legis.wisconsin.gov",
+      "staff_email4": "Eileen.O'Neill@legis.wisconsin.gov",
+      "staff_email5": "Zach.Olstinske@legis.wisconsin.gov",
+      "staff_email6": "Vincent.Williams@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:09.610130+00:00",
+    "updated_at": "2026-01-28T02:47:13.751395+00:00",
+    "openstates_url": "https://openstates.org/person/howard-marklein-5xt5cV0T1bitKnrNpxAUWu/"
+  },
+  {
+    "id": "ocd-person/5d4675a4-34f3-47ea-8821-69669a2a8d05",
+    "name": "Jamie Wall",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:wi/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jamie",
+    "family_name": "Wall",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JamieWall2024.jpg",
+    "email": "sen.wall@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:29.704396+00:00",
+    "updated_at": "2026-01-28T02:48:01.968859+00:00",
+    "openstates_url": "https://openstates.org/person/jamie-wall-2q0UA8V6iH7qV8Pv7aMavt/"
+  },
+  {
+    "id": "ocd-person/8a1ee7b3-8450-45b4-a1cf-5e05788c0653",
+    "name": "Jeff Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:wi/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Smith",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2433.jpg",
+    "email": "sen.smith@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1955-03-15",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Minority Leader",
+      "staff1": "Beau Stafford",
+      "staff2": "Christian Plata",
+      "staff3": "Joseph Splinter",
+      "staff4": "Eleanor Thorman",
+      "website": "https://legis.wisconsin.gov/senate/31/smith/",
+      "extra phone": "(877) 763-6636",
+      "staff_email1": "Beau.Stafford@legis.wisconsin.gov",
+      "staff_email2": "Christian.Plata@legis.wisconsin.gov",
+      "staff_email3": "Joseph.Splinter@legis.wisconsin.gov",
+      "staff_email4": "Eleanor.Thorman@legis.wisconsin.gov"
+    },
+    "created_at": "2019-01-06T20:08:00.468280+00:00",
+    "updated_at": "2026-01-28T02:48:08.011648+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-smith-4Cd412Rnbs6oUA6mRPnGE7/"
+  },
+  {
+    "id": "ocd-person/79d7550b-bb75-453b-bfd7-3f273debe3e4",
+    "name": "Jesse James",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:wi/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jesse",
+    "family_name": "James",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2563.jpg",
+    "email": "sen.james@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1972-04-16",
+    "death_date": "",
+    "extras": {
+      "staff1": "Mitchell Goettl",
+      "staff2": "Victoria Casola",
+      "staff3": "Nathan Cera",
+      "staff4": "Maddy Hunt",
+      "website": "https://legis.wisconsin.gov/senate/23/james",
+      "extra phone": "",
+      "staff_email1": "Mitchell.Goettl@legis.wisconsin.gov",
+      "staff_email2": "Victoria.Casola@legis.wisconsin.gov",
+      "staff_email3": "Nathan.Cera@legis.wisconsin.gov",
+      "staff_email4": "Maddy.Hunt@legis.wisconsin.gov"
+    },
+    "created_at": "2019-01-06T20:07:54.144630+00:00",
+    "updated_at": "2025-05-15T02:32:28.039381+00:00",
+    "openstates_url": "https://openstates.org/person/jesse-james-3huTfyCi68MBAZaHt6f6t2/"
+  },
+  {
+    "id": "ocd-person/225f946c-4812-435d-83f1-dad22a2fb0d6",
+    "name": "Jodi Habush Sinykin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:wi/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jodi",
+    "family_name": "Habush Sinykin",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jodi_Habush_Sinykin.PNG",
+    "email": "sen.habushsinykin@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:30.843759+00:00",
+    "updated_at": "2026-01-28T02:47:14.431318+00:00",
+    "openstates_url": "https://openstates.org/person/jodi-habush-sinykin-12rPzOa05kvjgxRoCf718A/"
+  },
+  {
+    "id": "ocd-person/13728fa5-9484-4767-b642-8bf9adf80a8b",
+    "name": "John Jagler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:wi/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Jagler",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2420.jpg",
+    "email": "sen.jagler@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1969-11-04",
+    "death_date": "",
+    "extras": {
+      "staff1": "Charlie Bellin",
+      "staff2": "David Fladeboe",
+      "staff3": "Sarah Gibbs",
+      "staff4": "Matthew VanRemortel",
+      "website": "https://legis.wisconsin.gov/senate/13/jagler",
+      "extra phone": "",
+      "staff_email1": "Charlie.Bellin@legis.wisconsin.gov",
+      "staff_email2": "David.Fladeboe@legis.wisconsin.gov",
+      "staff_email3": "Sarah.Gibbs@legis.wisconsin.gov",
+      "staff_email4": "Matthew.VanRemortel@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:11.399804+00:00",
+    "updated_at": "2025-04-24T02:49:33.939953+00:00",
+    "openstates_url": "https://openstates.org/person/john-jagler-ahCwakkcYYUKMPiPKZQN9/"
+  },
+  {
+    "id": "ocd-person/91a901ca-e295-4843-b368-e9da162c0ae4",
+    "name": "Julian Bradley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:wi/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Julian",
+    "family_name": "Bradley",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2412.jpg",
+    "email": "sen.bradley@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1981-02-11",
+    "death_date": "",
+    "extras": {
+      "staff1": "Lucas Fuller",
+      "staff2": "Jeff Schultz",
+      "staff3": "Alexander Walker",
+      "website": "https://legis.wisconsin.gov/senate/28/bradley",
+      "extra phone": "",
+      "staff_email1": "Lucas.Fuller@legis.wisconsin.gov",
+      "staff_email2": "Jeff.Schultz@legis.wisconsin.gov",
+      "staff_email3": "Alexander.Walker@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:21.399868+00:00",
+    "updated_at": "2026-01-28T02:47:51.789988+00:00",
+    "openstates_url": "https://openstates.org/person/julian-bradley-4Qr7fzsw9W7BAouRhdgvZ6/"
+  },
+  {
+    "id": "ocd-person/967afe3c-119d-4051-a8b1-674f328c4775",
+    "name": "Kelda Roys",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:wi/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Kelda",
+    "family_name": "Roys",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2432.jpg",
+    "email": "sen.roys@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1979-06-24",
+    "death_date": "",
+    "extras": {
+      "staff1": "George Gillis",
+      "staff2": "Cecely Castillo",
+      "staff3": "Jalen Knuteson",
+      "staff4": "Carla Wolff",
+      "website": "https://legis.wisconsin.gov/senate/26/roys",
+      "extra phone": "",
+      "staff_email1": "George.Gillis@legis.wisconsin.gov",
+      "staff_email2": "Cecely.Castillo@legis.wisconsin.gov",
+      "staff_email3": "Jalen.Knuteson@legis.wisconsin.gov",
+      "staff_email4": "Carla.Wolff@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:14.884397+00:00",
+    "updated_at": "2026-01-28T02:47:58.453869+00:00",
+    "openstates_url": "https://openstates.org/person/kelda-roys-4Zx3XJU4rJsDtb24Kn7Re1/"
+  },
+  {
+    "id": "ocd-person/73b2bf4c-54e5-4da3-9a8c-c2c5bf4f102d",
+    "name": "Kristin Dassler-Alfheim",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:wi/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Kristin",
+    "family_name": "Dassler-Alfheim",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KristinAlfheim2024.jpeg",
+    "email": "sen.dassler-alfheim@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1971-08-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:11:45.237501+00:00",
+    "updated_at": "2026-01-28T02:47:16.710135+00:00",
+    "openstates_url": "https://openstates.org/person/kristin-dassler-alfheim-3WJnvgQTUou3V7p23FAaM9/"
+  },
+  {
+    "id": "ocd-person/eba6f26b-65c9-42fe-a8a5-09e11c8d089a",
+    "name": "LaTonya Johnson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:wi/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "LaTonya",
+    "family_name": "Johnson",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2421.jpg",
+    "email": "sen.johnson@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1972-06-22",
+    "death_date": "",
+    "extras": {
+      "staff1": "Lacy Fox",
+      "staff2": "Shannon McCoy",
+      "staff3": "Jacob Taylor",
+      "staff4": "Christian Ullsvik",
+      "website": "http://legis.wisconsin.gov/senate/06/johnson",
+      "extra phone": "(877) 474-2000",
+      "staff_email1": "Lacy.Fox@legis.wisconsin.gov",
+      "staff_email2": "Shannon.McCoy@legis.wisconsin.gov",
+      "staff_email3": "Jacob.Taylor2@legis.wisconsin.gov",
+      "staff_email4": "Christian.Ullsvik@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:12.500597+00:00",
+    "updated_at": "2025-04-24T02:48:30.402755+00:00",
+    "openstates_url": "https://openstates.org/person/latonya-johnson-7AfUUWWsXGgwVpU7o1SfHe/"
+  },
+  {
+    "id": "ocd-person/3bd551f3-a086-4f32-9a6e-31d04d0529ce",
+    "name": "Mark Spreitzer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:wi/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Spreitzer",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2561.jpg",
+    "email": "sen.spreitzer@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1986-12-16",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Vice-Chair",
+      "staff1": "Doug Hyant",
+      "staff2": "Trinity Fandre",
+      "staff3": "Brett Halverson",
+      "staff4": "Laura Pratt",
+      "website": "https://legis.wisconsin.gov/senate/15/spreitzer",
+      "extra phone": "",
+      "staff_email1": "Doug.Hyant@legis.wisconsin.gov",
+      "staff_email2": "Trinity.Fandre@legis.wisconsin.gov",
+      "staff_email3": "Brett.Halverson2@legis.wisconsin.gov",
+      "staff_email4": "Laura.Pratt@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:13.254509+00:00",
+    "updated_at": "2026-01-28T02:47:45.843451+00:00",
+    "openstates_url": "https://openstates.org/person/mark-spreitzer-1ou2A0P4XXgRLUQkimlV3G/"
+  },
+  {
+    "id": "ocd-person/c67b7b29-0932-4667-bb92-63f46cdfaef0",
+    "name": "Mary Felzkowski",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:wi/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Felzkowski",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2417.jpg",
+    "email": "rep.felzkowski@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1963-09-25",
+    "death_date": "",
+    "extras": {
+      "staff1": "Collin Driscoll",
+      "staff2": "Rachel Drost",
+      "staff3": "Stamena Ivanov",
+      "staff4": "Christopher Seitz",
+      "website": "https://legis.wisconsin.gov/senate/12/felzkowski",
+      "extra phone": "",
+      "staff_email1": "Collin.Driscoll@legis.wisconsin.gov",
+      "staff_email2": "Rachel.Drost@legis.wisconsin.gov",
+      "staff_email3": "Stamena.Ivanov@legis.wisconsin.gov",
+      "staff_email4": "Christopher.Seitz@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:13.347071+00:00",
+    "updated_at": "2025-04-24T02:49:38.708550+00:00",
+    "openstates_url": "https://openstates.org/person/mary-felzkowski-62WuWoHc85QJ2lyHjqNCVM/"
+  },
+  {
+    "id": "ocd-person/784b437c-b5d1-4adc-909a-2bc28c9d6e88",
+    "name": "Melissa Ratcliff",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:wi/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Melissa",
+    "family_name": "Ratcliff",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2546.jpg",
+    "email": "sen.ratcliff@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "staff1": "Ben Gebhart",
+      "website": "https://legis.wisconsin.gov/assembly/46/ratcliff/",
+      "extra phone": "(888) 534-0046",
+      "staff_email1": "Ben.Gebhart@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T07:00:53.542579+00:00",
+    "updated_at": "2025-04-24T02:48:05.000415+00:00",
+    "openstates_url": "https://openstates.org/person/melissa-ratcliff-3ezTRAQmXqTrfQAI5osrYe/"
+  },
+  {
+    "id": "ocd-person/13416c83-b50d-4578-b721-83ff5c1486ad",
+    "name": "Patrick Testin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:wi/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Testin",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2437.jpg",
+    "email": "sen.testin@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1988-06-09",
+    "death_date": "",
+    "extras": {
+      "title": "President Pro Tempore",
+      "staff1": "James Emerson",
+      "staff2": "Jason Knack",
+      "staff3": "Christina Nelson",
+      "staff4": "Adam Tobias",
+      "website": "http://legis.wisconsin.gov/senate/24/testin",
+      "extra phone": "",
+      "staff_email1": "James.Emerson@legis.wisconsin.gov",
+      "staff_email2": "Jason.Knack@legis.wisconsin.gov",
+      "staff_email3": "Christina.Nelson@legis.wisconsin.gov",
+      "staff_email4": "Adam.Tobias@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:14.028871+00:00",
+    "updated_at": "2026-04-25T02:42:45.902893+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-testin-aKkgZkf0DYvFXlyvVgnKH/"
+  },
+  {
+    "id": "ocd-person/5fec547c-aff0-4c6c-880b-bc0f52d28e30",
+    "name": "Rachael Cabral-Guevara",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:wi/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Rachael",
+    "family_name": "Cabral-Guevara",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2562.jpg",
+    "email": "sen.cabral-guevara@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1976-08-10",
+    "death_date": "",
+    "extras": {
+      "staff1": "Ryan Retza",
+      "staff2": "Christian Gonzalez-Caraballo",
+      "staff3": "Michael Moscicke",
+      "staff4": "William Terry",
+      "website": "https://legis.wisconsin.gov/senate/19/cabral-guevara",
+      "extra phone": "",
+      "staff_email1": "Ryan.Retza@legis.wisconsin.gov",
+      "staff_email2": "Christian.Gonzalez-Caraballo@legis.wisconsin.gov",
+      "staff_email3": "Michael.Moscicke@legis.wisconsin.gov",
+      "staff_email4": "William.Terry@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:19.224346+00:00",
+    "updated_at": "2026-04-25T02:42:31.446985+00:00",
+    "openstates_url": "https://openstates.org/person/rachael-cabral-guevara-2v0Gzyiwqn25UQx6iChr60/"
+  },
+  {
+    "id": "ocd-person/49d245a5-ad19-46cf-9857-581573c0b99b",
+    "name": "Rob Hutton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:wi/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Hutton",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2560.jpg",
+    "email": "sen.hutton@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1967-04-07",
+    "death_date": "",
+    "extras": {
+      "staff1": "Sandy Lonergan",
+      "staff2": "Edward Eberle",
+      "staff3": "Patrick Kanarowski",
+      "staff4": "Chris Rochester",
+      "website": "https://legis.wisconsin.gov/senate/05/hutton/",
+      "extra phone": "",
+      "staff_email1": "Sandy.Lonergan@legis.wisconsin.gov",
+      "staff_email2": "Edward.Eberle@legis.wisconsin.gov",
+      "staff_email3": "Patrick.Kanarowski@legis.wisconsin.gov",
+      "staff_email4": "Chris.Rochester@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:14.448399+00:00",
+    "updated_at": "2026-01-28T02:48:28.459279+00:00",
+    "openstates_url": "https://openstates.org/person/rob-hutton-2FIX8V5je8DegCTxzisjPf/"
+  },
+  {
+    "id": "ocd-person/a1407176-afc6-45ce-ad6c-d7f69b5b3b78",
+    "name": "Rob Stafsholt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:wi/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Stafsholt",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2434.jpg",
+    "email": "sen.stafsholt@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1975-11-13",
+    "death_date": "",
+    "extras": {
+      "staff1": "Abrahm Anderson",
+      "staff2": "Sharlene Konkel",
+      "staff3": "Michael Neuwohner",
+      "staff4": "Dustin Truax",
+      "website": "https://legis.wisconsin.gov/senate/10/stafsholt",
+      "extra phone": "",
+      "staff_email1": "Abrahm.Anderson@legis.wisconsin.gov",
+      "staff_email2": "Sharlene.Konkel@legis.wisconsin.gov",
+      "staff_email3": "Michael.Neuwohner@legis.wisconsin.gov",
+      "staff_email4": "Dustin.Truax@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:14.530547+00:00",
+    "updated_at": "2026-01-28T02:47:49.902313+00:00",
+    "openstates_url": "https://openstates.org/person/rob-stafsholt-4uHDLWe1mo6JxREtK3xY1Q/"
+  },
+  {
+    "id": "ocd-person/003644e8-cb82-45c6-b875-e52bc28424bb",
+    "name": "Romaine Quinn",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:wi/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Romaine",
+    "family_name": "Quinn",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2564.jpg",
+    "email": "sen.quinn@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1990-07-30",
+    "death_date": "",
+    "extras": {
+      "staff1": "Jason Vick",
+      "staff2": "Ericka Braatz",
+      "staff3": "Jack Fitzgerald",
+      "staff4": "Stacey Hessel",
+      "website": "https://legis.wisconsin.gov/senate/25/quinn/",
+      "extra phone": "(800) 469-6562",
+      "staff_email1": "Jason.Vick@legis.wisconsin.gov",
+      "staff_email2": "Ericka.Braatz@legis.wisconsin.gov",
+      "staff_email3": "Jack.Fitzgerald@legis.wisconsin.gov",
+      "staff_email4": "Stacey.Hessel@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:15.206786+00:00",
+    "updated_at": "2025-04-24T02:47:54.478658+00:00",
+    "openstates_url": "https://openstates.org/person/romaine-quinn-OnfMZlVsj6xPzOo5ue5L/"
+  },
+  {
+    "id": "ocd-person/c7bbb253-91be-4cf1-ab53-ab7c1d902b48",
+    "name": "Sarah Keyeski",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:wi/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Sarah",
+    "family_name": "Keyeski",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SarahKeyeski24.jpg",
+    "email": "sen.keyeski@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1970-10-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:13.038694+00:00",
+    "updated_at": "2026-01-28T02:47:49.105363+00:00",
+    "openstates_url": "https://openstates.org/person/sarah-keyeski-64tFXV4HizBBjanfUdIXWa/"
+  },
+  {
+    "id": "ocd-person/0301a2cd-37fc-46f6-948a-f1fade57b5c0",
+    "name": "Steve Nass",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:wi/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Nass",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2427.jpg",
+    "email": "sen.nass@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1952-10-07",
+    "death_date": "",
+    "extras": {
+      "staff1": "Mike Mikalsen",
+      "staff2": "Adam Field",
+      "website": "http://legis.wisconsin.gov/senate/11/nass",
+      "extra phone": "",
+      "staff_email1": "Mike.Mikalsen@legis.wisconsin.gov",
+      "staff_email2": "Adam.Field@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:15.893308+00:00",
+    "updated_at": "2025-04-24T02:49:08.589264+00:00",
+    "openstates_url": "https://openstates.org/person/steve-nass-5fivOi3teEVwECK71zVSq/"
+  },
+  {
+    "id": "ocd-person/5afcecdf-8000-4e54-bcf2-329f919ed0bd",
+    "name": "Tim Carpenter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:wi/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Carpenter",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2413.jpg",
+    "email": "sen.carpenter@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1960-02-24",
+    "death_date": "",
+    "extras": {
+      "staff1": "Will Swassing",
+      "staff2": "Russell DeLong",
+      "staff3": "Colin Barushok",
+      "website": "http://legis.wisconsin.gov/senate/carpenter/",
+      "extra phone": "",
+      "staff_email1": "Will.Swassing@legis.wisconsin.gov",
+      "staff_email2": "Russell.DeLong@legis.wisconsin.gov",
+      "staff_email3": "Colin.Barushok@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:16.500530+00:00",
+    "updated_at": "2025-04-24T02:47:51.700211+00:00",
+    "openstates_url": "https://openstates.org/person/tim-carpenter-2lgtaYc87L7o8GEZnPGQ6n/"
+  },
+  {
+    "id": "ocd-person/b2ad4345-9408-4238-a1f9-13e747f599b3",
+    "name": "Van Wanggaard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:wi/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Van",
+    "family_name": "Wanggaard",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2438.jpg",
+    "email": "sen.wanggaard@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1952-04-19",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Chair",
+      "staff1": "Scott Kelly",
+      "staff2": "Eric Barbour",
+      "staff3": "Michelle Osdene",
+      "staff4": "Chad Taylor",
+      "website": "http://legis.wisconsin.gov/senate/21/wanggaard",
+      "extra phone": "(866) 615-7510",
+      "staff_email1": "Scott.Kelly@legis.wisconsin.gov",
+      "staff_email2": "Eric.Barbour@legis.wisconsin.gov",
+      "staff_email3": "Michelle.Osdene@legis.wisconsin.gov",
+      "staff_email4": "Chad.Taylor@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:17.074969+00:00",
+    "updated_at": "2026-01-28T02:48:11.704673+00:00",
+    "openstates_url": "https://openstates.org/person/van-wanggaard-5R9oYqCNnReSvmjG7X6B8N/"
+  }
+]

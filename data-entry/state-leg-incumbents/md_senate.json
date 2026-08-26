@@ -1,0 +1,1271 @@
+[
+  {
+    "id": "ocd-person/0ddc9257-e4a4-4414-b21d-3467c8285806",
+    "name": "Alonzo Washington",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:md/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Alonzo",
+    "family_name": "Washington",
+    "image": "https://mgaleg.maryland.gov/2023RS/images/washington02.jpg",
+    "email": "alonzo.washington@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1983-09-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:32.875314+00:00",
+    "updated_at": "2025-07-17T07:03:53.743633+00:00",
+    "openstates_url": "https://openstates.org/person/alonzo-washington-Q9hVdPbEci2CEpA8aEz9K/"
+  },
+  {
+    "id": "ocd-person/bbf4a659-f7a7-4db7-8cb1-4dc654db53e3",
+    "name": "Anthony Muse",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:md/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Anthony",
+    "family_name": "Muse",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/muse.jpg",
+    "email": "anthony.muse@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1958-04-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-20T00:24:29.544468+00:00",
+    "updated_at": "2026-01-29T06:56:16.204809+00:00",
+    "openstates_url": "https://openstates.org/person/anthony-muse-5ifMxu0NKeTDRMD9MN4irD/"
+  },
+  {
+    "id": "ocd-person/2b26dc52-cb0c-4750-af6b-9c00e12eef29",
+    "name": "Antonio Hayes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:md/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Antonio",
+    "family_name": "Hayes",
+    "image": "https://mgaleg.maryland.gov/2023RS/images/hayes02.jpg",
+    "email": "antonio.hayes@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1977-12-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:30.860804+00:00",
+    "updated_at": "2025-07-17T07:03:14.770622+00:00",
+    "openstates_url": "https://openstates.org/person/antonio-hayes-1JQQchESdF6zgt5wW9N0Dh/"
+  },
+  {
+    "id": "ocd-person/ad59d051-2efb-495f-b032-524d21a95e50",
+    "name": "Arthur Ellis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:md/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Arthur",
+    "family_name": "Ellis",
+    "image": "http://mgaleg.maryland.gov/2019RS/images/ellis01.jpg",
+    "email": "arthur.ellis@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1961-07-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T04:28:43.263978+00:00",
+    "updated_at": "2025-07-17T07:03:14.293145+00:00",
+    "openstates_url": "https://openstates.org/person/arthur-ellis-5H6iUJ7bbPefkwoRLhIFmq/"
+  },
+  {
+    "id": "ocd-person/4e1fee1d-1f1c-416b-9615-4171d4074db8",
+    "name": "Ben Brooks",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:md/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Brooks",
+    "image": "https://mgaleg.maryland.gov/2023RS/images/brooks02.jpg",
+    "email": "benjamin.brooks@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1950-04-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:41.610520+00:00",
+    "updated_at": "2026-06-04T06:59:56.758850+00:00",
+    "openstates_url": "https://openstates.org/person/ben-brooks-2NPzbSVvgzrpEREdaaHpf6/"
+  },
+  {
+    "id": "ocd-person/f43bc1a5-01e8-416f-86ca-bd857bf6ed80",
+    "name": "Ben Kramer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:md/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Kramer",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/kramer%20b.jpg",
+    "email": "ben.kramer@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1957-03-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:36.568927+00:00",
+    "updated_at": "2025-07-17T07:02:57.571059+00:00",
+    "openstates_url": "https://openstates.org/person/ben-kramer-7QrR45LFLKxzOdUL2ZDorQ/"
+  },
+  {
+    "id": "ocd-person/86f0d40f-05f4-46a2-9c24-21ff52fdc6fe",
+    "name": "Bill Ferguson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:md/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Ferguson",
+    "image": "https://mgaleg.maryland.gov/2025RS/images/ferguson.jpg",
+    "email": "bill.ferguson@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1983-04-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:32.559253+00:00",
+    "updated_at": "2026-01-29T06:56:16.880748+00:00",
+    "openstates_url": "https://openstates.org/person/bill-ferguson-46d1twJE5so1vvvl9C9OOs/"
+  },
+  {
+    "id": "ocd-person/c3ce882c-89d3-453c-a70f-b0ef9046fcf3",
+    "name": "Brian Feldman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:md/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Feldman",
+    "image": "https://mgaleg.maryland.gov/2023RS/images/feldman.jpg",
+    "email": "brian.feldman@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1961-02-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:48.394450+00:00",
+    "updated_at": "2025-07-17T07:03:37.004665+00:00",
+    "openstates_url": "https://openstates.org/person/brian-feldman-5xTt7lil0Q2X32yFpuL8VP/"
+  },
+  {
+    "id": "ocd-person/b0d22b6f-68c0-4dd0-892c-7844e6830693",
+    "name": "Bryan Simonaire",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:md/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Bryan",
+    "family_name": "Simonaire",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/simonaire.jpg",
+    "email": "bryan.simonaire@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1963-09-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:25.943908+00:00",
+    "updated_at": "2025-07-17T07:04:05.460903+00:00",
+    "openstates_url": "https://openstates.org/person/bryan-simonaire-5NehEdd0YtP1DjGPY04d0N/"
+  },
+  {
+    "id": "ocd-person/4eb57c5a-70c0-4b16-a247-53cf291bc38a",
+    "name": "Carl Jackson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:md/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Carl",
+    "family_name": "Jackson",
+    "image": "https://mgaleg.maryland.gov/2025RS/images/jackson04.jpg",
+    "email": "carl.jackson@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1984-10-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-07-27T23:20:31.870821+00:00",
+    "updated_at": "2026-01-29T06:55:29.239036+00:00",
+    "openstates_url": "https://openstates.org/person/carl-jackson-2OWL7kjq6S0oaWibg1YpBK/"
+  },
+  {
+    "id": "ocd-person/a111b899-ab75-4934-a6e9-a9c8be9bc70d",
+    "name": "Charles Sydnor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:md/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Charles",
+    "family_name": "Sydnor",
+    "image": "http://mgaleg.maryland.gov/2021RS/images/sydnor02.jpg",
+    "email": "charles.sydnor@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1974-03-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:47.607559+00:00",
+    "updated_at": "2025-07-17T07:03:39.052872+00:00",
+    "openstates_url": "https://openstates.org/person/charles-sydnor-4tvrWAalvnGvNo1irLeLmf/"
+  },
+  {
+    "id": "ocd-person/3b21ad36-c0bc-4341-9f55-c4529affc7f5",
+    "name": "Cheryl Kagan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:md/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Cheryl",
+    "family_name": "Kagan",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/kagan01.jpg",
+    "email": "cheryl.kagan@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1961-07-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:23.901185+00:00",
+    "updated_at": "2025-07-17T07:03:05.517093+00:00",
+    "openstates_url": "https://openstates.org/person/cheryl-kagan-1nZw7wC10US2uCllOtcMo1/"
+  },
+  {
+    "id": "ocd-person/99ff7e2c-87d6-49d5-b112-3807852511bc",
+    "name": "Chris West",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:md/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "West",
+    "image": "http://mgaleg.maryland.gov/2019RS/images/west02.jpg",
+    "email": "chris.west@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1950-04-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:47.449758+00:00",
+    "updated_at": "2025-07-17T07:04:02.041267+00:00",
+    "openstates_url": "https://openstates.org/person/chris-west-4gaaMs8MYNT1uO8Zqb3eF2/"
+  },
+  {
+    "id": "ocd-person/b002bdd1-0622-4462-8623-e8bb52fde504",
+    "name": "Clarence Lam",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:md/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Clarence",
+    "family_name": "Lam",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/lam01.jpg",
+    "email": "clarence.lam@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1980-11-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:38.529064+00:00",
+    "updated_at": "2026-01-29T06:55:15.671640+00:00",
+    "openstates_url": "https://openstates.org/person/clarence-lam-5M7twqRQZf939hBPkMc6a4/"
+  },
+  {
+    "id": "ocd-person/be00c352-4825-4b80-97cd-954097e3a482",
+    "name": "Cory McCray",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:md/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Cory",
+    "family_name": "McCray",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/mccray01.jpg",
+    "email": "cory.mccray@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1982-10-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:25.635953+00:00",
+    "updated_at": "2025-07-17T07:03:44.500917+00:00",
+    "openstates_url": "https://openstates.org/person/cory-mccray-5mWtEGPe2XM3GJ0UG5C6fC/"
+  },
+  {
+    "id": "ocd-person/00b4a416-e9ca-44ad-b808-58c19d6fb54a",
+    "name": "Craig Zucker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:md/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Craig",
+    "family_name": "Zucker",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/zucker01.jpg",
+    "email": "craig.zucker@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1975-03-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:37.573657+00:00",
+    "updated_at": "2025-07-17T07:03:34.576525+00:00",
+    "openstates_url": "https://openstates.org/person/craig-zucker-1KYIKavkBcCdoOwBKkTSU/"
+  },
+  {
+    "id": "ocd-person/d848993b-65e9-4ea3-ab2a-dfaf796142cc",
+    "name": "Dalya Attar",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:md/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Dalya",
+    "family_name": "Attar",
+    "image": "http://mgaleg.maryland.gov/2019RS/images/attar01.jpg",
+    "email": "dalya.attar@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1990-10-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T04:28:16.803880+00:00",
+    "updated_at": "2025-07-17T07:04:09.956552+00:00",
+    "openstates_url": "https://openstates.org/person/dalya-attar-6a7WFthmt0cugm7kAxvNeO/"
+  },
+  {
+    "id": "ocd-person/4f379062-a8ba-49af-850a-a1a358797d48",
+    "name": "Dawn Gile",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:md/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Dawn",
+    "family_name": "Gile",
+    "image": "https://mgaleg.maryland.gov/2023RS/images/gile01.jpg",
+    "email": "dawn.gile@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1980-01-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-20T00:24:25.755736+00:00",
+    "updated_at": "2025-07-17T07:03:51.380715+00:00",
+    "openstates_url": "https://openstates.org/person/dawn-gile-2PTmltWs9M8pHhM1KIliHI/"
+  },
+  {
+    "id": "ocd-person/04eec23c-719e-46b1-ae56-f34de9207e8c",
+    "name": "Guy Guzzone",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:md/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Guy",
+    "family_name": "Guzzone",
+    "image": "http://mgaleg.maryland.gov/2020RS/images/guzzone.jpg",
+    "email": "guy.guzzone@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1964-03-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:26.736009+00:00",
+    "updated_at": "2025-07-17T07:03:13.784931+00:00",
+    "openstates_url": "https://openstates.org/person/guy-guzzone-9J56ZQvv9ydaJg1XiudeW/"
+  },
+  {
+    "id": "ocd-person/72201809-94c8-4c48-a0be-18555a2d55fa",
+    "name": "J.B. Jennings",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:md/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "J.B.",
+    "family_name": "Jennings",
+    "image": "http://mgaleg.maryland.gov/2020RS/images/jennings.jpg",
+    "email": "jb.jennings@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1974-03-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:47.288602+00:00",
+    "updated_at": "2026-01-29T06:55:16.271297+00:00",
+    "openstates_url": "https://openstates.org/person/j-b-jennings-3TLn7K7e2J2jXr8sMLw2qQ/"
+  },
+  {
+    "id": "ocd-person/d6ad9dff-6f4f-48c9-8806-d651a0d86f58",
+    "name": "Jack Bailey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:md/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Bailey",
+    "image": "http://mgaleg.maryland.gov/2019RS/images/bailey01.jpg",
+    "email": "jack.bailey@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1965-08-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T04:28:33.705014+00:00",
+    "updated_at": "2026-06-04T06:59:22.952601+00:00",
+    "openstates_url": "https://openstates.org/person/jack-bailey-6X5hTawwguHd85GnmUQg9o/"
+  },
+  {
+    "id": "ocd-person/7c2a7a4b-f847-4efa-baea-2e5633acdcd5",
+    "name": "Jason Gallion",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:md/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Gallion",
+    "image": "https://mgaleg.maryland.gov/2025RS/images/gallion01.jpg",
+    "email": "jason.gallion@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1977-02-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T04:28:50.276228+00:00",
+    "updated_at": "2026-01-29T06:55:10.221053+00:00",
+    "openstates_url": "https://openstates.org/person/jason-gallion-3mISZm0HDudLAZpPzt0oxp/"
+  },
+  {
+    "id": "ocd-person/43ee08fa-dce5-4526-8242-17e3e70baad7",
+    "name": "Jeff Waldstreicher",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:md/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Waldstreicher",
+    "image": "https://mgaleg.maryland.gov/2025RS/images/waldstreicher1.jpg",
+    "email": "jeff.waldstreicher@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1979-12-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:22.937213+00:00",
+    "updated_at": "2026-01-29T06:56:07.183429+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-waldstreicher-24BGd7kierZiWzYtodRVkV/"
+  },
+  {
+    "id": "ocd-person/0867a6dd-db6b-4c2f-8748-f9b4782d9a19",
+    "name": "Jim Rosapepe",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:md/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Rosapepe",
+    "image": "http://mgaleg.maryland.gov/2019RS/images/rosapepe.jpg",
+    "email": "jim.rosapepe@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1951-05-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:23.261135+00:00",
+    "updated_at": "2026-01-29T06:56:25.285521+00:00",
+    "openstates_url": "https://openstates.org/person/jim-rosapepe-FrJ4X9Lrwalhj3X0nsaYj/"
+  },
+  {
+    "id": "ocd-person/a5a952f8-f001-4619-9056-103a1f4e4d8e",
+    "name": "Joanne Benson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:md/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Joanne",
+    "family_name": "Benson",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/benson.jpg",
+    "email": "joanne.benson@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1941-03-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:50.008886+00:00",
+    "updated_at": "2026-04-25T01:00:09.824173+00:00",
+    "openstates_url": "https://openstates.org/person/joanne-benson-52b79AJE1IJnKwKmjWgZCA/"
+  },
+  {
+    "id": "ocd-person/84e203b4-277c-4e10-aeb3-a80158bdf525",
+    "name": "Johnny Mautz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:md/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Johnny",
+    "family_name": "Mautz",
+    "image": "https://mgaleg.maryland.gov/2023RS/images/mautz02.jpg",
+    "email": "johnny.mautz@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1970-09-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:29.441829+00:00",
+    "updated_at": "2025-07-17T07:03:27.703269+00:00",
+    "openstates_url": "https://openstates.org/person/johnny-mautz-42kH7BSbl72BJ40XPdjjwz/"
+  },
+  {
+    "id": "ocd-person/6a5dec66-3631-424f-aceb-6aa9f107cea1",
+    "name": "Johnny Salling",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:md/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Johnny",
+    "family_name": "Salling",
+    "image": "http://mgaleg.maryland.gov/2020RS/images/salling01.jpg",
+    "email": "johnnyray.salling@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:47.130583+00:00",
+    "updated_at": "2025-07-17T07:03:50.911794+00:00",
+    "openstates_url": "https://openstates.org/person/johnny-salling-3Ei6o24Zdiq6UPPzxw48ht/"
+  },
+  {
+    "id": "ocd-person/eea44ceb-5bec-458e-b22e-16351c5f98f9",
+    "name": "Justin Ready",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:md/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Ready",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/ready01.jpg",
+    "email": "justin.ready@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1982-04-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:46.821323+00:00",
+    "updated_at": "2025-07-17T07:03:54.791310+00:00",
+    "openstates_url": "https://openstates.org/person/justin-ready-7GJG4vMRIpdS73PNfFTT5d/"
+  },
+  {
+    "id": "ocd-person/eebac21f-2ba7-4368-a8e9-fcc20672ad1e",
+    "name": "Karen Young",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:md/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Young",
+    "image": "https://mgaleg.maryland.gov/2023RS/images/young04.jpg",
+    "email": "karen.lewisyoung@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1951-06-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:29.605026+00:00",
+    "updated_at": "2026-04-04T00:59:16.530958+00:00",
+    "openstates_url": "https://openstates.org/person/karen-young-7GTWOrz5GhToAAOl7Z1Rdu/"
+  },
+  {
+    "id": "ocd-person/232b5c5d-87e8-4ce9-921c-8c05af96afd4",
+    "name": "Katie Hester",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:md/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Katie",
+    "family_name": "Hester",
+    "image": "http://mgaleg.maryland.gov/2019RS/images/hester01.jpg",
+    "email": "katiefry.hester@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1974-12-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T04:27:47.841335+00:00",
+    "updated_at": "2026-04-04T01:00:31.074683+00:00",
+    "openstates_url": "https://openstates.org/person/katie-hester-14MXw9WyO4a3uhBwcBGPrg/"
+  },
+  {
+    "id": "ocd-person/0b93e4f5-9d81-4c35-a9d3-04ad1375bae9",
+    "name": "Kevin Harris",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:md/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Harris",
+    "image": "https://mgaleg.maryland.gov/2026RS/images/harris03.jpg",
+    "email": "kevin.harris@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1981-10-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-20T00:24:24.447936+00:00",
+    "updated_at": "2026-06-05T06:57:43.449654+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-harris-LqVDVVrhpVorUFRyxvd2f/"
+  },
+  {
+    "id": "ocd-person/6c4c1b4d-7c32-4d2b-83ab-d207f92e1818",
+    "name": "Malcolm Augustine",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:md/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Malcolm",
+    "family_name": "Augustine",
+    "image": "http://mgaleg.maryland.gov/2019RS/images/augustine01.jpg",
+    "email": "malcolm.augustine@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1969-03-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T04:28:44.403806+00:00",
+    "updated_at": "2025-07-17T07:03:46.489865+00:00",
+    "openstates_url": "https://openstates.org/person/malcolm-augustine-3ILx24JjrunMaEYbsQGw2K/"
+  },
+  {
+    "id": "ocd-person/6e819331-2ab7-4a58-be19-1585dc2872ff",
+    "name": "Mary Beth Carozza",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:md/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Mary Beth",
+    "family_name": "Carozza",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/carozza01.jpg",
+    "email": "marybeth.carozza@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1961-02-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:24.224714+00:00",
+    "updated_at": "2025-07-17T07:04:07.948986+00:00",
+    "openstates_url": "https://openstates.org/person/mary-beth-carozza-3MWN3YxQKcLiOMqcTCbS8d/"
+  },
+  {
+    "id": "ocd-person/0bdef1bb-ea31-4a27-937c-eb680ae67343",
+    "name": "Mary Washington",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:md/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Washington",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/washington.jpg",
+    "email": "mary.washington@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1962-05-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:42.738830+00:00",
+    "updated_at": "2026-01-29T06:56:01.895236+00:00",
+    "openstates_url": "https://openstates.org/person/mary-washington-MOngdYD7AECvWKRhhoU1D/"
+  },
+  {
+    "id": "ocd-person/72a5c405-0523-4ea4-9029-024c49d76cb3",
+    "name": "Mary-Dulany James",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:md/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Mary-Dulany",
+    "family_name": "James",
+    "image": "https://mgaleg.maryland.gov/2023RS/images/james01.jpg",
+    "email": "marydulany.james@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1960-02-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-20T00:24:26.827628+00:00",
+    "updated_at": "2025-07-17T07:03:11.303120+00:00",
+    "openstates_url": "https://openstates.org/person/mary-dulany-james-3UKsaJGlBKmKucepKT1Qsl/"
+  },
+  {
+    "id": "ocd-person/5bdf592a-c502-4b60-8799-8ed681950475",
+    "name": "Mike McKay",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:md/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "McKay",
+    "image": "https://mgaleg.maryland.gov/2023RS/images/mckay02.jpg",
+    "email": "mike.mckay@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1969-03-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:43.867583+00:00",
+    "updated_at": "2025-07-17T07:03:20.305162+00:00",
+    "openstates_url": "https://openstates.org/person/mike-mckay-2nMN4o1Ry2bMWT7O0r8QlR/"
+  },
+  {
+    "id": "ocd-person/92f41e40-4782-4c52-81a1-de8f78e05ab1",
+    "name": "Nancy King",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:md/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Nancy",
+    "family_name": "King",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/king.jpg",
+    "email": "nancy.king@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1949-10-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:24.534564+00:00",
+    "updated_at": "2026-01-29T06:55:32.011886+00:00",
+    "openstates_url": "https://openstates.org/person/nancy-king-4TIRPG25BMByEP73LhnhLd/"
+  },
+  {
+    "id": "ocd-person/23c9c495-1fe1-4258-bb15-7f1183ffc4fe",
+    "name": "Nick Charles",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:md/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Charles",
+    "image": "https://mgaleg.maryland.gov/2024RS/images/charles02.jpg",
+    "email": "nick.charles@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1982-12-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T04:28:29.508188+00:00",
+    "updated_at": "2025-07-17T07:03:43.030023+00:00",
+    "openstates_url": "https://openstates.org/person/nick-charles-15WwFwnNUFNtVDWimX4ahK/"
+  },
+  {
+    "id": "ocd-person/15921e4d-a07c-4ad7-863c-1d8dfd2d6725",
+    "name": "Pam Beidle",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:md/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Pam",
+    "family_name": "Beidle",
+    "image": "https://mgaleg.maryland.gov/2025RS/images/beidle01.jpg",
+    "email": "pamela.beidle@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1951-07-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:35.437809+00:00",
+    "updated_at": "2026-01-29T06:56:14.688464+00:00",
+    "openstates_url": "https://openstates.org/person/pam-beidle-ehc8dJZyz01X0ZVceveU9/"
+  },
+  {
+    "id": "ocd-person/6605f7aa-80cb-4ee0-8d0d-18cff943f158",
+    "name": "Paul Corderman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:md/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Corderman",
+    "image": "http://mgaleg.maryland.gov/2018RS/images/corderman01.jpg",
+    "email": "paul.corderman@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1977-09-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:21.331943+00:00",
+    "updated_at": "2025-07-17T07:02:40.060322+00:00",
+    "openstates_url": "https://openstates.org/person/paul-corderman-36VwYahUXzTVrW1s6dXR5E/"
+  },
+  {
+    "id": "ocd-person/177ee919-8310-4485-9b07-041cd83b2947",
+    "name": "Ron Watson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:md/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Watson",
+    "image": "http://mgaleg.maryland.gov/2019RS/images/watson03.jpg",
+    "email": "ron.watson@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1966-04-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T04:28:24.777685+00:00",
+    "updated_at": "2025-07-17T07:03:50.378745+00:00",
+    "openstates_url": "https://openstates.org/person/ron-watson-iKox0S09403E5u63682rf/"
+  },
+  {
+    "id": "ocd-person/b9f21b96-4bb5-43e8-a5d8-19cec0332315",
+    "name": "Sara Love",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:md/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Sara",
+    "family_name": "Love",
+    "image": "https://mgaleg.maryland.gov/2024RS/images/love02.jpg",
+    "email": "sara.love@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1967-04-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T04:28:10.380736+00:00",
+    "updated_at": "2025-07-17T07:03:42.011892+00:00",
+    "openstates_url": "https://openstates.org/person/sara-love-5esDtFA07tzf9MZ0sopsvd/"
+  },
+  {
+    "id": "ocd-person/be45d2a1-057a-49ea-a810-5317478c26b1",
+    "name": "Shaneka Henson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:md/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Shaneka",
+    "family_name": "Henson",
+    "image": "https://mgaleg.maryland.gov/2025RS/images/henson02.jpg",
+    "email": "shaneka.henson@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1983-07-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-07-27T23:20:26.187162+00:00",
+    "updated_at": "2025-07-17T07:03:31.174950+00:00",
+    "openstates_url": "https://openstates.org/person/shaneka-henson-5n2RyUuRpZXAq0ktpI3UO1/"
+  },
+  {
+    "id": "ocd-person/77cad368-7e81-4ff2-91d8-62ecacd38fe7",
+    "name": "Shelly Hettleman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:md/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Shelly",
+    "family_name": "Hettleman",
+    "image": "https://mgaleg.maryland.gov/2025RS/images/hettleman02.jpg",
+    "email": "shelly.hettleman@senate.maryland.gov",
+    "gender": "Female",
+    "birth_date": "1964-08-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:40.315010+00:00",
+    "updated_at": "2026-01-29T06:55:20.385490+00:00",
+    "openstates_url": "https://openstates.org/person/shelly-hettleman-3e2mGoLIlqpf6f2t74oSON/"
+  },
+  {
+    "id": "ocd-person/2271e390-772d-440c-9601-f72ed997092b",
+    "name": "Steve Hershey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:md/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Hershey",
+    "image": "https://mgaleg.maryland.gov/2025RS/images/hershey.jpg",
+    "email": "steve.hershey@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1964-05-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:40.798756+00:00",
+    "updated_at": "2026-01-29T06:55:34.031598+00:00",
+    "openstates_url": "https://openstates.org/person/steve-hershey-12zmlJBI1utCxiB7xTIzTH/"
+  },
+  {
+    "id": "ocd-person/6e1c09ac-57e7-4a54-bd83-74905670ad7f",
+    "name": "Will Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:md/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Smith",
+    "image": "http://mgaleg.maryland.gov/2017RS/images/smith02.jpg",
+    "email": "will.smith@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1982-02-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:29.286289+00:00",
+    "updated_at": "2025-07-17T07:02:46.997566+00:00",
+    "openstates_url": "https://openstates.org/person/will-smith-3Lly5smr1Coac2OIoUaAgh/"
+  },
+  {
+    "id": "ocd-person/d8938e62-87cd-420e-a009-f78a418ed138",
+    "name": "William Folden",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:md/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:md/government",
+      "name": "Maryland",
+      "classification": "state"
+    },
+    "given_name": "William",
+    "family_name": "Folden",
+    "image": "http://mgaleg.maryland.gov/2016RS/images/folden01.jpg",
+    "email": "william.folden@senate.maryland.gov",
+    "gender": "Male",
+    "birth_date": "1972-04-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:47:33.976219+00:00",
+    "updated_at": "2025-07-17T07:03:57.175411+00:00",
+    "openstates_url": "https://openstates.org/person/william-folden-6afm6vmKq4ytWEMnARUdBo/"
+  }
+]

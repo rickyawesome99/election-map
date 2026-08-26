@@ -1,0 +1,1050 @@
+[
+  {
+    "id": "ocd-person/50f75f0e-328c-413c-8733-de2872c5b7b0",
+    "name": "Anne Carney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:me/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Anne",
+    "family_name": "Carney",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/carney-web-1-1024x854.jpg",
+    "email": "anne.carney@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county represented": "Cumberland"
+    },
+    "created_at": "2019-01-05T07:43:09.498371+00:00",
+    "updated_at": "2025-03-29T01:01:46.910292+00:00",
+    "openstates_url": "https://openstates.org/person/anne-carney-2SmQylhiNKdNGXY7VrIP6u/"
+  },
+  {
+    "id": "ocd-person/72193c8f-2b94-4e56-bff4-482bde6037eb",
+    "name": "Brad Farrin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:me/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Farrin",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/farrin-bradlee-1.jpg",
+    "email": "brad.farrin@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "alternate phone": "634-3074",
+      "county represented": "Somerset"
+    },
+    "created_at": "2019-01-05T07:44:36.641776+00:00",
+    "updated_at": "2025-03-29T01:02:50.153126+00:00",
+    "openstates_url": "https://openstates.org/person/brad-farrin-3TIeox4kgjTpI5RpgdeRgZ/"
+  },
+  {
+    "id": "ocd-person/0b3965de-8fe2-42b4-bc21-115d6b2b470f",
+    "name": "Bruce Bickford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:me/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Bruce",
+    "family_name": "Bickford",
+    "image": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/6512eb18-497f-48cf-8e14-5c46c8827181_bickba.jpg",
+    "email": "bruce.bickford@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "1955-10-11",
+    "death_date": "",
+    "extras": {
+      "education": "High School",
+      "Cell Phone": "(207) 740-0328",
+      "occupation": "Retired",
+      "Seat Number": "132",
+      "towns represented": [
+        "Auburn (Part)"
+      ]
+    },
+    "created_at": "2018-10-18T14:48:19.123560+00:00",
+    "updated_at": "2025-03-29T01:01:29.385926+00:00",
+    "openstates_url": "https://openstates.org/person/bruce-bickford-LB95EW5YxWbCbQYAD3bQt/"
+  },
+  {
+    "id": "ocd-person/38a3d5d7-cc62-4479-bfba-03d40099e7cd",
+    "name": "Cameron Reny",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:me/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Cameron",
+    "family_name": "Reny",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/reny-2.jpg",
+    "email": "cameron.reny@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional address": "P.O.B 156, Round Pond, 04564"
+    },
+    "created_at": "2023-01-03T00:46:32.126477+00:00",
+    "updated_at": "2026-06-04T07:03:34.959309+00:00",
+    "openstates_url": "https://openstates.org/person/cameron-reny-1isRTu8BOythIls1hlo6EH/"
+  },
+  {
+    "id": "ocd-person/6d397c09-c2d3-41ff-b33a-c42efae4f187",
+    "name": "Chip Curry",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:me/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Chip",
+    "family_name": "Curry",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/chipcurry-web-1024x683.jpg",
+    "email": "chip.curry@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county represented": "Waldo"
+    },
+    "created_at": "2020-12-09T06:08:52.555359+00:00",
+    "updated_at": "2025-03-29T01:02:42.453520+00:00",
+    "openstates_url": "https://openstates.org/person/chip-curry-3K6QuqIAC8XqhmwUWH7gIh/"
+  },
+  {
+    "id": "ocd-person/5a475e6f-5277-425e-bb09-1c55facbc736",
+    "name": "Craig Hickman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:me/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Craig",
+    "family_name": "Hickman",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/hickman-1024x1024.jpg",
+    "email": "craig.hickman@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "1967-12-08",
+    "death_date": "",
+    "extras": {
+      "county represented": "Kennebec"
+    },
+    "created_at": "2021-03-23T00:10:24.535675+00:00",
+    "updated_at": "2025-03-29T01:02:09.471348+00:00",
+    "openstates_url": "https://openstates.org/person/craig-hickman-2kLvM5S6s1xHTpko05Ee98/"
+  },
+  {
+    "id": "ocd-person/b3f3ab98-9169-42f8-b7d7-c04b3bdfb545",
+    "name": "David Haggan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:me/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Haggan",
+    "image": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/ef1b37a7-5997-414d-9ae4-6f38e8f619d8_haggdg.jpg",
+    "email": "david.haggan@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "UMO",
+      "occupation": "Teacher, Social Studies Middle School",
+      "Seat Number": "65",
+      "towns represented": [
+        "Hampden",
+        "Newburgh"
+      ]
+    },
+    "created_at": "2018-10-18T14:48:29.120013+00:00",
+    "updated_at": "2025-07-17T07:07:20.124088+00:00",
+    "openstates_url": "https://openstates.org/person/david-haggan-5TYz18fBnqXJdXqAxC55Qj/"
+  },
+  {
+    "id": "ocd-person/0321d169-de06-4377-8cd5-6cdb51471393",
+    "name": "Denise Tepler",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:me/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Denise",
+    "family_name": "Tepler",
+    "image": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/da8c36fc-c7af-419a-b9a9-a0b4080be157_teplda[1].jpg",
+    "email": "denise.tepler@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "1956-05-15",
+    "death_date": "",
+    "extras": {
+      "occupation": "Freelance Teacher/Writer",
+      "Seat Number": "90",
+      "towns represented": [
+        "Topsham"
+      ]
+    },
+    "created_at": "2018-10-18T14:48:18.027892+00:00",
+    "updated_at": "2025-07-17T07:07:25.601639+00:00",
+    "openstates_url": "https://openstates.org/person/denise-tepler-5uQm4LEwtnc8lJPq7Ujbf/"
+  },
+  {
+    "id": "ocd-person/ec504278-9872-4842-a99c-80b31e563707",
+    "name": "Dick Bradstreet",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:me/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Dick",
+    "family_name": "Bradstreet",
+    "image": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/25f23c49-eaab-420a-8fdd-b4d2afb931bc_bradrt.jpg",
+    "email": "dick.bradstreet@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Dartmouth",
+      "occupation": "Semi-Retired - Part Time Association Executive Director",
+      "Seat Number": "21",
+      "towns represented": [
+        "Sidney (Part)",
+        "Vassalboro"
+      ]
+    },
+    "created_at": "2018-10-18T14:48:30.816226+00:00",
+    "updated_at": "2025-03-13T06:58:25.988491+00:00",
+    "openstates_url": "https://openstates.org/person/dick-bradstreet-7BuroKe6pOkwC2pqQmC8vv/"
+  },
+  {
+    "id": "ocd-person/d071215f-4839-4c4c-ab4d-f3c7179004a6",
+    "name": "Donna Bailey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:me/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Donna",
+    "family_name": "Bailey",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/bailey-donna-6.jpg",
+    "email": "donna.bailey@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county represented": "York"
+    },
+    "created_at": "2018-10-18T14:48:14.902000+00:00",
+    "updated_at": "2025-03-29T01:02:33.229582+00:00",
+    "openstates_url": "https://openstates.org/person/donna-bailey-6LK6UadpP4XsXnSzLF1Q2w/"
+  },
+  {
+    "id": "ocd-person/050d357e-3b22-4647-942f-56c9d8755194",
+    "name": "Henry Ingwersen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:me/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Henry",
+    "family_name": "Ingwersen",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/ingwersen-1024x1024.jpg",
+    "email": "henry.ingwersen@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "1951-01-04",
+    "death_date": "",
+    "extras": {
+      "Additional address": ""
+    },
+    "created_at": "2023-01-03T00:46:33.426392+00:00",
+    "updated_at": "2025-03-13T06:57:41.611863+00:00",
+    "openstates_url": "https://openstates.org/person/henry-ingwersen-9WzsrykgTfr6D8SpSeeii/"
+  },
+  {
+    "id": "ocd-person/3ef077c6-482d-4dc2-92ef-69ac2a09bf06",
+    "name": "Jeff Timberlake",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:me/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Timberlake",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/timberlake-jeff-3.jpg",
+    "email": "jeffrey.timberlake@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional address": ""
+    },
+    "created_at": "2018-10-18T14:48:10.714917+00:00",
+    "updated_at": "2025-03-29T01:02:48.607053+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-timberlake-1ulPwJcYq3TXTUsEUCDjTq/"
+  },
+  {
+    "id": "ocd-person/c2268745-e66c-42d5-93bf-3b52819006e9",
+    "name": "Jill Duson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:me/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Jill",
+    "family_name": "Duson",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/duson-3.jpg",
+    "email": "jill.duson@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional address": ""
+    },
+    "created_at": "2023-01-03T00:48:26.000922+00:00",
+    "updated_at": "2025-03-13T06:58:20.196447+00:00",
+    "openstates_url": "https://openstates.org/person/jill-duson-5uM7NJRNn6zPrEbj4dV1bt/"
+  },
+  {
+    "id": "ocd-person/32c9dbd7-beb7-481e-b0f4-22f3eaa00e50",
+    "name": "Jim Libby",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:me/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Libby",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/libby-1.jpg",
+    "email": "james.libby@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "1960-11-14",
+    "death_date": "",
+    "extras": {
+      "Additional address": ""
+    },
+    "created_at": "2023-01-03T00:49:12.387416+00:00",
+    "updated_at": "2026-01-31T02:42:28.046056+00:00",
+    "openstates_url": "https://openstates.org/person/jim-libby-1Xprh8XqlnZbvap9UKT3zc/"
+  },
+  {
+    "id": "ocd-person/34231d57-22e2-4f2f-be41-d2734fa6211f",
+    "name": "Joe Baldacci",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:me/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Baldacci",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/baldacci-1024x683.jpg",
+    "email": "joe.baldacci@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "1965-02-21",
+    "death_date": "",
+    "extras": {
+      "Additional address": "P.O. Box 1423, Bangor, ME 04402"
+    },
+    "created_at": "2020-12-09T06:08:48.615650+00:00",
+    "updated_at": "2026-06-04T07:03:26.548666+00:00",
+    "openstates_url": "https://openstates.org/person/joe-baldacci-1aNeCXuJMS9vHEqd0avZ1T/"
+  },
+  {
+    "id": "ocd-person/8f4aa04f-f106-456f-a09f-e901c78939b6",
+    "name": "Joe Martin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:me/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Martin",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JoeMartin2024.jpg",
+    "email": "joseph.martin@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-06T21:08:20.024620+00:00",
+    "updated_at": "2026-06-04T07:03:22.488820+00:00",
+    "openstates_url": "https://openstates.org/person/joe-martin-4MO0R356cgjfnuTItkWQHm/"
+  },
+  {
+    "id": "ocd-person/8c2c2996-5a72-4c9a-a0d9-958099f3a304",
+    "name": "Joe Rafferty",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:me/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Rafferty",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/rafferty-1.jpg",
+    "email": "joe.rafferty@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "alternate phone": "985-8527",
+      "county represented": "York"
+    },
+    "created_at": "2020-12-09T06:08:58.246861+00:00",
+    "updated_at": "2025-03-29T01:02:36.464054+00:00",
+    "openstates_url": "https://openstates.org/person/joe-rafferty-4GV6hR9g4Y8tgUzH3dZndM/"
+  },
+  {
+    "id": "ocd-person/24bd9e6e-f10d-4e0d-a4b1-72bbe45f4e0d",
+    "name": "Marianne Moore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:me/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Marianne",
+    "family_name": "Moore",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/moore-5x7.jpg",
+    "email": "marianne.moore@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "alternate phone": "454-0501",
+      "county represented": "Washington"
+    },
+    "created_at": "2019-01-05T07:43:25.748047+00:00",
+    "updated_at": "2025-07-17T07:06:37.148493+00:00",
+    "openstates_url": "https://openstates.org/person/marianne-moore-17KNY6zUBPK9w5IbnFlEHV/"
+  },
+  {
+    "id": "ocd-person/ce4a4a85-e41d-410f-bfba-07f7f5b9dee0",
+    "name": "Mark Lawrence",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:me/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Lawrence",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/lawrence-5x7-1.jpg",
+    "email": "mark.lawrence@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "1958-06-27",
+    "death_date": "",
+    "extras": {
+      "county represented": "York"
+    },
+    "created_at": "2019-01-05T07:44:41.367707+00:00",
+    "updated_at": "2026-01-31T02:43:29.713066+00:00",
+    "openstates_url": "https://openstates.org/person/mark-lawrence-6HGMy9zMDLNBG98pDcHKN6/"
+  },
+  {
+    "id": "ocd-person/f4b39a4f-3a31-4e15-9b0a-459cb260f535",
+    "name": "Matt Harrington",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:me/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Harrington",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/harrington-matt.jpg",
+    "email": "matthew.harrington@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional address": "P.O.B. 457, Sanford, ME 04073"
+    },
+    "created_at": "2018-10-18T14:48:17.233673+00:00",
+    "updated_at": "2025-05-15T00:59:00.191788+00:00",
+    "openstates_url": "https://openstates.org/person/matt-harrington-7RkCni81md4ErX9HjgENAT/"
+  },
+  {
+    "id": "ocd-person/863a9ef0-5916-40d6-9929-7a7b498af0ec",
+    "name": "Mattie Daughtry",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:me/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Mattie",
+    "family_name": "Daughtry",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/daughtry-matthea-2.jpg",
+    "email": "mattie.daughtry@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county represented": "Cumberland"
+    },
+    "created_at": "2018-10-18T14:48:07.874622+00:00",
+    "updated_at": "2026-01-31T02:42:38.261487+00:00",
+    "openstates_url": "https://openstates.org/person/mattie-daughtry-45HlDfnRSf4mWVBxqvJxLo/"
+  },
+  {
+    "id": "ocd-person/a18c5356-5572-4a99-8a7c-e86105afb821",
+    "name": "Mike Tipping",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:me/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Tipping",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/tipping-1.jpg",
+    "email": "mike.tipping@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional address": ""
+    },
+    "created_at": "2023-01-03T00:47:26.112896+00:00",
+    "updated_at": "2026-06-04T07:03:16.452179+00:00",
+    "openstates_url": "https://openstates.org/person/mike-tipping-4uptOyUUFwJrjLmRG8mED3/"
+  },
+  {
+    "id": "ocd-person/e53a09e6-a38e-4622-97e4-c40bf2d93faa",
+    "name": "Nicole Grohoski",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:me/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Nicole",
+    "family_name": "Grohoski",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/senator-grohoski-photo-web.jpg",
+    "email": "nicole.grohoski@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional address": "P.O.B. 1732, Ellsworth, ME 04605"
+    },
+    "created_at": "2019-01-05T07:43:47.938025+00:00",
+    "updated_at": "2025-03-13T06:59:11.366988+00:00",
+    "openstates_url": "https://openstates.org/person/nicole-grohoski-6yXlWv6cn9ExMqsglB7dzm/"
+  },
+  {
+    "id": "ocd-person/062977a2-a482-4c4f-b053-75cae4bdce31",
+    "name": "Peggy Rotundo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:me/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Peggy",
+    "family_name": "Rotundo",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/rotundo.jpg",
+    "email": "margaret.rotundo@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "1949-07-16",
+    "death_date": "",
+    "extras": {
+      "Additional address": ""
+    },
+    "created_at": "2023-01-03T00:46:36.074970+00:00",
+    "updated_at": "2025-03-13T06:58:04.856329+00:00",
+    "openstates_url": "https://openstates.org/person/peggy-rotundo-Bcu5DMsY1JOMwIhBr5OcL/"
+  },
+  {
+    "id": "ocd-person/db11e611-94a4-4451-8486-f941a532789d",
+    "name": "Pinny Beebe-Center",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:me/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Pinny",
+    "family_name": "Beebe-Center",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/beebe-center-1024x1024.jpg",
+    "email": "anne.beebe-center@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional address": ""
+    },
+    "created_at": "2023-01-03T00:48:13.976638+00:00",
+    "updated_at": "2026-06-04T07:02:29.582191+00:00",
+    "openstates_url": "https://openstates.org/person/pinny-beebe-center-6fNUxT3PFe458lyPnEpkIX/"
+  },
+  {
+    "id": "ocd-person/a3fd29b8-0e0e-4559-a71f-6f7cf20be60f",
+    "name": "Rachel Talbot Ross",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:me/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Rachel",
+    "family_name": "Talbot Ross",
+    "image": "https://legislature.maine.gov/house/house/Repository/MemberProfiles/5a851e9e-6f42-4467-adb4-dbfc44dee0ad_talbr_[1].jpg",
+    "email": "rachel.talbotross@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Executive Director",
+      "Seat Number": "155",
+      "towns represented": [
+        "Portland (Part)"
+      ]
+    },
+    "created_at": "2018-10-18T14:48:33.802826+00:00",
+    "updated_at": "2025-03-13T06:57:59.422350+00:00",
+    "openstates_url": "https://openstates.org/person/rachel-talbot-ross-4zRRax5iRHE1GzXTiRhRKp/"
+  },
+  {
+    "id": "ocd-person/4276be86-7dfa-4817-9792-52622b93ff40",
+    "name": "Rick Bennett",
+    "party": "Independent",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:me/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Bennett",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/bennett-5x7.jpg",
+    "email": "richard.bennett@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "1963-05-24",
+    "death_date": "",
+    "extras": {
+      "county represented": "Oxford"
+    },
+    "created_at": "2020-12-09T06:08:51.805496+00:00",
+    "updated_at": "2026-01-31T02:43:17.646436+00:00",
+    "openstates_url": "https://openstates.org/person/rick-bennett-21Pl6rbkvCpGIuSP2LjGGu/"
+  },
+  {
+    "id": "ocd-person/fa3e8ae3-757e-44fb-9451-6bf381d748ce",
+    "name": "Russell Black",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:me/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Russell",
+    "family_name": "Black",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/black-5x7.jpg",
+    "email": "russell.black@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county represented": "Franklin"
+    },
+    "created_at": "2018-10-18T14:48:30.348104+00:00",
+    "updated_at": "2025-03-29T01:02:19.480670+00:00",
+    "openstates_url": "https://openstates.org/person/russell-black-7cCf9VbXSbD5GVVclqUgiE/"
+  },
+  {
+    "id": "ocd-person/73dfc0b1-9ce4-4d8e-8119-1dc7396fbb2c",
+    "name": "Scott Cyrway",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:me/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Cyrway",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/cyrway-5x7-1.jpg",
+    "email": "scott.cyrway@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "University of Maine",
+      "occupation": "Deputy Sheriff",
+      "Seat Number": "14",
+      "towns represented": [
+        "Unity Township",
+        "Winslow (Part)",
+        "Albion",
+        "Freedom"
+      ]
+    },
+    "created_at": "2018-10-18T14:48:25.090821+00:00",
+    "updated_at": "2025-03-29T01:02:29.874885+00:00",
+    "openstates_url": "https://openstates.org/person/scott-cyrway-3WeN7LDkk2rPsChTadWCHk/"
+  },
+  {
+    "id": "ocd-person/3439fe0c-fb43-4977-ac8c-1dd1f8f10e96",
+    "name": "Stacey Guerin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:me/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Stacey",
+    "family_name": "Guerin",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/guerin-headshot-outdoors-rgb.jpg",
+    "email": "stacey.guerin@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county represented": "Penobscot"
+    },
+    "created_at": "2018-10-18T14:48:22.770940+00:00",
+    "updated_at": "2025-05-15T00:58:31.818434+00:00",
+    "openstates_url": "https://openstates.org/person/stacey-guerin-1aY6QECoPKhhWwo5zepubu/"
+  },
+  {
+    "id": "ocd-person/b060c143-2734-491d-b28f-f6e4e2c77cb8",
+    "name": "Stacy Brenner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:me/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Stacy",
+    "family_name": "Brenner",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/brenner-1022x1024.jpg",
+    "email": "stacy.brenner@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county represented": "Cumberland"
+    },
+    "created_at": "2020-12-09T06:08:56.169661+00:00",
+    "updated_at": "2025-03-29T01:01:59.087629+00:00",
+    "openstates_url": "https://openstates.org/person/stacy-brenner-5MorjVJhG2oVG3OSHsmEqe/"
+  },
+  {
+    "id": "ocd-person/2c0651f3-bbea-49c8-9da3-a713953ff4d8",
+    "name": "Sue Bernard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:me/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Sue",
+    "family_name": "Bernard",
+    "image": "",
+    "email": "susan.bernard@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-06T21:08:29.882145+00:00",
+    "updated_at": "2025-05-15T00:58:40.108556+00:00",
+    "openstates_url": "https://openstates.org/person/sue-bernard-1L4Y8rVKE2VEbXUdQ3Z492/"
+  },
+  {
+    "id": "ocd-person/0d692e7b-535a-498b-8072-a258806fecb4",
+    "name": "Teresa Pierce",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:me/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Teresa",
+    "family_name": "Pierce",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/pierce-web-748x1024.jpg",
+    "email": "teresa.pierce@legislature.maine.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional address": ""
+    },
+    "created_at": "2018-10-18T14:48:29.872011+00:00",
+    "updated_at": "2025-03-29T01:01:38.641208+00:00",
+    "openstates_url": "https://openstates.org/person/teresa-pierce-PIy2NrMd036mBsmeNfhrA/"
+  },
+  {
+    "id": "ocd-person/2715d740-16c6-49ec-9224-d3d9a24e47ee",
+    "name": "Tim Nangle",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:me/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Nangle",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/nangle.jpg",
+    "email": "timothy.nangle@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional address": ""
+    },
+    "created_at": "2023-01-03T00:49:32.556170+00:00",
+    "updated_at": "2026-06-04T07:04:19.401431+00:00",
+    "openstates_url": "https://openstates.org/person/tim-nangle-1BkgHkFKeRFxrEemPw8HpG/"
+  },
+  {
+    "id": "ocd-person/bd417e77-81d9-4e60-8b2a-b940da10bc37",
+    "name": "Trey Stewart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:me/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:me/government",
+      "name": "Maine",
+      "classification": "state"
+    },
+    "given_name": "Trey",
+    "family_name": "Stewart",
+    "image": "https://legislature.maine.gov/uploads/visual_edit/stewart-harold-trey-1.jpg",
+    "email": "trey.stewart@legislature.maine.gov",
+    "gender": "Male",
+    "birth_date": "1994-02-07",
+    "death_date": "",
+    "extras": {
+      "county represented": "Aroostook"
+    },
+    "created_at": "2018-10-18T14:48:14.732535+00:00",
+    "updated_at": "2025-07-17T07:07:00.991499+00:00",
+    "openstates_url": "https://openstates.org/person/trey-stewart-5l7TnbgDA1sZgDlm0U4Opz/"
+  }
+]

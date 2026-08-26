@@ -2,8 +2,12 @@
 /**
  * Merges per-state state-legislative district GeoJSON (converted from Census TIGER SLDL/SLDU
  * shapefiles via ogr2ogr, or from a state's own GIS source when TIGER is stale) into the two
- * national files consumed by StateLegDistrictMap.tsx: public/state-house-districts-2026.json
- * and public/state-senate-districts-2026.json.
+ * combined national source files: data-entry/state-leg-districts-2026-source/state-house-
+ * districts-2026.json and state-senate-districts-2026.json.
+ *
+ * These combined files are the source of truth but aren't served directly — StateLegDistrictMap.tsx
+ * fetches per-state TopoJSON from public/state-leg-districts/. After running this script, rerun
+ * scripts/split-state-leg-districts.mjs to regenerate those per-state files.
  *
  * Usage: node scripts/build-state-leg-districts.mjs <manifest.json>
  * manifest.json: [{ "file": "path/to/state.geojson", "chamber": "house"|"senate", "stateFips": "39",
@@ -19,8 +23,8 @@ import { join } from "path";
 import { tmpdir } from "os";
 
 const OUT_FILES = {
-  house: "public/state-house-districts-2026.json",
-  senate: "public/state-senate-districts-2026.json",
+  house: "data-entry/state-leg-districts-2026-source/state-house-districts-2026.json",
+  senate: "data-entry/state-leg-districts-2026-source/state-senate-districts-2026.json",
 };
 
 function normalizeFeature(feature, stateFips, source, customFields) {

@@ -1,0 +1,583 @@
+[
+  {
+    "id": "ocd-person/bfdc2ee2-7760-4119-9d68-4962f1e1a285",
+    "name": "Bert Stedman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "A",
+      "division_id": "ocd-division/country:us/state:ak/sldu:a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Bert",
+    "family_name": "Stedman",
+    "image": "http://akleg.gov/images/legislators/450x600/SMN.jpg",
+    "email": "senator.bert.stedman@akleg.gov",
+    "gender": "Male",
+    "birth_date": "1956-03-06",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "877-463-3873"
+    },
+    "created_at": "2018-10-18T14:32:52.200483+00:00",
+    "updated_at": "2025-03-29T00:02:25.502375+00:00",
+    "openstates_url": "https://openstates.org/person/bert-stedman-5q29p0nmv38qscr06wazcT/"
+  },
+  {
+    "id": "ocd-person/57554431-caac-4074-a8d8-40a4e6289ec1",
+    "name": "Bill Wielechowski",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "K",
+      "division_id": "ocd-division/country:us/state:ak/sldu:k"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Wielechowski",
+    "image": "http://akleg.gov/images/legislators/450x600/WIE.jpg",
+    "email": "senator.bill.wielechowski@akleg.gov",
+    "gender": "Male",
+    "birth_date": "1967-12-07",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "800-550-2435"
+    },
+    "created_at": "2018-10-18T14:32:52.527012+00:00",
+    "updated_at": "2025-03-29T00:02:03.103154+00:00",
+    "openstates_url": "https://openstates.org/person/bill-wielechowski-2enIYUHMl8XWNTViDv5AcT/"
+  },
+  {
+    "id": "ocd-person/4ac9a4bf-e2d9-4257-a360-9e91dc234deb",
+    "name": "Cathy Giessel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "E",
+      "division_id": "ocd-division/country:us/state:ak/sldu:e"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Cathy",
+    "family_name": "Giessel",
+    "image": "http://akleg.gov/images/legislators/450x600/GIE.jpg",
+    "email": "senator.cathy.giessel@akleg.gov",
+    "gender": "Female",
+    "birth_date": "1951-11-09",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Leader",
+      "toll_free_phone": "800-892-4843"
+    },
+    "created_at": "2018-10-18T14:32:58.402932+00:00",
+    "updated_at": "2025-03-29T00:02:27.094859+00:00",
+    "openstates_url": "https://openstates.org/person/cathy-giessel-2H7aBCH3wZa7HvLNMowEah/"
+  },
+  {
+    "id": "ocd-person/f1816065-31d1-4757-b8b9-714e15daeccf",
+    "name": "Cathy Tilton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "M",
+      "division_id": "ocd-division/country:us/state:ak/sldu:m"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Cathy",
+    "family_name": "Tilton",
+    "image": "http://akleg.gov/images/legislators/450x600/TLT.jpg",
+    "email": "senator.cathy.tilton@akleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker",
+      "toll_free_phone": "800-342-2199"
+    },
+    "created_at": "2018-10-18T14:32:57.483210+00:00",
+    "updated_at": "2026-01-29T00:01:05.747893+00:00",
+    "openstates_url": "https://openstates.org/person/cathy-tilton-7LiH78N3oCAq1NWQSZoEGN/"
+  },
+  {
+    "id": "ocd-person/cd3ca264-553d-4e21-a993-e3f5097b1b77",
+    "name": "Donny Olson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "T",
+      "division_id": "ocd-division/country:us/state:ak/sldu:t"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Donny",
+    "family_name": "Olson",
+    "image": "http://akleg.gov/images/legislators/450x600/OLS.jpg",
+    "email": "senator.donald.olson@akleg.gov",
+    "gender": "Male",
+    "birth_date": "1953-06-18",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "800-597-3707"
+    },
+    "created_at": "2018-10-18T14:32:59.609461+00:00",
+    "updated_at": "2025-03-29T00:02:08.045298+00:00",
+    "openstates_url": "https://openstates.org/person/donny-olson-6FH8Ue37yxIOa0rA1n2A1n/"
+  },
+  {
+    "id": "ocd-person/2ba2d14f-a08a-4f05-a9d4-5ca63d09561e",
+    "name": "Elvi Gray-Jackson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "G",
+      "division_id": "ocd-division/country:us/state:ak/sldu:g"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Elvi",
+    "family_name": "Gray-Jackson",
+    "image": "http://akleg.gov/images/legislators/450x600/GRA.jpg",
+    "email": "senator.elvi.gray-jackson@akleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "800-331-4930"
+    },
+    "created_at": "2019-02-07T03:28:50.896208+00:00",
+    "updated_at": "2025-03-29T00:02:11.357233+00:00",
+    "openstates_url": "https://openstates.org/person/elvi-gray-jackson-1KL4pWpS9y7bxMNgcHDIf0/"
+  },
+  {
+    "id": "ocd-person/4511370e-1ac8-4135-a622-d5b533faeb43",
+    "name": "Forrest Dunbar",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "J",
+      "division_id": "ocd-division/country:us/state:ak/sldu:j"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Forrest",
+    "family_name": "Dunbar",
+    "image": "http://akleg.gov/images/legislators/450x600/DNB.jpg",
+    "email": "senator.forrest.dunbar@akleg.gov",
+    "gender": "Male",
+    "birth_date": "1984-09-19",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "800-770-3822"
+    },
+    "created_at": "2023-01-26T20:02:01.199536+00:00",
+    "updated_at": "2025-03-29T00:02:31.283248+00:00",
+    "openstates_url": "https://openstates.org/person/forrest-dunbar-26KKwkvnpLJETGqzCd4xLn/"
+  },
+  {
+    "id": "ocd-person/f5c83068-a809-4f57-8b77-1e77c87ee93b",
+    "name": "Gary Stevens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "C",
+      "division_id": "ocd-division/country:us/state:ak/sldu:c"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Stevens",
+    "image": "http://akleg.gov/images/legislators/450x600/STG.jpg",
+    "email": "senator.gary.stevens@akleg.gov",
+    "gender": "Male",
+    "birth_date": "1941-08-21",
+    "death_date": "",
+    "extras": {
+      "title": "Senate President",
+      "toll_free_phone": "800-821-4925"
+    },
+    "created_at": "2018-10-18T14:33:08.505929+00:00",
+    "updated_at": "2025-03-29T00:02:23.171602+00:00",
+    "openstates_url": "https://openstates.org/person/gary-stevens-7TmbcTn42Eg38sHGYt7R9f/"
+  },
+  {
+    "id": "ocd-person/627922d3-e631-4c32-841f-148f061b0c75",
+    "name": "George Rauscher",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "O",
+      "division_id": "ocd-division/country:us/state:ak/sldu:o"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "George",
+    "family_name": "Rauscher",
+    "image": "http://akleg.gov/images/legislators/450x600/RAU.jpg",
+    "email": "senator.george.rauscher@akleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "888-465-4859"
+    },
+    "created_at": "2018-10-18T14:32:52.741037+00:00",
+    "updated_at": "2026-04-04T00:01:06.899282+00:00",
+    "openstates_url": "https://openstates.org/person/george-rauscher-2zobejq5t7em7m4UTuVwwP/"
+  },
+  {
+    "id": "ocd-person/f6cd7b64-a3f3-44ec-89a1-68c17fa6d4c9",
+    "name": "James Kaufman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "F",
+      "division_id": "ocd-division/country:us/state:ak/sldu:f"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Kaufman",
+    "image": "http://akleg.gov/images/legislators/450x600/KAU.jpg",
+    "email": "senator.james.kaufman@akleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "800-478-4950"
+    },
+    "created_at": "2021-12-16T18:38:00.425932+00:00",
+    "updated_at": "2025-03-29T00:02:15.960437+00:00",
+    "openstates_url": "https://openstates.org/person/james-kaufman-7Vi176T2PdtU8vxKlZ8PJx/"
+  },
+  {
+    "id": "ocd-person/e14b5980-9a38-4420-8903-70738802edf6",
+    "name": "Jesse Bjorkman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "D",
+      "division_id": "ocd-division/country:us/state:ak/sldu:d"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Jesse",
+    "family_name": "Bjorkman",
+    "image": "http://akleg.gov/images/legislators/450x600/BJK.jpg",
+    "email": "senator.jesse.bjorkman@akleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "800-964-5733"
+    },
+    "created_at": "2023-01-26T20:01:15.973525+00:00",
+    "updated_at": "2025-03-29T00:02:06.076269+00:00",
+    "openstates_url": "https://openstates.org/person/jesse-bjorkman-6r7hvG1XQ7Z2EicA3VcEOE/"
+  },
+  {
+    "id": "ocd-person/1ae3974e-660d-4526-b351-fff9b689b51a",
+    "name": "Jesse Kiehl",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "B",
+      "division_id": "ocd-division/country:us/state:ak/sldu:b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Jesse",
+    "family_name": "Kiehl",
+    "image": "http://akleg.gov/images/legislators/450x600/KIE.jpg",
+    "email": "senator.jesse.kiehl@akleg.gov",
+    "gender": "Male",
+    "birth_date": "1976-04-17",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "855-465-4947"
+    },
+    "created_at": "2019-02-07T03:28:08.873571+00:00",
+    "updated_at": "2025-03-29T00:02:37.405868+00:00",
+    "openstates_url": "https://openstates.org/person/jesse-kiehl-ojoDFHgKxr6aB2PLYDtak/"
+  },
+  {
+    "id": "ocd-person/ddad148b-d8ed-4eff-826d-3861709eb500",
+    "name": "Kelly Merrick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "L",
+      "division_id": "ocd-division/country:us/state:ak/sldu:l"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Kelly",
+    "family_name": "Merrick",
+    "image": "http://akleg.gov/images/legislators/450x600/MRR.jpg",
+    "email": "senator.kelly.merrick@akleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "800-861-5688"
+    },
+    "created_at": "2019-02-07T03:28:58.037604+00:00",
+    "updated_at": "2025-03-29T00:02:16.723812+00:00",
+    "openstates_url": "https://openstates.org/person/kelly-merrick-6kIOvuoCoJe6UgpxFez93g/"
+  },
+  {
+    "id": "ocd-person/e187d603-9202-4f64-80b0-6366702aec11",
+    "name": "Lyman Hoffman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "S",
+      "division_id": "ocd-division/country:us/state:ak/sldu:s"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Lyman",
+    "family_name": "Hoffman",
+    "image": "http://akleg.gov/images/legislators/450x600/HOF.jpg",
+    "email": "senator.lyman.hoffman@akleg.gov",
+    "gender": "Male",
+    "birth_date": "1950-02-13",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "866-465-4453"
+    },
+    "created_at": "2018-10-18T14:33:01.825749+00:00",
+    "updated_at": "2025-03-29T00:02:21.608763+00:00",
+    "openstates_url": "https://openstates.org/person/lyman-hoffman-6rZLkRzbmUJTzk4YmFiuTR/"
+  },
+  {
+    "id": "ocd-person/c66c309d-1612-4eab-863c-59e34b643e2c",
+    "name": "L\u00f6ki Tobin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "I",
+      "division_id": "ocd-division/country:us/state:ak/sldu:i"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "L\u00f6ki",
+    "family_name": "Tobin",
+    "image": "http://akleg.gov/images/legislators/450x600/TOB.jpg",
+    "email": "senator.loki.tobin@akleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "888-330-3704"
+    },
+    "created_at": "2023-01-26T20:01:30.678724+00:00",
+    "updated_at": "2025-03-29T00:02:10.017578+00:00",
+    "openstates_url": "https://openstates.org/person/loki-tobin-62PvGZ6KpZ90smOPAyVpEq/"
+  },
+  {
+    "id": "ocd-person/0b2d5ec3-c1b2-4b09-8444-144c92125cc4",
+    "name": "Matt Claman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "H",
+      "division_id": "ocd-division/country:us/state:ak/sldu:h"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Claman",
+    "image": "http://akleg.gov/images/legislators/450x600/CLA.jpg",
+    "email": "senator.matt.claman@akleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "888-465-4919"
+    },
+    "created_at": "2018-10-18T14:33:05.925878+00:00",
+    "updated_at": "2025-03-29T00:02:32.654363+00:00",
+    "openstates_url": "https://openstates.org/person/matt-claman-L5eHvNxqPADiRCVPRiuvc/"
+  },
+  {
+    "id": "ocd-person/c50de9c3-90a3-4c6d-9003-50e12c6c5246",
+    "name": "Mike Cronk",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "R",
+      "division_id": "ocd-division/country:us/state:ak/sldu:r"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Cronk",
+    "image": "http://akleg.gov/images/legislators/450x600/CRN.jpg",
+    "email": "senator.mike.cronk@akleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "800-491-4527"
+    },
+    "created_at": "2021-12-16T18:38:02.837983+00:00",
+    "updated_at": "2026-01-29T00:01:06.565630+00:00",
+    "openstates_url": "https://openstates.org/person/mike-cronk-5zpqUrg4xP0wxhC5UNw7T4/"
+  },
+  {
+    "id": "ocd-person/82334f7b-8119-4494-bf3e-a7ddb09536bd",
+    "name": "Rob Yundt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "N",
+      "division_id": "ocd-division/country:us/state:ak/sldu:n"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Yundt",
+    "image": "https://ktna.org/wp-content/uploads/2023/06/YundtThumb.jpg",
+    "email": "senator.robert.yundt@akleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-21T23:38:55.075825+00:00",
+    "updated_at": "2025-03-29T00:02:28.273264+00:00",
+    "openstates_url": "https://openstates.org/person/rob-yundt-3xgRzQ7mbxflkyLWgr55sj/"
+  },
+  {
+    "id": "ocd-person/697cb834-6aa1-44f1-9c6e-9cf57ad30774",
+    "name": "Robert Myers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Q",
+      "division_id": "ocd-division/country:us/state:ak/sldu:q"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Myers",
+    "image": "http://akleg.gov/images/legislators/450x600/MYE.jpg",
+    "email": "senator.robert.myers@akleg.gov",
+    "gender": "Male",
+    "birth_date": "1983-08-15",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "877-465-3719"
+    },
+    "created_at": "2021-12-16T18:37:57.058129+00:00",
+    "updated_at": "2025-03-29T00:02:12.064000+00:00",
+    "openstates_url": "https://openstates.org/person/robert-myers-3D3BrScWGqfEp8J54hiAiK/"
+  },
+  {
+    "id": "ocd-person/53f7b86b-ce31-4199-86ef-f566ae9aa02c",
+    "name": "Scott Kawasaki",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "P",
+      "division_id": "ocd-division/country:us/state:ak/sldu:p"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ak/government",
+      "name": "Alaska",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Kawasaki",
+    "image": "http://akleg.gov/images/legislators/450x600/KAW.jpg",
+    "email": "senator.scott.kawasaki@akleg.gov",
+    "gender": "Male",
+    "birth_date": "1975-03-20",
+    "death_date": "",
+    "extras": {
+      "toll_free_phone": "866-465-3466"
+    },
+    "created_at": "2018-10-18T14:33:01.170732+00:00",
+    "updated_at": "2025-03-29T00:02:29.856817+00:00",
+    "openstates_url": "https://openstates.org/person/scott-kawasaki-2YRZRWadl6XKyFaSK5ac3g/"
+  }
+]

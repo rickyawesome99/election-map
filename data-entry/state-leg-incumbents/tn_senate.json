@@ -1,0 +1,1179 @@
+[
+  {
+    "id": "ocd-person/b3bd4f95-946f-4b4b-b58f-ab78345847b7",
+    "name": "Adam Lowe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:tn/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Lowe",
+    "image": "https://static.wixstatic.com/media/599b12_afa74a3390064dd386df25e882ac9659~mv2.jpeg/v1/fill/w_675,h_716,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/599b12_afa74a3390064dd386df25e882ac9659~mv2.jpeg",
+    "email": "sen.adam.lowe@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1981-01-08",
+    "death_date": "",
+    "extras": {
+      "office": "740 CHB",
+      "personal info": [
+        "Born on January 8, 1981",
+        "Married, wife Rachel, four children",
+        "Christian",
+        "College Professor & Corporate Professional Development",
+        "B.A. from Lee University",
+        "M.P.A. from University of Tennessee - Chattanooga",
+        "PhD from University of Tennessee - Knoxville"
+      ]
+    },
+    "created_at": "2023-02-14T05:25:24.363788+00:00",
+    "updated_at": "2026-04-04T02:13:46.921583+00:00",
+    "openstates_url": "https://openstates.org/person/adam-lowe-5TA8nF7D3yoTztj8VGhnB1/"
+  },
+  {
+    "id": "ocd-person/592971a7-2e11-4bed-a57d-71187e174329",
+    "name": "Becky Massey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:tn/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Becky",
+    "family_name": "Massey",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s6.jpg",
+    "email": "sen.becky.massey@capitol.tn.gov",
+    "gender": "Female",
+    "birth_date": "1955-01-02",
+    "death_date": "",
+    "extras": {
+      "office": "776 CHB",
+      "personal info": [
+        "Born January 2, 1955",
+        "Married, husband Morton, two daughters, Courtney and Kristen, granddaughter Bailey",
+        "B. S., Business Administration, University of Tennessee, Knoxville, 1977"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:17.992056+00:00",
+    "updated_at": "2026-01-28T02:19:45.544998+00:00",
+    "openstates_url": "https://openstates.org/person/becky-massey-2iFFw4adN2uaJqyMVsXVyj/"
+  },
+  {
+    "id": "ocd-person/46b6a1b2-f0c0-4e9a-a506-a81e12e329f5",
+    "name": "Bill Powers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:tn/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Powers",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s22.jpg",
+    "email": "sen.bill.powers@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1957-03-10",
+    "death_date": "",
+    "extras": {
+      "office": "772 CHB",
+      "personal info": [
+        "Born on March 10, 1957",
+        "Married, wife Fran, three adult children",
+        "Methodist",
+        "B.A., University of Tennessee, Knoxville, with honors",
+        "Managing Partner, Wyatt-Johnson Automotive Group"
+      ]
+    },
+    "created_at": "2020-01-31T18:21:28.186185+00:00",
+    "updated_at": "2026-04-04T02:13:57.746443+00:00",
+    "openstates_url": "https://openstates.org/person/bill-powers-29QvOhMikFqJLZcqjxiHzx/"
+  },
+  {
+    "id": "ocd-person/86d5ff12-369b-41a4-9626-237425063c1b",
+    "name": "Bo Watson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:tn/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Bo",
+    "family_name": "Watson",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s11.jpg",
+    "email": "sen.bo.watson@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1960-10-21",
+    "death_date": "",
+    "extras": {
+      "office": "706 CHB",
+      "personal info": [
+        "Born October 21, 1960",
+        "Physical Therapist - Parkridge Medical Center",
+        "Methodist",
+        "B.A., Biology, Magna Cum Laude, University of Tennessee at Chattanooga",
+        "Physical Therapy, University of Tennessee Center for Health Sciences - Memphis"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:18.372448+00:00",
+    "updated_at": "2026-04-04T02:13:39.848574+00:00",
+    "openstates_url": "https://openstates.org/person/bo-watson-46QldqiYJBBY3okzK9mddz/"
+  },
+  {
+    "id": "ocd-person/841e5585-a49a-4754-95d4-682d974b4ff4",
+    "name": "Bobby Harshbarger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:tn/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Bobby",
+    "family_name": "Harshbarger",
+    "image": "https://tennesseelookout.com/wp-content/uploads/2024/09/Bobby-Harshbarger-975x1024.jpeg",
+    "email": "sen.bobby.harshbarger@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1985-01-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:42:35.588662+00:00",
+    "updated_at": "2026-04-04T02:13:55.297017+00:00",
+    "openstates_url": "https://openstates.org/person/bobby-harshbarger-41Iqgu6KzSW1EUCxm4OyiS/"
+  },
+  {
+    "id": "ocd-person/d3f48e28-4ee5-4027-9670-0d617ca6048e",
+    "name": "Brent Taylor",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:tn/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Brent",
+    "family_name": "Taylor",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/BrentTaylor_TN.jpeg",
+    "email": "sen.brent.taylor@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1968-08-08",
+    "death_date": "",
+    "extras": {
+      "office": "714 CHB",
+      "personal info": [
+        "Born on August 9, 1968",
+        "Married, wife Kimberly, 2 children",
+        "Baptist",
+        "Northwest Mississippi Community College, Mortuary Science",
+        "Funeral Director"
+      ]
+    },
+    "created_at": "2023-02-14T05:27:08.926788+00:00",
+    "updated_at": "2026-04-04T02:14:08.759593+00:00",
+    "openstates_url": "https://openstates.org/person/brent-taylor-6Rx8rzvXXrYxW8DYgKKkpS/"
+  },
+  {
+    "id": "ocd-person/0ce3dbf9-c880-480b-a623-7d9da870bb01",
+    "name": "Charlane Oliver",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:tn/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Charlane",
+    "family_name": "Oliver",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CharlaneOliver.png",
+    "email": "sen.charlane.oliver@capitol.tn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "office": "766 CHB",
+      "personal info": [
+        "Born October 26",
+        "Married, three children",
+        "Nonprofit Executive",
+        "Christian",
+        "B.S. - Vanderbilt University (2005)",
+        "M.P.A. - University of Tennessee Knoxville (2008)"
+      ]
+    },
+    "created_at": "2023-02-14T05:25:14.531744+00:00",
+    "updated_at": "2026-04-04T02:14:04.570217+00:00",
+    "openstates_url": "https://openstates.org/person/charlane-oliver-OK2TOh55nMwtOBqjDd6pN/"
+  },
+  {
+    "id": "ocd-person/80bf42b1-4942-4187-af19-94e830333ce2",
+    "name": "Dawn White",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:tn/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Dawn",
+    "family_name": "White",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s13.jpg",
+    "email": "sen.dawn.white@capitol.tn.gov",
+    "gender": "Female",
+    "birth_date": "1975-10-22",
+    "death_date": "",
+    "extras": {
+      "office": "752 CHB",
+      "personal info": [
+        "Born October 22, 1975",
+        "Married, husband Chad",
+        "Baptist",
+        "Former Teacher and Small Business Owner",
+        "Attended Rutherford County Schools, Riverdale High School, 1994",
+        "B.S., Middle Tennessee State University, 1998",
+        "Masters of Education, Middle Tennessee State University, 1999",
+        "Specialist in Education, Middle Tennessee State University, 2002"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:19.845224+00:00",
+    "updated_at": "2026-01-28T02:19:22.407861+00:00",
+    "openstates_url": "https://openstates.org/person/dawn-white-3uwQIS3Ex4dGgBLLlyH4iI/"
+  },
+  {
+    "id": "ocd-person/93024b02-926b-4414-8826-147b14739a2b",
+    "name": "Ed Jackson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:tn/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Jackson",
+    "image": "https://capitol.tn.gov/senate/members/images/S25.jpg",
+    "email": "sen.ed.jackson@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1948-07-21",
+    "death_date": "",
+    "extras": {
+      "office": "746 CHB",
+      "personal info": [
+        "Born on July 21, 1948",
+        "Married, wife Marilyn, three children",
+        "Church of Christ",
+        "Tennant Company (Retired), Small Business Owner",
+        "Lambuth University",
+        "Memphis State University School of Business",
+        "Ohio State University",
+        "Tennessee National Guard, 30th Armored Brigade"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:20.231805+00:00",
+    "updated_at": "2026-01-28T02:20:34.072684+00:00",
+    "openstates_url": "https://openstates.org/person/ed-jackson-4TOv2Ni8kGW83e1ZDCkPr1/"
+  },
+  {
+    "id": "ocd-person/f539ae98-f5d7-4290-9835-f64a1ab0a8c7",
+    "name": "Ferrell Haile",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:tn/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Ferrell",
+    "family_name": "Haile",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s18.jpg",
+    "email": "sen.ferrell.haile@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "office": "708 CHB",
+      "personal info": [
+        "Married, wife Kay, four children, eight grandchildren",
+        "Lipscomb University",
+        "BS. Ph., University of Tennessee Pharmacy School",
+        "Pharmacist, Perkins Drugs, Gallatin - Previous Owner",
+        "Owner - Haile Farms, Gallatin"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:20.388710+00:00",
+    "updated_at": "2026-01-28T02:19:58.380525+00:00",
+    "openstates_url": "https://openstates.org/person/ferrell-haile-7SjToSbKv2W6eVr24j4R0h/"
+  },
+  {
+    "id": "ocd-person/b4356789-3561-4110-ad59-00c7cf36e0fd",
+    "name": "Heidi Campbell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:tn/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Heidi",
+    "family_name": "Campbell",
+    "image": "https://www.capitol.tn.gov/senate/members/images/S20.jpg",
+    "email": "sen.heidi.campbell@capitol.tn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "office": "770 CHB",
+      "personal info": [
+        "Married, two children",
+        "Non-denominational",
+        "Business Owner",
+        "B.A. Sarah Lawrence",
+        "M.B.A. Vanderbilt Owen School of Management"
+      ]
+    },
+    "created_at": "2021-01-07T06:17:22.062245+00:00",
+    "updated_at": "2026-04-04T02:13:42.530302+00:00",
+    "openstates_url": "https://openstates.org/person/heidi-campbell-5U31X9UyMseYXS7yjcUiKb/"
+  },
+  {
+    "id": "ocd-person/83e732c5-55af-4d56-b3ed-9ff358ed641e",
+    "name": "Jack Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:tn/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Johnson",
+    "image": "https://bloximages.newyork1.vip.townnews.com/williamsonherald.com/content/tncms/assets/v3/editorial/b/5f/b5ffcba0-f751-11e8-8648-bf381c197480/5c05b9b74599d.image.jpg?resize=334%2C500",
+    "email": "sen.jack.johnson@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1968-07-25",
+    "death_date": "",
+    "extras": {
+      "office": "702 CHB",
+      "personal info": [
+        "Born on July 25, 1968 in Amarillo, Texas",
+        "Wife, Deanna, and three children",
+        "B.S., Education, Texas State University",
+        "Small Business Owner"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:20.935118+00:00",
+    "updated_at": "2026-01-28T02:20:31.483542+00:00",
+    "openstates_url": "https://openstates.org/person/jack-johnson-40teTE2iR71dcF9lJ76l14/"
+  },
+  {
+    "id": "ocd-person/f48dc5f3-1c31-4654-a6be-1b9d20ecb3b2",
+    "name": "Janice Bowling",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:tn/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Janice",
+    "family_name": "Bowling",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s16.jpg",
+    "email": "sen.janice.bowling@capitol.tn.gov",
+    "gender": "Female",
+    "birth_date": "1947-04-01",
+    "death_date": "",
+    "extras": {
+      "office": "718 CHB",
+      "personal info": [
+        "Married, three grown children, five grandchildren",
+        "Baptist",
+        "BS in Elementary Education/Special Education, Auburn University",
+        "Former Special Education Teacher in Lee County, Ala."
+      ]
+    },
+    "created_at": "2018-10-18T16:12:21.088265+00:00",
+    "updated_at": "2026-01-28T02:20:28.785842+00:00",
+    "openstates_url": "https://openstates.org/person/janice-bowling-7RSuw5OONpzV4aPRZUNODa/"
+  },
+  {
+    "id": "ocd-person/eda112b7-c5bc-4d24-95b8-3651090e1da4",
+    "name": "Jeff Yarbro",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:tn/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Yarbro",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s21.jpg",
+    "email": "sen.jeff.yarbro@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1977-02-16",
+    "death_date": "",
+    "extras": {
+      "office": "768 CHB",
+      "personal info": [
+        "Born on February 16, 1977",
+        "Married, wife Tyler Chance Yarbro, son Jack and daughter Kate",
+        "Episcopalian",
+        "Attorney",
+        "Harvard University, B.A.",
+        "University of Virginia, J.D."
+      ]
+    },
+    "created_at": "2018-10-18T16:12:21.397959+00:00",
+    "updated_at": "2026-04-04T02:13:50.871960+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-yarbro-7EOn6tOShfnmywf7Jz4UAm/"
+  },
+  {
+    "id": "ocd-person/b37537b4-ac38-4d83-ba16-025fcb7f0dc6",
+    "name": "Jessie Seal",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:tn/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Jessie",
+    "family_name": "Seal",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jason_Weakley_20241023_122227.jpg",
+    "email": "sen.jessie.seal@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1991-01-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:42:24.448005+00:00",
+    "updated_at": "2026-04-04T02:14:20.180251+00:00",
+    "openstates_url": "https://openstates.org/person/jessie-seal-5SdC63Swl2JY0v2j6zFHmA/"
+  },
+  {
+    "id": "ocd-person/fccb09fc-b331-4bba-8b84-fbd4ab3e3227",
+    "name": "Joey Hensley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:tn/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Joey",
+    "family_name": "Hensley",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s28.jpg",
+    "email": "sen.joey.hensley@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1955-07-28",
+    "death_date": "",
+    "extras": {
+      "office": "742 CHB",
+      "personal info": [
+        "Born on July 28, 1955 in Hohenwald, TN",
+        "Children; son Joseph, daughters Jenna and Jada",
+        "Physician",
+        "Pentecostal",
+        "A.S., Columbia State Community College",
+        "B.S., University of Memphis",
+        "M.D., University of Tennessee-Memphis"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:22.189373+00:00",
+    "updated_at": "2026-04-04T02:13:33.429422+00:00",
+    "openstates_url": "https://openstates.org/person/joey-hensley-7h0r2Urz4xK0es8daUV2zn/"
+  },
+  {
+    "id": "ocd-person/cb6c477c-ceb7-41af-ab96-b03debc1b7e3",
+    "name": "John Stevens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:tn/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Stevens",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s24.jpg",
+    "email": "sen.john.stevens@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1973-10-18",
+    "death_date": "",
+    "extras": {
+      "office": "710 CHB",
+      "personal info": [
+        "Born October 18, 1973",
+        "Married, two children",
+        "Attorney",
+        "Baptist",
+        "J.D., University of Memphis",
+        "B.S. Political Science, U.T. Martin"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:22.817697+00:00",
+    "updated_at": "2026-04-25T02:17:43.133528+00:00",
+    "openstates_url": "https://openstates.org/person/john-stevens-6BqvQ3QVIWWRIxlsyNCTOF/"
+  },
+  {
+    "id": "ocd-person/908edc68-a862-455c-a609-7619977252d1",
+    "name": "Ken Yager",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:tn/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Yager",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s12.jpg",
+    "email": "sen.ken.yager@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1947-01-05",
+    "death_date": "",
+    "extras": {
+      "office": "704 CHB",
+      "personal info": [
+        "Born January 5, 1947",
+        "Married, two children",
+        "Baptist",
+        "J.D., University of Memphis (1977)",
+        "M.S., University of Tennessee at Martin (1972)",
+        "B.A., University of Tennessee at Martin (1969)"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:23.387161+00:00",
+    "updated_at": "2026-04-04T02:14:39.763974+00:00",
+    "openstates_url": "https://openstates.org/person/ken-yager-4OmBKQKJsrKTR4LM4Gxbhh/"
+  },
+  {
+    "id": "ocd-person/872517bf-9780-44e2-9532-87dfd816ec4c",
+    "name": "Kerry Roberts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:tn/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Kerry",
+    "family_name": "Roberts",
+    "image": "https://fluxconsole.com/files/image/131100",
+    "email": "sen.kerry.roberts@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1961-09-24",
+    "death_date": "",
+    "extras": {
+      "office": "730 CHB",
+      "personal info": [
+        "Born on September 24",
+        "Married, wife Dianne, three children",
+        "Christian",
+        "B.S. Lipscomb University 1983",
+        "Certified Public Accountant",
+        "Small Business Owner"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:23.548541+00:00",
+    "updated_at": "2026-01-28T02:20:09.845575+00:00",
+    "openstates_url": "https://openstates.org/person/kerry-roberts-470ulVaS0bTwZDD3Z3mM9s/"
+  },
+  {
+    "id": "ocd-person/44fda210-d5be-4785-ae5e-0072b4111a67",
+    "name": "London Lamar",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:tn/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "London",
+    "family_name": "Lamar",
+    "image": "https://www.capitol.tn.gov/senate/members/images/s33.jpg",
+    "email": "sen.london.lamar@capitol.tn.gov",
+    "gender": "Female",
+    "birth_date": "1990-12-29",
+    "death_date": "",
+    "extras": {
+      "office": "762 CHB",
+      "personal info": [
+        "Born December 29, 1990",
+        "Single",
+        "Christian",
+        "B.A. Political Science with double minors in Sociology and Intercultural Studies, Saint Mary\u2019s College, Notre Dame, IN"
+      ]
+    },
+    "created_at": "2019-01-04T05:20:45.324524+00:00",
+    "updated_at": "2026-04-04T02:14:00.843930+00:00",
+    "openstates_url": "https://openstates.org/person/london-lamar-26BO6p1qPqMqjZSRgREMYJ/"
+  },
+  {
+    "id": "ocd-person/47dee87e-231d-4c39-b0a2-6905a85ddbf8",
+    "name": "Mark Pody",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:tn/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Pody",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s17.jpg",
+    "email": "sen.mark.pody@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1956-04-23",
+    "death_date": "",
+    "extras": {
+      "office": "754 CHB",
+      "personal info": [
+        "Married, wife Barbara, two children",
+        "Christian",
+        "Insurance",
+        "CLU-CHFC",
+        "LUTCF-FICF",
+        "Cumberland University"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:23.955119+00:00",
+    "updated_at": "2026-01-28T02:19:32.750854+00:00",
+    "openstates_url": "https://openstates.org/person/mark-pody-2BcK7WA00DtktEUrERZ7qi/"
+  },
+  {
+    "id": "ocd-person/88788ad3-d3e0-4846-9bd7-bc7b7f0b9759",
+    "name": "Page Walley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:tn/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Page",
+    "family_name": "Walley",
+    "image": "http://www.capitol.tn.gov/senate/members/images/S26.jpg",
+    "email": "sen.page.walley@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1957-03-02",
+    "death_date": "",
+    "extras": {
+      "office": "750 CHB",
+      "personal info": [
+        "Born on March 2, 1957",
+        "Married, wife Terry, 3 children, 4 grandchildren",
+        "Christian",
+        "Clinical Psychologist/Foundation Executive Director",
+        "Licensed Minister",
+        "Davidson College, A.B Psychology",
+        "University of Georgia, M.S., Ph.D. Clinical Psychology"
+      ]
+    },
+    "created_at": "2021-01-07T06:17:24.452643+00:00",
+    "updated_at": "2026-01-28T02:19:20.100066+00:00",
+    "openstates_url": "https://openstates.org/person/page-walley-49W2ksMDTZyK0Ig8a7pnsf/"
+  },
+  {
+    "id": "ocd-person/8e49fca4-e0d8-4273-adab-265632163d86",
+    "name": "Paul Bailey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:tn/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Bailey",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s15.jpg",
+    "email": "sen.paul.bailey@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1968-03-04",
+    "death_date": "",
+    "extras": {
+      "office": "736 CHB",
+      "personal info": [
+        "Born on March 4, 1968",
+        "Married, wife Amy, three children",
+        "Christian",
+        "Trucking, Small Farmer",
+        "Tennessee Tech University"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:24.906407+00:00",
+    "updated_at": "2026-04-04T02:13:27.029067+00:00",
+    "openstates_url": "https://openstates.org/person/paul-bailey-4KUinQUeIRwB9WaIZOdpQ6/"
+  },
+  {
+    "id": "ocd-person/1793564f-19a5-4ac9-91c3-7cbb47843c2b",
+    "name": "Paul Rose",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:tn/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Rose",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s32.jpg",
+    "email": "sen.paul.rose@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "office": "734 CHB",
+      "personal info": [
+        "Married, wife, Nancy; three children, Kate (Erik), Rebecca, John Paul (Candace); six grandchildren",
+        "B.A., University of Tennessee at Martin",
+        "President, Rose Contruction",
+        "Christian"
+      ]
+    },
+    "created_at": "2019-04-10T05:19:01.049250+00:00",
+    "updated_at": "2026-04-04T02:13:24.757092+00:00",
+    "openstates_url": "https://openstates.org/person/paul-rose-iU9ifzjX3poqY7bMAhR63/"
+  },
+  {
+    "id": "ocd-person/e00c236d-6153-4618-96f8-12e6a1d639aa",
+    "name": "Randy McNally",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:tn/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "McNally",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s5.jpg",
+    "email": "sen.randy.mcnally@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1944-01-30",
+    "death_date": "",
+    "extras": {
+      "office": "700 CHB",
+      "personal info": [
+        "Born January 30, 1944",
+        "Married with two children",
+        "1962 Graduate of Oak Ridge High School",
+        "B.S., Memphis State University, 1967",
+        "U.T., College of Pharmacy, 1969",
+        "Retired pharmacist"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:25.060501+00:00",
+    "updated_at": "2026-01-28T02:19:55.599156+00:00",
+    "openstates_url": "https://openstates.org/person/randy-mcnally-6olpMldPFuj0ZpGc3iXV5W/"
+  },
+  {
+    "id": "ocd-person/9c949092-7bff-4859-bea7-46d9c37ed513",
+    "name": "Raumesh Akbari",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:tn/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Raumesh",
+    "family_name": "Akbari",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s29.jpg",
+    "email": "sen.raumesh.akbari@capitol.tn.gov",
+    "gender": "Female",
+    "birth_date": "1984-04-14",
+    "death_date": "",
+    "extras": {
+      "office": "764 CHB",
+      "personal info": [
+        "Born April 14, 1984",
+        "Single",
+        "Attorney",
+        "Baptist",
+        "B.A. Washington University in St. Louis, 2006",
+        "J.D. St. Louis University School of Law, 2009"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:25.138156+00:00",
+    "updated_at": "2026-01-28T02:19:36.567275+00:00",
+    "openstates_url": "https://openstates.org/person/raumesh-akbari-4lShEMDa6IYuYD5mOj89n1/"
+  },
+  {
+    "id": "ocd-person/9d744074-d7ae-4004-8912-bae320633c46",
+    "name": "Richard Briggs",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:tn/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Briggs",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s7.jpg",
+    "email": "sen.richard.briggs@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1952-12-07",
+    "death_date": "",
+    "extras": {
+      "office": "774 CHB",
+      "personal info": [
+        "Born on December 7, 1952",
+        "Married, wife Stephanie",
+        "Methodist",
+        "Physician",
+        "M.D., University of Kentucky",
+        "Colonel, United States Army (Retired)"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:25.370657+00:00",
+    "updated_at": "2026-01-28T02:19:34.512861+00:00",
+    "openstates_url": "https://openstates.org/person/richard-briggs-4n6vCHXGc27JmQ6Ei4KyBC/"
+  },
+  {
+    "id": "ocd-person/b8b305e5-ff02-4f8d-8ef1-61a4a7ecf54a",
+    "name": "Rusty Crowe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:tn/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Rusty",
+    "family_name": "Crowe",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s3.jpg",
+    "email": "sen.rusty.crowe@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1947-04-02",
+    "death_date": "",
+    "extras": {
+      "office": "720 CHB",
+      "personal info": [
+        "Born on April 2, 1947",
+        "Wife, Sarah",
+        "Two children, John and Catherine",
+        "B.S. in Criminal Justice, East Tennessee State University",
+        "J.D., Atlanta Law School",
+        "U.S. Army; served in Southeast Asia 1967-71",
+        "Methodist"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:25.848033+00:00",
+    "updated_at": "2026-04-04T02:13:20.567329+00:00",
+    "openstates_url": "https://openstates.org/person/rusty-crowe-5cWOuzhNDYc5g2PiV9609S/"
+  },
+  {
+    "id": "ocd-person/f1eb839c-83c6-471f-865e-1d87344fb58c",
+    "name": "Sara Kyle",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:tn/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Sara",
+    "family_name": "Kyle",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s30.jpg",
+    "email": "sen.sara.kyle@capitol.tn.gov",
+    "gender": "Female",
+    "birth_date": "1952-10-21",
+    "death_date": "",
+    "extras": {
+      "office": "760 CHB",
+      "personal info": [
+        "Born on October 21, 1952",
+        "Married, husband Jim, four children",
+        "Presbyterian",
+        "Attorney",
+        "J.D., Nashville School of Law"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:26.173676+00:00",
+    "updated_at": "2026-01-28T02:20:19.082990+00:00",
+    "openstates_url": "https://openstates.org/person/sara-kyle-7MUmQMRKXkLmCA1bcnrsom/"
+  },
+  {
+    "id": "ocd-person/fa4bd8d0-c567-4434-a24a-6d0bf9759f0b",
+    "name": "Shane Reeves",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:tn/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Reeves",
+    "image": "http://www.capitol.tn.gov/senate/members/images/s14.jpg",
+    "email": "sen.shane.reeves@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1968-01-18",
+    "death_date": "",
+    "extras": {
+      "office": "732 CHB",
+      "personal info": [
+        "Born on January 18, 1968",
+        "Married with three children",
+        "CEO & Pharmacist",
+        "Christian",
+        "Bachelor of Science; Doctorate of Pharmacy"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:26.252735+00:00",
+    "updated_at": "2026-04-04T02:14:21.269160+00:00",
+    "openstates_url": "https://openstates.org/person/shane-reeves-7cIk7WYa9RDFE3BjUUCNkB/"
+  },
+  {
+    "id": "ocd-person/37dddeca-88ef-4254-b6f2-b2ddd6526665",
+    "name": "Steve Southerland",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:tn/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Southerland",
+    "image": "https://capitol.tn.gov/senate/members/images/S9.jpg",
+    "email": "sen.steve.southerland@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1955-03-08",
+    "death_date": "",
+    "extras": {
+      "office": "722 CHB",
+      "personal info": [
+        "Born on March 8, 1955",
+        "Wife, Cheri, and one child, Mattea",
+        "Walters State Community College",
+        "Mortgage Broker"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:26.564020+00:00",
+    "updated_at": "2026-04-04T02:14:25.054562+00:00",
+    "openstates_url": "https://openstates.org/person/steve-southerland-1hPyK9UVtQt83ZoZ22DYJB/"
+  },
+  {
+    "id": "ocd-person/d5d2e89a-5467-4f69-a77d-70caaa351086",
+    "name": "Todd Gardenhire",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:tn/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Gardenhire",
+    "image": "https://capitol.tn.gov/senate/members/images/S10.jpg",
+    "email": "sen.todd.gardenhire@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1948-05-07",
+    "death_date": "",
+    "extras": {
+      "office": "716 CHB",
+      "personal info": [
+        "Born May 7, 1948",
+        "Married, wife Sylvia, four children, five grandchildren",
+        "Retired - 43 years in Financial Industry",
+        "Lookout Valley Presbyterian Church",
+        "B.S., Business Administration, University of Tennessee at Chattanooga, 1972"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:27.274068+00:00",
+    "updated_at": "2026-01-28T02:19:19.192054+00:00",
+    "openstates_url": "https://openstates.org/person/todd-gardenhire-6VTkZQ4YlZHyOruDULal8g/"
+  },
+  {
+    "id": "ocd-person/6567e0e2-9ecf-4129-b838-e3618b4cf786",
+    "name": "Tom Hatcher",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:tn/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tn/government",
+      "name": "Tennessee",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Hatcher",
+    "image": "https://images.squarespace-cdn.com/content/v1/6570c60e478ebd26777cfd83/7e2e888c-6da6-4b8f-a79f-279c8e5cd2c2/365772199_7298985810116788_8248702436261909523_n.jpg",
+    "email": "sen.tom.hatcher@capitol.tn.gov",
+    "gender": "Male",
+    "birth_date": "1958-05-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:41:54.692562+00:00",
+    "updated_at": "2026-04-04T02:14:29.177642+00:00",
+    "openstates_url": "https://openstates.org/person/tom-hatcher-35LhFcrGA6X60GXFAStTKo/"
+  }
+]

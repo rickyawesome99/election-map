@@ -35,12 +35,24 @@ interface GeocodeResult {
 
 // Module-level caches so data is loaded at most once per page session
 let statesGeoJSONCache: FeatureCollection | null = null;
+let districtsGeoJSONCache: FeatureCollection | null = null;
 
 async function loadStatesGeoJSON(): Promise<FeatureCollection> {
   if (statesGeoJSONCache) return statesGeoJSONCache;
   const topo = (await fetch("https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json").then(r => r.json())) as Topology;
   const geo = topoFeature(topo, topo.objects["states"]) as unknown as FeatureCollection;
   statesGeoJSONCache = geo;
+  return geo;
+}
+
+// congressional-districts-2026.json is TopoJSON (scripts/split-national-maps.mjs) — MapLibre's
+// GeoJSON source only understands GeoJSON, so it's converted client-side instead of handed to
+// MapLibre as a source URL directly (see DistrictFinderMap's districts-source effect).
+async function loadDistrictsGeoJSON(): Promise<FeatureCollection> {
+  if (districtsGeoJSONCache) return districtsGeoJSONCache;
+  const topo = (await fetch("/congressional-districts-2026.json").then(r => r.json())) as Topology;
+  const geo = topoFeature(topo, topo.objects["congressional-districts-2026"]) as unknown as FeatureCollection;
+  districtsGeoJSONCache = geo;
   return geo;
 }
 
@@ -186,6 +198,7 @@ export default function DistrictFinder() {
   const [pinPosition, setPinPosition] = useState<[number, number] | null>(null);
   const [flyTarget, setFlyTarget] = useState<[number, number] | null>(null);
   const [statesGeoJSON, setStatesGeoJSON] = useState<FeatureCollection | null>(null);
+  const [districtsGeoJSON, setDistrictsGeoJSON] = useState<FeatureCollection | null>(null);
   const [mapMoved, setMapMoved] = useState(false);
   const [resetTrigger, setResetTrigger] = useState(0);
 
@@ -198,6 +211,7 @@ export default function DistrictFinder() {
 
   useEffect(() => {
     loadStatesGeoJSON().then(setStatesGeoJSON).catch(() => {});
+    loadDistrictsGeoJSON().then(setDistrictsGeoJSON).catch(() => {});
   }, []);
 
   // Prevent page scroll while this tab is active.
@@ -340,6 +354,7 @@ export default function DistrictFinder() {
         pinPosition={pinPosition}
         flyTarget={flyTarget}
         statesGeoJSON={statesGeoJSON}
+        districtsGeoJSON={districtsGeoJSON}
         highlightCdGEOID={result?.cdGEOID ?? null}
         resetTrigger={resetTrigger}
         onMoved={setMapMoved}

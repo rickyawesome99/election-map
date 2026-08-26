@@ -1,0 +1,2272 @@
+[
+  {
+    "id": "ocd-person/78610d0e-c790-4fc9-ab8e-0887adbbe063",
+    "name": "Al Muratsuchi",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:ca/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Al",
+    "family_name": "Muratsuchi",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_66.jpg",
+    "email": "assemblymember.muratsuchi@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1964-09-04",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0066;"
+    },
+    "created_at": "2018-10-18T14:35:21.209944+00:00",
+    "updated_at": "2026-05-10T00:11:27.402483+00:00",
+    "openstates_url": "https://openstates.org/person/al-muratsuchi-3f9QlLdFSsonjDLkj9caGp/"
+  },
+  {
+    "id": "ocd-person/5d0057a2-e04d-44ca-b1d5-fc55e113351a",
+    "name": "Alex Lee",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ca/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Lee",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_24.jpg",
+    "email": "assemblymember.lee@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1995-07-11",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0024;"
+    },
+    "created_at": "2020-12-16T06:02:55.248049+00:00",
+    "updated_at": "2026-05-10T00:11:53.449154+00:00",
+    "openstates_url": "https://openstates.org/person/alex-lee-2pURSKdvhu27eA1Au6rqdW/"
+  },
+  {
+    "id": "ocd-person/eb9c8103-ac9d-4342-9d95-5086d867a9bd",
+    "name": "Ali Macedo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ca/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Ali",
+    "family_name": "Macedo",
+    "image": "https://www.joincalifornia.com/candidate_pic.php?id=15000",
+    "email": "assemblymember.macedo@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:54.910935+00:00",
+    "updated_at": "2025-03-05T06:13:45.248050+00:00",
+    "openstates_url": "https://openstates.org/person/ali-macedo-7AaibBqvmyem75eq1dgRcT/"
+  },
+  {
+    "id": "ocd-person/c3921173-9680-4387-a70e-ebba5c599846",
+    "name": "Anamarie Avila Farias",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ca/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Anamarie",
+    "family_name": "Avila Farias",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Anamarie_Avila_Farias_20240905_034457.jpg",
+    "email": "assemblymember.avilafarias@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:50.748134+00:00",
+    "updated_at": "2025-03-05T06:14:21.678186+00:00",
+    "openstates_url": "https://openstates.org/person/anamarie-avila-farias-5x2FwIlCMDfORdxZpMQ4Fa/"
+  },
+  {
+    "id": "ocd-person/820619fd-d053-4915-b099-1d134a880228",
+    "name": "Ash Kalra",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ca/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Ash",
+    "family_name": "Kalra",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_25.jpg",
+    "email": "assemblymember.kalra@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1972-01-21",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA   94249-0025;"
+    },
+    "created_at": "2018-10-18T14:35:31.132450+00:00",
+    "updated_at": "2026-05-10T00:11:44.956674+00:00",
+    "openstates_url": "https://openstates.org/person/ash-kalra-3xLn2H9yyE25Agsny9tcWu/"
+  },
+  {
+    "id": "ocd-person/87062971-b583-4983-8ac5-4af98bef354d",
+    "name": "Avelino Valencia",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:ca/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Avelino",
+    "family_name": "Valencia",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_68.jpg",
+    "email": "assemblymember.valencia@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1988-11-12",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0068;"
+    },
+    "created_at": "2023-01-04T02:16:19.361225+00:00",
+    "updated_at": "2026-05-10T00:11:31.532144+00:00",
+    "openstates_url": "https://openstates.org/person/avelino-valencia-46mmMq6nyGgDmnVKC8leVZ/"
+  },
+  {
+    "id": "ocd-person/f2ba8154-6bf3-4e5e-af05-9412e2a189f2",
+    "name": "Blanca Pacheco",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:ca/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Blanca",
+    "family_name": "Pacheco",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_64.jpg",
+    "email": "assemblymember.pacheco@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1974-04-17",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0064;"
+    },
+    "created_at": "2023-01-04T02:15:16.633922+00:00",
+    "updated_at": "2026-05-10T00:12:04.633069+00:00",
+    "openstates_url": "https://openstates.org/person/blanca-pacheco-7O1NKHCiplVUpeHDMBj86M/"
+  },
+  {
+    "id": "ocd-person/82cbb6e9-8486-44ec-8450-86d1e700f828",
+    "name": "Blanca Rubio",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:ca/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Blanca",
+    "family_name": "Rubio",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_48.jpg",
+    "email": "assemblymember.rubio@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1969-09-15",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0048;"
+    },
+    "created_at": "2018-10-18T14:35:24.031613+00:00",
+    "updated_at": "2026-05-10T00:11:49.450224+00:00",
+    "openstates_url": "https://openstates.org/person/blanca-rubio-3yo6DXAsf2qMrNKwBKc8ee/"
+  },
+  {
+    "id": "ocd-person/8230907e-9ae3-4ae9-b52a-c8464a157f64",
+    "name": "Buffy Wicks",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ca/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Buffy",
+    "family_name": "Wicks",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_14.jpg",
+    "email": "assemblymember.wicks@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1977-08-10",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0014;"
+    },
+    "created_at": "2019-01-02T10:16:44.645873+00:00",
+    "updated_at": "2026-05-10T00:11:47.280319+00:00",
+    "openstates_url": "https://openstates.org/person/buffy-wicks-3xfCBPBFmuZG8N34eFwG28/"
+  },
+  {
+    "id": "ocd-person/053d119b-847e-43bf-9a22-18b5f309067f",
+    "name": "Carl DeMaio",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:ca/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Carl",
+    "family_name": "DeMaio",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/159263.jpg",
+    "email": "assemblymember.demaio@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1974-09-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:42.084880+00:00",
+    "updated_at": "2025-03-05T06:13:30.562156+00:00",
+    "openstates_url": "https://openstates.org/person/carl-demaio-9srwpvjrafwNYfgGi85ap/"
+  },
+  {
+    "id": "ocd-person/3864202e-3b40-430e-a218-cfe56d83cee5",
+    "name": "Catherine Stefani",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ca/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Catherine",
+    "family_name": "Stefani",
+    "image": "https://sfbos.org/sites/default/files/Roster_frame_stefani_0.jpg",
+    "email": "assemblymember.stefani@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:53.044476+00:00",
+    "updated_at": "2026-04-25T00:11:54.679667+00:00",
+    "openstates_url": "https://openstates.org/person/catherine-stefani-1iPKKOXV08iC30j4g0B6rF/"
+  },
+  {
+    "id": "ocd-person/434bcfb4-1279-40cc-916b-f89af5805a9c",
+    "name": "Cecilia Aguiar-Curry",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ca/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Cecilia",
+    "family_name": "Aguiar-Curry",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_04.jpg",
+    "email": "assemblymember.aguiar-curry@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1954-09-25",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0004;"
+    },
+    "created_at": "2018-10-18T14:35:11.675177+00:00",
+    "updated_at": "2026-05-10T00:11:52.120497+00:00",
+    "openstates_url": "https://openstates.org/person/cecilia-aguiar-curry-22z8AalOo8QsISWxTrruf6/"
+  },
+  {
+    "id": "ocd-person/1dbf574d-4c03-40ce-8c30-a6727c4bd5ab",
+    "name": "Celeste Rodriguez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:ca/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Celeste",
+    "family_name": "Rodriguez",
+    "image": "https://ci.san-fernando.ca.us/wp-content/uploads/2021/07/Rodriguez-Celeste-2021-267x300.png",
+    "email": "assemblymember.celesterodriguez@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:41.765004+00:00",
+    "updated_at": "2025-03-05T06:14:47.525456+00:00",
+    "openstates_url": "https://openstates.org/person/celeste-rodriguez-u8Dft6f2bJypLvsSkYiJH/"
+  },
+  {
+    "id": "ocd-person/84a80bdb-37d5-4f52-8f55-e116fb97ca58",
+    "name": "Chris Rogers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ca/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Rogers",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsvc9FWYBOubY6iEQhH0tArBAvSS_ZMhoOGw&s",
+    "email": "assemblymember.rogers@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1987-09-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:46.386952+00:00",
+    "updated_at": "2025-03-05T06:13:58.333517+00:00",
+    "openstates_url": "https://openstates.org/person/chris-rogers-42JmdmOBIgsoDOoAGdDiTQ/"
+  },
+  {
+    "id": "ocd-person/71590420-10d6-4deb-8d59-453256d625b6",
+    "name": "Chris Ward",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:ca/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Ward",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_78.jpg",
+    "email": "assemblymember.ward@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1976-08-03",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0078;"
+    },
+    "created_at": "2020-12-16T06:02:51.243890+00:00",
+    "updated_at": "2026-05-10T00:11:29.758796+00:00",
+    "openstates_url": "https://openstates.org/person/chris-ward-3RsoQoWtEibUkTeq6KKh8w/"
+  },
+  {
+    "id": "ocd-person/e351eaa3-8aa1-4f26-a8ff-2a260a0ad383",
+    "name": "Corey Jackson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:ca/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Corey",
+    "family_name": "Jackson",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_60.jpg",
+    "email": "assemblymember.jackson@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0060;"
+    },
+    "created_at": "2023-01-04T02:15:29.862293+00:00",
+    "updated_at": "2026-05-10T00:12:13.101747+00:00",
+    "openstates_url": "https://openstates.org/person/corey-jackson-6uwh2Uin0xvh6Kqk49yjXX/"
+  },
+  {
+    "id": "ocd-person/c766abf8-06ca-4a98-9665-82b87149ca96",
+    "name": "Cottie Petrie-Norris",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:ca/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Cottie",
+    "family_name": "Petrie-Norris",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_73.jpg",
+    "email": "assemblymember.petrie-norris@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1975-08-07",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849  Sacramento, CA  94249-0074"
+    },
+    "created_at": "2019-01-02T10:16:30.433558+00:00",
+    "updated_at": "2026-05-10T00:11:30.653387+00:00",
+    "openstates_url": "https://openstates.org/person/cottie-petrie-norris-64GORHAiJOn5TOA2yDc1GI/"
+  },
+  {
+    "id": "ocd-person/32e06e60-77ac-4c5e-af1e-2110b602dc97",
+    "name": "Damon Connolly",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ca/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Damon",
+    "family_name": "Connolly",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_12.jpg",
+    "email": "assemblymember.connolly@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1963-06-19",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0012;"
+    },
+    "created_at": "2023-01-04T02:16:37.756019+00:00",
+    "updated_at": "2026-05-10T00:12:12.654874+00:00",
+    "openstates_url": "https://openstates.org/person/damon-connolly-1Y0BGMRp3E70goGtm534dT/"
+  },
+  {
+    "id": "ocd-person/86218623-ea63-4b2a-ab5c-7694e3f4a18a",
+    "name": "Darsh Patel",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:ca/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Darsh",
+    "family_name": "Patel",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Darshana_Patel.jpg",
+    "email": "assemblymember.patel@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:43.265421+00:00",
+    "updated_at": "2025-03-05T06:14:56.120725+00:00",
+    "openstates_url": "https://openstates.org/person/darsh-patel-456I7g8kL3QaiWhiodD19G/"
+  },
+  {
+    "id": "ocd-person/52f6ccc1-eb4a-4c09-8614-5e4022395605",
+    "name": "David Alvarez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:ca/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Alvarez",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_80.jpg",
+    "email": "assemblymember.alvarez@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1980-07-27",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0080;"
+    },
+    "created_at": "2022-06-24T18:36:39.642501+00:00",
+    "updated_at": "2026-05-10T00:11:52.583337+00:00",
+    "openstates_url": "https://openstates.org/person/david-alvarez-2WY9prHCc38wpiRKA8ijC9/"
+  },
+  {
+    "id": "ocd-person/748ce69c-a2bc-41a7-95e2-b09fba6e5ecd",
+    "name": "David Tangipa",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ca/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Tangipa",
+    "image": "https://youngamericans.berkeley.edu/wp-content/uploads/2024/04/David-Tangipa-1024x1024.jpg",
+    "email": "assemblymember.tangipa@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:39.935257+00:00",
+    "updated_at": "2025-03-05T06:14:55.430924+00:00",
+    "openstates_url": "https://openstates.org/person/david-tangipa-3XvV6sHKB12S3pQOThAtPZ/"
+  },
+  {
+    "id": "ocd-person/eddfcfb5-2d07-4e5b-81a0-88e5703dc0bb",
+    "name": "Dawn Addis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ca/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Dawn",
+    "family_name": "Addis",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_30.jpg",
+    "email": "dawn.addis@asm.ca.gov",
+    "gender": "Female",
+    "birth_date": "1972-07-12",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0030;"
+    },
+    "created_at": "2023-01-04T02:17:34.633846+00:00",
+    "updated_at": "2026-05-10T00:12:07.349401+00:00",
+    "openstates_url": "https://openstates.org/person/dawn-addis-7ErSjyICge36yuZGbXTBdL/"
+  },
+  {
+    "id": "ocd-person/0c4e1b43-c3d7-4a13-87c4-92e29903cb73",
+    "name": "Diane Dixon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:ca/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Diane",
+    "family_name": "Dixon",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_72.jpg",
+    "email": "assemblymember.dixon@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0072;"
+    },
+    "created_at": "2023-01-04T02:16:07.235541+00:00",
+    "updated_at": "2026-05-10T00:11:38.303954+00:00",
+    "openstates_url": "https://openstates.org/person/diane-dixon-NDbMlBFPyRC8bJq0jp5uN/"
+  },
+  {
+    "id": "ocd-person/20c72bef-f518-4677-bbcb-83c502c36ede",
+    "name": "Diane Papan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ca/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Diane",
+    "family_name": "Papan",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_21.jpg",
+    "email": "assemblymember.papan@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1963-08-22",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0021;"
+    },
+    "created_at": "2023-01-04T02:15:13.975668+00:00",
+    "updated_at": "2026-05-10T00:12:13.556245+00:00",
+    "openstates_url": "https://openstates.org/person/diane-papan-zqm7WzD59uX5wjaTfg7VW/"
+  },
+  {
+    "id": "ocd-person/d2a8e29a-5eac-4e2a-a686-d1bdb04927e7",
+    "name": "Esmeralda Soria",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ca/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Esmeralda",
+    "family_name": "Soria",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_27.jpg",
+    "email": "assemblymember.soria@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1982-04-22",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0027;"
+    },
+    "created_at": "2023-01-04T02:16:57.411223+00:00",
+    "updated_at": "2026-05-10T00:11:33.763194+00:00",
+    "openstates_url": "https://openstates.org/person/esmeralda-soria-6PVZIn51uCteYNFo5KctZX/"
+  },
+  {
+    "id": "ocd-person/2944d19a-c288-4f32-b6a0-72e35f48e570",
+    "name": "Gail Pellerin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ca/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Gail",
+    "family_name": "Pellerin",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_28.jpg",
+    "email": "assemblymember.pellerin@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1962-06-24",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0028;"
+    },
+    "created_at": "2023-01-04T02:15:56.934753+00:00",
+    "updated_at": "2026-05-10T00:11:32.881255+00:00",
+    "openstates_url": "https://openstates.org/person/gail-pellerin-1Fs8PWF8ap986fP8vMKeZs/"
+  },
+  {
+    "id": "ocd-person/50e55c91-8b18-45ea-a074-bf500e7a299e",
+    "name": "Greg Wallis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:ca/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Wallis",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_47.jpg",
+    "email": "assemblymember.wallis@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1990-05-15",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0047;"
+    },
+    "created_at": "2023-01-04T02:15:50.118110+00:00",
+    "updated_at": "2026-05-10T00:12:08.682178+00:00",
+    "openstates_url": "https://openstates.org/person/greg-wallis-2SeCgs1SIceutRcUuHVgDu/"
+  },
+  {
+    "id": "ocd-person/57f76b8e-63ba-4aa7-93c9-0b0853ce2279",
+    "name": "Gregg Hart",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ca/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Gregg",
+    "family_name": "Hart",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_37.jpg",
+    "email": "assemblymember.hart@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0037;"
+    },
+    "created_at": "2023-01-04T02:15:26.358051+00:00",
+    "updated_at": "2026-05-10T00:11:55.752755+00:00",
+    "openstates_url": "https://openstates.org/person/gregg-hart-2fzP25L7u8j8C4y29iZ6Hx/"
+  },
+  {
+    "id": "ocd-person/c830a90c-8964-4c0f-b31b-729cab1144fd",
+    "name": "Heath Flora",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ca/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Heath",
+    "family_name": "Flora",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_09.jpg",
+    "email": "assemblymember.flora@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1983-07-19",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849  Sacramento, CA 94249-0012"
+    },
+    "created_at": "2018-10-18T14:35:35.761047+00:00",
+    "updated_at": "2026-05-10T00:11:22.678253+00:00",
+    "openstates_url": "https://openstates.org/person/heath-flora-65khbFNdTi2aA3p0nCqsm5/"
+  },
+  {
+    "id": "ocd-person/3b125433-5362-42e2-a2b5-b608962c9481",
+    "name": "Heather Hadwick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ca/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Heather",
+    "family_name": "Hadwick",
+    "image": "https://theorion.com/wp-content/uploads/2024/09/Hadwick-MCOE-.jpg",
+    "email": "assemblymember.hadwick@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:45.337316+00:00",
+    "updated_at": "2025-03-05T06:13:26.788709+00:00",
+    "openstates_url": "https://openstates.org/person/heather-hadwick-1nSvGQ5pk6KCzQcjV8r3c9/"
+  },
+  {
+    "id": "ocd-person/e9e56c3e-1c7d-4eab-a3ac-35cfc7c6a651",
+    "name": "Isaac Bryan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:ca/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Isaac",
+    "family_name": "Bryan",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_55.jpg",
+    "email": "assemblymember.bryan@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1992-01-16",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849  Sacramento, CA 94249-0054"
+    },
+    "created_at": "2021-06-01T20:03:33.141734+00:00",
+    "updated_at": "2026-05-10T00:12:06.865426+00:00",
+    "openstates_url": "https://openstates.org/person/isaac-bryan-77M3dgSOND8AMgFmExhRJp/"
+  },
+  {
+    "id": "ocd-person/e7ad99fd-fda5-4114-af3e-320f5be9be3c",
+    "name": "Jacqui Irwin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:ca/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Jacqui",
+    "family_name": "Irwin",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_42.jpg",
+    "email": "assemblymember.irwin@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1962-01-03",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0042;"
+    },
+    "created_at": "2018-10-18T14:35:20.985613+00:00",
+    "updated_at": "2026-05-10T00:11:41.821930+00:00",
+    "openstates_url": "https://openstates.org/person/jacqui-irwin-73AYwgwC83PVhmxChW8616/"
+  },
+  {
+    "id": "ocd-person/5d93a1cb-7a01-43ab-a26c-a2abecdee135",
+    "name": "James Gallagher",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ca/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Gallagher",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_03.jpg",
+    "email": "assemblymember.gallagher@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1981-03-04",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0003;"
+    },
+    "created_at": "2018-10-18T14:35:11.890826+00:00",
+    "updated_at": "2026-05-10T00:12:05.491856+00:00",
+    "openstates_url": "https://openstates.org/person/james-gallagher-2qZkm1AUAk0Zw72tZqoz93/"
+  },
+  {
+    "id": "ocd-person/156660b1-4c3f-45e3-8384-53cda60d7ea5",
+    "name": "James Ramos",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:ca/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Ramos",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_45.jpg",
+    "email": "assemblymember.ramos@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1967-01-29",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849  Sacramento, CA 94249-0040"
+    },
+    "created_at": "2019-01-02T10:16:10.168919+00:00",
+    "updated_at": "2026-05-10T00:11:59.306995+00:00",
+    "openstates_url": "https://openstates.org/person/james-ramos-eNcmq6IPdNVwqmhNbEkXl/"
+  },
+  {
+    "id": "ocd-person/b08199e4-63d9-4bd4-9be3-99e628fa7059",
+    "name": "Jasmeet Bains",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ca/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Jasmeet",
+    "family_name": "Bains",
+    "image": "",
+    "email": "assemblymember.bains@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1986-07-02",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0035;"
+    },
+    "created_at": "2023-01-04T02:15:41.945312+00:00",
+    "updated_at": "2025-04-25T00:11:59.118162+00:00",
+    "openstates_url": "https://openstates.org/person/jasmeet-bains-5N3sOrjqCIzQVvoubhQ2jh/"
+  },
+  {
+    "id": "ocd-person/552b5bf7-472d-48a4-bb9a-132c1f044737",
+    "name": "Jeff Gonzalez",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ca/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Gonzalez",
+    "image": "https://californiaglobe.com/wp-content/uploads/2024/10/Screenshot-2024-10-03-at-7.03.49%E2%80%AFAM-708x642.png",
+    "email": "assemblymember.gonzalez@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1974-08-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:58.917311+00:00",
+    "updated_at": "2025-03-05T06:13:59.841886+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-gonzalez-2aiA6etiuVMbbIVnu0TCkB/"
+  },
+  {
+    "id": "ocd-person/407f6fda-8638-4cca-9704-7aa8df7de26e",
+    "name": "Jesse Gabriel",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:ca/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Jesse",
+    "family_name": "Gabriel",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_46.jpg",
+    "email": "assemblymember.gabriel@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1981-09-25",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0046;"
+    },
+    "created_at": "2018-10-18T14:35:15.222086+00:00",
+    "updated_at": "2026-05-10T00:11:57.445417+00:00",
+    "openstates_url": "https://openstates.org/person/jesse-gabriel-1xhkMPb2PaqZOKDuGmXGVq/"
+  },
+  {
+    "id": "ocd-person/81d9225e-7584-43c9-9e9b-f12b7e7dbd4e",
+    "name": "Jessica Caloza",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:ca/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Jessica",
+    "family_name": "Caloza",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/158655.jpg",
+    "email": "assemblymember.caloza@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:57.372419+00:00",
+    "updated_at": "2025-03-05T06:14:39.708181+00:00",
+    "openstates_url": "https://openstates.org/person/jessica-caloza-3x1EvgOG0ekJ8LpNy89dBG/"
+  },
+  {
+    "id": "ocd-person/e2da0f08-1bd8-4ac2-95f1-002870238527",
+    "name": "Joaquin Arambula",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ca/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Joaquin",
+    "family_name": "Arambula",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_31.jpg",
+    "email": "assemblymember.arambula@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1977-05-17",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0031;"
+    },
+    "created_at": "2018-10-18T14:35:35.607968+00:00",
+    "updated_at": "2026-05-10T00:12:07.793478+00:00",
+    "openstates_url": "https://openstates.org/person/joaquin-arambula-6u3uyg9EulRo1VENeajVKx/"
+  },
+  {
+    "id": "ocd-person/c7a404d9-03f7-4e82-b730-1623da31d4cc",
+    "name": "Joe Patterson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ca/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Patterson",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_05.jpg",
+    "email": "assemblymember.joepatterson@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0005;"
+    },
+    "created_at": "2023-01-04T02:17:20.547231+00:00",
+    "updated_at": "2026-05-10T00:12:09.153049+00:00",
+    "openstates_url": "https://openstates.org/person/joe-patterson-64iQefFynSk8D5MrZClWCy/"
+  },
+  {
+    "id": "ocd-person/0253bb3f-2fcb-49ed-a85d-578fee726be8",
+    "name": "John Harabedian",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:ca/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Harabedian",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/158662.jpg",
+    "email": "assemblymember.harabedian@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:40.393602+00:00",
+    "updated_at": "2025-03-05T06:14:20.117973+00:00",
+    "openstates_url": "https://openstates.org/person/john-harabedian-4OFV68csDRS47x1slTI6a/"
+  },
+  {
+    "id": "ocd-person/b20254b0-437a-4d3d-9aa9-baa5db2bc5ef",
+    "name": "Josh Lowenthal",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:ca/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Lowenthal",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_69.jpg",
+    "email": "assemblymember.lowenthal@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1970-02-15",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA   94249-0069;"
+    },
+    "created_at": "2023-01-04T02:16:18.151331+00:00",
+    "updated_at": "2026-05-10T00:12:00.699995+00:00",
+    "openstates_url": "https://openstates.org/person/josh-lowenthal-5PthMRwpBlOFmOrf44uGnH/"
+  },
+  {
+    "id": "ocd-person/71aa54c0-3fad-499c-928e-ffbb692a970b",
+    "name": "Joshua Hoover",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ca/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Joshua",
+    "family_name": "Hoover",
+    "image": "",
+    "email": "assemblymember.hoover@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1988-04-11",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0007;"
+    },
+    "created_at": "2023-01-04T02:15:59.195112+00:00",
+    "updated_at": "2025-05-15T00:11:17.885677+00:00",
+    "openstates_url": "https://openstates.org/person/joshua-hoover-3STyPpHwhUuWRyRJDetQkN/"
+  },
+  {
+    "id": "ocd-person/b9c75c1e-6ea8-4fae-9efa-a7bf0a0cb2cc",
+    "name": "Jos\u00e9 Solache",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:ca/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Jos\u00e9",
+    "family_name": "Solache",
+    "image": "https://www.lynwoodca.gov/ImageRepository/Document?documentID=302",
+    "email": "assemblymember.solache@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:43.735919+00:00",
+    "updated_at": "2025-02-04T00:09:32.533854+00:00",
+    "openstates_url": "https://openstates.org/person/jose-solache-5eYgfPqG3LRdR4Q6o4HjH2/"
+  },
+  {
+    "id": "ocd-person/dfb00d6c-1d0d-410f-8a06-d54841495a62",
+    "name": "Juan Alanis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ca/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Juan",
+    "family_name": "Alanis",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_22.jpg",
+    "email": "assemblymember.alanis@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1978-06-17",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0022;"
+    },
+    "created_at": "2023-01-04T02:15:34.274416+00:00",
+    "updated_at": "2026-05-10T00:11:49.895734+00:00",
+    "openstates_url": "https://openstates.org/person/juan-alanis-6o5kCB6aolJBO3QUQY9EKw/"
+  },
+  {
+    "id": "ocd-person/092bda0e-23a9-4d25-92a9-5808e996702b",
+    "name": "Juan Carrillo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ca/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Juan",
+    "family_name": "Carrillo",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_39.jpg",
+    "email": "assemblymember.juancarrillo@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0039;"
+    },
+    "created_at": "2023-01-04T02:16:21.638000+00:00",
+    "updated_at": "2026-05-21T06:10:56.727548+00:00",
+    "openstates_url": "https://openstates.org/person/juan-carrillo-HIyDWp1TyLOWBNwbhe5wx/"
+  },
+  {
+    "id": "ocd-person/76378b56-7ad9-463c-a4fd-47c665b26ee8",
+    "name": "Kate Sanchez",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:ca/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Kate",
+    "family_name": "Sanchez",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_71.jpg",
+    "email": "assemblymember.sanchez@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0071;"
+    },
+    "created_at": "2023-01-04T02:16:00.390386+00:00",
+    "updated_at": "2026-05-10T00:11:40.485689+00:00",
+    "openstates_url": "https://openstates.org/person/kate-sanchez-3b4TewxJp2XRxeNQdJjmTw/"
+  },
+  {
+    "id": "ocd-person/895f777d-ae7b-429a-aa0f-1b2895c13945",
+    "name": "LaShae Sharp-Collins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:ca/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "LaShae",
+    "family_name": "Sharp-Collins",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/lscollins.JPG",
+    "email": "assemblymember.sharpcollins@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:56.549996+00:00",
+    "updated_at": "2025-03-05T06:14:43.804146+00:00",
+    "openstates_url": "https://openstates.org/person/lashae-sharp-collins-4BDZmrrOBTUYwUK5ZIgmeb/"
+  },
+  {
+    "id": "ocd-person/1b3ac39e-7b50-4263-bd1d-add1e91d71b9",
+    "name": "Laurie Davies",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:ca/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Laurie",
+    "family_name": "Davies",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_74.jpg",
+    "email": "assemblymember.davies@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1962-02-27",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0074;"
+    },
+    "created_at": "2020-12-16T06:02:50.483237+00:00",
+    "updated_at": "2026-05-10T00:11:45.431771+00:00",
+    "openstates_url": "https://openstates.org/person/laurie-davies-pNeBLmhlY3QsdOZALyJhJ/"
+  },
+  {
+    "id": "ocd-person/06d4d543-2374-436f-978d-b924c7ec7d53",
+    "name": "Leticia Castillo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:ca/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Leticia",
+    "family_name": "Castillo",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/May162022532PM_104500298_0304E3268B78420096DFCD3FA3DB99B7-min.jpeg",
+    "email": "assemblymember.castillo@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T18:18:19.370814+00:00",
+    "updated_at": "2025-03-05T06:13:53.787925+00:00",
+    "openstates_url": "https://openstates.org/person/leticia-castillo-CtDZbaL4hJFpE6MJj6qmZ/"
+  },
+  {
+    "id": "ocd-person/ed58ae30-ffe5-4395-9353-141e4018cbe3",
+    "name": "Lisa Calderon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:ca/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Calderon",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_56.jpg",
+    "email": "assemblymember.calderon@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1965-01-25",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849  Sacramento, CA  94249-0057"
+    },
+    "created_at": "2020-12-16T06:02:54.347534+00:00",
+    "updated_at": "2026-05-10T00:11:53.936427+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-calderon-7Drhvjae0S4US5VH5jw2eB/"
+  },
+  {
+    "id": "ocd-person/54e48d10-22e1-43da-b114-c1d3f741faff",
+    "name": "Liz Ortega",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ca/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Ortega",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_20.jpg",
+    "email": "assemblymember.ortega@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1977-08-26",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0020;"
+    },
+    "created_at": "2023-01-04T02:16:39.047954+00:00",
+    "updated_at": "2026-05-10T00:11:44.508311+00:00",
+    "openstates_url": "https://openstates.org/person/liz-ortega-2aBnoxDquV44LsgjYnpMXn/"
+  },
+  {
+    "id": "ocd-person/926d1337-0318-4c12-a291-178f10199b23",
+    "name": "Lori Wilson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ca/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Lori",
+    "family_name": "Wilson",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_11.jpg",
+    "email": "assemblymember.wilson@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1976-07-17",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0011;"
+    },
+    "created_at": "2022-04-14T07:25:21.846205+00:00",
+    "updated_at": "2026-05-10T00:11:54.863512+00:00",
+    "openstates_url": "https://openstates.org/person/lori-wilson-4SIj5Ha9jZk6Kv6LRcSAlv/"
+  },
+  {
+    "id": "ocd-person/e8ac7b26-03a5-4818-b05d-0f379029bbdb",
+    "name": "Maggy Krell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ca/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Maggy",
+    "family_name": "Krell",
+    "image": "https://lettersandscience.ucdavis.edu/sites/g/files/dgvnsk15706/files/styles/sf_profile/public/images/person/Maggy%20Krell.jpeg?h=a7e6d17b&itok=kwhSUK6x",
+    "email": "assemblymember.krell@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:51.055693+00:00",
+    "updated_at": "2025-03-05T06:14:32.025871+00:00",
+    "openstates_url": "https://openstates.org/person/maggy-krell-7532ipUKoRZ2K7qxqJh8uJ/"
+  },
+  {
+    "id": "ocd-person/24facf9e-7fb1-4475-9120-05cd0145c7c1",
+    "name": "Marc Berman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ca/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Marc",
+    "family_name": "Berman",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_23.jpg",
+    "email": "assemblymember.berman@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1980-10-31",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849  Sacramento, CA 94249-0024"
+    },
+    "created_at": "2018-10-18T14:35:16.500375+00:00",
+    "updated_at": "2026-05-10T00:12:02.011399+00:00",
+    "openstates_url": "https://openstates.org/person/marc-berman-17mLN7UhRdWcQpFfpdR9RR/"
+  },
+  {
+    "id": "ocd-person/4a6f5a5d-275e-4fb2-a8bf-bb1272d4dfbb",
+    "name": "Mark Gonz\u00e1lez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:ca/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Gonz\u00e1lez",
+    "image": "https://www.sgvtribune.com/wp-content/uploads/2024/10/LDN-L-ELX-VG-ASSMD54-GONZALEZ.jpg?w=520",
+    "email": "assemblymember.gonzalez@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:35.492919+00:00",
+    "updated_at": "2025-03-05T06:14:25.032706+00:00",
+    "openstates_url": "https://openstates.org/person/mark-gonzalez-2GSJsaYsUu9eLn9JSwRZAx/"
+  },
+  {
+    "id": "ocd-person/cc6eb833-e16b-472a-83ec-31e7df1b1cd9",
+    "name": "Matt Haney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ca/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Haney",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_17.jpg",
+    "email": "assemblymember.haney@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1982-04-17",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0017;"
+    },
+    "created_at": "2022-05-04T17:31:19.515744+00:00",
+    "updated_at": "2026-05-10T00:12:10.513128+00:00",
+    "openstates_url": "https://openstates.org/person/matt-haney-6Dl25SE2wdlEhblPIkLocb/"
+  },
+  {
+    "id": "ocd-person/a467d09d-289d-4e5a-a2af-a0ce20af14e1",
+    "name": "Mia Bonta",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ca/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Mia",
+    "family_name": "Bonta",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_18.jpg",
+    "email": "assemblymember.mbonta@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1972-01-26",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0018;"
+    },
+    "created_at": "2021-12-16T18:40:52.878631+00:00",
+    "updated_at": "2026-05-10T00:11:36.460460+00:00",
+    "openstates_url": "https://openstates.org/person/mia-bonta-50EBTmRDmKmdB7AitwPCiH/"
+  },
+  {
+    "id": "ocd-person/c8e36b71-c739-4afb-b8e9-cbdd4d362693",
+    "name": "Michelle Rodriguez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:ca/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Rodriguez",
+    "image": "https://michelleforassembly.com/cms/wp-content/uploads/2023/08/new-safe-meeno-MICHELLE_RODRIGUEZ-2023.07_011.jpg",
+    "email": "assemblymember.michellerodriguez@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:36.736570+00:00",
+    "updated_at": "2025-03-05T06:14:17.762738+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-rodriguez-674Oa7MtweNh1FlTlieIWh/"
+  },
+  {
+    "id": "ocd-person/3a7bde9c-8709-49c7-89e4-0835ea1f9eb6",
+    "name": "Mike Fong",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:ca/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Fong",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_49.jpg",
+    "email": "assemblymember.mikefong@asm.ca.gov",
+    "gender": "Male",
+    "birth_date": "1976-02-29",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0049;"
+    },
+    "created_at": "2022-03-01T22:04:57.620607+00:00",
+    "updated_at": "2026-05-10T00:12:14.860368+00:00",
+    "openstates_url": "https://openstates.org/person/mike-fong-1mMA8ZJ8jdy9cvd1Y7nk2Q/"
+  },
+  {
+    "id": "ocd-person/404dbee4-6b74-4249-ab26-9644cab7c7d5",
+    "name": "Mike Gipson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:ca/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Gipson",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_65.jpg",
+    "email": "assemblymember.gipson@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1966-06-25",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0065;"
+    },
+    "created_at": "2018-10-18T14:35:15.640314+00:00",
+    "updated_at": "2026-05-10T00:12:09.602551+00:00",
+    "openstates_url": "https://openstates.org/person/mike-gipson-1xL2P8scJyJmtynkdPcPOX/"
+  },
+  {
+    "id": "ocd-person/0c47a1ba-99a2-44a9-8c65-fcad12aeee97",
+    "name": "Natasha Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:ca/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Natasha",
+    "family_name": "Johnson",
+    "image": "",
+    "email": "assemblymember.johnson@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-29T00:11:16.343360+00:00",
+    "updated_at": "2026-01-29T06:10:30.905948+00:00",
+    "openstates_url": "https://openstates.org/person/natasha-johnson-NAduU63pCS5qLmi2g53Hr/"
+  },
+  {
+    "id": "ocd-person/06ae0707-255b-4af9-8e3e-c940e8f29600",
+    "name": "Nick Schultz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:ca/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Schultz",
+    "image": "https://www.burbankca.gov/documents/1626247/0/20210330-nick-schultz-001.jpg",
+    "email": "assemblymember.schultz@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1988-08-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:54.434716+00:00",
+    "updated_at": "2025-03-05T06:13:43.853667+00:00",
+    "openstates_url": "https://openstates.org/person/nick-schultz-CbU3IlEwRvkiRayenxdTc/"
+  },
+  {
+    "id": "ocd-person/a86994f3-ffe3-4dc6-9e79-bcba7346f919",
+    "name": "Patrick Ahrens",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ca/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Ahrens",
+    "image": "http://www.fhda.edu/_images/PatrickAhrens2018.jpg",
+    "email": "assemblymember.ahrens@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:41.480315+00:00",
+    "updated_at": "2025-03-05T06:14:01.208658+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-ahrens-57mxdp9Utr92Lfgx92A4Er/"
+  },
+  {
+    "id": "ocd-person/6ba768a4-2756-42b5-a5c5-f6b8b5db0491",
+    "name": "Phillip Chen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:ca/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Phillip",
+    "family_name": "Chen",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_59.jpg",
+    "email": "assemblymember.chen@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1978-04-22",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849  Sacramento, CA  94249-0055"
+    },
+    "created_at": "2018-10-18T14:35:14.412864+00:00",
+    "updated_at": "2026-05-10T00:11:35.974148+00:00",
+    "openstates_url": "https://openstates.org/person/phillip-chen-3H8gT9EkN35vhhhZHBNhmj/"
+  },
+  {
+    "id": "ocd-person/d12d3275-2086-4bf5-886b-c4de3823fbf9",
+    "name": "Pilar Schiavo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ca/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Pilar",
+    "family_name": "Schiavo",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_40.jpg",
+    "email": "assemblymember.schiavo@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1975-01-22",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0040;"
+    },
+    "created_at": "2023-01-04T02:16:12.871743+00:00",
+    "updated_at": "2026-05-10T00:11:38.762284+00:00",
+    "openstates_url": "https://openstates.org/person/pilar-schiavo-6Mi3BrLAZvmvGz93yfBHmT/"
+  },
+  {
+    "id": "ocd-person/2918acca-40a2-4819-a79a-b2873c7895bc",
+    "name": "Rebecca Bauer-Kahan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ca/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Rebecca",
+    "family_name": "Bauer-Kahan",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_16.jpg",
+    "email": "assemblymember.bauer-kahan@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1978-10-28",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0016;"
+    },
+    "created_at": "2019-01-02T10:15:53.645063+00:00",
+    "updated_at": "2026-05-10T00:11:44.055736+00:00",
+    "openstates_url": "https://openstates.org/person/rebecca-bauer-kahan-1FXxdWYlCINstFYRVYfxL2/"
+  },
+  {
+    "id": "ocd-person/86d18985-f35b-4e16-9fcc-663394a156ff",
+    "name": "Rhodesia Ransom",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ca/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Rhodesia",
+    "family_name": "Ransom",
+    "image": "https://ca.emergeamerica.org/wp-content/uploads/sites/4/2023/01/Rhodesia-Ransom.jpg",
+    "email": "assemblymember.ransom@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:51.751062+00:00",
+    "updated_at": "2025-03-05T06:13:36.119839+00:00",
+    "openstates_url": "https://openstates.org/person/rhodesia-ransom-46OjIMhaTtKO5LKfvZoLKJ/"
+  },
+  {
+    "id": "ocd-person/6b7e3458-361f-4fce-8a8c-069282db2af7",
+    "name": "Rick Zbur",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:ca/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Zbur",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_51.jpg",
+    "email": "assemblymember.zbur@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1957-03-02",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0051;"
+    },
+    "created_at": "2023-01-04T02:15:28.678540+00:00",
+    "updated_at": "2026-05-10T00:11:30.203016+00:00",
+    "openstates_url": "https://openstates.org/person/rick-zbur-3Gpqz3CpoW51XtCwAvv6mt/"
+  },
+  {
+    "id": "ocd-person/8b2f37bc-65b7-40ed-af14-5d93cb765a5d",
+    "name": "Robert Garcia",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:ca/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Garcia",
+    "image": "https://www.joincalifornia.com/candidate_pic.php?id=15124",
+    "email": "assemblymember.garcia@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-07-27T23:11:56.385905+00:00",
+    "updated_at": "2025-03-05T06:14:34.139095+00:00",
+    "openstates_url": "https://openstates.org/person/robert-garcia-4EdVkA20krliymrbdTNNrp/"
+  },
+  {
+    "id": "ocd-person/68f5ee30-aa70-489b-84b7-6501e6188751",
+    "name": "Robert Rivas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ca/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Rivas",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_29.jpg",
+    "email": "assemblymember.robertrivas@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1980-01-02",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0029;"
+    },
+    "created_at": "2019-01-02T10:16:31.964375+00:00",
+    "updated_at": "2026-05-10T00:12:05.938608+00:00",
+    "openstates_url": "https://openstates.org/person/robert-rivas-3C3ajfqG87onDc0PwKAYBl/"
+  },
+  {
+    "id": "ocd-person/6d83a613-6815-48c9-bb31-94adb1ee92ea",
+    "name": "Sade Elhawary",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:ca/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Sade",
+    "family_name": "Elhawary",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SadeElhawary2024.jpeg",
+    "email": "assemblymember.elhawary@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1987-12-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:45:42.955025+00:00",
+    "updated_at": "2025-03-05T06:13:57.581825+00:00",
+    "openstates_url": "https://openstates.org/person/sade-elhawary-3KeKI4DVszFjmhi73pY9so/"
+  },
+  {
+    "id": "ocd-person/840aa009-3ae4-4484-b9f0-5c5f5060e7db",
+    "name": "Sharon Quirk-Silva",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:ca/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Sharon",
+    "family_name": "Quirk-Silva",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_67.jpg",
+    "email": "assemblymember.quirk-silva@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1962-09-17",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0067;"
+    },
+    "created_at": "2018-10-18T14:35:31.702642+00:00",
+    "updated_at": "2026-05-10T00:11:28.314055+00:00",
+    "openstates_url": "https://openstates.org/person/sharon-quirk-silva-419qFyN2B8ManVh0v6Fevb/"
+  },
+  {
+    "id": "ocd-person/01fddc24-a5ac-40b7-a9e1-80e918fee609",
+    "name": "Stan Ellis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ca/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Stan",
+    "family_name": "Ellis",
+    "image": "",
+    "email": "assemblymember.ellis@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1952-07-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-03-29T00:11:57.279568+00:00",
+    "updated_at": "2025-04-25T00:11:45.254606+00:00",
+    "openstates_url": "https://openstates.org/person/stan-ellis-3l0PWm5XgrhksPLGJoV8z/"
+  },
+  {
+    "id": "ocd-person/62102f53-b531-4290-9699-05a0d7687cae",
+    "name": "Stephanie Nguyen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ca/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Stephanie",
+    "family_name": "Nguyen",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_10.jpg",
+    "email": "assemblymember.stephanienguyen@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1979-04-17",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0010;"
+    },
+    "created_at": "2023-01-04T02:16:50.671233+00:00",
+    "updated_at": "2026-05-10T00:11:25.023740+00:00",
+    "openstates_url": "https://openstates.org/person/stephanie-nguyen-2z2dxeeS7Oi6uNxZ5WWhYc/"
+  },
+  {
+    "id": "ocd-person/1e0ccfc0-2d57-4e57-8d16-589d07c1bc72",
+    "name": "Steve Bennett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ca/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Bennett",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_38.jpg",
+    "email": "assemblymember.bennett@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1950-12-31",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849  Sacramento, CA 94249-0037"
+    },
+    "created_at": "2020-12-16T06:02:50.911172+00:00",
+    "updated_at": "2026-05-10T00:11:26.491505+00:00",
+    "openstates_url": "https://openstates.org/person/steve-bennett-uhcjJviyv1mz9zIMu0Ox8/"
+  },
+  {
+    "id": "ocd-person/9e69729e-4383-410b-840e-ad4ea0f1ab4a",
+    "name": "Tasha Boerner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:ca/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Tasha",
+    "family_name": "Boerner",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_77.jpg",
+    "email": "assemblymember.boerner@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1973-02-01",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849  Sacramento, CA  94249-0076"
+    },
+    "created_at": "2019-01-02T10:16:02.148938+00:00",
+    "updated_at": "2026-05-10T00:11:37.817232+00:00",
+    "openstates_url": "https://openstates.org/person/tasha-boerner-4ouybAAhbHOxQ8noMjFzRq/"
+  },
+  {
+    "id": "ocd-person/1aa5dff4-3d71-4642-a5e6-e3d00a5b99f9",
+    "name": "Tina McKinnor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:ca/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Tina",
+    "family_name": "McKinnor",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_61.jpg",
+    "email": "assemblymember.mckinnor@assembly.ca.gov",
+    "gender": "Female",
+    "birth_date": "1964-09-30",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0061;"
+    },
+    "created_at": "2022-06-24T18:36:35.157472+00:00",
+    "updated_at": "2026-05-10T00:11:35.060170+00:00",
+    "openstates_url": "https://openstates.org/person/tina-mckinnor-oHbXZ9lVE1tOp1IM5o9O5/"
+  },
+  {
+    "id": "ocd-person/a8879d70-713c-4d0c-b723-77d0e96c18df",
+    "name": "Tom Lackey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ca/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Lackey",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_34.jpg",
+    "email": "assemblymember.lackey@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1959-03-12",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA  94249-0034;"
+    },
+    "created_at": "2018-10-18T14:35:32.710445+00:00",
+    "updated_at": "2026-05-10T00:11:32.411033+00:00",
+    "openstates_url": "https://openstates.org/person/tom-lackey-580gbRbwQRycc4I0Dsqffj/"
+  },
+  {
+    "id": "ocd-person/75229920-399d-4216-9b76-c27ea398665a",
+    "name": "Tri Ta",
+    "party": "Republican",
+    "current_role": {
+      "title": "Assemblymember",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:ca/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ca/government",
+      "name": "California",
+      "classification": "state"
+    },
+    "given_name": "Tri",
+    "family_name": "Ta",
+    "image": "https://webapi.assembly.ca.gov/district-media/assets/members/assembly_member_70.jpg",
+    "email": "assemblymember.ta@assembly.ca.gov",
+    "gender": "Male",
+    "birth_date": "1973-04-10",
+    "death_date": "",
+    "extras": {
+      "P.O. Box": "P.O. Box 942849, Sacramento, CA 94249-0070;"
+    },
+    "created_at": "2020-07-27T23:12:11.960291+00:00",
+    "updated_at": "2026-05-10T00:11:23.614500+00:00",
+    "openstates_url": "https://openstates.org/person/tri-ta-3Z1ue5czwsFWe0AVQqjBaU/"
+  }
+]

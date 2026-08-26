@@ -1,0 +1,3291 @@
+[
+  {
+    "id": "ocd-person/1439bad2-f18b-49e2-94ca-21f2b563dfdd",
+    "name": "Aaron Thompson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:ky/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Aaron",
+    "family_name": "Thompson",
+    "image": "https://content.campaignpartner.net/images/126420/Headshot.jpg",
+    "email": "aaron.thompson@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1991-05-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:33:58.193239+00:00",
+    "updated_at": "2026-01-29T06:47:44.716397+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-thompson-cAECkXoA3dB4dSUhXoAXN/"
+  },
+  {
+    "id": "ocd-person/e7f7a316-4eb0-4be9-adf9-e7067b20dcfc",
+    "name": "Adam Bowling",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:ky/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Bowling",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house87.jpg",
+    "email": "adam.bowling@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1982-02-04",
+    "death_date": "",
+    "extras": {
+      "home city": "Middlesboro",
+      "mailing address": "PO Box 2928 Middlesboro, KY 40965",
+      "counties represented": [
+        "Bell",
+        "Harlan"
+      ]
+    },
+    "created_at": "2019-01-10T02:15:14.733298+00:00",
+    "updated_at": "2026-04-04T00:51:48.379038+00:00",
+    "openstates_url": "https://openstates.org/person/adam-bowling-73iOfrGXyKJW9N6hx5lcLM/"
+  },
+  {
+    "id": "ocd-person/1ce736fd-c1ca-4366-a235-9509fdb2dcaf",
+    "name": "Adam Moore",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:ky/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Moore",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AdamMoore2024.jpg",
+    "email": "adam.moore@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1984-11-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:33:55.323728+00:00",
+    "updated_at": "2026-06-04T06:51:23.362601+00:00",
+    "openstates_url": "https://openstates.org/person/adam-moore-sXRwB6OVKEuYnmESe2J83/"
+  },
+  {
+    "id": "ocd-person/943724d5-5e02-4d0f-bd79-a74e30f18d1a",
+    "name": "Adrielle Camuel",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:ky/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Adrielle",
+    "family_name": "Camuel",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house93.jpg",
+    "email": "adrielle.camuel@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1972-05-26",
+    "death_date": "",
+    "extras": {
+      "home city": "Lexington",
+      "mailing address": "702 Capital Ave Annex Room 429F Frankfort, KY 40601",
+      "counties represented": [
+        "Fayette"
+      ]
+    },
+    "created_at": "2024-01-03T21:15:56.588781+00:00",
+    "updated_at": "2026-01-29T06:47:28.423275+00:00",
+    "openstates_url": "https://openstates.org/person/adrielle-camuel-4Vg42hGOTvxtq8whnJ9Lwo/"
+  },
+  {
+    "id": "ocd-person/dfaa3769-decc-4c1c-9c0b-7195153ab6c8",
+    "name": "Al Gentry",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:ky/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Al",
+    "family_name": "Gentry",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house46.jpg",
+    "email": "al.gentry@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1964-10-12",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "8406 Cloverport Dr Louisville, KY 40228",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:01.831072+00:00",
+    "updated_at": "2026-01-29T06:47:40.134017+00:00",
+    "openstates_url": "https://openstates.org/person/al-gentry-6o34q3EsWsZwrvtdSNgA36/"
+  },
+  {
+    "id": "ocd-person/f7bb262c-026f-4af2-9e17-939692c96e89",
+    "name": "Amy Neighbors",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ky/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Amy",
+    "family_name": "Neighbors",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house21.jpg",
+    "email": "amy.neighbors@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1975-11-12",
+    "death_date": "",
+    "extras": {
+      "home city": "Edmonton",
+      "mailing address": "702 Capital Ave Annex Room 395 Frankfort, KY 40601",
+      "counties represented": [
+        "Adair",
+        "Cumberland",
+        "Metcalfe",
+        "Monroe"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:20.684727+00:00",
+    "updated_at": "2026-06-04T06:51:15.109469+00:00",
+    "openstates_url": "https://openstates.org/person/amy-neighbors-7XSdByT1tPN5XYfReouxOj/"
+  },
+  {
+    "id": "ocd-person/2b9ac6b5-8979-40b1-b2d1-8241b93061a7",
+    "name": "Anne Donworth",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:ky/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Anne",
+    "family_name": "Donworth",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AnneDonworth.jpeg",
+    "email": "anne.donworth@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1983-05-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:34:05.179851+00:00",
+    "updated_at": "2026-01-29T06:47:28.991106+00:00",
+    "openstates_url": "https://openstates.org/person/anne-donworth-1KHOz4bEthb9fptM9HfVEV/"
+  },
+  {
+    "id": "ocd-person/6bc2a8c3-3370-4586-b0b7-a5028f336d12",
+    "name": "Ashley Laferty",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:ky/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Ashley",
+    "family_name": "Laferty",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house95.jpg",
+    "email": "ashley.tackettlaferty@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1979-05-10",
+    "death_date": "",
+    "extras": {
+      "home city": "Martin",
+      "mailing address": "702 Capital Ave Annex Room 460 Frankfort, KY 40601",
+      "counties represented": [
+        "Floyd",
+        "Pike"
+      ]
+    },
+    "created_at": "2019-01-10T02:15:05.889999+00:00",
+    "updated_at": "2026-04-09T06:48:13.533325+00:00",
+    "openstates_url": "https://openstates.org/person/ashley-laferty-3HL8aPIRiUan9tfeI4b0iI/"
+  },
+  {
+    "id": "ocd-person/c8a9f2cf-9a79-45f6-94df-346b546e1d9b",
+    "name": "Beverly Chester-Burton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:ky/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Beverly",
+    "family_name": "Chester-Burton",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house44.jpg",
+    "email": "beverly.chesterburton@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1961-10-03",
+    "death_date": "",
+    "extras": {
+      "home city": "Shively",
+      "mailing address": "702 Capital Ave Annex Room 467 Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:23.421681+00:00",
+    "updated_at": "2026-01-29T06:47:43.543082+00:00",
+    "openstates_url": "https://openstates.org/person/beverly-chester-burton-66e8Bfx8GqwbWROuDbAYFH/"
+  },
+  {
+    "id": "ocd-person/91eec267-436a-49a5-9d41-b6b2632d0a51",
+    "name": "Bill Wesley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:ky/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Wesley",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house91.jpg",
+    "email": "bill.wesley@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1971-10-26",
+    "death_date": "",
+    "extras": {
+      "home city": "Ravenna",
+      "mailing address": "702 Capital Ave Annex Room 413D Frankfort, KY 40601",
+      "counties represented": [
+        "Estill",
+        "Madison"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:13.867681+00:00",
+    "updated_at": "2026-01-29T06:47:35.871980+00:00",
+    "openstates_url": "https://openstates.org/person/bill-wesley-4RN02ukmg0xxWERpWpqjFh/"
+  },
+  {
+    "id": "ocd-person/22e056d2-728a-425a-a0a1-19e0e5cc59cb",
+    "name": "Bobby McCool",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:ky/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Bobby",
+    "family_name": "McCool",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house97.jpg",
+    "email": "bobby.mccool@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1959-05-07",
+    "death_date": "",
+    "extras": {
+      "home city": "Van Lear",
+      "mailing address": "702 Capital Ave Annex Room 357E Frankfort, KY 40601",
+      "counties represented": [
+        "Johnson",
+        "Martin",
+        "Pike"
+      ]
+    },
+    "created_at": "2019-01-10T02:14:33.443270+00:00",
+    "updated_at": "2026-01-29T06:47:12.767349+00:00",
+    "openstates_url": "https://openstates.org/person/bobby-mccool-13oGGe5EADl5QLW9KwCac7/"
+  },
+  {
+    "id": "ocd-person/70d58905-dd36-4e9a-b281-639600e6b945",
+    "name": "Candy Massaroni",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:ky/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Candy",
+    "family_name": "Massaroni",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house50.jpg",
+    "email": "candy.massaroni@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1980-07-30",
+    "death_date": "",
+    "extras": {
+      "home city": "Bardstown",
+      "mailing address": "702 Capital Ave Annex Room 413H Frankfort, KY 40601",
+      "counties represented": [
+        "Nelson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:22.360323+00:00",
+    "updated_at": "2026-01-29T06:47:20.186156+00:00",
+    "openstates_url": "https://openstates.org/person/candy-massaroni-3Quj2ftoWbu2480BNSCikn/"
+  },
+  {
+    "id": "ocd-person/51dc7033-7377-44d4-a5d8-7bd36b371896",
+    "name": "Chad Aull",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:ky/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Chad",
+    "family_name": "Aull",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house79.jpg",
+    "email": "chad.aull@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1982-01-28",
+    "death_date": "",
+    "extras": {
+      "home city": "Lexington",
+      "mailing address": "702 Capital Ave Annex Room 457E Frankfort, KY 40601",
+      "counties represented": [
+        "Fayette"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:17.491808+00:00",
+    "updated_at": "2026-01-29T06:47:36.481013+00:00",
+    "openstates_url": "https://openstates.org/person/chad-aull-2UT7NgEDDRi891vfjNhYO6/"
+  },
+  {
+    "id": "ocd-person/db36edd8-6c2f-4441-aa30-5b4dc48b3357",
+    "name": "Chris Freeland",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ky/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Freeland",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house6.jpg",
+    "email": "chris.freeland@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1969-01-07",
+    "death_date": "",
+    "extras": {
+      "home city": "Benton",
+      "mailing address": "702 Capital Ave Annex Room 373C Frankfort, KY 40601",
+      "counties represented": [
+        "Lyon",
+        "Marshall",
+        "McCracken"
+      ]
+    },
+    "created_at": "2019-01-10T02:15:06.975552+00:00",
+    "updated_at": "2026-01-29T06:47:31.241732+00:00",
+    "openstates_url": "https://openstates.org/person/chris-freeland-6feQBD6kkU9gcwSq9zhiDf/"
+  },
+  {
+    "id": "ocd-person/6843e90b-a30a-4dbf-885c-7321ccc8f73f",
+    "name": "Chris Fugate",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:ky/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Fugate",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house84.jpg",
+    "email": "chris.fugate@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1969-12-28",
+    "death_date": "",
+    "extras": {
+      "home city": "Chavies",
+      "mailing address": "PO Box 202 Chavies, KY 41727",
+      "counties represented": [
+        "Breathitt",
+        "Owsley",
+        "Perry"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:18.638049+00:00",
+    "updated_at": "2026-06-04T06:51:18.837989+00:00",
+    "openstates_url": "https://openstates.org/person/chris-fugate-3AkEhTMKaJLR1JMYmxPS1f/"
+  },
+  {
+    "id": "ocd-person/7da80b33-fc71-4d7f-8c96-e6068bd4c19b",
+    "name": "Chris Lewis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ky/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Lewis",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ChrisLewis2024.jpeg",
+    "email": "chris.lewis@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1979-12-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:34:07.135954+00:00",
+    "updated_at": "2026-06-04T06:51:17.436332+00:00",
+    "openstates_url": "https://openstates.org/person/chris-lewis-3p6ptlJp1gv6OBca7rXiEV/"
+  },
+  {
+    "id": "ocd-person/ed9307f1-cd95-4004-9e72-46970ea64adf",
+    "name": "D.J. Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ky/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "D.J.",
+    "family_name": "Johnson",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house13.jpg",
+    "email": "dj.johnson@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1957-11-02",
+    "death_date": "",
+    "extras": {
+      "home city": "Owensboro",
+      "mailing address": "PO Box1122 Owensboro, KY 42302",
+      "counties represented": [
+        "Daviess"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:17.806272+00:00",
+    "updated_at": "2026-06-04T06:50:51.835778+00:00",
+    "openstates_url": "https://openstates.org/person/d-j-johnson-7EINEz2OSmdgof3kL9qw2h/"
+  },
+  {
+    "id": "ocd-person/c88c6162-de24-4d8b-98a9-f1788390d043",
+    "name": "Dan Fister",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:ky/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Fister",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house56.jpg",
+    "email": "daniel.fister@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1958-07-30",
+    "death_date": "",
+    "extras": {
+      "home city": "Versailles",
+      "mailing address": "702 Capital Ave Annex Room 424D Frankfort, KY 40601",
+      "counties represented": [
+        "Franklin (Part)",
+        "Jessamine"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:17.993688+00:00",
+    "updated_at": "2026-01-29T06:47:03.589579+00:00",
+    "openstates_url": "https://openstates.org/person/dan-fister-66QcP4c4cY1nKP8ewexFdj/"
+  },
+  {
+    "id": "ocd-person/d93e2493-49a8-4395-b7e0-5842893344e1",
+    "name": "Daniel Elliott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:ky/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Daniel",
+    "family_name": "Elliott",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house54.jpg",
+    "email": "daniel.elliott@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1984-08-12",
+    "death_date": "",
+    "extras": {
+      "home city": "Danville",
+      "mailing address": "PO Box 2082 Danville, KY 40423",
+      "counties represented": [
+        "Boyle",
+        "Casey"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:17.436768+00:00",
+    "updated_at": "2026-01-29T06:46:37.236347+00:00",
+    "openstates_url": "https://openstates.org/person/daniel-elliott-6bvjWkxyRwM00x6RiDrrdp/"
+  },
+  {
+    "id": "ocd-person/d4dd968d-1508-476b-bde1-7504a47288f0",
+    "name": "Daniel Grossberg",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ky/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Daniel",
+    "family_name": "Grossberg",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house30.jpg",
+    "email": "daniel.grossberg@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1978-09-30",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 429C Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:23.338687+00:00",
+    "updated_at": "2026-06-04T06:51:06.506252+00:00",
+    "openstates_url": "https://openstates.org/person/daniel-grossberg-6TfddhjZlxm9Fmo4K5ocPA/"
+  },
+  {
+    "id": "ocd-person/ebd5f90d-e3cc-45ef-97ff-d51ff1685bcc",
+    "name": "David Hale",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:ky/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Hale",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house74.jpg",
+    "email": "david.hale@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home city": "Wellington",
+      "mailing address": "11 Hales Ln Wellington, KY 40387",
+      "counties represented": [
+        "Bath",
+        "Menifee",
+        "Montgomery"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:04.528932+00:00",
+    "updated_at": "2026-06-04T06:50:27.843940+00:00",
+    "openstates_url": "https://openstates.org/person/david-hale-7B0yvYisT7FQDFL2MBuiWi/"
+  },
+  {
+    "id": "ocd-person/3643503c-1da8-4a57-90f1-54f063b1d25e",
+    "name": "David Meade",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:ky/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Meade",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house80.jpg",
+    "email": "david.meade@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1976-06-22",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker Pro Tempore",
+      "home city": "Stanford",
+      "mailing address": "PO Box 121 Stanford, KY 40484",
+      "counties represented": [
+        "Garrard",
+        "Lincoln",
+        "Pulaski"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:19.105508+00:00",
+    "updated_at": "2026-01-29T06:47:48.456463+00:00",
+    "openstates_url": "https://openstates.org/person/david-meade-1eOLZcAyEQN6XowWfsqxJu/"
+  },
+  {
+    "id": "ocd-person/bf8bfdc3-66f2-417c-8178-9ed16bf8843f",
+    "name": "David Osborne",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:ky/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Osborne",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house59.jpg",
+    "email": "david.osborne@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1964-03-27",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker of the House",
+      "voice": "502-645-2186",
+      "home city": "Prospect",
+      "mailing address": "PO Box 8 Prospect, KY 40059",
+      "counties represented": [
+        "Oldham"
+      ]
+    },
+    "created_at": "2018-10-18T14:44:58.165828+00:00",
+    "updated_at": "2026-06-04T06:50:22.630149+00:00",
+    "openstates_url": "https://openstates.org/person/david-osborne-5pRVettv4cNK1UJOwz0YZj/"
+  },
+  {
+    "id": "ocd-person/96ab59e2-44c2-4c3d-ac8a-1ee24acc5b55",
+    "name": "Deanna Gordon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:ky/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Deanna",
+    "family_name": "Gordon",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house81.jpg",
+    "email": "deanna.gordon@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1969-08-23",
+    "death_date": "",
+    "extras": {
+      "home city": "Richmond",
+      "mailing address": "702 Capital Ave Annex Room 367 Frankfort, KY 40601",
+      "counties represented": [
+        "Madison"
+      ]
+    },
+    "created_at": "2019-01-10T02:14:17.323857+00:00",
+    "updated_at": "2026-01-29T06:47:42.126954+00:00",
+    "openstates_url": "https://openstates.org/person/deanna-gordon-4aJ9iRccZCzyLW6yuxkxwT/"
+  },
+  {
+    "id": "ocd-person/60ef609e-8aed-4698-a626-664f536a6122",
+    "name": "Derek Lewis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:ky/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Derek",
+    "family_name": "Lewis",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house90.jpg",
+    "email": "derek.lewis@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1986-10-31",
+    "death_date": "",
+    "extras": {
+      "home city": "London",
+      "mailing address": "702 Capital Ave Annex Room 416 Frankfort, KY 40601",
+      "counties represented": [
+        "Clay",
+        "Laurel"
+      ]
+    },
+    "created_at": "2019-01-10T02:14:24.926815+00:00",
+    "updated_at": "2026-01-29T06:46:35.681198+00:00",
+    "openstates_url": "https://openstates.org/person/derek-lewis-2wuersLMLfsALWrxL5c8oc/"
+  },
+  {
+    "id": "ocd-person/67b233b8-474d-49ce-81a8-7f48eec3c79a",
+    "name": "Emily Callaway",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ky/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Emily",
+    "family_name": "Callaway",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house37.jpg",
+    "email": "emily.callaway@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1978-06-06",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "4621 Outerloop #234 Louisville, KY      ",
+      "counties represented": [
+        "Bullitt (Part)",
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:17.929919+00:00",
+    "updated_at": "2026-06-04T06:51:13.075828+00:00",
+    "openstates_url": "https://openstates.org/person/emily-callaway-39feBobdfc5cdLPeQFaFcQ/"
+  },
+  {
+    "id": "ocd-person/4ce23404-165d-4c96-9130-56acaf2e73a7",
+    "name": "Erika Hancock",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:ky/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Erika",
+    "family_name": "Hancock",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house57.jpg",
+    "email": "erika.hancock@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1978-07-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:34:00.849564+00:00",
+    "updated_at": "2026-01-29T06:46:29.406805+00:00",
+    "openstates_url": "https://openstates.org/person/erika-hancock-2L4n6Qx0dR11Gr6sFqGDXL/"
+  },
+  {
+    "id": "ocd-person/4342be62-2791-4d48-b601-43949239cd94",
+    "name": "Felicia Rabourn",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:ky/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Felicia",
+    "family_name": "Rabourn",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house47.jpg",
+    "email": "felicia.rabourn@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1990-12-22",
+    "death_date": "",
+    "extras": {
+      "home city": "Pendleton",
+      "mailing address": "PO BOX 47 Campbellsburg, KY 40011",
+      "counties represented": [
+        "Carroll",
+        "Henry",
+        "Owen",
+        "Trimble"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:16.370254+00:00",
+    "updated_at": "2026-01-29T06:47:10.714788+00:00",
+    "openstates_url": "https://openstates.org/person/felicia-rabourn-22uzFK6OHKJqYCa7rnp47w/"
+  },
+  {
+    "id": "ocd-person/bb3e5fee-3bda-4a5d-95ee-dc31ff9defed",
+    "name": "George Brown",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:ky/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "George",
+    "family_name": "Brown",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house77.jpg",
+    "email": "george.brown@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1948-11-14",
+    "death_date": "",
+    "extras": {
+      "home city": "Lexington",
+      "mailing address": "424 E Fourth St Lexington, KY 40508",
+      "counties represented": [
+        "Fayette"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:09.350306+00:00",
+    "updated_at": "2026-04-09T06:48:20.880495+00:00",
+    "openstates_url": "https://openstates.org/person/george-brown-5hK4Mui6vOdOkugzFJlRtN/"
+  },
+  {
+    "id": "ocd-person/fded60a9-de72-47ba-bf20-90dddd9f9138",
+    "name": "J.T. Payne",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ky/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "J.T.",
+    "family_name": "Payne",
+    "image": "https://thenews.org/wp-content/uploads/2018/08/7BD9AD2B-7439-4C90-86BE-692CC9C4D09A-777x437.jpeg",
+    "email": "jt.payne@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1998-06-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:34:01.637310+00:00",
+    "updated_at": "2026-06-04T06:50:45.091730+00:00",
+    "openstates_url": "https://openstates.org/person/j-t-payne-7j9XW1ow1a5elY5l1FfMjo/"
+  },
+  {
+    "id": "ocd-person/d6c9aa9b-3c6b-411a-bff1-fc1c38d4bce0",
+    "name": "James Tipton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:ky/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Tipton",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house53.jpg",
+    "email": "james.tipton@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1959-12-07",
+    "death_date": "",
+    "extras": {
+      "home city": "Taylorsville",
+      "mailing address": "8151 Little Mount Rd Taylorsville, KY 40071",
+      "counties represented": [
+        "Anderson",
+        "Spencer"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:02.749847+00:00",
+    "updated_at": "2026-06-04T06:50:32.685549+00:00",
+    "openstates_url": "https://openstates.org/person/james-tipton-6XIWE4wGldpVSV8FkYLluS/"
+  },
+  {
+    "id": "ocd-person/b86f4912-39b1-44a0-90a8-0b233921a094",
+    "name": "Jared Bauman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ky/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Jared",
+    "family_name": "Bauman",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house28.jpg",
+    "email": "jared.bauman@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1984-09-15",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 413C Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:22.113580+00:00",
+    "updated_at": "2026-02-13T00:47:36.244022+00:00",
+    "openstates_url": "https://openstates.org/person/jared-bauman-5c1RdSzK5PLJcKlROGrkU0/"
+  },
+  {
+    "id": "ocd-person/c56fc398-975e-47b9-919a-fbdd0c9f721d",
+    "name": "Jason Nemes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ky/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Nemes",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house33.jpg",
+    "email": "jason.nemes@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1978-03-27",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip",
+      "home city": "Middletown",
+      "mailing address": "702 Capital Ave Annex Room 372 Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson (Part)",
+        "Oldham (Part)",
+        "Shelby"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:18.796088+00:00",
+    "updated_at": "2026-06-04T06:51:19.429791+00:00",
+    "openstates_url": "https://openstates.org/person/jason-nemes-60YZ0oeOYlUDSDh0FAyn89/"
+  },
+  {
+    "id": "ocd-person/3fac3a9c-78ad-4b24-8483-f1786fac9c9e",
+    "name": "Jason Petrie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ky/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Petrie",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house16.jpg",
+    "email": "jason.petrie@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1971-02-27",
+    "death_date": "",
+    "extras": {
+      "home city": "Elkton",
+      "mailing address": "702 Capital Ave Annex Room 392 Frankfort, KY 40601",
+      "counties represented": [
+        "Christian"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:14.787840+00:00",
+    "updated_at": "2026-06-04T06:50:21.507358+00:00",
+    "openstates_url": "https://openstates.org/person/jason-petrie-1w9Dyd7lhsQSOJoNfJ51Sg/"
+  },
+  {
+    "id": "ocd-person/2c5c20cc-807b-44c8-a1a9-582fe69ca87c",
+    "name": "Jennifer Decker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:ky/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Jennifer",
+    "family_name": "Decker",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house58.jpg",
+    "email": "jennifer.decker@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home city": "Waddy",
+      "mailing address": "702 Capital Ave Annex Room 357D Frankfort, KY 40601",
+      "counties represented": [
+        "Shelby"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:13.375287+00:00",
+    "updated_at": "2026-01-29T06:47:45.362564+00:00",
+    "openstates_url": "https://openstates.org/person/jennifer-decker-1LhlQsIUmTBouN9LRlcnq0/"
+  },
+  {
+    "id": "ocd-person/f40ed494-ce37-43f4-b323-1bc2b6197831",
+    "name": "Jim Gooch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ky/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Gooch",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house12.jpg",
+    "email": "jim.gooch@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1951-04-13",
+    "death_date": "",
+    "extras": {
+      "home city": "Providence",
+      "mailing address": "806 Princeton St Providence, KY 42450",
+      "counties represented": [
+        "Crittenden",
+        "McLean",
+        "Union",
+        "Webster"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:05.128315+00:00",
+    "updated_at": "2026-06-04T06:51:01.945245+00:00",
+    "openstates_url": "https://openstates.org/person/jim-gooch-7QWu7x1M1e8WPsDVcwYWRN/"
+  },
+  {
+    "id": "ocd-person/7cda4251-f26b-4bab-bf88-ed61b947018e",
+    "name": "John Blanton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:ky/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Blanton",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house92.jpg",
+    "email": "john.blanton@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1968-05-08",
+    "death_date": "",
+    "extras": {
+      "home city": "Salyersville",
+      "mailing address": "702 Capital Ave Annex Room 307A Frankfort, KY 40601",
+      "counties represented": [
+        "Knott",
+        "Magoffin",
+        "Pike"
+      ]
+    },
+    "created_at": "2018-10-18T14:44:58.017920+00:00",
+    "updated_at": "2026-01-29T06:47:40.823862+00:00",
+    "openstates_url": "https://openstates.org/person/john-blanton-3nanB7n6rD8TweDFgiywus/"
+  },
+  {
+    "id": "ocd-person/2f3255d6-7801-4089-a275-f01e00444ee0",
+    "name": "John Hodgson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ky/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Hodgson",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house36.jpg",
+    "email": "john.hodgson@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1961-07-11",
+    "death_date": "",
+    "extras": {
+      "home city": "Fisherville",
+      "mailing address": "PO Box 74 Fischerville, KY 40023",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:21.364218+00:00",
+    "updated_at": "2026-06-04T06:50:29.796648+00:00",
+    "openstates_url": "https://openstates.org/person/john-hodgson-1R3dqPQ4Ze1bHpG3MFLUfo/"
+  },
+  {
+    "id": "ocd-person/ff91cf3b-77a1-47b0-81b3-1c18f006349a",
+    "name": "Josh Branscum",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:ky/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Branscum",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house83.jpg",
+    "email": "josh.branscum@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1982-06-13",
+    "death_date": "",
+    "extras": {
+      "home city": "Russell Springs",
+      "mailing address": "702 Capital Ave Annex Room 357B Frankfort, KY 40601",
+      "counties represented": [
+        "Clinton",
+        "Pulaski"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:15.359878+00:00",
+    "updated_at": "2026-01-29T06:47:24.531664+00:00",
+    "openstates_url": "https://openstates.org/person/josh-branscum-7mFg4BtmH1NOAtdLtSB01K/"
+  },
+  {
+    "id": "ocd-person/a110d6ba-f17f-4847-b0e9-327c82cd7122",
+    "name": "Josh Bray",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:ky/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Bray",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house71.jpg",
+    "email": "josh.bray@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1985-03-29",
+    "death_date": "",
+    "extras": {
+      "home city": "Mount Vernon",
+      "mailing address": "702 Capital Ave Annex Room 416 Frankfort, KY 40601",
+      "counties represented": [
+        "Laurel (Part)",
+        "Madison (Part)",
+        "Pulaski"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:18.796096+00:00",
+    "updated_at": "2026-06-04T06:50:40.038027+00:00",
+    "openstates_url": "https://openstates.org/person/josh-bray-4tvSWDJ74Rw454MrKMyD2o/"
+  },
+  {
+    "id": "ocd-person/f218fb5a-2336-4f82-b192-acc3893dabdf",
+    "name": "Josh Calloway",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ky/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Calloway",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house10.jpg",
+    "email": "josh.calloway@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1979-02-03",
+    "death_date": "",
+    "extras": {
+      "home city": "Irvington",
+      "mailing address": "702 Capital Ave Annex Room 413 Frankfort, KY 40601",
+      "counties represented": [
+        "Breckinridge",
+        "Hardin"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:17.949306+00:00",
+    "updated_at": "2026-06-04T06:51:22.677802+00:00",
+    "openstates_url": "https://openstates.org/person/josh-calloway-7MpYi7c51HsK7mDeOtt1m3/"
+  },
+  {
+    "id": "ocd-person/118003d1-9f48-4ef8-bbd0-748d17ebb699",
+    "name": "Joshua Watkins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:ky/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Joshua",
+    "family_name": "Watkins",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JoshuaWatkins2024.jpg",
+    "email": "joshua.watkins@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1985-09-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:34:00.506742+00:00",
+    "updated_at": "2026-06-04T06:50:50.314879+00:00",
+    "openstates_url": "https://openstates.org/person/joshua-watkins-X1N62auf85WdXsQzNwuLZ/"
+  },
+  {
+    "id": "ocd-person/d7b86c25-2f90-4d8b-a92e-4b4ef5dd0512",
+    "name": "Ken Fleming",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:ky/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Fleming",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house48.jpg",
+    "email": "ken.fleming@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1960-12-27",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 358B Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson (Part)",
+        "Oldham"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:18.181523+00:00",
+    "updated_at": "2026-01-29T06:47:01.339141+00:00",
+    "openstates_url": "https://openstates.org/person/ken-fleming-6Z3d9qVL3LPBzolPNdDUuY/"
+  },
+  {
+    "id": "ocd-person/7aa13bf4-126a-4901-bfeb-2244bd2d3cc3",
+    "name": "Ken Upchurch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:ky/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Upchurch",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house52.jpg",
+    "email": "ken.upchurch@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1969-06-04",
+    "death_date": "",
+    "extras": {
+      "home city": "Monticello",
+      "mailing address": "PO Box 969 Monticello, KY 42633",
+      "counties represented": [
+        "McCreary",
+        "Pulaski"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:12.050831+00:00",
+    "updated_at": "2025-07-17T06:54:34.106415+00:00",
+    "openstates_url": "https://openstates.org/person/ken-upchurch-3jOkNn1Bxbyagr7DLcgazz/"
+  },
+  {
+    "id": "ocd-person/0e905c68-fbcc-4392-865e-a4dbc5d2ea42",
+    "name": "Kevin Jackson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ky/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Jackson",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house20.jpg",
+    "email": "kevin.jackson@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1958-11-21",
+    "death_date": "",
+    "extras": {
+      "home city": "Bowling Green",
+      "mailing address": "702 Capital Ave Annex Room 351B Frankfort, KY 40601",
+      "counties represented": [
+        "Warren"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:17.209082+00:00",
+    "updated_at": "2026-06-04T06:51:00.761668+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-jackson-RTrfrNXBdrgxfrNVqEahO/"
+  },
+  {
+    "id": "ocd-person/27b951aa-c951-4160-9373-721ca3b6a9db",
+    "name": "Kim Banta",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:ky/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Banta",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house63.jpg",
+    "email": "kim.banta@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1964-01-17",
+    "death_date": "",
+    "extras": {
+      "home city": "Ft. Mitchell",
+      "mailing address": "702 Capital Ave Annex Room 329F Frankfort, KY 40601",
+      "counties represented": [
+        "Boone (Part)",
+        "Kenton"
+      ]
+    },
+    "created_at": "2020-01-08T23:08:29.160643+00:00",
+    "updated_at": "2026-01-29T06:47:46.144958+00:00",
+    "openstates_url": "https://openstates.org/person/kim-banta-1CxOHzc8qFzqisaKlUb3vf/"
+  },
+  {
+    "id": "ocd-person/5cb48d67-2db5-4b6e-89b1-1509110bd708",
+    "name": "Kim Holloway",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ky/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Holloway",
+    "image": "https://npr.brightspotcdn.com/01/2a/8d768d42405b8992ce1c5dcb8159/244626154-114463787658953-2523667072088681096-n.jpg",
+    "email": "kim.holloway@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:33:56.404419+00:00",
+    "updated_at": "2025-07-17T06:53:55.083399+00:00",
+    "openstates_url": "https://openstates.org/person/kim-holloway-2ovo16i2WEQ698DZAhuLFY/"
+  },
+  {
+    "id": "ocd-person/cd95ada0-14f0-4b63-aeea-f4a92525eeaf",
+    "name": "Kim King",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:ky/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "King",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house55.jpg",
+    "email": "kim.king@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1962-11-29",
+    "death_date": "",
+    "extras": {
+      "home city": "Harrodsburg",
+      "mailing address": "250 Bright Leaf Dr Harrodsburg, KY 40330",
+      "counties represented": [
+        "Jessamine"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:10.751946+00:00",
+    "updated_at": "2025-07-17T06:54:45.478367+00:00",
+    "openstates_url": "https://openstates.org/person/kim-king-6FvpTBB4kESxcyYm4rQLHz/"
+  },
+  {
+    "id": "ocd-person/92511255-ca06-4241-bd91-0cafd92e3d5c",
+    "name": "Kim Moser",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:ky/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Moser",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house64.jpg",
+    "email": "kimberly.moser@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1962-06-08",
+    "death_date": "",
+    "extras": {
+      "home city": "Taylor Mill",
+      "mailing address": "PO Box 143 Independence, KY 41051",
+      "counties represented": [
+        "Kenton"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:07.961434+00:00",
+    "updated_at": "2026-04-09T06:47:30.790862+00:00",
+    "openstates_url": "https://openstates.org/person/kim-moser-4S5vdHfLs3XFlWxec3x3DI/"
+  },
+  {
+    "id": "ocd-person/8048f367-9d46-4be5-9cb8-7a249d06cb13",
+    "name": "Lindsey Burke",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:ky/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Lindsey",
+    "family_name": "Burke",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house75.jpg",
+    "email": "lindsey.burke@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1984-01-29",
+    "death_date": "",
+    "extras": {
+      "home city": "Lexington",
+      "mailing address": "702 Capital Ave Annex Room 457C Frankfort, KY 40601",
+      "counties represented": [
+        "Fayette"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:20.943589+00:00",
+    "updated_at": "2026-01-29T06:46:26.251414+00:00",
+    "openstates_url": "https://openstates.org/person/lindsey-burke-3u4M6F6eVWffMYhGmFkq9L/"
+  },
+  {
+    "id": "ocd-person/6dd815a4-fc3c-4e79-8cd5-a574d8cf0af8",
+    "name": "Lisa Willner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ky/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Willner",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house35.jpg",
+    "email": "lisa.willner@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 457 Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2019-01-10T02:14:51.687559+00:00",
+    "updated_at": "2026-06-04T06:51:21.866869+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-willner-3LGuhYNRPOyaVvnSvLFq80/"
+  },
+  {
+    "id": "ocd-person/1ad4657b-84d4-4ce1-864e-2f1f75686cc7",
+    "name": "Marianne Proctor",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:ky/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Marianne",
+    "family_name": "Proctor",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house60.jpg",
+    "email": "marianne.proctor@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1968-02-24",
+    "death_date": "",
+    "extras": {
+      "home city": "Union",
+      "mailing address": "702 Capital Ave Annex Room 329A Frankfort, KY 40601",
+      "counties represented": [
+        "Boone"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:25.465667+00:00",
+    "updated_at": "2026-01-29T06:46:34.873200+00:00",
+    "openstates_url": "https://openstates.org/person/marianne-proctor-ocrgeZLw5YQDiGbglCX2t/"
+  },
+  {
+    "id": "ocd-person/b1a31b02-5d89-42be-97d4-7d08d99161d8",
+    "name": "Mark Hart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:ky/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Hart",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house78.jpg",
+    "email": "mark.hart@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1968-12-09",
+    "death_date": "",
+    "extras": {
+      "home city": "Falmouth",
+      "mailing address": "202 W 4th St Falmouth, KY 41040",
+      "counties represented": [
+        "Boone (Part)",
+        "Campbell (Part)",
+        "Kenton"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:03.405058+00:00",
+    "updated_at": "2026-01-29T06:46:57.020983+00:00",
+    "openstates_url": "https://openstates.org/person/mark-hart-5PCBEv1ruH2jub4AU3yf8q/"
+  },
+  {
+    "id": "ocd-person/ad063b4f-a860-48c3-abfb-18e977a21caf",
+    "name": "Mary Beth Imes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ky/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Mary Beth",
+    "family_name": "Imes",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house5.jpg",
+    "email": "marybeth.imes@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1948-03-31",
+    "death_date": "",
+    "extras": {
+      "home city": "Murray",
+      "mailing address": "702 Capital Ave Annex Room 376 Frankfort, KY 40601",
+      "counties represented": [
+        "Calloway",
+        "Trigg"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:13.073166+00:00",
+    "updated_at": "2026-01-29T06:47:37.060362+00:00",
+    "openstates_url": "https://openstates.org/person/mary-beth-imes-5GUWGdJr19BtG7zGi4erzL/"
+  },
+  {
+    "id": "ocd-person/86342422-7a28-4631-b3d7-3912eb444ffd",
+    "name": "Mary Lou Marzian",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:ky/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Mary Lou",
+    "family_name": "Marzian",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house41.jpg",
+    "email": "marylou.marzian@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1954-09-16",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "2007 Tyler Ln Louisville, KY 40205",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:05.273569+00:00",
+    "updated_at": "2026-01-28T00:50:19.359940+00:00",
+    "openstates_url": "https://openstates.org/person/mary-lou-marzian-45Ench4g6Pcnq5yMQLwXuf/"
+  },
+  {
+    "id": "ocd-person/1b8bc567-b895-4fae-8b3f-7a7160ca5138",
+    "name": "Matt Koch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:ky/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Koch",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house72.jpg",
+    "email": "matthew.koch@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1978-05-11",
+    "death_date": "",
+    "extras": {
+      "home city": "Paris",
+      "mailing address": "702 Capital Ave Annex Room 383 Frankfort, KY 40601",
+      "counties represented": [
+        "Bourbon",
+        "Fleming",
+        "Nicholas"
+      ]
+    },
+    "created_at": "2019-01-10T02:14:44.003973+00:00",
+    "updated_at": "2026-04-09T06:47:44.178847+00:00",
+    "openstates_url": "https://openstates.org/person/matt-koch-pyfRLux70y4otKTiqZ9HE/"
+  },
+  {
+    "id": "ocd-person/7afd2d36-9415-44ff-b96d-0010cf4f864e",
+    "name": "Matt Lehman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:ky/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Lehman",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MatthewLehman2024.jpg",
+    "email": "matt.lehman@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1977-02-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:33:58.612396+00:00",
+    "updated_at": "2026-06-04T06:51:15.651211+00:00",
+    "openstates_url": "https://openstates.org/person/matt-lehman-3k4lUEB1k93LYfeJSqDzgM/"
+  },
+  {
+    "id": "ocd-person/9a6d1b5a-6cb4-421e-b7c2-2cb27cfa4cc9",
+    "name": "Matt Lockett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ky/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Lockett",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house39.jpg",
+    "email": "matt.lockett@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1974-06-08",
+    "death_date": "",
+    "extras": {
+      "home city": "Nicholasville",
+      "mailing address": "702 Capital Ave Annex Room 329D Frankfort, KY 40601",
+      "counties represented": [
+        "Fayette (Part)",
+        "Jessamine"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:18.955129+00:00",
+    "updated_at": "2026-06-04T06:50:39.007392+00:00",
+    "openstates_url": "https://openstates.org/person/matt-lockett-4hOgBAW0IMgq8n57TpojaT/"
+  },
+  {
+    "id": "ocd-person/f013115a-6bbc-48ac-aab4-7949dd902701",
+    "name": "Michael Meredith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ky/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Meredith",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house19.jpg",
+    "email": "michael.meredith@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1985-04-25",
+    "death_date": "",
+    "extras": {
+      "home city": "Oakland",
+      "mailing address": "PO Box 292 Brownsville, KY 42210",
+      "counties represented": [
+        "Edmonson",
+        "Warren"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:12.359338+00:00",
+    "updated_at": "2026-01-29T06:47:31.887241+00:00",
+    "openstates_url": "https://openstates.org/person/michael-meredith-7J0s5oFtQ5p1WYNxV3VXer/"
+  },
+  {
+    "id": "ocd-person/34a39b2d-1ff6-4ced-adf2-32f92fa781b1",
+    "name": "Mike Clines",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:ky/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Clines",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house68.jpg",
+    "email": "mike.clines@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1968-08-04",
+    "death_date": "",
+    "extras": {
+      "home city": "Alexandria",
+      "mailing address": "702 Capital Ave Annex Room 357C Frankfort, KY 40601",
+      "counties represented": [
+        "Campbell"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:18.467702+00:00",
+    "updated_at": "2026-01-29T06:46:50.303174+00:00",
+    "openstates_url": "https://openstates.org/person/mike-clines-1bKMtIvt7FcH5XMGzBV9MX/"
+  },
+  {
+    "id": "ocd-person/3f4b9459-8c62-4d89-b2d6-9d0e951ed24f",
+    "name": "Mitch Whitaker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:ky/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Mitch",
+    "family_name": "Whitaker",
+    "image": "https://whitakerforky.com/wp-content/uploads/2023/10/174675061_4495865760430094_8296166563898892766_n-1024x1024.jpg",
+    "email": "mitchum.whitaker@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1993-05-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:33:57.011655+00:00",
+    "updated_at": "2025-03-13T06:47:18.496884+00:00",
+    "openstates_url": "https://openstates.org/person/mitch-whitaker-1vR3VHJYmSOcMVZEpEF1DT/"
+  },
+  {
+    "id": "ocd-person/c6904810-37a8-428d-8342-7831d7dc100c",
+    "name": "Myron Dossett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ky/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Myron",
+    "family_name": "Dossett",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house9.jpg",
+    "email": "myron.dossett@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1961-01-09",
+    "death_date": "",
+    "extras": {
+      "home city": "Pembroke",
+      "mailing address": "491 E Nashville St Pembroke, KY 42266",
+      "counties represented": [
+        "Christian"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:14.186063+00:00",
+    "updated_at": "2026-01-29T06:47:21.190511+00:00",
+    "openstates_url": "https://openstates.org/person/myron-dossett-62gPt960U2YJ9RZjIYfVwi/"
+  },
+  {
+    "id": "ocd-person/911af3e2-7435-4f82-a477-99cb078ea99b",
+    "name": "Nancy Tate",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ky/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Nancy",
+    "family_name": "Tate",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house27.jpg",
+    "email": "nancy.tate@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1964-12-04",
+    "death_date": "",
+    "extras": {
+      "home city": "Brandenburg",
+      "mailing address": "702 Capital Ave Annex Room 351A Frankfort, KY 40601",
+      "counties represented": [
+        "Hardin"
+      ]
+    },
+    "created_at": "2019-01-10T02:15:17.552935+00:00",
+    "updated_at": "2026-06-04T06:50:30.421527+00:00",
+    "openstates_url": "https://openstates.org/person/nancy-tate-4PoChKF1Q4hKFLJkGSIk2t/"
+  },
+  {
+    "id": "ocd-person/716d7b2c-0576-4bf8-b5a9-b6fa2c1f8024",
+    "name": "Nick Wilson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:ky/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Wilson",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house82.jpg",
+    "email": "nick.wilson@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1990-06-11",
+    "death_date": "",
+    "extras": {
+      "home city": "Williamsburg",
+      "mailing address": "PO Box 573 Williamsburg, KY 40769",
+      "counties represented": [
+        "Laurel"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:21.825555+00:00",
+    "updated_at": "2026-01-29T06:47:32.805717+00:00",
+    "openstates_url": "https://openstates.org/person/nick-wilson-3S2AHzQEVS7CU5UN1fzXM4/"
+  },
+  {
+    "id": "ocd-person/bee3f0dd-450a-41a2-b9b9-e056d0a0f14d",
+    "name": "Nima Kulkarni",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ky/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Nima",
+    "family_name": "Kulkarni",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house40.jpg",
+    "email": "nima.kulkarni@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1978-12-23",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 429E Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2019-01-10T02:14:31.530777+00:00",
+    "updated_at": "2026-06-04T06:50:31.022588+00:00",
+    "openstates_url": "https://openstates.org/person/nima-kulkarni-5oCi6cJw83iBj8Q9Xv5WU1/"
+  },
+  {
+    "id": "ocd-person/897f811e-273d-4fc1-9268-0087e57444cf",
+    "name": "Pamela Stevenson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:ky/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Pamela",
+    "family_name": "Stevenson",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house43.jpg",
+    "email": "pamela.stevenson@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1959-04-08",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 460 Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:15.689340+00:00",
+    "updated_at": "2026-01-29T06:47:07.407406+00:00",
+    "openstates_url": "https://openstates.org/person/pamela-stevenson-4BSDXk3Efd5mULkEN0h7MN/"
+  },
+  {
+    "id": "ocd-person/8ae56ea2-3f37-490b-a3dc-0dec9fe85c7c",
+    "name": "Patrick Flannery",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:ky/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Flannery",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house96.jpg",
+    "email": "patrick.flannery@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1980-12-29",
+    "death_date": "",
+    "extras": {
+      "home city": "Olive Hill",
+      "mailing address": "702 Capital Ave Annex Room 424F Frankfort, KY 40601",
+      "counties represented": [
+        "Boyd"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:12.896997+00:00",
+    "updated_at": "2025-07-17T06:54:49.323191+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-flannery-4E5n67hoGCus81pfId6xie/"
+  },
+  {
+    "id": "ocd-person/eddce954-34a0-4b9a-aaca-6114e6bf418f",
+    "name": "Peyton Griffee",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ky/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Peyton",
+    "family_name": "Griffee",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/PeytonGriffee2024.png",
+    "email": "peyton.griffee@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1996-07-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-09T21:32:42.617975+00:00",
+    "updated_at": "2026-06-04T06:51:14.514965+00:00",
+    "openstates_url": "https://openstates.org/person/peyton-griffee-7Eq8ZeKqD3OMN7v8mfrxDL/"
+  },
+  {
+    "id": "ocd-person/1217ac1a-4ca4-4fe4-953b-572beb008bed",
+    "name": "Rachel Roarx",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ky/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Rachel",
+    "family_name": "Roarx",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house38.jpg",
+    "email": "rachel.roarx@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1997-03-25",
+    "death_date": "",
+    "extras": {
+      "voice": "502-724-7529",
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 451B Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:18.279923+00:00",
+    "updated_at": "2026-06-04T06:51:20.434512+00:00",
+    "openstates_url": "https://openstates.org/person/rachel-roarx-Y8gATtj4llDS7IHbtM85t/"
+  },
+  {
+    "id": "ocd-person/c033dd77-f8d7-4558-8582-9e0088ae5406",
+    "name": "Randy Bridges",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ky/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Bridges",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house3.jpg",
+    "email": "randy.bridges@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1961-11-25",
+    "death_date": "",
+    "extras": {
+      "home city": "Paducah",
+      "mailing address": "702 Capital Ave Annex Room 395 Frankfort, KY 40601",
+      "counties represented": [
+        "Livingston",
+        "McCracken"
+      ]
+    },
+    "created_at": "2019-01-10T02:15:00.841918+00:00",
+    "updated_at": "2026-06-04T06:51:05.898506+00:00",
+    "openstates_url": "https://openstates.org/person/randy-bridges-5qgED3gasQS7Ymkb6ipIfe/"
+  },
+  {
+    "id": "ocd-person/be2fd4e3-6dfe-4d54-8c45-631eac63bc27",
+    "name": "Rebecca Raymer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ky/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Rebecca",
+    "family_name": "Raymer",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house15.jpg",
+    "email": "rebecca.raymer@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home city": "Morgantown",
+      "mailing address": "702 Capital Ave Annex Room 329G Frankfort, KY 40601",
+      "counties represented": [
+        "Butler",
+        "Muhlenberg"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:19.327055+00:00",
+    "updated_at": "2026-06-04T06:50:59.693604+00:00",
+    "openstates_url": "https://openstates.org/person/rebecca-raymer-5msOsJm384CZEBOpxKZoFr/"
+  },
+  {
+    "id": "ocd-person/29b248e1-4033-41f6-ba30-136f2aa55045",
+    "name": "Richard White",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:ky/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "White",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house99.jpg",
+    "email": "richard.white@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1952-11-04",
+    "death_date": "",
+    "extras": {
+      "home city": "Morehead",
+      "mailing address": "702 Capital Ave Annex Room 329 Frankfort, KY 40601",
+      "counties represented": [
+        "Elliott",
+        "Morgan",
+        "Rowan"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:12.336638+00:00",
+    "updated_at": "2026-01-29T06:46:54.179810+00:00",
+    "openstates_url": "https://openstates.org/person/richard-white-1GgA1iFpBSQJnXvPj7FTJV/"
+  },
+  {
+    "id": "ocd-person/ad2d1d2a-b838-4727-ac0f-a6fb64298b14",
+    "name": "Robert Duvall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ky/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Duvall",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house17.jpg",
+    "email": "robert.duvall@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1970-08-19",
+    "death_date": "",
+    "extras": {
+      "home city": "Bowling Green",
+      "mailing address": "PO Box 1297 Bowling Green, KY 42102",
+      "counties represented": [
+        "Warren"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:22.716901+00:00",
+    "updated_at": "2026-06-04T06:50:58.686871+00:00",
+    "openstates_url": "https://openstates.org/person/robert-duvall-5GmHxa86B3aZbxlTs9rey4/"
+  },
+  {
+    "id": "ocd-person/af59339a-aedf-4d1c-94b6-de071030773b",
+    "name": "Ryan Bivens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ky/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Bivens",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house24.jpg",
+    "email": "ryan.bivens@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1979-01-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:34:00.140749+00:00",
+    "updated_at": "2026-01-28T00:50:13.526913+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-bivens-5KsQBvcaWP1zh0pizU2xND/"
+  },
+  {
+    "id": "ocd-person/718ec3d2-325d-4ddf-b72b-728cea857222",
+    "name": "Ryan Dotson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:ky/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Dotson",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house73.jpg",
+    "email": "ryan.dotson@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1972-11-22",
+    "death_date": "",
+    "extras": {
+      "home city": "Winchester",
+      "mailing address": "702 Capital Ave Annex Room 432E Frankfort, KY 40601",
+      "counties represented": [
+        "Clark",
+        "Fayette"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:17.765681+00:00",
+    "updated_at": "2026-01-29T06:46:45.621289+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-dotson-3SHNM2tAvgUe3VLDZ7WMSo/"
+  },
+  {
+    "id": "ocd-person/d3176059-683c-48be-9c43-a57da08a2f49",
+    "name": "Samara Heavrin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ky/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Samara",
+    "family_name": "Heavrin",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house18.jpg",
+    "email": "ryan.dotson@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1992-03-12",
+    "death_date": "",
+    "extras": {
+      "home city": "Leitchfield",
+      "mailing address": "474 Mulberry St. Apt B Leitchfield, KY 42754",
+      "counties represented": [
+        "Grayson",
+        "Hardin"
+      ]
+    },
+    "created_at": "2020-01-08T23:08:28.974134+00:00",
+    "updated_at": "2026-06-04T06:50:32.427412+00:00",
+    "openstates_url": "https://openstates.org/person/samara-heavrin-6QK3y6M3dewBYZYT6oqBGz/"
+  },
+  {
+    "id": "ocd-person/bb3f614a-7fa0-4e55-a76b-dedfea0fdaa9",
+    "name": "Sarah Stalker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ky/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Sarah",
+    "family_name": "Stalker",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house34.jpg",
+    "email": "sarah.stalker@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 451C Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:24.398703+00:00",
+    "updated_at": "2026-06-04T06:50:46.705377+00:00",
+    "openstates_url": "https://openstates.org/person/sarah-stalker-5hKWqxhbP5bzsqLuY06Sbp/"
+  },
+  {
+    "id": "ocd-person/3e417407-423f-45d3-b18a-c2845cd1ec57",
+    "name": "Sarge Pollock",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:ky/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Sarge",
+    "family_name": "Pollock",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house51.jpg",
+    "email": "sarge.pollock@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1966-05-27",
+    "death_date": "",
+    "extras": {
+      "home city": "Campbellsville",
+      "mailing address": "PO Box 164 Campbellsville, KY 42719",
+      "counties represented": [
+        "Marion",
+        "Taylor"
+      ]
+    },
+    "created_at": "2021-12-16T18:51:26.069650+00:00",
+    "updated_at": "2026-06-04T06:51:10.780488+00:00",
+    "openstates_url": "https://openstates.org/person/sarge-pollock-1tTR3qigUHEQAPGkpGcQvn/"
+  },
+  {
+    "id": "ocd-person/a8988de2-d65f-461c-96d1-4f1cddc6a969",
+    "name": "Savannah Maddox",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:ky/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Savannah",
+    "family_name": "Maddox",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house61.jpg",
+    "email": "savannah.maddox@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1987-11-02",
+    "death_date": "",
+    "extras": {
+      "home city": "Dry Ridge",
+      "mailing address": "702 Capital Ave Annex Room 316E Frankfort, KY 40601",
+      "counties represented": [
+        "Boone (Part)",
+        "Gallatin",
+        "Grant",
+        "Kenton"
+      ]
+    },
+    "created_at": "2019-01-10T02:14:32.796013+00:00",
+    "updated_at": "2026-01-29T06:47:08.441852+00:00",
+    "openstates_url": "https://openstates.org/person/savannah-maddox-588QYps7pc7FsiD0Wo9MVt/"
+  },
+  {
+    "id": "ocd-person/07773b3f-387f-4e4e-ba79-571940c186f0",
+    "name": "Scott Lewis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ky/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Lewis",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house14.jpg",
+    "email": "scott.lewis@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1961-06-02",
+    "death_date": "",
+    "extras": {
+      "home city": "Hartford",
+      "mailing address": "PO Box 454 Hartford, KY 42347",
+      "counties represented": [
+        "Daviess"
+      ]
+    },
+    "created_at": "2019-01-10T02:15:08.060002+00:00",
+    "updated_at": "2026-06-04T06:51:03.260382+00:00",
+    "openstates_url": "https://openstates.org/person/scott-lewis-E5Qyvq7qeFzvTl8UAf4iW/"
+  },
+  {
+    "id": "ocd-person/65469c71-edc2-4c9f-87da-bcf4d3277591",
+    "name": "Scott Sharp",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:ky/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Sharp",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house100.jpg",
+    "email": "scott.sharp@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1963-09-25",
+    "death_date": "",
+    "extras": {
+      "home city": "Ashland",
+      "mailing address": "702 Capital Ave Annex Room 432B Frankfort, KY 40601",
+      "counties represented": [
+        "Boyd"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:16.173346+00:00",
+    "updated_at": "2026-01-29T06:46:43.241318+00:00",
+    "openstates_url": "https://openstates.org/person/scott-sharp-356UeS5pvBqhusKw8umgUb/"
+  },
+  {
+    "id": "ocd-person/2eab3a78-154d-43cd-8278-73ad2e166b08",
+    "name": "Shane Baker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:ky/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Baker",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house85.jpg",
+    "email": "shane.baker@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home city": "Somerset",
+      "mailing address": "702 Capital Ave Annex Room 432C Frankfort, KY 40601",
+      "counties represented": [
+        "Laurel (Part)",
+        "Pulaski"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:14.086791+00:00",
+    "updated_at": "2025-07-17T06:53:53.075708+00:00",
+    "openstates_url": "https://openstates.org/person/shane-baker-1Q3tiMFJKQ5Y0y3Aphtme0/"
+  },
+  {
+    "id": "ocd-person/5a327e3b-ae91-4279-ae17-9214aad32fa9",
+    "name": "Shawn McPherson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ky/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Shawn",
+    "family_name": "McPherson",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house22.jpg",
+    "email": "shawn.mcpherson@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1965-07-05",
+    "death_date": "",
+    "extras": {
+      "home city": "Scottsville",
+      "mailing address": "801 East Main Street Scottsville, KY 42164",
+      "counties represented": [
+        "Allen",
+        "Simpson",
+        "Warren"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:14.293813+00:00",
+    "updated_at": "2026-06-04T06:50:26.477073+00:00",
+    "openstates_url": "https://openstates.org/person/shawn-mcpherson-2kCNrJwjZnbj9y9oFXXYrZ/"
+  },
+  {
+    "id": "ocd-person/737ae037-a61c-4649-9c08-bf5fe052ff36",
+    "name": "Stephanie Dietz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:ky/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Stephanie",
+    "family_name": "Dietz",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house65.jpg",
+    "email": "stephanie.dietz@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1969-02-02",
+    "death_date": "",
+    "extras": {
+      "home city": "Edgewood",
+      "mailing address": "702 Capital Ave Annex Room 316D Frankfort, KY 40601",
+      "counties represented": [
+        "Kenton"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:19.457342+00:00",
+    "updated_at": "2026-04-04T00:52:05.201928+00:00",
+    "openstates_url": "https://openstates.org/person/stephanie-dietz-3VuGreoBjzbTT5Q12ODFG2/"
+  },
+  {
+    "id": "ocd-person/e0860aa8-43ba-4bf2-94d7-3632c7375ab6",
+    "name": "Steve Bratcher",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ky/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Bratcher",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house25.jpg",
+    "email": "steve.bratcher@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1970-04-08",
+    "death_date": "",
+    "extras": {
+      "home city": "Elizabethtown",
+      "mailing address": "702 Capital Ave Annex Room 432D Frankfort, KY 40601",
+      "counties represented": [
+        "Hardin"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:19.188594+00:00",
+    "updated_at": "2026-06-04T06:50:46.105429+00:00",
+    "openstates_url": "https://openstates.org/person/steve-bratcher-6pfXNlbCxK1dd8exOkw2WU/"
+  },
+  {
+    "id": "ocd-person/817df40b-8e76-460d-81cf-63277866268a",
+    "name": "Steve Riley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ky/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Riley",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house23.jpg",
+    "email": "steve.riley@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1958-06-23",
+    "death_date": "",
+    "extras": {
+      "home city": "Glasgow",
+      "mailing address": "189 Blue Sky Dr Glasgow, KY 42141",
+      "counties represented": [
+        "Barren"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:01.668366+00:00",
+    "updated_at": "2026-01-29T06:46:56.297679+00:00",
+    "openstates_url": "https://openstates.org/person/steve-riley-3wLZOvUj5Z0jZTpJ9ifo8w/"
+  },
+  {
+    "id": "ocd-person/a41c47ce-cbfa-49e3-8a21-5666f24ef96a",
+    "name": "Steven Doan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:ky/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Steven",
+    "family_name": "Doan",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house69.jpg",
+    "email": "steven.doan@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1986-10-14",
+    "death_date": "",
+    "extras": {
+      "home city": "Erlanger",
+      "mailing address": "702 Capital Ave Annex Room 432A Frankfort, KY 40601",
+      "counties represented": [
+        "Boone (Part)",
+        "Kenton"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:20.138990+00:00",
+    "updated_at": "2026-06-04T06:50:35.900316+00:00",
+    "openstates_url": "https://openstates.org/person/steven-doan-4zffHWiUnRc4XCxTpWecqQ/"
+  },
+  {
+    "id": "ocd-person/f73e54d0-9547-4688-b97d-4818b104d160",
+    "name": "Steven Rudy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ky/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Steven",
+    "family_name": "Rudy",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house1.jpg",
+    "email": "steven.rudy@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1978-08-09",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Floor Leader",
+      "home city": "Paducah",
+      "mailing address": "350 Peppers Mill Dr Paducah, KY 42001",
+      "counties represented": [
+        "Ballard",
+        "Carlisle",
+        "Fulton",
+        "Hickman",
+        "McCracken"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:09.507778+00:00",
+    "updated_at": "2026-01-29T06:47:17.293195+00:00",
+    "openstates_url": "https://openstates.org/person/steven-rudy-7WXaavnxtxW9wZS24v4pTU/"
+  },
+  {
+    "id": "ocd-person/c85ace8f-67e3-438d-afeb-e6442aec43cd",
+    "name": "Susan Witten",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ky/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Susan",
+    "family_name": "Witten",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house31.jpg",
+    "email": "susan.witten@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1970-07-12",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "PO Box 43861 Louisville, KY 40253",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:26.258075+00:00",
+    "updated_at": "2026-06-04T06:50:23.237139+00:00",
+    "openstates_url": "https://openstates.org/person/susan-witten-663xmb5U4lKa1GmgyVDHjR/"
+  },
+  {
+    "id": "ocd-person/92576283-508e-4613-b1a0-3d227edf4068",
+    "name": "Suzanne Miles",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ky/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Suzanne",
+    "family_name": "Miles",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house7.jpg",
+    "email": "suzanne.miles@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1970-11-18",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Chair",
+      "home city": "Owensboro",
+      "mailing address": "PO Box 21592 Owensboro, KY 42304",
+      "counties represented": [
+        "Daviess"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:08.254976+00:00",
+    "updated_at": "2026-04-04T00:51:43.382715+00:00",
+    "openstates_url": "https://openstates.org/person/suzanne-miles-4S8oVkqDj965Dv5r7IzjuC/"
+  },
+  {
+    "id": "ocd-person/1c369689-ed04-484c-ab53-c50bd6011192",
+    "name": "T.J. Roberts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:ky/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "T.J.",
+    "family_name": "Roberts",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/T.J._Roberts.png",
+    "email": "tj.roberts@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1998-02-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:34:05.340118+00:00",
+    "updated_at": "2025-03-13T06:46:38.128018+00:00",
+    "openstates_url": "https://openstates.org/person/t-j-roberts-rEjNehVeM07b2fghfAw7O/"
+  },
+  {
+    "id": "ocd-person/7d2b01df-9356-4eaa-923f-144e3f229860",
+    "name": "Thomas Huff",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:ky/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Thomas",
+    "family_name": "Huff",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house49.jpg",
+    "email": "thomas.huff@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1963-06-10",
+    "death_date": "",
+    "extras": {
+      "home city": "Shepherdsville",
+      "mailing address": "PO Box 1331 Shepherdsville, KY 40165",
+      "counties represented": [
+        "Bullitt"
+      ]
+    },
+    "created_at": "2019-01-10T02:14:49.732967+00:00",
+    "updated_at": "2026-01-29T06:47:23.915589+00:00",
+    "openstates_url": "https://openstates.org/person/thomas-huff-3oBh6cthIM9uhbLTIr7zii/"
+  },
+  {
+    "id": "ocd-person/b2834b48-3186-4fbd-aa3e-daa1d38fa308",
+    "name": "Timmy Truett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:ky/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Timmy",
+    "family_name": "Truett",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house89.jpg",
+    "email": "timmy.truett@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1977-12-01",
+    "death_date": "",
+    "extras": {
+      "home city": "McKee",
+      "mailing address": "4172 HWY 2003 McKee, KY 40447",
+      "counties represented": [
+        "Jackson",
+        "Laurel (Part)",
+        "Lee",
+        "Madison"
+      ]
+    },
+    "created_at": "2021-12-16T18:51:23.502762+00:00",
+    "updated_at": "2026-01-29T06:46:49.502613+00:00",
+    "openstates_url": "https://openstates.org/person/timmy-truett-5QqdPrl6zbQsd3FlftKosy/"
+  },
+  {
+    "id": "ocd-person/77db7bcf-dfa8-4365-bb3a-4ca0351a8368",
+    "name": "Tina Bojanowski",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ky/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Tina",
+    "family_name": "Bojanowski",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house32.jpg",
+    "email": "tina.bojanowski@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1964-08-29",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 451A Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2019-01-10T02:15:08.713117+00:00",
+    "updated_at": "2026-06-04T06:50:43.060177+00:00",
+    "openstates_url": "https://openstates.org/person/tina-bojanowski-3eAOFpcCYIIwGo1KXnwq40/"
+  },
+  {
+    "id": "ocd-person/5764151d-bf80-422b-bc46-93ac2be910cc",
+    "name": "Tom Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:ky/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Smith",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house86.jpg",
+    "email": "tom.smith@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1958-11-20",
+    "death_date": "",
+    "extras": {
+      "home city": "Corbin",
+      "mailing address": "702 Capital Ave Annex Room 413G Frankfort, KY 40601",
+      "counties represented": [
+        "Knox",
+        "Laurel"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:14.047556+00:00",
+    "updated_at": "2026-06-04T06:50:27.022687+00:00",
+    "openstates_url": "https://openstates.org/person/tom-smith-2eu4M7dm6dFhzHhIZKPfno/"
+  },
+  {
+    "id": "ocd-person/79a62906-5436-4ac8-adea-0c566273bbde",
+    "name": "Tony Hampton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:ky/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Hampton",
+    "image": "https://cdn.photos.sparkplatform.com/lex/20240524200530073416000000.jpg",
+    "email": "tony.hampton@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1971-08-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:33:54.643583+00:00",
+    "updated_at": "2026-01-29T06:47:29.582976+00:00",
+    "openstates_url": "https://openstates.org/person/tony-hampton-3hY0QxQpuXhTnyyx4r2rZG/"
+  },
+  {
+    "id": "ocd-person/bc34f3ad-05ad-494c-bb80-bd2eb99e4fe9",
+    "name": "Vanessa Grossl",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:ky/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Vanessa",
+    "family_name": "Grossl",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/VanessaGrossl.jpeg",
+    "email": "vanessa.grossl@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1980-02-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:34:01.098953+00:00",
+    "updated_at": "2026-06-04T06:50:43.607567+00:00",
+    "openstates_url": "https://openstates.org/person/vanessa-grossl-5j8ku8oVaHGuAGWHscenMn/"
+  },
+  {
+    "id": "ocd-person/66619aa2-a521-4318-b5d7-b4c36954b43d",
+    "name": "Wade Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ky/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Wade",
+    "family_name": "Williams",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house4.jpg",
+    "email": "wade.williams@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1973-04-30",
+    "death_date": "",
+    "extras": {
+      "home city": "Earlington",
+      "mailing address": "702 Capital Ave Annex Room 329H Frankfort, KY 40601",
+      "counties represented": [
+        "Hopkins"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:18.939828+00:00",
+    "updated_at": "2026-01-29T06:46:41.961022+00:00",
+    "openstates_url": "https://openstates.org/person/wade-williams-37BozmrjMVLBC2cRfLTukn/"
+  },
+  {
+    "id": "ocd-person/ec846db3-c75b-4460-ba72-3e2b3fd9e04d",
+    "name": "Walker Thomas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ky/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Walker",
+    "family_name": "Thomas",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house8.jpg",
+    "email": "walker.thomas@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1963-08-13",
+    "death_date": "",
+    "extras": {
+      "home city": "Hopkinsville",
+      "mailing address": "2620 Cox Mill Rd Hopkinsville, KY 42240",
+      "counties represented": [
+        "Caldwell",
+        "Christian (Part)",
+        "Trigg"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:15.691438+00:00",
+    "updated_at": "2026-01-29T06:46:39.385330+00:00",
+    "openstates_url": "https://openstates.org/person/walker-thomas-7CIhy3wa9kdkKIXZ3vvAUv/"
+  },
+  {
+    "id": "ocd-person/3d3b33bc-8852-48fe-90cf-42ce9551424c",
+    "name": "William Lawrence",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:ky/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "William",
+    "family_name": "Lawrence",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/house70.jpg",
+    "email": "william.lawrence@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1989-01-19",
+    "death_date": "",
+    "extras": {
+      "home city": "Maysville",
+      "mailing address": "702 Capital Ave Annex Room 424E Frankfort, KY 40601",
+      "counties represented": [
+        "Bracken",
+        "Harrison",
+        "Mason",
+        "Robertson"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:12.640691+00:00",
+    "updated_at": "2026-01-29T06:47:10.454889+00:00",
+    "openstates_url": "https://openstates.org/person/william-lawrence-1rXaPsyHR3vJx15O8WPaX6/"
+  }
+]

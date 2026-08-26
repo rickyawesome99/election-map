@@ -1,0 +1,733 @@
+[
+  {
+    "id": "ocd-person/d3c437bd-532d-458b-961f-4f6dccec1e4b",
+    "name": "Bill Gannon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:nh/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Gannon",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/49858.jpg",
+    "email": "william.gannon@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Rockingham",
+      "gender code": "M",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2021-01-07T06:12:38.800310+00:00",
+    "updated_at": "2026-03-19T19:42:39.313673+00:00",
+    "openstates_url": "https://openstates.org/person/bill-gannon-6Rb3GlTM1R2YhWv0ktOqT5/"
+  },
+  {
+    "id": "ocd-person/f3e949ce-6d98-4826-bbca-08039cea4ea4",
+    "name": "Cindy Rosenwald",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:nh/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Cindy",
+    "family_name": "Rosenwald",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50355.jpg",
+    "email": "cindy.rosenwald@gc.nh.gov",
+    "gender": "Female",
+    "birth_date": "1954-04-23",
+    "death_date": "",
+    "extras": {
+      "county": "Hillsborough",
+      "gender code": "F",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2019-01-10T06:14:08.035948+00:00",
+    "updated_at": "2026-04-04T07:29:30.414672+00:00",
+    "openstates_url": "https://openstates.org/person/cindy-rosenwald-7QFkPHHEYIKfSZ06eHVloq/"
+  },
+  {
+    "id": "ocd-person/6328e7f7-d952-4d28-98b8-75a9a6f50c8d",
+    "name": "Dan Innis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:nh/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Innis",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59197.jpg",
+    "email": "daniel.innis@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "1963-04-07",
+    "death_date": "",
+    "extras": {
+      "county": "Belknap",
+      "gender code": "M",
+      "elected status": "new"
+    },
+    "created_at": "2018-10-18T14:54:21.906913+00:00",
+    "updated_at": "2026-04-04T07:28:15.700484+00:00",
+    "openstates_url": "https://openstates.org/person/dan-innis-316vwJ4rlsfOolZJqG8hxN/"
+  },
+  {
+    "id": "ocd-person/6dfd683a-1f79-49db-95a9-07f4f9898a22",
+    "name": "Daryl Abbas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:nh/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Daryl",
+    "family_name": "Abbas",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/73092.jpg",
+    "email": "daryl.abbas@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "1983-11-13",
+    "death_date": "",
+    "extras": {
+      "county": "Rockingham",
+      "gender code": "M",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2019-01-10T06:13:58.298545+00:00",
+    "updated_at": "2026-04-04T07:29:38.949840+00:00",
+    "openstates_url": "https://openstates.org/person/daryl-abbas-3LXyCcrwhC6sO28l46HHRy/"
+  },
+  {
+    "id": "ocd-person/e849b9fb-0e1d-4ed5-b684-2a6b3520be6a",
+    "name": "David Rochefort",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:nh/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Rochefort",
+    "image": "https://a4pc.org/files/Rochefort_July-2022-450x600.jpg",
+    "email": "david.rochefort@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Grafton",
+      "gender code": "M",
+      "elected status": "new"
+    },
+    "created_at": "2023-02-13T22:26:32.823734+00:00",
+    "updated_at": "2025-02-21T16:04:54.275348+00:00",
+    "openstates_url": "https://openstates.org/person/david-rochefort-74JubPqfKA0LP5LHruQZ8U/"
+  },
+  {
+    "id": "ocd-person/cf24defe-6df3-49f3-88ca-c6774b144f19",
+    "name": "David Watters",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:nh/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Watters",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50342.jpg",
+    "email": "david.watters@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "1950-12-28",
+    "death_date": "",
+    "extras": {
+      "gender code": "M",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2018-10-18T14:54:05.563334+00:00",
+    "updated_at": "2026-03-19T19:38:49.046411+00:00",
+    "openstates_url": "https://openstates.org/person/david-watters-6IsGEPBRvzydXJ2mYGrUAT/"
+  },
+  {
+    "id": "ocd-person/925608b2-8d23-4186-85f6-4c50f334374d",
+    "name": "Debra Altschiller",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:nh/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Debra",
+    "family_name": "Altschiller",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59250.jpg",
+    "email": "debra.altschiller@gc.nh.gov",
+    "gender": "Female",
+    "birth_date": "1968-06-01",
+    "death_date": "",
+    "extras": {
+      "county": "Rockingham",
+      "gender code": "F",
+      "elected status": "new"
+    },
+    "created_at": "2018-10-18T14:54:31.029761+00:00",
+    "updated_at": "2026-04-04T07:28:28.966036+00:00",
+    "openstates_url": "https://openstates.org/person/debra-altschiller-4S8CEiIEdJWW43jVFOcxZt/"
+  },
+  {
+    "id": "ocd-person/8dc59c94-caba-41b2-a6ba-6bca0f595118",
+    "name": "Denise Ricciardi",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:nh/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Denise",
+    "family_name": "Ricciardi",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/93849.jpg",
+    "email": "denise.ricciardi@gc.nh.gov",
+    "gender": "Female",
+    "birth_date": "1961-12-16",
+    "death_date": "",
+    "extras": {
+      "county": "Cheshire",
+      "gender code": "F",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2021-01-07T06:12:45.998656+00:00",
+    "updated_at": "2026-03-19T19:42:05.170939+00:00",
+    "openstates_url": "https://openstates.org/person/denise-ricciardi-4JWE47jGJGSjP7nMG6TQ0u/"
+  },
+  {
+    "id": "ocd-person/8e013e93-3dd2-4530-a42f-d9ba62ea5f04",
+    "name": "Donovan Fenton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:nh/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Donovan",
+    "family_name": "Fenton",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59154.jpg",
+    "email": "donovan.fenton@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "1988-11-26",
+    "death_date": "",
+    "extras": {
+      "county": "Cheshire",
+      "gender code": "M",
+      "elected status": "new"
+    },
+    "created_at": "2023-02-13T22:23:50.142070+00:00",
+    "updated_at": "2026-03-19T19:41:38.375059+00:00",
+    "openstates_url": "https://openstates.org/person/donovan-fenton-4JxThoVfrxdMd49e5igTsi/"
+  },
+  {
+    "id": "ocd-person/c4122c6a-ed23-492e-b813-59a0fed1ec86",
+    "name": "Howard Pearl",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:nh/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Howard",
+    "family_name": "Pearl",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59217.jpg",
+    "email": "howard.pearl@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "1969-12-31",
+    "death_date": "",
+    "extras": {
+      "county": "Merrimack",
+      "gender code": "M",
+      "elected status": "new"
+    },
+    "created_at": "2018-10-18T14:54:07.406785+00:00",
+    "updated_at": "2026-04-04T07:29:46.823018+00:00",
+    "openstates_url": "https://openstates.org/person/howard-pearl-5xyngbH2jo7M1xledU0TIs/"
+  },
+  {
+    "id": "ocd-person/e6443187-eb51-42eb-8bd7-349ed0ba9641",
+    "name": "James Gray",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:nh/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Gray",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/45621.jpg",
+    "email": "james.gray@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "gender code": "M",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2018-10-18T14:54:44.149188+00:00",
+    "updated_at": "2026-03-19T19:40:35.969951+00:00",
+    "openstates_url": "https://openstates.org/person/james-gray-70VOmV9fcGw0fHdNoF9Z8T/"
+  },
+  {
+    "id": "ocd-person/7ec573c3-d961-4d08-a71c-d239490b5c1a",
+    "name": "Keith Murphy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:nh/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Murphy",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50378.jpg",
+    "email": "keith.murphy@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "1975-06-11",
+    "death_date": "",
+    "extras": {
+      "county": "Hillsborough",
+      "gender code": "M",
+      "elected status": "new"
+    },
+    "created_at": "2023-02-13T22:27:28.930943+00:00",
+    "updated_at": "2026-03-19T19:40:35.418489+00:00",
+    "openstates_url": "https://openstates.org/person/keith-murphy-3rDGgSjXBpY1lTZdeG4swM/"
+  },
+  {
+    "id": "ocd-person/b99b0bbb-4710-43c7-a6b5-0e04524eedf0",
+    "name": "Kevin Avard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:nh/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Avard",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50507.jpg",
+    "email": "kevin.avard@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "1963-01-25",
+    "death_date": "",
+    "extras": {
+      "gender code": "M",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2021-01-07T06:12:35.560872+00:00",
+    "updated_at": "2026-04-04T07:28:07.506608+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-avard-5eER4PvHmPsvsmUMZT9rUm/"
+  },
+  {
+    "id": "ocd-person/c344ed7a-6fea-4f17-9c48-4e27d67bebc8",
+    "name": "Mark McConkey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:nh/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "McConkey",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50148.jpg",
+    "email": "mark.mcconkey@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Carroll",
+      "gender code": "M",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2018-10-18T14:54:33.420337+00:00",
+    "updated_at": "2026-04-04T07:27:04.193878+00:00",
+    "openstates_url": "https://openstates.org/person/mark-mcconkey-5wT0EYN2oPXPfQTPMVUnX6/"
+  },
+  {
+    "id": "ocd-person/14d0ff58-3340-4344-bb79-c6acd5f8ba6c",
+    "name": "Pat Long",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:nh/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Pat",
+    "family_name": "Long",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50199.jpg",
+    "email": "pat.long@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Hillsborough",
+      "gender code": "M",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2018-10-18T14:54:19.460372+00:00",
+    "updated_at": "2026-04-04T07:27:09.621807+00:00",
+    "openstates_url": "https://openstates.org/person/pat-long-dHMEb8TllJxcb1liUHD0W/"
+  },
+  {
+    "id": "ocd-person/c20b7693-7f2c-4646-af7f-d57518edd1a4",
+    "name": "Rebecca Perkins Kwoka",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:nh/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Rebecca",
+    "family_name": "Perkins Kwoka",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/93795.jpg",
+    "email": "rebecca.perkinskwoka@gc.nh.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Rockingham",
+      "gender code": "F",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2021-01-07T06:12:23.950253+00:00",
+    "updated_at": "2026-04-04T07:27:27.430351+00:00",
+    "openstates_url": "https://openstates.org/person/rebecca-perkins-kwoka-5u9kVUH0DLCOpQkRoIKJ9g/"
+  },
+  {
+    "id": "ocd-person/461c9024-c8c3-44a5-91d6-015a6587db5f",
+    "name": "Regina Birdsell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:nh/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Regina",
+    "family_name": "Birdsell",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50497.jpg",
+    "email": "regina.birdsell@gc.nh.gov",
+    "gender": "Female",
+    "birth_date": "1956-03-04",
+    "death_date": "",
+    "extras": {
+      "county": "Rockingham",
+      "gender code": "F",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2018-10-18T14:54:41.103158+00:00",
+    "updated_at": "2026-03-19T19:40:01.893547+00:00",
+    "openstates_url": "https://openstates.org/person/regina-birdsell-28IW0RX1ZIJpdr6H4jHE0V/"
+  },
+  {
+    "id": "ocd-person/9089a509-1f26-4770-adc6-199ed716e692",
+    "name": "Ruth Ward",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:nh/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Ruth",
+    "family_name": "Ward",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59194.jpg",
+    "email": "ruth.ward@gc.nh.gov",
+    "gender": "Female",
+    "birth_date": "1936-11-19",
+    "death_date": "",
+    "extras": {
+      "gender code": "F",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2018-10-18T14:54:39.947575+00:00",
+    "updated_at": "2026-04-04T07:27:02.714535+00:00",
+    "openstates_url": "https://openstates.org/person/ruth-ward-4OjnWsaMhCa2cH0bAFgsba/"
+  },
+  {
+    "id": "ocd-person/00964fc0-dd57-44c3-87bf-b6d5bbc34560",
+    "name": "Sharon Carson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:nh/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Sharon",
+    "family_name": "Carson",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/21900.jpg",
+    "email": "sharon.carson@gc.nh.gov",
+    "gender": "Female",
+    "birth_date": "1957-11-11",
+    "death_date": "",
+    "extras": {
+      "gender code": "F",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2018-10-18T14:54:11.270534+00:00",
+    "updated_at": "2026-03-19T19:38:39.095708+00:00",
+    "openstates_url": "https://openstates.org/person/sharon-carson-16gwDRn0eYT4NXaHjR584/"
+  },
+  {
+    "id": "ocd-person/de206392-deba-4ecf-96a3-33494c415417",
+    "name": "Sue Prentiss",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:nh/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Sue",
+    "family_name": "Prentiss",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/93792.jpg",
+    "email": "suzanne.prentiss@gc.nh.gov",
+    "gender": "Female",
+    "birth_date": "1964-10-06",
+    "death_date": "",
+    "extras": {
+      "county": "Grafton",
+      "gender code": "F",
+      "elected status": "Incumbent"
+    },
+    "created_at": "2021-01-07T06:12:28.397905+00:00",
+    "updated_at": "2026-04-04T07:28:49.303167+00:00",
+    "openstates_url": "https://openstates.org/person/sue-prentiss-6l966CO0rkFZFxZABFpNup/"
+  },
+  {
+    "id": "ocd-person/db4dc6cd-8c68-487f-a1e3-dd80995ba786",
+    "name": "Tara Reardon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:nh/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Tara",
+    "family_name": "Reardon",
+    "image": "https://www.citizenscount.org/sites/default/files/styles/profile_140x176/public/2024-06/tara-reardon.jpg?itok=HQZixXPG",
+    "email": "tara.reardon@gc.nh.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-12T18:01:24.936537+00:00",
+    "updated_at": "2026-04-04T07:29:32.344020+00:00",
+    "openstates_url": "https://openstates.org/person/tara-reardon-6forXgwWpMnPjUdSAYD0Io/"
+  },
+  {
+    "id": "ocd-person/5330ad05-ce69-47c0-9093-6286233c7a7d",
+    "name": "Tim Lang",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:nh/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Lang",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/59100.jpg",
+    "email": "timothy.lang@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Belknap",
+      "gender code": "M",
+      "elected status": "new"
+    },
+    "created_at": "2023-02-13T22:27:01.740611+00:00",
+    "updated_at": "2026-04-04T07:27:02.183220+00:00",
+    "openstates_url": "https://openstates.org/person/tim-lang-2WybhRCPSPtuuqCM1wTeaD/"
+  },
+  {
+    "id": "ocd-person/18d80f49-9f78-441e-bf28-1ed0929b5fd3",
+    "name": "Tim McGough",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:nh/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "McGough",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123352.jpg",
+    "email": "tim.mcgough@gc.nh.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Hillsborough",
+      "gender code": "M",
+      "elected status": "Former"
+    },
+    "created_at": "2023-02-13T22:27:11.204523+00:00",
+    "updated_at": "2026-04-04T07:26:57.586439+00:00",
+    "openstates_url": "https://openstates.org/person/tim-mcgough-ksYR0nbgbN5rvNDDjVk4h/"
+  },
+  {
+    "id": "ocd-person/dbf39ca6-e569-4078-b150-f63c51784d80",
+    "name": "Victoria Sullivan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:nh/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nh/government",
+      "name": "New Hampshire",
+      "classification": "state"
+    },
+    "given_name": "Victoria",
+    "family_name": "Sullivan",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/50177.jpg",
+    "email": "victoria.sullivan@gc.nh.gov",
+    "gender": "Female",
+    "birth_date": "1968-06-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-12T18:01:23.242541+00:00",
+    "updated_at": "2026-03-19T19:42:22.828787+00:00",
+    "openstates_url": "https://openstates.org/person/victoria-sullivan-6h2eKmuUo3EtKqEHMrRCDo/"
+  }
+]

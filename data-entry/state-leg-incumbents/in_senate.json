@@ -1,0 +1,1685 @@
+[
+  {
+    "id": "ocd-person/b5e2b0b8-ae2a-4852-9c40-c9bf4a32fe1a",
+    "name": "Aaron Freeman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:in/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Aaron",
+    "family_name": "Freeman",
+    "image": "https://cdn.zephyrcms.com/a664e2a6-fb83-4186-82cc-d4e33ff0591f/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/2021-freeman-2.jpg",
+    "email": "s32@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Abbey Webb",
+      "media contact email": "Abbey.Webb@iga.in.gov",
+      "media contact phone": "317-234-3560",
+      "legislative assistant name": "Carolyn Travis",
+      "legislative assistant email": "Carolyn.Travis@iga.in.gov",
+      "legislative assistant phone": "317-232-9490"
+    },
+    "created_at": "2018-10-18T14:44:12.952785+00:00",
+    "updated_at": "2026-01-31T00:41:37.545919+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-freeman-5XDCxCVSWglnb4ymMcKrkY/"
+  },
+  {
+    "id": "ocd-person/f22b3c5a-950d-4e0c-83c8-bf9a7c005c73",
+    "name": "Andrea Hunley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:in/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Andrea",
+    "family_name": "Hunley",
+    "image": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-Hunley_Hoosier-Profile-Pic-600x900-2.jpg",
+    "email": "s46@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional Phone 1": "800-382-9467",
+      "Legislative Assistant": "Tracy Woolbright"
+    },
+    "created_at": "2023-01-20T02:01:33.709491+00:00",
+    "updated_at": "2026-01-31T00:41:38.808046+00:00",
+    "openstates_url": "https://openstates.org/person/andrea-hunley-7Mxtv0SoNCfw4oTs06GAtP/"
+  },
+  {
+    "id": "ocd-person/a1002ff1-ffd8-4d82-8db9-3a8295ca5e06",
+    "name": "Blake Doriot",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:in/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Blake",
+    "family_name": "Doriot",
+    "image": "https://cdn.zephyrcms.com/6e687e05-6d5e-450b-a8b4-f08c648001c2/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/doriot-website.jpg",
+    "email": "s12@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Whip",
+      "second phone": "317-232-9400",
+      "media contact name": "Emma Balzer",
+      "media contact email": "Emma.Balzer@iga.in.gov",
+      "media contact phone": "317-232-7184",
+      "legislative assistant name": "Evan Davis",
+      "legislative assistant email": "Evan.Davis@iga.in.gov",
+      "legislative assistant phone": "317-232-9808"
+    },
+    "created_at": "2018-10-18T14:44:14.819715+00:00",
+    "updated_at": "2026-01-31T00:41:55.177706+00:00",
+    "openstates_url": "https://openstates.org/person/blake-doriot-4tnqiInUgKDgJqNiY2EpLq/"
+  },
+  {
+    "id": "ocd-person/08d4ca65-7f96-4df8-80cf-33b1cb156a47",
+    "name": "Brett Clark",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:in/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Brett",
+    "family_name": "Clark",
+    "image": "https://cdn.myocv.com/ocvapps/a106646122/files/654a84bda94ee-6526d35518084-ProfilewithLogo2x.png",
+    "email": "s24@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:07:51.763480+00:00",
+    "updated_at": "2026-01-31T00:41:28.903696+00:00",
+    "openstates_url": "https://openstates.org/person/brett-clark-GfBQ3J9r9GY2TyLiY5MoR/"
+  },
+  {
+    "id": "ocd-person/0482a330-c9fb-4f41-b136-88a4aef2de6a",
+    "name": "Brian Buchanan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:in/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Buchanan",
+    "image": "https://cdn.zephyrcms.com/8c4e2d6b-46c5-472e-b027-82db8d3fa31d/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/buchanan-website.jpg",
+    "email": "s7@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Lance Gideon",
+      "media contact email": "Lance.Gideon@iga.in.gov",
+      "media contact phone": "317-234-9221",
+      "legislative assistant name": "Garrett Unger",
+      "legislative assistant email": "Garrett.Unger@iga.in.gov",
+      "legislative assistant phone": "317-234-9441"
+    },
+    "created_at": "2018-10-18T14:44:15.139138+00:00",
+    "updated_at": "2026-01-31T00:41:37.160788+00:00",
+    "openstates_url": "https://openstates.org/person/brian-buchanan-8VfaXLddocnTuSWQejWKw/"
+  },
+  {
+    "id": "ocd-person/dc07e0d2-7372-46c2-967c-878ec522879d",
+    "name": "Chris Garten",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:in/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Garten",
+    "image": "https://cdn.zephyrcms.com/a2dbf141-af13-4ad7-9e37-78104d7da727/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/image.jpeg",
+    "email": "s45@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Floor Leader",
+      "second phone": "317-232-9400",
+      "media contact name": "Kellyn Harrison",
+      "media contact email": "Kellyn.Harrison@iga.in.gov",
+      "media contact phone": "317-232-9498",
+      "legislative assistant name": "Emma Garelick",
+      "legislative assistant email": "Emma.Garelick@iga.in.gov",
+      "legislative assistant phone": "317-232-9840"
+    },
+    "created_at": "2019-01-02T10:41:39.461762+00:00",
+    "updated_at": "2026-01-31T00:42:08.243596+00:00",
+    "openstates_url": "https://openstates.org/person/chris-garten-6hBuYqAYeDz0uptgvqSRKP/"
+  },
+  {
+    "id": "ocd-person/f15e7d77-05df-4875-88a3-0a1aa40822ec",
+    "name": "Cyndi Carrasco",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:in/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Cyndi",
+    "family_name": "Carrasco",
+    "image": "https://cdn.zephyrcms.com/1e5c808a-c5f4-4022-a571-1da38a777c1c/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/carrasco-website.jpg",
+    "email": "s36@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Abbey Webb",
+      "media contact email": "Abbey.Webb@iga.in.gov",
+      "media contact phone": "317-234-3560",
+      "legislative assistant name": "Paul Tricou",
+      "legislative assistant email": "Paul.Tricou@iga.in.gov",
+      "legislative assistant phone": "317-232-9533"
+    },
+    "created_at": "2024-01-03T20:53:44.813673+00:00",
+    "updated_at": "2026-01-31T00:41:35.462505+00:00",
+    "openstates_url": "https://openstates.org/person/cyndi-carrasco-7LSKdf9JSKBadgvU1EQn9A/"
+  },
+  {
+    "id": "ocd-person/bb961150-43c0-4535-bc67-a63127c90047",
+    "name": "Dan Dernulc",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:in/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Dernulc",
+    "image": "https://cdn.zephyrcms.com/563c4788-f7fa-4983-83c8-36c8dbf3d3d4/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/dernulc-website.jpg",
+    "email": "s1@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Kristen Gorski",
+      "media contact email": "Kristen.Gorski@iga.in.gov",
+      "media contact phone": "317-232-9539",
+      "legislative assistant name": "Walter Aleksic",
+      "legislative assistant email": "Walter.Aleksic@iga.in.gov",
+      "legislative assistant phone": "317-232-9414"
+    },
+    "created_at": "2023-01-20T02:02:10.772683+00:00",
+    "updated_at": "2025-02-21T15:52:46.704496+00:00",
+    "openstates_url": "https://openstates.org/person/dan-dernulc-5hy94APOOQ25UItK4k53xv/"
+  },
+  {
+    "id": "ocd-person/06fded2a-c138-46b5-9966-7662c0f28c41",
+    "name": "Daryl Schmitt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:in/sldu:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Daryl",
+    "family_name": "Schmitt",
+    "image": "https://storage.googleapis.com/enview-public-general/legislative-people-photos/150061.jpg",
+    "email": "s48@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-10-09T15:03:17.865495+00:00",
+    "updated_at": "2026-01-31T00:42:04.579557+00:00",
+    "openstates_url": "https://openstates.org/person/daryl-schmitt-DBzusAiWciV8tmChXsHvl/"
+  },
+  {
+    "id": "ocd-person/1fad6d9f-7d2c-4b2e-a74f-26a2ea44f371",
+    "name": "David Niezgodski",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:in/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Niezgodski",
+    "image": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-niezgodski-Indiana-State-Flag-Headshot.jpg",
+    "email": "s10@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1960-08-18",
+    "death_date": "",
+    "extras": {
+      "Additional Phone 1": "800-382-9467",
+      "Legislative Assistant": "Tracy Woolbright"
+    },
+    "created_at": "2018-10-18T14:44:05.953568+00:00",
+    "updated_at": "2025-03-13T06:41:37.468172+00:00",
+    "openstates_url": "https://openstates.org/person/david-niezgodski-xm1BEh7Oi1m1Xko13wChN/"
+  },
+  {
+    "id": "ocd-person/ce2c81c3-e2d6-4394-b960-8787d896bfe5",
+    "name": "Ed Charbonneau",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:in/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Charbonneau",
+    "image": "https://cdn.zephyrcms.com/64a0ce17-df30-4b22-8f54-69c3062a3461/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/charbonneau-website.jpg",
+    "email": "s5@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Emma Balzer",
+      "media contact email": "Emma.Balzer@iga.in.gov",
+      "media contact phone": "317-232-7184",
+      "legislative assistant name": "Evan Brumbaugh",
+      "legislative assistant email": "Evan.Brumbaugh@iga.in.gov",
+      "legislative assistant phone": "317-232-9494"
+    },
+    "created_at": "2018-10-18T14:44:11.270167+00:00",
+    "updated_at": "2026-02-13T12:42:06.036816+00:00",
+    "openstates_url": "https://openstates.org/person/ed-charbonneau-6H2l3qyM33GIP6pnfgbIEX/"
+  },
+  {
+    "id": "ocd-person/2d517236-2a88-435f-bc1f-ce09de86c6f9",
+    "name": "Eric Bassler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:in/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Bassler",
+    "image": "https://cdn.zephyrcms.com/0b9f559d-7c9e-4d33-b1c8-5d4f3543c195/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/bassler.jpg",
+    "email": "s39@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Caucus Chair",
+      "second phone": "317-232-9400",
+      "media contact name": "Lance Gideon",
+      "media contact email": "Lance.Gideon@iga.in.gov",
+      "media contact phone": "317-234-9221",
+      "legislative assistant name": "Kaitlyn Gomez",
+      "legislative assistant email": "Kaitlyn.Gomez@iga.in.gov",
+      "legislative assistant phone": "317-234-9426"
+    },
+    "created_at": "2018-10-18T14:44:14.977487+00:00",
+    "updated_at": "2026-01-31T00:41:49.873757+00:00",
+    "openstates_url": "https://openstates.org/person/eric-bassler-1NVsIClv76S0c5duoFznGD/"
+  },
+  {
+    "id": "ocd-person/a7974310-0d01-4bc1-9c14-29561ec68a60",
+    "name": "Eric Koch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:in/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Koch",
+    "image": "https://cdn.zephyrcms.com/efc8ba1f-e642-4264-908c-4cd32e355ad8/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/koch-headshot.jpg",
+    "email": "s44@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Kellyn Harrison",
+      "media contact email": "Kellyn.Harrison@iga.in.gov",
+      "media contact phone": "317-232-9498",
+      "legislative assistant name": "Lucy Lynch",
+      "legislative assistant email": "Lucy.Lynch@iga.in.gov",
+      "legislative assistant phone": "317-234-9425"
+    },
+    "created_at": "2018-10-18T14:44:06.109546+00:00",
+    "updated_at": "2025-03-13T06:40:50.979892+00:00",
+    "openstates_url": "https://openstates.org/person/eric-koch-56EqQASp7rhHjZlIS4iKqO/"
+  },
+  {
+    "id": "ocd-person/ba72879f-42bd-4735-a3e0-d5edd0358f98",
+    "name": "Fady Qaddoura",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:in/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Fady",
+    "family_name": "Qaddoura",
+    "image": "https://indianasenatedemocrats.org/wp-content/uploads/2020/12/Senator-Qaddoura.jpg",
+    "email": "s30@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional Phone 1": "800-382-9467",
+      "Legislative Assistant": "Tyler Hempfling"
+    },
+    "created_at": "2020-11-19T06:06:47.451589+00:00",
+    "updated_at": "2025-03-13T06:40:42.169903+00:00",
+    "openstates_url": "https://openstates.org/person/fady-qaddoura-5foubqjbSpbLXfdKzdII2K/"
+  },
+  {
+    "id": "ocd-person/aa12c3a4-7207-4474-af92-7a1f9dcf62a3",
+    "name": "Gary Byrne",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:in/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Byrne",
+    "image": "https://cdn.zephyrcms.com/2277168c-48ae-434a-8380-04e4690e5e9c/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/byrne-website.jpg",
+    "email": "s47@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Kellyn Harrison",
+      "media contact email": "Kellyn.Harrison@iga.in.gov",
+      "media contact phone": "317-232-9498",
+      "legislative assistant name": "Devon Anderson",
+      "legislative assistant email": "Devon.Anderson@iga.in.gov",
+      "legislative assistant phone": "317-232-9497"
+    },
+    "created_at": "2022-02-15T04:16:55.644166+00:00",
+    "updated_at": "2024-10-09T15:03:29.870530+00:00",
+    "openstates_url": "https://openstates.org/person/gary-byrne-5AvGnCRsLOm6SytSqkDtx5/"
+  },
+  {
+    "id": "ocd-person/a5c26055-cf9f-4d9c-979a-f8964c48c4da",
+    "name": "Greg Goode",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:in/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Goode",
+    "image": "https://cdn.zephyrcms.com/4f942262-ed42-47cc-a158-6691b9333043/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/goode-website-2.jpg",
+    "email": "s38@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Lance Gideon",
+      "media contact email": "Lance.Gideon@iga.in.gov",
+      "media contact phone": "317-234-9221",
+      "legislative assistant name": "Carolyn Travis",
+      "legislative assistant email": "Carolyn.Travis@iga.in.gov",
+      "legislative assistant phone": "317-232-9490"
+    },
+    "created_at": "2024-01-03T20:53:45.624115+00:00",
+    "updated_at": "2026-01-31T00:42:41.963847+00:00",
+    "openstates_url": "https://openstates.org/person/greg-goode-52mYygZMrC521uvpdxCBCM/"
+  },
+  {
+    "id": "ocd-person/39798614-3cb2-40b7-adad-4f5c53ff59e5",
+    "name": "Greg Taylor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:in/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Taylor",
+    "image": "https://indianasenatedemocrats.org/wp-content/uploads/2020/12/Senator-Taylor.jpg",
+    "email": "s33@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Leader",
+      "Additional Phone 1": "800-382-9467",
+      "Legislative Assistant": "Adam Jones"
+    },
+    "created_at": "2018-10-18T14:43:57.440370+00:00",
+    "updated_at": "2025-03-13T06:41:32.387725+00:00",
+    "openstates_url": "https://openstates.org/person/greg-taylor-1kS6979Tqk8iyBFsQw1WKr/"
+  },
+  {
+    "id": "ocd-person/0bee6f8c-db8b-4e92-8bd4-799c71c55c2c",
+    "name": "Greg Walker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:in/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Walker",
+    "image": "https://cdn.zephyrcms.com/425bd5c0-bbc0-4ca8-b7e1-93e41dfd2d72/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/walker-g-website.jpg",
+    "email": "s41@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1963-12-01",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Kristen Gorski",
+      "media contact email": "Kristen.Gorski@iga.in.gov",
+      "media contact phone": "317-232-9539",
+      "legislative assistant name": "Steven Bergsma",
+      "legislative assistant email": "Steven.Bergsma@iga.in.gov",
+      "legislative assistant phone": "317-232-9489"
+    },
+    "created_at": "2018-10-18T14:44:11.422664+00:00",
+    "updated_at": "2025-03-13T06:41:38.244406+00:00",
+    "openstates_url": "https://openstates.org/person/greg-walker-MVschXlYzs07N54ssVD3M/"
+  },
+  {
+    "id": "ocd-person/85b8c0cf-3df4-45a1-8c38-d220b7122226",
+    "name": "J.D. Ford",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:in/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "J.D.",
+    "family_name": "Ford",
+    "image": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-Ford-Indiana-State-Flag-Headshot.jpg",
+    "email": "s29@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1982-11-06",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Chair",
+      "Additional Phone 1": "800-382-9467",
+      "Legislative Assistant": "Halley Kissel"
+    },
+    "created_at": "2019-01-02T10:41:19.153703+00:00",
+    "updated_at": "2025-03-13T06:41:27.030740+00:00",
+    "openstates_url": "https://openstates.org/person/j-d-ford-44KPXQ9iBEXWu020kMZZ8Y/"
+  },
+  {
+    "id": "ocd-person/40ea5143-d0ab-4b9a-a0bc-2cc04f984888",
+    "name": "Jean Leising",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:in/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Jean",
+    "family_name": "Leising",
+    "image": "https://cdn.zephyrcms.com/214611f0-f359-4510-8ca0-b5d00e139454/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/2021-leising-2.jpg",
+    "email": "s42@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1949-01-10",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Kellyn Harrison",
+      "media contact email": "Kellyn.Harrison@iga.in.gov",
+      "media contact phone": "317-232-9498",
+      "legislative assistant name": "Jacob Landes ",
+      "legislative assistant email": "Jacob.Landes@iga.in.gov",
+      "legislative assistant phone": "317-232-9493"
+    },
+    "created_at": "2018-10-18T14:43:55.583611+00:00",
+    "updated_at": "2026-01-31T00:42:09.665589+00:00",
+    "openstates_url": "https://openstates.org/person/jean-leising-1yUaimxIl03gucXhID8oDA/"
+  },
+  {
+    "id": "ocd-person/4267823b-aec1-452a-a040-25b337f04c54",
+    "name": "Jeff Raatz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:in/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Raatz",
+    "image": "https://cdn.zephyrcms.com/248dafe4-9869-419e-8b36-190d40ffd50b/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/raatz-2022.jpg",
+    "email": "s27@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1963-09-13",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Kellyn Harrison",
+      "media contact email": "Kellyn.Harrison@iga.in.gov",
+      "media contact phone": "317-232-9498",
+      "legislative assistant name": "Luther Hall",
+      "legislative assistant email": "Luther.Hall@iga.in.gov",
+      "legislative assistant phone": "317-233-0930"
+    },
+    "created_at": "2018-10-18T14:44:16.050882+00:00",
+    "updated_at": "2025-03-13T06:41:08.559322+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-raatz-21InQR2Uj4j2cX4fJBcd9g/"
+  },
+  {
+    "id": "ocd-person/8c8f7869-329e-4063-ab55-30e4eca00529",
+    "name": "Jim Buck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:in/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Buck",
+    "image": "https://cdn.zephyrcms.com/5d45f119-5f23-4095-bfd8-cd7a96cab132/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/buck-flag-2011-cmyk.jpg",
+    "email": "s21@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1945-07-30",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Floor Leader Emeritus",
+      "second phone": "317-232-9400",
+      "media contact name": "Samantha Deese",
+      "media contact email": "Samantha.Deese@iga.in.gov",
+      "media contact phone": "317-234-9133",
+      "legislative assistant name": "Janet Roll",
+      "legislative assistant email": "Janet.Roll@iga.in.gov",
+      "legislative assistant phone": "317-232-9466"
+    },
+    "created_at": "2018-10-18T14:43:57.742503+00:00",
+    "updated_at": "2025-03-13T06:41:00.095773+00:00",
+    "openstates_url": "https://openstates.org/person/jim-buck-4HEUUuoFRWrmWM8epjaC6r/"
+  },
+  {
+    "id": "ocd-person/c2c98fe8-fef2-4d38-93f6-9eff4d591bed",
+    "name": "Jim Tomes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:in/sldu:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Tomes",
+    "image": "https://cdn.zephyrcms.com/a18fe9f0-b8a3-411e-bcc2-6d9fb9423a19/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/2021-tomes-2.jpg",
+    "email": "s49@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1948-07-31",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Samantha Deese",
+      "media contact email": "Samantha.Deese@iga.in.gov",
+      "media contact phone": "317-234-9133",
+      "legislative assistant name": "Walter Aleksic",
+      "legislative assistant email": "Walter.Aleksic@iga.in.gov",
+      "legislative assistant phone": "317-232-9414"
+    },
+    "created_at": "2018-10-18T14:44:09.373851+00:00",
+    "updated_at": "2025-03-13T06:41:28.171616+00:00",
+    "openstates_url": "https://openstates.org/person/jim-tomes-5vYcmmnElZiMuHHh6BfZd7/"
+  },
+  {
+    "id": "ocd-person/fc270bf0-2220-476a-ad9c-15db82d62192",
+    "name": "Justin Busch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:in/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Busch",
+    "image": "https://cdn.zephyrcms.com/9ac33a70-83a0-408c-91d2-3489a04d866d/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/busch-website.jpg",
+    "email": "s16@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Caucus Chair",
+      "second phone": "317-232-9400",
+      "media contact name": "Paige Gehlhausen",
+      "media contact email": "Paige.Gehlhausen@iga.in.gov",
+      "media contact phone": "317-232-9425",
+      "legislative assistant name": "Saralena Bergsma ",
+      "legislative assistant email": "Saralena.Bergsma@iga.in.gov",
+      "legislative assistant phone": "317-232-9488"
+    },
+    "created_at": "2019-01-02T10:40:26.339673+00:00",
+    "updated_at": "2026-01-31T00:42:39.237151+00:00",
+    "openstates_url": "https://openstates.org/person/justin-busch-7fnuSy1ahRMa4pI7MHEack/"
+  },
+  {
+    "id": "ocd-person/da010a7d-0344-48cb-b9ba-2eca71007cc6",
+    "name": "Kyle Walker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:in/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Kyle",
+    "family_name": "Walker",
+    "image": "https://cdn.zephyrcms.com/020c0a65-17de-4aa9-a073-80954fb48637/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/walker-k-website.jpg",
+    "email": "s31@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Abbey Webb",
+      "media contact email": "Abbey.Webb@iga.in.gov",
+      "media contact phone": "317-234-3560",
+      "legislative assistant name": "Saralena Bergsma",
+      "legislative assistant email": "Saralena.Bergsma@iga.in.gov",
+      "legislative assistant phone": "317-232-9488"
+    },
+    "created_at": "2020-11-19T06:06:43.562705+00:00",
+    "updated_at": "2026-01-31T00:42:46.600034+00:00",
+    "openstates_url": "https://openstates.org/person/kyle-walker-6dMnmlE53cg90UgCSVhrio/"
+  },
+  {
+    "id": "ocd-person/6c8d86c3-4157-4673-a7d9-524c9d49f859",
+    "name": "La Keisha Jackson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:in/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "La Keisha",
+    "family_name": "Jackson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/LaKeishaJackson.jpg",
+    "email": "s34@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-03T21:35:06.084794+00:00",
+    "updated_at": "2026-01-31T00:41:50.948714+00:00",
+    "openstates_url": "https://openstates.org/person/la-keisha-jackson-3IpqdodcSAgLVWJqgIg357/"
+  },
+  {
+    "id": "ocd-person/b5f001ff-6e60-49b9-b074-bb83139410b4",
+    "name": "Linda Rogers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:in/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Linda",
+    "family_name": "Rogers",
+    "image": "https://cdn.zephyrcms.com/754a99ca-bab6-488b-88e1-a9e1a9d29d7c/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/rogers-website.jpg",
+    "email": "s11@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Emma Balzer",
+      "media contact email": "Emma.Balzer@iga.in.gov",
+      "media contact phone": "317-232-7184",
+      "legislative assistant name": "Evan Davis",
+      "legislative assistant email": "Evan.Davis@iga.in.gov",
+      "legislative assistant phone": "317-232-9808"
+    },
+    "created_at": "2019-01-02T10:41:07.555276+00:00",
+    "updated_at": "2026-01-31T00:41:45.401243+00:00",
+    "openstates_url": "https://openstates.org/person/linda-rogers-5XJIICSekkVatQdFsGe9oq/"
+  },
+  {
+    "id": "ocd-person/d9013459-1dea-46ee-bdd5-5b2874b76e0a",
+    "name": "Liz Brown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:in/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Brown",
+    "image": "https://cdn.zephyrcms.com/e4616efb-2824-423e-ba07-30880be759a9/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/2021-brown-2.jpg",
+    "email": "s15@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Floor Leader - Communications",
+      "second phone": "317-232-9400",
+      "media contact name": "Paige Gehlhausen",
+      "media contact email": "Paige.Gehlhausen@iga.in.gov",
+      "media contact phone": "317-232-9425",
+      "legislative assistant name": "Devon Anderson",
+      "legislative assistant email": "Devon.Anderson@iga.in.gov",
+      "legislative assistant phone": "317-232-9497"
+    },
+    "created_at": "2018-10-18T14:44:14.513349+00:00",
+    "updated_at": "2026-01-31T00:41:41.115411+00:00",
+    "openstates_url": "https://openstates.org/person/liz-brown-6bTstVKNaTHPthpuW7NEN8/"
+  },
+  {
+    "id": "ocd-person/a48f9631-3436-4445-b8fc-87c143f373cd",
+    "name": "Lonnie Randolph",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:in/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Lonnie",
+    "family_name": "Randolph",
+    "image": "https://indianasenatedemocrats.org/wp-content/uploads/2022/12/Senator-Randolph-Indiana-State-Flag-Headshot.jpg",
+    "email": "s2@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1949-08-07",
+    "death_date": "",
+    "extras": {
+      "Additional Phone 1": "800-382-9467",
+      "Legislative Assistant": "Halley Kissel"
+    },
+    "created_at": "2018-10-18T14:44:01.917791+00:00",
+    "updated_at": "2025-03-29T00:44:19.514277+00:00",
+    "openstates_url": "https://openstates.org/person/lonnie-randolph-50WMNOiNxJMAT15HtxQWIn/"
+  },
+  {
+    "id": "ocd-person/c553dcc6-1c2c-49d8-be04-e89e4d123d8b",
+    "name": "Mark Spencer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:in/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Spencer",
+    "image": "https://img1.wsimg.com/isteam/ip/7d9db0ae-f3dc-4181-914f-4606a6f84c37/Mark-Spencer-campaign.png/:/rs=w:1240,h:620,cg:true,m/cr=w:1240,h:620",
+    "email": "s3@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:09:34.060959+00:00",
+    "updated_at": "2026-01-31T00:42:19.991324+00:00",
+    "openstates_url": "https://openstates.org/person/mark-spencer-60LoRd2Glr1sjPK0dNvKA7/"
+  },
+  {
+    "id": "ocd-person/6ffd10c6-9fd6-4378-8841-63ce4ca88764",
+    "name": "Michael Crider",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:in/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Crider",
+    "image": "https://cdn.zephyrcms.com/9bb2551b-a7c9-428f-a184-16ef0d718d68/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/crider-website.jpg",
+    "email": "s28@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip",
+      "second phone": "317-232-9400",
+      "media contact name": "Kristen Gorski",
+      "media contact email": "Kristen.Gorski@iga.in.gov",
+      "media contact phone": "317-232-9539",
+      "legislative assistant name": "Jim Johnson",
+      "legislative assistant email": "Jim.Johnson@iga.in.gov",
+      "legislative assistant phone": "317-234-9054"
+    },
+    "created_at": "2018-10-18T14:44:00.703320+00:00",
+    "updated_at": "2025-03-13T06:41:33.091599+00:00",
+    "openstates_url": "https://openstates.org/person/michael-crider-3PJnZX2agigLsMB6ueErpc/"
+  },
+  {
+    "id": "ocd-person/9569c3da-b86b-4b33-a9ad-8d6174323569",
+    "name": "Mike Bohacek",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:in/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Bohacek",
+    "image": "https://cdn.zephyrcms.com/1282c789-f53b-485a-b949-3148759dbbde/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/2021-bohacek-2.jpg",
+    "email": "s8@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Emma Balzer",
+      "media contact email": "Emma.Balzer@iga.in.gov",
+      "media contact phone": "317-232-7184",
+      "legislative assistant name": "Connor Wong",
+      "legislative assistant email": "Connor.Wong@iga.in.gov",
+      "legislative assistant phone": "317-232-9541"
+    },
+    "created_at": "2018-10-18T14:44:15.895564+00:00",
+    "updated_at": "2026-01-31T00:42:13.767131+00:00",
+    "openstates_url": "https://openstates.org/person/mike-bohacek-4XwBs4erp9bfCPP8GzBHbt/"
+  },
+  {
+    "id": "ocd-person/01cb22d6-e0f5-478e-99b2-801ffbf32d2b",
+    "name": "Mike Gaskill",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:in/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Gaskill",
+    "image": "https://cdn.zephyrcms.com/3f5f30c4-b021-4232-a66c-526b4778fe5a/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/gaskill.jpg",
+    "email": "s25@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Floor Leader for Parliamentary Affairs",
+      "second phone": "317-232-9400",
+      "media contact name": "Samantha Deese",
+      "media contact email": "Samantha.Deese@iga.in.gov",
+      "media contact phone": "317-234-9133",
+      "legislative assistant name": "Devon Anderson",
+      "legislative assistant email": "Devon.Anderson@iga.in.gov",
+      "legislative assistant phone": "317-232-9497"
+    },
+    "created_at": "2019-01-02T10:40:55.127059+00:00",
+    "updated_at": "2026-01-31T00:42:32.283617+00:00",
+    "openstates_url": "https://openstates.org/person/mike-gaskill-3NpCIXFir9ebcjAkK0oix/"
+  },
+  {
+    "id": "ocd-person/01bb6149-aa0f-457f-b759-1338b6c8ae5f",
+    "name": "Mike Young",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:in/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Young",
+    "image": "https://cdn.zephyrcms.com/3234d40a-6603-4164-b8e7-6529ae02811b/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/young-2012.jpg",
+    "email": "s35@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1951-05-14",
+    "death_date": "",
+    "extras": {
+      "media contact name": "Abbey Webb",
+      "media contact email": "Abbey.Webb@iga.in.gov",
+      "media contact phone": "317-234-3560",
+      "legislative assistant name": "Hector Ayala",
+      "legislative assistant email": "Hector.Ayala@iga.in.gov",
+      "legislative assistant phone": "317-232-9517"
+    },
+    "created_at": "2018-10-18T14:43:58.533355+00:00",
+    "updated_at": "2025-03-13T06:40:26.708756+00:00",
+    "openstates_url": "https://openstates.org/person/mike-young-3GclQEisrNE8P9H4C0FH5/"
+  },
+  {
+    "id": "ocd-person/b5f773c4-4e25-4fac-b905-5aca0023100d",
+    "name": "Nick McKinley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:in/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "McKinley",
+    "image": "https://cdn.zephyrcms.com/47a598a5-02c8-412d-9df6-953a1593189d/-/progressive/yes/-/format/jpeg/-/resize/200x/-/stretch/off/mc-kinley-website.jpg",
+    "email": "s17@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-02-13T12:43:43.258409+00:00",
+    "updated_at": "2026-02-13T12:43:43.968830+00:00",
+    "openstates_url": "https://openstates.org/person/nick-mckinley-5XMhDtLXxo0zDlTunNPi5V/"
+  },
+  {
+    "id": "ocd-person/acd45b79-7930-459f-8118-70b9574ba481",
+    "name": "Randy Maxwell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:in/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Maxwell",
+    "image": "https://cdn.zephyrcms.com/78226b9f-d4ad-4d02-8f18-d1bc45ce3c44/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/maxwell-website.jpg",
+    "email": "s43@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Kellyn Harrison",
+      "media contact email": "Kellyn.Harrison@iga.in.gov",
+      "media contact phone": "317-232-9498",
+      "legislative assistant name": "Kirsten Nielsen",
+      "legislative assistant email": "Kirsten.Nielsen@iga.in.gov",
+      "legislative assistant phone": "317-232-9984"
+    },
+    "created_at": "2024-01-03T20:53:44.014486+00:00",
+    "updated_at": "2026-01-31T00:42:30.799559+00:00",
+    "openstates_url": "https://openstates.org/person/randy-maxwell-5G7j7hJnHOWC26BIDLy5hp/"
+  },
+  {
+    "id": "ocd-person/0b243d61-c607-4711-bc54-aecc21281540",
+    "name": "Rick Niemeyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:in/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Niemeyer",
+    "image": "https://cdn.zephyrcms.com/c19965ba-e156-4348-bf41-366a289532e4/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/niemeyer-website.jpg",
+    "email": "s6@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Emma Balzer",
+      "media contact email": "Emma.Balzer@iga.in.gov",
+      "media contact phone": "317-232-7184",
+      "legislative assistant name": "Steven Bergsma",
+      "legislative assistant email": "Steven.Bergsma@iga.in.gov",
+      "legislative assistant phone": "317-232-9489"
+    },
+    "created_at": "2018-10-18T14:44:13.106621+00:00",
+    "updated_at": "2025-03-13T06:41:26.235586+00:00",
+    "openstates_url": "https://openstates.org/person/rick-niemeyer-L1TaQlIZRrflbcC9rJM5Q/"
+  },
+  {
+    "id": "ocd-person/766cf9c2-a001-49a1-8fba-075a0510767d",
+    "name": "Rod Bray",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:in/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Rod",
+    "family_name": "Bray",
+    "image": "https://cdn.zephyrcms.com/300cdb3a-5a3e-4686-9576-da26eb5ed28f/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/bray-website.jpg",
+    "email": "s37@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "President Pro Tempore",
+      "second phone": "317-232-9400",
+      "media contact name": "Molly Swigart",
+      "media contact email": "Molly.Swigart@iga.in.gov",
+      "media contact phone": "317-232-9521",
+      "legislative assistant name": "Kayla Caviness",
+      "legislative assistant email": "Kayla.Caviness@iga.in.gov",
+      "legislative assistant phone": "317-232-9416"
+    },
+    "created_at": "2018-10-18T14:43:54.808842+00:00",
+    "updated_at": "2025-03-13T06:41:01.495766+00:00",
+    "openstates_url": "https://openstates.org/person/rod-bray-3bStaTElYw2SLdlJcCVPJt/"
+  },
+  {
+    "id": "ocd-person/4058ba4c-30a9-46a7-80a1-1f3de1e44a2f",
+    "name": "Rodney Pol",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:in/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Rodney",
+    "family_name": "Pol",
+    "image": "https://indianasenatedemocrats.org/wp-content/uploads/2021/11/Senator-Pol_Hoosierjpg.jpg",
+    "email": "s4@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Additional Phone 1": "800-382-9467",
+      "Legislative Assistant": "Tyler Hempfling"
+    },
+    "created_at": "2021-12-16T18:49:40.104515+00:00",
+    "updated_at": "2026-01-31T00:42:14.475194+00:00",
+    "openstates_url": "https://openstates.org/person/rodney-pol-1xQ3ZSH2owNZTAwfMtWhEl/"
+  },
+  {
+    "id": "ocd-person/91572a47-dcdf-4be5-8fec-99630da33a39",
+    "name": "Ron Alting",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:in/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Alting",
+    "image": "https://cdn.zephyrcms.com/f9fc698d-3a8c-4782-b57e-476b26b9bc36/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/2021-alting-2.jpg",
+    "email": "s22@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Lance Gideon",
+      "media contact email": "Lance.Gideon@iga.in.gov",
+      "media contact phone": "317-234-9221",
+      "legislative assistant name": "Evan Davis",
+      "legislative assistant email": "Evan.Davis@iga.in.gov",
+      "legislative assistant phone": "317-232-9808"
+    },
+    "created_at": "2018-10-18T14:44:00.542684+00:00",
+    "updated_at": "2025-03-13T06:40:49.559815+00:00",
+    "openstates_url": "https://openstates.org/person/ron-alting-4QFilNJNLAkJIXlPPg4ArR/"
+  },
+  {
+    "id": "ocd-person/010e5ebe-683c-4fe2-9696-46f7f0b4bea6",
+    "name": "Ryan Mishler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:in/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Mishler",
+    "image": "https://cdn.zephyrcms.com/8b844e0e-016b-4425-bb3b-2134052d1240/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/mishler-website.jpg",
+    "email": "s9@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1968-05-23",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Emma Balzer",
+      "media contact email": "Emma.Balzer@iga.in.gov",
+      "media contact phone": "317-232-7184",
+      "legislative assistant name": "Kyra Helming",
+      "legislative assistant email": "Kyra.Helming@iga.in.gov",
+      "legislative assistant phone": "317-232-9814"
+    },
+    "created_at": "2018-10-18T14:44:05.792455+00:00",
+    "updated_at": "2026-01-31T00:41:58.503341+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-mishler-1zYgdDnDKexRFtOTsVuQo/"
+  },
+  {
+    "id": "ocd-person/75d45200-93a5-45b7-90c2-9b3014d7f827",
+    "name": "Scott Alexander",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:in/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Alexander",
+    "image": "https://cdn.zephyrcms.com/db6aec75-3f20-4efc-89cb-f7272ded9267/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/alexander-website.jpg",
+    "email": "s26@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Samantha Deese",
+      "media contact email": "Samantha.Deese@iga.in.gov",
+      "media contact phone": "317-234-9133",
+      "legislative assistant name": "Kirsten Nielsen",
+      "legislative assistant email": "Kirsten.Nielsen@iga.in.gov",
+      "legislative assistant phone": "317-232-9984"
+    },
+    "created_at": "2023-01-20T02:03:20.508366+00:00",
+    "updated_at": "2026-01-31T00:42:35.719211+00:00",
+    "openstates_url": "https://openstates.org/person/scott-alexander-3aL8EvTddzPP233InhiTlX/"
+  },
+  {
+    "id": "ocd-person/7aea558c-2623-446e-9870-9ee2b8fe5e47",
+    "name": "Scott Baldwin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:in/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Baldwin",
+    "image": "https://cdn.zephyrcms.com/2a259e46-1091-4af6-8894-cd56343d3aa1/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/baldwin-2.jpg",
+    "email": "s20@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Abbey Webb",
+      "media contact email": "Abbey.Webb@iga.in.gov",
+      "media contact phone": "317-234-3560",
+      "legislative assistant name": "Connor Wong",
+      "legislative assistant email": "Connor.Wong@iga.in.gov",
+      "legislative assistant phone": "317-232-9541"
+    },
+    "created_at": "2020-11-19T06:06:41.144100+00:00",
+    "updated_at": "2026-01-31T00:41:42.540985+00:00",
+    "openstates_url": "https://openstates.org/person/scott-baldwin-3jw9bSjmireLGk4ecFECgh/"
+  },
+  {
+    "id": "ocd-person/872447dd-3b06-421e-af8c-25ea68aa5ae4",
+    "name": "Shelli Yoder",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:in/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Shelli",
+    "family_name": "Yoder",
+    "image": "https://indianasenatedemocrats.org/wp-content/uploads/2020/12/Senator-Yoder.jpg",
+    "email": "s40@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1968-08-30",
+    "death_date": "",
+    "extras": {
+      "title": "",
+      "Additional Phone 1": "800-382-9467",
+      "Legislative Assistant": "Nathaniel Massy"
+    },
+    "created_at": "2020-11-19T06:06:46.236264+00:00",
+    "updated_at": "2026-01-31T00:41:28.318614+00:00",
+    "openstates_url": "https://openstates.org/person/shelli-yoder-470XkyQp0eND7NcTESbnng/"
+  },
+  {
+    "id": "ocd-person/5f8f629e-daed-4a92-ab9b-98c4127d8a0e",
+    "name": "Spencer Deery",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:in/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Spencer",
+    "family_name": "Deery",
+    "image": "https://cdn.zephyrcms.com/d1a172a6-548d-4c74-9d9d-ea2f1bab1443/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/derry-website.jpg",
+    "email": "s23@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Lance Gideon",
+      "media contact email": "Lance.Gideon@iga.in.gov",
+      "media contact phone": "317-234-9221",
+      "legislative assistant name": "Hector Ayala",
+      "legislative assistant email": "Hector.Ayala@iga.in.gov",
+      "legislative assistant phone": "317-232-9517"
+    },
+    "created_at": "2023-01-20T02:02:29.501632+00:00",
+    "updated_at": "2026-01-31T00:42:13.111202+00:00",
+    "openstates_url": "https://openstates.org/person/spencer-deery-2uJnUfE06ZbXaCIujizRcs/"
+  },
+  {
+    "id": "ocd-person/b2c735b9-54fb-4e12-9fef-36ffda822b43",
+    "name": "Stacey Donato",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:in/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Stacey",
+    "family_name": "Donato",
+    "image": "https://cdn.zephyrcms.com/48630e3d-f299-4f66-a5d9-052719d70bb5/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/donato.jpg",
+    "email": "s18@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Samantha Deese",
+      "media contact email": "Samantha.Deese@iga.in.gov",
+      "media contact phone": "317-234-9133",
+      "legislative assistant name": "Jim Johnson",
+      "legislative assistant email": "Jim.Johnson@iga.in.gov",
+      "legislative assistant phone": "317-234-9054"
+    },
+    "created_at": "2020-01-01T06:06:39.966405+00:00",
+    "updated_at": "2026-01-31T00:42:40.808652+00:00",
+    "openstates_url": "https://openstates.org/person/stacey-donato-5RLfkPQg19Z7tykGw5wEJn/"
+  },
+  {
+    "id": "ocd-person/a0b2ce58-2c2d-4b71-a9e2-7b8ae153d53f",
+    "name": "Sue Glick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:in/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Sue",
+    "family_name": "Glick",
+    "image": "https://cdn.zephyrcms.com/9104a840-3113-47f6-b8fc-112521fe5577/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/glick-website.jpg",
+    "email": "s13@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant President Pro Tempore",
+      "second phone": "317-232-9400",
+      "media contact name": "Paige Gehlhausen",
+      "media contact email": "Paige.Gehlhausen@iga.in.gov",
+      "media contact phone": "317-232-9425",
+      "legislative assistant name": "Jacob Landes",
+      "legislative assistant email": "Jacob.Landes@iga.in.gov",
+      "legislative assistant phone": "317-232-9493"
+    },
+    "created_at": "2018-10-18T14:44:09.213727+00:00",
+    "updated_at": "2026-01-31T00:42:02.023007+00:00",
+    "openstates_url": "https://openstates.org/person/sue-glick-4tEUBegejrhXDdfzvJzHTD/"
+  },
+  {
+    "id": "ocd-person/aa948d0d-f7d1-4a11-a58b-986b0d61ebf7",
+    "name": "Travis Holdman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:in/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Travis",
+    "family_name": "Holdman",
+    "image": "https://cdn.zephyrcms.com/83c9f297-e595-4d74-a5d1-05607adcc991/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/holdman.jpg",
+    "email": "s19@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Chair",
+      "second phone": "317-232-9400",
+      "media contact name": "Paige Gehlhausen",
+      "media contact email": "Paige.Gehlhausen@iga.in.gov",
+      "media contact phone": "317-232-9425",
+      "legislative assistant name": "Debby McCarty",
+      "legislative assistant email": "Debby.McCarty@iga.in.gov",
+      "legislative assistant phone": "317-232-9453"
+    },
+    "created_at": "2018-10-18T14:44:09.729008+00:00",
+    "updated_at": "2026-01-31T00:41:30.159513+00:00",
+    "openstates_url": "https://openstates.org/person/travis-holdman-5BsaBHuOp76mPiPzsLVUPP/"
+  },
+  {
+    "id": "ocd-person/5e19b0fa-7bdc-4732-826c-adf5fbad4e21",
+    "name": "Tyler Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:in/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Tyler",
+    "family_name": "Johnson",
+    "image": "https://cdn.zephyrcms.com/91785bff-d689-4351-a1fa-2345256bf313/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/johnson-website.jpg",
+    "email": "s14@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Paige Gehlhausen",
+      "media contact email": "Paige.Gehlhausen@iga.in.gov",
+      "media contact phone": "317-232-9425",
+      "legislative assistant name": "Janet Roll",
+      "legislative assistant email": "Janet.Roll@iga.in.gov",
+      "legislative assistant phone": "317-232-9466"
+    },
+    "created_at": "2023-01-20T02:01:46.385593+00:00",
+    "updated_at": "2026-01-31T00:42:41.382807+00:00",
+    "openstates_url": "https://openstates.org/person/tyler-johnson-2rZ1DjxGtRnCayBdtFoCTh/"
+  },
+  {
+    "id": "ocd-person/b6be97c1-d574-443d-b493-224dcb6e2a7f",
+    "name": "Vaneta Becker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:in/sldu:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Vaneta",
+    "family_name": "Becker",
+    "image": "https://cdn.zephyrcms.com/e904380d-6101-41f4-8699-7849dfa918dc/-/progressive/yes/-/format/jpeg/-/scale_crop/200x300/center/-/stretch/off/becker-website.jpg",
+    "email": "s50@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1949-10-09",
+    "death_date": "",
+    "extras": {
+      "second phone": "317-232-9400",
+      "media contact name": "Samantha Deese",
+      "media contact email": "Samantha.Deese@iga.in.gov",
+      "media contact phone": "317-234-9133",
+      "legislative assistant name": "Evan Brumbaugh",
+      "legislative assistant email": "Evan.Brumbaugh@iga.in.gov",
+      "legislative assistant phone": "317-232-9494"
+    },
+    "created_at": "2018-10-18T14:44:00.857172+00:00",
+    "updated_at": "2025-03-13T06:41:35.867961+00:00",
+    "openstates_url": "https://openstates.org/person/vaneta-becker-5YphgjSixyPNUjqUYSBG6Z/"
+  }
+]

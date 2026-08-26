@@ -1,0 +1,3188 @@
+[
+  {
+    "id": "ocd-person/a76e0c0e-81d3-4f3b-8cc8-b8360d3cecb4",
+    "name": "Aar\u00f3n Ort\u00edz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:il/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Aar\u00f3n",
+    "family_name": "Ort\u00edz",
+    "image": "https://cdn.ilga.gov/assets/img/members/{D96B0DF9-0E06-487B-825C-AB0BE8C3CA1E}.jpg",
+    "email": "district@repaaronortiz.com",
+    "gender": "Male",
+    "birth_date": "1991-06-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:39.198974+00:00",
+    "updated_at": "2026-04-18T00:41:50.951649+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-ortiz-55w0dTiU98bQQfi62NSQ68/"
+  },
+  {
+    "id": "ocd-person/4101db1f-a913-4d16-88fb-001f120bb092",
+    "name": "Abdelnasser Rashid",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:il/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Abdelnasser",
+    "family_name": "Rashid",
+    "image": "https://cdn.ilga.gov/assets/img/members/{48E00B1D-C5BE-4210-A9A8-F68739D935D6}.jpg",
+    "email": "office@reprashid.com",
+    "gender": "Male",
+    "birth_date": "1989-07-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:44.065086+00:00",
+    "updated_at": "2026-04-18T00:42:13.380608+00:00",
+    "openstates_url": "https://openstates.org/person/abdelnasser-rashid-1yfLfC7MinO4y4Q57BkWEE/"
+  },
+  {
+    "id": "ocd-person/9729745e-386d-4f4b-8d04-0e762dcd87b2",
+    "name": "Adam Niemerg",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "102",
+      "division_id": "ocd-division/country:us/state:il/sldl:102"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Niemerg",
+    "image": "https://cdn.ilga.gov/assets/img/members/{EDDABDD8-51A3-413F-B2A0-FA5953D29598}.jpg",
+    "email": "niemerg@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "1984-03-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:13.674749+00:00",
+    "updated_at": "2026-04-18T00:42:26.149712+00:00",
+    "openstates_url": "https://openstates.org/person/adam-niemerg-4bEmk0fuH8XNAfDTzFcyBu/"
+  },
+  {
+    "id": "ocd-person/b13c7ff5-806e-426d-afd5-181f53e9fed1",
+    "name": "Amy Elik",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "111",
+      "division_id": "ocd-division/country:us/state:il/sldl:111"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Amy",
+    "family_name": "Elik",
+    "image": "https://cdn.ilga.gov/assets/img/members/{D070CEE6-55DF-4D51-961B-CCA4A0E49A8C}.jpg",
+    "email": "elik@ilhousegop.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:07.189115+00:00",
+    "updated_at": "2026-04-18T00:41:35.982319+00:00",
+    "openstates_url": "https://openstates.org/person/amy-elik-5ORI0DqvJ7w8BaxnsAAl3B/"
+  },
+  {
+    "id": "ocd-person/f8dc94db-66cf-4d5e-b1af-0b6307140524",
+    "name": "Amy Grant",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:il/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Amy",
+    "family_name": "Grant",
+    "image": "https://cdn.ilga.gov/assets/img/members/{41DCC207-977E-45DC-BD10-A8AFDCEB673E}.jpg",
+    "email": "grant@ilhousegop.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:43.007050+00:00",
+    "updated_at": "2026-04-18T00:42:24.193583+00:00",
+    "openstates_url": "https://openstates.org/person/amy-grant-7ZatzXo2XK4n1hF0ntSvki/"
+  },
+  {
+    "id": "ocd-person/8b2bc102-d62b-47b2-91d8-5f9b3a172cea",
+    "name": "Angie Guerrero-Cuellar",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:il/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Angie",
+    "family_name": "Guerrero-Cuellar",
+    "image": "https://cdn.ilga.gov/assets/img/members/{22FBB36E-8A65-4E83-81F1-A20247A6B8F2}.jpg",
+    "email": "angieguerrerocuellar22@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-12-16T18:47:59.610570+00:00",
+    "updated_at": "2026-04-18T00:42:02.915506+00:00",
+    "openstates_url": "https://openstates.org/person/angie-guerrero-cuellar-4EbvbJTpyot8JrdY7P7CDS/"
+  },
+  {
+    "id": "ocd-person/02f2799d-4633-48e9-b5ab-379d48e70b40",
+    "name": "Ann Williams",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:il/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Ann",
+    "family_name": "Williams",
+    "image": "https://cdn.ilga.gov/assets/img/members/{C45B418C-4848-4467-ADC2-739B2D1E4418}.jpg",
+    "email": "ann@repannwilliams.com",
+    "gender": "Female",
+    "birth_date": "1968-04-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:59.603325+00:00",
+    "updated_at": "2026-04-18T00:41:30.105139+00:00",
+    "openstates_url": "https://openstates.org/person/ann-williams-5YnM4Pf8QTW4eskXYSjey/"
+  },
+  {
+    "id": "ocd-person/f38a2b8a-b0e4-4e7d-92cf-7855d42e9c2d",
+    "name": "Anna Moeller",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:il/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Anna",
+    "family_name": "Moeller",
+    "image": "https://cdn.ilga.gov/assets/img/members/{DCE9D682-0582-49BD-AD67-98C2502D89C2}.jpg",
+    "email": "staterepmoeller@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:55.957474+00:00",
+    "updated_at": "2026-04-18T00:41:10.411512+00:00",
+    "openstates_url": "https://openstates.org/person/anna-moeller-7PYHJs2uw3UNPMDvx7wM3R/"
+  },
+  {
+    "id": "ocd-person/8dfe2e37-8a40-4be0-b44d-0bf65861f4e0",
+    "name": "Anne Stava",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:il/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Anne",
+    "family_name": "Stava",
+    "image": "https://cdn.ilga.gov/assets/img/members/{0322F94E-013C-4237-9808-4462138AC595}.jpg",
+    "email": "office@repstavamurray.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:52.726511+00:00",
+    "updated_at": "2026-04-18T00:41:49.375651+00:00",
+    "openstates_url": "https://openstates.org/person/anne-stava-4Jw4tQFErBB62nurYyP4aW/"
+  },
+  {
+    "id": "ocd-person/aecf9fb4-3e54-4963-941f-8dc6b4658584",
+    "name": "Anthony DeLuca",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:il/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Anthony",
+    "family_name": "DeLuca",
+    "image": "https://cdn.ilga.gov/assets/img/members/{64399002-8B14-4D8E-80A4-54A77F25421C}.jpg",
+    "email": "repdeluca@sbcglobal.net",
+    "gender": "Male",
+    "birth_date": "1970-07-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:02.038253+00:00",
+    "updated_at": "2026-04-18T00:41:24.967572+00:00",
+    "openstates_url": "https://openstates.org/person/anthony-deluca-5JrY3LSwQsCgIjqyfwPdbw/"
+  },
+  {
+    "id": "ocd-person/fb481641-3999-4fe4-9bac-878becdde97d",
+    "name": "Barbara Hernandez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:il/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Barbara",
+    "family_name": "Hernandez",
+    "image": "https://cdn.ilga.gov/assets/img/members/{E3518E4F-7AAF-4D93-8985-336197D96094}.jpg",
+    "email": "repbarbarahernandez@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-03-20T05:07:04.181198+00:00",
+    "updated_at": "2026-04-18T00:42:37.297197+00:00",
+    "openstates_url": "https://openstates.org/person/barbara-hernandez-7eA16mdk2QIB3afk7gaznB/"
+  },
+  {
+    "id": "ocd-person/fb6cc95a-0c98-41e3-a481-8d5dc51d6c54",
+    "name": "Bill Hauter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:il/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Hauter",
+    "image": "https://cdn.ilga.gov/assets/img/members/{999C86E0-F35D-4F02-81BE-F4FEBF930114}.jpg",
+    "email": "hauter@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:42.883883+00:00",
+    "updated_at": "2026-04-18T00:42:34.733193+00:00",
+    "openstates_url": "https://openstates.org/person/bill-hauter-7eQmxRMPcrfPQRuKg8L0yq/"
+  },
+  {
+    "id": "ocd-person/500ffee4-de06-4a0b-b4df-f8e6f52c4e96",
+    "name": "Blaine Wilhour",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "110",
+      "division_id": "ocd-division/country:us/state:il/sldl:110"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Blaine",
+    "family_name": "Wilhour",
+    "image": "https://cdn.ilga.gov/assets/img/members/{66C5580C-A414-41BB-B3AC-638925AC34CD}.jpg",
+    "email": "wilhour@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "1982-03-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:46.107260+00:00",
+    "updated_at": "2026-04-18T00:42:02.309675+00:00",
+    "openstates_url": "https://openstates.org/person/blaine-wilhour-2R4hAD94kYSTuq92EO9x94/"
+  },
+  {
+    "id": "ocd-person/55a824f4-04c7-4834-8a5d-d204ca3bece5",
+    "name": "Bob Morgan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:il/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Morgan",
+    "image": "https://cdn.ilga.gov/assets/img/members/{A3460802-617C-4097-B043-6D63A11278AC}.jpg",
+    "email": "info@repbobmorgan.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:50.504658+00:00",
+    "updated_at": "2026-04-18T00:41:19.359708+00:00",
+    "openstates_url": "https://openstates.org/person/bob-morgan-2bdBmGZGTieR2rVNWGgxfR/"
+  },
+  {
+    "id": "ocd-person/3ce631a4-7a4f-4905-a959-574f1f0d3d6d",
+    "name": "Bob Rita",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:il/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Rita",
+    "image": "https://cdn.ilga.gov/assets/img/members/{AC16F1E8-0988-4A08-A2E5-EF4D06371A24}.jpg",
+    "email": "robertbobrita@aol.com",
+    "gender": "Male",
+    "birth_date": "1969-10-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:47.388493+00:00",
+    "updated_at": "2026-04-18T00:41:12.687853+00:00",
+    "openstates_url": "https://openstates.org/person/bob-rita-1qujmv3DmqMlBt4HCU4sTF/"
+  },
+  {
+    "id": "ocd-person/be767c3e-58d9-41c0-b930-79c0f47b9960",
+    "name": "Brad Fritts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:il/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Fritts",
+    "image": "https://cdn.ilga.gov/assets/img/members/{3A924147-7119-4921-BDF6-14B5D5BA4B8D}.jpg",
+    "email": "fritts@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "2000-01-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:41.019015+00:00",
+    "updated_at": "2026-04-18T00:41:11.003096+00:00",
+    "openstates_url": "https://openstates.org/person/brad-fritts-5nOgmdhhjsa3BdTCz9Bgm0/"
+  },
+  {
+    "id": "ocd-person/e05f1a87-b75d-450e-9cd1-3b7a66cb703e",
+    "name": "Brad Halbrook",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "107",
+      "division_id": "ocd-division/country:us/state:il/sldl:107"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Halbrook",
+    "image": "https://cdn.ilga.gov/assets/img/members/{3F3C3739-E087-440D-B006-33043A8F5083}.jpg",
+    "email": "halbrook@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "1961-07-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:58.194862+00:00",
+    "updated_at": "2026-04-18T00:41:45.071553+00:00",
+    "openstates_url": "https://openstates.org/person/brad-halbrook-6pNk6sx7QUmqXsj8RRC9F8/"
+  },
+  {
+    "id": "ocd-person/49c0fac1-8cf0-48d2-8166-811afe9ac5c5",
+    "name": "Brad Stephens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:il/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Stephens",
+    "image": "https://cdn.ilga.gov/assets/img/members/{BD3836AC-CD0C-4E20-AD4C-1F2AEA56A8A2}.jpg",
+    "email": "stephens@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "1963-12-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-05T11:05:22.756444+00:00",
+    "updated_at": "2026-04-18T00:41:43.117718+00:00",
+    "openstates_url": "https://openstates.org/person/brad-stephens-2FAdASxzYOnQuuD6obRriH/"
+  },
+  {
+    "id": "ocd-person/8c6f0ed1-f28f-408a-9b59-156fa7a7f1e0",
+    "name": "Brandun Schweizer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "104",
+      "division_id": "ocd-division/country:us/state:il/sldl:104"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Brandun",
+    "family_name": "Schweizer",
+    "image": "https://cdn.ilga.gov/assets/img/members/{7520D666-0725-4963-B643-C1106551E922}.jpg",
+    "email": "repschweizer@district104.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-03T20:38:25.908425+00:00",
+    "updated_at": "2026-04-18T00:42:30.746889+00:00",
+    "openstates_url": "https://openstates.org/person/brandun-schweizer-4Gzg7WMv5xm6FBHqomYAZE/"
+  },
+  {
+    "id": "ocd-person/384c08f3-49fd-45a7-bb7b-5689bdeae7a7",
+    "name": "C.D. Davidsmeyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:il/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "C.D.",
+    "family_name": "Davidsmeyer",
+    "image": "https://cdn.ilga.gov/assets/img/members/{E54250D5-EB1C-4CB6-9CF9-CA95CAA2F269}.jpg",
+    "email": "davidsmeyer@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "1979-07-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:50.337579+00:00",
+    "updated_at": "2026-04-18T00:42:38.258006+00:00",
+    "openstates_url": "https://openstates.org/person/c-d-davidsmeyer-1iEJjsKbXYDLERjsCdArDD/"
+  },
+  {
+    "id": "ocd-person/a51455ff-b0ae-47f6-b3ee-2722adbe38c2",
+    "name": "Camille Lilly",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:il/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Camille",
+    "family_name": "Lilly",
+    "image": "https://cdn.ilga.gov/assets/img/members/{84D8FB64-9F82-405A-9376-A69ADFB46E53}.jpg",
+    "email": "staterepcamilleylilly@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:13.055295+00:00",
+    "updated_at": "2026-04-18T00:41:44.587377+00:00",
+    "openstates_url": "https://openstates.org/person/camille-lilly-51V1hi20teKSjGJXCfCFP8/"
+  },
+  {
+    "id": "ocd-person/bc409660-f360-4624-914f-ba785bbf9b7b",
+    "name": "Carol Ammons",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "103",
+      "division_id": "ocd-division/country:us/state:il/sldl:103"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Carol",
+    "family_name": "Ammons",
+    "image": "https://cdn.ilga.gov/assets/img/members/{BD4B7A5C-6D24-4E82-9C18-D5A0F3C42F6C}.jpg",
+    "email": "assistance@staterepcarolammons.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:01.685992+00:00",
+    "updated_at": "2026-04-18T00:41:12.082031+00:00",
+    "openstates_url": "https://openstates.org/person/carol-ammons-5jE4aTa0UPVv3GGqzEYmtv/"
+  },
+  {
+    "id": "ocd-person/c425f2ef-cad0-4dad-93c4-be11b80af613",
+    "name": "Charlie Meier",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "109",
+      "division_id": "ocd-division/country:us/state:il/sldl:109"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Charlie",
+    "family_name": "Meier",
+    "image": "https://cdn.ilga.gov/assets/img/members/{9D43D019-A58A-47EC-B769-A7050C4B49DB}.jpg",
+    "email": "repcmeier@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:08.157849+00:00",
+    "updated_at": "2026-04-18T00:42:32.604688+00:00",
+    "openstates_url": "https://openstates.org/person/charlie-meier-5y7q0Pll42hLgEHLID2AZn/"
+  },
+  {
+    "id": "ocd-person/f5a10a95-3160-4cac-9f4e-ba31e5362e7b",
+    "name": "Chris Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "101",
+      "division_id": "ocd-division/country:us/state:il/sldl:101"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Miller",
+    "image": "https://cdn.ilga.gov/assets/img/members/{2A519012-9070-494B-9FFC-C2646374202E}.jpg",
+    "email": "miller@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "1954-06-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:44.921934+00:00",
+    "updated_at": "2026-04-18T00:41:29.584482+00:00",
+    "openstates_url": "https://openstates.org/person/chris-miller-7TUiP6k4rg4iJNi6qnAxeV/"
+  },
+  {
+    "id": "ocd-person/00cc6415-b2a7-45ab-8f69-be5c3ca6752a",
+    "name": "Chris Welch",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:il/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Welch",
+    "image": "https://cdn.ilga.gov/assets/img/members/{5D419B94-66B4-4F3B-86F1-BFF37B3FA55C}.jpg",
+    "email": "repwelch@emanuelchriswelch.com",
+    "gender": "Male",
+    "birth_date": "1971-02-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:36.632516+00:00",
+    "updated_at": "2026-04-18T00:41:59.587151+00:00",
+    "openstates_url": "https://openstates.org/person/chris-welch-1VPEEKoBc9UI4EsMWOvYA/"
+  },
+  {
+    "id": "ocd-person/7a4c9172-6836-453c-94a8-1254b76fa08f",
+    "name": "Curtis Tarver",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:il/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Curtis",
+    "family_name": "Tarver",
+    "image": "https://cdn.ilga.gov/assets/img/members/{E9404756-F108-41DB-A7A8-87C36BBF763D}.jpg",
+    "email": "office@repcurtisjtarverii.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:49.243150+00:00",
+    "updated_at": "2026-04-18T00:41:51.533573+00:00",
+    "openstates_url": "https://openstates.org/person/curtis-tarver-3im3RrWcyXz86U3lf6xjg7/"
+  },
+  {
+    "id": "ocd-person/c5786e99-12fd-41eb-b40e-372187dde261",
+    "name": "Dan Didech",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:il/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Didech",
+    "image": "https://cdn.ilga.gov/assets/img/members/{1EA869A9-B93D-4E72-824B-E14992452581}.jpg",
+    "email": "info@repdidech.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:36.647299+00:00",
+    "updated_at": "2026-04-18T00:42:06.713542+00:00",
+    "openstates_url": "https://openstates.org/person/dan-didech-60cWbxftBmkZtTgU6RbZZJ/"
+  },
+  {
+    "id": "ocd-person/6e9ee3b5-fb44-49f3-81f6-5a470bfaf009",
+    "name": "Dan Swanson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:il/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Swanson",
+    "image": "https://cdn.ilga.gov/assets/img/members/{F7512D74-4694-4272-9A1E-6935F4AD4F1D}.jpg",
+    "email": "swanson@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "1959-07-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:01.860956+00:00",
+    "updated_at": "2026-04-18T00:41:34.832218+00:00",
+    "openstates_url": "https://openstates.org/person/dan-swanson-3MjleloK4c0NR9at3NdVjF/"
+  },
+  {
+    "id": "ocd-person/ab6db17a-e7dc-43c8-9770-32c1da1d7f40",
+    "name": "Dan Ugaste",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:il/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Ugaste",
+    "image": "https://cdn.ilga.gov/assets/img/members/{2552FBE4-D977-4283-B00C-78FC085BD955}.jpg",
+    "email": "ugaste@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:37.642842+00:00",
+    "updated_at": "2026-04-18T00:41:53.064232+00:00",
+    "openstates_url": "https://openstates.org/person/dan-ugaste-5DTohwmnBn0vkBRILHahgO/"
+  },
+  {
+    "id": "ocd-person/cbbd1430-7c0b-4be0-9d45-deabdb0c3d0f",
+    "name": "Dave Severin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "116",
+      "division_id": "ocd-division/country:us/state:il/sldl:116"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Severin",
+    "image": "https://cdn.ilga.gov/assets/img/members/{FC792043-4CE1-4796-BA38-E68B39A9847A}.jpg",
+    "email": "severin@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:12.519103+00:00",
+    "updated_at": "2026-04-18T00:41:47.899620+00:00",
+    "openstates_url": "https://openstates.org/person/dave-severin-6CRqnmfRSQ8DQWNfj3TCtb/"
+  },
+  {
+    "id": "ocd-person/5da7b2ff-c086-49cd-80bc-9802e426cc00",
+    "name": "Dave Vella",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:il/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Vella",
+    "image": "https://cdn.ilga.gov/assets/img/members/{E0F72B4C-2737-483E-84FE-E596DB8F2DCF}.jpg",
+    "email": "repdavevella@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:05.608815+00:00",
+    "updated_at": "2026-04-18T00:42:17.447311+00:00",
+    "openstates_url": "https://openstates.org/person/dave-vella-2qivMKlrXaLAGI3ew8TFaq/"
+  },
+  {
+    "id": "ocd-person/abda0ae5-9ecb-4363-9a6a-487f1cf8899e",
+    "name": "David Friess",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "115",
+      "division_id": "ocd-division/country:us/state:il/sldl:115"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Friess",
+    "image": "https://cdn.ilga.gov/assets/img/members/{C1F3982E-6DA7-4AE6-96B9-77E9FBC87A2A}.jpg",
+    "email": "friess@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:01.957389+00:00",
+    "updated_at": "2026-04-18T00:41:27.935615+00:00",
+    "openstates_url": "https://openstates.org/person/david-friess-5EHKgXBGDtVHSUvqrspY1m/"
+  },
+  {
+    "id": "ocd-person/e1d4b5b4-34b8-4d91-ab9f-08c8a361e12a",
+    "name": "Debbie Meyers-Martin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:il/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Debbie",
+    "family_name": "Meyers-Martin",
+    "image": "https://cdn.ilga.gov/assets/img/members/{E3E2099C-AB6A-442B-B191-3A83D6D3A1E2}.jpg",
+    "email": "staterepdebbiemm@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:45.527243+00:00",
+    "updated_at": "2026-04-18T00:42:25.138374+00:00",
+    "openstates_url": "https://openstates.org/person/debbie-meyers-martin-6s8Ttd09eyWzzAofHbR26M/"
+  },
+  {
+    "id": "ocd-person/4c05af2c-7756-4002-a45d-cc9f2f5acbfd",
+    "name": "Dee Avelar",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:il/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Dee",
+    "family_name": "Avelar",
+    "image": "https://cdn.ilga.gov/assets/img/members/{EFDA6EE7-57E6-4ACA-BE60-02A042FF5D5D}.jpg",
+    "email": "info@repdagmara.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:09.188414+00:00",
+    "updated_at": "2026-04-18T00:42:13.887829+00:00",
+    "openstates_url": "https://openstates.org/person/dee-avelar-2JS0u0b360F5wfTXNSjOYf/"
+  },
+  {
+    "id": "ocd-person/13dc4688-95d1-4a5d-abc7-fb9a46a432c8",
+    "name": "Dennis Tipsword",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "105",
+      "division_id": "ocd-division/country:us/state:il/sldl:105"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Dennis",
+    "family_name": "Tipsword",
+    "image": "https://cdn.ilga.gov/assets/img/members/{D8E9F62C-6A73-4CCD-8148-332CD9806264}.jpg",
+    "email": "tipsword@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:44.459041+00:00",
+    "updated_at": "2026-04-18T00:41:41.476834+00:00",
+    "openstates_url": "https://openstates.org/person/dennis-tipsword-bTWGRfrUo2P0kVfyk5532/"
+  },
+  {
+    "id": "ocd-person/d5c22b1c-8057-40bf-aea6-0298070ad67b",
+    "name": "Diane Blair-Sherlock",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:il/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Diane",
+    "family_name": "Blair-Sherlock",
+    "image": "https://cdn.ilga.gov/assets/img/members/{C9D7B27E-2484-4917-A5CA-F85BA458950A}.jpg",
+    "email": "staterep46@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:38.836290+00:00",
+    "updated_at": "2026-04-18T00:42:21.698809+00:00",
+    "openstates_url": "https://openstates.org/person/diane-blair-sherlock-6VM6FgxY6VoGbz0IAo7wct/"
+  },
+  {
+    "id": "ocd-person/e8bba8fb-50a8-4ddd-9bed-785c5f1bb70d",
+    "name": "Edgar Gonz\u00e1lez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:il/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Edgar",
+    "family_name": "Gonz\u00e1lez",
+    "image": "https://cdn.ilga.gov/assets/img/members/{370B1494-7F8F-48BC-BD66-4756E15442E1}.jpg",
+    "email": "office@repedgargonzalez.com",
+    "gender": "Male",
+    "birth_date": "1996-12-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-03-24T05:06:30.890343+00:00",
+    "updated_at": "2026-04-18T00:41:11.514910+00:00",
+    "openstates_url": "https://openstates.org/person/edgar-gonzalez-759yo2PYi6SkBTRtFzBG3x/"
+  },
+  {
+    "id": "ocd-person/01201203-526d-4d02-b6fc-cbe5a749b6ab",
+    "name": "Eva-Dina Delgado",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:il/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Eva-Dina",
+    "family_name": "Delgado",
+    "image": "https://cdn.ilga.gov/assets/img/members/{D02A93E7-7D84-4429-92AB-60B61084EBA1}.jpg",
+    "email": "staterepdelgado@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-05T11:05:22.174932+00:00",
+    "updated_at": "2026-04-18T00:41:37.060008+00:00",
+    "openstates_url": "https://openstates.org/person/eva-dina-delgado-27eCvPSG2Cw3CQS2u7lrH/"
+  },
+  {
+    "id": "ocd-person/3806ac4f-5290-4eb7-ba30-aa406036dd7a",
+    "name": "Fred Crespo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:il/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Fred",
+    "family_name": "Crespo",
+    "image": "https://cdn.ilga.gov/assets/img/members/{B92F7A2F-6517-4A3F-87B3-56FAA240285F}.jpg",
+    "email": "fred@fredcrespo.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:13.231590+00:00",
+    "updated_at": "2026-04-18T00:42:35.219364+00:00",
+    "openstates_url": "https://openstates.org/person/fred-crespo-1hicQyF5xPQijLe0F5ugTS/"
+  },
+  {
+    "id": "ocd-person/26a0642d-d0b6-450f-9438-018a36b04cbf",
+    "name": "Gregg Johnson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:il/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Gregg",
+    "family_name": "Johnson",
+    "image": "https://cdn.ilga.gov/assets/img/members/{8746A238-F14D-428E-A0AD-E3D3F28F80F5}.jpg",
+    "email": "support@repgreggjohnson.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:38.566727+00:00",
+    "updated_at": "2026-04-18T00:42:24.661175+00:00",
+    "openstates_url": "https://openstates.org/person/gregg-johnson-1At0ShEFYaYevKkz1K94RD/"
+  },
+  {
+    "id": "ocd-person/1574a50f-6d50-4d7d-87ee-db0254e5093e",
+    "name": "Harry Benton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:il/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Harry",
+    "family_name": "Benton",
+    "image": "https://cdn.ilga.gov/assets/img/members/{591DB385-5E0D-41CC-8B13-2FDA10A73D7F}.jpg",
+    "email": "info@repharrybenton.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:38.340946+00:00",
+    "updated_at": "2026-04-18T00:41:57.118367+00:00",
+    "openstates_url": "https://openstates.org/person/harry-benton-eU91yCxriXKc14migUBSQ/"
+  },
+  {
+    "id": "ocd-person/c7156dc3-31a6-4582-bf3a-b325c9dc868f",
+    "name": "Hoan Huynh",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:il/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Hoan",
+    "family_name": "Huynh",
+    "image": "https://cdn.ilga.gov/assets/img/members/{A6CE6A23-9F62-4C37-B297-4E48D79A3CE1}.jpg",
+    "email": "hello@rephoanhuynh.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:33.844835+00:00",
+    "updated_at": "2026-04-18T00:41:14.436675+00:00",
+    "openstates_url": "https://openstates.org/person/hoan-huynh-63fGUezYtvEDXu1xOKpTLT/"
+  },
+  {
+    "id": "ocd-person/5da74880-f9e4-4c20-bc17-74d88526a7a4",
+    "name": "Jackie Haas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:il/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Jackie",
+    "family_name": "Haas",
+    "image": "https://cdn.ilga.gov/assets/img/members/{9E211C98-BCB9-43CF-8A78-57D295FB9D78}.jpg",
+    "email": "haas@ilhousegop.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:10.209822+00:00",
+    "updated_at": "2026-04-18T00:41:34.391317+00:00",
+    "openstates_url": "https://openstates.org/person/jackie-haas-2qijZXxq42B6aPexeJVlf2/"
+  },
+  {
+    "id": "ocd-person/c0d481c5-9d31-4780-b2b0-bc5327291d6b",
+    "name": "Jaime Andrade",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:il/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Jaime",
+    "family_name": "Andrade",
+    "image": "https://cdn.ilga.gov/assets/img/members/{34A19039-7BF5-44A7-9A06-4EC121E52514}.jpg",
+    "email": "info@staterep40.com",
+    "gender": "Male",
+    "birth_date": "1972-10-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:49.154877+00:00",
+    "updated_at": "2026-04-18T00:41:53.650468+00:00",
+    "openstates_url": "https://openstates.org/person/jaime-andrade-5rrdqbEF21Qg3TZ96XGb5H/"
+  },
+  {
+    "id": "ocd-person/dc08395b-8a74-4795-b104-d7b11c1e42ca",
+    "name": "Janet Yang Rohr",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:il/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Janet",
+    "family_name": "Yang Rohr",
+    "image": "https://cdn.ilga.gov/assets/img/members/{4B315A2D-F104-4613-BD17-77ECA3955B30}.jpg",
+    "email": "info@repyangrohr.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:11.655263+00:00",
+    "updated_at": "2026-04-18T00:42:08.938381+00:00",
+    "openstates_url": "https://openstates.org/person/janet-yang-rohr-6hC4MNwle8iWfDNhPUIwd0/"
+  },
+  {
+    "id": "ocd-person/4a588ccf-b32f-4b66-978a-3415f71d2774",
+    "name": "Jason Bunting",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "106",
+      "division_id": "ocd-division/country:us/state:il/sldl:106"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Bunting",
+    "image": "https://cdn.ilga.gov/assets/img/members/{5F0F6F55-F573-4F05-B495-878685C2C00A}.jpg",
+    "email": "bunting@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-05-23T00:05:59.632207+00:00",
+    "updated_at": "2026-04-18T00:42:22.139121+00:00",
+    "openstates_url": "https://openstates.org/person/jason-bunting-2GHtmN0zgFdPflg1THeaQe/"
+  },
+  {
+    "id": "ocd-person/21e2f7d1-8073-4ee1-a5b5-b32ccdd321d5",
+    "name": "Jay Hoffman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "113",
+      "division_id": "ocd-division/country:us/state:il/sldl:113"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Hoffman",
+    "image": "https://cdn.ilga.gov/assets/img/members/{FCD7EF06-36D9-46A7-8085-4B5A5ED81A80}.jpg",
+    "email": "repjayhoffman@gmail.com",
+    "gender": "Male",
+    "birth_date": "1961-11-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:59.408159+00:00",
+    "updated_at": "2026-04-18T00:42:07.882709+00:00",
+    "openstates_url": "https://openstates.org/person/jay-hoffman-11wTELgZNEZ4NlcCXogRFN/"
+  },
+  {
+    "id": "ocd-person/a9c919a3-8fba-4bad-8589-315491cd9b0e",
+    "name": "Jed Davis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:il/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Jed",
+    "family_name": "Davis",
+    "image": "https://cdn.ilga.gov/assets/img/members/{AFBDE3F1-DE4D-419A-A7AB-D27678B015BE}.jpg",
+    "email": "davisstaff@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:44.116374+00:00",
+    "updated_at": "2026-04-18T00:42:00.776597+00:00",
+    "openstates_url": "https://openstates.org/person/jed-davis-5ANbaZBWdkbjKVVY7z04nm/"
+  },
+  {
+    "id": "ocd-person/1055f952-0000-4628-9584-c2a3fc9e991c",
+    "name": "Jeff Keicher",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:il/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Keicher",
+    "image": "https://cdn.ilga.gov/assets/img/members/{FD009EA6-624D-45C7-A093-BC66B8B3C090}.jpg",
+    "email": "keicher@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:08.703037+00:00",
+    "updated_at": "2026-04-18T00:41:16.227399+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-keicher-UpANYEUZMQndG4qkWSbLI/"
+  },
+  {
+    "id": "ocd-person/968d7e1e-e0e8-47f0-a258-586eb6cfbac9",
+    "name": "Jehan Gordon-Booth",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:il/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Jehan",
+    "family_name": "Gordon-Booth",
+    "image": "https://cdn.ilga.gov/assets/img/members/{A81D0C01-0A50-446D-B796-3A5A6D046EB1}.jpg",
+    "email": "repjgordon@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:16.199330+00:00",
+    "updated_at": "2026-04-18T00:42:03.914449+00:00",
+    "openstates_url": "https://openstates.org/person/jehan-gordon-booth-4a5VhigCPsIuOhFpwM0v29/"
+  },
+  {
+    "id": "ocd-person/cf97f459-e1cd-474b-8306-3c55d7c009b0",
+    "name": "Jen Gong-Gershowitz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:il/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Jen",
+    "family_name": "Gong-Gershowitz",
+    "image": "https://cdn.ilga.gov/assets/img/members/{395E8140-10ED-4C70-81B9-2673676BF467}.jpg",
+    "email": "info@gonggershowitz.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:40.438288+00:00",
+    "updated_at": "2026-04-18T00:41:24.478297+00:00",
+    "openstates_url": "https://openstates.org/person/jen-gong-gershowitz-6Jir0wkcxdlgcYycpuCpuK/"
+  },
+  {
+    "id": "ocd-person/0069021e-b341-44fd-9d02-d876839c5c23",
+    "name": "Jennifer Sanalitro",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:il/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Jennifer",
+    "family_name": "Sanalitro",
+    "image": "https://cdn.ilga.gov/assets/img/members/{07C35999-DEF2-49BA-8A46-7D9D8204BCEA}.jpg",
+    "email": "sanalitro@ilhousegop.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:36.712214+00:00",
+    "updated_at": "2026-04-18T00:41:15.693458+00:00",
+    "openstates_url": "https://openstates.org/person/jennifer-sanalitro-lzJOyJs9JiVDLNm0i9PH/"
+  },
+  {
+    "id": "ocd-person/6471a51f-0707-4966-b122-9597554d3c19",
+    "name": "Joe Sosnowski",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:il/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Sosnowski",
+    "image": "https://cdn.ilga.gov/assets/img/members/{7DEBF89C-D2BA-4952-94A2-40F564A00144}.jpg",
+    "email": "sosnowski@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "1977-04-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:12.346112+00:00",
+    "updated_at": "2026-04-18T00:41:48.917489+00:00",
+    "openstates_url": "https://openstates.org/person/joe-sosnowski-33XAS8iKMcYWrRKM42QE2L/"
+  },
+  {
+    "id": "ocd-person/b442db35-fab4-4318-a07b-0e88c314fbaa",
+    "name": "John Cabello",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:il/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Cabello",
+    "image": "https://cdn.ilga.gov/assets/img/members/{9E64DAD4-4264-42B1-AFDA-AB8F652472A3}.jpg",
+    "email": "cabello@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:14.798435+00:00",
+    "updated_at": "2026-04-18T00:41:46.132174+00:00",
+    "openstates_url": "https://openstates.org/person/john-cabello-5U9AgCR6gZ3nNZsFyP24vC/"
+  },
+  {
+    "id": "ocd-person/96f00b4c-0a56-4fe0-bd59-7d49eb93531c",
+    "name": "Joyce Mason",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:il/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Joyce",
+    "family_name": "Mason",
+    "image": "https://cdn.ilga.gov/assets/img/members/{26C52E17-9395-4BF8-B6E6-3E1CE6234032}.jpg",
+    "email": "info@repjoycemason.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:40.097257+00:00",
+    "updated_at": "2026-04-18T00:42:19.819321+00:00",
+    "openstates_url": "https://openstates.org/person/joyce-mason-4aoY4MNRCwIbAWqMMOmda8/"
+  },
+  {
+    "id": "ocd-person/afff2974-37d0-428c-be7a-0240395544f6",
+    "name": "Justin Cochran",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:il/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Cochran",
+    "image": "https://cdn.ilga.gov/assets/img/members/{54FFB767-E6F6-4F20-951A-2CBCD1B06211}.jpg",
+    "email": "contact@repjustincochran.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-29T06:36:37.667612+00:00",
+    "updated_at": "2026-04-18T00:41:56.153233+00:00",
+    "openstates_url": "https://openstates.org/person/justin-cochran-5M6GWcQP4g0ss9qhGhs8wA/"
+  },
+  {
+    "id": "ocd-person/c296134a-f9b3-4c65-9ed5-3ecccde59386",
+    "name": "Justin Slaughter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:il/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Slaughter",
+    "image": "https://cdn.ilga.gov/assets/img/members/{170C17F3-38A1-42E5-B222-020B43077D53}.jpg",
+    "email": "justin@repslaughter.com",
+    "gender": "Male",
+    "birth_date": "1980-04-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:54.548234+00:00",
+    "updated_at": "2026-04-18T00:41:27.459699+00:00",
+    "openstates_url": "https://openstates.org/person/justin-slaughter-5vB5xHfVnyqtlBLC5WwDsk/"
+  },
+  {
+    "id": "ocd-person/8b7174cd-4081-4717-8ba9-184518f7b31e",
+    "name": "Kam Buckner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:il/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Kam",
+    "family_name": "Buckner",
+    "image": "https://cdn.ilga.gov/assets/img/members/{37E72FD2-6318-45FD-9FF1-C750EB26137D}.jpg",
+    "email": "buckner@illinois26.com",
+    "gender": "Male",
+    "birth_date": "1985-05-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-03-20T05:07:06.146104+00:00",
+    "updated_at": "2026-04-18T00:41:23.054966+00:00",
+    "openstates_url": "https://openstates.org/person/kam-buckner-4F7mYFxTyoYa9zGPSmUuYo/"
+  },
+  {
+    "id": "ocd-person/ceb7f558-3a2c-4041-bf3b-f5a9a511e8b3",
+    "name": "Katie Stuart",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "112",
+      "division_id": "ocd-division/country:us/state:il/sldl:112"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Katie",
+    "family_name": "Stuart",
+    "image": "https://cdn.ilga.gov/assets/img/members/{D6DC8152-9760-4BEA-ACF5-C41785E6F6C4}.jpg",
+    "email": "repkatiestuart@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:05.326084+00:00",
+    "updated_at": "2026-04-18T00:42:14.825499+00:00",
+    "openstates_url": "https://openstates.org/person/katie-stuart-6I4UI4YuA9DipGC67IOh8N/"
+  },
+  {
+    "id": "ocd-person/e1652f78-fa2e-46de-8630-f3e1e69040a3",
+    "name": "Kelly Cassidy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:il/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Kelly",
+    "family_name": "Cassidy",
+    "image": "https://cdn.ilga.gov/assets/img/members/{3EFBDD50-41FF-4677-AA47-FB35B70C4667}.jpg",
+    "email": "info@repcassidy.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:06.023864+00:00",
+    "updated_at": "2026-04-18T00:41:58.169314+00:00",
+    "openstates_url": "https://openstates.org/person/kelly-cassidy-6rJVxNUwABwjoslyZ88cZn/"
+  },
+  {
+    "id": "ocd-person/c2c8c6a1-ef1b-4a38-92fa-bde7563b7f23",
+    "name": "Kevin Olickal",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:il/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Olickal",
+    "image": "https://cdn.ilga.gov/assets/img/members/{23C3BBA7-3179-41B5-A3EF-A372F88DD9C9}.jpg",
+    "email": "info@repkevinolickal.com",
+    "gender": "Male",
+    "birth_date": "1993-02-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:48.507857+00:00",
+    "updated_at": "2026-04-18T00:42:28.751273+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-olickal-5vYGVaSRtNswgRtUHm2sxn/"
+  },
+  {
+    "id": "ocd-person/266780c2-6b08-469e-9d78-10d618e16f4e",
+    "name": "Kevin Schmidt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "114",
+      "division_id": "ocd-division/country:us/state:il/sldl:114"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Schmidt",
+    "image": "https://cdn.ilga.gov/assets/img/members/{385A4AC4-BA7A-42A3-987F-85EA620B1F2B}.jpg",
+    "email": "schmidt@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:36.773873+00:00",
+    "updated_at": "2026-04-18T00:41:39.999677+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-schmidt-1AT0aBTwlPxHy24cNiaDWQ/"
+  },
+  {
+    "id": "ocd-person/3b2af944-b2b7-4b13-87db-1c8cdd45de3c",
+    "name": "Kimberly Du Buclet",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:il/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Kimberly",
+    "family_name": "Du Buclet",
+    "image": "https://cdn.ilga.gov/assets/img/members/{4858CB21-EEE1-409B-9A4C-FA760BB6905E}.jpg",
+    "email": "rep5information@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-05-23T00:05:14.918239+00:00",
+    "updated_at": "2026-04-18T00:41:09.923577+00:00",
+    "openstates_url": "https://openstates.org/person/kimberly-du-buclet-1neBYFfZXRiBLjt0TtzJpk/"
+  },
+  {
+    "id": "ocd-person/6f9e28df-bdf5-4493-aac1-68f1b7be39cb",
+    "name": "Kyle Moore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:il/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Kyle",
+    "family_name": "Moore",
+    "image": "https://cdn.ilga.gov/assets/img/members/%7BBB70A39A-DE8F-4EF5-A923-0EE51834A45F%7D.jpg",
+    "email": "moore@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T19:23:43.150194+00:00",
+    "updated_at": "2026-04-18T00:41:21.554543+00:00",
+    "openstates_url": "https://openstates.org/person/kyle-moore-3OcQVAdgAbQxmEjovck9il/"
+  },
+  {
+    "id": "ocd-person/91164a3d-fc17-4252-a31f-a8d0d113b74b",
+    "name": "La Shawn Ford",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:il/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "La Shawn",
+    "family_name": "Ford",
+    "image": "https://cdn.ilga.gov/assets/img/members/{BCC3C8D6-5728-4A69-8A3B-F203314DD563}.jpg",
+    "email": "repford@lashawnford.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:48.981249+00:00",
+    "updated_at": "2026-04-18T00:41:13.236512+00:00",
+    "openstates_url": "https://openstates.org/person/la-shawn-ford-4Pm4aMOQbBJkn4jGXirA6t/"
+  },
+  {
+    "id": "ocd-person/9eda7be9-b2c6-45e6-bea6-098bd7f47595",
+    "name": "Larry Walsh",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:il/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Walsh",
+    "image": "https://cdn.ilga.gov/assets/img/members/{F11DA3BE-D8FF-48F0-8450-43231B4DD28F}.jpg",
+    "email": "statereplarrywalshjr@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:01.512904+00:00",
+    "updated_at": "2026-04-18T00:42:05.620073+00:00",
+    "openstates_url": "https://openstates.org/person/larry-walsh-4pkdNVGq8ozDjAgtCuew4r/"
+  },
+  {
+    "id": "ocd-person/f0ab36db-6498-4d90-9b11-0191637421d2",
+    "name": "Laura Faver Dias",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:il/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Laura",
+    "family_name": "Faver Dias",
+    "image": "https://cdn.ilga.gov/assets/img/members/{B0DFD215-F36D-47A7-B7BE-909CDF14DC07}.jpg",
+    "email": "info@repfaverdias.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:34.057765+00:00",
+    "updated_at": "2026-04-18T00:41:09.449649+00:00",
+    "openstates_url": "https://openstates.org/person/laura-faver-dias-7K8P1Wr6DSZ2QD9er9zqlO/"
+  },
+  {
+    "id": "ocd-person/256a1090-5fef-4f0c-b016-263735573c77",
+    "name": "Lilian Jim\u00e9nez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:il/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Lilian",
+    "family_name": "Jim\u00e9nez",
+    "image": "https://cdn.ilga.gov/assets/img/members/{6C475229-0B41-4F93-A2C7-5B1396A1D1FA}.jpg",
+    "email": "info@replilianjimenez.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:46.828979+00:00",
+    "updated_at": "2026-04-18T00:41:39.047852+00:00",
+    "openstates_url": "https://openstates.org/person/lilian-jimenez-18bBdulrZZ9ywEn20GntPL/"
+  },
+  {
+    "id": "ocd-person/ea4595af-64f9-4d91-9c12-48accdc04ff8",
+    "name": "Lindsey LaPointe",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:il/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Lindsey",
+    "family_name": "LaPointe",
+    "image": "https://cdn.ilga.gov/assets/img/members/{7447C9D9-48D0-457E-BDC9-847FB8D35DB5}.jpg",
+    "email": "info@replapointe.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-05T11:05:22.964572+00:00",
+    "updated_at": "2026-04-18T00:41:36.441695+00:00",
+    "openstates_url": "https://openstates.org/person/lindsey-lapointe-7840IVZkBkhM8f6w5Ht9J2/"
+  },
+  {
+    "id": "ocd-person/607e0b8f-4f4a-46ae-bfac-24b179d67542",
+    "name": "Lisa Davis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:il/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Davis",
+    "image": "https://cdn.ilga.gov/assets/img/members/{A61D2D11-9A19-483B-9C3E-C99CCC4CF5F4}.jpg",
+    "email": "districtdirector32@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T19:22:25.117745+00:00",
+    "updated_at": "2026-04-18T00:41:30.786159+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-davis-2w4rhcnZ1h5G2uzNzonsPa/"
+  },
+  {
+    "id": "ocd-person/b6ebf45f-ac97-423b-b5c3-eba0a5766a8d",
+    "name": "Lisa Hernandez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:il/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Hernandez",
+    "image": "https://cdn.ilga.gov/assets/img/members/{4E4C2A21-FDC2-48CA-9BA8-462A62E7A33B}.jpg",
+    "email": "office@repehernandez.com",
+    "gender": "Female",
+    "birth_date": "1961-07-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:17.607111+00:00",
+    "updated_at": "2026-04-18T00:42:36.665663+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-hernandez-5ZAQyMYmcCEmEAEUMoLS3h/"
+  },
+  {
+    "id": "ocd-person/4e02286b-b560-4837-8b9c-efa2c679e437",
+    "name": "Marcus Evans",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:il/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Marcus",
+    "family_name": "Evans",
+    "image": "https://cdn.ilga.gov/assets/img/members/{BFD8B13A-CD65-452C-8F20-9D32C3A013BF}.jpg",
+    "email": "marcus@repevans.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:02.563018+00:00",
+    "updated_at": "2026-04-18T00:41:24.028414+00:00",
+    "openstates_url": "https://openstates.org/person/marcus-evans-2NCO2BQz2HYCrUDP5Y8Mad/"
+  },
+  {
+    "id": "ocd-person/adf823d2-7e3e-4a4d-898c-2dd404679012",
+    "name": "Margaret Croke",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:il/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Margaret",
+    "family_name": "Croke",
+    "image": "https://cdn.ilga.gov/assets/img/members/{1719759C-D601-4575-A753-1244D0FE550A}.jpg",
+    "email": "info@repcroke.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:07.676187+00:00",
+    "updated_at": "2026-04-18T00:42:11.562630+00:00",
+    "openstates_url": "https://openstates.org/person/margaret-croke-5IH4VyMgio6rDMtUFDY54c/"
+  },
+  {
+    "id": "ocd-person/9e3e61af-e205-47a0-8d7c-d50475941ba8",
+    "name": "Margaret DeLaRosa",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:il/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Margaret",
+    "family_name": "DeLaRosa",
+    "image": "https://cdn.ilga.gov/assets/img/members/{9E520EC6-A7D1-4749-BCBC-D178535ACB04}.jpg",
+    "email": "ilhouse42@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-29T06:37:14.577257+00:00",
+    "updated_at": "2026-04-18T00:42:16.978262+00:00",
+    "openstates_url": "https://openstates.org/person/margaret-delarosa-4obIMK7S2pFGvfYP0mS7Xk/"
+  },
+  {
+    "id": "ocd-person/035b25c2-e97c-413e-8d84-d5c618f6a2fa",
+    "name": "Marti Deuter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:il/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Marti",
+    "family_name": "Deuter",
+    "image": "https://cdn.ilga.gov/assets/img/members/{345BE0B5-CE9C-4A36-B292-6190B845C34B}.jpg",
+    "email": "office@repmartideuter.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T19:23:13.289029+00:00",
+    "updated_at": "2026-04-18T00:42:34.246240+00:00",
+    "openstates_url": "https://openstates.org/person/marti-deuter-6Kd9VsazoFFB70k7Portq/"
+  },
+  {
+    "id": "ocd-person/eb9a9c6e-1173-4c03-848e-167eb2762673",
+    "name": "Marty McLaughlin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:il/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Marty",
+    "family_name": "McLaughlin",
+    "image": "https://cdn.ilga.gov/assets/img/members/{F90CD638-AB1B-4A73-A003-02D9A911B599}.jpg",
+    "email": "mclaughlin@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:13.286847+00:00",
+    "updated_at": "2026-04-18T00:42:32.151426+00:00",
+    "openstates_url": "https://openstates.org/person/marty-mclaughlin-7AZqxtWhv4Wd5npw2wdSip/"
+  },
+  {
+    "id": "ocd-person/48d73b90-0109-4fb2-8689-57e803c8294a",
+    "name": "Mary Beth Canty",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:il/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Mary Beth",
+    "family_name": "Canty",
+    "image": "https://cdn.ilga.gov/assets/img/members/{1A73F23E-9C8D-4392-B6BD-154AB570C66E}.jpg",
+    "email": "info@repmbc.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:38.050928+00:00",
+    "updated_at": "2026-04-18T00:42:00.136029+00:00",
+    "openstates_url": "https://openstates.org/person/mary-beth-canty-2DRoAMENRMV0ooVSttikOI/"
+  },
+  {
+    "id": "ocd-person/f2231f6c-1ed7-4106-8909-1d87557b2f04",
+    "name": "Mary Gill",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:il/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Gill",
+    "image": "https://cdn.ilga.gov/assets/img/members/{28C54907-9CC9-428D-BD6B-361B91A10441}.jpg",
+    "email": "repmarygill@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-05-23T00:05:30.816170+00:00",
+    "updated_at": "2026-04-18T00:42:27.187697+00:00",
+    "openstates_url": "https://openstates.org/person/mary-gill-7MuC2lqPfAQAANAAshhvCW/"
+  },
+  {
+    "id": "ocd-person/14b940c9-8843-4709-97a9-9faee25bb201",
+    "name": "Matt Hanson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:il/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Hanson",
+    "image": "https://cdn.ilga.gov/assets/img/members/{457B8F0B-1DF6-4107-A5FC-9B2BFAAE1008}.jpg",
+    "email": "info@repmatthanson.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:46.567169+00:00",
+    "updated_at": "2026-04-18T00:41:46.748537+00:00",
+    "openstates_url": "https://openstates.org/person/matt-hanson-d6VSZBCmvBEyfRYZbQpbV/"
+  },
+  {
+    "id": "ocd-person/ef519ea9-e143-44e0-95b2-49d37c4ea3c8",
+    "name": "Maura Hirschauer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:il/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Maura",
+    "family_name": "Hirschauer",
+    "image": "https://cdn.ilga.gov/assets/img/members/{F62525B8-2C23-49B7-AAB8-EFA6AE575F68}.jpg",
+    "email": "office@repmaura49.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:06.380938+00:00",
+    "updated_at": "2026-04-18T00:42:33.126150+00:00",
+    "openstates_url": "https://openstates.org/person/maura-hirschauer-7HaSvCQo1OIzUcaj43tX8S/"
+  },
+  {
+    "id": "ocd-person/77906cdf-58a8-4329-bb24-c65e6e38342f",
+    "name": "Maurice West",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:il/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Maurice",
+    "family_name": "West",
+    "image": "https://cdn.ilga.gov/assets/img/members/{AFB160BE-629B-4C70-8541-877D6FCDE529}.jpg",
+    "email": "assistance@staterepwest.com",
+    "gender": "Male",
+    "birth_date": "1985-06-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:36.832780+00:00",
+    "updated_at": "2026-04-18T00:42:23.618696+00:00",
+    "openstates_url": "https://openstates.org/person/maurice-west-3dc5XqUR9Log0QbO9zATzL/"
+  },
+  {
+    "id": "ocd-person/c98bae02-b0dd-40ea-96a8-8a5fa994d211",
+    "name": "Michael Kelly",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:il/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Kelly",
+    "image": "https://cdn.ilga.gov/assets/img/members/{90B28E06-84A0-47EB-A80B-403DF4CDA607}.jpg",
+    "email": "district@repkelly.com",
+    "gender": "Male",
+    "birth_date": "1975-06-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-12-16T18:47:55.458369+00:00",
+    "updated_at": "2026-04-18T00:41:55.188014+00:00",
+    "openstates_url": "https://openstates.org/person/michael-kelly-68JI4fpYNDV7LfRFfzLvWb/"
+  },
+  {
+    "id": "ocd-person/394eec6a-ad20-447e-b72c-f09d76e66fa2",
+    "name": "Michelle Mussman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:il/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Mussman",
+    "image": "https://cdn.ilga.gov/assets/img/members/{63BBD5DE-333E-4015-8658-4F7B2D45E1B7}.jpg",
+    "email": "staterepmussman@gmail.com",
+    "gender": "Female",
+    "birth_date": "1972-08-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:04.634131+00:00",
+    "updated_at": "2026-04-18T00:42:03.365355+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-mussman-1k8d6iULhk1LAz118i03nu/"
+  },
+  {
+    "id": "ocd-person/868db7f8-5f9e-48a4-83ba-a5404b87276a",
+    "name": "Mike Coffey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:il/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Coffey",
+    "image": "https://cdn.ilga.gov/assets/img/members/{EA682659-0B02-4A60-8244-1D5D2ABCD620}.jpg",
+    "email": "coffey@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:41.448459+00:00",
+    "updated_at": "2026-04-18T00:42:18.811767+00:00",
+    "openstates_url": "https://openstates.org/person/mike-coffey-45tjic7HFoBL4IRJEvVNCE/"
+  },
+  {
+    "id": "ocd-person/08699f92-8a4f-4dfa-8e8c-8bf129fb08d0",
+    "name": "Mike Crawford",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:il/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Crawford",
+    "image": "https://cdn.ilga.gov/assets/img/members/{C79CCD19-74A9-494F-BE14-E0D1E0A9D326}.jpg",
+    "email": "districtdirector31@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T19:21:27.817769+00:00",
+    "updated_at": "2026-04-18T00:42:28.156848+00:00",
+    "openstates_url": "https://openstates.org/person/mike-crawford-FsCvuCabHqtyNAtcQsrGi/"
+  },
+  {
+    "id": "ocd-person/d717abc0-a4ec-4ce9-bd24-cbda0a48c361",
+    "name": "Murri Briel",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:il/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Murri",
+    "family_name": "Briel",
+    "image": "https://cdn.ilga.gov/assets/img/members/{E820664D-DF76-4A22-88DC-736A218A001E}.jpg",
+    "email": "contact@staterepbriel.com",
+    "gender": "Female",
+    "birth_date": "1974-12-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T19:22:54.226918+00:00",
+    "updated_at": "2026-04-18T00:42:16.523769+00:00",
+    "openstates_url": "https://openstates.org/person/murri-briel-6XsAPYC90OZt9VF7ZwQ4Ez/"
+  },
+  {
+    "id": "ocd-person/3115335b-b84e-49e5-b0ed-8ee2ab139784",
+    "name": "Nabeela Syed",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:il/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Nabeela",
+    "family_name": "Syed",
+    "image": "https://cdn.ilga.gov/assets/img/members/{1B81D1C2-BEE3-408C-B52D-8B269BC5DA24}.jpg",
+    "email": "info@repsyed.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:33.360907+00:00",
+    "updated_at": "2026-04-18T00:42:16.023270+00:00",
+    "openstates_url": "https://openstates.org/person/nabeela-syed-1UcJO8mqryOPKeVrwGAmN2/"
+  },
+  {
+    "id": "ocd-person/d7b735a6-3b70-4a3d-ae53-948fde86e4e7",
+    "name": "Natalie Manley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:il/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Natalie",
+    "family_name": "Manley",
+    "image": "https://cdn.ilga.gov/assets/img/members/{F3781CCA-4285-44C3-8E60-811B9229EA1B}.jpg",
+    "email": "repmanley@gmail.com",
+    "gender": "Female",
+    "birth_date": "1961-12-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:10.976207+00:00",
+    "updated_at": "2026-04-18T00:41:20.470802+00:00",
+    "openstates_url": "https://openstates.org/person/natalie-manley-6Z34nAnyfESIJa1a3uQkUR/"
+  },
+  {
+    "id": "ocd-person/a5e32db2-c1a9-4b4a-b42e-d2d541bd5825",
+    "name": "Nick Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:il/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Smith",
+    "image": "https://cdn.ilga.gov/assets/img/members/{4D7D283C-73C8-40F8-A3F0-7FA9301456F5}.jpg",
+    "email": "repsmith34@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:04.811478+00:00",
+    "updated_at": "2026-04-18T00:41:17.803710+00:00",
+    "openstates_url": "https://openstates.org/person/nick-smith-531YOjVDx1iVlZqTaveHqv/"
+  },
+  {
+    "id": "ocd-person/3846d812-409f-4726-8e46-3624bfe92812",
+    "name": "Nicole La Ha",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:il/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Nicole",
+    "family_name": "La Ha",
+    "image": "https://cdn.ilga.gov/assets/img/members/{08891F3D-4342-4F2E-A5E5-6CCBCD415423}.jpg",
+    "email": "repnicolelaha@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-03T20:38:21.602415+00:00",
+    "updated_at": "2026-04-18T00:42:39.743169+00:00",
+    "openstates_url": "https://openstates.org/person/nicole-la-ha-1iBwetXxh9nDXfhqJex1DW/"
+  },
+  {
+    "id": "ocd-person/0394df12-4d09-4844-80aa-269ccc9c1d54",
+    "name": "Nicolle Grasse",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:il/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Nicolle",
+    "family_name": "Grasse",
+    "image": "https://cdn.ilga.gov/assets/img/members/{D2D7C6E1-5147-4488-90CD-D4FC0982A738}.jpg",
+    "email": "contact@staterepgrasse.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-10T16:23:57.879917+00:00",
+    "updated_at": "2026-04-18T00:42:10.536374+00:00",
+    "openstates_url": "https://openstates.org/person/nicolle-grasse-6l0hmDNlOmTzZrVaJenWW/"
+  },
+  {
+    "id": "ocd-person/cce820c8-7ce2-4b30-8ebd-4734eab16a94",
+    "name": "Norine Hammond",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:il/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Norine",
+    "family_name": "Hammond",
+    "image": "https://cdn.ilga.gov/assets/img/members/{07D3914D-440A-4891-99AE-256F657BBFFF}.jpg",
+    "email": "rephammond@macomb.com",
+    "gender": "Female",
+    "birth_date": "1952-09-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:06.401583+00:00",
+    "updated_at": "2026-04-18T00:41:08.789409+00:00",
+    "openstates_url": "https://openstates.org/person/norine-hammond-6EeW5Men6KWAzVGJq7Mmqy/"
+  },
+  {
+    "id": "ocd-person/c0d6eed8-422f-4e17-a4df-5e546b704e91",
+    "name": "Norma Hernandez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:il/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Norma",
+    "family_name": "Hernandez",
+    "image": "https://cdn.ilga.gov/assets/img/members/{3E520E2E-5D7A-491B-9744-0F0137816162}.jpg",
+    "email": "district@repnormahernandez.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:46.626321+00:00",
+    "updated_at": "2026-04-18T00:41:33.421844+00:00",
+    "openstates_url": "https://openstates.org/person/norma-hernandez-5rskaV5iyotBT5Ue0lwr6f/"
+  },
+  {
+    "id": "ocd-person/b79ed17d-30a6-4d03-af90-ad3b34610395",
+    "name": "Omar Williams",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:il/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Omar",
+    "family_name": "Williams",
+    "image": "https://cdn.ilga.gov/assets/img/members/{32750D93-496F-42CA-9CCE-93C3451713A1}.jpg",
+    "email": "repwilliamsoffice@gmail.com",
+    "gender": "Male",
+    "birth_date": "1975-03-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-05T11:05:24.062923+00:00",
+    "updated_at": "2026-04-18T00:41:40.960110+00:00",
+    "openstates_url": "https://openstates.org/person/omar-williams-5aUAuabIuwgphXIFJmhGLt/"
+  },
+  {
+    "id": "ocd-person/075c5ab4-12bf-4573-8091-1539a081256e",
+    "name": "Patrick Sheehan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:il/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Sheehan",
+    "image": "https://cdn.ilga.gov/assets/img/members/{4F33CDD4-F7DD-40AC-B11E-DA5066173803}.jpg",
+    "email": "sheehan@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-10T16:23:59.556408+00:00",
+    "updated_at": "2026-04-18T00:41:25.521798+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-sheehan-Dt9RXhU3hc1WlytBCQaty/"
+  },
+  {
+    "id": "ocd-person/6cb9bc2c-97b3-4dd1-b5ba-36a644360057",
+    "name": "Patrick Windhorst",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "117",
+      "division_id": "ocd-division/country:us/state:il/sldl:117"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Windhorst",
+    "image": "https://cdn.ilga.gov/assets/img/members/{547F9C92-7368-4390-B625-5BB795568D50}.jpg",
+    "email": "windhorst@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:50.823183+00:00",
+    "updated_at": "2026-04-18T00:42:25.629647+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-windhorst-3JA3FhZoIx5UkvxTAl12SV/"
+  },
+  {
+    "id": "ocd-person/2febe0de-8b57-43c9-b8cd-a5363af4eae3",
+    "name": "Paul Jacobs",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "118",
+      "division_id": "ocd-division/country:us/state:il/sldl:118"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Jacobs",
+    "image": "https://cdn.ilga.gov/assets/img/members/{0E151A06-57C8-4261-9577-278F5DD4B717}.jpg",
+    "email": "jacobs@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:08.386633+00:00",
+    "updated_at": "2026-04-18T00:42:11.019716+00:00",
+    "openstates_url": "https://openstates.org/person/paul-jacobs-1SQR2M0hfJhLts079Awi39/"
+  },
+  {
+    "id": "ocd-person/8d81a4e9-f895-4a60-8064-2ddd2bd785c8",
+    "name": "Regan Deering",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:il/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Regan",
+    "family_name": "Deering",
+    "image": "https://cdn.ilga.gov/assets/img/members/{57C9E73B-E152-4B7D-B42B-6EA67289504E}.jpg",
+    "email": "deering@ilhousegop.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T19:23:34.737466+00:00",
+    "updated_at": "2026-04-18T00:42:01.214592+00:00",
+    "openstates_url": "https://openstates.org/person/regan-deering-4J1AGpIHHXIIsBqT6mH7mK/"
+  },
+  {
+    "id": "ocd-person/749cc87c-81a8-48ba-9cee-a6be77e1d333",
+    "name": "Rick Ryan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:il/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Ryan",
+    "image": "https://cdn.ilga.gov/assets/img/members/{D636B7BF-6A7A-4F82-8429-018FF5E1CE36}.jpg",
+    "email": "ryanrep36@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T19:20:57.150307+00:00",
+    "updated_at": "2026-04-18T00:41:39.531128+00:00",
+    "openstates_url": "https://openstates.org/person/rick-ryan-3Y2l7YTHkGPyEQ1PEgkusF/"
+  },
+  {
+    "id": "ocd-person/cb9d1283-1029-46cf-8507-1e7ed6937606",
+    "name": "Rita Mayfield",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:il/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Rita",
+    "family_name": "Mayfield",
+    "image": "https://cdn.ilga.gov/assets/img/members/{3A2DAB8B-B5F8-48EE-85D3-05894ED42A5D}.jpg",
+    "email": "60thdistrict@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:52.230664+00:00",
+    "updated_at": "2026-04-18T00:41:52.098755+00:00",
+    "openstates_url": "https://openstates.org/person/rita-mayfield-6CDDvSaOuXckxGDTaTu3i2/"
+  },
+  {
+    "id": "ocd-person/7d68f174-3504-4479-80c5-e3fbe69fd354",
+    "name": "Robyn Gabel",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:il/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Robyn",
+    "family_name": "Gabel",
+    "image": "https://cdn.ilga.gov/assets/img/members/{739CC8F9-E9E4-40A1-AB86-883EF9A5E313}.jpg",
+    "email": "contact@robyngabel.com",
+    "gender": "Female",
+    "birth_date": "1953-02-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:57.337063+00:00",
+    "updated_at": "2026-04-18T00:41:54.099199+00:00",
+    "openstates_url": "https://openstates.org/person/robyn-gabel-3oe009cbuouzh7DJgMATie/"
+  },
+  {
+    "id": "ocd-person/139cce29-08b9-4731-a7e9-bdeec8129eaa",
+    "name": "Ryan Spain",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:il/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Spain",
+    "image": "https://cdn.ilga.gov/assets/img/members/{4C25C70B-0E39-406B-9318-A899C2A6D1B0}.jpg",
+    "email": "repryanspain@gmail.com",
+    "gender": "Male",
+    "birth_date": "1982-10-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:02.913710+00:00",
+    "updated_at": "2026-04-18T00:42:35.726148+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-spain-b0VtVmPn4OA4aOWxPWypm/"
+  },
+  {
+    "id": "ocd-person/95032a7e-18c4-40be-b89f-1f61b132533a",
+    "name": "Sharon Chung",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:il/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Sharon",
+    "family_name": "Chung",
+    "image": "https://cdn.ilga.gov/assets/img/members/{0555ECBC-C0A4-4E09-ABA2-F8D6E8E03246}.jpg",
+    "email": "info@repchung.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:34.886463+00:00",
+    "updated_at": "2026-04-18T00:41:22.086519+00:00",
+    "openstates_url": "https://openstates.org/person/sharon-chung-4XBIoxplun5SwaF1HriYH4/"
+  },
+  {
+    "id": "ocd-person/8a39d16f-edbf-454b-8a77-33030fa9a8c2",
+    "name": "Sonya Harper",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:il/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Sonya",
+    "family_name": "Harper",
+    "image": "https://cdn.ilga.gov/assets/img/members/{04C99384-69F8-4ACE-9E43-11E21CC5F820}.jpg",
+    "email": "repsonyaharper@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:59.051355+00:00",
+    "updated_at": "2026-04-18T00:42:29.776431+00:00",
+    "openstates_url": "https://openstates.org/person/sonya-harper-4CpMZVXuBsi5CRJRVTHNRq/"
+  },
+  {
+    "id": "ocd-person/0ecdbb3f-7593-4959-8b27-4a03a925d927",
+    "name": "Stephanie Kifowit",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:il/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Stephanie",
+    "family_name": "Kifowit",
+    "image": "https://cdn.ilga.gov/assets/img/members/{96E18070-8D3D-4EEC-8432-8A30FEC19E5C}.jpg",
+    "email": "stephanie.kifowit@att.net",
+    "gender": "Female",
+    "birth_date": "1971-09-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:17.961300+00:00",
+    "updated_at": "2026-04-18T00:41:07.759656+00:00",
+    "openstates_url": "https://openstates.org/person/stephanie-kifowit-RvuY8iN0KF7rwZ7ajzgBj/"
+  },
+  {
+    "id": "ocd-person/56914fff-eda2-403a-869a-895764908cd9",
+    "name": "Steve Reick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:il/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Reick",
+    "image": "https://cdn.ilga.gov/assets/img/members/{D4845B6E-9A2E-4F0E-9F70-503B2E5891CA}.jpg",
+    "email": "reick@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:50.868598+00:00",
+    "updated_at": "2026-04-18T00:41:58.635475+00:00",
+    "openstates_url": "https://openstates.org/person/steve-reick-2dLkNlZjFo7da8CV1YvBBB/"
+  },
+  {
+    "id": "ocd-person/e9bf3918-daaa-4fa4-b58d-538c147335dd",
+    "name": "Sue Scherer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:il/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Sue",
+    "family_name": "Scherer",
+    "image": "https://cdn.ilga.gov/assets/img/members/{A0B92E66-B4F7-4B85-A7F2-14C0153B426F}.jpg",
+    "email": "staterepsue@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:49.661696+00:00",
+    "updated_at": "2026-04-18T00:42:30.224003+00:00",
+    "openstates_url": "https://openstates.org/person/sue-scherer-774bHcm00fJx1hhKceTCcX/"
+  },
+  {
+    "id": "ocd-person/68505842-e93c-42ce-adc8-9354f4a0db7a",
+    "name": "Suzanne Ness",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:il/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Suzanne",
+    "family_name": "Ness",
+    "image": "https://cdn.ilga.gov/assets/img/members/{735B1C5A-1929-4EC8-92B4-72E58D74E743}.jpg",
+    "email": "info@repsnessil66.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:07:13.972952+00:00",
+    "updated_at": "2026-04-18T00:41:48.426657+00:00",
+    "openstates_url": "https://openstates.org/person/suzanne-ness-3Apv1D0fKs5FyIDFN0CU4A/"
+  },
+  {
+    "id": "ocd-person/a38c9ab5-48b6-417c-baf1-bae5e8f3b7c0",
+    "name": "Thaddeus Jones",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:il/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Thaddeus",
+    "family_name": "Jones",
+    "image": "https://cdn.ilga.gov/assets/img/members/{6EE82A11-2CC6-48E9-9DE6-61D83EBCAB6B}.jpg",
+    "email": "repjones.jones@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:12.877096+00:00",
+    "updated_at": "2026-04-18T00:41:45.572433+00:00",
+    "openstates_url": "https://openstates.org/person/thaddeus-jones-4yc0Lk8BJ65aROBHqVHFWS/"
+  },
+  {
+    "id": "ocd-person/c1ebba3c-4fc2-4b66-9ecc-e20aa4f793a9",
+    "name": "Theresa Mah",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:il/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Theresa",
+    "family_name": "Mah",
+    "image": "https://cdn.ilga.gov/assets/img/members/{808BAA30-BB82-437A-9A76-386F9A65A073}.jpg",
+    "email": "office@reptheresamah.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:55.067368+00:00",
+    "updated_at": "2026-04-18T00:42:07.176560+00:00",
+    "openstates_url": "https://openstates.org/person/theresa-mah-5tvFIxpWcFhPAcXfbEEKNt/"
+  },
+  {
+    "id": "ocd-person/ba3dd226-a1c6-47af-917a-e12696d5aae5",
+    "name": "Tom Weber",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:il/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Weber",
+    "image": "https://cdn.ilga.gov/assets/img/members/{4C80DF49-91D2-4C24-981E-BBE946A671D2}.jpg",
+    "email": "weber@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-19T06:06:49.928670+00:00",
+    "updated_at": "2026-04-18T00:41:56.673237+00:00",
+    "openstates_url": "https://openstates.org/person/tom-weber-5fQp9UgAeumpGgEApsnigH/"
+  },
+  {
+    "id": "ocd-person/d6d5becd-7733-4849-b2a2-b543bbfea1ec",
+    "name": "Tony McCombie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:il/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "McCombie",
+    "image": "https://cdn.ilga.gov/assets/img/members/{0766A6E9-981F-491B-B3A1-12DF91F1DBDA}.jpg",
+    "email": "mccombie@ilhousegop.org",
+    "gender": "Female",
+    "birth_date": "1972-10-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:03.261512+00:00",
+    "updated_at": "2026-04-18T00:41:17.279140+00:00",
+    "openstates_url": "https://openstates.org/person/tony-mccombie-6XO2TDtrcQ085C9IWRJV1Q/"
+  },
+  {
+    "id": "ocd-person/4b7dfbae-dc1a-4226-9b42-00c8bbc46b06",
+    "name": "Tracy Katz Muhl",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:il/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Tracy",
+    "family_name": "Katz Muhl",
+    "image": "https://cdn.ilga.gov/assets/img/members/{31ED8E80-A147-47D1-A4B9-70A51C651C48}.jpg",
+    "email": "info@staterepkatzmuhl.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-12T19:22:45.545553+00:00",
+    "updated_at": "2026-04-18T00:41:43.567686+00:00",
+    "openstates_url": "https://openstates.org/person/tracy-katz-muhl-2IRzw4Xg3CHiHpus0EVXGw/"
+  },
+  {
+    "id": "ocd-person/63883963-04b0-454c-8d18-81dcca230b55",
+    "name": "Travis Weaver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:il/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Travis",
+    "family_name": "Weaver",
+    "image": "https://cdn.ilga.gov/assets/img/members/{0A077509-6D57-4C96-8525-0480C8338827}.jpg",
+    "email": "weaver@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "1992-06-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:44.892142+00:00",
+    "updated_at": "2026-04-18T00:42:17.889557+00:00",
+    "openstates_url": "https://openstates.org/person/travis-weaver-31oUgjzWi5qlhXALJfhykf/"
+  },
+  {
+    "id": "ocd-person/5a23473f-1af0-4f7d-8b08-cb287d93db6f",
+    "name": "Wayne Rosenthal",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "108",
+      "division_id": "ocd-division/country:us/state:il/sldl:108"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Wayne",
+    "family_name": "Rosenthal",
+    "image": "https://cdn.ilga.gov/assets/img/members/{43DB5751-834C-4CA0-B8A4-6D1016E3CB28}.jpg",
+    "email": "rosenthal@ilhousegop.org",
+    "gender": "Male",
+    "birth_date": "1950-05-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:43.107084+00:00",
+    "updated_at": "2026-04-18T00:41:49.916433+00:00",
+    "openstates_url": "https://openstates.org/person/wayne-rosenthal-2k5QlIfGFMLliKCmWyXrWZ/"
+  },
+  {
+    "id": "ocd-person/fcc072f5-5cbc-4c8e-bc3d-e70b0e102878",
+    "name": "Will Davis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:il/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Davis",
+    "image": "https://cdn.ilga.gov/assets/img/members/{6012DCA8-7486-49F9-A387-8703A2CF469C}.jpg",
+    "email": "williamd@ilga.gov",
+    "gender": "Male",
+    "birth_date": "1968-07-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:04.986241+00:00",
+    "updated_at": "2026-04-18T00:42:37.785496+00:00",
+    "openstates_url": "https://openstates.org/person/will-davis-7gw0yz8AKXfutrSPaT9uYK/"
+  },
+  {
+    "id": "ocd-person/df11068d-eb77-4eb8-90c8-95056891e633",
+    "name": "Will Guzzardi",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:il/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Guzzardi",
+    "image": "https://cdn.ilga.gov/assets/img/members/{C127AF36-0EAE-48B6-8C31-86AAE3935790}.jpg",
+    "email": "will@repguzzardi.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:43:16.032178+00:00",
+    "updated_at": "2026-04-18T00:41:16.769583+00:00",
+    "openstates_url": "https://openstates.org/person/will-guzzardi-6mv4JhFIi7SdWUD8dMLxGF/"
+  },
+  {
+    "id": "ocd-person/753dc145-9162-4e02-9b76-836be48498cb",
+    "name": "Yolonda Morris",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:il/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:il/government",
+      "name": "Illinois",
+      "classification": "state"
+    },
+    "given_name": "Yolonda",
+    "family_name": "Morris",
+    "image": "https://cdn.ilga.gov/assets/img/members/{2EDE65F3-F463-4E44-B703-6B06D2ECB787}.jpg",
+    "email": "9thdistrictinfo@gmail.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-03T20:38:21.341428+00:00",
+    "updated_at": "2026-04-18T00:41:47.373310+00:00",
+    "openstates_url": "https://openstates.org/person/yolonda-morris-3ZEK6pFybBXGIg6pQGECtv/"
+  }
+]

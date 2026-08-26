@@ -1,0 +1,1811 @@
+[
+  {
+    "id": "ocd-person/c5f2a744-0a3e-481f-9224-e4d5a58b9c9d",
+    "name": "Alice Mann",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:mn/sldu:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Alice",
+    "family_name": "Mann",
+    "image": "https://www.senate.mn/graphics/50Mann.jpg",
+    "email": "sen.alice.mann@senate.mn",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:41.952555+00:00",
+    "updated_at": "2026-01-30T19:06:16.281127+00:00",
+    "openstates_url": "https://openstates.org/person/alice-mann-61WNdng2uw8OUZsM7azcw1/"
+  },
+  {
+    "id": "ocd-person/8300aa36-f818-4ae8-ad31-f9373e396e08",
+    "name": "Amanda Hemmingsen-Jaeger",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:mn/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Amanda",
+    "family_name": "Hemmingsen-Jaeger",
+    "image": "https://www.senate.mn/graphics/47Hemmingsen-Jaeger.jpg",
+    "email": "sen.amanda.hemmingsen.jaeger@mnsenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:29.193629+00:00",
+    "updated_at": "2026-02-13T13:09:06.304135+00:00",
+    "openstates_url": "https://openstates.org/person/amanda-hemmingsen-jaeger-3zCIWBc9z5ipkev0DlXnEO/"
+  },
+  {
+    "id": "ocd-person/3e1cd4f3-2c37-4531-b2cb-ca875c82d773",
+    "name": "Andrew Lang",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:mn/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Lang",
+    "image": "https://www.senate.mn/graphics/16Lang.jpg",
+    "email": "sen.andrew.lang@senate.mn",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:19.825956+00:00",
+    "updated_at": "2026-01-30T19:05:49.925799+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-lang-1tChQYx4kxqTaOsqb1paOx/"
+  },
+  {
+    "id": "ocd-person/aabdca28-85ec-41e4-be90-726acaaa0cff",
+    "name": "Andrew Mathews",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:mn/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Mathews",
+    "image": "https://www.senate.mn/graphics/15Mathews.jpg",
+    "email": "sen.andrew.mathews@senate.mn",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:27.227635+00:00",
+    "updated_at": "2026-01-30T19:05:41.823448+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-mathews-5CBQdowl9YfU4wkyyAURl1/"
+  },
+  {
+    "id": "ocd-person/4749e0fb-4f41-46e3-a8b4-19fdbbbde113",
+    "name": "Ann Johnson Stewart",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:mn/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Ann",
+    "family_name": "Johnson Stewart",
+    "image": "https://www.senate.mn/graphics/45Johnson_Stewart.jpg",
+    "email": "sen.ann.johnson.stewart@senate.mn",
+    "gender": "Female",
+    "birth_date": "1964-07-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:24.849024+00:00",
+    "updated_at": "2026-01-30T19:05:52.407287+00:00",
+    "openstates_url": "https://openstates.org/person/ann-johnson-stewart-2AWDVkh9SWTjA9pa7ozHvf/"
+  },
+  {
+    "id": "ocd-person/ec588921-873b-4335-8fa1-2e3485008d3e",
+    "name": "Ann Rest",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:mn/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Ann",
+    "family_name": "Rest",
+    "image": "https://www.senate.mn/graphics/43Rest.jpg",
+    "email": "sen.ann.rest@senate.mn",
+    "gender": "Female",
+    "birth_date": "1942-04-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:22.680262+00:00",
+    "updated_at": "2026-01-30T19:06:41.958369+00:00",
+    "openstates_url": "https://openstates.org/person/ann-rest-7ByeIumF1Y3Iqkm9bgBppm/"
+  },
+  {
+    "id": "ocd-person/20c89480-8cde-4106-8b3d-54183371960a",
+    "name": "Aric Putnam",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:mn/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Aric",
+    "family_name": "Putnam",
+    "image": "https://www.senate.mn/graphics/14PutnamAric.jpg",
+    "email": "sen.aric.putnam@senate.mn",
+    "gender": "Male",
+    "birth_date": "1972-07-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:32.038367+00:00",
+    "updated_at": "2026-01-30T19:06:40.940085+00:00",
+    "openstates_url": "https://openstates.org/person/aric-putnam-zrQ1mhE9KRty4XNnZq8Pi/"
+  },
+  {
+    "id": "ocd-person/05fb3c26-0704-49c8-8eb6-8c624b752434",
+    "name": "Bill Lieske",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:mn/sldu:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Lieske",
+    "image": "https://www.senate.mn/graphics/58Lieske.jpg",
+    "email": "sen.bill.lieske@senate.mn",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:26.373941+00:00",
+    "updated_at": "2026-01-30T19:06:47.335911+00:00",
+    "openstates_url": "https://openstates.org/person/bill-lieske-BHm8DGbCMMM75mrU4SiF2/"
+  },
+  {
+    "id": "ocd-person/f839da78-1e9c-4e4b-b1d7-d203970ec6b2",
+    "name": "Bill Weber",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:mn/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Weber",
+    "image": "https://www.senate.mn/graphics/22Weber.jpg",
+    "email": "sen.bill.weber@senate.mn",
+    "gender": "Male",
+    "birth_date": "1956-04-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:19.353648+00:00",
+    "updated_at": "2026-01-30T19:06:30.673602+00:00",
+    "openstates_url": "https://openstates.org/person/bill-weber-7YOXF1ud894L0JAdL7lcjS/"
+  },
+  {
+    "id": "ocd-person/c7436be4-472a-4d5e-82f5-f46359395d3a",
+    "name": "Bobby Joe Champion",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:mn/sldu:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Bobby Joe",
+    "family_name": "Champion",
+    "image": "https://www.senate.mn/graphics/59Champion.jpg",
+    "email": "sen.bobby.champion@senate.mn",
+    "gender": "Male",
+    "birth_date": "1963-12-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:29.395401+00:00",
+    "updated_at": "2026-01-30T19:05:11.840089+00:00",
+    "openstates_url": "https://openstates.org/person/bobby-joe-champion-640HecHpJJxY3JfYHCoy0w/"
+  },
+  {
+    "id": "ocd-person/7536b66f-54fe-436e-ba03-83291c3c8d12",
+    "name": "Bonnie Westlin",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:mn/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Bonnie",
+    "family_name": "Westlin",
+    "image": "https://www.senate.mn/graphics/42Westlin.jpg",
+    "email": "sen.bwestlin@senate.mn",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:31.960755+00:00",
+    "updated_at": "2026-01-30T19:05:31.276702+00:00",
+    "openstates_url": "https://openstates.org/person/bonnie-westlin-3ZB6ZTGmvbbA8OH3r2NDWM/"
+  },
+  {
+    "id": "ocd-person/57b9021d-f5b7-4f80-a82d-a93ca9a123d0",
+    "name": "Cal Bahr",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:mn/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Cal",
+    "family_name": "Bahr",
+    "image": "https://www.senate.mn/graphics/31Bahr.jpg",
+    "email": "sen.cal.bahr@senate.mn",
+    "gender": "Male",
+    "birth_date": "1962-07-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:39.526856+00:00",
+    "updated_at": "2026-01-30T19:05:59.361083+00:00",
+    "openstates_url": "https://openstates.org/person/cal-bahr-2fWseLP4oXbGisj2z230xU/"
+  },
+  {
+    "id": "ocd-person/69ac712d-4de2-448a-8b84-ef07b4c4e423",
+    "name": "Carla Nelson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:mn/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Carla",
+    "family_name": "Nelson",
+    "image": "https://www.senate.mn/graphics/24Nelson.jpg",
+    "email": "sen.carla.nelson@senate.mn",
+    "gender": "Female",
+    "birth_date": "1957-05-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:39.054240+00:00",
+    "updated_at": "2026-01-30T19:05:25.701739+00:00",
+    "openstates_url": "https://openstates.org/person/carla-nelson-3DP02HC0E2uOKuktc0dcmZ/"
+  },
+  {
+    "id": "ocd-person/9afffc3e-2fd8-404c-beeb-5bf3e17397ce",
+    "name": "Clare Oumou Verbeten",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:mn/sldu:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Clare",
+    "family_name": "Oumou Verbeten",
+    "image": "https://www.senate.mn/graphics/66OumouVerbeten.jpg",
+    "email": "sen.clare.oumou.verbeten@senate.mn",
+    "gender": "Female",
+    "birth_date": "1995-03-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:18.075115+00:00",
+    "updated_at": "2026-01-30T19:05:05.006394+00:00",
+    "openstates_url": "https://openstates.org/person/clare-oumou-verbeten-4iTnqTyZ32LHvViDhWDsUw/"
+  },
+  {
+    "id": "ocd-person/2c27d592-c50b-45ae-b62a-ff657c828a5c",
+    "name": "Doron Clark",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:mn/sldu:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Doron",
+    "family_name": "Clark",
+    "image": "https://www.senate.mn/graphics/60Clark.jpg",
+    "email": "sen.doron.clark@senate.mn",
+    "gender": "Male",
+    "birth_date": "1977-12-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-03-05T07:34:39.099295+00:00",
+    "updated_at": "2026-01-30T19:05:09.886309+00:00",
+    "openstates_url": "https://openstates.org/person/doron-clark-1LJrjaszDa6R6Az5fsuJWG/"
+  },
+  {
+    "id": "ocd-person/a9040c8f-56d4-4ad9-83f5-e6f1216e7a5e",
+    "name": "Eric Lucero",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:mn/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Lucero",
+    "image": "https://www.senate.mn/graphics/30Lucero.jpg",
+    "email": "sen.eric.lucero@senate.mn",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:41.865438+00:00",
+    "updated_at": "2026-01-30T19:05:05.289763+00:00",
+    "openstates_url": "https://openstates.org/person/eric-lucero-58vYKNC7XkqKsdlEEMurdu/"
+  },
+  {
+    "id": "ocd-person/f520232e-1086-4353-b904-9ff7a89ba5e8",
+    "name": "Eric Pratt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:mn/sldu:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Pratt",
+    "image": "https://www.senate.mn/graphics/55Pratt.jpg",
+    "email": "sen.eric.pratt@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "1964-01-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:35.346919+00:00",
+    "updated_at": "2026-01-30T19:06:15.828877+00:00",
+    "openstates_url": "https://openstates.org/person/eric-pratt-7SXo1vqPv6zQRLXoRqbG3s/"
+  },
+  {
+    "id": "ocd-person/5233b98b-0b6d-47c9-9fc0-9218a592f8d8",
+    "name": "Erin Maye Quade",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:mn/sldu:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Erin",
+    "family_name": "Maye Quade",
+    "image": "https://www.senate.mn/graphics/56MayeQuade.jpg",
+    "email": "sen.erin.mayequade@senate.mn",
+    "gender": "Female",
+    "birth_date": "1986-05-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:25.251394+00:00",
+    "updated_at": "2026-01-30T19:06:06.526180+00:00",
+    "openstates_url": "https://openstates.org/person/erin-maye-quade-2V70YzNFGHhY9YRqkKJYzY/"
+  },
+  {
+    "id": "ocd-person/81828030-d1b8-4641-8692-8148fca58b28",
+    "name": "Erin Murphy",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:mn/sldu:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Erin",
+    "family_name": "Murphy",
+    "image": "https://www.senate.mn/graphics/64MurphyErin.jpg",
+    "email": "sen.erin.murphy@senate.mn",
+    "gender": "Female",
+    "birth_date": "1960-03-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:24.250554+00:00",
+    "updated_at": "2026-01-30T19:06:29.253624+00:00",
+    "openstates_url": "https://openstates.org/person/erin-murphy-3wNeFTlt12BerrdnuW1JH6/"
+  },
+  {
+    "id": "ocd-person/5644f3f8-6394-4ab6-9619-7ab6702b37ea",
+    "name": "Foung Hawj",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:mn/sldu:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Foung",
+    "family_name": "Hawj",
+    "image": "https://www.senate.mn/graphics/67Hawj.jpg",
+    "email": "sen.foung.hawj@senate.mn",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:40.304749+00:00",
+    "updated_at": "2026-01-30T19:06:34.378964+00:00",
+    "openstates_url": "https://openstates.org/person/foung-hawj-2cmqo43RSIrNmBexZwdltK/"
+  },
+  {
+    "id": "ocd-person/d1b377a1-8caa-4e37-999b-83ef8a1bf92c",
+    "name": "Gary Dahms",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:mn/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Dahms",
+    "image": "https://www.senate.mn/graphics/16Dahms.jpg",
+    "email": "sen.gary.dahms@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "1947-01-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:32.842666+00:00",
+    "updated_at": "2026-01-30T19:05:03.858026+00:00",
+    "openstates_url": "https://openstates.org/person/gary-dahms-6NhPc4LIe7WNhZMOCRIP0e/"
+  },
+  {
+    "id": "ocd-person/d3857eb4-0ec5-4406-840a-e338aad6a238",
+    "name": "Gene Dornink",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:mn/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Gene",
+    "family_name": "Dornink",
+    "image": "https://www.senate.mn/graphics/27DorninkGene.jpg",
+    "email": "sen.gene.dornink@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "1962-12-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:21.129633+00:00",
+    "updated_at": "2026-01-30T19:06:00.229445+00:00",
+    "openstates_url": "https://openstates.org/person/gene-dornink-6R8O4ofkRdnhRUArMRIgC8/"
+  },
+  {
+    "id": "ocd-person/7a52595e-fa21-4e21-88d6-b03e4d9f1f77",
+    "name": "Glenn Gruenhagen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:mn/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Glenn",
+    "family_name": "Gruenhagen",
+    "image": "https://www.senate.mn/graphics/17Gruenhagen.jpg",
+    "email": "sen.glenn.gruenhagen@senate.mn",
+    "gender": "Male",
+    "birth_date": "1952-02-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:37.513138+00:00",
+    "updated_at": "2026-01-30T19:06:52.344429+00:00",
+    "openstates_url": "https://openstates.org/person/glenn-gruenhagen-3iohFL19YUUMsSsjUI8atr/"
+  },
+  {
+    "id": "ocd-person/6a13cdd4-3646-4fe9-a2a3-5f1399c2c146",
+    "name": "Grant Hauschild",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:mn/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Grant",
+    "family_name": "Hauschild",
+    "image": "https://www.senate.mn/graphics/03Hauschild.jpg",
+    "email": "sen.grant.hauschild@senate.mn",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:37.922398+00:00",
+    "updated_at": "2026-01-30T19:05:36.021498+00:00",
+    "openstates_url": "https://openstates.org/person/grant-hauschild-3EAEhUz3LCuwLODOOjQ5mI/"
+  },
+  {
+    "id": "ocd-person/9411a121-c47d-431a-b407-88ff5c891c5f",
+    "name": "Heather Gustafson",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:mn/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Heather",
+    "family_name": "Gustafson",
+    "image": "https://www.senate.mn/graphics/36Gustafson.jpg",
+    "email": "sen.heather.gustafson@senate.mn",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:43.221863+00:00",
+    "updated_at": "2026-01-30T19:06:47.936027+00:00",
+    "openstates_url": "https://openstates.org/person/heather-gustafson-4VOv6Yu7WzHQOYJj6eDv1b/"
+  },
+  {
+    "id": "ocd-person/f15c0d42-4380-4f9b-b66d-14ffe61e1a40",
+    "name": "Jason Rarick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:mn/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Rarick",
+    "image": "https://www.senate.mn/graphics/11Rarick.jpg",
+    "email": "sen.jason.rarick@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "1969-10-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:34.873160+00:00",
+    "updated_at": "2026-01-30T19:05:49.052460+00:00",
+    "openstates_url": "https://openstates.org/person/jason-rarick-7LRDYGEENrbWUfXXeemkz2/"
+  },
+  {
+    "id": "ocd-person/971dbd16-363f-4151-a75c-306746aec18e",
+    "name": "Jeff Howe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:mn/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Howe",
+    "image": "https://www.senate.mn/graphics/13Howe.jpg",
+    "email": "sen.jeff.howe@senate.mn",
+    "gender": "Male",
+    "birth_date": "1959-06-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:16.242416+00:00",
+    "updated_at": "2026-01-30T19:05:11.002934+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-howe-4b9QmSjSIhuIJsRueHvUcQ/"
+  },
+  {
+    "id": "ocd-person/8d0a69ec-1301-4df5-9676-86720555ea7c",
+    "name": "Jen McEwen",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:mn/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jen",
+    "family_name": "McEwen",
+    "image": "https://www.senate.mn/graphics/07McEwenJen.jpg",
+    "email": "sen.jennifer.mcewen@senate.mn",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:29.645958+00:00",
+    "updated_at": "2026-01-30T19:06:21.868111+00:00",
+    "openstates_url": "https://openstates.org/person/jen-mcewen-4I8fzB9wJWCFzbeaL3pMD6/"
+  },
+  {
+    "id": "ocd-person/f0824aef-4692-46c8-bafa-f19a01a9d716",
+    "name": "Jeremy Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:mn/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jeremy",
+    "family_name": "Miller",
+    "image": "https://www.senate.mn/graphics/26Miller.jpg",
+    "email": "sen.jeremy.miller@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "1983-02-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:34.406668+00:00",
+    "updated_at": "2026-01-30T19:06:24.979755+00:00",
+    "openstates_url": "https://openstates.org/person/jeremy-miller-7JphY4lCRFAE1qRP8WkwFy/"
+  },
+  {
+    "id": "ocd-person/fc189dd9-b597-4744-86d3-ac315b93a3f3",
+    "name": "Jim Abeler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:mn/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Abeler",
+    "image": "https://www.senate.mn/graphics/35Abeler.jpg",
+    "email": "sen.jim.abeler@senate.mn",
+    "gender": "Male",
+    "birth_date": "1954-05-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:41.535938+00:00",
+    "updated_at": "2026-01-30T19:06:14.901244+00:00",
+    "openstates_url": "https://openstates.org/person/jim-abeler-7fhJbY1QGx63YfijcSCbdD/"
+  },
+  {
+    "id": "ocd-person/ac087885-bab6-4fbf-b88a-daf71262c8b6",
+    "name": "Jim Carlson",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:mn/sldu:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Carlson",
+    "image": "https://www.senate.mn/graphics/51Carlson.jpg",
+    "email": "sen.jim.carlson@senate.mn",
+    "gender": "Male",
+    "birth_date": "1947-02-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:31.767826+00:00",
+    "updated_at": "2026-01-30T19:05:19.441160+00:00",
+    "openstates_url": "https://openstates.org/person/jim-carlson-5EcYBaxvaGjGaI2zCGVL6c/"
+  },
+  {
+    "id": "ocd-person/b31cb55a-94ea-4f44-a4b9-8003b32c749a",
+    "name": "John Hoffman",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:mn/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Hoffman",
+    "image": "https://www.senate.mn/graphics/36Hoffman.jpg",
+    "email": "sen.john.hoffman@senate.mn",
+    "gender": "Male",
+    "birth_date": "1965-01-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:17.014093+00:00",
+    "updated_at": "2026-01-30T19:06:46.690861+00:00",
+    "openstates_url": "https://openstates.org/person/john-hoffman-5RykGp62iALnmUB1vP6Nwo/"
+  },
+  {
+    "id": "ocd-person/f6b649e0-5359-4d22-8ff0-6ca017bc5e23",
+    "name": "John Jasinski",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:mn/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Jasinski",
+    "image": "https://www.senate.mn/graphics/24Jasinski.jpg",
+    "email": "sen.john.jasinski@senate.mn",
+    "gender": "Male",
+    "birth_date": "1966-06-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:35.034131+00:00",
+    "updated_at": "2026-01-30T19:06:31.369044+00:00",
+    "openstates_url": "https://openstates.org/person/john-jasinski-7VXPwuibT8dL7QUe4i90wV/"
+  },
+  {
+    "id": "ocd-person/4acf27d9-edd4-4f04-97c7-164390a5664b",
+    "name": "John Marty",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:mn/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Marty",
+    "image": "https://www.senate.mn/graphics/40Marty.jpg",
+    "email": "sen.john.mcguire@senate.mn",
+    "gender": "Male",
+    "birth_date": "1956-11-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:28.464349+00:00",
+    "updated_at": "2026-01-30T19:06:12.838286+00:00",
+    "openstates_url": "https://openstates.org/person/john-marty-2HA6MP1HSKvJhFkrQot4mp/"
+  },
+  {
+    "id": "ocd-person/4c3116e2-98db-4367-b543-a12220c9b12f",
+    "name": "Jordan Rasmusson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:mn/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jordan",
+    "family_name": "Rasmusson",
+    "image": "https://www.senate.mn/graphics/09Rasmusson.jpg",
+    "email": "sen.jordan.rasmusson@senate.mn",
+    "gender": "Male",
+    "birth_date": "1993-04-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:23.422744+00:00",
+    "updated_at": "2026-01-30T19:06:28.560235+00:00",
+    "openstates_url": "https://openstates.org/person/jordan-rasmusson-2JlqkLeiAZYMs1mI352Xx1/"
+  },
+  {
+    "id": "ocd-person/4ca681ca-58ab-4d75-b7ef-8d255f858d62",
+    "name": "Judy Seeberger",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:mn/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Judy",
+    "family_name": "Seeberger",
+    "image": "https://www.senate.mn/graphics/41Seeberger.jpg",
+    "email": "sen.judy.seeberger@senate.mn",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:31.099211+00:00",
+    "updated_at": "2026-01-30T19:06:54.600744+00:00",
+    "openstates_url": "https://openstates.org/person/judy-seeberger-2KdVfMMxKRFexrGkQO51z0/"
+  },
+  {
+    "id": "ocd-person/62a79a93-6117-4f36-87ef-f4058c34142a",
+    "name": "Julia Coleman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:mn/sldu:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Julia",
+    "family_name": "Coleman",
+    "image": "https://www.senate.mn/graphics/47ColemanJulia.jpg",
+    "email": "sen.julia.coleman@mnsenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:22.147968+00:00",
+    "updated_at": "2026-01-30T19:06:11.198613+00:00",
+    "openstates_url": "https://openstates.org/person/julia-coleman-309qHGIdq5KDcTBRaieGZm/"
+  },
+  {
+    "id": "ocd-person/dde8cf7d-52c2-48e5-bf65-f0fe2477713c",
+    "name": "Karin Housley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:mn/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Karin",
+    "family_name": "Housley",
+    "image": "https://www.senate.mn/graphics/39Housley.jpg",
+    "email": "sen.karin.housley@senate.mn",
+    "gender": "Female",
+    "birth_date": "1964-01-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:47.350414+00:00",
+    "updated_at": "2026-01-30T19:06:19.423216+00:00",
+    "openstates_url": "https://openstates.org/person/karin-housley-6kjhKoNN8L8MbdR9GnInc4/"
+  },
+  {
+    "id": "ocd-person/4d922135-f178-4e50-8439-ebbf47cf025c",
+    "name": "Keri Heintzeman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:mn/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Keri",
+    "family_name": "Heintzeman",
+    "image": "https://www.senate.mn/graphics/06Heintzeman.jpg",
+    "email": "sen.keri.heintzeman@mnsenate.gov",
+    "gender": "Female",
+    "birth_date": "1980-06-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-05-15T01:07:14.584088+00:00",
+    "updated_at": "2026-01-30T19:06:31.984540+00:00",
+    "openstates_url": "https://openstates.org/person/keri-heintzeman-2MNBorSMHKG1ZRQ17BytQ4/"
+  },
+  {
+    "id": "ocd-person/39814623-d268-47a1-8dcd-78e3ae1a33cf",
+    "name": "Lindsey Port",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:mn/sldu:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Lindsey",
+    "family_name": "Port",
+    "image": "https://www.senate.mn/graphics/56PortLindsey.jpg",
+    "email": "sen.lindsey.port@senate.mn",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:29.011299+00:00",
+    "updated_at": "2026-01-30T19:06:05.114453+00:00",
+    "openstates_url": "https://openstates.org/person/lindsey-port-1kVdk3bdGSh10ZMXE0NtD5/"
+  },
+  {
+    "id": "ocd-person/26ed75ae-3230-4e92-82a3-486bd76e1893",
+    "name": "Liz Boldon",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:mn/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Boldon",
+    "image": "https://www.senate.mn/graphics/25Boldon.jpg",
+    "email": "sen.liz.boldon@senate.mn",
+    "gender": "Female",
+    "birth_date": "1979-03-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:25.447050+00:00",
+    "updated_at": "2026-01-30T19:05:34.785146+00:00",
+    "openstates_url": "https://openstates.org/person/liz-boldon-1BSE7gjki70dApvBoX1JkR/"
+  },
+  {
+    "id": "ocd-person/de9b28f6-a2a8-4edd-98cb-2b3ff2e6382c",
+    "name": "Mark Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:mn/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Johnson",
+    "image": "https://www.senate.mn/graphics/01Johnson.jpg",
+    "email": "sen.mark.johnson@senate.mn",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:21.880001+00:00",
+    "updated_at": "2026-01-30T19:06:27.023859+00:00",
+    "openstates_url": "https://openstates.org/person/mark-johnson-6m3Chh3lHV2Kgc37GKzJHg/"
+  },
+  {
+    "id": "ocd-person/f20a4255-6c65-4091-a0f5-aea70f133cdb",
+    "name": "Mark Koran",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:mn/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Koran",
+    "image": "https://www.senate.mn/graphics/32Koran.jpg",
+    "email": "sen.mark.koran@senate.mn",
+    "gender": "Male",
+    "birth_date": "1964-04-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:40.922285+00:00",
+    "updated_at": "2026-01-30T19:05:08.150699+00:00",
+    "openstates_url": "https://openstates.org/person/mark-koran-7MipYW03TreCDs47IjrE43/"
+  },
+  {
+    "id": "ocd-person/2795e0ed-3a02-4afc-8836-f5c3c067139c",
+    "name": "Mary Kunesh-Podein",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:mn/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Kunesh-Podein",
+    "image": "https://www.senate.mn/graphics/41KuneshPodeinMary.jpg",
+    "email": "sen.mary.kunesh@senate.mn",
+    "gender": "Female",
+    "birth_date": "1960-11-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:47.511907+00:00",
+    "updated_at": "2026-01-30T19:05:54.721006+00:00",
+    "openstates_url": "https://openstates.org/person/mary-kunesh-podein-1ChC7Oj8Y6D6n40WcKqO9k/"
+  },
+  {
+    "id": "ocd-person/a4b21c2d-d3fe-41dc-9614-0ff80878850c",
+    "name": "Matt Klein",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:mn/sldu:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Klein",
+    "image": "https://www.senate.mn/graphics/52Klein.jpg",
+    "email": "sen.matt.klein@senate.mn",
+    "gender": "Male",
+    "birth_date": "1967-09-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:26.605023+00:00",
+    "updated_at": "2026-01-30T19:06:33.926587+00:00",
+    "openstates_url": "https://openstates.org/person/matt-klein-50m8Z4k4wKym0g5XK2GUNY/"
+  },
+  {
+    "id": "ocd-person/d2fb6801-379e-481c-9313-2ac099d3a775",
+    "name": "Melissa Wiklund",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:mn/sldu:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Melissa",
+    "family_name": "Wiklund",
+    "image": "https://www.senate.mn/graphics/50Wiklund.jpg",
+    "email": "sen.melissa.wiklund@senate.mn",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:23.454995+00:00",
+    "updated_at": "2026-01-30T19:05:58.339098+00:00",
+    "openstates_url": "https://openstates.org/person/melissa-wiklund-6Q7HSfoDoofPF6V81Ygp1x/"
+  },
+  {
+    "id": "ocd-person/3a76623e-d295-4c58-be60-fd37a285a39b",
+    "name": "Michael Kreun",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:mn/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Kreun",
+    "image": "https://www.senate.mn/graphics/32Kreun.jpg",
+    "email": "sen.michael.kreun@senate.mn",
+    "gender": "Male",
+    "birth_date": "1976-01-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:44.134177+00:00",
+    "updated_at": "2026-01-30T19:05:55.396506+00:00",
+    "openstates_url": "https://openstates.org/person/michael-kreun-1mJehaI3EUHOsZ1Wrjbg1j/"
+  },
+  {
+    "id": "ocd-person/564bbace-b157-416d-ae59-81cd8a1fbaf8",
+    "name": "Mike Holmstrom",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:mn/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Holmstrom",
+    "image": "https://www.senate.mn/graphics/29Holmstrom.jpg",
+    "email": "sen.michael.holmstrom@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "1994-02-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-30T19:06:13.737436+00:00",
+    "updated_at": "2026-01-30T19:06:14.427073+00:00",
+    "openstates_url": "https://openstates.org/person/mike-holmstrom-2cpwonHwj8Z4qidaFji9iS/"
+  },
+  {
+    "id": "ocd-person/7eaf40ec-f926-4992-8962-65b90846ef80",
+    "name": "Nathan Wesenberg",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:mn/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Nathan",
+    "family_name": "Wesenberg",
+    "image": "https://www.senate.mn/graphics/10Wesenberg.jpg",
+    "email": "sen.nathan.wesenberg@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:33.478777+00:00",
+    "updated_at": "2026-01-30T19:06:25.631943+00:00",
+    "openstates_url": "https://openstates.org/person/nathan-wesenberg-3r37huWK9BdtMVx3tl60Dw/"
+  },
+  {
+    "id": "ocd-person/55a02119-b43d-4b39-a19b-07411c5ec7c9",
+    "name": "Nick Frentz",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:mn/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Frentz",
+    "image": "https://www.senate.mn/graphics/19Frentz.jpg",
+    "email": "sen.nick.frentz@senate.mn",
+    "gender": "Male",
+    "birth_date": "1963-06-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:33.462235+00:00",
+    "updated_at": "2026-01-30T19:05:36.278876+00:00",
+    "openstates_url": "https://openstates.org/person/nick-frentz-2bZWg7mNXrlKVKcJ1JaPZx/"
+  },
+  {
+    "id": "ocd-person/04eeaa61-ee3c-4e36-88f2-b415660175eb",
+    "name": "Omar Fateh",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:mn/sldu:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Omar",
+    "family_name": "Fateh",
+    "image": "https://www.senate.mn/graphics/62FatehOmar.jpg",
+    "email": "sen.omar.fateh@senate.mn",
+    "gender": "Male",
+    "birth_date": "1990-04-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:27.833452+00:00",
+    "updated_at": "2026-01-30T19:05:44.313981+00:00",
+    "openstates_url": "https://openstates.org/person/omar-fateh-9J2Ssq8tVTpu2hdGlN9UB/"
+  },
+  {
+    "id": "ocd-person/fde08265-b73e-4a4b-ba87-d90d71319640",
+    "name": "Paul Utke",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:mn/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Utke",
+    "image": "https://www.senate.mn/graphics/02Utke.jpg",
+    "email": "sen.paul.utke@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "1956-12-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:44.316556+00:00",
+    "updated_at": "2026-01-30T19:05:04.180721+00:00",
+    "openstates_url": "https://openstates.org/person/paul-utke-7j3euFNlWJIJ5wlVat5Pqy/"
+  },
+  {
+    "id": "ocd-person/f9fb7c65-e0ab-484c-8517-b20267cc3f07",
+    "name": "Rich Draheim",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:mn/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Rich",
+    "family_name": "Draheim",
+    "image": "https://www.senate.mn/graphics/20Draheim.jpg",
+    "email": "sen.rich.draheim@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:31.295252+00:00",
+    "updated_at": "2026-01-30T19:05:15.663676+00:00",
+    "openstates_url": "https://openstates.org/person/rich-draheim-7bi1AJ7AhN5TQcYZzbj7G3/"
+  },
+  {
+    "id": "ocd-person/9cdb9977-9923-4124-ae93-c45e28f1f51c",
+    "name": "Rob Farnsworth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:mn/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Farnsworth",
+    "image": "https://www.senate.mn/graphics/07Farnsworth.jpg",
+    "email": "sen.robert.farnsworth@senate.mn",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:45.184053+00:00",
+    "updated_at": "2026-01-30T19:06:01.267285+00:00",
+    "openstates_url": "https://openstates.org/person/rob-farnsworth-4lz9w0qkGcFFPAjyGpgFdE/"
+  },
+  {
+    "id": "ocd-person/b8c303a5-0a73-4a26-8071-be5a9dcf113a",
+    "name": "Rob Kupec",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:mn/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Kupec",
+    "image": "https://www.senate.mn/graphics/04Kupec.jpg",
+    "email": "sen.robert.kupec@senate.mn",
+    "gender": "Male",
+    "birth_date": "1968-11-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:20.791250+00:00",
+    "updated_at": "2026-01-30T19:05:58.086233+00:00",
+    "openstates_url": "https://openstates.org/person/rob-kupec-5cdi0w2viNrlR9KBNpUl9m/"
+  },
+  {
+    "id": "ocd-person/834a2c10-beb0-454e-8e08-619309d8a08a",
+    "name": "Ron Latz",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:mn/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Latz",
+    "image": "https://www.senate.mn/graphics/46Latz.jpg",
+    "email": "sen.ron.latz@senate.mn",
+    "gender": "Male",
+    "birth_date": "1963-08-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:20.768167+00:00",
+    "updated_at": "2026-01-30T19:06:09.077877+00:00",
+    "openstates_url": "https://openstates.org/person/ron-latz-3zjtHHj7ajzgX4xzYl0MFW/"
+  },
+  {
+    "id": "ocd-person/0b83a916-567b-4d36-843f-17d8f5e13b8d",
+    "name": "Sandy Pappas",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:mn/sldu:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Sandy",
+    "family_name": "Pappas",
+    "image": "https://www.senate.mn/graphics/65Pappas.jpg",
+    "email": "sen.sandra.parry@senate.mn",
+    "gender": "Female",
+    "birth_date": "1949-06-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:22.202180+00:00",
+    "updated_at": "2026-01-30T19:05:32.121083+00:00",
+    "openstates_url": "https://openstates.org/person/sandy-pappas-Lj5FFSEmmE9yTnQmFEbpV/"
+  },
+  {
+    "id": "ocd-person/4dc8ff31-159a-457a-9551-a897d222f87e",
+    "name": "Scott Dibble",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:mn/sldu:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Dibble",
+    "image": "https://www.senate.mn/graphics/61Dibble.jpg",
+    "email": "sen.scott.dibble@senate.mn",
+    "gender": "Male",
+    "birth_date": "1965-08-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:16.851865+00:00",
+    "updated_at": "2026-01-30T19:06:03.180932+00:00",
+    "openstates_url": "https://openstates.org/person/scott-dibble-2MmGQcyHLdsWpcleDiVKZC/"
+  },
+  {
+    "id": "ocd-person/e67843ce-752d-4cc0-abb9-4a45b8b8fdca",
+    "name": "Steve Cwodzinski",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:mn/sldu:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Cwodzinski",
+    "image": "https://www.senate.mn/graphics/49Cwodzinski.jpg",
+    "email": "sen.steve.cwodzinski@senate.mn",
+    "gender": "Male",
+    "birth_date": "1958-09-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:41.230202+00:00",
+    "updated_at": "2026-01-30T19:05:28.408951+00:00",
+    "openstates_url": "https://openstates.org/person/steve-cwodzinski-70tCAyyd3KHfClhBL1InzW/"
+  },
+  {
+    "id": "ocd-person/a947d529-ab68-4ae8-b1e8-7ff012dde193",
+    "name": "Steve Drazkowski",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:mn/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Drazkowski",
+    "image": "https://www.senate.mn/graphics/20Drazkowski.jpg",
+    "email": "sen.steve.drazkowski@senate.mn",
+    "gender": "Male",
+    "birth_date": "1964-11-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:44.773583+00:00",
+    "updated_at": "2026-01-30T19:06:50.085936+00:00",
+    "openstates_url": "https://openstates.org/person/steve-drazkowski-59QWuhtF9GLTWyj1FJigDL/"
+  },
+  {
+    "id": "ocd-person/9d8b9b67-e74b-4e7f-92d5-52e3c0907f1d",
+    "name": "Steve Green",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:mn/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Green",
+    "image": "https://www.senate.mn/graphics/02Green.jpg",
+    "email": "sen.steve.green@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "1960-05-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:24.413704+00:00",
+    "updated_at": "2026-01-30T19:05:39.013502+00:00",
+    "openstates_url": "https://openstates.org/person/steve-green-4nHawmwm8YtsA2uGPoEqyr/"
+  },
+  {
+    "id": "ocd-person/bd086574-4116-4b0a-ad6b-7c0352293f06",
+    "name": "Susan Pha",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:mn/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Susan",
+    "family_name": "Pha",
+    "image": "https://www.senate.mn/graphics/38Pha.jpg",
+    "email": "sen.susan.pha@senate.mn",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:33.091879+00:00",
+    "updated_at": "2026-01-30T19:05:42.466607+00:00",
+    "openstates_url": "https://openstates.org/person/susan-pha-5khNzKVCjHuloUJHPIprbK/"
+  },
+  {
+    "id": "ocd-person/1c19414e-994b-46d4-8971-432ed482ca39",
+    "name": "Torrey Westrom",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:mn/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Torrey",
+    "family_name": "Westrom",
+    "image": "https://www.senate.mn/graphics/12Westrom.jpg",
+    "email": "sen.torrey.westrom@mnsenate.gov",
+    "gender": "Male",
+    "birth_date": "1973-03-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:39.211590+00:00",
+    "updated_at": "2026-01-30T19:06:34.802241+00:00",
+    "openstates_url": "https://openstates.org/person/torrey-westrom-r1KG6i2BWZhkLPlXA3QwT/"
+  },
+  {
+    "id": "ocd-person/5d9e1da5-ecf9-45d9-b104-7d1238032aff",
+    "name": "Tou Xiong",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:mn/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Tou",
+    "family_name": "Xiong",
+    "image": "https://www.senate.mn/graphics/44Xiong.jpg",
+    "email": "sen.tou.xiong@senate.mn",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:46:43.443589+00:00",
+    "updated_at": "2026-01-30T19:06:33.471959+00:00",
+    "openstates_url": "https://openstates.org/person/tou-xiong-2qeXp339hjOTDF3n1bDKPP/"
+  },
+  {
+    "id": "ocd-person/dc676c57-0779-4d0e-9ba4-a07d7034dfa1",
+    "name": "Warren Limmer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:mn/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Warren",
+    "family_name": "Limmer",
+    "image": "https://www.senate.mn/graphics/37Limmer.jpg",
+    "email": "sen.warren.limmer@senate.mn",
+    "gender": "Male",
+    "birth_date": "1955-01-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:26.293884+00:00",
+    "updated_at": "2026-01-30T19:06:23.021878+00:00",
+    "openstates_url": "https://openstates.org/person/warren-limmer-6htZjxdaS5rxPrJWcDfQvZ/"
+  },
+  {
+    "id": "ocd-person/acacede0-a09a-45b9-8990-646dfa5bd59a",
+    "name": "Zach Duckworth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:mn/sldu:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Zach",
+    "family_name": "Duckworth",
+    "image": "https://www.senate.mn/graphics/58DuckworthZach.jpg",
+    "email": "sen.zach.duckworth@senate.mn",
+    "gender": "Male",
+    "birth_date": "1987-07-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:26.345480+00:00",
+    "updated_at": "2026-01-30T19:05:29.758896+00:00",
+    "openstates_url": "https://openstates.org/person/zach-duckworth-5Fphxp0U8GSIk3qvTeQ3Le/"
+  },
+  {
+    "id": "ocd-person/332e30b5-dc8d-4074-9c16-6e2a6255d135",
+    "name": "Zaynab Mohamed",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:mn/sldu:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Zaynab",
+    "family_name": "Mohamed",
+    "image": "https://www.senate.mn/graphics/63Mohamed.jpg",
+    "email": "sen.zaynab.mohamed@senate.mn",
+    "gender": "Female",
+    "birth_date": "1997-05-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:37.619931+00:00",
+    "updated_at": "2026-01-30T19:06:52.986268+00:00",
+    "openstates_url": "https://openstates.org/person/zaynab-mohamed-1YZiUnrAwiymltSnKADchx/"
+  }
+]

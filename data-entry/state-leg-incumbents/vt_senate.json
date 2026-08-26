@@ -1,0 +1,875 @@
+[
+  {
+    "id": "ocd-person/a366bc32-20d8-41a8-a2cf-939650b7a2c2",
+    "name": "Alison Clarkson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Windsor",
+      "division_id": "ocd-division/country:us/state:vt/sldu:windsor"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Alison",
+    "family_name": "Clarkson",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Clarkson,Alison.jpg",
+    "email": "aclarkson@leg.state.vt.us",
+    "gender": "Female",
+    "birth_date": "1955-04-26",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 457-4627",
+      "state email": "AClarkson@leg.state.vt.us",
+      "home address": "18 Golf Avenue Woodstock, VT 05091"
+    },
+    "created_at": "2018-10-18T16:13:29.353215+00:00",
+    "updated_at": "2025-05-23T14:27:12.662579+00:00",
+    "openstates_url": "https://openstates.org/person/alison-clarkson-4yKhMRybeySPAuQsGNa4n4/"
+  },
+  {
+    "id": "ocd-person/1463485e-f279-44f6-a368-f75f213dc7cd",
+    "name": "Andrew Perchlik",
+    "party": "Democratic/Progressive",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Washington",
+      "division_id": "ocd-division/country:us/state:vt/sldu:washington"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Perchlik",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Perchlik.Andrew.jpg",
+    "email": "aperchlik@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "1968-06-03",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 279-0471",
+      "home address": "530 Laird Pond Rd. Plainfield, VT 05677"
+    },
+    "created_at": "2019-01-10T06:19:40.601936+00:00",
+    "updated_at": "2025-05-23T14:26:27.358875+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-perchlik-cTDZIRFEXymQRBKGZ6w1d/"
+  },
+  {
+    "id": "ocd-person/c34f492a-7cdf-4830-a28a-0ff2fe7c8f71",
+    "name": "Ann Cummings",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Washington",
+      "division_id": "ocd-division/country:us/state:vt/sldu:washington"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Ann",
+    "family_name": "Cummings",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Cummings,Ann%20064.jpg",
+    "email": "acummings@leg.state.vt.us",
+    "gender": "Female",
+    "birth_date": "1946-07-20",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 223-6043",
+      "home address": "24 Colonial Dr. Montpelier, VT 05602"
+    },
+    "created_at": "2018-10-18T16:13:29.505145+00:00",
+    "updated_at": "2025-05-23T14:26:18.704407+00:00",
+    "openstates_url": "https://openstates.org/person/ann-cummings-5wXjirGRBNVHn8m96VdxYH/"
+  },
+  {
+    "id": "ocd-person/70fa5e7e-8ab1-4599-a881-61d12120637c",
+    "name": "Anne Watson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Washington",
+      "division_id": "ocd-division/country:us/state:vt/sldu:washington"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Anne",
+    "family_name": "Watson",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Watson,Anne.jpg",
+    "email": "awatson@leg.state.vt.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "state email": "awatson@leg.state.vt.us",
+      "home address": "115 State Street Montpelier, VT 05633"
+    },
+    "created_at": "2023-02-14T20:02:08.045884+00:00",
+    "updated_at": "2025-01-23T16:54:05.241439+00:00",
+    "openstates_url": "https://openstates.org/person/anne-watson-3RBYhDM1fOdCmX8xMskLDI/"
+  },
+  {
+    "id": "ocd-person/d798a240-afe8-451d-8b56-9d2badd4820c",
+    "name": "Becca White",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Windsor",
+      "division_id": "ocd-division/country:us/state:vt/sldu:windsor"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Becca",
+    "family_name": "White",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/White,Rebecca.jpg",
+    "email": "rwhite@leg.state.vt.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 777-4517",
+      "state email": "rwhite@leg.state.vt.us",
+      "home address": "White River Jct., VT 05001",
+      "work address": "Waterbury, VT 05677"
+    },
+    "created_at": "2019-01-10T06:19:41.334147+00:00",
+    "updated_at": "2025-05-23T14:25:33.599201+00:00",
+    "openstates_url": "https://openstates.org/person/becca-white-6Yp6SKJ7zBjTOwWghIYz3k/"
+  },
+  {
+    "id": "ocd-person/2f1d3491-871e-4eb6-988b-57d3c9ea7a19",
+    "name": "Bob Norris",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Franklin",
+      "division_id": "ocd-division/country:us/state:vt/sldu:franklin"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Norris",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Norris,%20Bob.jpg",
+    "email": "rnorris@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 309-9262",
+      "state email": "rnorris@leg.state.vt.us",
+      "home address": "162 VT RT 105 Sheldon, VT 05483"
+    },
+    "created_at": "2021-01-08T00:19:23.958239+00:00",
+    "updated_at": "2025-05-23T14:26:21.700094+00:00",
+    "openstates_url": "https://openstates.org/person/bob-norris-1Qtz98ems7vcNGwEpaHpd3/"
+  },
+  {
+    "id": "ocd-person/d4ead076-6425-4ab7-ad32-b10dce660170",
+    "name": "Brian Collamore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Rutland",
+      "division_id": "ocd-division/country:us/state:vt/sldu:rutland"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Collamore",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Collamore,Brian.jpg",
+    "email": "bcollamore@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "1950-11-28",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 773-1365",
+      "state email": "bcollamore@leg.state.vt.us",
+      "home address": "124 Patricia Ln. Rutland, VT 05701"
+    },
+    "created_at": "2018-10-18T16:13:30.533923+00:00",
+    "updated_at": "2025-05-23T14:26:29.083911+00:00",
+    "openstates_url": "https://openstates.org/person/brian-collamore-6TlgOMxIJhxzzeQw1osLDc/"
+  },
+  {
+    "id": "ocd-person/1526326f-c2a8-4103-af27-1805f9a8e32a",
+    "name": "Chris Mattos",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Chittenden North",
+      "division_id": "ocd-division/country:us/state:vt/sldu:chittenden-north"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Mattos",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Mattos,Chris.jpg",
+    "email": "cmattos@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "1988-06-18",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 922-2059",
+      "home address": "Milton, VT 05468"
+    },
+    "created_at": "2018-10-18T16:13:31.662756+00:00",
+    "updated_at": "2025-05-23T14:26:24.470440+00:00",
+    "openstates_url": "https://openstates.org/person/chris-mattos-duIHnTYGB674PDkxvEFPW/"
+  },
+  {
+    "id": "ocd-person/f076a53a-1ebd-485d-8d0f-adb7cf0b00be",
+    "name": "Dave Weeks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Rutland",
+      "division_id": "ocd-division/country:us/state:vt/sldu:rutland"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Weeks",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Weeks,%20David.jpg",
+    "email": "dweeks@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "1960-12-21",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 417-9013",
+      "state email": "dweeks@leg.state.vt.us",
+      "home address": "35 Warner Ave Proctor, VT 05765"
+    },
+    "created_at": "2023-02-14T20:01:38.321932+00:00",
+    "updated_at": "2025-05-23T14:27:05.724071+00:00",
+    "openstates_url": "https://openstates.org/person/dave-weeks-7JkNX7apua700DNkeAPYUQ/"
+  },
+  {
+    "id": "ocd-person/91dafbcc-d313-4ef3-a506-0113d4ce1975",
+    "name": "Ginny Lyons",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Chittenden Southeast",
+      "division_id": "ocd-division/country:us/state:vt/sldu:chittenden-southeast"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Ginny",
+    "family_name": "Lyons",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Lyons,Ginny.jpg",
+    "email": "vlyons@leg.state.vt.us",
+    "gender": "Female",
+    "birth_date": "1944-09-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:42.789107+00:00",
+    "updated_at": "2025-05-23T14:25:41.388951+00:00",
+    "openstates_url": "https://openstates.org/person/ginny-lyons-4RDxiWPCmbAw5MwnT4ISmL/"
+  },
+  {
+    "id": "ocd-person/4eba2d1e-5bc7-42e1-bc03-2fdc5f4b4889",
+    "name": "Joe Major",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Windsor",
+      "division_id": "ocd-division/country:us/state:vt/sldu:windsor"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Major",
+    "image": "https://images.squarespace-cdn.com/content/v1/65f8e1b6da0dae67f6ddd71c/e63b554f-a65c-462f-9444-364200db89b9/Joe+photo.jpg?format=2500w",
+    "email": "jmajor@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:59:35.549871+00:00",
+    "updated_at": "2025-05-23T14:27:06.238072+00:00",
+    "openstates_url": "https://openstates.org/person/joe-major-2OYU1b1uO56g8wHedsxGjx/"
+  },
+  {
+    "id": "ocd-person/06f7e87d-e1f3-4d29-bd2c-11cadb89069e",
+    "name": "Kesha Ram Hinsdale",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Chittenden Southeast",
+      "division_id": "ocd-division/country:us/state:vt/sldu:chittenden-southeast"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Kesha",
+    "family_name": "Ram Hinsdale",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/RamHinsdale,Kesha.jpg",
+    "email": "kramhinsdale@leg.state.vt.us",
+    "gender": "Female",
+    "birth_date": "1986-08-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-25T06:15:37.890974+00:00",
+    "updated_at": "2025-05-23T14:26:56.791649+00:00",
+    "openstates_url": "https://openstates.org/person/kesha-ram-hinsdale-D9FOVquit5nxXBJzpJZBm/"
+  },
+  {
+    "id": "ocd-person/c5bca102-7637-45de-90fb-183c2c024f43",
+    "name": "Larry Hart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Orange",
+      "division_id": "ocd-division/country:us/state:vt/sldu:orange"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Hart",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Hart,Lawrence.jpg",
+    "email": "lhart@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:00:11.035991+00:00",
+    "updated_at": "2025-01-23T16:53:51.495066+00:00",
+    "openstates_url": "https://openstates.org/person/larry-hart-617guN936LHhRSY7qCwicl/"
+  },
+  {
+    "id": "ocd-person/a1812863-f6a9-4ce2-8131-d701923dd507",
+    "name": "Martine Gulick",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Chittenden Central",
+      "division_id": "ocd-division/country:us/state:vt/sldu:chittenden-central"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Martine",
+    "family_name": "Gulick",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Gulick,Martine.jpg",
+    "email": "mgulick@leg.state.vt.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-25T06:15:29.658696+00:00",
+    "updated_at": "2025-05-23T14:25:57.861035+00:00",
+    "openstates_url": "https://openstates.org/person/martine-gulick-4ukmyQQ5d87C8lQ5Jzd9ct/"
+  },
+  {
+    "id": "ocd-person/4cae5971-93ee-4029-b5ef-4c69574256da",
+    "name": "Nader Hashim",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Windham",
+      "division_id": "ocd-division/country:us/state:vt/sldu:windham"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Nader",
+    "family_name": "Hashim",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Hashim.Nader.jpg",
+    "email": "nhashim@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:19:51.411752+00:00",
+    "updated_at": "2025-05-23T14:27:14.016685+00:00",
+    "openstates_url": "https://openstates.org/person/nader-hashim-2Kh5sCHzqikc0kxDngLEfS/"
+  },
+  {
+    "id": "ocd-person/44bcd67b-5b5f-4fca-a61a-20f91072c5e7",
+    "name": "Patrick Brennan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Grand Isle",
+      "division_id": "ocd-division/country:us/state:vt/sldu:grand_isle"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Brennan",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Brennan,Pat.jpg",
+    "email": "pbrennan@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "1953-06-11",
+    "death_date": "",
+    "extras": {
+      "state email": "pbrennan@leg.state.vt.us"
+    },
+    "created_at": "2018-10-18T16:13:39.013480+00:00",
+    "updated_at": "2025-05-23T14:26:13.567416+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-brennan-25hmCAdYgl800YisMGKJtf/"
+  },
+  {
+    "id": "ocd-person/ba794ad6-45fa-40cc-8642-55e759a94d71",
+    "name": "Phil Baruth",
+    "party": "Democratic/Progressive",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Chittenden Central",
+      "division_id": "ocd-division/country:us/state:vt/sldu:chittenden-central"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Baruth",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/PBaruth.jpg",
+    "email": "pbaruth@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "1962-02-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-25T06:15:38.026959+00:00",
+    "updated_at": "2025-05-23T14:26:04.719526+00:00",
+    "openstates_url": "https://openstates.org/person/phil-baruth-5fs0DisNzKq93ktZrK6U5J/"
+  },
+  {
+    "id": "ocd-person/e8028cf6-fe46-49bf-b8fc-6c9bcd1fa020",
+    "name": "Randy Brock",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Franklin",
+      "division_id": "ocd-division/country:us/state:vt/sldu:franklin"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Brock",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/RBrock.jpg",
+    "email": "rbrock@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "1943-09-28",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 868-2300",
+      "home address": "2396 Highgate Rd. St. Albans, VT 05478-9795"
+    },
+    "created_at": "2018-10-18T16:13:39.881090+00:00",
+    "updated_at": "2025-05-23T14:27:21.643433+00:00",
+    "openstates_url": "https://openstates.org/person/randy-brock-73nNttRVL8gSvOGYW51Nb6/"
+  },
+  {
+    "id": "ocd-person/9a4f5d0d-7c71-4f80-bcf0-da9b4882d0d7",
+    "name": "Richard Westman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Lamoille",
+      "division_id": "ocd-division/country:us/state:vt/sldu:lamoille"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Westman",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/RWestman.jpg",
+    "email": "rawestman@gmail.com",
+    "gender": "Male",
+    "birth_date": "1959-03-13",
+    "death_date": "",
+    "extras": {
+      "home email": "rawestman@gmail.com",
+      "home phone": "(802) 644-2297",
+      "home address": "2439 Iron Gate Rd. Cambridge, VT 05444"
+    },
+    "created_at": "2018-10-18T16:13:40.037603+00:00",
+    "updated_at": "2025-05-23T14:25:48.691484+00:00",
+    "openstates_url": "https://openstates.org/person/richard-westman-4hB5QcauMmLAq4LFqgftn5/"
+  },
+  {
+    "id": "ocd-person/aabafc36-7412-443d-9fbb-f94ed291dcf7",
+    "name": "Rob Plunkett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Bennington",
+      "division_id": "ocd-division/country:us/state:vt/sldu:bennington"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Plunkett",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Robert_Plunkett_2025.jpg",
+    "email": "rplunkett@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:56:40.168948+00:00",
+    "updated_at": "2025-05-23T14:25:36.902790+00:00",
+    "openstates_url": "https://openstates.org/person/rob-plunkett-5CA9BABxyM75KMgnrcNKkx/"
+  },
+  {
+    "id": "ocd-person/ec8b2fa8-32e3-43ef-a8e9-101958b5d652",
+    "name": "Russ Ingalls",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Essex",
+      "division_id": "ocd-division/country:us/state:vt/sldu:essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Russ",
+    "family_name": "Ingalls",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Ingalls,%20Russ.jpg",
+    "email": "ringalls@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 323-4756",
+      "state email": "ringalls@leg.state.vt.us",
+      "home address": "99 Farrant Pt. Newport, VT 05855"
+    },
+    "created_at": "2021-01-08T00:19:20.730841+00:00",
+    "updated_at": "2025-05-23T14:27:31.406369+00:00",
+    "openstates_url": "https://openstates.org/person/russ-ingalls-7CLnRHxXuLoyK7P0G1Ytzm/"
+  },
+  {
+    "id": "ocd-person/84f2c6bd-5fe7-486c-b2ad-555bf69654e8",
+    "name": "Ruth Hardy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Addison",
+      "division_id": "ocd-division/country:us/state:vt/sldu:addison"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Ruth",
+    "family_name": "Hardy",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Hardy.Ruth.jpg",
+    "email": "rhardy@leg.state.vt.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:19:45.504586+00:00",
+    "updated_at": "2025-05-23T14:26:30.820450+00:00",
+    "openstates_url": "https://openstates.org/person/ruth-hardy-42rw2xVEJZMfG6vNvF10ae/"
+  },
+  {
+    "id": "ocd-person/a7824782-070e-47c0-992e-2a508f3da243",
+    "name": "Sam Douglass",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Orleans",
+      "division_id": "ocd-division/country:us/state:vt/sldu:orleans"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Douglass",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Samuel_Douglass.png",
+    "email": "sdouglass@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:58:22.066900+00:00",
+    "updated_at": "2025-05-23T14:25:59.254765+00:00",
+    "openstates_url": "https://openstates.org/person/sam-douglass-565FthUZipHo5jt8cUwJfv/"
+  },
+  {
+    "id": "ocd-person/d626c3d1-769d-456c-a073-f1efb326fe1d",
+    "name": "Scott Beck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Caledonia",
+      "division_id": "ocd-division/country:us/state:vt/sldu:caledonia"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Beck",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Beck,Scott%20008.jpg",
+    "email": "sbeck@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "1968-04-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:41.185401+00:00",
+    "updated_at": "2025-05-23T14:27:16.417722+00:00",
+    "openstates_url": "https://openstates.org/person/scott-beck-6W64Ysk0BMZoYfiNdvZp41/"
+  },
+  {
+    "id": "ocd-person/28f82298-2bd5-4f82-9e4a-3e2261f0062c",
+    "name": "Seth Bongartz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Bennington",
+      "division_id": "ocd-division/country:us/state:vt/sldu:bennington"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Seth",
+    "family_name": "Bongartz",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Bongartz,Seth%20031.jpg",
+    "email": "sbongartz@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 362-1488",
+      "state email": "sbongartz@leg.state.vt.us",
+      "home address": "P.O. Box 1407 Manchester Center, VT 05255"
+    },
+    "created_at": "2021-01-08T00:19:30.236027+00:00",
+    "updated_at": "2025-05-23T14:27:30.533018+00:00",
+    "openstates_url": "https://openstates.org/person/seth-bongartz-1FJ5eOH9Je6bgacCDz55fY/"
+  },
+  {
+    "id": "ocd-person/0eb14129-49c2-4e33-9abd-34c8802958f1",
+    "name": "Steven Heffernan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Addison",
+      "division_id": "ocd-division/country:us/state:vt/sldu:addison"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Steven",
+    "family_name": "Heffernan",
+    "image": "https://addisonindymediaoffload.s3.amazonaws.com/wp-content/uploads/2024/07/11101738/Steven-Hefernan_4455-619x1024.jpg",
+    "email": "sheffernan@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:00:29.531973+00:00",
+    "updated_at": "2025-01-23T16:53:01.854654+00:00",
+    "openstates_url": "https://openstates.org/person/steven-heffernan-RitgOsaGdcvMCHBPSkrFB/"
+  },
+  {
+    "id": "ocd-person/3c832fcc-6a3b-415d-9db8-25b87719082c",
+    "name": "Tanya Vyhovsky",
+    "party": "Democratic/Progressive",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Chittenden Central",
+      "division_id": "ocd-division/country:us/state:vt/sldu:chittenden-central"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Tanya",
+    "family_name": "Vyhovsky",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Vyhovsky,Tanya.jpg",
+    "email": "tvyhovsky@leg.state.vt.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home phone": "(802) 316-8329",
+      "state email": "tvyhovsky@leg.state.vt.us",
+      "home address": "50 Saybrook Rd Essex, VT 05452"
+    },
+    "created_at": "2021-01-08T00:19:20.638250+00:00",
+    "updated_at": "2025-05-23T14:25:32.027285+00:00",
+    "openstates_url": "https://openstates.org/person/tanya-vyhovsky-1qBUVgfuH2YkwcLeBkHknU/"
+  },
+  {
+    "id": "ocd-person/ba524e3d-a578-4498-8226-6e947840c69f",
+    "name": "Terry Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Rutland",
+      "division_id": "ocd-division/country:us/state:vt/sldu:rutland"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Williams",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Williams,Terry.jpg",
+    "email": "tkwilliams@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "state email": "tkwilliams@leg.state.vt.us",
+      "home address": "319 Ruby Rd Poultney, VT 05764"
+    },
+    "created_at": "2023-02-14T20:03:42.221612+00:00",
+    "updated_at": "2025-05-23T14:27:19.898172+00:00",
+    "openstates_url": "https://openstates.org/person/terry-williams-5faBZHDj8T1Zn5XSg6kdFn/"
+  },
+  {
+    "id": "ocd-person/c3b03c7d-9be1-4da5-994a-aa2980ae35b1",
+    "name": "Thomas Chittenden",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Chittenden Southeast",
+      "division_id": "ocd-division/country:us/state:vt/sldu:chittenden-southeast"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Thomas",
+    "family_name": "Chittenden",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Chittenden,%20Thomas.jpg",
+    "email": "tchittenden@leg.state.vt.us",
+    "gender": "Male",
+    "birth_date": "1977-10-08",
+    "death_date": "",
+    "extras": {
+      "state email": "tchittenden@leg.state.vt.us",
+      "home address": "S. Burlington, VT 05403"
+    },
+    "created_at": "2021-01-08T00:19:31.928074+00:00",
+    "updated_at": "2025-05-23T14:25:49.543275+00:00",
+    "openstates_url": "https://openstates.org/person/thomas-chittenden-5xG2j1weHO9La7IxqBYNIP/"
+  },
+  {
+    "id": "ocd-person/5d4b135e-4bed-4f7f-960a-250691fca6a8",
+    "name": "Wendy Harrison",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "Windham",
+      "division_id": "ocd-division/country:us/state:vt/sldu:windham"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:vt/government",
+      "name": "Vermont",
+      "classification": "state"
+    },
+    "given_name": "Wendy",
+    "family_name": "Harrison",
+    "image": "https://legislature.vermont.gov/Documents/Legislators/Harrison,Wendy.jpg",
+    "email": "wharrison@leg.state.vt.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "state email": "wharrison@leg.state.vt.us",
+      "home address": "115 State Street Montpelier, VT 05633"
+    },
+    "created_at": "2023-02-14T20:04:33.521965+00:00",
+    "updated_at": "2025-05-23T14:26:12.554289+00:00",
+    "openstates_url": "https://openstates.org/person/wendy-harrison-2q2axKplZdLeMA6TLvMwTw/"
+  }
+]

@@ -1,0 +1,1090 @@
+[
+  {
+    "id": "ocd-person/9dbec823-aab4-40bb-a26a-e51a896dcc1f",
+    "name": "Alana DiMario",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ri/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Alana",
+    "family_name": "DiMario",
+    "image": "https://www.rilegislature.gov/senators/pictures/dimario.jpg",
+    "email": "sen-dimario@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1978-09-23",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Charlestown, New Shoreham, South Kingstown, Westerly"
+    },
+    "created_at": "2021-01-07T06:16:23.560338+00:00",
+    "updated_at": "2026-04-25T02:09:38.243376+00:00",
+    "openstates_url": "https://openstates.org/person/alana-dimario-4neyw7Bo6ah9kqpoD56Zjj/"
+  },
+  {
+    "id": "ocd-person/a857e27b-7ced-43ad-bd08-a954e5f781ac",
+    "name": "Ana Quezada",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ri/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Ana",
+    "family_name": "Quezada",
+    "image": "http://www.rilegislature.gov/senators/pictures/quezada.jpg",
+    "email": "sen-quezada@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2018-10-18T16:11:40.766804+00:00",
+    "updated_at": "2026-04-25T02:09:22.282982+00:00",
+    "openstates_url": "https://openstates.org/person/ana-quezada-57esD0fT3COEWp1BAp0F5A/"
+  },
+  {
+    "id": "ocd-person/89fadd1c-b02c-45aa-b008-bf31d3fea4a1",
+    "name": "Andrew Dimitri",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ri/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Dimitri",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/830447/830447.jpg",
+    "email": "sen-dimitri@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:07:21.224173+00:00",
+    "updated_at": "2026-04-25T02:08:53.979168+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-dimitri-4CMaoi1iqhGDTrOIx4wQNN/"
+  },
+  {
+    "id": "ocd-person/01ddc920-772c-4098-b9f8-8704783940e5",
+    "name": "Bob Britto",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ri/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Britto",
+    "image": "https://www.rilegislature.gov/senators/Pictures/Britto%202023.jpg",
+    "email": "sen-britto@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1963-07-01",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cranston"
+    },
+    "created_at": "2023-01-11T22:44:11.465201+00:00",
+    "updated_at": "2026-04-25T02:09:07.104928+00:00",
+    "openstates_url": "https://openstates.org/person/bob-britto-3WLcDmt7ygwxpqWPZ4oXl/"
+  },
+  {
+    "id": "ocd-person/177cd512-2835-4b9b-b77c-60fe178ec26e",
+    "name": "Brian Thompson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ri/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Thompson",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/830443/830443.jpg",
+    "email": "sen-thompson@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:07:10.935799+00:00",
+    "updated_at": "2025-03-13T07:59:56.994668+00:00",
+    "openstates_url": "https://openstates.org/person/brian-thompson-iJs48kSRPQRAWIh1qjxOw/"
+  },
+  {
+    "id": "ocd-person/80931d0d-c52e-492a-8b92-c191aa00c03f",
+    "name": "Bridget Valverde",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ri/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Bridget",
+    "family_name": "Valverde",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/valverde.jpg",
+    "email": "sen-valverde@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1982-10-23",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "South Kingstown"
+    },
+    "created_at": "2019-01-05T04:47:25.477063+00:00",
+    "updated_at": "2026-04-25T02:09:31.651867+00:00",
+    "openstates_url": "https://openstates.org/person/bridget-valverde-3ucFQngcsgzZdeaTCpKtw7/"
+  },
+  {
+    "id": "ocd-person/63bb0194-1993-4149-b39d-23f229c3040e",
+    "name": "David Tikoian",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ri/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Tikoian",
+    "image": "https://www.rilegislature.gov/senators/Pictures/Tikoian%202023.jpg",
+    "email": "sen-tikoian@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1968-07-09",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warwick"
+    },
+    "created_at": "2023-01-11T22:44:14.371199+00:00",
+    "updated_at": "2026-04-25T02:09:01.979498+00:00",
+    "openstates_url": "https://openstates.org/person/david-tikoian-32BhY8McJ5X1CJcrNryIve/"
+  },
+  {
+    "id": "ocd-person/b747e057-fdd2-480a-beb9-c4ef37ae1e12",
+    "name": "Dawn Euer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ri/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Dawn",
+    "family_name": "Euer",
+    "image": "http://www.rilegislature.gov/senators/pictures/euer.jpg",
+    "email": "sen-euer@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1979-06-14",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence, Johnston"
+    },
+    "created_at": "2018-10-18T16:11:42.169564+00:00",
+    "updated_at": "2026-04-25T02:08:52.660898+00:00",
+    "openstates_url": "https://openstates.org/person/dawn-euer-5ZqRUV9Tlodaxt8xbKfwbS/"
+  },
+  {
+    "id": "ocd-person/6913b936-2e96-414a-80d6-6518f5accb7e",
+    "name": "Elaine Morgan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ri/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Elaine",
+    "family_name": "Morgan",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/morgan.jpg",
+    "email": "sen-morgan@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "South Kingstown, Narragansett"
+    },
+    "created_at": "2018-10-18T16:11:42.761208+00:00",
+    "updated_at": "2026-04-25T02:08:56.333143+00:00",
+    "openstates_url": "https://openstates.org/person/elaine-morgan-3CHCtVxsO92uPWQVW3qBzy/"
+  },
+  {
+    "id": "ocd-person/d688b16c-5bf2-41df-b1c9-e8c5de7e437c",
+    "name": "Frank Ciccone",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ri/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Frank",
+    "family_name": "Ciccone",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/ciccone.jpg",
+    "email": "sen-ciccone@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1947-10-10",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2018-10-18T16:11:43.057780+00:00",
+    "updated_at": "2026-04-25T02:09:45.484800+00:00",
+    "openstates_url": "https://openstates.org/person/frank-ciccone-6WopGWBQIekJUANOtPJsrs/"
+  },
+  {
+    "id": "ocd-person/961061c2-4ce9-4ac4-85c4-28b20c800e9d",
+    "name": "Gordon Rogers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ri/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Gordon",
+    "family_name": "Rogers",
+    "image": "https://www.rilegislature.gov/LegislationPictures/gordon_rogers.jpg",
+    "email": "sen-rogers@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1964-12-22",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warwick"
+    },
+    "created_at": "2019-01-05T04:47:24.533813+00:00",
+    "updated_at": "2025-03-13T07:59:41.352187+00:00",
+    "openstates_url": "https://openstates.org/person/gordon-rogers-4ZAKnz3n5Xj1MRh7g9vzzR/"
+  },
+  {
+    "id": "ocd-person/75750ad6-0bec-4d81-8561-85036c0d99df",
+    "name": "Hanna Gallo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ri/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Hanna",
+    "family_name": "Gallo",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/gallo.jpg",
+    "email": "sen-gallo@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1956-11-21",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "West Warwick, Coventry"
+    },
+    "created_at": "2018-10-18T16:11:43.583087+00:00",
+    "updated_at": "2026-04-25T02:09:09.953630+00:00",
+    "openstates_url": "https://openstates.org/person/hanna-gallo-3ZdacqWnrZn3eM2z0RZ14B/"
+  },
+  {
+    "id": "ocd-person/e9b6ecf5-de39-4026-83fa-3766ed43cc49",
+    "name": "Jake Bissaillon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ri/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jake",
+    "family_name": "Bissaillon",
+    "image": "https://images.squarespace-cdn.com/content/v1/62d5679913ecdf027fe552fe/d50030ca-d566-4d1d-a60a-8f2ddb95b187/Jake+Bissaillon+Cropped+background.jpg",
+    "email": "sen-bissaillon@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1987-04-06",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2024-01-05T00:29:58.802670+00:00",
+    "updated_at": "2026-04-25T02:09:26.891744+00:00",
+    "openstates_url": "https://openstates.org/person/jake-bissaillon-770oBSWpEWrps6PfoYBgM5/"
+  },
+  {
+    "id": "ocd-person/03fdc4f3-715d-4f83-ab31-1a63f86a4dcf",
+    "name": "Jessica de la Cruz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ri/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jessica",
+    "family_name": "de la Cruz",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/de%20la%20cruz%20NEW%202022.jpg",
+    "email": "sen-delacruz@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1981-07-20",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warwick"
+    },
+    "created_at": "2019-01-05T04:47:29.992874+00:00",
+    "updated_at": "2026-04-25T02:09:20.570388+00:00",
+    "openstates_url": "https://openstates.org/person/jessica-de-la-cruz-7WwtOAm47r8TYoCowbym7/"
+  },
+  {
+    "id": "ocd-person/a5f646b2-0370-494c-aebc-25869f019a1b",
+    "name": "John Burke",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ri/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Burke",
+    "image": "https://www.rilegislature.gov/senators/pictures/burke.jpg",
+    "email": "sen-burke@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1960-07-31",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2021-01-07T06:16:29.268016+00:00",
+    "updated_at": "2026-04-25T02:09:55.860688+00:00",
+    "openstates_url": "https://openstates.org/person/john-burke-53AHVoQIyJ9zoRJI6xy4jL/"
+  },
+  {
+    "id": "ocd-person/23ac0ada-a340-4539-a4c9-33e4c437add6",
+    "name": "Jonathon Acosta",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ri/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jonathon",
+    "family_name": "Acosta",
+    "image": "https://d2gjqh9j26unp0.cloudfront.net/profilepic/35446a34e894fdf32e04c9a2069c7915",
+    "email": "sen-acosta@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1989-11-03",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cranston"
+    },
+    "created_at": "2021-01-07T06:16:25.497003+00:00",
+    "updated_at": "2026-04-25T02:10:04.211173+00:00",
+    "openstates_url": "https://openstates.org/person/jonathon-acosta-15JM0m5B4YkkZbV999trdO/"
+  },
+  {
+    "id": "ocd-person/5ab817c5-d86c-4bf0-9a8f-78ca20cdc56b",
+    "name": "Lammis Vargas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ri/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Lammis",
+    "family_name": "Vargas",
+    "image": "https://lammisvargas.com/wp-content/uploads/2024/07/Lammis-Headshot-1536x1536.jpg",
+    "email": "sen-vargas@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:07:37.436226+00:00",
+    "updated_at": "2026-04-25T02:09:08.554825+00:00",
+    "openstates_url": "https://openstates.org/person/lammis-vargas-2lBRHkfR2pLjBpO0zh4D9P/"
+  },
+  {
+    "id": "ocd-person/825b006a-e38e-4f0c-81b7-4df73e2a90fa",
+    "name": "Linda Ujifusa",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ri/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Linda",
+    "family_name": "Ujifusa",
+    "image": "https://www.rilegislature.gov/senators/Pictures/Ujifusa%20FINAL.jpg",
+    "email": "sen-ujifusa@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2023-01-11T22:44:13.616636+00:00",
+    "updated_at": "2026-04-25T02:09:34.033441+00:00",
+    "openstates_url": "https://openstates.org/person/linda-ujifusa-3xyabNfWdDboePwPnopvxa/"
+  },
+  {
+    "id": "ocd-person/e676d270-0470-40c2-ab57-e8ced3471005",
+    "name": "Lori Urso",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ri/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Lori",
+    "family_name": "Urso",
+    "image": "https://rhodeislandcurrent.com/wp-content/uploads/2024/09/1-Lori-Urso-09.24-1024x776.jpg",
+    "email": "sen-urso@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:06:29.653831+00:00",
+    "updated_at": "2026-04-25T02:09:09.152277+00:00",
+    "openstates_url": "https://openstates.org/person/lori-urso-70sXIJX1W9bNv5OEvTNbjJ/"
+  },
+  {
+    "id": "ocd-person/71da5365-46a9-4f2c-abc8-308bde2577ec",
+    "name": "Lou DiPalma",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ri/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Lou",
+    "family_name": "DiPalma",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/dipalma.jpg",
+    "email": "sen-dipalma@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1961-04-20",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2018-10-18T16:11:45.733559+00:00",
+    "updated_at": "2025-03-13T07:59:54.463850+00:00",
+    "openstates_url": "https://openstates.org/person/lou-dipalma-3SpuIkGRVOKT1fnWytJo9U/"
+  },
+  {
+    "id": "ocd-person/ef7ddd55-3351-4ca9-adfc-aef71505ec95",
+    "name": "Lou Raptakis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ri/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Lou",
+    "family_name": "Raptakis",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/raptakis.jpg",
+    "email": "sen-raptakis@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1959-11-18",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "South Kingstown, Narragansett "
+    },
+    "created_at": "2018-10-18T16:11:45.622450+00:00",
+    "updated_at": "2026-04-25T02:09:37.525929+00:00",
+    "openstates_url": "https://openstates.org/person/lou-raptakis-7HugYc79xrjLJG32Kc21BN/"
+  },
+  {
+    "id": "ocd-person/580b2e15-faff-4b83-bbea-fb6110a9f975",
+    "name": "Mark McKenney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ri/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "McKenney",
+    "image": "https://www.rilegislature.gov/senators/Pictures/McKenney%202023.jpg",
+    "email": "sen-mckenney@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1956-10-09",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "East Greenwich, West Greenwich"
+    },
+    "created_at": "2023-01-11T22:44:14.547164+00:00",
+    "updated_at": "2026-04-25T02:08:51.765037+00:00",
+    "openstates_url": "https://openstates.org/person/mark-mckenney-2g8QuWY3KUzW1J9HCI4chp/"
+  },
+  {
+    "id": "ocd-person/57b194bd-2b6a-46b8-a7b4-35b629bb0b04",
+    "name": "Matt LaMountain",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ri/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "LaMountain",
+    "image": "https://www.rilegislature.gov/senators/Pictures/LaMountain%202023.jpg",
+    "email": "sen-lamountain@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1985-02-19",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "North Kingstown, Exeter "
+    },
+    "created_at": "2023-01-11T22:44:14.252987+00:00",
+    "updated_at": "2026-04-25T02:09:00.072566+00:00",
+    "openstates_url": "https://openstates.org/person/matt-lamountain-2fTUCmfMH3YVLjcK3Xh6hg/"
+  },
+  {
+    "id": "ocd-person/2cd8c21d-f576-4060-a311-0459e01ffef6",
+    "name": "Meghan Kallman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ri/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Meghan",
+    "family_name": "Kallman",
+    "image": "https://www.rilegislature.gov/senators/pictures/kallman.jpg",
+    "email": "sen-kallman@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1983-11-18",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cranston"
+    },
+    "created_at": "2021-01-07T06:16:28.076457+00:00",
+    "updated_at": "2026-04-25T02:10:02.835492+00:00",
+    "openstates_url": "https://openstates.org/person/meghan-kallman-1MciiGbU0dAV3b97SpHous/"
+  },
+  {
+    "id": "ocd-person/e7d41b59-5619-4a67-a1ec-221fdc24e6c3",
+    "name": "Melissa Murray",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ri/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Melissa",
+    "family_name": "Murray",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/murray.jpg",
+    "email": "sen-murray@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1974-10-03",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warwick, East Greenwich"
+    },
+    "created_at": "2019-01-05T04:47:24.673777+00:00",
+    "updated_at": "2026-04-25T02:08:55.528860+00:00",
+    "openstates_url": "https://openstates.org/person/melissa-murray-73S9xRuvwe6RuB7U4MMgC3/"
+  },
+  {
+    "id": "ocd-person/c5991f11-e719-473e-93c4-cfc52fae3e6d",
+    "name": "Pam Lauria",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ri/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Pam",
+    "family_name": "Lauria",
+    "image": "https://www.rilegislature.gov/senators/Pictures/Lauria%202023.jpg",
+    "email": "sen-lauria@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1970-02-18",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "North Kingstown"
+    },
+    "created_at": "2023-01-11T22:44:09.006356+00:00",
+    "updated_at": "2026-04-25T02:08:53.379556+00:00",
+    "openstates_url": "https://openstates.org/person/pam-lauria-60rSpkmgKyXhKp0iXDmUiT/"
+  },
+  {
+    "id": "ocd-person/66e402e8-4f13-44f3-b029-7d1c3aab99b7",
+    "name": "Pete Appollonio",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ri/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Pete",
+    "family_name": "Appollonio",
+    "image": "https://www.rilegislature.gov/LegislationPictures/peter_appollonio.jpg",
+    "email": "sen-appollonio@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:07:43.159091+00:00",
+    "updated_at": "2026-04-25T02:09:04.756854+00:00",
+    "openstates_url": "https://openstates.org/person/pete-appollonio-389Pxzu0MSlMKtxE9sMyXv/"
+  },
+  {
+    "id": "ocd-person/1378a3d6-95fe-4a21-8fcb-11fefdb97d84",
+    "name": "Ryan Pearson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ri/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Pearson",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/pearson.jpg",
+    "email": "sen-pearson@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1988-06-30",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warwick, Cranston"
+    },
+    "created_at": "2018-10-18T16:11:47.796732+00:00",
+    "updated_at": "2025-03-13T08:00:10.089191+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-pearson-ajzBQTgcjw14IYHQPJC5c/"
+  },
+  {
+    "id": "ocd-person/8d466b6a-ea53-46bb-aa86-3131ac76533f",
+    "name": "Sam Bell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ri/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Bell",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/bell.jpg",
+    "email": "sen-bell@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1989-07-07",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2019-01-05T04:47:23.456718+00:00",
+    "updated_at": "2026-04-25T02:09:16.234965+00:00",
+    "openstates_url": "https://openstates.org/person/sam-bell-4Ia6CDRHV5E5KX76rlZ2fH/"
+  },
+  {
+    "id": "ocd-person/3a4fd015-1c56-4d7b-9e57-1a2a6b9b4c9b",
+    "name": "Sam Zurier",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ri/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Zurier",
+    "image": "https://www.rilegislature.gov/senators/Pictures/Zurier-2022.jpg?csf=1&e=5y4LAP",
+    "email": "sen-zurier@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2021-12-16T19:11:25.465988+00:00",
+    "updated_at": "2026-04-25T02:09:59.315050+00:00",
+    "openstates_url": "https://openstates.org/person/sam-zurier-1m21pV57ffpQsJSpt3nZhT/"
+  },
+  {
+    "id": "ocd-person/a2ff0de0-40d1-4ac1-a347-e1e9dedb6d30",
+    "name": "Stefano Famiglietti",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ri/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Stefano",
+    "family_name": "Famiglietti",
+    "image": "https://www.rilegislature.gov/LegislationPictures/stefano_famiglietti.jpg",
+    "email": "sen-famiglietti@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:11:13.371117+00:00",
+    "updated_at": "2026-04-25T02:09:03.324340+00:00",
+    "openstates_url": "https://openstates.org/person/stefano-famiglietti-4xZJeoHcecKU8dWHqOkUG8/"
+  },
+  {
+    "id": "ocd-person/c5757781-d437-4b9b-b7a1-9bb96c9b74ab",
+    "name": "Sue Sosnowski",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ri/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Sue",
+    "family_name": "Sosnowski",
+    "image": "http://www.rilegislature.gov/Senators/Pictures/sosnowski.jpg",
+    "email": "sen-sosnowski@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1955-12-20",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Westerly"
+    },
+    "created_at": "2018-10-18T16:11:48.764226+00:00",
+    "updated_at": "2026-04-25T02:09:19.312742+00:00",
+    "openstates_url": "https://openstates.org/person/sue-sosnowski-60bAaxWiPTFtpXAYZiZtOt/"
+  },
+  {
+    "id": "ocd-person/285c33e3-5c40-44d8-9c16-22e49b6a0a81",
+    "name": "Thomas Paolino",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ri/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Thomas",
+    "family_name": "Paolino",
+    "image": "https://www.rilegislature.gov/senators/Pictures/Paolino%202022.jpg",
+    "email": "sen-paolino@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cranston"
+    },
+    "created_at": "2018-10-18T16:11:48.611725+00:00",
+    "updated_at": "2026-04-25T02:09:40.586635+00:00",
+    "openstates_url": "https://openstates.org/person/thomas-paolino-1E9pRqgcUTO3maM3h37KK1/"
+  },
+  {
+    "id": "ocd-person/b3d5296c-05df-46f5-9a93-4caf96121a84",
+    "name": "Tiara Mack",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ri/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Tiara",
+    "family_name": "Mack",
+    "image": "https://media3.s-nbcnews.com/j/newscms/2020_47/3429284/201118-MAIN-tiara-mack-benjamin-branchaud-ew-1140a_41fc9dcc361b3077b5b335fab1dc4a55.fit-760w.jpg",
+    "email": "sen-mack@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1993-12-21",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence, North Providence"
+    },
+    "created_at": "2021-01-07T06:16:30.081168+00:00",
+    "updated_at": "2026-04-25T02:09:30.085469+00:00",
+    "openstates_url": "https://openstates.org/person/tiara-mack-5TL2aTc0uqViQ0SHFT00ou/"
+  },
+  {
+    "id": "ocd-person/9f4a0209-d8b0-42e5-9217-d4fd2f0d67e6",
+    "name": "Todd Patalano",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ri/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Patalano",
+    "image": "https://rilegislature.gov/LegislationPictures/todd_patalano.jpg",
+    "email": "sen-patalano@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:07:22.444454+00:00",
+    "updated_at": "2026-04-25T02:09:14.113830+00:00",
+    "openstates_url": "https://openstates.org/person/todd-patalano-4qZbJ1lgcNmAGzGMAw9NSg/"
+  },
+  {
+    "id": "ocd-person/bfb76f36-00b6-47da-89da-e1db5421ff55",
+    "name": "Val Lawson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ri/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Val",
+    "family_name": "Lawson",
+    "image": "https://www.rilegislature.gov/LegislationPictures/valarie_lawson.jpg",
+    "email": "sen-lawson@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1966-08-14",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cranston, Providence"
+    },
+    "created_at": "2019-01-05T04:47:29.750574+00:00",
+    "updated_at": "2026-04-25T02:09:56.658220+00:00",
+    "openstates_url": "https://openstates.org/person/val-lawson-5plMa3Gi4A8siPVMDDhj7N/"
+  },
+  {
+    "id": "ocd-person/afeed427-2ef1-4197-840d-7ab06883e186",
+    "name": "Victoria Gu",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ri/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Victoria",
+    "family_name": "Gu",
+    "image": "https://www.rilegislature.gov/senators/Pictures/Gu%202023.jpg",
+    "email": "sen-gu@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Hopkinton, Westerly"
+    },
+    "created_at": "2023-01-11T22:44:11.081359+00:00",
+    "updated_at": "2026-04-25T02:09:12.259590+00:00",
+    "openstates_url": "https://openstates.org/person/victoria-gu-5LynjrbsPsYduPTbRVWjpe/"
+  },
+  {
+    "id": "ocd-person/037e3b02-7f48-4cab-bb04-2524aa9a883d",
+    "name": "Walter Felag",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ri/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Walter",
+    "family_name": "Felag",
+    "image": "https://www.rilegislature.gov/senators/Pictures/Felag%202023.jpg",
+    "email": "sen-felag@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1954-02-15",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2018-10-18T16:11:48.843449+00:00",
+    "updated_at": "2025-03-29T02:08:16.232026+00:00",
+    "openstates_url": "https://openstates.org/person/walter-felag-6afCH6GvPKcw4Yk0rfn3t/"
+  }
+]

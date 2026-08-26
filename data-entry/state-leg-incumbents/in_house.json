@@ -1,0 +1,3364 @@
+[
+  {
+    "id": "ocd-person/3564d02c-d1d7-4c46-87b7-dbc1c5f1dc14",
+    "name": "Alaina Shonkwiler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:in/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Alaina",
+    "family_name": "Shonkwiler",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/157746.jpg",
+    "email": "h29@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:08:54.223642+00:00",
+    "updated_at": "2026-02-13T12:43:17.453978+00:00",
+    "openstates_url": "https://openstates.org/person/alaina-shonkwiler-1ckfEaA8zJfwPqj6ktRvca/"
+  },
+  {
+    "id": "ocd-person/ea9905ae-ca94-4184-853c-d7d622dd46ee",
+    "name": "Alex Burton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:in/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Burton",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AlexBurton2024.jpeg",
+    "email": "h77@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:08:22.936921+00:00",
+    "updated_at": "2026-02-13T12:43:08.692895+00:00",
+    "openstates_url": "https://openstates.org/person/alex-burton-78g8QE2rw4jFQmO7Appw3q/"
+  },
+  {
+    "id": "ocd-person/7daef9db-7675-4d8e-8e78-b943a24fd5b7",
+    "name": "Alex Zimmerman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:in/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Zimmerman",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Zimmerman_Edited_Headshot.jpg",
+    "email": "h67@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Zack Lamberta",
+      "assistant email": "h67@iga.in.gov",
+      "assistant phone1": "317-232-9643",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Charles Melton",
+      "press contact email": "charles.melton@iga.in.gov",
+      "press contact phone": "317-232-9659"
+    },
+    "created_at": "2024-01-03T20:53:45.921775+00:00",
+    "updated_at": "2026-02-13T12:43:36.239306+00:00",
+    "openstates_url": "https://openstates.org/person/alex-zimmerman-3pA0Jisy4zw1eNI0xrHwgx/"
+  },
+  {
+    "id": "ocd-person/27343a14-0487-4a7a-8ddd-1e0991c4a694",
+    "name": "Andrew Ireland",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:in/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Ireland",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/157749.jpg",
+    "email": "h90@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:09:35.696267+00:00",
+    "updated_at": "2026-02-13T12:42:08.970711+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-ireland-1ByZFIx6OK6piEgvVnUo1E/"
+  },
+  {
+    "id": "ocd-person/a8ed53f7-00fb-428b-a629-7532efaf902d",
+    "name": "Beau Baird",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:in/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Beau",
+    "family_name": "Baird",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Baird_Main_List.jpg",
+    "email": "h44@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Veda Amor",
+      "assistant email": "h44@iga.in.gov",
+      "assistant phone1": "317-232-9833",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Wade Coggeshall",
+      "press contact email": "wade.coggeshall@iga.in.gov",
+      "press contact phone": "317-232-9693"
+    },
+    "created_at": "2019-01-02T10:40:11.511686+00:00",
+    "updated_at": "2026-02-13T12:42:51.247836+00:00",
+    "openstates_url": "https://openstates.org/person/beau-baird-58lAXy5zzirLh51OAfprjx/"
+  },
+  {
+    "id": "ocd-person/172ba652-d80a-45cd-a387-f072925561f7",
+    "name": "Becky Cash",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:in/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Becky",
+    "family_name": "Cash",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Cash_Main_list.jpg",
+    "email": "h25@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Zack Lamberta",
+      "assistant email": "h25@iga.in.gov",
+      "assistant phone1": "317-232-9643",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Abrahm Hurt",
+      "press contact email": "abrahm.hurt@iga.in.gov",
+      "press contact phone": "317-234-9024"
+    },
+    "created_at": "2023-01-20T02:01:01.904901+00:00",
+    "updated_at": "2026-02-13T12:43:06.185115+00:00",
+    "openstates_url": "https://openstates.org/person/becky-cash-hilpbgb4Lp21O5gE2HvDL/"
+  },
+  {
+    "id": "ocd-person/ea2c35cb-7071-43de-8dc6-e91756d03f11",
+    "name": "Ben Smaltz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:in/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Smaltz",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Smaltz_main_list2023.png",
+    "email": "h52@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1970-01-17",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Kevin Todd",
+      "assistant email": "h52@iga.in.gov",
+      "assistant phone1": "317-234-9450",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kylie Glatfelter",
+      "press contact email": "kylie.glatfelter@iga.in.gov",
+      "press contact phone": "317-234-9006"
+    },
+    "created_at": "2018-10-18T14:43:56.503000+00:00",
+    "updated_at": "2026-02-13T12:41:57.407007+00:00",
+    "openstates_url": "https://openstates.org/person/ben-smaltz-77sPKfbARg321NHjxJGYlN/"
+  },
+  {
+    "id": "ocd-person/5fd5f8d8-b47c-4b69-ba1a-d89f0fb106a7",
+    "name": "Blake Johnson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:in/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Blake",
+    "family_name": "Johnson",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/johnson_2020_blake_web_800_999_80.jpg",
+    "email": "h100@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Anne Hancock",
+      "assistant phone1": "317-232-9976",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2020-11-19T06:06:46.875441+00:00",
+    "updated_at": "2026-02-13T12:42:24.156141+00:00",
+    "openstates_url": "https://openstates.org/person/blake-johnson-2uq3VRTy2zWHZACuoL4rG3/"
+  },
+  {
+    "id": "ocd-person/3d215bfb-c08a-47f0-91d3-eb114b33c56d",
+    "name": "Bob Behning",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:in/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Behning",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Behning_lister2021.png",
+    "email": "h91@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1954-01-18",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Evan Chrise",
+      "assistant email": "h91@iga.in.gov",
+      "assistant phone1": "317-232-9753",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Wade Coggeshall",
+      "press contact email": "wade.coggeshall@iga.in.gov",
+      "press contact phone": "317-232-9693"
+    },
+    "created_at": "2018-10-18T14:44:06.857548+00:00",
+    "updated_at": "2026-02-13T12:43:11.479141+00:00",
+    "openstates_url": "https://openstates.org/person/bob-behning-1rLmBWz1mHv4uVCD6xKMZB/"
+  },
+  {
+    "id": "ocd-person/791928fe-00bb-46bf-9b57-36b7a40e0250",
+    "name": "Bob Heaton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:in/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Heaton",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Heaton_Main_List.jpg",
+    "email": "h46@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1956-09-28",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip",
+      "assistant name": "Connor Dollarhite",
+      "assistant email": "h46@iga.in.gov",
+      "assistant phone1": "317-232-9981",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Wade Coggeshall",
+      "press contact email": "wade.coggeshall@iga.in.gov",
+      "press contact phone": "317-232-9693"
+    },
+    "created_at": "2018-10-18T14:44:03.282189+00:00",
+    "updated_at": "2026-04-04T00:45:56.497354+00:00",
+    "openstates_url": "https://openstates.org/person/bob-heaton-3gVZKDKtcWAalaOIu3wx28/"
+  },
+  {
+    "id": "ocd-person/20851625-bc7c-41ed-841e-27af062bc03e",
+    "name": "Bob Morris",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:in/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Morris",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Morris_Main_list.jpg",
+    "email": "h84@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Connor Dollarhite",
+      "assistant email": "h84@iga.in.gov",
+      "assistant phone1": "317-232-9981",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kylie Glatfelter",
+      "press contact email": "kylie.glatfelter@iga.in.gov",
+      "press contact phone": "317-234-9006"
+    },
+    "created_at": "2018-10-18T14:44:11.577216+00:00",
+    "updated_at": "2026-02-13T12:42:15.872851+00:00",
+    "openstates_url": "https://openstates.org/person/bob-morris-zMZex9L24jTdxeRnd6olq/"
+  },
+  {
+    "id": "ocd-person/6629fcea-f482-4e63-872d-d2f8734502ca",
+    "name": "Brad Barrett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:in/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Barrett",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Barrett_mainlist3.png",
+    "email": "h56@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Maggie Crimmins",
+      "assistant email": "h56@iga.in.gov",
+      "assistant phone1": "317-232-9721",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Braden Dunlap",
+      "press contact email": "braden.dunlap@iga.in.gov",
+      "press contact phone": "317-232-9805"
+    },
+    "created_at": "2019-01-02T10:40:47.892583+00:00",
+    "updated_at": "2026-02-13T12:42:46.688527+00:00",
+    "openstates_url": "https://openstates.org/person/brad-barrett-36mPAIIdeouHKCJuEiH630/"
+  },
+  {
+    "id": "ocd-person/fe83212e-72d8-4d9c-80cb-338c7f318f09",
+    "name": "Bruce Borders",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:in/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Bruce",
+    "family_name": "Borders",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Borders_Main_List_2022.jpg",
+    "email": "h45@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Whip",
+      "assistant name": "Evan Chrise",
+      "assistant email": "h45@iga.in.gov",
+      "assistant phone1": "317-232-9753",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Wade Coggeshall",
+      "press contact email": "wade.coggeshall@iga.in.gov",
+      "press contact phone": "317-232-9693"
+    },
+    "created_at": "2018-10-18T14:43:59.761990+00:00",
+    "updated_at": "2026-02-13T12:43:42.025054+00:00",
+    "openstates_url": "https://openstates.org/person/bruce-borders-7kFybLAdrQr73LSnyNVMMb/"
+  },
+  {
+    "id": "ocd-person/ec6a3cce-3eca-4020-8809-a7a1875e1663",
+    "name": "Carey Hamilton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:in/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Carey",
+    "family_name": "Hamilton",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Hamilton_Carey-21_web_800_999_80.jpg",
+    "email": "h87@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Eric Virden",
+      "assistant phone1": "317-233-5248",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:08.904977+00:00",
+    "updated_at": "2026-02-13T12:43:14.097044+00:00",
+    "openstates_url": "https://openstates.org/person/carey-hamilton-7C6jrzTdzOO6VNzkmTRxxr/"
+  },
+  {
+    "id": "ocd-person/16ded3c5-7034-4910-b5d1-76efa7b2f02f",
+    "name": "Carolyn Jackson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:in/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Carolyn",
+    "family_name": "Jackson",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Jackson_Carolyn_web20220118_800_999_80.jpg",
+    "email": "h1@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Hammond, IN",
+      "assistant name": "Christian Garrett",
+      "assistant phone1": "317-234-9041",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2019-01-02T10:40:59.488269+00:00",
+    "updated_at": "2026-02-13T12:42:36.206292+00:00",
+    "openstates_url": "https://openstates.org/person/carolyn-jackson-h9f8a7z4CmyLdjotyPBKJ/"
+  },
+  {
+    "id": "ocd-person/8db4d04c-3afe-44c1-940b-7761cd035800",
+    "name": "Cherrish Pryor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:in/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Cherrish",
+    "family_name": "Pryor",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/pryor20220105portrait_800_1000_80.jpg",
+    "email": "h94@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Moira Kehoe",
+      "assistant phone1": "317-232-9798",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:01.310474+00:00",
+    "updated_at": "2026-02-13T12:43:26.816096+00:00",
+    "openstates_url": "https://openstates.org/person/cherrish-pryor-4JOY6tKidOT5MZr0r3PyiW/"
+  },
+  {
+    "id": "ocd-person/a2b2e61b-e27c-4ead-8c81-6703ea817037",
+    "name": "Chris Campbell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:in/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Campbell",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/banners/campbell_UPDATED_headshot_800_999_80.jpg",
+    "email": "h26@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1963-12-12",
+    "death_date": "",
+    "extras": {
+      "city": "West Lafayette, IN",
+      "assistant name": "Alexis Watts",
+      "assistant phone1": "317-234-3101",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2019-01-02T10:41:38.827009+00:00",
+    "updated_at": "2026-02-13T12:43:33.136000+00:00",
+    "openstates_url": "https://openstates.org/person/chris-campbell-4x0VrjzzG5f7B6utm0m7aZ/"
+  },
+  {
+    "id": "ocd-person/8f56f62b-e700-4fdc-b35a-bba408d3e6cf",
+    "name": "Chris Jeter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:in/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Jeter",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Jeter_Main_List.jpg",
+    "email": "h88@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Lucas White",
+      "assistant email": "h88@iga.in.gov",
+      "assistant phone1": "317-234-0931",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Abrahm Hurt",
+      "press contact email": "abrahm.hurt@iga.in.gov",
+      "press contact phone": "317-234-9024"
+    },
+    "created_at": "2020-11-19T06:06:40.945986+00:00",
+    "updated_at": "2026-02-13T12:42:00.205420+00:00",
+    "openstates_url": "https://openstates.org/person/chris-jeter-4MTdwmczSSBs3cuB0YHWjH/"
+  },
+  {
+    "id": "ocd-person/35824e09-976c-44b7-9825-0787030f0e4e",
+    "name": "Chris Judy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:in/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Judy",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Judy_Main_List_2022.jpg",
+    "email": "h83@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1978-05-24",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Drew Sellers",
+      "assistant email": "h83@iga.in.gov",
+      "assistant phone1": "317-232-9863",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kylie Glatfelter",
+      "press contact email": "kylie.glatfelter@iga.in.gov",
+      "press contact phone": "317-234-9006"
+    },
+    "created_at": "2018-10-18T14:44:16.658408+00:00",
+    "updated_at": "2026-02-13T12:42:12.548084+00:00",
+    "openstates_url": "https://openstates.org/person/chris-judy-1cy8qwcW8xoZYMQC6XABPK/"
+  },
+  {
+    "id": "ocd-person/f1571a79-9c64-42b2-82d2-ec9f512722eb",
+    "name": "Chris May",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:in/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "May",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/May_mainlist2.png",
+    "email": "h65@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Hunter Frost",
+      "assistant email": "h65@iga.in.gov",
+      "assistant phone1": "317-232-9850",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Wade Coggeshall",
+      "press contact email": "wade.coggeshall@iga.in.gov",
+      "press contact phone": "317-232-9693"
+    },
+    "created_at": "2018-10-18T14:44:09.883841+00:00",
+    "updated_at": "2026-02-13T12:42:01.206337+00:00",
+    "openstates_url": "https://openstates.org/person/chris-may-7LOxLO6uSFA9ZF0Gq9vlKF/"
+  },
+  {
+    "id": "ocd-person/17fd494d-905d-4c82-a828-6d975cbf02f3",
+    "name": "Chuck Moseley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:in/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Chuck",
+    "family_name": "Moseley",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Moseley_updated_800_1000_80.jpg",
+    "email": "h10@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Portage, IN",
+      "assistant name": "Anne Hancock",
+      "assistant phone1": "317-232-9976",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:12.801719+00:00",
+    "updated_at": "2026-02-13T12:43:32.194426+00:00",
+    "openstates_url": "https://openstates.org/person/chuck-moseley-jGZgzmiC2YSYVCVoxbZtD/"
+  },
+  {
+    "id": "ocd-person/e3cfa300-8d75-4217-9cc4-371aca7f77dd",
+    "name": "Cindy Ledbetter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:in/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Cindy",
+    "family_name": "Ledbetter",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Ledbetter_lister2021.png",
+    "email": "h75@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Caucus Chair",
+      "assistant name": "Caleb Jackson",
+      "assistant email": "h75@iga.in.gov",
+      "assistant phone1": "317-232-9816",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kendall Macri",
+      "press contact email": "kendall.macri@iga.in.gov",
+      "press contact phone": "317-232-9705"
+    },
+    "created_at": "2020-11-19T06:06:38.169569+00:00",
+    "updated_at": "2026-02-13T12:42:43.792887+00:00",
+    "openstates_url": "https://openstates.org/person/cindy-ledbetter-6vs9Cjs0LkiYfs9hmZZADt/"
+  },
+  {
+    "id": "ocd-person/e4588f99-2084-4b0f-9260-f73a8f6aeb62",
+    "name": "Cory Criswell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:in/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Cory",
+    "family_name": "Criswell",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Rep._Criswell_2023_mainlist.png",
+    "email": "h54@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Hunter Frost",
+      "assistant email": "h54@iga.in.gov",
+      "assistant phone1": "317-232-9850",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Braden Dunlap",
+      "press contact email": "braden.dunlap@iga.in.gov",
+      "press contact phone": "317-232-9805"
+    },
+    "created_at": "2023-01-20T02:03:09.018327+00:00",
+    "updated_at": "2026-02-13T12:43:29.876137+00:00",
+    "openstates_url": "https://openstates.org/person/cory-criswell-6wsipFogvt07p8UaHQsvVi/"
+  },
+  {
+    "id": "ocd-person/006e6bcf-0a2c-4eef-92e3-44714f31aa4e",
+    "name": "Craig Haggard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:in/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Craig",
+    "family_name": "Haggard",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Haggard_mainlist2023.png",
+    "email": "h57@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Birjan Crispin",
+      "assistant email": "h57@iga.in.gov",
+      "assistant phone1": "317-234-9452",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Wade Coggeshall",
+      "press contact email": "wade.coggeshall@iga.in.gov",
+      "press contact phone": "317-232-9693"
+    },
+    "created_at": "2023-01-20T02:03:18.409780+00:00",
+    "updated_at": "2026-02-13T12:43:25.873043+00:00",
+    "openstates_url": "https://openstates.org/person/craig-haggard-oSgDhLTm2GEJhUdd2Jpe/"
+  },
+  {
+    "id": "ocd-person/d9c1cb89-9943-4afd-9353-8c771dcac356",
+    "name": "Craig Snow",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:in/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Craig",
+    "family_name": "Snow",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Snow_mainlist2023.png",
+    "email": "h22@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Maggie Crimmins",
+      "assistant email": "h22@iga.in.gov",
+      "assistant phone1": "317-234-2993",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Matthew Gocken",
+      "press contact email": "matthew.gocken@iga.in.gov",
+      "press contact phone": "317-233-9604"
+    },
+    "created_at": "2020-11-19T06:06:42.160162+00:00",
+    "updated_at": "2026-02-13T12:42:28.842932+00:00",
+    "openstates_url": "https://openstates.org/person/craig-snow-6cttlrv99CLsml1Ihjzpna/"
+  },
+  {
+    "id": "ocd-person/da8afc87-2b9a-4544-8fb9-2f03f426a451",
+    "name": "Dale DeVon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:in/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Dale",
+    "family_name": "DeVon",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/DeVon_Main_List.jpg",
+    "email": "h5@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1958-07-25",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Caleb Jackson",
+      "assistant email": "h5@iga.in.gov",
+      "assistant phone1": "317-232-9816",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Matthew Gocken",
+      "press contact email": "matthew.gocken@iga.in.gov",
+      "press contact phone": "317-233-9604"
+    },
+    "created_at": "2018-10-18T14:44:02.835358+00:00",
+    "updated_at": "2026-02-13T12:43:03.269725+00:00",
+    "openstates_url": "https://openstates.org/person/dale-devon-6eNqLLPSuDejSi7B2AxgzR/"
+  },
+  {
+    "id": "ocd-person/7403f289-e044-47ad-b594-05d174ec486e",
+    "name": "Danny Lopez",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:in/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Lopez",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/30304.jpg",
+    "email": "h39@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:08:17.094127+00:00",
+    "updated_at": "2026-02-13T12:41:53.711721+00:00",
+    "openstates_url": "https://openstates.org/person/danny-lopez-3Wuuf35j3dbkVJoVLAEZlm/"
+  },
+  {
+    "id": "ocd-person/e1599f41-bd7d-45c4-8a43-c25d8b519f53",
+    "name": "Dave Hall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:in/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Hall",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Hall_mainlist_2023.png",
+    "email": "h62@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Drew Sellers",
+      "assistant email": "h62@iga.in.gov",
+      "assistant phone1": "317-232-9863",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Wade Coggeshall",
+      "press contact email": "wade.coggeshall@iga.in.gov",
+      "press contact phone": "317-232-9693"
+    },
+    "created_at": "2023-01-20T02:02:57.141647+00:00",
+    "updated_at": "2026-02-13T12:41:59.205920+00:00",
+    "openstates_url": "https://openstates.org/person/dave-hall-6rEEJu89qglIydnBjZzTKV/"
+  },
+  {
+    "id": "ocd-person/ed771fd3-4bd9-4c99-bb42-4bd9f5d1ff8d",
+    "name": "Dave Heine",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:in/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Heine",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Heine_mainlist4.png",
+    "email": "h85@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1957-01-16",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Kevin Todd",
+      "assistant email": "h85@iga.in.gov",
+      "assistant phone1": "317-234-9450",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kylie Glatfelter",
+      "press contact email": "kylie.glatfelter@iga.in.gov",
+      "press contact phone": "317-234-9006"
+    },
+    "created_at": "2018-10-18T14:44:08.092031+00:00",
+    "updated_at": "2026-02-13T12:42:13.490774+00:00",
+    "openstates_url": "https://openstates.org/person/dave-heine-7E5cWtcTzeE6Qs9qwcZW6H/"
+  },
+  {
+    "id": "ocd-person/a080b584-c899-4694-a797-73cca22610fe",
+    "name": "David Abbott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:in/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Abbott",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Abbott_Main_List_2022.jpg",
+    "email": "h18@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Caucus Chair",
+      "assistant name": "Kyleigh Hindsley",
+      "assistant email": "h18@iga.in.gov",
+      "assistant phone1": "317-234-9452",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kylie Glatfelter",
+      "press contact email": "kylie.glatfelter@iga.in.gov",
+      "press contact phone": "317-234-9006"
+    },
+    "created_at": "2018-10-18T14:44:13.874618+00:00",
+    "updated_at": "2026-02-13T12:42:16.898526+00:00",
+    "openstates_url": "https://openstates.org/person/david-abbott-4srajeSW7Xmv2chHEPZ3Us/"
+  },
+  {
+    "id": "ocd-person/5b58dd7d-acb3-4554-9e4e-c1281155f4ab",
+    "name": "Doug Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:in/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Miller",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Miller_mainlist2.jpg",
+    "email": "h48@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Mason Janowski",
+      "assistant email": "h48@iga.in.gov",
+      "assistant phone1": "317-234-9139",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Matthew Gocken",
+      "press contact email": "matthew.gocken@iga.in.gov",
+      "press contact phone": "317-233-9604"
+    },
+    "created_at": "2018-10-18T14:44:07.017974+00:00",
+    "updated_at": "2026-02-13T12:43:34.156311+00:00",
+    "openstates_url": "https://openstates.org/person/doug-miller-2mMucafGfj0SDh9Vbz1Tz9/"
+  },
+  {
+    "id": "ocd-person/e0aaea95-033f-49d8-9be6-3875fc3b8efe",
+    "name": "Earl Harris",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:in/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Earl",
+    "family_name": "Harris",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Harris_Earl_Jr_2021_web_800_999_80.jpg",
+    "email": "h2@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "East Chicago, IN",
+      "assistant name": "Derion Searcey",
+      "assistant phone1": "317-232-9827",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:10.201208+00:00",
+    "updated_at": "2026-02-13T12:43:46.749318+00:00",
+    "openstates_url": "https://openstates.org/person/earl-harris-6pwOC2UhPtVjW2PqOBilQc/"
+  },
+  {
+    "id": "ocd-person/d01b6bbc-9c5e-4479-afd6-3e7410946367",
+    "name": "Ed Clere",
+    "party": "Independent",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:in/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Clere",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Clere_Main_List.jpg",
+    "email": "h72@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1974-04-16",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Skyler Wood",
+      "assistant email": "h72@iga.in.gov",
+      "assistant phone1": "(317) 232-9769",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Charles Melton",
+      "press contact email": "charles.melton@iga.in.gov",
+      "press contact phone": "317-232-9659"
+    },
+    "created_at": "2018-10-18T14:44:09.570684+00:00",
+    "updated_at": "2026-02-13T12:42:04.622791+00:00",
+    "openstates_url": "https://openstates.org/person/ed-clere-6Kgvza6IgsfWNRc00mXDc7/"
+  },
+  {
+    "id": "ocd-person/45d8ea46-0d3f-4a80-bf4e-ca016bd458a8",
+    "name": "Ed DeLaney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:in/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "DeLaney",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Delaney_0318_2200fix_cropped_800_1039_80.jpg",
+    "email": "h86@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Haley Muench",
+      "assistant phone1": "317-234-9047",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:01.609633+00:00",
+    "updated_at": "2026-02-13T12:43:00.397196+00:00",
+    "openstates_url": "https://openstates.org/person/ed-delaney-27nbGS2ku5KJbd33PB9b2G/"
+  },
+  {
+    "id": "ocd-person/3fbcc2a9-c620-456c-b38f-03e0f9063c3f",
+    "name": "Ed Soliday",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:in/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Soliday",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Soliday_Main_List.jpg",
+    "email": "h4@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1945-04-03",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Kyleigh Hindsley",
+      "assistant email": "h4@iga.in.gov",
+      "assistant phone1": "317-234 - 9452",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kendall Macri",
+      "press contact email": "kendall.macri@iga.in.gov",
+      "press contact phone": "317-232-9824"
+    },
+    "created_at": "2018-10-18T14:43:56.043634+00:00",
+    "updated_at": "2026-02-13T12:43:45.921607+00:00",
+    "openstates_url": "https://openstates.org/person/ed-soliday-1wGmNeAcQpIVKGrYMCd15z/"
+  },
+  {
+    "id": "ocd-person/fafeb171-4592-4254-bb59-788745371b7b",
+    "name": "Elizabeth Rowray",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:in/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Elizabeth",
+    "family_name": "Rowray",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Rowray_MainList2023.png",
+    "email": "h35@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Floor Leader",
+      "assistant name": "Spencer Van Der Weele",
+      "assistant email": "h35@iga.in.gov",
+      "assistant phone1": "317-232-9676",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Braden Dunlap",
+      "press contact email": "braden.dunlap@iga.in.gov",
+      "press contact phone": "317-232-9805"
+    },
+    "created_at": "2020-11-19T06:06:45.315509+00:00",
+    "updated_at": "2026-02-13T12:42:09.964384+00:00",
+    "openstates_url": "https://openstates.org/person/elizabeth-rowray-7dcTYx111sbrlZ0EnA16l9/"
+  },
+  {
+    "id": "ocd-person/bab7e849-4075-4199-b251-34d5f35cc157",
+    "name": "Ethan Lawson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:in/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ethan",
+    "family_name": "Lawson",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/157772.jpg",
+    "email": "h53@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:10:22.582415+00:00",
+    "updated_at": "2026-02-13T12:43:25.022616+00:00",
+    "openstates_url": "https://openstates.org/person/ethan-lawson-5gKcMMeS78a8Oqub9UcBM7/"
+  },
+  {
+    "id": "ocd-person/bdae77c7-d89e-426d-b6f6-52e1a48bc87a",
+    "name": "Ethan Manning",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:in/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ethan",
+    "family_name": "Manning",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Manning_MainList2023V2.png",
+    "email": "h23@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Ryan Schwartz",
+      "assistant email": "h23@iga.in.gov",
+      "assistant phone1": "317-232-9619",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Abrahm Hurt",
+      "press contact email": "abrahm.hurt@iga.in.gov",
+      "press contact phone": "317-234-9024"
+    },
+    "created_at": "2019-01-02T10:40:35.312942+00:00",
+    "updated_at": "2026-02-13T12:43:10.456884+00:00",
+    "openstates_url": "https://openstates.org/person/ethan-manning-5lvHTQri3WVltLMcsAu7uk/"
+  },
+  {
+    "id": "ocd-person/552456a4-62fc-4f94-a9f9-1c5dd8ebe57a",
+    "name": "Garrett Bascom",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:in/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Garrett",
+    "family_name": "Bascom",
+    "image": "https://static.wixstatic.com/media/f28da3_b29a2e74679b49238353ddcbc6d86e18~mv2.jpg/v1/crop/x_1193,y_1470,w_2798,h_3119/fill/w_264,h_296,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ATR_8283.jpg",
+    "email": "h68@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:10:28.963071+00:00",
+    "updated_at": "2026-02-13T12:42:23.214993+00:00",
+    "openstates_url": "https://openstates.org/person/garrett-bascom-2aexB8Sw8ftRlYImsKtJUY/"
+  },
+  {
+    "id": "ocd-person/3ee97114-199a-4084-903f-5eaa231ca656",
+    "name": "Greg Steuerwald",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:in/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Steuerwald",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Steurerwald_MainList2023.png",
+    "email": "h40@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1952-09-12",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Chair",
+      "assistant name": "Dolan Monroe",
+      "assistant email": "h40@iga.in.gov",
+      "assistant phone1": "317-234-3827",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Courtney Heiden",
+      "press contact email": "courtney.heiden@iga.in.gov",
+      "press contact phone": "317-232-9831"
+    },
+    "created_at": "2018-10-18T14:43:56.827352+00:00",
+    "updated_at": "2026-02-13T12:42:08.250125+00:00",
+    "openstates_url": "https://openstates.org/person/greg-steuerwald-1uiCrNMvfZdZT3gJQSx8mk/"
+  },
+  {
+    "id": "ocd-person/6bc40502-e00f-4b16-8c1d-9f5a613a4e88",
+    "name": "Gregory Porter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:in/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Gregory",
+    "family_name": "Porter",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/porter20180102portrait_800_1003_80.jpg",
+    "email": "h96@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1955-05-14",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Peter Okeafor",
+      "assistant phone1": "317-232-9875",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:43:55.735742+00:00",
+    "updated_at": "2026-02-13T12:42:57.625675+00:00",
+    "openstates_url": "https://openstates.org/person/gregory-porter-3HLl894wDKoHseniHeYefg/"
+  },
+  {
+    "id": "ocd-person/b71e9f3a-2c59-4e18-80e6-da0a7cc51648",
+    "name": "Hal Slager",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:in/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Hal",
+    "family_name": "Slager",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Slager_mainlist.png",
+    "email": "h15@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Scott Berghoff",
+      "assistant email": "h15@iga.in.gov",
+      "assistant phone1": "317-234-2993",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kendall Macri",
+      "press contact email": "kendall.macri@iga.in.gov",
+      "press contact phone": "317-232-9824"
+    },
+    "created_at": "2018-10-18T14:44:02.683283+00:00",
+    "updated_at": "2026-02-13T12:42:31.307466+00:00",
+    "openstates_url": "https://openstates.org/person/hal-slager-5ZXaaQsJdpBkjNNXxSgN0S/"
+  },
+  {
+    "id": "ocd-person/113063ff-6e21-4bf7-b9d0-f06aafc349f2",
+    "name": "Heath VanNatter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:in/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Heath",
+    "family_name": "VanNatter",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/VanNatter_Main_List.jpg",
+    "email": "h38@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Birjan Crispin",
+      "assistant email": "h38@iga.in.gov",
+      "assistant phone1": "317-234-9452",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Abrahm Hurt",
+      "press contact email": "abrahm.hurt@iga.in.gov",
+      "press contact phone": "317-234-9024"
+    },
+    "created_at": "2018-10-18T14:44:08.258300+00:00",
+    "updated_at": "2026-02-13T12:42:29.868935+00:00",
+    "openstates_url": "https://openstates.org/person/heath-vannatter-WQz10GYWvynlRcmHp79Sk/"
+  },
+  {
+    "id": "ocd-person/0950736c-1a85-4534-91dd-3538759e75cf",
+    "name": "Hunter Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:in/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Hunter",
+    "family_name": "Smith",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/157783.jpg",
+    "email": "h24@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1977-08-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:09:57.115639+00:00",
+    "updated_at": "2026-02-13T12:42:02.840987+00:00",
+    "openstates_url": "https://openstates.org/person/hunter-smith-HZhDceA9lQQCz9C3CKJLj/"
+  },
+  {
+    "id": "ocd-person/dcba8890-86e8-4a0c-a4a5-77b2fa98a267",
+    "name": "J.D. Prescott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:in/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "J.D.",
+    "family_name": "Prescott",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Prescott-mainlist2.png",
+    "email": "h33@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Blaine Wentzell",
+      "assistant email": "h33@iga.in.gov",
+      "assistant phone1": "317-232-9648",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Braden Dunlap",
+      "press contact email": "braden.dunlap@iga.in.gov",
+      "press contact phone": "317-232-9805"
+    },
+    "created_at": "2019-01-02T10:40:50.779213+00:00",
+    "updated_at": "2026-02-13T12:42:56.248497+00:00",
+    "openstates_url": "https://openstates.org/person/j-d-prescott-6iVYaoXSAom45oLe5baXBf/"
+  },
+  {
+    "id": "ocd-person/12a4df88-7cf2-453c-9cb8-dc5d4a2f6b55",
+    "name": "Jack Jordan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:in/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Jordan",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Jordan_Main_List.jpg",
+    "email": "h17@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Ethan Wright",
+      "assistant email": "h17@iga.in.gov",
+      "assistant phone1": "317-232-9651",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Matthew Gocken",
+      "press contact email": "matthew.gocken@iga.in.gov",
+      "press contact phone": "317-233-9604"
+    },
+    "created_at": "2018-10-18T14:44:02.216524+00:00",
+    "updated_at": "2026-02-13T12:42:19.727037+00:00",
+    "openstates_url": "https://openstates.org/person/jack-jordan-ZBCxvQo0sCykJlqgQpqPl/"
+  },
+  {
+    "id": "ocd-person/d0f113c5-ffad-4c18-867b-417fea0d0a52",
+    "name": "Jake Teshka",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:in/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Jake",
+    "family_name": "Teshka",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Teshka_Main_List.jpg",
+    "email": "h7@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Kevin Todd",
+      "assistant email": "h7@iga.in.gov",
+      "assistant phone1": "317-234-9450",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Matthew Gocken",
+      "press contact email": "matthew.gocken@iga.in.gov",
+      "press contact phone": "317-233-9604"
+    },
+    "created_at": "2020-11-19T06:06:41.252914+00:00",
+    "updated_at": "2026-02-13T12:42:49.366931+00:00",
+    "openstates_url": "https://openstates.org/person/jake-teshka-6MGZkWeCmdxxhFa1fuJpQo/"
+  },
+  {
+    "id": "ocd-person/6835c75a-05e6-44d8-9d8b-7ee4559892b2",
+    "name": "Jeff Thompson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:in/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Thompson",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Thompson_lister2021.png",
+    "email": "h28@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Ethan Wright",
+      "assistant email": "h28@iga.in.gov",
+      "assistant phone1": "317-232-9651",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Courtney Heiden",
+      "press contact email": "courtney.heiden@iga.in.gov",
+      "press contact phone": "317-232-9831"
+    },
+    "created_at": "2018-10-18T14:43:56.350316+00:00",
+    "updated_at": "2026-02-13T12:43:31.251910+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-thompson-3AdmIHOPl8uJ0Lm1jyiT58/"
+  },
+  {
+    "id": "ocd-person/98849cb4-9559-40c1-bd56-414eaef4e22a",
+    "name": "Jenny Meltzer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:in/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Jenny",
+    "family_name": "Meltzer",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Meltzer_Main_List_2.jpg",
+    "email": "h73@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Caleb Jackson",
+      "assistant email": "h73@iga.in.gov",
+      "assistant phone1": "317-232-9816",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Charles Melton",
+      "press contact email": "charles.melton@iga.in.gov",
+      "press contact phone": "317-232-9659"
+    },
+    "created_at": "2023-01-20T02:03:16.264440+00:00",
+    "updated_at": "2026-02-13T12:43:15.956553+00:00",
+    "openstates_url": "https://openstates.org/person/jenny-meltzer-4dnR8Bu7YwJCBCkcYMaAlW/"
+  },
+  {
+    "id": "ocd-person/70f005b9-1417-4132-9956-ad93942ca87d",
+    "name": "Jim Lucas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:in/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Lucas",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Lucas_Main_List.jpg",
+    "email": "h69@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Spencer Schriner",
+      "assistant email": "h69@iga.in.gov",
+      "assistant phone1": "317-234-9028",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Charles Melton",
+      "press contact email": "charles.melton@iga.in.gov",
+      "press contact phone": "317-232-9659"
+    },
+    "created_at": "2018-10-18T14:44:10.366230+00:00",
+    "updated_at": "2026-02-13T12:43:01.337699+00:00",
+    "openstates_url": "https://openstates.org/person/jim-lucas-3R6pWvEhpCvF7lfCrlToWD/"
+  },
+  {
+    "id": "ocd-person/3918dc6e-fbf5-4ea0-b62a-376729b463ec",
+    "name": "Jim Pressel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:in/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Pressel",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Pressel_Main_List.jpg",
+    "email": "h20@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1963-07-19",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Aaron Wainscott",
+      "assistant email": "h20@iga.in.gov",
+      "assistant phone1": "317-234-9380",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kendall Macri",
+      "press contact email": "kendall.macri@iga.in.gov",
+      "press contact phone": "317-232-9824"
+    },
+    "created_at": "2018-10-18T14:44:02.370424+00:00",
+    "updated_at": "2026-02-13T12:43:21.494441+00:00",
+    "openstates_url": "https://openstates.org/person/jim-pressel-1jjvIXYyPtFfm5hOZBwsjk/"
+  },
+  {
+    "id": "ocd-person/e2a84cfb-4ec9-4c0c-879b-27e51dbd6674",
+    "name": "Joanna King",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:in/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Joanna",
+    "family_name": "King",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/King_Main_List.jpg",
+    "email": "h49@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Floor Leader",
+      "assistant name": "Cierra Stanko",
+      "assistant email": "h49@iga.in.gov",
+      "assistant phone1": "317-232-9657",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Matthew Gocken",
+      "press contact email": "matthew.gocken@iga.in.gov",
+      "press contact phone": "317-233-9604"
+    },
+    "created_at": "2021-01-05T06:06:59.963860+00:00",
+    "updated_at": "2026-02-13T12:42:44.813738+00:00",
+    "openstates_url": "https://openstates.org/person/joanna-king-6thB88zlX6vXEKSPZRT5Vs/"
+  },
+  {
+    "id": "ocd-person/5ceabc0e-ec47-41b5-b014-5eddcdc154f3",
+    "name": "John Bartlett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:in/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Bartlett",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Bartlett_John_web_800_999_80.jpg",
+    "email": "h95@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Desmond Reynolds",
+      "assistant phone1": "317-232-9987",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:43:58.377164+00:00",
+    "updated_at": "2026-02-13T12:43:37.953481+00:00",
+    "openstates_url": "https://openstates.org/person/john-bartlett-2pKZDlBtPFeOFYImlD6ntT/"
+  },
+  {
+    "id": "ocd-person/d88b76c4-5b6b-4f93-9347-6ae335208679",
+    "name": "Julie McGuire",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:in/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "McGuire",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/McGuire_Main_List_2.jpg",
+    "email": "h93@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Vanesa Reyes",
+      "assistant email": "h93@iga.in.gov",
+      "assistant phone1": "317-232-9802",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Braden Dunlap",
+      "press contact email": "braden.dunlap@iga.in.gov",
+      "press contact phone": "317-232-9805"
+    },
+    "created_at": "2023-01-20T02:01:03.192249+00:00",
+    "updated_at": "2026-02-13T12:43:27.701819+00:00",
+    "openstates_url": "https://openstates.org/person/julie-mcguire-6ac4p9rX83Vln12DX5Lt3R/"
+  },
+  {
+    "id": "ocd-person/df8a1659-63b2-4e11-8dce-17bce11f8162",
+    "name": "Julie Olthoff",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:in/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Olthoff",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Olthoff_Main_List.jpg",
+    "email": "h19@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1957-08-01",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Whip",
+      "assistant name": "Veda Amor",
+      "assistant email": "h19@iga.in.gov",
+      "assistant phone1": "317-232-9833",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kendall Macri",
+      "press contact email": "kendall.macri@iga.in.gov",
+      "press contact phone": "317-232-9824"
+    },
+    "created_at": "2018-10-18T14:44:07.934565+00:00",
+    "updated_at": "2026-02-13T12:43:18.846668+00:00",
+    "openstates_url": "https://openstates.org/person/julie-olthoff-6noOULSNY4gsphaouzmmO2/"
+  },
+  {
+    "id": "ocd-person/0f97edaa-0f48-4c61-82dd-c70aeb05a5ff",
+    "name": "Justin Moed",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:in/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Moed",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Moed_resized_800_1000.png",
+    "email": "h97@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1983-12-23",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Eric Virden",
+      "assistant phone1": "317-233-5248",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:13.410484+00:00",
+    "updated_at": "2026-02-13T12:42:42.364928+00:00",
+    "openstates_url": "https://openstates.org/person/justin-moed-TQJc73XZK2i5f6lJDq8cR/"
+  },
+  {
+    "id": "ocd-person/efa78779-f35e-49fb-8b6b-5cccd00c870a",
+    "name": "Karen Engleman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:in/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Engleman",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Engleman_mainlist.jpg",
+    "email": "h70@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1953-02-15",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Zack Lamberta",
+      "assistant email": "h70@iga.in.gov",
+      "assistant phone1": "317-232-9643",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Charles Melton",
+      "press contact email": "charles.melton@iga.in.gov",
+      "press contact phone": "317-232-9659"
+    },
+    "created_at": "2018-10-18T14:43:58.840938+00:00",
+    "updated_at": "2026-02-13T12:42:05.479495+00:00",
+    "openstates_url": "https://openstates.org/person/karen-engleman-7IDj5OZWp0jZw7AOze2hIo/"
+  },
+  {
+    "id": "ocd-person/0b35c9d0-f21d-41a3-b7b6-15759df5bc59",
+    "name": "Kendell Culp",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:in/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Kendell",
+    "family_name": "Culp",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Culp_Main_List.jpg",
+    "email": "h16@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Jacob Allen",
+      "assistant email": "h16@iga.in.gov",
+      "assistant phone1": "317-232-9627",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kendall Macri",
+      "press contact email": "kendall.macri@iga.in.gov",
+      "press contact phone": "317-232-9824"
+    },
+    "created_at": "2023-01-20T02:03:31.414335+00:00",
+    "updated_at": "2026-02-13T12:42:47.538903+00:00",
+    "openstates_url": "https://openstates.org/person/kendell-culp-L9UoETb7SgF1auvFtxQ41/"
+  },
+  {
+    "id": "ocd-person/a67ee82c-450c-49ed-8862-f58e34a3dfbb",
+    "name": "Kyle Miller",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:in/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Kyle",
+    "family_name": "Miller",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/banners/Miller_Kyle-web_800_999_80.jpg",
+    "email": "h82@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Fort Wayne, IN",
+      "assistant name": "Haley Muench",
+      "assistant phone1": "317-234-9047",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2023-01-20T02:03:22.651926+00:00",
+    "updated_at": "2026-02-13T12:43:09.464830+00:00",
+    "openstates_url": "https://openstates.org/person/kyle-miller-54AioqwLfIFJ0u7qNcFIGB/"
+  },
+  {
+    "id": "ocd-person/b5d0a278-d77b-49fe-88d4-2bd473055144",
+    "name": "Kyle Pierce",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:in/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Kyle",
+    "family_name": "Pierce",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Pierce_Main_List_3.jpg",
+    "email": "h36@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1993-10-05",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Lucas White",
+      "assistant email": "h36@iga.in.gov",
+      "assistant phone1": "317-234-0931",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Braden Dunlap",
+      "press contact email": "braden.dunlap@iga.in.gov",
+      "press contact phone": "317-232-9805"
+    },
+    "created_at": "2023-01-20T02:01:10.533951+00:00",
+    "updated_at": "2026-02-13T12:41:54.609085+00:00",
+    "openstates_url": "https://openstates.org/person/kyle-pierce-5X4xMaRtn8EFY1zcTt7SY0/"
+  },
+  {
+    "id": "ocd-person/62c64f60-2fb9-4edc-86ee-6c0d7cccff75",
+    "name": "Lindsay Patterson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:in/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Lindsay",
+    "family_name": "Patterson",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Patterson_Main_List.jpg",
+    "email": "h55@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Veda Amor",
+      "assistant email": "h55@iga.in.gov",
+      "assistant phone1": "317-232-9833",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Charles Melton",
+      "press contact email": "charles.melton@iga.in.gov",
+      "press contact phone": "317-232-9659"
+    },
+    "created_at": "2023-01-20T02:01:30.169653+00:00",
+    "updated_at": "2026-02-13T12:43:16.765262+00:00",
+    "openstates_url": "https://openstates.org/person/lindsay-patterson-30NsJKOH9ToxuWyHRKWsdB/"
+  },
+  {
+    "id": "ocd-person/4647c4f2-f1d1-4151-a85a-74db23a7fb5d",
+    "name": "Lori Goss-Reaves",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:in/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Lori",
+    "family_name": "Goss-Reaves",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Goss-Reaves_mainlist.png",
+    "email": "h31@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Hunter Frost",
+      "assistant email": "h31@iga.in.gov",
+      "assistant phone1": "317-232-9850",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Braden Dunlap",
+      "press contact email": "braden.dunlap@iga.in.gov",
+      "press contact phone": "317-232-9805"
+    },
+    "created_at": "2024-01-03T20:53:46.771772+00:00",
+    "updated_at": "2026-02-13T12:43:38.835833+00:00",
+    "openstates_url": "https://openstates.org/person/lori-goss-reaves-28cGDSNPiTgcv8hHOyhEnV/"
+  },
+  {
+    "id": "ocd-person/3568c1ff-87a5-4121-a468-ced11a824691",
+    "name": "Lorissa Sweet",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:in/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Lorissa",
+    "family_name": "Sweet",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Sweet_mainlist2023.png",
+    "email": "h50@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1978-11-12",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Jacob Allen",
+      "assistant email": "h50@iga.in.gov",
+      "assistant phone1": "317-232-9627",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Matthew Gocken",
+      "press contact email": "matthew.gocken@iga.in.gov",
+      "press contact phone": "317-233-9604"
+    },
+    "created_at": "2023-01-20T02:02:55.924883+00:00",
+    "updated_at": "2026-01-31T00:42:29.681637+00:00",
+    "openstates_url": "https://openstates.org/person/lorissa-sweet-1cmT09LCydTa8TEZYmBf3B/"
+  },
+  {
+    "id": "ocd-person/38ca634d-bbf0-42f3-bf01-4d6cdcb84bbd",
+    "name": "Mark Genda",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:in/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Genda",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Rep._Mark_Genda_Main_List.jpg",
+    "email": "h41@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Federico Ortiz",
+      "assistant email": "h41@iga.in.gov",
+      "assistant phone1": "317-232-0404",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Abrahm Hurt",
+      "press contact email": "abrahm.hurt@iga.in.gov",
+      "press contact phone": "317-234-9024"
+    },
+    "created_at": "2023-01-20T02:02:51.221559+00:00",
+    "updated_at": "2026-02-13T12:42:25.360488+00:00",
+    "openstates_url": "https://openstates.org/person/mark-genda-1jA3pikTfMlf7pPaX32dRN/"
+  },
+  {
+    "id": "ocd-person/1b9ddafb-fca9-4924-b565-d651c2ca133b",
+    "name": "Martin Carbaugh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:in/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Martin",
+    "family_name": "Carbaugh",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Carbaugh_Main_List.jpg",
+    "email": "h81@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1979-10-28",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Federico Ortiz",
+      "assistant email": "h81@iga.in.gov",
+      "assistant phone1": "317-232-0404",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kylie Glatfelter",
+      "press contact email": "kylie.glatfelter@iga.in.gov",
+      "press contact phone": "317-234-9006"
+    },
+    "created_at": "2018-10-18T14:44:04.510419+00:00",
+    "updated_at": "2026-02-13T12:43:23.487294+00:00",
+    "openstates_url": "https://openstates.org/person/martin-carbaugh-q6vqGSrrQ15vmNBAHuwKh/"
+  },
+  {
+    "id": "ocd-person/1f2380f8-be03-4499-a72a-8dac376d6aaa",
+    "name": "Matt Commons",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:in/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Commons",
+    "image": "https://static.wixstatic.com/media/00b233_c656903b0f40495f862980ada8809bd3~mv2.png/v1/fill/w_560,h_730,al_c,q_90,enc_auto/00b233_c656903b0f40495f862980ada8809bd3~mv2.png",
+    "email": "h13@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:08:27.719189+00:00",
+    "updated_at": "2026-02-13T12:43:03.926729+00:00",
+    "openstates_url": "https://openstates.org/person/matt-commons-wkzDczhU3Cc154W8ZMOS2/"
+  },
+  {
+    "id": "ocd-person/be7ad6b3-da1b-4b8d-b41b-6b6e48a9bdfa",
+    "name": "Matt Hostettler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:in/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Hostettler",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Hostettler_Main_List.jpg",
+    "email": "h64@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1986-07-17",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Connor Dollarhite",
+      "assistant email": "h64@iga.in.gov",
+      "assistant phone1": "317-232-9981",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Wade Coggeshall",
+      "press contact email": "wade.coggeshall@iga.in.gov",
+      "press contact phone": "317-232-9693"
+    },
+    "created_at": "2019-01-02T10:40:10.876213+00:00",
+    "updated_at": "2026-02-13T12:43:22.490228+00:00",
+    "openstates_url": "https://openstates.org/person/matt-hostettler-5nQg8EdsHwFpyU2HQzMo0I/"
+  },
+  {
+    "id": "ocd-person/423b3123-c1b6-4e2f-92f4-5610130de844",
+    "name": "Matt Lehman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:in/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Lehman",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Lehman_Main_List.jpg",
+    "email": "h79@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Floor Leader",
+      "assistant name": "Aaron Wainscott",
+      "assistant email": "h79@iga.in.gov",
+      "assistant phone1": "317-234-9380",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Courtney Heiden",
+      "press contact email": "courtney.heiden@iga.in.gov",
+      "press contact phone": "317-232-9831"
+    },
+    "created_at": "2018-10-18T14:44:01.161008+00:00",
+    "updated_at": "2026-02-13T12:42:58.618326+00:00",
+    "openstates_url": "https://openstates.org/person/matt-lehman-20yXkaguzfFKH6LPXwA6Lc/"
+  },
+  {
+    "id": "ocd-person/c66bcc9b-d5e6-478b-b11e-25be7f4e0aaa",
+    "name": "Matt Pierce",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:in/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Pierce",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/pierce2020portrait_800_999_80.jpg",
+    "email": "h61@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Bloomington, IN",
+      "assistant name": "Moira Kehoe",
+      "assistant phone1": "317-232-9798",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:43:55.889413+00:00",
+    "updated_at": "2026-02-13T12:41:56.237541+00:00",
+    "openstates_url": "https://openstates.org/person/matt-pierce-62PkCJdEmeciOIYbMGMpje/"
+  },
+  {
+    "id": "ocd-person/7e493895-2f49-4a56-a4a3-f888373769b5",
+    "name": "Maureen Bauer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:in/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Maureen",
+    "family_name": "Bauer",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Bauer_Maureen_web_800_999_80.jpg",
+    "email": "h06@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "South Bend, IN",
+      "assistant name": "Alexis Watts ",
+      "assistant phone1": "317-234- 3101",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2020-11-19T06:06:46.277169+00:00",
+    "updated_at": "2026-02-13T12:42:18.334102+00:00",
+    "openstates_url": "https://openstates.org/person/maureen-bauer-3qIUhwY4K0ygG1fLAGsBBF/"
+  },
+  {
+    "id": "ocd-person/7580d002-efd7-461a-80ee-06c82ab0db71",
+    "name": "Michelle Davis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:in/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Davis",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Davis_Main_List_2022.jpg",
+    "email": "h58@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Skyler Wood",
+      "assistant email": "h58@iga.in.gov",
+      "assistant phone1": "317-232-9769",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Abrahm Hurt",
+      "press contact email": "abrahm.hurt@iga.in.gov",
+      "press contact phone": "317-234-9024"
+    },
+    "created_at": "2020-11-19T06:06:47.065783+00:00",
+    "updated_at": "2026-02-13T12:42:34.240152+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-davis-3Ziy7jkzptloZeImDv6rir/"
+  },
+  {
+    "id": "ocd-person/14aac431-636f-483e-ac39-bf45be53af2f",
+    "name": "Mike Andrade",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:in/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Andrade",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Andrade_Mike_web_800_999_80.jpg",
+    "email": "h12@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Munster, IN",
+      "assistant name": "Christian Garrett",
+      "assistant phone1": "317-234-9041",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2020-11-19T06:06:42.046674+00:00",
+    "updated_at": "2026-02-13T12:42:02.093059+00:00",
+    "openstates_url": "https://openstates.org/person/mike-andrade-czszbEkySp4F7XcF25L39/"
+  },
+  {
+    "id": "ocd-person/2ca76c73-5db4-499b-b718-c83294b5f68e",
+    "name": "Mike Aylesworth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:in/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Aylesworth",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Aylesworth_Main_List_2022.jpg",
+    "email": "h11@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1943-03-24",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Mason Janowski",
+      "assistant email": "h11@iga.in.gov",
+      "assistant phone1": "317-234-9139",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kendall Macri",
+      "press contact email": "kendall.macri@iga.in.gov",
+      "press contact phone": "317-232-9824"
+    },
+    "created_at": "2018-10-18T14:43:58.060543+00:00",
+    "updated_at": "2026-02-13T12:42:55.217982+00:00",
+    "openstates_url": "https://openstates.org/person/mike-aylesworth-1MGArTgiE8t3EbSdDzxLLC/"
+  },
+  {
+    "id": "ocd-person/344cb784-deed-4671-94f1-0616555296e3",
+    "name": "Mike Karickhoff",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:in/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Karickhoff",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Karickhoff_Main_List_2.jpg",
+    "email": "h30@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1956-07-01",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker Pro Tempore",
+      "assistant name": "Blaine Wentzell",
+      "assistant email": "h30@iga.in.gov",
+      "assistant phone1": "317-232-9648",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Abrahm Hurt",
+      "press contact email": "abrahm.hurt@iga.in.gov",
+      "press contact phone": "317-234-9024"
+    },
+    "created_at": "2018-10-18T14:44:01.462059+00:00",
+    "updated_at": "2026-02-13T12:42:41.025556+00:00",
+    "openstates_url": "https://openstates.org/person/mike-karickhoff-1agexm299uhRDo1lXRZNJr/"
+  },
+  {
+    "id": "ocd-person/30a1de33-efbb-41e1-bf59-bf8171089a3a",
+    "name": "Mitch Gore",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:in/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Mitch",
+    "family_name": "Gore",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Gore_Mitch_web_800_999_80.jpg",
+    "email": "h89@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Christian Garrett ",
+      "assistant phone1": "317-234-9041",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St.  Indianapolis, IN 46204"
+    },
+    "created_at": "2020-11-19T06:06:44.834220+00:00",
+    "updated_at": "2026-02-13T12:43:41.030605+00:00",
+    "openstates_url": "https://openstates.org/person/mitch-gore-1TlbXo2Wixa2wdNej7Dk2U/"
+  },
+  {
+    "id": "ocd-person/0acb3367-1e1e-404e-89c8-82e3c6754235",
+    "name": "Peggy Mayfield",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:in/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Peggy",
+    "family_name": "Mayfield",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Mayfield_Main_List.jpg",
+    "email": "h60@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1963-08-01",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Cierra Stanko",
+      "assistant email": "h60@iga.in.gov",
+      "assistant phone1": "317-232-9657",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Wade Coggeshall",
+      "press contact email": "wade.coggeshall@iga.in.gov",
+      "press contact phone": "317-232-9693"
+    },
+    "created_at": "2018-10-18T14:43:57.590304+00:00",
+    "updated_at": "2026-02-13T12:43:44.764290+00:00",
+    "openstates_url": "https://openstates.org/person/peggy-mayfield-KMmkVGdwTKbTAPx0IJPjZ/"
+  },
+  {
+    "id": "ocd-person/d1e89034-ef4a-4a10-b16d-16dc617dcdf1",
+    "name": "Phil GiaQuinta",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:in/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "GiaQuinta",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/giaquinta20180102portrait_800_999_80.jpg",
+    "email": "h80@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1955-10-08",
+    "death_date": "",
+    "extras": {
+      "city": "Fort Wayne, IN",
+      "assistant name": "Katie Beaumont, Leadership Assistant",
+      "assistant phone1": "317-232-9628",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:04.829239+00:00",
+    "updated_at": "2026-02-13T12:43:39.687314+00:00",
+    "openstates_url": "https://openstates.org/person/phil-giaquinta-6O5g2UnnRsczBRp6IKqhOL/"
+  },
+  {
+    "id": "ocd-person/4c9685ab-f2a4-46e0-980a-699bb01d26cf",
+    "name": "Ragen Hatcher",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:in/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ragen",
+    "family_name": "Hatcher",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Hatcher_Ragen_2020_web_800_999_80.jpg",
+    "email": "h3@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Gary, IN",
+      "assistant name": "Peter Okeafor",
+      "assistant phone1": "317-232-9875",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2019-01-02T10:41:32.292792+00:00",
+    "updated_at": "2026-02-13T12:42:32.326007+00:00",
+    "openstates_url": "https://openstates.org/person/ragen-hatcher-2KWCkaSSYTQXVQaLcuemLv/"
+  },
+  {
+    "id": "ocd-person/74acd892-bd86-453a-8a48-87954ad68c19",
+    "name": "Randy Novak",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:in/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Novak",
+    "image": "",
+    "email": "h9@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-31T00:41:31.829571+00:00",
+    "updated_at": "2026-02-13T12:43:20.058073+00:00",
+    "openstates_url": "https://openstates.org/person/randy-novak-3YA6FLtLCMgqu9vRUQhaRt/"
+  },
+  {
+    "id": "ocd-person/8b2a92f1-4b70-4dfc-8f4f-789aca1b5e8b",
+    "name": "Rene\u00e9 Pack",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:in/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Rene\u00e9",
+    "family_name": "Pack",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Pack_Renee_web_800_999_80.jpg",
+    "email": "h92@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1962-06-14",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Kaitlyn Sears",
+      "assistant phone1": "317-234-9048",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2020-11-19T06:06:38.266471+00:00",
+    "updated_at": "2026-02-13T12:43:42.997356+00:00",
+    "openstates_url": "https://openstates.org/person/renee-pack-4EbOATFM1LxYYShtNej8KR/"
+  },
+  {
+    "id": "ocd-person/cd2f0bde-b248-4ba3-81ad-042acd7d60c8",
+    "name": "Robb Greene",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:in/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Robb",
+    "family_name": "Greene",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Greene_Main_List.jpg",
+    "email": "h47@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Kyleigh Hindsley",
+      "assistant email": "h47@iga.in.gov",
+      "assistant phone1": "317-234-9452",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Charles Melton",
+      "press contact email": "charles.melton@iga.in.gov",
+      "press contact phone": "317-232-9659"
+    },
+    "created_at": "2023-01-20T02:02:33.297053+00:00",
+    "updated_at": "2026-02-13T12:42:59.477958+00:00",
+    "openstates_url": "https://openstates.org/person/robb-greene-6FAvUTGOKKYATsdNwEsang/"
+  },
+  {
+    "id": "ocd-person/d15f8f7e-148b-47fc-858d-84ad23347f64",
+    "name": "Robin Shackleford",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:in/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Robin",
+    "family_name": "Shackleford",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/shackleford20200407portrait_800_999_80.jpg",
+    "email": "h98@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1970-10-30",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Derion Searcey",
+      "assistant phone1": "317-232-9827",
+      "assistant phone2": "317-232-9600",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:13.720732+00:00",
+    "updated_at": "2026-02-13T12:43:29.048813+00:00",
+    "openstates_url": "https://openstates.org/person/robin-shackleford-6N54BvSDmpSodLqARzgewO/"
+  },
+  {
+    "id": "ocd-person/16b01fca-3a93-41a3-ad6a-f2bf9209ddf7",
+    "name": "Ryan Dvorak",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:in/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Dvorak",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/dvorak_resized_800_1000_80.jpg",
+    "email": "h8@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "South Bend, IN",
+      "assistant name": "Alexis Watts ",
+      "assistant phone1": "317-234-3101",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:07.320561+00:00",
+    "updated_at": "2026-02-13T12:42:37.093103+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-dvorak-goJqjAP2Pm3CfdcEuBOXn/"
+  },
+  {
+    "id": "ocd-person/d96c807a-9e72-4861-bca4-67d787cbf49f",
+    "name": "Ryan Lauer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:in/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Lauer",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Lauer_Mainlist_Image.png",
+    "email": "h59@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Spencer Schriner",
+      "assistant email": "h59@iga.in.gov",
+      "assistant phone1": "317-234-9028",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Charles Melton",
+      "press contact email": "charles.melton@iga.in.gov",
+      "press contact phone": "317-232-9659"
+    },
+    "created_at": "2019-01-02T10:41:45.828436+00:00",
+    "updated_at": "2026-02-13T12:41:58.340098+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-lauer-6cGv4CwmcwTQnbdm3z7c9X/"
+  },
+  {
+    "id": "ocd-person/2a0b391a-a59d-4b7f-907b-87980c2714d8",
+    "name": "Shane Lindauer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:in/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Lindauer",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Lindauer_Main_List.jpg",
+    "email": "h63@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Blaine Wentzell",
+      "assistant email": "h63@iga.in.gov",
+      "assistant phone1": "317-232-9648",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Kylie Glatfelter",
+      "press contact email": "kylie.glatfelter@iga.in.gov",
+      "press contact phone": "317-234-9006"
+    },
+    "created_at": "2018-10-18T14:44:09.060909+00:00",
+    "updated_at": "2026-02-13T12:43:13.124223+00:00",
+    "openstates_url": "https://openstates.org/person/shane-lindauer-1HKo0uDVn5ULBnEeae0sfI/"
+  },
+  {
+    "id": "ocd-person/68f44f31-ba0b-4641-a656-f05e91c02cd8",
+    "name": "Sheila Klinker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:in/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Sheila",
+    "family_name": "Klinker",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Klinker_updated_800_1036.png",
+    "email": "h27@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1938-12-20",
+    "death_date": "",
+    "extras": {
+      "city": "Lafayette, IN",
+      "assistant name": "Peter Okeafor",
+      "assistant phone1": "317-232-9875",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:11.878562+00:00",
+    "updated_at": "2026-02-13T12:42:27.905459+00:00",
+    "openstates_url": "https://openstates.org/person/sheila-klinker-3C2qnuEWx5N9lZnktwyEmW/"
+  },
+  {
+    "id": "ocd-person/df749cfb-56e8-482f-bf4b-183a1fb52594",
+    "name": "Steve Bartels",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:in/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Bartels",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Bartels_Main_List.jpg",
+    "email": "h74@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Whip",
+      "assistant name": "Drew Sellers",
+      "assistant email": "h74@iga.in.gov",
+      "assistant phone1": "317-232-9863",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Wade Coggeshall",
+      "press contact email": "wade.coggeshall@iga.in.gov",
+      "press contact phone": "317-232-9693"
+    },
+    "created_at": "2018-10-18T14:44:12.030778+00:00",
+    "updated_at": "2026-02-13T12:42:40.024885+00:00",
+    "openstates_url": "https://openstates.org/person/steve-bartels-6nea2X1Lo8n8lp7WQalZGW/"
+  },
+  {
+    "id": "ocd-person/98feacbe-3be5-407e-a437-66d65a836a5e",
+    "name": "Sue Errington",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:in/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Sue",
+    "family_name": "Errington",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/banners/errington_UPDATED_headshot_800_999_80.jpg",
+    "email": "h34@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Muncie, IN",
+      "assistant name": "Kaitlyn Sears",
+      "assistant phone1": "317-234-9048",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:14.042268+00:00",
+    "updated_at": "2026-02-13T12:43:07.968936+00:00",
+    "openstates_url": "https://openstates.org/person/sue-errington-4ehDfDeiuM44ghDjCU8vyI/"
+  },
+  {
+    "id": "ocd-person/87eb34dc-70d6-4614-a871-568a836ff552",
+    "name": "Tim O'Brien",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:in/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "O'Brien",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/OBrien_Mainlist2.jpg",
+    "email": "h78@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Ryan Schwartz",
+      "assistant email": "h78@iga.in.gov",
+      "assistant phone1": "317-232-9619",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Braden Dunlap",
+      "press contact email": "braden.dunlap@iga.in.gov",
+      "press contact phone": "317-232-9805"
+    },
+    "created_at": "2022-01-03T18:41:20.790308+00:00",
+    "updated_at": "2026-02-13T12:42:37.979522+00:00",
+    "openstates_url": "https://openstates.org/person/tim-o-brien-48TS8RNS0AFLdpmCrlObwY/"
+  },
+  {
+    "id": "ocd-person/fbcd4d2c-32c6-4c97-837b-4e4ed80c43df",
+    "name": "Tim Wesco",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:in/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Wesco",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Wesco_MainList2023.png",
+    "email": "h21@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Spencer Van Der Weele",
+      "assistant email": "h21@iga.in.gov",
+      "assistant phone1": "317-232-9676",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Matthew Gocken",
+      "press contact email": "matthew.gocken@iga.in.gov",
+      "press contact phone": "317-233-9604"
+    },
+    "created_at": "2018-10-18T14:44:16.348935+00:00",
+    "updated_at": "2026-02-13T12:42:39.001316+00:00",
+    "openstates_url": "https://openstates.org/person/tim-wesco-7f8tcSJbbdJGBuoyBzNxDL/"
+  },
+  {
+    "id": "ocd-person/fb16b382-4ca4-47c2-abaf-3c6e72f5a780",
+    "name": "Tim Yocum",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:in/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Yocum",
+    "image": "",
+    "email": "h42@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-02-04T01:27:25.395485+00:00",
+    "updated_at": "2026-02-13T12:41:55.309618+00:00",
+    "openstates_url": "https://openstates.org/person/tim-yocum-7dnRoF22IfJ7z9u4EgynJY/"
+  },
+  {
+    "id": "ocd-person/d2667b82-c381-495d-b533-c70a9ae92ec0",
+    "name": "Todd Huston",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:in/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Huston",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Speaker_Huston_Lister.png",
+    "email": "h37@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker of the House",
+      "assistant name": "Brittany Jenkins",
+      "assistant email": "h37@iga.in.gov",
+      "assistant phone1": "317-232-9677",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Erin Wittern",
+      "press contact email": "erin.wittern@iga.in.gov",
+      "press contact phone": "317-232-9887"
+    },
+    "created_at": "2018-10-18T14:43:59.145232+00:00",
+    "updated_at": "2026-02-13T12:42:54.244519+00:00",
+    "openstates_url": "https://openstates.org/person/todd-huston-6P1DqIrucynMhZmv68Z9JQ/"
+  },
+  {
+    "id": "ocd-person/e75ceaff-b623-4887-90a3-2b5328d184c5",
+    "name": "Tony Isa",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:in/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Isa",
+    "image": "https://friendsoftonyisa.com/wp-content/uploads/2023/12/Tony_Cutout.png",
+    "email": "h51@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T19:09:08.083287+00:00",
+    "updated_at": "2026-02-13T12:43:36.988590+00:00",
+    "openstates_url": "https://openstates.org/person/tony-isa-72ZgqpKXK4W8GmrU7WHx9J/"
+  },
+  {
+    "id": "ocd-person/0f97a586-0089-4eb8-86c1-40f42bc1f594",
+    "name": "Tonya Pfaff",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:in/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Tonya",
+    "family_name": "Pfaff",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Pfaff-headshot-118_web_800_999_80.jpg",
+    "email": "h43@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Terre Haute, IN",
+      "assistant name": "Eric Virden",
+      "assistant phone1": "317-233-5248",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2019-01-02T10:41:42.200214+00:00",
+    "updated_at": "2026-02-13T12:42:10.935458+00:00",
+    "openstates_url": "https://openstates.org/person/tonya-pfaff-TQBd4RvytP4eQqwhYNOdw/"
+  },
+  {
+    "id": "ocd-person/51d00dd2-d18c-4d77-9ad1-710016d30448",
+    "name": "Vanessa Summers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:in/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Vanessa",
+    "family_name": "Summers",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/banners/summers_updated_headshot_800_999_80.jpg",
+    "email": "h99@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1958-04-24",
+    "death_date": "",
+    "extras": {
+      "city": "Indianapolis, IN",
+      "assistant name": "Desmond Reynolds",
+      "assistant phone1": "317-232-9987",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:06.256799+00:00",
+    "updated_at": "2026-02-13T12:42:35.209066+00:00",
+    "openstates_url": "https://openstates.org/person/vanessa-summers-2UNSU2kBVYB1rPe7Yxey1g/"
+  },
+  {
+    "id": "ocd-person/86b7914b-08e6-4ac7-bcd6-b4afa4dceb09",
+    "name": "Vernon Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:in/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Vernon",
+    "family_name": "Smith",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/Smith_Vernon_web_2020_800_999_80.jpg",
+    "email": "h14@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1944-04-11",
+    "death_date": "",
+    "extras": {
+      "city": "Gary, IN",
+      "assistant name": "Desmond Reynolds",
+      "assistant phone1": "317-232-9987",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2018-10-18T14:44:01.770867+00:00",
+    "updated_at": "2026-02-13T12:43:05.302947+00:00",
+    "openstates_url": "https://openstates.org/person/vernon-smith-46CrT9CzWHYHcFmja9BRRR/"
+  },
+  {
+    "id": "ocd-person/58922dd9-3295-4d8f-a1ca-60356b1b4ad8",
+    "name": "Victoria Garcia Wilburn",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:in/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Victoria",
+    "family_name": "Garcia Wilburn",
+    "image": "https://indianahousedemocrats.org/images/made/images/remote/https_assets.indianahousedemocrats.org/members/Headshots/garciawilburn20221129portrait-resized_800_942_80.jpg",
+    "email": "h32@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Fishers, IN",
+      "assistant name": "Moira Kehoe",
+      "assistant phone1": "317-232-9798",
+      "assistant phone2": "1-800-382-9842",
+      "assistant address": "200 W. Washington St. Indianapolis, IN 46204"
+    },
+    "created_at": "2023-01-20T02:02:03.439381+00:00",
+    "updated_at": "2026-02-13T12:42:20.941616+00:00",
+    "openstates_url": "https://openstates.org/person/victoria-garcia-wilburn-2h87z8aTfb8EyKzIhzwbRQ/"
+  },
+  {
+    "id": "ocd-person/0761bcc1-6fbf-4a37-8b52-46c2bc6912fa",
+    "name": "Wendy Dant Chesser",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:in/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Wendy",
+    "family_name": "Dant Chesser",
+    "image": "https://assets.indianahousedemocrats.org/banners/Dant_Chesser_Wendy_media.jpg",
+    "email": "h71@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-03T21:31:38.169573+00:00",
+    "updated_at": "2026-02-13T12:42:52.869581+00:00",
+    "openstates_url": "https://openstates.org/person/wendy-dant-chesser-DvbxxOVIwVyA2eaOMA53S/"
+  },
+  {
+    "id": "ocd-person/ac2c89af-df39-4057-bdeb-15ca57b7ef9f",
+    "name": "Wendy McNamara",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:in/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Wendy",
+    "family_name": "McNamara",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/McNamara_mainlist2.png",
+    "email": "h76@iga.in.gov",
+    "gender": "Female",
+    "birth_date": "1970-01-26",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Vanesa Reyes",
+      "assistant email": "h76@iga.in.gov",
+      "assistant phone1": "317-232-9802",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Braden Dunlap",
+      "press contact email": "braden.dunlap@iga.in.gov",
+      "press contact phone": "317-232-9805"
+    },
+    "created_at": "2018-10-18T14:44:04.677654+00:00",
+    "updated_at": "2026-02-13T12:43:15.128868+00:00",
+    "openstates_url": "https://openstates.org/person/wendy-mcnamara-5Et272w20LVUtyFKpUhmoR/"
+  },
+  {
+    "id": "ocd-person/a74de022-873d-4a31-986c-66e81356a6f2",
+    "name": "Zach Payne",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:in/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:in/government",
+      "name": "Indiana",
+      "classification": "state"
+    },
+    "given_name": "Zach",
+    "family_name": "Payne",
+    "image": "https://www.indianahouserepublicans.com/clientuploads/directory/members/Main_List/Payne_Main_List.jpg",
+    "email": "h66@iga.in.gov",
+    "gender": "Male",
+    "birth_date": "1989-02-24",
+    "death_date": "",
+    "extras": {
+      "assistant name": "Federico Ortiz",
+      "assistant email": "h66@iga.in.gov",
+      "assistant phone1": "317-232-0404",
+      "assistant phone2": "1-800-382-9841",
+      "press contact name": "Charles Melton",
+      "press contact email": "charles.melton@iga.in.gov",
+      "press contact phone": "317-232-9659"
+    },
+    "created_at": "2020-11-19T06:06:40.270003+00:00",
+    "updated_at": "2026-02-13T12:42:14.499315+00:00",
+    "openstates_url": "https://openstates.org/person/zach-payne-55hJ5GbZe8GbCtPACcH1lq/"
+  }
+]

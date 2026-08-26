@@ -1,0 +1,2675 @@
+[
+  {
+    "id": "ocd-person/0c6a7bcf-e990-41a0-b59c-923f05771880",
+    "name": "Adam Bird",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:oh/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Bird",
+    "image": "https://www.legislature.ohio.gov/assets/people/adam-c-bird/headshots/thumbnails/medium/adam-c-bird-january-2023-headshot_medium.jpg",
+    "email": "rep63@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:13.057037+00:00",
+    "updated_at": "2025-05-15T01:47:59.766872+00:00",
+    "openstates_url": "https://openstates.org/person/adam-bird-NQZPFHYZ23Qy211E9jM00/"
+  },
+  {
+    "id": "ocd-person/78912d95-3dac-4487-810a-74be41508ebb",
+    "name": "Adam Holmes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:oh/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Holmes",
+    "image": "https://www.legislature.ohio.gov/assets/people/adam-holmes/headshots/thumbnails/medium/adam-holmes-january-2021-headshot_medium.jpg",
+    "email": "rep97@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1967-07-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-03-14T05:16:21.869653+00:00",
+    "updated_at": "2025-03-05T08:29:46.806564+00:00",
+    "openstates_url": "https://openstates.org/person/adam-holmes-3fVQOlF5ApbRp8WO85XlVr/"
+  },
+  {
+    "id": "ocd-person/b04e2962-e7c6-46b8-9a99-d7a6d3a32717",
+    "name": "Adam Mathews",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:oh/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Mathews",
+    "image": "https://www.legislature.ohio.gov/assets/people/adam-mathews/headshots/thumbnails/medium/adam-mathews-january-2023-headshot_medium.jpg",
+    "email": "rep56@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1988-01-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:39.114883+00:00",
+    "updated_at": "2025-03-05T20:27:52.938548+00:00",
+    "openstates_url": "https://openstates.org/person/adam-mathews-5MgMuTU8zAkrFYCdF8YPI7/"
+  },
+  {
+    "id": "ocd-person/c58b6767-730d-4486-a08e-462ea3af3bfe",
+    "name": "Allison Russo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:oh/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Allison",
+    "family_name": "Russo",
+    "image": "https://www.legislature.ohio.gov/assets/people/c-allison-russo/headshots/thumbnails/medium/c-allison-russo-january-2021-headshot_medium.jpg",
+    "email": "rep07@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:47.112401+00:00",
+    "updated_at": "2026-01-28T01:55:34.787794+00:00",
+    "openstates_url": "https://openstates.org/person/allison-russo-60lCA8pfJbgoGDgSTScgl4/"
+  },
+  {
+    "id": "ocd-person/07c054e9-9a51-41b2-994a-8f63b0148d07",
+    "name": "Andrea White",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:oh/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Andrea",
+    "family_name": "White",
+    "image": "https://www.legislature.ohio.gov/assets/people/andrea-white/headshots/thumbnails/medium/andrea-white-march-2023-headshot_medium.jpg",
+    "email": "rep36@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:13.939880+00:00",
+    "updated_at": "2025-03-05T20:28:26.906669+00:00",
+    "openstates_url": "https://openstates.org/person/andrea-white-EcqD5yrk0bdRvQHqyJ703/"
+  },
+  {
+    "id": "ocd-person/4ed8184a-01ff-4bdc-a06c-cbf8b4c73fd6",
+    "name": "Angie King",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:oh/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Angie",
+    "family_name": "King",
+    "image": "https://www.legislature.ohio.gov/assets/people/angela-n-king/headshots/thumbnails/medium/angela-n-king-january-2023-headshot_medium.jpg",
+    "email": "rep84@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:40.789971+00:00",
+    "updated_at": "2025-03-05T08:29:48.151974+00:00",
+    "openstates_url": "https://openstates.org/person/angie-king-2Om9k33IVtCwgVbWwA2tPS/"
+  },
+  {
+    "id": "ocd-person/3bfe0748-5423-4fcf-9962-905d2b747f23",
+    "name": "Anita Somani",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:oh/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Anita",
+    "family_name": "Somani",
+    "image": "https://www.legislature.ohio.gov/assets/people/anita-somani/headshots/thumbnails/medium/anita-somani-january-2023-headshot_medium.jpg",
+    "email": "rep08@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:43.209112+00:00",
+    "updated_at": "2025-05-15T01:47:34.663367+00:00",
+    "openstates_url": "https://openstates.org/person/anita-somani-1pCdaqLTZbqcjOLkqUAlt5/"
+  },
+  {
+    "id": "ocd-person/6d39391d-7068-4ad3-866d-4ee59890ce6e",
+    "name": "Ashley Bryant Bailey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:oh/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Ashley",
+    "family_name": "Bryant Bailey",
+    "image": "",
+    "email": "rep26@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T01:55:26.315333+00:00",
+    "updated_at": "2026-01-29T07:50:31.934519+00:00",
+    "openstates_url": "https://openstates.org/person/ashley-bryant-bailey-3K6JVbaFWoc2OjwOoryeZa/"
+  },
+  {
+    "id": "ocd-person/550986e6-b595-4fa8-9424-8e09327cf060",
+    "name": "Bernie Willis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:oh/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Bernie",
+    "family_name": "Willis",
+    "image": "https://www.legislature.ohio.gov/assets/people/bernard-willis/headshots/thumbnails/medium/bernard-willis-february-2023-headshot_medium.jpg",
+    "email": "rep74@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:41.723620+00:00",
+    "updated_at": "2025-03-05T08:30:07.031955+00:00",
+    "openstates_url": "https://openstates.org/person/bernie-willis-2aShV348JdqSLF4zC9jTvs/"
+  },
+  {
+    "id": "ocd-person/dc1a25bf-ebf6-4d5c-b5c3-32f9fdb8b2ed",
+    "name": "Beryl Piccolantonio",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:oh/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Beryl",
+    "family_name": "Piccolantonio",
+    "image": "",
+    "email": "rep04@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-01T23:21:55.900870+00:00",
+    "updated_at": "2026-01-28T01:55:50.524250+00:00",
+    "openstates_url": "https://openstates.org/person/beryl-piccolantonio-6hKGCfInDNpOYVY76rQaBp/"
+  },
+  {
+    "id": "ocd-person/de0a6483-7c16-43e1-a76b-c0cc98a9d7ed",
+    "name": "Beth Lear",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:oh/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Beth",
+    "family_name": "Lear",
+    "image": "https://www.legislature.ohio.gov/assets/people/beth-lear/headshots/thumbnails/medium/beth-lear-january-2023-headshot_medium.jpg",
+    "email": "rep61@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:38.990825+00:00",
+    "updated_at": "2025-03-05T08:30:09.719850+00:00",
+    "openstates_url": "https://openstates.org/person/beth-lear-6kz2qxrUd0sZKDzkKFGKVh/"
+  },
+  {
+    "id": "ocd-person/4cece9f3-e252-438b-8255-a2150a4ed599",
+    "name": "Bill Roemer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:oh/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Roemer",
+    "image": "https://www.legislature.ohio.gov/assets/people/bill-roemer/headshots/thumbnails/medium/bill-roemer-january-2019-headshot_medium.jpg",
+    "email": "rep31@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1956-08-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:47.030850+00:00",
+    "updated_at": "2025-03-05T08:30:42.372177+00:00",
+    "openstates_url": "https://openstates.org/person/bill-roemer-2L9ga2da6ie30UtRuPxVsH/"
+  },
+  {
+    "id": "ocd-person/cdc9f705-514e-4445-ac17-9aeac8f67e97",
+    "name": "Bob Peterson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:oh/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Peterson",
+    "image": "https://www.legislature.ohio.gov/assets/people/bob-peterson/headshots/thumbnails/medium/bob-peterson-november-2023-headshot_medium.jpg",
+    "email": "rep91@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1962-03-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:07.690853+00:00",
+    "updated_at": "2025-03-05T08:29:24.425509+00:00",
+    "openstates_url": "https://openstates.org/person/bob-peterson-6GJixtytiDZMEY2UuEDKLv/"
+  },
+  {
+    "id": "ocd-person/1895e223-ba42-4e25-8cd0-915ca5cc2829",
+    "name": "Brian Lampton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:oh/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Lampton",
+    "image": "https://www.legislature.ohio.gov/assets/people/brian-e-lampton/headshots/thumbnails/medium/brian-e-lampton-january-2023-headshot_medium.jpg",
+    "email": "rep70@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:11.236801+00:00",
+    "updated_at": "2025-03-05T08:30:30.867571+00:00",
+    "openstates_url": "https://openstates.org/person/brian-lampton-kOJO9ANxOEwXiwXSGPoID/"
+  },
+  {
+    "id": "ocd-person/a3ccce64-ea28-47dc-8bab-3af6ed2dd860",
+    "name": "Brian Lorenz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:oh/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Lorenz",
+    "image": "https://www.legislature.ohio.gov/assets/people/brian-lorenz/headshots/thumbnails/medium/brian-lorenz-november-2023-headshot_medium.jpg",
+    "email": "rep60@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-05-23T02:46:04.099865+00:00",
+    "updated_at": "2025-03-05T08:29:47.480256+00:00",
+    "openstates_url": "https://openstates.org/person/brian-lorenz-4z5LS2zb4qqsSorKqgIzQG/"
+  },
+  {
+    "id": "ocd-person/f4e6c51a-89bd-4841-848b-b1097fd3fc9d",
+    "name": "Brian Stewart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:oh/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Stewart",
+    "image": "https://www.legislature.ohio.gov/assets/people/brian-stewart/headshots/thumbnails/medium/brian-stewart-november-2023-headshot_medium.jpg",
+    "email": "rep12@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:16.627859+00:00",
+    "updated_at": "2025-03-05T08:29:29.860123+00:00",
+    "openstates_url": "https://openstates.org/person/brian-stewart-7S7aZjIm3SRQpZj2Yrxcqr/"
+  },
+  {
+    "id": "ocd-person/2481dfc7-d260-49c6-9461-9e6048ed27a2",
+    "name": "Bride Sweeney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:oh/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Bride",
+    "family_name": "Sweeney",
+    "image": "https://www.legislature.ohio.gov/assets/people/bride-rose-sweeney/headshots/thumbnails/medium/bride-rose-sweeney-january-2019-headshot_medium.jpg",
+    "email": "rep16@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:45.517089+00:00",
+    "updated_at": "2025-03-05T08:30:58.402945+00:00",
+    "openstates_url": "https://openstates.org/person/bride-sweeney-16t4jlBN8KHAVPPp0JOmkE/"
+  },
+  {
+    "id": "ocd-person/5ba7ae7d-2f10-42b7-8784-8e734507ce33",
+    "name": "Cecil Thomas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:oh/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Cecil",
+    "family_name": "Thomas",
+    "image": "https://www.legislature.ohio.gov/assets/people/cecil-thomas/headshots/thumbnails/medium/cecil-thomas-january-2023-headshot_medium.jpg",
+    "email": "rep25@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1952-10-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:04.491020+00:00",
+    "updated_at": "2026-01-28T01:55:31.757178+00:00",
+    "openstates_url": "https://openstates.org/person/cecil-thomas-2mwvoNLdpHsJkpohapA1P1/"
+  },
+  {
+    "id": "ocd-person/80daf159-0742-4a3f-9575-e6492155c911",
+    "name": "Chris Glassburn",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:oh/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Glassburn",
+    "image": "https://img1.wsimg.com/isteam/ip/fdba7286-8a27-4b98-a8ec-557eff11bd3a/IMG_3635.jpg/:/cr=t:5.66%25,l:0%25,w:94.34%25,h:94.34%25/rs=w:365,h:487,cg:true,m",
+    "email": "rep15@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:11.890937+00:00",
+    "updated_at": "2025-03-05T08:30:29.812717+00:00",
+    "openstates_url": "https://openstates.org/person/chris-glassburn-3v94eDDaCh9CjOfuvkmc2z/"
+  },
+  {
+    "id": "ocd-person/b76c6e1e-8b9d-42bf-b615-73270b132773",
+    "name": "Christine Cockley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:oh/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Christine",
+    "family_name": "Cockley",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ChristineCockley2024.jpg",
+    "email": "rep06@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:48:57.929106+00:00",
+    "updated_at": "2025-03-05T08:29:42.560080+00:00",
+    "openstates_url": "https://openstates.org/person/christine-cockley-5a79D3LmZlaKOQHMzEcKP5/"
+  },
+  {
+    "id": "ocd-person/9ae0194c-0f5b-44c6-b84f-a0ec4d3f3a61",
+    "name": "Cindy Abrams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:oh/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Cindy",
+    "family_name": "Abrams",
+    "image": "https://www.legislature.ohio.gov/assets/people/cindy-abrams/headshots/thumbnails/medium/cindy-abrams-january-2023-headshot_medium.jpg",
+    "email": "rep29@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "1973-11-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-28T06:12:53.272491+00:00",
+    "updated_at": "2025-05-15T01:48:09.862905+00:00",
+    "openstates_url": "https://openstates.org/person/cindy-abrams-4iFEN2mXxVk2yiJPN4iVH7/"
+  },
+  {
+    "id": "ocd-person/aede29b6-7798-45b7-8401-5004cf1c29f9",
+    "name": "Crystal Lett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:oh/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Crystal",
+    "family_name": "Lett",
+    "image": "https://i0.wp.com/lettsgoohio.com/wp-content/uploads/2024/07/Meet-Crystal.webp?resize=674%2C1024&ssl=1",
+    "email": "rep11@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "1986-02-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:10.579434+00:00",
+    "updated_at": "2025-03-05T08:30:02.992045+00:00",
+    "openstates_url": "https://openstates.org/person/crystal-lett-5JyC0MbfJhj5O7idwFQiVd/"
+  },
+  {
+    "id": "ocd-person/cb2ddd04-e5b0-4c96-b217-d02b732eb896",
+    "name": "D.J. Swearingen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:oh/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "D.J.",
+    "family_name": "Swearingen",
+    "image": "https://www.legislature.ohio.gov/assets/people/d-j-swearingen/headshots/thumbnails/medium/d-j-swearingen-january-2021-headshot_medium.jpg",
+    "email": "rep89@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1986-04-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-28T06:12:58.578100+00:00",
+    "updated_at": "2025-03-05T08:30:08.371942+00:00",
+    "openstates_url": "https://openstates.org/person/d-j-swearingen-6BOOvFbWLlOmfKstaxde10/"
+  },
+  {
+    "id": "ocd-person/04d4dc4f-a38a-4d50-8962-ea961550b2ff",
+    "name": "Dan Troy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:oh/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Troy",
+    "image": "https://www.legislature.ohio.gov/assets/people/daniel-p-troy/headshots/thumbnails/medium/daniel-p-troy-january-2021-headshot_medium.jpg",
+    "email": "rep23@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1948-06-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:12.227970+00:00",
+    "updated_at": "2025-03-05T08:30:35.114371+00:00",
+    "openstates_url": "https://openstates.org/person/dan-troy-97FIxvPXljhEyXGVgv7xX/"
+  },
+  {
+    "id": "ocd-person/1cc15373-6101-48fb-9597-d731c115eb70",
+    "name": "Dani Isaacsohn",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:oh/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Dani",
+    "family_name": "Isaacsohn",
+    "image": "https://www.legislature.ohio.gov/assets/people/dani-isaacsohn/headshots/thumbnails/medium/dani-isaacsohn-april-2023-headshot_medium.jpg",
+    "email": "rep24@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:36.748520+00:00",
+    "updated_at": "2025-03-05T08:30:16.898981+00:00",
+    "openstates_url": "https://openstates.org/person/dani-isaacsohn-sG8ONfvAmean6yxc3BkWW/"
+  },
+  {
+    "id": "ocd-person/a75181f0-f0e8-4af3-aefd-6cc08543af1a",
+    "name": "Darnell Brewer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:oh/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Darnell",
+    "family_name": "Brewer",
+    "image": "https://www.legislature.ohio.gov/assets/people/darnell-t-brewer/headshots/thumbnails/medium/darnell-t-brewer-january-2023-headshot_medium.jpg",
+    "email": "rep22@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:43.901657+00:00",
+    "updated_at": "2025-03-05T08:30:54.835199+00:00",
+    "openstates_url": "https://openstates.org/person/darnell-brewer-55ixzkKS58z4lPSrlRIZfW/"
+  },
+  {
+    "id": "ocd-person/170299dd-f2e4-463e-8b8b-ea3b75946120",
+    "name": "David Thomas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:oh/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Thomas",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DavidThomas2024.jpg",
+    "email": "rep65@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1993-04-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:05.914732+00:00",
+    "updated_at": "2025-03-05T20:28:17.442710+00:00",
+    "openstates_url": "https://openstates.org/person/david-thomas-hQ0ktkbmtJdlGckQvxXF2/"
+  },
+  {
+    "id": "ocd-person/826530cc-f105-42c8-96db-e5ff7d1a966d",
+    "name": "Derrick Hall",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:oh/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Derrick",
+    "family_name": "Hall",
+    "image": "https://derrickhallforohio.com/wp-content/uploads/2024/01/derrick-hall.jpg",
+    "email": "rep34@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:02.190803+00:00",
+    "updated_at": "2025-03-05T20:28:16.723448+00:00",
+    "openstates_url": "https://openstates.org/person/derrick-hall-3y3FIWPujrntMkR75RmPc5/"
+  },
+  {
+    "id": "ocd-person/86352961-5ebc-408a-9f16-8d801c7476dc",
+    "name": "Desire\u00e8 Tims",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:oh/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Desire\u00e8",
+    "family_name": "Tims",
+    "image": "https://images.squarespace-cdn.com/content/v1/651c6aab7b083a0ae328c9b0/bdc196f5-d426-4103-bd2c-a29517a8e9cf/headshot+state+rep.JPG?format=500w",
+    "email": "rep38@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "1970-10-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:01.224603+00:00",
+    "updated_at": "2025-03-05T20:28:01.186208+00:00",
+    "openstates_url": "https://openstates.org/person/desiree-tims-45FGXP4H2byti4t5exRglw/"
+  },
+  {
+    "id": "ocd-person/deed175e-5c44-48f0-b2c0-baa342b2baf1",
+    "name": "Diane Mullins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:oh/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Diane",
+    "family_name": "Mullins",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/401180/401180.jpg",
+    "email": "rep47@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:48:57.794212+00:00",
+    "updated_at": "2025-03-05T08:30:22.890274+00:00",
+    "openstates_url": "https://openstates.org/person/diane-mullins-6mee9PhtZAzZKeEwtAn2g5/"
+  },
+  {
+    "id": "ocd-person/74c1210d-fb56-4522-8d3a-0a2bb08c972b",
+    "name": "Dontavius Jarrells",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:oh/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Dontavius",
+    "family_name": "Jarrells",
+    "image": "https://www.legislature.ohio.gov/assets/people/dontavius-l-jarrells/headshots/thumbnails/medium/dontavius-l-jarrells-january-2021-headshot_medium.jpg",
+    "email": "rep01@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1988-04-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:16.023091+00:00",
+    "updated_at": "2025-05-15T01:48:05.989551+00:00",
+    "openstates_url": "https://openstates.org/person/dontavius-jarrells-3YJMwzOqsnDC7RL8DDUEHL/"
+  },
+  {
+    "id": "ocd-person/bfe003c4-6a28-46d6-b831-07bfe8662926",
+    "name": "Elgin Rogers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:oh/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Elgin",
+    "family_name": "Rogers",
+    "image": "https://www.legislature.ohio.gov/assets/people/elgin-rogers-jr/headshots/thumbnails/medium/elgin-rogers-jr-november-2022-headshot_medium.jpg",
+    "email": "rep42@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:38.448898+00:00",
+    "updated_at": "2025-03-05T08:30:00.990329+00:00",
+    "openstates_url": "https://openstates.org/person/elgin-rogers-5q3uNz8rafzW5Zhvm8XMZS/"
+  },
+  {
+    "id": "ocd-person/1ebfe182-1b49-4e69-b7f3-2fd528c70d73",
+    "name": "Eric Synenberg",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:oh/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Synenberg",
+    "image": "https://synenberg.com/wp-content/uploads/2018/07/synenberg-eric-e1532726812589.jpg",
+    "email": "rep21@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:05.359569+00:00",
+    "updated_at": "2025-03-05T08:29:54.444131+00:00",
+    "openstates_url": "https://openstates.org/person/eric-synenberg-w1SUmolFS1nWppUDPfd4t/"
+  },
+  {
+    "id": "ocd-person/ab851536-a9e6-45d7-b2fe-fad70f5acf07",
+    "name": "Erika White",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:oh/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Erika",
+    "family_name": "White",
+    "image": "https://i0.wp.com/erikaforohio.org/wp-content/uploads/2024/06/Erika_2024_enhanced.png?fit=600%2C742&ssl=1",
+    "email": "rep41@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:02.027995+00:00",
+    "updated_at": "2025-03-05T20:27:46.725173+00:00",
+    "openstates_url": "https://openstates.org/person/erika-white-5DeVQjNB9LkYn9TBJq0WxT/"
+  },
+  {
+    "id": "ocd-person/04e3c98a-4ede-4501-b914-4fa13fbad194",
+    "name": "Gary Click",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:oh/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Click",
+    "image": "https://www.legislature.ohio.gov/assets/people/gary-click/headshots/thumbnails/medium/gary-click-january-2023-headshot_medium.jpg",
+    "email": "rep88@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-12-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:16.709345+00:00",
+    "updated_at": "2025-05-15T01:47:35.903442+00:00",
+    "openstates_url": "https://openstates.org/person/gary-click-9E4EqoLlN3dhPLUxCuhoi/"
+  },
+  {
+    "id": "ocd-person/b29aadca-f2da-4f09-8a1d-7aa328768507",
+    "name": "Gayle Manning",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:oh/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Gayle",
+    "family_name": "Manning",
+    "image": "https://www.legislature.ohio.gov/assets/people/gayle-manning/headshots/thumbnails/medium/gayle-manning-january-2019-headshot_medium.jpg",
+    "email": "rep52@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "1950-03-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:07.860672+00:00",
+    "updated_at": "2025-03-05T08:30:37.628899+00:00",
+    "openstates_url": "https://openstates.org/person/gayle-manning-5R1K0G9oNUMFbghiqa69zD/"
+  },
+  {
+    "id": "ocd-person/82dd3548-078a-41a8-8c5b-6c652d88d0d2",
+    "name": "Haraz Ghanbari",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:oh/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Haraz",
+    "family_name": "Ghanbari",
+    "image": "https://www.legislature.ohio.gov/assets/people/haraz-n-ghanbari/headshots/thumbnails/medium/haraz-n-ghanbari-november-2023-headshot_medium.jpg",
+    "email": "rep75@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-04-10T05:16:34.848930+00:00",
+    "updated_at": "2025-05-15T01:47:29.461007+00:00",
+    "openstates_url": "https://openstates.org/person/haraz-ghanbari-3yw5soqVGkgc9ucFXd7Ohm/"
+  },
+  {
+    "id": "ocd-person/098614cd-1972-4b98-ade6-4f5fa7cefe5b",
+    "name": "Heidi Workman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:oh/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Heidi",
+    "family_name": "Workman",
+    "image": "https://www.record-courier.com/gcdn/authoring/authoring-images/2024/03/05/NREC/72855871007-heidi-workman.jpg?width=412&height=872&fit=crop&format=pjpg&auto=webp",
+    "email": "rep72@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "1980-12-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:48:59.493323+00:00",
+    "updated_at": "2025-03-05T08:29:50.140365+00:00",
+    "openstates_url": "https://openstates.org/person/heidi-workman-HyCmoY2kqSJzupupZNDZL/"
+  },
+  {
+    "id": "ocd-person/ed31c4e5-e835-4c4c-9352-217f5dcf1037",
+    "name": "Ismail Mohamed",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:oh/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Ismail",
+    "family_name": "Mohamed",
+    "image": "https://www.legislature.ohio.gov/assets/people/ismail-mohamed/headshots/thumbnails/medium/ismail-mohamed-january-2023-headshot_medium.jpg",
+    "email": "rep03@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:37.822000+00:00",
+    "updated_at": "2025-03-05T08:29:41.872792+00:00",
+    "openstates_url": "https://openstates.org/person/ismail-mohamed-7DZvPkPoFLtccvCS6kFCUR/"
+  },
+  {
+    "id": "ocd-person/9c459852-5ff7-4607-a09a-6ee2480dece1",
+    "name": "Jack Daniels",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:oh/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Daniels",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JackKDaniels24.png",
+    "email": "rep32@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-03T22:25:50.656310+00:00",
+    "updated_at": "2025-03-05T08:30:23.535247+00:00",
+    "openstates_url": "https://openstates.org/person/jack-daniels-4ksbhDTGuuwiOivsYViJ9N/"
+  },
+  {
+    "id": "ocd-person/4b7cbc16-7a67-4a61-8fd5-77a857270774",
+    "name": "Jamie Callender",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:oh/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jamie",
+    "family_name": "Callender",
+    "image": "https://www.legislature.ohio.gov/assets/people/jamie-callender/headshots/thumbnails/medium/jamie-callender-january-2021-headshot_medium.jpg",
+    "email": "rep57@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-01-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:51.097932+00:00",
+    "updated_at": "2025-05-15T01:48:02.745142+00:00",
+    "openstates_url": "https://openstates.org/person/jamie-callender-2IRQYxUwRkR02rkVs19QDU/"
+  },
+  {
+    "id": "ocd-person/fbd5ca34-d2ed-41d0-a0f8-03ee8eca8a4d",
+    "name": "Jason Stephens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:oh/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Stephens",
+    "image": "https://www.legislature.ohio.gov/assets/people/jason-stephens/headshots/thumbnails/medium/jason-stephens-november-2023-headshot_medium.jpg",
+    "email": "rep93@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-28T06:12:54.871225+00:00",
+    "updated_at": "2025-03-05T08:31:01.317123+00:00",
+    "openstates_url": "https://openstates.org/person/jason-stephens-7fCm89zZiHCl9xdLD23Haf/"
+  },
+  {
+    "id": "ocd-person/392629a2-7bb2-47df-8128-d4cd7d858324",
+    "name": "Jean Schmidt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:oh/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jean",
+    "family_name": "Schmidt",
+    "image": "",
+    "email": "rep62@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "1951-11-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:15.329204+00:00",
+    "updated_at": "2025-03-05T08:31:00.187906+00:00",
+    "openstates_url": "https://openstates.org/person/jean-schmidt-1jq0BZhtm0XvpB5kQGmMhY/"
+  },
+  {
+    "id": "ocd-person/60fdc824-a8ab-44fa-80ca-053d8698218e",
+    "name": "Jeff LaRe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:oh/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "LaRe",
+    "image": "https://www.legislature.ohio.gov/assets/people/jeff-lare/headshots/thumbnails/medium/jeff-lare-january-2021-headshot_medium.jpg",
+    "email": "rep73@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1976-02-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-28T06:12:53.382863+00:00",
+    "updated_at": "2025-03-05T20:28:10.133179+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-lare-2x1F0FnFrPk8DGPnEkD68E/"
+  },
+  {
+    "id": "ocd-person/4817cf28-df1f-4ccc-bc09-25809222e530",
+    "name": "Jennifer Gross",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:oh/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jennifer",
+    "family_name": "Gross",
+    "image": "https://www.legislature.ohio.gov/assets/people/jennifer-gross/headshots/thumbnails/medium/jennifer-gross-july-2023-headshot_medium.jpg",
+    "email": "rep45@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:13.665358+00:00",
+    "updated_at": "2025-03-05T08:29:56.900552+00:00",
+    "openstates_url": "https://openstates.org/person/jennifer-gross-2C2KMJWyJzu3UQpSXStIhM/"
+  },
+  {
+    "id": "ocd-person/1a598246-01e8-44c8-beca-2c41e1bafb77",
+    "name": "Jim Hoops",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:oh/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Hoops",
+    "image": "https://www.legislature.ohio.gov/assets/people/james-m-hoops/headshots/thumbnails/medium/james-m-hoops-january-2021-headshot_medium.jpg",
+    "email": "rep81@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1959-03-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:17.281746+00:00",
+    "updated_at": "2025-04-24T01:54:38.994795+00:00",
+    "openstates_url": "https://openstates.org/person/jim-hoops-nihmX9K7LGT5Zh6TBvwcJ/"
+  },
+  {
+    "id": "ocd-person/ba95511f-3692-426c-bf85-c41ff737eeec",
+    "name": "Jim Thomas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:oh/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Thomas",
+    "image": "https://www.legislature.ohio.gov/assets/people/jim-thomas/headshots/thumbnails/medium/jim-thomas-november-2023-headshot_medium.jpg",
+    "email": "rep49@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1974-09-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:39.337856+00:00",
+    "updated_at": "2025-03-05T08:30:50.668031+00:00",
+    "openstates_url": "https://openstates.org/person/jim-thomas-5g4oGoQqlpyBWZ8TQOfovU/"
+  },
+  {
+    "id": "ocd-person/f1715f7b-6a29-4dd2-a34f-b94c87088890",
+    "name": "Jodi Salvo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:oh/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jodi",
+    "family_name": "Salvo",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JodiSalvo.jpg",
+    "email": "rep51@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "1969-07-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:48:59.032854+00:00",
+    "updated_at": "2025-03-05T08:31:01.983976+00:00",
+    "openstates_url": "https://openstates.org/person/jodi-salvo-7LaxfSdenQKUxigWUsgPmy/"
+  },
+  {
+    "id": "ocd-person/9b5a9ff9-b35a-49aa-aa64-5d2bab574843",
+    "name": "Joe Miller",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:oh/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Miller",
+    "image": "https://www.legislature.ohio.gov/assets/people/joseph-a-miller-iii/headshots/thumbnails/medium/joseph-a-miller-iii-january-2021-headshot_medium.jpg",
+    "email": "rep53@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:51.427153+00:00",
+    "updated_at": "2026-04-04T01:53:04.978116+00:00",
+    "openstates_url": "https://openstates.org/person/joe-miller-4j9E2CdPT7Rti8BSHgRLBT/"
+  },
+  {
+    "id": "ocd-person/9d7cc971-9ed9-4918-b93f-39d41d35e565",
+    "name": "Johnathan Newman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:oh/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Johnathan",
+    "family_name": "Newman",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JohnathanNewman2024.jpeg",
+    "email": "rep80@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1968-07-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:10.929799+00:00",
+    "updated_at": "2025-03-05T08:30:35.568968+00:00",
+    "openstates_url": "https://openstates.org/person/johnathan-newman-4nAp20yAkEAwtMN0OY5cYP/"
+  },
+  {
+    "id": "ocd-person/1e52d1da-3e5c-442e-a460-d63b62709edf",
+    "name": "Josh Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:oh/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Williams",
+    "image": "https://www.legislature.ohio.gov/assets/people/josh-williams/headshots/thumbnails/medium/josh-williams-january-2023-headshot_medium.jpg",
+    "email": "rep44@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:42.122786+00:00",
+    "updated_at": "2025-03-05T08:30:47.843828+00:00",
+    "openstates_url": "https://openstates.org/person/josh-williams-vDcLeBghq36eQZ89so5yJ/"
+  },
+  {
+    "id": "ocd-person/ede2c8b0-9c35-4ebf-9a4a-4349fe4cc224",
+    "name": "Juanita Brent",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:oh/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Juanita",
+    "family_name": "Brent",
+    "image": "https://www.legislature.ohio.gov/assets/people/juanita-o-brent/headshots/thumbnails/medium/juanita-o-brent-january-2019-headshot_medium.jpg",
+    "email": "rep18@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:46.201768+00:00",
+    "updated_at": "2025-03-05T08:29:35.862664+00:00",
+    "openstates_url": "https://openstates.org/person/juanita-brent-7Esoxx82JGTxfhGx1JbHHQ/"
+  },
+  {
+    "id": "ocd-person/9892fcd7-9432-425f-85a6-7599fbe3177d",
+    "name": "Justin Pizzulli",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:oh/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Pizzulli",
+    "image": "https://www.legislature.ohio.gov/assets/people/justin-pizzulli/headshots/thumbnails/medium/justin-pizzulli-july-2023-headshot_medium.jpg",
+    "email": "rep90@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-04T19:15:26.685637+00:00",
+    "updated_at": "2025-03-05T08:29:57.996326+00:00",
+    "openstates_url": "https://openstates.org/person/justin-pizzulli-4du0RsRfAwA5T4qpaKcSJZ/"
+  },
+  {
+    "id": "ocd-person/a13af74a-5ade-4769-8a76-db942fe71002",
+    "name": "Karen Brownlee",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:oh/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Brownlee",
+    "image": "https://www.gongwer-oh.com/public/KarenBrownlee_Cropped.png",
+    "email": "rep28@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:11.086627+00:00",
+    "updated_at": "2025-03-05T08:29:46.161227+00:00",
+    "openstates_url": "https://openstates.org/person/karen-brownlee-4uEi9aacePtqbkyXcyN0xm/"
+  },
+  {
+    "id": "ocd-person/97821235-4116-44d1-b58b-acf822bbdc58",
+    "name": "Kellie Deeter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:oh/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Kellie",
+    "family_name": "Deeter",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kellie_Deeter_20240829_073240.jpg",
+    "email": "rep54@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:02.493402+00:00",
+    "updated_at": "2025-03-05T08:30:39.404156+00:00",
+    "openstates_url": "https://openstates.org/person/kellie-deeter-4btHbrwi65giSXnYi3xiqu/"
+  },
+  {
+    "id": "ocd-person/cefb7a31-f46c-4145-9f38-901be3b70e60",
+    "name": "Kevin Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:oh/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Miller",
+    "image": "https://www.legislature.ohio.gov/assets/people/kevin-d-miller/headshots/thumbnails/medium/kevin-d-miller-january-2021-headshot_medium.jpg",
+    "email": "rep69@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-12-16T19:07:21.805395+00:00",
+    "updated_at": "2025-03-05T08:30:05.671993+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-miller-6IZLNTklqNNV1Ll3ayiwM4/"
+  },
+  {
+    "id": "ocd-person/94df9e98-c52e-466a-ba6b-29cc21ee02ea",
+    "name": "Kevin Ritter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:oh/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Ritter",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kevin_KevinRitter_20240808_092548.jpg",
+    "email": "rep94@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1967-08-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:48:58.281313+00:00",
+    "updated_at": "2025-03-05T08:29:43.239860+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-ritter-4Wv3e1bNYClzer8eYBGVxq/"
+  },
+  {
+    "id": "ocd-person/b2c76bf8-569f-4e80-bd3d-fa8273a8356c",
+    "name": "Latyna Humphrey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:oh/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Latyna",
+    "family_name": "Humphrey",
+    "image": "https://www.legislature.ohio.gov/assets/people/latyna-m-humphrey/headshots/thumbnails/medium/latyna-m-humphrey-january-2023-headshot_medium.jpg",
+    "email": "rep02@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-12-16T19:07:20.115912+00:00",
+    "updated_at": "2025-03-05T08:30:11.660360+00:00",
+    "openstates_url": "https://openstates.org/person/latyna-humphrey-5RLlkeeW5XFEABWK4uSXFc/"
+  },
+  {
+    "id": "ocd-person/19cbe255-2cdb-47c4-b70a-693b6bf6665b",
+    "name": "Lauren McNally",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:oh/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Lauren",
+    "family_name": "McNally",
+    "image": "https://www.legislature.ohio.gov/assets/people/lauren-mcnally/headshots/thumbnails/medium/lauren-mcnally-february-2023-headshot_medium.jpg",
+    "email": "rep58@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:39.285100+00:00",
+    "updated_at": "2025-03-05T08:30:45.256888+00:00",
+    "openstates_url": "https://openstates.org/person/lauren-mcnally-mfyyTTPs2xIOTZ1ulJvQJ/"
+  },
+  {
+    "id": "ocd-person/1dcb1bfa-861d-4d16-8d7d-02364e1b4def",
+    "name": "Levi Dean",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:oh/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Levi",
+    "family_name": "Dean",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/678132/678132.jpg",
+    "email": "rep71@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:08.912967+00:00",
+    "updated_at": "2025-03-05T08:29:30.317756+00:00",
+    "openstates_url": "https://openstates.org/person/levi-dean-uDb7MATJXDfquOPAZw75z/"
+  },
+  {
+    "id": "ocd-person/e4f9416c-1043-4737-899e-31410e94af1d",
+    "name": "Marilyn John",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:oh/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Marilyn",
+    "family_name": "John",
+    "image": "https://www.legislature.ohio.gov/assets/people/marilyn-s-john/headshots/thumbnails/medium/marilyn-s-john-january-2023-headshot_medium.jpg",
+    "email": "rep76@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:16.441435+00:00",
+    "updated_at": "2025-03-05T08:30:06.556236+00:00",
+    "openstates_url": "https://openstates.org/person/marilyn-john-6y49xZmnvQo4m8CR32P8Y9/"
+  },
+  {
+    "id": "ocd-person/292d1329-8a45-402b-8d6e-8f3b4726187a",
+    "name": "Mark Hiner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:oh/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Hiner",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Mark_Hiner.jpg",
+    "email": "rep98@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:09.261918+00:00",
+    "updated_at": "2025-03-05T08:30:25.991895+00:00",
+    "openstates_url": "https://openstates.org/person/mark-hiner-1FhHeHEBpSQ2RSMJhbbV1u/"
+  },
+  {
+    "id": "ocd-person/4af0e8db-ad18-424f-abfa-ce31e37c0b7d",
+    "name": "Mark Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:oh/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Johnson",
+    "image": "https://www.legislature.ohio.gov/assets/people/mark-johnson/headshots/thumbnails/medium/mark-johnson-january-2021-headshot_medium.jpg",
+    "email": "rep92@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:13.630395+00:00",
+    "updated_at": "2025-03-05T08:30:07.709874+00:00",
+    "openstates_url": "https://openstates.org/person/mark-johnson-2HPWkN8oVIqrCRvvTSzSTF/"
+  },
+  {
+    "id": "ocd-person/8750be20-9a0c-41e4-bb32-4061c787a7e2",
+    "name": "Mark Sigrist",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:oh/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Sigrist",
+    "image": "https://images.squarespace-cdn.com/content/v1/662d9bb55b29343555b12d33/fdca756a-8e4a-41ea-aed9-0ec72d720e82/cropped.jpg?format=750w",
+    "email": "rep10@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1961-10-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:03.099750+00:00",
+    "updated_at": "2025-03-05T08:29:57.357352+00:00",
+    "openstates_url": "https://openstates.org/person/mark-sigrist-47KrXsmF9FAbGlXCDPRC8g/"
+  },
+  {
+    "id": "ocd-person/23d51717-c6eb-4a2c-bd55-038c72593a61",
+    "name": "Matt Huffman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:oh/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Huffman",
+    "image": "https://www.legislature.ohio.gov/assets/people/matt-huffman/headshots/thumbnails/medium/matt-huffman-may-2023-headshot_medium.jpg",
+    "email": "rep78@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1960-04-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:08.491275+00:00",
+    "updated_at": "2025-03-05T08:29:25.432095+00:00",
+    "openstates_url": "https://openstates.org/person/matt-huffman-15c73zM6yEgimLB24Dc4LR/"
+  },
+  {
+    "id": "ocd-person/7ab0cf86-d569-4a6e-8677-8cd7721a9475",
+    "name": "Matt Kishman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:oh/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Kishman",
+    "image": "https://images.squarespace-cdn.com/content/v1/65a09d4d50790252eca6f810/be978e73-e9f1-4978-9bcf-9553f9a6d410/Kishman+Matthew_2270.jpg?format=500w",
+    "email": "rep50@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:03.732679+00:00",
+    "updated_at": "2025-03-05T20:28:14.343946+00:00",
+    "openstates_url": "https://openstates.org/person/matt-kishman-3jVrj9elOqCgxLRTrAV0dx/"
+  },
+  {
+    "id": "ocd-person/fb957ddc-f41c-400d-ae32-47f7e729555b",
+    "name": "Melanie Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:oh/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Melanie",
+    "family_name": "Miller",
+    "image": "https://www.legislature.ohio.gov/assets/people/melanie-miller/headshots/thumbnails/medium/melanie-miller-january-2023-headshot_medium.jpg",
+    "email": "rep67@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:38.390256+00:00",
+    "updated_at": "2025-03-05T08:30:52.104078+00:00",
+    "openstates_url": "https://openstates.org/person/melanie-miller-7ejOIedO2upYKucPttPCCx/"
+  },
+  {
+    "id": "ocd-person/75257af6-5d83-4d3b-b127-744aaa377c9f",
+    "name": "Meredith Craig",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:oh/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Meredith",
+    "family_name": "Craig",
+    "image": "https://www.meredithcraigforohio.com/dejilah/sites/522/2024/08/craig-new-photo.png",
+    "email": "rep77@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:05.121677+00:00",
+    "updated_at": "2025-03-05T08:30:13.864095+00:00",
+    "openstates_url": "https://openstates.org/person/meredith-craig-3Z3EJF2n9UOYXqSgw2ijzb/"
+  },
+  {
+    "id": "ocd-person/4b1e7c00-c159-407e-83d8-2eb24ba175db",
+    "name": "Meredith Lawson\u2010Rowe",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:oh/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Meredith",
+    "family_name": "Lawson\u2010Rowe",
+    "image": "https://thenewamericansmag.com/wp-content/uploads/2024/03/Meredith-Lawson-Rowe.jpg",
+    "email": "rep05@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:04.471175+00:00",
+    "updated_at": "2025-03-05T20:28:39.463353+00:00",
+    "openstates_url": "https://openstates.org/person/meredith-lawson-rowe-2HkM4BVVJNIKoDJvxXrDad/"
+  },
+  {
+    "id": "ocd-person/100ae6b0-0c5d-4b97-9ac5-8ccb42b9168b",
+    "name": "Michele Grim",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:oh/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Michele",
+    "family_name": "Grim",
+    "image": "https://www.legislature.ohio.gov/assets/people/michele-grim/headshots/thumbnails/medium/michele-grim-november-2023-headshot_medium.jpg",
+    "email": "rep43@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:42.395955+00:00",
+    "updated_at": "2025-03-05T08:31:02.654646+00:00",
+    "openstates_url": "https://openstates.org/person/michele-grim-UGrGDsYufWLiPD175Lsk7/"
+  },
+  {
+    "id": "ocd-person/d06c06f8-2f63-4a29-8388-ed0747b97f48",
+    "name": "Michelle Teska",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:oh/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Teska",
+    "image": "https://static.wixstatic.com/media/57b3a5_db008a611c184fbeb2cf20bb55a41080~mv2.jpg/v1/fill/w_689,h_812,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Michelle%20(15%20of%2024)%20(1)_edited.jpg",
+    "email": "rep55@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:10.762698+00:00",
+    "updated_at": "2026-04-04T01:53:07.605939+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-teska-6LHltqUvHzqVSG7CGqoR2m/"
+  },
+  {
+    "id": "ocd-person/cc85c295-299f-4de7-bb56-1de3a451951e",
+    "name": "Mike Dovilla",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:oh/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Dovilla",
+    "image": "http://www.ohiohouse.gov/Assets/Headshots/Small/7.jpg",
+    "email": "rep17@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1975-03-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-16T02:06:42.861793+00:00",
+    "updated_at": "2025-03-05T20:28:30.016657+00:00",
+    "openstates_url": "https://openstates.org/person/mike-dovilla-6DvYv53AHvQZ3i2iKEgp14/"
+  },
+  {
+    "id": "ocd-person/72bb7360-10c1-42d9-8781-32ddf8fef5fd",
+    "name": "Mike Odioso",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:oh/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Odioso",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MikeOdioso2024.jpg",
+    "email": "rep30@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1963-02-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:08.308650+00:00",
+    "updated_at": "2025-03-05T08:30:17.539620+00:00",
+    "openstates_url": "https://openstates.org/person/mike-odioso-3UUn0bDsgO0gmeqPaZWC3Z/"
+  },
+  {
+    "id": "ocd-person/062b9622-c2fa-4af2-bbea-704f0450dd47",
+    "name": "Monica Blasdel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:oh/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Monica",
+    "family_name": "Blasdel",
+    "image": "https://www.legislature.ohio.gov/assets/people/monica-robb-blasdel/headshots/thumbnails/medium/monica-robb-blasdel-january-2023-headshot_medium.jpg",
+    "email": "rep79@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:38.014282+00:00",
+    "updated_at": "2025-03-05T08:31:00.672031+00:00",
+    "openstates_url": "https://openstates.org/person/monica-blasdel-Bds7wJKkC3zIO0vmB5iaN/"
+  },
+  {
+    "id": "ocd-person/538fefb8-d8ae-48f5-bb07-4161e2ccac55",
+    "name": "Munira Abdullahi",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:oh/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Munira",
+    "family_name": "Abdullahi",
+    "image": "https://www.legislature.ohio.gov/assets/people/munira-abdullahi/headshots/thumbnails/medium/munira-yasin-abdullahi-february-2023-headshot_medium.jpg",
+    "email": "rep09@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:39.875593+00:00",
+    "updated_at": "2025-03-05T08:29:32.959069+00:00",
+    "openstates_url": "https://openstates.org/person/munira-abdullahi-2Xg8orkSylu1FtZmU7uQlR/"
+  },
+  {
+    "id": "ocd-person/64305698-f25c-486e-b57f-00298cfbe15d",
+    "name": "Nick Santucci",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:oh/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Santucci",
+    "image": "https://www.legislature.ohio.gov/assets/people/nick-santucci/headshots/thumbnails/medium/nick-santucci-january-2023-headshot_medium.jpg",
+    "email": "rep64@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:43.581583+00:00",
+    "updated_at": "2025-03-05T08:30:03.663981+00:00",
+    "openstates_url": "https://openstates.org/person/nick-santucci-333K2xRvoB4Krjk30GeYxB/"
+  },
+  {
+    "id": "ocd-person/1e218942-95f6-43fe-b935-b19ab70fd5fc",
+    "name": "Phil Plummer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:oh/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Plummer",
+    "image": "https://www.legislature.ohio.gov/assets/people/phil-plummer/headshots/thumbnails/medium/phil-plummer-january-2021-headshot_medium.jpg",
+    "email": "rep39@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:50.301650+00:00",
+    "updated_at": "2025-03-05T08:30:04.771809+00:00",
+    "openstates_url": "https://openstates.org/person/phil-plummer-ur5wZdp0eZpfzjh5CUy2W/"
+  },
+  {
+    "id": "ocd-person/78d5adbb-ec6a-4212-9cc7-335f5d9ded8c",
+    "name": "Phil Robinson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:oh/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Robinson",
+    "image": "https://www.legislature.ohio.gov/assets/people/phillip-m-robinson-jr/headshots/thumbnails/medium/phillip-m-robinson-jr-january-2019-headshot_medium.jpg",
+    "email": "rep19@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:50.817827+00:00",
+    "updated_at": "2025-03-05T08:30:22.415940+00:00",
+    "openstates_url": "https://openstates.org/person/phil-robinson-3g0jIdG56AaWvuk9uLbuDU/"
+  },
+  {
+    "id": "ocd-person/36f320a8-be34-43c2-ac73-ee87fbce6b0c",
+    "name": "Rachel Baker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:oh/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Rachel",
+    "family_name": "Baker",
+    "image": "https://www.legislature.ohio.gov/assets/people/rachel-b-baker/headshots/thumbnails/medium/rachel-b-baker-january-2023-headshot_medium.jpg",
+    "email": "rep27@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:39.170687+00:00",
+    "updated_at": "2025-03-05T08:29:31.660368+00:00",
+    "openstates_url": "https://openstates.org/person/rachel-baker-1fgh6cBxdbfwNhR3BjH6aK/"
+  },
+  {
+    "id": "ocd-person/d6ca7e4f-dcf2-4aad-a919-a2740bae649a",
+    "name": "Riordan McClain",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:oh/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Riordan",
+    "family_name": "McClain",
+    "image": "https://www.legislature.ohio.gov/assets/people/riordan-t-mcclain/headshots/thumbnails/medium/riordan-t-mcclain-january-2021-headshot_medium.jpg",
+    "email": "rep87@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:01.531971+00:00",
+    "updated_at": "2025-03-05T08:29:55.092807+00:00",
+    "openstates_url": "https://openstates.org/person/riordan-mcclain-6XItepu2GZ3byOmm6rhoEs/"
+  },
+  {
+    "id": "ocd-person/c34a852a-71fc-4b21-a594-bc4a75b799c8",
+    "name": "Rodney Creech",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:oh/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Rodney",
+    "family_name": "Creech",
+    "image": "https://www.legislature.ohio.gov/assets/people/rodney-creech/headshots/thumbnails/medium/rodney-creech-january-2021-headshot_medium.jpg",
+    "email": "rep40@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1976-06-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:13.227483+00:00",
+    "updated_at": "2026-04-04T01:52:47.693585+00:00",
+    "openstates_url": "https://openstates.org/person/rodney-creech-5wVYh1QSqxW4nSXYcsDDUO/"
+  },
+  {
+    "id": "ocd-person/52608475-9678-45ce-823a-74f9c931682c",
+    "name": "Ron Ferguson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:oh/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Ferguson",
+    "image": "https://www.legislature.ohio.gov/assets/people/ron-ferguson/headshots/thumbnails/medium/ron-ferguson-january-2021-headshot_medium.jpg",
+    "email": "rep96@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:11.154480+00:00",
+    "updated_at": "2025-05-15T01:47:33.016168+00:00",
+    "openstates_url": "https://openstates.org/person/ron-ferguson-2VRTinfx97QVZ3z91BUfwS/"
+  },
+  {
+    "id": "ocd-person/73e72147-0d40-4478-bbf6-3419f0e00b46",
+    "name": "Roy Klopfenstein",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:oh/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Roy",
+    "family_name": "Klopfenstein",
+    "image": "https://www.legislature.ohio.gov/assets/people/roy-klopfenstein/headshots/thumbnails/medium/roy-klopfenstein-january-2023-headshot_medium.jpg",
+    "email": "rep82@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:36.807526+00:00",
+    "updated_at": "2025-03-05T08:29:43.899913+00:00",
+    "openstates_url": "https://openstates.org/person/roy-klopfenstein-3Whk96YWIUPMZLMiSejMt4/"
+  },
+  {
+    "id": "ocd-person/5b3a7d10-e745-4985-ade9-d7fff6ae6af4",
+    "name": "Sarah Fowler Arthur",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:oh/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Sarah",
+    "family_name": "Fowler Arthur",
+    "image": "https://www.legislature.ohio.gov/assets/people/sarah-fowler-arthur/headshots/thumbnails/medium/sarah-fowler-arthur-february-2023-headshot_medium.jpg",
+    "email": "rep99@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:14.147463+00:00",
+    "updated_at": "2025-03-05T08:30:43.677267+00:00",
+    "openstates_url": "https://openstates.org/person/sarah-fowler-arthur-2m91vWJ5rp2CdJG7L46g8i/"
+  },
+  {
+    "id": "ocd-person/52424e91-a002-4908-a205-4ea27cfe68da",
+    "name": "Scott Oelslager",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:oh/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Oelslager",
+    "image": "https://www.legislature.ohio.gov/assets/people/scott-oelslager/headshots/thumbnails/medium/scott-oelslager-february-2023-headshot_medium.jpg",
+    "email": "rep48@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1953-10-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:10.603228+00:00",
+    "updated_at": "2025-03-05T08:30:46.995836+00:00",
+    "openstates_url": "https://openstates.org/person/scott-oelslager-2VDfjbkRo2IQaBrjNM3gCY/"
+  },
+  {
+    "id": "ocd-person/993f089c-60bf-418d-9704-fa92e4f01c71",
+    "name": "Sean Brennan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:oh/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Sean",
+    "family_name": "Brennan",
+    "image": "https://www.legislature.ohio.gov/assets/people/sean-p-brennan/headshots/thumbnails/medium/sean-p-brennan-january-2023-headshot_medium.jpg",
+    "email": "rep14@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1970-01-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:40.559811+00:00",
+    "updated_at": "2025-03-05T08:29:37.158678+00:00",
+    "openstates_url": "https://openstates.org/person/sean-brennan-4fAdDFyXlwZDoKW8Sn824X/"
+  },
+  {
+    "id": "ocd-person/352d7ee9-256c-4195-a673-17b7ee200948",
+    "name": "Sharon Ray",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:oh/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Sharon",
+    "family_name": "Ray",
+    "image": "https://www.legislature.ohio.gov/assets/people/sharon-a-ray/headshots/thumbnails/medium/sharon-a-ray-january-2021-headshot_medium.jpg",
+    "email": "rep66@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:10.920445+00:00",
+    "updated_at": "2025-04-24T01:54:20.451321+00:00",
+    "openstates_url": "https://openstates.org/person/sharon-ray-1cLNriu9YiGTRnFS2xayV6/"
+  },
+  {
+    "id": "ocd-person/854b6ce3-a4e1-46db-959a-aa286e4e8942",
+    "name": "Steve Demetriou",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:oh/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Demetriou",
+    "image": "https://www.legislature.ohio.gov/assets/people/steve-demetriou/headshots/thumbnails/medium/steve-demetriou-january-2023-headshot_medium.jpg",
+    "email": "rep35@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:44.275240+00:00",
+    "updated_at": "2025-04-24T08:04:45.294659+00:00",
+    "openstates_url": "https://openstates.org/person/steve-demetriou-43WRpq5ZxIlM343aBK8p9e/"
+  },
+  {
+    "id": "ocd-person/a4c53220-d4a7-4591-b2d8-109516dc9401",
+    "name": "Terrence Upchurch",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:oh/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Terrence",
+    "family_name": "Upchurch",
+    "image": "https://www.legislature.ohio.gov/assets/people/terrence-upchurch/headshots/thumbnails/medium/terrence-upchurch-january-2021-headshot_medium.jpg",
+    "email": "rep20@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "1988-10-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:49.211618+00:00",
+    "updated_at": "2025-03-05T08:30:20.681669+00:00",
+    "openstates_url": "https://openstates.org/person/terrence-upchurch-50urLEw31mmP0Y0QozWFe5/"
+  },
+  {
+    "id": "ocd-person/16e469e4-8014-4ba2-8fc4-91804d6ef491",
+    "name": "Tex Fischer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:oh/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Tex",
+    "family_name": "Fischer",
+    "image": "https://ogden_images.s3.amazonaws.com/www.salemnews.net/images/2024/06/27232837/Fischer-Tex.jpg",
+    "email": "rep59@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-08T23:43:34.831465+00:00",
+    "updated_at": "2025-03-05T08:30:18.555541+00:00",
+    "openstates_url": "https://openstates.org/person/tex-fischer-hCDQIq4cAaCTXnIlMnTLF/"
+  },
+  {
+    "id": "ocd-person/081534e7-8952-47f0-a722-ed627fb32069",
+    "name": "Thad Claggett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:oh/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Thad",
+    "family_name": "Claggett",
+    "image": "https://www.legislature.ohio.gov/assets/people/thaddeus-j-claggett/headshots/thumbnails/medium/thaddeus-j-claggett-january-2023-headshot_medium.jpg",
+    "email": "rep68@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:42.170941+00:00",
+    "updated_at": "2025-03-05T08:29:49.489669+00:00",
+    "openstates_url": "https://openstates.org/person/thad-claggett-FFd433ZmtCyoJpZ5ipPsf/"
+  },
+  {
+    "id": "ocd-person/7948afad-ec3c-4e4c-a073-305fb8cd1b21",
+    "name": "Thomas Hall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:oh/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Thomas",
+    "family_name": "Hall",
+    "image": "https://www.legislature.ohio.gov/assets/people/thomas-hall/headshots/thumbnails/medium/thomas-hall-january-2021-headshot_medium.jpg",
+    "email": "rep46@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:16.771504+00:00",
+    "updated_at": "2025-03-05T20:27:42.725385+00:00",
+    "openstates_url": "https://openstates.org/person/thomas-hall-3grHvxwh3Erckvaz2bpcqv/"
+  },
+  {
+    "id": "ocd-person/fa5ff978-34ff-49d1-958e-4e356a8ef9d4",
+    "name": "Tim Barhorst",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:oh/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Barhorst",
+    "image": "https://www.legislature.ohio.gov/assets/people/tim-barhorst/headshots/thumbnails/medium/tim-barhorst-january-2023-headshot_medium.jpg",
+    "email": "rep85@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:42.070296+00:00",
+    "updated_at": "2025-03-05T08:29:40.536053+00:00",
+    "openstates_url": "https://openstates.org/person/tim-barhorst-7cRwPrMBKStVGOSR7u5ZfY/"
+  },
+  {
+    "id": "ocd-person/d2ecec1d-db13-4a47-836b-9e75f3a31c78",
+    "name": "Tom Young",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:oh/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Young",
+    "image": "https://www.legislature.ohio.gov/assets/people/tom-young/headshots/thumbnails/medium/tom-young-january-2021-headshot_medium.jpg",
+    "email": "rep37@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:12.757958+00:00",
+    "updated_at": "2025-03-05T08:30:55.724174+00:00",
+    "openstates_url": "https://openstates.org/person/tom-young-6Q0f4YJWF8HdYEbm8tF8OG/"
+  },
+  {
+    "id": "ocd-person/7bcb4dfa-e4d3-46cd-b158-057b1b4b9a0a",
+    "name": "Tracy Richardson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:oh/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Tracy",
+    "family_name": "Richardson",
+    "image": "https://www.legislature.ohio.gov/assets/people/tracy-m-richardson/headshots/thumbnails/medium/tracy-m-richardson-january-2023-headshot_medium.jpg",
+    "email": "rep86@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "1965-01-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:49.700011+00:00",
+    "updated_at": "2025-03-05T08:30:26.667655+00:00",
+    "openstates_url": "https://openstates.org/person/tracy-richardson-3laxvwFXKBsGJ9fq6uHTvG/"
+  },
+  {
+    "id": "ocd-person/18864718-3e48-4236-9afb-b1a61e4c52e2",
+    "name": "Tristan Rader",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:oh/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Tristan",
+    "family_name": "Rader",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TristanRader2.jpg",
+    "email": "rep13@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:49:12.238802+00:00",
+    "updated_at": "2025-03-05T08:29:30.993017+00:00",
+    "openstates_url": "https://openstates.org/person/tristan-rader-kHBDVibpWbufW24jsEDxK/"
+  },
+  {
+    "id": "ocd-person/09c752d1-59eb-4f43-b401-5092d801f4c1",
+    "name": "Ty Mathews",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:oh/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Ty",
+    "family_name": "Mathews",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TyMathews2024.jpg",
+    "email": "rep83@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:48:59.927312+00:00",
+    "updated_at": "2025-03-05T20:28:08.867187+00:00",
+    "openstates_url": "https://openstates.org/person/ty-mathews-IS1MimdyogXqBxQYlrxBZ/"
+  },
+  {
+    "id": "ocd-person/392b392f-7424-4826-9f65-6b84a805473b",
+    "name": "Ty Moore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:oh/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Ty",
+    "family_name": "Moore",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ty_Moore.jpg",
+    "email": "rep95@ohiohouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-07-17T08:01:38.636201+00:00",
+    "updated_at": "2026-04-04T01:52:43.059984+00:00",
+    "openstates_url": "https://openstates.org/person/ty-moore-1jsJZqnhskjjUBXISeD1Ex/"
+  },
+  {
+    "id": "ocd-person/8b367fce-9be2-4848-837a-a475c3d531e4",
+    "name": "Veronica Sims",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:oh/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Veronica",
+    "family_name": "Sims",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Veronica_Sims.jpg",
+    "email": "rep33@ohiohouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-03T22:25:35.839307+00:00",
+    "updated_at": "2025-03-05T20:28:36.409891+00:00",
+    "openstates_url": "https://openstates.org/person/veronica-sims-4Egq3iNkeRUmz7fkHoSYTs/"
+  }
+]

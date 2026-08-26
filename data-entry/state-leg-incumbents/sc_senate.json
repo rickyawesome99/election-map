@@ -1,0 +1,1337 @@
+[
+  {
+    "id": "ocd-person/52d28efd-d83d-4825-8572-c9e30b8d7c77",
+    "name": "Allen Blackmon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:sc/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Allen",
+    "family_name": "Blackmon",
+    "image": "https://scdailygazette.com/wp-content/uploads/2024/06/image000001-682x1024.jpg",
+    "email": "allenblackmon@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1955-08-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:26:42.100588+00:00",
+    "updated_at": "2026-04-25T02:11:16.635868+00:00",
+    "openstates_url": "https://openstates.org/person/allen-blackmon-2WHayLVlU47mRzmWOq1RJv/"
+  },
+  {
+    "id": "ocd-person/898bb0dc-8dd1-4c29-b7a6-04f87c7cbd2d",
+    "name": "Billy Garrett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:sc/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Billy",
+    "family_name": "Garrett",
+    "image": "https://scstatehouse.gov/images/members/0638636287.jpg",
+    "email": "billygarrett@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1956-10-05",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Abbeville, Greenwood, McCormick & Saluda Counties"
+    },
+    "created_at": "2020-12-16T06:15:48.246737+00:00",
+    "updated_at": "2026-04-25T02:12:05.847794+00:00",
+    "openstates_url": "https://openstates.org/person/billy-garrett-4BXmpvDqXcv3D3l0mKPZJF/"
+  },
+  {
+    "id": "ocd-person/16ba6021-423d-4b0d-b899-d2fe18778c12",
+    "name": "Brad Hutto",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:sc/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Hutto",
+    "image": "https://scstatehouse.gov/images/members/0912499891.jpg",
+    "email": "bradhutto@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1957-08-06",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Leader",
+      "counties represented": "Allendale, Bamberg, Barnwell, Colleton, Hampton & Orangeburg Counties",
+      "Home Address Home Phone": "(803) 536-1808"
+    },
+    "created_at": "2018-10-18T16:11:53.061803+00:00",
+    "updated_at": "2025-07-18T02:16:39.848299+00:00",
+    "openstates_url": "https://openstates.org/person/brad-hutto-gt0JMrIWdIkNsV90TtTaE/"
+  },
+  {
+    "id": "ocd-person/9f665ce8-ed4c-4bef-841f-3036ac03a181",
+    "name": "Brian Adams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:sc/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Adams",
+    "image": "https://scstatehouse.gov/images/members/0002272727.jpg",
+    "email": "brianadams@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1969-12-27",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley, Charleston & Dorchester Counties"
+    },
+    "created_at": "2020-12-16T06:15:57.424232+00:00",
+    "updated_at": "2025-07-18T02:16:13.517472+00:00",
+    "openstates_url": "https://openstates.org/person/brian-adams-4qmYiYyXegcVk5RcYP5IP3/"
+  },
+  {
+    "id": "ocd-person/31de54c6-a271-4c9e-a109-35de035197ce",
+    "name": "Carlisle Kennedy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:sc/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Carlisle",
+    "family_name": "Kennedy",
+    "image": "https://votecarlislekennedy.com/wp-content/uploads/2024/04/MG_3387-scaled.jpg",
+    "email": "carlislekennedy@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:29:19.165810+00:00",
+    "updated_at": "2026-04-25T02:11:23.041852+00:00",
+    "openstates_url": "https://openstates.org/person/carlisle-kennedy-1W6EEkjYBXFHo1Zi2I9zuo/"
+  },
+  {
+    "id": "ocd-person/2ff21c9e-e03e-4f5c-ac4e-7b1e5633969d",
+    "name": "Chip Campsen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:sc/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Chip",
+    "family_name": "Campsen",
+    "image": "https://scstatehouse.gov/images/members/0302272691.jpg",
+    "email": "chipcampsen@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1959-03-30",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Beaufort, Charleston & Colleton Counties"
+    },
+    "created_at": "2018-10-18T16:11:55.275622+00:00",
+    "updated_at": "2025-03-29T02:10:28.770380+00:00",
+    "openstates_url": "https://openstates.org/person/chip-campsen-1STHeedQrWsYUYLiixnTrh/"
+  },
+  {
+    "id": "ocd-person/0ed8d824-c5b2-47c6-9970-2c475cbfd9ac",
+    "name": "Danny Verdin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:sc/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Verdin",
+    "image": "https://scstatehouse.gov/images/members/1874999775.jpg",
+    "email": "dannyverdin@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1964-05-09",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville & Laurens Counties",
+      "Home Address Home Phone": "(864) 682-8914"
+    },
+    "created_at": "2018-10-18T16:11:54.167255+00:00",
+    "updated_at": "2025-07-18T02:16:59.240493+00:00",
+    "openstates_url": "https://openstates.org/person/danny-verdin-S0zQGjMFgN6MJHamC4CUO/"
+  },
+  {
+    "id": "ocd-person/4eca904a-5153-440d-8e5c-4c9e056a1dd1",
+    "name": "Darrell Jackson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:sc/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Darrell",
+    "family_name": "Jackson",
+    "image": "https://scstatehouse.gov/images/members/0920454435.jpg",
+    "email": "darrelljackson@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1957-02-01",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Richland County",
+      "Home Address Home Phone": "(803) 776-6954"
+    },
+    "created_at": "2018-10-18T16:11:54.328866+00:00",
+    "updated_at": "2026-04-25T02:12:04.320288+00:00",
+    "openstates_url": "https://openstates.org/person/darrell-jackson-2OfyLXELG4UcHfPt8gLvNZ/"
+  },
+  {
+    "id": "ocd-person/4f07a054-384b-4fc7-b60a-f5848ea514d4",
+    "name": "Deon Tedder",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:sc/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Deon",
+    "family_name": "Tedder",
+    "image": "https://scstatehouse.gov/images/members/1811931601.jpg",
+    "email": "deontedder@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1990-04-26",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston & Dorchester Counties",
+      "Columbia Address Cell Phone": "(843) 732-6353"
+    },
+    "created_at": "2020-12-16T06:15:52.765240+00:00",
+    "updated_at": "2026-04-25T02:12:13.603340+00:00",
+    "openstates_url": "https://openstates.org/person/deon-tedder-2P7sV5AuHpZU5xnjKm9fwi/"
+  },
+  {
+    "id": "ocd-person/6cabdb85-c770-42ce-9eaf-68326c9dc0aa",
+    "name": "Ed Sutton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:sc/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Sutton",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ed_Sutton2024.jpg",
+    "email": "edsutton@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1983-12-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:28:10.870027+00:00",
+    "updated_at": "2025-07-18T02:17:00.251220+00:00",
+    "openstates_url": "https://openstates.org/person/ed-sutton-3J3i2q40CDvpauYN7rFpTW/"
+  },
+  {
+    "id": "ocd-person/c699e1e2-e3f4-4b78-8aeb-7bef9374518f",
+    "name": "Everett Stubbs",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:sc/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Everett",
+    "family_name": "Stubbs",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/817690/817690.jpg",
+    "email": "everettstubbs@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1985-06-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:29:29.274715+00:00",
+    "updated_at": "2025-07-18T02:17:09.230504+00:00",
+    "openstates_url": "https://openstates.org/person/everett-stubbs-62knv7THFRhlhNiMtUyccZ/"
+  },
+  {
+    "id": "ocd-person/d09cb270-bb44-44e7-86d6-a880ce40d93d",
+    "name": "Greg Hembree",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:sc/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Hembree",
+    "image": "https://scstatehouse.gov/images/members/0819318084.jpg",
+    "email": "greghembree@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1960-08-21",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Dillon & Horry Counties"
+    },
+    "created_at": "2018-10-18T16:11:55.594624+00:00",
+    "updated_at": "2026-04-25T02:12:07.654736+00:00",
+    "openstates_url": "https://openstates.org/person/greg-hembree-6Le0uj4k6Zp85hPl7Ud7TJ/"
+  },
+  {
+    "id": "ocd-person/8b81073b-87da-4f5c-aacb-f387b69456cc",
+    "name": "Harvey Peeler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:sc/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Harvey",
+    "family_name": "Peeler",
+    "image": "https://scstatehouse.gov/images/members/1454545280.jpg",
+    "email": "harveypeeler@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1948-09-08",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Cherokee, Spartanburg, Union & York Counties",
+      "Home Address Home Phone": "(864) 489-3766"
+    },
+    "created_at": "2018-10-18T16:11:55.746354+00:00",
+    "updated_at": "2025-07-18T02:16:05.820199+00:00",
+    "openstates_url": "https://openstates.org/person/harvey-peeler-4FEtlmViXJujBg0SFW2UDU/"
+  },
+  {
+    "id": "ocd-person/a34e27e4-59ab-41a6-89ee-1b5d82fcbcf6",
+    "name": "J.D. Chaplin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:sc/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "J.D.",
+    "family_name": "Chaplin",
+    "image": "https://npr.brightspotcdn.com/dims4/default/533a1d5/2147483647/strip/true/crop/1761x1084+0+0/resize/1760x1084!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fde%2F35%2F0ec3711f4b1ab8064a0a54363740%2Fchaplin.JPG",
+    "email": "jdchaplin@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1994-04-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:26:46.806180+00:00",
+    "updated_at": "2025-07-18T02:17:01.690137+00:00",
+    "openstates_url": "https://openstates.org/person/j-d-chaplin-4y9Svej72zLJMVJHzPJb5K/"
+  },
+  {
+    "id": "ocd-person/3d40ff3f-ddbf-4611-a366-9be7d55b9247",
+    "name": "Jason Elliott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:sc/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Elliott",
+    "image": "https://scstatehouse.gov/images/members/0529545391.jpg",
+    "email": "jasonelliott@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1970-07-01",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville County"
+    },
+    "created_at": "2018-10-18T16:11:56.854510+00:00",
+    "updated_at": "2025-07-18T02:16:05.259148+00:00",
+    "openstates_url": "https://openstates.org/person/jason-elliott-1raEbzNro1zYJFe93NyU5f/"
+  },
+  {
+    "id": "ocd-person/236892d9-be31-4afa-9c3c-e68dff8bf480",
+    "name": "Jeff Zell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:sc/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Zell",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jeffrey_Zell.jpg",
+    "email": "jeffzell@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1980-03-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:28:30.755096+00:00",
+    "updated_at": "2026-04-25T02:11:45.298438+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-zell-14oWLWhNzqG3AsrV6UsSky/"
+  },
+  {
+    "id": "ocd-person/2a153d17-d828-4285-a361-fb9f736dd388",
+    "name": "Jeffrey Graham",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:sc/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jeffrey",
+    "family_name": "Graham",
+    "image": "https://www.grahamrealtyinc.com/files/images/agents/g/4d80bc35-8f04-43ab-84f1-1858ae7a8b42/1.jpg",
+    "email": "jeffreygraham@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1982-05-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:27:23.314334+00:00",
+    "updated_at": "2025-07-18T02:16:10.050597+00:00",
+    "openstates_url": "https://openstates.org/person/jeffrey-graham-1HPNnPNYvfypFXALgUaYPo/"
+  },
+  {
+    "id": "ocd-person/abab175f-5281-4f94-9550-09131ee156ad",
+    "name": "Josh Kimbrell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:sc/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Kimbrell",
+    "image": "https://scstatehouse.gov/images/members/0993465790.jpg",
+    "email": "joshkimbrell@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1984-12-18",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Spartanburg County"
+    },
+    "created_at": "2020-12-16T06:15:51.240728+00:00",
+    "updated_at": "2026-04-25T02:12:02.400450+00:00",
+    "openstates_url": "https://openstates.org/person/josh-kimbrell-5DvsMdT5VqNMQAfPKRFu9d/"
+  },
+  {
+    "id": "ocd-person/946afea5-c89c-4a8f-a80e-a841bf7e899a",
+    "name": "Karl Allen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:sc/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Karl",
+    "family_name": "Allen",
+    "image": "https://scstatehouse.gov/images/members/0015340908.jpg",
+    "email": "karlallen@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1960-10-13",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville County"
+    },
+    "created_at": "2018-10-18T16:11:58.160021+00:00",
+    "updated_at": "2026-04-25T02:11:29.942432+00:00",
+    "openstates_url": "https://openstates.org/person/karl-allen-4W3lBjM80TQDQp0ZgKKGwk/"
+  },
+  {
+    "id": "ocd-person/0fdf2e22-badf-4b5c-be34-969781dc40a3",
+    "name": "Kent Williams",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:sc/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Kent",
+    "family_name": "Williams",
+    "image": "https://scstatehouse.gov/images/members/1938636131.jpg",
+    "email": "kentwilliams@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1960-09-15",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Dillon, Florence, Horry, Marion & Marlboro Counties",
+      "Home Address Home Phone": "(843) 362-0307"
+    },
+    "created_at": "2018-10-18T16:11:58.384607+00:00",
+    "updated_at": "2026-04-25T02:11:28.426698+00:00",
+    "openstates_url": "https://openstates.org/person/kent-williams-TwsT8sgpMciT5iSzx2i83/"
+  },
+  {
+    "id": "ocd-person/cc6f617e-1af7-4aa5-a9cc-a2214b2c21e2",
+    "name": "Larry Grooms",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:sc/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Grooms",
+    "image": "https://scstatehouse.gov/images/members/0729545367.jpg",
+    "email": "stranscomm@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1964-03-20",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley & Charleston Counties"
+    },
+    "created_at": "2018-10-18T16:11:58.843533+00:00",
+    "updated_at": "2026-04-25T02:11:48.242252+00:00",
+    "openstates_url": "https://openstates.org/person/larry-grooms-6DlKp9IBgTONnjvXydyN2w/"
+  },
+  {
+    "id": "ocd-person/3ebbdeb2-9bbf-41d3-8175-2d4e901cb9d1",
+    "name": "Lee Bright",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:sc/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Lee",
+    "family_name": "Bright",
+    "image": "http://www.scstatehouse.gov/images/members/0193181795.jpg",
+    "email": "leebright@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1970-03-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-16T02:07:52.371717+00:00",
+    "updated_at": "2026-01-28T02:13:36.219064+00:00",
+    "openstates_url": "https://openstates.org/person/lee-bright-1uNNco3V1gm0AHxpsjTHo9/"
+  },
+  {
+    "id": "ocd-person/27fb6caf-f757-44a3-8973-6ce72aacd7e2",
+    "name": "Luke Rankin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:sc/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Luke",
+    "family_name": "Rankin",
+    "image": "https://scstatehouse.gov/images/members/1511363455.jpg",
+    "email": "lukerankin@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1962-04-09",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Horry County",
+      "Home Address Home Phone": "(843) 626-6269"
+    },
+    "created_at": "2018-10-18T16:11:59.451015+00:00",
+    "updated_at": "2026-04-25T02:12:10.175048+00:00",
+    "openstates_url": "https://openstates.org/person/luke-rankin-1DRbKShnkkYbZikCo4xSok/"
+  },
+  {
+    "id": "ocd-person/829bd3ab-d117-43fd-b274-f9ff8177c789",
+    "name": "Margie Bright Matthews",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:sc/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Margie",
+    "family_name": "Bright Matthews",
+    "image": "https://scstatehouse.gov/images/members/0194318159.jpg",
+    "email": "margiebrightmatthews@scsenate.gov",
+    "gender": "Female",
+    "birth_date": "1963-02-10",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Allendale, Beaufort, Charleston, Colleton, Hampton & Jasper Counties"
+    },
+    "created_at": "2018-10-18T16:11:59.601968+00:00",
+    "updated_at": "2025-03-29T02:10:51.041944+00:00",
+    "openstates_url": "https://openstates.org/person/margie-bright-matthews-3ySDMfAw3JbR06Dh4tDakD/"
+  },
+  {
+    "id": "ocd-person/1bf0b19d-9fa1-474a-99f2-16e7835064cf",
+    "name": "Matt Leber",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:sc/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Leber",
+    "image": "https://scstatehouse.gov/images/members/1074431690.jpg",
+    "email": "matthewleber@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1973-04-05",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston & Colleton Counties",
+      "Home Address Home Phone": "(843) 227-1331"
+    },
+    "created_at": "2023-02-14T05:10:37.100961+00:00",
+    "updated_at": "2025-07-18T02:16:43.998031+00:00",
+    "openstates_url": "https://openstates.org/person/matt-leber-qimzYfCHwwXKlEf0xhayV/"
+  },
+  {
+    "id": "ocd-person/ef901990-e178-4836-b40c-1b5822227650",
+    "name": "Michael Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:sc/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Johnson",
+    "image": "https://scstatehouse.gov/images/members/0949431704.jpg",
+    "email": "michaeljohnson@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1970-11-22",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lancaster & York Counties"
+    },
+    "created_at": "2020-12-16T06:15:56.730738+00:00",
+    "updated_at": "2026-04-25T02:12:27.728817+00:00",
+    "openstates_url": "https://openstates.org/person/michael-johnson-7I31Em8nDyFWrrOQNVnnIe/"
+  },
+  {
+    "id": "ocd-person/52d745c3-ccb7-41db-9b4a-624c757b678a",
+    "name": "Mike Gambrell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:sc/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Gambrell",
+    "image": "https://scstatehouse.gov/images/members/0635227197.jpg",
+    "email": "mwgambrell@bellsouth.net",
+    "gender": "Male",
+    "birth_date": "1958-01-10",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Abbeville, Anderson & Greenwood Counties",
+      "Home Address Home Phone": "(864) 369-0613"
+    },
+    "created_at": "2018-10-18T16:12:00.579020+00:00",
+    "updated_at": "2026-04-25T02:12:28.865728+00:00",
+    "openstates_url": "https://openstates.org/person/mike-gambrell-2WJkXPuZPvS28DpI2y7g2U/"
+  },
+  {
+    "id": "ocd-person/c2a237ba-67b6-4280-9cf2-430f1d10d28e",
+    "name": "Mike Reichenbach",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:sc/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Reichenbach",
+    "image": "https://scstatehouse.gov/images/members/1528408908.jpg",
+    "email": "mikereichenbach@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1971-10-29",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Darlington & Florence Counties"
+    },
+    "created_at": "2022-04-18T06:40:52.854033+00:00",
+    "updated_at": "2026-04-25T02:11:50.146972+00:00",
+    "openstates_url": "https://openstates.org/person/mike-reichenbach-5vGdzrbQ5UEt8texbKGJUU/"
+  },
+  {
+    "id": "ocd-person/3e43cada-6457-40bf-9f6d-ed024f737177",
+    "name": "Overture Walker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:sc/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Overture",
+    "family_name": "Walker",
+    "image": "https://overture4scsenate.com/wp-content/uploads/2024/05/Screenshot-2024-05-09-at-12.12.03%E2%80%AFPM-813x1024.png",
+    "email": "overturewalker@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1980-09-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:27:19.763538+00:00",
+    "updated_at": "2026-04-25T02:11:56.200422+00:00",
+    "openstates_url": "https://openstates.org/person/overture-walker-1tUVL52r2jUU1XqIXeF9ex/"
+  },
+  {
+    "id": "ocd-person/bfea6436-5d17-4d26-bc37-15f1a975575e",
+    "name": "Rex Rice",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:sc/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Rex",
+    "family_name": "Rice",
+    "image": "https://scstatehouse.gov/images/members/1547727087.jpg",
+    "email": "rexrice@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1957-05-09",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Pickens County",
+      "Columbia Address Cell Phone": "(864) 884-0408"
+    },
+    "created_at": "2018-10-18T16:12:01.574950+00:00",
+    "updated_at": "2025-07-18T02:17:07.137755+00:00",
+    "openstates_url": "https://openstates.org/person/rex-rice-5q8eOw62N09HhVnrqMOIsY/"
+  },
+  {
+    "id": "ocd-person/69162972-6151-4fe2-b5fe-dee599d86ad3",
+    "name": "Richard Cash",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:sc/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Cash",
+    "image": "https://scstatehouse.gov/images/members/0328409052.jpg",
+    "email": "richardcash@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1960-03-31",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Anderson County",
+      "Columbia Address Cell Phone": "(864) 505-2130"
+    },
+    "created_at": "2018-10-18T16:12:01.644370+00:00",
+    "updated_at": "2026-04-25T02:11:11.044530+00:00",
+    "openstates_url": "https://openstates.org/person/richard-cash-3CIJz7FSa4c3cPo3ZGlS67/"
+  },
+  {
+    "id": "ocd-person/a8c8738a-88f3-4a32-a61e-96004425b2c3",
+    "name": "Ronnie Cromer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:sc/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ronnie",
+    "family_name": "Cromer",
+    "image": "https://scstatehouse.gov/images/members/0438636311.jpg",
+    "email": "ronniecromer@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1947-12-01",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lexington, Newberry & Union Counties",
+      "Home Address Home Phone": "(803) 364-3950"
+    },
+    "created_at": "2018-10-18T16:12:02.326129+00:00",
+    "updated_at": "2025-07-18T02:16:23.916542+00:00",
+    "openstates_url": "https://openstates.org/person/ronnie-cromer-58UJgGwD6mI8tFZbyKoYst/"
+  },
+  {
+    "id": "ocd-person/92a0b883-789a-4291-b2f1-330ec804ba12",
+    "name": "Ronnie Sabb",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:sc/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ronnie",
+    "family_name": "Sabb",
+    "image": "https://scstatehouse.gov/images/members/1617045261.jpg",
+    "email": "ronniesabb@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1958-09-02",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley, Florence, Georgetown, Horry & Williamsburg Counties",
+      "Home Address Home Phone": "(843) 426-4138"
+    },
+    "created_at": "2018-10-18T16:12:02.249385+00:00",
+    "updated_at": "2026-04-25T02:11:39.580047+00:00",
+    "openstates_url": "https://openstates.org/person/ronnie-sabb-4SgKPwleRrZMj1KbR5K2d8/"
+  },
+  {
+    "id": "ocd-person/bf0e5259-d4e3-472c-a3a0-384eab1e8ae2",
+    "name": "Ross Turner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:sc/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ross",
+    "family_name": "Turner",
+    "image": "https://scstatehouse.gov/images/members/1847727051.jpg",
+    "email": "rossturner@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1964-05-15",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville County",
+      "Home Address Home Phone": "(864) 987-0596"
+    },
+    "created_at": "2018-10-18T16:12:02.482221+00:00",
+    "updated_at": "2026-04-25T02:11:36.367524+00:00",
+    "openstates_url": "https://openstates.org/person/ross-turner-5oW4vWmQdl9paVcQuiNuEM/"
+  },
+  {
+    "id": "ocd-person/458d191f-6584-4548-b464-a3a24cda3cf3",
+    "name": "Russell Ott",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:sc/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Russell",
+    "family_name": "Ott",
+    "image": "https://scstatehouse.gov/images/members/1433096420.jpg",
+    "email": "russellott@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Calhoun, Lexington & Orangeburg Counties"
+    },
+    "created_at": "2018-10-18T16:12:02.561837+00:00",
+    "updated_at": "2025-07-18T02:16:24.436323+00:00",
+    "openstates_url": "https://openstates.org/person/russell-ott-27Ex3ku4dJe8JbtO5IaZQx/"
+  },
+  {
+    "id": "ocd-person/3265c6c1-e300-4fd3-9d61-1cef57279d67",
+    "name": "Sean Bennett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:sc/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Sean",
+    "family_name": "Bennett",
+    "image": "https://scstatehouse.gov/images/members/0141193165.jpg",
+    "email": "seanbennett@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1968-05-13",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley, Charleston & Dorchester Counties",
+      "Home Address Home Phone": "(843) 821-3352"
+    },
+    "created_at": "2018-10-18T16:12:02.931841+00:00",
+    "updated_at": "2025-07-18T02:17:05.198502+00:00",
+    "openstates_url": "https://openstates.org/person/sean-bennett-1X67x9e1gPAaAWEUugYqEZ/"
+  },
+  {
+    "id": "ocd-person/6409590b-b759-47e0-ba61-cfe5aee94228",
+    "name": "Shane Martin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:sc/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Martin",
+    "image": "https://scstatehouse.gov/images/members/1179545313.jpg",
+    "email": "shanemartin@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1971-12-31",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville, Spartanburg & Union Counties",
+      "Columbia Address Cell Phone": "(864) 804-8499"
+    },
+    "created_at": "2018-10-18T16:12:03.011372+00:00",
+    "updated_at": "2026-01-28T02:12:53.842880+00:00",
+    "openstates_url": "https://openstates.org/person/shane-martin-32lVHxHPyf8YNsWxB427dA/"
+  },
+  {
+    "id": "ocd-person/340b7b78-4f07-49ef-8872-dab35cf48c5c",
+    "name": "Shane Massey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:sc/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Massey",
+    "image": "https://scstatehouse.gov/images/members/1185227131.jpg",
+    "email": "shanemassey@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1975-06-28",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Leader",
+      "counties represented": "Aiken, Edgefield, Lexington, McCormick & Saluda Counties",
+      "Home Address Home Phone": "(803) 480-0419"
+    },
+    "created_at": "2018-10-18T16:11:52.487935+00:00",
+    "updated_at": "2026-04-25T02:11:45.978955+00:00",
+    "openstates_url": "https://openstates.org/person/shane-massey-1aCqbMtXrlnqS2GZr2ewxg/"
+  },
+  {
+    "id": "ocd-person/9837e1c5-5014-4306-9f78-1550b1a9a2c2",
+    "name": "Stephen Goldfinch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:sc/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Stephen",
+    "family_name": "Goldfinch",
+    "image": "https://scstatehouse.gov/images/members/0682386282.jpg",
+    "email": "stephen@stephengoldfinch.com",
+    "gender": "Male",
+    "birth_date": "1982-11-19",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston, Georgetown & Horry Counties",
+      "Home Address Home Phone": "(843) 385-4302"
+    },
+    "created_at": "2018-10-18T16:12:03.161095+00:00",
+    "updated_at": "2026-04-25T02:11:47.110210+00:00",
+    "openstates_url": "https://openstates.org/person/stephen-goldfinch-4dEN3EaxAHCoh3lbDlkdpi/"
+  },
+  {
+    "id": "ocd-person/51410bac-c642-4cd8-9935-dd87b16a6972",
+    "name": "Tameika Isaac Devine",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:sc/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tameika",
+    "family_name": "Isaac Devine",
+    "image": "",
+    "email": "tameikaisaacdevine@scsenate.gov",
+    "gender": "Female",
+    "birth_date": "1972-12-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-11T00:17:41.551003+00:00",
+    "updated_at": "2026-04-25T02:12:19.904161+00:00",
+    "openstates_url": "https://openstates.org/person/tameika-isaac-devine-2TK6TLwyd3JulBGQpM0Gyg/"
+  },
+  {
+    "id": "ocd-person/06c7c886-4087-499e-855c-f36b0fa75195",
+    "name": "Thomas Alexander",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:sc/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Thomas",
+    "family_name": "Alexander",
+    "image": "https://scstatehouse.gov/images/members/0013636362.jpg",
+    "email": "thomasalexander@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1956-07-25",
+    "death_date": "",
+    "extras": {
+      "title": "President",
+      "counties represented": "Oconee & Pickens Counties",
+      "Home Address Home Phone": "(864) 638-2153"
+    },
+    "created_at": "2018-10-18T16:12:03.462305+00:00",
+    "updated_at": "2025-07-18T02:16:10.564271+00:00",
+    "openstates_url": "https://openstates.org/person/thomas-alexander-CnFovcJPArdmYp9AAiv3t/"
+  },
+  {
+    "id": "ocd-person/25450820-f565-4644-95aa-885948c253c3",
+    "name": "Tom Corbin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:sc/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Corbin",
+    "image": "https://scstatehouse.gov/images/members/0402272679.jpg",
+    "email": "tomcorbin@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1965-01-11",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville & Spartanburg Counties"
+    },
+    "created_at": "2018-10-18T16:12:03.540769+00:00",
+    "updated_at": "2025-03-29T02:10:12.847194+00:00",
+    "openstates_url": "https://openstates.org/person/tom-corbin-18KGLeYh8LQCToLVfYoMyp/"
+  },
+  {
+    "id": "ocd-person/33fe6bed-f8b0-4002-90fa-870813b72caf",
+    "name": "Tom Davis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:sc/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Davis",
+    "image": "https://scstatehouse.gov/images/members/0456818127.jpg",
+    "email": "tomdavis@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1960-05-31",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Beaufort & Jasper Counties"
+    },
+    "created_at": "2018-10-18T16:12:03.845453+00:00",
+    "updated_at": "2026-04-25T02:11:18.648197+00:00",
+    "openstates_url": "https://openstates.org/person/tom-davis-1a6sXSZeqnyOmWib8QVpzr/"
+  },
+  {
+    "id": "ocd-person/74b41634-f393-47b4-807b-124c14277ecb",
+    "name": "Tom Fernandez",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:sc/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Fernandez",
+    "image": "https://tomfernandezforsenate.com/wp-content/uploads/2023/03/tom-fernandez-headshot-2-957x1024.png",
+    "email": "tomfernandez@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1978-02-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:29:52.353246+00:00",
+    "updated_at": "2026-04-25T02:11:31.403133+00:00",
+    "openstates_url": "https://openstates.org/person/tom-fernandez-3YDPPHZAqAvd2s8B0dVvmF/"
+  },
+  {
+    "id": "ocd-person/b01d47f8-2131-4fe5-a611-d1b571696346",
+    "name": "Tom Young",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:sc/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Young",
+    "image": "https://scstatehouse.gov/images/members/1996590730.jpg",
+    "email": "tomyoung@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1971-10-08",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Aiken County",
+      "Home Address Home Phone": "(803) 215-3631"
+    },
+    "created_at": "2018-10-18T16:12:03.927440+00:00",
+    "updated_at": "2025-07-18T02:16:50.686251+00:00",
+    "openstates_url": "https://openstates.org/person/tom-young-5MK1vPHZFVwf0DGydMNwVK/"
+  },
+  {
+    "id": "ocd-person/cccdb27c-0ed3-4d26-b2e1-5dd7c94e79ab",
+    "name": "Wes Climer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:sc/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Wes",
+    "family_name": "Climer",
+    "image": "https://scstatehouse.gov/images/members/0356818139.jpg",
+    "email": "wesclimer@scsenate.gov",
+    "gender": "Male",
+    "birth_date": "1982-09-26",
+    "death_date": "",
+    "extras": {
+      "counties represented": "York County"
+    },
+    "created_at": "2018-10-18T16:12:04.554542+00:00",
+    "updated_at": "2025-07-18T02:16:19.390370+00:00",
+    "openstates_url": "https://openstates.org/person/wes-climer-6ESRBwUlIjeT9mmwNIU33L/"
+  }
+]

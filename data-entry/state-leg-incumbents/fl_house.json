@@ -1,0 +1,3218 @@
+[
+  {
+    "id": "ocd-person/6a3fae94-a613-49f5-acec-355e4a2722d8",
+    "name": "Adam Anderson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:fl/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Anderson",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4885.jpg",
+    "email": "adam.anderson@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:12:29.680831+00:00",
+    "updated_at": "2026-06-04T06:24:05.837797+00:00",
+    "openstates_url": "https://openstates.org/person/adam-anderson-3EUHwR5pv456z8MMnIz7sG/"
+  },
+  {
+    "id": "ocd-person/c94b1151-5034-482b-8d7b-f91f9bb5f951",
+    "name": "Adam Botana",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:fl/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Botana",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4782.jpg",
+    "email": "adam.botana@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1984-04-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:04.574250+00:00",
+    "updated_at": "2026-06-04T06:23:23.153146+00:00",
+    "openstates_url": "https://openstates.org/person/adam-botana-67plLnPC6qQqKUD4ehxLZh/"
+  },
+  {
+    "id": "ocd-person/de5ddba1-d7fe-41da-9f36-16a03b0b22fc",
+    "name": "Alex Andrade",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:fl/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Andrade",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4710.jpg",
+    "email": "alex.andrade@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1989-07-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:17.643592+00:00",
+    "updated_at": "2026-06-04T06:23:56.404416+00:00",
+    "openstates_url": "https://openstates.org/person/alex-andrade-6lbBlXxwEesk0cmBnjlPyO/"
+  },
+  {
+    "id": "ocd-person/b2fce1a8-4ba6-483b-a534-fa48cc43ee7f",
+    "name": "Alex Rizo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "112",
+      "division_id": "ocd-division/country:us/state:fl/sldl:112"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Rizo",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4796.jpg",
+    "email": "alex.rizo@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:10.809709+00:00",
+    "updated_at": "2026-06-04T06:23:31.862947+00:00",
+    "openstates_url": "https://openstates.org/person/alex-rizo-5RkCU1oHYXogGSQ7OFgrU7/"
+  },
+  {
+    "id": "ocd-person/c26599eb-5ef8-44c3-93a6-77cf23a9567e",
+    "name": "Allison Tant",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:fl/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Allison",
+    "family_name": "Tant",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4765.jpg",
+    "email": "allison.tant@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:12.912686+00:00",
+    "updated_at": "2026-06-04T06:24:01.867605+00:00",
+    "openstates_url": "https://openstates.org/person/allison-tant-5uowUBEorjyn4gtgCiQvk6/"
+  },
+  {
+    "id": "ocd-person/66c3a112-3008-4332-a6b0-8990a7d992d5",
+    "name": "Angie Nixon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:fl/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Angie",
+    "family_name": "Nixon",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4766.jpg",
+    "email": "angela.nixon@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:02.588470+00:00",
+    "updated_at": "2026-06-04T06:23:58.279520+00:00",
+    "openstates_url": "https://openstates.org/person/angie-nixon-37ucRobbjxT3HSd7yyFNIL/"
+  },
+  {
+    "id": "ocd-person/1f8e10ad-0047-4854-b696-38e15fda7afa",
+    "name": "Anna Eskamani",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:fl/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Anna",
+    "family_name": "Eskamani",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4746.jpg",
+    "email": "anna.eskamani@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1990-05-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:18.650753+00:00",
+    "updated_at": "2026-06-04T06:23:14.048706+00:00",
+    "openstates_url": "https://openstates.org/person/anna-eskamani-xXgXJiyRZTNpr1YG9X1Yo/"
+  },
+  {
+    "id": "ocd-person/ad877adf-e8f2-4f31-bdd2-38a6aaf74884",
+    "name": "Anne Gerwig",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:fl/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Anne",
+    "family_name": "Gerwig",
+    "image": "https://www.hlcpbc.org/wp-content/uploads/2021/01/Anne_Gerwig.jpg",
+    "email": "anne.gerwig@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1963-12-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:20:54.154687+00:00",
+    "updated_at": "2026-04-10T00:22:41.994936+00:00",
+    "openstates_url": "https://openstates.org/person/anne-gerwig-5HRaOmVQX21MG3JmEbfbsK/"
+  },
+  {
+    "id": "ocd-person/2c62c9ae-8d1d-4dc3-a86a-fcc5dd7ba286",
+    "name": "Ashley Gantt",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "109",
+      "division_id": "ocd-division/country:us/state:fl/sldl:109"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Ashley",
+    "family_name": "Gantt",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4897.jpg",
+    "email": "ashley.gantt@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1985-04-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:25.725360+00:00",
+    "updated_at": "2026-06-04T06:23:55.965981+00:00",
+    "openstates_url": "https://openstates.org/person/ashley-gantt-1Lko83QzatJb19tT1lwzJu/"
+  },
+  {
+    "id": "ocd-person/8e396afa-17d2-404c-9024-7aa8d7e00e0d",
+    "name": "Berny Jacques",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:fl/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Berny",
+    "family_name": "Jacques",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4886.jpg",
+    "email": "berny.jacques@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:14:15.696808+00:00",
+    "updated_at": "2026-06-04T06:23:44.287737+00:00",
+    "openstates_url": "https://openstates.org/person/berny-jacques-4KN9KQdYkCFlVNPrFxVRbJ/"
+  },
+  {
+    "id": "ocd-person/43724cbb-0b19-4fad-ae9b-1e8bcd47c16d",
+    "name": "Bill Conerly",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:fl/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Conerly",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/BillConerly2024.jpg",
+    "email": "bill.conerly@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:19:47.804478+00:00",
+    "updated_at": "2025-05-15T00:22:43.940687+00:00",
+    "openstates_url": "https://openstates.org/person/bill-conerly-23GihdhfclGhe2kmKnPwJZ/"
+  },
+  {
+    "id": "ocd-person/92e88cfe-0a68-45e1-b84c-9f181a46554e",
+    "name": "Bill Partington",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:fl/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Partington",
+    "image": "https://www.billpartington.com/images/Partington,-Bill-WEB-FILE.jpg",
+    "email": "bill.partington@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:20:51.368243+00:00",
+    "updated_at": "2026-04-10T00:22:22.739700+00:00",
+    "openstates_url": "https://openstates.org/person/bill-partington-4TD9ecvYmxPMffIkc1SPOg/"
+  },
+  {
+    "id": "ocd-person/8d746fc8-370b-4d12-bcf8-3dd4a4061707",
+    "name": "Brad Yeager",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:fl/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Yeager",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4882.jpg",
+    "email": "brad.yeager@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:12:28.183494+00:00",
+    "updated_at": "2026-06-04T06:23:18.198277+00:00",
+    "openstates_url": "https://openstates.org/person/brad-yeager-4Iv82xWzoFeruJSqHayYoZ/"
+  },
+  {
+    "id": "ocd-person/4737f2dc-8241-4329-85fc-59a9c405d7b6",
+    "name": "Brian Hodgers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:fl/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Hodgers",
+    "image": "",
+    "email": "brian.hodgers@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1973-03-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-07-18T00:23:42.670857+00:00",
+    "updated_at": "2026-04-10T00:22:35.874523+00:00",
+    "openstates_url": "https://openstates.org/person/brian-hodgers-2AO1Tc4LjXhLCgPmeB1te2/"
+  },
+  {
+    "id": "ocd-person/617888c1-3369-49cd-a264-18ab663d2e8a",
+    "name": "Bruce Antone",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:fl/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Bruce",
+    "family_name": "Antone",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4269.jpg",
+    "email": "bruce.antone@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1960-11-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-04-25T22:28:28.701515+00:00",
+    "updated_at": "2026-06-04T06:23:39.622880+00:00",
+    "openstates_url": "https://openstates.org/person/bruce-antone-2xvL4xYX4SCRW44xZpigNW/"
+  },
+  {
+    "id": "ocd-person/2aa3b059-b565-413d-9eac-24e34b541c1d",
+    "name": "Chad Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:fl/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Chad",
+    "family_name": "Johnson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Chad_Johnson_20240808_095012.jpg",
+    "email": "chad.johnson@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1970-11-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:21:24.668316+00:00",
+    "updated_at": "2026-04-10T00:22:20.650186+00:00",
+    "openstates_url": "https://openstates.org/person/chad-johnson-1ISTzYUzrrjqR9e4h6Z1PZ/"
+  },
+  {
+    "id": "ocd-person/47cd160b-1e9e-469c-a939-002be336302f",
+    "name": "Chase Tramont",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:fl/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Chase",
+    "family_name": "Tramont",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4867.jpg",
+    "email": "chase.tramont@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1979-11-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:21.245738+00:00",
+    "updated_at": "2026-06-04T06:23:26.924922+00:00",
+    "openstates_url": "https://openstates.org/person/chase-tramont-2BUB9GHW3XMqNrX67ck3Kx/"
+  },
+  {
+    "id": "ocd-person/54cd0ebc-6f93-489e-a919-3583fa32b26a",
+    "name": "Chip LaMarca",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:fl/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Chip",
+    "family_name": "LaMarca",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4722.jpg",
+    "email": "chip.lamarca@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1968-03-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:09.481995+00:00",
+    "updated_at": "2026-06-04T06:23:36.760611+00:00",
+    "openstates_url": "https://openstates.org/person/chip-lamarca-2a149gJfurp4YgpH2xUUiA/"
+  },
+  {
+    "id": "ocd-person/89d7d4d0-82e7-4535-bb79-3260a7b432b5",
+    "name": "Christine Hunschofsky",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:fl/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Christine",
+    "family_name": "Hunschofsky",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4799.jpg",
+    "email": "christine.hunschofsky@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:09.404569+00:00",
+    "updated_at": "2026-06-04T06:23:29.601491+00:00",
+    "openstates_url": "https://openstates.org/person/christine-hunschofsky-4C6aComS9727KodZKtQwh3/"
+  },
+  {
+    "id": "ocd-person/caf95c6f-3143-433e-8654-c17d39b94f88",
+    "name": "Chuck Brannan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:fl/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Chuck",
+    "family_name": "Brannan",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4708.jpg",
+    "email": "chuck.brannan@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1962-02-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:13.268181+00:00",
+    "updated_at": "2026-06-04T06:23:36.314797+00:00",
+    "openstates_url": "https://openstates.org/person/chuck-brannan-6B0PJoHeDfULJgAZOQMmCm/"
+  },
+  {
+    "id": "ocd-person/66308162-9b64-4d34-a8bc-fac71407f7d5",
+    "name": "Dan Daley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:fl/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Daley",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4757.jpg",
+    "email": "dan.daley@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-26T06:04:26.899793+00:00",
+    "updated_at": "2026-06-04T06:23:11.745177+00:00",
+    "openstates_url": "https://openstates.org/person/dan-daley-36pNpaGrLZJxkS8G2z8brR/"
+  },
+  {
+    "id": "ocd-person/767d2aef-21ee-4b6d-b64b-ed9350abaa60",
+    "name": "Dana Trabulsy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:fl/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Dana",
+    "family_name": "Trabulsy",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4788.jpg",
+    "email": "dana.trabulsy@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1964-03-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:05.357247+00:00",
+    "updated_at": "2026-06-04T06:24:15.180245+00:00",
+    "openstates_url": "https://openstates.org/person/dana-trabulsy-3baINJeaU3bUD34wW1BVya/"
+  },
+  {
+    "id": "ocd-person/ed30b061-bbdc-44f3-8a40-e574646d6cf8",
+    "name": "Daniel Perez",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "116",
+      "division_id": "ocd-division/country:us/state:fl/sldl:116"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Daniel",
+    "family_name": "Perez",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4690.jpg",
+    "email": "daniel.perez@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1987-06-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:38:24.881638+00:00",
+    "updated_at": "2026-06-04T06:24:13.873304+00:00",
+    "openstates_url": "https://openstates.org/person/daniel-perez-7DZQoFTSUCUawxB5dgxn6O/"
+  },
+  {
+    "id": "ocd-person/5a852452-a855-44a6-aa71-1e07e48c0c89",
+    "name": "Danny Alvarez",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:fl/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Alvarez",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4889.jpg",
+    "email": "danny.alvarez@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:12:04.732545+00:00",
+    "updated_at": "2026-06-04T06:23:10.036334+00:00",
+    "openstates_url": "https://openstates.org/person/danny-alvarez-2ko9dVuf8PEc0FvlBgA0kr/"
+  },
+  {
+    "id": "ocd-person/971fb9ac-b0f3-45df-89f0-f24b6ba9b5a3",
+    "name": "Danny Nix",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:fl/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Nix",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Danny_Nix.jpg",
+    "email": "danny.nix@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1977-08-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:20:45.048753+00:00",
+    "updated_at": "2026-04-10T00:22:46.570763+00:00",
+    "openstates_url": "https://openstates.org/person/danny-nix-4bAL4TP4IQWeRqh0uO4R5X/"
+  },
+  {
+    "id": "ocd-person/2c1c37bb-fd17-46d6-9694-8f2757f6da3e",
+    "name": "Daryl Campbell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:fl/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Daryl",
+    "family_name": "Campbell",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4843.jpg",
+    "email": "daryl.campbell@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1986-05-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:00.240188+00:00",
+    "updated_at": "2026-06-04T06:23:40.064175+00:00",
+    "openstates_url": "https://openstates.org/person/daryl-campbell-1LEYadT0OqLvGqErklEq1m/"
+  },
+  {
+    "id": "ocd-person/e4bf077a-8468-49a6-a75c-24ee5076352e",
+    "name": "Dave Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:fl/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Smith",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4718.jpg",
+    "email": "david.smith@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:09.855600+00:00",
+    "updated_at": "2026-06-04T06:24:03.578331+00:00",
+    "openstates_url": "https://openstates.org/person/dave-smith-6xdYAbrAEs1vBwJ2KdjweE/"
+  },
+  {
+    "id": "ocd-person/686a3de8-6df1-4144-85bc-edaad7fe1708",
+    "name": "David Borrero",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "111",
+      "division_id": "ocd-division/country:us/state:fl/sldl:111"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Borrero",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4794.jpg",
+    "email": "david.borrero@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1988-12-14",
+    "death_date": "",
+    "extras": {
+      "old_district_office": "Suite 301C; 1405 Southwest 107th Avenue; Miami, FL 33174-2541",
+      "old_district_voices": "305-222-4116, 239-417-6231"
+    },
+    "created_at": "2021-01-13T00:05:08.850493+00:00",
+    "updated_at": "2026-06-04T06:24:07.568349+00:00",
+    "openstates_url": "https://openstates.org/person/david-borrero-3B1kmu2qLWabroLNwc2UHY/"
+  },
+  {
+    "id": "ocd-person/c082de7e-0a73-43a6-94e7-48180a1af3d6",
+    "name": "Dean Black",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:fl/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Dean",
+    "family_name": "Black",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4865.jpg",
+    "email": "dean.black@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-11-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:14:00.164254+00:00",
+    "updated_at": "2026-06-04T06:24:13.022316+00:00",
+    "openstates_url": "https://openstates.org/person/dean-black-5rGKiP3guYE4zABxO58dGA/"
+  },
+  {
+    "id": "ocd-person/88b67b7d-e856-43b3-9ae3-90092919c4e5",
+    "name": "Debra Tendrich",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:fl/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Debra",
+    "family_name": "Tendrich",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Debra__Tendrich__20241023_121011.jpg",
+    "email": "debra.tendrich@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:20:09.726136+00:00",
+    "updated_at": "2026-04-10T00:22:31.962600+00:00",
+    "openstates_url": "https://openstates.org/person/debra-tendrich-49yLlqBIrJpGB1cjYNSxE5/"
+  },
+  {
+    "id": "ocd-person/8407b440-b679-4d84-b642-de35869461a4",
+    "name": "Demi Busatta",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "114",
+      "division_id": "ocd-division/country:us/state:fl/sldl:114"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Demi",
+    "family_name": "Busatta",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4800.jpg",
+    "email": "demi.busatta@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1990-11-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:02.533898+00:00",
+    "updated_at": "2026-06-04T06:23:43.641258+00:00",
+    "openstates_url": "https://openstates.org/person/demi-busatta-418VUZ3WW7L4SBNmsqDu8y/"
+  },
+  {
+    "id": "ocd-person/1be9ca60-ccf5-4beb-835a-3c292e04eaef",
+    "name": "Dianne Hart-Lowman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:fl/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Dianne",
+    "family_name": "Hart-Lowman",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4736.jpg",
+    "email": "dianne.hart-lowman@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1955-06-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:15.070751+00:00",
+    "updated_at": "2026-06-04T06:24:00.104493+00:00",
+    "openstates_url": "https://openstates.org/person/dianne-hart-lowman-qfdOUWbPR3sw4y8oqd9Sx/"
+  },
+  {
+    "id": "ocd-person/bcb3b06f-882e-4012-af21-4c9ba68d093d",
+    "name": "Dotie Joseph",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "108",
+      "division_id": "ocd-division/country:us/state:fl/sldl:108"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Dotie",
+    "family_name": "Joseph",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4716.jpg",
+    "email": "dotie.joseph@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:16.675369+00:00",
+    "updated_at": "2026-06-04T06:23:54.691516+00:00",
+    "openstates_url": "https://openstates.org/person/dotie-joseph-5k4ftGf6pPnO25hJHfn9nJ/"
+  },
+  {
+    "id": "ocd-person/c585b9bb-83d4-4d01-8a02-778578cfe2d6",
+    "name": "Doug Bankson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:fl/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Bankson",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4873.jpg",
+    "email": "doug.bankson@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1963-02-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:30.199792+00:00",
+    "updated_at": "2026-06-04T06:23:20.684298+00:00",
+    "openstates_url": "https://openstates.org/person/doug-bankson-60ibGoYrMVmHHOiaNVT42Y/"
+  },
+  {
+    "id": "ocd-person/e2d16b6f-6522-46c6-9817-3d4f4d1b66ce",
+    "name": "Emily Gregory",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:fl/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Emily",
+    "family_name": "Gregory",
+    "image": "https://www.sun-sentinel.com/wp-content/uploads/2025/10/TFL-L-Emily-Gregory-candidate-01.jpg?w=864",
+    "email": "emily.gregory@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1985-05-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-10T00:23:18.159296+00:00",
+    "updated_at": "2026-04-25T00:25:07.841019+00:00",
+    "openstates_url": "https://openstates.org/person/emily-gregory-6tzyCLl4uaPIN9YJcLSBDC/"
+  },
+  {
+    "id": "ocd-person/30a6de56-a2b6-44b4-ab5a-e1bc6d944c93",
+    "name": "Erika Booth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:fl/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Erika",
+    "family_name": "Booth",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Erika_Booth.jpg",
+    "email": "erika.booth@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:19:14.124648+00:00",
+    "updated_at": "2026-01-31T00:21:43.808971+00:00",
+    "openstates_url": "https://openstates.org/person/erika-booth-1TntEIi2e6nl2UCpR9Ejch/"
+  },
+  {
+    "id": "ocd-person/38674fed-3bec-4623-a5eb-d31e4851323f",
+    "name": "Fabi\u00e1n Basabe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "106",
+      "division_id": "ocd-division/country:us/state:fl/sldl:106"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Fabi\u00e1n",
+    "family_name": "Basabe",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4900.jpg",
+    "email": "fabian.basabe@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1978-03-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:02.581404+00:00",
+    "updated_at": "2026-06-04T06:23:33.184612+00:00",
+    "openstates_url": "https://openstates.org/person/fabian-basabe-1iQmcAuIjavrpJqMwpUhCh/"
+  },
+  {
+    "id": "ocd-person/1d219f7c-140b-48fd-ac39-4683c48dbc87",
+    "name": "Felicia Robinson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "104",
+      "division_id": "ocd-division/country:us/state:fl/sldl:104"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Felicia",
+    "family_name": "Robinson",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4791.jpg",
+    "email": "felicia.robinson@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1970-11-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:12.109522+00:00",
+    "updated_at": "2026-06-04T06:24:16.494048+00:00",
+    "openstates_url": "https://openstates.org/person/felicia-robinson-sy8sZrytsqzmFkSDObZgN/"
+  },
+  {
+    "id": "ocd-person/5a138490-70a4-46fa-967e-8739d1ea7456",
+    "name": "Fentrice Driskell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:fl/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Fentrice",
+    "family_name": "Driskell",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4745.jpg",
+    "email": "fentrice.driskell@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1979-03-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:10.083402+00:00",
+    "updated_at": "2026-06-04T06:23:57.311221+00:00",
+    "openstates_url": "https://openstates.org/person/fentrice-driskell-2jyECfJpldfyVoASXEmx4o/"
+  },
+  {
+    "id": "ocd-person/741003ec-e46f-4ae8-a3af-ce2a2aba5cd4",
+    "name": "Fiona McFarland",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:fl/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Fiona",
+    "family_name": "McFarland",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4780.jpg",
+    "email": "fiona.mcfarland@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:03.500461+00:00",
+    "updated_at": "2026-06-04T06:23:46.541116+00:00",
+    "openstates_url": "https://openstates.org/person/fiona-mcfarland-3X0Qaulqvu2GDoYVk9xz0e/"
+  },
+  {
+    "id": "ocd-person/3c9e6522-75aa-40d0-870c-1792d5178b04",
+    "name": "Gallop Franklin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:fl/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Gallop",
+    "family_name": "Franklin",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4863.jpg",
+    "email": "gallop.franklin@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:19.859355+00:00",
+    "updated_at": "2026-06-04T06:23:37.676653+00:00",
+    "openstates_url": "https://openstates.org/person/gallop-franklin-1qNvQw8x0WYCSqFMes9qjs/"
+  },
+  {
+    "id": "ocd-person/25748543-5a46-49c2-bc52-f7d39c18a2e6",
+    "name": "Griff Griffitts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:fl/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Griff",
+    "family_name": "Griffitts",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4862.jpg",
+    "email": "griff.griffitts@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:12:16.078523+00:00",
+    "updated_at": "2026-06-04T06:23:08.734640+00:00",
+    "openstates_url": "https://openstates.org/person/griff-griffitts-18fxtqsRGikIBT826h5i7y/"
+  },
+  {
+    "id": "ocd-person/fd753355-7d8a-4eda-ab3c-8a6478e1ac73",
+    "name": "Hilary Holley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:fl/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Hilary",
+    "family_name": "Holley",
+    "image": "https://floridapolitics.com/wp-content/uploads/2025/10/Hillary-Holley-copy.jpg",
+    "email": "hilary.holley@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1989-02-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-10T00:22:53.170837+00:00",
+    "updated_at": "2026-04-11T00:24:56.770219+00:00",
+    "openstates_url": "https://openstates.org/person/hilary-holley-7iGcPQ77HfkcRo6Zkz7vWt/"
+  },
+  {
+    "id": "ocd-person/d38a5a91-afd4-46d2-9bd3-7ccaf7aa0d2b",
+    "name": "Hillary Cassel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "101",
+      "division_id": "ocd-division/country:us/state:fl/sldl:101"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Hillary",
+    "family_name": "Cassel",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4895.jpg",
+    "email": "hillary.cassel@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:12:48.458326+00:00",
+    "updated_at": "2026-06-04T06:23:22.032101+00:00",
+    "openstates_url": "https://openstates.org/person/hillary-cassel-6RAbkQDC3QFNdS33lR4cNH/"
+  },
+  {
+    "id": "ocd-person/b65fb87d-0544-4058-8ad6-9cbd3622a330",
+    "name": "J.J. Grow",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:fl/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "J.J.",
+    "family_name": "Grow",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/841906/841906.jpg",
+    "email": "jj.grow@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1968-07-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:19:45.903338+00:00",
+    "updated_at": "2025-05-23T12:23:05.695887+00:00",
+    "openstates_url": "https://openstates.org/person/j-j-grow-5Y8LZc2UR1fW5Ot0mFfIum/"
+  },
+  {
+    "id": "ocd-person/797767ca-fadc-49d9-a7a5-5722baf6557e",
+    "name": "James Buchanan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:fl/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Buchanan",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4731.jpg",
+    "email": "james.buchanan@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1982-01-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:06.167399+00:00",
+    "updated_at": "2026-06-04T06:23:25.139836+00:00",
+    "openstates_url": "https://openstates.org/person/james-buchanan-3hCdgAyUXVmldTShm3ORzS/"
+  },
+  {
+    "id": "ocd-person/2bae38cc-f703-446b-93ec-576c0e388760",
+    "name": "Jason Shoaf",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:fl/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Shoaf",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4756.jpg",
+    "email": "jason.shoaf@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1979-09-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-26T06:04:27.571935+00:00",
+    "updated_at": "2026-06-04T06:24:14.729059+00:00",
+    "openstates_url": "https://openstates.org/person/jason-shoaf-1KQHxX5Y5PpVGi68e2zBCK/"
+  },
+  {
+    "id": "ocd-person/5bd19ebd-e225-49a5-b0f5-42f6380a9fa8",
+    "name": "Jeff Holcomb",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:fl/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Holcomb",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4890.jpg",
+    "email": "jeff.holcomb@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:14:46.693860+00:00",
+    "updated_at": "2026-06-04T06:24:10.274961+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-holcomb-2nG66G1rMMu4H15lcGhhv6/"
+  },
+  {
+    "id": "ocd-person/bc54a6ff-f7b3-4bbf-a23a-4acc9caa8064",
+    "name": "Jenna Persons-Mulicka",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:fl/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Jenna",
+    "family_name": "Persons-Mulicka",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4785.jpg",
+    "email": "jenna.persons@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1983-02-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:07.251704+00:00",
+    "updated_at": "2026-06-04T06:23:51.034709+00:00",
+    "openstates_url": "https://openstates.org/person/jenna-persons-mulicka-5jNF6n7pxwj7kcW9F2fhQq/"
+  },
+  {
+    "id": "ocd-person/7fb5a540-2c3c-4661-8495-2e0e02ab8644",
+    "name": "Jennifer Canady",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:fl/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Jennifer",
+    "family_name": "Canady",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4879.jpg",
+    "email": "jennifer.canady@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1973-07-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:57.116837+00:00",
+    "updated_at": "2026-06-04T06:23:23.637829+00:00",
+    "openstates_url": "https://openstates.org/person/jennifer-canady-3sz2L8gvycIhl1HVGOEVtc/"
+  },
+  {
+    "id": "ocd-person/28e33eaa-f6cf-4158-83fe-aff91d0cd8f0",
+    "name": "Jennifer Kincart Jonsson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:fl/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Jennifer",
+    "family_name": "Kincart Jonsson",
+    "image": "https://www.theledger.com/gcdn/authoring/authoring-images/2024/04/17/NLED/73359809007-jen.jpg?width=660&height=981&fit=crop&format=pjpg&auto=webp",
+    "email": "jennifer.jonsson@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1977-11-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:19:07.114314+00:00",
+    "updated_at": "2025-04-25T00:23:58.175920+00:00",
+    "openstates_url": "https://openstates.org/person/jennifer-kincart-jonsson-1F9Xk40bY1oAkACeOHa8OG/"
+  },
+  {
+    "id": "ocd-person/8dd703e2-8024-47c5-a22b-87a36db841cb",
+    "name": "Jessica Baker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:fl/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Jessica",
+    "family_name": "Baker",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4866.jpg",
+    "email": "jessica.baker@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:22.849387+00:00",
+    "updated_at": "2026-06-04T06:23:10.891629+00:00",
+    "openstates_url": "https://openstates.org/person/jessica-baker-4JeBB82DwwFJim6zIYE7zv/"
+  },
+  {
+    "id": "ocd-person/d03b8661-852b-44ab-b7c2-aa3bf14acd39",
+    "name": "Jim Mooney",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "120",
+      "division_id": "ocd-division/country:us/state:fl/sldl:120"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Mooney",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4797.jpg",
+    "email": "james.mooney@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:05.563386+00:00",
+    "updated_at": "2026-06-04T06:23:21.593328+00:00",
+    "openstates_url": "https://openstates.org/person/jim-mooney-6KvbdENozUGgx6SgePQdtB/"
+  },
+  {
+    "id": "ocd-person/fa6bc3c9-a107-4954-adf1-e1461e9f3520",
+    "name": "Johanna L\u00f3pez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:fl/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Johanna",
+    "family_name": "L\u00f3pez",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4875.jpg",
+    "email": "johanna.lopez@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1972-02-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:06.309555+00:00",
+    "updated_at": "2026-06-04T06:23:48.744268+00:00",
+    "openstates_url": "https://openstates.org/person/johanna-lopez-7cXKU2ZIXJUWlHLef7KcM4/"
+  },
+  {
+    "id": "ocd-person/5055fc3a-3cdd-4f4d-addb-23634fd1df92",
+    "name": "John Snyder",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:fl/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Snyder",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4787.jpg",
+    "email": "john.snyder@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1987-04-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:03.819462+00:00",
+    "updated_at": "2026-06-04T06:23:27.805478+00:00",
+    "openstates_url": "https://openstates.org/person/john-snyder-2RagFogzIGCHJXiv7Xjq30/"
+  },
+  {
+    "id": "ocd-person/c7ee0194-6ff9-4b95-83ee-bac26e80467d",
+    "name": "Jon Albert",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:fl/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Albert",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/828599/828599.jpg",
+    "email": "jon.albert@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1979-07-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:21:04.963296+00:00",
+    "updated_at": "2026-04-10T00:23:19.945952+00:00",
+    "openstates_url": "https://openstates.org/person/jon-albert-65GF0zknEqdadDidMyPYfF/"
+  },
+  {
+    "id": "ocd-person/c3e8a214-183a-4b9c-970c-5332e83eb8e6",
+    "name": "Jose Alvarez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:fl/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Jose",
+    "family_name": "Alvarez",
+    "image": "https://www.voterfocus.com/CampaignFinance/photo_osceola/cand_345.jpg",
+    "email": "jose.alvarez@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1964-08-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:21:42.058148+00:00",
+    "updated_at": "2026-04-10T00:22:57.382124+00:00",
+    "openstates_url": "https://openstates.org/person/jose-alvarez-5xfog46qoqaLpHK3EYMWb0/"
+  },
+  {
+    "id": "ocd-person/6c673f21-8f64-44b7-831f-d3d2e9c78eb3",
+    "name": "Juan Porras",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "119",
+      "division_id": "ocd-division/country:us/state:fl/sldl:119"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Juan",
+    "family_name": "Porras",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4898.jpg",
+    "email": "juancarlos.porras@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1997-07-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:27.119215+00:00",
+    "updated_at": "2026-06-04T06:23:58.750931+00:00",
+    "openstates_url": "https://openstates.org/person/juan-porras-3IYM1B4Kzt3R4Zl2KDungp/"
+  },
+  {
+    "id": "ocd-person/09ff6379-dbcc-4aa2-bc70-0b2fa9fd69ec",
+    "name": "Judson Sapp",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:fl/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Judson",
+    "family_name": "Sapp",
+    "image": "https://static.wixstatic.com/media/239f01_44bd85c8941a4875a3e3f89d1cf01db3~mv2.jpeg/v1/fill/w_490,h_591,al_t,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/239f01_44bd85c8941a4875a3e3f89d1cf01db3~mv2.jpeg",
+    "email": "judson.sapp@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1977-05-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:20:57.130814+00:00",
+    "updated_at": "2025-05-15T00:23:33.842347+00:00",
+    "openstates_url": "https://openstates.org/person/judson-sapp-IrduxJguK8caecqyZ3Zz2/"
+  },
+  {
+    "id": "ocd-person/d1296445-72e8-45e5-ad0e-4443275176ef",
+    "name": "Karen Gonzalez Pittman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:fl/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Gonzalez Pittman",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4888.jpg",
+    "email": "karen.pittman@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:23.716177+00:00",
+    "updated_at": "2026-06-04T06:23:26.489252+00:00",
+    "openstates_url": "https://openstates.org/person/karen-gonzalez-pittman-6MgJMpzq34cONlezggYge7/"
+  },
+  {
+    "id": "ocd-person/43356d29-3396-423e-9286-f7bd1e52ebde",
+    "name": "Kaylee Tuck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:fl/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Kaylee",
+    "family_name": "Tuck",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4776.jpg",
+    "email": "kaylee.tuck@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1994-05-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:34.543666+00:00",
+    "updated_at": "2026-06-04T06:23:13.155854+00:00",
+    "openstates_url": "https://openstates.org/person/kaylee-tuck-22otuh4uX69ZlMKMdTWdig/"
+  },
+  {
+    "id": "ocd-person/8eff1a19-557d-4a5d-8a3b-c77015a7babe",
+    "name": "Kelly Skidmore",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:fl/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Kelly",
+    "family_name": "Skidmore",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4786.jpg",
+    "email": "kelly.skidmore@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1962-12-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:03.417519+00:00",
+    "updated_at": "2026-06-04T06:24:10.709434+00:00",
+    "openstates_url": "https://openstates.org/person/kelly-skidmore-4LpUWaTN1hcNPzWFdyZEjO/"
+  },
+  {
+    "id": "ocd-person/313e81ee-19af-4d9d-9186-fbbca7e6d65d",
+    "name": "Kevin Chambliss",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "117",
+      "division_id": "ocd-division/country:us/state:fl/sldl:117"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Chambliss",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4798.jpg",
+    "email": "kevin.chambliss@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1981-06-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:06.331133+00:00",
+    "updated_at": "2026-06-04T06:23:25.579149+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-chambliss-1UvBmXgNmvpGKdNVDE0Z9Z/"
+  },
+  {
+    "id": "ocd-person/7cf27467-9070-4d4a-9a45-24bfe980dfb8",
+    "name": "Kevin Steele",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:fl/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Steele",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4881.jpg",
+    "email": "kevin.steele@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:36.009098+00:00",
+    "updated_at": "2026-06-04T06:23:48.308137+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-steele-3nlqjvDsKAbL1hWGXD5eR6/"
+  },
+  {
+    "id": "ocd-person/d6c0ddf5-2821-4510-83d1-da9eb422739a",
+    "name": "Kim Berfield",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:fl/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Berfield",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4210.jpg",
+    "email": "kim.berfield@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:47.351913+00:00",
+    "updated_at": "2026-06-04T06:23:43.846822+00:00",
+    "openstates_url": "https://openstates.org/person/kim-berfield-6XEUu2j5uEd4APk0lyakPK/"
+  },
+  {
+    "id": "ocd-person/469b8c3d-5133-43c1-8598-b63ea936f135",
+    "name": "Kim Daniels",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:fl/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Daniels",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4652.jpg",
+    "email": "kimberly.daniels@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:38.910496+00:00",
+    "updated_at": "2026-06-04T06:24:12.585739+00:00",
+    "openstates_url": "https://openstates.org/person/kim-daniels-29EY0BwNuQPMRG61wDaOsH/"
+  },
+  {
+    "id": "ocd-person/e809e1f7-641f-47c7-8754-964f1ceae10d",
+    "name": "Kim Kendall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:fl/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Kendall",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KimKendall2024.jpg",
+    "email": "kim.kendall@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1967-06-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:20:43.182006+00:00",
+    "updated_at": "2025-05-15T00:22:26.627114+00:00",
+    "openstates_url": "https://openstates.org/person/kim-kendall-73qjeB5ZXqk5kBlmjXqIYv/"
+  },
+  {
+    "id": "ocd-person/efa5f0b9-e10e-4ae0-a352-db879b1e0d3b",
+    "name": "Kiyan Michael",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:fl/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Kiyan",
+    "family_name": "Michael",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4869.jpg",
+    "email": "kiyan.michael@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1964-09-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:14.882280+00:00",
+    "updated_at": "2026-06-04T06:23:28.726157+00:00",
+    "openstates_url": "https://openstates.org/person/kiyan-michael-7ID04D4mY6VXn3i5ooDBHv/"
+  },
+  {
+    "id": "ocd-person/f835385b-0837-4cfc-a81c-54982ba185d7",
+    "name": "Lauren Melo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:fl/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Lauren",
+    "family_name": "Melo",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4784.jpg",
+    "email": "lauren.melo@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1966-08-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:09.100869+00:00",
+    "updated_at": "2026-06-04T06:24:11.147322+00:00",
+    "openstates_url": "https://openstates.org/person/lauren-melo-7YMPxjEiKeTQXXqz6q28bH/"
+  },
+  {
+    "id": "ocd-person/56263ea0-3c5c-45cb-998d-ac7cf8db5446",
+    "name": "Lawrence McClure",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:fl/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Lawrence",
+    "family_name": "McClure",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4686.jpg",
+    "email": "lawrence.mcclure@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1987-06-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:35.135483+00:00",
+    "updated_at": "2026-06-04T06:23:31.010464+00:00",
+    "openstates_url": "https://openstates.org/person/lawrence-mcclure-2cYoiGNe3XrDGNDgtL10n0/"
+  },
+  {
+    "id": "ocd-person/69e5941c-0def-4c79-a33e-c318ff516c9a",
+    "name": "Leonard Spencer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:fl/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Leonard",
+    "family_name": "Spencer",
+    "image": "https://floridapolitics.com/wp-content/uploads/2024/05/Spencer-Leonars.jpeg",
+    "email": "leonard.spencer@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1971-07-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:20:15.590161+00:00",
+    "updated_at": "2025-04-25T00:23:10.341002+00:00",
+    "openstates_url": "https://openstates.org/person/leonard-spencer-3Dp6wcppmTP7IPMpImBiFW/"
+  },
+  {
+    "id": "ocd-person/7d59a4fe-d0f1-43a8-93b4-bcd3b7fe5b4e",
+    "name": "Linda Chaney",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:fl/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Linda",
+    "family_name": "Chaney",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4778.jpg",
+    "email": "linda.chaney@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:12.144584+00:00",
+    "updated_at": "2026-06-04T06:24:04.549608+00:00",
+    "openstates_url": "https://openstates.org/person/linda-chaney-3oX0Wn1UpOg0vhCgdIQJji/"
+  },
+  {
+    "id": "ocd-person/8bcd1df3-2697-42a9-842a-f3cced1fcb0f",
+    "name": "Lindsay Cross",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:fl/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Lindsay",
+    "family_name": "Cross",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4887.jpg",
+    "email": "lindsay.cross@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1977-11-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:15.431623+00:00",
+    "updated_at": "2026-06-04T06:24:00.580353+00:00",
+    "openstates_url": "https://openstates.org/person/lindsay-cross-4FnffqtLHEQYkZIq7karDr/"
+  },
+  {
+    "id": "ocd-person/314f9b75-2167-4b73-b7b8-9c7dee31aaee",
+    "name": "Lisa Dunkley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:fl/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Dunkley",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4893.jpg",
+    "email": "lisa.dunkley@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:48.841053+00:00",
+    "updated_at": "2026-06-04T06:23:55.532814+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-dunkley-1V30HpqdEoO9b7Z0HiyD66/"
+  },
+  {
+    "id": "ocd-person/5eb39c7e-3582-4269-a012-7a88c54623c9",
+    "name": "Marie Woodson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "105",
+      "division_id": "ocd-division/country:us/state:fl/sldl:105"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Marie",
+    "family_name": "Woodson",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4789.jpg",
+    "email": "marie.woodson@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:03.951155+00:00",
+    "updated_at": "2026-06-04T06:23:16.868823+00:00",
+    "openstates_url": "https://openstates.org/person/marie-woodson-2shMOxCkkaAvoQ3KZdDPPl/"
+  },
+  {
+    "id": "ocd-person/7079537f-b144-4304-b389-8e572e62e1c9",
+    "name": "Meg Weinberger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:fl/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Meg",
+    "family_name": "Weinberger",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Nick_Ward_20240808_093359.jpg",
+    "email": "meg.weinberger@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1972-10-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:19:04.174369+00:00",
+    "updated_at": "2026-04-10T00:22:54.765437+00:00",
+    "openstates_url": "https://openstates.org/person/meg-weinberger-3QEaNnQ71LqjSrSirulR85/"
+  },
+  {
+    "id": "ocd-person/fc683ed7-c458-46b4-a133-6ab6916237d0",
+    "name": "Michael Owen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:fl/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Owen",
+    "image": "https://www.porttb.com/?a=Files.Serve&File_id=DEAE221B-6C8A-4865-BE9F-9C16F892E47C",
+    "email": "michael.owen@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1975-12-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:21:36.858747+00:00",
+    "updated_at": "2026-01-31T00:21:23.853152+00:00",
+    "openstates_url": "https://openstates.org/person/michael-owen-7gHhochotUWLMU3wBkok0e/"
+  },
+  {
+    "id": "ocd-person/9b6f17f5-ec19-4302-8a45-2b40175bb39b",
+    "name": "Michele Rayner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:fl/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Michele",
+    "family_name": "Rayner",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4781.jpg",
+    "email": "michele.rayner@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1981-09-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:14:35.661041+00:00",
+    "updated_at": "2026-06-04T06:23:46.099188+00:00",
+    "openstates_url": "https://openstates.org/person/michele-rayner-4jIZzopgDG7IQarkrK0mDL/"
+  },
+  {
+    "id": "ocd-person/a3c0aa9f-c261-4904-b73b-4dc127778222",
+    "name": "Michelle Salzman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:fl/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Salzman",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4763.jpg",
+    "email": "michelle.salzman@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1977-07-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:11.633118+00:00",
+    "updated_at": "2026-06-04T06:24:19.587601+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-salzman-4yznU22h3q21gg2XXIOiGI/"
+  },
+  {
+    "id": "ocd-person/9a44c892-cd4a-452b-88cb-435e8ece8d82",
+    "name": "Mike Giallombardo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:fl/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Giallombardo",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4783.jpg",
+    "email": "mike.giallombardo@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:11:51.716408+00:00",
+    "updated_at": "2026-06-04T06:24:15.623292+00:00",
+    "openstates_url": "https://openstates.org/person/mike-giallombardo-4h6FebWGDWnSwiWFppRmXC/"
+  },
+  {
+    "id": "ocd-person/1c170657-03fb-4ab7-ae9f-f8e83568471e",
+    "name": "Mike Gottlieb",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "102",
+      "division_id": "ocd-division/country:us/state:fl/sldl:102"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Gottlieb",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4724.jpg",
+    "email": "mike.gottlieb@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1968-11-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:17.086248+00:00",
+    "updated_at": "2026-06-04T06:23:12.687198+00:00",
+    "openstates_url": "https://openstates.org/person/mike-gottlieb-r0J42W2wHi77tSwEKFFp0/"
+  },
+  {
+    "id": "ocd-person/a4a0a7bf-62c4-412e-9501-007d712009ca",
+    "name": "Mike Redondo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "118",
+      "division_id": "ocd-division/country:us/state:fl/sldl:118"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Redondo",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4902.jpg",
+    "email": "mike.redondo@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1984-12-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-12-28T22:46:51.217084+00:00",
+    "updated_at": "2026-06-04T06:23:44.721270+00:00",
+    "openstates_url": "https://openstates.org/person/mike-redondo-50e9zz8PAi99yqTb4tg25i/"
+  },
+  {
+    "id": "ocd-person/04a025da-737a-4580-9c0f-64531e9cbbec",
+    "name": "Mitch Rosenwald",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:fl/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Mitch",
+    "family_name": "Rosenwald",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MitchRosenwald.jpg",
+    "email": "mitch.rosenwald@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:18:56.230839+00:00",
+    "updated_at": "2026-01-31T00:21:28.520696+00:00",
+    "openstates_url": "https://openstates.org/person/mitch-rosenwald-8j9jq8OkZKvHmPH0TgjWu/"
+  },
+  {
+    "id": "ocd-person/4a001cb2-e0ab-4036-a85d-b4f8ab3664cc",
+    "name": "Monique Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:fl/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Monique",
+    "family_name": "Miller",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Monique_Miller.jpg",
+    "email": "monique.miller@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1970-08-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:19:39.820175+00:00",
+    "updated_at": "2025-05-15T00:23:31.517206+00:00",
+    "openstates_url": "https://openstates.org/person/monique-miller-2FdTyIdksqdYLqi0oheAUm/"
+  },
+  {
+    "id": "ocd-person/609d82db-51d0-4705-a6c4-4d0bd487a61f",
+    "name": "Nan Cobb",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:fl/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Nan",
+    "family_name": "Cobb",
+    "image": "https://www.eustis.org/files/assets/public/v/3/city-hall-mgrs-office/images/commissioner-cobb.jpg?dimension=pageimage&w=480",
+    "email": "nan.cobb@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:19:59.800138+00:00",
+    "updated_at": "2025-04-25T00:23:28.426284+00:00",
+    "openstates_url": "https://openstates.org/person/nan-cobb-2wJFGMLierXkWFpax27Vq3/"
+  },
+  {
+    "id": "ocd-person/7fa0c00f-c006-401c-88e7-06485e394c34",
+    "name": "Nathan Boyles",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:fl/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Nathan",
+    "family_name": "Boyles",
+    "image": "",
+    "email": "nathan.boyles@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1983-05-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-07-18T00:24:20.765566+00:00",
+    "updated_at": "2026-01-31T00:22:09.954540+00:00",
+    "openstates_url": "https://openstates.org/person/nathan-boyles-3spUI9GNcHJrJ6EVu2g0do/"
+  },
+  {
+    "id": "ocd-person/4bae75ba-b3df-4780-984b-144ae4d80a77",
+    "name": "Omar Blanco",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "115",
+      "division_id": "ocd-division/country:us/state:fl/sldl:115"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Omar",
+    "family_name": "Blanco",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Omar__Blanco.PNG",
+    "email": "omar.blanco@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:20:12.224601+00:00",
+    "updated_at": "2026-01-31T00:22:15.584920+00:00",
+    "openstates_url": "https://openstates.org/person/omar-blanco-2Io9TnDkhdp0TrOhUqKfwd/"
+  },
+  {
+    "id": "ocd-person/ed56c597-3652-45a5-9c01-de0bf3eb8ab9",
+    "name": "Patt Maney",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:fl/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Patt",
+    "family_name": "Maney",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4764.jpg",
+    "email": "patt.maney@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:10.887762+00:00",
+    "updated_at": "2026-06-04T06:23:15.160637+00:00",
+    "openstates_url": "https://openstates.org/person/patt-maney-7DqpqsV0rPJoS5zuf8QgjR/"
+  },
+  {
+    "id": "ocd-person/0a0ec0a3-4f1d-4cd8-b790-d51bff717798",
+    "name": "Paula Stark",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:fl/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Paula",
+    "family_name": "Stark",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4878.jpg",
+    "email": "paula.stark@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1957-04-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:31.645466+00:00",
+    "updated_at": "2026-06-04T06:24:01.020872+00:00",
+    "openstates_url": "https://openstates.org/person/paula-stark-IyfEwQLeX3lBTzPzxXfD6/"
+  },
+  {
+    "id": "ocd-person/ab654947-84ed-4526-9b00-487642499106",
+    "name": "Peggy Gossett-Seidman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:fl/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Peggy",
+    "family_name": "Gossett-Seidman",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4891.jpg",
+    "email": "peggy.gossettseidman@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:12:01.702658+00:00",
+    "updated_at": "2026-06-04T06:23:40.968095+00:00",
+    "openstates_url": "https://openstates.org/person/peggy-gossett-seidman-5DPyVCZkQI32w1qqjvNF6U/"
+  },
+  {
+    "id": "ocd-person/ff372569-d6f5-4bd0-8d36-569a7458f3e2",
+    "name": "RaShon Young",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:fl/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "RaShon",
+    "family_name": "Young",
+    "image": "",
+    "email": "rashon.young@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1999-06-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-31T00:22:11.174251+00:00",
+    "updated_at": "2026-02-13T06:22:55.731043+00:00",
+    "openstates_url": "https://openstates.org/person/rashon-young-7laFChlT6KKM6CKXJXS2aI/"
+  },
+  {
+    "id": "ocd-person/1b25c111-e59b-429e-a6b7-fd22a38c1581",
+    "name": "Rachel Plakon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:fl/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Rachel",
+    "family_name": "Plakon",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4871.jpg",
+    "email": "rachel.plakon@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1979-06-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:10.095920+00:00",
+    "updated_at": "2026-06-04T06:23:28.286646+00:00",
+    "openstates_url": "https://openstates.org/person/rachel-plakon-pE2st1g3oPljuAQg5DVzN/"
+  },
+  {
+    "id": "ocd-person/2a415c08-da66-402b-ada6-93390a5df820",
+    "name": "Randy Maggard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:fl/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Maggard",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4758.jpg",
+    "email": "randy.maggard@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1963-07-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-26T06:04:32.508794+00:00",
+    "updated_at": "2026-06-04T06:23:30.536123+00:00",
+    "openstates_url": "https://openstates.org/person/randy-maggard-1HjXv6M0ncazFqUK8wg2iW/"
+  },
+  {
+    "id": "ocd-person/c95a0c72-09d5-40dc-8df8-a865051b9ea0",
+    "name": "Richard Gentry",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:fl/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Gentry",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Richard_Gentry_20240811_121405.png",
+    "email": "richard.gentry@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1951-05-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:19:22.660585+00:00",
+    "updated_at": "2026-01-31T00:21:59.331096+00:00",
+    "openstates_url": "https://openstates.org/person/richard-gentry-67wbp3WqqS0O6erhKKfd1E/"
+  },
+  {
+    "id": "ocd-person/ca476441-7c7a-4f21-ba55-207c21a7d51d",
+    "name": "Rita Harris",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:fl/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Rita",
+    "family_name": "Harris",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4877.jpg",
+    "email": "rita.harris@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:15:10.697805+00:00",
+    "updated_at": "2026-06-04T06:24:05.397235+00:00",
+    "openstates_url": "https://openstates.org/person/rita-harris-69h4iaHSrPNfMIYkEvu6Qf/"
+  },
+  {
+    "id": "ocd-person/50be2c32-37ea-4b93-9525-21d7b6f0b463",
+    "name": "Rob Long",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:fl/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Long",
+    "image": "",
+    "email": "rob.long@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1985-01-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-31T00:22:22.022532+00:00",
+    "updated_at": "2026-04-10T00:22:42.912733+00:00",
+    "openstates_url": "https://openstates.org/person/rob-long-2SMIJ7zmRG2xSeunghP3EB/"
+  },
+  {
+    "id": "ocd-person/c63b8e5e-fd63-45a1-b7e9-16595039f34a",
+    "name": "Robbie Brackett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:fl/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Robbie",
+    "family_name": "Brackett",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4870.jpg",
+    "email": "robert.brackett@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1963-04-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:18.463076+00:00",
+    "updated_at": "2026-06-04T06:24:12.148937+00:00",
+    "openstates_url": "https://openstates.org/person/robbie-brackett-623hH0kSYtqp5Xfa3f6V9W/"
+  },
+  {
+    "id": "ocd-person/67c201cf-9aaa-4a06-8dda-28e93ea27f6b",
+    "name": "Robin Bartleman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "103",
+      "division_id": "ocd-division/country:us/state:fl/sldl:103"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Robin",
+    "family_name": "Bartleman",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4793.jpg",
+    "email": "robin.bartleman@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1972-08-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:11.413706+00:00",
+    "updated_at": "2026-06-04T06:23:51.940191+00:00",
+    "openstates_url": "https://openstates.org/person/robin-bartleman-39ms0jsngLysXHzesgWDSF/"
+  },
+  {
+    "id": "ocd-person/baa03ffb-0948-4975-9e3a-c3fb9c0fcf40",
+    "name": "Ryan Chamberlin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:fl/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Chamberlin",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4901.jpg",
+    "email": "ryan.chamberlin@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1974-05-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-05-22T23:27:39.943471+00:00",
+    "updated_at": "2026-06-04T06:24:20.431263+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-chamberlin-5g9o31nSVj2FP3LnwgEpNo/"
+  },
+  {
+    "id": "ocd-person/965e180a-177f-49ac-baba-0f0c7fe9a836",
+    "name": "Sam Garrison",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:fl/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Garrison",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4767.jpg",
+    "email": "sam.garrison@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:03.534753+00:00",
+    "updated_at": "2026-06-04T06:23:18.458384+00:00",
+    "openstates_url": "https://openstates.org/person/sam-garrison-4ZjqhiPopIPQ3lnb6ut3Dy/"
+  },
+  {
+    "id": "ocd-person/2da96449-663b-48ed-ab70-ef4e433afda3",
+    "name": "Sam Greco",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:fl/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Greco",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SamGreco2024.png",
+    "email": "sam.greco@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1992-08-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:21:01.016732+00:00",
+    "updated_at": "2025-04-25T00:23:37.696920+00:00",
+    "openstates_url": "https://openstates.org/person/sam-greco-1OA49O1AdgJL87JTWGaUAV/"
+  },
+  {
+    "id": "ocd-person/6e6024d7-d66b-437d-b4a7-1e96bc365d5d",
+    "name": "Samantha Scott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:fl/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Samantha",
+    "family_name": "Scott",
+    "image": "https://lakeandsumterstyle.com/wp-content/uploads/2025/09/548330102_10238294438960625_7665889559183237490_n-e1758302240695-1200x730.jpg",
+    "email": "samantha.scott@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1981-06-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-10T00:23:06.753742+00:00",
+    "updated_at": "2026-04-11T00:25:10.582264+00:00",
+    "openstates_url": "https://openstates.org/person/samantha-scott-3MH5onxGj9fswSLOmhfhNt/"
+  },
+  {
+    "id": "ocd-person/c844e345-f2a8-42fa-9ef9-d278bcb8fa4c",
+    "name": "Shane Abbott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:fl/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Abbott",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4864.jpg",
+    "email": "shane.abbott@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:14:30.156714+00:00",
+    "updated_at": "2026-06-04T06:23:21.149520+00:00",
+    "openstates_url": "https://openstates.org/person/shane-abbott-65twj381u68M836bnYJCpQ/"
+  },
+  {
+    "id": "ocd-person/a5af681e-9679-4fed-83a3-ed16405055cb",
+    "name": "Susan Plasencia",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:fl/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Susan",
+    "family_name": "Plasencia",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4872.jpg",
+    "email": "susan.plasencia@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:12:58.237519+00:00",
+    "updated_at": "2026-06-04T06:23:08.286701+00:00",
+    "openstates_url": "https://openstates.org/person/susan-plasencia-52dtUYcEjhg7rG62XMOjff/"
+  },
+  {
+    "id": "ocd-person/811dfa67-2615-4d45-9cf9-bd1a587a34fe",
+    "name": "Susan Vald\u00e9s",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:fl/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Susan",
+    "family_name": "Vald\u00e9s",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4752.jpg",
+    "email": "susan.valdes@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1964-11-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:09.662801+00:00",
+    "updated_at": "2026-06-04T06:23:35.825752+00:00",
+    "openstates_url": "https://openstates.org/person/susan-valdes-3vdi27CLWhEPGwLgKOu7Ze/"
+  },
+  {
+    "id": "ocd-person/bb2ae855-2e7a-4744-9271-a8ae1af89428",
+    "name": "Tae Edmonds",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:fl/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Tae",
+    "family_name": "Edmonds",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4842.jpg",
+    "email": "jervonte.edmonds@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1991-06-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-03-21T19:08:48.076229+00:00",
+    "updated_at": "2026-06-04T06:24:16.055264+00:00",
+    "openstates_url": "https://openstates.org/person/tae-edmonds-5hBAmfWe4JInXttDGo7UjY/"
+  },
+  {
+    "id": "ocd-person/4ba15ff2-a717-4ea5-ad72-34e673ef63d8",
+    "name": "Taylor Yarkosky",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:fl/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Taylor",
+    "family_name": "Yarkosky",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4868.jpg",
+    "email": "taylor.yarkosky@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1977-03-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:11:45.455708+00:00",
+    "updated_at": "2026-06-04T06:23:38.126545+00:00",
+    "openstates_url": "https://openstates.org/person/taylor-yarkosky-2IiAj3cA7MxsAiK920Ddm4/"
+  },
+  {
+    "id": "ocd-person/36219a90-2f5f-4ac6-b6ad-04139103c70c",
+    "name": "Tiffany Esposito",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:fl/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Tiffany",
+    "family_name": "Esposito",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4892.jpg",
+    "email": "tiffany.esposito@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1987-07-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:13:05.506660+00:00",
+    "updated_at": "2026-06-04T06:23:15.602621+00:00",
+    "openstates_url": "https://openstates.org/person/tiffany-esposito-1e8wRQfU61oeRXiwBOBLlE/"
+  },
+  {
+    "id": "ocd-person/a44181b6-df0b-466d-9989-d369083201aa",
+    "name": "Toby Overdorf",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:fl/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Toby",
+    "family_name": "Overdorf",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4728.jpg",
+    "email": "toby.overdorf@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1969-05-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:19.070944+00:00",
+    "updated_at": "2026-06-04T06:24:09.809232+00:00",
+    "openstates_url": "https://openstates.org/person/toby-overdorf-4zwg3GhDqVbvJaYCp2T72w/"
+  },
+  {
+    "id": "ocd-person/35f68144-b99b-4f86-b223-726897926bfa",
+    "name": "Tom Fabricio",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "110",
+      "division_id": "ocd-division/country:us/state:fl/sldl:110"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Fabricio",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4792.jpg",
+    "email": "tom.fabricio@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1977-01-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:09.518363+00:00",
+    "updated_at": "2026-06-04T06:23:56.841959+00:00",
+    "openstates_url": "https://openstates.org/person/tom-fabricio-1dpFHCIFbW3zbw5diwZ7da/"
+  },
+  {
+    "id": "ocd-person/217f848d-99c2-43aa-98d2-6fee2812c1e6",
+    "name": "Traci Koster",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:fl/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Traci",
+    "family_name": "Koster",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4779.jpg",
+    "email": "traci.koster@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1985-06-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:11.374337+00:00",
+    "updated_at": "2026-06-04T06:23:47.431495+00:00",
+    "openstates_url": "https://openstates.org/person/traci-koster-11D1OnnYVZZ304F7moDUd4/"
+  },
+  {
+    "id": "ocd-person/ac26aaa6-1f59-4893-ae7f-30f5d2e5d8fc",
+    "name": "Tyler Sirois",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:fl/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Tyler",
+    "family_name": "Sirois",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4748.jpg",
+    "email": "tyler.sirois@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1984-08-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:16.071474+00:00",
+    "updated_at": "2026-06-04T06:23:51.474152+00:00",
+    "openstates_url": "https://openstates.org/person/tyler-sirois-5EqLkxVaRRll8cFOgeI2W4/"
+  },
+  {
+    "id": "ocd-person/2d1c1c14-3ff1-468e-920a-07a081df4775",
+    "name": "Vanessa Oliver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:fl/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Vanessa",
+    "family_name": "Oliver",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/VanessaOliver2024.jpg",
+    "email": "vanessa.oliver@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1981-01-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:22:02.142334+00:00",
+    "updated_at": "2025-05-23T12:22:30.738736+00:00",
+    "openstates_url": "https://openstates.org/person/vanessa-oliver-1N7V3MkOO8EmfTfUe58Rb3/"
+  },
+  {
+    "id": "ocd-person/7cba4eb9-69b5-431d-817e-41f54ccf9ceb",
+    "name": "Wallace Aristide",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "107",
+      "division_id": "ocd-division/country:us/state:fl/sldl:107"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Wallace",
+    "family_name": "Aristide",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/WallaceAristide.png",
+    "email": "wallace.aristide@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:20:41.671487+00:00",
+    "updated_at": "2025-05-15T00:23:30.252970+00:00",
+    "openstates_url": "https://openstates.org/person/wallace-aristide-3nMBrQmHzlNQVgqDFopNdr/"
+  },
+  {
+    "id": "ocd-person/f2b23850-7feb-484e-8ed2-68e2f6108fbf",
+    "name": "Webster Barnaby",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:fl/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Webster",
+    "family_name": "Barnaby",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4770.jpg",
+    "email": "webster.barnaby@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1959-12-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:06.298063+00:00",
+    "updated_at": "2026-06-04T06:23:12.217733+00:00",
+    "openstates_url": "https://openstates.org/person/webster-barnaby-7NxaZWwoBehFoJHIL4V9nL/"
+  },
+  {
+    "id": "ocd-person/042b27f1-ec82-497e-958c-ebe5da28b706",
+    "name": "Will Robinson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:fl/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Robinson",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4733.jpg",
+    "email": "will.robinson@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1975-11-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:05:05.151944+00:00",
+    "updated_at": "2026-06-04T06:23:37.228119+00:00",
+    "openstates_url": "https://openstates.org/person/will-robinson-7rgsmbVFg16DVTtEO4J7e/"
+  },
+  {
+    "id": "ocd-person/17ae3cd7-1aa0-44b4-baab-ed839b6776a6",
+    "name": "Wyman Duggan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:fl/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Wyman",
+    "family_name": "Duggan",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4712.jpg",
+    "email": "wyman.duggan@flhouse.gov",
+    "gender": "Male",
+    "birth_date": "1969-04-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T01:14:01.552084+00:00",
+    "updated_at": "2026-06-04T06:23:32.745294+00:00",
+    "openstates_url": "https://openstates.org/person/wyman-duggan-igRv9dJIWk4MZLyDAxrsM/"
+  },
+  {
+    "id": "ocd-person/88aacea0-124a-4980-b046-90cfb0cda4db",
+    "name": "Yvette Benarroch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:fl/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Yvette",
+    "family_name": "Benarroch",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/YvetteBennaroch24.JPG",
+    "email": "yvette.benarroch@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "1970-06-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:20:26.345605+00:00",
+    "updated_at": "2025-05-15T00:22:41.637854+00:00",
+    "openstates_url": "https://openstates.org/person/yvette-benarroch-49t0xlEEoPflzqm0KQzWfr/"
+  },
+  {
+    "id": "ocd-person/0f5d2710-6b7c-4444-8a45-ea3e917805ba",
+    "name": "Yvonne Hinson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:fl/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:fl/government",
+      "name": "Florida",
+      "classification": "state"
+    },
+    "given_name": "Yvonne",
+    "family_name": "Hinson",
+    "image": "https://www.flhouse.gov/FileStores/Web/Imaging/Member/4768.jpg",
+    "email": "yvonne.hinson@flhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:05:03.604468+00:00",
+    "updated_at": "2026-06-04T06:24:08.890022+00:00",
+    "openstates_url": "https://openstates.org/person/yvonne-hinson-SzSFwDghRetQJASqgJU78/"
+  }
+]

@@ -1,0 +1,2415 @@
+[
+  {
+    "id": "ocd-person/eac36970-1c63-4b4c-81b1-3a39536bd69d",
+    "name": "Andrew Stoddard",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ut/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Stoddard",
+    "image": "https://le.utah.gov/images/legislator/STODDA.jpg",
+    "email": "astoddard@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.A., Psychology, University of Utah; J.D., Brigham Young University",
+      "cell phone": "385-256-3281",
+      "profession": "City Prosecutor",
+      "service start": "January 1, 2019",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2019-01-04T05:21:49.753709+00:00",
+    "updated_at": "2025-07-18T02:37:16.416992+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-stoddard-78zVUhgPOsxcIY47MXHy8r/"
+  },
+  {
+    "id": "ocd-person/d987aff4-abcf-4f2a-826d-b5741d065d44",
+    "name": "Angela Romero",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ut/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Angela",
+    "family_name": "Romero",
+    "image": "https://le.utah.gov/images/legislator/ROMERAY.jpg",
+    "email": "angelaromero@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Leader",
+      "education": "B.S., Political Science and Chicano Studies, University of Utah; M.P.A., University of Utah",
+      "cell phone": "801-722-4972",
+      "profession": "Program Manager",
+      "service start": "January 1, 2013",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:55.383850+00:00",
+    "updated_at": "2025-03-05T09:17:59.019649+00:00",
+    "openstates_url": "https://openstates.org/person/angela-romero-6cTLLFXB127Im3dnJNd8AW/"
+  },
+  {
+    "id": "ocd-person/7c0df02d-1ef0-4fa9-b708-ccafff35649e",
+    "name": "Anthony Loubet",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ut/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Anthony",
+    "family_name": "Loubet",
+    "image": "https://le.utah.gov/images/legislator/LOUBEA.jpg",
+    "email": "aloubet@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Juris Doctor, J. Reuben Clark Law School, BYU; Bachelor of Science in Business Management, California Lutheran University",
+      "cell phone": "801-657-0466",
+      "home phone": "801-657-0466",
+      "profession": "Chief Legal Officer and General Counsel",
+      "service start": "January 1, 2023",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2023-01-19T11:47:10.764089+00:00",
+    "updated_at": "2026-01-28T02:33:45.978450+00:00",
+    "openstates_url": "https://openstates.org/person/anthony-loubet-3m5Pw0U3QJD9C00mdKh42A/"
+  },
+  {
+    "id": "ocd-person/6d3d4043-1ec3-454c-a517-4036722c50ee",
+    "name": "Ariel Defay",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ut/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Ariel",
+    "family_name": "Defay",
+    "image": "https://le.utah.gov/images/legislator/DEFAYA.jpg",
+    "email": "adefay@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.A., Political Science, Utah State University; M.P.A. Public Administration, Ohio University",
+      "cell phone": "801-793-8944",
+      "home phone": "801-793-8944",
+      "profession": "Small business owner",
+      "service start": "November 15, 2023",
+      "counties represented": [
+        "Davis"
+      ]
+    },
+    "created_at": "2024-01-10T23:25:15.237175+00:00",
+    "updated_at": "2026-01-28T02:33:31.450584+00:00",
+    "openstates_url": "https://openstates.org/person/ariel-defay-3K89dVBal9PVTMiYxRtc9G/"
+  },
+  {
+    "id": "ocd-person/8a770a9d-d24e-4468-9194-fa2ff1f422e3",
+    "name": "Ashlee Matthews",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ut/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Ashlee",
+    "family_name": "Matthews",
+    "image": "https://le.utah.gov/images/legislator/MATTHA.jpg",
+    "email": "amatthews@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell phone": "385-264-2024",
+      "profession": "Office Manager",
+      "service start": "January 1, 2021",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2021-01-14T00:19:05.757002+00:00",
+    "updated_at": "2025-07-18T02:36:20.570967+00:00",
+    "openstates_url": "https://openstates.org/person/ashlee-matthews-4DHLHMulC0y1y7qESKWsz5/"
+  },
+  {
+    "id": "ocd-person/3e388e2d-1b4a-49dc-9aa5-38353166e08f",
+    "name": "Bridger Bolinder",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ut/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Bridger",
+    "family_name": "Bolinder",
+    "image": "https://le.utah.gov/images/legislator/BOLINB.jpg",
+    "email": "bbolinder@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Grantsville High School",
+      "cell phone": "435-255-3093",
+      "home phone": "435-255-3093",
+      "profession": "Business",
+      "service start": "January 1, 2023",
+      "counties represented": [
+        "Juab",
+        "Millard",
+        "Tooele"
+      ]
+    },
+    "created_at": "2023-01-19T11:48:17.720922+00:00",
+    "updated_at": "2026-01-28T02:34:05.195355+00:00",
+    "openstates_url": "https://openstates.org/person/bridger-bolinder-1tPMwrcNUchbTM6XRrbsRb/"
+  },
+  {
+    "id": "ocd-person/8e452a53-e405-49f9-9031-77d8a9f63bd3",
+    "name": "Cal Roberts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:ut/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Cal",
+    "family_name": "Roberts",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CalRoberts2024.jpg",
+    "email": "croberts@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:12.559567+00:00",
+    "updated_at": "2026-01-28T02:33:51.039321+00:00",
+    "openstates_url": "https://openstates.org/person/cal-roberts-4KSWBLm8QcSbTNtIUoYtm7/"
+  },
+  {
+    "id": "ocd-person/b4977f98-8a0d-4e4b-a43f-b8ee80adba2b",
+    "name": "Candice Pierucci",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:ut/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Candice",
+    "family_name": "Pierucci",
+    "image": "https://le.utah.gov/images/legislator/PIERUC.jpg",
+    "email": "cpierucci@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.S., Political Science, emphasis in American government, Utah Valley University; M.A., Public Administration, University of Utah",
+      "cell phone": "385-414-1488",
+      "profession": "Adjunct Professor; Research Fellow",
+      "service start": "Appointed November 5, 2019",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2021-01-14T00:19:02.591455+00:00",
+    "updated_at": "2025-03-29T02:35:00.391136+00:00",
+    "openstates_url": "https://openstates.org/person/candice-pierucci-5Ulqw7VmQ6YWExaE9KCtXH/"
+  },
+  {
+    "id": "ocd-person/8967df77-dc79-46e0-873c-b79f9cf73e1f",
+    "name": "Carl Albrecht",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:ut/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Carl",
+    "family_name": "Albrecht",
+    "image": "https://le.utah.gov/images/legislator/ALBRECR.jpg",
+    "email": "carlalbrecht@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1952-04-09",
+    "death_date": "",
+    "extras": {
+      "education": "B.S., Business, Souther Utah State College",
+      "cell phone": "435-979-6578",
+      "home phone": "435-896-5505",
+      "profession": "Retired Utility Executive/ Consultant",
+      "service start": "January 1, 2017",
+      "counties represented": [
+        "Emery",
+        "Grand",
+        "Sanpete",
+        "Sevier"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:56.041571+00:00",
+    "updated_at": "2025-03-29T02:35:22.328338+00:00",
+    "openstates_url": "https://openstates.org/person/carl-albrecht-4BHPy4zrnFSwIvsmoDxXSR/"
+  },
+  {
+    "id": "ocd-person/8d06fd93-cc42-47e3-a00c-2229718b7226",
+    "name": "Carol Moss",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ut/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Carol",
+    "family_name": "Moss",
+    "image": "https://le.utah.gov/images/legislator/MOSSCS.jpg",
+    "email": "csmoss@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.A., M.A., English, University of Utah; Educational Administration, University of Utah",
+      "cell phone": "801-647-8764",
+      "home phone": "801-272-6507",
+      "profession": "High School Teacher (retired)",
+      "service start": "January 1, 2001",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:56.113420+00:00",
+    "updated_at": "2026-01-28T02:34:18.723184+00:00",
+    "openstates_url": "https://openstates.org/person/carol-moss-4I76zYpKknIc5Bqe9W4WWc/"
+  },
+  {
+    "id": "ocd-person/5d8ada2a-75c6-4aa6-b359-29720794fb7e",
+    "name": "Casey Snider",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ut/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Casey",
+    "family_name": "Snider",
+    "image": "https://le.utah.gov/images/legislator/SNIDEC.jpg",
+    "email": "csnider@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1985-11-26",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Assistant Whip",
+      "education": "B.S., Conservation and Restoration Ecology and Law and Constitutional Studies, Utah State University; M.S., Environmental Science and Policy, Johns Hopkins University",
+      "cell phone": "435-770-4081",
+      "profession": "Executive Director",
+      "service start": "Appointed October 15, 2018",
+      "counties represented": [
+        "Cache"
+      ]
+    },
+    "created_at": "2019-01-04T05:21:45.386748+00:00",
+    "updated_at": "2025-07-18T02:37:06.591878+00:00",
+    "openstates_url": "https://openstates.org/person/casey-snider-2qVk0QdgRZESmteftAcw3C/"
+  },
+  {
+    "id": "ocd-person/54fcc31c-a3e5-47ea-a044-d1223c6bce65",
+    "name": "Cheryl Acton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ut/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Cheryl",
+    "family_name": "Acton",
+    "image": "https://le.utah.gov/images/legislator/ACTONCK.jpg",
+    "email": "cacton@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "1964-05-22",
+    "death_date": "",
+    "extras": {
+      "education": "B.A., Englilsh, BYU",
+      "cell phone": "801-809-3571",
+      "profession": "Writer/ Homemaker",
+      "service start": "Appointed 9/18/2017",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:56.184509+00:00",
+    "updated_at": "2025-07-18T02:36:58.874261+00:00",
+    "openstates_url": "https://openstates.org/person/cheryl-acton-2aMroxK9ljSTCGzVuAGI7B/"
+  },
+  {
+    "id": "ocd-person/052622aa-50ab-47c7-84b8-175d144a9d59",
+    "name": "Christine Watkins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:ut/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Christine",
+    "family_name": "Watkins",
+    "image": "https://le.utah.gov/images/legislator/WATKICF.jpg",
+    "email": "christinewatkins@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "1950-05-18",
+    "death_date": "",
+    "extras": {
+      "education": "B.S. Utah State University, Master of Educational Administration - University of Utah",
+      "cell phone": "435-650-1969",
+      "profession": "Retired Educator, Charter School Administrator, Labor Relations",
+      "service start": "January 1, 2017",
+      "counties represented": [
+        "Carbon",
+        "Duchesne",
+        "Emery",
+        "Grand"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:56.256174+00:00",
+    "updated_at": "2025-03-29T02:35:05.746780+00:00",
+    "openstates_url": "https://openstates.org/person/christine-watkins-9iO9Ud6NSHYY7JUvraACv/"
+  },
+  {
+    "id": "ocd-person/12581dac-c07b-40a8-b309-3c9ea167f913",
+    "name": "Clint Okerlund",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:ut/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Clint",
+    "family_name": "Okerlund",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ClintOkerlund2024.jpeg",
+    "email": "cokerlund@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1977-04-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:03.140782+00:00",
+    "updated_at": "2026-01-28T02:34:15.443274+00:00",
+    "openstates_url": "https://openstates.org/person/clint-okerlund-Yc87SPSTj73QXYKIm3JL9/"
+  },
+  {
+    "id": "ocd-person/2fb1aaec-83c2-41f3-b98a-8a8a34e7301e",
+    "name": "Colin Jack",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:ut/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Colin",
+    "family_name": "Jack",
+    "image": "https://le.utah.gov/images/legislator/JACKC.jpg",
+    "email": "cjack@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.S.",
+      "cell phone": "435-301-4878",
+      "home phone": "435-301-4878",
+      "profession": "Electrical Engineer",
+      "service start": "July, 2022",
+      "counties represented": [
+        "Washington"
+      ]
+    },
+    "created_at": "2023-01-19T11:47:16.568117+00:00",
+    "updated_at": "2025-07-18T02:36:21.309648+00:00",
+    "openstates_url": "https://openstates.org/person/colin-jack-1Rzpgp5pgCvB17YOlxISQY/"
+  },
+  {
+    "id": "ocd-person/8487aadf-5bd8-46b1-97a3-2db855c534a0",
+    "name": "Cory Maloy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:ut/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Cory",
+    "family_name": "Maloy",
+    "image": "https://le.utah.gov/images/legislator/MALOYC.jpg",
+    "email": "corymaloy@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1962-07-31",
+    "death_date": "",
+    "extras": {
+      "education": "B.A. Communications - Brigham Young University",
+      "cell phone": "801-477-0019",
+      "profession": "Principal\\Maloy PR",
+      "service start": "January 1, 2017",
+      "counties represented": [
+        "Utah"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:55.165159+00:00",
+    "updated_at": "2025-03-29T02:35:01.606744+00:00",
+    "openstates_url": "https://openstates.org/person/cory-maloy-424zDRpPV9PXpih0R3c1Uu/"
+  },
+  {
+    "id": "ocd-person/e26d3225-27da-440d-ac85-cad08bdb5ade",
+    "name": "Dave Shallenberger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:ut/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Shallenberger",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/414685/414685.jpg",
+    "email": "dshallenberger@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:02.727499+00:00",
+    "updated_at": "2026-01-28T02:33:29.275641+00:00",
+    "openstates_url": "https://openstates.org/person/dave-shallenberger-6tGARvSnkCMYxdWg5KBG7a/"
+  },
+  {
+    "id": "ocd-person/ea11beb4-7128-4549-9174-fa7b40cacca8",
+    "name": "Doug Fiefia",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:ut/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Fiefia",
+    "image": "https://dougfiefia.com/wp-content/uploads/2023/11/Doug-Fiefia-header.png",
+    "email": "dfiefa@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:07.801793+00:00",
+    "updated_at": "2026-01-28T02:33:55.799567+00:00",
+    "openstates_url": "https://openstates.org/person/doug-fiefia-77gJSv9Xm8Gli7CPjLhN2u/"
+  },
+  {
+    "id": "ocd-person/b60609f0-e6df-42fc-bbca-9b67a2ed7254",
+    "name": "Doug Owens",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ut/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Owens",
+    "image": "https://le.utah.gov/images/legislator/OWENSDO.jpg",
+    "email": "dougowens@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1963-08-14",
+    "death_date": "",
+    "extras": {
+      "education": "U of U BA 1984; Yale Law School 1989",
+      "cell phone": "385-499-3761",
+      "profession": "Attorney",
+      "service start": "January 1, 2021",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2021-01-14T00:19:04.276978+00:00",
+    "updated_at": "2025-03-05T09:17:05.971179+00:00",
+    "openstates_url": "https://openstates.org/person/doug-owens-5XTMWOM45kGnsZfgpEX2ii/"
+  },
+  {
+    "id": "ocd-person/725abf07-1cca-47a5-a5a7-223d763f5da0",
+    "name": "Doug Welton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:ut/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Welton",
+    "image": "https://le.utah.gov/images/legislator/WELTOD.jpg",
+    "email": "dwelton@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Utah Valley State College - History Education, B.S.; Southern Utah University - Educational Leadership, M.S.",
+      "cell phone": "385-977-3870",
+      "service start": "January 1, 2021",
+      "counties represented": [
+        "Utah"
+      ]
+    },
+    "created_at": "2021-01-14T00:19:05.570206+00:00",
+    "updated_at": "2025-03-29T02:34:34.371023+00:00",
+    "openstates_url": "https://openstates.org/person/doug-welton-3TmayaRilGECqYomxHdI3c/"
+  },
+  {
+    "id": "ocd-person/82be86b6-0047-471e-8983-a061e5cc91e2",
+    "name": "Grant Miller",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ut/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Grant",
+    "family_name": "Miller",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/gmiller2.jpg",
+    "email": "gmiller@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:10.063535+00:00",
+    "updated_at": "2026-01-28T02:34:07.075528+00:00",
+    "openstates_url": "https://openstates.org/person/grant-miller-3yi4XVAGdzgB0Z7zvy69ty/"
+  },
+  {
+    "id": "ocd-person/efcd1f01-061f-4b35-9202-407576e22e77",
+    "name": "Hoang Nguyen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ut/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Hoang",
+    "family_name": "Nguyen",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/HoangNguyen2024.jpg",
+    "email": "hnguyen@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:09.384616+00:00",
+    "updated_at": "2025-07-18T02:36:21.945733+00:00",
+    "openstates_url": "https://openstates.org/person/hoang-nguyen-7IUuDa0f40aeXMTUMRA1O3/"
+  },
+  {
+    "id": "ocd-person/e68bfc15-5c1f-4903-ac1f-eb8ca44a816a",
+    "name": "Jake Fitisemanu",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ut/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Jake",
+    "family_name": "Fitisemanu",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JakeFitisemanu2024.jpg",
+    "email": "jfitisemanu@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1982-03-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:05.214565+00:00",
+    "updated_at": "2025-07-18T02:36:53.284835+00:00",
+    "openstates_url": "https://openstates.org/person/jake-fitisemanu-712Cv48cti1CiDY1Vhwrgg/"
+  },
+  {
+    "id": "ocd-person/dd923550-9fd3-4476-9a43-219a199c8057",
+    "name": "Jake Sawyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ut/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Jake",
+    "family_name": "Sawyer",
+    "image": "https://static.wixstatic.com/media/d27656_26f8c475869649a59bad8ae179994b0f~mv2.jpg/v1/fill/w_317,h_383,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Jake_Website_edited.jpg",
+    "email": "jsawyer@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:10.645266+00:00",
+    "updated_at": "2026-01-28T02:34:02.424227+00:00",
+    "openstates_url": "https://openstates.org/person/jake-sawyer-6k67XWx5Qt7b9vME7Awjbz/"
+  },
+  {
+    "id": "ocd-person/cb6f79ec-b7b4-418e-950e-f5f066489929",
+    "name": "Jason Kyle",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ut/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Kyle",
+    "image": "https://le.utah.gov/images/legislator/KYLEJB.jpg",
+    "email": "jkyle@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell phone": "385-394-2424",
+      "service start": "January 1, 2023",
+      "counties represented": [
+        "Morgan",
+        "Weber"
+      ]
+    },
+    "created_at": "2023-01-19T11:47:52.671396+00:00",
+    "updated_at": "2026-01-28T02:33:54.139290+00:00",
+    "openstates_url": "https://openstates.org/person/jason-kyle-6BsO0Ii4QHKtrYQFFFYbij/"
+  },
+  {
+    "id": "ocd-person/d7b06a16-ad92-4d55-af46-93a1f13253e7",
+    "name": "Jason Thompson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ut/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Thompson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jason_Thompson2024.jpeg",
+    "email": "jthompson@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:11.205748+00:00",
+    "updated_at": "2026-01-28T02:33:49.007319+00:00",
+    "openstates_url": "https://openstates.org/person/jason-thompson-6YzyG1slw0qpEkyr3qFjV9/"
+  },
+  {
+    "id": "ocd-person/1773d5d5-4967-4af5-9880-3106ace372d7",
+    "name": "Jeff Burton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:ut/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Burton",
+    "image": "https://le.utah.gov/images/legislator/BURTOJS.jpg",
+    "email": "jburton@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.S. University of New York - M.S. United States Army War College - M.A. University of Phoenix",
+      "cell phone": "385-225-0575",
+      "profession": "Senior Vice President - Community Development - Zions Bank",
+      "service start": "January 1, 2021",
+      "counties represented": [
+        "Utah"
+      ]
+    },
+    "created_at": "2021-01-14T00:19:02.779998+00:00",
+    "updated_at": "2025-03-29T02:34:29.970147+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-burton-iFl8xEiHD4RIW49TBff0h/"
+  },
+  {
+    "id": "ocd-person/b32f9174-73af-4db3-877b-1c368bd4e62e",
+    "name": "Jen Dailey-Provost",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ut/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Jen",
+    "family_name": "Dailey-Provost",
+    "image": "https://le.utah.gov/images/legislator/DAILEJ.jpg",
+    "email": "jdprovost@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Whip",
+      "education": "B.S., Marketing, University of Utah; M.B.A., Westminster College",
+      "cell phone": "385-321-7827",
+      "profession": "Nonprofit Executive",
+      "service start": "January 1, 2019",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2019-01-04T05:21:44.140056+00:00",
+    "updated_at": "2025-07-18T02:36:23.630231+00:00",
+    "openstates_url": "https://openstates.org/person/jen-dailey-provost-5S7Me1YfBpKwSZJaOcYTnC/"
+  },
+  {
+    "id": "ocd-person/598a8b34-ab05-4438-b927-77b20437035d",
+    "name": "Jill Koford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ut/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Jill",
+    "family_name": "Koford",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JillKoford.jpg",
+    "email": "jkoford@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:01.168546+00:00",
+    "updated_at": "2026-01-28T02:33:25.899247+00:00",
+    "openstates_url": "https://openstates.org/person/jill-koford-2ixdAZWMYaUuNQYTbnrWaT/"
+  },
+  {
+    "id": "ocd-person/89b3cebe-884b-4798-b063-794d359ea891",
+    "name": "Jim Dunnigan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ut/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Dunnigan",
+    "image": "https://le.utah.gov/images/legislator/DUNNIJA.jpg",
+    "email": "jdunnigan@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1953-03-31",
+    "death_date": "",
+    "extras": {
+      "title": "House Parliamentarian",
+      "education": "B.S., Business Management, University of Utah",
+      "profession": "Insurance Agency Owner",
+      "service start": "January 1, 2003",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:57.995553+00:00",
+    "updated_at": "2025-03-29T02:35:24.052250+00:00",
+    "openstates_url": "https://openstates.org/person/jim-dunnigan-4Bq7VUxjNjvg3kgqu4EfwH/"
+  },
+  {
+    "id": "ocd-person/b5f1d356-e619-413b-8b9a-fec2d3d48362",
+    "name": "John Arthur",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:ut/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Arthur",
+    "image": "",
+    "email": "jarthur@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:33:23.627958+00:00",
+    "updated_at": "2026-01-29T08:24:08.083337+00:00",
+    "openstates_url": "https://openstates.org/person/john-arthur-5XK7nRtSHHDeL69dUEpkiw/"
+  },
+  {
+    "id": "ocd-person/e214e4ef-2df9-41a2-9113-98715f5a791c",
+    "name": "Jon Hawkins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:ut/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Hawkins",
+    "image": "https://le.utah.gov/images/legislator/HAWKIJ.jpg",
+    "email": "jhawkins@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.A., Communications, Brigham Young University; M.B.A., Brigham Young University",
+      "cell phone": "801-368-2534",
+      "profession": "Software Sales, Workfront",
+      "service start": "January 1, 2019",
+      "counties represented": [
+        "Utah"
+      ]
+    },
+    "created_at": "2019-01-04T05:21:42.576637+00:00",
+    "updated_at": "2025-07-18T02:36:49.922380+00:00",
+    "openstates_url": "https://openstates.org/person/jon-hawkins-6sboVMAi03Obmmvucver9A/"
+  },
+  {
+    "id": "ocd-person/4fb12ece-15d9-4fd2-9b0a-e96a0dbdd2ad",
+    "name": "Jordan Teuscher",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:ut/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Jordan",
+    "family_name": "Teuscher",
+    "image": "https://le.utah.gov/images/legislator/TEUSCJ.jpg",
+    "email": "jteuscher@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "House Rules Vice Chair",
+      "education": "Juris Doctor, Brigham Young University; Political Science/Philosophy, Bachelor of Arts, Brigham Young University; Riverton High School",
+      "cell phone": "801-810-6170",
+      "home phone": "801-228-8283",
+      "profession": "Attorney",
+      "service start": "January 1, 2021",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2021-01-14T00:19:03.521336+00:00",
+    "updated_at": "2025-03-29T02:35:24.755047+00:00",
+    "openstates_url": "https://openstates.org/person/jordan-teuscher-2QNMjG21TO4i2dZhC9od5R/"
+  },
+  {
+    "id": "ocd-person/0d22b3d0-94f2-4f88-95e9-b830480f4be8",
+    "name": "Joseph Elison",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:ut/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Joseph",
+    "family_name": "Elison",
+    "image": "https://le.utah.gov/images/legislator/ELISOJ.jpg",
+    "email": "jelison@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Hurricane High School. The American College of Financial Services",
+      "cell phone": "801-657-1006",
+      "home phone": "801-657-1006",
+      "profession": "Investment Advisory Rep.",
+      "service start": "January 1, 2023",
+      "counties represented": [
+        "Washington"
+      ]
+    },
+    "created_at": "2023-01-19T11:48:45.887123+00:00",
+    "updated_at": "2026-01-28T02:33:48.379281+00:00",
+    "openstates_url": "https://openstates.org/person/joseph-elison-Oml4igpibeNWuaDnUBy5Q/"
+  },
+  {
+    "id": "ocd-person/3c2d4efe-dd4e-48cf-a83b-2a15791706a3",
+    "name": "Karen Peterson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ut/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Peterson",
+    "image": "https://le.utah.gov/images/legislator/PETERK.jpg",
+    "email": "kpeterson@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.A. Utah State University; M.P.A. Southern Utah University",
+      "profession": "Policy Analyst",
+      "service start": "January 5, 2022",
+      "counties represented": [
+        "Davis"
+      ]
+    },
+    "created_at": "2022-04-21T04:16:09.033370+00:00",
+    "updated_at": "2025-07-18T02:37:05.333675+00:00",
+    "openstates_url": "https://openstates.org/person/karen-peterson-1pYFESM0S7TEu2drGbBPhT/"
+  },
+  {
+    "id": "ocd-person/59eb30b5-da7b-4161-85b3-8b48c01f4c2b",
+    "name": "Karianne Lisonbee",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ut/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Karianne",
+    "family_name": "Lisonbee",
+    "image": "https://le.utah.gov/images/legislator/LISONK.jpg",
+    "email": "karilisonbee@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip",
+      "education": "Brigham Young University",
+      "cell phone": "801-589-2934",
+      "profession": "Homemaker",
+      "service start": "January 1, 2017",
+      "counties represented": [
+        "Davis"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:58.792665+00:00",
+    "updated_at": "2025-07-18T02:37:00.728162+00:00",
+    "openstates_url": "https://openstates.org/person/karianne-lisonbee-2jfnYjLv7lOl1V2CcMYA5z/"
+  },
+  {
+    "id": "ocd-person/37301850-0f06-4bbd-ba85-faa7c4d39906",
+    "name": "Katy Hall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ut/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Katy",
+    "family_name": "Hall",
+    "image": "https://le.utah.gov/images/legislator/HALLK.jpg",
+    "email": "khall@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Associates Degree, BSN",
+      "cell phone": "801-834-3059",
+      "home phone": "801-834-3059",
+      "profession": "Registered Nurse",
+      "service start": "January 1, 2023",
+      "counties represented": [
+        "Davis",
+        "Weber"
+      ]
+    },
+    "created_at": "2023-01-19T11:48:31.400056+00:00",
+    "updated_at": "2026-01-28T02:33:36.435513+00:00",
+    "openstates_url": "https://openstates.org/person/katy-hall-1g8YYpOnHN8XYjArXKiX26/"
+  },
+  {
+    "id": "ocd-person/aee56bc8-022b-4351-81c0-9b5050846a8b",
+    "name": "Kay Christofferson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:ut/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Kay",
+    "family_name": "Christofferson",
+    "image": "https://le.utah.gov/images/legislator/CHRISKJ.jpg",
+    "email": "kchristofferson@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.S., Civil Engineering, Brigham Young University",
+      "cell phone": "801-592-5709",
+      "home phone": "801-768-8914",
+      "profession": "Civil Engineer, Horrocks Engineers",
+      "service start": "January 1, 2013",
+      "counties represented": [
+        "Utah"
+      ]
+    },
+    "created_at": "2018-10-18T16:12:58.862032+00:00",
+    "updated_at": "2025-03-29T02:34:35.092609+00:00",
+    "openstates_url": "https://openstates.org/person/kay-christofferson-5K1Vej7UAjyyews0Z35HuF/"
+  },
+  {
+    "id": "ocd-person/c76bd4cf-9149-46e8-a001-e2c81c5942d5",
+    "name": "Ken Ivory",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ut/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Ivory",
+    "image": "https://le.utah.gov/images/legislator/IVORYK.jpg",
+    "email": "kivory@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1963-01-12",
+    "death_date": "",
+    "extras": {
+      "education": "J.D. California Western School of Law; B.A. Japanese, BYU",
+      "cell phone": "801-694-8380",
+      "profession": "Attorney",
+      "service start": "January 1, 2011",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2021-12-16T19:16:32.078788+00:00",
+    "updated_at": "2025-03-05T09:17:34.967882+00:00",
+    "openstates_url": "https://openstates.org/person/ken-ivory-64Ikd6XnPyJvywZdS9ZbGf/"
+  },
+  {
+    "id": "ocd-person/d428d2ed-8644-459a-b374-7535561a1482",
+    "name": "Kristen Chevrier",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:ut/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Kristen",
+    "family_name": "Chevrier",
+    "image": "",
+    "email": "kchevrier@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:46:49.971612+00:00",
+    "updated_at": "2026-01-28T02:34:17.991164+00:00",
+    "openstates_url": "https://openstates.org/person/kristen-chevrier-6SL1qyyRXVF7oXvt9w02ug/"
+  },
+  {
+    "id": "ocd-person/72df7728-0455-4b7b-9432-745f4365d99e",
+    "name": "Leah Hansen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:ut/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Leah",
+    "family_name": "Hansen",
+    "image": "",
+    "email": "lhansen@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:33:27.148048+00:00",
+    "updated_at": "2026-01-29T08:24:10.873203+00:00",
+    "openstates_url": "https://openstates.org/person/leah-hansen-3UlFSD6YZfCHTo5Cg7p1lW/"
+  },
+  {
+    "id": "ocd-person/cc269dc8-cef7-4e8d-a3fc-0d658d1dcfcc",
+    "name": "Lisa Shepherd",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:ut/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Shepherd",
+    "image": "https://img1.wsimg.com/isteam/ip/214c6333-69cf-4437-a4a5-149983b67c86/123-bKwEnQhUdpI%20(1)%202.JPEG/:/cr=t:2.05%25,l:12.92%25,w:73.53%25,h:73.53%25/rs=w:355,h:355,cg:true,m",
+    "email": "lshepherd@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:08.957000+00:00",
+    "updated_at": "2026-01-28T02:33:56.838931+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-shepherd-6DE56q31yFuB60aycBQAEW/"
+  },
+  {
+    "id": "ocd-person/afd0bd15-a816-44ae-b28e-cecf50dda45b",
+    "name": "Logan Monson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:ut/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Logan",
+    "family_name": "Monson",
+    "image": "https://images.squarespace-cdn.com/content/v1/653bf32647727060129bd0cf/f7061061-f68f-4697-9dc5-fd2bcc264299/IMG_7508.jpg",
+    "email": "lmonson@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:05.620544+00:00",
+    "updated_at": "2026-01-28T02:34:16.470968+00:00",
+    "openstates_url": "https://openstates.org/person/logan-monson-5Ll3AB1sfN90vvYv56Tklf/"
+  },
+  {
+    "id": "ocd-person/5d383c2b-0450-48db-92bf-e20977953cd8",
+    "name": "Mark Strong",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:ut/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Strong",
+    "image": "https://le.utah.gov/images/legislator/STRONMA.jpg",
+    "email": "mstrong@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.A., Communications/Public Relations, Brigham Young University",
+      "cell phone": "385-275-5682",
+      "profession": "Sales Representative",
+      "service start": "January 1, 2019",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2019-01-04T05:21:47.025938+00:00",
+    "updated_at": "2025-03-29T02:35:11.010355+00:00",
+    "openstates_url": "https://openstates.org/person/mark-strong-2ptz7lPfQXAtEyXMIzQjcm/"
+  },
+  {
+    "id": "ocd-person/ad88a882-c27b-4ceb-8476-b7a3d2a9dd19",
+    "name": "Matt MacPherson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ut/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "MacPherson",
+    "image": "https://le.utah.gov/images/legislator/MACPHM.jpg",
+    "email": "mmacpherson@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell phone": "801-520-2974",
+      "service start": "October 10, 2023",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2024-01-10T23:25:13.891562+00:00",
+    "updated_at": "2026-01-28T02:34:12.048047+00:00",
+    "openstates_url": "https://openstates.org/person/matt-macpherson-5HS7memEP2fYSs8I5cKYzh/"
+  },
+  {
+    "id": "ocd-person/861428f5-6456-4c94-b1ed-838b01a7d845",
+    "name": "Melissa Ballard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ut/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Melissa",
+    "family_name": "Ballard",
+    "image": "https://le.utah.gov/images/legislator/BALLAMG.jpg",
+    "email": "mballard@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.S., University of Utah; Masters of Music '94 Piano Performance and Accompanying, and Bachelor of Music '92 Piano Performance, University of Utah; Nationally Certified Teacher of Music",
+      "cell phone": "801-633-6561",
+      "profession": "Homemaker; Pianist and Teacher; Business Investor; Former adjunct faculty, University of Utah",
+      "service start": "January 1, 2019",
+      "counties represented": [
+        "Davis"
+      ]
+    },
+    "created_at": "2019-01-04T05:21:45.960368+00:00",
+    "updated_at": "2025-07-18T02:36:54.100941+00:00",
+    "openstates_url": "https://openstates.org/person/melissa-ballard-450BSz0CaH87CzyNJMrWRZ/"
+  },
+  {
+    "id": "ocd-person/656dec4e-3c95-43b1-9059-f2259300f88b",
+    "name": "Mike Kohler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:ut/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Kohler",
+    "image": "https://le.utah.gov/images/legislator/KOHLEM.jpg",
+    "email": "mkohler@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell phone": "801-420-6158",
+      "profession": "Business Manager",
+      "service start": "January 1, 2021",
+      "counties represented": [
+        "Summit",
+        "Wasatch"
+      ]
+    },
+    "created_at": "2021-01-14T00:19:02.701082+00:00",
+    "updated_at": "2025-03-29T02:35:04.404203+00:00",
+    "openstates_url": "https://openstates.org/person/mike-kohler-35OSWGu7brnXyUbjGv1Qip/"
+  },
+  {
+    "id": "ocd-person/e9792114-e077-4663-96c4-94d679c66ace",
+    "name": "Mike Petersen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ut/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Petersen",
+    "image": "https://le.utah.gov/images/legislator/PETERM.jpg",
+    "email": "mpetersen@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "BS Psychology (BYU); MEd Counseling Psychology (BYU); PhD Instructional Technology (USU)",
+      "cell phone": "435-770-6925",
+      "profession": "Instructional Designer/Consultant",
+      "service start": "January 1, 2021",
+      "counties represented": [
+        "Cache"
+      ]
+    },
+    "created_at": "2021-01-14T00:19:03.197119+00:00",
+    "updated_at": "2026-01-28T02:34:10.111456+00:00",
+    "openstates_url": "https://openstates.org/person/mike-petersen-76YZEvExiPkjwAXienUFOY/"
+  },
+  {
+    "id": "ocd-person/d1046a0c-ddd3-4fed-be41-13da161d6231",
+    "name": "Mike Schultz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ut/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Schultz",
+    "image": "https://le.utah.gov/images/legislator/SCHULM.jpg",
+    "email": "mikeschultz@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker",
+      "education": "Roy High School",
+      "profession": "Agriculture",
+      "service start": "January 1, 2015",
+      "counties represented": [
+        "Davis",
+        "Weber"
+      ]
+    },
+    "created_at": "2018-10-18T16:13:00.524879+00:00",
+    "updated_at": "2025-07-18T02:37:17.202400+00:00",
+    "openstates_url": "https://openstates.org/person/mike-schultz-6MPPe7GiZ6G61l09MOlrqz/"
+  },
+  {
+    "id": "ocd-person/5b90793c-f90a-4b0e-b9e6-78943bfaab1c",
+    "name": "Neil Walter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:ut/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Neil",
+    "family_name": "Walter",
+    "image": "https://le.utah.gov/images/legislator/WALTER.jpg",
+    "email": "nwalter@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell phone": "435-627-5720",
+      "home phone": "435-627-5720",
+      "profession": "Real Estate",
+      "service start": "January 1, 2023",
+      "counties represented": [
+        "Washington"
+      ]
+    },
+    "created_at": "2023-01-19T11:47:48.766769+00:00",
+    "updated_at": "2026-01-28T02:33:47.129954+00:00",
+    "openstates_url": "https://openstates.org/person/neil-walter-2mmKEYy1sfNLGJpyjKQiL6/"
+  },
+  {
+    "id": "ocd-person/00670b53-62f7-4c0f-b229-eb1fad6dbbbc",
+    "name": "Nelson Abbott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:ut/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Nelson",
+    "family_name": "Abbott",
+    "image": "https://le.utah.gov/images/legislator/ABBOTN.jpg",
+    "email": "nabbott@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1966-01-30",
+    "death_date": "",
+    "extras": {
+      "education": "B.A., M.B.A., J.D.",
+      "cell phone": "385-358-3269",
+      "profession": "Attorney",
+      "service start": "January 1, 2021",
+      "counties represented": [
+        "Utah"
+      ]
+    },
+    "created_at": "2021-01-14T00:19:05.183548+00:00",
+    "updated_at": "2025-04-25T02:41:21.999670+00:00",
+    "openstates_url": "https://openstates.org/person/nelson-abbott-l5f9DX48EW9dr7AHPaai/"
+  },
+  {
+    "id": "ocd-person/08c69398-e218-46a2-a843-9f1bfe088caa",
+    "name": "Nicholeen Peck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ut/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Nicholeen",
+    "family_name": "Peck",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/NicholeenPeck2024c.jpg",
+    "email": "npeck@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "1975-03-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:05.751927+00:00",
+    "updated_at": "2026-01-28T02:33:40.671582+00:00",
+    "openstates_url": "https://openstates.org/person/nicholeen-peck-GYgg1w2g7zREnC4dyYxC6/"
+  },
+  {
+    "id": "ocd-person/8e36fabe-9e2a-4ccd-b29a-1395d6318560",
+    "name": "Norm Thurston",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:ut/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Norm",
+    "family_name": "Thurston",
+    "image": "https://le.utah.gov/images/legislator/THURSNK.jpg",
+    "email": "normthurston@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.A., Spanish and Agricultural Economics, Brigham Young University; M.A., Economics, Princeton University; Ph.D. Economics, Princeton University",
+      "cell phone": "801-477-5348",
+      "profession": "Economist",
+      "service start": "January 1, 2015",
+      "counties represented": [
+        "Utah"
+      ]
+    },
+    "created_at": "2018-10-18T16:13:00.669355+00:00",
+    "updated_at": "2025-03-29T02:35:10.177902+00:00",
+    "openstates_url": "https://openstates.org/person/norm-thurston-4KM2EqYT4Ws4YwiCy4mFeq/"
+  },
+  {
+    "id": "ocd-person/d8c2c3ff-83a7-45f7-88bb-fb01b8cd624e",
+    "name": "Paul Cutler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ut/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Cutler",
+    "image": "https://le.utah.gov/images/legislator/CUTLEP.jpg",
+    "email": "pcutler@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1972-11-14",
+    "death_date": "",
+    "extras": {
+      "education": "BS: Electrical Engineering, MBA",
+      "cell phone": "801-923-4618",
+      "profession": "Engineering Director",
+      "service start": "January 1, 2023",
+      "counties represented": [
+        "Davis"
+      ]
+    },
+    "created_at": "2023-01-19T11:46:10.023033+00:00",
+    "updated_at": "2026-01-28T02:33:59.013629+00:00",
+    "openstates_url": "https://openstates.org/person/paul-cutler-6b1LkL9QyzzZ9KcpDKuZjy/"
+  },
+  {
+    "id": "ocd-person/dbd3789a-5040-4015-9474-ac27b4a32010",
+    "name": "Ray Ward",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ut/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Ray",
+    "family_name": "Ward",
+    "image": "https://le.utah.gov/images/legislator/WARDR.jpg",
+    "email": "rayward@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.S. Zoology, Brigham Young University; M.D.-PhD, University of Washington, Family Medicine Residency Grand Junction, Colorado",
+      "cell phone": "801-440-8765",
+      "home phone": "801-294-6854",
+      "profession": "Family Physician",
+      "service start": "January 1, 2015",
+      "counties represented": [
+        "Davis"
+      ]
+    },
+    "created_at": "2018-10-18T16:13:01.046096+00:00",
+    "updated_at": "2025-07-18T02:36:49.108621+00:00",
+    "openstates_url": "https://openstates.org/person/ray-ward-6gnxebFEtX0YQ0vJIRNrHc/"
+  },
+  {
+    "id": "ocd-person/66ec0903-117f-4006-8e05-e7326330fc63",
+    "name": "Rex Shipp",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:ut/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Rex",
+    "family_name": "Shipp",
+    "image": "https://le.utah.gov/images/legislator/SHIPPRP.jpg",
+    "email": "rshipp@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.S., Industrial Technology, Southern Utah University; CLU, ChFC, American College",
+      "cell phone": "435-590-1073",
+      "home phone": "435-590-1073",
+      "profession": "Financial Adviser",
+      "service start": "January 1, 2019",
+      "counties represented": [
+        "Iron"
+      ]
+    },
+    "created_at": "2019-01-04T05:21:50.882594+00:00",
+    "updated_at": "2025-03-29T02:35:21.539773+00:00",
+    "openstates_url": "https://openstates.org/person/rex-shipp-38D5JahY4tNijYfslmz4bb/"
+  },
+  {
+    "id": "ocd-person/6944b102-0d94-4267-916f-59fbd6f2bb18",
+    "name": "Rosalba Dominguez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ut/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Rosalba",
+    "family_name": "Dominguez",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Rosalba_Dominguez_20240921_082723.jpeg",
+    "email": "rdominguez@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:14.524575+00:00",
+    "updated_at": "2026-01-28T02:33:42.230666+00:00",
+    "openstates_url": "https://openstates.org/person/rosalba-dominguez-3CdaM9WFcwb2EqSQbf03Eu/"
+  },
+  {
+    "id": "ocd-person/9657724b-ade7-467e-b77d-b77fb98891c5",
+    "name": "Ryan Wilcox",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ut/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Wilcox",
+    "image": "https://le.utah.gov/images/legislator/WILCORD.jpg",
+    "email": "ryanwilcox@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Weber State University",
+      "cell phone": "385-600-3306",
+      "profession": "Community Relations",
+      "service start": "Served 2008-2014, January 1, 2021",
+      "counties represented": [
+        "Weber"
+      ]
+    },
+    "created_at": "2019-11-17T12:15:07.172980+00:00",
+    "updated_at": "2025-03-29T02:35:13.156760+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-wilcox-4ZgoM4rl4r97tuNGNpPxS9/"
+  },
+  {
+    "id": "ocd-person/b0a5ca40-5e04-495c-80e0-2c5d3608273d",
+    "name": "Sahara Hayes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ut/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Sahara",
+    "family_name": "Hayes",
+    "image": "https://le.utah.gov/images/legislator/HAYESS.jpg",
+    "email": "shayes@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.S., M.P.A.",
+      "cell phone": "801-657-0395",
+      "home phone": "801-657-0395",
+      "profession": "Grant Writer",
+      "service start": "January 1, 2023",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2023-01-19T11:46:28.416748+00:00",
+    "updated_at": "2025-07-18T02:36:58.102666+00:00",
+    "openstates_url": "https://openstates.org/person/sahara-hayes-5NKPmNbIEUEPRWoVS4zhCH/"
+  },
+  {
+    "id": "ocd-person/8c8d32a7-32ed-4ef1-a03d-9661ca98fc5a",
+    "name": "Sandra Hollins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ut/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Sandra",
+    "family_name": "Hollins",
+    "image": "https://le.utah.gov/images/legislator/HOLLIS.jpg",
+    "email": "shollins@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Assistant Whip",
+      "education": "B.S., Business Management, University of Phoenix; M.S., Social Work, University of Utah",
+      "home phone": "801-363-4257",
+      "profession": "Licensed Clinical Social Worker",
+      "service start": "January 1, 2015",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2018-10-18T16:13:01.330590+00:00",
+    "updated_at": "2025-03-05T09:18:19.006334+00:00",
+    "openstates_url": "https://openstates.org/person/sandra-hollins-4HDS6ng17xEVpcWSJLDI6M/"
+  },
+  {
+    "id": "ocd-person/d7a3c337-4395-4e23-9e11-74cb55744f14",
+    "name": "Scott Chew",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:ut/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Chew",
+    "image": "https://le.utah.gov/images/legislator/CHEWSH.jpg",
+    "email": "scottchew@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Utah State University",
+      "cell phone": "435-630-0221",
+      "profession": "Rancher",
+      "service start": "January 1, 2015",
+      "counties represented": [
+        "Duchesne",
+        "Uintah"
+      ]
+    },
+    "created_at": "2018-10-18T16:13:01.474934+00:00",
+    "updated_at": "2025-07-18T02:37:15.610094+00:00",
+    "openstates_url": "https://openstates.org/person/scott-chew-6YuBmMpY6UY7UNU26k1wAe/"
+  },
+  {
+    "id": "ocd-person/236ec233-4d24-4514-82a5-05a028c1de14",
+    "name": "Stephanie Gricius",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:ut/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Stephanie",
+    "family_name": "Gricius",
+    "image": "https://le.utah.gov/images/legislator/GRICIS.jpg",
+    "email": "sgricius@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell phone": "801-901-8251",
+      "profession": "Entrepreneur",
+      "service start": "January 1, 2023",
+      "counties represented": [
+        "Utah"
+      ]
+    },
+    "created_at": "2023-01-19T11:49:04.109392+00:00",
+    "updated_at": "2026-01-28T02:34:05.904864+00:00",
+    "openstates_url": "https://openstates.org/person/stephanie-gricius-14rLaj4gsP3EsxIXnSLrOu/"
+  },
+  {
+    "id": "ocd-person/451ecbcb-42a9-467b-98c7-e0b3e5bd32d3",
+    "name": "Stephen Whyte",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:ut/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Stephen",
+    "family_name": "Whyte",
+    "image": "https://le.utah.gov/images/legislator/WHYTESL.jpg",
+    "email": "swhyte@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.A., Political Science and M.P.A, Brigham Young University",
+      "cell phone": "385-271-8435",
+      "profession": "VP, Rocky Mountain University of Health Professions",
+      "service start": "November 9, 2021 Appointed",
+      "counties represented": [
+        "Utah"
+      ]
+    },
+    "created_at": "2021-12-16T19:16:27.799118+00:00",
+    "updated_at": "2025-07-18T02:36:32.968787+00:00",
+    "openstates_url": "https://openstates.org/person/stephen-whyte-26QXkh4vzWJMDvpZMsAeNH/"
+  },
+  {
+    "id": "ocd-person/06d334f0-dd19-4a8e-b1c9-5f1ae1d90e26",
+    "name": "Steve Eliason",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:ut/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Eliason",
+    "image": "https://le.utah.gov/images/legislator/ELIASS.jpg",
+    "email": "seliason@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "B.S., Accounting, University of Utah; M.B.A., University of Utah",
+      "cell phone": "801-673-4748",
+      "profession": "Financial Manager, University of Utah Hospital and Clinics",
+      "service start": "January 1, 2011",
+      "counties represented": [
+        "Salt Lake"
+      ]
+    },
+    "created_at": "2018-10-18T16:13:01.616169+00:00",
+    "updated_at": "2025-03-05T09:17:36.221056+00:00",
+    "openstates_url": "https://openstates.org/person/steve-eliason-CsTUk1a3UowDJzZ3U9fCY/"
+  },
+  {
+    "id": "ocd-person/b5285658-1e71-48a2-8641-a2bc75957b24",
+    "name": "Stewart Barlow",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ut/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Stewart",
+    "family_name": "Barlow",
+    "image": "https://le.utah.gov/images/legislator/BARLOSE.jpg",
+    "email": "sbarlow@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "University of Utah, B.S.;  Georgetown University, Medical Doctorate",
+      "cell phone": "801-289-6699",
+      "home phone": "801-544-4708",
+      "profession": "Physician and surgeon",
+      "service start": "Appointed September 1, 2011",
+      "counties represented": [
+        "Davis"
+      ]
+    },
+    "created_at": "2018-10-18T16:13:01.686171+00:00",
+    "updated_at": "2025-03-29T02:34:28.541320+00:00",
+    "openstates_url": "https://openstates.org/person/stewart-barlow-5Vq2oPtp65VqU89J7Qs0ea/"
+  },
+  {
+    "id": "ocd-person/85745a94-5b45-4ac2-a258-1a1f48dc33db",
+    "name": "Tiara Auxier",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ut/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Tiara",
+    "family_name": "Auxier",
+    "image": "https://le.utah.gov/images/legislator/house/AUXIET.jpg",
+    "email": "tauxier@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-02-04T14:54:56.157220+00:00",
+    "updated_at": "2026-01-28T02:33:43.939319+00:00",
+    "openstates_url": "https://openstates.org/person/tiara-auxier-43p9VQMiIxEBz1ZCSRfdO7/"
+  },
+  {
+    "id": "ocd-person/faa88790-ac92-4a09-b00e-7049cc8521b6",
+    "name": "Tom Peterson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ut/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Peterson",
+    "image": "https://le.utah.gov/images/legislator/PETERT.jpg",
+    "email": "tpeterson@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": "Ogden Weber Tech College",
+      "cell phone": "435-720-3516",
+      "profession": "Building Official",
+      "service start": "September 21, 2022",
+      "counties represented": [
+        "Box Elder",
+        "Cache"
+      ]
+    },
+    "created_at": "2023-01-19T11:46:48.547190+00:00",
+    "updated_at": "2026-01-28T02:34:12.811294+00:00",
+    "openstates_url": "https://openstates.org/person/tom-peterson-7cz6CGu7ERJmCb6m43VJB8/"
+  },
+  {
+    "id": "ocd-person/1460f74d-e7af-44a6-8e24-5c3fe8013251",
+    "name": "Tracy Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:ut/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Tracy",
+    "family_name": "Miller",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Tracy_Miller.jpeg",
+    "email": "tmiller@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "1970-05-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:10.213291+00:00",
+    "updated_at": "2026-01-28T02:33:42.820876+00:00",
+    "openstates_url": "https://openstates.org/person/tracy-miller-cS9vZwqseMaFqrLwZtiyX/"
+  },
+  {
+    "id": "ocd-person/3187c9ea-c509-45f3-9eb4-a8ba2d8fd7d9",
+    "name": "Trevor Lee",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ut/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Trevor",
+    "family_name": "Lee",
+    "image": "https://le.utah.gov/images/legislator/LEETA.jpg",
+    "email": "tlee@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell phone": "801-721-7896",
+      "home phone": "801-721-7896",
+      "profession": "Wealth Manager",
+      "service start": "January 1, 2023",
+      "counties represented": [
+        "Davis"
+      ]
+    },
+    "created_at": "2023-01-19T11:46:56.023286+00:00",
+    "updated_at": "2026-01-28T02:34:10.867635+00:00",
+    "openstates_url": "https://openstates.org/person/trevor-lee-1VSg8ZSVsBo9N4D2e9M6K9/"
+  },
+  {
+    "id": "ocd-person/7e80bacf-6b3d-4f33-b854-06dab80a29bd",
+    "name": "Troy Shelley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:ut/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Troy",
+    "family_name": "Shelley",
+    "image": "https://cdn.prod.website-files.com/659704f376348afc7dd40409/670080f6423ccdeef1b4812e_Troy-Shelley.png",
+    "email": "tshelley@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:14.379019+00:00",
+    "updated_at": "2026-01-28T02:34:04.443837+00:00",
+    "openstates_url": "https://openstates.org/person/troy-shelley-3qhrUnMPMWx50EyzhNdBMb/"
+  },
+  {
+    "id": "ocd-person/8662eb2d-1ff1-4bd2-9a3b-41fa8770cc18",
+    "name": "Val Peterson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:ut/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Val",
+    "family_name": "Peterson",
+    "image": "https://le.utah.gov/images/legislator/PETERVL.jpg",
+    "email": "vpeterson@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Executive Appropriations Chair",
+      "education": "B.A., Communications/PR, Brigham Young University; M.A., Communications, Brigham Young University; M.S., Strategic Studies, United States Army War College; Ph.D., Educational Leadership, Brigham Young University",
+      "home phone": "801-224-4473",
+      "profession": "Higher Education Administration",
+      "service start": "January 1, 2011",
+      "counties represented": [
+        "Utah"
+      ]
+    },
+    "created_at": "2018-10-18T16:13:02.327066+00:00",
+    "updated_at": "2025-03-29T02:34:38.749251+00:00",
+    "openstates_url": "https://openstates.org/person/val-peterson-45aB1LJhRJi1IKbLu8zQ1Q/"
+  },
+  {
+    "id": "ocd-person/ba4559e4-0f36-4c48-afb9-3e142b670f86",
+    "name": "Verona Mauga",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ut/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Verona",
+    "family_name": "Mauga",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/VeronaMauga.jpg",
+    "email": "vmauga@le.utah.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:59:01.307653+00:00",
+    "updated_at": "2026-01-28T02:34:13.843897+00:00",
+    "openstates_url": "https://openstates.org/person/verona-mauga-5fUGVxAtbsmd9D9II0uzZO/"
+  },
+  {
+    "id": "ocd-person/5cef5a01-f3ea-4c28-aa39-036449806388",
+    "name": "Walt Brooks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:ut/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ut/government",
+      "name": "Utah",
+      "classification": "state"
+    },
+    "given_name": "Walt",
+    "family_name": "Brooks",
+    "image": "https://le.utah.gov/images/legislator/BROOKW.jpg",
+    "email": "wbrooks@le.utah.gov",
+    "gender": "Male",
+    "birth_date": "1973-01-21",
+    "death_date": "",
+    "extras": {
+      "education": "B.S., Business Administration, Dixie State University",
+      "cell phone": "435-817-3530",
+      "profession": "Business owner",
+      "service start": "Appointed September 21, 2016",
+      "counties represented": [
+        "Washington"
+      ]
+    },
+    "created_at": "2018-10-18T16:13:02.401138+00:00",
+    "updated_at": "2025-03-05T09:17:33.413121+00:00",
+    "openstates_url": "https://openstates.org/person/walt-brooks-2pMg2U9dTUkIe1A28vnm9I/"
+  }
+]

@@ -1,0 +1,1868 @@
+[
+  {
+    "id": "ocd-person/fd2717f1-6294-4601-a027-8fc41195372c",
+    "name": "Ben Watson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ga/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Watson",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/watson-ben-784.jpg",
+    "email": "ben.watson@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1959-07-27",
+    "death_date": "",
+    "extras": {
+      "city": "Savannah",
+      "press": "https://senatepress.net/category/senate-press/ben-watson ",
+      "staff": "Kaylon Day",
+      "spouse": "Bernice",
+      "birthday": "July 27",
+      "religion": "Anglican",
+      "residence": "Savannah",
+      "georgia_id": 784,
+      "occupation": "Medical Doctor",
+      "staff email": "kaylon.day@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:39:58.868140+00:00",
+    "updated_at": "2026-04-25T00:29:37.666412+00:00",
+    "openstates_url": "https://openstates.org/person/ben-watson-7hgvJqrG0XNBlugC6jN5eG/"
+  },
+  {
+    "id": "ocd-person/4dc87191-fa52-4c2f-bc9c-8823a8b4c882",
+    "name": "Bill Cowsert",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:ga/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Cowsert",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/cowsert-bill-9.jpg",
+    "email": "bill.cowsert@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1958-09-01",
+    "death_date": "",
+    "extras": {
+      "city": "Athens",
+      "press": "https://senatepress.net/category/senate-press/bill-cowsert",
+      "staff": "Cyndi West",
+      "spouse": "Amy",
+      "birthday": "September 1",
+      "residence": "Athens",
+      "georgia_id": 9,
+      "occupation": "Attorney",
+      "staff email": "cyndi.west@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:33.854650+00:00",
+    "updated_at": "2026-06-04T06:27:58.992013+00:00",
+    "openstates_url": "https://openstates.org/person/bill-cowsert-2Mm0knXw6zeZFhy7VbJo8o/"
+  },
+  {
+    "id": "ocd-person/449db918-10b7-4fa7-a047-eb9de416dce3",
+    "name": "Billy Hickman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ga/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Billy",
+    "family_name": "Hickman",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/hickman-billy-4972.jpg",
+    "email": "billy.hickman@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1952-09-07",
+    "death_date": "",
+    "extras": {
+      "city": "Statesboro",
+      "press": "https://senatepress.net/category/senate-press/billy-hickman ",
+      "staff": "Ashley Thomas",
+      "spouse": "Jo Ann Hickman",
+      "birthday": "September 7",
+      "religion": "Baptist",
+      "residence": "Statesboro",
+      "georgia_id": 4972,
+      "occupation": "Certified Public Accountant",
+      "staff email": "ashley.thomas@senate.ga.gov"
+    },
+    "created_at": "2021-01-12T00:06:52.476550+00:00",
+    "updated_at": "2026-01-31T00:27:09.372086+00:00",
+    "openstates_url": "https://openstates.org/person/billy-hickman-25TYaPFGSZXDd382emn27n/"
+  },
+  {
+    "id": "ocd-person/e9c5a2fc-3354-49e1-ac29-783502155fe7",
+    "name": "Blake Tillery",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ga/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Blake",
+    "family_name": "Tillery",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/tillery-blake-4908.jpg",
+    "email": "blake.tillery@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1983-10-09",
+    "death_date": "",
+    "extras": {
+      "city": "Vidalia",
+      "press": "https://senatepress.net/category/senate-press/blake-tillery ",
+      "staff": "Angela Touhy",
+      "spouse": "Ashlee Nicole ",
+      "birthday": "October 9",
+      "religion": "Christian",
+      "residence": "Vidalia ",
+      "georgia_id": 4908,
+      "occupation": "Attorney ",
+      "staff email": "angela.touhy@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:32.735351+00:00",
+    "updated_at": "2026-01-31T00:26:05.302664+00:00",
+    "openstates_url": "https://openstates.org/person/blake-tillery-777X0WTAqltnm96jkxvgJz/"
+  },
+  {
+    "id": "ocd-person/60bb96c4-f20c-4918-b88b-d7857341e5f4",
+    "name": "Bo Hatchett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:ga/sldu:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Bo",
+    "family_name": "Hatchett",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/hatchett-bo-4984.jpg",
+    "email": "bo.hatchett@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1989-10-25",
+    "death_date": "",
+    "extras": {
+      "city": "Cornelia",
+      "staff": "Brenita Simmons",
+      "title": "Governor's Floor Leader",
+      "residence": "Cornelia",
+      "georgia_id": 4984,
+      "staff email": "brenita.simmons@senate.ga.gov"
+    },
+    "created_at": "2021-01-12T00:06:54.592817+00:00",
+    "updated_at": "2026-04-10T00:28:23.852752+00:00",
+    "openstates_url": "https://openstates.org/person/bo-hatchett-2wWzUOFv1GgTib6eZFXwIe/"
+  },
+  {
+    "id": "ocd-person/3a5721a0-d848-40d0-a48a-66b797e7d7d9",
+    "name": "Brian Strickland",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:ga/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Strickland",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/strickland-brian-835.jpg",
+    "email": "brian.strickland@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1983-10-26",
+    "death_date": "",
+    "extras": {
+      "city": "McDonough",
+      "press": "https://senatepress.net/category/senate-press/brian-strickland ",
+      "staff": "Hannah Holcomb",
+      "birthday": "October 26",
+      "residence": "McDonough",
+      "georgia_id": 835,
+      "occupation": "Attorney",
+      "staff email": "hannah.holcomb@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:16.270206+00:00",
+    "updated_at": "2026-04-10T00:26:49.759587+00:00",
+    "openstates_url": "https://openstates.org/person/brian-strickland-1m5NC4TmZfmQIdJ10bBd6H/"
+  },
+  {
+    "id": "ocd-person/98850c9f-1c37-4177-9ad8-17d2b4d3c8d4",
+    "name": "Carden Summers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ga/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Carden",
+    "family_name": "Summers",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/summers-carden-4971.jpg",
+    "email": "carden.summers@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1977-08-27",
+    "death_date": "",
+    "extras": {
+      "city": "Cordele",
+      "press": "https://senatepress.net/category/senate-press/carden-summers ",
+      "staff": "Emily Doppel",
+      "residence": "Cordele",
+      "georgia_id": 4971,
+      "staff email": "emily.doppel@senate.ga.gov"
+    },
+    "created_at": "2020-04-25T05:06:06.377117+00:00",
+    "updated_at": "2026-04-10T00:27:51.151907+00:00",
+    "openstates_url": "https://openstates.org/person/carden-summers-4dndWB3TAVcKPpxAmRmbKu/"
+  },
+  {
+    "id": "ocd-person/b11d0191-cd84-4a93-add6-ee65494caff2",
+    "name": "Chuck Hufstetler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:ga/sldu:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Chuck",
+    "family_name": "Hufstetler",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/hufstetler-chuck-838.jpg",
+    "email": "chuck.hufstetler@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1956-07-07",
+    "death_date": "",
+    "extras": {
+      "city": "Rome",
+      "press": "https://senatepress.net/category/senate-press/chuck-hufstetler",
+      "staff": "Diego Santana",
+      "spouse": "Joan",
+      "birthday": "July 7",
+      "residence": "Rome",
+      "georgia_id": 838,
+      "occupation": "Anesthetist",
+      "staff email": "diego.santana@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:18.064971+00:00",
+    "updated_at": "2026-01-31T00:26:10.764733+00:00",
+    "openstates_url": "https://openstates.org/person/chuck-hufstetler-5OCteokrcPmqZHKdJC7lHm/"
+  },
+  {
+    "id": "ocd-person/1ac93f89-f367-4de3-82ba-79fa78d4d134",
+    "name": "Chuck Payne",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:ga/sldu:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Chuck",
+    "family_name": "Payne",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/payne-chuck--4909.jpg",
+    "email": "chuck.payne@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1964-12-22",
+    "death_date": "",
+    "extras": {
+      "city": "Dalton",
+      "press": "https://senatepress.net/category/senate-press/chuck-payne ",
+      "staff": "Phyllis Williams",
+      "residence": "Dalton ",
+      "georgia_id": 4909,
+      "staff email": "phyllis.williams@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:30.570690+00:00",
+    "updated_at": "2026-04-10T00:27:22.169110+00:00",
+    "openstates_url": "https://openstates.org/person/chuck-payne-oXloR6K8vHUI3k3oiaHeW/"
+  },
+  {
+    "id": "ocd-person/17a7e011-73f2-4ac5-8470-3436b47a6744",
+    "name": "Clint Dixon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:ga/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Clint",
+    "family_name": "Dixon",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/dixon-clint-4982.jpg",
+    "email": "clint.dixon@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1979-07-16",
+    "death_date": "",
+    "extras": {
+      "city": "Gwinnett",
+      "staff": "Rachel Whitted",
+      "residence": "Gwinnett",
+      "georgia_id": 4982,
+      "staff email": "rachel.whitted@senate.ga.gov"
+    },
+    "created_at": "2021-01-12T00:07:00.971191+00:00",
+    "updated_at": "2026-04-10T00:27:54.399934+00:00",
+    "openstates_url": "https://openstates.org/person/clint-dixon-idXeGBlxVqK8ju4EgdyFA/"
+  },
+  {
+    "id": "ocd-person/4b05e770-4423-4b64-8ae1-9600e8c73244",
+    "name": "David Lucas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ga/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Lucas",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/lucas-david-157.jpg",
+    "email": "david.lucas@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1950-04-23",
+    "death_date": "",
+    "extras": {
+      "city": "Macon",
+      "press": "https://senatepress.net/category/senate-press/david-lucas ",
+      "staff": "Corrinna Edwards",
+      "spouse": "Elaine",
+      "birthday": "April 23",
+      "residence": "Macon",
+      "georgia_id": 157,
+      "occupation": "Self-Employed",
+      "staff email": "corrinna.edwards@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:25.021069+00:00",
+    "updated_at": "2026-01-31T00:25:56.688877+00:00",
+    "openstates_url": "https://openstates.org/person/david-lucas-2HZ7bbO7ukeabxJYuHwFBU/"
+  },
+  {
+    "id": "ocd-person/73918c45-83c1-4d52-a84d-3ad7ad8de40b",
+    "name": "Derek Mallow",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ga/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Derek",
+    "family_name": "Mallow",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/mallow-derek-5007.jpg",
+    "email": "derek.mallow@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1989-06-12",
+    "death_date": "",
+    "extras": {
+      "city": "Savannah",
+      "staff": "Ashley Thomas",
+      "residence": "Savannah",
+      "georgia_id": 5007,
+      "staff email": "ashley.thomas@senate.ga.gov"
+    },
+    "created_at": "2021-01-12T00:07:11.715960+00:00",
+    "updated_at": "2026-04-10T00:28:02.087854+00:00",
+    "openstates_url": "https://openstates.org/person/derek-mallow-3W4dG0KknLaN8bm6oF1hPf/"
+  },
+  {
+    "id": "ocd-person/efb9168c-b45a-4f43-bba5-d6f05e7d9cbe",
+    "name": "Doc Rhett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ga/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Doc",
+    "family_name": "Rhett",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/rhett-michael--doc--855.jpg",
+    "email": "michael.rhett@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1956-12-30",
+    "death_date": "",
+    "extras": {
+      "city": "Marietta",
+      "press": "https://senatepress.net/category/senate-press/michael-rhett ",
+      "staff": "Tina Coria",
+      "residence": "Marietta",
+      "georgia_id": 855,
+      "staff email": "tina.coria@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:39:52.594167+00:00",
+    "updated_at": "2026-01-31T00:27:08.381083+00:00",
+    "openstates_url": "https://openstates.org/person/doc-rhett-7ILkbJ3V9D1BYUB8TjmGYI/"
+  },
+  {
+    "id": "ocd-person/7f88fadb-2f51-48c7-8ae5-e20cd2f33e4a",
+    "name": "Donzella James",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ga/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Donzella",
+    "family_name": "James",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/james-donzella-372.jpg",
+    "email": "donzella.james@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1948-05-03",
+    "death_date": "",
+    "extras": {
+      "city": "Atlanta",
+      "press": "https://senatepress.net/category/senate-press/donzella-james",
+      "staff": "Diego Santana",
+      "birthday": "May 3",
+      "residence": "Atlanta",
+      "georgia_id": 372,
+      "occupation": "Retired federal employee",
+      "staff email": "diego.santana@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:39:45.703879+00:00",
+    "updated_at": "2026-01-31T00:27:01.686638+00:00",
+    "openstates_url": "https://openstates.org/person/donzella-james-3secmUsFngWEVFzNkKPI8Q/"
+  },
+  {
+    "id": "ocd-person/6be704ef-6250-4e08-86d3-f5fa2e1eebf3",
+    "name": "Drew Echols",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:ga/sldu:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Drew",
+    "family_name": "Echols",
+    "image": "https://www.gfpe.org/library/imglib/Drew-Echols-1.jpg",
+    "email": "drew.echols@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:55:22.512023+00:00",
+    "updated_at": "2026-04-10T00:26:55.386535+00:00",
+    "openstates_url": "https://openstates.org/person/drew-echols-3HbkoZhTJQBlYUHUet4Wo7/"
+  },
+  {
+    "id": "ocd-person/4cf7c975-678b-4e21-9877-6d22d7b37916",
+    "name": "Ed Harbison",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ga/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Harbison",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/harbison-ed-17.jpg",
+    "email": "ed.harbison@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1941-08-25",
+    "death_date": "",
+    "extras": {
+      "city": "Columbus",
+      "press": "https://senatepress.net/category/senate-press/ed-harbison",
+      "staff": "Cyndi West",
+      "birthday": "August 25",
+      "residence": "Columbus",
+      "georgia_id": 17,
+      "occupation": "Businessman",
+      "staff email": "cyndi.williams@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:31.940181+00:00",
+    "updated_at": "2026-01-31T00:27:20.962098+00:00",
+    "openstates_url": "https://openstates.org/person/ed-harbison-2LEeeu7Ijp3zMCoo0HGIBK/"
+  },
+  {
+    "id": "ocd-person/777f58bb-9d6b-4755-ab7b-b94d11629cb5",
+    "name": "Ed Setzler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ga/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Setzler",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/setzler-ed-203.jpg",
+    "email": "ed.setzler@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1970-03-18",
+    "death_date": "",
+    "extras": {
+      "city": "Acworth",
+      "press": "https://house-press.com/representative/Ed-Setzler",
+      "staff": "Nathan Teasley",
+      "spouse": "Tracie",
+      "birthday": "March 18",
+      "residence": "Acworth",
+      "georgia_id": 203,
+      "occupation": "Engineering Manager",
+      "staff email": "nathan.teasley@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:39:52.917459+00:00",
+    "updated_at": "2026-01-31T00:27:36.660135+00:00",
+    "openstates_url": "https://openstates.org/person/ed-setzler-3dUHdWcbYBWXOfg3toTy2n/"
+  },
+  {
+    "id": "ocd-person/3f15ad5e-877d-44aa-b5b3-b24587c42685",
+    "name": "Elena Parent",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:ga/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Elena",
+    "family_name": "Parent",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/parent-elena-768.jpg",
+    "email": "elena.parent@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1975-12-27",
+    "death_date": "",
+    "extras": {
+      "city": "Atlanta",
+      "press": "https://senatepress.net/category/senate-press/elena-parent ",
+      "staff": "Paige Terhune",
+      "title": "Minority Caucus Chair",
+      "spouse": "Briley Brisendine",
+      "birthday": "December 27",
+      "residence": "Atlanta",
+      "georgia_id": 768,
+      "occupation": "Attorney",
+      "staff email": "paige.terhune@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:50.711162+00:00",
+    "updated_at": "2026-04-10T00:28:01.000507+00:00",
+    "openstates_url": "https://openstates.org/person/elena-parent-1v2QET7MFUSiokLOWhfRkD/"
+  },
+  {
+    "id": "ocd-person/acc7c167-6251-4ce8-8021-511acfa291ef",
+    "name": "Emanuel Jones",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ga/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Emanuel",
+    "family_name": "Jones",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/jones-emanuel-28.jpg",
+    "email": "emanuel.jones@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1959-04-01",
+    "death_date": "",
+    "extras": {
+      "city": "Decatur",
+      "press": "https://senatepress.net/category/senate-press/emanuel-jones",
+      "staff": "Megan Stevens",
+      "birthday": "April 1",
+      "religion": "Shiloh Baptist Church in McDonough",
+      "residence": "Decatur",
+      "georgia_id": 28,
+      "occupation": "Automobile Dealer",
+      "staff email": "megan.stevens@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:26.240250+00:00",
+    "updated_at": "2026-04-10T00:27:12.519798+00:00",
+    "openstates_url": "https://openstates.org/person/emanuel-jones-5G1y3swr2loKMgjidPGqA3/"
+  },
+  {
+    "id": "ocd-person/9e417b67-da09-4516-b858-6b2458f53633",
+    "name": "Frank Ginn",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:ga/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Frank",
+    "family_name": "Ginn",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/ginn-frank-751.jpg",
+    "email": "frank.ginn@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1962-05-23",
+    "death_date": "",
+    "extras": {
+      "city": "Danielsville",
+      "press": "https://senatepress.net/category/senate-press/frank-ginn",
+      "staff": "Emily Doppel",
+      "birthday": "May 23",
+      "residence": "Danielsville",
+      "georgia_id": 751,
+      "occupation": "Engineer/Farmer",
+      "staff email": "emily.doppel@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:41.623110+00:00",
+    "updated_at": "2026-01-31T00:26:30.046461+00:00",
+    "openstates_url": "https://openstates.org/person/frank-ginn-4ociCwoMU7111Eudch9DIx/"
+  },
+  {
+    "id": "ocd-person/df023a79-0194-4d1a-8755-5dee4053e1cc",
+    "name": "Gail Davenport",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ga/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Gail",
+    "family_name": "Davenport",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/davenport-gail-10.jpg",
+    "email": "gail.davenport@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1949-03-01",
+    "death_date": "",
+    "extras": {
+      "city": "Jonesboro",
+      "press": "https://senatepress.net/category/senate-press/gail-davenport",
+      "staff": "Karen Thompson",
+      "birthday": "March 1",
+      "residence": "Jonesboro",
+      "georgia_id": 10,
+      "occupation": "Real Estate Professional",
+      "staff email": "karen.thompson@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:39:45.099507+00:00",
+    "updated_at": "2026-01-31T00:25:52.673789+00:00",
+    "openstates_url": "https://openstates.org/person/gail-davenport-6moJ3H5Nnz7oItZHzquXRU/"
+  },
+  {
+    "id": "ocd-person/1f7d013a-8861-4e08-b6bf-7c8d36f8107c",
+    "name": "Greg Dolezal",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ga/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Dolezal",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/dolezal-greg-4925.jpg",
+    "email": "greg.dolezal@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1978-10-01",
+    "death_date": "",
+    "extras": {
+      "city": "Cumming",
+      "press": "https://senatepress.net/category/senate-press/greg-dolezal",
+      "staff": "McKenzie Rhoades",
+      "spouse": "Natalie",
+      "birthday": "October 1",
+      "religion": "Christian",
+      "residence": "Cumming",
+      "georgia_id": 4925,
+      "occupation": "Small Business Owner",
+      "staff email": "mckenzie.rhoades@senate.ga.gov"
+    },
+    "created_at": "2019-01-13T06:05:34.545347+00:00",
+    "updated_at": "2026-01-31T00:27:00.160303+00:00",
+    "openstates_url": "https://openstates.org/person/greg-dolezal-xPt9CGpMZqDulbva8JwQW/"
+  },
+  {
+    "id": "ocd-person/d7bfd125-d343-4acd-a4dc-480daf241af3",
+    "name": "Harold Jones",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ga/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Harold",
+    "family_name": "Jones",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/jones-ii-harold-851.jpg",
+    "email": "harold.jones@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1969-08-01",
+    "death_date": "",
+    "extras": {
+      "city": "Augusta",
+      "press": "): https://senatepress.net/category/senate-press/harold-jones",
+      "staff": "Sabrina Wise",
+      "title": "Minority Whip",
+      "birthday": "August 1",
+      "religion": "Catholic",
+      "residence": "Augusta",
+      "georgia_id": 851,
+      "occupation": "Attorney",
+      "staff email": "sabrina.wise@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:42.713951+00:00",
+    "updated_at": "2026-01-31T00:25:53.733068+00:00",
+    "openstates_url": "https://openstates.org/person/harold-jones-6Z70fvoZuJJBDjzwCKE4yB/"
+  },
+  {
+    "id": "ocd-person/fcd57129-480c-4fba-a0d1-7fb369706611",
+    "name": "Jaha Howard",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ga/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Jaha",
+    "family_name": "Howard",
+    "image": "",
+    "email": "jaha.howard@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-31T00:26:28.960866+00:00",
+    "updated_at": "2026-04-10T00:27:09.543583+00:00",
+    "openstates_url": "https://openstates.org/person/jaha-howard-7h5bnciYPd2vcEz2gpUYZF/"
+  },
+  {
+    "id": "ocd-person/cb7d8c1d-3c26-4f35-8d37-d1cf8a7ce207",
+    "name": "Jason Anavitarte",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ga/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Anavitarte",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/anavitarte-jason-4980.jpg",
+    "email": "jason.anavitarte@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1978-06-14",
+    "death_date": "",
+    "extras": {
+      "city": "Dallas",
+      "staff": "Anna Horvath",
+      "title": "Majority Caucus Chair",
+      "residence": "Dallas",
+      "georgia_id": 4980,
+      "staff email": "anna.horvath@senate.ga.gov jqte-setlink="
+    },
+    "created_at": "2021-01-12T00:07:03.872633+00:00",
+    "updated_at": "2026-01-31T00:26:58.617662+00:00",
+    "openstates_url": "https://openstates.org/person/jason-anavitarte-6Byoh6JnmmK0uEIvTYseDn/"
+  },
+  {
+    "id": "ocd-person/584267b0-e40b-4d6e-a7fe-4c076eb6214c",
+    "name": "Jason Dickerson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ga/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Dickerson",
+    "image": "",
+    "email": "jason.dickerson@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-31T00:26:33.214655+00:00",
+    "updated_at": "2026-06-04T06:27:57.121622+00:00",
+    "openstates_url": "https://openstates.org/person/jason-dickerson-2gXff1tTilJRA4sjyRxBQy/"
+  },
+  {
+    "id": "ocd-person/ac1cac30-3fec-4c56-b172-b483db465a6b",
+    "name": "John Albers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:ga/sldu:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Albers",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/albers-john-754.jpg",
+    "email": "john.albers@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1972-08-18",
+    "death_date": "",
+    "extras": {
+      "city": "Roswell",
+      "press": "https://senatepress.net/category/senate-press/john-albers",
+      "staff": "Allison Bailey",
+      "spouse": "Kari",
+      "birthday": "August 18",
+      "religion": "Christian - Methodist",
+      "residence": "Roswell ",
+      "georgia_id": 754,
+      "occupation": "Executive & Business Owner",
+      "staff email": "allison.bailey@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:36.045542+00:00",
+    "updated_at": "2026-04-10T00:26:50.555419+00:00",
+    "openstates_url": "https://openstates.org/person/john-albers-5ElmaOW3CImOIZbmfNs1gR/"
+  },
+  {
+    "id": "ocd-person/b83b0486-773f-4979-a1ce-e2f7f3e6d7e1",
+    "name": "Josh McLaurin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ga/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "McLaurin",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/mclaurin-josh-4942.jpg",
+    "email": "josh.mclaurin@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1988-01-17",
+    "death_date": "",
+    "extras": {
+      "city": "Sandy Springs",
+      "press": "https://house-press.com/representative/Josh-McLaurin",
+      "staff": "Tina Coria",
+      "birthday": "January 17",
+      "residence": "Sandy Springs",
+      "georgia_id": 4942,
+      "occupation": "Attorney",
+      "staff email": "tina.coria@senate.ga.gov"
+    },
+    "created_at": "2019-01-13T06:05:29.345558+00:00",
+    "updated_at": "2026-01-31T00:27:12.343960+00:00",
+    "openstates_url": "https://openstates.org/person/josh-mclaurin-5bdYg1QjylfR616Tmh704n/"
+  },
+  {
+    "id": "ocd-person/fc31ab02-026c-4173-86db-570c0b297c64",
+    "name": "Kay Kirkpatrick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ga/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Kay",
+    "family_name": "Kirkpatrick",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/kirkpatrick-kay-4910.jpg",
+    "email": "kay.kirkpatrick@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1954-09-13",
+    "death_date": "",
+    "extras": {
+      "city": "Marietta",
+      "press": "https://senatepress.net/category/senate-press/kay-kirkpatrick ",
+      "staff": "Hannah Holcomb",
+      "spouse": "Thomas",
+      "birthday": "September 13",
+      "religion": "Methodist",
+      "residence": "Marietta",
+      "georgia_id": 4910,
+      "occupation": "Physician ",
+      "staff email": "hannah.holcomb@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:37.064049+00:00",
+    "updated_at": "2026-01-31T00:26:12.927044+00:00",
+    "openstates_url": "https://openstates.org/person/kay-kirkpatrick-7fslPeuQMgvkumJPQeEJ6K/"
+  },
+  {
+    "id": "ocd-person/0a816fbf-e5ec-4056-8b3e-08184400e71b",
+    "name": "Kenya Wicks",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ga/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Kenya",
+    "family_name": "Wicks",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kenya_Wicks.JPG",
+    "email": "kenya.wicks@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1973-05-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:55:59.575450+00:00",
+    "updated_at": "2026-04-10T00:28:29.882459+00:00",
+    "openstates_url": "https://openstates.org/person/kenya-wicks-Jp4hrDaRnptZzdrxo4q7v/"
+  },
+  {
+    "id": "ocd-person/2f8621bc-0548-457c-8b0d-9148e14b77fe",
+    "name": "Kim Jackson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:ga/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Jackson",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/jackson-kim-4981.jpg",
+    "email": "kim.jackson@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1984-08-25",
+    "death_date": "",
+    "extras": {
+      "city": "Stone Mountain",
+      "staff": "Tina Coria",
+      "residence": "Stone Mountain",
+      "georgia_id": 4981,
+      "staff email": "tina.coria@senate.ga.gov"
+    },
+    "created_at": "2021-01-12T00:06:54.123813+00:00",
+    "updated_at": "2026-01-31T00:27:08.875344+00:00",
+    "openstates_url": "https://openstates.org/person/kim-jackson-1Rfw8khE54Asu2nvwgk9LK/"
+  },
+  {
+    "id": "ocd-person/ae6e08e3-6971-4cd2-982a-48d650a343d5",
+    "name": "Lanny Thomas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:ga/sldu:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Lanny",
+    "family_name": "Thomas",
+    "image": "https://images.squarespace-cdn.com/content/69373488c86b8056febeb404/1f53a219-dd13-4b1b-8ab7-c71996cab9b7/Lanny+Thomas+for+Senate+in+road.jpg?content-type=image%2Fjpeg",
+    "email": "lanny.thomas@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-11T00:29:14.115736+00:00",
+    "updated_at": "2026-06-04T06:28:13.414960+00:00",
+    "openstates_url": "https://openstates.org/person/lanny-thomas-5J8wxGsNZ4F1SaOuzEeesX/"
+  },
+  {
+    "id": "ocd-person/44a51125-9e82-41f6-8d4f-a646895b5994",
+    "name": "Larry Walker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ga/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Walker",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/walker--iii-larry-4878.jpg",
+    "email": "larry.walker@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1965-06-17",
+    "death_date": "",
+    "extras": {
+      "city": "Perry",
+      "press": "https://senatepress.net/category/senate-press/larry-walker ",
+      "staff": "McKenzie Rhoades",
+      "title": "Majority Caucus Secretary",
+      "spouse": "Adrienne",
+      "birthday": "June 17",
+      "religion": "Methodist",
+      "residence": "Perry",
+      "georgia_id": 4878,
+      "occupation": "Insurance Agent",
+      "staff email": "mckenzie.rhoades@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:39:58.520733+00:00",
+    "updated_at": "2026-06-04T06:28:37.584567+00:00",
+    "openstates_url": "https://openstates.org/person/larry-walker-25Wufd7LtEYu2r7QBkWIia/"
+  },
+  {
+    "id": "ocd-person/e11cecf4-f2e5-49d9-ba9e-47681f779438",
+    "name": "Lee Anderson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ga/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Lee",
+    "family_name": "Anderson",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/anderson-lee-723.jpg",
+    "email": "lee.anderson@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1957-01-06",
+    "death_date": "",
+    "extras": {
+      "city": "Grovetown",
+      "press": "https://senatepress.net/category/senate-press/lee-anderson",
+      "staff": "Kaylon Day",
+      "spouse": "Donna",
+      "birthday": "January 6",
+      "residence": "Grovetown",
+      "georgia_id": 723,
+      "occupation": "Farmer-Businessman",
+      "staff email": "kaylon.day@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:39:55.628498+00:00",
+    "updated_at": "2026-01-31T00:27:28.269981+00:00",
+    "openstates_url": "https://openstates.org/person/lee-anderson-6qmUXbgjbKbdvREWhabOTQ/"
+  },
+  {
+    "id": "ocd-person/078246e9-90b8-43aa-bb92-d7016f517b8e",
+    "name": "Marty Harbin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ga/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Marty",
+    "family_name": "Harbin",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/harbin-marty-850.jpg",
+    "email": "marty.harbin@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1955-04-02",
+    "death_date": "",
+    "extras": {
+      "city": "Tyrone",
+      "press": "https://senatepress.net/category/senate-press/marty-harbin",
+      "staff": "Jenna Purpura",
+      "spouse": "Debbie",
+      "birthday": "April 2",
+      "religion": "Baptist",
+      "residence": "Tyrone",
+      "georgia_id": 850,
+      "occupation": "Insurance Agent",
+      "staff email": "jenna.purpura@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:39:50.379029+00:00",
+    "updated_at": "2026-04-10T00:27:52.686900+00:00",
+    "openstates_url": "https://openstates.org/person/marty-harbin-EATwp8cN3tQbu2hwo7yPe/"
+  },
+  {
+    "id": "ocd-person/81b84318-8c9f-467f-a7c1-776d9c415f51",
+    "name": "Matt Brass",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ga/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Brass",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/brass-matt-4907.jpg",
+    "email": "matt.brass@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1978-01-19",
+    "death_date": "",
+    "extras": {
+      "city": "Newnan",
+      "press": "https://senatepress.net/category/senate-press/matt-brass",
+      "staff": "Mercedes Benites",
+      "title": "Majority Caucus Vice Chair",
+      "spouse": "Maegan",
+      "birthday": "January 19",
+      "religion": "Presbyterian",
+      "residence": "Newnan",
+      "georgia_id": 4907,
+      "occupation": "Business Development ",
+      "staff email": "mercedes.benites@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:08.387738+00:00",
+    "updated_at": "2026-04-10T00:27:00.917824+00:00",
+    "openstates_url": "https://openstates.org/person/matt-brass-3wmDWjZQoqLM2JIdMBR8cb/"
+  },
+  {
+    "id": "ocd-person/918888ac-edc7-4178-9133-d058f0f21010",
+    "name": "Max Burns",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ga/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Max",
+    "family_name": "Burns",
+    "image": "",
+    "email": "max.burns@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1948-11-08",
+    "death_date": "",
+    "extras": {
+      "city": "Sylvania",
+      "staff": "Tarika Jackson",
+      "residence": "Sylvania",
+      "georgia_id": 4979,
+      "staff email": "tarika.jackson@senate.ga.gov"
+    },
+    "created_at": "2021-01-12T00:07:08.716839+00:00",
+    "updated_at": "2026-01-31T00:27:33.785867+00:00",
+    "openstates_url": "https://openstates.org/person/max-burns-4QcHa3lPp6ivhkxY80BKs4/"
+  },
+  {
+    "id": "ocd-person/011995be-4dd0-43b2-ae75-57ae45f53576",
+    "name": "Mike Hodges",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ga/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Hodges",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/hodges-mike-5013.jpg",
+    "email": "mike.hodges@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "city": "Brunswick",
+      "staff": "Brenita Simmons",
+      "title": "Governor's Floor Leader",
+      "residence": "Brunswick",
+      "georgia_id": 5013,
+      "staff email": "brenita.simmons@senate.ga.gov"
+    },
+    "created_at": "2023-01-18T03:43:58.655461+00:00",
+    "updated_at": "2026-04-10T00:27:16.202715+00:00",
+    "openstates_url": "https://openstates.org/person/mike-hodges-24gRtDfNQQrErlUCgmYgY/"
+  },
+  {
+    "id": "ocd-person/bf2c1ec5-d995-4605-85ac-139adb037d99",
+    "name": "Nan Orrock",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ga/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Nan",
+    "family_name": "Orrock",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/orrock-nan-33.jpg",
+    "email": "nan.orrock@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1943-11-08",
+    "death_date": "",
+    "extras": {
+      "city": "Atlanta",
+      "press": "https://senatepress.net/category/senate-press/nan-orrock ",
+      "staff": "Kristy Walker",
+      "title": "Minority Caucus Secretary",
+      "birthday": "November 8",
+      "residence": "Atlanta",
+      "georgia_id": 33,
+      "occupation": "Non-Profit Director",
+      "staff email": "Kristy.Walker@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:38.437973+00:00",
+    "updated_at": "2026-01-31T00:26:45.089829+00:00",
+    "openstates_url": "https://openstates.org/person/nan-orrock-5ojhEyhy91AYbhStnt7kGf/"
+  },
+  {
+    "id": "ocd-person/57ad1f65-9969-4be2-b262-684bf53123fb",
+    "name": "Nikki Merritt",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ga/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Nikki",
+    "family_name": "Merritt",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/merritt-nikki-4978.jpg",
+    "email": "nikki.merritt@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1972-02-09",
+    "death_date": "",
+    "extras": {
+      "city": "Grayson",
+      "staff": "Evelyn Thomas",
+      "residence": "Grayson",
+      "georgia_id": 4978,
+      "staff email": "evelyn.thomas@senate.ga.gov"
+    },
+    "created_at": "2021-01-12T00:06:58.786669+00:00",
+    "updated_at": "2026-01-31T00:25:52.176245+00:00",
+    "openstates_url": "https://openstates.org/person/nikki-merritt-2fRRsiDnKjb2CeoTpK8Mqh/"
+  },
+  {
+    "id": "ocd-person/069fb4fa-766b-40e4-90b7-ce96b4fa2ace",
+    "name": "RaShaun Kemp",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ga/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "RaShaun",
+    "family_name": "Kemp",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RashaunKemp2024.png",
+    "email": "rashaun.kemp@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1980-03-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:56:21.700655+00:00",
+    "updated_at": "2026-04-10T00:26:49.076068+00:00",
+    "openstates_url": "https://openstates.org/person/rashaun-kemp-CUwIHej1OKrLmV7GBwhOo/"
+  },
+  {
+    "id": "ocd-person/8798a822-fee8-4546-bcdd-455f788bef44",
+    "name": "Randal Mangham",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:ga/sldu:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Randal",
+    "family_name": "Mangham",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Randal_Mangham.jpg",
+    "email": "randal.mangham@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T17:55:56.407179+00:00",
+    "updated_at": "2026-04-10T00:28:02.674870+00:00",
+    "openstates_url": "https://openstates.org/person/randal-mangham-47rjAJCRCcmqtuxVdjO2Fg/"
+  },
+  {
+    "id": "ocd-person/6da7fe11-4436-4854-8e1b-4c45dc4cdaac",
+    "name": "Randy Robertson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ga/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Robertson",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/robertson-randy-4926.jpg",
+    "email": "randy.robertson@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1962-10-06",
+    "death_date": "",
+    "extras": {
+      "city": "Cataula",
+      "press": "https://senatepress.net/category/senate-press/randy-robertson ",
+      "staff": "Allison Bailey",
+      "title": "Majority Whip",
+      "spouse": "Theresa ",
+      "birthday": "October 6",
+      "religion": "Baptist",
+      "residence": "Cataula",
+      "georgia_id": 4926,
+      "occupation": "Retired Law Enforcement ",
+      "staff email": "allison.bailey@senate.ga.gov"
+    },
+    "created_at": "2019-01-13T06:05:32.182071+00:00",
+    "updated_at": "2026-01-31T00:27:24.243037+00:00",
+    "openstates_url": "https://openstates.org/person/randy-robertson-3Kuw3XoqHJBC20mOoZN1cy/"
+  },
+  {
+    "id": "ocd-person/c7860bae-9d9c-449c-9903-20230eec50ac",
+    "name": "Rick Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ga/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Williams",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/williams-rick-4905.jpg",
+    "email": "rick.williams@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1952-09-24",
+    "death_date": "",
+    "extras": {
+      "city": "Milledgeville",
+      "press": "https://house-press.com/representative/Rick-Williams",
+      "staff": "Tarika Jackson",
+      "spouse": "Donna",
+      "birthday": "September 24",
+      "residence": "Milledgeville",
+      "georgia_id": 4905,
+      "occupation": "Funeral Director",
+      "staff email": "tarika.jackson@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:39.840373+00:00",
+    "updated_at": "2026-01-31T00:26:25.669543+00:00",
+    "openstates_url": "https://openstates.org/person/rick-williams-64UjOAxLK6Ug74tMWms0ce/"
+  },
+  {
+    "id": "ocd-person/b90b899d-87f0-43a5-9d15-6e310187ac41",
+    "name": "Russ Goodman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ga/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Russ",
+    "family_name": "Goodman",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/goodman-russ-4977.jpg",
+    "email": "russ.goodman@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1977-04-14",
+    "death_date": "",
+    "extras": {
+      "city": "Cogdell",
+      "staff": "Rachel Whitted",
+      "residence": "Cogdell",
+      "georgia_id": 4977,
+      "staff email": "rachel.whitted@senate.ga.gov"
+    },
+    "created_at": "2021-01-12T00:07:02.714727+00:00",
+    "updated_at": "2026-04-10T00:26:37.588019+00:00",
+    "openstates_url": "https://openstates.org/person/russ-goodman-5dAqtaoq1SOzUzDOaEdXXN/"
+  },
+  {
+    "id": "ocd-person/218a4fc4-a568-4b78-b350-0d60c6b12d4c",
+    "name": "Sally Harrell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ga/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Sally",
+    "family_name": "Harrell",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/harrell-sally-311.jpg",
+    "email": "sally.harrell@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1966-03-05",
+    "death_date": "",
+    "extras": {
+      "city": "Atlanta",
+      "press": "https://senatepress.net/category/senate-press/sally-harrell",
+      "staff": "Kathlene Dorking",
+      "spouse": "Jay",
+      "birthday": "March 5",
+      "residence": "Atlanta",
+      "georgia_id": 311,
+      "occupation": "Social Worker",
+      "staff email": "kathlene.dorking@senate.ga.gov"
+    },
+    "created_at": "2019-01-13T06:05:33.669667+00:00",
+    "updated_at": "2026-01-31T00:25:49.656275+00:00",
+    "openstates_url": "https://openstates.org/person/sally-harrell-11HxEQQZ3hfi1NJgGTJY2G/"
+  },
+  {
+    "id": "ocd-person/cbcdfca3-e47d-4b32-9164-ec0709a134bf",
+    "name": "Sam Watson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ga/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Watson",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/watson-sam-837.jpg",
+    "email": "sam.watson@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1978-09-19",
+    "death_date": "",
+    "extras": {
+      "city": "Moultrie",
+      "press": "https://house-press.com/representative/Sam-Watson",
+      "spouse": "Emily",
+      "birthday": "September 19",
+      "residence": "Moultrie",
+      "georgia_id": 837,
+      "occupation": "Farmer"
+    },
+    "created_at": "2018-10-18T14:39:53.233298+00:00",
+    "updated_at": "2026-01-31T00:26:43.426149+00:00",
+    "openstates_url": "https://openstates.org/person/sam-watson-6CZZsIyrJSVTRidvK3CwW7/"
+  },
+  {
+    "id": "ocd-person/314d7845-ba55-4bd4-809a-c7c7aea26690",
+    "name": "Shawn Still",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:ga/sldu:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Shawn",
+    "family_name": "Still",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/still-shawn-5016.jpg",
+    "email": "shawn.still@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1972-10-02",
+    "death_date": "",
+    "extras": {
+      "city": "Norcross",
+      "staff": "Lillian Jacobsen",
+      "residence": "Norcross",
+      "georgia_id": 5016,
+      "staff email": "lillian.jacobsen@senate.ga.gov"
+    },
+    "created_at": "2023-01-18T03:38:43.771559+00:00",
+    "updated_at": "2026-04-10T00:28:09.218499+00:00",
+    "openstates_url": "https://openstates.org/person/shawn-still-1V21ixmS86x5GvCGQ0tOD2/"
+  },
+  {
+    "id": "ocd-person/5b6e0e37-802b-4103-b401-551532aba2e7",
+    "name": "Sheikh Rahman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ga/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Sheikh",
+    "family_name": "Rahman",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/rahman-sheikh-4924.jpg",
+    "email": "sheikh.rahman@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1960-11-15",
+    "death_date": "",
+    "extras": {
+      "city": "Lawrenceville",
+      "press": "https://senatepress.net/category/senate-press/sheikh-rahman",
+      "staff": "Kathlene Dorking",
+      "spouse": "Sham'e Afrose",
+      "birthday": "November 15",
+      "religion": "Muslim",
+      "residence": "Lawrenceville ",
+      "georgia_id": 4924,
+      "occupation": "Business Owner",
+      "staff email": "kathlene.dorking@senate.ga.gov"
+    },
+    "created_at": "2019-01-13T06:05:24.291542+00:00",
+    "updated_at": "2026-06-04T06:29:22.689176+00:00",
+    "openstates_url": "https://openstates.org/person/sheikh-rahman-2mWb1vUTyRWDZCNomtfrrL/"
+  },
+  {
+    "id": "ocd-person/2abbbe23-8cb6-4f33-afaf-38ce88a4e10c",
+    "name": "Sonya Halpern",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ga/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Sonya",
+    "family_name": "Halpern",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/halpern-sonya-4985.jpg",
+    "email": "sonya.halpern@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1967-10-11",
+    "death_date": "",
+    "extras": {
+      "city": "Atlanta",
+      "staff": "Paige McKenna",
+      "title": "Minority Caucus Vice Chair",
+      "residence": "Atlanta",
+      "georgia_id": 4985,
+      "staff email": "paige.mckenna@senate.ga.gov"
+    },
+    "created_at": "2021-01-12T00:07:04.874321+00:00",
+    "updated_at": "2026-04-10T00:26:53.656127+00:00",
+    "openstates_url": "https://openstates.org/person/sonya-halpern-1IdTXHeguTGekIBduzRhoC/"
+  },
+  {
+    "id": "ocd-person/e2c141e9-9e04-4e2b-8e5b-57db594c7abc",
+    "name": "Steve Gooch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:ga/sldu:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Gooch",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/gooch-steve-752.jpg",
+    "email": "steve.gooch@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1967-02-25",
+    "death_date": "",
+    "extras": {
+      "city": "Dahlonega",
+      "press": "https://senatepress.net/category/senate-press/steve-gooch",
+      "staff": "Chloe Satterfield",
+      "title": "Majority Leader",
+      "spouse": "Shannon",
+      "birthday": "February 25",
+      "residence": "Dahlonega",
+      "georgia_id": 752,
+      "staff email": "chloe.satterfield@senate.ga.gov"
+    },
+    "created_at": "2018-10-18T14:40:34.137877+00:00",
+    "updated_at": "2026-01-31T00:26:56.653350+00:00",
+    "openstates_url": "https://openstates.org/person/steve-gooch-6tsaG0c1I1I662fIuHoDCW/"
+  },
+  {
+    "id": "ocd-person/516cb969-9467-490f-9a05-02c3e7decae3",
+    "name": "Steven McNeel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ga/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Steven",
+    "family_name": "McNeel",
+    "image": "https://static.wixstatic.com/media/717e3f_742258cc71f249009c9f26b868c3c467~mv2.jpg/v1/fill/w_953,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/717e3f_742258cc71f249009c9f26b868c3c467~mv2.jpg",
+    "email": "steven.mcneel@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-03-11T06:26:40.826218+00:00",
+    "updated_at": "2026-04-10T00:27:37.238244+00:00",
+    "openstates_url": "https://openstates.org/person/steven-mcneel-2Te44DsJoA8BxUo7WuxQbT/"
+  },
+  {
+    "id": "ocd-person/93f45299-bfa2-4458-844a-5c6b9bdd8c1d",
+    "name": "Tim Bearden",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ga/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Bearden",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Timothy_Bearden.jpg",
+    "email": "timothy.bearden@senate.ga.gov",
+    "gender": "Male",
+    "birth_date": "1967-05-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-11T17:16:52.571200+00:00",
+    "updated_at": "2026-04-10T00:26:51.714846+00:00",
+    "openstates_url": "https://openstates.org/person/tim-bearden-4VBWizdKo0XswOxxJnEtyv/"
+  },
+  {
+    "id": "ocd-person/d9f1ea57-7b90-484a-9664-927a36c87e0c",
+    "name": "Tonya Anderson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:ga/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ga/government",
+      "name": "Georgia",
+      "classification": "state"
+    },
+    "given_name": "Tonya",
+    "family_name": "Anderson",
+    "image": "https://www.legis.ga.gov/api/images/default-source/portraits/anderson-tonya-807.jpg",
+    "email": "tonya.anderson@senate.ga.gov",
+    "gender": "Female",
+    "birth_date": "1969-07-16",
+    "death_date": "",
+    "extras": {
+      "city": "Lithonia",
+      "press": "https://senatepress.net/category/senate-press/tonya-anderson",
+      "spouse": "Houston",
+      "birthday": "July 16",
+      "religion": "Christian",
+      "residence": "Lithonia",
+      "georgia_id": 807,
+      "occupation": "Minister; Consultant"
+    },
+    "created_at": "2018-10-18T14:39:54.614045+00:00",
+    "updated_at": "2026-01-31T00:26:32.991211+00:00",
+    "openstates_url": "https://openstates.org/person/tonya-anderson-6dFtDTK3WQuxaaH2ZDhVpU/"
+  }
+]

@@ -1,0 +1,1438 @@
+[
+  {
+    "id": "ocd-person/9788064e-fad9-4130-9084-69e829884d9c",
+    "name": "Adrian Dickey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:ia/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Adrian",
+    "family_name": "Dickey",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=31094",
+    "email": "adrian.dickey@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1973-10-23",
+    "death_date": "",
+    "extras": {
+      "occupation": "President of Dickey Transport, Volunteer Fire Fighter"
+    },
+    "created_at": "2021-03-10T00:06:27.780742+00:00",
+    "updated_at": "2026-01-31T00:32:10.873996+00:00",
+    "openstates_url": "https://openstates.org/person/adrian-dickey-4bw0IUSJfKiPFvIwnWpcTs/"
+  },
+  {
+    "id": "ocd-person/8e969687-4903-4f3c-a76f-2e35a2232d09",
+    "name": "Amy Sinclair",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ia/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Amy",
+    "family_name": "Sinclair",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10729",
+    "email": "amy.sinclair@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell phone": "641.870.0199",
+      "home address": "1255 King Rd, Allerton, IA 50008",
+      "capitol phone": "515.281.3371"
+    },
+    "created_at": "2018-10-18T14:42:09.694370+00:00",
+    "updated_at": "2026-01-31T00:32:02.548865+00:00",
+    "openstates_url": "https://openstates.org/person/amy-sinclair-4L3jDaReXAr4T6iBFqnEkL/"
+  },
+  {
+    "id": "ocd-person/79eacd35-8caf-466e-b75f-0d878dcf5221",
+    "name": "Annette Sweeney",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ia/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Annette",
+    "family_name": "Sweeney",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=6585",
+    "email": "annette.sweeney@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "1957-12-09",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer"
+    },
+    "created_at": "2018-10-18T14:42:14.172627+00:00",
+    "updated_at": "2026-01-31T00:31:35.437716+00:00",
+    "openstates_url": "https://openstates.org/person/annette-sweeney-3i3NK5yi7i6kVcEq9tfLaD/"
+  },
+  {
+    "id": "ocd-person/57925a0b-3010-440d-a012-c8465535c13e",
+    "name": "Art Staed",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ia/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Art",
+    "family_name": "Staed",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10743",
+    "email": "art.staed@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1949-04-21",
+    "death_date": "",
+    "extras": {
+      "home email": "artstaed@gmail.com",
+      "occupation": "Retired Educator"
+    },
+    "created_at": "2018-10-18T14:42:10.208074+00:00",
+    "updated_at": "2026-01-31T00:31:49.753830+00:00",
+    "openstates_url": "https://openstates.org/person/art-staed-2fFDLuKjCY6n5UR52ii5ss/"
+  },
+  {
+    "id": "ocd-person/c1174a56-68c9-4103-aaee-fa3f1a2b25ca",
+    "name": "Bill Dotzler",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ia/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Dotzler",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=157",
+    "email": "bill.dotzler@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1948-05-07",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired - John Deere"
+    },
+    "created_at": "2018-10-18T14:42:16.973268+00:00",
+    "updated_at": "2026-01-31T00:31:54.040416+00:00",
+    "openstates_url": "https://openstates.org/person/bill-dotzler-5sMA5xsRhZfcI5WvzRSeJW/"
+  },
+  {
+    "id": "ocd-person/9b68d2a2-ead2-401e-a225-1edae68f6099",
+    "name": "Carrie Koelker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ia/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Carrie",
+    "family_name": "Koelker",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=27001",
+    "email": "carrie.koelker@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Tourism/Economic Development"
+    },
+    "created_at": "2019-01-13T06:06:25.759194+00:00",
+    "updated_at": "2026-01-31T00:32:15.126544+00:00",
+    "openstates_url": "https://openstates.org/person/carrie-koelker-4jFiJpMVOZrPDA6UQ6HEPx/"
+  },
+  {
+    "id": "ocd-person/96941816-29ce-4c03-ab43-efa1ef2930ab",
+    "name": "Catelin Drey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ia/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Catelin",
+    "family_name": "Drey",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Catelin_Drey.png",
+    "email": "catelin.drey@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-31T00:32:22.460478+00:00",
+    "updated_at": "2026-01-31T00:32:23.125074+00:00",
+    "openstates_url": "https://openstates.org/person/catelin-drey-4a8WkXIePFA2y7SNC3wFv1/"
+  },
+  {
+    "id": "ocd-person/006bcadf-1173-4661-a28e-25fbf1a5c423",
+    "name": "Charlie McClintock",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:ia/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Charlie",
+    "family_name": "McClintock",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30657",
+    "email": "charlie.mcclintock@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "business address": "1007 E Grand Ave, Des Moines, IA 50319"
+    },
+    "created_at": "2023-01-19T02:29:50.842224+00:00",
+    "updated_at": "2026-01-31T00:32:27.829575+00:00",
+    "openstates_url": "https://openstates.org/person/charlie-mcclintock-nGCPr9HP5zMgrX6T4TnX/"
+  },
+  {
+    "id": "ocd-person/f4803b48-80d4-43aa-86cd-fe78d268e77a",
+    "name": "Cherielynn Westrich",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ia/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Cherielynn",
+    "family_name": "Westrich",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30654",
+    "email": "cherielynn.westrich@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "1966-01-21",
+    "death_date": "",
+    "extras": {
+      "business address": "1007 E Grand Ave, Des Moines, IA 50319"
+    },
+    "created_at": "2023-01-19T02:29:06.642808+00:00",
+    "updated_at": "2026-01-31T00:32:03.011336+00:00",
+    "openstates_url": "https://openstates.org/person/cherielynn-westrich-7RMjFGbxCubMmMP0ntS7Yo/"
+  },
+  {
+    "id": "ocd-person/84279bc7-04df-475e-8d6f-9f9703c73101",
+    "name": "Cindy Winckler",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:ia/sldu:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Cindy",
+    "family_name": "Winckler",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=44",
+    "email": "cindy.winckler@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "1950-05-27",
+    "death_date": "",
+    "extras": {
+      "home phone": "563.324.7927",
+      "home address": "6 Thode Ct, Davenport, IA 52802"
+    },
+    "created_at": "2023-01-19T02:27:27.283173+00:00",
+    "updated_at": "2026-01-31T00:31:55.730060+00:00",
+    "openstates_url": "https://openstates.org/person/cindy-winckler-41N5TQKS791eKF8vF6Fzqj/"
+  },
+  {
+    "id": "ocd-person/79384252-69ca-43c7-bda1-46b6abe5873e",
+    "name": "Dan Dawson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ia/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Dawson",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=18072",
+    "email": "dan.dawson@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Peace Officer"
+    },
+    "created_at": "2018-10-18T14:41:53.791686+00:00",
+    "updated_at": "2026-01-31T00:32:09.726016+00:00",
+    "openstates_url": "https://openstates.org/person/dan-dawson-3gjmU8BGP3dUgjYOf5wz7u/"
+  },
+  {
+    "id": "ocd-person/3fa8bceb-666f-4480-a957-1928e2b5fec6",
+    "name": "Dan Zumbach",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ia/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Zumbach",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10733",
+    "email": "dan.zumbach@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer"
+    },
+    "created_at": "2018-10-18T14:41:57.039523+00:00",
+    "updated_at": "2026-01-31T00:32:30.364114+00:00",
+    "openstates_url": "https://openstates.org/person/dan-zumbach-1w7d3yVLn7cVNttm0JJmSc/"
+  },
+  {
+    "id": "ocd-person/93e9ba73-a053-4661-8b8b-e8e2f25d0596",
+    "name": "Dave Rowley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ia/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Rowley",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=32458",
+    "email": "david.rowley@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Insurance Agent"
+    },
+    "created_at": "2023-01-19T02:27:17.220823+00:00",
+    "updated_at": "2026-01-31T00:31:54.870262+00:00",
+    "openstates_url": "https://openstates.org/person/dave-rowley-4V6gXnHLJUPWzuRtMOoD3u/"
+  },
+  {
+    "id": "ocd-person/b261b6a8-cb30-4808-b750-df2e7963d6c8",
+    "name": "Dave Sires",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ia/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Sires",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37464",
+    "email": "dave.sires@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:30:19.508950+00:00",
+    "updated_at": "2026-01-31T00:32:16.015569+00:00",
+    "openstates_url": "https://openstates.org/person/dave-sires-5QbHwT3W3ErCb4NS0ulv9k/"
+  },
+  {
+    "id": "ocd-person/fe90f2b2-0892-4abd-9d6d-4b2ac1dae632",
+    "name": "Dawn Driscoll",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:ia/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Dawn",
+    "family_name": "Driscoll",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30548",
+    "email": "dawn.driscoll@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "business address": "1007 E Grand Ave, Des Moines, IA 50319"
+    },
+    "created_at": "2023-01-19T02:30:20.006537+00:00",
+    "updated_at": "2026-01-31T00:32:33.387570+00:00",
+    "openstates_url": "https://openstates.org/person/dawn-driscoll-7kMI8KKMvQKSkO6zUC73TO/"
+  },
+  {
+    "id": "ocd-person/1e11235a-f4c8-4124-9f3a-3bb7a219636d",
+    "name": "Dennis Guth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ia/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Dennis",
+    "family_name": "Guth",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10726",
+    "email": "dennis.guth@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer"
+    },
+    "created_at": "2023-01-19T02:26:54.599314+00:00",
+    "updated_at": "2026-01-31T00:31:56.591055+00:00",
+    "openstates_url": "https://openstates.org/person/dennis-guth-ujbJsdc4wV8z1CT2aKTgj/"
+  },
+  {
+    "id": "ocd-person/a38725e7-bec0-4a5d-bc71-d039bcb8ec04",
+    "name": "Doug Campbell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ia/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Campbell",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37463",
+    "email": "doug.campbell@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1954-10-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:30:07.607354+00:00",
+    "updated_at": "2026-01-31T00:31:52.781151+00:00",
+    "openstates_url": "https://openstates.org/person/doug-campbell-4yZVkestf1l51yfbsCteDs/"
+  },
+  {
+    "id": "ocd-person/d3b3bc8e-ab0c-4ee2-ba3d-de78040274af",
+    "name": "Herman Quirmbach",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ia/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Herman",
+    "family_name": "Quirmbach",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=161",
+    "email": "herman.quirmbach@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1950-10-06",
+    "death_date": "",
+    "extras": {
+      "occupation": "Associate Professor of Economics, retired - ISU"
+    },
+    "created_at": "2023-01-19T02:29:45.316331+00:00",
+    "updated_at": "2026-01-31T00:32:17.711929+00:00",
+    "openstates_url": "https://openstates.org/person/herman-quirmbach-6RTWI3tY1Jmpa9yJ9qGxMF/"
+  },
+  {
+    "id": "ocd-person/0af01ef4-f982-4239-9ffc-56d33cee3b7b",
+    "name": "Izaah Knox",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ia/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Izaah",
+    "family_name": "Knox",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=34010",
+    "email": "izaah.knox@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1977-01-09",
+    "death_date": "",
+    "extras": {
+      "occupation": "Executive Director, Urban Dreams"
+    },
+    "created_at": "2023-01-19T02:31:25.844662+00:00",
+    "updated_at": "2026-01-31T00:32:14.712645+00:00",
+    "openstates_url": "https://openstates.org/person/izaah-knox-KdeqZuIR3NyOt99E5hzpr/"
+  },
+  {
+    "id": "ocd-person/9da58039-06dd-451e-835c-c406a493a21c",
+    "name": "Jack Whitver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ia/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Whitver",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=9768",
+    "email": "jack.whitver@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1980-09-04",
+    "death_date": "",
+    "extras": {
+      "occupation": "Business Owner/Attorney"
+    },
+    "created_at": "2018-10-18T14:42:17.311797+00:00",
+    "updated_at": "2026-01-31T00:31:47.227555+00:00",
+    "openstates_url": "https://openstates.org/person/jack-whitver-4nTQcmzqXnNfDxp5MRwuce/"
+  },
+  {
+    "id": "ocd-person/3089e8af-0071-4298-822c-2d16ac01fe9f",
+    "name": "Janet Petersen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ia/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Janet",
+    "family_name": "Petersen",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=72&pType=3",
+    "email": "janet.petersen@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "1970-08-01",
+    "death_date": "",
+    "extras": {
+      "occupation": "Marketing Communications"
+    },
+    "created_at": "2018-10-18T14:42:05.837238+00:00",
+    "updated_at": "2026-01-31T00:31:51.500487+00:00",
+    "openstates_url": "https://openstates.org/person/janet-petersen-1TaegcIKfDSL7IHuES5kVD/"
+  },
+  {
+    "id": "ocd-person/1c841d58-bdbe-4021-9126-055184cecdd5",
+    "name": "Janice Weiner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:ia/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Janice",
+    "family_name": "Weiner",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=34011",
+    "email": "janice.weiner@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "U.S. Foreign Service Officer, Retired"
+    },
+    "created_at": "2023-01-19T02:30:33.768175+00:00",
+    "updated_at": "2026-01-31T00:31:32.847902+00:00",
+    "openstates_url": "https://openstates.org/person/janice-weiner-roA1cfWmS1QJco0OTYyPN/"
+  },
+  {
+    "id": "ocd-person/32126238-17ce-4338-923a-3867b6517039",
+    "name": "Jason Schultz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ia/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Schultz",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=6588",
+    "email": "jason.schultz@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1972-11-27",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer"
+    },
+    "created_at": "2018-10-18T14:42:06.210595+00:00",
+    "updated_at": "2026-01-31T00:31:35.909668+00:00",
+    "openstates_url": "https://openstates.org/person/jason-schultz-1WU164cFeJDLwvNzfwtcjp/"
+  },
+  {
+    "id": "ocd-person/54f49ddd-7a13-4639-87de-7db8760ed5c5",
+    "name": "Jeff Reichman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:ia/sldu:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Reichman",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30549",
+    "email": "jeff.reichman@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1966-11-28",
+    "death_date": "",
+    "extras": {
+      "business address": "1007 E Grand Ave, Des Moines, IA 50319"
+    },
+    "created_at": "2021-01-12T00:07:49.381374+00:00",
+    "updated_at": "2026-01-31T00:32:27.380881+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-reichman-2aJ91ex9qVovQ8nZZ2QoeT/"
+  },
+  {
+    "id": "ocd-person/cc1cff7e-82d6-4947-a906-f467b4017285",
+    "name": "Jeff Taylor",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ia/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Taylor",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30544",
+    "email": "jeff.taylor@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1961-01-30",
+    "death_date": "",
+    "extras": {
+      "occupation": "Professor of Political Science"
+    },
+    "created_at": "2021-01-12T00:07:44.641892+00:00",
+    "updated_at": "2026-01-31T00:32:29.074270+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-taylor-6D9gaD391TUUflpblik8HN/"
+  },
+  {
+    "id": "ocd-person/c6cbc677-2d42-4497-ae57-989a30aaddae",
+    "name": "Jesse Green",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ia/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Jesse",
+    "family_name": "Green",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30546",
+    "email": "jesse.green@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farming"
+    },
+    "created_at": "2021-01-12T00:07:44.085460+00:00",
+    "updated_at": "2026-01-31T00:32:29.936271+00:00",
+    "openstates_url": "https://openstates.org/person/jesse-green-637babDwj2CKRjEtBBopgs/"
+  },
+  {
+    "id": "ocd-person/67f25420-8ea1-49d1-aa86-488136b5f9f5",
+    "name": "Julian Garrett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ia/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Julian",
+    "family_name": "Garrett",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=9404",
+    "email": "julian.garrett@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1940-11-07",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer"
+    },
+    "created_at": "2018-10-18T14:41:52.495370+00:00",
+    "updated_at": "2026-01-31T00:31:33.269648+00:00",
+    "openstates_url": "https://openstates.org/person/julian-garrett-3A8x9pGGYb1l6WsLoclNyf/"
+  },
+  {
+    "id": "ocd-person/ef7b8c3c-3cd0-4f95-8b4f-9e4daa061479",
+    "name": "Kara Warme",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ia/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Kara",
+    "family_name": "Warme",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37462",
+    "email": "kara.warme@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:30:22.491439+00:00",
+    "updated_at": "2026-01-31T00:31:28.806019+00:00",
+    "openstates_url": "https://openstates.org/person/kara-warme-7HtcugScAz0N7h3xwq8gmn/"
+  },
+  {
+    "id": "ocd-person/1cfc824d-740a-4e35-a4e2-3728e2d43056",
+    "name": "Ken Rozenboom",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ia/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Rozenboom",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10731",
+    "email": "ken.rozenboom@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farming/Ag Business"
+    },
+    "created_at": "2018-10-18T14:42:13.243561+00:00",
+    "updated_at": "2026-01-31T00:32:15.570544+00:00",
+    "openstates_url": "https://openstates.org/person/ken-rozenboom-shBHwnsewdZGUAecUHPgk/"
+  },
+  {
+    "id": "ocd-person/2ff1622d-f1f4-4344-8821-57bcf8d99b83",
+    "name": "Kerry Gruenhagen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:ia/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Kerry",
+    "family_name": "Gruenhagen",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=34009",
+    "email": "kerry.gruenhagen@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "business address": "1007 E Grand Ave, Des Moines, IA 50319"
+    },
+    "created_at": "2023-01-19T02:30:46.782182+00:00",
+    "updated_at": "2026-01-31T00:32:28.660753+00:00",
+    "openstates_url": "https://openstates.org/person/kerry-gruenhagen-1SSx1GWcP3YLZ338BMQkwF/"
+  },
+  {
+    "id": "ocd-person/abad9c61-6eb9-484a-bf07-94cb9040a639",
+    "name": "Kevin Alons",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ia/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Alons",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=33999",
+    "email": "kevin.alons@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "business address": "1007 E Grand Ave, Des Moines, IA 50319"
+    },
+    "created_at": "2023-01-19T02:26:50.236153+00:00",
+    "updated_at": "2026-01-31T00:31:53.621149+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-alons-5Dx1kmkIi5ilqLVXUSIHeL/"
+  },
+  {
+    "id": "ocd-person/a5bbbe7f-202c-4427-89e1-da8d2786d1dc",
+    "name": "Liz Bennett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ia/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Bennett",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=34000",
+    "email": "liz.bennett@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "1982-08-06",
+    "death_date": "",
+    "extras": {
+      "occupation": "Website Expert"
+    },
+    "created_at": "2018-10-18T14:41:57.869988+00:00",
+    "updated_at": "2026-01-31T00:31:34.990932+00:00",
+    "openstates_url": "https://openstates.org/person/liz-bennett-52jX3qUoCiYBunc5f3kkHc/"
+  },
+  {
+    "id": "ocd-person/0f7d8e8f-ab3e-4a0f-bde0-2ef776cdb27d",
+    "name": "Lynn Evans",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ia/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Lynn",
+    "family_name": "Evans",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=34008",
+    "email": "lynn.evans@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1964-05-19",
+    "death_date": "",
+    "extras": {
+      "occupation": "Educator"
+    },
+    "created_at": "2023-01-19T02:27:53.119750+00:00",
+    "updated_at": "2026-01-31T00:32:19.021068+00:00",
+    "openstates_url": "https://openstates.org/person/lynn-evans-TEGOxrewqTh8ExV4Avc9V/"
+  },
+  {
+    "id": "ocd-person/37b1879c-5435-4c28-bb62-fa71fbabbbdb",
+    "name": "Mark Costello",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ia/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Costello",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10749",
+    "email": "mark.costello@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1961-10-24",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer"
+    },
+    "created_at": "2018-10-18T14:41:51.165542+00:00",
+    "updated_at": "2026-01-31T00:31:30.383973+00:00",
+    "openstates_url": "https://openstates.org/person/mark-costello-1h5hyXOMKi5P3rbDPS3JU3/"
+  },
+  {
+    "id": "ocd-person/b1110000-b6c3-4348-8655-8a7b51c8a9db",
+    "name": "Mark Lofgren",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:ia/sldu:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Lofgren",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=9406",
+    "email": "mark.lofgren@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1961-06-26",
+    "death_date": "",
+    "extras": {
+      "occupation": "Real Estate Sales Associate"
+    },
+    "created_at": "2018-10-18T14:42:12.766393+00:00",
+    "updated_at": "2026-01-31T00:32:06.709005+00:00",
+    "openstates_url": "https://openstates.org/person/mark-lofgren-5O7PTVli5cG5IAfcXtqsgd/"
+  },
+  {
+    "id": "ocd-person/4bb97641-21a7-4aaa-b4d8-7f0dfcacd3a0",
+    "name": "Matt Blake",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ia/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Blake",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37460",
+    "email": "matt.blake@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:30:13.412029+00:00",
+    "updated_at": "2026-01-31T00:31:54.457975+00:00",
+    "openstates_url": "https://openstates.org/person/matt-blake-2ItBDEpvktARJuNPHVSfHk/"
+  },
+  {
+    "id": "ocd-person/37784f85-492c-422c-93a3-9910867f68f9",
+    "name": "Mike Bousselot",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ia/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Bousselot",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=32076&pType=3",
+    "email": "mike.bousselot@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1982-11-02",
+    "death_date": "",
+    "extras": {
+      "business address": "1007 E Grand Ave, Des Moines, IA 50319"
+    },
+    "created_at": "2021-12-16T18:46:41.584458+00:00",
+    "updated_at": "2026-06-04T06:34:10.211679+00:00",
+    "openstates_url": "https://openstates.org/person/mike-bousselot-1gfYj0Fm2Kgps0bqCBLg9R/"
+  },
+  {
+    "id": "ocd-person/cad5e110-d7b3-45b3-b7c3-9e8232e2dbc7",
+    "name": "Mike Klimesh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ia/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Klimesh",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30547",
+    "email": "mike.klimesh@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Management/Small Business Owner"
+    },
+    "created_at": "2021-01-12T00:07:45.500549+00:00",
+    "updated_at": "2026-01-31T00:31:32.403834+00:00",
+    "openstates_url": "https://openstates.org/person/mike-klimesh-6AkByHdTSqIzY9icO4efF1/"
+  },
+  {
+    "id": "ocd-person/fdb8c40c-9f1e-4799-bc5f-0249d21f3811",
+    "name": "Mike Pike",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ia/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Pike",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37458",
+    "email": "mike.pike@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:30:23.645988+00:00",
+    "updated_at": "2026-01-31T00:32:04.264724+00:00",
+    "openstates_url": "https://openstates.org/person/mike-pike-7ilUoFFtOd0SGCdio7zNnF/"
+  },
+  {
+    "id": "ocd-person/93034bcb-c3fa-4427-8a1a-d48b8485a8eb",
+    "name": "Mike Zimmer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ia/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Zimmer",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37960",
+    "email": "mike.zimmer@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-03-29T00:34:04.834764+00:00",
+    "updated_at": "2026-01-31T00:31:45.932493+00:00",
+    "openstates_url": "https://openstates.org/person/mike-zimmer-4TPNSUHTak5UWLceSlXZOd/"
+  },
+  {
+    "id": "ocd-person/d675a03b-f474-4e1c-b48a-b78b399488c4",
+    "name": "Molly Donahue",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ia/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Molly",
+    "family_name": "Donahue",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=27031",
+    "email": "molly.donahue@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Public School Educator"
+    },
+    "created_at": "2019-01-13T06:06:28.057045+00:00",
+    "updated_at": "2026-01-31T00:31:46.360841+00:00",
+    "openstates_url": "https://openstates.org/person/molly-donahue-6Wg711DMKL4XDgOBmaeQJ2/"
+  },
+  {
+    "id": "ocd-person/6d119d13-56ee-4aef-a7b0-602efef0b995",
+    "name": "Renee Hardman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ia/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Renee",
+    "family_name": "Hardman",
+    "image": "https://media.tegna-media.com/assets/WOI/images/eb691334-5dc7-4bc6-9b19-2d2533483f86/eb691334-5dc7-4bc6-9b19-2d2533483f86_1920x1080.jpg",
+    "email": "renee.hardman@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-31T00:32:05.506226+00:00",
+    "updated_at": "2026-01-31T00:32:06.204936+00:00",
+    "openstates_url": "https://openstates.org/person/renee-hardman-3JoDD2AnfdlDofAmGeWed3/"
+  },
+  {
+    "id": "ocd-person/b51c0843-c860-4568-a3a7-3d004a377fd4",
+    "name": "Sandy Salmon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ia/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Sandy",
+    "family_name": "Salmon",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=10754",
+    "email": "sandy.salmon@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "1955-10-23",
+    "death_date": "",
+    "extras": {
+      "business address": "1007 E Grand Ave, Des Moines, IA 50319"
+    },
+    "created_at": "2018-10-18T14:42:13.487878+00:00",
+    "updated_at": "2026-01-31T00:31:56.145959+00:00",
+    "openstates_url": "https://openstates.org/person/sandy-salmon-5VkQA4IBN7FQIx17NbM6a4/"
+  },
+  {
+    "id": "ocd-person/ce66871e-57e7-471d-b231-d772dd41eb63",
+    "name": "Sarah Garriott",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ia/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Sarah",
+    "family_name": "Garriott",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=30551",
+    "email": "sarah.trone.garriott@legis.iowa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Minister"
+    },
+    "created_at": "2021-01-12T00:07:43.745458+00:00",
+    "updated_at": "2026-01-31T00:31:45.470780+00:00",
+    "openstates_url": "https://openstates.org/person/sarah-garriott-6HTH1wCROZXukzuxnkaINf/"
+  },
+  {
+    "id": "ocd-person/5d6f21b7-11a6-4f5e-8661-abc9345f3623",
+    "name": "Scott Webster",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:ia/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Webster",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=13574",
+    "email": "scott.webster@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Homebuilder"
+    },
+    "created_at": "2023-01-19T02:30:32.044780+00:00",
+    "updated_at": "2026-01-31T00:31:51.920388+00:00",
+    "openstates_url": "https://openstates.org/person/scott-webster-2qJ4ZRw9WvWpoqDia3ALat/"
+  },
+  {
+    "id": "ocd-person/293487d6-a28b-48a2-8cfc-c3daabb8abbe",
+    "name": "Tim Kraayenbrink",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ia/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Kraayenbrink",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=14812",
+    "email": "tim.kraayenbrink@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Investment Advisor"
+    },
+    "created_at": "2018-10-18T14:42:00.755866+00:00",
+    "updated_at": "2026-01-31T00:32:12.149738+00:00",
+    "openstates_url": "https://openstates.org/person/tim-kraayenbrink-1FkgtuxIbUk0zmHNN6is6I/"
+  },
+  {
+    "id": "ocd-person/d1167ce2-5a24-4eb8-bce8-3800ea24a4d0",
+    "name": "Tom Shipley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ia/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Shipley",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=14814",
+    "email": "tom.shipley@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer/Legislator"
+    },
+    "created_at": "2018-10-18T14:42:11.758843+00:00",
+    "updated_at": "2026-01-31T00:31:31.961715+00:00",
+    "openstates_url": "https://openstates.org/person/tom-shipley-6MXfkBqPvuGVzNPPhgxe4G/"
+  },
+  {
+    "id": "ocd-person/ba2c7b09-df43-4428-b268-1f5a4995282e",
+    "name": "Tom Townsend",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ia/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Townsend",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=37465",
+    "email": "thomas.townsend@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:30:18.444178+00:00",
+    "updated_at": "2026-01-31T00:31:49.340270+00:00",
+    "openstates_url": "https://openstates.org/person/tom-townsend-5fItpaz9gAdIJBTCc5gFLS/"
+  },
+  {
+    "id": "ocd-person/be302cfd-09b1-4a29-974d-479aa24469eb",
+    "name": "Tony Bisignano",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ia/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Bisignano",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=906",
+    "email": "tony.bisignano@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1952-05-14",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired"
+    },
+    "created_at": "2018-10-18T14:42:18.494550+00:00",
+    "updated_at": "2026-01-31T00:31:59.104221+00:00",
+    "openstates_url": "https://openstates.org/person/tony-bisignano-5msYcsHEJnyu8IuaxUdhjH/"
+  },
+  {
+    "id": "ocd-person/ab4528a8-eeca-4562-8475-967ce868eb68",
+    "name": "Zach Wahls",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:ia/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ia/government",
+      "name": "Iowa",
+      "classification": "state"
+    },
+    "given_name": "Zach",
+    "family_name": "Wahls",
+    "image": "https://www.legis.iowa.gov/photo?action=getPhoto&ga=91&pid=27002",
+    "email": "zach.wahls@legis.iowa.gov",
+    "gender": "Male",
+    "birth_date": "1991-07-15",
+    "death_date": "",
+    "extras": {
+      "occupation": "Small Business Owner/Credit Union Executive"
+    },
+    "created_at": "2019-01-13T06:06:18.641553+00:00",
+    "updated_at": "2026-01-31T00:31:55.287021+00:00",
+    "openstates_url": "https://openstates.org/person/zach-wahls-5DBICY4snuia4QbGwlV6PA/"
+  }
+]

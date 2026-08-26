@@ -1,0 +1,1183 @@
+[
+  {
+    "id": "ocd-person/7836916c-08a2-430a-99eb-580f7cf50e81",
+    "name": "Bob Duff",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ct/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Duff",
+    "image": "http://www.senatedems.ct.gov/templates/duff/images/duff-headshot.jpg",
+    "email": "duff@senatedems.ct.gov",
+    "gender": "Male",
+    "birth_date": "1971-05-08",
+    "death_date": "",
+    "extras": {
+      "title": "Senate Majority Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Executive and Legislative Nominations (Chair); Legislative Management (Vice Chair)",
+      "committee codes": ";EXN;LM;"
+    },
+    "created_at": "2018-10-18T14:37:16.717493+00:00",
+    "updated_at": "2025-02-04T00:27:54.746124+00:00",
+    "openstates_url": "https://openstates.org/person/bob-duff-3eq12zubJY6Ndtz1qqcKvJ/"
+  },
+  {
+    "id": "ocd-person/aec1fe1b-02ac-4802-be69-8714ec0b848e",
+    "name": "Cathy Osten",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ct/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Cathy",
+    "family_name": "Osten",
+    "image": "http://www.senatedems.ct.gov/templates/osten/images/osten1x1.jpg",
+    "email": "osten@senatedems.ct.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Female",
+      "prison": "0",
+      "committees": "Appropriations (Chair); Public Safety and Security (Vice Chair); General Law; Legislative Management; Regulation Review; Transportation; Veterans' and Military Affairs",
+      "business phone": "860-240-0579",
+      "committee codes": ";APP;GL;LM;PS;RR;TRA;VA;"
+    },
+    "created_at": "2018-10-18T14:37:15.758895+00:00",
+    "updated_at": "2025-02-04T00:28:14.326933+00:00",
+    "openstates_url": "https://openstates.org/person/cathy-osten-5JlJpA7QTKRx0KSPnjOYO6/"
+  },
+  {
+    "id": "ocd-person/5310d199-fa92-40aa-8d0b-efad6d3027b2",
+    "name": "Ceci Maher",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ct/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Ceci",
+    "family_name": "Maher",
+    "image": "",
+    "email": "ceci.maher@cga.ct.gov",
+    "gender": "Female",
+    "birth_date": "1953-11-19",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Female",
+      "prison": "0",
+      "committees": "Committee on Children (Chair); Higher Education and Employment Advancement (Vice Chair); Energy and Technology; Human Services; Internship; Judiciary",
+      "committee codes": ";ET;HED;HS;ISC;JUD;KID;"
+    },
+    "created_at": "2023-01-10T23:46:32.370346+00:00",
+    "updated_at": "2025-07-17T06:19:45.303575+00:00",
+    "openstates_url": "https://openstates.org/person/ceci-maher-2Wk33dNY1K6bVGCYw5nJUQ/"
+  },
+  {
+    "id": "ocd-person/5e2acad1-d976-4a7d-997b-52b5b400a654",
+    "name": "Christine Cohen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ct/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Christine",
+    "family_name": "Cohen",
+    "image": "http://www.senatedems.ct.gov/templates/Cohen/images/Cohen-hi.jpg",
+    "email": "christine.cohen@cga.ct.gov",
+    "gender": "Female",
+    "birth_date": "1976-01-25",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Female",
+      "prison": "0",
+      "committees": "Transportation (Chair); Banking (Vice Chair); Finance, Revenue and Bonding; General Law; Committee on Children",
+      "committee codes": ";BA;FIN;GL;KID;TRA;"
+    },
+    "created_at": "2019-01-24T06:04:25.239927+00:00",
+    "updated_at": "2026-04-04T00:19:09.844317+00:00",
+    "openstates_url": "https://openstates.org/person/christine-cohen-2rgplBdG38LDGSfgQ781I4/"
+  },
+  {
+    "id": "ocd-person/a33a2113-e60b-4000-9dc7-eb58a775d986",
+    "name": "Derek Slap",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ct/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Derek",
+    "family_name": "Slap",
+    "image": "http://www.senatedems.ct.gov/templates/slap/images/slap-hi.jpg",
+    "email": "derek.slap@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Majority Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Higher Education and Employment Advancement (Chair); Government Administration and Elections (Vice Chair); Aging; Appropriations; Public Health",
+      "committee codes": ";AGE;APP;GAE;HED;PH;"
+    },
+    "created_at": "2018-10-18T14:37:07.662690+00:00",
+    "updated_at": "2025-02-04T00:25:16.148270+00:00",
+    "openstates_url": "https://openstates.org/person/derek-slap-4y0JUdYxvhVL5aMq6Y0hAE/"
+  },
+  {
+    "id": "ocd-person/83a4e876-4df7-48ef-8a84-7d7940585af9",
+    "name": "Doug McCrory",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ct/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "McCrory",
+    "image": "http://www.senatedems.ct.gov/templates/mccrory/images/mccrory-hi.jpg",
+    "email": "douglas.mccrory@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Education (Chair); Energy and Technology (Vice Chair); Appropriations; Government Administration and Elections; Internship",
+      "committee codes": ";APP;ED;ET;GAE;ISC;"
+    },
+    "created_at": "2018-10-18T14:36:44.454101+00:00",
+    "updated_at": "2025-02-04T00:27:08.650088+00:00",
+    "openstates_url": "https://openstates.org/person/doug-mccrory-40PMCFsr1Ev0jngUJ40Y4P/"
+  },
+  {
+    "id": "ocd-person/58a9b2fa-cd93-420c-a9bc-6326a75a218a",
+    "name": "Eric Berthel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ct/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Berthel",
+    "image": "https://ctsenaterepublicans.com/wp-content/uploads/2019/01/Berthel2019forWeb.jpg",
+    "email": "eric.berthel@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "1967-03-28",
+    "death_date": "",
+    "extras": {
+      "title": "Chief Deputy Senate Republican Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Internship (Chair); Appropriations (Ranking Member); Banking (Ranking Member); Education (Ranking Member)",
+      "committee codes": ";APP;BA;ED;ISC;"
+    },
+    "created_at": "2018-10-18T14:36:36.676512+00:00",
+    "updated_at": "2026-04-18T00:19:26.705741+00:00",
+    "openstates_url": "https://openstates.org/person/eric-berthel-2hIsP6Pssi4a40tWIP4IEk/"
+  },
+  {
+    "id": "ocd-person/102845da-9b93-400d-b58a-fa3e7df1806e",
+    "name": "Gary Winfield",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ct/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Winfield",
+    "image": "http://www.senatedems.ct.gov/templates/winfield/images/winfield-hi.jpg",
+    "email": "winfield@senatedems.ct.gov",
+    "gender": "Male",
+    "birth_date": "1974-03-11",
+    "death_date": "",
+    "extras": {
+      "title": "Chief Deputy Majority Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Judiciary (Chair); Education (Vice Chair); Appropriations; Legislative Management; Veterans' and Military Affairs",
+      "committee codes": ";APP;ED;JUD;LM;VA;"
+    },
+    "created_at": "2018-10-18T14:37:02.623984+00:00",
+    "updated_at": "2026-04-25T00:20:16.022161+00:00",
+    "openstates_url": "https://openstates.org/person/gary-winfield-UUHTwXjMHVpGMuszocGI2/"
+  },
+  {
+    "id": "ocd-person/a648c360-3b9e-408d-ba2a-c171edada365",
+    "name": "Heather Somers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ct/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Heather",
+    "family_name": "Somers",
+    "image": "https://ctsenaterepublicans.com/wp-content/uploads/2020/12/HeatherHeadshot-e1608139012865.jpg",
+    "email": "heather.somers@cga.ct.gov",
+    "gender": "Female",
+    "birth_date": "1966-04-22",
+    "death_date": "",
+    "extras": {
+      "title": "Chief Deputy Senate Republican Leader",
+      "gender": "Female",
+      "prison": "0",
+      "committees": "Public Health (Ranking Member); Appropriations; Commerce; Executive and Legislative Nominations",
+      "committee codes": ";APP;CE;EXN;PH;"
+    },
+    "created_at": "2018-10-18T14:36:47.300093+00:00",
+    "updated_at": "2025-07-17T06:19:25.333842+00:00",
+    "openstates_url": "https://openstates.org/person/heather-somers-53lyhqgMS5Byl673F5tdS9/"
+  },
+  {
+    "id": "ocd-person/ca8be710-988a-4415-bc37-6d3a92d1afcd",
+    "name": "Henri Martin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ct/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Henri",
+    "family_name": "Martin",
+    "image": "https://cga.ct.gov/legpics/S31.png?ver=",
+    "email": "henri.martin@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Chief Deputy Senate Republican Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Commerce (Ranking Member); Finance, Revenue and Bonding (Ranking Member); Executive and Legislative Nominations; Transportation",
+      "business phone": "860-589-0101",
+      "committee codes": ";CE;EXN;FIN;TRA;"
+    },
+    "created_at": "2018-10-18T14:36:52.800492+00:00",
+    "updated_at": "2025-07-17T06:19:55.570423+00:00",
+    "openstates_url": "https://openstates.org/person/henri-martin-6ACNuh7PAUp1UrGoqvb7gT/"
+  },
+  {
+    "id": "ocd-person/3be9e2dc-7ffa-40fb-90c8-d25fe4970dee",
+    "name": "Herron Gaston",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ct/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Herron",
+    "family_name": "Gaston",
+    "image": "",
+    "email": "herron.gaston@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Majority Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Public Safety and Security (Chair); Human Services (Vice Chair); Environment; Judiciary; Transportation",
+      "committee codes": ";ENV;HS;JUD;PS;TRA;"
+    },
+    "created_at": "2023-01-10T23:46:58.443474+00:00",
+    "updated_at": "2025-02-04T00:27:32.103577+00:00",
+    "openstates_url": "https://openstates.org/person/herron-gaston-1p3QsenCrLDCGMN3mvHviQ/"
+  },
+  {
+    "id": "ocd-person/f37ce303-e106-4972-b453-4287b7915762",
+    "name": "James Maroney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ct/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Maroney",
+    "image": "http://www.senatedems.ct.gov/templates/Maroney/images/Maroney-hi.jpg",
+    "email": "maroney@senatedems.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Majority Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "General Law (Chair); Veterans' and Military Affairs (Vice Chair); Regulation Review (Ranking Member); Education; Energy and Technology; Finance, Revenue and Bonding; Higher Education and Employment Advancement",
+      "committee codes": ";ED;ET;FIN;GL;HED;RR;VA;"
+    },
+    "created_at": "2019-01-24T06:04:24.273095+00:00",
+    "updated_at": "2025-02-04T00:25:40.552928+00:00",
+    "openstates_url": "https://openstates.org/person/james-maroney-7PSCwuiACLP97Zr6gwvrGM/"
+  },
+  {
+    "id": "ocd-person/e823b348-fd0f-410b-b3c1-62fe7a2982f6",
+    "name": "Jan Hochadel",
+    "party": "Democratic/Working Families",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ct/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Jan",
+    "family_name": "Hochadel",
+    "image": "",
+    "email": "jan.hochadel@cga.ct.gov",
+    "gender": "Female",
+    "birth_date": "1964-01-21",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Majority Leader",
+      "gender": "Female",
+      "prison": "0",
+      "committees": "Aging (Chair); Environment (Vice Chair); Banking; Commerce; Housing; Planning and Development",
+      "committee codes": ";AGE;BA;CE;ENV;HSG;PD;"
+    },
+    "created_at": "2023-01-10T23:46:50.781874+00:00",
+    "updated_at": "2025-02-21T15:46:53.887766+00:00",
+    "openstates_url": "https://openstates.org/person/jan-hochadel-742XANZidMa1VhbBk6bX78/"
+  },
+  {
+    "id": "ocd-person/78bb88a9-cde1-4691-aa7a-e423ee16a147",
+    "name": "Jason Perillo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ct/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Perillo",
+    "image": "https://www.cga.ct.gov/legpics/113.png?ver=",
+    "email": "jason.perillo@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "1977-08-20",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy House Republican Leader At-Large",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Executive and Legislative Nominations; Finance, Revenue and Bonding; Legislative Management; Public Health",
+      "committee codes": ";EXN;FIN;LM;PH;"
+    },
+    "created_at": "2018-10-18T14:36:54.861437+00:00",
+    "updated_at": "2025-07-17T06:19:46.748130+00:00",
+    "openstates_url": "https://openstates.org/person/jason-perillo-3fomVi8kGIZiWDz7jJj53H/"
+  },
+  {
+    "id": "ocd-person/1a60b520-6887-4830-b33e-78520b7b53aa",
+    "name": "Jeff Gordon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ct/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Gordon",
+    "image": "",
+    "email": "jeffrey.gordon@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Senate Deputy Republican Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Veterans' and Military Affairs (Ranking Member); Appropriations; Public Health; Public Safety and Security",
+      "committee codes": ";APP;PH;PS;VA;"
+    },
+    "created_at": "2023-01-10T23:47:49.637444+00:00",
+    "updated_at": "2025-02-21T15:46:51.300349+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-gordon-nlzkUDMLGX7zPe7ejHEYk/"
+  },
+  {
+    "id": "ocd-person/2c22d680-9e92-423b-a943-20571186c91a",
+    "name": "Joan Hartley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ct/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Joan",
+    "family_name": "Hartley",
+    "image": "http://www.senatedems.ct.gov/templates/hartley/images/hartley-hi.jpg",
+    "email": "hartley@senatedems.ct.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Chief Deputy President Pro Tempore",
+      "gender": "Female",
+      "prison": "0",
+      "committees": "Commerce (Chair); Appropriations (Vice Chair); Executive and Legislative Nominations; Legislative Management; Regulation Review",
+      "business phone": "203-757-6267",
+      "committee codes": ";APP;CE;EXN;LM;RR;"
+    },
+    "created_at": "2018-10-18T14:36:37.528280+00:00",
+    "updated_at": "2025-02-04T00:25:09.918526+00:00",
+    "openstates_url": "https://openstates.org/person/joan-hartley-1LHaAPAnmLPHTeocl3F4Vm/"
+  },
+  {
+    "id": "ocd-person/749be8b3-0b40-41ec-8670-7dfbfbc90b6e",
+    "name": "John Fonfara",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ct/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Fonfara",
+    "image": "http://www.senatedems.ct.gov/templates/fonfara/images/fonfara-hi.jpg",
+    "email": "fonfara@senatedems.ct.gov",
+    "gender": "Male",
+    "birth_date": "1955-12-01",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Finance, Revenue and Bonding (Chair); General Law (Vice Chair); Executive and Legislative Nominations; Housing; Legislative Management; Public Safety and Security",
+      "committee codes": ";EXN;FIN;GL;HSG;LM;PS;"
+    },
+    "created_at": "2018-10-18T14:37:01.038517+00:00",
+    "updated_at": "2025-02-04T00:28:08.108121+00:00",
+    "openstates_url": "https://openstates.org/person/john-fonfara-3Y2MLtQvvju5yAhUahrNR0/"
+  },
+  {
+    "id": "ocd-person/da65a738-37c7-41c1-8cd4-abae65ef0167",
+    "name": "John Kissel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ct/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Kissel",
+    "image": "https://cga.ct.gov/legpics/S07.png?ver=",
+    "email": "john.a.kissel@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Chief Deputy Senate Republican Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Regulation Review (Chair); Judiciary (Ranking Member); General Law",
+      "committee codes": ";GL;JUD;RR;"
+    },
+    "created_at": "2018-10-18T14:36:31.346215+00:00",
+    "updated_at": "2025-07-17T06:19:59.875969+00:00",
+    "openstates_url": "https://openstates.org/person/john-kissel-6e6mXZCOJ6fdzuj0HOeHpf/"
+  },
+  {
+    "id": "ocd-person/bb280880-afa9-43f3-91bf-b05af25b023d",
+    "name": "Jorge Cabrera",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ct/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Jorge",
+    "family_name": "Cabrera",
+    "image": "http://www.senatedems.ct.gov/templates/cabrera/images/cabrera-hi.png",
+    "email": "jorge.cabrera@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Insurance and Real Estate (Chair); Labor and Public Employees (Vice Chair); Energy and Technology; Finance, Revenue and Bonding; Public Health; Transportation",
+      "business phone": "203-726-0768",
+      "committee codes": ";ET;FIN;INS;LAB;PH;TRA;"
+    },
+    "created_at": "2021-01-08T00:03:57.613457+00:00",
+    "updated_at": "2025-02-04T00:25:04.938235+00:00",
+    "openstates_url": "https://openstates.org/person/jorge-cabrera-5h9rLHkcZhmWEn5Zuf1kuj/"
+  },
+  {
+    "id": "ocd-person/34ca88f1-c2bc-430e-9f7c-93e8f3563e33",
+    "name": "Julie Kushner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ct/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Kushner",
+    "image": "http://www.senatedems.ct.gov/templates/Kushner/images/Kushner-hi.jpg",
+    "email": "julie.kushner@cga.ct.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Female",
+      "prison": "0",
+      "committees": "Labor and Public Employees (Chair); Committee on Children (Vice Chair); Public Health (Vice Chair); Appropriations; Education; Executive and Legislative Nominations",
+      "committee codes": ";APP;ED;EXN;KID;LAB;PH;"
+    },
+    "created_at": "2019-01-24T06:04:24.868792+00:00",
+    "updated_at": "2025-02-04T00:25:57.978522+00:00",
+    "openstates_url": "https://openstates.org/person/julie-kushner-1bc9tzv4FvQJFCzvXDzOx1/"
+  },
+  {
+    "id": "ocd-person/277414ca-35b8-41dd-ae2e-e99fe9ecdb9b",
+    "name": "M.D. Rahman",
+    "party": "Democratic/Working Families",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ct/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "M.D.",
+    "family_name": "Rahman",
+    "image": "",
+    "email": "md.rahman@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Planning and Development (Chair); Commerce (Vice Chair); Aging; Finance, Revenue and Bonding; Public Health; Public Safety and Security",
+      "committee codes": ";AGE;CE;FIN;PD;PH;PS;"
+    },
+    "created_at": "2023-01-10T23:46:19.627222+00:00",
+    "updated_at": "2025-07-17T06:19:19.437388+00:00",
+    "openstates_url": "https://openstates.org/person/m-d-rahman-1CRkV3Jwv69wGLmXfCmFSt/"
+  },
+  {
+    "id": "ocd-person/77713b68-e8ef-455e-80a6-1614488fb71a",
+    "name": "Mae Flexer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ct/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Mae",
+    "family_name": "Flexer",
+    "image": "http://www.senatedems.ct.gov/templates/flexer/images/flexer-hi.jpg",
+    "email": "flexer@senatedems.ct.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Senate President Pro Tempore & Federal Relations Liaison",
+      "gender": "Female",
+      "prison": "0",
+      "committees": "Government Administration and Elections (Chair); Judiciary (Vice Chair); Appropriations; Education; Higher Education and Employment Advancement; Veterans' and Military Affairs",
+      "committee codes": ";APP;ED;GAE;HED;JUD;VA;"
+    },
+    "created_at": "2018-10-18T14:37:13.297217+00:00",
+    "updated_at": "2025-02-21T15:46:45.189879+00:00",
+    "openstates_url": "https://openstates.org/person/mae-flexer-3dNpiKCcpGQA1Npd3eK4Hi/"
+  },
+  {
+    "id": "ocd-person/e171a437-11bc-4200-ae58-f6f8c4971f39",
+    "name": "Martha Marx",
+    "party": "Democratic/Working Families",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ct/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Martha",
+    "family_name": "Marx",
+    "image": "",
+    "email": "martha.marx@cga.ct.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Majority Leader",
+      "gender": "Female",
+      "prison": "0",
+      "committees": "Veterans' and Military Affairs (Chair); Public Health (Vice Chair); Aging; Appropriations; Government Administration and Elections; Insurance and Real Estate",
+      "committee codes": ";AGE;APP;GAE;INS;PH;VA;"
+    },
+    "created_at": "2023-01-10T23:45:10.500394+00:00",
+    "updated_at": "2025-02-04T00:28:00.956641+00:00",
+    "openstates_url": "https://openstates.org/person/martha-marx-6rPCt2TYicXnwKGtdXbzhJ/"
+  },
+  {
+    "id": "ocd-person/2d21e401-cb76-4001-b836-e57f667f550f",
+    "name": "Martin Looney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ct/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Martin",
+    "family_name": "Looney",
+    "image": "http://www.senatedems.ct.gov/templates/looney/images/looney-hi.jpg",
+    "email": "looney@senatedems.ct.gov",
+    "gender": "Male",
+    "birth_date": "1948-07-23",
+    "death_date": "",
+    "extras": {
+      "title": "Senate President Pro Tempore",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Legislative Management (Chair); Executive and Legislative Nominations (Vice Chair)",
+      "committee codes": ";EXN;LM;"
+    },
+    "created_at": "2018-10-18T14:36:46.353771+00:00",
+    "updated_at": "2025-02-04T00:26:23.882372+00:00",
+    "openstates_url": "https://openstates.org/person/martin-looney-1NA8qrrNkJWGK8M3KTafMd/"
+  },
+  {
+    "id": "ocd-person/f55ef0f9-f0ed-48ba-80b9-23ac643626cc",
+    "name": "Matt Lesser",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ct/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Lesser",
+    "image": "http://www.senatedems.ct.gov/templates/Lesser/images/Lesser1x1.jpg",
+    "email": "matthew.lesser@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "1983-04-29",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Majority Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Human Services (Chair); Housing (Vice Chair); Appropriations; Insurance and Real Estate; Judiciary; Labor and Public Employees",
+      "committee codes": ";APP;HS;HSG;INS;JUD;LAB;"
+    },
+    "created_at": "2019-01-24T06:04:28.558299+00:00",
+    "updated_at": "2025-02-04T00:26:53.796012+00:00",
+    "openstates_url": "https://openstates.org/person/matt-lesser-7T0VWL9LKiB22PHxCJve8K/"
+  },
+  {
+    "id": "ocd-person/109295ad-521f-463a-b0af-66c9f0598a97",
+    "name": "Norm Needleman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ct/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Norm",
+    "family_name": "Needleman",
+    "image": "http://www.senatedems.ct.gov/templates/Needleman/images/Needleman-hi.jpg",
+    "email": "norm.needleman@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Energy and Technology (Chair); Planning and Development (Vice Chair); Commerce; Finance, Revenue and Bonding; Transportation",
+      "committee codes": ";CE;ET;FIN;PD;TRA;"
+    },
+    "created_at": "2019-01-24T06:04:28.839780+00:00",
+    "updated_at": "2025-02-04T00:28:18.024067+00:00",
+    "openstates_url": "https://openstates.org/person/norm-needleman-VGrjGptCOu7fc4UDdIGAh/"
+  },
+  {
+    "id": "ocd-person/fcf63a22-3979-4cbf-a719-0d414d13e1ac",
+    "name": "Pat Miller",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ct/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Pat",
+    "family_name": "Miller",
+    "image": "http://www.senatedems.ct.gov/templates/miller/images/miller-hi.jpg",
+    "email": "patricia.miller@cga.ct.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Female",
+      "prison": "0",
+      "committees": "Banking (Chair); Aging (Vice Chair); Finance, Revenue and Bonding (Vice Chair); Commerce; Education; Judiciary",
+      "committee codes": ";AGE;BA;CE;ED;FIN;JUD;"
+    },
+    "created_at": "2018-10-18T14:36:50.474163+00:00",
+    "updated_at": "2026-04-04T00:19:07.475283+00:00",
+    "openstates_url": "https://openstates.org/person/pat-miller-7hKajXddHTfNjazAHzkFXo/"
+  },
+  {
+    "id": "ocd-person/ca523a61-6db3-47c6-bf1f-8fd7638e999f",
+    "name": "Paul Cicarella",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ct/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Cicarella",
+    "image": "https://ctsenaterepublicans.com/wp-content/uploads/2020/11/Paul-Cicarella.jpg",
+    "email": "paul.cicarella@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Senate Republican Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "General Law (Ranking Member); Public Safety and Security (Ranking Member); Regulation Review; Veterans' and Military Affairs",
+      "committee codes": ";GL;PS;RR;VA;"
+    },
+    "created_at": "2021-01-08T00:04:05.195676+00:00",
+    "updated_at": "2025-02-04T00:28:03.411182+00:00",
+    "openstates_url": "https://openstates.org/person/paul-cicarella-69m1l4VUUrhYrs3xKKWKQ3/"
+  },
+  {
+    "id": "ocd-person/98ba1778-693a-41a5-9f4a-94f10d1c9fcd",
+    "name": "Paul Honig",
+    "party": "Democratic/Working Families",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ct/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Honig",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/PaulHonig.jpeg",
+    "email": "paul.honig@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T18:35:17.019558+00:00",
+    "updated_at": "2025-02-21T15:46:51.072024+00:00",
+    "openstates_url": "https://openstates.org/person/paul-honig-4eBsQPM33LH31D3TwVl4aD/"
+  },
+  {
+    "id": "ocd-person/bdc5f5a0-0285-45d2-a6fd-d29d8b31cd43",
+    "name": "Rick Lopes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ct/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Lopes",
+    "image": "http://www.senatedems.ct.gov/templates/lopes/images/lopes-hi.jpg",
+    "email": "rick.lopes@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Majority Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Environment (Chair); Transportation (Vice Chair); Finance, Revenue and Bonding; General Law; Higher Education and Employment Advancement; Planning and Development",
+      "committee codes": ";ENV;FIN;GL;HED;PD;TRA;"
+    },
+    "created_at": "2018-10-18T14:37:03.165126+00:00",
+    "updated_at": "2025-02-04T00:26:25.186308+00:00",
+    "openstates_url": "https://openstates.org/person/rick-lopes-5m615OSi3qJt5Tj5AeiaCh/"
+  },
+  {
+    "id": "ocd-person/0cdb540d-c360-4981-b7a9-2a67e2f91121",
+    "name": "Rob Sampson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ct/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Sampson",
+    "image": "https://cga.ct.gov/legpics/S16.png?ver=",
+    "email": "rob.sampson@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "1969-08-28",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Senate Republican Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Government Administration and Elections (Ranking Member); Housing (Ranking Member); Labor and Public Employees (Ranking Member); Judiciary",
+      "committee codes": ";GAE;HSG;JUD;LAB;"
+    },
+    "created_at": "2019-01-24T06:04:23.939873+00:00",
+    "updated_at": "2026-04-25T00:19:56.505351+00:00",
+    "openstates_url": "https://openstates.org/person/rob-sampson-OG8kyZ3Pb9zR8WTUGX0JF/"
+  },
+  {
+    "id": "ocd-person/c5800b0c-c84a-4e63-83fa-8aaad9b6535f",
+    "name": "Ryan Fazio",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ct/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Fazio",
+    "image": "https://ctsenaterepublicans.com/wp-content/uploads/2021/08/225217195_346200893664334_4626743322505851539_n-scaled-e1629858004858.jpg",
+    "email": "ryan.fazio@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Senate Republican Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Energy and Technology (Ranking Member); Planning and Development (Ranking Member); Finance, Revenue and Bonding; Transportation",
+      "committee codes": ";ET;FIN;PD;TRA;"
+    },
+    "created_at": "2021-12-16T18:42:49.461131+00:00",
+    "updated_at": "2025-02-04T00:27:14.900625+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-fazio-60g0GYBayUbW84OFhq90jX/"
+  },
+  {
+    "id": "ocd-person/686df3d6-3199-4d48-a27e-7b3e7c65de66",
+    "name": "Saud Anwar",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ct/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Saud",
+    "family_name": "Anwar",
+    "image": "http://www.senatedems.ct.gov/templates/anwar/images/anwar-hi.jpg",
+    "email": "saud.anwar@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "1967-10-05",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy President Pro Tempore",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Public Health (Chair); Insurance and Real Estate (Vice Chair); Appropriations; Environment; Committee on Children",
+      "committee codes": ";APP;ENV;INS;KID;PH;"
+    },
+    "created_at": "2020-04-07T00:49:17.024158+00:00",
+    "updated_at": "2025-03-29T00:18:54.909407+00:00",
+    "openstates_url": "https://openstates.org/person/saud-anwar-3B3RvSx11DoGsFbKFRagEg/"
+  },
+  {
+    "id": "ocd-person/f0f89d15-9682-4a2e-8096-57700ac5b8dc",
+    "name": "Stephen Harding",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ct/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Stephen",
+    "family_name": "Harding",
+    "image": "https://www.cthousegop.com/harding/wp-content/uploads/sites/35/2016/11/Harding_Bio_Photo_Web.jpg",
+    "email": "stephen.harding@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Senate Republican Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Environment (Ranking Member); Education; Finance, Revenue and Bonding; Judiciary",
+      "committee codes": ";ED;ENV;FIN;JUD;"
+    },
+    "created_at": "2018-10-18T14:37:07.861395+00:00",
+    "updated_at": "2025-07-17T06:19:47.719298+00:00",
+    "openstates_url": "https://openstates.org/person/stephen-harding-7Khm3vImMPkFeV8p0h7C60/"
+  },
+  {
+    "id": "ocd-person/2d581ca4-1fb8-4e7c-9f33-060db9ed895e",
+    "name": "Sujata Gadkar-Wilcox",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ct/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Sujata",
+    "family_name": "Gadkar-Wilcox",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/sgwilcox.jpg",
+    "email": "gadkarwilcox@senatedems.ct.gov",
+    "gender": "Female",
+    "birth_date": "1979-07-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T18:37:57.420724+00:00",
+    "updated_at": "2025-02-21T15:46:50.069458+00:00",
+    "openstates_url": "https://openstates.org/person/sujata-gadkar-wilcox-1NYv9zsfYpfq9GgVMz6Fpe/"
+  },
+  {
+    "id": "ocd-person/b1ab473b-e7ff-4c53-96af-ee796c89f4dd",
+    "name": "Tony Hwang",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ct/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ct/government",
+      "name": "Connecticut",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Hwang",
+    "image": "https://ctsenaterepublicans.com/wp-content/uploads/2021/08/Hwang_Headshot2019.jpg",
+    "email": "tony.hwang@cga.ct.gov",
+    "gender": "Male",
+    "birth_date": "1964-09-17",
+    "death_date": "",
+    "extras": {
+      "title": "Chief Deputy Senate Republican Leader",
+      "gender": "Male",
+      "prison": "0",
+      "committees": "Insurance and Real Estate (Ranking Member); Transportation (Ranking Member); Finance, Revenue and Bonding; Planning and Development",
+      "business phone": "203-807-8098",
+      "committee codes": ";FIN;INS;PD;TRA;"
+    },
+    "created_at": "2018-10-18T14:36:36.356725+00:00",
+    "updated_at": "2025-07-17T06:19:43.009779+00:00",
+    "openstates_url": "https://openstates.org/person/tony-hwang-5PFuo6EWVOOoVRNBAhbKrl/"
+  }
+]

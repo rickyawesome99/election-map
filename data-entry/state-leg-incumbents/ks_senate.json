@@ -1,0 +1,1138 @@
+[
+  {
+    "id": "ocd-person/2c46aedb-f7a4-4f9a-bade-5ae192acc2a3",
+    "name": "Adam Thomas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ks/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Thomas",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_thomas_adam_1.jpg",
+    "email": "adam.thomas@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Restaurant Owner"
+    },
+    "created_at": "2019-01-07T05:01:31.726090+00:00",
+    "updated_at": "2026-06-04T06:47:51.072350+00:00",
+    "openstates_url": "https://openstates.org/person/adam-thomas-1LXxo22tJv8mJxz9UJ2qe3/"
+  },
+  {
+    "id": "ocd-person/35630402-1f6a-4a3e-b6cf-48c1b93bd6ae",
+    "name": "Beverly Gossage",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ks/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Beverly",
+    "family_name": "Gossage",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_gossage_beverly_1.jpg",
+    "email": "beverly.gossage@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1950-05-22",
+    "death_date": "",
+    "extras": {
+      "occupation": "Insurance Agent"
+    },
+    "created_at": "2021-01-12T00:09:21.869014+00:00",
+    "updated_at": "2026-06-04T06:47:30.443038+00:00",
+    "openstates_url": "https://openstates.org/person/beverly-gossage-1cjqIqPDAlMYIFIdAyyx1a/"
+  },
+  {
+    "id": "ocd-person/463dcd61-1bf6-4182-ae6f-a840e43ea7fe",
+    "name": "Bill Clifford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ks/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Clifford",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_clifford_william_1.jpg",
+    "email": "william.clifford@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Fry Eye Associates"
+    },
+    "created_at": "2021-12-16T18:50:22.048081+00:00",
+    "updated_at": "2026-06-04T06:46:03.660297+00:00",
+    "openstates_url": "https://openstates.org/person/bill-clifford-28XhoB5cGxbUz1bWXh638Y/"
+  },
+  {
+    "id": "ocd-person/2b66826b-7af3-4053-8d3b-90dbcf4f0740",
+    "name": "Brad Starnes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ks/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Starnes",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_starnes_brad_1.jpg",
+    "email": "brad.starnes@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:07:22.845092+00:00",
+    "updated_at": "2026-06-04T06:47:15.319829+00:00",
+    "openstates_url": "https://openstates.org/person/brad-starnes-1JtW3OEeNrbYUBoKJAYYy0/"
+  },
+  {
+    "id": "ocd-person/57c530cc-4575-431e-9118-11f64fa3a573",
+    "name": "Brenda Dietrich",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ks/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Brenda",
+    "family_name": "Dietrich",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/rep_dietrich_brenda_1.jpg",
+    "email": "brenda.dietrich@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1953-05-16",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Superintendent"
+    },
+    "created_at": "2021-01-12T00:09:20.619744+00:00",
+    "updated_at": "2026-06-04T06:46:57.067544+00:00",
+    "openstates_url": "https://openstates.org/person/brenda-dietrich-2fcRpENigpc5aoTO4U1L19/"
+  },
+  {
+    "id": "ocd-person/cc84252c-b7c6-484d-a036-dd38a90b1b04",
+    "name": "Caryn Tyson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ks/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Caryn",
+    "family_name": "Tyson",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_tyson_caryn_1.jpg",
+    "email": "caryn.tyson@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1963-02-15",
+    "death_date": "",
+    "extras": {
+      "occupation": "Software Engineer"
+    },
+    "created_at": "2018-10-18T14:44:48.698812+00:00",
+    "updated_at": "2026-06-04T06:46:14.068484+00:00",
+    "openstates_url": "https://openstates.org/person/caryn-tyson-6DupAD0SLY0CoEze5305zQ/"
+  },
+  {
+    "id": "ocd-person/c0c78c6c-d725-4f3b-8ae5-11446753d9a7",
+    "name": "Chase Blasi",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ks/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Chase",
+    "family_name": "Blasi",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_blasi_chase_1.jpg",
+    "email": "chase.blasi@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-12T22:28:18.342623+00:00",
+    "updated_at": "2026-06-04T06:47:34.582048+00:00",
+    "openstates_url": "https://openstates.org/person/chase-blasi-5rligR54ZKqihMDJCnBW2p/"
+  },
+  {
+    "id": "ocd-person/9c36b31f-b9e7-43cd-8aab-6148c8f6cac8",
+    "name": "Cindy Holscher",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ks/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Cindy",
+    "family_name": "Holscher",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Cindy-Holscher.jpg",
+    "email": "cindy.holscher@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1969-04-26",
+    "death_date": "",
+    "extras": {
+      "occupation": ""
+    },
+    "created_at": "2018-10-18T14:44:30.174346+00:00",
+    "updated_at": "2026-06-04T06:46:04.538526+00:00",
+    "openstates_url": "https://openstates.org/person/cindy-holscher-4klneRXuK2iG1Fm9Y2BBea/"
+  },
+  {
+    "id": "ocd-person/b4963502-06af-4855-bc95-8db7972d2e04",
+    "name": "Craig Bowser",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ks/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Craig",
+    "family_name": "Bowser",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Craig_Bowser.jpg",
+    "email": "craig.bowser@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1965-10-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:07:27.674830+00:00",
+    "updated_at": "2026-06-04T06:46:52.728689+00:00",
+    "openstates_url": "https://openstates.org/person/craig-bowser-5UlGLZa0VBJMq4DSY4tHjI/"
+  },
+  {
+    "id": "ocd-person/0a700e33-0ae7-4627-936c-982317c26b9d",
+    "name": "David Haley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ks/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Haley",
+    "image": "https://images.squarespace-cdn.com/content/v1/606b1f70a46bfa6ea792c03e/1618942086989-LIN2C4WCFMR47RKYDJ5V/Haley.jpg?format=1000w",
+    "email": "david.haley@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1958-10-29",
+    "death_date": "",
+    "extras": {
+      "occupation": "Public Affairs Council"
+    },
+    "created_at": "2018-10-18T14:44:41.106456+00:00",
+    "updated_at": "2026-06-04T06:45:57.942169+00:00",
+    "openstates_url": "https://openstates.org/person/david-haley-Jh8EKgqYLhn1GicL0iFaf/"
+  },
+  {
+    "id": "ocd-person/549c712e-1cc1-4ca7-9ef7-b09bb36d7229",
+    "name": "Dinah Sykes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ks/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Dinah",
+    "family_name": "Sykes",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_sykes_dinah_1.jpg",
+    "email": "dinah.sykes@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1977-04-10",
+    "death_date": "",
+    "extras": {
+      "occupation": ""
+    },
+    "created_at": "2018-10-18T14:44:41.936475+00:00",
+    "updated_at": "2026-06-04T06:46:32.900352+00:00",
+    "openstates_url": "https://openstates.org/person/dinah-sykes-2ZeqgHtwSTnW0CKmyZf3BB/"
+  },
+  {
+    "id": "ocd-person/d0ae10e6-5c26-4be4-af00-036b23664127",
+    "name": "Doug Shane",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ks/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Shane",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_shane_doug_1.jpg",
+    "email": "doug.shane@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1988-11-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:07:04.204413+00:00",
+    "updated_at": "2026-06-04T06:46:06.821657+00:00",
+    "openstates_url": "https://openstates.org/person/doug-shane-6Llx32dkFM77GOJ3FFxwJj/"
+  },
+  {
+    "id": "ocd-person/416dbc91-431f-4dc6-8c8a-ca2db2cd3300",
+    "name": "Elaine Bowers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ks/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Elaine",
+    "family_name": "Bowers",
+    "image": "https://img1.wsimg.com/isteam/ip/80c40439-022d-4960-b9db-9edee1fb7239/116288352_1853414708116161_8330522447916288057.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:500,cg:true",
+    "email": "elaine.bowers@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1963-02-12",
+    "death_date": "",
+    "extras": {
+      "occupation": "Auto Dealer"
+    },
+    "created_at": "2018-10-18T14:44:35.252476+00:00",
+    "updated_at": "2026-06-05T06:45:30.483452+00:00",
+    "openstates_url": "https://openstates.org/person/elaine-bowers-1zSeMVUPSmLGtkpexoqg76/"
+  },
+  {
+    "id": "ocd-person/76d729c5-1b4d-4966-8c99-5ac8b74d8719",
+    "name": "Ethan Corson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ks/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Ethan",
+    "family_name": "Corson",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_corson_ethan_1.jpg",
+    "email": "ethan.corson@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1982-05-28",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney"
+    },
+    "created_at": "2021-01-12T00:09:23.187180+00:00",
+    "updated_at": "2026-06-04T06:45:46.773236+00:00",
+    "openstates_url": "https://openstates.org/person/ethan-corson-3cFQJUOQQYkyr4epoKoUh7/"
+  },
+  {
+    "id": "ocd-person/49a02bbc-55ad-456e-9175-d51041b583de",
+    "name": "Jeff Klemp",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ks/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Klemp",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JeffKlemp2024.jpg",
+    "email": "jeff.klemp@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:07:11.400253+00:00",
+    "updated_at": "2026-06-04T06:47:26.936963+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-klemp-2EvdZ2vTWhNOWCpxTnB366/"
+  },
+  {
+    "id": "ocd-person/918f677f-eac8-4e2d-acc9-eb2c3e4de80f",
+    "name": "Joe Claeys",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ks/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Claeys",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_claeys_joseph_1.jpg",
+    "email": "joseph.claeys@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:07:24.416429+00:00",
+    "updated_at": "2026-06-04T06:46:22.762865+00:00",
+    "openstates_url": "https://openstates.org/person/joe-claeys-4QfQFONi9esntxKyQkNS75/"
+  },
+  {
+    "id": "ocd-person/85a66c0d-6f9e-4a55-947e-4d3dc28af0d8",
+    "name": "Kellie Warren",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ks/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Kellie",
+    "family_name": "Warren",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_warren_kellie_1.jpg",
+    "email": "kellie.warren@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1969-02-18",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney"
+    },
+    "created_at": "2019-01-07T05:01:24.796143+00:00",
+    "updated_at": "2026-06-04T06:47:04.361255+00:00",
+    "openstates_url": "https://openstates.org/person/kellie-warren-44C28yKOuOl2IT9Up8nb6u/"
+  },
+  {
+    "id": "ocd-person/8a353296-bd2d-4fd6-b1b9-d8b3c8b3f771",
+    "name": "Kenny Titus",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ks/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Kenny",
+    "family_name": "Titus",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_titus_kenny_1.jpg",
+    "email": "kenny.titus@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney"
+    },
+    "created_at": "2023-01-12T22:29:11.118307+00:00",
+    "updated_at": "2026-06-04T06:47:16.171599+00:00",
+    "openstates_url": "https://openstates.org/person/kenny-titus-4CnFec4ZgA1KIckZlBqRs1/"
+  },
+  {
+    "id": "ocd-person/4c340817-c498-4df6-afe4-d3251ce6594b",
+    "name": "Larry Alley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ks/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Alley",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Larry_Alley.jpg",
+    "email": "larry.alley@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1948-09-23",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired"
+    },
+    "created_at": "2018-10-18T14:44:34.611726+00:00",
+    "updated_at": "2026-06-04T06:47:44.144352+00:00",
+    "openstates_url": "https://openstates.org/person/larry-alley-2JnC6yoYh98xWbKqAP1G7H/"
+  },
+  {
+    "id": "ocd-person/4fca7c3e-1f7c-455e-b555-a293ff578e60",
+    "name": "Marci Francisco",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ks/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Marci",
+    "family_name": "Francisco",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_francisco_marci_1.jpg",
+    "email": "marci.francisco@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1950-04-22",
+    "death_date": "",
+    "extras": {
+      "occupation": "Space (Facilities) Mgmt"
+    },
+    "created_at": "2018-10-18T14:44:49.030397+00:00",
+    "updated_at": "2026-06-04T06:46:44.771071+00:00",
+    "openstates_url": "https://openstates.org/person/marci-francisco-2QYveTBwAJSO4r50MP5rgu/"
+  },
+  {
+    "id": "ocd-person/8810cb09-9e5a-49a9-a37c-00ab2924a16b",
+    "name": "Mike Argabright",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ks/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Argabright",
+    "image": "https://firststudentinc.com/wp-content/uploads/Michael-Argabright-KS-SOY-2023.png",
+    "email": "mike.argabright@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:07:06.511295+00:00",
+    "updated_at": "2026-06-04T06:46:01.198948+00:00",
+    "openstates_url": "https://openstates.org/person/mike-argabright-48kd7LxeBl13bLGVUzCTlb/"
+  },
+  {
+    "id": "ocd-person/a0787678-986f-459f-bba3-38d46ef55d8b",
+    "name": "Mike Fagg",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ks/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Fagg",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_fagg_michael_1.jpg",
+    "email": "michael.fagg@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1954-11-12",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired (Banking)"
+    },
+    "created_at": "2021-01-12T00:09:22.189226+00:00",
+    "updated_at": "2026-06-04T06:45:50.512402+00:00",
+    "openstates_url": "https://openstates.org/person/mike-fagg-4snp5J0HnNZSphYvIEyzRD/"
+  },
+  {
+    "id": "ocd-person/8b446a75-944d-4292-8af0-f5114be39021",
+    "name": "Mike Murphy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ks/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Murphy",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvKwXLW2-GGx639WKAs10NgKJgmOprF8JoSnBrc3tSNe41yMEh6bGuVEiIvAulBU795Tk&usqp=CAU",
+    "email": "michael.murphy@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "B and B Owner/Operator"
+    },
+    "created_at": "2021-01-12T00:09:15.891197+00:00",
+    "updated_at": "2026-06-04T06:47:41.534192+00:00",
+    "openstates_url": "https://openstates.org/person/mike-murphy-4EnCNCh94F6OTrIJ94GFMn/"
+  },
+  {
+    "id": "ocd-person/4d244ceb-6d50-4670-93db-22ad153b3961",
+    "name": "Mike Petersen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ks/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Petersen",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_petersen_mike_1.jpg",
+    "email": "mike.petersen@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1960-10-05",
+    "death_date": "",
+    "extras": {
+      "occupation": "Industrial Electrician"
+    },
+    "created_at": "2018-10-18T14:44:38.043167+00:00",
+    "updated_at": "2026-06-05T06:45:41.088884+00:00",
+    "openstates_url": "https://openstates.org/person/mike-petersen-2LYzuNXfVYXqC6W59VFCIz/"
+  },
+  {
+    "id": "ocd-person/97943c08-7d1f-400e-b71d-7a20e939b1d9",
+    "name": "Mike Thompson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ks/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Thompson",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_thompson_mike_1.jpg",
+    "email": "mike.thompson@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1957-08-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-02-07T06:08:21.903570+00:00",
+    "updated_at": "2026-06-04T06:47:02.492743+00:00",
+    "openstates_url": "https://openstates.org/person/mike-thompson-4c1aFiDjJxPkV2t4nyjNW5/"
+  },
+  {
+    "id": "ocd-person/9f48288b-b1a9-43a1-884b-5cc2abfa4e4f",
+    "name": "Oletha Faust-Goudeau",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ks/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Oletha",
+    "family_name": "Faust-Goudeau",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Oletha_Faust-Goudeau.jpg",
+    "email": "oletha.faust-goudeau@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1959-08-05",
+    "death_date": "",
+    "extras": {
+      "occupation": "Community Activist"
+    },
+    "created_at": "2018-10-18T14:44:43.238541+00:00",
+    "updated_at": "2026-06-04T06:46:13.197120+00:00",
+    "openstates_url": "https://openstates.org/person/oletha-faust-goudeau-4qYktqPgSkTudI1m9Sfpi3/"
+  },
+  {
+    "id": "ocd-person/148ed29a-4c96-4e69-9791-29b2bd3f09b6",
+    "name": "Pat Pettey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ks/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Pat",
+    "family_name": "Pettey",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_pettey_pat_1.jpg",
+    "email": "pat.pettey@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1946-11-28",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Educator"
+    },
+    "created_at": "2018-10-18T14:44:30.331797+00:00",
+    "updated_at": "2026-06-04T06:46:31.277731+00:00",
+    "openstates_url": "https://openstates.org/person/pat-pettey-cn7EWKnEkJ7TSXNulzC58/"
+  },
+  {
+    "id": "ocd-person/8a08b0a9-eeff-495c-8fc8-7bbfe3e4dc26",
+    "name": "Patrick Schmidt",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ks/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Schmidt",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_schmidt_patrick_1.jpg",
+    "email": "patrick.schmidt@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:07:09.050265+00:00",
+    "updated_at": "2026-06-04T06:46:16.562421+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-schmidt-4CSuZg99U0FPDqfSGRz3eY/"
+  },
+  {
+    "id": "ocd-person/3093633a-62dc-4e93-a305-258a20bfd0f2",
+    "name": "Renee Erickson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ks/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Renee",
+    "family_name": "Erickson",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_erickson_renee_1.jpg",
+    "email": "renee.erickson@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1964-05-23",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired"
+    },
+    "created_at": "2019-01-07T05:01:28.216274+00:00",
+    "updated_at": "2026-06-04T06:45:52.376417+00:00",
+    "openstates_url": "https://openstates.org/person/renee-erickson-1TezFx7duYZv6wKwUOy4xu/"
+  },
+  {
+    "id": "ocd-person/e5d951f2-88c7-47d4-ac28-08c175ba440d",
+    "name": "Rick Billinger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ks/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Billinger",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_billinger_rick_1.jpg",
+    "email": "rick.billinger@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1951-12-16",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Businessman and Farmer"
+    },
+    "created_at": "2018-10-18T14:44:36.456603+00:00",
+    "updated_at": "2026-06-04T06:46:29.615326+00:00",
+    "openstates_url": "https://openstates.org/person/rick-billinger-6ziYcfQFg4R5AMHnLKn5Cv/"
+  },
+  {
+    "id": "ocd-person/5281ab3e-91a8-43be-bcc7-5d9d4c2a2545",
+    "name": "Rick Kloos",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ks/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Kloos",
+    "image": "https://www.ksn.com/wp-content/uploads/sites/13/2018/10/20180607_Rick20Kloos20-20Govenor20Candidate_3420-20Alexandra20Martinez_1539633409099.jpg_59052445_ver1.0.jpg?w=2560&h=1440&crop=1",
+    "email": "rick.kloos@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1966-07-26",
+    "death_date": "",
+    "extras": {
+      "occupation": "Director of God's Storehouse"
+    },
+    "created_at": "2021-01-12T00:09:15.101579+00:00",
+    "updated_at": "2026-06-04T06:45:55.027238+00:00",
+    "openstates_url": "https://openstates.org/person/rick-kloos-2Vgd2TYQy25lnwiuPE18IH/"
+  },
+  {
+    "id": "ocd-person/43caafd7-9177-40f4-b515-0681ef5930f3",
+    "name": "Ron Ryckman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ks/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Ryckman",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_ryckman_ronald_1.jpg",
+    "email": "ron.ryckman@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1948-12-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-12-16T18:50:02.160649+00:00",
+    "updated_at": "2026-06-04T06:47:54.462501+00:00",
+    "openstates_url": "https://openstates.org/person/ron-ryckman-23v74UgPRxN88hhBcDPxIZ/"
+  },
+  {
+    "id": "ocd-person/64c3ae14-1ec8-46ed-b317-bcd9722319f5",
+    "name": "Scott Hill",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ks/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Hill",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_hill_scott_1.jpg",
+    "email": "scott.hill@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer"
+    },
+    "created_at": "2023-01-12T22:29:45.546793+00:00",
+    "updated_at": "2026-06-04T06:47:31.295973+00:00",
+    "openstates_url": "https://openstates.org/person/scott-hill-348eq46djIhmybbT1ihok1/"
+  },
+  {
+    "id": "ocd-person/38e5e1b5-72d2-4968-be98-032e8320d475",
+    "name": "Silas Miller",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ks/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Silas",
+    "family_name": "Miller",
+    "image": "https://media.sharethetrail.net/prod_d_1/images/silas-miller_5_sq.height-800.jpg",
+    "email": "silas.miller@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Insurance Broker Family First Life"
+    },
+    "created_at": "2023-01-12T22:28:34.814678+00:00",
+    "updated_at": "2026-06-04T06:47:26.275806+00:00",
+    "openstates_url": "https://openstates.org/person/silas-miller-1jMcqNiaedTarsydQqEgpZ/"
+  },
+  {
+    "id": "ocd-person/413cc3ff-a3b9-465b-827d-4aeb4b0b42c1",
+    "name": "Stephen Owens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ks/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Stephen",
+    "family_name": "Owens",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_owens_stephen_1.jpg",
+    "email": "stephen.owens@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Self-employed"
+    },
+    "created_at": "2019-01-07T05:01:26.543217+00:00",
+    "updated_at": "2026-06-04T06:46:00.539412+00:00",
+    "openstates_url": "https://openstates.org/person/stephen-owens-1z6GoZHmqNahKO0mebRS3V/"
+  },
+  {
+    "id": "ocd-person/5327f35f-aecc-4ecb-a23a-9136c8e503e1",
+    "name": "T.J. Rose",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ks/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "T.J.",
+    "family_name": "Rose",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TJ_Rose_20240808_093657.jpeg",
+    "email": "tj.rose@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:06:51.979087+00:00",
+    "updated_at": "2026-06-04T06:47:53.604240+00:00",
+    "openstates_url": "https://openstates.org/person/t-j-rose-2WucTmXNcL6FXhlPl5z6AL/"
+  },
+  {
+    "id": "ocd-person/c091ed05-ad26-42f2-b7e8-a830404cb152",
+    "name": "Tim Shallenburger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ks/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Shallenburger",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_shallenburger_tim_1.jpg",
+    "email": "tim.shallenburger@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1954-03-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-23T22:08:39.286423+00:00",
+    "updated_at": "2026-06-04T06:47:12.733116+00:00",
+    "openstates_url": "https://openstates.org/person/tim-shallenburger-5rNDKnpu3hD5oiaJFYbrJC/"
+  },
+  {
+    "id": "ocd-person/80f9f23c-fa36-43ef-b97e-a9563bd4237b",
+    "name": "Tory Marie Blew",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ks/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Tory Marie",
+    "family_name": "Blew",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_blew_marie_1.jpg",
+    "email": "torymarie.blew@senate.ks.gov",
+    "gender": "Female",
+    "birth_date": "1993-05-03",
+    "death_date": "",
+    "extras": {
+      "occupation": "Human Resources Director, Pryor Automatic"
+    },
+    "created_at": "2018-10-18T14:44:37.566335+00:00",
+    "updated_at": "2026-06-04T06:45:51.449925+00:00",
+    "openstates_url": "https://openstates.org/person/tory-marie-blew-3vNF6QGYqAYrOnHi0jXfVD/"
+  },
+  {
+    "id": "ocd-person/b4774ff4-de16-4716-8956-65ecc740eb8c",
+    "name": "Ty Masterson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ks/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Ty",
+    "family_name": "Masterson",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_masterson_ty_1.jpg",
+    "email": "ty.masterson@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1969-09-23",
+    "death_date": "",
+    "extras": {
+      "occupation": "Director"
+    },
+    "created_at": "2018-10-18T14:44:44.771598+00:00",
+    "updated_at": "2026-06-04T06:47:25.269527+00:00",
+    "openstates_url": "https://openstates.org/person/ty-masterson-5UX8yOknTCdktoVI3NGsCy/"
+  },
+  {
+    "id": "ocd-person/90f4cf61-cce8-4f87-8495-c0dc298c8d27",
+    "name": "Virgil Peck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ks/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ks/government",
+      "name": "Kansas",
+      "classification": "state"
+    },
+    "given_name": "Virgil",
+    "family_name": "Peck",
+    "image": "https://www.kslegislature.gov/static/li_pics/sen_peck_virgil_1.jpg",
+    "email": "virgil.peck@senate.ks.gov",
+    "gender": "Male",
+    "birth_date": "1959-08-21",
+    "death_date": "",
+    "extras": {
+      "occupation": "Insurance Agent"
+    },
+    "created_at": "2021-01-12T00:09:24.082079+00:00",
+    "updated_at": "2026-06-04T06:47:56.252869+00:00",
+    "openstates_url": "https://openstates.org/person/virgil-peck-4PWlxkTJWD5Ehh9a2gaEoJ/"
+  }
+]

@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "ocd-person/d0de7acb-ce8d-4bb2-b6e5-99cefe5e76a6",
+    "name": "Adele McClure",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:va/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Adele",
+    "family_name": "McClure",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0375",
+    "email": "delamcclure@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:15.418808+00:00",
+    "updated_at": "2026-01-28T02:35:45.345647+00:00",
+    "openstates_url": "https://openstates.org/person/adele-mcclure-6M84nwFEnWdGNjyiOeNRd0/"
+  },
+  {
+    "id": "ocd-person/3a48fc34-a650-4fd5-acea-e703e2b8de90",
+    "name": "Alex Askew",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:va/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Askew",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0311",
+    "email": "delaaskew@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:09.152729+00:00",
+    "updated_at": "2026-01-28T02:37:06.619296+00:00",
+    "openstates_url": "https://openstates.org/person/alex-askew-1lyuNI4AQEiAMdxjhjuqcS/"
+  },
+  {
+    "id": "ocd-person/ed935430-db59-4962-91f7-c0eeca2ef8e2",
+    "name": "Alfonso Lopez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:va/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Alfonso",
+    "family_name": "Lopez",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0239",
+    "email": "delalopez@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1970-07-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:13.773120+00:00",
+    "updated_at": "2026-01-28T02:37:09.355239+00:00",
+    "openstates_url": "https://openstates.org/person/alfonso-lopez-7EIVgCKFCEAa2RvjXRmDWU/"
+  },
+  {
+    "id": "ocd-person/7e0776e4-a915-4758-a7b3-70ca42ce3fe4",
+    "name": "Amy Laufer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:va/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Amy",
+    "family_name": "Laufer",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0371",
+    "email": "delalaufer@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1972-05-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:09.908112+00:00",
+    "updated_at": "2026-04-09T08:28:23.647262+00:00",
+    "openstates_url": "https://openstates.org/person/amy-laufer-3poRYTXwpNX7gRM5KnjH52/"
+  },
+  {
+    "id": "ocd-person/7517f920-b2ba-4759-a80a-246816ebb09b",
+    "name": "Andrew Rice",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:va/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Rice",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/AndrewRiceVA26.png",
+    "email": "delarice@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-09T08:28:25.106592+00:00",
+    "updated_at": "2026-04-09T08:28:25.888140+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-rice-3Yx3b1mithIqKTfmCzLVf9/"
+  },
+  {
+    "id": "ocd-person/9fd6fbd7-5e4e-4426-9d5a-43173ab01489",
+    "name": "Anne Ferrell Tata",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:va/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Anne Ferrell",
+    "family_name": "Tata",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0345.jpg",
+    "email": "delaftata@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:47.781224+00:00",
+    "updated_at": "2026-01-28T02:36:07.142388+00:00",
+    "openstates_url": "https://openstates.org/person/anne-ferrell-tata-4rc1j1PcD5KczIN3qR07CL/"
+  },
+  {
+    "id": "ocd-person/38f25fcb-2f54-411a-84d5-2d1f748d4183",
+    "name": "Atoosa Reaser",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:va/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Atoosa",
+    "family_name": "Reaser",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0380",
+    "email": "delareaser@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:08.993147+00:00",
+    "updated_at": "2026-01-28T02:37:40.671574+00:00",
+    "openstates_url": "https://openstates.org/person/atoosa-reaser-1jSKo9RKhE5BU4hy5DMWvr/"
+  },
+  {
+    "id": "ocd-person/a6f78488-1c78-4409-8c4a-bf0d0920e852",
+    "name": "Betsy Carr",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:va/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Betsy",
+    "family_name": "Carr",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0212",
+    "email": "delbcarr@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1946-07-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:14.145738+00:00",
+    "updated_at": "2026-01-28T02:36:42.229569+00:00",
+    "openstates_url": "https://openstates.org/person/betsy-carr-553qDMQwN749nmmCTGYT6Q/"
+  },
+  {
+    "id": "ocd-person/ec0c5f08-2974-4f9c-896c-34c9d5d33fac",
+    "name": "Bill Wiley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:va/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Wiley",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0329",
+    "email": "delbwiley@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-12-18T06:18:48.405427+00:00",
+    "updated_at": "2026-01-28T02:37:02.823342+00:00",
+    "openstates_url": "https://openstates.org/person/bill-wiley-7BPqFqKB2dkdFssGTNCISi/"
+  },
+  {
+    "id": "ocd-person/725be36e-2485-4f9f-a15f-86c574cc8d4b",
+    "name": "Bonita Anthony",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:va/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Bonita",
+    "family_name": "Anthony",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0353",
+    "email": "delbanthony@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:05.020774+00:00",
+    "updated_at": "2026-01-28T02:37:34.385760+00:00",
+    "openstates_url": "https://openstates.org/person/bonita-anthony-3Tn7L6DSewKQlhBEU6BUAV/"
+  },
+  {
+    "id": "ocd-person/23775904-887c-4a2c-9424-0683608193ba",
+    "name": "Briana Sewell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:va/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Briana",
+    "family_name": "Sewell",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0343",
+    "email": "delbsewell@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:40.890861+00:00",
+    "updated_at": "2026-01-28T02:36:44.900413+00:00",
+    "openstates_url": "https://openstates.org/person/briana-sewell-14vGxMUbaeH1CNIMNcfexO/"
+  },
+  {
+    "id": "ocd-person/e2ce02ec-6a92-435d-8ae2-bead5abe5ace",
+    "name": "Buddy Fowler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:va/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Buddy",
+    "family_name": "Fowler",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0259",
+    "email": "delbfowler@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1955-07-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:17.112160+00:00",
+    "updated_at": "2026-01-28T02:37:17.559179+00:00",
+    "openstates_url": "https://openstates.org/person/buddy-fowler-6tyPd2H0AjamREP5RVmFmY/"
+  },
+  {
+    "id": "ocd-person/2bb39b59-47d3-4e05-aa76-fc0df791faa7",
+    "name": "Charlie Schmidt",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:va/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Charlie",
+    "family_name": "Schmidt",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0402.jpg",
+    "email": "delcschmidt@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:37:20.555679+00:00",
+    "updated_at": "2026-04-09T08:28:05.141207+00:00",
+    "openstates_url": "https://openstates.org/person/charlie-schmidt-1KSkXLlh9P1RLymOg3ZbXz/"
+  },
+  {
+    "id": "ocd-person/a0b9b444-ee25-48a1-ab61-cf0be462e89d",
+    "name": "Charniele Herring",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:va/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Charniele",
+    "family_name": "Herring",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0208",
+    "email": "delcherring@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1969-09-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:14.823460+00:00",
+    "updated_at": "2026-01-28T02:36:16.563759+00:00",
+    "openstates_url": "https://openstates.org/person/charniele-herring-4tHddiJDStkL7hWHRQzQuD/"
+  },
+  {
+    "id": "ocd-person/bbb38d6c-3b3d-4ce8-bb2f-3d9346ff86f7",
+    "name": "Chris Runion",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:va/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Runion",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0321",
+    "email": "delcrunion@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-08T23:17:06.504773+00:00",
+    "updated_at": "2026-01-28T02:36:43.300883+00:00",
+    "openstates_url": "https://openstates.org/person/chris-runion-5iBcUUz447tXR2cKM3lWER/"
+  },
+  {
+    "id": "ocd-person/58b46062-f618-4b27-b0ec-3bbb57db839b",
+    "name": "Cia Price",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:va/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Cia",
+    "family_name": "Price",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0284",
+    "email": "delmprice@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1980-07-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:20.211159+00:00",
+    "updated_at": "2026-01-28T02:36:25.383672+00:00",
+    "openstates_url": "https://openstates.org/person/cia-price-2hNkwB3Bc3uTaEOQbUlnAZ/"
+  },
+  {
+    "id": "ocd-person/77b071e3-b8fa-4455-b2e6-3d487a8145c8",
+    "name": "Cliff Hayes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:va/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Cliff",
+    "family_name": "Hayes",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0285",
+    "email": "delchayes@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1967-10-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:14.598746+00:00",
+    "updated_at": "2026-01-28T02:36:48.713591+00:00",
+    "openstates_url": "https://openstates.org/person/cliff-hayes-3dqin5RhJvPxQCxHcK23lg/"
+  },
+  {
+    "id": "ocd-person/5e5e025d-7e50-4c2f-ba81-720f19aa0d81",
+    "name": "Dan Helmer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:va/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Helmer",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0317",
+    "email": "deldhelmer@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1981-09-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-08T23:17:08.165427+00:00",
+    "updated_at": "2026-01-28T02:36:18.895273+00:00",
+    "openstates_url": "https://openstates.org/person/dan-helmer-2s4EwhteZaQUOxNcuemvhp/"
+  },
+  {
+    "id": "ocd-person/0258144f-e8e8-4710-a80c-362f2077f57b",
+    "name": "David Reid",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:va/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Reid",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0301",
+    "email": "deldreid@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1962-01-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:15.600804+00:00",
+    "updated_at": "2026-01-28T02:37:01.063567+00:00",
+    "openstates_url": "https://openstates.org/person/david-reid-4QEh888NGlHMMfeZn6T8N/"
+  },
+  {
+    "id": "ocd-person/28a2a753-16db-4236-baf0-398c0cafa259",
+    "name": "Debra Gardner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:va/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Debra",
+    "family_name": "Gardner",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0361",
+    "email": "deldgardner@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:21.257971+00:00",
+    "updated_at": "2026-01-28T02:35:43.903089+00:00",
+    "openstates_url": "https://openstates.org/person/debra-gardner-1Eg1btbHsP8jvPKyF8B4jR/"
+  },
+  {
+    "id": "ocd-person/4ae07d5d-1da3-4370-b796-7698013ca994",
+    "name": "Delores McQuinn",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:va/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Delores",
+    "family_name": "McQuinn",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0207",
+    "email": "deldmcquinn@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1954-11-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:16.216390+00:00",
+    "updated_at": "2026-01-28T02:36:13.912606+00:00",
+    "openstates_url": "https://openstates.org/person/delores-mcquinn-2HI1VK22pGtahUoGwm2qXM/"
+  },
+  {
+    "id": "ocd-person/aabaa796-77f3-4b39-a626-ae05944ec484",
+    "name": "Delores Oates",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:va/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Delores",
+    "family_name": "Oates",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0377",
+    "email": "deldoates@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:15.719688+00:00",
+    "updated_at": "2026-01-28T02:36:07.859101+00:00",
+    "openstates_url": "https://openstates.org/person/delores-oates-5C9zoSBEixGNC63cZwwkYW/"
+  },
+  {
+    "id": "ocd-person/43d936f6-2ae8-42fe-a9a9-a4f139842afa",
+    "name": "Destiny LeVere Bolling",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:va/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Destiny",
+    "family_name": "LeVere Bolling",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Destiny_LeVere_Bolling.jpg",
+    "email": "deldleverebolling@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T17:59:59.051362+00:00",
+    "updated_at": "2026-01-28T02:35:50.185958+00:00",
+    "openstates_url": "https://openstates.org/person/destiny-levere-bolling-241khgcWhpupYbgv71mSyI/"
+  },
+  {
+    "id": "ocd-person/f8cafb3b-ed12-40e9-b062-318790434179",
+    "name": "Don Scott",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:va/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Don",
+    "family_name": "Scott",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0322",
+    "email": "deldscott@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1965-03-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-08T23:17:12.177304+00:00",
+    "updated_at": "2026-04-25T02:33:14.348642+00:00",
+    "openstates_url": "https://openstates.org/person/don-scott-7ZSrJEujaO3MU5gpu7mgfp/"
+  },
+  {
+    "id": "ocd-person/318cc276-b981-4744-82ff-1c7cc7d0c0b6",
+    "name": "Ellen McLaughlin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:va/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Ellen",
+    "family_name": "McLaughlin",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0350",
+    "email": "delemclaughlin@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:08.378037+00:00",
+    "updated_at": "2026-04-09T08:28:12.850934+00:00",
+    "openstates_url": "https://openstates.org/person/ellen-mclaughlin-1VUwyzQPO9qVhKQy1EkQ46/"
+  },
+  {
+    "id": "ocd-person/704cecad-ef53-44e4-ad55-6c7a7e385e5c",
+    "name": "Eric Phillips",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:va/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Phillips",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0384",
+    "email": "delephillips@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-10T20:51:04.263989+00:00",
+    "updated_at": "2026-01-28T02:36:32.060877+00:00",
+    "openstates_url": "https://openstates.org/person/eric-phillips-3PuIIrhWkBnTcd1Vfl3mqC/"
+  },
+  {
+    "id": "ocd-person/0bd1b9d6-e02e-4cb4-91c8-c87466ebf1db",
+    "name": "Eric Zehr",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:va/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Zehr",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0383",
+    "email": "delezehr@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:10.916891+00:00",
+    "updated_at": "2026-04-25T02:33:18.544617+00:00",
+    "openstates_url": "https://openstates.org/person/eric-zehr-MIl9oKkSryvcOz124qlnX/"
+  },
+  {
+    "id": "ocd-person/418a32b0-5822-4673-9293-e8363038805b",
+    "name": "Garrett McGuire",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:va/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Garrett",
+    "family_name": "McGuire",
+    "image": "https://virginiamercury.com/wp-content/uploads/2026/01/611290992_122105542683186780_8562161094291278751_n.jpg",
+    "email": "delgmcguire@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:37:06.834528+00:00",
+    "updated_at": "2026-04-09T08:27:55.917464+00:00",
+    "openstates_url": "https://openstates.org/person/garrett-mcguire-1zfen2JnviO0BHSfubbdxD/"
+  },
+  {
+    "id": "ocd-person/b151be46-5943-466a-afc5-93355840fe90",
+    "name": "Gretchen Bulova",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:va/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Gretchen",
+    "family_name": "Bulova",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0403.jpg",
+    "email": "delgbulova@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:35:48.882480+00:00",
+    "updated_at": "2026-04-09T08:28:13.397249+00:00",
+    "openstates_url": "https://openstates.org/person/gretchen-bulova-5OazuoZ82kjl8zb1dxEE52/"
+  },
+  {
+    "id": "ocd-person/ec11a019-459d-4184-b0d7-8e88ab5f7dd6",
+    "name": "Hillary Pugh Kent",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:va/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Hillary",
+    "family_name": "Pugh Kent",
+    "image": "https://static.wixstatic.com/media/8f5763_3acf103cae51400f8e2caa87b932d971~mv2.jpg/v1/fill/w_402,h_357,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/8f5763_3acf103cae51400f8e2caa87b932d971~mv2.jpg",
+    "email": "delhkent@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:18.146593+00:00",
+    "updated_at": "2026-01-28T02:35:53.259481+00:00",
+    "openstates_url": "https://openstates.org/person/hillary-pugh-kent-7BSF7uGYuclswOIp2cJk3S/"
+  },
+  {
+    "id": "ocd-person/745d2197-96c4-4e10-be1d-19f70c35f541",
+    "name": "Holly Seibold",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:va/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Holly",
+    "family_name": "Seibold",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0351",
+    "email": "delhseibold@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:12.210377+00:00",
+    "updated_at": "2026-01-28T02:37:32.079175+00:00",
+    "openstates_url": "https://openstates.org/person/holly-seibold-3XZfbO3GqxD6dU9uuyz3r7/"
+  },
+  {
+    "id": "ocd-person/3f02dc5d-5107-4620-add7-c32a2ea8bf44",
+    "name": "Irene Shin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:va/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Irene",
+    "family_name": "Shin",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0344",
+    "email": "delishin@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1987-10-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:34.539753+00:00",
+    "updated_at": "2026-01-28T02:36:26.255285+00:00",
+    "openstates_url": "https://openstates.org/person/irene-shin-1utp5Pczt80U9cV7CQ4bcy/"
+  },
+  {
+    "id": "ocd-person/4524f0db-f682-4b90-9cd5-628eb1d16ca7",
+    "name": "Israel O'Quinn",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:va/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Israel",
+    "family_name": "O'Quinn",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0242",
+    "email": "delioquinn@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1980-03-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:17.191545+00:00",
+    "updated_at": "2026-01-28T02:37:15.471225+00:00",
+    "openstates_url": "https://openstates.org/person/israel-o-quinn-26TLrJpm8qFGDsVox5XfL5/"
+  },
+  {
+    "id": "ocd-person/837c9441-c0d2-497e-80e9-955bf152831b",
+    "name": "J.J. Singh",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:va/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "J.J.",
+    "family_name": "Singh",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0385",
+    "email": "deljsingh@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-23T16:51:32.739363+00:00",
+    "updated_at": "2026-01-28T02:36:41.079099+00:00",
+    "openstates_url": "https://openstates.org/person/j-j-singh-406vVuP0IAiK4NPttA2lMR/"
+  },
+  {
+    "id": "ocd-person/892b7901-d71e-4d8b-b8d0-9034a3d4a066",
+    "name": "J.R. Henson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:va/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "J.R.",
+    "family_name": "Henson",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0365",
+    "email": "delrhenson@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T17:59:55.989658+00:00",
+    "updated_at": "2026-01-28T02:36:35.492866+00:00",
+    "openstates_url": "https://openstates.org/person/j-r-henson-4ApoaCWyu6oc2EeY7f29TS/"
+  },
+  {
+    "id": "ocd-person/dae8ce89-647a-407a-9550-60c404a89e29",
+    "name": "Jackie Glass",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:va/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jackie",
+    "family_name": "Glass",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0349",
+    "email": "deljglass@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-21T10:10:19.163675+00:00",
+    "updated_at": "2026-01-28T02:37:32.847506+00:00",
+    "openstates_url": "https://openstates.org/person/jackie-glass-6f4iel3uFWhVAxnstQjV1N/"
+  },
+  {
+    "id": "ocd-person/80c98569-2ce0-44e9-8cf4-632f2dce684c",
+    "name": "Jason Ballard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:va/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Ballard",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0333",
+    "email": "deljballard@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:29.902193+00:00",
+    "updated_at": "2026-01-28T02:37:43.491343+00:00",
+    "openstates_url": "https://openstates.org/person/jason-ballard-3v171Pckna2vDrKrnpGmqa/"
+  },
+  {
+    "id": "ocd-person/a551cb4b-014c-4423-a9d7-7a35cc0c7bdd",
+    "name": "Jay Leftwich",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:va/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Leftwich",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0262",
+    "email": "deljleftwich@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1962-12-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:17.350545+00:00",
+    "updated_at": "2026-04-09T08:27:54.797385+00:00",
+    "openstates_url": "https://openstates.org/person/jay-leftwich-51x745X32C0xhFk3S1l581/"
+  },
+  {
+    "id": "ocd-person/f3e15ab0-8419-43c2-ab7a-f3984419d1eb",
+    "name": "Jeion Ward",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:va/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jeion",
+    "family_name": "Ward",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0173",
+    "email": "deljward@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1954-01-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:17.884025+00:00",
+    "updated_at": "2026-01-28T02:37:16.511128+00:00",
+    "openstates_url": "https://openstates.org/person/jeion-ward-7QC7bQg7GvHN8PnQ3dUh8l/"
+  },
+  {
+    "id": "ocd-person/f2a47eb9-0839-48e8-baf2-c2d638bf380b",
+    "name": "Jessica Anderson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:va/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jessica",
+    "family_name": "Anderson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jessica_Anderson_20251008_030628.jpg",
+    "email": "deljanderson@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:28.434672+00:00",
+    "updated_at": "2026-01-28T02:36:29.140527+00:00",
+    "openstates_url": "https://openstates.org/person/jessica-anderson-7NrJghdn98oNLXvuU2ycA7/"
+  },
+  {
+    "id": "ocd-person/a0178eeb-c6bb-4e20-9024-f859d4780be6",
+    "name": "Joe McNamara",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:va/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "McNamara",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0308",
+    "email": "deljmcnamara@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-04T05:22:22.702164+00:00",
+    "updated_at": "2026-01-28T02:35:48.164276+00:00",
+    "openstates_url": "https://openstates.org/person/joe-mcnamara-4s5XNvsbEJTdyTMn9amwTO/"
+  },
+  {
+    "id": "ocd-person/fef2f7f3-d388-4bf6-818f-6a58ae193721",
+    "name": "John McAuliff",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:va/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "McAuliff",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0395.jpg",
+    "email": "deljmcauliff@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:21.694619+00:00",
+    "updated_at": "2026-01-28T02:36:22.435775+00:00",
+    "openstates_url": "https://openstates.org/person/john-mcauliff-7l55SGa44D7MWdSZkZrPHN/"
+  },
+  {
+    "id": "ocd-person/986f0601-025b-4fa7-acda-b2d3c2280784",
+    "name": "Josh Cole",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:va/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Cole",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0314",
+    "email": "deljcole@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1990-07-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-08T23:17:09.684065+00:00",
+    "updated_at": "2026-01-28T02:37:24.223122+00:00",
+    "openstates_url": "https://openstates.org/person/josh-cole-4ddZR5AaBHQXZpv2pl55XA/"
+  },
+  {
+    "id": "ocd-person/b6db5cc9-d9d3-4cbd-9532-6126a47c2ab3",
+    "name": "Josh Thomas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:va/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Thomas",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Thomas_Headshot_HiRes-1-edited-1536x1536.jpg",
+    "email": "deljthomas@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:02.387094+00:00",
+    "updated_at": "2026-01-28T02:36:31.166932+00:00",
+    "openstates_url": "https://openstates.org/person/josh-thomas-5Z2qqkokbVfFvB9Aci303H/"
+  },
+  {
+    "id": "ocd-person/ee82c166-4df9-4e98-8399-1e10d48dcd06",
+    "name": "Justin Pence",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:va/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Pence",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0398.jpg",
+    "email": "deljpence@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:20.930862+00:00",
+    "updated_at": "2026-04-09T08:28:07.544216+00:00",
+    "openstates_url": "https://openstates.org/person/justin-pence-7G3vbzWjJNIeuDGgOlLNvK/"
+  },
+  {
+    "id": "ocd-person/aeba499e-3396-4787-bd81-e9b16a8898f7",
+    "name": "Kacey Carnegie",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:va/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Kacey",
+    "family_name": "Carnegie",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0387.jpg",
+    "email": "delkcarnegie@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:37:37.883600+00:00",
+    "updated_at": "2026-04-09T08:28:41.611440+00:00",
+    "openstates_url": "https://openstates.org/person/kacey-carnegie-5JhnVdaZOSPHLFxnLMS2Lv/"
+  },
+  {
+    "id": "ocd-person/b209f24e-0f1f-4f80-b2d9-1c05ee94ba4e",
+    "name": "Karen Hamilton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:va/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Hamilton",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0394.jpg",
+    "email": "delkhamilton@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:16.868515+00:00",
+    "updated_at": "2026-04-09T08:28:15.254132+00:00",
+    "openstates_url": "https://openstates.org/person/karen-hamilton-5PxB91rKXpKKa50xSR0FTS/"
+  },
+  {
+    "id": "ocd-person/7c045b50-e18d-422e-b87f-26eb7b61d651",
+    "name": "Karen Keys-Gamarra",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:va/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Keys-Gamarra",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0370",
+    "email": "delkkeys-gamarra@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:22.179224+00:00",
+    "updated_at": "2026-01-28T02:36:53.182602+00:00",
+    "openstates_url": "https://openstates.org/person/karen-keys-gamarra-3m12S5TjxJ7Gs6In9v2Tc9/"
+  },
+  {
+    "id": "ocd-person/7ec1cbe4-667d-4dbb-a840-459449ccd5df",
+    "name": "Karrie Delaney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:va/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Karrie",
+    "family_name": "Delaney",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0294",
+    "email": "delkdelaney@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1978-12-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:18.879924+00:00",
+    "updated_at": "2026-01-28T02:35:55.821204+00:00",
+    "openstates_url": "https://openstates.org/person/karrie-delaney-3rBb6LyPuod0VvAMI9dcNT/"
+  },
+  {
+    "id": "ocd-person/ddba8b1b-8a1d-42c2-aba5-adc1331ee6f1",
+    "name": "Kathy Tran",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:va/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Kathy",
+    "family_name": "Tran",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0305",
+    "email": "delktran@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:19.103883+00:00",
+    "updated_at": "2026-01-28T02:36:01.493975+00:00",
+    "openstates_url": "https://openstates.org/person/kathy-tran-6kOYOlmVqQ0D5Lfgy97b29/"
+  },
+  {
+    "id": "ocd-person/d0263d88-91b1-414d-b58b-1ff0523f75ec",
+    "name": "Katrina Callsen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:va/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Katrina",
+    "family_name": "Callsen",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0354",
+    "email": "delkcallsen@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T17:59:57.594662+00:00",
+    "updated_at": "2026-04-09T08:28:27.543677+00:00",
+    "openstates_url": "https://openstates.org/person/katrina-callsen-6KlsYMw53ykPWmelgJUYRQ/"
+  },
+  {
+    "id": "ocd-person/06c0d909-22c8-4d71-9b6c-cc363a0c9553",
+    "name": "Keith Hodges",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:va/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Hodges",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0238",
+    "email": "delkhodges@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1966-05-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:19.992310+00:00",
+    "updated_at": "2026-01-28T02:37:19.827040+00:00",
+    "openstates_url": "https://openstates.org/person/keith-hodges-Ck5JEzpH7AD6OUCMPc2F9/"
+  },
+  {
+    "id": "ocd-person/bf558d98-23da-41c4-8ae2-4dc45631808c",
+    "name": "Kelly Fowler",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:va/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Kelly",
+    "family_name": "Fowler",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0295",
+    "email": "delkconvirs-fowler@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:19.254803+00:00",
+    "updated_at": "2026-01-28T02:37:27.623261+00:00",
+    "openstates_url": "https://openstates.org/person/kelly-fowler-5p2dCgLHs9Dy35hILXZnUi/"
+  },
+  {
+    "id": "ocd-person/9f8c35c8-2a50-407f-815a-603b9c9d8bad",
+    "name": "Kim Adams",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:va/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Adams",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0399.jpg",
+    "email": "delkpopeadams@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:33.021262+00:00",
+    "updated_at": "2026-01-28T02:36:33.755411+00:00",
+    "openstates_url": "https://openstates.org/person/kim-adams-4r3r59RQ6hplFUoPqW7Zq1/"
+  },
+  {
+    "id": "ocd-person/b0a785c3-d317-455f-9d0e-ab08a727e44f",
+    "name": "Kirk McPike",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:va/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Kirk",
+    "family_name": "McPike",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0406.jpg",
+    "email": "delkmcpike@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1977-07-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-09T08:28:09.933922+00:00",
+    "updated_at": "2026-04-25T02:33:09.174930+00:00",
+    "openstates_url": "https://openstates.org/person/kirk-mcpike-5NLCrq9dfKX5fmzCVo2FDz/"
+  },
+  {
+    "id": "ocd-person/6840c55c-6496-44ce-8a60-3288e222ddc0",
+    "name": "Laura Jane Cohen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:va/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Laura Jane",
+    "family_name": "Cohen",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/LauraJaneCohen.jpg",
+    "email": "delljcohen@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:07.511044+00:00",
+    "updated_at": "2026-01-28T02:36:27.804332+00:00",
+    "openstates_url": "https://openstates.org/person/laura-jane-cohen-3AinkSd0GduFS492rd27Bw/"
+  },
+  {
+    "id": "ocd-person/865dace5-518d-4f4f-b393-c197064affe6",
+    "name": "Lee Ware",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:va/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Lee",
+    "family_name": "Ware",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0124",
+    "email": "dellware@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1952-08-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:21.493888+00:00",
+    "updated_at": "2026-01-28T02:36:24.315167+00:00",
+    "openstates_url": "https://openstates.org/person/lee-ware-45XmSOprfC2BwdXi2UMnmI/"
+  },
+  {
+    "id": "ocd-person/9c41c70b-7162-48e5-a868-aca213cf8f6d",
+    "name": "Leslie Mehta",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:va/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Leslie",
+    "family_name": "Mehta",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0396.jpg",
+    "email": "dellmehta@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:01.791399+00:00",
+    "updated_at": "2026-01-28T02:36:02.539684+00:00",
+    "openstates_url": "https://openstates.org/person/leslie-mehta-4kqrWz7SEn0M9waTVatwNB/"
+  },
+  {
+    "id": "ocd-person/ae28ba3f-6c53-463c-ac43-a5549ef51d48",
+    "name": "Lily Franklin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:va/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Lily",
+    "family_name": "Franklin",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0393.jpg",
+    "email": "dellfranklin@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:45.947928+00:00",
+    "updated_at": "2026-04-09T08:28:06.625745+00:00",
+    "openstates_url": "https://openstates.org/person/lily-franklin-5IdHCR6ZS9SFTDMIZlLPpY/"
+  },
+  {
+    "id": "ocd-person/1084ab28-a14a-4814-8501-96cfd1b17d1d",
+    "name": "Lindsey Dougherty",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:va/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Lindsey",
+    "family_name": "Dougherty",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0391.jpg",
+    "email": "delldougherty@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:37:07.651917+00:00",
+    "updated_at": "2026-04-09T08:28:28.526284+00:00",
+    "openstates_url": "https://openstates.org/person/lindsey-dougherty-VAVQhUeiX4Y4ueosFSsIP/"
+  },
+  {
+    "id": "ocd-person/34c31079-0077-4ce5-9985-d0f2a95a12a7",
+    "name": "Liz Guzm\u00e1n",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:va/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Guzm\u00e1n",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0297",
+    "email": "deleguzman@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1973-02-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:16.364508+00:00",
+    "updated_at": "2026-04-09T08:28:20.101983+00:00",
+    "openstates_url": "https://openstates.org/person/liz-guzman-1bYkEJM49L0T5knpj7vJbT/"
+  },
+  {
+    "id": "ocd-person/44ebbeab-055c-402b-a56e-bb7487d0da62",
+    "name": "Luke Torian",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:va/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Luke",
+    "family_name": "Torian",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0227",
+    "email": "delltorian@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1958-05-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:19.842348+00:00",
+    "updated_at": "2026-04-09T08:28:06.104936+00:00",
+    "openstates_url": "https://openstates.org/person/luke-torian-263DGGNQuaTYY9gSwtwwGw/"
+  },
+  {
+    "id": "ocd-person/b448d4e4-ec11-452e-ae35-2bffc0662f75",
+    "name": "Madison Whittle",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:va/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Madison",
+    "family_name": "Whittle",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0401.jpg",
+    "email": "delmwhittle@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:50.164024+00:00",
+    "updated_at": "2026-04-09T08:28:31.537163+00:00",
+    "openstates_url": "https://openstates.org/person/madison-whittle-5UBtz8ChtJbAEyB8HcJoV3/"
+  },
+  {
+    "id": "ocd-person/ca122856-dfc5-4ba1-84bb-48fdcf7a36f5",
+    "name": "Marcus Simon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:va/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Marcus",
+    "family_name": "Simon",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0264",
+    "email": "delmsimon@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1970-07-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:20.284539+00:00",
+    "updated_at": "2026-01-28T02:35:46.740331+00:00",
+    "openstates_url": "https://openstates.org/person/marcus-simon-69IkNdyA9ov9iIAFifWq5V/"
+  },
+  {
+    "id": "ocd-person/71c20dff-ae7b-4799-bd80-7e0c03c402fc",
+    "name": "Margaret Franklin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:va/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Margaret",
+    "family_name": "Franklin",
+    "image": "https://www.pwcva.gov/assets/2024-01/dsc_6818retouch.jpg",
+    "email": "delmfranklin@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:55.011668+00:00",
+    "updated_at": "2026-04-09T08:28:35.858089+00:00",
+    "openstates_url": "https://openstates.org/person/margaret-franklin-3SeobQI9eADYeLVpbZEZ0G/"
+  },
+  {
+    "id": "ocd-person/3ae2755c-8274-4d09-bad4-243275577ba2",
+    "name": "Mark Downey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:va/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Downey",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0392.jpg",
+    "email": "delmdowney@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:37:13.899683+00:00",
+    "updated_at": "2026-04-09T08:27:47.749660+00:00",
+    "openstates_url": "https://openstates.org/person/mark-downey-1n72tktfM7ttRO9cWRWWlG/"
+  },
+  {
+    "id": "ocd-person/beaab5ae-3e8d-4c12-b388-a59cdc467771",
+    "name": "Marty Martinez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:va/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Marty",
+    "family_name": "Martinez",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0374",
+    "email": "delmmartinez@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1952-10-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T17:59:52.533858+00:00",
+    "updated_at": "2026-01-28T02:36:20.674780+00:00",
+    "openstates_url": "https://openstates.org/person/marty-martinez-5nmYVqxntDY3UMCNfWvYbR/"
+  },
+  {
+    "id": "ocd-person/50a18b88-f257-4234-920f-cfa531a28be4",
+    "name": "May Nivar",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:va/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "May",
+    "family_name": "Nivar",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0397.jpg",
+    "email": "delmnivar@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1970-08-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:45.186559+00:00",
+    "updated_at": "2026-01-28T02:36:45.891487+00:00",
+    "openstates_url": "https://openstates.org/person/may-nivar-2S9DAgRObKEJBaVPq9zmDM/"
+  },
+  {
+    "id": "ocd-person/cbf3268e-ced2-4aad-8ed1-18e4f37534ec",
+    "name": "Michael Feggans",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:va/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Feggans",
+    "image": "https://images.squarespace-cdn.com/content/v1/598f6428d482e9b47f6c2f82/56c91f83-d16a-4ba2-adcb-75d312e265bd/Michael_Feggans_HD97.jpeg",
+    "email": "delmfeggans@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1983-07-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:13.997386+00:00",
+    "updated_at": "2026-01-28T02:37:29.467142+00:00",
+    "openstates_url": "https://openstates.org/person/michael-feggans-6CqYsKQ23nem4ZiIfDqKrs/"
+  },
+  {
+    "id": "ocd-person/47e6d456-740e-4707-ae93-4b6efe8c0ce1",
+    "name": "Michelle Maldonado",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:va/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Maldonado",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Michelle-Maldonado.jpg",
+    "email": "delmmaldonado@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:52.017058+00:00",
+    "updated_at": "2026-04-09T08:27:57.290856+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-maldonado-2BfwYujYL2T9fTzwTRO5dB/"
+  },
+  {
+    "id": "ocd-person/32b96a0d-662a-4c8f-9b2b-f86365640624",
+    "name": "Mike Cherry",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:va/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Cherry",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0335",
+    "email": "delmcherry@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:46.763065+00:00",
+    "updated_at": "2026-01-28T02:36:59.835560+00:00",
+    "openstates_url": "https://openstates.org/person/mike-cherry-1XiLkslJf3BWXA68E7fFtk/"
+  },
+  {
+    "id": "ocd-person/bf425b62-d078-45bd-957c-baceb4bfad1b",
+    "name": "Mike Webert",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:va/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Webert",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0247",
+    "email": "delmwebert@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1979-09-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:20.977112+00:00",
+    "updated_at": "2026-01-28T02:36:47.495225+00:00",
+    "openstates_url": "https://openstates.org/person/mike-webert-5otrIbDQJz16z8xpN5TA8x/"
+  },
+  {
+    "id": "ocd-person/e766f1e0-8651-4cc2-a394-904fa6f3aea0",
+    "name": "Mitchell Cornett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:va/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mitchell",
+    "family_name": "Cornett",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0390.jpg",
+    "email": "delmcornett@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:10.401189+00:00",
+    "updated_at": "2026-01-28T02:36:11.195625+00:00",
+    "openstates_url": "https://openstates.org/person/mitchell-cornett-72eGx9gJVY6FzSMrkkVb6m/"
+  },
+  {
+    "id": "ocd-person/a7fd18db-f30c-45c6-aa90-bdb6f2ce412b",
+    "name": "Nadarius Clark",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:va/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Nadarius",
+    "family_name": "Clark",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0336",
+    "email": "delnclark@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:43.682494+00:00",
+    "updated_at": "2026-01-28T02:35:58.478091+00:00",
+    "openstates_url": "https://openstates.org/person/nadarius-clark-56zNpHFlBvjVwkpfiKvVnP/"
+  },
+  {
+    "id": "ocd-person/f09abfed-0fb2-4ef3-966c-4cc0246b701d",
+    "name": "Nicole Cole",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:va/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Nicole",
+    "family_name": "Cole",
+    "image": "https://static.wixstatic.com/media/b64009_9f1620ff00c14cdcbfec5e257ba8edd7~mv2.jpg/v1/crop/x_0,y_0,w_2870,h_3177/fill/w_382,h_478,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0348_EDIT.jpg",
+    "email": "delncole@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:04.071337+00:00",
+    "updated_at": "2026-04-25T02:32:59.827530+00:00",
+    "openstates_url": "https://openstates.org/person/nicole-cole-7K0sVzztiFRtZ3HhheqSKL/"
+  },
+  {
+    "id": "ocd-person/496f9aa1-91ba-4386-9530-f52ea56e17bf",
+    "name": "Otto Wachsmann",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:va/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Otto",
+    "family_name": "Wachsmann",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0347",
+    "email": "delowachsmann@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:33.379226+00:00",
+    "updated_at": "2026-01-28T02:37:28.699185+00:00",
+    "openstates_url": "https://openstates.org/person/otto-wachsmann-2EZRT60Vk3uqbfB29ae4Nz/"
+  },
+  {
+    "id": "ocd-person/c10414ad-5251-4fba-8ad9-a541311f2b9f",
+    "name": "Patrick Hope",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:va/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Hope",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0219",
+    "email": "delphope@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1972-03-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:21.270082+00:00",
+    "updated_at": "2026-01-28T02:35:51.175320+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-hope-5sDNoC04rKjqPV7OXyXSff/"
+  },
+  {
+    "id": "ocd-person/d90e6a36-4464-4481-b00d-74ed9964d45e",
+    "name": "Paul Krizek",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:va/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Krizek",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0281",
+    "email": "delpkrizek@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1961-07-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:21.344517+00:00",
+    "updated_at": "2026-01-28T02:37:10.499220+00:00",
+    "openstates_url": "https://openstates.org/person/paul-krizek-6bZvCOWhHRe5ATYvvBPPCA/"
+  },
+  {
+    "id": "ocd-person/bbd31428-1b2b-48c6-aa76-cb785e91ca8f",
+    "name": "Phil Hernandez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:va/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Hernandez",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0366",
+    "email": "delphernandez@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:00.976795+00:00",
+    "updated_at": "2026-01-28T02:36:38.854766+00:00",
+    "openstates_url": "https://openstates.org/person/phil-hernandez-5iQ1lAFrqhaubyNROizA9X/"
+  },
+  {
+    "id": "ocd-person/6a07d7b6-a4b4-42f8-9a06-6a860249f5b9",
+    "name": "Phil Scott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:va/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Scott",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0342",
+    "email": "delpscott@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:32.375639+00:00",
+    "updated_at": "2026-01-28T02:37:13.653606+00:00",
+    "openstates_url": "https://openstates.org/person/phil-scott-3E4lmlycufdfo5n5O8G2KP/"
+  },
+  {
+    "id": "ocd-person/359eaeba-903c-42b4-b9e3-5c5b4e9d721d",
+    "name": "Rae Cousins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:va/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Rae",
+    "family_name": "Cousins",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0356.jpg",
+    "email": "delrcousins@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T17:59:59.609133+00:00",
+    "updated_at": "2026-01-28T02:36:05.713939+00:00",
+    "openstates_url": "https://openstates.org/person/rae-cousins-1dB6uPvDRp1Bu0Eaw3e7Dh/"
+  },
+  {
+    "id": "ocd-person/658209cc-5e85-4c57-aa94-878089f3d816",
+    "name": "Rip Sullivan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:va/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Rip",
+    "family_name": "Sullivan",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0269",
+    "email": "delrsullivan@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1959-03-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:21.649716+00:00",
+    "updated_at": "2026-01-28T02:37:12.491769+00:00",
+    "openstates_url": "https://openstates.org/person/rip-sullivan-35XeSuhPi13VcXBGgujmGU/"
+  },
+  {
+    "id": "ocd-person/10868c64-b4b8-41ca-90ac-a981f9fa47ff",
+    "name": "Rob Bloxom",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:va/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Bloxom",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0267",
+    "email": "delrbloxom@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1963-02-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:22.328971+00:00",
+    "updated_at": "2026-01-28T02:35:54.834211+00:00",
+    "openstates_url": "https://openstates.org/person/rob-bloxom-VBMh0fIGlmCSNzS3cpnkl/"
+  },
+  {
+    "id": "ocd-person/8ec90d7b-fd5f-4157-b779-1979e7a54e76",
+    "name": "Rod Willett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:va/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Rod",
+    "family_name": "Willett",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0327",
+    "email": "delrwillett@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-08T23:17:08.772459+00:00",
+    "updated_at": "2026-01-28T02:36:12.922325+00:00",
+    "openstates_url": "https://openstates.org/person/rod-willett-4LQn5WhzLXATmFhgLRXIk2/"
+  },
+  {
+    "id": "ocd-person/6ab67007-e48a-4048-bb7b-20a608a88f77",
+    "name": "Sam Rasoul",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:va/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Rasoul",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0266",
+    "email": "delsrasoul@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1981-06-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:22.808540+00:00",
+    "updated_at": "2026-01-28T02:36:23.360628+00:00",
+    "openstates_url": "https://openstates.org/person/sam-rasoul-3FMYm2sEAef5BFXHvVACvv/"
+  },
+  {
+    "id": "ocd-person/2a831795-d6fc-4635-88bf-4fd5f72ab1e7",
+    "name": "Scott Wyatt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:va/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Wyatt",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0328",
+    "email": "delswyatt@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-08T23:17:12.224337+00:00",
+    "updated_at": "2026-01-28T02:37:01.923117+00:00",
+    "openstates_url": "https://openstates.org/person/scott-wyatt-1IDaORZVASGVWNGJ6wGEMx/"
+  },
+  {
+    "id": "ocd-person/8329b3a6-9d6f-427e-9342-e53277e7c6ff",
+    "name": "Shelly Simonds",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:va/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Shelly",
+    "family_name": "Simonds",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0323",
+    "email": "delssimonds@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1967-11-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-08T23:17:08.823593+00:00",
+    "updated_at": "2026-01-28T02:37:03.767280+00:00",
+    "openstates_url": "https://openstates.org/person/shelly-simonds-3zV3GASqB6g2OBOj9MkVQd/"
+  },
+  {
+    "id": "ocd-person/4caa245e-038f-4a7f-8cb3-ecd9da716885",
+    "name": "Stacey Carroll",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:va/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Stacey",
+    "family_name": "Carroll",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0388.jpg",
+    "email": "delscarroll@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:36:32.260512+00:00",
+    "updated_at": "2026-04-09T08:28:08.452544+00:00",
+    "openstates_url": "https://openstates.org/person/stacey-carroll-2KfAf7utHoY5nE0ozpjko9/"
+  },
+  {
+    "id": "ocd-person/cb9573ab-1bf6-45d5-a8d7-476d7bed94a8",
+    "name": "Terry Austin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:va/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Austin",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0253",
+    "email": "deltaustin@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1955-10-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:23.478608+00:00",
+    "updated_at": "2026-01-28T02:36:00.499218+00:00",
+    "openstates_url": "https://openstates.org/person/terry-austin-6C9k0SZ8EBbYoJ2BW1jJrU/"
+  },
+  {
+    "id": "ocd-person/9303514b-3bce-4ddc-87d2-17a6ba4d6194",
+    "name": "Terry Kilgore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:va/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Kilgore",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0056",
+    "email": "deltkilgore@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1961-08-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:23.405152+00:00",
+    "updated_at": "2026-01-28T02:36:09.507311+00:00",
+    "openstates_url": "https://openstates.org/person/terry-kilgore-4TPO4DORxVzsI4Bo1pdx7U/"
+  },
+  {
+    "id": "ocd-person/d112b6c3-e52f-4da4-a6fe-5866bf3f6799",
+    "name": "Tim Griffin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:va/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Griffin",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0364",
+    "email": "deltgriffin@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:09.584943+00:00",
+    "updated_at": "2026-01-28T02:36:30.295654+00:00",
+    "openstates_url": "https://openstates.org/person/tim-griffin-6MVwoWkhgcEyCPWNaBoiEb/"
+  },
+  {
+    "id": "ocd-person/0bba07ba-7713-4ca7-8f44-699c832e0d2a",
+    "name": "Tom Garrett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:va/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Garrett",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0362",
+    "email": "deltgarrett@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1972-03-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-09T23:35:19.706296+00:00",
+    "updated_at": "2026-01-28T02:36:52.279307+00:00",
+    "openstates_url": "https://openstates.org/person/tom-garrett-M7vlBiDSwJsPzfJc8jxAw/"
+  },
+  {
+    "id": "ocd-person/894118dd-1470-48b7-b84b-831ddba58e1b",
+    "name": "Tommy Wright",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:va/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Tommy",
+    "family_name": "Wright",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0136",
+    "email": "deltwright@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1948-04-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:23.551276+00:00",
+    "updated_at": "2026-01-28T02:37:05.629260+00:00",
+    "openstates_url": "https://openstates.org/person/tommy-wright-4AzhI8Gu0PxHQ9D7zmjGqB/"
+  },
+  {
+    "id": "ocd-person/94fa59c7-00b0-4e15-9887-8af534217476",
+    "name": "Tony Wilt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:va/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Wilt",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0231",
+    "email": "deltwilt@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1961-09-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:23.848425+00:00",
+    "updated_at": "2026-01-28T02:36:14.897047+00:00",
+    "openstates_url": "https://openstates.org/person/tony-wilt-4X7H31WpSMAJlRg2Swl2Pu/"
+  },
+  {
+    "id": "ocd-person/63c0c8ef-ded6-406e-9d5d-a114fa35e26a",
+    "name": "Virgil Thornton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:va/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Virgil",
+    "family_name": "Thornton",
+    "image": "https://house.vga.virginia.gov/delegate_photos/H0400.jpg",
+    "email": "delvthornton@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:35:56.116007+00:00",
+    "updated_at": "2026-04-09T08:28:42.104294+00:00",
+    "openstates_url": "https://openstates.org/person/virgil-thornton-32ELHjD3zcGDvO77MdAK1y/"
+  },
+  {
+    "id": "ocd-person/b251a648-d2d3-4799-8213-e803fed621de",
+    "name": "Vivian Watts",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:va/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Vivian",
+    "family_name": "Watts",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0108",
+    "email": "delvwatts@house.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1940-06-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:23.923619+00:00",
+    "updated_at": "2026-01-28T02:37:25.250229+00:00",
+    "openstates_url": "https://openstates.org/person/vivian-watts-5QTwmh5hNi4uESEQmEyHPC/"
+  },
+  {
+    "id": "ocd-person/18756686-0b6c-4a7d-ade9-db2cafcac870",
+    "name": "Wendell Walker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:va/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Wendell",
+    "family_name": "Walker",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0325",
+    "email": "delwwalker@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-08T23:17:05.256538+00:00",
+    "updated_at": "2026-01-28T02:35:59.305063+00:00",
+    "openstates_url": "https://openstates.org/person/wendell-walker-k9T13rfdcJFc0En9HuO2a/"
+  },
+  {
+    "id": "ocd-person/53937ad8-9c5b-4493-95fc-a18565577dd8",
+    "name": "Will Davis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:va/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Davis",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0357",
+    "email": "delwdavis@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1971-01-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:09.746249+00:00",
+    "updated_at": "2026-01-28T02:37:35.196983+00:00",
+    "openstates_url": "https://openstates.org/person/will-davis-2XhlDhEVbtb13GzzZTDPVg/"
+  },
+  {
+    "id": "ocd-person/0f77b7d1-a89e-41cd-ae83-28d267dab0e2",
+    "name": "Will Morefield",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:va/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Morefield",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0224",
+    "email": "deljmorefield@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1984-01-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:17.506107+00:00",
+    "updated_at": "2026-01-28T02:37:39.646993+00:00",
+    "openstates_url": "https://openstates.org/person/will-morefield-TBaxnwUtYo2wRy15oR5vO/"
+  },
+  {
+    "id": "ocd-person/d3a4b614-4a6f-4b38-b3cc-8990f0f7d4d3",
+    "name": "Wren Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Delegate",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:va/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Wren",
+    "family_name": "Williams",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0348",
+    "email": "delwwilliams@house.virginia.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:30.833538+00:00",
+    "updated_at": "2026-04-09T08:28:47.198023+00:00",
+    "openstates_url": "https://openstates.org/person/wren-williams-6RMeYumaXxPFNbAVXdupZz/"
+  }
+]

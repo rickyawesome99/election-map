@@ -1,0 +1,1124 @@
+[
+  {
+    "id": "ocd-person/7782ffcd-73df-41b5-9857-fd7b10953bf3",
+    "name": "Andrew Zwicker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:nj/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Zwicker",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/zwicker_andrew_2019.jpg",
+    "email": "senzwicker@njleg.org",
+    "gender": "Male",
+    "birth_date": "1964-05-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:01.299953+00:00",
+    "updated_at": "2026-01-29T07:39:36.919108+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-zwicker-3dVx87fdOIFuYLsrh0kW4B/"
+  },
+  {
+    "id": "ocd-person/d8c826c4-95c7-465b-8448-1f05495bfc45",
+    "name": "Angela McKnight",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:nj/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Angela",
+    "family_name": "McKnight",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/mcknight_color.jpg",
+    "email": "senmcknight@njleg.org",
+    "gender": "Female",
+    "birth_date": "1977-03-10",
+    "death_date": "",
+    "extras": {
+      "position": "Deputy Majority Leader"
+    },
+    "created_at": "2018-10-18T14:55:05.230021+00:00",
+    "updated_at": "2026-04-25T01:44:26.515980+00:00",
+    "openstates_url": "https://openstates.org/person/angela-mcknight-6b3oLg9bh5dOgof91Hsayj/"
+  },
+  {
+    "id": "ocd-person/18fa38fc-954e-43d9-a294-a2068828216e",
+    "name": "Benjie Wimberly",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:nj/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Benjie",
+    "family_name": "Wimberly",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/wimberly_color.jpg",
+    "email": "senwimberly@njleg.org",
+    "gender": "Male",
+    "birth_date": "1964-12-01",
+    "death_date": "",
+    "extras": {
+      "position": "Speaker Pro Tempore"
+    },
+    "created_at": "2018-10-18T14:55:06.084390+00:00",
+    "updated_at": "2025-03-29T01:42:33.819380+00:00",
+    "openstates_url": "https://openstates.org/person/benjie-wimberly-l8APOdumNO2fj4vxedy9e/"
+  },
+  {
+    "id": "ocd-person/45219a29-080f-4452-9b05-92488e96f2f1",
+    "name": "Bob Singer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:nj/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Singer",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/singer_color.jpg",
+    "email": "sensinger@njleg.org",
+    "gender": "Male",
+    "birth_date": "1947-10-29",
+    "death_date": "",
+    "extras": {
+      "position": "Deputy Republican Leader/Ranking Member Health Committee"
+    },
+    "created_at": "2018-10-18T14:55:04.565344+00:00",
+    "updated_at": "2025-03-29T01:43:20.396726+00:00",
+    "openstates_url": "https://openstates.org/person/bob-singer-26RpGEpEZkNvCBZXC6FX9N/"
+  },
+  {
+    "id": "ocd-person/177d44ba-0c93-4e26-b245-84aa2239f7b4",
+    "name": "Bob Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:nj/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Smith",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/smith_bob_2021.jpg",
+    "email": "senbsmith@njleg.org",
+    "gender": "Male",
+    "birth_date": "1947-03-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:02.125446+00:00",
+    "updated_at": "2026-01-29T07:40:18.538876+00:00",
+    "openstates_url": "https://openstates.org/person/bob-smith-iK4QL9ml0J9CbVNebwJds/"
+  },
+  {
+    "id": "ocd-person/6f616307-dafe-44ca-a6b3-5f9516d21f89",
+    "name": "Brian Stack",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:nj/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Stack",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/stack_color.jpg",
+    "email": "senstack@njleg.org",
+    "gender": "Male",
+    "birth_date": "1966-05-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:08.702767+00:00",
+    "updated_at": "2026-01-29T07:40:50.070780+00:00",
+    "openstates_url": "https://openstates.org/person/brian-stack-3OAeYlPEhGBTej7R0vRA5p/"
+  },
+  {
+    "id": "ocd-person/707e3027-d06f-4346-8c11-3ff1becbe725",
+    "name": "Britnee Timberlake",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:nj/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Britnee",
+    "family_name": "Timberlake",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/timberlake_britnee_2018.jpg",
+    "email": "sentimberlake@njleg.org",
+    "gender": "Female",
+    "birth_date": "1986-05-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:02.792436+00:00",
+    "updated_at": "2025-03-29T01:43:05.148886+00:00",
+    "openstates_url": "https://openstates.org/person/britnee-timberlake-3QGo8pUJrBDgbyCuDS7tgr/"
+  },
+  {
+    "id": "ocd-person/0f0e1edc-6ab5-4fca-8999-2db3229c5d19",
+    "name": "Carmen Amato",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:nj/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Carmen",
+    "family_name": "Amato",
+    "image": "",
+    "email": "senamato@njleg.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-10T05:53:39.374970+00:00",
+    "updated_at": "2026-01-29T07:40:04.795657+00:00",
+    "openstates_url": "https://openstates.org/person/carmen-amato-SPKxKKXxzaV5oF7hfLCjx/"
+  },
+  {
+    "id": "ocd-person/ac044b70-7745-435a-9c38-c4af013d0b0e",
+    "name": "Declan O'Scanlon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:nj/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Declan",
+    "family_name": "O'Scanlon",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/oscanlon_color.jpg",
+    "email": "senoscanlon@njleg.org",
+    "gender": "Male",
+    "birth_date": "1963-06-09",
+    "death_date": "",
+    "extras": {
+      "position": "Budget Officer"
+    },
+    "created_at": "2018-10-18T14:55:02.623710+00:00",
+    "updated_at": "2025-03-29T01:43:21.493521+00:00",
+    "openstates_url": "https://openstates.org/person/declan-o-scanlon-5EadrNOqRoj4QSJ4zq2dI6/"
+  },
+  {
+    "id": "ocd-person/2798197f-1516-44ef-9933-99e5b23f19c8",
+    "name": "Doug Steinhardt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:nj/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Steinhardt",
+    "image": "",
+    "email": "sensteinhardt@njleg.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-18T22:40:31.987594+00:00",
+    "updated_at": "2026-01-29T07:39:49.027830+00:00",
+    "openstates_url": "https://openstates.org/person/doug-steinhardt-1CiD30wsbBeSxTM1eQB4HI/"
+  },
+  {
+    "id": "ocd-person/53fe6716-2bdb-4926-993f-4a2cf002ad51",
+    "name": "Gordon Johnson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:nj/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Gordon",
+    "family_name": "Johnson",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/johnson_color.jpg",
+    "email": "senjohnson@njleg.org",
+    "gender": "Male",
+    "birth_date": "1949-12-16",
+    "death_date": "",
+    "extras": {
+      "position": "Assistant Majority Leader"
+    },
+    "created_at": "2022-01-12T21:01:23.313086+00:00",
+    "updated_at": "2026-01-29T07:39:47.152209+00:00",
+    "openstates_url": "https://openstates.org/person/gordon-johnson-2YUcmNuO4icp8DuIkVZf0L/"
+  },
+  {
+    "id": "ocd-person/57fe7d05-af12-4f44-b143-e19814f2cfa2",
+    "name": "Holly Schepisi",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:nj/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Holly",
+    "family_name": "Schepisi",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/schepisi_holly_2021.jpg",
+    "email": "senschepisi@njleg.org",
+    "gender": "Female",
+    "birth_date": "1971-12-20",
+    "death_date": "",
+    "extras": {
+      "position": "Conference Leader"
+    },
+    "created_at": "2018-10-18T14:54:56.094958+00:00",
+    "updated_at": "2026-01-29T07:39:52.046544+00:00",
+    "openstates_url": "https://openstates.org/person/holly-schepisi-2g2dIviZ7z3xjDPz5q6tEo/"
+  },
+  {
+    "id": "ocd-person/87714b2b-1868-4d3f-aa3f-a3d25db0fbc6",
+    "name": "Jim Beach",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:nj/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Beach",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/beach_color.jpg",
+    "email": "senbeach@njleg.org",
+    "gender": "Male",
+    "birth_date": "1946-10-28",
+    "death_date": "",
+    "extras": {
+      "position": "Assistant Majority Leader"
+    },
+    "created_at": "2018-10-18T14:54:50.761616+00:00",
+    "updated_at": "2025-03-29T01:42:27.758074+00:00",
+    "openstates_url": "https://openstates.org/person/jim-beach-47ZjqXdBSC9u4eOFnyRGfG/"
+  },
+  {
+    "id": "ocd-person/32e625c0-5e22-40b4-a6a3-4040d10e6ff0",
+    "name": "Jim Holzapfel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:nj/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Holzapfel",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/holzapfel_james_2020.jpg",
+    "email": "senholzapfel@njleg.org",
+    "gender": "Male",
+    "birth_date": "1944-10-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:54:55.777692+00:00",
+    "updated_at": "2025-03-29T01:42:42.485412+00:00",
+    "openstates_url": "https://openstates.org/person/jim-holzapfel-1Y2nEGtVtN4lkBly8hLeqm/"
+  },
+  {
+    "id": "ocd-person/5dcef6ac-7dbe-4c65-a53b-670c89a615e7",
+    "name": "Joe Cryan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:nj/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Cryan",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/cryan_joseph_2017.jpg",
+    "email": "sencryan@njleg.org",
+    "gender": "Male",
+    "birth_date": "1961-09-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:54:59.669953+00:00",
+    "updated_at": "2026-01-29T07:40:33.174782+00:00",
+    "openstates_url": "https://openstates.org/person/joe-cryan-2r0rsX4yLupVM0tMxx6qKV/"
+  },
+  {
+    "id": "ocd-person/90a0a109-2ce3-4a55-8761-1e07ff875703",
+    "name": "Joe Lagana",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:nj/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Lagana",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/lagana_joseph_2020.jpg",
+    "email": "senlagana@njleg.org",
+    "gender": "Male",
+    "birth_date": "1978-12-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:54:58.687098+00:00",
+    "updated_at": "2025-03-29T01:42:40.266495+00:00",
+    "openstates_url": "https://openstates.org/person/joe-lagana-4OuIlpT7HZn7uaI0MoxsNH/"
+  },
+  {
+    "id": "ocd-person/4bf4c8e4-5a97-4100-b34d-cb01da6ab266",
+    "name": "Joe Pennacchio",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:nj/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Pennacchio",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/pennacchio_color.jpg",
+    "email": "senpennacchio@njleg.org",
+    "gender": "Male",
+    "birth_date": "1955-05-27",
+    "death_date": "",
+    "extras": {
+      "position": "Deputy Republican Leader"
+    },
+    "created_at": "2018-10-18T14:55:03.914907+00:00",
+    "updated_at": "2026-01-29T07:40:38.279096+00:00",
+    "openstates_url": "https://openstates.org/person/joe-pennacchio-2JKI4N95Zcq1Kv441mh930/"
+  },
+  {
+    "id": "ocd-person/97fba3ff-adc8-4323-bf77-37acfe18b735",
+    "name": "Joe Vitale",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:nj/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Vitale",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/vitale_color.jpg",
+    "email": "senvitale@njleg.org",
+    "gender": "Male",
+    "birth_date": "1954-11-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:54:53.209433+00:00",
+    "updated_at": "2025-03-29T01:43:16.610196+00:00",
+    "openstates_url": "https://openstates.org/person/joe-vitale-4cmqAZQbSZbUeThihRnoH7/"
+  },
+  {
+    "id": "ocd-person/1b726d76-851a-487b-a6e6-42ee4fa5c050",
+    "name": "John Burzichelli",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:nj/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Burzichelli",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/burzichelli_color.jpg",
+    "email": "senburzichelli@njleg.org",
+    "gender": "Male",
+    "birth_date": "1954-11-14",
+    "death_date": "",
+    "extras": {
+      "role": "Deputy Speaker / Appropriations Chair"
+    },
+    "created_at": "2018-10-18T14:54:49.949945+00:00",
+    "updated_at": "2025-03-29T01:43:19.306132+00:00",
+    "openstates_url": "https://openstates.org/person/john-burzichelli-pn5M3Yf7WpaRNNi30T4fQ/"
+  },
+  {
+    "id": "ocd-person/1fec06e0-00df-4d84-8c9a-18e80a6f29e2",
+    "name": "John McKeon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:nj/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "McKeon",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/mckeon_color.jpg",
+    "email": "senmckeon@njleg.org",
+    "gender": "Male",
+    "birth_date": "1958-06-03",
+    "death_date": "",
+    "extras": {
+      "position": "Parliamentarian"
+    },
+    "created_at": "2018-10-18T14:54:50.104228+00:00",
+    "updated_at": "2026-01-29T07:40:22.302726+00:00",
+    "openstates_url": "https://openstates.org/person/john-mckeon-yEcr4mpFEVPFKGW9T6rty/"
+  },
+  {
+    "id": "ocd-person/08a758f9-92fb-4e59-ac8f-edc75aaf3390",
+    "name": "Jon Bramnick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:nj/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Bramnick",
+    "image": "",
+    "email": "senbramnick@njleg.org",
+    "gender": "Male",
+    "birth_date": "1953-02-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-12T21:01:43.721817+00:00",
+    "updated_at": "2025-03-29T01:43:23.718518+00:00",
+    "openstates_url": "https://openstates.org/person/jon-bramnick-GKPpedS0wLJXt02psRrKy/"
+  },
+  {
+    "id": "ocd-person/0880a4b0-8e91-484b-aa12-6e0444838c44",
+    "name": "Kristin Corrado",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:nj/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Kristin",
+    "family_name": "Corrado",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/corrado_kristin_2017.jpg",
+    "email": "sencorrado@njleg.org",
+    "gender": "Female",
+    "birth_date": "1965-06-24",
+    "death_date": "",
+    "extras": {
+      "position": "Ranking Member Judiciary Committee"
+    },
+    "created_at": "2018-10-18T14:55:07.399464+00:00",
+    "updated_at": "2026-01-29T07:40:16.290429+00:00",
+    "openstates_url": "https://openstates.org/person/kristin-corrado-G2jBPxzgbySQyYzqcqLIK/"
+  },
+  {
+    "id": "ocd-person/0e989cd5-91f8-4595-8346-bbac4f3d2c9e",
+    "name": "Latham Tiver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:nj/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Latham",
+    "family_name": "Tiver",
+    "image": "",
+    "email": "sentiver@njleg.org",
+    "gender": "Male",
+    "birth_date": "1973-07-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-10T05:53:46.083935+00:00",
+    "updated_at": "2026-06-05T07:39:19.905635+00:00",
+    "openstates_url": "https://openstates.org/person/latham-tiver-RXdTeUljoim5UaU52GzoE/"
+  },
+  {
+    "id": "ocd-person/27646653-40e2-4c79-b608-0f2edcaa0322",
+    "name": "Linda Greenstein",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:nj/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Linda",
+    "family_name": "Greenstein",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/greenstein_color.jpg",
+    "email": "sengreenstein@njleg.org",
+    "gender": "Female",
+    "birth_date": "1950-06-07",
+    "death_date": "",
+    "extras": {
+      "position": "Assistant Majority Leader"
+    },
+    "created_at": "2018-10-18T14:55:05.743867+00:00",
+    "updated_at": "2026-01-29T07:39:35.244613+00:00",
+    "openstates_url": "https://openstates.org/person/linda-greenstein-1CKaB9daK9zawhyavwJOWQ/"
+  },
+  {
+    "id": "ocd-person/4cb8db73-8982-4b4f-9c90-f86b20b217bc",
+    "name": "Mike Testa",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:nj/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Testa",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/testa_michael_2019.jpg",
+    "email": "sentesta@njleg.org",
+    "gender": "Male",
+    "birth_date": "1976-05-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-28T06:11:53.588753+00:00",
+    "updated_at": "2026-01-29T07:40:39.131912+00:00",
+    "openstates_url": "https://openstates.org/person/mike-testa-2KltbSYdSS1snAn1WSPjoq/"
+  },
+  {
+    "id": "ocd-person/4d47b297-b5f4-4d83-94e6-bb95eb91ecd7",
+    "name": "Nick Scutari",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:nj/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Scutari",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/scutari_nicholas_2020.jpg",
+    "email": "senscutari@njleg.org",
+    "gender": "Male",
+    "birth_date": "1968-11-18",
+    "death_date": "",
+    "extras": {
+      "position": "Senate President"
+    },
+    "created_at": "2018-10-18T14:54:59.030043+00:00",
+    "updated_at": "2026-01-29T07:40:17.105105+00:00",
+    "openstates_url": "https://openstates.org/person/nick-scutari-2LpAr1izUqczjm4NU6Qb71/"
+  },
+  {
+    "id": "ocd-person/b656905a-de58-4d36-b433-276788233b1f",
+    "name": "Nilsa Cruz-Perez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:nj/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Nilsa",
+    "family_name": "Cruz-Perez",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/cruzperez_color.jpg",
+    "email": "sencruzperez@njleg.org",
+    "gender": "Female",
+    "birth_date": "1961-01-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:01.146108+00:00",
+    "updated_at": "2025-03-29T01:43:09.004387+00:00",
+    "openstates_url": "https://openstates.org/person/nilsa-cruz-perez-5Y4A7nJxDtaRcUW6xuVaj1/"
+  },
+  {
+    "id": "ocd-person/fee23b32-9f92-4951-889e-6d09749a78b9",
+    "name": "Owen Henry",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:nj/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Owen",
+    "family_name": "Henry",
+    "image": "",
+    "email": "senhenry@njleg.org",
+    "gender": "Male",
+    "birth_date": "1959-05-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-10T05:53:39.940812+00:00",
+    "updated_at": "2026-01-29T07:40:11.006798+00:00",
+    "openstates_url": "https://openstates.org/person/owen-henry-7kxRDawwWIu0If7xPXlBqz/"
+  },
+  {
+    "id": "ocd-person/1dde507a-70ed-4f89-95f8-cd11748a753c",
+    "name": "Parker Space",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:nj/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Parker",
+    "family_name": "Space",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/space_parker_2020.jpg",
+    "email": "senspace@njleg.org",
+    "gender": "Male",
+    "birth_date": "1968-12-04",
+    "death_date": "",
+    "extras": {
+      "position": "Deputy Minority Whip"
+    },
+    "created_at": "2018-10-18T14:54:55.461374+00:00",
+    "updated_at": "2026-01-29T07:40:29.322025+00:00",
+    "openstates_url": "https://openstates.org/person/parker-space-uMNHAAVC5MhpfwSCpRdaG/"
+  },
+  {
+    "id": "ocd-person/16048732-130c-4102-b6e7-2d8faa0c3f52",
+    "name": "Patrick Diegnan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:nj/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Diegnan",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/diegnan_2017.jpg",
+    "email": "sendiegnan@njleg.org",
+    "gender": "Male",
+    "birth_date": "1949-03-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:06.905673+00:00",
+    "updated_at": "2026-01-29T07:40:08.891048+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-diegnan-fXtph23AzdgpokiQ4KxbG/"
+  },
+  {
+    "id": "ocd-person/f15f8b7e-96ee-41e8-b59c-b277927985c0",
+    "name": "Paul Moriarty",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:nj/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Moriarty",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/moriarty_color.jpg",
+    "email": "senmoriarty@njleg.org",
+    "gender": "Male",
+    "birth_date": "1956-09-25",
+    "death_date": "",
+    "extras": {
+      "position": "Deputy Speaker"
+    },
+    "created_at": "2018-10-18T14:55:05.400205+00:00",
+    "updated_at": "2026-01-29T07:40:11.830932+00:00",
+    "openstates_url": "https://openstates.org/person/paul-moriarty-7LSoWeHOTDMgOHCsuwzOk4/"
+  },
+  {
+    "id": "ocd-person/1d8eb6cf-cff2-4948-ba03-7f31fcadd4ec",
+    "name": "Paul Sarlo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:nj/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Sarlo",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/sarlo_color.jpg",
+    "email": "sensarlo@njleg.org",
+    "gender": "Male",
+    "birth_date": "1968-08-31",
+    "death_date": "",
+    "extras": {
+      "position": "Deputy Majority Leader"
+    },
+    "created_at": "2018-10-18T14:54:50.435122+00:00",
+    "updated_at": "2025-03-29T01:42:39.278210+00:00",
+    "openstates_url": "https://openstates.org/person/paul-sarlo-tlzsMJZaIekj1fGfUv2xY/"
+  },
+  {
+    "id": "ocd-person/fe8bf5e4-85ed-423b-b2d8-301f29d3faea",
+    "name": "Raj Mukherji",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:nj/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Raj",
+    "family_name": "Mukherji",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/mukherji_color.jpg",
+    "email": "senmukherji@njleg.org",
+    "gender": "Male",
+    "birth_date": "1984-07-15",
+    "death_date": "",
+    "extras": {
+      "position": "Deputy Speaker/Deputy Parliamentarian"
+    },
+    "created_at": "2018-10-18T14:55:02.455438+00:00",
+    "updated_at": "2026-01-29T07:40:51.027125+00:00",
+    "openstates_url": "https://openstates.org/person/raj-mukherji-7kK0ohb6TSbbSD26lTVmqQ/"
+  },
+  {
+    "id": "ocd-person/b8495630-20f7-4f9e-bf84-2a13a6da3794",
+    "name": "Renee Burgess",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:nj/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Renee",
+    "family_name": "Burgess",
+    "image": "",
+    "email": "senburgess@njleg.org",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-18T22:40:50.241458+00:00",
+    "updated_at": "2026-01-29T07:40:30.773773+00:00",
+    "openstates_url": "https://openstates.org/person/renee-burgess-5bk6ONyEUH4Cjor1G8aOXM/"
+  },
+  {
+    "id": "ocd-person/26eb8b3c-59a5-49ca-841c-13a569444994",
+    "name": "Shirley Turner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:nj/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Shirley",
+    "family_name": "Turner",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/turner_color.jpg",
+    "email": "senturner@njleg.org",
+    "gender": "Female",
+    "birth_date": "1941-07-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:00.344935+00:00",
+    "updated_at": "2025-03-29T01:42:52.987830+00:00",
+    "openstates_url": "https://openstates.org/person/shirley-turner-1BRLqB7OczjsIIiYDzZJNU/"
+  },
+  {
+    "id": "ocd-person/907aae0b-1026-405a-9429-cadd01efd79d",
+    "name": "Teresa Ruiz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:nj/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Teresa",
+    "family_name": "Ruiz",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/ruiz_teresa_2021.jpg",
+    "email": "senruiz@njleg.org",
+    "gender": "Female",
+    "birth_date": "1974-06-28",
+    "death_date": "",
+    "extras": {
+      "position": "Senate Majority Leader"
+    },
+    "created_at": "2018-10-18T14:54:58.041169+00:00",
+    "updated_at": "2026-01-29T07:39:41.252491+00:00",
+    "openstates_url": "https://openstates.org/person/teresa-ruiz-4OcxVztImnjRBZoOzC4CpJ/"
+  },
+  {
+    "id": "ocd-person/f321f20f-b8af-4d0b-85ba-e7b8dcf9ae03",
+    "name": "Tony Bucco",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:nj/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Bucco",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/bucco_a_m_color.jpg",
+    "email": "senbucco@njleg.org",
+    "gender": "Male",
+    "birth_date": "1962-04-12",
+    "death_date": "",
+    "extras": {
+      "position": "Republican Leader"
+    },
+    "created_at": "2018-10-18T14:54:53.685909+00:00",
+    "updated_at": "2025-03-29T01:43:13.922094+00:00",
+    "openstates_url": "https://openstates.org/person/tony-bucco-7OmeDHxnZqqpff5k6oaNE3/"
+  },
+  {
+    "id": "ocd-person/a1c9ec59-4127-4973-b100-f35c30bb817c",
+    "name": "Troy Singleton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:nj/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Troy",
+    "family_name": "Singleton",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/singleton_troy_2019.jpg",
+    "email": "sensingleton@njleg.org",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "position": "Majority Whip"
+    },
+    "created_at": "2018-10-18T14:54:57.226238+00:00",
+    "updated_at": "2026-01-29T07:40:27.669660+00:00",
+    "openstates_url": "https://openstates.org/person/troy-singleton-4vI2iS1AvCfLpzECwwGxZs/"
+  },
+  {
+    "id": "ocd-person/76afbcca-bed8-4e2e-bc3a-0fd6d53158a5",
+    "name": "Vin Gopal",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:nj/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Vin",
+    "family_name": "Gopal",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/gopal_vin_2021.jpg",
+    "email": "sengopal@njleg.org",
+    "gender": "Male",
+    "birth_date": "1985-05-18",
+    "death_date": "",
+    "extras": {
+      "position": "Democratic Conference Chair"
+    },
+    "created_at": "2018-10-18T14:55:07.721282+00:00",
+    "updated_at": "2026-01-29T07:39:54.287139+00:00",
+    "openstates_url": "https://openstates.org/person/vin-gopal-3bxPDrTL0ZgsSctSDCm0Mn/"
+  },
+  {
+    "id": "ocd-person/5a6bf64a-7731-4e80-8208-e1a18f09762b",
+    "name": "Vince Polistina",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:nj/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nj/government",
+      "name": "New Jersey",
+      "classification": "state"
+    },
+    "given_name": "Vince",
+    "family_name": "Polistina",
+    "image": "https://www.njleg.state.nj.us/members/memberphotos/polistina_vincent_2021.jpg",
+    "email": "senpolistina@njleg.org",
+    "gender": "Male",
+    "birth_date": "1971-06-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T18:43:51.429237+00:00",
+    "updated_at": "2026-01-29T07:39:59.476770+00:00",
+    "openstates_url": "https://openstates.org/person/vince-polistina-2kceBoPNYtVFoUHjJVMPbn/"
+  }
+]

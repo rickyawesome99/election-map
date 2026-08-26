@@ -1,0 +1,957 @@
+[
+  {
+    "id": "ocd-person/c77bc461-d0fe-47b4-8999-72e4eda69da1",
+    "name": "Ali Rabe",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:id/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Ali",
+    "family_name": "Rabe",
+    "image": "https://cdn.theorg.com/61b74bbb-61b5-48d5-a84d-fb498da306b9_thumb.jpg",
+    "email": "arabe@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:05:37.027855+00:00",
+    "updated_at": "2026-01-31T00:34:54.691299+00:00",
+    "openstates_url": "https://openstates.org/person/ali-rabe-64Q29m5cA0K0kuZ7j8QeqP/"
+  },
+  {
+    "id": "ocd-person/02a86541-b10a-42cc-b260-0d0f5e3226c0",
+    "name": "Ben Adams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:id/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Adams",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Adams6685.jpg",
+    "email": "badams@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:05:35.729746+00:00",
+    "updated_at": "2026-06-04T06:36:43.146963+00:00",
+    "openstates_url": "https://openstates.org/person/ben-adams-50wNcIfowdnHSFb1H0IFc/"
+  },
+  {
+    "id": "ocd-person/a0bec144-a980-4ce8-9e02-ada83079a300",
+    "name": "Ben Toews",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:id/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Toews",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Toews7795.jpg",
+    "email": "btoews@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:12.057305+00:00",
+    "updated_at": "2026-01-31T00:34:40.399368+00:00",
+    "openstates_url": "https://openstates.org/person/ben-toews-4tJwkTlZ64tZeRm5gKNpJI/"
+  },
+  {
+    "id": "ocd-person/42e5ac22-a35c-4e0e-80fb-05bab9093b28",
+    "name": "Brandon Shippy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:id/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Shippy",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Shippy9215.jpg",
+    "email": "bshippy@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-10-09T15:01:29.939804+00:00",
+    "updated_at": "2026-01-31T00:35:06.836607+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-shippy-22ES9njWzI8DH1EiQRe23s/"
+  },
+  {
+    "id": "ocd-person/e89ea88e-7519-48fe-8cb9-65ea18d0dd7b",
+    "name": "Brian Lenney",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:id/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Lenney",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/directory/Lenney7778.jpg",
+    "email": "blenney@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:07.861183+00:00",
+    "updated_at": "2026-01-31T00:34:38.043631+00:00",
+    "openstates_url": "https://openstates.org/person/brian-lenney-74wj4RgYy2RAw0UbvNJWX5/"
+  },
+  {
+    "id": "ocd-person/6a0fc69b-9842-4d47-b509-f555fee240e6",
+    "name": "Camille Blaylock",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:id/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Camille",
+    "family_name": "Blaylock",
+    "image": "https://idgop.org/wp-content/uploads/sites/4/2024/05/blaylock-1.jpg",
+    "email": "cblaylock@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:56:40.198659+00:00",
+    "updated_at": "2026-01-31T00:34:59.639367+00:00",
+    "openstates_url": "https://openstates.org/person/camille-blaylock-3E8OZ5uXCByqu0bIQphtMU/"
+  },
+  {
+    "id": "ocd-person/a1af9e8e-8f2c-4b6a-a7ca-708a0d0bf6f2",
+    "name": "Carl Bjerke",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:id/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Carl",
+    "family_name": "Bjerke",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Bjerke7796.jpg",
+    "email": "cbjerke@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:11.668880+00:00",
+    "updated_at": "2026-01-31T00:34:34.585602+00:00",
+    "openstates_url": "https://openstates.org/person/carl-bjerke-4v61Q5zVlCXJGuZSX0muwc/"
+  },
+  {
+    "id": "ocd-person/34bec23f-67e3-4940-8f5e-29850f0e9170",
+    "name": "Carrie Semmelroth",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:id/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Carrie",
+    "family_name": "Semmelroth",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2022/directory/Semmelroth7115.jpg",
+    "email": "csemmelroth@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-12-16T18:47:32.785851+00:00",
+    "updated_at": "2026-06-04T06:36:25.457676+00:00",
+    "openstates_url": "https://openstates.org/person/carrie-semmelroth-1bWmEfQat9tEaqVi7U2LmC/"
+  },
+  {
+    "id": "ocd-person/adb43503-bebd-4a83-8fa6-e6416576de2f",
+    "name": "Christy Zito",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:id/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Christy",
+    "family_name": "Zito",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Zito4281.jpg",
+    "email": "czito@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:35.357067+00:00",
+    "updated_at": "2026-01-31T00:35:43.125069+00:00",
+    "openstates_url": "https://openstates.org/person/christy-zito-5Hm1hTJ3pmdn0rXvkATlJX/"
+  },
+  {
+    "id": "ocd-person/4f02e826-da06-4286-8aaf-b89ef3f659bc",
+    "name": "Cindy Carlson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:id/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Cindy",
+    "family_name": "Carlson",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Carlson7776.jpg",
+    "email": "ccarlson@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:12.704989+00:00",
+    "updated_at": "2026-01-31T00:35:11.308153+00:00",
+    "openstates_url": "https://openstates.org/person/cindy-carlson-2P5imNSIT43f26L7xyOMhQ/"
+  },
+  {
+    "id": "ocd-person/bd3c88a6-3476-4aa8-b267-a5c30d454cac",
+    "name": "Codi Galloway",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:id/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Codi",
+    "family_name": "Galloway",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Galloway6702.jpg",
+    "email": "cgalloway@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:05:31.537192+00:00",
+    "updated_at": "2026-04-25T00:38:00.809873+00:00",
+    "openstates_url": "https://openstates.org/person/codi-galloway-5l5DFupDgP8OdjZZHFRc3Y/"
+  },
+  {
+    "id": "ocd-person/04ccb3bd-ae8d-4a64-a6c2-1b63a6f94d15",
+    "name": "Dan Foreman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:id/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Foreman",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Foreman4269.jpg",
+    "email": "dforeman@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:30.461062+00:00",
+    "updated_at": "2026-01-31T00:34:32.105385+00:00",
+    "openstates_url": "https://openstates.org/person/dan-foreman-93W8raxhIbHTgC2m5p1vB/"
+  },
+  {
+    "id": "ocd-person/fdcf0c8e-5794-4c3c-a092-a64ee5cab9d3",
+    "name": "Dave Lent",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:id/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Lent",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/directory/Lent5345.jpg",
+    "email": "dlent@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-05T02:06:08.993385+00:00",
+    "updated_at": "2026-01-31T00:34:48.434182+00:00",
+    "openstates_url": "https://openstates.org/person/dave-lent-7ivgBTvrHp60WRWnwgitBD/"
+  },
+  {
+    "id": "ocd-person/db1a3f87-5a7e-4133-a36d-5b319d28d38c",
+    "name": "Doug Okuniewicz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:id/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Okuniewicz",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Okuniewicz6706.jpg",
+    "email": "dougo@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:05:30.075145+00:00",
+    "updated_at": "2026-01-31T00:35:18.688739+00:00",
+    "openstates_url": "https://openstates.org/person/doug-okuniewicz-6fRJX3mkIPgfydp7DbTLg4/"
+  },
+  {
+    "id": "ocd-person/2960c6c4-abca-4406-9d9d-4734fec3f68d",
+    "name": "Doug Ricks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:id/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Ricks",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Ricks5383.jpg",
+    "email": "dricks@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-05T02:06:49.050119+00:00",
+    "updated_at": "2026-01-31T00:35:27.611686+00:00",
+    "openstates_url": "https://openstates.org/person/doug-ricks-1G4uZ7W0BWilIJvLuwV60D/"
+  },
+  {
+    "id": "ocd-person/7ba08b82-5bfc-4b36-b036-28b04c0d8bd2",
+    "name": "Glenneda Zuiderveld",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:id/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Glenneda",
+    "family_name": "Zuiderveld",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/directory/Zuiderveld7798.jpg",
+    "email": "gzuiderveld@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:12.820628+00:00",
+    "updated_at": "2026-01-31T00:34:45.535626+00:00",
+    "openstates_url": "https://openstates.org/person/glenneda-zuiderveld-3lHQNVSDnpDV35JFwVDATS/"
+  },
+  {
+    "id": "ocd-person/bcb4f50c-1f70-484a-90c2-65652b6a1133",
+    "name": "James Ruchti",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:id/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Ruchti",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Ruchti52.jpg",
+    "email": "jruchti@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "1969-04-02",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Minority Leader"
+    },
+    "created_at": "2021-01-06T06:05:36.909579+00:00",
+    "updated_at": "2026-04-25T00:37:39.762447+00:00",
+    "openstates_url": "https://openstates.org/person/james-ruchti-5k5FonyGvHUrbT03MOn9ff/"
+  },
+  {
+    "id": "ocd-person/c3b6822b-8900-408d-8745-7066b79e1e52",
+    "name": "Janie Ward-Engelking",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:id/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Janie",
+    "family_name": "Ward-Engelking",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Ward-Engelking2091.jpg",
+    "email": "jwardengelking@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Chair"
+    },
+    "created_at": "2018-10-18T14:42:28.005880+00:00",
+    "updated_at": "2026-01-31T00:35:08.638172+00:00",
+    "openstates_url": "https://openstates.org/person/janie-ward-engelking-5xIuRSWJcV6OjTt5R8r6Kg/"
+  },
+  {
+    "id": "ocd-person/e2a8fbe1-e9dc-4569-865f-450fa5f13665",
+    "name": "Jim Guthrie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:id/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Guthrie",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2017/directory/Guthrie1179.jpg",
+    "email": "jguthrie@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "1955-07-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:30.607112+00:00",
+    "updated_at": "2026-01-31T00:35:20.410220+00:00",
+    "openstates_url": "https://openstates.org/person/jim-guthrie-6thUULE3LsK7SHwLMItEsn/"
+  },
+  {
+    "id": "ocd-person/76cd07b1-e4de-4e1b-bd7c-a3153493ac5f",
+    "name": "Jim Woodward",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:id/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Woodward",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Woodward5347.jpg",
+    "email": "jwoodward@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-05T02:06:14.861661+00:00",
+    "updated_at": "2026-01-31T00:35:31.327009+00:00",
+    "openstates_url": "https://openstates.org/person/jim-woodward-3cAnCX1fVCZJcyi5vuy4y7/"
+  },
+  {
+    "id": "ocd-person/b01dc4f2-6477-4386-ba9b-eb0c3a2c2c8b",
+    "name": "Josh Keyser",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:id/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Keyser",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Keyser9395.jpg",
+    "email": "jkeyser@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:56:43.717085+00:00",
+    "updated_at": "2026-06-04T06:36:31.798316+00:00",
+    "openstates_url": "https://openstates.org/person/josh-keyser-5MKFl1UC2WuGxZRN3Beb2h/"
+  },
+  {
+    "id": "ocd-person/7ea55825-b942-4464-bb86-878113e524fe",
+    "name": "Josh Kohl",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:id/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Kohl",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Kohl9401.jpg",
+    "email": "jkohl@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T00:56:29.108067+00:00",
+    "updated_at": "2026-01-31T00:35:12.040086+00:00",
+    "openstates_url": "https://openstates.org/person/josh-kohl-3qyaw8GskIPdYpirQFcgN4/"
+  },
+  {
+    "id": "ocd-person/8efc94ea-7306-48f5-8d45-5bed5f5e1f85",
+    "name": "Julie VanOrden",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:id/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "VanOrden",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2017/directory/VanOrden2129.jpg",
+    "email": "jvanorden@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:19.914117+00:00",
+    "updated_at": "2026-01-31T00:34:27.707126+00:00",
+    "openstates_url": "https://openstates.org/person/julie-vanorden-4LoL7EmcXAFyVWB0yedGnV/"
+  },
+  {
+    "id": "ocd-person/9577c53b-0d84-4d3b-9c5b-7d38227c8e32",
+    "name": "Kelly Anthon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:id/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Kelly",
+    "family_name": "Anthon",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzBUr0WfBwwJVjrJhYaJYV9f99Qba5dm5P6g&s",
+    "email": "kanthon@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "1974-08-04",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Leader"
+    },
+    "created_at": "2018-10-18T14:42:21.038749+00:00",
+    "updated_at": "2026-01-31T00:34:41.412281+00:00",
+    "openstates_url": "https://openstates.org/person/kelly-anthon-4Y2ahV11Yi7jFUCaUcjl58/"
+  },
+  {
+    "id": "ocd-person/9134f853-f2da-47e8-a11f-9fbe77849414",
+    "name": "Kevin Cook",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:id/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Cook",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/directory/Cook6686.jpg",
+    "email": "kcook@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:05:30.267717+00:00",
+    "updated_at": "2026-01-31T00:34:25.705188+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-cook-4Q05sLt6t1Y7pvSQ9tzIiy/"
+  },
+  {
+    "id": "ocd-person/d3ee525f-429f-4ac6-ba52-e947881a3e6c",
+    "name": "Lori Den Hartog",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:id/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Lori",
+    "family_name": "Den Hartog",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2017/directory/Den%20Hartog3124.jpg",
+    "email": "ldenhartog@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:29.713620+00:00",
+    "updated_at": "2026-01-31T00:35:44.999551+00:00",
+    "openstates_url": "https://openstates.org/person/lori-den-hartog-6RuIFSoghIEAi6fU5nioN2/"
+  },
+  {
+    "id": "ocd-person/84d9ffa4-35f6-4baf-acdd-c3bafee537e7",
+    "name": "Mark Harris",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:id/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Harris",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2017/directory/Harris3584.jpg",
+    "email": "mharris@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Chair"
+    },
+    "created_at": "2018-10-18T14:42:32.425497+00:00",
+    "updated_at": "2026-01-31T00:34:58.125709+00:00",
+    "openstates_url": "https://openstates.org/person/mark-harris-42gbzbXpHtyX2li3Beyo0V/"
+  },
+  {
+    "id": "ocd-person/c6b06b7d-05f8-45a3-8415-4cd1e76c5642",
+    "name": "Melissa Wintrow",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:id/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Melissa",
+    "family_name": "Wintrow",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/directory/Wintrow3139.jpg",
+    "email": "mwintrow@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Leader"
+    },
+    "created_at": "2018-10-18T14:42:27.237266+00:00",
+    "updated_at": "2026-01-31T00:35:03.175916+00:00",
+    "openstates_url": "https://openstates.org/person/melissa-wintrow-62v6V3Dvc7xZPYW8d95JII/"
+  },
+  {
+    "id": "ocd-person/202344ed-fa6e-4d6d-b746-516abb5c962d",
+    "name": "Phil Hart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:id/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Hart",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Hart26.jpg",
+    "email": "phil.hart@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:13.356035+00:00",
+    "updated_at": "2026-01-31T00:35:13.686153+00:00",
+    "openstates_url": "https://openstates.org/person/phil-hart-yds67B1RwJkWeVh1dAdsz/"
+  },
+  {
+    "id": "ocd-person/1024a2b6-d36f-4c1f-86a0-826ec9120fe0",
+    "name": "Ron Taylor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:id/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Taylor",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Taylor7836.jpg",
+    "email": "rtaylor@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "1964-03-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:06.769313+00:00",
+    "updated_at": "2026-01-31T00:35:49.499679+00:00",
+    "openstates_url": "https://openstates.org/person/ron-taylor-UScQJUJlEZBcVI8qJFZCq/"
+  },
+  {
+    "id": "ocd-person/f67b55ee-1cc0-431b-b950-4b5dfca332ad",
+    "name": "Scott Grow",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:id/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Grow",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Grow5126.jpg",
+    "email": "sgrow@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "1948-05-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:20.405664+00:00",
+    "updated_at": "2026-06-04T06:36:46.256392+00:00",
+    "openstates_url": "https://openstates.org/person/scott-grow-7V6TZZFm3hYx5I2YAk6hP3/"
+  },
+  {
+    "id": "ocd-person/846c0e7d-ec02-4f49-afb9-3604dd27da98",
+    "name": "Tammy Nichols",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:id/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Tammy",
+    "family_name": "Nichols",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Tammy_Nichols_Election_Photo.jpg/500px-Tammy_Nichols_Election_Photo.jpg",
+    "email": "tnichols@senate.idaho.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-05T02:06:45.362384+00:00",
+    "updated_at": "2026-01-31T00:35:00.619185+00:00",
+    "openstates_url": "https://openstates.org/person/tammy-nichols-41sMt5frZO0F9REpKVzXFg/"
+  },
+  {
+    "id": "ocd-person/0b894582-b3d6-4600-a401-ed874e8c632d",
+    "name": "Todd Lakey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:id/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Lakey",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Lakey2132.jpg",
+    "email": "tlakey@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:26.624122+00:00",
+    "updated_at": "2026-01-31T00:35:05.046182+00:00",
+    "openstates_url": "https://openstates.org/person/todd-lakey-LleEDMPutVxC6lnMB6ljB/"
+  },
+  {
+    "id": "ocd-person/562def54-c2da-4b6a-bdfa-5038a4c04e0c",
+    "name": "Treg Bernt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:id/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Treg",
+    "family_name": "Bernt",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Bernt7797.jpg",
+    "email": "tbernt@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "1976-03-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-13T19:12:13.959104+00:00",
+    "updated_at": "2026-01-31T00:34:26.637917+00:00",
+    "openstates_url": "https://openstates.org/person/treg-bernt-2ccKbpgvpkxmxBZeba12OS/"
+  },
+  {
+    "id": "ocd-person/2a8943d8-c4fe-4286-8b26-6240d9ff26f8",
+    "name": "Van Burtenshaw",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:id/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:id/government",
+      "name": "Idaho",
+      "classification": "state"
+    },
+    "given_name": "Van",
+    "family_name": "Burtenshaw",
+    "image": "https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2023/directory/Burtenshaw3140.jpg",
+    "email": "vburtenshaw@senate.idaho.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:42:38.420455+00:00",
+    "updated_at": "2026-01-31T00:35:34.133495+00:00",
+    "openstates_url": "https://openstates.org/person/van-burtenshaw-1IGPIRyjGX5QwgvowkbLHE/"
+  }
+]

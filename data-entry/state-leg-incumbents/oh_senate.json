@@ -1,0 +1,893 @@
+[
+  {
+    "id": "ocd-person/6a1fc3b1-ebfd-47b7-adec-ddcd84d137c9",
+    "name": "Al Cutrona",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:oh/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Al",
+    "family_name": "Cutrona",
+    "image": "https://www.legislature.ohio.gov/assets/people/al-cutrona/headshots/thumbnails/medium/al-cutrona-february-2023-headshot_medium.jpg",
+    "email": "sd33@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:17.667155+00:00",
+    "updated_at": "2025-03-05T08:30:15.784776+00:00",
+    "openstates_url": "https://openstates.org/person/al-cutrona-3EFhaVrUXTn6wjr1yAnMGv/"
+  },
+  {
+    "id": "ocd-person/debec71d-fcfb-4422-9c9e-c6a8709cbb3a",
+    "name": "Al Landis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:oh/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Al",
+    "family_name": "Landis",
+    "image": "https://www.legislature.ohio.gov/assets/people/al-landis/headshots/thumbnails/medium/al-landis-may-2023-headshot_medium.jpg",
+    "email": "sd31@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1954-11-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:36.627091+00:00",
+    "updated_at": "2025-03-05T08:30:49.326831+00:00",
+    "openstates_url": "https://openstates.org/person/al-landis-6mJTtvC2hy8Os9JciOOPEo/"
+  },
+  {
+    "id": "ocd-person/c61c8eaf-1de9-419d-a5dc-c96787315578",
+    "name": "Andrew Brenner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:oh/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Brenner",
+    "image": "https://www.legislature.ohio.gov/assets/people/andrew-o-brenner/headshots/thumbnails/medium/andrew-o-brenner-may-2023-headshot_medium.jpg",
+    "email": "sd19@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1971-01-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:14.181958+00:00",
+    "updated_at": "2025-05-15T01:47:24.237299+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-brenner-61pWx3hWVa8dGs6JkGfU9Q/"
+  },
+  {
+    "id": "ocd-person/2d01ff0c-25a8-49a2-b571-ab3a7866fcf2",
+    "name": "Beth Liston",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:oh/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Beth",
+    "family_name": "Liston",
+    "image": "https://www.legislature.ohio.gov/assets/people/beth-liston/headshots/thumbnails/medium/beth-liston-november-2023-headshot_medium.jpg",
+    "email": "sd16@ohiosenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:48.728380+00:00",
+    "updated_at": "2025-03-05T08:29:45.034203+00:00",
+    "openstates_url": "https://openstates.org/person/beth-liston-1MvZ9buIkPRekDskI4lyra/"
+  },
+  {
+    "id": "ocd-person/5a9b2a16-6827-4e00-961a-f3de39538749",
+    "name": "Bill Blessing",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:oh/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Blessing",
+    "image": "https://www.legislature.ohio.gov/assets/people/louis-w-blessing-iii/headshots/thumbnails/medium/louis-w-blessing-iii-march-2023-headshot_medium.jpg",
+    "email": "sd08@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1980-11-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:00.732363+00:00",
+    "updated_at": "2025-03-05T08:30:43.224693+00:00",
+    "openstates_url": "https://openstates.org/person/bill-blessing-2kyDckufjXYo9ZHvglxs3V/"
+  },
+  {
+    "id": "ocd-person/bdc3493a-a22f-4a6b-b50e-b590216d8cfd",
+    "name": "Bill DeMora",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:oh/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "DeMora",
+    "image": "https://www.legislature.ohio.gov/assets/people/william-p-demora/headshots/thumbnails/medium/william-p-demora-may-2023-headshot_medium.jpg",
+    "email": "sd25@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:36.570568+00:00",
+    "updated_at": "2025-02-04T04:15:07.491188+00:00",
+    "openstates_url": "https://openstates.org/person/bill-demora-5m4nKxVbm7G8WN7finwsAv/"
+  },
+  {
+    "id": "ocd-person/10733ff7-ee19-4e86-9b5e-65619ddbf7bf",
+    "name": "Bill Reineke",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:oh/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Reineke",
+    "image": "https://www.legislature.ohio.gov/assets/people/bill-reineke/headshots/thumbnails/medium/bill-reineke-may-2023-headshot_medium.jpg",
+    "email": "sd26@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1954-10-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:12.149760+00:00",
+    "updated_at": "2025-03-05T08:30:57.533297+00:00",
+    "openstates_url": "https://openstates.org/person/bill-reineke-V2Xt1aAUjKiVKPJQJPhmB/"
+  },
+  {
+    "id": "ocd-person/eb5ff860-2126-4ac5-8267-9d2d924c3967",
+    "name": "Brian Chavez",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:oh/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Chavez",
+    "image": "https://www.legislature.ohio.gov/assets/people/brian-m-chavez/headshots/thumbnails/medium/brian-m-chavez-december-2023-headshot-10001385_medium.jpg",
+    "email": "sd30@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-04T19:16:14.853595+00:00",
+    "updated_at": "2025-03-05T08:29:22.433726+00:00",
+    "openstates_url": "https://openstates.org/person/brian-chavez-7A93QmIRjdBePpVFXTQkAZ/"
+  },
+  {
+    "id": "ocd-person/d7949531-f267-4e99-9611-87b3ec3e04ac",
+    "name": "Casey Weinstein",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:oh/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Casey",
+    "family_name": "Weinstein",
+    "image": "https://www.legislature.ohio.gov/assets/people/casey-weinstein/headshots/thumbnails/medium/casey-weinstein-january-2023-headshot_medium.jpg",
+    "email": "sd28@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1982-08-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:45.733769+00:00",
+    "updated_at": "2025-03-05T08:30:59.348217+00:00",
+    "openstates_url": "https://openstates.org/person/casey-weinstein-6YnFfs6kIE5D066vIrYoAu/"
+  },
+  {
+    "id": "ocd-person/94ba65dd-57c5-4ab0-b607-5e310d50cae0",
+    "name": "Catherine Ingram",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:oh/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Catherine",
+    "family_name": "Ingram",
+    "image": "https://www.legislature.ohio.gov/assets/people/catherine-d-ingram/headshots/thumbnails/medium/catherine-d-ingram-may-2023-headshot_medium.jpg",
+    "email": "sd09@ohiosenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:08.170692+00:00",
+    "updated_at": "2025-03-05T08:30:13.399021+00:00",
+    "openstates_url": "https://openstates.org/person/catherine-ingram-4We30LHDL3QDEmWDGs4W7k/"
+  },
+  {
+    "id": "ocd-person/445d3fc7-d9a5-48d8-8869-f023aa274ae7",
+    "name": "George Lang",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:oh/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "George",
+    "family_name": "Lang",
+    "image": "https://www.legislature.ohio.gov/assets/people/george-f-lang/headshots/thumbnails/medium/george-f-lang-may-2023-headshot_medium.jpg",
+    "email": "sd04@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:09.961617+00:00",
+    "updated_at": "2025-03-05T08:30:01.833683+00:00",
+    "openstates_url": "https://openstates.org/person/george-lang-2505mJBT5f1ZA3lsL9cbln/"
+  },
+  {
+    "id": "ocd-person/ed858ef9-97dc-4be8-97ab-006ea96923ae",
+    "name": "Hearcel Craig",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:oh/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Hearcel",
+    "family_name": "Craig",
+    "image": "https://www.legislature.ohio.gov/assets/people/hearcel-f-craig/headshots/thumbnails/medium/hearcel-f-craig-may-2023-headshot_medium.jpg",
+    "email": "sd15@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1949-07-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:13.041202+00:00",
+    "updated_at": "2025-03-05T08:30:33.444609+00:00",
+    "openstates_url": "https://openstates.org/person/hearcel-craig-7ECDVbSKvM0ZL22sXeJ0Yg/"
+  },
+  {
+    "id": "ocd-person/c3b1dc5e-4913-4e2f-b2a8-4db5b3faa1bd",
+    "name": "Jane Timken",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:oh/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jane",
+    "family_name": "Timken",
+    "image": "",
+    "email": "sd29@ohiosenate.gov",
+    "gender": "Female",
+    "birth_date": "1966-11-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-03-05T08:29:53.034911+00:00",
+    "updated_at": "2025-03-05T20:27:56.596487+00:00",
+    "openstates_url": "https://openstates.org/person/jane-timken-5xGmkqiHddbskqovhTvfDB/"
+  },
+  {
+    "id": "ocd-person/b27fdceb-e9c1-46b8-9fc2-323c3f6f784c",
+    "name": "Jerry Cirino",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:oh/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Jerry",
+    "family_name": "Cirino",
+    "image": "https://www.legislature.ohio.gov/assets/people/jerry-c-cirino/headshots/thumbnails/medium/jerry-c-cirino-march-2023-headshot_medium.jpg",
+    "email": "sd18@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:12.421367+00:00",
+    "updated_at": "2025-05-15T01:47:22.350652+00:00",
+    "openstates_url": "https://openstates.org/person/jerry-cirino-5Qp4CPreQGIdaYl9vro77U/"
+  },
+  {
+    "id": "ocd-person/d9c3dfce-8b7f-402f-9dec-5179e38b528f",
+    "name": "Kent Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:oh/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Kent",
+    "family_name": "Smith",
+    "image": "https://www.legislature.ohio.gov/assets/people/kent-smith/headshots/thumbnails/medium/kent-smith-may-2023-headshot_medium.jpg",
+    "email": "sd21@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1966-09-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:15.155822+00:00",
+    "updated_at": "2025-03-05T08:29:39.175958+00:00",
+    "openstates_url": "https://openstates.org/person/kent-smith-6cuqgNz2KiOdZU7pDsdnnb/"
+  },
+  {
+    "id": "ocd-person/936e5d50-e145-494b-a397-f56570530816",
+    "name": "Kristina Roegner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:oh/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Kristina",
+    "family_name": "Roegner",
+    "image": "https://www.legislature.ohio.gov/assets/people/kristina-d-roegner/headshots/thumbnails/medium/kristina-d-roegner-may-2023-headshot_medium.jpg",
+    "email": "sd27@ohiosenate.gov",
+    "gender": "Female",
+    "birth_date": "1968-11-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:12.067794+00:00",
+    "updated_at": "2025-03-05T08:29:26.563348+00:00",
+    "openstates_url": "https://openstates.org/person/kristina-roegner-4UCJ8zfVIN2VA0SaAUHzOw/"
+  },
+  {
+    "id": "ocd-person/f2e79c7c-7e3a-496d-8f87-d43b62eb54a5",
+    "name": "Kyle Koehler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:oh/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Kyle",
+    "family_name": "Koehler",
+    "image": "https://img.legistorm.com/people/980/46980.jpg?rand=345402",
+    "email": "sd10@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1961-10-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:06.704467+00:00",
+    "updated_at": "2026-04-25T01:54:37.823662+00:00",
+    "openstates_url": "https://openstates.org/person/kyle-koehler-7OLzMi4f3xBDo1YqtDbD2j/"
+  },
+  {
+    "id": "ocd-person/2ae62dc8-e902-4a8e-99b7-182477c50bc3",
+    "name": "Mark Romanchuk",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:oh/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Romanchuk",
+    "image": "https://www.legislature.ohio.gov/assets/people/mark-romanchuk/headshots/thumbnails/medium/mark-romanchuk-may-2023-headshot_medium.jpg",
+    "email": "sd22@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1962-09-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:12.454111+00:00",
+    "updated_at": "2025-03-05T08:30:14.824278+00:00",
+    "openstates_url": "https://openstates.org/person/mark-romanchuk-1IwrvMH3Bi669ghTReDTJz/"
+  },
+  {
+    "id": "ocd-person/79af20c0-6eb6-44a2-ba79-9c7e5e10ea04",
+    "name": "Michele Reynolds",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:oh/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Michele",
+    "family_name": "Reynolds",
+    "image": "https://www.legislature.ohio.gov/assets/people/michele-reynolds/headshots/thumbnails/medium/michele-reynolds-may-2023-headshot_medium.jpg",
+    "email": "reynolds@ohiosenate.gov",
+    "gender": "Female",
+    "birth_date": "1974-02-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-10T19:49:44.452052+00:00",
+    "updated_at": "2025-03-05T08:30:38.748937+00:00",
+    "openstates_url": "https://openstates.org/person/michele-reynolds-3hc6WbRQEO1Jyz8aYe93vo/"
+  },
+  {
+    "id": "ocd-person/d3508136-3927-461f-a2f0-a85665845ab1",
+    "name": "Nathan Manning",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:oh/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Nathan",
+    "family_name": "Manning",
+    "image": "https://www.legislature.ohio.gov/assets/people/nathan-h-manning/headshots/thumbnails/medium/nathan-h-manning-may-2023-headshot_medium.jpg",
+    "email": "sd13@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1982-01-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:08.660677+00:00",
+    "updated_at": "2025-03-05T08:30:27.748687+00:00",
+    "openstates_url": "https://openstates.org/person/nathan-manning-6QkAeFHgFduKkywpVIhW6L/"
+  },
+  {
+    "id": "ocd-person/df5c391c-65e8-4d61-a9b9-0249ff6eddb7",
+    "name": "Nickie Antonio",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:oh/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Nickie",
+    "family_name": "Antonio",
+    "image": "https://www.legislature.ohio.gov/assets/people/nickie-j-antonio/headshots/thumbnails/medium/nickie-j-antonio-may-2023-headshot_medium.jpg",
+    "email": "sd23@ohiosenate.gov",
+    "gender": "Female",
+    "birth_date": "1955-06-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:10.118030+00:00",
+    "updated_at": "2025-03-05T08:30:51.628081+00:00",
+    "openstates_url": "https://openstates.org/person/nickie-antonio-6nTQy5lFZz7M1RInc7VYkJ/"
+  },
+  {
+    "id": "ocd-person/3329274c-22b6-4b0a-b12a-e64c5733bef9",
+    "name": "Paula Hicks-Hudson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:oh/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Paula",
+    "family_name": "Hicks-Hudson",
+    "image": "https://www.legislature.ohio.gov/assets/people/paula-hicks-hudson/headshots/thumbnails/medium/paula-hicks-hudson-may-2023-headshot_medium.jpg",
+    "email": "sd11@ohiosenate.gov",
+    "gender": "Female",
+    "birth_date": "1951-05-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:46.242192+00:00",
+    "updated_at": "2025-03-05T20:28:26.133141+00:00",
+    "openstates_url": "https://openstates.org/person/paula-hicks-hudson-1YXPme3o3ew1AXhLNwbxub/"
+  },
+  {
+    "id": "ocd-person/e0d52f86-e997-4299-9e50-972a2c208c20",
+    "name": "Rob McColley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:oh/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "McColley",
+    "image": "https://www.legislature.ohio.gov/assets/people/rob-mccolley/headshots/thumbnails/medium/rob-mccolley-may-2023-headshot_medium.jpg",
+    "email": "sd01@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1984-10-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:17.432652+00:00",
+    "updated_at": "2025-03-05T08:29:56.042171+00:00",
+    "openstates_url": "https://openstates.org/person/rob-mccolley-6qFhr5nVyzhvyxRRInKEMa/"
+  },
+  {
+    "id": "ocd-person/d665e333-f7e3-43e2-b440-17920f62c60b",
+    "name": "Sandy O'Brien",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:oh/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Sandy",
+    "family_name": "O'Brien",
+    "image": "https://www.legislature.ohio.gov/assets/people/sandra-obrien/headshots/thumbnails/medium/sandra-obrien-may-2023-headshot_medium.jpg",
+    "email": "sd32@ohiosenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:10.758611+00:00",
+    "updated_at": "2025-03-05T08:29:27.915968+00:00",
+    "openstates_url": "https://openstates.org/person/sandy-o-brien-6WYv5A998TbwHJ9Yy063dz/"
+  },
+  {
+    "id": "ocd-person/bb1ae016-cdfe-48aa-8bc5-9e3636e430f3",
+    "name": "Shane Wilkin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:oh/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Wilkin",
+    "image": "https://www.legislature.ohio.gov/assets/people/shane-wilkin/headshots/thumbnails/medium/shane-wilkin-may-2023-headshot_medium.jpg",
+    "email": "sd17@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:00.255993+00:00",
+    "updated_at": "2025-03-05T08:30:34.281179+00:00",
+    "openstates_url": "https://openstates.org/person/shane-wilkin-5h3qWh1P9obcHSewXRzr87/"
+  },
+  {
+    "id": "ocd-person/b21d9dcd-21e9-4071-936d-f89fc5d8f643",
+    "name": "Steve Huffman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:oh/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Huffman",
+    "image": "https://www.legislature.ohio.gov/assets/people/stephen-a-huffman/headshots/thumbnails/medium/stephen-a-huffman-may-2023-headshot_medium.jpg",
+    "email": "sd05@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1964-11-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:01.213727+00:00",
+    "updated_at": "2025-05-15T01:47:21.267160+00:00",
+    "openstates_url": "https://openstates.org/person/steve-huffman-5Q6ATPTLNAQNXLUba5oC2N/"
+  },
+  {
+    "id": "ocd-person/26444e7e-72b2-4838-bc24-31899c90d504",
+    "name": "Steve Wilson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:oh/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Wilson",
+    "image": "https://www.legislature.ohio.gov/assets/people/steve-wilson/headshots/thumbnails/medium/steve-wilson-may-2023-headshot_medium.jpg",
+    "email": "sd07@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:09.629442+00:00",
+    "updated_at": "2025-03-05T08:29:32.314745+00:00",
+    "openstates_url": "https://openstates.org/person/steve-wilson-1ACvKIoK9DV4v8Qg7e5tDA/"
+  },
+  {
+    "id": "ocd-person/0e44b586-f6a4-44ee-b6b7-37fa8dc2e8cd",
+    "name": "Susan Manchester",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:oh/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Susan",
+    "family_name": "Manchester",
+    "image": "https://www.legislature.ohio.gov/assets/people/susan-manchester/headshots/thumbnails/medium/susan-manchester-january-2023-headshot_medium.jpg",
+    "email": "sd12@ohiosenate.gov",
+    "gender": "Female",
+    "birth_date": "1987-06-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:15:47.228287+00:00",
+    "updated_at": "2025-03-05T08:29:51.253628+00:00",
+    "openstates_url": "https://openstates.org/person/susan-manchester-QvI9DMxUYLgPkyAq7LRAj/"
+  },
+  {
+    "id": "ocd-person/57300c34-0e2d-4e85-bdce-c4fb8c781541",
+    "name": "Terry Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:oh/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Johnson",
+    "image": "https://www.legislature.ohio.gov/assets/people/terry-johnson/headshots/thumbnails/medium/terry-johnson-may-2023-headshot_medium.jpg",
+    "email": "sd14@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1956-06-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-01-28T06:12:59.576201+00:00",
+    "updated_at": "2025-02-04T04:15:33.799503+00:00",
+    "openstates_url": "https://openstates.org/person/terry-johnson-2eWHztCtfkOco0ktUXUoHx/"
+  },
+  {
+    "id": "ocd-person/0fe32749-fe89-4f96-87d3-3d831bea2459",
+    "name": "Theresa Gavarone",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:oh/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Theresa",
+    "family_name": "Gavarone",
+    "image": "https://www.legislature.ohio.gov/assets/people/theresa-gavarone/headshots/thumbnails/medium/theresa-gavarone-may-2023-headshot_medium.jpg",
+    "email": "sd02@ohiosenate.gov",
+    "gender": "Female",
+    "birth_date": "1966-06-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:17.578037+00:00",
+    "updated_at": "2025-03-05T08:30:25.511975+00:00",
+    "openstates_url": "https://openstates.org/person/theresa-gavarone-Tyh30lAzkjSd00KTDaF0D/"
+  },
+  {
+    "id": "ocd-person/01a80305-a667-4dda-9676-1e678bddde12",
+    "name": "Tim Schaffer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:oh/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Schaffer",
+    "image": "https://www.legislature.ohio.gov/assets/people/tim-schaffer/headshots/thumbnails/medium/tim-schaffer-may-2023-headshot_medium.jpg",
+    "email": "sd20@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1963-01-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:05.753442+00:00",
+    "updated_at": "2025-03-05T08:30:24.611881+00:00",
+    "openstates_url": "https://openstates.org/person/tim-schaffer-37lz0j5tgaUiqqd5mQ5mE/"
+  },
+  {
+    "id": "ocd-person/a57f6c78-ac58-4f7d-870e-0d8052984cd9",
+    "name": "Tom Patton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:oh/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Patton",
+    "image": "https://www.legislature.ohio.gov/assets/people/thomas-f-patton/headshots/thumbnails/medium/thomas-f-patton-november-2023-headshot_medium.jpg",
+    "email": "sd24@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "1953-11-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:57:06.397715+00:00",
+    "updated_at": "2025-03-05T08:30:53.924139+00:00",
+    "openstates_url": "https://openstates.org/person/tom-patton-52HxwCWk1o1XBO1A6epM5Z/"
+  },
+  {
+    "id": "ocd-person/23c443b0-e2f7-4c7a-af1e-d67d7aa366ce",
+    "name": "Willis Blackshear",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:oh/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:oh/government",
+      "name": "Ohio",
+      "classification": "state"
+    },
+    "given_name": "Willis",
+    "family_name": "Blackshear",
+    "image": "https://www.legislature.ohio.gov/assets/people/willis-e-blackshear-jr/headshots/thumbnails/medium/willis-e-blackshear-jr-january-2023-headshot_medium.jpg",
+    "email": "sd06@ohiosenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:14:09.637710+00:00",
+    "updated_at": "2025-03-05T08:29:29.031869+00:00",
+    "openstates_url": "https://openstates.org/person/willis-blackshear-15UQJuNUBGwuRtpgfh35Ty/"
+  }
+]

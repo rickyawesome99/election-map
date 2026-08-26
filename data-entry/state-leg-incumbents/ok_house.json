@@ -1,0 +1,2828 @@
+[
+  {
+    "id": "ocd-person/a91af3e5-8f27-4aa3-9c5d-6166eeb7ec8a",
+    "name": "Aletia Timmons",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:ok/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Aletia",
+    "family_name": "Timmons",
+    "image": "",
+    "email": "aletia.timmons@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-07-18T02:02:03.917745+00:00",
+    "updated_at": "2026-01-28T01:58:51.180656+00:00",
+    "openstates_url": "https://openstates.org/person/aletia-timmons-5961HWkQqKpvrz5jafOKk6/"
+  },
+  {
+    "id": "ocd-person/8dac97e3-d74f-4f58-bb7d-83412600975f",
+    "name": "Amanda Clinton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:ok/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Amanda",
+    "family_name": "Clinton",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Amanda_Clinton_20250516_045055.png",
+    "email": "amanda.clinton@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-07-18T02:02:37.589763+00:00",
+    "updated_at": "2026-01-28T01:58:11.616532+00:00",
+    "openstates_url": "https://openstates.org/person/amanda-clinton-4JKnC6p6Q0XFyh2c1sGhlH/"
+  },
+  {
+    "id": "ocd-person/987fd457-5b14-4300-95f1-e92f7cd5f748",
+    "name": "Andy Fugate",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:ok/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Andy",
+    "family_name": "Fugate",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Fugate,%20Andy.jpg",
+    "email": "andy.fugate@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1966-08-10",
+    "death_date": "",
+    "extras": {
+      "email": "andy.fugate@okhouse.gov",
+      "_scraped_name": "Fugate, Andy"
+    },
+    "created_at": "2019-01-07T05:09:19.132445+00:00",
+    "updated_at": "2026-02-13T07:48:41.534014+00:00",
+    "openstates_url": "https://openstates.org/person/andy-fugate-4dlFcPNp4ZBRz9YU9QSKee/"
+  },
+  {
+    "id": "ocd-person/3a5828d9-b8bf-491c-adfe-19f5331d1e20",
+    "name": "Annie Menz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:ok/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Annie",
+    "family_name": "Menz",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Menz,%20Annie.jpg",
+    "email": "annie.menz@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:38.778694+00:00",
+    "updated_at": "2026-02-13T07:48:26.547327+00:00",
+    "openstates_url": "https://openstates.org/person/annie-menz-1m5qKLNlmGe5YzC8HWHjjk/"
+  },
+  {
+    "id": "ocd-person/c1f71291-89c1-4109-a15c-2483743d333a",
+    "name": "Anthony Moore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:ok/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Anthony",
+    "family_name": "Moore",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Moore,%20Anthony.jpg",
+    "email": "anthony.moore@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:03.676990+00:00",
+    "updated_at": "2026-04-25T01:58:10.637193+00:00",
+    "openstates_url": "https://openstates.org/person/anthony-moore-5u0QkxcRKcGvDFdkvWAUDC/"
+  },
+  {
+    "id": "ocd-person/4d0b52d3-ad1f-45c9-b46e-3676194ef82c",
+    "name": "Arturo Alonso",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:ok/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Arturo",
+    "family_name": "Alonso",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Alonso,%20Arturo.jpg",
+    "email": "arturo.alonso@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:43.055852+00:00",
+    "updated_at": "2025-02-10T22:44:27.694093+00:00",
+    "openstates_url": "https://openstates.org/person/arturo-alonso-2LNaD5mc0GBXVZMsnrSjJE/"
+  },
+  {
+    "id": "ocd-person/246cfe54-edbd-4844-9bdc-0213c4b501e9",
+    "name": "Bob Culver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ok/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Culver",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Culver,%20BobEd.jpg",
+    "email": "bob.culver@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1957-12-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:00.378962+00:00",
+    "updated_at": "2025-02-04T04:23:55.507595+00:00",
+    "openstates_url": "https://openstates.org/person/bob-culver-16jX6R6IjJLi1BKORVMTu5/"
+  },
+  {
+    "id": "ocd-person/be4edaae-b522-4ce0-bc1d-98b813424f57",
+    "name": "Brad Boles",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:ok/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Boles",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Boles,%20Brad.jpg",
+    "email": "brad.boles@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1983-10-16",
+    "death_date": "",
+    "extras": {
+      "email": "brad.boles@okhouse.gov",
+      "_scraped_name": "Boles, Brad"
+    },
+    "created_at": "2018-10-18T14:57:49.471872+00:00",
+    "updated_at": "2026-02-13T07:47:43.123141+00:00",
+    "openstates_url": "https://openstates.org/person/brad-boles-5n6ZsB5dMOLbg9M8aZdZ1L/"
+  },
+  {
+    "id": "ocd-person/03af3716-0ac4-49f5-b25a-ff757420d87d",
+    "name": "Brian Hill",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:ok/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Hill",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Hill,%20Brian.jpg",
+    "email": "brian.hill@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "brian.hill@okhouse.gov",
+      "_scraped_name": "Hill, Brian"
+    },
+    "created_at": "2019-01-07T05:09:17.076584+00:00",
+    "updated_at": "2025-02-04T04:23:49.204912+00:00",
+    "openstates_url": "https://openstates.org/person/brian-hill-6x38HaSNN66E2nVRRxqrV/"
+  },
+  {
+    "id": "ocd-person/6cfaac2f-52af-4aad-8ec4-6373bb45bf24",
+    "name": "Carl Newton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:ok/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Carl",
+    "family_name": "Newton",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Newton,%20Carl.jpg",
+    "email": "carl.newton@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "carl.newton@okhouse.gov",
+      "_scraped_name": "Newton, Carl"
+    },
+    "created_at": "2018-10-18T14:57:42.694602+00:00",
+    "updated_at": "2026-02-13T07:48:35.303864+00:00",
+    "openstates_url": "https://openstates.org/person/carl-newton-3JdjCJsXmNYpbTNpomxlcC/"
+  },
+  {
+    "id": "ocd-person/c5909558-d02d-438e-9c0c-50eb8c88f862",
+    "name": "Chad Caldwell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ok/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Chad",
+    "family_name": "Caldwell",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Caldwell,%20Chad.jpg",
+    "email": "chad.caldwell@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1975-08-18",
+    "death_date": "",
+    "extras": {
+      "email": "chad.caldwell@okhouse.gov",
+      "_scraped_name": "Caldwell, Chad"
+    },
+    "created_at": "2018-10-18T14:57:44.702607+00:00",
+    "updated_at": "2026-02-13T07:48:15.093433+00:00",
+    "openstates_url": "https://openstates.org/person/chad-caldwell-60nYuyOEAHNmRCVBc4Ml2Q/"
+  },
+  {
+    "id": "ocd-person/442374ea-1ad4-4793-bdbc-a5db81a1d219",
+    "name": "Chris Banning",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ok/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Banning",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Banning,%20Chris.jpg",
+    "email": "chris.banning@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:35.833725+00:00",
+    "updated_at": "2026-02-13T07:48:23.690403+00:00",
+    "openstates_url": "https://openstates.org/person/chris-banning-24ZgHZXu1q74ZEgKKQxXHl/"
+  },
+  {
+    "id": "ocd-person/5b2d71b9-21c7-4291-ac09-e2840fee2919",
+    "name": "Chris Kannady",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:ok/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Kannady",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Kannady,%20Chris.jpg",
+    "email": "chris.kannady@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1979-07-29",
+    "death_date": "",
+    "extras": {
+      "email": "chris.kannady@okhouse.gov",
+      "_scraped_name": "Kannady, Chris"
+    },
+    "created_at": "2018-10-18T14:57:33.025390+00:00",
+    "updated_at": "2026-02-13T07:47:52.286647+00:00",
+    "openstates_url": "https://openstates.org/person/chris-kannady-2m34KPq3cITaP13vfHgCpl/"
+  },
+  {
+    "id": "ocd-person/f4d5b128-a016-4eda-b6c6-e298fe29bc29",
+    "name": "Chris Sneed",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ok/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Sneed",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Sneed,%20Chris.jpg",
+    "email": "chris.sneed@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1977-12-22",
+    "death_date": "",
+    "extras": {
+      "email": "chris.sneed@okhouse.gov",
+      "_scraped_name": "Sneed, Chris"
+    },
+    "created_at": "2019-01-07T05:09:26.128919+00:00",
+    "updated_at": "2025-02-04T04:24:05.699446+00:00",
+    "openstates_url": "https://openstates.org/person/chris-sneed-7RzmgkEF0x915HePh01yYb/"
+  },
+  {
+    "id": "ocd-person/382dfd67-bd2a-4271-bb79-62fe045102ea",
+    "name": "Cindy Roe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:ok/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Cindy",
+    "family_name": "Roe",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Cindy-Roe.jpg",
+    "email": "cynthia.roe@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "1959-07-31",
+    "death_date": "",
+    "extras": {
+      "email": "cynthia.roe@okhouse.gov",
+      "_scraped_name": "Roe, Cynthia"
+    },
+    "created_at": "2019-01-07T05:09:13.156773+00:00",
+    "updated_at": "2026-02-13T07:48:43.967922+00:00",
+    "openstates_url": "https://openstates.org/person/cindy-roe-1i0aRGP51kmp3aEuEptjdC/"
+  },
+  {
+    "id": "ocd-person/82e04ad9-64c8-4439-9853-cbc3e273d637",
+    "name": "Clay Staires",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:ok/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Clay",
+    "family_name": "Staires",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Staires,%20Clay.jpg",
+    "email": "clay.staires@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:38.385458+00:00",
+    "updated_at": "2026-02-13T07:48:07.984414+00:00",
+    "openstates_url": "https://openstates.org/person/clay-staires-3yxVGxZ2j5ktAna9jmCP2N/"
+  },
+  {
+    "id": "ocd-person/17d5c3a4-a468-4aca-b58c-314605214857",
+    "name": "Cody Maynard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ok/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Cody",
+    "family_name": "Maynard",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Maynard,%20Cody.jpg",
+    "email": "cody.maynard@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:35.991480+00:00",
+    "updated_at": "2026-02-13T07:48:21.808210+00:00",
+    "openstates_url": "https://openstates.org/person/cody-maynard-iyVrzrYcEdwUmyP2rgDbj/"
+  },
+  {
+    "id": "ocd-person/0cffa048-1b45-4609-a1b6-9e741ca1948c",
+    "name": "Collin Duel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ok/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Collin",
+    "family_name": "Duel",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Duel,%20Collin.jpg",
+    "email": "collin.duel@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:49.744326+00:00",
+    "updated_at": "2026-02-13T07:48:13.304405+00:00",
+    "openstates_url": "https://openstates.org/person/collin-duel-OWjDjErsfJ5uILArEpGZg/"
+  },
+  {
+    "id": "ocd-person/f9153735-938a-418b-ac4f-6881904861ac",
+    "name": "Cyndi Munson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:ok/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Cyndi",
+    "family_name": "Munson",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Munson,%20Cyndie.jpg",
+    "email": "cyndi.munson@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "1985-05-24",
+    "death_date": "",
+    "extras": {
+      "email": "cyndi.munson@okhouse.gov",
+      "_scraped_name": "Munson, Cyndi"
+    },
+    "created_at": "2018-10-18T14:57:35.897223+00:00",
+    "updated_at": "2026-01-28T01:58:42.183494+00:00",
+    "openstates_url": "https://openstates.org/person/cyndi-munson-7a0mfYQUz9jnEJMAE3DitY/"
+  },
+  {
+    "id": "ocd-person/62d0d568-33cf-4ec6-b90e-5c2b45be82ba",
+    "name": "Daniel Pae",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:ok/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Daniel",
+    "family_name": "Pae",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Pae,%20Daniel.jpg",
+    "email": "daniel.pae@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1995-07-25",
+    "death_date": "",
+    "extras": {
+      "email": "daniel.pae@okhouse.gov",
+      "_scraped_name": "Pae, Daniel"
+    },
+    "created_at": "2019-01-07T05:09:11.820956+00:00",
+    "updated_at": "2026-02-13T07:48:33.961373+00:00",
+    "openstates_url": "https://openstates.org/person/daniel-pae-30SgUCXYp4MPHwEHWhQOsc/"
+  },
+  {
+    "id": "ocd-person/61966500-f9d7-4f45-ad6b-761d6d839036",
+    "name": "Danny Sterling",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ok/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Sterling",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Danny-Sterling.jpg",
+    "email": "danny.sterling@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1956-01-17",
+    "death_date": "",
+    "extras": {
+      "email": "danny.sterling@okhouse.gov",
+      "_scraped_name": "Sterling, Danny"
+    },
+    "created_at": "2019-01-07T05:09:26.375559+00:00",
+    "updated_at": "2026-04-09T07:54:31.274391+00:00",
+    "openstates_url": "https://openstates.org/person/danny-sterling-2y8z91DXocJzULm0LIwIPm/"
+  },
+  {
+    "id": "ocd-person/db2c481d-6dc5-455e-905c-2daac4bbc631",
+    "name": "Danny Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ok/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Williams",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Williams,%20Danny.jpg",
+    "email": "danny.williams@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:00.895728+00:00",
+    "updated_at": "2026-04-09T07:53:35.153366+00:00",
+    "openstates_url": "https://openstates.org/person/danny-williams-6fZYUoRFSTC5SptaJpCcRV/"
+  },
+  {
+    "id": "ocd-person/b2857b06-9290-4141-9bc4-2a105bc51ce8",
+    "name": "David Hardin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:ok/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Hardin",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Hardin,%20David.jpg",
+    "email": "david.hardin@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "david.hardin@okhouse.gov",
+      "_scraped_name": "Hardin, David"
+    },
+    "created_at": "2019-01-07T05:09:12.302564+00:00",
+    "updated_at": "2026-02-13T07:48:11.298308+00:00",
+    "openstates_url": "https://openstates.org/person/david-hardin-5QrdMutEhiZU27lUwxSXii/"
+  },
+  {
+    "id": "ocd-person/84087e63-a192-4be6-9367-64b2c93a2dcc",
+    "name": "David Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ok/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Smith",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Smith,%20David.jpg",
+    "email": "david.smith@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "david.smith@okhouse.gov",
+      "_scraped_name": "Smith, David"
+    },
+    "created_at": "2019-01-07T05:09:17.214117+00:00",
+    "updated_at": "2026-02-13T07:47:56.428294+00:00",
+    "openstates_url": "https://openstates.org/person/david-smith-418rremEswa2gSqfohLKQe/"
+  },
+  {
+    "id": "ocd-person/4d473c48-88f9-495a-a8da-b8e2d0310280",
+    "name": "Dell Kerbs",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ok/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Dell",
+    "family_name": "Kerbs",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Kerbs,%20Dell.jpg",
+    "email": "dell.kerbs@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1973-09-22",
+    "death_date": "",
+    "extras": {
+      "email": "dell.kerbs@okhouse.gov",
+      "_scraped_name": "Kerbs, Dell"
+    },
+    "created_at": "2018-10-18T14:57:41.637601+00:00",
+    "updated_at": "2026-02-13T07:48:43.175834+00:00",
+    "openstates_url": "https://openstates.org/person/dell-kerbs-2LoxlAZxz0rKTegyyxug5o/"
+  },
+  {
+    "id": "ocd-person/e825fe1a-a46d-4a07-b9e4-c9e82e357c90",
+    "name": "Denise Crosswhite Hader",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:ok/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Denise",
+    "family_name": "Crosswhite Hader",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Crosswhite%20Hader,%20Denise.jpg",
+    "email": "denise.crosswhitehader@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "1965-04-11",
+    "death_date": "",
+    "extras": {
+      "email": "Denise.CrosswhiteHader@okhouse.gov",
+      "_scraped_name": "Crosswhite Hader, Denise"
+    },
+    "created_at": "2019-01-07T05:09:22.662887+00:00",
+    "updated_at": "2026-02-13T07:47:48.843657+00:00",
+    "openstates_url": "https://openstates.org/person/denise-crosswhite-hader-743a7DzkFLIt4LJixF7yiW/"
+  },
+  {
+    "id": "ocd-person/a7eb5f03-0a2a-4235-b2f8-b4983e1a8cf2",
+    "name": "Derrick Hildebrant",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ok/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Derrick",
+    "family_name": "Hildebrant",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DerrickHildebrant2024.jpg",
+    "email": "derrick.hildebrant@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:48.977625+00:00",
+    "updated_at": "2025-02-04T04:24:54.098484+00:00",
+    "openstates_url": "https://openstates.org/person/derrick-hildebrant-56rHZqNuKg3mgq8GeOipX8/"
+  },
+  {
+    "id": "ocd-person/dc094bcd-66c1-47f4-b9b0-94272636a7fe",
+    "name": "Dick Lowe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:ok/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Dick",
+    "family_name": "Lowe",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Lowe,%20Dick.jpg",
+    "email": "dick.lowe@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:04.823940+00:00",
+    "updated_at": "2025-02-04T04:23:18.707701+00:00",
+    "openstates_url": "https://openstates.org/person/dick-lowe-6hCYjfXtz53i5zd0BbPypC/"
+  },
+  {
+    "id": "ocd-person/14d6a46d-124c-4274-ae72-bfe5541a4a0a",
+    "name": "Dillon Travis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ok/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Dillon",
+    "family_name": "Travis",
+    "image": "",
+    "email": "dillon.travis@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-09T07:53:54.116356+00:00",
+    "updated_at": "2026-04-25T01:57:36.124733+00:00",
+    "openstates_url": "https://openstates.org/person/dillon-travis-dJwAyieZxA4xvMF3IH7Oc/"
+  },
+  {
+    "id": "ocd-person/d93c695c-f9d6-4f97-b92e-73249f89545a",
+    "name": "Eddy Dempsey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ok/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Eddy",
+    "family_name": "Dempsey",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Dempsey,%20Eddy.jpg",
+    "email": "eddy.dempsey@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-09-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:05.900877+00:00",
+    "updated_at": "2026-02-13T07:48:06.343213+00:00",
+    "openstates_url": "https://openstates.org/person/eddy-dempsey-6buwTMcfpEY3efJiaHMnXu/"
+  },
+  {
+    "id": "ocd-person/c63ddc9a-5f9d-4cb5-b152-4828f4870682",
+    "name": "Ellen Pogemiller",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:ok/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Ellen",
+    "family_name": "Pogemiller",
+    "image": "https://static.wixstatic.com/media/d59798_0699f998a916470598404706be4aca74~mv2.jpg/v1/fill/w_1349,h_1019,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/d59798_0699f998a916470598404706be4aca74~mv2.jpg",
+    "email": "ellen.pogemiller@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:04.385875+00:00",
+    "updated_at": "2026-01-28T01:59:04.653039+00:00",
+    "openstates_url": "https://openstates.org/person/ellen-pogemiller-624kbHFHc3zy3nUHVM0tj0/"
+  },
+  {
+    "id": "ocd-person/c9e547ff-6762-49f8-807c-32c78ce569cf",
+    "name": "Ellyn Hefner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:ok/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Ellyn",
+    "family_name": "Hefner",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Hefner,%20Ellyn.jpg",
+    "email": "ellyn.hefner@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:49.262549+00:00",
+    "updated_at": "2026-02-13T07:47:45.001953+00:00",
+    "openstates_url": "https://openstates.org/person/ellyn-hefner-68yEqo6epyExUYeU9qHfGp/"
+  },
+  {
+    "id": "ocd-person/09b3acaf-ac32-4f74-9bfe-37d84beb09c8",
+    "name": "Emily Gise",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:ok/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Emily",
+    "family_name": "Gise",
+    "image": "https://www.cairoklahoma.com/wp-content/uploads/2024/09/emily-200x200.jpeg",
+    "email": "emily.gise@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:06.136382+00:00",
+    "updated_at": "2026-02-13T07:48:30.914950+00:00",
+    "openstates_url": "https://openstates.org/person/emily-gise-IJ2d9ehnVDfJcQvQoyrRg/"
+  },
+  {
+    "id": "ocd-person/752b02fd-2ce1-46d3-88a3-337d64df6b1a",
+    "name": "Eric Roberts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:ok/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Roberts",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Roberts,%20Eric.jpg",
+    "email": "eric.roberts@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:06.681482+00:00",
+    "updated_at": "2026-02-13T07:47:43.646356+00:00",
+    "openstates_url": "https://openstates.org/person/eric-roberts-3Z5l2F5yS5YfS69boNnVPe/"
+  },
+  {
+    "id": "ocd-person/57fd0b98-5608-470a-a70b-971165572afb",
+    "name": "Erick Harris",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ok/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Erick",
+    "family_name": "Harris",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ErickHarris.jpg",
+    "email": "erick.harris@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-03T19:42:31.109695+00:00",
+    "updated_at": "2026-02-13T07:47:54.704671+00:00",
+    "openstates_url": "https://openstates.org/person/erick-harris-2g1yPrUuA2bfrWEzLnrlLX/"
+  },
+  {
+    "id": "ocd-person/b0168a8a-bf16-4ddb-85ef-a7503cdb4d66",
+    "name": "Gabe Woolley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:ok/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Gabe",
+    "family_name": "Woolley",
+    "image": "https://www.cairoklahoma.com/wp-content/uploads/2024/06/gabe-960x958.jpg",
+    "email": "gabe.woolley@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1994-09-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:50.882101+00:00",
+    "updated_at": "2026-04-09T07:53:49.456319+00:00",
+    "openstates_url": "https://openstates.org/person/gabe-woolley-5MGwxFVJboGrWtlysshIYQ/"
+  },
+  {
+    "id": "ocd-person/1120aff3-9773-4cc8-9c47-18026559363a",
+    "name": "Gerrid Kendrix",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:ok/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Gerrid",
+    "family_name": "Kendrix",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Kendrix,%20Gerrid.jpg",
+    "email": "gerrid.kendrix@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:03.471378+00:00",
+    "updated_at": "2026-02-13T07:48:18.959024+00:00",
+    "openstates_url": "https://openstates.org/person/gerrid-kendrix-WJo4nsiNFFqhvGLpStHGk/"
+  },
+  {
+    "id": "ocd-person/df4d2b89-39a6-4157-90ea-fd229c84f98b",
+    "name": "Jacob Rosecrants",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:ok/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jacob",
+    "family_name": "Rosecrants",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Rosecrants,%20Jacob.jpg",
+    "email": "jacob.rosecrants@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1977-10-10",
+    "death_date": "",
+    "extras": {
+      "email": "Jacob.Rosecrants@okhouse.gov",
+      "_scraped_name": "Rosecrants, Jacob"
+    },
+    "created_at": "2018-10-18T14:57:41.194278+00:00",
+    "updated_at": "2026-02-13T07:48:34.587909+00:00",
+    "openstates_url": "https://openstates.org/person/jacob-rosecrants-6nMYSFGNT1sxXIcmBHqXSl/"
+  },
+  {
+    "id": "ocd-person/a4127dd3-e7f6-4bab-9910-8372e141f160",
+    "name": "Jared Deck",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:ok/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jared",
+    "family_name": "Deck",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Deck,%20Jared.jpg",
+    "email": "jared.deck@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:47.746618+00:00",
+    "updated_at": "2026-02-13T07:47:46.642818+00:00",
+    "openstates_url": "https://openstates.org/person/jared-deck-4zbBv5iNsTVhil4yVzP1oO/"
+  },
+  {
+    "id": "ocd-person/a791f43c-0ca9-42aa-b90a-98968718a7e1",
+    "name": "Jason Blair",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:ok/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Blair",
+    "image": "https://www.oklahoman.com/gcdn/authoring/authoring-images/2024/06/10/NOKL/74049882007-jason-blair.jpg?width=300&height=366&fit=crop&format=pjpg&auto=webp",
+    "email": "jason.blair@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:49.598183+00:00",
+    "updated_at": "2026-02-13T07:48:03.848338+00:00",
+    "openstates_url": "https://openstates.org/person/jason-blair-56CQ1fj3jUdL2Gpik1jDkX/"
+  },
+  {
+    "id": "ocd-person/0389a5f1-0777-4a48-8faf-98779dc16849",
+    "name": "Jay Steagall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:ok/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Steagall",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Steagall,%20Jay.jpg",
+    "email": "jay.steagall@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1976-12-16",
+    "death_date": "",
+    "extras": {
+      "email": "jay.steagall@okhouse.gov",
+      "_scraped_name": "Steagall, Jay"
+    },
+    "created_at": "2019-01-07T05:09:10.427207+00:00",
+    "updated_at": "2026-04-09T07:53:45.364891+00:00",
+    "openstates_url": "https://openstates.org/person/jay-steagall-6fshtqHPyKUHPkpkRPlm5/"
+  },
+  {
+    "id": "ocd-person/612db560-defe-471a-a45f-cf259a4ffeaa",
+    "name": "Jim Grego",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ok/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Grego",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Grego,%20Jim.jpg",
+    "email": "jim.grego@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1955-11-08",
+    "death_date": "",
+    "extras": {
+      "email": "jim.grego@okhouse.gov",
+      "_scraped_name": "Grego, Jim"
+    },
+    "created_at": "2019-01-07T05:09:25.137901+00:00",
+    "updated_at": "2026-02-13T07:48:38.984467+00:00",
+    "openstates_url": "https://openstates.org/person/jim-grego-2xN8xhrE8fJdSI8jPtDfzO/"
+  },
+  {
+    "id": "ocd-person/f7a4c019-6e5c-40d8-8faf-9f7d44b83062",
+    "name": "Jim Olsen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ok/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Olsen",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Olsen,%20Jim.jpg",
+    "email": "jim.olsen@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "jim.olsen@okhouse.gov",
+      "_scraped_name": "Olsen, Jim"
+    },
+    "created_at": "2019-01-07T05:09:17.355960+00:00",
+    "updated_at": "2026-02-13T07:48:20.856048+00:00",
+    "openstates_url": "https://openstates.org/person/jim-olsen-7XIOXqsq1dR5UnYMc6wlcY/"
+  },
+  {
+    "id": "ocd-person/df9c291c-e14f-487a-8ff6-9182734ababf",
+    "name": "Jim Shaw",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ok/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Shaw",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JimShaw2.jpg",
+    "email": "jim.shaw@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:07.650179+00:00",
+    "updated_at": "2026-02-13T07:47:49.934313+00:00",
+    "openstates_url": "https://openstates.org/person/jim-shaw-6nweZw7t42Q8tPmEeel0kJ/"
+  },
+  {
+    "id": "ocd-person/3af08d09-7d36-4f0b-b257-a0206a8c2778",
+    "name": "John George",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ok/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "George",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/George,%20John.jpg",
+    "email": "john.george@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:47.388156+00:00",
+    "updated_at": "2026-02-13T07:48:37.715477+00:00",
+    "openstates_url": "https://openstates.org/person/john-george-1nDUCCcdt2ETvNPfI91TnU/"
+  },
+  {
+    "id": "ocd-person/f7ab3ee8-1ec5-4218-ac6b-dba652f2a6d6",
+    "name": "John Kane",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ok/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Kane",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Kane,%20John.jpg",
+    "email": "john.kane@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:52.289868+00:00",
+    "updated_at": "2026-02-13T07:48:18.411874+00:00",
+    "openstates_url": "https://openstates.org/person/john-kane-7XLMaImUEvxKPwDzgaj8kw/"
+  },
+  {
+    "id": "ocd-person/671bd947-18c8-4b39-906e-675209b80b73",
+    "name": "John Pfeiffer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ok/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Pfeiffer",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Pfeiffer,%20John.JPG",
+    "email": "john.pfeiffer@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1986-05-09",
+    "death_date": "",
+    "extras": {
+      "email": "john.pfeiffer@okhouse.gov",
+      "_scraped_name": "Pfeiffer, John"
+    },
+    "created_at": "2018-10-18T14:57:35.151000+00:00",
+    "updated_at": "2026-02-13T07:47:47.714153+00:00",
+    "openstates_url": "https://openstates.org/person/john-pfeiffer-38Yw4FamJyrcibJJkUqOot/"
+  },
+  {
+    "id": "ocd-person/6a662cc1-492b-4c65-a77c-9b8b202b1ae5",
+    "name": "John Waldron",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:ok/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Waldron",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Waldron,%20John.jpg",
+    "email": "john.waldron@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "john.waldron@okhouse.gov",
+      "_scraped_name": "Waldron, John"
+    },
+    "created_at": "2019-01-07T05:09:14.074042+00:00",
+    "updated_at": "2026-04-09T07:53:32.693728+00:00",
+    "openstates_url": "https://openstates.org/person/john-waldron-3ElsbM5KTAAHvi0dwJ8ObV/"
+  },
+  {
+    "id": "ocd-person/d8c6a83e-cdac-439d-af83-d90d9f543541",
+    "name": "Jonathan Wilk",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ok/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Jonathan",
+    "family_name": "Wilk",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQcSK-0G7vutoYpyD-I4rn3EZVvTgV8ij17A&s",
+    "email": "jonathan.wilk@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:57:10.895486+00:00",
+    "updated_at": "2026-04-09T07:53:59.971034+00:00",
+    "openstates_url": "https://openstates.org/person/jonathan-wilk-6b380kQRRQHm7bgfiL8rdh/"
+  },
+  {
+    "id": "ocd-person/7bfc4244-9498-4a20-bdf7-44383688b608",
+    "name": "Josh Cantrell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:ok/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Cantrell",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Cantrell,%20Josh.jpg",
+    "email": "josh.cantrell@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1975-01-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:41.939915+00:00",
+    "updated_at": "2026-02-13T07:47:59.120240+00:00",
+    "openstates_url": "https://openstates.org/person/josh-cantrell-3lxL0V5KL1JWmAmqfgRWrA/"
+  },
+  {
+    "id": "ocd-person/6b71e61a-6f78-49b0-90ef-64b233dab860",
+    "name": "Josh West",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ok/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "West",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/West,%20Josh.jpg",
+    "email": "josh.west@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1976-09-19",
+    "death_date": "",
+    "extras": {
+      "email": "josh.west@okhouse.gov",
+      "_scraped_name": "West, Josh"
+    },
+    "created_at": "2018-10-18T14:57:33.323510+00:00",
+    "updated_at": "2025-05-15T01:50:51.382595+00:00",
+    "openstates_url": "https://openstates.org/person/josh-west-3GkEJajFo1pvn663rMIh3A/"
+  },
+  {
+    "id": "ocd-person/47e6f0cc-bf0d-4375-b0f7-3e0c88779ca5",
+    "name": "Judd Strom",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ok/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Judd",
+    "family_name": "Strom",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Strom,%20Judd.jpg",
+    "email": "judd.strom@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1978-06-16",
+    "death_date": "",
+    "extras": {
+      "email": "judd.strom@okhouse.gov",
+      "_scraped_name": "Strom, Judd"
+    },
+    "created_at": "2019-01-07T05:09:25.621205+00:00",
+    "updated_at": "2026-04-09T07:53:50.698533+00:00",
+    "openstates_url": "https://openstates.org/person/judd-strom-2BfziE2OiVTrHhqw8QZpqv/"
+  },
+  {
+    "id": "ocd-person/0b9df925-a78c-4ee4-a58c-5d7c2ace10fd",
+    "name": "Justin Humphrey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ok/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Humphrey",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Humphrey,%20Justin.jpg",
+    "email": "justin.humphrey@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1966-08-17",
+    "death_date": "",
+    "extras": {
+      "email": "justin.humphrey@okhouse.gov",
+      "_scraped_name": "Humphrey, Justin"
+    },
+    "created_at": "2018-10-18T14:57:37.997456+00:00",
+    "updated_at": "2025-02-04T04:26:02.561399+00:00",
+    "openstates_url": "https://openstates.org/person/justin-humphrey-Lv6nAQub7q2F1VIZs1vjx/"
+  },
+  {
+    "id": "ocd-person/428ba1b3-23b7-433a-8f18-ca53f6eed9aa",
+    "name": "Ken Luttrell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ok/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Luttrell",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Luttrell,%20Ken.jpg",
+    "email": "ken.luttrell@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1953-08-13",
+    "death_date": "",
+    "extras": {
+      "email": "ken.luttrell@okhouse.gov",
+      "_scraped_name": "Luttrell, Ken"
+    },
+    "created_at": "2019-01-07T05:09:16.598535+00:00",
+    "updated_at": "2026-02-13T07:47:50.890339+00:00",
+    "openstates_url": "https://openstates.org/person/ken-luttrell-21ZIw1r1Okkh4IXR9kfcDq/"
+  },
+  {
+    "id": "ocd-person/91b38015-8cd5-410e-b850-34961760b8d7",
+    "name": "Kenton Patzkowsky",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:ok/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Kenton",
+    "family_name": "Patzkowsky",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Kenton-Patzkowsky,.jpg",
+    "email": "kenton.patzkowsky@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "kenton.patzkowsky@okhouse.gov",
+      "_scraped_name": "Patzkowsky, Kenton"
+    },
+    "created_at": "2019-01-07T05:09:26.513918+00:00",
+    "updated_at": "2026-02-13T07:48:38.288938+00:00",
+    "openstates_url": "https://openstates.org/person/kenton-patzkowsky-4QvuzlAZyNBztVRgFGzQXv/"
+  },
+  {
+    "id": "ocd-person/7a7aca64-e9e6-465e-a423-6e4cf939c67a",
+    "name": "Kevin Norwood",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:ok/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Norwood",
+    "image": "",
+    "email": "kevin.norwood@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-07-18T02:02:15.976801+00:00",
+    "updated_at": "2026-01-28T01:58:18.564409+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-norwood-3j7B7RBxqKTtMI7PW1sT7q/"
+  },
+  {
+    "id": "ocd-person/fa002548-470f-4cf0-8365-f6f5aa0c50c7",
+    "name": "Kevin West",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:ok/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "West",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Kevin-West.jpg",
+    "email": "kevin.west@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "kevin.west@okhouse.gov",
+      "_scraped_name": "West, Kevin"
+    },
+    "created_at": "2018-10-18T14:57:37.254843+00:00",
+    "updated_at": "2026-02-13T07:48:00.545070+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-west-7bk9C4QwceFWtrY3vSmrbT/"
+  },
+  {
+    "id": "ocd-person/b0ab4df0-8cc1-43f6-9ed1-567b75e91468",
+    "name": "Kyle Hilbert",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ok/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Kyle",
+    "family_name": "Hilbert",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Hilbert,%20Kyle.jpg",
+    "email": "kyle.hilbert@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "Kyle.Hilbert@okhouse.gov",
+      "_scraped_name": "Hilbert, Kyle"
+    },
+    "created_at": "2018-10-18T14:57:48.884217+00:00",
+    "updated_at": "2026-01-28T01:58:25.964193+00:00",
+    "openstates_url": "https://openstates.org/person/kyle-hilbert-5NMw1brqWNlS0hfHyUmYgK/"
+  },
+  {
+    "id": "ocd-person/aefe24ff-5a23-48bd-a5df-faa7b3dd0af9",
+    "name": "Marilyn Stark",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:ok/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Marilyn",
+    "family_name": "Stark",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Stark,%20Marilyn.jpg",
+    "email": "marilyn.stark@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "1957-01-29",
+    "death_date": "",
+    "extras": {
+      "email": "marilyn.stark@okhouse.gov",
+      "_scraped_name": "Stark, Marilyn"
+    },
+    "created_at": "2019-01-07T05:09:18.311937+00:00",
+    "updated_at": "2026-02-13T07:47:53.636824+00:00",
+    "openstates_url": "https://openstates.org/person/marilyn-stark-5KCoAosbzjir8i54lerOwL/"
+  },
+  {
+    "id": "ocd-person/a688f8ac-d265-4830-963f-617b726524ed",
+    "name": "Mark Chapman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ok/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Chapman",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MarkChapman2024.JPG",
+    "email": "mark.chapman@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:14.674139+00:00",
+    "updated_at": "2025-02-04T04:25:19.593403+00:00",
+    "openstates_url": "https://openstates.org/person/mark-chapman-54FJzDqqTGLjkGS6vNS6vN/"
+  },
+  {
+    "id": "ocd-person/97351530-ef54-4859-acdd-effcb11eaf1f",
+    "name": "Mark Lawson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ok/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Lawson",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Lawson,%20Mark.jpg",
+    "email": "mark.lawson@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1980-11-22",
+    "death_date": "",
+    "extras": {
+      "email": "mark.lawson@okhouse.gov",
+      "_scraped_name": "Lawson, Mark"
+    },
+    "created_at": "2018-10-18T14:57:36.957844+00:00",
+    "updated_at": "2026-01-28T01:58:08.401356+00:00",
+    "openstates_url": "https://openstates.org/person/mark-lawson-4bK6DRhIEOAOnR4ggtGTpX/"
+  },
+  {
+    "id": "ocd-person/a1d5d401-d767-4088-b9b6-e03af9d5ed49",
+    "name": "Mark Lepak",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ok/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Lepak",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Lepak,%20Mark.jpg",
+    "email": "mark.lepak@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1956-08-01",
+    "death_date": "",
+    "extras": {
+      "email": "mark.lepak@okhouse.gov",
+      "_scraped_name": "Lepak, Mark"
+    },
+    "created_at": "2018-10-18T14:57:33.175211+00:00",
+    "updated_at": "2026-02-13T07:47:48.100082+00:00",
+    "openstates_url": "https://openstates.org/person/mark-lepak-4vNU1yFrE2Knln7AZYBL6P/"
+  },
+  {
+    "id": "ocd-person/6cac2a71-37ce-41be-8e9a-059f7a8667c5",
+    "name": "Mark Tedford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:ok/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Tedford",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Tedford,%20Mark.jpg",
+    "email": "mark.tedford@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:41.770985+00:00",
+    "updated_at": "2026-04-09T07:53:53.009636+00:00",
+    "openstates_url": "https://openstates.org/person/mark-tedford-3J3qmOkdeRtvqzPxnsYuMX/"
+  },
+  {
+    "id": "ocd-person/190ef3e9-fdd4-4434-80da-06ebb08f2eaf",
+    "name": "Max Wolfley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:ok/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Max",
+    "family_name": "Wolfley",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Wolfley,%20Max.jpg",
+    "email": "max.wolfley@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:07.402284+00:00",
+    "updated_at": "2026-04-09T07:53:41.566974+00:00",
+    "openstates_url": "https://openstates.org/person/max-wolfley-lHdmNdM1YJnU8Hwl6tjDD/"
+  },
+  {
+    "id": "ocd-person/4085a19f-1853-48e4-88c8-8b5b9089054a",
+    "name": "Melissa Provenzano",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:ok/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Melissa",
+    "family_name": "Provenzano",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Melissa-Provenzano.jpg",
+    "email": "melissa.provenzano@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "1972-05-04",
+    "death_date": "",
+    "extras": {
+      "email": "melissa.provenzano@okhouse.gov",
+      "_scraped_name": "Provenzano, Melissa"
+    },
+    "created_at": "2019-01-07T05:09:16.116859+00:00",
+    "updated_at": "2026-02-13T07:48:25.631045+00:00",
+    "openstates_url": "https://openstates.org/person/melissa-provenzano-1xkZsCj8Wnq6pENrZkLDUw/"
+  },
+  {
+    "id": "ocd-person/e9c3844d-e861-4848-8737-539fdb553eb9",
+    "name": "Meloyde Blancett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:ok/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Meloyde",
+    "family_name": "Blancett",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Blancett,%20Meloyde.jpg",
+    "email": "meloyde.blancett@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "1956-01-24",
+    "death_date": "",
+    "extras": {
+      "email": "meloyde.blancett@okhouse.gov",
+      "_scraped_name": "Blancett, Meloyde"
+    },
+    "created_at": "2018-10-18T14:57:46.061960+00:00",
+    "updated_at": "2026-02-13T07:48:42.160346+00:00",
+    "openstates_url": "https://openstates.org/person/meloyde-blancett-776YwYmzeglN2EKbqZ7KqP/"
+  },
+  {
+    "id": "ocd-person/5822cf27-1b1f-40bd-ace3-a06a7f304820",
+    "name": "Michelle McCane",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:ok/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "McCane",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MichelleMcCane2024.jpg",
+    "email": "michelle.mccane@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:57:23.409077+00:00",
+    "updated_at": "2026-02-13T07:48:25.004722+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-mccane-2gJEQBhM72711o5tYyS4g4/"
+  },
+  {
+    "id": "ocd-person/2c065b7f-f5eb-4c15-bd69-10a7fa339b28",
+    "name": "Mickey Dollens",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:ok/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mickey",
+    "family_name": "Dollens",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Mickey-Dollens.jpg",
+    "email": "mickey.dollens@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "mickey.dollens@okhouse.gov",
+      "_scraped_name": "Dollens, Mickey"
+    },
+    "created_at": "2018-10-18T14:57:43.458903+00:00",
+    "updated_at": "2025-02-04T04:24:38.598482+00:00",
+    "openstates_url": "https://openstates.org/person/mickey-dollens-1L4ZCNdUzZBMCKdxwIFz6O/"
+  },
+  {
+    "id": "ocd-person/527c315f-7d62-4de1-a543-6c81a0ac11a3",
+    "name": "Mike Dobrinski",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:ok/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Dobrinski",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Dobrinski,%20Mike.jpg",
+    "email": "mike.dobrinski@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:07.665655+00:00",
+    "updated_at": "2026-02-13T07:48:19.889149+00:00",
+    "openstates_url": "https://openstates.org/person/mike-dobrinski-2Ve7sbt5sYIHgu7aH9cDNT/"
+  },
+  {
+    "id": "ocd-person/8746752e-619b-454d-9ef6-7f4434acdd71",
+    "name": "Mike Kelley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:ok/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Kelley",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MikeKelley2024.jpg",
+    "email": "mike.kelley@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:59.392321+00:00",
+    "updated_at": "2026-02-13T07:47:56.977093+00:00",
+    "openstates_url": "https://openstates.org/person/mike-kelley-47GA8BXR7nLzHsgZ0P83kn/"
+  },
+  {
+    "id": "ocd-person/65f17e9b-aa29-4241-80c8-a800aea8ddae",
+    "name": "Mike Lay",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:ok/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Lay",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6rbtW0elpYl-o3FI3jbR9-PkUylFA7p5-Ig&s",
+    "email": "mike.lay@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:39.089854+00:00",
+    "updated_at": "2025-02-04T04:25:03.014281+00:00",
+    "openstates_url": "https://openstates.org/person/mike-lay-36MaTc6oiAKZZ422BhGrEc/"
+  },
+  {
+    "id": "ocd-person/95734f94-939c-4774-82a5-c9222201f62f",
+    "name": "Mike Osburn",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:ok/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Osburn",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Osburn,%20Mike.jpg",
+    "email": "mike.osburn@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1968-04-15",
+    "death_date": "",
+    "extras": {
+      "email": "mike.osburn@okhouse.gov",
+      "_scraped_name": "Osburn, Mike"
+    },
+    "created_at": "2018-10-18T14:57:28.551569+00:00",
+    "updated_at": "2026-02-13T07:48:45.585501+00:00",
+    "openstates_url": "https://openstates.org/person/mike-osburn-4Y0YLJR1uzqdIDqlcdQdjD/"
+  },
+  {
+    "id": "ocd-person/82b98199-7b85-488b-b5e8-7f135aad668f",
+    "name": "Molly Jenkins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ok/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Molly",
+    "family_name": "Jenkins",
+    "image": "https://www.cushingcitizen.com/sites/cushingcitizen.com/files/styles/article_420/public/3d8c9a84be_Ar00503010.jpg?itok=QUjuCFyZ",
+    "email": "molly.jenkins@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:44.093682+00:00",
+    "updated_at": "2025-05-15T01:51:10.051346+00:00",
+    "openstates_url": "https://openstates.org/person/molly-jenkins-3yfmIrUspowXrbCuKvoQm7/"
+  },
+  {
+    "id": "ocd-person/3eb936f1-5bc8-40bb-832e-c617d461115c",
+    "name": "Neil Hays",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ok/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Neil",
+    "family_name": "Hays",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Hays,%20Neil.jpg",
+    "email": "neil.hays@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:45.007857+00:00",
+    "updated_at": "2026-02-13T07:48:11.849702+00:00",
+    "openstates_url": "https://openstates.org/person/neil-hays-1uMAODgUgMFyIN24ZjuFpM/"
+  },
+  {
+    "id": "ocd-person/479b4def-b284-426b-8290-86bdce854bce",
+    "name": "Nick Archer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:ok/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Archer",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Archer,%20Nick.jpg",
+    "email": "nick.archer@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:37.281257+00:00",
+    "updated_at": "2026-02-13T07:48:23.116372+00:00",
+    "openstates_url": "https://openstates.org/person/nick-archer-2B7QdA6cRy4VDk9d1RSPxm/"
+  },
+  {
+    "id": "ocd-person/4af77a1a-7011-4901-89fe-4619d558d34c",
+    "name": "Nicole Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:ok/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Nicole",
+    "family_name": "Miller",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Nicole-Miller.jpg",
+    "email": "nicole.miller@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "nicole.miller@okhouse.gov",
+      "_scraped_name": "Miller, Nicole"
+    },
+    "created_at": "2019-01-07T05:09:15.377231+00:00",
+    "updated_at": "2026-02-13T07:48:28.118964+00:00",
+    "openstates_url": "https://openstates.org/person/nicole-miller-2HSWpLSvqgR4lORrFjqxoq/"
+  },
+  {
+    "id": "ocd-person/016593c8-d702-434a-ba7c-aee48b14b6b3",
+    "name": "Preston Stinson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:ok/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Preston",
+    "family_name": "Stinson",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Stinson,%20Preston.jpg",
+    "email": "preston.stinson@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:04.209951+00:00",
+    "updated_at": "2026-01-28T01:58:10.690717+00:00",
+    "openstates_url": "https://openstates.org/person/preston-stinson-2dPcd3Lqh0DpYyetGkvH1/"
+  },
+  {
+    "id": "ocd-person/cfa7e540-ce4e-4230-9f82-9784d11733cb",
+    "name": "Rande Worthen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:ok/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Rande",
+    "family_name": "Worthen",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Rande-Worthen.jpg",
+    "email": "rande.worthen@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1956-07-16",
+    "death_date": "",
+    "extras": {
+      "email": "rande.worthen@okhouse.gov",
+      "_scraped_name": "Worthen, Rande"
+    },
+    "created_at": "2018-10-18T14:57:39.658885+00:00",
+    "updated_at": "2026-04-09T07:54:17.670552+00:00",
+    "openstates_url": "https://openstates.org/person/rande-worthen-6Jq8gkTSz938afqkoXyc39/"
+  },
+  {
+    "id": "ocd-person/bae91554-72c9-4dbd-b042-b4bd800e4732",
+    "name": "Rick West",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ok/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "West",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/West,%20Rick.jpg",
+    "email": "rick.west@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "rick.west@okhouse.gov",
+      "_scraped_name": "West, Rick"
+    },
+    "created_at": "2021-01-05T06:15:04.969081+00:00",
+    "updated_at": "2025-02-04T04:24:47.569921+00:00",
+    "openstates_url": "https://openstates.org/person/rick-west-5gh5iOVPIwzMWgoChy7uk6/"
+  },
+  {
+    "id": "ocd-person/a73e2372-a002-448b-afbb-31398aed55b1",
+    "name": "Rob Hall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:ok/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Hall",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/rhall.jpg",
+    "email": "rob.hall@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:20.642271+00:00",
+    "updated_at": "2026-02-13T07:47:49.388896+00:00",
+    "openstates_url": "https://openstates.org/person/rob-hall-55a7BlvR3CITq2NDWiigWf/"
+  },
+  {
+    "id": "ocd-person/a865c489-d177-4058-af64-51c2f0abef68",
+    "name": "Robert Manger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "101",
+      "division_id": "ocd-division/country:us/state:ok/sldl:101"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Manger",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Manger,%20Robert.jpg",
+    "email": "robert.manger@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1956-12-03",
+    "death_date": "",
+    "extras": {
+      "email": "robert.manger@okhouse.gov",
+      "_scraped_name": "Manger, Robert"
+    },
+    "created_at": "2019-01-07T05:09:23.197628+00:00",
+    "updated_at": "2026-02-13T07:48:16.685784+00:00",
+    "openstates_url": "https://openstates.org/person/robert-manger-57lDZVfjwltDU2CIJ7IjFI/"
+  },
+  {
+    "id": "ocd-person/bdd6a3f7-c76a-459e-aad3-e833a9e110f8",
+    "name": "Ron Stewart",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:ok/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Stewart",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RonStewart2024.jpg",
+    "email": "ronald.stewart@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:35.213228+00:00",
+    "updated_at": "2025-02-04T04:25:49.730496+00:00",
+    "openstates_url": "https://openstates.org/person/ron-stewart-5mDdjAVyX9rwmqiaC6yBFg/"
+  },
+  {
+    "id": "ocd-person/e5d78f97-752b-4bff-a413-4704ed7c230a",
+    "name": "Ronny Johns",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ok/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Ronny",
+    "family_name": "Johns",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Johns,%20Ronny.jpg",
+    "email": "ronny.johns@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1962-06-11",
+    "death_date": "",
+    "extras": {
+      "email": "ronny.johns@okhouse.gov",
+      "_scraped_name": "Johns, Ronny"
+    },
+    "created_at": "2019-01-07T05:09:18.895722+00:00",
+    "updated_at": "2026-02-13T07:48:02.292272+00:00",
+    "openstates_url": "https://openstates.org/person/ronny-johns-6zhkmFniyHdrllevEWE1jG/"
+  },
+  {
+    "id": "ocd-person/a6aa7540-02db-458d-9031-e6af94d63b44",
+    "name": "Ross Ford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:ok/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Ross",
+    "family_name": "Ford",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Ford,%20Ross.jpg",
+    "email": "ross.ford@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "Ross.Ford@okhouse.gov",
+      "_scraped_name": "Ford, Ross"
+    },
+    "created_at": "2018-10-18T14:57:35.747216+00:00",
+    "updated_at": "2026-02-13T07:48:47.721164+00:00",
+    "openstates_url": "https://openstates.org/person/ross-ford-54UcnbMrlKZI4pT4xELEVo/"
+  },
+  {
+    "id": "ocd-person/818eac04-d5b7-49be-b740-84a8432cf5b3",
+    "name": "Rusty Cornwell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ok/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Rusty",
+    "family_name": "Cornwell",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Cornwell,%20Rusty.jpg",
+    "email": "rusty.cornwell@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-08-31",
+    "death_date": "",
+    "extras": {
+      "email": "rusty.cornwell@okhouse.gov",
+      "_scraped_name": "Cornwell, Rusty"
+    },
+    "created_at": "2019-01-07T05:09:20.096286+00:00",
+    "updated_at": "2026-02-13T07:48:36.016920+00:00",
+    "openstates_url": "https://openstates.org/person/rusty-cornwell-3wTD6n37XHZdzvc7gRqoxH/"
+  },
+  {
+    "id": "ocd-person/f61f3be0-ac28-411d-9641-917af1eb6753",
+    "name": "Ryan Eaves",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ok/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Eaves",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RyanEaves2024.jpg",
+    "email": "ryan.eaves@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:54:47.446305+00:00",
+    "updated_at": "2025-02-04T04:25:15.835819+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-eaves-7UQNxCg4qiHvVIrGHgVeJH/"
+  },
+  {
+    "id": "ocd-person/a2be8726-7870-43b3-bbac-381824466f9c",
+    "name": "Scott Fetgatter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ok/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Fetgatter",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Fetgatter,%20Scott.jpg",
+    "email": "scott.fetgatter@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1968-07-04",
+    "death_date": "",
+    "extras": {
+      "email": "scott.fetgatter@okhouse.gov",
+      "_scraped_name": "Fetgatter, Scott"
+    },
+    "created_at": "2018-10-18T14:57:43.008232+00:00",
+    "updated_at": "2026-02-13T07:48:27.156297+00:00",
+    "openstates_url": "https://openstates.org/person/scott-fetgatter-4x5pMfsKWTIuoFTsPhfeVo/"
+  },
+  {
+    "id": "ocd-person/d93d9d8d-1299-423a-bb9e-ade2bcb0fa11",
+    "name": "Stacy Adams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:ok/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Stacy",
+    "family_name": "Adams",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/StacyAdams2024.png",
+    "email": "stacy.adams@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:56:33.360412+00:00",
+    "updated_at": "2025-02-04T04:24:59.217489+00:00",
+    "openstates_url": "https://openstates.org/person/stacy-adams-6bvUaCMMmOssKXkKbcJCqX/"
+  },
+  {
+    "id": "ocd-person/1ba99d3e-ebea-4426-b91a-0560da625e83",
+    "name": "Stan May",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:ok/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Stan",
+    "family_name": "May",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/May,%20Stan.jpg",
+    "email": "stan.may@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "stan.may@okhouse.gov",
+      "_scraped_name": "May, Stan"
+    },
+    "created_at": "2019-01-07T05:09:21.590635+00:00",
+    "updated_at": "2026-02-13T07:48:44.956724+00:00",
+    "openstates_url": "https://openstates.org/person/stan-may-qCJ19y4IO1iEWvARIctXP/"
+  },
+  {
+    "id": "ocd-person/bf810dce-34f8-4db5-b242-efc008311228",
+    "name": "Steve Bashore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ok/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Bashore",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Bashore,%20Steve.jpg",
+    "email": "steve.bashore@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1969-08-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-05T06:15:06.296678+00:00",
+    "updated_at": "2026-02-13T07:48:07.410613+00:00",
+    "openstates_url": "https://openstates.org/person/steve-bashore-5pMVl8uplWpRzfOgsz94qu/"
+  },
+  {
+    "id": "ocd-person/3d8b5070-b96a-4976-b886-e889214ffd0b",
+    "name": "Suzanne Schreiber",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:ok/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Suzanne",
+    "family_name": "Schreiber",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Schreiber,%20Suzanne.jpg",
+    "email": "suzanne.schreiber@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-06T00:44:43.999851+00:00",
+    "updated_at": "2026-02-13T07:47:54.156282+00:00",
+    "openstates_url": "https://openstates.org/person/suzanne-schreiber-1s8CJtBD94XFEEkVjB6Tf9/"
+  },
+  {
+    "id": "ocd-person/71996394-7250-43ab-b69f-8c0afa3b144a",
+    "name": "T.J. Marti",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:ok/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "T.J.",
+    "family_name": "Marti",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Marti,%20TJ.jpg",
+    "email": "tj.marti@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "email": "tj.marti@okhouse.gov",
+      "_scraped_name": "Marti, T.J."
+    },
+    "created_at": "2019-01-07T05:09:12.159052+00:00",
+    "updated_at": "2026-02-13T07:48:29.981813+00:00",
+    "openstates_url": "https://openstates.org/person/t-j-marti-3SMENStTu564cbzBEEzDVS/"
+  },
+  {
+    "id": "ocd-person/1d6bc21f-6774-45de-b805-23cd8b5c32aa",
+    "name": "Tammy Townley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:ok/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Tammy",
+    "family_name": "Townley",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Townley,%20Tammy.jpg",
+    "email": "tammy.townley@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "1965-11-27",
+    "death_date": "",
+    "extras": {
+      "email": "tammy.townley@okhouse.gov",
+      "_scraped_name": "Townley, Tammy"
+    },
+    "created_at": "2019-01-07T05:09:24.051949+00:00",
+    "updated_at": "2026-04-09T07:53:37.555861+00:00",
+    "openstates_url": "https://openstates.org/person/tammy-townley-tW1R1ZLmuVhzY4lNq2nik/"
+  },
+  {
+    "id": "ocd-person/8a0a65fd-9a33-4f93-a94a-131e0ec39e6b",
+    "name": "Tammy West",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:ok/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Tammy",
+    "family_name": "West",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Tammy-West.jpg",
+    "email": "tammy.west@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "1959-05-24",
+    "death_date": "",
+    "extras": {
+      "email": "tammy.west@okhouse.gov",
+      "_scraped_name": "West, Tammy"
+    },
+    "created_at": "2018-10-18T14:57:38.297617+00:00",
+    "updated_at": "2026-04-25T01:58:09.447670+00:00",
+    "openstates_url": "https://openstates.org/person/tammy-west-4CTgygYWrmUkTgeQ0NP015/"
+  },
+  {
+    "id": "ocd-person/d3bf80d0-be37-4e25-b7c6-7e30e54fe158",
+    "name": "Tim Turner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ok/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Turner",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdKW8Yps28Qqd_HZ-KGr8HDljGbqjeswJrSA&s",
+    "email": "tim.turner@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:55:47.838152+00:00",
+    "updated_at": "2026-04-09T07:54:04.895568+00:00",
+    "openstates_url": "https://openstates.org/person/tim-turner-6RYtgesRsOSaQQhsYnC6S8/"
+  },
+  {
+    "id": "ocd-person/fc634688-e6d0-4b9b-919c-0c1f001d51a7",
+    "name": "Tom Gann",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ok/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Gann",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Gann,%20Tom.jpg",
+    "email": "tom.gann@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1959-01-11",
+    "death_date": "",
+    "extras": {
+      "email": "tom.gann@okhouse.gov",
+      "_scraped_name": "Gann, Tom"
+    },
+    "created_at": "2018-10-18T14:57:37.845509+00:00",
+    "updated_at": "2026-02-13T07:47:46.115388+00:00",
+    "openstates_url": "https://openstates.org/person/tom-gann-7gFQzqGZcWn5L3TWQXKlTr/"
+  },
+  {
+    "id": "ocd-person/25f65ce4-eb63-4beb-92d0-0d07db7f851a",
+    "name": "Toni Hasenbeck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:ok/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Toni",
+    "family_name": "Hasenbeck",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Hasenbeck,%20Toni.jpg",
+    "email": "toni.hasenbeck@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "1971-08-17",
+    "death_date": "",
+    "extras": {
+      "email": "toni.hasenbeck@okhouse.gov",
+      "_scraped_name": "Hasenbeck, Toni"
+    },
+    "created_at": "2019-01-07T05:09:09.580962+00:00",
+    "updated_at": "2026-02-13T07:48:03.302178+00:00",
+    "openstates_url": "https://openstates.org/person/toni-hasenbeck-19dIrVpjOzeMmygBuUcrms/"
+  },
+  {
+    "id": "ocd-person/da01678a-03b7-4c2f-b93b-f98338c638b0",
+    "name": "Trey Caldwell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:ok/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Trey",
+    "family_name": "Caldwell",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Caldwell,%20Trey.jpg",
+    "email": "trey.caldwell@okhouse.gov",
+    "gender": "Male",
+    "birth_date": "1988-12-24",
+    "death_date": "",
+    "extras": {
+      "email": "trey.caldwell@okhouse.gov",
+      "_scraped_name": "Caldwell, Trey"
+    },
+    "created_at": "2019-01-07T05:09:23.638440+00:00",
+    "updated_at": "2026-02-13T07:48:49.837380+00:00",
+    "openstates_url": "https://openstates.org/person/trey-caldwell-6dMy5I30dJQvZkH5vV4jtw/"
+  },
+  {
+    "id": "ocd-person/d3a66cdd-0469-4c20-90da-620f60c4b4be",
+    "name": "Trish Ranson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ok/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ok/government",
+      "name": "Oklahoma",
+      "classification": "state"
+    },
+    "given_name": "Trish",
+    "family_name": "Ranson",
+    "image": "https://www.okhouse.gov/Members/Pictures/HiRes/Ranson,%20Trish.jpg",
+    "email": "trish.ranson@okhouse.gov",
+    "gender": "Female",
+    "birth_date": "1969-11-23",
+    "death_date": "",
+    "extras": {
+      "email": "trish.ranson@okhouse.gov",
+      "_scraped_name": "Ranson, Trish"
+    },
+    "created_at": "2019-01-07T05:09:14.612215+00:00",
+    "updated_at": "2026-01-28T01:58:39.758905+00:00",
+    "openstates_url": "https://openstates.org/person/trish-ranson-6RNR7vBgoLYNdoTGJjQnvC/"
+  }
+]

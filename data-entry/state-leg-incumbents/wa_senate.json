@@ -1,0 +1,1371 @@
+[
+  {
+    "id": "ocd-person/3f71f11c-c231-4661-af2a-629d2eb32580",
+    "name": "Adrian Cortes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:wa/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Adrian",
+    "family_name": "Cortes",
+    "image": "https://leg.wa.gov/memberphoto/35473.jpg",
+    "email": "adrian.cortes@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-23T16:56:19.995445+00:00",
+    "updated_at": "2026-01-28T02:44:59.635819+00:00",
+    "openstates_url": "https://openstates.org/person/adrian-cortes-1viaSv7D5ctBZ7TMdI1Z32/"
+  },
+  {
+    "id": "ocd-person/50c73eec-2f66-450b-b8b4-b8bce995e221",
+    "name": "Annette Cleveland",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:wa/sldu:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Annette",
+    "family_name": "Cleveland",
+    "image": "https://leg.wa.gov/memberphoto/17294.jpg",
+    "email": "annette.cleveland@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:50.426602+00:00",
+    "updated_at": "2026-01-28T02:44:01.833846+00:00",
+    "openstates_url": "https://openstates.org/person/annette-cleveland-2SQRO3278XYF83zGHDLhzd/"
+  },
+  {
+    "id": "ocd-person/86f82668-8d68-45c5-bbcd-a5557b4dad54",
+    "name": "Bob Hasegawa",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:wa/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Hasegawa",
+    "image": "https://leg.wa.gov/memberphoto/10030.jpg",
+    "email": "bob.hasegawa@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1952-09-22",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Chair"
+    },
+    "created_at": "2018-10-18T16:13:50.730134+00:00",
+    "updated_at": "2026-01-28T02:44:58.445981+00:00",
+    "openstates_url": "https://openstates.org/person/bob-hasegawa-46gNM1iv4L64LQgjNtHcMW/"
+  },
+  {
+    "id": "ocd-person/1e20aaf3-ffbb-4666-82c2-374b232b41ac",
+    "name": "Chris Gildon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:wa/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Gildon",
+    "image": "https://leg.wa.gov/memberphoto/29101.jpg",
+    "email": "chris.gildon@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Republican Deputy Leader"
+    },
+    "created_at": "2021-03-10T00:20:45.859820+00:00",
+    "updated_at": "2026-01-28T02:43:42.963727+00:00",
+    "openstates_url": "https://openstates.org/person/chris-gildon-uqhL4GfykOBkaW1YZtr1Y/"
+  },
+  {
+    "id": "ocd-person/d2d282e4-8f73-46f9-8cb1-3beadd003b44",
+    "name": "Claire Wilson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:wa/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Claire",
+    "family_name": "Wilson",
+    "image": "https://leg.wa.gov/memberphoto/29090.jpg",
+    "email": "claire.wilson@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Whip"
+    },
+    "created_at": "2019-01-21T06:20:15.546202+00:00",
+    "updated_at": "2026-01-28T02:45:13.127324+00:00",
+    "openstates_url": "https://openstates.org/person/claire-wilson-6PoajxDoVYJmhEeSHPxya4/"
+  },
+  {
+    "id": "ocd-person/04ed2bc3-648f-4924-8183-1e593572e894",
+    "name": "Claudia Kauffman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:wa/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Claudia",
+    "family_name": "Kauffman",
+    "image": "https://leg.wa.gov/memberphoto/12073.jpg",
+    "email": "claudia.kauffman@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1959-07-15",
+    "death_date": "",
+    "extras": {
+      "title": "Leadership Liaison to Tribal Nations"
+    },
+    "created_at": "2023-02-14T20:09:25.512236+00:00",
+    "updated_at": "2026-01-28T02:44:30.703790+00:00",
+    "openstates_url": "https://openstates.org/person/claudia-kauffman-9IM7Hy79watdp4wEpafTQ/"
+  },
+  {
+    "id": "ocd-person/a8e7617c-7cbb-45ed-a577-3dd7341a3bd7",
+    "name": "Curtis King",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:wa/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Curtis",
+    "family_name": "King",
+    "image": "https://leg.wa.gov/memberphoto/13199.jpg",
+    "email": "curtis.king@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:51.679113+00:00",
+    "updated_at": "2026-01-28T02:43:46.703684+00:00",
+    "openstates_url": "https://openstates.org/person/curtis-king-58iS2TdNBXgZSm3whzFZx9/"
+  },
+  {
+    "id": "ocd-person/acfe43e5-6535-4c75-b38b-66322c90f54f",
+    "name": "Deb Krishnadasan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:wa/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Deb",
+    "family_name": "Krishnadasan",
+    "image": "https://leg.wa.gov/memberphoto/35470.jpg",
+    "email": "deborah.krishnadasan@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:06:04.115589+00:00",
+    "updated_at": "2026-01-28T02:43:33.635679+00:00",
+    "openstates_url": "https://openstates.org/person/deb-krishnadasan-5GQsXqCUjN1FHv43Qflkvn/"
+  },
+  {
+    "id": "ocd-person/25ac8674-b208-4d11-a579-c58c004f825e",
+    "name": "Derek Stanford",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:wa/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Derek",
+    "family_name": "Stanford",
+    "image": "https://leg.wa.gov/memberphoto/15809.jpg",
+    "email": "derek.stanford@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1970-10-18",
+    "death_date": "",
+    "extras": {
+      "title": "Leadership Liaison to Tribal Nations"
+    },
+    "created_at": "2018-10-18T16:13:52.292587+00:00",
+    "updated_at": "2026-01-28T02:45:03.135229+00:00",
+    "openstates_url": "https://openstates.org/person/derek-stanford-195YjxYgRJrprzRm6edaBS/"
+  },
+  {
+    "id": "ocd-person/25a5746b-d7c3-425c-a5b4-a942f86576f2",
+    "name": "Drew Hansen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:wa/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Drew",
+    "family_name": "Hansen",
+    "image": "https://leg.wa.gov/memberphoto/16499.jpg",
+    "email": "drew.hansen@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:52.525148+00:00",
+    "updated_at": "2026-01-28T02:45:00.108202+00:00",
+    "openstates_url": "https://openstates.org/person/drew-hansen-192KPDGyLUvnpoPRrWAuyw/"
+  },
+  {
+    "id": "ocd-person/908379de-8759-4a6f-97ee-7dbcf2f32fcc",
+    "name": "Drew MacEwen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:wa/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Drew",
+    "family_name": "MacEwen",
+    "image": "https://leg.wa.gov/memberphoto/17221.jpg",
+    "email": "drew.macewen@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1973-06-12",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Minority Floor Leader"
+    },
+    "created_at": "2018-10-18T16:13:52.602082+00:00",
+    "updated_at": "2026-01-28T02:44:20.457991+00:00",
+    "openstates_url": "https://openstates.org/person/drew-macewen-4OgykO4veyaEgCi6HVWiJo/"
+  },
+  {
+    "id": "ocd-person/950b27fd-99cb-43a2-b594-9f721e1b1844",
+    "name": "Emily Alvarado",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:wa/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Emily",
+    "family_name": "Alvarado",
+    "image": "https://senatedemocrats.wa.gov/alvarado/wp-content/uploads/sites/23/2025/03/Rep-Alvarado_Emily-2023_900x1200.jpg",
+    "email": "emily.alvarado@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T20:08:57.389462+00:00",
+    "updated_at": "2026-01-28T02:44:17.834077+00:00",
+    "openstates_url": "https://openstates.org/person/emily-alvarado-4XExDUyiPgiOSWkPwVJK6e/"
+  },
+  {
+    "id": "ocd-person/f6d8dcb4-c212-4f2b-a043-a541e47dede0",
+    "name": "Jamie Pedersen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:wa/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Jamie",
+    "family_name": "Pedersen",
+    "image": "https://leg.wa.gov/memberphoto/12002.jpg",
+    "email": "jamie.pedersen@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1968-09-09",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Floor Leader"
+    },
+    "created_at": "2018-10-18T16:13:53.678934+00:00",
+    "updated_at": "2026-01-28T02:45:15.039688+00:00",
+    "openstates_url": "https://openstates.org/person/jamie-pedersen-7VnDYiqodIiBD4NLKHkMJE/"
+  },
+  {
+    "id": "ocd-person/aba2c522-236c-4553-bda2-c02d72e79981",
+    "name": "Javier Valdez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:wa/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Javier",
+    "family_name": "Valdez",
+    "image": "https://leg.wa.gov/memberphoto/27975.jpg",
+    "email": "javier.valdez@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:53.831881+00:00",
+    "updated_at": "2026-01-28T02:43:59.594778+00:00",
+    "openstates_url": "https://openstates.org/person/javier-valdez-5Ds4aaxeD6HOYhM2H4G8kT/"
+  },
+  {
+    "id": "ocd-person/0396b4de-01b1-4784-a604-aafc516f5e39",
+    "name": "Jeff Holy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:wa/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Holy",
+    "image": "https://leg.wa.gov/memberphoto/17223.jpg",
+    "email": "jeff.holy@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1955-10-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:54.059198+00:00",
+    "updated_at": "2026-01-28T02:44:22.808391+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-holy-6lqhads6biIoUOZTDYTvN/"
+  },
+  {
+    "id": "ocd-person/7f7dab20-f60b-494e-a8b1-6527165777fb",
+    "name": "Jeff Wilson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:wa/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Wilson",
+    "image": "https://leg.wa.gov/memberphoto/31537.jpg",
+    "email": "jeff.wilson@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:19:49.284661+00:00",
+    "updated_at": "2026-01-28T02:44:38.043294+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-wilson-3sZSHYJuQCiSy5MZPue2Gp/"
+  },
+  {
+    "id": "ocd-person/ea4e5e77-aa55-421f-8ac5-48c65fbc2ab0",
+    "name": "Jess Bateman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:wa/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Jess",
+    "family_name": "Bateman",
+    "image": "https://housedemocrats.wa.gov/tmp/2021/01/Rep-Bateman_Jessica-2021_150x200.jpg",
+    "email": "jessica.bateman@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1981-12-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:19:53.615113+00:00",
+    "updated_at": "2026-01-28T02:44:57.199208+00:00",
+    "openstates_url": "https://openstates.org/person/jess-bateman-7881C0nRoupz8v23IetBLc/"
+  },
+  {
+    "id": "ocd-person/f2eae839-31f5-4f33-be94-b532774da896",
+    "name": "Jesse Salomon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:wa/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Jesse",
+    "family_name": "Salomon",
+    "image": "https://leg.wa.gov/memberphoto/29089.jpg",
+    "email": "jesse.salomon@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1976-06-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-21T06:20:15.956589+00:00",
+    "updated_at": "2026-01-28T02:44:01.080565+00:00",
+    "openstates_url": "https://openstates.org/person/jesse-salomon-7ONUkZKOpXbJBNqi2kz1Fu/"
+  },
+  {
+    "id": "ocd-person/fc68fcd2-66ca-481a-b699-7a4ba113d4d7",
+    "name": "Jim McCune",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:wa/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "McCune",
+    "image": "https://leg.wa.gov/memberphoto/2584.jpg",
+    "email": "jim.mccune@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1950-09-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:19:49.412903+00:00",
+    "updated_at": "2026-01-28T02:44:34.935641+00:00",
+    "openstates_url": "https://openstates.org/person/jim-mccune-7gI2qI207CsZK5BRBlssel/"
+  },
+  {
+    "id": "ocd-person/b4856c5b-d3e0-4227-a4c0-ff6abe81fda7",
+    "name": "John Braun",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:wa/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Braun",
+    "image": "https://leg.wa.gov/memberphoto/17289.jpg",
+    "email": "john.braun@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1967-01-16",
+    "death_date": "",
+    "extras": {
+      "title": "Republican Leader"
+    },
+    "created_at": "2018-10-18T16:13:54.834223+00:00",
+    "updated_at": "2026-01-28T02:44:36.771622+00:00",
+    "openstates_url": "https://openstates.org/person/john-braun-5UdanHNiAYNuuT9tbezSGV/"
+  },
+  {
+    "id": "ocd-person/9849a792-2307-40c8-97ae-388d731fa89b",
+    "name": "John Lovick",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:wa/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Lovick",
+    "image": "https://leg.wa.gov/memberphoto/3476.jpg",
+    "email": "john.lovick@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1951-05-09",
+    "death_date": "",
+    "extras": {
+      "title": "Vice President Pro Tempore"
+    },
+    "created_at": "2018-10-18T16:13:54.907334+00:00",
+    "updated_at": "2026-01-28T02:44:09.409653+00:00",
+    "openstates_url": "https://openstates.org/person/john-lovick-4dMUcgpD3aCyhpHBdv6Wp1/"
+  },
+  {
+    "id": "ocd-person/cce36d0b-a3d8-4375-bf70-06760a2eebc3",
+    "name": "Judy Warnick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:wa/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Judy",
+    "family_name": "Warnick",
+    "image": "https://leg.wa.gov/memberphoto/12084.jpg",
+    "email": "judy.warnick@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1950-05-28",
+    "death_date": "",
+    "extras": {
+      "title": "Republican Caucus Chair"
+    },
+    "created_at": "2018-10-18T16:13:55.295829+00:00",
+    "updated_at": "2026-01-28T02:45:01.103249+00:00",
+    "openstates_url": "https://openstates.org/person/judy-warnick-6EcMr7koR3S2zy80BpjQGJ/"
+  },
+  {
+    "id": "ocd-person/4f14e499-9199-43c4-a4c0-9d7320b9d769",
+    "name": "June Robinson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:wa/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "June",
+    "family_name": "Robinson",
+    "image": "https://leg.wa.gov/memberphoto/18265.jpg",
+    "email": "june.robinson@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1959-06-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:19:50.304432+00:00",
+    "updated_at": "2026-01-28T02:44:32.561756+00:00",
+    "openstates_url": "https://openstates.org/person/june-robinson-2PDwOptnLsqULkxaXuc3yb/"
+  },
+  {
+    "id": "ocd-person/f1d29afa-f381-46f2-a6e4-17ab801b3fdb",
+    "name": "Keith Goehner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:wa/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Goehner",
+    "image": "https://leg.wa.gov/memberphoto/29096.jpg",
+    "email": "keith.goehner@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-21T06:20:15.661884+00:00",
+    "updated_at": "2026-01-28T02:44:40.639508+00:00",
+    "openstates_url": "https://openstates.org/person/keith-goehner-7MJOetoekARRmlC1dGAYwt/"
+  },
+  {
+    "id": "ocd-person/71e64843-6301-40ba-bafc-633ee347c482",
+    "name": "Keith Wagoner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:wa/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Wagoner",
+    "image": "https://leg.wa.gov/memberphoto/28317.jpg",
+    "email": "keith.wagoner@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Republican Whip"
+    },
+    "created_at": "2018-10-18T16:13:55.548744+00:00",
+    "updated_at": "2026-01-28T02:44:05.361943+00:00",
+    "openstates_url": "https://openstates.org/person/keith-wagoner-3SvN4uM2yRY5q48ACIbWXC/"
+  },
+  {
+    "id": "ocd-person/4d01a3aa-64e5-439d-9574-c1b749c1d52a",
+    "name": "Leonard Christian",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:wa/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Leonard",
+    "family_name": "Christian",
+    "image": "https://leg.wa.gov/memberphoto/18458.jpg",
+    "email": "leonard.christian@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1965-09-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-16T02:09:33.166630+00:00",
+    "updated_at": "2026-01-28T02:44:26.495886+00:00",
+    "openstates_url": "https://openstates.org/person/leonard-christian-2LJ9ogwBWi7U3sU0zyfIni/"
+  },
+  {
+    "id": "ocd-person/0c274c6c-6813-4a77-b7ed-5576e9989493",
+    "name": "Lisa Wellman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:wa/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Wellman",
+    "image": "https://leg.wa.gov/memberphoto/27211.jpg",
+    "email": "lisa.wellman@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:56.352979+00:00",
+    "updated_at": "2026-01-28T02:44:14.456403+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-wellman-MvrmI9J4h2wfYRSW6gBJz/"
+  },
+  {
+    "id": "ocd-person/f82a6162-120e-4bf2-90c4-02e22278d96e",
+    "name": "Liz Lovelett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:wa/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Lovelett",
+    "image": "https://leg.wa.gov/memberphoto/29548.jpg",
+    "email": "liz.lovelett@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-03-14T05:20:41.553699+00:00",
+    "updated_at": "2026-01-28T02:45:09.395230+00:00",
+    "openstates_url": "https://openstates.org/person/liz-lovelett-7YHSpQL6S8kNan546o3Cxi/"
+  },
+  {
+    "id": "ocd-person/92192e1a-e86f-4605-9d7d-ce4a922681f0",
+    "name": "Manka Dhingra",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:wa/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Manka",
+    "family_name": "Dhingra",
+    "image": "https://leg.wa.gov/memberphoto/28022.jpg",
+    "email": "manka.dhingra@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Deputy Majority Leader"
+    },
+    "created_at": "2018-10-18T16:13:56.659136+00:00",
+    "updated_at": "2026-01-28T02:43:38.771515+00:00",
+    "openstates_url": "https://openstates.org/person/manka-dhingra-4RgNzvIOqMZQDbDgIkdevQ/"
+  },
+  {
+    "id": "ocd-person/1ecc75cc-95c9-4ae6-a8a4-1a0f87a10d0e",
+    "name": "Marcus Riccelli",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:wa/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Marcus",
+    "family_name": "Riccelli",
+    "image": "https://leg.wa.gov/memberphoto/15706.jpg",
+    "email": "marcus.riccelli@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1978-06-07",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip"
+    },
+    "created_at": "2018-10-18T16:13:56.823882+00:00",
+    "updated_at": "2026-01-28T02:43:45.188156+00:00",
+    "openstates_url": "https://openstates.org/person/marcus-riccelli-w7CuwBAL6Qf1wgCb3JywQ/"
+  },
+  {
+    "id": "ocd-person/1f837050-2dca-48fa-b429-a562d1c858f8",
+    "name": "Mark Schoesler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:wa/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Schoesler",
+    "image": "https://leg.wa.gov/memberphoto/652.jpg",
+    "email": "mark.schoesler@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1957-02-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:57.220028+00:00",
+    "updated_at": "2026-01-28T02:44:03.395756+00:00",
+    "openstates_url": "https://openstates.org/person/mark-schoesler-xSpRkpaJzo3k4julrvV5U/"
+  },
+  {
+    "id": "ocd-person/3aa56ec5-a087-40b1-960a-acb9426ccb2a",
+    "name": "Marko Liias",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:wa/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Marko",
+    "family_name": "Liias",
+    "image": "https://leg.wa.gov/memberphoto/13546.jpg",
+    "email": "marko.liias@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1981-07-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:57.297730+00:00",
+    "updated_at": "2026-01-29T08:33:08.084654+00:00",
+    "openstates_url": "https://openstates.org/person/marko-liias-1mf9n3By37JOSLYTn4vsug/"
+  },
+  {
+    "id": "ocd-person/bfbe4a83-bf2f-45da-83c6-5ac1225ff0b8",
+    "name": "Matt Boehnke",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:wa/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Boehnke",
+    "image": "https://leg.wa.gov/memberphoto/29094.jpg",
+    "email": "matt.boehnke@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-21T06:20:13.086873+00:00",
+    "updated_at": "2026-01-28T02:44:01.336897+00:00",
+    "openstates_url": "https://openstates.org/person/matt-boehnke-5poUrE58lwd2icPact02dE/"
+  },
+  {
+    "id": "ocd-person/ea005988-0e0d-4fd2-9960-91083ae8ab25",
+    "name": "Mike Chapman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:wa/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Chapman",
+    "image": "https://leg.wa.gov/memberphoto/26176.jpg",
+    "email": "mike.chapman@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:58.007961+00:00",
+    "updated_at": "2026-01-28T02:44:39.750637+00:00",
+    "openstates_url": "https://openstates.org/person/mike-chapman-77YMaX8Iqd4zHoqpwTrr2j/"
+  },
+  {
+    "id": "ocd-person/10ad8a88-bd96-4a0d-9b8f-099b8cdfa35b",
+    "name": "Nikki Torres",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:wa/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Nikki",
+    "family_name": "Torres",
+    "image": "https://leg.wa.gov/memberphoto/34047.jpg",
+    "email": "nikki.torres@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1976-01-02",
+    "death_date": "",
+    "extras": {
+      "title": "Republican Deputy Floor Leader"
+    },
+    "created_at": "2023-02-14T20:08:37.917977+00:00",
+    "updated_at": "2026-01-28T02:44:47.071734+00:00",
+    "openstates_url": "https://openstates.org/person/nikki-torres-VTBW3SbeqSxQ9Z52gmpnH/"
+  },
+  {
+    "id": "ocd-person/e9b85600-e33e-4a0a-af9f-bbcb98c0153f",
+    "name": "Noel Frame",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:wa/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Noel",
+    "family_name": "Frame",
+    "image": "https://leg.wa.gov/memberphoto/23902.jpg",
+    "email": "noel.frame@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1980-03-26",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Floor Leader"
+    },
+    "created_at": "2018-10-18T16:13:58.712787+00:00",
+    "updated_at": "2026-01-28T02:44:29.279242+00:00",
+    "openstates_url": "https://openstates.org/person/noel-frame-771S8zheCnvDMIPD20EjUt/"
+  },
+  {
+    "id": "ocd-person/053234a7-c97e-41f7-8b71-c96cf19c80d7",
+    "name": "Paul Harris",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:wa/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Harris",
+    "image": "https://leg.wa.gov/memberphoto/15813.jpg",
+    "email": "paul.harris@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1953-04-12",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Chair"
+    },
+    "created_at": "2018-10-18T16:13:59.174976+00:00",
+    "updated_at": "2026-01-28T02:43:42.619070+00:00",
+    "openstates_url": "https://openstates.org/person/paul-harris-9nu9V0Hfe18xAMgt6LcSV/"
+  },
+  {
+    "id": "ocd-person/b7caabda-31e5-48b5-a4b1-82d2bffae0ae",
+    "name": "Perry Dozier",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:wa/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Perry",
+    "family_name": "Dozier",
+    "image": "https://leg.wa.gov/memberphoto/31535.jpg",
+    "email": "perry.dozier@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Republican Deputy Whip"
+    },
+    "created_at": "2021-01-13T00:19:49.116758+00:00",
+    "updated_at": "2026-01-28T02:44:21.670076+00:00",
+    "openstates_url": "https://openstates.org/person/perry-dozier-5aoDRgjoVRbFeFw2LodfgM/"
+  },
+  {
+    "id": "ocd-person/2d0faef3-45a8-489c-84bd-9491c8ce0315",
+    "name": "Phil Fortunato",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:wa/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Fortunato",
+    "image": "https://leg.wa.gov/memberphoto/3474.jpg",
+    "email": "phil.fortunato@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:59.250323+00:00",
+    "updated_at": "2026-01-28T02:43:46.987599+00:00",
+    "openstates_url": "https://openstates.org/person/phil-fortunato-1N1oxx3leEJyvDM5M4tOZp/"
+  },
+  {
+    "id": "ocd-person/1d4a95b2-4a4f-4acb-b5c6-64850b8e34b9",
+    "name": "Rebecca Salda\u00f1a",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:wa/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Rebecca",
+    "family_name": "Salda\u00f1a",
+    "image": "https://leg.wa.gov/memberphoto/27290.jpg",
+    "email": "rebecca.saldana@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1977-04-01",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Vice Chair"
+    },
+    "created_at": "2018-10-18T16:13:59.399906+00:00",
+    "updated_at": "2026-01-28T02:44:02.268240+00:00",
+    "openstates_url": "https://openstates.org/person/rebecca-saldana-tGrUddzcoHtVVMa9K7CJ7/"
+  },
+  {
+    "id": "ocd-person/57efa2de-d8dc-4d0b-92a3-7ca12549c339",
+    "name": "Ron Muzzall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:wa/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Muzzall",
+    "image": "https://leg.wa.gov/memberphoto/29908.jpg",
+    "email": "ron.muzzall@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Republican Deputy Caucus Chair"
+    },
+    "created_at": "2020-01-30T11:16:56.541403+00:00",
+    "updated_at": "2026-01-28T02:43:55.701602+00:00",
+    "openstates_url": "https://openstates.org/person/ron-muzzall-2fvqTxPrVedOtrQlElP1jd/"
+  },
+  {
+    "id": "ocd-person/d95d04c7-e3d0-4120-91c6-2bbeba4c8acb",
+    "name": "Sharon Shewmake",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:wa/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Sharon",
+    "family_name": "Shewmake",
+    "image": "https://leg.wa.gov/memberphoto/29108.jpg",
+    "email": "sharon.shewmake@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1980-05-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-21T06:20:19.785808+00:00",
+    "updated_at": "2026-01-28T02:44:33.651863+00:00",
+    "openstates_url": "https://openstates.org/person/sharon-shewmake-6c9qMg4j0ooTYp1F1zRMgl/"
+  },
+  {
+    "id": "ocd-person/a45d8fe7-d052-4d18-bc5f-b5911948d42c",
+    "name": "Shelly Short",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:wa/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Shelly",
+    "family_name": "Short",
+    "image": "https://leg.wa.gov/memberphoto/11952.jpg",
+    "email": "shelly.short@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1962-04-03",
+    "death_date": "",
+    "extras": {
+      "title": "Republican Floor Leader"
+    },
+    "created_at": "2018-10-18T16:14:00.264426+00:00",
+    "updated_at": "2026-01-28T02:44:35.437063+00:00",
+    "openstates_url": "https://openstates.org/person/shelly-short-509Uyc09JOl0KIiYvLAQMG/"
+  },
+  {
+    "id": "ocd-person/0999a0d6-1c62-47cf-aa0d-8250967d3a10",
+    "name": "Steve Conway",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:wa/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Conway",
+    "image": "https://leg.wa.gov/memberphoto/972.jpg",
+    "email": "steve.conway@leg.wa.gov",
+    "gender": "Male",
+    "birth_date": "1944-10-05",
+    "death_date": "",
+    "extras": {
+      "title": "Vice President Pro Tempore"
+    },
+    "created_at": "2018-10-18T16:14:00.486246+00:00",
+    "updated_at": "2026-01-28T02:43:40.363309+00:00",
+    "openstates_url": "https://openstates.org/person/steve-conway-I78dIsaghtSKEW29NNgHo/"
+  },
+  {
+    "id": "ocd-person/dd5d76ce-7efe-4c95-aae3-a59a4676fe78",
+    "name": "T'wina Nobles",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:wa/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "T'wina",
+    "family_name": "Nobles",
+    "image": "https://leg.wa.gov/memberphoto/31536.jpg",
+    "email": "t'wina.nobles@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1981-12-14",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip"
+    },
+    "created_at": "2021-01-13T00:19:53.898507+00:00",
+    "updated_at": "2026-01-28T02:44:44.133833+00:00",
+    "openstates_url": "https://openstates.org/person/t-wina-nobles-6ji15A1YDGgNxKKVOzyzWK/"
+  },
+  {
+    "id": "ocd-person/ef711ad1-b4e6-44c9-a971-7d57e8140f04",
+    "name": "Tina Orwall",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:wa/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Tina",
+    "family_name": "Orwall",
+    "image": "https://leg.wa.gov/memberphoto/14205.jpg",
+    "email": "tina.orwall@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "1965-04-03",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker Pro Tempore"
+    },
+    "created_at": "2018-10-18T16:14:01.284754+00:00",
+    "updated_at": "2026-01-28T02:45:08.166680+00:00",
+    "openstates_url": "https://openstates.org/person/tina-orwall-7Hor1H7NHRysfs10HvrFUy/"
+  },
+  {
+    "id": "ocd-person/22583293-d377-4c51-84ca-d00ba4d7e944",
+    "name": "Vandana Slatter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:wa/sldu:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Vandana",
+    "family_name": "Slatter",
+    "image": "https://leg.wa.gov/memberphoto/27504.jpg",
+    "email": "vandana.slatter@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:01.452626+00:00",
+    "updated_at": "2026-01-28T02:45:06.434979+00:00",
+    "openstates_url": "https://openstates.org/person/vandana-slatter-12o2oyPjBA8zyzwVNhhRq8/"
+  },
+  {
+    "id": "ocd-person/74dcb0ee-cec8-4a8f-be68-954b2c0fa5f7",
+    "name": "Victoria Hunt",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:wa/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Victoria",
+    "family_name": "Hunt",
+    "image": "https://leg.wa.gov/memberphoto/35410.jpg",
+    "email": "victoria.hunt@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:16:17.651200+00:00",
+    "updated_at": "2026-01-28T02:43:48.955405+00:00",
+    "openstates_url": "https://openstates.org/person/victoria-hunt-3YVxtYMfpiLpbKE3EPIHe3/"
+  },
+  {
+    "id": "ocd-person/28de7c48-9b66-4597-a15f-ce7b132fba5a",
+    "name": "Yasmin Trudeau",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:wa/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wa/government",
+      "name": "Washington",
+      "classification": "state"
+    },
+    "given_name": "Yasmin",
+    "family_name": "Trudeau",
+    "image": "https://leg.wa.gov/memberphoto/20732.jpg",
+    "email": "yasmin.trudeau@leg.wa.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-12-16T19:18:26.463597+00:00",
+    "updated_at": "2026-01-28T02:43:44.200829+00:00",
+    "openstates_url": "https://openstates.org/person/yasmin-trudeau-1F7MtJgcgeJ3lMHcK8R4Cw/"
+  }
+]

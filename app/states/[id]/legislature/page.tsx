@@ -7,6 +7,9 @@ import { notFound } from "next/navigation";
 import BackButton from "@/components/BackButton";
 import StateLegSection from "@/components/StateLegSection";
 import StateLegCompositionBox from "@/components/StateLegCompositionBox";
+import { LedgerSectionHead } from "@/components/RaceDetailSections";
+import StateLegAboutSection from "@/components/StateLegAboutSection";
+import { calculateStateTpl } from "@/lib/tplCompute";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -32,15 +35,37 @@ export default async function StateLegislaturePage({ params }: { params: Promise
   const entries = stateLegData[state.name] ?? [];
   const houseSeats = latestChamberSeats(entries, "House");
   const senateSeats = !isUnicameral ? latestChamberSeats(entries, "Senate") : null;
+  const stateTpl = calculateStateTpl(state.abbr, state.name);
+  const heroMargin = Number.isFinite(stateTpl) ? stateTpl : null;
+  const heroIsD = heroMargin != null && heroMargin <= 0;
 
   const houseEntries = entries.filter((e) => e.type === "House");
   const senateEntries = entries.filter((e) => e.type === "Senate");
+
+  const chamberMapInfo = stateLegMapInfo[state.abbr] ?? {};
+  // Nebraska's single chamber is classified as "senate" (SLDU) in the boundary data, but its
+  // election results are stored under "House" — see StateLegSection.tsx for the same convention.
+  // Prefer the verified totalSeats from research (kept internally consistent with the
+  // supermajority math) over the composition-data total, which can undercount vacant/independent seats.
+  const aboutBlocks = isUnicameral
+    ? [{ label: "Legislature", mapInfo: chamberMapInfo.senate ?? null, totalSeats: chamberMapInfo.senate?.totalSeats ?? houseSeats?.total ?? null }]
+    : [
+        { label: "State Senate", mapInfo: chamberMapInfo.senate ?? null, totalSeats: chamberMapInfo.senate?.totalSeats ?? senateSeats?.total ?? null },
+        { label: "State House", mapInfo: chamberMapInfo.house ?? null, totalSeats: chamberMapInfo.house?.totalSeats ?? houseSeats?.total ?? null },
+      ];
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>
 
       {/* Hero */}
-      <div style={{ minHeight: "220px" }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-3 pb-8 sm:pb-10">
+      <div
+        style={{
+          background: heroMargin != null
+            ? `linear-gradient(135deg, color-mix(in srgb, ${heroIsD ? "var(--party-dem)" : "var(--party-rep)"} 10%, var(--app-bg)) 0%, var(--app-bg) 65%)`
+            : "var(--app-bg)",
+          minHeight: "220px",
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-3 pb-3 sm:pb-4">
           <div className="mb-5 -ml-2">
             <BackButton />
           </div>
@@ -73,7 +98,7 @@ export default async function StateLegislaturePage({ params }: { params: Promise
 
           {/* Stat row */}
           {(houseSeats || senateSeats) && (
-            <div className="mt-8 pt-5 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
+            <div className="mt-8 pt-5 pb-1 flex flex-wrap gap-x-8 gap-y-4" style={{ borderTop: "1px solid var(--app-border)" }}>
               {houseSeats && (
                 <div className={senateSeats ? "pr-8" : ""} style={senateSeats ? { borderRight: "1px solid var(--app-border)" } : undefined}>
                   <div className="text-2xl font-extrabold tabular-nums">
@@ -103,24 +128,30 @@ export default async function StateLegislaturePage({ params }: { params: Promise
         </div>
       </div>
 
-      <main className="max-w-7xl mx-auto px-4 pt-4 pb-10 sm:px-6">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-start">
-          <StateLegSection
-            stateAbbr={state.abbr}
-            stateName={state.name}
-            districtsByChamber={stateLegDistricts[state.abbr] ?? {}}
-            mapInfoByChamber={stateLegMapInfo[state.abbr] ?? {}}
-            isUnicameral={isUnicameral}
-          />
+      <main className="max-w-7xl mx-auto px-4 pt-2 pb-10 sm:px-6">
+        <StateLegSection
+          stateAbbr={state.abbr}
+          stateName={state.name}
+          districtsByChamber={stateLegDistricts[state.abbr] ?? {}}
+          mapInfoByChamber={stateLegMapInfo[state.abbr] ?? {}}
+          isUnicameral={isUnicameral}
+          sidebar={
+            <>
+              <section>
+                <LedgerSectionHead label={`About the ${state.name} Legislature`} />
+                <StateLegAboutSection blocks={aboutBlocks} />
+              </section>
 
-          {(houseEntries.length > 0 || senateEntries.length > 0) && (
-            <StateLegCompositionBox
-              houseEntries={houseEntries}
-              senateEntries={senateEntries}
-              isUnicameral={isUnicameral}
-            />
-          )}
-        </div>
+              {(houseEntries.length > 0 || senateEntries.length > 0) && (
+                <StateLegCompositionBox
+                  houseEntries={houseEntries}
+                  senateEntries={senateEntries}
+                  isUnicameral={isUnicameral}
+                />
+              )}
+            </>
+          }
+        />
       </main>
     </div>
   );

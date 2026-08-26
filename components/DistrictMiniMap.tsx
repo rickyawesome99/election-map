@@ -7,10 +7,13 @@ import { getRaceColor } from "@/lib/colorScale";
 import { isCongressionalDistrictGeoid } from "@/lib/congressionalDistricts";
 import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
 
-const DISTRICTS_URL = "/congressional-districts-2026.json";
-
-function getGeoUrlForYear(year: number): string {
-  if (year >= 2026) return "/congressional-districts-2026.json";
+// 2026 (the current cycle) is split per-state (scripts/split-national-maps.mjs) since this map
+// is mounted once per race page — fetching the full national file just to highlight one district
+// was the single biggest instance of that anti-pattern on the site. Older years stay national
+// (still TopoJSON, just not split): they only load when a user manually picks a past cycle via
+// the year toggle below, too low-traffic to justify 50 more files per year.
+function getGeoUrlForYear(year: number, stateAbbr: string): string {
+  if (year >= 2026) return `/state-congressional-districts-2026/${stateAbbr}.json`;
   if (year >= 2024) return "/congressional-districts-2024.json";
   if (year >= 2022) return "/congressional-districts-2022.json";
   if (year >= 2020) return "/congressional-districts-pre2022.json";
@@ -149,7 +152,7 @@ export default function DistrictMiniMap({
   const highlightColor = getRaceColor(margin);
   const mapStroke = "var(--app-bg)";
   const mutedFill = "var(--app-border)";
-  const geoUrl = selectedYear ? getGeoUrlForYear(selectedYear) : DISTRICTS_URL;
+  const geoUrl = getGeoUrlForYear(selectedYear ?? 2026, stateAbbr);
   const landMaskFips = getLandMaskFips(stateAbbr);
 
   const showYearToggle = boundaryYears && boundaryYears.length > 1;

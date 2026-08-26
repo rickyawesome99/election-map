@@ -1,0 +1,1978 @@
+[
+  {
+    "id": "ocd-person/d3d7563b-420c-4498-8bc5-4f9d6ed90806",
+    "name": "Aaron Aylward",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:sd/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Aaron",
+    "family_name": "Aylward",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Aaron-Aylward.PNG",
+    "email": "aaron.aylward@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Recruiter"
+    },
+    "created_at": "2021-01-12T00:19:53.111770+00:00",
+    "updated_at": "2026-04-25T02:14:48.561636+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-aylward-6RjmzYBoBnIzkEmJZR9u1W/"
+  },
+  {
+    "id": "ocd-person/02f0edff-2879-4fbb-9b23-796358690d07",
+    "name": "Al Novstrup",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:sd/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Al",
+    "family_name": "Novstrup",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/NOVSTRUP_2017.jpg",
+    "email": "al.novstrup@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1954-08-04",
+    "death_date": "",
+    "extras": {
+      "occupation": "Family Entertainment Center Manager"
+    },
+    "created_at": "2018-10-18T16:12:09.964458+00:00",
+    "updated_at": "2026-01-28T02:15:39.485696+00:00",
+    "openstates_url": "https://openstates.org/person/al-novstrup-5Y5ZHLEaE9xpc8pzti0O7/"
+  },
+  {
+    "id": "ocd-person/f9dd87da-ac23-450d-9574-1efa95ef0d81",
+    "name": "Amber Arlint",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:sd/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Amber",
+    "family_name": "Arlint",
+    "image": "https://siouxfallschamber.com/wp-content/uploads/sites/3/2022/11/District-12-Amber-Arlint.webp",
+    "email": "amber.arlint@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Insurance Agency Owner"
+    },
+    "created_at": "2023-01-19T06:01:08.242477+00:00",
+    "updated_at": "2026-04-04T02:11:11.244130+00:00",
+    "openstates_url": "https://openstates.org/person/amber-arlint-7bUKPXCSQmks9cndoczGS1/"
+  },
+  {
+    "id": "ocd-person/3b05e975-1b79-42ec-94e8-7a258142dd46",
+    "name": "Bethany Soye",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:sd/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Bethany",
+    "family_name": "Soye",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/_Bethany-Soye_.PNG",
+    "email": "bethany.soye@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1991-07-05",
+    "death_date": "",
+    "extras": {
+      "occupation": "Mother/Attorney/Banking"
+    },
+    "created_at": "2021-01-12T00:19:51.165401+00:00",
+    "updated_at": "2026-04-25T02:14:39.946868+00:00",
+    "openstates_url": "https://openstates.org/person/bethany-soye-1nNFRNRbyaGDPWAPZ78jxu/"
+  },
+  {
+    "id": "ocd-person/1e3d4ebf-2669-4b20-acd4-e339d24f73c3",
+    "name": "Bobbi Andera",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:sd/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Bobbi",
+    "family_name": "Andera",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bobbi_Andera_20250303_091250.jpg",
+    "email": "bobbi.andera@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1972-03-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:21.882869+00:00",
+    "updated_at": "2026-04-25T02:14:41.293686+00:00",
+    "openstates_url": "https://openstates.org/person/bobbi-andera-v3mp0UOpEoUPxm9jEVTeN/"
+  },
+  {
+    "id": "ocd-person/713ca571-304b-48f0-a853-b49fa859134e",
+    "name": "Brandei Schaefbauer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:sd/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Brandei",
+    "family_name": "Schaefbauer",
+    "image": "https://gray-ksfy-prod.cdn.arcpublishing.com/resizer/3wAp2PAmslSttABhdOPnmasLDYI=/980x0/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/Y4ZM7RT3TRB2ZBPHKDXEI5HL6E.jpg",
+    "email": "brandei.schaefbauer@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1974-01-09",
+    "death_date": "",
+    "extras": {
+      "occupation": "Wife/Mother"
+    },
+    "created_at": "2023-01-19T06:03:56.640085+00:00",
+    "updated_at": "2026-04-25T02:14:42.158523+00:00",
+    "openstates_url": "https://openstates.org/person/brandei-schaefbauer-3Rfqb7cK871EMOjUwsGYH8/"
+  },
+  {
+    "id": "ocd-person/d9d8a84f-96df-4dbf-b638-d63e216166d4",
+    "name": "Brian Mulder",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:sd/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Mulder",
+    "image": "https://img1.wsimg.com/isteam/ip/27b7dcd4-adbb-4603-9579-073f083153b8/Brian_BriCowanPhotography-11.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:400,cg:true",
+    "email": "brian.mulder@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1976-07-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-19T06:02:48.496953+00:00",
+    "updated_at": "2026-01-28T02:16:19.477649+00:00",
+    "openstates_url": "https://openstates.org/person/brian-mulder-6d4LYXEhIHizkfrcAT7aKK/"
+  },
+  {
+    "id": "ocd-person/87c4b9d3-1e14-4c64-af35-e9a95a1f4bf3",
+    "name": "Chris Kassin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:sd/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Kassin",
+    "image": "https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/kassin,%20chris%20rep-0599%20rt.webp",
+    "email": "chris.kassin@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Nonprofit Administration"
+    },
+    "created_at": "2023-01-19T06:02:05.508594+00:00",
+    "updated_at": "2026-01-28T02:15:50.907340+00:00",
+    "openstates_url": "https://openstates.org/person/chris-kassin-48Brp3R6fUP7pF07nv1G2F/"
+  },
+  {
+    "id": "ocd-person/132b0654-ebb2-4b6b-81b3-d39b41110d45",
+    "name": "Curt Massie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:sd/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Curt",
+    "family_name": "Massie",
+    "image": "https://cloudfront-us-east-1.images.arcpublishing.com/gray/JN4WUIDOKVFC5NL33TGXE5YFOM.JPG",
+    "email": "curt.massie@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "SD State & Local Tax Consultant"
+    },
+    "created_at": "2023-01-19T06:02:07.071088+00:00",
+    "updated_at": "2026-01-28T02:16:56.237647+00:00",
+    "openstates_url": "https://openstates.org/person/curt-massie-aAW1hHujeEVpKtPjdwKTl/"
+  },
+  {
+    "id": "ocd-person/4d2f522f-336a-4794-8b89-48d65d250f6e",
+    "name": "David Kull",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:sd/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Kull",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DavidKull.png",
+    "email": "david.kull@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1955-07-02",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Law Enforcement/City Council Member"
+    },
+    "created_at": "2023-01-19T06:03:50.547962+00:00",
+    "updated_at": "2026-04-25T02:14:45.148722+00:00",
+    "openstates_url": "https://openstates.org/person/david-kull-2Le2ALeS7TZeDm3WJyaviY/"
+  },
+  {
+    "id": "ocd-person/ce0a6958-a2d1-4e9e-ab06-943bc84a271a",
+    "name": "Drew Peterson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:sd/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Drew",
+    "family_name": "Peterson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DrewPeterson.png",
+    "email": "drew.peterson@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer/Rancher"
+    },
+    "created_at": "2023-01-19T06:02:56.692963+00:00",
+    "updated_at": "2026-01-28T02:16:24.280271+00:00",
+    "openstates_url": "https://openstates.org/person/drew-peterson-6GnB031SXfMv6B1iSrelcQ/"
+  },
+  {
+    "id": "ocd-person/d458ae29-45a8-4406-a5c0-c256ec743172",
+    "name": "Dylan Jordan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:sd/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Dylan",
+    "family_name": "Jordan",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/815272/815272.jpg",
+    "email": "dylan.jordan@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:18.943296+00:00",
+    "updated_at": "2026-01-28T02:15:50.062208+00:00",
+    "openstates_url": "https://openstates.org/person/dylan-jordan-6Sgtou5z2vBkfJS7OBe6PS/"
+  },
+  {
+    "id": "ocd-person/589ced64-f78f-447d-ab9a-8ead6965c61b",
+    "name": "Eric Emery",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26A",
+      "division_id": "ocd-division/country:us/state:sd/sldl:26a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Emery",
+    "image": "https://www.sfsimplified.com/content/images/2022/09/Eric-Emery.jpg",
+    "email": "eric.emery@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Paramedic"
+    },
+    "created_at": "2023-01-19T06:03:04.342510+00:00",
+    "updated_at": "2026-04-09T08:09:48.173695+00:00",
+    "openstates_url": "https://openstates.org/person/eric-emery-2hD2WgZhWw8IdQLqIDMvWN/"
+  },
+  {
+    "id": "ocd-person/c123398a-d235-488f-ba5f-cc71983a66de",
+    "name": "Erik Muckey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:sd/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Erik",
+    "family_name": "Muckey",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ErikMuckey.png",
+    "email": "erik.muckey@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:15.128002+00:00",
+    "updated_at": "2026-01-28T02:16:45.800536+00:00",
+    "openstates_url": "https://openstates.org/person/erik-muckey-5sRcFGfcyCbzPkls6QMq7i/"
+  },
+  {
+    "id": "ocd-person/85bda678-d416-4caa-b439-8a579288f2ec",
+    "name": "Erin Healy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:sd/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Erin",
+    "family_name": "Healy",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/Healy_2019.jpg",
+    "email": "erin.healy@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1987-04-22",
+    "death_date": "",
+    "extras": {
+      "occupation": "Senior Marketing Analyst"
+    },
+    "created_at": "2019-01-04T05:20:30.494215+00:00",
+    "updated_at": "2026-04-25T02:14:50.248462+00:00",
+    "openstates_url": "https://openstates.org/person/erin-healy-44MeIFk7d1HJpXl7T1z0o8/"
+  },
+  {
+    "id": "ocd-person/fe9a44c7-7241-4395-98e3-8445b1bc2d54",
+    "name": "Greg Jamison",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:sd/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Jamison",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/Jamison_2017.jpg",
+    "email": "greg.jamison@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Real Estate Broker Associate"
+    },
+    "created_at": "2018-10-18T16:12:11.706527+00:00",
+    "updated_at": "2026-01-28T02:16:06.220016+00:00",
+    "openstates_url": "https://openstates.org/person/greg-jamison-7kQYE0wEkzLnKFbwyIYyii/"
+  },
+  {
+    "id": "ocd-person/229c5337-951c-41d2-9e76-dc74878bcf89",
+    "name": "Heather Baxter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:sd/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Heather",
+    "family_name": "Baxter",
+    "image": "https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F110b1f43-2918-4e73-928e-0b9834191446_750x517.webp",
+    "email": "heather.baxter@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1975-09-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:14.368603+00:00",
+    "updated_at": "2026-04-25T02:14:28.439780+00:00",
+    "openstates_url": "https://openstates.org/person/heather-baxter-13JB9Qicx3zue6sYh2rikT/"
+  },
+  {
+    "id": "ocd-person/fd692c4a-e6c1-45c1-b970-1fcdbe732cfe",
+    "name": "Jack Kolbeck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:sd/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Kolbeck",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/Kolbeck_2017.jpg",
+    "email": "jack.kolbeck@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1952-01-26",
+    "death_date": "",
+    "extras": {
+      "occupation": "KAM-Beal Dist. Inc."
+    },
+    "created_at": "2018-10-18T16:12:11.976265+00:00",
+    "updated_at": "2026-04-25T02:14:44.394555+00:00",
+    "openstates_url": "https://openstates.org/person/jack-kolbeck-7iB7cXvvQ8NWCmgvDt4Lyo/"
+  },
+  {
+    "id": "ocd-person/3900be26-2367-48af-8083-6ec4b4f18cf1",
+    "name": "Jana Hunt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28A",
+      "division_id": "ocd-division/country:us/state:sd/sldl:28a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jana",
+    "family_name": "Hunt",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jana_Hunt_2025.jpg",
+    "email": "jana.hunt@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:06.691232+00:00",
+    "updated_at": "2026-01-28T02:16:22.537048+00:00",
+    "openstates_url": "https://openstates.org/person/jana-hunt-1jYtvc4TN8x5FGZhpUeYan/"
+  },
+  {
+    "id": "ocd-person/94fa8c46-b27a-452e-85b2-27baca009678",
+    "name": "Jeff Bathke",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:sd/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Bathke",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jeff_Bathke_20240808_100312fgd.jpg",
+    "email": "jeff.bathke@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1972-01-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:24.736763+00:00",
+    "updated_at": "2026-01-28T02:16:14.513905+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-bathke-4X7MdYRXD3LxNpYT0sdBiy/"
+  },
+  {
+    "id": "ocd-person/7d5691be-08ff-4684-978d-81aaa8bdd99b",
+    "name": "Jessica Bahmuller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:sd/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jessica",
+    "family_name": "Bahmuller",
+    "image": "https://gray-ksfy-prod.cdn.arcpublishing.com/resizer/uVfdl5DqYxBK5BAgVB1sNda9-dw=/980x0/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/XEYMZWQPXBGYFJAKREMXYXNXCI.png",
+    "email": "jessica.bahmuller@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Municipal Finance Officer"
+    },
+    "created_at": "2023-01-19T06:01:37.081884+00:00",
+    "updated_at": "2026-01-28T02:15:44.318107+00:00",
+    "openstates_url": "https://openstates.org/person/jessica-bahmuller-3oVbOX8VDHPtvN5YT4tTDP/"
+  },
+  {
+    "id": "ocd-person/98281de1-c8bc-4c3a-9a5b-6a45c96c6087",
+    "name": "Jim Halverson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:sd/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Halverson",
+    "image": "https://halversonforhouse.com/wp-content/uploads/2024/04/Jim-Halverson-for-House.jpg",
+    "email": "jim.halverson@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:11.090946+00:00",
+    "updated_at": "2026-01-28T02:17:02.671804+00:00",
+    "openstates_url": "https://openstates.org/person/jim-halverson-4d7AMJwLw7s0Qh6vnVW7xH/"
+  },
+  {
+    "id": "ocd-person/123a6b73-d0a1-4263-96fd-a65373159918",
+    "name": "John Hughes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:sd/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Hughes",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/John_Hughes_2025.jpg",
+    "email": "john.hughes@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:17.825271+00:00",
+    "updated_at": "2026-01-28T02:15:36.956776+00:00",
+    "openstates_url": "https://openstates.org/person/john-hughes-YOYhnB1llqjJ8HpCGh6N6/"
+  },
+  {
+    "id": "ocd-person/de36e5d9-b079-4778-bd29-2d7a161488f6",
+    "name": "John Shubeck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:sd/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Shubeck",
+    "image": "https://southdakotasearchlight.com/wp-content/uploads/2025/09/Shubeck-197x300.jpg",
+    "email": "john.shubeck@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:16:42.640603+00:00",
+    "updated_at": "2026-01-28T02:16:43.479980+00:00",
+    "openstates_url": "https://openstates.org/person/john-shubeck-6lJNrrV4U2venvSJF3xX9C/"
+  },
+  {
+    "id": "ocd-person/fe5950b8-b6e8-4a95-87b5-fd569f43b286",
+    "name": "John Sjaarda",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:sd/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Sjaarda",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JohnSjaarda.png",
+    "email": "john.sjaarda@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1976-11-10",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer"
+    },
+    "created_at": "2023-01-19T06:02:08.636628+00:00",
+    "updated_at": "2026-04-25T02:14:15.798828+00:00",
+    "openstates_url": "https://openstates.org/person/john-sjaarda-7jwrpcsJSFbreOb1PRffK2/"
+  },
+  {
+    "id": "ocd-person/912b0c53-5674-42b0-8f22-8ccd01c3264c",
+    "name": "Jon Hansen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:sd/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Hansen",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jon_Hansen.jpg",
+    "email": "jon.hansen@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Lawyer"
+    },
+    "created_at": "2019-01-04T05:20:33.710246+00:00",
+    "updated_at": "2026-01-28T02:16:32.788129+00:00",
+    "openstates_url": "https://openstates.org/person/jon-hansen-4PvYkRwkU65ZASgdNvyNMC/"
+  },
+  {
+    "id": "ocd-person/6ca3c0b7-e0d2-4d68-8b33-725c378ff130",
+    "name": "Josephine Garcia",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:sd/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Josephine",
+    "family_name": "Garcia",
+    "image": "https://static.wixstatic.com/media/3f6c9b_7103450fc62d4fb8acfceb568e4a1545~mv2.jpg/v1/fill/w_705,h_802,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/3f6c9b_7103450fc62d4fb8acfceb568e4a1545~mv2.jpg",
+    "email": "josephine.garcia@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:10.446038+00:00",
+    "updated_at": "2026-04-09T08:09:54.451400+00:00",
+    "openstates_url": "https://openstates.org/person/josephine-garcia-3J00PCSx6t1D2exwZNdPGK/"
+  },
+  {
+    "id": "ocd-person/8fabf252-4409-4c1f-b754-ab54759ea3ce",
+    "name": "Julie Auch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:sd/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Auch",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JulieAuch.png",
+    "email": "julie.auch@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer/Business Owner"
+    },
+    "created_at": "2023-01-19T06:02:24.286113+00:00",
+    "updated_at": "2026-01-28T02:16:30.031873+00:00",
+    "openstates_url": "https://openstates.org/person/julie-auch-4N6TuxbYaMAVGRm8hYx63K/"
+  },
+  {
+    "id": "ocd-person/892b6289-0bd8-441d-94bf-30e6f1cfce49",
+    "name": "Kadyn Wittman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:sd/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Kadyn",
+    "family_name": "Wittman",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KadynWittman.png",
+    "email": "kadyn.wittman@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Development Director"
+    },
+    "created_at": "2023-01-19T06:02:12.196606+00:00",
+    "updated_at": "2026-01-28T02:16:52.627622+00:00",
+    "openstates_url": "https://openstates.org/person/kadyn-wittman-4Apm5znHODoNu20O2p0Lnd/"
+  },
+  {
+    "id": "ocd-person/0baaa53b-6468-4de4-98ce-bf1e218f8d38",
+    "name": "Kaley Nolz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:sd/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Kaley",
+    "family_name": "Nolz",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kaley_Nolz_2025.jpg",
+    "email": "kaley.nolz@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:01.119650+00:00",
+    "updated_at": "2026-01-28T02:15:51.527056+00:00",
+    "openstates_url": "https://openstates.org/person/kaley-nolz-M0tqb2LDjdeAeg3awIX5k/"
+  },
+  {
+    "id": "ocd-person/0c864308-04a8-4b22-af5b-5d718046b99f",
+    "name": "Karla Lems",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:sd/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Karla",
+    "family_name": "Lems",
+    "image": "https://gray-ksfy-prod.cdn.arcpublishing.com/resizer/fX4I5GWdwjL88Z9n8a1Dah-NctM=/980x0/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/72HOS665ZZDWHPEMYA6BWMS6BA.jpg",
+    "email": "karla.lems@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Business Owner"
+    },
+    "created_at": "2023-01-19T06:03:07.463043+00:00",
+    "updated_at": "2026-04-25T02:14:36.396241+00:00",
+    "openstates_url": "https://openstates.org/person/karla-lems-NdGTZGUOn1Vg7Z4uRfFMd/"
+  },
+  {
+    "id": "ocd-person/f2a2616a-c0d4-45d2-8c52-2c8d7dac5e26",
+    "name": "Kathy Rice",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:sd/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Kathy",
+    "family_name": "Rice",
+    "image": "https://gray-kota-prod.gtv-cdn.com/resizer/v2/J7PTGE337BGX3PYCKMQSGVCMWI.jpg?auth=219de6028a2c39d4fe6c781ce1d7fbf5c6d380c1863d80fe91b11b9e80c54ea1&width=980&height=1030&smart=true",
+    "email": "kathy.rice@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:13.983605+00:00",
+    "updated_at": "2026-01-28T02:16:48.163926+00:00",
+    "openstates_url": "https://openstates.org/person/kathy-rice-7NqLmAyzHugXxf00if8vA6/"
+  },
+  {
+    "id": "ocd-person/8125bf75-9ccc-41c4-b76b-3e84dc083c43",
+    "name": "Kent Roe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:sd/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Kent",
+    "family_name": "Roe",
+    "image": "https://static.votesmart.org/static/canphoto/216142.jpg",
+    "email": "kent.roe@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:12.299819+00:00",
+    "updated_at": "2026-01-28T02:16:39.507616+00:00",
+    "openstates_url": "https://openstates.org/person/kent-roe-3vhGBL3h5AgQF0LaZdCbAJ/"
+  },
+  {
+    "id": "ocd-person/708ee344-687f-499a-9f52-48cb79686167",
+    "name": "Keri Weems",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:sd/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Keri",
+    "family_name": "Weems",
+    "image": "https://images.squarespace-cdn.com/content/v1/6633129388483f6e2a0ea63e/4fa432f3-e858-4d44-a401-ddc328a1f893/29d976e1-b6bb-4539-807c-c4e93f10ee4f+%281%29.jpg?format=2500w",
+    "email": "keri.weems@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1965-11-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:59:52.147852+00:00",
+    "updated_at": "2026-01-28T02:16:08.631768+00:00",
+    "openstates_url": "https://openstates.org/person/keri-weems-3QORJKSujpyKs4uSfwQ36t/"
+  },
+  {
+    "id": "ocd-person/e94f9d65-3b95-40cb-b3c2-74126023b55f",
+    "name": "Kevin Van Diepen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:sd/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Van Diepen",
+    "image": "https://www.plainsman.com/uploads/original/20240109-142336-0a240151fba44bcc2fecc73323c1cfdd.jpg",
+    "email": "kevin.vandiepen@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:59:55.087142+00:00",
+    "updated_at": "2026-01-28T02:16:13.700160+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-van-diepen-76Fay2eZS011VIOL1c9TVn/"
+  },
+  {
+    "id": "ocd-person/7eefd193-a618-4a9b-b416-cd495239ead6",
+    "name": "Lana Greenfield",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:sd/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Lana",
+    "family_name": "Greenfield",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/GreenfieldLana_2017.jpg",
+    "email": "lana.greenfield@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1951-01-30",
+    "death_date": "",
+    "extras": {
+      "occupation": "Business Owner/Retired Teacher"
+    },
+    "created_at": "2018-10-18T16:12:13.628772+00:00",
+    "updated_at": "2026-04-25T02:14:17.111602+00:00",
+    "openstates_url": "https://openstates.org/person/lana-greenfield-3rWd69iFDnbRYVMcd0B9xW/"
+  },
+  {
+    "id": "ocd-person/950b0ec2-1c69-4c81-ab1d-c61464519e26",
+    "name": "Les Heinemann",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:sd/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Les",
+    "family_name": "Heinemann",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Leslie_Heinemann.jpg",
+    "email": "les.heinemann@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1955-01-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-16T02:08:12.855202+00:00",
+    "updated_at": "2026-01-28T02:15:35.477993+00:00",
+    "openstates_url": "https://openstates.org/person/les-heinemann-4XEuQLlM1w9ww7TVAvS41e/"
+  },
+  {
+    "id": "ocd-person/2b581087-9814-4f0d-80e5-b29a6e7aee67",
+    "name": "Liz May",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:sd/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "May",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/MAY_2017.jpg",
+    "email": "liz.may@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Rancher/Small Business Owner"
+    },
+    "created_at": "2021-01-12T00:19:51.039212+00:00",
+    "updated_at": "2026-01-28T02:15:52.287768+00:00",
+    "openstates_url": "https://openstates.org/person/liz-may-1JmulsPIsyP3A7fnfSEtlv/"
+  },
+  {
+    "id": "ocd-person/533da64d-d703-4d56-9d65-8bf3b730d552",
+    "name": "Logan Manhart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:sd/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Logan",
+    "family_name": "Manhart",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Logan_Manhart.jpeg",
+    "email": "logan.manhart@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1998-07-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:59:54.005825+00:00",
+    "updated_at": "2026-01-28T02:15:43.496183+00:00",
+    "openstates_url": "https://openstates.org/person/logan-manhart-2X4XIbLGJxHOmGjLURiUle/"
+  },
+  {
+    "id": "ocd-person/7dc4b8d9-148b-4622-a6de-b27dc27030be",
+    "name": "Marty Overweg",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:sd/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Marty",
+    "family_name": "Overweg",
+    "image": "http://sdlegislature.gov/inc/img/Legislators/overweg_2020.jpg",
+    "email": "marty.overweg@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Ag Businessman/Farmer"
+    },
+    "created_at": "2021-01-12T00:19:45.691014+00:00",
+    "updated_at": "2026-01-28T02:16:27.987893+00:00",
+    "openstates_url": "https://openstates.org/person/marty-overweg-3pJwTIpawyixo9ocEng058/"
+  },
+  {
+    "id": "ocd-person/e03644b8-7ddd-4ae0-a734-6f6e76e735ba",
+    "name": "Mary Fitzgerald",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:sd/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Fitzgerald",
+    "image": "https://bloximages.chicago2.vip.townnews.com/capjournal.com/content/tncms/assets/v3/editorial/6/bb/6bb95f06-3413-11eb-b8a6-77bddc8623d9/5fc6d265841ef.image.png?resize=630%2C630",
+    "email": "mary.fitzgerald@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Self Employed"
+    },
+    "created_at": "2021-01-12T00:19:48.182862+00:00",
+    "updated_at": "2026-04-04T02:11:15.584921+00:00",
+    "openstates_url": "https://openstates.org/person/mary-fitzgerald-6p555ArRIDEZs33PcvZR7a/"
+  },
+  {
+    "id": "ocd-person/8ea8be55-3862-4034-b0c9-8aa418dfc915",
+    "name": "Matt Roby",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:sd/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Roby",
+    "image": "https://bloximages.newyork1.vip.townnews.com/mykxlg.com/content/tncms/assets/v3/editorial/8/8b/88bea3ac-5e1f-11ee-ba1f-dfd780c64f5d/6515af82998be.image.jpg?resize=333%2C500",
+    "email": "matt.roby@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1984-05-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:16.913843+00:00",
+    "updated_at": "2026-01-28T02:16:27.124931+00:00",
+    "openstates_url": "https://openstates.org/person/matt-roby-4LC1dZ0KgSbqZm7oo71fcL/"
+  },
+  {
+    "id": "ocd-person/82afbbac-f85b-47ec-aad9-c7218f35d44c",
+    "name": "Mellissa Heermann",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:sd/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Mellissa",
+    "family_name": "Heermann",
+    "image": "https://img1.wsimg.com/isteam/ip/805d1e30-7bc9-464e-a3b8-c366e5bfe518/IMG_1300%20(1).JPG",
+    "email": "mellissa.heermann@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Revenue Cycle Director"
+    },
+    "created_at": "2023-01-19T06:01:49.764576+00:00",
+    "updated_at": "2026-01-28T02:16:35.475977+00:00",
+    "openstates_url": "https://openstates.org/person/mellissa-heermann-3ybJOGCsVrXo95f5E49uhA/"
+  },
+  {
+    "id": "ocd-person/082e4c6e-c16a-4bfa-8c17-9c46952da446",
+    "name": "Mike Derby",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:sd/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Derby",
+    "image": "https://lloydcompanies.com/wp/wp-content/uploads/2020/07/Mike-Derby-816x1024.jpg",
+    "email": "mike.derby@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Commercial Real Estate Broker Associate"
+    },
+    "created_at": "2021-01-12T00:19:49.277304+00:00",
+    "updated_at": "2026-01-28T02:16:10.483733+00:00",
+    "openstates_url": "https://openstates.org/person/mike-derby-FR61KEPvrekeTodxZdzWw/"
+  },
+  {
+    "id": "ocd-person/0121d607-e75c-4427-bd76-a6e01434afca",
+    "name": "Mike Stevens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:sd/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Stevens",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/STEVENS_2017.jpg",
+    "email": "mike.stevens@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1953-01-24",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney"
+    },
+    "created_at": "2021-01-12T00:19:51.937728+00:00",
+    "updated_at": "2026-01-28T02:16:05.488405+00:00",
+    "openstates_url": "https://openstates.org/person/mike-stevens-28SEkBsB89LOMfa61aRdy/"
+  },
+  {
+    "id": "ocd-person/f611d7e5-8438-49da-a323-374bbf0af218",
+    "name": "Mike Weisgram",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:sd/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Weisgram",
+    "image": "https://bloximages.chicago2.vip.townnews.com/capjournal.com/content/tncms/assets/v3/editorial/5/dd/5dd71c64-93d9-11ea-a386-83ab371b2512/5eb9d679c54ee.image.jpg",
+    "email": "mike.weisgram@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Retailer/Business Owner"
+    },
+    "created_at": "2021-01-12T00:19:53.786241+00:00",
+    "updated_at": "2026-01-28T02:17:02.072787+00:00",
+    "openstates_url": "https://openstates.org/person/mike-weisgram-7UKGXqjRCpQVBJ8qhH7Ys4/"
+  },
+  {
+    "id": "ocd-person/1f9d8833-6a73-4985-b33e-635b6bc194b7",
+    "name": "Nick Fosness",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:sd/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Fosness",
+    "image": "https://sdaho.org/wp-content/uploads/2018/03/nick-fosness-big-696x967.jpg",
+    "email": "nick.fosness@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1978-05-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:16:44.513778+00:00",
+    "updated_at": "2026-04-04T02:11:07.459456+00:00",
+    "openstates_url": "https://openstates.org/person/nick-fosness-xekmD8KnLR07t15OMxZWZ/"
+  },
+  {
+    "id": "ocd-person/00ed522e-529c-4ec7-bec2-90e124a2b3df",
+    "name": "Nicole Uhre-Balk",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:sd/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Nicole",
+    "family_name": "Uhre-Balk",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/nubalk.jpg",
+    "email": "nicole.uhre-balk@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1982-08-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:59:53.282561+00:00",
+    "updated_at": "2026-01-28T02:15:47.506725+00:00",
+    "openstates_url": "https://openstates.org/person/nicole-uhre-balk-1kSGthd1dZFdL8kj9NKed/"
+  },
+  {
+    "id": "ocd-person/8dc5a857-0514-4a81-8215-a2f21a069075",
+    "name": "Peri Pourier",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:sd/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Peri",
+    "family_name": "Pourier",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/Pourier_2019.jpg",
+    "email": "peri.pourier@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Investigator/Non-Profit Founder"
+    },
+    "created_at": "2019-01-04T05:20:31.608529+00:00",
+    "updated_at": "2026-04-09T08:09:42.531801+00:00",
+    "openstates_url": "https://openstates.org/person/peri-pourier-4JWFMoW02YnMGDwNIuwNnB/"
+  },
+  {
+    "id": "ocd-person/cc4fe32a-b912-4876-96e5-32341ccdd06d",
+    "name": "Phil Jensen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:sd/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Jensen",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Phil-Jensen.jpg",
+    "email": "phil.jensen@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1952-07-24",
+    "death_date": "",
+    "extras": {
+      "occupation": "Small Business Owner"
+    },
+    "created_at": "2018-10-18T16:12:14.935320+00:00",
+    "updated_at": "2026-04-04T02:11:04.290145+00:00",
+    "openstates_url": "https://openstates.org/person/phil-jensen-6DWwUBJN7xyNOJaLRhbUhZ/"
+  },
+  {
+    "id": "ocd-person/6ce3a563-339c-4bf4-8a70-0f5de85e5693",
+    "name": "Rebecca Reimer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26B",
+      "division_id": "ocd-division/country:us/state:sd/sldl:26b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Rebecca",
+    "family_name": "Reimer",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/Reimer_2017.jpg",
+    "email": "rebecca.reimer@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Business Owner/Financial Services"
+    },
+    "created_at": "2018-10-18T16:12:15.127207+00:00",
+    "updated_at": "2026-01-28T02:15:55.927558+00:00",
+    "openstates_url": "https://openstates.org/person/rebecca-reimer-3JTClHJJGalnRX88WyB4L5/"
+  },
+  {
+    "id": "ocd-person/69b0ca35-e513-4250-90fd-3a8c44dbeae8",
+    "name": "Roger DeGroot",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:sd/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Roger",
+    "family_name": "DeGroot",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/RogerDeGroot.png",
+    "email": "roger.degroot@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Educator"
+    },
+    "created_at": "2023-01-19T06:03:33.808715+00:00",
+    "updated_at": "2026-01-28T02:15:54.924666+00:00",
+    "openstates_url": "https://openstates.org/person/roger-degroot-3DQzE5fXYhbmBrrmhEJ2IS/"
+  },
+  {
+    "id": "ocd-person/f6efc9b6-c985-4765-bd47-8da24d06712b",
+    "name": "Scott Moore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:sd/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Moore",
+    "image": "https://gray-ksfy-prod.cdn.arcpublishing.com/resizer/PaauCW6h0UcuEU2uhSkymFUQnhU=/980x0/smart/filters:quality(85)/cloudfront-us-east-1.images.arcpublishing.com/gray/WIET46SP6JBKTLV2GTADMR27PY.jpg",
+    "email": "scott.moore@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Manager/CEO FEM Electric Association"
+    },
+    "created_at": "2023-01-19T06:01:06.650818+00:00",
+    "updated_at": "2026-01-28T02:15:58.421069+00:00",
+    "openstates_url": "https://openstates.org/person/scott-moore-7Vxh8nCyrE7nyVT7p0DwWB/"
+  },
+  {
+    "id": "ocd-person/18602d7b-fb7f-495b-bf94-2b0da2aae00f",
+    "name": "Scott Odenbach",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:sd/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Odenbach",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Scott-Odenbach.PNG",
+    "email": "scott.odenbach@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney"
+    },
+    "created_at": "2021-01-12T00:19:46.610190+00:00",
+    "updated_at": "2026-01-28T02:16:44.223262+00:00",
+    "openstates_url": "https://openstates.org/person/scott-odenbach-jzlgg3oYKm5M2FSrDPy51/"
+  },
+  {
+    "id": "ocd-person/138b5508-01b0-43ed-b8b6-ce9b9d07806f",
+    "name": "Spencer Gosch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:sd/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Spencer",
+    "family_name": "Gosch",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/Gosch_2017.jpg",
+    "email": "spencer.gosch@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1984-01-22",
+    "death_date": "",
+    "extras": {
+      "occupation": "Farmer/Insurance Agent"
+    },
+    "created_at": "2018-10-18T16:12:15.580437+00:00",
+    "updated_at": "2026-04-25T02:14:07.009689+00:00",
+    "openstates_url": "https://openstates.org/person/spencer-gosch-asWoBYp2x4aX8Vb2FqXPD/"
+  },
+  {
+    "id": "ocd-person/a86e2b88-677f-4819-9fc2-0e9ba4c04377",
+    "name": "Steve Duffy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:sd/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Duffy",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SteveDuffy.png",
+    "email": "steve.duffy@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Property Management"
+    },
+    "created_at": "2023-01-19T06:01:11.397436+00:00",
+    "updated_at": "2026-04-25T02:14:31.924349+00:00",
+    "openstates_url": "https://openstates.org/person/steve-duffy-57p3dyg6qWeO8yZS8S4B0h/"
+  },
+  {
+    "id": "ocd-person/ba249bd9-5b3e-42f3-a367-061bf63d620a",
+    "name": "Taylor Rehfeldt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:sd/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Taylor",
+    "family_name": "Rehfeldt",
+    "image": "https://www.gannett-cdn.com/presto/2020/05/22/PSIF/4cc05ff5-5458-4aa1-a67d-b9f2ac8e2cd2-Taylor_Rae_Rehfeldt.jpg",
+    "email": "taylor.rehfeldt@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Certified Registered Nurse Anesthetist"
+    },
+    "created_at": "2021-01-12T00:19:54.497498+00:00",
+    "updated_at": "2026-01-28T02:16:40.455797+00:00",
+    "openstates_url": "https://openstates.org/person/taylor-rehfeldt-5fFIn2jPDYOWBuWDDcBaig/"
+  },
+  {
+    "id": "ocd-person/5f9be535-0a3a-4661-a651-f65dbd39ce2b",
+    "name": "Terri Jorgenson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:sd/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Terri",
+    "family_name": "Jorgenson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Terri-Jorgenson.jpg",
+    "email": "terri.jorgenson@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:27.119721+00:00",
+    "updated_at": "2026-01-28T02:15:38.431708+00:00",
+    "openstates_url": "https://openstates.org/person/terri-jorgenson-2uPVxKEaUjA55EGVwAQlPH/"
+  },
+  {
+    "id": "ocd-person/052b96bd-7f02-4518-ba11-b1a55084149e",
+    "name": "Tesa Schwans",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:sd/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Tesa",
+    "family_name": "Schwans",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TesaSchwans2024.jpeg",
+    "email": "tesa.schwans@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1970-08-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:07.112877+00:00",
+    "updated_at": "2026-04-25T02:14:52.888379+00:00",
+    "openstates_url": "https://openstates.org/person/tesa-schwans-9ksfaA8kfHOqfktT6V1bS/"
+  },
+  {
+    "id": "ocd-person/6a9db533-590a-4481-980b-b5efe3412d9b",
+    "name": "Tim Czmowski",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:sd/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Czmowski",
+    "image": "https://npr.brightspotcdn.com/89/8f/6dd0f43d4ee39f123a628f41ba91/tim-czmowski.jpg",
+    "email": "tim.czmowski@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-04-01T02:09:06.606988+00:00",
+    "updated_at": "2026-01-28T02:16:31.723805+00:00",
+    "openstates_url": "https://openstates.org/person/tim-czmowski-3FBG4sOzvatMDquc84SbXf/"
+  },
+  {
+    "id": "ocd-person/e12868fa-61b7-4ad5-9f68-bcfca817057d",
+    "name": "Tim Goodwin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:sd/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Goodwin",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/Goodwin_2017.jpg",
+    "email": "tim.goodwin@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1955-05-06",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired US Army Lt. Col./Retired Business"
+    },
+    "created_at": "2018-10-18T16:12:16.364290+00:00",
+    "updated_at": "2026-01-28T02:15:42.613948+00:00",
+    "openstates_url": "https://openstates.org/person/tim-goodwin-6qrjwVCrcl91cDzVMBuM2v/"
+  },
+  {
+    "id": "ocd-person/3c82e6e9-348f-40cd-818e-76d4901d9ec5",
+    "name": "Tim Reisch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:sd/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Reisch",
+    "image": "https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/reisch, tim rep-1757 rt.jpg",
+    "email": "tim.reisch@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Retired Sheriff/Corrections/National Guard"
+    },
+    "created_at": "2023-01-19T06:02:16.185211+00:00",
+    "updated_at": "2026-01-28T02:15:45.141478+00:00",
+    "openstates_url": "https://openstates.org/person/tim-reisch-1qBMRWO48U4hBShxkrV9BV/"
+  },
+  {
+    "id": "ocd-person/cc78d0ae-544c-4b45-8073-4aed3ee1a513",
+    "name": "Tim Walburg",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:sd/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Walburg",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/208150/208150.jpg",
+    "email": "tim.walburg@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:21.102839+00:00",
+    "updated_at": "2026-01-28T02:16:38.756985+00:00",
+    "openstates_url": "https://openstates.org/person/tim-walburg-6Dpe8Ycn442Dn6d9UeG0XL/"
+  },
+  {
+    "id": "ocd-person/ebadc687-f53a-4ec4-9c37-b362a2ea6842",
+    "name": "Tina Mulally",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:sd/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Tina",
+    "family_name": "Mulally",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/Mulally_2019.jpg",
+    "email": "tina.mulally@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Homemaker/Small Business Owner"
+    },
+    "created_at": "2019-01-04T05:20:37.502166+00:00",
+    "updated_at": "2026-01-28T02:16:47.469843+00:00",
+    "openstates_url": "https://openstates.org/person/tina-mulally-7AibyLQRTOdD9g5FleAdCk/"
+  },
+  {
+    "id": "ocd-person/a0e95faf-3b79-4657-bdd2-3a496d04e03c",
+    "name": "Tony Kayser",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:sd/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Kayser",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/815298/815298.jpg",
+    "email": "tony.kayser@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:00:23.954353+00:00",
+    "updated_at": "2026-04-25T02:14:29.664272+00:00",
+    "openstates_url": "https://openstates.org/person/tony-kayser-4tdQJV0sYG0xzicnVVw8Am/"
+  },
+  {
+    "id": "ocd-person/74bc4404-28a3-413b-b01f-3f303da1c8a9",
+    "name": "Tony Randolph",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:sd/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Randolph",
+    "image": "https://sdlegislature.gov/inc/img/Legislators/Randolph_2019.jpg",
+    "email": "tony.randolph@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1966-04-01",
+    "death_date": "",
+    "extras": {
+      "occupation": "Electrical Contractor"
+    },
+    "created_at": "2019-01-04T05:20:31.199085+00:00",
+    "updated_at": "2026-01-28T02:15:59.371882+00:00",
+    "openstates_url": "https://openstates.org/person/tony-randolph-3YH99KxXaxe9935TI0vdQ9/"
+  },
+  {
+    "id": "ocd-person/1e73baba-bddd-4b8c-901d-a1324f3194eb",
+    "name": "Travis Ismay",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28B",
+      "division_id": "ocd-division/country:us/state:sd/sldl:28b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Travis",
+    "family_name": "Ismay",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Travis_Ismay_2025.jpg",
+    "email": "travis.ismay@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T18:59:52.629704+00:00",
+    "updated_at": "2026-01-28T02:16:20.102334+00:00",
+    "openstates_url": "https://openstates.org/person/travis-ismay-vSeoV0W12P3FDj8esUp4t/"
+  },
+  {
+    "id": "ocd-person/e7bb9291-fd90-4db8-b3e6-c90ebc41c997",
+    "name": "Trish Ladner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:sd/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Trish",
+    "family_name": "Ladner",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Trish_Ladner.png",
+    "email": "trish.ladner@sdlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "occupation": "Business Owner"
+    },
+    "created_at": "2021-01-12T00:19:53.298203+00:00",
+    "updated_at": "2026-01-28T02:16:16.066768+00:00",
+    "openstates_url": "https://openstates.org/person/trish-ladner-73Gwnk4qY7TbRLGexx87l9/"
+  },
+  {
+    "id": "ocd-person/46a0838c-0bb9-446a-8828-21a3f2124d1b",
+    "name": "Will Mortenson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:sd/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Mortenson",
+    "image": "https://www.gannett-cdn.com/-mm-/7d2e32043f35f170234758f26dd14f0d4c05b2fa/c=0-17-3772-2148/local/-/media/2016/12/28/SiouxFalls/SiouxFalls/636185485920955826-Will-Mortenson.jpg?width=3200&height=1808&fit=crop&format=pjpg&auto=webp",
+    "email": "will.mortenson@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1988-01-01",
+    "death_date": "",
+    "extras": {
+      "occupation": "Attorney/Cow Hand"
+    },
+    "created_at": "2021-01-12T00:19:45.190668+00:00",
+    "updated_at": "2026-01-28T02:16:03.635480+00:00",
+    "openstates_url": "https://openstates.org/person/will-mortenson-29Goi6hOkKPRrsbmAzUGVv/"
+  },
+  {
+    "id": "ocd-person/705bda08-a613-4be4-9c90-ac7e30eef6bf",
+    "name": "William Shorma",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:sd/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sd/government",
+      "name": "South Dakota",
+      "classification": "state"
+    },
+    "given_name": "William",
+    "family_name": "Shorma",
+    "image": "https://lawmakerdocuments.blob.core.usgovcloudapi.net/photos/shorma,%20william%20rep-1194%20rt.webp",
+    "email": "william.shorma@sdlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1955-07-07",
+    "death_date": "",
+    "extras": {
+      "occupation": "Business Owner"
+    },
+    "created_at": "2019-11-16T02:08:14.697585+00:00",
+    "updated_at": "2026-01-28T02:16:28.998818+00:00",
+    "openstates_url": "https://openstates.org/person/william-shorma-3Q17FbqKbUnMkUQy1FMNkV/"
+  }
+]

@@ -1,6 +1,8 @@
 import { Geographies, Geography } from "react-simple-maps";
+import { FIPS_TO_STATE } from "@/lib/fips";
 
-const COUNTIES_URL = "/us-counties.json";
+// Per-state TopoJSON, split from public/us-counties.json by scripts/split-national-maps.mjs.
+const countiesUrl = (stateFips: string) => `/state-counties/${FIPS_TO_STATE[stateFips]?.abbr}.json`;
 // Natural Earth Admin-1 lakes variant; kept local so the map has no runtime network dependency.
 const OHIO_LAND_URL = "/ohio-land.json";
 const US_LAND_URL = "/us-land.json";
@@ -26,7 +28,7 @@ function maskId(stateFips: string): string {
 
 /** Clips Census district water boundaries back to the state's county-defined shoreline. */
 export function StateLandMaskDefinition({ stateFips }: { stateFips: string }) {
-  const geography = stateFips === "39" ? OHIO_LAND_URL : COUNTIES_URL;
+  const geography = stateFips === "39" ? OHIO_LAND_URL : countiesUrl(stateFips);
 
   return (
     <defs>
@@ -41,11 +43,9 @@ export function StateLandMaskDefinition({ stateFips }: { stateFips: string }) {
       >
         <Geographies geography={geography}>
           {({ geographies }: { geographies: CountyGeometry[] }) =>
-            geographies
-              .filter((geo) => stateFips === "39" || String(geo.id ?? "").padStart(5, "0").startsWith(stateFips))
-              .map((geo) => (
-                <Geography key={geo.rsmKey} geography={geo} fill="#fff" stroke="#fff" strokeWidth={2} />
-              ))
+            geographies.map((geo) => (
+              <Geography key={geo.rsmKey} geography={geo} fill="#fff" stroke="#fff" strokeWidth={2} />
+            ))
           }
         </Geographies>
       </mask>

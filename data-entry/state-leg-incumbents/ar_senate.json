@@ -1,0 +1,1100 @@
+[
+  {
+    "id": "ocd-person/6448d3df-2802-44a1-a142-7c3cc136d0a5",
+    "name": "Alan Clark",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ar/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Alan",
+    "family_name": "Clark",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/401_sm.jpg",
+    "email": "alan.clark@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1960-08-11",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "35",
+      "occupation": "Vice President/Chief Operating Officer, Clark's Building and Decorating Center",
+      "public service": "Garland County Quorum Court; Garland County Planning Commission; Senate 2013,  2015,  2017,  2019,  2021",
+      "church affiliation": "Christian"
+    },
+    "created_at": "2018-10-18T14:34:14.268371+00:00",
+    "updated_at": "2026-02-13T06:05:30.040324+00:00",
+    "openstates_url": "https://openstates.org/person/alan-clark-33EVvigIhXgyCBajrt0Ecf/"
+  },
+  {
+    "id": "ocd-person/0dee8795-58dd-48a8-980e-044d8d2ac646",
+    "name": "Bart Hester",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ar/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Bart",
+    "family_name": "Hester",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/396_sm.jpg",
+    "email": "bart.hester@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1977-12-09",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "9",
+      "occupation": "Real Estate and Construction",
+      "public service": "Senate 2013,  2015,  2017 Majority Whip,  Majority Leader 2019,  Senate 2021",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2018-10-18T14:34:14.988038+00:00",
+    "updated_at": "2026-02-13T06:06:10.760527+00:00",
+    "openstates_url": "https://openstates.org/person/bart-hester-QHuKd9tQhFx76rHFrd2cI/"
+  },
+  {
+    "id": "ocd-person/821d4077-0022-48a9-86b1-eb4d3bdef2e7",
+    "name": "Ben Gilmore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ar/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Gilmore",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/583_sm.jpg",
+    "email": "ben.gilmore@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "21",
+      "occupation": "Marketing and Communications Consultant",
+      "public service": "Senate 2021"
+    },
+    "created_at": "2021-01-13T00:03:03.283074+00:00",
+    "updated_at": "2026-02-13T06:05:18.696061+00:00",
+    "openstates_url": "https://openstates.org/person/ben-gilmore-3xWMygQDVludnx7Zr0arIt/"
+  },
+  {
+    "id": "ocd-person/6bbe436a-67bc-4003-80eb-1ce79c52413f",
+    "name": "Blake Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ar/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Blake",
+    "family_name": "Johnson",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/509_sm.jpg",
+    "email": "blake.johnson@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1971-02-16",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "12",
+      "occupation": "Farmer",
+      "public service": "Corning Alderman,  Senate 2015,  2017,  2019,  2021",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2018-10-18T14:34:07.827485+00:00",
+    "updated_at": "2026-02-13T06:05:07.864261+00:00",
+    "openstates_url": "https://openstates.org/person/blake-johnson-3HJ8264taQ7pK8Tb2oLKrX/"
+  },
+  {
+    "id": "ocd-person/24a8e487-fca2-4d84-999c-4877ab721136",
+    "name": "Brad Simon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ar/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Simon",
+    "image": "https://static.wixstatic.com/media/e50aa4_23cec1e445944f57b026e5e2b1b397b1~mv2.png/v1/fill/w_953,h_1415,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/e50aa4_23cec1e445944f57b026e5e2b1b397b1~mv2.png",
+    "email": "brad.simon@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-03-19T18:05:17.723101+00:00",
+    "updated_at": "2026-04-10T00:05:00.347329+00:00",
+    "openstates_url": "https://openstates.org/person/brad-simon-17AuIAB9toapEqbk7UywwY/"
+  },
+  {
+    "id": "ocd-person/2eebf3d3-1e64-4c5b-b5fc-62924bc324fd",
+    "name": "Breanne Davis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ar/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Breanne",
+    "family_name": "Davis",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/544_sm.jpg",
+    "email": "breanne.davis@senate.ar.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "14",
+      "public service": "Senate 2018,  2019,  2021"
+    },
+    "created_at": "2018-10-18T14:34:19.370883+00:00",
+    "updated_at": "2026-01-29T00:06:03.323415+00:00",
+    "openstates_url": "https://openstates.org/person/breanne-davis-1QXTbvL8sVM8oEDNg37eE1/"
+  },
+  {
+    "id": "ocd-person/ac9a90a0-dfba-4bf0-a07d-ca2232b21a90",
+    "name": "Bryan King",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ar/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Bryan",
+    "family_name": "King",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/629_sm.jpg",
+    "email": "bryan.king@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "22"
+    },
+    "created_at": "2023-01-17T22:27:18.874168+00:00",
+    "updated_at": "2026-02-13T06:05:15.826560+00:00",
+    "openstates_url": "https://openstates.org/person/bryan-king-5FhJd6EShl028Ye5jW9CGe/"
+  },
+  {
+    "id": "ocd-person/cdb599f1-f956-430d-9ba2-87ce18d3fd53",
+    "name": "Clarke Tucker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ar/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Clarke",
+    "family_name": "Tucker",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/582_sm.jpg",
+    "email": "clarke.tucker@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1981-01-20",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "20",
+      "public service": "House 2015,  2017,  Senate 2021"
+    },
+    "created_at": "2023-01-17T22:27:18.952784+00:00",
+    "updated_at": "2026-02-13T06:05:45.528339+00:00",
+    "openstates_url": "https://openstates.org/person/clarke-tucker-6GAPywbzV6RIZoXqCI6U3n/"
+  },
+  {
+    "id": "ocd-person/6c773215-c5d7-4039-bcb2-d2abe9053e39",
+    "name": "Clint Penzo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ar/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Clint",
+    "family_name": "Penzo",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/637_sm.jpg",
+    "email": "clint.penzo@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "25"
+    },
+    "created_at": "2023-01-17T22:27:16.009309+00:00",
+    "updated_at": "2026-03-19T18:05:21.806272+00:00",
+    "openstates_url": "https://openstates.org/person/clint-penzo-3Ifdv3mjtcmNfCodkFMhLt/"
+  },
+  {
+    "id": "ocd-person/fea1d80a-0cfb-4b26-9123-2a6c2e951d60",
+    "name": "Dan Sullivan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ar/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Sullivan",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/581_sm.jpg",
+    "email": "dan.sullivan@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1950-04-15",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "19",
+      "public service": "House 2015,  2017,  2019,  Senate 2021"
+    },
+    "created_at": "2018-10-18T14:34:01.908200+00:00",
+    "updated_at": "2026-02-13T06:06:06.479402+00:00",
+    "openstates_url": "https://openstates.org/person/dan-sullivan-7kU0rWl1ctjt2JwsfbBFz6/"
+  },
+  {
+    "id": "ocd-person/f009d442-b840-4308-b48e-f38591e5d0d4",
+    "name": "Dave Wallace",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ar/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Wallace",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/518_sm.jpg",
+    "email": "dave.wallace@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1948-11-24",
+    "death_date": "",
+    "extras": {
+      "veteran": "Yes",
+      "seniority": "13",
+      "occupation": "Disaster Recovery, Wallace Resource Systems",
+      "public service": "City Alderman,  House 2015,  First Term Senate 2017,  2019,  2021",
+      "church affiliation": "Southern Baptist"
+    },
+    "created_at": "2018-10-18T14:34:18.443588+00:00",
+    "updated_at": "2026-02-13T06:05:31.680919+00:00",
+    "openstates_url": "https://openstates.org/person/dave-wallace-7IweKANEEnkZ2D7pdwiqYe/"
+  },
+  {
+    "id": "ocd-person/b35d0a49-a7f2-4013-83f0-a2feb42adba3",
+    "name": "Fred Love",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ar/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Fred",
+    "family_name": "Love",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/640_sm.jpg",
+    "email": "fred.love@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "33"
+    },
+    "created_at": "2023-01-17T22:27:14.785967+00:00",
+    "updated_at": "2026-03-19T18:06:11.855876+00:00",
+    "openstates_url": "https://openstates.org/person/fred-love-5SS93HNMs0GcdTxfhoiqyh/"
+  },
+  {
+    "id": "ocd-person/afd73d93-f65e-480d-ba40-3bc65f4fe95b",
+    "name": "Greg Leding",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ar/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Leding",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/572_sm.jpg",
+    "email": "greg.leding@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1978-04-10",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "17",
+      "public service": "House 2011,  2013,  2015,  2017,  Senate 2019,  2021"
+    },
+    "created_at": "2018-10-18T14:34:04.047216+00:00",
+    "updated_at": "2026-02-13T06:05:04.571150+00:00",
+    "openstates_url": "https://openstates.org/person/greg-leding-5Lo1OCF9DkCZ2mdK7bhhL1/"
+  },
+  {
+    "id": "ocd-person/71affd8a-77ef-45b1-96ab-c5724f34dfa5",
+    "name": "Jamie Scott",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ar/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jamie",
+    "family_name": "Scott",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/House/552_sm.jpg",
+    "email": "jamie.scott@senate.ar.gov",
+    "gender": "Female",
+    "birth_date": "1982-03-07",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "49",
+      "occupation": "Director of Youth Services",
+      "public service": "First Term House 2019",
+      "church affiliation": "Church of God in Christ"
+    },
+    "created_at": "2019-01-17T06:05:01.779072+00:00",
+    "updated_at": "2026-01-29T00:05:36.080723+00:00",
+    "openstates_url": "https://openstates.org/person/jamie-scott-3SWYleccp18KjMz8NJe6rd/"
+  },
+  {
+    "id": "ocd-person/627a5f2e-efc6-4084-982e-b165a79c8e21",
+    "name": "Jane English",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ar/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jane",
+    "family_name": "English",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/405_sm.jpg",
+    "email": "jane.english@senate.ar.gov",
+    "gender": "Female",
+    "birth_date": "1940-11-09",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "6",
+      "occupation": "Retired Economic Development",
+      "public service": "House 2009,  2011,  Senate 2013,  2015,  2017,  2019,  2021",
+      "church affiliation": "Protestant"
+    },
+    "created_at": "2018-10-18T14:34:08.393470+00:00",
+    "updated_at": "2026-02-13T06:05:14.971407+00:00",
+    "openstates_url": "https://openstates.org/person/jane-english-2zpAfcZWETgbcI3WbyP3DN/"
+  },
+  {
+    "id": "ocd-person/f2259c7e-4c43-41c3-ae29-3aedd5b88eef",
+    "name": "Jim Dotson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ar/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Dotson",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/636_sm.jpg",
+    "email": "jim.dotson@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "34"
+    },
+    "created_at": "2018-10-18T14:34:05.337352+00:00",
+    "updated_at": "2026-01-29T00:06:00.975860+00:00",
+    "openstates_url": "https://openstates.org/person/jim-dotson-7MvKYSC2tOvYMtwQw5A8lj/"
+  },
+  {
+    "id": "ocd-person/6b90e69a-b1af-402f-a219-daacb99f3926",
+    "name": "Jim Petty",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ar/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Petty",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/631_sm.jpg",
+    "email": "jim.petty@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "27"
+    },
+    "created_at": "2023-01-17T22:27:10.419205+00:00",
+    "updated_at": "2026-02-13T06:05:10.502614+00:00",
+    "openstates_url": "https://openstates.org/person/jim-petty-3GyOj86AmDaZV7qRvwxakA/"
+  },
+  {
+    "id": "ocd-person/c083823a-b0f6-43dd-87b9-f1f398b84a00",
+    "name": "Jimmy Hickey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ar/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jimmy",
+    "family_name": "Hickey",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/409_sm.jpg",
+    "email": "jimmy.hickey@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1966-11-05",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "8",
+      "occupation": "Construction and Rental; Oak Creek Investment Properties, Inc. and GBU Operations, Inc.",
+      "public service": "Texarkana School Board,  Senate 2013,  2015,  2017,  2019,  2021",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2023-01-17T22:27:16.629073+00:00",
+    "updated_at": "2026-01-29T00:05:01.595406+00:00",
+    "openstates_url": "https://openstates.org/person/jimmy-hickey-5rGcpzZLwpTAr7cGS4zYm0/"
+  },
+  {
+    "id": "ocd-person/2f040802-82dc-4ca8-959f-f1b66cf53b16",
+    "name": "John Payton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ar/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Payton",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/638_sm.jpg",
+    "email": "john.payton@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1967-01-22",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "32"
+    },
+    "created_at": "2018-10-18T14:34:08.571191+00:00",
+    "updated_at": "2026-02-13T06:05:00.853312+00:00",
+    "openstates_url": "https://openstates.org/person/john-payton-1QiTrXzVNayMSavW3zvt4Q/"
+  },
+  {
+    "id": "ocd-person/75b8a2ef-c463-4317-ba03-a368a2f203f2",
+    "name": "Jonathan Dismang",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ar/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Jonathan",
+    "family_name": "Dismang",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/337_sm.jpg",
+    "email": "jonathan.dismang@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1979-07-30",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "4",
+      "occupation": "Dismang Consulting Services, LLC",
+      "public service": "House 2009; Senate 2011,  2013,  2015,  2017  President Pro Tempore,  2019,  2021",
+      "church affiliation": "Church of Christ"
+    },
+    "created_at": "2018-10-18T14:34:21.129132+00:00",
+    "updated_at": "2026-02-13T06:05:25.651274+00:00",
+    "openstates_url": "https://openstates.org/person/jonathan-dismang-3a8TqLhBoPLpfjkWudgD2Y/"
+  },
+  {
+    "id": "ocd-person/e0045c85-0471-4128-ba41-0454ff1470e6",
+    "name": "Josh Bryant",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ar/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Bryant",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/633_sm.jpg",
+    "email": "joshua.bryant@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "Yes",
+      "seniority": "28"
+    },
+    "created_at": "2023-01-17T22:27:09.967460+00:00",
+    "updated_at": "2026-02-13T06:05:40.081859+00:00",
+    "openstates_url": "https://openstates.org/person/josh-bryant-6oiH0qBg1hGPM2HrojlKuk/"
+  },
+  {
+    "id": "ocd-person/fb2fcf8c-ed42-46f0-b473-4940692f8e40",
+    "name": "Justin Boyd",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ar/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Boyd",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/634_sm.jpg",
+    "email": "justin.boyd@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "26"
+    },
+    "created_at": "2018-10-18T14:34:14.447123+00:00",
+    "updated_at": "2026-02-13T06:06:03.030665+00:00",
+    "openstates_url": "https://openstates.org/person/justin-boyd-7dyvGUPhso9QeDkptYz8T2/"
+  },
+  {
+    "id": "ocd-person/29e74f04-ceb4-45e1-a803-049e57699923",
+    "name": "Kim Hammer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ar/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Hammer",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/576_sm.jpg",
+    "email": "kim.hammer@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1958-08-11",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "18",
+      "occupation": "Pastor, Retired Hospice Chaplain",
+      "public service": "House 2011,  2013,  2015,  2017,  Senate 2019,  2021"
+    },
+    "created_at": "2018-10-18T14:34:16.270080+00:00",
+    "updated_at": "2026-03-19T18:05:59.955157+00:00",
+    "openstates_url": "https://openstates.org/person/kim-hammer-1H4OPcgz545KNedYBr8Njn/"
+  },
+  {
+    "id": "ocd-person/927a87ee-64b3-49b8-8794-9b0857581d1c",
+    "name": "Mark Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ar/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Johnson",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/574_sm.jpg",
+    "email": "mark.johnson@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "16",
+      "occupation": "Business Consultant, Mark D. Johnson & Associates, Inc.",
+      "public service": "Senate 2019,  2021"
+    },
+    "created_at": "2019-01-17T06:04:56.260103+00:00",
+    "updated_at": "2026-02-13T06:05:13.402181+00:00",
+    "openstates_url": "https://openstates.org/person/mark-johnson-4SOsLTbjQ3VRJGiqtA0W7g/"
+  },
+  {
+    "id": "ocd-person/dfe71972-1012-4330-af2a-98482d9aa3bc",
+    "name": "Matt McKee",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ar/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "McKee",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/630_sm.jpg",
+    "email": "matt.mckee@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "24"
+    },
+    "created_at": "2023-01-17T22:27:14.928654+00:00",
+    "updated_at": "2026-02-13T06:05:24.119975+00:00",
+    "openstates_url": "https://openstates.org/person/matt-mckee-6oUtttSj6BgWWEACrsaXq0/"
+  },
+  {
+    "id": "ocd-person/2b67c2a6-d80e-48f4-9bc7-a40d7e5bc2bc",
+    "name": "Matt Stone",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ar/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Stone",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/632_sm.jpg",
+    "email": "matt.stone@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "30"
+    },
+    "created_at": "2023-01-17T22:27:12.414303+00:00",
+    "updated_at": "2026-02-13T06:05:36.625986+00:00",
+    "openstates_url": "https://openstates.org/person/matt-stone-1Ju5Us8zjxxnCzmkBdwowe/"
+  },
+  {
+    "id": "ocd-person/d7dbf486-9ad6-411a-a2ad-a599d0606f2b",
+    "name": "Missy Irvin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ar/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Missy",
+    "family_name": "Irvin",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/343_sm.jpg",
+    "email": "missy.irvin@senate.ar.gov",
+    "gender": "Female",
+    "birth_date": "1971-02-12",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "3",
+      "occupation": "Marketing Director",
+      "public service": "Senate 2011,  2013,  2015,  2017,  2019,  2021",
+      "church affiliation": "Methodist"
+    },
+    "created_at": "2018-10-18T14:34:23.865215+00:00",
+    "updated_at": "2026-01-29T00:05:48.991482+00:00",
+    "openstates_url": "https://openstates.org/person/missy-irvin-6ZJrwf9bpewAuaQUYxKkjz/"
+  },
+  {
+    "id": "ocd-person/f148aa6d-abfe-4577-9c15-44f2ea79c707",
+    "name": "Reginald Murdock",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ar/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Reginald",
+    "family_name": "Murdock",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/639_sm.jpg",
+    "email": "rkm_72360@yahoo.com",
+    "gender": "Male",
+    "birth_date": "1966-04-29",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "23"
+    },
+    "created_at": "2018-10-18T14:34:12.440186+00:00",
+    "updated_at": "2026-05-21T06:05:42.674396+00:00",
+    "openstates_url": "https://openstates.org/person/reginald-murdock-7LIMGWcolhjMfm5wmg8Q9H/"
+  },
+  {
+    "id": "ocd-person/faf89935-181a-4d19-9e4b-dce4657d4d3a",
+    "name": "Ricky Hill",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ar/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Ricky",
+    "family_name": "Hill",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/545_sm.jpg",
+    "email": "ricky.hill@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "15",
+      "occupation": "Banker, Farmer, Bank of the Ozarks",
+      "public service": "Senate 2019,  2021"
+    },
+    "created_at": "2023-01-17T22:27:19.321237+00:00",
+    "updated_at": "2026-02-13T06:05:53.193537+00:00",
+    "openstates_url": "https://openstates.org/person/ricky-hill-7dZgsMuMu4lHNkaA9XcV6A/"
+  },
+  {
+    "id": "ocd-person/a7626d1d-fcc7-4c01-ad87-48a28faf7245",
+    "name": "Ron Caldwell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ar/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Caldwell",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/397_sm.jpg",
+    "email": "ronald.caldwell@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "5",
+      "occupation": "Real Estate Developer",
+      "public service": "Senate 2013,  2015,  2017,  2019,  2021",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2018-10-18T14:34:21.315430+00:00",
+    "updated_at": "2026-02-13T06:05:02.980447+00:00",
+    "openstates_url": "https://openstates.org/person/ron-caldwell-55qhMy4GHMgdqZONNLsGxx/"
+  },
+  {
+    "id": "ocd-person/b61d9a4f-d5d1-43b4-84b2-91cb5741b153",
+    "name": "Scott Flippo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ar/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Flippo",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/508_sm.jpg",
+    "email": "scott.flippo@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "1979-11-01",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "10",
+      "occupation": "Assisted Living Owner",
+      "public service": "Senate 2015,  2017,  2019 Majority Whip,  Senate 2021",
+      "church affiliation": "Methodist"
+    },
+    "created_at": "2018-10-18T14:34:02.960306+00:00",
+    "updated_at": "2026-02-13T06:05:57.988093+00:00",
+    "openstates_url": "https://openstates.org/person/scott-flippo-5Xe8BU6FE8hI3e9njhrsQ7/"
+  },
+  {
+    "id": "ocd-person/536c6536-294f-499b-a261-120a685297f0",
+    "name": "Stephanie Flowers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ar/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Stephanie",
+    "family_name": "Flowers",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/339_sm.jpg",
+    "email": "stephanie.flowers@senate.ar.gov",
+    "gender": "Female",
+    "birth_date": "1953-08-08",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "2",
+      "occupation": "Attorney",
+      "public service": "House 2005, 2007, 2009; Senate 2011,  2013,  2015,  2017 Asst. President Pro Tempore,  Senate 2019,  2021",
+      "church affiliation": "Methodist"
+    },
+    "created_at": "2023-01-17T22:27:11.794802+00:00",
+    "updated_at": "2026-02-13T06:05:39.200157+00:00",
+    "openstates_url": "https://openstates.org/person/stephanie-flowers-2XPtnQuC7cf7i0XXezQ28u/"
+  },
+  {
+    "id": "ocd-person/33b10c1d-6f19-44fe-83e7-827fdb1c4e78",
+    "name": "Steve Crowell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ar/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Crowell",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/627_sm.jpg",
+    "email": "steve.crowell@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "29"
+    },
+    "created_at": "2023-01-17T22:27:15.046417+00:00",
+    "updated_at": "2026-02-13T06:05:44.473138+00:00",
+    "openstates_url": "https://openstates.org/person/steve-crowell-1ZXWD4Rk4JAjxUTvIE7w1g/"
+  },
+  {
+    "id": "ocd-person/65d8b209-ce03-403c-8437-7c4d7a2e7185",
+    "name": "Terry Rice",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ar/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Rice",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/510_sm.jpg",
+    "email": "terry.rice@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "11",
+      "occupation": "Business Owner, Rice Furniture & Appliance, Inc.",
+      "public service": "House 2009,  2011,  2013,  Senate 2015,  2017,  2019,  2021",
+      "church affiliation": "Baptist"
+    },
+    "created_at": "2018-10-18T14:33:59.684169+00:00",
+    "updated_at": "2026-02-13T06:05:49.379441+00:00",
+    "openstates_url": "https://openstates.org/person/terry-rice-36BFoiIDfmop015mlVIbf3/"
+  },
+  {
+    "id": "ocd-person/11d34a89-689c-4b2f-b953-670ce11ae3bb",
+    "name": "Tyler Dees",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ar/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ar/government",
+      "name": "Arkansas",
+      "classification": "state"
+    },
+    "given_name": "Tyler",
+    "family_name": "Dees",
+    "image": "https://www.arkleg.state.ar.us/Content/photos/2023/Senate/628_sm.jpg",
+    "email": "tyler.dees@senate.ar.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "veteran": "No",
+      "seniority": "31"
+    },
+    "created_at": "2023-01-17T22:27:14.978422+00:00",
+    "updated_at": "2026-02-13T06:06:08.400887+00:00",
+    "openstates_url": "https://openstates.org/person/tyler-dees-XdQeURUQkcYo1KkkuOykd/"
+  }
+]

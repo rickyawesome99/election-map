@@ -11,10 +11,11 @@ const CHAMBER_LABEL: Record<Chamber, string> = {
 const PARTY_COLOR: Record<string, string> = {
   D: "var(--party-dem)",
   R: "var(--party-rep)",
-  I: "var(--app-text-secondary)",
+  I: "var(--party-ind)",
+  O: "var(--app-text-secondary)",
 };
 
-const COLUMN_HEADERS = ["District", "Incumbent", "Party", "Margin", "Rating"];
+const COLUMN_HEADERS = ["District", "Incumbent", "Party", "Last Election", "Margin", "Rating"];
 
 export default function StateLegDistrictTable({
   districts,
@@ -30,9 +31,9 @@ export default function StateLegDistrictTable({
   const chamberLabel = isUnicameral ? "Legislature" : CHAMBER_LABEL[chamber];
 
   return (
-    <section>
+    <section className="flex min-w-0 flex-col" style={{ height: "25rem" }}>
       <div
-        className="flex items-baseline justify-between gap-3 pb-3 mb-1"
+        className="flex shrink-0 items-baseline justify-between gap-3 pb-3 mb-1"
         style={{ borderBottom: "2px solid var(--app-text-primary)" }}
       >
         <h2 className="text-[11px] uppercase tracking-wider font-bold" style={{ color: "var(--app-text-muted)" }}>
@@ -43,14 +44,14 @@ export default function StateLegDistrictTable({
         </span>
       </div>
 
-      <div className="rounded-xl overflow-hidden" style={{ border: "1px solid var(--app-border)" }}>
+      <div className="min-h-0 min-w-0 flex-1 overflow-x-auto overflow-y-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr style={{ background: "var(--app-panel)", borderBottom: "1px solid var(--app-border)" }}>
+            <tr className="sticky top-0 z-10" style={{ background: "var(--app-bg)" }}>
               {COLUMN_HEADERS.map((label, i) => (
                 <th
                   key={label}
-                  className={`px-3 sm:px-4 py-2.5 text-[9px] sm:text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${i === 0 ? "text-left" : i === 1 ? "text-left" : "text-right"}`}
+                  className={`pb-2 pr-3 text-[10px] uppercase tracking-wider font-semibold whitespace-nowrap ${i === 0 ? "text-left" : i === 1 ? "text-left" : "text-right"}`}
                   style={{ color: "var(--app-text-muted)" }}
                 >
                   {label}
@@ -71,30 +72,49 @@ export default function StateLegDistrictTable({
                 </td>
               </tr>
             ) : (
-              districts.map((d, i) => {
-                const party = d.incumbent?.party;
+              districts.map((d) => {
+                const incumbents = d.incumbents ?? [];
                 const { bg, text } = d.rating ? getRatingColors(d.rating) : { bg: "", text: "" };
                 return (
-                  <tr
-                    key={d.id}
-                    style={{
-                      background: i % 2 === 0 ? "var(--app-panel)" : "var(--app-bg)",
-                      borderBottom: "1px solid var(--app-border)",
-                    }}
-                  >
-                    <td className="px-3 sm:px-4 py-2.5 text-left font-semibold" style={{ color: "var(--app-text-primary)" }}>
-                      {d.label}
+                  <tr key={d.id} style={{ borderBottom: "1px solid var(--app-border)" }}>
+                    <td className="py-3 pr-3 text-left font-semibold whitespace-nowrap tabular-nums" style={{ color: "var(--app-text-primary)" }}>
+                      {d.number}
                     </td>
-                    <td className="px-3 sm:px-4 py-2.5 text-left" style={{ color: "var(--app-text-primary)" }}>
-                      {d.incumbent?.name ?? <span className="italic" style={{ color: "var(--app-text-very-muted)" }}>TBD</span>}
+                    <td className="py-3 pr-3 text-left" style={{ color: "var(--app-text-primary)" }}>
+                      {incumbents.length > 0 ? (
+                        incumbents.map((inc) => inc.name).join(", ")
+                      ) : (
+                        <span className="italic" style={{ color: "var(--app-text-very-muted)" }}>Vacant</span>
+                      )}
                     </td>
-                    <td className="px-3 sm:px-4 py-2.5 text-right font-semibold" style={{ color: party ? PARTY_COLOR[party] : "var(--app-text-very-muted)" }}>
-                      {party ?? "—"}
+                    <td className="py-3 pr-3 text-right font-semibold whitespace-nowrap">
+                      {incumbents.length > 0 ? (
+                        incumbents.map((inc, j) => (
+                          <span key={j} style={{ color: PARTY_COLOR[inc.party] }}>
+                            {j > 0 && <span style={{ color: "var(--app-text-very-muted)" }}>, </span>}
+                            {inc.party}
+                          </span>
+                        ))
+                      ) : (
+                        <span style={{ color: "var(--app-text-very-muted)" }}>—</span>
+                      )}
                     </td>
-                    <td className="px-3 sm:px-4 py-2.5 text-right tabular-nums font-semibold" style={{ color: d.margin != null ? (d.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)") : "var(--app-text-very-muted)" }}>
+                    <td className="py-3 pr-3 text-right tabular-nums whitespace-nowrap" style={{ color: "var(--app-text-primary)" }}>
+                      {incumbents.some((inc) => inc.lastElection != null) ? (
+                        incumbents.map((inc, j) => (
+                          <span key={j} style={{ color: (inc.lastElection ?? d.lastElection) != null ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>
+                            {j > 0 && <span style={{ color: "var(--app-text-very-muted)" }}>, </span>}
+                            {inc.lastElection ?? d.lastElection ?? "—"}
+                          </span>
+                        ))
+                      ) : (
+                        <span style={{ color: d.lastElection != null ? "var(--app-text-primary)" : "var(--app-text-very-muted)" }}>{d.lastElection ?? "—"}</span>
+                      )}
+                    </td>
+                    <td className="py-3 pr-3 text-right tabular-nums font-semibold whitespace-nowrap" style={{ color: d.margin != null ? (d.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)") : "var(--app-text-very-muted)" }}>
                       {d.margin != null ? `${d.margin <= 0 ? "D" : "R"}+${Math.abs(d.margin).toFixed(1)}` : "—"}
                     </td>
-                    <td className="px-3 sm:px-4 py-2.5 text-right">
+                    <td className="py-3 text-right whitespace-nowrap">
                       {d.rating ? (
                         <span className="inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold" style={{ background: bg, color: text }}>
                           {d.rating}

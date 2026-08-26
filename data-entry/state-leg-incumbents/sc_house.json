@@ -1,0 +1,3626 @@
+[
+  {
+    "id": "ocd-person/0970c995-247f-4cc0-b0a3-8ee4a0e4ebcb",
+    "name": "Adam Duncan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:sc/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Duncan",
+    "image": "https://bloximages.chicago2.vip.townnews.com/upstatetoday.com/content/tncms/assets/v3/editorial/2/db/2dbe7f98-2879-11ef-8c0d-7356b5095dbe/66692c7a1bcf4.image.jpg?crop=1045%2C588%2C12%2C42&resize=1045%2C588&order=crop%2Cresize",
+    "email": "adamduncan@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:25:57.326001+00:00",
+    "updated_at": "2026-01-28T02:13:34.355683+00:00",
+    "openstates_url": "https://openstates.org/person/adam-duncan-HoTRgIf5DedfUOqAsR0Z9/"
+  },
+  {
+    "id": "ocd-person/10d51991-3dec-499f-8ed2-9c5685de9b00",
+    "name": "Alan Morgan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:sc/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Alan",
+    "family_name": "Morgan",
+    "image": "https://scstatehouse.gov/images/members/1374999835.jpg",
+    "email": "alanmorgan@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1988-02-08",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville County"
+    },
+    "created_at": "2022-06-02T23:22:01.567341+00:00",
+    "updated_at": "2026-01-28T02:13:38.563485+00:00",
+    "openstates_url": "https://openstates.org/person/alan-morgan-VlGNNJWlTyXWdkJ0hUmum/"
+  },
+  {
+    "id": "ocd-person/86e53967-3383-4df1-b3b6-49aa2b327110",
+    "name": "Annie McDaniel",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:sc/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Annie",
+    "family_name": "McDaniel",
+    "image": "https://scstatehouse.gov/images/members/1221590763.jpg",
+    "email": "anniemcdaniel@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1960-05-28",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Chester, Fairfield & Richland Counties",
+      "Home Address Home Phone": "(803) 635-6894"
+    },
+    "created_at": "2019-01-04T05:19:57.629581+00:00",
+    "updated_at": "2026-01-28T02:12:36.523766+00:00",
+    "openstates_url": "https://openstates.org/person/annie-mcdaniel-46Xj6pIJSOxPz9v5KX1DEm/"
+  },
+  {
+    "id": "ocd-person/dbb8fc98-5116-44c4-8009-8c91e514dec1",
+    "name": "April Cromer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:sc/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "April",
+    "family_name": "Cromer",
+    "image": "https://scstatehouse.gov/images/members/0434090857.jpg",
+    "email": "aprilcromer@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1978-08-28",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Anderson County",
+      "Home Address Home Phone": "(864) 844-1097"
+    },
+    "created_at": "2023-02-14T05:08:28.668367+00:00",
+    "updated_at": "2026-01-28T02:13:14.983304+00:00",
+    "openstates_url": "https://openstates.org/person/april-cromer-6gbrF6QminRTceo56ydqC1/"
+  },
+  {
+    "id": "ocd-person/a45d8c37-372d-4d32-b9a5-cce96299ea3d",
+    "name": "Beth Bernstein",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:sc/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Beth",
+    "family_name": "Bernstein",
+    "image": "https://scstatehouse.gov/images/members/0141477256.jpg",
+    "email": "bethbernstein@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1969-11-13",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Richland County"
+    },
+    "created_at": "2018-10-18T16:11:52.902095+00:00",
+    "updated_at": "2026-01-28T02:12:56.933783+00:00",
+    "openstates_url": "https://openstates.org/person/beth-bernstein-509UZI96p8KrTFXOaUeLoj/"
+  },
+  {
+    "id": "ocd-person/20240c0c-69e5-445f-b8ca-d33dd377e086",
+    "name": "Bill Chumley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:sc/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Chumley",
+    "image": "https://scstatehouse.gov/images/members/0351704504.jpg",
+    "email": "billchumley@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1947-09-24",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville & Spartanburg Counties",
+      "Home Address Home Phone": "(864) 303-2726"
+    },
+    "created_at": "2018-10-18T16:12:05.018390+00:00",
+    "updated_at": "2026-01-28T02:13:19.213520+00:00",
+    "openstates_url": "https://openstates.org/person/bill-chumley-yeE8V5OHLAvlPyIJHWyIA/"
+  },
+  {
+    "id": "ocd-person/58d2072a-c96a-49b2-8591-a4e186dc28eb",
+    "name": "Bill Clyburn",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:sc/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Clyburn",
+    "image": "https://scstatehouse.gov/images/members/0363636320.jpg",
+    "email": "billclyburn@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1941-05-19",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Aiken, Edgefield & Saluda Counties",
+      "Home Address Home Phone": "(803) 649-6167"
+    },
+    "created_at": "2018-10-18T16:12:04.631275+00:00",
+    "updated_at": "2025-07-18T02:16:14.019795+00:00",
+    "openstates_url": "https://openstates.org/person/bill-clyburn-2hbJ5KJ5ile6EMdVJyUCXD/"
+  },
+  {
+    "id": "ocd-person/066a2879-ab95-4082-803d-9c4dd582f04e",
+    "name": "Bill Hager",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "122",
+      "division_id": "ocd-division/country:us/state:sc/sldl:122"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Hager",
+    "image": "https://scstatehouse.gov/images/members/0733948776.jpg",
+    "email": "billhager@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1960-02-07",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Beaufort, Colleton, Hampton & Jasper Counties",
+      "Home Address Home Phone": "(803) 346-9576"
+    },
+    "created_at": "2023-02-14T05:12:12.349102+00:00",
+    "updated_at": "2026-01-28T02:12:49.863627+00:00",
+    "openstates_url": "https://openstates.org/person/bill-hager-C6T2LRWykxLdBftzCmhqg/"
+  },
+  {
+    "id": "ocd-person/e27051a1-60e8-4ad9-b1d2-55360e09ea8c",
+    "name": "Bill Herbkersman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "118",
+      "division_id": "ocd-division/country:us/state:sc/sldl:118"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Herbkersman",
+    "image": "https://scstatehouse.gov/images/members/0832954446.jpg",
+    "email": "billherbkerman@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1958-06-30",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Beaufort County"
+    },
+    "created_at": "2018-10-18T16:12:04.861029+00:00",
+    "updated_at": "2026-01-28T02:13:29.695056+00:00",
+    "openstates_url": "https://openstates.org/person/bill-herbkersman-6tHaw7aMma27QMWoZir0YO/"
+  },
+  {
+    "id": "ocd-person/d1f25d1c-bd0e-4d0d-be0e-f8f3edad8a3d",
+    "name": "Bill Hixon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:sc/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Hixon",
+    "image": "https://scstatehouse.gov/images/members/0849715808.jpg",
+    "email": "billhixon@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1957-09-06",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Aiken & Edgefield Counties",
+      "Home Address Home Phone": "(803) 278-0892"
+    },
+    "created_at": "2018-10-18T16:12:05.094617+00:00",
+    "updated_at": "2026-04-04T02:08:51.587546+00:00",
+    "openstates_url": "https://openstates.org/person/bill-hixon-6OA9j0Rcuy3XBS3EnqEDYT/"
+  },
+  {
+    "id": "ocd-person/010940bd-8041-4f17-b425-5f42c8c07526",
+    "name": "Bill Taylor",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:sc/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Taylor",
+    "image": "https://scstatehouse.gov/images/members/1811363419.jpg",
+    "email": "billtaylor@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1946-07-16",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Aiken & Lexington Counties"
+    },
+    "created_at": "2018-10-18T16:11:52.979905+00:00",
+    "updated_at": "2025-07-18T02:16:45.064150+00:00",
+    "openstates_url": "https://openstates.org/person/bill-taylor-1xDhB61XizEaPE6skN19C/"
+  },
+  {
+    "id": "ocd-person/ae3ba290-90f6-4121-874d-ba80e16ccbe7",
+    "name": "Bill Whitmire",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:sc/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Whitmire",
+    "image": "https://scstatehouse.gov/images/members/1914204316.jpg",
+    "email": "billwhitmire@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1948-08-24",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Oconee & Pickens Counties",
+      "Home Address Home Phone": "(864) 638-2970"
+    },
+    "created_at": "2018-10-18T16:12:05.173563+00:00",
+    "updated_at": "2025-07-18T02:16:11.071504+00:00",
+    "openstates_url": "https://openstates.org/person/bill-whitmire-5IluvSsCQ66YacEIY55yZL/"
+  },
+  {
+    "id": "ocd-person/ddb2ac02-4d91-4379-8c8b-da2353f2163a",
+    "name": "Blake Sanders",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:sc/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Blake",
+    "family_name": "Sanders",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/BlakeSanders24.jpg",
+    "email": "blakesanders@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1982-07-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:29:15.834523+00:00",
+    "updated_at": "2026-01-28T02:14:00.702159+00:00",
+    "openstates_url": "https://openstates.org/person/blake-sanders-6kKxMqDRTNcpnP0fQxwxQY/"
+  },
+  {
+    "id": "ocd-person/d09020dc-87bc-49b4-a039-2a2809ab88cc",
+    "name": "Brandon Cox",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:sc/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Cox",
+    "image": "https://scstatehouse.gov/images/members/0428124949.jpg",
+    "email": "brandoncox@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1974-12-14",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley County"
+    },
+    "created_at": "2023-02-14T05:09:16.680647+00:00",
+    "updated_at": "2026-01-28T02:13:15.744879+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-cox-6LYGnBYOjJ0UtYnlVQ0Eu4/"
+  },
+  {
+    "id": "ocd-person/f89d05de-1f18-466c-bd51-f718a208407b",
+    "name": "Brandon Guffey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:sc/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Guffey",
+    "image": "https://scstatehouse.gov/images/members/0730681731.jpg",
+    "email": "brandonguffey@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1980-01-29",
+    "death_date": "",
+    "extras": {
+      "counties represented": "York County",
+      "Home Address Home Phone": "(803) 810-7009"
+    },
+    "created_at": "2023-02-14T05:13:00.010398+00:00",
+    "updated_at": "2026-01-28T02:13:25.886485+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-guffey-7Z7r7Pn7zZpstxJGSV0zyF/"
+  },
+  {
+    "id": "ocd-person/aa158d61-1373-4c4a-9ad3-ea74bf422cc3",
+    "name": "Brandon Newton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:sc/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Newton",
+    "image": "https://scstatehouse.gov/images/members/1418607785.jpg",
+    "email": "brandonnewton@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1994-07-29",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Kershaw & Lancaster Counties",
+      "Columbia Address Cell Phone": "(803) 320-9615"
+    },
+    "created_at": "2018-10-18T16:11:53.147129+00:00",
+    "updated_at": "2026-01-28T02:12:47.147693+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-newton-5AwXmyZkNoTKdGDzofxZ47/"
+  },
+  {
+    "id": "ocd-person/d2019dc3-160d-4229-b681-280c52561435",
+    "name": "Brian Lawson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:sc/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Lawson",
+    "image": "https://scstatehouse.gov/images/members/1067613508.jpg",
+    "email": "brianlawson@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1973-04-05",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Cherokee & Spartanburg Counties"
+    },
+    "created_at": "2023-02-14T05:12:01.005275+00:00",
+    "updated_at": "2026-01-28T02:13:08.631665+00:00",
+    "openstates_url": "https://openstates.org/person/brian-lawson-6OH7tKxW2sv1ACO3tHdDPx/"
+  },
+  {
+    "id": "ocd-person/d4974849-0939-472c-9862-4d760889125e",
+    "name": "Bruce Bannister",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:sc/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Bruce",
+    "family_name": "Bannister",
+    "image": "https://scstatehouse.gov/images/members/0103409079.jpg",
+    "email": "brucebannister@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1972-07-21",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville County"
+    },
+    "created_at": "2018-10-18T16:11:53.294029+00:00",
+    "updated_at": "2025-07-18T02:16:27.063751+00:00",
+    "openstates_url": "https://openstates.org/person/bruce-bannister-6T9VajDESLGPUc2JyAmCJq/"
+  },
+  {
+    "id": "ocd-person/bbff9a4c-7b59-4538-b869-64ba0c8431ff",
+    "name": "Cal Forrest",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:sc/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Cal",
+    "family_name": "Forrest",
+    "image": "https://scstatehouse.gov/images/members/0608238564.jpg",
+    "email": "calforrest@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1977-05-22",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lexington & Saluda Counties",
+      "Home Address Home Phone": "(803) 685-5576",
+      "Columbia Address Cell Phone": "(803) 349-6741"
+    },
+    "created_at": "2018-10-18T16:11:53.373494+00:00",
+    "updated_at": "2025-07-18T02:16:48.144395+00:00",
+    "openstates_url": "https://openstates.org/person/cal-forrest-5ikNJ2LnqMrVjJrssUGMKl/"
+  },
+  {
+    "id": "ocd-person/c3b55867-85d7-4bf2-b1a0-30dd924ae734",
+    "name": "Carl Anderson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "103",
+      "division_id": "ocd-division/country:us/state:sc/sldl:103"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Carl",
+    "family_name": "Anderson",
+    "image": "https://scstatehouse.gov/images/members/0021590907.jpg",
+    "email": "carlanderson@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1961-02-10",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley, Georgetown & Horry Counties",
+      "Home Address Home Phone": "(843) 546-5332"
+    },
+    "created_at": "2018-10-18T16:11:53.452772+00:00",
+    "updated_at": "2026-01-28T02:13:52.287464+00:00",
+    "openstates_url": "https://openstates.org/person/carl-anderson-5xINU8x1EU3cuAHcZ9dVRs/"
+  },
+  {
+    "id": "ocd-person/b082de67-acd5-42db-bdfc-643650ad7e34",
+    "name": "Carla Schuessler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:sc/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Carla",
+    "family_name": "Schuessler",
+    "image": "https://scstatehouse.gov/images/members/1635227077.jpg",
+    "email": "carlaschuessler@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1972-09-18",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Horry County"
+    },
+    "created_at": "2023-02-14T05:11:35.816160+00:00",
+    "updated_at": "2026-01-28T02:13:46.039263+00:00",
+    "openstates_url": "https://openstates.org/person/carla-schuessler-5N4SJizVZRubE9TZkr3L4m/"
+  },
+  {
+    "id": "ocd-person/30329193-5519-45c5-a7de-f841e62b91ac",
+    "name": "Case Brittain",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "107",
+      "division_id": "ocd-division/country:us/state:sc/sldl:107"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Case",
+    "family_name": "Brittain",
+    "image": "https://scstatehouse.gov/images/members/0202272703.jpg",
+    "email": "casebrittain@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1978-03-28",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Horry County",
+      "Home Address Home Phone": "(843) 907-3191"
+    },
+    "created_at": "2020-12-16T06:15:54.656159+00:00",
+    "updated_at": "2026-01-28T02:13:17.537363+00:00",
+    "openstates_url": "https://openstates.org/person/case-brittain-1SwjyqNsnYYACZEJNIDeUm/"
+  },
+  {
+    "id": "ocd-person/2432a9be-a476-4dae-966c-74f01e24fdbb",
+    "name": "Chandra Dillard",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:sc/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Chandra",
+    "family_name": "Dillard",
+    "image": "https://scstatehouse.gov/images/members/0479545397.jpg",
+    "email": "chandra@chandradillard.com",
+    "gender": "Female",
+    "birth_date": "1965-03-10",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville County",
+      "Home Address Home Phone": "(864) 233-6549"
+    },
+    "created_at": "2018-10-18T16:11:53.610040+00:00",
+    "updated_at": "2025-07-18T02:17:02.186272+00:00",
+    "openstates_url": "https://openstates.org/person/chandra-dillard-16IsMdaDpeTEV4vxEZoRkB/"
+  },
+  {
+    "id": "ocd-person/08342d93-85d9-498e-a602-85ef9715ebf6",
+    "name": "Charlie Hartz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:sc/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Charlie",
+    "family_name": "Hartz",
+    "image": "https://bloximages.newyork1.vip.townnews.com/postandcourier.com/content/tncms/assets/v3/editorial/6/dd/6ddc9b30-8988-11ef-9d6e-abf6ce2aa967/62e03fbeba019.image.jpg?crop=724%2C987%2C710%2C3&resize=367%2C500&order=crop%2Cresize",
+    "email": "charleshartz@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1959-07-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:29:04.456145+00:00",
+    "updated_at": "2025-07-18T02:16:01.623024+00:00",
+    "openstates_url": "https://openstates.org/person/charlie-hartz-FTmbrT3Dn5Y6ECFurdnHy/"
+  },
+  {
+    "id": "ocd-person/f9925f2e-d43e-47ff-ba74-f670b65d96e7",
+    "name": "Chris Hart",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:sc/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Hart",
+    "image": "https://scstatehouse.gov/images/members/0770454453.jpg",
+    "email": "chrishart@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1972-09-22",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Richland County",
+      "Home Address Home Phone": "(803) 771-7701"
+    },
+    "created_at": "2018-10-18T16:11:53.931176+00:00",
+    "updated_at": "2026-01-28T02:13:40.492134+00:00",
+    "openstates_url": "https://openstates.org/person/chris-hart-7avyqyQAQwEELK90n41hAt/"
+  },
+  {
+    "id": "ocd-person/77bd81c9-3436-4635-a945-11f1cf37ead7",
+    "name": "Chris Huff",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:sc/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Huff",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/817554/817554.jpg",
+    "email": "chrishuff@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1976-09-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:29:22.724214+00:00",
+    "updated_at": "2026-01-28T02:12:33.711724+00:00",
+    "openstates_url": "https://openstates.org/person/chris-huff-3dwgtRF2YiiYMbUSt5AGQh/"
+  },
+  {
+    "id": "ocd-person/728e5331-d2ec-4c21-a271-be37ae8843ff",
+    "name": "Chris Wooten",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:sc/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Wooten",
+    "image": "https://scstatehouse.gov/images/members/1978408854.jpg",
+    "email": "chriswooten@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1968-08-28",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lexington County",
+      "Home Address Home Phone": "(803) 609-1084"
+    },
+    "created_at": "2018-10-18T16:11:54.008943+00:00",
+    "updated_at": "2026-04-25T02:11:30.211887+00:00",
+    "openstates_url": "https://openstates.org/person/chris-wooten-3UAAPgpShly76hnd0nR1tn/"
+  },
+  {
+    "id": "ocd-person/16726551-937d-43ca-a13b-c94c608d1ba3",
+    "name": "Cody Mitchell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:sc/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Cody",
+    "family_name": "Mitchell",
+    "image": "https://scstatehouse.gov/images/members/1344033930.jpg",
+    "email": "codymitchell@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1986-06-11",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Chesterfield, Darlington, Kershaw & Lancaster Counties",
+      "Home Address Home Phone": "(803) 427-6487"
+    },
+    "created_at": "2023-02-14T05:12:02.673318+00:00",
+    "updated_at": "2026-01-28T02:12:47.947623+00:00",
+    "openstates_url": "https://openstates.org/person/cody-mitchell-gM6pdzxpyXpokbYlFWzND/"
+  },
+  {
+    "id": "ocd-person/0a87faa3-3d88-4fd6-a29f-583102f8c89f",
+    "name": "Courtney Waters",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "113",
+      "division_id": "ocd-division/country:us/state:sc/sldl:113"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Courtney",
+    "family_name": "Waters",
+    "image": "https://courtneywaters.com/wp-content/uploads/2024/11/courtney-waters.jpg",
+    "email": "",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-03-29T02:11:01.529106+00:00",
+    "updated_at": "2025-07-18T02:16:26.058364+00:00",
+    "openstates_url": "https://openstates.org/person/courtney-waters-Js45Ct265p9zXU5eQyJUF/"
+  },
+  {
+    "id": "ocd-person/52ab3f52-ec8b-4268-bfb2-16322df47839",
+    "name": "Craig Gagnon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:sc/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Craig",
+    "family_name": "Gagnon",
+    "image": "https://scstatehouse.gov/images/members/0632954470.jpg",
+    "email": "craiggagnon@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1960-08-02",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Abbeville, Anderson & Laurens Counties",
+      "Home Address Home Phone": "(864) 366-4112"
+    },
+    "created_at": "2018-10-18T16:11:54.088672+00:00",
+    "updated_at": "2025-07-18T02:16:33.712949+00:00",
+    "openstates_url": "https://openstates.org/person/craig-gagnon-2Vzd7qmJu3YQxjnwwO5tY9/"
+  },
+  {
+    "id": "ocd-person/fd827c3d-df23-4497-b39e-7c7ab43138fd",
+    "name": "Daniel Gibson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:sc/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Daniel",
+    "family_name": "Gibson",
+    "image": "https://scstatehouse.gov/images/members/0667045375.jpg",
+    "email": "danielgibson@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenwood & McCormick Counties",
+      "Home Address Home Phone": "(864) 396-0245"
+    },
+    "created_at": "2023-02-14T05:09:00.293447+00:00",
+    "updated_at": "2026-01-28T02:13:20.653351+00:00",
+    "openstates_url": "https://openstates.org/person/daniel-gibson-7iMgozbMyE5QT2Z0rVEkzV/"
+  },
+  {
+    "id": "ocd-person/14b0abeb-70fd-404b-9f55-ff2e75e2c7ef",
+    "name": "Davey Hiott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:sc/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Davey",
+    "family_name": "Hiott",
+    "image": "https://scstatehouse.gov/images/members/0848863535.jpg",
+    "email": "daveyhiott@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1960-10-20",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Leader",
+      "counties represented": "Pickens County"
+    },
+    "created_at": "2018-10-18T16:11:54.485723+00:00",
+    "updated_at": "2025-07-18T02:16:53.197124+00:00",
+    "openstates_url": "https://openstates.org/person/davey-hiott-d2aJJIZusghDltQk7bwpb/"
+  },
+  {
+    "id": "ocd-person/0187a0b8-b72e-42f1-82ea-8fdac9b9c484",
+    "name": "David Martin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:sc/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Martin",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/David_Martin_20240907_125219.jpeg",
+    "email": "davidmartin@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1987-02-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:26:15.445914+00:00",
+    "updated_at": "2026-01-28T02:13:24.873695+00:00",
+    "openstates_url": "https://openstates.org/person/david-martin-2syPdyEJul5H92XEwenem/"
+  },
+  {
+    "id": "ocd-person/96fcbf84-e1e8-4e69-bc26-eeced30abaf4",
+    "name": "David Vaughan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:sc/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Vaughan",
+    "image": "https://scstatehouse.gov/images/members/1865908867.jpg",
+    "email": "davidvaughan@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-01-21",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville County",
+      "Home Address Home Phone": "(864) 516-0113"
+    },
+    "created_at": "2023-02-14T05:11:10.301232+00:00",
+    "updated_at": "2026-01-28T02:12:54.421088+00:00",
+    "openstates_url": "https://openstates.org/person/david-vaughan-4auM1cx8whMPadLxlRhelw/"
+  },
+  {
+    "id": "ocd-person/10d7814d-009b-4d21-a048-2672f48fe130",
+    "name": "David Weeks",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:sc/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Weeks",
+    "image": "https://scstatehouse.gov/images/members/1898863409.jpg",
+    "email": "davidweeks@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1953-09-24",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Sumter County",
+      "Home Address Home Phone": "(803) 775-4228"
+    },
+    "created_at": "2018-10-18T16:11:56.143070+00:00",
+    "updated_at": "2025-07-18T02:16:49.150644+00:00",
+    "openstates_url": "https://openstates.org/person/david-weeks-VmMWdVnqdHPvJ9IkycGsC/"
+  },
+  {
+    "id": "ocd-person/08cc0e0f-26e0-4117-8591-2ac463f6fbe6",
+    "name": "Dennis Moss",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:sc/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Dennis",
+    "family_name": "Moss",
+    "image": "https://scstatehouse.gov/images/members/1379545289.jpg",
+    "email": "dennismoss@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1954-01-13",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Cherokee, Spartanburg & York Counties",
+      "Home Address Home Phone": "(864) 487-2121"
+    },
+    "created_at": "2018-10-18T16:11:54.563350+00:00",
+    "updated_at": "2025-07-18T02:15:55.049522+00:00",
+    "openstates_url": "https://openstates.org/person/dennis-moss-GbBtwrtBQHfZ7Un6ciB0w/"
+  },
+  {
+    "id": "ocd-person/65b53c25-26eb-4478-9ddc-b46e29c20543",
+    "name": "Dianne Mitchell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:sc/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Dianne",
+    "family_name": "Mitchell",
+    "image": "",
+    "email": "diannemitchell@schouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:12:51.673268+00:00",
+    "updated_at": "2026-04-04T02:08:08.920028+00:00",
+    "openstates_url": "https://openstates.org/person/dianne-mitchell-35v34lANuoaavVfKjiqOG3/"
+  },
+  {
+    "id": "ocd-person/7a7a6119-3a67-4b02-9313-d8454421494e",
+    "name": "Don Chapman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:sc/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Don",
+    "family_name": "Chapman",
+    "image": "https://scstatehouse.gov/images/members/0347727231.jpg",
+    "email": "donchapman@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1966-01-01",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Anderson County",
+      "Columbia Address Cell Phone": "(864) 940-6676"
+    },
+    "created_at": "2023-02-14T05:11:27.143195+00:00",
+    "updated_at": "2026-01-28T02:13:30.345004+00:00",
+    "openstates_url": "https://openstates.org/person/don-chapman-3j6zSskPpwxDQe00BGh486/"
+  },
+  {
+    "id": "ocd-person/3a09cbd2-aa21-4fa8-9511-d1f842816e49",
+    "name": "Doug Gilliam",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:sc/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Gilliam",
+    "image": "https://scstatehouse.gov/images/members/0675426055.jpg",
+    "email": "douggilliam@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1964-11-22",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Laurens & Union Counties",
+      "Home Address Home Phone": "(864) 427-5711",
+      "Columbia Address Cell Phone": "(864) 426-0785"
+    },
+    "created_at": "2019-01-04T05:20:10.021571+00:00",
+    "updated_at": "2025-07-18T02:15:54.037921+00:00",
+    "openstates_url": "https://openstates.org/person/doug-gilliam-1lW1yMoAk1uuuR4ZzeyFgX/"
+  },
+  {
+    "id": "ocd-person/5861846a-d293-416f-b5ab-227f8fd12b94",
+    "name": "Fawn Pedalino",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:sc/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Fawn",
+    "family_name": "Pedalino",
+    "image": "https://scstatehouse.gov/images/members/1453408917.jpg",
+    "email": "fawnpedalino@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1987-05-12",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Clarendon & Sumter Counties",
+      "Home Address Home Phone": "(803) 566-0120"
+    },
+    "created_at": "2023-02-14T05:14:00.931421+00:00",
+    "updated_at": "2026-01-28T02:13:41.803804+00:00",
+    "openstates_url": "https://openstates.org/person/fawn-pedalino-2gltCFozqzIf9zQOoOeBIC/"
+  },
+  {
+    "id": "ocd-person/774393b0-877d-4c4b-81cf-daf0494328f9",
+    "name": "Gary Brewer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "114",
+      "division_id": "ocd-division/country:us/state:sc/sldl:114"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Brewer",
+    "image": "https://scstatehouse.gov/images/members/0192045432.jpg",
+    "email": "garybrewer@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston & Dorchester Counties",
+      "Home Address Home Phone": "(843) 609-1308"
+    },
+    "created_at": "2023-02-14T05:10:58.175492+00:00",
+    "updated_at": "2026-01-28T02:12:42.680286+00:00",
+    "openstates_url": "https://openstates.org/person/gary-brewer-3d2y7JxCCJDMJRke1Lyzub/"
+  },
+  {
+    "id": "ocd-person/21d2b4a4-f5fa-415b-8394-02e9b63c4ba0",
+    "name": "Gil Gatch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:sc/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Gil",
+    "family_name": "Gatch",
+    "image": "https://scstatehouse.gov/images/members/0658522648.jpg",
+    "email": "gilgatch@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1981-06-18",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston & Dorchester Counties"
+    },
+    "created_at": "2020-12-16T06:15:53.142921+00:00",
+    "updated_at": "2026-01-28T02:13:26.671837+00:00",
+    "openstates_url": "https://openstates.org/person/gil-gatch-11p2Rz2kMtNkxsOu8N9OwC/"
+  },
+  {
+    "id": "ocd-person/b494d1f6-d98e-4a8c-895c-6cb73ec892b8",
+    "name": "Gilda Cobb-Hunter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:sc/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Gilda",
+    "family_name": "Cobb-Hunter",
+    "image": "https://scstatehouse.gov/images/members/0372727228.jpg",
+    "email": "gildacobbhunter@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1952-11-05",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Dorchester & Orangeburg Counties",
+      "Home Address Home Phone": "(803) 531-1257"
+    },
+    "created_at": "2018-10-18T16:11:55.432385+00:00",
+    "updated_at": "2025-07-18T02:16:31.641872+00:00",
+    "openstates_url": "https://openstates.org/person/gilda-cobb-hunter-5Ukd3CrtXWUUUdPX5enwNc/"
+  },
+  {
+    "id": "ocd-person/ef3c638d-4ad1-4d9d-abbb-1a87b5513a66",
+    "name": "Greg Ford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:sc/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Ford",
+    "image": "https://scstatehouse.gov/images/members/0605681746.jpg",
+    "email": "gregford@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Dorchester County"
+    },
+    "created_at": "2026-01-28T02:13:31.400528+00:00",
+    "updated_at": "2026-04-04T02:08:40.993961+00:00",
+    "openstates_url": "https://openstates.org/person/greg-ford-7HQlMavo9y8iT9sytXlIxS/"
+  },
+  {
+    "id": "ocd-person/c7b115f3-0fa8-4a8b-b01f-9b222f44018f",
+    "name": "Hamilton Grant",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:sc/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Hamilton",
+    "family_name": "Grant",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/HamiltonGrant2024.jpeg",
+    "email": "hamiltongrant@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1988-12-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:29:02.376073+00:00",
+    "updated_at": "2025-07-18T02:16:44.560538+00:00",
+    "openstates_url": "https://openstates.org/person/hamilton-grant-64oOtHrfUppPQTd4MdLYAJ/"
+  },
+  {
+    "id": "ocd-person/7f424e9d-ce81-4413-9438-c5aeee1ec079",
+    "name": "Harriet Holman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "102",
+      "division_id": "ocd-division/country:us/state:sc/sldl:102"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Harriet",
+    "family_name": "Holman",
+    "image": "https://static.wixstatic.com/media/8accea_e11fd53b395c467b9a13c9643ee9b49f~mv2.jpg",
+    "email": "harrietholman@schouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:29:25.969197+00:00",
+    "updated_at": "2026-01-28T02:12:45.170258+00:00",
+    "openstates_url": "https://openstates.org/person/harriet-holman-3s8KKelb9sQ6suHvL8t06T/"
+  },
+  {
+    "id": "ocd-person/dbc0a5ad-b105-4cd9-8849-e2a7c77d23f0",
+    "name": "Heath Sessions",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:sc/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Heath",
+    "family_name": "Sessions",
+    "image": "https://scstatehouse.gov/images/members/1649715712.jpg",
+    "email": "heathsessions@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1976-11-24",
+    "death_date": "",
+    "extras": {
+      "counties represented": "York County"
+    },
+    "created_at": "2023-02-14T05:13:57.088990+00:00",
+    "updated_at": "2026-01-28T02:12:50.934815+00:00",
+    "openstates_url": "https://openstates.org/person/heath-sessions-6gfMIN4FxoGKXrNghFpRMu/"
+  },
+  {
+    "id": "ocd-person/573c5456-8b53-4a00-9538-1013f0fc12c5",
+    "name": "Heather Bauer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:sc/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Heather",
+    "family_name": "Bauer",
+    "image": "https://scstatehouse.gov/images/members/0125568167.jpg",
+    "email": "heatherbauer@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1984-06-16",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Richland County",
+      "Home Address Home Phone": "(803) 563-7560"
+    },
+    "created_at": "2023-02-14T05:09:06.277648+00:00",
+    "updated_at": "2026-01-28T02:13:01.731362+00:00",
+    "openstates_url": "https://openstates.org/person/heather-bauer-2ebtzRby8nI6Aaz8tN5Zor/"
+  },
+  {
+    "id": "ocd-person/814c55e9-568f-403e-9e8a-ee3859c07300",
+    "name": "Heather Crawford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:sc/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Heather",
+    "family_name": "Crawford",
+    "image": "https://scstatehouse.gov/images/members/0428977222.jpg",
+    "email": "heathercrawford@schouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Horry County"
+    },
+    "created_at": "2018-10-18T16:11:55.826314+00:00",
+    "updated_at": "2025-07-18T02:17:09.728436+00:00",
+    "openstates_url": "https://openstates.org/person/heather-crawford-3vytWr5XQqnEsfeaqICGAK/"
+  },
+  {
+    "id": "ocd-person/6f92ad6a-95c7-4e74-aa91-05fd5448c99a",
+    "name": "J.A. Moore",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:sc/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "J.A.",
+    "family_name": "Moore",
+    "image": "https://scstatehouse.gov/images/members/1356818019.jpg",
+    "email": "jamoore@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley & Charleston Counties"
+    },
+    "created_at": "2019-01-04T05:20:08.535812+00:00",
+    "updated_at": "2026-01-28T02:13:00.215575+00:00",
+    "openstates_url": "https://openstates.org/person/j-a-moore-3OXBA8tgh4NdeHXwymFp3C/"
+  },
+  {
+    "id": "ocd-person/0193ab02-383a-4b92-a810-00fd0bf0fb98",
+    "name": "Jackie Hayes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:sc/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jackie",
+    "family_name": "Hayes",
+    "image": "https://scstatehouse.gov/images/members/0802272631.jpg",
+    "email": "jackiehayes@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1961-10-12",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Dillon, Horry & Marlboro Counties",
+      "Home Address Home Phone": "(843) 774-6125"
+    },
+    "created_at": "2018-10-18T16:11:56.533148+00:00",
+    "updated_at": "2025-07-18T02:16:30.624382+00:00",
+    "openstates_url": "https://openstates.org/person/jackie-hayes-2yTYn4avBoQsOrV5Ew3r6/"
+  },
+  {
+    "id": "ocd-person/d5713eed-0ae5-4bf4-9dc8-7c3efdfae317",
+    "name": "Jackie Terribile",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:sc/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jackie",
+    "family_name": "Terribile",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jackie_Terribile.jpeg",
+    "email": "jackieterribile@schouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:26:38.900248+00:00",
+    "updated_at": "2026-01-29T08:06:28.089012+00:00",
+    "openstates_url": "https://openstates.org/person/jackie-terribile-6Ul7NuvmRLmCW2udCM1023/"
+  },
+  {
+    "id": "ocd-person/4b8dd070-0114-4788-9d4c-21eab54496c0",
+    "name": "James Teeple",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "116",
+      "division_id": "ocd-division/country:us/state:sc/sldl:116"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Teeple",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/James_Teeple_20240908_101043.jpg",
+    "email": "jamesteeple@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:26:34.202008+00:00",
+    "updated_at": "2026-01-28T02:13:22.075452+00:00",
+    "openstates_url": "https://openstates.org/person/james-teeple-2IZEUilkzpcPsWaZ1vdEAa/"
+  },
+  {
+    "id": "ocd-person/8c2d9f43-2498-4961-a046-bc5c3f8d7fa6",
+    "name": "Jason Luck",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:sc/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Luck",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jason_Luck1.png",
+    "email": "jasonluck@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1977-07-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:27:38.822397+00:00",
+    "updated_at": "2025-07-18T02:17:04.191481+00:00",
+    "openstates_url": "https://openstates.org/person/jason-luck-4GVm3ecvhnHuBPx8OVKJ2E/"
+  },
+  {
+    "id": "ocd-person/00d450b3-f427-4e64-b0bd-45609b0a433b",
+    "name": "Jay Jordan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:sc/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Jordan",
+    "image": "https://scstatehouse.gov/images/members/0957954431.jpg",
+    "email": "jayjordan@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1980-02-06",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Florence County"
+    },
+    "created_at": "2018-10-18T16:12:04.324713+00:00",
+    "updated_at": "2025-07-18T02:17:12.735220+00:00",
+    "openstates_url": "https://openstates.org/person/jay-jordan-1Z1kvrzXinevQf79uuCLL/"
+  },
+  {
+    "id": "ocd-person/5a7a2735-d539-4aa0-b1a9-2f0e3828a02b",
+    "name": "Jay Kilmartin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:sc/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Kilmartin",
+    "image": "https://scstatehouse.gov/images/members/0993323745.jpg",
+    "email": "jaykilmartin@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-08-02",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lexington County",
+      "Home Address Home Phone": "(803) 873-8967"
+    },
+    "created_at": "2023-02-14T05:12:22.786015+00:00",
+    "updated_at": "2026-01-28T02:13:07.219507+00:00",
+    "openstates_url": "https://openstates.org/person/jay-kilmartin-2kj8HUAKHxxsWsyEd0T1Yp/"
+  },
+  {
+    "id": "ocd-person/99dd735b-3ab4-4362-a2c5-f1b5c9257e52",
+    "name": "Jeff Bradley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "123",
+      "division_id": "ocd-division/country:us/state:sc/sldl:123"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Bradley",
+    "image": "https://scstatehouse.gov/images/members/0171590889.jpg",
+    "email": "jeffbradley@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1957-05-03",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Beaufort & Jasper Counties"
+    },
+    "created_at": "2018-10-18T16:11:56.935910+00:00",
+    "updated_at": "2025-07-18T02:16:48.647731+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-bradley-4gL1oOw8l9YLgOX7lR5C9C/"
+  },
+  {
+    "id": "ocd-person/7b2dc589-67e0-4286-9a21-73a69a299ef7",
+    "name": "Jeff Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:sc/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Johnson",
+    "image": "https://scstatehouse.gov/images/members/0938636251.jpg",
+    "email": "jeffjohnson@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1971-03-20",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Horry County"
+    },
+    "created_at": "2018-10-18T16:11:57.013147+00:00",
+    "updated_at": "2026-01-28T02:13:47.838187+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-johnson-3kQyNiRaDH1lqXeqEx2xk7/"
+  },
+  {
+    "id": "ocd-person/4ae40a76-8a57-40b1-b4cd-0218170e3ff8",
+    "name": "Jermaine Johnson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:sc/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jermaine",
+    "family_name": "Johnson",
+    "image": "https://scstatehouse.gov/images/members/0943181705.jpg",
+    "email": "jermainejohnson@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1985-07-04",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Richland County",
+      "Home Address Home Phone": "(803) 317-2192"
+    },
+    "created_at": "2020-12-16T06:15:49.842219+00:00",
+    "updated_at": "2026-01-28T02:12:59.383322+00:00",
+    "openstates_url": "https://openstates.org/person/jermaine-johnson-2HJe7ht7y7b3hLNA17QzZA/"
+  },
+  {
+    "id": "ocd-person/56f713aa-3887-4e45-996d-ca60006edd99",
+    "name": "Jerry Govan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:sc/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jerry",
+    "family_name": "Govan",
+    "image": "https://www.scstatehouse.gov/images/members/0702272643.jpg",
+    "email": "jerrygovan@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1958-03-17",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Orangeburg County",
+      "Home Address Home Phone": "(803) 531-1158"
+    },
+    "created_at": "2018-10-18T16:11:57.091429+00:00",
+    "updated_at": "2025-07-18T02:16:09.486042+00:00",
+    "openstates_url": "https://openstates.org/person/jerry-govan-2e6FmSLLlB2SsF1Nwk6TpR/"
+  },
+  {
+    "id": "ocd-person/35125937-cf55-4408-883f-6f81e45b0063",
+    "name": "Joe Bustos",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "112",
+      "division_id": "ocd-division/country:us/state:sc/sldl:112"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Bustos",
+    "image": "https://scstatehouse.gov/images/members/0278409057.jpg",
+    "email": "joebustos@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1950-09-12",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston County",
+      "Home Address Home Phone": "(843) 822-6363"
+    },
+    "created_at": "2020-12-16T06:15:52.843266+00:00",
+    "updated_at": "2025-07-18T02:17:13.234227+00:00",
+    "openstates_url": "https://openstates.org/person/joe-bustos-1c8yfoyjPQwjx5S3ud2ghn/"
+  },
+  {
+    "id": "ocd-person/e6db7b68-2d69-4585-816a-ad2c7ee9b1cc",
+    "name": "Joe White",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:sc/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "White",
+    "image": "https://scstatehouse.gov/images/members/1912499771.jpg",
+    "email": "joewhite@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1945-12-13",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lexington & Newberry Counties",
+      "Home Address Home Phone": "(803) 429-9423"
+    },
+    "created_at": "2023-02-14T05:13:51.083796+00:00",
+    "updated_at": "2026-01-28T02:12:41.053019+00:00",
+    "openstates_url": "https://openstates.org/person/joe-white-71cXP6FoVwaJfDgeqdU96q/"
+  },
+  {
+    "id": "ocd-person/12f4e61d-b847-4a7d-8029-613580ebfd9f",
+    "name": "John King",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:sc/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "King",
+    "image": "https://scstatehouse.gov/images/members/1002272607.jpg",
+    "email": "johnking@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1976-06-25",
+    "death_date": "",
+    "extras": {
+      "counties represented": "York County",
+      "Home Address Home Phone": "(803) 980-5454"
+    },
+    "created_at": "2018-10-18T16:11:57.399849+00:00",
+    "updated_at": "2025-07-18T02:16:29.089952+00:00",
+    "openstates_url": "https://openstates.org/person/john-king-ZlmQ8CUzdHyrIpp3JpHzT/"
+  },
+  {
+    "id": "ocd-person/708261ba-00bd-4cef-bd7e-bd80de59b101",
+    "name": "John Lastinger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:sc/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Lastinger",
+    "image": "",
+    "email": "johnlastinger@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1954-09-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:13:27.547798+00:00",
+    "updated_at": "2026-04-04T02:09:05.456519+00:00",
+    "openstates_url": "https://openstates.org/person/john-lastinger-3QIixqUDlZTCEoupQvfhAX/"
+  },
+  {
+    "id": "ocd-person/f946b369-cfbd-4cc5-84f2-4cc343beb03a",
+    "name": "John McCravy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:sc/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "McCravy",
+    "image": "https://scstatehouse.gov/images/members/1217045309.jpg",
+    "email": "johnmccravy@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1958-09-06",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenwood & Laurens Counties"
+    },
+    "created_at": "2018-10-18T16:11:57.318025+00:00",
+    "updated_at": "2025-07-18T02:16:57.734612+00:00",
+    "openstates_url": "https://openstates.org/person/john-mccravy-7aNOmnLI8xPCOvTik50bpy/"
+  },
+  {
+    "id": "ocd-person/ec3b270f-6396-440c-89c1-e42262d02477",
+    "name": "Jordan Pace",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "117",
+      "division_id": "ocd-division/country:us/state:sc/sldl:117"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Jordan",
+    "family_name": "Pace",
+    "image": "https://scstatehouse.gov/images/members/1433984204.jpg",
+    "email": "jordanpace@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley County",
+      "Home Address Home Phone": "(843) 300-7193"
+    },
+    "created_at": "2023-02-14T05:08:45.604295+00:00",
+    "updated_at": "2026-01-28T02:13:42.842904+00:00",
+    "openstates_url": "https://openstates.org/person/jordan-pace-7BlDlGKtN379yl33hrP9zb/"
+  },
+  {
+    "id": "ocd-person/6db09ea1-fe89-497a-8502-dce892c13fe8",
+    "name": "Josiah Magnuson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:sc/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Josiah",
+    "family_name": "Magnuson",
+    "image": "https://scstatehouse.gov/images/members/1130965774.jpg",
+    "email": "josiahmagnuson@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1991-08-17",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Spartanburg County",
+      "Columbia Address Cell Phone": "(864) 420-7933"
+    },
+    "created_at": "2018-10-18T16:11:58.013356+00:00",
+    "updated_at": "2026-01-28T02:13:27.286022+00:00",
+    "openstates_url": "https://openstates.org/person/josiah-magnuson-3KysV4ZiKhK5nE5E2uNyh6/"
+  },
+  {
+    "id": "ocd-person/88861a7f-ca46-4ed7-a053-0d463cca48e0",
+    "name": "Justin Bamberg",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:sc/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Bamberg",
+    "image": "https://scstatehouse.gov/images/members/0102840897.jpg",
+    "email": "justinbamberg@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1987-03-07",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Bamberg & Orangeburg Counties"
+    },
+    "created_at": "2018-10-18T16:11:58.082186+00:00",
+    "updated_at": "2025-07-18T02:16:42.961686+00:00",
+    "openstates_url": "https://openstates.org/person/justin-bamberg-49cF02f2ze222m0nVRC3PM/"
+  },
+  {
+    "id": "ocd-person/904331e5-36ae-43d5-8e3e-62a845c7965e",
+    "name": "Kambrell Garvin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:sc/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Kambrell",
+    "family_name": "Garvin",
+    "image": "https://scstatehouse.gov/images/members/0657954467.jpg",
+    "email": "kambrellgarvin@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1991-10-02",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Richland County",
+      "Home Address Home Phone": "(803) 470-3961"
+    },
+    "created_at": "2019-01-04T05:20:09.887758+00:00",
+    "updated_at": "2026-01-28T02:12:55.488495+00:00",
+    "openstates_url": "https://openstates.org/person/kambrell-garvin-4ODbOrgFTVj96NhA38mVPq/"
+  },
+  {
+    "id": "ocd-person/07274f31-3348-491d-af78-4eefad9d39c8",
+    "name": "Kathy Landing",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:sc/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Kathy",
+    "family_name": "Landing",
+    "image": "https://scstatehouse.gov/images/members/1066477145.jpg",
+    "email": "kathylanding@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1963-01-15",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston County"
+    },
+    "created_at": "2023-02-14T05:12:06.517772+00:00",
+    "updated_at": "2026-01-28T02:13:41.148565+00:00",
+    "openstates_url": "https://openstates.org/person/kathy-landing-DUuSlaGKZuKZvNzgnzQe8/"
+  },
+  {
+    "id": "ocd-person/d38909c5-fdcb-4230-8380-498f6f8cc510",
+    "name": "Keishan Scott",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:sc/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Keishan",
+    "family_name": "Scott",
+    "image": "",
+    "email": "",
+    "gender": "Male",
+    "birth_date": "2001-12-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-07-18T02:16:11.293429+00:00",
+    "updated_at": "2026-01-28T02:13:58.946236+00:00",
+    "openstates_url": "https://openstates.org/person/keishan-scott-6RA0THAgQPAIVOFrUBR14y/"
+  },
+  {
+    "id": "ocd-person/ad6c27e9-3571-477c-9d94-92127d0020e7",
+    "name": "Kevin Hardee",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "105",
+      "division_id": "ocd-division/country:us/state:sc/sldl:105"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Hardee",
+    "image": "https://scstatehouse.gov/images/members/0743749911.jpg",
+    "email": "kevinhardee@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-04-09",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Horry County",
+      "Home Address Home Phone": "(843) 455-3567"
+    },
+    "created_at": "2018-10-18T16:11:58.461383+00:00",
+    "updated_at": "2026-01-28T02:13:23.903785+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-hardee-5HF6CDsGlij3GfjutyNvUN/"
+  },
+  {
+    "id": "ocd-person/16296fb0-76bf-4e65-b7e6-5dc6abceb7b4",
+    "name": "Lee Gilreath",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:sc/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Lee",
+    "family_name": "Gilreath",
+    "image": "https://lirp.cdn-website.com/4c846247/dms3rep/multi/opt/_DSC0892-a9d9c1ff-1920w.jpg",
+    "email": "leegilreath@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1969-02-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:26:31.006425+00:00",
+    "updated_at": "2026-01-28T02:14:00.089870+00:00",
+    "openstates_url": "https://openstates.org/person/lee-gilreath-folalbVTXFox9nFLgnujs/"
+  },
+  {
+    "id": "ocd-person/eba98c82-1f71-45c1-951f-40076eb34a8b",
+    "name": "Lee Hewitt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "108",
+      "division_id": "ocd-division/country:us/state:sc/sldl:108"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Lee",
+    "family_name": "Hewitt",
+    "image": "https://scstatehouse.gov/images/members/0834658991.jpg",
+    "email": "leehewitt@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1960-08-29",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston & Georgetown Counties"
+    },
+    "created_at": "2018-10-18T16:11:58.915044+00:00",
+    "updated_at": "2025-07-18T02:16:07.368545+00:00",
+    "openstates_url": "https://openstates.org/person/lee-hewitt-7AggDKbExcrBZzR7eYb01L/"
+  },
+  {
+    "id": "ocd-person/a7665bc0-b03c-419e-976c-b3a25ebf358e",
+    "name": "Leon Howard",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:sc/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Leon",
+    "family_name": "Howard",
+    "image": "https://scstatehouse.gov/images/members/0879545349.jpg",
+    "email": "leonhoward@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Richland County"
+    },
+    "created_at": "2018-10-18T16:11:59.067687+00:00",
+    "updated_at": "2025-07-18T02:15:56.560133+00:00",
+    "openstates_url": "https://openstates.org/person/leon-howard-55sUmf63JTsKLUJDsOtn8I/"
+  },
+  {
+    "id": "ocd-person/3faa0b04-4277-4a07-ae78-bc9cb0d20e07",
+    "name": "Leon Stavrinakis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "119",
+      "division_id": "ocd-division/country:us/state:sc/sldl:119"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Leon",
+    "family_name": "Stavrinakis",
+    "image": "https://scstatehouse.gov/images/members/1747727063.jpg",
+    "email": "leonstavrinakis@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston County"
+    },
+    "created_at": "2018-10-18T16:11:59.148024+00:00",
+    "updated_at": "2025-07-18T02:16:43.480624+00:00",
+    "openstates_url": "https://openstates.org/person/leon-stavrinakis-1w8E2bQO6NSQuH5xrLlafH/"
+  },
+  {
+    "id": "ocd-person/a02e7674-1693-446b-8863-3d7df87a20fa",
+    "name": "Lonnie Hosey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:sc/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Lonnie",
+    "family_name": "Hosey",
+    "image": "https://scstatehouse.gov/images/members/0874999895.jpg",
+    "email": "onniehosey@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1946-12-01",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Allendale, Barnwell & Orangeburg Counties",
+      "Home Address Home Phone": "(803) 259-1178"
+    },
+    "created_at": "2018-10-18T16:11:59.304468+00:00",
+    "updated_at": "2025-07-18T02:16:51.184223+00:00",
+    "openstates_url": "https://openstates.org/person/lonnie-hosey-4sG0MQgMGpPT5EwKvRsglG/"
+  },
+  {
+    "id": "ocd-person/e3d0a679-af6a-4861-aac2-be366fda3210",
+    "name": "Lucas Atkinson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:sc/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Lucas",
+    "family_name": "Atkinson",
+    "image": "https://scstatehouse.gov/images/members/0066477265.jpg",
+    "email": "lucasatkinson@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1981-07-06",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Horry, Marion & Williamsburg Counties"
+    },
+    "created_at": "2018-10-18T16:11:59.381538+00:00",
+    "updated_at": "2025-07-18T02:16:36.793815+00:00",
+    "openstates_url": "https://openstates.org/person/lucas-atkinson-6vsbvHkJp0pMXiRbbQ9LLk/"
+  },
+  {
+    "id": "ocd-person/94b1b04a-1be7-4128-b7ac-0c3b299b7d53",
+    "name": "Luke Rankin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:sc/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Luke",
+    "family_name": "Rankin",
+    "image": "https://lirp.cdn-website.com/44a83ceb/dms3rep/multi/opt/P1011798-1920w.jpg",
+    "email": "lukerankin@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1997-08-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:26:58.400181+00:00",
+    "updated_at": "2025-07-18T02:16:40.904461+00:00",
+    "openstates_url": "https://openstates.org/person/luke-rankin-4Wa4Edp8NOzwxrx2x2OCjz/"
+  },
+  {
+    "id": "ocd-person/9d1ecabb-7f76-4f2e-9951-03599223ca4c",
+    "name": "Mark Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:sc/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Smith",
+    "image": "https://scstatehouse.gov/images/members/1724999793.jpg",
+    "email": "marksmith@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1970-06-18",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley County",
+      "Columbia Address Cell Phone": "(843) 442-8371"
+    },
+    "created_at": "2020-12-16T06:15:51.512540+00:00",
+    "updated_at": "2026-01-28T02:13:33.817243+00:00",
+    "openstates_url": "https://openstates.org/person/mark-smith-4mTrlqMb9pMjdLdSm2vbrA/"
+  },
+  {
+    "id": "ocd-person/45f11431-96b7-4bfe-85f5-ce986002a233",
+    "name": "Mark Willis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:sc/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Willis",
+    "image": "https://scstatehouse.gov/images/members/1942613404.jpg",
+    "email": "markwillis@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1963-08-01",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville & Laurens Counties",
+      "Home Address Home Phone": "(864) 862-6179"
+    },
+    "created_at": "2018-10-18T16:11:59.673037+00:00",
+    "updated_at": "2025-07-18T02:16:20.894722+00:00",
+    "openstates_url": "https://openstates.org/person/mark-willis-27ydvDuRmqpi0vxbCAEXsh/"
+  },
+  {
+    "id": "ocd-person/b3dcafed-7f7a-4b8b-8a5e-a517d768ed42",
+    "name": "Melissa Oremus",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:sc/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Melissa",
+    "family_name": "Oremus",
+    "image": "https://scstatehouse.gov/images/members/1432386192.jpg",
+    "email": "melissaoremus@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1978-11-17",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Aiken County"
+    },
+    "created_at": "2020-06-04T05:19:07.284054+00:00",
+    "updated_at": "2025-07-18T02:16:27.572742+00:00",
+    "openstates_url": "https://openstates.org/person/melissa-oremus-5TOToT17JcmgJxeE8lw4yA/"
+  },
+  {
+    "id": "ocd-person/32c6ccd9-4b56-4075-a99b-1882f4dd176d",
+    "name": "Micah Caskey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:sc/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Micah",
+    "family_name": "Caskey",
+    "image": "https://scstatehouse.gov/images/members/0329545415.jpg",
+    "email": "micahcaskey@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1981-06-02",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lexington County"
+    },
+    "created_at": "2018-10-18T16:12:00.207386+00:00",
+    "updated_at": "2025-07-18T02:16:35.793578+00:00",
+    "openstates_url": "https://openstates.org/person/micah-caskey-1XoT26i4u51y8Ztlh5qE2f/"
+  },
+  {
+    "id": "ocd-person/ebf046cf-233e-4c98-b78e-4cefbb07615b",
+    "name": "Michael Rivers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "121",
+      "division_id": "ocd-division/country:us/state:sc/sldl:121"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Rivers",
+    "image": "https://scstatehouse.gov/images/members/1564346404.jpg",
+    "email": "michaelrivers@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1958-10-16",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Beaufort & Colleton Counties",
+      "Columbia Address Cell Phone": "(843) 263-8467"
+    },
+    "created_at": "2018-10-18T16:12:00.433553+00:00",
+    "updated_at": "2026-01-28T02:13:34.974107+00:00",
+    "openstates_url": "https://openstates.org/person/michael-rivers-7BD0Df35JP6FFelnEYtt4V/"
+  },
+  {
+    "id": "ocd-person/6ffe4e57-021a-4424-bc36-b933c8e18477",
+    "name": "Mike Burns",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:sc/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Burns",
+    "image": "https://scstatehouse.gov/images/members/0257954515.jpg",
+    "email": "mikeburns@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1952-06-09",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville County",
+      "Columbia Address Cell Phone": "(864) 906-6949"
+    },
+    "created_at": "2018-10-18T16:11:56.774807+00:00",
+    "updated_at": "2026-01-28T02:13:53.374083+00:00",
+    "openstates_url": "https://openstates.org/person/mike-burns-3PKMihsx8TRRpD0TtuZhnb/"
+  },
+  {
+    "id": "ocd-person/31e694fa-e3e1-4df4-8ca7-4977dbf6e321",
+    "name": "Mike Neese",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:sc/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Neese",
+    "image": "https://scstatehouse.gov/images/members/1403977105.jpg",
+    "email": "mikeneese@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1969-10-22",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lancaster County",
+      "Home Address Home Phone": "(704) 497-7944"
+    },
+    "created_at": "2023-02-14T05:11:04.087830+00:00",
+    "updated_at": "2026-01-28T02:13:48.459165+00:00",
+    "openstates_url": "https://openstates.org/person/mike-neese-1WA012ESduZ8VUfJxoaMvR/"
+  },
+  {
+    "id": "ocd-person/bc549137-780f-4b77-9438-61a92d3dce48",
+    "name": "Murrell Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:sc/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Murrell",
+    "family_name": "Smith",
+    "image": "https://scstatehouse.gov/images/members/1703408887.jpg",
+    "email": "murrellsmith@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1968-05-15",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker",
+      "counties represented": "Sumter County"
+    },
+    "created_at": "2018-10-18T16:11:55.034590+00:00",
+    "updated_at": "2025-07-18T02:16:55.724528+00:00",
+    "openstates_url": "https://openstates.org/person/murrell-smith-5jNChJNYBDUbtyLTjQG9ai/"
+  },
+  {
+    "id": "ocd-person/129fde97-b4fa-4004-bfb9-f96169a7c0a5",
+    "name": "Nathan Ballentine",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:sc/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Nathan",
+    "family_name": "Ballentine",
+    "image": "https://scstatehouse.gov/images/members/0102272715.jpg",
+    "email": "nathanballentine@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1970-12-10",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lexington & Richland Counties",
+      "Home Address Home Phone": "(803) 834-4613"
+    },
+    "created_at": "2018-10-18T16:12:00.732851+00:00",
+    "updated_at": "2026-01-28T02:13:45.412538+00:00",
+    "openstates_url": "https://openstates.org/person/nathan-ballentine-Z8vBuGgKC8au7hIHFA08r/"
+  },
+  {
+    "id": "ocd-person/73b7f73e-705e-409a-b582-51060e573fd5",
+    "name": "Neal Collins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:sc/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Neal",
+    "family_name": "Collins",
+    "image": "https://scstatehouse.gov/images/members/0388636317.jpg",
+    "email": "nealcollins@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1982-07-06",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville & Pickens Counties"
+    },
+    "created_at": "2018-10-18T16:12:00.809407+00:00",
+    "updated_at": "2025-07-18T02:15:59.091964+00:00",
+    "openstates_url": "https://openstates.org/person/neal-collins-3WMBn9l4fSWeF3X1NfsLmX/"
+  },
+  {
+    "id": "ocd-person/08f0816c-5d19-47df-90fb-1249e3f50fae",
+    "name": "Patrick Haddon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:sc/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Haddon",
+    "image": "https://scstatehouse.gov/images/members/0733806731.jpg",
+    "email": "patrick@patrickhaddon.com",
+    "gender": "Male",
+    "birth_date": "1977-09-15",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville County"
+    },
+    "created_at": "2020-06-04T05:19:06.893926+00:00",
+    "updated_at": "2025-07-18T02:16:25.525660+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-haddon-GrqhGC5Ow9Uob58piIH8g/"
+  },
+  {
+    "id": "ocd-person/4774fe34-b398-48bb-98b8-4ce344781e6c",
+    "name": "Paul Wickensimer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:sc/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Wickensimer",
+    "image": "https://static.wixstatic.com/media/669915_0fcf6e9fdd9e484b959c5ec5b9c80ce2~mv2.jpg/v1/fill/w_489,h_982,al_l,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/669915_0fcf6e9fdd9e484b959c5ec5b9c80ce2~mv2.jpg",
+    "email": "paulwickensimer@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1952-06-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:27:48.659252+00:00",
+    "updated_at": "2026-01-28T02:13:13.364220+00:00",
+    "openstates_url": "https://openstates.org/person/paul-wickensimer-2Apv6wrEAUlzHVqKN6rgrM/"
+  },
+  {
+    "id": "ocd-person/ee278d2b-ce89-40bf-af2c-42ede04e3afd",
+    "name": "Paula Calhoon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:sc/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Paula",
+    "family_name": "Calhoon",
+    "image": "https://scstatehouse.gov/images/members/0293181783.jpg",
+    "email": "paulacalhoon@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1957-12-06",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lexington County",
+      "Home Address Home Phone": "(803) 359-4550"
+    },
+    "created_at": "2019-01-04T05:20:08.762508+00:00",
+    "updated_at": "2026-01-28T02:13:18.157198+00:00",
+    "openstates_url": "https://openstates.org/person/paula-calhoon-7FOFQiT0A9lwL6nkG2aYIP/"
+  },
+  {
+    "id": "ocd-person/30bbaf18-f705-40eb-a035-be01314f1b44",
+    "name": "Phillip Bowers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:sc/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Phillip",
+    "family_name": "Bowers",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Phillip_Bowers.PNG",
+    "email": "phillipbowers@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:26:00.589914+00:00",
+    "updated_at": "2026-01-28T02:12:33.099662+00:00",
+    "openstates_url": "https://openstates.org/person/phillip-bowers-1TxP165lt6W1omhJKNkL4u/"
+  },
+  {
+    "id": "ocd-person/92bc68c6-b20b-4eec-a315-b0d5495db8ec",
+    "name": "Phillip Lowe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:sc/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Phillip",
+    "family_name": "Lowe",
+    "image": "https://scstatehouse.gov/images/members/1125568047.jpg",
+    "email": "philliplowe@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1958-12-16",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Florence County"
+    },
+    "created_at": "2018-10-18T16:12:01.342916+00:00",
+    "updated_at": "2025-07-18T02:15:48.512400+00:00",
+    "openstates_url": "https://openstates.org/person/phillip-lowe-4Ssywjmxiyh10g8yZb08vE/"
+  },
+  {
+    "id": "ocd-person/e4ab57f5-cf10-42ea-9c31-a6a4cc1a8c29",
+    "name": "Randy Ligon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:sc/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Ligon",
+    "image": "https://scstatehouse.gov/images/members/1087499870.jpg",
+    "email": "randyligon@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Chester & York Counties",
+      "Home Address Home Phone": "(803) 377-1284"
+    },
+    "created_at": "2019-01-04T05:20:06.338673+00:00",
+    "updated_at": "2025-07-18T02:15:50.532446+00:00",
+    "openstates_url": "https://openstates.org/person/randy-ligon-6xUYOd3xIQYBNpizhphRjV/"
+  },
+  {
+    "id": "ocd-person/ebfb814e-0b47-4d8f-be94-63718f71a96c",
+    "name": "Richie Yow",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:sc/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Richie",
+    "family_name": "Yow",
+    "image": "https://scstatehouse.gov/images/members/1998863577.jpg",
+    "email": "richieyow@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1974-10-28",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Chesterfield, Darlington & Lancaster Counties"
+    },
+    "created_at": "2018-10-18T16:12:01.717201+00:00",
+    "updated_at": "2026-01-28T02:13:49.109385+00:00",
+    "openstates_url": "https://openstates.org/person/richie-yow-7BI8MuUPDNugZZd9lEwRrw/"
+  },
+  {
+    "id": "ocd-person/5bc3db4e-8055-4952-a217-1520e26c8929",
+    "name": "Rob Harris",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:sc/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Harris",
+    "image": "https://scstatehouse.gov/images/members/0764772636.jpg",
+    "email": "robharris@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-06-02",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Spartanburg County",
+      "Home Address Home Phone": "(610) 392-7358"
+    },
+    "created_at": "2023-02-14T05:13:15.368970+00:00",
+    "updated_at": "2026-01-28T02:12:40.002229+00:00",
+    "openstates_url": "https://openstates.org/person/rob-harris-2n9o7snoRBCR3EtzZEFGo5/"
+  },
+  {
+    "id": "ocd-person/ea7da5ce-c132-44b0-8b3c-33745f9d3e4b",
+    "name": "Robby Robbins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:sc/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Robby",
+    "family_name": "Robbins",
+    "image": "https://scstatehouse.gov/images/members/1565340722.jpg",
+    "email": "robertrobbins@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1962-05-05",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Colleton & Dorchester Counties"
+    },
+    "created_at": "2022-06-02T23:22:03.812646+00:00",
+    "updated_at": "2026-01-28T02:12:43.856520+00:00",
+    "openstates_url": "https://openstates.org/person/robby-robbins-78Tcn4BCt8UpCgF41H3OZP/"
+  },
+  {
+    "id": "ocd-person/82c25564-6f95-4fbc-96b8-2ab8a5954a4b",
+    "name": "Robert Reese",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:sc/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Reese",
+    "image": "https://i0.wp.com/robertreeseforsc70.com/wp-content/uploads/2024/05/Rob_Marketing_-08-removebg-preview.png?w=408&ssl=1",
+    "email": "robertreese@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1967-11-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:29:58.484327+00:00",
+    "updated_at": "2026-01-28T02:12:37.580066+00:00",
+    "openstates_url": "https://openstates.org/person/robert-reese-3yjoPvAY7vjcwgDLhoyGct/"
+  },
+  {
+    "id": "ocd-person/1b83cb36-84ea-44b1-b234-14ca1151c7a4",
+    "name": "Robert Williams",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:sc/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Williams",
+    "image": "https://scstatehouse.gov/images/members/1942045222.jpg",
+    "email": "robertwilliams@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1964-07-12",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Darlington & Florence Counties",
+      "Home Address Home Phone": "(843) 395-9408"
+    },
+    "created_at": "2018-10-18T16:12:02.019410+00:00",
+    "updated_at": "2025-07-18T02:16:08.988536+00:00",
+    "openstates_url": "https://openstates.org/person/robert-williams-pv1PVGfANn2dKQqipWowW/"
+  },
+  {
+    "id": "ocd-person/9aa18702-15a2-4281-926b-4e980f2e8aa0",
+    "name": "Roger Kirby",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "101",
+      "division_id": "ocd-division/country:us/state:sc/sldl:101"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Roger",
+    "family_name": "Kirby",
+    "image": "https://scstatehouse.gov/images/members/1006818061.jpg",
+    "email": "rogerkirby@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1960-04-20",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley, Florence & Williamsburg Counties"
+    },
+    "created_at": "2018-10-18T16:12:02.097273+00:00",
+    "updated_at": "2026-01-28T02:12:37.847979+00:00",
+    "openstates_url": "https://openstates.org/person/roger-kirby-4hmdSz8yUfX0Xnkqv2cSky/"
+  },
+  {
+    "id": "ocd-person/6a6c75f2-f3be-4764-9b7d-04b13c28b4aa",
+    "name": "Rosalyn Henderson-Myers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:sc/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Rosalyn",
+    "family_name": "Henderson-Myers",
+    "image": "https://scstatehouse.gov/images/members/0824999901.jpg",
+    "email": "rosalynhenderson-myers@schouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Spartanburg County",
+      "Home Address Home Phone": "(864) 707-5384",
+      "Columbia Address Cell Phone": "(864) 973-7595"
+    },
+    "created_at": "2018-10-18T16:12:02.404870+00:00",
+    "updated_at": "2026-04-09T08:07:37.273976+00:00",
+    "openstates_url": "https://openstates.org/person/rosalyn-henderson-myers-3EokhtxrqMwH0WH7ZlqhJq/"
+  },
+  {
+    "id": "ocd-person/68934441-84b3-48c7-b8a5-a694744f9e3b",
+    "name": "Ryan McCabe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:sc/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "McCabe",
+    "image": "https://scstatehouse.gov/images/members/1206818037.jpg",
+    "email": "ryanmccabe@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1973-04-09",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Lexington County",
+      "Home Address Home Phone": "(803) 530-3084"
+    },
+    "created_at": "2020-12-16T06:15:51.926846+00:00",
+    "updated_at": "2025-07-18T02:15:51.476240+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-mccabe-3BKVBh2pv5FemlapG5QO2V/"
+  },
+  {
+    "id": "ocd-person/60078bba-44b1-4606-9943-470d3b3ffbb2",
+    "name": "Sarita Edgerton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:sc/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Sarita",
+    "family_name": "Edgerton",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/SaritaEdgerton2024.jpeg",
+    "email": "saritaedgerton@schouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:27:09.794595+00:00",
+    "updated_at": "2026-01-28T02:13:55.688611+00:00",
+    "openstates_url": "https://openstates.org/person/sarita-edgerton-2vCi8IRYdIZF3MlLFtB4Ve/"
+  },
+  {
+    "id": "ocd-person/afbbce75-a054-458a-ad5f-95ac385510f2",
+    "name": "Scott Montgomery",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:sc/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Montgomery",
+    "image": "https://static.wixstatic.com/media/78a712_6c314e5806da4a328efc91387de831c7~mv2.jpg/v1/fill/w_321,h_446,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/DSC_6157-Edit.jpg",
+    "email": "scottmontgomery@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1975-05-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:27:31.594919+00:00",
+    "updated_at": "2025-07-18T02:16:06.828054+00:00",
+    "openstates_url": "https://openstates.org/person/scott-montgomery-5LbU4R22bK4VRzZnTtAu3O/"
+  },
+  {
+    "id": "ocd-person/6f3e5d6a-0e85-4af0-9711-1eaa7e3da981",
+    "name": "Seth Rose",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:sc/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Seth",
+    "family_name": "Rose",
+    "image": "https://scstatehouse.gov/images/members/1584090719.jpg",
+    "email": "sethrose@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1980-12-26",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Richland County",
+      "Home Address Home Phone": "(803) 361-2360"
+    },
+    "created_at": "2019-01-04T05:20:04.951789+00:00",
+    "updated_at": "2026-01-28T02:13:37.083316+00:00",
+    "openstates_url": "https://openstates.org/person/seth-rose-3NueFGs6bDz1kEYZbn6kJl/"
+  },
+  {
+    "id": "ocd-person/2bc4de0d-45ee-4cb7-8fda-f0a54a9a7492",
+    "name": "Shannon Erickson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "124",
+      "division_id": "ocd-division/country:us/state:sc/sldl:124"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Shannon",
+    "family_name": "Erickson",
+    "image": "https://scstatehouse.gov/images/members/0539772663.jpg",
+    "email": "shannonerickson@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1963-04-21",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Beaufort County"
+    },
+    "created_at": "2018-10-18T16:12:03.084368+00:00",
+    "updated_at": "2026-01-28T02:13:12.685586+00:00",
+    "openstates_url": "https://openstates.org/person/shannon-erickson-1KadbCGgvu6WmGV9mQ5jF4/"
+  },
+  {
+    "id": "ocd-person/a0512457-cf73-4c3a-8190-d381a90af2d8",
+    "name": "Spencer Wetmore",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "115",
+      "division_id": "ocd-division/country:us/state:sc/sldl:115"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Spencer",
+    "family_name": "Wetmore",
+    "image": "https://scstatehouse.gov/images/members/1905681590.jpg",
+    "email": "spencerwetmore@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1983-04-22",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston County",
+      "Columbia Address Cell Phone": "(843) 693-8292"
+    },
+    "created_at": "2020-09-10T00:03:30.584529+00:00",
+    "updated_at": "2026-01-28T02:13:11.471479+00:00",
+    "openstates_url": "https://openstates.org/person/spencer-wetmore-4sVqxvTqw76lM1SifnibqS/"
+  },
+  {
+    "id": "ocd-person/c706a635-007e-45fa-90c1-0961d0e4cd2f",
+    "name": "Stephen Frank",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:sc/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Stephen",
+    "family_name": "Frank",
+    "image": "https://votestephenfrank.com/wp-content/uploads/2024/05/430804199_10168719229715314_3862493250670651338_n.jpg",
+    "email": "stephenfrank@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1987-11-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T22:28:40.104650+00:00",
+    "updated_at": "2025-07-18T02:16:56.231502+00:00",
+    "openstates_url": "https://openstates.org/person/stephen-frank-63YVjIXsMety3hAsxdxbvL/"
+  },
+  {
+    "id": "ocd-person/72f330b5-9ae0-40e6-b1d2-0ab6725cccf2",
+    "name": "Steven Long",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:sc/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Steven",
+    "family_name": "Long",
+    "image": "https://scstatehouse.gov/images/members/1120454411.jpg",
+    "email": "stevenlong@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1994-04-14",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Spartanburg County",
+      "Columbia Address Cell Phone": "(864) 978-3104"
+    },
+    "created_at": "2018-10-18T16:12:03.236652+00:00",
+    "updated_at": "2026-01-28T02:13:32.755668+00:00",
+    "openstates_url": "https://openstates.org/person/steven-long-3UuGL3C9CmIJto8d5YFC42/"
+  },
+  {
+    "id": "ocd-person/36dea3e2-2ea8-47e8-84df-cfc4a28073e7",
+    "name": "Sylleste Davis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:sc/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Sylleste",
+    "family_name": "Davis",
+    "image": "https://scstatehouse.gov/images/members/0456249946.jpg",
+    "email": "syllestedavis@schouse.gov",
+    "gender": "Female",
+    "birth_date": "1961-10-12",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Berkeley County",
+      "Home Address Home Phone": "(843) 729-9243"
+    },
+    "created_at": "2018-10-18T16:12:03.308279+00:00",
+    "updated_at": "2026-01-28T02:13:46.299148+00:00",
+    "openstates_url": "https://openstates.org/person/sylleste-davis-1fXKc7uBJuGSIQLxATTsXf/"
+  },
+  {
+    "id": "ocd-person/ae65876e-c27c-49ff-a49f-d58bcbbd4bd5",
+    "name": "Terry Alexander",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:sc/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Alexander",
+    "image": "https://scstatehouse.gov/images/members/0011363635.jpg",
+    "email": "terryalexander@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1955-01-23",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Florence County",
+      "Home Address Home Phone": "(843) 665-7321"
+    },
+    "created_at": "2018-10-18T16:12:03.384767+00:00",
+    "updated_at": "2026-01-28T02:13:57.039788+00:00",
+    "openstates_url": "https://openstates.org/person/terry-alexander-5J53xDqp4QDGD120cTjvDZ/"
+  },
+  {
+    "id": "ocd-person/2ac35060-d236-438e-a3ec-6ad2be0f53c6",
+    "name": "Thomas Beach",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:sc/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Thomas",
+    "family_name": "Beach",
+    "image": "https://scstatehouse.gov/images/members/0129545439.jpg",
+    "email": "thomasbeach@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1974-12-03",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Anderson, Greenville & Pickens Counties",
+      "Home Address Home Phone": "(864) 448-6336"
+    },
+    "created_at": "2023-02-14T05:10:51.919019+00:00",
+    "updated_at": "2025-07-18T02:15:54.543904+00:00",
+    "openstates_url": "https://openstates.org/person/thomas-beach-1Igw3n9pqbi61ljKFQviRK/"
+  },
+  {
+    "id": "ocd-person/e7352f8b-8faf-42e3-8216-b480056968c0",
+    "name": "Tiffany Spann-Wilder",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "109",
+      "division_id": "ocd-division/country:us/state:sc/sldl:109"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tiffany",
+    "family_name": "Spann-Wilder",
+    "image": "",
+    "email": "tiffanyspannwilder@schouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-03T00:02:30.104330+00:00",
+    "updated_at": "2026-01-28T02:13:14.384883+00:00",
+    "openstates_url": "https://openstates.org/person/tiffany-spann-wilder-72HX4gbFmk5FTw3nA7oWOG/"
+  },
+  {
+    "id": "ocd-person/023895b1-aeb4-410a-84d0-0059b3f10ee3",
+    "name": "Tim McGinnis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:sc/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "McGinnis",
+    "image": "https://scstatehouse.gov/images/members/1256818031.jpg",
+    "email": "timmcginnis@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1971-07-04",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Horry County",
+      "Columbia Address Cell Phone": "(843) 798-7440"
+    },
+    "created_at": "2018-10-18T16:12:03.694849+00:00",
+    "updated_at": "2025-07-18T02:16:41.945575+00:00",
+    "openstates_url": "https://openstates.org/person/tim-mcginnis-4BqK9lK5QSa2L7SRZY5VD/"
+  },
+  {
+    "id": "ocd-person/ad25d5ef-8d4f-425f-9dbd-0b018f1771cc",
+    "name": "Todd Rutherford",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:sc/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Rutherford",
+    "image": "https://scstatehouse.gov/images/members/1614772534.jpg",
+    "email": "toddrutherford@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1970-10-10",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Leader",
+      "counties represented": "Richland County",
+      "Home Address Home Phone": "(803) 799-8633"
+    },
+    "created_at": "2018-10-18T16:11:56.455679+00:00",
+    "updated_at": "2025-07-18T02:17:04.690483+00:00",
+    "openstates_url": "https://openstates.org/person/todd-rutherford-5GixjnAPKcwEpAPrarAPbo/"
+  },
+  {
+    "id": "ocd-person/3635c44f-6b49-4e42-bbd7-10dac688f92f",
+    "name": "Tom Hartnett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "110",
+      "division_id": "ocd-division/country:us/state:sc/sldl:110"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Hartnett",
+    "image": "https://scstatehouse.gov/images/members/0774999907.jpg",
+    "email": "tomhartnett@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1971-02-11",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston County",
+      "Home Address Home Phone": "(843) 270-2915"
+    },
+    "created_at": "2023-02-14T05:14:10.840961+00:00",
+    "updated_at": "2026-01-28T02:13:22.692586+00:00",
+    "openstates_url": "https://openstates.org/person/tom-hartnett-1eI9kA6VxacgRKzG4zfjKR/"
+  },
+  {
+    "id": "ocd-person/7a31b7ee-6b6c-487b-bc69-c3c323357c05",
+    "name": "Tommy Pope",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:sc/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Tommy",
+    "family_name": "Pope",
+    "image": "https://scstatehouse.gov/images/members/1484090731.jpg",
+    "email": "tommypope@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1962-07-24",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker Pro Tempore",
+      "counties represented": "York County",
+      "Columbia Address Cell Phone": "(803) 984-6616"
+    },
+    "created_at": "2018-10-18T16:12:03.616930+00:00",
+    "updated_at": "2026-01-28T02:13:56.378628+00:00",
+    "openstates_url": "https://openstates.org/person/tommy-pope-3iZmghSkJYVGNmg5TQ5sfd/"
+  },
+  {
+    "id": "ocd-person/3b778652-2293-4f1d-ae0c-7d2308cbe9af",
+    "name": "Travis Moore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:sc/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Travis",
+    "family_name": "Moore",
+    "image": "https://scstatehouse.gov/images/members/1365908927.jpg",
+    "email": "travismoore@schouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Spartanburg County",
+      "Home Address Home Phone": "(864) 680-0441"
+    },
+    "created_at": "2020-12-16T06:15:51.846069+00:00",
+    "updated_at": "2026-01-28T02:13:28.881165+00:00",
+    "openstates_url": "https://openstates.org/person/travis-moore-1oDAYMEWeK165RHUEVuKSd/"
+  },
+  {
+    "id": "ocd-person/f8956197-cf73-4a14-927d-c3a0f62cff4c",
+    "name": "Val Guest",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "106",
+      "division_id": "ocd-division/country:us/state:sc/sldl:106"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Val",
+    "family_name": "Guest",
+    "image": "https://scstatehouse.gov/images/members/0730113549.jpg",
+    "email": "valguest@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1960-04-07",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Horry County",
+      "Home Address Home Phone": "(843) 222-4131"
+    },
+    "created_at": "2023-02-14T05:10:35.425166+00:00",
+    "updated_at": "2025-07-18T02:16:01.121878+00:00",
+    "openstates_url": "https://openstates.org/person/val-guest-7Z4Mb95yzm28njVUOboI9M/"
+  },
+  {
+    "id": "ocd-person/7d11e90b-a028-4947-89d1-ac0788530446",
+    "name": "Wendell Gilliard",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "111",
+      "division_id": "ocd-division/country:us/state:sc/sldl:111"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Wendell",
+    "family_name": "Gilliard",
+    "image": "https://scstatehouse.gov/images/members/0675568101.jpg",
+    "email": "wendellgilliard@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1954-07-01",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Charleston County",
+      "Home Address Home Phone": "(843) 402-9710"
+    },
+    "created_at": "2018-10-18T16:12:04.400082+00:00",
+    "updated_at": "2025-07-18T02:15:59.596521+00:00",
+    "openstates_url": "https://openstates.org/person/wendell-gilliard-3o0E0QkOvyw8bpoTrluTjS/"
+  },
+  {
+    "id": "ocd-person/7a7e6769-eee4-4bb5-8246-a6463457f342",
+    "name": "Wendell Jones",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:sc/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Wendell",
+    "family_name": "Jones",
+    "image": "https://scstatehouse.gov/images/members/0953408977.jpg",
+    "email": "wendelljones@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1971-03-12",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Greenville County",
+      "Home Address Home Phone": "(864) 704-3306"
+    },
+    "created_at": "2023-02-14T05:14:04.797130+00:00",
+    "updated_at": "2026-01-28T02:13:43.480497+00:00",
+    "openstates_url": "https://openstates.org/person/wendell-jones-3j8pV4OmumVvb2LHIVXJR4/"
+  },
+  {
+    "id": "ocd-person/eba4b1a4-14ca-44dd-93ab-25cdd3cbd5fd",
+    "name": "Weston Newton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "120",
+      "division_id": "ocd-division/country:us/state:sc/sldl:120"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "Weston",
+    "family_name": "Newton",
+    "image": "https://scstatehouse.gov/images/members/1418749830.jpg",
+    "email": "westonnewton@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1967-02-22",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Beaufort & Jasper Counties",
+      "Home Address Home Phone": "(843) 706-3880"
+    },
+    "created_at": "2018-10-18T16:12:05.479795+00:00",
+    "updated_at": "2025-07-18T02:16:08.480263+00:00",
+    "openstates_url": "https://openstates.org/person/weston-newton-7AeSeZpR5k8PcccY6AU6Un/"
+  },
+  {
+    "id": "ocd-person/40032da4-e72a-445f-b2df-7975724e64bb",
+    "name": "William Bailey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "104",
+      "division_id": "ocd-division/country:us/state:sc/sldl:104"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:sc/government",
+      "name": "South Carolina",
+      "classification": "state"
+    },
+    "given_name": "William",
+    "family_name": "Bailey",
+    "image": "https://scstatehouse.gov/images/members/0088636353.jpg",
+    "email": "williambailey@schouse.gov",
+    "gender": "Male",
+    "birth_date": "1962-12-04",
+    "death_date": "",
+    "extras": {
+      "counties represented": "Horry County",
+      "Home Address Home Phone": "(843) 458-0844"
+    },
+    "created_at": "2019-01-04T05:20:12.792764+00:00",
+    "updated_at": "2026-01-28T02:13:47.166008+00:00",
+    "openstates_url": "https://openstates.org/person/william-bailey-1wmxbffk4b136g00lpmE2t/"
+  }
+]

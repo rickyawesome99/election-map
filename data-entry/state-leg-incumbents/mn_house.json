@@ -1,0 +1,3620 @@
+[
+  {
+    "id": "ocd-person/09493dc0-a224-4cf6-a859-1384ffeda8a0",
+    "name": "Aisha Gomez",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:62a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Aisha",
+    "family_name": "Gomez",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/62A.gif?v=112221",
+    "email": "rep.aisha.gomez@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1981-07-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:47:42.513395+00:00",
+    "updated_at": "2026-01-30T19:06:56.792071+00:00",
+    "openstates_url": "https://openstates.org/person/aisha-gomez-HWOwLDPm2QTeyZT2LRbP6/"
+  },
+  {
+    "id": "ocd-person/1a50d8e6-64c4-4c8f-87ee-dedde17c1c2c",
+    "name": "Alex Falconer",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:49a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Falconer",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/49A.gif?v=112221",
+    "email": "rep.alex.falconer@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1980-08-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:34:32.500627+00:00",
+    "updated_at": "2026-01-30T19:06:43.329542+00:00",
+    "openstates_url": "https://openstates.org/person/alex-falconer-nekMYvrItsHdIAzjidaYu/"
+  },
+  {
+    "id": "ocd-person/bba68b5b-90ac-4465-bdd2-fdf23c33b87a",
+    "name": "Andrew Myers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:45a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Myers",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/45A.gif?v=112221",
+    "email": "rep.andrew.myers@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1979-05-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:18.453755+00:00",
+    "updated_at": "2026-01-30T19:06:36.601338+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-myers-5i5fv3lxXcvln989TYAGz4/"
+  },
+  {
+    "id": "ocd-person/41cf59c9-a2c3-442d-85f1-7d6ec8de1a97",
+    "name": "Andy Smith",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:25b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Andy",
+    "family_name": "Smith",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/25B.gif?v=112221",
+    "email": "rep.andy.smith@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1991-05-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:18.311856+00:00",
+    "updated_at": "2026-01-30T19:05:22.779550+00:00",
+    "openstates_url": "https://openstates.org/person/andy-smith-20BGAWskqxYqyKojsnnuNT/"
+  },
+  {
+    "id": "ocd-person/8c85da58-235b-4769-be5f-dcf5b7c66c75",
+    "name": "Anquam Mahamoud",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:62b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Anquam",
+    "family_name": "Mahamoud",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/62B.gif?v=112221",
+    "email": "rep.anquam.mahamoud@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:33:24.882130+00:00",
+    "updated_at": "2026-01-30T19:05:18.313653+00:00",
+    "openstates_url": "https://openstates.org/person/anquam-mahamoud-4HA5zow7RhSYQIpWm2FF0H/"
+  },
+  {
+    "id": "ocd-person/9f56bc31-f522-4e29-af62-cdc616babc88",
+    "name": "Athena Hollins",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:66b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Athena",
+    "family_name": "Hollins",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/66B.gif?v=112221",
+    "email": "rep.athena.hollins@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1983-10-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:22.911208+00:00",
+    "updated_at": "2026-01-30T19:05:13.082101+00:00",
+    "openstates_url": "https://openstates.org/person/athena-hollins-4qfPv1GIIsyl6icXsG5v9U/"
+  },
+  {
+    "id": "ocd-person/f8d52f8b-1b8c-454d-87be-42edd3100511",
+    "name": "Ben Bakeberg",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:54b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Bakeberg",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/54B.gif?v=112221",
+    "email": "rep.ben.bakeberg@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1978-07-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:45.046902+00:00",
+    "updated_at": "2026-04-04T01:11:55.155829+00:00",
+    "openstates_url": "https://openstates.org/person/ben-bakeberg-7ZXWRK7E7YVtsY3vEvWDgX/"
+  },
+  {
+    "id": "ocd-person/f5597924-50c0-4bfc-bd63-3d3b814274f8",
+    "name": "Ben Davis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:6a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Davis",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/06A.gif?v=112221",
+    "email": "rep.ben.davis@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1977-05-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:34.986737+00:00",
+    "updated_at": "2026-01-30T19:06:36.172037+00:00",
+    "openstates_url": "https://openstates.org/person/ben-davis-7Sy0aS6NCOzL14klSy7GrQ/"
+  },
+  {
+    "id": "ocd-person/354e366b-b9b5-46b4-b9ce-f3d96f508ceb",
+    "name": "Bernie Perryman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:14a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Bernie",
+    "family_name": "Perryman",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/14A.gif?v=112221",
+    "email": "rep.bernie.perryman@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1959-01-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:24.564938+00:00",
+    "updated_at": "2026-01-30T19:06:50.854507+00:00",
+    "openstates_url": "https://openstates.org/person/bernie-perryman-1caKroOeIP7edJt6eynHh5/"
+  },
+  {
+    "id": "ocd-person/971431ad-1fdb-49e5-9cf0-57cfff1645a8",
+    "name": "Bianca Virnig",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:52b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Bianca",
+    "family_name": "Virnig",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/52B.gif?v=112221",
+    "email": "rep.bianca.virnig@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-02-12T19:29:48.837621+00:00",
+    "updated_at": "2026-01-30T19:06:45.935724+00:00",
+    "openstates_url": "https://openstates.org/person/bianca-virnig-4b54LOBfrPWqiDM1kxVSrg/"
+  },
+  {
+    "id": "ocd-person/8a84172a-6b96-4b28-a9ab-bf11625528a3",
+    "name": "Bidal Duran",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:2a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Bidal",
+    "family_name": "Duran",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/02A.gif?v=112221",
+    "email": "rep.bidal.duran@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1985-07-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:33:09.790833+00:00",
+    "updated_at": "2026-06-04T07:12:19.376927+00:00",
+    "openstates_url": "https://openstates.org/person/bidal-duran-4DNJ0kdFAekDTAxu6iqNQR/"
+  },
+  {
+    "id": "ocd-person/ad3245d1-b310-4d50-8290-e642d078f661",
+    "name": "Bjorn Olson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:22a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Bjorn",
+    "family_name": "Olson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/22A.gif?v=112221",
+    "email": "rep.bjorn.olson@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1991-01-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:22.731959+00:00",
+    "updated_at": "2026-01-30T19:06:11.994727+00:00",
+    "openstates_url": "https://openstates.org/person/bjorn-olson-5Goe86nSYHyl1dy0FzVTvd/"
+  },
+  {
+    "id": "ocd-person/fe6a11bc-199d-467e-9447-3999c8250490",
+    "name": "Bobbie Harder",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:17b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Bobbie",
+    "family_name": "Harder",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/17B.gif?v=112221",
+    "email": "rep.bobbie.harder@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:18.898653+00:00",
+    "updated_at": "2026-01-30T19:05:20.646827+00:00",
+    "openstates_url": "https://openstates.org/person/bobbie-harder-7k4WXWJQwteImJ1Gc3KhdY/"
+  },
+  {
+    "id": "ocd-person/05f634e6-f8d3-4983-9604-dfc8dddc574e",
+    "name": "Brad Tabke",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:54a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Tabke",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/54A.gif?v=112221",
+    "email": "rep.brad.tabke@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1979-05-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:27.095671+00:00",
+    "updated_at": "2026-01-30T19:06:17.356836+00:00",
+    "openstates_url": "https://openstates.org/person/brad-tabke-BFTevIGaRJhqSly6x5UEg/"
+  },
+  {
+    "id": "ocd-person/372ff500-488c-4bf6-9557-6b5824c6e193",
+    "name": "Brion Curran",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:36b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Brion",
+    "family_name": "Curran",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/36B.gif?v=112221",
+    "email": "rep.brion.curran@house.mn.gov",
+    "gender": "X",
+    "birth_date": "1985-05-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:39.044624+00:00",
+    "updated_at": "2026-01-30T19:05:13.336875+00:00",
+    "openstates_url": "https://openstates.org/person/brion-curran-1g8UeVvnV3PnZWYIMmMydX/"
+  },
+  {
+    "id": "ocd-person/b135d3fd-c3cd-4bb5-a0b8-eefef669aada",
+    "name": "Bryan Lawrence",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:27b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Bryan",
+    "family_name": "Lawrence",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/27B.gif?v=112221",
+    "email": "rep.bryan.lawrence@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1970-06-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-06-03T19:47:40.901975+00:00",
+    "updated_at": "2026-01-30T19:05:15.409281+00:00",
+    "openstates_url": "https://openstates.org/person/bryan-lawrence-5OOExsJKUDWJnnOBgeIEoM/"
+  },
+  {
+    "id": "ocd-person/0fcdf023-48a4-4f62-92d0-0be6715bf229",
+    "name": "Cal Warwas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:7b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Cal",
+    "family_name": "Warwas",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/07B.gif?v=112221",
+    "email": "rep.cal.warwas@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1976-09-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:33:07.233091+00:00",
+    "updated_at": "2026-01-30T19:05:38.760301+00:00",
+    "openstates_url": "https://openstates.org/person/cal-warwas-TozvaFh2e0WRo8T6q3eSP/"
+  },
+  {
+    "id": "ocd-person/bfa93ce5-99ed-4840-9d49-c3531a6e7742",
+    "name": "Carlie Kotyza-Witthuhn",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:49b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Carlie",
+    "family_name": "Kotyza-Witthuhn",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/49B.gif?v=112221",
+    "email": "rep.carlie.kotyza-witthuhn@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:47:41.079408+00:00",
+    "updated_at": "2026-01-30T19:05:08.435140+00:00",
+    "openstates_url": "https://openstates.org/person/carlie-kotyza-witthuhn-5pesKo95yOvUE4C0lciFak/"
+  },
+  {
+    "id": "ocd-person/31bf14e3-fcde-4b2f-b2c4-1dd47b9a260b",
+    "name": "Cedrick Frazier",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:43a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Cedrick",
+    "family_name": "Frazier",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/43A.gif?v=112221",
+    "email": "rep.cedrick.frazier@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1979-04-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:31.930015+00:00",
+    "updated_at": "2026-01-30T19:06:20.102404+00:00",
+    "openstates_url": "https://openstates.org/person/cedrick-frazier-1VrwoGFnD0hC05hhw7iSEd/"
+  },
+  {
+    "id": "ocd-person/ec1171fd-3b90-4137-b01d-041f905c642d",
+    "name": "Cheryl Youakim",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:46b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Cheryl",
+    "family_name": "Youakim",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/46B.gif?v=112221",
+    "email": "rep.cheryl.youakim@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1969-05-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:28.921486+00:00",
+    "updated_at": "2026-01-30T19:06:02.922282+00:00",
+    "openstates_url": "https://openstates.org/person/cheryl-youakim-7BSA1UmrVtqASGFrT8BQQn/"
+  },
+  {
+    "id": "ocd-person/d9abe93e-6eba-4658-a0cd-68610585606b",
+    "name": "Chris Swedzinski",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:15a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Swedzinski",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/15A.gif?v=112221",
+    "email": "rep.chris.swedzinski@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1978-05-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:21.091119+00:00",
+    "updated_at": "2026-01-30T19:05:18.567003+00:00",
+    "openstates_url": "https://openstates.org/person/chris-swedzinski-6cjti2CxTLhpi2M2HCe3Qp/"
+  },
+  {
+    "id": "ocd-person/57755948-5912-49c5-b8b7-65c110ae44d9",
+    "name": "Dan Wolgamott",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:14b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Wolgamott",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/14B.gif?v=112221",
+    "email": "rep.dan.wolgamott@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1990-10-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:47:14.715361+00:00",
+    "updated_at": "2026-01-30T19:05:49.671387+00:00",
+    "openstates_url": "https://openstates.org/person/dan-wolgamott-2f1xa0iAAiXm0NAG8lU5aD/"
+  },
+  {
+    "id": "ocd-person/04242ba4-8fb4-4306-98d2-cae358d8e532",
+    "name": "Danny Nadeau",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:34a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Nadeau",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/34A.gif?v=112221",
+    "email": "rep.danny.nadeau@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1965-05-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:42.230946+00:00",
+    "updated_at": "2026-01-30T19:05:37.997243+00:00",
+    "openstates_url": "https://openstates.org/person/danny-nadeau-7oUxARgiUg8UhdRBp1ngw/"
+  },
+  {
+    "id": "ocd-person/c0275aeb-e2ff-44c7-b4ab-cae4bf495d84",
+    "name": "Dave Baker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:16b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Baker",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/16B.gif?v=112221",
+    "email": "rep.dave.baker@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1962-03-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:20.295339+00:00",
+    "updated_at": "2026-01-30T19:06:33.190364+00:00",
+    "openstates_url": "https://openstates.org/person/dave-baker-5qaVkfSeKJYwwvRh9GTJnY/"
+  },
+  {
+    "id": "ocd-person/a8c6c773-371b-4df9-a57a-5d2565c7b876",
+    "name": "Dave Pinto",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:64b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Pinto",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/64B.gif?v=112221",
+    "email": "rep.dave.pinto@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1972-04-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:43.563660+00:00",
+    "updated_at": "2026-01-30T19:05:26.567923+00:00",
+    "openstates_url": "https://openstates.org/person/dave-pinto-58TYIduSSbH2IoZioQdFZO/"
+  },
+  {
+    "id": "ocd-person/0d187b4d-c15c-487e-9602-541bd7dd948a",
+    "name": "David Gottfried",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:40b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Gottfried",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/40B.gif?v=112221",
+    "email": "rep.david.gottfried@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-03-29T01:09:31.310604+00:00",
+    "updated_at": "2026-01-30T19:06:56.365511+00:00",
+    "openstates_url": "https://openstates.org/person/david-gottfried-Oi5TnqIKh8fwmAoK8IgCA/"
+  },
+  {
+    "id": "ocd-person/f4047f6d-971d-41be-bbce-e15dac5829ae",
+    "name": "Dawn Gillman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:17a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Dawn",
+    "family_name": "Gillman",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/17A.gif?v=112221",
+    "email": "rep.dawn.gillman@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1973-10-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:21.431849+00:00",
+    "updated_at": "2026-01-30T19:05:06.119976+00:00",
+    "openstates_url": "https://openstates.org/person/dawn-gillman-7QSBMUGHO6YyPQFZtPlA0E/"
+  },
+  {
+    "id": "ocd-person/7eb10c5c-1b6e-4ee2-9dac-589e3db32f49",
+    "name": "Drew Roach",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:58b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Drew",
+    "family_name": "Roach",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/58B.gif?v=112221",
+    "email": "rep.drew.roach@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1985-01-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:34:58.731168+00:00",
+    "updated_at": "2026-01-30T19:05:10.141177+00:00",
+    "openstates_url": "https://openstates.org/person/drew-roach-3r3wYcYpW21mwpnTRwnnnl/"
+  },
+  {
+    "id": "ocd-person/6652aa40-32c5-4430-bbf6-707a0b8a1f56",
+    "name": "Duane Quam",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:24a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Duane",
+    "family_name": "Quam",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/24A.gif?v=112221",
+    "email": "rep.duane.quam@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1960-07-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:35.505849+00:00",
+    "updated_at": "2026-01-30T19:05:51.529677+00:00",
+    "openstates_url": "https://openstates.org/person/duane-quam-374ziFVi4RyVRPuBKDRHFu/"
+  },
+  {
+    "id": "ocd-person/f27e2742-5c0f-4dba-a37f-76592f91f6f0",
+    "name": "Elliott Engen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:36a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Elliott",
+    "family_name": "Engen",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/36A.gif?v=112221",
+    "email": "rep.elliott.engen@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1998-10-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:43.082778+00:00",
+    "updated_at": "2026-01-30T19:05:47.104494+00:00",
+    "openstates_url": "https://openstates.org/person/elliott-engen-7NZnJQJGX9DpndUHsTKKOW/"
+  },
+  {
+    "id": "ocd-person/f38e8115-610c-4e22-b9cb-80bd96311410",
+    "name": "Emma Greenman",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:63b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Emma",
+    "family_name": "Greenman",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/63B.gif?v=112221",
+    "email": "rep.emma.greenman@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:31.331212+00:00",
+    "updated_at": "2026-01-30T19:06:15.577776+00:00",
+    "openstates_url": "https://openstates.org/person/emma-greenman-7PaG7iv5IiIaUQuc8fTERc/"
+  },
+  {
+    "id": "ocd-person/e62d342c-ae38-4607-88d7-3a7f3f7e248b",
+    "name": "Erica Schwartz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:18a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Erica",
+    "family_name": "Schwartz",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/18A.gif?v=112221",
+    "email": "rep.erica.schwartz@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:35:59.992820+00:00",
+    "updated_at": "2026-01-30T19:06:42.746614+00:00",
+    "openstates_url": "https://openstates.org/person/erica-schwartz-70KtOFH6poWFpZjuGHVynb/"
+  },
+  {
+    "id": "ocd-person/0d6f7edf-eae0-441d-8089-84472ce1f36f",
+    "name": "Erin Koegel",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:39a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Erin",
+    "family_name": "Koegel",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/39A.gif?v=112221",
+    "email": "rep.erin.koegel@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1982-04-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:38.446458+00:00",
+    "updated_at": "2026-01-30T19:06:45.122022+00:00",
+    "openstates_url": "https://openstates.org/person/erin-koegel-PLqwKYFcMMTP1MOphwiHX/"
+  },
+  {
+    "id": "ocd-person/b140f0d2-f803-4118-9c6c-72aa322ec3bb",
+    "name": "Esther Agbaje",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:59b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Esther",
+    "family_name": "Agbaje",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/59B.gif",
+    "email": "rep.esther.agbaje@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1985-03-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:28.056442+00:00",
+    "updated_at": "2026-01-30T19:06:58.175257+00:00",
+    "openstates_url": "https://openstates.org/person/esther-agbaje-5OTJpZYRvxln6qr7jCRw9T/"
+  },
+  {
+    "id": "ocd-person/d0e94ca0-b600-4567-88ee-34a861ca38aa",
+    "name": "Ethan Cha",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:47b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Ethan",
+    "family_name": "Cha",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/47B.gif?v=112221",
+    "email": "rep.ethan.cha@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:37.441616+00:00",
+    "updated_at": "2026-01-30T19:05:17.074208+00:00",
+    "openstates_url": "https://openstates.org/person/ethan-cha-6MD1Mxwn1j2xuLPNxLAefy/"
+  },
+  {
+    "id": "ocd-person/d8da71a7-c99b-4510-8abc-2d8e78db3fff",
+    "name": "Fue Lee",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:59a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Fue",
+    "family_name": "Lee",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/59A.gif?v=112221",
+    "email": "rep.fue.lee@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1991-08-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:36.733046+00:00",
+    "updated_at": "2026-01-30T19:05:37.110224+00:00",
+    "openstates_url": "https://openstates.org/person/fue-lee-6bCAeOweXGh71Ng0ii1uBz/"
+  },
+  {
+    "id": "ocd-person/2cb0f6d7-006d-4f7a-a1a3-218eff6016aa",
+    "name": "Ginny Klevorn",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:42b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Ginny",
+    "family_name": "Klevorn",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/42B.gif?v=112221",
+    "email": "rep.ginny.klevorn@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:47:47.052922+00:00",
+    "updated_at": "2026-01-30T19:05:53.568196+00:00",
+    "openstates_url": "https://openstates.org/person/ginny-klevorn-1MKXBXib5O1D5jWZyypTWE/"
+  },
+  {
+    "id": "ocd-person/5bf21441-27fe-4f78-8fc1-83ca3ee5700d",
+    "name": "Greg Davids",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:26b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Davids",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/26B.gif?v=112221",
+    "email": "rep.greg.davids@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1958-08-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:24.564771+00:00",
+    "updated_at": "2026-01-30T19:06:54.856528+00:00",
+    "openstates_url": "https://openstates.org/person/greg-davids-2nUvnSiQuXIabX9YgjkyfF/"
+  },
+  {
+    "id": "ocd-person/371f41ef-a432-4880-950b-f3ac4b17d02f",
+    "name": "Harry Niska",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:31a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Harry",
+    "family_name": "Niska",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/31A.gif?v=112221",
+    "email": "rep.harry.niska@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:35.279809+00:00",
+    "updated_at": "2026-01-30T19:06:09.782390+00:00",
+    "openstates_url": "https://openstates.org/person/harry-niska-1g0rUKojQHv2f89zo9oZCx/"
+  },
+  {
+    "id": "ocd-person/3ace0851-830e-42a1-8390-27c1142f2367",
+    "name": "Heather Keeler",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:4a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Heather",
+    "family_name": "Keeler",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/04A.gif?v=112221",
+    "email": "rep.heather.keeler@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1981-12-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:20.951092+00:00",
+    "updated_at": "2026-01-30T19:05:31.024225+00:00",
+    "openstates_url": "https://openstates.org/person/heather-keeler-1mxi9E8RuEKanhOpVicvP5/"
+  },
+  {
+    "id": "ocd-person/05831ea3-3480-4a57-a5ea-a1844a554301",
+    "name": "Huldah Hiltsley",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:38a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Huldah",
+    "family_name": "Hiltsley",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/38A.gif?v=112221",
+    "email": "rep.huldah.momanyi-hiltsley@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:34:13.864007+00:00",
+    "updated_at": "2026-01-30T19:06:53.567930+00:00",
+    "openstates_url": "https://openstates.org/person/huldah-hiltsley-AOsm9dVVBpgsq9b3WCXMf/"
+  },
+  {
+    "id": "ocd-person/a916d408-21ae-4eee-a2d7-c8019478f521",
+    "name": "Isaac Schultz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:10b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Isaac",
+    "family_name": "Schultz",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/10B.gif?v=112221",
+    "email": "rep.isaac.schultz@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1991-03-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:43.995034+00:00",
+    "updated_at": "2026-01-30T19:05:40.725889+00:00",
+    "openstates_url": "https://openstates.org/person/isaac-schultz-5948Q0sV49Y0jOa1mjXW6b/"
+  },
+  {
+    "id": "ocd-person/b6ea5e13-3aad-438c-bed0-749a9bff80c3",
+    "name": "Jamie Long",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:61b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jamie",
+    "family_name": "Long",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/61B.gif?v=112221",
+    "email": "rep.jamie.long@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1981-12-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:46:26.562883+00:00",
+    "updated_at": "2026-01-30T19:06:10.471683+00:00",
+    "openstates_url": "https://openstates.org/person/jamie-long-5Z9i0HE9Y7M3GRIIMX95bn/"
+  },
+  {
+    "id": "ocd-person/8892bfba-9b17-4378-8c85-f2d73d2b88ac",
+    "name": "Jay Xiong",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:67b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Xiong",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/67B.gif?v=112221",
+    "email": "rep.jay.xiong@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:47:05.527585+00:00",
+    "updated_at": "2026-01-30T19:05:47.528831+00:00",
+    "openstates_url": "https://openstates.org/person/jay-xiong-49i1IQhyllUwLNKg81z0Sy/"
+  },
+  {
+    "id": "ocd-person/edcf7ea6-b735-46b3-9d50-fa189cda6e8d",
+    "name": "Jeff Backer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:9a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Backer",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/09A.gif?v=112221",
+    "email": "rep.jeff.backer@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1967-01-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:45.451750+00:00",
+    "updated_at": "2026-06-05T07:07:57.693222+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-backer-7Ek0QLHtFFyotW8MrFR0px/"
+  },
+  {
+    "id": "ocd-person/f6aa30f5-2e66-44ae-8de0-352c64ddafe8",
+    "name": "Jeff Dotseth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:11a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Dotseth",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/11A.gif?v=112221",
+    "email": "rep.jeff.dotseth@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:43.628393+00:00",
+    "updated_at": "2026-01-30T19:06:59.153095+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-dotseth-7VRtBMctixVh6vFAotAjM0/"
+  },
+  {
+    "id": "ocd-person/72c6929c-a329-4613-99a0-5e339f5a045f",
+    "name": "Jeff Witte",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:57b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Witte",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/57B.gif?v=112221",
+    "email": "rep.jeff.witte@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1965-12-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:42.368814+00:00",
+    "updated_at": "2026-01-30T19:05:43.668609+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-witte-3UZs8nAHPunSAEj4iQjFKJ/"
+  },
+  {
+    "id": "ocd-person/5099a61c-2d2a-41d0-a03d-ccbbb0edbf15",
+    "name": "Jess Hanson",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:55a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jess",
+    "family_name": "Hanson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/55A.gif?v=112221",
+    "email": "rep.jessica.hanson@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1986-09-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:23.152326+00:00",
+    "updated_at": "2026-01-30T19:06:24.282047+00:00",
+    "openstates_url": "https://openstates.org/person/jess-hanson-2S5bRLKBrPBCQuymFfod9h/"
+  },
+  {
+    "id": "ocd-person/0897d40e-d8b4-4b1e-b0cf-e0ae4e9685f2",
+    "name": "Jim Joy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:4b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Joy",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/04B.gif?v=112221",
+    "email": "rep.jim.joy@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1977-04-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:30.430793+00:00",
+    "updated_at": "2026-01-30T19:06:23.664942+00:00",
+    "openstates_url": "https://openstates.org/person/jim-joy-GDK6rc2JuJSX9eqpI0WRe/"
+  },
+  {
+    "id": "ocd-person/d7012c12-e223-4409-823b-ba3e55be6677",
+    "name": "Jim Nash",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:48a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Nash",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/48A.gif?v=112221",
+    "email": "rep.jim.nash@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1967-09-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:18.571007+00:00",
+    "updated_at": "2026-01-30T19:05:48.324742+00:00",
+    "openstates_url": "https://openstates.org/person/jim-nash-6XhsviMSC2m8NiYYGTPbDr/"
+  },
+  {
+    "id": "ocd-person/a2fed609-2172-4740-b9f3-f00a6da4716d",
+    "name": "Jimmy Gordon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:28a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jimmy",
+    "family_name": "Gordon",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/28A.gif?v=112221",
+    "email": "rep.jimmy.gordon@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:35:19.944740+00:00",
+    "updated_at": "2026-01-30T19:05:27.762339+00:00",
+    "openstates_url": "https://openstates.org/person/jimmy-gordon-4xZDTcneTb0DYQfkHBZSdJ/"
+  },
+  {
+    "id": "ocd-person/6292245e-1db4-4a8e-ba2a-a036e7b68044",
+    "name": "Joe McDonald",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:29a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "McDonald",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/29A.gif?v=112221",
+    "email": "rep.joe.mcdonald@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1966-07-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:44.922743+00:00",
+    "updated_at": "2026-01-30T19:05:39.934121+00:00",
+    "openstates_url": "https://openstates.org/person/joe-mcdonald-3002B80gnJySd1h8LZfQKy/"
+  },
+  {
+    "id": "ocd-person/f08531c2-0974-4606-ab08-f5453ff76edd",
+    "name": "Joe Schomacker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:21a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Schomacker",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/21A.gif?v=112221",
+    "email": "rep.joe.schomacker@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1986-03-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:17.775570+00:00",
+    "updated_at": "2026-01-30T19:05:33.305472+00:00",
+    "openstates_url": "https://openstates.org/person/joe-schomacker-7Jr1lRpXMU0BQhcuNUePVt/"
+  },
+  {
+    "id": "ocd-person/c86f501e-0b47-4e57-8f5a-d7d0be2392af",
+    "name": "John Burkel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:1a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Burkel",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/01A.gif",
+    "email": "rep.john.burkel@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1967-04-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:21.064755+00:00",
+    "updated_at": "2026-01-30T19:06:13.482426+00:00",
+    "openstates_url": "https://openstates.org/person/john-burkel-66DKnthk9WgbyaAJxnAHPz/"
+  },
+  {
+    "id": "ocd-person/5d8ac115-4a2b-4f0f-b70a-c1df26184891",
+    "name": "John Huot",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:56b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Huot",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/56B.gif?v=112221",
+    "email": "rep.john.huot@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1965-05-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:45:56.738141+00:00",
+    "updated_at": "2026-01-30T19:06:38.033816+00:00",
+    "openstates_url": "https://openstates.org/person/john-huot-2qVhEJ6k95nHwQ7PBobx9V/"
+  },
+  {
+    "id": "ocd-person/8c4ed90f-f243-43f1-b205-0edd374777d8",
+    "name": "Jon Koznick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:57a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Koznick",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/57A.gif?v=112221",
+    "email": "rep.jon.koznick@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1972-07-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:43.869900+00:00",
+    "updated_at": "2026-01-30T19:06:48.550661+00:00",
+    "openstates_url": "https://openstates.org/person/jon-koznick-4GkxToTx1vEgu2vPtxfUTI/"
+  },
+  {
+    "id": "ocd-person/18549c8f-0d80-4c2f-bdcc-f3762c3acb19",
+    "name": "Josh Heintzeman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:6b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Heintzeman",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/06B.gif?v=112221",
+    "email": "rep.josh.heintzeman@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1977-12-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:21.247989+00:00",
+    "updated_at": "2026-01-30T19:06:26.400343+00:00",
+    "openstates_url": "https://openstates.org/person/josh-heintzeman-juTyKjV1ML8l4eT192VOj/"
+  },
+  {
+    "id": "ocd-person/4558fb30-435a-4fde-acdd-bdcc82c7da45",
+    "name": "Josiah Hill",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:33b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Josiah",
+    "family_name": "Hill",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/33B.gif?v=112221",
+    "email": "rep.josiah.hill@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1976-12-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:22.676123+00:00",
+    "updated_at": "2026-01-30T19:05:37.740235+00:00",
+    "openstates_url": "https://openstates.org/person/josiah-hill-26r8NGtakao789Ob1tAhM5/"
+  },
+  {
+    "id": "ocd-person/15f0a29b-674a-4146-8a93-019c9a3f305e",
+    "name": "Julie Greene",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:50a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Greene",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/50A.gif?v=112221",
+    "email": "rep.julie.greene@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1972-02-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:34:06.675506+00:00",
+    "updated_at": "2026-01-30T19:05:35.400270+00:00",
+    "openstates_url": "https://openstates.org/person/julie-greene-fOoBXKRgG7QXHHEMVBNsM/"
+  },
+  {
+    "id": "ocd-person/1912cdc1-267c-4d36-acec-08896502658e",
+    "name": "Kaela Berg",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:55b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Kaela",
+    "family_name": "Berg",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/55B.gif",
+    "email": "rep.kaela.berg@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1973-09-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:32.226156+00:00",
+    "updated_at": "2026-01-30T19:05:58.965320+00:00",
+    "openstates_url": "https://openstates.org/person/kaela-berg-lJOtNJOEREGs4z2gBCliQ/"
+  },
+  {
+    "id": "ocd-person/ecea4720-d4e0-4c21-a4dd-76cdb54023d2",
+    "name": "Kari Rehrauer",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:35b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Kari",
+    "family_name": "Rehrauer",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/35B.gif?v=112221",
+    "email": "rep.kari.rehrauer@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1975-12-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:33:49.673999+00:00",
+    "updated_at": "2026-01-30T19:06:39.714356+00:00",
+    "openstates_url": "https://openstates.org/person/kari-rehrauer-7D3Fm4vDIRvrJpNLUhXgdG/"
+  },
+  {
+    "id": "ocd-person/12252e69-5ffb-459b-a84e-333af1219f94",
+    "name": "Katie Jones",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:61a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Katie",
+    "family_name": "Jones",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/61A.gif?v=112221",
+    "email": "rep.katie.jones@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1987-08-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:33:15.315403+00:00",
+    "updated_at": "2026-01-30T19:06:44.252018+00:00",
+    "openstates_url": "https://openstates.org/person/katie-jones-YEqvwvfh49Wf4ernUuDCu/"
+  },
+  {
+    "id": "ocd-person/939c0bab-e76d-443f-b46b-7f98d05036e2",
+    "name": "Keith Allen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:19a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Allen",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/19A.gif",
+    "email": "rep.keith.allen@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1977-07-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:36:04.197983+00:00",
+    "updated_at": "2026-01-30T19:06:40.272074+00:00",
+    "openstates_url": "https://openstates.org/person/keith-allen-4UXBTWwV7zjoJgfTwRLw1q/"
+  },
+  {
+    "id": "ocd-person/3eb5eb9d-cd17-4a48-ac4c-4f7a7b8e133e",
+    "name": "Kelly Moller",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:40a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Kelly",
+    "family_name": "Moller",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/40A.gif?v=112221",
+    "email": "rep.kelly.moller@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1973-02-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:46:31.719643+00:00",
+    "updated_at": "2026-01-30T19:06:22.151268+00:00",
+    "openstates_url": "https://openstates.org/person/kelly-moller-1uKf3BAp8s49WDagq12glq/"
+  },
+  {
+    "id": "ocd-person/6902f219-7571-4bf1-a0af-ffa9eae2c23f",
+    "name": "Kim Hicks",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:25a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Hicks",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/25A.gif?v=112221",
+    "email": "rep.kim.hicks@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1982-12-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:37.170635+00:00",
+    "updated_at": "2026-01-30T19:06:18.145128+00:00",
+    "openstates_url": "https://openstates.org/person/kim-hicks-3C9XVlh7W8d8GrI65C9yb1/"
+  },
+  {
+    "id": "ocd-person/d9b75b0d-6065-4efc-81e2-03084dee070a",
+    "name": "Krista Knudsen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:5a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Krista",
+    "family_name": "Knudsen",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/05A.gif?v=112221",
+    "email": "rep.krista.knudsen@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1979-12-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:33.235320+00:00",
+    "updated_at": "2026-01-30T19:06:18.759986+00:00",
+    "openstates_url": "https://openstates.org/person/krista-knudsen-6cp7yqd9TMTXXwodPljhkI/"
+  },
+  {
+    "id": "ocd-person/ed73b309-bb2f-4805-a33b-a3fb760e6664",
+    "name": "Kristi Pursell",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:58a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Kristi",
+    "family_name": "Pursell",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/58A.gif?v=112221",
+    "email": "rep.kristi.pursell@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1981-02-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:27.649229+00:00",
+    "updated_at": "2026-01-30T19:05:50.378264+00:00",
+    "openstates_url": "https://openstates.org/person/kristi-pursell-7E43UF0eFg18orOEmPWyxQ/"
+  },
+  {
+    "id": "ocd-person/ad111cf3-f5f9-4e94-a087-dc39ce1fb136",
+    "name": "Kristin Bahner",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:37b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Kristin",
+    "family_name": "Bahner",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/37B.gif",
+    "email": "rep.kristin.bahner@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1972-08-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:46:37.296014+00:00",
+    "updated_at": "2026-01-30T19:05:24.826080+00:00",
+    "openstates_url": "https://openstates.org/person/kristin-bahner-5GZUa9Vr93cdbx0R1VAdYU/"
+  },
+  {
+    "id": "ocd-person/d32d0b31-20af-4068-a5bd-42fd0a072ded",
+    "name": "Kristin Robbins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:37a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Kristin",
+    "family_name": "Robbins",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/37A.gif?v=112221",
+    "email": "rep.kristin.robbins@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1968-04-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:47:46.355402+00:00",
+    "updated_at": "2026-04-25T01:10:55.931827+00:00",
+    "openstates_url": "https://openstates.org/person/kristin-robbins-6QTxtQEwcmbxtnDw86qUBB/"
+  },
+  {
+    "id": "ocd-person/a4451923-cc1b-4d5d-9c14-5c50062335a2",
+    "name": "Larry Kraft",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:46a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Kraft",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/46A.gif?v=112221",
+    "email": "rep.larry.kraft@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1966-01-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:25.760436+00:00",
+    "updated_at": "2026-01-30T19:06:03.615561+00:00",
+    "openstates_url": "https://openstates.org/person/larry-kraft-4zyJoVrgHbi9YXqd2WxlgI/"
+  },
+  {
+    "id": "ocd-person/afff2a0a-1b2d-480e-a90d-8609842f0927",
+    "name": "Leigh Finke",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:66a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Leigh",
+    "family_name": "Finke",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/66A.gif?v=112221",
+    "email": "rep.leigh.finke@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:45.629215+00:00",
+    "updated_at": "2026-01-30T19:06:58.901809+00:00",
+    "openstates_url": "https://openstates.org/person/leigh-finke-5M6GadWots7Cz2LXAetTl9/"
+  },
+  {
+    "id": "ocd-person/00240593-7a31-4725-8c31-c723115732bb",
+    "name": "Leon Lillie",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:44b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Leon",
+    "family_name": "Lillie",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/44B.gif?v=112221",
+    "email": "rep.leon.lillie@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:43.258670+00:00",
+    "updated_at": "2026-01-30T19:05:32.380834+00:00",
+    "openstates_url": "https://openstates.org/person/leon-lillie-GSdva2dO1iPpvuofyxFz/"
+  },
+  {
+    "id": "ocd-person/5604b347-d9b5-40b6-844d-8bc5246283d3",
+    "name": "Liish Kozlowski",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:8b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Liish",
+    "family_name": "Kozlowski",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/08B.gif?v=112221",
+    "email": "rep.alicia.kozlowski@house.mn.gov",
+    "gender": "X",
+    "birth_date": "1988-01-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:45.339889+00:00",
+    "updated_at": "2026-01-30T19:06:56.113516+00:00",
+    "openstates_url": "https://openstates.org/person/liish-kozlowski-2cJUGWmcptTMfyOmccV5s3/"
+  },
+  {
+    "id": "ocd-person/7b7b8d46-05d4-4285-b728-abcad1a430d5",
+    "name": "Lisa Demuth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:13a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Demuth",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls93/13A.gif?v=032323",
+    "email": "rep.lisa.demuth@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1967-02-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:46:51.414677+00:00",
+    "updated_at": "2025-07-18T01:12:17.685583+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-demuth-3l0WDEfhVSR6J5aQ3SpyEv/"
+  },
+  {
+    "id": "ocd-person/f9dbe591-5c2d-4a25-836a-ae05863b40ff",
+    "name": "Liz Lee",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:67a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Lee",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/67A.gif?v=112221",
+    "email": "rep.liz.lee@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:39.754139+00:00",
+    "updated_at": "2026-01-30T19:06:02.301305+00:00",
+    "openstates_url": "https://openstates.org/person/liz-lee-7bTa7BcuAdjdyIinedNKRj/"
+  },
+  {
+    "id": "ocd-person/e57307af-8e06-4c44-997d-a2cad2cdb231",
+    "name": "Liz Reyer",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:52a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Reyer",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/52A.gif?v=112221",
+    "email": "rep.liz.reyer@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:24.763742+00:00",
+    "updated_at": "2026-01-30T19:05:22.135524+00:00",
+    "openstates_url": "https://openstates.org/person/liz-reyer-6yxoKM4l8LswvLT7TxbkUD/"
+  },
+  {
+    "id": "ocd-person/75e19dbb-1f4b-4ace-b87e-201e445d25b4",
+    "name": "Lucy Rehm",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:48b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Lucy",
+    "family_name": "Rehm",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/48B.gif?v=112221",
+    "email": "rep.lucy.rehm@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:46.398812+00:00",
+    "updated_at": "2026-01-30T19:05:16.484294+00:00",
+    "openstates_url": "https://openstates.org/person/lucy-rehm-3aRCxr9QBRuJ3Bn0B3RCOy/"
+  },
+  {
+    "id": "ocd-person/b0d93fc5-2efc-4908-aceb-7b2fc208b34d",
+    "name": "Luke Frederick",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:18b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Luke",
+    "family_name": "Frederick",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/18B.gif?v=112221",
+    "email": "rep.luke.frederick@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:20.825390+00:00",
+    "updated_at": "2026-01-30T19:06:08.403123+00:00",
+    "openstates_url": "https://openstates.org/person/luke-frederick-5NhvpAezSK6AXnXUz5y8QH/"
+  },
+  {
+    "id": "ocd-person/0682bc6b-e4f2-427a-917b-96fbc49bb741",
+    "name": "Marion Rarick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:29b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Marion",
+    "family_name": "Rarick",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/29B.gif?v=112221",
+    "email": "rep.marion.rarick@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1969-07-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:18.086327+00:00",
+    "updated_at": "2026-01-30T19:05:27.161912+00:00",
+    "openstates_url": "https://openstates.org/person/marion-rarick-CHhQgXL9Eshf3myKynBkv/"
+  },
+  {
+    "id": "ocd-person/9837607c-b08b-4742-ad5f-3e8f72f8b7b4",
+    "name": "Marj Fogelman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:21b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Marj",
+    "family_name": "Fogelman",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/21B.gif?v=112221",
+    "email": "rep.marj.fogelman@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1972-06-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:31.546737+00:00",
+    "updated_at": "2026-01-30T19:06:49.167808+00:00",
+    "openstates_url": "https://openstates.org/person/marj-fogelman-4dE8k4LX6ginvhU0XdUC8q/"
+  },
+  {
+    "id": "ocd-person/1acddc90-d32a-4495-a769-27f8b57193b7",
+    "name": "Mary Clardy",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:53a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Clardy",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/53A.gif?v=112221",
+    "email": "rep.mary.frances.clardy@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1958-11-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:23.096754+00:00",
+    "updated_at": "2026-01-30T19:05:21.323290+00:00",
+    "openstates_url": "https://openstates.org/person/mary-clardy-oZsWpafQpag8zSp0cfqT9/"
+  },
+  {
+    "id": "ocd-person/1b284763-8577-49ab-b641-f4f079196646",
+    "name": "Mary Franson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:12b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Franson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/12B.gif?v=112221",
+    "email": "rep.mary.franson@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1977-03-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:30.995039+00:00",
+    "updated_at": "2026-01-30T19:05:39.466964+00:00",
+    "openstates_url": "https://openstates.org/person/mary-franson-pFCQ1u9DQ6rvQTxErTytS/"
+  },
+  {
+    "id": "ocd-person/d1c094c0-6184-49e4-a18a-d5b900caca1b",
+    "name": "Mar\u00eda Isa P\u00e9rez-Vega",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:65b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mar\u00eda Isa",
+    "family_name": "P\u00e9rez-Vega",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/65B.gif?v=112221",
+    "email": "rep.maria.isa.perez-vega@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1987-05-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:37.307247+00:00",
+    "updated_at": "2026-01-30T19:05:30.404872+00:00",
+    "openstates_url": "https://openstates.org/person/maria-isa-perez-vega-6NnPBALoxxhmrKJRnNvppj/"
+  },
+  {
+    "id": "ocd-person/cbab855f-4a47-4afd-b74a-468a4545b82b",
+    "name": "Matt Bliss",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:2b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Bliss",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/02B.gif?v=112221",
+    "email": "rep.matt.bliss@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:16.700217+00:00",
+    "updated_at": "2026-04-04T01:12:00.724530+00:00",
+    "openstates_url": "https://openstates.org/person/matt-bliss-6CJpJd8go1EZEhY8yGhnDP/"
+  },
+  {
+    "id": "ocd-person/662f07d4-7dd5-4549-bded-c8b5a200e054",
+    "name": "Matt Norris",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:32b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Norris",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/32B.gif?v=112221",
+    "email": "rep.matt.norris@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1988-12-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:20.050602+00:00",
+    "updated_at": "2026-01-30T19:05:23.958934+00:00",
+    "openstates_url": "https://openstates.org/person/matt-norris-36oi2jxh4lo10UJCQCZSCK/"
+  },
+  {
+    "id": "ocd-person/afca05de-e5ff-4b1c-b38c-444f37b92687",
+    "name": "Max Rymer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:28b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Max",
+    "family_name": "Rymer",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/28B.gif?v=112221",
+    "email": "rep.max.rymer@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1991-01-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:34:17.444287+00:00",
+    "updated_at": "2026-01-30T19:06:53.820532+00:00",
+    "openstates_url": "https://openstates.org/person/max-rymer-5Lhysel1mGPa29BUpiCjWJ/"
+  },
+  {
+    "id": "ocd-person/8164812a-be9a-44e0-bf42-741cb4a01e2c",
+    "name": "Meg Luger-Nikolai",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:64a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Meg",
+    "family_name": "Luger-Nikolai",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/64A.gif?v=012126",
+    "email": "rep.meg.luger-nikolai@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-02-13T13:09:06.946810+00:00",
+    "updated_at": "2026-02-13T13:09:07.680991+00:00",
+    "openstates_url": "https://openstates.org/person/meg-luger-nikolai-3w9wKn7KFJX1hAb2HDyPnQ/"
+  },
+  {
+    "id": "ocd-person/4815983e-d0b9-4ebc-855f-bb9eac8aa5ae",
+    "name": "Mike Freiberg",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:43b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Freiberg",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/43B.gif?v=112221",
+    "email": "rep.mike.freiberg@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1976-09-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:33.924876+00:00",
+    "updated_at": "2026-04-04T01:11:34.644394+00:00",
+    "openstates_url": "https://openstates.org/person/mike-freiberg-2C1Jc3dN3wvOyywQTJS6co/"
+  },
+  {
+    "id": "ocd-person/8910b3db-698e-4019-b976-0ee19ecb8ca0",
+    "name": "Mike Howard",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:51a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Howard",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/51A.gif?v=112221",
+    "email": "rep.michael.howard@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1983-02-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:46:33.156300+00:00",
+    "updated_at": "2026-01-30T19:05:14.643707+00:00",
+    "openstates_url": "https://openstates.org/person/mike-howard-4Ada4n2HJnAQEj0hduwTyK/"
+  },
+  {
+    "id": "ocd-person/4c34f3d9-8890-4145-8a96-92ab23f046c0",
+    "name": "Mike Wiener",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:5b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Wiener",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/05B.gif?v=112221",
+    "email": "rep.mike.wiener@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:18.757980+00:00",
+    "updated_at": "2026-01-30T19:05:20.059547+00:00",
+    "openstates_url": "https://openstates.org/person/mike-wiener-2JncCmVWHLz2EKmTdtZvsG/"
+  },
+  {
+    "id": "ocd-person/591ea10b-1362-434e-90be-2db0877a0e9c",
+    "name": "Mohamud Noor",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:60b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Mohamud",
+    "family_name": "Noor",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/60B.gif?v=112221",
+    "email": "rep.mohamud.noor@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:45:44.006571+00:00",
+    "updated_at": "2026-01-30T19:06:35.588456+00:00",
+    "openstates_url": "https://openstates.org/person/mohamud-noor-2iAJVQjrQ5rM7BCORqFpl6/"
+  },
+  {
+    "id": "ocd-person/1b1055a8-959c-452c-a2a8-106a4ccef20d",
+    "name": "Natalie Zeleznikar",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:3b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Natalie",
+    "family_name": "Zeleznikar",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/03B.gif?v=112221",
+    "email": "rep.natalie.zeleznikar@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:34.261492+00:00",
+    "updated_at": "2026-01-30T19:06:49.833433+00:00",
+    "openstates_url": "https://openstates.org/person/natalie-zeleznikar-p4FyqE9fDLuFBg8QAOuhZ/"
+  },
+  {
+    "id": "ocd-person/63b26a4d-ae7c-4267-89ab-dfa4a1f341ad",
+    "name": "Nathan Coulter",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:51b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Nathan",
+    "family_name": "Coulter",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/51B.gif?v=112221",
+    "email": "rep.nathan.coulter@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1986-03-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:38.795541+00:00",
+    "updated_at": "2026-01-30T19:05:24.572348+00:00",
+    "openstates_url": "https://openstates.org/person/nathan-coulter-327m8MBqhlyA6feJxzf2FR/"
+  },
+  {
+    "id": "ocd-person/172cb289-beec-4bc1-8627-f027f2cd3769",
+    "name": "Nathan Nelson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:11b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Nathan",
+    "family_name": "Nelson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/11B.gif?v=112221",
+    "email": "rep.nathan.nelson@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1979-01-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-12-05T18:08:53.143299+00:00",
+    "updated_at": "2026-04-04T01:12:11.027561+00:00",
+    "openstates_url": "https://openstates.org/person/nathan-nelson-hjFW8ZnczBckArvm1t5Ld/"
+  },
+  {
+    "id": "ocd-person/764db471-e56d-4ef0-9df8-4e7a164c3b7e",
+    "name": "Ned Carroll",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:42a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Ned",
+    "family_name": "Carroll",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls93/42A.gif?v=112221",
+    "email": "rep.ned.carroll@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:35.418538+00:00",
+    "updated_at": "2026-01-30T19:05:51.275452+00:00",
+    "openstates_url": "https://openstates.org/person/ned-carroll-3bEbYiXU8FwzTrVtUhjyJi/"
+  },
+  {
+    "id": "ocd-person/171224fc-8a8d-4516-aa87-a2f5bcf1ea46",
+    "name": "Nolan West",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:32a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Nolan",
+    "family_name": "West",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/32A.gif?v=112221",
+    "email": "rep.nolan.west@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1990-09-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:46.127272+00:00",
+    "updated_at": "2026-01-30T19:05:23.032018+00:00",
+    "openstates_url": "https://openstates.org/person/nolan-west-hX7AFh0GucyDwG6rvuwi6/"
+  },
+  {
+    "id": "ocd-person/26c19220-1368-4453-81c9-3b0c395e3949",
+    "name": "Pam Altendorf",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:20a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Pam",
+    "family_name": "Altendorf",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/20A.gif",
+    "email": "rep.pam.altendorf@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1972-11-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:26.088503+00:00",
+    "updated_at": "2026-01-30T19:06:51.503436+00:00",
+    "openstates_url": "https://openstates.org/person/pam-altendorf-1B8AZVt8JPeS7PdfF3yflJ/"
+  },
+  {
+    "id": "ocd-person/4bab18ef-55dc-44bf-adfe-8dbdf9488a09",
+    "name": "Patti Anderson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:33a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Patti",
+    "family_name": "Anderson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/33A.gif",
+    "email": "rep.patti.anderson@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1966-06-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:25.399259+00:00",
+    "updated_at": "2026-01-30T19:06:55.316135+00:00",
+    "openstates_url": "https://openstates.org/person/patti-anderson-2ImcCssVDvFg1HJQTQDKbh/"
+  },
+  {
+    "id": "ocd-person/b393cb61-cb71-4cd0-8132-6e21c2a7202d",
+    "name": "Patty Acomb",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:45b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Patty",
+    "family_name": "Acomb",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/45B.gif",
+    "email": "rep.patty.acomb@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1965-09-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:45:50.502192+00:00",
+    "updated_at": "2026-01-30T19:05:13.761420+00:00",
+    "openstates_url": "https://openstates.org/person/patty-acomb-5SrASov3SVNR6qe603A03J/"
+  },
+  {
+    "id": "ocd-person/71df2690-6a54-4452-960a-54a5b6540bc7",
+    "name": "Patty Mueller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:23b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Patty",
+    "family_name": "Mueller",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/23B.gif?v=112221",
+    "email": "rep.patricia.mueller@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1981-03-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:25.341662+00:00",
+    "updated_at": "2026-01-30T19:05:09.261475+00:00",
+    "openstates_url": "https://openstates.org/person/patty-mueller-3Ss70fXECBg6vwvWz05LeB/"
+  },
+  {
+    "id": "ocd-person/ab35dde5-226a-4427-9344-c74d8291a75f",
+    "name": "Paul Anderson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:12a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Anderson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/12A.gif?v=112221",
+    "email": "rep.paul.anderson@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1951-06-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:37.361589+00:00",
+    "updated_at": "2026-04-04T01:11:42.949499+00:00",
+    "openstates_url": "https://openstates.org/person/paul-anderson-5D4Iuo4ywwE4NzbrMAxSH9/"
+  },
+  {
+    "id": "ocd-person/3e0eb8aa-b66c-4b30-9a0e-f1326c6f0589",
+    "name": "Paul Novotny",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:30b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Novotny",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/30B.gif?v=112221",
+    "email": "rep.paul.novotny@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1966-05-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-07-09T10:11:24.522386+00:00",
+    "updated_at": "2026-01-30T19:05:17.664311+00:00",
+    "openstates_url": "https://openstates.org/person/paul-novotny-1t6FcV0rsWbukTyjiexIK1/"
+  },
+  {
+    "id": "ocd-person/380875c6-dc4c-4062-8c2d-f5b80dd64c4c",
+    "name": "Paul Torkelson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:15b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Torkelson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/15B.gif?v=112221",
+    "email": "rep.paul.torkelson@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1952-07-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:33.157514+00:00",
+    "updated_at": "2026-01-30T19:06:36.979821+00:00",
+    "openstates_url": "https://openstates.org/person/paul-torkelson-1hjR4BLGzL9bcJ30i0g1Iy/"
+  },
+  {
+    "id": "ocd-person/16c8390c-93c6-403e-83d4-5ff1a81fe4aa",
+    "name": "Peggy Bennett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:23a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Peggy",
+    "family_name": "Bennett",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls93/23A.jpg",
+    "email": "rep.peggy.bennett@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1958-07-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:22.832114+00:00",
+    "updated_at": "2026-01-30T19:06:17.074142+00:00",
+    "openstates_url": "https://openstates.org/person/peggy-bennett-gzKfAah5XAie59McxAm5K/"
+  },
+  {
+    "id": "ocd-person/75f1b339-bd9f-4f7c-820b-75812553bde0",
+    "name": "Peggy Scott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:31b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Peggy",
+    "family_name": "Scott",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/31B.gif?v=112221",
+    "email": "rep.peggy.scott@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:44.621633+00:00",
+    "updated_at": "2026-01-30T19:06:20.999870+00:00",
+    "openstates_url": "https://openstates.org/person/peggy-scott-3aYYglJwI9IoE2oFV2kba4/"
+  },
+  {
+    "id": "ocd-person/fb643600-2577-4561-a902-6f158a5c40e4",
+    "name": "Pete Johnson",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:8a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Pete",
+    "family_name": "Johnson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/08A.gif?v=112221",
+    "email": "rep.pete.johnson@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1978-09-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:34:21.968566+00:00",
+    "updated_at": "2026-01-30T19:05:20.900417+00:00",
+    "openstates_url": "https://openstates.org/person/pete-johnson-7eMryacXG5qDTrliaTNz3U/"
+  },
+  {
+    "id": "ocd-person/929dc6f7-63f4-4a9d-ba24-6ab8c5964acf",
+    "name": "Peter Fischer",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:44a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Peter",
+    "family_name": "Fischer",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/44A.gif?v=112221",
+    "email": "rep.peter.fischer@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1958-06-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:32.538097+00:00",
+    "updated_at": "2026-01-30T19:05:46.005242+00:00",
+    "openstates_url": "https://openstates.org/person/peter-fischer-4Sez0zAeQxb0deW0Vs5ydL/"
+  },
+  {
+    "id": "ocd-person/c41944c1-d89b-4c3f-a76f-d5c58d0a507f",
+    "name": "Rick Hansen",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:53b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Hansen",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/53B.gif?v=112221",
+    "email": "rep.rick.hansen@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1963-03-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:39.976103+00:00",
+    "updated_at": "2026-01-30T19:06:57.241898+00:00",
+    "openstates_url": "https://openstates.org/person/rick-hansen-5y22ic1cYiZppN33rQF171/"
+  },
+  {
+    "id": "ocd-person/e783687f-ea0d-480a-a1ff-3072f491fb44",
+    "name": "Ripper Repinski",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:26a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Ripper",
+    "family_name": "Repinski",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/26A.gif?v=112221",
+    "email": "rep.aaron.repinski@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:35:56.304620+00:00",
+    "updated_at": "2026-01-30T19:05:03.152224+00:00",
+    "openstates_url": "https://openstates.org/person/ripper-repinski-72rHR7kSu3OXP1sHkY0qv6/"
+  },
+  {
+    "id": "ocd-person/f2b7f80c-abb4-4204-839f-eb9a4de6dbab",
+    "name": "Robert Bierman",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:56a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Bierman",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/56A.gif",
+    "email": "rep.robert.bierman@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1960-09-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:47:49.934011+00:00",
+    "updated_at": "2026-06-05T07:08:44.264988+00:00",
+    "openstates_url": "https://openstates.org/person/robert-bierman-7O0DSoNBZE8LeeVZuxJZmd/"
+  },
+  {
+    "id": "ocd-person/e7b3aed7-aa50-4c4b-bd53-eacc60e53ba8",
+    "name": "Roger Skraba",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:3a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Roger",
+    "family_name": "Skraba",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/03A.gif?v=112221",
+    "email": "rep.roger.skraba@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1961-11-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:37.783641+00:00",
+    "updated_at": "2026-01-30T19:05:14.216695+00:00",
+    "openstates_url": "https://openstates.org/person/roger-skraba-73DLG2ygrhY0w5LHZnVLSK/"
+  },
+  {
+    "id": "ocd-person/3059daef-810c-4917-b6fa-c059312f97bf",
+    "name": "Ron Kresha",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:10a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Kresha",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/10A.gif?v=112221",
+    "email": "rep.ron.kresha@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1969-12-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:37.982789+00:00",
+    "updated_at": "2026-01-30T19:05:56.244246+00:00",
+    "openstates_url": "https://openstates.org/person/ron-kresha-1TEh83WCqZKU8PifvVGNBf/"
+  },
+  {
+    "id": "ocd-person/1ff5f689-18c9-4d74-970f-c289f915dc6a",
+    "name": "Samakab Hussein",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:65a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Samakab",
+    "family_name": "Hussein",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/65A.gif?v=112221",
+    "email": "rep.samakab.hussein@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1980-10-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:45.776790+00:00",
+    "updated_at": "2026-01-30T19:06:07.776247+00:00",
+    "openstates_url": "https://openstates.org/person/samakab-hussein-yJAO55z5zQZE92sK3iGxG/"
+  },
+  {
+    "id": "ocd-person/74dec7df-a9b9-48aa-9fae-bbe45990f4f5",
+    "name": "Samantha Sencer-Mura",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:63a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Samantha",
+    "family_name": "Sencer-Mura",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/63A.gif?v=112221",
+    "email": "rep.samantha.sencer-mura@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1989-02-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:26.511884+00:00",
+    "updated_at": "2026-01-30T19:06:05.791599+00:00",
+    "openstates_url": "https://openstates.org/person/samantha-sencer-mura-3YWv6P2HsjJoksGVIqQz4P/"
+  },
+  {
+    "id": "ocd-person/3f73ba2f-f038-47ff-b721-27118592b691",
+    "name": "Samantha Vang",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:38b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Samantha",
+    "family_name": "Vang",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/38B.gif?v=112221",
+    "email": "rep.samantha.vang@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:46:56.950460+00:00",
+    "updated_at": "2026-01-30T19:06:27.278448+00:00",
+    "openstates_url": "https://openstates.org/person/samantha-vang-1vjP3RQVx91MywQl9QJJlx/"
+  },
+  {
+    "id": "ocd-person/94c52434-9616-43bd-863b-9481943dedb1",
+    "name": "Sandra Feist",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:39b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Sandra",
+    "family_name": "Feist",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/39B.gif?v=112221",
+    "email": "rep.sandra.feist@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:27.610439+00:00",
+    "updated_at": "2026-01-30T19:06:38.962271+00:00",
+    "openstates_url": "https://openstates.org/person/sandra-feist-4WixPcW2DUjgpbeqhVI6N7/"
+  },
+  {
+    "id": "ocd-person/18e1e0aa-a224-4772-b4d1-11c7a9ed510f",
+    "name": "Scott Van Binsbergen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:16a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Van Binsbergen",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/16A.gif?v=112221",
+    "email": "rep.scott.vanbinsbergen@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:34:02.164559+00:00",
+    "updated_at": "2026-01-30T19:06:27.746742+00:00",
+    "openstates_url": "https://openstates.org/person/scott-van-binsbergen-kx2cDh5vidbLayASoGcr1/"
+  },
+  {
+    "id": "ocd-person/204ac87d-7f04-4b49-adc4-658faec7d413",
+    "name": "Shane Mekeland",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:27a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Mekeland",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/27A.gif?v=112221",
+    "email": "rep.shane.mekeland@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1969-07-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:46:54.813074+00:00",
+    "updated_at": "2026-01-30T19:05:32.844340+00:00",
+    "openstates_url": "https://openstates.org/person/shane-mekeland-yvvghyIME9FCsv8wQpzzH/"
+  },
+  {
+    "id": "ocd-person/0b860ed2-515a-4212-81ab-cc27b5e16223",
+    "name": "Shelley Buck",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:47a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Shelley",
+    "family_name": "Buck",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/47A.gif?v=012126",
+    "email": "rep.shelley.buck@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-02-13T13:08:45.576129+00:00",
+    "updated_at": "2026-02-13T13:08:46.306817+00:00",
+    "openstates_url": "https://openstates.org/person/shelley-buck-LkBAn6qNDCV3ttFdMeOLj/"
+  },
+  {
+    "id": "ocd-person/2e342c55-f56d-4895-9dd2-ef1271f784c0",
+    "name": "Spencer Igo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:7a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Spencer",
+    "family_name": "Igo",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/07A.gif?v=112221",
+    "email": "rep.spencer.igo@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1996-03-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-06T06:09:23.709574+00:00",
+    "updated_at": "2026-01-30T19:05:29.059295+00:00",
+    "openstates_url": "https://openstates.org/person/spencer-igo-1PBUOXKU7fYohAI32WTcR6/"
+  },
+  {
+    "id": "ocd-person/b867618c-7a49-4cb3-94ac-b5836ae8dedf",
+    "name": "Steve Elkins",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:50b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Elkins",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/50B.gif?v=112221",
+    "email": "rep.steve.elkins@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1952-04-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:46:04.315664+00:00",
+    "updated_at": "2026-01-30T19:05:45.191395+00:00",
+    "openstates_url": "https://openstates.org/person/steve-elkins-5bxpfjSAH6NytrLR3QL7zb/"
+  },
+  {
+    "id": "ocd-person/23bda6c1-1fa1-4d42-9b6c-8c76d1d91227",
+    "name": "Steve Gander",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:1b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Gander",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/01B.gif?v=112221",
+    "email": "rep.steve.gander@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1961-08-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:35:04.250775+00:00",
+    "updated_at": "2026-01-30T19:06:37.779265+00:00",
+    "openstates_url": "https://openstates.org/person/steve-gander-15ROwhtdxfsXqqdBtbBfk7/"
+  },
+  {
+    "id": "ocd-person/3c90edec-1bce-4197-8e1c-cc840102c7a9",
+    "name": "Steve Jacob",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:20b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Jacob",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/20B.gif?v=112221",
+    "email": "rep.steven.jacob@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1966-06-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:27.227997+00:00",
+    "updated_at": "2026-01-30T19:05:07.328191+00:00",
+    "openstates_url": "https://openstates.org/person/steve-jacob-1qHltcCB1hcgLmbq5Uxd4j/"
+  },
+  {
+    "id": "ocd-person/e60bb3ff-5164-4d6d-9029-d2e3d2ac69a0",
+    "name": "Sydney Jordan",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:60a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Sydney",
+    "family_name": "Jordan",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/60A.gif?v=112221",
+    "email": "rep.sydney.jordan@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "1990-10-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-07-09T10:11:19.356499+00:00",
+    "updated_at": "2026-01-30T19:05:12.455590+00:00",
+    "openstates_url": "https://openstates.org/person/sydney-jordan-705aB9AhcnqNZEsOACakMq/"
+  },
+  {
+    "id": "ocd-person/9e7eca64-ff97-48f2-8887-916e50d917cd",
+    "name": "Terry Stier",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:22b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Stier",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/22B.gif?v=112221",
+    "email": "rep.terry.stier@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1978-07-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:35:29.765352+00:00",
+    "updated_at": "2026-01-30T19:06:30.010066+00:00",
+    "openstates_url": "https://openstates.org/person/terry-stier-4p4jKT9ZBFAaTZ3eBIbK1d/"
+  },
+  {
+    "id": "ocd-person/015d0cf4-9742-4050-8084-a62be4107f2e",
+    "name": "Tim O'Driscoll",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:13b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "O'Driscoll",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/13B.gif?v=112221",
+    "email": "rep.tim.odriscoll@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1964-04-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:32.236850+00:00",
+    "updated_at": "2026-01-30T19:06:00.510310+00:00",
+    "openstates_url": "https://openstates.org/person/tim-o-driscoll-2ZW1hsoxWQyVmswk4wgHu/"
+  },
+  {
+    "id": "ocd-person/ed6e8851-f7a8-41af-b2b6-570bd2004587",
+    "name": "Tina Liebling",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:24b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Tina",
+    "family_name": "Liebling",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/24B.gif?v=112221",
+    "email": "rep.tina.liebling@house.mn.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:49:43.722046+00:00",
+    "updated_at": "2026-04-04T01:10:53.705640+00:00",
+    "openstates_url": "https://openstates.org/person/tina-liebling-7E1h5XXatKlBjgrC9MN2AB/"
+  },
+  {
+    "id": "ocd-person/05de7bba-70ee-4848-b0ec-d67354b6073a",
+    "name": "Tom Dippel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:41b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Dippel",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/41B.gif?v=112221",
+    "email": "rep.tom.dippel@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1982-05-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:36:29.206788+00:00",
+    "updated_at": "2026-01-30T19:06:01.520638+00:00",
+    "openstates_url": "https://openstates.org/person/tom-dippel-B4dTphiC996QLrTrKuwuY/"
+  },
+  {
+    "id": "ocd-person/a798a6be-e28f-447c-b9ce-ffd7bf9a0ed4",
+    "name": "Tom Murphy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:9b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Murphy",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/09B.gif?v=112221",
+    "email": "rep.tom.murphy@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1962-04-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:21.133585+00:00",
+    "updated_at": "2026-01-30T19:05:43.056288+00:00",
+    "openstates_url": "https://openstates.org/person/tom-murphy-56FTmvABWDVGvcTr6a0Jsq/"
+  },
+  {
+    "id": "ocd-person/2989633c-a60b-4337-972d-49941a4db1b6",
+    "name": "Tom Sexton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:19b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Sexton",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/19B.gif?v=112221",
+    "email": "rep.tom.sexton@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1963-02-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:34:09.238122+00:00",
+    "updated_at": "2026-01-30T19:05:44.935695+00:00",
+    "openstates_url": "https://openstates.org/person/tom-sexton-1GNTFLjfTQCl2HAE2Fu7fy/"
+  },
+  {
+    "id": "ocd-person/0b721953-c642-4b33-b203-5eb3f3da210b",
+    "name": "Walter Hudson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:30a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Walter",
+    "family_name": "Hudson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/30A.gif?v=112221",
+    "email": "rep.walter.hudson@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-09T17:57:30.850683+00:00",
+    "updated_at": "2026-01-30T19:05:40.981100+00:00",
+    "openstates_url": "https://openstates.org/person/walter-hudson-Lb3ecmuzSq01XOjDWTkN9/"
+  },
+  {
+    "id": "ocd-person/0926949b-8d9e-4fc0-b860-7662f46afdc6",
+    "name": "Wayne Johnson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:41a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Wayne",
+    "family_name": "Johnson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/41A.gif?v=112221",
+    "email": "rep.wayne.johnson@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:36:02.602845+00:00",
+    "updated_at": "2026-01-30T19:05:55.987492+00:00",
+    "openstates_url": "https://openstates.org/person/wayne-johnson-HGYrP4ATtGHHdW1g6fTHS/"
+  },
+  {
+    "id": "ocd-person/622e5358-869c-4d25-b6ed-e5425ca56caa",
+    "name": "Xp Lee",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34B",
+      "division_id": "ocd-division/country:us/state:mn/sldl:34b"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Xp",
+    "family_name": "Lee",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/34B.gif?v=112221",
+    "email": "rep.xp.lee@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-30T19:06:41.194356+00:00",
+    "updated_at": "2026-01-30T19:06:41.902732+00:00",
+    "openstates_url": "https://openstates.org/person/xp-lee-2zGPyD0nKFQFS1Zao6DHXm/"
+  },
+  {
+    "id": "ocd-person/ed5f1cc0-ff12-461e-9016-0ef27f180430",
+    "name": "Zack Stephenson",
+    "party": "Democratic-Farmer-Labor",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35A",
+      "division_id": "ocd-division/country:us/state:mn/sldl:35a"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mn/government",
+      "name": "Minnesota",
+      "classification": "state"
+    },
+    "given_name": "Zack",
+    "family_name": "Stephenson",
+    "image": "https://www.house.mn.gov/hinfo/memberimgls94/35A.gif?v=112221",
+    "email": "rep.zack.stephenson@house.mn.gov",
+    "gender": "Male",
+    "birth_date": "1984-07-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T01:47:45.658064+00:00",
+    "updated_at": "2026-01-30T19:05:46.876829+00:00",
+    "openstates_url": "https://openstates.org/person/zack-stephenson-7DueAi2DuZe3PeJBrY2HHU/"
+  }
+]

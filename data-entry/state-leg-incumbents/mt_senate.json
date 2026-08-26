@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "ocd-person/2dcaf4be-0227-4ced-b01c-aacd8376c45a",
+    "name": "Andrea Olsen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:mt/sldu:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Andrea",
+    "family_name": "Olsen",
+    "image": "",
+    "email": "andrea.olsen@legmt.gov",
+    "gender": "Female",
+    "birth_date": "1961-12-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:54.005017+00:00",
+    "updated_at": "2025-05-15T01:16:48.852294+00:00",
+    "openstates_url": "https://openstates.org/person/andrea-olsen-1OPPABn3twPsyE9o6WjNwQ/"
+  },
+  {
+    "id": "ocd-person/69cfa3aa-7091-4752-a99c-b6a42c70b17b",
+    "name": "Barry Usher",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:mt/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Barry",
+    "family_name": "Usher",
+    "image": "",
+    "email": "barry.usher@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:57.903657+00:00",
+    "updated_at": "2025-05-15T01:18:34.792957+00:00",
+    "openstates_url": "https://openstates.org/person/barry-usher-3Df5JgrvdVvM17m34RFK71/"
+  },
+  {
+    "id": "ocd-person/f87d7b76-3065-48f4-bc3b-50bf00926180",
+    "name": "Becky Beard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:mt/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Becky",
+    "family_name": "Beard",
+    "image": "",
+    "email": "becky.beard@legmt.gov",
+    "gender": "Female",
+    "birth_date": "1960-06-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-03T06:37:19.859351+00:00",
+    "updated_at": "2025-05-15T01:18:29.182400+00:00",
+    "openstates_url": "https://openstates.org/person/becky-beard-7YtRRYD8gG3Wu4qgJvWCq8/"
+  },
+  {
+    "id": "ocd-person/cf7f704c-87ac-4bcd-821a-9377bbbee43f",
+    "name": "Bob Phalen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:mt/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Phalen",
+    "image": "",
+    "email": "bobby.phalen@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-04-01T00:13:20.267179+00:00",
+    "updated_at": "2025-05-15T01:18:17.748667+00:00",
+    "openstates_url": "https://openstates.org/person/bob-phalen-6JXeNfppxYwygmyrNS6OGF/"
+  },
+  {
+    "id": "ocd-person/0bb87197-276c-4ea7-9e93-cf782879e010",
+    "name": "Butch Gillespie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:mt/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Butch",
+    "family_name": "Gillespie",
+    "image": "",
+    "email": "bruce.gillespie@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:53:56.087370+00:00",
+    "updated_at": "2025-05-15T01:18:08.162838+00:00",
+    "openstates_url": "https://openstates.org/person/butch-gillespie-M7CoCk06l7MlfZ5zBmLQW/"
+  },
+  {
+    "id": "ocd-person/8cf123ff-85f6-4652-922a-87c0cb474573",
+    "name": "Carl Glimm",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:mt/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Carl",
+    "family_name": "Glimm",
+    "image": "",
+    "email": "carl.glimm@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-04-01T00:13:17.975751+00:00",
+    "updated_at": "2025-05-15T01:16:56.995847+00:00",
+    "openstates_url": "https://openstates.org/person/carl-glimm-4Hx7tWhMNBWNyJrVz5ej8V/"
+  },
+  {
+    "id": "ocd-person/ab04d84a-c320-4d82-b211-d36206213195",
+    "name": "Chris Pope",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:mt/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Pope",
+    "image": "",
+    "email": "christopher.pope@legmt.gov",
+    "gender": "Male",
+    "birth_date": "1952-12-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-04-01T00:13:18.868191+00:00",
+    "updated_at": "2025-05-15T01:17:30.222453+00:00",
+    "openstates_url": "https://openstates.org/person/chris-pope-5ChtvQQxOBpINvzMoE4UyL/"
+  },
+  {
+    "id": "ocd-person/a7c31f94-f7bd-4d2c-b149-f26928cc934e",
+    "name": "Cora Neumann",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:mt/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Cora",
+    "family_name": "Neumann",
+    "image": "",
+    "email": "cora.neumann@legmt.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T21:02:41.529612+00:00",
+    "updated_at": "2025-05-15T01:18:13.199244+00:00",
+    "openstates_url": "https://openstates.org/person/cora-neumann-56YtC3q8ptN3B3Ih5FTUmE/"
+  },
+  {
+    "id": "ocd-person/ab3accc3-6794-45c1-9f78-27d524aecc00",
+    "name": "Daniel Emrich",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:mt/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Daniel",
+    "family_name": "Emrich",
+    "image": "",
+    "email": "daniel.emrich@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-03T06:36:31.943054+00:00",
+    "updated_at": "2026-06-04T07:24:10.210254+00:00",
+    "openstates_url": "https://openstates.org/person/daniel-emrich-5D6YgoJBPVc5l5dZH1XKEa/"
+  },
+  {
+    "id": "ocd-person/afffd4a2-fd6b-4cc5-8eff-8aa1f696db3a",
+    "name": "Daniel Zolnikov",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:mt/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Daniel",
+    "family_name": "Zolnikov",
+    "image": "",
+    "email": "daniel.zolnikov@legmt.gov",
+    "gender": "Male",
+    "birth_date": "1987-01-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-03T06:36:39.363730+00:00",
+    "updated_at": "2025-05-15T01:18:26.764159+00:00",
+    "openstates_url": "https://openstates.org/person/daniel-zolnikov-5M6ZTIm5pdLFSb8mdjbE0w/"
+  },
+  {
+    "id": "ocd-person/9c542cad-1c8f-4dfd-b41f-12468fd2d806",
+    "name": "Dave Fern",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:mt/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Fern",
+    "image": "",
+    "email": "dave.fern@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:50.214010+00:00",
+    "updated_at": "2025-05-15T01:18:05.275095+00:00",
+    "openstates_url": "https://openstates.org/person/dave-fern-4kzGnEFlSllyYhr4Ti1wMo/"
+  },
+  {
+    "id": "ocd-person/482e35af-a664-4010-a5db-33f21d902045",
+    "name": "Denise Hayman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:mt/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Denise",
+    "family_name": "Hayman",
+    "image": "",
+    "email": "denise.hayman@legmt.gov",
+    "gender": "Female",
+    "birth_date": "1951-01-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:47.805486+00:00",
+    "updated_at": "2025-05-15T01:17:48.252236+00:00",
+    "openstates_url": "https://openstates.org/person/denise-hayman-2CCZ3YEMgnjwrUMY6SaiPd/"
+  },
+  {
+    "id": "ocd-person/e5cf63ad-879c-435f-819e-a3326862b1b8",
+    "name": "Denley Loge",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:mt/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Denley",
+    "family_name": "Loge",
+    "image": "",
+    "email": "denley.loge@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:57.294354+00:00",
+    "updated_at": "2025-05-15T01:17:40.637187+00:00",
+    "openstates_url": "https://openstates.org/person/denley-loge-6ze1FCuLuII2sR5uw487tA/"
+  },
+  {
+    "id": "ocd-person/0fd1ad64-349c-42d9-ae46-4ff7d3eb9495",
+    "name": "Dennis Lenz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:mt/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Dennis",
+    "family_name": "Lenz",
+    "image": "",
+    "email": "dennis.lenz@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:52:00.290887+00:00",
+    "updated_at": "2025-05-15T01:17:04.776773+00:00",
+    "openstates_url": "https://openstates.org/person/dennis-lenz-TqhsPXNKPvO6eeux4es0T/"
+  },
+  {
+    "id": "ocd-person/ec4cdcd7-d8b8-4c37-84ce-a99749b22ca3",
+    "name": "Derek Harvey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:mt/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Derek",
+    "family_name": "Harvey",
+    "image": "",
+    "email": "derek.harvey@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:54:29.672652+00:00",
+    "updated_at": "2025-05-15T01:17:57.166989+00:00",
+    "openstates_url": "https://openstates.org/person/derek-harvey-7BtJYo2x70v4u2jvibrXc3/"
+  },
+  {
+    "id": "ocd-person/4e6ad74d-1e72-4d2b-ac0d-557f429b3e9a",
+    "name": "Ellie Boldman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:mt/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Ellie",
+    "family_name": "Boldman",
+    "image": "",
+    "email": "ellie.boldman@legmt.gov",
+    "gender": "Female",
+    "birth_date": "1975-06-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-04-01T00:13:18.831617+00:00",
+    "updated_at": "2025-05-15T01:17:34.594924+00:00",
+    "openstates_url": "https://openstates.org/person/ellie-boldman-2NyE8NsDaf8O0TK9AWJUNe/"
+  },
+  {
+    "id": "ocd-person/86031b2b-034f-4791-8c0e-b0dd4d776eb6",
+    "name": "Emma Kerr-Carpenter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:mt/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Emma",
+    "family_name": "Kerr-Carpenter",
+    "image": "",
+    "email": "emma.kc@legmt.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:53.038452+00:00",
+    "updated_at": "2025-05-15T01:16:43.719636+00:00",
+    "openstates_url": "https://openstates.org/person/emma-kerr-carpenter-44sOGEM3jQRjqO3niKDWL8/"
+  },
+  {
+    "id": "ocd-person/40c484e9-cba9-4fd5-8f99-7bcaf25fc4ac",
+    "name": "Forrest Mandeville",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:mt/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Forrest",
+    "family_name": "Mandeville",
+    "image": "",
+    "email": "forrest.mandeville@legmt.gov",
+    "gender": "Male",
+    "birth_date": "1984-04-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-03T06:35:54.264389+00:00",
+    "updated_at": "2025-05-15T01:16:58.432412+00:00",
+    "openstates_url": "https://openstates.org/person/forrest-mandeville-1yDJk7KwWjSXUHzznMwcKC/"
+  },
+  {
+    "id": "ocd-person/29925f97-152a-473e-951e-27d55dba532e",
+    "name": "Gayle Lammers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:mt/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Gayle",
+    "family_name": "Lammers",
+    "image": "https://static.wixstatic.com/media/bf4594_51bb3c90d2b140bc9f3286324b5fb6f6~mv2.jpg/v1/crop/x_0,y_0,w_420,h_496,q_80,enc_auto/bf4594_51bb3c90d2b140bc9f3286324b5fb6f6~mv2.jpg",
+    "email": "gayle.lammers@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-07-05T20:52:06.563918+00:00",
+    "updated_at": "2025-05-15T01:17:22.855101+00:00",
+    "openstates_url": "https://openstates.org/person/gayle-lammers-1GRZqk1DoHuUTYNrjPAb0w/"
+  },
+  {
+    "id": "ocd-person/e085c6ea-bb53-4daf-8a02-5268818158bd",
+    "name": "Greg Hertz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:mt/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Hertz",
+    "image": "",
+    "email": "greg.hertz@legmt.gov",
+    "gender": "Male",
+    "birth_date": "1957-12-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-04-01T00:13:13.255932+00:00",
+    "updated_at": "2025-05-15T01:17:58.097290+00:00",
+    "openstates_url": "https://openstates.org/person/greg-hertz-6pfPsvCHjmgx9BZHv2MOgX/"
+  },
+  {
+    "id": "ocd-person/419a79a5-8153-4a77-9533-0833b8b57fad",
+    "name": "Gregg Hunter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:mt/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Gregg",
+    "family_name": "Hunter",
+    "image": "",
+    "email": "gregg.hunter@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T21:00:38.551987+00:00",
+    "updated_at": "2025-05-15T01:17:37.753034+00:00",
+    "openstates_url": "https://openstates.org/person/gregg-hunter-1zn5zMjrTa6i7moouMkuxJ/"
+  },
+  {
+    "id": "ocd-person/06134a1a-df5e-43c6-9622-ca7f946faa88",
+    "name": "Jacinda Morigeau",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:mt/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Jacinda",
+    "family_name": "Morigeau",
+    "image": "https://cdn.runforsomething.net/candidates/2024/05/campaign/190178bc3c51a6be225f4f2a711a5814.jpg",
+    "email": "jacinda.morigeau@legmt.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T21:02:38.485483+00:00",
+    "updated_at": "2025-05-15T01:17:23.594385+00:00",
+    "openstates_url": "https://openstates.org/person/jacinda-morigeau-BSlh5tPggKM6Xd2q8NbRY/"
+  },
+  {
+    "id": "ocd-person/2062cc82-e160-435d-ab16-c57305a13db4",
+    "name": "Janet Ellis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:mt/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Janet",
+    "family_name": "Ellis",
+    "image": "",
+    "email": "janet.ellis@legmt.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:52:52.116254+00:00",
+    "updated_at": "2026-04-04T01:21:39.854178+00:00",
+    "openstates_url": "https://openstates.org/person/janet-ellis-z6u9PXrtv71ZiApWg8L9I/"
+  },
+  {
+    "id": "ocd-person/f68bf624-cad5-4db2-9c74-a49a33348018",
+    "name": "Jason Ellsworth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:mt/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Ellsworth",
+    "image": "",
+    "email": "jason.ellsworth@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:53:15.576777+00:00",
+    "updated_at": "2025-05-15T01:17:10.774623+00:00",
+    "openstates_url": "https://openstates.org/person/jason-ellsworth-7VE4eNxYgeIgN1kuKclBto/"
+  },
+  {
+    "id": "ocd-person/b51a470c-840d-404c-aebe-a7cb47c3edff",
+    "name": "Jeremy Trebas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:mt/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Jeremy",
+    "family_name": "Trebas",
+    "image": "",
+    "email": "jeremy.trebas@legmt.gov",
+    "gender": "Male",
+    "birth_date": "1984-06-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-04-01T00:13:11.146413+00:00",
+    "updated_at": "2025-05-15T01:18:28.215476+00:00",
+    "openstates_url": "https://openstates.org/person/jeremy-trebas-5VjcRTdcEn5HrIaT1TaCX1/"
+  },
+  {
+    "id": "ocd-person/a936c9c8-0a8d-4bcf-8da0-1a9b9ac80ab2",
+    "name": "John Esp",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:mt/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Esp",
+    "image": "",
+    "email": "john.esp@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:52:50.687285+00:00",
+    "updated_at": "2025-05-15T01:17:56.225131+00:00",
+    "openstates_url": "https://openstates.org/person/john-esp-59IjyUEr23bcTijscNe8PK/"
+  },
+  {
+    "id": "ocd-person/54fe073e-e061-43aa-9299-42fe869102d0",
+    "name": "John Fuller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:mt/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Fuller",
+    "image": "",
+    "email": "john.fuller@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:54:11.742376+00:00",
+    "updated_at": "2025-05-15T01:18:40.115935+00:00",
+    "openstates_url": "https://openstates.org/person/john-fuller-2aNRhDHwwX8coAhAzWkUxU/"
+  },
+  {
+    "id": "ocd-person/aad657b3-2d8f-48cf-99b3-650ccddf258b",
+    "name": "Jonathan Windy Boy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:mt/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Jonathan",
+    "family_name": "Windy Boy",
+    "image": "",
+    "email": "jonathan.windyboy@legmt.gov",
+    "gender": "Male",
+    "birth_date": "1958-08-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:52:03.903709+00:00",
+    "updated_at": "2025-05-15T01:18:39.205871+00:00",
+    "openstates_url": "https://openstates.org/person/jonathan-windy-boy-5CMeKDBynVtni7ofYhcokV/"
+  },
+  {
+    "id": "ocd-person/92191849-ad4d-479b-9168-582773a9f6bb",
+    "name": "Josh Kassmier",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:mt/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Kassmier",
+    "image": "",
+    "email": "josh.kassmier@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:54:01.914308+00:00",
+    "updated_at": "2025-05-15T01:18:16.297379+00:00",
+    "openstates_url": "https://openstates.org/person/josh-kassmier-4RgLaD2KYceFZlvt7PyJp5/"
+  },
+  {
+    "id": "ocd-person/ea9c7cc2-da2d-430e-a997-824818295244",
+    "name": "Ken Bogner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:mt/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Bogner",
+    "image": "",
+    "email": "kenneth.bogner@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:54:16.640988+00:00",
+    "updated_at": "2025-05-15T01:17:18.003197+00:00",
+    "openstates_url": "https://openstates.org/person/ken-bogner-78hibV09HNtiXARUyYp8wG/"
+  },
+  {
+    "id": "ocd-person/51492780-1440-4625-b487-63640ee2b11d",
+    "name": "Laura Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:mt/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Laura",
+    "family_name": "Smith",
+    "image": "",
+    "email": "laura.smith@legmt.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-03T06:37:17.164696+00:00",
+    "updated_at": "2025-05-15T01:17:44.508555+00:00",
+    "openstates_url": "https://openstates.org/person/laura-smith-2TNoDzyyX8qls94MVmmXlN/"
+  },
+  {
+    "id": "ocd-person/9fe046dc-4a09-4f3a-8054-97718b4dc017",
+    "name": "Mark Noland",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:mt/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Noland",
+    "image": "",
+    "email": "mark.noland@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:51.543484+00:00",
+    "updated_at": "2025-05-15T01:18:01.261649+00:00",
+    "openstates_url": "https://openstates.org/person/mark-noland-4rgH2ER9qV9Hn6PhuSPwOd/"
+  },
+  {
+    "id": "ocd-person/3e82bb94-a815-40d2-b125-b9884517b1c3",
+    "name": "Mary Ann Dunwell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:mt/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Mary Ann",
+    "family_name": "Dunwell",
+    "image": "",
+    "email": "maryann.dunwell@legmt.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:52:00.726954+00:00",
+    "updated_at": "2026-06-05T07:18:30.098728+00:00",
+    "openstates_url": "https://openstates.org/person/mary-ann-dunwell-1txGhBy21NJ4rZMGXy2mtX/"
+  },
+  {
+    "id": "ocd-person/109f7bbf-905d-418c-b8e2-11705af0a5fb",
+    "name": "Matt Regier",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:mt/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Regier",
+    "image": "",
+    "email": "matt.regier@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:53.190976+00:00",
+    "updated_at": "2025-05-15T01:17:24.579015+00:00",
+    "openstates_url": "https://openstates.org/person/matt-regier-VMlCbxUOkokuVqmBZhA9j/"
+  },
+  {
+    "id": "ocd-person/54c93c1b-968f-4b39-a17f-26ebcb266f69",
+    "name": "Mike Cuffe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:mt/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Cuffe",
+    "image": "",
+    "email": "mike.cuffe@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:54:13.170908+00:00",
+    "updated_at": "2025-05-15T01:17:15.672656+00:00",
+    "openstates_url": "https://openstates.org/person/mike-cuffe-2ZzJqB4pX3xpcJkiigSilN/"
+  },
+  {
+    "id": "ocd-person/3b95ca27-a496-4781-8fda-7d98db846f50",
+    "name": "Mike Yakawich",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:mt/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Yakawich",
+    "image": "",
+    "email": "mike.yakawich@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-03T06:35:40.417696+00:00",
+    "updated_at": "2025-05-15T01:16:45.727063+00:00",
+    "openstates_url": "https://openstates.org/person/mike-yakawich-1oR05EUb7px9LZ3VvdMZvM/"
+  },
+  {
+    "id": "ocd-person/4877fdac-4a93-4654-ad03-1b3038145c69",
+    "name": "Pat Flowers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:mt/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Pat",
+    "family_name": "Flowers",
+    "image": "",
+    "email": "pat.flowers@legmt.gov",
+    "gender": "Male",
+    "birth_date": "1956-03-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:53:17.752407+00:00",
+    "updated_at": "2025-05-15T01:17:07.869774+00:00",
+    "openstates_url": "https://openstates.org/person/pat-flowers-2CkHZw3p6FpB2tw8NnkE5x/"
+  },
+  {
+    "id": "ocd-person/8a8a229e-b35e-4fea-a4a9-114cc9f7488e",
+    "name": "Russel Tempel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:mt/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Russel",
+    "family_name": "Tempel",
+    "image": "",
+    "email": "russ.tempel@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:48.550374+00:00",
+    "updated_at": "2025-05-15T01:17:54.635200+00:00",
+    "openstates_url": "https://openstates.org/person/russel-tempel-4DQ4Hd4qncugi0PjhW6luI/"
+  },
+  {
+    "id": "ocd-person/45a7ac2a-90f6-4923-95e4-ebf6309e4a39",
+    "name": "Sara Novak",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:mt/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Sara",
+    "family_name": "Novak",
+    "image": "",
+    "email": "sara.novak@legmt.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-04-01T00:13:19.521267+00:00",
+    "updated_at": "2025-05-15T01:18:37.311097+00:00",
+    "openstates_url": "https://openstates.org/person/sara-novak-27R61KOyqyqdvccWnafkZl/"
+  },
+  {
+    "id": "ocd-person/83f50436-e02e-41b0-b6bb-dd44973665c8",
+    "name": "Shane Morigeau",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:mt/sldu:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Morigeau",
+    "image": "",
+    "email": "shane.morigeau@legmt.gov",
+    "gender": "Male",
+    "birth_date": "1984-09-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:51.103366+00:00",
+    "updated_at": "2025-05-15T01:17:50.000136+00:00",
+    "openstates_url": "https://openstates.org/person/shane-morigeau-40zxzjDD1nUC6kL0x8EwZs/"
+  },
+  {
+    "id": "ocd-person/307202d9-6626-46a3-9697-0cc5f80356e4",
+    "name": "Shelley Vance",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:mt/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Shelley",
+    "family_name": "Vance",
+    "image": "",
+    "email": "shelley.vance@legmt.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-03T06:37:58.639818+00:00",
+    "updated_at": "2026-06-04T07:25:12.816742+00:00",
+    "openstates_url": "https://openstates.org/person/shelley-vance-1TPjZ3kPrQTJZ3Y8Rxd576/"
+  },
+  {
+    "id": "ocd-person/b4f79bac-c985-4bdc-9505-145cdd861198",
+    "name": "Sue Vinton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:mt/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Sue",
+    "family_name": "Vinton",
+    "image": "",
+    "email": "sue.vinton@legmt.gov",
+    "gender": "Female",
+    "birth_date": "1956-11-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:44.694838+00:00",
+    "updated_at": "2025-05-15T01:18:36.569461+00:00",
+    "openstates_url": "https://openstates.org/person/sue-vinton-5VTm7F6y7xlNcGCP6t4kXI/"
+  },
+  {
+    "id": "ocd-person/8a773a18-0be3-4292-9543-e6e5051e59f4",
+    "name": "Susan Webber",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:mt/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Susan",
+    "family_name": "Webber",
+    "image": "",
+    "email": "susan.webber@legmt.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-07T01:53:41.757607+00:00",
+    "updated_at": "2025-05-15T01:16:51.925902+00:00",
+    "openstates_url": "https://openstates.org/person/susan-webber-4DHQXANSRicIqQiFjI21um/"
+  },
+  {
+    "id": "ocd-person/97c7ced5-ba80-4a9a-80ca-349fd2040a64",
+    "name": "Theresa Manzella",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:mt/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Theresa",
+    "family_name": "Manzella",
+    "image": "",
+    "email": "theresa.manzella@legmt.gov",
+    "gender": "Female",
+    "birth_date": "1964-11-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-04-01T00:13:11.342482+00:00",
+    "updated_at": "2025-05-15T01:18:20.854972+00:00",
+    "openstates_url": "https://openstates.org/person/theresa-manzella-4cP9XRo2bT8uXvXUBMmpGu/"
+  },
+  {
+    "id": "ocd-person/3a84733c-95e7-4927-af5f-63f82cb8a884",
+    "name": "Tom McGillvray",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:mt/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "McGillvray",
+    "image": "",
+    "email": "tom.mcgillvray@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-04-01T00:13:14.633062+00:00",
+    "updated_at": "2025-05-15T01:17:36.970458+00:00",
+    "openstates_url": "https://openstates.org/person/tom-mcgillvray-1mQ5GA5vXAfKbd4yrwrBCO/"
+  },
+  {
+    "id": "ocd-person/3808001c-481b-413d-bf39-0f6dce17912a",
+    "name": "Tony Tezak",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:mt/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Tezak",
+    "image": "",
+    "email": "tony.tezak@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T21:02:18.806542+00:00",
+    "updated_at": "2026-06-04T07:24:20.019414+00:00",
+    "openstates_url": "https://openstates.org/person/tony-tezak-1hjE2jkF9WzOazfoDLxQj4/"
+  },
+  {
+    "id": "ocd-person/a86b7e4c-c7f9-46fa-89d5-3cce2317ae11",
+    "name": "Vince Ricci",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:mt/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Vince",
+    "family_name": "Ricci",
+    "image": "",
+    "email": "vince.ricci@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:58.944033+00:00",
+    "updated_at": "2025-05-15T01:17:38.596291+00:00",
+    "openstates_url": "https://openstates.org/person/vince-ricci-57npnnf642LKve4ic5BzST/"
+  },
+  {
+    "id": "ocd-person/8f827a3b-16fe-4e09-bad0-c3e29c73d9c8",
+    "name": "Wendy McKamey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:mt/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Wendy",
+    "family_name": "McKamey",
+    "image": "",
+    "email": "wendy.mckamey@legmt.gov",
+    "gender": "Female",
+    "birth_date": "1946-12-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:47.952994+00:00",
+    "updated_at": "2025-05-15T01:17:19.519027+00:00",
+    "openstates_url": "https://openstates.org/person/wendy-mckamey-4MnWveOzJqATnCWoTu4Y48/"
+  },
+  {
+    "id": "ocd-person/d6a3a052-3fb3-4dce-9ce0-074852fb2612",
+    "name": "Willis Curdy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:mt/sldu:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Willis",
+    "family_name": "Curdy",
+    "image": "",
+    "email": "willis.curdy@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:51:59.246639+00:00",
+    "updated_at": "2025-05-15T01:18:31.669740+00:00",
+    "openstates_url": "https://openstates.org/person/willis-curdy-6X18OPU6CFBkpubAQbOeLC/"
+  },
+  {
+    "id": "ocd-person/4b0e74d3-19ae-449e-b712-ac96d2c1a165",
+    "name": "Wylie Galt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:mt/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mt/government",
+      "name": "Montana",
+      "classification": "state"
+    },
+    "given_name": "Wylie",
+    "family_name": "Galt",
+    "image": "",
+    "email": "wylie.galt@legmt.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:52:01.920674+00:00",
+    "updated_at": "2025-05-15T01:18:38.190625+00:00",
+    "openstates_url": "https://openstates.org/person/wylie-galt-2Hd1vWFQbJe4fCmvUXqZj3/"
+  }
+]

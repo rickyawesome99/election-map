@@ -1,0 +1,4590 @@
+[
+  {
+    "id": "ocd-person/4183f327-e2a6-4b1a-9d23-161da1b5e261",
+    "name": "Aaron Michlewitz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Aaron",
+    "family_name": "Michlewitz",
+    "image": "https://malegislature.gov/Legislators/Profile/170/AMM1.jpg",
+    "email": "aaron.m.michlewitz@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1978-06-07",
+    "death_date": "",
+    "extras": {
+      "member code": "AMM1",
+      "leadership position": "House Ways and Means Chair"
+    },
+    "created_at": "2018-10-18T14:46:49.271417+00:00",
+    "updated_at": "2025-04-24T07:01:23.377691+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-michlewitz-1zcnkmjbvPDmiVMWTt6ZkH/"
+  },
+  {
+    "id": "ocd-person/c3d23eba-caa6-4d2a-bbd2-5b8b2ca184ae",
+    "name": "Aaron Saunders",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7th Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:7th_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Aaron",
+    "family_name": "Saunders",
+    "image": "https://malegislature.gov/Legislators/Profile/170/ALS1.jpg",
+    "email": "aaron.saunders@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "ALS1"
+    },
+    "created_at": "2023-02-13T19:14:39.019091+00:00",
+    "updated_at": "2024-10-09T22:35:50.416709+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-saunders-5xVaKdLeFHX0QZwKgpch5C/"
+  },
+  {
+    "id": "ocd-person/804c5518-7fdf-43c9-ba24-f2c24eb3b0ab",
+    "name": "Adam Scanlon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:14th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Scanlon",
+    "image": "https://malegislature.gov/Legislators/Profile/170/AJS1.jpg",
+    "email": "adam.scanlon@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "AJS1"
+    },
+    "created_at": "2021-01-07T11:18:53.089261+00:00",
+    "updated_at": "2026-03-21T06:51:49.694179+00:00",
+    "openstates_url": "https://openstates.org/person/adam-scanlon-3u5tukhuRNsHDurEgCHH1n/"
+  },
+  {
+    "id": "ocd-person/f8772f1e-29f7-42e2-8a8c-ab4005153b05",
+    "name": "Adrian Madaro",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Adrian",
+    "family_name": "Madaro",
+    "image": "https://malegislature.gov/Legislators/Profile/170/ACM1.jpg",
+    "email": "adrian.madaro@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1988-11-02",
+    "death_date": "",
+    "extras": {
+      "member code": "ACM1"
+    },
+    "created_at": "2018-10-18T14:46:37.032569+00:00",
+    "updated_at": "2026-03-21T06:51:02.179007+00:00",
+    "openstates_url": "https://openstates.org/person/adrian-madaro-7YqYzODhFcy187pqBwYJnh/"
+  },
+  {
+    "id": "ocd-person/300d40b3-9479-43c0-99d3-18f94e1110cc",
+    "name": "Adrianne Ramos",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:14th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Adrianne",
+    "family_name": "Ramos",
+    "image": "https://malegislature.gov/Legislators/Profile/170/APR1.jpg",
+    "email": "adrianne.ramos@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "APR1"
+    },
+    "created_at": "2023-02-13T19:14:41.824564+00:00",
+    "updated_at": "2024-10-09T22:36:57.118073+00:00",
+    "openstates_url": "https://openstates.org/person/adrianne-ramos-1SfgfUnNoRkFirer7GFi4y/"
+  },
+  {
+    "id": "ocd-person/6e81dcb7-4a04-4a88-b5f2-728a3336cf9d",
+    "name": "Alan Silvia",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:7th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Alan",
+    "family_name": "Silvia",
+    "image": "https://malegislature.gov/Legislators/Profile/170/A_S1.jpg",
+    "email": "alan.silvia@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1951-10-11",
+    "death_date": "",
+    "extras": {
+      "member code": "A_S1"
+    },
+    "created_at": "2018-10-18T14:46:47.985712+00:00",
+    "updated_at": "2026-03-21T06:51:34.557830+00:00",
+    "openstates_url": "https://openstates.org/person/alan-silvia-3MWVC5ziaEp4paeRvNDImD/"
+  },
+  {
+    "id": "ocd-person/2a9569a0-feaf-431d-8a8d-012d8ebccbf8",
+    "name": "Alice Peisch",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:14th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Alice",
+    "family_name": "Peisch",
+    "image": "https://malegislature.gov/Legislators/Profile/170/AHP1.jpg",
+    "email": "alice.peisch@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1954-10-04",
+    "death_date": "",
+    "extras": {
+      "member code": "AHP1",
+      "leadership position": "Assistant Majority Leader"
+    },
+    "created_at": "2018-10-18T14:47:04.031717+00:00",
+    "updated_at": "2026-04-25T00:56:18.829371+00:00",
+    "openstates_url": "https://openstates.org/person/alice-peisch-1ILxUGwFL5Y6CeBux2agLQ/"
+  },
+  {
+    "id": "ocd-person/bed31f9a-e759-41a5-80b6-8b6bb9a64762",
+    "name": "Alyson Sullivan-Almeida",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7th Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:7th_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Alyson",
+    "family_name": "Sullivan-Almeida",
+    "image": "https://malegislature.gov/Legislators/Profile/170/AMS2.jpg",
+    "email": "alyson.sullivan@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1988-02-07",
+    "death_date": "",
+    "extras": {
+      "member code": "AMS2"
+    },
+    "created_at": "2019-01-05T03:24:00.749697+00:00",
+    "updated_at": "2026-01-29T06:52:04.481958+00:00",
+    "openstates_url": "https://openstates.org/person/alyson-sullivan-almeida-5o51bEx3tnMAs7p8cZknPG/"
+  },
+  {
+    "id": "ocd-person/adb7ebb2-480f-4215-859e-3a1194e9a598",
+    "name": "Amy Sangiolo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:11th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Amy",
+    "family_name": "Sangiolo",
+    "image": "https://malegislature.gov/Legislators/Profile/170/AMS3.jpg",
+    "email": "amy.sangiolo@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "AMS3"
+    },
+    "created_at": "2025-01-05T10:35:29.046519+00:00",
+    "updated_at": "2026-06-04T06:56:35.398891+00:00",
+    "openstates_url": "https://openstates.org/person/amy-sangiolo-5HnivCaOntYeABEZlpuPvM/"
+  },
+  {
+    "id": "ocd-person/c1f81bec-d032-4f41-940c-ca32f2b5af12",
+    "name": "Andy Vargas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Andy",
+    "family_name": "Vargas",
+    "image": "https://malegislature.gov/Legislators/Profile/170/AXV1.jpg",
+    "email": "andy.vargas@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "AXV1"
+    },
+    "created_at": "2018-10-18T14:46:44.302913+00:00",
+    "updated_at": "2026-03-21T06:51:32.227253+00:00",
+    "openstates_url": "https://openstates.org/person/andy-vargas-5u0u7sb6Vmsne4xMat4Yug/"
+  },
+  {
+    "id": "ocd-person/8302648f-4ed2-454e-ad1e-d7389e25b8dc",
+    "name": "Angelo Puppolo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12th Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:12th_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Angelo",
+    "family_name": "Puppolo",
+    "image": "https://malegislature.gov/Legislators/Profile/170/AJP1.jpg",
+    "email": "angelo.puppolo@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "AJP1"
+    },
+    "created_at": "2018-10-18T14:46:48.317875+00:00",
+    "updated_at": "2026-04-04T06:52:02.769157+00:00",
+    "openstates_url": "https://openstates.org/person/angelo-puppolo-3zD5Td3ReKSKkVEXJOkynU/"
+  },
+  {
+    "id": "ocd-person/04997a33-67a9-4535-95d2-c9a4c260519d",
+    "name": "Bill Galvin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:6th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Galvin",
+    "image": "https://malegislature.gov/Legislators/Profile/170/WCG1.jpg",
+    "email": "william.galvin@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1956-10-18",
+    "death_date": "",
+    "extras": {
+      "member code": "WCG1"
+    },
+    "created_at": "2018-10-18T14:46:58.666434+00:00",
+    "updated_at": "2024-10-09T22:35:30.239509+00:00",
+    "openstates_url": "https://openstates.org/person/bill-galvin-8g6jeh8luXsBHbFsHrwS5/"
+  },
+  {
+    "id": "ocd-person/9f0c5984-accf-45a3-8922-07aa7ade0030",
+    "name": "Billy MacGregor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:10th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Billy",
+    "family_name": "MacGregor",
+    "image": "https://malegislature.gov/Legislators/Profile/170/WFM1.jpg",
+    "email": "bill.macgregor@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "WFM1"
+    },
+    "created_at": "2023-08-08T22:55:55.374391+00:00",
+    "updated_at": "2026-03-21T06:51:03.170069+00:00",
+    "openstates_url": "https://openstates.org/person/billy-macgregor-4q7QH7xstmERhFFixMrOnQ/"
+  },
+  {
+    "id": "ocd-person/368c3f95-1124-4f0a-9ab5-7361cb2805d3",
+    "name": "Brad Jones",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:20th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Jones",
+    "image": "https://malegislature.gov/Legislators/Profile/170/BHJ1.jpg",
+    "email": "bradley.jones@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-01-09",
+    "death_date": "",
+    "extras": {
+      "member code": "BHJ1",
+      "leadership position": "Minority Leader"
+    },
+    "created_at": "2018-10-18T14:47:04.722693+00:00",
+    "updated_at": "2026-03-21T06:51:01.173127+00:00",
+    "openstates_url": "https://openstates.org/person/brad-jones-1evg7Nv7E9cXvarh7zp055/"
+  },
+  {
+    "id": "ocd-person/99c9c9e7-f0e3-480b-ad38-de297e6c635a",
+    "name": "Brandy Fluker-Reid",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:12th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Brandy",
+    "family_name": "Fluker-Reid",
+    "image": "https://malegislature.gov/Legislators/Profile/170/BFO1.jpg",
+    "email": "brandy.flukerreid@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1983-08-13",
+    "death_date": "",
+    "extras": {
+      "member code": "BFO1"
+    },
+    "created_at": "2021-01-07T11:18:54.534206+00:00",
+    "updated_at": "2026-03-21T06:51:10.992375+00:00",
+    "openstates_url": "https://openstates.org/person/brandy-fluker-reid-4gC2i3ojqRsdJzwYnvBCR8/"
+  },
+  {
+    "id": "ocd-person/503a0888-f086-4b52-b03c-c5293378bc51",
+    "name": "Brian Ashe",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Ashe",
+    "image": "https://malegislature.gov/Legislators/Profile/170/BMA1.jpg",
+    "email": "brian.ashe@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1963-04-23",
+    "death_date": "",
+    "extras": {
+      "member code": "BMA1"
+    },
+    "created_at": "2018-10-18T14:46:39.440963+00:00",
+    "updated_at": "2025-04-01T00:52:03.442168+00:00",
+    "openstates_url": "https://openstates.org/person/brian-ashe-2RNuGJKB9RM8td4WwwHKfx/"
+  },
+  {
+    "id": "ocd-person/66e7c819-cd52-4034-bace-bfec476c106d",
+    "name": "Brian Murray",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:10th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Murray",
+    "image": "https://malegislature.gov/Legislators/Profile/170/BWM1.jpg",
+    "email": "brian.murray@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "BWM1"
+    },
+    "created_at": "2018-10-18T14:47:00.102066+00:00",
+    "updated_at": "2026-03-21T06:51:04.061854+00:00",
+    "openstates_url": "https://openstates.org/person/brian-murray-38B8nJB4GIm2DbUt1vCN9J/"
+  },
+  {
+    "id": "ocd-person/2b6d0884-6638-410e-87b7-243c7ca18a16",
+    "name": "Bridget Plouffe",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9th Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:9th_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Bridget",
+    "family_name": "Plouffe",
+    "image": "https://malegislature.gov/Legislators/Profile/170/BMP1.jpg",
+    "email": "bridget.plouffe@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "BMP1"
+    },
+    "created_at": "2025-01-05T10:35:30.737911+00:00",
+    "updated_at": "2026-06-04T06:55:44.644511+00:00",
+    "openstates_url": "https://openstates.org/person/bridget-plouffe-1JwUtrfuwyTeAw2UkeqfzC/"
+  },
+  {
+    "id": "ocd-person/f81b07bd-cc43-47be-95ea-dca26f19a647",
+    "name": "Bruce Ayers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Bruce",
+    "family_name": "Ayers",
+    "image": "https://malegislature.gov/Legislators/Profile/170/BJA1.jpg",
+    "email": "bruce.ayers@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1962-04-17",
+    "death_date": "",
+    "extras": {
+      "member code": "BJA1"
+    },
+    "created_at": "2018-10-18T14:46:46.118858+00:00",
+    "updated_at": "2026-03-21T06:51:20.640583+00:00",
+    "openstates_url": "https://openstates.org/person/bruce-ayers-7YARtavStkKPKeZGcWUZGB/"
+  },
+  {
+    "id": "ocd-person/b23dd64e-a05c-4fe1-8562-c29436ca79bb",
+    "name": "Bud Williams",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11th Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:11th_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Bud",
+    "family_name": "Williams",
+    "image": "https://malegislature.gov/Legislators/Profile/170/BLW1.jpg",
+    "email": "bud.williams@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "BLW1"
+    },
+    "created_at": "2018-10-18T14:46:50.585811+00:00",
+    "updated_at": "2026-03-21T06:51:26.535121+00:00",
+    "openstates_url": "https://openstates.org/person/bud-williams-5QKtPyVwMvhtaEEAAXLgxX/"
+  },
+  {
+    "id": "ocd-person/c4d03c0e-713d-4195-ba23-1394f225494b",
+    "name": "Carlos Gonz\u00e1lez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10th Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:10th_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Carlos",
+    "family_name": "Gonz\u00e1lez",
+    "image": "https://malegislature.gov/Legislators/Profile/170/C_G1.jpg",
+    "email": "carlos.gonzalez@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "C_G1"
+    },
+    "created_at": "2018-10-18T14:47:01.730053+00:00",
+    "updated_at": "2026-03-21T06:50:50.468036+00:00",
+    "openstates_url": "https://openstates.org/person/carlos-gonzalez-5zNetMugfU4zird1IdVJ8N/"
+  },
+  {
+    "id": "ocd-person/b9a91cec-bad7-43a7-8fd2-60cd704bd7ab",
+    "name": "Carmine Gentile",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:13th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Carmine",
+    "family_name": "Gentile",
+    "image": "https://malegislature.gov/Legislators/Profile/170/CLG1.jpg",
+    "email": "carmine.gentile@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "CLG1"
+    },
+    "created_at": "2018-10-18T14:46:36.084435+00:00",
+    "updated_at": "2026-06-04T06:55:52.476828+00:00",
+    "openstates_url": "https://openstates.org/person/carmine-gentile-5eKreNdCpB1oaigkPQKDnv/"
+  },
+  {
+    "id": "ocd-person/af41924a-7c46-4b6b-b71b-bba683c62c5f",
+    "name": "Carole Fiola",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:6th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Carole",
+    "family_name": "Fiola",
+    "image": "https://malegislature.gov/Legislators/Profile/170/CAF1.jpg",
+    "email": "carole.fiola@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1960-03-03",
+    "death_date": "",
+    "extras": {
+      "member code": "CAF1"
+    },
+    "created_at": "2018-10-18T14:46:42.484095+00:00",
+    "updated_at": "2026-03-21T06:51:33.206280+00:00",
+    "openstates_url": "https://openstates.org/person/carole-fiola-5KhceZeM09ipZOLljiyO6B/"
+  },
+  {
+    "id": "ocd-person/c30f76b4-73d6-4795-be75-c46973d17f59",
+    "name": "Chris Flanagan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Barnstable",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_barnstable"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Flanagan",
+    "image": "https://malegislature.gov/Legislators/Profile/170/CRF1.jpg",
+    "email": "christopher.flanagan@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "CRF1"
+    },
+    "created_at": "2023-02-13T19:14:37.700431+00:00",
+    "updated_at": "2026-03-21T06:51:35.585408+00:00",
+    "openstates_url": "https://openstates.org/person/chris-flanagan-5w4ZNj9QWgKAyq15NwsCcb/"
+  },
+  {
+    "id": "ocd-person/9750bdb4-4dce-4003-85ec-672185a3a5a4",
+    "name": "Chris Hendricks",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:11th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Hendricks",
+    "image": "https://malegislature.gov/Legislators/Profile/170/C_H1.jpg",
+    "email": "chris.hendricks@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "C_H1"
+    },
+    "created_at": "2019-01-05T03:22:55.270154+00:00",
+    "updated_at": "2026-03-21T06:51:24.779410+00:00",
+    "openstates_url": "https://openstates.org/person/chris-hendricks-4bWjt3guL4N7FGg9wysdGO/"
+  },
+  {
+    "id": "ocd-person/59539448-5c3b-4d4d-8e96-48fabb01b10f",
+    "name": "Chris Worrell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:5th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Worrell",
+    "image": "https://malegislature.gov/Legislators/Profile/170/CJW1.jpg",
+    "email": "christopher.worrell@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "CJW1"
+    },
+    "created_at": "2023-02-13T19:14:33.737986+00:00",
+    "updated_at": "2026-03-21T06:51:18.373190+00:00",
+    "openstates_url": "https://openstates.org/person/chris-worrell-2iYVneJJIsEzwKSaeYhD8Z/"
+  },
+  {
+    "id": "ocd-person/35396516-6096-4336-ab74-80d6d8e53bcd",
+    "name": "Christine Barber",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:34th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Christine",
+    "family_name": "Barber",
+    "image": "https://malegislature.gov/Legislators/Profile/170/CPB2.jpg",
+    "email": "christine.barber@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "CPB2"
+    },
+    "created_at": "2018-10-18T14:46:54.307482+00:00",
+    "updated_at": "2026-03-21T06:52:08.844426+00:00",
+    "openstates_url": "https://openstates.org/person/christine-barber-1cQp14g9sHBU1fM1K1SWQH/"
+  },
+  {
+    "id": "ocd-person/560c5ca3-d9b4-4c47-998c-a9baa16a8309",
+    "name": "Christopher Markey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:9th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Christopher",
+    "family_name": "Markey",
+    "image": "https://malegislature.gov/Legislators/Profile/170/CMM1.jpg",
+    "email": "christopher.markey@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "CMM1"
+    },
+    "created_at": "2018-10-18T14:47:02.384434+00:00",
+    "updated_at": "2025-04-24T07:02:18.824673+00:00",
+    "openstates_url": "https://openstates.org/person/christopher-markey-2cMzLgnIMrrvY6xtDr9OGX/"
+  },
+  {
+    "id": "ocd-person/3b92fb1f-d268-40d8-8a4e-851f11fe81ff",
+    "name": "Chynah Tyler",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:7th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Chynah",
+    "family_name": "Tyler",
+    "image": "https://malegislature.gov/Legislators/Profile/170/C_T1.jpg",
+    "email": "chynah.tyler@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "C_T1"
+    },
+    "created_at": "2018-10-18T14:47:00.437009+00:00",
+    "updated_at": "2024-10-09T22:35:40.869262+00:00",
+    "openstates_url": "https://openstates.org/person/chynah-tyler-1oPiV88Q0QGgbaZM4aeMbn/"
+  },
+  {
+    "id": "ocd-person/0e38852a-52b0-4aac-8a65-fa3fc964c88e",
+    "name": "Colleen Garry",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:36th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Colleen",
+    "family_name": "Garry",
+    "image": "https://malegislature.gov/Legislators/Profile/170/CMG1.jpg",
+    "email": "colleen.garry@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1962-07-21",
+    "death_date": "",
+    "extras": {
+      "member code": "CMG1"
+    },
+    "created_at": "2018-10-18T14:46:35.595541+00:00",
+    "updated_at": "2025-04-24T07:02:04.949760+00:00",
+    "openstates_url": "https://openstates.org/person/colleen-garry-QpimnDNugRQbLSbJfjSGs/"
+  },
+  {
+    "id": "ocd-person/5f227f77-f58b-4ac6-b193-9f406bde4055",
+    "name": "Dan Cahill",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:10th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Cahill",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DFC1.jpg",
+    "email": "daniel.cahill@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "DFC1"
+    },
+    "created_at": "2018-10-18T14:46:42.327092+00:00",
+    "updated_at": "2024-10-09T22:36:05.041264+00:00",
+    "openstates_url": "https://openstates.org/person/dan-cahill-2tW2GuttYDlNBuWikNNFwL/"
+  },
+  {
+    "id": "ocd-person/d70e97f1-b8ec-489d-ab5a-2b7f3775ae8a",
+    "name": "Dan Donahue",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:16th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Donahue",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DMD1.jpg",
+    "email": "daniel.donahue@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1987-05-01",
+    "death_date": "",
+    "extras": {
+      "member code": "DMD1"
+    },
+    "created_at": "2018-10-18T14:46:47.053016+00:00",
+    "updated_at": "2025-04-24T07:01:17.694193+00:00",
+    "openstates_url": "https://openstates.org/person/dan-donahue-6Xo1DCsSUQcTt9LR8HVTmU/"
+  },
+  {
+    "id": "ocd-person/2990f236-cb76-4d93-af19-7792fa77290b",
+    "name": "Dan Hunt",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:13th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Hunt",
+    "image": "https://malegislature.gov/Legislators/Profile/170/djh1.jpg",
+    "email": "daniel.hunt@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "djh1"
+    },
+    "created_at": "2018-10-18T14:46:57.001212+00:00",
+    "updated_at": "2026-03-21T06:51:27.397077+00:00",
+    "openstates_url": "https://openstates.org/person/dan-hunt-1GQvPTJom8oALyEQs5lHkB/"
+  },
+  {
+    "id": "ocd-person/8f480d9c-0741-43bb-83a4-179745e1f3b2",
+    "name": "Dan Sena",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:37th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Sena",
+    "image": "http://malegislature.gov/Legislators/Profile/170/DAS1.jpg",
+    "email": "danillo.sena@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1986-09-07",
+    "death_date": "",
+    "extras": {
+      "member code": "DAS1"
+    },
+    "created_at": "2021-01-07T11:18:44.787029+00:00",
+    "updated_at": "2024-10-09T22:36:11.490049+00:00",
+    "openstates_url": "https://openstates.org/person/dan-sena-4MMpWvPISww1AnXmz68oGA/"
+  },
+  {
+    "id": "ocd-person/5696763c-5fd6-44dd-9dce-7be56632cedd",
+    "name": "Danielle Gregoire",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:4th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Danielle",
+    "family_name": "Gregoire",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DWG1.jpg",
+    "email": "danielle.gregoire@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1979-04-17",
+    "death_date": "",
+    "extras": {
+      "member code": "DWG1",
+      "leadership position": "First Division Chair"
+    },
+    "created_at": "2018-10-18T14:46:44.913950+00:00",
+    "updated_at": "2025-04-24T07:01:43.432717+00:00",
+    "openstates_url": "https://openstates.org/person/danielle-gregoire-2dO6HiHbl6HsPfPTbFhchZ/"
+  },
+  {
+    "id": "ocd-person/c0519476-08fc-44af-9114-c77d197f883d",
+    "name": "Danny Ryan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Ryan",
+    "image": "https://malegislature.gov/Legislators/Profile/170/djr1.jpg",
+    "email": "dan.ryan@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "djr1"
+    },
+    "created_at": "2018-10-18T14:46:36.561639+00:00",
+    "updated_at": "2026-03-21T06:51:39.676172+00:00",
+    "openstates_url": "https://openstates.org/person/danny-ryan-5qto9SLOdiw94hGQqBTFc5/"
+  },
+  {
+    "id": "ocd-person/b601dee7-1ad1-4f36-b585-b0fb5077fd89",
+    "name": "Dave Muradian",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:9th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Muradian",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DKM1.jpg",
+    "email": "david.muradian@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1982-11-21",
+    "death_date": "",
+    "extras": {
+      "member code": "DKM1"
+    },
+    "created_at": "2018-10-18T14:46:34.972081+00:00",
+    "updated_at": "2026-03-21T06:51:40.157289+00:00",
+    "openstates_url": "https://openstates.org/person/dave-muradian-5XRSQCkkue5GWMdOk7xaRN/"
+  },
+  {
+    "id": "ocd-person/f3dd7fd8-5d7f-4fa3-b2fe-910e375f2edd",
+    "name": "Dave Robertson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:19th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Robertson",
+    "image": "https://malegislature.gov/Legislators/Profile/170/D_R1.jpg",
+    "email": "david.robertson@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "D_R1"
+    },
+    "created_at": "2019-01-05T03:22:35.092943+00:00",
+    "updated_at": "2024-10-09T22:36:07.978854+00:00",
+    "openstates_url": "https://openstates.org/person/dave-robertson-7QAMNXtj4IvZUNOjBxLkc9/"
+  },
+  {
+    "id": "ocd-person/51adc4d9-23d8-442f-b692-c4e4204f552e",
+    "name": "Dave Rogers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:24th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Rogers",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DMR1.jpg",
+    "email": "dave.rogers@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "DMR1"
+    },
+    "created_at": "2018-10-18T14:46:37.336195+00:00",
+    "updated_at": "2026-03-21T06:51:58.930002+00:00",
+    "openstates_url": "https://openstates.org/person/dave-rogers-2U7n32IgbMqiikiRtuVUUA/"
+  },
+  {
+    "id": "ocd-person/5c798735-2f95-40a6-9ef7-4cd25eb638f6",
+    "name": "Dave Vieira",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Barnstable",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_barnstable"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Vieira",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DTV1.jpg",
+    "email": "david.vieira@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "DTV1"
+    },
+    "created_at": "2018-10-18T14:46:55.600166+00:00",
+    "updated_at": "2026-03-21T06:51:54.582168+00:00",
+    "openstates_url": "https://openstates.org/person/dave-vieira-2oUpcX4qNaleqiVwQhX0pq/"
+  },
+  {
+    "id": "ocd-person/5fde161f-7456-4006-bffd-eaf6fedc5aa3",
+    "name": "David Biele",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:4th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Biele",
+    "image": "https://malegislature.gov/Legislators/Profile/170/D_B1.jpg",
+    "email": "david.biele@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "D_B1"
+    },
+    "created_at": "2019-01-05T03:23:08.682644+00:00",
+    "updated_at": "2026-03-21T06:51:41.107989+00:00",
+    "openstates_url": "https://openstates.org/person/david-biele-2utlQ2pUbJ3JdbQdiuPN5P/"
+  },
+  {
+    "id": "ocd-person/cf295962-4f8d-427a-84e9-c7615ff94c8c",
+    "name": "David DeCoste",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5th Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:5th_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "DeCoste",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DFD1.jpg",
+    "email": "david.decoste@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "DFD1"
+    },
+    "created_at": "2018-10-18T14:46:40.282875+00:00",
+    "updated_at": "2026-03-21T06:51:37.040503+00:00",
+    "openstates_url": "https://openstates.org/person/david-decoste-6IuJ77MEoNyNp97QvMe5hE/"
+  },
+  {
+    "id": "ocd-person/ca659c30-e49e-420b-8213-797cfeb3c378",
+    "name": "David LeBoeuf",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:17th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "LeBoeuf",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DAL1.jpg",
+    "email": "david.leboeuf@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1989-05-26",
+    "death_date": "",
+    "extras": {
+      "member code": "DAL1"
+    },
+    "created_at": "2019-01-05T03:23:01.179421+00:00",
+    "updated_at": "2024-10-09T22:36:16.567904+00:00",
+    "openstates_url": "https://openstates.org/person/david-leboeuf-69usvo8Rj5Nss0sJeDb6fA/"
+  },
+  {
+    "id": "ocd-person/06867e5f-9de5-4cb2-a3ae-a039e890718c",
+    "name": "David Linsky",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:5th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Linsky",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DPL1.jpg",
+    "email": "david.linsky@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1957-10-16",
+    "death_date": "",
+    "extras": {
+      "member code": "DPL1"
+    },
+    "created_at": "2018-10-18T14:46:43.163817+00:00",
+    "updated_at": "2025-04-24T07:01:29.786977+00:00",
+    "openstates_url": "https://openstates.org/person/david-linsky-CJPtkn9E8koYoFNbbs5Xw/"
+  },
+  {
+    "id": "ocd-person/6c49bb2c-7c53-4f22-bfb9-04af813b95b0",
+    "name": "Dawne Shand",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dawne",
+    "family_name": "Shand",
+    "image": "https://malegislature.gov/Legislators/Profile/170/D_S1.jpg",
+    "email": "dawne.shand@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "D_S1"
+    },
+    "created_at": "2023-02-13T19:14:38.005673+00:00",
+    "updated_at": "2026-03-21T06:51:30.503668+00:00",
+    "openstates_url": "https://openstates.org/person/dawne-shand-3IKrizUyLOgwtCe8lzXhXU/"
+  },
+  {
+    "id": "ocd-person/3601344e-8a37-488b-a3b1-f355f4e52ea7",
+    "name": "Dennis Gallagher",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8th Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:8th_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dennis",
+    "family_name": "Gallagher",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DCG2.jpg",
+    "email": "dennis.gallagher@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "DCG2"
+    },
+    "created_at": "2025-01-05T10:35:22.879678+00:00",
+    "updated_at": "2026-06-04T06:56:32.395863+00:00",
+    "openstates_url": "https://openstates.org/person/dennis-gallagher-1du8QurIZiyBGuKRBYOSMZ/"
+  },
+  {
+    "id": "ocd-person/e8071049-2a8d-4633-b6cb-c1f6ae83bb7a",
+    "name": "Donald Wong",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:9th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Donald",
+    "family_name": "Wong",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DHW1.jpg",
+    "email": "donald.wong@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1952-01-15",
+    "death_date": "",
+    "extras": {
+      "member code": "DHW1"
+    },
+    "created_at": "2018-10-18T14:46:51.701139+00:00",
+    "updated_at": "2026-03-21T06:50:53.134122+00:00",
+    "openstates_url": "https://openstates.org/person/donald-wong-73pRltGuvcuyumSD0PHKvK/"
+  },
+  {
+    "id": "ocd-person/5a276629-f50a-4d9a-a54e-2c0e07f84968",
+    "name": "Donnie Berthiaume",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:5th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Donnie",
+    "family_name": "Berthiaume",
+    "image": "https://malegislature.gov/Legislators/Profile/170/DRB1.jpg",
+    "email": "donald.berthiaume@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "DRB1"
+    },
+    "created_at": "2018-10-18T14:46:37.183467+00:00",
+    "updated_at": "2026-03-21T06:52:11.396541+00:00",
+    "openstates_url": "https://openstates.org/person/donnie-berthiaume-2k7JWJOHxYdME6MOHhCgu0/"
+  },
+  {
+    "id": "ocd-person/b4f97e46-d8cd-45f7-88c4-94926b0bf60b",
+    "name": "Dru Tarr",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:5th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Dru",
+    "family_name": "Tarr",
+    "image": "https://malegislature.gov/Legislators/Profile/170/AFT1.jpg",
+    "email": "andrew.tarr@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-04-04T06:52:45.434909+00:00",
+    "updated_at": "2026-06-04T06:55:49.281706+00:00",
+    "openstates_url": "https://openstates.org/person/dru-tarr-5VUdWvvnsCq0FOAEkswQLz/"
+  },
+  {
+    "id": "ocd-person/a3f4c05a-b51a-4b8f-bc5d-d4cb82d74164",
+    "name": "Erika Uyterhoeven",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:27th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Erika",
+    "family_name": "Uyterhoeven",
+    "image": "https://malegislature.gov/Legislators/Profile/170/E_U1.jpg",
+    "email": "erika.uyterhoeven@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1986-07-26",
+    "death_date": "",
+    "extras": {
+      "member code": "E_U1"
+    },
+    "created_at": "2021-01-07T11:18:59.617896+00:00",
+    "updated_at": "2024-10-09T22:35:42.853576+00:00",
+    "openstates_url": "https://openstates.org/person/erika-uyterhoeven-4zNbGDgskSovk4hliaYNGu/"
+  },
+  {
+    "id": "ocd-person/824532f7-8dc9-4a1a-a7b3-16b2d0e78941",
+    "name": "Estela Reyes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:4th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Estela",
+    "family_name": "Reyes",
+    "image": "https://malegislature.gov/Legislators/Profile/170/EAR1.jpg",
+    "email": "estela.reyes@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "EAR1"
+    },
+    "created_at": "2023-02-13T19:14:26.077072+00:00",
+    "updated_at": "2026-03-21T06:52:13.525182+00:00",
+    "openstates_url": "https://openstates.org/person/estela-reyes-3xocqZjL3Hn3WcpVDNhqa1/"
+  },
+  {
+    "id": "ocd-person/99109961-27e8-4e58-8269-3a1deb29f228",
+    "name": "Francisco Paulino",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:16th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Francisco",
+    "family_name": "Paulino",
+    "image": "https://malegislature.gov/Legislators/Profile/170/FEP1.jpg",
+    "email": "francisco.paulino@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "FEP1"
+    },
+    "created_at": "2023-02-13T19:14:29.008436+00:00",
+    "updated_at": "2025-04-24T07:02:00.263353+00:00",
+    "openstates_url": "https://openstates.org/person/francisco-paulino-4epPXAwx7mFck67jLkbvQW/"
+  },
+  {
+    "id": "ocd-person/8c42603e-4483-44f1-995f-5956fa09c73c",
+    "name": "Frank Moran",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:17th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Frank",
+    "family_name": "Moran",
+    "image": "https://malegislature.gov/Legislators/Profile/170/FAM1.jpg",
+    "email": "frank.moran@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "FAM1",
+      "leadership position": "Second Assistant Majority Leader"
+    },
+    "created_at": "2018-10-18T14:46:34.630255+00:00",
+    "updated_at": "2026-06-04T06:56:51.708877+00:00",
+    "openstates_url": "https://openstates.org/person/frank-moran-4GfG6B8YPBySFFcvNKCkgO/"
+  },
+  {
+    "id": "ocd-person/2770216d-1802-435d-b147-4ca1d684dc45",
+    "name": "Greg Schwartz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:12th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Schwartz",
+    "image": "https://malegislature.gov/Legislators/Profile/170/G_S1.jpg",
+    "email": "greg.schwartz@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "G_S1"
+    },
+    "created_at": "2025-01-05T10:35:32.087425+00:00",
+    "updated_at": "2026-06-04T06:55:46.497922+00:00",
+    "openstates_url": "https://openstates.org/person/greg-schwartz-1CPwYufS9zwSvH5enBHjbJ/"
+  },
+  {
+    "id": "ocd-person/8d481937-69c5-477d-ba72-e3b682ed0a4d",
+    "name": "Hadley Luddy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4th Barnstable",
+      "division_id": "ocd-division/country:us/state:ma/sldl:4th_barnstable"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Hadley",
+    "family_name": "Luddy",
+    "image": "https://malegislature.gov/Legislators/Profile/170/H_L1.jpg",
+    "email": "hadley.luddy@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "H_L1"
+    },
+    "created_at": "2025-01-05T10:35:29.295867+00:00",
+    "updated_at": "2026-03-21T06:51:29.638418+00:00",
+    "openstates_url": "https://openstates.org/person/hadley-luddy-4IarlZ1hYFYfDkYBytPqN3/"
+  },
+  {
+    "id": "ocd-person/f9a6f401-206b-43df-a1b9-0fc1cd8a3417",
+    "name": "Hannah Bowen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:6th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Hannah",
+    "family_name": "Bowen",
+    "image": "https://www.resolutionnorthshore.org/images/staff/AG22-Hannah_Bowen-228832.jpg",
+    "email": "hannah.bowen@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-05-23T12:53:07.427635+00:00",
+    "updated_at": "2026-03-21T06:52:15.964005+00:00",
+    "openstates_url": "https://openstates.org/person/hannah-bowen-7b5O0T6iiDVpyzVgB8m7t9/"
+  },
+  {
+    "id": "ocd-person/3dd1e2a8-3fdd-4d3a-9504-88a04f3fc973",
+    "name": "Hannah Kane",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:11th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Hannah",
+    "family_name": "Kane",
+    "image": "https://malegislature.gov/Legislators/Profile/170/HEK1.jpg",
+    "email": "hannah.kane@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "HEK1"
+    },
+    "created_at": "2018-10-18T14:46:47.831871+00:00",
+    "updated_at": "2024-10-09T22:36:09.705894+00:00",
+    "openstates_url": "https://openstates.org/person/hannah-kane-1seRt9l4tyYlTSTthxG0gt/"
+  },
+  {
+    "id": "ocd-person/6b27dd86-5c03-4223-957c-9efd12c70e04",
+    "name": "Homar Gomez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Hampshire",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_hampshire"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Homar",
+    "family_name": "Gomez",
+    "image": "https://images.squarespace-cdn.com/content/v1/6616e5c7caac657d5a7f9682/0c122a29-b755-4647-a180-d5cbdb08bbcc/Screenshot+2024-04-10+at+4.35.35+PM.jpg",
+    "email": "homar.gomez@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "H_G1"
+    },
+    "created_at": "2025-01-05T10:35:18.961299+00:00",
+    "updated_at": "2026-06-04T06:55:47.895839+00:00",
+    "openstates_url": "https://openstates.org/person/homar-gomez-3GCOdyAv4VVqvBWUwWA7nQ/"
+  },
+  {
+    "id": "ocd-person/e3dc06b1-8523-4a33-959f-21ed0d5da851",
+    "name": "Jack Lewis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:7th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Lewis",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jack_Patrick_Lewis.jpg",
+    "email": "jack.lewis@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JPL1"
+    },
+    "created_at": "2018-10-18T14:47:03.548384+00:00",
+    "updated_at": "2026-06-04T06:56:19.687551+00:00",
+    "openstates_url": "https://openstates.org/person/jack-lewis-6vxoFOJrZJp1GyWHalUVjl/"
+  },
+  {
+    "id": "ocd-person/47ffc61b-0cae-4386-ae68-12b20eadd83f",
+    "name": "James Arena-DeRosa",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:8th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Arena-DeRosa",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JCD1.jpg",
+    "email": "james.arena-derosa@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1956-07-03",
+    "death_date": "",
+    "extras": {
+      "member code": "JCD1"
+    },
+    "created_at": "2023-02-13T19:14:32.286786+00:00",
+    "updated_at": "2024-10-09T22:36:12.243435+00:00",
+    "openstates_url": "https://openstates.org/person/james-arena-derosa-2BrLL4fG0zDbq3F7oU6CtD/"
+  },
+  {
+    "id": "ocd-person/ef175304-020e-4f79-b71f-dc961b738254",
+    "name": "Jamie Murphy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:4th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jamie",
+    "family_name": "Murphy",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JMM1.jpg",
+    "email": "james.murphy@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1969-11-15",
+    "death_date": "",
+    "extras": {
+      "member code": "JMM1"
+    },
+    "created_at": "2018-10-18T14:46:58.024882+00:00",
+    "updated_at": "2024-10-09T22:35:54.052656+00:00",
+    "openstates_url": "https://openstates.org/person/jamie-murphy-7H9pAk64CCU5Sm2y7OR8E8/"
+  },
+  {
+    "id": "ocd-person/033bf9eb-2706-4c5f-9f93-8e8d222bf2c0",
+    "name": "Jay Livingstone",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:8th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Livingstone",
+    "image": "https://malegislature.gov/Legislators/Profile/170/J_L1.jpg",
+    "email": "jay.livingstone@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "J_L1"
+    },
+    "created_at": "2018-10-18T14:47:02.233244+00:00",
+    "updated_at": "2024-10-09T22:36:50.454994+00:00",
+    "openstates_url": "https://openstates.org/person/jay-livingstone-66NwYZUcEmjl9rLAKmdai/"
+  },
+  {
+    "id": "ocd-person/b23d4ed5-1994-4355-a102-cdf15ae57230",
+    "name": "Jeff Roy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:10th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Roy",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JNR1.jpg",
+    "email": "jeffrey.roy@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1961-09-08",
+    "death_date": "",
+    "extras": {
+      "member code": "JNR1"
+    },
+    "created_at": "2018-10-18T14:47:02.704640+00:00",
+    "updated_at": "2026-03-21T06:51:08.617034+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-roy-5QKeQKGgkDkD0VMvK7uQca/"
+  },
+  {
+    "id": "ocd-person/cd89185f-f928-4b26-bb47-60f1bccad0dd",
+    "name": "Jeff Turco",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:19th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Turco",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JRT1.jpg",
+    "email": "jeffrey.turco@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JRT1"
+    },
+    "created_at": "2021-04-28T00:09:55.002745+00:00",
+    "updated_at": "2026-03-21T06:51:45.874744+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-turco-6Fq4wRb35ih8agmjomOR93/"
+  },
+  {
+    "id": "ocd-person/eab9b69f-0434-4307-972c-6acce9deb370",
+    "name": "Jenny Armini",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:8th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jenny",
+    "family_name": "Armini",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JBA1.jpg",
+    "email": "jennifer.armini@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JBA1"
+    },
+    "created_at": "2023-02-13T19:14:33.176535+00:00",
+    "updated_at": "2026-06-04T06:56:50.182748+00:00",
+    "openstates_url": "https://openstates.org/person/jenny-armini-78v4hDaEhQTILwMR6xEjUu/"
+  },
+  {
+    "id": "ocd-person/0ed98993-456c-4630-bd52-894bdde0c0b0",
+    "name": "Jessica Giannino",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:16th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jessica",
+    "family_name": "Giannino",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JAG1.jpg",
+    "email": "jessica.giannino@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JAG1"
+    },
+    "created_at": "2021-01-07T11:18:39.273881+00:00",
+    "updated_at": "2026-03-21T06:51:50.161828+00:00",
+    "openstates_url": "https://openstates.org/person/jessica-giannino-S1J3piJJst042dwWJGp4y/"
+  },
+  {
+    "id": "ocd-person/70e42c78-89e1-43cb-bc65-7d0da132daa2",
+    "name": "Jim Arciero",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Arciero",
+    "image": "https://malegislature.gov/Legislators/Profile/170/J_A1.jpg",
+    "email": "james.arciero@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1974-08-27",
+    "death_date": "",
+    "extras": {
+      "member code": "J_A1"
+    },
+    "created_at": "2018-10-18T14:46:56.336253+00:00",
+    "updated_at": "2026-03-21T06:51:29.142808+00:00",
+    "openstates_url": "https://openstates.org/person/jim-arciero-3R1PoGGyuvYJk49xg9Mxec/"
+  },
+  {
+    "id": "ocd-person/c8936e7c-f0f5-4dc4-b9e9-774e38638787",
+    "name": "Jim Hawkins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Hawkins",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JKH1.jpg",
+    "email": "james.hawkins@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1949-10-17",
+    "death_date": "",
+    "extras": {
+      "member code": "JKH1"
+    },
+    "created_at": "2018-10-18T14:46:43.007750+00:00",
+    "updated_at": "2024-10-09T22:36:24.887133+00:00",
+    "openstates_url": "https://openstates.org/person/jim-hawkins-66TqByFVTtR4f3uhKVlFln/"
+  },
+  {
+    "id": "ocd-person/67f64532-7f9a-4cd3-8c89-dc9b5df06517",
+    "name": "Jim O'Day",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:14th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "O'Day",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JJO1.jpg",
+    "email": "james.o'day@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1954-05-23",
+    "death_date": "",
+    "extras": {
+      "member code": "JJO1",
+      "leadership position": "Fourth Division Chair"
+    },
+    "created_at": "2018-10-18T14:46:52.851955+00:00",
+    "updated_at": "2025-04-24T07:02:14.846940+00:00",
+    "openstates_url": "https://openstates.org/person/jim-o-day-3AAkqE4V0ftu52nR8JRjiZ/"
+  },
+  {
+    "id": "ocd-person/03d1f31d-1431-41d2-88b7-67b57d50f323",
+    "name": "Joan Meschino",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Joan",
+    "family_name": "Meschino",
+    "image": "https://malegislature.gov/Legislators/Profile/170/J_M1.jpg",
+    "email": "joan.meschino@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "J_M1"
+    },
+    "created_at": "2018-10-18T14:47:01.414508+00:00",
+    "updated_at": "2024-10-09T22:36:04.576583+00:00",
+    "openstates_url": "https://openstates.org/person/joan-meschino-7CvInQkeP77v967Dlg11X/"
+  },
+  {
+    "id": "ocd-person/6c3b63a2-ef13-43e5-b6de-d5e0901aa65a",
+    "name": "Joe McGonagle",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:28th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "McGonagle",
+    "image": "https://malegislature.gov/Legislators/Profile/170/jwm1.jpg",
+    "email": "joseph.mcgonagle@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "jwm1"
+    },
+    "created_at": "2018-10-18T14:46:58.356708+00:00",
+    "updated_at": "2026-03-21T06:52:14.848601+00:00",
+    "openstates_url": "https://openstates.org/person/joe-mcgonagle-3IEJMJbLwNt9Sylmflt8qA/"
+  },
+  {
+    "id": "ocd-person/0e6c20bd-bfcb-445c-a1ce-3be99e26398e",
+    "name": "Joe McKenna",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:18th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "McKenna",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JDM1.jpg",
+    "email": "joseph.mckenna@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JDM1"
+    },
+    "created_at": "2018-10-18T14:46:35.449045+00:00",
+    "updated_at": "2024-10-09T22:36:43.396186+00:00",
+    "openstates_url": "https://openstates.org/person/joe-mckenna-RDJ2jnt89C6PmrzoHm5h0/"
+  },
+  {
+    "id": "ocd-person/da8051b7-de05-4c30-9d37-5d7223906356",
+    "name": "John Barrett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Berkshire",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_berkshire"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Barrett",
+    "image": "https://malegislature.gov/Legislators/Profile/170/J_B1.jpg",
+    "email": "john.barrett@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1947-05-16",
+    "death_date": "",
+    "extras": {
+      "member code": "J_B1"
+    },
+    "created_at": "2018-10-18T14:46:57.235397+00:00",
+    "updated_at": "2026-03-21T06:51:22.132593+00:00",
+    "openstates_url": "https://openstates.org/person/john-barrett-6eIy65iakh2wD52PYbTlLS/"
+  },
+  {
+    "id": "ocd-person/013e94ee-496e-42f3-8b1b-f96c737f1f8e",
+    "name": "John Gaskey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Gaskey",
+    "image": "https://static.wixstatic.com/media/40d8f8_3ba01018eff64b309a92373daddd8344~mv2.jpg/v1/crop/x_140,y_436,w_734,h_891/fill/w_440,h_534,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Untitled-6.jpg",
+    "email": "john.gaskey@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1970-02-09",
+    "death_date": "",
+    "extras": {
+      "member code": "JRG2"
+    },
+    "created_at": "2025-01-05T10:35:20.641231+00:00",
+    "updated_at": "2026-06-04T06:56:09.948354+00:00",
+    "openstates_url": "https://openstates.org/person/john-gaskey-2LaigvPcaSFgm1Umy8vD4/"
+  },
+  {
+    "id": "ocd-person/1ea6937d-a39e-41e2-92fb-47c2966cd52e",
+    "name": "John Lawn",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:10th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Lawn",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JJL2.jpg",
+    "email": "john.lawn@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JJL2"
+    },
+    "created_at": "2018-10-18T14:46:35.128871+00:00",
+    "updated_at": "2025-04-24T07:01:37.298350+00:00",
+    "openstates_url": "https://openstates.org/person/john-lawn-vptVayhBpXLjGCwTr55Kw/"
+  },
+  {
+    "id": "ocd-person/2abbc0cb-6339-42d9-9947-69412a24301b",
+    "name": "John Mahoney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:13th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Mahoney",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JJM2.jpg",
+    "email": "john.mahoney@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JJM2"
+    },
+    "created_at": "2018-10-18T14:47:03.711763+00:00",
+    "updated_at": "2026-03-21T06:51:41.302380+00:00",
+    "openstates_url": "https://openstates.org/person/john-mahoney-1IdTpVUvsQoioUpBZNmgRP/"
+  },
+  {
+    "id": "ocd-person/0e8c6c71-bca0-46fd-86d1-223d41ed5517",
+    "name": "John Marsi",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:6th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Marsi",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JJM1.jpg",
+    "email": "john.marsi@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JJM1"
+    },
+    "created_at": "2024-04-01T20:44:59.965275+00:00",
+    "updated_at": "2026-03-21T06:51:52.315773+00:00",
+    "openstates_url": "https://openstates.org/person/john-marsi-RS472O2QPTWcZTvDvTNax/"
+  },
+  {
+    "id": "ocd-person/15ff9d00-e05e-470a-b89c-36038b1dd5bb",
+    "name": "John Moran",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:9th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Moran",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JFM1.jpg",
+    "email": "john.moran@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JFM1"
+    },
+    "created_at": "2023-08-08T22:56:23.622024+00:00",
+    "updated_at": "2025-04-24T07:02:28.324523+00:00",
+    "openstates_url": "https://openstates.org/person/john-moran-fVeZmFiEB41FrqlGBGsWp/"
+  },
+  {
+    "id": "ocd-person/50942563-77bb-49ec-a54c-6e26048a31a3",
+    "name": "John Rogers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:12th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Rogers",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JHR1.jpg",
+    "email": "john.rogers@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1964-10-22",
+    "death_date": "",
+    "extras": {
+      "member code": "JHR1"
+    },
+    "created_at": "2018-10-18T14:46:48.161533+00:00",
+    "updated_at": "2024-10-09T22:36:59.988383+00:00",
+    "openstates_url": "https://openstates.org/person/john-rogers-2S35WTFX4vrFVfjl9YdE9r/"
+  },
+  {
+    "id": "ocd-person/49c4bb4e-fadd-4136-953f-6bd64a970acb",
+    "name": "Jon Zlotnik",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Zlotnik",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JDZ1.jpg",
+    "email": "jon.zlotnik@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1990-05-07",
+    "death_date": "",
+    "extras": {
+      "member code": "JDZ1"
+    },
+    "created_at": "2018-10-18T14:46:42.664391+00:00",
+    "updated_at": "2026-03-21T06:52:17.564061+00:00",
+    "openstates_url": "https://openstates.org/person/jon-zlotnik-2FCLTvlQ3TeUN2EhtOMKS3/"
+  },
+  {
+    "id": "ocd-person/9c847f4f-a48b-4d42-95cb-2b6a219f89ac",
+    "name": "Josh Tarsky",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:13th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Tarsky",
+    "image": "https://malegislature.gov/Legislators/Profile/170/J_T1.jpg",
+    "email": "joshua.tarsky@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "J_T1"
+    },
+    "created_at": "2025-01-05T10:35:15.108296+00:00",
+    "updated_at": "2026-03-21T06:52:10.538380+00:00",
+    "openstates_url": "https://openstates.org/person/josh-tarsky-4lLLyVD17ANzdQh2hGAjuO/"
+  },
+  {
+    "id": "ocd-person/6f15f647-07f5-4739-a340-497798a474e7",
+    "name": "Judith Garc\u00eda",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:11th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Judith",
+    "family_name": "Garc\u00eda",
+    "image": "https://malegislature.gov/Legislators/Profile/170/JAG2.jpg",
+    "email": "judith.garcia@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "JAG2"
+    },
+    "created_at": "2023-02-13T19:14:40.468542+00:00",
+    "updated_at": "2026-03-21T06:51:05.902918+00:00",
+    "openstates_url": "https://openstates.org/person/judith-garcia-3NcBT0tOUn5NHgYs1MDkv9/"
+  },
+  {
+    "id": "ocd-person/4002361d-3211-4f02-b627-95d6e6a3f76c",
+    "name": "Justin Thurber",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:5th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Thurber",
+    "image": "https://malegislature.gov/Legislators/Profile/170/J_T2.jpg",
+    "email": "justin.thurber@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "J_T2"
+    },
+    "created_at": "2025-01-11T19:57:22.509423+00:00",
+    "updated_at": "2026-06-04T06:56:29.718569+00:00",
+    "openstates_url": "https://openstates.org/person/justin-thurber-1wmWD51MCUJ66jnB8vJCKi/"
+  },
+  {
+    "id": "ocd-person/e2aa2c0f-d6e6-49d7-8483-d595a3a1eb3a",
+    "name": "Kate Donaghue",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:19th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Kate",
+    "family_name": "Donaghue",
+    "image": "https://malegislature.gov/Legislators/Profile/170/K_D1.jpg",
+    "email": "kate.donaghue@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "K_D1"
+    },
+    "created_at": "2023-02-13T19:14:27.496402+00:00",
+    "updated_at": "2026-03-21T06:50:56.829034+00:00",
+    "openstates_url": "https://openstates.org/person/kate-donaghue-6ti29fXV1B5oCygcEHYOPC/"
+  },
+  {
+    "id": "ocd-person/3d709a64-6cd2-49c6-ad0d-b007e834bfec",
+    "name": "Kate Hogan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Kate",
+    "family_name": "Hogan",
+    "image": "https://malegislature.gov/Legislators/Profile/170/K_H1.jpg",
+    "email": "kate.hogan@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1957-01-15",
+    "death_date": "",
+    "extras": {
+      "member code": "K_H1",
+      "leadership position": "Speaker Pro Tempore"
+    },
+    "created_at": "2018-10-18T14:47:04.396704+00:00",
+    "updated_at": "2024-10-09T22:36:49.673853+00:00",
+    "openstates_url": "https://openstates.org/person/kate-hogan-1rvzU6uwUOvir3d5PYHorM/"
+  },
+  {
+    "id": "ocd-person/7d66e1ca-1fb3-4194-bb18-f9924c528df2",
+    "name": "Kate Lipper-Garabedian",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32nd Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:32nd_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Kate",
+    "family_name": "Lipper-Garabedian",
+    "image": "https://malegislature.gov/Legislators/Profile/170/KLG1.jpg",
+    "email": "kate.lipper-garabedian@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "KLG1"
+    },
+    "created_at": "2020-05-09T05:10:27.950619+00:00",
+    "updated_at": "2026-03-21T06:51:05.424849+00:00",
+    "openstates_url": "https://openstates.org/person/kate-lipper-garabedian-3od3bEkJH71DoTkSIoytGs/"
+  },
+  {
+    "id": "ocd-person/fbbda637-7a45-43f2-a13a-388dc50b02ee",
+    "name": "Kathy LaNatra",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12th Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:12th_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Kathy",
+    "family_name": "LaNatra",
+    "image": "https://malegislature.gov/Legislators/Profile/170/KPL1.jpg",
+    "email": "kathleen.lanatra@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "KPL1"
+    },
+    "created_at": "2019-01-05T03:23:44.365709+00:00",
+    "updated_at": "2026-03-21T06:51:42.780509+00:00",
+    "openstates_url": "https://openstates.org/person/kathy-lanatra-7f1k85FfexeCc7eXqbikhS/"
+  },
+  {
+    "id": "ocd-person/72eea330-24b4-4207-a016-0b1e568e0b6e",
+    "name": "Kelly Pease",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4th Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:4th_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Kelly",
+    "family_name": "Pease",
+    "image": "https://malegislature.gov/Legislators/Profile/170/KWP1.jpg",
+    "email": "kelly.pease@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-09-24",
+    "death_date": "",
+    "extras": {
+      "member code": "KWP1"
+    },
+    "created_at": "2021-01-07T11:18:57.707113+00:00",
+    "updated_at": "2024-10-09T22:36:09.452661+00:00",
+    "openstates_url": "https://openstates.org/person/kelly-pease-3UsBL3aY5ozlUEUZiQYqv0/"
+  },
+  {
+    "id": "ocd-person/47c42957-b618-41b7-a557-5d24c33568cf",
+    "name": "Ken Gordon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21st Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:21st_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Gordon",
+    "image": "https://malegislature.gov/Legislators/Profile/170/KIG1.jpg",
+    "email": "ken.gordon@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1959-11-04",
+    "death_date": "",
+    "extras": {
+      "member code": "KIG1"
+    },
+    "created_at": "2018-10-18T14:47:03.232731+00:00",
+    "updated_at": "2026-06-04T06:55:44.129261+00:00",
+    "openstates_url": "https://openstates.org/person/ken-gordon-2BQ6HHOMtmoLXWH3KenhUd/"
+  },
+  {
+    "id": "ocd-person/1eece00d-5b31-4be0-9263-b594863b295c",
+    "name": "Ken Sweezey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6th Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:6th_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Sweezey",
+    "image": "https://malegislature.gov/Legislators/Profile/170/KPS1.jpg",
+    "email": "ken.sweezey@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "KPS1"
+    },
+    "created_at": "2025-01-05T10:35:14.821224+00:00",
+    "updated_at": "2026-06-04T06:56:00.364394+00:00",
+    "openstates_url": "https://openstates.org/person/ken-sweezey-wM1MsLrUEwR3vnKHokI8K/"
+  },
+  {
+    "id": "ocd-person/9e4b8b32-233e-443f-a147-46fbaa778a58",
+    "name": "Kevin Honan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:17th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Honan",
+    "image": "https://malegislature.gov/Legislators/Profile/170/KGH1.jpg",
+    "email": "kevin.honan@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "KGH1"
+    },
+    "created_at": "2018-10-18T14:47:04.560495+00:00",
+    "updated_at": "2025-04-24T07:02:39.638497+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-honan-4ohJIQoDnLh896lkbKUW0e/"
+  },
+  {
+    "id": "ocd-person/888457ba-c348-4826-b2c6-450dba5e38bd",
+    "name": "Kim Ferguson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Ferguson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Kimberly-Ferguson.jpg",
+    "email": "kimberly.ferguson@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "KNF1",
+      "leadership position": "First Assistant Minority Leader"
+    },
+    "created_at": "2018-10-18T14:46:48.957000+00:00",
+    "updated_at": "2025-04-24T07:02:16.835226+00:00",
+    "openstates_url": "https://openstates.org/person/kim-ferguson-49bR6mxOlvpoU7lb1KqOGz/"
+  },
+  {
+    "id": "ocd-person/df1a3cfc-1555-4a05-8a5c-03a7e53932aa",
+    "name": "Kip Diggs",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Barnstable",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_barnstable"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Kip",
+    "family_name": "Diggs",
+    "image": "https://www.capecod.com/wp-content/uploads/NWS_Kip-Diggs_JS081720.jpg",
+    "email": "kip.diggs@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1966-07-16",
+    "death_date": "",
+    "extras": {
+      "member code": "KAD1"
+    },
+    "created_at": "2021-01-07T11:18:43.153874+00:00",
+    "updated_at": "2026-03-21T06:52:06.473925+00:00",
+    "openstates_url": "https://openstates.org/person/kip-diggs-6mzHLce1c3ejnlbB85IPso/"
+  },
+  {
+    "id": "ocd-person/1129a0d9-c280-4bf0-af34-20879293a2b5",
+    "name": "Kristin Kassner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Kristin",
+    "family_name": "Kassner",
+    "image": "https://malegislature.gov/Legislators/Profile/170/K_K2.jpg",
+    "email": "kristin.kassner@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1978-11-22",
+    "death_date": "",
+    "extras": {
+      "member code": "K_K2"
+    },
+    "created_at": "2023-02-13T19:14:33.937618+00:00",
+    "updated_at": "2026-03-21T06:51:11.463431+00:00",
+    "openstates_url": "https://openstates.org/person/kristin-kassner-WNtPawi2r3Wj9zQLDBUQP/"
+  },
+  {
+    "id": "ocd-person/386c6121-a2a4-4c92-b093-4abea066d840",
+    "name": "Leigh Davis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Berkshire",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_berkshire"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Leigh",
+    "family_name": "Davis",
+    "image": "https://malegislature.gov/Legislators/Profile/170/LSD1.jpg",
+    "email": "leigh.davis@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "LSD1"
+    },
+    "created_at": "2025-01-05T10:35:16.581887+00:00",
+    "updated_at": "2026-06-04T06:57:03.569727+00:00",
+    "openstates_url": "https://openstates.org/person/leigh-davis-1iT6BniFjrvrPCHTKzcndg/"
+  },
+  {
+    "id": "ocd-person/05f9b238-283f-4529-8989-ff7d1bda60a8",
+    "name": "Lindsay Sabadosa",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Hampshire",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_hampshire"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Lindsay",
+    "family_name": "Sabadosa",
+    "image": "https://malegislature.gov/Legislators/Profile/170/L_S1.jpg",
+    "email": "lindsay.sabadosa@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "L_S1"
+    },
+    "created_at": "2019-01-05T03:22:36.670076+00:00",
+    "updated_at": "2026-06-04T06:57:01.716978+00:00",
+    "openstates_url": "https://openstates.org/person/lindsay-sabadosa-BH4X0YcrlRGHrcgiTRney/"
+  },
+  {
+    "id": "ocd-person/0a14e19e-3761-4aa2-887f-8b335d6e3eed",
+    "name": "Lisa Field",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Field",
+    "image": "https://malegislature.gov/Legislators/Profile/170/LMF1.jpg",
+    "email": "lisa.field@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-07-18T06:57:48.181391+00:00",
+    "updated_at": "2026-06-04T06:56:30.671765+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-field-J1StX8qYj8mmX1qCao0oX/"
+  },
+  {
+    "id": "ocd-person/5ae88c49-8938-4472-8de2-1c0f0bc0e2f0",
+    "name": "Manny Cruz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:7th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Manny",
+    "family_name": "Cruz",
+    "image": "https://www.wickedlocal.com/gcdn/authoring/2018/08/07/NWKL/ghows-WL-72d881e3-b92a-5ead-e053-0100007fbaea-a47ecf5e.jpeg?width=600&height=1068&fit=crop&format=pjpg&auto=webp",
+    "email": "manny.cruz@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1992-01-28",
+    "death_date": "",
+    "extras": {
+      "member code": "M_C3"
+    },
+    "created_at": "2023-02-13T19:14:30.025818+00:00",
+    "updated_at": "2026-03-21T06:51:46.071292+00:00",
+    "openstates_url": "https://openstates.org/person/manny-cruz-2lXaDVnixiRdeJRUeNjlPU/"
+  },
+  {
+    "id": "ocd-person/398f9a47-bc65-4c2a-b12e-347f375d8fac",
+    "name": "Marc Lombardo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22nd Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:22nd_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Marc",
+    "family_name": "Lombardo",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MTL1.jpg",
+    "email": "marc.lombardo@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "MTL1"
+    },
+    "created_at": "2018-10-18T14:46:47.674624+00:00",
+    "updated_at": "2025-04-24T07:01:08.322233+00:00",
+    "openstates_url": "https://openstates.org/person/marc-lombardo-1kcBjQE6veXaKuSqB88nOu/"
+  },
+  {
+    "id": "ocd-person/2dd65a68-0ea5-4c15-b5fe-bcde086eb357",
+    "name": "Marcus Vaughn",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:9th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Marcus",
+    "family_name": "Vaughn",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MSV1.jpg",
+    "email": "marcus.vaughn@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1985-12-04",
+    "death_date": "",
+    "extras": {
+      "member code": "MSV1"
+    },
+    "created_at": "2023-02-13T19:14:31.204495+00:00",
+    "updated_at": "2025-04-24T07:01:49.082481+00:00",
+    "openstates_url": "https://openstates.org/person/marcus-vaughn-1OUc5fRsXzJkqasJNRetfz/"
+  },
+  {
+    "id": "ocd-person/a25fd374-e502-43bb-91fe-99c4b6c493a5",
+    "name": "Margaret Scarsdale",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Margaret",
+    "family_name": "Scarsdale",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MRS1.jpg",
+    "email": "margaret.scarsdale@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "MRS1"
+    },
+    "created_at": "2023-02-13T19:14:30.520893+00:00",
+    "updated_at": "2026-03-21T06:51:02.670081+00:00",
+    "openstates_url": "https://openstates.org/person/margaret-scarsdale-4wOY4ZfUcRr9lndodqs2C5/"
+  },
+  {
+    "id": "ocd-person/b9019024-899b-41b3-a283-69c50866fabd",
+    "name": "Marjorie Decker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:25th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Marjorie",
+    "family_name": "Decker",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MCD1.jpg",
+    "email": "marjorie.decker@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "MCD1"
+    },
+    "created_at": "2018-10-18T14:46:39.914050+00:00",
+    "updated_at": "2025-04-24T07:01:13.939198+00:00",
+    "openstates_url": "https://openstates.org/person/marjorie-decker-5d6IHFuSFn1JwqnCx133dd/"
+  },
+  {
+    "id": "ocd-person/b51c5c27-7da0-42f5-b67b-22085173af7a",
+    "name": "Mark Cusack",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:5th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Cusack",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MJC1.jpg",
+    "email": "mark.cusack@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1984-07-03",
+    "death_date": "",
+    "extras": {
+      "member code": "MJC1"
+    },
+    "created_at": "2018-10-18T14:46:49.601894+00:00",
+    "updated_at": "2026-03-21T06:51:11.935196+00:00",
+    "openstates_url": "https://openstates.org/person/mark-cusack-5VkZRjOwFWJsUrzZRMaoZO/"
+  },
+  {
+    "id": "ocd-person/7446bdd1-f6b4-40cb-a039-41f4be68833e",
+    "name": "Mark Sylvia",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:10th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Sylvia",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MDS1.jpg",
+    "email": "mark.sylvia@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1974-04-27",
+    "death_date": "",
+    "extras": {
+      "member code": "MDS1"
+    },
+    "created_at": "2025-01-05T10:35:21.978109+00:00",
+    "updated_at": "2026-06-04T06:56:44.900679+00:00",
+    "openstates_url": "https://openstates.org/person/mark-sylvia-3XPRD3GabEwlw8zBtjv1SA/"
+  },
+  {
+    "id": "ocd-person/4d0b5dda-d9d1-4c25-9c94-ce8fbd8ff398",
+    "name": "Mary Keefe",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:15th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Keefe",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MSK1.jpg",
+    "email": "mary.keefe@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "MSK1"
+    },
+    "created_at": "2018-10-18T14:46:52.372329+00:00",
+    "updated_at": "2026-03-21T06:51:30.977848+00:00",
+    "openstates_url": "https://openstates.org/person/mary-keefe-2LNbQlhRbjnbOhTTtVks5g/"
+  },
+  {
+    "id": "ocd-person/b61c923f-3598-465b-8051-6507b6f6c6c2",
+    "name": "Meg Kilcoyne",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:12th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Meg",
+    "family_name": "Kilcoyne",
+    "image": "https://malegislature.gov/Legislators/Profile/170/M_K1.jpg",
+    "email": "meghan.kilcoyne@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "M_K1"
+    },
+    "created_at": "2021-01-07T11:18:49.252004+00:00",
+    "updated_at": "2026-03-21T06:51:57.428711+00:00",
+    "openstates_url": "https://openstates.org/person/meg-kilcoyne-5XdexQdYcLZsBNgnZ5whqU/"
+  },
+  {
+    "id": "ocd-person/a0c80d02-beb0-42c3-b7ff-31fc0d5351f5",
+    "name": "Michelle Badger",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Badger",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MichelleBadger24.jpg",
+    "email": "michelle.badger@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1984-05-13",
+    "death_date": "",
+    "extras": {
+      "member code": "MLB1"
+    },
+    "created_at": "2025-01-05T10:35:24.026064+00:00",
+    "updated_at": "2026-06-04T06:56:43.032337+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-badger-4tOC8eW7hehK8ZE81OHAvd/"
+  },
+  {
+    "id": "ocd-person/ea385faa-049c-4743-ad41-3bbe58ee40e2",
+    "name": "Michelle Ciccolo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:15th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Ciccolo",
+    "image": "https://malegislature.gov/Legislators/Profile/170/M_C2.jpg",
+    "email": "michelle.ciccolo@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "M_C2"
+    },
+    "created_at": "2019-01-05T03:23:58.160261+00:00",
+    "updated_at": "2024-10-09T22:36:06.043240+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-ciccolo-77xxyXWXgHZeh3ZwrNYcZG/"
+  },
+  {
+    "id": "ocd-person/f41834f0-0d73-4e8e-8758-66184772c081",
+    "name": "Michelle DuBois",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10th Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:10th_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "DuBois",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MMD1.jpg",
+    "email": "michelle.dubois@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1973-04-14",
+    "death_date": "",
+    "extras": {
+      "member code": "MMD1"
+    },
+    "created_at": "2018-10-18T14:46:41.405093+00:00",
+    "updated_at": "2024-10-09T22:36:35.819160+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-dubois-7QbBna2tzsPaCErTplWx17/"
+  },
+  {
+    "id": "ocd-person/0a74c581-eb5c-4935-b5c3-f4a77e6dcd31",
+    "name": "Mike Chaisson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Chaisson",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MSC1.jpg",
+    "email": "michael.chaisson@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "MSC1"
+    },
+    "created_at": "2025-01-05T10:35:12.960030+00:00",
+    "updated_at": "2026-06-04T06:57:09.583549+00:00",
+    "openstates_url": "https://openstates.org/person/mike-chaisson-JjHr4e1QEocbxgrNdHNpp/"
+  },
+  {
+    "id": "ocd-person/a8225754-d88c-4343-8829-aa168b564cbd",
+    "name": "Mike Connolly",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:26th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Connolly",
+    "image": "https://malegislature.gov/Legislators/Profile/170/M_C1.jpg",
+    "email": "mike.connolly@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1980-06-03",
+    "death_date": "",
+    "extras": {
+      "member code": "M_C1"
+    },
+    "created_at": "2018-10-18T14:46:55.764101+00:00",
+    "updated_at": "2026-03-21T06:50:53.997477+00:00",
+    "openstates_url": "https://openstates.org/person/mike-connolly-57GP6LjSakeureUoIZl5i9/"
+  },
+  {
+    "id": "ocd-person/2e198563-4aeb-499b-8333-b4a46b605491",
+    "name": "Mike Day",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31st Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:31st_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Day",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MSD1.jpg",
+    "email": "michael.day@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "MSD1"
+    },
+    "created_at": "2018-10-18T14:46:41.251262+00:00",
+    "updated_at": "2024-10-09T22:36:36.758965+00:00",
+    "openstates_url": "https://openstates.org/person/mike-day-1OzJENTa2hta0WCP7uhBab/"
+  },
+  {
+    "id": "ocd-person/b61922e8-c775-4c74-8ecb-557d79162195",
+    "name": "Mike Finn",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6th Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:6th_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Finn",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Michael_Finn.jpg",
+    "email": "michael.finn@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1970-03-24",
+    "death_date": "",
+    "extras": {
+      "member code": "MJF1"
+    },
+    "created_at": "2018-10-18T14:46:49.916522+00:00",
+    "updated_at": "2026-06-04T06:56:26.265490+00:00",
+    "openstates_url": "https://openstates.org/person/mike-finn-5Xc5dH0kWHyv17GqlA3U61/"
+  },
+  {
+    "id": "ocd-person/591dc6dd-40b8-4713-83b8-f236ff6250bf",
+    "name": "Mike Kushmerek",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Kushmerek",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MPK1.jpg",
+    "email": "michael.kushmerek@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "MPK1"
+    },
+    "created_at": "2021-01-07T11:18:47.404307+00:00",
+    "updated_at": "2024-10-09T22:35:31.910780+00:00",
+    "openstates_url": "https://openstates.org/person/mike-kushmerek-2i9vMFdGcaMCXdoQi8Co3T/"
+  },
+  {
+    "id": "ocd-person/2fd8669d-a5e2-40fd-bb2f-595210f1bf49",
+    "name": "Mike Moran",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:18th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Moran",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MJM1.jpg",
+    "email": "michael.moran@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1971-02-23",
+    "death_date": "",
+    "extras": {
+      "member code": "MJM1",
+      "leadership position": "Majority Leader"
+    },
+    "created_at": "2018-10-18T14:46:54.930244+00:00",
+    "updated_at": "2026-06-04T06:56:02.851858+00:00",
+    "openstates_url": "https://openstates.org/person/mike-moran-1SHX9syMeOKvWJ6abFH0Uz/"
+  },
+  {
+    "id": "ocd-person/4cec2aa4-c17b-4749-b0e9-58a25695bf2f",
+    "name": "Mike Soter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:8th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Soter",
+    "image": "https://malegislature.gov/Legislators/Profile/170/MJS3.jpg",
+    "email": "michael.soter@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "MJS3"
+    },
+    "created_at": "2019-01-05T03:23:18.389632+00:00",
+    "updated_at": "2026-03-21T06:51:19.702151+00:00",
+    "openstates_url": "https://openstates.org/person/mike-soter-2L9LPFR3ZPxiyd1iVECo9P/"
+  },
+  {
+    "id": "ocd-person/65617e1a-1834-4ec8-9f19-4ac801ce9764",
+    "name": "Mindy Domb",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Hampshire",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_hampshire"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Mindy",
+    "family_name": "Domb",
+    "image": "https://malegislature.gov/Legislators/Profile/170/M_D2.jpg",
+    "email": "mindy.domb@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "M_D2"
+    },
+    "created_at": "2019-01-05T03:22:49.531091+00:00",
+    "updated_at": "2026-03-21T06:51:46.811639+00:00",
+    "openstates_url": "https://openstates.org/person/mindy-domb-35ImJTuew1ylVMK88Yffam/"
+  },
+  {
+    "id": "ocd-person/17c3ac90-1218-4d61-ae47-bc5ef6ee4a74",
+    "name": "Natalie Higgins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:4th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Natalie",
+    "family_name": "Higgins",
+    "image": "https://malegislature.gov/Legislators/Profile/170/N_H1.jpg",
+    "email": "natalie.higgins@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1988-07-24",
+    "death_date": "",
+    "extras": {
+      "member code": "N_H1"
+    },
+    "created_at": "2018-10-18T14:46:53.657427+00:00",
+    "updated_at": "2026-03-21T06:51:44.973956+00:00",
+    "openstates_url": "https://openstates.org/person/natalie-higgins-iqFImcwIkOBlCOu2gSioe/"
+  },
+  {
+    "id": "ocd-person/0e72fc19-89be-49b9-8baf-5f35f938ec87",
+    "name": "Nick Boldyga",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Boldyga",
+    "image": "https://malegislature.gov/Legislators/Profile/170/NAG1.jpg",
+    "email": "nicholas.boldyga@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "NAG1"
+    },
+    "created_at": "2018-10-18T14:46:50.086596+00:00",
+    "updated_at": "2026-03-21T06:51:13.304876+00:00",
+    "openstates_url": "https://openstates.org/person/nick-boldyga-RGRKHxUcmxmNqTsmhUOcp/"
+  },
+  {
+    "id": "ocd-person/6d186dd3-a4a0-4d65-aaf1-2f0a63cd42ec",
+    "name": "Norm Orrall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:12th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Norm",
+    "family_name": "Orrall",
+    "image": "https://malegislature.gov/Legislators/Profile/170/NJO1.jpg",
+    "email": "norman.orrall@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "NJO1"
+    },
+    "created_at": "2019-01-05T03:23:33.948498+00:00",
+    "updated_at": "2024-10-09T22:35:52.625284+00:00",
+    "openstates_url": "https://openstates.org/person/norm-orrall-3JrKJnNpT6xfnQp76vIWvU/"
+  },
+  {
+    "id": "ocd-person/a1a94ad4-7b75-46be-896e-548c86b23d0c",
+    "name": "Orlando Ramos",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9th Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:9th_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Orlando",
+    "family_name": "Ramos",
+    "image": "https://malegislature.gov/Legislators/Profile/170/O_R1.jpg",
+    "email": "orlando.ramos@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "O_R1"
+    },
+    "created_at": "2021-01-07T11:18:57.189125+00:00",
+    "updated_at": "2024-10-09T22:36:24.522923+00:00",
+    "openstates_url": "https://openstates.org/person/orlando-ramos-4v389GrqKNVVENLOnwVNm8/"
+  },
+  {
+    "id": "ocd-person/e50e8121-bc6f-4aaa-8cf2-f1cbd53c9172",
+    "name": "Pat Duffy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5th Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:5th_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Pat",
+    "family_name": "Duffy",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PAD1.jpg",
+    "email": "patricia.duffy@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1963-08-08",
+    "death_date": "",
+    "extras": {
+      "member code": "PAD1"
+    },
+    "created_at": "2021-01-07T11:18:51.978358+00:00",
+    "updated_at": "2026-03-21T06:51:56.069922+00:00",
+    "openstates_url": "https://openstates.org/person/pat-duffy-6yDs1jWB5BcjToTJeQhLVK/"
+  },
+  {
+    "id": "ocd-person/0a288f3d-397f-4e7b-8bfd-b5032ae1421f",
+    "name": "Patrick Kearney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4th Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:4th_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Kearney",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PJK1.jpg",
+    "email": "patrick.kearney@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "PJK1"
+    },
+    "created_at": "2019-01-05T03:23:28.769068+00:00",
+    "updated_at": "2026-03-21T06:51:43.250065+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-kearney-JASSUjhazo9ALs5A3d0H9/"
+  },
+  {
+    "id": "ocd-person/18bf433d-24e5-46cb-9d83-c2f9373204bd",
+    "name": "Paul Donato",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:35th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Donato",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PJD1.jpg",
+    "email": "paul.donato@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1941-10-27",
+    "death_date": "",
+    "extras": {
+      "member code": "PJD1",
+      "leadership position": "Second Division Chair"
+    },
+    "created_at": "2018-10-18T14:46:39.266059+00:00",
+    "updated_at": "2026-03-21T06:51:36.092606+00:00",
+    "openstates_url": "https://openstates.org/person/paul-donato-khDpgeYIWRpuq8J2f59FF/"
+  },
+  {
+    "id": "ocd-person/fdc5586f-0db3-4614-af1f-72a42cf5e6f0",
+    "name": "Paul Frost",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7th Worcester",
+      "division_id": "ocd-division/country:us/state:ma/sldl:7th_worcester"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Frost",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Paul-Frost.jpg",
+    "email": "paul.frost@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "PKF1",
+      "leadership position": "Second Assistant Minority Leader"
+    },
+    "created_at": "2018-10-18T14:46:49.761453+00:00",
+    "updated_at": "2026-03-21T06:51:07.716527+00:00",
+    "openstates_url": "https://openstates.org/person/paul-frost-7irFF2QS1p0MSqyYYgJd0C/"
+  },
+  {
+    "id": "ocd-person/d0e66289-022e-4a99-ac8c-f20fb7557e7f",
+    "name": "Paul McMurtry",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:11th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "McMurtry",
+    "image": "https://malegislature.gov/Legislators/Profile/170/P_M1.jpg",
+    "email": "paul.mcmurtry@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1965-10-28",
+    "death_date": "",
+    "extras": {
+      "member code": "P_M1"
+    },
+    "created_at": "2018-10-18T14:46:45.630147+00:00",
+    "updated_at": "2026-03-21T06:51:13.776736+00:00",
+    "openstates_url": "https://openstates.org/person/paul-mcmurtry-6MBgn9wM2HzTU3yOOzdNtv/"
+  },
+  {
+    "id": "ocd-person/a148ff77-2e73-4e42-a525-20e8d1ed569a",
+    "name": "Priscila Sousa",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:6th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Priscila",
+    "family_name": "Sousa",
+    "image": "https://malegislature.gov/Legislators/Profile/170/PSS1.jpg",
+    "email": "priscila.sousa@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "PSS1"
+    },
+    "created_at": "2023-02-13T19:14:41.148487+00:00",
+    "updated_at": "2026-03-21T06:51:17.015705+00:00",
+    "openstates_url": "https://openstates.org/person/priscila-sousa-4uL7jfWcohzl6DZsxOUXSU/"
+  },
+  {
+    "id": "ocd-person/521620ea-1e5b-4a0c-94f8-abe888370e05",
+    "name": "Rich Haggerty",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:30th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Rich",
+    "family_name": "Haggerty",
+    "image": "https://malegislature.gov/Legislators/Profile/170/RMH1.jpg",
+    "email": "richard.haggerty@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "RMH1"
+    },
+    "created_at": "2019-01-05T03:23:38.718059+00:00",
+    "updated_at": "2026-03-21T06:51:57.902429+00:00",
+    "openstates_url": "https://openstates.org/person/rich-haggerty-2UtTyx7Vrs16l0G7wjxlO1/"
+  },
+  {
+    "id": "ocd-person/e988f332-eba5-40a4-b55f-554728360e6c",
+    "name": "Richard Wells",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:7th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Wells",
+    "image": "https://malegislature.gov/Legislators/Profile/170/RGW1.jpg",
+    "email": "richard.wells@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "RGW1"
+    },
+    "created_at": "2025-01-05T10:35:31.496884+00:00",
+    "updated_at": "2026-06-04T06:56:45.446527+00:00",
+    "openstates_url": "https://openstates.org/person/richard-wells-76fnVTUus7JVF4VyH0VOyS/"
+  },
+  {
+    "id": "ocd-person/87e3afd8-390c-45a3-97c6-2bb164ec1e90",
+    "name": "Rita Mendes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11th Plymouth",
+      "division_id": "ocd-division/country:us/state:ma/sldl:11th_plymouth"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Rita",
+    "family_name": "Mendes",
+    "image": "https://malegislature.gov/Legislators/Profile/170/RAM1.jpg",
+    "email": "rita.mendes@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "RAM1"
+    },
+    "created_at": "2023-02-13T19:14:33.348401+00:00",
+    "updated_at": "2026-03-21T06:52:16.682167+00:00",
+    "openstates_url": "https://openstates.org/person/rita-mendes-48Q14favuSgHuPnPGbCiDA/"
+  },
+  {
+    "id": "ocd-person/edcd5892-2488-4945-a3da-86f40012d396",
+    "name": "Rob Consalvo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:14th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Consalvo",
+    "image": "https://malegislature.gov/Legislators/Profile/170/R_C1.jpg",
+    "email": "rob.consalvo@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1969-07-16",
+    "death_date": "",
+    "extras": {
+      "member code": "R_C1"
+    },
+    "created_at": "2021-01-07T11:18:36.996925+00:00",
+    "updated_at": "2026-03-21T06:51:34.063265+00:00",
+    "openstates_url": "https://openstates.org/person/rob-consalvo-7Ej1XbRnp5ANARl2rHvIdq/"
+  },
+  {
+    "id": "ocd-person/49816a0c-b8e5-4586-859b-8a8f1ae9b6ab",
+    "name": "Rodney Elliott",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:16th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Rodney",
+    "family_name": "Elliott",
+    "image": "https://malegislature.gov/Legislators/Profile/170/RME1.jpg",
+    "email": "rodney.elliott@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "RME1"
+    },
+    "created_at": "2023-02-13T19:14:27.012883+00:00",
+    "updated_at": "2026-03-21T06:50:57.696458+00:00",
+    "openstates_url": "https://openstates.org/person/rodney-elliott-2Eha6YSCnvie1MlKsGMLPv/"
+  },
+  {
+    "id": "ocd-person/e142d28d-e57a-4ff9-afa4-c3cd149f2114",
+    "name": "Ron Mariano",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3rd Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:3rd_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Mariano",
+    "image": "https://malegislature.gov/Legislators/Profile/170/R_M1.jpg",
+    "email": "ronald.mariano@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1946-10-31",
+    "death_date": "",
+    "extras": {
+      "member code": "R_M1",
+      "leadership position": "Speaker of the House"
+    },
+    "created_at": "2018-10-18T14:46:56.500486+00:00",
+    "updated_at": "2025-04-24T07:02:01.682618+00:00",
+    "openstates_url": "https://openstates.org/person/ron-mariano-6r3oJWEjJhlb8HOIyK5rTY/"
+  },
+  {
+    "id": "ocd-person/078692f2-2afe-4aa1-a320-d4747edacbbb",
+    "name": "Russell Holmes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:6th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Russell",
+    "family_name": "Holmes",
+    "image": "https://malegislature.gov/Legislators/Profile/170/REH1.jpg",
+    "email": "russell.holmes@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1969-08-17",
+    "death_date": "",
+    "extras": {
+      "member code": "REH1"
+    },
+    "created_at": "2018-10-18T14:47:00.593713+00:00",
+    "updated_at": "2025-04-24T07:02:19.505252+00:00",
+    "openstates_url": "https://openstates.org/person/russell-holmes-ECRhQjXw3gQ3Rlkczn9Cd/"
+  },
+  {
+    "id": "ocd-person/799d49f3-28e5-46a1-bcc8-6370e9fbf44a",
+    "name": "Ryan Hamilton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:15th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Hamilton",
+    "image": "https://malegislature.gov/Legislators/Profile/170/RMH2.jpg",
+    "email": "ryan.hamilton@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "RMH2"
+    },
+    "created_at": "2023-02-13T19:14:26.580950+00:00",
+    "updated_at": "2024-10-09T22:36:03.940869+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-hamilton-3hTx4TkVrqQ8VP3n861OFm/"
+  },
+  {
+    "id": "ocd-person/308b15a0-dc30-41be-be53-9e5827522cac",
+    "name": "Sally Kerans",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:13th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Sally",
+    "family_name": "Kerans",
+    "image": "https://malegislature.gov/Legislators/Profile/170/SPK1.jpg",
+    "email": "sally.kerans@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1960-05-26",
+    "death_date": "",
+    "extras": {
+      "member code": "SPK1"
+    },
+    "created_at": "2021-01-07T11:18:52.271570+00:00",
+    "updated_at": "2024-10-09T22:35:46.778107+00:00",
+    "openstates_url": "https://openstates.org/person/sally-kerans-1TbBzkQ0wCxWfABNPWGf9w/"
+  },
+  {
+    "id": "ocd-person/668db267-f9e1-4839-918d-c092741f96f9",
+    "name": "Sam Monta\u00f1o",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15th Suffolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:15th_suffolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Monta\u00f1o",
+    "image": "https://malegislature.gov/Legislators/Profile/170/S_M1.jpg",
+    "email": "samantha.montano@mahouse.gov",
+    "gender": "X",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "S_M1"
+    },
+    "created_at": "2023-02-13T19:14:35.743506+00:00",
+    "updated_at": "2026-03-21T06:50:49.493910+00:00",
+    "openstates_url": "https://openstates.org/person/sam-montano-37VyKH4eNVAh1gx1V8o4TJ/"
+  },
+  {
+    "id": "ocd-person/1e9d742c-c20b-45cf-9e22-e7752189fa7a",
+    "name": "Sean Garballey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23rd Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:23rd_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Sean",
+    "family_name": "Garballey",
+    "image": "https://malegislature.gov/Legislators/Profile/170/S_G1.jpg",
+    "email": "sean.garballey@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1985-02-22",
+    "death_date": "",
+    "extras": {
+      "member code": "S_G1"
+    },
+    "created_at": "2018-10-18T14:46:36.246088+00:00",
+    "updated_at": "2026-03-21T06:51:48.336755+00:00",
+    "openstates_url": "https://openstates.org/person/sean-garballey-vlj2HgUUJ9zBEnhHyfU9y/"
+  },
+  {
+    "id": "ocd-person/d3ad855a-567f-443a-bb9f-480a0c95fb06",
+    "name": "Sean Reid",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:11th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Sean",
+    "family_name": "Reid",
+    "image": "https://static.wixstatic.com/media/afaf11_7be85579b8f44be19dc438362812307c~mv2.jpg/v1/crop/x_0,y_241,w_1500,h_1845/fill/w_560,h_689,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/SeanHeadshot.jpg",
+    "email": "sean.reid@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1995-05-19",
+    "death_date": "",
+    "extras": {
+      "member code": "S_R1"
+    },
+    "created_at": "2025-01-05T10:35:13.203777+00:00",
+    "updated_at": "2026-06-04T06:56:07.582488+00:00",
+    "openstates_url": "https://openstates.org/person/sean-reid-6RQgAxl4lsJXeLeLkFNyI2/"
+  },
+  {
+    "id": "ocd-person/ff433cf6-2895-4e01-b143-26747500f8a4",
+    "name": "Shirley Arriaga",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8th Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:8th_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Shirley",
+    "family_name": "Arriaga",
+    "image": "https://malegislature.gov/Legislators/Profile/170/SBA1.jpg",
+    "email": "shirley.arriaga@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "SBA1"
+    },
+    "created_at": "2023-02-13T19:14:35.920473+00:00",
+    "updated_at": "2026-03-21T06:51:32.698718+00:00",
+    "openstates_url": "https://openstates.org/person/shirley-arriaga-7lfloqoFY9Fjkrln2SpcE0/"
+  },
+  {
+    "id": "ocd-person/f43366ee-ff27-43ac-aa55-629be715b4a9",
+    "name": "Simon Cataldo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:14th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Simon",
+    "family_name": "Cataldo",
+    "image": "https://malegislature.gov/Legislators/Profile/170/S_C1.jpg",
+    "email": "simon.cataldo@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1986-07-19",
+    "death_date": "",
+    "extras": {
+      "member code": "S_C1"
+    },
+    "created_at": "2023-02-13T19:14:38.057958+00:00",
+    "updated_at": "2026-03-21T06:51:14.698718+00:00",
+    "openstates_url": "https://openstates.org/person/simon-cataldo-7QncLuOiSUNVF2zMDm159F/"
+  },
+  {
+    "id": "ocd-person/f20dd448-92ef-458c-bf92-90e7e766072a",
+    "name": "Steve Owens",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:29th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Owens",
+    "image": "https://malegislature.gov/Legislators/Profile/170/SCO1.jpg",
+    "email": "steven.owens@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "SCO1"
+    },
+    "created_at": "2021-01-07T11:18:57.877513+00:00",
+    "updated_at": "2026-03-21T06:51:06.768814+00:00",
+    "openstates_url": "https://openstates.org/person/steve-owens-7MkSiBW6SPFTUaHgjYt0tG/"
+  },
+  {
+    "id": "ocd-person/209427dd-91f0-45d6-ae8c-05a51872c10c",
+    "name": "Steve Ultrino",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33rd Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:33rd_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Ultrino",
+    "image": "https://malegislature.gov/Legislators/Profile/170/S_G2.jpg",
+    "email": "steven.ultrino@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "S_G2"
+    },
+    "created_at": "2018-10-18T14:46:43.336275+00:00",
+    "updated_at": "2026-03-21T06:52:00.773613+00:00",
+    "openstates_url": "https://openstates.org/person/steve-ultrino-zTSdEOJ6uIiFeCrfPXZWO/"
+  },
+  {
+    "id": "ocd-person/485e001e-95e9-4b79-9226-cf028a307138",
+    "name": "Steve Xiarhos",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5th Barnstable",
+      "division_id": "ocd-division/country:us/state:ma/sldl:5th_barnstable"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Xiarhos",
+    "image": "https://malegislature.gov/Legislators/Profile/170/SGX1.jpg",
+    "email": "steven.xiarhos@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1958-12-08",
+    "death_date": "",
+    "extras": {
+      "member code": "SGX1"
+    },
+    "created_at": "2021-01-07T11:18:45.291485+00:00",
+    "updated_at": "2026-03-21T06:50:48.989972+00:00",
+    "openstates_url": "https://openstates.org/person/steve-xiarhos-2CYPABhsYTtKsoq5O5skEy/"
+  },
+  {
+    "id": "ocd-person/54487f49-5377-4c41-bd97-60b748cc240a",
+    "name": "Steven Howitt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:4th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Steven",
+    "family_name": "Howitt",
+    "image": "https://malegislature.gov/Legislators/Profile/170/SSH1.jpg",
+    "email": "steven.howitt@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "SSH1"
+    },
+    "created_at": "2018-10-18T14:46:40.751741+00:00",
+    "updated_at": "2025-04-24T07:01:41.610141+00:00",
+    "openstates_url": "https://openstates.org/person/steven-howitt-2Z2UBCeGanbF0QvyT89HZq/"
+  },
+  {
+    "id": "ocd-person/0fbe25ff-563e-4563-8523-f151bd839e3c",
+    "name": "Steven Ouellette",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:8th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Steven",
+    "family_name": "Ouellette",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Steven_Ouellette_20241027_114832.jpeg",
+    "email": "steve.ouellette@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "SJO1"
+    },
+    "created_at": "2025-01-05T10:35:12.316535+00:00",
+    "updated_at": "2026-06-04T06:56:55.549512+00:00",
+    "openstates_url": "https://openstates.org/person/steven-ouellette-ThmXloc86aNKBWp1QQvWe/"
+  },
+  {
+    "id": "ocd-person/76b07f35-1876-4259-9c0a-bdf595541c39",
+    "name": "Susannah Whipps",
+    "party": "Independent",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Franklin",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_franklin"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Susannah",
+    "family_name": "Whipps",
+    "image": "https://malegislature.gov/Legislators/Profile/170/SLG1.jpg",
+    "email": "susannah.whipps@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "SLG1"
+    },
+    "created_at": "2018-10-18T14:46:58.985436+00:00",
+    "updated_at": "2026-01-29T06:52:39.063162+00:00",
+    "openstates_url": "https://openstates.org/person/susannah-whipps-3bxkjyHDCbQ25mlVRW3KwL/"
+  },
+  {
+    "id": "ocd-person/6b420d2a-f12d-40ca-a13f-04cf9061a66b",
+    "name": "Tackey Chan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Tackey",
+    "family_name": "Chan",
+    "image": "https://malegislature.gov/Legislators/Profile/170/T_C1.jpg",
+    "email": "tackey.chan@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1973-08-10",
+    "death_date": "",
+    "extras": {
+      "member code": "T_C1"
+    },
+    "created_at": "2018-10-18T14:46:53.824771+00:00",
+    "updated_at": "2025-04-24T07:02:21.834479+00:00",
+    "openstates_url": "https://openstates.org/person/tackey-chan-3GOMbRFD7taaugaRj0DU0x/"
+  },
+  {
+    "id": "ocd-person/e5b9b2d0-1626-4151-93cf-73c16035a584",
+    "name": "Tara Hong",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:18th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Tara",
+    "family_name": "Hong",
+    "image": "https://malegislature.gov/Legislators/Profile/170/TTH1.jpg",
+    "email": "tara.hong@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "2000-05-17",
+    "death_date": "",
+    "extras": {
+      "member code": "TTH1"
+    },
+    "created_at": "2025-01-05T10:35:33.328347+00:00",
+    "updated_at": "2026-03-21T06:52:07.983350+00:00",
+    "openstates_url": "https://openstates.org/person/tara-hong-6zU6eYmwkoSXwlK5kiIwvU/"
+  },
+  {
+    "id": "ocd-person/73394d70-485b-4fbf-a512-bf2da4e4cb3b",
+    "name": "Ted Philips",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:8th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Ted",
+    "family_name": "Philips",
+    "image": "https://malegislature.gov/Legislators/Profile/170/ERP1.jpg",
+    "email": "edward.philips@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "ERP1"
+    },
+    "created_at": "2021-01-07T11:18:42.231904+00:00",
+    "updated_at": "2026-03-21T06:51:09.982995+00:00",
+    "openstates_url": "https://openstates.org/person/ted-philips-3VQIu6B7myyMZ2thALqb87/"
+  },
+  {
+    "id": "ocd-person/ebfdda03-c083-4a13-b3a4-f87f6e24adac",
+    "name": "Thomas Moakley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "Barnstable, Dukes and Nantucket",
+      "division_id": "ocd-division/country:us/state:ma/sldl:barnstable_dukes_and_nantucket"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Thomas",
+    "family_name": "Moakley",
+    "image": "https://malegislature.gov/Legislators/Profile/170/TWM1.jpg",
+    "email": "thomas.moakley@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "TWM1"
+    },
+    "created_at": "2025-01-05T10:35:28.685158+00:00",
+    "updated_at": "2026-06-04T06:55:59.789227+00:00",
+    "openstates_url": "https://openstates.org/person/thomas-moakley-7BJCr4otbbfNExw4XyOpvo/"
+  },
+  {
+    "id": "ocd-person/d8895862-a95b-4982-bb2e-31c8ffa4bf57",
+    "name": "Todd Smola",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1st Hampden",
+      "division_id": "ocd-division/country:us/state:ma/sldl:1st_hampden"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Smola",
+    "image": "https://malegislature.gov/Legislators/Profile/170/TMS2.jpg",
+    "email": "todd.smola@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "TMS2"
+    },
+    "created_at": "2018-10-18T14:46:48.648348+00:00",
+    "updated_at": "2024-10-09T22:35:34.579631+00:00",
+    "openstates_url": "https://openstates.org/person/todd-smola-6ab6nFTtt6T5saqsCIgWjX/"
+  },
+  {
+    "id": "ocd-person/2becbe4e-5b5e-4b42-be87-b4abf57550c7",
+    "name": "Tom Stanley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9th Middlesex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:9th_middlesex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Stanley",
+    "image": "https://malegislature.gov/Legislators/Profile/170/TMS1.jpg",
+    "email": "thomas.stanley@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "TMS1"
+    },
+    "created_at": "2018-10-18T14:46:54.611777+00:00",
+    "updated_at": "2024-10-09T22:36:08.746477+00:00",
+    "openstates_url": "https://openstates.org/person/tom-stanley-1KsrRrvMynqx7dsnWuIHQ7/"
+  },
+  {
+    "id": "ocd-person/5f796cb3-08ae-40c4-8c11-a2758f317cc2",
+    "name": "Tom Walsh",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:12th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Walsh",
+    "image": "https://malegislature.gov/Legislators/Profile/170/TJW1.jpg",
+    "email": "thomas.walsh@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1960-07-15",
+    "death_date": "",
+    "extras": {
+      "member code": "TJW1"
+    },
+    "created_at": "2018-10-18T14:47:02.078210+00:00",
+    "updated_at": "2024-10-09T22:37:00.424321+00:00",
+    "openstates_url": "https://openstates.org/person/tom-walsh-2u9lG8tGaXdON0afZSgqVW/"
+  },
+  {
+    "id": "ocd-person/7a234dbf-2f9f-466f-8db1-44ac0f3975a8",
+    "name": "Tommy Vitolo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15th Norfolk",
+      "division_id": "ocd-division/country:us/state:ma/sldl:15th_norfolk"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Tommy",
+    "family_name": "Vitolo",
+    "image": "https://malegislature.gov/Legislators/Profile/170/T_V1.jpg",
+    "email": "tommy.vitolo@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "T_V1"
+    },
+    "created_at": "2019-01-05T03:23:35.141563+00:00",
+    "updated_at": "2026-03-21T06:51:38.694659+00:00",
+    "openstates_url": "https://openstates.org/person/tommy-vitolo-3iTCG42lvYOr1iuwhfZlge/"
+  },
+  {
+    "id": "ocd-person/59aed143-c5c1-4760-ac55-eab18600c451",
+    "name": "Tony Cabral",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13th Bristol",
+      "division_id": "ocd-division/country:us/state:ma/sldl:13th_bristol"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Cabral",
+    "image": "https://malegislature.gov/Legislators/Profile/170/AFC1.jpg",
+    "email": "antonio.cabral@mahouse.gov",
+    "gender": "Male",
+    "birth_date": "1955-01-26",
+    "death_date": "",
+    "extras": {
+      "member code": "AFC1"
+    },
+    "created_at": "2018-10-18T14:46:50.427655+00:00",
+    "updated_at": "2025-04-24T07:02:15.742109+00:00",
+    "openstates_url": "https://openstates.org/person/tony-cabral-2jECwzc0EEshC9XyG83iqX/"
+  },
+  {
+    "id": "ocd-person/1e7b8d51-56fa-4faf-93e6-9b485812ddf9",
+    "name": "Tram Nguyen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18th Essex",
+      "division_id": "ocd-division/country:us/state:ma/sldl:18th_essex"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Tram",
+    "family_name": "Nguyen",
+    "image": "https://malegislature.gov/Legislators/Profile/170/TTN1.jpg",
+    "email": "tram.nguyen@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "1986-06-22",
+    "death_date": "",
+    "extras": {
+      "member code": "TTN1"
+    },
+    "created_at": "2019-01-05T03:23:37.992014+00:00",
+    "updated_at": "2026-03-21T06:51:15.570202+00:00",
+    "openstates_url": "https://openstates.org/person/tram-nguyen-vWESa0wjWHYDinBLNIxlh/"
+  },
+  {
+    "id": "ocd-person/1f444dfe-d3b3-4852-ab10-0682206d773d",
+    "name": "Tricia Farley-Bouvier",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2nd Berkshire",
+      "division_id": "ocd-division/country:us/state:ma/sldl:2nd_berkshire"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ma/government",
+      "name": "Massachusetts",
+      "classification": "state"
+    },
+    "given_name": "Tricia",
+    "family_name": "Farley-Bouvier",
+    "image": "https://malegislature.gov/Legislators/Profile/170/TFB1.jpg",
+    "email": "tricia.farley-bouvier@mahouse.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "member code": "TFB1"
+    },
+    "created_at": "2018-10-18T14:46:51.057391+00:00",
+    "updated_at": "2025-04-01T00:52:08.641113+00:00",
+    "openstates_url": "https://openstates.org/person/tricia-farley-bouvier-wzybLZSTy4vhW84kJkHb3/"
+  }
+]

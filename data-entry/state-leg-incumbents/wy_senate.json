@@ -1,0 +1,1930 @@
+[
+  {
+    "id": "ocd-person/c6578593-1ca0-4b7d-8635-67249df87c36",
+    "name": "Barry Crago",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:wy/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Barry",
+    "family_name": "Crago",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-CragoBarry.jpg",
+    "email": "barry.crago@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Johnson, Sheridan Counties",
+      "occupation": "Rancher/Attorney",
+      "house years": "House:  2021-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 40, ",
+          "startYear": 2021
+        }
+      ]
+    },
+    "created_at": "2021-01-12T00:23:03.173654+00:00",
+    "updated_at": "2026-01-28T02:53:58.275460+00:00",
+    "openstates_url": "https://openstates.org/person/barry-crago-62GTebtjReZKK3jZegPkpC/"
+  },
+  {
+    "id": "ocd-person/e0c25487-a7fb-406b-b637-c3a4de3c6770",
+    "name": "Bill Landen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:wy/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Landen",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LandenBill.jpg",
+    "email": "bill.landen@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1956-02-21",
+    "death_date": "",
+    "extras": {
+      "county": "Natrona County",
+      "education": [
+        {
+          "degree": "A.A.",
+          "gradYear": "",
+          "schoolName": "Casper College"
+        },
+        {
+          "degree": "B.S. & M.P.A.",
+          "gradYear": "",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "Graduate Study",
+          "gradYear": "",
+          "schoolName": "Colorado State"
+        }
+      ],
+      "birth place": "Riverton, WY",
+      "spouse name": "Robyn",
+      "senate years": "Senate: 2007-Present",
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 27, ",
+          "startYear": 2007
+        }
+      ],
+      "number of children": "3",
+      "number of grandchildren": "1"
+    },
+    "created_at": "2018-10-18T16:14:44.591321+00:00",
+    "updated_at": "2026-01-28T02:55:05.743839+00:00",
+    "openstates_url": "https://openstates.org/person/bill-landen-6q75bT1K6g0J8wsA7wRGiW/"
+  },
+  {
+    "id": "ocd-person/016465da-4d49-4ffc-8bb0-cf9528bc6d0e",
+    "name": "Bo Biteman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:wy/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Bo",
+    "family_name": "Biteman",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BitemanBo.jpg",
+    "email": "bo.biteman@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1978-10-23",
+    "death_date": "",
+    "extras": {
+      "county": "Sheridan County",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "Bachelor of Business Administration",
+          "gradYear": "2002",
+          "schoolName": "Grand Valley State University"
+        }
+      ],
+      "occupation": "Certified Professional Landman",
+      "birth place": "Midland, Michigan",
+      "house years": "House:  2017-Present",
+      "spouse name": "Mercedes",
+      "organizations": [
+        {
+          "orgname": "Tongue River Fire Department-Volunteer Firefighter"
+        },
+        {
+          "orgname": "American Association of Professional Landmen"
+        },
+        {
+          "orgname": "Wyoming Association of Professional Landmen"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "2018",
+          "district": " District 51, ",
+          "startYear": 2017
+        },
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 21, ",
+          "startYear": 2019
+        }
+      ],
+      "number of children": "2"
+    },
+    "created_at": "2018-10-18T16:14:44.752585+00:00",
+    "updated_at": "2026-01-28T02:54:22.515131+00:00",
+    "openstates_url": "https://openstates.org/person/bo-biteman-2csCizf0utkxnZC1NoY18/"
+  },
+  {
+    "id": "ocd-person/6d1c2665-46ea-444d-b88b-b22e2623e660",
+    "name": "Bob Ide",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:wy/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Ide",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/67th-IdeBob.jpg",
+    "email": "bob.ide@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Natrona County",
+      "religion": "Catholic",
+      "education": [
+        {
+          "degree": "Ag-Business",
+          "gradYear": "1981",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "occupation": "Commercial Real Estate Developer/Landman",
+      "birth place": "Boulder, CO",
+      "spouse name": "Cathy",
+      "senate years": "Senate: 2022-Present",
+      "organizations": [
+        {
+          "orgname": "Wyoming Campaign For Liberty"
+        },
+        {
+          "orgname": "National Association for Gun Rights"
+        },
+        {
+          "orgname": "Independent Cattlemen of WY"
+        },
+        {
+          "orgname": "United Precious Metals Association"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 29, ",
+          "startYear": 2022
+        }
+      ],
+      "number of children": "6",
+      "number of grandchildren": "6"
+    },
+    "created_at": "2023-02-15T00:33:22.320850+00:00",
+    "updated_at": "2026-01-28T02:54:45.155319+00:00",
+    "openstates_url": "https://openstates.org/person/bob-ide-3Jt1kTXLwNjl5AVxUSToY4/"
+  },
+  {
+    "id": "ocd-person/cfed8eb6-ad00-4414-9ceb-bd5d46c5974f",
+    "name": "Brian Boner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:wy/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Boner",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BonerBrian.jpg",
+    "email": "brian.boner@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1984-12-10",
+    "death_date": "",
+    "extras": {
+      "county": "Converse, Natrona Counties",
+      "religion": "Catholic",
+      "education": [
+        {
+          "degree": "B.S.-Political Science",
+          "gradYear": "2007",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "B.S.-Russian",
+          "gradYear": "2007",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "MBA-Agribusiness",
+          "gradYear": "2011",
+          "schoolName": "University of Nebraska"
+        }
+      ],
+      "occupation": "Farmer/Rancher",
+      "spouse name": "Nicole",
+      "senate years": "Senate: 2015-Present",
+      "organizations": [
+        {
+          "orgname": "Moose Lodge"
+        },
+        {
+          "orgname": "Knights of Columbus"
+        },
+        {
+          "orgname": "American Legion"
+        },
+        {
+          "orgname": "Wyoming LEAD Class 13"
+        },
+        {
+          "orgname": "Association of Air Force Missileers"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 02, ",
+          "startYear": 2015
+        }
+      ]
+    },
+    "created_at": "2018-10-18T16:14:44.914466+00:00",
+    "updated_at": "2026-01-28T02:54:18.497912+00:00",
+    "openstates_url": "https://openstates.org/person/brian-boner-6KLyUnu9iUJ9WqeFctXIZb/"
+  },
+  {
+    "id": "ocd-person/0b07cbe8-73ba-4371-9acb-95cb7ecf6251",
+    "name": "Cale Case",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:wy/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Cale",
+    "family_name": "Case",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-CaseCale.jpg",
+    "email": "cale.case@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1958-06-02",
+    "death_date": "",
+    "extras": {
+      "county": "Fremont County",
+      "occupation": "Economist",
+      "house years": "House:  1993-1998",
+      "senate years": "Senate: 1999-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "1998",
+          "district": "",
+          "startYear": 1993
+        },
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 25, ",
+          "startYear": 1999
+        }
+      ]
+    },
+    "created_at": "2018-10-18T16:14:45.156969+00:00",
+    "updated_at": "2026-01-28T02:55:06.707384+00:00",
+    "openstates_url": "https://openstates.org/person/cale-case-KoTfnENfyZd6N8eNHtrnd/"
+  },
+  {
+    "id": "ocd-person/a3ddc445-efa1-4c0c-809a-d21fc383fa59",
+    "name": "Charles Scott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:wy/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Charles",
+    "family_name": "Scott",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-ScottCharles.jpg",
+    "email": "charles.scott@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1945-08-19",
+    "death_date": "",
+    "extras": {
+      "county": "Natrona County",
+      "religion": "Unitarian",
+      "education": [
+        {
+          "degree": "BA",
+          "gradYear": "1967",
+          "schoolName": "Harvard College"
+        },
+        {
+          "degree": "MBA",
+          "gradYear": "1969",
+          "schoolName": "Harvard Business School"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "1994",
+          "position": "Senate Vice President",
+          "startYear": "1993",
+          "currentLeader": false
+        }
+      ],
+      "occupation": "Rancher",
+      "birth place": "USMC Base near Klamath Falls, Oregon",
+      "house years": "House:  1979-1982",
+      "senate years": "Senate: 1983-Present",
+      "organizations": [
+        {
+          "orgname": "Audubon Society"
+        },
+        {
+          "orgname": "Nature Conservancy"
+        },
+        {
+          "orgname": "Stock Grower's Association"
+        },
+        {
+          "orgname": "Reforming States Group - Vice Chairman"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "1982",
+          "district": "",
+          "startYear": 1979
+        },
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 30, ",
+          "startYear": 1983
+        }
+      ],
+      "number of children": "2",
+      "number of grandchildren": "1"
+    },
+    "created_at": "2018-10-18T16:14:45.399922+00:00",
+    "updated_at": "2026-01-28T02:55:02.679359+00:00",
+    "openstates_url": "https://openstates.org/person/charles-scott-4zD60iNNxhijmb6fxwlS7l/"
+  },
+  {
+    "id": "ocd-person/9fe08ab5-b31c-4f7b-bb23-c7aff3cd3e4d",
+    "name": "Cheri Steinmetz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:wy/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Cheri",
+    "family_name": "Steinmetz",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SteinmetzCheri.jpg",
+    "email": "cheri.steinmetz@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Goshen, Niobrara, Weston Counties",
+      "religion": "Non-Denominational",
+      "house years": "House:  2015-Present",
+      "spouse name": "Corey",
+      "organizations": [
+        {
+          "orgname": "Goshen County Farm Bureau Federation Board"
+        },
+        {
+          "orgname": "Goshen County Republican Precinct Committee Woman"
+        },
+        {
+          "orgname": "Goshen County Republican Women Secretary"
+        },
+        {
+          "orgname": "LEAD Fellow Graduate Class of 2012"
+        },
+        {
+          "orgname": "Goshen County Cattlewomen"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "2018",
+          "district": " District 05, ",
+          "startYear": 2015
+        },
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 03, ",
+          "startYear": 2019
+        }
+      ],
+      "number of children": "1",
+      "number of grandchildren": "1"
+    },
+    "created_at": "2018-10-18T16:14:45.483805+00:00",
+    "updated_at": "2026-01-28T02:54:47.947256+00:00",
+    "openstates_url": "https://openstates.org/person/cheri-steinmetz-4rgOXpAa3H8xVvzIoUph2T/"
+  },
+  {
+    "id": "ocd-person/510546dd-c3ca-4ce4-9342-f77e05712f2e",
+    "name": "Chris Rothfuss",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:wy/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Rothfuss",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-RothfussChris.jpg",
+    "email": "chris.rothfuss@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1972-10-21",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Floor Leader",
+      "county": "Albany County",
+      "education": [
+        {
+          "degree": "PhD Chemical Engineering",
+          "gradYear": "2002",
+          "schoolName": "University of Washington"
+        },
+        {
+          "degree": "MS Applied Physics",
+          "gradYear": "2002",
+          "schoolName": "University of Washington"
+        },
+        {
+          "degree": "MS Chemical Engineering",
+          "gradYear": "1996",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "BA International Studies",
+          "gradYear": "1994",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2024",
+          "position": "Senate Minority Floor Leader                      ",
+          "startYear": "2023",
+          "currentLeader": true
+        },
+        {
+          "endYear": "2022",
+          "position": "Senate Minority Floor Leader                      ",
+          "startYear": "2021",
+          "currentLeader": false
+        },
+        {
+          "endYear": "2020",
+          "position": "Senate Minority Floor Leader",
+          "startYear": "2019",
+          "currentLeader": false
+        },
+        {
+          "endYear": "2018",
+          "position": "Senate Minority Floor Leader",
+          "startYear": "2017",
+          "currentLeader": false
+        },
+        {
+          "endYear": "2016",
+          "position": "Senate Minority Floor Leader",
+          "startYear": "2015",
+          "currentLeader": false
+        },
+        {
+          "endYear": "2014",
+          "position": "Senate Minority Floor Leader",
+          "startYear": "2013",
+          "currentLeader": false
+        }
+      ],
+      "occupation": "Chemical Engineer/Consultant",
+      "senate years": "Senate: 2011-Present",
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 09, ",
+          "startYear": 2011
+        }
+      ]
+    },
+    "created_at": "2018-10-18T16:14:45.563930+00:00",
+    "updated_at": "2026-01-28T02:53:59.291296+00:00",
+    "openstates_url": "https://openstates.org/person/chris-rothfuss-2Ssmyl7mIfpLdmfeVXZwi6/"
+  },
+  {
+    "id": "ocd-person/5395223c-9b56-410d-b18f-978d9e2a07a9",
+    "name": "Dan Dockstader",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:wy/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Dockstader",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-DockstaderDan.jpg",
+    "email": "dan.dockstader@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1958-02-13",
+    "death_date": "",
+    "extras": {
+      "county": "Lincoln, Teton Counties",
+      "religion": "LDS",
+      "education": [
+        {
+          "degree": "BA",
+          "gradYear": "",
+          "schoolName": "BYU"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2022",
+          "position": "President of the Senate                           ",
+          "startYear": "2021",
+          "currentLeader": false
+        },
+        {
+          "endYear": "2020",
+          "position": "Senate Majority Floor Leader",
+          "startYear": "2019",
+          "currentLeader": false
+        }
+      ],
+      "occupation": "Publisher/Radio Host",
+      "birth place": "Idaho Falls ID",
+      "house years": "House:  2007-2008",
+      "spouse name": "Kim",
+      "senate years": "Senate: 2009-Present",
+      "organizations": [
+        {
+          "orgname": "Chamber of Commerce"
+        },
+        {
+          "orgname": "Arts Council"
+        },
+        {
+          "orgname": "Rotary Club"
+        },
+        {
+          "orgname": "Historical Society"
+        },
+        {
+          "orgname": "Afton Town Council"
+        },
+        {
+          "orgname": "Lincoln County Fair Board"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "2008",
+          "district": " District 16, ",
+          "startYear": 2007
+        },
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 16, ",
+          "startYear": 2009
+        }
+      ],
+      "number of children": "4",
+      "number of grandchildren": "12"
+    },
+    "created_at": "2018-10-18T16:14:45.982713+00:00",
+    "updated_at": "2026-01-28T02:54:37.403197+00:00",
+    "openstates_url": "https://openstates.org/person/dan-dockstader-2XiW54QFRQg3XnFsyvyI93/"
+  },
+  {
+    "id": "ocd-person/982cdb50-2a81-47b4-97e8-cf80b92d1412",
+    "name": "Dan Laursen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:wy/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Laursen",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LaursenDan.jpg",
+    "email": "dan.laursen@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1960-03-09",
+    "death_date": "",
+    "extras": {
+      "county": "Big Horn, Park Counties",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "B.S., Agricultural Engineering",
+          "gradYear": "1983",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "A.S.",
+          "gradYear": "1980",
+          "schoolName": "Northwest College"
+        }
+      ],
+      "occupation": "Hydrographer State Engineers Office.  Past: Manager Heart Mountain Irrigation District, Farmer",
+      "birth place": "Laramie, Wyoming",
+      "house years": "House:  2015-2022",
+      "spouse name": "Denise",
+      "senate years": "Senate: 2023-Present",
+      "organizations": [
+        {
+          "orgname": "Past Board Member Upper Missouri Water Association"
+        },
+        {
+          "orgname": "Past Board Member/ Chairman Park County Fire District #1"
+        },
+        {
+          "orgname": "Past Board Member/Pres/Treas Big Horn Basin Beet Growers"
+        },
+        {
+          "orgname": "Past Family Farm Alliance Advisory Committee Member"
+        },
+        {
+          "orgname": "Past Board Member/Pres/Treas Northend Water Users"
+        },
+        {
+          "orgname": "Past Board Member/Pres Powell Recreation"
+        },
+        {
+          "orgname": "Past Board Member/V Pres Park County Animal Damage Board"
+        },
+        {
+          "orgname": "Member NRA"
+        },
+        {
+          "orgname": "Board Member/ Treasurer Wyoming Water Association"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "2022",
+          "district": " District 25, ",
+          "startYear": 2015
+        },
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 19, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "2"
+    },
+    "created_at": "2023-02-15T00:34:14.879537+00:00",
+    "updated_at": "2026-01-28T02:54:16.603621+00:00",
+    "openstates_url": "https://openstates.org/person/dan-laursen-4d9Kf4yerUXHlIRj8nMaxO/"
+  },
+  {
+    "id": "ocd-person/13022d64-c748-4603-b60e-bd176383b8f1",
+    "name": "Ed Cooper",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:wy/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Cooper",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-CooperEd.jpg",
+    "email": "ed.cooper@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Big Horn, Fremont, Hot Springs, Park, Washakie Counties",
+      "religion": "Baptist",
+      "education": [
+        {
+          "degree": "",
+          "gradYear": "1971",
+          "schoolName": "Ten Sleep High School"
+        }
+      ],
+      "occupation": "Self Employed Oil and Gas Consultant",
+      "birth place": "Thermopolis",
+      "senate years": "Senate: 2021-Present",
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 20, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "1",
+      "number of grandchildren": "2"
+    },
+    "created_at": "2021-01-12T00:23:01.198241+00:00",
+    "updated_at": "2026-01-28T02:54:20.543275+00:00",
+    "openstates_url": "https://openstates.org/person/ed-cooper-ZrqeW7zGpJVELVAFgNtw1/"
+  },
+  {
+    "id": "ocd-person/afa67bb0-3191-4dce-94ab-ddb3a9e7475c",
+    "name": "Eric Barlow",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:wy/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Barlow",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BarlowEric.jpg",
+    "email": "eric.barlow@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1966-05-08",
+    "death_date": "",
+    "extras": {
+      "county": "Campbell County",
+      "education": [
+        {
+          "degree": "Doctorate of Veterinary Medicine",
+          "gradYear": "1998",
+          "schoolName": "Colorado State University"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2022",
+          "position": "Speaker of the House                              ",
+          "startYear": "2021",
+          "currentLeader": false
+        },
+        {
+          "endYear": "2020",
+          "position": "House Majority Floor Leader",
+          "startYear": "2019",
+          "currentLeader": false
+        }
+      ],
+      "occupation": "Rancher, Veterinarian ",
+      "birth place": "Gillette",
+      "house years": "House:  2013-2022",
+      "spouse name": "Kelly",
+      "senate years": "Senate: 2023-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "2022",
+          "district": " District 03, ",
+          "startYear": 2013
+        },
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 23, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "2"
+    },
+    "created_at": "2023-02-15T00:33:14.652960+00:00",
+    "updated_at": "2026-04-09T08:43:24.929789+00:00",
+    "openstates_url": "https://openstates.org/person/eric-barlow-5LRjtTU314zryslcccMhyu/"
+  },
+  {
+    "id": "ocd-person/7f287d7d-8f05-4116-8bcf-33174ecf1e9c",
+    "name": "Evie Brennan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:wy/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Evie",
+    "family_name": "Brennan",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-BrennanEvie.jpg",
+    "email": "evie.brennan@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Laramie County",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "Bachelors of Science in Nursing",
+          "gradYear": "2004",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "occupation": "RN",
+      "birth place": "Cheyenne, WY",
+      "spouse name": "Nathan",
+      "senate years": "Senate: 2023-Present",
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 31, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "4"
+    },
+    "created_at": "2023-02-15T00:34:20.609509+00:00",
+    "updated_at": "2026-01-28T02:54:59.043067+00:00",
+    "openstates_url": "https://openstates.org/person/evie-brennan-3rwWpmIOijmAzOBKarkd0W/"
+  },
+  {
+    "id": "ocd-person/84464d31-bdbb-4687-9757-27794e64d319",
+    "name": "Gary Crum",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:wy/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Crum",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-CrumGary.jpg",
+    "email": "gary.crum@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1959-08-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:24:32.728676+00:00",
+    "updated_at": "2026-01-28T02:54:29.166534+00:00",
+    "openstates_url": "https://openstates.org/person/gary-crum-41b78H30t11xroQb2TPrDN/"
+  },
+  {
+    "id": "ocd-person/63e25ff3-1832-45c8-a9af-669bb74a3aa4",
+    "name": "Jared Olsen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:wy/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Jared",
+    "family_name": "Olsen",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-OlsenJared.jpg",
+    "email": "jared.olsen@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1987-10-10",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip",
+      "county": "Laramie County",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "JD",
+          "gradYear": "2013",
+          "schoolName": "University of Wyoming - College of Law"
+        },
+        {
+          "degree": "Master of Public Administration",
+          "gradYear": "2013",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "BS - Political Science",
+          "gradYear": "2010",
+          "schoolName": "Weber State University"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2022",
+          "position": "House Majority Whip                               ",
+          "startYear": "2021",
+          "currentLeader": true
+        }
+      ],
+      "occupation": "Attorney and Small Business Owner",
+      "house years": "House:  2017-Present",
+      "spouse name": "Dani",
+      "organizations": [
+        {
+          "orgname": "Chairman, Laramie County Republican Party (2014-2016)"
+        },
+        {
+          "orgname": "Southeast Wyoming Estate Planning Council"
+        },
+        {
+          "orgname": "Cheyenne City Housing and Community Development Advisory Council (2014-2016)"
+        },
+        {
+          "orgname": "Cheyenne Chamber of Commerce"
+        },
+        {
+          "orgname": "Vice Chairman, Wyoming's Republican Party (2016-2018)"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "Present",
+          "district": " District 11, ",
+          "startYear": 2017
+        }
+      ],
+      "number of children": "3"
+    },
+    "created_at": "2018-10-18T16:14:47.847268+00:00",
+    "updated_at": "2026-01-28T02:55:04.691976+00:00",
+    "openstates_url": "https://openstates.org/person/jared-olsen-32Th1WinpBQQZMiSI17tLQ/"
+  },
+  {
+    "id": "ocd-person/f40c41d5-b371-49c5-a597-db8435e613a0",
+    "name": "Jim Anderson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:wy/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Anderson",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-AndersonJim.jpg",
+    "email": "jim.anderson@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1948-07-24",
+    "death_date": "",
+    "extras": {
+      "county": "Natrona County",
+      "religion": "Episcopal",
+      "education": [
+        {
+          "degree": "High school",
+          "gradYear": "1966",
+          "schoolName": "Kaycee High School"
+        },
+        {
+          "degree": "A.S. Business",
+          "gradYear": "1974",
+          "schoolName": "Casper College"
+        }
+      ],
+      "occupation": "Retired",
+      "birth place": "Sheridan",
+      "spouse name": "Susan",
+      "senate years": "Senate: 2013-Present",
+      "organizations": [
+        {
+          "orgname": "Casper Rotary Club"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 28, ",
+          "startYear": 2013
+        }
+      ],
+      "number of children": "2",
+      "number of grandchildren": "5"
+    },
+    "created_at": "2018-10-18T16:14:48.247391+00:00",
+    "updated_at": "2026-01-28T02:54:53.123283+00:00",
+    "openstates_url": "https://openstates.org/person/jim-anderson-7QVjDWkNxoNR9qp8OJRDlo/"
+  },
+  {
+    "id": "ocd-person/a8a05d47-8306-4f20-a848-02c92db1fffe",
+    "name": "John Kolb",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:wy/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Kolb",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-KolbJohn.jpg",
+    "email": "john.kolb@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Sweetwater County",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "High School",
+          "gradYear": "1976",
+          "schoolName": "Bergen County Vocational Technical High School"
+        }
+      ],
+      "birth place": "Boston, Massachusetts",
+      "spouse name": "Elvira",
+      "senate years": "Senate: 2021-Present",
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 12, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "4",
+      "number of grandchildren": "4"
+    },
+    "created_at": "2021-01-12T00:23:00.706220+00:00",
+    "updated_at": "2026-01-28T02:54:12.570095+00:00",
+    "openstates_url": "https://openstates.org/person/john-kolb-58BzqzY0rd2ZDUDFZ2TOpi/"
+  },
+  {
+    "id": "ocd-person/286af01e-ace3-4de2-b1c3-44756370d932",
+    "name": "Larry Hicks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:wy/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Hicks",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-HicksLarry.jpg",
+    "email": "larry.hicks@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1958-12-30",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Floor Leader",
+      "county": "Carbon, Sweetwater Counties",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "",
+          "gradYear": "",
+          "schoolName": "Northwest Community College"
+        },
+        {
+          "degree": "BS-Crop Science",
+          "gradYear": "1983",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "MS-Agronomy",
+          "gradYear": "1986",
+          "schoolName": "Montana State University"
+        },
+        {
+          "degree": "Course work complete PhD Agronomy",
+          "gradYear": "",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2024",
+          "position": "Senate Majority Floor Leader                      ",
+          "startYear": "2023",
+          "currentLeader": true
+        },
+        {
+          "endYear": "2022",
+          "position": "Senate Vice President                             ",
+          "startYear": "2021",
+          "currentLeader": false
+        }
+      ],
+      "occupation": "Natural Resources Manager",
+      "birth place": "Powell, WY",
+      "spouse name": "Roxane \"ROX\" Hicks",
+      "senate years": "Senate: 2011-Present",
+      "organizations": [
+        {
+          "orgname": "Family Farm Alliance, Advisory Board"
+        },
+        {
+          "orgname": "Savery-Little Snake Water Conservancy Board"
+        },
+        {
+          "orgname": "West Side Canal Co"
+        },
+        {
+          "orgname": "River of Grace Bible Church"
+        },
+        {
+          "orgname": "Wyo Wild Sheep Foundation"
+        },
+        {
+          "orgname": "NRA, RMEF, DU, BOW, P&Y"
+        },
+        {
+          "orgname": "MFT Horse Breed Assn"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 11, ",
+          "startYear": 2011
+        }
+      ]
+    },
+    "created_at": "2018-10-18T16:14:48.913897+00:00",
+    "updated_at": "2026-01-28T02:54:06.175660+00:00",
+    "openstates_url": "https://openstates.org/person/larry-hicks-1EGYxVP7hsJcfbocJYhHjW/"
+  },
+  {
+    "id": "ocd-person/c6b78357-5a9d-41e9-b947-1d81227b0f15",
+    "name": "Laura Pearson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:wy/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Laura",
+    "family_name": "Pearson",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-PearsonLaura.jpg",
+    "email": "laura.pearson@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:23:18.066452+00:00",
+    "updated_at": "2026-01-28T02:54:28.531368+00:00",
+    "openstates_url": "https://openstates.org/person/laura-pearson-62yLTiut2hFGK4SAM73Y61/"
+  },
+  {
+    "id": "ocd-person/b91459e7-2049-4cf9-8b0b-f769ce373613",
+    "name": "Lynn Hutchings",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:wy/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Lynn",
+    "family_name": "Hutchings",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-HutchingsLynn.jpg",
+    "email": "lynn.hutchings@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "1960-09-06",
+    "death_date": "",
+    "extras": {
+      "county": "Laramie County",
+      "religion": "Christian",
+      "house years": "House:  2013-2014",
+      "spouse name": "Thomas",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "2014",
+          "district": " District 42, ",
+          "startYear": 2013
+        },
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 05, ",
+          "startYear": 2019
+        }
+      ]
+    },
+    "created_at": "2019-01-07T05:14:21.849572+00:00",
+    "updated_at": "2026-01-28T02:54:35.583252+00:00",
+    "openstates_url": "https://openstates.org/person/lynn-hutchings-5dEscb93FNyfaWEa4uvhPX/"
+  },
+  {
+    "id": "ocd-person/587874e4-f0c9-4679-aa08-a2442b7d33b1",
+    "name": "Mike Gierau",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:wy/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Gierau",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-GierauMike.jpg",
+    "email": "mike.gierau@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1959-03-18",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Whip",
+      "county": "Teton County",
+      "leadership": [
+        {
+          "endYear": "2024",
+          "position": "Senate Minority Whip                              ",
+          "startYear": "2023",
+          "currentLeader": true
+        },
+        {
+          "endYear": "2022",
+          "position": "Senate Minority Whip                              ",
+          "startYear": "2021",
+          "currentLeader": false
+        },
+        {
+          "endYear": "2020",
+          "position": "Senate Minority Caucus Chairman",
+          "startYear": "2019",
+          "currentLeader": false
+        }
+      ],
+      "house years": "House:  2017-2018",
+      "senate years": "Senate: 2019-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "2018",
+          "district": " District 16, ",
+          "startYear": 2017
+        },
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 17, ",
+          "startYear": 2019
+        }
+      ]
+    },
+    "created_at": "2018-10-18T16:14:49.570645+00:00",
+    "updated_at": "2026-01-28T02:53:56.562024+00:00",
+    "openstates_url": "https://openstates.org/person/mike-gierau-2gwNA87VKF8MQGZYoGN2Ez/"
+  },
+  {
+    "id": "ocd-person/e72a31cf-cefd-42c1-9620-967af32a2f48",
+    "name": "Ogden Driskill",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:wy/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Ogden",
+    "family_name": "Driskill",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-DriskillOgden.jpg",
+    "email": "ogden.driskill@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1959-07-24",
+    "death_date": "",
+    "extras": {
+      "title": "President of the Senate",
+      "county": "Campbell, Crook,  Weston Counties",
+      "education": [
+        {
+          "degree": "Diploma",
+          "gradYear": "1977",
+          "schoolName": "Hulett High School"
+        },
+        {
+          "degree": "AA",
+          "gradYear": "1980",
+          "schoolName": "Casper College"
+        },
+        {
+          "degree": "",
+          "gradYear": "",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "leadership": [
+        {
+          "endYear": "2024",
+          "position": "President of the Senate                           ",
+          "startYear": "2023",
+          "currentLeader": true
+        },
+        {
+          "endYear": "2022",
+          "position": "Senate Majority Floor Leader                      ",
+          "startYear": "2021",
+          "currentLeader": false
+        },
+        {
+          "endYear": "2020",
+          "position": "Senate Vice President",
+          "startYear": "2019",
+          "currentLeader": false
+        }
+      ],
+      "occupation": "Rancher and Tourism ",
+      "spouse name": "Rosanne",
+      "senate years": "Senate: 2011-Present",
+      "organizations": [
+        {
+          "orgname": "Wyoming Stockgrowers Assn"
+        },
+        {
+          "orgname": "Partnership of Rangeland Trusts"
+        },
+        {
+          "orgname": "Land Trust Alliance"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 01, ",
+          "startYear": 2011
+        }
+      ],
+      "number of children": "3",
+      "number of grandchildren": "3"
+    },
+    "created_at": "2018-10-18T16:14:49.888406+00:00",
+    "updated_at": "2026-01-28T02:54:34.519290+00:00",
+    "openstates_url": "https://openstates.org/person/ogden-driskill-72CVeOj1tv8T6IQrQesOL2/"
+  },
+  {
+    "id": "ocd-person/343a76eb-5672-433a-9d39-f34b6f683cab",
+    "name": "Stacy Jones",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:wy/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Stacy",
+    "family_name": "Jones",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-JonesStacy.jpg",
+    "email": "stacy.jones@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Sweetwater County",
+      "religion": "Christian",
+      "occupation": "Realtor ",
+      "birth place": "Laramie, WY",
+      "spouse name": "Taylor Jones",
+      "senate years": "Senate: 2023-Present",
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 13, ",
+          "startYear": 2023
+        }
+      ],
+      "number of children": "2"
+    },
+    "created_at": "2023-02-15T00:34:41.078448+00:00",
+    "updated_at": "2026-01-28T02:54:39.931698+00:00",
+    "openstates_url": "https://openstates.org/person/stacy-jones-1aYJneDNoNAzbevRd5pwB1/"
+  },
+  {
+    "id": "ocd-person/f46abbfe-3a0a-4657-a4ac-fbc418adfcc7",
+    "name": "Stephan Pappas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:wy/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Stephan",
+    "family_name": "Pappas",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-PappasStephan.jpg",
+    "email": "stephan.pappas@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "1950-12-14",
+    "death_date": "",
+    "extras": {
+      "county": "Laramie County",
+      "religion": "Greek Orthodox",
+      "education": [
+        {
+          "degree": "",
+          "gradYear": "1969",
+          "schoolName": "Cheyenne East High School"
+        },
+        {
+          "degree": "Bachelor of Fine Arts",
+          "gradYear": "1973",
+          "schoolName": "University of New Mexico"
+        },
+        {
+          "degree": "Bachelor of Architecture",
+          "gradYear": "1978",
+          "schoolName": "Arizona State University"
+        }
+      ],
+      "occupation": "Architect / Brigadier General, USAF (Retired)",
+      "birth place": "Cheyenne, Wyoming",
+      "spouse name": "Kay",
+      "senate years": "Senate: 2015-Present",
+      "organizations": [
+        {
+          "orgname": "Greater Cheyenne Chamber of Commerce"
+        },
+        {
+          "orgname": "Air Force Association"
+        },
+        {
+          "orgname": "American Institute of Architects"
+        },
+        {
+          "orgname": "Leadership Wyoming"
+        },
+        {
+          "orgname": "UW Civil & Architectural Engineering Advisory Board"
+        },
+        {
+          "orgname": "Employer Support of the Guard & Reserve"
+        },
+        {
+          "orgname": "Young Men's Literary Club of Cheyenne"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 07, ",
+          "startYear": 2015
+        }
+      ],
+      "number of children": "3",
+      "number of grandchildren": "1"
+    },
+    "created_at": "2018-10-18T16:14:50.527306+00:00",
+    "updated_at": "2026-01-28T02:55:10.835413+00:00",
+    "openstates_url": "https://openstates.org/person/stephan-pappas-7RCu8oJWHSeyRncoYu3w51/"
+  },
+  {
+    "id": "ocd-person/e6276406-b441-4265-a110-7e3f9b8b0e3f",
+    "name": "Taft Love",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:wy/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Taft",
+    "family_name": "Love",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-LoveTaft.jpg",
+    "email": "taft.love@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-28T02:54:16.915672+00:00",
+    "updated_at": "2026-01-28T02:54:17.787849+00:00",
+    "openstates_url": "https://openstates.org/person/taft-love-70IEgKkJBtrlHBMx2G5R1z/"
+  },
+  {
+    "id": "ocd-person/f20c9c17-f2bd-4c88-9f6f-208af6a61f26",
+    "name": "Tara Nethercott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:wy/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Tara",
+    "family_name": "Nethercott",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-NethercottTara.jpg",
+    "email": "tara.nethercott@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Laramie County",
+      "education": [
+        {
+          "degree": "Juris Doctorate",
+          "gradYear": "2009",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "senate years": "Senate: 2017-Present",
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 04, ",
+          "startYear": 2017
+        }
+      ]
+    },
+    "created_at": "2018-10-18T16:14:50.770235+00:00",
+    "updated_at": "2026-01-28T02:54:10.244060+00:00",
+    "openstates_url": "https://openstates.org/person/tara-nethercott-7Mju9t5KTpvK42RdmARfxm/"
+  },
+  {
+    "id": "ocd-person/057afdb5-3c0e-4503-b6cd-50ba6df1aaab",
+    "name": "Tim French",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:wy/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "French",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-FrenchTim.jpg",
+    "email": "tim.french@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Park County",
+      "religion": "Christian",
+      "occupation": "Farmer",
+      "birth place": "Cody, WY",
+      "spouse name": "Becky",
+      "senate years": "Senate: 2021-Present",
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 18, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "2",
+      "number of grandchildren": "5"
+    },
+    "created_at": "2021-01-12T00:23:05.800679+00:00",
+    "updated_at": "2026-01-28T02:54:00.890737+00:00",
+    "openstates_url": "https://openstates.org/person/tim-french-ALASU19yd3cHqfM7P4i9z/"
+  },
+  {
+    "id": "ocd-person/4f702d02-54ad-4143-837a-09be9a03ee6e",
+    "name": "Tim Salazar",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:wy/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Salazar",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SalazarTim.jpg",
+    "email": "tim.salazar@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Fremont County",
+      "occupation": "1989 \u2013 2015 US Military, Retired",
+      "house years": "House:  2017-2020",
+      "spouse name": "Shannon",
+      "senate years": "Senate: 2021-Present",
+      "prior service": [
+        {
+          "chamber": "House",
+          "endYear": "2020",
+          "district": " District 34, ",
+          "startYear": 2017
+        },
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 26, ",
+          "startYear": 2021
+        }
+      ]
+    },
+    "created_at": "2021-01-12T00:23:00.482167+00:00",
+    "updated_at": "2026-01-28T02:55:09.771480+00:00",
+    "openstates_url": "https://openstates.org/person/tim-salazar-2PteoavPt8dHKj8BCRifoU/"
+  },
+  {
+    "id": "ocd-person/c1525bf9-8a43-4807-b72a-e42f94267b09",
+    "name": "Troy McKeown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:wy/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Troy",
+    "family_name": "McKeown",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-McKeownTroy.jpg",
+    "email": "troy.mckeown@wyoleg.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Campbell County",
+      "religion": "Christian",
+      "education": [
+        {
+          "degree": "Dipoloma",
+          "gradYear": "1982",
+          "schoolName": "Cheyenne Central High School"
+        },
+        {
+          "degree": "BS Business",
+          "gradYear": "1987",
+          "schoolName": "University of Wyoming"
+        },
+        {
+          "degree": "MBA",
+          "gradYear": "2012",
+          "schoolName": "Webster University"
+        }
+      ],
+      "occupation": "Self Employed",
+      "birth place": "Cheyenne",
+      "senate years": "Senate: 2021-Present",
+      "organizations": [
+        {
+          "orgname": "Eagles"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 24, ",
+          "startYear": 2021
+        }
+      ],
+      "number of children": "3",
+      "number of grandchildren": "3"
+    },
+    "created_at": "2021-01-12T00:23:06.511986+00:00",
+    "updated_at": "2026-01-28T02:54:03.780776+00:00",
+    "openstates_url": "https://openstates.org/person/troy-mckeown-5sn9l3WudnZFaPKZLtFK6j/"
+  },
+  {
+    "id": "ocd-person/6dd13000-c423-47d8-9fbb-3cbcf730d7fe",
+    "name": "Wendy Schuler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:wy/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wy/government",
+      "name": "Wyoming",
+      "classification": "state"
+    },
+    "given_name": "Wendy",
+    "family_name": "Schuler",
+    "image": "https://wyoleg.gov/LegislatorSummary/Photos/68th-SchulerWendy.jpg",
+    "email": "wendy.schuler@wyoleg.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "county": "Uinta County",
+      "religion": "LDS",
+      "education": [
+        {
+          "degree": "B. S. Education",
+          "gradYear": "1974",
+          "schoolName": "University of Wyoming"
+        }
+      ],
+      "occupation": "Teacher, Retired",
+      "birth place": "Evanston",
+      "house years": "House:  2019-Present",
+      "spouse name": "Widow",
+      "organizations": [
+        {
+          "orgname": "Soroptimist Club"
+        },
+        {
+          "orgname": "Wyo Coaches Assn."
+        },
+        {
+          "orgname": "Evanston Youth Club."
+        },
+        {
+          "orgname": "Golf Advisory Board"
+        }
+      ],
+      "prior service": [
+        {
+          "chamber": "Senate",
+          "endYear": "Present",
+          "district": " District 15, ",
+          "startYear": 2019
+        }
+      ],
+      "number of children": "4",
+      "number of grandchildren": "3"
+    },
+    "created_at": "2019-01-07T05:14:13.059244+00:00",
+    "updated_at": "2026-01-28T02:55:00.859412+00:00",
+    "openstates_url": "https://openstates.org/person/wendy-schuler-3LDlHRJE5yJ8n8J9QCw26I/"
+  }
+]

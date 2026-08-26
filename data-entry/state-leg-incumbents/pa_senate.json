@@ -1,0 +1,1558 @@
+[
+  {
+    "id": "ocd-person/77755456-0f2a-4bbd-ac96-03d83398d6fc",
+    "name": "Amanda Cappelletti",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:pa/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Amanda",
+    "family_name": "Cappelletti",
+    "image": "https://www.legis.state.pa.us/images/members/200/1923.jpg?1703415645672",
+    "email": "cappelletti@pasenate.com",
+    "gender": "Female",
+    "birth_date": "1986-12-09",
+    "death_date": "",
+    "extras": {
+      "Education": [
+        "Chestnut Hill College, B.S.",
+        "Temple University James E. Beasley School of Law, J.D.",
+        "Temple University, College of Health Professions and Social Work, M.P.H."
+      ]
+    },
+    "created_at": "2020-12-30T06:15:44.173494+00:00",
+    "updated_at": "2025-07-17T08:10:28.747874+00:00",
+    "openstates_url": "https://openstates.org/person/amanda-cappelletti-3dPhoE1WJU4wXiTysODkYm/"
+  },
+  {
+    "id": "ocd-person/ea712eba-1da5-45e2-8d9f-022e8307a614",
+    "name": "Art Haywood",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:pa/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Art",
+    "family_name": "Haywood",
+    "image": "https://www.legis.state.pa.us/images/members/200/1689.jpg?1703415645672",
+    "email": "senatorhaywood@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1957-01-28",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorhaywood.com",
+      "Education": [
+        "B.A. Magna Cum Laude, Morehouse College, 1979; MsC London School of Economics (Marshall Scholar), 1981; J.D. University of Michigan Law School, 1985."
+      ]
+    },
+    "created_at": "2018-10-18T16:11:04.224515+00:00",
+    "updated_at": "2026-01-28T02:04:29.240020+00:00",
+    "openstates_url": "https://openstates.org/person/art-haywood-78NvbMSXqyfChYbc4taj6S/"
+  },
+  {
+    "id": "ocd-person/66b8c0a7-f8be-4acd-aafb-29ca02fcde65",
+    "name": "Camera Bartolotta",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:pa/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Camera",
+    "family_name": "Bartolotta",
+    "image": "https://www.legis.state.pa.us/images/members/200/1698.jpg?1703415645672",
+    "email": "cbartolotta@pasen.gov",
+    "gender": "Female",
+    "birth_date": "1963-12-04",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorbartolotta.com",
+      "Education": [
+        "St. Mary's College, California"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:05.468260+00:00",
+    "updated_at": "2026-01-28T02:05:04.289328+00:00",
+    "openstates_url": "https://openstates.org/person/camera-bartolotta-37peGiP1cFjLg7qaO7RhLB/"
+  },
+  {
+    "id": "ocd-person/91c58c1d-de9d-471b-8178-f6ef89c1286b",
+    "name": "Carolyn Comitta",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:pa/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Carolyn",
+    "family_name": "Comitta",
+    "image": "https://www.legis.state.pa.us/images/members/200/1790.jpg?1703415645672",
+    "email": "senatorcomitta@pasenate.com",
+    "gender": "Female",
+    "birth_date": "1952-04-27",
+    "death_date": "",
+    "extras": {
+      "website": "https://www.pasenatorcomitta.com/",
+      "Education": [
+        "Downingtown High School",
+        "West Chester State College, BS Ed. 1974",
+        "Widener University"
+      ]
+    },
+    "created_at": "2020-12-30T06:15:42.988935+00:00",
+    "updated_at": "2026-04-09T07:59:02.133600+00:00",
+    "openstates_url": "https://openstates.org/person/carolyn-comitta-4R4ALA3BP1hFgcOdt2KAvL/"
+  },
+  {
+    "id": "ocd-person/965b26f8-5a4a-4458-a327-a25d89605e65",
+    "name": "Chris Gebhard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:pa/sldu:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Gebhard",
+    "image": "https://www.legis.state.pa.us/images/members/200/1928.jpg?1703415645672",
+    "email": "cgebhard@pasen.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "https://senatorgebhard.com"
+    },
+    "created_at": "2021-06-01T22:25:37.939457+00:00",
+    "updated_at": "2026-01-28T02:03:22.379948+00:00",
+    "openstates_url": "https://openstates.org/person/chris-gebhard-4ZiVM28qZVz4Si5ZXJO537/"
+  },
+  {
+    "id": "ocd-person/402d7e3b-1935-47fa-8124-61490037d016",
+    "name": "Cris Dush",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:pa/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Cris",
+    "family_name": "Dush",
+    "image": "https://www.legis.state.pa.us/images/members/200/1687.jpg?1703415645672",
+    "email": "cdush@pasen.gov",
+    "gender": "Male",
+    "birth_date": "1961-03-01",
+    "death_date": "",
+    "extras": {
+      "Education": [
+        "Brookville Area High School",
+        "Community College of the Air Force, AAS Degree in Criminal Justice",
+        "Clarion State College",
+        "University of Louisville",
+        "Southern Illinois Carbondale",
+        "Alan Hancock College",
+        "U.S. Air Force Non-Commissioned Officer Academy"
+      ]
+    },
+    "created_at": "2020-12-30T06:15:52.822205+00:00",
+    "updated_at": "2026-01-28T02:03:53.701235+00:00",
+    "openstates_url": "https://openstates.org/person/cris-dush-1x6IYc15ackQ9QwrrZbgFa/"
+  },
+  {
+    "id": "ocd-person/431a823e-0268-4921-a62d-5f698211e706",
+    "name": "Dan Laughlin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:pa/sldu:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Laughlin",
+    "image": "https://www.legis.state.pa.us/images/members/200/1766.jpg?1703415645672",
+    "email": "dlaughlin@pasen.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorlaughlin.com",
+      "Education": [
+        "Attended Penn State Behrend"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:06.993032+00:00",
+    "updated_at": "2026-01-28T02:03:31.895742+00:00",
+    "openstates_url": "https://openstates.org/person/dan-laughlin-22cbE6mRUoG9cgjb76j18w/"
+  },
+  {
+    "id": "ocd-person/2a2df3c1-9ede-46b7-8d73-896b1e317aff",
+    "name": "Dave Argall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:pa/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Argall",
+    "image": "https://www.legis.state.pa.us/images/members/200/69.jpg?1703415645672",
+    "email": "dargall@pasen.gov",
+    "gender": "Male",
+    "birth_date": "1958-11-21",
+    "death_date": "",
+    "extras": {
+      "website": "http://senatorargall.com",
+      "Education": [
+        "Tamaqua Area High School, 1976;",
+        "Lycoming College, B.A., Political Science and International Studies, 1980;",
+        "Pennsylvania State University, M.A., American Studies, 1993;",
+        "Pennsylvania State University, Ph.D, Public Administration, 2006."
+      ]
+    },
+    "created_at": "2018-10-18T16:11:07.252741+00:00",
+    "updated_at": "2026-01-28T02:03:38.752346+00:00",
+    "openstates_url": "https://openstates.org/person/dave-argall-1Hag1yxLrwVyCUtGMdeuLP/"
+  },
+  {
+    "id": "ocd-person/2a13f9df-b7e6-4281-82e4-f7263b6fa12e",
+    "name": "Dawn Keefer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:pa/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Dawn",
+    "family_name": "Keefer",
+    "image": "https://www.legis.state.pa.us/images/members/200/1748.jpg?1703415645672",
+    "email": "dkeefer@pasen.gov",
+    "gender": "Female",
+    "birth_date": "1972-10-06",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.repkeefer.com"
+    },
+    "created_at": "2018-10-18T16:11:07.694197+00:00",
+    "updated_at": "2026-01-28T02:05:02.841869+00:00",
+    "openstates_url": "https://openstates.org/person/dawn-keefer-1HOo1QUOvXrcfcHOQ33wC6/"
+  },
+  {
+    "id": "ocd-person/5271803b-8b46-449c-bf89-44f7d09c6cd2",
+    "name": "Devlin Robinson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:pa/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Devlin",
+    "family_name": "Robinson",
+    "image": "https://www.legis.state.pa.us/images/members/200/1924.jpg?1703415645672",
+    "email": "drobinson@pasen.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "https://senatordevlinrobinsonpa.com/"
+    },
+    "created_at": "2020-12-30T06:15:36.507483+00:00",
+    "updated_at": "2026-01-28T02:05:15.528164+00:00",
+    "openstates_url": "https://openstates.org/person/devlin-robinson-2VZEvunoguiWft1gCyZoKA/"
+  },
+  {
+    "id": "ocd-person/cda65f80-13e8-463c-88fa-6f5569a599bf",
+    "name": "Doug Mastriano",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:pa/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Mastriano",
+    "image": "https://www.legis.state.pa.us/images/members/200/1869.jpg?1703415645672",
+    "email": "dmastriano@pasen.gov",
+    "gender": "Male",
+    "birth_date": "1964-01-02",
+    "death_date": "",
+    "extras": {
+      "website": "https://senatormastriano.com/",
+      "Education": [
+        "-\t1986 Bachelor of Arts, History, Eastern University, St. Davids, Pennsylvania",
+        "-\t1992 Masters Strategic Intelligence, Joint Intelligence College, Washington, DC",
+        "-\t2001 Masters Airpower Theory, Air University, Maxwell AFB, AL",
+        "-\t2002 Masters Military Operational Art and Science, Air University, Maxwell AFB, AL",
+        "-\t2010 Masters Strategic Studies, US Army War College, Carlisle, Pennsylvania",
+        "-\t2013 Ph.D. University of New Brunswick, Canada (Doctor of History)"
+      ]
+    },
+    "created_at": "2019-11-27T14:13:17.599484+00:00",
+    "updated_at": "2026-01-28T02:03:15.923837+00:00",
+    "openstates_url": "https://openstates.org/person/doug-mastriano-6G3SVBzWynESiwMd8oBtp1/"
+  },
+  {
+    "id": "ocd-person/8a2a9b56-cdfa-45e0-a26e-b45b547a2eae",
+    "name": "Elder Vogel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:pa/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Elder",
+    "family_name": "Vogel",
+    "image": "https://www.legis.state.pa.us/images/members/200/1189.jpg?1703415645672",
+    "email": "evogel@pasen.gov",
+    "gender": "Male",
+    "birth_date": "1956-07-09",
+    "death_date": "",
+    "extras": {
+      "website": "http://senatoreldervogel.com"
+    },
+    "created_at": "2018-10-18T16:11:08.672251+00:00",
+    "updated_at": "2026-01-28T02:04:49.800025+00:00",
+    "openstates_url": "https://openstates.org/person/elder-vogel-4CiPZaH3hjPSb99ACVcrJ0/"
+  },
+  {
+    "id": "ocd-person/611d3c65-f30f-4dde-8f80-7db4ec405a36",
+    "name": "Frank Farry",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:pa/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Frank",
+    "family_name": "Farry",
+    "image": "https://www.legis.state.pa.us/images/members/200/1169.jpg?1703415645672",
+    "email": "ffarry@pasen.gov",
+    "gender": "Male",
+    "birth_date": "1972-12-31",
+    "death_date": "",
+    "extras": {
+      "website": "http://SenatorFarry.com",
+      "Education": [
+        "Neshaminy High School, 1990",
+        "University of Pennsylvania, Wharton School, 1995",
+        "Rutgers University, M.S., Public Policy, 1998",
+        "Rutgers University, Law Degree, 2000"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:09.104955+00:00",
+    "updated_at": "2026-01-28T02:04:51.080934+00:00",
+    "openstates_url": "https://openstates.org/person/frank-farry-2xFcE7ATRv5iLVvykCuBok/"
+  },
+  {
+    "id": "ocd-person/18127660-d04e-43c2-b931-084f0c87142c",
+    "name": "Gene Yaw",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:pa/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Gene",
+    "family_name": "Yaw",
+    "image": "https://www.legis.state.pa.us/images/members/200/1186.jpg?1703415645672",
+    "email": "gyaw@pasen.gov",
+    "gender": "Male",
+    "birth_date": "1943-02-26",
+    "death_date": "",
+    "extras": {
+      "website": "http://senatorgeneyaw.com",
+      "Education": [
+        "Bucknell University 1961-63; graduated Lycoming College, B.A., 1970; American University School of Law, J.D., 1973"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:09.700087+00:00",
+    "updated_at": "2026-01-28T02:03:56.841727+00:00",
+    "openstates_url": "https://openstates.org/person/gene-yaw-jQFhHPXkFbDf7AVs4FG8q/"
+  },
+  {
+    "id": "ocd-person/3e99b4f3-2efa-4330-b0b9-fb273b1322ea",
+    "name": "Greg Rothman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:pa/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Rothman",
+    "image": "https://www.legis.state.pa.us/images/members/200/1733.jpg?1703415645672",
+    "email": "grothman@pasen.gov",
+    "gender": "Male",
+    "birth_date": "1966-12-10",
+    "death_date": "",
+    "extras": {
+      "website": "http://SenatorRothman.com",
+      "Education": [
+        "University of Massachusetts/Amherst, BS Political Science",
+        "Johns Hopkins University, Masters - Real Estate"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:09.958627+00:00",
+    "updated_at": "2025-03-05T08:42:25.617270+00:00",
+    "openstates_url": "https://openstates.org/person/greg-rothman-1u7le5UqTrYfhMMiOI4JVS/"
+  },
+  {
+    "id": "ocd-person/fea0b7c4-d51a-463f-964a-75722678083b",
+    "name": "James Malone",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:pa/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Malone",
+    "image": "",
+    "email": "malone@pasenate.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-05-15T01:55:23.972241+00:00",
+    "updated_at": "2025-07-17T08:11:05.226212+00:00",
+    "openstates_url": "https://openstates.org/person/james-malone-7kTUxMzozb2oawCaUpo1YR/"
+  },
+  {
+    "id": "ocd-person/ecd51b53-a59b-4b92-b203-c1d24f748cb1",
+    "name": "Jarrett Coleman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:pa/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Jarrett",
+    "family_name": "Coleman",
+    "image": "https://www.legis.state.pa.us/images/members/200/2008.jpg?1703415645672",
+    "email": "jcoleman@pasen.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "http://SenatorColeman.com"
+    },
+    "created_at": "2023-01-12T19:28:07.536378+00:00",
+    "updated_at": "2026-01-28T02:04:03.751285+00:00",
+    "openstates_url": "https://openstates.org/person/jarrett-coleman-7CtZuXC0YGWEXIeQoPlwIL/"
+  },
+  {
+    "id": "ocd-person/ee6b52c3-d92c-4cd6-a6ea-6869a8c93df0",
+    "name": "Jay Costa",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:pa/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Costa",
+    "image": "https://www.legis.state.pa.us/images/members/200/254.jpg?1703415645672",
+    "email": "costa@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1957-11-17",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorcosta.com",
+      "Education": [
+        "Community College of Allegheny County, A.S., 1977; Indiana University of PA, B.A., 1979; Duquesne University School of Law, J.D., 1989; att. Allegheny County Police Training Academy, 1985"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:11.472632+00:00",
+    "updated_at": "2026-01-28T02:03:31.323794+00:00",
+    "openstates_url": "https://openstates.org/person/jay-costa-7FtDgOzrC2YVVyxzEh2mhc/"
+  },
+  {
+    "id": "ocd-person/00e98952-3983-44cd-aeca-09fb6cd84f3d",
+    "name": "Joe Picozzi",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:pa/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Picozzi",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Abdullah_Muzammil_20240808_100242.png",
+    "email": "jpicozzi@pasen.gov",
+    "gender": "Male",
+    "birth_date": "1995-04-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:29:07.964462+00:00",
+    "updated_at": "2026-01-28T02:04:48.196731+00:00",
+    "openstates_url": "https://openstates.org/person/joe-picozzi-1ij2QX4loXZ7VeWwVCIdp/"
+  },
+  {
+    "id": "ocd-person/722f324f-db47-4ce2-9cbc-93f29ae38158",
+    "name": "Joe Pittman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:pa/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Pittman",
+    "image": "https://www.legis.state.pa.us/images/members/200/1870.jpg?1703415645672",
+    "email": "",
+    "gender": "Male",
+    "birth_date": "1977-03-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-27T14:13:19.309093+00:00",
+    "updated_at": "2026-04-09T07:59:48.257448+00:00",
+    "openstates_url": "https://openstates.org/person/joe-pittman-3TSh2JisSptclH380IqRrM/"
+  },
+  {
+    "id": "ocd-person/c45052c1-f3e4-485e-a3d2-f346fa51839b",
+    "name": "John Kane",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:pa/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Kane",
+    "image": "https://www.legis.state.pa.us/images/members/200/1925.jpg?1703415645672",
+    "email": "kane@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1960-11-12",
+    "death_date": "",
+    "extras": {
+      "website": "http://pasenatorkane.com/"
+    },
+    "created_at": "2020-12-30T06:15:48.810701+00:00",
+    "updated_at": "2026-01-28T02:04:52.548458+00:00",
+    "openstates_url": "https://openstates.org/person/john-kane-5yRCdta0ZIhun9Mee9z0rT/"
+  },
+  {
+    "id": "ocd-person/35362d6e-d00a-4cf1-806d-b4f2f2a55f72",
+    "name": "Judy Schwank",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:pa/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Judy",
+    "family_name": "Schwank",
+    "image": "https://www.legis.state.pa.us/images/members/200/1234.jpg?1703415645672",
+    "email": "senatorschwank@pasenate.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorschwank.com",
+      "Education": [
+        "Graduated Penn State University, 1982, M.Ed., Agri. Ed."
+      ]
+    },
+    "created_at": "2018-10-18T16:11:13.993328+00:00",
+    "updated_at": "2026-01-28T02:04:46.367369+00:00",
+    "openstates_url": "https://openstates.org/person/judy-schwank-1cPLr1dG8V4UO6Yo8UzCmg/"
+  },
+  {
+    "id": "ocd-person/b6ed7151-9ea4-4828-b639-785f9e358eb1",
+    "name": "Judy Ward",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:pa/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Judy",
+    "family_name": "Ward",
+    "image": "https://www.legis.state.pa.us/images/members/200/1683.jpg?1703415645672",
+    "email": "jward@pasen.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "https://senatorjudyward.com/",
+      "Education": [
+        "Hollidaysburg Area High School, 1977",
+        "Altoona Hospital School of Nursing, 1984"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:14.091167+00:00",
+    "updated_at": "2026-01-28T02:03:23.528208+00:00",
+    "openstates_url": "https://openstates.org/person/judy-ward-5ZB78T8pFcLHH9qGFMH9px/"
+  },
+  {
+    "id": "ocd-person/ade3ef98-a98c-4448-a974-ec4e0eede98f",
+    "name": "Katie Muth",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:pa/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Katie",
+    "family_name": "Muth",
+    "image": "https://www.legis.state.pa.us/images/members/200/1802.jpg?1703415645672",
+    "email": "senatormuth@pasenate.com",
+    "gender": "Female",
+    "birth_date": "1983-09-20",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatormuth.com/"
+    },
+    "created_at": "2019-01-04T05:18:50.663076+00:00",
+    "updated_at": "2026-01-28T02:04:26.799821+00:00",
+    "openstates_url": "https://openstates.org/person/katie-muth-5I7q3KduK7NwbIeGugR9yR/"
+  },
+  {
+    "id": "ocd-person/c48a0179-5770-410d-ba97-bdbc05d20786",
+    "name": "Kim Ward",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:pa/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Ward",
+    "image": "https://www.legis.state.pa.us/images/members/200/1188.jpg?1703415645672",
+    "email": "kward@pasen.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "http://senatorward.com",
+      "Education": [
+        "Community College of Allegheny County; University of Pittsburgh; and Middle Tennessee State University"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:15.247953+00:00",
+    "updated_at": "2026-01-28T02:03:30.295776+00:00",
+    "openstates_url": "https://openstates.org/person/kim-ward-5yrZ1SlLeSTel3yBngkyW6/"
+  },
+  {
+    "id": "ocd-person/cb724e4a-0e5e-4ebd-ac0c-f3dfda73aef6",
+    "name": "Kristin Phillips-Hill",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:pa/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Kristin",
+    "family_name": "Phillips-Hill",
+    "image": "https://www.legis.state.pa.us/images/members/200/1801.jpg?1703415645672",
+    "email": "senatorkristin@pasen.gov",
+    "gender": "Female",
+    "birth_date": "1965-12-02",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorkristin.com/"
+    },
+    "created_at": "2018-10-18T16:11:15.338742+00:00",
+    "updated_at": "2026-01-28T02:05:09.356091+00:00",
+    "openstates_url": "https://openstates.org/person/kristin-phillips-hill-6BtgB0SeZth08NUiUbbVP4/"
+  },
+  {
+    "id": "ocd-person/bc64322a-faaf-4b33-b6c2-cf5059f4121c",
+    "name": "Lindsey Williams",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:pa/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Lindsey",
+    "family_name": "Williams",
+    "image": "https://www.legis.state.pa.us/images/members/200/1803.jpg?1703415645672",
+    "email": "senatorlindseywilliams@pasenate.com",
+    "gender": "Female",
+    "birth_date": "1983-08-27",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorlindseywilliams.com/"
+    },
+    "created_at": "2019-01-04T05:19:03.431311+00:00",
+    "updated_at": "2026-01-28T02:04:44.562976+00:00",
+    "openstates_url": "https://openstates.org/person/lindsey-williams-5jULWThuBz6oGevA1sMaSq/"
+  },
+  {
+    "id": "ocd-person/aa421a2c-4203-45b7-9766-8826c02a659d",
+    "name": "Lisa Baker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:pa/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Baker",
+    "image": "https://www.legis.state.pa.us/images/members/200/1077.jpg?1703415645672",
+    "email": "lbaker@pasen.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorbaker.com/",
+      "Education": [
+        "Shippensburg University, B.A. Government Administration, 1983"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:15.693492+00:00",
+    "updated_at": "2026-01-28T02:04:20.684266+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-baker-5BGu4UcBK6eUw3Xjnf3Qo1/"
+  },
+  {
+    "id": "ocd-person/de81d407-bc84-48e6-9796-4a56be984cbd",
+    "name": "Lisa Boscola",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:pa/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Boscola",
+    "image": "https://www.legis.state.pa.us/images/members/200/179.jpg?1703415645672",
+    "email": "boscola@pasenate.com",
+    "gender": "Female",
+    "birth_date": "1962-04-06",
+    "death_date": "",
+    "extras": {
+      "Education": [
+        "Wilson College for Minor Judiciary, Certification for D.J., 1987;  Villanova University, B.A. Political Science, (cum laude), 1984;  M.A. Political Science, 1985"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:15.785799+00:00",
+    "updated_at": "2026-01-28T02:05:00.213457+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-boscola-6lrcx2t6g1oBNCyW35VDMz/"
+  },
+  {
+    "id": "ocd-person/02117eb4-a7b3-4095-831b-1857910660fb",
+    "name": "Lynda Culver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:pa/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Lynda",
+    "family_name": "Culver",
+    "image": "https://www.legis.state.pa.us/images/members/200/1202.jpg?1703415645672",
+    "email": "lculver@pasen.gov",
+    "gender": "Female",
+    "birth_date": "1969-05-28",
+    "death_date": "",
+    "extras": {
+      "website": "http://SenatorCulver.com",
+      "Education": [
+        "Shikellamy High School, 1987",
+        "Bloomsburg University, B.A., Political Science, 1991"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:15.882328+00:00",
+    "updated_at": "2026-01-28T02:05:08.015965+00:00",
+    "openstates_url": "https://openstates.org/person/lynda-culver-3tykbRkRy18q9Z2IpTRpj/"
+  },
+  {
+    "id": "ocd-person/323c52e8-f841-4a0b-a49e-91103949fbc8",
+    "name": "Maria Collett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:pa/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Maria",
+    "family_name": "Collett",
+    "image": "https://www.legis.state.pa.us/images/members/200/1799.jpg?1703415645672",
+    "email": "senatorcollett@pasenate.com",
+    "gender": "Female",
+    "birth_date": "1974-07-21",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorcollett.com/"
+    },
+    "created_at": "2019-01-04T05:18:52.176215+00:00",
+    "updated_at": "2026-01-28T02:03:58.324144+00:00",
+    "openstates_url": "https://openstates.org/person/maria-collett-1WnBQxjAQUD8XIOP9Y7Ski/"
+  },
+  {
+    "id": "ocd-person/7061c75d-7eeb-40aa-841e-8121edba5d8a",
+    "name": "Marty Flynn",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:pa/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Marty",
+    "family_name": "Flynn",
+    "image": "https://www.legis.state.pa.us/images/members/200/1626.jpg?1703415645672",
+    "email": "flynn@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1975-09-18",
+    "death_date": "",
+    "extras": {
+      "Education": [
+        "Scranton Preparatory School, 1994",
+        "Marywood University B.S. Legal Studies, 1999"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:17.212751+00:00",
+    "updated_at": "2026-01-28T02:05:00.773207+00:00",
+    "openstates_url": "https://openstates.org/person/marty-flynn-3Q3pBmQmzP3mGRJ1T0MfhC/"
+  },
+  {
+    "id": "ocd-person/406baa79-8352-4fa4-a1fa-70cc55e34406",
+    "name": "Michele Brooks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:pa/sldu:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Michele",
+    "family_name": "Brooks",
+    "image": "https://www.legis.state.pa.us/images/members/200/1087.jpg?1703415645672",
+    "email": "mbrooks@pasen.gov",
+    "gender": "Female",
+    "birth_date": "1964-04-04",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorbrooks.com"
+    },
+    "created_at": "2018-10-18T16:11:18.245176+00:00",
+    "updated_at": "2026-01-28T02:04:39.916349+00:00",
+    "openstates_url": "https://openstates.org/person/michele-brooks-1xYiAQ8uRyRkir8TCQOjZu/"
+  },
+  {
+    "id": "ocd-person/a160699d-cc7d-4ed7-b486-57008ee0e642",
+    "name": "Nick Miller",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:pa/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Miller",
+    "image": "https://www.legis.state.pa.us/images/members/200/2009.jpg?1703415645672",
+    "email": "miller@pasenate.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "https://pasenatormiller.com/"
+    },
+    "created_at": "2023-01-12T19:28:05.673782+00:00",
+    "updated_at": "2024-10-09T23:25:14.024117+00:00",
+    "openstates_url": "https://openstates.org/person/nick-miller-4uVpAUQc9w69CT01lsWU8Q/"
+  },
+  {
+    "id": "ocd-person/c9f6833a-470e-480f-b3ad-d91c887aa4f9",
+    "name": "Nick Pisciottano",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:pa/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Pisciottano",
+    "image": "https://www.legis.state.pa.us/images/members/200/1900.jpg?1703415645672",
+    "email": "nick.pisciottano@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1990-01-12",
+    "death_date": "",
+    "extras": {
+      "Education": [
+        "West Mifflin Area High School, 2008 Diploma",
+        "Washington & Jefferson College, 2012 B.A. History, B.A. Accounting",
+        "Johns Hopkins University, 2019 M.A. Data Analytics & Policy"
+      ]
+    },
+    "created_at": "2020-12-30T06:15:39.235352+00:00",
+    "updated_at": "2026-01-28T02:04:03.136012+00:00",
+    "openstates_url": "https://openstates.org/person/nick-pisciottano-69675N8cBMW5ptKZH2t0nJ/"
+  },
+  {
+    "id": "ocd-person/6f172bc8-50b0-4dd3-aed6-b5fd48b70eeb",
+    "name": "Nikil Saval",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:pa/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Nikil",
+    "family_name": "Saval",
+    "image": "https://www.legis.state.pa.us/images/members/200/1921.jpg?1703415645672",
+    "email": "saval@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1982-12-27",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.pasenatorsaval.com/"
+    },
+    "created_at": "2020-12-30T06:15:48.270819+00:00",
+    "updated_at": "2025-03-05T08:41:43.159258+00:00",
+    "openstates_url": "https://openstates.org/person/nikil-saval-3Ncjit0kIYPupCwBeHeOWx/"
+  },
+  {
+    "id": "ocd-person/14106428-709f-4018-8881-5c31ee078ff8",
+    "name": "Pat Stefano",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:pa/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Pat",
+    "family_name": "Stefano",
+    "image": "https://www.legis.state.pa.us/images/members/200/1697.jpg?1703415645672",
+    "email": "pstefano@pasen.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorstefano.com"
+    },
+    "created_at": "2018-10-18T16:11:19.620890+00:00",
+    "updated_at": "2026-01-28T02:03:45.348222+00:00",
+    "openstates_url": "https://openstates.org/person/pat-stefano-brKunvUYsPcUh25hTDYk4/"
+  },
+  {
+    "id": "ocd-person/b5ff17d0-36e8-4f29-8c9b-e51bb9b3ea29",
+    "name": "Patty Kim",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:pa/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Patty",
+    "family_name": "Kim",
+    "image": "https://www.legis.state.pa.us/images/members/200/1636.jpg?1703415645672",
+    "email": "patty.kim@pasenate.com",
+    "gender": "Female",
+    "birth_date": "1973-07-29",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.pahouse.com/Kim/"
+    },
+    "created_at": "2018-10-18T16:11:19.795325+00:00",
+    "updated_at": "2026-01-28T02:04:17.648130+00:00",
+    "openstates_url": "https://openstates.org/person/patty-kim-5XQBiayz3yUGyxbKuOM3mj/"
+  },
+  {
+    "id": "ocd-person/3e2840e6-f904-43be-911e-235b906458a5",
+    "name": "Rosemary Brown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:pa/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Rosemary",
+    "family_name": "Brown",
+    "image": "https://www.legis.state.pa.us/images/members/200/1200.jpg?1703415645672",
+    "email": "rbrown@pasen.gov",
+    "gender": "Female",
+    "birth_date": "1970-11-20",
+    "death_date": "",
+    "extras": {
+      "website": "http://SenatorBrown40.com",
+      "Education": [
+        "East Stroudsburg High School, 1988",
+        "University of Scranton, B.A., 1992"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:21.185670+00:00",
+    "updated_at": "2026-01-28T02:04:47.508081+00:00",
+    "openstates_url": "https://openstates.org/person/rosemary-brown-1tHv3Bu2gm61TAsj0A06dx/"
+  },
+  {
+    "id": "ocd-person/5d3e2203-b11c-4471-8f35-5106c30263ec",
+    "name": "Scott Hutchinson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:pa/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Hutchinson",
+    "image": "https://www.legis.state.pa.us/images/members/200/1629.jpg?1703415645672",
+    "email": "shutchinson@pasen.gov",
+    "gender": "Male",
+    "birth_date": "1961-08-19",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorscotthutchinson.com/",
+      "Education": [
+        "University of Pennsylvania Wharton School of Finance, Bachelor of Science in Economics, 1983; University of Pittsburgh at Titusville; Thiel College"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:21.878691+00:00",
+    "updated_at": "2026-04-09T07:59:57.586761+00:00",
+    "openstates_url": "https://openstates.org/person/scott-hutchinson-2pwgEZSUI6MjhYXqwUUVgK/"
+  },
+  {
+    "id": "ocd-person/c2fcd2dc-22f8-4ec2-b70a-439bc6d60802",
+    "name": "Scott Martin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:pa/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Martin",
+    "image": "https://www.legis.state.pa.us/images/members/200/1763.jpg?1703415645672",
+    "email": "smartin@pasen.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorscottmartinpa.com"
+    },
+    "created_at": "2018-10-18T16:11:21.964512+00:00",
+    "updated_at": "2026-01-28T02:03:59.812689+00:00",
+    "openstates_url": "https://openstates.org/person/scott-martin-5vw3EZ3StY7gSigrJqp2d0/"
+  },
+  {
+    "id": "ocd-person/b0d20b05-428a-4e3a-bda1-bbba5c3cfd6a",
+    "name": "Sharif Street",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:pa/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Sharif",
+    "family_name": "Street",
+    "image": "https://www.legis.state.pa.us/images/members/200/1767.jpg?1703415645672",
+    "email": "street@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1974-03-29",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorsharifstreet.com/",
+      "Education": [
+        "Morehouse College, Cum Laude, B.A. in Business Administration and a concentration in Finance. University of Pennsylvania Law School in 1999."
+      ]
+    },
+    "created_at": "2018-10-18T16:11:22.138209+00:00",
+    "updated_at": "2026-01-28T02:04:22.920109+00:00",
+    "openstates_url": "https://openstates.org/person/sharif-street-5NedeCgsLCEkciDEU4xFEY/"
+  },
+  {
+    "id": "ocd-person/91f290d0-3405-4091-bb16-822a97f45af5",
+    "name": "Steve Santarsiero",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:pa/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Santarsiero",
+    "image": "https://www.legis.state.pa.us/images/members/200/1179.jpg?1703415645672",
+    "email": "senatorsantarsiero@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1965-02-13",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorstevesantarsiero.com/"
+    },
+    "created_at": "2019-01-04T05:18:44.858199+00:00",
+    "updated_at": "2025-03-05T08:41:16.548557+00:00",
+    "openstates_url": "https://openstates.org/person/steve-santarsiero-4ROjtTGKtl5hpQ2EHyXiHF/"
+  },
+  {
+    "id": "ocd-person/f9f2479f-0c37-47d1-a4eb-666146e2856f",
+    "name": "Tim Kearney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:pa/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Kearney",
+    "image": "https://www.legis.state.pa.us/images/members/200/1800.jpg?1703415645672",
+    "email": "senatorkearney@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1960-11-22",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorkearney.com/"
+    },
+    "created_at": "2019-01-04T05:18:59.523791+00:00",
+    "updated_at": "2025-03-05T08:41:42.312664+00:00",
+    "openstates_url": "https://openstates.org/person/tim-kearney-7bdoJjGaKABGQXhlSKxoxr/"
+  },
+  {
+    "id": "ocd-person/f3b4fe8c-05f9-4610-81ef-354c0fcb0cdd",
+    "name": "Tina Tartaglione",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:pa/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Tina",
+    "family_name": "Tartaglione",
+    "image": "https://www.legis.state.pa.us/images/members/200/277.jpg?1703415645672",
+    "email": "tartaglione@pasenate.com",
+    "gender": "Female",
+    "birth_date": "1960-09-21",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatortartaglione.com",
+      "Education": [
+        "Peirce College, 1980"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:06.021803+00:00",
+    "updated_at": "2026-01-28T02:03:16.960538+00:00",
+    "openstates_url": "https://openstates.org/person/tina-tartaglione-7PrqhlS6VnnFmUZ80h8nXh/"
+  },
+  {
+    "id": "ocd-person/fe79a0f0-7dfd-442a-8b79-f8792613a4de",
+    "name": "Tony Williams",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:pa/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Williams",
+    "image": "https://www.legis.state.pa.us/images/members/200/153.jpg?1703415645672",
+    "email": "williams@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1957-02-28",
+    "death_date": "",
+    "extras": {
+      "website": "http://senatoranthonyhwilliams.com",
+      "Education": [
+        "Franklin and Marshall College, Majored in Economics"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:04.046021+00:00",
+    "updated_at": "2026-01-28T02:04:10.488267+00:00",
+    "openstates_url": "https://openstates.org/person/tony-williams-7kBdOuIcwXLWsM7FCIfiIw/"
+  },
+  {
+    "id": "ocd-person/d9ad47a6-7e74-45f2-93a5-1b7e40ad36db",
+    "name": "Tracy Pennycuick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:pa/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Tracy",
+    "family_name": "Pennycuick",
+    "image": "https://www.legis.state.pa.us/images/members/200/1912.jpg?1703415645672",
+    "email": "tpennycuick@pasen.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "Education": [
+        "Mansfield High School, 1983",
+        "University of Missouri, Columbia MO, 1987, BSBA",
+        "Post University, Waterbury, CT 2015, MPA",
+        "US Army Command & General Staff College, 2008"
+      ]
+    },
+    "created_at": "2020-12-30T06:15:46.388946+00:00",
+    "updated_at": "2024-10-09T23:24:57.953673+00:00",
+    "openstates_url": "https://openstates.org/person/tracy-pennycuick-6ckWUa1D24kQRYOS9TiLsZ/"
+  },
+  {
+    "id": "ocd-person/53a598e0-3595-4b19-8f65-4a538bdc7a74",
+    "name": "Vincent Hughes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:pa/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Vincent",
+    "family_name": "Hughes",
+    "image": "https://www.legis.state.pa.us/images/members/200/152.jpg?1703415645672",
+    "email": "hughes@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1956-10-26",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorhughes.com",
+      "Education": [
+        "Temple University"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:24.541254+00:00",
+    "updated_at": "2026-01-28T02:04:07.222892+00:00",
+    "openstates_url": "https://openstates.org/person/vincent-hughes-2Xq2Yb5OHwPmYQ8uQdTNFk/"
+  },
+  {
+    "id": "ocd-person/b93e4f38-764f-4e95-bd51-4d40dba0aaa4",
+    "name": "Wayne Fontana",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:pa/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Wayne",
+    "family_name": "Fontana",
+    "image": "https://www.legis.state.pa.us/images/members/200/1041.jpg?1703415645672",
+    "email": "fontana@pasenate.com",
+    "gender": "Male",
+    "birth_date": "1950-03-12",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorfontana.com",
+      "Education": [
+        "Community College of Allegheny County, 1971, Associate Degree"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:24.796393+00:00",
+    "updated_at": "2026-01-28T02:04:25.357799+00:00",
+    "openstates_url": "https://openstates.org/person/wayne-fontana-5dY3TEkCNRCin8Q6mA94yq/"
+  },
+  {
+    "id": "ocd-person/7b3a6244-335b-4407-957d-b7d6b6ab1d97",
+    "name": "Wayne Langerholc",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:pa/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:pa/government",
+      "name": "Pennsylvania",
+      "classification": "state"
+    },
+    "given_name": "Wayne",
+    "family_name": "Langerholc",
+    "image": "https://www.legis.state.pa.us/images/members/200/1764.jpg?1703415645672",
+    "email": "wlangerholc@pasen.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "website": "http://www.senatorlangerholc.com/",
+      "Education": [
+        "Juniata College, Widener School of Law"
+      ]
+    },
+    "created_at": "2018-10-18T16:11:24.885485+00:00",
+    "updated_at": "2026-01-28T02:04:06.664113+00:00",
+    "openstates_url": "https://openstates.org/person/wayne-langerholc-3kWjjm69qnccRRMAA0fjKJ/"
+  }
+]

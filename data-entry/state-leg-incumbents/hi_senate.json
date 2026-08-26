@@ -1,0 +1,735 @@
+[
+  {
+    "id": "ocd-person/d31a4d99-d6f1-42f8-b902-b6bff3c667e8",
+    "name": "Angus McKelvey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:hi/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Angus",
+    "family_name": "McKelvey",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/mckelvey.jpg",
+    "email": "senmckelvey@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1968-03-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:41:23.532494+00:00",
+    "updated_at": "2025-07-18T06:32:23.994934+00:00",
+    "openstates_url": "https://openstates.org/person/angus-mckelvey-6QLOtaPj5aPUCZ3icSeBAG/"
+  },
+  {
+    "id": "ocd-person/22139704-8a26-4f4a-8a03-989990c21f37",
+    "name": "Brandon Elefante",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:hi/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Elefante",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/elefante.jpg",
+    "email": "senelefante@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "extra_social_ids": {
+        "linkedin": "inbrandonelefante"
+      }
+    },
+    "created_at": "2023-01-05T16:59:38.955986+00:00",
+    "updated_at": "2025-07-18T06:32:33.157942+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-elefante-12Igt1IYDitA6J0EwbfKEx/"
+  },
+  {
+    "id": "ocd-person/be1149eb-5b0c-48fb-b9f2-9bee875479cc",
+    "name": "Brenton Awa",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:hi/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Brenton",
+    "family_name": "Awa",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/awa.jpg",
+    "email": "senawa@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Floor Leader"
+    },
+    "created_at": "2023-01-05T16:59:32.100757+00:00",
+    "updated_at": "2025-07-18T06:32:22.204779+00:00",
+    "openstates_url": "https://openstates.org/person/brenton-awa-5meRTIqByfWwUMStwwHG3w/"
+  },
+  {
+    "id": "ocd-person/ca85a087-4a1f-450b-9386-11c13eb8c280",
+    "name": "Carol Fukunaga",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:hi/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Carol",
+    "family_name": "Fukunaga",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/fukunaga.jpg",
+    "email": "senfukunaga@capitol.hawaii.gov",
+    "gender": "Female",
+    "birth_date": "1947-12-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-05T16:59:42.512061+00:00",
+    "updated_at": "2025-07-18T06:32:26.766293+00:00",
+    "openstates_url": "https://openstates.org/person/carol-fukunaga-6A9W6NwtqptJZ7yz2J4Vvc/"
+  },
+  {
+    "id": "ocd-person/3484e323-b1a2-4c41-ad9f-8153445f8cd4",
+    "name": "Chris Lee",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:hi/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Lee",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/clee.jpg",
+    "email": "senlee@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1981-01-28",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Whip"
+    },
+    "created_at": "2021-01-05T06:05:43.080788+00:00",
+    "updated_at": "2025-07-18T06:32:28.886855+00:00",
+    "openstates_url": "https://openstates.org/person/chris-lee-1b6KV1jAm8D2aT1kblhfkK/"
+  },
+  {
+    "id": "ocd-person/f196e943-c8d6-4a35-96c2-252171c6529a",
+    "name": "Donna Kim",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:hi/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Donna",
+    "family_name": "Kim",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/kim.jpg",
+    "email": "senkim@capitol.hawaii.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "extra_social_ids": {
+        "flickr": "94803168n05"
+      }
+    },
+    "created_at": "2018-10-18T14:41:29.878774+00:00",
+    "updated_at": "2025-07-18T06:32:30.319208+00:00",
+    "openstates_url": "https://openstates.org/person/donna-kim-7Ls7HKEvocluW9G5SQRatm/"
+  },
+  {
+    "id": "ocd-person/0a9ef1d8-8fec-48f4-963c-50f39332cfa7",
+    "name": "Donovan Dela Cruz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:hi/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Donovan",
+    "family_name": "Dela Cruz",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/delacruz.jpg",
+    "email": "sendelacruz@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1973-07-06",
+    "death_date": "",
+    "extras": {
+      "extra_social_ids": {
+        "flickr": "87965000n07"
+      }
+    },
+    "created_at": "2018-10-18T14:41:28.642536+00:00",
+    "updated_at": "2025-07-18T06:32:19.211842+00:00",
+    "openstates_url": "https://openstates.org/person/donovan-dela-cruz-K2YnH1nyBID4JjyvWiuut/"
+  },
+  {
+    "id": "ocd-person/e75469cc-851a-4e63-9908-9e63b5215448",
+    "name": "Dru Kanuha",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:hi/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Dru",
+    "family_name": "Kanuha",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/kanuha.jpg",
+    "email": "senkanuha@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Leader"
+    },
+    "created_at": "2019-01-03T23:33:14.148657+00:00",
+    "updated_at": "2025-07-18T06:32:21.146941+00:00",
+    "openstates_url": "https://openstates.org/person/dru-kanuha-72VnsX61DtJ3tdygyc8P3A/"
+  },
+  {
+    "id": "ocd-person/5ef4a0ba-e9b0-4a62-9ac7-42d88308f3df",
+    "name": "Glenn Wakai",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:hi/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Glenn",
+    "family_name": "Wakai",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/wakai.jpg",
+    "email": "senwakai@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1967-05-14",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Floor Leader"
+    },
+    "created_at": "2018-10-18T14:41:26.061899+00:00",
+    "updated_at": "2025-07-18T06:32:21.664679+00:00",
+    "openstates_url": "https://openstates.org/person/glenn-wakai-2tB4aMvtK6PyoNYeMAANCB/"
+  },
+  {
+    "id": "ocd-person/07ed1559-820e-4ea1-803e-024ce5359a87",
+    "name": "Jarrett Keohokalole",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:hi/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Jarrett",
+    "family_name": "Keohokalole",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/keohokalole.jpg",
+    "email": "senkeohokalole@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1983-08-07",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Whip"
+    },
+    "created_at": "2018-10-18T14:41:35.122009+00:00",
+    "updated_at": "2025-07-18T06:32:13.195227+00:00",
+    "openstates_url": "https://openstates.org/person/jarrett-keohokalole-ExICzvaUDh4WHGbkJ6aQh/"
+  },
+  {
+    "id": "ocd-person/cac74229-bacc-4358-8208-23cdac57d57c",
+    "name": "Joy San Buenaventura",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:hi/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Joy",
+    "family_name": "San Buenaventura",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/sanbuenaventura.jpg",
+    "email": "sensanbuenaventura@capitol.hawaii.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "extra_social_ids": {
+        "flickr": "joy4puna"
+      }
+    },
+    "created_at": "2018-10-18T14:41:25.090911+00:00",
+    "updated_at": "2025-07-18T06:32:06.239630+00:00",
+    "openstates_url": "https://openstates.org/person/joy-san-buenaventura-6AdVht1FRWHLrjzdM7r28y/"
+  },
+  {
+    "id": "ocd-person/099756de-3b84-4531-b5da-6d1c5d4c89ee",
+    "name": "Karl Rhoads",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:hi/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Karl",
+    "family_name": "Rhoads",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/rhoads.jpg",
+    "email": "senrhoads@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1963-01-24",
+    "death_date": "",
+    "extras": {
+      "extra_social_ids": {
+        "flickr": "60904347n05"
+      }
+    },
+    "created_at": "2018-10-18T14:41:27.694018+00:00",
+    "updated_at": "2025-07-18T06:32:03.039946+00:00",
+    "openstates_url": "https://openstates.org/person/karl-rhoads-I65mIO3eSdW2Iz6JvdCFa/"
+  },
+  {
+    "id": "ocd-person/e6bafd21-a2de-41b8-8139-fcbf5ea94cf4",
+    "name": "Kurt Fevella",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:hi/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Kurt",
+    "family_name": "Fevella",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/fevella.jpg",
+    "email": "senfevella@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1967-10-01",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Leader"
+    },
+    "created_at": "2019-01-03T23:33:23.217047+00:00",
+    "updated_at": "2025-07-18T06:32:11.084298+00:00",
+    "openstates_url": "https://openstates.org/person/kurt-fevella-71NgjlPj7PexbLzXAQgpca/"
+  },
+  {
+    "id": "ocd-person/94e42ecd-2e4d-4502-8b50-c1c6324617f1",
+    "name": "Les Ihara",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:hi/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Les",
+    "family_name": "Ihara",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/ihara.jpg",
+    "email": "senihara@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1951-04-19",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Policy Leader",
+      "extra_social_ids": {
+        "flickr": "51018448n03"
+      }
+    },
+    "created_at": "2018-10-18T14:41:38.739964+00:00",
+    "updated_at": "2025-07-18T06:31:57.570935+00:00",
+    "openstates_url": "https://openstates.org/person/les-ihara-4Wx8wQrwU4tLza0S38YBJR/"
+  },
+  {
+    "id": "ocd-person/77991a5e-d7df-4282-b1cc-2398c56c18cc",
+    "name": "Lorraine Inouye",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:hi/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Lorraine",
+    "family_name": "Inouye",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/inouye.jpg",
+    "email": "seninouye@capitol.hawaii.gov",
+    "gender": "Female",
+    "birth_date": "1940-06-22",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip",
+      "extra_social_ids": {
+        "flickr": "134175784n05"
+      }
+    },
+    "created_at": "2023-01-05T16:59:43.329541+00:00",
+    "updated_at": "2025-07-18T06:32:27.302786+00:00",
+    "openstates_url": "https://openstates.org/person/lorraine-inouye-3dg3Q7Vh3qrwpfttNWWe3I/"
+  },
+  {
+    "id": "ocd-person/d76e8f2c-2e55-4d2a-94e4-c13cc0a9e5e2",
+    "name": "Lynn DeCoite",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:hi/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Lynn",
+    "family_name": "DeCoite",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/decoite.jpg",
+    "email": "sendecoite@capitol.hawaii.gov",
+    "gender": "Female",
+    "birth_date": "1964-05-09",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Floor Leader"
+    },
+    "created_at": "2018-10-18T14:41:26.444832+00:00",
+    "updated_at": "2025-07-18T06:31:59.052957+00:00",
+    "openstates_url": "https://openstates.org/person/lynn-decoite-6YVsJSBbEdOO2rvccxRAAs/"
+  },
+  {
+    "id": "ocd-person/511d674b-1e98-4a1f-8af2-24f986a165d9",
+    "name": "Michelle Kidani",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:hi/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Kidani",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/kidani.jpg",
+    "email": "senkidani@capitol.hawaii.gov",
+    "gender": "Female",
+    "birth_date": "1948-09-30",
+    "death_date": "",
+    "extras": {
+      "title": "Vice President"
+    },
+    "created_at": "2018-10-18T14:41:36.458686+00:00",
+    "updated_at": "2025-07-18T06:32:07.769339+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-kidani-2T3oaOCPn1JidYZAZGDBIP/"
+  },
+  {
+    "id": "ocd-person/9f87e7d6-a307-45ab-b384-96a8599dab56",
+    "name": "Mike Gabbard",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:hi/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Gabbard",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/gabbard.jpg",
+    "email": "sengabbard@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1948-01-15",
+    "death_date": "",
+    "extras": {
+      "extra_social_ids": {
+        "flickr": "senatormikegabbardalbums"
+      }
+    },
+    "created_at": "2023-01-05T16:59:40.039852+00:00",
+    "updated_at": "2025-07-18T06:32:18.108782+00:00",
+    "openstates_url": "https://openstates.org/person/mike-gabbard-4r1t7RHlFZSOWGWbV3nTr4/"
+  },
+  {
+    "id": "ocd-person/19b5116e-d2b7-4f4b-8d7d-f4dfcbcbe1d6",
+    "name": "Rachele Lamosao",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:hi/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Rachele",
+    "family_name": "Lamosao",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/Lamosao.jpg",
+    "email": "senlamosao@capitol.hawaii.gov",
+    "gender": "Female",
+    "birth_date": "1991-02-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-05T16:59:42.377926+00:00",
+    "updated_at": "2026-01-29T06:30:02.284501+00:00",
+    "openstates_url": "https://openstates.org/person/rachele-lamosao-mVYVHp3sXi8pYsvRqlDWw/"
+  },
+  {
+    "id": "ocd-person/3ca1b2e5-0c68-4be1-ba5b-b0d935b85e6f",
+    "name": "Ron Kouchi",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:hi/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Kouchi",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/kouchi.jpg",
+    "email": "senkouchi@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "President"
+    },
+    "created_at": "2018-10-18T14:41:28.923390+00:00",
+    "updated_at": "2026-01-29T06:30:17.125950+00:00",
+    "openstates_url": "https://openstates.org/person/ron-kouchi-1qPR2g5Xl6rYNmHHfEUNxv/"
+  },
+  {
+    "id": "ocd-person/8a60db8b-b07f-45da-8169-46ddd043ce02",
+    "name": "Samantha DeCorte",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:hi/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Samantha",
+    "family_name": "DeCorte",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/123803.jpg",
+    "email": "sendecorte@capitol.hawaii.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T18:42:37.431895+00:00",
+    "updated_at": "2025-07-18T06:32:10.559124+00:00",
+    "openstates_url": "https://openstates.org/person/samantha-decorte-4D7Cig2O1H80B7tGiRzhMw/"
+  },
+  {
+    "id": "ocd-person/7e04af29-c684-402f-a7b0-bdde0591197c",
+    "name": "Sharon Moriwaki",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:hi/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Sharon",
+    "family_name": "Moriwaki",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/moriwaki.jpg",
+    "email": "senmoriwaki@capitol.hawaii.gov",
+    "gender": "Female",
+    "birth_date": "1945-12-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-03T23:32:47.376707+00:00",
+    "updated_at": "2025-07-18T06:32:11.699141+00:00",
+    "openstates_url": "https://openstates.org/person/sharon-moriwaki-3pnAmTEDfZt4T5hv3WBZ7s/"
+  },
+  {
+    "id": "ocd-person/d6359473-e0b5-4040-8d7f-9d95a0518650",
+    "name": "Stanley Chang",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:hi/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Stanley",
+    "family_name": "Chang",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/schang.jpg",
+    "email": "senchang@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1982-09-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:41:27.540459+00:00",
+    "updated_at": "2025-07-18T06:32:18.694760+00:00",
+    "openstates_url": "https://openstates.org/person/stanley-chang-6WCqKXsg6uAUsJ47sKXoHo/"
+  },
+  {
+    "id": "ocd-person/ff0ea974-b3aa-4261-aa1b-fa9cf74b3728",
+    "name": "Tim Richards",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:hi/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Richards",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/richards.jpg",
+    "email": "senrichards@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Whip"
+    },
+    "created_at": "2023-01-05T16:59:36.148354+00:00",
+    "updated_at": "2025-07-18T06:32:05.724904+00:00",
+    "openstates_url": "https://openstates.org/person/tim-richards-7lHk7ZW1lHHEZGJLKStxay/"
+  },
+  {
+    "id": "ocd-person/3b99a717-698f-4bcf-a630-183bb63e623e",
+    "name": "Troy Hashimoto",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:hi/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:hi/government",
+      "name": "Hawaii",
+      "classification": "state"
+    },
+    "given_name": "Troy",
+    "family_name": "Hashimoto",
+    "image": "http://www.capitol.hawaii.gov/MemberFiles/RepSenPhotos/Hashimoto.jpg",
+    "email": "senhashimoto@capitol.hawaii.gov",
+    "gender": "Male",
+    "birth_date": "1987-09-21",
+    "death_date": "",
+    "extras": {
+      "extra_social_ids": {
+        "flickr": "165116887n06"
+      }
+    },
+    "created_at": "2018-10-18T14:41:29.681057+00:00",
+    "updated_at": "2026-01-29T06:30:19.861032+00:00",
+    "openstates_url": "https://openstates.org/person/troy-hashimoto-1oSlXTQvbufy3p2muU3OP8/"
+  }
+]

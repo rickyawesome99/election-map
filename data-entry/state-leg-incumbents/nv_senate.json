@@ -1,0 +1,583 @@
+[
+  {
+    "id": "ocd-person/d95b3a70-9bb4-43b8-a376-9d3151f9c44d",
+    "name": "Angie Taylor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:nv/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Angie",
+    "family_name": "Taylor",
+    "image": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Taylor.Angela.424.jpg",
+    "email": "angela.taylor@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-14T02:36:43.616346+00:00",
+    "updated_at": "2026-01-29T07:44:47.321216+00:00",
+    "openstates_url": "https://openstates.org/person/angie-taylor-6c91dT85QIzbrvPYMdnJzJ/"
+  },
+  {
+    "id": "ocd-person/189d270a-96e5-45af-a2b8-bbcc2ad225c1",
+    "name": "Carrie Buck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:nv/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Carrie",
+    "family_name": "Buck",
+    "image": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Buck.Carrie.387.jpg",
+    "email": "carrie.buck@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "1971-07-19",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Minority Leader"
+    },
+    "created_at": "2020-12-07T06:14:45.891691+00:00",
+    "updated_at": "2026-01-29T07:44:43.040062+00:00",
+    "openstates_url": "https://openstates.org/person/carrie-buck-kRdLx6xW0V7Jmx4hiWJyD/"
+  },
+  {
+    "id": "ocd-person/6da4be55-c493-4b72-b436-5257259247d2",
+    "name": "Dina Neal",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:nv/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Dina",
+    "family_name": "Neal",
+    "image": "http://leg.state.nv.us/Session/81st2021/legislators/Senators/Images/Neal.Dina.129.jpg",
+    "email": "dina.neal@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:50.771410+00:00",
+    "updated_at": "2026-01-29T07:44:37.662509+00:00",
+    "openstates_url": "https://openstates.org/person/dina-neal-3KtS040opLm78NTgEe5vcY/"
+  },
+  {
+    "id": "ocd-person/e5b06346-f5ee-4e1d-baed-342cc4a8ff36",
+    "name": "Edgar Flores",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:nv/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Edgar",
+    "family_name": "Flores",
+    "image": "http://leg.state.nv.us/Session/81st2021/legislators/Assembly/Images/Flores.Edgar.273.jpg",
+    "email": "edgar.flores@sen.state.nv.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:52.862484+00:00",
+    "updated_at": "2026-01-29T07:44:41.767941+00:00",
+    "openstates_url": "https://openstates.org/person/edgar-flores-6zPqqMETlOudVYxF7pZXkM/"
+  },
+  {
+    "id": "ocd-person/bcad4dc1-c812-409b-9cc9-e1d8c91fdafa",
+    "name": "Fabian Do\u00f1ate",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:nv/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Fabian",
+    "family_name": "Do\u00f1ate",
+    "image": "http://leg.state.nv.us/Session/82nd2023/legislators/Senators/Images/Doate.Fabian.350.jpg",
+    "email": "fabian.donate@sen.state.nv.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Co-Majority Whip"
+    },
+    "created_at": "2021-03-13T00:14:47.923174+00:00",
+    "updated_at": "2026-01-29T07:44:49.513635+00:00",
+    "openstates_url": "https://openstates.org/person/fabian-donate-5k1kxqDQueHx5ONMZXqwna/"
+  },
+  {
+    "id": "ocd-person/94c7e249-88bb-4f83-b225-6b34f9361d0f",
+    "name": "Ira Hansen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:nv/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Ira",
+    "family_name": "Hansen",
+    "image": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Hansen.Ira.157.jpg",
+    "email": "ira.hansen@sen.state.nv.us",
+    "gender": "Male",
+    "birth_date": "1960-10-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:50.618529+00:00",
+    "updated_at": "2026-01-29T07:45:04.031861+00:00",
+    "openstates_url": "https://openstates.org/person/ira-hansen-4WkD7PyNSM0x6pzE0k4mMx/"
+  },
+  {
+    "id": "ocd-person/75d6c9b4-d0ee-49bb-aa17-ec20bb33e9eb",
+    "name": "James Ohrenschall",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:nv/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Ohrenschall",
+    "image": "http://leg.state.nv.us/Session/80th2019/legislators/Senators/Images/Ohrenschall.James.67.jpg",
+    "email": "james.ohrenschall@sen.state.nv.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:53.642752+00:00",
+    "updated_at": "2026-01-29T07:44:56.510450+00:00",
+    "openstates_url": "https://openstates.org/person/james-ohrenschall-3aMG9mRDjk5OcNwY3xpr3b/"
+  },
+  {
+    "id": "ocd-person/00ad1837-b472-4ce8-872d-e1eac1c1c6db",
+    "name": "Jeff Stone",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:nv/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Stone",
+    "image": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Stone.Jeff.390.jpg",
+    "email": "jeff.stone@sen.state.nv.us",
+    "gender": "Male",
+    "birth_date": "1956-01-30",
+    "death_date": "",
+    "extras": {
+      "title": "Co-Minority Whip"
+    },
+    "created_at": "2023-01-14T02:36:25.397346+00:00",
+    "updated_at": "2026-01-29T07:45:08.127885+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-stone-1H6TW8roEohJbUK5K3phT/"
+  },
+  {
+    "id": "ocd-person/87e878e2-fd19-4b55-a7b5-b76adf520e84",
+    "name": "John Ellison",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:nv/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Ellison",
+    "image": "http://leg.state.nv.us/Session/81st2021/legislators/Assembly/Images/Ellison.John.159.jpg",
+    "email": "john.ellison@sen.state.nv.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:50.468534+00:00",
+    "updated_at": "2026-01-29T07:44:41.193409+00:00",
+    "openstates_url": "https://openstates.org/person/john-ellison-48SCf6WXfPfiaiggZyFsgO/"
+  },
+  {
+    "id": "ocd-person/deb46b96-7bab-40be-a145-8d397b436d87",
+    "name": "John Steinbeck",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:nv/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Steinbeck",
+    "image": "http://www.leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Steinbeck.John.418.jpg",
+    "email": "john.steinbeck@sen.state.nv.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:33:49.226022+00:00",
+    "updated_at": "2026-01-29T07:44:45.447878+00:00",
+    "openstates_url": "https://openstates.org/person/john-steinbeck-6mEkQhgRP5LUqR2C4ro5wd/"
+  },
+  {
+    "id": "ocd-person/a12a3103-37b0-4ac4-81f0-100aaad494e3",
+    "name": "Julie Pazina",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:nv/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Pazina",
+    "image": "http://leg.state.nv.us/Session/82nd2023/legislators/Senators/Images/Pazina.Julie.391.jpg",
+    "email": "julie.pazina@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-14T02:36:00.000930+00:00",
+    "updated_at": "2026-01-29T07:45:01.767866+00:00",
+    "openstates_url": "https://openstates.org/person/julie-pazina-4u72rZHfKqg98b1ivvm3tL/"
+  },
+  {
+    "id": "ocd-person/b82b9b71-1d83-4f91-9a7f-8adec73b023f",
+    "name": "Lisa Krasner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:nv/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Krasner",
+    "image": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Krasner.Lisa.327.jpg",
+    "email": "lisa.krasner@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Co-Minority Whip"
+    },
+    "created_at": "2018-10-18T14:55:49.539786+00:00",
+    "updated_at": "2026-01-29T07:44:34.044951+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-krasner-5bWW2EHStmjbKP2ikMtk6h/"
+  },
+  {
+    "id": "ocd-person/f3c4b2a7-2a24-4ba2-9894-421daed2d117",
+    "name": "Lori Rogich",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:nv/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Lori",
+    "family_name": "Rogich",
+    "image": "http://www.leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Rogich.Lori.425.jpg",
+    "email": "lori.rogich@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:34:19.858979+00:00",
+    "updated_at": "2026-01-29T07:44:59.262446+00:00",
+    "openstates_url": "https://openstates.org/person/lori-rogich-7Pz1eNGjEEX6fveRDDI4hz/"
+  },
+  {
+    "id": "ocd-person/0435a1f4-d8e4-43d9-9ac1-788a0aed92e4",
+    "name": "Marilyn Dondero Loop",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:nv/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Marilyn",
+    "family_name": "Dondero Loop",
+    "image": "http://leg.state.nv.us/Session/80th2019/legislators/Senators/Images/DonderoLoop.Marilyn.92.jpg",
+    "email": "marilyn.donderoloop@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:14:58.506834+00:00",
+    "updated_at": "2026-01-29T07:44:57.091277+00:00",
+    "openstates_url": "https://openstates.org/person/marilyn-dondero-loop-7wTjAqLGdlmJFxoOEjxdE/"
+  },
+  {
+    "id": "ocd-person/860029b3-070b-4c23-a826-51948c5d995c",
+    "name": "Melanie Scheible",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:nv/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Melanie",
+    "family_name": "Scheible",
+    "image": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Scheible.Melanie.358.jpg",
+    "email": "melanie.scheible@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "1989-05-27",
+    "death_date": "",
+    "extras": {
+      "title": "Co-Majority Whip"
+    },
+    "created_at": "2019-01-10T06:15:01.222496+00:00",
+    "updated_at": "2026-01-29T07:44:53.698918+00:00",
+    "openstates_url": "https://openstates.org/person/melanie-scheible-44r2ro9fJUK8OR0uaKPLw4/"
+  },
+  {
+    "id": "ocd-person/d2ca0a59-3bf1-4e1c-b4d7-9da33a4c5152",
+    "name": "Nicole Cannizzaro",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:nv/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Nicole",
+    "family_name": "Cannizzaro",
+    "image": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Cannizzaro.Nicole.347.jpg",
+    "email": "nicole.cannizzaro@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "1983-01-19",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Leader"
+    },
+    "created_at": "2018-10-18T14:55:48.469983+00:00",
+    "updated_at": "2026-01-29T07:44:50.551833+00:00",
+    "openstates_url": "https://openstates.org/person/nicole-cannizzaro-6Pkij3bDNzC5lWDLrg60iQ/"
+  },
+  {
+    "id": "ocd-person/05dee0b4-bfea-4473-b253-739895818b0d",
+    "name": "Roberta Lange",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:nv/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Roberta",
+    "family_name": "Lange",
+    "image": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Lange.Roberta.383.jpg",
+    "email": "roberta.lange@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Leader"
+    },
+    "created_at": "2020-12-07T06:14:44.382618+00:00",
+    "updated_at": "2026-01-29T07:44:52.970969+00:00",
+    "openstates_url": "https://openstates.org/person/roberta-lange-B4oel5dVfSV4MM3Tf3h7N/"
+  },
+  {
+    "id": "ocd-person/6aa57859-c195-4a44-9404-b6e2bbe4ac04",
+    "name": "Robin Titus",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:nv/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Robin",
+    "family_name": "Titus",
+    "image": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/Titus.Robin.281.jpg",
+    "email": "robin.titus@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "1954-02-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:55:46.255838+00:00",
+    "updated_at": "2026-01-29T07:44:47.897202+00:00",
+    "openstates_url": "https://openstates.org/person/robin-titus-3FEo119J8oEACh1tjvSco0/"
+  },
+  {
+    "id": "ocd-person/d84ad99c-617a-4d33-a351-8bde19868746",
+    "name": "Rochelle Nguyen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:nv/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Rochelle",
+    "family_name": "Nguyen",
+    "image": "http://leg.state.nv.us/Session/82nd2023/legislators/Senators/Images/Nguyen.Rochelle.372.jpg",
+    "email": "rochelle.nguyen@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-10T06:14:58.968675+00:00",
+    "updated_at": "2026-01-29T07:44:36.436830+00:00",
+    "openstates_url": "https://openstates.org/person/rochelle-nguyen-6a8Y36KntVDp2qjYv4ajN0/"
+  },
+  {
+    "id": "ocd-person/4acffaa7-5568-47e3-b476-bdf23867605e",
+    "name": "Shelly Crawford",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:nv/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Shelly",
+    "family_name": "Crawford",
+    "image": "http://leg.state.nv.us/Session/83rd2025/legislators/Senators/Images/CruzCrawford.MicheleeShelly.419.jpg",
+    "email": "shelly.cruzcrawford@sen.state.nv.us",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-11-20T21:33:52.579982+00:00",
+    "updated_at": "2026-01-29T07:45:07.472916+00:00",
+    "openstates_url": "https://openstates.org/person/shelly-crawford-2HATgxhyN9jvWZijo5wFJ8/"
+  },
+  {
+    "id": "ocd-person/a0553b6f-7142-4321-9e3a-c089447d3a78",
+    "name": "Skip Daly",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:nv/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nv/government",
+      "name": "Nevada",
+      "classification": "state"
+    },
+    "given_name": "Skip",
+    "family_name": "Daly",
+    "image": "http://leg.state.nv.us/Session/82nd2023/legislators/Senators/Images/Daly.Skip.155.jpg",
+    "email": "skip.daly@sen.state.nv.us",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-01-14T02:35:55.279475+00:00",
+    "updated_at": "2026-01-29T07:44:34.659280+00:00",
+    "openstates_url": "https://openstates.org/person/skip-daly-4sXirEzroxY0vx4ekA1F9s/"
+  }
+]

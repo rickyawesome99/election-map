@@ -1,0 +1,930 @@
+[
+  {
+    "id": "ocd-person/57c08164-a673-4269-84d9-6017e740eaac",
+    "name": "Amy Grady",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:wv/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Amy",
+    "family_name": "Grady",
+    "image": "https://www.wvlegislature.gov/images/members/2024/senate/grady_amy.jpg",
+    "email": "amy.grady@wvsenate.gov",
+    "gender": "Female",
+    "birth_date": "1979-10-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:20:47.063841+00:00",
+    "updated_at": "2025-07-17T08:54:39.397193+00:00",
+    "openstates_url": "https://openstates.org/person/amy-grady-2faJ4iw2GcoVJd2hb4sNhs/"
+  },
+  {
+    "id": "ocd-person/37bf9de9-84b5-4983-8742-a5c3eeeca64a",
+    "name": "Anne Charnock",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:wv/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Anne",
+    "family_name": "Charnock",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/charnock_anne.jpg",
+    "email": "anne.charnock@wvsenate.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-03-29T02:51:09.463766+00:00",
+    "updated_at": "2026-01-28T02:51:27.967538+00:00",
+    "openstates_url": "https://openstates.org/person/anne-charnock-1hC97YT1MaX83RfAa0IKvy/"
+  },
+  {
+    "id": "ocd-person/de50d28d-6a58-4244-8c74-36ca3f41767a",
+    "name": "Ben Queen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:wv/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Queen",
+    "image": "https://www.wvlegislature.gov/images/members/2023/senate/queen_ben.jpg",
+    "email": "ben.queen@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1995-02-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:23.923959+00:00",
+    "updated_at": "2026-01-28T02:50:31.651344+00:00",
+    "openstates_url": "https://openstates.org/person/ben-queen-6lVEPyKCL3faXaMdDlTjRK/"
+  },
+  {
+    "id": "ocd-person/8bd21671-34c1-4ba3-aced-0dcaa110029c",
+    "name": "Bill Hamilton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:wv/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Hamilton",
+    "image": "https://www.wvlegislature.gov/images/members/2024/senate/hamilton_bill.jpg",
+    "email": "bill.hamilton@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1950-07-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:24.012255+00:00",
+    "updated_at": "2025-07-17T08:53:48.310784+00:00",
+    "openstates_url": "https://openstates.org/person/bill-hamilton-4FpwVtl1dBA7QFWRyCDEBY/"
+  },
+  {
+    "id": "ocd-person/be5e24ac-6372-4364-a9b0-2e9b33a1a234",
+    "name": "Brian Helton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:wv/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Helton",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/helton_brian.jpg",
+    "email": "brian.helton@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1970-07-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:40:13.869180+00:00",
+    "updated_at": "2026-01-28T02:50:50.711330+00:00",
+    "openstates_url": "https://openstates.org/person/brian-helton-5nDZ4bpaeJUpYUvnTG684i/"
+  },
+  {
+    "id": "ocd-person/8941d02d-cee0-47a4-9c68-de73382b20af",
+    "name": "Charles Clements",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:wv/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Charles",
+    "family_name": "Clements",
+    "image": "http://www.wvlegislature.gov/images/members/2021/senate/clements_charles.jpg",
+    "email": "charles.clements@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1943-08-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:24.624408+00:00",
+    "updated_at": "2025-03-29T02:51:09.242332+00:00",
+    "openstates_url": "https://openstates.org/person/charles-clements-4B01a4V9RO7TidQA007M4N/"
+  },
+  {
+    "id": "ocd-person/9c82f11d-28f2-4167-b10c-26815533f73a",
+    "name": "Chris Rose",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:wv/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Rose",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/rose_chris.jpg",
+    "email": "chris.rose@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:40:07.552824+00:00",
+    "updated_at": "2026-01-28T02:50:52.000330+00:00",
+    "openstates_url": "https://openstates.org/person/chris-rose-4lKdu0eepWnEU9zlFrO4HS/"
+  },
+  {
+    "id": "ocd-person/e304d393-2b0a-45c3-9f59-98455e0d73a0",
+    "name": "Craig Hart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:wv/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Craig",
+    "family_name": "Hart",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/hart_craig.jpg",
+    "email": "craig.hart@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:40:05.615234+00:00",
+    "updated_at": "2026-01-28T02:51:30.619088+00:00",
+    "openstates_url": "https://openstates.org/person/craig-hart-6uNSlKdd7eMHzfyLV9V8Ii/"
+  },
+  {
+    "id": "ocd-person/60b7f294-2c42-40ab-ab7d-2a639e5be5e5",
+    "name": "Darren Thorne",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:wv/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Darren",
+    "family_name": "Thorne",
+    "image": "http://www.wvlegislature.gov/images/members/2023/house/thorne_darren.jpg",
+    "email": "darren.thorne@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-15T00:30:25.305087+00:00",
+    "updated_at": "2026-01-28T02:51:07.863510+00:00",
+    "openstates_url": "https://openstates.org/person/darren-thorne-2wVKJY9nLK7GNBcmW97rBF/"
+  },
+  {
+    "id": "ocd-person/18d03332-9bd9-4070-9101-6cf93ab2105e",
+    "name": "Eric Tarr",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:wv/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Tarr",
+    "image": "http://www.wvlegislature.gov/images/members/2023/senate/tarr_eric.jpg",
+    "email": "eric.tarr@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1972-09-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-11T06:20:42.519488+00:00",
+    "updated_at": "2025-07-17T08:53:48.945653+00:00",
+    "openstates_url": "https://openstates.org/person/eric-tarr-koxjjHxGijj1qnOgr9RRW/"
+  },
+  {
+    "id": "ocd-person/de2f5e4b-192a-463d-91b0-73f212e8f953",
+    "name": "Glenn Jeffries",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:wv/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Glenn",
+    "family_name": "Jeffries",
+    "image": "http://www.wvlegislature.gov/images/members/2023/senate/jeffries_glenn.jpg",
+    "email": "glenn.jeffries@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1961-07-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:26.965675+00:00",
+    "updated_at": "2026-01-28T02:51:43.623102+00:00",
+    "openstates_url": "https://openstates.org/person/glenn-jeffries-6lFwWeqM5mgVI5iubwZgBP/"
+  },
+  {
+    "id": "ocd-person/b4df4940-ac0e-4e1a-ba3c-940d604b4ad2",
+    "name": "Jack Woodrum",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:wv/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Woodrum",
+    "image": "http://www.wvlegislature.gov/images/members/2023/senate/woodrum_jack.jpg",
+    "email": "jack.woodrum@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1963-08-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:20:50.894495+00:00",
+    "updated_at": "2025-07-17T08:54:06.064843+00:00",
+    "openstates_url": "https://openstates.org/person/jack-woodrum-5VIeyXOwjRH2XcTIK6WqTS/"
+  },
+  {
+    "id": "ocd-person/bcbe03de-3df0-4c07-8973-0304dafa2cb8",
+    "name": "Jason Barrett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:wv/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Barrett",
+    "image": "http://www.wvlegislature.gov/images/members/2023/senate/barrett_jason.jpg",
+    "email": "jason.barrett@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1982-07-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:27.319315+00:00",
+    "updated_at": "2025-07-17T08:54:51.876182+00:00",
+    "openstates_url": "https://openstates.org/person/jason-barrett-5k9OSvKgv9lF7YKB5angwi/"
+  },
+  {
+    "id": "ocd-person/a7ae16a1-8a1e-4280-8d00-9125719a893e",
+    "name": "Jay Taylor",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:wv/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Taylor",
+    "image": "http://www.wvlegislature.gov/images/members/2023/senate/taylor_jay.jpg",
+    "email": "jay.taylor@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1973-01-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-15T00:30:10.497729+00:00",
+    "updated_at": "2026-01-28T02:50:28.643597+00:00",
+    "openstates_url": "https://openstates.org/person/jay-taylor-56PHBfRJX9DFJMsHh5B55S/"
+  },
+  {
+    "id": "ocd-person/387d11ce-ecf1-4c80-a338-bd8c86f52004",
+    "name": "Joey Garcia",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:wv/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Joey",
+    "family_name": "Garcia",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/garcia_joey.jpg",
+    "email": "joey.garcia@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1983-01-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:20:44.612219+00:00",
+    "updated_at": "2025-07-17T08:54:11.605651+00:00",
+    "openstates_url": "https://openstates.org/person/joey-garcia-1iaj5anrmheUSDQZJXFuwW/"
+  },
+  {
+    "id": "ocd-person/bf1213a4-9f13-4c3e-a900-c1722909f8a6",
+    "name": "Kevan Bartlett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:wv/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Kevan",
+    "family_name": "Bartlett",
+    "image": "http://www.wvlegislature.gov/images/members/2019/house/bartlett_t.jpg",
+    "email": "kevan.bartlett@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-03-29T02:50:49.051795+00:00",
+    "updated_at": "2026-01-28T02:50:47.235413+00:00",
+    "openstates_url": "https://openstates.org/person/kevan-bartlett-5oXnK4HTmCSCyuDvFBPJR8/"
+  },
+  {
+    "id": "ocd-person/599fd572-0475-4215-8d43-1474237f5a78",
+    "name": "Laura Chapman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:wv/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Laura",
+    "family_name": "Chapman",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/chapman_laura.jpg",
+    "email": "laura.chapman@wvsenate.gov",
+    "gender": "Female",
+    "birth_date": "1984-11-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-15T00:30:17.781921+00:00",
+    "updated_at": "2026-01-28T02:51:27.011635+00:00",
+    "openstates_url": "https://openstates.org/person/laura-chapman-2j7MOzHFMb6cMSnwhjOOl6/"
+  },
+  {
+    "id": "ocd-person/e98e90d4-7e6d-47e0-b837-6f5f8b492d9c",
+    "name": "Mark Maynard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:wv/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Maynard",
+    "image": "http://www.wvlegislature.gov/images/members/2023/senate/maynard_mark.jpg",
+    "email": "mark.maynard@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1972-05-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:29.691917+00:00",
+    "updated_at": "2026-01-28T02:51:38.143495+00:00",
+    "openstates_url": "https://openstates.org/person/mark-maynard-76iMcjHqFe2OVxmeKvqayK/"
+  },
+  {
+    "id": "ocd-person/8fe81e26-b0ce-4349-a3e3-91d25247b980",
+    "name": "Mike Azinger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:wv/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Azinger",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/azinger_michael.jpg",
+    "email": "mike.azinger@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1965-04-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:30.393445+00:00",
+    "updated_at": "2025-07-17T08:54:29.592431+00:00",
+    "openstates_url": "https://openstates.org/person/mike-azinger-4NXyoVBOZKVHyCmoZ5cj2G/"
+  },
+  {
+    "id": "ocd-person/c00003a6-3518-496e-b972-fd5aa566d4c4",
+    "name": "Mike Oliverio",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:wv/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Oliverio",
+    "image": "http://www.wvlegislature.gov/images/members/2023/senate/oliverio_michael.jpg",
+    "email": "mike.oliverio@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1963-08-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-15T00:30:23.364849+00:00",
+    "updated_at": "2026-01-28T02:51:02.756603+00:00",
+    "openstates_url": "https://openstates.org/person/mike-oliverio-5qIX3zLwIpbqDbaoBjwC60/"
+  },
+  {
+    "id": "ocd-person/500ddd59-2fb2-406a-869c-2b06f6cc2385",
+    "name": "Mike Woelfel",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:wv/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Woelfel",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/woelfel_michael.jpg",
+    "email": "mike.woelfel@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1954-05-07",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Leader"
+    },
+    "created_at": "2018-10-18T16:14:30.846428+00:00",
+    "updated_at": "2026-01-28T02:51:00.739657+00:00",
+    "openstates_url": "https://openstates.org/person/mike-woelfel-2R3imacr4CMwAXYw8oxLID/"
+  },
+  {
+    "id": "ocd-person/61c66718-ebd4-4ded-827d-14b21ed01b0a",
+    "name": "Patricia Rucker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:wv/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Patricia",
+    "family_name": "Rucker",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/rucker_patricia.jpg",
+    "email": "patricia.rucker@wvsenate.gov",
+    "gender": "Female",
+    "birth_date": "1974-04-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:31.188161+00:00",
+    "updated_at": "2026-01-28T02:50:37.939403+00:00",
+    "openstates_url": "https://openstates.org/person/patricia-rucker-2yUvPbXZbdWf2s902QqdoI/"
+  },
+  {
+    "id": "ocd-person/69547a9d-4e96-4ea8-94eb-528e40d5d004",
+    "name": "Patrick Martin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:wv/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Patrick",
+    "family_name": "Martin",
+    "image": "http://www.wvlegislature.gov/images/members/2021/senate/martin_patrick.jpg",
+    "email": "patrick.martin@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1993-05-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:31.276653+00:00",
+    "updated_at": "2026-01-28T02:51:15.076509+00:00",
+    "openstates_url": "https://openstates.org/person/patrick-martin-3CkngImXiBVgIK9VOEWMMu/"
+  },
+  {
+    "id": "ocd-person/28321ca7-5b8c-4b1a-9a85-2ae30e52045b",
+    "name": "Randy Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:wv/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Smith",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/smith_randy.jpg",
+    "email": "randy.smith@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1960-03-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:31.717858+00:00",
+    "updated_at": "2026-01-28T02:51:24.135405+00:00",
+    "openstates_url": "https://openstates.org/person/randy-smith-1DqaqT6oAFm60k4XldpqDj/"
+  },
+  {
+    "id": "ocd-person/86c70f70-4fc9-43f3-bd70-632d3a8f023b",
+    "name": "Robbie Morris",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:wv/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Robbie",
+    "family_name": "Morris",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/morris_robbie.jpg",
+    "email": "robbie.morris@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:40:14.256436+00:00",
+    "updated_at": "2026-01-28T02:51:25.967496+00:00",
+    "openstates_url": "https://openstates.org/person/robbie-morris-46JwRTMIonq5220UtRt6pn/"
+  },
+  {
+    "id": "ocd-person/e0166da1-e7d4-42ed-bf99-fe2a9cd3e82e",
+    "name": "Rollan Roberts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:wv/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Rollan",
+    "family_name": "Roberts",
+    "image": "http://www.wvlegislature.gov/images/members/2023/senate/roberts_rollan.jpg",
+    "email": "rollan.roberts@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Whip"
+    },
+    "created_at": "2019-01-11T06:20:43.421028+00:00",
+    "updated_at": "2025-07-17T08:54:34.287868+00:00",
+    "openstates_url": "https://openstates.org/person/rollan-roberts-6oqWv6WOGHRAkLlxul4WVS/"
+  },
+  {
+    "id": "ocd-person/c1187148-471e-4bdc-acf5-16fa0d5d998e",
+    "name": "Rupie Phillips",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:wv/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Rupie",
+    "family_name": "Phillips",
+    "image": "http://www.wvlegislature.gov/images/members/2021/senate/phillips_rupie.jpg",
+    "email": "rupie.phillips@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1969-02-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-14T00:20:49.365960+00:00",
+    "updated_at": "2026-01-28T02:50:54.915336+00:00",
+    "openstates_url": "https://openstates.org/person/rupie-phillips-5sMgjvIJa5Zjm6Td59MDmw/"
+  },
+  {
+    "id": "ocd-person/680aa2ce-6408-4047-a36b-0b3badc82851",
+    "name": "Ryan Weld",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:wv/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Weld",
+    "image": "http://www.wvlegislature.gov/images/members/2021/senate/weld_ryan.jpg",
+    "email": "ryan.weld@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1980-05-19",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip"
+    },
+    "created_at": "2018-10-18T16:14:33.386946+00:00",
+    "updated_at": "2026-04-04T08:34:05.865349+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-weld-3AK3sqNKT2wgd52JFnkIdN/"
+  },
+  {
+    "id": "ocd-person/7a94bf35-24ea-49ba-bf09-b53c1465ffa7",
+    "name": "Scott Fuller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:wv/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Fuller",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/fuller_scott.jpg",
+    "email": "scott.fuller@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:40:17.596305+00:00",
+    "updated_at": "2026-01-28T02:51:42.919646+00:00",
+    "openstates_url": "https://openstates.org/person/scott-fuller-3jJ2ZD1JqLcmZyYHpphDBH/"
+  },
+  {
+    "id": "ocd-person/c6a91d2b-9230-4d3e-a3d0-c3844ad9e985",
+    "name": "Tom Takubo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:wv/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Takubo",
+    "image": "http://www.wvlegislature.gov/images/members/2021/senate/takubo_tom.jpg",
+    "email": "tom.takubo@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1971-12-14",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Leader"
+    },
+    "created_at": "2018-10-18T16:14:34.614432+00:00",
+    "updated_at": "2026-01-28T02:51:13.579009+00:00",
+    "openstates_url": "https://openstates.org/person/tom-takubo-62rlUd32UOq8jeaQ3eMUL7/"
+  },
+  {
+    "id": "ocd-person/da86ac6a-5d19-472e-80a0-8b8595cb3054",
+    "name": "Tom Willis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:wv/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Willis",
+    "image": "https://www.wvlegislature.gov/images/members/2025/senate/willis_tom.jpg",
+    "email": "tom.willis@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:40:09.600487+00:00",
+    "updated_at": "2026-01-28T02:50:56.866912+00:00",
+    "openstates_url": "https://openstates.org/person/tom-willis-6eLs8kQ9WYQ3BW7MM17Key/"
+  },
+  {
+    "id": "ocd-person/4a909c49-37c6-4105-ac77-afe4745a1b1b",
+    "name": "Trenton Barnhart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:wv/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Trenton",
+    "family_name": "Barnhart",
+    "image": "http://www.wvlegislature.gov/images/members/2023/house/barnhart_trenton.jpg",
+    "email": "trenton.barnhart@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1996-11-12",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Majority Whip"
+    },
+    "created_at": "2021-01-14T00:20:48.015273+00:00",
+    "updated_at": "2026-04-09T08:40:01.141219+00:00",
+    "openstates_url": "https://openstates.org/person/trenton-barnhart-2GhWCU07zHUTno7rsjBW0Z/"
+  },
+  {
+    "id": "ocd-person/147a2b54-846b-4fec-b394-be4b50827f5f",
+    "name": "Vince Deeds",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:wv/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Vince",
+    "family_name": "Deeds",
+    "image": "http://www.wvlegislature.gov/images/members/2023/senate/deeds_vince.jpg",
+    "email": "vince.deeds@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1970-07-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-15T00:29:19.128893+00:00",
+    "updated_at": "2026-01-28T02:50:46.670975+00:00",
+    "openstates_url": "https://openstates.org/person/vince-deeds-cdg2PYDTJMkt1pMksZHln/"
+  },
+  {
+    "id": "ocd-person/1039d280-ca07-4923-a501-408c5f7703dc",
+    "name": "Zack Maynard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:wv/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wv/government",
+      "name": "West Virginia",
+      "classification": "state"
+    },
+    "given_name": "Zack",
+    "family_name": "Maynard",
+    "image": "http://www.wvlegislature.gov/images/members/2021/house/maynard_zack.jpg",
+    "email": "zack.maynard@wvsenate.gov",
+    "gender": "Male",
+    "birth_date": "1992-03-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:14:35.140691+00:00",
+    "updated_at": "2026-01-28T02:50:30.203880+00:00",
+    "openstates_url": "https://openstates.org/person/zack-maynard-UcIjDgA5GOT5i9QIy2b3U/"
+  }
+]

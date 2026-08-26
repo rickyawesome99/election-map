@@ -1,0 +1,1082 @@
+[
+  {
+    "id": "ocd-person/4a329580-86d3-4db3-915e-9f1af71e0a5a",
+    "name": "Aaron Rouse",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:va/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Aaron",
+    "family_name": "Rouse",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Rouse22",
+    "email": "district07@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1984-01-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-03-07T21:32:57.823846+00:00",
+    "updated_at": "2026-04-25T02:32:52.685685+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-rouse-2G0Y2uu77D0pAnm5Qi4lCM/"
+  },
+  {
+    "id": "ocd-person/f747c790-f609-4da1-b125-73f1807e1430",
+    "name": "Angelia Graves",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:va/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Angelia",
+    "family_name": "Graves",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Williams%20Graves21",
+    "email": "senatorwilliamsgraves@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1972-01-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-03-10T00:19:56.078577+00:00",
+    "updated_at": "2026-01-28T02:36:03.784920+00:00",
+    "openstates_url": "https://openstates.org/person/angelia-graves-7WbuIn4ZKSuY7xXn4NkTxo/"
+  },
+  {
+    "id": "ocd-person/72ecc30c-7175-4aef-9762-fda3ba5b451e",
+    "name": "Barbara Favola",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:va/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Barbara",
+    "family_name": "Favola",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Favola40",
+    "email": "senatorfavola@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1955-06-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:13.921111+00:00",
+    "updated_at": "2026-01-28T02:36:34.539956+00:00",
+    "openstates_url": "https://openstates.org/person/barbara-favola-3UrKCGNiZIJp8PE6URV1J8/"
+  },
+  {
+    "id": "ocd-person/ec14a514-ce1c-4fba-b053-fcf133793445",
+    "name": "Bill DeSteph",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:va/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "DeSteph",
+    "image": "https://apps.dlas.virginia.gov/senatepics/newbiopics/DeSteph08.jpg",
+    "email": "senatordesteph@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1964-10-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:14.222946+00:00",
+    "updated_at": "2025-05-15T02:23:01.547660+00:00",
+    "openstates_url": "https://openstates.org/person/bill-desteph-7BTcgEiIAg0ShRk5ZRhxwL/"
+  },
+  {
+    "id": "ocd-person/eacc546e-93d4-4189-92fb-8c969b1b545c",
+    "name": "Bill Stanley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:va/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Stanley",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bill_Stanley.jpg",
+    "email": "senatorstanley@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1967-07-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:24.072819+00:00",
+    "updated_at": "2026-01-28T02:37:22.195485+00:00",
+    "openstates_url": "https://openstates.org/person/bill-stanley-793aAyPFPUAWF0OPtjzxsK/"
+  },
+  {
+    "id": "ocd-person/adb58f21-f2fd-4830-85b6-f490b0867d14",
+    "name": "Bryce Reeves",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:va/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Bryce",
+    "family_name": "Reeves",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Reeves28",
+    "email": "senatorreeves@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1966-11-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:14.373669+00:00",
+    "updated_at": "2026-01-28T02:35:47.030733+00:00",
+    "openstates_url": "https://openstates.org/person/bryce-reeves-5Hme0aYVmCMLV64BAyEdAy/"
+  },
+  {
+    "id": "ocd-person/3a8cbf64-e1b7-43b6-ade9-57808519405a",
+    "name": "Chris Head",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:va/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Head",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Head3",
+    "email": "senatorhead@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1963-01-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:15.300943+00:00",
+    "updated_at": "2025-05-15T02:22:55.498868+00:00",
+    "openstates_url": "https://openstates.org/person/chris-head-1mTsMTAFHZXIXp6LFzFXju/"
+  },
+  {
+    "id": "ocd-person/f17d0fd9-266c-4192-af9b-2cf9a621867a",
+    "name": "Christie Craig",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:va/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Christie",
+    "family_name": "Craig",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Craig19",
+    "email": "senatorcraig@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1967-02-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:06.952293+00:00",
+    "updated_at": "2026-01-28T02:37:31.035268+00:00",
+    "openstates_url": "https://openstates.org/person/christie-craig-7LgIrYVqFc8YAyg1i8z8CQ/"
+  },
+  {
+    "id": "ocd-person/ad107e73-7e1e-45dd-ab19-52005a0b948c",
+    "name": "Creigh Deeds",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:va/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Creigh",
+    "family_name": "Deeds",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Deeds11",
+    "email": "senatordeeds@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1958-01-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:21.418560+00:00",
+    "updated_at": "2025-05-15T02:22:57.871038+00:00",
+    "openstates_url": "https://openstates.org/person/creigh-deeds-5GZD2UI3tfT5fFCfUfx4sm/"
+  },
+  {
+    "id": "ocd-person/3a2855f7-5ff7-4c5e-9d28-803d99f19d3f",
+    "name": "Danica Roem",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:va/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Danica",
+    "family_name": "Roem",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Roem30",
+    "email": "senatorroem@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1984-09-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:15.377827+00:00",
+    "updated_at": "2025-05-15T02:23:00.959016+00:00",
+    "openstates_url": "https://openstates.org/person/danica-roem-1ljzHiTC4FKHvu7FI0hGt5/"
+  },
+  {
+    "id": "ocd-person/ebdc449e-b987-4c44-895b-5047e343c0a0",
+    "name": "Danny Diggs",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:va/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Diggs",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DiggsDanny.jpg",
+    "email": "senatordiggs@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1957-07-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:12.052791+00:00",
+    "updated_at": "2026-01-28T02:35:53.877106+00:00",
+    "openstates_url": "https://openstates.org/person/danny-diggs-7B3rINfpnqdTQ9YwiPlU0G/"
+  },
+  {
+    "id": "ocd-person/22817a2c-911a-458a-b2a6-b7f237ef68f0",
+    "name": "Dave Marsden",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:va/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Marsden",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Marsden35",
+    "email": "senatormarsden@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1948-04-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:15.984768+00:00",
+    "updated_at": "2025-05-15T02:23:06.775050+00:00",
+    "openstates_url": "https://openstates.org/person/dave-marsden-136uRVhdMd7DjMibXULcCO/"
+  },
+  {
+    "id": "ocd-person/73e0de29-93b1-4c5c-af72-6c4a3d3950bd",
+    "name": "David Suetterlein",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:va/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Suetterlein",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Suetterlein4",
+    "email": "senatorsuetterlein@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1985-01-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:15.911889+00:00",
+    "updated_at": "2025-04-24T02:36:47.013476+00:00",
+    "openstates_url": "https://openstates.org/person/david-suetterlein-3WesiGxMA7QGurqBeV4rQD/"
+  },
+  {
+    "id": "ocd-person/c3b0c2fc-c7bf-45f8-8ee3-50d5a57bad08",
+    "name": "Elizabeth Bennett-Parker",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:va/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Elizabeth",
+    "family_name": "Bennett-Parker",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0334",
+    "email": "senatorbennett-parker@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:45.714926+00:00",
+    "updated_at": "2026-04-09T08:28:46.184064+00:00",
+    "openstates_url": "https://openstates.org/person/elizabeth-bennett-parker-5xGHby7P3nSqhNXdE1zdNo/"
+  },
+  {
+    "id": "ocd-person/f1a906cd-6602-492c-88dc-61887401c346",
+    "name": "Emily Jordan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:va/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Emily",
+    "family_name": "Jordan",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Jordan17",
+    "email": "senatorjordan@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1984-05-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:16.439654+00:00",
+    "updated_at": "2026-01-28T02:36:05.912767+00:00",
+    "openstates_url": "https://openstates.org/person/emily-jordan-7M0OYqiPRnubMEyjeJXEVa/"
+  },
+  {
+    "id": "ocd-person/815f7b31-d344-481a-9922-ad77d16b808a",
+    "name": "Glen Sturtevant",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:va/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Glen",
+    "family_name": "Sturtevant",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Sturtevant12",
+    "email": "senatorsturtevant@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1982-09-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:07.349300+00:00",
+    "updated_at": "2026-01-28T02:37:26.011563+00:00",
+    "openstates_url": "https://openstates.org/person/glen-sturtevant-3w7e0F9wDSMRU15oqf6fX8/"
+  },
+  {
+    "id": "ocd-person/27eeaa71-8938-412b-90ce-f83370824485",
+    "name": "Jennifer Boysko",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:va/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jennifer",
+    "family_name": "Boysko",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Boysko38",
+    "email": "senatorboysko@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1966-11-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:17.971567+00:00",
+    "updated_at": "2026-01-28T02:36:44.052527+00:00",
+    "openstates_url": "https://openstates.org/person/jennifer-boysko-1DLloyUJFEgHTzkGYj70sP/"
+  },
+  {
+    "id": "ocd-person/32dae8e8-9901-4705-b012-f8ce186f8403",
+    "name": "Jennifer Carroll Foy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:va/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jennifer",
+    "family_name": "Carroll Foy",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Carroll%20Foy33",
+    "email": "senatorcarrollfoy@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1981-09-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:17.502963+00:00",
+    "updated_at": "2026-04-25T02:33:00.364564+00:00",
+    "openstates_url": "https://openstates.org/person/jennifer-carroll-foy-1XxeourQoh4rfFA0VKwdaV/"
+  },
+  {
+    "id": "ocd-person/500ff29f-8ae7-4886-93ec-eec1ad91d299",
+    "name": "Jeremy McPike",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:va/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Jeremy",
+    "family_name": "McPike",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/McPike29.jpg",
+    "email": "senatormcpike@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1975-09-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:18.273906+00:00",
+    "updated_at": "2025-01-27T23:58:41.045495+00:00",
+    "openstates_url": "https://openstates.org/person/jeremy-mcpike-2R4fo0UB7YE5A1FJXTXAAT/"
+  },
+  {
+    "id": "ocd-person/eb7a5152-f275-4dfe-a303-742f7218fb27",
+    "name": "Kannan Srinivasan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:va/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Kannan",
+    "family_name": "Srinivasan",
+    "image": "https://memdata.virginiageneralassembly.gov/images/display_image/H0381",
+    "email": "senatorsrinivasan@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1966-08-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:14.447786+00:00",
+    "updated_at": "2026-01-28T02:36:17.963292+00:00",
+    "openstates_url": "https://openstates.org/person/kannan-srinivasan-7AL5xgzryyYPlo8RaZxVfb/"
+  },
+  {
+    "id": "ocd-person/fa49c701-d235-4f56-b9af-b772dec36d02",
+    "name": "Lamont Bagby",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:va/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Lamont",
+    "family_name": "Bagby",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Bagby14",
+    "email": "lbagby@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1976-12-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:19.477662+00:00",
+    "updated_at": "2025-05-15T02:22:47.615018+00:00",
+    "openstates_url": "https://openstates.org/person/lamont-bagby-7cHnTtVGTcXW6sbBG2Y2du/"
+  },
+  {
+    "id": "ocd-person/448bfee3-3314-4608-8531-811fdf9d0c23",
+    "name": "Lashrecse Aird",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:va/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Lashrecse",
+    "family_name": "Aird",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Aird13",
+    "email": "senatoraird@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1986-06-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:19.528302+00:00",
+    "updated_at": "2026-01-28T02:36:39.621225+00:00",
+    "openstates_url": "https://openstates.org/person/lashrecse-aird-25LSIVYIGFBLslwfGHsanL/"
+  },
+  {
+    "id": "ocd-person/5be2e2f9-b644-4fb4-bfbf-d4c38e858ee2",
+    "name": "Louise Lucas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:va/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Louise",
+    "family_name": "Lucas",
+    "image": "https://apps.dlas.virginia.gov/senatepics/newbiopics/Lucas2018.jpg",
+    "email": "senatorlucas@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1944-01-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:19.403496+00:00",
+    "updated_at": "2025-05-15T02:22:46.298915+00:00",
+    "openstates_url": "https://openstates.org/person/louise-lucas-2nNzKbjUJPhH800PZiuJyk/"
+  },
+  {
+    "id": "ocd-person/e58b604d-0c92-489e-8d03-7d0126d07eeb",
+    "name": "Luther Cifers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:va/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Luther",
+    "family_name": "Cifers",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Cifers10",
+    "email": "senatorcifers@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1974-06-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-23T16:51:12.885222+00:00",
+    "updated_at": "2026-01-28T02:36:15.551240+00:00",
+    "openstates_url": "https://openstates.org/person/luther-cifers-6z8w9YZeUeLvubrsmMCRQp/"
+  },
+  {
+    "id": "ocd-person/48911708-f8c9-4fa5-bf7c-7d035b08874e",
+    "name": "Mamie Locke",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:va/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mamie",
+    "family_name": "Locke",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Locke23",
+    "email": "senatorlocke@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1954-03-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:20.137705+00:00",
+    "updated_at": "2026-04-25T02:33:08.201265+00:00",
+    "openstates_url": "https://openstates.org/person/mamie-locke-2CvkjnRms5c4Fhp7dW6HWQ/"
+  },
+  {
+    "id": "ocd-person/b5ce9d0e-c76e-4424-bb84-57ceb335dc52",
+    "name": "Mark Obenshain",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:va/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Obenshain",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Obenshain2",
+    "email": "senatorobenshain@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1962-06-11",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:20.436007+00:00",
+    "updated_at": "2026-01-28T02:37:42.443291+00:00",
+    "openstates_url": "https://openstates.org/person/mark-obenshain-5X4260VfydRLThmiBaoKyg/"
+  },
+  {
+    "id": "ocd-person/e4396bfa-d22d-457e-b79a-f4bc36046a08",
+    "name": "Mark Peake",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:va/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Peake",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Peake8",
+    "email": "senatorpeake@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1963-01-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:20.667766+00:00",
+    "updated_at": "2025-03-05T09:21:12.443106+00:00",
+    "openstates_url": "https://openstates.org/person/mark-peake-6weUWjcivIUMEE8r8xtBF2/"
+  },
+  {
+    "id": "ocd-person/3ceca66a-bf31-47c8-a1a6-e2f789b41be3",
+    "name": "Mike Jones",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:va/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Jones",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Jones15",
+    "email": "senatorjones@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1967-07-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:21.712836+00:00",
+    "updated_at": "2026-04-09T08:28:20.737508+00:00",
+    "openstates_url": "https://openstates.org/person/mike-jones-1qxgiWPqnQlx89h0AHxj75/"
+  },
+  {
+    "id": "ocd-person/52e67ab6-2039-458e-b7a8-9bb5f3694e11",
+    "name": "Richard Stuart",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:va/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Stuart",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Stuart25",
+    "email": "senatorstuart@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1964-01-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:21.804461+00:00",
+    "updated_at": "2026-04-09T08:27:49.717712+00:00",
+    "openstates_url": "https://openstates.org/person/richard-stuart-2WQhPRFYPUcryktVd6K7mr/"
+  },
+  {
+    "id": "ocd-person/bf0211bf-d8ac-4343-bcd8-181e2d2e58a6",
+    "name": "Russet Perry",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:va/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Russet",
+    "family_name": "Perry",
+    "image": "https://cdn.runforsomething.net/candidates/2023/04/campaign/3388.jpg",
+    "email": "senatorperry@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1983-11-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:11.341404+00:00",
+    "updated_at": "2026-01-28T02:36:10.119079+00:00",
+    "openstates_url": "https://openstates.org/person/russet-perry-5oQTlfPdVcbrX8oWg8uwTu/"
+  },
+  {
+    "id": "ocd-person/995be769-49d1-40b6-8177-e8ee31087af1",
+    "name": "Ryan McDougle",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:va/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "McDougle",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/McDougle26",
+    "email": "senatormcdougle@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1971-11-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:22.634774+00:00",
+    "updated_at": "2025-05-15T02:23:23.412980+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-mcdougle-4fNpE6twYuusCC8q3BV4dN/"
+  },
+  {
+    "id": "ocd-person/8a50ceeb-1ded-4586-a04a-19115fddc3c5",
+    "name": "Saddam Salim",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:va/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Saddam",
+    "family_name": "Salim",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Salim37",
+    "email": "senatorsalim@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1990-01-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T17:59:59.198609+00:00",
+    "updated_at": "2026-01-28T02:36:51.355714+00:00",
+    "openstates_url": "https://openstates.org/person/saddam-salim-4CzrycWXD3FuOKg5mCnTmv/"
+  },
+  {
+    "id": "ocd-person/aec7ee58-7da0-41e1-88d0-5c9e68737a0f",
+    "name": "Schuyler VanValkenburg",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:va/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Schuyler",
+    "family_name": "VanValkenburg",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/VanValkenburg16",
+    "email": "senatorvanvalkenburg@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1982-06-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:22.885874+00:00",
+    "updated_at": "2026-01-28T02:36:58.959330+00:00",
+    "openstates_url": "https://openstates.org/person/schuyler-vanvalkenburg-5Jo25IEbnVhEtfuGhkdWcJ/"
+  },
+  {
+    "id": "ocd-person/50a6c704-2ba7-4ecc-a24c-8f55b400709b",
+    "name": "Scott Surovell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:va/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Surovell",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Surovell34",
+    "email": "senatorsurovell@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1971-08-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:13:22.964358+00:00",
+    "updated_at": "2025-03-05T09:20:48.120141+00:00",
+    "openstates_url": "https://openstates.org/person/scott-surovell-2SBbQQ0rPsYfjHmrUeVhWd/"
+  },
+  {
+    "id": "ocd-person/138f964d-7137-487b-96d6-ad836b67db83",
+    "name": "Stella Pekarsky",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:va/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Stella",
+    "family_name": "Pekarsky",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Pekarsky36",
+    "email": "senatorpekarsky@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1979-04-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:05.854687+00:00",
+    "updated_at": "2026-01-28T02:36:49.306913+00:00",
+    "openstates_url": "https://openstates.org/person/stella-pekarsky-auTMwGOgJUQE55PRbATB5/"
+  },
+  {
+    "id": "ocd-person/c3391ffd-a783-4d34-81ca-ecad4cd6d16a",
+    "name": "Tammy Mulchi",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:va/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Tammy",
+    "family_name": "Mulchi",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Mulchi9",
+    "email": "senatormulchi@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1966-07-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-10T20:50:56.176828+00:00",
+    "updated_at": "2026-01-28T02:35:44.555729+00:00",
+    "openstates_url": "https://openstates.org/person/tammy-mulchi-5wNbocjcP6POuKgn355OCQ/"
+  },
+  {
+    "id": "ocd-person/e142c869-a7a9-411a-8d73-563403f6ddd4",
+    "name": "Tara Durant",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:va/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Tara",
+    "family_name": "Durant",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Durant27",
+    "email": "senatordurant@senate.virginia.gov",
+    "gender": "Female",
+    "birth_date": "1972-10-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2022-01-03T17:16:44.463136+00:00",
+    "updated_at": "2026-01-28T02:36:53.827453+00:00",
+    "openstates_url": "https://openstates.org/person/tara-durant-6r3nBvT02f11syXrVHGC0q/"
+  },
+  {
+    "id": "ocd-person/ba57d68e-01e5-46ed-b305-ec08dece665b",
+    "name": "Timmy French",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:va/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Timmy",
+    "family_name": "French",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TimmyFrench2023.jpg",
+    "email": "senatorfrench@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1969-08-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-09T18:00:01.124250+00:00",
+    "updated_at": "2026-01-28T02:36:49.900770+00:00",
+    "openstates_url": "https://openstates.org/person/timmy-french-5fciKFVZr6ZYb7u9cKUEDj/"
+  },
+  {
+    "id": "ocd-person/0d2983ef-93a5-4d84-9fa3-2c796024562a",
+    "name": "Todd Pillion",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:va/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Pillion",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Pillion6",
+    "email": "senatorpillion@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1973-11-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-08-20T11:22:24.488856+00:00",
+    "updated_at": "2026-01-28T02:36:03.075373+00:00",
+    "openstates_url": "https://openstates.org/person/todd-pillion-Ops79oghjrbRurOZSUauQ/"
+  },
+  {
+    "id": "ocd-person/3605a4dd-d800-4820-a50c-6cd3b0ab4511",
+    "name": "Travis Hackworth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:va/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:va/government",
+      "name": "Virginia",
+      "classification": "state"
+    },
+    "given_name": "Travis",
+    "family_name": "Hackworth",
+    "image": "https://apps.senate.virginia.gov/Senator/images/member_photos/Hackworth5",
+    "email": "senatorhackworth@senate.virginia.gov",
+    "gender": "Male",
+    "birth_date": "1975-06-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-05-18T00:22:05.236338+00:00",
+    "updated_at": "2026-01-28T02:36:40.278576+00:00",
+    "openstates_url": "https://openstates.org/person/travis-hackworth-1dwAEAeuZROLLi8GpK5qpl/"
+  }
+]

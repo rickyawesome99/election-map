@@ -16,6 +16,7 @@ interface Props {
   pinPosition: [number, number] | null;
   flyTarget: [number, number] | null;
   statesGeoJSON: FeatureCollection | null;
+  districtsGeoJSON: FeatureCollection | null;
   highlightCdGEOID: string | null;
   resetTrigger: number;
   onMoved: (moved: boolean) => void;
@@ -32,40 +33,12 @@ function makeStyle(darkMode: boolean): StyleSpecification {
         tileSize: 256,
         attribution: "© OpenStreetMap contributors © CARTO",
       },
-      "congressional-districts": {
-        type: "geojson",
-        // Workers do not consistently resolve root-relative GeoJSON URLs
-        // against the page, so hand MapLibre an explicit document URL.
-        data: new URL("/congressional-districts-2026.json", window.location.origin).href,
-      },
     },
-    layers: [
-      { id: "carto", type: "raster", source: "carto" },
-      {
-        id: "district-outlines",
-        type: "line",
-        source: "congressional-districts",
-        paint: {
-          "line-color": darkMode ? "#6b7280" : "#64748b",
-          "line-opacity": 0.9,
-          "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 7, 1.15, 12, 1.75],
-        },
-      },
-      {
-        id: "selected-district-fill",
-        type: "fill",
-        source: "congressional-districts",
-        filter: ["==", ["get", "GEOID"], ""],
-        paint: { "fill-color": "#3b82f6", "fill-opacity": 0.22 },
-      },
-      {
-        id: "selected-district-outline",
-        type: "line",
-        source: "congressional-districts",
-        filter: ["==", ["get", "GEOID"], ""],
-        paint: { "line-color": "#3b82f6", "line-width": 2.5 },
-      },
-    ],
+    // "congressional-districts" source + its layers are added once districtsGeoJSON is ready
+    // (see the districts-source effect below) — the source file is TopoJSON, converted to
+    // GeoJSON client-side by DistrictFinder.tsx's loadDistrictsGeoJSON, so it can't be handed to
+    // MapLibre as a plain source URL the way it used to be.
+    layers: [{ id: "carto", type: "raster", source: "carto" }],
   };
 }
 
@@ -74,6 +47,7 @@ export default function DistrictFinderMap({
   pinPosition,
   flyTarget,
   statesGeoJSON,
+  districtsGeoJSON,
   highlightCdGEOID,
   resetTrigger,
   onMoved,
@@ -164,6 +138,54 @@ export default function DistrictFinderMap({
     if (map.isStyleLoaded()) addOrUpdateStates();
     else map.once("load", addOrUpdateStates);
   }, [statesGeoJSON, darkMode]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !districtsGeoJSON) return;
+
+    const addOrUpdateDistricts = () => {
+      const source = map.getSource("congressional-districts") as maplibregl.GeoJSONSource | undefined;
+      if (source) {
+        source.setData(districtsGeoJSON);
+        return;
+      }
+      map.addSource("congressional-districts", { type: "geojson", data: districtsGeoJSON });
+      // Inserted below "state-outlines" (added by the states effect above) when it already
+      // exists, so state boundaries keep drawing on top of district lines regardless of which
+      // of the two datasets happens to finish loading first.
+      const beforeLayer = map.getLayer("state-outlines") ? "state-outlines" : undefined;
+      map.addLayer({
+        id: "district-outlines",
+        type: "line",
+        source: "congressional-districts",
+        paint: {
+          "line-color": darkMode ? "#6b7280" : "#64748b",
+          "line-opacity": 0.9,
+          "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.8, 7, 1.15, 12, 1.75],
+        },
+      }, beforeLayer);
+      map.addLayer({
+        id: "selected-district-fill",
+        type: "fill",
+        source: "congressional-districts",
+        filter: ["==", ["get", "GEOID"], highlightCdGEOID ?? ""],
+        paint: { "fill-color": "#3b82f6", "fill-opacity": 0.22 },
+      }, beforeLayer);
+      map.addLayer({
+        id: "selected-district-outline",
+        type: "line",
+        source: "congressional-districts",
+        filter: ["==", ["get", "GEOID"], highlightCdGEOID ?? ""],
+        paint: { "line-color": "#3b82f6", "line-width": 2.5 },
+      }, beforeLayer);
+    };
+
+    if (map.isStyleLoaded()) addOrUpdateDistricts();
+    else map.once("load", addOrUpdateDistricts);
+    // darkMode/highlightCdGEOID are applied by their own effects below once the layers exist;
+    // this effect only needs to (re-)run when the data itself changes.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [districtsGeoJSON]);
 
   useEffect(() => {
     const map = mapRef.current;

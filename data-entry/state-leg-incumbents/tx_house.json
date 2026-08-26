@@ -1,0 +1,4052 @@
+[
+  {
+    "id": "ocd-person/dd3e49ca-2b2b-4a83-ae63-0ade6ccef73f",
+    "name": "A.J. Louderback",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:tx/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "A.J.",
+    "family_name": "Louderback",
+    "image": "https://house.texas.gov/images/members/4620.jpg?v=1",
+    "email": "aj.louderback@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:07.293160+00:00",
+    "updated_at": "2026-04-04T02:16:59.327781+00:00",
+    "openstates_url": "https://openstates.org/person/a-j-louderback-6jTlk9C3OrFoAnMZmfaq11/"
+  },
+  {
+    "id": "ocd-person/c55d85ff-7172-42d4-9c8f-da2f258dc19b",
+    "name": "Aicha Davis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "109",
+      "division_id": "ocd-division/country:us/state:tx/sldl:109"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Aicha",
+    "family_name": "Davis",
+    "image": "https://www.house.texas.gov/images/members/4465.jpg?v=1",
+    "email": "aicha.davis@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:36.403811+00:00",
+    "updated_at": "2026-04-04T02:16:17.629848+00:00",
+    "openstates_url": "https://openstates.org/person/aicha-davis-60QEBHpjCKDV23R3E9r7P9/"
+  },
+  {
+    "id": "ocd-person/1493b76f-b77d-48db-9ecd-26d0e2dfc843",
+    "name": "Alan Schoolcraft",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:tx/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Alan",
+    "family_name": "Schoolcraft",
+    "image": "https://house.texas.gov/images/members/4745.jpg?v=1",
+    "email": "alan.schoolcraft@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:03.175825+00:00",
+    "updated_at": "2026-04-04T02:17:44.317756+00:00",
+    "openstates_url": "https://openstates.org/person/alan-schoolcraft-cpLtfJP7nUa4WkrHiV4st/"
+  },
+  {
+    "id": "ocd-person/2fd6fcd3-9676-42a4-b879-e317576ff18f",
+    "name": "Alma Allen",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "131",
+      "division_id": "ocd-division/country:us/state:tx/sldl:131"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Alma",
+    "family_name": "Allen",
+    "image": "https://house.texas.gov/images/members/2100.jpg?v=1",
+    "email": "alma.allen@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1939-04-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:33.253989+00:00",
+    "updated_at": "2026-01-28T02:23:03.387823+00:00",
+    "openstates_url": "https://openstates.org/person/alma-allen-1SGt7EImvuo2VarMAH4s8N/"
+  },
+  {
+    "id": "ocd-person/4f98520b-d88b-4053-acc5-3cb2fff14660",
+    "name": "Ana Hernandez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "143",
+      "division_id": "ocd-division/country:us/state:tx/sldl:143"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Ana",
+    "family_name": "Hernandez",
+    "image": "https://house.texas.gov/images/members/3155.jpg?v=1",
+    "email": "ana.hernandez@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1978-08-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:33.335210+00:00",
+    "updated_at": "2026-02-13T08:07:56.528026+00:00",
+    "openstates_url": "https://openstates.org/person/ana-hernandez-2QC0HGY8qnb32BwNf5nzOq/"
+  },
+  {
+    "id": "ocd-person/7f893a20-0547-4ad9-9a94-1084a9ef6469",
+    "name": "Ana-Maria Rodriguez Ramos",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "102",
+      "division_id": "ocd-division/country:us/state:tx/sldl:102"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Ana-Maria",
+    "family_name": "Rodriguez Ramos",
+    "image": "https://house.texas.gov/images/members/3735.jpg?v=1",
+    "email": "ana-maria.ramos@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1976-06-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:27:12.375718+00:00",
+    "updated_at": "2026-04-04T02:17:26.710181+00:00",
+    "openstates_url": "https://openstates.org/person/ana-maria-rodriguez-ramos-3sejmes1z3P1VAB8z1d7yD/"
+  },
+  {
+    "id": "ocd-person/ee8cc382-84b7-47e3-824f-e05cf6455161",
+    "name": "Andy Hopper",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:tx/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Andy",
+    "family_name": "Hopper",
+    "image": "https://www.house.texas.gov/images/members/4555.jpg?v=1",
+    "email": "andy.hopper@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:09.934748+00:00",
+    "updated_at": "2026-04-04T02:17:35.988439+00:00",
+    "openstates_url": "https://openstates.org/person/andy-hopper-7G8VBbKPkEXw7pz8Udi7xh/"
+  },
+  {
+    "id": "ocd-person/aa0d12c3-c318-4c97-a0d4-c63795ec50d9",
+    "name": "Angelia Orr",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:tx/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Angelia",
+    "family_name": "Orr",
+    "image": "https://house.texas.gov/images/members/4340.jpg?v=1",
+    "email": "angelia.orr@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1969-10-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:34:03.170262+00:00",
+    "updated_at": "2026-04-04T02:16:06.905469+00:00",
+    "openstates_url": "https://openstates.org/person/angelia-orr-5AsfXs9Q4E331wgtGlwLm5/"
+  },
+  {
+    "id": "ocd-person/2a9478ef-b573-4de6-ab96-bb3f6091346f",
+    "name": "Angie Button",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "112",
+      "division_id": "ocd-division/country:us/state:tx/sldl:112"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Angie",
+    "family_name": "Button",
+    "image": "https://house.texas.gov/images/members/2510.jpg?v=1",
+    "email": "angie.button@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1954-02-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:33.499531+00:00",
+    "updated_at": "2026-04-04T02:16:55.177376+00:00",
+    "openstates_url": "https://openstates.org/person/angie-button-1ILWqbMblthT6FqS44bAJL/"
+  },
+  {
+    "id": "ocd-person/45f3ddfb-5994-4f05-b2c8-e0e3b2a99c47",
+    "name": "Ann Johnson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "134",
+      "division_id": "ocd-division/country:us/state:tx/sldl:134"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Ann",
+    "family_name": "Johnson",
+    "image": "https://house.texas.gov/images/members/3985.jpg?v=1",
+    "email": "ann.johnson@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1974-08-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:18:24.608328+00:00",
+    "updated_at": "2026-02-13T08:08:14.487870+00:00",
+    "openstates_url": "https://openstates.org/person/ann-johnson-27zuvLrIHe2uesinID9Ll9/"
+  },
+  {
+    "id": "ocd-person/3caafbc8-6561-4bf8-8247-aaf398573ba8",
+    "name": "Armando Walle",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "140",
+      "division_id": "ocd-division/country:us/state:tx/sldl:140"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Armando",
+    "family_name": "Walle",
+    "image": "https://house.texas.gov/images/members/4930.jpg?v=1",
+    "email": "armando.walle@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1978-03-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:33.660953+00:00",
+    "updated_at": "2026-02-13T08:08:00.685680+00:00",
+    "openstates_url": "https://openstates.org/person/armando-walle-1qTg7GPQMNicpEc4JuukVE/"
+  },
+  {
+    "id": "ocd-person/9c37e80d-af10-4433-a78a-408b2b798fb6",
+    "name": "Barbara Gervin-Hawkins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "120",
+      "division_id": "ocd-division/country:us/state:tx/sldl:120"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Barbara",
+    "family_name": "Gervin-Hawkins",
+    "image": "https://house.texas.gov/images/members/3445.jpg?v=1",
+    "email": "barbara.gervin-hawkins@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:33.741621+00:00",
+    "updated_at": "2026-04-04T02:16:37.470199+00:00",
+    "openstates_url": "https://openstates.org/person/barbara-gervin-hawkins-4kmLqMonYH7lFuJLSzxwVK/"
+  },
+  {
+    "id": "ocd-person/ba43365e-63dc-4bdc-aadc-e3939aa7465b",
+    "name": "Ben Bumgarner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:tx/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Bumgarner",
+    "image": "https://house.texas.gov/images/members/4125.jpg?v=1",
+    "email": "ben.bumgarner@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:31:39.073043+00:00",
+    "updated_at": "2026-04-04T02:17:43.727765+00:00",
+    "openstates_url": "https://openstates.org/person/ben-bumgarner-5fTHuljpIwRULEGUeyR1KN/"
+  },
+  {
+    "id": "ocd-person/51591894-e9ff-48d3-81c5-897ec1c5e600",
+    "name": "Bobby Guerra",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:tx/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Bobby",
+    "family_name": "Guerra",
+    "image": "https://house.texas.gov/images/members/2325.jpg?v=1",
+    "email": "bobby.guerra@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1953-08-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:34.067733+00:00",
+    "updated_at": "2026-04-04T02:16:19.772526+00:00",
+    "openstates_url": "https://openstates.org/person/bobby-guerra-2TV5v20TdJW8DKD610y2rY/"
+  },
+  {
+    "id": "ocd-person/e3533cbc-f3ab-46bc-a591-c68657f82527",
+    "name": "Brad Buckley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:tx/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Buckley",
+    "image": "https://house.texas.gov/images/members/3585.jpg?v=1",
+    "email": "brad.buckley@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1966-09-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:25:37.638428+00:00",
+    "updated_at": "2026-04-04T02:17:09.371373+00:00",
+    "openstates_url": "https://openstates.org/person/brad-buckley-6uxISaN9RbE0a9TmXfsM6R/"
+  },
+  {
+    "id": "ocd-person/469f1932-49dc-4a46-8341-b2cd9bc0f96d",
+    "name": "Brent Money",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:tx/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Brent",
+    "family_name": "Money",
+    "image": "https://www.house.texas.gov/images/members/4670.jpg?v=1",
+    "email": "brent.money@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1978-08-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:29.875693+00:00",
+    "updated_at": "2026-04-04T02:16:51.694929+00:00",
+    "openstates_url": "https://openstates.org/person/brent-money-29GAbbDKmmDE0fltXxmgd3/"
+  },
+  {
+    "id": "ocd-person/b1bf46ac-e99e-49f6-8f40-cf07aca12187",
+    "name": "Brian Harrison",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:tx/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Harrison",
+    "image": "https://house.texas.gov/images/members/4085.jpg?v=1",
+    "email": "brian.harrison@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-12-16T19:14:06.781223+00:00",
+    "updated_at": "2026-04-04T02:17:52.184029+00:00",
+    "openstates_url": "https://openstates.org/person/brian-harrison-5PP3QWb1Yl55F55qkFehpH/"
+  },
+  {
+    "id": "ocd-person/065c24a0-401a-4dc5-a19c-e7d96dcbffc5",
+    "name": "Briscoe Cain",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "128",
+      "division_id": "ocd-division/country:us/state:tx/sldl:128"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Briscoe",
+    "family_name": "Cain",
+    "image": "https://house.texas.gov/images/members/3265.jpg?v=2",
+    "email": "briscoe.cain@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1984-12-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:34.392354+00:00",
+    "updated_at": "2026-01-28T02:22:54.843558+00:00",
+    "openstates_url": "https://openstates.org/person/briscoe-cain-C03vwwHpROe8Px6fQSTmH/"
+  },
+  {
+    "id": "ocd-person/83030f8b-5f1f-4475-b564-a07ae42f6d98",
+    "name": "Brooks Landgraf",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:tx/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Brooks",
+    "family_name": "Landgraf",
+    "image": "https://house.texas.gov/images/members/3040.jpg?v=1",
+    "email": "brooks.landgraf@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1981-03-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:34.469641+00:00",
+    "updated_at": "2026-04-04T02:16:28.360247+00:00",
+    "openstates_url": "https://openstates.org/person/brooks-landgraf-3zDOOx8B8zyDha2lguYC64/"
+  },
+  {
+    "id": "ocd-person/f4976334-0e0e-4474-b5b4-3264e8d73f1d",
+    "name": "Candy Noble",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:tx/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Candy",
+    "family_name": "Noble",
+    "image": "https://house.texas.gov/images/members/3740.jpg?v=1",
+    "email": "candy.noble@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1961-10-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:24:58.222581+00:00",
+    "updated_at": "2026-04-04T02:17:33.838343+00:00",
+    "openstates_url": "https://openstates.org/person/candy-noble-7RXJLbORpV2rDeBHpkQJkz/"
+  },
+  {
+    "id": "ocd-person/8f7f161e-6ef4-4c12-8eea-de88a313b36c",
+    "name": "Carl Tepper",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:tx/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Carl",
+    "family_name": "Tepper",
+    "image": "https://house.texas.gov/images/members/4360.jpg?v=1",
+    "email": "carl.tepper@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:32:12.975127+00:00",
+    "updated_at": "2026-04-04T02:16:19.187795+00:00",
+    "openstates_url": "https://openstates.org/person/carl-tepper-4MlyqWmjmJumaF7SXa66iy/"
+  },
+  {
+    "id": "ocd-person/5c40c2b0-07c1-4c73-b15b-14d0ef6df40e",
+    "name": "Caroline Fairly",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:tx/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Caroline",
+    "family_name": "Fairly",
+    "image": "https://www.house.texas.gov/images/members/4480.jpg?v=1",
+    "email": "caroline.fairly@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1999-01-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:31.505842+00:00",
+    "updated_at": "2026-04-04T02:16:32.007828+00:00",
+    "openstates_url": "https://openstates.org/person/caroline-fairly-2o4tA3aohdr1OeuxSVioMY/"
+  },
+  {
+    "id": "ocd-person/72920206-cbe7-4429-b42b-c6fc746a1d56",
+    "name": "Caroline Harris Davila",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:tx/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Caroline",
+    "family_name": "Harris Davila",
+    "image": "https://house.texas.gov/images/members/4205.jpg?v=1",
+    "email": "caroline.harrisdavila@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:32:14.425149+00:00",
+    "updated_at": "2026-04-04T02:16:56.426887+00:00",
+    "openstates_url": "https://openstates.org/person/caroline-harris-davila-3UBqlYM6uSIi0A1Vr4XYve/"
+  },
+  {
+    "id": "ocd-person/64221b86-e3ca-4b67-b2bb-3f4f9641e133",
+    "name": "Carrie Isaac",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:tx/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Carrie",
+    "family_name": "Isaac",
+    "image": "https://house.texas.gov/images/members/4265.jpg?v=3",
+    "email": "carrie.isaac@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:32:52.584553+00:00",
+    "updated_at": "2026-04-04T02:17:29.131925+00:00",
+    "openstates_url": "https://openstates.org/person/carrie-isaac-32wopcr00QDtnkPYFVtXxD/"
+  },
+  {
+    "id": "ocd-person/f331962f-370b-4b74-876e-aa6a8e2e58e2",
+    "name": "Cas Garcia Hernandez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "115",
+      "division_id": "ocd-division/country:us/state:tx/sldl:115"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Cas",
+    "family_name": "Garcia Hernandez",
+    "image": "https://www.house.texas.gov/images/members/4495.jpg?v=1",
+    "email": "cassandra.garciahernandez@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:58.054572+00:00",
+    "updated_at": "2026-04-04T02:17:44.929138+00:00",
+    "openstates_url": "https://openstates.org/person/cas-garcia-hernandez-7OtnODkbgXcio6kCGLyhmc/"
+  },
+  {
+    "id": "ocd-person/33f871c9-15a6-4094-9181-ff822cd9eca4",
+    "name": "Cecil Bell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:tx/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Cecil",
+    "family_name": "Bell",
+    "image": "https://house.texas.gov/images/members/2335.jpg?v=1",
+    "email": "cecil.bell@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1962-05-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:34.779510+00:00",
+    "updated_at": "2026-04-04T02:16:13.362020+00:00",
+    "openstates_url": "https://openstates.org/person/cecil-bell-1a49BMn9G3nBV2UlBR5mGS/"
+  },
+  {
+    "id": "ocd-person/e6ccd3a9-8f52-46d4-af8d-d0301a8e3a05",
+    "name": "Charlene Ward Johnson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "139",
+      "division_id": "ocd-division/country:us/state:tx/sldl:139"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Charlene",
+    "family_name": "Ward Johnson",
+    "image": "https://www.house.texas.gov/images/members/4785.jpg?v=3",
+    "email": "charlene.wardjohnson@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1967-10-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:40.295055+00:00",
+    "updated_at": "2026-01-28T02:22:25.457035+00:00",
+    "openstates_url": "https://openstates.org/person/charlene-ward-johnson-71VqA1qvwfaTPQJoEJGHqv/"
+  },
+  {
+    "id": "ocd-person/41f4a5e2-a2d5-4e54-aae3-9c99f9ea5eba",
+    "name": "Charles Cunningham",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "127",
+      "division_id": "ocd-division/country:us/state:tx/sldl:127"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Charles",
+    "family_name": "Cunningham",
+    "image": "https://house.texas.gov/images/members/4130.jpg?v=1",
+    "email": "charles.cunningham@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:33:22.933868+00:00",
+    "updated_at": "2026-01-28T02:23:12.163851+00:00",
+    "openstates_url": "https://openstates.org/person/charles-cunningham-20SIx6LL12JKItvhu9vBMo/"
+  },
+  {
+    "id": "ocd-person/65a42043-6243-4f79-b1e0-69b3b8b4af29",
+    "name": "Charlie Geren",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:tx/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Charlie",
+    "family_name": "Geren",
+    "image": "https://house.texas.gov/images/members/2945.jpg?v=1",
+    "email": "charlie.geren@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1949-10-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:35.179258+00:00",
+    "updated_at": "2026-04-04T02:17:31.757734+00:00",
+    "openstates_url": "https://openstates.org/person/charlie-geren-35nEJJIEpyd0sYadJWNczZ/"
+  },
+  {
+    "id": "ocd-person/a5e2021c-8221-41ba-b45c-cc89d13b2af2",
+    "name": "Chris Turner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "101",
+      "division_id": "ocd-division/country:us/state:tx/sldl:101"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Turner",
+    "image": "https://house.texas.gov/images/members/4680.jpg?v=1",
+    "email": "chris.turner@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1972-10-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:35.339818+00:00",
+    "updated_at": "2026-04-04T02:17:49.115580+00:00",
+    "openstates_url": "https://openstates.org/person/chris-turner-5311Ev5ALf0iv5F0m0ZsB8/"
+  },
+  {
+    "id": "ocd-person/26090510-8782-4d64-b981-3d1cde573090",
+    "name": "Christian Manuel",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:tx/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Christian",
+    "family_name": "Manuel",
+    "image": "https://house.texas.gov/images/members/4255.jpg?v=1",
+    "email": "christian.manuel@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:31:47.049388+00:00",
+    "updated_at": "2026-04-04T02:16:18.210977+00:00",
+    "openstates_url": "https://openstates.org/person/christian-manuel-19lpUMAq9cACfEUEzoPy5o/"
+  },
+  {
+    "id": "ocd-person/791e4399-56bb-4d4c-8561-71f0979fb999",
+    "name": "Christina Morales",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "145",
+      "division_id": "ocd-division/country:us/state:tx/sldl:145"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Christina",
+    "family_name": "Morales",
+    "image": "https://house.texas.gov/images/members/3910.jpg?v=1",
+    "email": "christina.morales@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1968-04-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-12-05T18:14:59.829491+00:00",
+    "updated_at": "2026-02-13T08:08:32.270963+00:00",
+    "openstates_url": "https://openstates.org/person/christina-morales-3gXtwMIToDnfdlLLrZHA6r/"
+  },
+  {
+    "id": "ocd-person/6feda596-fd20-429b-ae4e-bedab7e5a1c5",
+    "name": "Claudia Ordaz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:tx/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Claudia",
+    "family_name": "Ordaz",
+    "image": "https://house.texas.gov/images/members/4015.jpg?v=3",
+    "email": "claudia.ordaz@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1986-01-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:18:25.940612+00:00",
+    "updated_at": "2026-04-04T02:17:06.327994+00:00",
+    "openstates_url": "https://openstates.org/person/claudia-ordaz-3PCkhJIcyOzMh3ROhsyaEn/"
+  },
+  {
+    "id": "ocd-person/baafecd4-6f74-4a97-b564-691c1e938291",
+    "name": "Cody Harris",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:tx/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Cody",
+    "family_name": "Harris",
+    "image": "https://house.texas.gov/images/members/3580.jpg?v=3",
+    "email": "cody.harris@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1983-08-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:25:47.155147+00:00",
+    "updated_at": "2026-04-04T02:17:11.746796+00:00",
+    "openstates_url": "https://openstates.org/person/cody-harris-5gGyBqB2TZV0ZBzhWmOhtJ/"
+  },
+  {
+    "id": "ocd-person/3194ee5e-f4d8-4449-8ff6-ec47c0822a3d",
+    "name": "Cody Vasut",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:tx/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Cody",
+    "family_name": "Vasut",
+    "image": "https://house.texas.gov/images/members/4065.jpg?v=1",
+    "email": "cody.vasut@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1987-08-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:18:30.286218+00:00",
+    "updated_at": "2026-04-04T02:16:12.520467+00:00",
+    "openstates_url": "https://openstates.org/person/cody-vasut-1VYgVzV0Yln1ZPqFcFTAbN/"
+  },
+  {
+    "id": "ocd-person/43bbf34a-6bc4-41f9-9bdc-3e944c5b8495",
+    "name": "Cole Hefner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:tx/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Cole",
+    "family_name": "Hefner",
+    "image": "https://house.texas.gov/images/members/3505.jpg?v=1",
+    "email": "cole.hefner@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1980-11-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:35.494237+00:00",
+    "updated_at": "2026-04-04T02:17:39.485991+00:00",
+    "openstates_url": "https://openstates.org/person/cole-hefner-23oNWdxwJrmSNzkK50DVo5/"
+  },
+  {
+    "id": "ocd-person/7952d7d7-0fe5-4712-9967-6cb9bcedff05",
+    "name": "Dade Phelan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:tx/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Dade",
+    "family_name": "Phelan",
+    "image": "https://house.texas.gov/images/members/2905.jpg?v=1",
+    "email": "dade.phelan@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1975-09-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:35.811845+00:00",
+    "updated_at": "2026-04-04T02:17:46.237397+00:00",
+    "openstates_url": "https://openstates.org/person/dade-phelan-3gvvigTcSMZKkrmvNjjklZ/"
+  },
+  {
+    "id": "ocd-person/f602a657-8951-4dcb-9bd8-c04bcce4ba56",
+    "name": "Daniel Alders",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:tx/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Daniel",
+    "family_name": "Alders",
+    "image": "https://www.house.texas.gov/images/members/4395.jpg?v=1",
+    "email": "daniel.alders@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1986-11-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:09.175725+00:00",
+    "updated_at": "2026-04-04T02:17:19.048554+00:00",
+    "openstates_url": "https://openstates.org/person/daniel-alders-7UDK36WVSLMv2YhaIQ4KLm/"
+  },
+  {
+    "id": "ocd-person/2d5f629c-76a7-455b-aff7-262d8c1c23f6",
+    "name": "David Cook",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:tx/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Cook",
+    "image": "https://house.texas.gov/images/members/3960.jpg?v=1",
+    "email": "david.cook@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1971-07-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:18:30.326844+00:00",
+    "updated_at": "2026-04-04T02:17:11.141326+00:00",
+    "openstates_url": "https://openstates.org/person/david-cook-1NcFF8KHbc3WePAjghYFba/"
+  },
+  {
+    "id": "ocd-person/15ce6502-645c-4031-994d-b228e1c69bb4",
+    "name": "David Lowe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:tx/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Lowe",
+    "image": "https://www.house.texas.gov/images/members/4643.jpg?v=1",
+    "email": "david.lowe@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1983-06-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:51.971221+00:00",
+    "updated_at": "2026-04-04T02:16:43.746464+00:00",
+    "openstates_url": "https://openstates.org/person/david-lowe-f9A0bX3GGjmnQeFMU4Zl6/"
+  },
+  {
+    "id": "ocd-person/36338558-c2b0-4b43-b656-261dccbee871",
+    "name": "David Spiller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:tx/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Spiller",
+    "image": "https://house.texas.gov/images/members/4075.jpg?v=1",
+    "email": "david.spiller@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1961-02-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-08-03T23:13:36.331141+00:00",
+    "updated_at": "2026-04-04T02:17:34.427542+00:00",
+    "openstates_url": "https://openstates.org/person/david-spiller-1eH86fdEcaOp1djcwYWivJ/"
+  },
+  {
+    "id": "ocd-person/42c40e86-b355-4724-8582-995125377240",
+    "name": "Denise Villalobos",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:tx/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Denise",
+    "family_name": "Villalobos",
+    "image": "https://house.texas.gov/images/members/4770.jpg?v=1",
+    "email": "denise.villalobos@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:34.586821+00:00",
+    "updated_at": "2026-04-04T02:16:09.612159+00:00",
+    "openstates_url": "https://openstates.org/person/denise-villalobos-21z5gjhOOnM1T2z6onpTlo/"
+  },
+  {
+    "id": "ocd-person/e05f502a-0d27-4c51-8cad-d3b5eca585b1",
+    "name": "Dennis Paul",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "129",
+      "division_id": "ocd-division/country:us/state:tx/sldl:129"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Dennis",
+    "family_name": "Paul",
+    "image": "https://house.texas.gov/images/members/3090.jpg?v=1",
+    "email": "dennis.paul@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1961-03-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:36.294987+00:00",
+    "updated_at": "2026-01-28T02:22:26.140346+00:00",
+    "openstates_url": "https://openstates.org/person/dennis-paul-6pNq2vnbltNm2yeCBtvuy1/"
+  },
+  {
+    "id": "ocd-person/7847295c-78f3-4f8c-adb6-3536fca2782e",
+    "name": "Diego Bernal",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "123",
+      "division_id": "ocd-division/country:us/state:tx/sldl:123"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Diego",
+    "family_name": "Bernal",
+    "image": "https://house.texas.gov/images/members/3110.jpg?v=1",
+    "email": "diego.bernal@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:36.532856+00:00",
+    "updated_at": "2026-04-04T02:17:08.788992+00:00",
+    "openstates_url": "https://openstates.org/person/diego-bernal-3exbD2Fc4N65neXIppAN9a/"
+  },
+  {
+    "id": "ocd-person/0941f4bf-2ac8-48d0-8675-191514e06850",
+    "name": "Don McLaughlin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:tx/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Don",
+    "family_name": "McLaughlin",
+    "image": "https://house.texas.gov/images/members/4655.jpg?v=1",
+    "email": "don.mclaughlin@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1961-09-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:38.984272+00:00",
+    "updated_at": "2026-04-04T02:16:24.165567+00:00",
+    "openstates_url": "https://openstates.org/person/don-mclaughlin-HT4WNExy8eCJ8TnjmkdKi/"
+  },
+  {
+    "id": "ocd-person/349071fd-3c36-43c6-aaca-6d7f9d04322d",
+    "name": "Donna Howard",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:tx/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Donna",
+    "family_name": "Howard",
+    "image": "https://house.texas.gov/images/members/3310.jpg?v=1",
+    "email": "donna.howard@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1951-10-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:36.911249+00:00",
+    "updated_at": "2026-04-04T02:16:48.098490+00:00",
+    "openstates_url": "https://openstates.org/person/donna-howard-1bBbz7vR1ax8dlqV3vVv1J/"
+  },
+  {
+    "id": "ocd-person/40f0e868-e021-4453-8675-a9d2357e41e1",
+    "name": "Drew Darby",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:tx/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Drew",
+    "family_name": "Darby",
+    "image": "https://house.texas.gov/images/members/2645.jpg?v=1",
+    "email": "drew.darby@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1947-02-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:36.990601+00:00",
+    "updated_at": "2026-01-28T02:23:08.343164+00:00",
+    "openstates_url": "https://openstates.org/person/drew-darby-1yXbSFI1v9zvUWO53rjo5R/"
+  },
+  {
+    "id": "ocd-person/fff5eb4f-2c41-4d00-a1c5-e566a15b063e",
+    "name": "Dustin Burrows",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:tx/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Dustin",
+    "family_name": "Burrows",
+    "image": "https://house.texas.gov/images/members/3055.jpg?v=2",
+    "email": "dustin.burrows@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1978-11-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:37.142259+00:00",
+    "updated_at": "2026-04-04T02:16:21.062629+00:00",
+    "openstates_url": "https://openstates.org/person/dustin-burrows-7mzQa9OmiqSUQSnumS2tLS/"
+  },
+  {
+    "id": "ocd-person/c84056d0-47e0-4a0c-94e1-9f90c2d90a15",
+    "name": "Eddie Morales",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:tx/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Eddie",
+    "family_name": "Morales",
+    "image": "https://house.texas.gov/images/members/4000.jpg?v=1",
+    "email": "eddie.morales@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1975-01-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:18:29.295995+00:00",
+    "updated_at": "2026-04-04T02:16:07.891486+00:00",
+    "openstates_url": "https://openstates.org/person/eddie-morales-65rrqLE23THp1aqfsh0qjl/"
+  },
+  {
+    "id": "ocd-person/34590156-1109-4ab6-84bc-bbe07764f365",
+    "name": "Ellen Troxclair",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:tx/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Ellen",
+    "family_name": "Troxclair",
+    "image": "https://house.texas.gov/images/members/4385.jpg?v=1",
+    "email": "ellen.troxclair@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1985-02-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:33:48.549736+00:00",
+    "updated_at": "2026-04-04T02:17:17.611909+00:00",
+    "openstates_url": "https://openstates.org/person/ellen-troxclair-1amH8sF5ibRDydwmo46wyb/"
+  },
+  {
+    "id": "ocd-person/2cadcb59-210a-4a71-af9f-7dba9ab06112",
+    "name": "Erin G\u00e1mez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:tx/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Erin",
+    "family_name": "G\u00e1mez",
+    "image": "https://house.texas.gov/images/members/4095.jpg?v=1",
+    "email": "erin.gamez@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1989-06-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:34:01.797333+00:00",
+    "updated_at": "2026-04-04T02:17:02.547294+00:00",
+    "openstates_url": "https://openstates.org/person/erin-gamez-1MJ5MxPKvfd659uh3xFPXO/"
+  },
+  {
+    "id": "ocd-person/b55d57f4-bd06-4487-8860-0b6eeb9a1dea",
+    "name": "Erin Zwiener",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:tx/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Erin",
+    "family_name": "Zwiener",
+    "image": "https://house.texas.gov/images/members/3710.jpg?v=1",
+    "email": "erin.zwiener@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1985-09-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:25:28.828208+00:00",
+    "updated_at": "2026-04-04T02:17:52.791247+00:00",
+    "openstates_url": "https://openstates.org/person/erin-zwiener-5WEGhGGXKIxDLPOgGSZfL8/"
+  },
+  {
+    "id": "ocd-person/5ff88048-ebd8-4ac3-af9c-d02e1305ef37",
+    "name": "Gary Gates",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:tx/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Gates",
+    "image": "https://house.texas.gov/images/members/3920.jpg?v=1",
+    "email": "gary.gates@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1959-07-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2020-04-25T05:20:56.253595+00:00",
+    "updated_at": "2026-04-04T02:17:46.820587+00:00",
+    "openstates_url": "https://openstates.org/person/gary-gates-2v5pr54Mx0T7qF0EOdcKoB/"
+  },
+  {
+    "id": "ocd-person/26617394-4276-4aa7-878c-d20552b260a4",
+    "name": "Gary VanDeaver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:tx/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "VanDeaver",
+    "image": "https://house.texas.gov/images/members/2540.jpg?v=1",
+    "email": "gary.vandeaver@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1958-09-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:38.083577+00:00",
+    "updated_at": "2026-04-04T02:16:08.511874+00:00",
+    "openstates_url": "https://openstates.org/person/gary-vandeaver-1AQF7SfOIw92G2d3IO911g/"
+  },
+  {
+    "id": "ocd-person/5556a81a-eca2-451d-bb29-74cfb00d1959",
+    "name": "Gene Wu",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "137",
+      "division_id": "ocd-division/country:us/state:tx/sldl:137"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Gene",
+    "family_name": "Wu",
+    "image": "https://house.texas.gov/images/members/2865.jpg?v=1",
+    "email": "gene.wu@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1978-03-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:38.241016+00:00",
+    "updated_at": "2026-02-13T08:08:41.639593+00:00",
+    "openstates_url": "https://openstates.org/person/gene-wu-2b1wtnFpCMV9L8XcbP4cSf/"
+  },
+  {
+    "id": "ocd-person/1f9ed42e-27de-4cd1-b2bf-f890ee33cb49",
+    "name": "Gina Hinojosa",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:tx/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Gina",
+    "family_name": "Hinojosa",
+    "image": "https://house.texas.gov/images/members/3210.jpg?v=1",
+    "email": "gina.hinojosa@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1973-12-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:38.319972+00:00",
+    "updated_at": "2026-04-04T02:17:28.353679+00:00",
+    "openstates_url": "https://openstates.org/person/gina-hinojosa-xfLWJ5Zor5hbGpZ6gzLVx/"
+  },
+  {
+    "id": "ocd-person/40ecf6ee-92a4-4daf-b950-ac70b6cdfeee",
+    "name": "Giovanni Capriglione",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:tx/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Giovanni",
+    "family_name": "Capriglione",
+    "image": "https://house.texas.gov/images/members/2345.jpg?v=1",
+    "email": "giovanni.capriglione@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1973-03-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:38.391386+00:00",
+    "updated_at": "2026-04-04T02:17:51.632283+00:00",
+    "openstates_url": "https://openstates.org/person/giovanni-capriglione-1yVnj32RILyVrsmUCTc8PW/"
+  },
+  {
+    "id": "ocd-person/d0fbfb15-2f0c-4167-b8b4-d6135bbb6616",
+    "name": "Greg Bonnen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:tx/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Bonnen",
+    "image": "https://house.texas.gov/images/members/2875.jpg?v=1",
+    "email": "greg.bonnen@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1966-06-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:38.472778+00:00",
+    "updated_at": "2026-04-04T02:16:34.930521+00:00",
+    "openstates_url": "https://openstates.org/person/greg-bonnen-6MLYgw6WkKyz3oicekBJRu/"
+  },
+  {
+    "id": "ocd-person/85d064ed-6f3d-4a81-93ee-1baf49c7f2c3",
+    "name": "Harold Dutton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "142",
+      "division_id": "ocd-division/country:us/state:tx/sldl:142"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Harold",
+    "family_name": "Dutton",
+    "image": "https://house.texas.gov/images/members/2650.jpg?v=3",
+    "email": "harold.dutton@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1945-02-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:38.544190+00:00",
+    "updated_at": "2026-01-28T02:22:06.600054+00:00",
+    "openstates_url": "https://openstates.org/person/harold-dutton-44VDO1Nrb4eNEzrPimlhkh/"
+  },
+  {
+    "id": "ocd-person/92b45572-c15c-4270-8356-6c3db1846c7b",
+    "name": "Helen Kerwin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:tx/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Helen",
+    "family_name": "Kerwin",
+    "image": "https://www.house.texas.gov/images/members/4575.jpg?v=1",
+    "email": "helen.kerwin@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1947-10-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:14.442994+00:00",
+    "updated_at": "2026-04-04T02:17:03.815211+00:00",
+    "openstates_url": "https://openstates.org/person/helen-kerwin-4SpI8P3gqi8wl0WNFWz8Dz/"
+  },
+  {
+    "id": "ocd-person/ef5a2ea8-61b0-484c-bbe1-b52c5ad2f075",
+    "name": "Hillary Hickland",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:tx/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Hillary",
+    "family_name": "Hickland",
+    "image": "https://www.house.texas.gov/images/members/4520.jpg?v=1",
+    "email": "hillary.hickland@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1982-10-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:04.657920+00:00",
+    "updated_at": "2026-04-04T02:16:13.872526+00:00",
+    "openstates_url": "https://openstates.org/person/hillary-hickland-7HeNX0uJS6YMr1PBWVR2TF/"
+  },
+  {
+    "id": "ocd-person/5c2743d2-fe0e-41d6-969d-de830d5787f8",
+    "name": "Hubert Vo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "149",
+      "division_id": "ocd-division/country:us/state:tx/sldl:149"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Hubert",
+    "family_name": "Vo",
+    "image": "https://house.texas.gov/images/members/4900.jpg?v=1",
+    "email": "hubert.vo@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1956-05-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:38.704131+00:00",
+    "updated_at": "2026-01-28T02:22:41.367948+00:00",
+    "openstates_url": "https://openstates.org/person/hubert-vo-2ntElg2aQpiP9vWXst5buC/"
+  },
+  {
+    "id": "ocd-person/a43f2db5-4b24-4dfa-af7f-a2c7cbc5ea21",
+    "name": "J.M. Lozano",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:tx/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "J.M.",
+    "family_name": "Lozano",
+    "image": "https://house.texas.gov/images/members/2065.jpg?v=1",
+    "email": "jm.lozano@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1980-05-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:39.016074+00:00",
+    "updated_at": "2026-04-04T02:16:10.839818+00:00",
+    "openstates_url": "https://openstates.org/person/j-m-lozano-4zvc5NXqgMf9yEkZEJwfCr/"
+  },
+  {
+    "id": "ocd-person/6cbb02e6-5876-47a1-86aa-98566fe0073a",
+    "name": "James Frank",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:tx/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Frank",
+    "image": "https://house.texas.gov/images/members/2385.jpg?v=1",
+    "email": "james.frank@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:39.095978+00:00",
+    "updated_at": "2026-04-04T02:16:58.629348+00:00",
+    "openstates_url": "https://openstates.org/person/james-frank-3JAdPkG6ztnU6pGa62AZq6/"
+  },
+  {
+    "id": "ocd-person/5e4e2fd2-e8a9-46f3-aab5-ffbc782afa8b",
+    "name": "James Talarico",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:tx/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Talarico",
+    "image": "https://house.texas.gov/images/members/3685.jpg?v=1",
+    "email": "james.talarico@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1989-05-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:25:57.280368+00:00",
+    "updated_at": "2026-04-04T02:17:30.372840+00:00",
+    "openstates_url": "https://openstates.org/person/james-talarico-2rx0dFFgYWCgtwueUfIfqF/"
+  },
+  {
+    "id": "ocd-person/a732704e-9b03-449c-b24f-f4c567b5acdd",
+    "name": "Janie Lopez",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:tx/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Janie",
+    "family_name": "Lopez",
+    "image": "https://house.texas.gov/images/members/4295.jpg?v=2",
+    "email": "janie.lopez@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:34:19.886098+00:00",
+    "updated_at": "2026-04-04T02:16:42.577359+00:00",
+    "openstates_url": "https://openstates.org/person/janie-lopez-55UlgdbqVtzeH2rRR3KPKn/"
+  },
+  {
+    "id": "ocd-person/0deb3053-0d5d-46b4-93d2-8eb9de0c4ffd",
+    "name": "Janis Holt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:tx/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Janis",
+    "family_name": "Holt",
+    "image": "https://www.house.texas.gov/images/members/4535.jpg?v=2",
+    "email": "janis.holt@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1959-12-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:10.928551+00:00",
+    "updated_at": "2026-04-04T02:17:00.026158+00:00",
+    "openstates_url": "https://openstates.org/person/janis-holt-QGNfhtEXIA8r537btdrgb/"
+  },
+  {
+    "id": "ocd-person/e926ca11-64dd-4e15-97bd-1f7b0915de36",
+    "name": "Jared Patterson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "106",
+      "division_id": "ocd-division/country:us/state:tx/sldl:106"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Jared",
+    "family_name": "Patterson",
+    "image": "https://house.texas.gov/images/members/3655.jpg?v=1",
+    "email": "jared.patterson@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1983-04-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:27:33.176014+00:00",
+    "updated_at": "2026-04-04T02:17:04.868342+00:00",
+    "openstates_url": "https://openstates.org/person/jared-patterson-75wwDMWoAaQG2MKepATY5W/"
+  },
+  {
+    "id": "ocd-person/37886d81-901f-43b4-841b-f3ffbfeeb257",
+    "name": "Jay Dean",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:tx/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Dean",
+    "image": "https://house.texas.gov/images/members/3515.jpg?v=1",
+    "email": "jay.dean@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1953-03-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:39.566519+00:00",
+    "updated_at": "2026-04-04T02:17:01.208360+00:00",
+    "openstates_url": "https://openstates.org/person/jay-dean-1gmvOAtFgTADEbgXL4HGul/"
+  },
+  {
+    "id": "ocd-person/988efb07-ace2-4419-ac40-ccec69ebe875",
+    "name": "Jeff Barry",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:tx/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Barry",
+    "image": "https://www.house.texas.gov/images/members/4405.jpg?v=1",
+    "email": "jeff.barry@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:06.907314+00:00",
+    "updated_at": "2026-04-04T02:16:33.258872+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-barry-4dsAuafVwIpNNlrDsRamH7/"
+  },
+  {
+    "id": "ocd-person/40a678a3-7d85-486e-bf38-5d070142aa83",
+    "name": "Jeff Leach",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:tx/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Leach",
+    "image": "https://house.texas.gov/images/members/2475.jpg?v=1",
+    "email": "jeff.leach@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1982-06-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:39.643678+00:00",
+    "updated_at": "2026-04-04T02:17:41.669931+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-leach-1xzaMV2EwPM52TF8QjI483/"
+  },
+  {
+    "id": "ocd-person/8eeb1aad-24b6-487b-bbc0-31c2238b1ccd",
+    "name": "Jessica Gonz\u00e1lez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "104",
+      "division_id": "ocd-division/country:us/state:tx/sldl:104"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Jessica",
+    "family_name": "Gonz\u00e1lez",
+    "image": "https://house.texas.gov/images/members/3335.jpg?v=1",
+    "email": "jessica.gonzalez@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1980-12-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:27:27.166608+00:00",
+    "updated_at": "2026-04-04T02:16:14.558231+00:00",
+    "openstates_url": "https://openstates.org/person/jessica-gonzalez-4LgLuI75TLht9VAvRx5bFl/"
+  },
+  {
+    "id": "ocd-person/45cd43ff-77b3-467c-aa61-890ebee8ece5",
+    "name": "Jo Jones",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "147",
+      "division_id": "ocd-division/country:us/state:tx/sldl:147"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Jo",
+    "family_name": "Jones",
+    "image": "https://house.texas.gov/images/members/4105.jpg?v=1",
+    "email": "jolanda.jones@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1965-11-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:32:29.324194+00:00",
+    "updated_at": "2026-01-28T02:22:03.765496+00:00",
+    "openstates_url": "https://openstates.org/person/jo-jones-27iHBbBUHYrhxwRwOGTijt/"
+  },
+  {
+    "id": "ocd-person/b39cf891-a259-422c-945a-94b65430ea0a",
+    "name": "Joanne Shofner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:tx/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Joanne",
+    "family_name": "Shofner",
+    "image": "https://www.house.texas.gov/images/members/4755.jpg?v=1",
+    "email": "joanne.shofner@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1964-09-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:38.065754+00:00",
+    "updated_at": "2026-04-04T02:17:47.892973+00:00",
+    "openstates_url": "https://openstates.org/person/joanne-shofner-5SvMTJeeO2je9tl2UB6lEg/"
+  },
+  {
+    "id": "ocd-person/5898294d-5b10-4aaf-a084-b8522e69623c",
+    "name": "Joe Moody",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:tx/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Moody",
+    "image": "https://house.texas.gov/images/members/3850.jpg?v=1",
+    "email": "joe.moody@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1981-01-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:40.205884+00:00",
+    "updated_at": "2026-04-04T02:16:15.170517+00:00",
+    "openstates_url": "https://openstates.org/person/joe-moody-2hArUDZD2PhWaSb8tM3spY/"
+  },
+  {
+    "id": "ocd-person/4e07d8dc-f5b5-47e7-a1de-83f36d3b734f",
+    "name": "John Bryant",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "114",
+      "division_id": "ocd-division/country:us/state:tx/sldl:114"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Bryant",
+    "image": "https://house.texas.gov/images/members/4120.jpg?v=1",
+    "email": "john.bryant@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1947-02-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:33:12.636337+00:00",
+    "updated_at": "2026-04-04T02:17:23.881296+00:00",
+    "openstates_url": "https://openstates.org/person/john-bryant-2NEzEWXWbvkFjE9kG2etu3/"
+  },
+  {
+    "id": "ocd-person/53b19d1e-5b07-4f6e-87a9-27baecddaf70",
+    "name": "John Bucy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "136",
+      "division_id": "ocd-division/country:us/state:tx/sldl:136"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Bucy",
+    "image": "https://house.texas.gov/images/members/3595.jpg?v=5",
+    "email": "john.bucy@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1984-06-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:25:34.840040+00:00",
+    "updated_at": "2026-01-28T02:22:17.696006+00:00",
+    "openstates_url": "https://openstates.org/person/john-bucy-2XvX2Gab1q2vZlfATWiQbI/"
+  },
+  {
+    "id": "ocd-person/fbd66d9f-2a93-4cbf-b75d-b51cb01e955e",
+    "name": "John Lujan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "118",
+      "division_id": "ocd-division/country:us/state:tx/sldl:118"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Lujan",
+    "image": "https://house.texas.gov/images/members/3145.jpg?v=1",
+    "email": "john.lujan@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1962-06-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:34:27.917074+00:00",
+    "updated_at": "2026-04-04T02:16:16.232833+00:00",
+    "openstates_url": "https://openstates.org/person/john-lujan-7fD4DXiFJC3PWeUJXLYBYM/"
+  },
+  {
+    "id": "ocd-person/f926d7a8-7ec7-4020-9e18-5a475565fd41",
+    "name": "John McQueeney",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:tx/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "McQueeney",
+    "image": "https://www.house.texas.gov/images/members/4665.jpg?v=1",
+    "email": "john.mcqueeney@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1980-04-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:01.146782+00:00",
+    "updated_at": "2026-04-04T02:17:01.821006+00:00",
+    "openstates_url": "https://openstates.org/person/john-mcqueeney-7a8q6hRhWxGOFUd2AOlEgL/"
+  },
+  {
+    "id": "ocd-person/3cac81cd-62ca-41d6-aa4a-8e4156244dec",
+    "name": "John Smithee",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:tx/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Smithee",
+    "image": "https://house.texas.gov/images/members/4530.jpg?v=1",
+    "email": "john.smithee@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1951-09-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:40.675252+00:00",
+    "updated_at": "2026-04-04T02:17:50.543594+00:00",
+    "openstates_url": "https://openstates.org/person/john-smithee-1qUNHdj4WqnuITnhfQoKcu/"
+  },
+  {
+    "id": "ocd-person/ab211984-06a9-447c-9ded-564d200bee60",
+    "name": "Jon Rosenthal",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "135",
+      "division_id": "ocd-division/country:us/state:tx/sldl:135"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Rosenthal",
+    "image": "https://house.texas.gov/images/members/3635.jpg?v=1",
+    "email": "jon.rosenthal@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1963-08-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:25:41.909739+00:00",
+    "updated_at": "2026-01-28T02:23:21.962051+00:00",
+    "openstates_url": "https://openstates.org/person/jon-rosenthal-5CuoUxiZ9N0T1Me6tWdSdM/"
+  },
+  {
+    "id": "ocd-person/1ec50565-379f-4a8b-ab18-c54d31df9929",
+    "name": "Josey Garcia",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "124",
+      "division_id": "ocd-division/country:us/state:tx/sldl:124"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Josey",
+    "family_name": "Garcia",
+    "image": "https://house.texas.gov/images/members/4170.jpg?v=1",
+    "email": "josey.garcia@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:34:04.546624+00:00",
+    "updated_at": "2026-04-25T02:19:40.190702+00:00",
+    "openstates_url": "https://openstates.org/person/josey-garcia-w3o8c9GgUrZJb1VsGBPJ3/"
+  },
+  {
+    "id": "ocd-person/1205faf4-7ced-4d21-aa8c-aad9239e3157",
+    "name": "Katrina Pierson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:tx/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Katrina",
+    "family_name": "Pierson",
+    "image": "https://www.house.texas.gov/images/members/4715.jpg?v=2",
+    "email": "katrina.pierson@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1976-07-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:48.032637+00:00",
+    "updated_at": "2026-04-04T02:16:23.525261+00:00",
+    "openstates_url": "https://openstates.org/person/katrina-pierson-Y0askJEXZOrUBzIooc0Ax/"
+  },
+  {
+    "id": "ocd-person/fe47f6d5-2db3-495b-8da6-5cd12e0dc677",
+    "name": "Keith Bell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:tx/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Bell",
+    "image": "https://house.texas.gov/images/members/3695.jpg?v=1",
+    "email": "keith.bell@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1962-05-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:25:04.222957+00:00",
+    "updated_at": "2026-04-04T02:16:27.635479+00:00",
+    "openstates_url": "https://openstates.org/person/keith-bell-7jowCfvC3RY1uh7O6rf4q7/"
+  },
+  {
+    "id": "ocd-person/d9f32e07-7835-4edf-b986-7a2cf16d608b",
+    "name": "Ken King",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:tx/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "King",
+    "image": "https://house.texas.gov/images/members/2455.jpg?v=1",
+    "email": "ken.king@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1971-12-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:41.727145+00:00",
+    "updated_at": "2026-04-04T02:16:22.094176+00:00",
+    "openstates_url": "https://openstates.org/person/ken-king-6dGT2fPdYpitSJ8uSRYMfb/"
+  },
+  {
+    "id": "ocd-person/2b79c268-eaf3-4915-a0e0-faec03b652d8",
+    "name": "Keresa Richardson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:tx/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Keresa",
+    "family_name": "Richardson",
+    "image": "https://house.texas.gov/images/members/4735.jpg?v=1",
+    "email": "keresa.richardson@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1957-12-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:33.903614+00:00",
+    "updated_at": "2026-04-04T02:16:57.011489+00:00",
+    "openstates_url": "https://openstates.org/person/keresa-richardson-1K2JU2po1vkIOXN1t4RX0C/"
+  },
+  {
+    "id": "ocd-person/2609ba13-abf1-40b5-9f4c-a4c1135e56e2",
+    "name": "Lacey Hull",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "138",
+      "division_id": "ocd-division/country:us/state:tx/sldl:138"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Lacey",
+    "family_name": "Hull",
+    "image": "https://house.texas.gov/images/members/3975.jpg?v=1",
+    "email": "lacey.hull@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1986-08-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:18:23.178914+00:00",
+    "updated_at": "2026-01-28T02:23:04.991210+00:00",
+    "openstates_url": "https://openstates.org/person/lacey-hull-19m9WUYNTAmHtYKajz0Lgo/"
+  },
+  {
+    "id": "ocd-person/9dc31ea5-fd89-4909-a9bf-d732ea02282a",
+    "name": "Lauren Simmons",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "146",
+      "division_id": "ocd-division/country:us/state:tx/sldl:146"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Lauren",
+    "family_name": "Simmons",
+    "image": "https://house.texas.gov/images/members/4765.jpg?v=1",
+    "email": "laurena.simmons@house.texas.gov",
+    "gender": "X",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:28.122693+00:00",
+    "updated_at": "2026-01-28T02:22:34.451895+00:00",
+    "openstates_url": "https://openstates.org/person/lauren-simmons-4ngxqbcEkR6DUKCeWSVcFe/"
+  },
+  {
+    "id": "ocd-person/5d3626bb-c865-4c92-a717-a72036c6ce5a",
+    "name": "Linda Garcia",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "107",
+      "division_id": "ocd-division/country:us/state:tx/sldl:107"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Linda",
+    "family_name": "Garcia",
+    "image": "https://www.house.texas.gov/images/members/4485.jpg?v=3",
+    "email": "linda.garcia@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:47.663192+00:00",
+    "updated_at": "2026-04-04T02:17:21.958475+00:00",
+    "openstates_url": "https://openstates.org/person/linda-garcia-2pt25FcJU1kyW70pnmYHMo/"
+  },
+  {
+    "id": "ocd-person/b91e1420-1732-4063-9f3d-edcc5e71d416",
+    "name": "Liz Campos",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "119",
+      "division_id": "ocd-division/country:us/state:tx/sldl:119"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Liz",
+    "family_name": "Campos",
+    "image": "https://house.texas.gov/images/members/3950.jpg?v=1",
+    "email": "elizabeth.campos@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1969-05-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:18:26.184678+00:00",
+    "updated_at": "2026-04-04T02:17:40.461750+00:00",
+    "openstates_url": "https://openstates.org/person/liz-campos-5dJKEu2wogEl482P0OkWYA/"
+  },
+  {
+    "id": "ocd-person/ab3ddc65-0fb9-476b-993f-b3dc4050127e",
+    "name": "Lulu Flores",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:tx/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Lulu",
+    "family_name": "Flores",
+    "image": "https://house.texas.gov/images/members/4150.jpg?v=1",
+    "email": "lulu.flores@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1955-09-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:34:16.033170+00:00",
+    "updated_at": "2026-04-04T02:17:37.758466+00:00",
+    "openstates_url": "https://openstates.org/person/lulu-flores-5D7xQDNeQ0jzBkA3Ww9bqw/"
+  },
+  {
+    "id": "ocd-person/e2d786e9-5e46-4807-be42-546203016996",
+    "name": "Mando Martinez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:tx/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Mando",
+    "family_name": "Martinez",
+    "image": "https://house.texas.gov/images/members/3780.jpg?v=1",
+    "email": "mando.martinez@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1976-01-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:33.578104+00:00",
+    "updated_at": "2026-04-04T02:16:53.245396+00:00",
+    "openstates_url": "https://openstates.org/person/mando-martinez-6u2lFAvXxONt8F8y4gj7iQ/"
+  },
+  {
+    "id": "ocd-person/a61b0fd1-9fdf-4b4c-abe6-b790cc856023",
+    "name": "Mano DeAyala",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "133",
+      "division_id": "ocd-division/country:us/state:tx/sldl:133"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Mano",
+    "family_name": "DeAyala",
+    "image": "https://house.texas.gov/images/members/4135.jpg?v=1",
+    "email": "mano.deayala@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:33:06.047995+00:00",
+    "updated_at": "2026-02-13T08:08:45.771357+00:00",
+    "openstates_url": "https://openstates.org/person/mano-deayala-53R5ncPQEqLtRhPEWAOt9v/"
+  },
+  {
+    "id": "ocd-person/d34eead2-bd19-49ce-8131-6d314d58e6a1",
+    "name": "Marc LaHood",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "121",
+      "division_id": "ocd-division/country:us/state:tx/sldl:121"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Marc",
+    "family_name": "LaHood",
+    "image": "https://www.house.texas.gov/images/members/4595.jpg?v=1",
+    "email": "marc.lahood@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:32.739309+00:00",
+    "updated_at": "2026-04-04T02:17:27.295752+00:00",
+    "openstates_url": "https://openstates.org/person/marc-lahood-6QjRfXf3dGdQpJOcaCta09/"
+  },
+  {
+    "id": "ocd-person/2c0a4352-9871-4122-97fd-832ec998e907",
+    "name": "Mark Dorazio",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "122",
+      "division_id": "ocd-division/country:us/state:tx/sldl:122"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Dorazio",
+    "image": "https://house.texas.gov/images/members/4145.jpg?v=2",
+    "email": "mark.dorazio@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:32:09.193483+00:00",
+    "updated_at": "2026-04-04T02:17:41.069188+00:00",
+    "openstates_url": "https://openstates.org/person/mark-dorazio-1L6LrK9NbJSoBYF7YlG56F/"
+  },
+  {
+    "id": "ocd-person/26244d6a-f0d5-4dbe-b9ed-a38df74a7bac",
+    "name": "Mary Ann Perez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "144",
+      "division_id": "ocd-division/country:us/state:tx/sldl:144"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Mary Ann",
+    "family_name": "Perez",
+    "image": "https://house.texas.gov/images/members/2535.jpg?v=1",
+    "email": "maryann.perez@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1962-05-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:42.829422+00:00",
+    "updated_at": "2026-01-28T02:22:36.307649+00:00",
+    "openstates_url": "https://openstates.org/person/mary-ann-perez-19yIW6WXMP0a3D8emRv6Vg/"
+  },
+  {
+    "id": "ocd-person/93379bbe-5fb3-400f-853a-d0b3553e7772",
+    "name": "Mary Gonz\u00e1lez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:tx/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Gonz\u00e1lez",
+    "image": "https://house.texas.gov/images/members/2410.jpg?v=1",
+    "email": "mary.gonzalez@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1983-10-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:42.910520+00:00",
+    "updated_at": "2026-04-04T02:17:48.504103+00:00",
+    "openstates_url": "https://openstates.org/person/mary-gonzalez-4TnHgAl7QCLnDENiZr2kp0/"
+  },
+  {
+    "id": "ocd-person/07951419-b5d5-430b-a3e6-678e1d4aec21",
+    "name": "Matt Morgan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:tx/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Morgan",
+    "image": "https://www.house.texas.gov/images/members/4675.jpg?v=1",
+    "email": "matt.morgan@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1979-03-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:07.951381+00:00",
+    "updated_at": "2026-04-04T02:17:38.907474+00:00",
+    "openstates_url": "https://openstates.org/person/matt-morgan-EJ4fgoHz1FKXIU9DMXzTl/"
+  },
+  {
+    "id": "ocd-person/71555c46-28b0-4887-98a1-997dc7482e75",
+    "name": "Matt Shaheen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:tx/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Shaheen",
+    "image": "https://house.texas.gov/images/members/2995.jpg?v=1",
+    "email": "matt.shaheen@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1965-06-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:43.231439+00:00",
+    "updated_at": "2026-04-04T02:16:49.646043+00:00",
+    "openstates_url": "https://openstates.org/person/matt-shaheen-3Rr8qqyoXWpXLLm1Lfo5FV/"
+  },
+  {
+    "id": "ocd-person/b69579f7-74de-4a71-86ba-033264cc5bc7",
+    "name": "Mihaela Ple\u0219a",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:tx/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Mihaela",
+    "family_name": "Ple\u0219a",
+    "image": "https://house.texas.gov/images/members/4345.jpg?v=1",
+    "email": "mihaela.plesa@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1983-07-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:31:31.125901+00:00",
+    "updated_at": "2026-04-04T02:17:22.872788+00:00",
+    "openstates_url": "https://openstates.org/person/mihaela-plesa-5YWuh4kGYVb16uIW0nJbNf/"
+  },
+  {
+    "id": "ocd-person/4b70019b-d7c1-4414-bcb1-7bf917081ed5",
+    "name": "Mike Olcott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:tx/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Olcott",
+    "image": "https://www.house.texas.gov/images/members/4705.jpg?v=1",
+    "email": "mike.olcott@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:39.632577+00:00",
+    "updated_at": "2026-04-04T02:16:05.604935+00:00",
+    "openstates_url": "https://openstates.org/person/mike-olcott-2ILbukr4JhmY9RMBbO2113/"
+  },
+  {
+    "id": "ocd-person/df010291-7350-4262-9220-4c576730b2db",
+    "name": "Mike Schofield",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "132",
+      "division_id": "ocd-division/country:us/state:tx/sldl:132"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Schofield",
+    "image": "https://house.texas.gov/images/members/3095.jpg?v=1",
+    "email": "mike.schofield@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1964-06-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:18:23.629642+00:00",
+    "updated_at": "2026-01-28T02:23:18.784521+00:00",
+    "openstates_url": "https://openstates.org/person/mike-schofield-6mnkWw5iZGBI6a8ldg9mvL/"
+  },
+  {
+    "id": "ocd-person/96dfe856-d5b0-4f7a-86f6-06c2175a4d4a",
+    "name": "Mitch Little",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:tx/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Mitch",
+    "family_name": "Little",
+    "image": "https://house.texas.gov/images/members/4615.jpg?v=1",
+    "email": "mitch.little@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:03.581348+00:00",
+    "updated_at": "2026-01-28T02:22:38.452467+00:00",
+    "openstates_url": "https://openstates.org/person/mitch-little-4ahAr4DtL9Yhh0u2okGfT0/"
+  },
+  {
+    "id": "ocd-person/2639e096-d327-4c4d-823f-759b1ce373e0",
+    "name": "Morgan Meyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "108",
+      "division_id": "ocd-division/country:us/state:tx/sldl:108"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Morgan",
+    "family_name": "Meyer",
+    "image": "https://house.texas.gov/images/members/3075.jpg?v=1",
+    "email": "morgan.meyer@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1974-08-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:43.470616+00:00",
+    "updated_at": "2026-04-04T02:17:10.000123+00:00",
+    "openstates_url": "https://openstates.org/person/morgan-meyer-1A89ozOBqVfynQWDdWVvEm/"
+  },
+  {
+    "id": "ocd-person/c6308fcd-b1e1-4ce3-9a29-c05e420e8012",
+    "name": "Nate Schatzline",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:tx/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Nate",
+    "family_name": "Schatzline",
+    "image": "https://house.texas.gov/images/members/4355.jpg?v=1",
+    "email": "nate.schatzline@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1991-11-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:35:09.484862+00:00",
+    "updated_at": "2026-04-04T02:16:10.224506+00:00",
+    "openstates_url": "https://openstates.org/person/nate-schatzline-61yfkzyvQayyQEIQ06QgHy/"
+  },
+  {
+    "id": "ocd-person/ea169f77-0bd8-4ca0-ac59-f894c9a09e71",
+    "name": "Nicole Collier",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:tx/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Nicole",
+    "family_name": "Collier",
+    "image": "https://house.texas.gov/images/members/2360.jpg?v=1",
+    "email": "nicole.collier@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1972-09-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:43.547196+00:00",
+    "updated_at": "2026-04-04T02:17:32.432522+00:00",
+    "openstates_url": "https://openstates.org/person/nicole-collier-77iXg734BVMNkU41fjyi6z/"
+  },
+  {
+    "id": "ocd-person/896e8f9c-7dca-4f7d-8554-c0324cfa7265",
+    "name": "Oscar Longoria",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:tx/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Oscar",
+    "family_name": "Longoria",
+    "image": "https://house.texas.gov/images/members/2485.jpg?v=1",
+    "email": "oscar.longoria@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1981-10-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:43.628890+00:00",
+    "updated_at": "2026-04-04T02:17:25.278071+00:00",
+    "openstates_url": "https://openstates.org/person/oscar-longoria-4BKTT4xorYeYr1wMkxyKxx/"
+  },
+  {
+    "id": "ocd-person/0e79cc57-2894-432e-9aca-505a41d4de2c",
+    "name": "Pat Curry",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:tx/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Pat",
+    "family_name": "Curry",
+    "image": "https://house.texas.gov/images/members/4415.jpg?v=2",
+    "email": "pat.curry@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:27:01.058844+00:00",
+    "updated_at": "2026-04-04T02:17:36.959417+00:00",
+    "openstates_url": "https://openstates.org/person/pat-curry-RJYNXyzUoScKiwN9wdUqK/"
+  },
+  {
+    "id": "ocd-person/89b43853-82e0-434c-9946-4fd9057e1842",
+    "name": "Paul Dyson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:tx/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Dyson",
+    "image": "https://www.house.texas.gov/images/members/4475.jpg?v=1",
+    "email": "paul.dyson@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:43.151255+00:00",
+    "updated_at": "2026-04-04T02:17:29.738627+00:00",
+    "openstates_url": "https://openstates.org/person/paul-dyson-4BqJC1DOSmg7EM24sgGAa2/"
+  },
+  {
+    "id": "ocd-person/51a281ff-2983-4b4b-baf4-63ee17812835",
+    "name": "Penny Morales Shaw",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "148",
+      "division_id": "ocd-division/country:us/state:tx/sldl:148"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Penny",
+    "family_name": "Morales Shaw",
+    "image": "https://house.texas.gov/images/members/4035.jpg?v=1",
+    "email": "penny.moralesshaw@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1966-03-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:18:22.564524+00:00",
+    "updated_at": "2026-01-28T02:23:06.092177+00:00",
+    "openstates_url": "https://openstates.org/person/penny-morales-shaw-2U2dyRsG0IIIuugOuXoZ8v/"
+  },
+  {
+    "id": "ocd-person/12d67093-ab4c-425d-afa3-e5777db09d1c",
+    "name": "Philip Cortez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "117",
+      "division_id": "ocd-division/country:us/state:tx/sldl:117"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Philip",
+    "family_name": "Cortez",
+    "image": "https://house.texas.gov/images/members/2365.jpg?v=2",
+    "email": "philip.cortez@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1978-07-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:44.200137+00:00",
+    "updated_at": "2026-04-04T02:16:57.619749+00:00",
+    "openstates_url": "https://openstates.org/person/philip-cortez-ZXrOAeO9EGsnJ7yhj5IfU/"
+  },
+  {
+    "id": "ocd-person/f72eb41b-2ff9-434f-96cf-75b9724289ab",
+    "name": "Rafael Anch\u00eda",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "103",
+      "division_id": "ocd-division/country:us/state:tx/sldl:103"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Rafael",
+    "family_name": "Anch\u00eda",
+    "image": "https://house.texas.gov/images/members/2150.jpg",
+    "email": "rafael.anchia@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1968-09-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:44.374471+00:00",
+    "updated_at": "2026-04-04T02:17:16.364600+00:00",
+    "openstates_url": "https://openstates.org/person/rafael-anchia-7WQRnQhrrm4ND0zRGiWLHv/"
+  },
+  {
+    "id": "ocd-person/c0fc4283-3ed5-4165-a066-80de16f492b7",
+    "name": "Ramon Romero",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:tx/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Ramon",
+    "family_name": "Romero",
+    "image": "https://house.texas.gov/images/members/3060.jpg?v=1",
+    "email": "ramon.romero@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1975-07-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:44.454932+00:00",
+    "updated_at": "2026-04-04T02:16:50.449911+00:00",
+    "openstates_url": "https://openstates.org/person/ramon-romero-5s9oD1Li7RkEVU6A9BHOJr/"
+  },
+  {
+    "id": "ocd-person/01ce2f6b-0500-4baa-a47f-386f9c6286b0",
+    "name": "Ray Lopez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "125",
+      "division_id": "ocd-division/country:us/state:tx/sldl:125"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Ray",
+    "family_name": "Lopez",
+    "image": "https://house.texas.gov/images/members/3915.jpg?v=1",
+    "email": "ray.lopez@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1949-12-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-12-05T18:14:57.016337+00:00",
+    "updated_at": "2026-01-28T02:22:10.308905+00:00",
+    "openstates_url": "https://openstates.org/person/ray-lopez-3PDakmbke2qGFj9NugaP2/"
+  },
+  {
+    "id": "ocd-person/69ef7d69-9a5e-42be-b463-8873cb52ad10",
+    "name": "Rhetta Bowers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "113",
+      "division_id": "ocd-division/country:us/state:tx/sldl:113"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Rhetta",
+    "family_name": "Bowers",
+    "image": "https://house.texas.gov/images/members/3565.jpg?v=1",
+    "email": "rhetta.bowers@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1967-07-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:27:14.662008+00:00",
+    "updated_at": "2026-04-04T02:17:19.657456+00:00",
+    "openstates_url": "https://openstates.org/person/rhetta-bowers-3Dtdm0HORr0z2lEDI19v5k/"
+  },
+  {
+    "id": "ocd-person/f8e0a89e-889a-4fcf-8a0a-1e0e091d89d0",
+    "name": "Richard Hayes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:tx/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Hayes",
+    "image": "https://house.texas.gov/images/members/4165.jpg?v=1",
+    "email": "richard.hayes@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:32:59.170752+00:00",
+    "updated_at": "2026-04-04T02:17:31.149173+00:00",
+    "openstates_url": "https://openstates.org/person/richard-hayes-7ZclW0Wm0f4rjUhsqeHops/"
+  },
+  {
+    "id": "ocd-person/d4a94a68-02a7-44c0-901f-9cd57350229a",
+    "name": "Richard Raymond",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:tx/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Raymond",
+    "image": "https://house.texas.gov/images/members/4215.jpg?v=1",
+    "email": "richard.raymond@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1960-10-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:44.626914+00:00",
+    "updated_at": "2026-04-04T02:17:06.963506+00:00",
+    "openstates_url": "https://openstates.org/person/richard-raymond-6THjq7ClM4NWuyyZZA8sbC/"
+  },
+  {
+    "id": "ocd-person/72bad853-b403-49c2-9a99-32c5fb3222c7",
+    "name": "Ron Reynolds",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:tx/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Reynolds",
+    "image": "https://house.texas.gov/images/members/2040.jpg?v=1",
+    "email": "ron.reynolds@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1973-09-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:45.104191+00:00",
+    "updated_at": "2026-04-04T02:16:38.396774+00:00",
+    "openstates_url": "https://openstates.org/person/ron-reynolds-3UUVqdK1RyeuylIhwkavF1/"
+  },
+  {
+    "id": "ocd-person/f0ede995-2253-4f7b-a922-6da34e4de194",
+    "name": "Ryan Guillen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:tx/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Guillen",
+    "image": "https://house.texas.gov/images/members/3045.jpg?v=1",
+    "email": "ryan.guillen@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1977-10-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:45.350691+00:00",
+    "updated_at": "2026-04-04T02:17:42.726012+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-guillen-7Kcsr1ZDYt5ljegIugHxno/"
+  },
+  {
+    "id": "ocd-person/4fb2e1fd-fbb3-4a55-8417-761da2f6048e",
+    "name": "Salman Bhojani",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:tx/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Salman",
+    "family_name": "Bhojani",
+    "image": "https://house.texas.gov/images/members/4115.jpg?v=1",
+    "email": "salman.bhojani@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1980-02-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:33:41.803236+00:00",
+    "updated_at": "2026-04-04T02:16:06.266870+00:00",
+    "openstates_url": "https://openstates.org/person/salman-bhojani-2QO8ta5ILYJnOLLKfJTgHW/"
+  },
+  {
+    "id": "ocd-person/2db06a9d-ae17-4881-98b4-5172fdfca19f",
+    "name": "Sam Harless",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "126",
+      "division_id": "ocd-division/country:us/state:tx/sldl:126"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Harless",
+    "image": "https://house.texas.gov/images/members/3775.jpg?v=1",
+    "email": "sam.harless@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1962-07-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:24:31.413273+00:00",
+    "updated_at": "2026-01-28T02:23:22.396221+00:00",
+    "openstates_url": "https://openstates.org/person/sam-harless-1ODHBoDFtcSyF12gCDRWsJ/"
+  },
+  {
+    "id": "ocd-person/ace50d18-fc98-4460-9d90-928c0e88c79a",
+    "name": "Senfronia Thompson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "141",
+      "division_id": "ocd-division/country:us/state:tx/sldl:141"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Senfronia",
+    "family_name": "Thompson",
+    "image": "https://house.texas.gov/images/members/4630.jpg?v=1",
+    "email": "senfronia.thompson@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1939-01-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:45.681783+00:00",
+    "updated_at": "2026-02-13T08:07:44.400209+00:00",
+    "openstates_url": "https://openstates.org/person/senfronia-thompson-5GFM7yxyoshrUHoeWNu1j0/"
+  },
+  {
+    "id": "ocd-person/b7c4e0e7-4949-4dff-bc4c-fdaaada3f37d",
+    "name": "Sergio Mu\u00f1oz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:tx/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Sergio",
+    "family_name": "Mu\u00f1oz",
+    "image": "https://house.texas.gov/images/members/2060.jpg?v=1",
+    "email": "sergio.munoz@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1982-03-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:45.779504+00:00",
+    "updated_at": "2026-04-04T02:16:24.927583+00:00",
+    "openstates_url": "https://openstates.org/person/sergio-munoz-5alZJSLjLtwUQoZ4ePQeEv/"
+  },
+  {
+    "id": "ocd-person/ddebb940-33f9-4b5c-a8fa-e22c63a594e9",
+    "name": "Shelby Slawson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:tx/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Shelby",
+    "family_name": "Slawson",
+    "image": "https://house.texas.gov/images/members/4055.jpg?v=2",
+    "email": "shelby.slawson@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1977-05-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:18:27.582062+00:00",
+    "updated_at": "2026-04-04T02:17:18.356930+00:00",
+    "openstates_url": "https://openstates.org/person/shelby-slawson-6kl1sLPi9gN22KF7vUCdyb/"
+  },
+  {
+    "id": "ocd-person/89e814c4-6091-4156-b3b5-42a7980f8b4d",
+    "name": "Shelley Luther",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:tx/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Shelley",
+    "family_name": "Luther",
+    "image": "https://www.house.texas.gov/images/members/4645.jpg?v=1",
+    "email": "shelley.luther@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1973-05-10",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:44.546856+00:00",
+    "updated_at": "2026-04-04T02:16:11.909335+00:00",
+    "openstates_url": "https://openstates.org/person/shelley-luther-4CE0d4s4hacV6LFPf6T8fd/"
+  },
+  {
+    "id": "ocd-person/97805dd7-1f42-482c-bac3-049dfccda311",
+    "name": "Sheryl Cole",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:tx/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Sheryl",
+    "family_name": "Cole",
+    "image": "https://house.texas.gov/images/members/3625.jpg?v=2",
+    "email": "sheryl.cole@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1964-08-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:25:36.246257+00:00",
+    "updated_at": "2026-04-04T02:17:21.404600+00:00",
+    "openstates_url": "https://openstates.org/person/sheryl-cole-4bsVJRbKhSVIJzr7tYXRPV/"
+  },
+  {
+    "id": "ocd-person/97fc1e34-35fb-470f-a098-4ba8f0c3c8d4",
+    "name": "Stan Gerdes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:tx/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Stan",
+    "family_name": "Gerdes",
+    "image": "https://house.texas.gov/images/members/4195.jpg?v=1",
+    "email": "stan.gerdes@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1986-01-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:32:27.929709+00:00",
+    "updated_at": "2026-04-04T02:17:25.912316+00:00",
+    "openstates_url": "https://openstates.org/person/stan-gerdes-4cn3hA6qIM3NQCGwWAc97E/"
+  },
+  {
+    "id": "ocd-person/2662f888-95e0-4de3-be5b-3d023623c447",
+    "name": "Stan Kitzman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:tx/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Stan",
+    "family_name": "Kitzman",
+    "image": "https://house.texas.gov/images/members/4280.jpg?v=1",
+    "email": "stan.kitzman@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1965-10-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:33:53.848924+00:00",
+    "updated_at": "2026-04-04T02:17:38.360628+00:00",
+    "openstates_url": "https://openstates.org/person/stan-kitzman-1AQwAWpq7Ot9g0Iofnyb4h/"
+  },
+  {
+    "id": "ocd-person/a4e4115b-d488-4e93-8354-80e361c0c260",
+    "name": "Stan Lambert",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:tx/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Stan",
+    "family_name": "Lambert",
+    "image": "https://house.texas.gov/images/members/3225.jpg?v=1",
+    "email": "stan.lambert@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1952-12-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:45.946633+00:00",
+    "updated_at": "2026-04-04T02:16:20.414633+00:00",
+    "openstates_url": "https://openstates.org/person/stan-lambert-518y4TDpzStPupIFO389Im/"
+  },
+  {
+    "id": "ocd-person/6c80914d-b07b-4d27-95e2-0e5aa2b0c7d9",
+    "name": "Steve Toth",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:tx/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Toth",
+    "image": "https://house.texas.gov/images/members/2825.jpg?v=1",
+    "email": "steve.toth@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1960-11-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:26:07.471465+00:00",
+    "updated_at": "2026-04-04T02:16:52.419016+00:00",
+    "openstates_url": "https://openstates.org/person/steve-toth-3IjvSsdi2tdYfcR8klh7cn/"
+  },
+  {
+    "id": "ocd-person/51927936-c6fc-453b-8afd-5f0b53de7d46",
+    "name": "Suleman Lalani",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:tx/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Suleman",
+    "family_name": "Lalani",
+    "image": "https://house.texas.gov/images/members/4285.jpg?v=1",
+    "email": "suleman.lalani@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1967-07-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:32:32.081392+00:00",
+    "updated_at": "2026-04-04T02:16:55.821541+00:00",
+    "openstates_url": "https://openstates.org/person/suleman-lalani-2TvJem0j8KNSWruQjz5xSA/"
+  },
+  {
+    "id": "ocd-person/cee6cb7a-8d88-4c34-be27-dd10d1f31768",
+    "name": "Terri Leo-Wilson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:tx/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Terri",
+    "family_name": "Leo-Wilson",
+    "image": "https://house.texas.gov/images/members/4290.jpg?v=1",
+    "email": "terri.leo-wilson@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1960-01-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:31:27.145243+00:00",
+    "updated_at": "2026-04-04T02:17:45.545812+00:00",
+    "openstates_url": "https://openstates.org/person/terri-leo-wilson-6IPtMHxpr1eXiw8p82O7bs/"
+  },
+  {
+    "id": "ocd-person/3e4ae7d4-dbb2-4991-8b44-8ada6023d7da",
+    "name": "Terry Canales",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:tx/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Canales",
+    "image": "https://house.texas.gov/images/members/2340.jpg",
+    "email": "terry.canales@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1979-01-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:46.265338+00:00",
+    "updated_at": "2026-04-04T02:17:14.905746+00:00",
+    "openstates_url": "https://openstates.org/person/terry-canales-1tXksvPlOeOnYzwnDf3urC/"
+  },
+  {
+    "id": "ocd-person/bdecc388-4028-48e2-b211-75c59c1c5ec2",
+    "name": "Terry Meza",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "105",
+      "division_id": "ocd-division/country:us/state:tx/sldl:105"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Meza",
+    "image": "https://house.texas.gov/images/members/3455.jpg?v=1",
+    "email": "terry.meza@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1949-08-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:27:09.570970+00:00",
+    "updated_at": "2026-04-04T02:17:12.500404+00:00",
+    "openstates_url": "https://openstates.org/person/terry-meza-5mNkZS63TehaCACWpBaLwo/"
+  },
+  {
+    "id": "ocd-person/ec19bc97-3146-4100-8294-329b88aec0e8",
+    "name": "Terry Wilson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:tx/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Wilson",
+    "image": "https://house.texas.gov/images/members/3525.jpg?v=1",
+    "email": "terry.wilson@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1964-08-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:46.348617+00:00",
+    "updated_at": "2026-04-04T02:17:13.535462+00:00",
+    "openstates_url": "https://openstates.org/person/terry-wilson-7BVwx7qkzBjc3QW9GRLS0m/"
+  },
+  {
+    "id": "ocd-person/9447575b-d8a1-45dd-bd68-77b12fe347ab",
+    "name": "Todd Hunter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:tx/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Hunter",
+    "image": "https://house.texas.gov/images/members/3365.jpg?v=1",
+    "email": "todd.hunter@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1953-08-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:46.422872+00:00",
+    "updated_at": "2026-04-04T02:16:31.218848+00:00",
+    "openstates_url": "https://openstates.org/person/todd-hunter-4VnSyoez0J0shGNvdmMiBX/"
+  },
+  {
+    "id": "ocd-person/d4d5c127-1ef6-445d-a89b-d9f02c812365",
+    "name": "Tom Craddick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:tx/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Craddick",
+    "image": "https://house.texas.gov/images/members/2610.jpg?v=1",
+    "email": "tom.craddick@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1943-09-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:46.503627+00:00",
+    "updated_at": "2026-04-04T02:16:34.020366+00:00",
+    "openstates_url": "https://openstates.org/person/tom-craddick-6Tc3gLCFDTTU54frcS5K21/"
+  },
+  {
+    "id": "ocd-person/79ffab1c-4d79-4cfa-89b4-5f7ee95ca1bf",
+    "name": "Tom Oliverson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "130",
+      "division_id": "ocd-division/country:us/state:tx/sldl:130"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Oliverson",
+    "image": "https://house.texas.gov/images/members/3535.jpg?v=1",
+    "email": "tom.oliverson@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1972-06-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:46.590352+00:00",
+    "updated_at": "2026-02-13T08:08:13.125527+00:00",
+    "openstates_url": "https://openstates.org/person/tom-oliverson-3iCuZ4nNbLLJmcNwsX1UGV/"
+  },
+  {
+    "id": "ocd-person/0acfbb85-b501-45ce-9a9b-90537090a455",
+    "name": "Toni Rose",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "110",
+      "division_id": "ocd-division/country:us/state:tx/sldl:110"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Toni",
+    "family_name": "Rose",
+    "image": "https://house.texas.gov/images/members/2555.jpg?v=3",
+    "email": "toni.rose@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1968-02-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:46.744861+00:00",
+    "updated_at": "2026-04-04T02:16:26.162003+00:00",
+    "openstates_url": "https://openstates.org/person/toni-rose-KOr9QdcLCW03MSOSgdu2H/"
+  },
+  {
+    "id": "ocd-person/1ca78d00-1ede-4486-b14e-16bd81ba73e4",
+    "name": "Tony Tinderholt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:tx/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Tinderholt",
+    "image": "https://house.texas.gov/images/members/3065.jpg?v=1",
+    "email": "tony.tinderholt@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1970-08-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:46.909129+00:00",
+    "updated_at": "2026-04-04T02:17:03.161107+00:00",
+    "openstates_url": "https://openstates.org/person/tony-tinderholt-s4M4lEvi5eIA8e7MOjb9A/"
+  },
+  {
+    "id": "ocd-person/68f05872-16c8-4d3a-ab5f-ea667ca52b27",
+    "name": "Trent Ashby",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:tx/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Trent",
+    "family_name": "Ashby",
+    "image": "https://house.texas.gov/images/members/2330.jpg?v=1",
+    "email": "trent.ashby@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1972-10-09",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:47.143153+00:00",
+    "updated_at": "2026-04-04T02:16:30.432545+00:00",
+    "openstates_url": "https://openstates.org/person/trent-ashby-3C12UXTyGDcQY96cHRkQsB/"
+  },
+  {
+    "id": "ocd-person/07f5e898-8d5d-435a-bf97-7bfb26fce5ac",
+    "name": "Trey Martinez Fischer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "116",
+      "division_id": "ocd-division/country:us/state:tx/sldl:116"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Trey",
+    "family_name": "Martinez Fischer",
+    "image": "https://house.texas.gov/images/members/2835.jpg?v=1",
+    "email": "trey.martinezfischer@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1970-06-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:24:39.789857+00:00",
+    "updated_at": "2026-04-04T02:16:54.036720+00:00",
+    "openstates_url": "https://openstates.org/person/trey-martinez-fischer-F1KGJ53zMGeG2GeS2KhGW/"
+  },
+  {
+    "id": "ocd-person/afd236d4-4266-4777-8d3d-be7616a7e43f",
+    "name": "Trey Wharton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:tx/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Trey",
+    "family_name": "Wharton",
+    "image": "https://house.texas.gov/images/members/4795.jpg?v=1",
+    "email": "trey.wharton@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1966-12-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:37.651824+00:00",
+    "updated_at": "2026-04-04T02:16:46.502968+00:00",
+    "openstates_url": "https://openstates.org/person/trey-wharton-5LliyJvA3scedBmmPbeLOh/"
+  },
+  {
+    "id": "ocd-person/7298c6a9-c6be-41cd-a2ba-0cc79c851373",
+    "name": "Valoree Swanson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "150",
+      "division_id": "ocd-division/country:us/state:tx/sldl:150"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Valoree",
+    "family_name": "Swanson",
+    "image": "https://house.texas.gov/images/members/3425.jpg?v=1",
+    "email": "valoree.swanson@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1957-09-22",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:47.220305+00:00",
+    "updated_at": "2026-01-28T02:22:17.229582+00:00",
+    "openstates_url": "https://openstates.org/person/valoree-swanson-3UEwXBNvxX52ng4vvI2gJ1/"
+  },
+  {
+    "id": "ocd-person/6b2d7f89-d7e0-44d1-b861-3167915f6925",
+    "name": "Venton Jones",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:tx/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Venton",
+    "family_name": "Jones",
+    "image": "https://house.texas.gov/images/members/4275.jpg?v=1",
+    "email": "venton.jones@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1984-01-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-02-14T05:32:50.042744+00:00",
+    "updated_at": "2026-04-04T02:16:47.232670+00:00",
+    "openstates_url": "https://openstates.org/person/venton-jones-3GEyFIV4XezENn2p26LU61/"
+  },
+  {
+    "id": "ocd-person/25157308-7474-4600-8b83-173d79e16a21",
+    "name": "Vikki Goodwin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:tx/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Vikki",
+    "family_name": "Goodwin",
+    "image": "https://house.texas.gov/images/members/3820.jpg?v=1",
+    "email": "vikki.goodwin@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1967-05-18",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-18T04:26:46.424093+00:00",
+    "updated_at": "2026-04-04T02:16:39.527647+00:00",
+    "openstates_url": "https://openstates.org/person/vikki-goodwin-17yW91mdXe0FDToVk9ZTPd/"
+  },
+  {
+    "id": "ocd-person/5236ee6e-a57c-4d81-90b4-50a9abde8e5e",
+    "name": "Vince Perez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:tx/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Vince",
+    "family_name": "Perez",
+    "image": "https://www.house.texas.gov/images/members/4710.jpg?v=1",
+    "email": "vincent.perez@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:03:47.263589+00:00",
+    "updated_at": "2026-04-04T02:16:35.670720+00:00",
+    "openstates_url": "https://openstates.org/person/vince-perez-2V8TQ3pvHhWXav1EHIKg5W/"
+  },
+  {
+    "id": "ocd-person/436ab2a5-12ca-4a9c-b8ec-73b1bae4ee68",
+    "name": "Wes Virdell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:tx/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Wes",
+    "family_name": "Virdell",
+    "image": "https://www.house.texas.gov/images/members/4775.jpg?v=1",
+    "email": "wes.virdell@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-14T19:04:12.967289+00:00",
+    "updated_at": "2026-04-04T02:17:35.406139+00:00",
+    "openstates_url": "https://openstates.org/person/wes-virdell-23DFJHt0Ct2I1zvvCLF4cC/"
+  },
+  {
+    "id": "ocd-person/e7a379ec-9de2-48a2-918b-5ba58e1fd3f3",
+    "name": "Will Metcalf",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:tx/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Metcalf",
+    "image": "https://house.texas.gov/images/members/2900.jpg?v=1",
+    "email": "will.metcalf@house.texas.gov",
+    "gender": "Male",
+    "birth_date": "1984-06-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:47.534419+00:00",
+    "updated_at": "2026-04-04T02:16:41.709509+00:00",
+    "openstates_url": "https://openstates.org/person/will-metcalf-735w3VXAQCroon8iBUHEyx/"
+  },
+  {
+    "id": "ocd-person/3f38bf62-86ba-4833-9737-2e084ae6255d",
+    "name": "Yvonne Davis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "111",
+      "division_id": "ocd-division/country:us/state:tx/sldl:111"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:tx/government",
+      "name": "Texas",
+      "classification": "state"
+    },
+    "given_name": "Yvonne",
+    "family_name": "Davis",
+    "image": "https://cdn.ballotpedia.org/images/thumb/0/06/Yvonne_Davis.jpg/200px-Yvonne_Davis.jpg",
+    "email": "yvonne.davis@house.texas.gov",
+    "gender": "Female",
+    "birth_date": "1955-02-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:12:47.616494+00:00",
+    "updated_at": "2026-04-04T02:17:53.369804+00:00",
+    "openstates_url": "https://openstates.org/person/yvonne-davis-1vIRv2wfbrh34TX9VEAvnh/"
+  }
+]

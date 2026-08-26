@@ -8,7 +8,9 @@ import type { RaceForecast } from "@/data/forecastData";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { getLandMaskFips, StateLandMask, StateLandMaskDefinition } from "./StateLandMask";
 
-const DISTRICTS_URL = "/congressional-districts-2026.json";
+// Per-state TopoJSON, split from public/congressional-districts-2026.json by
+// scripts/split-national-maps.mjs.
+const districtsUrl = (stateAbbr: string) => `/state-congressional-districts-2026/${stateAbbr}.json`;
 
 type DistrictGeometry = {
   rsmKey: string;
@@ -194,7 +196,7 @@ export default function StateDistrictMap({
           {landMaskFips && <StateLandMaskDefinition stateFips={landMaskFips} />}
           <ZoomableGroup key={mapKey} onMoveEnd={() => setViewChanged(true)}>
           <StateLandMask stateFips={landMaskFips}>
-          <Geographies geography={DISTRICTS_URL}>
+          <Geographies geography={districtsUrl(stateAbbr)}>
             {({ geographies }: { geographies: DistrictGeometry[] }) =>
               geographies.map((geo) => {
                 const geoId = geo.properties?.GEOID as string | undefined;

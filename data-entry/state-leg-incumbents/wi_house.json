@@ -1,0 +1,3166 @@
+[
+  {
+    "id": "ocd-person/22d8a510-3b36-432a-9d3d-08efe7e74d5e",
+    "name": "Adam Neylon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:wi/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Neylon",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2492.jpg",
+    "email": "rep.neylon@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1984-12-30",
+    "death_date": "",
+    "extras": {
+      "staff1": "Dillon McGee",
+      "staff2": "Joe Zapf",
+      "website": "http://legis.wisconsin.gov/assembly/98/neylon",
+      "extra phone": "(888) 534-0098",
+      "staff_email1": "Dillon.McGee@legis.wisconsin.gov",
+      "staff_email2": "Joe.Zapf@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:06.512568+00:00",
+    "updated_at": "2026-01-28T02:48:33.691364+00:00",
+    "openstates_url": "https://openstates.org/person/adam-neylon-13kkFqZ6i5Dx1YZWltoq0E/"
+  },
+  {
+    "id": "ocd-person/c4afc94c-3bad-4e77-9f81-de613c406860",
+    "name": "Alex Dallman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:wi/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Dallman",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2459.jpg",
+    "email": "rep.dallman@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1992-05-22",
+    "death_date": "",
+    "extras": {
+      "staff1": "Ryan Ring",
+      "staff2": "Cassidy Sommer",
+      "website": "https://legis.wisconsin.gov/assembly/41/dallman",
+      "extra phone": "(888) 534-0041",
+      "staff_email1": "Ryan.Ring@legis.wisconsin.gov",
+      "staff_email2": "Cassidy.Sommer@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:15.381225+00:00",
+    "updated_at": "2026-01-28T02:47:36.244100+00:00",
+    "openstates_url": "https://openstates.org/person/alex-dallman-5z8pV3zbEdgYbkELHD31lY/"
+  },
+  {
+    "id": "ocd-person/1638f0f9-1d5a-4790-aee2-63cad736b137",
+    "name": "Alex Joers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:wi/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Joers",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2553.jpg",
+    "email": "rep.joers@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1992-08-27",
+    "death_date": "",
+    "extras": {
+      "staff1": "Sophie Coronelli",
+      "website": "https://legis.wisconsin.gov/assembly/79/joers",
+      "extra phone": "(888) 534-0079",
+      "staff_email1": "Sophie.Coronelli@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T07:00:34.718792+00:00",
+    "updated_at": "2025-07-17T08:51:28.872306+00:00",
+    "openstates_url": "https://openstates.org/person/alex-joers-fvqucu9rcrhGi0j0kU5zj/"
+  },
+  {
+    "id": "ocd-person/998f8ecc-8772-44f4-a81d-622f567c0142",
+    "name": "Amaad Rivera-Wagner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:wi/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Amaad",
+    "family_name": "Rivera-Wagner",
+    "image": "https://images.squarespace-cdn.com/content/v1/66195445b4b9aa03925c9d90/46c6514c-c52c-4199-b161-75528cc53721/Amaad+2024-2.jpg",
+    "email": "rep.riverawagner@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1981-12-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:23.629173+00:00",
+    "updated_at": "2026-01-28T02:48:21.827650+00:00",
+    "openstates_url": "https://openstates.org/person/amaad-rivera-wagner-4flQn6r8y5dvIX99c3QNZC/"
+  },
+  {
+    "id": "ocd-person/5c70d5df-b7a6-471c-a766-05816ee009a5",
+    "name": "Amanda Nedweski",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:wi/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Amanda",
+    "family_name": "Nedweski",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2551.jpg",
+    "email": "rep.nedweski@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "staff1": "Nathan Cobb",
+      "website": "https://legis.wisconsin.gov/assembly/61/Nedweski",
+      "extra phone": "(888) 529-0061",
+      "staff_email1": "Nathan.Cobb@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T06:59:42.817645+00:00",
+    "updated_at": "2026-01-28T02:48:22.563058+00:00",
+    "openstates_url": "https://openstates.org/person/amanda-nedweski-2oQrJw5c3Hx4snXwlTqGGr/"
+  },
+  {
+    "id": "ocd-person/9dc4ee36-43d6-4392-b0f8-2d6b7d4121f3",
+    "name": "Andrew Hysell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:wi/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Hysell",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ahysell2.jpg",
+    "email": "rep.hysell@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1971-08-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:11:42.808326+00:00",
+    "updated_at": "2026-01-28T02:47:34.781524+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-hysell-4nhn9eY7K4yY1YfE4YeApH/"
+  },
+  {
+    "id": "ocd-person/68856392-7181-4a63-bcc0-2c414a67045e",
+    "name": "Angela Stroud",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:wi/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Angela",
+    "family_name": "Stroud",
+    "image": "https://www.northland.edu/wp-content/uploads/2015/08/AngelaStroud-800x800.jpg",
+    "email": "rep.stroud@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:46.013708+00:00",
+    "updated_at": "2026-01-28T02:48:37.636038+00:00",
+    "openstates_url": "https://openstates.org/person/angela-stroud-3BE9ybnlqMwYpdko2x8prC/"
+  },
+  {
+    "id": "ocd-person/e47f88fc-e402-4b8d-a253-ee77ea95847d",
+    "name": "Angelina Cruz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:wi/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Angelina",
+    "family_name": "Cruz",
+    "image": "https://victoryfund.org/wp-content/uploads/2024/06/AC-headshot-scaled-e1719503338133-500x500-250x250.jpeg",
+    "email": "rep.cruz@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1979-05-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:11:56.756862+00:00",
+    "updated_at": "2026-01-28T02:47:19.009705+00:00",
+    "openstates_url": "https://openstates.org/person/angelina-cruz-6xAX7hFuARqtovyTi6PrcT/"
+  },
+  {
+    "id": "ocd-person/fc8fe4ef-dfff-465c-92db-a369ac888afe",
+    "name": "Angelito Tenorio",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:wi/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Angelito",
+    "family_name": "Tenorio",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Sep2720211220PM_104500298_AngelitoHeadshot.jpg",
+    "email": "rep.tenorio@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:10.783586+00:00",
+    "updated_at": "2026-01-28T02:48:36.991394+00:00",
+    "openstates_url": "https://openstates.org/person/angelito-tenorio-7gZpEBw7egPZkNizMhgDC2/"
+  },
+  {
+    "id": "ocd-person/92eb51fb-7865-4b2f-8ea1-c56b5f287b5c",
+    "name": "Ann Roe",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:wi/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Ann",
+    "family_name": "Roe",
+    "image": "",
+    "email": "rep.roe@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:33.883360+00:00",
+    "updated_at": "2025-07-17T08:51:37.097203+00:00",
+    "openstates_url": "https://openstates.org/person/ann-roe-4TEQ7pTarILcGIoEWYQwqC/"
+  },
+  {
+    "id": "ocd-person/0580ebef-0cfa-40ae-a4ea-d960e0ea30ee",
+    "name": "Barbara Dittrich",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:wi/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Barbara",
+    "family_name": "Dittrich",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2460.jpg",
+    "email": "rep.dittrich@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1964-05-21",
+    "death_date": "",
+    "extras": {
+      "website": "http://legis.wisconsin.gov/assembly/38/Dittrich",
+      "extra phone": "(888) 534-0038"
+    },
+    "created_at": "2019-01-06T20:07:48.700616+00:00",
+    "updated_at": "2025-04-24T09:01:30.175619+00:00",
+    "openstates_url": "https://openstates.org/person/barbara-dittrich-ANsUn8VAzPnOFrkfavJss/"
+  },
+  {
+    "id": "ocd-person/d4c9b78d-bb0b-40e8-b717-f606299c9737",
+    "name": "Ben DeSmidt",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:wi/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "DeSmidt",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ben_DeSmidt_20240808_100327.jpeg",
+    "email": "rep.desmidt@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:58.395241+00:00",
+    "updated_at": "2026-01-28T02:48:09.982453+00:00",
+    "openstates_url": "https://openstates.org/person/ben-desmidt-6TWYbumZqDkYk2CRSZJwAB/"
+  },
+  {
+    "id": "ocd-person/04b709c6-b487-49c1-9bcf-dfbbc7082beb",
+    "name": "Ben Franklin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:wi/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Franklin",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/BenFranklin2024.png",
+    "email": "rep.franklin@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1982-10-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:21.198842+00:00",
+    "updated_at": "2026-01-28T02:48:20.364204+00:00",
+    "openstates_url": "https://openstates.org/person/ben-franklin-8tcJZDaz88V7TVzAmfcCp/"
+  },
+  {
+    "id": "ocd-person/54522ac6-81ad-4b83-929f-b94e94b8acb4",
+    "name": "Bob Donovan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:wi/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Donovan",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2555.jpg",
+    "email": "rep.donovan@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1956-05-04",
+    "death_date": "",
+    "extras": {
+      "staff1": "Stephan Gieschen",
+      "website": "https://legis.wisconsin.gov/assembly/84/donovan/",
+      "extra phone": "(888) 534-0084",
+      "staff_email1": "Stephan.Gieschen@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T07:00:17.121089+00:00",
+    "updated_at": "2025-04-24T02:49:01.246522+00:00",
+    "openstates_url": "https://openstates.org/person/bob-donovan-2Z6uAP6ytZOlXfRkVn5P9Q/"
+  },
+  {
+    "id": "ocd-person/ea4d8d73-19b6-408f-a802-22b2ddf816d9",
+    "name": "Bob Wittke",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:wi/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Wittke",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2534.jpg",
+    "email": "rep.wittke@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1957-09-23",
+    "death_date": "",
+    "extras": {
+      "staff1": "Terri Griffiths",
+      "staff2": "Johnny Humphrey",
+      "website": "https://legis.wisconsin.gov/assembly/62/wittke/",
+      "extra phone": "(888) 534-0062",
+      "staff_email1": "Terri.Griffiths@legis.wisconsin.gov",
+      "staff_email2": "Johnny.Humphrey@legis.wisconsin.gov"
+    },
+    "created_at": "2019-01-06T20:07:53.032960+00:00",
+    "updated_at": "2025-04-24T09:01:07.617724+00:00",
+    "openstates_url": "https://openstates.org/person/bob-wittke-787e3hLLDq8wTqj9NDUFr7/"
+  },
+  {
+    "id": "ocd-person/3089bcca-553d-4637-9b50-2d9698944d5a",
+    "name": "Brent Jacobson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:wi/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Brent",
+    "family_name": "Jacobson",
+    "image": "https://jacobsonforassembly.com/wp-content/uploads/2024/03/IMG_0484.png",
+    "email": "rep.brent.jacobson@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1984-04-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:26.103824+00:00",
+    "updated_at": "2026-01-28T02:47:53.245316+00:00",
+    "openstates_url": "https://openstates.org/person/brent-jacobson-1TaZpPkGvIMJYnhdMhw0GQ/"
+  },
+  {
+    "id": "ocd-person/f8f3683e-3615-4a4b-bafe-d4d042f291d0",
+    "name": "Brienne Brown",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:wi/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Brienne",
+    "family_name": "Brown",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Brienne_Brown.jpg",
+    "email": "rep.brown@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1973-02-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-23T16:58:06.768647+00:00",
+    "updated_at": "2026-01-28T02:48:18.079415+00:00",
+    "openstates_url": "https://openstates.org/person/brienne-brown-7ZlKjnCjnXCYOT8nuVqoYy/"
+  },
+  {
+    "id": "ocd-person/23c03244-880a-4263-8e2f-18c0c5556b45",
+    "name": "Calvin Callahan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:wi/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Calvin",
+    "family_name": "Callahan",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2456.jpg",
+    "email": "rep.callahan@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1999-03-02",
+    "death_date": "",
+    "extras": {
+      "staff1": "Wyatt Cooper",
+      "staff2": "Josh Cochrane",
+      "website": "https://legis.wisconsin.gov/assembly/35/callahan",
+      "extra phone": "(888) 534-0035",
+      "staff_email1": "Wyatt.Cooper@legis.wisconsin.gov",
+      "staff_email2": "Josh.Cochrane@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:19.580726+00:00",
+    "updated_at": "2026-01-28T02:48:09.344356+00:00",
+    "openstates_url": "https://openstates.org/person/calvin-callahan-15SZ3UmUJ0HSGURlsaIEmz/"
+  },
+  {
+    "id": "ocd-person/2a6503b4-d030-4569-b5b2-8fe62ff6132d",
+    "name": "Chanz Green",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:wi/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Chanz",
+    "family_name": "Green",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2558.jpg",
+    "email": "rep.green@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1991-01-29",
+    "death_date": "",
+    "extras": {
+      "staff1": "Carson Lee",
+      "website": "https://legis.wisconsin.gov/assembly/74/green/",
+      "extra phone": "(888) 534-0074",
+      "staff_email1": "Carson.Lee@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T06:58:26.372162+00:00",
+    "updated_at": "2026-04-09T08:37:56.554849+00:00",
+    "openstates_url": "https://openstates.org/person/chanz-green-1HzqAdxNTZpRZKVgijsMPd/"
+  },
+  {
+    "id": "ocd-person/ad79773d-d349-4adf-9e3c-00d2b38a90b2",
+    "name": "Christian Phelps",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:wi/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Christian",
+    "family_name": "Phelps",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ChristianPhelps24.jpg",
+    "email": "rep.phelps@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1993-10-13",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:02.983896+00:00",
+    "updated_at": "2026-01-28T02:48:01.363413+00:00",
+    "openstates_url": "https://openstates.org/person/christian-phelps-5HLBJrxu6xTqFwMnXqIgoU/"
+  },
+  {
+    "id": "ocd-person/2da8406a-4a68-4167-887d-22fe1b872940",
+    "name": "Christine Sinicki",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:wi/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Christine",
+    "family_name": "Sinicki",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2512.jpg",
+    "email": "rep.sinicki@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1960-03-28",
+    "death_date": "",
+    "extras": {
+      "staff1": "Mary Beth George",
+      "staff2": "Amy Snyder-Heitman",
+      "website": "http://legis.wisconsin.gov/assembly/sinicki",
+      "extra phone": "(888) 534-0020",
+      "staff_email1": "MaryBeth.George@legis.wisconsin.gov",
+      "staff_email2": "Amy.Snyder-Heitman@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:07.339974+00:00",
+    "updated_at": "2026-01-28T02:48:30.381985+00:00",
+    "openstates_url": "https://openstates.org/person/christine-sinicki-1O9XqW8jMhGl5jmLtDxOV6/"
+  },
+  {
+    "id": "ocd-person/ef921fbc-cb1a-4208-a4ab-b2ea99114f0a",
+    "name": "Chuck Wichgers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:wi/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Chuck",
+    "family_name": "Wichgers",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2556.jpg",
+    "email": "rep.wichgers@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1965-07-04",
+    "death_date": "",
+    "extras": {
+      "staff1": "Rebecca Sande",
+      "website": "https://legis.wisconsin.gov/assembly/82/wichgers/",
+      "extra phone": "(888) 534-0082",
+      "staff_email1": "Rebecca.Sande@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:07.413561+00:00",
+    "updated_at": "2025-04-24T02:49:48.193105+00:00",
+    "openstates_url": "https://openstates.org/person/chuck-wichgers-7I3waYFEqXVxkQ8LuMjSUU/"
+  },
+  {
+    "id": "ocd-person/171aec6e-ba95-4244-9854-84cddf028d90",
+    "name": "Cindi Duchow",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:wi/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Cindi",
+    "family_name": "Duchow",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2463.jpg",
+    "email": "rep.duchow@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1959-08-21",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Vice-Chair",
+      "staff1": "Dan Hubert",
+      "staff2": "Samantha Mayer",
+      "website": "http://legis.wisconsin.gov/assembly/99/Duchow",
+      "extra phone": "(888) 534-0099",
+      "staff_email1": "Dan.Hubert@legis.wisconsin.gov",
+      "staff_email2": "Samantha.Mayer@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:07.487552+00:00",
+    "updated_at": "2025-04-24T02:49:32.706396+00:00",
+    "openstates_url": "https://openstates.org/person/cindi-duchow-hb7uaOZbB9dsAKEczoUnw/"
+  },
+  {
+    "id": "ocd-person/d670cb97-7d46-4d57-95ec-1a3654a6fe0c",
+    "name": "Clint Anderson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:wi/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Clint",
+    "family_name": "Anderson",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2559.jpg",
+    "email": "rep.canderson@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1993-05-26",
+    "death_date": "",
+    "extras": {
+      "staff1": "Jim White",
+      "website": "https://legis.wisconsin.gov/assembly/45/anderson",
+      "extra phone": "(888) 534-0045",
+      "staff_email1": "Jim.White@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T07:00:31.733131+00:00",
+    "updated_at": "2025-07-17T08:51:43.005173+00:00",
+    "openstates_url": "https://openstates.org/person/clint-anderson-6Wdu8yr1ZCNCrU7Nxitwwm/"
+  },
+  {
+    "id": "ocd-person/21e310b1-c14b-42e6-b3fc-84c1613c3063",
+    "name": "Clint Moses",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:wi/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Clint",
+    "family_name": "Moses",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2487.jpg",
+    "email": "rep.moses@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1976-04-04",
+    "death_date": "",
+    "extras": {
+      "staff1": "Maryjane Behm",
+      "staff2": "Cameron O'Connell",
+      "website": "https://legis.wisconsin.gov/assembly/29/moses",
+      "extra phone": "(888) 529-0029",
+      "staff_email1": "Maryjane.Behm@legis.wisconsin.gov",
+      "staff_email2": "Cameron.O'Connell@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:18.817579+00:00",
+    "updated_at": "2026-01-28T02:48:24.469891+00:00",
+    "openstates_url": "https://openstates.org/person/clint-moses-11wVz3GxTyIJgRLkCCgfaN/"
+  },
+  {
+    "id": "ocd-person/1152309b-c82f-4660-bd5d-3e16322f1200",
+    "name": "Dan Knodl",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:wi/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Knodl",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/senate/2688.jpg",
+    "email": "rep.knodl@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1958-12-14",
+    "death_date": "",
+    "extras": {
+      "staff1": "Connor Fitzgerald",
+      "staff2": "James Mietus",
+      "staff3": "William Neville",
+      "website": "https://legis.wisconsin.gov/senate/08/knodl",
+      "extra phone": "",
+      "staff_email1": "Connor.Fitzgerald@legis.wisconsin.gov",
+      "staff_email2": "James.Mietus@legis.wisconsin.gov",
+      "staff_email3": "William.Neville@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:07.866531+00:00",
+    "updated_at": "2026-01-28T02:48:36.399459+00:00",
+    "openstates_url": "https://openstates.org/person/dan-knodl-WgQgbK3dxMmQmBFc3VEw4/"
+  },
+  {
+    "id": "ocd-person/d9f84b91-88ac-4abc-8d47-0672e2de5970",
+    "name": "Darrin Madison",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:wi/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Darrin",
+    "family_name": "Madison",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2536.jpg",
+    "email": "rep.madison@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1997-02-01",
+    "death_date": "",
+    "extras": {
+      "staff1": "David O'Keeffe",
+      "website": "https://legis.wisconsin.gov/assembly/10/madison/",
+      "extra phone": "(888) 534-0010",
+      "staff_email1": "David.O'Keeffe@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T06:58:31.359647+00:00",
+    "updated_at": "2025-07-17T08:51:22.711191+00:00",
+    "openstates_url": "https://openstates.org/person/darrin-madison-6dInyw1zD522yGV1lP6mQa/"
+  },
+  {
+    "id": "ocd-person/28caa8bd-605b-4755-85a0-52434a9be02f",
+    "name": "Dave Armstrong",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:wi/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Armstrong",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2444.jpg",
+    "email": "rep.armstrong@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1961-10-03",
+    "death_date": "",
+    "extras": {
+      "staff1": "Matt Pulda",
+      "staff2": "Tanner Schafer",
+      "website": "https://legis.wisconsin.gov/assembly/75/armstrong",
+      "extra phone": "(888) 534-0075",
+      "staff_email1": "Matt.Pulda@legis.wisconsin.gov",
+      "staff_email2": "Tanner.Schafer@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:15.716264+00:00",
+    "updated_at": "2026-01-28T02:47:44.539811+00:00",
+    "openstates_url": "https://openstates.org/person/dave-armstrong-1EyJ87iEyHi8aD7VMXQ4xL/"
+  },
+  {
+    "id": "ocd-person/f20f569f-1f36-4856-9193-b4b938dfcdaf",
+    "name": "Dave Maxey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:wi/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Maxey",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2537.jpg",
+    "email": "rep.maxey@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1973-01-15",
+    "death_date": "",
+    "extras": {
+      "staff1": "Tyler Murray",
+      "website": "https://legis.wisconsin.gov/assembly/15/maxey/",
+      "extra phone": "(888) 534-0015",
+      "staff_email1": "Tyler.Murray@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T06:58:39.349776+00:00",
+    "updated_at": "2026-01-28T02:47:41.435920+00:00",
+    "openstates_url": "https://openstates.org/person/dave-maxey-7Ml9TIYtXni0SemS7mRAgJ/"
+  },
+  {
+    "id": "ocd-person/1e2717f2-3426-47b6-8e86-a63f0a507c81",
+    "name": "Dave Murphy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:wi/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Murphy",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2488.jpg",
+    "email": "rep.murphy@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1954-11-26",
+    "death_date": "",
+    "extras": {
+      "staff1": "Steve Knudson",
+      "staff2": "Mike Pexa",
+      "website": "http://legis.wisconsin.gov/assembly/56/murphy",
+      "extra phone": "(888) 534-0056",
+      "staff_email1": "Steve.Knudson@legis.wisconsin.gov",
+      "staff_email2": "Mike.Pexa@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:08.389765+00:00",
+    "updated_at": "2026-01-28T02:48:32.768720+00:00",
+    "openstates_url": "https://openstates.org/person/dave-murphy-utdPGxl5g7ASVxLDM7mIT/"
+  },
+  {
+    "id": "ocd-person/2a067a93-dffc-4ce7-8975-d37fb67b4512",
+    "name": "David Steffen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:wi/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Steffen",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2519.jpg",
+    "email": "rep.steffen@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1971-10-12",
+    "death_date": "",
+    "extras": {
+      "staff1": "Emily Delaurelle",
+      "staff2": "Nicole Walentowski-Domokos",
+      "website": "http://legis.wisconsin.gov/assembly/04/steffen",
+      "extra phone": "(888) 534-0004",
+      "staff_email1": "Emily.Delaurelle@legis.wisconsin.gov",
+      "staff_email2": "Nicole.Walentowski-Domokos@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:08.466864+00:00",
+    "updated_at": "2025-04-24T02:48:08.100498+00:00",
+    "openstates_url": "https://openstates.org/person/david-steffen-1HIdadBv6ocyZThBle7LXO/"
+  },
+  {
+    "id": "ocd-person/72aa0b66-48f0-41fd-8ac8-b33f610d97c7",
+    "name": "Dean Kaufert",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:wi/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Dean",
+    "family_name": "Kaufert",
+    "image": "http://legis.wisconsin.gov/sitecollectionimages/2013/asm55.jpeg",
+    "email": "rep.kaufert@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1957-05-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-16T02:09:50.381653+00:00",
+    "updated_at": "2026-01-28T02:47:39.975617+00:00",
+    "openstates_url": "https://openstates.org/person/dean-kaufert-3UMpoywhKI4s4PgEket6wR/"
+  },
+  {
+    "id": "ocd-person/bcca1ebf-1a4c-4624-97a6-dbfd3e255191",
+    "name": "Deb Andraca",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:wi/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Deb",
+    "family_name": "Andraca",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2443.jpg",
+    "email": "rep.andraca@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1970-04-10",
+    "death_date": "",
+    "extras": {
+      "staff1": "Elena Kruse",
+      "staff2": "Sandy Saltzstein",
+      "website": "https://legis.wisconsin.gov/assembly/23/andraca",
+      "extra phone": "(888) 534-0023",
+      "staff_email1": "Elena.Kruse@legis.wisconsin.gov",
+      "staff_email2": "Sandy.Saltzstein@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:18.496330+00:00",
+    "updated_at": "2026-01-28T02:48:19.759389+00:00",
+    "openstates_url": "https://openstates.org/person/deb-andraca-5kEvRvF4Gf7qF3Exs9ppuz/"
+  },
+  {
+    "id": "ocd-person/2a047fc5-2adb-4c4b-9c67-0eda3aa07233",
+    "name": "Duke Tucker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:wi/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Duke",
+    "family_name": "Tucker",
+    "image": "https://dukeforwisconsin.com/wp-content/uploads/2024/03/IMG_0256-scaled.jpg",
+    "email": "rep.tucker@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1970-09-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:44.810529+00:00",
+    "updated_at": "2026-01-28T02:47:23.927966+00:00",
+    "openstates_url": "https://openstates.org/person/duke-tucker-1HHjUpyrC5FPfkPdZpZE03/"
+  },
+  {
+    "id": "ocd-person/de5dfe78-e3a2-4a58-a7f1-bb184bfd1ade",
+    "name": "Elijah Behnke",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:wi/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Elijah",
+    "family_name": "Behnke",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2447.jpg",
+    "email": "rep.behnke@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1983-02-15",
+    "death_date": "",
+    "extras": {
+      "staff1": "Seth Allen",
+      "website": "https://legis.wisconsin.gov/assembly/89/behnke",
+      "extra phone": "(888) 534-0089",
+      "staff_email1": "Seth.Allen@legis.wisconsin.gov"
+    },
+    "created_at": "2021-06-01T23:03:09.622107+00:00",
+    "updated_at": "2026-01-28T02:47:50.759049+00:00",
+    "openstates_url": "https://openstates.org/person/elijah-behnke-6lbFccmymgfchZ716SmzNO/"
+  },
+  {
+    "id": "ocd-person/17879a06-e9fc-4e11-88bf-3c684c460c07",
+    "name": "Francesca Hong",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:wi/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Francesca",
+    "family_name": "Hong",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2472.jpg",
+    "email": "rep.hong@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1988-11-04",
+    "death_date": "",
+    "extras": {
+      "staff1": "Nada Elmikashfi",
+      "staff2": "Reuben Berkowitz",
+      "website": "https://legis.wisconsin.gov/assembly/76/hong",
+      "extra phone": "(888) 534-0076",
+      "staff_email1": "nada.elmikashfi@legis.wisconsin.gov",
+      "staff_email2": "Reuben.Berkowitz@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:23.118651+00:00",
+    "updated_at": "2025-07-17T08:50:50.173052+00:00",
+    "openstates_url": "https://openstates.org/person/francesca-hong-iOnCoUGUgtDyOO5KUs9GJ/"
+  },
+  {
+    "id": "ocd-person/62f218bf-b308-4240-84b3-4be181466b42",
+    "name": "Greta Neubauer",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:wi/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Greta",
+    "family_name": "Neubauer",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2491.jpg",
+    "email": "rep.neubauer@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1991-09-13",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Leader",
+      "staff1": "Sidney Litke",
+      "staff2": "Kyle Sandow",
+      "staff3": "Julie Benkoske",
+      "staff4": "Molly Horwitz",
+      "staff5": "Scott Templeton",
+      "staff6": "Sam Voorhees",
+      "staff7": "Adam Wigger",
+      "website": "https://legis.wisconsin.gov/assembly/66/neubauer",
+      "extra phone": "(888) 534-0066",
+      "staff_email1": "Sidney.Litke@legis.wisconsin.gov",
+      "staff_email2": "Kyle.Sandow@legis.wisconsin.gov",
+      "staff_email3": "Julie.Benkoske@legis.wisconsin.gov",
+      "staff_email4": "Molly.Horwitz@legis.wisconsin.gov",
+      "staff_email5": "Scott.Templeton@legis.wisconsin.gov",
+      "staff_email6": "Sam.Voorhees@legis.wisconsin.gov",
+      "staff_email7": "Adam.Wigger@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:09.534886+00:00",
+    "updated_at": "2025-07-17T08:51:24.219847+00:00",
+    "openstates_url": "https://openstates.org/person/greta-neubauer-30hsxpynNOdv4OVVdtGZUY/"
+  },
+  {
+    "id": "ocd-person/58b31138-e0a5-41ae-bd2f-5713e6c0cc0c",
+    "name": "Gus Gustafson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:wi/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Gus",
+    "family_name": "Gustafson",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2550.jpg",
+    "email": "rep.gustafson@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1995-02-28",
+    "death_date": "",
+    "extras": {
+      "staff1": "Jorge Villarreal",
+      "website": "https://legis.wisconsin.gov/assembly/55/gustafson/",
+      "extra phone": "(888) 534-0055",
+      "staff_email1": "Jorge.Villarreal@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T07:00:42.554220+00:00",
+    "updated_at": "2026-01-28T02:47:24.615521+00:00",
+    "openstates_url": "https://openstates.org/person/gus-gustafson-2hN9qE3DrSHYymzDjWtyRg/"
+  },
+  {
+    "id": "ocd-person/5254db79-a23b-4496-ad9b-cc0e7a9b7f3a",
+    "name": "Jeff Mursau",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:wi/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Mursau",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2489.jpg",
+    "email": "rep.mursau@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1954-06-12",
+    "death_date": "",
+    "extras": {
+      "staff1": "Cory Bruce",
+      "website": "http://legis.wisconsin.gov/assembly/mursau/",
+      "extra phone": "(888) 534-0036",
+      "staff_email1": "Cory.Bruce@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:10.112346+00:00",
+    "updated_at": "2025-04-24T09:01:48.748184+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-mursau-2VM9LMU7GoE1gTYL4pxZRC/"
+  },
+  {
+    "id": "ocd-person/a38a3643-e446-419c-b255-97d88f880634",
+    "name": "Jenna Jacobson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:wi/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jenna",
+    "family_name": "Jacobson",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2545.jpg",
+    "email": "rep.jacobson@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1982-02-04",
+    "death_date": "",
+    "extras": {
+      "staff1": "Oliver Wink",
+      "website": "https://legis.wisconsin.gov/assembly/43/jacobson/",
+      "extra phone": "(888) 534-0043",
+      "staff_email1": "Oliver.Wink@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T07:01:08.997210+00:00",
+    "updated_at": "2025-07-17T08:50:58.166852+00:00",
+    "openstates_url": "https://openstates.org/person/jenna-jacobson-4yauZ3tCMWOmHfYHxSgFVc/"
+  },
+  {
+    "id": "ocd-person/4e1004c1-d397-4a50-baeb-2d3fbbd2912f",
+    "name": "Jerry O'Connor",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:wi/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jerry",
+    "family_name": "O'Connor",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2549.jpg",
+    "email": "rep.o'connor@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1953-09-14",
+    "death_date": "",
+    "extras": {
+      "staff1": "Henry Dern",
+      "website": "https://legis.wisconsin.gov/assembly/52/oconnor/",
+      "extra phone": "(888) 529-0052",
+      "staff_email1": "Henry.Dern@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T07:00:52.060699+00:00",
+    "updated_at": "2026-01-28T02:47:12.339372+00:00",
+    "openstates_url": "https://openstates.org/person/jerry-o-connor-2NIilR1OCfp7CB5n6Y8p6F/"
+  },
+  {
+    "id": "ocd-person/1dd290f4-6504-4967-9566-55cb3340d303",
+    "name": "Jessie Rodriguez",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:wi/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jessie",
+    "family_name": "Rodriguez",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2505.jpg",
+    "email": "rep.rodriguez@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1977-07-05",
+    "death_date": "",
+    "extras": {
+      "staff1": "Calvin Stoflet",
+      "staff2": "Kaitlyn Wender",
+      "website": "http://legis.wisconsin.gov/assembly/21/rodriguez",
+      "extra phone": "(888) 534-0021",
+      "staff_email1": "Calvin.Stoflet@legis.wisconsin.gov",
+      "staff_email2": "Kaitlyn.Wender@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:10.535961+00:00",
+    "updated_at": "2026-01-28T02:48:31.904502+00:00",
+    "openstates_url": "https://openstates.org/person/jessie-rodriguez-uH0P3UXX1sCfArZ2PT4cN/"
+  },
+  {
+    "id": "ocd-person/7da63875-0a3c-4b03-aaa8-fe48c718eb45",
+    "name": "Jill Billings",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:wi/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jill",
+    "family_name": "Billings",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2448.jpg",
+    "email": "rep.billings@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1962-01-19",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Vice-Chair",
+      "staff1": "Marissa Howe",
+      "staff2": "Eric Koch",
+      "website": "http://legis.wisconsin.gov/assembly/95/billings",
+      "extra phone": "(888) 534-0095",
+      "staff_email1": "Marissa.Howe@legis.wisconsin.gov",
+      "staff_email2": "Eric.Koch@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:10.624808+00:00",
+    "updated_at": "2025-03-29T02:48:40.860537+00:00",
+    "openstates_url": "https://openstates.org/person/jill-billings-3p60EsSV5RdF5Bo1l4k7Sn/"
+  },
+  {
+    "id": "ocd-person/61dfe0c1-631f-401a-a4db-6641547db7ef",
+    "name": "Jim Piwowarczyk",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:wi/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Piwowarczyk",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jim_Piwowarczyk_20240814_075459.jpg",
+    "email": "rep.piwowarczyk@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:03.821645+00:00",
+    "updated_at": "2026-01-28T02:47:10.639319+00:00",
+    "openstates_url": "https://openstates.org/person/jim-piwowarczyk-2ygZEGS6TUmwqdta4LTGHf/"
+  },
+  {
+    "id": "ocd-person/fd8d6d12-9d66-4926-92b4-61c463cae027",
+    "name": "Joan Fitzgerald",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:wi/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Joan",
+    "family_name": "Fitzgerald",
+    "image": "https://images.squarespace-cdn.com/content/v1/65b3fbbf2b490f4bfe76c24e/6ba4a753-b2b3-4338-a77b-0f73f067f2cb/JoanFitzgerald%2857of76%29.jpg?format=1500w",
+    "email": "rep.fitzgerald@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1964-10-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:39.579916+00:00",
+    "updated_at": "2026-01-28T02:48:34.371205+00:00",
+    "openstates_url": "https://openstates.org/person/joan-fitzgerald-7iRgok6kqnSy7RgYCwjss3/"
+  },
+  {
+    "id": "ocd-person/71d596fa-95f2-4411-9b7c-9e250380b701",
+    "name": "Jodi Emerson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:wi/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Jodi",
+    "family_name": "Emerson",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2465.jpg",
+    "email": "rep.emerson@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1972-08-03",
+    "death_date": "",
+    "extras": {
+      "staff1": "Lucio De Los Santos",
+      "staff2": "Crystal Miller",
+      "website": "https://legis.wisconsin.gov/assembly/91/emerson",
+      "extra phone": "(888) 534-0091",
+      "staff_email1": "Lucio.DeLosSantos@legis.wisconsin.gov",
+      "staff_email2": "Crystal.Miller@legis.wisconsin.gov"
+    },
+    "created_at": "2019-01-06T20:07:48.882402+00:00",
+    "updated_at": "2026-01-28T02:47:56.775446+00:00",
+    "openstates_url": "https://openstates.org/person/jodi-emerson-3Snk6wof9G3mgeZ0DfX1yD/"
+  },
+  {
+    "id": "ocd-person/28a7f0c8-0d9c-4436-bfe2-f92ae3871ee2",
+    "name": "Joe Sheehan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:wi/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Sheehan",
+    "image": "https://sheehanforassembly.com/wp-content/uploads/2024/08/Joe_Sheehan-scaled-e1724167126836-1024x825.jpeg",
+    "email": "rep.sheehan@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:43.918538+00:00",
+    "updated_at": "2026-01-28T02:47:21.978241+00:00",
+    "openstates_url": "https://openstates.org/person/joe-sheehan-1EiRPX7iUZf4adcJ2h7TlK/"
+  },
+  {
+    "id": "ocd-person/e127b754-c756-4017-a414-83cff1bb30f5",
+    "name": "Joel Kitchens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:wi/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Joel",
+    "family_name": "Kitchens",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2476.jpg",
+    "email": "rep.kitchens@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1957-09-20",
+    "death_date": "",
+    "extras": {
+      "staff1": "Bob Delaporte",
+      "staff2": "Marco Lopez",
+      "website": "http://legis.wisconsin.gov/assembly/01/kitchens",
+      "extra phone": "(888) 482-0001",
+      "staff_email1": "Bob.Delaporte@legis.wisconsin.gov",
+      "staff_email2": "Marco.Lopez@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:11.234319+00:00",
+    "updated_at": "2025-04-24T02:49:10.685455+00:00",
+    "openstates_url": "https://openstates.org/person/joel-kitchens-6qrQHSe0LXj8poMreR0YUv/"
+  },
+  {
+    "id": "ocd-person/38070b4e-d50c-4bc1-86ad-6739c5edc60a",
+    "name": "John Spiros",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:wi/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Spiros",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2517.jpg",
+    "email": "rep.spiros@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1961-07-28",
+    "death_date": "",
+    "extras": {
+      "staff1": "Cameil Bowler",
+      "staff2": "Parker Velte",
+      "website": "http://legis.wisconsin.gov/assembly/spiros/",
+      "extra phone": "(888) 534-0086",
+      "staff_email1": "Cameil.Bowler@legis.wisconsin.gov",
+      "staff_email2": "Parker.Velte@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:11.649158+00:00",
+    "updated_at": "2025-04-24T02:48:29.219004+00:00",
+    "openstates_url": "https://openstates.org/person/john-spiros-1himwrY5nhvotAEF81FSLi/"
+  },
+  {
+    "id": "ocd-person/b8666d84-956f-40a7-8faa-75709f9d4a12",
+    "name": "Joy Goeben",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:wi/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Joy",
+    "family_name": "Goeben",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2542.jpg",
+    "email": "rep.goeben@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1972-10-16",
+    "death_date": "",
+    "extras": {
+      "staff1": "Christine Fugelseth",
+      "website": "https://legis.wisconsin.gov/assembly/05/Goeben",
+      "extra phone": "(888) 534-0005",
+      "staff_email1": "Christine.Fugelseth@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T07:01:17.310020+00:00",
+    "updated_at": "2026-01-28T02:48:34.659828+00:00",
+    "openstates_url": "https://openstates.org/person/joy-goeben-5bxOf9a3ZkeZHDbefKiMxm/"
+  },
+  {
+    "id": "ocd-person/ac00fa62-2863-4ce4-97fb-57c094eaa158",
+    "name": "Kalan Haywood",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:wi/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Kalan",
+    "family_name": "Haywood",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2468.jpg",
+    "email": "rep.haywood@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1999-06-05",
+    "death_date": "",
+    "extras": {
+      "title": "Assistant Minority Leader",
+      "staff1": "Isaia Ben-Ami",
+      "staff2": "Adrian Catacutan",
+      "staff3": "Sydnee Matthew",
+      "website": "http://legis.wisconsin.gov/assembly/16/haywood",
+      "extra phone": "(888) 534-0016",
+      "staff_email1": "Isaia.Ben-Ami@legis.wisconsin.gov",
+      "staff_email2": "Adrian.Catacutan@legis.wisconsin.gov",
+      "staff_email3": "Sydnee.Matthew@legis.wisconsin.gov"
+    },
+    "created_at": "2019-01-06T20:07:45.972809+00:00",
+    "updated_at": "2025-04-24T02:47:57.063748+00:00",
+    "openstates_url": "https://openstates.org/person/kalan-haywood-5EZ7t1FjnjZXCllnxY3FZw/"
+  },
+  {
+    "id": "ocd-person/521bd1d9-d819-4637-88be-f496966b7617",
+    "name": "Karen DeSanto",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:wi/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "DeSanto",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Karen_DeSanto_20241106_112902.jpg",
+    "email": "rep.desanto@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:11:55.531009+00:00",
+    "updated_at": "2026-01-28T02:48:16.111357+00:00",
+    "openstates_url": "https://openstates.org/person/karen-desanto-2Uw5EgPuidghGfFg1zhVsl/"
+  },
+  {
+    "id": "ocd-person/1332581f-d860-43a0-b7d9-ddf619451efa",
+    "name": "Karen Hurd",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:wi/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Hurd",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2552.jpg",
+    "email": "rep.hurd@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1958-10-20",
+    "death_date": "",
+    "extras": {
+      "staff1": "Joshua Parr",
+      "website": "https://legis.wisconsin.gov/assembly/68/hurd/",
+      "extra phone": "(888) 534-0068",
+      "staff_email1": "Joshua.Parr@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T07:00:39.307219+00:00",
+    "updated_at": "2026-01-28T02:48:05.983608+00:00",
+    "openstates_url": "https://openstates.org/person/karen-hurd-aDrPxhgYF0lI7mwsTSALC/"
+  },
+  {
+    "id": "ocd-person/032a80c3-81a6-42a3-9fa7-f210f2407aa0",
+    "name": "Karen Kirsch",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:wi/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Kirsch",
+    "image": "https://shepherdexpress.com/downloads/66652/download/Karen-Kirsch.jpg?cb=13a333d591ca9798f5ad320c3b7ce126&w=1200&h=",
+    "email": "rep.kirsch@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1968-04-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:39.915778+00:00",
+    "updated_at": "2026-01-28T02:47:36.879816+00:00",
+    "openstates_url": "https://openstates.org/person/karen-kirsch-5yOr3Lvm7zLdBG94n8k9g/"
+  },
+  {
+    "id": "ocd-person/43c33bdc-3c41-47cc-8ffb-10a043ecdc93",
+    "name": "Kevin Petersen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:wi/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Petersen",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2498.jpg",
+    "email": "rep.petersen@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1964-12-14",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker Pro Tempore",
+      "staff1": "Deborah Bowers",
+      "staff2": "Jim Bowers",
+      "staff3": "Tyler Ellisen",
+      "website": "http://legis.wisconsin.gov/assembly/40/petersen",
+      "extra phone": "(888) 947-0040",
+      "staff_email1": "Deborah.Bowers@legis.wisconsin.gov",
+      "staff_email2": "Jim.Bowers@legis.wisconsin.gov",
+      "staff_email3": "Tyler.Ellisen@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:12.413471+00:00",
+    "updated_at": "2026-01-28T02:48:35.755223+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-petersen-23rhtcNpDdZTkhpdPS49mF/"
+  },
+  {
+    "id": "ocd-person/54a3a633-bff9-47f1-9951-ae3a82d012a8",
+    "name": "Lee Snodgrass",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:wi/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Lee",
+    "family_name": "Snodgrass",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2514.jpg",
+    "email": "rep.snodgrass@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1969-02-09",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Sergeant At Arms",
+      "staff1": "Fawn George",
+      "staff2": "Austen Wallenfang",
+      "website": "http://legis.wisconsin.gov/assembly/57/snodgrass",
+      "extra phone": "(888) 534-0057",
+      "staff_email1": "Fawn.George@legis.wisconsin.gov",
+      "staff_email2": "Austen.Wallenfang2@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:20.117290+00:00",
+    "updated_at": "2025-07-17T08:50:55.773011+00:00",
+    "openstates_url": "https://openstates.org/person/lee-snodgrass-2Zi8t7jM9fB0gxMrz5RiWW/"
+  },
+  {
+    "id": "ocd-person/a8bf9343-7c1b-4a9d-812c-eef5a89365a6",
+    "name": "Lindee Brill",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:wi/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Lindee",
+    "family_name": "Brill",
+    "image": "https://static.wixstatic.com/media/3d690d_54cafbce3962411589e2a2742be35965~mv2.jpg/v1/fill/w_489,h_634,al_c,lg_1,q_80,enc_avif,quality_auto/3d690d_54cafbce3962411589e2a2742be35965~mv2.jpg",
+    "email": "rep.brill@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1981-06-27",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:56.374424+00:00",
+    "updated_at": "2026-01-28T02:47:53.841564+00:00",
+    "openstates_url": "https://openstates.org/person/lindee-brill-58QGBXZwxQq6AvsLciINde/"
+  },
+  {
+    "id": "ocd-person/eed49381-7c5b-4890-bba3-d63b8681463d",
+    "name": "Lisa Subeck",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:wi/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Subeck",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2521.jpg",
+    "email": "rep.subeck@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1971-06-17",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Chair",
+      "staff1": "Jeanine Schneider",
+      "staff2": "Alex Johnson",
+      "staff3": "Samuel Runta",
+      "website": "http://legis.wisconsin.gov/assembly/78/subeck",
+      "extra phone": "(888) 534-0078",
+      "staff_email1": "Jeanine.Schneider@legis.wisconsin.gov",
+      "staff_email2": "Alex.Johnson@legis.wisconsin.gov",
+      "staff_email3": "Samuel.Runta@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:12.921225+00:00",
+    "updated_at": "2025-04-24T02:47:45.253293+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-subeck-7GfJvWFpW8eiBEhyuy1T6T/"
+  },
+  {
+    "id": "ocd-person/aef40b88-72b7-4001-b336-9210a55a2bde",
+    "name": "Lori Palmeri",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:wi/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Lori",
+    "family_name": "Palmeri",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2547.jpg",
+    "email": "rep.palmeri@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1967-05-25",
+    "death_date": "",
+    "extras": {
+      "staff1": "Leah Kelm",
+      "website": "https://legis.wisconsin.gov/assembly/54/Palmeri",
+      "extra phone": "(888) 534-0054",
+      "staff_email1": "Leah.Kelm2@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T06:59:45.859900+00:00",
+    "updated_at": "2026-01-28T02:48:23.335343+00:00",
+    "openstates_url": "https://openstates.org/person/lori-palmeri-5K8C0wuyYdp7wTi67O6j54/"
+  },
+  {
+    "id": "ocd-person/74ee2a17-e955-441b-9dca-32feb5fba9b0",
+    "name": "Margaret Arney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:wi/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Margaret",
+    "family_name": "Arney",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Brennan_Balestrieri_20240808_094539.jpg",
+    "email": "rep.arney@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1969-06-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:41.171849+00:00",
+    "updated_at": "2026-01-28T02:48:17.171512+00:00",
+    "openstates_url": "https://openstates.org/person/margaret-arney-3Ydwz60REbTq5FEi65vbHs/"
+  },
+  {
+    "id": "ocd-person/b6559841-9e69-4435-8788-0d8bc087baed",
+    "name": "Mark Born",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:wi/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Born",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2449.jpg",
+    "email": "rep.born@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1976-04-14",
+    "death_date": "",
+    "extras": {
+      "staff1": "Anna Knocke",
+      "staff2": "Nick Krueger",
+      "staff3": "RJ Lambert",
+      "staff4": "Storm Linjer",
+      "staff5": "Joe Malkasian",
+      "website": "http://legis.wisconsin.gov/assembly/39/born",
+      "extra phone": "(888) 534-0039",
+      "staff_email1": "Anna.Knocke@legis.wisconsin.gov",
+      "staff_email2": "Nick.Krueger@legis.wisconsin.gov",
+      "staff_email3": "RJ.Lambert@legis.wisconsin.gov",
+      "staff_email4": "Storm.Linjer@legis.wisconsin.gov",
+      "staff_email5": "Joe.Malkasian@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:13.083610+00:00",
+    "updated_at": "2025-04-24T02:48:02.103266+00:00",
+    "openstates_url": "https://openstates.org/person/mark-born-5Y3ifImwXJW7wjlM5efsth/"
+  },
+  {
+    "id": "ocd-person/0af151f7-2d0c-48d1-8560-f17d8bacc5a2",
+    "name": "Maureen McCarville",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:wi/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Maureen",
+    "family_name": "McCarville",
+    "image": "https://static1.squarespace.com/static/661c4ad59cca8c36cee06052/t/6630dc1cdd4eb0334f4f6768/1714478116835/MaureenMcCarville_AD42_Headshot.JPG",
+    "email": "rep.mccarville@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1958-05-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:46.186075+00:00",
+    "updated_at": "2026-01-28T02:48:27.443826+00:00",
+    "openstates_url": "https://openstates.org/person/maureen-mccarville-KeCpJunoHzEDRMQiIc6Ak/"
+  },
+  {
+    "id": "ocd-person/1b0b0777-af08-40f2-a45b-3c2431b37722",
+    "name": "Mike Bare",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:wi/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Bare",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2554.jpg",
+    "email": "rep.bare@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1983-03-08",
+    "death_date": "",
+    "extras": {
+      "staff1": "Will Oemichen",
+      "website": "https://legis.wisconsin.gov/assembly/80/Bare/",
+      "extra phone": "(888) 534-0080",
+      "staff_email1": "Will.Oemichen@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T06:58:44.197715+00:00",
+    "updated_at": "2025-04-24T02:48:06.831855+00:00",
+    "openstates_url": "https://openstates.org/person/mike-bare-p1peiYDdMp38zHuHR9wEE/"
+  },
+  {
+    "id": "ocd-person/5858f406-f96a-4846-8a9e-0bede48d94ed",
+    "name": "Nancy VanderMeer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:wi/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Nancy",
+    "family_name": "VanderMeer",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2529.jpg",
+    "email": "rep.vandermeer@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1958-12-15",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Secretary",
+      "staff1": "Jesse Johnson",
+      "website": "http://legis.wisconsin.gov/assembly/70/vandermeer",
+      "extra phone": "(888) 534-0070",
+      "staff_email1": "Jesse.Johnson@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:13.777296+00:00",
+    "updated_at": "2026-01-28T02:47:26.515209+00:00",
+    "openstates_url": "https://openstates.org/person/nancy-vandermeer-2ghyXiulyjyp0jEkYyq0Mv/"
+  },
+  {
+    "id": "ocd-person/38649f7a-eba4-4908-b264-f95fe908fc7a",
+    "name": "Pat Snyder",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:wi/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Pat",
+    "family_name": "Snyder",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2515.jpg",
+    "email": "rep.snyder@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1956-10-10",
+    "death_date": "",
+    "extras": {
+      "staff1": "Sam Hope",
+      "staff2": "Scott Poole",
+      "website": "http://legis.wisconsin.gov/assembly/85/snyder",
+      "extra phone": "(888) 534-0085",
+      "staff_email1": "Sam.Hope@legis.wisconsin.gov",
+      "staff_email2": "Scott.Poole@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:13.945709+00:00",
+    "updated_at": "2026-01-28T02:47:29.593396+00:00",
+    "openstates_url": "https://openstates.org/person/pat-snyder-1iPYPwdZs5IEW4GAx8KR0E/"
+  },
+  {
+    "id": "ocd-person/dab88795-9c78-44c5-a0c7-c93cb677f2e3",
+    "name": "Paul Melotik",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:wi/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Melotik",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2690.jpg",
+    "email": "rep.melotik@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1957-02-27",
+    "death_date": "",
+    "extras": {
+      "staff1": "Nathan Anfinson",
+      "website": "https://legis.wisconsin.gov/assembly/24/melotik/",
+      "extra phone": "(888) 529-0024",
+      "staff_email1": "Nathan.Anfinson@legis.wisconsin.gov"
+    },
+    "created_at": "2024-01-05T00:56:49.592475+00:00",
+    "updated_at": "2025-05-15T02:32:05.419178+00:00",
+    "openstates_url": "https://openstates.org/person/paul-melotik-6eieleWNncFJXs80lv8GLT/"
+  },
+  {
+    "id": "ocd-person/2e759534-4cf1-43f5-85d0-bf48fea3a048",
+    "name": "Paul Tittl",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:wi/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Tittl",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2526.jpg",
+    "email": "rep.tittl@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1961-11-23",
+    "death_date": "",
+    "extras": {
+      "staff1": "Steve Hall",
+      "staff2": "Andrew LaLonde",
+      "website": "http://legis.wisconsin.gov/assembly/tittl",
+      "extra phone": "(888) 529-0025",
+      "staff_email1": "Steve.Hall@legis.wisconsin.gov",
+      "staff_email2": "Andrew.LaLonde@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:14.192091+00:00",
+    "updated_at": "2025-04-24T02:49:22.348365+00:00",
+    "openstates_url": "https://openstates.org/person/paul-tittl-1PfNiV4yNXiImNpO5jjX68/"
+  },
+  {
+    "id": "ocd-person/898a7833-5441-4ef4-89f1-f25106589133",
+    "name": "Priscilla Prado",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:wi/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Priscilla",
+    "family_name": "Prado",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/PriscillaPrado2024.jpeg",
+    "email": "rep.prado@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1983-11-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:02.595442+00:00",
+    "updated_at": "2025-07-17T08:51:38.609661+00:00",
+    "openstates_url": "https://openstates.org/person/priscilla-prado-4BXEEOMaXSKONd7VPwKMeB/"
+  },
+  {
+    "id": "ocd-person/7743646d-bb5a-4771-9c2b-df3a8271609c",
+    "name": "Randy Udell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:wi/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Udell",
+    "image": "https://bloximages.chicago2.vip.townnews.com/captimes.com/content/tncms/assets/v3/editorial/c/7b/c7b832ac-dbcf-11ee-ab35-771e1438be52/65e88e3c05aed.image.jpg?crop=1163%2C871%2C26%2C52&resize=668%2C500&order=crop%2Cresize",
+    "email": "rep.udell@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1961-05-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:11:49.003865+00:00",
+    "updated_at": "2025-07-17T08:51:15.262170+00:00",
+    "openstates_url": "https://openstates.org/person/randy-udell-3d2st0bjEnz9ax4EUu8dSu/"
+  },
+  {
+    "id": "ocd-person/8b54c039-be1b-4320-89f8-415ac1afa698",
+    "name": "Renuka Mayadev",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:wi/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Renuka",
+    "family_name": "Mayadev",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Renuka_Mayadev_20240808_092901.jpg",
+    "email": "rep.mayadev@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:42.539129+00:00",
+    "updated_at": "2026-01-28T02:47:54.413446+00:00",
+    "openstates_url": "https://openstates.org/person/renuka-mayadev-4EufD9Udsrz3HIC4LZUNdg/"
+  },
+  {
+    "id": "ocd-person/264f7afa-69cb-46f3-97f3-ff8f21a1d68a",
+    "name": "Rick Gundrum",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:wi/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Gundrum",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2467.jpg",
+    "email": "rep.gundrum@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "staff1": "John Graber",
+      "staff2": "Christian Lubke",
+      "website": "http://legis.wisconsin.gov/assembly/58/gundrum",
+      "extra phone": "(888) 534-0058",
+      "staff_email1": "John.Graber@legis.wisconsin.gov",
+      "staff_email2": "Christian.Lubke@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:14.363556+00:00",
+    "updated_at": "2026-01-28T02:47:57.298710+00:00",
+    "openstates_url": "https://openstates.org/person/rick-gundrum-1AI1vP0b3fRt6taaI8BiKQ/"
+  },
+  {
+    "id": "ocd-person/d8956a67-d280-4219-853f-c21ec173f80a",
+    "name": "Rob Brooks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:wi/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Brooks",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2452.jpg",
+    "email": "rep.rob.brooks@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1965-07-13",
+    "death_date": "",
+    "extras": {
+      "staff1": "Sammy Nelson",
+      "staff2": "Christopher Schaefer",
+      "website": "http://legis.wisconsin.gov/assembly/60/brooks",
+      "extra phone": "(888) 534-0060",
+      "staff_email1": "Sammy.Nelson@legis.wisconsin.gov",
+      "staff_email2": "Christopher.Schaefer@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:14.782952+00:00",
+    "updated_at": "2026-01-28T02:47:37.743365+00:00",
+    "openstates_url": "https://openstates.org/person/rob-brooks-6agcnSdKQqQPUz6j0QxwCo/"
+  },
+  {
+    "id": "ocd-person/a5d9287a-c3e7-4457-8faf-31024e0e9ac6",
+    "name": "Rob Kreibich",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:wi/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Kreibich",
+    "image": "https://www.kreibichforassembly.com/hobenug/themes/kreibich-wi/assets/kreibich_1.jpg",
+    "email": "rep.kreibich@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1959-06-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:11:38.674132+00:00",
+    "updated_at": "2025-04-24T02:48:23.865778+00:00",
+    "openstates_url": "https://openstates.org/person/rob-kreibich-52wyTnAwJFgdUtAHNIqcLu/"
+  },
+  {
+    "id": "ocd-person/e23ff9c6-f6d5-4ada-8974-74c6ce90c422",
+    "name": "Rob Summerfield",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:wi/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Summerfield",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2522.jpg",
+    "email": "rep.summerfield@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1980-02-24",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Chair",
+      "staff1": "Alex Braaten",
+      "staff2": "Gillian Croasdale",
+      "staff3": "Aaron Earlywine",
+      "website": "http://legis.wisconsin.gov/assembly/67/summerfield",
+      "extra phone": "(888) 534-0067",
+      "staff_email1": "Alex.Braaten@legis.wisconsin.gov",
+      "staff_email2": "Gillian.Croasdale@legis.wisconsin.gov",
+      "staff_email3": "Aaron.Earlywine@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:14.612385+00:00",
+    "updated_at": "2026-01-28T02:48:13.822961+00:00",
+    "openstates_url": "https://openstates.org/person/rob-summerfield-6svVB2UDs7PdbzHb21RPKk/"
+  },
+  {
+    "id": "ocd-person/3a7f3611-78c4-453a-ae50-3cad3761dc9b",
+    "name": "Rob Swearingen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:wi/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Swearingen",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2523.jpg",
+    "email": "rep.swearingen@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1963-07-23",
+    "death_date": "",
+    "extras": {
+      "staff1": "Taylor Corkran",
+      "website": "http://legis.wisconsin.gov/assembly/swearingen",
+      "extra phone": "(888) 534-0034",
+      "staff_email1": "Taylor.Corkran@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:14.694177+00:00",
+    "updated_at": "2025-04-24T02:48:26.345642+00:00",
+    "openstates_url": "https://openstates.org/person/rob-swearingen-1mNgoqkgi1d0jsfG4mtKSx/"
+  },
+  {
+    "id": "ocd-person/c8381cb6-1fcf-4a82-a6c5-5c60773a85e1",
+    "name": "Robin Vos",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:wi/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Robin",
+    "family_name": "Vos",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2531.jpg",
+    "email": "rep.vos@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1968-07-05",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker",
+      "staff1": "Jenny Toftness",
+      "staff2": "Hannah Binau",
+      "staff3": "Tyler Clark",
+      "staff4": "Steve Fawcett",
+      "staff5": "Mac Feehan",
+      "staff6": "Angela Joyce",
+      "staff7": "Joseph Knilans",
+      "staff8": "Moriah Krogstad",
+      "staff9": "Abbey Rude",
+      "staff10": "Jake Wolf",
+      "staff11": "Kelly Wright",
+      "website": "http://legis.wisconsin.gov/assembly/vos/",
+      "extra phone": "(888) 534-0063",
+      "staff_email1": "Jenny.Toftness@legis.wisconsin.gov",
+      "staff_email2": "Hannah.Binau@legis.wisconsin.gov",
+      "staff_email3": "Tyler.Clark@legis.wisconsin.gov",
+      "staff_email4": "Steve.Fawcett@legis.wisconsin.gov",
+      "staff_email5": "Mac.Feehan@legis.wisconsin.gov",
+      "staff_email6": "Angela.Joyce@legis.wisconsin.gov",
+      "staff_email7": "Joseph.Knilans@legis.wisconsin.gov",
+      "staff_email8": "Moriah.Krogstad@legis.wisconsin.gov",
+      "staff_email9": "Abbey.Rude@legis.wisconsin.gov",
+      "staff_email10": "Jake.Wolf@legis.wisconsin.gov",
+      "staff_email11": "Kelly.Wright@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:15.037036+00:00",
+    "updated_at": "2026-01-29T08:35:51.504253+00:00",
+    "openstates_url": "https://openstates.org/person/robin-vos-65o6jvpDWk3fX2C7enS8qv/"
+  },
+  {
+    "id": "ocd-person/5faa0c8c-6ceb-4629-819b-b13779b93754",
+    "name": "Robyn Vining",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:wi/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Robyn",
+    "family_name": "Vining",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2530.jpg",
+    "email": "rep.vining@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1976-11-11",
+    "death_date": "",
+    "extras": {
+      "staff1": "Bryce Dille",
+      "staff2": "Jacob Laufgraben",
+      "website": "http://legis.wisconsin.gov/assembly/14/vining",
+      "extra phone": "(888) 534-0014",
+      "staff_email1": "Bryce.Dille@legis.wisconsin.gov",
+      "staff_email2": "Jacob.Laufgraben2@legis.wisconsin.gov"
+    },
+    "created_at": "2019-01-06T20:08:07.854623+00:00",
+    "updated_at": "2026-01-28T02:48:00.715540+00:00",
+    "openstates_url": "https://openstates.org/person/robyn-vining-2uVyzGyGaAwo1fEwV37b0e/"
+  },
+  {
+    "id": "ocd-person/1c2038cc-ee27-475c-a578-0236dba3f3f3",
+    "name": "Ron Tusler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:wi/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Tusler",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2528.jpg",
+    "email": "rep.tusler@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1984-03-21",
+    "death_date": "",
+    "extras": {
+      "staff1": "Joseph Romenesko",
+      "staff2": "Nick Schultz",
+      "website": "http://legis.wisconsin.gov/assembly/03/tusler",
+      "extra phone": "(888) 534-0003",
+      "staff_email1": "Joseph.Romenesko@legis.wisconsin.gov",
+      "staff_email2": "Nick.Schultz@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:15.287924+00:00",
+    "updated_at": "2026-01-28T02:47:55.451557+00:00",
+    "openstates_url": "https://openstates.org/person/ron-tusler-r4Veiysh7UgwnZQBAgCv5/"
+  },
+  {
+    "id": "ocd-person/ccf7588a-e4da-4093-a532-8043b2534a06",
+    "name": "Russell Goodwin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:wi/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Russell",
+    "family_name": "Goodwin",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/rg.jpeg",
+    "email": "rep.goodwin@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1982-01-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:07.323265+00:00",
+    "updated_at": "2026-01-28T02:47:59.438289+00:00",
+    "openstates_url": "https://openstates.org/person/russell-goodwin-6ElTGgiXFcQXyVI35mQOko/"
+  },
+  {
+    "id": "ocd-person/91423371-a92c-4006-ad7d-e21f2f7e666b",
+    "name": "Ryan Clancy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:wi/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Clancy",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2538.jpg",
+    "email": "rep.clancy@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1977-01-09",
+    "death_date": "",
+    "extras": {
+      "staff1": "Amelia Berendt",
+      "website": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2538",
+      "extra phone": "(888) 534-0019",
+      "staff_email1": "Amelia.Berendt@legis.wisconsin.gov"
+    },
+    "created_at": "2023-01-19T06:59:05.686791+00:00",
+    "updated_at": "2026-01-28T02:48:15.483752+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-clancy-4Q68lHeZV2nEJjuSfMQCBX/"
+  },
+  {
+    "id": "ocd-person/3d4582f2-ed69-468c-ad02-33cbd612199d",
+    "name": "Ryan Spaude",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:wi/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Spaude",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Ryan_Spaude_20240808_093050.jpg",
+    "email": "rep.spaude@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:11.678712+00:00",
+    "updated_at": "2026-01-28T02:47:30.172749+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-spaude-1rcIWaEbcQKbfaUOKjQJeX/"
+  },
+  {
+    "id": "ocd-person/06b28490-4fb0-43fe-9577-60bdb921164b",
+    "name": "Scott Allen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:wi/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Allen",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2441.jpg",
+    "email": "rep.allen@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1965-12-18",
+    "death_date": "",
+    "extras": {
+      "staff1": "Michael McKittrick",
+      "website": "http://legis.wisconsin.gov/assembly/97/allen",
+      "extra phone": "(888) 534-0097",
+      "staff_email1": "Michael.McKittrick@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:15.458915+00:00",
+    "updated_at": "2025-03-29T02:48:00.964487+00:00",
+    "openstates_url": "https://openstates.org/person/scott-allen-CdXHbGC9R8W88VqjT0O0x/"
+  },
+  {
+    "id": "ocd-person/77257644-eb9a-447d-bcd8-f3e3de7e49e4",
+    "name": "Scott Krug",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:wi/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Krug",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2478.jpg",
+    "email": "rep.krug@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1975-09-16",
+    "death_date": "",
+    "extras": {
+      "staff1": "Maryna Oliinyk",
+      "staff2": "John Reinemann",
+      "website": "http://legis.wisconsin.gov/assembly/krug/",
+      "extra phone": "(888) 529-0072",
+      "staff_email1": "Maryna.Oliinyk@legis.wisconsin.gov",
+      "staff_email2": "John.Reinemann@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:15.546495+00:00",
+    "updated_at": "2025-04-24T02:48:32.895987+00:00",
+    "openstates_url": "https://openstates.org/person/scott-krug-3cpCq2wJbpKlyInqweXN3M/"
+  },
+  {
+    "id": "ocd-person/a3db3b70-1e27-44a4-a5ae-025450ae4d3d",
+    "name": "Sequanna Taylor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:wi/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Sequanna",
+    "family_name": "Taylor",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/IMG_5830-min.JPG",
+    "email": "rep.taylor@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:42.716329+00:00",
+    "updated_at": "2026-01-28T02:48:29.551800+00:00",
+    "openstates_url": "https://openstates.org/person/sequanna-taylor-4zBwCItQjbdZS6f685Ft2D/"
+  },
+  {
+    "id": "ocd-person/82745ad9-d4b8-48e7-bbb9-3c5d73535c30",
+    "name": "Shae Sortwell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:wi/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Shae",
+    "family_name": "Sortwell",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2516.jpg",
+    "email": "rep.sortwell@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1985-08-03",
+    "death_date": "",
+    "extras": {
+      "staff1": "Connie Lewis",
+      "staff2": "Zach Pfaffenbach",
+      "website": "http://legis.wisconsin.gov/assembly/02/Sortwell",
+      "extra phone": "(888) 534-0002",
+      "staff_email1": "Connie.Lewis@legis.wisconsin.gov",
+      "staff_email2": "Zach.Pfaffenbach@legis.wisconsin.gov"
+    },
+    "created_at": "2019-01-06T20:07:45.034427+00:00",
+    "updated_at": "2026-01-28T02:48:25.927517+00:00",
+    "openstates_url": "https://openstates.org/person/shae-sortwell-3yAAxluOqACF1ZWhPPDaSG/"
+  },
+  {
+    "id": "ocd-person/d949fee5-765b-43ea-913c-386fe2b3c441",
+    "name": "Shannon Zimmerman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:wi/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Shannon",
+    "family_name": "Zimmerman",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2535.jpg",
+    "email": "rep.zimmerman@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1972-03-15",
+    "death_date": "",
+    "extras": {
+      "staff1": "Al Colvin",
+      "website": "http://legis.wisconsin.gov/assembly/30/zimmerman",
+      "extra phone": "(888) 529-0030",
+      "staff_email1": "Al.Colvin@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:15.719073+00:00",
+    "updated_at": "2026-01-28T02:47:42.873022+00:00",
+    "openstates_url": "https://openstates.org/person/shannon-zimmerman-6c19Mkguomf0ELmV4vY0ET/"
+  },
+  {
+    "id": "ocd-person/5d04e8d6-f9aa-4c1e-b1d4-102a0caff933",
+    "name": "Shelia Stubbs",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:wi/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Shelia",
+    "family_name": "Stubbs",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2520.jpg",
+    "email": "rep.stubbs@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "1971-02-22",
+    "death_date": "",
+    "extras": {
+      "staff1": "Danesha Bonds",
+      "staff2": "Grace Johnson",
+      "website": "http://legis.wisconsin.gov/assembly/77/stubbs",
+      "extra phone": "(888) 534-0077",
+      "staff_email1": "Danesha.Bonds@legis.wisconsin.gov",
+      "staff_email2": "Grace.Johnson@legis.wisconsin.gov"
+    },
+    "created_at": "2019-01-06T20:07:47.381011+00:00",
+    "updated_at": "2026-01-28T02:48:26.813350+00:00",
+    "openstates_url": "https://openstates.org/person/shelia-stubbs-2pWWraqX7JBTO2XeKYE2hH/"
+  },
+  {
+    "id": "ocd-person/b3064a65-976e-4324-a66d-dfd44a0f0e3e",
+    "name": "Steve Doyle",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:wi/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Doyle",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2461.jpg",
+    "email": "rep.doyle@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1958-05-21",
+    "death_date": "",
+    "extras": {
+      "staff1": "James Macken",
+      "staff2": "Stephen Pienkos",
+      "website": "http://legis.wisconsin.gov/assembly/94/doyle",
+      "extra phone": "(888) 534-0094",
+      "staff_email1": "James.Macken@legis.wisconsin.gov",
+      "staff_email2": "Stephen.Pienkos@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:15.984789+00:00",
+    "updated_at": "2026-01-28T02:47:20.007612+00:00",
+    "openstates_url": "https://openstates.org/person/steve-doyle-5RoV5BPtvJR01psz027zXa/"
+  },
+  {
+    "id": "ocd-person/bf0fa47b-889e-49fb-8fab-059452acdbf9",
+    "name": "Supreme Moore Omokunde",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:wi/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Supreme",
+    "family_name": "Moore Omokunde",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2486.jpg",
+    "email": "rep.mooreomokunde@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1979-08-22",
+    "death_date": "",
+    "extras": {
+      "staff1": "Will Zolecki",
+      "staff2": "Jacob Laufgraben",
+      "website": "https://legis.wisconsin.gov/assembly/17/moore-omokunde",
+      "extra phone": "(888) 534-0017",
+      "staff_email1": "Will.Zolecki@legis.wisconsin.gov",
+      "staff_email2": "Jacob.Laufgraben@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:20.074972+00:00",
+    "updated_at": "2026-01-28T02:47:48.467770+00:00",
+    "openstates_url": "https://openstates.org/person/supreme-moore-omokunde-5oWgLqDAdraHYZ4XJmmlOD/"
+  },
+  {
+    "id": "ocd-person/710a050b-1721-4e81-bc01-ad3193836e4d",
+    "name": "Sylvia Ortiz-Velez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:wi/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Sylvia",
+    "family_name": "Ortiz-Velez",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2496.jpg",
+    "email": "rep.ortiz-velez@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "staff1": "Megan Roche",
+      "website": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2496",
+      "extra phone": "(888) 534-0008",
+      "staff_email1": "Megan.Roche@legis.wisconsin.gov"
+    },
+    "created_at": "2021-01-05T06:19:16.111815+00:00",
+    "updated_at": "2026-01-28T02:47:47.219062+00:00",
+    "openstates_url": "https://openstates.org/person/sylvia-ortiz-velez-3RIi8nI6TtNybJ5FgkxqhB/"
+  },
+  {
+    "id": "ocd-person/17b43cb0-9999-42ee-a5b4-c68aebc129b6",
+    "name": "Tara Johnson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:wi/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Tara",
+    "family_name": "Johnson",
+    "image": "https://wisconsinpublictv.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/09/politics-election-2024-3rddistrict-tarajohnson-announcement.jpg",
+    "email": "rep.johnson@legis.wisconsin.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:12:51.747577+00:00",
+    "updated_at": "2026-01-28T02:47:42.011002+00:00",
+    "openstates_url": "https://openstates.org/person/tara-johnson-ijBuOqQRqAQQjVxWQXHhm/"
+  },
+  {
+    "id": "ocd-person/c66ed13a-e5a7-49e0-9cce-02d677c5da15",
+    "name": "Tip McGuire",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:wi/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Tip",
+    "family_name": "McGuire",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2483.jpg",
+    "email": "rep.mcguire@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "staff1": "Dan Housh",
+      "staff2": "Quinn Marita",
+      "website": "http://legis.wisconsin.gov/assembly/64/mcguire",
+      "extra phone": "(888) 534-0064",
+      "staff_email1": "Dan.Housh@legis.wisconsin.gov",
+      "staff_email2": "Quinn.Marita@legis.wisconsin.gov"
+    },
+    "created_at": "2020-05-14T19:07:08.460464+00:00",
+    "updated_at": "2026-01-28T02:47:21.329008+00:00",
+    "openstates_url": "https://openstates.org/person/tip-mcguire-62R7iAOiwf3lCZK3MjwGWL/"
+  },
+  {
+    "id": "ocd-person/c1e8d1c1-380d-4f59-893e-a18f77be21dd",
+    "name": "Todd Novak",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:wi/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Novak",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2493.jpg",
+    "email": "rep.novak@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1965-04-23",
+    "death_date": "",
+    "extras": {
+      "staff1": "Morgan O'Flahrity",
+      "staff2": "Travis Wells",
+      "website": "http://legis.wisconsin.gov/assembly/51/novak",
+      "extra phone": "(888) 534-0051",
+      "staff_email1": "Morgan.O'Flahrity@legis.wisconsin.gov",
+      "staff_email2": "Travis.Wells@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:16.665984+00:00",
+    "updated_at": "2025-04-24T02:49:46.109566+00:00",
+    "openstates_url": "https://openstates.org/person/todd-novak-5ttuuDYFQYFiOHbZ2HPlO9/"
+  },
+  {
+    "id": "ocd-person/5967b2fb-a060-4262-b10d-6fd27d81bf3f",
+    "name": "Tony Kurtz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:wi/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Kurtz",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2479.jpg",
+    "email": "rep.kurtz@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1966-12-23",
+    "death_date": "",
+    "extras": {
+      "staff1": "Joseph Severance",
+      "staff2": "Danielle Zimmerman",
+      "website": "http://legis.wisconsin.gov/assembly/50/Kurtz",
+      "extra phone": "(888) 534-0050",
+      "staff_email1": "Joseph.Severance@legis.wisconsin.gov",
+      "staff_email2": "Danielle.Zimmerman@legis.wisconsin.gov"
+    },
+    "created_at": "2019-01-06T20:08:08.002837+00:00",
+    "updated_at": "2026-01-28T02:47:52.637364+00:00",
+    "openstates_url": "https://openstates.org/person/tony-kurtz-2ihhsZrc2IZ9dzumyPrz3f/"
+  },
+  {
+    "id": "ocd-person/97dae592-4e4a-4cf2-9d56-069d7432b8d9",
+    "name": "Travis Tranel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:wi/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Travis",
+    "family_name": "Tranel",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2527.jpg",
+    "email": "rep.tranel@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1985-09-12",
+    "death_date": "",
+    "extras": {
+      "staff1": "Jeff Curry",
+      "staff2": "Zach Oswald",
+      "website": "http://legis.wisconsin.gov/assembly/tranel/",
+      "extra phone": "(888) 872-0049",
+      "staff_email1": "Jeff.Curry@legis.wisconsin.gov",
+      "staff_email2": "Zach.Oswald@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:16.749948+00:00",
+    "updated_at": "2025-04-24T02:48:38.389448+00:00",
+    "openstates_url": "https://openstates.org/person/travis-tranel-4cXsP10C0CxhMLm1qZBygb/"
+  },
+  {
+    "id": "ocd-person/0ea516ae-e0f5-4d3e-baee-124e0b00d70e",
+    "name": "Treig Pronschinske",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:wi/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Treig",
+    "family_name": "Pronschinske",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2502.jpg",
+    "email": "rep.pronschinske@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1978-07-07",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Sergeant At Arms",
+      "staff1": "Ilya Maro",
+      "staff2": "Brian Narges",
+      "website": "http://legis.wisconsin.gov/assembly/92/Pronschinske",
+      "extra phone": "(888) 534-0092",
+      "staff_email1": "Ilya.Maro@legis.wisconsin.gov",
+      "staff_email2": "Brian.Narges@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:16.829756+00:00",
+    "updated_at": "2026-01-28T02:47:31.002211+00:00",
+    "openstates_url": "https://openstates.org/person/treig-pronschinske-RdKyLyU4JRmXVMCLhha7K/"
+  },
+  {
+    "id": "ocd-person/b4554989-ede4-44a0-a541-c2aea2659d39",
+    "name": "Tyler August",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:wi/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Tyler",
+    "family_name": "August",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2445.jpg",
+    "email": "rep.august@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1983-01-26",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Leader",
+      "staff1": "Luke Bacher",
+      "staff2": "Ariana Beno",
+      "staff3": "Bonnie Deering",
+      "staff4": "Jason Rostan",
+      "website": "http://legis.wisconsin.gov/assembly/august/",
+      "extra phone": "(888) 529-0032",
+      "staff_email1": "Luke.Bacher@legis.wisconsin.gov",
+      "staff_email2": "Ariana.Beno@legis.wisconsin.gov",
+      "staff_email3": "Bonnie.Deering@legis.wisconsin.gov",
+      "staff_email4": "Jason.Rostan@legis.wisconsin.gov"
+    },
+    "created_at": "2018-10-18T16:14:16.909548+00:00",
+    "updated_at": "2025-04-24T02:49:16.441869+00:00",
+    "openstates_url": "https://openstates.org/person/tyler-august-5UHau7Ual3ICi9NIrM4dzt/"
+  },
+  {
+    "id": "ocd-person/b4fedde3-c1a5-4cb5-976d-05f4c541e382",
+    "name": "Vinnie Miresse",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:wi/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Vinnie",
+    "family_name": "Miresse",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Vinnie_Miresse.jpeg",
+    "email": "rep.miresse@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T08:13:21.803434+00:00",
+    "updated_at": "2026-01-28T02:47:28.356230+00:00",
+    "openstates_url": "https://openstates.org/person/vinnie-miresse-5VX5mbpLhLURQ6y7jlYNfu/"
+  },
+  {
+    "id": "ocd-person/790447a2-d03d-4bc7-b15c-a72b25689eb3",
+    "name": "Will Penterman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:wi/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:wi/government",
+      "name": "Wisconsin",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Penterman",
+    "image": "https://docs.legis.wisconsin.gov/2023/legislators/assembly/2497.jpg",
+    "email": "rep.penterman@legis.wisconsin.gov",
+    "gender": "Male",
+    "birth_date": "1996-05-18",
+    "death_date": "",
+    "extras": {
+      "staff1": "Kathryn Heitman",
+      "staff2": "Jon Minneci",
+      "website": "https://legis.wisconsin.gov/assembly/37/penterman",
+      "extra phone": "(888) 534-0037",
+      "staff_email1": "Kathryn.Heitman@legis.wisconsin.gov",
+      "staff_email2": "Jon.Minneci@legis.wisconsin.gov"
+    },
+    "created_at": "2021-08-16T22:19:55.958201+00:00",
+    "updated_at": "2026-01-28T02:47:25.391540+00:00",
+    "openstates_url": "https://openstates.org/person/will-penterman-3gM1hWeFCmNHPmI7gfDLqV/"
+  }
+]

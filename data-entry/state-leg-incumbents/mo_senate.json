@@ -1,0 +1,928 @@
+[
+  {
+    "id": "ocd-person/f436aa10-c006-4128-9748-050bf50c4e21",
+    "name": "Adam Schnelting",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:mo/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Adam",
+    "family_name": "Schnelting",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2087",
+    "email": "adam.schnelting@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Charles"
+    },
+    "created_at": "2019-01-17T06:13:29.288115+00:00",
+    "updated_at": "2026-04-04T01:15:02.502849+00:00",
+    "openstates_url": "https://openstates.org/person/adam-schnelting-7Qp6miVSq5pUN4DYEUpR4r/"
+  },
+  {
+    "id": "ocd-person/048bc29f-0bab-4fa1-8a1e-647b0eba4dcd",
+    "name": "Angela Mosley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:mo/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Angela",
+    "family_name": "Mosley",
+    "image": "https://www.senate.mo.gov/21web/wp-content/uploads/2020/12/Mosley2021-200x300.jpg",
+    "email": "angela.mosley@senate.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-08T00:10:32.538625+00:00",
+    "updated_at": "2026-04-04T01:15:43.011951+00:00",
+    "openstates_url": "https://openstates.org/person/angela-mosley-8Zq4dSg4oEaowGvf9DT0H/"
+  },
+  {
+    "id": "ocd-person/de8806cc-fa03-4745-ae1e-198c56492f9a",
+    "name": "Barbara Washington",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:mo/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Barbara",
+    "family_name": "Washington",
+    "image": "",
+    "email": "barbara.washington@senate.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "last_name": "Washington",
+      "first_name": "Barbara"
+    },
+    "created_at": "2018-10-18T14:50:25.778537+00:00",
+    "updated_at": "2026-04-04T01:15:51.566990+00:00",
+    "openstates_url": "https://openstates.org/person/barbara-washington-6luSZiaKeYJXMaDUH6aQTC/"
+  },
+  {
+    "id": "ocd-person/c44ce433-7957-40b8-98dd-221b2f7d1436",
+    "name": "Ben Brown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:mo/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Brown",
+    "image": "https://www.senate.mo.gov/WebPhotos/SenatorPortraits/Brown26.jpg",
+    "email": "ben.brown@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-05-08T23:49:45.608196+00:00",
+    "updated_at": "2026-04-04T01:15:48.822251+00:00",
+    "openstates_url": "https://openstates.org/person/ben-brown-5yPdP6G7wNzO4KsPWBEsn0/"
+  },
+  {
+    "id": "ocd-person/9f6b3ff8-f439-44d0-bdf7-315451e52cb7",
+    "name": "Brad Hudson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:mo/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Hudson",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2081",
+    "email": "brad.hudson@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Cape Fair"
+    },
+    "created_at": "2019-01-17T06:13:21.791133+00:00",
+    "updated_at": "2026-04-04T01:15:27.384405+00:00",
+    "openstates_url": "https://openstates.org/person/brad-hudson-4qonBYRxutzwszgttmeFBn/"
+  },
+  {
+    "id": "ocd-person/4f5340d3-7637-4eb2-be68-890073af50af",
+    "name": "Brian Williams",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:mo/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Williams",
+    "image": "https://www.senate.mo.gov/19web/wp-content/uploads/2019/05/Williams2019-200x300.jpg",
+    "email": "brian.williams@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-17T06:13:34.461182+00:00",
+    "updated_at": "2026-04-04T01:15:40.344170+00:00",
+    "openstates_url": "https://openstates.org/person/brian-williams-2PgRJuIYSEKv2ht0VMiVEl/"
+  },
+  {
+    "id": "ocd-person/77b71863-3523-489a-a6a8-953ffa0d8955",
+    "name": "Cindy O'Laughlin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:mo/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Cindy",
+    "family_name": "O'Laughlin",
+    "image": "https://www.senate.mo.gov/19web/wp-content/uploads/2019/09/OLaughlin2019-200x300.jpg",
+    "email": "cindy.olaughlin@senate.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-17T06:13:30.244861+00:00",
+    "updated_at": "2026-04-04T01:15:06.269391+00:00",
+    "openstates_url": "https://openstates.org/person/cindy-o-laughlin-3dtlDtrsSvEvPfMtd1F7Rt/"
+  },
+  {
+    "id": "ocd-person/c5e38dee-7f82-4795-a134-b984b6878458",
+    "name": "Curtis Trent",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:mo/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Curtis",
+    "family_name": "Trent",
+    "image": "",
+    "email": "curtis.trent@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1983-07-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-25T02:00:02.321692+00:00",
+    "updated_at": "2026-04-04T01:15:46.547329+00:00",
+    "openstates_url": "https://openstates.org/person/curtis-trent-61PTpG9taPXEBAsQMADXaa/"
+  },
+  {
+    "id": "ocd-person/2f4b4782-bc17-40fd-88b7-53840c68ee3a",
+    "name": "David Gregory",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:mo/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Gregory",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=1943",
+    "email": "david.gregory@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "last_name": "Gregory",
+      "first_name": "David"
+    },
+    "created_at": "2018-10-18T14:50:02.596361+00:00",
+    "updated_at": "2026-04-04T01:15:54.189295+00:00",
+    "openstates_url": "https://openstates.org/person/david-gregory-1RF2buundSaqKUSeti1F0c/"
+  },
+  {
+    "id": "ocd-person/f6f3c354-c65e-4d9a-a713-5fce1ad2c403",
+    "name": "Doug Beck",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:mo/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Beck",
+    "image": "https://www.senate.mo.gov/21web/wp-content/uploads/2020/12/Beck2021-683x1024.jpg",
+    "email": "doug.beck@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "last_name": "Beck",
+      "first_name": "Doug"
+    },
+    "created_at": "2021-03-10T00:11:18.779402+00:00",
+    "updated_at": "2026-04-04T01:14:55.632947+00:00",
+    "openstates_url": "https://openstates.org/person/doug-beck-7VzVlqOg73guLhub6SNO0R/"
+  },
+  {
+    "id": "ocd-person/87967de8-0f0d-45d5-9248-2767f9157d7b",
+    "name": "Jamie Burger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:mo/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jamie",
+    "family_name": "Burger",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2237",
+    "email": "jamie.burger@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1957-10-02",
+    "death_date": "",
+    "extras": {
+      "hometown": "Benton"
+    },
+    "created_at": "2021-01-08T00:10:39.796423+00:00",
+    "updated_at": "2026-04-04T01:16:10.641557+00:00",
+    "openstates_url": "https://openstates.org/person/jamie-burger-47qjp5mlrRr6jcj6EQagrz/"
+  },
+  {
+    "id": "ocd-person/87d06121-1f5c-49ed-88dc-f5c70e88533e",
+    "name": "Jason Bean",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:mo/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Bean",
+    "image": "https://www.senate.mo.gov/21web/wp-content/uploads/2020/12/Bean-200x300.jpg",
+    "email": "jason.bean@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-08T00:10:39.049268+00:00",
+    "updated_at": "2026-04-04T01:15:33.679041+00:00",
+    "openstates_url": "https://openstates.org/person/jason-bean-48HC0y59nwtR1W3lnxP1HK/"
+  },
+  {
+    "id": "ocd-person/29fe2ddb-6025-4e60-942d-fd0880ebad5b",
+    "name": "Jill Carter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:mo/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jill",
+    "family_name": "Carter",
+    "image": "",
+    "email": "jill.carter@senate.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-25T02:00:04.576614+00:00",
+    "updated_at": "2026-06-04T07:17:02.968153+00:00",
+    "openstates_url": "https://openstates.org/person/jill-carter-1HEqQSSxJELuXsDon9dm1b/"
+  },
+  {
+    "id": "ocd-person/a93088fa-ad80-49de-aa94-d03da0add0bc",
+    "name": "Joe Nicola",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:mo/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Nicola",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JoeNicola2023.jpeg",
+    "email": "joe.nicola@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1963-09-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:49.302740+00:00",
+    "updated_at": "2026-04-04T01:15:41.088527+00:00",
+    "openstates_url": "https://openstates.org/person/joe-nicola-59FsnWgcSCCh5reohbe1hU/"
+  },
+  {
+    "id": "ocd-person/867469f6-f988-49ec-be8c-4a065db3f223",
+    "name": "Justin Brown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:mo/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Brown",
+    "image": "https://www.senate.mo.gov/19web/wp-content/uploads/2019/09/Brown2019-200x300.jpg",
+    "email": "justin.brown@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-17T06:13:33.671731+00:00",
+    "updated_at": "2026-04-04T01:14:49.810815+00:00",
+    "openstates_url": "https://openstates.org/person/justin-brown-45iAjVNPKNyoI2qjej4Gax/"
+  },
+  {
+    "id": "ocd-person/fbeafead-44b9-4f08-9854-ad516fb6c838",
+    "name": "Karla May",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:mo/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Karla",
+    "family_name": "May",
+    "image": "https://www.senate.mo.gov/19web/wp-content/uploads/2019/01/KarlaMay-200x300.jpg",
+    "email": "karla.may@senate.mo.gov",
+    "gender": "Female",
+    "birth_date": "1970-06-12",
+    "death_date": "",
+    "extras": {
+      "last_name": "May",
+      "first_name": "Karla"
+    },
+    "created_at": "2018-10-18T14:50:13.721897+00:00",
+    "updated_at": "2026-04-04T01:15:22.700992+00:00",
+    "openstates_url": "https://openstates.org/person/karla-may-7fMSxByTFqxIQb5W0ZXj7g/"
+  },
+  {
+    "id": "ocd-person/1ab01adf-962d-47ac-977c-2cf25712f583",
+    "name": "Kurtis Gregory",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:mo/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Kurtis",
+    "family_name": "Gregory",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2218",
+    "email": "kurtis.gregory@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1986-08-07",
+    "death_date": "",
+    "extras": {
+      "hometown": "Marshall"
+    },
+    "created_at": "2021-01-08T00:10:44.243262+00:00",
+    "updated_at": "2026-04-04T01:15:37.705197+00:00",
+    "openstates_url": "https://openstates.org/person/kurtis-gregory-oMHP0cIhC69TTaJYwHbQB/"
+  },
+  {
+    "id": "ocd-person/934fdfca-5cdf-4c67-a3b0-b23e433f87f6",
+    "name": "Lincoln Hough",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:mo/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Lincoln",
+    "family_name": "Hough",
+    "image": "https://www.senate.mo.gov/19web/wp-content/uploads/2019/10/Hough-200x300.jpg",
+    "email": "lincoln.hough@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1982-06-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-17T06:13:21.457254+00:00",
+    "updated_at": "2026-04-04T01:15:56.619375+00:00",
+    "openstates_url": "https://openstates.org/person/lincoln-hough-4TyNEEMLdmC4B6wfQp35S2/"
+  },
+  {
+    "id": "ocd-person/d8594030-4826-48c5-af43-674470f1dd44",
+    "name": "Maggie Nurrenbern",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:mo/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Maggie",
+    "family_name": "Nurrenbern",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2211",
+    "email": "maggie.nurrenbern@senate.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2021-01-08T00:10:32.796322+00:00",
+    "updated_at": "2026-04-04T01:15:28.238344+00:00",
+    "openstates_url": "https://openstates.org/person/maggie-nurrenbern-6aF84zEwhIXVMKTZY1YWNo/"
+  },
+  {
+    "id": "ocd-person/f1d83642-4aa6-4fea-80f1-4c3f422c63ed",
+    "name": "Mary Elizabeth Coleman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:mo/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mary Elizabeth",
+    "family_name": "Coleman",
+    "image": "",
+    "email": "maryelizabeth.coleman@senate.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-25T02:00:01.603013+00:00",
+    "updated_at": "2026-04-04T01:15:38.388772+00:00",
+    "openstates_url": "https://openstates.org/person/mary-elizabeth-coleman-7MLxW0jjBI330VP6VnPCgf/"
+  },
+  {
+    "id": "ocd-person/8df40920-38e1-4892-aa6b-764467bf79b7",
+    "name": "Mike Bernskoetter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:mo/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Bernskoetter",
+    "image": "https://www.senate.mo.gov/19web/wp-content/uploads/2019/01/Bernskoetter-200x300.jpg",
+    "email": "mike.bernskoetter@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1959-11-29",
+    "death_date": "",
+    "extras": {
+      "last_name": "Bernskoetter",
+      "first_name": "Mike"
+    },
+    "created_at": "2018-10-18T14:50:22.232121+00:00",
+    "updated_at": "2026-04-04T01:15:53.385570+00:00",
+    "openstates_url": "https://openstates.org/person/mike-bernskoetter-4JrRRlh3Pma14sbIpT4wER/"
+  },
+  {
+    "id": "ocd-person/70c04c22-b1a9-4c3c-96f9-36761e63f3f8",
+    "name": "Mike Cierpiot",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:mo/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Cierpiot",
+    "image": "https://www.senate.mo.gov/20web/wp-content/uploads/2020/01/Cierpiot2020-200x300.jpg",
+    "email": "mike.cierpiot@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1953-01-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:50:13.073894+00:00",
+    "updated_at": "2026-04-04T01:15:05.098560+00:00",
+    "openstates_url": "https://openstates.org/person/mike-cierpiot-3Ql1HsuoZNhId8UC8oi196/"
+  },
+  {
+    "id": "ocd-person/bfad4ef7-fad2-46e6-8f12-f8ea9feaa0cb",
+    "name": "Mike Henderson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:mo/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Henderson",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=1944",
+    "email": "mike.henderson@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Bonne Terre"
+    },
+    "created_at": "2018-10-18T14:50:28.028696+00:00",
+    "updated_at": "2026-04-04T01:15:12.639170+00:00",
+    "openstates_url": "https://openstates.org/person/mike-henderson-5pgjfff4XsX3jdEDTmnbCt/"
+  },
+  {
+    "id": "ocd-person/43563b48-1d26-4a85-bad2-615971201d41",
+    "name": "Mike Moon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:mo/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Moon",
+    "image": "",
+    "email": "mike.moon@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1958-12-31",
+    "death_date": "",
+    "extras": {
+      "last_name": "Moon",
+      "first_name": "Mike"
+    },
+    "created_at": "2021-01-08T00:10:44.716021+00:00",
+    "updated_at": "2026-04-04T01:15:30.390272+00:00",
+    "openstates_url": "https://openstates.org/person/mike-moon-233tPwN2d0cpPAvE8klXM1/"
+  },
+  {
+    "id": "ocd-person/ecbee637-2b07-4028-acb3-b82df2edb42a",
+    "name": "Nick Schroer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:mo/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Schroer",
+    "image": "",
+    "email": "nick.schroer@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-25T02:00:03.537473+00:00",
+    "updated_at": "2026-04-04T01:16:05.158437+00:00",
+    "openstates_url": "https://openstates.org/person/nick-schroer-7CjQgOOedyBrIBw9S28ajK/"
+  },
+  {
+    "id": "ocd-person/618e91b0-663d-4095-9a38-eefab6304e5f",
+    "name": "Patty Lewis",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:mo/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Patty",
+    "family_name": "Lewis",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2213",
+    "email": "patty.lewis@senate.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2021-01-08T00:10:33.735120+00:00",
+    "updated_at": "2026-04-04T01:14:51.997208+00:00",
+    "openstates_url": "https://openstates.org/person/patty-lewis-2y5PPx7xlBKP5oEj2YgyAp/"
+  },
+  {
+    "id": "ocd-person/e4811e7a-7df7-4275-917d-8bdcc2778fb1",
+    "name": "Rick Brattin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:mo/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Brattin",
+    "image": "",
+    "email": "rick.brattin@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1980-07-22",
+    "death_date": "",
+    "extras": {
+      "last_name": "Brattin",
+      "first_name": "Rick"
+    },
+    "created_at": "2021-01-08T00:10:46.622571+00:00",
+    "updated_at": "2026-04-04T01:14:47.850669+00:00",
+    "openstates_url": "https://openstates.org/person/rick-brattin-6xBG0EpS2O6arpwxyo1vxh/"
+  },
+  {
+    "id": "ocd-person/bb98b6a0-ba5f-45f8-ad14-b798515fa8a0",
+    "name": "Rusty Black",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:mo/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Rusty",
+    "family_name": "Black",
+    "image": "",
+    "email": "rusty.black@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-25T02:00:02.853930+00:00",
+    "updated_at": "2026-04-04T01:15:20.009865+00:00",
+    "openstates_url": "https://openstates.org/person/rusty-black-5hzM20QdT8AqHhA5fwtfOa/"
+  },
+  {
+    "id": "ocd-person/4f194218-3d95-4f08-8963-7e3440fdb671",
+    "name": "Sandy Crawford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:mo/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Sandy",
+    "family_name": "Crawford",
+    "image": "https://www.senate.mo.gov/19web/wp-content/uploads/2019/09/Crawford2019-200x300.jpg",
+    "email": "sandy.crawford@senate.mo.gov",
+    "gender": "Female",
+    "birth_date": "1957-10-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T14:50:16.121625+00:00",
+    "updated_at": "2026-04-04T01:15:35.668446+00:00",
+    "openstates_url": "https://openstates.org/person/sandy-crawford-2PFw5GQwiCDJsrvKSMFjBh/"
+  },
+  {
+    "id": "ocd-person/63dea1c8-8916-4ca8-8821-223a7fef95a9",
+    "name": "Stephen Webber",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:mo/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Stephen",
+    "family_name": "Webber",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/5569.jpg",
+    "email": "stephen.webber@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1983-06-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:58.519163+00:00",
+    "updated_at": "2026-04-04T01:15:52.204254+00:00",
+    "openstates_url": "https://openstates.org/person/stephen-webber-32RyyR9E3BXJ0xwduzRS25/"
+  },
+  {
+    "id": "ocd-person/20ad6a34-2965-4068-b819-49c5e0d27831",
+    "name": "Steve Roberts",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:mo/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Roberts",
+    "image": "https://www.senate.mo.gov/21web/wp-content/uploads/2020/12/Roberts-2021-200x300.jpg",
+    "email": "steven.roberts@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-08T00:10:34.396099+00:00",
+    "updated_at": "2026-04-04T01:16:14.606870+00:00",
+    "openstates_url": "https://openstates.org/person/steve-roberts-zf0KHGi0pdPIfK4qSmFLV/"
+  },
+  {
+    "id": "ocd-person/98b8120c-7a9c-4415-9e7b-8bfcdc8fa8a5",
+    "name": "Tony Luetkemeyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:mo/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Luetkemeyer",
+    "image": "https://www.senate.mo.gov/20web/wp-content/uploads/2020/01/010720-002-200x300.jpg",
+    "email": "tony.luetkemeyer@senate.mo.gov",
+    "gender": "Male",
+    "birth_date": "1983-09-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-17T06:13:33.184122+00:00",
+    "updated_at": "2026-04-04T01:15:19.355479+00:00",
+    "openstates_url": "https://openstates.org/person/tony-luetkemeyer-4eAx9mJCf3Rlkm3Mc4lFp7/"
+  },
+  {
+    "id": "ocd-person/802c155f-8979-418f-b13b-b75de93caf31",
+    "name": "Tracy McCreery",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:mo/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Tracy",
+    "family_name": "McCreery",
+    "image": "",
+    "email": "tracy.mccreery@senate.mo.gov",
+    "gender": "Female",
+    "birth_date": "1966-12-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-25T01:59:58.471987+00:00",
+    "updated_at": "2026-04-04T01:15:50.688669+00:00",
+    "openstates_url": "https://openstates.org/person/tracy-mccreery-3trAAfIrHCldD6ztfHvknp/"
+  }
+]

@@ -1,0 +1,4477 @@
+[
+  {
+    "id": "ocd-person/ba6eb394-0402-49ba-9917-c5618d8a1589",
+    "name": "Aaron Crossley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:mo/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Aaron",
+    "family_name": "Crossley",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2366",
+    "email": "aaron.crossley@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Independence"
+    },
+    "created_at": "2023-01-05T23:27:36.506140+00:00",
+    "updated_at": "2026-06-04T07:16:49.757728+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-crossley-5fnA8dDTbOVSGUlPE0b9Mv/"
+  },
+  {
+    "id": "ocd-person/f2e657d5-999a-4d77-98e3-b06a7c3771f4",
+    "name": "Adrian Plank",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:mo/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Adrian",
+    "family_name": "Plank",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2395",
+    "email": "adrian.plank@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Columbia"
+    },
+    "created_at": "2023-01-05T23:27:28.597709+00:00",
+    "updated_at": "2026-06-04T07:16:17.810596+00:00",
+    "openstates_url": "https://openstates.org/person/adrian-plank-7OLPQtdxibdfeD8JGvTEQ8/"
+  },
+  {
+    "id": "ocd-person/b11b5a8d-08e8-4cf3-802c-42a842102cfa",
+    "name": "Alex Riley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "134",
+      "division_id": "ocd-division/country:us/state:mo/sldl:134"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Riley",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2232",
+    "email": "alex.riley@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Springfield"
+    },
+    "created_at": "2021-01-08T00:10:32.500380+00:00",
+    "updated_at": "2026-06-04T07:16:59.927368+00:00",
+    "openstates_url": "https://openstates.org/person/alex-riley-5OC8pzpNmftq9WZbg3DScE/"
+  },
+  {
+    "id": "ocd-person/fff43ce1-d209-4556-ba74-32f9ba46d3c0",
+    "name": "Ann Kelley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "127",
+      "division_id": "ocd-division/country:us/state:mo/sldl:127"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Ann",
+    "family_name": "Kelley",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2051",
+    "email": "ann.kelley@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Lamar"
+    },
+    "created_at": "2019-01-17T06:13:34.174113+00:00",
+    "updated_at": "2025-07-18T01:16:50.141502+00:00",
+    "openstates_url": "https://openstates.org/person/ann-kelley-7myewUTyBTM6IoCCmsySqu/"
+  },
+  {
+    "id": "ocd-person/a5cc5083-e44a-4379-b4db-74c4a930821b",
+    "name": "Anthony Ealy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:mo/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Anthony",
+    "family_name": "Ealy",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2384",
+    "email": "anthony.ealy@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Grandview"
+    },
+    "created_at": "2023-01-05T23:27:20.435189+00:00",
+    "updated_at": "2025-07-18T01:16:45.663840+00:00",
+    "openstates_url": "https://openstates.org/person/anthony-ealy-52r6ZFtUOHfJJV2RJHlxkJ/"
+  },
+  {
+    "id": "ocd-person/1ff1dec0-c449-4ff8-aa22-0830817c2070",
+    "name": "Ashley Aune",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:mo/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Ashley",
+    "family_name": "Aune",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2210",
+    "email": "ashley.aune@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2021-01-08T00:10:35.749989+00:00",
+    "updated_at": "2025-07-18T01:16:53.519254+00:00",
+    "openstates_url": "https://openstates.org/person/ashley-aune-yHIQ1v4fLoUjQP73tCcvQ/"
+  },
+  {
+    "id": "ocd-person/54f9145f-2529-448e-8238-b00d049a782c",
+    "name": "Barry Hovis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "146",
+      "division_id": "ocd-division/country:us/state:mo/sldl:146"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Barry",
+    "family_name": "Hovis",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2129",
+    "email": "barry.hovis@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Whitewater"
+    },
+    "created_at": "2019-01-17T06:13:29.143635+00:00",
+    "updated_at": "2026-06-04T07:17:32.428751+00:00",
+    "openstates_url": "https://openstates.org/person/barry-hovis-2aLBTiochC6cRK6EMxuyMu/"
+  },
+  {
+    "id": "ocd-person/483aaa6b-d64a-48d0-8bc4-bca6c252f8dc",
+    "name": "Becky Laubinger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "117",
+      "division_id": "ocd-division/country:us/state:mo/sldl:117"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Becky",
+    "family_name": "Laubinger",
+    "image": "",
+    "email": "becky.laubinger@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:40.105995+00:00",
+    "updated_at": "2026-06-04T07:15:56.254216+00:00",
+    "openstates_url": "https://openstates.org/person/becky-laubinger-2CIFzA2hpihlyxEsq1DF88/"
+  },
+  {
+    "id": "ocd-person/1f082953-c9f5-4a72-a281-cdb9fe4bda5e",
+    "name": "Ben Keathley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "101",
+      "division_id": "ocd-division/country:us/state:mo/sldl:101"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Ben",
+    "family_name": "Keathley",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2389",
+    "email": "ben.keathley@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Chesterfield"
+    },
+    "created_at": "2023-01-05T23:27:18.387883+00:00",
+    "updated_at": "2025-07-18T01:16:31.583797+00:00",
+    "openstates_url": "https://openstates.org/person/ben-keathley-wYUUwx6B3FdGmOG30ZEZa/"
+  },
+  {
+    "id": "ocd-person/9c485ac1-4ad5-4466-9392-a9014827ef56",
+    "name": "Bennie Cook",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "143",
+      "division_id": "ocd-division/country:us/state:mo/sldl:143"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bennie",
+    "family_name": "Cook",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2235",
+    "email": "bennie.cook@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Houston"
+    },
+    "created_at": "2023-01-05T23:27:41.847414+00:00",
+    "updated_at": "2025-07-18T01:18:05.494037+00:00",
+    "openstates_url": "https://openstates.org/person/bennie-cook-4ktrssGcQUSEqks2arZASk/"
+  },
+  {
+    "id": "ocd-person/55b3b80d-f69c-4f9f-aaed-4d1e5cd2634d",
+    "name": "Betsy Fogle",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "135",
+      "division_id": "ocd-division/country:us/state:mo/sldl:135"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Betsy",
+    "family_name": "Fogle",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2233",
+    "email": "betsy.fogle@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Springfield"
+    },
+    "created_at": "2021-01-08T00:10:45.227094+00:00",
+    "updated_at": "2026-06-04T07:16:54.738514+00:00",
+    "openstates_url": "https://openstates.org/person/betsy-fogle-2biTjXcBv01O7vzJLKX7oz/"
+  },
+  {
+    "id": "ocd-person/7472aac6-4730-456b-8e2f-3b79e45da74c",
+    "name": "Bill Allen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:mo/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Allen",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2377",
+    "email": "bill.allen@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2023-01-05T23:27:14.053197+00:00",
+    "updated_at": "2026-01-29T07:10:26.801775+00:00",
+    "openstates_url": "https://openstates.org/person/bill-allen-3XjVnj2XH9JQMcdx0Ahis0/"
+  },
+  {
+    "id": "ocd-person/28245e55-fddc-46db-85a7-ce9ca55da6d7",
+    "name": "Bill Falkner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:mo/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Falkner",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2062",
+    "email": "bill.falkner@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1959-07-12",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Joseph"
+    },
+    "created_at": "2021-01-08T00:10:35.447903+00:00",
+    "updated_at": "2026-06-04T07:17:35.874903+00:00",
+    "openstates_url": "https://openstates.org/person/bill-falkner-1DkJRD2JykJVxgbEm3RvEt/"
+  },
+  {
+    "id": "ocd-person/6b7c5c9c-05ba-4a2e-8f23-117edbf2969b",
+    "name": "Bill Hardwick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "121",
+      "division_id": "ocd-division/country:us/state:mo/sldl:121"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Hardwick",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2253",
+    "email": "bill.hardwick@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Dixon"
+    },
+    "created_at": "2023-01-05T23:27:29.643228+00:00",
+    "updated_at": "2026-06-04T07:17:23.438050+00:00",
+    "openstates_url": "https://openstates.org/person/bill-hardwick-3Gp0lvetFXIKat7tcLfLmV/"
+  },
+  {
+    "id": "ocd-person/21a85544-7b2f-4d34-9654-a1ebfaa34881",
+    "name": "Bill Irwin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:mo/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Irwin",
+    "image": "https://images.squarespace-cdn.com/content/v1/64e208458934da6e60e3a002/211532ff-154d-44d5-84d6-5cd347f4aaba/Irwin+4+Congress+office.jpg?format=2500w",
+    "email": "bill.irwin@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:19.307240+00:00",
+    "updated_at": "2025-02-04T20:17:54.357109+00:00",
+    "openstates_url": "https://openstates.org/person/bill-irwin-11VfrYA7hbyiqZLmKqzqcb/"
+  },
+  {
+    "id": "ocd-person/720cb5cb-6d39-4cdf-be60-020493ac19d9",
+    "name": "Bill Lucas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "115",
+      "division_id": "ocd-division/country:us/state:mo/sldl:115"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Lucas",
+    "image": "",
+    "email": "william.lucas@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:18.035113+00:00",
+    "updated_at": "2025-02-04T20:17:54.407091+00:00",
+    "openstates_url": "https://openstates.org/person/bill-lucas-3TCvtcXEYd05GycbzvZ5Zp/"
+  },
+  {
+    "id": "ocd-person/d9dd5492-e605-4fc6-a18a-8772a7682a08",
+    "name": "Bill Owen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "131",
+      "division_id": "ocd-division/country:us/state:mo/sldl:131"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Owen",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2231",
+    "email": "bill.owen@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Springfield"
+    },
+    "created_at": "2021-01-08T00:10:40.807719+00:00",
+    "updated_at": "2026-06-04T07:15:57.485716+00:00",
+    "openstates_url": "https://openstates.org/person/bill-owen-6d6TxTyNwLv9bVjo5bzI88/"
+  },
+  {
+    "id": "ocd-person/163f458d-ad80-4bad-9223-69e1f6fec4d2",
+    "name": "Bishop Davidson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "130",
+      "division_id": "ocd-division/country:us/state:mo/sldl:130"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bishop",
+    "family_name": "Davidson",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2230",
+    "email": "bishop.davidson@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1995-04-13",
+    "death_date": "",
+    "extras": {
+      "hometown": "Republic"
+    },
+    "created_at": "2021-01-08T00:10:41.093314+00:00",
+    "updated_at": "2026-06-04T07:16:37.722608+00:00",
+    "openstates_url": "https://openstates.org/person/bishop-davidson-fykHJ8Y0S3lL0CcfdgOaw/"
+  },
+  {
+    "id": "ocd-person/4d763e2a-ab08-46ea-8561-9b3b74b34971",
+    "name": "Bob Bromley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "162",
+      "division_id": "ocd-division/country:us/state:mo/sldl:162"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Bromley",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2074",
+    "email": "bob.bromley@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Carl Junction"
+    },
+    "created_at": "2019-01-17T06:13:28.072499+00:00",
+    "updated_at": "2024-10-08T19:42:51.838542+00:00",
+    "openstates_url": "https://openstates.org/person/bob-bromley-2MARfbGmKQqlCB4E3sxEZN/"
+  },
+  {
+    "id": "ocd-person/b2f744fa-f71d-4865-a704-afcd3d030ff7",
+    "name": "Bob Titus",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "139",
+      "division_id": "ocd-division/country:us/state:mo/sldl:139"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Titus",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2369",
+    "email": "bob.titus@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Billings"
+    },
+    "created_at": "2023-01-05T23:27:39.873836+00:00",
+    "updated_at": "2025-07-18T01:18:02.028010+00:00",
+    "openstates_url": "https://openstates.org/person/bob-titus-5RhdTJw4s3QWbnYZyjptqB/"
+  },
+  {
+    "id": "ocd-person/e0e9f47c-af7c-45f3-9d7e-1a158a19b362",
+    "name": "Brad Banderman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "119",
+      "division_id": "ocd-division/country:us/state:mo/sldl:119"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Banderman",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2379",
+    "email": "brad.banderman@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Clair"
+    },
+    "created_at": "2023-01-05T23:27:35.425724+00:00",
+    "updated_at": "2026-01-29T07:11:24.032888+00:00",
+    "openstates_url": "https://openstates.org/person/brad-banderman-6qPCKvEHAHeKO8LzqWEYCY/"
+  },
+  {
+    "id": "ocd-person/8f5928b4-5528-4506-8075-4e69c5864b42",
+    "name": "Brad Christ",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:mo/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Christ",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2374",
+    "email": "brad.christ@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1983-09-14",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2023-01-05T23:27:25.538017+00:00",
+    "updated_at": "2026-01-29T07:11:07.129243+00:00",
+    "openstates_url": "https://openstates.org/person/brad-christ-4MUeCySgKfzV9xX7BSIKzS/"
+  },
+  {
+    "id": "ocd-person/4cfed488-abe6-46e5-a3aa-55a73e2984ca",
+    "name": "Brad Pollitt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:mo/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Pollitt",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2073",
+    "email": "bradley.pollitt@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Sedalia"
+    },
+    "created_at": "2019-01-17T06:13:26.870591+00:00",
+    "updated_at": "2025-07-18T01:17:20.530785+00:00",
+    "openstates_url": "https://openstates.org/person/brad-pollitt-2LHsDtX7059zMW02X2ZOGY/"
+  },
+  {
+    "id": "ocd-person/18f02633-c607-4c80-9088-742b28a49122",
+    "name": "Brandon Phelps",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:mo/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Phelps",
+    "image": "",
+    "email": "brandon.phelps@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:59.344108+00:00",
+    "updated_at": "2026-06-04T07:16:05.877293+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-phelps-l3YzMjkCt02x0UjKtf3D8/"
+  },
+  {
+    "id": "ocd-person/b7d28fcb-9563-420c-91bb-01d3202124fd",
+    "name": "Brenda Shields",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:mo/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Brenda",
+    "family_name": "Shields",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2093",
+    "email": "brenda.shields@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Joseph"
+    },
+    "created_at": "2019-01-17T06:13:33.465347+00:00",
+    "updated_at": "2026-06-04T07:17:39.815966+00:00",
+    "openstates_url": "https://openstates.org/person/brenda-shields-5arp0rLgbkz4v0nKgarfZ7/"
+  },
+  {
+    "id": "ocd-person/83283f83-e8d3-4e03-949c-1bdfae4bfd7f",
+    "name": "Brian Seitz",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "156",
+      "division_id": "ocd-division/country:us/state:mo/sldl:156"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Seitz",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2240",
+    "email": "brian.seitz@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1961-07-08",
+    "death_date": "",
+    "extras": {
+      "hometown": "Branson"
+    },
+    "created_at": "2021-01-08T00:10:46.506139+00:00",
+    "updated_at": "2026-06-04T07:15:58.906495+00:00",
+    "openstates_url": "https://openstates.org/person/brian-seitz-3zUO4VvrqkOzvLDjdqyFGZ/"
+  },
+  {
+    "id": "ocd-person/d29468e7-eb61-45e7-89ad-4dfb93a0baf2",
+    "name": "Bridget Moore",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:mo/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bridget",
+    "family_name": "Moore",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2248",
+    "email": "bridget.walshmoore@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2021-01-08T00:10:33.396908+00:00",
+    "updated_at": "2026-06-04T07:17:05.594640+00:00",
+    "openstates_url": "https://openstates.org/person/bridget-moore-6PMD9QZqFUubvqSGc6Rc2M/"
+  },
+  {
+    "id": "ocd-person/d01a9b1a-a262-4d27-9de9-b7ad0ff8c7f0",
+    "name": "Bruce Sassmann",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:mo/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bruce",
+    "family_name": "Sassmann",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2222",
+    "email": "bruce.sassmann@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1950-08-11",
+    "death_date": "",
+    "extras": {
+      "hometown": "Bland"
+    },
+    "created_at": "2021-01-08T00:10:32.919646+00:00",
+    "updated_at": "2026-06-04T07:16:08.697070+00:00",
+    "openstates_url": "https://openstates.org/person/bruce-sassmann-6KgYtuUhwVy855g4wCVOjY/"
+  },
+  {
+    "id": "ocd-person/06f2e023-3786-4c2f-b057-fd9087a6a1db",
+    "name": "Bryant Wolfin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "145",
+      "division_id": "ocd-division/country:us/state:mo/sldl:145"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Bryant",
+    "family_name": "Wolfin",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Bryant_Wolfin.jpg",
+    "email": "bryant.wolfin@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:24.983918+00:00",
+    "updated_at": "2025-02-04T20:17:50.315679+00:00",
+    "openstates_url": "https://openstates.org/person/bryant-wolfin-D6wncXU9bCesnHfgE8cLD/"
+  },
+  {
+    "id": "ocd-person/89ef08d6-96fd-4d5f-9a48-d8093ba60052",
+    "name": "Burt Whaley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "138",
+      "division_id": "ocd-division/country:us/state:mo/sldl:138"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Burt",
+    "family_name": "Whaley",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/164677.jpg",
+    "email": "burt.whaley@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1963-12-03",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:36.480473+00:00",
+    "updated_at": "2026-06-04T07:16:47.880221+00:00",
+    "openstates_url": "https://openstates.org/person/burt-whaley-4CHBeD5xtwS3uZSWcXGu6k/"
+  },
+  {
+    "id": "ocd-person/08f76b3a-4317-4d18-a44b-f2d6a673f1e3",
+    "name": "Cameron Parker",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "150",
+      "division_id": "ocd-division/country:us/state:mo/sldl:150"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Cameron",
+    "family_name": "Parker",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2393",
+    "email": "cameron.parker@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Campbell"
+    },
+    "created_at": "2023-01-05T23:27:21.275067+00:00",
+    "updated_at": "2026-06-04T07:17:36.201713+00:00",
+    "openstates_url": "https://openstates.org/person/cameron-parker-Gv0ZwLUEW8yjBM5rSDFFD/"
+  },
+  {
+    "id": "ocd-person/34df0cd7-f366-4d01-a1e7-d6241e34deec",
+    "name": "Carolyn Caton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:mo/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Carolyn",
+    "family_name": "Caton",
+    "image": "",
+    "email": "carolyn.caton@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:31.463362+00:00",
+    "updated_at": "2025-07-18T01:17:07.890026+00:00",
+    "openstates_url": "https://openstates.org/person/carolyn-caton-1blXBMwv8utEZBZPOTwJK8/"
+  },
+  {
+    "id": "ocd-person/0d50b579-ab89-4b9c-ae24-eb0d4216f3bd",
+    "name": "Cathy Loy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "163",
+      "division_id": "ocd-division/country:us/state:mo/sldl:163"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Cathy",
+    "family_name": "Loy",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/CathyLoy2024.jpg",
+    "email": "cathyjo.loy@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "1961-05-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:40.465402+00:00",
+    "updated_at": "2026-06-04T07:17:19.368058+00:00",
+    "openstates_url": "https://openstates.org/person/cathy-loy-P7mcuNLSRiP3bpj89vsDt/"
+  },
+  {
+    "id": "ocd-person/66b84db3-dd1a-4c94-8a78-bbf219068347",
+    "name": "Cecelie Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "111",
+      "division_id": "ocd-division/country:us/state:mo/sldl:111"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Cecelie",
+    "family_name": "Williams",
+    "image": "https://bloximages.newyork1.vip.townnews.com/myleaderpaper.com/content/tncms/assets/v3/editorial/5/41/5413b724-454a-11ef-9a7c-074f5d50855a/669985197fe04.image.jpg?resize=500%2C500",
+    "email": "cecelie.williams@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "1980-10-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:22.856955+00:00",
+    "updated_at": "2025-07-18T01:17:47.594469+00:00",
+    "openstates_url": "https://openstates.org/person/cecelie-williams-37pRXsy0oLUmT5YYp7Fusx/"
+  },
+  {
+    "id": "ocd-person/b1fb2c50-2091-4264-abed-e89079479bc0",
+    "name": "Chad Perkins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:mo/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Chad",
+    "family_name": "Perkins",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2207",
+    "email": "chad.perkins@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1978-06-22",
+    "death_date": "",
+    "extras": {
+      "hometown": "Bowling Green"
+    },
+    "created_at": "2021-01-08T00:10:46.706668+00:00",
+    "updated_at": "2025-07-18T01:18:10.115847+00:00",
+    "openstates_url": "https://openstates.org/person/chad-perkins-5PqQYOcIZa65Vm4OKXo8uG/"
+  },
+  {
+    "id": "ocd-person/ef435f26-5456-4e1b-9d53-16d972983db0",
+    "name": "Chanel Mosley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:mo/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Chanel",
+    "family_name": "Mosley",
+    "image": "",
+    "email": "chanel.mosley@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:53.876789+00:00",
+    "updated_at": "2025-02-04T20:17:54.929437+00:00",
+    "openstates_url": "https://openstates.org/person/chanel-mosley-7HTxDNOyB9vU2OoDx6vCro/"
+  },
+  {
+    "id": "ocd-person/43f13a74-64cd-41b6-b03a-51af80dbfc10",
+    "name": "Chris Brown",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:mo/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Brown",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2212",
+    "email": "chris.brown@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2021-01-08T00:10:43.996293+00:00",
+    "updated_at": "2025-07-18T01:17:09.987974+00:00",
+    "openstates_url": "https://openstates.org/person/chris-brown-24Cj6lZSqmRS4qLqcEuiQq/"
+  },
+  {
+    "id": "ocd-person/075c14fd-b8dd-433d-ae30-69fb9d210979",
+    "name": "Chris Warwick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "128",
+      "division_id": "ocd-division/country:us/state:mo/sldl:128"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Warwick",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/164674.jpg",
+    "email": "christopher.warwick@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:29.129689+00:00",
+    "updated_at": "2025-03-06T07:33:37.352341+00:00",
+    "openstates_url": "https://openstates.org/person/chris-warwick-Dt1jAKHHQgWla0E6LIf9d/"
+  },
+  {
+    "id": "ocd-person/0c02ea62-5611-4292-bf13-316c50c3a866",
+    "name": "Colin Wellenkamp",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "105",
+      "division_id": "ocd-division/country:us/state:mo/sldl:105"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Colin",
+    "family_name": "Wellenkamp",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX0dvieAKQKNkpNLYf1CfTOGpW1d2Fr9PPxQ&s",
+    "email": "colin.wellenkamp@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:12.785569+00:00",
+    "updated_at": "2025-07-18T01:17:50.798241+00:00",
+    "openstates_url": "https://openstates.org/person/colin-wellenkamp-MfEtriORRU9L2xYuGbu2o/"
+  },
+  {
+    "id": "ocd-person/a4d25b21-09c7-49d8-aaca-a07a18dad245",
+    "name": "Connie Steinmetz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:mo/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Connie",
+    "family_name": "Steinmetz",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Connie_Steinmetz.jpg",
+    "email": "connie.steinmetz@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "1960-08-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:12.428971+00:00",
+    "updated_at": "2025-07-18T01:16:51.801267+00:00",
+    "openstates_url": "https://openstates.org/person/connie-steinmetz-510sDrUnYsizPcRWoPOGrV/"
+  },
+  {
+    "id": "ocd-person/616dd247-4438-44de-97b4-cd3a5a3e554d",
+    "name": "Dale Wright",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "116",
+      "division_id": "ocd-division/country:us/state:mo/sldl:116"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Dale",
+    "family_name": "Wright",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2095",
+    "email": "dale.wright@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Farmington"
+    },
+    "created_at": "2019-01-17T06:13:32.171413+00:00",
+    "updated_at": "2025-07-18T01:17:57.041500+00:00",
+    "openstates_url": "https://openstates.org/person/dale-wright-2xqRXeIJLeurb506W9xPe1/"
+  },
+  {
+    "id": "ocd-person/0f4f5a2e-bc86-4c2a-9ab1-041d1c844283",
+    "name": "Dane Diehl",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "125",
+      "division_id": "ocd-division/country:us/state:mo/sldl:125"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Dane",
+    "family_name": "Diehl",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2370",
+    "email": "dane.diehl@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Butler"
+    },
+    "created_at": "2023-01-05T23:27:31.796524+00:00",
+    "updated_at": "2025-04-24T07:23:28.721915+00:00",
+    "openstates_url": "https://openstates.org/person/dane-diehl-St9Ejwn85d8Gp4vAzCQyZ/"
+  },
+  {
+    "id": "ocd-person/ace530aa-6fbb-40a0-b91e-94820a287b2e",
+    "name": "Danny Busick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:mo/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Busick",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2069",
+    "email": "danny.busick@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Newtown"
+    },
+    "created_at": "2019-01-17T06:13:23.857321+00:00",
+    "updated_at": "2026-06-04T07:17:28.757764+00:00",
+    "openstates_url": "https://openstates.org/person/danny-busick-5GFQ43a2yg7bbeSZcPHblm/"
+  },
+  {
+    "id": "ocd-person/1cd15a85-b074-4d67-8fcd-1cbccfc924f4",
+    "name": "Darin Chappell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "137",
+      "division_id": "ocd-division/country:us/state:mo/sldl:137"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Darin",
+    "family_name": "Chappell",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2362",
+    "email": "darin.chappell@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Rogersville"
+    },
+    "created_at": "2023-01-05T23:27:34.537734+00:00",
+    "updated_at": "2026-06-04T07:17:12.103410+00:00",
+    "openstates_url": "https://openstates.org/person/darin-chappell-sNSWJUQ4iEZk3u87J3Vsi/"
+  },
+  {
+    "id": "ocd-person/841b8b5c-a701-43c0-bb81-8e9515e61ea0",
+    "name": "Dave Griffith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:mo/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Griffith",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2052",
+    "email": "dave.griffith@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Jefferson City"
+    },
+    "created_at": "2019-01-17T06:13:27.647119+00:00",
+    "updated_at": "2025-07-18T01:16:37.174409+00:00",
+    "openstates_url": "https://openstates.org/person/dave-griffith-41HZeDt5QlGQeX2kgmTOSW/"
+  },
+  {
+    "id": "ocd-person/49609474-e343-4c1d-8e6b-677f31c228b7",
+    "name": "Dave Hinman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "103",
+      "division_id": "ocd-division/country:us/state:mo/sldl:103"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Dave",
+    "family_name": "Hinman",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2357",
+    "email": "dave.hinman@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "O'Fallon"
+    },
+    "created_at": "2023-01-05T23:27:25.016277+00:00",
+    "updated_at": "2026-01-29T07:10:37.278899+00:00",
+    "openstates_url": "https://openstates.org/person/dave-hinman-2ESZm21J5YgEz7Aoqmo50p/"
+  },
+  {
+    "id": "ocd-person/6db49039-f2b0-42ea-990d-92ffef2494c3",
+    "name": "David Casteel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:mo/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Casteel",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2383",
+    "email": "david.casteel@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "High Ridge"
+    },
+    "created_at": "2023-01-05T23:27:27.401887+00:00",
+    "updated_at": "2026-06-04T07:16:18.606358+00:00",
+    "openstates_url": "https://openstates.org/person/david-casteel-3L0gF46XHPVvs2gxD0hbl5/"
+  },
+  {
+    "id": "ocd-person/3055e426-4c34-404c-b286-820e978cb05c",
+    "name": "David Dolan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "148",
+      "division_id": "ocd-division/country:us/state:mo/sldl:148"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Dolan",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167282.jpg",
+    "email": "david.dolan@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-02-04T20:17:46.561802+00:00",
+    "updated_at": "2025-03-05T07:38:42.397757+00:00",
+    "openstates_url": "https://openstates.org/person/david-dolan-1TCsoQrh3YQfvANlB3LrTQ/"
+  },
+  {
+    "id": "ocd-person/c509449e-070c-462c-810e-f14315c9df42",
+    "name": "David Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:mo/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Smith",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2290",
+    "email": "david.smith@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Columbia"
+    },
+    "created_at": "2023-01-05T23:27:15.558282+00:00",
+    "updated_at": "2026-06-04T07:17:04.036487+00:00",
+    "openstates_url": "https://openstates.org/person/david-smith-5zniskb3LuIr2x6nIVRayI/"
+  },
+  {
+    "id": "ocd-person/f3250139-5c42-40d9-b535-2e7137f83f1e",
+    "name": "Dean VanSchoiack",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:mo/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Dean",
+    "family_name": "VanSchoiack",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2243",
+    "email": "dean.vanschoiack@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Savannah"
+    },
+    "created_at": "2021-01-08T00:10:45.902315+00:00",
+    "updated_at": "2025-07-18T01:17:23.610962+00:00",
+    "openstates_url": "https://openstates.org/person/dean-vanschoiack-7Oo2tTZflgUdR6G25qFzEU/"
+  },
+  {
+    "id": "ocd-person/b24e59bc-bc91-456f-9b96-bd1f501c1d49",
+    "name": "Deanna Self",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:mo/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Deanna",
+    "family_name": "Self",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/DeannaSelf.jpg",
+    "email": "deanna.self@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "1962-01-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:15.110297+00:00",
+    "updated_at": "2025-02-04T20:17:49.730069+00:00",
+    "openstates_url": "https://openstates.org/person/deanna-self-5QSRJHB6PfnVrMogI6LLnV/"
+  },
+  {
+    "id": "ocd-person/4a6e4da5-0cbd-4033-89a3-5bd749b37108",
+    "name": "Del Taylor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:mo/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Del",
+    "family_name": "Taylor",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2400",
+    "email": "del.taylor@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2023-01-05T23:27:24.034745+00:00",
+    "updated_at": "2026-06-04T07:16:35.307231+00:00",
+    "openstates_url": "https://openstates.org/person/del-taylor-2GRq8awjkUtXuqF1KTLApU/"
+  },
+  {
+    "id": "ocd-person/914b9a95-6dd2-4d1d-8dc4-eed597b02e53",
+    "name": "Dirk Deaton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "159",
+      "division_id": "ocd-division/country:us/state:mo/sldl:159"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Dirk",
+    "family_name": "Deaton",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2090",
+    "email": "dirk.deaton@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1994-06-14",
+    "death_date": "",
+    "extras": {
+      "hometown": "Noel"
+    },
+    "created_at": "2019-01-17T06:13:30.075144+00:00",
+    "updated_at": "2025-07-18T01:17:08.492160+00:00",
+    "openstates_url": "https://openstates.org/person/dirk-deaton-4QARBSeb0QR1PFXEwxhTBT/"
+  },
+  {
+    "id": "ocd-person/af64f0a2-f3ff-4c6d-b24f-62c3941d1da4",
+    "name": "Don Mayhew",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "124",
+      "division_id": "ocd-division/country:us/state:mo/sldl:124"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Don",
+    "family_name": "Mayhew",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2082",
+    "email": "don.mayhew@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Crocker"
+    },
+    "created_at": "2019-01-17T06:13:28.283716+00:00",
+    "updated_at": "2026-06-04T07:16:24.237490+00:00",
+    "openstates_url": "https://openstates.org/person/don-mayhew-5KxmmwMIpY24PgNra0AN5Y/"
+  },
+  {
+    "id": "ocd-person/fb57ce9b-bd82-4f93-8774-2cfef191289a",
+    "name": "Donna Barnes",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:mo/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Donna",
+    "family_name": "Barnes",
+    "image": "",
+    "email": "donna.barnes@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:35.251374+00:00",
+    "updated_at": "2026-01-29T07:11:12.974973+00:00",
+    "openstates_url": "https://openstates.org/person/donna-barnes-7eHCWXay1hUTsInt2BL2pm/"
+  },
+  {
+    "id": "ocd-person/c2ccbec5-9ad2-4210-9029-3c9968b72d2f",
+    "name": "Doug Clemens",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:mo/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Doug",
+    "family_name": "Clemens",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2060",
+    "email": "doug.clemens@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1968-04-21",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Ann"
+    },
+    "created_at": "2019-01-17T06:13:32.464981+00:00",
+    "updated_at": "2026-01-29T07:11:29.567290+00:00",
+    "openstates_url": "https://openstates.org/person/doug-clemens-5va4yUuVzATjDa529oo9VP/"
+  },
+  {
+    "id": "ocd-person/f3eb420f-df97-4edf-b8c9-e0fa231c6860",
+    "name": "Doyle Justus",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:mo/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Doyle",
+    "family_name": "Justus",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2364",
+    "email": "doyle.justus@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Troy"
+    },
+    "created_at": "2023-01-05T23:27:32.560374+00:00",
+    "updated_at": "2025-07-18T01:17:12.798477+00:00",
+    "openstates_url": "https://openstates.org/person/doyle-justus-7QGeDYoPBnve2xeag0JESu/"
+  },
+  {
+    "id": "ocd-person/c53c50aa-49b2-415a-9a50-eb947daf3d7f",
+    "name": "Ed Lewis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:mo/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Ed",
+    "family_name": "Lewis",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2244",
+    "email": "ed.lewis@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Moberly"
+    },
+    "created_at": "2021-01-08T00:10:39.419561+00:00",
+    "updated_at": "2025-07-18T01:18:00.502175+00:00",
+    "openstates_url": "https://openstates.org/person/ed-lewis-60B3FmdlvgQmG16p9Pz5PL/"
+  },
+  {
+    "id": "ocd-person/f7c7d32d-5d88-489a-9adf-76c9837b3272",
+    "name": "Emily Weber",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:mo/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Emily",
+    "family_name": "Weber",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2246",
+    "email": "emily.weber@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2021-01-08T00:10:39.640068+00:00",
+    "updated_at": "2026-06-04T07:17:01.842891+00:00",
+    "openstates_url": "https://openstates.org/person/emily-weber-7XYQLieSZjiGEPiDQQ4WMU/"
+  },
+  {
+    "id": "ocd-person/76bc7488-cc9e-4b47-91da-4557fb577ff5",
+    "name": "Eric Woods",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:mo/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Eric",
+    "family_name": "Woods",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2367",
+    "email": "eric.woods@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2023-01-05T23:27:24.874235+00:00",
+    "updated_at": "2025-07-18T01:17:58.920972+00:00",
+    "openstates_url": "https://openstates.org/person/eric-woods-3c3DZHnYXPXPehKv6n9iCL/"
+  },
+  {
+    "id": "ocd-person/5e3e358e-622b-462c-ba56-ea42bf7c1fc2",
+    "name": "George Hruza",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:mo/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "George",
+    "family_name": "Hruza",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/GeorgeHruza2023.jpg",
+    "email": "george.hruza@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1956-04-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:06.444009+00:00",
+    "updated_at": "2026-06-04T07:17:16.109439+00:00",
+    "openstates_url": "https://openstates.org/person/george-hruza-2rphvAstvjF1k2lqG3Ou82/"
+  },
+  {
+    "id": "ocd-person/d6be1f75-f237-41ad-af36-a7d1c6e3a9c6",
+    "name": "Greg Sharpe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:mo/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Sharpe",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2086",
+    "email": "greg.sharpe@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Ewing"
+    },
+    "created_at": "2019-01-17T06:13:29.543657+00:00",
+    "updated_at": "2026-06-04T07:16:44.580932+00:00",
+    "openstates_url": "https://openstates.org/person/greg-sharpe-6XDF9OfTapdhks7J0u0B7e/"
+  },
+  {
+    "id": "ocd-person/ec53a7aa-4a63-4c8f-8f74-8002d5c654e5",
+    "name": "Gregg Bush",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:mo/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Gregg",
+    "family_name": "Bush",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/GreggBush24.jpeg",
+    "email": "gregg.bush@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:14.315007+00:00",
+    "updated_at": "2025-07-18T01:16:52.469602+00:00",
+    "openstates_url": "https://openstates.org/person/gregg-bush-7BwQ0sgJt1d4LVcTDauBEr/"
+  },
+  {
+    "id": "ocd-person/a9a55831-48ad-4f2e-b548-0b7652b2b681",
+    "name": "Hardy Billington",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "152",
+      "division_id": "ocd-division/country:us/state:mo/sldl:152"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Hardy",
+    "family_name": "Billington",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2058",
+    "email": "hardy.billington@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Poplar Bluff"
+    },
+    "created_at": "2019-01-17T06:13:25.480693+00:00",
+    "updated_at": "2025-07-18T01:17:01.753930+00:00",
+    "openstates_url": "https://openstates.org/person/hardy-billington-5A7GU9e3BgjDsSwAy73gIb/"
+  },
+  {
+    "id": "ocd-person/c47d84db-02de-4687-bd5b-c6dbc71cc8c4",
+    "name": "Holly Jones",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:mo/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Holly",
+    "family_name": "Jones",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2388",
+    "email": "holly.jones@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Eureka"
+    },
+    "created_at": "2023-01-05T23:27:18.620268+00:00",
+    "updated_at": "2026-06-04T07:17:08.686807+00:00",
+    "openstates_url": "https://openstates.org/person/holly-jones-5ylrDkwIU8paI50fZ0LTnw/"
+  },
+  {
+    "id": "ocd-person/b93bdb73-001b-43ed-a436-99ad2efe4937",
+    "name": "Ian Mackey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:mo/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Ian",
+    "family_name": "Mackey",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2080",
+    "email": "ian.mackey@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1986-12-01",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2019-01-17T06:13:22.667303+00:00",
+    "updated_at": "2026-06-04T07:16:47.200592+00:00",
+    "openstates_url": "https://openstates.org/person/ian-mackey-5dWvzMybQe1XYnenAKsZ8h/"
+  },
+  {
+    "id": "ocd-person/b7335950-e605-45b7-9c64-1e725315deca",
+    "name": "Jaclyn Zimmermann",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:mo/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jaclyn",
+    "family_name": "Zimmermann",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JaclynZimmerman2024.JPG",
+    "email": "jaclyn.zimmermann@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "1979-11-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:42.619826+00:00",
+    "updated_at": "2026-06-04T07:17:31.642451+00:00",
+    "openstates_url": "https://openstates.org/person/jaclyn-zimmermann-5Zh3rf4tp3NpdIGVUg70l0/"
+  },
+  {
+    "id": "ocd-person/1235305e-980d-4eb8-8743-8d0d8a455c4e",
+    "name": "Jamie Ray Gragg",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "140",
+      "division_id": "ocd-division/country:us/state:mo/sldl:140"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jamie Ray",
+    "family_name": "Gragg",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2386",
+    "email": "jamieray.gragg@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Ozark"
+    },
+    "created_at": "2023-01-05T23:27:39.730122+00:00",
+    "updated_at": "2026-06-04T07:17:22.771359+00:00",
+    "openstates_url": "https://openstates.org/person/jamie-ray-gragg-YMAUn7tptlE0zbuFSvUoY/"
+  },
+  {
+    "id": "ocd-person/100ec26e-d90f-4707-822c-db61c8f1b370",
+    "name": "Jeff Coleman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:mo/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Coleman",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2071",
+    "email": "jeff.coleman@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1963-05-20",
+    "death_date": "",
+    "extras": {
+      "hometown": "Grain Valley"
+    },
+    "created_at": "2019-01-17T06:13:26.665399+00:00",
+    "updated_at": "2026-06-04T07:16:07.592098+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-coleman-UIcaHyuvlEyHyyEEalznM/"
+  },
+  {
+    "id": "ocd-person/633fd335-98a2-42a7-acac-cb78eeca9a12",
+    "name": "Jeff Farnan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:mo/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Farnan",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2354",
+    "email": "jeff.farnan@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Stanberry"
+    },
+    "created_at": "2023-01-05T23:27:29.919772+00:00",
+    "updated_at": "2025-07-18T01:16:29.722240+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-farnan-31HPKFm5ZA4oadPBg9FC3G/"
+  },
+  {
+    "id": "ocd-person/92aabb0f-94de-4d54-b4d0-23f09035d8a0",
+    "name": "Jeff Hales",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:mo/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Hales",
+    "image": "",
+    "email": "jeffrey.hales@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:21.686599+00:00",
+    "updated_at": "2025-07-18T01:17:41.424993+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-hales-4Sku2YX7HHC6s1MQ8ORI4u/"
+  },
+  {
+    "id": "ocd-person/fa6c1b05-02e8-4c6f-9a84-d1f58885ea04",
+    "name": "Jeff Knight",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "142",
+      "division_id": "ocd-division/country:us/state:mo/sldl:142"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Knight",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2020",
+    "email": "jeff.knight@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Lebanon"
+    },
+    "created_at": "2018-10-18T14:50:19.158130+00:00",
+    "updated_at": "2025-04-24T07:23:00.779451+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-knight-7cXU8dkPWMkTxPaaAfx660/"
+  },
+  {
+    "id": "ocd-person/acd99a81-de49-4ab0-9bb5-bb4fa72c02c5",
+    "name": "Jeff Myers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:mo/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Myers",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2392",
+    "email": "jeff.myers@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Warrenton"
+    },
+    "created_at": "2023-01-05T23:27:24.491383+00:00",
+    "updated_at": "2026-06-04T07:16:00.543590+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-myers-5GA7lnrtYUwvhsAOplyN77/"
+  },
+  {
+    "id": "ocd-person/0b281a28-10f1-496b-aa00-29e59a57d253",
+    "name": "Jeff Vernetti",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "123",
+      "division_id": "ocd-division/country:us/state:mo/sldl:123"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Vernetti",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/166122.jpg",
+    "email": "jeff.vernetti@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:44.623885+00:00",
+    "updated_at": "2025-03-05T07:38:12.496361+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-vernetti-L3F1YlsNtf3zTE4RzvLYR/"
+  },
+  {
+    "id": "ocd-person/98bc3ac1-1f5d-4a1c-bac8-356dfbbfa875",
+    "name": "Jeremy Dean",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "132",
+      "division_id": "ocd-division/country:us/state:mo/sldl:132"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jeremy",
+    "family_name": "Dean",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jeremy_Dean_20240911_121645.jpg",
+    "email": "jeremy.dean@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:29.924659+00:00",
+    "updated_at": "2025-02-04T20:17:49.449863+00:00",
+    "openstates_url": "https://openstates.org/person/jeremy-dean-4eCqzxU2fS7S4ct60TvxET/"
+  },
+  {
+    "id": "ocd-person/49c68d0e-cf5d-4b46-9890-c887a428929e",
+    "name": "Jim Kalberloh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "126",
+      "division_id": "ocd-division/country:us/state:mo/sldl:126"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Kalberloh",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2229",
+    "email": "jim.kalberloh@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Lowry City"
+    },
+    "created_at": "2021-01-08T00:10:45.736201+00:00",
+    "updated_at": "2026-06-04T07:16:04.692975+00:00",
+    "openstates_url": "https://openstates.org/person/jim-kalberloh-2FDB1ydgIOa6dS56zUgbTK/"
+  },
+  {
+    "id": "ocd-person/06e17e6f-a17c-4654-9ead-d0aa98a95110",
+    "name": "Jim Murphy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:mo/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Murphy",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2063",
+    "email": "jim.murphy@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2019-01-17T06:13:23.356636+00:00",
+    "updated_at": "2026-06-04T07:16:59.197790+00:00",
+    "openstates_url": "https://openstates.org/person/jim-murphy-Cz0J3dxrKJR8s6fb7c2bo/"
+  },
+  {
+    "id": "ocd-person/9814247b-44fc-473f-b770-a44c77292d77",
+    "name": "Jim Schulte",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:mo/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Schulte",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2397",
+    "email": "jim.schulte@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "New Bloomfield"
+    },
+    "created_at": "2023-01-05T23:27:23.737785+00:00",
+    "updated_at": "2026-06-04T07:16:49.039338+00:00",
+    "openstates_url": "https://openstates.org/person/jim-schulte-4cy2PLjlTXFccYXzxRDxvL/"
+  },
+  {
+    "id": "ocd-person/0f113187-3958-449e-9c4e-3e81390c1dd4",
+    "name": "Jo Doll",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:mo/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jo",
+    "family_name": "Doll",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2224",
+    "email": "jo.doll@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2021-01-08T00:10:32.258645+00:00",
+    "updated_at": "2026-06-04T07:16:21.904197+00:00",
+    "openstates_url": "https://openstates.org/person/jo-doll-SQk1YyI6y0Vt8X9P2B3US/"
+  },
+  {
+    "id": "ocd-person/1250ea3d-fe5c-46ea-bead-f7249d234e68",
+    "name": "John Black",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "129",
+      "division_id": "ocd-division/country:us/state:mo/sldl:129"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Black",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2114",
+    "email": "john.black@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Marshfield"
+    },
+    "created_at": "2019-01-17T06:13:22.172801+00:00",
+    "updated_at": "2025-07-18T01:18:11.973921+00:00",
+    "openstates_url": "https://openstates.org/person/john-black-YYq5WmjLVWRHTOBJhuetc/"
+  },
+  {
+    "id": "ocd-person/5fae2678-d379-4ef0-9481-0f78f544d0c4",
+    "name": "John Hewkin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "120",
+      "division_id": "ocd-division/country:us/state:mo/sldl:120"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Hewkin",
+    "image": "https://dailyjournalonline.com/wp-content/uploads/2023/09/Hewkin-1.jpeg",
+    "email": "john.hewkin@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:09.671764+00:00",
+    "updated_at": "2026-06-04T07:15:58.179855+00:00",
+    "openstates_url": "https://openstates.org/person/john-hewkin-2uXrC109douocFW4Y2XtKu/"
+  },
+  {
+    "id": "ocd-person/6e5b11bc-fc9c-4822-9a82-1a5a59771c00",
+    "name": "John Martin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:mo/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Martin",
+    "image": "https://static.wixstatic.com/media/5e062e_e41671d0d6714f5cb9bbb25925e34d15~mv2.jpg/v1/crop/x_172,y_24,w_1449,h_1427/fill/w_397,h_391,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/DSC_6591%20copy%20(1)_edited.jpg",
+    "email": "john.martin@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:12.923756+00:00",
+    "updated_at": "2026-06-04T07:16:14.638740+00:00",
+    "openstates_url": "https://openstates.org/person/john-martin-3MEm28hjtLf4sPkz1rShRw/"
+  },
+  {
+    "id": "ocd-person/3de9f0e2-7062-4363-91d0-c3f17084ced4",
+    "name": "John Simmons",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "109",
+      "division_id": "ocd-division/country:us/state:mo/sldl:109"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Simmons",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2097",
+    "email": "john.simmons@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "last_name": "Simmons",
+      "first_name": "John"
+    },
+    "created_at": "2019-01-17T06:13:27.557256+00:00",
+    "updated_at": "2025-03-05T07:39:49.425079+00:00",
+    "openstates_url": "https://openstates.org/person/john-simmons-1spRTtd76GeOQYtIBInjSW/"
+  },
+  {
+    "id": "ocd-person/709dba3b-3a48-4429-94e7-fada7faa0d90",
+    "name": "John Voss",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "147",
+      "division_id": "ocd-division/country:us/state:mo/sldl:147"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Voss",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2355",
+    "email": "john.voss@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Cape Girardeau"
+    },
+    "created_at": "2023-01-05T23:27:40.194861+00:00",
+    "updated_at": "2025-04-24T07:23:09.599889+00:00",
+    "openstates_url": "https://openstates.org/person/john-voss-3QVDmQbVXTrSl7V8TUcw0O/"
+  },
+  {
+    "id": "ocd-person/419c30c0-b3f2-4d4b-a2f1-ee08050e845b",
+    "name": "Jon Patterson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:mo/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Patterson",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2075",
+    "email": "jonathan.patterson@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Lees Summit"
+    },
+    "created_at": "2019-01-17T06:13:33.785380+00:00",
+    "updated_at": "2026-06-04T07:17:11.392601+00:00",
+    "openstates_url": "https://openstates.org/person/jon-patterson-1znsaaClpl6wGnTXPuqAqR/"
+  },
+  {
+    "id": "ocd-person/1da3a25b-64fa-48d4-8441-e1dca4526f7f",
+    "name": "Josh Hurlbert",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:mo/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Hurlbert",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2242",
+    "email": "josh.hurlbert@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1986-02-22",
+    "death_date": "",
+    "extras": {
+      "hometown": "Smithville"
+    },
+    "created_at": "2023-01-05T23:27:13.319281+00:00",
+    "updated_at": "2025-07-18T01:16:37.748867+00:00",
+    "openstates_url": "https://openstates.org/person/josh-hurlbert-tvYcxy14DEU9HiRdKK5ap/"
+  },
+  {
+    "id": "ocd-person/6ee52a1a-7c1b-4ebb-ac4f-8602d03b2034",
+    "name": "Kathy Steinhoff",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:mo/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Kathy",
+    "family_name": "Steinhoff",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2361",
+    "email": "kathy.steinhoff@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Columbia"
+    },
+    "created_at": "2023-01-05T23:27:12.653311+00:00",
+    "updated_at": "2026-06-04T07:16:10.675400+00:00",
+    "openstates_url": "https://openstates.org/person/kathy-steinhoff-3NFspidtvK5NyoVcWORPD2/"
+  },
+  {
+    "id": "ocd-person/31ee0443-77bc-415d-9774-d09dee750243",
+    "name": "Keith Elliott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "153",
+      "division_id": "ocd-division/country:us/state:mo/sldl:153"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Elliott",
+    "image": "",
+    "email": "keith.elliot@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:16.579958+00:00",
+    "updated_at": "2025-02-21T16:00:04.771701+00:00",
+    "openstates_url": "https://openstates.org/person/keith-elliott-1WDOffdbBkmWO2dlozg8NH/"
+  },
+  {
+    "id": "ocd-person/e4b24233-89d2-41eb-b360-ae297e3385ba",
+    "name": "Kem Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:mo/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Kem",
+    "family_name": "Smith",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KemSmith2024.jpg",
+    "email": "kem.smith@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "1973-06-19",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:16.763844+00:00",
+    "updated_at": "2025-07-18T01:16:44.218244+00:00",
+    "openstates_url": "https://openstates.org/person/kem-smith-6xXiKJ4OKFBk3hXZucO8ug/"
+  },
+  {
+    "id": "ocd-person/c140221e-dfad-45d7-9371-faf3cc12ff17",
+    "name": "Kemp Strickler",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:mo/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Kemp",
+    "family_name": "Strickler",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2358",
+    "email": "kemp.strickler@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Lee's Summit"
+    },
+    "created_at": "2023-01-05T23:27:25.186504+00:00",
+    "updated_at": "2025-07-18T01:16:58.816434+00:00",
+    "openstates_url": "https://openstates.org/person/kemp-strickler-5sepLDdqHnzmcmSw8cksv1/"
+  },
+  {
+    "id": "ocd-person/34a05fb9-bb36-416e-ada9-6be70b48b6b2",
+    "name": "Ken Jamison",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:mo/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Jamison",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167307.jpg",
+    "email": "ken.jamison@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-02-04T20:17:48.954644+00:00",
+    "updated_at": "2025-03-05T07:38:43.490612+00:00",
+    "openstates_url": "https://openstates.org/person/ken-jamison-1bItJCm6l5oXRmZgmlgK7G/"
+  },
+  {
+    "id": "ocd-person/96d0d8da-dcff-4f59-b051-e0da15584b7b",
+    "name": "Kent Haden",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:mo/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Kent",
+    "family_name": "Haden",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2076",
+    "email": "kent.haden@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Mexico"
+    },
+    "created_at": "2019-01-17T06:13:26.995667+00:00",
+    "updated_at": "2026-06-04T07:17:04.871516+00:00",
+    "openstates_url": "https://openstates.org/person/kent-haden-4aaI87NOv4HV7jfJZW2yFP/"
+  },
+  {
+    "id": "ocd-person/7f91f845-d612-45d2-bc08-421c4e91357a",
+    "name": "Keri Ingle",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:mo/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Keri",
+    "family_name": "Ingle",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2134",
+    "email": "keri.ingle@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Lee's Summit"
+    },
+    "created_at": "2019-01-17T06:13:32.343708+00:00",
+    "updated_at": "2025-07-18T01:16:25.363421+00:00",
+    "openstates_url": "https://openstates.org/person/keri-ingle-3sijVBYyZLmPUhQaLqaexG/"
+  },
+  {
+    "id": "ocd-person/6b417baa-36e5-4928-bb3d-b6b8f2cc95dd",
+    "name": "Kimberly-Ann Collins",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:mo/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Kimberly-Ann",
+    "family_name": "Collins",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2277",
+    "email": "kimberlyann.collins@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2021-01-08T00:10:41.919291+00:00",
+    "updated_at": "2026-06-04T07:16:23.016601+00:00",
+    "openstates_url": "https://openstates.org/person/kimberly-ann-collins-3GO6UyUWv48YVhfA5esovN/"
+  },
+  {
+    "id": "ocd-person/6c3609dd-62d2-4030-9b24-7b5d49a16677",
+    "name": "LaDonna Appelbaum",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:mo/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "LaDonna",
+    "family_name": "Appelbaum",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2057",
+    "email": "ladonna.appelbaum@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2019-01-17T06:13:33.351879+00:00",
+    "updated_at": "2026-01-29T07:11:08.322859+00:00",
+    "openstates_url": "https://openstates.org/person/ladonna-appelbaum-3IBrkitIuRNOxsbbtp6dnT/"
+  },
+  {
+    "id": "ocd-person/24c9a1f1-0023-4733-aa18-80f252645723",
+    "name": "LaKeySha Bosley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:mo/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "LaKeySha",
+    "family_name": "Bosley",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2133",
+    "email": "lakeysha.bosley@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "1993-01-05",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2019-01-17T06:13:32.777127+00:00",
+    "updated_at": "2025-07-18T01:16:57.067956+00:00",
+    "openstates_url": "https://openstates.org/person/lakeysha-bosley-17PrwjuF9TXtHIEHKGVs27/"
+  },
+  {
+    "id": "ocd-person/56f5920f-46d9-4991-b029-5984b80cd7ff",
+    "name": "Lane Roberts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "161",
+      "division_id": "ocd-division/country:us/state:mo/sldl:161"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Lane",
+    "family_name": "Roberts",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2092",
+    "email": "lane.roberts@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1948-04-06",
+    "death_date": "",
+    "extras": {
+      "hometown": "Joplin"
+    },
+    "created_at": "2019-01-17T06:13:31.582248+00:00",
+    "updated_at": "2026-06-04T07:16:53.077476+00:00",
+    "openstates_url": "https://openstates.org/person/lane-roberts-2e5Z6N5BydvNvBGLRqrGHf/"
+  },
+  {
+    "id": "ocd-person/733d6ca4-9be3-4541-bcc9-75b7431cfc39",
+    "name": "Lilly Fuchs",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:mo/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Lilly",
+    "family_name": "Fuchs",
+    "image": "https://victoryfund.org/wp-content/uploads/2024/08/Capital-Photos-Arm-on-hip-at-pillar-full-body-scaled-e1724799705880-500x500-250x250.jpg",
+    "email": "elizabeth.fuchs@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:39.724106+00:00",
+    "updated_at": "2025-03-06T07:34:30.303498+00:00",
+    "openstates_url": "https://openstates.org/person/lilly-fuchs-3VSBh50v4skGfKlvR4NA0f/"
+  },
+  {
+    "id": "ocd-person/5f182358-80ec-4463-a8b0-2dd660ac97ab",
+    "name": "Lisa Durnell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "154",
+      "division_id": "ocd-division/country:us/state:mo/sldl:154"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Durnell",
+    "image": "",
+    "email": "lisa.durnell@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:34.776067+00:00",
+    "updated_at": "2025-02-04T20:17:49.508493+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-durnell-2tRIjcrNaxb41SRp9lgs4R/"
+  },
+  {
+    "id": "ocd-person/9a78c55e-0f06-4dd9-b86e-287db7332d98",
+    "name": "Louis Riggs",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:mo/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Louis",
+    "family_name": "Riggs",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2094",
+    "email": "louis.riggs@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Hannibal"
+    },
+    "created_at": "2019-01-17T06:13:33.145299+00:00",
+    "updated_at": "2026-06-04T07:17:30.853782+00:00",
+    "openstates_url": "https://openstates.org/person/louis-riggs-4hU0ffvKOOAIIt0wLR5Xi4/"
+  },
+  {
+    "id": "ocd-person/3a6ee726-1e30-4f9a-82cc-af57163e571b",
+    "name": "Mark Boyko",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:mo/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Boyko",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Mark_Boyko.jpg",
+    "email": "mark.boyko@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:32.596156+00:00",
+    "updated_at": "2026-06-04T07:17:34.563508+00:00",
+    "openstates_url": "https://openstates.org/person/mark-boyko-1mGEjt00iRqsX8VcSsaqV9/"
+  },
+  {
+    "id": "ocd-person/661f49f4-e075-491e-aad8-4dde65ecb6df",
+    "name": "Mark Matthiesen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "107",
+      "division_id": "ocd-division/country:us/state:mo/sldl:107"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Matthiesen",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=1937",
+    "email": "mark.matthiesen@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1976-03-25",
+    "death_date": "",
+    "extras": {
+      "hometown": "O'Fallon"
+    },
+    "created_at": "2023-01-05T23:27:28.736976+00:00",
+    "updated_at": "2025-07-18T01:16:48.689854+00:00",
+    "openstates_url": "https://openstates.org/person/mark-matthiesen-36hW16XEoXyBM7EWbgUwrH/"
+  },
+  {
+    "id": "ocd-person/ba1cff78-9a39-4e6e-a998-c8dc324d7b80",
+    "name": "Mark Meirath",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:mo/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Meirath",
+    "image": "",
+    "email": "mark.meirath@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:36.224752+00:00",
+    "updated_at": "2025-02-04T20:17:46.738860+00:00",
+    "openstates_url": "https://openstates.org/person/mark-meirath-5fBp8xijfftvqzLYzZMmG0/"
+  },
+  {
+    "id": "ocd-person/443938dd-c7a0-4061-890a-8bd4ec4a1924",
+    "name": "Mark Nolte",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:mo/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Nolte",
+    "image": "",
+    "email": "mark.nolte@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:02.108331+00:00",
+    "updated_at": "2025-07-18T01:17:22.580971+00:00",
+    "openstates_url": "https://openstates.org/person/mark-nolte-24jczCElYUlpqMBsPKUz00/"
+  },
+  {
+    "id": "ocd-person/0fddc5af-b1f0-49ca-84d9-fc6458edf362",
+    "name": "Mark Sharp",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:mo/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Sharp",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2169",
+    "email": "mark.sharp@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2020-02-05T06:12:07.617364+00:00",
+    "updated_at": "2026-06-04T07:16:13.126048+00:00",
+    "openstates_url": "https://openstates.org/person/mark-sharp-TwEZgIJXw38QWWUD5q7e6/"
+  },
+  {
+    "id": "ocd-person/56a68a64-7a44-4052-b5f2-e9f7c626e311",
+    "name": "Marla Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:mo/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Marla",
+    "family_name": "Smith",
+    "image": "",
+    "email": "marla.smith@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:01.388095+00:00",
+    "updated_at": "2025-02-04T20:17:51.122537+00:00",
+    "openstates_url": "https://openstates.org/person/marla-smith-2dVRrRDUHcewtiY4uP4UoD/"
+  },
+  {
+    "id": "ocd-person/47f4d77d-149c-410a-a324-067172efda3c",
+    "name": "Marlene Terry",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:mo/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Marlene",
+    "family_name": "Terry",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2247",
+    "email": "marlene.terry@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St Louis"
+    },
+    "created_at": "2021-01-08T00:10:35.824832+00:00",
+    "updated_at": "2026-06-04T07:17:37.757546+00:00",
+    "openstates_url": "https://openstates.org/person/marlene-terry-2BmLaW64Gm43eqYYkpb91I/"
+  },
+  {
+    "id": "ocd-person/500e226f-ea79-4915-ab13-a11ab4d9e48e",
+    "name": "Marlon Anderson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:mo/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Marlon",
+    "family_name": "Anderson",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2276",
+    "email": "marlon.anderson@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2021-01-08T00:10:38.393290+00:00",
+    "updated_at": "2026-01-29T07:11:27.395335+00:00",
+    "openstates_url": "https://openstates.org/person/marlon-anderson-2R3qQgiipPT746RdwzqDoE/"
+  },
+  {
+    "id": "ocd-person/e5a2f458-8afb-41b6-9bf0-79143ea24a25",
+    "name": "Marty Jacobs",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:mo/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Marty",
+    "family_name": "Jacobs",
+    "image": "https://storage.googleapis.com/enview-dev-public-general/legislative-people-photos/167306.jpg",
+    "email": "martin.jacobs@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-02-04T20:17:55.336526+00:00",
+    "updated_at": "2025-03-05T07:38:54.570552+00:00",
+    "openstates_url": "https://openstates.org/person/marty-jacobs-6zJiDrSojVRSRUfrHWK3L3/"
+  },
+  {
+    "id": "ocd-person/f36fd5fa-6d20-43d4-9555-ce4d2d472849",
+    "name": "Marty Murray",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:mo/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Marty",
+    "family_name": "Murray",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MartyMurray2024.jpg",
+    "email": "marty.murray@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1989-03-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:10.525821+00:00",
+    "updated_at": "2025-07-18T01:17:40.810581+00:00",
+    "openstates_url": "https://openstates.org/person/marty-murray-7PMFABUm3yfnnCx30ejVMX/"
+  },
+  {
+    "id": "ocd-person/c22f94cc-641f-4a45-a2a6-610f829e7c43",
+    "name": "Matthew Overcast",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "155",
+      "division_id": "ocd-division/country:us/state:mo/sldl:155"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Matthew",
+    "family_name": "Overcast",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Matthew_Overcast23.jpeg",
+    "email": "matthew.overcast@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:25.475965+00:00",
+    "updated_at": "2026-06-04T07:16:58.017901+00:00",
+    "openstates_url": "https://openstates.org/person/matthew-overcast-5uQFsXexyVOFtKcRbYpiap/"
+  },
+  {
+    "id": "ocd-person/22e282f9-afbf-46b8-ac81-0780f5372d0d",
+    "name": "Mazzie Christensen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:mo/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mazzie",
+    "family_name": "Christensen",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2381",
+    "email": "mazzie.christensen@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Bethany"
+    },
+    "created_at": "2023-01-05T23:27:35.718977+00:00",
+    "updated_at": "2025-07-18T01:16:59.866011+00:00",
+    "openstates_url": "https://openstates.org/person/mazzie-christensen-13pFp3fWKEaxq6qAYekwJx/"
+  },
+  {
+    "id": "ocd-person/1df6dc2e-0d12-40d6-b368-4d0b3a19ef95",
+    "name": "Melanie Stinnett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "133",
+      "division_id": "ocd-division/country:us/state:mo/sldl:133"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Melanie",
+    "family_name": "Stinnett",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2399",
+    "email": "melanie.stinnett@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Springfield"
+    },
+    "created_at": "2023-01-05T23:27:40.332729+00:00",
+    "updated_at": "2025-07-18T01:17:46.486822+00:00",
+    "openstates_url": "https://openstates.org/person/melanie-stinnett-uXakvZR6red0GdDWA3I05/"
+  },
+  {
+    "id": "ocd-person/9815268f-50dc-451b-9bb2-b36f3c556ac4",
+    "name": "Melissa Douglas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:mo/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Melissa",
+    "family_name": "Douglas",
+    "image": "",
+    "email": "melissa.douglas@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:21.913054+00:00",
+    "updated_at": "2025-02-04T20:17:54.125955+00:00",
+    "openstates_url": "https://openstates.org/person/melissa-douglas-4cyUyKA2yemChlQOFYnPF6/"
+  },
+  {
+    "id": "ocd-person/7839a137-9de7-440a-bad8-20db1e0ead3b",
+    "name": "Melissa Schmidt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "141",
+      "division_id": "ocd-division/country:us/state:mo/sldl:141"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Melissa",
+    "family_name": "Schmidt",
+    "image": "https://static.wixstatic.com/media/530e0b_df591691a465401684e3625621398fd5~mv2.jpg/v1/fill/w_952,h_721,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/530e0b_df591691a465401684e3625621398fd5~mv2.jpg",
+    "email": "melissa.schmidt@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:47.343124+00:00",
+    "updated_at": "2025-07-18T01:17:14.694482+00:00",
+    "openstates_url": "https://openstates.org/person/melissa-schmidt-3erPnWf8SqtHQy35ZuqWEN/"
+  },
+  {
+    "id": "ocd-person/24dc0503-f4cf-48b1-afdf-e57157bafec3",
+    "name": "Michael Burton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:mo/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Burton",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2225",
+    "email": "michael.burton@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Lakeshire"
+    },
+    "created_at": "2021-01-08T00:10:33.611005+00:00",
+    "updated_at": "2026-06-04T07:16:25.330817+00:00",
+    "openstates_url": "https://openstates.org/person/michael-burton-17YGvQxBZ3w20eWm5GHVh5/"
+  },
+  {
+    "id": "ocd-person/dc271660-9483-4b46-8c96-4794078b130f",
+    "name": "Michael Davis",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:mo/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Davis",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2220",
+    "email": "michael.davis@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2021-01-08T00:10:39.296749+00:00",
+    "updated_at": "2026-06-04T07:17:29.915453+00:00",
+    "openstates_url": "https://openstates.org/person/michael-davis-6hQAqReEM1tRgvbOMgWToV/"
+  },
+  {
+    "id": "ocd-person/8014964b-117f-40a4-a466-ac597dd70983",
+    "name": "Michael Johnson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:mo/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Michael",
+    "family_name": "Johnson",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2255",
+    "email": "michael.johnson@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2021-01-08T00:10:46.032022+00:00",
+    "updated_at": "2026-06-04T07:16:30.866843+00:00",
+    "openstates_url": "https://openstates.org/person/michael-johnson-3tgQQE1ujeot1t7fFvVVy7/"
+  },
+  {
+    "id": "ocd-person/c08a9151-fdfe-4da9-97c2-5536ed96f255",
+    "name": "Mike Costlow",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "108",
+      "division_id": "ocd-division/country:us/state:mo/sldl:108"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Costlow",
+    "image": "https://costlowformissouri.com/wp-content/uploads/2024/05/Headshot-No-Background-2.png",
+    "email": "mike.costlow@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:16.466630+00:00",
+    "updated_at": "2026-06-04T07:17:33.088581+00:00",
+    "openstates_url": "https://openstates.org/person/mike-costlow-5rJqqXVNpgaQeFsynEyQ0D/"
+  },
+  {
+    "id": "ocd-person/8e0bb3e7-085b-471c-a588-a1de9b466706",
+    "name": "Mike Jones",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:mo/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Jones",
+    "image": "https://static.wixstatic.com/media/c0c31e_a5630222da5c43efb8e8c52283f027da~mv2.jpg/v1/fill/w_473,h_549,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Michael-18%20(2)_edited.jpg",
+    "email": "michael.jones@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:14.023899+00:00",
+    "updated_at": "2026-06-04T07:17:10.167945+00:00",
+    "openstates_url": "https://openstates.org/person/mike-jones-4K2G23sO4oBhV0jwrHV5lO/"
+  },
+  {
+    "id": "ocd-person/1a644e87-8691-4e86-af73-6a2af0f56c82",
+    "name": "Mike McGirl",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "118",
+      "division_id": "ocd-division/country:us/state:mo/sldl:118"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "McGirl",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2065",
+    "email": "mike.mcgirl@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Potosi"
+    },
+    "created_at": "2019-01-17T06:13:29.375613+00:00",
+    "updated_at": "2026-06-04T07:17:40.628365+00:00",
+    "openstates_url": "https://openstates.org/person/mike-mcgirl-nndjIdZtFTxCtCfP2WJWs/"
+  },
+  {
+    "id": "ocd-person/df4d176b-2a0b-41be-977f-efa722d6a321",
+    "name": "Mike Steinmeyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:mo/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Steinmeyer",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Mike_Steinmeyer_20241028_013139.jpeg",
+    "email": "mike.steinmeyer@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:24.173730+00:00",
+    "updated_at": "2025-07-18T01:16:32.253946+00:00",
+    "openstates_url": "https://openstates.org/person/mike-steinmeyer-6nMWECE3uJiLPwE5aKmyqP/"
+  },
+  {
+    "id": "ocd-person/c5b24334-9dfa-4356-8aa2-8f91c2a3d692",
+    "name": "Mitch Boggs",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "157",
+      "division_id": "ocd-division/country:us/state:mo/sldl:157"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Mitch",
+    "family_name": "Boggs",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2241",
+    "email": "mitch.boggs@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1972-03-02",
+    "death_date": "",
+    "extras": {
+      "hometown": "LaRussell"
+    },
+    "created_at": "2021-01-08T00:10:42.827657+00:00",
+    "updated_at": "2026-06-04T07:17:00.668807+00:00",
+    "openstates_url": "https://openstates.org/person/mitch-boggs-612xBXpOz8PaCOgjRLUTek/"
+  },
+  {
+    "id": "ocd-person/e6caa351-c418-431a-bf50-1bd16923ae49",
+    "name": "Nick Kimble",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:mo/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Nick",
+    "family_name": "Kimble",
+    "image": "https://media.upballot.com/candidates/_250x250_crop_center-center_100_none/Nick-Kimble-Headshot.jpeg",
+    "email": "nick.kimble@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:05.951147+00:00",
+    "updated_at": "2025-07-18T01:17:10.657685+00:00",
+    "openstates_url": "https://openstates.org/person/nick-kimble-71Uq8rl0VZfmbLcuXEuxDt/"
+  },
+  {
+    "id": "ocd-person/a0be4ce1-fdbd-47d2-a74c-aaee85644992",
+    "name": "Pattie Mansur",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:mo/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Pattie",
+    "family_name": "Mansur",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/PattieMansur2024.jpg",
+    "email": "pattie.mansur@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:10.280144+00:00",
+    "updated_at": "2025-07-18T01:17:06.450763+00:00",
+    "openstates_url": "https://openstates.org/person/pattie-mansur-4tJjrp82k4llobYg1ifXkI/"
+  },
+  {
+    "id": "ocd-person/920c5b79-73a0-477b-a90d-1a290e48e014",
+    "name": "Peggy McGaugh",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:mo/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Peggy",
+    "family_name": "McGaugh",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2019",
+    "email": "peggy.mcgaugh@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Carrollton"
+    },
+    "created_at": "2018-10-18T14:50:20.106784+00:00",
+    "updated_at": "2026-06-04T07:16:03.517623+00:00",
+    "openstates_url": "https://openstates.org/person/peggy-mcgaugh-4RaWfzF17mJ7SPWdbXkdNc/"
+  },
+  {
+    "id": "ocd-person/1d96c354-2527-4449-9b40-36bb78fe2cb7",
+    "name": "Phil Amato",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "113",
+      "division_id": "ocd-division/country:us/state:mo/sldl:113"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Phil",
+    "family_name": "Amato",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2378",
+    "email": "phil.amato@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Arnold"
+    },
+    "created_at": "2023-01-05T23:27:28.286586+00:00",
+    "updated_at": "2026-01-29T07:11:33.404603+00:00",
+    "openstates_url": "https://openstates.org/person/phil-amato-tpfvxID9omcYVRGieuVxn/"
+  },
+  {
+    "id": "ocd-person/4d403f59-65f6-484f-9aeb-fe05380d4bcf",
+    "name": "Philip Oehlerking",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:mo/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Philip",
+    "family_name": "Oehlerking",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2371",
+    "email": "philip.oehlerking@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1988-06-29",
+    "death_date": "",
+    "extras": {
+      "hometown": "Ballwin"
+    },
+    "created_at": "2023-01-05T23:27:18.757191+00:00",
+    "updated_at": "2026-06-04T07:17:20.084200+00:00",
+    "openstates_url": "https://openstates.org/person/philip-oehlerking-2LlllDYzk3OyhqEcDDkNwd/"
+  },
+  {
+    "id": "ocd-person/41f72deb-7981-4053-bb15-7eb3580b9ade",
+    "name": "Ray Reed",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:mo/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Ray",
+    "family_name": "Reed",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/May162022836PM_104500298_ReedForMissouriHeadshot.jpeg",
+    "email": "ray.reed@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:30.505006+00:00",
+    "updated_at": "2026-06-04T07:17:07.946665+00:00",
+    "openstates_url": "https://openstates.org/person/ray-reed-20TSg1AGKogLVqSiwvyEDG/"
+  },
+  {
+    "id": "ocd-person/e0d1f714-8603-40c6-8c3e-04934648caa4",
+    "name": "Raychel Proudie",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:mo/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Raychel",
+    "family_name": "Proudie",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2099",
+    "email": "raychel.proudie@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "1983-05-26",
+    "death_date": "",
+    "extras": {
+      "hometown": "Ferguson"
+    },
+    "created_at": "2019-01-17T06:13:29.949263+00:00",
+    "updated_at": "2026-01-29T07:10:57.370659+00:00",
+    "openstates_url": "https://openstates.org/person/raychel-proudie-6qEEbbffnLocA9RSRow68i/"
+  },
+  {
+    "id": "ocd-person/64a3bd7d-7dc8-4ce6-bd30-6101b2b7926e",
+    "name": "Renee Reuter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "112",
+      "division_id": "ocd-division/country:us/state:mo/sldl:112"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Renee",
+    "family_name": "Reuter",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2396",
+    "email": "renee.reuter@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Imperial"
+    },
+    "created_at": "2023-01-05T23:27:27.980430+00:00",
+    "updated_at": "2026-06-04T07:17:15.460470+00:00",
+    "openstates_url": "https://openstates.org/person/renee-reuter-33u3r0cY7VIxsTtV8D1nyQ/"
+  },
+  {
+    "id": "ocd-person/4209f53e-18f3-4c9e-8183-caa385c319ec",
+    "name": "Richard West",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "102",
+      "division_id": "ocd-division/country:us/state:mo/sldl:102"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "West",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2245",
+    "email": "richard.west@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1967-03-07",
+    "death_date": "",
+    "extras": {
+      "hometown": "Wentzville"
+    },
+    "created_at": "2021-01-08T00:10:43.834029+00:00",
+    "updated_at": "2026-06-04T07:16:19.265103+00:00",
+    "openstates_url": "https://openstates.org/person/richard-west-20c2kdPfJwncRxh1i5IxnY/"
+  },
+  {
+    "id": "ocd-person/bd63f6e7-ed53-4a4c-98b6-925588710b0b",
+    "name": "Rodger Reedy",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:mo/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Rodger",
+    "family_name": "Reedy",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2096",
+    "email": "rodger.reedy@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1961-08-15",
+    "death_date": "",
+    "extras": {
+      "hometown": "Windsor"
+    },
+    "created_at": "2019-01-17T06:13:31.754014+00:00",
+    "updated_at": "2026-06-04T07:17:18.224842+00:00",
+    "openstates_url": "https://openstates.org/person/rodger-reedy-5lNEUJnSJa4mjiZkX3q42F/"
+  },
+  {
+    "id": "ocd-person/7a66b805-a3a7-4440-b404-a562c1e00059",
+    "name": "Ron Fowler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:mo/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Fowler",
+    "image": "",
+    "email": "william.fowler@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:28.137127+00:00",
+    "updated_at": "2025-02-04T20:17:51.836045+00:00",
+    "openstates_url": "https://openstates.org/person/ron-fowler-3iy0P6fqr6DFiXjPPUGH8b/"
+  },
+  {
+    "id": "ocd-person/fe941ee4-f34a-4685-873c-29adbb732b2c",
+    "name": "Rudy Veit",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:mo/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Rudy",
+    "family_name": "Veit",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2078",
+    "email": "rudy.veit@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1953-08-16",
+    "death_date": "",
+    "extras": {
+      "hometown": "Wardsville"
+    },
+    "created_at": "2019-01-17T06:13:25.064592+00:00",
+    "updated_at": "2025-07-18T01:18:03.049401+00:00",
+    "openstates_url": "https://openstates.org/person/rudy-veit-7kNk1lWMSspscmPD2JRwYm/"
+  },
+  {
+    "id": "ocd-person/515b97f2-7c88-40e5-b127-04146435e50e",
+    "name": "Scott Cupps",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "158",
+      "division_id": "ocd-division/country:us/state:mo/sldl:158"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Cupps",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2172",
+    "email": "scott.cupps@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Shell Knob"
+    },
+    "created_at": "2020-02-05T06:12:01.670030+00:00",
+    "updated_at": "2025-04-24T07:23:32.620331+00:00",
+    "openstates_url": "https://openstates.org/person/scott-cupps-2TWEgSZ406zwXj8FnVqTJG/"
+  },
+  {
+    "id": "ocd-person/3e251c9a-ef4d-436d-9c10-9aa447b3fcbd",
+    "name": "Scott Miller",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:mo/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Miller",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Scott_Miller_20240924_022629.png",
+    "email": "scott.miller@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:43.099967+00:00",
+    "updated_at": "2025-07-18T01:17:07.166034+00:00",
+    "openstates_url": "https://openstates.org/person/scott-miller-1tGU1yaioEfrwY4J8dffLR/"
+  },
+  {
+    "id": "ocd-person/e1a53185-3c84-4f82-87f0-09bd607cf2e7",
+    "name": "Sean Pouche",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:mo/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Sean",
+    "family_name": "Pouche",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2209",
+    "email": "sean.pouche@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2021-01-08T00:10:42.318372+00:00",
+    "updated_at": "2025-07-18T01:17:05.817217+00:00",
+    "openstates_url": "https://openstates.org/person/sean-pouche-6rmlZ3bdps8RSDZzU7Hvs7/"
+  },
+  {
+    "id": "ocd-person/272db469-eb67-4752-8307-c46a95eaace0",
+    "name": "Sherri Gallick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:mo/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Sherri",
+    "family_name": "Gallick",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2359",
+    "email": "sherri.gallick@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Belton"
+    },
+    "created_at": "2023-01-05T23:27:18.246775+00:00",
+    "updated_at": "2025-07-18T01:16:48.146492+00:00",
+    "openstates_url": "https://openstates.org/person/sherri-gallick-1BvaRngm9sV5ADyIDlaIj2/"
+  },
+  {
+    "id": "ocd-person/129ff7c8-e210-47d5-a30c-777571984925",
+    "name": "Stephanie Boykin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:mo/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Stephanie",
+    "family_name": "Boykin",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Stephanie__Boykin__20240808_091242.jpg",
+    "email": "stephanie.boykin@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:48.432059+00:00",
+    "updated_at": "2025-02-04T20:17:53.039538+00:00",
+    "openstates_url": "https://openstates.org/person/stephanie-boykin-Z8xymLKLkBc95TqJipQtZ/"
+  },
+  {
+    "id": "ocd-person/9adf60fd-19a0-429c-ab41-5cbc8e6391fc",
+    "name": "Stephanie Hein",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "136",
+      "division_id": "ocd-division/country:us/state:mo/sldl:136"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Stephanie",
+    "family_name": "Hein",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2363",
+    "email": "stephanie.hein@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Springfield"
+    },
+    "created_at": "2023-01-05T23:27:16.676649+00:00",
+    "updated_at": "2025-07-18T01:16:30.261012+00:00",
+    "openstates_url": "https://openstates.org/person/stephanie-hein-4iEtyI2MxlET9TIx0CxsAG/"
+  },
+  {
+    "id": "ocd-person/6ad9db86-5e30-4693-be71-41bacad5b843",
+    "name": "Steve Butz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:mo/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Butz",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2061",
+    "email": "steve.butz@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "1959-02-28",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2019-01-17T06:13:26.372737+00:00",
+    "updated_at": "2024-10-08T19:43:04.524227+00:00",
+    "openstates_url": "https://openstates.org/person/steve-butz-3FckMdeJ5HdY4AXgKGuGTz/"
+  },
+  {
+    "id": "ocd-person/7ff101ee-474f-410d-9644-88bb17ae7519",
+    "name": "Steve Jordan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "151",
+      "division_id": "ocd-division/country:us/state:mo/sldl:151"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Jordan",
+    "image": "https://public-assets-prod.pubgen.ai/brand_a7b06a8b-02b9-4920-9426-9b9be1d4e410/asset_912fbf35-14cf-4899-857f-bfa1a8508a2d.jpg?w=1240",
+    "email": "steve.jordan@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:43:54.730791+00:00",
+    "updated_at": "2026-06-04T07:16:40.878436+00:00",
+    "openstates_url": "https://openstates.org/person/steve-jordan-3tQAJBcvncpv0qyjsdy0fR/"
+  },
+  {
+    "id": "ocd-person/ae8a2d25-fbb2-4254-976a-f9dcf0c92c6f",
+    "name": "Tara Peters",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "122",
+      "division_id": "ocd-division/country:us/state:mo/sldl:122"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Tara",
+    "family_name": "Peters",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2394",
+    "email": "tara.peters@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Rolla"
+    },
+    "created_at": "2023-01-05T23:27:26.639365+00:00",
+    "updated_at": "2025-07-18T01:16:39.279004+00:00",
+    "openstates_url": "https://openstates.org/person/tara-peters-5JLoK3Su19YsCL7H3kWWZr/"
+  },
+  {
+    "id": "ocd-person/ea5a5b0f-1c94-4c8d-a39f-e76357ebb2bf",
+    "name": "Terri Violet",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "104",
+      "division_id": "ocd-division/country:us/state:mo/sldl:104"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Terri",
+    "family_name": "Violet",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Terri_Violet_20240810_031254.png",
+    "email": "terri.violet@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:25.855840+00:00",
+    "updated_at": "2025-07-18T01:16:34.736698+00:00",
+    "openstates_url": "https://openstates.org/person/terri-violet-78DUpB4x9sMdsYfMRZV9eJ/"
+  },
+  {
+    "id": "ocd-person/da48983a-852b-4d3b-b635-285f37d8d012",
+    "name": "Terry Thompson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:mo/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Thompson",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2219",
+    "email": "terry.thompson@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Lexington"
+    },
+    "created_at": "2021-01-08T00:10:35.947003+00:00",
+    "updated_at": "2026-06-04T07:16:20.055907+00:00",
+    "openstates_url": "https://openstates.org/person/terry-thompson-6dtVC1P8mPpzVzpJ4UZMPa/"
+  },
+  {
+    "id": "ocd-person/53e00142-c4a0-41e7-bef7-fedb8de2bcdc",
+    "name": "Tiffany Price",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:mo/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Tiffany",
+    "family_name": "Price",
+    "image": "",
+    "email": "tiffany.price@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:46.976012+00:00",
+    "updated_at": "2025-02-04T20:17:48.593368+00:00",
+    "openstates_url": "https://openstates.org/person/tiffany-price-2YGjUFiKt37IPN6jKOK7o4/"
+  },
+  {
+    "id": "ocd-person/14c919a7-4443-4bc7-8221-34a59cc3bfef",
+    "name": "Tim Taylor",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:mo/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Taylor",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2217",
+    "email": "tim.taylor@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Bunceton"
+    },
+    "created_at": "2021-01-08T00:10:43.918464+00:00",
+    "updated_at": "2026-06-04T07:16:09.469858+00:00",
+    "openstates_url": "https://openstates.org/person/tim-taylor-dDkTQjkZfE6Sf5EQfzMTf/"
+  },
+  {
+    "id": "ocd-person/b3e74d72-fdba-4c02-b75c-1ba8cc5b44b2",
+    "name": "Tony Harbison",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "144",
+      "division_id": "ocd-division/country:us/state:mo/sldl:144"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Tony",
+    "family_name": "Harbison",
+    "image": "",
+    "email": "tony.harbison@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:44:00.459731+00:00",
+    "updated_at": "2025-04-24T07:22:57.327550+00:00",
+    "openstates_url": "https://openstates.org/person/tony-harbison-5TTKaX8nWXSVxMG2gIA5Eg/"
+  },
+  {
+    "id": "ocd-person/b45073a9-ed4d-4d2c-89cd-edf310e7d373",
+    "name": "Tonya Rush",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:mo/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Tonya",
+    "family_name": "Rush",
+    "image": "https://assets.civicengine.com/uploads/candidate/headshot/824926/824926.jpg",
+    "email": "latondra.rush@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:00.010026+00:00",
+    "updated_at": "2026-06-04T07:16:15.825310+00:00",
+    "openstates_url": "https://openstates.org/person/tonya-rush-5UFNtcjTCK2c1pekc48A6N/"
+  },
+  {
+    "id": "ocd-person/350514c2-7875-44c4-8ef3-20da25540793",
+    "name": "Travis Wilson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "106",
+      "division_id": "ocd-division/country:us/state:mo/sldl:106"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Travis",
+    "family_name": "Wilson",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2373",
+    "email": "travis.wilson@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Charles"
+    },
+    "created_at": "2023-01-05T23:27:37.573981+00:00",
+    "updated_at": "2025-04-24T07:23:42.450839+00:00",
+    "openstates_url": "https://openstates.org/person/travis-wilson-1c2ukmUv4HdXgXCMZXKyrz/"
+  },
+  {
+    "id": "ocd-person/4f9135f0-db97-4860-af00-182d0026feae",
+    "name": "Tricia Byrnes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:mo/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Tricia",
+    "family_name": "Byrnes",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2382",
+    "email": "tricia.byrnes@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Wentzville"
+    },
+    "created_at": "2023-01-05T23:27:16.119417+00:00",
+    "updated_at": "2026-06-04T07:17:21.637827+00:00",
+    "openstates_url": "https://openstates.org/person/tricia-byrnes-2Q8kpPaKo05vGiKSBU48bu/"
+  },
+  {
+    "id": "ocd-person/b6ab609a-1abc-40ee-9ac1-889ccb08a9f0",
+    "name": "Wendy Hausman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:mo/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Wendy",
+    "family_name": "Hausman",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2360",
+    "email": "wendy.hausman@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Peters"
+    },
+    "created_at": "2023-01-05T23:27:29.503325+00:00",
+    "updated_at": "2026-06-04T07:16:51.417499+00:00",
+    "openstates_url": "https://openstates.org/person/wendy-hausman-5YgvEhf6x9xdNm5ZMF56R6/"
+  },
+  {
+    "id": "ocd-person/39bcc093-37e9-469a-866d-5b6f10c52381",
+    "name": "Wick Thomas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:mo/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Wick",
+    "family_name": "Thomas",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/wthomas2.jpg",
+    "email": "wick.thomas@house.mo.gov",
+    "gender": "X",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:46:22.540198+00:00",
+    "updated_at": "2025-07-18T01:18:06.136564+00:00",
+    "openstates_url": "https://openstates.org/person/wick-thomas-1kwp0HwMNgxMpzKP0RFyL3/"
+  },
+  {
+    "id": "ocd-person/9c6a9708-529e-422f-82b7-e92385a32688",
+    "name": "Will Jobe",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:mo/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Jobe",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JoeStreno2024.jpg",
+    "email": "will.jobe@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-11T20:45:04.739868+00:00",
+    "updated_at": "2025-02-04T20:17:46.794479+00:00",
+    "openstates_url": "https://openstates.org/person/will-jobe-4l9VukMZlqCcnulyqQ4SN6/"
+  },
+  {
+    "id": "ocd-person/05c84580-b849-4320-9aa4-e34d8b977aca",
+    "name": "Willard Haley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:mo/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Willard",
+    "family_name": "Haley",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2221",
+    "email": "willard.haley@house.mo.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Eldon"
+    },
+    "created_at": "2021-01-08T00:10:38.098602+00:00",
+    "updated_at": "2026-06-04T07:17:33.814606+00:00",
+    "openstates_url": "https://openstates.org/person/willard-haley-AuU82r5N91FFzCzusHRgQ/"
+  },
+  {
+    "id": "ocd-person/e2fb607f-9af9-4d80-b473-8ed33e3d942d",
+    "name": "Yolanda Young",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:mo/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Yolanda",
+    "family_name": "Young",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2168",
+    "email": "yolanda.young@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "Kansas City"
+    },
+    "created_at": "2020-02-05T06:12:06.131779+00:00",
+    "updated_at": "2026-06-04T07:16:56.802658+00:00",
+    "openstates_url": "https://openstates.org/person/yolanda-young-6uJ91F7hF8N0E5XvaBYBTR/"
+  },
+  {
+    "id": "ocd-person/6f65a218-7bef-4fa3-b86c-907ed92296d8",
+    "name": "Yolonda Fountain-Henderson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:mo/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:mo/government",
+      "name": "Missouri",
+      "classification": "state"
+    },
+    "given_name": "Yolonda",
+    "family_name": "Fountain-Henderson",
+    "image": "https://house.mo.gov/MemberPhoto.aspx?id=2385",
+    "email": "yolonda.fountainhend@house.mo.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "hometown": "St. Louis"
+    },
+    "created_at": "2023-01-05T23:27:23.063826+00:00",
+    "updated_at": "2025-07-18T01:16:38.289203+00:00",
+    "openstates_url": "https://openstates.org/person/yolonda-fountain-henderson-3OCasNRJczXok7DVXPQAv2/"
+  }
+]

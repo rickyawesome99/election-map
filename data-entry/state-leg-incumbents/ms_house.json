@@ -1,0 +1,4350 @@
+[
+  {
+    "id": "ocd-person/95d25b69-8eb7-44cd-a789-54351e17970c",
+    "name": "Andy Boyd",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ms/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Andy",
+    "family_name": "Boyd",
+    "image": "http://billstatus.ls.state.ms.us/members/house/boyd_(37).jpg",
+    "email": "aboyd@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1957-06-26",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Bachelor of Science - Business Administration, Mississippi State University"
+      ],
+      "counties represented": [
+        "Clay",
+        "Lowndes",
+        "Oktibbeha"
+      ]
+    },
+    "created_at": "2023-01-05T20:45:50.361306+00:00",
+    "updated_at": "2025-07-18T01:22:54.521831+00:00",
+    "openstates_url": "https://openstates.org/person/andy-boyd-4YhzOEQVKoYvSow0he8oQO/"
+  },
+  {
+    "id": "ocd-person/83f9f72e-ec2d-4351-a227-d8a6aec18eed",
+    "name": "Angela Cockerham",
+    "party": "Independent",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "96",
+      "division_id": "ocd-division/country:us/state:ms/sldl:96"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Angela",
+    "family_name": "Cockerham",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Angela_Cockerham.jpg",
+    "email": "acockerham@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1976-08-20",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Jackson State University; B. A.",
+        "Loyola University-New Orleans; J. D.",
+        "Tufts University, The Fletcher School of Law and Diplomacy, M.A."
+      ],
+      "counties represented": [
+        "Adams",
+        "Amite",
+        "Pike",
+        "Wilkinson"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:54.404547+00:00",
+    "updated_at": "2026-06-04T07:22:13.292607+00:00",
+    "openstates_url": "https://openstates.org/person/angela-cockerham-412EDs601H2pREXQULlSUX/"
+  },
+  {
+    "id": "ocd-person/4b865b47-4811-4437-be08-0f3bf10d461c",
+    "name": "Becky Currie",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "92",
+      "division_id": "ocd-division/country:us/state:ms/sldl:92"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Becky",
+    "family_name": "Currie",
+    "image": "http://billstatus.ls.state.ms.us/members/house/currie.jpg",
+    "email": "bcurrie@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1957-05-02",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "S/W Community College, A.S.",
+        "University of Southern Mississippi"
+      ],
+      "occupation": "Registered Nurse",
+      "counties represented": [
+        "Copiah",
+        "Lawrence",
+        "Lincoln"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:17.079023+00:00",
+    "updated_at": "2025-07-18T01:21:28.249662+00:00",
+    "openstates_url": "https://openstates.org/person/becky-currie-2IVpBla4swnx81gDv6tG8a/"
+  },
+  {
+    "id": "ocd-person/27f187c6-8755-4a18-a32a-dd5b5d7831c8",
+    "name": "Beth Waldo",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ms/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Beth",
+    "family_name": "Waldo",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Beth_Luther_Waldo.jpeg",
+    "email": "bwaldo@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1970-05-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:50.691146+00:00",
+    "updated_at": "2026-01-29T07:14:56.954127+00:00",
+    "openstates_url": "https://openstates.org/person/beth-waldo-1DN4zDSDMr6REAi6S0uEUC/"
+  },
+  {
+    "id": "ocd-person/af66e7a0-2b1a-4fa0-a66c-e6e7a2541cb1",
+    "name": "Bill Kinkade",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:ms/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Kinkade",
+    "image": "http://billstatus.ls.state.ms.us/members/house/kinkade.jpg",
+    "email": "bkinkade@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Orange High School",
+        "Orange, California"
+      ],
+      "occupation": "V.P. Operations/Sales",
+      "other phone1": "(901)870-2726",
+      "other phone2": "(901)365-4830",
+      "counties represented": [
+        "DeSoto",
+        "Marshall"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:51.258258+00:00",
+    "updated_at": "2026-01-29T07:15:25.325982+00:00",
+    "openstates_url": "https://openstates.org/person/bill-kinkade-5KygSX2w0HeEjemfwBoUGv/"
+  },
+  {
+    "id": "ocd-person/2fed984f-0f51-40d2-9881-ec16131a6a2f",
+    "name": "Bill Pigott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "99",
+      "division_id": "ocd-division/country:us/state:ms/sldl:99"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "Pigott",
+    "image": "http://billstatus.ls.state.ms.us/members/house/pigott.jpg",
+    "email": "bpigott@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1946-10-13",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Dexter High School",
+        "Pearl River Community College",
+        "Mississippi State University, B.S."
+      ],
+      "occupation": "Farmer",
+      "other phone": "(601)303-0988",
+      "counties represented": [
+        "Lamar",
+        "Marion",
+        "Walthall"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:13.229109+00:00",
+    "updated_at": "2025-07-18T01:22:49.831587+00:00",
+    "openstates_url": "https://openstates.org/person/bill-pigott-1SRDfrGj1m02WP5ND1o3fL/"
+  },
+  {
+    "id": "ocd-person/15f21051-d36c-4a2a-aa96-100bb8cb693b",
+    "name": "Billy Adam Calvert",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "83",
+      "division_id": "ocd-division/country:us/state:ms/sldl:83"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Billy Adam",
+    "family_name": "Calvert",
+    "image": "http://billstatus.ls.state.ms.us/members/house/calvert.jpg",
+    "email": "bcalvert@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Mississippi 2002; East Central Community College, Kemper Academy"
+      ],
+      "occupation": "CEO of Southern Business Supply; Farmer",
+      "other phone1": "(601)490-0652",
+      "other phone2": "(601)485-2477",
+      "counties represented": [
+        "Lauderdale"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:53.949009+00:00",
+    "updated_at": "2025-07-18T01:21:58.696614+00:00",
+    "openstates_url": "https://openstates.org/person/billy-adam-calvert-fPSf7B79hkkoRa60jxn47/"
+  },
+  {
+    "id": "ocd-person/b8541474-47fd-4dd2-8576-53b7fe911039",
+    "name": "Bo Brown",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:ms/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Bo",
+    "family_name": "Brown",
+    "image": "http://billstatus.ls.state.ms.us/members/house/brown_(70th).jpg",
+    "email": "bbrown@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1949-11-08",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Tennessee State University B.A.; Political Science; Jackson State University M.P.P.A Public Policy & Administration; Post Graduate, University of Santa Clara (CA) Urban Affairs"
+      ],
+      "occupation": "Insurance Broker",
+      "counties represented": [
+        "Hinds"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:55.015938+00:00",
+    "updated_at": "2025-07-18T01:21:53.950794+00:00",
+    "openstates_url": "https://openstates.org/person/bo-brown-5bp0n9TvQIDDi4Y9f0tS1Z/"
+  },
+  {
+    "id": "ocd-person/7fe0478b-3777-490c-93cb-20f83baf3d3f",
+    "name": "Bob Evans",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "91",
+      "division_id": "ocd-division/country:us/state:ms/sldl:91"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Evans",
+    "image": "http://billstatus.ls.state.ms.us/members/house/evans_(91st).jpg",
+    "email": "bevans@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1950-02-03",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Monticello High School",
+        "Mississippi State University, B.A.",
+        "Mississippi College School of Law, J.D."
+      ],
+      "occupation": "Attorney",
+      "other phone": "(601)587-0615",
+      "counties represented": [
+        "Copiah",
+        "Covington",
+        "Jefferson Davis",
+        "Lawrence",
+        "Simpson"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:16.750892+00:00",
+    "updated_at": "2025-07-18T01:21:24.555820+00:00",
+    "openstates_url": "https://openstates.org/person/bob-evans-3tIWKlMM64HAsPSXfWgg7L/"
+  },
+  {
+    "id": "ocd-person/487214e9-b0e2-4741-8bd4-a043a1dd19a5",
+    "name": "Brad Mattox",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ms/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Mattox",
+    "image": "https://www.supertalk.fm/wp-content/uploads/2023/08/Brad-Mattox-960x540.png.webp",
+    "email": "mattox@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1970-10-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:51.694668+00:00",
+    "updated_at": "2026-01-29T07:15:37.184096+00:00",
+    "openstates_url": "https://openstates.org/person/brad-mattox-2Cha98L8aFFPE6IRYnlgKD/"
+  },
+  {
+    "id": "ocd-person/307ab2ac-eafb-4d68-8e02-1fff040f50e4",
+    "name": "Brent Anderson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "122",
+      "division_id": "ocd-division/country:us/state:ms/sldl:122"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Brent",
+    "family_name": "Anderson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api/storage/uploads/thumbs/200/300/crop/best/80182230_img_6905.jpg",
+    "email": "banderson@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1972-10-17",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "MS Dept. of Health",
+        "MS Fire Academy",
+        "Bay High School"
+      ],
+      "occupation": "Public Works Administration",
+      "other phone": "(228)216-1630",
+      "counties represented": [
+        "Hancock"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:47.245383+00:00",
+    "updated_at": "2025-07-18T01:22:10.409031+00:00",
+    "openstates_url": "https://openstates.org/person/brent-anderson-1TThhJJXvXfLdtFF88yRZU/"
+  },
+  {
+    "id": "ocd-person/222077fd-0e92-4437-a156-59521d7faffa",
+    "name": "Brent Powell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:ms/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Brent",
+    "family_name": "Powell",
+    "image": "http://billstatus.ls.state.ms.us/members/house/powell.jpg",
+    "email": "bpowell@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1969-02-08",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Northwest Rankin High School",
+        "Mississippi State University"
+      ],
+      "occupation": "Realtor; Forester",
+      "counties represented": [
+        "Rankin"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:59.678223+00:00",
+    "updated_at": "2026-01-29T07:15:32.906830+00:00",
+    "openstates_url": "https://openstates.org/person/brent-powell-12OZnMOelqubFBiSe46qGw/"
+  },
+  {
+    "id": "ocd-person/0d191683-0d9c-408f-812b-5d986a3030a6",
+    "name": "Bryant Clark",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:ms/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Bryant",
+    "family_name": "Clark",
+    "image": "http://billstatus.ls.state.ms.us/members/house/clark.jpg",
+    "email": "bclark@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1974-10-31",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Holmes Community College; AA",
+        "Mississippi Valley State; BS",
+        "Mississippi college School of Law; JD"
+      ],
+      "occupation": "Attorney",
+      "other phone": "(662)834-6133",
+      "counties represented": [
+        "Attala",
+        "Holmes",
+        "Yazoo"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:04.632326+00:00",
+    "updated_at": "2026-06-04T07:21:49.880959+00:00",
+    "openstates_url": "https://openstates.org/person/bryant-clark-OiMerm8iIj8uTOjYRiUek/"
+  },
+  {
+    "id": "ocd-person/dcc9906b-9a0a-4503-9128-006317d5ff3f",
+    "name": "Bubba Carpenter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ms/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Bubba",
+    "family_name": "Carpenter",
+    "image": "http://billstatus.ls.state.ms.us/members/house/carpenter.jpg",
+    "email": "lcarpenter@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1970-09-01",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Burnsville High school",
+        "Northeast Mississippi Community College",
+        "Paramedic School",
+        "Wallace State Community College"
+      ],
+      "occupation": "Paramedic",
+      "other phone": "(601)424-2306",
+      "counties represented": [
+        "Alcorn",
+        "Tishomingo"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:19.030117+00:00",
+    "updated_at": "2025-07-18T01:21:30.805484+00:00",
+    "openstates_url": "https://openstates.org/person/bubba-carpenter-6icQTPoDDDVF5nbTcWfJDL/"
+  },
+  {
+    "id": "ocd-person/820dcd6c-fdeb-4244-8ceb-7f5ce3048674",
+    "name": "Bubba Tubb",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "87",
+      "division_id": "ocd-division/country:us/state:ms/sldl:87"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Bubba",
+    "family_name": "Tubb",
+    "image": "http://billstatus.ls.state.ms.us/members/house/tubb.jpg",
+    "email": "jtubb@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1963-09-30",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "K-12 Manhattan Academy",
+        "BS Business Administration - Mississippi College"
+      ],
+      "occupation": "Commercial Realtor",
+      "other phone": "(601)336-3660",
+      "counties represented": [
+        "Forrest",
+        "Lamar"
+      ]
+    },
+    "created_at": "2020-12-19T06:11:15.172817+00:00",
+    "updated_at": "2026-01-29T07:14:36.561228+00:00",
+    "openstates_url": "https://openstates.org/person/bubba-tubb-3xPJEZaBGlJDhWRQT2PSYG/"
+  },
+  {
+    "id": "ocd-person/6e50b530-8c0e-485a-a568-6d40ba83127d",
+    "name": "Carl Mickens",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:ms/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Carl",
+    "family_name": "Mickens",
+    "image": "http://billstatus.ls.state.ms.us/members/house/mickens.jpg",
+    "email": "cmickens@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Kentucky State University, B.S."
+      ],
+      "occupation": "Retired Circuit Court Clerk, Funeral Services",
+      "other phone": "(662)425-1804",
+      "counties represented": [
+        "Lowndes",
+        "Noxubee",
+        "Winston"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:54.731452+00:00",
+    "updated_at": "2025-07-18T01:22:14.729918+00:00",
+    "openstates_url": "https://openstates.org/person/carl-mickens-3MA2RvXXftGr9qYi8e5aN3/"
+  },
+  {
+    "id": "ocd-person/7e340127-bea2-48af-95a8-368b99160880",
+    "name": "Carolyn Crawford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "121",
+      "division_id": "ocd-division/country:us/state:ms/sldl:121"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Carolyn",
+    "family_name": "Crawford",
+    "image": "http://billstatus.ls.state.ms.us/members/house/crawford.jpg",
+    "email": "ccrawford@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1970-03-25",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of South Alabama",
+        "Long Beach High School"
+      ],
+      "occupation": "former Social Worker",
+      "counties represented": [
+        "Harrison"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:17.900331+00:00",
+    "updated_at": "2026-06-04T07:21:56.316965+00:00",
+    "openstates_url": "https://openstates.org/person/carolyn-crawford-3q8nYcUdttMiRd3CkqKLeS/"
+  },
+  {
+    "id": "ocd-person/7f1357e0-62b5-412c-b121-6cb5a5aced0e",
+    "name": "Casey Eure",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "116",
+      "division_id": "ocd-division/country:us/state:ms/sldl:116"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Casey",
+    "family_name": "Eure",
+    "image": "http://billstatus.ls.state.ms.us/members/house/eure.jpg",
+    "email": "ceure@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1978-03-01",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "MS Gulf Coast Community College, USM Law Enforcement Academy"
+      ],
+      "occupation": "Self-employed - Eure Properties",
+      "other phone": "(228)297-2849",
+      "counties represented": [
+        "Harrison"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:14.812118+00:00",
+    "updated_at": "2025-07-18T01:21:35.578662+00:00",
+    "openstates_url": "https://openstates.org/person/casey-eure-3rmreh58bTsWWG7MDkjfZO/"
+  },
+  {
+    "id": "ocd-person/379b9fd9-2da7-4e20-b0ed-4319ead3a1db",
+    "name": "Cedric Burnett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ms/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Cedric",
+    "family_name": "Burnett",
+    "image": "http://billstatus.ls.state.ms.us/members/house/burnett.jpg",
+    "email": "cburnett@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1966-02-24",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Northwest Community College, University of Memphis"
+      ],
+      "occupation": "Mortican",
+      "counties represented": [
+        "Coahoma",
+        "Quitman",
+        "Tate",
+        "Tunica"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:01.534785+00:00",
+    "updated_at": "2025-07-18T01:22:59.724219+00:00",
+    "openstates_url": "https://openstates.org/person/cedric-burnett-1gvhJB0J7hwdIhS1rNg1ff/"
+  },
+  {
+    "id": "ocd-person/c854a4e7-61d0-4c5e-8623-694a38f0ad20",
+    "name": "Celeste Hurst",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:ms/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Celeste",
+    "family_name": "Hurst",
+    "image": "https://static.wixstatic.com/media/4b62c6_190e934501654befbc52179bbb3d45b0~mv2.jpeg/v1/fill/w_605,h_713,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/4b62c6_190e934501654befbc52179bbb3d45b0~mv2.jpeg",
+    "email": "churst@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1976-08-31",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:52.170811+00:00",
+    "updated_at": "2026-01-29T07:15:28.260010+00:00",
+    "openstates_url": "https://openstates.org/person/celeste-hurst-6619AT1zmS1RChSXaLI9hI/"
+  },
+  {
+    "id": "ocd-person/74ef0a3e-35c9-4729-b6fd-2c07c165864d",
+    "name": "Cheikh Taylor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ms/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Cheikh",
+    "family_name": "Taylor",
+    "image": "http://www.starkvilledailynews.com/sites/default/files/styles/galleria_zoom/public/field/image/TAYLOR%20MUG_0.png?itok=jRnUfeN0",
+    "email": "ctaylor@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1973-12-12",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Howard University, BS",
+        "Starkville High school"
+      ],
+      "occupation": "Executive Director/Community Development",
+      "counties represented": [
+        "Clay",
+        "Lowndes",
+        "Oktibbeha"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:15.780814+00:00",
+    "updated_at": "2026-01-29T07:14:48.162828+00:00",
+    "openstates_url": "https://openstates.org/person/cheikh-taylor-3YeLnFKaYDNxuT8C1r5TJt/"
+  },
+  {
+    "id": "ocd-person/5aa9d603-5bb2-4c1d-9a0b-1baaf91c425d",
+    "name": "Chris Bell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:ms/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Bell",
+    "image": "https://static.votesmart.org/static/canphoto/40229.jpg",
+    "email": "cbell@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1970-08-13",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Jackson State University"
+      ],
+      "occupation": "Insurance Broker",
+      "counties represented": [
+        "Hinds"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:05.959748+00:00",
+    "updated_at": "2026-06-04T07:21:57.390169+00:00",
+    "openstates_url": "https://openstates.org/person/chris-bell-2l4vKW8L3WjtZmw0RHUEI9/"
+  },
+  {
+    "id": "ocd-person/4a046f0b-1286-4bb3-aea0-7284adab76fd",
+    "name": "Chuck Blackwell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "88",
+      "division_id": "ocd-division/country:us/state:ms/sldl:88"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Chuck",
+    "family_name": "Blackwell",
+    "image": "https://billstatus.ls.state.ms.us/members/house/blackwell.jpg",
+    "email": "cblackwell@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1962-11-21",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:54.138502+00:00",
+    "updated_at": "2026-06-04T07:21:30.845250+00:00",
+    "openstates_url": "https://openstates.org/person/chuck-blackwell-2FfSQDEg9AtsM92RQOL8V3/"
+  },
+  {
+    "id": "ocd-person/0c9a7d35-4b91-42c7-8af2-39b6514c23d8",
+    "name": "Clay Deweese",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ms/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Clay",
+    "family_name": "Deweese",
+    "image": "http://billstatus.ls.state.ms.us/members/house/deweese.jpg",
+    "email": "cdeweese@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1981-11-13",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Business Administration from University of Mississippi 2004"
+      ],
+      "occupation": "Real Estate Broker",
+      "other phone1": "(662)202-7093",
+      "other phone2": "(662)281-1200",
+      "counties represented": [
+        "Lafayette"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:52.059537+00:00",
+    "updated_at": "2025-07-18T01:22:02.610691+00:00",
+    "openstates_url": "https://openstates.org/person/clay-deweese-NmVb2qa0koT6MKdvsVFZQ/"
+  },
+  {
+    "id": "ocd-person/bb9ba950-b671-4c41-b851-4a2c86d2059d",
+    "name": "Clay Mansell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:ms/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Clay",
+    "family_name": "Mansell",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Clay_Mansell.jpg",
+    "email": "cmansell@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1976-07-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:45.635310+00:00",
+    "updated_at": "2025-07-18T01:22:07.692981+00:00",
+    "openstates_url": "https://openstates.org/person/clay-mansell-5i0hYn9JOUGEWHuFzQxcs9/"
+  },
+  {
+    "id": "ocd-person/48567f29-ec70-4ff5-bda5-873f2e42933b",
+    "name": "Dan Eubanks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ms/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Eubanks",
+    "image": "http://billstatus.ls.state.ms.us/members/house/eubanks.jpg",
+    "email": "deubanks@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1970-06-11",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "North Little Rock Northeast (HS)",
+        "Kilgore College (CGP)",
+        "Univ. of Arkansas (B.B.A. Finance)",
+        "Karl Franzens Univ",
+        "Universidad de Autodenama",
+        "Mid America Baptist Seminary"
+      ],
+      "occupation": "Director of Youth and Young Adult Ministries",
+      "other phone": "(662)374-0035",
+      "counties represented": [
+        "DeSoto"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:52.926371+00:00",
+    "updated_at": "2025-07-18T01:22:48.321497+00:00",
+    "openstates_url": "https://openstates.org/person/dan-eubanks-2CUyYHao5ejP5Aygg6t9sR/"
+  },
+  {
+    "id": "ocd-person/22afa0b0-e76a-4ac0-af9a-fa158c55daea",
+    "name": "Dana McLean",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ms/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Dana",
+    "family_name": "McLean",
+    "image": "http://billstatus.ls.state.ms.us/members/house/mclean.jpg",
+    "email": "dmclean@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Stetson University College of Law, JD and LLM",
+        "University of Alabama, BA",
+        "Stephen D. Lee High school"
+      ],
+      "other phone": "(662)328-0607",
+      "counties represented": [
+        "Lowndes",
+        "Monroe"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:52.168878+00:00",
+    "updated_at": "2026-01-29T07:14:53.045058+00:00",
+    "openstates_url": "https://openstates.org/person/dana-mclean-13S04c6ap8QNrVX3ITAYvK/"
+  },
+  {
+    "id": "ocd-person/da9d953d-a95f-4166-9b94-e6c5e5b40c86",
+    "name": "Daryl Porter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "98",
+      "division_id": "ocd-division/country:us/state:ms/sldl:98"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Daryl",
+    "family_name": "Porter",
+    "image": "https://www.pepperodom.com/wp-content/uploads/2019/05/daryl-porter-683x1024.jpg",
+    "email": "dporter@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1990-09-30",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi College of Law-2018",
+        "University of MS-2013",
+        "McComb High school-2009"
+      ],
+      "occupation": "Attorney",
+      "counties represented": [
+        "Pike",
+        "Walthall"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:47.058504+00:00",
+    "updated_at": "2025-07-18T01:21:36.781121+00:00",
+    "openstates_url": "https://openstates.org/person/daryl-porter-6eWLG7IaW4aUN7ZwRccMYY/"
+  },
+  {
+    "id": "ocd-person/7051aea6-71cf-4c6e-a3f7-5eebe826aa44",
+    "name": "Doc Harris",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ms/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Doc",
+    "family_name": "Harris",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/harrisdoc.jpg",
+    "email": "wharris@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1947-09-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:47.775424+00:00",
+    "updated_at": "2026-04-04T01:19:47.506214+00:00",
+    "openstates_url": "https://openstates.org/person/doc-harris-3PwT6m72KbnzsBXxhpcgVw/"
+  },
+  {
+    "id": "ocd-person/fd1a4542-8537-4af3-90c8-4052be561c66",
+    "name": "Donnie Bell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ms/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Donnie",
+    "family_name": "Bell",
+    "image": "https://billstatus.ls.state.ms.us/members/house/bell_(21st).jpg",
+    "email": "dbell@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1963-03-03",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Itawamba Community College",
+        "Mississippi State University, B.S."
+      ],
+      "occupation": "Teacher",
+      "counties represented": [
+        "Itawamba",
+        "Tishomingo"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:02.792006+00:00",
+    "updated_at": "2025-07-18T01:21:54.492143+00:00",
+    "openstates_url": "https://openstates.org/person/donnie-bell-7hb3zYWHClm1OrJQhkSCN4/"
+  },
+  {
+    "id": "ocd-person/2118023c-ed1d-455f-b3a6-faeefd0e87b5",
+    "name": "Donnie Scoggin",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "89",
+      "division_id": "ocd-division/country:us/state:ms/sldl:89"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Donnie",
+    "family_name": "Scoggin",
+    "image": "http://files.ctctcdn.com/ee25b30f001/08bd0580-a7b2-481a-a9d2-198a61aec56d.jpg",
+    "email": "dscoggin@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1962-08-12",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "M.U.W MS",
+        "U.S.M. BS",
+        "J.C.J.C. AA"
+      ],
+      "occupation": "Nurse Practitioner",
+      "other phone1": "(601)319-5421",
+      "other phone2": "(601)477-8553",
+      "counties represented": [
+        "Jones"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:53.084390+00:00",
+    "updated_at": "2026-01-29T07:15:09.883479+00:00",
+    "openstates_url": "https://openstates.org/person/donnie-scoggin-10RiZ84YN2WEv4BCBx6EOD/"
+  },
+  {
+    "id": "ocd-person/4fa41145-35bf-442b-bdfe-cf54ea53da69",
+    "name": "Earle Banks",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:ms/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Earle",
+    "family_name": "Banks",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/banks.jpg",
+    "email": "ebankslaw@aol.com",
+    "gender": "Male",
+    "birth_date": "1954-06-25",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Jackson State University",
+        "Mississippi College School of Law"
+      ],
+      "other phone": "(601)969-3040",
+      "counties represented": [
+        "Hinds"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:13.539833+00:00",
+    "updated_at": "2025-07-18T01:21:43.882043+00:00",
+    "openstates_url": "https://openstates.org/person/earle-banks-2QHN7Jmm25J35U0f4b62xt/"
+  },
+  {
+    "id": "ocd-person/bb2a876e-ca55-46dd-842d-9b89a910848d",
+    "name": "Elliot Burch",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "105",
+      "division_id": "ocd-division/country:us/state:ms/sldl:105"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Elliot",
+    "family_name": "Burch",
+    "image": "https://static.wixstatic.com/media/220c5e_621b140aa59647afa9d2a4370f2a9253~mv2_d_5184_3456_s_4_2.jpg",
+    "email": "burch@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1985-02-02",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:44.672535+00:00",
+    "updated_at": "2025-07-18T01:22:06.623438+00:00",
+    "openstates_url": "https://openstates.org/person/elliot-burch-5hB03j3Z7HMLt2iLb7hMlR/"
+  },
+  {
+    "id": "ocd-person/706088db-555c-4dac-b9c4-ca6574241ca4",
+    "name": "Fabian Nelson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:ms/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Fabian",
+    "family_name": "Nelson",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/fnelson.JPG",
+    "email": "nelson@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1985-07-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:52.346170+00:00",
+    "updated_at": "2026-06-04T07:22:19.452071+00:00",
+    "openstates_url": "https://openstates.org/person/fabian-nelson-3Q3Fw7lfETevlEiQkCkOHM/"
+  },
+  {
+    "id": "ocd-person/002bdecd-2374-44d8-8280-e0636c5f4897",
+    "name": "Fred Shanks",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:ms/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Fred",
+    "family_name": "Shanks",
+    "image": "http://billstatus.ls.state.ms.us/members/house/shanks.jpg",
+    "email": "fshanks@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1977-12-26",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University Christian School",
+        "Hinds Community College",
+        "Mississippi State University"
+      ],
+      "occupation": "Businessman",
+      "counties represented": [
+        "Rankin"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:59.343218+00:00",
+    "updated_at": "2026-01-29T07:15:05.413227+00:00",
+    "openstates_url": "https://openstates.org/person/fred-shanks-K31YJHe6G5nuStRLVn4Z/"
+  },
+  {
+    "id": "ocd-person/2fe9c09d-6213-4576-b0e4-6e89330f41bc",
+    "name": "Gene Newman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:ms/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Gene",
+    "family_name": "Newman",
+    "image": "http://billstatus.ls.state.ms.us/members/house/newman.jpg",
+    "email": "gnewman@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1955-12-12",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Cincinnati, (M.S.)",
+        "University of Southern Miss, (B.S. in Economics)",
+        "Copiah Lincoln Jr. College",
+        "Pearl High school"
+      ],
+      "occupation": "Bail Agent/Insurance Agent",
+      "other phone": "(601)316-2491",
+      "counties represented": [
+        "Rankin"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:45.426258+00:00",
+    "updated_at": "2026-06-04T07:21:19.836406+00:00",
+    "openstates_url": "https://openstates.org/person/gene-newman-1SPSnan78iTjMOU605msN2/"
+  },
+  {
+    "id": "ocd-person/c135a4b0-9620-4eef-b561-2b08beda7289",
+    "name": "Grace Butler-Washington",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:ms/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Grace",
+    "family_name": "Butler-Washington",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TamarraGraceButlerWashington.png",
+    "email": "gbutlerwashington@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1974-10-29",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:44.553474+00:00",
+    "updated_at": "2025-07-18T01:21:55.787140+00:00",
+    "openstates_url": "https://openstates.org/person/grace-butler-washington-5sa27MbpyqseyMTznVPNYf/"
+  },
+  {
+    "id": "ocd-person/c38f3e52-9594-4580-a280-bdaa11a33b66",
+    "name": "Greg Haney",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "118",
+      "division_id": "ocd-division/country:us/state:ms/sldl:118"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Haney",
+    "image": "http://billstatus.ls.state.ms.us/members/house/haney.jpg",
+    "email": "ghaney@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1959-09-05",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Southern Mississippi",
+        "Mississippi Gulf Coast Community College",
+        "Gulfport East High School"
+      ],
+      "occupation": "Real Estate Broker",
+      "other phone": "(228)864-9095",
+      "counties represented": [
+        "Harrison"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:00.881952+00:00",
+    "updated_at": "2025-07-18T01:22:53.323628+00:00",
+    "openstates_url": "https://openstates.org/person/greg-haney-5x0xu4je69vRtuT4fPdrBm/"
+  },
+  {
+    "id": "ocd-person/745b9724-e66d-46ec-874a-d658f01b78a6",
+    "name": "Greg Holloway",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "76",
+      "division_id": "ocd-division/country:us/state:ms/sldl:76"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Holloway",
+    "image": "http://billstatus.ls.state.ms.us/members/house/holloway.jpg",
+    "email": "gholloway@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1957-12-27",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Hazlehurst High School",
+        "Alcorn State University, B.A.",
+        "Jackson State University, M.P.P.A."
+      ],
+      "occupation": "Legislator",
+      "counties represented": [
+        "Claiborne",
+        "Copiah",
+        "Hinds"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:09.623145+00:00",
+    "updated_at": "2026-01-29T07:14:59.672409+00:00",
+    "openstates_url": "https://openstates.org/person/greg-holloway-3XYxwcbiTZJBA3MvD4lj2E/"
+  },
+  {
+    "id": "ocd-person/9b5e1a7c-98cd-448e-9f75-d59a5591f1a4",
+    "name": "Gregory Elliott",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "82",
+      "division_id": "ocd-division/country:us/state:ms/sldl:82"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Gregory",
+    "family_name": "Elliott",
+    "image": "https://billstatus.ls.state.ms.us/members/house/elliott.jpg",
+    "email": "gelliott@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-05-15T01:15:01.496283+00:00",
+    "updated_at": "2026-01-29T07:15:16.615186+00:00",
+    "openstates_url": "https://openstates.org/person/gregory-elliott-4jAob29Y7ONqkhJKOuYRHg/"
+  },
+  {
+    "id": "ocd-person/4ead62fd-15e5-4662-8f9b-21a8b0fa8ebe",
+    "name": "Hank Zuber",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "113",
+      "division_id": "ocd-division/country:us/state:ms/sldl:113"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Hank",
+    "family_name": "Zuber",
+    "image": "http://billstatus.ls.state.ms.us/members/house/zuber.jpg",
+    "email": "hzuber@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1966-06-11",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Ocean Springs High School",
+        "Millsaps College",
+        "University of Mississippi School of Law"
+      ],
+      "occupation": "Attorney/Real Estate Developer",
+      "other phone": "(228)875-1097",
+      "counties represented": [
+        "Jackson"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:01.210637+00:00",
+    "updated_at": "2025-07-18T01:22:00.189982+00:00",
+    "openstates_url": "https://openstates.org/person/hank-zuber-2OSddzdcgQXrxP09GdodSw/"
+  },
+  {
+    "id": "ocd-person/3a2e8f7d-e657-45e2-93d7-2f5e8499ccfd",
+    "name": "Hester Jackson-McCray",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ms/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Hester",
+    "family_name": "Jackson-McCray",
+    "image": "http://billstatus.ls.state.ms.us/members/house/mccray.jpg",
+    "email": "hmccray@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1977-05-19",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Trition College, River Forest, IL.",
+        "Westinghouse Vocational High school"
+      ],
+      "occupation": "Nurse-Certified Dementia Practitioner",
+      "other phone": "(901)410-7875",
+      "counties represented": [
+        "DeSoto"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:45.571900+00:00",
+    "updated_at": "2025-07-18T01:22:04.136288+00:00",
+    "openstates_url": "https://openstates.org/person/hester-jackson-mccray-1lmpek7FjRk952xUazVMcP/"
+  },
+  {
+    "id": "ocd-person/8a829f4e-388e-41c5-bbc6-9e4292ff9539",
+    "name": "Jansen Owen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "106",
+      "division_id": "ocd-division/country:us/state:ms/sldl:106"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jansen",
+    "family_name": "Owen",
+    "image": "http://billstatus.ls.state.ms.us/members/house/owen.jpg",
+    "email": "jowen@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1993-07-02",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Tulane Law School J.D.",
+        "University of Southern Mississippi B.A.",
+        "Pearl River Community College A.A."
+      ],
+      "occupation": "Attorney; Business Owner",
+      "other phone1": "(601)522-3337",
+      "other phone2": "(601)746-5201",
+      "counties represented": [
+        "Lamar",
+        "Pearl River"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:47.464284+00:00",
+    "updated_at": "2026-01-29T07:15:15.290687+00:00",
+    "openstates_url": "https://openstates.org/person/jansen-owen-4DMdPXSd6JCqafuO7bZGq9/"
+  },
+  {
+    "id": "ocd-person/fa29dc4f-e4cb-45dd-a450-a1911d529801",
+    "name": "Jason White",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:ms/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "White",
+    "image": "http://billstatus.ls.state.ms.us/members/house/white.jpg",
+    "email": "jwhite@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1972-12-28",
+    "death_date": "",
+    "extras": {
+      "title": "Speaker Pro Tempore",
+      "education": [
+        "Mississippi College School of Law",
+        "Mississippi College"
+      ],
+      "occupation": "Attorney",
+      "other phone": "(662)289-8888",
+      "counties represented": [
+        "Attala",
+        "Carroll",
+        "Holmes",
+        "Leake"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:11.146635+00:00",
+    "updated_at": "2026-06-04T07:22:10.607867+00:00",
+    "openstates_url": "https://openstates.org/person/jason-white-7c3D9HNCZ7KWwxV7xMUjnV/"
+  },
+  {
+    "id": "ocd-person/7674b0fc-99c4-44a7-85ec-7edd5e6e85a0",
+    "name": "Jay McKnight",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "95",
+      "division_id": "ocd-division/country:us/state:ms/sldl:95"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "McKnight",
+    "image": "http://billstatus.ls.state.ms.us/members/house/mcknight.jpg",
+    "email": "jmcknight@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1974-12-16",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "MS Gulf Coast CC"
+      ],
+      "occupation": "Real Estate/Broker",
+      "counties represented": [
+        "Hancock",
+        "Harrison"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:48.831198+00:00",
+    "updated_at": "2026-01-29T07:14:27.932187+00:00",
+    "openstates_url": "https://openstates.org/person/jay-mcknight-3bWQCn3ZV4jkubJP1XEUeu/"
+  },
+  {
+    "id": "ocd-person/c5ec6885-a7dc-48f4-a2e4-7aa85397f337",
+    "name": "Jeff Guice",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "114",
+      "division_id": "ocd-division/country:us/state:ms/sldl:114"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Guice",
+    "image": "http://billstatus.ls.state.ms.us/members/house/guice.jpg",
+    "email": "jguice@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1959-12-22",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Southern Mississippi"
+      ],
+      "occupation": "Real Estate Broker",
+      "other phone": "(228)875-1114",
+      "counties represented": [
+        "Harrison",
+        "Jackson"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:12.900268+00:00",
+    "updated_at": "2025-07-18T01:21:32.137778+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-guice-61TWgxvXlhTR9ZChEKvRDj/"
+  },
+  {
+    "id": "ocd-person/ffba30ff-86d3-42db-ab94-0028df181da1",
+    "name": "Jeff Hale",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ms/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Hale",
+    "image": "http://billstatus.ls.state.ms.us/members/house/hale.jpg",
+    "email": "jhale@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1966-08-08",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "MS Fire Academy",
+        "Northwest College"
+      ],
+      "occupation": "Public Safety/Sales",
+      "other phone": "(901)461-6673",
+      "counties represented": [
+        "DeSoto"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:12.743360+00:00",
+    "updated_at": "2025-07-18T01:22:22.629770+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-hale-7mY8FamULOEcPSuqLMedV3/"
+  },
+  {
+    "id": "ocd-person/73fee1dd-f8c0-40a7-a4f9-e7576b4ecc3f",
+    "name": "Jeffery Harness",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "85",
+      "division_id": "ocd-division/country:us/state:ms/sldl:85"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jeffery",
+    "family_name": "Harness",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/harness.jpg",
+    "email": "jharness@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1978-04-08",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Southern Univ. School of Law",
+        "Alcorn State Univ., M.A.",
+        "Alcorn State Univ., B.S.",
+        "Jefferson County High"
+      ],
+      "occupation": "Attorney",
+      "other phone1": "(601)809-6739",
+      "other phone2": "(601)146-6769",
+      "counties represented": [
+        "Claiborne",
+        "Franklin",
+        "Jefferson",
+        "Warren"
+      ]
+    },
+    "created_at": "2019-01-04T05:14:21.501493+00:00",
+    "updated_at": "2025-07-18T01:22:46.915538+00:00",
+    "openstates_url": "https://openstates.org/person/jeffery-harness-3Wsb958MSO4gG55zecN8Zz/"
+  },
+  {
+    "id": "ocd-person/249c4603-1fce-4c28-84be-5fa6fc5420b4",
+    "name": "Jeffrey Hulum",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "119",
+      "division_id": "ocd-division/country:us/state:ms/sldl:119"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jeffrey",
+    "family_name": "Hulum",
+    "image": "http://billstatus.ls.state.ms.us/members/house/hulum.jpg",
+    "email": "jhulum@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1976-07-23",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "US Army, Sergeants Major Academy",
+        "Central Texas College",
+        "Gulfport High school"
+      ],
+      "occupation": "CEO, Extend a Hand, Help a Friend",
+      "other phone": "(228)383-4989",
+      "counties represented": [
+        "Harrison"
+      ]
+    },
+    "created_at": "2023-01-05T20:45:54.577566+00:00",
+    "updated_at": "2026-01-29T07:15:42.947286+00:00",
+    "openstates_url": "https://openstates.org/person/jeffrey-hulum-1758jpFSLpJIhks5BOTRie/"
+  },
+  {
+    "id": "ocd-person/29c08356-5e03-4aed-8518-28da6090a14b",
+    "name": "Jeramey Anderson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "110",
+      "division_id": "ocd-division/country:us/state:ms/sldl:110"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jeramey",
+    "family_name": "Anderson",
+    "image": "http://billstatus.ls.state.ms.us/members/house/anderson_(110th).jpg",
+    "email": "janderson@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1991-12-06",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Tulane University",
+        "Pearl River Community College",
+        "Moss Point High School"
+      ],
+      "occupation": "Small Business, Founder & CEO",
+      "counties represented": [
+        "Jackson"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:06.293407+00:00",
+    "updated_at": "2025-07-18T01:22:29.157802+00:00",
+    "openstates_url": "https://openstates.org/person/jeramey-anderson-1GmfAq1fiIvDLpz0LGVIwF/"
+  },
+  {
+    "id": "ocd-person/52d3da6f-c397-4795-9bd8-5a3f17657129",
+    "name": "Jerry Turner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ms/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jerry",
+    "family_name": "Turner",
+    "image": "http://billstatus.ls.state.ms.us/members/house/turner.jpg",
+    "email": "jturner@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1941-11-16",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Adv.  Bus. Mngmnt./Operations Courses",
+        "Tupelo H. S."
+      ],
+      "occupation": "Owner/Pres., Turner's Big Star Supermarkets, Northfork Used Cars/Trucks; Northfork Farm/Constr. Equip.; Landowner",
+      "other phone": "(662)365-8484",
+      "counties represented": [
+        "Lee",
+        "Prentiss",
+        "Union"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:14.485600+00:00",
+    "updated_at": "2025-07-18T01:22:51.910183+00:00",
+    "openstates_url": "https://openstates.org/person/jerry-turner-2WIBem54G1bptE9Oc0ctuj/"
+  },
+  {
+    "id": "ocd-person/922a1ebe-1f17-497b-af99-5f14b6b0f66a",
+    "name": "Jill Ford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:ms/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jill",
+    "family_name": "Ford",
+    "image": "http://billstatus.ls.state.ms.us/members/house/ford_(73rd).jpg",
+    "email": "jford@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Northeast Community College",
+        "Mississippi State University"
+      ],
+      "occupation": "Broker/Ford & Company, LLC",
+      "counties represented": [
+        "Madison"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:47.536323+00:00",
+    "updated_at": "2025-07-18T01:21:57.400231+00:00",
+    "openstates_url": "https://openstates.org/person/jill-ford-4Ro7ycgohL5jJOdrc0NR74/"
+  },
+  {
+    "id": "ocd-person/822c7153-6b04-4db2-bec4-b6f9d074fb75",
+    "name": "Jim Estrada",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ms/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jim",
+    "family_name": "Estrada",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/JimEstrada2023.jpeg",
+    "email": "jestrada@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1968-11-14",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:44.794824+00:00",
+    "updated_at": "2025-07-18T01:21:26.087992+00:00",
+    "openstates_url": "https://openstates.org/person/jim-estrada-3xdJOfXAV0k6JmiC973iEf/"
+  },
+  {
+    "id": "ocd-person/af90acc6-0f51-4638-9b7a-51afc5acb0a3",
+    "name": "Jimmy Fondren",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "111",
+      "division_id": "ocd-division/country:us/state:ms/sldl:111"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jimmy",
+    "family_name": "Fondren",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Jimmy_Fondren.jpg",
+    "email": "fondren@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1997-08-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:47.596845+00:00",
+    "updated_at": "2025-07-18T01:21:50.387012+00:00",
+    "openstates_url": "https://openstates.org/person/jimmy-fondren-5LHlycejyWiXPH4VK2hVbf/"
+  },
+  {
+    "id": "ocd-person/f4bd4ab9-cb95-4b3e-95cb-68312eda5b16",
+    "name": "Jody Steverson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ms/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jody",
+    "family_name": "Steverson",
+    "image": "http://billstatus.ls.state.ms.us/members/house/steverson.jpg?rand=41826",
+    "email": "jsteverson@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1968-08-21",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi State University",
+        "Northeast Mississippi Community College"
+      ],
+      "occupation": "Cable TV Operator/High Speed Internet provider",
+      "other phone": "(662)837-9332",
+      "counties represented": [
+        "Alcorn",
+        "Tippah"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:16.415845+00:00",
+    "updated_at": "2025-07-18T01:22:10.947427+00:00",
+    "openstates_url": "https://openstates.org/person/jody-steverson-7RodKivcXnPfFsaOAVOWhy/"
+  },
+  {
+    "id": "ocd-person/622761e7-fba1-4a35-879b-45a6dd021ab0",
+    "name": "Joey Hood",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ms/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Joey",
+    "family_name": "Hood",
+    "image": "http://billstatus.ls.state.ms.us/members/house/hood.jpg",
+    "email": "jhood@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1976-12-11",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi State University, B.A.",
+        "Mississippi College School of Law, J.D."
+      ],
+      "occupation": "Attorney",
+      "other phone": "(662)285-4663",
+      "counties represented": [
+        "Attala",
+        "Choctaw",
+        "Webster",
+        "Winston"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:08.469743+00:00",
+    "updated_at": "2025-07-18T01:21:49.119801+00:00",
+    "openstates_url": "https://openstates.org/person/joey-hood-2zDFF8NZY2BzuSyy92F9jU/"
+  },
+  {
+    "id": "ocd-person/26c38427-62d3-440b-9253-c3e485fbd8ea",
+    "name": "John Faulkner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ms/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Faulkner",
+    "image": "http://billstatus.ls.state.ms.us/members/house/faulkner.jpg",
+    "email": "jfaulkner@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1965-08-20",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Holly Springs High School",
+        "Army School of Nursing",
+        "Strayer University"
+      ],
+      "occupation": "Youth Counselor",
+      "counties represented": [
+        "Benton",
+        "Lafayette",
+        "Marshall",
+        "Tate"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:57.491167+00:00",
+    "updated_at": "2025-07-18T01:22:15.272229+00:00",
+    "openstates_url": "https://openstates.org/person/john-faulkner-1B93h45Eecq112rIzeWtD8/"
+  },
+  {
+    "id": "ocd-person/a432eb59-5656-4869-aedc-832b2206b4a5",
+    "name": "John Hines",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:ms/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Hines",
+    "image": "http://billstatus.ls.state.ms.us/members/house/hines.jpg",
+    "email": "jhines@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1966-04-06",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Greenville High Schools",
+        "Mississippi Valley State University"
+      ],
+      "occupation": "Insurance Agent and Investigator",
+      "other phone": "(662)334-9444",
+      "counties represented": [
+        "Bolivar",
+        "Issaquena",
+        "Washington"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:57.326280+00:00",
+    "updated_at": "2025-07-18T01:22:28.375130+00:00",
+    "openstates_url": "https://openstates.org/person/john-hines-4zq0jSMD7SOP1LJLPETu4r/"
+  },
+  {
+    "id": "ocd-person/6c7089b2-5e2d-4049-9aee-5fd76004af16",
+    "name": "John Read",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "112",
+      "division_id": "ocd-division/country:us/state:ms/sldl:112"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Read",
+    "image": "http://billstatus.ls.state.ms.us/members/house/read.jpg",
+    "email": "jread@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1941-07-08",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi Gulf Coast Community College",
+        "North East Louisiana University"
+      ],
+      "occupation": "Pharmacist",
+      "counties represented": [
+        "Jackson"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:59.841750+00:00",
+    "updated_at": "2026-06-04T07:22:16.086962+00:00",
+    "openstates_url": "https://openstates.org/person/john-read-3IcbHH7dMf8OLd5b5Xb9ao/"
+  },
+  {
+    "id": "ocd-person/392af292-07d5-4bfd-9636-fe4257df61b3",
+    "name": "Jonathan McMillan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:ms/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Jonathan",
+    "family_name": "McMillan",
+    "image": "https://billstatus.ls.state.ms.us/members/house/mcmillan.jpg",
+    "email": "mcmillan@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1978-08-25",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:51.641446+00:00",
+    "updated_at": "2026-01-29T07:14:24.719469+00:00",
+    "openstates_url": "https://openstates.org/person/jonathan-mcmillan-1jsBlHOvsXZVlZukn5YuLT/"
+  },
+  {
+    "id": "ocd-person/5ad5b396-01a0-40eb-8d4b-0f76f2727406",
+    "name": "Josh Hawkins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ms/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Hawkins",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/80182230_83452a1c-4a99-4e85-9c86-d12418dab31b.jpeg",
+    "email": "jhawkins@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1980-01-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:47.656578+00:00",
+    "updated_at": "2025-07-18T01:22:14.181178+00:00",
+    "openstates_url": "https://openstates.org/person/josh-hawkins-2lOyDdmexP5UdPzIEoPkqU/"
+  },
+  {
+    "id": "ocd-person/2289ffac-b812-4f76-89a8-d8e77df4de2c",
+    "name": "Justin Crosby",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ms/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Crosby",
+    "image": "https://cdn.mississippitoday.org/wp-content/uploads/2025/07/16124016/IMG_20250627_163819-200x200.jpg",
+    "email": "jcrosby@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1983-01-17",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-29T07:14:44.515784+00:00",
+    "updated_at": "2026-01-29T07:14:45.258913+00:00",
+    "openstates_url": "https://openstates.org/person/justin-crosby-13AntJeigl9YagtmCV3BLI/"
+  },
+  {
+    "id": "ocd-person/9eae167e-9e7e-4334-a67e-5b686617c71c",
+    "name": "Justin Keen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ms/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Keen",
+    "image": "https://desotocountynews.com/wp-content/uploads/2023/01/Justin-Keen-800x445.jpg",
+    "email": "jkeen@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:46.992423+00:00",
+    "updated_at": "2025-07-18T01:21:42.289907+00:00",
+    "openstates_url": "https://openstates.org/person/justin-keen-4pQLSBeKu6blfbE8L8Q3bA/"
+  },
+  {
+    "id": "ocd-person/48af55d6-95ef-4e57-9ec3-a566af0ce517",
+    "name": "Justis Gibbs",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:ms/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Justis",
+    "family_name": "Gibbs",
+    "image": "https://billstatus.ls.state.ms.us/members/house/gibbs_(72nd).jpg",
+    "email": "jgibbs@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1995-11-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:50.083064+00:00",
+    "updated_at": "2026-06-04T07:20:58.304751+00:00",
+    "openstates_url": "https://openstates.org/person/justis-gibbs-2D9Zi9JkmgZYK8oGUwYXup/"
+  },
+  {
+    "id": "ocd-person/a1fef221-e3ca-4598-a7f9-cf6862b3007a",
+    "name": "Kabir Karriem",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:ms/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Kabir",
+    "family_name": "Karriem",
+    "image": "http://billstatus.ls.state.ms.us/members/house/karriem.jpg",
+    "email": "kkarriem@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi State University",
+        "Hinds Community College"
+      ],
+      "occupation": "Business Owner",
+      "other phone": "(662)328-3063",
+      "counties represented": [
+        "Lowndes"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:08.151186+00:00",
+    "updated_at": "2025-07-18T01:22:12.637695+00:00",
+    "openstates_url": "https://openstates.org/person/kabir-karriem-4vgH3vLphYZk7b1554LNtK/"
+  },
+  {
+    "id": "ocd-person/38d590c5-20ff-42d5-b9dd-af77664213cf",
+    "name": "Karl Gibbs",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ms/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Karl",
+    "family_name": "Gibbs",
+    "image": "https://billstatus.ls.state.ms.us/members/house/gibbs_(36th).jpg",
+    "email": "kgibbs@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1963-10-31",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Alcorn State, B.S.",
+        "Educational Psychology"
+      ],
+      "occupation": "Police Officer",
+      "other phone": "(662)346-1842",
+      "counties represented": [
+        "Hinds",
+        "Madison"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:03.618880+00:00",
+    "updated_at": "2026-06-04T07:21:54.233495+00:00",
+    "openstates_url": "https://openstates.org/person/karl-gibbs-1jFAXYnxBMnP2Dy1FANXvr/"
+  },
+  {
+    "id": "ocd-person/761527db-bbe0-43e5-90e0-2a06528ebfa4",
+    "name": "Karl Oliver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:ms/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Karl",
+    "family_name": "Oliver",
+    "image": "http://billstatus.ls.state.ms.us/members/house/oliver.jpg",
+    "email": "koliver@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1963-03-24",
+    "death_date": "",
+    "extras": {
+      "counties represented": [
+        "Carroll",
+        "Grenada",
+        "Leflore",
+        "Montgomery",
+        "Webster"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:58.003980+00:00",
+    "updated_at": "2025-07-18T01:22:25.682793+00:00",
+    "openstates_url": "https://openstates.org/person/karl-oliver-3aolI4D3iwPdUBSdSRUNYC/"
+  },
+  {
+    "id": "ocd-person/0f07445d-ab7a-4c6f-9b3c-a402436afbed",
+    "name": "Keith Jackson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:ms/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Jackson",
+    "image": "https://www.theclintoncourier.net/wp-content/uploads/2024/03/Statement-by-Attorney-Christopher-A.-Collins-on-Behalf-of-Keith-Jackson.png",
+    "email": "jackson@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1978-10-01",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:49.087869+00:00",
+    "updated_at": "2026-01-29T07:14:23.302724+00:00",
+    "openstates_url": "https://openstates.org/person/keith-jackson-SMClhX0oCWAAqmD1SMgjl/"
+  },
+  {
+    "id": "ocd-person/da8a0173-20dc-4979-949d-57d902e744e0",
+    "name": "Ken Morgan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "100",
+      "division_id": "ocd-division/country:us/state:ms/sldl:100"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Ken",
+    "family_name": "Morgan",
+    "image": "http://billstatus.ls.state.ms.us/members/house/morgan.jpg",
+    "email": "kmorgan@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1951-09-10",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "2 years at Junior College",
+        "Mississippi Law Enforcement Academy"
+      ],
+      "occupation": "Small business owner",
+      "counties represented": [
+        "Lamar",
+        "Marion"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:15.301143+00:00",
+    "updated_at": "2025-07-18T01:21:37.314804+00:00",
+    "openstates_url": "https://openstates.org/person/ken-morgan-6eNOYPAdQWL8DHuGyYnW5I/"
+  },
+  {
+    "id": "ocd-person/f0fd6950-d890-445b-834e-a635715b75d5",
+    "name": "Kenji Holloway",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ms/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Kenji",
+    "family_name": "Holloway",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KenjiHolloway.jpeg",
+    "email": "holloway@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1978-12-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:44.416410+00:00",
+    "updated_at": "2026-01-29T07:14:45.814495+00:00",
+    "openstates_url": "https://openstates.org/person/kenji-holloway-7Kjy0FBQtnDmRxBJlDo5jx/"
+  },
+  {
+    "id": "ocd-person/63655fb4-af7a-4b96-95f0-5aa1bd93da62",
+    "name": "Kent McCarty",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "101",
+      "division_id": "ocd-division/country:us/state:ms/sldl:101"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Kent",
+    "family_name": "McCarty",
+    "image": "http://billstatus.ls.state.ms.us/members/house/mccarty.jpg",
+    "email": "kmccarty@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1993-01-01",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "USM-Banking and Finance 2011-2015",
+        "OGHS-2007-2011"
+      ],
+      "occupation": "Small business owner (Java Moe's Coffee Co.)",
+      "other phone": "(601)550-2470",
+      "counties represented": [
+        "Lamar"
+      ]
+    },
+    "created_at": "2019-11-16T02:04:07.344530+00:00",
+    "updated_at": "2026-01-29T07:15:29.898639+00:00",
+    "openstates_url": "https://openstates.org/person/kent-mccarty-31YZEjwzBK4tJTkf2x7zWs/"
+  },
+  {
+    "id": "ocd-person/9967ba62-2eb6-452e-8445-d3422c62a813",
+    "name": "Kevin Felsher",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "117",
+      "division_id": "ocd-division/country:us/state:ms/sldl:117"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Felsher",
+    "image": "http://billstatus.ls.state.ms.us/members/house/felsher.jpg",
+    "email": "kfelsher@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1975-10-10",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "USM, Sports Coaching and Education, B.S."
+      ],
+      "occupation": "Real Estate Broker",
+      "other phone": "(228)365-4747",
+      "counties represented": [
+        "Harrison"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:46.396331+00:00",
+    "updated_at": "2025-07-18T01:22:16.032867+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-felsher-4fTEFg4SgbDb0gLOBKS91n/"
+  },
+  {
+    "id": "ocd-person/7a9174a7-1301-407a-8c77-5f70e70fde92",
+    "name": "Kevin Ford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:ms/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Ford",
+    "image": "http://billstatus.ls.state.ms.us/members/house/ford.jpg",
+    "email": "kford@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1979-03-08",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Alabama at Birmingham",
+        "Hinds Community College",
+        "Warren High school"
+      ],
+      "occupation": "Insurance Agent",
+      "other phone": "(601)218-8185",
+      "counties represented": [
+        "Issaquena",
+        "Warren",
+        "Yazoo"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:02.485270+00:00",
+    "updated_at": "2025-07-18T01:22:26.221483+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-ford-3jHXJSig6BBh4eA26Z9NdS/"
+  },
+  {
+    "id": "ocd-person/b339d980-af38-4e76-b53c-215c26191cc1",
+    "name": "Kevin Horan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ms/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Kevin",
+    "family_name": "Horan",
+    "image": "http://billstatus.ls.state.ms.us/members/house/horan.jpg",
+    "email": "khoran@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1961-10-29",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi College School of Law",
+        "University of Mississippi",
+        "Water Valley High School"
+      ],
+      "other phone": "(662)226-2185",
+      "counties represented": [
+        "Carroll",
+        "Grenada",
+        "Holmes",
+        "Leflore",
+        "Tallahatchie"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:52.249372+00:00",
+    "updated_at": "2026-01-29T07:14:22.207272+00:00",
+    "openstates_url": "https://openstates.org/person/kevin-horan-5SC3xYZbShB5rzZnyuWXZ3/"
+  },
+  {
+    "id": "ocd-person/58bd4b77-f7d6-45bd-bb3e-0386cf36bbf3",
+    "name": "Kimberly Remak",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ms/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Kimberly",
+    "family_name": "Remak",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/KimberlyRemak.jpg",
+    "email": "remak@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1969-12-15",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:47.299551+00:00",
+    "updated_at": "2026-01-29T07:15:24.748922+00:00",
+    "openstates_url": "https://openstates.org/person/kimberly-remak-2hRpd3EYwlVvJ4nXfrgHnn/"
+  },
+  {
+    "id": "ocd-person/f9eedb57-45af-4743-b869-ece1ccb643e2",
+    "name": "Lance Varner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:ms/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Lance",
+    "family_name": "Varner",
+    "image": "https://mcgeerealtyservices.com/wp-content/uploads/2020/09/Lances-Headshot-300x400.gif",
+    "email": "varner@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1980-01-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:46.827393+00:00",
+    "updated_at": "2026-01-29T07:15:05.939902+00:00",
+    "openstates_url": "https://openstates.org/person/lance-varner-7bcFKYMDeo7tq7vzub6jLu/"
+  },
+  {
+    "id": "ocd-person/57419404-003c-4a1d-93c0-dce987b11c00",
+    "name": "Larry Byrd",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "104",
+      "division_id": "ocd-division/country:us/state:ms/sldl:104"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Byrd",
+    "image": "http://billstatus.ls.state.ms.us/members/house/byrd.jpg",
+    "email": "lbyrd@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1948-08-01",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Petal High School"
+      ],
+      "occupation": "Contractor",
+      "counties represented": [
+        "Forrest"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:52.413093+00:00",
+    "updated_at": "2026-06-04T07:20:59.176602+00:00",
+    "openstates_url": "https://openstates.org/person/larry-byrd-2eeIhyTyJG6plUTl5oADku/"
+  },
+  {
+    "id": "ocd-person/843ed177-0a3d-4f96-9df2-28ad7333c5a6",
+    "name": "Lataisha Jackson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ms/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Lataisha",
+    "family_name": "Jackson",
+    "image": "http://billstatus.ls.state.ms.us/members/house/jackson.jpg",
+    "email": "ljackson@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1983-08-04",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "North Panola High School",
+        "Alabama State University; B.A. English Language Arts Education",
+        "Alabama State; M.A. Education Leadership"
+      ],
+      "occupation": "Executive Director of E.D.V.C.A.T.E Inc",
+      "counties represented": [
+        "Panola",
+        "Tate"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:07.813506+00:00",
+    "updated_at": "2025-07-18T01:21:59.646659+00:00",
+    "openstates_url": "https://openstates.org/person/lataisha-jackson-41Xh6EWuxn7zGbBp4WzFN0/"
+  },
+  {
+    "id": "ocd-person/c38da14f-37fd-48fd-9903-e63ce18c1215",
+    "name": "Lawrence Blackmon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:ms/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Lawrence",
+    "family_name": "Blackmon",
+    "image": "https://i0.wp.com/www.theindustrycosign.com/wp-content/uploads/2021/11/Lawrence-Blackmon-the-industry-cosign-big-ced.jpg?w=1170&ssl=1",
+    "email": "lblackmon@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Tougaloo College",
+        "George Washington University",
+        "Tuskegee Institute",
+        "Emory University"
+      ],
+      "occupation": "Attorney",
+      "other phone": "(601)859-1567",
+      "counties represented": [
+        "Madison"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:17.406002+00:00",
+    "updated_at": "2025-07-18T01:21:36.182537+00:00",
+    "openstates_url": "https://openstates.org/person/lawrence-blackmon-5x0EBug5mXeMnHxemZSh6b/"
+  },
+  {
+    "id": "ocd-person/fe627b98-efb2-43b0-a6e5-7ad967c1a2fc",
+    "name": "Lee Yancey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:ms/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Lee",
+    "family_name": "Yancey",
+    "image": "http://billstatus.ls.state.ms.us/members/house/yancey.jpg",
+    "email": "lyancey@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1968-07-29",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "B.A. Mississippi College",
+        "New Orleans Baptist Theological Seminary M.Div, D.Min.",
+        "Series 65 Licensed",
+        "Accidental Health Licensed",
+        "Life Licensed"
+      ],
+      "occupation": "Investment Advisor-Element Wealth",
+      "counties represented": [
+        "Rankin"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:47.849172+00:00",
+    "updated_at": "2025-07-18T01:21:20.340172+00:00",
+    "openstates_url": "https://openstates.org/person/lee-yancey-7k13aGNqtFZunTS1JpKsBA/"
+  },
+  {
+    "id": "ocd-person/c3ea3d93-cd2d-48f4-babd-a47bbd951108",
+    "name": "Manly Barton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "109",
+      "division_id": "ocd-division/country:us/state:ms/sldl:109"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Manly",
+    "family_name": "Barton",
+    "image": "http://billstatus.ls.state.ms.us/members/house/barton.jpg",
+    "email": "mbarton@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1949-03-14",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Alabama Christian College",
+        "Vancleave High School"
+      ],
+      "occupation": "Retired, Systems Analyst, Chevron",
+      "counties represented": [
+        "George",
+        "Jackson"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:05.784163+00:00",
+    "updated_at": "2026-04-04T01:19:41.083359+00:00",
+    "openstates_url": "https://openstates.org/person/manly-barton-5xgYDpuC7gAS0r8fvnD7wO/"
+  },
+  {
+    "id": "ocd-person/3439bb59-6632-4653-83e1-031422ad832f",
+    "name": "Mark Tullos",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "79",
+      "division_id": "ocd-division/country:us/state:ms/sldl:79"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Tullos",
+    "image": "http://billstatus.ls.state.ms.us/members/house/tullos.jpg",
+    "email": "mtullos@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1964-09-28",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "JD-MS College School of Law",
+        "BS-University of Southern MS"
+      ],
+      "occupation": "Attorney",
+      "other phone": "(601)782-4587",
+      "counties represented": [
+        "Jasper",
+        "Smith"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:58.338132+00:00",
+    "updated_at": "2026-01-29T07:14:38.775520+00:00",
+    "openstates_url": "https://openstates.org/person/mark-tullos-1aXz2VnKXff6mY8qBRgXVf/"
+  },
+  {
+    "id": "ocd-person/e645db95-2862-40dd-b548-b84b6f0b5f3f",
+    "name": "Missy McGee",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "102",
+      "division_id": "ocd-division/country:us/state:ms/sldl:102"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Missy",
+    "family_name": "McGee",
+    "image": "http://billstatus.ls.state.ms.us/members/house/mcgee.jpg",
+    "email": "mmcgee@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1966-03-31",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Southern Miss, Speech Communication, BS/MS",
+        "Hattiesburg High School"
+      ],
+      "counties represented": [
+        "Forrest",
+        "Lamar"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:14.334914+00:00",
+    "updated_at": "2026-01-29T07:15:09.227718+00:00",
+    "openstates_url": "https://openstates.org/person/missy-mcgee-70W9w8WNYrIWsAiXMV1ARb/"
+  },
+  {
+    "id": "ocd-person/86dbc7dc-6cd5-4005-b076-9b1bb674e331",
+    "name": "Noah Sanford",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "90",
+      "division_id": "ocd-division/country:us/state:ms/sldl:90"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Noah",
+    "family_name": "Sanford",
+    "image": "http://billstatus.ls.state.ms.us/members/house/sanford.jpg",
+    "email": "nsanford@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1990-05-14",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of MS School of Law, J.D.",
+        "University of MS, B.A.",
+        "Jones County Jr. College, A.A.",
+        "Seminary High school"
+      ],
+      "occupation": "Attorney",
+      "counties represented": [
+        "Covington",
+        "Jefferson Davis",
+        "Simpson"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:55.218050+00:00",
+    "updated_at": "2026-06-04T07:20:59.556395+00:00",
+    "openstates_url": "https://openstates.org/person/noah-sanford-46TPXGYy2XUk8sJGnz7XqT/"
+  },
+  {
+    "id": "ocd-person/ee6c2cb7-6d0f-4b45-9e06-2ba1dfae8ecb",
+    "name": "Omeria Scott",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "80",
+      "division_id": "ocd-division/country:us/state:ms/sldl:80"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Omeria",
+    "family_name": "Scott",
+    "image": "http://billstatus.ls.state.ms.us/members/house/scott.jpg",
+    "email": "oscott@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1956-11-21",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Southern Mississippi"
+      ],
+      "occupation": "Nursing Home Administrator",
+      "counties represented": [
+        "Clarke",
+        "Jasper",
+        "Jones"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:06.463022+00:00",
+    "updated_at": "2026-01-29T07:15:34.303945+00:00",
+    "openstates_url": "https://openstates.org/person/omeria-scott-7Ftbo1IsvFCfu6WWqI78Lj/"
+  },
+  {
+    "id": "ocd-person/5fb7e1d6-24ab-41e1-b0b2-d1445bf6abd3",
+    "name": "Oscar Denton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:ms/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Oscar",
+    "family_name": "Denton",
+    "image": "http://billstatus.ls.state.ms.us/members/house/denton.jpg",
+    "email": "odenton@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1953-07-30",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Rosa A. Temple High School",
+        "Utica Jr. College",
+        "George Meany Institute"
+      ],
+      "occupation": "AT&T, Businessman",
+      "counties represented": [
+        "Warren"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:56.835136+00:00",
+    "updated_at": "2025-07-18T01:22:17.108866+00:00",
+    "openstates_url": "https://openstates.org/person/oscar-denton-2ucIw9lxWB52p6c3wYCw2l/"
+  },
+  {
+    "id": "ocd-person/c730cb69-8d30-4676-afe8-0fb513f3845f",
+    "name": "Otha Williams",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ms/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Otha",
+    "family_name": "Williams",
+    "image": "https://magnoliatribune.com/wp-content/uploads/2025/11/Otha-Williams-1024x1024.jpg",
+    "email": "owilliams@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-29T07:15:39.087243+00:00",
+    "updated_at": "2026-01-29T07:15:39.839291+00:00",
+    "openstates_url": "https://openstates.org/person/otha-williams-63rlsY5i2ZIzHChThRFjGp/"
+  },
+  {
+    "id": "ocd-person/d4007757-e112-43b0-8261-1dd806f658c8",
+    "name": "Otis Anthony",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ms/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Otis",
+    "family_name": "Anthony",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/anthony.jpg",
+    "email": "oanthony@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1979-07-12",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Tougaloo College, Pol.Sci/ Pre law",
+        "Agape Bible College, Theology"
+      ],
+      "occupation": "Pastor, Financial Advisor, and Insurance",
+      "other phone": "(662)207-0445",
+      "counties represented": [
+        "Bolivar",
+        "Humphreys",
+        "Sunflower",
+        "Washington"
+      ]
+    },
+    "created_at": "2019-01-04T05:14:21.651720+00:00",
+    "updated_at": "2025-07-18T01:22:36.327144+00:00",
+    "openstates_url": "https://openstates.org/person/otis-anthony-6S2aLzx4bp5I9hvqlcLEPg/"
+  },
+  {
+    "id": "ocd-person/7dcb0b5b-3eb3-4db2-8666-0eb83589289f",
+    "name": "Percy Watson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "103",
+      "division_id": "ocd-division/country:us/state:ms/sldl:103"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Percy",
+    "family_name": "Watson",
+    "image": "http://billstatus.ls.state.ms.us/members/house/watson.jpg",
+    "email": "pwatson@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1951-06-05",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Iowa School of Law, University of Iowa"
+      ],
+      "occupation": "Attorney",
+      "other phone": "(601)545-1051",
+      "counties represented": [
+        "Forrest"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:51.104309+00:00",
+    "updated_at": "2026-06-04T07:21:06.912928+00:00",
+    "openstates_url": "https://openstates.org/person/percy-watson-3pMpblZw1xU59Jk2IDBYp5/"
+  },
+  {
+    "id": "ocd-person/a91418ca-cbde-4a6f-8c9d-889f406c4ed8",
+    "name": "Perry Bailey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ms/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Perry",
+    "family_name": "Bailey",
+    "image": "http://billstatus.ls.state.ms.us/members/house/bailey_(23rd).jpg",
+    "email": "pbailey@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1963-12-17",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "A.E.T.B Agriculture Eng. Tech. & Business, BS",
+        "1985 MSU",
+        "1981 Calhoun City"
+      ],
+      "occupation": "National Resource Conservation Service",
+      "counties represented": [
+        "Calhoun",
+        "Grenada",
+        "Lafayette",
+        "Webster"
+      ]
+    },
+    "created_at": "2023-05-23T01:31:54.732686+00:00",
+    "updated_at": "2025-07-18T01:22:32.160996+00:00",
+    "openstates_url": "https://openstates.org/person/perry-bailey-592t1if5JVrAjRdp4MCTqC/"
+  },
+  {
+    "id": "ocd-person/35bf01bd-be16-4ce6-b07c-bfff3d25e7e3",
+    "name": "Price Wallace",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "77",
+      "division_id": "ocd-division/country:us/state:ms/sldl:77"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Price",
+    "family_name": "Wallace",
+    "image": "http://billstatus.ls.state.ms.us/members/house/wallace.jpg",
+    "email": "pwallace@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1961-11-24",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Simpson Academy"
+      ],
+      "occupation": "Farmer",
+      "other phone": "(601)382-6848",
+      "counties represented": [
+        "Rankin",
+        "Simpson"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:02.334117+00:00",
+    "updated_at": "2026-01-29T07:15:17.002872+00:00",
+    "openstates_url": "https://openstates.org/person/price-wallace-1dPsmsIDpIrV88elHvzhnH/"
+  },
+  {
+    "id": "ocd-person/defa75f7-917e-42da-9d2c-403ad80d1995",
+    "name": "Randy Boyd",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ms/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Boyd",
+    "image": "http://billstatus.ls.state.ms.us/members/house/boyd_(19th).jpg",
+    "email": "rboyd@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1954-03-23",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi State University",
+        "Itawamba Community College",
+        "Tremont High School"
+      ],
+      "other phone1": "(662)231-0133",
+      "other phone2": "(662)231-0133",
+      "counties represented": [
+        "Itawamba",
+        "Lee"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:18.698538+00:00",
+    "updated_at": "2025-07-18T01:21:48.045424+00:00",
+    "openstates_url": "https://openstates.org/person/randy-boyd-6mkkxpbI0YHMPVa7c8YcdR/"
+  },
+  {
+    "id": "ocd-person/af2a8aef-177c-49d2-9b77-f1f19f7b8eaa",
+    "name": "Randy Rushing",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "78",
+      "division_id": "ocd-division/country:us/state:ms/sldl:78"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Rushing",
+    "image": "http://billstatus.ls.state.ms.us/members/house/rushing.jpg",
+    "email": "rrushing@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1963-09-09",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi Fire Academy",
+        "Mississippi Law Enforcement Minimum Standards",
+        "Community College of the Air Force",
+        "East Central Community College",
+        "Newton County Academy"
+      ],
+      "other phone": "(601)917-9504",
+      "counties represented": [
+        "Leake",
+        "Newton",
+        "Scott"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:07.472995+00:00",
+    "updated_at": "2025-07-18T01:22:42.915707+00:00",
+    "openstates_url": "https://openstates.org/person/randy-rushing-5KX69gyOVKOldEnc4SWzta/"
+  },
+  {
+    "id": "ocd-person/4b4c6bbd-fcbb-4c7e-9746-83acffe80898",
+    "name": "Richard Bennett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "120",
+      "division_id": "ocd-division/country:us/state:ms/sldl:120"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Bennett",
+    "image": "https://static.votesmart.org/static/canphoto/69948.jpg",
+    "email": "rbennett@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1957-06-25",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Gulf Coast Jr. College",
+        "University of Southern Miss"
+      ],
+      "occupation": "Retired-29yrs Dupont",
+      "other phone": "(228)861-6348",
+      "counties represented": [
+        "Harrison"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:10.154752+00:00",
+    "updated_at": "2025-07-18T01:21:56.329758+00:00",
+    "openstates_url": "https://openstates.org/person/richard-bennett-2I5LdOV3YVGAQ929A0RGDA/"
+  },
+  {
+    "id": "ocd-person/f8b65fd8-7b11-4954-93fd-47a5cbbd53c8",
+    "name": "Rickey Thompson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ms/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Rickey",
+    "family_name": "Thompson",
+    "image": "http://billstatus.ls.state.ms.us/members/house/thompson.jpg",
+    "email": "rthompson@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1964-06-30",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Itawamba Community College-1981",
+        "Shannon High school-1981"
+      ],
+      "occupation": "License Practical Nurse",
+      "counties represented": [
+        "Lee",
+        "Monroe"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:50.076838+00:00",
+    "updated_at": "2026-01-29T07:14:46.573495+00:00",
+    "openstates_url": "https://openstates.org/person/rickey-thompson-7ZJRQgHMDBuyb0ogL7OopM/"
+  },
+  {
+    "id": "ocd-person/e36cdae5-3437-48fc-93b4-280b09af661b",
+    "name": "Rob Roberson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:ms/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Roberson",
+    "image": "https://robrobersonattorney.com/wp-content/uploads/2019/07/Rob-Roberson.jpg",
+    "email": "rroberson@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1968-08-04",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi College School of Law, J.D.",
+        "Mississippi State University, B.B.S.",
+        "Starkville High school"
+      ],
+      "occupation": "Attorney",
+      "other phone1": "(662)418-2914",
+      "other phone2": "(662)324-3810",
+      "counties represented": [
+        "Oktibbeha",
+        "Winston"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:53.405405+00:00",
+    "updated_at": "2026-01-29T07:15:13.940079+00:00",
+    "openstates_url": "https://openstates.org/person/rob-roberson-6v90Jhzq8HuV53SOfx9hwR/"
+  },
+  {
+    "id": "ocd-person/0de22359-9403-4bec-917a-985b26fd45ff",
+    "name": "Robert Johnson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "94",
+      "division_id": "ocd-division/country:us/state:ms/sldl:94"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Johnson",
+    "image": "http://billstatus.ls.state.ms.us/members/house/johnson.jpg",
+    "email": "rjohnson@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1958-11-29",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Washington University (St. Louis)",
+        "University of Illinois",
+        "University of Illinois College of Law"
+      ],
+      "occupation": "Attorney",
+      "other phone": "(601)442-9371",
+      "counties represented": [
+        "Adams",
+        "Franklin",
+        "Jefferson"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:15.133330+00:00",
+    "updated_at": "2025-07-18T01:22:17.646861+00:00",
+    "openstates_url": "https://openstates.org/person/robert-johnson-QCFEG1zCC1wKKINsTISYJ/"
+  },
+  {
+    "id": "ocd-person/e7684f57-ee0c-48ea-8157-8f04c2b8e685",
+    "name": "Robert Sanders",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ms/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Sanders",
+    "image": "http://billstatus.ls.state.ms.us/members/house/sanders.jpg",
+    "email": "rsanders@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1961-12-20",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "B.S. Degree, MS Valley State, Phys. Ed."
+      ],
+      "occupation": "Law Enforcement/City Government",
+      "counties represented": [
+        "Bolivar",
+        "Sunflower"
+      ]
+    },
+    "created_at": "2023-01-05T20:42:28.034745+00:00",
+    "updated_at": "2026-01-29T07:15:12.201302+00:00",
+    "openstates_url": "https://openstates.org/person/robert-sanders-72etdFXRDePx0x2fx3Qj2L/"
+  },
+  {
+    "id": "ocd-person/6d293363-c72f-479b-81fc-225071ac4913",
+    "name": "Rodney Hall",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ms/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Rodney",
+    "family_name": "Hall",
+    "image": "",
+    "email": "rhall@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1987-12-07",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:46.365246+00:00",
+    "updated_at": "2026-06-04T07:21:23.235495+00:00",
+    "openstates_url": "https://openstates.org/person/rodney-hall-3JyzWuYHm59xwVtmfz0a9b/"
+  },
+  {
+    "id": "ocd-person/fee2ce67-1403-487e-b891-587e625ce15c",
+    "name": "Ronnie Crudup",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:ms/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Ronnie",
+    "family_name": "Crudup",
+    "image": "http://billstatus.ls.state.ms.us/members/house/crudup.jpg",
+    "email": "rcrudup@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1977-06-12",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Murrah High School 1995,",
+        "Belhaven University 2006"
+      ],
+      "occupation": "Executive Director Administrator",
+      "counties represented": [
+        "Hinds"
+      ]
+    },
+    "created_at": "2019-11-16T02:04:02.165110+00:00",
+    "updated_at": "2025-07-18T01:22:39.935500+00:00",
+    "openstates_url": "https://openstates.org/person/ronnie-crudup-7kxhVjqmqSr1UfZtb0fnDQ/"
+  },
+  {
+    "id": "ocd-person/d79acfe3-5991-41ae-b245-f7b7f877febb",
+    "name": "Sam Creekmore",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ms/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Creekmore",
+    "image": "http://billstatus.ls.state.ms.us/members/house/creekmore_iv.jpg",
+    "email": "screekmore@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1966-09-24",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi State University"
+      ],
+      "occupation": "Landscape Architect",
+      "other phone": "(662)534-9280",
+      "counties represented": [
+        "Union"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:50.456107+00:00",
+    "updated_at": "2025-07-18T01:21:46.239107+00:00",
+    "openstates_url": "https://openstates.org/person/sam-creekmore-6Yq6AuT5X7i3umwXcEflWd/"
+  },
+  {
+    "id": "ocd-person/0bf76f2b-9380-45c1-8809-315a682322a3",
+    "name": "Sam Mims",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "97",
+      "division_id": "ocd-division/country:us/state:ms/sldl:97"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Mims",
+    "image": "http://billstatus.ls.state.ms.us/members/house/mims.jpg",
+    "email": "smims@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1972-04-02",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "McComb High School",
+        "Delta State University, B.B.A."
+      ],
+      "occupation": "Marketing and Business Developer",
+      "counties represented": [
+        "Adams",
+        "Amite",
+        "Franklin",
+        "Pike"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:06.792100+00:00",
+    "updated_at": "2025-07-18T01:22:24.151006+00:00",
+    "openstates_url": "https://openstates.org/person/sam-mims-MZzaVfl0PH674gyCpDE0Z/"
+  },
+  {
+    "id": "ocd-person/796d8875-e1a2-4274-bdba-2e689d99929c",
+    "name": "Scott Bounds",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:ms/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Bounds",
+    "image": "http://billstatus.ls.state.ms.us/members/house/bounds.jpg",
+    "email": "sbounds@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1962-02-12",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Philadelphia High School",
+        "Mississippi State University"
+      ],
+      "occupation": "Territory Manager - Working Solutions, LLC",
+      "counties represented": [
+        "Leake",
+        "Neshoba"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:08.637639+00:00",
+    "updated_at": "2026-01-29T07:14:27.066181+00:00",
+    "openstates_url": "https://openstates.org/person/scott-bounds-3h87xDWPPjwGtukIK5uORY/"
+  },
+  {
+    "id": "ocd-person/de5a9a25-1b08-45ba-9aff-e635905498ba",
+    "name": "Shanda Yates",
+    "party": "Independent",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:ms/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Shanda",
+    "family_name": "Yates",
+    "image": "http://billstatus.ls.state.ms.us/members/house/yates.jpg",
+    "email": "syates@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "MC School of Law-JD",
+        "Univ of Southern Miss-BA",
+        "Hinds CC-AA"
+      ],
+      "occupation": "Attorney",
+      "counties represented": [
+        "Hinds",
+        "Madison"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:52.289109+00:00",
+    "updated_at": "2026-01-29T07:14:43.030264+00:00",
+    "openstates_url": "https://openstates.org/person/shanda-yates-6lZhW1YRYA6GAAxNzPYfWs/"
+  },
+  {
+    "id": "ocd-person/4a73b9e6-c66b-4022-b380-6caea6b48265",
+    "name": "Shane Aguirre",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ms/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Aguirre",
+    "image": "https://billstatus.ls.state.ms.us/members/house/aguirre.jpg",
+    "email": "saguirre@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1972-12-11",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi State",
+        "University of  Missississippi"
+      ],
+      "occupation": "Accountant",
+      "counties represented": [
+        "Lee"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:10.492134+00:00",
+    "updated_at": "2025-07-18T01:22:21.212447+00:00",
+    "openstates_url": "https://openstates.org/person/shane-aguirre-2GUJn2CXknmuVhtGSlcgvl/"
+  },
+  {
+    "id": "ocd-person/9b8df60b-26ba-4cdc-b862-87b15f81fdc1",
+    "name": "Shane Barnett",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "86",
+      "division_id": "ocd-division/country:us/state:ms/sldl:86"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Shane",
+    "family_name": "Barnett",
+    "image": "https://images.squarespace-cdn.com/content/v1/5472abbae4b0859145039552/1519227639852-W83BICPBB7LGL856WGBQ/Shane.jpg?format=500w",
+    "email": "sbarnett@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1986-07-04",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Jones County Junior College"
+      ],
+      "occupation": "Real Estate Appraiser",
+      "counties represented": [
+        "Greene",
+        "Perry",
+        "Wayne"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:12.596591+00:00",
+    "updated_at": "2025-07-18T01:21:25.356410+00:00",
+    "openstates_url": "https://openstates.org/person/shane-barnett-4jWgbAtT781IIdRLeTWFvd/"
+  },
+  {
+    "id": "ocd-person/23d69b3d-2f17-4fa9-a23c-c9ad8db4f7a9",
+    "name": "Solomon Osborne",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ms/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Solomon",
+    "family_name": "Osborne",
+    "image": "http://billstatus.ls.state.ms.us/members/house/osborne.jpg",
+    "email": "sosborne@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1948-05-26",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Amanda Elzy High School,",
+        "BA Tougaloo College Political Science, Juris Doctorate University of Illinois College of Law"
+      ],
+      "occupation": "Attorney",
+      "counties represented": [
+        "Leflore"
+      ]
+    },
+    "created_at": "2019-11-16T02:04:02.879332+00:00",
+    "updated_at": "2026-01-29T07:14:50.047648+00:00",
+    "openstates_url": "https://openstates.org/person/solomon-osborne-15co1VdiKild2VkRJS3oO9/"
+  },
+  {
+    "id": "ocd-person/fa44d12a-cb19-426b-94d3-6fb68b4095c8",
+    "name": "Stacey Hobgood-Wilkes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "108",
+      "division_id": "ocd-division/country:us/state:ms/sldl:108"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Stacey",
+    "family_name": "Hobgood-Wilkes",
+    "image": "http://billstatus.ls.state.ms.us/members/house/hobgood-wilkes.jpg",
+    "email": "swilkes@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1968-08-09",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Southern MS",
+        "Pearl River Community College",
+        "Picayune Memorial High school"
+      ],
+      "other phone": "(601)798-3334",
+      "counties represented": [
+        "Pearl River"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:02.634390+00:00",
+    "updated_at": "2026-01-29T07:15:25.904903+00:00",
+    "openstates_url": "https://openstates.org/person/stacey-hobgood-wilkes-7cFWw38K1Qb423LaNssD16/"
+  },
+  {
+    "id": "ocd-person/1253bd3e-36dd-4f23-a671-ab24dc4aed12",
+    "name": "Stephanie Foster",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:ms/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Stephanie",
+    "family_name": "Foster",
+    "image": "http://billstatus.ls.state.ms.us/members/house/foster.jpg",
+    "email": "sfoster@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1967-03-08",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi College",
+        "Hinds Community College",
+        "Raymond High school"
+      ],
+      "other phone": "(601)842-7742",
+      "counties represented": [
+        "Hinds",
+        "Warren",
+        "Yazoo"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:45.314227+00:00",
+    "updated_at": "2026-06-04T07:21:39.542923+00:00",
+    "openstates_url": "https://openstates.org/person/stephanie-foster-Ya86sKLau0YoAZJgeeUt8/"
+  },
+  {
+    "id": "ocd-person/f1e7e5ba-29b7-42e2-bb70-5ab4c7923c77",
+    "name": "Steve Horne",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "81",
+      "division_id": "ocd-division/country:us/state:ms/sldl:81"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Horne",
+    "image": "http://billstatus.ls.state.ms.us/members/house/horne.jpg",
+    "email": "shorne@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1958-06-10",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Jefferson Davis Academy",
+        "University of Southern Mississippi, B.S."
+      ],
+      "occupation": "Insurance",
+      "counties represented": [
+        "Clarke",
+        "Lauderdale"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:15.464606+00:00",
+    "updated_at": "2025-07-18T01:22:26.764903+00:00",
+    "openstates_url": "https://openstates.org/person/steve-horne-7MT7wnOVnVTrHy8Uhz24xz/"
+  },
+  {
+    "id": "ocd-person/df77d55d-10c7-4ecb-9ed9-b8f989da339e",
+    "name": "Steve Lott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "107",
+      "division_id": "ocd-division/country:us/state:ms/sldl:107"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Lott",
+    "image": "https://bloximages.chicago2.vip.townnews.com/stonecountyenterprise.com/content/tncms/assets/v3/editorial/2/fa/2faf492e-910b-11ed-8a24-b33c741f2b91/63bd9eedb8c9d.image.jpg",
+    "email": "lott@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1966-04-04",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:53.436740+00:00",
+    "updated_at": "2026-01-29T07:14:56.408139+00:00",
+    "openstates_url": "https://openstates.org/person/steve-lott-6ng3HZSFfllElXu1FX2cVa/"
+  },
+  {
+    "id": "ocd-person/abfa015f-301e-4e17-9917-535bb9079768",
+    "name": "Steve Massengill",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ms/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Massengill",
+    "image": "http://billstatus.ls.state.ms.us/members/house/massengill.jpg",
+    "email": "smassengill@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1966-11-21",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Hickory Flat High School"
+      ],
+      "occupation": "Big M Transportation",
+      "other phone": "(662)815-5000",
+      "counties represented": [
+        "Benton",
+        "Lafayette",
+        "Marshall",
+        "Union"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:14.974336+00:00",
+    "updated_at": "2026-01-29T07:15:21.073605+00:00",
+    "openstates_url": "https://openstates.org/person/steve-massengill-5EVwJz5kLgXlWVQrYKYFb6/"
+  },
+  {
+    "id": "ocd-person/3312edf4-798e-4333-b2c8-4d73f246de01",
+    "name": "Timaka James-Jones",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:ms/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Timaka",
+    "family_name": "James-Jones",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/TimakaJames-Jones2023.jpg",
+    "email": "james-jones@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "1973-08-16",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:46.881562+00:00",
+    "updated_at": "2026-01-29T07:15:19.638953+00:00",
+    "openstates_url": "https://openstates.org/person/timaka-james-jones-1YNG5T5naTuW7suAonqBCz/"
+  },
+  {
+    "id": "ocd-person/53869ff4-415d-466a-ad71-c13485b83318",
+    "name": "Timmy Ladner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "93",
+      "division_id": "ocd-division/country:us/state:ms/sldl:93"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Timmy",
+    "family_name": "Ladner",
+    "image": "http://billstatus.ls.state.ms.us/members/house/ladner.jpg",
+    "email": "tladner@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1963-07-04",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi Realtors Institute",
+        "Pearl River Community College"
+      ],
+      "occupation": "Realtor, Business Owner",
+      "other phone": "(228)518-0878",
+      "counties represented": [
+        "Hancock",
+        "Pearl River",
+        "Stone"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:59.184577+00:00",
+    "updated_at": "2026-01-29T07:15:01.821256+00:00",
+    "openstates_url": "https://openstates.org/person/timmy-ladner-2Xbsz4MizJwF8EZXyPyQW0/"
+  },
+  {
+    "id": "ocd-person/b37913d2-9f6e-4f1c-b6c8-7a19863be463",
+    "name": "Tracey Rosebud",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ms/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Tracey",
+    "family_name": "Rosebud",
+    "image": "http://billstatus.ls.state.ms.us/members/house/rosebud.jpg",
+    "email": "trosebud@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1976-02-27",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Mississippi Delta C.C.",
+        "Tennessee Valley Public Power Academy"
+      ],
+      "occupation": "Consulting",
+      "other phone": "(662)902-3787",
+      "counties represented": [
+        "Bolivar",
+        "Quitman",
+        "Sunflower",
+        "Tallahatchie"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:02.183983+00:00",
+    "updated_at": "2026-01-29T07:15:03.558769+00:00",
+    "openstates_url": "https://openstates.org/person/tracey-rosebud-5SexSfhZHd2BfsbuQsHLCF/"
+  },
+  {
+    "id": "ocd-person/2601640f-867f-480f-83a1-c59c332c0b82",
+    "name": "Tracy Arnold",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ms/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Tracy",
+    "family_name": "Arnold",
+    "image": "http://da.mdah.ms.gov/series-files/legislature/composites/2016/500/house-of-representatives/2016_2020HousePhotos/Tracy.Arnold.jpg",
+    "email": "warnold@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1969-02-14",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Logos Bible College",
+        "New Site High School"
+      ],
+      "occupation": "Senior Pastor of The Vineyard Church",
+      "counties represented": [
+        "Alcorn",
+        "Prentiss"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:09.984757+00:00",
+    "updated_at": "2025-01-27T21:14:16.214289+00:00",
+    "openstates_url": "https://openstates.org/person/tracy-arnold-19iLKX1VNgk0WjZsAPRSuA/"
+  },
+  {
+    "id": "ocd-person/c655558e-dfac-468a-a633-85f380c538b6",
+    "name": "Trey Lamar",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ms/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Trey",
+    "family_name": "Lamar",
+    "image": "https://images.squarespace-cdn.com/content/v1/5660bc77e4b02bc8dd3c055f/1463509030796-7AM0VGR04ZZUTAOF9TQW/image-asset.jpeg?format=500w",
+    "email": "jlamar@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1980-08-05",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Washington University (St. Louis)",
+        "Mississippi College School of Law",
+        "University of Mississippi",
+        "Magnolia Heights School"
+      ],
+      "occupation": "Attorney",
+      "other phone": "(662)562-6537",
+      "counties represented": [
+        "Lafayette",
+        "Tate"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:58.857315+00:00",
+    "updated_at": "2025-07-18T01:22:39.177836+00:00",
+    "openstates_url": "https://openstates.org/person/trey-lamar-62FTfgfMIttgkXzMoppZig/"
+  },
+  {
+    "id": "ocd-person/5ff548a6-827f-4ab7-a4a5-5b510712f6a2",
+    "name": "Troy Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "84",
+      "division_id": "ocd-division/country:us/state:ms/sldl:84"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Troy",
+    "family_name": "Smith",
+    "image": "http://billstatus.ls.state.ms.us/members/house/smith.jpg",
+    "email": "tsmith@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1965-06-29",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Jones County Jr. College",
+        "Quitman High school"
+      ],
+      "other phone": "(601)527-7991",
+      "counties represented": [
+        "Clarke",
+        "Jasper",
+        "Newton"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:52.715623+00:00",
+    "updated_at": "2026-01-29T07:14:29.742989+00:00",
+    "openstates_url": "https://openstates.org/person/troy-smith-2v4MhAaRhf7eyay4gajUAc/"
+  },
+  {
+    "id": "ocd-person/c0d8a1af-3036-4aee-89e7-f98cc40203cd",
+    "name": "Vince Mangold",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:ms/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Vince",
+    "family_name": "Mangold",
+    "image": "http://billstatus.ls.state.ms.us/members/house/mangold.jpg",
+    "email": "vmangold@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1964-07-22",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Southern Miss, B.A.",
+        "Copiah-Lincoln CC, A.A",
+        "Hazlehurst High School"
+      ],
+      "occupation": "Self-employed farmer",
+      "other phone": "(601)833-9155",
+      "counties represented": [
+        "Franklin",
+        "Jefferson Davis",
+        "Lawrence",
+        "Lincoln",
+        "Pike"
+      ]
+    },
+    "created_at": "2018-10-18T14:50:52.581790+00:00",
+    "updated_at": "2026-01-29T07:15:10.478621+00:00",
+    "openstates_url": "https://openstates.org/person/vince-mangold-5rtWiRHlGaLSee0CJ5XuGb/"
+  },
+  {
+    "id": "ocd-person/bec0f8f6-7f4c-442b-be25-14e2a2c1f5cb",
+    "name": "Willie Bailey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:ms/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Willie",
+    "family_name": "Bailey",
+    "image": "https://billstatus.ls.state.ms.us/members/house/bailey_(49th).jpg",
+    "email": "wbailey@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1946-04-25",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "Tougaloo College",
+        "George Washington University",
+        "Law School"
+      ],
+      "occupation": "Attorney",
+      "counties represented": [
+        "Washington"
+      ]
+    },
+    "created_at": "2018-10-18T14:51:07.982449+00:00",
+    "updated_at": "2026-01-29T07:15:31.850765+00:00",
+    "openstates_url": "https://openstates.org/person/willie-bailey-5nwjJErcBKzQJCBO9v4AzD/"
+  },
+  {
+    "id": "ocd-person/b62cfb62-68b6-4804-a1ff-f0259e7513b4",
+    "name": "Zack Grady",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "115",
+      "division_id": "ocd-division/country:us/state:ms/sldl:115"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Zack",
+    "family_name": "Grady",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/ZacharyGrady.jpg",
+    "email": "zgrady@house.ms.gov",
+    "gender": "Male",
+    "birth_date": "1985-12-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-01-24T20:29:43.596845+00:00",
+    "updated_at": "2025-07-18T01:22:55.406617+00:00",
+    "openstates_url": "https://openstates.org/person/zack-grady-5Xl9wJ0GnI6T6PaQtTL3G0/"
+  },
+  {
+    "id": "ocd-person/56158045-4973-4fd2-9589-01ad212f2975",
+    "name": "Zakiya Summers",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:ms/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ms/government",
+      "name": "Mississippi",
+      "classification": "state"
+    },
+    "given_name": "Zakiya",
+    "family_name": "Summers",
+    "image": "https://stateinnovation.org/wp-content/uploads/2021/04/Zakiya-Summers.png",
+    "email": "zsummers@house.ms.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "education": [
+        "University of Missouri-Columbia, Bachelor's in Journalism"
+      ],
+      "other phone": "(769)224-0554",
+      "counties represented": [
+        "Hinds",
+        "Rankin"
+      ]
+    },
+    "created_at": "2020-03-06T06:12:50.029583+00:00",
+    "updated_at": "2026-06-04T07:21:14.106775+00:00",
+    "openstates_url": "https://openstates.org/person/zakiya-summers-2cRAIbmSkjv3V56nIUHQJR/"
+  }
+]

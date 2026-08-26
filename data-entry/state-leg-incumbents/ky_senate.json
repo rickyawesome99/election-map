@@ -1,0 +1,1311 @@
+[
+  {
+    "id": "ocd-person/e46eb488-2e34-4f33-840f-917496473c64",
+    "name": "Aaron Reed",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ky/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Aaron",
+    "family_name": "Reed",
+    "image": "https://gunleash.com/wp-content/uploads/2023/11/Aaron_Reed.jpg",
+    "email": "aaron.reed@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1977-07-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:33:58.351727+00:00",
+    "updated_at": "2026-01-29T06:46:51.815329+00:00",
+    "openstates_url": "https://openstates.org/person/aaron-reed-6x2qGNr9nWRhTcblRvsZ4W/"
+  },
+  {
+    "id": "ocd-person/7c03bd44-8541-49b0-9794-a9e606c292ce",
+    "name": "Amanda Bledsoe",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ky/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Amanda",
+    "family_name": "Bledsoe",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate112.jpg",
+    "email": "amanda.maysbledsoe@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1978-02-15",
+    "death_date": "",
+    "extras": {
+      "home city": "Lexington",
+      "mailing address": "PO Box 23112 Lexington, KY 40523",
+      "counties represented": [
+        "Boyle",
+        "Fayette"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:25.760154+00:00",
+    "updated_at": "2026-04-09T06:47:46.736346+00:00",
+    "openstates_url": "https://openstates.org/person/amanda-bledsoe-3m0kxXDdN2RQpZ4kBXHT70/"
+  },
+  {
+    "id": "ocd-person/209d5334-d4a2-45f3-b910-0cd52f96dd4e",
+    "name": "Brandon Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ky/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Smith",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate130.jpg",
+    "email": "brandon.smith@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1967-06-14",
+    "death_date": "",
+    "extras": {
+      "home city": "Hazard",
+      "mailing address": "PO Box 846 Hazard, KY 41702",
+      "counties represented": [
+        "Breathitt",
+        "Estill",
+        "Lee",
+        "Leslie",
+        "Magoffin",
+        "Morgan",
+        "Perry",
+        "Powell",
+        "Wolfe"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:10.903724+00:00",
+    "updated_at": "2025-01-05T10:34:10.863817+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-smith-zXeR3jY3uGEVkpQOZ2OBa/"
+  },
+  {
+    "id": "ocd-person/257271f3-68b1-4481-94e5-f98300493413",
+    "name": "Brandon Storm",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ky/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Storm",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate121.jpg",
+    "email": "brandon.storm@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1976-05-14",
+    "death_date": "",
+    "extras": {
+      "home city": "London",
+      "mailing address": "702 Capital Ave Annex Room 204 Frankfort, KY 40601",
+      "counties represented": [
+        "Casey",
+        "Laurel",
+        "Lincoln",
+        "Rockcastle"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:15.874976+00:00",
+    "updated_at": "2026-06-04T06:50:24.223807+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-storm-18f15tzW9rqsdgBxeAiqmZ/"
+  },
+  {
+    "id": "ocd-person/8dbecabb-ef15-4925-8e50-26331e738a05",
+    "name": "Cassie Armstrong",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ky/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Cassie",
+    "family_name": "Armstrong",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate119.jpg",
+    "email": "cassie.armstrong@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1986-09-30",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 255 Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-03-06T16:22:04.805381+00:00",
+    "updated_at": "2026-01-29T06:46:44.751682+00:00",
+    "openstates_url": "https://openstates.org/person/cassie-armstrong-4JT6pqG0Pbo9CeKQxQeAQH/"
+  },
+  {
+    "id": "ocd-person/b32a95c9-42ba-449b-8581-97b9cef73c6a",
+    "name": "Chris McDaniel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ky/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "McDaniel",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate123.jpg",
+    "email": "chris.mcdaniel@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1977-07-19",
+    "death_date": "",
+    "extras": {
+      "home city": "Ryland Heights",
+      "mailing address": "PO Box 15231 Latonia, KY 41015",
+      "counties represented": [
+        "Kenton"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:12.968038+00:00",
+    "updated_at": "2026-04-09T06:47:58.507072+00:00",
+    "openstates_url": "https://openstates.org/person/chris-mcdaniel-5S55SBJla0YfTjcGOfJGHK/"
+  },
+  {
+    "id": "ocd-person/3109e3ae-10c1-417e-bf7f-bf4f539bd3c8",
+    "name": "Craig Richardson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ky/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Craig",
+    "family_name": "Richardson",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate103.jpg",
+    "email": "craig.richardson@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1984-09-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:33:57.188426+00:00",
+    "updated_at": "2026-01-29T06:46:52.594921+00:00",
+    "openstates_url": "https://openstates.org/person/craig-richardson-1UX8tX7dSVjdfgZnHvD6zY/"
+  },
+  {
+    "id": "ocd-person/0ec7d376-4235-44e7-a6d7-d63962dff167",
+    "name": "Danny Carroll",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ky/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Danny",
+    "family_name": "Carroll",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate102.jpg",
+    "email": "danny.carroll@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1963-11-04",
+    "death_date": "",
+    "extras": {
+      "home city": "Benton",
+      "mailing address": "702 Capital Ave Annex Room 228 Frankfort, KY 40601",
+      "counties represented": [
+        "Ballard",
+        "Carlisle",
+        "Livingston",
+        "Marshall",
+        "McCracken"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:14.340146+00:00",
+    "updated_at": "2026-01-29T06:46:39.776779+00:00",
+    "openstates_url": "https://openstates.org/person/danny-carroll-RtDE1TjbYvuCpRDO9Fh3f/"
+  },
+  {
+    "id": "ocd-person/5594a97f-7358-427e-af84-43150a21c97e",
+    "name": "David Givens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ky/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Givens",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate109.jpg",
+    "email": "david.givens@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1966-12-26",
+    "death_date": "",
+    "extras": {
+      "title": "President Pro Tempore",
+      "home city": "Greensburg",
+      "mailing address": "PO Box 12 Greensburg, KY 42743",
+      "counties represented": [
+        "Barren",
+        "Edmonson",
+        "Green",
+        "Hart",
+        "Warren"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:15.087586+00:00",
+    "updated_at": "2026-01-29T06:47:11.959094+00:00",
+    "openstates_url": "https://openstates.org/person/david-givens-2bUHlYCXhy00BToWurBvRO/"
+  },
+  {
+    "id": "ocd-person/a7cd8577-c315-4bf0-b95f-3259ab7dfce7",
+    "name": "Don Douglas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ky/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Don",
+    "family_name": "Douglas",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate122.jpg",
+    "email": "donald.douglas@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1957-03-06",
+    "death_date": "",
+    "extras": {
+      "home city": "Nicholasville",
+      "mailing address": "702 Capital Ave Annex Room 290 Frankfort, KY 40601",
+      "counties represented": [
+        "Fayette"
+      ]
+    },
+    "created_at": "2021-12-16T18:51:17.059420+00:00",
+    "updated_at": "2026-04-09T06:47:40.438889+00:00",
+    "openstates_url": "https://openstates.org/person/don-douglas-56ddoLbZKK0khhBepoudBX/"
+  },
+  {
+    "id": "ocd-person/2d6a7358-f685-4476-aa31-b92cf72b11ec",
+    "name": "Gary Boswell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ky/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Boswell",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate108.jpg",
+    "email": "gary.boswell@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1954-06-19",
+    "death_date": "",
+    "extras": {
+      "home city": "Owensboro",
+      "mailing address": "3130 Reid Road Owensboro, KY 42303",
+      "counties represented": [
+        "Daviess",
+        "Hancock",
+        "McLean"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:20.215912+00:00",
+    "updated_at": "2026-06-04T06:50:47.257365+00:00",
+    "openstates_url": "https://openstates.org/person/gary-boswell-1NhIlp49mUGdIDeShF45E4/"
+  },
+  {
+    "id": "ocd-person/b0cb8f76-4b91-472c-97e2-106ef21f3342",
+    "name": "Gary Clemons",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ky/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Gary",
+    "family_name": "Clemons",
+    "image": "",
+    "email": "gary.clemons@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1974-08-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2026-01-29T06:47:14.037676+00:00",
+    "updated_at": "2026-02-13T00:47:44.797773+00:00",
+    "openstates_url": "https://openstates.org/person/gary-clemons-5Nbfy33mulHRY4oXhX1hRa/"
+  },
+  {
+    "id": "ocd-person/0d92a09c-ce23-46cd-9582-b7d1b08d76dd",
+    "name": "Gerald Neal",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ky/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Gerald",
+    "family_name": "Neal",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate133.jpg",
+    "email": "gerald.neal@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1945-09-22",
+    "death_date": "",
+    "extras": {
+      "fax": "502-584-1119",
+      "title": "Minority Floor Leader",
+      "voice": "502-584-8500",
+      "home city": "Louisville",
+      "mailing address": "462 S 4th St Meidinger Twr, Ste 1250 Louisville, KY 40202",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:02.904802+00:00",
+    "updated_at": "2026-01-29T06:47:50.311375+00:00",
+    "openstates_url": "https://openstates.org/person/gerald-neal-PbuMnSlZk2R7yxIfni70n/"
+  },
+  {
+    "id": "ocd-person/6aa07729-a16f-4465-a605-7afbbe982882",
+    "name": "Gex Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ky/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Gex",
+    "family_name": "Williams",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate120.jpg",
+    "email": "gex.williams@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1952-08-22",
+    "death_date": "",
+    "extras": {
+      "home city": "Verona",
+      "mailing address": "Annex Room 284 Frankfort, KY 40601",
+      "counties represented": [
+        "Boone (Part)",
+        "Carroll",
+        "Franklin",
+        "Gallatin",
+        "Kenton"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:18.538273+00:00",
+    "updated_at": "2024-10-15T22:17:59.418143+00:00",
+    "openstates_url": "https://openstates.org/person/gex-williams-3FCWDIiCBgFMq3uu8SfAiw/"
+  },
+  {
+    "id": "ocd-person/139d004c-7a19-4153-a58b-919a1b70180e",
+    "name": "Greg Elkins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ky/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Elkins",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate128.jpg",
+    "email": "greg.elkins@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1964-10-10",
+    "death_date": "",
+    "extras": {
+      "home city": "Winchester",
+      "mailing address": "702 Capital Ave Annex Room 290 Frankfort, KY 40601",
+      "counties represented": [
+        "Bath",
+        "Clark",
+        "Fayette"
+      ]
+    },
+    "created_at": "2023-07-06T23:28:15.696770+00:00",
+    "updated_at": "2026-01-29T06:47:18.928003+00:00",
+    "openstates_url": "https://openstates.org/person/greg-elkins-b0bRZNY7BlZMAdmmzR4la/"
+  },
+  {
+    "id": "ocd-person/b2299f51-c122-46ac-9937-3a6a7b682bb8",
+    "name": "Jared Carpenter",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ky/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Jared",
+    "family_name": "Carpenter",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate134.jpg",
+    "email": "jared.carpenter@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1977-04-26",
+    "death_date": "",
+    "extras": {
+      "home city": "Berea",
+      "mailing address": "PO Box 100 Berea, KY 40403",
+      "counties represented": [
+        "Fayette"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:03.900921+00:00",
+    "updated_at": "2026-01-29T06:46:31.879236+00:00",
+    "openstates_url": "https://openstates.org/person/jared-carpenter-5QBeeNjuXAQQJ1ySMeL3pw/"
+  },
+  {
+    "id": "ocd-person/a796965c-0c0f-43b2-975b-d9726b34acd8",
+    "name": "Jason Howell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ky/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Howell",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate101.jpg",
+    "email": "jason.howell@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1970-12-19",
+    "death_date": "",
+    "extras": {
+      "home city": "Murray",
+      "mailing address": "702 Capital Ave Annex Room 290 Frankfort, KY 40601",
+      "counties represented": [
+        "Calloway",
+        "Crittenden",
+        "Fulton",
+        "Graves",
+        "Hickman",
+        "Lyon",
+        "Trigg"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:14.852536+00:00",
+    "updated_at": "2026-01-29T06:46:38.451978+00:00",
+    "openstates_url": "https://openstates.org/person/jason-howell-56EXJ3Eq2Chv5wRMXEier2/"
+  },
+  {
+    "id": "ocd-person/4042b29b-c6bb-407e-856d-9197a03d55ff",
+    "name": "Jimmy Higdon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ky/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Jimmy",
+    "family_name": "Higdon",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate114.jpg",
+    "email": "jimmy.higdon@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1953-07-15",
+    "death_date": "",
+    "extras": {
+      "home city": "Lebanon",
+      "mailing address": "344 N Spalding Lebanon, KY 40033",
+      "counties represented": [
+        "LaRue",
+        "Marion",
+        "Nelson",
+        "Spencer",
+        "Washington"
+      ]
+    },
+    "created_at": "2018-10-18T14:44:59.572193+00:00",
+    "updated_at": "2026-01-29T06:47:30.856438+00:00",
+    "openstates_url": "https://openstates.org/person/jimmy-higdon-1xFzN0V4dsSDGFdJDjwiFD/"
+  },
+  {
+    "id": "ocd-person/38ae421f-f4fa-40f6-b025-a75bc6b42f35",
+    "name": "Julie Adams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ky/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Adams",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate136.jpg",
+    "email": "julie.adams@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1969-06-11",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Caucus Chair",
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 242 Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:04.833141+00:00",
+    "updated_at": "2026-01-29T06:47:09.548687+00:00",
+    "openstates_url": "https://openstates.org/person/julie-adams-1ixCo54zxSDnDwyKJXYE5d/"
+  },
+  {
+    "id": "ocd-person/b45a3156-f662-4884-9c13-b33a4c2d9105",
+    "name": "Karen Berg",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ky/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Berg",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate126.jpg",
+    "email": "karen.berg@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1961-12-30",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 255 Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:16.783894+00:00",
+    "updated_at": "2025-05-15T00:47:42.511078+00:00",
+    "openstates_url": "https://openstates.org/person/karen-berg-5UJptctheEYoOwUbcTFwHd/"
+  },
+  {
+    "id": "ocd-person/15b970f1-bd55-4876-80d5-13570b8f1a1a",
+    "name": "Keturah Herron",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ky/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Keturah",
+    "family_name": "Herron",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate135.jpg",
+    "email": "keturah.herron@kylegislature.gov",
+    "gender": "X",
+    "birth_date": "1980-03-22",
+    "death_date": "",
+    "extras": {
+      "home city": "Louisville",
+      "mailing address": "702 Capital Ave Annex Room 429H Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2022-04-21T03:57:18.071647+00:00",
+    "updated_at": "2026-01-28T00:50:06.441028+00:00",
+    "openstates_url": "https://openstates.org/person/keturah-herron-ezaJX5xQKYQtmqTw9uvl4/"
+  },
+  {
+    "id": "ocd-person/db2324a8-1ae2-4e3a-81e5-ac83cb7bbb05",
+    "name": "Lindsey Tichenor",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ky/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Lindsey",
+    "family_name": "Tichenor",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate106.jpg",
+    "email": "lindsey.tichenor@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1977-01-29",
+    "death_date": "",
+    "extras": {
+      "home city": "Smithfield",
+      "mailing address": "702 Capital Ave Annex Room 290 Frankfort, KY 40601",
+      "counties represented": [
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:23.919290+00:00",
+    "updated_at": "2026-01-29T06:46:40.892824+00:00",
+    "openstates_url": "https://openstates.org/person/lindsey-tichenor-6fVNZ4lRL7cQDd6s36OtxV/"
+  },
+  {
+    "id": "ocd-person/b76a3218-b1bd-475c-a775-7a6cbefbc1f3",
+    "name": "Matt Deneen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ky/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Deneen",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate110.jpg",
+    "email": "matthew.deneen@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1968-09-19",
+    "death_date": "",
+    "extras": {
+      "home city": "Elizabethtown",
+      "mailing address": "702 Capital Ave Annex Room 209A Frankfort, KY 40601",
+      "counties represented": [
+        "Hardin",
+        "Jefferson"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:24.481008+00:00",
+    "updated_at": "2026-01-29T06:47:49.386741+00:00",
+    "openstates_url": "https://openstates.org/person/matt-deneen-5a67tjzV9IVxHEdiFnX7g3/"
+  },
+  {
+    "id": "ocd-person/86bd13c4-c404-4a34-aaf4-561621f2b2d8",
+    "name": "Matt Nunn",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ky/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Nunn",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkAwk-VsxWc9P7zUFu6kXXFswQiXfHR8HdEg&s",
+    "email": "matt.nunn@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1978-01-06",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:33:59.009808+00:00",
+    "updated_at": "2025-02-21T15:54:17.693953+00:00",
+    "openstates_url": "https://openstates.org/person/matt-nunn-46FNa3Wj24oRzU2BphN1tg/"
+  },
+  {
+    "id": "ocd-person/32b5035e-6d1a-44b8-9f7a-4173a1cdb940",
+    "name": "Max Wise",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ky/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Max",
+    "family_name": "Wise",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate116.jpg",
+    "email": "max.wise@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1975-06-28",
+    "death_date": "",
+    "extras": {
+      "home city": "Campbellsville",
+      "mailing address": "702 Capital Ave Annex Room 204 Frankfort, KY 40601",
+      "counties represented": [
+        "Adair",
+        "Allen",
+        "Metcalfe",
+        "Monroe",
+        "Taylor",
+        "Warren"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:08.107210+00:00",
+    "updated_at": "2025-07-17T06:54:52.137758+00:00",
+    "openstates_url": "https://openstates.org/person/max-wise-1XgL3OrxWZPk0PDhX7DPNY/"
+  },
+  {
+    "id": "ocd-person/230c230d-7313-4a94-8eb3-60f57a86543c",
+    "name": "Mike Nemes",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ky/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Nemes",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate138.jpg",
+    "email": "mike.nemes@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1954-02-20",
+    "death_date": "",
+    "extras": {
+      "home city": "Shepherdsville",
+      "mailing address": "209 Sandy Dr Shepherdsville, KY 40165",
+      "counties represented": [
+        "Bullitt",
+        "Jefferson"
+      ]
+    },
+    "created_at": "2021-01-07T06:07:18.575567+00:00",
+    "updated_at": "2026-04-09T06:47:36.599469+00:00",
+    "openstates_url": "https://openstates.org/person/mike-nemes-148HElM6zjQHo3hQGroLTY/"
+  },
+  {
+    "id": "ocd-person/64af8584-1675-47fd-acfb-1cec59dfdda5",
+    "name": "Mike Wilson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ky/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Wilson",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate132.jpg",
+    "email": "mike.wilson@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1951-12-04",
+    "death_date": "",
+    "extras": {
+      "title": "Majority Whip",
+      "home city": "Bowling Green",
+      "mailing address": "702 Capital Ave Annex Room 242 Frankfort, KY 40601",
+      "counties represented": [
+        "Logan",
+        "Simpson",
+        "Todd",
+        "Warren"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:04.386693+00:00",
+    "updated_at": "2025-04-24T00:49:47.651976+00:00",
+    "openstates_url": "https://openstates.org/person/mike-wilson-33zRfSZNYaZI7m1wQAiKcX/"
+  },
+  {
+    "id": "ocd-person/18063ded-67cb-46a9-b558-14d5da92b860",
+    "name": "Phillip Wheeler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ky/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Phillip",
+    "family_name": "Wheeler",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate131.jpg",
+    "email": "phillip.wheeler@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1978-04-13",
+    "death_date": "",
+    "extras": {
+      "home city": "Pikeville",
+      "mailing address": "702 Capital Ave Annex Room 215 Frankfort, KY 40601",
+      "counties represented": [
+        "Elliott",
+        "Johnson",
+        "Lawrence",
+        "Martin",
+        "Pike"
+      ]
+    },
+    "created_at": "2019-12-05T18:06:59.930452+00:00",
+    "updated_at": "2024-10-15T22:17:57.882122+00:00",
+    "openstates_url": "https://openstates.org/person/phillip-wheeler-jKfRLmqRwQ5mBd2dGgB9s/"
+  },
+  {
+    "id": "ocd-person/42b259db-9ddb-4588-a463-b1a38c944c66",
+    "name": "Reggie Thomas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ky/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Reggie",
+    "family_name": "Thomas",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate113.jpg",
+    "email": "reginald.thomas@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1953-05-20",
+    "death_date": "",
+    "extras": {
+      "title": "Minority Caucus Chair",
+      "home city": "Lexington",
+      "mailing address": "702 Capital Ave Annex Room 254 Frankfort, KY 40601",
+      "counties represented": [
+        "Fayette"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:13.585059+00:00",
+    "updated_at": "2026-04-09T06:48:12.282382+00:00",
+    "openstates_url": "https://openstates.org/person/reggie-thomas-21r00qG7oBmhPb9LM2MIVi/"
+  },
+  {
+    "id": "ocd-person/34ed9881-46b8-41ba-b625-3d350140d2b9",
+    "name": "Rick Girdler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ky/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Rick",
+    "family_name": "Girdler",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate115.jpg",
+    "email": "rick.girdler@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1955-05-23",
+    "death_date": "",
+    "extras": {
+      "home city": "Somerset",
+      "mailing address": "702 Capital Ave Annex Room 252 Frankfort, KY 40601",
+      "counties represented": [
+        "Clinton",
+        "Cumberland",
+        "Pulaski",
+        "Russell",
+        "Wayne"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:19.259521+00:00",
+    "updated_at": "2026-06-04T06:51:01.370525+00:00",
+    "openstates_url": "https://openstates.org/person/rick-girdler-1bsBJjFtFLI4xElfRJFFYf/"
+  },
+  {
+    "id": "ocd-person/366daab1-a877-49b9-86b8-e3c497143bf0",
+    "name": "Robby Mills",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ky/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Robby",
+    "family_name": "Mills",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate104.jpg",
+    "email": "robby.mills@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1967-03-17",
+    "death_date": "",
+    "extras": {
+      "home city": "Henderson",
+      "mailing address": "Annex Room 284 Frankfort, KY 40601",
+      "counties represented": [
+        "Henderson",
+        "Hopkins",
+        "Union",
+        "Webster"
+      ]
+    },
+    "created_at": "2018-10-18T14:44:57.549973+00:00",
+    "updated_at": "2026-01-29T06:47:50.855318+00:00",
+    "openstates_url": "https://openstates.org/person/robby-mills-1ehhcInA2n14eZgEqpb6O0/"
+  },
+  {
+    "id": "ocd-person/8659c7e3-ec01-4c40-b7ee-d21f37facff5",
+    "name": "Robert Stivers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ky/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Stivers",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate125.jpg",
+    "email": "robert.stivers@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1961-12-24",
+    "death_date": "",
+    "extras": {
+      "fax": "606-598-2357",
+      "title": "Senate President",
+      "voice": "606-598-2322",
+      "home city": "Manchester",
+      "mailing address": "207 Main St Manchester, KY 40962",
+      "counties represented": [
+        "Clay",
+        "Jackson",
+        "Knox",
+        "McCreary",
+        "Owsley",
+        "Whitley"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:05.730431+00:00",
+    "updated_at": "2026-01-29T06:46:30.059915+00:00",
+    "openstates_url": "https://openstates.org/person/robert-stivers-45W06my5jPrIMgG3Dk0Ppt/"
+  },
+  {
+    "id": "ocd-person/42990da5-7020-4327-bbd8-496955b00040",
+    "name": "Robin Webb",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ky/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Robin",
+    "family_name": "Webb",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate118.jpg",
+    "email": "robin.webb@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1960-09-06",
+    "death_date": "",
+    "extras": {
+      "home city": "Grayson",
+      "mailing address": "102 S Hord St Grayson, KY 41143",
+      "counties represented": [
+        "Boyd",
+        "Carter",
+        "Greenup",
+        "Lewis"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:02.239991+00:00",
+    "updated_at": "2026-01-29T06:46:55.635339+00:00",
+    "openstates_url": "https://openstates.org/person/robin-webb-21fRE2i7gUcpewdlyuRlGy/"
+  },
+  {
+    "id": "ocd-person/d7adea26-9f4f-477f-a0bd-4b29ae9072b4",
+    "name": "Scott Madon",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ky/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Madon",
+    "image": "https://thecityofpineville.com/wp-content/uploads/2018/08/mayor-scott-madon-228x300.jpg",
+    "email": "scott.madon@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1962-03-08",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-05T10:33:56.655344+00:00",
+    "updated_at": "2026-01-29T06:47:17.348388+00:00",
+    "openstates_url": "https://openstates.org/person/scott-madon-6YypQfsbLsPGGzSU3i06mS/"
+  },
+  {
+    "id": "ocd-person/b7112818-3357-413d-acae-a46bf3442b1d",
+    "name": "Shelley Frommeyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ky/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Shelley",
+    "family_name": "Frommeyer",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate124.jpg",
+    "email": "shelley.funkefrommeyer@kylegislature.gov",
+    "gender": "Female",
+    "birth_date": "1969-06-21",
+    "death_date": "",
+    "extras": {
+      "home city": "Alexandria",
+      "mailing address": "PO Box 511 Alexandria, KY 41001",
+      "counties represented": [
+        "Bracken",
+        "Campbell",
+        "Kenton"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:19.644987+00:00",
+    "updated_at": "2026-06-04T06:51:02.548207+00:00",
+    "openstates_url": "https://openstates.org/person/shelley-frommeyer-5ZRR3enJhgj3TqZKxXJ2IX/"
+  },
+  {
+    "id": "ocd-person/8915acb8-6089-451f-be08-c79b0be59c40",
+    "name": "Steve Meredith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ky/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Meredith",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate105.jpg",
+    "email": "stephen.meredith@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1953-06-21",
+    "death_date": "",
+    "extras": {
+      "home city": "Leitchfield",
+      "mailing address": "1424 Byrtle Grove Rd Leitchfield, KY 42754",
+      "counties represented": [
+        "Breckinridge",
+        "Butler",
+        "Grayson",
+        "Meade",
+        "Ohio"
+      ]
+    },
+    "created_at": "2018-10-18T14:44:58.968768+00:00",
+    "updated_at": "2026-01-29T06:46:44.182715+00:00",
+    "openstates_url": "https://openstates.org/person/steve-meredith-4AfqxNdOThpaNbjZz2NXiC/"
+  },
+  {
+    "id": "ocd-person/b702771e-135c-4444-b148-a321ee8088b2",
+    "name": "Steve Rawlings",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ky/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Rawlings",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate111.jpg",
+    "email": "steve.rawlings@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "voice": "859-757-7037",
+      "home city": "Burlington",
+      "mailing address": "3350 Easton Lane Burlington, KY 41005",
+      "counties represented": [
+        "Boone"
+      ]
+    },
+    "created_at": "2023-01-06T20:18:22.798475+00:00",
+    "updated_at": "2026-01-29T06:46:55.035426+00:00",
+    "openstates_url": "https://openstates.org/person/steve-rawlings-5ZKinEPXPGALSqLg0CUmwM/"
+  },
+  {
+    "id": "ocd-person/1f3bbab4-2be0-496c-9c3b-b8f340f6b404",
+    "name": "Steve West",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ky/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ky/government",
+      "name": "Kentucky",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "West",
+    "image": "https://legislature.ky.gov/Legislators%20Thumbnail%20Images/senate127.jpg",
+    "email": "steve.west@kylegislature.gov",
+    "gender": "Male",
+    "birth_date": "1970-04-28",
+    "death_date": "",
+    "extras": {
+      "home city": "Paris",
+      "mailing address": "702 Capital Ave Annex Room 228 Frankfort, KY 40601",
+      "counties represented": [
+        "Bourbon",
+        "Fayette"
+      ]
+    },
+    "created_at": "2018-10-18T14:45:02.068901+00:00",
+    "updated_at": "2026-04-09T06:48:11.049072+00:00",
+    "openstates_url": "https://openstates.org/person/steve-west-ww3cuAeioZuCZR5ws9EoO/"
+  }
+]

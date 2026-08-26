@@ -1,0 +1,2165 @@
+[
+  {
+    "id": "ocd-person/202a1def-abb3-4f77-8ef1-5c453d2d5423",
+    "name": "Alex Finkelman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "74",
+      "division_id": "ocd-division/country:us/state:ri/sldl:74"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Finkelman",
+    "image": "https://www.rilegislature.gov/representatives/Pictures/Alex%20Finkelman.jpg",
+    "email": "rep-finkelman@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1986-02-13",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Jamestown, Middletown"
+    },
+    "created_at": "2023-01-11T22:44:11.528846+00:00",
+    "updated_at": "2026-04-25T02:10:02.056961+00:00",
+    "openstates_url": "https://openstates.org/person/alex-finkelman-yh07WgqLiymFWTbWfsCot/"
+  },
+  {
+    "id": "ocd-person/7769ff96-3f6e-4747-b14b-de0a8648af61",
+    "name": "Alex Marszalkowski",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "52",
+      "division_id": "ocd-division/country:us/state:ri/sldl:52"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Alex",
+    "family_name": "Marszalkowski",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/marszalkowski.jpg",
+    "email": "rep-marszalkowski@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1987-02-22",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cumberland"
+    },
+    "created_at": "2018-10-18T16:11:40.659046+00:00",
+    "updated_at": "2025-03-13T08:00:17.114562+00:00",
+    "openstates_url": "https://openstates.org/person/alex-marszalkowski-3dKWkouhnqPdHVmXHB9DNJ/"
+  },
+  {
+    "id": "ocd-person/b9359c6a-fbb2-4165-af9b-a6c63290d851",
+    "name": "Anthony DeSimone",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:ri/sldl:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Anthony",
+    "family_name": "DeSimone",
+    "image": "https://www.rilegislature.gov/representatives/Pictures/DeSimone.jpg",
+    "email": "rep-desimone@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1990-03-26",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2023-01-11T22:44:11.592911+00:00",
+    "updated_at": "2025-03-13T07:59:50.730183+00:00",
+    "openstates_url": "https://openstates.org/person/anthony-desimone-5dU50YqzaYb8puWoms75Iv/"
+  },
+  {
+    "id": "ocd-person/6d4c7be7-4e68-4aa1-9262-81995fcc231e",
+    "name": "Arthur Handy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:ri/sldl:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Arthur",
+    "family_name": "Handy",
+    "image": "http://www.rilegislature.gov/representatives/pictures/handy.jpg",
+    "email": "rep-handy@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1967-02-15",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cranston"
+    },
+    "created_at": "2018-10-18T16:11:40.988158+00:00",
+    "updated_at": "2025-03-13T08:00:25.403484+00:00",
+    "openstates_url": "https://openstates.org/person/arthur-handy-3KF7FSq2wmLJWia35UIu3K/"
+  },
+  {
+    "id": "ocd-person/4352dbd3-90e5-4cf3-9bf6-accff7592c33",
+    "name": "Bill O'Brien",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "54",
+      "division_id": "ocd-division/country:us/state:ri/sldl:54"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Bill",
+    "family_name": "O'Brien",
+    "image": "http://www.rilegislature.gov/representatives/pictures/o'brien.jpg",
+    "email": "rep-obrien@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1969-07-27",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "North Providence"
+    },
+    "created_at": "2018-10-18T16:11:48.994692+00:00",
+    "updated_at": "2026-04-25T02:09:06.420331+00:00",
+    "openstates_url": "https://openstates.org/person/bill-o-brien-232LqlxCPubS0o3LfPAamZ/"
+  },
+  {
+    "id": "ocd-person/53f07987-a534-4194-ba51-2fcd62f0f63e",
+    "name": "Bob Phillips",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "51",
+      "division_id": "ocd-division/country:us/state:ri/sldl:51"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Phillips",
+    "image": "https://www.rilegislature.gov/representatives/pictures/phillips.jpg",
+    "email": "rep-phillips@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1956-05-29",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Woonsocket, Cumberland"
+    },
+    "created_at": "2018-10-18T16:11:47.490453+00:00",
+    "updated_at": "2026-04-25T02:09:29.311778+00:00",
+    "openstates_url": "https://openstates.org/person/bob-phillips-2YOG8xrJ9QfhnnUyFCTzx8/"
+  },
+  {
+    "id": "ocd-person/11bc8a51-bee7-422d-8bb7-6a9177e55735",
+    "name": "Bob Quattrocchi",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:ri/sldl:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Quattrocchi",
+    "image": "https://www.rilegislature.gov/LegislationPictures/robert_quattrocchi.jpg",
+    "email": "rep-quattrocchi@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1963-12-11",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Scituate, Cranston"
+    },
+    "created_at": "2018-10-18T16:11:47.642533+00:00",
+    "updated_at": "2026-04-25T02:09:23.865611+00:00",
+    "openstates_url": "https://openstates.org/person/bob-quattrocchi-XT21mNJrsrpEyEgSBN5k5/"
+  },
+  {
+    "id": "ocd-person/6ddaaa6f-48c9-468e-a744-714728251586",
+    "name": "Brandon Potter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:ri/sldl:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Potter",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/potter.jpg",
+    "email": "rep-potter@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cranston"
+    },
+    "created_at": "2021-01-07T06:16:29.686725+00:00",
+    "updated_at": "2025-03-13T08:00:16.618377+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-potter-3LI5q0AAK2GUoTJxUlP3aQ/"
+  },
+  {
+    "id": "ocd-person/f0206346-2c07-4316-a556-cee7fe595e9a",
+    "name": "Brandon Voas",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "57",
+      "division_id": "ocd-division/country:us/state:ri/sldl:57"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Brandon",
+    "family_name": "Voas",
+    "image": "https://www.rilegislature.gov/representatives/Pictures/Brandon%20Voas.jpg",
+    "email": "rep-voas@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1993-10-04",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cumberland, Central Falls "
+    },
+    "created_at": "2023-01-11T22:44:12.566113+00:00",
+    "updated_at": "2026-04-25T02:09:17.402778+00:00",
+    "openstates_url": "https://openstates.org/person/brandon-voas-7J6xVEQezDZHcbY7o2M5hi/"
+  },
+  {
+    "id": "ocd-person/632b3bf0-a3f8-4c0d-9818-d03c861318dc",
+    "name": "Brian Kennedy",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:ri/sldl:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Kennedy",
+    "image": "http://www.rilegislature.gov/representatives/pictures/kennedy.jpg",
+    "email": "rep-kennedy@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1961-01-03",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Hopkinton, Westerly"
+    },
+    "created_at": "2018-10-18T16:11:41.277027+00:00",
+    "updated_at": "2026-04-25T02:09:46.226653+00:00",
+    "openstates_url": "https://openstates.org/person/brian-kennedy-317ztxcv0vqf1iRMJ0SnQC/"
+  },
+  {
+    "id": "ocd-person/397f8729-c37c-4882-af7e-d7235e9f06f2",
+    "name": "Brian Newberry",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "48",
+      "division_id": "ocd-division/country:us/state:ri/sldl:48"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Brian",
+    "family_name": "Newberry",
+    "image": "http://www.rilegislature.gov/representatives/pictures/newberry.jpg",
+    "email": "rep-newberry@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1971-12-10",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "North Smithfield, Burrillville"
+    },
+    "created_at": "2018-10-18T16:11:41.203189+00:00",
+    "updated_at": "2026-04-25T02:09:36.100886+00:00",
+    "openstates_url": "https://openstates.org/person/brian-newberry-1kUqGpaGGNiCm8Q2iEWm1K/"
+  },
+  {
+    "id": "ocd-person/7daab32c-5d7f-4db2-b141-026d3595f69f",
+    "name": "Carol McEntee",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:ri/sldl:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Carol",
+    "family_name": "McEntee",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/McEntee.jpg",
+    "email": "rep-mcentee@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1954-05-07",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "South Kingstown, Narragansett "
+    },
+    "created_at": "2018-10-18T16:11:41.577504+00:00",
+    "updated_at": "2026-04-25T02:09:49.439996+00:00",
+    "openstates_url": "https://openstates.org/person/carol-mcentee-3p839pJKDqtI5cCqCbWTYV/"
+  },
+  {
+    "id": "ocd-person/8fad7738-c303-432e-9442-ce2b6dfe87e5",
+    "name": "Charlene Lima",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:ri/sldl:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Charlene",
+    "family_name": "Lima",
+    "image": "http://www.rilegislature.gov/representatives/pictures/lima.jpg",
+    "email": "rep-lima@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1953-08-18",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cranston, Providence"
+    },
+    "created_at": "2018-10-18T16:11:41.652799+00:00",
+    "updated_at": "2025-03-13T07:59:40.367587+00:00",
+    "openstates_url": "https://openstates.org/person/charlene-lima-4N7Axemz6WH6XmjhOuKVYD/"
+  },
+  {
+    "id": "ocd-person/386a8117-95b5-441f-91d0-665effac1af4",
+    "name": "Cherie Cruz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "58",
+      "division_id": "ocd-division/country:us/state:ri/sldl:58"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Cherie",
+    "family_name": "Cruz",
+    "image": "https://www.rilegislature.gov/representatives/Pictures/Cruz%20preferred%20pic.jpg",
+    "email": "rep-cruz@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Pawtucket"
+    },
+    "created_at": "2023-01-11T22:44:11.197917+00:00",
+    "updated_at": "2026-04-25T02:09:58.144728+00:00",
+    "openstates_url": "https://openstates.org/person/cherie-cruz-1iSF3h8Lvf5tmX4ixqiwlg/"
+  },
+  {
+    "id": "ocd-person/a9ba95ac-22f3-4aeb-8fdd-eb236675d8d4",
+    "name": "Chris Blazejewski",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:ri/sldl:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Blazejewski",
+    "image": "http://www.rilegislature.gov/representatives/pictures/blazejewski.jpg",
+    "email": "rep-blazejewski@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1979-12-03",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2018-10-18T16:11:41.727583+00:00",
+    "updated_at": "2025-07-18T02:13:51.116477+00:00",
+    "openstates_url": "https://openstates.org/person/chris-blazejewski-5AGyJ0iMEbzhasSX8b8GkW/"
+  },
+  {
+    "id": "ocd-person/4f6ac85b-f69f-4916-beaf-a30087ba1214",
+    "name": "Chris Paplauskas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:ri/sldl:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Paplauskas",
+    "image": "https://www.cranstonri.gov/_resources/common/userfiles/image/IMG-0103.JPG",
+    "email": "rep-paplauskas@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:06:52.528149+00:00",
+    "updated_at": "2025-03-13T08:00:06.591544+00:00",
+    "openstates_url": "https://openstates.org/person/chris-paplauskas-2PrC0M2crfjHUUF3ROeAFg/"
+  },
+  {
+    "id": "ocd-person/b12f1651-fc9e-440c-9bc3-ff326505cca4",
+    "name": "David Bennett",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:ri/sldl:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Bennett",
+    "image": "http://www.rilegislature.gov/representatives/pictures/bennett.jpg",
+    "email": "rep-bennett@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1955-04-08",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warwick, Cranston"
+    },
+    "created_at": "2018-10-18T16:11:42.018841+00:00",
+    "updated_at": "2025-03-13T08:00:01.131321+00:00",
+    "openstates_url": "https://openstates.org/person/david-bennett-5OL9y2pw9ijEyGkswUmSZQ/"
+  },
+  {
+    "id": "ocd-person/75bd1298-3fc9-42cc-87c6-23bdc20a7b56",
+    "name": "David Morales",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:ri/sldl:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Morales",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/Morales.JPG",
+    "email": "rep-morales@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2021-01-07T06:16:26.180001+00:00",
+    "updated_at": "2025-03-13T07:59:47.763351+00:00",
+    "openstates_url": "https://openstates.org/person/david-morales-3aAVXPt0fYXGdO9hToNopi/"
+  },
+  {
+    "id": "ocd-person/785df766-de25-496b-a823-e4ad64c462cb",
+    "name": "David Place",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:ri/sldl:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Place",
+    "image": "http://www.rilegislature.gov/representatives/pictures/place.jpg",
+    "email": "rep-place@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1969-10-20",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Burrillville, Glocester"
+    },
+    "created_at": "2019-01-05T04:47:31.855594+00:00",
+    "updated_at": "2026-04-25T02:09:33.318015+00:00",
+    "openstates_url": "https://openstates.org/person/david-place-3f81MbRPtReqYPXdfx62fr/"
+  },
+  {
+    "id": "ocd-person/3efcf2f9-f7f8-4441-9ec7-4f6d8c17940f",
+    "name": "Deb Fellela",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:ri/sldl:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Deb",
+    "family_name": "Fellela",
+    "image": "http://www.rilegislature.gov/representatives/pictures/fellela.jpg",
+    "email": "rep-fellela@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1956-11-16",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Johnston"
+    },
+    "created_at": "2018-10-18T16:11:42.243461+00:00",
+    "updated_at": "2025-03-13T08:00:01.945201+00:00",
+    "openstates_url": "https://openstates.org/person/deb-fellela-1ur7aIkwo4pJH7o5DRYIEZ/"
+  },
+  {
+    "id": "ocd-person/0065fe7b-08cf-4d17-b358-c0c04ab45616",
+    "name": "Dick Fascia",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:ri/sldl:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Dick",
+    "family_name": "Fascia",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Richard_Fascia_20240808_092707.png",
+    "email": "rep-fascia@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1956-11-26",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:06:21.017513+00:00",
+    "updated_at": "2026-04-25T02:08:54.694022+00:00",
+    "openstates_url": "https://openstates.org/person/dick-fascia-kbuI0YOy4FA11PNJXqPm/"
+  },
+  {
+    "id": "ocd-person/6cb1ca03-2ea8-4ee8-9ecb-faa37f4c5966",
+    "name": "Doc Corvese",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "55",
+      "division_id": "ocd-division/country:us/state:ri/sldl:55"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Doc",
+    "family_name": "Corvese",
+    "image": "http://www.rilegislature.gov/representatives/pictures/corvese.jpg",
+    "email": "rep-corvese@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1956-01-14",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "North Providence"
+    },
+    "created_at": "2018-10-18T16:11:41.059905+00:00",
+    "updated_at": "2026-04-25T02:09:23.054858+00:00",
+    "openstates_url": "https://openstates.org/person/doc-corvese-3J6Q6xVUcYWfZB7D0kmZ78/"
+  },
+  {
+    "id": "ocd-person/6e9979b1-f131-4d71-8146-71f10bd06e57",
+    "name": "Earl Read",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:ri/sldl:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Earl",
+    "family_name": "Read",
+    "image": "https://bloximages.newyork1.vip.townnews.com/ricentral.com/content/tncms/assets/v3/editorial/4/30/4303801c-a298-11ef-872c-ffd5089fe627/67360f284e7b9.image.jpg?resize=415%2C500",
+    "email": "rep-read@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:07:01.943355+00:00",
+    "updated_at": "2026-04-25T02:10:03.436535+00:00",
+    "openstates_url": "https://openstates.org/person/earl-read-3MhIFhytlgjjsO6xhjysoJ/"
+  },
+  {
+    "id": "ocd-person/e073b501-75f0-4fc6-9e61-392b9931f070",
+    "name": "Edith Ajello",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:ri/sldl:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Edith",
+    "family_name": "Ajello",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/ajello.jpg",
+    "email": "rep-ajello@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1944-04-26",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2018-10-18T16:11:42.688845+00:00",
+    "updated_at": "2025-03-13T07:59:59.604193+00:00",
+    "openstates_url": "https://openstates.org/person/edith-ajello-6pX9tBC2pXoFYtuOlRVjWa/"
+  },
+  {
+    "id": "ocd-person/e70e3449-7587-4a64-a940-922d543f5a2d",
+    "name": "Enrique Sanchez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:ri/sldl:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Enrique",
+    "family_name": "Sanchez",
+    "image": "https://www.rilegislature.gov/representatives/Pictures/Sanchez.jpg",
+    "email": "rep-sanchez@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1996-07-10",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2023-01-11T22:44:09.373262+00:00",
+    "updated_at": "2025-03-13T07:59:51.482889+00:00",
+    "openstates_url": "https://openstates.org/person/enrique-sanchez-71ziZQCDjPJssbqIZrgqgH/"
+  },
+  {
+    "id": "ocd-person/c5f9a1f5-502b-41b6-8848-bfa359b1bad9",
+    "name": "Evan Shanley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:ri/sldl:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Evan",
+    "family_name": "Shanley",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/shanley.jpg",
+    "email": "rep-shanley@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1986-10-17",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warwick, East Greenwich"
+    },
+    "created_at": "2018-10-18T16:11:42.983949+00:00",
+    "updated_at": "2026-04-25T02:09:32.483679+00:00",
+    "openstates_url": "https://openstates.org/person/evan-shanley-61ZZOMyKUqOkKvboo6LMrp/"
+  },
+  {
+    "id": "ocd-person/5d976bb8-2481-45d2-bae9-df4b565d9526",
+    "name": "George Nardone",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:ri/sldl:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "George",
+    "family_name": "Nardone",
+    "image": "http://www.rilegislature.gov/representatives/pictures/nardone.jpg",
+    "email": "rep-nardone@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1964-06-13",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Coventry"
+    },
+    "created_at": "2019-01-05T04:47:35.530481+00:00",
+    "updated_at": "2026-04-25T02:09:50.210961+00:00",
+    "openstates_url": "https://openstates.org/person/george-nardone-2qbU7nKL3958BFAReWfnnC/"
+  },
+  {
+    "id": "ocd-person/44424388-03a6-452b-992b-3c082949f62f",
+    "name": "Grace Diaz",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:ri/sldl:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Grace",
+    "family_name": "Diaz",
+    "image": "http://www.rilegislature.gov/representatives/pictures/diaz.jpg",
+    "email": "rep-diaz@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2018-10-18T16:11:43.356741+00:00",
+    "updated_at": "2025-03-13T08:00:20.667321+00:00",
+    "openstates_url": "https://openstates.org/person/grace-diaz-24nlAnUulecUcHOnPfHgI3/"
+  },
+  {
+    "id": "ocd-person/4b45cbc5-99f3-4a08-a154-cac0cc90ae1a",
+    "name": "Greg Costantino",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:ri/sldl:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Costantino",
+    "image": "http://www.rilegislature.gov/representatives/pictures/costantino.jpg",
+    "email": "rep-costantino@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1960-08-11",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Lincoln, Smithfield, Johnston"
+    },
+    "created_at": "2018-10-18T16:11:43.510083+00:00",
+    "updated_at": "2026-04-25T02:09:25.808546+00:00",
+    "openstates_url": "https://openstates.org/person/greg-costantino-2I2JvNKIH9ejNNNIIheG2k/"
+  },
+  {
+    "id": "ocd-person/c2b18728-5409-42b0-a789-d7f5bd717780",
+    "name": "Jackie Baginski",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:ri/sldl:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jackie",
+    "family_name": "Baginski",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/Baginski.jpg",
+    "email": "rep-baginski@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cranston"
+    },
+    "created_at": "2021-01-07T06:16:25.656864+00:00",
+    "updated_at": "2025-03-13T08:00:29.840262+00:00",
+    "openstates_url": "https://openstates.org/person/jackie-baginski-5vNdnc9U5zw8LgwdX0tJgW/"
+  },
+  {
+    "id": "ocd-person/cef11d28-cbbb-4ffd-b8f2-23c71e73f1b3",
+    "name": "Jason Knight",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "67",
+      "division_id": "ocd-division/country:us/state:ri/sldl:67"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jason",
+    "family_name": "Knight",
+    "image": "https://www.jasonknightlaw.com/wp-content/uploads/2025/01/about-img.webp",
+    "email": "rep-knight@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1969-10-28",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Barrington, Warren"
+    },
+    "created_at": "2018-10-18T16:11:44.184135+00:00",
+    "updated_at": "2026-04-25T02:09:21.427097+00:00",
+    "openstates_url": "https://openstates.org/person/jason-knight-6IUbjvJXvpxkOn1Wk9fnKF/"
+  },
+  {
+    "id": "ocd-person/85b2ef21-1f02-4d9e-9f74-a40a2e942f7c",
+    "name": "Jay Edwards",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "70",
+      "division_id": "ocd-division/country:us/state:ri/sldl:70"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Edwards",
+    "image": "http://www.rilegislature.gov/representatives/pictures/edwards.jpg",
+    "email": "rep-edwards@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1958-04-07",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Tiverton"
+    },
+    "created_at": "2018-10-18T16:11:44.491260+00:00",
+    "updated_at": "2026-01-28T02:10:44.255588+00:00",
+    "openstates_url": "https://openstates.org/person/jay-edwards-44HkezuUoTsSkcxWhFMXhk/"
+  },
+  {
+    "id": "ocd-person/c937560c-277e-4c48-9656-bb385a7910f3",
+    "name": "Jenni Furtado",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "64",
+      "division_id": "ocd-division/country:us/state:ri/sldl:64"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jenni",
+    "family_name": "Furtado",
+    "image": "https://rhodeislandcurrent.com/wp-content/uploads/2024/09/272274786_329286515874430_6351954859366181023_n-1-1024x1024.jpg",
+    "email": "rep-furtado@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:07:40.396882+00:00",
+    "updated_at": "2026-04-25T02:09:51.996621+00:00",
+    "openstates_url": "https://openstates.org/person/jenni-furtado-67gkHAmNXKxOCNg39lw4Xb/"
+  },
+  {
+    "id": "ocd-person/32458c0f-8b82-4f49-a191-90d68c3f375f",
+    "name": "Jennifer Boylan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "66",
+      "division_id": "ocd-division/country:us/state:ri/sldl:66"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jennifer",
+    "family_name": "Boylan",
+    "image": "https://www.rilegislature.gov/LegislationPictures/jennifer_boylan.jpg",
+    "email": "rep-boylan@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Barrington, East Providence"
+    },
+    "created_at": "2023-01-11T22:44:13.105375+00:00",
+    "updated_at": "2026-04-25T02:09:18.087381+00:00",
+    "openstates_url": "https://openstates.org/person/jennifer-boylan-1WrOlYVsrDuKhl5OwT2lZf/"
+  },
+  {
+    "id": "ocd-person/c11b7057-fe39-42b6-8a38-91d9e7349118",
+    "name": "Jennifer Stewart",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "59",
+      "division_id": "ocd-division/country:us/state:ri/sldl:59"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jennifer",
+    "family_name": "Stewart",
+    "image": "https://www.rilegislature.gov/representatives/Pictures/Stewart.jpg",
+    "email": "rep-stewart@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Pawtucket"
+    },
+    "created_at": "2023-01-11T22:44:09.302733+00:00",
+    "updated_at": "2026-04-25T02:09:02.696031+00:00",
+    "openstates_url": "https://openstates.org/person/jennifer-stewart-5sO3dcYk9wU5VvLcFNUzAO/"
+  },
+  {
+    "id": "ocd-person/00644fec-e128-4e7f-9af0-8e79d0903da3",
+    "name": "Joe Shekarchi",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:ri/sldl:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Joe",
+    "family_name": "Shekarchi",
+    "image": "http://www.rilegislature.gov/representatives/pictures/shekarchi.jpg",
+    "email": "rep-shekarchi@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1962-05-17",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warwick"
+    },
+    "created_at": "2018-10-18T16:11:45.168108+00:00",
+    "updated_at": "2026-01-28T02:11:18.891615+00:00",
+    "openstates_url": "https://openstates.org/person/joe-shekarchi-jqFkZmghsuKevLbeFHTn/"
+  },
+  {
+    "id": "ocd-person/f9877000-1919-4f5b-a8b7-f05a1092bdab",
+    "name": "John Lombardi",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:ri/sldl:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "John",
+    "family_name": "Lombardi",
+    "image": "http://www.rilegislature.gov/representatives/pictures/lombardi.jpg",
+    "email": "rep-lombardi@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1952-04-30",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2018-10-18T16:11:44.566945+00:00",
+    "updated_at": "2025-03-13T08:00:15.134367+00:00",
+    "openstates_url": "https://openstates.org/person/john-lombardi-7aqz2XGkv8HJCAJPUFEcdX/"
+  },
+  {
+    "id": "ocd-person/89e9f600-0af5-471c-89bb-b27142def4c9",
+    "name": "Jon Brien",
+    "party": "Independent",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "49",
+      "division_id": "ocd-division/country:us/state:ri/sldl:49"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jon",
+    "family_name": "Brien",
+    "image": "https://www.rilegislature.gov/representatives/Pictures/Brien.jpg",
+    "email": "rep-brien@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1970-11-21",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Woonsocket, North Smithfield"
+    },
+    "created_at": "2023-01-11T22:44:09.757322+00:00",
+    "updated_at": "2026-04-25T02:09:51.008564+00:00",
+    "openstates_url": "https://openstates.org/person/jon-brien-4CErtNMR1E3QmYc18rUOeP/"
+  },
+  {
+    "id": "ocd-person/be85e7a9-0455-4e02-92f7-834710d0e401",
+    "name": "Jose Batista",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:ri/sldl:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Jose",
+    "family_name": "Batista",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/batista.jpg",
+    "email": "rep-batista@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2021-01-07T06:16:26.379024+00:00",
+    "updated_at": "2025-03-13T08:00:05.999599+00:00",
+    "openstates_url": "https://openstates.org/person/jose-batista-5nVjgRYXK2Zxbzb5TEyDVh/"
+  },
+  {
+    "id": "ocd-person/ce92c860-ad04-4cc5-91eb-52add74c98e5",
+    "name": "Joseph McNamara",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:ri/sldl:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Joseph",
+    "family_name": "McNamara",
+    "image": "http://www.rilegislature.gov/representatives/pictures/mcnamara.jpg",
+    "email": "rep-mcnamara@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1950-09-07",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warwick, Cranston"
+    },
+    "created_at": "2018-10-18T16:11:44.717020+00:00",
+    "updated_at": "2025-03-13T08:00:38.035470+00:00",
+    "openstates_url": "https://openstates.org/person/joseph-mcnamara-6HnUx7lIDO1M6uAuMzydTJ/"
+  },
+  {
+    "id": "ocd-person/0b700db6-fe30-4fb4-a988-05ae0d618720",
+    "name": "Joseph Solomon",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:ri/sldl:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Joseph",
+    "family_name": "Solomon",
+    "image": "http://www.rilegislature.gov/representatives/pictures/solomon.jpg",
+    "email": "rep-solomon@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1983-09-04",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warwick"
+    },
+    "created_at": "2018-10-18T16:11:44.644757+00:00",
+    "updated_at": "2025-03-13T08:00:22.250841+00:00",
+    "openstates_url": "https://openstates.org/person/joseph-solomon-La7hVpnF2biE2pdwsgqkS/"
+  },
+  {
+    "id": "ocd-person/b6a9a38c-0f39-4150-b041-fd6c75f9c8ad",
+    "name": "Joshua Giraldo",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "56",
+      "division_id": "ocd-division/country:us/state:ri/sldl:56"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Joshua",
+    "family_name": "Giraldo",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/Giraldo.jpg",
+    "email": "rep-giraldo@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Central Falls"
+    },
+    "created_at": "2021-01-07T06:16:29.183988+00:00",
+    "updated_at": "2026-04-25T02:10:01.311792+00:00",
+    "openstates_url": "https://openstates.org/person/joshua-giraldo-5Yg7yfKbZKT4EZlMw0fYB3/"
+  },
+  {
+    "id": "ocd-person/6e1cd170-ab5c-4095-9fb2-8e92138f6db3",
+    "name": "Julie Casimiro",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:ri/sldl:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Julie",
+    "family_name": "Casimiro",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/casimiro.jpg",
+    "email": "rep-casimiro@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "North Kingstown, Exeter "
+    },
+    "created_at": "2018-10-18T16:11:45.020915+00:00",
+    "updated_at": "2026-04-25T02:09:13.515569+00:00",
+    "openstates_url": "https://openstates.org/person/julie-casimiro-3LmKCiOWfO1oWm1yV9ZbjX/"
+  },
+  {
+    "id": "ocd-person/9386224e-9603-4695-8f46-a1033d8534a5",
+    "name": "June Speakman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "68",
+      "division_id": "ocd-division/country:us/state:ri/sldl:68"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "June",
+    "family_name": "Speakman",
+    "image": "http://www.rilegislature.gov/representatives/pictures/speakman.jpg",
+    "email": "rep-speakman@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1954-01-21",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Warren, Bristol"
+    },
+    "created_at": "2019-08-22T23:47:54.639993+00:00",
+    "updated_at": "2026-01-28T02:10:38.291741+00:00",
+    "openstates_url": "https://openstates.org/person/june-speakman-4UNAdAsxGkUUWcHU7leM21/"
+  },
+  {
+    "id": "ocd-person/38c539f2-0698-4fa2-a761-477608365838",
+    "name": "Justine Caldwell",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:ri/sldl:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Justine",
+    "family_name": "Caldwell",
+    "image": "http://www.rilegislature.gov/representatives/pictures/caldwell.jpg",
+    "email": "rep-caldwell@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1982-11-30",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "East Greenwich, West Greenwich"
+    },
+    "created_at": "2019-01-05T04:47:33.816183+00:00",
+    "updated_at": "2026-04-25T02:09:43.800464+00:00",
+    "openstates_url": "https://openstates.org/person/justine-caldwell-1j7haLiv4HS0E9VkVAwHjU/"
+  },
+  {
+    "id": "ocd-person/016b40cf-1be0-4e66-acdf-78a029822e1c",
+    "name": "Karen Alzate",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "60",
+      "division_id": "ocd-division/country:us/state:ri/sldl:60"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Karen",
+    "family_name": "Alzate",
+    "image": "http://www.rilegislature.gov/representatives/pictures/alzate.jpg",
+    "email": "rep-alzate@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1987-12-26",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Pawtucket, Central Falls"
+    },
+    "created_at": "2019-01-05T04:47:27.905929+00:00",
+    "updated_at": "2026-04-25T02:09:48.161498+00:00",
+    "openstates_url": "https://openstates.org/person/karen-alzate-2g0RW03JEPYD2xmh6ZVTo/"
+  },
+  {
+    "id": "ocd-person/570c899e-34b2-4e30-93e2-79f588ff8aef",
+    "name": "Kathleen Fogarty",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:ri/sldl:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Kathleen",
+    "family_name": "Fogarty",
+    "image": "http://www.rilegislature.gov/representatives/pictures/fogarty.jpg",
+    "email": "rep-fogarty@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1965-07-29",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "South Kingstown"
+    },
+    "created_at": "2018-10-18T16:11:45.315775+00:00",
+    "updated_at": "2026-04-25T02:09:57.429421+00:00",
+    "openstates_url": "https://openstates.org/person/kathleen-fogarty-2eG3qq93sqMHEOOuJ2jSLH/"
+  },
+  {
+    "id": "ocd-person/bd30e693-11a2-412f-b81a-bebc78d91145",
+    "name": "Katie Kazarian",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "63",
+      "division_id": "ocd-division/country:us/state:ri/sldl:63"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Katie",
+    "family_name": "Kazarian",
+    "image": "http://www.rilegislature.gov/representatives/pictures/kazarian.jpg",
+    "email": "rep-kazarian@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1990-06-25",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "East Providence, Pawtucket"
+    },
+    "created_at": "2018-10-18T16:11:45.240638+00:00",
+    "updated_at": "2026-04-25T02:09:39.728809+00:00",
+    "openstates_url": "https://openstates.org/person/katie-kazarian-5kztdtHiPqGzyyYGLYSp7d/"
+  },
+  {
+    "id": "ocd-person/320f08df-f7d3-4ebe-a696-9c2b8d98f75b",
+    "name": "Lauren Carson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "75",
+      "division_id": "ocd-division/country:us/state:ri/sldl:75"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Lauren",
+    "family_name": "Carson",
+    "image": "http://www.rilegislature.gov/representatives/pictures/carson.jpg",
+    "email": "rep-carson@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1954-02-26",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Newport"
+    },
+    "created_at": "2018-10-18T16:11:45.546041+00:00",
+    "updated_at": "2025-03-13T07:59:42.355110+00:00",
+    "openstates_url": "https://openstates.org/person/lauren-carson-1WSUCq9x6TbHtyOq4OPTuV/"
+  },
+  {
+    "id": "ocd-person/ad453635-2239-4a63-a153-a9f925b32621",
+    "name": "Leo Felix",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "61",
+      "division_id": "ocd-division/country:us/state:ri/sldl:61"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Leo",
+    "family_name": "Felix",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/Felix.jpg",
+    "email": "rep-felix@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1987-10-04",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Pawtucket"
+    },
+    "created_at": "2021-01-07T06:16:29.312785+00:00",
+    "updated_at": "2026-04-25T02:09:38.954528+00:00",
+    "openstates_url": "https://openstates.org/person/leo-felix-5GxIkWaw2Aoa03LcBifiYT/"
+  },
+  {
+    "id": "ocd-person/bc0b7591-fb22-44c1-9766-49ea0d70d894",
+    "name": "Marie Hopkins",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:ri/sldl:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Marie",
+    "family_name": "Hopkins",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/MarieHopkins.jpg",
+    "email": "rep-hopkins@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:07:05.640091+00:00",
+    "updated_at": "2025-03-13T08:00:32.313739+00:00",
+    "openstates_url": "https://openstates.org/person/marie-hopkins-5ipnFYSoVG3cBkTxfyJmIm/"
+  },
+  {
+    "id": "ocd-person/ed735cca-8f53-4304-a1ec-9e212744ec17",
+    "name": "Marvin Abney",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "73",
+      "division_id": "ocd-division/country:us/state:ri/sldl:73"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Marvin",
+    "family_name": "Abney",
+    "image": "http://www.rilegislature.gov/representatives/pictures/abney.jpg",
+    "email": "rep-abney@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1949-11-10",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Newport, Middletown"
+    },
+    "created_at": "2018-10-18T16:11:46.064635+00:00",
+    "updated_at": "2026-04-25T02:09:53.650192+00:00",
+    "openstates_url": "https://openstates.org/person/marvin-abney-7E3twOzGJc0YjM5X8YeEY3/"
+  },
+  {
+    "id": "ocd-person/20543a6c-f763-4297-a19b-c670fbe8a68b",
+    "name": "Mary Ann Shallcross-Smith",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:ri/sldl:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Mary Ann",
+    "family_name": "Shallcross-Smith",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/shallcross%20smith.jpg",
+    "email": "rep-shallcross-smith@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1952-08-02",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Lincoln, Pawtucket"
+    },
+    "created_at": "2021-01-07T06:16:29.847530+00:00",
+    "updated_at": "2026-04-25T02:08:51.016148+00:00",
+    "openstates_url": "https://openstates.org/person/mary-ann-shallcross-smith-z0FIy37fjkYtel45Ices7/"
+  },
+  {
+    "id": "ocd-person/cad61cfb-b3e8-417a-934e-1add601d4cba",
+    "name": "Mary Messier",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "62",
+      "division_id": "ocd-division/country:us/state:ri/sldl:62"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Mary",
+    "family_name": "Messier",
+    "image": "http://www.rilegislature.gov/representatives/pictures/messier.jpg",
+    "email": "rep-messier@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1952-06-27",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Pawtucket"
+    },
+    "created_at": "2018-10-18T16:11:46.143005+00:00",
+    "updated_at": "2026-04-25T02:09:43.004149+00:00",
+    "openstates_url": "https://openstates.org/person/mary-messier-6AkIbRjlypbRK0rP2gIgxu/"
+  },
+  {
+    "id": "ocd-person/bffdb553-5c5c-403e-8e2c-47b34a7b50f5",
+    "name": "Matthew Dawson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "65",
+      "division_id": "ocd-division/country:us/state:ri/sldl:65"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Matthew",
+    "family_name": "Dawson",
+    "image": "https://www.lynchpine.com/wp-content/uploads/sites/1101520/2020/04/dawson_matthew_s.jpg",
+    "email": "rep-dawson@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1968-01-12",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "East Providence"
+    },
+    "created_at": "2023-01-11T22:44:13.685278+00:00",
+    "updated_at": "2026-04-25T02:09:46.965793+00:00",
+    "openstates_url": "https://openstates.org/person/matthew-dawson-5qHTj5rVP5fDVOB8w4KG7Z/"
+  },
+  {
+    "id": "ocd-person/4ad02cf0-3ead-4bc4-84e3-d1c08c3aa11a",
+    "name": "Megan Cotter",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:ri/sldl:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Megan",
+    "family_name": "Cotter",
+    "image": "https://www.rilegislature.gov/representatives/Pictures/Cotter.jpg",
+    "email": "rep-cotter@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1984-04-10",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Exeter, Richmond, Hopkinton"
+    },
+    "created_at": "2023-01-11T22:44:08.346273+00:00",
+    "updated_at": "2026-04-25T02:09:24.614279+00:00",
+    "openstates_url": "https://openstates.org/person/megan-cotter-2HAZG1ZpXfXRkFknTWH6OQ/"
+  },
+  {
+    "id": "ocd-person/7c4d8cad-55e5-474d-ac05-8db9a59da7fd",
+    "name": "Mia Ackerman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:ri/sldl:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Mia",
+    "family_name": "Ackerman",
+    "image": "http://www.rilegislature.gov/representatives/pictures/ackerman.jpg",
+    "email": "rep-ackerman@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1965-03-28",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Cumberland, Lincoln"
+    },
+    "created_at": "2018-10-18T16:11:46.291082+00:00",
+    "updated_at": "2025-03-13T08:00:13.644933+00:00",
+    "openstates_url": "https://openstates.org/person/mia-ackerman-3mYUIr0GEhNaX1ruIXMvIT/"
+  },
+  {
+    "id": "ocd-person/8318a7d4-6d81-4825-8821-4e7aed69b4dc",
+    "name": "Michelle McGaw",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "71",
+      "division_id": "ocd-division/country:us/state:ri/sldl:71"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "McGaw",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/mcgaw.jpg",
+    "email": "rep-mcgaw@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Portsmouth, Little Compton, Tiverton"
+    },
+    "created_at": "2021-01-07T06:16:24.770018+00:00",
+    "updated_at": "2026-04-25T02:09:01.203942+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-mcgaw-3zNGGvkQYB96RzThadbWt2/"
+  },
+  {
+    "id": "ocd-person/02f4f018-3639-4fb1-aced-f8684161121d",
+    "name": "Mike Chippendale",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:ri/sldl:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Chippendale",
+    "image": "http://www.rilegislature.gov/representatives/pictures/chippendale.jpg",
+    "email": "rep-chippendale@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1969-04-25",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Foster, Glocester, Coventry"
+    },
+    "created_at": "2018-10-18T16:11:46.522464+00:00",
+    "updated_at": "2025-03-29T02:08:50.239774+00:00",
+    "openstates_url": "https://openstates.org/person/mike-chippendale-5Zv8WgkKwJIzNxEZxQEpB/"
+  },
+  {
+    "id": "ocd-person/39bdc05c-bda5-4ea9-b4ad-4cc7172adf56",
+    "name": "Nathan Biah",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:ri/sldl:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Nathan",
+    "family_name": "Biah",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/biah.jpg",
+    "email": "rep-biah@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2021-01-07T06:16:27.495875+00:00",
+    "updated_at": "2025-03-13T08:00:04.021973+00:00",
+    "openstates_url": "https://openstates.org/person/nathan-biah-1kxHJXbR0WyWkI7w32XNTy/"
+  },
+  {
+    "id": "ocd-person/45fd70a7-613e-405d-959f-2900eea0f264",
+    "name": "Pat Serpa",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:ri/sldl:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Pat",
+    "family_name": "Serpa",
+    "image": "http://www.rilegislature.gov/representatives/pictures/serpa.jpg",
+    "email": "rep-serpa@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1948-07-08",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "West Warwick, Coventry"
+    },
+    "created_at": "2018-10-18T16:11:46.748681+00:00",
+    "updated_at": "2026-04-25T02:09:28.541459+00:00",
+    "openstates_url": "https://openstates.org/person/pat-serpa-284IAFpnY61DMSEaz5PZWm/"
+  },
+  {
+    "id": "ocd-person/d28514b2-da9f-4c03-9590-781d3c1529ad",
+    "name": "Paul Santucci",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "53",
+      "division_id": "ocd-division/country:us/state:ri/sldl:53"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Santucci",
+    "image": "https://static.votesmart.org/static/canphoto/195096.jpg",
+    "email": "rep-santucci@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-12T07:06:32.514351+00:00",
+    "updated_at": "2026-04-25T02:09:36.693899+00:00",
+    "openstates_url": "https://openstates.org/person/paul-santucci-6PFCotFewq7pdzPj2HHXLB/"
+  },
+  {
+    "id": "ocd-person/181465b6-b392-4222-acec-456182d23aa5",
+    "name": "Ramon Perez",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:ri/sldl:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Ramon",
+    "family_name": "Perez",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/perez.jpg",
+    "email": "rep-perez@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1971-11-20",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence, Johnston"
+    },
+    "created_at": "2021-01-07T06:16:28.988791+00:00",
+    "updated_at": "2025-03-13T08:00:09.562130+00:00",
+    "openstates_url": "https://openstates.org/person/ramon-perez-jR8WLpojvl2T2WnAWPsZR/"
+  },
+  {
+    "id": "ocd-person/da9a4b15-1cbf-4645-bd98-58ce413b68e1",
+    "name": "Raymond Hull",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:ri/sldl:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Raymond",
+    "family_name": "Hull",
+    "image": "http://www.rilegislature.gov/representatives/pictures/hull.jpg",
+    "email": "rep-hull@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence, North Providence"
+    },
+    "created_at": "2018-10-18T16:11:47.118480+00:00",
+    "updated_at": "2025-03-13T08:00:04.521855+00:00",
+    "openstates_url": "https://openstates.org/person/raymond-hull-6eUq35iazAldzDfQUehoi9/"
+  },
+  {
+    "id": "ocd-person/dd5636ac-e9a1-4d98-8f21-6376b8977706",
+    "name": "Rebecca Kislak",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:ri/sldl:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Rebecca",
+    "family_name": "Kislak",
+    "image": "http://www.rilegislature.gov/representatives/pictures/kislak.jpg",
+    "email": "rep-kislak@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1972-03-07",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2019-01-05T04:47:21.889441+00:00",
+    "updated_at": "2025-03-13T08:00:31.216413+00:00",
+    "openstates_url": "https://openstates.org/person/rebecca-kislak-6jehe5l2SXWix2kZzszPrq/"
+  },
+  {
+    "id": "ocd-person/a6d519b0-89bd-45d5-9067-3ae0b421eee7",
+    "name": "Robert Craven",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:ri/sldl:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Craven",
+    "image": "http://www.rilegislature.gov/representatives/pictures/craven.jpg",
+    "email": "rep-craven@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1955-11-19",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "North Kingstown"
+    },
+    "created_at": "2018-10-18T16:11:47.564779+00:00",
+    "updated_at": "2026-04-25T02:09:44.652667+00:00",
+    "openstates_url": "https://openstates.org/person/robert-craven-54o71xEo8tzBmqxjcWNH1T/"
+  },
+  {
+    "id": "ocd-person/c9229f5a-b4ac-4cf2-b227-a0b4e56cca2f",
+    "name": "Sam Azzinaro",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:ri/sldl:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Azzinaro",
+    "image": "http://www.rilegislature.gov/representatives/pictures/azzinaro.jpg",
+    "email": "rep-azzinaro@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1943-01-29",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Westerly"
+    },
+    "created_at": "2018-10-18T16:11:47.873541+00:00",
+    "updated_at": "2026-04-25T02:09:54.666627+00:00",
+    "openstates_url": "https://openstates.org/person/sam-azzinaro-67XHNFFk0CXsYafn6rJkJb/"
+  },
+  {
+    "id": "ocd-person/1cd78f67-6adb-47c6-98cd-f49ca8eb603f",
+    "name": "Scott Slater",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:ri/sldl:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Slater",
+    "image": "http://www.rilegislature.gov/representatives/pictures/slater.jpg",
+    "email": "rep-slater@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1975-05-28",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Providence"
+    },
+    "created_at": "2018-10-18T16:11:48.019843+00:00",
+    "updated_at": "2025-03-13T07:59:40.888804+00:00",
+    "openstates_url": "https://openstates.org/person/scott-slater-sQINTRJUjUIvbXDCCxT2d/"
+  },
+  {
+    "id": "ocd-person/6c7285bd-fdd3-4629-be6f-4a01d19e9c25",
+    "name": "Sherry Roberts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:ri/sldl:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Sherry",
+    "family_name": "Roberts",
+    "image": "http://www.rilegislature.gov/representatives/pictures/roberts.jpg",
+    "email": "rep-roberts@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1968-07-29",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "West Greenwich, Coventry"
+    },
+    "created_at": "2018-10-18T16:11:48.168646+00:00",
+    "updated_at": "2025-03-13T08:00:31.707532+00:00",
+    "openstates_url": "https://openstates.org/person/sherry-roberts-3IdVVZ1btf157QZxhcsQTd/"
+  },
+  {
+    "id": "ocd-person/0b20a11e-e90b-4ff2-aa25-5334a8592071",
+    "name": "Stephen Casey",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "50",
+      "division_id": "ocd-division/country:us/state:ri/sldl:50"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Stephen",
+    "family_name": "Casey",
+    "image": "http://www.rilegislature.gov/representatives/pictures/casey.jpg",
+    "email": "rep-casey@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1968-09-12",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Woonsocket"
+    },
+    "created_at": "2018-10-18T16:11:48.243193+00:00",
+    "updated_at": "2026-04-25T02:10:00.543683+00:00",
+    "openstates_url": "https://openstates.org/person/stephen-casey-KzpI0EGQOLcFAZvuHDq9B/"
+  },
+  {
+    "id": "ocd-person/160de7ca-e70f-4cd4-b218-e9600c24a5aa",
+    "name": "Susan Donovan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "69",
+      "division_id": "ocd-division/country:us/state:ri/sldl:69"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Susan",
+    "family_name": "Donovan",
+    "image": "http://www.rilegislature.gov/representatives/Pictures/donovan.jpg",
+    "email": "rep-donovan@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Bristol, Portsmouth"
+    },
+    "created_at": "2018-10-18T16:11:48.465103+00:00",
+    "updated_at": "2026-04-25T02:09:41.810443+00:00",
+    "openstates_url": "https://openstates.org/person/susan-donovan-fcBWyOti3OjejL3ahrZt4/"
+  },
+  {
+    "id": "ocd-person/bdccc3f1-4b2d-4f64-8653-ada4322d6a10",
+    "name": "Teresa Tanzi",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:ri/sldl:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Teresa",
+    "family_name": "Tanzi",
+    "image": "http://www.rilegislature.gov/representatives/pictures/tanzi.jpg",
+    "email": "rep-tanzi@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1971-11-03",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "South Kingstown, Narragansett"
+    },
+    "created_at": "2018-10-18T16:11:48.538277+00:00",
+    "updated_at": "2026-04-25T02:09:11.150980+00:00",
+    "openstates_url": "https://openstates.org/person/teresa-tanzi-5m97vSG1oc7RDp65HYEAjo/"
+  },
+  {
+    "id": "ocd-person/0e459c44-8d77-408e-9db6-c0e0b79274fd",
+    "name": "Terri Cortvriend",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "72",
+      "division_id": "ocd-division/country:us/state:ri/sldl:72"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Terri",
+    "family_name": "Cortvriend",
+    "image": "http://www.rilegislature.gov/representatives/pictures/cortvriend.jpg",
+    "email": "rep-cortvriend@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "1962-01-15",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Portsmouth. Middletown"
+    },
+    "created_at": "2019-01-05T04:47:34.511126+00:00",
+    "updated_at": "2026-04-25T02:08:57.555203+00:00",
+    "openstates_url": "https://openstates.org/person/terri-cortvriend-QvhgaqsZCXTStIAMiNKWb/"
+  },
+  {
+    "id": "ocd-person/2c3d82e7-8bdc-4da9-bbab-e42bb5e223fb",
+    "name": "Tina Spears",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:ri/sldl:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Tina",
+    "family_name": "Spears",
+    "image": "https://www.rilegislature.gov/representatives/Pictures/Tina%20Spears.jpg",
+    "email": "rep-spears@rilegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Charlestown, New Shoreham, South Kingstown, Westerly"
+    },
+    "created_at": "2023-01-11T22:44:12.046865+00:00",
+    "updated_at": "2026-04-25T02:09:30.823242+00:00",
+    "openstates_url": "https://openstates.org/person/tina-spears-1LTlvzVtQZWmZIdiLSMIup/"
+  },
+  {
+    "id": "ocd-person/1f8f3c9b-ba19-45de-af45-b0501d0607f0",
+    "name": "Tom Noret",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Representative",
+      "org_classification": "lower",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:ri/sldl:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:ri/government",
+      "name": "Rhode Island",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Noret",
+    "image": "http://www.rilegislature.gov/representatives/pictures/noret.jpg",
+    "email": "rep-noret@rilegislature.gov",
+    "gender": "Male",
+    "birth_date": "1969-01-21",
+    "death_date": "",
+    "extras": {
+      "City/Town Represented": "Coventry, West Warwick"
+    },
+    "created_at": "2019-01-05T04:47:31.595649+00:00",
+    "updated_at": "2026-04-25T02:09:15.401667+00:00",
+    "openstates_url": "https://openstates.org/person/tom-noret-xYDjVBjuZwESqBh03pI3M/"
+  }
+]

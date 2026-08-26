@@ -1,0 +1,1017 @@
+[
+  {
+    "id": "ocd-person/84d43460-8578-4b85-b2ee-7f6849e270d8",
+    "name": "Andrew Jones",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:al/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Andrew",
+    "family_name": "Jones",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Jones_10.png",
+    "email": "andrew.jones@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Cherokee County, DeKalb County, Etowah County"
+    },
+    "created_at": "2019-01-02T10:09:54.318236+00:00",
+    "updated_at": "2026-01-29T00:03:17.580341+00:00",
+    "openstates_url": "https://openstates.org/person/andrew-jones-42dxpCu7ZGZ8nizXhcy3rM/"
+  },
+  {
+    "id": "ocd-person/15ebe01e-1447-4bdb-8dfb-e9d5948b872d",
+    "name": "April Weaver",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:al/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "April",
+    "family_name": "Weaver",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Weaver_14.png",
+    "email": "april.weaver@alsenate.gov",
+    "gender": "Female",
+    "birth_date": "1971-04-13",
+    "death_date": "",
+    "extras": {
+      "counties": "Bibb County, Chilton County, Shelby County"
+    },
+    "created_at": "2021-07-19T15:57:59.229265+00:00",
+    "updated_at": "2025-02-21T15:42:33.873924+00:00",
+    "openstates_url": "https://openstates.org/person/april-weaver-fMdK4Bm5Dr84tOXsTCOr7/"
+  },
+  {
+    "id": "ocd-person/b38546ec-f8fb-4e99-8e0c-46715b2e8578",
+    "name": "Arthur Orr",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:al/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Arthur",
+    "family_name": "Orr",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Orr_3.png",
+    "email": "arthur.orr@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1964-05-25",
+    "death_date": "",
+    "extras": {
+      "counties": "Limestone County, Madison County, Morgan County"
+    },
+    "created_at": "2018-10-18T14:33:26.200287+00:00",
+    "updated_at": "2025-02-21T15:42:35.542553+00:00",
+    "openstates_url": "https://openstates.org/person/arthur-orr-5SkX7u30VXM818Yq9cIYgK/"
+  },
+  {
+    "id": "ocd-person/38c5b433-f53c-4073-a2da-a969e4c31696",
+    "name": "Billy Beasley",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:al/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Billy",
+    "family_name": "Beasley",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Beasley_28.png",
+    "email": "billy.beasley@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1940-03-19",
+    "death_date": "",
+    "extras": {
+      "counties": "Barbour County, Bullock County, Henry County, Houston County, Macon County, Russell County"
+    },
+    "created_at": "2018-10-18T14:33:37.224033+00:00",
+    "updated_at": "2025-02-03T23:48:20.687374+00:00",
+    "openstates_url": "https://openstates.org/person/billy-beasley-1j7v7IfuFCLllMGFEr0Hvq/"
+  },
+  {
+    "id": "ocd-person/6e6d5e12-363b-42dc-b0d1-191c82aa6493",
+    "name": "Bobby Singleton",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:al/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Bobby",
+    "family_name": "Singleton",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Singleton_24.png",
+    "email": "bsingle362@gmail.com",
+    "gender": "Male",
+    "birth_date": "1962-03-25",
+    "death_date": "",
+    "extras": {
+      "counties": "Choctaw County, Greene County, Hale County, Marengo County, Sumter County, Tuscaloosa County"
+    },
+    "created_at": "2018-10-18T14:33:35.552565+00:00",
+    "updated_at": "2025-02-21T15:42:21.484334+00:00",
+    "openstates_url": "https://openstates.org/person/bobby-singleton-3MN8UmRm8fh486arTrCr0l/"
+  },
+  {
+    "id": "ocd-person/67479855-f23e-4119-b886-91dddc09a47a",
+    "name": "Chris Elliott",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:al/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Elliott",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Elliott_32.png",
+    "email": "chris.elliott@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1980-06-18",
+    "death_date": "",
+    "extras": {
+      "counties": "Baldwin County"
+    },
+    "created_at": "2019-01-02T10:09:31.496542+00:00",
+    "updated_at": "2025-02-21T15:42:14.579070+00:00",
+    "openstates_url": "https://openstates.org/person/chris-elliott-38svZyaLHy79JOMx4fruA6/"
+  },
+  {
+    "id": "ocd-person/d1307771-6d50-4d56-9995-b5d799917d7b",
+    "name": "Clyde Chambliss",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:al/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Clyde",
+    "family_name": "Chambliss",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Chambliss_30.png",
+    "email": "clyde.chambliss@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1969-04-16",
+    "death_date": "",
+    "extras": {
+      "counties": "Autauga County, Chilton County, Coosa County, Elmore County, Tallapoosa County"
+    },
+    "created_at": "2018-10-18T14:33:38.510660+00:00",
+    "updated_at": "2025-02-21T15:42:31.282939+00:00",
+    "openstates_url": "https://openstates.org/person/clyde-chambliss-6MjXpO70u5YN1slO3haRYZ/"
+  },
+  {
+    "id": "ocd-person/c58c02cd-0f5c-4454-b5d9-6eb0e604ea25",
+    "name": "Dan Roberts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:al/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Dan",
+    "family_name": "Roberts",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Roberts_15.png",
+    "email": "dan.roberts@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Jefferson County, Shelby County"
+    },
+    "created_at": "2019-01-02T10:09:41.104010+00:00",
+    "updated_at": "2025-02-21T15:42:18.866131+00:00",
+    "openstates_url": "https://openstates.org/person/dan-roberts-60lTMV3dSRpMSvDG83Qx5Z/"
+  },
+  {
+    "id": "ocd-person/fa2c59ea-1a07-429d-85e4-9c60652919aa",
+    "name": "David Sessions",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:al/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Sessions",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Sessions_35.png",
+    "email": "d.r.sessions@att.net",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Mobile County"
+    },
+    "created_at": "2018-10-18T14:33:39.654416+00:00",
+    "updated_at": "2025-02-21T15:42:21.211311+00:00",
+    "openstates_url": "https://openstates.org/person/david-sessions-7c4LibnMobsZifeLTUcv1u/"
+  },
+  {
+    "id": "ocd-person/c1ce8b3f-ea56-4c8f-ab74-2a02b8d10063",
+    "name": "Donnie Chesteen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:al/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Donnie",
+    "family_name": "Chesteen",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Chesteen_29.png",
+    "email": "donnie.chesteen@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1953-08-27",
+    "death_date": "",
+    "extras": {
+      "counties": "Dale County, Geneva County, Houston County"
+    },
+    "created_at": "2018-10-18T14:33:29.178986+00:00",
+    "updated_at": "2025-02-21T15:42:29.344709+00:00",
+    "openstates_url": "https://openstates.org/person/donnie-chesteen-5thuPrfpRtaIowl5gNb0yJ/"
+  },
+  {
+    "id": "ocd-person/cf025dad-05a0-4a54-ba0b-bbeecb87c10e",
+    "name": "Garlan Gudger",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:al/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Garlan",
+    "family_name": "Gudger",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Gudger_4.png",
+    "email": "garlan.gudger@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Cullman County, Marion County, Winston County"
+    },
+    "created_at": "2019-01-02T10:09:40.465550+00:00",
+    "updated_at": "2026-04-04T00:03:06.238226+00:00",
+    "openstates_url": "https://openstates.org/person/garlan-gudger-6IcUYlWQCAJRKgl1xh6fdO/"
+  },
+  {
+    "id": "ocd-person/adbf5614-9045-4cb7-86eb-2d88f25a357a",
+    "name": "Gerald Allen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:al/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Gerald",
+    "family_name": "Allen",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Allen_21.png",
+    "email": "gerald.allen@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1950-02-08",
+    "death_date": "",
+    "extras": {
+      "counties": "Pickens County, Tuscaloosa County"
+    },
+    "created_at": "2018-10-18T14:33:31.484411+00:00",
+    "updated_at": "2025-09-11T18:03:09.202624+00:00",
+    "openstates_url": "https://openstates.org/person/gerald-allen-5Hr72DRPPaGGgEMEtN0Mfa/"
+  },
+  {
+    "id": "ocd-person/7b9adc85-fd70-470a-b1bf-44ed412f3ba0",
+    "name": "Greg Albritton",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:al/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Albritton",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Albritton_22.png",
+    "email": "greg.albritton@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1952-03-18",
+    "death_date": "",
+    "extras": {
+      "counties": "Baldwin County, Escambia County, Mobile County, Washington County"
+    },
+    "created_at": "2018-10-18T14:33:17.695593+00:00",
+    "updated_at": "2026-04-25T00:02:57.515657+00:00",
+    "openstates_url": "https://openstates.org/person/greg-albritton-3lEpLA3IQkMTSgmU9gDFaK/"
+  },
+  {
+    "id": "ocd-person/bdfa9580-2ce0-4828-8f9e-52e6f066fbce",
+    "name": "Jabo Waggoner",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:al/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Jabo",
+    "family_name": "Waggoner",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Waggoner_16.png",
+    "email": "jabo.waggoner@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1937-01-08",
+    "death_date": "",
+    "extras": {
+      "counties": "Jefferson County, Shelby County"
+    },
+    "created_at": "2018-10-18T14:33:27.046954+00:00",
+    "updated_at": "2025-02-21T15:42:15.510767+00:00",
+    "openstates_url": "https://openstates.org/person/jabo-waggoner-5mU49YbOMLSsVCZiqdQ8Cc/"
+  },
+  {
+    "id": "ocd-person/a7e333c5-03f2-4343-9981-956bcc1ea38e",
+    "name": "Jack Williams",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:al/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Jack",
+    "family_name": "Williams",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Williams_34.png",
+    "email": "jackwilliams55@icloud.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Mobile County"
+    },
+    "created_at": "2018-10-18T14:33:27.245958+00:00",
+    "updated_at": "2025-09-11T18:03:07.942999+00:00",
+    "openstates_url": "https://openstates.org/person/jack-williams-56nY7PBQMyf5ZqjFNVT9na/"
+  },
+  {
+    "id": "ocd-person/d581a562-c33c-44c0-a707-c21dddf140aa",
+    "name": "Jay Hovey",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:al/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Jay",
+    "family_name": "Hovey",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Hovey_27.png",
+    "email": "jay.hovey@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Lee County, Russell County, Tallapoosa County"
+    },
+    "created_at": "2023-02-24T23:30:47.494019+00:00",
+    "updated_at": "2025-02-21T15:42:35.320154+00:00",
+    "openstates_url": "https://openstates.org/person/jay-hovey-6Usc4Q4w7tPQgc9aDrLUmA/"
+  },
+  {
+    "id": "ocd-person/51b33504-a943-4091-a3bd-f0b8feb124be",
+    "name": "Josh Carnley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:al/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Carnley",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Carnley_31.png",
+    "email": "josh.carnley@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Coffee County, Covington County, Dale County, Pike County"
+    },
+    "created_at": "2023-02-24T23:29:15.644190+00:00",
+    "updated_at": "2025-02-21T15:42:24.674542+00:00",
+    "openstates_url": "https://openstates.org/person/josh-carnley-2UAH8KT9fPWmJbS6tQ9bLS/"
+  },
+  {
+    "id": "ocd-person/e259674a-2a78-4423-b8d0-3d759ee90912",
+    "name": "Keith Kelley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:al/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Kelley",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Kelley_12.png",
+    "email": "keith.kelley@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Calhoun County, Talladega County"
+    },
+    "created_at": "2023-02-24T23:32:19.820005+00:00",
+    "updated_at": "2026-01-29T00:03:23.041133+00:00",
+    "openstates_url": "https://openstates.org/person/keith-kelley-6t77eM1Ldoqu2Uee1aaMug/"
+  },
+  {
+    "id": "ocd-person/e0a28b79-3df1-491b-af90-4c0414ba72c8",
+    "name": "Kirk Hatcher",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:al/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Kirk",
+    "family_name": "Hatcher",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Hatcher_26.png",
+    "email": "kirk.hatcher@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Montgomery County"
+    },
+    "created_at": "2019-01-02T10:09:09.698360+00:00",
+    "updated_at": "2025-02-21T15:42:27.013619+00:00",
+    "openstates_url": "https://openstates.org/person/kirk-hatcher-6psYzgcI9mpod2QaX2vpma/"
+  },
+  {
+    "id": "ocd-person/889eac7b-10b6-4f00-9bd6-e93a93d93211",
+    "name": "Lance Bell",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:al/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Lance",
+    "family_name": "Bell",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Bell_11.png",
+    "email": "lance.bell@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Shelby County, St. Clair County, Talladega County"
+    },
+    "created_at": "2023-02-24T23:29:42.990794+00:00",
+    "updated_at": "2025-03-13T06:03:16.142436+00:00",
+    "openstates_url": "https://openstates.org/person/lance-bell-49nTAttBtIWYctPr1JqjD7/"
+  },
+  {
+    "id": "ocd-person/abc69c3a-3f86-4880-a1ea-a2a52677b877",
+    "name": "Larry Stutts",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:al/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Stutts",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Stutts_6.png",
+    "email": "larry.stutts@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Colbert County, Franklin County, Lawrence County, Limestone County"
+    },
+    "created_at": "2018-10-18T14:33:40.763445+00:00",
+    "updated_at": "2025-02-21T15:42:16.035544+00:00",
+    "openstates_url": "https://openstates.org/person/larry-stutts-5E8S5YdOskoqF1f79LsCV5/"
+  },
+  {
+    "id": "ocd-person/8ffbb88c-c323-436f-aab0-91a41bf6c8dd",
+    "name": "Linda Coleman-Madison",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:al/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Linda",
+    "family_name": "Coleman-Madison",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Coleman-Madison_20.png",
+    "email": "lcolemanmadison926@yahoo.com",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Jefferson County"
+    },
+    "created_at": "2018-10-18T14:33:25.545971+00:00",
+    "updated_at": "2025-03-13T06:03:28.531600+00:00",
+    "openstates_url": "https://openstates.org/person/linda-coleman-madison-4NgwFYWocMUSblfYAD1oy5/"
+  },
+  {
+    "id": "ocd-person/e6c4edb0-48af-4db8-aa0a-57570f0aef1e",
+    "name": "Matt Woods",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:al/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Matt",
+    "family_name": "Woods",
+    "image": "https://www.legislature.state.al.us/pdf/house/members/Woods_13.png",
+    "email": "matt.woods@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Walker County"
+    },
+    "created_at": "2023-02-24T23:32:00.395743+00:00",
+    "updated_at": "2026-01-29T00:02:36.617300+00:00",
+    "openstates_url": "https://openstates.org/person/matt-woods-71SEMvE4dPpV9v4JBJQwd4/"
+  },
+  {
+    "id": "ocd-person/764f926b-598f-458e-84c4-5cc13c2302e5",
+    "name": "Merika Coleman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:al/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Merika",
+    "family_name": "Coleman",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Coleman_19.png",
+    "email": "merika.coleman@alsenate.gov",
+    "gender": "Female",
+    "birth_date": "1973-09-06",
+    "death_date": "",
+    "extras": {
+      "counties": "Jefferson County"
+    },
+    "created_at": "2018-10-18T14:33:13.897621+00:00",
+    "updated_at": "2025-02-21T15:42:25.086398+00:00",
+    "openstates_url": "https://openstates.org/person/merika-coleman-3bFSSecxrQZg2RJ8LdwgJZ/"
+  },
+  {
+    "id": "ocd-person/040b7935-b32a-4d6d-9fa4-ec86e5ffd303",
+    "name": "Randy Price",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:al/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Price",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Price_13.png",
+    "email": "randyprice.sd13@gmail.com",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Chambers County, Clay County, Cleburne County, Lee County, Randolph County"
+    },
+    "created_at": "2019-01-02T10:08:44.789627+00:00",
+    "updated_at": "2025-02-21T15:42:25.738821+00:00",
+    "openstates_url": "https://openstates.org/person/randy-price-7dDBcb1H6299PyZjvDNDv/"
+  },
+  {
+    "id": "ocd-person/cd2d1a70-0bb3-49b3-871c-9e227392653d",
+    "name": "Rob Stewart",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:al/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Stewart",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Stewart_23.png",
+    "email": "robert.stewart@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1990-02-04",
+    "death_date": "",
+    "extras": {
+      "counties": "Butler County, Clarke County, Conecuh County, Dallas County, Lowndes County, Monroe County, Perry County, Wilcox County"
+    },
+    "created_at": "2023-02-24T23:29:58.198837+00:00",
+    "updated_at": "2025-02-21T15:42:23.873421+00:00",
+    "openstates_url": "https://openstates.org/person/rob-stewart-6FA2R0mGdFjroLfumwwfsr/"
+  },
+  {
+    "id": "ocd-person/3b925820-55f7-4d24-b4df-d924fd3d1bf7",
+    "name": "Rodger Smitherman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:al/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Rodger",
+    "family_name": "Smitherman",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Smitherman_18.png",
+    "email": "rodger.smitherman@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1953-03-02",
+    "death_date": "",
+    "extras": {
+      "counties": "Jefferson County"
+    },
+    "created_at": "2018-10-18T14:33:34.953351+00:00",
+    "updated_at": "2025-02-21T15:42:19.389083+00:00",
+    "openstates_url": "https://openstates.org/person/rodger-smitherman-1oPQSc0B591ZG81zUhhZKx/"
+  },
+  {
+    "id": "ocd-person/21753744-c2a0-45d4-90f8-3d4082c794d4",
+    "name": "Sam Givhan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:al/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Sam",
+    "family_name": "Givhan",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Givhan_7.png",
+    "email": "sam.givhan@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1967-02-23",
+    "death_date": "",
+    "extras": {
+      "counties": "Madison County"
+    },
+    "created_at": "2019-01-02T10:09:39.812004+00:00",
+    "updated_at": "2025-02-21T15:42:30.710591+00:00",
+    "openstates_url": "https://openstates.org/person/sam-givhan-118JVKmtp4jLMvLpVpZ49U/"
+  },
+  {
+    "id": "ocd-person/9487b441-352c-43be-a2bb-8abc45e20671",
+    "name": "Shay Shelnutt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:al/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Shay",
+    "family_name": "Shelnutt",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Shelnutt_17.png",
+    "email": "shay.sd17@gmail.com",
+    "gender": "Male",
+    "birth_date": "1967-09-21",
+    "death_date": "",
+    "extras": {
+      "counties": "Blount County, Jefferson County, St. Clair County"
+    },
+    "created_at": "2018-10-18T14:33:23.164130+00:00",
+    "updated_at": "2025-02-21T15:42:29.688844+00:00",
+    "openstates_url": "https://openstates.org/person/shay-shelnutt-4WGsduQdenxqej1Br3eYHx/"
+  },
+  {
+    "id": "ocd-person/dd765598-9bed-4301-9f49-7e06fffd7fce",
+    "name": "Steve Livingston",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:al/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Steve",
+    "family_name": "Livingston",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Livingston_8.png",
+    "email": "steve.livingston@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "DeKalb County, Jackson County, Madison County"
+    },
+    "created_at": "2018-10-18T14:33:13.657409+00:00",
+    "updated_at": "2025-02-21T15:42:17.930078+00:00",
+    "openstates_url": "https://openstates.org/person/steve-livingston-6jtNl5V0IozNvuQqUoJad4/"
+  },
+  {
+    "id": "ocd-person/2f934a90-dc27-4289-b571-36e80ea4384b",
+    "name": "Tim Melson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:al/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Melson",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Melson_1.png",
+    "email": "tim.melson@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1960-01-01",
+    "death_date": "",
+    "extras": {
+      "counties": "Lauderdale County, Limestone County"
+    },
+    "created_at": "2018-10-18T14:33:39.824709+00:00",
+    "updated_at": "2025-02-21T15:42:34.400733+00:00",
+    "openstates_url": "https://openstates.org/person/tim-melson-1Rlx0DBKtM6WEO5S3kzVBD/"
+  },
+  {
+    "id": "ocd-person/32e10f9c-d38c-472f-8fb0-03450c4b538a",
+    "name": "Tom Butler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:al/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Tom",
+    "family_name": "Butler",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Butler_2.png",
+    "email": "tom.butler@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1944-04-09",
+    "death_date": "",
+    "extras": {
+      "counties": "Limestone County, Madison County"
+    },
+    "created_at": "2019-01-02T10:09:46.894806+00:00",
+    "updated_at": "2026-01-29T00:03:10.197951+00:00",
+    "openstates_url": "https://openstates.org/person/tom-butler-1Y0T6mq5Tk0p34wTpO2XBC/"
+  },
+  {
+    "id": "ocd-person/63d0a35f-ec68-48e2-be94-d5e3cb60b3c3",
+    "name": "Vivian Figures",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:al/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Vivian",
+    "family_name": "Figures",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Figures_33.png",
+    "email": "vivian.figures@alsenate.gov",
+    "gender": "Female",
+    "birth_date": "1957-01-24",
+    "death_date": "",
+    "extras": {
+      "counties": "Baldwin County, Mobile County"
+    },
+    "created_at": "2018-10-18T14:33:12.446332+00:00",
+    "updated_at": "2025-02-03T23:47:07.856654+00:00",
+    "openstates_url": "https://openstates.org/person/vivian-figures-32LaTNOMo5HJOINFzbGY3H/"
+  },
+  {
+    "id": "ocd-person/3f143edf-eac6-4bee-89b3-c5ac0b0b856e",
+    "name": "Wes Kitchens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:al/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Wes",
+    "family_name": "Kitchens",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Kitchens_9.png",
+    "email": "wes.kitchens@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "1989-03-04",
+    "death_date": "",
+    "extras": {
+      "counties": "Marshall County"
+    },
+    "created_at": "2019-01-02T10:09:15.663583+00:00",
+    "updated_at": "2026-04-25T00:03:16.727833+00:00",
+    "openstates_url": "https://openstates.org/person/wes-kitchens-1v1lfWZD9Xe8NSOMEVyIt4/"
+  },
+  {
+    "id": "ocd-person/8cca1495-936e-4ac5-920a-cc4aa22e495e",
+    "name": "Will Barfoot",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:al/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:al/government",
+      "name": "Alabama",
+      "classification": "state"
+    },
+    "given_name": "Will",
+    "family_name": "Barfoot",
+    "image": "https://www.legislature.state.al.us/pdf/senate/members/Barfoot_25.png",
+    "email": "will.barfoot@alsenate.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "counties": "Crenshaw County, Elmore County, Montgomery County"
+    },
+    "created_at": "2019-01-02T10:09:25.831522+00:00",
+    "updated_at": "2025-02-21T15:42:26.321902+00:00",
+    "openstates_url": "https://openstates.org/person/will-barfoot-4HfH9wzqSweK6S9XxqOpZu/"
+  }
+]

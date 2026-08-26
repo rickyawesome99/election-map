@@ -1,19 +1,23 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import { fitStateProjection, type ProjectionConfig } from "@/lib/mapProjection";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { useDarkMode } from "@/lib/useDarkMode";
 import { filterMapZoomEvent } from "@/lib/mapZoom";
 import { normalizeGeographyWinding } from "@/lib/geoWinding";
 import { ABBR_TO_FIPS } from "@/lib/fips";
-import type { Chamber } from "@/data/stateLegDistricts";
+import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
 import type { ChamberMapInfo } from "@/data/stateLegMapInfo";
 
 const COUNTIES_URL = "/us-counties.json";
-const DISTRICTS_URL: Record<Chamber, string> = {
-  house: "/state-house-districts-2026.json",
-  senate: "/state-senate-districts-2026.json",
+const PARTY_LABEL: Record<string, string> = { D: "Democratic", R: "Republican", I: "Independent", O: "Other" };
+// Per-state, per-chamber TopoJSON — split from the combined national source files by
+// scripts/split-state-leg-districts.mjs so a state page only fetches its own districts instead
+// of every state's (previously 10.9 MB house / 6.5 MB senate on every load).
+const DISTRICTS_DIR: Record<Chamber, string> = {
+  house: "/state-leg-districts/house",
+  senate: "/state-leg-districts/senate",
 };
 
 type CountyGeometry = {
@@ -26,6 +30,8 @@ type DistrictGeometry = {
   properties?: {
     GEOID?: string;
     STATEFP?: string;
+    DISTRICT?: string;
+    NAMELSAD?: string;
   };
   geometry?: {
     type: "Polygon" | "MultiPolygon" | string;
@@ -33,9 +39,46 @@ type DistrictGeometry = {
   };
 };
 
+// Mirrors BOUNDARY_CODE_OVERRIDES/extractDistrictCode in scripts/build-state-leg-incumbents.mjs —
+// that script computes each StateLegDistrict's `number` from the boundary file's DISTRICT/NAMELSAD
+// properties (not a plain DISTRICT lookup), because DISTRICT alone is truncated to a plain integer
+// and can collapse two real districts (e.g. ND House "4A"/"4B" both report DISTRICT "4") or, for a
+// few states, doesn't correspond to Open States' numbering scheme at all (MA's named districts, AK
+// Senate's lettered districts). The map must key off the same computed code as `number`, or split
+// districts fall through to the default fill with no hover tooltip. Keep in sync with the build
+// script if a future state needs a new override there.
+const BOUNDARY_CODE_OVERRIDES: Record<string, (properties: { NAMELSAD?: string }) => string | undefined> = {
+  MA_house: (properties) => properties.NAMELSAD?.replace(/\s+District$/, ""),
+  MA_senate: (properties) => properties.NAMELSAD?.replace(/\s+District$/, ""),
+  AK_senate: (properties) => properties.NAMELSAD?.trim().split(/\s+/).pop(),
+  // VT districts are named, not numbered — DISTRICT is "NaN". Confirmed via research, 2026-08-26.
+  VT_house: (properties) => properties.NAMELSAD?.replace(/\s+State House District$/, ""),
+  VT_senate: (properties) => properties.NAMELSAD?.replace(/\s+Senatorial District$/, ""),
+};
+
+function extractDistrictCode(stateAbbr: string, chamber: Chamber, properties: { DISTRICT?: string; NAMELSAD?: string }): string | undefined {
+  const override = BOUNDARY_CODE_OVERRIDES[`${stateAbbr}_${chamber}`];
+  if (override) return override(properties);
+  const { DISTRICT, NAMELSAD } = properties;
+  const lastToken = NAMELSAD?.trim().split(/\s+/).pop();
+  if (lastToken && DISTRICT && new RegExp(`^0*${DISTRICT}[A-Za-z]+$`).test(lastToken)) {
+    return lastToken;
+  }
+  return DISTRICT;
+}
+
 const CHAMBER_LABEL: Record<Chamber, string> = {
   house: "State House",
   senate: "State Senate",
+};
+
+// I/O and the mixed-party "SPLIT" case have no site-wide CSS var, so they keep hardcoded
+// light/dark hex pairs. D/R fills use var(--party-dem)/var(--party-rep) directly (see
+// fillForDistrict) so they always match the "Safe D"/"Safe R" colors used elsewhere on the site.
+const OTHER_FILL: Record<string, { light: string; dark: string }> = {
+  I: { light: "#c9b98a", dark: "#8a7a4a" },
+  O: { light: "#c3aee0", dark: "#6a4f8a" },
+  SPLIT: { light: "#d4b96a", dark: "#8a7a4a" },
 };
 
 export default function StateLegDistrictMap({
@@ -44,15 +87,24 @@ export default function StateLegDistrictMap({
   chamber,
   isUnicameral = false,
   mapInfo = null,
+  districts = [],
+  selected = null,
+  onSelect,
 }: {
   stateAbbr: string;
   stateName: string;
   chamber: Chamber;
   isUnicameral?: boolean;
   mapInfo?: ChamberMapInfo | null;
+  districts?: StateLegDistrict[];
+  selected?: StateLegDistrict | null;
+  onSelect?: (d: StateLegDistrict | null) => void;
 }) {
   const [mapKey, setMapKey] = useState(0);
   const [viewChanged, setViewChanged] = useState(false);
+  const [hovered, setHovered] = useState<StateLegDistrict | null>(null);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [mapSize, setMapSize] = useState({ w: 0, h: 0 });
   // Whether the currently selected state/chamber has sourced district boundaries. Recomputed
   // from the (cached, nationally-fetched) geography list on every render via the Geographies
   // render-prop below, so it always reflects the current stateAbbr/chamber without needing a
@@ -83,11 +135,115 @@ export default function StateLegDistrictMap({
     return () => ro.disconnect();
   }, [measure]);
 
+  const selectedId = selected?.id ?? null;
   const stateFips = ABBR_TO_FIPS[stateAbbr];
   const districtFill = darkMode ? "#3a4a72" : "#c3d0ea";
   const districtStroke = darkMode ? "#0d1117" : "#f6f8fa";
+  const hoverStroke = darkMode ? "#ffffff" : "#333333";
   const outlineFill = darkMode ? "#2a3550" : "#dbe3f0";
   const chamberLabel = isUnicameral ? "Legislature" : CHAMBER_LABEL[chamber];
+
+  // A shared district boundary can have more than one incumbent (multi-member districts, e.g.
+  // AZ/WA House). If they're all the same party, color by that party; if they split, use a
+  // distinct "split control" color rather than arbitrarily picking one seat's party.
+  // Memoized on `districts` alone (not darkMode/hover state) so mouse movement over the map —
+  // which updates hovered/mousePos every frame — never recomputes these lookups.
+  const partyByNumber = useMemo(() => {
+    const map: Record<string, string> = {};
+    for (const d of districts) {
+      const parties = new Set((d.incumbents ?? []).map((inc) => inc.party));
+      if (parties.size === 1) map[d.number] = [...parties][0];
+      else if (parties.size > 1) map[d.number] = "SPLIT";
+    }
+    return map;
+  }, [districts]);
+  const districtByNumber = useMemo(() => {
+    const map: Record<string, StateLegDistrict> = {};
+    for (const d of districts) map[d.number] = d;
+    return map;
+  }, [districts]);
+  const fillForDistrict = useCallback((districtNumber?: string) => {
+    if (!districtNumber) return districtFill;
+    const party = partyByNumber[districtNumber];
+    if (!party) return districtFill;
+    if (party === "D") return "var(--party-dem)";
+    if (party === "R") return "var(--party-rep)";
+    const colors = OTHER_FILL[party];
+    if (!colors) return districtFill;
+    return darkMode ? colors.dark : colors.light;
+  }, [partyByNumber, darkMode, districtFill]);
+  const handleHoverEnter = useCallback((d: StateLegDistrict) => setHovered(d), []);
+  const handleHoverLeave = useCallback(() => setHovered(null), []);
+  const handleClick = useCallback(
+    (d: StateLegDistrict) => onSelect?.(selected?.id === d.id ? null : d),
+    [onSelect, selected]
+  );
+
+  // The district SVG paths are expensive to reconcile (up to ~150 per state, filtered down from
+  // a national geography file with thousands of features). Memoizing this element means React
+  // bails out of re-rendering it on hover/mousemove-driven re-renders — only real data changes
+  // (chamber switch, dark mode, sourced districts) recompute it.
+  const districtsLayer = useMemo(() => (
+    <Geographies
+      geography={`${DISTRICTS_DIR[chamber]}/${stateAbbr}.json`}
+      parseGeographies={(geographies: DistrictGeometry[]) => geographies.map(normalizeGeographyWinding)}
+    >
+      {({ geographies }: { geographies: DistrictGeometry[] }) => {
+        // Each file already holds just this state's districts (split by scripts/split-state-leg-
+        // districts.mjs), so no STATEFP filtering is needed here. A missing state/chamber file
+        // 404s, react-simple-maps swallows the fetch error, and geographies comes back empty —
+        // that's what drives the "coming soon" fallback below.
+        if (hasDistricts !== (geographies.length > 0)) {
+          // Defer the state update out of render.
+          queueMicrotask(() => setHasDistricts(geographies.length > 0));
+        }
+        return geographies.map((geo) => {
+          const districtNumber = geo.properties ? extractDistrictCode(stateAbbr, chamber, geo.properties) : undefined;
+          const fill = fillForDistrict(districtNumber);
+          const d = districtNumber ? districtByNumber[districtNumber] : undefined;
+          const isSelected = !!d && selectedId === d.id;
+          return (
+            <Geography
+              key={geo.rsmKey}
+              geography={geo}
+              onMouseEnter={() => d && handleHoverEnter(d)}
+              onMouseLeave={handleHoverLeave}
+              onClick={() => d && handleClick(d)}
+              style={{
+                default: { fill, stroke: isSelected ? hoverStroke : districtStroke, strokeWidth: isSelected ? 1.75 : 0.75, outline: "none", cursor: d ? "pointer" : "default" },
+                hover: { fill, stroke: d ? hoverStroke : districtStroke, strokeWidth: d ? 1.5 : 1, outline: "none", cursor: d ? "pointer" : "default" },
+                pressed: { fill, stroke: d ? hoverStroke : districtStroke, strokeWidth: d ? 1.5 : 1, outline: "none" },
+              }}
+            />
+          );
+        });
+      }}
+    </Geographies>
+  ), [chamber, stateAbbr, fillForDistrict, districtByNumber, districtStroke, hoverStroke, handleHoverEnter, handleHoverLeave, handleClick, selectedId, hasDistricts]);
+
+  // Fallback plain-outline layer is likewise memoized so it isn't rebuilt on every hover tick
+  // while it's showing (rare: only for states/chambers without sourced boundaries yet).
+  const fallbackLayer = useMemo(() => (
+    hasDistricts === false && stateFips ? (
+      <Geographies geography={COUNTIES_URL}>
+        {({ geographies }: { geographies: CountyGeometry[] }) =>
+          geographies
+            .filter((geo) => String(geo.id ?? "").padStart(5, "0").startsWith(stateFips))
+            .map((geo) => (
+              <Geography
+                key={geo.rsmKey}
+                geography={geo}
+                style={{
+                  default: { fill: outlineFill, stroke: outlineFill, strokeWidth: 0.75, outline: "none" },
+                  hover: { fill: outlineFill, stroke: outlineFill, strokeWidth: 0.75, outline: "none" },
+                  pressed: { fill: outlineFill, stroke: outlineFill, strokeWidth: 0.75, outline: "none" },
+                }}
+              />
+            ))
+        }
+      </Geographies>
+    ) : null
+  ), [hasDistricts, stateFips, outlineFill]);
 
   return (
     <div>
@@ -95,7 +251,71 @@ export default function StateLegDistrictMap({
         ref={containerRef}
         className="relative"
         style={{ height: 360, background: "var(--app-bg)" }}
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+          setMapSize({ w: rect.width, h: rect.height });
+        }}
       >
+        {/* Hover tooltip */}
+        {hovered && (() => {
+          const incumbents = hovered.incumbents ?? [];
+          const tipW = 190;
+          const tipH = 46 + Math.max(incumbents.length, 1) * 16;
+          const offset = 16;
+          const edgePad = 8;
+          let left = mousePos.x + offset;
+          let top = mousePos.y + offset;
+          const containerW = mapSize.w || 800;
+          const containerH = mapSize.h || 600;
+          if (left + tipW + edgePad > containerW) left = mousePos.x - tipW - offset;
+          if (top + tipH + edgePad > containerH) top = mousePos.y - tipH - offset;
+          if (left < edgePad) left = edgePad;
+          if (top < edgePad) top = edgePad;
+          return (
+            <div
+              className="hidden md:block absolute z-20 pointer-events-none rounded-lg backdrop-blur-sm"
+              style={{
+                left, top, width: tipW,
+                padding: "6px 8px",
+                background: "var(--app-panel)",
+                border: "1px solid var(--app-border)",
+                color: "var(--app-text-primary)",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+              }}
+            >
+              <div className="font-bold text-xs mb-1.5">{hovered.label}</div>
+              {incumbents.length > 0 ? (
+                <div className="flex flex-col gap-0.5">
+                  {incumbents.map((inc, i) => (
+                    <div key={i} className="flex items-baseline justify-between gap-2">
+                      <span className="truncate" style={{ fontSize: 11 }}>{inc.name}</span>
+                      <span className="flex items-baseline gap-1.5 shrink-0">
+                        {/* Per-incumbent lastElection override (currently WV Senate only, where
+                            the district's 2 seats stagger independently) shown inline instead of
+                            the shared footer below, which would otherwise misreport one seat. */}
+                        {inc.lastElection != null && (
+                          <span style={{ fontSize: 9, color: "var(--app-text-very-muted)" }}>{inc.lastElection}</span>
+                        )}
+                        <span className="font-semibold" style={{ fontSize: 11, color: `var(--party-${inc.party === "D" ? "dem" : inc.party === "R" ? "rep" : "ind"})` }} title={PARTY_LABEL[inc.party]}>
+                          {inc.party}
+                        </span>
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="italic" style={{ fontSize: 11, color: "var(--app-text-very-muted)" }}>Vacant</div>
+              )}
+              {hovered.lastElection != null && !incumbents.some((inc) => inc.lastElection != null) && (
+                <div className="mt-1 pt-1" style={{ fontSize: 10, color: "var(--app-text-very-muted)", borderTop: "1px solid var(--app-border)" }}>
+                  Last elected {hovered.lastElection}
+                </div>
+              )}
+            </div>
+          );
+        })()}
+
         <ComposableMap
           width={mapViewport.width}
           height={mapViewport.height}
@@ -105,50 +325,9 @@ export default function StateLegDistrictMap({
         >
           <ZoomableGroup key={mapKey} filterZoomEvent={filterMapZoomEvent} onMoveEnd={() => setViewChanged(true)}>
             {/* Sourced district boundaries, when available for this state/chamber */}
-            <Geographies
-              geography={DISTRICTS_URL[chamber]}
-              parseGeographies={(geographies: DistrictGeometry[]) => geographies.map(normalizeGeographyWinding)}
-            >
-              {({ geographies }: { geographies: DistrictGeometry[] }) => {
-                const matches = stateFips ? geographies.filter((geo) => geo.properties?.STATEFP === stateFips) : [];
-                if (hasDistricts !== (matches.length > 0)) {
-                  // Defer the state update out of render.
-                  queueMicrotask(() => setHasDistricts(matches.length > 0));
-                }
-                return matches.map((geo) => (
-                  <Geography
-                    key={geo.rsmKey}
-                    geography={geo}
-                    style={{
-                      default: { fill: districtFill, stroke: districtStroke, strokeWidth: 0.75, outline: "none" },
-                      hover: { fill: districtFill, stroke: districtStroke, strokeWidth: 1, outline: "none" },
-                      pressed: { fill: districtFill, stroke: districtStroke, strokeWidth: 1, outline: "none" },
-                    }}
-                  />
-                ));
-              }}
-            </Geographies>
-
+            {districtsLayer}
             {/* Fallback: plain state outline + "coming soon" overlay while boundaries aren't sourced yet */}
-            {hasDistricts === false && stateFips && (
-              <Geographies geography={COUNTIES_URL}>
-                {({ geographies }: { geographies: CountyGeometry[] }) =>
-                  geographies
-                    .filter((geo) => String(geo.id ?? "").padStart(5, "0").startsWith(stateFips))
-                    .map((geo) => (
-                      <Geography
-                        key={geo.rsmKey}
-                        geography={geo}
-                        style={{
-                          default: { fill: outlineFill, stroke: outlineFill, strokeWidth: 0.75, outline: "none" },
-                          hover: { fill: outlineFill, stroke: outlineFill, strokeWidth: 0.75, outline: "none" },
-                          pressed: { fill: outlineFill, stroke: outlineFill, strokeWidth: 0.75, outline: "none" },
-                        }}
-                      />
-                    ))
-                }
-              </Geographies>
-            )}
+            {fallbackLayer}
           </ZoomableGroup>
         </ComposableMap>
 

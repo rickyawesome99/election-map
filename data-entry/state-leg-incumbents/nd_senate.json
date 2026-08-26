@@ -1,0 +1,1366 @@
+[
+  {
+    "id": "ocd-person/983f512c-6f3f-4243-b6c8-b83d9d4f3696",
+    "name": "Bob Paulson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:nd/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Bob",
+    "family_name": "Paulson",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/bpaulson2023.jpg?itok=SDpdNURV",
+    "email": "bpaulson@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-833-4752",
+      "home": "701-624-2023"
+    },
+    "created_at": "2019-01-04T06:33:03.272032+00:00",
+    "updated_at": "2026-01-28T01:29:10.900987+00:00",
+    "openstates_url": "https://openstates.org/person/bob-paulson-4dHliglLw4nTFSRKN9kgHG/"
+  },
+  {
+    "id": "ocd-person/86d15ce1-f1e9-40f8-894c-490f3d960e15",
+    "name": "Brad Bekkedahl",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:nd/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Brad",
+    "family_name": "Bekkedahl",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/bbekkedahl2023_0.jpg?itok=VB17jlNw",
+    "email": "bbekkedahl@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1957-11-23",
+    "death_date": "",
+    "extras": {
+      "cell": "701-570-1879"
+    },
+    "created_at": "2018-10-18T14:53:14.966028+00:00",
+    "updated_at": "2026-01-28T01:30:15.340119+00:00",
+    "openstates_url": "https://openstates.org/person/brad-bekkedahl-46OeM2AFPN66Z1Kh5svWej/"
+  },
+  {
+    "id": "ocd-person/43e25c66-8935-4938-8634-b8666bfdb876",
+    "name": "Chuck Walen",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:nd/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Chuck",
+    "family_name": "Walen",
+    "image": "https://static.votesmart.org/static/canphoto/216618.jpg",
+    "email": "cwalen@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:18:11.218045+00:00",
+    "updated_at": "2026-01-28T01:30:02.849969+00:00",
+    "openstates_url": "https://openstates.org/person/chuck-walen-245vr0y11s710JnnfQZ8LO/"
+  },
+  {
+    "id": "ocd-person/00d22ac4-d0e4-4b26-a521-729b177b3a01",
+    "name": "Claire Cory",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "42",
+      "division_id": "ocd-division/country:us/state:nd/sldu:42"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Claire",
+    "family_name": "Cory",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/clairecory2023.jpg?itok=iubraEWk",
+    "email": "clairecory@ndlegis.gov",
+    "gender": "Female",
+    "birth_date": "1998-09-11",
+    "death_date": "",
+    "extras": {
+      "cell": "701-213-6553"
+    },
+    "created_at": "2020-12-30T06:12:00.572249+00:00",
+    "updated_at": "2025-07-18T01:33:05.382270+00:00",
+    "openstates_url": "https://openstates.org/person/claire-cory-1Y2tCFDKYYK8coWcU4JRh/"
+  },
+  {
+    "id": "ocd-person/3b75961c-1c9e-4150-84ee-965ffb59fafa",
+    "name": "Cole Conley",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:nd/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Cole",
+    "family_name": "Conley",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/cconley2023.jpg?itok=BTF7DH8T",
+    "email": "cconley@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1950-11-27",
+    "death_date": "",
+    "extras": {
+      "cell": "701-320-9460"
+    },
+    "created_at": "2020-12-30T06:12:02.055837+00:00",
+    "updated_at": "2026-01-28T01:29:14.198541+00:00",
+    "openstates_url": "https://openstates.org/person/cole-conley-1oCHdHJPi06MD4MvnjVm14/"
+  },
+  {
+    "id": "ocd-person/ffc100fb-2fbe-47d1-bfde-a2e4b0acae3c",
+    "name": "Dale Patten",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:nd/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Dale",
+    "family_name": "Patten",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dpatten2023.jpg?itok=wc6NP5DG",
+    "email": "dpatten@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-570-4908"
+    },
+    "created_at": "2019-01-04T06:33:14.275379+00:00",
+    "updated_at": "2026-01-28T01:29:52.843866+00:00",
+    "openstates_url": "https://openstates.org/person/dale-patten-7mbFH5BQhK6INow8RajyWK/"
+  },
+  {
+    "id": "ocd-person/e93f45b9-72c9-4e10-bc05-4896381f29f4",
+    "name": "David Clemens",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:nd/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Clemens",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dclemens2023.jpg?itok=suQ6Tlaw",
+    "email": "dclemens@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-526-6891"
+    },
+    "created_at": "2018-10-18T14:53:09.639650+00:00",
+    "updated_at": "2026-01-28T01:29:36.542079+00:00",
+    "openstates_url": "https://openstates.org/person/david-clemens-7687v1Smlia5WmlpWxt4dw/"
+  },
+  {
+    "id": "ocd-person/e911d1c9-258a-47c6-acd4-d0f8a3befc2f",
+    "name": "David Hogue",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "38",
+      "division_id": "ocd-division/country:us/state:nd/sldu:38"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Hogue",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dhogue2023.jpg?itok=aH-5nj6J",
+    "email": "dhogue@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1962-12-05",
+    "death_date": "",
+    "extras": {
+      "bio info": []
+    },
+    "created_at": "2018-10-18T14:53:09.934775+00:00",
+    "updated_at": "2026-01-28T01:29:35.370865+00:00",
+    "openstates_url": "https://openstates.org/person/david-hogue-75nM3LsfO0VVrnNCHnkmEB/"
+  },
+  {
+    "id": "ocd-person/cc65fd55-6d87-4ef9-95ff-b98592bebc8f",
+    "name": "Dean Rummel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "37",
+      "division_id": "ocd-division/country:us/state:nd/sldu:37"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Dean",
+    "family_name": "Rummel",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/drummel2023.jpg?itok=8NfcLHzU",
+    "email": "drummel@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-290-0593"
+    },
+    "created_at": "2023-02-13T19:43:23.288705+00:00",
+    "updated_at": "2026-01-28T01:29:44.355960+00:00",
+    "openstates_url": "https://openstates.org/person/dean-rummel-6Dh2jQUjaxpyqAGyfDnIH1/"
+  },
+  {
+    "id": "ocd-person/4d0233df-e907-42eb-9682-fa31578f52b7",
+    "name": "Desiree Van Oosting",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "36",
+      "division_id": "ocd-division/country:us/state:nd/sldu:36"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Desiree",
+    "family_name": "Van Oosting",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYgQlKUMR3p-uneRcuoLPMxOOnOdNKtaUbkA&s",
+    "email": "dvanoosting@ndlegis.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:18:09.091547+00:00",
+    "updated_at": "2026-01-28T01:28:57.781658+00:00",
+    "openstates_url": "https://openstates.org/person/desiree-van-oosting-2LJPmHExQ78aYIWL82ltjD/"
+  },
+  {
+    "id": "ocd-person/9844a188-809c-4711-8147-2c30206721ee",
+    "name": "Diane Larson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:nd/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Diane",
+    "family_name": "Larson",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dlarson2023.jpg?itok=Yi-S-Uyp",
+    "email": "dlarson@ndlegis.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-400-7218"
+    },
+    "created_at": "2018-10-18T14:53:02.941780+00:00",
+    "updated_at": "2026-01-28T01:29:21.620010+00:00",
+    "openstates_url": "https://openstates.org/person/diane-larson-4dKCHh5UvoRuEpgRixQAVa/"
+  },
+  {
+    "id": "ocd-person/afb1de56-a1cf-439a-8a9f-3fcaa73c691a",
+    "name": "Dick Dever",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "32",
+      "division_id": "ocd-division/country:us/state:nd/sldu:32"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Dick",
+    "family_name": "Dever",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/ddever2023.jpg?itok=W1J0-NtI",
+    "email": "ddever@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1952-02-11",
+    "death_date": "",
+    "extras": {
+      "cell": "701-391-6330"
+    },
+    "created_at": "2018-10-18T14:53:14.169580+00:00",
+    "updated_at": "2026-01-28T01:28:55.213779+00:00",
+    "openstates_url": "https://openstates.org/person/dick-dever-5LWwUGmQcUqUPRmN52oHD0/"
+  },
+  {
+    "id": "ocd-person/93c8011d-d8c2-4e7e-80ee-3b1cab991039",
+    "name": "Don Schaible",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "31",
+      "division_id": "ocd-division/country:us/state:nd/sldu:31"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Don",
+    "family_name": "Schaible",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/dgschaible2023.jpg?itok=Zjq3ZT4x",
+    "email": "dgschaible@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home": "701-824-3168"
+    },
+    "created_at": "2018-10-18T14:52:57.277304+00:00",
+    "updated_at": "2026-01-28T01:29:22.235993+00:00",
+    "openstates_url": "https://openstates.org/person/don-schaible-4UrH0T8HMS5H9f2f9AGhkf/"
+  },
+  {
+    "id": "ocd-person/6c9671e4-274f-41cd-b1ba-d6b2dd55ba5e",
+    "name": "Greg Kessel",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "39",
+      "division_id": "ocd-division/country:us/state:nd/sldu:39"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Greg",
+    "family_name": "Kessel",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/gkessel2023.jpg?itok=VVvSgZzs",
+    "email": "gkessel@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-260-0609",
+      "home": "701-575-8017"
+    },
+    "created_at": "2023-02-13T19:43:29.071225+00:00",
+    "updated_at": "2026-01-28T01:28:57.152375+00:00",
+    "openstates_url": "https://openstates.org/person/greg-kessel-3ItvL0aIBE19r9DUWtNl3m/"
+  },
+  {
+    "id": "ocd-person/4a64529e-c299-4979-a564-909dc9f2edd2",
+    "name": "Janne Myrdal",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:nd/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Janne",
+    "family_name": "Myrdal",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jmyrdal.jpg?itok=w1QxJMzq",
+    "email": "jmyrdal@ndlegis.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-331-0946"
+    },
+    "created_at": "2018-10-18T14:53:06.938360+00:00",
+    "updated_at": "2026-01-28T01:29:09.323819+00:00",
+    "openstates_url": "https://openstates.org/person/janne-myrdal-2GNHLbl71TckmBgspDMPkA/"
+  },
+  {
+    "id": "ocd-person/49d467a4-d6ad-49bb-b498-445117bd1669",
+    "name": "Jeff Barta",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "43",
+      "division_id": "ocd-division/country:us/state:nd/sldu:43"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Barta",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jbarta2023.jpg?itok=vFRoqtiw",
+    "email": "jbarta@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-741-5906",
+      "home": "701-741-5906"
+    },
+    "created_at": "2023-02-13T19:43:26.711968+00:00",
+    "updated_at": "2026-01-28T01:30:03.620115+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-barta-2FJVZDX7UvVjVgINY99gGP/"
+  },
+  {
+    "id": "ocd-person/9c20611f-bea1-4176-b98f-3b20537e6818",
+    "name": "Jeff Magrum",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:nd/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Magrum",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jmagrum2023.jpg?itok=nshWDgsW",
+    "email": "jmagrum@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-321-2224",
+      "home": "701-321-2224"
+    },
+    "created_at": "2018-10-18T14:53:06.437807+00:00",
+    "updated_at": "2026-01-28T01:30:17.055959+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-magrum-4kbbE3wmEpnZgLUcSNBl16/"
+  },
+  {
+    "id": "ocd-person/714275ca-f81c-4fae-af2e-248a5ba4d697",
+    "name": "Jerry Klein",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:nd/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jerry",
+    "family_name": "Klein",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jklein2023.jpg?itok=tB7GzeMl",
+    "email": "jklein@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1951-11-21",
+    "death_date": "",
+    "extras": {
+      "home": "701-547-3517"
+    },
+    "created_at": "2018-10-18T14:53:16.961640+00:00",
+    "updated_at": "2026-01-28T01:29:26.717382+00:00",
+    "openstates_url": "https://openstates.org/person/jerry-klein-3RiVKQF03RppuaViCXWHod/"
+  },
+  {
+    "id": "ocd-person/e0da9b3a-45c3-4776-b6cc-eebd3d64d785",
+    "name": "Jonathan Sickler",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:nd/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jonathan",
+    "family_name": "Sickler",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jlsickler2023.jpg?itok=fCgcmLaT",
+    "email": "jlsickler@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "617-461-3072"
+    },
+    "created_at": "2023-02-13T19:43:28.166660+00:00",
+    "updated_at": "2026-01-28T01:30:04.150620+00:00",
+    "openstates_url": "https://openstates.org/person/jonathan-sickler-6qIBRiS3i9VhuwrTcSBlMD/"
+  },
+  {
+    "id": "ocd-person/2abbe0b0-fc8b-47f0-8b29-78e7c1315322",
+    "name": "Jose Castaneda",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "40",
+      "division_id": "ocd-division/country:us/state:nd/sldu:40"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Jose",
+    "family_name": "Castaneda",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTIu5mvWkZ1XTWpTaME5yn0rBIdqWZN3EUtg&s",
+    "email": "jcastaneda@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:18:22.110378+00:00",
+    "updated_at": "2026-01-28T01:29:48.532012+00:00",
+    "openstates_url": "https://openstates.org/person/jose-castaneda-1IdXMO97x26DvlLzRynJ9G/"
+  },
+  {
+    "id": "ocd-person/50d67a3d-7267-4f21-93af-6827c45077f0",
+    "name": "Josh Boschee",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "44",
+      "division_id": "ocd-division/country:us/state:nd/sldu:44"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Josh",
+    "family_name": "Boschee",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jboschee2023.jpg?itok=dn-POEYf",
+    "email": "jboschee@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1982-05-24",
+    "death_date": "",
+    "extras": {
+      "cell": "701-367-3513",
+      "home": "701-367-3513"
+    },
+    "created_at": "2018-10-18T14:53:05.185064+00:00",
+    "updated_at": "2025-07-18T01:33:22.982101+00:00",
+    "openstates_url": "https://openstates.org/person/josh-boschee-2SXOxms4Yt0phGE5UzlXpw/"
+  },
+  {
+    "id": "ocd-person/75e58364-853b-4b08-b902-7c84deb98e4a",
+    "name": "Judy Lee",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:nd/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Judy",
+    "family_name": "Lee",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jlee2023.jpg?itok=Om_GrVrc",
+    "email": "jlee@ndlegis.gov",
+    "gender": "Female",
+    "birth_date": "1942-03-07",
+    "death_date": "",
+    "extras": {
+      "home": "701-282-6512"
+    },
+    "created_at": "2018-10-18T14:53:03.912312+00:00",
+    "updated_at": "2026-01-28T01:29:09.911666+00:00",
+    "openstates_url": "https://openstates.org/person/judy-lee-3aSzNyE0Wj0FSuh8BopxiE/"
+  },
+  {
+    "id": "ocd-person/17f0bfb4-083b-460d-9b3f-483079df42c6",
+    "name": "Justin Gerhardt",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "34",
+      "division_id": "ocd-division/country:us/state:nd/sldu:34"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Justin",
+    "family_name": "Gerhardt",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/jgerhardt2.jpg?itok=0hJ_0R_C",
+    "email": "jgerhardt@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-527-6262"
+    },
+    "created_at": "2024-01-03T22:22:37.144559+00:00",
+    "updated_at": "2026-01-28T01:30:12.315927+00:00",
+    "openstates_url": "https://openstates.org/person/justin-gerhardt-jAqSD2FsmDbveb2EAdUNK/"
+  },
+  {
+    "id": "ocd-person/03924b26-a081-4722-947b-2738200f9063",
+    "name": "Kathy Hogan",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:nd/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Kathy",
+    "family_name": "Hogan",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/khogan2023.jpg?itok=kb5LgV9d",
+    "email": "khogan@ndlegis.gov",
+    "gender": "Female",
+    "birth_date": "1948-02-01",
+    "death_date": "",
+    "extras": {
+      "home": "701-235-1916"
+    },
+    "created_at": "2018-10-18T14:52:59.359625+00:00",
+    "updated_at": "2026-01-28T01:29:56.506696+00:00",
+    "openstates_url": "https://openstates.org/person/kathy-hogan-6jpfIPrQS8RF6SVLW8uyR/"
+  },
+  {
+    "id": "ocd-person/61200f69-4501-4cfb-a9cf-a37e86d6604c",
+    "name": "Keith Boehm",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "33",
+      "division_id": "ocd-division/country:us/state:nd/sldu:33"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Keith",
+    "family_name": "Boehm",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/kboehm2023.jpg?itok=U-O9r8u7",
+    "email": "kboehm@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-425-1520"
+    },
+    "created_at": "2023-02-13T19:43:28.821052+00:00",
+    "updated_at": "2026-01-28T01:29:24.132684+00:00",
+    "openstates_url": "https://openstates.org/person/keith-boehm-2xGuFXrRx1wvhYPZe6mXi0/"
+  },
+  {
+    "id": "ocd-person/f1041f2b-2e6e-41b0-9313-9767f7c03dbe",
+    "name": "Kent Weston",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:nd/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Kent",
+    "family_name": "Weston",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/kweston2023.jpg?itok=uNPsAGmo",
+    "email": "kweston@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-370-5100",
+      "home": "701-697-5288"
+    },
+    "created_at": "2023-02-13T19:43:27.620705+00:00",
+    "updated_at": "2026-01-28T01:29:39.919717+00:00",
+    "openstates_url": "https://openstates.org/person/kent-weston-7Kn28QOwIXkHJpqspOvbt0/"
+  },
+  {
+    "id": "ocd-person/dd6fc6e2-9b7f-405a-9121-28afd911ecdd",
+    "name": "Kristin Roers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:nd/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Kristin",
+    "family_name": "Roers",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/kroers2023_2.jpg?itok=aijums9Q",
+    "email": "kroers@ndlegis.gov",
+    "gender": "Female",
+    "birth_date": "1977-03-24",
+    "death_date": "",
+    "extras": {
+      "cell": "701-566-0340"
+    },
+    "created_at": "2019-01-04T06:33:17.328531+00:00",
+    "updated_at": "2026-01-28T01:29:59.955475+00:00",
+    "openstates_url": "https://openstates.org/person/kristin-roers-6jqNxVMrSycao2z9TJEGVx/"
+  },
+  {
+    "id": "ocd-person/4412269d-782d-4ea2-a649-e62a30cd1739",
+    "name": "Kyle Davison",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "41",
+      "division_id": "ocd-division/country:us/state:nd/sldu:41"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Kyle",
+    "family_name": "Davison",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/kdavison2023.jpg?itok=dKldTmD0",
+    "email": "kdavison@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-261-8703",
+      "home": "701-261-8703"
+    },
+    "created_at": "2018-10-18T14:53:09.479640+00:00",
+    "updated_at": "2025-07-18T01:33:15.180556+00:00",
+    "openstates_url": "https://openstates.org/person/kyle-davison-24Rlw9N5aqJENcGmkXyGpl/"
+  },
+  {
+    "id": "ocd-person/bbce3e80-9e27-4dfe-a7db-0c2b3bcc0b94",
+    "name": "Larry Luick",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:nd/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Larry",
+    "family_name": "Luick",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/lluick2023.jpg?itok=JQtt6TTF",
+    "email": "lluick@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home": "701-474-5959"
+    },
+    "created_at": "2018-10-18T14:53:12.156547+00:00",
+    "updated_at": "2026-01-28T01:29:04.284244+00:00",
+    "openstates_url": "https://openstates.org/person/larry-luick-5iNomBPvGU0DrR3GN7OzUC/"
+  },
+  {
+    "id": "ocd-person/157a41fd-5329-42f2-a5c7-d0cc81336f07",
+    "name": "Mark Enget",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:nd/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Enget",
+    "image": "https://markenget.com/wp-content/uploads/2024/01/mark-enget-main.png",
+    "email": "menget@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:18:07.857522+00:00",
+    "updated_at": "2026-01-28T01:28:50.600872+00:00",
+    "openstates_url": "https://openstates.org/person/mark-enget-eWi4POC0ozLoL9o30FdY7/"
+  },
+  {
+    "id": "ocd-person/450cf40c-eb15-4f0d-843f-3a3e071d54fc",
+    "name": "Mark Weber",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:nd/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Weber",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/markweber2023.jpg?itok=ae8Xlskt",
+    "email": "markweber@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "bio info": []
+    },
+    "created_at": "2020-12-30T06:11:57.795527+00:00",
+    "updated_at": "2026-01-28T01:29:37.272788+00:00",
+    "openstates_url": "https://openstates.org/person/mark-weber-26IOC6kKPZ0kditFdGFSuK/"
+  },
+  {
+    "id": "ocd-person/281253e2-e075-4cde-92dd-20d097bc2b3b",
+    "name": "Michelle Axtman",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:nd/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Axtman",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/maxtman2023.jpg?itok=RtENCCkC",
+    "email": "maxtman@ndlegis.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "719-351-0654"
+    },
+    "created_at": "2023-02-13T19:43:23.928696+00:00",
+    "updated_at": "2026-01-28T01:29:16.831912+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-axtman-1Dc4GfZqTpDxJRCgR3bfUh/"
+  },
+  {
+    "id": "ocd-person/3f38bb4c-1371-4b8c-851f-cc441b5c853b",
+    "name": "Michelle Powers",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "46",
+      "division_id": "ocd-division/country:us/state:nd/sldu:46"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Michelle",
+    "family_name": "Powers",
+    "image": "https://images.squarespace-cdn.com/content/v1/620c3de64a803d6ee0289ebc/77db1b9d-8c96-49d6-9730-72bf488d1b28/Michelle+Powers+Headshot.jpg",
+    "email": "mpowers@ndlegis.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2024-12-03T01:18:02.672022+00:00",
+    "updated_at": "2026-01-28T01:29:04.974868+00:00",
+    "openstates_url": "https://openstates.org/person/michelle-powers-1vIRSzopLzyvtWp5q6Ce5b/"
+  },
+  {
+    "id": "ocd-person/704150b0-5d7f-43ea-afd5-b6f059463575",
+    "name": "Mike Dwyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "47",
+      "division_id": "ocd-division/country:us/state:nd/sldu:47"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Dwyer",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mdwyer2023.jpg?itok=8BekhLxi",
+    "email": "mdwyer@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1952-06-13",
+    "death_date": "",
+    "extras": {
+      "cell": "701-400-6075"
+    },
+    "created_at": "2019-01-04T06:33:08.194116+00:00",
+    "updated_at": "2026-01-28T01:29:18.964539+00:00",
+    "openstates_url": "https://openstates.org/person/mike-dwyer-3PozMaj4SK2eKKkL62apk5/"
+  },
+  {
+    "id": "ocd-person/a5665c05-d239-4297-a3dc-08557280d5f8",
+    "name": "Mike Wobbema",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:nd/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "Wobbema",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/mwobbema2023.jpg?itok=-RzV9t-2",
+    "email": "mwobbema@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-595-1579"
+    },
+    "created_at": "2020-12-30T06:11:59.769034+00:00",
+    "updated_at": "2026-01-28T01:29:46.612016+00:00",
+    "openstates_url": "https://openstates.org/person/mike-wobbema-526VlVNVq3PeymVpRxoTpg/"
+  },
+  {
+    "id": "ocd-person/960f301d-59c2-4047-96ca-8f026c7cc096",
+    "name": "Paul Thomas",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:nd/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Paul",
+    "family_name": "Thomas",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/paulthomas2023.jpg?itok=B81Ruz_Z",
+    "email": "paulthomas@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-626-2777"
+    },
+    "created_at": "2020-12-30T06:12:02.598694+00:00",
+    "updated_at": "2026-01-28T01:29:01.896131+00:00",
+    "openstates_url": "https://openstates.org/person/paul-thomas-4Z9mybU1jo0zqYrtBSPAAg/"
+  },
+  {
+    "id": "ocd-person/c7d25cc2-0a28-4001-b046-df3e3a996f21",
+    "name": "Randy Burckhard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:nd/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Burckhard",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/raburckhard2023_2.jpg?itok=-URLZovB",
+    "email": "raburckhard@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "home": "701-838-1509"
+    },
+    "created_at": "2018-10-18T14:53:11.996378+00:00",
+    "updated_at": "2026-01-28T01:30:17.683913+00:00",
+    "openstates_url": "https://openstates.org/person/randy-burckhard-653bkiEfC9BQWfGWGYbf29/"
+  },
+  {
+    "id": "ocd-person/c8e63920-e054-4bb3-aff3-e9caeb012d2c",
+    "name": "Randy Lemm",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:nd/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Randy",
+    "family_name": "Lemm",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/rlemm2023.jpg?itok=7pnwdctH",
+    "email": "rlemm@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-430-1536",
+      "home": "701-636-5465"
+    },
+    "created_at": "2020-12-30T06:12:01.413730+00:00",
+    "updated_at": "2026-01-28T01:30:06.619598+00:00",
+    "openstates_url": "https://openstates.org/person/randy-lemm-675g0yoxZaCYvrH5j3vkSa/"
+  },
+  {
+    "id": "ocd-person/d87ed27e-35a2-4272-aa04-edf0a2893004",
+    "name": "Richard Marcellais",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:nd/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Richard",
+    "family_name": "Marcellais",
+    "image": "https://www.legis.nd.gov/files/styles/medium/public/person/photo/rmarcellais.jpg?itok=0dcpvpyI",
+    "email": "rmarcellais@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1947-01-23",
+    "death_date": "",
+    "extras": {
+      "bio info": [],
+      "Cell phone": "701-278-0632",
+      "Home phone": "701-477-8985"
+    },
+    "created_at": "2018-10-18T14:53:07.894845+00:00",
+    "updated_at": "2025-07-18T01:32:49.493145+00:00",
+    "openstates_url": "https://openstates.org/person/richard-marcellais-6aWIdKR6l4tPFrSx0Naf1I/"
+  },
+  {
+    "id": "ocd-person/e3f498cc-b127-4f43-be89-1ad84b3b4e78",
+    "name": "Robert Erbele",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:nd/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Robert",
+    "family_name": "Erbele",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/rerbele2023.jpg?itok=o4UUUAGp",
+    "email": "rerbele@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1952-09-30",
+    "death_date": "",
+    "extras": {
+      "home": "701-378-2272"
+    },
+    "created_at": "2018-10-18T14:53:04.234966+00:00",
+    "updated_at": "2026-01-28T01:29:52.004141+00:00",
+    "openstates_url": "https://openstates.org/person/robert-erbele-6w92R6YdiQ2tHef980YnjU/"
+  },
+  {
+    "id": "ocd-person/d313121d-2b0d-41e9-94a2-fe819a6e82b4",
+    "name": "Ron Sorvaag",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "45",
+      "division_id": "ocd-division/country:us/state:nd/sldu:45"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Ron",
+    "family_name": "Sorvaag",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/rsorvaag2023.jpg?itok=NY_Nca8x",
+    "email": "rsorvaag@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-361-2156"
+    },
+    "created_at": "2018-10-18T14:53:08.066295+00:00",
+    "updated_at": "2026-01-28T01:30:12.823931+00:00",
+    "openstates_url": "https://openstates.org/person/ron-sorvaag-6QI5yO2FkXFNkwpbtdaevM/"
+  },
+  {
+    "id": "ocd-person/66b053e6-9766-40f0-8da3-2a40f517d9e1",
+    "name": "Ryan Braunberger",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:nd/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Ryan",
+    "family_name": "Braunberger",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/rbraunberger2023.jpg?itok=jt9B_X6q",
+    "email": "rbraunberger@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-793-3406"
+    },
+    "created_at": "2023-02-13T19:43:27.753254+00:00",
+    "updated_at": "2026-01-28T01:29:32.406891+00:00",
+    "openstates_url": "https://openstates.org/person/ryan-braunberger-37lnYiOQQuHTTSmloq41Y1/"
+  },
+  {
+    "id": "ocd-person/5bcd9ecd-d547-4336-aa69-b4b258085802",
+    "name": "Scott Meyer",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:nd/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Scott",
+    "family_name": "Meyer",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/scottmeyer2023.jpg?itok=1CtjZ6FW",
+    "email": "scottmeyer@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "218-791-7655"
+    },
+    "created_at": "2018-10-18T14:53:13.705301+00:00",
+    "updated_at": "2026-01-28T01:29:39.233024+00:00",
+    "openstates_url": "https://openstates.org/person/scott-meyer-2nEGlpjbzJAkgMcdHHhfKk/"
+  },
+  {
+    "id": "ocd-person/ee32295a-16ef-45df-b47e-f74ac5f1765b",
+    "name": "Sean Cleary",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "35",
+      "division_id": "ocd-division/country:us/state:nd/sldu:35"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Sean",
+    "family_name": "Cleary",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/scleary2023.jpg?itok=iooji8l4",
+    "email": "scleary@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-581-5363"
+    },
+    "created_at": "2023-02-13T19:43:25.643896+00:00",
+    "updated_at": "2026-01-28T01:30:01.222032+00:00",
+    "openstates_url": "https://openstates.org/person/sean-cleary-7FT63aCPzNzjavOGtZCEoN/"
+  },
+  {
+    "id": "ocd-person/b40f2559-d9ae-41c2-b539-bd9c673cd90d",
+    "name": "Terry Wanzek",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:nd/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Terry",
+    "family_name": "Wanzek",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/tmwanzek2023.jpg?itok=LOr-WCkO",
+    "email": "tmwanzek@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1957-03-28",
+    "death_date": "",
+    "extras": {
+      "home": "701-251-6113"
+    },
+    "created_at": "2018-10-18T14:53:09.162563+00:00",
+    "updated_at": "2026-01-28T01:28:53.392087+00:00",
+    "openstates_url": "https://openstates.org/person/terry-wanzek-5TlXVtDdPAl1yu1l1FS3Jt/"
+  },
+  {
+    "id": "ocd-person/f715b93a-dcf7-4a67-b466-10c2cfad8a60",
+    "name": "Tim Mathern",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:nd/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Tim",
+    "family_name": "Mathern",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/tmathern2023.jpg?itok=pMFcb5S4",
+    "email": "tmathern@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "1950-04-19",
+    "death_date": "",
+    "extras": {
+      "cell": "701-893-5016",
+      "home": "701-235-9817"
+    },
+    "created_at": "2018-10-18T14:52:57.909323+00:00",
+    "updated_at": "2026-01-28T01:30:00.502349+00:00",
+    "openstates_url": "https://openstates.org/person/tim-mathern-7WF20lbnJ8GlvtN9MKvk0m/"
+  },
+  {
+    "id": "ocd-person/f01e3e40-01d3-4290-a85b-760683d4292e",
+    "name": "Todd Beard",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:nd/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:nd/government",
+      "name": "North Dakota",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Beard",
+    "image": "https://www.ndlegis.gov/sites/default/files/styles/member_list_photo/public/person/photo/tbeard2023.jpg?itok=tC5PWQQL",
+    "email": "tbeard@ndlegis.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "cell": "701-580-5606"
+    },
+    "created_at": "2023-02-13T19:43:30.527087+00:00",
+    "updated_at": "2026-01-28T01:29:57.740894+00:00",
+    "openstates_url": "https://openstates.org/person/todd-beard-7J5yjjzJsZ0jvVMhzAbuJS/"
+  }
+]

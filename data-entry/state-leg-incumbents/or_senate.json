@@ -1,0 +1,816 @@
+[
+  {
+    "id": "ocd-person/305e1426-2193-4e49-accf-6b26d224e92b",
+    "name": "Anthony Broadman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "27",
+      "division_id": "ocd-division/country:us/state:or/sldu:27"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Anthony",
+    "family_name": "Broadman",
+    "image": "https://s3.amazonaws.com/ballotpedia-api4/files/thumbs/200/300/Anthony_Broadman.jpg",
+    "email": "sen.anthonybroadman@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-16T01:32:26.002093+00:00",
+    "updated_at": "2025-02-04T04:31:46.015906+00:00",
+    "openstates_url": "https://openstates.org/person/anthony-broadman-1TGcnVylqvW5DdeyI0UXzH/"
+  },
+  {
+    "id": "ocd-person/e420fffb-7b56-42db-8cc4-531526ad6802",
+    "name": "Bruce Starr",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "12",
+      "division_id": "ocd-division/country:us/state:or/sldu:12"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Bruce",
+    "family_name": "Starr",
+    "image": "https://www.oregonlegislature.gov/starr/PublishingImages/member_photo.jpg",
+    "email": "sen.brucestarr@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1969-01-12",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-11-17T12:13:04.985227+00:00",
+    "updated_at": "2025-01-27T22:51:11.218807+00:00",
+    "openstates_url": "https://openstates.org/person/bruce-starr-6wTKYWtE6uTJTaHqwu5wlW/"
+  },
+  {
+    "id": "ocd-person/95da50da-34df-41f5-8900-ff8bec038272",
+    "name": "Cedric Hayden",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "6",
+      "division_id": "ocd-division/country:us/state:or/sldu:6"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Cedric",
+    "family_name": "Hayden",
+    "image": "https://www.oregonlegislature.gov/hayden/PublishingImages/member_photo.jpg",
+    "email": "sen.cedrichayden@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:10:56.427585+00:00",
+    "updated_at": "2026-01-28T02:01:30.919912+00:00",
+    "openstates_url": "https://openstates.org/person/cedric-hayden-4YlctTFexYCOPSWEpdO46U/"
+  },
+  {
+    "id": "ocd-person/d5d3b10e-9a5c-464a-93ad-bd824af1cbc0",
+    "name": "Chris Gorsek",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "25",
+      "division_id": "ocd-division/country:us/state:or/sldu:25"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Chris",
+    "family_name": "Gorsek",
+    "image": "http://www.oregonlegislature.gov/house/MemberPhotos/gorsek.jpg",
+    "email": "sen.chrisgorsek@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1958-01-28",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:10:56.507507+00:00",
+    "updated_at": "2025-01-27T22:51:06.055845+00:00",
+    "openstates_url": "https://openstates.org/person/chris-gorsek-6VU6ky5lq2Nezi5E0zlGbo/"
+  },
+  {
+    "id": "ocd-person/9c7dcacb-50b9-4338-924b-cf6d333dc43a",
+    "name": "Christine Drazan",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "26",
+      "division_id": "ocd-division/country:us/state:or/sldu:26"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Christine",
+    "family_name": "Drazan",
+    "image": "https://www.oregonlegislature.gov/drazan/PublishingImages/member_photo.jpg",
+    "email": "sen.christinedrazan@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {
+      "title": "House Republican Leader"
+    },
+    "created_at": "2019-01-24T06:17:19.351927+00:00",
+    "updated_at": "2026-01-28T02:01:21.124402+00:00",
+    "openstates_url": "https://openstates.org/person/christine-drazan-4lIHzUNsrBUpqh6srw9PVS/"
+  },
+  {
+    "id": "ocd-person/2bf5a8ca-cadb-4544-89e2-749f13673599",
+    "name": "Courtney Neron Misslin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "13",
+      "division_id": "ocd-division/country:us/state:or/sldu:13"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Courtney",
+    "family_name": "Neron Misslin",
+    "image": "https://www.oregonlegislature.gov/neron/PublishingImages/member_photo.jpg",
+    "email": "sen.courtneyneronmisslin@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:17:24.457491+00:00",
+    "updated_at": "2025-05-23T13:53:09.277815+00:00",
+    "openstates_url": "https://openstates.org/person/courtney-neron-misslin-1Kww4eXrCJvU67OS8h25KD/"
+  },
+  {
+    "id": "ocd-person/26a734f0-51f9-4959-a213-bc345c1050ec",
+    "name": "David Smith",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "1",
+      "division_id": "ocd-division/country:us/state:or/sldu:1"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "David",
+    "family_name": "Smith",
+    "image": "https://www.oregonlegislature.gov/smithd/PublishingImages/member_photo.jpg",
+    "email": "sen.davidbrocksmith@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1962-07-23",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:10:57.052201+00:00",
+    "updated_at": "2025-01-27T22:51:18.475650+00:00",
+    "openstates_url": "https://openstates.org/person/david-smith-1Aw7ZW676S6KeK1v3QaQ2e/"
+  },
+  {
+    "id": "ocd-person/6c867cbf-9d0b-4dd8-9537-55e834a42dc4",
+    "name": "Deb Patterson",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "10",
+      "division_id": "ocd-division/country:us/state:or/sldu:10"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Deb",
+    "family_name": "Patterson",
+    "image": "https://www.oregonlegislature.gov/patterson/PublishingImages/member_photo.jpg",
+    "email": "sen.debpatterson@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:16:09.102625+00:00",
+    "updated_at": "2025-03-13T07:52:12.382812+00:00",
+    "openstates_url": "https://openstates.org/person/deb-patterson-3ImdC6dy6bLNtl5OGfTcnc/"
+  },
+  {
+    "id": "ocd-person/5ab0368e-6434-46c6-a7f4-7ee34b596fd1",
+    "name": "Diane Linthicum",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "28",
+      "division_id": "ocd-division/country:us/state:or/sldu:28"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Diane",
+    "family_name": "Linthicum",
+    "image": "https://ormoneywatch.com/wp-content/uploads/2023/11/Diane-Linthicum-Senate-1.jpeg",
+    "email": "sen.dianelinthicum@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-27T22:49:52.200708+00:00",
+    "updated_at": "2025-02-21T16:11:56.797177+00:00",
+    "openstates_url": "https://openstates.org/person/diane-linthicum-2l7q1HyU3C8Hn6XyJjZAS9/"
+  },
+  {
+    "id": "ocd-person/5e28a30c-5ca9-4221-a331-9321267fbae6",
+    "name": "Dick Anderson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "5",
+      "division_id": "ocd-division/country:us/state:or/sldu:5"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Dick",
+    "family_name": "Anderson",
+    "image": "https://www.oregonlegislature.gov/anderson/PublishingImages/member_photo.jpg",
+    "email": "sen.dickanderson@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:16:08.522857+00:00",
+    "updated_at": "2025-01-16T01:32:09.873055+00:00",
+    "openstates_url": "https://openstates.org/person/dick-anderson-2rfqgqJov138LUN1RbDY8c/"
+  },
+  {
+    "id": "ocd-person/a36ed400-bbdd-4053-9ae4-576ba52e95ca",
+    "name": "Floyd Prozanski",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "4",
+      "division_id": "ocd-division/country:us/state:or/sldu:4"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Floyd",
+    "family_name": "Prozanski",
+    "image": "http://www.oregonlegislature.gov/senate/MemberPhotos/prozanski.jpg",
+    "email": "sen.floydprozanski@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:10:57.751259+00:00",
+    "updated_at": "2026-01-28T02:01:43.707683+00:00",
+    "openstates_url": "https://openstates.org/person/floyd-prozanski-4yOOfWNqCwWx83P1pTEngQ/"
+  },
+  {
+    "id": "ocd-person/aba97bd3-cdf6-4860-9b2c-cbd62e825e79",
+    "name": "Fred Girod",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "9",
+      "division_id": "ocd-division/country:us/state:or/sldu:9"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Fred",
+    "family_name": "Girod",
+    "image": "http://www.oregonlegislature.gov/senate/MemberPhotos/girod.jpg",
+    "email": "sen.fredgirod@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:10:57.827064+00:00",
+    "updated_at": "2024-10-09T23:22:37.698139+00:00",
+    "openstates_url": "https://openstates.org/person/fred-girod-5Dv8oY2khcdbD2zCIpCZFx/"
+  },
+  {
+    "id": "ocd-person/f1be7436-8ea5-48b2-8997-53dd566633b9",
+    "name": "James Manning",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "7",
+      "division_id": "ocd-division/country:us/state:or/sldu:7"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "James",
+    "family_name": "Manning",
+    "image": "https://www.oregonlegislature.gov/manning/PublishingImages/member_photo.jpg",
+    "email": "sen.jamesmanning@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:10:58.428772+00:00",
+    "updated_at": "2025-03-13T07:52:11.917423+00:00",
+    "openstates_url": "https://openstates.org/person/james-manning-7MABgcANHMoEX4bEUrFM9R/"
+  },
+  {
+    "id": "ocd-person/9d3f5669-f452-4926-91ec-a74a4c4a48e5",
+    "name": "Janeen Sollman",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "15",
+      "division_id": "ocd-division/country:us/state:or/sldu:15"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Janeen",
+    "family_name": "Sollman",
+    "image": "https://www.oregonlegislature.gov/sollman/PublishingImages/Pages/staff/alteza_films-66_43format.jpg",
+    "email": "sen.janeensollman@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:10:58.507140+00:00",
+    "updated_at": "2025-01-27T22:50:09.836272+00:00",
+    "openstates_url": "https://openstates.org/person/janeen-sollman-4mijvAnva2KYr2dQHwojY5/"
+  },
+  {
+    "id": "ocd-person/0240017c-38e7-45da-8841-c40b007965dc",
+    "name": "Jeff Golden",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "3",
+      "division_id": "ocd-division/country:us/state:or/sldu:3"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Jeff",
+    "family_name": "Golden",
+    "image": "https://www.oregonlegislature.gov/golden/PublishingImages/member_photo.jpg",
+    "email": "sen.jeffgolden@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1950-04-24",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2019-01-24T06:17:24.085578+00:00",
+    "updated_at": "2024-10-09T23:22:27.266831+00:00",
+    "openstates_url": "https://openstates.org/person/jeff-golden-4FEapL9hjT5dtKQ273ayi/"
+  },
+  {
+    "id": "ocd-person/cc87cb36-e12e-42e1-ac5e-c2d50e1d2018",
+    "name": "Kate Lieber",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "14",
+      "division_id": "ocd-division/country:us/state:or/sldu:14"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Kate",
+    "family_name": "Lieber",
+    "image": "https://www.oregonlegislature.gov/lieber/PublishingImages/member_photo.jpg",
+    "email": "sen.katelieber@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:16:09.182035+00:00",
+    "updated_at": "2024-10-09T23:22:34.089784+00:00",
+    "openstates_url": "https://openstates.org/person/kate-lieber-6DwUXjqPnnESDB2zwuBxOq/"
+  },
+  {
+    "id": "ocd-person/97c2b8fd-9e87-43b7-b202-6541af36bab7",
+    "name": "Kathleen Taylor",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "21",
+      "division_id": "ocd-division/country:us/state:or/sldu:21"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Kathleen",
+    "family_name": "Taylor",
+    "image": "https://www.oregonlegislature.gov/taylor/PublishingImages/member_photo.jpg",
+    "email": "sen.kathleentaylor@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:10:59.264128+00:00",
+    "updated_at": "2026-01-28T02:01:19.340134+00:00",
+    "openstates_url": "https://openstates.org/person/kathleen-taylor-4cMpRz76kp8Acxf706qgKt/"
+  },
+  {
+    "id": "ocd-person/7532bf1f-c85e-4683-a401-ca87af088e5e",
+    "name": "Kayse Jama",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "24",
+      "division_id": "ocd-division/country:us/state:or/sldu:24"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Kayse",
+    "family_name": "Jama",
+    "image": "https://www.oregonlegislature.gov/Jama/PublishingImages/member_photo.jpg",
+    "email": "sen.jamakayse@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:16:10.694858+00:00",
+    "updated_at": "2025-03-13T07:52:15.968026+00:00",
+    "openstates_url": "https://openstates.org/person/kayse-jama-3Z9ICFLdQ72TztquxkQVDC/"
+  },
+  {
+    "id": "ocd-person/3b7edee5-fb20-48d2-98db-541721e24e65",
+    "name": "Khanh Pham",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "23",
+      "division_id": "ocd-division/country:us/state:or/sldu:23"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Khanh",
+    "family_name": "Pham",
+    "image": "https://www.oregonlegislature.gov/pham/PublishingImages/member_photo.jpg",
+    "email": "sen.khanhpham@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:16:10.063460+00:00",
+    "updated_at": "2025-01-27T22:49:49.650798+00:00",
+    "openstates_url": "https://openstates.org/person/khanh-pham-1oGWhBI0nzzYUQuozMqNxV/"
+  },
+  {
+    "id": "ocd-person/5947e2cd-aa8b-4df1-869f-961357705a3c",
+    "name": "Kim Thatcher",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "11",
+      "division_id": "ocd-division/country:us/state:or/sldu:11"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Kim",
+    "family_name": "Thatcher",
+    "image": "https://www.oregonlegislature.gov/thatcher/PublishingImages/thatcher2023.jpg",
+    "email": "sen.kimthatcher@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1964-10-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-05-23T02:59:40.570885+00:00",
+    "updated_at": "2026-01-28T02:01:21.388033+00:00",
+    "openstates_url": "https://openstates.org/person/kim-thatcher-2iTATur5fRMHio7jLBRolQ/"
+  },
+  {
+    "id": "ocd-person/2256d4a8-f19b-4e1d-ba35-771cc0349b0b",
+    "name": "Lew Frederick",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "22",
+      "division_id": "ocd-division/country:us/state:or/sldu:22"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Lew",
+    "family_name": "Frederick",
+    "image": "https://www.oregonlegislature.gov/frederick/PublishingImages/member_photo.jpg",
+    "email": "sen.lewfrederick@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:10:59.719870+00:00",
+    "updated_at": "2025-01-27T22:51:01.757825+00:00",
+    "openstates_url": "https://openstates.org/person/lew-frederick-12nQ5mdtGyay7ACB1Z3xMJ/"
+  },
+  {
+    "id": "ocd-person/53afaba4-8ddc-4784-87c3-aaede576ac44",
+    "name": "Lisa Reynolds",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "17",
+      "division_id": "ocd-division/country:us/state:or/sldu:17"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Lisa",
+    "family_name": "Reynolds",
+    "image": "https://www.oregonlegislature.gov/reynolds/PublishingImages/member_photo.jpg",
+    "email": "sen.lisareynolds@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2023-05-23T02:59:23.720517+00:00",
+    "updated_at": "2025-01-27T22:49:41.149285+00:00",
+    "openstates_url": "https://openstates.org/person/lisa-reynolds-2XudyVZVP4W3eqmZSh1YBg/"
+  },
+  {
+    "id": "ocd-person/d6379fd3-d283-4c6e-864b-7dca170b593d",
+    "name": "Mark Meek",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "20",
+      "division_id": "ocd-division/country:us/state:or/sldu:20"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Mark",
+    "family_name": "Meek",
+    "image": "https://www.oregonlegislature.gov/meek/PublishingImages/member_photo.jpg",
+    "email": "sen.markmeek@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:11:00.021929+00:00",
+    "updated_at": "2026-01-28T02:01:18.288007+00:00",
+    "openstates_url": "https://openstates.org/person/mark-meek-6WDmG1jBVSsVTvmH9ru469/"
+  },
+  {
+    "id": "ocd-person/f0091fb4-4207-4663-be23-7c9e77994048",
+    "name": "Mike McLane",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "30",
+      "division_id": "ocd-division/country:us/state:or/sldu:30"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Mike",
+    "family_name": "McLane",
+    "image": "http://www.oregonlegislature.gov/house/MemberPhotos/mclane.jpg",
+    "email": "sen.mikemclane@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:11:00.170163+00:00",
+    "updated_at": "2025-02-21T16:11:54.623440+00:00",
+    "openstates_url": "https://openstates.org/person/mike-mclane-7IwKL9uPGtPu0zIoEEM11M/"
+  },
+  {
+    "id": "ocd-person/15862ba2-3cdd-4a2e-a22e-28acdea73055",
+    "name": "Noah Robinson",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "2",
+      "division_id": "ocd-division/country:us/state:or/sldu:2"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Noah",
+    "family_name": "Robinson",
+    "image": "https://ormoneywatch.b-cdn.net/wp-content/uploads/2023/11/Noah-Robinson.jpg",
+    "email": "sen.noahrobinson@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1978-03-05",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-16T01:32:02.925512+00:00",
+    "updated_at": "2025-02-21T16:11:52.356994+00:00",
+    "openstates_url": "https://openstates.org/person/noah-robinson-ec9bYQahnz4dYG95EWagP/"
+  },
+  {
+    "id": "ocd-person/e40f7f2c-4c6a-4064-9fde-e6b380dde2aa",
+    "name": "Rob Wagner",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "19",
+      "division_id": "ocd-division/country:us/state:or/sldu:19"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Rob",
+    "family_name": "Wagner",
+    "image": "https://www.oregonlegislature.gov/wagner/PublishingImages/Headshot%20in%20the%20shrub.jpg",
+    "email": "sen.robwagner@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "1973-01-10",
+    "death_date": "",
+    "extras": {
+      "title": "President"
+    },
+    "created_at": "2018-10-18T16:11:01.013921+00:00",
+    "updated_at": "2024-10-09T23:22:46.580634+00:00",
+    "openstates_url": "https://openstates.org/person/rob-wagner-6wLKcV3gqHXlwwnq5WyIxO/"
+  },
+  {
+    "id": "ocd-person/10b42647-1509-4e86-9155-4622c2d17315",
+    "name": "Sara Gelser Blouin",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "8",
+      "division_id": "ocd-division/country:us/state:or/sldu:8"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Sara",
+    "family_name": "Gelser Blouin",
+    "image": "http://www.oregonlegislature.gov/senate/MemberPhotos/gelser.jpg",
+    "email": "sen.saragelser@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1973-12-20",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2018-10-18T16:11:01.312826+00:00",
+    "updated_at": "2024-10-09T23:22:48.599009+00:00",
+    "openstates_url": "https://openstates.org/person/sara-gelser-blouin-VWCl4LwOTSKBqSkcF9pBt/"
+  },
+  {
+    "id": "ocd-person/835d23bd-afb1-4e82-93c4-4b1b1822aeb4",
+    "name": "Suzanne Weber",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "16",
+      "division_id": "ocd-division/country:us/state:or/sldu:16"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Suzanne",
+    "family_name": "Weber",
+    "image": "https://www.oregonlegislature.gov/weber/PublishingImages/member_photo.jpg",
+    "email": "sen.suzanneweber@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:16:05.591479+00:00",
+    "updated_at": "2026-01-28T02:01:24.764030+00:00",
+    "openstates_url": "https://openstates.org/person/suzanne-weber-3zsYhhrkNlscNlJjCIngoO/"
+  },
+  {
+    "id": "ocd-person/66c4922d-6b7e-4636-85a4-565e812df7a2",
+    "name": "Todd Nash",
+    "party": "Republican",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "29",
+      "division_id": "ocd-division/country:us/state:or/sldu:29"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Todd",
+    "family_name": "Nash",
+    "image": "https://www.oregonlegislature.gov/nash/PublishingImages/member_photo.jpg",
+    "email": "sen.toddnash@oregonlegislature.gov",
+    "gender": "Male",
+    "birth_date": "",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2025-01-16T01:33:26.486389+00:00",
+    "updated_at": "2025-02-21T16:11:58.022228+00:00",
+    "openstates_url": "https://openstates.org/person/todd-nash-37v38KFtyBostptKRQa53q/"
+  },
+  {
+    "id": "ocd-person/72027f00-3e3c-47c7-ab62-cc89ebb1ed72",
+    "name": "Wlnsvey Campos",
+    "party": "Democratic",
+    "current_role": {
+      "title": "Senator",
+      "org_classification": "upper",
+      "district": "18",
+      "division_id": "ocd-division/country:us/state:or/sldu:18"
+    },
+    "jurisdiction": {
+      "id": "ocd-jurisdiction/country:us/state:or/government",
+      "name": "Oregon",
+      "classification": "state"
+    },
+    "given_name": "Wlnsvey",
+    "family_name": "Campos",
+    "image": "https://www.oregonlegislature.gov/campos/PublishingImages/member_photo.jpg",
+    "email": "sen.wlnsveycampos@oregonlegislature.gov",
+    "gender": "Female",
+    "birth_date": "1995-11-30",
+    "death_date": "",
+    "extras": {},
+    "created_at": "2021-01-13T00:16:06.088772+00:00",
+    "updated_at": "2026-01-28T02:01:16.421256+00:00",
+    "openstates_url": "https://openstates.org/person/wlnsvey-campos-3T8GUULL1UhNVQt1rdbqPi/"
+  }
+]
