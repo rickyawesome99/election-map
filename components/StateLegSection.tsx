@@ -6,6 +6,7 @@ import StateLegDistrictTable from "./StateLegDistrictTable";
 import type { Chamber, StateLegDistrict } from "@/data/stateLegDistricts";
 import type { ChamberMapInfo } from "@/data/stateLegMapInfo";
 import type { StateLegPres2024, MapViewMode } from "@/data/stateLegPres2024";
+import { fmtMargin } from "@/lib/colorScale";
 
 const PARTY_COLOR: Record<string, string> = {
   D: "var(--party-dem)",
@@ -16,8 +17,20 @@ const PARTY_COLOR: Record<string, string> = {
 
 // Deliberately compact — this sits above the "About the X Legislature" section on desktop, so
 // it shouldn't push that content far down the page.
-function SelectedDistrictPanel({ district, onClose }: { district: StateLegDistrict; onClose: () => void }) {
+function SelectedDistrictPanel({
+  district,
+  viewMode,
+  presidentialResult,
+  onClose,
+}: {
+  district: StateLegDistrict;
+  viewMode: MapViewMode;
+  presidentialResult?: StateLegPres2024;
+  onClose: () => void;
+}) {
   const incumbents = district.incumbents ?? [];
+  const isPresidentialView = viewMode === "president";
+  const displayedMargin = isPresidentialView ? presidentialResult?.margin : district.margin;
   return (
     <section>
       <div className="flex items-center justify-between gap-3 pb-2 mb-2" style={{ borderBottom: "2px solid var(--app-text-primary)" }}>
@@ -36,7 +49,14 @@ function SelectedDistrictPanel({ district, onClose }: { district: StateLegDistri
           <div className="text-sm font-bold mb-1" style={{ color: "var(--app-text-primary)" }}>
             {district.label}
           </div>
-          {incumbents.length > 0 ? (
+          {isPresidentialView ? (
+            <div className="text-xs" style={{ color: presidentialResult ? "var(--app-text-muted)" : "var(--app-text-very-muted)" }}>
+              {presidentialResult ? "2024 presidential vote margin" : "2024 result not yet sourced"}
+              {presidentialResult?.estimated && (
+                <span className="ml-1 italic">(estimated)</span>
+              )}
+            </div>
+          ) : incumbents.length > 0 ? (
             <div className="flex flex-col gap-0.5">
               {incumbents.map((inc, i) => (
                 <div key={i} className="flex items-baseline gap-1.5 text-xs">
@@ -51,18 +71,20 @@ function SelectedDistrictPanel({ district, onClose }: { district: StateLegDistri
           ) : (
             <div className="text-xs italic" style={{ color: "var(--app-text-very-muted)" }}>Vacant</div>
           )}
-          {district.lastElection != null && !incumbents.some((inc) => inc.lastElection != null) && (
+          {!isPresidentialView && district.lastElection != null && !incumbents.some((inc) => inc.lastElection != null) && (
             <div className="mt-1" style={{ fontSize: 10, color: "var(--app-text-very-muted)" }}>
               Last elected {district.lastElection}
             </div>
           )}
         </div>
-        {district.margin != null && (
+        {displayedMargin != null && (
           <div
             className="tabular-nums font-extrabold shrink-0 text-base"
-            style={{ color: district.margin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}
+            style={{ color: displayedMargin <= 0 ? "var(--party-dem)" : "var(--party-rep)" }}
           >
-            {district.margin <= 0 ? "D" : "R"}+{Math.abs(district.margin).toFixed(1)}
+            {isPresidentialView
+              ? fmtMargin(displayedMargin)
+              : `${displayedMargin <= 0 ? "D" : "R"}+${Math.abs(displayedMargin).toFixed(1)}`}
           </div>
         )}
       </div>
@@ -186,7 +208,12 @@ export default function StateLegSection({
       <div className="contents md:flex md:flex-col md:gap-8">
         {selected && (
           <div className="order-3 md:order-1">
-            <SelectedDistrictPanel district={selected} onClose={() => setSelected(null)} />
+            <SelectedDistrictPanel
+              district={selected}
+              viewMode={viewMode}
+              presidentialResult={pres2024[selected.number]}
+              onClose={() => setSelected(null)}
+            />
           </div>
         )}
         <div className="order-5 md:order-2 flex flex-col gap-8">{sidebar}</div>

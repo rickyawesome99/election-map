@@ -1,12 +1,12 @@
 {
   "house": {
     "1": {
-      "demPct": 32.7,
+      "demPct": 32.6,
       "demVotes": 48844,
-      "margin": 33.7,
+      "margin": 33.8,
       "repPct": 66.4,
       "repVotes": 99401,
-      "totalVotes": 149588
+      "totalVotes": 149619
     },
     "10": {
       "demPct": 39.2,
@@ -14,7 +14,7 @@
       "margin": 20.6,
       "repPct": 59.8,
       "repVotes": 70869,
-      "totalVotes": 118578
+      "totalVotes": 118606
     },
     "11": {
       "demPct": 69.1,
@@ -22,15 +22,15 @@
       "margin": -39.7,
       "repPct": 29.4,
       "repVotes": 22445,
-      "totalVotes": 76414
+      "totalVotes": 76441
     },
     "12": {
       "demPct": 57.1,
       "demVotes": 72556,
-      "margin": -15.6,
-      "repPct": 41.5,
+      "margin": -15.7,
+      "repPct": 41.4,
       "repVotes": 52633,
-      "totalVotes": 126960
+      "totalVotes": 127001
     },
     "13": {
       "demPct": 48.8,
@@ -38,7 +38,7 @@
       "margin": 1.1,
       "repPct": 49.9,
       "repVotes": 60894,
-      "totalVotes": 122039
+      "totalVotes": 122077
     },
     "14": {
       "demPct": 40.4,
@@ -46,7 +46,7 @@
       "margin": 18.1,
       "repPct": 58.5,
       "repVotes": 78950,
-      "totalVotes": 134914
+      "totalVotes": 134948
     },
     "15": {
       "demPct": 34.2,
@@ -54,7 +54,7 @@
       "margin": 30.6,
       "repPct": 64.8,
       "repVotes": 91631,
-      "totalVotes": 141410
+      "totalVotes": 141442
     },
     "16": {
       "demPct": 44.9,
@@ -62,7 +62,7 @@
       "margin": 9.2,
       "repPct": 54.1,
       "repVotes": 61471,
-      "totalVotes": 113564
+      "totalVotes": 113590
     },
     "17": {
       "demPct": 47.7,
@@ -70,7 +70,7 @@
       "margin": 3.6,
       "repPct": 51.3,
       "repVotes": 80584,
-      "totalVotes": 157015
+      "totalVotes": 157052
     },
     "18": {
       "demPct": 61.4,
@@ -78,7 +78,7 @@
       "margin": -24.1,
       "repPct": 37.3,
       "repVotes": 48899,
-      "totalVotes": 131058
+      "totalVotes": 131097
     },
     "19": {
       "demPct": 37.2,
@@ -86,7 +86,7 @@
       "margin": 24.6,
       "repPct": 61.8,
       "repVotes": 68414,
-      "totalVotes": 110723
+      "totalVotes": 110750
     },
     "2": {
       "demPct": 46.9,
@@ -94,15 +94,15 @@
       "margin": 5.1,
       "repPct": 52.0,
       "repVotes": 53689,
-      "totalVotes": 103265
+      "totalVotes": 103292
     },
     "20": {
-      "demPct": 70.8,
+      "demPct": 70.7,
       "demVotes": 59698,
-      "margin": -43.0,
+      "margin": -42.9,
       "repPct": 27.8,
       "repVotes": 23474,
-      "totalVotes": 84374
+      "totalVotes": 84402
     },
     "21": {
       "demPct": 58.5,
@@ -110,7 +110,7 @@
       "margin": -18.2,
       "repPct": 40.3,
       "repVotes": 38610,
-      "totalVotes": 95852
+      "totalVotes": 95878
     },
     "22": {
       "demPct": 60.0,
@@ -118,7 +118,7 @@
       "margin": -21.1,
       "repPct": 38.9,
       "repVotes": 29018,
-      "totalVotes": 74605
+      "totalVotes": 74624
     },
     "23": {
       "demPct": 49.9,
@@ -126,7 +126,7 @@
       "margin": -0.8,
       "repPct": 49.1,
       "repVotes": 40666,
-      "totalVotes": 82765
+      "totalVotes": 82783
     },
     "24": {
       "demPct": 59.6,
@@ -134,7 +134,7 @@
       "margin": -20.4,
       "repPct": 39.2,
       "repVotes": 21860,
-      "totalVotes": 55791
+      "totalVotes": 55807
     },
     "25": {
       "demPct": 35.2,
@@ -142,7 +142,7 @@
       "margin": 28.7,
       "repPct": 63.9,
       "repVotes": 79969,
-      "totalVotes": 125138
+      "totalVotes": 125164
     },
     "26": {
       "demPct": 63.6,
@@ -150,23 +150,23 @@
       "margin": -28.6,
       "repPct": 35.0,
       "repVotes": 17571,
-      "totalVotes": 50171
+      "totalVotes": 50187
     },
     "27": {
       "demPct": 43.7,
       "demVotes": 47318,
-      "margin": 11.5,
-      "repPct": 55.2,
+      "margin": 11.4,
+      "repPct": 55.1,
       "repVotes": 59708,
-      "totalVotes": 108239
+      "totalVotes": 108267
     },
     "28": {
-      "demPct": 38.1,
+      "demPct": 38.0,
       "demVotes": 55389,
       "margin": 23.2,
-      "repPct": 61.3,
+      "repPct": 61.2,
       "repVotes": 89168,
-      "totalVotes": 145560
+      "totalVotes": 145583
     },
     "29": {
       "demPct": 40.2,
@@ -174,7 +174,7 @@
       "margin": 18.8,
       "repPct": 59.0,
       "repVotes": 75185,
-      "totalVotes": 127443
+      "totalVotes": 127468
     },
     "3": {
       "demPct": 37.7,
@@ -182,7 +182,7 @@
       "margin": 23.9,
       "repPct": 61.6,
       "repVotes": 101438,
-      "totalVotes": 164576
+      "totalVotes": 164603
     },
     "30": {
       "demPct": 22.1,
@@ -190,7 +190,7 @@
       "margin": 55.2,
       "repPct": 77.3,
       "repVotes": 94336,
-      "totalVotes": 122050
+      "totalVotes": 122068
     },
     "4": {
       "demPct": 47.8,
@@ -198,15 +198,15 @@
       "margin": 3.5,
       "repPct": 51.3,
       "repVotes": 77635,
-      "totalVotes": 151447
+      "totalVotes": 151480
     },
     "5": {
-      "demPct": 67.3,
+      "demPct": 67.2,
       "demVotes": 70289,
-      "margin": -35.9,
+      "margin": -35.8,
       "repPct": 31.4,
       "repVotes": 32811,
-      "totalVotes": 104502
+      "totalVotes": 104535
     },
     "6": {
       "demPct": 62.8,
@@ -214,7 +214,7 @@
       "margin": -26.9,
       "repPct": 35.9,
       "repVotes": 34947,
-      "totalVotes": 97254
+      "totalVotes": 97283
     },
     "7": {
       "demPct": 35.2,
@@ -222,7 +222,7 @@
       "margin": 28.7,
       "repPct": 63.9,
       "repVotes": 85615,
-      "totalVotes": 133985
+      "totalVotes": 134014
     },
     "8": {
       "demPct": 58.9,
@@ -230,7 +230,7 @@
       "margin": -19.2,
       "repPct": 39.7,
       "repVotes": 37912,
-      "totalVotes": 95507
+      "totalVotes": 95539
     },
     "9": {
       "demPct": 50.7,
@@ -238,7 +238,7 @@
       "margin": -2.9,
       "repPct": 47.8,
       "repVotes": 40439,
-      "totalVotes": 84532
+      "totalVotes": 84561
     }
   },
   "senate": {
@@ -248,7 +248,7 @@
       "margin": 33.9,
       "repPct": 66.5,
       "repVotes": 99365,
-      "totalVotes": 149427
+      "totalVotes": 149458
     },
     "10": {
       "demPct": 39.5,
@@ -256,15 +256,15 @@
       "margin": 20.0,
       "repPct": 59.5,
       "repVotes": 64590,
-      "totalVotes": 108569
+      "totalVotes": 108595
     },
     "11": {
       "demPct": 68.5,
       "demVotes": 52033,
-      "margin": -38.5,
-      "repPct": 30.0,
+      "margin": -38.6,
+      "repPct": 29.9,
       "repVotes": 22749,
-      "totalVotes": 75953
+      "totalVotes": 75980
     },
     "12": {
       "demPct": 57.6,
@@ -272,15 +272,15 @@
       "margin": -16.6,
       "repPct": 41.0,
       "repVotes": 48483,
-      "totalVotes": 118280
+      "totalVotes": 118318
     },
     "13": {
       "demPct": 49.3,
       "demVotes": 67233,
-      "margin": 0.1,
-      "repPct": 49.4,
+      "margin": 0.0,
+      "repPct": 49.3,
       "repVotes": 67329,
-      "totalVotes": 136391
+      "totalVotes": 136433
     },
     "14": {
       "demPct": 40.4,
@@ -288,7 +288,7 @@
       "margin": 18.1,
       "repPct": 58.5,
       "repVotes": 77162,
-      "totalVotes": 131946
+      "totalVotes": 131979
     },
     "15": {
       "demPct": 34.3,
@@ -296,7 +296,7 @@
       "margin": 30.4,
       "repPct": 64.7,
       "repVotes": 93030,
-      "totalVotes": 143824
+      "totalVotes": 143857
     },
     "16": {
       "demPct": 43.9,
@@ -304,15 +304,15 @@
       "margin": 11.2,
       "repPct": 55.1,
       "repVotes": 61177,
-      "totalVotes": 111059
+      "totalVotes": 111084
     },
     "17": {
-      "demPct": 47.8,
+      "demPct": 47.7,
       "demVotes": 75308,
-      "margin": 3.4,
+      "margin": 3.5,
       "repPct": 51.2,
       "repVotes": 80796,
-      "totalVotes": 157698
+      "totalVotes": 157735
     },
     "18": {
       "demPct": 62.9,
@@ -320,7 +320,7 @@
       "margin": -27.1,
       "repPct": 35.8,
       "repVotes": 44815,
-      "totalVotes": 125169
+      "totalVotes": 125206
     },
     "19": {
       "demPct": 36.1,
@@ -328,15 +328,15 @@
       "margin": 26.7,
       "repPct": 62.8,
       "repVotes": 64973,
-      "totalVotes": 103389
+      "totalVotes": 103414
     },
     "2": {
       "demPct": 48.0,
       "demVotes": 34977,
-      "margin": 3.0,
-      "repPct": 51.0,
+      "margin": 2.9,
+      "repPct": 50.9,
       "repVotes": 37143,
-      "totalVotes": 72896
+      "totalVotes": 72914
     },
     "20": {
       "demPct": 69.2,
@@ -344,7 +344,7 @@
       "margin": -39.8,
       "repPct": 29.4,
       "repVotes": 25176,
-      "totalVotes": 85608
+      "totalVotes": 85636
     },
     "21": {
       "demPct": 58.2,
@@ -352,15 +352,15 @@
       "margin": -17.6,
       "repPct": 40.6,
       "repVotes": 46136,
-      "totalVotes": 113588
+      "totalVotes": 113619
     },
     "22": {
-      "demPct": 60.4,
+      "demPct": 60.3,
       "demVotes": 41694,
-      "margin": -21.9,
+      "margin": -21.8,
       "repPct": 38.5,
       "repVotes": 26627,
-      "totalVotes": 69084
+      "totalVotes": 69102
     },
     "23": {
       "demPct": 49.3,
@@ -368,15 +368,15 @@
       "margin": 0.5,
       "repPct": 49.8,
       "repVotes": 42779,
-      "totalVotes": 85950
+      "totalVotes": 85969
     },
     "24": {
-      "demPct": 62.1,
+      "demPct": 62.0,
       "demVotes": 30518,
-      "margin": -25.4,
+      "margin": -25.3,
       "repPct": 36.7,
       "repVotes": 18054,
-      "totalVotes": 49169
+      "totalVotes": 49183
     },
     "25": {
       "demPct": 35.2,
@@ -384,15 +384,15 @@
       "margin": 28.7,
       "repPct": 63.9,
       "repVotes": 77583,
-      "totalVotes": 121458
+      "totalVotes": 121483
     },
     "26": {
-      "demPct": 62.6,
+      "demPct": 62.5,
       "demVotes": 25019,
-      "margin": -26.5,
+      "margin": -26.4,
       "repPct": 36.1,
       "repVotes": 14451,
-      "totalVotes": 39987
+      "totalVotes": 39999
     },
     "27": {
       "demPct": 44.0,
@@ -400,7 +400,7 @@
       "margin": 10.8,
       "repPct": 54.8,
       "repVotes": 78989,
-      "totalVotes": 144063
+      "totalVotes": 144102
     },
     "28": {
       "demPct": 37.5,
@@ -408,15 +408,15 @@
       "margin": 24.3,
       "repPct": 61.8,
       "repVotes": 86925,
-      "totalVotes": 140704
+      "totalVotes": 140727
     },
     "29": {
       "demPct": 40.8,
       "demVotes": 55482,
-      "margin": 17.6,
-      "repPct": 58.4,
+      "margin": 17.5,
+      "repPct": 58.3,
       "repVotes": 79335,
-      "totalVotes": 135949
+      "totalVotes": 135975
     },
     "3": {
       "demPct": 38.7,
@@ -424,7 +424,7 @@
       "margin": 21.9,
       "repPct": 60.6,
       "repVotes": 113897,
-      "totalVotes": 188060
+      "totalVotes": 188092
     },
     "30": {
       "demPct": 22.1,
@@ -432,7 +432,7 @@
       "margin": 55.2,
       "repPct": 77.3,
       "repVotes": 94096,
-      "totalVotes": 121744
+      "totalVotes": 121762
     },
     "4": {
       "demPct": 48.2,
@@ -440,7 +440,7 @@
       "margin": 2.6,
       "repPct": 50.8,
       "repVotes": 68985,
-      "totalVotes": 135825
+      "totalVotes": 135856
     },
     "5": {
       "demPct": 67.7,
@@ -448,7 +448,7 @@
       "margin": -36.8,
       "repPct": 30.9,
       "repVotes": 33462,
-      "totalVotes": 108161
+      "totalVotes": 108195
     },
     "6": {
       "demPct": 62.4,
@@ -456,15 +456,15 @@
       "margin": -26.1,
       "repPct": 36.3,
       "repVotes": 36402,
-      "totalVotes": 100308
+      "totalVotes": 100338
     },
     "7": {
       "demPct": 34.8,
       "demVotes": 47029,
-      "margin": 29.5,
-      "repPct": 64.3,
+      "margin": 29.4,
+      "repPct": 64.2,
       "repVotes": 86828,
-      "totalVotes": 135122
+      "totalVotes": 135151
     },
     "8": {
       "demPct": 58.8,
@@ -472,15 +472,15 @@
       "margin": -19.0,
       "repPct": 39.8,
       "repVotes": 41042,
-      "totalVotes": 103204
+      "totalVotes": 103238
     },
     "9": {
-      "demPct": 49.2,
+      "demPct": 49.1,
       "demVotes": 37726,
-      "margin": 0.1,
+      "margin": 0.2,
       "repPct": 49.3,
       "repVotes": 37863,
-      "totalVotes": 76734
+      "totalVotes": 76761
     }
   }
 }

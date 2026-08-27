@@ -51,8 +51,8 @@ export default async function StateLegislaturePage({ params }: { params: Promise
   const aboutBlocks = isUnicameral
     ? [{ label: "Legislature", mapInfo: chamberMapInfo.senate ?? null, totalSeats: chamberMapInfo.senate?.totalSeats ?? houseSeats?.total ?? null }]
     : [
-        { label: "State Senate", mapInfo: chamberMapInfo.senate ?? null, totalSeats: chamberMapInfo.senate?.totalSeats ?? senateSeats?.total ?? null },
         { label: "State House", mapInfo: chamberMapInfo.house ?? null, totalSeats: chamberMapInfo.house?.totalSeats ?? houseSeats?.total ?? null },
+        { label: "State Senate", mapInfo: chamberMapInfo.senate ?? null, totalSeats: chamberMapInfo.senate?.totalSeats ?? senateSeats?.total ?? null },
       ];
   return (
     <div className="min-h-screen" style={{ background: "var(--app-bg)", color: "var(--app-text-primary)" }}>

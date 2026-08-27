@@ -44,6 +44,7 @@ import sys
 from collections import defaultdict
 
 import geopandas as gpd
+import pandas as pd
 from shapely.geometry import shape
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -855,35 +856,48 @@ COUNTY_MATCHERS = {
 
 # States whose precinct file is election-day-only (see the Louisiana section): county FIPS -> the
 # certified county totals CSV to scale each county's precinct votes up to, per party.
-COUNTY_TOTAL_SCALING = {"LA": f"{ROOT}/data/county_presidential_results_2008_2024.csv"}
+# Applied AFTER precinct->geometry matching and pooled redistribution (see scale_matched_rows):
+# whatever a county's MATCHED precincts are short of its certified total - votes reported in a mode
+# the file omits (LA's early/mail, NJ Mercer's early vote), or votes stranded in precincts whose
+# geometry never matched (MI Detroit's residue, AL's stale-VTD counties) - is spread over that
+# county's matched precincts in proportion to each one's own vote for that party. Scaling before
+# the match instead (the original LA-only implementation) could not close either gap, because the
+# unmatched precincts it scaled up were dropped immediately afterwards.
+COUNTY_TOTAL_SCALING = {abbr: f"{ROOT}/data/county_presidential_results_2008_2024.csv"
+                        for abbr in ("LA", "MI", "NJ")}
 
 
-def scale_to_county_totals(abbr, pres_votes):
-    """Multiply every precinct's dem/rep/oth by (certified county party total / MEDSL county party
-    sum) for its county, in place. Prints the per-county factors so a bad row is visible."""
+def scale_matched_rows(abbr, rows):
+    """Scale each county's matched precinct rows so they sum to that county's certified 2024
+    presidential total, per party. `rows` carry a "county" field; mutated in place."""
     import csv
     cert = {}
     with open(COUNTY_TOTAL_SCALING[abbr]) as f:
         for r in csv.DictReader(f):
-            if r["county_id"].startswith(fg.ABBR_TO_FIPS[abbr]):
-                cert[r["county_id"]] = {"dem": int(r["dem_2024"]), "rep": int(r["gop_2024"]), "oth": int(r["oth_2024"])}
-    sums = defaultdict(lambda: defaultdict(int))
-    for (county_fips, _), buckets in pres_votes.items():
-        for b, v in buckets.items():
-            sums[county_fips][b] += v
+            if r["county_id"].startswith(fg.ABBR_TO_FIPS[abbr]) and r["dem_2024"]:
+                cert[r["county_id"]] = {"dem": int(r["dem_2024"]), "rep": int(r["gop_2024"]),
+                                        "oth": int(r["oth_2024"])}
+    sums = defaultdict(lambda: defaultdict(float))
+    for row in rows:
+        for b in ("dem", "rep", "oth"):
+            sums[row["county"]][b] += row[b]
     factors = {}
     for county_fips, s in sums.items():
         if county_fips not in cert:
             print(f"{abbr}: no certified totals for county {county_fips} - left unscaled")
             continue
-        factors[county_fips] = {b: (cert[county_fips][b] / s[b] if s.get(b) else 1.0) for b in ("dem", "rep", "oth")}
-    for (county_fips, _), buckets in pres_votes.items():
-        fct = factors.get(county_fips)
+        factors[county_fips] = {b: (cert[county_fips][b] / s[b] if s.get(b) else 1.0)
+                                for b in ("dem", "rep", "oth")}
+    for row in rows:
+        fct = factors.get(row["county"])
         if fct:
-            for b in list(buckets):
-                buckets[b] = buckets[b] * fct.get(b, 1.0)
-    lo = min(f["dem"] for f in factors.values()); hi = max(f["dem"] for f in factors.values())
-    print(f"{abbr}: scaled {len(factors)} counties to certified totals (dem factor range {lo:.2f}-{hi:.2f})")
+            for b in ("dem", "rep", "oth"):
+                row[b] = row[b] * fct.get(b, 1.0)
+    if factors:
+        big = sorted(factors.items(), key=lambda kv: -kv[1]["dem"])[:3]
+        lo = min(f["dem"] for f in factors.values()); hi = max(f["dem"] for f in factors.values())
+        print(f"{abbr}: scaled {len(factors)} counties to certified totals (dem factor "
+              f"{lo:.2f}-{hi:.2f}; largest: " + ", ".join(f"{c}={f['dem']:.2f}" for c, f in big) + ")")
 
 
 
@@ -969,8 +983,6 @@ def build_precinct_geodataframe(abbr, medsl_path, vtd_dir, stfp):
         vtd_geom = load_vtd_precincts(vtd_dir, stfp, abbr)
         key_func, _ = PRECINCT_KEY_FUNCS[abbr]
     pres_votes = load_precinct_president_votes(medsl_path)
-    if abbr in COUNTY_TOTAL_SCALING:
-        scale_to_county_totals(abbr, pres_votes)
 
     # Re-derive the ORIGINAL (non-uppercased) precinct string per key, since we need it to parse
     # the leading VTD number - pres_votes above was keyed on the uppercased join key used
@@ -1016,7 +1028,7 @@ def build_precinct_geodataframe(abbr, medsl_path, vtd_dir, stfp):
         row_index[key] = len(rows)
         rows.append({
             "dem": buckets.get("dem", 0), "rep": buckets.get("rep", 0), "oth": buckets.get("oth", 0),
-            "geometry": geom,
+            "county": county_fips, "geometry": geom,
         })
     if abbr in POOLED_REDISTRIBUTION:
         pooled = defaultdict(lambda: defaultdict(float))
@@ -1043,6 +1055,8 @@ def build_precinct_geodataframe(abbr, medsl_path, vtd_dir, stfp):
               f"municipality): dem={orphaned['dem']:,.0f} rep={orphaned['rep']:,.0f}")
     print(f"{abbr}: {matched} precincts matched to VTD geometry, {unmatched} unmatched"
           + (f" ({fallback_hits} via KEY_FALLBACKS)" if fallback_hits else ""))
+    if abbr in COUNTY_TOTAL_SCALING:
+        scale_matched_rows(abbr, rows)
     return gpd.GeoDataFrame(rows, crs="EPSG:4326"), unmatched
 
 
@@ -1057,13 +1071,29 @@ def overlay_onto_districts(abbr, chamber, precincts_gdf, boundary_src, stfp, unm
     districts["CODE"] = [fg.extract_district_code(abbr, chamber, p) for p in props]
     districts = districts.dropna(subset=["CODE"])
 
-    precincts = precincts_gdf.to_crs(epsg=5070)
+    precincts = precincts_gdf.to_crs(epsg=5070).reset_index(drop=True)
     districts = districts.to_crs(epsg=5070)
     precincts["p_area"] = precincts.geometry.area
+    precincts["pid"] = precincts.index
 
-    overlay = gpd.overlay(precincts.reset_index(), districts, how="intersection", keep_geom_type=False)
+    overlay = gpd.overlay(precincts, districts, how="intersection", keep_geom_type=False)
     overlay["frac"] = overlay.geometry.area / overlay["p_area"]
     overlay = overlay[overlay["frac"] > 0.005]
+    # Allocate every precinct in FULL. Without these two steps a chamber's districts sum to less
+    # than the statewide total: the sliver cut above and the imperfect fit between precinct and
+    # district polygons leak a fraction of each split precinct (MI Senate lost 3.4k dem / 4.7k rep,
+    # NJ ~900 each), and a precinct whose polygon intersects no district at all - a coastal/lake
+    # sliver, or one sitting in a gap the district file doesn't cover - was dropped outright.
+    overlay["frac"] = overlay["frac"] / overlay.groupby("pid")["frac"].transform("sum")
+    outside = precincts[~precincts["pid"].isin(set(overlay["pid"]))]
+    if len(outside):
+        lost = outside[["dem", "rep", "oth"]].to_numpy().sum()
+        near = gpd.sjoin_nearest(outside[["pid", "dem", "rep", "oth", "geometry"]],
+                                 districts[["CODE", "geometry"]], how="left").drop_duplicates("pid")
+        near["frac"] = 1.0
+        overlay = pd.concat([overlay, near[["pid", "dem", "rep", "oth", "CODE", "frac"]]], ignore_index=True)
+        print(f"{abbr} {chamber}: {len(outside)} precinct(s) with {lost:,.0f} votes intersected no "
+              f"district -> assigned to nearest")
 
     dist_votes = defaultdict(lambda: {"dem": 0.0, "rep": 0.0, "tot": 0.0})
     for _, row in overlay.iterrows():

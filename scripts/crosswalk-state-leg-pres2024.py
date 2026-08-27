@@ -307,7 +307,134 @@ def _fill_shared_boundary_gaps(abbr, result):
         print(f"{abbr}: filled {filled} chamber gap(s) via exact same-boundary copy (House/Senate share districts)")
 
 
-def crosswalk(abbr, csv_path, house_office="STATE HOUSE", senate_office="STATE SENATE"):
+# Maine reports a number of US PRESIDENT rows for a COMBINED municipality ("CARIBOU/CONNOR TWP",
+# "ASHLAND/TWPS" - a town voting together with the adjacent unorganized township) while its STATE
+# HOUSE/STATE SENATE rows report the components separately, and occasionally the reverse
+# ("FREEMAN TWP/SALEM TWP" as one leg row, two separate president rows). Neither side is wrong; the
+# join key just isn't the same unit. Left alone this stranded 73,278 presidential votes in the House
+# crosswalk and 32,586 in the Senate. Restricted to states known to do this so no other state's
+# already-shipped output can shift.
+COMBINED_PRECINCT_STATES = {"ME"}
+MAX_SPLIT_OVERRIDE = {"ME": 8}
+
+# Precincts that are really a STATEWIDE pool with no district of their own. Alaska reports federal
+# overseas absentee ballots under a phantom "HD99" (401 votes in 2024) - real votes, counted in the
+# certified state total, but genuinely unassignable to any of the 40 House districts. Spread across
+# every district in proportion to its own vote for that party, which is the only defensible
+# assumption for voters who are dispersed statewide by definition; at ~10 votes per district it
+# cannot move a margin, and it makes the chamber reproduce the certified total.
+STATEWIDE_POOL_PATTERNS = {"AK": _re.compile(r"HD\s*99|FED\w* OVERSEAS", _re.I)}
+
+
+_ME_ABBREV = ((r"\bPLANTATION\b", "PLT"), (r"\bTOWNSHIP\b", "TWP"))
+
+
+def _norm_precinct_name(name):
+    """Punctuation- and abbreviation-insensitive form of a municipality name. Maine's president rows
+    spell out what its legislative rows abbreviate and vice versa ("SAINT JOHN PLANTATION" vs "SAINT
+    JOHN PLT", "SWAN'S ISLAND" vs "SWANS ISLAND") - 27 real precincts differed only this way."""
+    n = _re.sub(r"[^A-Z0-9 ]", "", name.upper())
+    for pat, rep in _ME_ABBREV:
+        n = _re.sub(pat, rep, n)
+    return _re.sub(r"\s+", " ", n).strip()
+
+
+def _add_combined_precinct_keys(weight, pres_keys):
+    """Synthesise a weight entry for each president key that has no exact leg-row counterpart, by
+    merging the district weights of its slash-separated components (indexed from the leg keys, whose
+    own slash components are registered too). The merged weights keep each component's real
+    down-ballot turnout, so a combined row's presidential votes split between the districts its parts
+    actually sit in rather than being dropped."""
+    by_component = defaultdict(lambda: defaultdict(float))
+    for (county, name), dists in weight.items():
+        for part in (p.strip() for p in name.split("/")):
+            for d, w in dists.items():
+                by_component[(county, _norm_precinct_name(part))][d] += w
+    added, recovered = 0, []
+    for key in pres_keys:
+        if key in weight:
+            continue
+        county, name = key
+        merged = defaultdict(float)
+        for part in (p.strip() for p in name.split("/")):
+            for d, w in by_component.get((county, _norm_precinct_name(part)), {}).items():
+                merged[d] += w
+        if merged:
+            weight[key] = dict(merged)
+            added += 1
+            recovered.append(name)
+    return added, recovered
+
+
+COUNTY_CERTIFIED = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                                "data", "county_presidential_results_2008_2024.csv")
+
+
+def _scale_pres_to_county_totals(abbr, pres_party, weight):
+    """Return a copy of the per-precinct presidential votes in which each county's MATCHED precincts
+    (the ones this chamber can actually place in a district) are scaled to sum to that county's
+    certified 2024 total, per party.
+
+    Closes the two ways a chamber can end up short of the certified state total without any of its
+    districts being wrong: precincts the source file never reported (Maine's own file is ~5,300 Dem
+    short statewide) and precincts that matched no legislative row. Both are absorbed into the county
+    they belong to, in proportion to each matched precinct's own vote for that party - the same
+    approximation used for Louisiana's parish-level early vote and Detroit's counting boards. Runs
+    per chamber, since which precincts matched differs between House and Senate.
+    """
+    cert = {}
+    with open(COUNTY_CERTIFIED) as f:
+        for r in csv.DictReader(f):
+            if r["state"] == abbr and r["dem_2024"]:
+                cert[r["county_id"]] = {"dem": int(r["dem_2024"]), "rep": int(r["gop_2024"]),
+                                        "oth": int(r["oth_2024"])}
+    if not cert:
+        print(f"{abbr}: no certified county totals available - not scaled")
+        return pres_party
+    sums = defaultdict(lambda: defaultdict(float))
+    for key, buckets in pres_party.items():
+        if key not in weight:
+            continue
+        county = str(key[0]).zfill(5)
+        for b, v in buckets.items():
+            sums[county][b] += v
+    factors, missing = {}, []
+    for county, s in sums.items():
+        if county not in cert:
+            missing.append(county)
+            continue
+        factors[county] = {b: (cert[county][b] / s[b] if s.get(b) else 1.0) for b in ("dem", "rep")}
+    if missing:
+        print(f"{abbr}: {len(missing)} county(ies) with no certified row, left unscaled: {missing[:5]}")
+    if not factors:
+        return pres_party
+    # A chamber the crosswalk can only half-reach (the off-cycle half of a staggered Senate had no
+    # 2024 race, so none of its precincts match) sums to roughly half its counties' certified totals,
+    # and scaling would then DOUBLE the districts it does have. Only a chamber whose matched
+    # precincts already account for nearly the whole county is safe to scale; anything else is a
+    # coverage problem to be solved by estimating the missing districts, not by stretching the
+    # present ones. Observed: PA/TX/NV/IL Senate factors of 3x-25x before this guard.
+    med = statistics.median(f["dem"] for f in factors.values())
+    if med > 1.15:
+        print(f"{abbr}: NOT scaling - median county factor {med:.2f} means this chamber covers only "
+              f"part of each county (a staggered chamber's off-cycle half); estimate the missing "
+              f"districts instead")
+        return pres_party
+    # `oth` is deliberately NOT scaled per county - the county file's third-party column is a
+    # narrower quantity than the state file's (total - dem - rep), and is 0 for every New York
+    # county. Only Dem/Rep, which agree between the two reference files, are scaled locally; the
+    # statewide third-party total is reconciled separately by the caller.
+    out = {}
+    for key, buckets in pres_party.items():
+        fct = factors.get(str(key[0]).zfill(5)) if key in weight else None
+        out[key] = {b: v * fct.get(b, 1.0) for b, v in buckets.items()} if fct else buckets
+    lo = min(f["dem"] for f in factors.values()); hi = max(f["dem"] for f in factors.values())
+    print(f"{abbr}: scaled {len(factors)} counties to certified totals (dem factor {lo:.4f}-{hi:.4f})")
+    return out
+
+
+def crosswalk(abbr, csv_path, house_office="STATE HOUSE", senate_office="STATE SENATE",
+              scale_counties=False):
     # (county_fips, precinct) -> district -> mode -> votes
     leg_raw = {"house": defaultdict(lambda: defaultdict(lambda: defaultdict(int))),
                "senate": defaultdict(lambda: defaultdict(lambda: defaultdict(int)))}
@@ -381,7 +508,13 @@ def crosswalk(abbr, csv_path, house_office="STATE HOUSE", senate_office="STATE S
     # side effect of no longer appearing in leg_weight, from the president crosswalk match below -
     # its votes become honestly "unmatched" rather than falsely attributed) - same "no data over
     # misleading data" principle used for LA/NJ's deletion and the low-coverage-district filter.
-    MAX_SPLIT_DISTRICTS = 4
+    # Maine's Portland reports STATE HOUSE at the whole-city level across its 8 House districts,
+    # which is a real (if coarse) city-wide report, not the "this source isn't precinct-resolved"
+    # pathology the cap exists to catch - dropping it stranded 33,301 votes and left all 8 districts
+    # blank. Allowed through here so the city's total lands in the chamber; the flat 8-way split it
+    # produces is then replaced with a 2020-VTD-weighted one by
+    # scripts/estimate-senate-pres2024-from-house.py --only (see that script).
+    MAX_SPLIT_DISTRICTS = MAX_SPLIT_OVERRIDE.get(abbr, 4)
     dropped_blob_votes = defaultdict(int)
     leg_weight = {}
     for chamber, raw in leg_raw.items():
@@ -403,9 +536,15 @@ def crosswalk(abbr, csv_path, house_office="STATE HOUSE", senate_office="STATE S
         weight = leg_weight[chamber]
         if not weight:
             continue
+        if abbr in COMBINED_PRECINCT_STATES:
+            added, names = _add_combined_precinct_keys(weight, pres_party.keys())
+            if added:
+                print(f"{abbr} {chamber}: matched {added} combined/split precinct name(s) via "
+                      f"slash components (e.g. {', '.join(names[:3])})")
+        pres_for_chamber = _scale_pres_to_county_totals(abbr, pres_party, weight) if scale_counties else pres_party
         dist_votes = defaultdict(lambda: {"dem": 0.0, "rep": 0.0, "oth": 0.0})
         matched, unmatched, split = 0, 0, 0
-        for key, pv in pres_party.items():
+        for key, pv in pres_for_chamber.items():
             w = weight.get(key)
             if not w:
                 unmatched += 1
@@ -418,6 +557,22 @@ def crosswalk(abbr, csv_path, house_office="STATE HOUSE", senate_office="STATE S
                 frac = dw / total_w
                 for b in ("dem", "rep", "oth"):
                     dist_votes[d][b] += pv.get(b, 0) * frac
+        pool_re = STATEWIDE_POOL_PATTERNS.get(abbr)
+        if pool_re:
+            pooled = defaultdict(float)
+            for key, pv in pres_for_chamber.items():
+                if key in weight or not pool_re.search(key[1]):
+                    continue
+                for b in ("dem", "rep", "oth"):
+                    pooled[b] += pv.get(b, 0)
+            if pooled:
+                for b, amount in pooled.items():
+                    base = sum(v[b] for v in dist_votes.values())
+                    for v in dist_votes.values():
+                        v[b] += amount * (v[b] / base) if base else amount / len(dist_votes)
+                unmatched -= 1
+                print(f"{abbr} {chamber}: spread statewide-pool precinct(s) across all districts: "
+                      + ", ".join(f"{b}={v:,.0f}" for b, v in sorted(pooled.items())))
         print(f"{abbr} {chamber}: {len(dist_votes)} districts, {matched} matched precincts, "
               f"{unmatched} unmatched, {split} split-precinct apportionments")
         out = {}
@@ -477,6 +632,8 @@ if __name__ == "__main__":
     kwargs = {}
     if "--house-office" in sys.argv:
         kwargs["house_office"] = sys.argv[sys.argv.index("--house-office") + 1]
+    if "--scale-counties" in sys.argv:
+        kwargs["scale_counties"] = True
     if "--senate-office" in sys.argv:
         kwargs["senate_office"] = sys.argv[sys.argv.index("--senate-office") + 1]
 

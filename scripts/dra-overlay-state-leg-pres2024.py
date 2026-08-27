@@ -105,13 +105,62 @@ def load_dra(path):
         if not f.get("geometry"):
             continue
         dem, rep, tot = ds.get("Dem", 0) or 0, ds.get("Rep", 0) or 0, ds.get("Total", 0) or 0
-        rows.append({"vtd": p["id"], "dem": float(dem), "rep": float(rep), "oth": float(max(tot - dem - rep, 0))})
+        rows.append({"vtd": p["id"], "county": str(p["id"])[:5],
+                     "dem": float(dem), "rep": float(rep), "oth": float(max(tot - dem - rep, 0))})
         geoms.append(shape(f["geometry"]).buffer(0))
     if not rows:
         sys.exit(f"{path}: no E_24_PRES dataset in any feature - DRA has no 2024 data for this state")
     if missing:
         print(f"note: {missing} VTD(s) without an E_24_PRES entry (skipped)")
     return gpd.GeoDataFrame(rows, geometry=geoms, crs="EPSG:4326")
+
+
+COUNTY_CERTIFIED = f"{ROOT}/data/county_presidential_results_2008_2024.csv"
+
+
+def scale_to_county_totals(abbr, vtds):
+    """Scale each county's VTDs so they sum to that county's certified 2024 presidential total, per
+    party. DRA's statewide totals land within ~0.1% of certified for most states but not all (CA is
+    3,137 Dem short, NC 1,766, VA 1,617) - a handful of precincts they could not place. Distributing
+    that residue across the county it belongs to is closer to the truth than leaving it out, and it
+    makes each chamber's aggregate reproduce the certified state total. The VTD/block-group id's
+    first five characters are the state+county FIPS."""
+    cert = {}
+    with open(COUNTY_CERTIFIED) as f:
+        for r in csv.DictReader(f):
+            if r["county_id"].startswith(fg.ABBR_TO_FIPS[abbr]) and r["dem_2024"]:
+                cert[r["county_id"]] = {"dem": int(r["dem_2024"]), "rep": int(r["gop_2024"]),
+                                        "oth": int(r["oth_2024"])}
+    if not cert:
+        print(f"{abbr}: no certified county totals available - not scaled")
+        return vtds
+    sums = vtds.groupby("county")[["dem", "rep", "oth"]].sum()
+    factors, missing = {}, []
+    for county, row in sums.iterrows():
+        if county not in cert:
+            missing.append(county)
+            continue
+        factors[county] = {b: (cert[county][b] / row[b] if row[b] else 1.0) for b in ("dem", "rep")}
+    if missing:
+        print(f"{abbr}: {len(missing)} county(ies) with no certified row, left unscaled: {missing[:5]}")
+    for b in ("dem", "rep"):
+        vtds[b] = [v * factors.get(c, {}).get(b, 1.0) for v, c in zip(vtds[b], vtds["county"])]
+    lo = min(f["dem"] for f in factors.values()); hi = max(f["dem"] for f in factors.values())
+    print(f"{abbr}: scaled {len(factors)} counties to certified totals (dem factor {lo:.4f}-{hi:.4f})")
+    # Third-party/write-in votes are scaled to the STATEWIDE target instead of per county. The
+    # county file's `oth_2024` is a narrower quantity than the state file's (total - dem - rep) -
+    # it is 0 for all 62 New York counties, and 20-35% low in IL/VA/NC/PA - so scaling `oth` per
+    # county would zero out New York's 64,401 third-party votes and shrink several other states'.
+    # Dem and Rep agree between the two reference files, so only those are safe to scale locally.
+    cert_state = state_certified(abbr)
+    if cert_state:
+        target = cert_state[2] - cert_state[0] - cert_state[1]
+        cur = vtds["oth"].sum()
+        if cur > 0 and target > 0:
+            print(f"{abbr}: scaled third-party votes statewide by {target / cur:.4f} "
+                  f"({cur:,.0f} -> {target:,})")
+            vtds["oth"] = vtds["oth"] * (target / cur)
+    return vtds
 
 
 def load_districts(abbr, chamber, src, stfp):
@@ -182,6 +231,14 @@ def overlay(abbr, chamber, vtds, districts):
     return out
 
 
+def state_certified(abbr):
+    """(dem, rep, total) from the certified statewide 2024 file."""
+    for r in csv.DictReader(open(CERTIFIED)):
+        if r["state_abbr"] == abbr and r["year"] == "2024":
+            return int(r["dem_votes"]), int(r["rep_votes"]), int(r["total_votes"])
+    return None
+
+
 def certified(abbr):
     for r in csv.DictReader(open(CERTIFIED)):
         if r["state_abbr"] == abbr and r["year"] == "2024":
@@ -195,6 +252,8 @@ def main():
     ap.add_argument("--chambers", default="house,senate")
     ap.add_argument("--geojson")
     ap.add_argument("--cache-dir", default=DEFAULT_CACHE)
+    ap.add_argument("--scale-counties", action="store_true",
+                    help="scale each county's VTDs to its certified 2024 total before overlaying")
     ap.add_argument("--dry-run", action="store_true", help="print totals, don't write")
     args = ap.parse_args()
     abbr = args.abbr.upper()
@@ -205,6 +264,8 @@ def main():
 
     path = args.geojson or download_geojson(abbr, args.cache_dir)
     vtds = load_dra(path)
+    if args.scale_counties:
+        vtds = scale_to_county_totals(abbr, vtds)
     tot = vtds[["dem", "rep", "oth"]].sum()
     cert = certified(abbr)
     line = f"{abbr} DRA statewide: dem={tot['dem']:,.0f} rep={tot['rep']:,.0f} total={tot.sum():,.0f} ({len(vtds)} VTDs)"
