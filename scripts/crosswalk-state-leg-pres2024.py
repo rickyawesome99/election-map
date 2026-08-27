@@ -238,7 +238,8 @@ def normalize_district(abbr, chamber, raw):
 # turning up state by state.
 NON_CANDIDATE_MARKERS = ("OVERVOTE", "OVER VOTE", "UNDERVOTE", "UNDER VOTE",
                          "TOTAL VOTES CAST", "TOTAL BALLOTS CAST", "REGISTERED VOTERS",
-                         "BALLOTS CAST", "CAST VOTES", "BLANKS", "SPOILED", "NO CANDIDATE")
+                         "BALLOTS CAST", "CAST VOTES", "BLANKS", "SPOILED", "NO CANDIDATE",
+                         "CONTEST TOTAL")  # NJ Camden/Warren report a per-precinct "CONTEST TOTAL" pseudo-candidate
 
 
 def _is_non_candidate_row(candidate):
