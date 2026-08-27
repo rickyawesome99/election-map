@@ -98,10 +98,16 @@ function main() {
 
     // Simplify the newly-added features with mapshaper before merging (existing/kept features
     // were already simplified in a prior run).
+    // Distance-based (100 m, Visvalingam) rather than the original "-simplify 3%" (keep 3% of
+    // vertices): a percentage is applied across the whole state, so small urban districts lost
+    // nearly all of their vertices - Chicago's IL House districts collapsed to 5-point blobs with
+    // ~35-50% area overlap against the real lines (found 2026-08-26 while overlaying precinct
+    // results onto these polygons). interval=100 keep-shapes costs ~40% more bytes per state
+    // (IL House TopoJSON 88 KB -> 124 KB) and keeps every district within IoU 0.97 of the source.
     const tmpIn = join(tmpdir(), `state-leg-${chamber}-raw.json`);
     const tmpOut = join(tmpdir(), `state-leg-${chamber}-simplified.json`);
     writeFileSync(tmpIn, JSON.stringify({ type: "FeatureCollection", features: newFeatures }));
-    execSync(`npx mapshaper "${tmpIn}" -simplify 3% -o "${tmpOut}" format=geojson`, { stdio: "pipe" });
+    execSync(`npx mapshaper "${tmpIn}" -simplify interval=100 keep-shapes -o "${tmpOut}" format=geojson`, { stdio: "pipe" });
     const simplified = JSON.parse(readFileSync(tmpOut, "utf8"));
 
     const updated = { type: "FeatureCollection", features: [...kept, ...simplified.features] };

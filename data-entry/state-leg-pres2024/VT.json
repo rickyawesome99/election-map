@@ -1,5 +1,13 @@
 {
   "house": {
+    "Addison-1": {
+      "demPct": 77.0,
+      "demVotes": 3243,
+      "margin": -57.8,
+      "repPct": 19.2,
+      "repVotes": 809,
+      "totalVotes": 4214
+    },
     "Addison-2": {
       "demPct": 66.2,
       "demVotes": 1776,
@@ -9,76 +17,92 @@
       "totalVotes": 2684
     },
     "Addison-3": {
-      "demPct": 62.9,
-      "demVotes": 3182,
-      "margin": -30.4,
-      "repPct": 32.5,
-      "repVotes": 1644,
-      "totalVotes": 5057
+      "demPct": 62.6,
+      "demVotes": 3416,
+      "margin": -29.7,
+      "repPct": 32.9,
+      "repVotes": 1795,
+      "totalVotes": 5458
     },
     "Addison-4": {
       "demPct": 65.0,
-      "demVotes": 3788,
+      "demVotes": 3790,
       "margin": -33.8,
       "repPct": 31.2,
-      "repVotes": 1821,
-      "totalVotes": 5830
+      "repVotes": 1820,
+      "totalVotes": 5831
     },
     "Addison-5": {
-      "demPct": 64.3,
-      "demVotes": 875,
-      "margin": -32.3,
-      "repPct": 32.0,
-      "repVotes": 436,
-      "totalVotes": 1361
+      "demPct": 63.3,
+      "demVotes": 1470,
+      "margin": -30.4,
+      "repPct": 32.9,
+      "repVotes": 763,
+      "totalVotes": 2321
     },
     "Addison-Rutland": {
       "demPct": 55.1,
-      "demVotes": 1411,
+      "demVotes": 1409,
       "margin": -13.5,
       "repPct": 41.6,
-      "repVotes": 1066,
-      "totalVotes": 2563
+      "repVotes": 1064,
+      "totalVotes": 2559
     },
     "Bennington-1": {
-      "demPct": 42.8,
-      "demVotes": 550,
-      "margin": 11.9,
-      "repPct": 54.7,
-      "repVotes": 702,
-      "totalVotes": 1284
+      "demPct": 44.6,
+      "demVotes": 1210,
+      "margin": 8.3,
+      "repPct": 52.9,
+      "repVotes": 1435,
+      "totalVotes": 2713
+    },
+    "Bennington-2": {
+      "demPct": 61.3,
+      "demVotes": 2169,
+      "margin": -26.0,
+      "repPct": 35.3,
+      "repVotes": 1247,
+      "totalVotes": 3537
     },
     "Bennington-3": {
       "demPct": 58.8,
-      "demVotes": 1305,
+      "demVotes": 1657,
       "margin": -20.4,
       "repPct": 38.4,
-      "repVotes": 852,
-      "totalVotes": 2219
+      "repVotes": 1081,
+      "totalVotes": 2817
     },
     "Bennington-4": {
-      "demPct": 65.4,
-      "demVotes": 2996,
-      "margin": -34.2,
-      "repPct": 31.2,
-      "repVotes": 1429,
-      "totalVotes": 4581
+      "demPct": 65.3,
+      "demVotes": 3047,
+      "margin": -34.0,
+      "repPct": 31.3,
+      "repVotes": 1462,
+      "totalVotes": 4667
+    },
+    "Bennington-5": {
+      "demPct": 55.7,
+      "demVotes": 2247,
+      "margin": -14.9,
+      "repPct": 40.8,
+      "repVotes": 1644,
+      "totalVotes": 4032
     },
     "Bennington-Rutland": {
       "demPct": 60.9,
-      "demVotes": 1673,
+      "demVotes": 1677,
       "margin": -26.0,
       "repPct": 34.9,
-      "repVotes": 958,
-      "totalVotes": 2745
+      "repVotes": 962,
+      "totalVotes": 2753
     },
     "Caledonia-1": {
       "demPct": 51.4,
-      "demVotes": 1357,
+      "demVotes": 1360,
       "margin": -6.6,
       "repPct": 44.8,
-      "repVotes": 1183,
-      "totalVotes": 2642
+      "repVotes": 1185,
+      "totalVotes": 2647
     },
     "Caledonia-2": {
       "demPct": 57.7,
@@ -90,11 +114,11 @@
     },
     "Caledonia-3": {
       "demPct": 46.8,
-      "demVotes": 2027,
+      "demVotes": 2032,
       "margin": 2.3,
       "repPct": 49.1,
-      "repVotes": 2127,
-      "totalVotes": 4331
+      "repVotes": 2131,
+      "totalVotes": 4340
     },
     "Caledonia-Essex": {
       "demPct": 55.5,
@@ -120,29 +144,141 @@
       "repVotes": 557,
       "totalVotes": 2870
     },
+    "Chittenden-10": {
+      "demPct": 74.6,
+      "demVotes": 2066,
+      "margin": -53.2,
+      "repPct": 21.4,
+      "repVotes": 592,
+      "totalVotes": 2768
+    },
+    "Chittenden-11": {
+      "demPct": 81.2,
+      "demVotes": 2093,
+      "margin": -65.5,
+      "repPct": 15.7,
+      "repVotes": 405,
+      "totalVotes": 2576
+    },
+    "Chittenden-12": {
+      "demPct": 82.2,
+      "demVotes": 2410,
+      "margin": -67.7,
+      "repPct": 14.5,
+      "repVotes": 424,
+      "totalVotes": 2933
+    },
+    "Chittenden-13": {
+      "demPct": 87.4,
+      "demVotes": 4506,
+      "margin": -79.6,
+      "repPct": 7.8,
+      "repVotes": 400,
+      "totalVotes": 5154
+    },
+    "Chittenden-14": {
+      "demPct": 87.2,
+      "demVotes": 1515,
+      "margin": -80.4,
+      "repPct": 6.8,
+      "repVotes": 118,
+      "totalVotes": 1738
+    },
+    "Chittenden-15": {
+      "demPct": 88.2,
+      "demVotes": 2193,
+      "margin": -82.0,
+      "repPct": 6.2,
+      "repVotes": 153,
+      "totalVotes": 2486
+    },
+    "Chittenden-16": {
+      "demPct": 84.9,
+      "demVotes": 1099,
+      "margin": -75.7,
+      "repPct": 9.2,
+      "repVotes": 119,
+      "totalVotes": 1294
+    },
+    "Chittenden-17": {
+      "demPct": 81.6,
+      "demVotes": 6336,
+      "margin": -68.0,
+      "repPct": 13.6,
+      "repVotes": 1053,
+      "totalVotes": 7763
+    },
+    "Chittenden-18": {
+      "demPct": 78.8,
+      "demVotes": 1647,
+      "margin": -61.5,
+      "repPct": 17.3,
+      "repVotes": 362,
+      "totalVotes": 2089
+    },
+    "Chittenden-19": {
+      "demPct": 67.2,
+      "demVotes": 3473,
+      "margin": -38.0,
+      "repPct": 29.2,
+      "repVotes": 1510,
+      "totalVotes": 5169
+    },
+    "Chittenden-2": {
+      "demPct": 73.0,
+      "demVotes": 3902,
+      "margin": -49.2,
+      "repPct": 23.8,
+      "repVotes": 1275,
+      "totalVotes": 5347
+    },
     "Chittenden-20": {
-      "demPct": 66.4,
-      "demVotes": 2766,
-      "margin": -36.1,
-      "repPct": 30.3,
-      "repVotes": 1263,
-      "totalVotes": 4168
+      "demPct": 66.6,
+      "demVotes": 3126,
+      "margin": -36.8,
+      "repPct": 29.8,
+      "repVotes": 1400,
+      "totalVotes": 4694
     },
     "Chittenden-21": {
-      "demPct": 78.9,
-      "demVotes": 2839,
-      "margin": -63.0,
-      "repPct": 15.9,
-      "repVotes": 571,
-      "totalVotes": 3596
+      "demPct": 79.0,
+      "demVotes": 2821,
+      "margin": -63.2,
+      "repPct": 15.8,
+      "repVotes": 566,
+      "totalVotes": 3572
+    },
+    "Chittenden-22": {
+      "demPct": 71.9,
+      "demVotes": 3780,
+      "margin": -47.1,
+      "repPct": 24.8,
+      "repVotes": 1302,
+      "totalVotes": 5259
+    },
+    "Chittenden-23": {
+      "demPct": 70.1,
+      "demVotes": 2573,
+      "margin": -43.8,
+      "repPct": 26.3,
+      "repVotes": 964,
+      "totalVotes": 3670
+    },
+    "Chittenden-24": {
+      "demPct": 69.2,
+      "demVotes": 3020,
+      "margin": -42.0,
+      "repPct": 27.2,
+      "repVotes": 1188,
+      "totalVotes": 4362
     },
     "Chittenden-25": {
-      "demPct": 68.6,
-      "demVotes": 1003,
-      "margin": -40.4,
-      "repPct": 28.2,
-      "repVotes": 413,
-      "totalVotes": 1462
+      "demPct": 60.4,
+      "demVotes": 1811,
+      "margin": -24.2,
+      "repPct": 36.2,
+      "repVotes": 1086,
+      "totalVotes": 2997
     },
     "Chittenden-3": {
       "demPct": 72.7,
@@ -152,85 +288,157 @@
       "repVotes": 1388,
       "totalVotes": 5830
     },
+    "Chittenden-4": {
+      "demPct": 73.7,
+      "demVotes": 2197,
+      "margin": -50.6,
+      "repPct": 23.1,
+      "repVotes": 688,
+      "totalVotes": 2979
+    },
     "Chittenden-5": {
-      "demPct": 78.3,
-      "demVotes": 2207,
-      "margin": -60.5,
-      "repPct": 17.8,
-      "repVotes": 502,
-      "totalVotes": 2818
+      "demPct": 78.1,
+      "demVotes": 2333,
+      "margin": -60.0,
+      "repPct": 18.1,
+      "repVotes": 541,
+      "totalVotes": 2988
+    },
+    "Chittenden-6": {
+      "demPct": 80.5,
+      "demVotes": 3253,
+      "margin": -64.0,
+      "repPct": 16.5,
+      "repVotes": 666,
+      "totalVotes": 4041
     },
     "Chittenden-7": {
-      "demPct": 63.9,
-      "demVotes": 304,
-      "margin": -31.8,
-      "repPct": 32.1,
-      "repVotes": 153,
-      "totalVotes": 476
+      "demPct": 76.6,
+      "demVotes": 1522,
+      "margin": -56.4,
+      "repPct": 20.2,
+      "repVotes": 402,
+      "totalVotes": 1988
+    },
+    "Chittenden-8": {
+      "demPct": 76.5,
+      "demVotes": 3253,
+      "margin": -56.1,
+      "repPct": 20.4,
+      "repVotes": 867,
+      "totalVotes": 4251
+    },
+    "Chittenden-9": {
+      "demPct": 79.1,
+      "demVotes": 1254,
+      "margin": -61.3,
+      "repPct": 17.8,
+      "repVotes": 282,
+      "totalVotes": 1585
+    },
+    "Chittenden-Franklin": {
+      "demPct": 52.5,
+      "demVotes": 957,
+      "margin": -8.5,
+      "repPct": 44.0,
+      "repVotes": 803,
+      "totalVotes": 1824
     },
     "Essex-Caledonia": {
       "demPct": 47.7,
       "demVotes": 1138,
       "margin": 0.7,
       "repPct": 48.4,
-      "repVotes": 1155,
-      "totalVotes": 2386
+      "repVotes": 1154,
+      "totalVotes": 2385
     },
     "Essex-Orleans": {
       "demPct": 38.8,
       "demVotes": 1040,
       "margin": 16.6,
       "repPct": 55.4,
-      "repVotes": 1486,
-      "totalVotes": 2681
+      "repVotes": 1487,
+      "totalVotes": 2682
     },
     "Franklin-1": {
-      "demPct": 54.0,
-      "demVotes": 1658,
-      "margin": -12.1,
-      "repPct": 41.9,
-      "repVotes": 1288,
-      "totalVotes": 3071
+      "demPct": 52.1,
+      "demVotes": 3094,
+      "margin": -7.8,
+      "repPct": 44.3,
+      "repVotes": 2631,
+      "totalVotes": 5943
+    },
+    "Franklin-2": {
+      "demPct": 54.1,
+      "demVotes": 1997,
+      "margin": -11.6,
+      "repPct": 42.5,
+      "repVotes": 1568,
+      "totalVotes": 3691
+    },
+    "Franklin-3": {
+      "demPct": 62.7,
+      "demVotes": 1315,
+      "margin": -29.1,
+      "repPct": 33.6,
+      "repVotes": 704,
+      "totalVotes": 2096
     },
     "Franklin-4": {
       "demPct": 43.6,
-      "demVotes": 1971,
-      "margin": 9.5,
-      "repPct": 53.1,
-      "repVotes": 2397,
-      "totalVotes": 4518
+      "demVotes": 1967,
+      "margin": 9.4,
+      "repPct": 53.0,
+      "repVotes": 2392,
+      "totalVotes": 4509
     },
     "Franklin-5": {
       "demPct": 38.0,
-      "demVotes": 1661,
+      "demVotes": 1663,
       "margin": 20.6,
       "repPct": 58.6,
-      "repVotes": 2564,
-      "totalVotes": 4375
+      "repVotes": 2566,
+      "totalVotes": 4379
     },
     "Franklin-6": {
       "demPct": 54.0,
-      "demVotes": 1499,
-      "margin": -12.4,
-      "repPct": 41.6,
-      "repVotes": 1155,
-      "totalVotes": 2776
+      "demVotes": 1506,
+      "margin": -12.3,
+      "repPct": 41.7,
+      "repVotes": 1163,
+      "totalVotes": 2791
     },
     "Franklin-7": {
       "demPct": 48.3,
-      "demVotes": 1018,
+      "demVotes": 1016,
       "margin": -0.7,
       "repPct": 47.6,
-      "repVotes": 1004,
-      "totalVotes": 2108
+      "repVotes": 1003,
+      "totalVotes": 2105
+    },
+    "Franklin-8": {
+      "demPct": 59.5,
+      "demVotes": 665,
+      "margin": -22.7,
+      "repPct": 36.8,
+      "repVotes": 411,
+      "totalVotes": 1117
     },
     "Grand Isle-Chittenden": {
-      "demPct": 58.8,
-      "demVotes": 2940,
-      "margin": -20.9,
-      "repPct": 37.9,
-      "repVotes": 1893,
-      "totalVotes": 5001
+      "demPct": 56.4,
+      "demVotes": 4540,
+      "margin": -16.2,
+      "repPct": 40.2,
+      "repVotes": 3234,
+      "totalVotes": 8049
+    },
+    "Lamoille-1": {
+      "demPct": 78.0,
+      "demVotes": 2272,
+      "margin": -59.1,
+      "repPct": 18.9,
+      "repVotes": 549,
+      "totalVotes": 2911
     },
     "Lamoille-2": {
       "demPct": 59.4,
@@ -242,19 +450,19 @@
     },
     "Lamoille-3": {
       "demPct": 63.5,
-      "demVotes": 1683,
-      "margin": -31.4,
-      "repPct": 32.1,
-      "repVotes": 850,
-      "totalVotes": 2652
+      "demVotes": 1678,
+      "margin": -31.5,
+      "repPct": 32.0,
+      "repVotes": 845,
+      "totalVotes": 2642
     },
     "Lamoille-Washington": {
-      "demPct": 69.0,
-      "demVotes": 3525,
-      "margin": -42.3,
-      "repPct": 26.7,
-      "repVotes": 1366,
-      "totalVotes": 5109
+      "demPct": 69.3,
+      "demVotes": 3649,
+      "margin": -42.8,
+      "repPct": 26.5,
+      "repVotes": 1396,
+      "totalVotes": 5268
     },
     "Orange-1": {
       "demPct": 48.3,
@@ -273,28 +481,28 @@
       "totalVotes": 2536
     },
     "Orange-3": {
-      "demPct": 51.7,
-      "demVotes": 372,
-      "margin": -10.3,
-      "repPct": 41.4,
-      "repVotes": 298,
-      "totalVotes": 720
+      "demPct": 45.7,
+      "demVotes": 1123,
+      "margin": 3.6,
+      "repPct": 49.3,
+      "repVotes": 1211,
+      "totalVotes": 2457
     },
     "Orange-Caledonia": {
       "demPct": 47.6,
-      "demVotes": 1194,
+      "demVotes": 1193,
       "margin": 0.8,
       "repPct": 48.4,
-      "repVotes": 1215,
-      "totalVotes": 2510
+      "repVotes": 1214,
+      "totalVotes": 2508
     },
     "Orange-Washington-Addison": {
       "demPct": 62.2,
-      "demVotes": 3083,
+      "demVotes": 3079,
       "margin": -29.0,
       "repPct": 33.2,
-      "repVotes": 1647,
-      "totalVotes": 4959
+      "repVotes": 1645,
+      "totalVotes": 4953
     },
     "Orleans-1": {
       "demPct": 43.1,
@@ -313,12 +521,12 @@
       "totalVotes": 1925
     },
     "Orleans-3": {
-      "demPct": 49.0,
-      "demVotes": 1044,
-      "margin": -1.1,
-      "repPct": 47.9,
-      "repVotes": 1019,
-      "totalVotes": 2129
+      "demPct": 49.1,
+      "demVotes": 1040,
+      "margin": -1.3,
+      "repPct": 47.8,
+      "repVotes": 1014,
+      "totalVotes": 2120
     },
     "Orleans-4": {
       "demPct": 61.8,
@@ -330,75 +538,107 @@
     },
     "Orleans-Lamoille": {
       "demPct": 40.5,
-      "demVotes": 1959,
+      "demVotes": 1961,
       "margin": 15.3,
       "repPct": 55.8,
-      "repVotes": 2703,
-      "totalVotes": 4841
+      "repVotes": 2704,
+      "totalVotes": 4844
     },
     "Rutland-1": {
-      "demPct": 47.7,
-      "demVotes": 952,
-      "margin": 1.7,
-      "repPct": 49.4,
-      "repVotes": 986,
-      "totalVotes": 1994
+      "demPct": 46.9,
+      "demVotes": 1070,
+      "margin": 3.4,
+      "repPct": 50.3,
+      "repVotes": 1149,
+      "totalVotes": 2283
     },
     "Rutland-10": {
       "demPct": 42.5,
-      "demVotes": 911,
+      "demVotes": 912,
       "margin": 11.6,
       "repPct": 54.1,
-      "repVotes": 1159,
-      "totalVotes": 2144
+      "repVotes": 1160,
+      "totalVotes": 2146
     },
     "Rutland-11": {
       "demPct": 58.2,
-      "demVotes": 1573,
+      "demVotes": 1580,
       "margin": -20.1,
       "repPct": 38.1,
-      "repVotes": 1030,
-      "totalVotes": 2704
+      "repVotes": 1035,
+      "totalVotes": 2716
     },
     "Rutland-2": {
-      "demPct": 44.5,
-      "demVotes": 1741,
-      "margin": 8.1,
-      "repPct": 52.6,
-      "repVotes": 2058,
-      "totalVotes": 3914
+      "demPct": 47.7,
+      "demVotes": 2604,
+      "margin": 1.4,
+      "repPct": 49.1,
+      "repVotes": 2676,
+      "totalVotes": 5454
     },
     "Rutland-3": {
       "demPct": 46.9,
-      "demVotes": 1009,
+      "demVotes": 1007,
       "margin": 3.4,
       "repPct": 50.3,
-      "repVotes": 1081,
-      "totalVotes": 2151
+      "repVotes": 1079,
+      "totalVotes": 2147
+    },
+    "Rutland-4": {
+      "demPct": 56.9,
+      "demVotes": 1256,
+      "margin": -17.1,
+      "repPct": 39.8,
+      "repVotes": 877,
+      "totalVotes": 2206
+    },
+    "Rutland-5": {
+      "demPct": 56.9,
+      "demVotes": 1441,
+      "margin": -16.9,
+      "repPct": 40.0,
+      "repVotes": 1012,
+      "totalVotes": 2531
+    },
+    "Rutland-6": {
+      "demPct": 53.9,
+      "demVotes": 1025,
+      "margin": -11.1,
+      "repPct": 42.8,
+      "repVotes": 814,
+      "totalVotes": 1903
+    },
+    "Rutland-7": {
+      "demPct": 55.0,
+      "demVotes": 1107,
+      "margin": -13.5,
+      "repPct": 41.5,
+      "repVotes": 834,
+      "totalVotes": 2011
     },
     "Rutland-8": {
       "demPct": 49.6,
-      "demVotes": 1346,
+      "demVotes": 1345,
       "margin": -2.5,
       "repPct": 47.1,
-      "repVotes": 1278,
-      "totalVotes": 2711
+      "repVotes": 1277,
+      "totalVotes": 2709
     },
     "Rutland-9": {
-      "demPct": 52.2,
-      "demVotes": 1229,
-      "margin": -8.0,
+      "demPct": 52.1,
+      "demVotes": 1225,
+      "margin": -7.9,
       "repPct": 44.2,
-      "repVotes": 1042,
-      "totalVotes": 2356
+      "repVotes": 1039,
+      "totalVotes": 2349
     },
     "Rutland-Bennington": {
-      "demPct": 53.6,
-      "demVotes": 1220,
-      "margin": -11.4,
-      "repPct": 42.2,
-      "repVotes": 960,
-      "totalVotes": 2277
+      "demPct": 51.4,
+      "demVotes": 1412,
+      "margin": -6.8,
+      "repPct": 44.6,
+      "repVotes": 1226,
+      "totalVotes": 2748
     },
     "Rutland-Windsor": {
       "demPct": 53.1,
@@ -409,36 +649,36 @@
       "totalVotes": 2808
     },
     "Washington-1": {
-      "demPct": 58.8,
-      "demVotes": 2508,
-      "margin": -21.8,
+      "demPct": 58.9,
+      "demVotes": 2513,
+      "margin": -21.9,
       "repPct": 37.0,
-      "repVotes": 1579,
-      "totalVotes": 4263
+      "repVotes": 1580,
+      "totalVotes": 4269
     },
     "Washington-2": {
-      "demPct": 78.5,
-      "demVotes": 4299,
-      "margin": -60.9,
-      "repPct": 17.6,
-      "repVotes": 966,
-      "totalVotes": 5479
+      "demPct": 78.4,
+      "demVotes": 4301,
+      "margin": -60.7,
+      "repPct": 17.7,
+      "repVotes": 969,
+      "totalVotes": 5484
     },
     "Washington-3": {
       "demPct": 60.7,
-      "demVotes": 2272,
+      "demVotes": 2259,
       "margin": -25.9,
       "repPct": 34.8,
-      "repVotes": 1301,
-      "totalVotes": 3740
+      "repVotes": 1294,
+      "totalVotes": 3719
     },
     "Washington-4": {
       "demPct": 86.0,
-      "demVotes": 4359,
+      "demVotes": 4354,
       "margin": -76.3,
       "repPct": 9.7,
-      "repVotes": 491,
-      "totalVotes": 5068
+      "repVotes": 490,
+      "totalVotes": 5062
     },
     "Washington-5": {
       "demPct": 73.6,
@@ -450,83 +690,107 @@
     },
     "Washington-6": {
       "demPct": 67.6,
-      "demVotes": 1964,
+      "demVotes": 1962,
       "margin": -41.3,
       "repPct": 26.3,
-      "repVotes": 763,
-      "totalVotes": 2905
+      "repVotes": 762,
+      "totalVotes": 2902
     },
     "Washington-Chittenden": {
       "demPct": 75.5,
-      "demVotes": 4296,
+      "demVotes": 4290,
       "margin": -55.0,
       "repPct": 20.5,
-      "repVotes": 1164,
-      "totalVotes": 5688
+      "repVotes": 1162,
+      "totalVotes": 5680
     },
     "Washington-Orange": {
-      "demPct": 52.5,
-      "demVotes": 2544,
-      "margin": -8.6,
-      "repPct": 43.9,
-      "repVotes": 2129,
-      "totalVotes": 4847
+      "demPct": 52.2,
+      "demVotes": 2643,
+      "margin": -8.0,
+      "repPct": 44.2,
+      "repVotes": 2241,
+      "totalVotes": 5067
     },
     "Windham-1": {
       "demPct": 59.8,
       "demVotes": 1602,
-      "margin": -24.2,
-      "repPct": 35.6,
-      "repVotes": 953,
-      "totalVotes": 2680
+      "margin": -24.3,
+      "repPct": 35.5,
+      "repVotes": 952,
+      "totalVotes": 2679
     },
     "Windham-2": {
-      "demPct": 62.9,
-      "demVotes": 1373,
-      "margin": -29.8,
+      "demPct": 63.0,
+      "demVotes": 1377,
+      "margin": -29.9,
       "repPct": 33.1,
-      "repVotes": 723,
-      "totalVotes": 2182
+      "repVotes": 724,
+      "totalVotes": 2187
     },
     "Windham-3": {
       "demPct": 66.7,
-      "demVotes": 3130,
+      "demVotes": 3133,
       "margin": -38.0,
       "repPct": 28.7,
       "repVotes": 1346,
-      "totalVotes": 4691
+      "totalVotes": 4694
     },
     "Windham-4": {
       "demPct": 76.4,
-      "demVotes": 2144,
+      "demVotes": 2141,
       "margin": -57.3,
       "repPct": 19.1,
-      "repVotes": 537,
-      "totalVotes": 2808
+      "repVotes": 536,
+      "totalVotes": 2804
     },
     "Windham-5": {
       "demPct": 72.9,
-      "demVotes": 1833,
+      "demVotes": 1831,
       "margin": -50.6,
       "repPct": 22.3,
-      "repVotes": 561,
-      "totalVotes": 2513
+      "repVotes": 560,
+      "totalVotes": 2510
     },
     "Windham-6": {
       "demPct": 58.2,
-      "demVotes": 1461,
+      "demVotes": 1466,
       "margin": -19.5,
       "repPct": 38.7,
-      "repVotes": 972,
-      "totalVotes": 2509
+      "repVotes": 975,
+      "totalVotes": 2517
+    },
+    "Windham-7": {
+      "demPct": 73.6,
+      "demVotes": 1533,
+      "margin": -51.4,
+      "repPct": 22.2,
+      "repVotes": 462,
+      "totalVotes": 2082
+    },
+    "Windham-8": {
+      "demPct": 78.9,
+      "demVotes": 1642,
+      "margin": -62.9,
+      "repPct": 16.0,
+      "repVotes": 333,
+      "totalVotes": 2080
+    },
+    "Windham-9": {
+      "demPct": 82.2,
+      "demVotes": 1889,
+      "margin": -68.7,
+      "repPct": 13.5,
+      "repVotes": 310,
+      "totalVotes": 2299
     },
     "Windham-Windsor-Bennington": {
       "demPct": 64.4,
-      "demVotes": 1676,
+      "demVotes": 1674,
       "margin": -32.1,
       "repPct": 32.3,
-      "repVotes": 842,
-      "totalVotes": 2603
+      "repVotes": 841,
+      "totalVotes": 2600
     },
     "Windsor-1": {
       "demPct": 66.7,
@@ -538,11 +802,11 @@
     },
     "Windsor-2": {
       "demPct": 53.0,
-      "demVotes": 1481,
+      "demVotes": 1484,
       "margin": -9.6,
       "repPct": 43.4,
-      "repVotes": 1212,
-      "totalVotes": 2794
+      "repVotes": 1214,
+      "totalVotes": 2799
     },
     "Windsor-3": {
       "demPct": 55.1,
@@ -553,28 +817,36 @@
       "totalVotes": 4558
     },
     "Windsor-4": {
-      "demPct": 67.9,
-      "demVotes": 1277,
-      "margin": -40.0,
-      "repPct": 27.9,
-      "repVotes": 525,
-      "totalVotes": 1882
+      "demPct": 68.9,
+      "demVotes": 1962,
+      "margin": -41.5,
+      "repPct": 27.4,
+      "repVotes": 782,
+      "totalVotes": 2849
     },
     "Windsor-5": {
       "demPct": 73.8,
-      "demVotes": 2137,
+      "demVotes": 2135,
       "margin": -51.0,
       "repPct": 22.8,
-      "repVotes": 659,
-      "totalVotes": 2894
+      "repVotes": 658,
+      "totalVotes": 2891
+    },
+    "Windsor-6": {
+      "demPct": 69.9,
+      "demVotes": 3674,
+      "margin": -43.4,
+      "repPct": 26.5,
+      "repVotes": 1390,
+      "totalVotes": 5255
     },
     "Windsor-Addison": {
-      "demPct": 66.2,
-      "demVotes": 1615,
-      "margin": -36.8,
+      "demPct": 66.3,
+      "demVotes": 1618,
+      "margin": -36.9,
       "repPct": 29.4,
-      "repVotes": 716,
-      "totalVotes": 2438
+      "repVotes": 717,
+      "totalVotes": 2442
     },
     "Windsor-Orange-1": {
       "demPct": 61.2,
@@ -594,61 +866,61 @@
     },
     "Windsor-Windham": {
       "demPct": 59.3,
-      "demVotes": 1601,
+      "demVotes": 1603,
       "margin": -21.6,
       "repPct": 37.7,
-      "repVotes": 1018,
-      "totalVotes": 2700
+      "repVotes": 1019,
+      "totalVotes": 2703
     }
   },
   "senate": {
     "Addison": {
       "demPct": 66.3,
-      "demVotes": 16374,
+      "demVotes": 16381,
       "margin": -36.6,
       "repPct": 29.7,
-      "repVotes": 7342,
-      "totalVotes": 24709
+      "repVotes": 7344,
+      "totalVotes": 24718
     },
     "Bennington": {
       "demPct": 60.0,
-      "demVotes": 13933,
+      "demVotes": 13930,
       "margin": -23.3,
       "repPct": 36.7,
-      "repVotes": 8523,
-      "totalVotes": 23215
+      "repVotes": 8522,
+      "totalVotes": 23211
     },
     "Caledonia": {
       "demPct": 55.8,
-      "demVotes": 7094,
+      "demVotes": 7096,
       "margin": -16.0,
       "repPct": 39.8,
-      "repVotes": 5057,
-      "totalVotes": 12717
+      "repVotes": 5058,
+      "totalVotes": 12720
     },
     "Chittenden Central": {
-      "demPct": 78.4,
-      "demVotes": 23483,
-      "margin": -61.4,
-      "repPct": 17.0,
-      "repVotes": 5086,
-      "totalVotes": 29941
+      "demPct": 78.7,
+      "demVotes": 22106,
+      "margin": -62.0,
+      "repPct": 16.7,
+      "repVotes": 4697,
+      "totalVotes": 28081
     },
     "Chittenden North": {
-      "demPct": 55.2,
-      "demVotes": 5994,
-      "margin": -14.0,
-      "repPct": 41.2,
-      "repVotes": 4475,
-      "totalVotes": 10862
+      "demPct": 59.2,
+      "demVotes": 8997,
+      "margin": -22.0,
+      "repPct": 37.2,
+      "repVotes": 5650,
+      "totalVotes": 15193
     },
     "Chittenden South East": {
-      "demPct": 76.4,
-      "demVotes": 31312,
-      "margin": -56.1,
-      "repPct": 20.3,
-      "repVotes": 8308,
-      "totalVotes": 40998
+      "demPct": 77.6,
+      "demVotes": 35801,
+      "margin": -58.7,
+      "repPct": 18.9,
+      "repVotes": 8704,
+      "totalVotes": 46131
     },
     "Essex": {
       "demPct": 44.8,
@@ -660,27 +932,27 @@
     },
     "Franklin": {
       "demPct": 48.4,
-      "demVotes": 11194,
+      "demVotes": 11205,
       "margin": -0.3,
       "repPct": 48.1,
-      "repVotes": 11141,
-      "totalVotes": 23140
+      "repVotes": 11149,
+      "totalVotes": 23160
     },
     "Grand Isle": {
-      "demPct": 65.0,
-      "demVotes": 8527,
-      "margin": -33.4,
-      "repPct": 31.6,
-      "repVotes": 4146,
-      "totalVotes": 13121
+      "demPct": 65.5,
+      "demVotes": 8873,
+      "margin": -34.6,
+      "repPct": 30.9,
+      "repVotes": 4188,
+      "totalVotes": 13538
     },
     "Lamoille": {
       "demPct": 62.5,
-      "demVotes": 7900,
+      "demVotes": 7895,
       "margin": -29.0,
       "repPct": 33.5,
-      "repVotes": 4238,
-      "totalVotes": 12632
+      "repVotes": 4235,
+      "totalVotes": 12624
     },
     "Orange": {
       "demPct": 56.6,
@@ -692,27 +964,27 @@
     },
     "Orleans": {
       "demPct": 49.0,
-      "demVotes": 6060,
+      "demVotes": 6061,
       "margin": -2.0,
       "repPct": 47.0,
-      "repVotes": 5807,
-      "totalVotes": 12360
+      "repVotes": 5808,
+      "totalVotes": 12362
     },
     "Rutland": {
       "demPct": 50.9,
-      "demVotes": 17171,
+      "demVotes": 17179,
       "margin": -5.1,
       "repPct": 45.8,
-      "repVotes": 15465,
-      "totalVotes": 33764
+      "repVotes": 15469,
+      "totalVotes": 33776
     },
     "Washington": {
-      "demPct": 69.4,
-      "demVotes": 27609,
-      "margin": -42.9,
+      "demPct": 69.3,
+      "demVotes": 27598,
+      "margin": -42.8,
       "repPct": 26.5,
-      "repVotes": 10540,
-      "totalVotes": 39811
+      "repVotes": 10539,
+      "totalVotes": 39798
     },
     "Windham": {
       "demPct": 69.6,
@@ -724,11 +996,11 @@
     },
     "Windsor": {
       "demPct": 66.1,
-      "demVotes": 23691,
+      "demVotes": 23687,
       "margin": -35.9,
       "repPct": 30.2,
-      "repVotes": 10829,
-      "totalVotes": 35824
+      "repVotes": 10826,
+      "totalVotes": 35817
     }
   }
 }
